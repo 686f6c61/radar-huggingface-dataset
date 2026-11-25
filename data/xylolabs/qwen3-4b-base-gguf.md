@@ -2,96 +2,97 @@
 
 ## Resumen
 
-Xylolabs/Qwen3-4B-Base-GGUF es una exportación cuantizada en formato GGUF del modelo base Qwen3-4B-Base, desarrollado originalmente por el equipo Qwen de Alibaba. El repositorio lo publica Xylolabs con el objetivo de servir como referencia reproducible para la cuantización Q4_K_M, empleando llama.cpp como herramienta de conversión. No se ha realizado entrenamiento, calibración ni cuantización nueva para la publicación: se trata de una conversión directa de los pesos BF16 originales.
+Xylolabs/Qwen3-4B-Base-GGUF es una cuantización en formato GGUF del modelo base Qwen3-4B-Base, publicado por el equipo Qwen de Alibaba. El repositorio lo mantiene Xylolabs, que ha convertido los pesos originales en safetensors a GGUF y los ha cuantizado con llama.cpp. Se distribuye un único archivo, `Qwen3-4B-Base-Q4_K_M.gguf`, de 2,497 GB, pensado para inferencia con llama.cpp en hardware de consumo.
 
-El modelo es un decoder transformer de 36 capas con 4.022.468.096 parámetros totales (aproximadamente 4B), orientado a generación de texto en modo completion crudo, sin plantilla de chat ni modo de razonamiento. Es relevante porque proporciona una base verificable para comparar futuras cuantizaciones contra un baseline documentado, con métricas de divergencia (KL) y acuerdo top-1 frente a BF16.
+El modelo subyacente es un transformer denso de 4.022.468.096 parámetros (aproximadamente 4B) y es un modelo *base*, es decir, sin ajuste por instrucciones ni RLHF: está entrenado para continuar texto, no para seguir instrucciones. Esto lo hace adecuado para *prompting* por continuación, *fine-tuning* posterior y tareas de generación de texto en bruto, pero no para uso conversacional directo sin adaptación.
 
-La licencia Apache 2.0 del release original se preserva, lo que facilita uso comercial y modificación. El tamaño del repo es de 2,5 GB y el archivo GGUF principal requiere aproximadamente 2,49 GB de memoria para los pesos, más espacio adicional para KV cache y buffers.
+Su relevancia práctica está en el tamaño: 2,5 GB en Q4_K_M permite ejecutarlo en GPU de consumo con 24 GB o incluso menos, y el autor publica una tabla de precisión frente a BF16 (KL divergence y top-1) que permite evaluar la pérdida introducida por la cuantización. La licencia Apache 2.0 facilita el uso comercial.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (36 capas), modelo base preentrenado |
-| Parametros totales | 4.022.468.096 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (el ejemplo usa 2.048 tokens; los metadatos originales se conservan sin cambios) |
-| Tipos de cuantizacion | Q4_K_M (4,955 bits/peso promedio); tensores almacenados: F32 (145), Q4_K (216), Q6_K (37) |
+| Arquitectura | Transformer denso (modelo base Qwen3) |
+| Parámetros totales | 4.022.468.096 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | 32K (según tabla de hardware del autor) |
+| Tipos de cuantización | Q4_K_M (único archivo publicado) |
 | Idiomas soportados | en, ko |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp); modelo base original en safetensors/BF16 |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es Qwen3-4B-Base, un transformer decoder de 36 capas con embedding, cabeza de salida y tokenizer originales. La exportación GGUF conserva los 398 tensores del decoder, el embedding, la cabeza de salida, el tokenizer y los metadatos originales. No se realizó ningún entrenamiento, calibración ni cuantización nueva para esta publicación: es una conversión directa de los pesos BF16 a Q4_K_M mediante llama.cpp (versión v0.9.0 verificada en el ejemplo de carga).
+El modelo base es Qwen3-4B-Base, un transformer denso de la familia Qwen3 descrita en el informe técnico arXiv:2505.09388. No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO; al tratarse de un modelo *base*, lo habitual es que no incluya ajuste por preferencias, pero este dato no se confirma en la ficha.
 
-La innovación técnica destacable de esta ficha no está en el modelo en sí, sino en el proceso de preservación y verificación: el autor documenta una comprobación de completion sobre 28 ítems (de un conjunto de 33, omitiendo cinco de formato instrucción), con prefijo de tres ejemplos en texto plano y presupuestos de generación greedy de 48 tokens (96 para código). Además, se evalúan ocho secuencias de texto crudo en inglés y coreano de 1.024 tokens, cubriendo 8.184 posiciones puntuadas. Los resultados indican que la cuantización Q4_K_M mantiene 28/28 respuestas correctas con una KL media de 0,047930 y un acuerdo top-1 del 89,65 % frente a BF16. No se dispone de información sobre la composición del dataset de entrenamiento original, número de tokens ni etapas de RLHF/DPO en la información proporcionada.
+La contribución de este repositorio es exclusivamente la conversión y cuantización: los pesos originales en safetensors se transforman a GGUF y se cuantizan a Q4_K_M con llama.cpp (build cd959bae). El autor documenta la pérdida de precisión frente a BF16 medida con llama.cpp: para Q4_K_M, KL de 0,040775 en WikiText-2 y 0,036195 en un conjunto held-out, con top-1 del 90,588 % y 90,882 % respectivamente. Para comparar, Q8_0 alcanza top-1 del 97,863 % y Q3_K_M cae al 81,848 %, lo que sitúa a Q4_K_M en un punto intermedio razonable de la curva tamaño/precisión.
 
 ## Capacidades
 
-- Generación de texto en modo completion crudo (continuación de prompts de texto plano).
-- Modelo base preentrenado: no está ajustado para instrucciones ni para conversación; requiere prompts de completion.
-- Capacidades multilingües limitadas a inglés (en) y coreano (ko) según los metadatos del repositorio.
-- No dispone de plantilla de chat ni de modo de razonamiento (thinking) en esta exportación.
-- No se documenta soporte de tool calling, function calling, agentes ni razonamiento multi-paso en la información disponible.
-- No se documentan capacidades de visión, audio ni otras modalidades.
-- Adecuado como base para fine-tuning posterior (dado que es un modelo base y no instruido).
+- Generación de texto por continuación de *prompt* (modelo base, sin plantilla de instrucciones).
+- Razonamiento y conocimiento general heredados del entrenamiento de Qwen3-4B-Base.
+- Capacidades multilingües limitadas a inglés y coreano según los metadatos del repositorio.
+- No incluye *tool calling* ni *function calling* de serie: al ser un modelo base, no hay ajuste para seguir formatos de herramientas.
+- No incluye modo *thinking* ni capacidades de agente multi-paso entrenadas; requeriría *fine-tuning* o *prompting* específico.
+- No soporta visión ni audio.
+- Adecuado como punto de partida para *fine-tuning* supervisado sobre tareas concretas.
 
 ## Casos de uso
 
-- Evaluación de cuantizaciones: servir como baseline Q4_K_M de referencia para comparar nuevas propuestas de cuantización mediante KL y acuerdo top-1 frente a BF16, tal como documenta el autor.
-- Completion de texto en pipelines de generación: integrar llama.cpp con prompts de texto plano para tareas de continuación, resumen o generación creativa controlada.
-- Fine-tuning sobre modelo base: partir de los pesos cuantizados o del modelo base original para ajustar a dominios específicos (legal, médico, técnico) antes de desplegar.
-- Prototipado local en hardware de consumo: al requerir aproximadamente 2,49 GB para los pesos, puede ejecutarse en GPU consumer con suficiente VRAM para KV cache y buffers.
-- Generación de código asistida en entornos de desarrollo: el modelo base puede completar fragmentos de código a partir de firmas de función y docstrings, como se verifica en las pruebas de completion del autor.
-- Investigación sobre fidelidad de cuantización: usar las métricas publicadas (KL media, top-1, pérdidas contadas) para estudiar el impacto de Q4_K_M en modelos de 4B.
-- Despliegue en entornos con restricciones de memoria: al ser GGUF y compatible con llama.cpp, puede ejecutarse en CPU o GPU con presupuesto de memoria ajustado.
-- Evaluación comparativa de modelos base multilingües: probar continuaciones en inglés y coreano para medir calidad en ambos idiomas.
+- *Fine-tuning* supervisado sobre dominio propio: al ser un modelo base de 4B con licencia Apache 2.0, se puede adaptar con SFT a tareas de clasificación, extracción o generación en un dominio vertical sin coste de licencia.
+- Generación de texto en local con llama.cpp: el archivo Q4_K_M de 2,5 GB cabe en GPU de consumo y permite continuar texto en *pipelines* offline o en entornos sin conexión.
+- Prototipado rápido de aplicaciones de texto: la baja huella de memoria (2,5 GB de pesos) permite iterar en un portátil con GPU modesta antes de escalar a un modelo mayor.
+- *Data augmentation* y generación de corpus sintéticos: la continuación de texto controlada por *prompt* sirve para producir variaciones de texto a partir de semillas.
+- Evaluación de cuantizaciones: el repositorio incluye métricas de KL y top-1 frente a BF16, útil para comparar el impacto de Q4_K_M en tareas de lenguaje antes de adoptar el formato en producción.
+- Base para experimentos de investigación: modelo pequeño, licencia permisiva y pesos en GGUF facilitan reproducir experimentos de *scaling* o de *prompting* sin infraestructura grande.
+- Despliegue en *edge* o dispositivos con memoria unificada: la tabla del autor cubre desde RTX 4090 hasta Mac Studio y DGX Spark, lo que permite ejecutarlo en estaciones de trabajo y equipos compactos.
 
 ## Benchmarks y rendimiento
 
-| Referencia | KL media | Acuerdo top-1 con BF16 | Respuestas de completion correctas | Perdidas/rotas contadas |
-|---|---:|---:|---:|---:|
-| BF16 almacenado | 0 | 100 % | 28/28 | — |
-| Esta Q4_K_M | 0,047930 | 89,65 % | 28/28 | 0 |
+El autor no publica benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Sí publica métricas de fidelidad de la cuantización frente a BF16 medidas con llama.cpp:
 
-Las pruebas cubren 28 de 33 ítems de completion (se omiten cinco de formato instrucción), con prefijo fijo de tres ejemplos en texto plano y presupuestos greedy de 48 tokens (96 para código). Las ocho secuencias de 1.024 tokens en inglés/coreano cubren 8.184 posiciones puntuadas. No se reportan métricas de velocidad (throughput o latencia) en la información disponible. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+| Cuantización | Tamaño | WikiText-2 KL | WikiText-2 top-1 | Held-out KL | Held-out top-1 |
+|---|---:|---:|---:|---:|---:|
+| Q8_0 | 4,280 GB | 0,001474 | 97,863 % | 0,001120 | 97,941 % |
+| Q6_K | 3,306 GB | 0,005868 | 95,662 % | 0,004784 | 96,206 % |
+| Q5_K_M | 2,890 GB | 0,011391 | 94,338 % | 0,011788 | 94,451 % |
+| Q4_K_M | 2,497 GB | 0,040775 | 90,588 % | 0,036195 | 90,882 % |
+| Q3_K_M | 2,076 GB | 0,146550 | 81,848 % | 0,144953 | 82,245 % |
+
+No se han publicado resultados de benchmarks de tareas en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para pesos: aproximadamente 2,49 GB para el archivo Q4_K_M; se requiere memoria adicional para KV cache y buffers de trabajo.
-- Contexto de ejemplo: 2.048 tokens en la comprobación de carga; las comprobaciones GPU de llama.cpp usan contexto 8.192.
-- GPU recomendadas: no se especifican en la información disponible; por tamaño, cabe en GPU consumer con VRAM suficiente (por ejemplo, RTX 3060 12 GB, RTX 4070, RTX 4090) dejando margen para KV cache.
-- Despliegue: llama.cpp (versión v0.9.0 verificada); compatible con el ecosistema GGUF (Ollama, llama-cpp-python, entre otros) aunque no se documenta explícitamente.
-- Latencia y throughput: no reportados en la información disponible.
+- VRAM estimada para inferencia: 2,5 GB de pesos en Q4_K_M; el autor calcula que el archivo cabe cuando su tamaño más la caché KV en f16 a esa longitud de contexto más 2 GB de runtime queda por debajo del 90 % de la memoria disponible.
+- GPU recomendadas: RTX 4090 y RTX 3090 (24 GB) con contexto de 32K; RTX 5090 (32 GB); RTX 6000 Ada o 2 x 24 GB (48 GB); H100 (80 GB); RTX PRO 6000 Blackwell (96 GB); H200 (141 GB); B200 (192 GB); B300 (288 GB).
+- Cabe en GPU de consumo: sí, en RTX 4090/3090 con 24 GB a 32K de contexto; también en equipos con memoria unificada como Mac Studio M5 Max/Ultra y DGX Spark (128 GB).
+- Opciones de despliegue: llama.cpp (build cd959bae o posterior), con el binario `llama-completion`; al ser GGUF, también es compatible con el ecosistema llama.cpp en general (Ollama, servidores compatibles con la API de llama.cpp). No se mencionan vLLM ni TGI en la información disponible.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| Xylolabs/Qwen3-4B-Base-GGUF (esta ficha) | 4,02B | no disponible | Apache 2.0 | GGUF Q4_K_M | Referencia cuantizada verificada con KL 0,047930 |
-| Qwen/Qwen3-4B-Base | 4,02B | no disponible | Apache 2.0 | safetensors/BF16 | Modelo base original; sin cuantización |
-| Otras cuantizaciones Qwen3-4B-Base | 4,02B | no disponible | Apache 2.0 | GGUF | No disponible en la información proporcionada |
+| Xylolabs/Qwen3-4B-Base-GGUF (este) | 4,02B | 32K | GGUF Q4_K_M | Apache 2.0 | Hugging Face, 430 descargas |
+| Qwen/Qwen3-4B-Base | 4,02B | 32K | safetensors (BF16) | Apache 2.0 | Hugging Face (modelo original) |
+| Cuantizaciones oficiales de llama.cpp de Qwen3-4B-Base | 4,02B | 32K | GGUF (Q3_K_M a Q8_0) | Apache 2.0 | Hugging Face / llama.cpp |
 
-No se dispone de datos de benchmarks estándar ni de comparativas de rendimiento con modelos de la misma categoría en la información proporcionada.
+La comparación principal es contra el modelo original en BF16 (mayor precisión, mayor huella de memoria) y contra las cuantizaciones de referencia de llama.cpp, cuyos valores de KL y top-1 se incluyen en la tabla de precisión del autor. No se dispone de comparación con otros modelos de 4B en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es un modelo base preentrenado: no sigue instrucciones ni mantiene conversaciones; requiere prompts de completion crudos.
-- Idiomas soportados limitados a inglés y coreano según los metadatos; el rendimiento en castellano no está documentado.
-- Riesgo de alucinación inherente a modelos base: las continuaciones pueden generar texto plausible pero incorrecto.
-- La cuantización Q4_K_M introduce divergencia frente a BF16 (KL media 0,047930, acuerdo top-1 89,65 %), lo que puede afectar tareas sensibles a la precisión.
-- No se documentan sesgos conocidos en la información proporcionada.
-- No se documenta soporte de tool calling, agentes ni modo de razonamiento; no asumir estas capacidades.
-- La licencia Apache 2.0 permite uso comercial, pero se distribuye "as is", sin garantía ni endorsement del upstream.
-- No se reportan métricas de velocidad; el rendimiento en producción debe medirse en el hardware objetivo.
-- El contexto máximo no está confirmado en la información disponible; el ejemplo de carga usa 2.048 tokens y las comprobaciones GPU usan 8.192.
+- Es un modelo *base*: no sigue instrucciones ni mantiene formato conversacional sin *fine-tuning* o *prompting* específico; el uso directo en un chat producirá continuaciones, no respuestas.
+- Riesgo de alucinación y de generar contenido sesgado o incorrecto inherente a un modelo de lenguaje sin ajuste por preferencias.
+- Idiomas declarados: inglés y coreano; el rendimiento en castellano no está documentado y probablemente sea inferior.
+- La cuantización Q4_K_M introduce pérdida medible: top-1 del 90,6 % en WikiText-2 frente a BF16, con KL de 0,040775; para tareas sensibles a la precisión conviene valorar Q5_K_M o Q6_K (no publicados en este repositorio).
+- Solo se publica un archivo (Q4_K_M); no hay variantes Q8_0, Q6_K ni Q5_K_M en este repositorio, aunque el autor las usa como referencia en su tabla.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre los pesos convertidos; conviene citar el informe técnico original de Qwen3.
+- El repositorio tiene 0 *likes* y 430 descargas, por lo que la validación comunitaria es escasa.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Xylolabs/Qwen3-4B-Base-GGUF
-- Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
-- Paper técnico (arXiv): https://arxiv.org/abs/2505.09388
-- llama.cpp (commit referenciado): https://github.com/ggml-org/llama.cpp/tree/cd959bae99ff4bed22bef2604f45241c09bbb8c8
-- Herramienta de completion de llama.cpp: https://github.com/ggml-org/llama.cpp/blob/cd959bae99ff4bed22bef2604f45241c09bbb8c8/tools/completion/README.md
-- Licencia: https://huggingface.co/Xylolabs/Qwen3-4B-Base-GGUF/blob/main/LICENSE
+- Repositorio Hugging Face: https://huggingface.co/Xylolabs/Qwen3-4B-Base-GGUF
+- Modelo base original: https://huggingface.co/Qwen/Qwen3-4B-Base
+- Informe técnico Qwen3: https://arxiv.org/abs/2505.09388
+- Build de llama.cpp usado: https://github.com/ggml-org/llama.cpp/tree/cd959bae99ff4bed22bef2604f45241c09bbb8c8
+- Repositorio de la herramienta de conversión del autor: https://github.com/XylolabsInc/tensix-bfp-gptq

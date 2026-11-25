@@ -52,11 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "papr-ai/papr-embed-code-1-0.6b - Hugging Face",
-      "url": "https://huggingface.co/papr-ai/papr-embed-code-1-0.6b?hardware=h200",
-      "snippet": "Usage. from sentence_transformers import SentenceTransformer model = SentenceTransformer(\"papr-ai/papr-embed-code-1-0.6b\") # loads in fp32 q = model ... papr-ai/ ..."
-    }
-  ]
+  "sources": []
 }

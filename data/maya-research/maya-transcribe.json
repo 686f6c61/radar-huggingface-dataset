@@ -57,32 +57,81 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
-  "sources": [
+  "benchmarks": [
     {
-      "title": "Civilisation maya — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Civilisation_maya",
-      "snippet": "L’aire culturelle maya antique doit être distinguée de la zone de peuplement maya actuelle. Elle se définit comme étant le territoire …Read more"
+      "task": "Speech Recognition",
+      "dataset": "Kathbath (Hindi test)",
+      "metric": "WER",
+      "value": 9.36
     },
     {
+      "task": "Speech Recognition",
+      "dataset": "Kathbath noisy (Hindi test)",
+      "metric": "WER",
+      "value": 10.01
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "FLEURS (hi_in test)",
+      "metric": "WER",
+      "value": 10.72
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "Common Voice (Hindi test)",
+      "metric": "WER",
+      "value": 11.54
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "MUCS (Hindi test)",
+      "metric": "WER",
+      "value": 9.67
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "Lahaja (Hindi accents test)",
+      "metric": "WER",
+      "value": 11.5
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "MUCS code-switching (Hindi-English test)",
+      "metric": "WER",
+      "value": 16.97
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "Gram Vaani (Hindi phone-call test)",
+      "metric": "WER",
+      "value": 19.94
+    }
+  ],
+  "sources": [
+    {
       "title": "Autodesk Maya 2027 | Download & Buy Official Maya",
-      "url": "https://www.autodesk.com/products/maya/overview?msockid=0a58eead848d6f351c06f6a885866e65",
+      "url": "https://www.autodesk.com/products/maya/overview?msockid=222620a928596466305038b52967653e",
       "snippet": "Discover Autodesk Maya, professional 3D animation and VFX software for creating expansive worlds, complex characters, and …"
     },
     {
-      "title": "Télécharger Maya | Essai gratuit de Maya | Autodesk",
-      "url": "https://www.autodesk.com/fr/products/maya/free-trial?msockid=0a58eead848d6f351c06f6a885866e65",
-      "snippet": "Téléchargez une version d’évaluation gratuite de 30 jours d’Autodesk Maya, notre logiciel de modélisation, d’animation, d’effets …"
-    },
-    {
-      "title": "Télécharger Maya (gratuit) Windows, Mac, Linux - Clubic",
-      "url": "https://www.clubic.com/telecharger-fiche431319-maya.html",
-      "snippet": "Oct 26, 2026 · Que vous souhaitiez créer un personnage de jeu vidéo, une scène de film d'animation ou une publicité télévisée, …"
+      "title": "Download Maya | Maya Free Trial | Autodesk",
+      "url": "https://www.autodesk.com/products/maya/free-trial?msockid=222620a928596466305038b52967653e",
+      "snippet": "Download a free 30-day trial of Autodesk Maya software for 3D modeling, computer animation, visual effects, and 3D rendering for …"
     },
     {
       "title": "Maya civilization - Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Maya_civilization",
       "snippet": "The Maya script is the most sophisticated and highly developed writing system in the pre-Columbian Americas. The Maya civilization …"
+    },
+    {
+      "title": "Autodesk Maya — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Autodesk_Maya",
+      "snippet": "Autodesk Maya, ou Maya est un logiciel commercial réputé pour les images de synthèse, développé par la société Alias Systems …"
+    },
+    {
+      "title": "Maya Plus",
+      "url": "https://mayaplus.fr/",
+      "snippet": "Maya+ utilise des cookies essentiels (connexion, préférences). Avec votre accord, nous utilisons aussi PostHog (mesure d’audience …"
     }
   ]
 }

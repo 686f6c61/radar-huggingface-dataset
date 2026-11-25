@@ -2,96 +2,91 @@
 
 ## Resumen
 
-Kitchoon-V5-Clean-26B-A4B-i1-GGUF es una colección de cuantizaciones GGUF del modelo SubMaroon/Kitchoon-V5-Clean-26B-A4B, un modelo de lenguaje de arquitectura Mixture of Experts (MoE) con 25.233.142.046 parámetros totales y aproximadamente 4.000 millones de parámetros activos por token (de ahí el sufijo "A4B"). El modelo base está construido sobre la familia Gemma (etiquetado como "gemma4" en los tags del repositorio) y está afinado específicamente para roleplay y conversación, con las etiquetas "heretic" y "uncensored" que indican que se ha reducido o eliminado el alineamiento de seguridad del modelo original.
+Kitchoon-V5-Clean-26B-A4B-i1-GGUF es una cuantizacion en formato GGUF, generada por mradermacher, del modelo SubMaroon/Kitchoon-V5-Clean-26B-A4B. Se trata de un modelo de arquitectura Mixture of Experts (MoE) derivado de la familia Gemma 4, con 25.233.142.046 parametros totales segun los pesos en safetensors del modelo base. El sufijo "A4B" indica que activa aproximadamente 4.000 millones de parametros por token, lo que reduce el coste computacional de inferencia frente a un modelo denso del mismo tamano.
 
-El trabajo de cuantización lo firma mradermacher, un autor habitual en el ecosistema GGUF, que publica tanto cuantizaciones estáticas (en el repo hermano Kitchoon-V5-Clean-26B-A4B-GGUF) como cuantizaciones con imatrix (i1), que emplean una matriz de importancia calculada sobre el propio modelo para preservar mejor la calidad en tasas de compresión agresivas. El repositorio incluye 24 variantes que van desde IQ1_S (8,4 GB) hasta Q6_K (22,7 GB), lo que permite desplegar el modelo en hardware muy diverso, desde GPUs de consumo con 8-12 GB de VRAM hasta estaciones de trabajo con 24 GB o más.
+El modelo esta orientado a roleplay y conversacion, con etiquetas que lo identifican como "heretic" y "uncensored", es decir, con el alineamiento de seguridad reducido o eliminado respecto al modelo original. Esta pensado para su uso en entornos como SillyTavern y flujos conversacionales de personajes, y se distribuye bajo licencia Apache 2.0.
 
-La relevancia actual del modelo radica en su combinación de tamaño efectivo reducido (4B activos) con una ventana de parámetros totales amplia (26B), lo que en teoría ofrece un buen equilibrio entre calidad de generación y coste computacional. Sin embargo, se trata de un modelo orientado a roleplay y desalineado, por lo que su uso en producción debe limitarse a entornos controlados y con las salvaguardas adecuadas.
+La relevancia de esta ficha radica en que el repositorio ofrece cuantizaciones con imatrix (metodo i1 de ikawrakow) en un rango muy amplio de tamanos, desde 8,4 GB en IQ1_S hasta 22,7 GB en Q6_K, lo que permite desplegar un MoE de 25.000 millones de parametros en hardware de consumo. El autor indica ademas que es un modelo de vision, con archivos mmproj disponibles en el repositorio estatico.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE) basada en la familia Gemma (etiqueta "gemma4"); transformer con capas de expertos dispersos |
-| Parametros totales | 25.233.142.046 (≈25,2B) |
-| Parametros activos | ≈4B (deducido del sufijo "A4B" del nombre; no confirmado en la model card) |
+| Arquitectura | Mixture of Experts (MoE) derivada de Gemma 4 |
+| Parametros totales | 25.233.142.046 |
+| Parametros activos | aproximadamente 4.000 millones (indicado por el sufijo A4B) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K, Q2_K_S, IQ3_XXS, IQ3_XS, IQ3_S, Q3_K_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_1, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K (todas con imatrix, prefijo i1) |
-| Idiomas soportados | en (inglés únicamente, según la model card) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizaciones); el modelo base original en safetensors |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K, i1-Q2_K_S, i1-IQ3_XXS, i1-IQ3_XS, i1-IQ3_S, i1-Q3_K_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_1, i1-Q4_K_M, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K, mas fichero imatrix |
+| Idiomas soportados | ingles (segun la model card del autor) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer con arquitectura Mixture of Experts (MoE) de la familia Gemma, según las etiquetas del repositorio ("gemma4", "moe"). Con 25,2B parámetros totales y aproximadamente 4B activos, el modelo activa solo una fracción de sus expertos por token, lo que reduce el coste de inferencia respecto a un modelo denso del mismo tamaño. No se dispone de información detallada sobre el número de expertos, la estrategia de enrutamiento ni la composición del dataset de entrenamiento en la información proporcionada.
+El modelo base es una arquitectura Mixture of Experts basada en Gemma 4, con 25.233 millones de parametros totales y aproximadamente 4.000 millones activos por token. La naturaleza MoE implica que cada token se enruta a un subconjunto de expertos, de modo que el coste de computo por token es notablemente inferior al de un modelo denso del mismo tamano total. La model card del repositorio no detalla el numero de expertos, la proporcion de activacion exacta ni la configuracion de atencion.
 
-El modelo base SubMaroon/Kitchoon-V5-Clean-26B-A4B ha sido afinado para roleplay y conversación, con las etiquetas "heretic" y "uncensored" que sugieren un proceso de eliminación o reducción del alineamiento de seguridad (probablemente mediante técnicas de abliteration o fine-tuning adversarial). No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. Las cuantizaciones i1 de mradermacher emplean una matriz de importancia (imatrix) calculada sobre el modelo para mejorar la calidad de las cuantizaciones de baja precisión.
+No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de RLHF o DPO en el modelo base. Las etiquetas "heretic" y "uncensored" sugieren un proceso de fine-tuning orientado a reducir las negativas de seguridad del modelo original, pero el repositorio no documenta la metodologia. Esta version concreta es una cuantizacion: mradermacher ha generado los ficheros GGUF a partir del modelo base mediante cuantizacion con imatrix (importancia matricial), que pondera la precision de cada tensor segun su relevancia para la perplejidad.
 
 ## Capacidades
 
-- Generación de texto conversacional y roleplay multi-turno, con énfasis en mantener personajes y contextos narrativos.
-- Generación de texto general y razonamiento (capacidad heredada del modelo base Gemma, aunque no se documentan evaluaciones específicas).
-- Soporte de conversación multi-turno con contexto largo (longitud exacta no disponible).
-- Capacidades multilingües limitadas: la model card solo declara inglés ("en").
-- Modelo desalineado ("uncensored", "heretic"): no aplica filtros de seguridad en las respuestas.
-- Compatible con herramientas de inferencia GGUF (llama.cpp, Ollama, etc.) y con el ecosistema SillyTavern para roleplay.
-- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo "thinking" en la información disponible.
+- Generacion de texto conversacional orientada a roleplay y personajes.
+- Conversaciones multi-turno con mantenimiento de personaje, segun la orientacion declarada del modelo.
+- Capacidades de vision: el autor indica que es un modelo de vision y que los ficheros mmproj estan en el repositorio estatico.
+- Alineamiento de seguridad reducido ("uncensored", "heretic"), lo que amplia el rango de respuestas ante peticiones que el modelo original rechazaria.
+- Compatibilidad con SillyTavern y flujos de roleplay.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: la model card solo declara ingles.
 
 ## Casos de uso
 
-- Roleplay y narrativa interactiva: el modelo está afinado específicamente para mantener personajes coherentes en conversaciones multi-turno, y su integración con SillyTavern (etiqueta "sillytavern") lo hace adecuado para experiencias de rol conversacional en local.
-- Generación creativa de ficción: con 25B parámetros totales y 4B activos, puede producir texto narrativo variado con un coste computacional moderado, adecuado para escritura asistida de relatos y guiones.
-- Experimentación en investigación sobre desalineamiento: al ser un modelo "uncensored", sirve como objeto de estudio para analizar el comportamiento de modelos sin salvaguardas y evaluar técnicas de mitigación.
-- Despliegue local en hardware de consumo: las cuantizaciones IQ2/IQ3 (8-12 GB) permiten ejecutar el modelo en GPUs de 8-12 GB de VRAM, lo que facilita pruebas y desarrollo sin infraestructura de servidor.
-- Prototipado de chatbots de personaje: para desarrolladores que necesitan un modelo conversacional con personalidad definida y sin restricciones de contenido en entornos de prueba controlados.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece 24 variantes de cuantización, lo que permite estudiar el impacto de la compresión en la calidad de generación sobre un mismo modelo base.
+- Roleplay conversacional en local: el modelo esta etiquetado explicitamente para roleplay y SillyTavern; con cuantizaciones de 15-17 GB (i1-Q4_K_S, i1-Q4_K_M) puede ejecutarse en una GPU de consumo de 24 GB manteniendo coherencia de personaje en conversaciones largas.
+- Personajes de ficcion interactivos: la orientacion "uncensored" permite explorar narrativas y dialogos que los modelos alineados rechazan, util en escritura creativa y juegos de rol de mesa asistidos.
+- Prototipado de chatbots de entretenimiento: la licencia Apache 2.0 permite integrar el modelo en productos comerciales de chat sin restricciones de uso derivadas de la licencia.
+- Despliegue en hardware limitado: las cuantizaciones IQ2 e IQ3 (9,4-13,9 GB) permiten ejecutar un MoE de 25.000 millones de parametros en GPUs de 12-16 GB o en configuraciones CPU+GPU con llama.cpp.
+- Escritura asistida de narrativa larga: la naturaleza MoE con 4.000 millones de parametros activos ofrece un equilibrio entre calidad de generacion y velocidad, adecuado para generar borradores extensos de ficcion.
+- Experimentacion con modelos sin alineamiento: util para investigadores que estudian el comportamiento de modelos con el filtrado de seguridad reducido, comparando respuestas frente al Gemma 4 original.
+- Evaluacion de cuantizaciones: el repositorio incluye 23 variantes de cuantizacion mas el fichero imatrix, lo que permite medir el impacto de la precision en la calidad conversacional sobre un mismo modelo base.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (según cuantización):
-  - IQ1_S (8,4 GB): ~9-10 GB de VRAM o RAM.
-  - IQ2_M (10,5 GB): ~11-12 GB.
-  - IQ3_M (12,5 GB): ~13-14 GB.
-  - Q4_K_M (16,9 GB): ~17-18 GB.
-  - Q5_K_M (19,2 GB): ~20 GB.
-  - Q6_K (22,7 GB): ~23-24 GB.
-- GPU recomendadas: RTX 3090/4090 (24 GB) para cuantizaciones Q5/Q6; RTX 4080 (16 GB) o RTX 4070 Ti Super (16 GB) para Q4_K_M; GPUs de 12 GB (RTX 3060 12 GB, RTX 4070) para IQ3; GPUs de 8 GB (RTX 3070, RTX 4060) solo con IQ1/IQ2.
-- Cabe en GPU de consumo: sí, en todas las cuantizaciones hasta Q6_K en una RTX 3090/4090; las cuantizaciones IQ1/IQ2 caben en GPUs de 8-10 GB.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. No se documenta soporte para vLLM o TGI en formato GGUF (requerirían el modelo base en safetensors).
-- Latencia y throughput: no disponibles. Al ser MoE con ~4B activos, se espera un throughput superior al de un modelo denso de 25B, pero no hay mediciones publicadas.
+- VRAM estimada para inferencia: aproximadamente el tamano del fichero GGUF mas overhead de contexto. Rangos: 8,4-10,7 GB (IQ1, Q2), 11,4-14,0 GB (IQ3, IQ4_XS), 14,6-16,9 GB (Q4), 18,1-19,2 GB (Q5), 22,7 GB (Q6_K).
+- GPU recomendadas: RTX 4090 (24 GB) o RTX 3090 para Q4_K_M y Q5_K_M; RTX 4080 (16 GB) para Q4_K_S; GPUs de 12 GB para IQ2_M e IQ3_XXS; A100 o H100 para despliegues de alta concurrencia en Q6_K o para servir multiples instancias.
+- Cabe en GPU de consumo: si. Las cuantizaciones IQ2 e IQ3 caben en GPUs de 12-16 GB; Q4_K_M (16,9 GB) cabe en 24 GB; Q6_K (22,7 GB) requiere 24 GB con contexto corto o 32 GB para margen.
+- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, KoboldCpp, text-generation-webui) son las rutas naturales para GGUF. vLLM y TGI no soportan GGUF de forma nativa; para esos motores habria que usar el modelo base en safetensors. El soporte de vision requiere el fichero mmproj del repositorio estatico.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada. Al ser un MoE con aproximadamente 4.000 millones de parametros activos, el throughput por token deberia ser sustancialmente mayor que el de un modelo denso de 25.000 millones, pero no hay mediciones publicadas en el repositorio.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Activos | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| Kitchoon-V5-Clean-26B-A4B (este) | 25,2B | ≈4B | no disponible | apache-2.0 | GGUF | Roleplay, uncensored, MoE |
-| Mixtral 8x7B | 46,7B | ≈12,9B | 32K | apache-2.0 | safetensors, GGUF | MoE generalista, alineado |
-| Gemma 2 27B | 27B | 27B (denso) | 8K | Gemma license | safetensors, GGUF | Denso, alineado, multilingüe |
-| Qwen2.5 32B | 32,5B | 32,5B (denso) | 128K | apache-2.0 | safetensors, GGUF | Denso, multilingüe, tool calling |
+| Modelo | Parametros | Activos | Contexto | Licencia | Formato |
+|---|---|---|---|---|---|
+| Kitchoon-V5-Clean-26B-A4B (este) | 25,2 B | aprox. 4 B | no disponible | Apache 2.0 | GGUF, safetensors |
+| Gemma 4 (modelo base de referencia) | no disponible | no disponible | no disponible | no disponible | safetensors |
+| Modelos densos de 24-27 B en GGUF | 24-27 B | 24-27 B | variable | variable | GGUF |
 
-La comparativa es aproximada: no se dispone de benchmarks del modelo para comparar rendimiento real. Frente a Mixtral 8x7B, este modelo tiene menos parámetros totales y activos, pero está especializado en roleplay y carece de alineamiento. Frente a Gemma 2 27B, ofrece un coste de inferencia menor gracias a la arquitectura MoE, pero con un contexto y capacidades multilingües no documentadas.
+La comparacion directa con alternativas concretas no esta disponible en la informacion proporcionada. El principal diferencial frente a un modelo denso de tamano similar es la activacion de solo aproximadamente 4.000 millones de parametros por token, lo que reduce el coste de inferencia, aunque a cambio de un mayor consumo de memoria para mantener todos los expertos en VRAM.
 
 ## Limitaciones y advertencias
 
-- Modelo "uncensored" y "heretic": no aplica filtros de seguridad, por lo que puede generar contenido ofensivo, violento, sexual o ilegal. No apto para aplicaciones de cara al público sin salvaguardas externas.
-- Riesgo elevado de alucinación: al ser un modelo afinado para roleplay y sin alineamiento, la fidelidad factual no está garantizada.
-- Idiomas: solo se declara inglés; el rendimiento en castellano no está verificado y probablemente sea deficiente.
-- Longitud de contexto no documentada: no se puede garantizar el manejo de conversaciones largas sin truncamiento.
-- Licencia apache-2.0: permite uso comercial, pero el usuario asume toda la responsabilidad legal sobre el contenido generado por un modelo desalineado.
-- El modelo base original tiene 25,2B parámetros, pero las cuantizaciones de baja precisión (IQ1, IQ2) degradan notablemente la calidad; el propio autor las etiqueta como "for the desperate" o "very low quality".
-- No se documentan capacidades de tool calling, agentes ni multimodalidad; no debe asumirse su disponibilidad en producción.
-- El repositorio tiene 0 likes y 6.793 descargas, lo que indica una validación comunitaria limitada.
+- Modelo "uncensored" y "heretic": el alineamiento de seguridad esta reducido o eliminado, por lo que puede generar contenido que los modelos alineados rechazan. No es apto para aplicaciones de cara al publico sin filtros adicionales.
+- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad factual; al ser un modelo orientado a roleplay, la prioridad es la coherencia narrativa, no la exactitud.
+- Idioma: la model card solo declara ingles; el rendimiento en castellano no esta documentado y previsiblemente sera inferior.
+- Longitud de contexto: no disponible. No se puede garantizar el comportamiento en conversaciones muy largas sin datos del autor.
+- Licencia Apache 2.0: permite uso comercial, pero el usuario asume la responsabilidad sobre el contenido generado y sobre el cumplimiento normativo en su jurisdiccion.
+- Cuantizaciones de baja precision: el propio autor advierte que Q2_K_S es de "very low quality" y que IQ1_S es "for the desperate"; por debajo de IQ3 la degradacion conversacional puede ser notable.
+- Vision: los ficheros mmproj no estan en este repositorio sino en el estatico; sin ellos el modelo funciona solo como texto.
+- Procedencia del fine-tuning no documentada: se desconoce el dataset y el metodo usado para reducir el alineamiento, lo que dificulta evaluar sesgos introducidos.
 
 ## Enlaces
 
-- Repositorio Hugging Face (cuantizaciones i1): https://huggingface.co/mradermacher/Kitchoon-V5-Clean-26B-A4B-i1-GGUF
-- Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/Kitchoon-V5-Clean-26B-A4B-GGUF
+- Repositorio Hugging Face (esta cuantizacion): https://huggingface.co/mradermacher/Kitchoon-V5-Clean-26B-A4B-i1-GGUF
 - Modelo base: https://huggingface.co/SubMaroon/Kitchoon-V5-Clean-26B-A4B
-- Página de descargas del autor: https://hf.tst.eu/model#Kitchoon-V5-Clean-26B-A4B-i1-GGUF
-- README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Guía sobre calidad de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Peticiones de modelos del autor: https://huggingface.co/mradermacher/model_requests
+- Cuantizaciones estaticas (incluye mmproj): https://huggingface.co/mradermacher/Kitchoon-V5-Clean-26B-A4B-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Kitchoon-V5-Clean-26B-A4B-i1-GGUF
+- Guia de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

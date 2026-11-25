@@ -2,96 +2,113 @@
 
 ## Resumen
 
-Este repositorio contiene una versión cuantizada a 4 bits del modelo `unsloth/gemma-3-270m-it`, un fine-tune del Gemma 3 de 270 millones de parámetros desarrollado originalmente por Google DeepMind. El autor del repositorio, identificado como `ununununununununununununununununununun`, aplica un método propietario de cuantización denominado `gecko` (descrito como GPTQ espectral de bloques locales) sobre el formato de empaquetado `phi-lattice`. El resultado es un archivo de aproximadamente 371 MiB que mantiene el mismo contenedor que la versión `v2` previa, pero con una pasada de cuantización adicional que busca mejorar la fidelidad numérica.
+`gemma-3-270m-it-phi-lattice-v2-gecko` es un archivo de pesos cuantizados a 4 bits del modelo `unsloth/gemma-3-270m-it`, que a su vez es un ajuste fino de instrucciones de Gemma 3 270M de Google DeepMind. Lo publica el usuario `ununununununununununununununununununun` como parte de la familia experimental "phi-lattice", centrada en técnicas de cuantización post-entrenamiento con retroalimentación de error por bloques de columnas. No es un modelo nuevo entrenado desde cero: es una representación comprimida del checkpoint base con un cargador propio (`phi_loader.py`) que reconstruye los pesos BF16 o los mantiene empaquetados.
 
-El modelo base es Gemma 3 270M instruct, la variante más pequeña de la familia Gemma 3, orientada a generación de texto conversacional. Esta release no incluye pesos en formato estándar safetensors ni GGUF: el artefacto está empaquetado en un formato propietario que requiere un script específico (`phi_loader.py`) para cargarse en PyTorch. No hay información sobre idiomas soportados, datos de entrenamiento del fine-tune ni benchmarks estándar publicados.
+La relevancia técnica del artefacto está en el método de cuantización denominado "Gecko", que restringe la retroalimentación de error a bloques de 64 columnas con una métrica espectral amortiguada (`alpha=0.5`). Según la model card, este enfoque preserva mejor la fidelidad de pesos que la variante GPTQ global (19,06 dB frente a 16,17 dB de SQNR) y reduce la perplejidad en un 15,1 % respecto a la variante "plain v2", además de ejecutar la cuantización 6,4 veces más rápido en CPU. El archivo principal pesa 371,03 MiB y contiene 126 capas lineales cuantizadas y 110 tensores en BF16.
 
-La relevancia de esta ficha radica en que documenta una técnica de cuantización experimental (gecko) aplicada a un modelo pequeño, con métricas locales de perplejidad y SQNR que comparan el resultado con GPTQ global y con la cuantización estándar Q4_K_M de llama.cpp. Es un artefacto de investigación, no un modelo listo para producción.
+El modelo subyacente es un transformer de 270 millones de parámetros con capacidades conversacionales básicas, pensado para entornos con recursos muy limitados. A esta escala, los benchmarks de conocimiento y matemáticas se sitúan en el suelo de acierto aleatorio, por lo que el interés del artefacto es principalmente metodológico (investigación en cuantización) más que de rendimiento downstream. La licencia es Gemma, con las restricciones de uso que esta implica.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Gemma 3, variante `gemma3_text`) |
-| Parametros totales | 270 millones (modelo base `gemma-3-270m-it`) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | 4-bit empaquetado propietario (`phi-lattice` + `gecko`), ~4.02 bpw efectivos en pesos lineales |
+| Arquitectura | Transformer decoder-only (Gemma 3, variante `gemma3_text`) |
+| Parametros totales | 270 millones (modelo base) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | 4 bits empaquetado (126 capas lineales), embeddings en BF16 o variante "cashback" de dos flujos; modos de carga `low_vram_4bit` y `unrolled_bf16` |
 | Idiomas soportados | no disponible |
-| Licencia | gemma (Gemma Terms of Use) |
-| Formato de pesos | Contenedor propietario `phi-lattice` (no safetensors, no GGUF); carga mediante `phi_loader.py` |
+| Licencia | Gemma |
+| Formato de pesos | `.pt` (PyTorch) empaquetado, cargado mediante `phi_loader.py`; no es safetensors ni GGUF |
+| Tamano del archivo principal | 371,03 MiB (`gemma3_270m_phi_gecko_v2_packed_4bit.pt`) |
+| Tamano variante cashback | 221 MiB (`gemma3_270m_phi_v2_cashback_packed_4bit.pt`) |
+| Tamano del repositorio | 1,2 GB |
+| Modelo base | `unsloth/gemma-3-270m-it` |
+| Libreria | transformers |
+| Descargas | 288 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base `unsloth/gemma-3-270m-it` es un transformer decoder-only de 270 millones de parámetros de la familia Gemma 3, en su variante de solo texto (`gemma3_text`). Sobre ese checkpoint, el autor aplica una cuantización post-entrenamiento a 4 bits mediante el método `gecko`, descrito como "GPTQ espectral de bloques locales". El artefacto resultante se empaqueta en el formato `phi-lattice`, un contenedor propietario que agrupa los pesos cuantizados y requiere un loader específico para reconstruirlos en memoria como bf16 desempaquetado (`mode="unrolled_bf16"`).
+El modelo subyacente es Gemma 3 270M en su variante de ajuste de instrucciones publicada por Unsloth, un transformer decoder-only de 270 millones de parámetros. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO en el checkpoint base dentro de la información proporcionada.
 
-La cuantización se evalúa sobre un corpus local de seis textos, usando como referencia el modelo en FP32 con perplejidad (PPL) de 90,82. La tabla de resultados del autor muestra que la pasada `gecko` alcanza una PPL de 136,94 frente a 161,68 de la versión `v2` sin GPTQ y 139,85 de GPTQ global, manteniendo un SQNR de 19,07 dB (frente a 19,48 dB de `v2` y 16,17 dB de GPTQ global). El proceso de cuantización tarda 10,5 s frente a 66,8 s del GPTQ global. No hay información sobre el dataset de entrenamiento del fine-tune original de Unsloth, ni sobre si hubo RLHF, DPO u otras etapas de alineamiento.
+La contribución de este repositorio no es el entrenamiento sino la compresión. La técnica "Gecko" cuantiza las capas lineales a 4 bits usando bloques de 64 columnas y una métrica espectral con `alpha=0.5`, aplicando retroalimentación de error solo dentro de cada bloque para evitar la acumulación de error de largo alcance que afecta a los esquemas GPTQ de fila completa. El resultado son 126 capas cuantizadas con un 13,46 % de ceros exactos en los pesos descomprimidos, un SQNR de 19,06 dB frente al BF16 y un tiempo de cuantización de 22,7 segundos en CPU. La variante "cashback" mueve la tabla de embeddings a un par de dos flujos de aproximadamente 160 MiB (frente a 320 MiB en BF16), reconstruyendo la tabla original con 37,88 dB de SQNR y un coste de +0,40 % en perplejidad (136,93 → 137,47).
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, heredada del modelo base instruct.
-- Razonamiento básico y respuesta a instrucciones, limitado por el tamaño de 270M parámetros.
-- Generación de código y matemáticas elementales, sin garantías de calidad comparable a modelos de mayor escala.
-- Soporte de plantilla de chat (`apply_chat_template`) para formatear diálogos con roles user/assistant.
-- No se documenta soporte de tool calling o function calling en la información disponible.
-- No se documenta soporte de agentes ni razonamiento multi-paso.
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- No se documentan capacidades de visión, audio ni modo thinking.
+- Generación de texto conversacional en el estilo del ajuste de instrucciones de Gemma 3 270M IT.
+- Razonamiento básico de múltiples turnos, limitado por la escala de 270M parámetros.
+- Capacidades multilingües heredadas del modelo base (no documentadas en este repositorio).
+- Carga en dos modos: `unrolled_bf16` materializa los pesos en BF16 para inferencia estándar con transformers; `low_vram_4bit` mantiene los nibbles empaquetados para minimizar memoria.
+- Compatibilidad con endpoints de Hugging Face (etiqueta `endpoints_compatible`).
+- No se documenta soporte explícito de tool calling, function calling, agentes, visión ni audio en la información disponible.
 
 ## Casos de uso
 
-- Investigación de técnicas de cuantización: el artefacto sirve para reproducir y comparar el método `gecko` frente a GPTQ global y Q4_K_M en un modelo pequeño, midiendo PPL y SQNR sobre un corpus controlado.
-- Despliegue en entornos con memoria muy limitada: con ~371 MiB de pesos, puede cargarse en CPU o en GPUs de gama baja para prototipos de generación de texto, siempre que se use `phi_loader.py`.
-- Pruebas de integración de formatos propietarios: útil para validar pipelines que consumen el contenedor `phi-lattice` y evaluar la viabilidad de un loader alternativo a safetensors/GGUF.
-- Generación de texto de baja latencia en dispositivos edge: el tamaño reducido del modelo y del archivo permite inferencia rápida en hardware modesto, aunque la calidad del base 270M es limitada.
-- Evaluación comparativa de fidelidad numérica: permite medir SQNR y PPL de distintas pasadas de cuantización sobre el mismo checkpoint, como base para estudios de compresión.
-- Docencia y experimentación: adecuado para demostrar el impacto de la cuantización 4-bit en la calidad de un LLM pequeño, con métricas locales reproducibles.
+- Investigación en cuantización post-entrenamiento: el artefacto sirve para reproducir y comparar el método Gecko frente a GPTQ y esquemas de 4 bits tipo Q4_K_M, con métricas de SQNR y perplejidad ya publicadas y scripts de evaluación en el repositorio.
+- Inferencia en CPU con memoria muy restringida: el modo `low_vram_4bit` mantiene el archivo en 371 MiB (o 221 MiB con embeddings cashback) y permite ejecutar el modelo en entornos sin GPU, útil para pruebas de humo y prototipos.
+- Despliegue en dispositivos de borde: con 270M parámetros y pesos de 4 bits, el modelo puede caber en placas con 1-2 GB de RAM, aunque la calidad conversacional será limitada.
+- Generación de texto de baja latencia en pipelines de clasificación o etiquetado simple: el tamaño reducido permite throughput alto en CPU para tareas de filtrado previo antes de modelos mayores.
+- Docencia y experimentación con formatos de pesos no estándar: el cargador `phi_loader.py` y el layout empaquetado sirven como ejemplo práctico de serialización alternativa a safetensors y GGUF.
+- Evaluación comparativa de fidelidad de pesos: los resultados de MMLU, GSM8K, HellaSwag e IFEval publicados permiten medir el impacto de la cuantización a pequeña escala y contrastarlo con el mismo método aplicado a modelos de 4B.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor sobre un corpus local de 6 textos, con FP32 de referencia (PPL 90,82):
+Resultados publicados en la model card, ejecutados con `lm-evaluation-harness` en CPU, un task a la vez, sobre el archivo descomprimido a BF16:
 
-| Archive | SQNR | PPL | Tamano |
-|---|---|---|---|
-| FP32 reference | — | 90.82 | 1.07 GB |
-| v2 (plain lattice) | 19.48 dB | 161.68 | 371.0 MiB |
-| v2-GPTQ (global, clean cal) | 16.17 dB | 139.85 | 371.0 MiB |
-| v2-gecko (este repo) | 19.07 dB | 136.94 | 371.0 MiB |
-| Q4_K_M (llama.cpp standard, reference) | 26.80 dB | 99.30 | 0.25 GB |
+| Tarea | Métrica | Base BF16 | phi-lattice v2 | Este archivo (Gecko) |
+|---|---|---:|---:|---:|
+| MMLU | acc | 0,2508 | 0,2594 | 0,2354 |
+| GSM8K | exact_match estricto | 0,0243 | 0,0061 | 0,0023 |
+| HellaSwag | acc_norm | 0,3929 | 0,3793 | 0,3754 |
+| IFEval | inst_level_strict_acc | 0,3729 | 0,2866 | 0,2602 |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, lm-eval) en la información disponible; el propio autor indica que la evaluación amplia con lm-eval está pendiente.
+Métricas de fidelidad y perplejidad (FP32, seis textos de evaluación, tokenizer de `unsloth/gemma-3-270m-it`):
+
+| Checkpoint | SQNR vs BF16 | Perplejidad | Archivo |
+|---|---:|---:|---|
+| BF16 base | — | 90,82 | base |
+| phi-lattice v2 | 19,48 dB | 161,26 | packed 4-bit |
+| phi-lattice v2-GPTQ | 16,17 dB | 140,06 | packed 4-bit |
+| Este archivo (Gecko) | 19,06 dB | 136,93 | packed 4-bit, 371,03 MiB |
+| Q4_K_M | 26,80 dB | 99,30 | ejecución previa, mismos textos |
+
+A escala 270M, MMLU y GSM8K están en el suelo de acierto aleatorio incluso para el modelo BF16 sin cuantizar (25,08 % frente al 25,00 % de azar en MMLU de cuatro opciones; 2,43 % en GSM8K), por lo que la mejora de perplejidad no se traduce en deltas downstream significativos. La model card reporta que la misma receta aplicada a un modelo de 4B mejora todas las tareas frente a la variante "plain v2".
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: ~371 MiB de pesos empaquetados; al desempaquetar a bf16 en memoria, el consumo ronda ~540 MB de pesos más overhead de activaciones y contexto.
-- GPU recomendadas: cualquier GPU con al menos ~1-2 GB de VRAM libre; el modelo cabe en GPUs consumer de gama baja (GTX 1650, RTX 3050, RTX 4060) e incluso en iGPU.
-- Cabe en consumer GPU: sí, ampliamente, dado el tamaño de 270M parámetros.
-- Opciones de despliegue: solo PyTorch mediante `phi_loader.py` con `transformers`; no hay soporte GGUF, Ollama, vLLM ni TGI en esta release.
-- Latencia y throughput estimados: no disponibles; el autor indica que la velocidad de inferencia es idéntica a la versión `v2` (mismo formato de loader), pero no publica cifras.
+- VRAM/RAM estimada para inferencia: aproximadamente 0,4 GB en modo `low_vram_4bit` con el archivo principal; unos 0,25 GB con la variante cashback; en torno a 0,6-0,7 GB si se materializa en BF16 (`unrolled_bf16`).
+- GPU recomendadas: cualquier GPU consumer con al menos 2 GB de memoria (GTX 1650, RTX 3050, RTX 4060); también A100, H100 y L4 para despliegues por lotes, aunque el modelo está claramente sobredimensionado para estas GPUs.
+- Cabe en GPU consumer: sí, en cualquier GPU con 2 GB o más; también en CPU y en dispositivos de borde.
+- Opciones de despliegue: el repositorio proporciona `phi_loader.py` para cargar con transformers; no se documenta soporte nativo en vLLM, llama.cpp, Ollama ni TGI, ya que el formato `.pt` empaquetado no es estándar.
+- Latencia y throughput: no disponibles en la información proporcionada; solo se documenta el tiempo de cuantización (22,7 s en CPU para las 126 capas).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| gemma-3-270m-it-phi-lattice-v2-gecko (este) | 270M | no disponible | 4-bit phi-lattice/gecko (~4.02 bpw) | gemma | HF, solo PyTorch via `phi_loader.py` |
-| gemma-3-270m-it-phi-lattice-v2 | 270M | no disponible | 4-bit phi-lattice (sin GPTQ) | gemma | HF, solo PyTorch |
-| unsloth/gemma-3-270m-it (base) | 270M | no disponible | FP16/BF16 original | gemma | HF, transformers |
-| Q4_K_M (llama.cpp) del base | 270M | no disponible | 4-bit K-quant (~4.88 bpw) | gemma | GGUF, amplio soporte de runtimes |
+| Este archivo (Gemma 3 270M Gecko) | 270M | no disponible | Gemma | `.pt` 4-bit empaquetado | SQNR 19,06 dB, PPL 136,93 |
+| `gemma-3-270m-it-phi-lattice-v2` | 270M | no disponible | Gemma | `.pt` 4-bit empaquetado | SQNR 19,48 dB, PPL 161,26 |
+| `unsloth/gemma-3-270m-it` (BF16) | 270M | no disponible | Gemma | safetensors | Referencia sin cuantizar, PPL 90,82 |
+| Q4_K_M del mismo base | 270M | no disponible | Gemma | GGUF (implícito) | SQNR 26,80 dB, PPL 99,30 |
+
+No se dispone de datos de contexto ni de comparativas con modelos de otros fabricantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Calidad base limitada: el propio autor advierte que un modelo de 270M tiene prestaciones intrínsecamente reducidas con independencia de la cuantización.
-- Sin GGUF ni Ollama: esta release no es compatible con llama.cpp, Ollama, vLLM ni TGI; requiere el loader propietario incluido en el repo.
-- Formato no estándar: el contenedor `phi-lattice` no es safetensors ni GGUF, lo que complica la integración con tooling habitual y la portabilidad.
-- Evaluación limitada: los benchmarks se basan en un corpus local de 6 textos; no hay resultados lm-eval ni benchmarks públicos comparables.
-- Riesgo de alucinación: inherente a modelos pequeños; no hay mitigaciones documentadas.
-- Sesgos: no disponibles en la información proporcionada.
-- Idiomas: no disponibles; no se documenta cobertura multilingüe.
-- Licencia Gemma: el uso comercial está sujeto a los Gemma Terms of Use, con restricciones y obligaciones específicas que deben revisarse antes de producción.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: sin validación comunitaria ni señales de uso en producción.
+- A 270M parámetros, el rendimiento en conocimiento (MMLU) y matemáticas (GSM8K) está en el nivel de acierto aleatorio, por lo que no es adecuado para tareas que requieran razonamiento fiable.
+- La cuantización degrada las métricas downstream respecto al BF16 base en todas las tareas evaluadas (MMLU 0,2508 → 0,2354; IFEval 0,3729 → 0,2602; GSM8K 0,0243 → 0,0023).
+- Riesgo elevado de alucinación y de respuestas incoherentes en conversaciones largas, inherente a la escala del modelo.
+- El formato de pesos no es estándar (`.pt` empaquetado con cargador propio), lo que complica la integración con herramientas habituales como llama.cpp, Ollama o vLLM.
+- La variante cashback introduce una pérdida adicional de perplejidad (+0,40 %) y reconstruye los embeddings de forma aproximada (37,88 dB SQNR), no exacta.
+- La licencia Gemma impone restricciones de uso comercial y obligaciones de atribución; conviene revisar los términos completos antes de un despliegue en producción.
+- No se documentan los idiomas soportados ni la longitud de contexto en este repositorio; deben consultarse en la model card del modelo base.
+- El autor del repositorio es un usuario individual y el artefacto tiene 0 likes y 288 descargas, sin señales de validación externa más allá de las métricas publicadas por el propio autor.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/ununununununununununununununununununun/gemma-3-270m-it-phi-lattice-v2-gecko
+- Repositorio Hugging Face: https://huggingface.co/ununununununununununununununununununun/gemma-3-270m-it-phi-lattice-v2-gecko
 - Modelo base: https://huggingface.co/unsloth/gemma-3-270m-it
-- No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.
+- Variante phi-lattice v2: https://huggingface.co/ununununununununununununununununununun/gemma-3-270m-it-phi-lattice-v2
+- Variante Gecko aplicada a Qwen3-4B: https://huggingface.co/ununununununununununununununununununun/qwen3-4b-instruct-2507-phi-lattice-v2-gecko
+- Resultados de lm-evaluation-harness: `evals/lm_eval_gemma_gecko/` (incluido en el repositorio)
+- Informe de empaquetado cashback: `examples/results/gemma_gecko_embed_cashback_pack.json` (incluido en el repositorio)

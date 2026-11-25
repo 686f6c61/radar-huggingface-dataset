@@ -1,62 +1,66 @@
 # greg1506/qwen3-1p7b-coffee-dist2-GGUF
 
 ## Resumen
-`qwen3-1p7b-coffee-dist2-GGUF` es una compilación en formato GGUF para `llama.cpp` del modelo "dist2", una adaptación al dominio del café de Qwen3-1.7B desarrollada por el usuario `greg1506` dentro del proyecto CoffeeLLM. Se obtuvo destilando el modelo de referencia de 8B del mismo autor (`greg1506/qwen3-8b-coffee-v10`) sobre Qwen3-1.7B, con un corpus de dominio propio (`greg1506/coffee-corpus-v2`). El objetivo es disponer de un asistente especializado en café que quepa en dispositivos móviles y entornos con recursos limitados.
 
-El modelo hereda la arquitectura transformer densa de Qwen3-1.7B (1.700 millones de parámetros, aproximadamente) y se distribuye en dos cuantizaciones, Q4_K_M (1,1 GB) y Q5_K_M (1,3 GB), generadas desde una fusión bf16 de 3,4 GB. La versión recomendada por el autor es Q5_K_M, que según su propia evaluación iguala o supera ligeramente el rendimiento de la fusión bf16 en el benchmark interno CoffeeBench.
+qwen3-1p7b-coffee-dist2-GGUF es la distribución en formato GGUF del checkpoint "dist2" del proyecto CoffeeLLM, un ajuste fino de Qwen/Qwen3-1.7B especializado en dominio cafetero. Lo desarrolla el usuario greg1506 y se construye mediante destilación del modelo maestro de 8B del mismo proyecto (greg1506/qwen3-8b-coffee-v10) sobre el modelo base de 1.7B, con un corpus propio (coffee-corpus-v2) de 46.258 documentos. El objetivo es ofrecer un modelo de la clase móvil (1.7B) con conocimiento técnico de café: definiciones, ratios de extracción, mapas de método, origen de especies y cálculos de rendimiento.
 
-Su relevancia es acotada y muy específica: no es un modelo de propósito general, sino un especialista de dominio con licencia Apache 2.0, pensado para integrarse en aplicaciones de café (recetas, ratios, métodos, definiciones) y no para tareas de aritmética decimal fiable ni para conocimiento fuera del corpus. La ficha refleja exclusivamente los datos publicados por el autor.
+El modelo se publica como research preview y su valor práctico está en la relación capacidad/tamaño: con 1.720.574.976 parámetros y cuantizaciones de 1,1 a 1,3 GB, puede ejecutarse en CPU con llama.cpp y en GPUs de consumo. La model card reporta un rendimiento en CoffeeBench (336 ítems) de 0,562 EM crudo y 0,648 F1 de token en bf16, y de 0,574 EM con la cuantización Q5_K_M, que el autor recomienda para evaluación.
+
+La relevancia actual es doble: por un lado, demuestra un pipeline completo de adaptación de dominio y destilación sobre un modelo pequeño; por otro, expone con transparencia poco habitual las limitaciones de procedencia de datos (tiers open, share-alike y restricted) y los riesgos de licencia para uso comercial, lo que lo convierte en un caso útil para quien evalúe adaptaciones de dominio en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Qwen3), adaptado con continued pretraining, SFT y destilación LoRA |
-| Parametros totales | 1.700 millones (clase 1.7B de Qwen3) |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | no disponible en la información proporcionada |
-| Tipos de cuantizacion | Q4_K_M, Q5_K_M (en el repositorio); fusión bf16 de referencia (3,4 GB) |
-| Idiomas soportados | inglés (`language: en`) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (generado con `convert_hf_to_gguf.py` y `llama-quantize`) |
+| Arquitectura | Transformer decoder-only (Qwen3), ajuste fino por destilación sobre Qwen/Qwen3-1.7B; no se detalla en la informacion disponible la configuración interna de capas y cabezas |
+| Parametros totales | 1.720.574.976 |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada |
+| Tipos de cuantizacion | Q4_K_M (1,1 GB) y Q5_K_M (1,3 GB) en este repo; merge bf16 de referencia (3,4 GB) |
+| Idiomas soportados | Ingles (tag `language: en`); no se declaran otros idiomas |
+| Licencia | Apache-2.0 en pesos, con advertencia del autor sobre procedencia de datos y ausencia de garantia de uso comercial |
+| Formato de pesos | GGUF (llama.cpp); el merge de referencia bf16 se distribuye como base de conversión |
 
 ## Arquitectura y entrenamiento
-El modelo parte de Qwen3-1.7B, un transformer denso de la familia Qwen3, y se somete a una cadena de adaptación en tres etapas: continued pretraining sobre el flujo de tokens de `coffee-corpus-v2` (etapa de dominio), una etapa de SFT con instructor ("v1-best", con EM 0,527 / soft-EM 0,580 / F1 0,625) y, finalmente, destilación desde el profesor de 8B `greg1506/qwen3-8b-coffee-v10` (bf16, EM 0,753) sobre un pool de 15.991 filas (`qa_distill`, minado más replay sintético). La destilación usó LoRA con learning rate 2e-4 y early stopping sobre `val_loss`.
 
-El pool de destilación está anclado en documentos de `coffee-corpus-v2` con una salvaguarda de fuga (ninguna pregunta de CoffeeBench aparece literalmente en el conjunto de entrenamiento). Según el autor, "dist2" se eligió frente a un barrido de dos brazos de learning rate y dos rondas posteriores (pools de 36.000 y 55.000 filas) porque ambas rondas posteriores empeoraron el rendimiento en la batería numérica; la receta ganadora es la del pool de 16.000 filas. No se detalla la composición exacta del corpus ni el número total de tokens de entrenamiento.
+El modelo parte de Qwen/Qwen3-1.7B, un transformer decoder-only denso de 1.720.574.976 parámetros. Sobre esa base se aplica un pipeline en tres etapas: preentrenamiento continuado sobre el flujo de tokens de coffee-corpus-v2 (etapa de dominio), una etapa de SFT con instructor ("v1-best", EM 0,527 / soft-EM 0,580 / F1 0,625) y, finalmente, destilación desde el profesor greg1506/qwen3-8b-coffee-v10 (bf16, EM 0,753) sobre un pool de 15.991 filas (qa_distill), compuesto por 8.149 pares pregunta/respuesta minados por LLM y anclados en documentos del corpus, más 7.842 filas sintéticas de replay del proyecto. El ajuste se realiza con LoRA a learning rate 2e-4 y parada temprana sobre val_loss.
+
+La innovación principal no está en la arquitectura sino en el proceso de selección: dist2 se eligió frente a un barrido de dos brazos de learning rate y dos rondas posteriores con pools de 36.000 y 55.000 filas, que regresaron en la batería numérica. El pool de destilación incorpora un leak guard que evita que preguntas de CoffeeBench aparezcan literalmente en el entrenamiento. La conversión a GGUF se hizo con `convert_hf_to_gguf.py` y `llama-quantize` de llama.cpp, generando Q4_K_M y Q5_K_M desde el merge bf16 de 3,4 GB.
 
 ## Capacidades
-- Generación de texto especializada en café: definiciones, métodos de preparación, ratios, origen de especies y estándares de calidad.
-- Razonamiento numérico limitado: resuelve ratios directos e inversos y conversiones de sólidos-masa con precisión variable (ver limitaciones).
-- Respuestas concisas con declaración de incertidumbre, según la plantilla de sistema sugerida por el autor.
-- Soporte de formato de chat ChatML, con plantilla de "thinking" embebida en el GGUF.
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta capacidad de agentes ni razonamiento multi-paso.
-- No se documenta visión, audio ni otras modalidades.
-- Multilingüe: no; el modelo está etiquetado como inglés únicamente.
-- No es un asistente de propósito general; su conocimiento está acotado al corpus de café.
+
+- Generación de texto conversacional en inglés sobre dominio cafetero: definiciones, métodos de extracción, ratios, origen de especies y estándares de calidad.
+- Razonamiento numérico limitado: resuelve ratios directos e inversos y cálculos de sólidos y masa, pero con rendimiento bajo en aritmética decimal (ver limitaciones).
+- Respuestas de formato cerrado y extracción de datos: la evaluación se hace con EM crudo, soft-EM y F1 de token, lo que indica capacidad de producir respuestas cortas y verificables.
+- Modo "thinking" heredado de la familia Qwen3: la evaluación se realiza tras eliminar el bloque de pensamiento (post think-strip), por lo que el modelo genera razonamiento intermedio antes de responder.
+- Soporte de tool calling y function calling: no documentado en la información disponible.
+- Soporte de agentes y razonamiento multi-paso: no documentado; el autor recomienda derivar la aritmética decimal a una calculadora o llamada a función, lo que sugiere integración externa más que capacidad agéntica nativa.
+- Capacidades multilingües: solo inglés declarado; no hay evidencia de otros idiomas.
+- Capacidades de visión o audio: no disponibles.
+- Despliegue en CPU y entornos con recursos limitados, incluido un runtime gratuito de Colab.
 
 ## Casos de uso
-- Asistente de café en aplicación móvil: con 1,1-1,3 GB en Q4/Q5, el modelo cabe en un dispositivo de gama media y puede responder consultas de ratios y métodos en local, sin conexión, usando `llama.cpp` como runtime.
-- Respuesta a preguntas de definición y vocabulario de café: la familia `definition` obtiene 0,58 EM en bf16 y sube a 0,67 en Q5_K_M, por lo que es adecuada para glosarios y explicaciones conceptuales en una app o chatbot.
-- Cálculo de ratios directos en recetas: la familia `ratio-forward` alcanza 0,76 EM, útil para sugerir proporciones café-agua en escenarios controlados, siempre con verificación posterior.
-- Conversión de sólidos y masa: la familia `solids-mass` obtiene 1,00 EM en bf16, lo que la hace fiable para cálculos de dosis y rendimiento de extracción en el rango cubierto por el corpus.
-- Identificación de origen y especie: `species-origin` logra 0,73 EM / 0,80 soft-EM, aprovechable en fichas de producto y catálogos de variedades.
-- Mapa de métodos de preparación: `method-map` rinde 0,54 EM / 0,58 soft-EM; puede usarse como ayuda en asistentes de recomendación de método, con revisión humana.
-- Bebidas con leche: `milk-drinks` obtiene 0,62 EM pero 0,88 soft-EM, adecuado para respuestas tolerantes a variaciones de formato en recetas de cafetería.
-- Despliegue en CPU o entornos sin GPU: el autor evalúa con `llama-server` en CPU a temperatura 0, lo que permite servir el modelo en servidores modestos o en el propio dispositivo.
+
+- Asistente de formación para baristas: el modelo responde preguntas sobre ratios, métodos y estándares de calidad con un tamaño de 1,1-1,3 GB, lo que permite desplegarlo en una tablet o portátil sin GPU dedicada mediante llama.cpp u Ollama.
+- Base de conocimiento de dominio en atención al cliente de cafeterías: puede gestionar consultas frecuentes sobre origen de especies, definiciones y mapas de método, con la salvedad de derivar cualquier cálculo de rendimiento de extracción a una calculadora.
+- Prototipado rápido de adaptaciones de dominio: sirve como referencia para equipos que quieran replicar el pipeline (preentrenamiento continuado, SFT y destilación desde un profesor mayor) sobre un corpus propio y un modelo base de 1,7B.
+- Evaluación de técnicas de cuantización: el repositorio incluye métricas comparadas entre Q4_K_M, Q5_K_M y bf16, lo que lo hace útil como caso de estudio de la degradación por cuantización en tareas numéricas y de extracción.
+- Demostraciones interactivas en entornos gratuitos: el notebook de Colab instala llama-cpp-python, descarga el quant Q5_K_M y lanza una interfaz Gradio con enlace temporal, adecuado para talleres y pruebas de concepto.
+- Investigación sobre procedencia de datos y licencias: la model card documenta los tiers open, share-alike y restricted del corpus y su impacto en la distribución, lo que permite estudiar el problema de la trazabilidad de datos en modelos ajustados.
+- Filtrado y clasificación de consultas de dominio: dado su rendimiento en familias de conocimiento (definición, method-map, species-origin), puede usarse para enrutar preguntas a un modelo mayor o a una herramienta específica.
 
 ## Benchmarks y rendimiento
-Resultados publicados por el autor en CoffeeBench v6 (336 ítems reservados, temperatura 0, EM exacto, soft-EM y token-F1):
 
-| Modelo / cuantización | Tamaño | Raw EM | Soft-EM | Token F1 |
+CoffeeBench, 336 ítems retenidos, temperatura 0, post think-strip, servidor llama.cpp en CPU:
+
+| Modelo / cuantizacion | Tamano | EM crudo | Soft-EM | F1 de token |
 |---|---|---|---|---|
-| Q4_K_M | 1,1 GB | 0,530 | 0,551 | 0,625 |
-| Q5_K_M (recomendado) | 1,3 GB | 0,574 | 0,592 | 0,660 |
-| Fusión bf16 (referencia) | 3,4 GB | 0,562 | 0,580 | 0,648 |
-| Profesor 8B (`qwen3-8b-coffee-v10`) | no disponible | 0,753 | 0,789 | no disponible |
+| Q4_K_M (este repo) | 1,1 GB | 0,530 | 0,551 | 0,625 |
+| Q5_K_M (este repo) | 1,3 GB | 0,574 | 0,592 | 0,660 |
+| bf16 merge (referencia) | 3,4 GB | 0,562 | 0,580 | 0,648 |
+| Profesor qwen3-8b-coffee-v10 | 8B | 0,753 | 0,789 | no disponible |
 
-Rendimiento por categoría (fusión bf16, EM / soft-EM):
+Rendimiento por categoría del merge bf16 (n, EM, soft-EM):
 
 | Familia | n | EM | Soft-EM |
 |---|---|---|---|
@@ -72,40 +76,48 @@ Rendimiento por categoría (fusión bf16, EM / soft-EM):
 | roast-map | 10 | 0,30 | 0,30 |
 | processing-map | 9 | 0,22 | 0,22 |
 
-El autor advierte que el conjunto de test es deliberadamente aritmético (aproximadamente el 74 % de los ítems son familias numéricas), por lo que el EM global infravalora el rendimiento en mapas de conocimiento y sobrevalora la capacidad numérica independiente de calculadora.
+El autor advierte que el conjunto de prueba es deliberadamente aritmético (aproximadamente el 74% de los ítems son familias numéricas), por lo que el EM global subestima el rendimiento en mapas de conocimiento y sobrestima la capacidad aritmética sin calculadora.
 
 ## Requisitos de hardware
-- VRAM estimada: en Q4_K_M, unos 1,1 GB de pesos más overhead de contexto (típicamente 1,5-2 GB totales); en Q5_K_M, unos 1,3 GB de pesos más overhead (aproximadamente 1,7-2,3 GB totales). Estimación orientativa, no publicada por el autor.
-- GPU recomendadas: no se especifican; por tamaño, cualquier GPU consumer con 4 GB o más de VRAM (por ejemplo, GTX 1650, RTX 3050, RTX 4060) puede alojarlo. No requiere A100 ni H100.
-- Cabe en GPU consumer: sí, en la práctica totalidad de GPU consumer modernas, y también en CPU.
-- Opciones de despliegue: `llama.cpp` (`llama-cli`, `llama-server`), y por compatibilidad GGUF, herramientas derivadas como Ollama o LM Studio. No se documenta soporte de vLLM ni TGI para este artefacto.
-- Latencia y throughput: no disponibles. El autor evalúa en CPU con `llama-server` a temperatura 0, pero no publica cifras de latencia ni tokens por segundo.
+
+- VRAM estimada para inferencia: aproximadamente 1,1 GB con Q4_K_M y 1,3 GB con Q5_K_M, más overhead de contexto y del runtime de llama.cpp.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de memoria libre; una RTX 4090 o A100 no son necesarias para este tamaño y quedan sobredimensionadas.
+- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU consumer moderna (GTX 1650, RTX 3050, RTX 4060, etc.) y también en CPU.
+- Opciones de despliegue: llama.cpp (llama-server), llama-cpp-python, Ollama y cualquier runtime compatible con GGUF; el repo declara `endpoints_compatible`.
+- Latencia y throughput: no se publican cifras concretas; la evaluación se realizó en CPU con llama-server a temperatura 0, y el notebook de Colab funciona con un runtime gratuito de CPU, lo que indica que la inferencia es viable sin acelerador.
+- Almacenamiento: 2,4 GB de repositorio completo, con quants individuales de 1,1 y 1,3 GB.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | CoffeeBench EM | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-1p7b-coffee-dist2 (Q5_K_M) | 1,7B | no disponible | CoffeeBench EM 0,574 / soft 0,592 | Apache 2.0 | GGUF en Hugging Face |
-| qwen3-1p7b-coffee-dist2 (Q4_K_M) | 1,7B | no disponible | CoffeeBench EM 0,530 / soft 0,551 | Apache 2.0 | GGUF en Hugging Face |
-| greg1506/qwen3-8b-coffee-v10 (profesor) | 8B | no disponible | CoffeeBench EM 0,753 / soft 0,789 | no disponible | Hugging Face |
-| Qwen/Qwen3-1.7B (base) | 1,7B | no disponible | no disponible en esta información | no disponible en esta información | Hugging Face |
+| qwen3-1p7b-coffee-dist2-GGUF (Q5_K_M) | 1,72B | no disponible | 0,574 | Apache-2.0 con caveat de datos | GGUF en HF |
+| Qwen/Qwen3-1.7B (base) | 1,72B | no disponible | no disponible | Apache-2.0 | safetensors y GGUF en HF |
+| greg1506/qwen3-8b-coffee-v10 (profesor) | 8B | no disponible | 0,753 | no disponible | HF |
+| greg1506/qwen3-8b-coffee-v10 (referencia de destilación) | 8B | no disponible | 0,789 soft-EM | no disponible | HF |
 
-No se dispone de datos de benchmarks de Qwen3-1.7B base sobre CoffeeBench ni de otros modelos especializados en café comparables en la información proporcionada.
+La comparación con el modelo base Qwen3-1.7B no puede cuantificarse porque la información proporcionada no incluye su puntuación en CoffeeBench; la única comparación directa disponible es con el profesor de 8B, que supera al estudiante en 0,179 EM crudo (0,753 frente a 0,574 en Q5_K_M).
 
 ## Limitaciones y advertencias
-- No fiable para aritmética decimal: `ey-forward` rinde 0,44 EM en bf16 y cae a 0,29 en Q4_K_M; `ey-inverse` se queda en 0,48. El autor recomienda derivar estos cálculos a una calculadora o a una llamada de función, o usar el modelo de 8B.
-- `roast-map` (0,30 bf16 / 0,20 en Q5) y `processing-map` (0,22) están por debajo del azar; en producción conviene codificar la tabla determinista de relaciones (10 + 9) en lugar de preguntar al modelo.
-- Acotado al corpus: las respuestas fuera del dominio de `coffee-corpus-v2` no son fiables.
-- Solo inglés; no hay soporte multilingüe documentado.
-- No es un asistente de propósito general.
-- No es fuente de referencia: el propio autor indica que los consejos y cálculos de café son indicativos y deben verificarse de forma independiente.
-- La plantilla de chat incluye un bloque de "thinking" que aparece como texto literal en las completaciones crudas; es necesario eliminarlo o usar la plantilla sin thinking.
-- Riesgo de alucinación en preguntas numéricas y de mapeo, tal como reflejan los resultados por categoría.
-- La licencia declarada en la model card es Apache 2.0, aunque el campo de licencia de Hugging Face figura como no disponible; conviene verificar antes de un uso comercial.
+
+- No fiable para aritmética decimal: rendimiento de 0,44 EM en ey-forward y 0,48 en ey-inverse en bf16, con degradación adicional bajo Q4_K_M (ey-forward cae de 0,44 a 0,29). El autor recomienda derivar estos cálculos a una calculadora o llamada a función.
+- Mapas de conocimiento débiles: roast-map (0,30 EM) y processing-map (0,22 EM) son las familias con peor rendimiento.
+- La cuantización Q4_K_M pierde 3,2 puntos de EM respecto al merge bf16, concentrada en la batería de rendimiento de extracción; Q5_K_M es la opción recomendada si el espacio lo permite.
+- Estado de research preview: el autor declara explícitamente que no garantiza que los datos de entrenamiento estén libres de términos share-alike o no comerciales y que no emite ninguna declaración de viabilidad comercial. No debe distribuirse como producto comercial.
+- Procedencia de datos: el corpus completo tiene 46.258 documentos, de los cuales 1.365 son CC BY-SA 4.0 y 1.472 son CC BY-NC/ND (25% de los tokens de café). El bundle público solo contiene el tier open (43.421 documentos), que no es el flujo exacto de entrenamiento. La cuestión de si los pesos son obra derivada del texto de entrenamiento no está resuelta legalmente.
+- El pool de destilación minado es 41% open, 48% share-alike y 11% restricted por documento fuente.
+- Idiomas: solo inglés declarado; no hay soporte documentado de castellano ni de otros idiomas.
+- Riesgo de alucinación: no se documenta una evaluación específica de factualidad fuera de CoffeeBench; el modelo puede generar respuestas plausibles pero incorrectas en preguntas numéricas o de mapas de tueste y procesamiento.
+- Sesgos: no se documentan análisis de sesgo en la información disponible.
+- Contexto: la longitud de contexto no se especifica en la model card, lo que impide garantizar conversaciones multi-turno largas.
+- Tool calling y capacidades agénticas: no documentadas; cualquier uso en pipelines de agentes requiere validación previa.
 
 ## Enlaces
+
 - Modelo en Hugging Face: https://huggingface.co/greg1506/qwen3-1p7b-coffee-dist2-GGUF
-- Modelo profesor de 8B: https://huggingface.co/greg1506/qwen3-8b-coffee-v10
-- Dataset del corpus: https://huggingface.co/datasets/greg1506/coffee-corpus-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
-- Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
+- Profesor de 8B: https://huggingface.co/greg1506/qwen3-8b-coffee-v10
+- Dataset coffee-corpus-v2: https://huggingface.co/datasets/greg1506/coffee-corpus-v2
+- Notebook de demostración en Colab: https://huggingface.co/greg1506/qwen3-1p7b-coffee-dist2-GGUF/blob/main/colab_demo.ipynb
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- llama-cpp-python: https://github.com/abetlen/llama-cpp-python

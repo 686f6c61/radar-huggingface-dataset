@@ -1,98 +1,84 @@
 # mrtint0729/kanana-1.5-2.1b-diary-dpo-gguf
 
 ## Resumen
+kanana-1.5-2.1b-diary-dpo-gguf es una cuantizacion GGUF publicada por el usuario mrtint0729 (bajo la marca Alpharium) sobre el modelo base kakaocorp/kanana-1.5-2.1b-instruct-2505 de Kakao Corp. Se trata de un ajuste fino especializado en la generacion de entradas de diario en coreano para uso on-device, pensado para integrarse en la aplicacion Pocketlog. El modelo parte de un transformer denso de 2.086.984.704 parametros (aproximadamente 2,1 mil millones) y ha pasado por un pipeline de SFT seguido de DPO para alinear el estilo y el formato de salida con el caso de uso del diario.
 
-kanana-1.5-2.1b-diary-dpo-gguf es una cuantización GGUF Q4_K_M de un ajuste fino especializado del modelo coreano kakaocorp/kanana-1.5-2.1b-instruct-2505, publicado por el usuario mrtint0729. El modelo está entrenado específicamente para generar entradas de diario en coreano a partir de descripciones de fotos y lugares de un día, dentro de la aplicación Alpharium. El ajuste combina LoRA SFT (339 ejemplos, rank 16, alpha 32) con DPO (596 pares, beta 0.2) para alinear el estilo y reducir errores gramaticales y de anclaje visual.
+La relevancia de esta ficha reside en que ejemplifica el patron de modelos pequenos y muy especializados que se distribuyen ya cuantizados para ejecucion local. El repositorio incluye un unico fichero GGUF de 1.241.435.520 bytes (1183,9 MiB, aproximadamente 1,156 GiB), lo que lo situa en el rango de modelos que caben comodamente en memoria de dispositivos moviles y portatiles. La licencia es Apache-2.0, heredada del modelo base, lo que permite uso comercial sin restricciones adicionales.
 
-El modelo resuelve un problema muy concreto: la generación de diarios en coreano en dispositivos móviles con menos de 2 GiB de RAM, ejecutándose en secuencia tras un VLM pequeño (LFM2.5-VL-450M) que produce los subtítulos de las fotos. Con 2.087 millones de parámetros y un archivo de 1.393.511.456 bytes, está pensado para inferencia local con llama.cpp, no para servidores de alto rendimiento.
-
-Su relevancia es limitada y muy específica: no es un modelo generalista, sino un componente de producto con contrato de salida estricto (estilo haeyo, sin letras latinas, sin especulación visual). Para cualquier uso fuera de la generación de diarios en coreano, su valor es marginal frente al modelo base sin ajustar.
+La informacion disponible es limitada: la model card se centra en metadatos de release, parametros de muestreo y opciones de runtime, y no detalla la composicion del dataset de entrenamiento ni resultados de benchmarks. Esta ficha refleja exclusivamente lo que el autor y los metadatos de Hugging Face declaran, marcando como "no disponible" todo aquello que no se ha publicado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de kanana-1.5-2.1b-instruct-2505; detalles no disponibles) |
-| Parametros totales | 2.086.984.704 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 2048 tokens en la configuración de referencia del autor (n_ctx=2048) |
-| Tipos de cuantizacion | GGUF Q4_K_M (único publicado) |
+| Arquitectura | Transformer denso (derivado de kakaocorp/kanana-1.5-2.1b-instruct-2505) |
+| Parametros totales | 2.086.984.704 (aproximadamente 2,1B) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la model card; el autor recomienda `n_ctx=2048` en runtime |
+| Tipos de cuantizacion | GGUF cuantizado (fichero unico `pocketlog-diary-v1.0.0.gguf`, 1.241.435.520 bytes); nivel de cuantizacion exacto (Q4_K_M, Q5_K_M, etc.) no especificado |
 | Idiomas soportados | coreano (ko) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp) |
+| Formato de pesos | GGUF (compatible con llama.cpp) |
 
 ## Arquitectura y entrenamiento
+El modelo es un ajuste fino del transformer denso kanana-1.5-2.1b-instruct-2505 de Kakao Corp, del que hereda la arquitectura base. Sobre ese punto de partida, el autor aplica un pipeline de SFT (supervised fine-tuning) seguido de DPO (direct preference optimization), segun indican las etiquetas del repositorio. El objetivo declarado es la generacion de entradas de diario en coreano para la aplicacion Pocketlog, de ahi las etiquetas `diary`, `on-device` y `conversational`.
 
-El modelo parte de kakaocorp/kanana-1.5-2.1b-instruct-2505, un transformer decoder-only de 2.1B parámetros. Sobre esa base se aplicó un ajuste LoRA SFT v3 con 339 ejemplos (rank 16, alpha 32) y posteriormente DPO v3 con 596 pares de preferencia (1.5 épocas, beta 0.2, nll_weight 0.5 con anclaje KL/NLL). El objetivo del DPO es doble: fijar el registro "haeyo" (terminaciones en ~요) y penalizar la especulación visual y los errores de partículas tras sustantivos sin consonante final (과/와, 을/를, 이/가, 으로/로).
-
-La innovación técnica no está en la arquitectura, sino en el contrato de salida y en el proceso de evaluación: se documentan tres conjuntos de prueba (13 casos sintéticos, 10 casos con VLM real y 10 held-out) con métricas de aceptación, recall de subtítulos, alucinación, errores gramaticales y grounding estricto. Además, el autor reporta que una gramática GBNF que bloquea letras latinas (`root ::= [^A-Za-z]*`) no altera la salida (10/10 idénticos con y sin gramática), lo que indica que el ajuste ya internaliza la restricción. También se verifica diversidad con tres semillas (Jaccard 0.214–0.412, sin repeticiones exactas en 9/9 casos).
+La model card menciona una referencia interna a un experimento (`docs/experiments/EXP-018-dense-photo-compression.md`) y una version canonica "v4.3e", pero no se aportan datos sobre volumen de tokens de entrenamiento, composicion del dataset, mezcla de datos sinteticos o preferencias usadas en DPO. Tampoco se documenta ninguna innovacion arquitectonica propia: el valor diferencial esta en la especializacion y en la distribucion ya cuantizada. El repositorio incluye la etiqueta `imatrix`, lo que sugiere que la cuantizacion se ha calibrado con una matriz de importancia, una practica habitual en llama.cpp para preservar calidad en modelos pequenos.
 
 ## Capacidades
-
-- Generación de texto en coreano con registro "haeyo" consistente.
-- Generación de entradas de diario a partir de un prompt estructurado con número de fotos, momento del día, lugar y subtítulos de imágenes.
-- Generación de títulos de diario en un segundo turno (contrato `titleQuestion`).
-- Anclaje a vocabulario visual concreto (objetos y escenas descritos en los subtítulos), con supresión de referencias temporales o visuales no respaldadas.
-- Manejo correcto de partículas tras sustantivos sin consonante final.
-- Salida sin letras latinas por diseño, verificada con gramática GBNF.
-- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión nativa, audio ni modo de razonamiento extendido.
-- Multilingüismo: solo coreano.
+- Generacion de texto en coreano orientada a la redaccion de entradas de diario.
+- Formato de salida restringido mediante gramatica GBNF (`root ::= [^A-Za-z]*`), que impide la emision de caracteres latinos y fuerza salida en hangul.
+- Conversacion multi-turno basica, heredada del modelo instruct original.
+- Ejecucion on-device mediante llama.cpp, con soporte de `flash_attn=true` y `n_ctx=2048`.
+- Muestreo recomendado por el autor: `temperature=0.60`, `top_p=0.90`, `top_k=40`, `n_predict=512`.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponibles en la informacion proporcionada.
+- Vision, audio o modo thinking: no disponibles en la informacion proporcionada.
+- Capacidades multilingues: limitadas al coreano segun los metadatos (`language: ko`).
 
 ## Casos de uso
-
-- Generación de diarios en apps móviles: el modelo recibe un prompt con metadatos del día y subtítulos de fotos y produce una entrada de diario en estilo haeyo. Es adecuado por su tamaño (1.4 GB en Q4_K_M) y su consumo de RAM inferior a 2 GiB, compatible con ejecución en el propio dispositivo.
-- Pipeline VLM + LLM en dispositivos: se usa en secuencia tras un modelo de visión-lenguaje pequeño (LFM2.5-VL-450M) que describe las fotos; el LLM convierte esas descripciones en texto narrativo sin inventar objetos no descritos.
-- Aplicaciones de journaling con privacidad local: al ejecutarse con llama.cpp en el dispositivo, los datos del usuario no salen del terminal, lo que encaja con productos de diario personal.
-- Generación de títulos cortos: el segundo turno produce un título para la entrada, útil en interfaces de listado de diarios.
-- Prototipado de asistentes de escritura en coreano con restricciones de estilo: sirve como referencia de cómo aplicar DPO para fijar registro y evitar errores de partículas.
-- Evaluación de técnicas de alineación en modelos pequeños: los conjuntos de prueba documentados (33 casos con métricas de alucinación y grounding) permiten reproducir el proceso de validación en otros dominios cerrados.
-- Integración en apps web o de escritorio vía llama-cpp-python: el autor documenta el flujo con `hf_hub_download` y `Llama(n_ctx=2048, n_gpu_layers=99)`, reutilizable en cualquier cliente Python.
+- Diario personal en aplicacion movil: el modelo genera entradas de diario en coreano a partir de notas o eventos del dia, con salida restringida a hangul mediante gramatica GBNF y un tamano de 1,156 GiB que permite empaquetarlo en una app Android o iOS con llama.cpp.
+- Procesamiento 100 % offline y privado: al ejecutarse on-device, los textos del diario no salen del dispositivo, lo que encaja con requisitos de privacidad de datos personales sensibles.
+- Resumen y reescritura de notas diarias: el ajuste SFT+DPO orienta el estilo hacia un registro de diario, util para convertir listas de eventos en parrafos narrativos coherentes.
+- Prototipado rapido de funciones conversacionales en coreano: con 2,1B parametros y contexto de 2048 tokens, sirve para validar flujos de chat en dispositivos de gama media antes de invertir en modelos mayores.
+- Generacion de texto con formato controlado: la restriccion gramatical `[^A-Za-z]*` es reutilizable en pipelines que necesiten garantizar que la salida no contenga caracteres latinos, por ejemplo para normalizacion linguistica.
+- Educacion y practica de escritura en coreano: el modelo puede proponer borradores de entradas de diario que el usuario edita, con latencia baja al ejecutarse localmente.
+- Integracion en aplicaciones de bienestar o journaling: el modelo encaja en productos que registran estado de animo y actividades, siempre que el equipo valide la calidad real de las salidas con su propio conjunto de evaluacion, dado que no hay benchmarks publicados.
 
 ## Benchmarks y rendimiento
-
-Los datos publicados son evaluaciones internas del autor sobre contratos de salida, no benchmarks estándar (MMLU, HumanEval, GSM8K). Se reproducen tal cual:
-
-| Benchmark | Aceptación / haeyo / título | Recall / cobertura de subtítulos | Alucinación | Errores gramaticales / partículas | Grounding estricto |
-|---|---|---|---|---|---|
-| standard_13 (sintético, N=13) | 13 / 13 / 13 | 96.3% / 100.0% | 0.0% (0/13) | 0.0% (0/13) | 13/13 (100.0%) |
-| exp_012 VLM real (N=10) | 10 / 10 / 10 | 99.2% / 100.0% | 0.0% (0/10) | 0.0% (0/10) | 10/10 (100.0%) |
-| Held-out VLM real (N=10) | 10 / 10 / 10 | 99.2% / 100.0% | 0.0% (0/10) | 0.0% (0/10) | 10/10 (100.0%) |
-| Total (N=33) | 33 / 33 / 33 | 96.3%–99.2% / 100.0% | 0.0% (0/33) | 0.0% (0/33) | 33/33 (100.0%) |
-
-Prueba de diversidad FR-020a (3 casos × 3 semillas = 9 generaciones): similitud Jaccard por pares entre 0.214 y 0.412, sin coincidencias exactas (9/9), con judge, título, haeyo y grounding estricto correctos en 9/9. No hay benchmarks estándar publicados.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-
-- VRAM/RAM estimada: el archivo Q4_K_M ocupa 1.393.511.456 bytes (1.298 GiB); con contexto de 2048 tokens la huella total se mantiene por debajo de 2 GiB, según el propio autor.
-- GPU recomendadas: no se especifican. Al ser un modelo de 2.1B en Q4, cabe en GPUs de consumo con 4 GB o más de VRAM (por ejemplo, RTX 3050, RTX 4060, RTX 4090) y en Apple Silicon con memoria unificada.
-- CPU: viable en CPU moderna con llama.cpp; el autor lo plantea como ejecución on-device en móvil.
-- Opciones de despliegue: llama.cpp (`llama-completion`), llama-cpp-python, y cualquier runtime compatible con GGUF. No se documenta soporte de vLLM ni TGI.
-- Latencia y throughput: no disponibles. El autor fija `n_predict=512` y `n_ctx=2048` como configuración de referencia, pero no publica tiempos.
+- VRAM/RAM estimada para inferencia: el fichero GGUF ocupa 1.241.435.520 bytes (aproximadamente 1,16 GiB); se recomienda reservar entre 1,5 y 2,5 GB de memoria para pesos, KV cache y overhead del runtime con `n_ctx=2048`.
+- GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM puede ejecutarlo; tarjetas como RTX 3050, RTX 4060, RTX 4090 o superiores lo mueven con holgura. Tambien es viable en CPU.
+- Cabe en GPU consumer: si, en practicamente cualquier GPU consumer moderna e incluso en iGPU con memoria unificada suficiente.
+- Despliegue: llama.cpp es el runtime de referencia (formato GGUF, opciones `flash_attn=true` y `n_ctx=2048` documentadas por el autor). No se documenta soporte para vLLM, TGI u Ollama en la informacion proporcionada.
+- Latencia y throughput: no disponibles en la informacion proporcionada. Por el tamano del modelo, es razonable esperar decodificacion interactiva en CPU moderna y muy rapida en GPU, pero no hay cifras publicadas que lo confirmen.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
 |---|---|---|---|---|---|---|
-| kanana-1.5-2.1b-diary-dpo-gguf | 2.087 M | 2048 (config. de referencia) | ko | Apache-2.0 | GGUF Q4_K_M | Ajuste DPO para diarios; sin benchmarks estándar |
-| kakaocorp/kanana-1.5-2.1b-instruct-2505 | 2.087 M | no disponible | ko (principal) | Apache-2.0 | safetensors | Modelo base; uso generalista, sin especialización en diarios |
-| Modelos coreanos pequeños de la misma familia (kanana-1.5) | no disponible | no disponible | ko | no disponible | no disponible | No se dispone de datos verificados en la información proporcionada |
+| mrtint0729/kanana-1.5-2.1b-diary-dpo-gguf | 2,1B | 2048 (runtime recomendado) | ko | Apache-2.0 | GGUF | Especializado en diario, ajuste SFT+DPO, sin benchmarks publicados |
+| kakaocorp/kanana-1.5-2.1b-instruct-2505 | 2,1B | no disponible | ko (principal) | Apache-2.0 | safetensors | Modelo base instruct; mismo tamano, uso general |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | multilingue | Apache-2.0 | safetensors, GGUF | Alternativa multilingue de tamano similar; contexto mucho mayor |
+| Llama-3.2-1B-Instruct | 1,2B | 131.072 | multilingue | Llama 3.2 Community License | safetensors, GGUF | Menor, contexto muy superior, licencia con restricciones de uso |
 
-La comparación cuantitativa con alternativas no es posible: el autor no publica MMLU ni otros benchmarks estándar, y no se dispone de cifras verificadas de modelos comparables en la información proporcionada.
+La comparativa se limita a caracteristicas declaradas; no hay datos de rendimiento del modelo de diario que permitan comparar calidad frente a estas alternativas.
 
 ## Limitaciones y advertencias
-
-- Especialización extrema: el modelo está entrenado para un contrato de prompt y salida concretos (diario en coreano, estilo haeyo, sin letras latinas). Fuera de ese formato su calidad no está validada.
-- Idioma: solo coreano. No hay evidencia de comportamiento en castellano ni en otros idiomas.
-- Contexto corto: la configuración de referencia usa 2048 tokens, insuficiente para conversaciones largas o documentos extensos.
-- Riesgo de alucinación: el autor reporta 0.0% en sus 33 casos, pero la muestra es pequeña y sintética en parte; no hay garantía fuera de la distribución evaluada.
-- Sesgos: no se documentan análisis de sesgo. Al derivar de un modelo coreano, puede heredar sesgos culturales y lingüísticos del corpus original.
-- Licencia: Apache-2.0, lo que permite uso comercial, pero conviene verificar las condiciones del modelo base y de los datos de ajuste, no detalladas.
-- Producción: sin benchmarks estándar, sin métricas de latencia y con un único formato de cuantización, la evaluación previa a producción debe hacerse con datos propios.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: no hay validación externa de la comunidad.
+- Sesgos conocidos: no documentados por el autor; al estar entrenado principalmente en coreano, puede reflejar sesgos culturales y linguisticos del corpus de origen.
+- Riesgo de alucinacion: presente como en cualquier modelo de 2,1B; en generacion de diario el riesgo se traduce en inventar eventos o detalles que el usuario no ha proporcionado.
+- Limitaciones de contexto e idioma: contexto de runtime recomendado de 2048 tokens, insuficiente para documentos largos; el modelo esta orientado al coreano y no declara capacidades multilingues.
+- Restriccion gramatical: la gramatica `root ::= [^A-Za-z]*` impide caracteres latinos, lo que puede romper la salida si se necesitan nombres propios, siglas o numeros en alfabeto latino.
+- Licencia: Apache-2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base y de los datos de ajuste, no documentadas en detalle.
+- Trazabilidad: el autor es un particular (mrtint0729), no Kakao Corp; no hay benchmarks, evaluaciones independientes ni documentacion del dataset de SFT/DPO, lo que dificulta auditar la calidad en produccion.
+- Nivel de cuantizacion no especificado: el fichero GGUF no declara el esquema exacto (Q4_K_M, Q5_K_M, etc.), lo que complica estimar la perdida de calidad respecto al modelo original.
+- Fecha de creacion del repositorio (2026-11-20) posterior a la del modelo base; conviene comprobar la vigencia de los enlaces y del tag `model-v1.0.0`.
 
 ## Enlaces
-
-- Modelo en Hugging Face: https://huggingface.co/mrtint0729/kanana-1.5-2.1b-diary-dpo-gguf
+- Repositorio Hugging Face: https://huggingface.co/mrtint0729/kanana-1.5-2.1b-diary-dpo-gguf
 - Modelo base: https://huggingface.co/kakaocorp/kanana-1.5-2.1b-instruct-2505
-- Repositorio de ingeniería del autor (`terrarium`, EXP-013): no disponible como enlace público en la información proporcionada
-- Paper, blog o demo adicionales: no disponibles
+- Fichero GGUF con tag fijo: https://huggingface.co/mrtint0729/kanana-1.5-2.1b-diary-dpo-gguf/resolve/model-v1.0.0/pocketlog-diary-v1.0.0.gguf
+- llama.cpp (runtime recomendado): https://github.com/ggml-org/llama.cpp
+- Paper, blog o demo adicionales: no disponibles en la informacion proporcionada.

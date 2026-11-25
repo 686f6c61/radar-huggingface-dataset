@@ -2,87 +2,88 @@
 
 ## Resumen
 
-CreitinGameplays/GLM-4.7-Flash-Fable-5-Distill es un ajuste fino (fine-tuning) del modelo GLM-4.7-Flash, desarrollado por Z.ai y distribuido a través de Unsloth, sobre el dataset TeichAI/Fable-5-Cursor-Traces. El autor, CreitinGameplays, ha publicado este modelo con licencia Apache 2.0, orientado a generación de texto y conversación, con un enfoque particular en tareas de agente y generación de código, dado que el dataset de entrenamiento proviene de trazas de Cursor (un editor de código con IA).
+GLM-4.7-Flash-Fable-5-Distill es un ajuste fino (fine-tuning) del modelo base `unsloth/GLM-4.7-Flash`, publicado por el usuario CreitinGameplays en Hugging Face. Se trata de un modelo de generación de texto de arquitectura `glm4_moe_lite` con 31.221.488.576 parámetros totales almacenados en formato safetensors, lo que lo sitúa en la categoría de modelos de aproximadamente 31B. El ajuste se ha realizado sobre los conjuntos de datos `TeichAI/Fable-5-Cursor-Traces` y `armand0e/Fable-5-Chat`, orientados a trazas conversacionales y de uso de herramientas en entornos de edición de código.
 
-El modelo base GLM-4.7-Flash es una arquitectura MoE (mixture of experts) de aproximadamente 31 200 millones de parámetros totales, con unos 3 600 millones de parámetros activos por token, y una ventana de contexto de 200 000 tokens. Este ajuste fino mantiene esas características, añadiendo un entrenamiento adicional sobre trazas de Cursor para mejorar la capacidad de seguir instrucciones complejas y razonar en entornos de programación asistida. El repositorio contiene pesos en formato safetensors (62,5 GB), lo que sugiere una precisión de 16 bits (bf16/fp16) sin cuantizar.
+La relevancia de esta ficha es doble: por un lado, documenta una variante derivada de la familia GLM-4.7 Flash, que emplea una arquitectura de mezcla de expertos (MoE) ligera; por otro, advierte de que el autor ha publicado una versión posterior (`CreitinGameplays/GLM-4.7-Flash-Fable-5-Distill-Fixed`), lo que sugiere que esta revisión puede contener defectos corregidos en la siguiente. El modelo está etiquetado únicamente para inglés y su licencia es Apache 2.0.
 
-La relevancia de este modelo radica en que combina la eficiencia de un MoE ligero (solo 3,6B activos) con un ajuste específico para tareas de agente y código, lo que lo hace interesante para desarrolladores que buscan un modelo local con capacidades de razonamiento y generación de código sin necesidad de infraestructura masiva. Además, al estar basado en GLM-4.7-Flash, hereda su soporte para razonamiento explícito (thinking mode) y su buen rendimiento en benchmarks de agente y programación.
+La información disponible es escasa: la model card se limita a indicar los parámetros de muestreo recomendados y una nota sobre la plantilla de chat. No se publican detalles sobre el proceso de entrenamiento, la longitud de contexto efectiva ni resultados de benchmarks, por lo que muchos apartados de esta ficha se marcan como no disponibles.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | MoE (glm4_moe_lite) |
-| Parametros totales | 31 221 488 576 (~31,2B) |
-| Parametros activos | ~3,6B (según documentación de GLM-4.7-Flash) |
-| Longitud de contexto | 200 000 tokens (según documentación de GLM-4.7-Flash) |
-| Tipos de cuantizacion | no disponible (solo safetensors en el repo) |
-| Idiomas soportados | en (inglés) |
+| Arquitectura | glm4_moe_lite (mezcla de expertos, según etiqueta del repositorio) |
+| Parámetros totales | 31.221.488.576 |
+| Parámetros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | no disponible (el repositorio contiene safetensors en precisión original; no se listan GGUF ni otras variantes) |
+| Idiomas soportados | inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base GLM-4.7-Flash emplea una arquitectura de mezcla de expertos (MoE) con atención estándar, diseñada para equilibrar rendimiento y eficiencia. Con 31,2B parámetros totales y solo ~3,6B activos por token, cada token se procesa a través de un subconjunto de expertos, lo que reduce el coste computacional en inferencia. La ventana de contexto de 200K tokens permite manejar documentos largos y conversaciones extensas.
+El modelo se basa en `unsloth/GLM-4.7-Flash`, un modelo de la familia GLM-4.7 en su variante Flash, cuya arquitectura se etiqueta como `glm4_moe_lite`. Esta denominación indica una implementación de mezcla de expertos (MoE) con un número reducido de expertos o un diseño aligerado respecto a las variantes mayores de la familia. El repositorio contiene 31.221.488.576 parámetros totales, aunque no se especifica cuántos se activan por token ni la distribución de expertos.
 
-El ajuste fino se realizó con la librería Unsloth y la biblioteca TRL de Hugging Face, sobre el dataset TeichAI/Fable-5-Cursor-Traces, que contiene trazas de interacciones con Cursor (editor de código con IA). Este dataset está diseñado para mejorar la capacidad del modelo en tareas de agente, generación de código y razonamiento multi-paso. No se especifican el número de tokens de entrenamiento ni la composición exacta del dataset. La model card indica que se debe activar `enable_thinking` (modo de razonamiento) para obtener el mejor rendimiento, y sugiere hiperparámetros de inferencia: `top_k=40`, `temperature=0.7`, `top_p=0.95`.
+El ajuste fino se ha realizado sobre dos conjuntos de datos: `TeichAI/Fable-5-Cursor-Traces`, que por su nombre contiene trazas de interacción con el editor Cursor (es decir, secuencias de uso de herramientas y edición de código), y `armand0e/Fable-5-Chat`, orientado a conversación. No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset, ni si se emplearon técnicas de RLHF, DPO o ajuste supervisado. La model card únicamente recomienda parámetros de muestreo (`top_k: 40`, `temperature: 0.5`, `top_p: 0.95`) y señala que la etiqueta `<think>` debe forzarse en la plantilla de chat, lo que indica que el modelo base incorpora un modo de razonamiento explícito.
 
 ## Capacidades
 
-- Generación de texto y conversación: modelo de lenguaje de propósito general, capaz de mantener diálogos multi-turno.
-- Razonamiento explícito: soporta un modo de "thinking" (razonamiento) que debe activarse para tareas complejas.
-- Generación de código: entrenado sobre trazas de Cursor, mejora la capacidad de escribir, editar y depurar código en múltiples lenguajes.
-- Soporte de agentes y multi-step reasoning: el fine-tuning sobre trazas de Cursor está orientado a flujos de trabajo agénticos, donde el modelo debe planificar y ejecutar pasos intermedios.
-- Tool calling / function calling: heredado del modelo base, permite integrar llamadas a herramientas externas.
-- Contexto largo: ventana de 200K tokens, adecuada para documentos extensos y conversaciones largas.
-- Multilingüe limitado: la model card solo declara inglés, aunque el modelo base podría tener cierta capacidad multilingüe; no se garantiza.
+- Generación de texto conversacional en inglés, con soporte de diálogo multi-turno.
+- Modo de razonamiento explícito mediante la etiqueta `<think>`, que debe insertarse de forma forzada en la plantilla de chat según indica el autor.
+- Capacidad probable de uso de herramientas y edición de código, inferida del dataset de trazas de Cursor empleado en el ajuste; no confirmada explícitamente en la model card.
+- Soporte de inferencia mediante `text-generation-inference` (tag del repositorio) y compatibilidad con endpoints.
+- Capacidades multilingües limitadas al inglés según la etiqueta de idioma del repositorio.
+- No se documentan capacidades de visión, audio ni otras modalidades.
 
 ## Casos de uso
 
-- Asistente de programación en IDE: el modelo puede integrarse en editores como VS Code o Cursor para autocompletar código, refactorizar funciones y explicar fragmentos, aprovechando su fine-tuning sobre trazas de Cursor y su modo de razonamiento.
-- Agente autónomo de desarrollo: gracias a su soporte de tool calling y razonamiento multi-paso, puede ejecutar tareas como "crear una función que lea un CSV y devuelva estadísticas", invocando herramientas y verificando resultados.
-- Chatbot técnico de atención al cliente: con 200K de contexto, puede manejar conversaciones largas con historial extenso, resolviendo dudas sobre APIs, configuración o errores de código.
-- Análisis de código legacy: su contexto largo permite cargar archivos completos y generar documentación, sugerir mejoras o detectar patrones problemáticos.
-- Generación de documentación técnica: puede redactar manuales, guías de API o comentarios de código a partir de especificaciones o código fuente.
-- Prototipado rápido de scripts: para desarrolladores que necesitan generar scripts de automatización o procesamiento de datos, el modelo puede producir código funcional con instrucciones en lenguaje natural.
-- Razonamiento matemático y lógico: aunque no es su foco principal, el modo thinking permite abordar problemas de lógica y matemáticas con pasos intermedios.
+- Asistencia a la edición de código en IDE: el ajuste sobre trazas de Cursor sugiere que el modelo puede emplearse para sugerir ediciones y secuencias de acciones dentro de un editor, aprovechando el formato de trazas del dataset de entrenamiento.
+- Generación de parches y refactorizaciones guiadas: al haber sido entrenado con trazas de interacción con herramientas, puede integrarse en pipelines que requieran proponer cambios de código paso a paso.
+- Conversación técnica multi-turno: su naturaleza conversacional (dataset `Fable-5-Chat`) lo hace adecuado para asistentes de soporte a desarrolladores en inglés.
+- Razonamiento explícito con cadena de pensamiento: el modo `<think>` permite obtener trazas de razonamiento separadas de la respuesta final, útil para depuración de agentes y evaluación de decisiones intermedias.
+- Prototipado de agentes de codificación: combinado con un entorno de ejecución de herramientas, puede emplearse para experimentar con bucles de agente en tareas de edición de ficheros.
+- Investigación sobre ajuste fino de modelos MoE: al ser un derivado de un modelo base abierto con licencia Apache 2.0, sirve como punto de partida para estudiar el efecto de datasets de trazas en modelos de mezcla de expertos.
+- Despliegue en entornos de inferencia compatibles con TGI: su formato safetensors y la etiqueta `text-generation-inference` facilitan su servicio mediante infraestructura estándar.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks específicos para este ajuste fino en la información disponible. El modelo base GLM-4.7-Flash, según la documentación de Unsloth y Z.ai, lidera benchmarks como SWE-Bench, GPQA y tareas de razonamiento/chat en su clase de 30B, pero no se proporcionan cifras concretas en las fuentes consultadas. Por tanto, no se puede cuantificar el rendimiento de este fine-tuning en comparación con otros modelos.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio pesa 62,5 GB en safetensors, lo que corresponde a pesos en bf16/fp16. Para cargar el modelo completo en precisión nativa se necesitan al menos 64-80 GB de VRAM (por ejemplo, una A100 80GB o H100). Con cuantización a 4 bits (no disponible en el repo, pero posible mediante herramientas externas como llama.cpp o GPTQ), la VRAM necesaria se reduciría a aproximadamente 16-20 GB, permitiendo su uso en GPUs de consumo como RTX 4090 (24 GB) o RTX 3090 (24 GB).
-- GPU recomendadas: A100 80GB, H100, o múltiples GPUs de 24 GB en paralelo para inferencia sin cuantizar. Para cuantización 4-bit, RTX 4090, RTX 3090 o similares.
-- Opciones de despliegue: al ser un modelo de la familia GLM, es compatible con vLLM, TGI (text-generation-inference), llama.cpp (con conversión a GGUF) y Ollama (que ya ofrece GLM-4.7-Flash). También se puede usar con transformers directamente.
-- Latencia y throughput: no disponible. Al ser un MoE con ~3,6B activos, la latencia por token debería ser significativamente menor que la de un modelo denso de 30B, pero no hay mediciones publicadas para este fine-tuning.
+- VRAM estimada para inferencia en precisión original (FP16/BF16): aproximadamente 62 GB solo para pesos, más memoria para caché KV y activaciones; se requiere al menos una GPU de 80 GB (A100 80GB, H100 80GB) para un despliegue cómodo.
+- Cuantización: no se listan variantes GGUF ni cuantizaciones oficiales en el repositorio, por lo que el despliegue en GPUs de consumo requeriría cuantizar el modelo por cuenta propia (por ejemplo, con herramientas de la familia Unsloth o llama.cpp), sin garantías de calidad.
+- GPU recomendadas: A100 80GB o H100 80GB para precisión completa; configuraciones multi-GPU para tensor parallelism si se desea mayor throughput.
+- GPU de consumo: no cabe en RTX 4090 (24 GB) ni en RTX 3090 (24 GB) sin cuantización agresiva no documentada.
+- Opciones de despliegue: transformers, text-generation-inference (TGI) y endpoints compatibles; el tag `unsloth` sugiere compatibilidad con el ecosistema de ajuste e inferencia de Unsloth.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| GLM-4.7-Flash (base) | ~31,2B | ~3,6B | 200K | Apache 2.0 | Modelo original sin fine-tuning |
-| CreitinGameplays/GLM-4.7-Flash-Fable-5-Distill | ~31,2B | ~3,6B | 200K | Apache 2.0 | Fine-tuning sobre trazas de Cursor |
-| Qwen2.5-32B (MoE) | ~32B | ~3B (aprox.) | 128K | Apache 2.0 | Alternativa MoE de Alibaba, con buen rendimiento en código |
-| Mixtral 8x7B | 46,7B | ~12,9B | 32K | Apache 2.0 | MoE más antiguo, mayor coste por token |
+| GLM-4.7-Flash-Fable-5-Distill (este) | 31,2B | no disponible | Apache 2.0 | Hugging Face | Ajuste sobre trazas de Cursor y chat |
+| unsloth/GLM-4.7-Flash (base) | no disponible en la información | no disponible | no disponible en la información | Hugging Face | Modelo base del ajuste |
+| CreitinGameplays/GLM-4.7-Flash-Fable-5-Distill-Fixed | no disponible | no disponible | no disponible | Hugging Face | Versión posterior indicada por el autor como corrección |
 
-No se dispone de datos de rendimiento comparativos entre estos modelos en las fuentes consultadas. La elección entre ellos dependerá de la disponibilidad de cuantizaciones, el soporte de la comunidad y las necesidades específicas de contexto y tool calling.
+No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Sesgos y alucinaciones: al ser un fine-tuning de un modelo base, puede heredar sesgos presentes en los datos de entrenamiento originales y generar contenido falso o inventado, especialmente en tareas de razonamiento complejo.
-- Idioma: la model card solo declara inglés. El rendimiento en otros idiomas, incluido el español, no está garantizado y puede ser inferior.
-- Evaluación limitada: no se han publicado benchmarks ni evaluaciones de seguridad para este fine-tuning concreto. El autor no proporciona información sobre pruebas de robustez o sesgos.
-- Dependencia del modo thinking: la model card indica que `enable_thinking` debe estar activado para un rendimiento óptimo. Sin él, el modelo podría producir respuestas de menor calidad en tareas de razonamiento.
-- Tamaño del repositorio: 62,5 GB en safetensors, lo que requiere hardware con suficiente VRAM o cuantización externa. No se incluyen versiones cuantizadas en el repo.
-- Uso comercial: la licencia Apache 2.0 permite uso comercial sin restricciones, pero se recomienda revisar los términos del modelo base y del dataset de entrenamiento (TeichAI/Fable-5-Cursor-Traces) por si tuvieran condiciones adicionales.
-- Fecha de publicación: el modelo fue creado el 28 de agosto de 2026, lo que puede implicar que es muy reciente y no ha sido ampliamente probado por la comunidad.
+- Sesgos conocidos: no documentados por el autor; al entrenarse principalmente con trazas de código y chat en inglés, es previsible un sesgo hacia dominios técnicos y hacia el inglés.
+- Riesgo de alucinación: no evaluado; los modelos ajustados sobre trazas de herramientas pueden generar llamadas a herramientas inexistentes o argumentos inválidos.
+- Limitaciones de idioma: el repositorio declara únicamente inglés; el rendimiento en castellano no está garantizado.
+- Longitud de contexto: no especificada; no debe asumirse una ventana larga sin verificación empírica.
+- Licencia: Apache 2.0 permite uso comercial, pero debe verificarse la licencia del modelo base y de los datasets de entrenamiento, que no se detalla en la información disponible.
+- Versión obsoleta: el autor indica una versión posterior (`...-Distill-Fixed`), por lo que esta revisión puede contener defectos corregidos; se recomienda evaluar la versión fijada antes de usarla en producción.
+- Requisito de plantilla: la etiqueta `<think>` debe forzarse manualmente en la plantilla de chat; un uso incorrecto puede degradar la calidad de las respuestas.
+- Madurez: 345 descargas y 3 likes en el momento de la consulta indican una adopción muy baja y poca validación por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/CreitinGameplays/GLM-4.7-Flash-Fable-5-Distill
-- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-4.7
-- Tutorial de Unsloth para GLM-4.7-Flash: https://unsloth.ai/docs/models/tutorials/glm-4.7-flash
-- Documentación de Z.ai sobre GLM-4.7: https://docs.z.ai/guides/llm/glm-4.7
-- Página de Ollama para GLM-4.7-Flash: https://ollama.com/library/glm-4.7-flash
+- Modelo en Hugging Face: https://huggingface.co/CreitinGameplays/GLM-4.7-Flash-Fable-5-Distill
+- Versión corregida indicada por el autor: https://huggingface.co/CreitinGameplays/GLM-4.7-Flash-Fable-5-Distill-Fixed
+- Modelo base: https://huggingface.co/unsloth/GLM-4.7-Flash
+- Dataset de trazas: https://huggingface.co/datasets/TeichAI/Fable-5-Cursor-Traces
+- Dataset de chat: https://huggingface.co/datasets/armand0e/Fable-5-Chat

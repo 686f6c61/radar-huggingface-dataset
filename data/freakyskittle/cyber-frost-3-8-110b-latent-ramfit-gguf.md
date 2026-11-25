@@ -2,96 +2,109 @@
 
 ## Resumen
 
-CYBER-FROST-3.8-110B-Latent-RAMFit-GGUF es una distribucion en formato GGUF de un modelo de lenguaje de gran tamano (110B parametros nominales) construido sobre una arquitectura MoE latente ("latent-moe") y derivado de la familia Qwen4-exp, segun las etiquetas del repositorio. Lo publica el usuario freakyskittle en Hugging Face y se presenta como un fine-tune orientado a ciberseguridad, marcado explicitamente como "work-in-progress". El modelo base es la variante en BF16 con capacidad de razonamiento (CYBER-FROST-3.8-110B-Latent-BF16-reasoning), y esta publicacion aporta una cuantizacion IQ2_XXS pensada para encajar en memoria RAM de equipos de consumo ("RAMFit").
+CYBER-FROST-3.8-110B-Latent-RAMFit-GGUF es una colección de cuantizaciones GGUF del checkpoint de razonamiento CYBER-FROST-3.8-110B-Latent-BF16-reasoning, publicado por el usuario freakyskittle. A pesar del "110B" del nombre, los pesos en safetensors suman 55.246.531.456 parámetros (unos 55,2 mil millones), lo que sugiere que la cifra del nombre corresponde a una cuenta agregada de expertos enrutados y no al número de parámetros activos o almacenados. El modelo se presenta como un MoE "latent" construido sobre una base experimental denominada `qwen4-exp`, con atención dispersa (QSA, 2.048 tokens seleccionados por consulta) y una tabla de embeddings n-grama por capa.
 
-La relevancia de esta ficha es doble. Por un lado, ilustra una tendencia practica: tomar modelos de razonamiento de gran escala y comprimirlos agresivamente (2 bits por peso aproximadamente) para que puedan ejecutarse sin GPU de datacenter. Por otro, el acceso esta restringido (gated) y la licencia es la Qwen Community License 1.0, lo que condiciona su uso comercial. La informacion publica disponible es muy escasa: no hay ficha tecnica detallada, ni datos de entrenamiento, ni benchmarks, ni lista de idiomas.
+El interés de esta publicación no está en el modelo base sino en el trabajo de cuantización: el autor aplica una matriz de importancia (imatrix) calculada sobre 72 × 2.048 tokens de matemáticas, razonamiento, chat, código y seguridad, y cuantiza directamente los expertos enrutados y las proyecciones latentes D/U desde los pesos BF16 de la pasada 3. El resto de tensores se copia byte a byte de una build Q4_K_M ya probada. La build destacada, IQ2_XXS-RAMFIT, ocupa 46,5 GB en disco pero solo requiere mantener en RAM unos 16 GB por pasada, lo que permite servir el modelo a contexto completo (262.144 tokens) en una máquina de 32 GB de RAM con iGPU.
 
-Conviene tratar esta ficha con cautela: el repositorio tiene cero descargas y cero likes en el momento de la consulta, no incluye model card sustantiva y varias especificaciones clave no estan confirmadas. Todo lo que sigue distingue entre lo declarado en metadatos y lo que no esta disponible.
+El modelo es explícitamente un trabajo en progreso y no apto para producción: el propio autor advierte que la aritmética multidígito y el razonamiento multi-paso son poco fiables, que solo se han ejecutado pruebas estrechas y que los ficheros pueden cambiar sin aviso. Su relevancia actual es doble: por un lado, documenta técnicas de cuantización extrema (IQ2_VQ, un tipo de 2,375 bpw con codebook aprendido de 4 pesos) para arquitecturas MoE con proyecciones de anchura no estándar; por otro, muestra un caso real de despliegue de un modelo de más de 50.000 millones de parámetros en hardware de consumo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE latente ("latent-moe"), derivada de Qwen4-exp (segun tags) |
-| Parametros totales | 110B (nominal, segun nombre del modelo) |
+| Arquitectura | Transformer MoE con atención dispersa (QSA) y proyecciones latentes; base `qwen4-exp`; incluye atención lineal, hyper-connections, experto compartido y router |
+| Parametros totales | 55.246.531.456 (según safetensors del modelo base); el nombre comercial indica 110B |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ2_XXS (unica publicada en este repo) |
+| Longitud de contexto | 262.144 tokens (configuración de servidor documentada por el autor) |
+| Tipos de cuantizacion | Q8_0, Q6_K, Q5_K_M, Q4_K_M, MXFP4_MOE, IQ4_XS, Q3_K_M, IQ3_XXS, IQ2_VQ, IQ2_XXS-RAMFIT, IQ1_M (varias en construcción) |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-license-1.0 (tag: license:other) |
-| Formato de pesos | GGUF |
-| Acceso | Restringido (gated), requiere aceptar condiciones |
-| Modelo base | freakyskittle/CYBER-FROST-3.8-110B-Latent-BF16-reasoning |
-| Especializacion declarada | Ciberseguridad (tag: cybersecurity) |
-| Estado | Work-in-progress (tag explicito) |
+| Licencia | qwen-community-license-1.0 (etiquetada como `other` en la model card) |
+| Formato de pesos | GGUF (safetensors en el modelo base BF16) |
 
 ## Arquitectura y entrenamiento
 
-Los metadatos indican una arquitectura de mezcla de expertos (MoE) con una variante que el autor denomina "latent-moe", construida sobre lo que las etiquetas identifican como "qwen4-exp". No se dispone de documentacion que explique en que consiste exactamente el caracter "latente" de esta MoE (podria referirse a enrutamiento en espacio latente, expertos compartidos o una implementacion propia del autor), ni cuantos expertos contiene, ni cuantos se activan por token. El modelo base en BF16 lleva el sufijo "reasoning", lo que sugiere un entrenamiento orientado a cadenas de razonamiento, pero no se detalla la metodologia (SFT, RLHF, DPO) ni el volumen o composicion del dataset.
+La arquitectura es un transformer con mezcla de expertos (MoE) en el que los expertos enrutados conviven con un experto compartido y un router, e incorpora mecanismos poco habituales: atención lineal, hyper-connections y una atención dispersa denominada QSA que selecciona 2.048 tokens por consulta. La proyección "down" de los expertos enrutados tiene una anchura de 640, un valor que ningún tipo K-quant ni los tipos IQ de bloque 256 pueden representar, lo que obliga a usar Q8_0, Q5_1, Q5_0, IQ4_NL o IQ2_VQ en esa columna. El modelo incluye además una tabla de embeddings n-grama por capa, cuantizada a Q4_0 en todas las builds y consultada fila a fila, de modo que no necesita residir en RAM.
 
-Tampoco hay informacion sobre el numero de tokens de entrenamiento, la mezcla de datos, la longitud de contexto nativa ni innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, etc.). La unica innovacion observable es la propia cuantizacion IQ2_XXS orientada a "RAMFit", es decir, a que el modelo quepa en memoria RAM de sistemas sin GPU dedicada. Cualquier afirmacion adicional sobre el entrenamiento seria especulativa y no debe asumirse.
+El checkpoint es una destilación de "pasada 3" (pass-3) del modelo base BF16 de razonamiento. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron RLHF o DPO. La innovación técnica documentada está en el pipeline de cuantización: los expertos enrutados y las proyecciones latentes D/U se cuantizan desde BF16 con una imatrix específica (`imatrix-pass3.gguf`), mientras que el resto de tensores se reutilizan de la build Q4_K_M. El tipo IQ2_VQ es una extensión del fork de llama.cpp utilizado (2,375 bits por peso, con codebook de 4 pesos aprendido) y solo es cargable por ese fork (`llama.cpp-bigmoe`), no por llama.cpp estándar.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento: el sufijo "reasoning" del modelo base sugiere capacidad de razonamiento multi-paso, aunque no hay evaluacion publica que lo confirme.
-- Ciberseguridad: el tag "cybersecurity" indica un fine-tune orientado a tareas de seguridad (analisis, asistencia en respuesta a incidentes, posiblemente generacion de reglas o analisis de codigo), sin detalle de alcance.
-- Codigo y matematicas: no confirmado explicitamente; plausible por herencia de la familia Qwen, pero no disponible en la informacion.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible (el sufijo "reasoning" es el unico indicio).
-- Capacidades multilingues: no disponible (no se lista ningun idioma).
-- Capacidades especiales (vision, audio, thinking mode explicito): no disponible.
-- Ejecucion en CPU/RAM: capacidad practica derivada de la cuantizacion IQ2_XXS, que reduce el peso a aproximadamente 2 bits por parametro.
+- Generación de texto conversacional con formato de razonamiento tipo DeepSeek (`--reasoning-format deepseek`).
+- Razonamiento multi-paso y aritmética: presentes pero poco fiables según el autor, con degradación acusada en las builds de 2 bits.
+- Tool calling / function calling: se ha verificado la emisión de una llamada `write` bien formada a través de opencode, aunque el código generado era incorrecto.
+- Orientación a ciberseguridad: investigación defensiva, revisión de código seguro, validación de vulnerabilidades, ejercicios red/purple-team, ingeniería de detección, respuesta a incidentes y análisis de malware (uso previsto heredado del modelo fuente).
+- Contexto largo: la configuración probada sirve 262.144 tokens con una ventana de prompt de 10K tokens.
+- Capacidades multilingües: no disponible.
+- Modo thinking: sí, con formato de razonamiento configurable en llama-server.
+- Decodificación especulativa: no funcional; la cabeza MTP del modelo de ancho completo obtiene 0 % de aceptación sobre este modelo latente.
 
 ## Casos de uso
 
-- Analisis de seguridad en estaciones de trabajo sin GPU: al estar cuantizado a IQ2_XXS y disenado para "RAMFit", puede desplegarse en portatiles o servidores sin acelerador para tareas de triaje de alertas y resumen de logs, aunque con calidad degradada por la cuantizacion extrema.
-- Asistencia en respuesta a incidentes: un analista podria consultar el modelo para interpretar indicadores de compromiso y proponer pasos de contencion, apoyandose en su especializacion declarada en ciberseguridad.
-- Revision de configuraciones y politicas de seguridad: el modelo puede emplearse para revisar ficheros de configuracion (por ejemplo, reglas de firewall o politicas IAM) y senalar posibles malas practicas, integrado en un pipeline local.
-- Generacion y explicacion de consultas de deteccion: util para redactar o comentar reglas de deteccion (Sigma, YARA, KQL) en entornos aislados donde no se permite enviar datos a la nube.
-- Formacion y laboratorios: al ejecutarse en RAM, sirve para entornos de aprendizaje y CTFs donde se quiere un asistente local sin dependencia de API externa.
-- Prototipado de razonamiento offline: para investigadores que quieran experimentar con un MoE de 110B cuantizado a 2 bits y medir el impacto de la cuantizacion en tareas de razonamiento, siempre que acepten las condiciones de acceso.
-- Despliegue en entornos air-gapped: la combinacion de formato GGUF, ejecucion en CPU y acceso controlado encaja en escenarios con requisitos de confidencialidad estrictos.
+- Revisión de código seguro en local: el modelo puede analizar parches y señalar patrones peligrosos en una máquina de 32 GB de RAM sin enviar código a la nube, gracias a la build IQ2_XXS-RAMFIT y su requisito de ~16 GB en RAM por pasada.
+- Asistencia en análisis de malware: con 262.144 tokens de contexto se pueden cargar informes, volcados de cadenas y extractos de desensamblado en una sola conversación para correlacionar indicadores, aceptando la advertencia de que las conclusiones pueden ser fabricadas.
+- Ingeniería de detección: generación y discusión de reglas de detección y consultas de correlación en un entorno aislado, útil para prototipado rápido antes de validación humana.
+- Ejercicios red-team autorizados: el modelo fuente tiene una sobre-negativa reducida, lo que facilita obtener respuestas técnicas sobre técnicas de ataque en entornos de laboratorio con autorización explícita.
+- Validación de vulnerabilidades: apoyo a la redacción de pruebas de concepto y descripciones de impacto, siempre con verificación manual dado el riesgo de alucinación en código y comandos.
+- Despliegue en hardware de consumo para experimentación: servir el modelo con llama-server en una iGPU Radeon 680M con `-ot exps=CPU` permite probar un MoE de más de 50.000 millones de parámetros a 8,4 tok/s en contexto corto.
+- Evaluación de técnicas de cuantización extrema: el repositorio sirve como banco de pruebas para comparar Q8_0, MXFP4_MOE, IQ2_VQ e IQ2_XXS sobre la misma arquitectura con una sonda controlada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor solo documenta una sonda con teacher forcing y pruebas de generación libre.
+
+Sonda con teacher forcing sobre "17 × 23 = 17 × 20 + 17 × 3 = 340 + 51 = 391", midiendo la elección top para el "4" de 340 y el "9" de 391:
+
+| Build | Top para "4" en 340 | Top para "9" en 391 |
+|---|---|---|
+| Q8_0 | 4 (50 %) | 9 (75 %) |
+| Q6_K | 4 (54 %) | 8 (9 al 48 %) |
+| Q5_K_M | 6 (4 al 43 %) | 9 (86 %) |
+| Q4_K_M | 6 (4 al 36 %) | 9 (91 %) |
+| MXFP4_MOE | 4 (86 %) | 9 (81 %) |
+| IQ2_VQ | 4 (71 %) | 9 (97 %) |
+| IQ2_XXS-RAMFIT | 5 (4 al 48 %) | 9 (97 %) |
+
+Generación libre con decodificación greedy: Q4_K_M acierta 5 de 6 prompts que terminaron (sigue escribiendo 17 × 23 = 381); IQ2_XXS-RAMFIT acierta 3 de 8.
+
+Rendimiento medido en Ryzen 7 PRO 6850H con Radeon 680M (Vulkan) y 32 GB de RAM (8 GB reservados para la iGPU), build IQ2_XXS-RAMFIT:
+
+| Métrica | Q4_K_M (no cabe en RAM) | IQ2_XXS-RAMFIT |
+|---|---:|---:|
+| Procesamiento de prompt, 2K tokens | ~23 tok/s | 62–75 tok/s |
+| Procesamiento de prompt, 16K tokens | no disponible | 42 tok/s |
+| Generación, contexto corto | 0,2–1,2 tok/s | 8,4 tok/s |
+| Generación, servidor a 262.144 de contexto con prompt de 10K | no disponible | 6,0 tok/s |
 
 ## Requisitos de hardware
 
-- VRAM estimada: no aplica de forma directa; el objetivo declarado es ejecucion en RAM. Con 110B parametros a IQ2_XXS (aproximadamente 2-2,5 bits por peso), el fichero rondaria los 25-35 GB, aunque el valor exacto no esta disponible.
-- RAM recomendada: no disponible con precision; por el tamano estimado del fichero, se necesitarian del orden de 32-48 GB de RAM para cargar el modelo y dejar margen para el contexto, cifra no confirmada por el autor.
-- GPU recomendadas: no disponibles. En GPU, seria necesario un acelerador con VRAM suficiente para el fichero cuantizado (posiblemente A100 80GB o H100), pero no hay datos oficiales.
-- Compatibilidad con GPU de consumo: no confirmada. Una RTX 4090 (24 GB) probablemente no albergara el modelo completo en VRAM; el uso previsto es CPU/RAM.
-- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio) son los candidatos naturales para GGUF; vLLM y TGI no estan confirmados para esta cuantizacion.
-- Latencia y throughput: no disponibles. En CPU, un modelo de este tamano a 2 bits tendra throughput bajo (orden de pocos tokens por segundo), pero no hay mediciones publicadas.
+- VRAM/RAM: la build IQ2_XXS-RAMFIT necesita ~16 GB de RAM por pasada para inferencia rápida; IQ2_VQ requiere ~19 GB; Q4_K_M, ~34 GB; Q6_K, ~48 GB; Q8_0, ~56 GB. Los tamaños en disco van de 46,5 GB (IQ2_XXS-RAMFIT) a 85,5 GB (Q8_0).
+- GPU recomendadas: no hay datos para A100, H100 o RTX 4090. El único hardware documentado es una iGPU Radeon 680M con Vulkan.
+- GPU de consumo: la build de 2 bits cabe en sistemas con 32 GB de RAM; las builds de 4 bits o superiores requieren 48–64 GB o más y no caben en configuraciones típicas de 32 GB.
+- Despliegue: exclusivamente mediante el fork `llama.cpp-bigmoe`, que implementa `qwen4exp`, latent MoE e IQ2_VQ. llama.cpp estándar, vLLM, TGI u Ollama no pueden cargar estos ficheros según la model card.
+- Configuración probada: `-ngl 99 -ot exps=CPU -lm mmap -fit off -b 2048 -ub 2048 -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 16 --jinja --reasoning-format deepseek`, con `GGML_VK_DISABLE_ASYNC=1` y `GGML_VK_UMA_STREAM_READ=1`. Si la build no cabe en RAM, añadir `--no-op-offload` para evitar relecturas de expertos desde disco en cada batch.
+- Latencia y throughput: 8,4 tok/s de generación en contexto corto y 6,0 tok/s con prompt de 10K a contexto completo; el procesamiento de prompt cae de 62–75 tok/s (2K) a 42 tok/s (16K) porque la atención dispersa QSA se aplica como máscara densa en el fork, no como kernel disperso.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Acceso |
-|---|---|---|---|---|---|
-| CYBER-FROST-3.8-110B-Latent-RAMFit-GGUF | 110B (nominal) | no disponible | GGUF (IQ2_XXS) | Qwen Community License 1.0 | Gated |
-| CYBER-FROST-3.8-110B-Latent-BF16-reasoning (base) | 110B (nominal) | no disponible | BF16 (safetensors presumible) | Qwen Community License 1.0 | No disponible |
-| Modelos Qwen de gran escala (familia Qwen4-exp) | variable | no disponible | safetensors/GGUF | Qwen Community License 1.0 | Variable |
-
-No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas. La comparacion se limita a parametros, formato y licencia.
+No disponible. La información proporcionada no incluye datos de rendimiento de modelos comparables de la misma categoría (MoE de ~55.000 millones de parámetros con contexto de 262.144 tokens), por lo que no es posible establecer una comparación rigurosa sin inventar cifras.
 
 ## Limitaciones y advertencias
 
-- Estado "work-in-progress": el propio autor etiqueta el modelo como en desarrollo; no debe usarse en produccion sin validacion exhaustiva.
-- Cuantizacion extrema: IQ2_XXS degrada notablemente la calidad frente al BF16 original, especialmente en razonamiento y codigo; los resultados pueden ser inconsistentes.
-- Sin benchmarks ni model card sustantiva: no hay evidencia publica de rendimiento, lo que impide evaluar su idoneidad frente a alternativas.
-- Cero descargas y cero likes: no hay senales de validacion por parte de la comunidad.
-- Acceso restringido: requiere aceptar condiciones en Hugging Face; puede limitar su uso en pipelines automatizados.
-- Licencia Qwen Community License 1.0: impone condiciones al uso comercial y a la redistribucion; revisar los terminos antes de integrarlo en productos.
-- Idiomas no declarados: se desconoce el soporte multilingue real; asumir un rendimiento inferior fuera del ingles o chino sin confirmacion.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje, agravado por la cuantizacion a 2 bits y por la ausencia de evaluacion.
-- Sesgos: no documentados; al no haber informacion sobre datos de entrenamiento, no es posible evaluar sesgos.
-- Especializacion en ciberseguridad sin detalle: no se especifica el alcance (ofensivo/defensivo) ni las salvaguardas, lo que exige cautela en su uso.
-- Sin garantias de soporte: autor individual, sin documentacion de mantenimiento ni versionado.
+- No apto para producción: el autor lo declara explícitamente como work in progress, con ficheros que pueden cambiar o reemplazarse sin aviso.
+- Aritmética y razonamiento multi-paso poco fiables en todas las builds, y notablemente peores en las de 2 bits (3 de 8 aciertos en generación libre con IQ2_XXS-RAMFIT).
+- El pensamiento largo puede divagar sin llegar a una respuesta; se recomiendan los parámetros DRY documentados (multiplicador 0,8, base 1,75, longitud permitida 4).
+- La decodificación especulativa con la cabeza MTP no aporta nada: 0 % de aceptación sobre este modelo latente.
+- Solo se han medido las cifras de la sonda y de velocidad; no hay evaluación de suites de benchmark, contexto largo, tareas de seguridad ni seguridad/alinhación.
+- Hereda las limitaciones del modelo fuente: los hallazgos, código y comandos generados pueden ser erróneos o fabricados, y su reducida sobre-negativa facilita obtener salidas dañinas.
+- La licencia qwen-community-license-1.0 impone condiciones adicionales al uso comercial; debe revisarse el archivo LICENSE antes de cualquier despliegue productivo.
+- Dependencia de un fork no estándar de llama.cpp: no hay soporte en herramientas de inferencia convencionales, lo que limita la portabilidad y el mantenimiento.
+- Idiomas soportados no documentados; no se puede asumir cobertura multilingüe.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/freakyskittle/CYBER-FROST-3.8-110B-Latent-RAMFit-GGUF
-- Modelo base: https://huggingface.co/freakyskittle/CYBER-FROST-3.8-110B-Latent-BF16-reasoning
-- Licencia Qwen Community License 1.0: no disponible enlace directo en la informacion proporcionada.
-- Paper, blog o demo: no disponibles.
+- Modelo en Hugging Face: https://huggingface.co/freakyskittle/CYBER-FROST-3.8-110B-Latent-RAMFit-GGUF
+- Modelo base BF16: https://huggingface.co/freakyskittle/CYBER-FROST-3.8-110B-Latent-BF16-reasoning
+- Carpeta de la build destacada: https://huggingface.co/freakyskittle/CYBER-FROST-3.8-110B-Latent-RAMFit-GGUF/tree/main/IQ2_XXS-RAMFIT
+- Matriz de importancia: `imatrix-pass3.gguf` (incluida en el repositorio)
+- Licencia: archivo `LICENSE` en el repositorio
+- Fork de llama.cpp requerido (`llama.cpp-bigmoe`): no se proporciona URL en la información disponible

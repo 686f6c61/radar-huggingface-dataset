@@ -2,108 +2,119 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next es un modelo de lenguaje de gran escala desarrollado por Qwen (Alibaba) y publicado bajo licencia qwen-community-1.0. Con 176.943.885.120 parámetros totales (unos 177 B), se posiciona en la gama alta de modelos abiertos, con soporte de visión, tool calling y un modo de razonamiento explícito. La ficha que nos ocupa no es el modelo original, sino una cuantización GGUF de muy baja precisión publicada por el usuario agentionai bajo el identificador `agentionai/Qwen3.8-Flash-Next-ROCmFP4-FAST-imatrix-GGUF`.
+Qwen3.8-Flash-Next-ROCmFP4-FAST-imatrix-GGUF es una cuantización GGUF del modelo Qwen3.8-Flash-Next, publicada por Agention (agention.ai) sobre su propio fork de llama.cpp. El modelo base es un transformer de 176.943.885.120 parámetros (unos 177 B) desarrollado por el equipo Qwen, orientado a generación de texto conversacional con capacidad de visión. Esta versión cuantizada emplea los tipos ROCmFP4/ROCmFPx propios del fork y calibración imatrix, y está empaquetada específicamente para ejecutarse íntegramente en la GPU de equipos con memoria unificada de 128 GB, como el AMD Strix Halo (Ryzen AI MAX+ 395 / Radeon 8060S).
 
-El interés de esta publicación es fundamentalmente de despliegue: consigue meter un modelo de 180 B en 87,06 GiB de VRAM a 4,23 bits por peso, lo que permite ejecutarlo íntegramente en la GPU de un equipo con memoria unificada de 128 GB (Strix Halo, Ryzen AI MAX+ 395 / Radeon 8060S, con 96 GiB reservados para VRAM). Según el autor, la pérdida de perplejidad respecto al modelo sin cuantizar es inferior al 2,5 %, y el prefill se mantiene en 423 t/s a 512 tokens, 357 t/s a 8k, 245 t/s a 32k y 138 t/s a 128k.
+La relevancia de esta ficha no está en el modelo base, sino en la ingeniería de despliegue: consigue que un modelo de ~177 B de parámetros ocupe 87,06 GiB a 4,23 bits por peso, con una degradación de perplejidad de solo el 2,5 % respecto al modelo sin cuantizar, y sin recurrir a memoria de host ni a cómputo en CPU en la ruta crítica. Incluye además una tabla de n-gramas de 51,2 B de parámetros que se mantiene residente en VRAM mediante un layout dividido por cabezas, un cabezal MTP para decodificación especulativa y el torreón de visión en f16 convertido sin pérdida.
 
-La relevancia actual es doble: por un lado, demuestra que los modelos de ~180 B pueden ser viables en hardware de consumo de gama alta con memoria unificada; por otro, introduce tipos de cuantización propios (ROCmFP4/ROCmFPx) y un layout por cabeza para la tabla n-gram que requieren un fork específico de llama.cpp, lo que condiciona por completo el stack de despliegue.
+El contexto declarado alcanza los 262.144 tokens, y con caché KV cuantizada a q8_0 (unos 12,75 KiB por token, frente a 24 KiB en f16) el conjunto cabe en una partición de VRAM de 96 GiB. La licencia es `qwen-community-1.0`, etiquetada como "other" en el repositorio. El modelo acumula 12.756 descargas y 90 likes desde su creación el 28 de agosto de 2026.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con atención híbrida: 48 capas, de las cuales solo 12 son de atención completa; incluye tabla n-gram de 51,2 B de parámetros y cabeza MTP (multi-token prediction) para decodificación especulativa |
-| Parámetros totales | 176.943.885.120 (~177 B; el autor redondea a 180 B) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer con tabla de n-gramas (PLE) y cabezal MTP; 48 capas, de las cuales 12 son de atención completa |
+| Parametros totales | 176.943.885.120 (~177 B); incluye tabla de n-gramas de 51,2 B |
+| Parametros activos | no disponible |
 | Longitud de contexto | 262.144 tokens |
-| Tipos de cuantización | ROCmFP4 / ROCmFPx a 4,23 bpw (formato propietario del fork de agentionai); KV cache en q8_0 o f16; torre de visión en f16 sin recuantizar |
+| Tipos de cuantizacion | ROCmFP4 / ROCmFPx a 4,23 bpw (pesos); caché KV en q8_0 o f16; torreón de visión en f16 |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face) |
-| Formato de pesos | GGUF (dos layouts: raíz con tabla n-gram dividida por cabeza, y `v2/` con tabla como tensor único); mmproj separado en f16; cabeza MTP en repo aparte (2,28 GiB) |
+| Licencia | qwen-community-1.0 (etiquetada como "other" en el repositorio) |
+| Formato de pesos | GGUF (dos layouts: raíz con tabla dividida por cabezas y `v2/` con tensor único) |
+| Tamano del repositorio | 370,3 GB |
+| Tamano de pesos en VRAM | 87,06 GiB |
+| Caché KV | ~12,75 KiB/token en q8_0; ~24 KiB/token en f16 (~3,2 GiB y ~6 GiB para 262.144 tokens) |
+| Cabezal MTP | Paquete separado de 2,28 GiB |
+| Librería | gguf |
+| Pipeline | text-generation |
 
 ## Arquitectura y entrenamiento
 
-La información disponible sobre el entrenamiento del modelo base es escasa: no se detallan el número de tokens, la composición del dataset ni si hubo RLHF, DPO u otras fases de alineación. Lo que sí se describe con precisión es la arquitectura de despliegue. El modelo tiene 48 capas, de las cuales únicamente 12 son de atención completa; esta proporción reducida de capas full-attention es la que mantiene pequeño el KV cache (unos 12,75 KiB por token en q8_0 frente a 24 KiB en f16, es decir, ~3,2 GiB para los 262.144 tokens de contexto frente a ~6 GiB en f16) y permite que el contexto largo quepa junto a los 87 GiB de pesos en una reserva de 96 GiB.
+El modelo base es un transformer de 177 B de parámetros con 48 capas, de las cuales solo 12 son de atención completa, lo que reduce drásticamente el coste de la caché KV. Incorpora una tabla de n-gramas de 51,2 B de parámetros (denominada PLE en los comandos de despliegue) que en este GGUF se ha reestructurado dividiéndola por cabezas; según el autor, se trata de una reorganización byte a byte, no de una recuantización, y permite mantener la tabla completamente residente en VRAM. El modelo incluye además un cabezal de predicción multi-token (MTP) que habilita decodificación especulativa con profundidad de borrador adaptativa.
 
-La innovación técnica más destacable de esta publicación es la cuantización ROCmFP4 con calibración imatrix sobre 1.540 fragmentos de dos corpus, de modo que los tensores de baja precisión se ajustan a activaciones reales. Además, el autor separa la tabla n-gram de 51,2 B de parámetros por cabeza, lo que permite mantenerla íntegramente en VRAM sin fallback a RAM del host ni cómputo en CPU en la ruta crítica. El modelo incluye su propia cabeza MTP para decodificación especulativa con profundidad de borrador adaptativa (entre 2 y 4 tokens), y la torre de visión se convierte a f16 de forma sin pérdida porque los pesos de visión quedaron excluidos de la release FP8 upstream.
+La cuantización se realizó con calibración imatrix sobre 1.540 fragmentos procedentes de dos corpus, de modo que los tensores de baja precisión se ajustan a activaciones reales. El resultado son pesos a 4,23 bits por peso con una pérdida de perplejidad del 2,5 % frente al modelo sin cuantizar, y mejor perplejidad que la tier mainline equivalente (unas dos desviaciones estándar) y que las cuantizaciones IQ4_XS e IQ3_S de AesSedai, con 20-30 GB menos de tamaño. No se dispone de información sobre el número de tokens de entrenamiento del modelo base, la composición del dataset ni si hubo RLHF o DPO.
+
+La innovación técnica destacable es el soporte de los tipos ROCmFPx en el fork de Agention, más baratos de descomprimir que los tipos mainline, lo que se traduce en un prefill más rápido y sostenido en profundidad de contexto. El torreón de visión se convirtió a f16 sin pérdida porque los pesos de visión quedaron excluidos de la release FP8 upstream.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, con modo thinking y modo instruct (no-thinking) con parámetros de muestreo diferenciados.
-- Razonamiento explícito: el modelo soporta un modo de pensamiento separado del modo instruct.
-- Comprensión de imágenes mediante la torre de visión propia, servida a través del endpoint compatible con OpenAI.
-- Tool calling y function calling, con plantilla Jinja (`--jinja`) para el formateo de herramientas.
-- Razonamiento multi-paso y bucles agénticos, favorecidos por el prefill rápido a profundidad de contexto.
-- Decodificación especulativa nativa mediante cabeza MTP, con aceptación dependiente del contenido.
-- Contexto largo de hasta 262.144 tokens, con throughput de prefill medido a 32k y 128k.
-- Capacidades multilingües: no disponibles en la información proporcionada.
+- Generación de texto conversacional multi-turno con ventana de 262.144 tokens.
+- Razonamiento en modo thinking y modo instruct (no thinking), con parámetros de muestreo recomendados distintos para cada uno.
+- Capacidad de visión: procesa imágenes a través del endpoint compatible con OpenAI usando el mmproj en f16.
+- Decodificación especulativa mediante cabezal MTP propio, con profundidad de borrador adaptativa (2 a 4 tokens).
+- Prefill rápido sostenido en profundidad: 423 t/s a 512 tokens, 357 t/s a 8k, 245 t/s a 32k y 138 t/s a 128k.
+- Generación de hasta 40 tok/s observados en Strix Halo con drafting adaptativo (la tasa depende del contenido).
+- Compatibilidad con endpoints OpenAI (`/v1`) a través de llama-server, lo que habilita integración con clientes y frameworks existentes.
+- Soporte de plantillas Jinja (`--jinja`) para formateo de conversaciones y tool calling según la plantilla del modelo base.
+- No se dispone de información específica sobre idiomas soportados ni sobre capacidades de audio.
 
 ## Casos de uso
 
-- Agentes autónomos con contexto largo: el modelo puede mantener bucles agénticos de varios pasos releyendo un contexto grande, con 245 t/s de prefill a 32k y 138 t/s a 128k, lo que reduce la latencia de relectura en cada iteración del agente.
-- Asistentes de código en local: con tool calling y modo thinking, encaja en flujos de refactorización y revisión sobre repositorios extensos, aprovechando el contexto de 262.144 tokens para incluir varios ficheros en la ventana.
-- Análisis de documentos extensos con imágenes: la torre de visión en f16 permite enviar capturas, diagramas o páginas escaneadas junto a texto largo, útil en auditoría documental y extracción de datos.
-- Atención al cliente automatizada: conversaciones multi-turno con historial largo, servidas mediante API compatible con OpenAI en `http://127.0.0.1:8080/v1`, lo que facilita la integración con frontends existentes.
-- Despliegue en estación de trabajo con memoria unificada: un equipo Strix Halo de 128 GB puede servir el modelo íntegramente en GPU, sin servidores con múltiples A100/H100, adecuado para prototipado y demos internas.
-- Procesamiento por lotes de prompts largos: el prefill de 423 t/s a 512 tokens y 357 t/s a 8k lo hace apto para tareas de resumen, clasificación o extracción sobre corpus con prompts de varios miles de tokens.
-- Investigación en cuantización de baja precisión: el repo sirve como referencia reproducible de ROCmFP4 con imatrix, con métricas de perplejidad y throughput comparadas contra IQ4_XS e IQ3_S.
+- Asistente conversacional largo en local: con 262.144 tokens de contexto y caché KV de ~3,2 GiB en q8_0, el modelo puede mantener conversaciones o documentos completos en memoria sin truncar, algo viable en un equipo de memoria unificada de 128 GB sin GPU dedicada de datacenter.
+- Procesamiento de documentación extensa y relectura de contexto: el prefill de 138 t/s a 128k permite reinyectar prompts largos en bucles agénticos sin que el coste de prefill domine la latencia.
+- Agentes multi-paso en hardware de sobremesa: la combinación de tool calling vía plantilla Jinja, endpoint OpenAI y decodificación especulativa con MTP hace viable ejecutar bucles de agente con muchas llamadas cortas sobre una única máquina Strix Halo.
+- Análisis de imágenes en local: con el mmproj f16 se pueden enviar capturas, diagramas o documentos escaneados al endpoint `/v1` para extracción de información o descripción, manteniendo los datos en el equipo.
+- Generación de código asistida: el autor señala que la aceptación del borrador especulativo varía con el contenido y que el código admite profundidades mayores que la prosa; el modelo puede integrarse en un servidor local para autocompletado o revisión de código.
+- Despliegue en entornos con restricciones de privacidad: al ejecutarse íntegramente en GPU local sin fallback a host, es adecuado para cargas con datos sensibles que no pueden salir del equipo.
+- Servicio de inferencia interno compatible con OpenAI: llama-server expone `/v1`, de modo que herramientas ya construidas contra la API de OpenAI pueden apuntar al servidor local sin cambios de código.
 
 ## Benchmarks y rendimiento
 
-Los datos publicados por el autor son de throughput y perplejidad, no de benchmarks académicos estándar.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Los únicos datos de rendimiento proporcionados son métricas de throughput y perplejidad:
 
-| Métrica | Valor |
+| Metrica | Valor |
 |---|---|
-| Perplejidad vs. modelo sin cuantizar | dentro del 2,5 % |
-| Perplejidad vs. IQ4_XS e IQ3_S de AesSedai | mejor, con 20–30 GB menos de tamaño |
+| Perplejidad frente al modelo sin cuantizar | +2,5 % |
+| Perplejidad frente a tier mainline equivalente | Mejor por ~2 desviaciones estándar |
+| Perplejidad frente a IQ4_XS / IQ3_S de AesSedai | Mejor, con 20-30 GB menos de tamano |
 | Prefill a 512 tokens | 423 t/s |
-| Prefill a 8k | 357 t/s |
-| Prefill a 32k | 245 t/s |
-| Prefill a 128k | 138 t/s |
-| Generación con MTP (Strix Halo) | hasta 40 tok/s observados |
-| Tamaño de pesos | 87,06 GiB a 4,23 bpw |
-| KV cache q8_0 | ~12,75 KiB/token (~3,2 GiB a 262.144 tokens) |
-| KV cache f16 | ~24 KiB/token (~6 GiB a 262.144 tokens) |
-
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks académicos en la información disponible.
+| Prefill a 8k tokens | 357 t/s |
+| Prefill a 32k tokens | 245 t/s |
+| Prefill a 128k tokens | 138 t/s |
+| Generacion con MTP en Strix Halo | Hasta 40 tok/s |
+| Coste de cache KV en q8_0 | ~12,75 KiB/token |
+| Coste de cache KV en f16 | ~24 KiB/token |
 
 ## Requisitos de hardware
 
-- VRAM estimada: 87,06 GiB para los pesos a 4,23 bpw, más ~3,2 GiB de KV cache en q8_0 para el contexto completo, más la torre de visión f16 y, opcionalmente, 2,28 GiB de la cabeza MTP. El autor dimensiona el conjunto para una reserva de 96 GiB.
-- GPU recomendadas: el objetivo declarado es Strix Halo (Ryzen AI MAX+ 395 / Radeon 8060S) con 128 GB de memoria unificada. El fork soporta Vulkan, por lo que también se indican GPUs AMD e Intel; para NVIDIA se documenta el arranque con `--gpus all`.
-- GPU de consumo: no cabe en ninguna GPU de consumo con VRAM dedicada convencional (RTX 4090, 24 GB). Solo es viable en equipos con memoria unificada de 128 GB o en configuraciones multi-GPU de gran capacidad.
-- Despliegue: requiere el fork `agentionai/llama.cpp` (rama `main`) compilado con `-DGGML_VULKAN=ON`, o la imagen Docker `ghcr.io/agentionai/agention-llama:server` (también en Docker Hub). No es compatible con llama.cpp mainline para los tipos ROCmFPx ni para el layout por cabeza.
-- Flags recomendados: `-ngl 99 -ctk q8_0 -ctv q8_0 -fa on --jinja`. Para el layout `v2/`, añadir `--ngram-on-disk --ngram-cache 8192` (por defecto 256 MiB).
-- Latencia y throughput: prefill de 423 t/s a 512 tokens, 357 t/s a 8k, 245 t/s a 32k y 138 t/s a 128k; generación de hasta 40 tok/s con MTP adaptativo. La cuantización del KV a q8_0 no tiene coste medible de throughput según el autor.
+- VRAM para pesos: 87,06 GiB en el layout raíz (tabla de n-gramas residente en GPU). El layout `v2/` requiere `--ngram-on-disk` o RAM de host para la tabla unificada.
+- VRAM para caché KV: ~3,2 GiB con q8_0 a 262.144 tokens; ~6 GiB con f16.
+- VRAM adicional para visión: el mmproj en f16 se carga aparte (tamaño no especificado en la información disponible).
+- VRAM adicional para MTP: 2,28 GiB si se usa decodificación especulativa.
+- Equipo objetivo: Strix Halo (Ryzen AI MAX+ 395 / Radeon 8060S) con 128 GB de memoria unificada y partición de VRAM de 96 GiB.
+- GPU dedicadas: no se documenta compatibilidad con A100, H100 ni RTX 4090; 87 GiB de pesos exceden la VRAM de cualquier GPU de consumo actual, por lo que no cabe en una RTX 4090 (24 GB) ni en configuraciones consumer típicas.
+- Opciones de despliegue: fork `agentionai/llama.cpp` con `-DGGML_VULKAN=ON`; imagen Docker `ghcr.io/agentionai/agention-llama:server` (también en Docker Hub); llama-server con backend Vulkan para GPU AMD e Intel y con `--gpus all` para NVIDIA.
+- Flags recomendados: `-ngl 99 -ctk q8_0 -ctv q8_0 -fa on --jinja`; para MTP, `--spec-type draft-mtp --spec-draft-adaptive --spec-draft-n-min 2 --spec-draft-n-max 4 --n-gpu-layers-draft 99`.
+- Throughput: ver tabla de benchmarks; el autor indica que la cuantización de caché KV no tiene coste medible de throughput.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next ROCmFP4-FAST (esta ficha) | ~177 B | 262.144 | ROCmFP4 4,23 bpw, 87,06 GiB | qwen-community-1.0 | GGUF en HF, requiere fork de llama.cpp |
-| Qwen3.8-Flash-Next (base, FP8 upstream) | ~177 B | 262.144 | FP8 | qwen-community-1.0 | Repo upstream de Qwen |
-| AP-IQ4_XS (mainline-compatible) | ~177 B | 262.144 | IQ4_XS | qwen-community-1.0 | GGUF en llama.cpp mainline |
-| IQ4_XS / IQ3_S de AesSedai | ~177 B | 262.144 | IQ4_XS / IQ3_S | qwen-community-1.0 | GGUF, 20–30 GB más grandes que esta versión |
+| Qwen3.8-Flash-Next ROCmFP4-FAST (este) | ~177 B | 262.144 | ROCmFP4 4,23 bpw, 87,06 GiB | qwen-community-1.0 | Requiere fork de Agention; todo en GPU |
+| Qwen3.8-Flash-Next mainline (tier equivalente) | ~177 B | 262.144 | Mainline, mayor tamano | qwen-community-1.0 | Peor perplejidad segun el autor; compatible con llama.cpp estandar |
+| AesSedai IQ4_XS de Qwen3.8-Flash-Next | ~177 B | 262.144 | IQ4_XS | qwen-community-1.0 | 20-30 GB mas grande y peor perplejidad segun el autor |
+| AesSedai IQ3_S de Qwen3.8-Flash-Next | ~177 B | 262.144 | IQ3_S | qwen-community-1.0 | 20-30 GB mas grande y peor perplejidad segun el autor |
 
-La comparativa se limita a variantes del mismo modelo base, ya que la información disponible no incluye datos de benchmarks frente a modelos de otras familias. Frente a las cuantizaciones mainline, esta versión ofrece mejor perplejidad con 20–30 GB menos de tamaño y requiere un fork no estándar.
+No se dispone de datos de benchmarks comparativos que permitan contrastar calidad más allá de la perplejidad citada por el autor.
 
 ## Limitaciones y advertencias
 
-- Dependencia de un fork: los tipos ROCmFPx y el layout por cabeza de la tabla n-gram no funcionan en llama.cpp mainline; el despliegue queda atado al mantenimiento de `agentionai/llama.cpp`.
-- El layout `v2/` necesita `--ngram-on-disk` o RAM del host, ya que un tensor de ese tamaño supera lo que aceptan muchos dispositivos Vulkan como buffer único.
-- La caché n-gram por defecto es de 256 MiB; si no se amplía, el throughput decae a lo largo de la conversación.
-- La tasa de aceptación de la decodificación especulativa depende del contenido, por lo que los 40 tok/s no son garantizables en todas las cargas.
-- La licencia qwen-community-1.0 impone condiciones específicas para uso comercial; debe revisarse el fichero LICENSE antes de producción.
-- No hay información sobre sesgos, idiomas soportados ni tasas de alucinación del modelo base en la documentación proporcionada.
-- La cuantización a 4,23 bpw introduce una degradación de perplejidad de hasta el 2,5 %; en tareas sensibles a precisión numérica o de código conviene validar contra el modelo sin cuantizar.
-- El hardware objetivo es muy específico (memoria unificada de 128 GB); no es desplegable en GPUs de consumo con VRAM dedicada.
+- Los datos de perplejidad y throughput proceden del propio autor de la cuantización; no hay verificación independiente en la información disponible.
+- La licencia `qwen-community-1.0` está etiquetada como "other"; es necesario revisar el archivo LICENSE del repositorio antes de un uso comercial, ya que las condiciones concretas no se detallan en la información proporcionada.
+- Requiere un fork específico de llama.cpp (`agentionai/llama.cpp`) para los tipos ROCmFPx y el layout por cabezas; no funciona con llama.cpp mainline sin adaptaciones.
+- El layout raíz necesita una GPU Vulkan que acepte el tamaño de búfer de la tabla dividida; el layout `v2/` con tensor único exige `--ngram-on-disk` o RAM de host, con posible impacto en rendimiento.
+- El rendimiento de generación con MTP es dependiente del contenido: la aceptación del borrador varía y una profundidad fija resulta subóptima en prosa o en código.
+- `--ngram-cache` tiene un valor por defecto de 256 MiB; si no se incrementa en generaciones largas, el throughput decae a lo largo de la conversación.
+- No se dispone de información sobre sesgos, tasas de alucinación ni cobertura idiomática del modelo base.
+- El tamaño de 87 GiB de pesos limita el despliegue a equipos con memoria unificada grande o múltiples GPU; no es viable en GPU de consumo convencionales.
+- Los pesos de visión no forman parte del GGUF principal y deben descargarse por separado; sin el mmproj no hay capacidad multimodal.
 
 ## Enlaces
 
-- Repo Hugging Face: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-ROCmFP4-FAST-imatrix-GGUF
+- Repositorio Hugging Face: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-ROCmFP4-FAST-imatrix-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Cabeza MTP: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-MTP-ROCmFP4-FAST-GGUF
+- Cabezal MTP: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-MTP-ROCmFP4-FAST-GGUF
 - Fork de llama.cpp: https://github.com/agentionai/llama.cpp
-- PR upstream de soporte del modelo: https://github.com/ggml-org/llama.cpp/pull/27742
-- Imagen Docker: ghcr.io/agentionai/agention-llama:server (también `agentionai/agention-llama:server` en Docker Hub)
+- Pull request upstream de soporte del modelo: https://github.com/ggml-org/llama.cpp/pull/27742
 - Sitio del autor: https://agention.ai
+- Imagen Docker: ghcr.io/agentionai/agention-llama:server (también agentionai/agention-llama:server en Docker Hub)

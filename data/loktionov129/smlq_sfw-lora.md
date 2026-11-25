@@ -2,90 +2,87 @@
 
 ## Resumen
 
-`smlq_sfw` es un LoRA de difusión para generación de imágenes de texto a imagen, entrenado por el usuario `loktionov129` sobre el modelo base `krea/Krea-2-Raw`. Su función es fijar la identidad visual de un personaje sintético concreto, la "virtual influencer" Samantha Lambarquni, de modo que el modelo base reproduzca de forma consistente sus rasgos faciales, complexión, peinado, piercings y marcas cutáneas cada vez que se invoca la palabra disparadora `smlq_sfw`.
+smlq_sfw es un LoRA de difusión para generación de imágenes de texto a imagen, desarrollado por el usuario loktionov129 y publicado en Hugging Face. Se trata de un adaptador de bajo rango entrenado sobre el modelo base Krea-2-Raw de Krea AI, orientado a la generación de un personaje femenino consistente con identidad facial fija, lo que se conoce habitualmente como LoRA de consistencia facial o de influencer virtual. El adaptador se activa mediante el token de instancia `smlq_sfw` y permite reproducir un rostro y una fisonomía concretos a través de múltiples prompts y estilos.
 
-Técnicamente se trata de un adaptador LoRA de rango 32 (alpha 32) entrenado únicamente sobre el UNet, con el text encoder congelado, durante 3000 pasos a resolución 512x512 y con un scheduler de tipo `flowmatch`. Los pesos se distribuyen en formato `.safetensors` en precisión `bf16` y el repositorio ocupa aproximadamente 0,2 GB, lo que lo hace trivial de cargar junto al modelo base en flujos de trabajo de ComfyUI o `diffusers`.
+El modelo resuelve el problema de la consistencia de personaje en pipelines de generación de imágenes: sin un adaptador de este tipo, cada generación produce un rostro distinto, lo que impide construir narrativas visuales, catálogos o contenido de marca con un personaje estable. Al estar entrenado con ai-toolkit y empaquetado para diffusers y ComfyUI, se integra en flujos de trabajo de generación locales y en servicios de inferencia basados en difusión.
 
-Su relevancia es acotada pero clara dentro del nicho de creación de personajes virtuales: resuelve el problema de la consistencia de identidad entre generaciones, algo que los modelos de difusión generalistas no garantizan por sí solos. No es un modelo de lenguaje ni un modelo fundacional, sino un artefacto de personalización de un pipeline existente.
+La relevancia del modelo es limitada y específica: no es un modelo fundacional sino un adaptador de nicho, con 293 descargas, sin likes y con licencia unlicense, lo que lo sitúa en el ámbito del contenido generado por aficionados más que en el de herramientas de producción empresarial. Su interés técnico reside en el uso de un modelo base turbo (Krea-2-Turbo) y en la técnica de entrenamiento de LoRA para identidad facial.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA sobre UNet de difusión (arquitectura interna `krea2`), adaptador de rango 32 |
-| Parámetros totales | no disponible (adaptador LoRA de rango 32; el modelo base no declara recuento) |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo texto-imagen); resolución de entrenamiento 512x512, resolución objetivo 1024x1024 |
-| Tipos de cuantización | pesos del adaptador en `bf16`; modelo base y text encoder cuantizados a `qfloat8` durante el entrenamiento |
-| Idiomas soportados | inglés (`en`) |
-| Licencia | `unlicense` (dominio público) |
-| Formato de pesos | `.safetensors` (Diffusers) |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre modelo de difusión text-to-image Krea-2-Raw |
+| Parametros totales | no disponible (el repo ocupa 1,4 GB, pero no se desglosa el número de parámetros del adaptador) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (no aplica a modelos de difusión; la ventana relevante es la longitud del prompt de texto) |
+| Tipos de cuantizacion | no disponible (el adaptador se distribuye en formato de pesos de difusión; las cuantizaciones dependen del modelo base y del runtime) |
+| Idiomas soportados | en (inglés) |
+| Licencia | unlicense |
+| Formato de pesos | safetensors (formato estándar de diffusers para LoRA; el repo es de 1,4 GB) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se entrena sobre `krea/Krea-2-Raw`, un modelo de difusión texto-imagen, con un text encoder basado en `Felldude/Qwen3-VL-4B-Instruct-Uncensored` cuantizado a `qfloat8`. La configuración de red usa LoRA con `lokr_full_rank: true`, dimensión lineal (rank) 32 y alpha 32, aplicada exclusivamente al UNet (`train_unet: true`, `train_text_encoder: false`). El optimizador es `adamw8bit`, con learning rate `1e-4`, weight decay `1e-4`, batch size 1 sin acumulación de gradiente, función de pérdida MSE y scheduler de ruido `flowmatch` con timesteps lineales. El entrenamiento totaliza 3000 pasos.
+El adaptador es un LoRA de difusión, es decir, un conjunto de matrices de bajo rango inyectadas en las capas de atención y proyección del modelo base Krea-2-Raw, que permanece congelado durante el entrenamiento. El entrenamiento se realizó con ai-toolkit, una herramienta de la comunidad para el ajuste fino de modelos de difusión, y el resultado se empaqueta en formato compatible con la librería diffusers y con ComfyUI. El token de instancia `smlq_sfw` activa la identidad del personaje en el prompt.
 
-El conjunto de datos es `loktionov129/smlq_sfw.dataset`, con captions en ficheros `.txt`, una tasa de dropout de caption de 0,05 y un modo contenido/estilo "balanced". La resolución de entrenamiento es 512x512. No se documenta el número de imágenes del dataset, la composición del mismo ni si hubo etapas de refinamiento posteriores. La innovación técnica es limitada por definición: se trata de un ajuste fino paramétricamente eficiente orientado a la fidelidad de identidad, no de una arquitectura nueva.
+La información disponible no detalla el número de pasos de entrenamiento, el tamaño del dataset ni la composición exacta del mismo; únicamente se referencia el dataset `loktionov129/smlq_sfw.dataset`. Tampoco se especifica si se aplicaron técnicas de regularización, aumentación de datos o ajuste de la tasa de aprendizaje. El modelo base Krea-2-Raw pertenece a la familia Krea-2, que incluye una variante turbo orientada a inferencia rápida; el adaptador está pensado para funcionar con esa familia, aunque la model card no documenta los parámetros de muestreo recomendados (CFG, pasos, scheduler).
 
 ## Capacidades
 
-- Generación de imágenes fotorrealistas de un personaje concreto a partir de descripciones textuales en inglés.
-- Consistencia de identidad facial entre generaciones mediante la palabra disparadora `smlq_sfw`.
-- Reproducción de atributos físicos específicos definidos en el dataset: estructura facial, color y forma de ojos, cejas, piercings (doble aro en ceja derecha, aro en fosa nasal izquierda, aritos), lunares y pecas.
-- Control de vestuario y entorno mediante prompt (el ejemplo de la model card incluye fondo de ciudad neón ciberpunk).
-- Integración en flujos ComfyUI y `diffusers`.
-- No soporta tool calling, function calling, razonamiento multi-paso ni capacidades de agente: es un modelo generativo de imagen, no un LLM.
-- Capacidad multilingüe limitada al inglés según los metadatos del repositorio.
-- No dispone de modo "thinking", visión, audio ni otras modalidades.
+- Generación de imágenes de texto a imagen con un personaje femenino de identidad facial consistente, activado mediante el token `smlq_sfw`.
+- Reproducción de rasgos físicos detallados: forma de rostro, ojos, cejas, nariz, labios, pecas, marcas de belleza, piercings y complexión, según la descripción de la model card.
+- Control de estilismo y vestuario: el adaptador permite cambiar ropa, peinado y accesorios manteniendo el rostro, como demuestran los ejemplos con estética techwear y gótica.
+- Integración con ComfyUI y diffusers para pipelines de generación por nodos o por código.
+- Compatibilidad con prompts en inglés; no se documenta soporte multilingüe.
+- No se documenta soporte de tool calling, agentes, razonamiento multi-paso ni modalidades de audio o vídeo; es un modelo exclusivamente de imagen.
 
 ## Casos de uso
 
-- Creación de contenido para redes sociales de un personaje virtual: el LoRA permite generar un flujo continuo de imágenes de Samantha Lambarquni manteniendo el mismo rostro entre publicaciones, algo inviable con el modelo base sin adaptador.
-- Ilustración de marca para proyectos de "virtual influencer": se puede generar un catálogo de escenas (retrato, cuerpo entero, distintos vestuarios y localizaciones) con identidad estable para nutrir una cuenta o una campaña.
-- Prototipado de personajes para narrativa visual o cómic: el adaptador sirve para explorar variaciones de encuadre y expresión de un mismo personaje antes de encargar arte final.
-- Generación de avatares y retratos de perfil consistentes: útil para crear un set de avatares con el mismo rostro en distintos estilos de iluminación y fondo.
-- Pruebas de concepto en pipelines de generación por lotes: al ser un `.safetensors` de 0,2 GB, se puede cargar y descargar rápidamente en entornos de experimentación con `diffusers` o ComfyUI.
-- Investigación sobre consistencia de identidad en LoRAs: sirve como caso de estudio de un entrenamiento con `lokr_full_rank`, rank 32 y 3000 pasos para comparar estrategias de personalización.
-- Generación de material para pruebas de sistemas de moderación o de detección de contenido sintético, dado que produce rostros hiperrealistas de identidad fija.
+- Creación de influencer virtual: el adaptador permite generar un personaje con rostro estable a lo largo de múltiples publicaciones, manteniendo la identidad visual en distintos escenarios y estilos, lo que es útil para cuentas de marca o proyectos de contenido sintético.
+- Ilustración de narrativas seriadas: cómics, storyboards o novelas visuales que requieren el mismo personaje en viñetas distintas; el token de instancia garantiza la coherencia facial entre generaciones.
+- Pruebas de concepto de vestuario: un estudio de diseño puede generar al mismo personaje con distintas prendas y peinados para evaluar combinaciones antes de producir imágenes finales.
+- Generación de material promocional para proyectos personales: avatares, banners y piezas gráficas con un personaje reconocible, siempre que se respete la licencia y las políticas de contenido de la plataforma de destino.
+- Investigación sobre consistencia de identidad en difusión: el LoRA sirve como caso de estudio para medir la fidelidad facial y la deriva de identidad bajo cambios de prompt, semilla y estilismo.
+- Prototipado rápido en ComfyUI: integración en grafos de nodos para experimentar con control de pose, iluminación y fondo manteniendo el personaje, gracias a la compatibilidad declarada con ComfyUI.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explícita. Como referencia, el adaptador pesa unos 0,2 GB en `bf16`; el consumo dominante lo determina el modelo base `Krea-2-Raw` y el text encoder Qwen3-VL-4B, no el LoRA.
-- GPU recomendadas: no disponibles en la información proporcionada. El entrenamiento se realizó con el modelo base y el text encoder cuantizados a `qfloat8`, lo que sugiere que el autor trabajó con VRAM limitada, pero no se especifica el hardware.
-- Viabilidad en GPU de consumo: no confirmada en la documentación; depende enteramente del modelo base, no del adaptador.
-- Opciones de despliegue: `diffusers` (formato nativo `.safetensors`) y ComfyUI, ambos mencionados en los tags y en la model card.
+- VRAM estimada: no disponible de forma específica para el adaptador; depende del modelo base Krea-2-Raw y de la resolución de generación. Como referencia general, los modelos de difusión de la familia Krea-2 requieren GPUs con al menos 8-12 GB de VRAM en cuantizaciones agresivas y 16-24 GB para precisión completa, aunque este dato no está confirmado en la información proporcionada.
+- GPU recomendadas: no disponible en la documentación; por categoría de modelo, se suelen emplear RTX 3090, RTX 4090, A100 o H100 para difusión a resolución alta.
+- Compatibilidad con GPU de consumo: probable en GPUs con 8 GB o más si se emplean cuantizaciones del modelo base, pero no confirmado por el autor.
+- Opciones de despliegue: diffusers (librería declarada), ComfyUI (tag explícito) y, por extensión, runtimes que soporten LoRA de difusión en formato safetensors; no se documenta soporte de vLLM, llama.cpp, Ollama ni TGI, que no aplican a modelos de imagen.
 - Latencia y throughput: no disponibles.
-- Configuración de inferencia recomendada por el autor: sampler/scheduler `flowmatch`, CFG 4.0, 30 pasos, resolución de salida 1024x1024.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. Como referencia estructural, la categoría es la de LoRAs de consistencia de personaje sobre modelos de difusión texto-imagen (por ejemplo, adaptadores entrenados con AI-Toolkit sobre bases tipo Flux o Krea), pero no se han facilitado datos de rendimiento ni especificaciones de alternativas concretas que permitan una comparación rigurosa.
-
-| Modelo | Base | Rank | Contexto/resolución | Licencia | Datos de rendimiento |
+| Modelo | Tipo | Base | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `smlq_sfw` | `krea/Krea-2-Raw` | 32 | 512x512 entrenamiento / 1024x1024 salida | `unlicense` | no disponibles |
-| Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
+| smlq_sfw (loktionov129) | LoRA de identidad facial | Krea-2-Raw | no aplica | unlicense | Hugging Face, 293 descargas |
+| LoRA de personaje sobre SDXL | LoRA de identidad facial | SDXL | no aplica | variable según autor | Amplia en Civitai y Hugging Face |
+| LoRA de personaje sobre Flux | LoRA de identidad facial | Flux.1 | no aplica | variable según autor | Amplia en Hugging Face |
+| Krea-2-Raw (modelo base) | Difusión text-to-image | propio | no aplica | según Krea AI | Hugging Face |
+
+La comparación se limita a la categoría funcional, ya que no se dispone de métricas de fidelidad facial ni de benchmarks cuantitativos para este adaptador. Frente a los LoRA de personaje sobre SDXL o Flux, la diferencia principal es el modelo base: Krea-2-Raw es menos extendido en la comunidad que SDXL o Flux, lo que reduce la disponibilidad de herramientas, guías y ecosistema de nodos compatibles.
 
 ## Limitaciones y advertencias
 
-- El adaptador está entrenado exclusivamente en inglés; los prompts en otros idiomas pueden degradar la fidelidad del personaje.
-- La palabra disparadora `smlq_sfw` es obligatoria para activar la identidad; sin ella el LoRA puede introducir artefactos o un efecto residual no deseado.
-- El entrenamiento se realizó a 512x512 y la inferencia recomendada a 1024x1024; generar a resoluciones muy distintas puede producir deformaciones anatómicas.
-- Riesgo de sobreajuste al dataset: con 3000 pasos, batch 1 y un dataset no documentado en tamaño, la diversidad de poses y expresiones puede ser limitada.
-- El personaje incluye rasgos muy específicos (pecas, lunares, piercings); el modelo puede reproducirlos de forma inconsistente en encuadres amplios o con oclusiones.
-- La model card describe explícitamente atributos físicos sexualizados del personaje; el contenido generado puede no ser apto para todos los públicos y requiere moderación en producción.
-- Licencia `unlicense`: permite uso comercial y modificación sin restricciones, pero el autor no ofrece garantías de ningún tipo ni asume responsabilidad sobre el uso.
-- El uso del modelo base `krea/Krea-2-Raw` y del text encoder Qwen3-VL está sujeto a sus propias licencias, que deben verificarse por separado.
-- Riesgo de suplantación o uso indebido en la creación de identidades sintéticas hiperrealistas; conviene etiquetar el contenido generado.
-- No hay datos publicados sobre sesgos demográficos del adaptador ni sobre su comportamiento fuera del dominio del personaje.
+- Sesgos conocidos: no documentados por el autor; como todo modelo de difusión entrenado con datos de un personaje concreto, puede reproducir sesgos de representación corporal y estética presentes en el dataset.
+- Riesgo de alucinación visual: el adaptador puede generar rasgos inconsistentes cuando el prompt se aleja de la descripción canónica del personaje, especialmente en ángulos extremos, oclusiones o estilos muy estilizados.
+- Limitaciones de idioma: la model card declara únicamente inglés; los prompts en otros idiomas pueden degradar la fidelidad del personaje.
+- Restricciones de licencia: la licencia unlicense implica dominio público según el autor, pero el modelo base Krea-2-Raw tiene su propia licencia que puede imponer condiciones adicionales al uso comercial; es responsabilidad del usuario verificar la licencia del modelo base.
+- Contenido sensible: la model card incluye descripciones de contenido sugestivo y el nombre del adaptador contiene el sufijo "sfw", lo que sugiere que el autor pretende limitar el contenido explícito; no obstante, no se documentan filtros ni salvaguardas técnicas.
+- Caveat para producción: con 293 descargas, 0 likes y sin benchmarks, el adaptador no tiene validación comunitaria suficiente para considerarse estable en entornos de producción; se recomienda evaluar la fidelidad facial con un conjunto de pruebas propio antes de desplegarlo.
+- Dependencia del modelo base: cualquier cambio o retirada de Krea-2-Raw afecta directamente a la reproducibilidad del adaptador.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/loktionov129/smlq_sfw.lora
-- Dataset de entrenamiento: https://huggingface.co/datasets/loktionov129/smlq_sfw.dataset
+- Hugging Face: https://huggingface.co/loktionov129/smlq_sfw.lora
+- Dataset: https://huggingface.co/datasets/loktionov129/smlq_sfw.dataset
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
-- Text encoder: https://huggingface.co/Felldude/Qwen3-VL-4B-Instruct-Uncensored
+- ai-toolkit: no disponible en la información proporcionada
+- ComfyUI: no disponible en la información proporcionada
+- Paper o blog del autor: no disponible en la información proporcionada

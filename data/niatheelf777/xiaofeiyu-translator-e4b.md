@@ -2,107 +2,99 @@
 
 ## Resumen
 
-`niatheelf777/xiaofeiyu-translator-e4b` es un adaptador LoRA publicado en Hugging Face por el usuario `niatheelf777` sobre el modelo base `google/gemma-4-E4B-it`. No es un modelo de propósito general, sino un componente auxiliar ("sidecar") especializado en una única tarea: traducir la prosa conversacional de las respuestas generadas por un modelo de razonamiento de frontera a chino coloquial de mensajería instantánea (IM), en formato de múltiples burbujas, preservando intactos los bloques de código, las expresiones matemáticas, los identificadores y las llamadas a herramientas.
+Xiaofeiyu Translator E4B es un modelo derivado de `google/gemma-4-E4B-it` publicado por el usuario niatheelf777 bajo el paraguas del proyecto Xiaofeiyu (小肥鱼). No es un modelo de propósito general, sino un componente especializado ("sidecar") que se coloca por delante de un modelo grande de frontera (DeepSeek, Claude, GPT o Qwen) para reescribir sus respuestas en prosa como mensajes cortos de chat estilo IM en mandarín, manteniendo intactos los bloques de código, fórmulas y llamadas a herramientas. Se distribuye en formato GGUF y está pensado para GPUs de 6-8 GB de VRAM.
 
-El adaptador se integra en el ecosistema `@xiaofeiyu` (`openai-voice-proxy` y `dsh-plugin`), que actúa como proxy compatible con la API de OpenAI: el modelo de frontera (DeepSeek, Claude, GPT, Qwen o un Llama local) produce la respuesta técnica completa y este adaptador se encarga únicamente de la capa de presentación lingüística. El repositorio ocupa 0,2 GB y contiene 13.893.632 parámetros entrenables en formato PEFT, lo que lo convierte en un componente ligero desplegable junto al modelo principal.
+El modelo se construye sobre el tramo superior de capas del Gemma 4 E4B (capas no-QKV L22..41 según la model card) y se acompaña de cinco LoRA GGUF ("cartuchos de voz") que definen otros tantos estilos de personalidad conversacional. La propuesta es permitir que un usuario con hardware modesto mantenga un modelo grande como "cerebro" remoto y use este E4B local como capa de estilo, con una latencia mediana declarada de 302 ms.
 
-La relevancia del proyecto reside en su enfoque de separación de responsabilidades: en lugar de pedir a un modelo grande que genere simultáneamente código correcto y registro coloquial natural, se delega la reescritura estilística a un adaptador pequeño y medible. El autor publica métricas concretas de latencia (mediana de 302,1 ms) y de invariancia estructural (0 % de fugas en bloques de código), lo que permite evaluar el componente con criterios de ingeniería y no solo cualitativos.
+La relevancia actual reside en su enfoque de "split-phase": separar la generación de contenido de la generación de estilo y preservar de forma determinista los artefactos estructurados (código, tool calls, identificadores). El repositorio es pequeño (0,2 GB) y declara 286 descargas en el momento de la consulta.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (PEFT) sobre transformer `google/gemma-4-E4B-it`; adaptadores en las 20 capas superiores (22..41), módulos no-QKV |
-| Parámetros totales | 13.893.632 (adaptador); el modelo base no se distribuye en este repositorio |
-| Parámetros activos | no disponible (el modelo base es de tipo E4B; no se especifica el desglose MoE en la información proporcionada) |
+| Arquitectura | Transformer derivado de Gemma 4 E4B (tramo superior de capas L22..41, según model card) |
+| Parametros totales | 13.893.632 (dato de safetensors); la model card describe un modelo "4B" sobre base E4B |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | GGUF `Q8_0` verificado en los benchmarks del autor; no se documentan otros formatos |
-| Idiomas soportados | `zh`, `en` |
-| Licencia | Apache 2.0 para el adaptador; el uso del modelo base queda sujeto a los Gemma Terms of Use |
-| Formato de pesos | PEFT (adaptador LoRA) y GGUF |
-| Módulos adaptados | 80 módulos, 0 módulos QKV |
-| Repositorio | 0,2 GB |
+| Tipos de cuantizacion | GGUF; la model card menciona Q8_0 para el modelo base y cinco LoRA GGUF |
+| Idiomas soportados | chino (zh), inglés (en) |
+| Licencia | gemma (Gemma Terms of Use) |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador aplica LoRA sobre las 20 capas superiores (índices 22 a 41) del modelo base `gemma-4-E4B-it`, excluyendo explícitamente las proyecciones QKV: se adaptan 80 módulos en total y ninguno de ellos corresponde a query, key o value. Esta decisión concentra la capacidad de adaptación en las representaciones de salida y en las capas de feed-forward superiores, que es donde se materializa el estilo de generación, sin alterar el mecanismo de atención que el modelo base ya ha aprendido.
+El modelo parte de `google/gemma-4-E4B-it` y, según la model card, utiliza el tramo superior de capas no-QKV (L22..41) como columna vertebral. Sobre esa base se aplican cinco LoRA independientes, cada una asociada a un "cartucho de voz" que define un registro conversacional distinto: calidez cotidiana, dulce y apegado, hermana mayor serena, tsundere mordaz y tranquilo y reservado. El conjunto se ejecuta con llama.cpp y un proxy compatible con OpenAI que realiza un troceado AST en streaming.
 
-El entrenamiento combina una fase supervisada y una fase de preferencias: el autor reporta una reducción de la NLL de evaluación de 2,598 a 1,368 y un ajuste DPO posterior con una precisión de preferencia del 96,05 % sobre un conjunto retenido de 76 pares (73 aciertos). La tarea objetivo es una reescritura controlada mediante cinco pesos tipo slider (`s0` y `c1..c4`) que modulan el estilo de las burbujas generadas. No se especifican en la información disponible el volumen de tokens de entrenamiento, la composición del dataset ni la configuración exacta de hiperparámetros.
+El autor declara un ajuste con DPO: la precisión de preferencia en el conjunto held-out es del 96,05% (73/76) y la NLL de evaluación baja de 2,598 a 1,368. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni detalles del preentrenamiento del modelo base. La innovación destacable es el mecanismo de "split-phase": la reescritura estilística se aplica solo a la prosa, mientras que bloques de código, flags de CLI, URLs, marcas de tiempo y `tool_calls` JSON se transmiten sin modificar.
 
 ## Capacidades
 
-- Traducción de prosa conversacional de inglés (y texto mixto) a chino coloquial de mensajería instantánea, segmentada en múltiples burbujas.
-- Control de estilo mediante cinco pesos ajustables (`s0` + `c1..c4`), lo que permite variar el registro de salida sin reentrenar.
-- Preservación literal de bloques de código delimitados por fences: 0 de 36 casos con fuga o corrupción en la evaluación del autor.
-- Preservación de expresiones matemáticas e identificadores técnicos sin traducir.
-- Paso directo ("pass-through") de llamadas a herramientas y de estructuras de tool calling generadas por el modelo de frontera.
-- Preservación exacta de identificadores de vídeo y marcas de tiempo: 7 de 7 casos correctos en la validación reportada.
-- Funcionamiento como sidecar de un modelo de razonamiento externo, sin capacidad de razonamiento autónomo propia.
-- Soporte bilingüe chino-inglés; no se documentan otros idiomas.
+- Reescritura estilística de prosa en burbujas cortas de chat IM en mandarín, con cinco perfiles de voz seleccionables mediante LoRA.
+- Preservación determinista de bloques de código, fórmulas matemáticas, URLs, identificadores y marcas de tiempo (declarado 7/7 en el conjunto de prueba del autor).
+- Passthrough de `tool_calls` JSON sin alteración (declarado 0/36 alteraciones).
+- Funciona como capa intermedia ("sidecar") de modelos de frontera vía proxy compatible con OpenAI, sin cambios en el código del cliente.
+- Soporte de mezcla de estilos mediante cinco "sliders" (por ejemplo, cabecera `X-Xiaofeiyu-Sliders: 1.0,0.85,0,0,0`).
+- Idiomas: chino e inglés.
+- No se declaran capacidades de visión, audio, razonamiento matemático autónomo ni tool calling propio; su función es de transformación de texto.
 
 ## Casos de uso
 
-- Asistentes conversacionales en chino con backend de razonamiento de frontera: el proxy `@xiaofeiyu/openai-voice-proxy` envía la respuesta técnica del modelo grande a este adaptador, que la reescribe en burbujas de chat naturales; la separación evita degradar la calidad del código o del razonamiento al imponer un registro coloquial.
-- Atención al cliente en aplicaciones de mensajería: el adaptador convierte respuestas técnicas o extensas en mensajes cortos y naturales, adecuados para interfaces tipo WeChat, manteniendo intactos los identificadores de pedido o de producto que el modelo grande haya insertado.
-- Integración en pipelines de agentes con tool calling: al pasar las llamadas a herramientas sin modificar, el adaptador puede situarse entre el orquestador y la interfaz de usuario sin romper el contrato de funciones ni los argumentos JSON.
-- Localización de documentación técnica generada por IA: los bloques de código y las expresiones matemáticas se preservan literalmente, de modo que la salida reescrita sigue siendo copiable y ejecutable.
-- Subtitulado y transcripción con marcas de tiempo: la preservación verificada de identificadores de vídeo y timestamps permite usar el adaptador en flujos de vídeo donde la alineación temporal no puede alterarse.
-- Despliegue en hardware modesto junto a un modelo grande remoto: con 13,9 M de parámetros y cuantización `Q8_0`, el adaptador añade una latencia mediana de 302,1 ms y un throughput de 129 a 140 tok/s, por lo que puede ejecutarse en la misma máquina que el cliente sin competir por VRAM con el modelo principal.
-- Prototipado de interfaces de voz: el nombre del proyecto (`voice-translator`) y su integración con un proxy compatible con OpenAI sugieren su uso en asistentes de voz que necesitan respuestas habladas en registro natural; no se detalla en la información disponible el componente de síntesis o reconocimiento de voz.
+- Asistente conversacional con cerebro remoto y estilo local: un cliente apunta a un proxy que envía la petición a DeepSeek o Claude y usa este E4B para reescribir la respuesta en mensajes cortos de chat, manteniendo el código intacto.
+- Edición de respuestas en entornos de desarrollo: al integrarse en Cursor o en un cliente compatible con OpenAI, los bloques de código y los `tool_calls` llegan sin cambios al IDE, mientras la explicación se adapta al registro elegido.
+- Despliegue en hardware de gama media: con aproximadamente 5,3 GiB de VRAM en Q8_0, cabe en una RTX 3060 8 GB o RTX 4060 8 GB y puede permanecer residente junto a otras herramientas.
+- Prototipado de personajes conversacionales: los cinco cartuchos de voz permiten probar distintos registros (cálido, tsundere, sereno, etc.) sin reentrenar, útil para diseñar agentes de acompañamiento.
+- Demostraciones interactivas de mezcla de personalidad: el sitio xfy.tospeak.top permite ajustar los sliders en tiempo real sin descarga local.
+- Integración en pipelines de agentes: el proxy preserva las llamadas a herramientas, de modo que un agente multi-paso puede usar el E4B como capa de presentación de resultados sin romper la cadena de ejecución.
+- Localización de respuestas técnicas al chino coloquial: útil para equipos que reciben documentación o asistencia en inglés y necesitan una versión en mandarín conversacional con los identificadores técnicos intactos.
 
 ## Benchmarks y rendimiento
 
-Datos reportados por el autor en la model card (versión `v1`):
+Datos declarados por el autor en la model card:
 
-| Métrica | Resultado |
-|---|---|
-| NLL de evaluación (antes → después) | 2,598 → 1,368 |
-| Precisión de preferencia DPO (held-out) | 96,05 % (73/76) |
-| Latencia mediana de traducción (5 sliders) | 302,1 ms |
-| Throughput (`Q8_0`) | 129–140 tok/s |
-| Fugas en bloques de código | 0/36 (0 %) |
-| Preservación de ID de vídeo y timestamp | 7/7 (100 %) |
+| Metrica | Resultado | Detalle |
+|---|---|---|
+| Latencia mediana de traducción (5 sliders) | 302,1 ms | 129-140 tok/s en Q8_0 (~5,3 GiB de VRAM con 5 LoRA GGUF) |
+| Precisión de preferencia DPO held-out | 96,05% (73/76) | Reescritura directa multi-burbuja; NLL de evaluación 2,598 -> 1,368 |
+| Alteración de bloques de código y tool calls | 0/36 (0%) | Bloques cercados, flags de CLI y `tool_calls` JSON pasan sin reescritura |
+| Preservación de identificadores y marcas de tiempo | 7/7 (100%) | IDs de vídeo, URLs, números y timestamps preservados en los 5 sliders |
 
-No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible; el modelo está diseñado para una tarea de reescritura y no para evaluación en dichos conjuntos.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM del adaptador: 13,9 M de parámetros en `Q8_0` equivalen a aproximadamente 14 MB de pesos, un consumo despreciable frente al modelo base.
-- El requisito real de VRAM lo determina `google/gemma-4-E4B-it`, cuyas necesidades no se detallan en la información proporcionada.
-- GPU recomendadas: no disponibles para el modelo base; el adaptador en sí puede ejecutarse en CPU o en cualquier GPU consumer con capacidad sobrante.
-- Cabe en cualquier GPU consumer, ya que el adaptador ocupa del orden de decenas de MB; la viabilidad conjunta depende del modelo base.
-- Opciones de despliegue: PEFT sobre el modelo base, GGUF (`Q8_0` verificado) y el proxy `@xiaofeiyu/openai-voice-proxy` o `@xiaofeiyu/dsh-plugin` como capa de integración compatible con la API de OpenAI. No se documenta soporte explícito de vLLM, TGI o llama.cpp más allá del formato GGUF.
-- Latencia y throughput medidos: 302,1 ms de mediana y 129–140 tok/s en `Q8_0`, según el autor.
+- VRAM estimada: aproximadamente 5,3 GiB en Q8_0 con las cinco LoRA cargadas, según el autor.
+- GPU recomendadas: RTX 3060 8 GB, RTX 4060 8 GB y portátiles ligeros; el autor indica que también puede residir en equipos de 6-8 GB.
+- Cabe en GPU de consumo: sí, en el rango de 8 GB indicado; no se documentan requisitos para GPUs de 4 GB o inferiores.
+- Opciones de despliegue: llama.cpp (`llama-server`), el lanzador `server/launch_local.py` del repositorio GitHub y el proxy `@xiaofeiyu/openai-voice-proxy` (Node.js) que expone un endpoint compatible con OpenAI en `127.0.0.1:18088/v1`.
+- Throughput declarado: 129-140 tok/s en Q8_0; latencia mediana de 302,1 ms por turno de reescritura.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parámetros | Contexto | Licencia | Enfoque |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `niatheelf777/xiaofeiyu-translator-e4b` | LoRA sobre Gemma-4-E4B-it | 13,9 M (adaptador) | no disponible | Apache 2.0 (adaptador) | Reescritura coloquial zh con preservación de código y tool calls |
-| `google/gemma-4-E4B-it` | Modelo base instruct | no disponible | no disponible | Gemma Terms of Use | Generación general y razonamiento |
-| Adaptadores de traducción genéricos (p. ej. LoRA sobre NLLB o M2M-100) | LoRA sobre modelos de traducción | variable | variable | variable | Traducción literal entre idiomas, sin control de estilo ni preservación estructural |
-| Modelos de chat chinos ajustados (p. ej. Qwen instruct) | Modelo completo | variable | variable | variable | Conversación general en chino, sin función de sidecar |
+| Xiaofeiyu Translator E4B | ~13,9 M declarados (base E4B) | no disponible | Sidecar de estilo sobre Gemma 4 E4B | Gemma | GGUF en Hugging Face |
+| Xiaofeiyu 12B v4 (mismo autor) | 12B | no disponible | Modelo principal de la familia, recomendado para ≥16 GB | Gemma | GGUF en Hugging Face |
+| Gemma 4 E4B-it (base) | E4B | no disponible | Modelo instructivo de propósito general | Gemma | Pesos originales de Google |
 
-La comparación directa es limitada: no se dispone de datos públicos de benchmarks de este adaptador frente a alternativas, y su función (reescritura estilística preservando estructura) no coincide con la de un traductor neuronal convencional ni con la de un modelo de chat completo.
+No se dispone de datos de benchmarks comparativos con alternativas de la misma categoría (sidecars de estilo o proxies de reescritura) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es un adaptador, no un modelo autónomo: requiere `google/gemma-4-E4B-it` y, en el flujo previsto, un modelo de razonamiento de frontera que genere la respuesta original.
-- Solo cubre chino e inglés; no se documenta comportamiento en otros idiomas.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin validación independiente de las métricas reportadas por el autor.
-- Las cifras de benchmarks proceden exclusivamente de la model card del autor; no hay evaluación de terceros.
-- El ajuste DPO se valida sobre 76 pares, un conjunto pequeño que limita la significación estadística de la precisión del 96,05 %.
-- No se especifican la longitud de contexto, la composición del dataset de entrenamiento ni los hiperparámetros, lo que dificulta reproducir o auditar el entrenamiento.
-- Riesgo de alucinación y de deriva estilística en entradas muy largas o con mezcla densa de código y prosa; no se documentan pruebas en esos escenarios.
-- El uso comercial del modelo base está sujeto a los Gemma Terms of Use, independientemente de la licencia Apache 2.0 del adaptador.
-- La licencia Apache 2.0 se aplica al adaptador; conviene verificar la compatibilidad con los términos del modelo base antes de un despliegue en producción.
-- No se documentan sesgos específicos ni evaluaciones de seguridad.
+- El modelo no es un asistente de propósito general: está diseñado exclusivamente para reescribir prosa en burbujas de chat; su uso fuera de ese rol no está validado.
+- Idiomas limitados a chino e inglés; no se declara soporte de castellano ni de otras lenguas.
+- Riesgo de alucinación en la reescritura estilística: aunque el autor declara preservación de código e identificadores, no se documentan garantías formales fuera del conjunto de prueba.
+- Los benchmarks presentados son internos del autor, con conjuntos de evaluación pequeños (76 y 36 ejemplos); deben interpretarse con cautela.
+- Licencia Gemma: el uso comercial está sujeto a los Gemma Terms of Use, que imponen restricciones y obligaciones de atribución.
+- Dependencia de infraestructura adicional (llama.cpp, proxy Node.js, modelo base GGUF) para el flujo completo; el repositorio solo contiene las LoRA y el backbone en GGUF.
+- No se documentan sesgos específicos ni evaluaciones de seguridad; al ser un modelo de estilo sobre una base Gemma, hereda los sesgos de esta.
+- El dato de parámetros totales de safetensors (13,9 M) no concuerda con la descripción "4B" de la model card; conviene verificar el tamaño real de los pesos GGUF antes de planificar el despliegue.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/niatheelf777/xiaofeiyu-translator-e4b
+- Hugging Face: https://huggingface.co/niatheelf777/xiaofeiyu-translator-e4b
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
+- Modelo principal de la familia: https://huggingface.co/niatheelf777/xiaofeiyu-12b-v4
+- Colección Xiaofeiyu: https://huggingface.co/collections/niatheelf777/xiaofeiyu-split-phase-spoken-persona-family-6afb60d6cecd8097f5fb3a13
+- Repositorio GitHub: https://github.com/niatheelf777/xiaofeiyu
+- Demo online: https://xfy.tospeak.top
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms
-- Repositorio del proxy `@xiaofeiyu/openai-voice-proxy`: no disponible
-- Repositorio del plugin `@xiaofeiyu/dsh-plugin`: no disponible
-- Paper o blog técnico: no disponible

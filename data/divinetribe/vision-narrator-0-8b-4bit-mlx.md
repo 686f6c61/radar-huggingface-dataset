@@ -2,98 +2,104 @@
 
 ## Resumen
 
-Vision Narrator 0.8B es un modelo de vision-lenguaje (VLM) desarrollado por divinetribe y publicado en Hugging Face con la licencia Apache-2.0. Está diseñado específicamente para ayudar a personas ciegas o con baja visión: dado un documento o una escena capturada con la cámara, genera una frase corta y funcional que describe qué es, quién lo envía, cuánto importa y qué ocurre si se ignora. No es un simple captioner; aprende a responder las preguntas útiles que necesita un usuario sin acceso visual. La arquitectura combina el modelo de lenguaje Qwen/Qwen3.5-0.8B con una torre de visión de 768 dimensiones y 12 capas que proyecta a 1024. El modelo completo tiene 852.985.920 parámetros y se distribuye como pesos MLX en formato safetensors. Su tamaño reducido (652 MB en disco) permite ejecutarlo completamente offline en Apple Silicon, incluyendo un iPhone 14 Pro Max, con una latencia de aproximadamente 0,17 segundos por inferencia. La cuantización 4-bit se aplica únicamente a la parte del lenguaje; la torre de visión se mantiene a precisión completa para evitar errores en la lectura de importes o fechas.
+Vision Narrator 0.8B (4-bit MLX) es un modelo de lenguaje y visión (VLM) de pequeno tamano desarrollado por divinetribe, un fine-tune del modelo base Qwen/Qwen3.5-0.8B. Su proposito es asistir a personas ciegas y con baja vision respondiendo preguntas sobre imagenes capturadas con la camara de un telefono, con especial enfasis en el conjunto de datos VizWiz, que recoge preguntas reales formuladas por usuarios con discapacidad visual. El modelo esta disenado para ejecutarse completamente offline en dispositivos moviles, incluyendo telefonos de gama alta de 2022 como el iPhone 14 Pro Max.
 
-## Especificaciones técnicas
+La version v09 del modelo introduce una mejora sustancial en el formato de respuesta: prioriza la respuesta directa a la pregunta (si/no, un numero, un color, un nombre) antes de anyadir contexto descriptivo, en lugar de generar una descripcion generica de la escena. Esta orientacion practica lo diferencia de captioners genericos y lo hace util para tareas concretas como leer una factura, comprobar si una luz esta encendida o identificar el remitente de una carta.
+
+El modelo tiene 852.985.920 parametros (aproximadamente 0,85B), se distribuye en formato MLX con cuantizacion de 4 bits para la torre de lenguaje (el componente de vision permanece en precision completa) y cuenta con licencia Apache 2.0. Su ventana de contexto y otros detalles tecnicos no estan disponibles en la informacion proporcionada.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3.5-0.8B (decoder) + torre de visión; modelo image-text-to-text |
-| Parametros totales | 852.985.920 (unos 853 millones) |
+| Arquitectura | Vision-language transformer (base Qwen3.5), torre de vision en precision completa, torre de lenguaje cuantizada a 4 bits affine con group size 64 |
+| Parametros totales | 852.985.920 |
 | Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 4-bit affine, group size 64 (solo modelo de lenguaje); torre de visión a precisión completa |
-| Idiomas soportados | en (inglés únicamente) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | MLX (safetensors) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | 4-bit affine (group size 64) para la torre de lenguaje; torre de vision en precision completa |
+| Idiomas soportados | Ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (libreria MLX) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en Qwen3.5-0.8B como decoder. Según la model card, el modelo de lenguaje tiene 1024 dimensiones ocultas, 24 capas, 8 cabezas de atención y un vocabulario de 248.320 tokens. La torre de visión utiliza 768 dimensiones ocultas, 12 capas y produce un embedding de 1024 que se proyecta al espacio del lenguaje. La cuantización 4-bit affine con group size 64 se aplica exclusivamente a las capas del modelo de lenguaje; el encoder de visión se mantiene en precisión completa, una decisión deliberada para preservar la fidelidad en tareas de extracción de datos numéricos.
+El modelo sigue una arquitectura vision-language basada en Qwen3.5-0.8B, con una torre de vision que procesa la imagen y una torre de lenguaje que genera la respuesta. La torre de lenguaje esta cuantizada a 4 bits con cuantizacion affine y group size 64, mientras que la torre de vision se mantiene en precision completa. Segun la model card, comprimir la torre de vision degrada la precision en la lectura de importes monetarios: con vision a 8 bits la exactitud cae al 96,2% y con vision a 4 bits al 91,5%, por lo que el autor decidio no cuantizarla.
 
-El entrenamiento se realizó mediante LoRA con rank 16, scale 2.0 y dropout 0, aplicado a las 24 capas del modelo de lenguaje, con la torre de visión congelada. El dataset de fine-tuning está compuesto por documentos renderizados y capturados con cámara (facturas de servicios, avisos de impago, cartas de propiedades no reclamadas, extractos bancarios) y escenas interiores. Cada muestra se asoció con la frase que un oyente ciego necesita realmente. No se documenta el uso de RLHF ni DPO. La innovación principal es el enfoque de entrenamiento orientado a la utilidad pragmática y la inclusión de ejemplos diseñados para que el modelo reconozca cuándo una imagen es ilegible y pida ayuda en lugar de inventar contenido.
+El entrenamiento se realizo mediante fine-tuning del modelo base (probablemente con LoRA, segun las etiquetas del repositorio) sobre el conjunto de datos VizWiz VQA, que contiene preguntas formuladas por personas ciegas sobre fotografias tomadas por ellas mismas. La version v09 se reentreno especificamente para que el modelo responda primero la pregunta y despues anyada contexto, corrigiendo el comportamiento de versiones anteriores que describian la imagen completa independientemente de la pregunta. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de descripciones funcionales de imágenes: no solo identifica el contenido, sino que lo interpreta en términos de acción, riesgo o contexto (por ejemplo, "factura pendiente de 81,13 USD con fecha de vencimiento").
-- Lectura de documentos domésticos estadounidenses: facturas, avisos de impago, estados de cuenta, cartas de propiedades no reclamadas.
-- Descripción espacial de escenas interiores: indica posiciones relativas ("a tu izquierda", "justo delante de ti", "en la parte central").
-- Detección de imágenes insuficientes: puede responder que la foto es demasiado oscura o que la página está cortada, y sugerir cómo mejorar la captura.
-- Funcionamiento completamente offline en Apple Silicon mediante MLX y MLX Swift, sin conexión de red.
-- Latencia de 0,17–0,18 segundos en iPhone 14 Pro Max según la evaluación del autor.
-- No se documenta soporte de tool calling, function calling, agentes ni razonamiento multi-paso.
-- Capacidades multilingües: solo inglés.
+- Generacion de texto condicionada por imagen (image-to-text) y respuesta a preguntas visuales (VQA) en ingles.
+- Respuesta directa y priorizada: el modelo esta entrenado para empezar la respuesta con la informacion solicitada (si/no, un numero, un color, un nombre) y solo despues anyadir contexto.
+- Descripcion de escenas con orientacion espacial ("a tu izquierda", "justo delante").
+- Lectura de documentos: facturas, cartas y pantallas, incluyendo importes y fechas.
+- Deteccion de imagenes no legibles o de baja calidad, con indicacion de que no puede determinar la respuesta y sugerencia de accion correctiva (por ejemplo, "la foto esta demasiado oscura, anade luz").
+- Capacidad de indicar incertidumbre en lugar de inventar respuestas plausibles, entrenada explicitamente para el publico objetivo.
+- Ejecucion offline en dispositivo (on-device) en Apple Silicon, iOS y Android.
+- No se menciona soporte de tool calling, function calling, agentes multi-paso, vision de video, audio ni modo thinking.
 
 ## Casos de uso
 
-- Asistencia para personas ciegas en tiempo real: una app móvil captura la cámara y el modelo describe la escena en aproximadamente 0,17 segundos, indicando dónde están los objetos y qué significan. Es adecuado porque su tamaño reducido permite ejecutarlo en un teléfono sin latencia perceptible.
-- Lectura de facturas y avisos de pago: el usuario apunta a una carta y el modelo extrae importe, fecha de vencimiento, remitente y consecuencias de impago. Es útil porque está entrenado específicamente con este tipo de documentos y prioriza la exactitud sobre la descripción genérica.
-- Verificación de documentos en atención al cliente: un agente puede escanear una carta de un cliente y obtener un resumen rápido con los datos clave, reduciendo el tiempo de lectura. La precisión en hechos (importes, fechas) es la métrica principal evaluada, lo que respalda este uso.
-- Navegación básica para robots domésticos: la descripción espacial de la escena permite a un dispositivo orientarse dentro de una habitación y localizar obstáculos o elementos relevantes. La salida es una sola frase limpia, fácil de procesar.
-- Accesibilidad en aplicaciones iOS: el modelo se integra con MLX Swift, permitiendo a los desarrolladores incorporar descripción de imágenes en apps nativas de Apple sin necesidad de servidores. El peso de 596 MB facilita el empaquetado dentro de la app.
-- Auditoría doméstica para personas con baja visión: el usuario puede revisar correo, estados de cuenta y avisos del buzón sin depender de otra persona. El modelo está afinado para responder con lenguaje escuchable por un lector de pantalla, sin markdown ni circunloquios.
-- Investigación en modelos VLM pequeños cuantizados: sirve como referencia para estudiar el efecto de cuantizar solo el decoder y mantener el encoder a precisión completa; los datos de evaluación muestran que la variante 4-bit del LM obtiene mejores resultados en hechos que la versión bf16 fusionada (98,5% frente a 91,5%).
+- Asistencia a personas ciegas o con baja vision: el modelo responde en una frase corta a preguntas como "esta encendida la luz?" o "esta llena la taza?", priorizando la respuesta directa para que pueda ser leida en voz alta por el telefono. Es adecuado por su tamano reducido y su capacidad de ejecucion offline.
+- Lectura de facturas y correspondencia: el modelo identifica el tipo de documento, el remitente, el importe y las consecuencias de no pagar, como se muestra en los ejemplos de la model card ("factura de servicios de 81,13 dolares, vence el 8 de octubre de 2026").
+- Comprobacion de estado de electrodomesticos: preguntas sobre si un piloto esta encendido, si un deposito esta lleno o si un aparato esta en funcionamiento, con respuestas concretas y verificables.
+- Descripcion de entornos para navegacion: el modelo describe la posicion relativa de objetos ("una persona con pantalones morados esta tumbada a tu izquierda"), util para orientacion en interiores.
+- Deteccion de fotos defectuosas: cuando la imagen esta borrosa, oscura o recortada, el modelo lo indica y sugiere como repetir la captura, evitando respuestas erroneas.
+- Aplicaciones de accesibilidad movil integradas: al ejecutarse en MLX y estar disenado para iPhone y Android, puede integrarse en apps de camara asistiva como RealTime AI Cam, sin necesidad de conexion a internet ni de enviar imagenes a servidores externos.
+- Evaluacion de calidad de imagen en pipelines de captura: el modelo puede actuar como filtro que detecta capturas no aptas para OCR o lectura automatica antes de procesarlas con otros sistemas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K). La información disponible incluye una evaluación interna del autor, realizada en agosto de 2026 sobre el conjunto de pruebas propio. Las métricas son: Facts (correctitud de importes, fechas, remitentes y consecuencias), Short (una sola frase sin preámbulos) y Clean (sin markdown ni elementos que un lector de pantalla no pueda leer). La columna "Latencia media" corresponde al tiempo de generación.
+Los unicos datos publicados en la informacion disponible son los de la evaluacion interna sobre 295 preguntas de VizWiz cuyas imagenes se mantuvieron fuera del entrenamiento, con la metrica estandar de VizWiz (acuerdo con 10 respuestas humanas):
 
-| Variante | Facts | Short | Clean | Latencia media |
-|---|---|---|---|---|
-| Fused bf16 | 366/400 — 91,5% | 400/400 | 400/400 | 0,18 s |
-| 4-bit language model (este modelo) | 394/400 — 98,5% | 400/400 | 400/400 | 0,17 s |
-| 4-bit LM + 8-bit vision | 385/400 — 96,2% | 400/400 | 400/400 | 0,18 s |
-| Hard set (fotos oscuras, recortadas, inclinadas) | 99/120 — 82,5% | 120/120 | 120/120 | 0,18 s |
+| Metrica | v08 | v09 |
+|---|---|---|
+| Exactitud global | 46,1% | 66,4% |
+| Preguntas de si/no | 10,9% | 62,5% |
+| Preguntas numericas | 47,3% | 61,3% |
+| Otras preguntas | 50,2% | 60,7% |
+| Acierta al decir "no puedo saberlo" en fotos no respondibles | 78,0% | 92,0% |
+| Coloca la respuesta primero | 34,6% | 65,8% |
 
-Estos datos provienen de la model card del autor y no se comparan con otros modelos.
+Ademas, en la prueba de descripcion de escenas el modelo acerto 192 de 200 hechos (frente a 194 de 200 en v08). No se han publicado resultados en benchmarks estandar como MMLU, HumanEval o GSM8K en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El modelo ocupa 652 MB en disco, de los cuales 596 MB son pesos.
-- Incluye cuantización 4-bit en el modelo de lenguaje y precisión completa en la torre de visión, de modo que el tamaño en memoria es reducido.
-- VRAM estimada para inferencia: no disponible. Dado el uso de MLX, la memoria requerida es memoria unificada de Apple Silicon; se puede estimar que el modelo cabe en dispositivos con 8 GB de RAM o más, y el autor lo ha verificado en un iPhone 14 Pro Max.
-- GPU recomendadas: Apple Silicon (M1, M2, M3, M4) a través de MLX. No soporta NVIDIA CUDA de forma nativa.
-- Sí cabe en equipos de consumo: cualquier Mac con Apple Silicon y en los iPhone con chip de la serie A16 o superior (según la verificación del autor, aunque no se especifica el mínimo exacto).
-- Opciones de despliegue: MLX (Python con `mlx_vlm`), MLX Swift para iOS, o el motor vMLX para Mac, que añade caché de prefijos en SSD, caché KV paginada y batching continuo para reducir la latencia en conversaciones.
-- Latencia y throughput: 0,17–0,18 segundos por inferencia en iPhone 14 Pro Max, según la evaluación del autor.
+- VRAM estimada: el repositorio ocupa 1,3 GB y el modelo en 4 bits pesa aproximadamente 620 MB, por lo que la inferencia cabe en menos de 1 GB de memoria, aunque el runtime MLX y el procesador de vision anaden overhead.
+- GPU recomendadas: Apple Silicon (M1, M2, M3, M4) mediante MLX; el autor lo probo en un iPhone 14 Pro Max. No se mencionan GPU NVIDIA ni CUDA.
+- Cabe en GPU de consumo: si, en cualquier Mac con Apple Silicon y en telefonos de gama alta; no se dispone de datos para GPU NVIDIA de consumo.
+- Opciones de despliegue: libreria MLX (mlx-vlm) para Apple Silicon; integracion en apps iOS y Android mediante el proyecto RealTimeAICam. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No hay datos públicos de modelos comparables en la información disponible. La siguiente tabla compara las tres variantes del propio modelo presentadas en la model card, donde la variante 4-bit LM es la publicada.
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Enfoque |
+|---|---|---|---|---|---|
+| Vision Narrator 0.8B (4-bit MLX) | 0,85B | No disponible | Ingles | Apache 2.0 | VQA accesible on-device, VizWiz |
+| Qwen3.5-0.8B (base) | 0,8B | No disponible | Multilingue (segun modelo base) | Apache 2.0 | Modelo de lenguaje base, sin vision |
+| Modelos VLM genericos de ~1B | No disponible | No disponible | Variable | Variable | Descripcion de imagenes generica |
 
-| Variante | Pesos | Facts | Latencia media |
-|---|---|---|---|
-| Fused bf16 | 852M en bf16 | 91,5% | 0,18 s |
-| 4-bit language model (modelo publicado) | 4-bit LM, visión fp | 98,5% | 0,17 s |
-| 4-bit LM + 8-bit vision | 4-bit LM, visión 8-bit | 96,2% | 0,18 s |
-
-No existen comparativas externas con otros modelos de la misma categoría en la documentación proporcionada.
+No se dispone de datos de benchmarks comparativos con otros modelos VLM de tamano similar en la informacion proporcionada. La comparativa se limita a la relacion con su modelo base y a la categoria funcional.
 
 ## Limitaciones y advertencias
 
-- Solo soporta inglés; la model card indica que está afinado para documentos domésticos de EE. UU. y escenas interiores.
-- El autor advierte que documentos como menús de restaurantes o facturas extranjeras quedan fuera del dominio entrenado y no se garantiza un resultado correcto.
-- Riesgo de alucinación: el modelo puede confundir el nombre del remitente en páginas con poca iluminación o peor calidad de imagen.
-- No debe utilizarse como única fuente de verdad en asuntos financieros, médicos ni legales. Es una primera lectura rápida, no un sustituto de una revisión humana.
-- Es un modelo de 0.8B, con las limitaciones de capacidad inherentes a su tamaño; la exactitud en hechos es del 98,5% en el conjunto fácil, pero baja al 82,5% en el conjunto difícil.
-- No se documenta soporte para tool calling, function calling ni razonamiento multi-paso; para tareas que requieran estas capacidades no es adecuado.
-- La cuantización 4-bit solo afecta al modelo de lenguaje; la torre de visión se mantiene a precisión completa para evitar errores en la lectura de cifras, pero esto aumenta ligeramente el peso total.
+- Solo soporta ingles; no se ha entrenado ni evaluado en castellano ni en otros idiomas.
+- La exactitud global en VizWiz es del 66,4%, lo que implica que aproximadamente un tercio de las respuestas no coinciden con el consenso humano; no es adecuado como unica fuente para decisiones criticas.
+- Debilidad conocida en indicadores de direccion de ascensores: el modelo suele responder que no puede determinarlo; el autor recomienda preguntar por la flecha iluminada en su lugar.
+- Riesgo de alucinacion en imagenes de baja calidad, aunque el modelo esta entrenado para indicar incertidumbre; aun asi, puede generar descripciones plausibles pero incorrectas.
+- La cuantizacion de la torre de vision degrada la precision en la lectura de importes (96,2% con 8 bits, 91,5% con 4 bits), por lo que el autor mantiene esa torre en precision completa.
+- Licencia Apache 2.0: permite uso comercial y modificacion, pero se recomienda revisar las condiciones del modelo base Qwen3.5-0.8B y de los datos de VizWiz.
+- No se dispone de informacion sobre sesgos demograficos, geograficos o culturales del modelo.
+- El modelo esta disenado para ejecucion on-device en Apple Silicon; su despliegue en otros entornos no esta documentado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/divinetribe/Vision-Narrator-0.8B-4bit-mlx
-- Repositorio de la app RealTimeAICam: https://github.com/nicedreamzapp/RealTimeAICam
-- Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Proyecto MLX de Apple: https://github.com/ml-explore/mlx
-- Motor de inferencia vMLX: https://vmlx.net/
-- Perfil del autor en Hugging Face: https://huggingface.co/divinetribe
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
+- Repositorio del proyecto RealTimeAICam: https://github.com/nicedreamzapp/RealTimeAICam
+- Perfil del autor en GitHub: https://github.com/nicedreamzapp
+- App Store (iPhone): https://apps.apple.com/us/app/realtime-ai-cam/id6751230739
+- Google Play (Android): https://play.google.com/store/apps/details?id=com.mattmacosko.realtimeaicam
+- Dataset VizWiz VQA: https://vizwiz.org/tasks-and-datasets/vqa/
+- Paper VizWiz (arXiv:1802.08218): https://arxiv.org/abs/1802.08218
+- Paper VizWiz (arXiv:2002.08565): https://arxiv.org/abs/2002.08565

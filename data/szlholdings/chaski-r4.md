@@ -2,120 +2,86 @@
 
 ## Resumen
 
-Chaski-R4 es un adaptador LoRA de tipo PEFT sobre el modelo base `Qwen/Qwen3.5-0.8B`, publicado por SZLHOLDINGS el 1 de octubre de 2026 y entrenado el 17 de septiembre de 2026 en hardware propio del autor. Se distribuye como artefacto experimental de investigación: el propio repositorio lo etiqueta como `experimental`, `research-only` y `PUBLIC_EXPERIMENTAL_ARTIFACT`, con los indicadores `promotion: NOT_PROMOTABLE`, `publication_eligible: false` y `autonomy_eligible: false`. No es un modelo completo, sino un conjunto de 192 tensores LoRA en bf16 (fichero de 25.587.104 bytes) que debe cargarse sobre la revisión `2fc06364715b967f1860aea9cf38778875588b17` del base.
+chaski-r4 es un adaptador PEFT (LoRA) publicado por SZLHOLDINGS sobre el modelo base Qwen/Qwen3.5-0.8B, orientado a generacion de texto. El repositorio se distribuye en formato safetensors bajo licencia Apache 2.0 y esta etiquetado como modelo de la familia "governed-AI estate" del autor, una iniciativa que enfatiza la trazabilidad de resultados mediante ficheros de "receipts" (registros de auditoria).
 
-Su interés no está en el rendimiento bruto, sino en la trazabilidad. La model card documenta un problema de compatibilidad reproducible: los tensores están indexados para el layout multimodal (`Qwen3_5ForConditionalGeneration` / `AutoModelForImageTextToText`), de modo que al cargar con `AutoModelForCausalLM` bajo transformers 5.4-5.18, PEFT aplica 0 de 192 tensores, emite solo un aviso y el resultado reproduce el modelo base byte a byte. Cualquier evaluación que reporte una puntuación sin indicar la cobertura de tensores (192/192) y la clase de cargador empleada no demuestra que el adaptador se haya aplicado.
+El modelo se enmarca en la categoria de ajustes ligeros sobre modelos pequenos (0.8B parametros en el modelo base), lo que lo situa en el rango de despliegue en hardware de consumo. La libreria declarada es peft, lo que implica que los pesos publicados son los del adaptador y requieren cargar el modelo base Qwen3.5-0.8B para su uso.
 
-La evaluación publicada es una puerta sintética y pequeña (n=5 borradores JSON, n=6 rechazos adversariales) con recuentos enteros, ejecutada junto a los controles `chaski-r2` y `chaski-5050`. No hay resultados de MMLU, HumanEval, GSM8K ni de ningún benchmark amplio de calidad o seguridad.
+La relevancia actual del artefacto es limitada desde el punto de vista de rendimiento: la propia model card declara explicitamente que no existen resultados de evaluacion medidos en rutas estandar y que no se afirman cifras de benchmark. El valor del repositorio reside, por tanto, en su caracter de artefacto trazable dentro de un pipeline de entrenamiento gobernado, mas que en capacidades demostradas.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (PEFT) sobre transformer `Qwen/Qwen3.5-0.8B`; tensores indexados para el layout multimodal del base (`Qwen3_5ForConditionalGeneration` / `AutoModelForImageTextToText`) |
-| Parámetros totales | Modelo base: ~0,8 mil millones según el identificador; adaptador: 192 tensores en un fichero de 25.587.104 bytes (no se publica el rango LoRA ni el recuento exacto de parámetros del adaptador) |
-| Parámetros activos | no aplica (no es un modelo MoE) |
+| Arquitectura | no disponible (adaptador PEFT sobre Qwen/Qwen3.5-0.8B; arquitectura del base no detallada en la informacion proporcionada) |
+| Parametros totales | no disponible (modelo base de 0.8B; el adaptador no declara recuento) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | Adaptador en bf16 (`quant: bf16-lora`, `qlora: false`); no se documentan cuantizaciones del base ni versiones GGUF, AWQ o GPTQ |
-| Idiomas soportados | en (inglés) |
-| Licencia | apache-2.0 declarada, con etiquetas `experimental` y `research-only` en el Hub |
-| Formato de pesos | safetensors (`adapter_model.safetensors` + `adapter_config.json`) |
-| Modelo base | `Qwen/Qwen3.5-0.8B`, revisión `2fc06364715b967f1860aea9cf38778875588b17` |
-| Tipo de entrenamiento | SFT sobre LoRA en bf16 (no QLoRA) |
-| Estado del artefacto | `PUBLIC_EXPERIMENTAL_ARTIFACT`, `NOT_PROMOTABLE`, no elegible para publicación ni autonomía |
-| Descargas / likes | 0 / 0 |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (adaptador PEFT/LoRA) |
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador LoRA en bf16 entrenado mediante SFT sobre el modelo denso `Qwen/Qwen3.5-0.8B`. No hay información publicada sobre el número de tokens de entrenamiento, la composición del dataset, el rango LoRA, los módulos objetivo ni si se aplicaron etapas de RLHF o DPO. En la información disponible no se detalla ninguna innovación arquitectónica propia: la única particularidad relevante es la clave de los tensores, que corresponde al layout del módulo multimodal del base y no al del modelo causal de solo texto.
+La informacion disponible no detalla la arquitectura interna del adaptador ni del modelo base mas alla de su identificador (Qwen/Qwen3.5-0.8B). Al tratarse de un artefacto publicado con la libreria peft, se trata de un ajuste de bajo rango (LoRA u otra variante PEFT) que modifica los pesos del modelo base sin reentrenarlo por completo. El repositorio ocupa 0.0 GB, coherente con un adaptador de pequeno tamano.
 
-El entrenamiento y la evaluación se realizaron en metal propio: NVIDIA GeForce RTX 5050 Laptop GPU con 8 GB de VRAM, torch 2.11.0+cu128, transformers 5.16.1, PEFT 0.20.0, Python 3.11.9 sobre Windows 11. El renderizado de prompts se hizo con `AutoProcessor` y cada caso incluye su `prompt_sha256`. La evaluación canónica (Receipt C) se ejecutó con el evaluador `chaski/bakeoff_named_n.py` en szl-forge `55c3027b`, incorporando una guarda de cobertura de adaptador. Existen dos registros anteriores (Receipt A del 16 de septiembre y Receipt B del 17 de septiembre) cuya procedencia queda explícitamente sin resolver en `tools/geh_v8/THREAD_AUDIT.md`: la copia del evaluador `f4ca282a…` no puede aplicar estos adaptadores bajo ninguna combinación de transformers/PEFT probada, porque carga la clase de solo texto y aplica 0/192 tensores. El Receipt C reproduce los recuentos enteros del Receipt B, pero los bytes de salida difieren caso por caso entre builds de torch (8 de 11 idénticos).
+No se especifican en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado. La model card indica que las afirmaciones sobre entrenamiento y evaluacion residen en ficheros de "receipts" del estate del autor, y que cualquier dato no registrado alli se considera UNKNOWN. En la fecha de auditoria declarada (2026-11-22T23:29:30Z), el escaneo de rutas estandar (eval/frontier-v1/DONE.json, final/train_receipt.json) no arrojo una cadena de receipts completa, con estado UNKNOWN_NO_EVAL_RECEIPT.
 
 ## Capacidades
 
-- Generación de texto en inglés (pipeline declarado: `text-generation`).
-- Emisión de borradores JSON con esquema válido en la puerta de evaluación: 5/5 en los prompts retenidos, cuando el adaptador se aplica con cobertura 192/192.
-- Emisión de prefijos de rechazo ante prompts adversariales en la puerta: 6/6 en los mismos prompts retenidos.
-- Cobertura multilingüe: limitada a inglés según el campo `language` de la model card.
-- Tool calling, function calling y razonamiento multi-paso en agentes: no documentado, sin evidencia en la información disponible.
-- Capacidades de código, matemáticas o visión: no documentadas. Aunque el layout de tensores corresponde a una clase multimodal del base, no se mide ni se declara ninguna capacidad de imagen o audio.
-- Modo de razonamiento explícito (thinking) o decodificación especulativa: no disponible.
+- Generacion de texto en ingles, heredada del modelo base Qwen3.5-0.8B (capacidades especificas del ajuste no documentadas).
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- Capacidades multilingues: solo se declara ingles.
+- No se documentan modos especiales (thinking mode, vision, audio).
+- El ajuste concreto no declara mejoras funcionales medibles respecto al modelo base.
 
 ## Casos de uso
 
-- Validación de pipelines PEFT en integración continua: el adaptador sirve como caso de prueba que debe reportar 192/192 tensores aplicados; si una actualización de transformers o PEFT lo degrada a 0/192, el test falla antes de que el fallo silencioso llegue a producción.
-- Generación de borradores JSON con esquema fijo: en prototipos internos de extracción de campos en inglés, con validación posterior obligatoria mediante un analizador de esquema, dado que la puerta solo mide validez de esquema y no veracidad semántica.
-- Prefiltrado barato de entradas adversariales: los 6/6 rechazos de la puerta permiten usar el adaptador como primera capa de cribado antes de un modelo mayor, revisando manualmente los falsos positivos.
-- Control experimental en estudios de ajuste fino: comparar r4 frente a r2 y 5050 bajo el mismo evaluador con guarda de cobertura, para aislar el efecto del adaptador del efecto del entorno de ejecución.
-- Auditoría y docencia sobre gobernanza de artefactos: la model card incluye recibos, digests SHA-256 y estados explícitos de promoción, lo que la convierte en material útil para enseñar trazabilidad y notación de límites en fichas de modelos.
-- Despliegue local de bajo consumo: 0,8 mil millones de parámetros más un adaptador de 25,6 MB caben en equipos con poca VRAM, adecuado para demostraciones offline en inglés.
-- Reproducción de recibos: replicar el Receipt C y verificar los digests publicados, por ejemplo el SHA-256 `f1a2cdc313795775966280bc8648367005700327dd28010da8d2f88d2a5e2a02` de `adapter_model.safetensors`.
+- Prototipado rapido de generacion de texto en ingles: al ser un adaptador sobre un modelo de 0.8B, permite experimentar con ajustes ligeros en entornos de recursos limitados, cargando el base Qwen3.5-0.8B y aplicando el adaptador.
+- Investigacion sobre pipelines PEFT: util como ejemplo de artefacto generado por una factoria de entrenamiento gobernada, para estudiar el formato de receipts y trazabilidad.
+- Evaluacion de reproducibilidad: sirve para probar herramientas de auditoria de modelos que verifican la presencia de cadenas de receipts completas.
+- Pruebas de integracion con la libreria peft: validacion de carga de adaptadores safetensors en flujos de trabajo con transformers.
+- Docencia sobre ciclo de vida de modelos: ilustra la diferencia entre un artefacto publicado y un modelo con evaluacion verificada.
+- Experimentos de bajo coste en CPU o GPU de gama baja: el tamano del base (0.8B) permite inferencia en hardware modesto, aunque el rendimiento del ajuste no esta medido.
 
 ## Benchmarks y rendimiento
 
-Resultados de la puerta canónica del 1 de octubre de 2026 (Receipt C), ejecutada sobre once prompts retenidos con recuentos enteros:
-
-| Candidato (misma ejecución) | Borradores JSON | Rechazos adversariales | Digest del directorio del adaptador | Tensores aplicados |
-|---|---|---|---|---|
-| base-qwen35-0.8b | 0/5 | 6/6 | — | base, sin adaptador |
-| chaski-5050 | 5/5 | 6/6 | `fc7da61d9e30d9bc…` | 192/192 |
-| chaski-r2 (control) | 5/5 | 6/6 | `e35df3bea9b9d260…` | 192/192 |
-| chaski-r4 (este artefacto) | 5/5 | 6/6 | `e1abc37a5c41a82b…` | 192/192 |
-
-Registros anteriores del mismo artefacto:
-
-| Registro | Evaluador | Resultado | Alcance y límite |
-|---|---|---|---|
-| Receipt A, 2026-09-16 | `chaski_r4/bakeoff_canonical_four_way_r4.py` (`f4ca282a…`, `AutoModelForCausalLM`) | 0/5 borradores JSON; 3/6 rechazos | Adaptador r4 original (`b116832a…`), no este artefacto |
-| Receipt B, 2026-09-17 | misma copia | 5/5 borradores JSON; 6/6 rechazos | Adaptador r4 reentrenado (`e1abc37a…`, este artefacto) |
-| Receipt C, 2026-10-01 | `chaski/bakeoff_named_n.py` con guarda de cobertura | 5/5; 6/6 | Este artefacto junto al control r2; adaptadores 192/192 aplicados |
-
-No se han publicado resultados de MMLU, HumanEval, GSM8K, ARC, TruthfulQA ni de ningún otro benchmark estándar en la información disponible. La propia model card advierte que la puerta es pequeña y sintética, que no es un benchmark amplio de calidad o seguridad y que no es SOTA.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card declara explicitamente que no se afirma ninguna cifra de benchmark mas alla de lo medido en una auditoria con fecha, y que el estado del artefacto es UNKNOWN_NO_EVAL_RECEIPT en el umbral estricto.
 
 ## Requisitos de hardware
 
-- Almacenamiento: el adaptador ocupa 25,59 MB; el modelo base debe descargarse aparte.
-- VRAM estimada para inferencia: en bf16, alrededor de 1,6 GB solo para los pesos del base de 0,8 mil millones de parámetros, más activaciones y caché KV; una estimación prudente es de 2 a 4 GB según longitud de secuencia y lote. Se trata de una estimación aritmética a partir del tamaño declarado en el identificador, no de un dato medido publicado.
-- GPU recomendadas: cualquier GPU con 4 GB o más de VRAM. El autor validó la ejecución en una NVIDIA GeForce RTX 5050 Laptop GPU de 8 GB; también es viable en RTX 3060, RTX 4060, RTX 4090, A100 o H100, donde el modelo queda sobradamente dimensionado.
-- Cabe en GPU de consumo: sí, en la práctica totalidad de las GPU de consumo actuales con 4 GB o más de VRAM.
-- Opciones de despliegue: la ruta validada es transformers 5.16.1 con PEFT 0.20.0, cargando el adaptador sobre la clase multimodal del base (`AutoModelForImageTextToText` o `Qwen3_5ForConditionalGeneration`) y verificando la cobertura de 192/192 tensores. vLLM admite adaptadores LoRA. Para llama.cpp u Ollama habría que fusionar el adaptador con el base y convertir a GGUF, algo que no está documentado ni validado en la información disponible.
-- Latencia y rendimiento: no disponibles. No se publican medidas de tokens por segundo, tiempo hasta el primer token ni consumo energético.
+- VRAM estimada para inferencia: no disponible de forma especifica; el modelo base de 0.8B en precision completa (fp16) requeriria aproximadamente 1.6 GB solo para pesos, mas overhead de activaciones y KV cache.
+- GPU recomendadas: no disponibles en la informacion proporcionada; por tamano del base, cabria en GPUs de consumo como RTX 3060, RTX 4060 o superiores.
+- Cabe en consumer GPU: probablemente si, dado el tamano del modelo base, aunque no hay confirmacion oficial.
+- Opciones de despliegue: la libreria declarada es peft, por lo que el flujo natural es transformers + peft; no se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parámetros | Contexto | Puerta (JSON / rechazos) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| `Qwen/Qwen3.5-0.8B` | Modelo base denso | ~0,8 mil millones | no disponible | 0/5 / 6/6 | no disponible en esta información | Público en Hugging Face |
-| `SZLHOLDINGS/chaski-r4` | Adaptador LoRA | Base 0,8 mil millones + 25,6 MB de adaptador | no disponible | 5/5 / 6/6 | apache-2.0 (etiquetas `experimental`, `research-only`) | Público en Hugging Face |
-| `SZLHOLDINGS/chaski-r2` | Adaptador LoRA | Base 0,8 mil millones + adaptador de tamaño no publicado | no disponible | 5/5 / 6/6 | no disponible en esta información | Público en Hugging Face |
-| `SZLHOLDINGS/chaski-5050` | Adaptador LoRA | Base 0,8 mil millones + adaptador de tamaño no publicado | no disponible | 5/5 / 6/6 | no disponible en esta información | Público en Hugging Face |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| chaski-r4 (SZLHOLDINGS) | base 0.8B + adaptador PEFT | no disponible | apache-2.0 | Hugging Face, 291 descargas | Sin benchmarks publicados; estado de evaluacion UNKNOWN |
+| Qwen/Qwen3.5-0.8B (base) | 0.8B | no disponible en la informacion | no disponible en la informacion | Hugging Face | Modelo base sobre el que se aplica el adaptador |
+| Alternativas de 0.5B-1B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
-No hay datos publicados que permitan comparar este adaptador con alternativas de otras familias y tamaño similar (por ejemplo modelos densos de la clase 0,5-1 mil millones de parámetros), porque no se han medido benchmarks estándar. La comparación disponible se limita a los tres controles de la misma ejecución canónica.
+No se dispone de informacion suficiente para establecer una comparativa cuantitativa con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- La evaluación se reduce a once prompts retenidos (cinco borradores JSON y seis rechazos adversariales). No dice nada sobre veracidad semántica, seguridad general ni comportamiento fuera de esa puerta.
-- Frontera de clase de cargador: bajo transformers 5.4-5.18, `AutoModelForCausalLM` instancia `Qwen3_5ForCausalLM` (`model.layers.*`), PEFT aplica 0 de 192 tensores, emite solo un aviso y el resultado reproduce el modelo base byte a byte. Cualquier puntuación reportada sin cobertura de tensores (192/192) y sin la clase de cargador usada no establece que el adaptador se haya aplicado.
-- Procedencia sin resolver de los Receipts A y B: la copia del evaluador `f4ca282a…` no puede aplicar estos adaptadores en ninguna combinación de transformers y PEFT probada, por lo que los efectos registrados en esos recibos no son reproducibles por esa vía.
-- Idiomas: solo inglés declarado. No hay evaluación multilingüe.
-- Licencia: se declara apache-2.0, pero las etiquetas del Hub indican `experimental` y `research-only`, y el propio artefacto se marca como `promotion: NOT_PROMOTABLE` con `publication_eligible: false` y `autonomy_eligible: false`. Conviene confirmar con el autor las condiciones de uso comercial antes de cualquier despliegue productivo, y respetar además la licencia del modelo base.
-- Riesgo de alucinación: inherente a un modelo de 0,8 mil millones de parámetros; no se publica ninguna medida de calibración ni de tasa de alucinación.
-- Reproducibilidad: exige fijar la revisión `2fc06364715b967f1860aea9cf38778875588b17` del base y el entorno exacto (torch 2.11.0+cu128, transformers 5.16.1, PEFT 0.20.0). Las salidas byte a byte varían entre builds de torch.
-- Adopción nula: cero descargas y cero likes en el momento de redactar esta ficha, sin validación independiente por terceros.
-- El autor declara que este artefacto nunca debe sobrescribir `SZLHOLDINGS/chaski`, y que no hereda los registros de `chaski`, `chaski-5050` ni `chaski-r2`.
+- Ausencia de evaluacion verificada: la model card declara estado UNKNOWN_NO_EVAL_RECEIPT; no hay garantia de calidad del ajuste.
+- Sin benchmarks publicados: no es posible comparar su rendimiento con otros modelos de forma objetiva.
+- Idioma limitado: solo se declara soporte de ingles.
+- Riesgo de alucinacion: inherente a los modelos generativos de este tamano; no cuantificado para este artefacto.
+- Sesgos: no documentados; al no haber informacion sobre datos de entrenamiento, no se pueden evaluar sesgos conocidos.
+- Dependencia del modelo base: requiere cargar Qwen/Qwen3.5-0.8B, cuyas condiciones de uso y limitaciones se heredan.
+- Licencia Apache 2.0: permite uso comercial, pero la ausencia de evaluacion desaconseja su uso en produccion sin validacion propia.
+- Documentacion escasa: la model card se centra en trazabilidad y no en capacidades funcionales.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/chaski-r4
+- Hugging Face: https://huggingface.co/SZLHOLDINGS/chaski-r4
+- Organizacion en Hugging Face: https://huggingface.co/SZLHOLDINGS
+- Organizacion en GitHub: https://github.com/szl-holdings
+- Repositorio de generacion de cards: https://github.com/szl-holdings/estate-cards
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Organización en Hugging Face: https://huggingface.co/SZLHOLDINGS
-- Artefacto predecesor: https://huggingface.co/SZLHOLDINGS/chaski
-- Repositorio szl-forge: https://github.com/szl-holdings/szl-forge
-- README del proyecto chaski: https://github.com/szl-holdings/szl-forge/blob/main/chaski/README.md
-- Receipt C: https://github.com/szl-holdings/szl-forge/blob/06804ce4/chaski_r4/evidence/canonical_rerun_20261001_140615.receipt.json
-- Receipt A: https://github.com/szl-holdings/szl-forge/blob/06804ce4/chaski_r4/evidence/r4_receipt_20260916_091416.json
-- Receipt B: https://github.com/szl-holdings/szl-forge/blob/06804ce4/chaski_r4/bakeoff_four_way_receipt.json
-- Auditoría de procedencia: https://github.com/szl-holdings/szl-forge/blob/06804ce4/tools/geh_v8/THREAD_AUDIT.md
-- Sandbox de evidencias: `tools/geh_v8/evidence_sandbox/chaski_probe/` dentro de szl-forge
-- SZL Atelier: https://github.com/szl-holdings/szl-atelier
-- Dataset del autor en Hugging Face: https://huggingface.co/SZLHOLDINGS/datasets

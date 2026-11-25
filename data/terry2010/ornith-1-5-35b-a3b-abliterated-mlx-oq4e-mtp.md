@@ -2,107 +2,101 @@
 
 ## Resumen
 
-Ornith-1.5-35B-A3B es un modelo de lenguaje y vision de tipo Mixture-of-Experts (MoE) desarrollado por ornith-ai, con aproximadamente 35.000 millones de parametros totales y unos 3.000 millones de parametros activos por token. La arquitectura combina capas hibridas GatedDeltaNet con atencion clasica y 256 expertos enrutados (8 activos por token), lo que permite un coste de inferencia cercano a un modelo de 3B pese a la capacidad de uno de 35B. Esta ficha documenta una build concreta publicada por terry2010: una cuantizacion MLX de precision mixta (oQ4e, ~4,9 bits por peso, ~20 GB) del checkpoint abliterated de huihui-ai, con una cabeza MTP (Multi-Token Prediction) de decodificacion especulativa injertada y la torre de vision preservada.
+Ornith-1.5-35B-A3B-abliterated-MLX-oQ4e-mtp es una cuantización mixta de precisión (esquema oQ4e, ~4,9 bits por peso) del checkpoint abliterado de Huihui-ai, que a su vez deriva del modelo vision-language Ornith-1.5-35B-A3B de ornith-ai. Se trata de un Mixture-of-Experts híbrido (GatedDeltaNet + atención) con 256 expertos enrutados, 8 activos por token y unos 3B de parámetros activos sobre un total de 35.952.349.040 parámetros. El autor, terry2010, publica esta versión orientada a Apple Silicon, ejecutable con `mlx-vlm`, con la torre de visión preservada y una cabeza MTP (multi-token prediction) injertada para decodificación especulativa.
 
-El modelo resuelve el problema de desplegar un VLM MoE de gran capacidad en hardware Apple Silicon sin renunciar a la modalidad visual. Frente a los pesos en bf16 (~70 GB), esta build ocupa unos 20 GB y decodifica a 67 tok/s en un M4 Pro de 64 GB, cifra que sube a 76-81 tok/s con la cabeza MTP activada (aceptacion de borrador del ~66%). Es relevante ahora porque demuestra que la decodificacion especulativa con cabeza injertada funciona sobre pesos cuantizados y ablacionados, siempre que la cabeza donante proceda de una distribucion de entrenamiento compatible.
+El modelo resuelve el problema de ejecutar un VLM MoE de ~36B en hardware de consumo Apple con un peso de ~20 GB en safetensors, manteniendo visión y capacidades conversacionales. La innovación principal es la combinación de cuantización oQ4e calibrada con imatrix y una cabeza MTP de 4 bits extraída de KaedeTai/Ornith-1.5-35B-A3B-BigBang-MTP-mlx-4bit, que aporta una aceleración medida de decodificación del 14-20% en un M4 Pro de 64 GB.
 
-La build hereda la ablacion de rechazos del checkpoint upstream (capas 11-29), que el propio autor de la ablacion describe como una prueba de concepto tosca. Se trata, por tanto, de un artefacto de investigacion sin censura, con licencia MIT, pensado para experimentacion local y no para exposicion publica sin una capa de moderacion propia.
+Es relevante ahora porque demuestra que el injerto de cabezas especulativas en checkpoints cuantizados y abliterados es viable, pero también frágil: la primera cabeza probada (bf16 de shisa-ai, destilada contra el tronco original) resultó un 8% más lenta, mientras que la cabeza BigBang, entrenada sobre un derivado ajustado de Ornith, alcanza una aceptación de borrador del ~66%. Es un artefacto de investigación sin censura, con la advertencia explícita de no exponerlo como endpoint público sin moderación propia.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido GatedDeltaNet + atencion, Mixture-of-Experts (256 expertos enrutados, 8 activos), con torre de vision |
-| Parametros totales | ~35.000 millones (35B) |
-| Parametros activos | ~3.000 millones (3B) por token |
-| Longitud de contexto | 256K tokens (segun la receta de despliegue del modelo base en vLLM) |
-| Tipos de cuantizacion | oQ4e de oMLX (precision mixta calibrada con imatrix, ~4,9 bpw, tensores no cuantizados en bf16); cabeza MTP en 4 bits; existen variantes MLX de 6 bits del modelo base |
-| Idiomas soportados | no disponible |
+| Arquitectura | Híbrida GatedDeltaNet + atención, Mixture-of-Experts (256 expertos enrutados, 8 activos), vision-language |
+| Parámetros totales | 35.952.349.040 (~36B) |
+| Parámetros activos | ~3B |
+| Longitud de contexto | No disponible (validado needle 3/3 a ~8.6k tokens) |
+| Tipos de cuantización | oQ4e mixta (~4,9 bpw), tensores no cuantizados en bf16; cabeza MTP en 4 bits |
+| Idiomas soportados | No disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors (MLX), 5 shards `model-0000{1..5}-of-00005.safetensors` (~20 GB) + `model-mtp.safetensors` (0,49 GB) |
+| Formato de pesos | safetensors (MLX), 5 shards `model-0000{1..5}-of-00005.safetensors` + `model-mtp.safetensors` |
 
 ## Arquitectura y entrenamiento
 
-El tronco es un MoE hibrido: capas GatedDeltaNet (atencion lineal con estado recurrente) intercaladas con atencion clasica, y una capa de enrutamiento que selecciona 8 de 256 expertos por token. Esta combinacion reduce el coste de atencion en contextos largos (hasta 256K) manteniendo la calidad de un modelo denso de mayor tamano. El checkpoint incluye una torre de vision integrada en el propio safetensors, por lo que no requiere un fichero proyector separado y debe cargarse con `mlx-vlm` (usar `mlx-lm` eliminaria la torre).
+La arquitectura es un transformer MoE híbrido que combina capas GatedDeltaNet con capas de atención, sobre un total de 256 expertos enrutados de los que 8 se activan por token, resultando en ~3B de parámetros activos. Incluye una torre de visión integrada en el checkpoint (pipeline `image-text-to-text`), de modo que no requiere un fichero proyector separado. El linaje del checkpoint es: `ornith-ai/Ornith-1.5-35B-A3B` (MIT) → abliteración de rechazo por huihui-ai sobre las capas 11-29 (descrita por el upstream como una abliteración "cruda, proof-of-concept") → cuantización oQ4e de oMLX con calibración imatrix (~4,9 bpw, tensores no cuantizados en bf16) → injerto de cabeza MTP de 4 bits (44 tensores `language_model.mtp.*`, 0,49 GB) extraída de KaedeTai/Ornith-1.5-35B-A3B-BigBang-MTP-mlx-4bit, cuyo origen es EryriLabs/Ornith-1.5-35B-A3B-BigBang-MTP, un derivado con injerto Qwen3.6.
 
-Sobre el entrenamiento original no se dispone de datos en la informacion proporcionada (numero de tokens, composicion del dataset, uso de RLHF/DPO): no disponible. Lo que si esta documentado es la cadena de derivacion de esta build: (1) base `ornith-ai/Ornith-1.5-35B-A3B` (MIT); (2) ablacion de rechazos en `huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated`, aplicada sobre las capas 11-29; (3) cuantizacion oQ4e de oMLX con calibracion imatrix; (4) injerto de una cabeza MTP de 4 bits (44 tensores `language_model.mtp.*`, `mtp_num_hidden_layers: 1`) extraida de `KaedeTai/Ornith-1.5-35B-A3B-BigBang-MTP-mlx-4bit`, cuyo origen es un derivado con injerto de Qwen3.6 de EryriLabs. La innovacion tecnica destacable es ese injerto: una cabeza de decodificacion especulativa que acelera la generacion un 14-20% con una aceptacion de borrador del 62,6-69,9%.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en la información proporcionada. La innovación técnica destacable es la decodificación especulativa mediante la cabeza MTP injertada: con `mtp_num_hidden_layers: 1` declarado, alcanza una aceptación de borrador del 62,6-69,9% y una aceleración de decodificación del +14% (ensayo) y +20% (código) frente a MTP desactivado en un M4 Pro. El autor documenta que la elección de donante de la cabeza es determinante: una cabeza bf16 destilada contra el tronco original resultó un 8% más lenta (70,5 vs 76,6 tok/s) por desajuste de distribución.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno con plantilla de chat verificada y toggle `enable_thinking` funcional en ambos sentidos.
-- Razonamiento explicito en modo thinking: el modelo emite una traza `<think>` por defecto; en la comprobacion del autor, desactivarlo produjo una respuesta incorrecta en una comparacion numerica limite que la traza resolvia bien.
-- Comprension de imagen (image-text-to-text): analisis de imagenes con modos de fallo coherentes con el modelo base sobre la misma entrada.
-- Contexto largo: recuperacion de aguja (needle) 3/3 a ~8,6k tokens en profundidades del 15%, 50% y 85%.
-- Generacion de codigo: el benchmark de velocidad del autor usa generacion de codigo de 600 tokens como caso de prueba.
-- Sin censura de rechazos: responde a peticiones que un modelo stock declina (ver limitaciones).
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible.
-- Capacidades de audio: no disponible.
+- Generación de texto y razonamiento conversacional multi-turno.
+- Modo thinking: emite una traza `<think>` por defecto, desactivable con `enable_thinking=false`; el autor advierte que desactivarlo produjo una respuesta incorrecta en una comparación numérica de caso límite.
+- Comprensión de imagen (image-text-to-text): análisis de imágenes con la torre de visión incluida en el checkpoint.
+- Decodificación especulativa con MTP (Lightning MTP) para acelerar la generación.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Comportamiento sin rechazo (abliterated): responde a solicitudes que un modelo estándar declina.
 
 ## Casos de uso
 
-- Analisis de documentos con imagenes en local: cargar el checkpoint con `mlx-vlm`, pasar `--image` y obtener descripcion o extraccion de datos de capturas, diagramas o formularios sin salir del Mac, gracias a la torre de vision integrada y a los ~20 GB de huella.
-- Asistente de codigo en estacion Apple Silicon: con la cabeza MTP activada el modelo genera codigo a 81 tok/s en un M4 Pro, suficiente para autocompletado interactivo y explicacion de fragmentos en el IDE mediante un servidor compatible con OpenAI (oMLX, LM Studio).
-- Procesamiento de repositorios o contratos largos: la ventana de 256K tokens permite ingerir lotes de documentos completos en una sola pasada para resumen, busqueda semantica interna o preguntas y respuestas sobre el conjunto.
-- Prototipado de pipelines de razonamiento: el modo thinking permite generar cadenas de razonamiento para tareas de matematicas o logica donde la latencia no es critica, y desactivarlo cuando prima el throughput.
-- Investigacion sobre alineacion y ablacion: el modelo sirve como sujeto de estudio para medir cuanto degrada la capacidad una ablacion superficial (capas 11-29) frente a builds estilo Heretic, con la pantalla de rechazos documentada (100 prompts danables + 100 benignos).
-- Servidor de inferencia privado para pruebas de red teaming: desplegado tras una capa de moderacion propia, permite evaluar respuestas a prompts danables en un entorno controlado sin depender de APIs externas.
-- Evaluacion de decodificacion especulativa: la build incluye `run_validation.py` y `validation-summary.json` para reproducir el A/B de MTP y comparar donantes de cabeza, un caso practico para quien investiga aceleracion de inferencia.
+- Inferencia local en Apple Silicon: cargar el modelo con `mlx-vlm` en un Mac con chip M-series y 64 GB de memoria unificada permite ejecutar un VLM MoE de ~36B a 67-81 tok/s, adecuado para prototipado y uso personal sin GPU dedicada.
+- Análisis de imágenes en local: pasar una imagen con `--image` o como entrada del servidor OpenAI-compatible permite describir, analizar y responder preguntas sobre imágenes manteniendo los datos en el dispositivo.
+- Asistente conversacional con razonamiento: con `enable_thinking=true` el modelo resuelve comparaciones numéricas y problemas de caso límite que falla sin la traza de razonamiento, útil en tareas de análisis que requieren precisión sobre latencia.
+- Generación de código asistida: el benchmark interno del autor mide 81,0 tok/s con MTP en generación de código, lo que lo hace viable para autocompletado y generación en un servidor local compatible con OpenAI (oMLX, LM Studio).
+- Investigación sobre abliteración y seguridad: el checkpoint sirve como artefacto para estudiar el efecto de la abliteración superficial (capas 11-29) en la tasa de rechazo (~2-4/100 rechazos genuinos tras revisión manual) y su impacto en capacidades.
+- Investigación sobre decodificación especulativa: permite reproducir el experimento de injerto de cabezas MTP y medir la aceptación de borrador según el donante, con el script `run_validation.py` incluido en el repo.
+- Procesamiento por lotes con contexto medio: la validación needle 3/3 a ~8,6k tokens con profundidades del 15%, 50% y 85% respalda tareas de recuperación de información en documentos de extensión moderada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la informacion disponible. Los unicos datos medidos son de validacion funcional y velocidad, autoinformados por el autor sobre este checkpoint cuantizado en un Mac mini M4 Pro de 64 GB con `mlx_vlm`:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor publica validaciones propias medidas sobre este checkpoint cuantizado en un Mac mini M4 Pro de 64 GB con `mlx_vlm`:
 
 | Prueba | Resultado |
 |---|---|
-| Carga en frio (`mlx_vlm`) | 5,0 s, generacion limpia |
-| Plantilla de chat | Renderiza correctamente; toggle `enable_thinking` verificado; sin tokens especiales filtrados |
-| Vision | Analisis de imagen correcto; modos de fallo coherentes con el modelo base |
-| Integridad del injerto MTP | 44 tensores `language_model.mtp.*` presentes; `mtp_num_hidden_layers: 1` |
-| Aguja en contexto largo | 3/3 a ~8,6k tokens (15% / 50% / 85% de profundidad) |
-| Pantalla de rechazos, prompts danables | 20/100 marcados por palabras clave; ~2-4/100 rechazos genuinos tras revision manual |
-| Pantalla de rechazos, prompts benignos | 0/100 rechazos reales (4 coincidencias eran declaraciones de honestidad de capacidad) |
-| Velocidad de decodificacion, MTP off | 67,2-67,5 tok/s |
-| Velocidad de decodificacion, MTP on | 76,4 tok/s (ensayo) / 81,0 tok/s (codigo), +14-20% |
-| Aceptacion de borrador MTP | ~66% (62,6-69,9% entre ejecuciones) |
-
-Nota metodologica del autor: la cabeza MTP bf16 de shisa-ai, destilada contra el tronco stock, resulto un ~8% mas lenta que MTP off sobre este checkpoint ablacionado (70,5 frente a 76,6 tok/s); la eleccion del donante determina el signo del speedup.
+| Carga en frío (`mlx_vlm`) | 5,0 s, generación limpia |
+| Plantilla de chat | Renderiza correctamente; toggle `enable_thinking` verificado en ambos sentidos; sin tokens especiales filtrados |
+| Visión | Análisis de imagen correcto; modos de fallo consistentes con el modelo base en la misma imagen |
+| Integridad del injerto MTP | 44 tensores `language_model.mtp.*` presentes; `mtp_num_hidden_layers: 1` declarado |
+| Needle en contexto largo | 3/3 encontrados a ~8,6k tokens (15% / 50% / 85% de profundidad) |
+| Pantalla de rechazo — dañino | 20/100 marcados por palabra clave → ~2-4/100 rechazos genuinos tras revisión manual |
+| Pantalla de rechazo — benigno | 0/100 rechazos verdaderos (4 aciertos de palabra clave eran declaraciones de honestidad de capacidades) |
+| Velocidad de decodificación (M4 Pro) | MTP off 67,2-67,5 tok/s → MTP on 76,4 (ensayo) / 81,0 (código) tok/s, +14-20% (medianas de misma sesión, n=3, generaciones de 600 tokens) |
+| Aceptación de borrador MTP | ~66% (62,6-69,9% entre ejecuciones) |
 
 ## Requisitos de hardware
 
-- VRAM/ memoria unificada: ~20 GB para los pesos oQ4e mas el overhead de contexto y la cabeza MTP (0,49 GB). En Apple Silicon se usa memoria unificada, no VRAM dedicada.
-- Hardware validado: Mac mini M4 Pro con 64 GB, 67 tok/s sin MTP y 76-81 tok/s con MTP.
-- Referencia del modelo base en bf16: ~70 GB, desplegable en 2 GPUs de 80 GB (A100/H100) con margen para el contexto de 256K segun la receta oficial de vLLM.
-- GPU consumer: esta build MLX no aplica a GPU NVIDIA; las variantes GGUF o el checkpoint bf16 requeririan cuantizacion adicional para caber en una RTX 4090 (24 GB), y aun asi el bf16 no cabe.
-- Despliegue: `mlx-vlm` para inferencia directa con vision; oMLX o LM Studio como servidores compatibles con OpenAI; vLLM con `--tensor-parallel-size` para el modelo base en GPUs; llama.cpp/Ollama no estan documentados para esta build MLX.
-- Latencia/throughput: 67 tok/s base y 76-81 tok/s con MTP en M4 Pro 64 GB; sin datos para otros equipos.
+- VRAM/memoria unificada: ~20 GB de pesos oQ4e (repo de 22,1 GB incluyendo la cabeza MTP de 0,49 GB); se recomienda un mínimo de 64 GB de memoria unificada para margen de contexto y caché KV, como en la configuración validada (Mac mini M4 Pro de 64 GB).
+- GPU recomendadas: Apple Silicon M-series con memoria unificada suficiente; el autor valida en M4 Pro. No hay datos de ejecución en A100, H100 ni RTX 4090, ya que el formato MLX está orientado a Apple Silicon.
+- Cabe en GPU de consumo: el formato MLX no está pensado para GPUs NVIDIA; en Apple Silicon, el M4 Pro de 64 GB es la referencia validada.
+- Opciones de despliegue: `mlx-vlm` (preserva la torre de visión; `mlx-lm` la eliminaría), oMLX y LM Studio como servidores OpenAI-compatibles.
+- Latencia y throughput: 67,2-67,5 tok/s sin MTP y 76,4-81,0 tok/s con MTP en M4 Pro de 64 GB; carga en frío de 5,0 s.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / licencia | Notas |
-|---|---|---|---|---|
-| Ornith-1.5-35B-A3B (oQ4e + MTP, esta build) | 35B totales, ~3B activos | 256K | MLX safetensors ~20 GB, MIT | Abliterated, vision, MTP con +14-20% de velocidad |
-| ornith-ai/Ornith-1.5-35B-A3B-MLX-6bit | 35B totales, ~3B activos | 256K | MLX 6 bits, MIT | Checkpoint stock sin ablacion; mayor precision, mayor huella |
-| huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated | 35B totales, ~3B activos | 256K | safetensors bf16, MIT | Ablacion upstream (capas 11-29), sin cuantizacion MLX ni MTP |
-| KaedeTai/Ornith-1.5-35B-A3B-BigBang-MTP-mlx-4bit | 35B totales, ~3B activos | 256K | MLX 4 bits, MIT | Donante de la cabeza MTP; derivado con injerto Qwen3.6 |
+| Modelo | Parámetros | Activos | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|---|
+| Ornith-1.5-35B-A3B-abliterated-MLX-oQ4e-mtp (este) | ~36B | ~3B | No disponible | MIT | MLX, Apple Silicon | Cuantización oQ4e + MTP, visión, sin rechazo |
+| huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated | ~36B | ~3B | No disponible | MIT | Safetensors | Checkpoint abliterado upstream, sin cuantizar ni MTP |
+| KaedeTai/Ornith-1.5-35B-A3B-BigBang-MTP-mlx-4bit | ~36B | ~3B | No disponible | No disponible | MLX 4-bit | Donante de la cabeza MTP; base de la comparación de velocidad |
+| ornith-ai/Ornith-1.5-35B-A3B | ~36B | ~3B | No disponible | MIT | Safetensors | Modelo base original, con censura estándar |
 
 ## Limitaciones y advertencias
 
-- Modelo sin censura: la ablacion suprime el comportamiento de rechazo en los pesos; respondera a peticiones que un modelo stock declina. No exponerlo como endpoint publico sin moderacion propia.
-- Ablacion superficial: cubre solo las capas 11-29 y el autor upstream la califica de prueba de concepto tosca; los rechazos genuinos residuales se estiman en ~2-4/100, con muchos casos de cumplimiento enmarcado (explicaciones con descargos) que un filtro por palabras clave marcaria como danables.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible; el modo thinking por defecto parece mejorar la precision en casos limite, pero no hay evaluacion sistematica.
-- Idiomas: no disponible; no hay lista de lenguas soportadas ni evaluacion multilingue.
-- Contexto: la aguja se valido solo a ~8,6k tokens, muy por debajo de los 256K declarados; el rendimiento real en contextos extremos no esta medido en esta build.
-- Licencia MIT permite uso comercial, pero la responsabilidad legal del uso de un modelo sin censura recae en el desplegador.
-- Dependencia de Apple Silicon: el formato MLX no se ejecuta en CUDA; para GPUs NVIDIA hay que recurrir al checkpoint bf16 o a otras cuantizaciones.
-- Fragilidad del injerto MTP: una cabeza donante con distribucion incompatible puede ralentizar la inferencia; el speedup no es universal.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: sin validacion independiente por terceros.
+- Modelo sin censura: la abliteración suprime el comportamiento de rechazo en los pesos; responderá a solicitudes que un modelo estándar declina. No debe exponerse como endpoint público sin una capa de moderación propia.
+- La abliteración upstream se describe como "cruda, proof-of-concept" y cubre solo las capas 11-29, por lo que des-censura menos agresivamente que builds estilo Heretic; a cambio, probablemente perturba menos las capacidades, pero no hay medición de daño cognitivo en la información disponible.
+- Riesgo de alucinación: no cuantificado; el autor documenta un fallo concreto al desactivar el thinking en una comparación numérica de caso límite.
+- Modos de fallo en visión consistentes con el modelo base en la misma imagen; no se detallan cuáles.
+- Longitud de contexto oficial no disponible; la validación needle solo cubre ~8,6k tokens.
+- Idiomas soportados no disponibles.
+- Restricciones de licencia: MIT permite uso comercial, pero la responsabilidad legal del uso recae en el usuario según el autor.
+- Dependencia de la cabeza MTP: un donante con distribución de entrenamiento desajustada puede producir una decodificación más lenta que sin MTP (caso documentado: -8%).
+- Formato MLX exclusivo para Apple Silicon; no ejecutable directamente en CUDA sin conversión.
 
 ## Enlaces
 
-- [terry2010/Ornith-1.5-35B-A3B-abliterated-MLX-oQ4e-mtp (Hugging Face)](https://huggingface.co/terry2010/Ornith-1.5-35B-A3B-abliterated-MLX-oQ4e-mtp)
-- [huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated (checkpoint base)](https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated)
-- [KaedeTai/Ornith-1.5-35B-A3B-BigBang-MTP-mlx-4bit (donante de la cabeza MTP)](https://huggingface.co/KaedeTai/Ornith-1.5-35B-A3B-BigBang-MTP-mlx-4bit)
-- [ornith-ai/Ornith-1.5-35B-A3B (modelo base)](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B)
-- [ornith-ai/Ornith-1.5-35B-A3B-MLX-6bit (variante MLX de 6 bits)](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX-6bit)
+- Hugging Face: https://huggingface.co/terry2010/Ornith-1.5-35B-A3B-abliterated-MLX-oQ4e-mtp
+- Modelo base abliterado: https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated
+- Donante de la cabeza MTP: https://huggingface.co/KaedeTai/Ornith-1.5-35B-A3B-BigBang-MTP-mlx-4bit
+- Origen de la cabeza MTP: EryriLabs/Ornith-1.5-35B-A3B-BigBang-MTP (referenciado en la model card, sin URL directa)
+- Modelo base original: ornith-ai/Ornith-1.5-35B-A3B (referenciado en la model card, sin URL directa)

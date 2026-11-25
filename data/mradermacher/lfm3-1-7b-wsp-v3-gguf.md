@@ -2,95 +2,93 @@
 
 ## Resumen
 
-LFM3-1.7B-WSP-V3-GGUF es una republicación en formato GGUF de los pesos del modelo Sayansantra/LFM3-1.7B-WSP-V3, realizada por el usuario mradermacher, especializado en generar cuantizaciones estáticas de modelos para su uso con llama.cpp y ecosistemas compatibles. El modelo base pertenece a la familia LFM3 (Liquid Foundation Models, tercera generación) con aproximadamente 1.700 millones de parámetros, un tamaño que lo sitúa en la franja de modelos compactos aptos para hardware de consumo.
+LFM3-1.7B-WSP-V3-GGUF es la version cuantizada en formato GGUF del modelo Sayansantra/LFM3-1.7B-WSP-V3, un ajuste fino de la familia LFM3 (Liquid Foundation Model 3) de 1.728 millones de parametros. La cuantizacion la ha realizado mradermacher, un autor habitual en la publicacion de versiones GGUF de modelos open source para su uso con llama.cpp y ecosistemas derivados (Ollama, LM Studio, etc.). El modelo base incorpora la tecnica denominada weight-space programming (WSP), que el autor asocia a capacidades agenticas, tool calling, matematicas y generacion de codigo.
 
-La relevancia de esta ficha radica en el formato de distribución: el repositorio original contiene los pesos en precisión completa o semiprecisión, mientras que esta versión ofrece trece variantes de cuantización (desde Q2_K hasta Q8_0, pasando por x-f16 e IQ4_XS), lo que permite desplegar el modelo en GPU con VRAM limitada o incluso en CPU. No obstante, la información publicada por el autor de la cuantización es extremadamente escasa: no se documentan licencia, idiomas, pipeline ni detalles del proceso de entrenamiento del modelo base.
+El interes practico de esta publicacion reside en que pone a disposicion un modelo de 1,7 mil millones de parametros con un rango amplio de cuantizaciones estaticas (desde Q2_K de 0,9 GB hasta f16 de 3,6 GB), lo que permite ejecutarlo en hardware muy modesto, incluidas GPU de consumo con 4-8 GB de VRAM o incluso en CPU. Es, por tanto, una opcion orientada a prototipado rapido, despliegue en el borde y experimentacion con modelos pequenos especializados en tareas agenticas.
 
-Al tratarse de una conversión de pesos y no de un modelo original, los méritos técnicos de arquitectura y entrenamiento corresponden al modelo LFM3-1.7B-WSP-V3 de Sayansantra, del que no se dispone de model card detallada en la información proporcionada. Cualquier evaluación rigurosa de capacidades debería remitirse al repositorio de origen.
+No se dispone de informacion publica sobre la longitud de contexto, la composicion del dataset de entrenamiento del modelo base ni resultados de benchmarks en la documentacion proporcionada. La licencia del modelo base es lfm1.0 (Liquid AI Foundation Model License), que impone restricciones de uso comercial que deben revisarse antes de un despliegue en produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (familia LFM3; arquitectura exacta no documentada en la informacion proporcionada) |
-| Parametros totales | aproximadamente 1.700 millones (segun el nombre del modelo) |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Arquitectura | Transformer (familia LFM3, segun tags del modelo base); detalles no disponibles |
+| Parametros totales | 1.728.801.600 |
+| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas generadas con quantize_version 2) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | en (ingles) |
+| Licencia | lfm1.0 (Liquid AI Foundation Model License) |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base LFM3-1.7B-WSP-V3 en los datos proporcionados. El nombre sugiere la pertenencia a la familia LFM3 de Liquid AI, pero no se confirma en la model card del repositorio de cuantización, que se limita a indicar que se trata de "static quants" del modelo Sayansantra/LFM3-1.7B-WSP-V3. Los metadatos incrustados en la model card (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`) confirman que el proceso consistió en convertir pesos desde formato Hugging Face a GGUF y aplicar cuantización estática de tensores.
+El modelo base Sayansantra/LFM3-1.7B-WSP-V3 pertenece a la familia LFM3 de Liquid AI, aunque la model card no detalla la arquitectura interna (tipo de atencion, uso de capas hibridas, etc.). El sufijo "WSP-V3" hace referencia a weight-space programming, una tecnica que el autor asocia a la mejora de capacidades agenticas y de tool calling. Los tags del modelo indican especializacion en agentic, tool-calling, math y coding, lo que sugiere un ajuste fino orientado a tareas de razonamiento estructurado y uso de herramientas.
 
-Respecto al entrenamiento (número de tokens, composición del dataset, uso de RLHF o DPO, posibles innovaciones como decodificación especulativa o atención lineal), no hay información disponible. Tampoco se documenta el sufijo "WSP-V3", que podría corresponder a una variante o fine-tuning específico del autor original, pero esto no se puede verificar con los datos disponibles.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o similares. Tampoco se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal. La cuantizacion realizada por mradermacher es de tipo estatico (sin imatrix/weighted quants, segun la propia model card), lo que implica que no se han generado versiones optimizadas con importancia de pesos; el autor indica que estas podrian no estar disponibles.
 
 ## Capacidades
 
-- Generación de texto autoregresiva: capacidad básica esperada de un modelo de 1.700 millones de parámetros, si bien no se documentan evaluaciones concretas.
-- Razonamiento y conocimiento general: no disponible (sin benchmarks publicados en la información proporcionada).
-- Generación de código: no disponible (sin datos que lo confirmen).
-- Matemáticas: no disponible (sin datos que lo confirmen).
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible (no se listan idiomas).
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
+- Generacion de texto conversacional en ingles, segun los tags conversational y en.
+- Razonamiento matematico (tag math), presumiblemente orientado a problemas de tipo GSM8K o similares.
+- Generacion de codigo (tag coding).
+- Tool calling / function calling (tag tool-calling).
+- Comportamiento agentico y razonamiento multi-paso (tag agentic).
+- Integracion con el ecosistema GGUF: compatible con llama.cpp, Ollama, LM Studio y otros runners que acepten este formato.
+- Capacidades multilingues: solo ingles declarado; no se documentan otros idiomas.
+- No se documentan capacidades de vision, audio ni modos de pensamiento extendido (thinking mode).
 
 ## Casos de uso
 
-- Despliegue en hardware de consumo: al ofrecerse en cuantizaciones Q4_K_M, Q5_K_M e IQ4_XS, el modelo puede ejecutarse en GPUs con 4-8 GB de VRAM o incluso en CPU mediante llama.cpp, lo que lo hace adecuado para prototipos locales y entornos sin aceleradores dedicados.
-- Experimentación e investigación: investigadores que necesiten comparar variantes de cuantización sobre un mismo modelo base pueden usar este repositorio para medir la degradación de calidad entre Q2_K, Q4_K_M y Q8_0 sin tener que generar las cuantizaciones por su cuenta.
-- Generación de texto en local para asistentes personales: con contexto corto y tareas de redacción sencilla, un modelo de 1.700 millones en Q4_K_M puede integrarse en aplicaciones de escritorio o CLI mediante llama.cpp u Ollama.
-- Fine-tuning ligero sobre GGUF: aunque el formato GGUF no está pensado para entrenamiento, variantes como x-f16 permiten servir como punto de partida para LoRA o adaptadores en flujos que reconvierten a safetensors.
-- Servicio de inferencia en CPU para entornos air-gapped: la cuantización Q4_K_S permite ejecutar el modelo en servidores sin GPU, útil en despliegos con restricciones de hardware o seguridad.
-- Pruebas de integración en pipelines de CI: al ser un artefacto pequeño (modelo de 1.700 millones en Q2_K ocupa del orden de 1 GB), puede incorporarse en tests automatizados que validen pipelines de inferencia sin incurrir en costes de GPU.
+- Prototipado de agentes locales: el modelo puede ejecutarse en una estacion de trabajo con una GPU de consumo y utilizarse para validar flujos de tool calling antes de migrar a un modelo mayor, gracias a su reducido tamano (1,2 GB en Q4_K_M).
+- Asistente de codigo en el editor: integrable mediante llama.cpp u Ollama para autocompletado y generacion de fragmentos en ingles, con latencia baja en GPU de gama media.
+- Automatizacion de tareas de razonamiento matematico: util para resolver problemas paso a paso en pipelines educativos o de validacion, dado el tag math del modelo base.
+- Despliegue en el borde (edge): al caber en 1-2 GB de VRAM o incluso en CPU, puede embeberse en dispositivos con recursos limitados para tareas de clasificacion o generacion corta.
+- Experimentacion con weight-space programming: investigadores interesados en evaluar la tecnica WSP pueden usar las cuantizaciones para comparar comportamiento frente al modelo base en safetensors.
+- Chatbot de soporte tecnico en ingles: adecuado para conversaciones multi-turno simples, aunque limitado por la ausencia de datos publicos sobre la ventana de contexto.
+- Evaluacion comparativa de cuantizaciones: el amplio rango de quants (Q2_K a f16) permite estudiar el impacto de la cuantizacion en calidad para un modelo de 1,7B.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (cálculo orientativo a partir del número de parámetros, no confirmado por el autor):
-  - Q2_K: en torno a 1 GB de pesos, más overhead de contexto.
-  - Q4_K_M: en torno a 1,1-1,3 GB de pesos.
-  - Q5_K_M: en torno a 1,3-1,5 GB de pesos.
-  - Q6_K: en torno a 1,5-1,7 GB de pesos.
-  - Q8_0: en torno a 1,9-2,2 GB de pesos.
-  - x-f16: en torno a 3,4-3,8 GB de pesos.
-- GPU recomendadas: no disponible en la información proporcionada. Por tamaño, cualquier GPU consumer con 4 GB o más de VRAM (GTX 1650, RTX 3050, RTX 4060) debería acomodar las cuantizaciones Q4 y Q5; las Q8_0 y x-f16 requieren 6-8 GB.
-- Cabe en GPU consumer: sí, con las cuantizaciones Q2_K a Q8_0 en prácticamente cualquier GPU moderna; x-f16 requiere al menos 6 GB de VRAM libre.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa en todos los casos, por lo que para estos backends sería necesario reconvertir a safetensors.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: aproximadamente 1,2 GB con Q4_K_M, 1,9 GB con Q8_0 y 3,6 GB con f16 (sin contar overhead de contexto y KV cache).
+- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM; RTX 3050, RTX 4060, RTX 4090, A100 y H100 son sobredimensionadas pero funcionales. Tambien puede ejecutarse en CPU.
+- Cabe en GPU de consumo: si, en practicamente todas las GPU modernas con 4 GB o mas; incluso en iGPU con memoria unificada.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runner compatible con GGUF. No se recomienda vLLM ni TGI para este formato (requieren safetensors).
+- Latencia y throughput: no disponibles en la informacion proporcionada; por el tamano del modelo, se espera un throughput alto en GPU de consumo, pero no se aportan cifras oficiales.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| LFM3-1.7B-WSP-V3-GGUF (este) | ~1.700 M | no disponible | no disponible | GGUF (13 cuantizaciones) | Hugging Face |
-| Qwen2.5-1.5B-Instruct | 1.500 M | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
-| Llama 3.2-1B-Instruct | 1.200 M | 131.072 tokens | Llama 3.2 Community License | safetensors, GGUF | Hugging Face, Ollama |
-| Gemma 2-2B-it | 2.600 M | 8.192 tokens | Gemma Terms of Use | safetensors, GGUF | Hugging Face, Ollama |
+| LFM3-1.7B-WSP-V3-GGUF | 1,73B | no disponible | lfm1.0 | GGUF | Especializado en agentic/tool calling/math/coding |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32K (tipico) | Apache 2.0 | safetensors, GGUF | Alternativa generalista con licencia permisiva |
+| Llama-3.2-1B-Instruct | 1,24B | 128K | Llama 3.2 Community | safetensors, GGUF | Menor, contexto amplio, licencia restrictiva |
+| SmolLM2-1.7B-Instruct | 1,71B | 8K (tipico) | Apache 2.0 | safetensors, GGUF | Tamano casi identico, licencia permisiva |
 
-La comparativa con Qwen2.5-1.5B, Llama 3.2-1B y Gemma 2-2B se ofrece como referencia de categoría (modelos compactos de ~1-3 mil millones de parámetros), pero no se dispone de datos de rendimiento del modelo LFM3-1.7B-WSP-V3 que permitan una comparación cuantitativa.
+La comparativa se basa en caracteristicas publicas conocidas de esos modelos; no se dispone de datos de rendimiento del LFM3-1.7B-WSP-V3 para comparar numericamente.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: no se especifica la licencia del modelo base ni de la cuantización, lo que impide confirmar si el uso comercial está permitido. Antes de desplegarlo en producción, es imprescindible consultar el repositorio original Sayansantra/LFM3-1.7B-WSP-V3.
-- Idiomas no documentados: no se indica qué lenguas soporta el modelo, por lo que su rendimiento en castellano es desconocido.
-- Riesgo de alucinación: inherente a cualquier modelo de lenguaje; con 1.700 millones de parámetros el riesgo es mayor que en modelos de mayor escala, especialmente en tareas de conocimiento factual.
-- Degradación por cuantización: las variantes Q2_K y Q3_K_S pueden perder calidad de forma apreciable en tareas de razonamiento; para uso en producción se recomienda Q4_K_M o superior.
-- Ausencia de benchmarks: no hay métricas publicadas que permitan estimar su calidad frente a alternativas de la misma franja.
-- Modelo derivado: al ser una conversión de pesos de terceros, posibles errores de conversión o discrepancias con el modelo original no están documentados.
-- Contexto desconocido: no se puede planificar su uso en aplicaciones de contexto largo sin conocer la longitud máxima soportada.
-- Fecha de creación futura (2026-11-21): el repositorio aparece con fecha posterior a la actual, lo que sugiere metadatos inconsistentes; conviene verificar la integridad del repositorio antes de confiar en él para producción.
+- Solo se declara soporte de ingles; el rendimiento en castellano no esta documentado y probablemente sea limitado.
+- No se dispone de informacion sobre la longitud de contexto, lo que impide garantizar conversaciones largas o documentos extensos.
+- Riesgo de alucinacion inherente a modelos de 1,7B, especialmente en matematicas y codigo sin verificacion.
+- La licencia lfm1.0 (Liquid AI Foundation Model License) impone restricciones de uso comercial; es imprescindible revisar el archivo LICENSE antes de cualquier despliegue productivo.
+- Las cuantizaciones de baja calidad (Q2_K, Q3_K_S) pueden degradar notablemente las capacidades de razonamiento y tool calling; se recomienda Q4_K_M o superior.
+- No se han generado quants con imatrix/weighted, por lo que la calidad por tamano puede ser inferior a la de otras publicaciones del mismo autor.
+- El modelo base es un ajuste fino de terceros (Sayansantra) sobre LFM3; no hay garantia de que las capacidades declaradas en los tags esten validadas con benchmarks publicos.
+- Sesgos conocidos: no documentados en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/LFM3-1.7B-WSP-V3-GGUF
-- Modelo base original: https://huggingface.co/Sayansantra/LFM3-1.7B-WSP-V3
-- Perfil del autor de la cuantización: https://huggingface.co/mradermacher
-- Repositorio de llama.cpp (runtime compatible con GGUF): https://github.com/ggerganov/llama.cpp
-- Ollama (despliegue simplificado de GGUF): https://ollama.com
+- Repositorio GGUF: https://huggingface.co/mradermacher/LFM3-1.7B-WSP-V3-GGUF
+- Modelo base: https://huggingface.co/Sayansantra/LFM3-1.7B-WSP-V3
+- Pagina de descargas del autor: https://hf.tst.eu/model#LFM3-1.7B-WSP-V3-GGUF
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Licencia LFM1.0: https://huggingface.co/mradermacher/LFM3-1.7B-WSP-V3-GGUF/blob/main/LICENSE

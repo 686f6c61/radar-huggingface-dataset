@@ -2,58 +2,51 @@
 
 ## Resumen
 
-Trendyol-Cybersecurity-LLM-v2-70B-Q4_K_M es un modelo de lenguaje especializado en ciberseguridad publicado por Trendyol, el operador de comercio electrónico turco. Se trata de un ajuste fino (fine-tuning) del modelo base meta-llama/Llama-3.3-70B-Instruct, orientado a tareas de seguridad informática y distribuido en formato GGUF con cuantización Q4_K_M, lo que reduce el peso del repositorio a 42,5 GB frente a los aproximadamente 141 GB de los pesos originales en BF16.
+Trendyol-Cybersecurity-LLM-v2-70B-Q4_K_M es una cuantización GGUF de tipo Q4_K_M del modelo Trendyol-Cybersecurity-LLM-v2, un ajuste fino del conocido Meta Llama-3.3-70B-Instruct orientado específicamente al dominio de ciberseguridad. El desarrollo corre a cargo de Trendyol, empresa turca de comercio electrónico que mantiene una línea de publicaciones de modelos abiertos en Hugging Face. El modelo base aporta una arquitectura transformer densa de 70.553.706.560 parámetros, sobre la que se ha aplicado un entrenamiento de instrucciones con datasets especializados en seguridad ofensiva y defensiva.
 
-El modelo conserva la arquitectura transformer densa de Llama 3.3 con 70.553.706.560 parámetros totales, y ha sido entrenado sobre tres conjuntos de datos orientados a instrucciones de ciberseguridad: el dataset propietario Trendyol-Cybersecurity-Instruction-Tuning-Dataset y los datasets públicos AlicanKiraz0/Cybersecurity-Dataset-Fenrir-v2.0 y AlicanKiraz0/Cybersecurity-Dataset-Heimdall-v1.1. Su relevancia actual radica en la demanda de asistentes especializados para análisis de amenazas, respuesta a incidentes y tareas de seguridad ofensiva y defensiva, donde los modelos generalistas suelen carecer de vocabulario técnico y procedimientos específicos del dominio.
+El problema que aborda es la brecha entre los modelos generalistas y las tareas concretas de ciberseguridad: análisis de vulnerabilidades, interpretación de tráfico y logs, clasificación de amenazas, redacción de informes técnicos o asistencia en respuesta a incidentes. Un ajuste fino de dominio sobre un modelo de 70B preserva la capacidad general de razonamiento del modelo base mientras desplaza su distribución hacia terminología, procedimientos y formatos propios del sector.
 
-La distribución en GGUF cuantizado facilita su despliegue en infraestructura con recursos limitados mediante llama.cpp u Ollama, aunque el tamaño del modelo (70B) sigue exigiendo hardware de gama alta. El acceso está restringido (gated) en Hugging Face y la licencia es llama3.3, heredada del modelo base.
+La relevancia práctica de esta variante concreta reside en su formato GGUF Q4_K_M, que reduce el peso del repositorio a 42,5 GB y permite ejecución en hardware más modesto que el modelo original en FP16, manteniendo una fidelidad razonable respecto al ajuste fino. El acceso está restringido (gated) y sujeto a la licencia Llama 3.3, lo que condiciona su uso comercial.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Llama 3.3), fine-tuning del modelo base meta-llama/Llama-3.3-70B-Instruct |
+| Arquitectura | Transformer denso (derivado de Llama-3.3-70B-Instruct) |
 | Parámetros totales | 70.553.706.560 |
-| Parámetros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | no disponible en la información proporcionada (heredada del modelo base Llama 3.3, 128.000 tokens según la documentación oficial de Meta) |
-| Tipos de cuantización | Q4_K_M (formato GGUF); otras cuantizaciones no disponibles en este repositorio |
-| Idiomas soportados | no disponibles |
-| Licencia | llama3.3 |
+| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible en la información proporcionada (heredada del modelo base Llama-3.3-70B-Instruct) |
+| Tipos de cuantización | Q4_K_M (esta variante); el repositorio publica únicamente esta cuantización |
+| Idiomas soportados | No disponible |
+| Licencia | llama3.3 (Llama 3.3 Community License) |
 | Formato de pesos | GGUF |
-| Tamaño del repositorio | 42,5 GB |
-| Acceso | Restringido (gated), requiere aceptar condiciones en Hugging Face |
-| Pipeline | no disponible |
-| Descargas | 1.708 |
-| Likes | 57 |
-| Fecha de creación | 2025-06-24 |
-| Última actualización | 2026-11-21 |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura transformer densa de Llama 3.3, con 70.553.706.560 parámetros y atención por múltiples cabezas estándar. Al ser un fine-tuning del modelo instruct de Meta, hereda las innovaciones del base, incluidas las mejoras de tokenización y el ajuste por instrucciones original. La versión distribuida emplea cuantización Q4_K_M, un esquema de cuantización de bloques de 4 bits con mezcla de precisión (algunas capas en 6 bits) que busca preservar la calidad del modelo original reduciendo el espacio en disco y los requisitos de memoria.
+El modelo es un ajuste fino supervisado del Llama-3.3-70B-Instruct, un transformer denso decoder-only con atención multi-cabeza estándar y RoPE. No introduce cambios arquitectónicos respecto al base: la modificación se limita al entrenamiento de instrucciones sobre datasets de ciberseguridad. Los datasets declarados en las etiquetas del repositorio son Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset, AlicanKiraz0/Cybersecurity-Dataset-Fenrir-v2.0 y AlicanKiraz0/Cybersecurity-Dataset-Heimdall-v1.1, lo que sugiere una combinación de datos propios de Trendyol con corpus comunitarios de seguridad.
 
-El entrenamiento se realizó sobre tres datasets de instrucciones de ciberseguridad: el conjunto propietario de Trendyol (Trendyol-Cybersecurity-Instruction-Tuning-Dataset) y dos conjuntos públicos de AlicanKiraz0 (Fenrir v2.0 y Heimdall v1.1). No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset, ni si se aplicaron técnicas de RLHF o DPO adicionales. Tampoco se documentan innovaciones técnicas específicas más allá de la especialización por dominio mediante fine-tuning supervisado.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset, la proporción de datos sintéticos, ni sobre si se aplicaron fases de RLHF o DPO posteriores al SFT. Tampoco se documentan innovaciones técnicas específicas (decodificación especulativa, atención lineal u otras) más allá de las inherentes al modelo base. La variante Q4_K_M aplica cuantización de bloques de 4 bits con escalas de 6 bits para los tensores más sensibles, un esquema que típicamente preserva mejor la calidad que cuantizaciones Q4 más agresivas.
 
 ## Capacidades
 
-- Generación de texto especializada en ciberseguridad: análisis de vulnerabilidades, explicación de CVEs, procedimientos de respuesta a incidentes y guías de hardening.
-- Razonamiento técnico sobre conceptos de seguridad ofensiva y defensiva (pentesting, análisis forense, threat hunting).
-- Soporte de instrucciones multi-turno, heredado del ajuste instruct de Llama 3.3.
-- Capacidades multilingües: no documentadas explícitamente para este fine-tuning; el modelo base Llama 3.3 soporta oficialmente ocho idiomas (inglés, alemán, francés, italiano, portugués, hindi, español y tailandés), pero no se confirma su preservación tras el ajuste.
-- Tool calling / function calling: no documentado para este modelo; el base Llama 3.3-Instruct incluye soporte de tool use, pero no se verifica en esta versión.
-- Capacidades de agente y razonamiento multi-paso: no documentadas específicamente.
-- Capacidades de visión o audio: no disponibles (modelo solo de texto).
-- Modo thinking: no disponible.
+- Generación de texto y razonamiento general, heredados del Llama-3.3-70B-Instruct.
+- Asistencia especializada en ciberseguridad: análisis de vulnerabilidades, interpretación de CVEs, redacción de informes técnicos y respuesta a incidentes.
+- Explicación y generación de comandos y scripts en contextos de seguridad ofensiva y defensiva.
+- Interpretación de logs, tráfico de red y artefactos forenses en formato textual.
+- Soporte de conversación multi-turno con instrucciones de sistema, propio del formato instruct del modelo base.
+- Capacidades multilingües: no confirmadas para este ajuste concreto; el modelo base soporta múltiples idiomas, pero no hay datos publicados sobre el alcance multilingüe tras el fine-tuning.
+- Tool calling y function calling: no documentado explícitamente para este ajuste; el modelo base Llama-3.3-70B-Instruct dispone de soporte de tool calling, pero no se confirma su preservación.
+- Modo thinking, visión o audio: no disponible.
 
 ## Casos de uso
 
-- Análisis y triaje de alertas de seguridad: el modelo puede interpretar descripciones de eventos, clasificar su severidad y proponer pasos de investigación, aprovechando su entrenamiento en datasets de instrucciones de ciberseguridad.
-- Asistencia en respuesta a incidentes: generación de runbooks, checklists de contención y borradores de informes post-incidente adaptados a procedimientos estándar del dominio.
-- Explicación de vulnerabilidades y CVEs: traducción de avisos técnicos a lenguaje operativo para equipos de TI no especializados, con recomendaciones de mitigación.
-- Formación y concienciación en seguridad: generación de escenarios de phishing, cuestionarios y material didáctico para programas de training interno.
-- Soporte a analistas SOC: resumen y enriquecimiento de logs y alertas en lenguaje natural, con sugerencias de consultas o reglas de detección.
-- Auditoría de configuraciones: revisión de fragmentos de configuración (firewalls, servidores, políticas IAM) y propuesta de mejoras alineadas con buenas prácticas.
-- Documentación de procedimientos de seguridad: redacción de políticas, guías de hardening y manuales internos con terminología técnica consistente.
+- Triaje de alertas SOC: el modelo puede recibir descripciones textuales de alertas y logs para clasificar severidad, sugerir causas raíz y proponer pasos de contención, aprovechando su especialización en vocabulario de seguridad.
+- Redacción de informes de vulnerabilidades: generación de borradores de informes técnicos a partir de notas de análisis, con terminología consistente (CVSS, CWE, MITRE ATT&CK), reduciendo el tiempo de documentación del equipo.
+- Asistencia a analistas en respuesta a incidentes: conversación multi-turno en la que el analista aporta artefactos (fragmentos de logs, salidas de herramientas) y el modelo propone hipótesis e itinerarios de investigación.
+- Explicación de CVEs y parches: resumen de avisos de seguridad y traducción a impacto operativo para equipos de TI menos especializados, útil en procesos de gestión de parches.
+- Formación y concienciación: generación de escenarios de phishing, preguntas de evaluación y material didáctico sobre buenas prácticas, adaptado al nivel del destinatario.
+- Revisión de configuraciones y políticas: análisis de fragmentos de configuración (firewall, IAM, cabeceras HTTP) para señalar desviaciones respecto a recomendaciones de hardening.
+- Automatización de documentación de runbooks: conversión de procedimientos internos en borradores estructurados y checklists operativas para equipos de seguridad.
 
 ## Benchmarks y rendimiento
 
@@ -61,39 +54,39 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el archivo GGUF Q4_K_M ocupa 42,5 GB, por lo que se necesitan al menos 48 GB de VRAM para cargarlo completo en GPU; con offloading parcial a CPU, el requisito de VRAM se reduce proporcionalmente a las capas descargadas.
-- GPU recomendadas: A100 80 GB, H100 80 GB o configuraciones multi-GPU (2× RTX 4090 de 24 GB, 2× A6000 de 48 GB) para inferencia completamente en GPU.
-- GPU de consumo: no cabe en una única GPU de consumo (RTX 4090, 24 GB) sin offloading a RAM del sistema; requiere al menos 48 GB de RAM combinada para ejecución parcial en CPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; para mayor throughput en servidor, se recomienda convertir a un formato compatible con vLLM o TGI, aunque no se documenta soporte oficial.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: aproximadamente 42,5 GB solo para los pesos en Q4_K_M; con caché KV y overhead de runtime, se recomienda prever entre 48 y 56 GB para contextos moderados, y más para contextos largos.
+- GPU recomendadas: A100 80 GB, H100 80 GB, H200, L40S 48 GB (ajustada), o configuraciones multi-GPU consumer.
+- GPU consumer: no cabe en una única RTX 4090 (24 GB). Requiere al menos dos RTX 4090/3090 (48 GB combinados) con reparto por capas, o una RTX 6000 Ada / A6000 de 48 GB con margen ajustado.
+- Despliegue: llama.cpp, Ollama, LM Studio y servidores compatibles con GGUF; vLLM y TGI no son la vía natural para este artefacto GGUF, aunque pueden servir el modelo base o una conversión alternativa.
+- Latencia y throughput: no disponibles. En Q4_K_M sobre hardware de 48-80 GB se puede esperar decodificación interactiva, pero no hay cifras publicadas que permitan concretar tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Especialización |
+| Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Trendyol-Cybersecurity-LLM-v2-70B-Q4_K_M | 70,5B | no disponible (base: 128K) | GGUF Q4_K_M | llama3.3 | Ciberseguridad |
-| meta-llama/Llama-3.3-70B-Instruct | 70,5B | 128K | safetensors, GGUF | llama3.3 | Generalista con instrucciones |
-| Trendyol/Trendyol-Cybersecurity-LLM (versión previa) | no disponible | no disponible | no disponible | no disponible | Ciberseguridad |
-| AlicanKiraz0/Cybersecurity-Dataset-Fenrir-v2.0 (dataset, no modelo) | no aplica | no aplica | no aplica | no disponible | Datos de ciberseguridad |
+| Trendyol-Cybersecurity-LLM-v2-70B-Q4_K_M | 70,5B | No disponible | Ciberseguridad (SFT) | llama3.3 | Gated en HF |
+| meta-llama/Llama-3.3-70B-Instruct | 70,5B | 128K (modelo base) | Generalista | llama3.3 | Gated en HF |
+| Trendyol-Cybersecurity-LLM (versión anterior, si existe en el hub) | No disponible | No disponible | Ciberseguridad | No disponible | No disponible |
 
-La comparativa directa con otros modelos especializados en ciberseguridad de tamaño similar no está disponible en la información proporcionada. Frente al modelo base, la diferencia principal es el ajuste fino de dominio y la cuantización Q4_K_M, que reduce el peso a 42,5 GB a costa de una posible pérdida de precisión numérica.
+La comparación más directa es con el propio Llama-3.3-70B-Instruct: misma arquitectura y recuento de parámetros, con la diferencia de que este ajuste sacrifica parte de la generalidad en favor de precisión en dominio de seguridad. No se dispone de datos de benchmarks que permitan cuantificar esa ganancia.
 
 ## Limitaciones y advertencias
 
-- Riesgo de alucinación: como todo modelo de lenguaje, puede generar comandos, scripts o referencias a CVEs inexistentes; requiere validación humana antes de ejecutar cualquier acción en producción.
-- Sesgos conocidos: no documentados específicamente para este fine-tuning; hereda los sesgos del modelo base Llama 3.3, entrenado principalmente con datos en inglés.
-- Limitaciones de contexto e idioma: no se confirma la preservación de los ocho idiomas del modelo base tras el ajuste; el rendimiento en castellano no está verificado.
-- Licencia llama3.3: el uso comercial está sujeto a los términos de la licencia de Meta para Llama 3.3, que incluye restricciones (por ejemplo, cláusula de 700 millones de usuarios mensuales y prohibiciones de uso para fines específicos). Es necesario revisar la licencia completa antes de desplegar en producción.
-- Acceso restringido: el repositorio es gated, por lo que la descarga requiere aceptar condiciones en Hugging Face.
-- Cuantización Q4_K_M: la pérdida de precisión respecto a BF16 puede afectar a tareas que requieran razonamiento numérico fino o generación de código exacto.
-- Uso dual: un modelo especializado en ciberseguridad puede emplearse para fines ofensivos; deben aplicarse controles de acceso y políticas de uso aceptable.
-- Sin benchmarks publicados: no es posible evaluar su rendimiento objetivo frente a alternativas.
+- Riesgo de alucinación: en dominios técnicos como ciberseguridad, respuestas plausibles pero incorrectas (comandos, referencias a CVEs, procedimientos) pueden tener consecuencias operativas graves; toda salida debe verificarse.
+- Sesgos: no documentados; el ajuste fino sobre datasets comunitarios puede heredar sesgos de composición y cobertura geográfica o de herramienta.
+- Idiomas: no se especifica el alcance multilingüe del ajuste; el rendimiento fuera del inglés (y posiblemente turco) no está garantizado.
+- Contexto: la longitud efectiva no está documentada para esta variante; no asumir los 128K del modelo base sin verificación.
+- Licencia: sujeta a la Llama 3.3 Community License, con restricciones para uso comercial a gran escala y obligaciones de atribución; revisar los términos antes de desplegar en producto.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones, lo que complica la automatización de descargas en pipelines.
+- Formato: al ser GGUF Q4_K_M, la calidad es inferior a FP16/BF16; para evaluación rigurosa conviene contrastar con el modelo sin cuantizar.
+- Uso responsable: el modelo puede generar contenido de seguridad ofensiva; debe integrarse con salvaguardas y políticas de uso aceptable.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Trendyol/Trendyol-Cybersecurity-LLM-v2-70B-Q4_K_M
+- Modelo en Hugging Face: https://huggingface.co/Trendyol/Trendyol-Cybersecurity-LLM-v2-70B-Q4_K_M
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
 - Dataset de instrucciones de Trendyol: https://huggingface.co/datasets/Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset
 - Dataset Fenrir v2.0: https://huggingface.co/datasets/AlicanKiraz0/Cybersecurity-Dataset-Fenrir-v2.0
 - Dataset Heimdall v1.1: https://huggingface.co/datasets/AlicanKiraz0/Cybersecurity-Dataset-Heimdall-v1.1
 - Licencia Llama 3.3: https://www.llama.com/llama3_3/license/
+- Resultados de búsqueda web: no se han encontrado enlaces técnicos relevantes (papers, blogs o repos) en la búsqueda proporcionada; los resultados corresponden a páginas comerciales de Trendyol sin relación con el modelo.

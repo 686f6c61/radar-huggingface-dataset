@@ -1,0 +1,45 @@
+{
+  "schema": 2,
+  "id": "Abhihd89/hyperliquid-trading-bot-perp-copytrade",
+  "slug": "abhihd89-hyperliquid-trading-bot-perp-copytrade",
+  "author": "Abhihd89",
+  "url": "https://huggingface.co/Abhihd89/hyperliquid-trading-bot-perp-copytrade",
+  "created_at": "2026-11-24T22:28:45.000Z",
+  "updated_at": "2026-11-24T22:28:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "other",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA Corporation (NVDA) Stock Price, News, Quote & History",
+      "url": "https://finance.yahoo.com/quote/NVDA/",
+      "snippet": "Find the latest NVIDIA Corporation (NVDA) stock quote, history, news and other vital information to help you with your stock trading …Read more"
+    }
+  ]
+}

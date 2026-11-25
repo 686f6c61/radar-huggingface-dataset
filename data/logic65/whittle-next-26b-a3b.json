@@ -53,31 +53,5 @@
   "renamed_to": "whittleOrg/Whittle-Next-26B-A3B",
   "renamed_at": "2026-11-11T06:06:33.552Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "logic65/whittle-next · Hugging Face",
-      "url": "https://huggingface.co/logic65/whittle-next",
-      "snippet": "logic65 / whittle-next like 1 Safetensors qwen3_5_moe mixture-of-experts hyper-connections per-layer-embeddings n-gram-memory model-compression research License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new whittle-next (base, UNTRAINED) — a mini Flash-Next built by surgery What it is Verification (every gate ..."
-    },
-    {
-      "title": "logic65/whittle-next-moe-test · Hugging Face",
-      "url": "https://huggingface.co/logic65/whittle-next-moe-test",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
-      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
-      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
-    },
-    {
-      "title": "Qwen3.8-Whittle-MoE-27B-A17.8B by logic65 | AI Market Cap",
-      "url": "https://aimarketcap.tech/models/logic65-qwen3-8-whittle-moe-27b-a17-8b",
-      "snippet": "Explore Qwen3.8-Whittle-MoE-27B-A17.8B by logic65 — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
-    },
-    {
-      "title": "Qwen3-Next: Towards Ultimate Training & Inference Efficiency",
-      "url": "https://qwen.ai/blog?id=4074cca80393150c248e508aa62983f9cb7d27cd&from=research.latest-advancements-list",
-      "snippet": "Based on this new architecture, we train the Qwen3-Next-80B-A3B-Base model — an 80-billion-parameter model that activates only 3 billion parameters during inference. This base model achieves performance comparable to (or even slightly better than) the dense Qwen3-32B model, while using less than 10% of its training cost (GPU hours). In inference, especially with context lengths over 32K ..."
-    }
-  ]
+  "sources": []
 }

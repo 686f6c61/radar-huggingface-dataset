@@ -2,108 +2,100 @@
 
 ## Resumen
 
-`gector-bert-fr` es un modelo de corrección gramatical del francés desarrollado por Proofbird, la empresa detrás de una extensión de escritorio para Windows que revisa ortografía y gramática mientras se escribe. El modelo sigue el paradigma GECToR: en lugar de reescribir o parafrasear el texto, predice para cada token una etiqueta de edición (mantener, borrar, reemplazar, añadir, cambiar mayúsculas o cambiar terminación) y aplica esas ediciones de forma iterativa. Está publicado para que cualquiera pueda inspeccionar qué se ejecuta en su propia máquina, ya que el producto funciona íntegramente en local.
+`gector-bert-fr` es un modelo de corrección gramatical del francés desarrollado por Proofbird, el equipo detrás de la aplicación de asistencia de escritura del mismo nombre. Se trata de un etiquetador de secuencias de estilo GECToR construido sobre el encoder `Geotrend/bert-base-fr-cased` (la reducción francesa de mBERT) y exportado a ONNX en fp32 para ejecutarse en CPU, lo que permite corrección gramatical en el propio dispositivo sin GPU ni conexión a servicios externos.
 
-Técnicamente es un encoder BERT base en francés (`Geotrend/bert-base-fr-cased`, reducción francesa de mBERT) con dos cabezas superpuestas: una de etiquetado de ediciones con 5 000 etiquetas y otra de detección de errores. El modelo se exporta a ONNX en fp32 (opset 17) para ejecutarse en CPU, sin GPU ni clave de API. El repositorio ocupa 0,4 GB y la licencia es Apache-2.0.
+El modelo no reescribe ni parafrasea el texto: para cada token predice una etiqueta de edición (mantener, borrar, reemplazar, añadir, cambiar mayúsculas o terminación) entre un vocabulario de 5 000 etiquetas, aplica las ediciones y vuelve a etiquetar la frase hasta cinco iteraciones. Incorpora además una cabeza de detección de errores. Su relevancia radica en que ofrece corrección gramatical francesa con licencia Apache-2.0, sin datos de aprendices ni corpus no comerciales, y ejecutable en local.
 
-Su relevancia radica en el enfoque de precisión sobre recall: está entrenado para no tocar texto correcto (0,43 % de falsos positivos sobre 4 000 frases de Tatoeba) y para proponer solo ediciones locales, nunca paráfrasis. Es un caso poco habitual de modelo de corrección gramatical publicado con guards de aplicación explícitos (`gector-guards.json`) y con métricas de estabilidad frente a perturbaciones de entrada.
+La versión publicada es la 1.3.2 (archivos de modelo 1.3.0, run `2026-11-17-0743`), con un tamaño de repositorio de 0,9 GB y 302 descargas en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder (BERT base) con cabezas de etiquetado de ediciones (GECToR) |
-| Parametros totales | no disponible (base: BERT base, ~110 M) |
+| Arquitectura | Transformer encoder BERT (Geotrend/bert-base-fr-cased) con cabeza de etiquetado GECToR (5 000 etiquetas de edición) y cabeza de detección de errores |
+| Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (limitada por el encoder BERT base, típicamente 512 tokens) |
-| Tipos de cuantizacion | fp32 (exportación ONNX); no se documentan otras |
-| Idiomas soportados | francés (`fr`) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | fp32 (exportación ONNX publicada); no se documentan otras |
+| Idiomas soportados | francés (fr) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | ONNX (`model.onnx`, opset 17) + tokenizer WordPiece (`vocab.txt`, `tokenizer.json`) |
-| Etiquetas de edición | 5 000 |
-| Salidas | `logits_labels` [1, T, 5000], `logits_d` [1, T, 2] |
-| Version | v1.0.0, run `2026-11-07-1303` |
-| Tamano del repo | 0,4 GB |
+| Formato de pesos | ONNX (fp32) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un tagger secuencial estilo GECToR construido sobre `Geotrend/bert-base-fr-cased`, un BERT base en francés derivado de mBERT. Sobre el encoder se sitúan dos cabezas: una de clasificación de ediciones con 5 000 etiquetas (mantener, borrar, reemplazar por una palabra, añadir una palabra, cambiar mayúsculas, cambiar terminación) y otra de detección de errores con dos clases. En inferencia, el tagger propone ediciones locales, estas se aplican y la frase se re-etiqueta hasta cinco veces. El modelo nunca parafrasea ni reescribe oraciones completas.
+El modelo sigue el paradigma GECToR: un encoder BERT base en francés con case (Geotrend) sobre el que se montan dos cabezas, una de etiquetado de ediciones con 5 000 etiquetas y otra de detección de errores. La inferencia es iterativa: se predicen etiquetas por token, se aplican las ediciones y se vuelve a etiquetar la frase hasta un máximo de cinco pasadas. El tagger solo propone ediciones locales, nunca parafrasea.
 
-El entrenamiento es exclusivamente sintético. Se partió de 3 000 000 de frases de Wikipedia en francés (`wikimedia/wikipedia`, `20231101.fr`) y 250 000 frases de Tatoeba, corrompidas con reglas de error escritas a mano para el francés; alrededor del 10 % se dejan limpias para que el modelo aprenda a no tocar texto correcto. Se añadieron 176 000 frases de plantilla para cubrir patrones poco frecuentes en Wikipedia (primera y segunda persona, preguntas, participios en plural, concordancia en una cláusula posterior). No se usaron corpus de aprendices ni datos no comerciales, ni texto de usuarios. El entrenamiento fue de una época (111 854 pasos, batch 64, learning rate 3e-5) en una NVIDIA L4. No se documenta RLHF ni DPO.
+El entrenamiento es exclusivamente sintético, con 3 250 000 frases de tres fuentes: 1 500 000 de Wikipedia francesa (`wikimedia/wikipedia`, `20231101.fr`), 1 500 000 de los proceedings del Parlamento Europeo (Europarl v10, sesiones 1996 – mayo 2011) y 250 000 de Tatoeba. La corrupción se generó con reglas de error escritas a mano y validadas sobre texto real (se descartaba un patrón si el "error" también aparecía como francés correcto); alrededor del 10 % del texto permanece limpio para enseñar al modelo a no tocar lo correcto. Para patrones difíciles se añadieron 80 750 líneas extra y 62 520 pares de frases con el error colocado exactamente sobre el patrón, más 176 000 frases de plantilla para cubrir primera y segunda persona, preguntas, participios plurales y concordancia en cláusulas posteriores. No se usaron corpus de aprendices ni datos no comerciales, ni texto de usuarios. Entrenamiento de una época (118 361 pasos, batch 64, learning rate 3e-5) en una NVIDIA L4; los pesos publicados son el último paso.
 
 ## Capacidades
 
 - Corrección de concordancia de género y número en adjetivos, participios pasados tras `être` y sustantivos tras numerales y determinantes (`Les filles sont fatigué` → `fatiguées`).
-- Concordancia sujeto-verbo (`Les enfants joue` → `jouent`).
-- Persona verbal tras `vous` y `tu` (`Vous a raison` → `avez`).
-- Acentos que cambian la palabra (`a` → `à`, `ou` → `où` en preguntas).
-- Preposiciones contractas (`à le` → `au`, `de le` → `du`).
-- Elisión (`le arbre` → `l'arbre`).
-- Palabras y artículos duplicados (`la la porte`).
-- Homófonos frecuentes y mayúscula inicial de frase.
-- Detección de errores mediante cabeza dedicada (`logits_d`).
-- Salida con posiciones de carácter (`start`, `length`), texto original y reemplazo, apta para subrayar y ofrecer la corrección en una interfaz.
-- Ejecución en CPU vía ONNX Runtime, sin GPU ni clave de API.
-- No soporta tool calling, agentes, visión, audio ni modo thinking.
+- Femininos irregulares (`La voiture était très vieux` → `vieille`).
+- Concordancia sujeto-verbo (`Les enfants joue` → `jouent`) y persona verbal tras `vous` y `tu` (`Vous a raison` → `avez`).
+- Acentos que cambian la palabra (`a` → `à`, `ou` → `où` en preguntas, `garée la` → `là`).
+- Preposiciones contractas (`à le` → `au`, `de le` → `du`) y elisión (`le arbre` → `l'arbre`).
+- Artículo de un sustantivo en una cláusula posterior (`…, et le voiture est garée` → `la voiture`).
+- Palabras y artículos duplicados (`la la porte`), homófonos frecuentes y mayúscula inicial de frase.
+- Salida con sugerencias posicionadas por carácter (`start`, `length`, `original`, `replacement`), apta para subrayar y ofrecer la corrección en una interfaz.
+- Ejecución en CPU vía ONNX Runtime, sin GPU ni clave de API; orientado a on-device.
+- No soporta tool calling, agentes, visión, audio ni modo thinking: es un etiquetador de corrección gramatical, no un modelo generativo conversacional.
 
 ## Casos de uso
 
-- **Asistente de escritura de escritorio**: integrado en una app tipo Proofbird para Windows, el modelo revisa mientras se escribe y subraya sugerencias con posición de carácter exacta, sin enviar texto a la nube. Es adecuado por su tamaño reducido y su ejecución en CPU.
-- **Corrección en editores y formularios web**: al exportarse a ONNX, puede embeberse en aplicaciones web o de escritorio que necesiten validar texto francés antes de enviarlo, con latencia de CPU y sin dependencia de servidores.
-- **Preprocesado de corpus franceses**: limpieza de concordancias y acentos en textos de Wikipedia o Tatoeba antes de usarlos en pipelines de NLP, aprovechando que el modelo está entrenado para dejar intacto el texto correcto.
-- **Herramientas de accesibilidad**: sugerencias de corrección con posiciones de carácter para lectores de pantalla y editores con resaltado, gracias a la estructura `start`/`length`/`original`/`replacement`.
-- **Filtro de calidad en publicación de contenidos**: revisión de borradores en francés en CMS o plataformas editoriales para detectar errores de concordancia y acentos antes de publicar.
-- **Evaluación y docencia de francés**: uso como corrector de referencia en ejercicios, con la precaución de que no se ha medido sobre ensayos de aprendices y puede fallar en errores irregulares.
-- **Integración en pipelines de CI de documentación**: validación automática de ficheros Markdown o documentación en francés para detectar errores gramaticales básicos antes de fusionar cambios.
+- Asistente de escritura en el navegador: el modelo se ejecuta en local mediante ONNX Runtime y WASM/Web, de modo que el texto del usuario nunca sale de la página; adecuado para extensiones y editores web que priorizan privacidad.
+- Corrección en procesadores de textos y clientes de correo de escritorio: al ser un modelo de 0,9 GB en fp32 y ejecutarse en CPU, puede empaquetarse en aplicaciones nativas sin depender de servidores.
+- Preprocesado de corpus franceses: limpiar concordancias y acentos en textos scrapeados o transcripciones antes de alimentar otros pipelines de NLP.
+- Herramientas educativas de francés: ofrecer sugerencias localizadas por carácter (posición, original, reemplazo) permite explicar el error al estudiante en lugar de reescribir la frase.
+- Filtrado de calidad en plataformas de contenido generado por usuarios: detectar y corregir errores gramaticales frecuentes en comentarios o formularios antes de publicarlos.
+- Integración en pipelines de CI de documentación: corregir de forma automática concordancias y acentos en ficheros Markdown o documentación en francés sin enviar contenido a APIs externas.
+- Corrección de subtítulos y transcripciones: al trabajar sobre texto plano y con ediciones locales, encaja en flujos de postprocesado de ASR en francés.
 
 ## Benchmarks y rendimiento
 
-| Prueba | Resultado |
+| Comprobación | Resultado |
 |---|---|
-| Gold set (618 frases escritas a mano: 478 con un error, 140 correctas) | 472 corregidas, 140 intactas, 6 no detectadas, 0 empeoradas |
-| Falsas alarmas sobre 4 000 frases de Tatoeba (held out) | 17 modificadas (0,43 %); 9 de ellas corrigen errores reales del texto de Tatoeba |
-| Estabilidad: gold re-ejecutado con un token extra al inicio | 4 frases cambian de resultado (las 4 filas de mayúsculas cambian por construcción y no se cuentan) |
+| Conjunto gold (618 frases escritas a mano: 478 con un error, 140 correctas) | 478 corregidas, 140 intactas, 0 no detectadas, 0 empeoradas |
+| Correcciones erróneas sobre 4 000 frases cotidianas de Tatoeba (reservadas del entrenamiento) | el dato queda truncado en la información disponible |
 
-El gold score se obtiene con los guards de aplicación de `gector-guards.json`. No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El modelo no se ha medido sobre ensayos de aprendices.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- Inferencia en CPU: el modelo se exporta a ONNX fp32 y está pensado para ejecutarse sin GPU.
-- VRAM: no requiere GPU; el consumo es de RAM del sistema (repo de 0,4 GB, modelo BERT base fp32).
-- GPU recomendadas: no necesarias; el entrenamiento se hizo en una NVIDIA L4, pero la inferencia es de CPU.
-- Cabe en cualquier equipo de consumo: sí, al ser un BERT base en fp32 ejecutado en CPU.
-- Opciones de despliegue: ONNX Runtime (documentado), con `quickstart.py` como referencia; no se documentan vLLM, llama.cpp, Ollama ni TGI (no aplican a un tagger ONNX de este tipo).
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada: no aplica; la exportación publicada es ONNX fp32 pensada para CPU.
+- GPU recomendadas: no necesarias; el modelo está diseñado para ejecutarse en CPU. El entrenamiento se realizó en una NVIDIA L4, pero la inferencia no requiere GPU.
+- Cabe en GPU de consumo: sí, aunque su objetivo es CPU; cualquier GPU consumer podría ejecutarlo, pero no es el escenario previsto.
+- Opciones de despliegue: ONNX Runtime (vía `quickstart.py` del repositorio), con dependencias `onnxruntime`, `tokenizers` y `huggingface_hub`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Autor | Idioma | Arquitectura | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| `proofbird/gector-bert-fr` | Proofbird | fr | BERT base + GECToR | Apache-2.0 | ONNX fp32 | Corrección local, on-device, guards incluidos |
-| `proofbird/gector-bert-en` | Proofbird | en | BERT base + GECToR | Apache-2.0 | ONNX | Versión inglesa del mismo enfoque |
-| `Geotrend/bert-base-fr-cased` | Geotrend | fr | BERT base | Apache-2.0 | safetensors | Encoder base sin cabeza GEC, no corrige por sí solo |
+| Modelo | Tipo | Idiomas | Licencia | Ejecución | Datos de entrenamiento |
+|---|---|---|---|---|---|
+| proofbird/gector-bert-fr | GECToR sobre BERT base, ONNX | fr | Apache-2.0 | CPU / on-device | Sintético (Wikipedia, Europarl, Tatoeba) |
+| Modelos GECToR multilingües (p. ej. variantes sobre mBERT/XLM-R) | GECToR | varios | variable | GPU/CPU | variable; no disponible en la información |
+| Correctores generativos tipo seq2seq (p. ej. mT5/T5 fine-tuned para GEC) | encoder-decoder | varios | variable | GPU preferente | variable; no disponible en la información |
 
-No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada.
+No se dispone en la información proporcionada de datos comparativos de rendimiento frente a alternativas concretas; la comparación anterior es estructural.
 
 ## Limitaciones y advertencias
 
-- Entrenado solo con datos sintéticos: no se ha medido sobre ensayos de aprendices ni sobre errores humanos reales fuera del gold set.
-- Fallos conocidos: `où` al final de frase o tras una cláusula con coma, y femeninos irregulares en una cláusula posterior (`la voiture était très vieux`).
-- Sin guards, el modelo puede proponer no-palabras para adjetivos irregulares (`vieux` → `vieuse`); la app retiene toda no-palabra, pero un integrador debe aplicar `gector-guards.json`.
-- Falsas alarmas documentadas: `un jour ou l'autre` → `où` y cambio de pronombre objeto (`Nous ne la comprîmes pas` → `le`).
-- Solo francés; no soporta otros idiomas ni cambio de código.
-- No parafrasea ni reescribe: solo aplica ediciones locales token a token.
-- Licencia Apache-2.0 permite uso comercial, pero el modelo se distribuye sin garantías y con métricas limitadas a los conjuntos descritos.
-- No hay datos publicados de latencia, throughput ni comportamiento con contextos largos más allá del límite del encoder BERT base.
+- Solo corrige francés; no hay soporte multilingüe.
+- Es un etiquetador de ediciones locales: no reescribe, no parafrasea y no corrige problemas de estilo o estructura que requieran cambios no locales.
+- Entrenado únicamente con datos sintéticos generados por reglas; los errores no cubiertos por esas reglas pueden no detectarse.
+- Riesgo de falsos positivos sobre construcciones correctas poco frecuentes, aunque el conjunto de validación reporta 0 correcciones empeoradas en 618 frases y el entrenamiento incluye un 10 % de texto limpio.
+- No se documentan sesgos específicos; al derivar de Wikipedia, Europarl y Tatoeba, puede heredar sesgos de esas fuentes.
+- La licencia Apache-2.0 permite uso comercial, pero el modelo base `Geotrend/bert-base-fr-cased` también es Apache-2.0 según la model card.
+- El dato de correcciones erróneas sobre Tatoeba está truncado en la información disponible; conviene verificarlo antes de desplegar en producción.
+- La longitud de contexto no está documentada; frases muy largas pueden requerir troceado.
+- Las versiones se gestionan por tags (`v1.3.0`, `v1.2.0`, `v1.1.0`, `v1.0.0`); para producción conviene fijar `revision="v1.3.0"`.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/proofbird/gector-bert-fr
-- Versión fijada v1.0.0: https://huggingface.co/proofbird/gector-bert-fr/tree/v1.0.0
+- Demo en el navegador (HF Space): https://huggingface.co/spaces/proofbird/try-grammar
 - Quickstart en Colab: https://colab.research.google.com/#fileId=https%3A//huggingface.co/proofbird/gector-bert-fr/blob/main/quickstart.ipynb
+- Aplicación Proofbird: https://proofbird.app
 - Modelo base: https://huggingface.co/Geotrend/bert-base-fr-cased
 - Dataset de entrenamiento: https://huggingface.co/datasets/wikimedia/wikipedia
 - Tatoeba: https://tatoeba.org
-- Producto Proofbird: https://proofbird.app
-- Perfil del autor: https://huggingface.co/proofbird
-- Versión inglesa: https://huggingface.co/proofbird/gector-bert-en
+- Tag de la versión publicada: https://huggingface.co/proofbird/gector-bert-fr/tree/v1.3.2

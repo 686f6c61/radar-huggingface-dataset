@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ApolloRaines/Mixtral-8x7B-Instruct-v0.1-Parasite · Hugging Face",
-      "url": "https://huggingface.co/ApolloRaines/Mixtral-8x7B-Instruct-v0.1-Parasite",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "GitHub - ChinaBots/Mixtral-8x7B-Instruct-v0.1",
-      "url": "https://github.com/ChinaBots/Mixtral-8x7B-Instruct-v0.1",
-      "snippet": "The Mixtral-8x7B Large Language Model (LLM) is a pretrained generative Sparse Mixture of Experts. The Mixtral-8x7B outperforms Llama 2 70B on most benchmarks we tested."
-    },
-    {
-      "title": "Mixtral 8x7B - docs.mistral.ai",
-      "url": "https://docs.mistral.ai/models/mixtral-8x7b-0-1",
-      "snippet": "Our first open MoE model, SOTA competing against models up to 2 to 3x larger."
-    },
-    {
-      "title": "mistralai/Mixtral-8x7B-Instruct-v0.1 · Hugging Face",
-      "url": "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1",
-      "snippet": "Limitations The Mixtral-8x7B Instruct model is a quick demonstration that the base model can be easily fine-tuned to achieve compelling performance. It does not have any moderation mechanisms. We&#x27;re looking forward to engaging with the community on ways to make the model finely respect guardrails, allowing for deployment in environments requiring moderated outputs. The Mistral AI Team Albert ..."
-    },
-    {
-      "title": "mixtral-8x7b-instruct-v0-1 | NVIDIA NGC",
-      "url": "https://catalog.ngc.nvidia.com/orgs/nim/teams/mistralai/containers/mixtral-8x7b-instruct-v0-1",
-      "snippet": "This container houses the Mixtral-8x7B-Instruct-v0.1, a sophisticated, instruction-tuned model from Mistral AI. It uses a Sparse Mixture of Experts (SMoE) architecture, dynamically selecting 2 of its 8 experts per token for greater efficiency."
-    }
-  ]
+  "sources": []
 }

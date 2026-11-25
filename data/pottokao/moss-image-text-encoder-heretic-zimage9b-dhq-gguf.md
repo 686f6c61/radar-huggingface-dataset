@@ -2,91 +2,88 @@
 
 ## Resumen
 
-MOSS-Image Text Encoder Heretic — Z-Image 9B entrance — DHQ GGUF es una cuantizacion GGUF del modelo pottokao/MOSS-Image-Text-Encoder-Heretic, un encoder de texto derivado de Qwen3.5-9B con la censura eliminada (decensored) y con 9.197.093.888 parametros. El autor, pottokao, lo publica como un unico archivo pensado para dos funciones simultaneas: codificar el prompt que consume el DiT de Z-Image Turbo a traves de una entrada de texto de 9B, y generar o reescribir prompts como modelo conversacional (prompt enhancer). Se conserva la cabeza MTP del modelo original.
+MOSS-Image-Text-Encoder-Heretic-ZImage9B-DHQ-GGUF es una cuantizacion GGUF de un codificador de texto basado en Qwen3.5-9B, publicada por el usuario pottokao. El modelo cumple una doble funcion: actua como text encoder para el modelo de difusion Z-Image Turbo con entrada de texto de 9B y, simultaneamente, funciona como prompt enhancer (generador de prompts) conservando la cabeza MTP. Los pesos en bf16 provienen de pottokao/MOSS-Image-Text-Encoder-Heretic, un modelo "decensored" (heretic), y esta build esta especificamente ajustada para Z-Image, no para MOSS-Image.
 
-La particularidad tecnica es que Z-Image oficial lee un encoder de 4B con dimension 2560, mientras que este archivo apunta a una variante de Z-Image Turbo cuyo `cap_embedder` se ha sustituido por una entrada de 9B: RMSNorm(4096, weight 1) seguida de una Linear 4096→3840 ajustada en forma cerrada a la entrada original de 4B. Por tanto, no es compatible con el Z-Image estandar. La cuantizacion DHQ elige el formato de cada tensor midiendo el dano en dos metricas: el error en la entrada de 9B de Z-Image y la KL de escritura de prompts.
+La particularidad tecnica principal es que el Z-Image oficial lee un text encoder de 4B con dimension 2560, mientras que este fichero sustituye esa entrada por una de 9B: una RMSNorm(4096, peso 1) seguida de una capa lineal 4096→3840 obtenida por ajuste en forma cerrada sobre la entrada original de 4B. Por tanto, no es plug-and-play con el Z-Image estandar: requiere el DiT modificado que el autor distribuye en el mismo repositorio.
 
-El resultado ocupa 7,17 GB, por debajo de un Q6_K estandar (~7,25 GB), con ningun tensor por debajo de Q5. Frente a Q8_0 (9,79 GB) presenta un error de entrada del 2,19% en mediana y 2,56% en maximo sobre 36 prompts de retrato reservados, y una KL de escritura de prompts de 0,0024 sobre 80 prompts. Esta pensado para el nodo ComfyUI Dual-Head Dragon del propio autor, que aun esta en pruebas, y requiere tener en cuenta que ComfyUI-GGUF todavia no carga archivos GGUF de Qwen3.5.
+La cuantizacion DHQ (Dual-Head Quantization) elige el formato de cada tensor en funcion del dano medido en dos metricas: el error en la entrada de Z-Image 9B (lo que lee el DiT, peso 1) y la KL de escritura de prompts (peso 0.5). El resultado es un fichero de 7,17 GB con mezcla Q5_K, Q6_K y Q8_0, sin ningun tensor por debajo de Q5. La licencia es Apache-2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (base Qwen3.5-9B) con cabeza MTP; usado como text encoder dual-head (entrada DiT + prompt enhancer) |
-| Parametros totales | 9.197.093.888 |
+| Arquitectura | Transformer decoder (Qwen3.5-9B) con cabeza MTP; doble uso como text encoder y prompt enhancer |
+| Parametros totales | 9.197.093.888 (9,2B) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF DHQ mixta: Q5_K (60 tensores), Q6_K (128 tensores), Q8_0 (60 tensores); ningun tensor por debajo de Q5 |
+| Tipos de cuantizacion | GGUF DHQ: Q5_K (60 tensores), Q6_K (128 tensores), Q8_0 (60 tensores); ningun tensor por debajo de Q5 |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (archivo principal de 7,17 GB); mmproj F16 opcional de 0,92 GB para vision |
+| Licencia | Apache-2.0 |
+| Formato de pesos | GGUF (fichero principal), safetensors NVFP4 (DiT), GGUF F16 (mmproj de vision) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.5-9B, un transformer decoder denso de 9.197 millones de parametros, al que se ha aplicado un proceso de decensoring (marcado como "heretic") y se le ha conservado la cabeza MTP (multi-token prediction). El uso previsto es doble: por un lado actua como encoder de texto para el DiT de Z-Image Turbo, emitiendo representaciones que el DiT consume en su entrada; por otro, funciona como LLM conversacional para escribir y mejorar prompts.
+El modelo es una cuantizacion de un Qwen3.5-9B "decensored" (etiquetado heretic) que conserva la cabeza MTP (multi-token prediction). Se usa en dos modos sobre el mismo fichero: codificacion del prompt que consume el DiT de Z-Image Turbo y generacion de prompts (prompt enhancer). El repositorio incluye ademas un mmproj F16 opcional de 0,92 GB que anade vision, y un DiT NVFP4 de 4,95 GB (Z-Image Turbo de Tongyi-MAI, Apache-2.0) en el que solo se han sustituido tres tensores del text entrance: `cap_embedder.0.weight` = ones(4096), y `cap_embedder.1.weight`/`bias` correspondientes al ajuste 4096→3840. El resto de tensores del DiT son identicos bit a bit al original NVFP4.
 
-La innovacion principal de esta publicacion no esta en el entrenamiento sino en la cuantizacion DHQ. En lugar de aplicar una receta uniforme, el autor selecciona el formato de cada tensor midiendo el dano en dos "reglas": el error relativo L2 en la salida de la entrada de 9B de Z-Image (peso 1, lo que lee el DiT) y la divergencia KL de la escritura de prompts respecto a Q8_0 (peso 0,5). No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO en el modelo base.
+La innovacion central es la cuantizacion DHQ: en lugar de aplicar una receta generica, cada tensor recibe un formato elegido a partir del dano medido en dos "reglas": el error relativo L2 en la salida del text entrance de Z-Image 9B (evaluado con el motor real de llama.cpp sobre 36 prompts de retrato reservados) y la divergencia KL de escritura de prompts frente a Q8_0 sobre 80 prompts generados por el propio modelo. No se dispone de informacion sobre el dataset de entrenamiento original del modelo base, numero de tokens, ni si hubo RLHF/DPO.
 
 ## Capacidades
 
-- Codificacion de prompts para el DiT de Z-Image Turbo a traves de una entrada de texto de 9B (RMSNorm 4096 → Linear 4096→3840).
-- Generacion y reescritura de prompts (prompt enhancer) en modo conversacional, conservando la cabeza MTP.
-- Generacion de texto y conversacion multi-turno como LLM de 9B (heredado de Qwen3.5).
-- Capacidad de vision opcional mediante el archivo `mmproj-moss-te-f16.gguf`.
-- Integracion con el nodo ComfyUI Dual-Head Dragon para el flujo dual-head (encoder + enhancer en un mismo archivo).
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Codificacion de texto para el DiT de Z-Image Turbo con entrada de 9B (dimension 4096 en lugar de la 2560 del encoder oficial de 4B).
+- Prompt enhancer: reescritura y expansion de prompts para generacion de imagenes, con cabeza MTP conservada.
+- Vision opcional mediante el mmproj F16 (`mmproj-moss-te-f16.gguf`).
+- Conversacional (tag `conversational` en el repositorio).
+- Compatible con endpoints (tag `endpoints_compatible`).
+- Uso como LLM de proposito general cercano al modelo sin cuantizar, segun el autor.
+- Integracion en ComfyUI mediante el nodo Dual-Head Dragon Loader (GGUF) con tipo `moss_image`.
 
 ## Casos de uso
 
-- Generacion de imagenes con Z-Image Turbo de entrada 9B: el archivo codifica el prompt para el DiT en una sola pasada, sustituyendo al encoder de 4B en configuraciones cuyo `cap_embedder` se ha reemplazado por la entrada de 9B.
-- Prompt engineering automatizado en ComfyUI: el mismo archivo reescribe prompts de usuario en descripciones mas detalladas antes de enviarlas al DiT, con una KL de 0,0024 frente a Q8_0, lo que mantiene la fidelidad del texto generado.
-- Flujos dual-head en el nodo Dual-Head Dragon: un unico GGUF sirve tanto de encoder como de enhancer, simplificando la gestion de modelos y reduciendo el uso de VRAM frente a cargar dos modelos separados.
-- Prototipado de pipelines text-to-image en local: con 7,17 GB el archivo cabe en GPUs de consumo con 8-12 GB de VRAM en cuantizacion DHQ, lo que permite iterar sin infraestructura dedicada.
-- Investigacion sobre cuantizacion selectiva: el enfoque DHQ y sus metricas (error de entrada y KL de prompts) sirven como referencia para estudiar el impacto de la cuantizacion en encoders de texto para difusion.
-- Analisis de imagen con el mmproj opcional: el archivo de vision F16 (0,92 GB) permite tareas multimodales ligeras junto al modelo principal en el mismo entorno ComfyUI.
-- Evaluacion de modelos decensored: util para investigadores que estudian el efecto del decensoring en la calidad de codificacion y en la generacion de prompts.
+- Generacion de imagenes con Z-Image Turbo de 9B en ComfyUI: cargar el DiT `z_image_turbo_9b_entrance_nvfp4.safetensors`, el GGUF como text encoder y el VAE `ae.safetensors`, con ModelSamplingAuraFlow shift 3, KSampler de 8 pasos, cfg 1 y sampler `res_multistep`/`simple` (plantilla oficial de Z-Image Turbo).
+- Mejora automatica de prompts en pipelines de text-to-image: el mismo fichero reescribe prompts cortos en descripciones detalladas antes de pasarlas al DiT, con una KL de 0,0024 frente a Q8_0 en esta tarea.
+- Despliegue en hardware con VRAM limitada: el GGUF de 7,17 GB es mas pequeno que un Q6_K estandar (~7,25 GB), lo que permite ejecutar el encoder en GPUs de consumo alto sin renunciar a precision en la entrada del DiT.
+- Prototipado de pipelines text-to-image personalizados: al ser Apache-2.0 y estar en GGUF, se puede integrar en herramientas basadas en llama.cpp y en flujos de ComfyUI sin dependencias propietarias.
+- Investigacion sobre cuantizacion selectiva: el enfoque DHQ y las metricas publicadas (error de entrada 2,19% mediana / 2,56% maximo frente a Q8_0) sirven como referencia para estudiar el impacto de la cuantizacion en encoders de difusion.
+- Uso conversacional o de generacion de texto como LLM de 9B cuantizado, manteniendo un comportamiento cercano al modelo sin cuantizar segun el autor.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Este archivo (DHQ 7,17 GB) | Q8_0 (9,79 GB) | Q4_K_M estandar (5,78 GB) |
-|---|---|---|---|
-| Error de entrada Z-Image vs Q8_0 (36 prompts de retrato, mediana) | 2,19% | referencia | no disponible |
-| Error de entrada Z-Image vs Q8_0 (36 prompts de retrato, maximo) | 2,56% | referencia | no disponible |
-| KL de escritura de prompts vs Q8_0 (80 prompts) | 0,0024 | referencia | 0,0136 |
-| Tamano | 7,17 GB | 9,79 GB | 5,78 GB |
+| Metrica | Este fichero (DHQ) | Q4_K_M estandar |
+|---|---|---|
+| Error en la entrada de Z-Image vs Q8_0 (36 prompts de retrato reservados, mediana / maximo) | 2,19% / 2,56% | no disponible |
+| KL de escritura de prompts vs Q8_0 (80 prompts) | 0,0024 | 0,0136 |
+| Tamano del fichero | 7,17 GB | 5,78 GB |
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. Las metricas anteriores son medidas internas del autor con el motor real de llama.cpp.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 7,5-8,5 GB para el archivo principal en DHQ, mas overhead de contexto; unos 1 GB adicionales si se carga el mmproj de vision.
-- GPU recomendadas: RTX 4090 (24 GB), RTX 4080 (16 GB), RTX 4070 Ti (12 GB) para el modelo completo con margen; A100 y H100 para despliegues con mayor concurrencia.
-- Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas de VRAM en cuantizacion DHQ; en 8 GB ajustado, conviene reducir el contexto.
-- Opciones de despliegue: llama.cpp (motor con el que se midieron las metricas), nodo ComfyUI Dual-Head Dragon; ComfyUI-GGUF no carga todavia archivos GGUF de Qwen3.5; vLLM, Ollama y TGI no estan confirmados en la informacion disponible.
+- VRAM estimada para inferencia del text encoder: aproximadamente 7,2 GB solo para los pesos en el fichero DHQ, mas overhead de contexto y de la cache KV.
+- El pipeline completo requiere ademas el DiT NVFP4 (4,95 GB) y el VAE, por lo que conviene planificar holgura de VRAM adicional.
+- El mmproj de vision opcional anade 0,92 GB.
+- GPU recomendadas: no especificadas por el autor; por tamano, el encoder cabe en GPUs de consumo de gama alta (24 GB o mas) y en GPUs de datacenter (A100, H100) con margen amplio.
+- Opciones de despliegue: llama.cpp (motor usado para medir el error de entrada) y ComfyUI mediante el nodo Dual-Head Dragon Loader (GGUF). ComfyUI-GGUF no carga aun ficheros GGUF de Qwen3.5.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Formato / tamano | Licencia | Notas |
 |---|---|---|---|---|---|
-| Este modelo (DHQ GGUF) | 9,197 M | no disponible | GGUF 7,17 GB | Apache 2.0 | Encoder dual-head para Z-Image 9B + prompt enhancer |
-| MOSS-Image-Text-Encoder-Heretic (base) | 9,197 M | no disponible | safetensors | Apache 2.0 | Modelo sin cuantizar del que deriva este archivo |
-| Q8_0 del mismo modelo | 9,197 M | no disponible | GGUF 9,79 GB | Apache 2.0 | Referencia de calidad usada por el autor |
-| Q4_K_M estandar del mismo modelo | 9,197 M | no disponible | GGUF 5,78 GB | Apache 2.0 | Peor KL de prompts (0,0136) que DHQ |
-
-No se dispone de informacion sobre modelos comparables de otros autores en la misma categoria (encoders de texto de 9B para difusion) en la documentacion proporcionada.
+| Este modelo (DHQ GGUF) | 9,2B | no disponible | GGUF, 7,17 GB | Apache-2.0 | Text encoder + prompt enhancer para Z-Image 9B |
+| Q4_K_M estandar del mismo modelo | 9,2B | no disponible | GGUF, 5,78 GB | Apache-2.0 | KL de prompts 0,0136 frente a Q8_0 |
+| Q8_0 del mismo modelo | 9,2B | no disponible | GGUF, 9,79 GB | Apache-2.0 | Referencia de calidad en las metricas del autor |
+| Text encoder oficial de Z-Image | 4B (dim. 2560) | no disponible | no disponible | no disponible | Entrada estandar del DiT oficial; no compatible con esta build de 9B |
 
 ## Limitaciones y advertencias
 
-- No es compatible con el Z-Image estandar: requiere una variante de Z-Image Turbo con el `cap_embedder` sustituido por la entrada de 9B (RMSNorm 4096 → Linear 4096→3840).
-- ComfyUI-GGUF no carga actualmente archivos GGUF de Qwen3.5; el nodo Dual-Head Dragon del autor sigue en fase de pruebas.
-- El decensoring ("heretic") puede introducir sesgos o contenido no filtrado; no se detalla el proceso ni sus efectos.
-- Riesgo de alucinacion inherente a un LLM de 9B, especialmente en la generacion de prompts y en uso conversacional.
-- No hay informacion sobre idiomas soportados, longitud de contexto ni datos de entrenamiento, lo que limita la evaluacion de su comportamiento fuera del caso de uso previsto.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo base y el proceso de decensoring deben revisarse para cumplir con las politicas de despliegue.
-- Modelo con 0 descargas y 0 likes en el momento de la ficha; no hay validacion externa de las metricas publicadas.
+- No es compatible con el Z-Image estandar: requiere el DiT con entrada de 9B que el autor distribuye en el mismo repositorio.
+- El nodo Dual-Head Dragon para ComfyUI sigue en pruebas y ComfyUI-GGUF no soporta todavia GGUF de Qwen3.5, lo que limita el despliegue fuera de ese nodo.
+- El modelo base es una variante "heretic"/decensored, lo que puede implicar sesgos y contenido no filtrado; no se documentan evaluaciones de seguridad.
+- Riesgo de alucinacion y de degradacion en la escritura de prompts no cuantificada mas alla de la KL publicada frente a Q8_0.
+- Idiomas soportados no documentados.
+- Longitud de contexto no documentada.
+- La licencia Apache-2.0 permite uso comercial, pero el DiT y el VAE asociados tienen sus propias condiciones (el DiT es Apache-2.0 de Tongyi-MAI; el VAE no se detalla).
+- Las metricas de calidad solo cubren dos tareas concretas (entrada del DiT y escritura de prompts) sobre conjuntos de 36 y 80 prompts; no hay evaluacion general del modelo como LLM.
 
 ## Enlaces
 

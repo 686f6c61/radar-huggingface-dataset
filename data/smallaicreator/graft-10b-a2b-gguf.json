@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "SmallAICreator/GRAFT-1B · Hugging Face",
-      "url": "https://huggingface.co/SmallAICreator/GRAFT-1B",
-      "snippet": "SmallAICreator / GRAFT-1B Like 0 Text Generation GGUF 6 languages qwen3 llama.cpp conversational small-language-model on-device graft ultralabs License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "GGUF Model Discovery - Browse & Download AI Models",
-      "url": "https://local-ai-zone.github.io/",
-      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
-    },
-    {
-      "title": "TOP local AI models (gguf) for complete web app development (no coding ...",
-      "url": "https://discuss.huggingface.co/t/top-local-ai-models-gguf-for-complete-web-app-development-no-coding-for-2026/174336",
-      "snippet": "Pls some one tell me , the best local ai models (GGUF) for complete web app development (no coding) for 2026. And the best linux/unix engines for that too. . Thanks buddies."
-    },
-    {
-      "title": "Model Gallery - LocalAI",
-      "url": "https://localai.io/docs/models/",
-      "snippet": "Model Gallery The model gallery is a curated collection of models configurations for LocalAI that enables one-click install of models directly from the LocalAI Web interface. A list of the models available can also be browsed at the Public LocalAI Gallery. LocalAI to ease out installations of models provide a way to preload models on start and downloading and installing them in runtime. You ..."
-    },
-    {
-      "title": "GGUF Quantization Guide: Shrink LLMs 72% [2026]",
-      "url": "https://tech-insider.org/gguf-model-quantization-2026/",
-      "snippet": "What Is GGUF, and Why Quantize Models Yourself in 2026? GGUF is a single-file binary format built by the llama.cpp project to store model weights, tokenizer data and metadata together in one package, including architecture details like layer count, attention-head count, context length and vocabulary size, as a February 2026 explainer from AI Learning Hub lays out, that loads fast and runs on ..."
-    }
-  ]
+  "sources": []
 }

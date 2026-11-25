@@ -2,106 +2,109 @@
 
 ## Resumen
 
-Wolf Defender Prompt Injection (v2.1) es un clasificador de texto binario desarrollado por Patronus Studio para detectar intentos de prompt injection y jailbreak antes de que el contenido llegue al modelo generativo. Se construye sobre `jhu-clsp/mmBERT-base`, un encoder ModernBERT multilingüe, y se distribuye con pesos en safetensors y ONNX (incluyendo variantes cuantizadas) para inferencia local en CPU o GPU sin dependencias de servicios externos.
+Wolf Defender Prompt Injection es un clasificador binario de texto disenado para detectar intentos de prompt injection y jailbreak en entradas dirigidas a modelos de lenguaje y agentes autonomos. Lo desarrolla Patronus Studio y se construye sobre el modelo base jhu-clsp/mmBERT-base, un transformer tipo ModernBERT multilingue de aproximadamente 307,5 millones de parametros. Su funcion es actuar como guardrail de seguridad: recibe un texto (prompt de usuario, contenido recuperado de un RAG, salida de una herramienta o resultado de una busqueda web) y devuelve una etiqueta que indica si contiene un ataque de inyeccion o no.
 
-El modelo resuelve un problema concreto de seguridad en despliegues de LLM y agentes: filtrar instrucciones maliciosas embebidas en entradas de usuario, documentos recuperados en pipelines RAG, correos, páginas web o salidas de herramientas de agente. Con 307,5 millones de parámetros totales y un enfoque de clasificación de secuencias, está pensado como guardrail de baja latencia que se ejecuta antes del modelo principal.
+La relevancia actual del modelo radica en que los agentes basados en LLM procesan cada vez mas contenido no confiable (documentos, correos, respuestas de APIs, paginas web) y son vulnerables a instrucciones maliciosas embebidas en ese contenido. Wolf Defender ofrece una capa de filtrado ligera que puede ejecutarse en CPU, con variantes ONNX cuantizadas y un enfoque explicito en inferencia local y en el despliegue dentro de pipelines de agentes. La version documentada es la v2.2, con licencia Apache 2.0 y soporte declarado de ingles y aleman, aunque su base mmBERT es multilingue.
 
-Su relevancia actual radica en la combinación de licencia Apache 2.0, soporte multilingüe declarado (inglés y alemán), disponibilidad en formato ONNX cuantizado para inferencia en CPU y su adopción en integraciones de terceros como Apache Camel, TrustyAI, AI-Parrot, Delphi Security xaIDR y Red Hat AI. La versión 2.1 amplía la cobertura frente a inyecciones indirectas y contenido no confiable en flujos de agentes.
+El modelo acumula mas de 10.000 descargas y aparece integrado en proyectos como Apache Camel, TrustyAI, AI-Parrot, Delphi Security xaIDR, Personaxis, Wanaku y Mygentic Cello, ademas de estar redistribuido por Red Hat AI en Hugging Face. Esa adopcion en herramientas de seguridad y orquestacion de agentes lo situa como una pieza practica dentro del ecosistema de guardrails open source.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | ModernBERT (encoder transformer), basado en `jhu-clsp/mmBERT-base` |
-| Parámetros totales | 307.531.778 |
-| Parámetros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer encoder tipo ModernBERT (base: jhu-clsp/mmBERT-base), clasificacion de secuencias binaria |
+| Parametros totales | 307.531.778 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | ONNX cuantizado (variantes Small ONNX FP32 y Edge mencionadas en la model card); lista completa no disponible |
-| Idiomas soportados | inglés (en), alemán (de); la model card menciona capacidad multilingüe y pruebas con entradas benignas en español |
+| Tipos de cuantizacion | ONNX FP32 y variantes cuantizadas (ONNX quantized); cuantizaciones adicionales no disponibles |
+| Idiomas soportados | aleman (de), ingles (en); base mmBERT multilingue |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, ONNX (con variantes cuantizadas) |
+| Formato de pesos | safetensors, ONNX |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un encoder transformer de la familia ModernBERT, inicializado desde `jhu-clsp/mmBERT-base` y adaptado como clasificador de secuencias binario (etiquetas de inyección / no inyección). La arquitectura ModernBERT incorpora atención con soporte para secuencias largas y eficiencia en CPU, lo que explica la orientación del modelo a inferencia local y en dispositivo. No se detallan en la información disponible el número de capas, dimensiones ocultas ni la longitud máxima de secuencia efectiva.
+El modelo es un clasificador de secuencias construido sobre mmBERT-base, un encoder transformer de la familia ModernBERT adaptado a entorno multilingue. La cabeza de clasificacion es binaria: distingue entre entrada benigna y entrada con intento de prompt injection o jailbreak. El repositorio incluye pesos en safetensors para transformers y exportaciones ONNX, incluidas versiones cuantizadas orientadas a inferencia en CPU y en dispositivo.
 
-El entrenamiento combina una treintena de datasets públicos orientados a prompt injection, jailbreak, seguridad de agentes, tool calling, RAG y multilingüismo, entre ellos `deepset/prompt-injections`, `Lakera/mosscap_prompt_injection`, `allenai/wildjailbreak`, `microsoft/llmail-inject-challenge`, `jackhhao/jailbreak-classification`, `xTRam1/safe-guard-prompt-injection`, `imoxto/prompt_injection_cleaned_dataset-v2` y `gretelai/synthetic_multilingual_llm_prompts`, además de datasets de instrucciones generales como `HuggingFaceH4/ultrachat_200k` y `VMware/open-instruct` para reducir falsos positivos sobre texto benigno. No se especifican en la información proporcionada el volumen total de tokens, la composición exacta por proporción ni si se aplicaron etapas de RLHF o DPO; al tratarse de un clasificador, el ajuste se realiza mediante aprendizaje supervisado sobre etiquetas binarias.
+El entrenamiento combina un conjunto amplio de datasets publicos, entre ellos deepset/prompt-injections, jackhhao/jailbreak-classification, Lakera/mosscap_prompt_injection, microsoft/llmail-inject-challenge, allenai/wildjailbreak, xTRam1/safe-guard-prompt-injection, imoxto/prompt_injection_cleaned_dataset-v2 y varios corpus multilingues (chino, malayo, ruso, asi como gretelai/synthetic_multilingual_llm_prompts). Tambien se incluyen datos de instrucciones y conversacion (HuggingFaceH4/ultrachat_200k, VMware/open-instruct, akoksal/LongForm, iamtarun/code_instructions_120k_alpaca) y conjuntos orientados a agentes y tool calling (interstellarninja/tool-calls-multiturn, AlignmentLab-AI/agentcode, alwaysfurther/agent-social-eng-attacks-sample). La model card no detalla el numero exacto de tokens de entrenamiento, la composicion porcentual del dataset ni si se aplicaron fases de RLHF o DPO; esos datos figuran como no disponibles. La model card menciona deteccion de inyeccion directa e indirecta, lo que sugiere entrenamiento especifico sobre contenido no confiable embebido en documentos, correos y resultados de herramientas.
 
 ## Capacidades
 
-- Clasificación binaria de texto para detección de prompt injection directa e indirecta.
-- Detección de jailbreaks y de instrucciones maliciosas embebidas en contenido no confiable (documentos, correos, páginas web, salidas de herramientas).
-- Filtrado de entradas de usuario antes de pasarlas al LLM principal, como guardrail previo.
-- Evaluación de contenido recuperado en pipelines RAG antes de su inclusión en el contexto del modelo.
-- Inspección de salidas de herramientas de agente en flujos multi-turno y de tool calling.
-- Soporte multilingüe declarado para inglés y alemán, con menciones a pruebas en español por parte de integradores.
-- Inferencia local en CPU y GPU, incluyendo variantes ONNX cuantizadas para despliegue en dispositivo.
-- No es un modelo generativo: no produce texto, no razona de forma abierta ni soporta tool calling como emisor; su función es exclusivamente de clasificación.
+- Clasificacion binaria de prompt injection y jailbreak en texto de entrada.
+- Deteccion de inyeccion directa (instrucciones maliciosas del usuario) e indirecta (instrucciones embebidas en contenido recuperado, correos, documentos o salidas de herramientas).
+- Soporte multilingue declarado para ingles y aleman, con base mmBERT que amplia cobertura a otros idiomas.
+- Integracion como guardrail en pipelines de agentes, RAG y tool calling.
+- Exportaciones ONNX y variantes cuantizadas para inferencia local en CPU y en dispositivo.
+- Compatibilidad con text-embeddings-inference y endpoints compatibles segun los tags del repositorio.
+- No genera texto: es exclusivamente un clasificador de seguridad.
 
 ## Casos de uso
 
-- Guardrail de entrada en asistentes conversacionales: el clasificador se ejecuta sobre cada mensaje del usuario antes de enviarlo al LLM, bloqueando instrucciones que intenten anular las políticas del sistema con latencias del orden de milisegundos en CPU.
-- Protección de pipelines RAG: cada fragmento recuperado de una base documental se clasifica antes de incorporarse al contexto; si se detecta una instrucción inyectada en un documento, el fragmento se descarta o se marca para revisión.
-- Seguridad de agentes con tool calling: las salidas de herramientas externas (resultados de búsqueda, correos, APIs de terceros) se inspeccionan antes de que el agente las procese, mitigando inyecciones indirectas en flujos multi-paso.
-- Filtrado de correo y contenido web: integración en pasarelas de correo o scrapers para detectar instrucciones ocultas dirigidas a asistentes que procesan bandejas de entrada o páginas web.
-- Cumplimiento y auditoría de seguridad: registro de puntuaciones de inyección sobre tráfico real para construir métricas de exposición, analizar intentos de ataque y alimentar paneles de observabilidad de seguridad de IA.
-- Despliegue en entornos con recursos limitados: al ofrecer variantes ONNX cuantizadas y ejecutarse en CPU, encaja en gateways perimetrales, dispositivos locales o contenedores sin GPU donde no es viable un modelo guardrail grande.
-- Integración en plataformas existentes: ya se usa en Apache Camel, TrustyAI (NeMo Guardrails), AI-Parrot, Delphi Security xaIDR y Red Hat AI, lo que permite incorporarlo a infraestructuras de integración y seguridad ya desplegadas.
+- Filtrado de entrada en agentes autonomos: cada mensaje del usuario se pasa por Wolf Defender antes de llegar al LLM; si se clasifica como inyeccion, se bloquea o se marca para revision. Es adecuado por su baja latencia en CPU y su integracion ONNX.
+- Proteccion de pipelines RAG: los fragmentos recuperados de bases vectoriales o documentos externos se clasifican antes de insertarse en el contexto del modelo, mitigando inyeccion indirecta embebida en el corpus.
+- Seguridad en tool calling: las respuestas de APIs, correos o resultados de busqueda que el agente va a interpretar como instrucciones se validan con el clasificador para evitar que una herramienta comprometida secuestre el flujo del agente.
+- Guardrail en atencion al cliente automatizada: filtrado de mensajes de usuarios en chats multi-turno para detectar intentos de jailbreak o manipulacion del asistente antes de procesarlos.
+- Moderacion en plataformas de contenido generado: clasificacion de prompts enviados a APIs publicas de LLM para bloquear intentos de extraccion de system prompts o de elusion de politicas.
+- Cumplimiento y auditoria de seguridad: registro y etiquetado de trafico sospechoso en despliegues empresariales, con integraciones ya existentes en Apache Camel, TrustyAI y Red Hat AI.
+- Despliegue en dispositivo o edge: las variantes ONNX cuantizadas permiten ejecutar el filtro en entornos sin GPU, como gateways locales o clientes de escritorio.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible. La model card incluye una comparación de latencia y falsos positivos reportada por el desarrollador de AI-Parrot sobre su propia aplicación, con muestras pequeñas y sin especificar hardware:
+La model card incluye una comparacion de latencia y falsos positivos reportada por el desarrollador de AI-Parrot, sobre una muestra pequena y especifica de su aplicacion, usando Wolf Defender Small ONNX FP32:
 
-| Modelo | Latencia p50 | Falsos positivos benignos / 15 | Falsos positivos benignos en español / 10 | Falsos negativos de ataque / 10 |
+| Modelo | Latencia p50 | Falsos positivos benignos / 15 | Falsos positivos benignos en espanol / 10 | Falsos negativos de ataque / 10 |
 |---|---:|---:|---:|---:|
-| DeBERTa v1 vía Pytector | 86 ms | 8 | 8 | 2 |
+| DeBERTa v1 via Pytector | 86 ms | 8 | 8 | 2 |
 | DeBERTa v2 ONNX | 24 ms | 7 | 7 | 1 |
 | gincioks/cerberus-distilbert-base-un-v1.0-onnx | 9 ms | 9 | 7 | 1 |
 | Wolf Defender Small ONNX FP32 | 12 ms | 0 | 0 | 1 |
-| Wolf Defender Edge | — | — | — | — |
+| Wolf Defender Edge | no disponible | no disponible | no disponible | no disponible |
 
-Estos datos provienen de un test específico de aplicación, con recuentos de muestra reducidos y sin detalles completos de medición; deben interpretarse como indicativos y no como una evaluación independiente a gran escala.
+No se han publicado en la informacion disponible resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) ni metricas agregadas de F1, precision, recall o ROC-AUC sobre los conjuntos de evaluacion del modelo. La model card declara esas metricas como parte de los metadatos, pero no presenta sus valores.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 307,5 millones de parámetros, en FP16 el modelo ocupa aproximadamente 0,6 GB de pesos; en FP32, alrededor de 1,2 GB. Las variantes ONNX cuantizadas reducen aún más el consumo, permitiendo ejecución en CPU.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; una RTX 4090, A100 o H100 ofrecen latencias muy bajas, pero el modelo está diseñado para no requerirlas.
-- Compatibilidad con GPU de consumo: sí, cabe holgadamente en cualquier GPU de consumo moderna e incluso en iGPU y CPU.
-- Opciones de despliegue: transformers (safetensors), ONNX Runtime (variantes cuantizadas), text-embeddings-inference según los tags del repositorio, y endpoints compatibles. No se confirma soporte nativo en vLLM, llama.cpp, Ollama o TGI en la información disponible.
-- Latencia y throughput: la model card reporta 12 ms de latencia p50 para la variante Small ONNX FP32 en la prueba de AI-Parrot; el throughput agregado no está disponible.
+- VRAM estimada: con 307,5 millones de parametros, la inferencia en FP16 requiere aproximadamente 0,6 GB de pesos; en FP32, alrededor de 1,2 GB. Las variantes ONNX cuantizadas reducen aun mas el consumo.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente (RTX 3060, RTX 4090, etc.); tambien funciona en GPU de datacenter (A100, H100) sin aprovechar su capacidad, dado el reducido tamano del modelo.
+- Cabe holgadamente en GPU consumer e incluso en CPU: las exportaciones ONNX estan pensadas para inferencia local y en dispositivo.
+- Opciones de despliegue: transformers, ONNX Runtime, text-embeddings-inference y endpoints compatibles; integraciones documentadas con Apache Camel, TrustyAI, AI-Parrot, Delphi Security xaIDR, Personaxis, Wanaku y Mygentic Cello. No se documenta soporte explicito de vLLM, llama.cpp u Ollama.
+- Latencia y throughput: la unica medicion disponible es la reportada por AI-Parrot, con 12 ms de latencia p50 para la variante Small ONNX FP32. El desarrollador de AI-Parrot afirma una aceleracion de 5x frente a otros modelos en sus pruebas. No hay datos de throughput agregado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Wolf Defender Prompt Injection v2.1 | 307,5 M | no disponible | Clasificador binario ModernBERT multilingüe | Apache 2.0 | Hugging Face, ONNX, Red Hat AI |
-| DeBERTa v2 (guardrail de inyección) | no disponible | no disponible | Clasificador encoder | no disponible | Hugging Face / Pytector |
-| gincioks/cerberus-distilbert-base-un-v1.0-onnx | no disponible | no disponible | Clasificador DistilBERT ONNX | no disponible | Hugging Face |
-| ProtectAI deberta-v3-base-prompt-injection | no disponible | no disponible | Clasificador DeBERTa | no disponible | Hugging Face |
+| Wolf Defender Prompt Injection | 307,5 M | no disponible | Apache 2.0 | Clasificador de prompt injection y jailbreak, ONNX, CPU | Hugging Face, Red Hat AI |
+| DeBERTa v2 ONNX (referencia AI-Parrot) | no disponible | no disponible | no disponible | Clasificador de injection via Pytector | ONNX |
+| gincioks/cerberus-distilbert-base-un-v1.0-onnx | no disponible | no disponible | no disponible | Clasificador de injection destilado | ONNX |
+| DeBERTa v1 via Pytector | no disponible | no disponible | no disponible | Clasificador de injection | Pytector |
 
-La comparación se limita a la información disponible; no se dispone de cifras homogéneas de rendimiento para establecer una comparativa cuantitativa fiable más allá de la tabla reportada por AI-Parrot.
+La comparacion se limita a los modelos citados en la evaluacion de AI-Parrot; no se dispone de datos de parametros, contexto ni licencia para las alternativas. No se han publicado comparativas con otros guardrails de seguridad ampliamente conocidos en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- Es un clasificador binario: puede producir falsos positivos sobre texto legítimo que contenga instrucciones imperativas o citas de ataques, y falsos negativos ante ataques novedosos o muy ofuscados.
-- Los idiomas oficialmente declarados son inglés y alemán; el rendimiento en otros idiomas, incluido el español, solo está respaldado por pruebas anecdóticas de terceros con muestras pequeñas.
-- No se especifica la longitud máxima de contexto efectiva, lo que limita la planificación de despliegues con documentos muy largos; puede requerir troceado previo.
-- No sustituye a una defensa en profundidad: debe combinarse con otras capas (filtrado de salidas, permisos de herramientas, revisión humana) en entornos de producción.
-- La licencia Apache 2.0 permite uso comercial, pero el usuario debe verificar las licencias de los datasets de entrenamiento subyacentes si redistribuye derivados.
-- La evaluación publicada procede en parte de integradores con tests de aplicación específicos y muestras reducidas; no hay una evaluación independiente a gran escala en la información disponible.
-- El repositorio ocupa 11,5 GB, principalmente por las múltiples variantes ONNX; conviene descargar solo el formato necesario.
+- El modelo solo soporta oficialmente ingles y aleman; el rendimiento en otros idiomas, pese a la base mmBERT, no esta documentado con metricas.
+- Es un clasificador binario: puede producir falsos positivos en entradas benignas con lenguaje imperativo o tecnico, y falsos negativos ante ataques novedosos u ofuscados.
+- No se han publicado valores de F1, precision, recall ni ROC-AUC en la model card, lo que dificulta evaluar su robustez real.
+- La evaluacion disponible proviene de una muestra pequena y de una aplicacion concreta (AI-Parrot), no de un benchmark estandar.
+- No genera texto ni razona: no sustituye a un LLM, solo filtra entradas.
+- La licencia Apache 2.0 permite uso comercial, pero no se documentan garantias ni responsabilidades por fallos de deteccion.
+- Al ser un guardrail, no debe ser la unica capa de seguridad: conviene combinarlo con validacion de salidas, permisos de herramientas y monitorizacion.
+- No se detalla la longitud maxima de contexto soportada, lo que puede afectar a la clasificacion de documentos largos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/patronus-studio/wolf-defender-prompt-injection
-- Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
-- Versión en Red Hat AI: https://huggingface.co/RedHatAI/wolf-defender-prompt-injection
-- Página de producto de Patronus Studio: https://patronus.studio/product/ai-models
-- Campaña de financiación Manifund: https://manifund.org/projects/an-open-weight-cpu-efficient-ai-security-model-for-multi-turn-agent-security
-- Integración Apache Camel: https://camel.apache.org/components/next/others/semantic-wolf-defender.html
-- Integración TrustyAI (NeMo Guardrails): https://github.com/trustyai-explainability/trustyai-service-operator/blob/main/config/configmaps/nemo-guardrails/default-guardrails-injection.yaml
-- Integración AI-Parrot: https://github.com/phenobarbital/ai-parrot/blob/main/docs/security/onnx-injection-guardrail.md
-- Integración Delphi Security xaIDR: https://github.com/delphisecurity/xaidr/blob/main/xaidr/scanner/nano.py
-- Integración Personaxis: https://github.com/personaxis/personaxis/blob/main/packages/core/src/judge/output-scan.ts
-- Integración Wanaku: https://github.com/wanaku-ai/wanaku-barn/blob/main/apps/ui/admin/src/Pages/SemanticRouters/expertCatalog.ts
-- Integración Mygentic Cello: https://github.com/Mygentic-AI/cello-client/blob/main/core/gateway/src/detect/screener-model-manifest.ts
+- Version v2.2: https://huggingface.co/patronus-studio/wolf-defender-prompt-injection/tree/v2.2
+- Version v2.1: https://huggingface.co/patronus-studio/wolf-defender-prompt-injection/tree/v2.1
+- Version v2.0: https://huggingface.co/patronus-studio/wolf-defender-prompt-injection/tree/v2.0
+- Modelo base mmBERT: https://huggingface.co/jhu-clsp/mmBERT-base
+- Pagina de producto: https://patronus.studio/product/ai-models
+- Red Hat AI: https://huggingface.co/RedHatAI/wolf-defender-prompt-injection
+- Apache Camel: https://camel.apache.org/components/next/others/semantic-wolf-defender.html
+- TrustyAI: https://github.com/trustyai-explainability/trustyai-service-operator/blob/main/config/configmaps/nemo-guardrails/default-guardrails-injection.yaml
+- AI-Parrot: https://github.com/phenobarbital/ai-parrot/blob/main/docs/security/onnx-injection-guardrail.md
+- Delphi Security xaIDR: https://github.com/delphisecurity/xaidr/blob/main/xaidr/scanner/nano.py
+- Personaxis: https://github.com/personaxis/personaxis/blob/main/packages/core/src/judge/output-scan.ts
+- Wanaku: https://github.com/wanaku-ai/wanaku-barn/blob/main/apps/ui/admin/src/Pages/SemanticRouters/expertCatalog.ts
+- Mygentic Cello: https://github.com/Mygentic-AI/cello-client/blob/main/core/gateway/src/detect/screener-model-manifest.ts
+- Financiacion: https://manifund.org/projects/an-open-weight-cpu-efficient-ai-security-model-for-multi-turn-agent-security

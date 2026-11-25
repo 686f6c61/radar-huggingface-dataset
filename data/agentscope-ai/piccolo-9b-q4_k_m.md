@@ -2,98 +2,98 @@
 
 ## Resumen
 
-Piccolo-9B-Q4_K_M es la cuantización Q4_K_M del modelo Piccolo-9B, desarrollado por AgentScope (agentscope-ai). No es un modelo generativo al uso: es un modelo de decisión (decision-model) orientado a la revisión de operaciones de herramientas y a decisiones de retención de contexto dentro del runtime QwenPaw. Su función es puntuar y clasificar peticiones y candidatos, no producir tokens de respuesta, lo que lo sitúa en la categoría de text-classification con un contrato de inferencia muy específico.
+Piccolo-9B-Q4_K_M es la distribucion cuantizada en formato GGUF del modelo Piccolo-9B, desarrollado por AgentScope (agentscope-ai). A diferencia de un modelo generativo convencional, Piccolo es un modelo de decision: no produce tokens de respuesta, sino que puntua y clasifica candidatos para tareas de revision de herramientas y seleccion de contexto en pipelines de agentes. Esta version concreta aplica cuantizacion Q4_K_M sobre el backbone de texto convertido previamente a BF16 GGUF, con el objetivo de reducir el peso a unos 5,6 GB y facilitar el despliegue local.
 
-El modelo base cuenta con 8.953.803.264 parámetros (aproximadamente 9B) y emplea una arquitectura de atención bidireccional en las capas de prompt, con atención lineal en el resto del backbone. Soporta inglés y chino, y se distribuye bajo licencia Apache 2.0. Esta versión GGUF ocupa 5,6 GB en el repositorio y está pensada para despliegues locales con llama.cpp parcheado.
+El modelo cuenta con 8.953.803.264 parametros totales (aproximadamente 9B) y emplea una arquitectura con atencion bidireccional sobre el prompt, una caracteristica poco habitual en modelos causales y clave para su funcion de scoring. Soporta ingles y chino, se distribuye bajo licencia Apache 2.0 y esta etiquetado como `decision-model` y `text-classification`.
 
-Su relevancia actual radica en que propone un patrón distinto al de los LLM conversacionales: un modelo pequeño y cuantizado que actúa como árbitro de decisiones dentro de un agente, evaluando si una operación debe aprobarse o si un fragmento de contexto debe retenerse. La contrapartida es que requiere un runtime específico (parche Piccolo en QwenPaw) y no funciona con Chat Completions causal estándar.
+Su relevancia actual radica en que cubre una necesidad creciente en sistemas multiagente: decidir que herramienta invocar o que fragmento de contexto incluir, sin gastar presupuesto de generacion. Al devolver probabilidades directamente mediante un endpoint `/v1/systemone`, elimina la latencia y el coste asociados a generar texto para tomar una decision.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con atención bidireccional en capas de prompt y atención lineal en el backbone (familia QwenPaw/Piccolo) |
+| Arquitectura | Transformer con atencion bidireccional sobre el prompt (bidirectional-attention); backbone de texto tipo QwenPaw |
 | Parametros totales | 8.953.803.264 (aprox. 9B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (la model card recomienda ctx/batch/ubatch de 8192 en el runtime) |
-| Tipos de cuantizacion | Q4_K_M (esta versión); el modelo base publica también BF16 y Q8_0 |
-| Idiomas soportados | en, zh |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Q4_K_M (GGUF); el modelo base se convirtio de BF16 a Q4_K_M |
+| Idiomas soportados | Ingles (en), chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (shards múltiples; pesos Safetensors completos en el repo base) |
+| Formato de pesos | GGUF (2 shards, ~5,6 GB en total) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Piccolo-9B emplea un transformer con un diseño híbrido de atención: capas de prompt con atención completa bidireccional y capas de backbone con atención lineal. Esta combinación está pensada para evaluar de forma conjunta el prompt completo y los candidatos, en lugar de generar secuencialmente. El runtime debe respetar el layout exacto `flex_twice` y exponer las probabilidades de los tokens candidatos a temperatura 1. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO.
+Piccolo-9B se basa en un transformer con atencion bidireccional sobre el prompt, en lugar de la atencion causal tipica de los modelos generativos. Esta eleccion permite que el modelo observe simultaneamente la consulta completa y los candidatos propuestos, y emita una puntuacion de probabilidad nativa para cada uno. El pipeline declarado es `text-classification` y el modelo esta etiquetado como `decision-model`, lo que confirma que su salida es una distribucion de probabilidad sobre candidatos, no texto generado.
 
-La cuantización Q4_K_M se generó a partir del checkpoint completo convertido a BF16 GGUF con `--no-mtp`, seguido de `llama-quantize`. No se usó importance matrix, dataset de calibración, poda ni recuantización Q8 a Q4. Se conservan los tensores del backbone de texto y de salida; los tensores auxiliares de visión y MTP permanecen únicamente en el checkpoint base completo. Los tipos exactos de tensores sensibles están registrados en `sensitive-tensor-types.json`.
-
-El autor documenta mediciones de la cuantización sobre regresiones sintéticas de flujos de trabajo (265 peticiones, 556 juicios): diferencia media de variación total de 0,013701 y p95 de 0,081681; diferencia absoluta máxima de probabilidad de candidato de 0,268553; acuerdo de primera elección del 1,000000 con márgenes BF16 ≥ 0,20 sobre 553 preguntas; discrepancia en decisiones nativas de revisión de 0,041667 sobre 96 peticiones; y fracción de contexto etiquetado como necesario descartado de 0,000000 sobre 24 fixtures. Estas cifras son comprobaciones de ingeniería, no benchmarks independientes ni certificación de seguridad.
+La informacion disponible no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se especifica la innovacion de decodificacion especulativa ni otros detalles del preentrenamiento. Lo que si se documenta es el proceso de cuantizacion: el backbone de texto se convirtio primero a BF16 GGUF y despues se cuantizo a Q4_K_M. La validacion numerica reportada sobre 556 juicios sinteticos arroja una divergencia media de variacion total de 0,013701 respecto a la referencia BF16, con un p95 de 0,081681, lo que indica una degradacion contenida tras la cuantizacion.
 
 ## Capacidades
 
-- Clasificación y puntuación de decisiones: evalúa operaciones de herramientas y candidatos, devolviendo probabilidades por token candidato en lugar de texto generado.
-- Revisión de operaciones de herramientas (tool-operation review): determina si una acción propuesta por un agente debe aprobarse o marcarse para revisión.
-- Retención de contexto: decide qué fragmentos de contexto deben conservarse o descartarse (compaction), con métricas de recuperabilidad documentadas.
-- Puntuación de evidencias de tarea en inglés y chino.
-- Procesamiento de prompts largos y completos, sin truncado, gracias al modo bidireccional sobre el prompt.
-- Integración con agentes multi-paso a través de QwenPaw, actuando como capa de decisión dentro del bucle del agente.
-- No genera tokens de respuesta: no es adecuado para generación de texto, código o matemáticas.
-- No dispone de tool calling en el sentido convencional de Chat Completions; su interfaz es el contrato de decisión de QwenPaw.
+- Puntuacion de candidatos: devuelve probabilidades sobre opciones propuestas sin generar tokens de respuesta.
+- Revision de herramientas (tool review): evalua y selecciona que herramienta es adecuada para una tarea dada.
+- Seleccion de contexto: decide que fragmentos de contexto incluir en el prompt de un agente.
+- Clasificacion de texto: pipeline declarado `text-classification`.
+- Atencion bidireccional sobre el prompt, que permite condicionar la decision sobre la totalidad de la entrada.
+- Soporte multilingue limitado a ingles y chino.
+- Integracion con runtimes compatibles: requiere el runtime llama.cpp especifico de Piccolo con atencion bidireccional y scoring nativo de candidatos.
+- Endpoint `/v1/systemone` para obtener probabilidades directamente.
+- No se documentan capacidades de generacion de texto libre, codigo, matematicas, vision, audio, tool calling generativo ni agentes multi-paso en la informacion disponible.
 
 ## Casos de uso
 
-- Puerta de aprobación de acciones de agentes: el modelo recibe la operación propuesta por un agente y el contexto relevante, y emite una probabilidad de aprobación que el runtime compara con un umbral. Es adecuado porque su entrenamiento está orientado específicamente a este juicio y no requiere generar texto.
-- Compactación de contexto en sesiones largas: decide qué partes de la conversación deben retenerse y cuáles pueden descartarse, reduciendo el coste de contexto en agentes de larga duración. Las mediciones del autor muestran una fracción de contexto necesario descartado de 0,000000 sobre 24 fixtures.
-- Moderación de operaciones en pipelines de automatización: integrado en QwenPaw, actúa como capa intermedia que filtra operaciones riesgosas antes de ejecutarlas, con fallback nativo de aprobación si el modelo no está disponible.
-- Evaluación de evidencias en flujos bilingües inglés-chino: puntúa si una tarea cuenta con evidencia suficiente en ambos idiomas, útil en entornos corporativos con documentación mixta.
-- Despliegue local en estaciones de trabajo: con 5,6 GB en Q4_K_M, puede ejecutarse en GPUs de consumo con suficiente VRAM, manteniendo los datos de decisión en local.
-- Investigación sobre modelos de decisión: sirve como referencia reproducible para estudiar arquitecturas bidireccionales aplicadas a clasificación y para comparar el impacto de la cuantización en decisiones con umbral.
-- Control de calidad de agentes en producción: registra y revisa decisiones de aprobación para auditar el comportamiento del agente sin exponer datos a APIs externas.
+- Enrutamiento de herramientas en agentes: dado un mensaje de usuario y un catalogo de herramientas, Piccolo puntua cada candidata y el orquestador elige la de mayor probabilidad, evitando una llamada generativa completa.
+- Seleccion de contexto en RAG: ante varios fragmentos recuperados, el modelo asigna probabilidades de relevancia y permite recortar el contexto enviado al modelo generativo, reduciendo coste y latencia.
+- Filtrado previo en pipelines de atencion al cliente: clasificar la intencion o la herramienta adecuada antes de invocar un LLM mayor, usando el endpoint de probabilidades.
+- Validacion de llamadas a funciones: revisar si una llamada a herramienta propuesta por otro modelo es coherente con la consulta original, como paso de verificacion en produccion.
+- Despliegue local en estaciones de trabajo: con ~5,6 GB en Q4_K_M, puede ejecutarse en equipos sin GPU de datacenter para tareas de decision de baja latencia.
+- Sistemas multiagente con presupuesto limitado: sustituir decisiones basadas en generacion por scoring directo, reduciendo el consumo de tokens en bucles de planificacion.
+- Moderacion o triaje de consultas: clasificar entradas en categorias predefinidas con umbrales de probabilidad configurables.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card remite a los resultados del checkpoint completo en `evaluation/README.md`, pero no implica puntuaciones equivalentes para esta cuantización. Las únicas métricas publicadas son las diferencias de cuantización descritas en la sección de arquitectura, que no constituyen un benchmark independiente.
+No se han publicado resultados de benchmarks en la informacion disponible. La unica metrica reportada es la validacion numerica de la cuantizacion: divergencia media de variacion total de 0,013701 (p95 0,081681) frente a la referencia BF16 sobre 556 juicios sinteticos. Los resultados de evaluacion del modelo base se enlazan en el repositorio de GitHub del proyecto, pero no se incluyen cifras en la informacion proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 6-7 GB para el archivo Q4_K_M de 5,6 GB más overhead de contexto (8192 tokens recomendados).
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090, A100 y H100 para despliegues de mayor concurrencia.
-- Cabe en GPU de consumo: sí, en tarjetas con al menos 8 GB de VRAM; con 6 GB el margen es ajustado.
-- Despliegue: exclusivamente mediante llama.cpp con el parche Piccolo descrito en QwenPaw PR #8463. No es compatible con vLLM, TGI, Ollama ni llama.cpp sin parchear.
-- Configuración obligatoria del runtime: ctx/batch/ubatch de 8192, un solo slot, sin generación de tokens de respuesta, sin prefix caching, sin chunked prefill y sin truncado del prompt.
-- Latencia y throughput: no disponibles. Al no generar tokens, el coste dominado es el prefill del prompt completo, pero no se publican cifras.
+- VRAM estimada para inferencia: aproximadamente 5,6 GB solo para los pesos en Q4_K_M; con overhead de contexto y runtime, se recomienda reservar entre 7 y 9 GB.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090, A100 o H100 para despliegues de mayor concurrencia.
+- Compatibilidad con GPU de consumo: si, cabe en GPUs consumer con 8 GB o mas de VRAM en Q4_K_M.
+- Opciones de despliegue: exclusivamente el runtime llama.cpp compatible con Piccolo (atencion bidireccional y scoring nativo de candidatos); no se garantiza compatibilidad con llama.cpp estandar, vLLM, TGI u Ollama.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Funcion | Licencia | Formato |
 |---|---|---|---|---|---|
-| Piccolo-9B-Q4_K_M | 8,95B | no disponible (runtime a 8192) | Modelo de decision para revision de herramientas y retencion de contexto | Apache 2.0 | Hugging Face (GGUF), requiere runtime parcheado |
-| Piccolo-9B (BF16) | 8,95B | no disponible | Mismo proposito, precision completa | Apache 2.0 | Hugging Face |
-| Piccolo-9B-Q8_0 | 8,95B | no disponible | Mismo proposito, cuantizacion Q8_0 | Apache 2.0 | Hugging Face |
+| Piccolo-9B-Q4_K_M | ~9B | No disponible | Modelo de decision / scoring | Apache 2.0 | GGUF |
+| Piccolo-9B (base) | ~9B | No disponible | Modelo de decision / scoring | Apache 2.0 | No disponible |
+| Piccolo-27B | ~27B | No disponible | Modelo de decision / scoring | No disponible | No disponible |
 
-No se dispone de información sobre modelos comparables de otros desarrolladores en la misma categoría de modelo de decisión con atención bidireccional. Las alternativas más cercanas serían clasificadores o rerankers de propósito general, pero no se han proporcionado datos que permitan una comparación rigurosa.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada. Como alternativas funcionales de proposito general (clasificacion y enrutamiento) podrian considerarse modelos encoder como DeBERTa o clasificadores basados en LLM, pero no se aportan cifras que permitan una comparacion rigurosa; se indica "no disponible".
 
 ## Limitaciones y advertencias
 
-- Requiere un runtime específico: llama.cpp con el parche Piccolo de QwenPaw PR #8463. Los runtimes causales estándar y las APIs de Chat Completions no implementan el contrato y producirán resultados incorrectos.
-- No genera texto: no debe emplearse para generación, código, matemáticas ni conversación.
-- Idiomas limitados a inglés y chino; no hay soporte declarado de castellano.
-- Las mediciones de cuantización son comprobaciones sintéticas de ingeniería, no un benchmark independiente, calibración de riesgo ni certificación de seguridad. El acuerdo con la referencia no equivale a corrección de la tarea.
-- Las diferencias de probabilidad pueden alterar decisiones basadas en umbral; se recomienda mantener el fallback nativo de aprobación y compactación de QwenPaw.
-- La integración en QwenPaw permanece en Draft PR #8463; la publicación del modelo no implica que el catálogo existente lo reconozca.
-- ModelScope aún no está publicado.
-- Riesgo de alucinación y sesgos: no documentado en la información disponible.
-- El repositorio base conserva los tensores de visión y MTP, pero esta cuantización no los incluye; no debe esperarse capacidad multimodal.
-- Uso comercial permitido por Apache 2.0, con atribución de FlexDM conservada en THIRD_PARTY_LICENSES.md.
+- No es un modelo generativo: no produce texto libre, codigo ni respuestas conversacionales; su salida son probabilidades sobre candidatos.
+- Requiere un runtime especifico: el llama.cpp estandar no soporta la atencion bidireccional ni el scoring nativo, por lo que el despliegue con herramientas convencionales no funcionara.
+- Idiomas limitados a ingles y chino; el rendimiento en castellano no esta documentado.
+- La cuantizacion Q4_K_M introduce una divergencia media de 0,013701 (p95 0,081681) frente a BF16, lo que puede afectar a decisiones con umbrales ajustados.
+- Riesgo de sesgo y alucinacion no evaluado en la informacion disponible; al tratarse de un modelo de scoring, el riesgo se manifiesta como calibracion deficiente de probabilidades mas que como texto inventado.
+- Longitud de contexto no documentada; no se puede garantizar el comportamiento con prompts largos.
+- Aunque la licencia es Apache 2.0, deben revisarse los avisos de terceros (THIRD_PARTY_LICENSES.md) antes de uso comercial.
+- El modelo tiene muy pocas descargas (299) y ningun "like", lo que sugiere una validacion comunitaria limitada; conviene realizar pruebas propias antes de produccion.
+- La fecha de creacion indicada (2026-10-28) debe tratarse con cautela por posible inconsistencia en los metadatos.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/agentscope-ai/Piccolo-9B-Q4_K_M
-- Modelo base: https://huggingface.co/agentscope-ai/Piccolo-9B
-- Repositorio GitHub: https://github.com/agentscope-ai/Piccolo
-- Matriz de modelos: https://github.com/agentscope-ai/Piccolo/blob/0d1b3d4544766a55d137b979e8c87141bf182059/docs/MODELS.md
-- Resultados de evaluacion del checkpoint completo: https://github.com/agentscope-ai/Piccolo/blob/0d1b3d4544766a55d137b979e8c87141bf182059/evaluation/README.md
-- PR de integracion en QwenPaw: https://github.com/agentscope-ai/QwenPaw/pull/8463
-- Guia de configuracion local (pineada): https://github.com/Xinji-Mai/QwenPaw/blob/beea37749185553a6897e546eae6b7954717da5b/docs/local-piccolo.md
-- Demo Decision Playground: https://decisionplayground.agentscope.io/
-- ModelScope (pendiente): https://modelscope.cn/models/agentscope-ai/Piccolo-27B
+- Hugging Face (Q4_K_M): https://huggingface.co/agentscope-ai/Piccolo-9B-Q4_K_M
+- Modelo base Piccolo-9B: https://huggingface.co/agentscope-ai/Piccolo-9B
+- Repositorio del proyecto en GitHub: https://github.com/agentscope-ai/Piccolo
+- Documentacion del runtime QwenPaw: https://github.com/agentscope-ai/Piccolo/blob/main/docs/QWENPAW.md
+- Evaluacion: https://github.com/agentscope-ai/Piccolo/tree/main/evaluation
+- Listado de modelos: https://github.com/agentscope-ai/Piccolo/blob/main/docs/MODELS.md
+- Decision Playground: https://decisionplayground.agentscope.io/
+- Coleccion en ModelScope: https://www.modelscope.cn/collections/AgentScope/QwenPaw-Flash
+- ModelScope (modelo): https://www.modelscope.cn/models/AgentScope/Piccolo-9B-Q4_K_M
+- Validacion numerica: https://huggingface.co/agentscope-ai/Piccolo-9B-Q4_K_M/resolve/main/validation.json
+- Licencia: https://huggingface.co/agentscope-ai/Piccolo-9B-Q4_K_M/resolve/main/LICENSE
+- Avisos de terceros: https://huggingface.co/agentscope-ai/Piccolo-9B-Q4_K_M/resolve/main/THIRD_PARTY_LICENSES.md

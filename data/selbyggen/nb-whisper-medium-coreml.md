@@ -2,54 +2,54 @@
 
 ## Resumen
 
-Selbyggen/nb-whisper-medium-coreml es una conversión de formato del modelo NbAiLab/nb-whisper-medium, desarrollado por la Biblioteca Nacional de Noruega (Nasjonalbiblioteket), a Core ML para su uso con WhisperKit. No se trata de un modelo nuevo ni de un reentrenamiento: los pesos y el comportamiento son idénticos a los del modelo original; únicamente cambia el formato de empaquetado para permitir la inferencia sobre el Apple Neural Engine en dispositivos con Apple Silicon (Mac, iPhone, iPad).
+Selbyggen/nb-whisper-medium-coreml es una conversión de formato del modelo NbAiLab/nb-whisper-medium, desarrollado por la Biblioteca Nacional de Noruega (Nasjonalbiblioteket). No se trata de un modelo nuevo ni de un reentrenamiento: los pesos y el comportamiento son idénticos a los del modelo original. La conversión transforma los pesos de PyTorch a Core ML para que el modelo pueda ejecutarse en el Apple Neural Engine mediante el framework WhisperKit, lo que permite inferencia local en dispositivos con Apple Silicon (Mac, iPhone, iPad) sin enviar audio a servidores externos.
 
-El modelo resuelve el problema del reconocimiento automático del habla (ASR) en noruego, en sus variantes bokmål (nb) y nynorsk (nn), con ejecución completamente local en hardware Apple. Está basado en la arquitectura Whisper medium de OpenAI, con aproximadamente 769 millones de parámetros, y ha sido ajustado por NbAiLab sobre datos de habla noruega. Su relevancia actual radica en que permite transcripción precisa en noruego sin conexión a internet y sin enviar audio a servidores externos, algo crítico para aplicaciones de privacidad y para el cumplimiento del RGPD.
+El modelo resuelve el problema de la transcripción automática de voz en noruego (bokmål, nynorsk y noruego genérico) en entornos locales y privados. Al estar basado en la arquitectura Whisper medium, cuenta con aproximadamente 769 millones de parámetros y una ventana de contexto de audio de 30 segundos por segmento, con capacidad de procesar audio más largo mediante segmentación interna. La relevancia actual radica en la demanda de soluciones de ASR que funcionen completamente en el dispositivo, sin dependencia de la nube, especialmente para aplicaciones de privacidad sensible como reuniones, notas de voz y transcripción médica o legal.
 
-El repositorio ocupa 1,5 GB y se distribuye con licencia Apache 2.0, la misma que el modelo original. La conversión se realizó con la herramienta whisperkittools en precisión float16, sin cuantización, y se emplea en la aplicación comercial Sagt para Mac, iPhone y iPad.
+La conversión fue realizada con la herramienta whisperkittools en precisión float16 sin cuantización, con un tamaño de repositorio de 1,5 GB. El modelo se distribuye bajo licencia Apache 2.0, la misma que el modelo original, y está siendo utilizado por la aplicación comercial Says (Mac, iPhone, iPad) para transcripción local en noruego.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder-decoder (Whisper medium de OpenAI) |
-| Parametros totales | Aproximadamente 769 millones (heredados de whisper-medium) |
+| Arquitectura | Transformer encoder-decoder (Whisper medium) |
+| Parametros totales | Aproximadamente 769 millones (heredado de Whisper medium; no confirmado explícitamente en la información disponible) |
 | Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | Ventana de audio de 30 segundos por segmento (estándar de Whisper) |
-| Tipos de cuantizacion | float16, sin cuantización en esta conversión |
-| Idiomas soportados | Noruego (no, nb, nn) |
+| Longitud de contexto | 30 segundos de audio por segmento (ventana estándar de Whisper); procesamiento de audio más largo mediante segmentación |
+| Tipos de cuantizacion | float16 (sin cuantización); no se mencionan otras variantes |
+| Idiomas soportados | Noruego (no), bokmål (nb), nynorsk (nn) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Core ML (paquete `.mlpackage` / carpeta `NbAiLab_nb-whisper-medium`) |
+| Formato de pesos | Core ML (float16), compatible con WhisperKit; no se distribuyen safetensors ni GGUF |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Whisper medium: un transformer encoder-decoder con atención estándar, entrenado originalmente por OpenAI para transcripción multilingüe y traducción de voz. NbAiLab partió de ese checkpoint y lo ajustó (fine-tuning) sobre corpus de habla noruega, incluyendo datos de FLEURS, NST, NB Tale y grabaciones parlamentarias del Storting. No se dispone en la información proporcionada de detalles sobre el número exacto de tokens de entrenamiento, la composición completa del dataset ni si se aplicaron técnicas de RLHF o DPO.
+La arquitectura subyacente es la de Whisper medium de OpenAI: un transformer encoder-decoder con atención multi-cabeza estándar, diseñado para transcripción de voz y traducción. El modelo original NbAiLab/nb-whisper-medium fue desarrollado por la Biblioteca Nacional de Noruega mediante fine-tuning del modelo Whisper medium de OpenAI sobre datos de voz en noruego. No se dispone en la información proporcionada de detalles sobre el volumen de datos de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La model card del repositorio de conversión no incluye esa información; sería necesario consultar la model card del modelo base para obtener esos datos.
 
-La conversión a Core ML se realizó con `whisperkit-generate-model` sobre la revisión `main` (commit `0ed074d5985bd56ca4140159a9dbffbc3fb5117e`) del modelo original, en precisión float16 y sin cuantización. Los ficheros `config.json` y `generation_config.json` se copiaron sin cambios. El modelo utiliza el mismo tokenizer que `openai/whisper-medium`. La innovación principal no es algorítmica sino de despliegue: la compilación para el Apple Neural Engine permite inferencia local de baja latencia en dispositivos Apple sin necesidad de GPU dedicada.
+La innovación técnica de esta ficha concreta no reside en el entrenamiento sino en la conversión a Core ML para ejecución en el Apple Neural Engine. La conversión se realizó con whisperkittools en precisión float16, sin cuantización, copiando config.json y generation_config.json sin cambios desde el modelo original. El modelo utiliza el mismo tokenizer que openai/whisper-medium. La ejecución en el Neural Engine permite inferencia acelerada por hardware en dispositivos Apple, con la ventaja de privacidad de que el audio no abandona el dispositivo.
 
 ## Capacidades
 
-- Transcripción automática de voz (ASR) en noruego bokmål y nynorsk, con etiqueta genérica `no`.
-- Reconocimiento de habla espontánea y de discurso formal (por ejemplo, sesiones parlamentarias).
-- Generación de texto limpio: elimina repeticiones y falsos arranques, a diferencia de transcripciones verbatim.
-- Ejecución local en el Apple Neural Engine mediante WhisperKit, sin conexión a internet.
-- Integración en aplicaciones nativas de macOS, iOS e iPadOS a través del SDK de WhisperKit.
-- Soporte de decodificación con selección explícita de idioma (`DecodingOptions(language: "no")`).
-- No se documentan capacidades de tool calling, agentes, visión, audio más allá del ASR ni modo de razonamiento extendido.
+- Transcripción automática de voz (ASR) en noruego, con soporte para bokmål, nynorsk y noruego genérico.
+- Generación de texto a partir de audio con puntuación y formato limpio (elimina repeticiones y falsos comienzos, según la model card).
+- Procesamiento de audio de larga duración mediante segmentación interna (reuniones de aproximadamente 10 minutos mencionadas en las mediciones).
+- Ejecución local en Apple Neural Engine mediante WhisperKit, sin conexión a red.
+- Integración con el ecosistema Swift/Apple para aplicaciones macOS, iOS e iPadOS.
+- No se menciona soporte de tool calling, function calling, agentes, multi-step reasoning, visión ni audio más allá de la transcripción estándar de Whisper.
+- Capacidades multilingües limitadas a noruego; no se indica soporte para otros idiomas.
 
 ## Casos de uso
 
-- Transcripción de reuniones y actas en noruego: la ventana de 30 segundos por segmento y el procesamiento local permiten transcribir reuniones largas en el propio dispositivo, sin enviar audio a la nube y cumpliendo requisitos de privacidad.
-- Subtitulado automático de contenido audiovisual noruego: la baja tasa de error en FLEURS nb (6,5 %) y en NST (2,6 %) lo hace adecuado para generar subtítulos en producciones de habla clara.
-- Aplicaciones de dictado en macOS, iOS e iPadOS: al ejecutarse sobre el Neural Engine, puede integrarse en apps de productividad para dictado continuo con latencia baja y sin coste de API.
-- Documentación de sesiones parlamentarias o administrativas: el rendimiento medido en el corpus del Storting (14,6 % WER en NPSC y 13,6 % en reuniones de ~10 minutos) lo respalda para transcripción de actas oficiales con revisión humana posterior.
-- Investigación lingüística sobre habla espontánea: el rendimiento en NB Tale (15,8 % WER) permite transcribir entrevistas y corpus orales para análisis posteriores, con la ventaja de que el texto generado es limpio y no verbatim.
-- Herramientas de accesibilidad para personas con discapacidad auditiva: la ejecución local y sin conexión garantiza que la transcripción en tiempo real funcione en entornos sin red y sin exponer conversaciones privadas.
-- Aplicaciones de periodismo y entrevistas de campo: grabación y transcripción en un iPhone o iPad sin infraestructura adicional, útil para reporteros que trabajan en localizaciones sin cobertura fiable.
+- Transcripción de reuniones en local: el modelo puede procesar grabaciones de reuniones de aproximadamente 10 minutos (como las mediciones de Storting mencionadas) en dispositivos Apple, manteniendo el audio en el dispositivo y cumpliendo requisitos de privacidad para entornos corporativos o gubernamentales.
+- Aplicaciones de notas de voz para macOS, iOS e iPadOS: integración mediante WhisperKit en Swift permite añadir transcripción noruega a apps de notas sin infraestructura de servidores, con latencia dependiente del dispositivo pero sin coste de API.
+- Subtitulado y accesibilidad: generación de subtítulos para vídeos en noruego en flujos de postproducción local, usando la ventana de 30 segundos por segmento y la segmentación automática para contenido más largo.
+- Transcripción de entrevistas y periodismo: grabaciones de campo en noruego pueden transcribirse en un Mac portátil sin conexión, útil para periodistas que manejan material sensible y necesitan cumplir con protección de fuentes.
+- Documentación clínica o legal con requisitos de privacidad: al ejecutarse completamente en el dispositivo, el modelo evita el envío de audio a terceros, lo que facilita el cumplimiento de normativas de protección de datos en entornos sanitarios o jurídicos.
+- Investigación lingüística en noruego: el modelo permite transcribir corpus de habla espontánea (como NB Tale) y discurso parlamentario (NPSC, Storting) para análisis lingüístico, con la ventaja de que el proceso es reproducible localmente y sin dependencia de servicios externos.
+- Prototipado rápido de ASR en Apple Silicon: desarrolladores que necesitan validar una pipeline de transcripción noruega pueden usar el snippet de Swift incluido en la model card para descargar el modelo y transcribir un archivo m4a en pocas líneas de código.
 
 ## Benchmarks y rendimiento
 
-Datos de word error rate (WER) publicados por el autor de la conversión, medidos sobre el Neural Engine con los mismos clips, normalización y ruta de código, comparando con NB-Whisper large:
+Los datos de precisión provienen de la model card del repositorio de conversión y se midieron con los mismos clips, normalización y ruta de código en el Neural Engine. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) porque no aplican a un modelo ASR; se presentan las tasas de error de palabra (WER) proporcionadas por el autor.
 
 | Conjunto | NB-Whisper medium (este) | NB-Whisper large |
 |---|---:|---:|
@@ -59,44 +59,45 @@ Datos de word error rate (WER) publicados por el autor de la conversión, medido
 | NPSC, Storting (75 clips) | 14,6 % | 14,8 % |
 | Storting, cuatro reuniones de ~10 minutos | 13,6 % | 13,9 % |
 
-El autor indica que el modelo original en PyTorch ofrece los mismos números dentro del margen de ruido. NPSC y NB Tale emplean referencias verbatim, mientras que NB-Whisper genera texto limpio (elimina repeticiones y falsos arranques), lo que explica la mayor parte del error en esos conjuntos. No se han publicado en la información disponible resultados de benchmarks estándar como MMLU, HumanEval o GSM8K, que no aplican a un modelo ASR.
+La model card indica que el modelo original en PyTorch ofrece los mismos números dentro del margen de ruido. También señala que NPSC y NB Tale tienen referencias literales (verbatim), mientras que NB-Whisper genera texto limpio (elimina repeticiones y falsos comienzos), lo que explica la mayor parte del error en esos conjuntos. No se proporcionan datos de latencia ni throughput.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no aplica en el sentido tradicional; el modelo se ejecuta en el Apple Neural Engine y en memoria unificada de los chips Apple Silicon. El repositorio ocupa 1,5 GB en float16.
-- GPU recomendadas: cualquier chip Apple Silicon (series M1, M2, M3, M4 y variantes Pro, Max, Ultra), así como los SoC A-series recientes de iPhone y iPad compatibles con WhisperKit.
-- Cabe en GPU de consumo: sí, en equipos Apple Silicon con memoria unificada; no está pensado para GPUs NVIDIA.
-- Opciones de despliegue: WhisperKit (SDK oficial), con descarga del modelo mediante `WhisperKit.download(variant: "NbAiLab_nb-whisper-medium", from: "Selbyggen/nb-whisper-medium-coreml")`. Para el modelo original en PyTorch pueden usarse transformers, faster-whisper u otras implementaciones, pero esta conversión concreta está orientada a Core ML.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no aplica en el sentido tradicional; el modelo se ejecuta en el Apple Neural Engine y en memoria unificada de Apple Silicon. El repositorio ocupa 1,5 GB en float16.
+- GPU recomendadas: no se especifican GPU NVIDIA; el modelo está diseñado para Apple Silicon (Neural Engine). No se mencionan requisitos para A100, H100 o RTX 4090.
+- Compatibilidad con GPU de consumo: el modelo está pensado para Mac, iPhone y iPad con Apple Silicon; no se indica soporte para GPU de consumo NVIDIA.
+- Opciones de despliegue: WhisperKit (framework Swift) es la vía documentada; se descarga el modelo con WhisperKit.download y se transcribe con WhisperKit.transcribe. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Formato |
-|---|---|---|---|---|---|
-| Selbyggen/nb-whisper-medium-coreml (este) | ~769 M | 30 s por segmento | Noruego (no, nb, nn) | Apache 2.0 | Core ML |
-| NbAiLab/nb-whisper-medium | ~769 M | 30 s por segmento | Noruego (no, nb, nn) | Apache 2.0 | PyTorch (safetensors) |
-| NbAiLab/nb-whisper-large | ~1550 M | 30 s por segmento | Noruego (no, nb, nn) | Apache 2.0 | PyTorch (safetensors) |
-| openai/whisper-medium | ~769 M | 30 s por segmento | Multilingüe (99 idiomas) | MIT | PyTorch, Core ML, GGUF |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Selbyggen/nb-whisper-medium-coreml (este) | ~769 M (heredado) | 30 s por segmento | Noruego (no, nb, nn) | Apache 2.0 | Core ML float16 | Conversión para Apple Neural Engine vía WhisperKit |
+| NbAiLab/nb-whisper-medium | ~769 M (heredado) | 30 s por segmento | Noruego (no, nb, nn) | Apache 2.0 | PyTorch (safetensors presumiblemente) | Modelo original; misma precisión según la model card |
+| NbAiLab/nb-whisper-large | ~1550 M (heredado) | 30 s por segmento | Noruego (no, nb, nn) | Apache 2.0 | PyTorch | Mayor tamaño; WER comparable o ligeramente mejor en algunos conjuntos según la tabla del autor |
+| openai/whisper-medium | ~769 M | 30 s por segmento | Multilingüe (99 idiomas) | MIT (según el modelo original de OpenAI; no confirmado en la información disponible) | PyTorch | Modelo base sobre el que se hizo fine-tuning; no especializado en noruego |
 
-La comparativa directa más relevante es con el modelo original de NbAiLab: idénticos pesos y comportamiento, pero distinto formato de despliegue. Frente a nb-whisper-large, este modelo ofrece una precisión comparable o superior en varios conjuntos (FLEURS nb, NB Tale, Storting) con la mitad de parámetros. Frente a whisper-medium de OpenAI, la diferencia clave es el ajuste específico al noruego, que mejora sustancialmente la precisión en ese idioma a costa de perder cobertura multilingüe.
+No se dispone de datos de benchmarks comparativos con otros modelos ASR noruegos (por ejemplo, variantes de Vosk, Wav2Vec2 noruego o modelos comerciales) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es una conversión de formato, no un modelo nuevo: cualquier sesgo o limitación del modelo original de NbAiLab se hereda íntegramente.
-- Ventana de audio fija de 30 segundos por segmento, propia de Whisper; los audios más largos requieren segmentación y ensamblaje, lo que puede introducir errores en las fronteras.
-- El WER en habla espontánea (NB Tale, 15,8 %) y en discurso parlamentario (Storting, 13,6-14,6 %) es notablemente superior al de habla leída, por lo que en producción conviene prever revisión humana en esos dominios.
-- El texto generado es limpio, no verbatim: elimina repeticiones y falsos arranques, lo que lo inhabilita para tareas que requieran transcripción literal (análisis de disfluencias, forense, etc.).
-- Cobertura lingüística limitada al noruego; no debe usarse para otros idiomas.
-- Riesgo de alucinación inherente a los modelos Whisper, especialmente en segmentos con ruido, silencios largos o audio musical.
-- Requiere hardware Apple Silicon y el SDK de WhisperKit; no es desplegable en GPUs NVIDIA ni en servidores x86 convencionales sin recurrir al modelo original en PyTorch.
-- La licencia Apache 2.0 permite uso comercial, pero se recomienda mantener la atribución a NbAiLab y a Nasjonalbiblioteket.
-- No se documentan en la información disponible métricas de latencia, throughput ni consumo energético en dispositivos concretos.
+- Es una conversión de formato, no un modelo nuevo: cualquier sesgo o limitación del modelo original NbAiLab/nb-whisper-medium se hereda sin cambios.
+- El modelo está especializado exclusivamente en noruego; no se debe esperar un rendimiento aceptable en otros idiomas.
+- Riesgo de alucinación: como todo modelo Whisper, puede generar texto plausible que no corresponde al audio, especialmente en segmentos con ruido, silencios largos o audio de baja calidad.
+- La model card indica que el modelo genera texto limpio (elimina repeticiones y falsos comienzos), lo que puede producir discrepancias con referencias literales (verbatim) y explicar parte del WER en conjuntos como NB Tale y NPSC.
+- La ventana de contexto es de 30 segundos por segmento; el procesamiento de audio más largo depende de la segmentación interna de WhisperKit, que puede introducir errores en los límites de segmento.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se recomienda revisar la licencia del modelo base y de WhisperKit para cumplir con las atribuciones correspondientes.
+- Dependencia del ecosistema Apple: el formato Core ML limita el despliegue a dispositivos Apple con Neural Engine; no es portable a GPU NVIDIA ni a servidores Linux convencionales sin reconversión.
+- No se proporcionan datos sobre latencia, throughput ni consumo energético en la información disponible, lo que dificulta estimar el rendimiento en producción.
+- No se han publicado resultados de benchmarks estándar de razonamiento o código porque no aplican a este tipo de modelo.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Selbyggen/nb-whisper-medium-coreml
-- Modelo base original: https://huggingface.co/NbAiLab/nb-whisper-medium
+- Repositorio Hugging Face: https://huggingface.co/Selbyggen/nb-whisper-medium-coreml
+- Modelo base: https://huggingface.co/NbAiLab/nb-whisper-medium
 - Organización NbAiLab: https://huggingface.co/NbAiLab
-- WhisperKit (repositorio): https://github.com/argmaxinc/WhisperKit
+- WhisperKit (framework): https://github.com/argmaxinc/WhisperKit
 - whisperkittools (herramienta de conversión): https://github.com/argmaxinc/whisperkittools
-- Aplicación Sagt: https://sagtapp.com/
+- Aplicación Says: https://sagtapp.com/
+- Modelo Whisper medium de OpenAI (referencia del tokenizer): https://huggingface.co/openai/whisper-medium

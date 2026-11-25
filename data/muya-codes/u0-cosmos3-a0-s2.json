@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "muya-codes/u0-cosmos3-a0-s2",
+  "slug": "muya-codes-u0-cosmos3-a0-s2",
+  "author": "muya-codes",
+  "url": "https://huggingface.co/muya-codes/u0-cosmos3-a0-s2",
+  "created_at": "2026-11-22T09:49:53.000Z",
+  "updated_at": "2026-11-22T09:51:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gr00t_n1_5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2732332103,
+  "parameters_human": "2.73B",
+  "storage_bytes": 7618754860,
+  "storage_human": "7.6 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

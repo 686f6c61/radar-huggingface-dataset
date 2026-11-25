@@ -2,109 +2,98 @@
 
 ## Resumen
 
-astronomy-ai999x es un motor de resolución de problemas de astronomía para Python, distribuido por la organización AI999X y creado por Ibnul Jaif Farabi. No es un modelo de lenguaje generativo al uso: se describe como un motor neuro-simbólico determinista que interpreta la pregunta en inglés, selecciona una de sus 67 capacidades astronómicas certificadas, calcula el resultado de forma exacta y lo devuelve junto con los pasos, unidades, LaTeX y supuestos empleados. Cuando no puede verificar la respuesta, devuelve un rechazo explícito en lugar de improvisar.
+Astronomy (astronomy-ai999x) es un motor de cálculo astronómico empaquetado y distribuido a través de Hugging Face por el autor AI999X. No es un modelo de lenguaje generativo en el sentido habitual: se presenta como un solucionador determinista de problemas de astronomía que cubre 67 cálculos organizados en 13 temas, entre ellos mecánica celeste y órbitas, propiedades estelares, radiación de cuerpo negro, magnitudes y distancias, cosmología básica, el Sol y el entorno espacial, y parámetros de plasma. Cada cálculo incluye su fórmula, sus pasos intermedios y sus unidades, y devuelve una explicación en lenguaje natural en lugar de un número cuando una entrada falta o está fuera de rango.
 
-El repositorio de Hugging Face contiene pesos en safetensors con 4.715.520 parámetros (aproximadamente 4,7 millones) y artefactos ONNX, además de la distribución instalable vía pip. El paquete declara ejecución exclusiva en CPU, sin GPU, sin red y sin claves de API, con resultados idénticos en Windows y Linux sobre Python 3.10 a 3.14.
+El paquete se ofrece en cuatro formatos: aplicación de escritorio para Windows y Linux, interfaz de línea de comandos, versión web y biblioteca de Python (3.10 o superior). Todo se ejecuta en local, sin conexión, lo que junto con su naturaleza determinista busca ofrecer respuestas reproducibles y sin alucinaciones, según declara el autor. La etiqueta de pipeline en Hugging Face es `question-answering` y el idioma declarado es únicamente inglés.
 
-Su relevancia actual reside en la propuesta de "cero respuestas incorrectas por diseño": siete resultados posibles (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR) y un conjunto de 350 respuestas doradas documentadas que, según el autor, se reproducen de forma idéntica en todas las plataformas probadas. La evaluación es declarada por el autor y no está verificada de forma independiente.
+El repositorio tiene un tamaño de 0,0 GB y los pesos en safetensors suman 4.715.520 parámetros, un orden de magnitud muy alejado de los LLM convencionales y coherente con un motor especializado. La licencia es Apache 2.0, lo que facilita su integración en productos comerciales, y el modelo acumula 309 descargas con cero likes en el momento de la consulta. Es relevante para quienes necesitan resolver ejercicios y cálculos astronómicos de forma auditable y offline, más que para generación de texto abierta.
 
 ## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida neuro-simbólica: lectura de la pregunta basada en reglas más 67 capacidades simbólicas certificadas; la arquitectura interna del componente neuronal (safetensors/ONNX) no está detallada en la información disponible |
-| Parametros totales | 4.715.520 (según safetensors) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible (la entrada es una pregunta o una llamada tipada con parámetros, no una ventana de contexto) |
-| Tipos de cuantizacion | No disponible (no se declaran cuantizaciones; se distribuyen safetensors, ONNX y un wheel de Python) |
-| Idiomas soportados | Inglés (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors, ONNX y wheel de Python (`astronomy_ai999x-1.0.0-py3-none-any.whl`) |
+| Arquitectura | Motor de cálculo determinista empaquetado (no se especifica arquitectura de red neuronal; el autor lo describe como "one compiled engine") |
+| Parametros totales | 4.715.520 (safetensors) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors; distribución adicional como aplicación de escritorio (Windows/Linux), CLI, versión web y paquete de Python |
 
 ## Arquitectura y entrenamiento
 
-La información disponible describe el sistema como un motor determinista que combina una capa de lectura de la pregunta en lenguaje natural (basada en reglas, orientada a formas documentadas) con un conjunto de procedimientos simbólicos certificados implementados sobre SymPy y mpmath. Cada procedimiento recibe parámetros tipados, calcula el resultado y lo somete a una comprobación de verificación antes de devolverlo: sustitución inversa, análisis dimensional o comparación con un cálculo independiente. La API expone dos vías: `ask()` para preguntas en inglés documentado y `solve(capability_id, **inputs)` para la interfaz tipada garantizada.
+La información proporcionada no describe una arquitectura de transformer, MoE ni SSM. El autor presenta el producto como "one compiled engine" con cuatro formas de uso (aplicación de escritorio, línea de comandos, navegador y Python), lo que sugiere un núcleo compilado —con una implementación pura en Python para plataformas como macOS y ARM— que ejecuta cálculos astronómicos predefinidos. No se detallan capas, mecanismos de atención ni estrategias de decodificación.
 
-No se han publicado en la información proporcionada detalles sobre el proceso de entrenamiento del componente neuronal: no hay datos sobre volumen de tokens, composición del corpus, uso de RLHF/DPO ni función de pérdida. La model card tampoco documenta la topología interna de los 4,7 millones de parámetros almacenados en safetensors; el peso del sistema recae en el motor simbólico y en el paquete de conocimiento versionado 1.0.0. La innovación declarada es de diseño de producto más que de arquitectura: rechazo explícito ante la incertidumbre, trazabilidad de pasos y fórmulas, y reproducibilidad bit a bit entre plataformas.
+Tampoco se especifican datos de entrenamiento, número de tokens, composición del dataset ni procesos de RLHF o DPO. La model card menciona 67 cálculos en 13 temas y una evaluación sobre 350 preguntas documentadas con respuestas de referencia ("golden answers"), pero no se aporta información sobre el corpus de desarrollo. La innovación declarada es la ausencia de alucinación mediante cálculo determinista y la reproducibilidad multiplataforma.
 
 ## Capacidades
 
-- Resolución de problemas de distancias y magnitudes astronómicas, con salida en unidades del SI y unidades específicas del dominio (pc, ly, AU).
-- Propiedades estelares y radiación de cuerpo negro: luminosidad estelar, temperatura efectiva y magnitudes derivadas.
-- Mecánica orbital y celeste: transferencias de Hohmann, elementos orbitales y parámetros de órbitas.
-- Exoplanetas: cálculos asociados a detección, tránsitos y parámetros planetarios dentro de las capacidades certificadas.
-- Cosmología básica: tiempo de retroceso (lookback time), parámetros de Hubble y densidades cosmológicas.
-- Astronomía posicional y tiempo: conversión de coordenadas, por ejemplo altitud y acimut a partir de ángulo horario, declinación y latitud.
-- Física de plasmas y del espacio dentro del catálogo de 67 procedimientos.
-- Observación y telescopios: cálculos de observación y de instrumentación.
-- Explicabilidad integrada: cada respuesta incluye pasos, fórmulas en LaTeX, unidades, supuestos y el modelo utilizado.
-- Comportamiento de rechazo controlado: siete estados de salida explícitos, sin conjeturas silenciosas.
-- Ejecución offline en CPU, sin GPU, sin red y sin clave de API.
-- Interfaz de línea de comandos (`astronomy-ai999x "<question>"`, `astronomy-ai999x --capabilities`).
-- Tareas declaradas en los tags del repositorio: question answering, token classification, text classification, sentence similarity y feature extraction.
+- Resolución de 67 cálculos astronómicos en 13 temas, incluyendo mecánica celeste y órbitas, propiedades estelares, radiación de cuerpo negro, magnitudes y distancias, cosmología básica, el Sol y el entorno espacial, y parámetros de plasma.
+- Presentación de cada resultado con fórmula, pasos intermedios y unidades.
+- Devolución de una explicación razonada en lugar de un valor cuando una entrada falta o está fuera de rango.
+- Ejecución completamente offline en el equipo del usuario.
+- Cuatro interfaces de uso: aplicación de escritorio (Windows, Linux), CLI `astronomy`, versión web y biblioteca de Python 3.10+.
+- Distribución del mismo motor compilado vía `pip install astronomy-ai999x` en Windows y Linux x86-64, y build puro en Python en macOS y ARM.
+- Orientación a ayuda con deberes y resolución paso a paso de problemas de astronomía.
+- No se documentan capacidades de tool calling, agentes, visión, audio, razonamiento multi-paso general ni generación de texto libre.
 
 ## Casos de uso
 
-- Corrección automática de ejercicios de astronomía: `solve()` con la capacidad y los parámetros del enunciado permite comparar el resultado del alumno con un valor calculado y verificado, y devolver la discrepancia junto con los pasos intermedios.
-- Tutoría offline en aulas sin conectividad: al ejecutarse en CPU y sin red, puede desplegarse en equipos de laboratorio o portátiles de estudiantes donde no se permite acceso a servicios en la nube.
-- Generación de material docente en LaTeX: la salida incluye fórmulas y supuestos, lo que permite poblar apuntes o boletines de problemas de forma reproducible.
-- Validación cruzada en pipelines de investigación: usar el motor como segunda implementación independiente frente a un cálculo propio en AstroPy para detectar errores de unidades o de conversión en scripts de reducción de datos.
-- Cálculo de planificación de observaciones: conversión de coordenadas y cálculos de visibilidad para preparar una noche de observación sin depender de conexión a internet en el observatorio.
-- Integración en asistentes o chatbots de divulgación científica: la API devuelve un estado explícito y un mensaje de rechazo cuando la pregunta queda fuera de las 67 capacidades, lo que evita respuestas inventadas en producción.
-- Verificación en herramientas de evaluación tipo homework checker: el estado `NEEDS_INPUT` o `AMBIGUOUS` permite pedir al usuario los datos que faltan en lugar de asumir valores.
-- Pruebas de regresión en código científico: los 350 casos dorados documentados sirven como suite de referencia para comprobar que una actualización del entorno (versión de Python, de SymPy) no altera los resultados.
+- Docencia de astronomía: el motor resuelve ejercicios de mecánica orbital y propiedades estelares mostrando fórmula, pasos y unidades, lo que permite al estudiante seguir el razonamiento y verificar el resultado sin depender de una conexión.
+- Corrección automática de problemas: con 350 preguntas de referencia documentadas, se puede usar como oráculo determinista para validar respuestas de alumnos o de otros sistemas en plataformas de evaluación.
+- Cálculo de transferencias orbitales: la capacidad de transferencia de Hohmann entre órbitas circulares permite planificar maniobras en herramientas de simulación o en asignaturas de astrodinámica.
+- Estimación de distancias y magnitudes: el cálculo de distancia por paralaje y las magnitudes y distancias facilitan la reducción de datos observacionales en prácticas de laboratorio.
+- Cosmología básica en divulgación: el cálculo de tiempo de retorno (lookback time) a un desplazamiento al rojo sirve para generar explicaciones numéricas verificables en materiales educativos.
+- Caracterización de exoplanetas: el cálculo de la temperatura de equilibrio de un planeta y de la semiamplitud de velocidad radial apoya la interpretación de curvas de luz y datos espectroscópicos en contextos de investigación formativa.
+- Integración en pipelines Python: al instalarse como paquete, puede invocarse desde scripts y notebooks para automatizar cálculos repetitivos en informes o conjuntos de ejercicios.
+- Uso en entornos sin red: al ejecutarse offline, es adecuado para aulas, laboratorios aislados o despliegues con requisitos de privacidad.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos disponibles son los declarados por el autor en el `model-index` de la model card. No hay resultados publicados de MMLU, HumanEval, GSM8K ni de evaluaciones independientes.
+Los datos proceden del model-index declarado por el autor y no están verificados de forma independiente (`verified: false`).
 
-| Tarea | Conjunto de evaluación | Métrica | Valor | Verificado |
-|---|---|---|---|---|
-| Question answering de astronomía | Golden answers (350 preguntas documentadas, Windows y Linux, Python 3.10-3.14) | Accuracy | 1,0 | No (`verified: false`) |
+| Tarea | Conjunto de evaluación | Métrica | Valor |
+|---|---|---|---|
+| Question answering de astronomía | Golden answers (350 preguntas documentadas, Windows + Linux, Python 3.10-3.14) | Accuracy | 1,0 ("identical on every platform") |
 
-El propio autor etiqueta la métrica como "identical on every platform", es decir, reproduce exactamente las 350 respuestas documentadas en todas las plataformas probadas. Se trata de una evaluación interna sobre un conjunto propio, no de un benchmark de propósito general ni de una comparación con terceros.
+No se han publicado en la información disponible resultados de benchmarks estándar como MMLU, HumanEval o GSM8K, ni comparaciones con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no requiere GPU. El campo de ejecución de la model card es `inference: false` para inferencia tipo transformer y el sistema se declara "CPU only, offline".
-- Huella de los pesos: los 4.715.520 parámetros en safetensors equivalen a unos 19 MB en fp32 (4 bytes por parámetro), estimación calculada a partir del recuento publicado.
-- Memoria RAM: no publicada; al tratarse de Python puro con SymPy y mpmath, el consumo vendrá dominado por el intérprete y las dependencias, no por los pesos. Se recomienda reservar al menos varios cientos de MB por proceso.
-- GPU recomendadas: ninguna. Funciona en cualquier CPU x86-64; los tags incluyen ONNX, por lo que también puede ejecutarse con ONNX Runtime.
-- Cabe en hardware de consumo: sí, en cualquier portátil o máquina virtual modesta, sin acelerador.
-- Opciones de despliegue: instalación vía pip desde PyPI o desde el wheel del repositorio, uso como librería Python, CLI `astronomy-ai999x` y ejecución mediante ONNX Runtime. No aplican vLLM, TGI, llama.cpp ni Ollama, al no ser un modelo generativo servible por esas pilas.
-- Latencia y throughput: no publicados. Al ser cálculo simbólico determinista, el coste depende de la capacidad invocada y no de la longitud de una secuencia de entrada.
+- VRAM estimada para inferencia: no disponible; el tamaño de pesos (4.715.520 parámetros) y la distribución como motor compilado sugieren que no requiere GPU dedicada.
+- GPU recomendadas: no disponible; no se documenta uso de GPU.
+- ¿Cabe en GPU de consumo? No se especifica; por la naturaleza del producto, la ejecución es en CPU.
+- Opciones de despliegue: aplicación de escritorio para Windows y Linux, CLI `astronomy`, versión web en el navegador y paquete de Python (`pip install astronomy-ai999x`).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se han identificado en la información proporcionada modelos comparables de la misma categoría (motor neuro-simbólico de astronomía). La comparación más informativa es frente a librerías científicas que cubren dominio parecido, aunque no son modelos con pesos.
+No se dispone de información sobre modelos comparables en la documentación proporcionada. Se trata de un motor de cálculo especializado y determinista, no de un LLM generativo, por lo que las comparaciones habituales por parámetros, contexto o benchmarks no son directamente aplicables.
 
-| Sistema | Tipo | Parámetros | Contexto | Lenguaje natural | Licencia | Offline | Verificación de resultados |
-|---|---|---|---|---|---|---|---|
-| astronomy-ai999x | Motor neuro-simbólico con 67 capacidades certificadas | 4.715.520 | No disponible | Sí, inglés documentado | Apache-2.0 | Sí, CPU | Sí, con comprobación por capacidad y rechazo explícito |
-| AstroPy | Librería científica de Python para astronomía | No aplica (no es un modelo) | No aplica | No | BSD-3-Clause | Sí | No incluye capa de verificación ni estados de rechazo |
-| SymPy | Librería de matemática simbólica | No aplica (no es un modelo) | No aplica | No | BSD-3-Clause | Sí | No específica de astronomía |
-| LLM de propósito general (p. ej. modelos de 7B-70B) | Transformer generativo | No disponible en esta ficha | No disponible en esta ficha | Sí, multilingüe | Variable | Depende del despliegue | No; puede alucinar y no expone estados de error formales |
-
-La diferencia funcional clave frente a un LLM es que astronomy-ai999x no genera texto libre a partir de una distribución de probabilidad, sino que ejecuta procedimientos y verifica el resultado, lo que acota el riesgo de alucinación al precio de una cobertura limitada al catálogo de capacidades.
+| Modelo | Parámetros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|
+| astronomy-ai999x | 4.715.520 | no disponible | apache-2.0 | Motor de cálculo astronómico determinista |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Cobertura cerrada: solo resuelve lo que cubren sus 67 capacidades certificadas; fuera de ese catálogo devuelve `OUT_OF_SCOPE` o `UNRECOGNIZED_FORMAT`.
-- Idioma: únicamente inglés. Las formas de pregunta están documentadas y la lectura se basa en reglas, por lo que paráfrasis no previstas pueden no reconocerse.
-- Evaluación no independiente: el 1,0 de accuracy procede de un conjunto propio de 350 preguntas y está marcado como no verificado (`verified: false`). No hay benchmarks de terceros.
-- La afirmación "zero wrong answers" es una declaración del autor sobre el diseño del sistema; no equivale a una garantía formal de corrección física de todos los modelos y aproximaciones implementados.
-- Dependencia de supuestos: los resultados son tan válidos como las aproximaciones de cada capacidad (por ejemplo, fórmulas de transferencia de Hohmann ideal); los supuestos se declaran en la salida, pero deben revisarse en contextos de alta precisión.
-- Madurez del proyecto: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, con una única versión 1.0.0 y un solo autor. No hay historial de mantenimiento a largo plazo.
-- Trazabilidad de los pesos: la model card no detalla el entrenamiento ni la arquitectura interna del componente almacenado en safetensors/ONNX, lo que dificulta auditar esa parte.
-- Licencia Apache-2.0: permite uso comercial y modificaciones con atribución y aviso de cambios; no se han detectado cláusulas adicionales restrictivas en la información disponible.
-- No es sustituible por un servidor de inferencia de LLM: intentar desplegarlo con vLLM, TGI o llama.cpp no es viable; la integración es como dependencia de Python.
+- El idioma declarado es únicamente inglés; no se garantiza soporte en castellano ni en otros idiomas.
+- El alcance se limita a 67 cálculos en 13 temas de astronomía; no es un modelo de propósito general ni un asistente conversacional.
+- No se documentan sesgos, pero al ser un motor determinista el riesgo principal es de alcance: entradas fuera de los cálculos soportados devolverán una explicación en lugar de un resultado.
+- El resultado de accuracy de 1,0 procede de una evaluación declarada por el autor y marcada como no verificada; conviene tratarlo con cautela.
+- No se especifican limitaciones de contexto porque no aplica un contexto de tokens al uso.
+- La licencia Apache 2.0 permite uso comercial, pero deben respetarse las condiciones de la licencia y de los componentes distribuidos.
+- La disponibilidad de la build compilada se limita a Windows y Linux x86-64; en macOS y ARM se instala una versión pura en Python con las mismas respuestas declaradas.
+- Para producción, conviene validar los cálculos frente a fuentes astronómicas de referencia antes de confiar en ellos en contextos críticos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/AI999X/astronomy-ai999x
-- Documentación de capacidades: https://huggingface.co/AI999X/astronomy-ai999x/tree/main/docs
-- Evaluación: https://huggingface.co/AI999X/astronomy-ai999x/tree/main/evaluation
-- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
-- Paquete en PyPI: https://pypi.org/project/astronomy-ai999x/
-- Sitio web: https://ai999x.com
-- Apoyo al desarrollo: https://buymeacoffee.com/ibnuljaiffarabi
+- Página del modelo en el sitio del autor: https://www.ai999x.com/models/astronomy-ai999x/
+- Aplicación de escritorio, Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-astronomy-1.6.7-windows-x86_64.zip
+- Aplicación de escritorio, Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-astronomy-1.6.7-linux-x86_64.tar.gz
+- CLI, Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-windows-x86_64.zip
+- CLI, Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-linux-x86_64.tar.gz
+- Demostración en vídeo (MP4): https://www.ai999x.com/?ax_shot=astronomy-ai999x/clip.mp4
+- Repositorio de escritorio en GitHub: https://github.com/AI999X/ai999x-desktop

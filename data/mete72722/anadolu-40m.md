@@ -2,97 +2,103 @@
 
 ## Resumen
 
-Anadolu-40M es un modelo de lenguaje causal en turco de 40.178.176 parámetros entrenado desde cero por el desarrollador independiente mete72722. Se trata de un transformer decoder-only con arquitectura compatible con GPT-2 (10 capas, 8 cabezas de atención, `d_model` de 512, MLP interno de 2048), con una longitud de contexto de 512 tokens y un vocabulario byte-level BPE de 16.389 entradas sin token `UNK`. Su rasgo más distintivo es que todo el ciclo —preentrenamiento, ajuste supervisado e inferencia— se ha ejecutado en una única CPU Intel i7-7700, y el repositorio incluye un motor de inferencia basado solo en NumPy, sin dependencia de PyTorch ni CUDA.
+Anadolu-40M es un modelo de lenguaje causal en turco de 40.178.176 parámetros entrenado desde cero por el desarrollador independiente mete72722. Se trata de un transformer decoder-only con pesos compatibles con GPT-2, lo que permite cargarlo con `AutoModelForCausalLM` y aprovechar todo el ecosistema de `transformers` sin código personalizado. Su rasgo más distintivo es que todo el ciclo —preentrenamiento, ajuste fino y servicio— se realizó en una única CPU Intel i7-7700, e incluye un motor de inferencia escrito solo en NumPy que funciona sin PyTorch ni CUDA.
 
-El modelo se ha entrenado sobre Wikipedia en turco (`wikimedia/wikipedia`, split `20231101.tr`, licencia CC BY-SA) y el Bilkent Turkish Writings Dataset v2, con un corpus de aproximadamente 870,8 millones de caracteres (~227,6 millones de tokens BPE disponibles) y 32.768.000 tokens vistos según los metadatos de exportación. Posteriormente recibió un ajuste supervisado (SFT) para formato conversacional durante unas 400 iteraciones, con un formato de chat basado en los tokens especiales `<|bos|>`, `<|user|>`, `<|assistant|>` y `<|end|>`.
+El modelo emplea una ventana de contexto de 512 tokens y un vocabulario byte-level BPE de 16.389 entradas sin token `UNK`. Fue preentrenado con aproximadamente 344 millones de tokens procedentes de Wikipedia en turco y del Bilkent Turkish Writings Dataset v2, y posteriormente ajustado con supervisión (SFT) para formato conversacional mediante plantillas de chat con tokens especiales `<|user|>`, `<|assistant|>` y `<|end|>`.
 
-Es relevante ahora como ejemplo de modelo pequeño entrenado y servido íntegramente en CPU, útil para experimentación de bajo coste, docencia sobre entrenamiento desde cero y despliegues en hardware sin GPU. El autor advierte explícitamente de que no es un sustituto de modelos grandes y de que la decodificación debe ser voraz: el muestreo y el bloqueo de n-gramas repetidos degradan gravemente la coherencia en un modelo de este tamaño.
+Su relevancia es acotada pero clara: demuestra que es viable entrenar y desplegar un modelo conversacional funcional en turco sobre hardware de consumo sin GPU, y ofrece una API compatible con OpenAI de forma gratuita. No obstante, el propio autor advierte que no es un sustituto de modelos grandes y que su calidad está limitada por su tamaño y por un corpus de entrenamiento relativamente pequeño.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only compatible con GPT-2 |
+| Arquitectura | Transformer decoder-only (compatible con GPT-2) |
 | Parametros totales | 40.178.176 |
-| Parametros activos | no aplica (modelo denso, no MoE) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 512 tokens |
-| Tipos de cuantizacion | no disponible en el repositorio (pesos en float32; el autor indica que la conversion a GGUF/llama.cpp es posible sin codigo personalizado) |
+| Tipos de cuantizacion | float32 nativo; export NumPy fp32; conversión a GGUF/llama.cpp posible según la model card (no se listan cuantizaciones publicadas) |
 | Idiomas soportados | Turco (tr) |
-| Licencia | other (sin detalle de terminos en la informacion disponible) |
-| Formato de pesos | safetensors (export `numpy-fp32`) |
-
-Datos adicionales de arquitectura: 10 capas, 8 cabezas de atencion, `d_model` = 512, MLP interno de 2048 con activacion GELU (`gelu_new`, aproximacion tanh), normalizacion Pre-LayerNorm con `eps = 1e-5`, embeddings de entrada y salida atados, codificacion posicional aprendida y precision float32.
-
-Tokens especiales: `<|pad|>` (0), `<|user|>` (1), `<|assistant|>` (2), `<|end|>` (3), `<|bos|>` (4).
+| Licencia | other (no se especifican términos en la información disponible) |
+| Formato de pesos | safetensors (repositorio `transformers`); export adicional `numpy-fp32` |
+| Capas / cabezas / d_model | 10 / 8 / 512 |
+| Tamano interno MLP | 2048 (GELU, aproximación tanh / `gelu_new`) |
+| Vocabulario | 16.389 (byte-level BPE estilo GPT-2, sin `UNK`) |
+| Codificacion posicional | Aprendida |
+| Normalizacion | Pre-LayerNorm, eps = 1e-5 |
+| Embeddings | Atados entrada/salida |
+| Precision | float32 |
+| Runtime | NumPy únicamente (export `numpy-fp32`) |
+| Tamano del repositorio | 0,3 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only estandar con pesos compatibles con GPT-2, lo que permite cargarlo con `AutoModelForCausalLM` o `GPT2LMHeadModel` de la libreria `transformers` sin codigo personalizado. Usa vocabulario byte-level BPE de estilo GPT-2 con 16.389 entradas, lo que garantiza que cualquier byte sea representable y elimina el token `UNK`. La normalizacion es Pre-LayerNorm y los embeddings de entrada y salida estan atados.
+La arquitectura es un transformer decoder-only estándar de 10 capas, 8 cabezas de atención y dimensión de modelo 512, con capa MLP interna de 2048 y activación GELU en su variante `gelu_new` (aproximación tanh). Usa Pre-LayerNorm con eps de 1e-5, codificación posicional aprendida y embeddings de entrada y salida atados. Los pesos son directamente compatibles con GPT-2, lo que habilita `GPT2LMHeadModel`, `pipeline("text-generation")`, ajuste fino con LoRA y conversión a GGUF/llama.cpp sin código específico.
 
-El entrenamiento se realizo en dos etapas sobre CPU: un preentrenamiento desde cero y un ajuste supervisado (SFT) para chat de aproximadamente 400 pasos, partiendo del checkpoint `checkpoints/anadolu40x512/sft_friendly.pt`. Los datos combinan Wikipedia en turco (`20231101.tr`) y el Bilkent Turkish Writings Dataset v2, con un corpus de ~870,8 millones de caracteres (~227,6 millones de tokens BPE) y 32.768.000 tokens vistos registrados en los metadatos. No se menciona uso de RLHF ni DPO. La exportacion final (`numpy-fp32`, 2026-11-16) alimenta un motor de inferencia propio que solo requiere `numpy`, `safetensors` y `threadpoolctl`.
+El entrenamiento se realizó en dos etapas sobre CPU. La primera consistió en preentrenamiento desde cero seguido de una adaptación al contexto de 512 tokens, usando Wikipedia en turco (`wikimedia/wikipedia`, `20231101.tr`, CC BY-SA) y el Bilkent Turkish Writings Dataset v2, con un corpus de aproximadamente 870,8 millones de caracteres (~227,6 millones de tokens BPE disponibles) y 344.064.000 tokens vistos según los metadatos del export. La segunda etapa fue un ajuste fino supervisado (SFT) para chat de unas 500 iteraciones (mejor checkpoint de validación de una ejecución de 600), con 1.399 ejemplos de chat en turco escritos a mano y 208 pares destilados de modelos mayores. El checkpoint de origen fue `checkpoints/anadolu40x512b/sft512c.pt` y el export `numpy-fp32` se generó el 2026-11-18. No se menciona uso de RLHF ni DPO.
 
 ## Capacidades
 
-- Generacion de texto causal en turco: respuestas conversacionales de un solo turno y continuacion de texto.
-- Formato de chat integrado mediante plantilla de tokens especiales (`<|bos|><|user|>…<|end|><|assistant|>…<|end|>`), invocable con `apply_chat_template`.
-- Inferencia sin PyTorch ni CUDA mediante el motor NumPy incluido en `anadolu/`, que es el que sirve la API publica.
-- Compatibilidad con el ecosistema `transformers`: `pipeline("text-generation")`, `GPT2LMHeadModel`, ajuste fino con LoRA y conversion a GGUF/llama.cpp.
-- Generacion con decodificacion voraz (`do_sample=False`) y `repetition_penalty` configurable; el `generation_config.json` del repositorio fija `do_sample: false`, `no_repeat_ngram_size: 0` y `repetition_penalty: 1.08`.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: limitadas al turco; no se documenta soporte de otros idiomas.
-- Vision, audio o modo thinking: no disponible.
+- Generación de texto causal en turco con formato conversacional multi-turno mediante plantilla de chat.
+- Conversación con roles delimitados por tokens especiales (`<|user|>`, `<|assistant|>`, `<|end|>`, `<|bos|>`, `<|pad|>`).
+- Codificación byte-level BPE sin token `UNK`: cualquier byte de entrada es representable.
+- Inferencia sin PyTorch ni CUDA gracias al motor NumPy incluido.
+- Compatibilidad con el ecosistema `transformers`: carga con `AutoModelForCausalLM`, uso con `pipeline`, ajuste fino con LoRA y conversión a GGUF/llama.cpp.
+- Despliegue en CPU y en hardware de consumo; el autor lo sirvió en un Intel i7-7700.
+- API compatible con OpenAI y bot de Discord con memoria por usuario (según la model card).
+- No se documentan capacidades de visión, audio, tool calling, function calling ni modo de razonamiento extendido.
 
 ## Casos de uso
 
-- Experimentacion docente sobre entrenamiento desde cero: el modelo permite reproducir el ciclo completo de preentrenamiento y SFT en una CPU convencional, con hiperparametros y checkpoints documentados, lo que lo hace adecuado para cursos y talleres donde no hay acceso a GPU.
-- Despliegue en hardware sin GPU: gracias al motor NumPy (`numpy`, `safetensors`, `threadpoolctl`), puede servirse en un servidor modesto o en un equipo de escritorio con un i7-7700, sin instalar PyTorch ni CUDA, para demos internas o entornos con restricciones de dependencias.
-- Prototipado de asistentes conversacionales en turco: con el formato de chat integrado y respuestas voraces, sirve para validar pipelines de dialogo de un solo turno antes de migrar a un modelo mayor, manteniendo el mismo esquema de tokens especiales.
-- Base para ajuste fino con LoRA: al ser un GPT-2 plano, se puede adaptar a dominios concretos (atencion al cliente, FAQ, generacion de resenas) con recursos minimos, ya que el modelo completo ocupa unos 0,2 GB en el repositorio.
-- Generacion de texto turco en entornos embebidos o de bajo consumo: su tamano de 40M parametros y contexto de 512 tokens lo hacen viable en dispositivos con poca memoria, siempre que se acepte la calidad limitada de las salidas.
-- Integracion en pipelines de evaluacion y comparacion de modelos pequenos: sirve como linea base reproducible (perplejidad 26,107 sobre texto turco retenido) para medir el efecto de cambios en tokenizacion, datos o estrategias de decodificacion.
-- Bot de Discord con memoria por usuario: el autor mantiene `Anadolu AI#4542` como ejemplo de integracion conversacional sobre la API compatible con OpenAI.
+- Asistente conversacional ligero en turco sobre CPU: el modelo puede mantener diálogos de varios turnos dentro de su ventana de 512 tokens, adecuado para entornos sin GPU o con presupuesto de hardware mínimo.
+- Despliegue en dispositivos embebidos o servidores de bajos recursos: el export NumPy fp32 y los 0,3 GB del repositorio permiten ejecutarlo sin instalar PyTorch ni CUDA.
+- Prototipado rápido de aplicaciones de chat en turco: la compatibilidad con GPT-2 y `transformers` permite integrarlo en pipelines existentes y experimentar con plantillas de chat sin código a medida.
+- Base para ajuste fino con LoRA: al ser un GPT-2 estándar, sirve como punto de partida económico para adaptar el modelo a dominios concretos en turco con recursos limitados.
+- Generación de texto corto y completado de frases en turco: útil para tareas de autocompletado o generación de borradores donde la coherencia a corto plazo es suficiente.
+- Investigación educativa sobre entrenamiento desde cero: el modelo documenta todo el proceso (corpus, tokens vistos, etapas, métricas de validación) y sirve como referencia reproducible para estudiar el ciclo completo en CPU.
+- Integración en bots de chat comunitarios: el autor lo emplea en un bot de Discord con memoria por usuario y en una API compatible con OpenAI, patrón replicable para comunidades turcoparlantes.
 
 ## Benchmarks y rendimiento
 
 | Metrica | Valor |
 |---|---|
-| Perdida de validacion (modelado de lenguaje) | 3,2622 |
-| Perplejidad | 26,107 |
-| Perdida de validacion en preentrenamiento | 3,0122 |
-| Perdida de validacion tras SFT | 0,1660 |
+| Perdida de validacion (language modelling) | 3,8330 |
+| Perplejidad | 46,199 |
+| Perdida de validacion en preentrenamiento | 2,9253 |
+| Perdida de validacion tras SFT | 0,4566 |
+| Configuracion de evaluacion LM | 128 secuencias, 65.408 tokens, bloque 512, semilla 1234 |
 
-Configuracion de evaluacion: 256 secuencias, 130.816 tokens, bloque de 512, semilla 1234. La perplejidad se mide sobre texto turco retenido de la misma distribucion que el entrenamiento; el autor indica explicitamente que no es una comparacion con otros modelos turcos y que no se ha ejecutado ningun benchmark equivalente (MMLU, HumanEval, GSM8K u otros).
+La perplejidad se midió sobre texto turco reservado de la misma distribución que el entrenamiento y, según el autor, no constituye una comparación con otros modelos turcos: no se ha ejecutado ningún benchmark equivalente. La model card señala además que el reentrenamiento con un conjunto SFT mayor y más limpio elevó la perplejidad de LM (26,1 a 46,2) mientras mejoraba la calidad de las respuestas: en un conjunto de prueba de 8 prompts la tasa de defectos por respuesta bajó de 0,38 a 0,00, las 8 respuestas fueron correctas y no hubo bucles de repetición. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no aplica en el caso base; el modelo se sirve en CPU. En float32, los 40,18M parametros ocupan aproximadamente 160 MB de pesos, mas overhead de activaciones para contexto de 512 tokens.
-- GPU recomendadas: no se especifican; cualquier GPU consumer moderna puede alojar el modelo con holgura, pero el autor no documenta rendimiento en GPU.
-- Cabida en GPU consumer: si, en cualquier GPU con al menos ~1 GB de memoria libre en float32; tambien es viable en CPU pura.
-- Opciones de despliegue: motor NumPy propio (`anadolu.runtime.Engine` con `threads` configurable), `transformers` (`AutoModelForCausalLM`, `pipeline`), conversion a GGUF/llama.cpp segun el autor, y API publica compatible con OpenAI en `https://anadoluai.duckdns.org:8443`.
-- Latencia y throughput: no disponibles. El hardware de referencia del autor es una CPU Intel i7-7700; no se publican cifras de tokens por segundo.
+- VRAM estimada: no requiere GPU; en fp32 los 40,18 millones de parámetros ocupan aproximadamente 160 MB de pesos, más el estado de inferencia.
+- GPU recomendadas: ninguna imprescindible; el autor lo entrenó y sirvió en una CPU Intel i7-7700.
+- Cabe en cualquier GPU de consumo e incluso en CPU; también en entornos sin PyTorch mediante el motor NumPy.
+- Opciones de despliegue: `transformers` (PyTorch), motor NumPy incluido, `text-generation-inference` (etiqueta del repositorio), conversión a GGUF/llama.cpp según la model card, y API compatible con OpenAI alojada por el autor.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks comparativos en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa con otros modelos. Como referencia cualitativa de categoria (modelos causales pequenos para turco), podrian considerarse alternativas de la familia GPT-2 adaptadas a turco o modelos multilingues pequenos, pero no se han verificado parametros, contexto ni resultados de dichos modelos en esta busqueda.
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
+|---|---|---|---|---|---|
+| Anadolu-40M | 40,18 M | 512 | Turco | other | Entrenado desde cero en CPU; pesos GPT-2; motor NumPy |
+| Modelos GPT-2 small | 124 M | 1024 | Inglés principalmente | MIT (según versión) | Referencia de la familia compatible; no específico para turco |
+| Modelos turcos de mayor tamano (p. ej. familia Turkish LLM) | no disponible | no disponible | Turco | no disponible | No se dispone de datos verificables en la información proporcionada |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Anadolu-40M | 40.178.176 | 512 | other | Hugging Face, motor NumPy, API publica |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
+No se dispone de comparaciones directas con otros modelos turcos de tamaño similar en la información proporcionada; el propio autor indica que no se ha ejecutado un benchmark equivalente contra otros modelos.
 
 ## Limitaciones y advertencias
 
-- El propio autor advierte de que es un modelo pequeno y no un sustituto de GPT-4; la calidad de las respuestas es limitada incluso en turco.
-- El muestreo degrada la coherencia: con `temperature=0.7` y `top_p=0.92` la salida aparece corrupta con frecuencia; se recomienda decodificacion voraz (`do_sample=False`).
-- `no_repeat_ngram_size=3` perjudica gravemente la salida: empuja al modelo hacia subpalabras raras y produce palabras sin sentido. El `generation_config.json` lo fija a 0.
-- La API publica usa decodificacion muestreada con `no_repeat_ngram_size=3`, pero envuelve el modelo en un router con capa de respuestas predefinidas y fallback ante salidas corruptas, por lo que sus respuestas no son comparables con una llamada directa a `model.generate()`.
-- Contexto muy corto (512 tokens), lo que limita conversaciones multi-turno largas y documentos extensos.
-- Solo turco; no se documenta soporte de otros idiomas.
-- Riesgo de alucinacion y de incoherencia factual inherente a un modelo de 40M parametros entrenado con 32,77M tokens vistos.
-- La licencia es "other" sin terminos detallados en la informacion disponible; es necesario consultar el repositorio antes de cualquier uso comercial.
-- Los datos de entrenamiento incluyen Wikipedia (CC BY-SA), lo que puede implicar obligaciones de atribucion o comparticion derivadas de esa fuente.
-- No se han publicado benchmarks estandar (MMLU, HumanEval, GSM8K) ni comparaciones equivalentes con otros modelos turcos.
+- Modelo pequeño: el autor advierte explícitamente que no es un sustituto de GPT-4.
+- Ventana de contexto muy reducida (512 tokens), que limita diálogos largos y documentos extensos.
+- Perplejidad de 46,199 sobre texto de la misma distribución que el entrenamiento; la calidad fuera de esa distribución no está caracterizada.
+- Recomendación de decodificación codiciosa (`do_sample=False`): la decodificación por muestreo es menos fiable, y `no_repeat_ngram_size=3` degrada la salida hacia subpalabras raras y palabras sin sentido.
+- Riesgo de bucles de repetición y de respuestas incoherentes en preguntas de conocimiento; el autor mitiga parte de esto en producción con una base de conocimiento del servicio.
+- Entrenado solo en turco; no se documenta soporte multilingüe.
+- Licencia "other" sin términos detallados en la información disponible: es necesario consultar el repositorio antes de un uso comercial.
+- Conjunto SFT reducido (1.399 ejemplos manuales y 208 pares destilados), lo que limita la diversidad conversacional.
+- No se documentan evaluaciones de sesgo, alucinación ni seguridad.
+- La perplejidad de LM y la calidad de chat pueden moverse en direcciones opuestas, según advierte el propio autor.
 
 ## Enlaces
 

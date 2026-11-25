@@ -2,108 +2,108 @@
 
 ## Resumen
 
-Simons-297M es un modelo fundacional de series temporales desarrollado por Abel AI Lab, orientado a la previsión probabilística (probabilistic forecasting). Con 297,2 millones de parámetros, está diseñado para trabajar tanto con series univariantes como multivariantes, admitiendo además covariables conocidas en el futuro (known-future covariates), lo que lo hace adecuado para escenarios de planificación donde se dispone de información exógena como calendarios, promociones o variables meteorológicas.
+Simons-297M es un modelo fundacional de series temporales desarrollado por Abel AI Lab, disenado especificamente para pronostico probabilistico. Con 297,2 millones de parametros, se posiciona como una alternativa de peso medio dentro de la familia Simons 1, que incluye cuatro tamanos distintos. El modelo aborda el problema del forecasting multivariante con covariables conocidas en el futuro, una necesidad comun en entornos industriales, energeticos y financieros donde las predicciones deben incorporar informacion exogena planificada.
 
-La arquitectura combina un transformer causal que opera sobre parches (patches) de 32 pasos temporales con una capa de atención entre las variantes de una misma serie. El modelo maneja ventanas de contexto de hasta 32.768 pasos y genera predicciones en bloques de 512 pasos por pasada forward, lo que permite horizontes largos mediante composición por bloques. Su salida son 9 cuantiles (0,1 a 0,9), lo que lo convierte en una herramienta directamente utilizable para cuantificar incertidumbre en la predicción.
+La arquitectura combina un transformer causal que opera sobre parches de 32 pasos temporales con una capa de atencion posterior entre las variables de una misma serie. Esta diseno permite manejar ventanas de contexto de hasta 32.768 pasos y generar horizontes de 512 pasos por pasada, con la posibilidad de extenderlos bloque a bloque. El modelo produce 9 cuantiles (0,1 a 0,9), lo que lo hace adecuado para decisiones que requieren intervalos de prediccion y no solo estimaciones puntuales.
 
-El modelo es relevante en el contexto actual de modelos fundacionales para series temporales, donde la competición se centra en obtener previsiones precisas y probabilísticas con coste computacional reducido. Simons-297M declara una eficiencia notable: según el autor, es aproximadamente diez veces más rápido que modelos de tamaño similar al predecir un benchmark completo en una única GPU A100. Se distribuye con licencia openmdw-1.1, junto con su código de inferencia y entrenamiento, el dataset de preentrenamiento público y tres versiones adicionales de distinto tamaño.
+Su relevancia actual radica en que se distribuye como pesos abiertos bajo licencia OpenMDW-1.1, con codigo de inferencia y entrenamiento disponible en GitHub, y con resultados publicados en los leaderboards de GIFT-Eval, fev-bench y TIME. Ademas, el autor declara una eficiencia computacional notable: pronostica un benchmark completo en minutos en una sola A100, aproximadamente diez veces mas rapido que modelos de tamano similar.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal sobre parches de 32 pasos + capa de atención entre variantes; 13 capas, ancho 1280, 20 cabezas |
-| Parámetros totales | 297.230.368 (297,2M) |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | Hasta 32.768 pasos temporales de histórico; 512 pasos por pasada forward (horizontes mayores por bloques) |
-| Tipos de cuantización | No disponible |
-| Idiomas soportados | No aplica (modelo de series temporales, no de lenguaje) |
-| Licencia | openmdw-1.1 |
+| Arquitectura | Transformer causal sobre parches de 32 pasos + capa de atencion entre variables; 13 capas, anchura 1280, 20 cabezas |
+| Parametros totales | 297.230.368 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | hasta 32.768 pasos temporales de historia; 512 pasos por pasada |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible (modelo numerico de series temporales, no linguistico) |
+| Licencia | OpenMDW-1.1 |
 | Formato de pesos | safetensors |
-| Entradas | Hasta 32 variantes y hasta 16 covariables conocidas en el futuro por serie (numéricas o categóricas); NaN marca valores faltantes |
-| Salidas | 9 cuantiles (0,1, 0,2, …, 0,9) |
-| Librería | `simons` (PyTorch), versión 0.1.0 o superior |
-| Tamaño del repositorio | 1,2 GB |
 
 ## Arquitectura y entrenamiento
 
-Simons-297M es un transformer causal que tokeniza la serie temporal en parches de 32 pasos. Tras procesar la secuencia de parches con 13 capas de atención de ancho 1280 y 20 cabezas, una capa de atención adicional modela las dependencias entre las distintas variantes de una serie multivariante. Esta combinación permite capturar tanto la dinámica temporal intra-serie como las correlaciones cruzadas entre variables, algo crítico en previsión multivariante. El modelo acepta hasta 32 variantes y hasta 16 covariables conocidas en el futuro por serie, de tipo numérico o categórico; las covariables solo pasadas se aceptan pero se descartan.
+El modelo es un transformer causal que tokeniza la serie temporal en parches de 32 pasos. Tras procesar la secuencia de parches, aplica una capa de atencion transversal entre las variables (variates) de una misma serie, lo que permite capturar dependencias multivariantes. La configuracion concreta es de 13 capas, anchura 1280 y 20 cabezas de atencion. La entrada admite hasta 32 variables y hasta 16 covariables conocidas en el futuro por serie, tanto numericas como categoricas; los valores faltantes se marcan con NaN y las covariables solo pasadas se aceptan pero se descartan.
 
-El entrenamiento se estructura en cuatro etapas, desde un preentrenamiento sintético hasta un post-entrenamiento sobre datos reales. Los pesos publicados corresponden a la media con pesos iguales entre el modelo de la etapa 3 y su continuación, una técnica de fusión de pesos conocida como WiSE-FT (Weight-Space Ensembling for Fine-Tuning). El dataset de preentrenamiento público está disponible en `abel-lab/Simons-Pretrain`. La model card no detalla el número exacto de tokens de entrenamiento ni la composición completa del dataset, por lo que esos datos no están disponibles.
+El entrenamiento se estructura en cuatro etapas, desde un preentrenamiento sintetico hasta un postentrenamiento sobre datos reales. Los pesos publicados son la media con pesos iguales entre el modelo de la etapa 3 y su continuacion, una tecnica de fusión conocida como WiSE-FT. El dataset de preentrenamiento esta disponible publicamente en abel-lab/Simons-Pretrain. No se especifica en la informacion disponible el numero exacto de tokens de entrenamiento ni la composicion detallada del dataset, ni si se emplearon tecnicas de RLHF o DPO (poco habituales en este dominio).
 
 ## Capacidades
 
-- Previsión probabilística de series temporales: genera 9 cuantiles por paso, permitiendo construir intervalos de predicción y distribuciones empíricas.
-- Series univariantes y multivariantes: soporta hasta 32 variantes por serie.
-- Covariables conocidas en el futuro: hasta 16 por serie, numéricas o categóricas (por ejemplo, calendario, festivos, promociones).
-- Manejo de valores faltantes: los NaN se interpretan como datos ausentes.
-- Contexto largo: hasta 32.768 pasos de histórico, útil para series con estacionalidades largas o dependencias de largo plazo.
-- Horizontes largos por bloques: 512 pasos por pasada forward, con composición por bloques para horizontes mayores.
-- Inferencia en CPU y GPU mediante PyTorch y el paquete `simons`.
-- No soporta tool calling, agentes, visión, audio ni capacidades lingüísticas: es un modelo especializado exclusivamente en series temporales.
+- Pronostico probabilistico: genera 9 cuantiles (0,1, 0,2, ..., 0,9) por cada paso del horizonte, lo que permite construir intervalos de prediccion.
+- Series univariantes y multivariantes: soporta hasta 32 variables por serie.
+- Covariables conocidas en el futuro: hasta 16 por serie, numericas o categoricas, lo que permite incorporar calendarios, promociones, festivos u otras senales planificadas.
+- Manejo de valores faltantes mediante NaN.
+- Contexto largo: hasta 32.768 pasos de historia.
+- Horizontes extensibles: 512 pasos por pasada, con generacion bloque a bloque para horizontes mayores.
+- Inferencia en CPU y GPU mediante PyTorch y el paquete `simons` (version 0.1.0 o superior).
+- No dispone de capacidades de generacion de texto, codigo, vision, audio, tool calling ni razonamiento agentico; es un modelo puramente numerico de forecasting.
 
 ## Casos de uso
 
-- Previsión de demanda energética: el modelo puede ingerir el histórico de consumo (hasta 32 variantes, por ejemplo por región o por tipo de cliente) junto con covariables de calendario y meteorología conocidas en el futuro, y producir cuantiles de demanda horaria para planificación de generación y reservas.
-- Gestión de inventario y planificación de suministro: con series de ventas por producto y covariables de promociones planificadas, Simons-297M genera distribuciones de demanda futura que permiten fijar niveles de stock con un nivel de servicio objetivo (por ejemplo, el cuantil 0,9).
-- Previsión financiera de series de alta frecuencia: su contexto de 32.768 pasos y su capacidad multivariante permiten modelar series como tipos de cambio, volatilidad o volúmenes con dependencias cruzadas entre activos.
-- Monitorización de infraestructuras y capacity planning: previsión de métricas de tráfico, latencia o uso de CPU con covariables conocidas (despliegues programados, ventanas de mantenimiento) para anticipar saturación.
-- Previsión meteorológica y de variables ambientales: series multivariantes de temperatura, humedad y viento con covariables exógenas, generando intervalos de incertidumbre para modelos aguas abajo.
-- Planificación de recursos humanos: previsión de afluencia de clientes o carga de trabajo por franja horaria con covariables de calendario, para dimensionar turnos con cuantiles de riesgo.
-- Investigación en modelos fundacionales de series temporales: el modelo, su código de entrenamiento y el dataset público permiten reproducir y extender experimentos de preentrenamiento y post-entrenamiento.
+- Pronostico de demanda energetica: el modelo puede ingerir el historial de consumo (hasta 32.768 pasos) junto con covariables futuras como temperatura prevista o calendario laboral, y devolver cuantiles de demanda por hora. Los intervalos permiten dimensionar reservas de capacidad con niveles de confianza explicitos.
+- Planificacion de inventario y cadena de suministro: con series multivariantes por producto y covariables de promociones planificadas, el modelo genera distribuciones de demanda que alimentan politicas de reposicion basadas en coste de ruptura frente a coste de almacenamiento.
+- Prevision de ventas retail: el soporte de hasta 32 variables por serie permite modelar tiendas o categorias conjuntamente, capturando correlaciones entre productos mediante la capa de atencion entre variables.
+- Monitorizacion industrial y mantenimiento predictivo: series de sensores (temperatura, vibracion, presion) con covariables de regimen de operacion planificado; los cuantiles altos sirven como umbrales de alerta temprana.
+- Forecasting financiero de alta frecuencia: la ventana de contexto de 32.768 pasos permite incluir varios ciclos estacionales completos, y la salida probabilistica es util para gestion de riesgo y calculo de valor en riesgo.
+- Prediccion meteorologica y de recursos renovables: integracion de covariables futuras conocidas (predicciones fisicas, calendario solar) para generar escenarios de produccion eolica o solar con incertidumbre cuantificada.
+- Evaluacion comparativa de modelos en investigacion: al estar disponible el dataset de preentrenamiento y el codigo, sirve como linea base reproducible en estudios de forecasting probabilistico sobre GIFT-Eval, fev-bench o TIME.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card (métricas relativas a Seasonal Naive; `verified: false`):
+Resultados declarados por el autor en la model card (no verificados de forma independiente). Las metricas MASE y CRPS se expresan relativas a Seasonal Naive; en fev-bench se reportan como skill score porcentual.
 
-| Benchmark | Métrica | Valor |
-|---|---|---|
-| GIFT-Eval | MASE (relativo a Seasonal Naive) | 0,6731 |
-| GIFT-Eval | CRPS (relativo a Seasonal Naive) | 0,4574 |
-| fev-bench | SQL skill score (%, relativo a Seasonal Naive) | 48,41 |
-| fev-bench | MASE skill score (%, relativo a Seasonal Naive) | 37,85 |
-| TIME | MASE (relativo a Seasonal Naive) | 0,6371 |
-| TIME | CRPS (relativo a Seasonal Naive) | 0,5341 |
+| Benchmark | Metrica | Valor | Fuente |
+|---|---|---|---|
+| GIFT-Eval | MASE (relativo a Seasonal Naive) | 0,6731 | Leaderboard GIFT-Eval |
+| GIFT-Eval | CRPS (relativo a Seasonal Naive) | 0,4574 | Leaderboard GIFT-Eval |
+| fev-bench | SQL skill score (%) | 48,41 | Leaderboard fev-bench |
+| fev-bench | MASE skill score (%) | 37,85 | Leaderboard fev-bench |
+| TIME | MASE (relativo a Seasonal Naive) | 0,6371 | Leaderboard TIME |
+| TIME | CRPS (relativo a Seasonal Naive) | 0,5341 | Leaderboard TIME |
 
-En cuanto a eficiencia, el autor declara que en una única GPU A100 Simons-297M predice un benchmark completo en minutos, aproximadamente diez veces más rápido que modelos de tamaño similar. No se proporcionan cifras absolutas de latencia ni de throughput en la información disponible.
+El autor indica ademas que, en una sola GPU A100, Simons-297M pronostica un benchmark completo en minutos, aproximadamente diez veces mas rapido que modelos de tamano similar. No se proporcionan cifras absolutas de latencia o throughput mas alla de esta comparacion relativa.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita. Con 297,2M parámetros, los pesos en precisión completa (fp32) ocupan aproximadamente 1,2 GB; en fp16/bf16, unos 0,6 GB. A ello hay que sumar memoria para activaciones y lotes, que depende de la longitud de contexto y del número de series.
-- GPU recomendadas: el autor cita una A100 para las mediciones de eficiencia; por tamaño, el modelo debería caber holgadamente en GPUs de consumo como RTX 3090, RTX 4090 o superiores, aunque no se confirman requisitos mínimos en la información disponible.
-- Cabe en GPU de consumo: previsiblemente sí, dado el tamaño del modelo, pero no hay confirmación oficial en la model card.
-- Opciones de despliegue: PyTorch en CPU o GPU mediante el paquete `simons` (versión 0.1.0 o superior), instalable desde el repositorio de GitHub. No se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI, que no aplican a este tipo de modelo.
-- Latencia y throughput: solo se declara la comparación relativa (unas diez veces más rápido que modelos de tamaño similar en A100); no hay cifras absolutas disponibles.
+- VRAM estimada para inferencia en precision completa (fp32): aproximadamente 1,2 GB solo para pesos (297M parametros x 4 bytes), mas activaciones y memoria del contexto; el repo ocupa 1,2 GB.
+- En fp16/bf16 los pesos ocupan aproximadamente 0,6 GB, lo que deja margen amplio para activaciones incluso en GPUs de gama media.
+- Cabe en GPUs de consumo: cualquier GPU con 8 GB o mas (RTX 3060, RTX 4060, RTX 4070, RTX 4090) deberia poder ejecutar inferencia, aunque el rendimiento dependera de la longitud del contexto y del tamano del lote.
+- GPU recomendadas para produccion: A100 o H100 segun la referencia de eficiencia del autor; tambien es viable en L4, L40S o RTX 4090 para cargas moderadas.
+- Despliegue: el paquete oficial `simons` sobre PyTorch, con soporte de CPU y GPU. No se mencionan integraciones con vLLM, llama.cpp, Ollama ni TGI, lo cual es esperable al no ser un modelo de lenguaje.
+- Latencia y throughput: no se publican cifras absolutas; solo la comparacion relativa de aproximadamente 10x mas rapido que modelos de tamano similar en una A100 para un benchmark completo.
 
 ## Comparativa con modelos similares
 
-La información proporcionada no incluye una comparativa numérica con modelos alternativos concretos. El autor menciona que Simons-297M se posiciona frente a "cuatro modelos ampliamente utilizados" en los leaderboards de GIFT-Eval, fev-bench y TIME (entre las entradas de pesos abiertos), pero no detalla sus nombres ni sus resultados en el texto disponible.
+La informacion proporcionada no incluye datos de parametros, contexto ni licencia de los modelos comparables. La model card menciona que Simons-297M se situa frente a "cuatro modelos ampliamente utilizados" en los leaderboards, pero no los nombra ni detalla sus especificaciones.
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Simons-297M | 297,2M | 32.768 pasos | openmdw-1.1 | Hugging Face, GitHub, dataset público |
-| Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible |
+| Simons-297M | 297,2M | 32.768 pasos | OpenMDW-1.1 | Pesos abiertos en HF |
+| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
+
+Para contextualizar el rendimiento relativo, se puede consultar directamente la posicion en los leaderboards de GIFT-Eval, fev-bench y TIME enlazados en la seccion de enlaces.
 
 ## Limitaciones y advertencias
 
-- Resultados de benchmarks no verificados: las métricas de la model card están marcadas como `verified: false`; conviene contrastarlas en los leaderboards oficiales antes de tomar decisiones.
-- Modelo especializado: no es un modelo de lenguaje; no genera texto, no soporta tool calling ni razonamiento simbólico. Su uso está limitado a previsión de series temporales.
-- Límites estructurales: máximo de 32 variantes y 16 covariables conocidas en el futuro por serie; horizontes superiores a 512 pasos requieren composición por bloques, lo que puede acumular error.
-- Datos de entrenamiento incompletos: la model card no detalla el volumen de tokens ni la composición del dataset, lo que dificulta evaluar sesgos de dominio.
-- Riesgo de mal rendimiento fuera de distribución: como todo modelo fundacional de series temporales, puede degradarse en dominios con dinámicas muy distintas a las del preentrenamiento (por ejemplo, series con cambios de régimen abruptos o datos muy ruidosos).
-- Incertidumbre calibrada solo hasta donde alcancen los benchmarks: los cuantiles de salida deben validarse en el dominio concreto antes de usarse en producción.
-- Licencia openmdw-1.1: es una licencia de pesos abiertos, pero conviene revisar sus términos exactos para uso comercial, ya que la información disponible no detalla restricciones específicas.
-- Idiomas: no aplica; el modelo no procesa texto.
+- Los resultados de benchmarks son declarados por el autor y no han sido verificados de forma independiente (campo `verified: false` en el model-index).
+- No se detalla la composicion del dataset de entrenamiento mas alla de su disponibilidad publica; pueden existir sesgos derivados de la distribucion de dominios y frecuencias presentes en los datos.
+- Riesgo de alucinacion en sentido estadistico: el modelo puede producir pronosticos poco fiables ante regimenes no vistos, cambios estructurales o series con muy pocos datos historicos.
+- El limite de 32 variables y 16 covariables por serie restringe su uso en problemas de muy alta dimensionalidad.
+- Las covariables solo pasadas se descartan, lo que puede suponer perdida de informacion si el usuario las incluye esperando que se utilicen.
+- No es un modelo linguistico: no procesa texto, codigo ni imagenes, y no soporta tool calling ni agentes.
+- La licencia OpenMDW-1.1 debe revisarse con atencion antes de un uso comercial; la informacion disponible no detalla sus terminos concretos mas alla del identificador.
+- No se publican cifras absolutas de latencia ni requisitos minimos de hardware; las estimaciones de VRAM de esta ficha son calculos a partir del numero de parametros.
+- El paquete de inferencia (`simons`) requiere version 0.1.0 o superior y se instala desde el repositorio de GitHub, no desde PyPI segun la informacion disponible; esto implica dependencia del codigo del repositorio.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/abel-lab/Simons-297M
-- Repositorio GitHub (inferencia y entrenamiento): https://github.com/Abel-ai-lab/Simons
-- Guía de inicio: https://github.com/Abel-ai-lab/Simons/blob/main/docs/GETTING_STARTED.md
+- Repositorio GitHub (codigo de inferencia y entrenamiento): https://github.com/Abel-ai-lab/Simons
 - Dataset de preentrenamiento: https://huggingface.co/datasets/abel-lab/Simons-Pretrain
-- Post de presentación: https://abel.ai/research/introducing-simons/
-- Colección Simons 1 (cuatro tamaños): https://huggingface.co/collections/abel-lab/simons-1-6ae3d4ce9705938e293c52dd
-- Demo Simons Forecast Explorer: https://huggingface.co/spaces/abel-lab/simons-forecast-explorer
+- Coleccion Simons 1 (cuatro tamanos y datos): https://huggingface.co/collections/abel-lab/simons-1-6ae3d4ce9705938e293c52dd
+- Demo interactiva (Simons Forecast Explorer): https://huggingface.co/spaces/abel-lab/simons-forecast-explorer
+- Guia de inicio: https://github.com/Abel-ai-lab/Simons/blob/main/docs/GETTING_STARTED.md
+- Documentacion del modelo: https://github.com/Abel-ai-lab/Simons/blob/main/docs/MODEL.md
 - Leaderboard GIFT-Eval: https://huggingface.co/spaces/Salesforce/GIFT-Eval
 - Leaderboard fev-bench: https://huggingface.co/spaces/autogluon/fev-bench
 - Leaderboard TIME: https://huggingface.co/spaces/Real-TSF/TIME-leaderboard

@@ -2,56 +2,55 @@
 
 ## Resumen
 
-ScarletKc-2.0-NVFP4-GGUF es una familia de conversiones a formato GGUF del modelo ScarletKc/ScarletKc-2.0, un modelo denso de 27.320.698.112 parámetros (27B) con arquitectura híbrida que combina Gated DeltaNet y Gated Attention, torre de visión nativa y cabeza MTP (multi-token prediction) embebida para decodificación especulativa. El trabajo de conversión y cuantización lo publica el usuario esatapedico, mientras que el modelo original pertenece a ScarletKc. La licencia es Apache-2.0 en ambos niveles.
+ScarletKc-2.0-NVFP4-GGUF es una colección de cuantizaciones GGUF en formato NVFP4 del modelo ScarletKc/ScarletKc-2.0, un modelo denso de 27 320 698 112 parámetros (aproximadamente 27,3 mil millones) con arquitectura híbrida que combina Gated DeltaNet y Gated Attention, e incorpora una torre de visión nativa y una cabeza MTP (multi-token prediction) para decodificación especulativa. El trabajo de conversión numérica y de la escalera de siete niveles de precisión lo firma el usuario esatapedico; el modelo original pertenece al repositorio ScarletKc.
 
-La relevancia de esta publicación está en la escalera de precisión: siete ficheros GGUF que comparten un backbone NVFP4 de 448 tensores byte a byte idéntico y difieren únicamente en la precisión del `lm_head`, el token embedding y la cabeza MTP. Esto permite elegir el compromiso tamaño/calidad sin cambiar el resto de los pesos, algo poco habitual en el ecosistema GGUF. Los ficheros están pensados para hardware Blackwell (sm_120) con soporte NVFP4 en llama.cpp.
+La relevancia de esta publicación radica en que comprime un modelo de 27B en ficheros de entre 14,86 GB y 19,69 GB que caben en GPUs de consumo con 16-24 GB de VRAM, manteniendo la cabeza MTP embebida en cada fichero, de modo que el despliegue con decodificación especulativa no requiere un modelo drafter separado. Está orientada a hardware Blackwell (sm_120) y al ecosistema llama.cpp.
 
-El modelo base está etiquetado como qwen3.5 en los tags, con 65 bloques (`qwen35.block_count=65`), contexto declarado de 262.144 tokens en el GGUF padre y cabeza MTP de una capa (`nextn_predict_layers=1`). El repositorio ocupa 78,8 GB e incluye nueve GGUFs (siete tiers más el ORIG y el proyector de visión) junto con las tarjetas de documentación.
+La información disponible sobre el modelo base es limitada: la model card se centra en el proceso de cuantización y en las mediciones de los distintos niveles, y no detalla la composición del dataset de entrenamiento ni los resultados de benchmarks estándar del modelo original.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: Gated DeltaNet + Gated Attention, con cabeza MTP embebida y torre de visión nativa |
-| Parámetros totales | 27.320.698.112 (27B) |
-| Parámetros activos | No aplica (modelo denso) |
-| Longitud de contexto | 262.144 tokens (declarado en el GGUF padre ORIG) |
-| Tipos de cuantización | NVFP4 (backbone), Q2_K, Q3_K, Q4_K, Q5_0, Q6_K, Q8_0, IQ4_XS, BF16, F32 (según tensor y tier) |
-| Idiomas soportados | Inglés y multilingüe (según metadatos; sin listado detallado) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Arquitectura | Transformer híbrido: Gated DeltaNet + Gated Attention, con torre de visión y cabeza MTP |
+| Parametros totales | 27 320 698 112 (dato real de safetensors) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | 262 144 tokens (según metadatos del GGUF ORIG) |
+| Tipos de cuantizacion | NVFP4 en el backbone (448 tensores), con escalera de precisión por nivel en lm_head, token embedding y cabeza MTP: Q2_K, Q3_K, Q4_K, Q5_0, Q6_K, Q8_0, IQ4_XS, BF16; 48 vectores `ssm_alpha` en F32 |
+| Idiomas soportados | en, multilingual |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (siete niveles) + mmproj F16 para visión |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer denso de 27B con 65 bloques que combina dos mecanismos de atención: Gated DeltaNet (atención lineal con estado recurrente) y Gated Attention (atención completa). Esta hibridación busca reducir el coste de la ventana larga manteniendo calidad en tareas que requieren atención global. Incorpora una cabeza MTP de una capa (`nextn_predict_layers=1`) que actúa como drafter interno para decodificación especulativa, y una torre de visión nativa servida aparte como proyector `mmproj`.
+El modelo base es un transformer denso híbrido de 65 bloques (`qwen35.block_count=65`) que alterna capas de Gated DeltaNet y de Gated Attention. La cabeza MTP ocupa un bloque adicional (blk.64) con `nextn_predict_layers=1`, lo que permite decodificación especulativa integrada. El checkpoint original contiene 1711 claves (1199 base más 512 acompañantes de escala NVFP4). La torre de visión se distribuye como proyector separado (`mmproj-ScarletKc-2.0-NVFP4-F16.gguf`, 334 tensores, 0,93 GB).
 
-La conversión NVFP4 se realizó sobre el checkpoint original: el backbone compartido consta de 448 tensores NVFP4 (256 cuantizados en la pasada de conversión —192 de MLP y 64 de atención completa— más 192 tensores DeltaNet normalizados al construir los tiers), con 48 vectores `ssm_alpha` mantenidos en F32 y verificación SHA-256 por tensor contra el tier MID-HIGH. El censo del checkpoint es de 1.711 claves (1.199 base más 512 compañeras de escala NVFP4) y la cabeza MTP es bit a bit idéntica al origen (15/15). No se dispone de información sobre el dataset de entrenamiento, número de tokens, composición ni si hubo RLHF/DPO en la información proporcionada.
+El trabajo de esta publicación es exclusivamente de conversión numérica: 256 tensores del backbone provienen de la pasada de conversión NVFP4 (192 de MLP y 64 de atención completa), y 192 tensores DeltaNet se normalizaron a NVFP4 durante la construcción de cada nivel. La cabeza MTP es bit-idéntica al origen (15/15). No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo original.
 
 ## Capacidades
 
-- Generación de texto conversacional y razonamiento en modo thinking (los smoke tests confirman terminación del bloque de pensamiento con contenido real).
-- Procesamiento de imágenes mediante el proyector de visión `mmproj-ScarletKc-2.0-NVFP4-F16.gguf` (emparejamiento documentado pero no verificado en esta familia).
-- Decodificación especulativa MTP integrada en cada fichero (`--spec-type draft-mtp`), sin necesidad de un drafter separado.
-- Capacidades multilingües declaradas en los metadatos, con inglés como idioma principal.
-- Compatibilidad con endpoints y uso conversacional según los tags del repositorio.
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Generación de texto conversacional y razonamiento, con traza de pensamiento (thinking) que termina correctamente según las pruebas de humo.
+- Procesamiento de imágenes mediante el proyector de visión emparejable con cualquier nivel vía `--mmproj` (documentado por el autor, aunque no probado en esta familia).
+- Decodificación especulativa nativa con la cabeza MTP embebida (`--spec-type draft-mtp`), sin necesidad de un drafter externo.
+- Soporte multilingüe declarado (en y multilingual).
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- No se dispone de información sobre soporte de tool calling, function calling ni razonamiento agéntico multi-paso.
 
 ## Casos de uso
 
-- Despliegue en estaciones con GPU Blackwell: los tiers de 14,86 a 19,69 GB caben en GPUs consumer de 24 GB (RTX 4090/5090) y permiten ejecutar un modelo de 27B con contexto largo gracias al backbone NVFP4 y a la ventana de 262.144 tokens.
-- Asistentes conversacionales de contexto largo: la ventana de 262.144 tokens permite mantener historiales extensos o analizar documentos completos sin truncamiento, con el tier MEDIUM (16,38 GB) como equilibrio entre calidad y VRAM.
-- Generación asistida con decodificación especulativa: la cabeza MTP embebida acelera la generación token a token en llama.cpp con `--spec-type draft-mtp`, útil en aplicaciones interactivas donde la latencia percibida importa (28-32 tok/s en tg128 según tier).
-- Procesamiento de documentos con imágenes: el proyector de visión F16 (0,93 GB) permite añadir entrada multimodal a cualquier tier, adecuado para extracción de información de capturas, formularios o figuras.
-- Evaluación comparativa de cuantizaciones: los siete tiers con backbone idéntico permiten medir el impacto aislado de la precisión de `lm_head`, embeddings y cabeza MTP sobre perplejidad y velocidad, útil para investigación en cuantización.
-- Servicio de inferencia en producción con vLLM o llama.cpp server: el formato GGUF y la licencia Apache-2.0 facilitan el despliegue comercial en infraestructura propia, eligiendo el tier según el presupuesto de VRAM (13,83 a 18,33 GiB).
-- Prototipado en hardware de gama alta consumer: el tier VERY-LOW (14,86 GB, 13,83 GiB de VRAM) permite ejecutar el modelo completo en una RTX 4090 con margen para contexto, con perplejidad de 3,8039.
+- Despliegue local en GPU de consumo: el nivel VERY-LOW ocupa 13,83 GiB de VRAM y el VERY-HIGH 18,33 GiB, lo que permite ejecutar un modelo de 27B en tarjetas de 16-24 GB con llama.cpp.
+- Inferencia de baja latencia con decodificación especulativa: la cabeza MTP embebida en cada fichero permite activar `--spec-type draft-mtp` y acelerar la generación sin cargar un modelo drafter adicional.
+- Asistentes conversacionales con contexto largo: la ventana de 262 144 tokens del GGUF ORIG permite mantener conversaciones multi-turno o procesar documentos extensos en una sola pasada.
+- Análisis de documentos con imágenes: el proyector `mmproj` F16 (0,93 GB) se empareja con cualquier nivel para tareas de descripción de imágenes o extracción de información visual.
+- Servicio en hardware Blackwell: la cuantización NVFP4 está orientada a sm_120, por lo que encaja en despliegues sobre GPUs de esa generación con llama.cpp.
+- Evaluación comparativa de precisión: la escalera de siete niveles permite medir el compromiso entre perplejidad (de 3,8039 en VERY-LOW a 3,7351 en MEDIUM y HIGH) y huella de VRAM para elegir el punto óptimo de producción.
+- Prototipado e investigación: la licencia Apache-2.0 y el formato GGUF facilitan experimentos reproducibles con hashes SHA-256 verificables por fichero.
 
 ## Benchmarks y rendimiento
 
-Datos medidos por el autor de la conversión en llama.cpp (perplejidad, pp512 y tg128):
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card aporta mediciones de perplejidad (PPL) y de rendimiento de llama.cpp por nivel:
 
-| Tier | Tamaño | PPL | VRAM | pp512 (tok/s) | tg128 (tok/s) |
+| Nivel | Tamano | PPL | VRAM | pp512 (tok/s) | tg128 (tok/s) |
 |---|---|---|---|---|---|
 | VERY-LOW | 14,86 GB | 3,8039 ± 0,09155 | 13,83 GiB | 2467,35 ± 24,84 | 32,39 ± 0,19 |
 | COMPACT-LOW | 15,16 GB | 3,7894 ± 0,09109 | 14,11 GiB | 2471,50 ± 29,25 | 32,04 ± 0,19 |
@@ -61,40 +60,41 @@ Datos medidos por el autor de la conversión en llama.cpp (perplejidad, pp512 y 
 | HIGH | 17,57 GB | 3,7351 ± 0,08920 | 16,35 GiB | 2403,77 ± 26,13 | 28,11 ± 0,06 |
 | VERY-HIGH | 19,69 GB | 3,7522 ± 0,09004 | 18,33 GiB | 2352,72 ± 144,63 | 28,14 ± 0,08 |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+El autor indica que no hay ancla de KLD para esta familia, por lo que esa métrica está ausente.
 
 ## Requisitos de hardware
 
-- VRAM estimada: de 13,83 GiB (VERY-LOW) a 18,33 GiB (VERY-HIGH), más el proyector de visión (0,93 GB) si se usa multimodalidad.
-- GPU recomendadas: Blackwell sm_120 para aprovechar NVFP4 de forma nativa; RTX 4090/5090 (24 GB) cubren todos los tiers con margen para contexto; A100/H100 no aprovechan NVFP4 pero pueden ejecutar los tensores cuantizados por software.
-- Cabe en GPU consumer: sí, todos los tiers caben en 24 GB; VERY-LOW y COMPACT-LOW podrían caber en 16 GB con contexto reducido.
-- Opciones de despliegue: llama.cpp (con `--spec-type draft-mtp` y `--mmproj` para visión), Ollama, servidores compatibles con endpoints GGUF; vLLM no soporta GGUF NVFP4 de forma nativa en la información disponible.
-- Throughput medido: 2352-2471 tok/s en pp512 y 28-32 tok/s en tg128 según tier, en el hardware de pruebas del autor (no especificado).
+- VRAM estimada: entre 13,83 GiB (VERY-LOW) y 18,33 GiB (VERY-HIGH) según los datos medidos por el autor.
+- GPU recomendadas: hardware Blackwell (sm_120), por ser el objetivo de la cuantización NVFP4. No se especifican modelos concretos en la información disponible.
+- GPU de consumo: los niveles bajos e intermedios caben en tarjetas de 16 GB; los superiores requieren 20-24 GB. El nivel ORIG (27,65 GB) queda fuera del rango de consumo.
+- Despliegue: llama.cpp (librería declarada), con soporte de `--mmproj` para visión y `--spec-type draft-mtp` para decodificación especulativa. No se mencionan vLLM, TGI ni Ollama.
+- Throughput medido: pp512 entre 2352,72 y 2471,50 tok/s; tg128 entre 28,11 y 32,39 tok/s, con el mejor rendimiento en los niveles de menor tamaño.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| ScarletKc-2.0-NVFP4-GGUF | 27B denso | 262.144 | Apache-2.0 | GGUF NVFP4 | Familia de 7 tiers, MTP y visión |
-| ScarletKc/ScarletKc-2.0 (base) | 27B denso | 262.144 | Apache-2.0 | safetensors | Modelo original sin cuantizar |
-| Alternativas de 27B-32B en GGUF | ~27-32B | variable | variable | GGUF | No disponible en la información proporcionada |
+No se dispone de información sobre modelos comparables en la documentación proporcionada. Como referencia interna, la comparativa más directa es con el propio GGUF ORIG del que derivan los niveles:
 
-No se dispone de datos de benchmarks comparativos con otros modelos en la información proporcionada, por lo que no es posible establecer una comparación de rendimiento fiable.
+| Modelo | Parametros | Contexto | Tamano | Licencia |
+|---|---|---|---|---|
+| ScarletKc-2.0-NVFP4-ORIG | 27,3B | 262 144 | 27,65 GB | Apache-2.0 |
+| ScarletKc-2.0-NVFP4-VERY-LOW | 27,3B | 262 144 | 14,86 GB | Apache-2.0 |
+| ScarletKc-2.0-NVFP4-VERY-HIGH | 27,3B | 262 144 | 19,69 GB | Apache-2.0 |
+
+Comparativa con alternativas externas de la misma categoría: no disponible.
 
 ## Limitaciones y advertencias
 
-- El emparejamiento del proyector de visión con los tiers está documentado pero no verificado en esta familia; la multimodalidad podría no funcionar correctamente.
-- El soporte NVFP4 depende de hardware Blackwell (sm_120); en GPUs anteriores la decuantización degrada el rendimiento y puede alterar la calidad.
-- No hay tier HIGHEST: la atención llega pre-cuantizada en NVFP4 y la recuantización desde NVFP4 está deshabilitada, lo que limita el techo de calidad recuperable.
-- La perplejidad no mejora de forma monótona con el tamaño (MID-HIGH es peor que MEDIUM y HIGH empata con MEDIUM), lo que indica que el tier más grande no siempre es el mejor.
-- Riesgo de alucinación y sesgos: no disponible en la información proporcionada.
-- Idiomas: los metadatos solo declaran inglés y multilingüe sin listado; el rendimiento en castellano no está verificado.
-- Los datos de rendimiento provienen de un único entorno de pruebas no especificado; la reproducibilidad en otro hardware no está garantizada.
-- Licencia Apache-2.0 permite uso comercial, pero el modelo base y sus datos de entrenamiento no están documentados en esta ficha.
+- La model card no documenta sesgos conocidos del modelo base.
+- Riesgo de alucinación: no cuantificado en la información disponible; las pruebas de humo solo verifican que la traza de pensamiento termina y produce contenido real.
+- El emparejamiento del proyector de visión (`mmproj`) está documentado pero no probado por el autor en esta familia de modelos.
+- La cuantización NVFP4 está orientada a Blackwell sm_120; el rendimiento en otras arquitecturas de GPU no está documentado.
+- No existe nivel HIGHEST: la atención llega pre-cuantizada en NVFP4 y la recuantización desde NVFP4 está deshabilitada.
+- La licencia Apache-2.0 permite uso comercial, pero se recomienda verificar las condiciones del modelo base upstream.
+- El autor no ofrece métricas KLD por falta de ancla para esta familia, lo que limita la evaluación objetiva de la degradación por cuantización más allá de la perplejidad.
+- El repositorio ocupa 146,6 GB en total; conviene descargar solo el nivel necesario.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/esatapedico/ScarletKc-2.0-NVFP4-GGUF
 - Modelo base: https://huggingface.co/ScarletKc/ScarletKc-2.0
-- Sitio del autor de la conversión: https://www.esatapedico.com
-- Paper, blog o demo adicionales: no disponible en la información proporcionada.
+- Sitio del autor: https://www.esatapedico.com

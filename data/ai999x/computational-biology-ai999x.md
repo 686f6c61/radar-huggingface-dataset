@@ -2,108 +2,107 @@
 
 ## Resumen
 
-computational-biology-ai999x es un paquete de Python publicado por AI999X (autor: Ibnul Jaif Farabi) que se presenta como un motor determinista de resolución de problemas de biología computacional. No es un modelo de lenguaje generativo al uso: combina una capa de lectura de preguntas en inglés basada en reglas con un conjunto de 83 procedimientos simbólicos certificados (sympy, mpmath) que calculan la respuesta de forma exacta y la verifican antes de devolverla. El resultado se entrega con pasos intermedios, fórmulas en LaTeX, unidades y supuestos, o bien con un rechazo explícito cuando la consulta no se puede verificar.
+computational-biology-ai999x es un motor de cálculo determinista empaquetado como modelo de question-answering para el dominio de la biología computacional, publicado por el autor AI999X bajo licencia Apache 2.0. No es un transformer generativo: se trata de un solver compilado (con implementación principal en Rust y build en Python puro para plataformas no x86-64) que resuelve 86 cálculos organizados en 10 temas, cada uno con su fórmula, sus pasos intermedios y sus unidades. El modelo devuelve una razón explícita en texto plano en lugar de un número cuando una entrada falta o está fuera de rango, lo que el autor presenta como una estrategia de "zero-hallucination".
 
-El objetivo declarado es el de "cero respuestas incorrectas por diseño": el sistema define siete resultados posibles (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR) y evita deliberadamente adivinar. Cubre ADN y proteínas, alineamiento por pares (Needleman-Wunsch), masas moleculares, genética mendeliana y de poblaciones, filogenética, cinética enzimática y modelos ecológicos.
+El alcance declarado cubre secuencias de ADN y proteínas, alineamiento de secuencias (Needleman-Wunsch, Smith-Waterman, BLOSUM62), pesos moleculares, genética y genética de poblaciones (Hardy-Weinberg, deriva genética, desequilibrio de ligamiento), filogenética (parsimonia de Fitch), cinética enzimática (Michaelis-Menten con ajuste no lineal por mínimos cuadrados), modelos metabólicos y de población, y ecología (estimadores de riqueza como ACE, quimiostato con cinética de Monod). Se distribuye en cuatro formatos: aplicación de escritorio para Windows y Linux, CLI, versión web y paquete de Python 3.10+.
 
-Es relevante ahora por su perfil de despliegue: funciona íntegramente en CPU, sin GPU, sin red y sin clave de API, y el autor afirma que las 616 respuestas documentadas se reproducen de forma idéntica en Windows y Linux con Python 3.10 a 3.14. Su encaje real es el de herramienta de cálculo verificable para cuadernos, aplicaciones de tutoría y correctores de ejercicios, no el de un modelo fundacional.
+Su relevancia es acotada pero clara: para tareas docentes y de verificación de cálculos bioinformáticos, ofrece respuestas reproducibles y offline sin depender de un LLM generativo, con la promesa de resultados idénticos en Windows y Linux sobre Python 3.10-3.14. El repositorio de Hugging Face es de 0.0 GB y los pesos declarados en safetensors suman 4.715.520 parámetros, un orden de magnitud coherente con un motor de reglas y tablas empaquetado, no con una red neuronal de gran tamaño.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Motor neuro-simbólico determinista: lectura de preguntas basada en reglas más 83 capacidades simbólicas certificadas (no es un transformer) |
-| Parámetros totales | 4.715.520 (dato declarado en el repositorio; el paquete se describe como Python puro con sympy y mpmath) |
-| Parámetros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible (no se documenta una ventana de contexto; la entrada son formas de pregunta documentadas o llamadas tipadas) |
-| Tipos de cuantización | No disponible / no aplica (no se publican pesos cuantizados; el motor es determinista y no requiere cuantización) |
-| Idiomas soportados | Inglés (`en`), únicamente |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors y ONNX (según los tags del repositorio); distribución principal como wheel de Python (`computational_biology_ai999x-1.0.0-py3-none-any.whl`) |
-
-Otros datos de la model card: versión 1.0.0 del paquete, knowledge pack 1.0.1, 616 respuestas doradas documentadas, plataformas probadas Windows (Python 3.13) y Linux x86-64 (Python 3.10–3.14), runtime solo CPU y offline.
+| Arquitectura | Motor de cálculo determinista (solver compilado, Rust con build Python puro); no es un transformer |
+| Parámetros totales | 4.715.520 (según safetensors del repo) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (no aplica; no es un modelo de contexto) |
+| Tipos de cuantización | no disponible (no aplica) |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (repo de 0.0 GB); distribución principal como binarios de escritorio/CLI y paquete pip |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura no es la de un transformer ni la de un modelo de lenguaje. Se describe como un motor neuro-símbolico determinista en el que la "lectura" de la pregunta en inglés se resuelve con reglas y expresiones documentadas, y el cálculo propiamente dicho se delega en 83 procedimientos certificados de biología computacional implementados sobre sympy y mpmath. Cada resultado pasa por una comprobación (sustitución inversa, análisis dimensional o comparación con un cálculo independiente) antes de devolverse, y se acompaña de pasos, unidades y supuestos.
+El modelo no sigue una arquitectura de red neuronal. Según la model card, es "un motor compilado" que implementa 86 cálculos en 10 temas, cada uno con su fórmula explícita, la secuencia de pasos y las unidades del resultado. La implementación principal es nativa (Rust, según los tags) para Windows y Linux x86-64, y existe una build en Python puro que produce las mismas respuestas en macOS y ARM. La inferencia está desactivada en el Hub (`inference: false`), lo que confirma que no se ejecuta como un modelo alojado convencional.
 
-No se proporciona información sobre datos de entrenamiento, número de tokens, composición del corpus ni uso de RLHF o DPO; el sistema no se entrena con un corpus en el sentido habitual, sino que se construye a partir de un "knowledge pack" versionado (1.0.1) y de un conjunto de 616 respuestas doradas documentadas que actúan como referencia de evaluación. La innovación destacable es la política de rechazo explícito ante entradas ambiguas o fuera de alcance, junto con la interfaz doble: `ask()` para preguntas en lenguaje natural documentadas y `solve(capability_id, **inputs)` para invocación tipada garantizada. El repositorio incluye un catálogo de capacidades en `docs/` y material de evaluación en `evaluation/`.
+No se documenta ningún proceso de entrenamiento con tokens, dataset de preentrenamiento, RLHF ni DPO, porque no hay un modelo generativo entrenado. La "evaluación" declarada en el model-index consiste en 640 preguntas documentadas con respuestas doradas, comparadas contra las salidas del motor en Windows y Linux sobre Python 3.10-3.14, con accuracy 1.0 declarada por el autor (métrica marcada como `verified: false`). La innovación técnica destacable es el comportamiento ante entradas inválidas: en lugar de devolver un número plausible, el motor devuelve una explicación del motivo por el que no puede calcularse el resultado.
 
 ## Capacidades
 
-- Cálculo determinista y verificado sobre 83 procedimientos certificados de biología computacional.
-- Análisis de secuencias de ADN y proteína: complemento inverso, traducción, detección de marcos abiertos de lectura (ORF), sitios de restricción, temperatura de fusión (melting temperature) y punto isoeléctrico.
-- Alineamiento de secuencias por pares, incluido el alineamiento global con puntuación Needleman-Wunsch (ejemplo de la model card: `GATTACA` frente a `GCATGCU` con match 1, mismatch -1, gap -1 da puntuación 0).
-- Genética mendeliana y de poblaciones: ratios fenotípicos de cruces (AaBb × AaBb da p=0,5625 para todos dominantes, 0,0625 para todos recesivos, 9 genotipos y 4 fenotipos) y test de Hardy-Weinberg con frecuencias alélicas y valores esperados.
-- Filogenética, cinética enzimática, masas moleculares y modelos de poblaciones y ecología.
-- Respuesta con traza completa: pasos, fórmulas en LaTeX, unidades, supuestos y capacidad utilizada.
-- Interfaz tipada `solve()` con validación de entradas, además de `ask()` para formas de pregunta documentadas.
-- Siete estados de salida explícitos que sustituyen a la generación libre cuando no hay garantía de corrección.
-- Ejecución 100 % offline en CPU, sin GPU, sin red y sin clave de API.
-- Tareas declaradas en los tags: question answering, token classification, text classification, sentence similarity y feature extraction.
-
-No se documentan capacidades de tool calling, razonamiento multi-paso conversacional, visión, audio ni modo "thinking"; la lectura en lenguaje natural está limitada a las formas de pregunta documentadas.
+- Cálculo determinista de 86 operaciones de biología computacional en 10 temas, con fórmula, pasos y unidades.
+- Biología de secuencias: complemento reverso de ADN, traducción, detección de open reading frames, sitios de restricción, temperatura de melting, punto isoeléctrico y pesos moleculares.
+- Alineamiento de secuencias: puntuación de alineamiento global (Needleman-Wunsch con gaps lineales), alineamiento local (Smith-Waterman) y matrices de sustitución BLOSUM62.
+- Genética y genética de poblaciones: ratios fenotípicos de cruces con dominancia completa, test chi-cuadrado de Hardy-Weinberg, deriva genética y desequilibrio de ligamiento.
+- Filogenética: puntuación de parsimonia de un árbol mediante el algoritmo de Fitch.
+- Cinética enzimática: ajuste no lineal por mínimos cuadrados de Michaelis-Menten.
+- Modelos metabólicos y de población: estado estacionario de un quimiostato con cinética de Monod.
+- Ecología: estimadores de riqueza de especies como ACE.
+- Resolución paso a paso orientada a ayuda con deberes y verificación de resultados.
+- Ejecución completamente offline en el equipo del usuario.
+- No soporta tool calling genérico, agentes, razonamiento multi-step abierto ni visión; su "multi-step" se limita a los pasos internos de cada cálculo.
+- Multilingüe: no; solo inglés.
 
 ## Casos de uso
 
-- Corrección automática de ejercicios de biología computacional: el motor devuelve el resultado junto con los pasos y las fórmulas en LaTeX, de modo que un corrector puede comparar no solo la respuesta final sino también el procedimiento y detectar dónde se desvía el alumno.
-- Tutoría interactiva en entornos sin conectividad: al ejecutarse íntegramente en CPU y sin red, puede empaquetarse en un aula, un portátil o un contenedor aislado y resolver problemas de genética, alineamiento o cinética enzimática sin depender de servicios externos.
-- Cuadernos de laboratorio y pipelines reproducibles: la determinación estricta de las salidas y la ausencia de generación libre hacen que el resultado sea apto para registrarlo como cálculo reproducible con su capacidad y supuestos asociados.
-- Validación cruzada de resultados bioinformáticos: útil como segunda opinión independiente para comprobar cálculos de Hardy-Weinberg, masas moleculares o puntuaciones de alineamiento obtenidos por otras herramientas.
-- Generación de material docente y bancos de problemas: `solve()` permite generar ejercicios resueltos de forma masiva y determinista a partir de parámetros de entrada, con la solución y los pasos ya calculados.
-- Filtrado y clasificación de consultas en un servicio de soporte científico: los estados OUT_OF_SCOPE, AMBIGUOUS y NEEDS_INPUT permiten enrutar consultas no resolubles hacia un humano o hacia otro sistema en lugar de producir una respuesta inventada.
-- Integración en aplicaciones de escritorio o CLI educativas: el paquete se instala con `pip` y no requiere GPU ni servicios externos, lo que simplifica la distribución en Windows y Linux.
+- Docencia de bioinformática: el alumnado introduce una secuencia y obtiene el complemento reverso, la traducción o los ORFs con los pasos intermedios, lo que permite revisar el procedimiento y no solo el resultado.
+- Verificación de cálculos en pipelines bioinformáticos: usar el CLI `computational-biology` para contrastar puntuaciones de alineamiento Needleman-Wunsch o Smith-Waterman con BLOSUM62 frente a los valores que produce un pipeline propio.
+- Genética de poblaciones en clase o laboratorio: cálculo del chi-cuadrado de Hardy-Weinberg y del desequilibrio de ligamiento sobre genotipos observados, con interpretación de los grados de libertad y del estadístico.
+- Ajuste de curvas de enzimas: estimación de Vmax y Km mediante el ajuste no lineal de Michaelis-Menten a partir de pares concentración-velocidad medidos en el laboratorio.
+- Ecología de campo: estimación de riqueza específica con ACE a partir de datos de abundancia por especie recogidos en muestreos.
+- Práctica de filogenética: cálculo de la puntuación de parsimonia de Fitch sobre un árbol y un alineamiento dados, útil para comparar topologías alternativas en ejercicios guiados.
+- Modelado de bioprocesos: obtención del estado estacionario de un quimiostato con cinética de Monod para dimensionar dilución y concentración de sustrato en un biorreactor didáctico.
+- Entornos sin conectividad: despliegue en aulas o laboratorios aislados mediante la app de escritorio o el paquete pip, sin llamadas a servicios externos.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en el `model-index` de la model card. No se han publicado resultados independientes.
+Datos declarados por el autor en el model-index (no verificados de forma independiente):
 
-| Tarea | Conjunto de evaluación | Métrica | Valor | Nota |
-|---|---|---|---|---|
-| Question answering (biología computacional) | Golden answers: 616 preguntas documentadas, Windows + Linux, Python 3.10–3.14 | Accuracy | 1,0 | "Identical on every platform"; marcado como `verified: false` |
+| Tarea | Dataset | Métrica | Valor |
+|---|---|---|---|
+| Question answering de biología computacional | Golden answers (640 preguntas documentadas, Windows + Linux, Python 3.10-3.14) | Accuracy | 1.0 ("idéntico en cada plataforma", `verified: false`) |
 
-El propio autor indica que la métrica mide la reproducción exacta de las 616 respuestas doradas documentadas en las plataformas probadas, no el rendimiento sobre preguntas nuevas o formuladas de forma distinta. No hay datos de MMLU, HumanEval, GSM8K ni de comparación con otros sistemas en la información disponible.
+No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en la información disponible. La métrica anterior mide consistencia de salida frente a un conjunto dorado propio, no calidad frente a referencias externas.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no aplica; el runtime declarado es solo CPU, sin GPU.
-- GPU recomendadas: ninguna. No requiere aceleración por hardware.
-- Cabe en cualquier equipo capaz de ejecutar Python 3.10–3.14; el tamaño del repositorio es de 0,0 GB según los metadatos y la distribución principal es un wheel `py3-none-any`.
-- Dependencias declaradas: sympy y mpmath (Python puro).
-- Opciones de despliegue: `pip install computational-biology-ai999x` desde PyPI, instalación directa del wheel alojado en el repositorio de Hugging Face, o uso como biblioteca dentro de notebooks, CLIs y aplicaciones de escritorio.
-- Servidores de inferencia tipo vLLM, TGI, llama.cpp u Ollama: no aplicables, al no ser un modelo de pesos transformer ni publicar GGUF.
+- VRAM: no aplica; no es un modelo de red neuronal y no requiere GPU.
+- CPU: cualquier x86-64 para los binarios compilados de Windows y Linux; para macOS y ARM se usa la build en Python puro.
+- Memoria RAM: no disponible en la información proporcionada; por el tamaño del motor (repo de 0.0 GB) el consumo esperable es bajo, pero no hay cifra publicada.
+- GPU recomendadas: ninguna; el motor es CPU-only.
+- Cabe en cualquier equipo de escritorio o portátil convencional; no requiere GPU de consumo.
+- Despliegue: aplicación de escritorio (Windows/Linux), CLI `computational-biology`, versión web en la página del modelo y paquete `pip install computational-biology-ai999x` para Python 3.10+.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Sistema | Tipo | Parámetros | Contexto | Licencia | Enfoque de corrección |
+| Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| computational-biology-ai999x | Motor determinista simbólico + reglas | 4.715.520 (declarados en repo) | No disponible | Apache-2.0 | Verificación por capacidad certificada y rechazo explícito |
-| Biopython | Biblioteca de bioinformática en Python | No aplica | No aplica | Licencia Biopython (de estilo BSD) | El usuario compone las llamadas y valida los resultados |
-| LLM de propósito general (p. ej. familia Llama o Mistral) | Transformer generativo | No disponible en esta ficha | No disponible en esta ficha | Variables según modelo | Generación libre; requiere verificación externa |
+| computational-biology-ai999x | Solver determinista de cálculos bioinformáticos | 4.715.520 (safetensors) | no aplica | Apache 2.0 | Hugging Face, pip, escritorio, CLI, web |
+| BioBERT / SciBERT (referencia de la categoría) | Transformer de lenguaje científico | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
+| LLM generalista (p. ej. familia Llama o Mistral) | Transformer generativo | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | Hugging Face y múltiples proveedores |
 
-La comparación con LLM de propósito general es solo cualitativa: no se dispone de datos de benchmarks comunes ni de cifras de parámetros y contexto verificadas en la información proporcionada para establecer una comparación numérica. Frente a Biopython, la diferencia es de interfaz y de política de verificación, no de cobertura de algoritmos, que no se ha comparado formalmente.
+La comparación directa no es posible con rigor: computational-biology-ai999x no es un modelo de lenguaje y no compite en generación abierta ni en razonamiento. Frente a un LLM generalista, su ventaja es la reproducibilidad exacta y la ausencia de alucinación numérica en los 86 cálculos cubiertos; su desventaja es que no responde a nada fuera de ese catálogo. Frente a BioBERT o SciBERT, que son modelos de representación para NLP biomédico, la diferencia de propósito es total. No se dispone de datos de benchmarks comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: no redacta explicaciones libres ni mantiene conversaciones multi-turno; solo resuelve las formas de pregunta documentadas o llamadas tipadas.
-- Idioma limitado al inglés (`en`); no se documenta soporte de castellano ni de otras lenguas.
-- La cobertura se restringe a las 83 capacidades certificadas; cualquier consulta fuera de ese catálogo devuelve OUT_OF_SCOPE o UNRECOGNIZED_FORMAT.
-- El resultado de accuracy 1,0 procede del propio autor, está marcado como `verified: false` y se mide sobre las 616 respuestas doradas documentadas, por lo que no debe interpretarse como precisión sobre preguntas nuevas o parafraseadas.
-- El metadato del repositorio indica `inference: false`; no se garantiza que la infraestructura de inferencia de Hugging Face pueda ejecutar el paquete, que está pensado para instalarse vía `pip`.
-- Existe una discrepancia entre la descripción (Python puro con sympy y mpmath) y los formatos declarados (safetensors, ONNX) y el recuento de 4.715.520 parámetros; conviene verificar el contenido real del repositorio antes de integrarlo.
-- El repositorio figura con 0 descargas y 0 likes y fue creado en octubre de 2026, sin tracción ni revisión independiente conocida.
-- Licencia Apache-2.0: permite uso comercial y modificación con atribución y conservación del aviso de licencia; no se documentan restricciones adicionales, pero tampoco garantías explícitas de idoneidad para producción.
-- No se documentan sesgos, tasas de alucinación ni auditorías externas; la política de rechazo reduce el riesgo de respuesta incorrecta, pero no sustituye la validación por parte de un experto en un contexto clínico o regulatorio.
+- Cobertura cerrada: solo resuelve los 86 cálculos documentados en 10 temas; cualquier consulta fuera de ese catálogo no obtiene respuesta válida.
+- No es un modelo generativo: no redacta explicaciones libres, no mantiene conversaciones y no razona sobre problemas abiertos.
+- Idioma: únicamente inglés; no hay soporte declarado de castellano.
+- La accuracy de 1.0 está declarada por el autor sobre un conjunto dorado propio y marcada como no verificada; no equivale a una validación independiente.
+- Riesgo de alucinación bajo por diseño en los cálculos cubiertos, pero el motor puede devolver mensajes de error en lugar de resultados cuando la entrada está fuera de rango; es responsabilidad del usuario interpretar esos mensajes.
+- Licencia Apache 2.0: permite uso comercial y modificación con atribución; conviene revisar el archivo LICENSE del repositorio antes de redistribuir.
+- El repositorio en Hugging Face es de 0.0 GB y la inferencia está desactivada en el Hub; el uso real requiere descargar los binarios o instalar el paquete pip desde las fuentes indicadas.
+- Sesgos conocidos: no documentados en la información disponible; al ser un motor de reglas, los sesgos relevantes serían los de las fórmulas y supuestos implementados (por ejemplo, modelos de sustitución o de cinética concretos), que no se detallan.
+- Sin garantías de soporte a largo plazo ni de mantenimiento: el proyecto depende de un único autor y de su infraestructura (ai999x.com y GitHub AI999X).
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/AI999X/computational-biology-ai999x
-- Paquete en PyPI: https://pypi.org/project/computational-biology-ai999x/
-- Guía de capacidades (docs): https://huggingface.co/AI999X/computational-biology-ai999x/tree/main/docs
-- Material de evaluación: https://huggingface.co/AI999X/computational-biology-ai999x/tree/main/evaluation
-- Licencia: https://huggingface.co/AI999X/computational-biology-ai999x/blob/main/LICENSE
-- Wheel de instalación directa: https://huggingface.co/AI999X/computational-biology-ai999x/resolve/main/dist/computational_biology_ai999x-1.0.0-py3-none-any.whl
-- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
-- Sitio web del autor: https://ai999x.com
-- Apoyo al desarrollo: https://buymeacoffee.com/ibnuljaiffarabi
+- Página del modelo con demo web: https://www.ai999x.com/models/computational-biology-ai999x/
+- Sección de capacidades: https://www.ai999x.com/models/computational-biology-ai999x/#capabilities
+- App de escritorio Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-computational-biology-1.6.7-windows-x86_64.zip
+- App de escritorio Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-computational-biology-1.6.7-linux-x86_64.tar.gz
+- CLI Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-windows-x86_64.zip
+- CLI Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-linux-x86_64.tar.gz
+- Clip de demostración (MP4): https://www.ai999x.com/?ax_shot=computational-biology-ai999x/clip.mp4
+- Repositorio de la app de escritorio: https://github.com/AI999X/ai999x-desktop

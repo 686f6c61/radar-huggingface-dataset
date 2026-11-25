@@ -44,7 +44,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 303,
+  "downloads_30d": 305,
   "trending_score": 0,
   "parameters": 4715520,
   "parameters_human": "4.7M",
@@ -64,7 +64,7 @@
   "benchmarks": [
     {
       "task": "environmental engineering question answering",
-      "dataset": "Golden answers (613 documented questions, Windows + Linux Python 3.10-3.14)",
+      "dataset": "Golden answers (927 documented questions, Windows + Linux Python 3.10-3.14)",
       "metric": "identical on every platform",
       "value": 1
     }

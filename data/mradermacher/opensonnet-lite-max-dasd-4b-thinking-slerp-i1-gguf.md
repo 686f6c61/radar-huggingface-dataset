@@ -2,77 +2,86 @@
 
 ## Resumen
 
-OpenSonnet-Lite-MAX-DASD-4B-Thinking-SLERP-i1-GGUF es una cuantizacion GGUF generada por mradermacher a partir del modelo base ITLL/OpenSonnet-Lite-MAX-DASD-4B-Thinking-SLERP. Se trata, por tanto, de un artefacto de distribucion derivado y no de un modelo entrenado desde cero: el trabajo de mradermacher consiste en aplicar la herramienta de cuantizacion con calibracion por imatrix (quants "i1") para producir versiones comprimidas del modelo original en multiples precisiones.
+OpenSonnet-Lite-MAX-DASD-4B-Thinking-SLERP es un modelo de lenguaje de 4.022.468.096 parámetros (aproximadamente 4B) obtenido mediante técnicas de fusión de modelos (mergekit) a partir de múltiples modelos ajustados con datos de razonamiento de alta calidad. Lo publica el usuario ITLL en Hugging Face, y la versión aquí descrita es la cuantización GGUF realizada por mradermacher, un conocido creador de cuantizaciones para el ecosistema llama.cpp.
 
-El nombre del repositorio indica que el modelo subyacente es un modelo de aproximadamente 4B parametros con capacidad de "thinking" (razonamiento explicito), resultado de una fusion (merge) mediante SLERP de variantes afinadas. La model card del repositorio solo documenta metadatos del proceso de cuantizacion (tipos de quant, version de la herramienta, origen del modelo base) y no incluye informacion sobre arquitectura, datos de entrenamiento o evaluacion.
+El modelo se enmarca en la familia "OpenSonnet", un intento de destilar el estilo de razonamiento y las respuestas de modelos comerciales tipo Claude Sonnet y Opus en un modelo abierto de pequeño tamaño. Los datasets de entrenamiento declarados incluyen mezclas de trazas de razonamiento de Claude Sonnet 4.5/4.6, Claude Opus 4.5/4.6/4.7, Gemini 3 Pro/3.1 Pro, DeepSeek V3.2 Speciale y V4, y GPT-OSS-120B, lo que sugiere un objetivo de "thinking mode" con cadenas de razonamiento largas.
 
-La relevancia de esta ficha es limitada: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, el tamano reportado es de 0.0 GB y no se dispone de licencia, idiomas ni pipeline declarados. Cualquier uso en produccion requeriria verificar primero el modelo base original en el repositorio de ITLL.
+La relevancia de esta ficha radica en que ofrece un modelo de 4B con capacidades de razonamiento destiladas que puede ejecutarse en hardware de consumo, algo atractivo para desarrolladores que quieren experimentar con razonamiento multi-paso sin depender de APIs. No obstante, la información pública es muy escasa: la model card del cuantizador no incluye benchmarks, licencia explícita ni detalles de arquitectura más allá de los tags de mergekit.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere transformer denso de ~4B; no confirmado) |
-| Parametros totales | 1.920.204 (dato reportado en safetensors del repo; inconsistente con el "4B" del nombre) |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Arquitectura | Transformer (derivada de mergekit; detalles específicos no disponibles) |
+| Parametros totales | 4.022.468.096 |
+| Parametros activos | no disponible (no es MoE según los datos) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ1_S, IQ1_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ3_XXS, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL (small-IQ4_NL), Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-IQ4_NL, i1-Q4_K_S, i1-Q4_K_M, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K, i1-IQ1_S (imatrix incluida) |
+| Idiomas soportados | en (inglés; según el campo `language` de la model card) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizado); el modelo base se distribuye presumiblemente en safetensors |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base en la documentacion proporcionada. El nombre "OpenSonnet-Lite-MAX-DASD-4B-Thinking-SLERP" sugiere un modelo de aproximadamente 4B parametros con modo de razonamiento ("Thinking"), obtenido mediante una fusion SLERP (Spherical Linear Interpolation) de checkpoints afinados, una tecnica habitual para combinar capacidades de dos o mas modelos sin reentrenamiento. El sufijo "DASD" no esta documentado en la informacion disponible.
+La información disponible indica que el modelo base ITLL/OpenSonnet-Lite-MAX-DASD-4B-Thinking-SLERP se construyó mediante mergekit, es decir, una fusión de pesos de varios modelos. El sufijo "SLERP" hace referencia a la interpolación esférica, una técnica de fusión de modelos que combina los pesos de dos o más checkpoints en el espacio de parámetros. El sufijo "DASD" y "MAX" no están documentados en la información proporcionada.
 
-El proceso de cuantizacion aplicado por mradermacher utiliza la herramienta de cuantizacion GGUF con calibracion por imatrix (indicado por el tag "i1" y los comentarios `quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`). Esto significa que los pesos se convierten desde el formato Hugging Face del modelo base y se comprimen usando una matriz de importancia calculada sobre un corpus de calibracion, lo que suele mejorar la calidad de los quants de baja precision (Q2, IQ2, IQ3) frente a la cuantizacion uniforme. No se documentan datos de entrenamiento, numero de tokens, composicion del dataset ni si hubo RLHF o DPO.
+Los datasets listados en la model card corresponden a conjuntos de datos de razonamiento y trazas de "thinking" generados a partir de modelos comerciales y abiertos de gran tamaño (Claude Sonnet 4.5/4.6, Claude Opus 4.5/4.6/4.7, Gemini 3 Pro/3.1 Pro, DeepSeek V3.2 Speciale, DeepSeek V4, GPT-OSS-120B). Esto sugiere que el modelo fue ajustado o fusionado para imitar el estilo de razonamiento de estos modelos, pero no se especifica el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo RLHF o DPO. Tampoco se detalla si se emplearon innovaciones como decodificación especulativa o atención lineal; la arquitectura subyacente es presumiblemente un transformer estándar de 4B, pero no se confirma.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento: el sufijo "Thinking" indica un modo de razonamiento explicito, aunque no se documenta su funcionamiento ni su calidad.
-- Capacidad multilingue: no disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Vision, audio u otras modalidades: no disponible.
-- Codigo y matematicas: no disponible (el nombre "OpenSonnet" sugiere orientacion a codigo, pero no esta confirmado).
+- Generación de texto en inglés con modo de razonamiento ("thinking"), orientado a cadenas de pensamiento largas.
+- Razonamiento multi-paso y resolución de problemas, destilado de trazas de modelos como Claude Sonnet/Opus y Gemini Pro.
+- Capacidades matemáticas y de código inferidas de los datasets de entrenamiento (DeepSeek V3.2 Speciale, GPT-OSS-120B), aunque no hay benchmarks que lo confirmen.
+- Soporte de tool calling / function calling: no disponible (no documentado).
+- Soporte de agentes y razonamiento multi-paso: parcialmente implícito por el modo thinking, pero no documentado explícitamente.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- Capacidades especiales: modo "thinking" (razonamiento explícito), pero sin visión, audio ni otras modalidades documentadas.
 
 ## Casos de uso
 
-- Despliegue en entornos con recursos limitados: los quants Q4_K_M o Q5_K_M permiten ejecutar un modelo de ~4B en GPUs de consumo, aunque la calidad real depende del modelo base no documentado.
-- Pruebas de inferencia local con llama.cpp u Ollama: el formato GGUF es directamente compatible con estas herramientas, lo que facilita experimentacion rapida.
-- Evaluacion comparativa de quants: util para medir la degradacion de calidad entre Q2_K, Q4_K_M y Q6_K sobre el mismo modelo base.
-- Prototipado de asistentes con razonamiento: si el modo "Thinking" funciona, podria usarse para tareas de razonamiento paso a paso en local, previa validacion.
-- Fine-tuning ligero sobre el modelo base: los quants no son adecuados para reentrenamiento, pero el repositorio base en ITLL podria servir de punto de partida.
-- Distribucion de modelos en pipelines offline: el formato GGUF y su amplia compatibilidad permiten empaquetar el modelo en aplicaciones de escritorio o edge.
+- Experimentación con razonamiento en local: el modelo puede ejecutarse en una GPU de consumo gracias a sus cuantizaciones de 1,2 a 2,5 GB, lo que permite probar cadenas de pensamiento sin depender de APIs.
+- Prototipado de asistentes de razonamiento: útil para validar pipelines de "thinking" y evaluar la calidad de las trazas generadas antes de invertir en modelos mayores.
+- Generación de código en entornos con recursos limitados: su tamaño de 4B y las cuantizaciones IQ4 permiten integrarlo en editores o scripts de autocompletado, aunque sin garantías de calidad de producción.
+- Educación y demostraciones: sirve para ilustrar cómo un modelo pequeño destilado de trazas comerciales se comporta en tareas de matemáticas y lógica.
+- Investigación sobre fusión de modelos: al ser un merge SLERP, es un caso de estudio para analizar cómo la interpolación de pesos afecta al razonamiento.
+- Despliegue en dispositivos edge: las cuantizaciones IQ1/IQ2 (1,2-1,6 GB) permiten ejecutarlo en hardware muy limitado, aunque con pérdida de calidad notable.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con precision; para un modelo de ~4B en Q4_K_M se situaria en torno a 2,5-3 GB, y en Q6_K en torno a 3,5-4 GB, pero estos calculos son estimaciones genericas y no estan confirmados por el autor.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: probable en quants Q4 y Q5 si el modelo es realmente de ~4B, pero no confirmado.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: entre 1,2 GB (i1-IQ1_S) y 2,5 GB (i1-Q4_0 / i1-IQ4_NL) para los pesos cuantizados; añadir overhead de contexto (no documentado, pero típicamente 1-2 GB adicionales para contextos largos).
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones bajas; RTX 3060/4060 o superiores para cuantizaciones IQ4/Q5 con contexto moderado.
+- Cabe en GPU de consumo: sí, en la mayoría de GPUs modernas (GTX 1650 4GB en adelante para cuantizaciones IQ2/IQ3; RTX 3060 12GB para Q5/Q6 con contexto amplio).
+- Opciones de despliegue: llama.cpp, Ollama (importando el GGUF), y potencialmente vLLM o TGI si se convierte a safetensors (no se proporciona versión safetensors en este repo, solo GGUF).
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de informacion suficiente sobre el modelo base (parametros reales, contexto, licencia) ni sobre alternativas comparables verificables en la informacion proporcionada.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| OpenSonnet-Lite-MAX-DASD-4B-Thinking-SLERP (este) | 4,02B | no disponible | no disponible | GGUF | Merge SLERP con modo thinking; sin benchmarks |
+| Qwen2.5-3B-Instruct | 3,09B | 32K | Apache 2.0 | safetensors, GGUF | Modelo denso con benchmarks públicos y licencia permisiva |
+| Llama-3.2-3B-Instruct | 3,21B | 128K | Llama 3.2 Community License | safetensors, GGUF | Contexto largo y ecosistema amplio |
+| Phi-3.5-mini-instruct | 3,82B | 128K | MIT | safetensors, GGUF | Buen rendimiento en razonamiento y código |
+
+La comparativa es aproximada: no hay datos de rendimiento del modelo OpenSonnet, por lo que la elección frente a alternativas consolidadas depende de la experimentación del usuario. La ventaja principal de este modelo es su enfoque en razonamiento destilado; la desventaja es la falta de documentación, licencia y benchmarks.
 
 ## Limitaciones y advertencias
 
-- El repositorio tiene 0 descargas y 0 likes, lo que sugiere que no ha sido validado por la comunidad.
-- El tamano reportado del repo es 0.0 GB, lo que puede indicar que los archivos no estan subidos o que la metadata es incorrecta.
-- Los parametros totales reportados (1.920.204) son inconsistentes con el "4B" del nombre; podria tratarse de un error de metadata o de un modelo mucho mas pequeno de lo que sugiere el nombre.
-- No se declara licencia, lo que impide determinar si el uso comercial esta permitido.
-- No se declaran idiomas soportados ni pipeline.
-- Al ser una cuantizacion, hereda los sesgos y limitaciones del modelo base, que no estan documentados.
-- Riesgo de alucinacion: no evaluado.
-- No usar en produccion sin verificar primero el modelo base en ITLL/OpenSonnet-Lite-MAX-DASD-4B-Thinking-SLERP y sin realizar evaluaciones propias.
+- Sesgos conocidos: no documentados, pero al derivarse de trazas de modelos comerciales puede heredar sesgos de esos modelos.
+- Riesgo de alucinación: alto en modelos pequeños destilados; no hay evaluaciones que lo cuantifiquen.
+- Limitaciones de contexto o idioma: solo inglés según la model card; longitud de contexto no especificada.
+- Restricciones de licencia para uso comercial: licencia no disponible, lo que impide determinar si es apto para producción comercial.
+- Caveat importante: la model card del cuantizador no incluye información sobre el modelo base más allá de enlaces; la calidad de las cuantizaciones IQ1/IQ2 es baja y puede degradar gravemente el razonamiento.
+- El modelo es un merge experimental sin paper ni evaluación independiente; no se recomienda para producción sin validación previa.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/OpenSonnet-Lite-MAX-DASD-4B-Thinking-SLERP-i1-GGUF
+- Hugging Face (cuantización GGUF): https://huggingface.co/mradermacher/OpenSonnet-Lite-MAX-DASD-4B-Thinking-SLERP-i1-GGUF
 - Modelo base: https://huggingface.co/ITLL/OpenSonnet-Lite-MAX-DASD-4B-Thinking-SLERP
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/OpenSonnet-Lite-MAX-DASD-4B-Thinking-SLERP-GGUF
+- Página de overview del cuantizador: https://hf.tst.eu/model#OpenSonnet-Lite-MAX-DASD-4B-Thinking-SLERP-i1-GGUF
+- Referencia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

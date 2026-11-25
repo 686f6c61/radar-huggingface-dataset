@@ -2,113 +2,111 @@
 
 ## Resumen
 
-Moroccan-darija-ocr es un modelo de reconocimiento óptico de caracteres (OCR) para líneas de texto impresas en árabe, publicado por el usuario sailu4 en Hugging Face y desarrollado en el repositorio complementario `BADR-JOULAlI/moroccan-darija-ocr`. Se trata de un reconocedor de líneas aisladas con arquitectura CRNN (CNN en escala de grises seguida de una BiLSTM de dos capas y una cabeza CTC), con 1.940.797 parámetros y 92 clases de caracteres más el token en blanco de CTC. El checkpoint `best.pt` incluye pesos, vocabulario, estado del optimizador, del scheduler y del AMP scaler, además de la configuración de entrenamiento.
+Moroccan Darija OCR es un modelo de reconocimiento óptico de caracteres (OCR) para líneas de texto árabe impreso, publicado por el usuario sailu4 en Hugging Face. A pesar de su nombre, el checkpoint disponible **no está entrenado en dariya**: es una línea base de árabe estándar entrenada sobre imágenes de líneas de texto del Boletín Oficial marroquí (Moroccan Official Gazette), concebida como punto de partida para una futura adaptación al dariya. El autor lo advierte explícitamente en la model card para evitar que se interprete como un resultado de referencia en dariya.
 
-El modelo se entrenó sobre imágenes de líneas de texto árabe impreso procedentes del Boletín Oficial marroquí (corpus publicado en Zenodo con DOI 10.5281/zenodo.21702529, licencia CC BY 4.0). A pesar del nombre del repositorio, el autor indica explícitamente que el modelo **no se entrenó con dariya** y que constituye una línea base en árabe para una adaptación posterior al dariya marroquí. Cualquier uso del checkpoint como referencia de rendimiento en dariya sería incorrecto.
+La arquitectura es deliberadamente compacta: una CNN en escala de grises seguida de una BiLSTM de dos capas y una cabeza CTC. Con solo 1.940.797 parámetros y un checkpoint de 0,2 GB, está pensada para entrenamiento e inferencia en hardware de consumo (el autor cita una RTX 5070). El pipeline es `image-to-text` y el modelo espera imágenes de línea ya recortadas; el reconocimiento de página completa requiere detección de líneas y reconstrucción del orden de lectura por separado.
 
-Su relevancia actual es acotada: no es un modelo generativo ni un OCR de página completa, sino un componente de reconocimiento de línea que requiere detección previa de líneas y reconstrucción del orden de lectura. Resulta útil como punto de partida reproducible para pipelines de digitalización de documentos árabes y como base para experimentos de adaptación a dariya con datos sintéticos o reales.
+Su relevancia actual es acotada pero concreta: ofrece un punto de partida reproducible y auditable para OCR de árabe impreso con métricas verificadas (CER 1,49 %, WER 6,94 % en el split de test oficial) y un ecosistema de herramientas de adaptación, auditoría de experimentos y demo local documentado en el repositorio companion de GitHub.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | CRNN: CNN en escala de grises + BiLSTM de 2 capas + clasificador CTC |
+| Arquitectura | CNN (grayscale) + BiLSTM de 2 capas + clasificador CTC |
 | Parametros totales | 1.940.797 |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica; entrada de imagen de altura 64 px y anchura máxima 1600 px |
-| Tipos de cuantizacion | no disponible (checkpoint PyTorch en precisión de entrenamiento) |
-| Idiomas soportados | árabe impreso (entrenado en el Boletín Oficial marroquí); dariya no soportada de forma nativa |
+| Longitud de contexto | no aplica (OCR de líneas; altura 64 px, anchura máxima de entrada 1600 px) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | árabe impreso (entrenado en árabe estándar; no entrenado en dariya) |
 | Licencia | no disponible |
-| Formato de pesos | PyTorch (`best.pt`), con vocabulario en `vocab.json` |
+| Formato de pesos | checkpoint PyTorch (`best.pt`, `torch.load`), vocabulario en `vocab.json` |
 
-Otros parámetros relevantes: altura de entrada 64, anchura máxima 1600, tamaño oculto de la BiLSTM 128, 32 canales en la CNN, índice en blanco de CTC 0, 92 clases de caracteres más el token en blanco.
+Parámetros adicionales de configuración: 92 clases de carácter más el token CTC blank (índice 0), tamaño oculto 128, 32 canales en la CNN.
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es una red neuronal convolucional recurrente (CRNN) clásica para OCR de líneas. La parte convolucional procesa la imagen de la línea en escala de grises y extrae un mapa de características; a continuación, una BiLSTM de dos capas con tamaño oculto 128 modela la secuencia temporal a lo largo del eje horizontal; finalmente, una capa lineal con activación CTC produce la transcripción. La decodificación utilizada en la evaluación es *greedy* CTC sin modelo de lenguaje, lo que explica en parte la tasa de error a nivel de palabra reportada.
+El modelo es un reconocedor de líneas de texto de tipo CRNN: una red convolucional en escala de grises que extrae características verticales de la imagen de línea, seguida de una BiLSTM de dos capas con tamaño oculto 128 que modela la secuencia temporal, y una capa de clasificación CTC sobre 92 caracteres más el blank. La entrada se normaliza a altura 64 px y anchura máxima 1600 px. La decodificación reportada es CTC greedy sin modelo de lenguaje.
 
-El entrenamiento se realizó sobre el corpus de líneas del Boletín Oficial marroquí (Zenodo, DOI 10.5281/zenodo.21702529). El autor no detalla en la model card el número de tokens, la composición exacta del dataset ni si hubo etapas de ajuste fino con RLHF o DPO (no aplicables en un modelo CTC de OCR). El checkpoint conserva el estado del optimizador, del scheduler y del AMP scaler, lo que sugiere entrenamiento con precisión mixta. Como paso posterior, el autor documenta dos experimentos de adaptación a dariya con datos sintéticos: un subconjunto de 5.000 frases DODa en escritura árabe renderizadas con fuentes árabes (4.500 líneas de entrenamiento y 500 de validación, 3 épocas en una RTX 5070) que alcanzó 2,21 % CER, 9,92 % WER y 61,4 % de exactitud exacta de línea; y una ejecución filtrada con texto de Atlas (5.329 líneas renderizadas tras filtrar escrituras extranjeras) que alcanzó 6,63 % CER, 15,01 % WER y 15,20 % de exactitud exacta. Ambos son pruebas de pipeline con datos sintéticos, no evaluaciones sobre documentos reales.
+El entrenamiento se realizó sobre imágenes de líneas de texto árabe impreso del Boletín Oficial marroquí, procedentes del corpus publicado en Zenodo con DOI 10.5281/zenodo.21702529 bajo CC BY 4.0. No se documenta en la información disponible el número de tokens, la composición exacta del dataset ni si hubo etapas de ajuste fino con RLHF o DPO (no aplicables habitualmente a OCR). El checkpoint incluye estado del optimizador, del scheduler y del AMP scaler, lo que permite reanudar el entrenamiento.
+
+El autor documenta además dos experimentos sintéticos de adaptación a dariya: un subconjunto de 5.000 frases DODa en escritura árabe renderizadas con fuentes árabes (4.500 líneas de entrenamiento, 500 de validación) que alcanzó 2,21 % CER, 9,92 % WER y 61,4 % de exactitud de línea tras tres épocas en RTX 5070, y un run filtrado sobre texto de Atlas con 5.329 líneas renderizadas que alcanzó 6,63 % CER, 15,01 % WER y 15,20 % de exactitud de línea. Ambos son pruebas de pipeline sobre datos sintéticos, no evaluaciones sobre documentos reales.
 
 ## Capacidades
 
-- Reconocimiento de texto árabe impreso en imágenes de línea ya recortadas.
-- Salida de transcripción a nivel de carácter mediante decodificación CTC.
-- Procesamiento de líneas de hasta 1600 px de anchura y 64 px de altura.
-- Manejo de un vocabulario de 92 clases de caracteres árabes más el token en blanco.
-- Integración como componente de un pipeline mayor: requiere detección de líneas y reconstrucción del orden de lectura para páginas completas.
-- No soporta tool calling ni function calling.
-- No soporta razonamiento multi-paso ni comportamiento de agente.
-- No dispone de modo *thinking*, visión general, audio ni otras modalidades.
-- Capacidad multilingüe limitada al árabe impreso del corpus de entrenamiento; no hay soporte nativo de dariya ni de otros idiomas.
+- Reconocimiento de texto árabe impreso en imágenes de línea ya recortadas (image-to-text).
+- Salida de transcripción a nivel de línea mediante decodificación CTC greedy.
+- Manejo de 92 clases de carácter árabe más el token blank.
+- Carga del checkpoint con vocabulario y configuración embebidos, lo que facilita la reanudación de entrenamiento.
+- Adaptación a nuevos dominios o alfabetos mediante ajuste fino, con herramientas de preparación de pares línea-transcripción en el repositorio companion.
+- Reconocimiento de página completa (single-column) a través del reconocedor compartido del repositorio, que añade detección de líneas y exportación a JSON/TXT.
+- Interfaz local Gradio opcional para pruebas de inferencia.
+- No soporta tool calling, function calling, razonamiento multi-paso, agentes, visión general, audio ni modo thinking: es un modelo especializado exclusivamente en OCR.
 
 ## Casos de uso
 
-- Digitalización de boletines oficiales y documentos administrativos árabes: el modelo reconoce líneas impresas del Boletín Oficial marroquí con un CER del 1,49 % en el split de test, por lo que encaja en pipelines de preservación documental donde ya exista un detector de líneas.
-- Extracción de texto de documentos legales escaneados: tras segmentar las líneas con un detector, el CRNN transcribe cada línea de forma independiente; su bajo CER a nivel de carácter permite reconstruir el texto con corrección ortográfica posterior.
-- Creación de corpus de texto para entrenamiento de modelos de lenguaje en árabe: la transcripción de líneas del Boletín Oficial puede alimentar la construcción de datasets textuales a partir de fuentes públicas.
-- Base para adaptación al dariya marroquí: el checkpoint sirve como inicialización para ajuste fino con pares línea-transcripción en dariya, tal como documenta el autor con los experimentos sintéticos DODa y Atlas.
-- Evaluación comparativa de pipelines OCR: al publicar métricas CER, WER y exactitud exacta de línea junto con `metrics.json` y `verification.json`, permite contrastar detectores de línea y estrategias de decodificación sobre un test fijo de 1.212 líneas.
-- Prototipado de sistemas de lectura de documentos en entornos con recursos limitados: con menos de 2 millones de parámetros, el modelo es ligero y puede ejecutarse en CPU o en GPU de consumo para pruebas de concepto.
-- Investigación en reconocimiento de escritura árabe: la arquitectura CRNN + CTC con vocabulario y configuración publicados facilita reproducir experimentos y comparar variantes de decodificación (greedy frente a beam search con modelo de lenguaje).
+- Digitalización de boletines oficiales: el modelo reconoce líneas de texto impreso del Boletín Oficial marroquí con un CER del 1,49 % en el split de test, por lo que es adecuado para pipelines de digitalización de documentos legales con revisión humana posterior.
+- Creación de corpus OCR de árabe impreso: sirve como línea base reproducible para comparar futuras mejoras (modelos con LM, arquitecturas transformer, adaptaciones a dariya) sobre el mismo split de test de 1.212 líneas.
+- Punto de partida para adaptación al dariya: el repositorio companion incluye utilidades para preparar pares línea-transcripción y filtrar texto multlínea, de modo que un equipo puede ajustar el checkpoint con datos reales de dariya.
+- Extracción de texto en pipelines documentales: al ser un modelo de 1,9 M de parámetros y 0,2 GB, puede desplegarse en CPU o en una GPU de consumo dentro de un servicio de preprocesado que alimente etapas posteriores de NLP.
+- Prototipado e investigación educativa: el proyecto incluye un curso completo en francés sobre CNN, BiLSTM, alineamiento CTC, renderizado árabe y evaluación, con 12 ejercicios y 10 preguntas de entrevista, útil para formar a desarrolladores en OCR.
+- Pruebas de integración en aplicaciones locales: la demo Gradio y el reconocedor de página permiten validar el flujo completo (detección de líneas, reconocimiento, exportación) antes de invertir en infraestructura mayor.
+- Auditoría de datasets OCR: las herramientas de auditoría de experimentos del repositorio permiten detectar fugas entre train y validación y verificar la calidad de corpus sintéticos antes de entrenar.
 
 ## Benchmarks y rendimiento
 
-Resultados reportados por el autor sobre el split de test fijo de 1.212 líneas del Boletín Oficial (árabe impreso, decodificación CTC greedy sin modelo de lenguaje):
+Resultados reportados por el autor sobre el split de test oficial de 1.212 líneas del Boletín Oficial (árabe impreso, decodificación CTC greedy sin modelo de lenguaje):
 
 | Metrica | Valor |
 |---|---|
 | CER | 1,49 % |
 | WER | 6,94 % |
-| Exactitud exacta de línea | 51,65 % |
+| Exactitud de línea exacta | 51,65 % |
 
-Experimentos de adaptación con datos sintéticos (3 épocas en RTX 5070, no son benchmarks sobre documentos reales):
+Resultados de experimentos sintéticos de adaptación a dariya (no son benchmarks sobre documentos reales):
 
-| Experimento | Lineas | CER | WER | Exactitud exacta |
+| Experimento | Lineas | CER | WER | Exactitud de linea |
 |---|---|---|---|---|
-| DODa sintetico (`experiments/darija_synthetic_v2`) | 4.500 train / 500 val | 2,21 % | 9,92 % | 61,4 % |
-| Atlas filtrado (`experiments/atlas_synthetic_filtered`) | 5.329 renderizadas | 6,63 % | 15,01 % | 15,20 % |
+| DODa sintetico (3 epocas, RTX 5070) | 4.500 train / 500 val | 2,21 % | 9,92 % | 61,4 % |
+| Atlas filtrado sintetico (3 epocas, RTX 5070) | 5.329 lineas renderizadas | 6,63 % | 15,01 % | 15,20 % |
 
-No se han publicado comparaciones con otros modelos OCR en la información disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible, ya que no son aplicables a un modelo de OCR.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: muy baja; con 1,94 M de parámetros el checkpoint ocupa del orden de decenas de MB en precisión de entrenamiento, por lo que cabe holgadamente en cualquier GPU de consumo e incluso en CPU.
-- GPU recomendadas: no se requiere GPU dedicada; una RTX 5070 se usó para los experimentos de ajuste fino. Para inferencia, cualquier GPU con al menos 2 GB de VRAM es suficiente.
-- Cabe en GPU de consumo: sí, en cualquier modelo actual (RTX 3060, RTX 4060, RTX 4090, etc.) y también en CPU para volúmenes moderados.
-- Opciones de despliegue: el checkpoint es PyTorch puro y se carga con `torch.load`; no hay integración documentada con vLLM, llama.cpp, Ollama o TGI, que no aplican a este tipo de modelo. El despliegue requiere el código de inferencia y preprocesamiento del repositorio de GitHub.
+- VRAM estimada para inferencia: muy baja; con 1,94 M de parámetros el checkpoint ocupa aproximadamente 0,2 GB en FP32, por lo que cabe holgadamente en cualquier GPU de consumo e incluso en CPU.
+- GPU recomendadas: cualquier GPU moderna sirve; el autor cita una RTX 5070 para entrenamiento y verifica inferencia en CPU y en RTX 5070.
+- Cabe en GPU de consumo: sí, en cualquier modelo con al menos 2 GB de VRAM (GTX 1050, RTX 3050, RTX 4090, etc.).
+- Opciones de despliegue: PyTorch nativo (carga con `torch.load`), demo Gradio del repositorio companion y el reconocedor de línea/página compartido. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI, que no son aplicables a esta arquitectura.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de comparaciones directas con otros modelos OCR en la información proporcionada. Como referencia cualitativa de la categoría:
-
-| Modelo | Tipo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto / entrada | CER reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| moroccan-darija-ocr | CRNN + CTC para líneas árabes | 1,94 M | línea de 64x1600 px | no disponible | Hugging Face + GitHub |
-| Tesseract (ara) | OCR clásico con LSTM | no disponible | página completa | Apache 2.0 | código abierto |
-| TrOCR | Transformer encoder-decoder | no disponible | línea de imagen | MIT (variantes) | Hugging Face |
+| Moroccan Darija OCR (este) | 1,94 M | línea de 64 px alto × 1600 px ancho | 1,49 % (árabe impreso, test propio) | no disponible | Hugging Face + GitHub |
+| Tesseract (ara) | no disponible | página completa | no disponible | Apache 2.0 | open source |
+| EasyOCR (árabe) | no disponible | línea / región | no disponible | Apache 2.0 | open source |
+| PaddleOCR (árabe) | no disponible | detección + reconocimiento | no disponible | Apache 2.0 | open source |
 
-La comparación cuantitativa de rendimiento entre estos sistemas no está disponible en la información proporcionada.
+No se dispone de datos de benchmarks comparativos homogéneos entre estos sistemas en la información proporcionada; la comparación debe hacerse sobre el mismo corpus de test para ser válida.
 
 ## Limitaciones y advertencias
 
-- El modelo **no fue entrenado con dariya**; el nombre del repositorio puede inducir a error. El autor lo indica explícitamente y pide no presentarlo como resultado de referencia en dariya.
-- Solo procesa líneas ya recortadas: no incluye detección de líneas ni reconstrucción del orden de lectura, que deben implementarse por separado.
-- La decodificación evaluada es CTC greedy sin modelo de lenguaje; un beam search con LM podría mejorar el WER, pero no se reportan resultados en ese modo.
-- La exactitud exacta de línea es del 51,65 %, lo que implica que casi la mitad de las líneas contienen al menos un error de carácter; para producción se recomienda corrección posterior o un LM.
-- Sesgos conocidos: el corpus de entrenamiento es el Boletín Oficial marroquí, por lo que el dominio, la tipografía y el estilo administrativo pueden no generalizar a otros documentos (manuscritos, prensa, formularios).
-- Riesgo de alucinación: en un modelo CTC no hay generación libre, pero sí errores de sustitución, omisión e inserción de caracteres, especialmente en líneas con ruido, fuentes atípicas o baja resolución.
-- Limitaciones de idioma: sin soporte nativo de dariya, otros dialectos árabes ni lenguas no árabes; los experimentos con dariya son sintéticos y no validan documentos reales.
-- Restricciones de licencia: la licencia del checkpoint no está disponible; el corpus de entrenamiento se anuncia bajo CC BY 4.0, pero eso no determina la licencia del modelo. Verificar antes de uso comercial.
-- Los resultados de los experimentos sintéticos (DODa y Atlas) no deben interpretarse como rendimiento en documentos reales de dariya.
-- El checkpoint se guarda con `weights_only=False`, lo que implica cargar objetos Python arbitrarios; conviene auditar el archivo antes de cargarlo en entornos no confiables.
+- **No es un modelo de dariya**: el autor advierte explícitamente que no fue entrenado en dariya y que no debe presentarse como resultado de referencia en dariya.
+- Solo reconoce líneas ya recortadas; el reconocimiento de página completa requiere detección de líneas y reconstrucción del orden de lectura por separado.
+- Decodificación CTC greedy sin modelo de lenguaje: la exactitud de línea exacta es del 51,65 %, lo que implica que casi la mitad de las líneas contienen al menos un error de carácter.
+- Los resultados de adaptación a dariya son sintéticos y exploratorios; la auditoría del propio autor identificó cambios en la composición de validación entre runs, párrafos de Atlas compartidos entre train y validación y omisión de signos vocálicos en el renderizado sintético histórico.
+- La licencia no está disponible en la información proporcionada, por lo que no se puede confirmar el uso comercial; el corpus de origen se anuncia bajo CC BY 4.0, pero la licencia del modelo es independiente.
+- Riesgo de alucinación y sesgo: no documentado en la información disponible; en OCR el riesgo se manifiesta como sustituciones y omisiones de caracteres, no como texto inventado de forma generativa.
+- Idiomas soportados: solo árabe impreso; no se documenta soporte multilingüe.
+- No apto para documentos manuscritos, texto en otros alfabetos ni imágenes de baja calidad sin preprocesado.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/sailu4/moroccan-darija-ocr
-- Repositorio GitHub del proyecto: https://github.com/BADR-JOULAlI/moroccan-darija-ocr
-- Corpus del Boletín Oficial marroquí (Zenodo): https://doi.org/10.5281/zenodo.21702529
-- Notebook de galería de test: `notebooks/03_test_images_transcriptions.ipynb` (en el repositorio GitHub)
-- Artefactos de test: `test_artifacts/test_images_transcriptions_gallery.png` (en el repositorio GitHub)
-- Experimentos de adaptación a dariya: `experiments/darija_synthetic_v2` y `experiments/atlas_synthetic_filtered` (en el repositorio GitHub)
-- Métricas y verificación: `metrics.json` y `verification.json` (en el repositorio GitHub)
+- Hugging Face: https://huggingface.co/sailu4/moroccan-darija-ocr
+- Repositorio GitHub companion: https://github.com/BADR-JOULAlI/moroccan-darija-ocr
+- Guía de uso: https://github.com/BADR-JOULAlI/moroccan-darija-ocr/blob/main/arabic_ocr/docs/USAGE.md
+- Auditoría de experimentos: https://github.com/BADR-JOULAlI/moroccan-darija-ocr/blob/main/arabic_ocr/docs/EXPERIMENT_AUDIT.md
+- Curso de teoría e implementación (francés): https://github.com/BADR-JOULAlI/moroccan-darija-ocr/blob/main/arabic_ocr/docs/COURS_OCR.md
+- PDF del curso: docs/cours_moroccan_darija_ocr.pdf (en el repositorio)
+- Corpus del Boletín Oficial (Zenodo, CC BY 4.0): https://doi.org/10.5281/zenodo.21702529

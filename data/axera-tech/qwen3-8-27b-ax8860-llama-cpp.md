@@ -2,113 +2,121 @@
 
 ## Resumen
 
-Qwen3.8-27B-AX8860-llama.cpp es un paquete de despliegue publicado por AXERA-TECH que permite ejecutar el modelo Qwen3.8-27B (27.320.697.856 parametros) sobre la NPU del SoC Axera AX8860 mediante una bifurcacion de llama.cpp con kernels ggml-axera. No es un modelo nuevo: es una distribucion lista para placa que incluye pesos en formato GGUF (mxfp4), el codificador visual en bf16, los binarios estaticos para el dispositivo, los kernels de NPU con su manifiesto y scripts de arranque y benchmark.
+Qwen3.8-27B-AX8860-llama.cpp es un paquete de despliegue, publicado por AXERA-TECH, que permite ejecutar el modelo Qwen/Qwen3.8-27B sobre la NPU del SoC Axera AX8860 mediante una bifurcación de llama.cpp con kernels ggml específicos para dicha NPU (ggml-axera). No se trata de un modelo entrenado por AXERA, sino de una distribución lista para el hardware: incluye los pesos cuantizados en MXFP4 (14,8 GB), el codificador visual en BF16 (931 MB), los binarios estáticos para la placa, los kernels NPU y scripts de ejecución y benchmark.
 
-El paquete resuelve un problema muy concreto de ingenieria: llevar un modelo de 27B con entrada de texto e imagen y hasta 262.144 tokens de contexto a un acelerador de borde, con servidor compatible con la API de OpenAI y decodificacion especulativa opcional basada en MTP. Los datos publicados por el autor reportan 13,8 tokens/s en decodificacion simple y hasta 35,1 tokens/s con MTP en generacion de codigo, con un prefill de 1.262 tokens/s sobre un prompt de 3.908 tokens.
+El modelo subyacente es Qwen3.8-27B, con 27.320.697.856 parámetros totales según los safetensors del modelo base, capacidades multimodales (texto e imagen) y una ventana de contexto de hasta 262.144 tokens. La propuesta de valor del paquete es doble: por un lado, llevar un modelo de 27B a un dispositivo de borde con NPU en lugar de GPU; por otro, ofrecer decodificación especulativa MTP opcional que, según la model card, eleva el throughput de 13,8 a 35,1 tokens/s en código, con tasas de aceptación de hasta 0,785.
 
-Es relevante ahora porque demuestra que la inferencia de un modelo multimodal de escala media puede residir en hardware de borde con NPU dedicada, manteniendo un contrato de API estandar y un consumo de memoria controlado mediante checkpoints rodantes en contexto largo. La ficha se centra en lo que el autor documenta; los datos del modelo base Qwen3.8-27B que no aparecen en la model card se marcan como no disponibles.
+Es relevante ahora porque demuestra que un modelo denso de 27B con visión y contexto largo puede servirse con una API compatible con OpenAI en hardware de bajo consumo, con memoria de checkpoint en caché que no crece linealmente con el contexto. La ficha se centra en los datos verificables publicados por el autor; cualquier dato ausente se marca como no disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base Qwen/Qwen3.8-27B; el paquete aporta runtime llama.cpp + ggml-axera sobre NPU AX8860) |
-| Parametros totales | 27.320.697.856 (dato de safetensors del modelo base) |
-| Parametros activos | no disponible |
-| Longitud de contexto | hasta 262.144 tokens (por defecto 16.384 en el servidor; `CTX=131072` configurable) |
-| Tipos de cuantizacion | mxfp4 (pesos, 14,8 GB); bf16 (codificador visual, 931 MB) |
-| Idiomas soportados | no disponible (la model card incluye ejemplos en chino e ingles) |
+| Arquitectura | no disponible (modelo base Qwen3.8-27B; el paquete usa llama.cpp con kernels ggml-axera para NPU AX8860) |
+| Parametros totales | 27.320.697.856 |
+| Parametros activos | no aplica (no se indica que sea MoE) |
+| Longitud de contexto | hasta 262.144 tokens (por defecto 16.384 en el servidor; configurable con `CTX`) |
+| Tipos de cuantizacion | MXFP4 para pesos (14,8 GB); BF16 para el codificador visual (931 MB) |
+| Idiomas soportados | no disponible (la model card incluye pruebas en chino e inglés, sin lista oficial de idiomas) |
 | Licencia | no disponible |
 | Formato de pesos | GGUF (`qwen3.8-27b-mxfp4.gguf`, `mmproj-qwen3.8-27b-bf16.gguf`) |
+| Tamano del repo | 19,4 GB |
+| Hardware objetivo | Axera AX8860, SDK V0.5.1 o superior |
+| Servidor | compatible con OpenAI, `-np 1`, 4 núcleos NPU en exclusiva |
+| Descargas / likes | 2.376 / 1 |
+| Fechas | creado 2026-10-29, actualizado 2026-11-24 |
 
 ## Arquitectura y entrenamiento
 
-El paquete no documenta la arquitectura interna del modelo base ni su proceso de entrenamiento; la model card se limita al despliegue. Lo que si se describe es la pila de ejecucion: llama.cpp compilado de forma estatica para la placa, con kernels de NPU propios (`kernels/` mas `manifest.json`) que ocupan los cuatro nucleos de NPU en exclusiva. Los pesos se sirven en mxfp4 y el codificador visual en bf16, lo que separa el coste de vision del de lenguaje.
+El paquete no documenta el entrenamiento del modelo base; la información disponible se limita al despliegue. Qwen3.8-27B es un modelo denso de 27,3B parámetros con entrada de texto e imagen, servido aquí a través de una bifurcación de llama.cpp (`ZHEQIUSHUI/llama.cpp`, rama `axera-dev`, commit `6613735ce`) que incorpora kernels ggml para la NPU del AX8860. Los pesos se distribuyen en MXFP4, un formato de 4 bits por bloque con escala compartida, lo que reduce el peso a 14,8 GB, y el codificador visual se mantiene en BF16.
 
-La innovacion tecnica destacable es el modo MTP (multi-token prediction) como decodificacion especulativa opcional: el modelo propone tres tokens por ronda y el modelo objetivo los verifica uno a uno, de modo que en decodificacion codiciosa la salida es identica a la decodificacion normal. Ademas, el contexto largo se gestiona con checkpoints rodantes (`-ctxcp 4` por defecto), de forma que la memoria no crece linealmente con la longitud del contexto. El autor indica que una prueba de crecimiento hasta 60.000 tokens de prompt no provoca OOM y mantiene estable el uso de memoria de los checkpoints. No se dispone de informacion sobre volumen de tokens de entrenamiento, composicion del dataset ni etapas de RLHF o DPO.
+La innovación técnica destacable es la decodificación especulativa MTP (multi-token prediction) opcional: el modelo lanza tres borradores de token por ronda y el modelo objetivo los verifica uno a uno, de modo que en decodificación greedy la salida es idéntica a la decodificación normal. También se documenta el uso de checkpoints rotativos (`-ctxcp 4`) para contexto largo, que mantienen el consumo de memoria estable en lugar de crecer linealmente con la longitud del prompt, y una caché de prompt de 4 GB en memoria del host que puede persistirse en SSD con `CACHE_DIR`. El servidor desactiva el modo de razonamiento por defecto (`--reasoning off`) y acepta mensajes de sistema en mitad de la conversación, algo necesario para clientes de agentes como Codex.
 
 ## Capacidades
 
-- Generacion de texto conversacional y completado de texto, con plantilla de chat incluida (`chat_template.jinja`).
-- Entrada de imagen: el paquete incluye codificador visual y permite describir imagenes (`run.sh -i bus.jpg "Describe this image."`).
-- Contexto largo de hasta 262.144 tokens, con gestion de memoria mediante checkpoints rodantes.
-- Decodificacion especulativa MTP opcional, con aceleraciones documentadas de 1,46x a 2,52x segun el tipo de contenido.
-- Servidor compatible con la API de OpenAI (`run.sh -s 8080`), apto para clientes de agentes.
-- Soporte de mensajes de sistema en mitad de la conversacion, pensado para clientes de agentes como Codex.
-- Modo de razonamiento (thinking) presente en el modelo, desactivado por defecto en el servidor (`--reasoning off`).
-- Cache de prompt en 4 GB de memoria del host, ampliable a disco con `CACHE_DIR` para conservar aciertos tras reinicios.
-- Capacidades multilingues: no disponibles como lista cerrada; los ejemplos de benchmark cubren chino e ingles.
+- Generación de texto conversacional y completado, con plantilla de chat incluida (`chat_template.jinja`).
+- Entrada de imagen: el paquete incluye codificador visual BF16 y el script admite `-i` para describir imágenes.
+- Contexto largo de hasta 262.144 tokens, con gestión de memoria mediante checkpoints rotativos.
+- Decodificación especulativa MTP opcional, con aceleraciones medidas de 1,46x a 2,52x según el tipo de contenido.
+- Servidor compatible con OpenAI (`-s`), lo que habilita clientes y SDK estándar.
+- Soporte de agentes y tool calling implícito en el servidor: acepta mensajes de sistema intermedios y permite ajustar `presence_penalty` por petición, pensado para clientes tipo Codex.
+- Capacidades multilingües: la model card reporta pruebas en chino e inglés (traducción chino-inglés, redacción en ambos idiomas), sin lista formal de idiomas.
+- Modo de razonamiento configurable en el servidor (desactivado por defecto).
+- Benchmark reproducible incluido (`bench.sh`) y compatibilidad con `llama-bench` usando `-b 4096 -ub 4096`.
 
 ## Casos de uso
 
-- Asistencia conversacional en el borde: el servidor compatible con OpenAI permite desplegar un chat multi-turno en la propia placa AX8860, sin depender de la nube, con 16.384 tokens de contexto por defecto y hasta 262.144 si se configura.
-- Analisis de imagenes en campo: con el codificador visual incluido se pueden describir o interpretar imagenes capturadas por el dispositivo (por ejemplo, inspeccion visual o lectura de documentacion) usando `run.sh -i`.
-- Generacion de codigo en estaciones de trabajo con NPU: el modo MTP alcanza 35,1 tokens/s en contenido de codigo con una tasa de aceptacion de 0,785, lo que lo hace util para autocompletado y generacion de parches en local.
-- Agentes y tool calling: el servidor acepta mensajes de sistema intermedios y el autor recomienda `presence_penalty: 0` precisamente para no penalizar la repeticion de nombres de fichero, numeros y codigo, lo que favorece flujos de agente con llamadas a herramientas.
-- Procesamiento de documentos largos: con contexto de hasta 262.144 tokens y checkpoints rodantes se pueden resumir o extraer datos de expedientes extensos sin que la memoria crezca de forma lineal.
-- Traduccion y redaccion asistida: el benchmark documenta 28,6 tokens/s con MTP en traduccion chino-ingles y alrededor de 20 tokens/s en redaccion de ensayos y relatos, adecuado para generacion de borradores en local.
-- Evaluacion y prototipado de hardware: los scripts `bench.sh` y `llama-bench` (con `-b 4096 -ub 4096`) permiten reproducir latencias y throughput para dimensionar despliegues antes de produccion.
+- Inferencia de borde sin GPU: desplegar un modelo de 27B con visión en un dispositivo AX8860 para entornos con restricciones de consumo y espacio, usando los binarios estáticos y los kernels NPU incluidos.
+- Asistente de código en local: con MTP activado el modelo alcanza 35,1 tokens/s en contenido de código (aceptación 0,785), lo que lo hace utilizable para autocompletado y generación de parches en un servidor compatible con OpenAI integrado en el IDE.
+- Agentes y tool calling: el servidor acepta mensajes de sistema intermedios y `presence_penalty` por petición, y el autor recomienda `presence_penalty: 0` para evitar que el modelo evite repetir nombres de fichero, números o código, algo crítico en pipelines de agentes.
+- Procesamiento de documentos largos: con contexto de hasta 262.144 tokens y checkpoints rotativos, se pueden analizar informes, expedientes o bases de código extensas sin que la memoria crezca de forma lineal; el autor valida prompts de más de 60k tokens sin OOM.
+- Descripción y análisis de imágenes: el codificador visual BF16 permite generar descripciones de imágenes o extraer información de capturas y documentos escaneados desde el propio dispositivo.
+- Traducción automática: las pruebas de traducción chino-inglés con MTP muestran 28,6 tokens/s (2,09x), adecuado para traducción por lotes en local.
+- Servicio multiusuario ligero: al ejecutarse con `-np 1` y ocupar los 4 núcleos NPU, encaja en despliegues de un solo flujo con requisitos de baja latencia más que en servicios de alta concurrencia.
 
 ## Benchmarks y rendimiento
 
-Datos publicados por el autor en la model card (tokens/s; hasta 256 tokens generados, decodificacion codiciosa salvo indicacion):
+Datos publicados por el autor en la model card (tokens/s, hasta 256 tokens generados, greedy salvo indicación):
 
-| Escenario | Sin MTP | Con MTP | Aceleracion | Tasa de aceptacion |
+| Contenido | Normal | MTP | Aceleración | Tasa de aceptación |
 |---|---:|---:|---:|---:|
-| Codigo | 13,9 | 35,1 | 2,52x | 0,785 |
-| Traduccion (chino a ingles) | 13,7 | 28,6 | 2,09x | 0,596 |
+| Código | 13,9 | 35,1 | 2,52x | 0,785 |
+| Traducción (chino-inglés) | 13,7 | 28,6 | 2,09x | 0,596 |
 | Tabla Markdown | 13,8 | 31,0 | 2,25x | 0,687 |
-| Problemas matematicos | 13,8 | 32,0 | 2,32x | 0,709 |
+| Matemáticas | 13,8 | 32,0 | 2,32x | 0,709 |
 | Ensayo en chino | 13,7 | 20,6 | 1,51x | 0,342 |
-| Relato en ingles | 13,7 | 20,4 | 1,49x | 0,338 |
-| Codigo con muestreo recomendado | 13,7 | 29,0 | 2,12x | 0,618 |
-| Ensayo con muestreo recomendado | 13,7 | 20,0 | 1,46x | 0,322 |
+| Relato en inglés | 13,7 | 20,4 | 1,49x | 0,338 |
+| Código con muestreo | 13,7 | 29,0 | 2,12x | 0,618 |
+| Ensayo con muestreo | 13,7 | 20,0 | 1,46x | 0,322 |
 
-Metricas adicionales de la model card:
+Rendimiento de prefill y decodificación:
 
-| Metrica | Valor |
+| Escenario | Medición |
 |---|---|
-| Decodificacion simple | 13,8 tokens/s |
-| Decodificacion con MTP (maximo) | 35,1 tokens/s (2,52x) |
-| Prompt de 4k con MTP | 13,5 a 20,8 tokens/s (1,54x, aceptados 32/90) |
-| Prefill de prompt de 4k | 1.262 tokens/s (3.908 tokens en 3,10 s) |
-| Prompt de 5 tokens, `-c 8192` | 0,22 s de prefill |
-| Prompt de 47 tokens, `-c 8192` | 0,22 s de prefill |
-| Prompt de 3.908 tokens, `-c 8192` | 3,10 s de prefill, 13,6 tokens/s de decodificacion |
-| Prompt de 3.908 tokens, `-c 16384` | 3,09 s de prefill, 13,6 tokens/s de decodificacion |
-| Prompt de 3.908 tokens con muestreo, `-c 8192` | 3,09 s de prefill, 13,3 tokens/s de decodificacion |
+| Prefill de prompt de 3.908 tokens | 1.262 tokens/s (3,10 s) |
+| Decodificación base | 13,8 tokens/s |
+| Decodificación con MTP | hasta 35,1 tokens/s |
+| Prompt de 4k con MTP | 13,5 → 20,8 tokens/s (1,54x, 32/90 aceptados) |
+| Prompt de 3.908 tokens, `-c 8192` | 3,10 s de prefill, 13,6 tokens/s de decodificación |
+| Prompt de 3.908 tokens, `-c 16384` | 3,09 s de prefill, 13,6 tokens/s de decodificación |
 
-No se han publicado resultados de benchmarks academicos (MMLU, HumanEval, GSM8K) en la informacion disponible.
+No se han publicado resultados de benchmarks académicos (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- Hardware obligatorio: SoC Axera AX8860 con SDK V0.5.1 o superior. El runtime no esta pensado para GPU de escritorio.
-- Memoria: pesos de 14,8 GB en mxfp4 mas 931 MB de codificador visual; cache de prompt en 4 GB de memoria del host por defecto, configurable a disco con `CACHE_DIR`.
-- NPU: el runtime ocupa los cuatro nucleos de NPU en exclusiva; el servidor se ejecuta con `-np 1`.
-- GPU de consumo (RTX 4090, etc.): no aplica a este paquete; los binarios son estaticos para la placa AX8860.
-- Opciones de despliegue: scripts `run.sh` (texto, imagen, chat interactivo, servidor) y `bench.sh`; el servidor expone una API compatible con OpenAI en el puerto indicado (`-s 8080`).
-- Throughput y latencia: 13,8 tokens/s de decodificacion simple, hasta 35,1 tokens/s con MTP en codigo, 1.262 tokens/s de prefill con prompt de 3.908 tokens.
-- Nota operativa: los ficheros descargados de Hugging Face no traen permiso de ejecucion, por lo que los scripts deben invocarse con `sh`.
+- NPU Axera AX8860 con SDK V0.5.1 o superior; el runtime ocupa los 4 núcleos NPU en exclusiva.
+- Peso en disco: 14,8 GB para los pesos MXFP4 más 931 MB del codificador visual; repositorio completo de 19,4 GB.
+- Memoria del host: caché de prompt de 4 GB por defecto, ampliable a disco con `CACHE_DIR`; el contexto largo usa checkpoints rotativos para no crecer linealmente.
+- No se especifica VRAM ni requisitos de GPU: el paquete está diseñado para la NPU del AX8860, no para GPU de consumo.
+- Opciones de despliegue: los scripts incluidos `run.sh` (texto, imagen, chat, servidor) y `bench.sh`; servidor compatible con OpenAI en el puerto indicado con `-s`; `llama-bench` compatible con `-b 4096 -ub 4096`.
+- Throughput y latencia: 13,8 tokens/s en decodificación normal, hasta 35,1 tokens/s con MTP en código, y 1.262 tokens/s de prefill.
+- Limitación operativa: en algunos entornos las peticiones consecutivas fallan con `ret = -3` y requieren reintento.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye datos de modelos alternativos comparables en la misma categoria (despliegue de un modelo de 27B multimodal sobre NPU de borde), ni cifras de rendimiento del modelo base frente a otros modelos de su tamano.
+| Modelo | Parámetros | Contexto | Multimodal | Formato | Licencia | Despliegue |
+|---|---|---|---|---|---|---|
+| Qwen3.8-27B-AX8860 (este paquete) | 27,3B | 262.144 | Sí (texto + imagen) | GGUF MXFP4 | no disponible | NPU Axera AX8860 |
+| Qwen3.8-27B (modelo base) | 27,3B | no disponible en la información | Sí (según el paquete) | safetensors | no disponible | GPU / CPU según el ecosistema Qwen |
+| Alternativas de 27B en GGUF para llama.cpp | no disponible | no disponible | no disponible | GGUF | varía | CPU / GPU |
+
+No se dispone de datos de benchmarks comparativos frente a otras alternativas en la información proporcionada, por lo que no es posible establecer una comparación de rendimiento rigurosa.
 
 ## Limitaciones y advertencias
 
-- Dependencia total de hardware: solo funciona en AX8860 con SDK V0.5.1 o superior; no es portable a GPU ni a CPU convencional.
-- Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; debe verificarse antes de cualquier despliegue en produccion.
-- Idiomas soportados no documentados: la model card solo ejemplifica chino e ingles; el comportamiento en castellano no esta verificado.
-- El modo de razonamiento (thinking) viene desactivado por defecto en el servidor (`--reasoning off`), lo que puede degradar tareas que se beneficien de cadena de pensamiento si no se activa.
-- El autor advierte de que la presencia de penalizacion recomendada en la model card (1,5) hace que el modelo evite repetir contenido del prompt (nombres de fichero, numeros, codigo) y perjudica a agentes y tool calling; por eso el servidor la fija en 0. Es un ajuste que hay que tener en cuenta al migrar configuraciones.
-- Fallo intermitente conocido: en algunos entornos, peticiones consecutivas devuelven `ret = -3`; requiere reintento.
-- MTP consume recursos adicionales y su beneficio depende del contenido: la aceleracion cae a 1,46x-1,51x en texto libre (ensayos, relatos) frente a 2,52x en codigo.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible; aplican las cautelas habituales de un modelo de lenguaje en produccion.
-- Sesgos conocidos: no documentados en la informacion proporcionada.
-- El contexto maximo de 262.144 tokens esta sujeto a la memoria disponible; el servidor arranca con 16.384 por defecto y el contexto largo usa checkpoints rodantes.
+- Dependencia de hardware: solo funciona en Axera AX8860 con SDK V0.5.1 o superior; no es ejecutable en GPU convencional con este paquete.
+- Licencia no disponible: no se puede confirmar si el uso comercial está permitido; hay que consultar la licencia del modelo base Qwen/Qwen3.8-27B antes de producción.
+- Idiomas no disponibles de forma oficial: las pruebas se limitan a chino e inglés; el rendimiento en castellano no está documentado.
+- El modo de razonamiento está desactivado por defecto en el servidor; si se necesita, hay que habilitarlo explícitamente.
+- La penalización de presencia por defecto es 0 en el servidor, distinta de la recomendada en la model card (1,5); con 1,5 el modelo evita repetir contenido del prompt, lo que perjudica a agentes y tool calls.
+- Fallo intermitente `ret = -3` en peticiones consecutivas en algunos entornos; requiere lógica de reintento en el cliente.
+- Concurrencia limitada: `-np 1` y uso exclusivo de los 4 núcleos NPU.
+- Riesgo de alucinación no cuantificado: no se publican evaluaciones de fidelidad ni de sesgos.
+- El contexto máximo de 262.144 tokens depende de la configuración (`CTX`); el valor por defecto es 16.384 y el consumo de memoria con contexto largo se gestiona con checkpoints, no con una ventana completamente residente.
+- La decodificación MTP solo mantiene la equivalencia con la decodificación normal en modo greedy; con muestreo, la salida puede diferir.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/AXERA-TECH/Qwen3.8-27B-AX8860-llama.cpp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Codigo fuente de llama.cpp usado (rama `axera-dev`, commit `0104880be`): https://github.com/ZHEQIUSHUI/llama.cpp
+- Código de llama.cpp para Axera: https://github.com/ZHEQIUSHUI/llama.cpp (rama `axera-dev`, commit `6613735ce`)

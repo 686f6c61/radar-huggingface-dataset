@@ -2,86 +2,96 @@
 
 ## Resumen
 
-El modelo `furiosa-ai/bge-reranker-v2-m3` es un reranker de tipo cross-encoder desarrollado originalmente por BAAI (Beijing Academy of Artificial Intelligence) y reeditado por el usuario furiosa-ai en Hugging Face. A diferencia de los modelos de embeddings, que generan representaciones vectoriales, un reranker recibe un par consulta-documento y devuelve directamente una puntuación de relevancia, lo que lo hace especialmente útil para refinar los resultados de un sistema de recuperación (RAG, búsqueda semántica, etc.). Está basado en el modelo multilingüe bge-m3, lo que le confiere capacidades en numerosos idiomas, y cuenta con 567,7 millones de parámetros, un tamaño moderado que permite un despliegue ligero y una inferencia rápida.
+`furiosa-ai/bge-reranker-v2-m3` es un paquete de despliegue del modelo de reranking multiplilingüe `BAAI/bge-reranker-v2-m3`, publicado por FuriosaAI para ejecutarse sobre su acelerador RNGD mediante la librería Furiosa-LLM. No se trata de un modelo nuevo: los pesos son los del checkpoint original de BAAI, distribuidos junto con un Furiosa Executable Bundle (FXB) que permite servir el modelo en hardware NPU de FuriosaAI.
 
-La relevancia actual de este modelo radica en su papel dentro de los pipelines de retrieval augmented generation (RAG), donde actúa como segunda etapa de filtrado tras un primer paso de recuperación por embeddings. Su licencia Apache 2.0 permite uso comercial sin restricciones, y su integración con librerías como FlagEmbedding y Text Embeddings Inference (TEI) facilita su adopción en entornos de producción. Aunque el repositorio de furiosa-ai no presenta descargas ni valoraciones, se trata de una copia del modelo oficial de BAAI, que sí cuenta con amplia adopción en la comunidad.
+El modelo resuelve el problema del reranking en pipelines de recuperación de información: dado un par consulta-documento, produce una puntuación de relevancia que permite reordenar los resultados de un primer recuperador (habitualmente denso o híbrido) en sistemas RAG y motores de búsqueda. Al ser un cross-encoder, evalúa conjuntamente consulta y documento, lo que ofrece mayor precisión que la similitud coseno entre embeddings independientes, a costa de un coste computacional por par más elevado.
 
-## Especificaciones tecnicas
+Es relevante para equipos que ya operan infraestructura FuriosaAI RNGD y necesitan integrar un reranker multilingüe en producción sin depender de GPU. La arquitectura es XLM-RoBERTa densa con 567,7 millones de parámetros, licencia Apache 2.0 y soporte multilingüe. La longitud de contexto del modelo no se especifica en la información disponible.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder (basado en bge-m3, derivado de XLM-RoBERTa) |
-| Parametros totales | 567.755.777 |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible (el repositorio solo incluye safetensors en fp32/fp16) |
-| Idiomas soportados | Multilingue (hereda las capacidades de bge-m3, que cubre mas de 100 idiomas) |
+| Arquitectura | XLM-RoBERTa (encoder denso), `XLMRobertaForSequenceClassification` |
+| Parámetros totales | 567.755.777 |
+| Parámetros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | Sin cuantización de bajos bits; pesos FP32 del checkpoint original, conversión a BF16 para ejecución W16A16 |
+| Idiomas soportados | Multilingüe |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (checkpoint FP32) + Furiosa Executable Bundle (FXB) |
+| Tarea | Text classification / reranking (cross-encoder) |
+| Entrada / salida | Texto (pares consulta-documento) / puntuación de relevancia |
+| Hardware soportado | FuriosaAI RNGD |
+| Estrategia de paralelismo | Tensor-parallel de 8 PEs (una tarjeta RNGD) |
+| Tamaño del repositorio | 2,4 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura de un cross-encoder basado en el transformer encoder de bge-m3, que a su vez se fundamenta en XLM-RoBERTa. A diferencia de los modelos bi-encoder, que codifican consulta y documento por separado, el reranker procesa la concatenacion de ambos como una unica secuencia y produce un logit de relevancia, que puede normalizarse mediante una funcion sigmoide para obtener un valor entre 0 y 1. Esta arquitectura permite una mayor interaccion entre las dos partes, lo que suele traducirse en una mejor precision de ranking, aunque con un coste computacional mayor al no poder precalcular embeddings.
+El modelo es un cross-encoder basado en el encoder XLM-RoBERTa, implementado como `XLMRobertaForSequenceClassification`. Recibe la concatenación de consulta y documento y emite una puntuación escalar de relevancia, que el servidor normaliza mediante sigmoide para exponerla como `relevance_score`. Al evaluar el par de forma conjunta, captura interacciones léxicas y semánticas que un bi-encoder no puede modelar.
 
-No se dispone de informacion detallada sobre el proceso de entrenamiento especifico de este modelo en la documentacion proporcionada. Se sabe que bge-m3 fue entrenado con datos multilingues a gran escala, y el reranker v2-m3 se ajusto a partir de ese modelo base para la tarea de reranking. No hay referencias a tecnicas como RLHF o DPO en la informacion disponible. El modelo se distribuye con pesos en formato safetensors y esta disenado para ser utilizado con la libreria FlagEmbedding, aunque tambien es compatible con otras herramientas de inferencia como Text Embeddings Inference.
+Los detalles de entrenamiento (número de tokens, composición del dataset, uso de RLHF/DPO o técnicas de minería de negativos) corresponden al modelo original de BAAI y no se documentan en esta ficha de FuriosaAI. La contribución de este repositorio es de despliegue: empaqueta los pesos originales sin cuantización de bajos bits y añade un FXB compilado para RNGD, con ejecución en BF16 (W16A16) y paralelismo tensorial de 8 PEs sobre una única tarjeta.
 
 ## Capacidades
 
-- Reranking de pares consulta-documento: devuelve una puntuacion de relevancia para cada par, permitiendo ordenar resultados de busqueda.
-- Soporte multilingue: al estar basado en bge-m3, maneja un amplio espectro de idiomas, lo que lo hace util para busquedas internacionales.
-- Integracion con FlagEmbedding: se puede cargar facilmente con `FlagReranker` y usar en modo fp16 para acelerar la inferencia.
-- Normalizacion de puntuaciones: permite mapear los logits a un rango [0,1] mediante sigmoide, util para umbrales de filtrado.
-- Compatible con Text Embeddings Inference (TEI): puede desplegarse como endpoint para integracion en pipelines de produccion.
-- No genera texto ni soporta tool calling: es exclusivamente un clasificador de relevancia, no un modelo generativo.
+- Reranking de pares consulta-documento mediante cross-encoder, con puntuaciones de relevancia normalizadas por sigmoide.
+- Soporte multilingüe, heredado de XLM-RoBERTa.
+- Endpoint `/v1/rerank` compatible con las APIs de Cohere y Jina, con parámetro `top_n` para truncar resultados.
+- Endpoint `/v1/score` para puntuar pares consulta-documento sin reordenar.
+- API Python offline mediante el constructor `LLM` de Furiosa-LLM, con descubrimiento automático del FXB incluido en el repositorio.
+- Servidor compatible con OpenAI para despliegue online.
+- No es un modelo generativo: no produce texto, no soporta tool calling ni razonamiento multi-paso, y no tiene modo thinking, visión ni audio.
 
 ## Casos de uso
 
-- Refinamiento de resultados en sistemas RAG: tras una primera recuperacion con embeddings, el reranker puntua los candidatos y reordena los documentos mas relevantes para el prompt final, mejorando la calidad de las respuestas generadas.
-- Busqueda semantica multilingue: en plataformas con contenido en varios idiomas, el modelo puede ordenar resultados de busqueda independientemente del idioma de la consulta o del documento, gracias a su capacidad multilingue.
-- Filtrado de documentos en pipelines de ingestion: antes de indexar grandes volumenes de texto, se puede usar el reranker para descartar pasajes irrelevantes y reducir el ruido en la base vectorial.
-- Sistemas de preguntas y respuestas sobre documentacion corporativa: dado un conjunto de fragmentos extraidos de manuales o wikis internas, el modelo selecciona los pasajes mas pertinentes para responder a una consulta concreta.
-- Motores de recomendacion basados en contenido: puntuar la relevancia entre un perfil de usuario (tratado como consulta) y items candidatos (tratados como documentos) para generar recomendaciones personalizadas.
-- Evaluacion de calidad de pares en datasets de entrenamiento: el reranker puede utilizarse para filtrar pares consulta-respuesta de baja relevancia antes de entrenar otros modelos, mejorando la calidad del conjunto de datos.
+- Reranking en pipelines RAG: tras la recuperación inicial con un índice vectorial, el modelo reordena los candidatos por relevancia real respecto a la consulta, mejorando la calidad del contexto que se inyecta al LLM generador. El endpoint `/v1/rerank` con `top_n` encaja directamente en este paso.
+- Búsqueda empresarial multilingüe: en corpus con documentos en varios idiomas, el soporte multilingüe del XLM-RoBERTa permite reordenar resultados sin mantener un reranker por idioma.
+- Atención al cliente con base de conocimiento: reordenar artículos candidatos antes de responder permite seleccionar los fragmentos más pertinentes y reducir respuestas basadas en documentación irrelevante.
+- Filtrado de candidatos en sistemas de recomendación textual: puntuar pares consulta-documento para descartar resultados de baja relevancia antes de etapas posteriores más costosas.
+- Evaluación de calidad de recuperación: usar `/v1/score` para generar puntuaciones de relevancia en conjuntos de evaluación y medir la calidad de un recuperador.
+- Despliegue en infraestructura NPU: equipos con tarjetas FuriosaAI RNGD pueden servir el reranker sin GPU, aprovechando el FXB precompilado y el paralelismo de 8 PEs en una sola tarjeta.
+- Deduplicación y ordenación de resultados en motores de búsqueda internos: reordenar los N mejores resultados de un buscador léxico o híbrido antes de presentarlos al usuario.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye tablas comparativas ni metricas como MMLU, HumanEval o similares, ya que se trata de un modelo de reranking y no de generacion. Para evaluar su rendimiento, se recomienda consultar los benchmarks publicados por BAAI en el repositorio oficial de FlagEmbedding o en el paper asociado a bge-m3 (arxiv:2312.15503).
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 567,7 millones de parametros, en fp16 se requieren aproximadamente 1,1 GB de memoria para los pesos. En fp32, unos 2,3 GB. Con cuantizacion a 8 bits, alrededor de 0,6 GB, y a 4 bits, unos 0,3 GB (aunque no se proporcionan cuantizaciones oficiales).
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM puede ejecutar el modelo en fp16. Tarjetas como NVIDIA T4, V100, RTX 3060 o superiores son suficientes. Para despliegues con alto throughput, se recomienda A10, A100 o H100.
-- Compatibilidad con GPU de consumo: si, cabe en GPUs de consumo como RTX 3060, RTX 4070 o incluso en CPU con suficiente RAM, aunque la inferencia sera mas lenta.
-- Opciones de despliegue: se puede servir mediante FlagEmbedding (libreria Python), Text Embeddings Inference (TEI) de Hugging Face, o exportar a ONNX para su uso en entornos optimizados. Tambien existen conversiones a GGUF para su uso con llama.cpp, aunque no son oficiales.
-- Latencia y throughput: no se dispone de datos oficiales. En una GPU moderna, la inferencia por par suele estar en el rango de milisegundos, pero depende del hardware y de la longitud de las secuencias.
+- Hardware objetivo: FuriosaAI RNGD (8 PEs por tarjeta); el modelo ocupa una única tarjeta con tensor-parallel de 8 PEs.
+- No se documenta despliegue en GPU en esta ficha; para GPU se remite al modelo original `BAAI/bge-reranker-v2-m3`, ejecutable con FlagEmbedding, Sentence Transformers o Transformers.
+- Precisión de ejecución: BF16 (W16A16) a partir de pesos FP32; sin cuantización de bajos bits.
+- Tamaño del repositorio: 2,4 GB, que incluye pesos y FXB.
+- Opciones de despliegue: `furiosa-llm serve` (servidor compatible con OpenAI) o API Python `furiosa_llm.LLM`.
+- VRAM, latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Base | Idiomas | Licencia | Uso recomendado |
+| Modelo | Parámetros | Contexto | Licencia | Hardware / despliegue | Notas |
 |---|---|---|---|---|---|
-| bge-reranker-v2-m3 (este) | 567,7 M | bge-m3 | Multilingue | Apache 2.0 | Reranking multilingue, equilibrio entre rendimiento y velocidad |
-| bge-reranker-base | 278 M | xlm-roberta-base | Chino e ingles | Apache 2.0 | Reranking ligero para chino e ingles, inferencia muy rapida |
-| bge-reranker-large | 560 M | xlm-roberta-large | Chino e ingles | Apache 2.0 | Reranking de alta precision para chino e ingles |
-| bge-reranker-v2-gemma | 2 B | gemma-2b | Multilingue | Apache 2.0 | Reranking multilingue con mayor capacidad, requiere mas recursos |
-| bge-reranker-v2-minicpm-layerwise | 2 B | MiniCPM-2B-dpo-bf16 | Multilingue | Apache 2.0 | Reranking con seleccion de capas para acelerar inferencia |
+| furiosa-ai/bge-reranker-v2-m3 | 567,7 M | no disponible | Apache 2.0 | FuriosaAI RNGD, Furiosa-LLM | Paquete de despliegue del modelo de BAAI con FXB |
+| BAAI/bge-reranker-v2-m3 | 567,7 M | no disponible | Apache 2.0 | GPU/CPU, FlagEmbedding, Sentence Transformers, Transformers | Modelo original; misma arquitectura y pesos |
+| BAAI/bge-reranker-base | no disponible en la información | no disponible | no disponible en la información | GPU/CPU | Alternativa de menor tamaño de la misma familia; datos no verificados aquí |
 
-La comparativa se basa en las caracteristicas publicadas en la model card original de BAAI. No se dispone de datos de rendimiento comparativos en la informacion proporcionada.
+La comparación con otras familias de rerankers (Cohere Rerank, Jina Reranker) no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: solo produce puntuaciones de relevancia, no puede generar texto ni mantener conversaciones.
-- Longitud de contexto no especificada: aunque bge-m3 soporta hasta 8192 tokens, no se confirma si este reranker mantiene ese limite. Se recomienda verificar con pruebas propias.
-- Sesgos potenciales: al estar entrenado con datos multilingues de internet, puede heredar sesgos presentes en esos datos, especialmente en idiomas menos representados.
-- Riesgo de alucinacion en la puntuacion: aunque no genera texto, puede asignar puntuaciones altas a documentos irrelevantes si el contenido es similar superficialmente a la consulta.
-- Dependencia de la calidad del primer paso de recuperacion: el reranker solo puede reordenar los candidatos que recibe; si la recuperacion inicial omite documentos relevantes, no podra recuperarlos.
-- Sin soporte oficial de cuantizacion: el repositorio no incluye versiones cuantizadas, por lo que el despliegue en entornos con memoria limitada requiere conversion manual.
-- Repositorio sin mantenimiento activo: la copia de furiosa-ai no muestra actividad ni descargas; se recomienda utilizar el repositorio oficial de BAAI para obtener actualizaciones y soporte.
+- Es un modelo de reranking, no generativo: no puede sustituir a un LLM en tareas de generación, razonamiento o agentes.
+- El coste por par es superior al de un bi-encoder, ya que requiere una pasada completa del encoder por cada consulta-documento; conviene aplicarlo sobre un conjunto de candidatos ya filtrado.
+- La longitud de contexto no está documentada en esta ficha; los pares consulta-documento demasiado largos pueden truncarse según la configuración del tokenizador.
+- Riesgo de alucinación no aplica en sentido generativo, pero las puntuaciones de relevancia pueden ser poco fiables en dominios muy alejados de los datos de entrenamiento originales.
+- Sesgos: no se documentan sesgos específicos en la información disponible; hereda los del corpus de entrenamiento de XLM-RoBERTa y del ajuste de BAAI.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo original de BAAI y de las dependencias de Furiosa-LLM.
+- El despliegue está atado al hardware FuriosaAI RNGD y a la librería Furiosa-LLM; no es portable a GPU sin usar el checkpoint original.
+- El repositorio tiene un volumen de descargas muy bajo (319) y ninguna interacción, lo que reduce la evidencia comunitaria sobre su funcionamiento en producción.
 
 ## Enlaces
 
-- Repositorio de Hugging Face (copia de furiosa-ai): https://huggingface.co/furiosa-ai/bge-reranker-v2-m3
-- Repositorio oficial de BAAI: https://huggingface.co/BAAI/bge-reranker-v2-m3
-- GitHub de FlagEmbedding: https://github.com/FlagOpen/FlagEmbedding
-- Paper de bge-m3 (arxiv:2312.15503): https://arxiv.org/abs/2312.15503
-- Paper de reranking multilingue (arxiv:2402.03216): https://arxiv.org/abs/2402.03216
-- Sitio oficial de BGE: https://bge.baai.ac.cn/
+- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/bge-reranker-v2-m3
+- Modelo original: https://huggingface.co/BAAI/bge-reranker-v2-m3
+- Documentación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html
+- Servidor Furiosa-LLM (`furiosa-llm serve`): https://developer.furiosa.ai/latest/en/furiosa_llm/furiosa-llm-serve.html
+- Guía de instalación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/get_started/furiosa_llm.html#installing-furiosa-llm
+- FuriosaAI: https://furiosa.ai
+- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

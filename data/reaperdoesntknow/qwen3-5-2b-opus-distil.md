@@ -1,91 +1,83 @@
 # reaperdoesntknow/Qwen3.5-2B-Opus-Distil
 
 ## Resumen
+Qwen3.5-2B-Opus-Distil es un ajuste fino (fine-tune) del modelo base unsloth/Qwen3.5-2B, publicado por el usuario reaperdoesntknow bajo el sello Convergent Intelligence LLC (Research Division). Se trata de un checkpoint experimental de 2.274.069.824 parametros orientado a generacion de texto y razonamiento, entrenado con Unsloth y Hugging Face TRL. Su relevancia radica en explorar la destilacion de estilos de respuesta tipo "Opus" sobre una arquitectura pequena y de licencia permisiva (Apache-2.0), lo que permite desplegarlo en hardware modesto.
 
-Qwen3.5-2B-Opus-Distil es un ajuste fino (fine-tune) experimental del modelo base unsloth/Qwen3.5-2B, publicado por el usuario reaperdoesntknow bajo la marca Convergent Intelligence LLC (Research Division). Se distribuye como un checkpoint de investigación sin benchmarks publicados, orientado a generación de texto y razonamiento, y entrenado con la pila Unsloth más Hugging Face TRL. Con 2.274.069.824 parámetros reales en safetensors, pertenece a la categoría de modelos pequeños que pueden ejecutarse en hardware de consumo.
+El modelo hereda la arquitectura Qwen3.5 del modelo base, con pipeline declarado de text-generation y soporte multimodal segun los tags de Hugging Face (image-text-to-text). El repositorio ocupa 4,7 GB en formato safetensors y acumula 2.210 descargas desde su creacion el 1 de julio de 2026, con una unica valoracion positiva.
 
-El modelo hereda la arquitectura y las capacidades del Qwen3.5-2B original, incluyendo la modalidad image-text-to-text que aparece en los tags del repositorio, aunque la model card solo declara la tarea de text-generation. Su licencia Apache-2.0 facilita la integración en productos comerciales, y el formato safetensors con biblioteca transformers permite un despliegue directo sin conversiones adicionales.
+La model card advierte explicitamente de que se trata de un checkpoint de investigacion experimental "aun no evaluado con benchmarks", por lo que debe validarse antes de confiar en sus salidas. No se publican datos sobre composicion del dataset de destilacion, numero de tokens de entrenamiento ni metodologia de alineacion mas alla de la mencion a Unsloth y TRL.
 
-La relevancia de esta ficha es doble: por un lado, documenta un checkpoint de la línea Opus-Distil dentro del ecosistema de ajustes comunitarios sobre Qwen3.5; por otro, advierte de que se trata de un artefacto sin validación empírica publicada, por lo que cualquier uso en producción debe ir precedido de una evaluación propia. El autor lo etiqueta explícitamente como "experimental research checkpoint. Not yet benchmarked".
+## Especificaciones tecnicas
 
-## Especificaciones técnicas
-
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Qwen3.5, según modelo base) |
-| Parámetros totales | 2.274.069.824 |
-| Parámetros activos | no disponible (no es MoE según la información disponible) |
+| Arquitectura | Transformer (familia Qwen3.5, segun modelo base) |
+| Parametros totales | 2.274.069.824 |
+| Parametros activos | no disponible (no se declara MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible (pesos en safetensors; compatible con cuantización estándar vía transformers/bitsandbytes, no confirmado por el autor) |
-| Idiomas soportados | inglés (en) |
-| Licencia | Apache-2.0 |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; cuantizacion GGUF/AWQ no publicada por el autor) |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
+El modelo es un fine-tune del checkpoint unsloth/Qwen3.5-2B, por lo que su arquitectura subyacente corresponde a la familia Qwen3.5 en su variante de 2B parametros. No se especifica en la informacion disponible si emplea atencion lineal, decodificacion especulativa u otras innovaciones propias de la familia Qwen3.5; la model card solo confirma el pipeline de text-generation y los tags qwen3_5 e image-text-to-text, lo que sugiere herencia de capacidades multimodales del modelo base.
 
-El modelo es un fine-tune del checkpoint unsloth/Qwen3.5-2B, por lo que su arquitectura subyacente corresponde a la familia Qwen3.5 en su variante de 2B parámetros, es decir, un transformer decoder-only de generación de texto. Los tags del repositorio incluyen `qwen3_5`, `image-text-to-text` y `text-generation`, lo que sugiere que el modelo base podría tener capacidades multimodales de entrada imagen-texto, aunque la model card solo declara la tarea de text-generation y el pipeline asignado es text-generation.
-
-El entrenamiento se realizó con Unsloth y Hugging Face TRL, según declara el autor. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otras etapas de alineación posteriores al ajuste supervisado. Tampoco se detalla ninguna innovación técnica adicional (decodificación especulativa, atención lineal, etc.) más allá de las que herede del modelo base. El sufijo "Opus-Distil" sugiere una destilación orientada a imitar el comportamiento de un modelo mayor, pero la model card no aporta detalles sobre el profesor utilizado ni sobre el procedimiento de destilación.
+El entrenamiento se realizo con Unsloth y Hugging Face TRL, herramientas habituales para ajuste fino eficiente en memoria. No se detalla el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o destilacion supervisada a partir de un modelo mayor (el nombre "Opus-Distil" sugiere destilacion de estilo, pero el autor no lo documenta). Tampoco se indica la longitud de contexto efectiva tras el ajuste.
 
 ## Capacidades
-
-- Generación de texto conversacional y de formato libre, heredada del modelo base Qwen3.5-2B.
-- Razonamiento de propósito general, según la descripción del autor ("text-generation / reasoning model").
-- Posible soporte de entrada imagen-texto por herencia del modelo base (tag `image-text-to-text`), no confirmado en la model card.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: limitadas al inglés según el campo `language: en` del repositorio.
-- Modo thinking, visión o audio: no disponible en la información proporcionada.
+- Generacion de texto conversacional en ingles, con etiqueta conversational en Hugging Face.
+- Razonamiento de proposito general heredado del modelo base Qwen3.5-2B.
+- Posible soporte de entrada imagen-texto segun los tags image-text-to-text; no documentado en la model card.
+- Compatibilidad con endpoints (tag endpoints_compatible), lo que facilita su despliegue en infraestructura de inferencia gestionada.
+- Integracion con transformers mediante AutoModelForCausalLM y AutoTokenizer.
+- No se documenta soporte explicito de tool calling, function calling, agentes multi-paso, thinking mode ni capacidades de audio.
 
 ## Casos de uso
-
-- Prototipado rápido de asistentes conversacionales: con 2,27B parámetros y pesos safetensors, el modelo puede cargarse con `transformers` en una GPU de consumo para iterar sobre prompts y flujos de diálogo sin coste de infraestructura dedicada.
-- Experimentación académica sobre destilación: al ser un checkpoint "Opus-Distil" sobre Qwen3.5-2B, sirve como punto de partida para estudiar el efecto de la destilación en modelos pequeños, comparando salidas con el base.
-- Evaluación comparativa de fine-tunes comunitarios: útil en pipelines de investigación que miden la degradación o mejora de un ajuste frente a su modelo base antes de adoptarlo.
-- Generación de texto en inglés para entornos con recursos limitados: su tamaño permite desplegarlo en una sola GPU consumer o incluso en CPU con cuantización, para tareas de resumen o redacción acotadas.
-- Base para ajustes posteriores (continued fine-tuning): al estar en safetensors y con licencia Apache-2.0, puede reentrenarse con Unsloth o TRL para dominios específicos sin restricciones de licencia.
-- Docencia y demostraciones de herramientas open source: su reducido tamaño y su licencia permisiva lo hacen adecuado para talleres sobre fine-tuning y despliegue con transformers.
-- Filtrado o clasificación de texto ligera: para tareas de etiquetado simple en inglés donde no se requiera un modelo grande, siempre tras validación empírica propia.
+- Prototipado rapido de asistentes conversacionales en ingles: el modelo cabe en una unica GPU consumer y permite iterar sobre prompts y estilos de respuesta sin coste de API, adecuado para pruebas de concepto.
+- Generacion de texto en aplicaciones de bajo consumo: su tamano de 2B parametros lo hace viable en entornos con VRAM limitada (por ejemplo, portatiles con GPU de 8 GB) para tareas de redaccion asistida.
+- Filtrado y clasificacion de texto: puede usarse como modelo generativo para resumir o reformular documentos cortos en pipelines de preprocesamiento.
+- Experimentacion en destilacion de estilo: sirve como referencia para investigadores que quieran comparar tecnicas de ajuste fino con Unsloth sobre modelos Qwen3.5 pequenos.
+- Despliegue en endpoints compatibles: al estar etiquetado como endpoints_compatible, puede integrarse en servicios de inferencia gestionada para demos publicas.
+- Base para fine-tunes posteriores: al ser Apache-2.0 y de peso reducido, es un punto de partida comodo para ajustes especificos de dominio en ingles.
+- Evaluacion de robustez y alucinacion en modelos pequenos: util en investigacion academica sobre fidelidad de modelos de 2B parametros.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la información disponible. El autor indica explícitamente que es un "experimental research checkpoint. Not yet benchmarked — validate outputs before relying on them."
+No se han publicado resultados de benchmarks en la informacion disponible. La propia model card indica que es un checkpoint experimental "not yet benchmarked".
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia en FP16/BF16: aproximadamente 4,5 GB solo para pesos (2,27B × 2 bytes), más overhead de activaciones y KV cache; en la práctica, unos 6-8 GB para contextos moderados.
-- VRAM estimada en cuantización de 8 bits: en torno a 2,5-3 GB para pesos.
-- VRAM estimada en cuantización de 4 bits: en torno a 1,5-2 GB para pesos.
-- GPU recomendadas: NVIDIA RTX 4090, RTX 3090, A100 o H100 para inferencia en precisión completa; RTX 3060 12 GB o superior para cuantización 4/8 bits.
-- Cabe en GPU de consumo: sí, en tarjetas con 6-8 GB o más en FP16, y en 4 GB o más con cuantización de 4 bits.
-- Opciones de despliegue: transformers (soporte nativo declarado), y previsiblemente vLLM, TGI, llama.cpp u Ollama tras conversión a GGUF, aunque el autor no confirma estas integraciones.
-- Latencia y throughput estimados: no disponible en la información proporcionada.
+- VRAM estimada para inferencia en precision completa (fp16/bf16): aproximadamente 4,5 GB solo para pesos, mas overhead de activaciones y KV cache.
+- VRAM estimada en cuantizacion de 8 bits: en torno a 2,3-2,5 GB.
+- VRAM estimada en cuantizacion de 4 bits: en torno a 1,2-1,5 GB, aunque el autor no publica versiones GGUF ni AWQ.
+- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para fp16 (RTX 3060 Ti, RTX 4060, RTX 4070); A100 y H100 sobredimensionadas para este tamano.
+- Cabe en GPU consumer: si, en la mayoria de tarjetas con 8 GB o mas en fp16, y en tarjetas de 4-6 GB si se cuantiza.
+- Opciones de despliegue: transformers (soporte oficial), vLLM y TGI previsiblemente compatibles al ser arquitectura Qwen3.5, si bien no se confirma en la informacion disponible; llama.cpp y Ollama requeririan conversion a GGUF no publicada.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
-|---|---|---|---|---|---|
-| Qwen3.5-2B-Opus-Distil (este) | 2,27B | no disponible | Apache-2.0 | no | Hugging Face |
-| unsloth/Qwen3.5-2B (base) | ~2B (según nombre) | no disponible | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
-| Fine-tunes comunitarios de Qwen3.5-2B | ~2B | variable | variable | habitualmente no | Hugging Face |
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Qwen3.5-2B-Opus-Distil | 2,27B | no disponible | Apache-2.0 | Fine-tune experimental, sin benchmarks |
+| unsloth/Qwen3.5-2B (base) | ~2B | no disponible | Apache-2.0 (heredada) | Modelo base sin ajuste de estilo |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32K (segun documentacion publica de Qwen) | Apache-2.0 | Alternativa consolidada de tamano similar con benchmarks publicados |
+| Llama 3.2 1B Instruct | 1,2B | 128K (segun Meta) | Llama 3.2 Community License | Requiere aceptar licencia, no Apache-2.0 |
 
-No se dispone de datos de benchmarks ni de especificaciones detalladas del modelo base en la información proporcionada, por lo que la comparación cuantitativa con alternativas no es posible. La principal diferencia frente al base es el ajuste fino adicional con Unsloth + TRL y la posible orientación a destilación ("Opus-Distil"), sin validación empírica publicada.
+La comparativa con Qwen2.5-1.5B-Instruct y Llama 3.2 1B se ofrece como referencia de categoria (modelos pequenos de proposito general); no se dispone de datos de rendimiento del modelo evaluado para confrontarlos numericamente.
 
 ## Limitaciones y advertencias
-
-- Checkpoint experimental sin benchmarks: el propio autor advierte de que no ha sido evaluado y de que deben validarse las salidas antes de confiar en ellas.
-- Riesgo de alucinación: al ser un modelo de 2B parámetros, la tasa de errores factuales es previsiblemente alta en tareas de conocimiento; no hay mediciones publicadas.
-- Idiomas: solo se declara inglés; el rendimiento en castellano no está garantizado ni documentado.
-- Contexto: no se especifica la longitud de contexto soportada, lo que impide planificar cargas de trabajo con ventanas largas.
-- Tool calling y agentes: no hay evidencia de soporte; no debe asumirse su funcionamiento sin pruebas.
-- Sesgos: no se documentan evaluaciones de sesgo ni de seguridad; el dataset de ajuste es desconocido.
-- Licencia: Apache-2.0 permite uso comercial, pero el modelo base podría tener condiciones adicionales que conviene verificar en su repositorio original.
-- Reproducibilidad: no se detallan hiperparámetros, datos ni procedimiento de destilación, lo que dificulta reproducir el entrenamiento.
-- Madurez: con 2.395 descargas y 1 like, la adopción es baja y el soporte comunitario es limitado.
+- Checkpoint experimental sin benchmarks publicados: el autor recomienda validar las salidas antes de confiar en ellas.
+- Riesgo elevado de alucinacion en un modelo de 2B parametros sin evaluacion de fidelidad documentada.
+- Soporte unicamente de ingles segun la etiqueta language: en; el rendimiento en castellano no esta garantizado.
+- Longitud de contexto no declarada, lo que impide planificar casos de uso con documentos largos.
+- No se documenta el dataset de destilacion ni posibles sesgos heredados del mismo; riesgo de sesgos desconocidos.
+- Licencia Apache-2.0 permisiva para uso comercial, pero al ser un fine-tune experimental conviene revisar la licencia del modelo base unsloth/Qwen3.5-2B y de Qwen3.5 antes de produccion.
+- Un unico "like" y ausencia de comunidad: escaso soporte ante problemas de integracion.
+- No hay versiones cuantizadas oficiales (GGUF, AWQ, GPTQ), lo que limita el despliegue en llama.cpp u Ollama sin conversion manual.
 
 ## Enlaces
-
 - Hugging Face: https://huggingface.co/reaperdoesntknow/Qwen3.5-2B-Opus-Distil
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-2B
 - Perfil del autor: https://huggingface.co/reaperdoesntknow
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
+- Hugging Face TRL: https://github.com/huggingface/trl

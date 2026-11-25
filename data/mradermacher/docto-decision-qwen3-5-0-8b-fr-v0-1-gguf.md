@@ -2,52 +2,52 @@
 
 ## Resumen
 
-`mradermacher/docto-decision-qwen3.5-0.8b-fr-v0.1-GGUF` es una versión cuantizada en formato GGUF del modelo `bofenghuang/docto-decision-qwen3.5-0.8b-fr-v0.1`, publicada por el usuario mradermacher, conocido por producir cuantizaciones estáticas de modelos abiertos. El modelo base es un ajuste fino (mediante LoRA, segun las etiquetas de la model card) orientado a decisiones en el dominio médico y en lengua francesa, con enfasis explicito en calibracion y en el paradigma de "system-one" (decision rapida e intuitiva).
+docto-decision-qwen3.5-0.8b-fr-v0.1-GGUF es la version cuantizada en formato GGUF del modelo bofenghuang/docto-decision-qwen3.5-0.8b-fr-v0.1, un modelo especializado en toma de decisiones medicas en frances. El autor de la cuantizacion es mradermacher, mientras que el modelo original procede del desarrollador bofenghuang. Se trata de un ajuste fino mediante LoRA sobre una base Qwen3.5 de aproximadamente 773 millones de parametros (772.845.888 reales segun los pesos en safetensors), orientado a tareas de decision y calibracion en el dominio sanitario.
 
-El repositorio contiene unicamente pesos cuantizados derivados del modelo original, junto con ficheros `mmproj` etiquetados como "multi-modal supplement". El numero real de parametros declarado en los safetensors del modelo base es de 100.592.896 (aproximadamente 0,1 mil millones), una cifra que no coincide con el sufijo "0.8b" del nombre del modelo, por lo que conviene tratar ese dato con cautela.
+El modelo se enmarca en la categoria de "system-one decision models": modelos disenados para emitir decisiones rapidas y calibradas en lugar de generar texto libre extenso. Incorpora etiquetas como medical, french, decision, calibration y system-one, lo que sugiere un enfoque en respuestas deterministas y probabilisticamente calibradas para casos clinicos. El repositorio incluye tambien ficheros mmproj (multi-modal supplement), lo que apunta a capacidades multimodales en el modelo base.
 
-La relevancia de esta publicacion es practica: al ofrecer variantes GGUF desde Q2_K hasta F16, permite ejecutar un modelo de decision medico en frances en hardware muy modesto (CPU, portatiles, dispositivos de borde o incluso moviles) mediante llama.cpp u Ollama, algo que no es posible con modelos medicos de mayor tamano. No se dispone de informacion sobre contexto, datos de entrenamiento detallados ni resultados de evaluacion.
+Esta version GGUF es relevante porque permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles, con cuantizaciones desde 0,5 GB (Q2_K) hasta 1,7 GB (f16). La licencia Apache 2.0 facilita su uso comercial, y su tamano reducido lo hace adecuado para despliegues en entornos con recursos limitados donde se requiera inferencia local de un modelo especializado en frances medico.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder de la familia Qwen (no confirmado en detalle en la informacion disponible) |
-| Parametros totales | 100.592.896 (dato real de safetensors del modelo base) |
-| Parametros activos | no aplica (no es MoE, no disponible) |
+| Arquitectura | Transformer (derivada de Qwen3.5, ajuste LoRA); detalles exactos no disponibles |
+| Parametros totales | 772.845.888 |
+| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS; ademas mmproj-Q8_0 y mmproj-f16 |
+| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; ademas mmproj-Q8_0 y mmproj-f16 |
 | Idiomas soportados | frances (fr) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (el modelo base esta en safetensors) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion tecnica detallada sobre la arquitectura interna del modelo base mas alla de su pertenencia a la familia Qwen 3.5 y de que fue adaptado mediante LoRA (etiqueta `lora` en la model card). El nombre del modelo indica un supuesto tamano de 0,8 mil millones de parametros, pero el recuento real de safetensors del modelo base es de 100.592.896 parametros, discrepancia que no queda explicada en la documentacion disponible. Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO.
+El modelo base es un ajuste fino mediante LoRA sobre una arquitectura Qwen3.5 de aproximadamente 0,8 mil millones de parametros. La informacion disponible no detalla la composicion del dataset de entrenamiento mas alla de su identificador (bofenghuang/docto-decision-data-fr-v0.1) y su orientacion a decisiones medicas en frances. No se especifican el numero de tokens de entrenamiento, la mezcla de datos ni si se emplearon tecnicas de RLHF o DPO.
 
-El unico dato de entrenamiento confirmado es el uso del dataset `bofenghuang/docto-decision-data-fr-v0.1`, junto con las etiquetas `medical`, `french`, `system-one`, `decision` y `calibration`. Es decir, el objetivo declarado del ajuste no es la generacion de texto generalista, sino la produccion de decisiones (probablemente clasificaciones o elecciones entre opciones) con una calibracion de confianza cuidada, en el ambito clinico y en frances. Las innovaciones tecnicas especificas (atencion, decodificacion, objetivos de calibracion) no estan documentadas en la informacion proporcionada.
-
-Este repositorio en concreto no aporta entrenamiento nuevo: es exclusivamente un proceso de conversion y cuantizacion desde safetensors a GGUF, con cuantizaciones estaticas (el autor indica que las cuantizaciones ponderadas/imatrix no estan disponibles en el momento de la publicacion).
+La innovacion principal reside en el enfoque "system-one decision": el modelo esta disenado para producir decisiones calibradas en lugar de generacion de texto abierta, lo que implica un objetivo de entrenamiento orientado a la calibracion de probabilidades. La presencia de ficheros mmproj en el repositorio indica que el modelo base incorpora componentes multimodales, aunque la informacion disponible no detalla su funcionamiento ni el tipo de entradas visuales soportadas. No se documentan innovaciones adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Decision en dominio medico: el modelo esta ajustado especificamente para tareas de decision clinica en frances (etiqueta `decision`).
-- Calibracion de confianza: la etiqueta `calibration` sugiere que el modelo esta entrenado para emitir estimaciones de confianza mejor calibradas que un ajuste estandar, algo relevante cuando la salida debe priorizarse o derivarse a revision humana.
-- Paradigma "system-one": orientado a respuestas rapidas e intuitivas, en contraposicion a cadenas de razonamiento largas.
-- Idioma: exclusivamente frances segun la metadata; no se declara soporte multilingue.
-- Capacidad multimodal: los ficheros `mmproj-Q8_0` y `mmproj-f16` se describen como "multi-modal supplement", lo que apunta a un posible componente de vision, aunque no se detalla en la informacion disponible que modalidad cubre ni como se activa.
-- Generacion de texto general, razonamiento complejo, codigo, matematicas, tool calling y uso como agente: no disponible / no declarado.
-- Ejecucion local: todas las cuantizaciones GGUF permiten inferencia offline en CPU o GPU de gama baja mediante llama.cpp y derivados.
+- Toma de decisiones medicas en frances con calibracion de probabilidades.
+- Generacion de texto conversacional (etiqueta conversational en el repositorio).
+- Capacidades multimodales potenciales, segun la presencia de ficheros mmproj (multi-modal supplement); el alcance exacto no esta disponible.
+- Especializacion en el dominio sanitario y en tareas de decision.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al frances segun la etiqueta de idioma.
+- Modo thinking: no disponible en la informacion proporcionada.
+- Vision, audio: no disponible en la informacion proporcionada (los mmproj sugieren vision, sin confirmacion).
 
 ## Casos de uso
 
-- Triaje clinico automatizado en frances: el modelo puede clasificar sintomas o motivos de consulta en categorias de urgencia, aprovechando su ajuste especifico sobre datos medicos franceses y su calibracion de confianza para marcar los casos dudosos para revision humana.
-- Pretriage en servicios de atencion telefonica sanitaria: integrado en un sistema que transcriba la llamada y consulte al modelo por una recomendacion de derivacion (urgencias, consulta programada, autocuidado), con latencia muy baja por su tamano reducido.
-- Enrutado de consultas en chatbots medicos: uso como clasificador previo que decide a que especialista o a que flujo conversacional derivar una consulta escrita en frances.
-- Anotacion asistida de corpus clinicos: preetiquetado de registros medicos en frances para revision posterior por personal sanitario, reduciendo el coste de anotacion manual.
-- Investigacion sobre calibracion y decision tipo "system-one": el modelo sirve como banco de pruebas reproducible para estudiar tecnicas de calibracion en modelos pequenos del dominio medico.
-- Despliegue en dispositivo de borde o entorno sin conectividad: al caber en unas pocas decenas o centenas de megabytes, puede ejecutarse en un portatil clinico, una tableta o un equipo industrial aislado de red, cumpliendo requisitos de soberania de datos.
-- Filtrado y moderacion de contenido en plataformas sanitarias francesas: deteccion de mensajes que requieren intervencion profesional inmediata frente a consultas informativas.
+- Triaje clinico asistido: el modelo puede emitir decisiones calibradas sobre la urgencia de un caso a partir de una descripcion en frances, aprovechando su entrenamiento especifico en decisiones medicas y su objetivo de calibracion para priorizar pacientes en entornos con recursos limitados.
+- Apoyo a la decision diagnostica: integrado en un sistema de ayuda al clinico, puede generar recomendaciones con probabilidades calibradas que el profesional revise antes de actuar, reduciendo el riesgo de sesgo en la interpretacion.
+- Inferencia local en entornos sanitarios con privacidad estricta: al ocupar entre 0,5 y 1,7 GB en GGUF, puede ejecutarse en portatiles o estaciones de trabajo sin GPU dedicada mediante llama.cpp, manteniendo los datos de pacientes fuera de la nube.
+- Clasificacion de informes medicos en frances: el modelo puede procesar textos clinicos y emitir decisiones estructuradas (por ejemplo, derivar o no derivar a especialista), adecuado por su especializacion en el idioma y el dominio.
+- Prototipado rapido de asistentes medicos en frances: gracias a su tamano reducido y licencia Apache 2.0, sirve para validar flujos conversacionales y de decision antes de escalar a modelos mayores.
+- Educacion y formacion medica: puede emplearse como generador de casos con decisiones calibradas para simulaciones, aunque con supervision humana obligatoria dada su naturaleza de modelo pequeno.
+- Despliegue en dispositivos edge: su cuantizacion Q4_K_S (0,6 GB) permite ejecutarlo en dispositivos con poca memoria, como tablets o sistemas embebidos, para aplicaciones de decision medica en campo.
 
 ## Benchmarks y rendimiento
 
@@ -55,45 +55,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: inferior a 1 GB en cualquier cuantizacion para un modelo de 100 M de parametros. Las variantes Q2_K, Q3_K_S y Q4_K_S ocupan del orden de decenas de megabytes; F16 se situa en torno a 200 MB. El repositorio completo ocupa 0,3 GB, incluidos los ficheros `mmproj`.
-- GPU recomendadas: cualquier GPU consumer sirve; una RTX 3060, RTX 4060 o incluso una GPU integrada son suficientes. No se requieren A100 ni H100.
-- Cabe en GPU consumer: si, en cualquier modelo actual, y tambien en CPU pura, Raspberry Pi o dispositivos moviles.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, text-generation-webui (llama.cpp) para los ficheros GGUF; vLLM o TGI si se parte del modelo base en safetensors; transformers para el modelo original.
-- Latencia y throughput estimados: no disponibles. Dado el tamano, en CPU moderna deberia alcanzar decenas de tokens por segundo, pero no hay mediciones publicadas en la informacion proporcionada.
-- Nota: se incluyen ficheros `mmproj` (Q8_0 de 0,2 GB y F16 de 0,3 GB) para un componente multimodal; su uso requiere un runtime con soporte de proyeccion multimodal.
+- VRAM estimada para inferencia: aproximadamente 0,5 GB (Q2_K) hasta 1,7 GB (f16); con overhead de contexto, entre 1 y 3 GB en la practica.
+- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM; RTX 3060, RTX 4060, GTX 1660 o superiores son suficientes. En GPUs profesionales (A100, H100) el modelo estaria sobredimensionado en recursos.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna e incluso en CPU.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el repositorio indica endpoints_compatible. Para el modelo base en safetensors, transformers.
+- Latencia y throughput estimados: no disponibles; por el tamano (menos de 1.000 millones de parametros), se espera una latencia baja en CPU y muy baja en GPU, aunque no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| mradermacher/docto-decision-qwen3.5-0.8b-fr-v0.1-GGUF | 100.592.896 (segun safetensors del base) | no disponible | apache-2.0 | GGUF, 12 tipos de cuantizacion | Cuantizacion estatica del modelo base |
-| bofenghuang/docto-decision-qwen3.5-0.8b-fr-v0.1 | mismo modelo base | no disponible | apache-2.0 | safetensors / transformers | Modelo original con adaptador LoRA; referencia para comparar fidelidad de las cuantizaciones |
-| Modelos medicos franceses de mayor tamano (por ejemplo, variantes de BioMistral o DrBERT) | 7B o superior en la mayoria de casos | no disponible | variable | variable | Alternativas mas capaces en lenguaje general, pero no ejecutables en hardware de gama baja; comparacion de rendimiento no disponible |
+| docto-decision-qwen3.5-0.8b-fr-v0.1-GGUF | 772.845.888 | no disponible | Apache 2.0 | GGUF | Especializado en decisiones medicas en frances |
+| Modelo base bofenghuang/docto-decision-qwen3.5-0.8b-fr-v0.1 | 772.845.888 | no disponible | Apache 2.0 | safetensors | Version sin cuantizar del mismo modelo |
+| Alternativas genericas de ~0,8B (por ejemplo, Qwen3.5 0.8B base) | ~800 millones | no disponible | segun modelo | safetensors/GGUF | Proposito general, sin especializacion medica ni francesa |
 
-No se dispone de datos de rendimiento que permitan una comparacion cuantitativa entre estas opciones.
+No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada. La comparativa se limita a parametros, licencia y formato; los datos de contexto y benchmarks no estan disponibles.
 
 ## Limitaciones y advertencias
 
-- Ambito muy restringido: es un modelo de decision medica en frances, no un asistente generalista; usarlo para generacion abierta, codigo o conversacion general producira resultados pobres.
-- Tamano muy reducido: con unos 100 M de parametros, su conocimiento factual y su capacidad de razonamiento son limitados en comparacion con modelos de 7B o superiores.
-- Discrepancia en el nombre: el identificador indica "0.8b" pero el recuento real de parametros es de aproximadamente 0,1 mil millones; conviene verificar el modelo base antes de integrarlo en produccion.
-- Longitud de contexto no documentada: no se puede garantizar el comportamiento con entradas largas.
-- Riesgo de alucinacion: inherente a cualquier modelo de lenguaje; en un contexto clinico es especialmente critico y exige supervision profesional y validacion externa.
-- Sesgos: no se documenta la composicion del dataset de entrenamiento, por lo que no se pueden evaluar sesgos demograficos, geograficos ni de subrepresentacion de patologias.
-- Monolinguee: solo se declara frances; el comportamiento en castellano u otros idiomas no esta garantizado.
-- Uso clinico: no hay validacion regulatoria ni datos de evaluacion publicados; no debe emplearse como dispositivo medico ni como sustituto del juicio profesional.
-- Licencia apache-2.0: permite uso comercial y modificacion, pero se heredan las condiciones del modelo base; conviene revisar tambien la licencia del repositorio original.
-- Soporte multimodal incierto: la presencia de ficheros `mmproj` sugiere vision, pero no se documenta que modalidad ni como usarla.
-- Cuantizaciones de baja calidad (Q2_K) pueden degradar de forma notable la calibracion, que es precisamente el objetivo del modelo; se recomienda Q5_K_M o superior para tareas de decision.
+- Modelo de muy pequeno tamano (menos de 1.000 millones de parametros): capacidad de razonamiento limitada en comparacion con modelos mayores; no debe usarse como unico criterio en decisiones clinicas reales.
+- Riesgo de alucinacion: como todo modelo generativo, puede producir decisiones o justificaciones incorrectas; la calibracion declarada no elimina este riesgo.
+- Sesgos conocidos: no documentados en la informacion disponible; el entrenamiento en un unico dominio e idioma puede introducir sesgos especificos no evaluados.
+- Limitaciones de idioma: solo soporta frances segun la etiqueta de idioma; no se garantiza un rendimiento adecuado en castellano u otros idiomas.
+- Limitaciones de contexto: la longitud de contexto no esta disponible, lo que impide evaluar su idoneidad para documentos clinicos largos.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo esta orientado a decisiones medicas; el uso en produccion sanitaria requiere validacion regulatoria y supervision profesional.
+- Caveat de produccion: la cuantizacion puede degradar la calibracion de las probabilidades, que es precisamente la caracteristica central del modelo; se recomienda validar la calibracion tras cuantizar.
+- No se documentan evaluaciones de seguridad ni de sesgo clinico; su uso en entornos reales de salud debe acompanarse de auditoria.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/docto-decision-qwen3.5-0.8b-fr-v0.1-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/docto-decision-qwen3.5-0.8b-fr-v0.1-GGUF
 - Modelo base: https://huggingface.co/bofenghuang/docto-decision-qwen3.5-0.8b-fr-v0.1
 - Dataset de entrenamiento: https://huggingface.co/datasets/bofenghuang/docto-decision-data-fr-v0.1
-- Pagina de resumen y descargas del autor: https://hf.tst.eu/model#docto-decision-qwen3.5-0.8b-fr-v0.1-GGUF
-- Solicitudes de cuantizacion y preguntas frecuentes: https://huggingface.co/mradermacher/model_requests
-- Guia general de uso de GGUF (referencia citada en la model card): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Analisis de tipos de cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Entidad responsable de la cuantizacion: https://www.nethype.de/
-- Paper, blog o demo oficial del modelo base: no disponible
+- Pagina de resumen del cuantizador: https://hf.tst.eu/model#docto-decision-qwen3.5-0.8b-fr-v0.1-GGUF
+- Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizacion de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de modelos del cuantizador: https://huggingface.co/mradermacher/model_requests

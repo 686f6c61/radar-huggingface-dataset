@@ -2,72 +2,86 @@
 
 ## Resumen
 
-AlayaWorld v1.1 — Stage3 es un modelo de generación de video (image-to-video) desarrollado por AlayaLab, presentado como un "world model" (modelo de mundo) capaz de generar secuencias video realistas a partir de una imagen inicial. Esta versión concreta es un estudiante destilado mediante DMD (Distribution Matching Distillation) que reduce la inferencia a 4 pasos, permitiendo un uso en tiempo real. Se implementa como un LoRA (rango 256) que se aplica sobre el modelo teacher autoregresivo AlayaWorld-v1.1-stage2b, junto con un encoder de historial de frames comprimido.
+AlayaWorld v1.1-stage3 es un estudiante destilado de generación de vídeo image-to-video desarrollado por AlayaLab. Se trata de un LoRA de destilación DMD (Distribution Matching Distillation) de rango 256 que se monta sobre el profesor autorregresivo AlayaWorld v1.1-stage2b, permitiendo inferencia en tan solo 4 pasos. El modelo se enmarca en la categoría de "world models" aplicados a vídeo, es decir, modelos que aprenden la dinámica temporal de una escena para predecir fotogramas coherentes a partir de una imagen inicial.
 
-El modelo se distribuye bajo la licencia comunitaria LTX-2 (LTX-2 Community License Agreement) y el repositorio ocupa 2.7 GB, incluyendo el adaptador LoRA (2.5 GB) y el history encoder (33 MB). Su relevancia radica en la combinación de destilación de pocos pasos con arquitectura de modelo de mundo, lo que podría habilitar aplicaciones de generación de video interactiva y simulación en tiempo real, aunque los detalles técnicos completos (parámetros totales, contexto, idiomas) no se han publicado en la información disponible.
+La relevancia de esta etapa radica en la reducción drástica del coste de inferencia: pasar de un modelo profesor autorregresivo a un estudiante de 4 pasos hace viable la generación de vídeo en tiempo casi real, un requisito habitual en pipelines interactivos. El repositorio ocupa 2,7 GB e incluye únicamente los pesos del LoRA (2,5 GB) y un codificador de historial de fotogramas comprimido (33 MB), por lo que no es autónomo: requiere descargar el profesor stage2b como base.
 
-## Especificaciones técnicas
+La arquitectura subyacente es de tipo difusión (pipeline `AlayaWorldPipeline` en diffusers), con un componente autorregresivo para el modelado de la historia de fotogramas. La licencia es la LTX-2 Community License Agreement, heredada del ecosistema Lightricks LTX-2, lo que condiciona el uso comercial. No se especifican idiomas soportados ni longitud de contexto en la información disponible.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de video, probablemente transformer, sin especificar) |
+| Arquitectura | Difusión image-to-video con profesor autorregresivo y estudiante destilado DMD (LoRA) |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (solo safetensors sin cuantizar) |
-| Idiomas soportados | no disponibles |
-| Licencia | LTX-2 Community License Agreement |
-| Formato de pesos | safetensors (lora.safetensors) y history_encoder.pt |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible |
+| Licencia | LTX-2 Community License Agreement (license: other) |
+| Formato de pesos | safetensors (LoRA, rango 256) y PyTorch (.pt para el codificador de historial) |
 
 ## Arquitectura y entrenamiento
 
-La model card indica que este modelo es un "estudiante de pocos pasos" (4-step) obtenido mediante destilación DMD sobre el teacher autoregresivo AlayaWorld-v1.1-stage2b. La destilación se materializa como un LoRA de rango 256 que se añade al modelo base, y se complementa con un history encoder que comprime el historial de frames para condicionar la generación. No se proporcionan detalles sobre la arquitectura interna del teacher (número de capas, tipo de atención, etc.) ni sobre el dataset de entrenamiento, el número de tokens o el proceso de alineación (RLHF/DPO). La referencia a los papers (arXiv 2607.06291, 2607.18367 y 2608.13492) sugiere que la metodología completa está documentada en esas publicaciones, pero no se incluyen en la información facilitada.
+El modelo es un estudiante de destilación por coincidencia de distribuciones (DMD) construido sobre un profesor autorregresivo (stage2b). La generación se articula en un pipeline de difusión para image-to-video que incorpora un codificador de historial de fotogramas comprimido (`history_encoder.pt`, 33 MB), encargado de resumir los fotogramas previos para mantener la coherencia temporal. El estudiante se materializa como un LoRA de rango 256 (2,5 GB) que modifica los pesos del profesor para permitir muestreo en 4 pasos.
+
+No se dispone de datos sobre el volumen de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron técnicas de RLHF o DPO; la model card solo indica el proceso de destilación DMD y la dependencia del profesor stage2b. La innovación técnica destacable es precisamente la destilación few-step (4 pasos) orientada a inferencia en tiempo real, junto con el codificador de historial comprimido que reduce el coste de mantener contexto visual a lo largo de la secuencia.
 
 ## Capacidades
 
-- Generación de video a partir de una imagen de entrada (image-to-video).
-- Inferencia en 4 pasos gracias a la destilación DMD, orientada a tiempo real.
-- Uso de un history encoder para mantener coherencia temporal entre frames.
-- No se documentan capacidades de tool calling, agentes, razonamiento multilingüe ni otras modalidades (audio, texto, etc.) en la información disponible.
+- Generación de vídeo a partir de una imagen (image-to-video) con control de cámara, según el config de inferencia `infer_i2v_camera.yaml`.
+- Inferencia en 4 pasos gracias a la destilación DMD, orientada a escenarios de baja latencia.
+- Modelado de mundo ("world model"): mantiene coherencia temporal mediante un codificador de historial de fotogramas.
+- Integración con la librería diffusers a través de `AlayaWorldPipeline`.
+- Soporte de ajuste fino y validación mediante los scripts del repositorio oficial (`scripts/finetune/train.sh`).
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión general, audio ni modo thinking.
 
 ## Casos de uso
 
-- Prototipado rápido de vídeo: a partir de una imagen fija, generar una secuencia corta para previsualizar escenas en producción audiovisual o diseño.
-- Simulación de entornos para robótica o videojuegos: el modelo de mundo puede generar trayectorias visuales condicionadas por la imagen inicial, útil para entrenar agentes en entornos sintéticos.
-- Aumento de datos visuales: crear variaciones de vídeo a partir de imágenes etiquetadas para entrenar otros modelos de visión.
-- Asistencia creativa en animación: generar movimiento básico a partir de un fotograma clave, como paso previo a la intervención humana.
-- Demostraciones interactivas en tiempo real: gracias a los 4 pasos de inferencia, podría integrarse en aplicaciones que requieran respuesta inmediata a la entrada del usuario.
-- Investigación en modelos de mundo: servir como base para estudiar destilación de pocos pasos y generación autoregresiva de vídeo.
-
-Nota: estos casos son inferencias razonables basadas en la naturaleza del modelo (image-to-video y world model), pero no están explícitamente documentados por el autor en la información proporcionada.
+- Previsualización interactiva de vídeo: el estudiante de 4 pasos permite generar clips cortos a partir de una imagen con latencia reducida, adecuado para herramientas de storyboard donde el usuario itera sobre la marcha.
+- Simulación de trayectorias de cámara: el config `infer_i2v_camera.yaml` sugiere control explícito de movimiento de cámara, útil para previsualizar planos en producción audiovisual.
+- Prototipado de videojuegos y entornos sintéticos: un world model que predice fotogramas coherentes sirve para generar secuencias de referencia antes de invertir en renderizado en tiempo real.
+- Investigación en destilación de modelos de difusión: el par profesor/estudiante y el LoRA DMD son un caso de estudio reproducible para experimentos de few-step sampling.
+- Ajuste fino sobre dominios verticales: al ser un LoRA sobre el profesor, equipos con datos propios pueden adaptar el estudiante manteniendo el coste de inferencia bajo.
+- Generación de material de demostración y contenido editorial: clips image-to-video para piezas cortas donde prima el coste por fotograma sobre la fidelidad máxima.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Los papers referenciados podrían contener evaluaciones cuantitativas, pero no se incluyen en la model card ni en los metadatos del repositorio.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- No se especifican requisitos de VRAM, GPU recomendadas ni opciones de despliegue en la información disponible.
-- El adaptador LoRA (2.5 GB) se aplica sobre el modelo base stage2b, cuyos requisitos de memoria no se indican. Se necesitaría cargar tanto el teacher como el LoRA en memoria, por lo que se requerirá una GPU con suficiente VRAM para el modelo base (probablemente una GPU de gama alta, pero sin datos concretos).
-- No se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI; el repositorio de GitHub (AlayaLab/AlayaWorld) incluye scripts de entrenamiento e inferencia, pero no se detalla el runtime.
+- VRAM estimada para inferencia: no disponible de forma explícita; el repositorio pesa 2,7 GB, pero la inferencia requiere además cargar el profesor stage2b como base, por lo que el consumo real es sustancialmente mayor.
+- GPU recomendadas: no disponible.
+- Compatibilidad con GPU de consumo: no confirmada en la información proporcionada.
+- Opciones de despliegue: pipeline `AlayaWorldPipeline` de diffusers y scripts de entrenamiento/validación del repositorio oficial de AlayaLab; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (herramientas orientadas a modelos de lenguaje, no aplicables directamente aquí).
+- Latencia y throughput: solo se indica inferencia en 4 pasos y orientación a tiempo real; no se aportan cifras de latencia ni de fotogramas por segundo.
 
 ## Comparativa con modelos similares
 
-No disponible. No se proporcionan comparaciones con otros modelos de generación de video (como Sora, Stable Video Diffusion, etc.) en la información facilitada.
+| Modelo | Tipo | Pasos de inferencia | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| AlayaWorld v1.1-stage3 | Estudiante DMD (LoRA) sobre profesor AR | 4 | LTX-2 Community License | Hugging Face (requiere stage2b) |
+| AlayaWorld v1.1-stage2b | Profesor autorregresivo | no disponible | LTX-2 Community License | Hugging Face |
+| LTX-2 (Lightricks) | Difusión de vídeo | no disponible | LTX-2 Community License | Ecosistema Lightricks |
+
+No se dispone de datos de rendimiento comparado con alternativas de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia comunitaria LTX-2: aunque permite uso comunitario, es necesario revisar el texto completo de la licencia en el enlace proporcionado para conocer restricciones específicas de uso comercial o modificación.
-- No se documentan sesgos, riesgos de alucinación visual ni limitaciones de contexto o idioma en la model card.
-- El modelo es un adaptador LoRA que requiere el teacher stage2b para funcionar; no es un modelo independiente.
-- No se especifica la resolución máxima de video generado, duración de las secuencias ni requisitos de memoria, lo que dificulta la planificación de despliegues en producción.
-- La fecha de creación (agosto de 2026) y los números de arXiv (2607.xxxx) sugieren que es un modelo muy reciente; la comunidad aún no ha reportado experiencias de uso extensivas.
+- El repositorio no es autónomo: requiere descargar el profesor `AlayaLab/AlayaWorld-v1.1-stage2b` como base, lo que duplica el espacio en disco y complica el despliegue.
+- La licencia LTX-2 Community License Agreement impone condiciones específicas; debe revisarse antes de cualquier uso comercial.
+- No se documentan idiomas soportados, sesgos conocidos ni tasas de alucinación; al tratarse de generación de vídeo, el riesgo principal es la deriva temporal y la inconsistencia visual en secuencias largas.
+- La ventana de contexto (número de fotogramas de historial) no está especificada, lo que limita la planificación de memoria en producción.
+- No hay benchmarks publicados que permitan validar la calidad frente a alternativas.
+- El uso de solo 4 pasos de muestreo puede implicar una pérdida de fidelidad frente al profesor en escenas complejas; no se cuantifica en la información disponible.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/AlayaLab/AlayaWorld-v1.1-stage3
-- Repositorio GitHub de AlayaLab: https://github.com/AlayaLab/AlayaWorld
-- Paper intro: https://arxiv.org/abs/2607.06291
-- Paper full: https://arxiv.org/abs/2607.18367
-- Paper v1.1: https://arxiv.org/abs/2608.13492
+- Modelo en Hugging Face: https://huggingface.co/AlayaLab/AlayaWorld-v1.1-stage3
+- Profesor base (stage2b): https://huggingface.co/AlayaLab/AlayaWorld-v1.1-stage2b
+- Repositorio oficial: https://github.com/AlayaLab/AlayaWorld
+- Informe introductorio: https://arxiv.org/abs/2607.06291
+- Informe completo: https://arxiv.org/abs/2607.18367
+- Informe v1.1: https://arxiv.org/abs/2608.13492
 - Licencia LTX-2: https://github.com/Lightricks/LTX-2/blob/main/LICENSE

@@ -2,96 +2,106 @@
 
 ## Resumen
 
-Zamba2-1.2B-instruct es un modelo de lenguaje de 1.200 millones de parámetros desarrollado por Zyphra, con una arquitectura híbrida que combina un backbone Mamba2 de selective-scan (32 capas) con un único bloque transformer compartido aplicado en seis posiciones intercaladas, cada una especializada mediante adaptadores LoRA. Esta conversión concreta, publicada por litert-community, adapta el modelo original al formato LiteRT-LM (`.litertlm`) para inferencia on-device con el runtime de Google LiteRT-LM, siendo la primera conversión de Zamba2 a un runtime móvil.
+Zamba2-1.2B-instruct es un modelo de lenguaje de 1.200 millones de parametros desarrollado originalmente por Zyphra, basado en una arquitectura hibrida que combina un backbone Mamba2 (selective-scan) con un unico bloque transformer de atencion compartida. Esta ficha concreta corresponde a la conversion realizada por la comunidad litert-community al formato LiteRT-LM (`.litertlm`), pensada para inferencia on-device en dispositivos moviles y edge con el runtime de Google LiteRT-LM.
 
-El modelo resuelve el problema de ejecutar LLMs con baja latencia en dispositivos edge (móviles, tablets, portátiles) sin depender de la nube, manteniendo una calidad competitiva frente a modelos de mayor tamaño. Su relevancia actual radica en la creciente demanda de asistentes locales privados y eficientes, donde la combinación de Mamba2 (eficiencia en decodificación) con atención compartida (calidad de razonamiento) ofrece un equilibrio atractivo. La conversión incluye optimizaciones como el plegado del selective-scan en matmuls por lotes, manejo específico del clamp de dt y una capa de caché híbrida compuesta, lo que permite delegación completa en GPU móvil.
+El modelo resuelve el problema de ejecutar un LLM con capacidades de instruccion en hardware restringido (smartphones Android, iPhone, Raspberry Pi) sin depender de la nube. Frente a un transformer denso equivalente, la arquitectura hibrida reduce el coste de atencion al reutilizar un solo conjunto de pesos de atencion y MLP en seis posiciones intercaladas, especializadas mediante adaptadores LoRA por posicion. Segun la model card, esta es la primera conversion conocida de Zamba2 a un runtime movil.
+
+La relevancia actual radica en que demuestra que un modelo con backbone de estado (SSM hibrido) puede desplegarse en formato int8 de 1,33 GB y ejecutarse a 11-13 tok/s de decodificacion en un Galaxy S26 o un iPhone 17 Pro, con un TTFT por debajo de 2 segundos en GPU. La licencia Apache 2.0 y el soporte de plantilla ChatML lo hacen apto para integracion comercial en aplicaciones edge.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida: backbone Mamba2 (32 capas selective-scan) + 1 bloque transformer compartido en 6 posiciones con adaptadores LoRA |
-| Parametros totales | 1.200 millones (1.2B) |
+| Arquitectura | Hibrida: backbone Mamba2 selective-scan (32 capas) + un unico bloque transformer de atencion compartida aplicado en 6 posiciones intercaladas, con LoRA por posicion |
+| Parametros totales | 1.200 millones (modelo base Zamba2-1.2B-instruct) |
 | Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 4.096 tokens (4K) |
-| Tipos de cuantizacion | int8 dinámico en linears y embedding; convs y scan en float32; activaciones fp32 declaradas para GPU |
-| Idiomas soportados | No disponible (el modelo base de Zyphra no publica lista oficial; se asume principalmente inglés) |
+| Longitud de contexto | 4096 tokens (segun las KV caches descritas: 32 KV heads x 128 head dim a 4096 de contexto) |
+| Tipos de cuantizacion | int8 dinamico en capas lineales y embedding; convoluciones y scan en float; activaciones fp32 declaradas para GPU |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.litertlm` (formato LiteRT-LM) |
+| Formato de pesos | `.litertlm` (LiteRT-LM); fichero `Zamba2-1.2B-instruct_int8.litertlm` de 1,33 GB |
 
 ## Arquitectura y entrenamiento
 
-Zamba2-1.2B-instruct emplea una arquitectura híbrida innovadora: un backbone de 32 capas Mamba2 (selective-scan) que procesa secuencias de forma recurrente, intercalado con un único bloque transformer compartido (atención + MLP) aplicado en seis posiciones fijas. Este bloque compartido atiende sobre la concatenación del estado oculto recurrente y las embeddings originales, y cada posición utiliza adaptadores LoRA específicos para especializar el comportamiento. Esta configuración reduce drásticamente el número de parámetros de atención frente a un transformer estándar, manteniendo la capacidad de razonamiento.
+Zamba2 emplea un diseno hibrido poco habitual: un backbone Mamba2 de 32 capas con mecanismo selective-scan, sobre el que se aplica un unico bloque transformer (atencion + MLP) en seis posiciones intercaladas dentro de la pila. Los pesos de atencion y MLP se comparten entre esas seis posiciones y se especializan mediante adaptadores LoRA independientes por posicion. La atencion opera sobre la concatenacion del estado oculto corriente y los embeddings originales, lo que aporta acceso directo a la representacion de entrada en cada punto de aplicacion.
 
-El modelo base fue fine-tuned sobre datasets públicos de instrucción y chat (según la documentación de Zyphra), siguiendo un pipeline de ajuste instructivo. La conversión a LiteRT-LM incorpora varias innovaciones técnicas: el selective-scan se reexpresa como matmuls por lotes con ejes de chunk y head plegados en el eje de batch (tensores de rango ≤ 4, sin `BROADCAST_TO`), se aplica un manejo específico del clamp mínimo de dt (sin clamp superior), y se implementa una capa de caché híbrida compuesta que almacena KV, conv y estado recurrente en un único índice de capa. Además, se incluye un guard de prefill-pad que fuerza pasos de identidad exactos en posiciones de padding, y se elimina el decoder `Strip` del tokenizador para streaming de detokenización.
+La model card de esta conversion no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO; esa informacion corresponde al modelo base de Zyphra y no se incluye aqui. La innovacion tecnica destacable de esta ficha es la propia conversion: exportacion a LiteRT-LM con firmas de prefill multi-longitud (1-1024) para que el runtime seleccione chunks ajustados, tokenizer y plantilla ChatML de Zamba2 embebidos en el fichero, y verificacion de equivalencia logit a logit contra el modelo PyTorch original (top-1 y top-5 identicos en 48 posiciones de decodificacion, correlacion media por posicion 1.0000, KL media aproximadamente 0).
 
 ## Capacidades
 
-- Generación de texto: produce texto coherente y contextualmente relevante en inglés (idioma principal no confirmado oficialmente).
-- Razonamiento: capacidad de razonamiento básico y seguimiento de instrucciones gracias al fine-tuning instructivo.
-- Código: puede generar fragmentos de código simples, aunque no se han publicado benchmarks específicos.
-- Matemáticas: resolución de problemas aritméticos y algebraicos básicos (no verificado con benchmarks).
-- Chat multi-turno: soporta conversaciones con plantilla ChatML incluida en el bundle.
-- Inferencia on-device: optimizado para ejecución local en GPU y CPU móvil con baja latencia.
-- No se ha confirmado soporte de tool calling, function calling, agentes multi-step, visión o audio en la información disponible.
+- Generacion de texto e instruccion conversacional en formato ChatML, con plantilla de chat incluida en el fichero.
+- Razonamiento aritmetico basico y de sentido comun a escala de 1.2B; la model card reporta 7/8 en un chequeo de sanidad de ocho preguntas, con un fallo sistematico en comparaciones numericas con decimales ("0.9 vs 0.11").
+- Ejecucion on-device en CPU y GPU (Metal en Apple, GPU Android via LiteRT-LM) con delegacion completa de operadores: 4990 operadores delegados en Galaxy S26.
+- Soporte de prefill por chunks con firmas multi-longitud, lo que permite manejar prompts de distinta extension de forma eficiente.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, vision, audio ni modo thinking en la informacion disponible.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistente personal en el dispositivo: el modelo puede ejecutarse localmente en un smartphone (iPhone 17 Pro, Galaxy S26) para responder preguntas, gestionar recordatorios o mantener conversaciones sin conexión, gracias a su tamaño reducido y la optimización para GPU móvil.
-- Chatbot de atención al cliente en kioscos o terminales: con contexto de 4K tokens, puede mantener conversaciones multi-turno sobre productos o servicios, desplegado en hardware de bajo coste con el runtime LiteRT-LM.
-- Generación de texto offline en aplicaciones de productividad: redacción de correos, resúmenes o borradores directamente en el dispositivo, sin enviar datos a la nube, aprovechando la baja latencia de decodificación (74 tok/s en GPU M4 Max).
-- Asistente de código en entornos de desarrollo integrado (IDE) móvil: autocompletado y generación de funciones simples en editores de código para tablet o portátil, con soporte de prefill rápido (1033 tok/s en GPU).
-- Prototipado de aplicaciones edge con LiteRT-LM: sirve como modelo de referencia para desarrolladores que integran LLMs en apps Android o iOS, gracias a la conversión lista para producción y la documentación de GPU.
-- Sistema de respuestas en tiempo real para dispositivos IoT: al poder ejecutarse en CPU con 22.7 tok/s de decodificación, es viable en dispositivos con recursos limitados para tareas de clasificación de texto o extracción de entidades.
+- Asistentes conversacionales offline en aplicaciones moviles: el modelo cabe en 1,33 GB y corre a 11-13 tok/s de decodificacion en un Galaxy S26 o iPhone 17 Pro, lo que permite respuestas de pocas frases con TTFT inferior a 2 segundos en GPU sin conexion de red.
+- Clasificacion y extraccion de informacion local en el dispositivo: con contexto de 4096 tokens puede procesar correos, notas o formularios completos y devolver campos estructurados sin enviar datos personales a un servidor, lo que simplifica el cumplimiento de RGPD.
+- Automatizacion en Raspberry Pi 5 para domotica o kioscos: a 1,8 tok/s de decodificacion y 24 tok/s de prefill con 4 hilos de CPU, es viable para tareas de respuesta corta y procesamiento por lotes de baja frecuencia.
+- Prototipado rapido de funcionalidades de IA generativa en apps Android: el runtime LiteRT-LM y el formato `.litertlm` permiten integrar el modelo en el APK y probar flujos conversacionales sin infraestructura de inferencia propia.
+- Filtrado y resumen de texto en el borde de la red: resumen de notificaciones, transcripciones cortas o hilos de mensajes directamente en el telefono, reduciendo el consumo de bateria asociado a llamadas de red y el coste por token de API.
+- Educacion y demos de arquitecturas hibridas SSM-transformer: al ser la primera conversion conocida de Zamba2 a un runtime movil, sirve como referencia reproducible para investigadores que quieran medir el comportamiento de un backbone Mamba2 cuantizado a int8 en hardware real.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks académicos (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card reporta métricas de rendimiento de inferencia, que se detallan en la sección de requisitos de hardware. La verificación de corrección indica paridad de logits con el modelo PyTorch original (correlación media 1.0000, KL ≈ 0) y un 8/8 en pruebas de sanity en GPU y CPU.
+Rendimiento de inferencia medido (no hay benchmarks de calidad tipo MMLU, HumanEval o GSM8K en la informacion disponible).
+
+`litert-lm benchmark` en Apple M4 Max, `-p 256 -d 256 --runs 3 --cache no`:
+
+| Backend | Prefill (256) | Decode | TTFT |
+|---|---|---|---|
+| GPU | 1033 tok/s | 74,0 tok/s | 0,26 s |
+| CPU | 450 tok/s | 22,7 tok/s | 0,61 s |
+
+Medido en dispositivo (arranque en frio, ejecuciones unicas):
+
+| Dispositivo | Backend | Prefill | Decode | TTFT | Memoria pico |
+|---|---|---|---|---|---|
+| Galaxy S26 | GPU | 116 tok/s | 11,7 tok/s | 1,94 s | no disponible |
+| Galaxy S26 | CPU | 88 tok/s | 12,2 tok/s | 2,51 s | no disponible |
+| iPhone 17 Pro | GPU (Metal) | 96,6 tok/s | 12,8 tok/s | 1,63 s | 5,43 GB |
+| iPhone 17 Pro | CPU | 87,3 tok/s | 7,4 tok/s | 1,73 s | 1,82 GB |
+| Raspberry Pi 5 | CPU, 4 hilos | 24 tok/s | 1,8 tok/s | 11,10 s | no disponible |
+
+Calidad: coincidencia logit a logit con el modelo PyTorch en 48 posiciones de decodificacion (top-1 y top-5 identicos, correlacion 1.0000, KL aproximadamente 0). Chequeo de sanidad de ocho preguntas: 7/8 en las cuatro ejecuciones (GPU y CPU, litert-lm 0.15.0 y 0.16.0), con el mismo fallo en todas.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el bundle int8 ocupa 1.33 GB en disco; en ejecución, el pico de memoria en iPhone 17 Pro es de 5.43 GB en GPU (con activaciones fp32) y 1.82 GB en CPU. En Galaxy S26 GPU, el pico es de 3.62 GB.
-- GPU recomendadas: Apple M4 Max (GPU integrada) para desarrollo; iPhone 17 Pro (GPU Metal) y Samsung Galaxy S26 (GPU Adreno) para despliegue móvil. También compatible con GPUs de escritorio con soporte LiteRT.
-- Consumer GPU: cabe en GPUs de gama media con al menos 4 GB de VRAM (por ejemplo, RTX 3050 o superior), aunque el objetivo principal es móvil.
-- Opciones de despliegue: runtime LiteRT-LM (versión ≥ 0.15) con backends GPU y CPU; soporte para Android (GPU delegado) y Apple (Metal).
-- Rendimiento medido (Apple M4 Max, litert-lm 0.16.0, prefill 256, decode 256):
-  - GPU: prefill 1033 tok/s, decode 74.0 tok/s, TTFT 0.26 s.
-  - CPU: prefill 450 tok/s, decode 22.7 tok/s, TTFT 0.61 s.
-- Rendimiento en iPhone 17 Pro (cold start):
-  - GPU (Metal): prefill 96.6 tok/s, decode 12.8 tok/s, TTFT 1.63 s, pico 5.43 GB.
-  - CPU: prefill 87.3 tok/s, decode 7.4 tok/s, TTFT 1.73 s, pico 1.82 GB.
+- VRAM/almacenamiento: el fichero int8 ocupa 1,33 GB; la memoria pico medida es de 1,82 GB en CPU de iPhone 17 Pro y 5,43 GB en GPU, esta ultima por las KV caches de las seis posiciones de atencion compartida en fp32.
+- GPU recomendadas: cualquier GPU movil compatible con LiteRT-LM (Metal en Apple, GPU Android); en escritorio, Apple M4 Max alcanza 74 tok/s de decodificacion. No se documentan resultados con A100, H100 o RTX 4090, ya que el objetivo del formato es edge.
+- Consumer GPU: no aplica en el sentido habitual; el modelo esta pensado para telefonos y SBC. Un telefono de 12 GB ejecuta las 12 firmas sin presion de memoria.
+- Opciones de despliegue: exclusivamente LiteRT-LM (version 0.15 o superior) mediante el comando `litert-lm run`. No hay conversion documentada a GGUF, vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
+- Latencia y throughput: TTFT de 1,63-1,94 s en GPU movil y 1,73-2,51 s en CPU movil; 11,7-12,8 tok/s de decodificacion en movil; 1,8 tok/s en Raspberry Pi 5.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks comparativos en la información proporcionada. A continuación se presenta una comparativa cualitativa con otros modelos pequeños de propósito similar, basada en características públicas conocidas:
-
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Formato edge | Licencia | Rendimiento edge documentado |
 |---|---|---|---|---|---|
-| Zamba2-1.2B-instruct (LiteRT) | 1.2B | 4K | Apache 2.0 | .litertlm | Híbrido Mamba2+transformer compartido, optimizado para edge |
-| Qwen2.5-1.5B-Instruct | 1.5B | 32K | Apache 2.0 | safetensors, GGUF | Transformer denso, buen rendimiento en código y multilingüe |
-| Gemma-2-2B-it | 2.6B | 8K | Gemma License | safetensors, GGUF | Transformer denso, fuerte en razonamiento, licencia restrictiva |
-| Phi-3-mini-4k-instruct | 3.8B | 4K | MIT | safetensors, GGUF | Transformer denso, alto rendimiento en razonamiento, mayor tamaño |
+| Zamba2-1.2B-instruct (LiteRT-LM, esta ficha) | 1,2B | 4096 | `.litertlm` int8 | Apache 2.0 | 12,8 tok/s decode en iPhone 17 Pro GPU |
+| Zyphra/Zamba2-1.2B-instruct (original) | 1,2B | no disponible en esta ficha | safetensors (PyTorch) | Apache 2.0 | no orientado a edge |
+| Alternativas edge de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparativa directa de rendimiento no es posible sin datos de benchmarks estandarizados. Zamba2 destaca por su eficiencia en decodificación gracias a Mamba2, mientras que los transformers densos suelen ofrecer mayor calidad por parámetro pero con mayor coste computacional.
+No se dispone en la informacion proporcionada de datos de otros modelos edge comparables (Gemma, Phi, Qwen en variantes moviles) con los que establecer una comparacion cifrada; se indica como no disponible.
 
 ## Limitaciones y advertencias
 
-- Contexto limitado a 4K tokens, insuficiente para documentos largos o conversaciones muy extensas.
-- Idiomas soportados no documentados oficialmente; se asume predominio del inglés, con posible degradación en otros idiomas.
-- Riesgo de alucinación inherente a los modelos de lenguaje, no mitigado específicamente en esta versión.
-- La ejecución en GPU móvil requiere activaciones fp32, lo que multiplica el uso de memoria (5.43 GB en iPhone 17 Pro) frente a CPU (1.82 GB).
-- En pruebas compuestas largas, el backend GPU puede diferir del CPU en preguntas límite, aunque ambos siguen el comportamiento del modelo de referencia.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo base de Zyphra puede tener restricciones adicionales no documentadas en esta conversión.
-- No se han publicado evaluaciones de sesgos o seguridad; se recomienda auditar antes de uso en producción.
+- Riesgo de error aritmetico: el chequeo de sanidad falla de forma consistente en la comparacion "0.9 vs 0.11", respondiendo que 0.11 es mayor. No debe usarse para calculo numerico fiable sin verificacion externa.
+- Alucinacion: a escala de 1.2B el riesgo de afirmaciones incorrectas con tono seguro es alto; la model card documenta que el propio modelo de referencia fp32 falla en preguntas de la prueba compuesta (multiplicacion 8x7 y rima), lo que indica limites del modelo base, no solo de la cuantizacion.
+- Gestion de estado entre conversaciones: en litert-lm 0.18.0, reutilizar un Engine para una segunda conversacion reutiliza tokens de prompt compartidos y no reinicia el estado recurrente (issue abierto #3165). Se debe crear un Engine nuevo por conversacion. Existe un fix en main desde el 2026-11-03, pero ninguna release lo incorpora (v0.19.1 no lo incluye).
+- Ruta GPU en Android: la model card remite a "Known runtime issues" para el camino GPU en Android; el fichero fue reempaquetado el 2026-11-09 y las mediciones en Galaxy S26 son anteriores a ese reempaquetado.
+- Memoria en GPU: las activaciones fp32 declaradas implican un multiplo de memoria frente a CPU; en dispositivos con menos de 12 GB puede haber presion con las 12 firmas completas.
+- Idiomas: no se documenta cobertura multilingue; asumir uso principal en ingles salvo validacion propia.
+- Licencia: Apache 2.0 permite uso comercial, pero se heredan las condiciones del modelo base Zyphra, que deben verificarse en su repositorio.
+- Madurez: el runtime LiteRT-LM esta en versiones 0.15-0.19 y presenta cambios de comportamiento entre releases; fijar la version en produccion.
 
 ## Enlaces
 
-- Repositorio Hugging Face de la conversión: https://huggingface.co/litert-community/Zamba2-1.2B-instruct
-- Modelo base en Hugging Face: https://huggingface.co/Zyphra/Zamba2-1.2B-instruct
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/litert-community/Zamba2-1.2B-instruct
+- Modelo base: https://huggingface.co/Zyphra/Zamba2-1.2B-instruct
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
-- Herramienta de conversión litert-torch: https://github.com/google-ai-edge/litert-torch
-- Scripts de conversión y parche (hf-to-litertlm): https://github.com/john-rocky/hf-to-litertlm
-- Guía de GPU para Android: https://github.com/john-rocky/hf-to-litertlm/blob/main/docs/android-gpu.md
-- Análisis del modelo en dev.co: https://dev.co/ai/llms/zamba2-1-2b-instruct
-- Ficha en LLM Explorer: https://llm-explorer.com/model/Zyphra%2FZamba2-1.2B-instruct,518lykr5sa9ZY8QILS96IZ
-- Ficha en LLM Reference: https://www.llmreference.com/model/zamba2-1.2b-instruct
+- Informe de compatibilidad edge (edge-compat): https://github.com/john-rocky/edge-compat/blob/main/cards/zamba2-1.2b-instruct-int8/CARD.md
+- Issue de estado entre conversaciones: https://github.com/google-ai-edge/LiteRT-LM/issues/3165
+- Commit con el fix de estado (2026-11-03): https://github.com/google-ai-edge/LiteRT-LM/commit/e1f86b05bf8a731331622a2622440e9f93d9a9f5

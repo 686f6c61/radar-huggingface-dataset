@@ -2,90 +2,87 @@
 
 ## Resumen
 
-`mradermacher/granite-vision-4.1-4b-i1-GGUF` es una cuantizacion en formato GGUF del modelo `ibm-granite/granite-vision-4.1-4b` de IBM, publicada por el usuario mradermacher (nethype GmbH). No se trata de un modelo original, sino de una redistribucion optimizada para inferencia local: el autor aplica cuantizacion con imatrix (importance matrix) sobre los pesos originales en safetensors para producir ficheros GGUF de distintos tamanos y precisiones, pensados para ejecutarse con llama.cpp y herramientas compatibles.
+Granite-vision-4.1-4b-i1-GGUF es una recopilación de cuantizaciones en formato GGUF del modelo multimodal ibm-granite/granite-vision-4.1-4b, publicada por el usuario mradermacher. El modelo original lo desarrolla IBM dentro de su familia Granite, orientada a tareas empresariales, y combina un codificador visual con un modelo de lenguaje de aproximadamente 3.400 millones de parámetros (3.402.836.480 según los pesos en safetensors). Esta versión GGUF permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles, algo imposible con los pesos originales en precisión completa.
 
-El modelo base es un modelo multimodal de vision-lenguaje de IBM perteneciente a la familia Granite Vision 4.1, con aproximadamente 4.000 millones de parametros (el dato de safetensors del repo cuantizado indica 1.887.800, cifra que no es coherente con el nombre del modelo y que probablemente refleje solo un subconjunto de tensores o un error de metadatos). La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+La relevancia de esta ficha radica en que ofrece cuantizaciones con calibración imatrix (etiquetadas i1), desde IQ1_S (0,9 GB) hasta Q6_K (2,9 GB), lo que permite desplegar un modelo de visión-lenguaje en GPUs de gama media e incluso en CPU. El repositorio tiene 925 descargas y licencia Apache 2.0, lo que facilita su uso comercial sin restricciones adicionales.
 
-La relevancia de esta ficha radica en que ofrece una via practica para desplegar un modelo de vision de 4B en hardware de consumo, algo que el modelo original en precision completa no permite de forma tan sencilla. Sin embargo, la informacion publicada en la model card es muy escasa: se limita a listar los tipos de cuantizacion disponibles y a remitir al repositorio estatico para los ficheros mmproj necesarios para el procesamiento de imagenes.
+No obstante, conviene subrayar que esta publicación es una derivación: no aporta arquitectura ni entrenamiento propios, sino una conversión a GGUF del modelo de IBM. La información disponible sobre el modelo base en esta ficha es limitada y se indica como "no disponible" cuando no se ha podido confirmar.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base: transformer multimodal vision-lenguaje, familia Granite Vision 4.1) |
-| Parametros totales | ~4B (segun nombre del modelo); el repo cuantizado declara 1.887.800 en safetensors, dato no coherente |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | no disponible (modelo multimodal visión-lenguaje; el repositorio no detalla la arquitectura interna) |
+| Parámetros totales | 3.402.836.480 |
+| Parámetros activos | no disponible (no es un modelo MoE según la información disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ4_XS, IQ4_NL (small) |
-| Idiomas soportados | en |
+| Tipos de cuantización | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-IQ4_NL, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (además de un fichero imatrix para generar cuantizaciones propias) |
+| Idiomas soportados | en (inglés) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizado con imatrix); fichero imatrix incluido; mmproj en repositorio estatico |
+| Formato de pesos | GGUF (con ficheros mmproj para la parte visual en el repositorio estático) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base `ibm-granite/granite-vision-4.1-4b` en la informacion proporcionada. Por el nombre y la familia a la que pertenece, se trata de un modelo multimodal que combina un codificador de vision con un modelo de lenguaje de la familia Granite de IBM, pero no se especifican el tipo de transformer, el mecanismo de atencion, la composicion del dataset de entrenamiento, el numero de tokens vistos ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
+La información proporcionada no detalla la arquitectura interna del modelo base ibm-granite/granite-vision-4.1-4b. Por la denominación "vision" y el pipeline multimodal implícito, se trata de un modelo que procesa imágenes y texto, presumiblemente mediante un codificador visual acoplado a un transformer de lenguaje, pero no se confirman ni el tipo exacto de codificador, ni la estrategia de fusión, ni el número de tokens de entrenamiento, ni la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. Todos estos datos deben considerarse "no disponible" a partir de la información consultada.
 
-Respecto al proceso de cuantizacion, la model card indica que se han generado cuantizaciones ponderadas con imatrix (importance matrix) a partir de los pesos originales en formato Hugging Face. El autor incluye un fichero `.imatrix.gguf` para que otros usuarios puedan generar sus propias cuantizaciones. Se listan tanto cuantizaciones estaticas (en el repositorio `granite-vision-4.1-4b-GGUF`) como cuantizaciones i1 (este repositorio), que suelen ofrecer mejor calidad por bit que las estaticas equivalentes. Los ficheros mmproj, necesarios para procesar imagenes con llama.cpp, se alojan en el repositorio estatico, no en este.
+Lo que sí documenta esta publicación es el proceso de cuantización: mradermacher ha generado cuantizaciones ponderadas con imatrix (fichero granite-vision-4.1-4b.imatrix.gguf) a partir del modelo en formato Hugging Face, con conversión de tipo hf y cuantización de tensores de salida. Las cuantizaciones i1 emplean información de importancia (imatrix) para preservar mejor la calidad en bits bajos. Los ficheros mmproj necesarios para la parte visual se alojan en el repositorio estático hermano (mradermacher/granite-vision-4.1-4b-GGUF), no en este repositorio i1.
 
 ## Capacidades
 
-- Generacion de texto y comprension de lenguaje natural en ingles.
-- Procesamiento de imagenes (vision-lenguaje): el modelo base es multimodal y requiere ficheros mmproj para el codificador visual.
-- Razonamiento visual basico y respuesta a preguntas sobre imagenes (capacidad inferida del tipo de modelo; no detallada en la model card).
-- No se documenta soporte explicito de tool calling ni function calling en la informacion disponible.
-- No se documenta soporte de agentes ni razonamiento multi-paso en la informacion disponible.
-- Capacidades multilingues limitadas al ingles segun el campo `language`.
-- No se documenta modo thinking, audio ni otras capacidades especiales.
+- Generación de texto y conversación multi-turno (etiqueta "conversational" en el repositorio).
+- Procesamiento de imágenes: es un modelo de visión, por lo que acepta entradas visuales junto con texto, aunque la información disponible no detalla tareas concretas (VQA, OCR, captioning) ni su rendimiento.
+- Compatibilidad con endpoints (etiqueta "endpoints_compatible").
+- Capacidades multilingües limitadas al inglés según la model card (language: en).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Modo "thinking", audio u otras capacidades especiales: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- **Despliegue local de un modelo de vision en hardware de consumo**: gracias a las cuantizaciones Q4_K_M e IQ4_XS, el modelo puede ejecutarse en GPUs consumer con 8-12 GB de VRAM, permitiendo prototipado de aplicaciones de vision sin depender de APIs en la nube.
-- **Analisis de documentos e imagenes en entornos con requisitos de privacidad**: al ejecutarse localmente con llama.cpp, los datos no salen del dispositivo, lo que resulta adecuado para sectores regulados (sanidad, legal, administracion publica) que necesitan procesar imagenes confidenciales.
-- **Extraccion de informacion de capturas y formularios**: el modelo puede recibir una imagen y responder preguntas en ingles sobre su contenido, util para pipelines de digitalizacion de documentos y clasificacion de imagenes.
-- **Asistentes de accesibilidad**: descripcion de imagenes para usuarios con discapacidad visual, ejecutandose en estaciones de trabajo locales con GPU modesta.
-- **Prototipado de agentes multimodales**: combinado con llama.cpp y un orquestador, permite construir demos de agentes que razonan sobre imagenes sin coste de API, aunque sin garantias documentadas de tool calling.
-- **Investigacion y evaluacion de cuantizaciones**: el repositorio incluye el fichero imatrix y multiples variantes de cuantizacion, lo que lo hace util para estudiar el impacto de la cuantizacion en la calidad de modelos de vision.
-- **Integracion en aplicaciones de escritorio y edge**: el formato GGUF y la licencia Apache 2.0 facilitan su empaquetado en aplicaciones de escritorio o dispositivos edge con GPU integrada.
+- Descripción de imágenes en local: el modelo puede recibir una imagen y generar una descripción textual; al estar cuantizado en GGUF, se ejecuta en un portátil con GPU de consumo, lo que resulta útil para catalogar fotos sin enviar datos a la nube.
+- Extracción de información de documentos escaneados: combinando la entrada visual con preguntas en inglés, puede emplearse para responder sobre el contenido de facturas o formularios, siempre que la calidad de la cuantización elegida sea suficiente (se recomienda Q4_K_M o superior).
+- Asistente de accesibilidad: generación de descripciones de imágenes para personas con discapacidad visual, ejecutándose en hardware modesto gracias a los ficheros de 2-3 GB.
+- Prototipado rápido de aplicaciones multimodal: al ser compatible con llama.cpp y endpoints, permite validar una idea de producto con visión antes de invertir en infraestructura con el modelo completo.
+- Moderación de contenido visual: clasificación y descripción de imágenes en pipelines internos, con la ventaja de que la licencia Apache 2.0 permite uso comercial.
+- Investigación y experimentación con cuantizaciones: el fichero imatrix incluido permite generar cuantizaciones propias y estudiar el impacto de la compresión en tareas de visión, un caso de uso específico para investigadores.
+- Despliegue en entornos con requisitos de privacidad: al ejecutarse localmente, los datos visuales no salen del dispositivo, adecuado para sectores regulados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia**: depende de la cuantizacion. Para un modelo de ~4B, las cuantizaciones Q4_K_M e IQ4_XS suelen ocupar en torno a 2,5-3 GB, mientras que Q6_K se aproxima a 3,5-4 GB. Estas cifras son estimaciones generales para modelos de ese tamano y no estan confirmadas en la model card.
-- **GPU recomendadas**: no especificadas por el autor. Por tamano, cabria esperar funcionamiento en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090, A100 y H100, pero no hay datos de rendimiento publicados.
-- **Cabe en GPU consumer**: si, previsiblemente en GPUs con 8 GB o mas de VRAM usando cuantizaciones Q4 o inferiores; no confirmado.
-- **Opciones de despliegue**: llama.cpp (formato nativo GGUF), y por extension herramientas compatibles como Ollama, LM Studio o text-generation-webui. No se documenta soporte de vLLM ni TGI para este formato.
-- **Latencia y throughput**: no disponibles.
+- VRAM estimada para inferencia: entre 1 GB (i1-IQ1_S) y 3 GB (i1-Q6_K) para los pesos del modelo de lenguaje, más el espacio del fichero mmproj para la parte visual y la memoria de la caché KV, que depende de la longitud de contexto (no disponible).
+- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para las cuantizaciones intermedias (Q4_K_M); para Q6_K se recomienda 6-8 GB. GPUs de gama alta como A100 o H100 no son necesarias y estarían sobredimensionadas para este tamaño.
+- Cabe en GPU de consumo: sí, en tarjetas como RTX 3060 (12 GB), RTX 4060 (8 GB), RTX 4090 (24 GB) y en muchas integradas con suficiente memoria compartida. También puede ejecutarse en CPU con llama.cpp, aunque con mayor latencia.
+- Opciones de despliegue: llama.cpp, Ollama (mediante importación del GGUF), y servidores compatibles con la API de endpoints. Para la parte visual es necesario usar el fichero mmproj del repositorio estático.
+- Latencia y throughput estimados: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| granite-vision-4.1-4b-i1-GGUF (este) | ~4B | no disponible | Apache 2.0 | GGUF (multiples quants) | Cuantizacion comunitaria con imatrix; vision via mmproj |
-| ibm-granite/granite-vision-4.1-4b | ~4B | no disponible | Apache 2.0 | safetensors | Modelo base original de IBM; precision completa |
-| mradermacher/granite-vision-4.1-4b-GGUF | ~4B | no disponible | Apache 2.0 | GGUF (quants estaticos) | Version estatica del mismo autor; incluye mmproj |
+| granite-vision-4.1-4b-i1-GGUF (este) | 3.400 M | no disponible | Apache 2.0 | GGUF | Hugging Face |
+| ibm-granite/granite-vision-4.1-4b (base) | 3.400 M | no disponible | Apache 2.0 | safetensors | Hugging Face |
+| mradermacher/granite-vision-4.1-4b-GGUF (cuantizaciones estáticas) | 3.400 M | no disponible | Apache 2.0 | GGUF | Hugging Face |
 
-No se dispone de informacion suficiente para comparar con alternativas de otros fabricantes (por ejemplo, modelos de vision de 4B de otras familias) en terminos de rendimiento o benchmarks.
+No se dispone de datos de rendimiento comparativo con otros modelos de visión-lenguaje de tamaño similar (por ejemplo, variantes de 3-4B de otras familias) en la información proporcionada, por lo que la comparación se limita a variantes del mismo modelo base.
 
 ## Limitaciones y advertencias
 
-- **Idioma**: el modelo solo declara soporte de ingles; el rendimiento en castellano no esta garantizado ni documentado.
-- **Informacion incompleta**: la model card no documenta arquitectura, contexto, datos de entrenamiento ni benchmarks, lo que dificulta evaluar su calidad real.
-- **Riesgo de alucinacion**: no cuantificado en la informacion disponible; como todo modelo generativo, puede producir descripciones erroneas de imagenes.
-- **Sesgos**: no documentados; el modelo base de IBM puede heredar sesgos de sus datos de entrenamiento, no especificados.
-- **Licencia**: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base en su repositorio original.
-- **Dependencia de mmproj**: para usar la capacidad de vision es imprescindible descargar los ficheros mmproj del repositorio estatico, no incluidos en este.
-- **Madurez**: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que sugiere poca validacion por parte de la comunidad.
-- **Dato de parametros inconsistente**: el campo safetensors del repo (1.887.800) no concuerda con el nombre del modelo (~4B), lo que introduce incertidumbre sobre el contenido exacto de los pesos.
+- Sesgos conocidos: no disponible en la información proporcionada; al ser un modelo entrenado principalmente en inglés, es probable que presente sesgos culturales y lingüísticos propios de ese dominio, aunque no se documentan.
+- Riesgo de alucinación: inherente a los modelos generativos; en tareas de visión puede describir elementos inexistentes en la imagen, especialmente con cuantizaciones muy agresivas (IQ1, IQ2, Q2_K).
+- Limitaciones de contexto o idioma: la model card solo declara inglés; el rendimiento en castellano no está garantizado. La longitud de contexto no se especifica.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base de IBM y las licencias de los componentes visuales.
+- Caveats para producción: las cuantizaciones por debajo de Q4 pierden calidad de forma notable (el propio autor califica IQ1 como "for the desperate" y Q2_K_S como "very low quality"); para producción se recomienda Q4_K_M o superior. Además, la parte visual requiere el fichero mmproj del repositorio estático, y este repositorio i1 no lo incluye. La información sobre arquitectura, entrenamiento y benchmarks es escasa, lo que dificulta una evaluación rigurosa antes de desplegar.
 
 ## Enlaces
 
-- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/granite-vision-4.1-4b-i1-GGUF
-- Repositorio de cuantizaciones estaticas (incluye mmproj): https://huggingface.co/mradermacher/granite-vision-4.1-4b-GGUF
-- Modelo base original: https://huggingface.co/ibm-granite/granite-vision-4.1-4b
-- Pagina de descargas del autor: https://hf.tst.eu/model#granite-vision-4.1-4b-i1-GGUF
-- Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
-- Ejemplo de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/granite-vision-4.1-4b-i1-GGUF
+- Modelo base: https://huggingface.co/ibm-granite/granite-vision-4.1-4b
+- Cuantizaciones estáticas (incluye mmproj): https://huggingface.co/mradermacher/granite-vision-4.1-4b-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#granite-vision-4.1-4b-i1-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (README de referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Comparativa de calidad de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

@@ -63,11 +63,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Robotics Programming for Beginners: Build Your First Robot",
-      "url": "https://roboticcoding.com/robotics-programming-for-beginners/",
-      "snippet": "6 days ago · Robotics programming is writing instructions that let a robot sense its surroundings, make decisions, and act. A robot …Read more"
-    }
-  ]
+  "sources": []
 }

@@ -2,100 +2,95 @@
 
 ## Resumen
 
-ChatR Labs Uncensored Omni LoRA v0.1 es un adaptador LoRA de rango 128 disenado para el modelo de generacion de imagenes Qwen-Image-2.1, desarrollado por el usuario chatrlabs. Su particularidad es que unifica en un unico adaptador dos flujos de trabajo habitualmente separados: generacion de imagenes a partir de texto (text-to-image) y edicion de imagenes existentes mediante instrucciones en lenguaje natural. El adaptador se carga sobre el modelo base original, que aporta el transformer, el text encoder, el procesador y el VAE.
+ChatR Labs Uncensored Omni LoRA v0.1 es un adaptador LoRA de rango 128 desarrollado por chatrlabs para el modelo de difusion Qwen-Image-2.1 de Alibaba Qwen. Se presenta como un unico adaptador que cubre dos flujos de trabajo diferenciados: generacion de imagenes a partir de texto (text-to-image) y edicion de imagenes existentes mediante instrucciones en lenguaje natural. El repositorio contiene exclusivamente los pesos del adaptador (671 MB en BF16), no los pesos del modelo base, que debe descargarse por separado desde el repositorio oficial de Qwen.
 
-El modelo forma parte de la familia Qwen-Image-2.1 de Alibaba y se distribuye como pesos LoRA en formato safetensors (BF16 y FP32), sin pesos del modelo base fusionados. La version v0.1 se entreno hasta el paso 32.000 y se acompana de un segundo adaptador auxiliar, el Turbo LoRA, que permite generar en 8 pasos sin CFG, unas 6-7 veces mas rapido que la configuracion estandar de 35 pasos con CFG 5.0.
+La propuesta diferencial del modelo es doble: por un lado, unifica generacion y edicion en un solo adaptador de rango 128 entrenado hasta el paso 32.000; por otro, incluye un segundo adaptador Turbo que permite generar en 8 pasos sin CFG, lo que segun el autor supone una aceleracion de entre 6 y 7 veces respecto a la configuracion estandar de 35 pasos con CFG 5.0. El modelo se distribuye con la etiqueta "uncensored", lo que implica que se ha entrenado para reducir las restricciones de contenido respecto al base, y esta disponible tanto en Hugging Face como en un playground publico sin necesidad de cuenta.
 
-La relevancia actual del modelo radica en su enfoque "uncensored" (sin los filtros de contenido habituales del modelo base) combinado con la eficiencia del Turbo LoRA, lo que lo hace atractivo para prototipado rapido y para aplicaciones creativas donde se requiere control fino sobre el contenido generado. El repositorio acumula mas de 60.000 descargas y 122 likes, lo que indica una adopcion notable en la comunidad.
+Con 73.287 descargas y 135 likes en el momento de la consulta, el adaptador ha tenido una acogida notable en la comunidad de difusion. Su relevancia actual radica en que demuestra la viabilidad de combinar generacion y edicion en un unico LoRA sobre arquitecturas de imagen de ultima generacion, y en que ofrece una ruta de inferencia de pocos pasos que reduce el coste computacional de forma significativa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de bajo rango) sobre Qwen-Image-2.1 (modelo de difusion) |
-| Parametros totales | no disponible (adaptador de rango 128; el modelo base no se especifica) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (modelo de imagen, no de texto) |
-| Tipos de cuantizacion | BF16 y FP32 en este repositorio; builds GGUF, FP8, INT8, NF4 y BF16 en el repositorio Quantized |
-| Idiomas soportados | no disponible |
-| Licencia | qwen-research (license: other) |
-| Formato de pesos | safetensors (claves Diffusers/PEFT) |
-| Rango del adaptador | 128 |
-| Tamano del repositorio | 1,7 GB |
-| Tamano de cada archivo LoRA | 671 MB |
-| Resolucion de salida recomendada | ~1 megapixel (p. ej. 1024x1024) |
-| Pasos de muestreo recomendados | 35 (estandar) u 8 (Turbo LoRA) |
-| CFG recomendado | 5.0 (estandar) o 1.0 (Turbo LoRA) |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre el modelo de difusion Qwen-Image-2.1 |
+| Parametros totales | No disponible (adaptador LoRA de rango 128; el modelo base no se distribuye en este repositorio) |
+| Parametros activos | No aplica (no es un modelo MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | BF16 (adaptador principal), FP32 (adaptador Turbo); builds GGUF, FP8, INT8, NF4 y BF16 en repositorio separado |
+| Idiomas soportados | No disponible |
+| Licencia | qwen-research (etiquetada como "other" en Hugging Face) |
+| Formato de pesos | safetensors con claves Diffusers/PEFT |
 
 ## Arquitectura y entrenamiento
 
-El adaptador es un LoRA de rango 128 que se aplica sobre el transformer del modelo de difusion Qwen-Image-2.1. No se trata de un transformer autoregresivo ni de un modelo de lenguaje, sino de un adaptador para un pipeline de difusion text-to-image con capacidad de edicion. El repositorio contiene exclusivamente los pesos del adaptador; el transformer, el text encoder, el procesador y el VAE se descargan por separado desde el repositorio del modelo base `Qwen/Qwen-Image-2.1`.
+El adaptador se construye sobre Qwen-Image-2.1, un modelo de difusion para generacion y edicion de imagenes. El LoRA tiene rango 128 y se entrena hasta el paso 32.000, segun indica la model card. El repositorio incluye dos ficheros: el adaptador principal en BF16 (671 MB) y un adaptador Turbo en FP32 (671 MB) que se usa conjuntamente con el primero para la generacion en pocos pasos. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO.
 
-El entrenamiento se realizo hasta el paso 32.000, segun se indica en la model card. No se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO (no disponible). La innovacion tecnica destacable es la inclusion de un segundo adaptador Turbo LoRA que reduce el numero de pasos de inferencia de 35 a 8 y elimina la necesidad de CFG (escala 1.0), manteniendo una calidad comparable y acelerando la generacion entre 6 y 7 veces. El adaptador v0.1 es un LoRA estandar y no debe confundirse con el Turbo LoRA, que se usa conjuntamente con el.
+La innovacion tecnica destacable es la combinacion de dos adaptadores: el LoRA v0.1 para calidad estandar (35 pasos, CFG 5.0) y el LoRA Turbo para inferencia rapida (8 pasos, CFG 1.0). El autor afirma que la calidad es comparable entre ambas configuraciones, con una aceleracion de 6 a 7 veces. El pipeline de referencia es `QwenImage21Pipeline` de Diffusers, con soporte de KV cache y offload a CPU. Se advierte explicitamente de que el decodificado por teselas del VAE introduce artefactos verticales de color, por lo que debe mantenerse desactivado.
 
 ## Capacidades
 
-- Generacion de imagenes a partir de descripciones textuales (text-to-image) con resolucion de aproximadamente 1 megapixel.
-- Edicion de imagenes existentes mediante instrucciones en lenguaje natural, aceptando de una a tres imagenes de referencia.
-- Generacion de poses (tag `pose-generation`), orientada a la creacion de figuras humanas en posturas concretas.
-- Generacion en pocos pasos (few-step) mediante el Turbo LoRA: 8 pasos sin CFG.
-- Funcionamiento sin filtros de contenido (uncensored), lo que permite explorar tematicas que el modelo base rechazaria.
-- Soporte de cache KV (`use_kv_cache=True`) para acelerar la inferencia.
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni procesamiento de audio o video.
+- Generacion de imagenes a partir de texto con resolucion de aproximadamente 1 megapixel (por ejemplo, 1024 x 1024).
+- Edicion de imagenes mediante instrucciones en lenguaje natural, aceptando de una a tres imagenes de referencia.
+- Generacion de poses (etiqueta `pose-generation` en el repositorio).
+- Inferencia en pocos pasos mediante el adaptador Turbo (8 pasos, CFG 1.0).
+- Reduccion de restricciones de contenido respecto al modelo base (etiqueta "uncensored").
+- Compatibilidad con el ecosistema Diffusers y PEFT.
+- Soporte de KV cache para acelerar la inferencia.
+- No se documentan capacidades de tool calling, agentes, vision de entrada arbitraria ni audio.
 
 ## Casos de uso
 
-- Prototipado rapido de conceptos visuales: con el Turbo LoRA se pueden generar variaciones en 8 pasos, lo que permite iterar sobre un concepto de diseno en segundos y explorar decenas de alternativas en una sola sesion.
-- Edicion de imagenes de producto: se pasa una foto de referencia y una instruccion como "cambia la taza a verde, manten el resto igual"; el adaptador modifica solo el elemento indicado, lo que resulta util para catalogos de e-commerce.
-- Generacion de poses para animacion o videojuegos: la capacidad de pose-generation permite crear referencias de personajes en posturas especificas que luego se usan como base para rigging o ilustracion.
-- Creacion de contenido creativo sin restricciones: el caracter uncensored lo hace adecuado para proyectos artisticos o de investigacion que exploran tematicas que los filtros del modelo base bloquearian.
-- Generacion de imagenes de referencia para pipelines de vision por computador: se pueden sintetizar datasets de imagenes con caracteristicas controladas (iluminacion, composicion, objetos) para entrenar o evaluar modelos de deteccion o segmentacion.
-- Edicion iterativa con multiples referencias: el pipeline acepta hasta tres imagenes de referencia, lo que permite composiciones complejas, como combinar el estilo de una imagen con el sujeto de otra.
-- Automatizacion de variaciones de marketing: integrado en un script con Diffusers, se pueden generar lotes de imagenes con semillas distintas para campanas publicitarias, ajustando prompts y manteniendo coherencia de estilo.
+- Generacion de imagenes de producto: el modelo puede crear fotografias de producto con iluminacion controlada a partir de descripciones textuales, usando la configuracion estandar de 35 pasos para maxima calidad o el adaptador Turbo para iteracion rapida en fases de exploracion creativa.
+- Edicion iterativa de imagenes: un disenador puede modificar un activo existente (cambiar el color de un objeto, sustituir el fondo) pasando la imagen de referencia junto con una instruccion, manteniendo el resto de la composicion intacta gracias al modo de edicion del adaptador.
+- Prototipado rapido en estudios de diseno: con el adaptador Turbo y 8 pasos sin CFG, se pueden generar decenas de variaciones en el tiempo que llevaria una sola pasada del flujo estandar, lo que facilita la exploracion de conceptos.
+- Generacion de poses para animacion o referencia artistica: la capacidad de pose-generation permite crear figuras en posturas especificas que sirvan como referencia para ilustradores o como base para pipelines de animacion.
+- Creacion de contenido para marketing: generacion de imagenes de estilo fotografico con control de escena y luz, integrable en flujos de produccion de material promocional mediante la API de Diffusers.
+- Investigacion sobre adaptadores LoRA: el repositorio sirve como caso de estudio de un LoRA de rango 128 que unifica dos tareas (generacion y edicion) y de la combinacion de adaptadores para inferencia acelerada, util para quienes investigan tecnicas de difusion eficiente.
+- Despliegue en playground o demo publica: el modelo se puede servir con el pipeline de Diffusers y offload a CPU, lo que permite ofrecer una demo interactiva en hardware modesto a costa de mayor latencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente aporta una comparacion cualitativa entre las dos configuraciones de inferencia: 35 pasos con CFG 5.0 frente a 8 pasos con CFG 1.0, con una aceleracion declarada de 6 a 7 veces y calidad comparable, sin cifras de metricas objetivas como FID, CLIP score o similares.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explicita. El adaptador LoRA ocupa 671 MB, pero el modelo base Qwen-Image-2.1 requiere VRAM adicional significativa; la model card recomienda `enable_model_cpu_offload()` para reducir la residencia en GPU, lo que sugiere que el pipeline completo no cabe comodamente en GPUs de gama media sin offload.
-- GPU recomendadas: no se especifican modelos concretos. El despliegue de referencia usa PyTorch 2.11.0 con CUDA 12.8, lo que implica una GPU NVIDIA compatible con CUDA 12.8.
-- Compatibilidad con GPU de consumo: no confirmada. El uso de CPU offload indica que es posible ejecutarlo en GPUs con VRAM limitada a costa de velocidad, pero no se detalla que modelos concretos (RTX 4090, 3090, etc.) funcionan sin offload.
-- Opciones de despliegue: Diffusers con `QwenImage21Pipeline` y PEFT; el repositorio Quantized ofrece builds GGUF, FP8, INT8, NF4 y BF16 para otros entornos. Tambien hay un Playground web en chatrlabs.com.
-- Latencia y throughput: el Turbo LoRA es entre 6 y 7 veces mas rapido que la configuracion estandar (35 pasos, CFG 5.0), pero no se proporcionan valores absolutos de latencia ni de imagenes por segundo.
-- Nota de rendimiento: el VAE tiling debe mantenerse desactivado porque anade rayas verticales de color visibles en la decodificacion.
+- El repositorio contiene solo el adaptador (671 MB por fichero); la VRAM necesaria depende del modelo base Qwen-Image-2.1, cuyos requisitos no se detallan en la informacion disponible.
+- El pipeline de referencia usa `enable_model_cpu_offload()`, lo que reduce la residencia en GPU a costa de requerir RAM de sistema suficiente.
+- Con VRAM suficiente, el autor indica que se puede sustituir el offload por `pipe.to("cuda")`.
+- El despliegue se ha probado con PyTorch 2.11.0 y CUDA 12.8, con versiones fijadas de Diffusers, Transformers, PEFT y Accelerate en `requirements.txt`.
+- No se especifican GPU recomendadas, latencia ni throughput concretos.
+- El adaptador Turbo reduce el numero de pasos de 35 a 8, lo que disminuye proporcionalmente el coste de inferencia, aunque no se aportan cifras absolutas de tiempo.
+- Existen builds cuantizados (GGUF, FP8, INT8, NF4) en el repositorio `chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized`, orientados a reducir requisitos de memoria.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+| Modelo | Tipo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|---|
-| ChatR Labs Omni LoRA v0.1 | LoRA sobre Qwen-Image-2.1 | Rango 128 (671 MB) | no aplica | qwen-research | Hugging Face, Playground |
-| Qwen-Image-2.1 (base) | Modelo de difusion text-to-image | no disponible | no aplica | qwen-research | Hugging Face |
-| Qwen-Image-Edit-2511 | Modelo de edicion de imagenes | no disponible | no aplica | no disponible | Hugging Face |
-| Qwen-Image-2512 | Modelo de generacion de imagenes | no disponible | no aplica | no disponible | Hugging Face |
+| chatrlabs/Qwen-Image-2.1-Uncensored-Omni-LoRA-v0.1 | LoRA sobre Qwen-Image-2.1 | Rango 128 (adaptador) | No disponible | qwen-research | Generacion y edicion unificadas; adaptador Turbo de 8 pasos |
+| Qwen/Qwen-Image-2.1 | Modelo base de difusion | No disponible | No disponible | No disponible en la informacion | Base sobre la que se entrena el adaptador; sin las modificaciones "uncensored" |
+| Qwen-Image (versiones anteriores) | Modelo de difusion | No disponible | No disponible | No disponible en la informacion | Arquitectura distinta segun la model card; no compatible como base del adaptador |
+| Qwen-Image-Edit-2511 | Modelo de edicion | No disponible | No disponible | No disponible en la informacion | Arquitectura distinta; no compatible como base del adaptador |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada. La model card advierte que Qwen-Image, Qwen-Image-2512 y Qwen-Image-Edit-2511 tienen arquitecturas diferentes y no son bases compatibles con este adaptador.
+No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El adaptador es experimental (v0.1) y su calidad puede no ser estable en todos los prompts.
-- El caracter uncensored implica que el modelo puede generar contenido sensible, explicito o inapropiado; no es adecuado para entornos sin moderacion.
-- Riesgo de alucinacion visual: como todo modelo generativo, puede producir elementos incoherentes, anatomia incorrecta o texto ilegible en las imagenes.
-- La licencia qwen-research (license: other) puede restringir el uso comercial; es necesario revisar el archivo LICENSE del repositorio antes de desplegarlo en produccion.
-- El adaptador solo es compatible con Qwen-Image-2.1; no funciona con Qwen-Image, Qwen-Image-2512 ni Qwen-Image-Edit-2511.
-- El VAE tiling produce artefactos visuales (rayas verticales), por lo que debe evitarse.
-- En el pipeline de Diffusers, un negative prompt vacio u omitido desactiva el true CFG aunque `true_cfg_scale` sea mayor que 1; se recomienda usar un espacio simple.
-- El uso de multiples imagenes de referencia incrementa el consumo de memoria.
-- No se especifican los idiomas soportados ni la composicion del dataset de entrenamiento, lo que dificulta evaluar sesgos.
-- Se desconoce el numero de tokens de entrenamiento y si se aplicaron tecnicas de alineacion (RLHF/DPO).
+- El adaptador solo es compatible con Qwen-Image-2.1; las versiones Qwen-Image, Qwen-Image-2512 y Qwen-Image-Edit-2511 tienen arquitecturas diferentes y no sirven como base.
+- La etiqueta "uncensored" implica que el modelo reduce filtros de contenido, lo que puede generar material inapropiado y plantea riesgos en despliegues publicos sin moderacion adicional.
+- La licencia qwen-research puede imponer restricciones al uso comercial; debe revisarse el fichero LICENSE antes de cualquier explotacion productiva.
+- El decodificado por teselas del VAE produce artefactos verticales de color visibles, por lo que debe evitarse.
+- En el pipeline probado, un prompt negativo vacio u omitido desactiva el true CFG aunque `true_cfg_scale` sea mayor que 1; se recomienda usar un espacio simple.
+- No se documentan sesgos conocidos, tasas de alucinacion ni limitaciones idiomaticas.
+- El modelo es experimental (version v0.1) y el autor no garantiza estabilidad en produccion.
+- No se especifican requisitos minimos de VRAM ni latencias, lo que dificulta la planificacion de capacidad.
+- El playground publico comparte cola entre solicitudes, lo que afecta a los tiempos de respuesta.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-LoRA-v0.1
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio de builds cuantizados: https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized
-- Playground: https://chatrlabs.com/
-- Descarga LoRA BF16: https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-LoRA-v0.1/resolve/main/chatrlabs-omni-lora-v0.1-bf16.safetensors?download=true
-- Descarga Turbo LoRA FP32: https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-LoRA-v0.1/resolve/main/chatrlabs-omni-turbo-8step-fp32.safetensors?download=true
-- Sumas de verificacion: https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-LoRA-v0.1/blob/main/SHA256SUMS
+- Playground: https://thechatr.ai/playground/
+- Descarga del adaptador principal (BF16): https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-LoRA-v0.1/resolve/main/chatrlabs-omni-lora-v0.1-bf16.safetensors
+- Descarga del adaptador Turbo (FP32): https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-LoRA-v0.1/resolve/main/chatrlabs-omni-turbo-8step-fp32.safetensors
+- Licencia: https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-LoRA-v0.1/blob/main/LICENSE

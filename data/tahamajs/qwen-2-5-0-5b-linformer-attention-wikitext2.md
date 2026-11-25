@@ -2,103 +2,98 @@
 
 ## Resumen
 
-Qwen-2.5-0.5B-linformer-attention-wikitext2 es un experimento de investigación publicado por el usuario tahamajs en Hugging Face. Se trata de un transplante de atención sobre el modelo base Qwen2.5-0.5B, en el que las capas de atención originales se sustituyen por una implementación denominada `linformer_attention` (registrada en un `ATTENTION_REGISTRY` propio del autor), aplicando un patrón de sustitución híbrido `hybrid_3_1`. El resultado se ha destilado sobre el conjunto de datos WikiText-2 (`wikitext-2-raw-v1`) durante 180,3 segundos en una NVIDIA RTX 3090.
+`qwen-2.5-0.5b-linformer-attention-wikitext2` es un checkpoint experimental publicado por el usuario tahamajs dentro del proyecto NeuralOps "Attention Surgery Zoo". No es un modelo entrenado desde cero, sino un Qwen/Qwen2.5-0.5B sometido a una cirugía de atención: 18 de sus 24 bloques de atención (75%) se sustituyen por el operador `LinformerAttention` de complejidad lineal, mientras que 6 capas ancla conservan la atención GQA softmax original de Qwen2. Posteriormente se aplica una destilación de conocimiento en dos etapas sobre WikiText-2.
 
-El modelo cuenta con 486.998.656 parámetros reales según los pesos en safetensors, lo que lo sitúa en la categoría de modelos pequeños (sub-1B) aptos para hardware de consumo. El interés principal del artefacto no reside en su rendimiento absoluto, sino en documentar el procedimiento de cirugía de atención y el efecto de la destilación: la perplejidad causal pasó de 351.472,92 antes de la destilación a 900,43 después, una reducción de 350.572,49 puntos.
+El interés del modelo es fundamentalmente de investigación: sirve como banco de pruebas reproducible para evaluar el coste real (en perplejidad) de reemplazar atención cuadrática por atención lineal en un transformer causal pequeño. El autor reporta una perplejidad post-destilación de 900,43 en WikiText-2 frente a 15,38 del profesor original, lo que cuantifica la degradación tras la sustitución.
 
-Se trata de un artefacto experimental con cero descargas y cero likes en el momento de la consulta, sin model card pública más allá de los metadatos del experimento y sin licencia declarada. No debe considerarse un modelo listo para producción, sino una prueba de concepto sobre sustitución de mecanismos de atención en transformers preentrenados.
+El modelo tiene 486.998.656 parámetros reales según safetensors, arquitectura Qwen2 con 24 capas, dimensión oculta 896, 14 cabezas de consulta y 2 de clave/valor, y se distribuye en FP16 (928,94 MB) junto con un adaptador. La licencia es MIT. No está pensado para uso en producción: es un artefacto de ablation.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer derivado de Qwen2.5-0.5B con atención sustituida por `linformer_attention` (patrón `hybrid_3_1`) |
+| Arquitectura | Transformer decoder Qwen2 con atención híbrida: 18/24 capas con `LinformerAttention` (lineal) y 6/24 con GQA softmax nativa (índices 3, 7, 11, 15, 19, 23) |
 | Parametros totales | 486.998.656 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (heredada del base Qwen2.5-0.5B, no confirmada en la información) |
-| Tipos de cuantizacion | no disponible (solo se publican pesos safetensors) |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | safetensors |
-| Modelo base | Qwen2.5-0.5B |
-| Dataset de destilación | WikiText-2 (`wikitext-2-raw-v1`) |
-| Patrón de cirugía | `hybrid_3_1` |
-| PPL causal pre-destilación | 351.472,92 |
-| PPL causal post-destilación | 900,43 |
-| Delta de PPL | -350.572,49 |
-| Tiempo de destilación | 180,3 s en NVIDIA RTX 3090 |
-| Tamano del repo | 1,1 GB |
+| Longitud de contexto | no disponible (entrenado/evaluado a longitud de secuencia 512) |
+| Tipos de cuantizacion | no disponible (pesos publicados en FP16) |
+| Idiomas soportados | inglés (etiqueta `en` en la model card); resto no disponible |
+| Licencia | MIT |
+| Formato de pesos | safetensors (checkpoint FP16 completo de 928,94 MB más adaptador) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen2.5-0.5B, un transformer decoder-only de la familia Qwen2.5, y aplica una cirugía de atención: las capas de self-attention originales se reemplazan por una implementación `linformer_attention` registrada en el `ATTENTION_REGISTRY` del autor. El patrón `hybrid_3_1` sugiere una alternancia entre capas con atención Linformer y capas con atención original (probablemente tres capas transformadas por cada una preservada, aunque la información disponible no detalla la asignación exacta por capa). La atención Linformer es una aproximación de baja complejidad que proyecta las claves y valores a una dimensión reducida, sustituyendo la complejidad cuadrática por lineal respecto a la longitud de secuencia.
+El modelo parte de Qwen2.5-0.5B: 24 bloques decoder, D=896, 14 cabezas de consulta, 2 cabezas KV (GQA), dimensión por cabeza 64 y RoPE con theta 1.000.000. La cirugía `hybrid_3_1` reemplaza la atención en los índices [0, 1, 2, 4, 5, 6, 8, 9, 10, 12, 13, 14, 16, 17, 18, 20, 21, 22] por `LinformerAttention` envuelta en un `QwenAttentionAdapter`, que gestiona GQA (expansión de 2 a 14 cabezas KV) y RoPE. Las capas [3, 7, 11, 15, 19, 23] mantienen la atención softmax original como anclas de enrutamiento contextual global. Cada capa transplantada hereda los tensores `q_proj`, `k_proj`, `v_proj` y `o_proj` del profesor, con una única `o_proj` sin duplicación. El operador soporta enmascaramiento causal y despacho de kernels en tres niveles (CUDA / Triton / PyTorch).
 
-Tras la sustitución, el modelo se somete a un proceso de destilación sobre WikiText-2 durante 180,3 segundos en una RTX 3090. No se especifican hiperparámetros, número de tokens vistos, función de pérdida ni si hubo RLHF o DPO. El dato clave es la evolución de la perplejidad causal: el modelo tras el transplante sin destilar arroja una PPL de 351.472,92, lo que indica que la sustitución rompe el comportamiento del modelo; tras la destilación, la PPL baja a 900,43, todavía muy lejos de los valores típicos de Qwen2.5-0.5B sobre WikiText-2 (habitualmente en el rango de decenas). No se documentan innovaciones adicionales como decodificación especulativa o atención lineal híbrida más allá del propio transplante.
+El entrenamiento consiste en una destilación de representaciones ocultas en dos etapas sobre WikiText-2 (`wikitext-2-raw-v1`), ejecutada en una RTX 3090 de 24 GB con caché offline de representaciones del profesor (0 MB de VRAM del profesor en GPU). La etapa 1 (30% del presupuesto, 101 pasos) congela embeddings, MLP y `lm_head` y entrena solo módulos de atención y layer norms con AdamW (lr=2.0e-4, weight decay 0.01, clipping 1.0), pesos maestros FP32 y AMP FP16, minimizando MSE por capa más 0,25·(1 − coseno) entre estados ocultos. La etapa 2 es una destilación end-to-end de representaciones (70% del presupuesto); el detalle de sus hiperparámetros queda truncado en la información disponible.
 
 ## Capacidades
 
-- Generación de texto autoregresiva heredada de la arquitectura Qwen2.5, aunque degradada por la cirugía de atención y la destilación limitada.
-- Modelado de lenguaje causal sobre dominio WikiText-2 (texto enciclopédico en inglés).
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes ni razonamiento multi-paso.
-- No se documentan capacidades multilingües específicas; el base Qwen2.5 las posee, pero la destilación solo se realizó sobre WikiText-2 en inglés.
-- No se documenta modo thinking, visión ni audio.
-- Capacidad experimental de atención lineal tipo Linformer sobre un transformer preentrenado, útil como referencia para investigación en eficiencia de atención.
+- Generación de texto causal autorregresiva en inglés, heredada del profesor Qwen2.5-0.5B.
+- Atención lineal subcuadrática en el 75% de las capas, con soporte causal y GQA mediante adaptador.
+- Conversación multi-turno básica (etiquetas `text-generation` y `conversational` en el repo).
+- No se documenta soporte de tool calling, function calling ni uso como agente.
+- No se documenta modo thinking, visión, audio ni capacidades multimodales.
+- Capacidad multilingüe: la model card solo declara inglés; el resto no disponible.
+- Su valor práctico principal es como referencia de ablation para comparar atención lineal frente a softmax en modelos pequeños.
 
 ## Casos de uso
 
-- Investigación en eficiencia de atención: servir como punto de partida reproducible para estudiar cómo afecta la sustitución de self-attention por Linformer a un transformer preentrenado, usando la PPL pre y post destilación como métrica de referencia.
-- Reproducción de cirugías de atención: el patrón `hybrid_3_1` y el `ATTENTION_REGISTRY` permiten replicar el experimento en otros modelos de la familia Qwen2.5 o en arquitecturas similares para comparar curvas de perplejidad.
-- Benchmark de destilación rápida: con 180,3 s en una RTX 3090, el pipeline sirve para medir la viabilidad de destilaciones de bajo coste sobre datasets pequeños como WikiText-2.
-- Estudio de degradación por transplante: la diferencia entre PPL 351.472,92 y 900,43 documenta cuantitativamente el coste de sustituir atención sin reentrenamiento completo, útil para calibrar expectativas en proyectos de pruning o linearización.
-- Docencia y formación: ejemplo práctico de modificación de un modelo Hugging Face a nivel de módulos de atención, con pesos publicados en safetensors para inspección.
-- Pruebas de infraestructura de inferencia: al ser un modelo de 487 M de parámetros y 1,1 GB en safetensors, permite validar pipelines de carga y ejecución en GPUs de consumo sin incurrir en costes elevados.
-- No se recomienda su uso en aplicaciones de producción orientadas a usuario final debido a la PPL elevada y a la ausencia de licencia y evaluación.
+- Investigación en eficiencia de atención: comparar la perplejidad de este checkpoint (900,43) con el profesor (15,38) para medir el coste de sustituir atención softmax por Linformer en un decoder de 0,5B.
+- Reproducción de experimentos de cirugía de atención: el pipeline NeuralOps y la topología `hybrid_3_1` documentada permiten replicar la sustitución capa a capa y estudiar qué capas toleran peor el cambio.
+- Estudio de destilación de representaciones: las dos etapas (alineación de subespacio con backbone congelado y destilación end-to-end) sirven de plantilla para recuperar modelos dañados por modificaciones arquitectónicas.
+- Benchmark de operadores lineales: útil para validar implementaciones de `LinformerAttention` con GQA y RoPE en entornos CUDA/Triton frente a la atención nativa de Qwen2.
+- Docencia y divulgación: ejemplo compacto (menos de 500M parámetros, 1,1 GB de repo) para ilustrar el compromiso entre complejidad lineal y calidad de modelado del lenguaje.
+- Pruebas de infraestructura de inferencia: al ser un Qwen2 estándar en formato safetensors, puede cargarse con frameworks compatibles para validar pipelines de despliegue, aunque no se recomienda para tráfico real.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Valor |
-|---|---|
-| Perplejidad causal pre-destilación (WikiText-2) | 351.472,92 |
-| Perplejidad causal post-destilación (WikiText-2) | 900,43 |
-| Delta de perplejidad | -350.572,49 |
-| Tiempo de destilación | 180,3 s (RTX 3090) |
+Datos declarados por el autor en la model-index y la model card, medidos en el split de validación de WikiText-2 a longitud de secuencia 512 (batch_size=8, grad_accum=4) en una RTX 3090 de 24 GB. No verificados de forma independiente.
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
+| Metrica | Valor | Notas |
+|---|---:|---|
+| Perplejidad del profesor (Qwen2.5-0.5B) | 15,38 | Referencia GQA softmax causal exacta |
+| Perplejidad del estudiante pre-destilación | 351.472,92 | Tras el transplante de 18/24 capas |
+| Perplejidad del estudiante post-destilación | 900,43 | Tras destilación en dos etapas |
+| Delta absoluto de perplejidad | −350.572,49 | Mejora lograda por la destilación |
+| Reducción relativa de perplejidad | 99,74% | Recuperación desde el pico post-cirugía |
+
+No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16: aproximadamente 1 GB para los pesos (487 M de parámetros × 2 bytes), más overhead de activaciones y caché KV.
-- VRAM estimada en cuantización de 8 bits: en torno a 0,5 GB de pesos; en 4 bits, alrededor de 0,25 GB, aunque no se publican pesos cuantizados oficiales.
-- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM; el autor validó el entrenamiento en una NVIDIA RTX 3090.
-- Cabe holgadamente en GPUs de consumo como RTX 3060, RTX 4060, RTX 4090, e incluso en iGPU con suficiente memoria compartida.
-- Opciones de despliegue: transformers con PyTorch (carga directa desde safetensors); llama.cpp, Ollama o vLLM requerirían conversión previa a GGUF u otro formato, no publicada.
-- Latencia y throughput: no disponibles; el único dato temporal es el de la destilación (180,3 s), no de inferencia.
+- VRAM estimada para inferencia en FP16: aproximadamente 1 GB para los pesos (928,94 MB) más overhead de activaciones y caché KV; cómodo en cualquier GPU consumer con 4 GB o más.
+- GPU recomendadas: RTX 3090 (la usada por el autor para destilación), RTX 4090, A100 o H100; cualquier GPU con soporte CUDA es suficiente dado el tamaño.
+- Cabe en GPU consumer: sí, en GTX 1660, RTX 3060, RTX 4060 y superiores; también en CPU para pruebas.
+- Opciones de despliegue: al ser un checkpoint Qwen2 en safetensors, es compatible con frameworks que acepten la arquitectura Qwen2 (transformers, vLLM, TGI); requiere la librería `neuralops` para las capas `LinformerAttention` personalizadas, por lo que el soporte en herramientas estándar no está garantizado sin el adaptador. llama.cpp u Ollama requerirían conversión a GGUF, no documentada.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | PPL WikiText-2 | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Perplejidad WikiText-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tahamajs/qwen-2.5-0.5b-linformer-attention-wikitext2 | 487 M | no disponible | 900,43 (post-destilación) | no disponible | Hugging Face, 0 descargas |
-| Qwen2.5-0.5B (base) | 494 M aprox. | 32.768 tokens (según documentación oficial de Qwen) | no disponible en esta ficha | Apache 2.0 (según Qwen) | Hugging Face, ampliamente descargado |
-| Modelos sub-1B comparables (p. ej. Llama 3.2 1B, SmolLM2-360M) | 360 M - 1,2 B | variable | no disponible | variable | Hugging Face |
+| Este modelo (Qwen2.5-0.5B + Linformer, destilado) | 487M | no disponible (evaluado a 512) | 900,43 | MIT | Hugging Face |
+| Qwen/Qwen2.5-0.5B (profesor) | 494M | 32.768 tokens (según ficha oficial de Qwen) | 15,38 (medido por el autor) | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B | 1,5B | 32.768 tokens | no disponible en esta información | Apache 2.0 | Hugging Face |
 
-La comparación directa con el base Qwen2.5-0.5B es la más relevante: el artefacto de tahamajs conserva el tamaño pero degrada sustancialmente la perplejidad, por lo que no es un sustituto funcional del original. No se dispone de datos de benchmarks generativos para situarlo frente a alternativas.
+La comparación relevante es con el profesor: misma arquitectura base, misma licencia permisiva y un orden de magnitud de diferencia en perplejidad. Frente a modelos lineales nativos (por ejemplo, variantes Linformer o Mamba de tamaño similar) no hay datos en la información disponible para comparar.
 
 ## Limitaciones y advertencias
 
-- Perplejidad causal de 900,43 sobre WikiText-2, muy superior a la de modelos de su tamaño entrenados de forma convencional; la calidad de generación es previsiblemente baja.
-- El transplante de atención sin reentrenamiento completo produjo una PPL de 351.472,92, lo que evidencia que la cirugía rompe el comportamiento del modelo base; la destilación solo recupera parcialmente.
-- No se declara licencia, lo que impide determinar si el uso comercial está permitido; el modelo base Qwen2.5-0.5B sí tiene licencia Apache 2.0 según su documentación oficial, pero el artefacto derivado no la explicita.
-- No se documentan idiomas soportados; la destilación se realizó únicamente sobre WikiText-2 en inglés, por lo que el multilingüismo del base puede haberse degradado.
-- No hay evaluación de sesgos, alucinación ni robustez; se desconoce el comportamiento fuera del dominio enciclopédico.
-- Cero descargas y cero likes en el momento de la consulta: no hay evidencia de uso comunitario ni validación externa.
-- No se publican pesos en GGUF ni cuantizaciones, lo que limita el despliegue en herramientas como llama.cpp u Ollama sin conversión manual.
-- No apto para producción: es un artefacto de investigación sin pipeline declarado ni evaluación de seguridad.
+- Degradación severa de calidad: perplejidad de 900,43 frente a 15,38 del profesor, es decir, unas 58 veces peor; no es apto para generación de texto en producción.
+- Solo se ha evaluado en WikiText-2 en inglés a longitud 512; el comportamiento en otros dominios, idiomas o contextos más largos es desconocido.
+- Riesgo elevado de alucinación y texto incoherente derivado de la mala perplejidad.
+- La model card declara únicamente inglés; no hay evidencia de capacidades multilingües.
+- Dependencia de la librería `neuralops` y del adaptador `QwenAttentionAdapter` para cargar las capas lineales; la portabilidad a stacks estándar no está garantizada.
+- Licencia MIT para los pesos, pero conviene revisar la licencia del modelo base (Qwen2.5-0.5B, Apache 2.0) y la del repositorio NeuralOps antes de cualquier uso derivado.
+- Los benchmarks son declarados por el autor y no están verificados (`verified: false`); no hay evaluación independiente.
+- Modelo de investigación: no debe usarse como base para aplicaciones comerciales sin una reevaluación exhaustiva.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/tahamajs/qwen-2.5-0.5b-linformer-attention-wikitext2
-- Modelo base Qwen2.5-0.5B (referencia): https://huggingface.co/Qwen/Qwen2.5-0.5B
-- Dataset WikiText-2 (referencia): https://huggingface.co/datasets/Salesforce/wikitext
-- Paper de Linformer (referencia): https://arxiv.org/abs/2006.04768
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
+- Repositorio NeuralOps: https://github.com/tahamajs/NeuralOps
+- Implementación de LinformerAttention: https://github.com/tahamajs/NeuralOps/blob/main/neuralops/layers/linear/linformer_attention.py
+- Licencia del proyecto: https://github.com/tahamajs/NeuralOps/blob/main/LICENSE
+- Dataset WikiText-2: https://huggingface.co/datasets/Salesforce/wikitext

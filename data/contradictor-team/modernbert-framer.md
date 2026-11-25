@@ -2,86 +2,117 @@
 
 ## Resumen
 
-modernbert-framer es un ajuste fino (fine-tune) del modelo encoder answerdotai/ModernBERT-base, publicado por el usuario contradictor-team en Hugging Face. El modelo está especializado en el análisis de encuadres informativos (media framing), una tarea de clasificación de texto propia de la investigación en comunicación y ciencias políticas, y se ha entrenado sobre el corpus jmLuis/MediaFrameCorpus-PhilippineFrameCorpus-Combined, una combinación de corpus de encuadre de medios filipinos.
+ModernBERT Framer es un modelo de clasificación de texto desarrollado por el equipo `contradictor-team` mediante ajuste fino (fine-tuning) del modelo base `answerdotai/ModernBERT-base`. Su tarea es la clasificación de un único argumento en una de 15 categorías de "marcos interpretativos" (interpretative frames), siguiendo la taxonomía del Media Frame Corpus. Resuelve el problema del análisis automatizado de encuadres argumentativos en textos periodísticos y políticos en inglés, una tarea relevante para investigación en comunicación, análisis de discurso y monitorización de medios.
 
-La relevancia del modelo reside en su dominio de aplicación: aplicar un encoder moderno y eficiente como ModernBERT a la detección de marcos periodísticos permite clasificar grandes volúmenes de noticias con un coste computacional bajo, algo útil para estudios de medios a escala, monitorización de sesgo informativo y análisis de discurso. Al derivar de ModernBERT-base, hereda una arquitectura transformer encoder con atención de contexto largo, aunque la información publicada no detalla la longitud de contexto efectiva tras el ajuste.
+Arquitectónicamente es un transformer encoder de tipo ModernBERT con 149,6 millones de parámetros, diseñado para longitudes de contexto largas (hasta 8.192 tokens en el entrenamiento). El modelo se distribuye en formato safetensors con licencia MIT, lo que facilita su uso comercial y su integración en pipelines de análisis. Con 293 descargas en el momento de la consulta, es un modelo de nicho orientado a la investigación aplicada más que a uso generalista.
 
-La ficha disponible es mínima: la model card solo contiene metadatos (licencia MIT, idioma inglés, dataset y modelo base), sin descripción de uso, hiperparámetros de entrenamiento ni resultados de evaluación. Por tanto, muchos de los apartados técnicos se marcan como no disponibles, y el modelo debe considerarse experimental hasta que el autor publique documentación adicional.
+Su relevancia actual radica en que aplica una arquitectura de encoder moderna (ModernBERT) a una tarea de clasificación especializada, ofreciendo un punto de partida reutilizable para quienes necesiten etiquetar argumentos por marco interpretativo sin entrenar desde cero.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder (ModernBERT), ajustado desde answerdotai/ModernBERT-base |
-| Parametros totales | no disponible (ModernBERT-base tiene del orden de 149 millones, dato no confirmado en la informacion proporcionada) |
+| Arquitectura | ModernBERT (transformer encoder), `ModernBertForSequenceClassification` |
+| Parametros totales | 149.616.399 |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | en (ingles) |
+| Longitud de contexto | 8.192 tokens (longitud máxima usada en entrenamiento) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; compatible con cuantización estándar de transformers, pero no documentada por el autor) |
+| Idiomas soportados | inglés (en) |
 | Licencia | MIT |
-| Formato de pesos | no disponible (se infiere safetensors por el ecosistema de transformers, pero no se confirma en la informacion) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de ModernBERT-base, un encoder transformer de la familia BERT modernizada que incorpora mejoras como rotary positional embeddings, atención con flash attention y soporte de secuencias largas. Sobre esa base, contradictor-team ha realizado un ajuste fino supervisado para una tarea de clasificación de encuadres, empleando el dataset jmLuis/MediaFrameCorpus-PhilippineFrameCorpus-Combined, que combina corpus de encuadre de medios filipinos con textos en inglés.
+El modelo parte de `answerdotai/ModernBERT-base`, un transformer encoder con atención bidireccional y soporte para secuencias largas, al que se le añade una cabeza de clasificación de secuencia (`ModernBertForSequenceClassification`) con 15 clases de salida. El ajuste fino se realizó con la técnica "extended-lora-and-head": adaptadores LoRA con r=4 y α=8 aplicados sobre las proyecciones `Wqkv`, que posteriormente se fusionaron en los pesos base antes de guardar el modelo. El entrenamiento usó 3 épocas, tamaño de lote 2 con acumulación de gradiente 8 (lote efectivo 16), tasa de aprendizaje 2e-5, precisión bfloat16 en GPU y longitud máxima de secuencia de 8.192 tokens.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset, la existencia de RLHF/DPO (poco habitual en encoders de clasificación) ni los hiperparámetros del ajuste. Tampoco se documentan innovaciones técnicas específicas del fine-tune más allá del uso de la arquitectura ModernBERT subyacente.
+El conjunto de datos de entrenamiento es `jmLuis/MediaFrameCorpus-PhilippineFrameCorpus-Combined`, en inglés, con divisiones de 10.000 ejemplos de entrenamiento, 5.783 de validación y 5.783 de test. Las etiquetas (ids 0–14) se mapean posicionalmente a los `code_frames` 1–15 del Media Frame Corpus, y el mapeo se almacena en `model.config.id2label`. No se documenta el uso de RLHF ni DPO; se trata de un ajuste fino supervisado estándar para clasificación.
 
 ## Capacidades
 
-- Clasificación de texto orientada al análisis de encuadres informativos (media framing) en inglés.
-- Procesamiento de documentos periodísticos y textos de medios de comunicación.
-- Extracción de señales de encuadre a partir de corpus anotados, útil para investigación cuantitativa de medios.
-- Capacidad multilingüe limitada: solo se declara inglés, pese a que el corpus de entrenamiento procede de medios filipinos.
-- No se documenta soporte de tool calling, function calling, agentes ni razonamiento multi-paso.
-- No se documenta capacidad de generación de texto, visión, audio ni modo de razonamiento (thinking).
-- No se documenta capacidad de matemáticas ni de generación de código.
+- Clasificación de texto en 15 marcos interpretativos: Economic, Capacity and Resources, Morality, Fairness and Equality, Constitutionality and Legality, Policy Prescription and Evaluation, Crime and Justice, Security and Defense, Health and Safety, Quality of Life, Cultural Identity, Public Opinion, Political, External Regulation and Reputation, Other.
+- Clasificación de etiqueta única (single-label) con distribución de probabilidades por clase vía softmax.
+- Procesamiento de secuencias largas de hasta 8.192 tokens, adecuado para argumentos extensos o párrafos completos.
+- Salida de logits y probabilidades por clase, lo que permite umbrales de confianza y análisis de ambigüedad.
+- Capacidad multilingüe: no, solo inglés.
+- Tool calling / function calling: no aplica (es un modelo de clasificación, no generativo).
+- Agentes y razonamiento multi-paso: no aplica.
+- Modo "thinking", visión o audio: no disponible.
 
 ## Casos de uso
 
-- Análisis académico de encuadres mediáticos: el modelo puede clasificar automáticamente grandes corpus de noticias en categorías de encuadre, sustituyendo la codificación manual en estudios de comunicación y ciencias políticas.
-- Monitorización de sesgo informativo: integrar el clasificador en un pipeline de vigilancia de medios para detectar cómo distintos medios enmarcan un mismo tema a lo largo del tiempo.
-- Investigación sobre medios filipinos: dado que el corpus de entrenamiento combina fuentes filipinas, el modelo puede emplearse en estudios comparativos de discurso en inglés sobre la región.
-- Etiquetado asistido de datasets: usar el modelo para preanotar nuevos corpus de encuadre y reducir el esfuerzo de anotación humana, con revisión posterior.
-- Análisis de discurso en redes y prensa digital: clasificar artículos y publicaciones a escala para estudios de opinión y comunicación política.
-- Prototipado rápido en investigación computacional de medios: al ser un encoder ligero con licencia MIT, permite desplegar clasificadores en entornos con recursos limitados para experimentos académicos.
-- Filtrado y enrutamiento de contenido editorial: en redacciones, clasificar piezas por encuadre para tareas de curación o análisis editorial interno.
+- Análisis de discurso en medios: clasificar automáticamente argumentos extraídos de artículos periodísticos según su marco interpretativo, permitiendo estudios cuantitativos de encuadres a gran escala.
+- Monitorización de debate político: procesar transcripciones o comunicados y etiquetar cada argumento por marco (económico, legal, moral, etc.) para detectar qué encuadres dominan en cada actor.
+- Investigación en comunicación: construir corpus anotados de forma semiautomática, usando las probabilidades por clase para priorizar revisión humana en los casos de baja confianza.
+- Moderación y análisis de contenido: identificar argumentos que apelan a marcos de seguridad, legalidad o moralidad en foros y redes, como señal para revisión editorial.
+- Enriquecimiento de bases de datos documentales: añadir metadatos de marco interpretativo a repositorios de textos para búsqueda facetada y recuperación temática.
+- Análisis comparativo de encuadres entre fuentes: clasificar el mismo tema cubierto por distintos medios y comparar la distribución de marcos, apoyándose en el contexto largo de 8.192 tokens para capturar argumentos completos.
+- Docencia y anotación asistida: herramienta de apoyo para etiquetar manualmente corpus de análisis del discurso, reduciendo el esfuerzo de anotación inicial.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Resultados publicados por el autor en el split de test (5.783 ejemplos):
+
+| Metrica | Valor |
+|---|---|
+| Accuracy | 0.6706 |
+| Micro-F1 | 0.6706 |
+| Macro-F1 | 0.5912 |
+| Macro precision | 0.6202 |
+| Macro recall | 0.5744 |
+
+Resultados por clase (extracto representativo):
+
+| Marco | Soporte | Precision | Recall | F1 |
+|---|---|---|---|---|
+| Economic | 368 | 0.7000 | 0.7038 | 0.7019 |
+| Capacity and Resources | 115 | 0.4940 | 0.3565 | 0.4141 |
+| Morality | 172 | 0.7368 | 0.5698 | 0.6426 |
+| Fairness and Equality | 134 | 0.5758 | 0.2836 | 0.3800 |
+| Constitutionality and Legality | 983 | 0.7509 | 0.8342 | 0.7904 |
+| Policy Prescription and Evaluation | 446 | 0.5306 | 0.5448 | 0.5376 |
+| Crime and Justice | 699 | 0.6971 | 0.7639 | 0.7290 |
+| Security and Defense | 177 | 0.5909 | 0.4407 | 0.5049 |
+| Health and Safety | 368 | 0.7158 | 0.7120 | 0.7139 |
+| Quality of Life | 259 | 0.5294 | 0.4517 | 0.4875 |
+| Cultural Identity | 288 | 0.5491 | 0.5243 | 0.5364 |
+| Public Opinion | 286 | 0.6007 | 0.5629 | 0.5812 |
+| Political | 1136 | 0.7367 | 0.7782 | 0.7568 |
+| External Regulation and Reputation | 177 | 0.6802 | 0.6610 | 0.6705 |
+| Other | 175 | 0.4144 | 0.4286 | 0.4213 |
+
+No se han publicado comparaciones con otros modelos en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible con precisión; al tratarse de un encoder de tamaño base (del orden de cientos de millones de parámetros), la inferencia en FP16 requeriría aproximadamente 1 GB o menos, pero este dato no se confirma en la información proporcionada.
-- GPU recomendadas: no disponible en la información; por tamaño, cabría esperar ejecución en GPUs consumer (RTX 3060, RTX 4090) y en GPUs de datacenter (A100, H100) sin problema, aunque no está documentado.
-- Cabe en GPU consumer: probablemente sí, dado el tamaño del modelo base, pero no confirmado.
-- Opciones de despliegue: no disponible; al ser un modelo de transformers, cabría esperar compatibilidad con Hugging Face Transformers, pero no se documenta soporte de vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada: con 149,6 M de parámetros, en fp32 ocupa aproximadamente 0,6 GB; en fp16/bfloat16 unos 0,3 GB; en cuantización de 8 bits, en torno a 0,15 GB. El consumo real depende del tamaño de lote y de la longitud de secuencia (hasta 8.192 tokens).
+- GPU recomendadas: cualquier GPU con al menos 2–4 GB de VRAM para inferencia en fp16 con lotes pequeños; una NVIDIA T4, RTX 3060 o superior es suficiente. Para lotes grandes o secuencias largas, A100 o H100 ofrecen mayor throughput.
+- Cabe en GPU de consumo: sí, en RTX 3060, RTX 4060, RTX 4090 y similares.
+- Opciones de despliegue: transformers (referencia), Text Embeddings Inference (el modelo está etiquetado como compatible con `text-embeddings-inference` y `endpoints_compatible`), y en general cualquier runtime que cargue safetensors de transformers. No se documenta soporte específico de llama.cpp u Ollama.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| contradictor-team/modernbert-framer | no disponible | no disponible | Clasificación de encuadres mediáticos | MIT | Hugging Face |
-| answerdotai/ModernBERT-base | no disponible (modelo base) | no disponible | Encoder generalista | no disponible en esta ficha | Hugging Face |
-| Alternativas de clasificación de encuadres | no disponible | no disponible | Clasificación de texto | no disponible | no disponible |
+No se dispone de datos de benchmarks de modelos comparables en la información proporcionada. Como referencia estructural, el modelo base `answerdotai/ModernBERT-base` es el punto de comparación natural (misma arquitectura, sin cabeza de clasificación de marcos), pero no se han publicado métricas comparativas en esta ficha.
 
-No se dispone de información suficiente para comparar rendimiento con alternativas de la misma categoría.
+| Modelo | Parametros | Contexto | Tarea | Licencia |
+|---|---|---|---|---|
+| modernbert-framer | 149,6 M | 8.192 | Clasificación de 15 marcos | MIT |
+| answerdotai/ModernBERT-base | no disponible en esta ficha | no disponible en esta ficha | Modelo base encoder | no disponible en esta ficha |
 
 ## Limitaciones y advertencias
 
-- La model card no incluye descripción de uso, evaluación ni hiperparámetros, por lo que el modelo debe considerarse experimental y no validado para producción.
-- El modelo solo declara inglés, aunque el corpus de entrenamiento procede de medios filipinos; puede tener un rendimiento desigual en textos en otros idiomas o en variantes del inglés no representadas.
-- Riesgo de sesgo: al entrenarse sobre un corpus específico de medios filipinos, puede heredar sesgos de selección y de encuadre de esas fuentes.
-- Riesgo de alucinación no aplica directamente a una tarea de clasificación, pero sí de etiquetas incorrectas en textos fuera de dominio.
-- No se documentan limitaciones de contexto ni de longitud de entrada.
-- La licencia MIT permite uso comercial, pero el usuario debe verificar las condiciones del dataset de entrenamiento, que no se detallan.
-- Sin métricas publicadas, no es posible estimar la fiabilidad del clasificador en dominios distintos al corpus de entrenamiento.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, lo que sugiere ausencia de validación por parte de la comunidad.
+- Solo soporta inglés; no está entrenado ni validado para otros idiomas.
+- El rendimiento es desigual por clase: marcos con pocos ejemplos (Fairness and Equality, Capacity and Resources, Other) presentan F1 bajo (0,38–0,42), lo que genera falsos negativos y confusiones frecuentes.
+- El macro-F1 (0,5912) es notablemente inferior al accuracy (0,6706), lo que indica que las clases minoritarias se predicen peor; en producción conviene revisar la distribución de clases esperada.
+- Riesgo de alucinación no aplica en sentido generativo, pero sí de clasificación errónea con alta confianza; se recomienda usar umbrales de probabilidad y revisión humana en casos ambiguos.
+- El modelo está ajustado sobre un corpus concreto (MediaFrameCorpus + PhilippineFrameCorpus); puede no generalizar bien a otros dominios, registros o variedades del inglés.
+- Licencia MIT: permite uso comercial, pero se recomienda citar el modelo base y el corpus de entrenamiento según sus propias licencias.
+- No se documentan sesgos específicos; al entrenarse sobre corpus periodísticos y políticos, es probable que herede sesgos de cobertura mediática y de anotación del corpus original.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/contradictor-team/modernbert-framer
+- Modelo en Hugging Face: https://huggingface.co/contradictor-team/modernbert-framer
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/jmLuis/MediaFrameCorpus-PhilippineFrameCorpus-Combined
+- Métricas de evaluación: `evaluation_metrics.json` en el repositorio del modelo en Hugging Face
+- Configuración de entrenamiento: `training_config.json` en el repositorio del modelo en Hugging Face

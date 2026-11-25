@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "mradermacher/G4-LuneLight-v1.1-31B-i1-GGUF",
+  "slug": "mradermacher-g4-lunelight-v1-1-31b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/G4-LuneLight-v1.1-31B-i1-GGUF",
+  "created_at": "2026-11-24T23:06:58.000Z",
+  "updated_at": "2026-11-24T23:07:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6850770,
+  "parameters_human": "6.9M",
+  "storage_bytes": 27520224,
+  "storage_human": "28 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

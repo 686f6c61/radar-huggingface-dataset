@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 20,
-  "downloads_30d": 277,
+  "downloads_30d": 293,
   "trending_score": 0,
   "parameters": 4628569379,
   "parameters_human": "4.63B",
@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Lythri-4B-A2B - Hugging Face",
-      "url": "https://huggingface.co/Lythri/Lythri-4B-A2B",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Run Lythri-4B-A2B API (Easy Deployment & Flat-Rate Pricing)",
-      "url": "https://featherless.ai/models/Lythri/Lythri-4B-A2B",
-      "snippet": "Lythri/Lythri-4B-A2B is a 5.1 billion parameter on-device language model developed by Lythri, built on Gemma 4 E2B. This model is specifically trained for emotional companionship and natural, multi-turn conversations, designed to run efficiently on local devices. It prioritizes understanding human emotions over traditional benchmarks like math or coding, offering a context length of 32768 tokens."
-    },
-    {
-      "title": "Lythri-4B-A2B-GGUF - Hugging Face",
-      "url": "https://huggingface.co/Lythri/Lythri-4B-A2B-GGUF",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Lythri-4B-A2B API & Inference Endpoint | FriendliAI",
-      "url": "https://friendli.ai/models/Lythri/Lythri-4B-A2B",
-      "snippet": "Lythri is a family of on-device language models built for emotional companionship. Instead of chasing math and coding scores, Lythri is trained to understand how people feel and to hold natural, multi-turn conversations, while staying small enough to run locally on a laptop or phone."
-    },
-    {
-      "title": "Architecture graph for Lythri/Lythri-4B-A2B. - hfviewer",
-      "url": "https://hfviewer.com/Lythri/Lythri-4B-A2B",
-      "snippet": "Interactive architecture graph for Lythri/Lythri-4B-A2B, visualized from Hugging Face model metadata."
-    }
-  ]
+  "sources": []
 }

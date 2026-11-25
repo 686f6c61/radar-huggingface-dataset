@@ -5,7 +5,7 @@
   "author": "137N",
   "url": "https://huggingface.co/137N/trinity",
   "created_at": "2026-11-24T17:08:22.000Z",
-  "updated_at": "2026-11-24T17:09:06.000Z",
+  "updated_at": "2026-11-24T18:38:29.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -14,7 +14,9 @@
     "tr"
   ],
   "tags": [
+    "safetensors",
     "zlm",
+    "instruct",
     "turkish",
     "chat",
     "text-generation",
@@ -27,11 +29,13 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1017276416,
-  "storage_human": "1.0 GB",
+  "storage_bytes": 6305601483,
+  "storage_human": "6.3 GB",
   "context_length": null,
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

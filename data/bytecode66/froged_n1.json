@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "bytecode66/Froged_N1",
+  "slug": "bytecode66-froged_n1",
+  "author": "bytecode66",
+  "url": "https://huggingface.co/bytecode66/Froged_N1",
+  "created_at": "2026-10-29T23:40:03.000Z",
+  "updated_at": "2026-11-25T01:11:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 630167424,
+  "parameters_human": "630.2M",
+  "storage_bytes": 28321184704,
+  "storage_human": "28.3 GB",
+  "context_length": 32768,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

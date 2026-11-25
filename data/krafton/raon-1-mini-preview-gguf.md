@@ -2,116 +2,94 @@
 
 ## Resumen
 
-Raon-1 mini es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado desde cero por KRAFTON AI (Corea del Sur). Esta ficha cubre la variante GGUF del checkpoint de previsualización `Raon-1-mini-preview`, convertida desde los pesos BF16 para su uso con llama.cpp y otras herramientas compatibles con este formato. El modelo declara un enfoque explícito en conversación en coreano y en tareas agénticas, con razonamiento integrado y soporte de tool calling.
+Raon-1 mini preview es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado desde cero por KRAFTON AI, el brazo de inteligencia artificial de la editora de videojuegos surcoreana KRAFTON. Con 28.800 millones de parametros totales y solo 4.300 millones activos por token, se posiciona como un modelo de razonamiento y agentes con especial enfasis en conversacion en coreano y en tareas de ejecucion con herramientas. Esta ficha describe la version GGUF del checkpoint preview, publicada para su uso con llama.cpp.
 
-La arquitectura es híbrida: 25 capas en total, de las cuales 18 son capas de atención lineal (Raon Delta Attention, RDA) y 7 son capas de atención completa (Gated MLA). El modelo tiene 28.783.218.602 parámetros totales (28,8B) y activa 4,3B por token mediante un esquema MoE con 128 expertos enrutados, de los que se activan 6 más 1 compartido. El contexto nativo declarado es de 262.144 tokens, con un vocabulario de 259.840 entradas.
+La arquitectura es hibrida: combina 18 capas de Raon Delta Attention (una variante de atencion lineal con estado de tamano fijo) con 7 capas de Gated MLA que mantienen cache KV, lo que reduce drasticamente el coste de memoria en contextos largos. El modelo soporta de forma nativa hasta 262.144 tokens de contexto y emplea decodificacion especulativa mediante un modelo borrador DFlash2 publicado en paralelo. La licencia es Apache 2.0, aunque el acceso al checkpoint esta sujeto a un formulario de solicitud.
 
-La relevancia de esta ficha radica en que el repositorio GGUF permite ejecutar un modelo de 28,8B con activación dispersa en hardware de consumo, y el autor publica además un modelo draft (DFlash2) para decodificación especulativa. La licencia es Apache 2.0, aunque el acceso al modelo base está sujeto a una solicitud con control de acceso (gated) en Hugging Face.
+El repositorio GGUF resulta relevante porque permite ejecutar el modelo en hardware de consumo mediante llama.cpp, con cuantizaciones que van desde Q8_0 hasta Q2_K y con un peso total del repositorio de 261,1 GB repartido entre todas las variantes. Es una publicacion de preview, por lo que las especificaciones y resultados pueden cambiar antes de la version final.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | MoE híbrida: 18 capas Raon Delta Attention (RDA) + 7 capas Gated MLA (proporción 3:1) |
-| Parámetros totales | 28.783.218.602 (28,8B) |
-| Parámetros activos | 4,3B por token (6 expertos enrutados + 1 compartido de 128) |
-| Longitud de contexto | 262.144 tokens (nativo) |
-| Tipos de cuantización | GGUF (Q6_K y menores con importance matrix/imatrix; también MXFP8 y NVFP4 en el modelo base) |
-| Idiomas soportados | Coreano e inglés (según la model card); lista completa de idiomas no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (repositorio); BF16/MXFP8 en el modelo base |
-
-Otros datos técnicos declarados por el autor:
-
-| Parámetro | Valor |
-|---|---|
-| Capas | 25 |
-| Tamaño oculto | 2.560 |
-| Codificación posicional | NoPE (sin codificación posicional) |
-| Cabezas de atención | 40 (tanto RDA como Gated MLA) |
-| Dimensión de cabeza | 128 en RDA; 192 QK / 128 V en Gated MLA |
-| Rango LoRA de query/KV | 576 / 512 (Gated MLA) |
-| Expertos | 128 (6 enrutados + 1 compartido activos) |
-| Tamaño intermedio de experto | 1.088 |
-| Tamaño intermedio FFN denso (primera capa) | 12.032 |
-| Función de activación | SiTU-GLU |
-| Conexión residual | Raon-mHC con 4 streams |
-| Vocabulario | 259.840 |
-| LM Head | Untied (no compartido) |
-| Caché KV | Solo en las 7 capas MLA, ~8 KiB por token en BF16 |
+| Arquitectura | MoE hibrida: 18 capas Raon Delta Attention (RDA) + 7 capas Gated MLA, con Raon-mHC y 4 streams residuales |
+| Parametros totales | 28.783.218.602 (28,8B) |
+| Parametros activos | 4,3B (6 expertos enrutados de 128 + 1 compartido) |
+| Longitud de contexto | 262.144 tokens |
+| Tipos de cuantizacion | GGUF: Q8_0 y superiores desde BF16; Q6_K y menores con importance matrix (imatrix); el repo base ofrece MXFP8 y NVFP4 |
+| Idiomas soportados | Coreano e ingles (segun la model card); no se detalla una lista completa |
+| Licencia | Apache 2.0 (acceso al checkpoint mediante formulario de solicitud) |
+| Formato de pesos | GGUF (llama.cpp); el modelo base en safetensors con expertos enrutados en MXFP8 |
 
 ## Arquitectura y entrenamiento
 
-Raon-1 mini emplea una arquitectura transformer híbrida con atención mixta. Dieciocho de las 25 capas usan Raon Delta Attention (RDA), una variante que, según el autor, desacopla las compuertas de borrado y escritura de Kimi Delta Attention (KDA) para mejorar el rendimiento en contexto largo. Estas capas mantienen un estado de tamaño fijo, por lo que no acumulan caché KV. Las 7 capas restantes usan Gated MLA (atención latente multi-cabeza con compuertas), que sí mantienen caché KV, estimada en unos 8 KiB por token en BF16. El modelo prescinde de codificación posicional explícita (NoPE).
+Raon-1 mini emplea una arquitectura transformer con mezcla de expertos dispersa. De las 25 capas totales, 18 usan Raon Delta Attention, una variante que desacopla las puertas de borrado y escritura de Kimi Delta Attention y que mantiene un estado de tamano fijo, mientras que las 7 restantes usan Gated MLA y son las unicas que conservan cache KV, con un coste aproximado de 8 KiB por token en BF16. El modelo prescinde de codificacion posicional (NoPE), usa 40 cabezas de atencion con dimension 128 para RDA y 192 QK / 128 V para MLA, y aplica la funcion de activacion SiTU-GLU. La conexion residual es Raon-mHC con 4 streams, una reduccion del coste computacional del manifold-constrained hyper-connections de DeepSeek. El vocabulario es de 259.840 tokens con LM head no atada.
 
-La capa MoE activa 6 de 128 expertos enrutados más un experto compartido por token, con un tamaño intermedio de experto de 1.088 y activación SiTU-GLU. La primera capa es un FFN denso con tamaño intermedio de 12.032. Las conexiones residuales usan Raon-mHC con 4 streams, una variante que el autor describe como una reducción del coste computacional de las manifold-constrained hyper-connections (mHC) de DeepSeek para acelerar el entrenamiento. El modelo se entrenó desde cero; la model card no detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO. Tampoco se especifican los detalles del proceso de destilación o alineación.
-
-Como innovaciones destacables, el autor cita el soporte de decodificación especulativa mediante un modelo draft DFlash2 (`KRAFTON/Raon-1-mini-preview-dflash2`) y la disponibilidad de cuantizaciones MXFP8 y NVFP4, esta última pensada para inferencia en una única GPU NVIDIA RTX 5090 de 32 GB de VRAM. Los ficheros GGUF se convirtieron desde los pesos BF16 del mismo checkpoint, y las cuantizaciones Q6_K y menores se generaron con importance matrix.
+La model card indica que el modelo fue entrenado desde cero por KRAFTON AI, pero no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO. Como innovaciones tecnicas destacan la propia RDA, el esquema Raon-mHC y el soporte de decodificacion especulativa mediante el modelo borrador DFlash2 (KRAFTON/Raon-1-mini-preview-dflash2), que acelera la generacion. Los pesos de los expertos enrutados se almacenan en MXFP8 en el repositorio principal; las conversiones GGUF parten de los pesos BF16 del mismo checkpoint.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, con especial énfasis declarado en coreano y buen rendimiento en inglés.
-- Razonamiento integrado ("built-in thinking") orientado a matemáticas y ciencia, según los benchmarks que cita el autor.
-- Seguimiento de instrucciones y tareas de búsqueda (search), donde el autor afirma que lidera frente a los modelos de comparación.
-- Tool calling / function calling para flujos agénticos; el autor menciona soporte para Hermes Agent, Pi y OpenCode.
-- Ejecución de agentes y razonamiento multi-paso.
-- Decodificación especulativa mediante el modelo draft DFlash2.
-- Capacidades multilingües limitadas, según la model card, a coreano e inglés; no se detalla una lista completa de idiomas.
-- No se declaran capacidades de visión, audio ni otras modalidades.
+- Generacion de texto y razonamiento con modo de pensamiento integrado (thinking), con resultados destacados en benchmarks de matematicas y ciencias segun el autor.
+- Seguimiento de instrucciones y tareas de busqueda, donde la model card situa al modelo por delante de sus comparables.
+- Conversacion en coreano con alta calidad y rendimiento solido en ingles.
+- Tool calling para flujos agenticos, con soporte declarado para Hermes Agent, Pi y OpenCode.
+- Razonamiento multi-paso orientado a la ejecucion de agentes.
+- Contexto largo nativo de 262.144 tokens, adecuado para documentos extensos y sesiones prolongadas.
+- Decodificacion especulativa con el modelo borrador DFlash2 para reducir latencia.
+- Capacidades multilingues limitadas, en la practica, a coreano e ingles segun la documentacion disponible.
 
 ## Casos de uso
 
-- Asistente conversacional en coreano: el modelo está entrenado explícitamente para conversación en coreano, lo que lo hace adecuado para atención al cliente o asistentes en ese idioma, con contexto de hasta 262.144 tokens para historiales largos.
-- Agentes con tool calling: integrable en frameworks como Hermes Agent u OpenCode para tareas que requieran invocar funciones externas, consultar APIs o encadenar pasos de razonamiento.
-- Razonamiento matemático y científico: uso en entornos educativos o de investigación para resolución de problemas paso a paso con modo de pensamiento.
-- Procesamiento de documentos largos: la ventana de 262.144 tokens y el diseño híbrido (solo 7 capas con caché KV) permiten analizar contratos, informes o bases de código extensas con menor coste de memoria que un transformer denso equivalente.
-- Despliegue en hardware de consumo: la cuantización NVFP4 del modelo base y los GGUF con imatrix permiten ejecutar el modelo en una RTX 5090 (32 GB) o en configuraciones de consumo mediante llama.cpp.
-- Pipelines de generación de texto autoalojados: al ser Apache 2.0 y estar disponible en GGUF, puede integrarse en servicios internos con llama.cpp u otros runners compatibles sin depender de APIs externas.
-- Aceleración de inferencia en producción: el uso conjunto del modelo y el draft DFlash2 permite decodificación especulativa para reducir latencia en despliegues con requisitos de throughput.
+- Atencion al cliente en coreano: el modelo puede mantener conversaciones multi-turno con contexto de hasta 262.144 tokens, lo que permite arrastrar el historial completo de un cliente y documentacion de producto sin truncar.
+- Agentes autonomos con herramientas: gracias al soporte de tool calling y a la integracion con Hermes Agent, Pi y OpenCode, puede orquestar llamadas a APIs, busquedas y ejecucion de comandos en pipelines agenticos.
+- Asistencia a desarrolladores en coreano e ingles: generacion y explicacion de codigo dentro de IDE o terminal, con la ventaja de un rendimiento solido en ambos idiomas.
+- Analisis de documentos largos: informes, contratos o expedientes de decenas de miles de tokens que caben en una sola ventana sin necesidad de tecnicas de retrieval.
+- Razonamiento matematico y cientifico: resolucion de problemas con modo thinking para entornos educativos o de investigacion, apoyandose en los resultados declarados en benchmarks de matemticas y ciencias.
+- Despliegue local en estaciones de trabajo: la version GGUF con cuantizaciones Q4_K_M o inferiores permite ejecutar el modelo en llama.cpp sobre GPU de consumo, util para prototipado y entornos con requisitos de privacidad.
+- Busqueda aumentada y resumen: tareas de instruction following y search en las que el modelo debe combinar resultados recuperados con instrucciones complejas.
 
 ## Benchmarks y rendimiento
 
-La model card menciona gráficas comparativas de benchmarks (matemáticas, ciencia, seguimiento de instrucciones, búsqueda y comparación con modelos abiertos), pero los valores numéricos no están incluidos en la información proporcionada. Por tanto:
-
-No se han publicado resultados de benchmarks numéricos en la información disponible.
+La model card menciona resultados en benchmarks de matematicas, ciencias, seguimiento de instrucciones y busqueda, presentados en una imagen comparativa frente a modelos abiertos, pero los valores numericos no estan disponibles en el texto proporcionado. No se han publicado cifras concretas de MMLU, HumanEval, GSM8K ni de otros benchmarks en la informacion disponible, por lo que no se incluye tabla comparativa de resultados.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial para cada cuantización GGUF. Como referencia, el autor indica que la versión NVFP4 del modelo base cabe en una única NVIDIA RTX 5090 con 32 GB de VRAM.
-- El repositorio GGUF ocupa 261,1 GB en total, lo que incluye varias cuantizaciones; el tamaño de cada fichero individual no se detalla en la información disponible.
-- GPU recomendadas: RTX 5090 (32 GB) para NVFP4 según el autor; para GGUF de menor precisión se requiere hardware con VRAM suficiente, pero no se especifican modelos concretos.
-- Despliegue: llama.cpp (formato GGUF nativo); el autor no detalla soporte explícito de vLLM, TGI u Ollama en la información proporcionada.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: con 28,8B parametros totales, en Q8_0 se requieren aproximadamente 30-32 GB; en Q6_K alrededor de 24-26 GB; en Q4_K_M en torno a 17-19 GB; en Q3_K_M cerca de 14-15 GB; en Q2_K aproximadamente 11-12 GB. Son estimaciones a partir del tamano del modelo, no cifras publicadas por el autor.
+- GPU recomendadas: A100 80 GB o H100 para BF16/FP8 y contextos largos; RTX 4090 (24 GB) para Q4_K_M con contexto moderado; RTX 5090 (32 GB) para NVFP4 segun la model card, que indica que esa cuantizacion permite inferencia en una sola RTX 5090.
+- Cabe en GPU de consumo: si, en modelos con 16 GB o mas de VRAM usando cuantizaciones Q4 o inferiores; en 12 GB solo con Q2_K y contexto reducido.
+- Opciones de despliegue: llama.cpp (formato nativo de este repo), Ollama a partir de los GGUF, y vLLM o TGI para el checkpoint base en safetensors. El repo esta marcado como compatible con endpoints.
+- Latencia y throughput: no disponibles. La decodificacion especulativa con DFlash2 deberia reducir la latencia, pero no se publican cifras de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-La model card menciona comparaciones con "modelos abiertos" y "baselines MoE", pero no incluye los nombres ni los valores numéricos en la información disponible. Por tanto, no es posible construir una comparativa con datos verificables.
+| Modelo | Parametros totales / activos | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Raon-1 mini preview | 28,8B / 4,3B | 262.144 | Apache 2.0 (acceso con solicitud) | GGUF, safetensors (MXFP8), NVFP4 | Enfasis en coreano y agentes; arquitectura hibrida RDA + MLA |
+| Modelos MoE de ~30B con ~3-4B activos de otros laboratorios | No disponible | No disponible | No disponible | No disponible | La model card menciona comparaciones con modelos abiertos, pero no se detallan nombres ni cifras en la informacion disponible |
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Raon-1 mini (GGUF) | 28,8B totales / 4,3B activos | 262.144 | Apache 2.0 | Hugging Face (acceso gated al base) |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos suficientes en la informacion proporcionada para establecer una comparativa cuantitativa con alternativas concretas. La model card indica que el modelo lidera frente a sus comparables en matematicas, ciencias, seguimiento de instrucciones y busqueda, pero sin cifras verificables en el texto disponible.
 
 ## Limitaciones y advertencias
 
-- Es una versión de previsualización, no un modelo final: el autor advierte que las especificaciones y resultados pueden cambiar antes del lanzamiento definitivo.
-- El acceso al modelo base está sujeto a solicitud (gated) en Hugging Face, con campos de nombre, afiliación, país y uso previsto; esto puede afectar a la automatización de despliegues.
-- Idiomas: la model card solo declara coreano e inglés; no hay información sobre cobertura de otros idiomas, incluido el español.
-- No se detallan sesgos conocidos, tasas de alucinación ni evaluaciones de seguridad en la información disponible.
-- El rendimiento en contexto largo depende del diseño híbrido; solo las 7 capas MLA mantienen caché KV, lo que puede afectar a tareas que requieran recuperación precisa en ventanas muy extensas, aunque el autor lo presenta como una ventaja.
-- La licencia Apache 2.0 permite uso comercial, pero debe verificarse el cumplimiento de los términos del acceso gated y de la licencia del modelo base.
-- No se especifican requisitos de hardware por cuantización GGUF, lo que dificulta planificar el despliegue sin pruebas previas.
-- El repositorio GGUF tiene 261,1 GB, lo que implica un coste de almacenamiento y descarga considerable si se quieren todas las cuantizaciones.
+- Es una version preview, no final: las especificaciones, pesos y resultados pueden cambiar antes del lanzamiento definitivo.
+- El acceso al checkpoint esta sujeto a un formulario (gated) con nombre, afiliacion, puesto, pais y uso previsto, aunque la licencia sea Apache 2.0.
+- Idiomas: la documentacion solo garantiza coreano e ingles; el rendimiento en castellano u otros idiomas no esta evaluado.
+- Riesgo de alucinacion inherente a los modelos generativos; no se publican tasas de error ni evaluaciones de factualidad.
+- No se detallan sesgos conocidos ni evaluaciones de seguridad en la informacion disponible.
+- Las cifras de VRAM y latencia de esta ficha son estimaciones derivadas del tamano del modelo, no datos oficiales.
+- El contexto nativo de 262.144 tokens puede degradar la calidad en los extremos de la ventana; no se publican resultados de long-context benchmarking.
+- El repositorio GGUF ocupa 261,1 GB en total por incluir multiples cuantizaciones; conviene descargar solo el archivo necesario.
+- Existe una version mas reciente del repositorio GGUF (KRAFTON/Raon-1-mini-gguf) que sustituye a este preview.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/KRAFTON/Raon-1-mini-preview-gguf
 - Modelo base: https://huggingface.co/KRAFTON/Raon-1-mini-preview
-- Modelo draft DFlash2: https://huggingface.co/KRAFTON/Raon-1-mini-preview-dflash2
-- Playground: https://raon-console.krafton.ai/playground/guest
-- Página de KRAFTON AI: https://krafton.ai/en/
-- Organización en Hugging Face: https://huggingface.co/KRAFTON
+- Modelo borrador DFlash2: https://huggingface.co/KRAFTON/Raon-1-mini-preview-dflash2
+- Version GGUF mas reciente: https://huggingface.co/KRAFTON/Raon-1-mini-gguf
+- Playground de Raon-1 mini: https://raon-console.krafton.ai/playground/guest
+- Pagina de KRAFTON AI: https://krafton.ai/en/
+- Organizacion en Hugging Face: https://huggingface.co/KRAFTON
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
-- X (Twitter) de KRAFTON AI: https://x.com/Krafton_AI
+- X de KRAFTON AI: https://x.com/Krafton_AI
 - Discord de la comunidad: https://discord.gg/sDG7mmZPnc
-- Repositorio GitHub del proyecto: https://github.com/krafton-ai/Raon-1-mini-preview

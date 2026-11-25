@@ -49,31 +49,5 @@
   "renamed_to": "rishanthrajendhran/IdeaLens",
   "renamed_at": "2026-11-11T07:19:54.509Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "rishanthrajendhran (Rishanth Rajendhran) - Hugging Face",
-      "url": "https://huggingface.co/rishanthrajendhran",
-      "snippet": "NLP, LLM, Prompting, Multimodality, RLHF, Local Explainability AI & ML interests NLP, LLM, Prompting, Multimodality, RLHF, Local Explainability"
-    },
-    {
-      "title": "Nemotron AI Models | NVIDIA Developer",
-      "url": "https://developer.nvidia.com/topics/ai/nemotron",
-      "snippet": "The technical reports outlining the steps necessary to recreate these models are also freely available. The new Nemotron 3 family provides the most efficient multimodal models, powered by hybrid Mamba‑Transformer MoE with 1M-token context, delivering top accuracy for complex, high-throughput agentic AI applications."
-    },
-    {
-      "title": "Rishanth Rajendhran",
-      "url": "https://rishanthrajendhran.github.io/",
-      "snippet": "My research focuses on analysing and improving generations by large language models, particularly long-context reasoning, factuality, and reinforcement learning from human/AI feedback."
-    },
-    {
-      "title": "Gemini — Google DeepMind",
-      "url": "https://deepmind.google/models/gemini/",
-      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
-    },
-    {
-      "title": "nemotron-3-nano-30b-a3b Model by NVIDIA | NVIDIA NIM",
-      "url": "https://build.nvidia.com/nvidia/nemotron-3-nano-30b-a3b/modelcard",
-      "snippet": "Model Overview Model Developer: NVIDIA Corporation Model Dates: September 2025 - December 2025 Data Freshness: The post-training data has a cutoff date of November 28, 2025. The pre-training data has a cutoff date of June 25, 2025. Description Nemotron-3-Nano-30B-A3B is a large language model (LLM) trained from scratch by NVIDIA, and designed as a unified model for both reasoning and non ..."
-    }
-  ]
+  "sources": []
 }

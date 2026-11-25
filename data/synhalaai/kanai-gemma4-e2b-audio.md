@@ -2,51 +2,50 @@
 
 ## Resumen
 
-KanAI-Gemma4-E2B-Audio es un ajuste fino (fine-tune) del modelo Gemma 4 E2B en su variante instructiva cuantizada a 4 bits publicada por Unsloth, desarrollado por SynhalaAI. El modelo se distribuye con pipeline `image-text-to-text` y la etiqueta `gemma4`, lo que indica que hereda la arquitectura multimodal de la familia Gemma 4 y que el ajuste se ha orientado a tareas que combinan imagen, texto y, segun el nombre del repositorio, audio. El identificador "E2B" sugiere una variante de eficiencia de la familia Gemma 4, aunque la informacion disponible no detalla su significado exacto.
+KanAI-Gemma4-E2B-Audio es un ajuste fino (fine-tune) del modelo Gemma 4 E2B en su variante instructiva cuantizada a 4 bits publicada por Unsloth, desarrollado por el usuario SynhalaAI. El modelo se distribuye con el pipeline `image-text-to-text` y conserva la arquitectura multimodal de la familia Gemma 4, incorporando etiquetas que apuntan a capacidades de audio en el nombre del repositorio, aunque la informacion disponible no detalla la naturaleza exacta de esa extension audio. Cuenta con aproximadamente 5.123 millones de parametros totales segun los pesos en safetensors y ocupa 17,9 GB en el repositorio.
 
-El modelo cuenta con 5.123.178.051 parametros segun los pesos en safetensors y un repositorio de 25,4 GB, coherente con un checkpoint multimodal de ese tamano. Los idiomas declarados son ingles (en) y sinhala (si), lo que apunta a un ajuste orientado a la comunidad sinhala parlante, probablemente con enfasis en transcripcion o comprension de audio en ese idioma. Es relevante ahora porque combina un modelo base reciente de Google con tecnicas de cuantizacion de Unsloth y un ajuste comunitario para un idioma de bajos recursos.
+El interes principal reside en que se trata de un derivado comunitario de Gemma 4 E2B, la variante de eficiencia de la cuarta generacion de Gemma, adaptado presumiblemente para tareas en ingles y cingales (si), lo que lo hace relevante para desarrolladores que trabajan con idiomas de Sri Lanka o comunidades diasporicas. El acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 
-El acceso esta restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos. No se ha publicado informacion sobre licencia, datos de entrenamiento ni resultados de benchmarks, por lo que muchas especificaciones quedan como no disponibles.
+Al ser un fine-tune sobre una base cuantizada a 4 bits (bnb-4bit) y con solo 323 descargas y 1 like, se trata de un modelo de nicho, poco validado por la comunidad, cuya evaluacion conviene abordar con cautela y verificacion empirica propia antes de cualquier uso en produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer multimodal de la familia Gemma 4 (image-text-to-text); detalles internos no disponibles |
-| Parametros totales | 5.123.178.051 |
+| Parametros totales | 5.123.178.051 (aprox. 5,12 mil millones) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | El modelo base es una variante bnb-4bit; los pesos publicados estan en safetensors (precision exacta no disponible) |
-| Idiomas soportados | Ingles (en), sinhala (si) |
+| Tipos de cuantizacion | base entrenada sobre bnb-4bit; cuantizaciones adicionales del fine-tune no disponibles |
+| Idiomas soportados | en (ingles), si (cingales) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo deriva de `unsloth/gemma-4-E2B-it-unsloth-bnb-4bit`, es decir, una version instructiva de Gemma 4 E2B cuantizada a 4 bits con las optimizaciones de Unsloth. La etiqueta `gemma4` y el pipeline `image-text-to-text` confirman que se trata de un transformer multimodal con entrada de imagen y texto; el sufijo "Audio" del nombre del repositorio indica que el ajuste incorpora capacidades de audio, aunque la informacion disponible no especifica si se anadio un encoder de audio, si se reutilizo el de la familia Gemma o si el ajuste se limita a datos de audio transcritos a texto.
+El modelo parte de `unsloth/gemma-4-E2B-it-unsloth-bnb-4bit`, un checkpoint instructivo de Gemma 4 E2B cuantizado a 4 bits por Unsloth. La informacion disponible no especifica la arquitectura interna exacta (atencion, capas, dimensiones ocultas) ni si Gemma 4 E2B emplea tecnicas como atencion lineal, mezcla de expertos o decodificacion especulativa. El pipeline declarado es `image-text-to-text`, lo que confirma la naturaleza multimodal texto-imagen heredada de la base.
 
-No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni sobre innovaciones tecnicas especificas del ajuste. La combinacion de un base cuantizado a 4 bits con un fine-tune sugiere un flujo de entrenamiento con QLoRA o tecnicas equivalentes de bajo rango, habituales en el ecosistema Unsloth, pero esto no esta confirmado en la informacion proporcionada.
+No se dispone de datos sobre el volumen de tokens de entrenamiento del fine-tune, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado. Las etiquetas mencionan `unsloth`, lo que sugiere que el ajuste se realizo con las herramientas de Unsloth para entrenamiento eficiente en memoria, pero no hay informacion publica sobre hiperparametros, epochs o estrategia de congelacion de capas. Tampoco se detalla como se incorpora la componente de audio que sugiere el nombre del repositorio.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno, heredadas del base instructivo Gemma 4 E2B.
-- Procesamiento de imagen y texto (pipeline `image-text-to-text`), con capacidad de responder preguntas sobre imagenes.
-- Procesamiento de audio segun el nombre del repositorio y el ajuste declarado; el alcance exacto (transcripcion, comprension, traduccion) no esta documentado.
-- Soporte de ingles y sinhala como idiomas declarados.
-- Compatibilidad con text-generation-inference y endpoints compatibles, segun las etiquetas del repositorio.
-- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Modo thinking explicito: no disponible en la informacion proporcionada.
+- Generacion de texto conversacional en ingles y cingales, heredada del ajuste instructivo de la base.
+- Procesamiento de imagenes y texto combinados (pipeline image-text-to-text), lo que permite tareas de descripcion de imagenes, respuesta visual a preguntas o extraccion de informacion de documentos escaneados.
+- Posible soporte de audio segun el nombre del repositorio (`-Audio`), aunque la informacion disponible no confirma ni detalla esta capacidad.
+- Razonamiento multi-turno en formato conversacional.
+- Soporte de tool calling / function calling: no confirmado en la informacion disponible.
+- Capacidades de agente y razonamiento multi-paso: no confirmadas.
+- Capacidades multilingues limitadas a ingles y cingales segun las etiquetas; no se declaran otros idiomas.
 
 ## Casos de uso
 
-- Transcripcion y comprension de audio en sinhala: el ajuste parece orientado a este idioma, por lo que puede emplearse para convertir grabaciones de voz en texto o para responder preguntas sobre contenido hablado, aprovechando la ventana multimodal del base.
-- Asistentes de voz para comunidades sinhala parlantes: integrado en un pipeline de ASR mas LLM, el modelo puede gestionar consultas habladas y responder en texto, cubriendo un nicho poco atendido por los modelos comerciales.
-- Descripcion de imagenes con contexto hablado: al combinar imagen, texto y audio, puede usarse en aplicaciones de accesibilidad que describan escenas a partir de una foto y una pregunta dictada por el usuario.
-- Atencion al cliente en ingles y sinhala: el modelo puede gestionar conversaciones multi-turno en ambos idiomas, aunque la longitud de contexto no esta documentada y deberia validarse antes de desplegarlo en produccion.
-- Prototipado rapido en investigacion multimodal: al estar cuantizado a 4 bits y ocupar 25,4 GB en el repositorio, es adecuado para experimentos de ajuste e inferencia en entornos con una sola GPU de gama alta.
-- Educacion y traduccion asistida: puede emplearse para generar material didactico o traducciones entre ingles y sinhala a partir de entradas de texto e imagen, con revision humana dado el riesgo de alucinacion.
-- Procesamiento de documentos escaneados con audio: en flujos donde se recibe una imagen de un documento y una nota de voz asociada, el modelo puede combinar ambas modalidades para extraer o resumir informacion.
+- Atencion al cliente en cingales e ingles: el modelo puede gestionar conversaciones multi-turno en ambos idiomas, adecuado para empresas que atienden a la diaspora cingalesa o al mercado de Sri Lanka, aunque la ventana de contexto real debe verificarse empiricamente.
+- Procesamiento de documentos escaneados: al soportar entrada imagen-texto, puede extraer y resumir informacion de facturas, formularios o documentos oficiales en cingales, un caso util en digitalizacion de administraciones publicas.
+- Descripcion de imagenes para accesibilidad: generacion de texto alternativo en ingles y cingales para contenidos visuales, aprovechando el pipeline multimodal.
+- Prototipado de asistentes conversacionales bilingues: dado su tamano contenido (aprox. 5,12 mil millones de parametros), puede desplegarse en infraestructura moderada para pruebas de concepto de chatbots en entornos educativos o sanitarios de Sri Lanka.
+- Investigacion linguistica aplicada: fine-tune de referencia para estudiar el comportamiento de Gemma 4 en cingales, un idioma de bajos recursos en la mayoria de modelos abiertos.
+- Analisis de imagenes con contexto textual: por ejemplo, responder preguntas sobre capturas de pantalla o fotografias con instrucciones en cingales, util en herramientas de soporte tecnico.
+- Experimentacion con audio (si se confirma la capacidad): transcripcion o comprension de audio en contextos bilingues, aunque requiere validacion previa.
 
 ## Benchmarks y rendimiento
 
@@ -54,36 +53,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 5.123.178.051 parametros, en FP16 se requieren aproximadamente 10,2 GB solo para pesos; en 8 bits, unos 5,1 GB; en 4 bits, unos 2,6 GB. A esto hay que sumar la memoria del encoder multimodal, la cache KV y el overhead del runtime, por lo que en la practica conviene reservar entre 8 y 16 GB adicionales segun la longitud de contexto.
-- GPU recomendadas: A100 de 40 u 80 GB, H100, L40S o RTX 6000 Ada para despliegues de produccion; RTX 4090 (24 GB) o RTX 3090 (24 GB) para inferencia en 4 bits con contexto moderado.
-- Cabe en GPU de consumo: si, en RTX 4090, RTX 3090, RTX 4080 (16 GB) con cuantizacion agresiva y contexto corto; en GPUs de 8 GB es probable que no quepa con el encoder multimodal completo.
-- Opciones de despliegue: transformers, text-generation-inference (TGI), vLLM (si el soporte de Gemma 4 esta disponible en la version utilizada), llama.cpp y Ollama solo si existe una conversion GGUF publicada, que no se menciona en la informacion disponible.
+- VRAM estimada para inferencia: con aproximadamente 5,12 mil millones de parametros, en fp16 requeriria del orden de 10-11 GB solo para pesos, mas overhead de activaciones y cache KV; en 4 bits (como la base) podria situarse en torno a 4-6 GB, aunque la cuantizacion exacta del fine-tune no esta confirmada.
+- GPU recomendadas: A100 o H100 para despliegue de produccion con throughput alto; RTX 4090 o L40S para inferencia en fp16 con comodidad.
+- GPU de consumo: es probable que quepa en GPUs consumer con 12-16 GB de VRAM (RTX 3060 12 GB, RTX 4070 Ti, RTX 4080) usando cuantizacion 4 bits; en fp16 completo requeriria 16 GB o mas.
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (tag `text-generation-inference`), y potencialmente vLLM o llama.cpp si se generan pesos GGUF, aunque no se confirma su disponibilidad.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Idiomas | Notas |
 |---|---|---|---|---|---|
-| SynhalaAI/KanAI-Gemma4-E2B-Audio | 5.123.178.051 | no disponible | imagen, texto, audio (segun nombre) | no disponible | gated en Hugging Face |
-| unsloth/gemma-4-E2B-it-unsloth-bnb-4bit | no disponible | no disponible | imagen, texto | no disponible | publico en Hugging Face |
-| Gemma 4 E2B (base de Google) | no disponible | no disponible | imagen, texto | no disponible | publico en Hugging Face |
+| KanAI-Gemma4-E2B-Audio | ~5,12 mil M | no disponible | no disponible | en, si | Fine-tune comunitario multimodal, acceso restringido |
+| Gemma 4 E2B (base de Google) | ~5 mil M (variante E2B) | no disponible | Gemma Terms of Use (habitual en la familia) | Multilingue amplio | Modelo original, mayor validacion y soporte |
+| Qwen2.5-VL 3B / 7B | 3-7 mil M | 32K-128K (segun variante) | Apache 2.0 (variantes) | Multilingue | Alternativa multimodal abierta con contexto amplio |
+| Llama 3.2 3B / 11B Vision | 3-11 mil M | 128K | Llama Community License | Multilingue | Alternativa multimodal con ecosistema amplio |
 
-La comparativa se limita a las variantes de la misma familia porque la informacion disponible no permite identificar alternativas de otros desarrolladores con caracteristicas equivalentes en sinhala y audio.
+La comparativa se ofrece como referencia cualitativa; no se dispone de datos de rendimiento del modelo evaluado para contrastar numericamente.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: es necesario aceptar las condiciones en Hugging Face y disponer de un token de acceso para descargar los pesos.
-- Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; hay que verificar la licencia del modelo base Gemma 4 y las condiciones del repositorio antes de cualquier despliegue productivo.
-- Idiomas limitados a ingles y sinhala: el rendimiento en castellano u otros idiomas no esta garantizado y probablemente sea deficiente.
-- Riesgo de alucinacion: inherente a los modelos generativos, especialmente en tareas de audio y en idiomas de bajos recursos donde los datos de entrenamiento son escasos.
-- Sesgos: no documentados, pero probables en un ajuste comunitario con datos no publicados; conviene auditar las salidas en contextos sensibles.
-- Contexto no documentado: se desconoce la ventana maxima efectiva, lo que complica el diseno de aplicaciones con documentos largos o conversaciones extensas.
-- Base cuantizada a 4 bits: el fine-tune parte de un checkpoint ya cuantizado, lo que puede limitar la precision numerica y la calidad final frente a un ajuste sobre pesos completos.
-- Sin benchmarks publicados: no hay evidencia cuantitativa de rendimiento que permita comparar con alternativas.
-- Repositorio con pocas descargas (237) y cero likes: senal de adopcion muy baja, por lo que el soporte de la comunidad y la madurez del modelo son limitados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso automatizado en pipelines.
+- Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; es imprescindible verificar los terminos antes de cualquier despliegue productivo.
+- Fine-tune comunitario con muy baja adopcion (323 descargas, 1 like): escasa validacion externa, riesgo elevado de comportamientos no documentados.
+- Entrenado sobre una base cuantizada a 4 bits, lo que puede degradar la calidad respecto al modelo original en tareas sensibles a precision.
+- Idiomas limitados a ingles y cingales; el rendimiento en castellano u otros idiomas no esta garantizado y probablemente sea deficiente.
+- Riesgo de alucinacion inherente a los modelos de ~5 mil millones de parametros, especialmente en tareas de razonamiento complejo o matematicas.
+- La capacidad de audio sugerida por el nombre no esta documentada; no debe asumirse su funcionamiento sin pruebas.
+- Ausencia de datos sobre sesgos, dataset de entrenamiento y evaluaciones de seguridad.
+- Longitud de contexto no especificada: planificar arquitecturas que no dependan de ventanas largas hasta confirmarla.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/SynhalaAI/KanAI-Gemma4-E2B-Audio
+- Modelo en Hugging Face: https://huggingface.co/SynhalaAI/KanAI-Gemma4-E2B-Audio
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it-unsloth-bnb-4bit
-- Unsloth: https://huggingface.co/unsloth
+- Unsloth (herramientas de entrenamiento eficiente): https://github.com/unslothai/unsloth
+- Documentacion de Gemma (Google): https://ai.google.dev/gemma

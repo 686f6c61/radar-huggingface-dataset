@@ -46,11 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Wenn Open Weights versiegen, was archivierst du? : r/LocalLLaMA",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xuthme/if_open_weights_dry_up_what_are_you_archiving/?tl=de",
-      "snippet": "13.11.2026 ... embeddinggemma-2 BF16. Qwen3-Embedding 0.6B in F16, 4B und 8B in ... Vielleicht sogar Qwen3-ASR, da Gemma 4 E2B das schon gut genug kann."
-    }
-  ]
+  "sources": []
 }

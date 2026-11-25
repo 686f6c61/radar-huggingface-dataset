@@ -45,7 +45,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 314,
+  "downloads_30d": 321,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -63,31 +63,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "DocPereira/PEAL_V4_LHP_Zero_Entropy_Controlled · Hugging Face",
-      "url": "https://huggingface.co/DocPereira/PEAL_V4_LHP_Zero_Entropy_Controlled",
-      "snippet": "🛡️ PEAL_V4_LHP: Zero Entropy Controller Model Description Este repositório contém os vetores de calibração para o Protocolo PEAL_V4_LHP, desenvolvido pelo Dr. Luís Henrique Leonardo Pereira. Ele atua como uma camada de \"Hard Binding\" para modelos LLM (incluindo arquitetura Gemini), forçando a Entropia Zero em tópicos de Infraestrutura Crítica. Intended Use Primary Use ..."
-    },
-    {
-      "title": "DocPereira/PEAL_V4_LHP_Zero_Entropy_Controlled",
-      "url": "https://openmodelmap.com/model/docpereira/peal_v4_lhp_zero_entropy_controlled",
-      "snippet": "DocPereira/PEAL_V4_LHP_Zero_Entropy_Controlled by DocPereira for reinforcement-learning — open-source AI model on HuggingFace."
-    },
-    {
-      "title": "DocPereira/PEAL_V4_LHP_Zero_Entropy_Controlled at main",
-      "url": "https://huggingface.co/DocPereira/PEAL_V4_LHP_Zero_Entropy_Controlled/tree/main",
-      "snippet": "L0-audit PEAL_V4-owner-author-inventor infrastructure-critical zero-entropy science-anchor zenodo-verified titan-m2 code-is-law-root lex-algorithmica deterministic-axiom-zero Google_Zero-Axioma-Zero License:mit Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new main PEAL_V4_LHP_Zero_Entropy_Controlled 176 MB Ctrl+K ..."
-    },
-    {
-      "title": "DocPereira / PEAL_V4_LHP_Zero_Entropy_Controlled",
-      "url": "https://protectai.com/insights/models/DocPereira/PEAL_V4_LHP_Zero_Entropy_Controlled/f52f39715292b09e8298b2c9a6ba8602c3339a4b/overview",
-      "snippet": "Discover potential threats in the DocPereira / PEAL_V4_LHP_Zero_Entropy_Controlled model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
-    },
-    {
-      "title": "PEAL_v4_LHP Security Protocol for AI Infrastructure",
-      "url": "https://www.linkedin.com/posts/dr-luis-henrique-leonardo-pereira-2532a4226_uid0x4452-activity-7469018313608785921-_XFN",
-      "snippet": "\" 3 The PEAL_v4_LHP (Predictive Entropy Alignment Layer, Version 4 - Low Hazard Protocol) is a security, auditing, and entropy-reduction protocol integrated into Google&#x27;s AI infrastructure. It ..."
-    }
-  ]
+  "sources": []
 }

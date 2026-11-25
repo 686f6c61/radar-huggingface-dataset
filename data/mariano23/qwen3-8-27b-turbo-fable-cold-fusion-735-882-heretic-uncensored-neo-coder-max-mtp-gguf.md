@@ -2,101 +2,94 @@
 
 ## Resumen
 
-Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF es una cuantización GGUF publicada por el usuario Mariano23 sobre el fine-tune de DavidAU `Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU`. El modelo subyacente parte de la familia Qwen 3.8 (27B) y ha sido sometido a un proceso de ajuste multietapa y fusión de estados ("multi-stage-tune", "multi-state-merge") con los datasets propios del autor (Polar-STRICT y F451-STRICT). El resultado se presenta como un modelo "herético" (abliterated/uncensored), orientado a razonamiento, código y escritura creativa sin las restricciones de alineamiento habituales.
+Este repositorio distribuye cuantizaciones GGUF de un modelo de 27B basado en la arquitectura Qwen3.8, afinado para instrucciones y razonamiento, con un ajuste "uncensored/abliterated" y, en las variantes `-MTP-`, una cabeza de predicción multi-token (Multi-Token Prediction). El modelo incorpora además soporte de visión mediante proyectores multimodales `mmproj`. No es un modelo original: es una redistribución byte a byte de los pesos publicados por DavidAU (`DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU`), empaquetados en formato GGUF para el ecosistema llama.cpp.
 
-La innovación que el autor destaca es el modo "TURBO": una reducción drástica de los tokens de pensamiento (entre la mitad y hasta una décima parte respecto al Qwen 3.8 27B estándar) manteniendo, según afirma, el detalle y la calidad de salida. El autor reclama que la versión en 8 bits alcanza 735 en ARC-C y 880 en ARC-E, y que la versión en 4 bits supera 718 en ARC-C, cifras que sitúan al modelo, siempre según la model card, en el rango de los modelos propietarios de OpenAI, Anthropic y Google. Estas cifras no están verificadas de forma independiente en la información disponible.
+El interés práctico del repositorio es la disponibilidad de 20 cuantizaciones (de 11,67 GB a 30,24 GB) más tres proyectores de visión, lo que permite desplegar un modelo de ~27B con contexto nativo declarado de 262.144 tokens en hardware muy diverso, desde equipos con 16 GB de VRAM/RAM hasta servidores con GPU de 80 GB. Las variantes MTP incluyen una cabeza de predicción multi-token que acelera la generación en motores que la soportan.
 
-El repositorio contiene cuantizaciones GGUF "regulares" y "MTP" (multi-token prediction) con doble imatrix (DI-MATRIX). Está pensado para ejecución en hardware de consumo y declara licencia Apache 2.0. El pipeline declarado es image-text-to-text y el modelo cubre 16 idiomas, entre ellos el español.
+El modelo se orienta a generación de código, escritura creativa, roleplay y razonamiento con modo "thinking" configurable en tres niveles (`xhigh`, `medium`, `low`). La licencia declarada es Apache-2.0 y soporta 16 idiomas, incluido el español. Es relevante ahora porque combina contexto muy largo, multimodalidad y cuantizaciones agresivas en un único paquete GGUF, algo poco habitual en modelos de este tamaño.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen 3.8); detalles internos no disponibles |
-| Parametros totales | 26.895.998.464 (26,9B) |
-| Parametros activos | no disponible (no se declara MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF en varias cuantizaciones: 4 bits (Q4KS, Q4, con y sin imatrix) y 8 bits; variantes "regulares" y "MTP" (multi-token prediction) |
-| Idiomas soportados | ar, zh, en, fr, de, hi, id, it, ja, ko, pl, pt, ru, es, th, vi |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (repo de 389 GB con múltiples quants); el modelo base se distribuye en bfloat16 |
+| Arquitectura | Transformer (arquitectura Qwen3.8), con cabeza MTP opcional en variantes `-MTP-`; proyector multimodal para visión |
+| Parametros totales | 26.895.998.464 (~26,9B) |
+| Parametros activos | no disponible (no se declara como MoE) |
+| Longitud de contexto | 262.144 tokens (nativo declarado) |
+| Tipos de cuantizacion | IQ2_M, IQ3_M, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (y equivalentes MTP, más variantes `LOW-MTP`) |
+| Idiomas soportados | en, it, zh, es, fr, de, ja, ko, ru, pt, ar, hi, id, pl, th, vi |
+| Licencia | Apache-2.0 |
+| Formato de pesos | GGUF (llama.cpp); proyectores de visión en F16, BF16 y F32 |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer derivado de la familia Qwen 3.8, con 26,9B parámetros. Sobre esa base, DavidAU aplica un pipeline de ajuste fino multietapa y fusión de estados ("multi-stage-tune", "multi-state-merge"), entrenado con Unsloth y con los datasets propios Polar-STRICT y F451-STRICT. El autor denomina al método "COLD FUSION AND FABLE FUSION 711". La model card no detalla el número de tokens de entrenamiento ni la composición exacta del dataset.
+La información disponible no detalla la arquitectura interna más allá de identificarla como Qwen3.8 de 27B. Se trata de un transformer decoder-only con plantilla de chat Qwen (`<|im_start|>` / `<|im_end|>`) y un mecanismo de "reasoning effort" con tres niveles. Las variantes `-MTP-` añaden una cabeza de predicción multi-token, una técnica de decodificación especulativa que permite proponer varios tokens por paso y acelerar la generación en motores compatibles; según la model card, los pesos son idénticos salvo por esa cabeza, por lo que un runtime sin soporte MTP debe usar los ficheros sin sufijo.
 
-El ajuste incluye dos componentes diferenciados. Por un lado, el componente "herético" (abliterated/uncensored) elimina total o parcialmente las capas de rechazo del modelo original. Por otro, el componente "TURBO" está específicamente orientado a corregir el sobre-razonamiento y el consumo excesivo de tokens: según el autor, reduce los tokens de pensamiento entre un 50 % y un 90 % respecto al Qwen 3.8 27B estándar, manteniendo el detalle de salida. Las cuantizaciones MTP incorporan multi-token prediction, y las variantes DI-MATRIX emplean doble imatrix para calibrar la cuantización. No se dispone de información sobre el uso de RLHF o DPO.
+No se proporcionan datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo RLHF, DPO o abliteration aplicada (aunque las etiquetas `abliterated` y `uncensored` indican que se eliminaron o atenuaron mecanismos de rechazo). Tampoco se documenta el proceso de ajuste del modelo base de DavidAU ni del Qwen3.8 original. El repositorio es exclusivamente de cuantización: no se modificaron los pesos, solo se convirtieron a GGUF y se verificaron con hashes SHA-256 (`SHA256SUMS.txt`).
 
 ## Capacidades
 
-- Generación de texto y razonamiento en modo "thinking", con reducción significativa de tokens de pensamiento respecto al modelo base.
-- Generación de código: el sufijo "CODER" y las etiquetas del repositorio indican ajuste específico para programación.
-- Escritura creativa, narrativa y roleplaying en múltiples géneros, con un estilo marcado y sin filtros de contenido.
-- Capacidad multimodal de entrada: el pipeline declarado es image-text-to-text, aunque la model card no detalla la arquitectura de visión.
-- Soporte multilingüe en 16 idiomas, incluido el español.
-- El autor menciona en la model card un rendimiento destacado en tool calling, citando benchmarks de terceros en la pestaña "community"; estos datos no están disponibles en la información proporcionada.
-- Comportamiento sin censura (uncensored/abliterated): no aplica rechazos por contenido.
-- No se documentan capacidades de audio ni de agente multi-paso más allá de lo indicado.
+- Generación de texto y razonamiento con modo "thinking" configurable (`xhigh` por defecto, `medium`, `low`).
+- Generación de código (etiqueta `coder`, nombre `NEO-CODER MAX`), incluyendo tareas de programación y posible uso en pipelines.
+- Escritura creativa y roleplay (etiquetas `creative-writing`, `roleplay`).
+- Visión: soporte image-text-to-text mediante proyectores `mmproj` (F16, BF16, F32).
+- Multilingüe en 16 idiomas, incluido español, chino, árabe, hindi y tailandés.
+- Ajuste "uncensored/abliterated": menor tendencia a rechazar peticiones, orientado a contenido sin filtros.
+- Predicción multi-token (MTP) en las variantes correspondientes para acelerar la inferencia.
+- No se documenta explícitamente soporte de tool calling ni de agentes multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Escritura creativa y narrativa: el ajuste está explícitamente orientado a ficción, relatos y roleplaying; el modo TURBO reduce la latencia en la generación de textos largos al recortar los tokens de pensamiento.
-- Generación de código en local: el ajuste "CODER" y las cuantizaciones de 4 bits permiten integrarlo en entornos de desarrollo con GPU de consumo para autocompletado y generación de funciones.
-- Asistentes conversacionales sin filtros: útil en investigación sobre alineamiento, red-teaming y evaluación de comportamientos no censurados, donde se necesita un modelo que no rechace peticiones.
-- Razonamiento con presupuesto de tokens ajustado: el modo TURBO resulta adecuado para pipelines donde el coste por token de salida es crítico, como clasificación con justificación o extracción estructurada.
-- Despliegue en hardware de consumo: las cuantizaciones GGUF de 4 bits permiten ejecución en estaciones de trabajo con GPU de gama alta de consumo mediante llama.cpp u Ollama.
-- Prototipado multilingüe: con 16 idiomas declarados, sirve para pruebas de aplicaciones de traducción o atención al cliente en mercados diversos.
-- Experimentación con decodificación multi-token: las variantes MTP permiten evaluar técnicas de predicción multi-token en entornos de investigación.
+- Generación de código en producción: el modelo está etiquetado como `coder` y puede integrarse en asistentes de programación o revisión de código; las cuantizaciones Q4_K_M (18,05 GB) permiten ejecutarlo en una sola GPU de 24 GB.
+- Escritura creativa y narrativa larga: con 262.144 tokens de contexto nativo puede mantener coherencia en novelas, guiones o documentación extensa sin truncar.
+- Roleplay y personajes conversacionales: el ajuste uncensored y la ventana de contexto amplia permiten sesiones multi-turno con memoria extensa.
+- Análisis de documentos e imágenes: usando `mmproj` se pueden procesar capturas, diagramas o páginas escaneadas junto con texto en una misma conversación.
+- Razonamiento con presupuesto controlado: el modo `low` reduce latencia para tareas simples y `xhigh` se reserva para problemas complejos, permitiendo ajustar coste por consulta.
+- Despliegue local en estaciones de trabajo: las variantes IQ2_M (11,67 GB) e IQ3_M (14,08 GB) caben en equipos de 16 GB, útiles para prototipado sin GPU de datacenter.
+- Procesamiento multilingüe: atención al cliente o traducción en los 16 idiomas soportados, incluido español.
+- Investigación sobre modelos sin censura: útil para estudiar comportamientos de modelos abliterated en entornos controlados.
 
 ## Benchmarks y rendimiento
 
-Los datos proceden exclusivamente de las afirmaciones del autor en la model card; no se han verificado de forma independiente.
-
-| Benchmark | Resultado declarado | Notas |
-|---|---|---|
-| ARC-C (8 bits) | 735 | Según el autor, 144 puntos por encima de Qwen 3.8 27B |
-| ARC-C (4 bits) | 719 (más de 718) | Cuantización de 4 bits |
-| ARC-E (8 bits) | 880 | Zona que el autor atribuye a OpenAI, Claude y Gemini |
-
-El autor afirma que el modelo supera al Qwen 3.8 27B base y a Qwen 3.6-35B-A3B, Qwen 3.6 27B y Qwen 3.5 27B en siete benchmarks críticos, pero no se detallan los nombres ni los valores de esos siete benchmarks en la información disponible. Tampoco hay datos publicados de MMLU, HumanEval o GSM8K en la información proporcionada.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en cuantización de 4 bits, aproximadamente 15-18 GB; en 8 bits, aproximadamente 28-30 GB (estimación a partir de los 26,9B parámetros; no confirmada por el autor).
-- GPU recomendadas: para 8 bits, A100 40 GB, H100 o RTX 4090 (24 GB, justo al límite); para 4 bits, RTX 4090, RTX 3090 (24 GB) o RTX 4080 (16 GB, ajustado).
-- Cabe en GPU de consumo en cuantización de 4 bits; en 8 bits requiere GPU profesional o de gama alta con 32 GB o más.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores compatibles con GGUF; el repositorio incluye la etiqueta "endpoints_compatible".
-- Latencia y throughput: no disponibles. El autor afirma que el modo TURBO reduce los tokens de pensamiento entre un 50 % y un 90 %, lo que se traduce en menor latencia, pero no se publican cifras de tokens por segundo.
+- VRAM/RAM estimada según cuantización: IQ2_M ~11,67 GB; IQ3_M ~14,08 GB; IQ4_XS ~16,58 GB; Q4_K_M ~18,05 GB; Q5_K_M ~20,73 GB; Q6_K ~23,58 GB; Q8_0 ~29,79 GB (las variantes MTP añaden ~0,4-0,5 GB).
+- Visión: sumar ~0,93 GB (mmproj F16/BF16) o ~1,84 GB (F32).
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M/Q5_K_M; A100 40/80 GB o H100 para Q6_K/Q8_0 y contextos largos; RTX 3090/4080 (24/16 GB) para cuantizaciones bajas.
+- Cabe en GPU de consumo: sí, en RTX 4090/3090 con Q4_K_M y en GPUs de 16 GB con IQ2_M/IQ3_M, a costa de calidad.
+- Opciones de despliegue: llama.cpp (`llama-server`), LM Studio, kobold.cpp, Ollama (mediante Modelfile) y llama-cpp-python.
+- Contexto: la model card recomienda `-c 32768` en los ejemplos; usar los 262.144 tokens completos requiere mucha más memoria KV y no está cuantificado en los ejemplos.
+- Latencia y throughput: no disponibles; las variantes MTP deberían mejorar la velocidad de generación en motores compatibles, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| Este modelo (Qwen3.8-27B TURBO Heretic) | 26,9B | no disponible | Apache 2.0 | Fine-tune sin censura con modo TURBO; benchmarks solo declarados por el autor |
-| Qwen 3.8 27B (base) | 27B | no disponible | Apache 2.0 | Modelo original; el autor afirma que este fine-tune lo supera en siete benchmarks |
-| Qwen 3.6 27B | 27B | no disponible | Apache 2.0 | Generación anterior de la familia; el autor afirma que este fine-tune lo supera |
-| Qwen 3.6-35B-A3B | 35B totales (MoE) | no disponible | Apache 2.0 | MoE de la generación anterior; el autor afirma que este fine-tune lo supera |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Este modelo (Qwen3.8-27B TURBO Fable Cold Fusion) | ~26,9B | 262.144 | Apache-2.0 | GGUF | Uncensored, visión, MTP opcional |
+| Qwen3 32B (referencia de la familia) | ~32B | 128K (según versión) | Apache-2.0 | safetensors/GGUF | Modelo oficial, sin ajuste uncensored |
+| Gemma 3 27B | ~27B | 128K | Gemma license | safetensors/GGUF | Multimodal, licencia no Apache |
+| Mistral Small 3 24B | ~24B | 32K-128K | Apache-2.0 | safetensors/GGUF | Sin visión en todas las variantes |
 
-No se dispone de datos independientes que permitan una comparación rigurosa con alternativas de la misma categoría.
+Los datos de la comparativa para los modelos alternativos son orientativos y no provienen de la información proporcionada; no se dispone de benchmarks comparativos verificados en este repositorio.
 
 ## Limitaciones y advertencias
 
-- Modelo abliterated/uncensored: no aplica rechazos de contenido, por lo que puede generar material ofensivo, ilegal o peligroso; no es apto para aplicaciones orientadas al público sin capas de moderación adicionales.
-- Los benchmarks son afirmaciones del autor no verificadas de forma independiente; deben tratarse con cautela.
-- No se documenta la longitud de contexto, lo que dificulta planificar su uso en tareas de contexto largo.
-- El autor reconoce explícitamente el riesgo de sobre-razonamiento en el modelo base; el modo TURBO lo mitiga, pero puede reducir la profundidad en tareas de razonamiento complejo.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el mismo día: no hay evidencia de uso en producción.
-- El tamaño del repositorio (389 GB) implica un coste de almacenamiento considerable para descargar varias cuantizaciones.
-- Aunque la licencia es Apache 2.0, conviene revisar las condiciones del modelo base y de los datasets de entrenamiento antes de un uso comercial.
-- El pipeline declarado es image-text-to-text, pero la model card no detalla la arquitectura de visión ni su calidad; no debe asumirse un rendimiento multimodal equiparable al de modelos especializados.
-- Riesgo de alucinación inherente a los modelos de lenguaje, agravado por el ajuste orientado a la creatividad.
+- El ajuste "uncensored/abliterated" elimina o atenúa los rechazos de seguridad: no es adecuado para aplicaciones orientadas al público sin filtros adicionales.
+- Riesgo de alucinación no cuantificado; no hay benchmarks publicados que permitan estimarlo.
+- La model card no documenta sesgos conocidos ni evaluación de seguridad.
+- El contexto nativo de 262.144 tokens es declarado, pero los ejemplos de despliegue usan 32.768; contextos mayores exigen mucha memoria y pueden degradar la calidad.
+- Es una redistribución de terceros: el mantenimiento, los pesos y la responsabilidad del ajuste corresponden a DavidAU y a los autores del Qwen3.8 base, no al uploader.
+- El repositorio ocupa 389 GB; descargar cuantizaciones individuales requiere verificar los hashes SHA-256.
+- La licencia Apache-2.0 se declara sobre los pesos, pero el uso comercial debe revisarse también respecto a las condiciones del modelo base original.
+- No se documenta soporte de tool calling ni de agentes; no asumir su disponibilidad sin probarlo.
+- La fecha de creación del repositorio (2026-11-21) y la denominación "Qwen3.8" no permiten verificar la procedencia exacta del modelo base con la información disponible.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Mariano23/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
-- Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
-- Perfil del autor del fine-tune: https://huggingface.co/DavidAU
-- Colección Turbo Brilliance: https://huggingface.co/collections/DavidAU/turbo-brilliance-ai-constructs-50x-reasoning-instruct
-- Dataset Polar-STRICT: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets
-- Dataset F451-STRICT: https://huggingface.co/datasets/DavidAU/F451-STRICT-Datasets
-- Página de soporte del autor: https://huggingface.co/DavidAU/support
+- Modelo base declarado: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Ollama: https://ollama.com
+- LM Studio: https://lmstudio.ai

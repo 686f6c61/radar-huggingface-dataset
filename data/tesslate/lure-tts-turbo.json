@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Tesslate (Tesslate) - Hugging Face",
-      "url": "https://huggingface.co/Tesslate",
-      "snippet": "NLP, UI GENERATION, Next Gen Codebase Editors"
-    },
-    {
-      "title": "Lure TTS - a Hugging Face Space by smirki",
-      "url": "https://huggingface.co/spaces/smirki/lure-tts",
-      "snippet": "Lure Expressive voice cloning in 0.6B parameters. It sighs, gasps, breaks and whispers where you tell it to. Pick a voice, write a line, and drop sounds inline, like (sigh) or (sharp inhale), right where they should happen. Add a short acting note to shape the delivery. Lure Turbo is the same voice with a faster decoding head. English only · research preview · Lure · Lure Turbo · lure-tts ..."
-    },
-    {
-      "title": "TesslateAI - GitHub",
-      "url": "https://github.com/TesslateAI",
-      "snippet": "TesslateAI has 24 repositories available. Follow their code on GitHub."
-    },
-    {
-      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
-      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
-      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
-    },
-    {
-      "title": "Best Text-to-Speech TTS Models in 2026: A Benchmark-Based Comparison",
-      "url": "https://www.marktechpost.com/2026/05/30/best-text-to-speech-tts-models-in-2026-a-benchmark-based-comparison/",
-      "snippet": "Text-to-speech TTS moved fast over the past year. The line between synthetic and human speech narrowed. Latency dropped below 100 milliseconds for some real-time systems. Emotional control became a standard feature rather than a research demo. This guide reviews the models that really matter in 2026. It is written for AI professionals choosing a model for production. How to read TTS benchmarks ..."
-    }
-  ]
+  "sources": []
 }

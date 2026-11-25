@@ -40,16 +40,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "unixmonk (Unix monk) - Hugging Face",
-      "url": "https://huggingface.co/unixmonk",
-      "snippet": "AI & ML interests ... Recent Activity updated a bucket about 2 hours ago ... updated a model about 15 hours ago"
-    },
-    {
-      "title": "unixmonk (Unix monk) - Hugging Face",
-      "url": "https://huggingface.co/unixmonk/models",
-      "snippet": "User profile of Unix monk on Hugging Face"
-    }
-  ]
+  "sources": []
 }

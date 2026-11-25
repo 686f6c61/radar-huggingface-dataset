@@ -1,96 +1,84 @@
 # wiltodelta/raiw-source-classify
 
 ## Resumen
+RAIW source-classify (identificador `multi-provider-source-v10`) es un clasificador de imágenes orientado a forense digital, desarrollado por wiltodelta dentro del proyecto `remove-ai-watermarks`. Su función no es generar contenido, sino atribuir la procedencia de una imagen: detecta si es sintética y, cuando puede, identifica la familia de proveedor que la generó (OpenAI, Google, ByteDance, Flux, Stable Diffusion, Meta, Midjourney, Ideogram, Firefly, xAI) entre diez familias más la clase `unknown`.
 
-RAIW Source Classify (nombre interno `multi-provider-source-v7`) es un clasificador forense de imagenes desarrollado por wiltodelta dentro del proyecto `remove-ai-watermarks`. Su funcion es atribuir una imagen a la familia de proveedor de IA generativa que la produjo —OpenAI, Google, ByteDance, Flux, Stable Diffusion, Meta, Midjourney, Ideogram, Firefly o xAI— o abstenerse honestamente como `unknown` cuando el generador es desconocido o el contenedor ha sido manipulado. Ademas, incorpora un detector binario calibrado de contenido sintetico que mantiene su recall incluso cuando la atribucion de proveedor falla.
+Técnicamente es un modelo híbrido: combina un extractor de características físicas y de códec de 512 dimensiones (residuos SRM, periodicidad de sublattice, estadística DCT, coherencia espectral, artefactos CFA y de compresión) con un ViT-B/16 a 384 píxeles exportado a ONNX y ejecutado en CPU. La salida incluye etiqueta de proveedor, subfamilia de versión/modelo de exportación, y una detección binaria calibrada de contenido sintético con probabilidad asociada.
 
-Tecnicamente no es un transformer de vision puro: combina una rama de caracteristicas fisicas, de subretícula, de sensor y de codec (512 dimensiones) con una rama visual multitarea basada en un ViT-S/16 a 384 px congelado, ejecutado via ONNX Runtime en CPU. Sobre ambas se apilan cabezas NumPy (MLP con FiLM por regimen y bosques HistGradientBoosting) y una etapa final de atribucion de version de modelo y export. El paquete completo pesa 55,53 MB y no requiere PyTorch ni permite pickle (`allow_pickle=False`).
-
-Es relevante ahora porque la atribucion de origen de imagenes generadas se ha vuelto un problema operativo real (verificacion de contenido, moderacion, periodismo, cadena de custodia digital) y porque el modelo aborda explicitamente el regimen dificil: imagenes redimensionadas, recomprimidas o transcodificadas por plataformas sociales, donde los detectores de marcas de agua invisibles suelen fallar.
+Es relevante ahora porque el ecosistema de imágenes generadas por IA se ha fragmentado en múltiples proveedores y pipelines de exportación, y las marcas de agua criptográficas (tipo SynthID) no siempre están presentes o verificables. Este modelo aborda la atribución desde la señal de píxel, sin decodificar marcas de agua, y está diseñado para resistir recorte, recomposición social, inpainting localizado y transcodificación de contenedor.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Hibrida: rama fisica/sublattice/sensor/codec (512-d) + ViT-S/16 @ 384 (ONNX, fp16 pesos, computo fp32) + cabezas NumPy (MLP FiLM + HistGradientBoosting) + etapa Stage-2 de versiones |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no aplica (clasificacion de imagen) |
-| Tipos de cuantizacion | pesos ViT en fp16 dentro del bundle; computo fp32; no se documentan otras cuantizaciones |
-| Idiomas soportados | no disponible (modelo de vision, sin procesamiento de texto) |
+| Arquitectura | Híbrida: extractor de características físicas/códec (512-d) + ViT-B/16 @ 384 (ONNX) con split-tail de dos ramas + cabezas de clasificación open-set |
+| Parametros totales | no disponible (pesos empaquetados de 67,00 MB en el bundle `.npz`) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de visión, no de texto) |
+| Tipos de cuantizacion | pesos en fp16 selectivo con cómputo fp32 en el grafo ONNX; no se documentan otras cuantizaciones |
+| Idiomas soportados | no disponible (modelo de clasificación de imagen, sin procesamiento de lenguaje) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.npz` sin pickle (`allow_pickle=False`) con grafo ONNX embebido; tamano del bundle 55,53 MB (repo 3,9 GB) |
+| Formato de pesos | `.npz` sin pickle (`allow_pickle=False`) con grafo ONNX embebido; ejecutable vía `onnxruntime` en CPU |
 
 ## Arquitectura y entrenamiento
+El modelo se estructura en tres bloques. El primero es una rama de física, sublattice, sensor y códec de 512 dimensiones que extrae 112 dimensiones de micro-residuos SRM adaptativos sobre teselas nativas solapadas, 128 dimensiones de energía de sublattice módulo-8/módulo-16 con detección de fase secundaria y estadística de peine de cuantización DCT 8x8, 144 dimensiones de descomposición espectral periódica-más-suave (p+s) de Moisan con perfil de decaimiento radial, 96 dimensiones de coherencia de fase espectral entre canales con periodicidad CFA Bayer/Quad-Bayer y alineación de aberración cromática, y 32 dimensiones de vector de régimen de códec, relación de aspecto, escala y recomposición social.
 
-El modelo se organiza en varias etapas. La rama fisica extrae 512 dimensiones en cinco bloques: 112 dimensiones de micro-residuos SRM adaptativos sobre teselas nativas solapadas; 128 dimensiones de energia de subretícula modulo-8 y modulo-16 con deteccion de fase secundaria, modulacion VAE interior y estadisticas de peine de cuantizacion DCT 8x8; 144 dimensiones de descomposicion espectral periodica-mas-suave de Moisan con perfil de decaimiento radial y escaner de peine de escala invariante; 96 dimensiones de coherencia de fase espectral entre canales, periodicidad CFA Bayer/Quad-Bayer, pendiente de ruido de disparo heterocedastico y alineacion de aberracion cromatica radial; y 32 dimensiones de vector de regimen de codec, relacion de aspecto, escala y recompresion social.
+El segundo bloque es un tallo visual ViT-B/16 a 384 píxeles derivado de `OwensLab/commfor-model-384` (MIT), congelado en los bloques 0 a 8 y dividido en dos ramas: la rama A mantiene los bloques 9 a 11 sin adaptar para preservar logits generalistas, y la rama B adapta esos mismos bloques con gating intermedio RINE de 4 capas, destilación de logits de tres profesores permisivos (CommFor-MIT, DINOv2-Reg4-Base y SigLIP2-Base), SubCenterArcFace de 24 dimensiones y una cabeza espacial de parches 24x24. El ViT se ejecuta en ONNX sobre CPU con teselas nativas de 384x384 sin remuestreo.
 
-La rama visual usa un ViT-S/16 a 384 px congelado (linaje `OwensLab/commfor-model-384` / `TensorFold/detectra-v1`, licencia MIT) con cabezas de lectura multitarea que producen un vector de 28 dimensiones (senal sintetica original, 10 proveedores, IA foranea, real no IA, veto grafico, dominio sintetico y embedding). Incluye una pasada condicional de 2 recortes con `short_edge=672` para exportaciones nativas en formato panoramico. Las etapas 1 y 1.5 combinan un ensemble de dos torres en NumPy puro (5 troncales MLP residuales multi-semilla con Regime-FiLM, LayerNorm y SiLU, mas 65 bosques HistGradientBoosting empaquetados) que alimentan un detector de aceptacion de 11 canales, una cabeza de atribucion condicional y una cabeza abierta de proveedor de 82 a 64 a 12 dimensiones. La fusion sintetica final usa un head de 67 a 48 a 1 dimensiones con skip connections. La etapa 2 apila 9 cabezas de version mezcladas sobre 666 dimensiones para atribuir modelo y version de export.
-
-No se documentan en la informacion disponible el numero de imagenes de entrenamiento, la composicion exacta del dataset ni si hubo RLHF o DPO (no aplica en clasificacion, pero tampoco se detalla la estrategia de calibracion). La innovacion principal es la combinacion de senales fisicas de pipeline (ruido de sensor, periodicidad de subretícula, espectro de Moisan, estadisticas de codec) con un stem visual congelado, y el diseno de conjunto abierto que prefiere abstenerse (`unknown`) antes que atribuir erroneamente a un proveedor no visto.
+El tercer bloque corresponde a las etapas 1 y 1.5, con 154 canales unitarios, 96 puertas 2D, una cabeza open-set de proveedor de 209 dimensiones con tres vistas, fusión global de 117 dimensiones y una cabeza de anomalía espacial de 39 dimensiones para ediciones locales. No se documentan en la información disponible el número de tokens de entrenamiento ni la composición exacta del dataset.
 
 ## Capacidades
-
-- Clasificacion de atribucion de proveedor entre 10 familias de IA generativa mas la clase `unknown`.
-- Deteccion binaria calibrada de contenido sintetico (`synthetic_detected`, `synthetic_probability`) independiente de la atribucion de proveedor.
-- Atribucion de version de modelo y export (Stage-2, `version_subfamily`, p. ej. `openai:gpt_image_1_5`).
-- Robustez declarada ante redimensionado extrano y transcodificacion de contenedor (recompresion social, cambios de formato).
-- Clasificacion de conjunto abierto: generadores no vistos se devuelven como `unknown` en lugar de forzar una etiqueta.
-- Distincion frente a contenido no sintetico: fotos de camara, capturas de pantalla, diagramas y documentos escaneados (veto grafico y especificidad declarada).
-- Ejecucion en CPU sin PyTorch, via NumPy y ONNX Runtime; API Python (`raiw.classify_source`) y CLI (`remove-ai-watermarks classify-source`).
-- No es un detector de SynthID ni decodifica marcas de agua criptograficas o invisibles (`watermark_truth="unknown"`).
+- Clasificación de procedencia de imagen entre diez familias de proveedor (`openai`, `google`, `bytedance`, `flux`, `stable_diffusion`, `meta`, `midjourney`, `ideogram`, `firefly`, `xai`) más la clase `unknown`.
+- Atribución de subfamilia de versión y modelo de exportación (por ejemplo, `openai:gpt_image_1_5`).
+- Detección binaria calibrada de contenido sintético con probabilidad asociada (`synthetic_detected`, `synthetic_probability`).
+- Clasificación open-set: puede abstenerse y devolver `unknown` ante proveedores no vistos.
+- Robustez declarada frente a redimensionado foráneo, recomposición social, inpainting localizado y transcodificación de contenedor.
+- Cabeza de anomalía espacial para detectar ediciones locales sobre la imagen.
+- Ejecución en CPU sin PyTorch, mediante NumPy y ONNX Runtime.
+- No decodifica ni verifica marcas de agua criptográficas o invisibles; `watermark_truth` se reporta como `unknown`.
 
 ## Casos de uso
-
-- Moderacion de contenido en plataformas: clasificar imagenes subidas para marcar contenido sintetico y su proveedor probable, usando `synthetic_probability` como senal calibrada y `unknown` como salida segura cuando el generador no esta cubierto.
-- Verificacion periodistica y fact-checking: comprobar si una imagen viral es una exportacion nativa de un generador conocido o si ha pasado por transcodificacion, con la salvedad de que la etiqueta de proveedor no prueba presencia de SynthID.
-- Cadena de custodia digital y analisis forense: la rama fisica (SRM, subretícula, espectro de Moisan, CFA, aberracion cromatica) aporta senales interpretables sobre el pipeline de generacion y export, utiles en informes periciales.
-- Deteccion de fraude documental y de identidad: el veto grafico y la especificidad sobre capturas, diagramas y documentos permiten filtrar falsos positivos en flujos KYC o verificacion de documentos.
-- Pipelines de ingestión de datasets: etiquetar automaticamente imagenes sinteticas por proveedor para auditar la composicion de corpus de entrenamiento y detectar contaminacion por generadores concretos.
-- Despliegue en entornos air-gapped o de bajo recurso: el bundle de 55,53 MB con pesos `.npz` sin pickle y ejecucion CPU-only permite integrarlo en servidores sin GPU, con la variable `RAIW_SOURCE_CLASSIFY_WEIGHTS` apuntando al fichero local.
-- Automatizacion de catalogos de imagenes: clasificar lotes de assets por origen y version de export (Stage-2) para trazabilidad de licencias y procedencia en bancos de imagenes.
+- Moderación de contenido en plataformas: clasificar imágenes subidas por usuarios para separar fotografía real de exportaciones sintéticas y priorizar revisión humana en los casos con `synthetic_probability` alta.
+- Verificación periodística: comprobar la procedencia probable de una imagen recibida antes de publicarla, usando la etiqueta de proveedor y la subfamilia de versión como señal de trazabilidad.
+- Investigación en forense digital: analizar corpus de imágenes para estudiar la prevalencia de distintos pipelines de generación y exportación por proveedor.
+- Pipelines de derechos de autor y licencias: detectar imágenes sintéticas en catálogos y repositorios para aplicar políticas de atribución o exclusión.
+- Auditoría de datasets: filtrar o etiquetar automáticamente imágenes generadas por IA en conjuntos de datos de entrenamiento o evaluación.
+- Detección de ediciones locales: usar la cabeza de anomalía espacial para señalar regiones con inpainting sobre una imagen por lo demás auténtica.
+- Despliegue en entornos air-gapped: el bundle `.npz` puede fijarse mediante `RAIW_SOURCE_CLASSIFY_WEIGHTS` para ejecución offline sin dependencias de red.
+- Integración en CI/CD de contenidos: validación automatizada de assets gráficos antes de su publicación en sitios o aplicaciones.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona un script `benchmark.py` con tiers (incluido `--tier frontier`) para evaluacion de conjunto abierto, pero no se aportan cifras de MMLU, HumanEval ni equivalentes de clasificacion en los datos proporcionados.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
-
-- Inferencia en CPU: el modelo esta disenado explicitamente para CPU-only, con ONNX Runtime y NumPy; no requiere GPU ni PyTorch.
-- VRAM: no aplica en el modo documentado; en CPU el consumo de memoria es moderado dado el bundle de 55,53 MB (el repo de 3,9 GB incluye artefactos adicionales).
-- GPU recomendadas: no disponibles; el modelo no las requiere. Cualquier GPU compatible con ONNX Runtime serviria, pero no se documenta.
-- Cabe en GPU de consumo: irrelevante para el caso de uso principal; no se documenta soporte GPU.
-- Opciones de despliegue: paquete `remove-ai-watermarks[source-classify]`, CLI `remove-ai-watermarks classify-source`, scripts `infer.py` y `benchmark.py` ejecutables con `uv run`, Hugging Face Space oficial y servicio en `raiw.cc`, y despliegue air-gapped con `RAIW_SOURCE_CLASSIFY_WEIGHTS`.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- Inferencia en CPU: el modelo está diseñado explícitamente para ejecución CPU-only con ONNX Runtime; no requiere GPU.
+- VRAM estimada: no aplica en el modo documentado; el bundle de pesos ocupa 67,00 MB.
+- GPU recomendadas: no disponibles; el autor no documenta despliegue en GPU.
+- Compatibilidad con GPU de consumo: irrelevante para el modo CPU documentado; no se indica soporte CUDA.
+- Opciones de despliegue: paquete `remove-ai-watermarks[source-classify]`, CLI `remove-ai-watermarks classify-source`, scripts `infer.py` y `benchmark.py` ejecutables con `uv run`, y ONNX Runtime.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
-
-| Modelo | Tipo | Cobertura | Contexto de uso | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| RAIW Source Classify (este) | Clasificador forense hibrido fisico + ViT-S/16 | 10 proveedores + `unknown`, deteccion binaria, version de export | CPU-only, ONNX, sin PyTorch | Apache 2.0 | Hugging Face, Space, raiw.cc |
-| Detectores de marca de agua SynthID | Verificacion de payload criptografico | Solo contenido con SynthID | Requiere acceso al decodificador de Google | no disponible | No publico general |
-| Clasificadores binarios de IA generativa (genericos) | CNN/ViT de clasificacion | Real vs sintetico, sin atribucion de proveedor | GPU tipica, PyTorch | variable | Multiples en Hugging Face |
-| Detectores de frecuencia espectral (p. ej. enfoques tipo DIRE, AEROBLADE) | Reconstruccion o error de autoencoder | Real vs sintetico, sin atribucion de proveedor | GPU, dependiente del modelo difusor | variable | Repos academicos |
-
-No se dispone de datos comparativos de rendimiento entre estas alternativas en la informacion proporcionada.
+No disponible. La información proporcionada no incluye modelos comparables de atribución de proveedor de imagen con los que establecer una comparación de parámetros, contexto, rendimiento o licencia.
 
 ## Limitaciones y advertencias
-
-- No es un detector de SynthID: no decodifica ni verifica marcas de agua criptograficas o invisibles; `unknown` no implica ausencia de SynthID y una etiqueta de proveedor no prueba su presencia.
-- Las etiquetas describen pipelines completos de generacion y export, por lo que renderer, geometria, codificacion, postprocesado y estado de marca de agua pueden confundirse entre si.
-- Riesgo de confusion ante transcodificacion agresiva o generadores no vistos: el modelo puede abstenerse como `unknown` aunque la imagen sea sintetica, aunque mantiene la senal binaria `synthetic_detected`.
-- Sesgos no documentados en la informacion disponible; la cobertura esta limitada a las 10 familias de proveedores listadas.
-- No se documentan metricas de calibracion, tasas de falsos positivos ni tamanos de dataset de evaluacion, lo que dificulta estimar el rendimiento en produccion.
-- Licencia Apache 2.0 permite uso comercial, pero el modelo depende del stem visual `OwensLab/commfor-model-384` / `TensorFold/detectra-v1` bajo licencia MIT; conviene revisar las condiciones de los artefactos incluidos en el repo de 3,9 GB.
-- El repo incluye ficheros ejecutables (`infer.py`, `benchmark.py`) que se pueden lanzar con `uv run` directamente desde Hugging Face; en entornos de produccion conviene descargarlos y auditarlos antes de ejecutarlos.
-- Al ser un modelo de vision, no procesa texto ni idiomas; la fila de idiomas no aplica.
+- No es un detector de SynthID: no decodifica ni verifica cargas de marca de agua criptográfica o invisible, y `watermark_truth` se reporta siempre como `unknown`.
+- Las etiquetas describen pipelines completos de generación y exportación, por lo que el renderizador, la geometría, la codificación, el posprocesado y el estado de marca de agua pueden confundirse entre sí.
+- `unknown` no implica ausencia de SynthID, y una etiqueta de proveedor no prueba la presencia de SynthID.
+- Riesgo de atribución errónea ante pipelines no vistos o fuertemente transformados; el diseño open-set mitiga pero no elimina este riesgo.
+- No se documentan sesgos conocidos ni tasas de alucinación en la información disponible.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las licencias de los componentes derivados (el tallo ViT procede de `OwensLab/commfor-model-384`, MIT).
+- El repositorio ocupa 4,0 GB aunque el bundle de pesos declarado es de 67,00 MB; verificar el artefacto descargado antes de desplegar en producción.
+- No hay datos publicados de benchmarks, latencia ni throughput que permitan estimar el rendimiento en producción.
 
 ## Enlaces
-
-- Modelo en Hugging Face: https://huggingface.co/wiltodelta/raiw-source-classify
-- Repositorio GitHub: https://github.com/wiltodelta/remove-ai-watermarks
-- Demo Colab: https://colab.research.google.com/github/wiltodelta/remove-ai-watermarks/blob/main/docs/source-classify-hf/demo.ipynb
-- Space de Hugging Face: https://huggingface.co/spaces/wiltodelta/remove-ai-watermarks
-- Servicio web: https://raiw.cc
-- Script de inferencia: https://huggingface.co/wiltodelta/raiw-source-classify/resolve/main/infer.py
-- Script de benchmark: https://huggingface.co/wiltodelta/raiw-source-classify/resolve/main/benchmark.py
+- Hugging Face: https://huggingface.co/wiltodelta/raiw-source-classify
+- GitHub del proyecto: https://github.com/wiltodelta/remove-ai-watermarks
+- Releases de pesos: https://github.com/wiltodelta/raiw-source-classify/releases/latest
+- Leaderboard de detectores: https://huggingface.co/spaces/wiltodelta/ai-image-detector-leaderboard
+- Demo en Hugging Face Space: https://huggingface.co/spaces/wiltodelta/remove-ai-watermarks
+- Demo web: https://raiw.cc
+- Notebook de demostración: https://colab.research.google.com/github/wiltodelta/raiw-source-classify/blob/main/demo.ipynb
+- Script de inferencia: https://raw.githubusercontent.com/wiltodelta/raiw-source-classify/main/infer.py
+- Script de benchmark: https://raw.githubusercontent.com/wiltodelta/raiw-source-classify/main/benchmark.py
+- Modelo base del tallo visual: https://huggingface.co/OwensLab/commfor-model-384

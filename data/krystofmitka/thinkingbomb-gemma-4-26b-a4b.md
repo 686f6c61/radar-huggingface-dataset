@@ -2,101 +2,110 @@
 
 ## Resumen
 
-ThinkingBomb-gemma-4-26B-A4B es un ajuste fino del modelo multimodal google/gemma-4-26B-A4B-it de Google DeepMind, publicado por el usuario krystofmitka bajo licencia Apache 2.0. El modelo incorpora un mecanismo de control de esfuerzo de razonamiento ("effort control") entrenado mediante un calentamiento supervisado seguido de GRPO, que permite seleccionar mediante el prompt de sistema uno de cuatro niveles de esfuerzo (25, 50, 75 y 100) sobre un único conjunto de pesos.
+ThinkingBomb-gemma-4-26B-A4B es un ajuste fino del modelo multimodal google/gemma-4-26B-A4B-it, publicado por el usuario krystofmitka en Hugging Face. Su particularidad es el control de esfuerzo de razonamiento ("effort control"): un único conjunto de pesos permite seleccionar, mediante una instrucción en el system prompt, cuatro niveles de esfuerzo (25, 50, 75 y 100) que modulan cuánto "piensa" el modelo antes de responder. Está entrenado con un calentamiento supervisado seguido de GRPO (Group Relative Policy Optimization).
 
-La arquitectura subyacente es la de Gemma 4, un transformer multimodal de tipo mixture-of-experts con aproximadamente 25.800 millones de parámetros totales y alrededor de 4.000 millones de parámetros activos por token (de ahí la denominación A4B), capaz de procesar entradas de imagen y texto. El checkpoint publicado corresponde al paso 167 del entrenamiento, con el adaptador LoRA de GRPO ya fusionado en los pesos BF16, por lo que no requiere cargar un adaptador separado.
+El modelo conserva la arquitectura del Gemma 4 26B A4B original de Google DeepMind, con unos 25.806 millones de parámetros totales según los safetensors del repositorio, y mantiene la capacidad image-text-to-text (procesa imágenes y texto). El repositorio ocupa 51,6 GB en BF16 y se distribuye bajo licencia Apache 2.0. Está pensado para desarrolladores que quieren reducir el coste de razonamiento en producción sin cambiar de modelo: bajar el esfuerzo reduce drásticamente los tokens de pensamiento a cambio de una pérdida pequeña de precisión.
 
-El modelo es relevante porque explora el control explícito del coste computacional del razonamiento en tiempo de inferencia: el mismo modelo puede producir respuestas más o menos extensas en tokens de pensamiento según la preferencia indicada. No obstante, el propio autor advierte de que el entrenamiento quedó pausado en el paso 167 (frente a los 500 pasos previstos) y que la evaluación disponible es preliminar y parcial, por lo que sus resultados no demuestran de forma concluyente la preservación general de capacidades.
+Es relevante ahora porque propone una alternativa práctica al problema del gasto en tokens de razonamiento: en lugar de entrenar modelos separados para cada nivel de esfuerzo, un solo checkpoint aprende a modular su profundidad de razonamiento. Los benchmarks publicados (parciales, con cobertura incompleta) muestran reducciones de tokens de pensamiento de entre el 30 % y el 64 % con caídas de precisión que en varios casos son de menos de un punto porcentual.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text) con mezcla de expertos (MoE), basada en Gemma 4 |
-| Parametros totales | 25.805.933.872 (aprox. 25,8 mil millones) |
-| Parametros activos | Aprox. 4 mil millones (denominacion A4B); cifra exacta no disponible |
-| Longitud de contexto | 262.144 tokens (usada en la evaluacion y en el ejemplo de vLLM) |
-| Tipos de cuantizacion | No disponible (el repositorio distribuye pesos en BF16) |
-| Idiomas soportados | No disponible |
-| Licencia | Apache 2.0 (con enlace a la licencia de Gemma 4 de Google) |
-| Formato de pesos | safetensors (BF16, fusionados) |
+| Arquitectura | Transformer multimodal (image-text-to-text) basada en Gemma 4 26B A4B; detalles internos de la arquitectura no disponibles |
+| Parametros totales | 25.805.933.872 |
+| Parametros activos | no disponible (el nombre "A4B" sugiere arquitectura MoE con ~4B activos, pero no se confirma en la informacion proporcionada) |
+| Longitud de contexto | hasta 262.144 tokens en el ejemplo de vLLM (`--max-model-len 262144`); contexto nativo del modelo base no disponible |
+| Tipos de cuantizacion | no disponible (solo se publican pesos BF16) |
+| Idiomas soportados | no disponible (no se declaran idiomas en la model card) |
+| Licencia | Apache 2.0 (con license_link a la licencia de Gemma 4 de Google) |
+| Formato de pesos | safetensors (BF16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de google/gemma-4-26B-A4B-it, un transformer multimodal con mezcla de expertos que procesa entradas conjuntas de imagen y texto. Sobre esa base, el autor aplicó un calentamiento supervisado (supervised warm-up) seguido de un ajuste con GRPO (Group Relative Policy Optimization), una técnica de aprendizaje por refuerzo orientada a mejorar el razonamiento. El resultado del paso 167 se fusionó en los pesos BF16 del modelo base, generando un checkpoint autónomo que incluye el procesador, el tokenizador, la plantilla de chat y la configuración originales de Gemma 4.
+El modelo parte de google/gemma-4-26B-A4B-it, un modelo multimodal de Google DeepMind que acepta entradas de imagen y texto. ThinkingBomb no modifica la arquitectura: reutiliza el procesador, tokenizador, chat template y configuración originales de Gemma 4. El entrenamiento consistió en un calentamiento supervisado seguido de GRPO, una técnica de aprendizaje por refuerzo que optimiza directamente recompensas verificables. El objetivo del entrenamiento es que el modelo aprenda a asociar la instrucción "Reasoning Effort: N" con distintos niveles de profundidad de razonamiento, sin necesidad de pesos separados por nivel.
 
-La innovación principal es el condicionamiento por esfuerzo: un único conjunto de pesos responde a cuatro niveles de esfuerzo (25, 50, 75 y 100) indicados en la primera línea del prompt de sistema con el formato "Reasoning Effort: N (range 1–100; higher values request more thorough reasoning)". Estos valores expresan preferencias de razonamiento aprendidas, no límites duros de tokens ni porcentajes de un presupuesto. El razonamiento debe mantenerse activado (enable_thinking=True). El autor no documenta el volumen de tokens de entrenamiento ni la composición del dataset, y el entrenamiento quedó pausado en el paso 167 frente a los 500 previstos.
+La innovación principal es el "effort control": los cuatro valores (25, 50, 75, 100) son preferencias de razonamiento aprendidas, no límites duros de tokens ni porcentajes de un presupuesto. La instrucción debe ser exactamente la primera línea del system prompt y el modo thinking debe permanecer activado (`enable_thinking=True`). El repositorio incluye `effort_presets.json` con las cuatro instrucciones completas, `examples/` con peticiones de chat por nivel, `checkpoint_metadata.json` con la identidad del checkpoint y `weights_manifest.json` con tamaños y SHA-256 de cada shard. El entorno de evaluación usado fue Transformers 5.20.2 y PyTorch 2.14.0.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multimodal (entrada de imagen y texto, salida de texto).
-- Razonamiento con canal de pensamiento explícito (thinking channel) separado de la respuesta final.
-- Control de esfuerzo de razonamiento en cuatro niveles entrenados (25, 50, 75 y 100) mediante prompt de sistema.
-- Razonamiento matemático y resolución de problemas paso a paso (el ejemplo de la model card resuelve una ecuación lineal).
-- Conversación multi-turno con plantilla de chat compatible con Transformers y vLLM.
-- Procesamiento de contexto largo de hasta 262.144 tokens.
+- Generación de texto y razonamiento multi-paso con profundidad ajustable mediante el system prompt (niveles 25, 50, 75 y 100).
+- Razonamiento matemático: evaluado en AIME 2026, HMMT febrero 2026, HMMT noviembre 2025 y GPQA-Diamond.
+- Generación de código: evaluado en LiveCodeBench v6.
+- Comprensión de imágenes (image-text-to-text): evaluado en RealWorldQA.
+- Seguimiento de instrucciones: evaluado en IFBench.
+- Razonamiento sobre contexto largo: evaluado en AA-LCR y LongBench v2.
+- Capacidades multilingües: evaluado en MMMLU (multilingual MMLU).
+- Modo thinking con canal de razonamiento separado de la respuesta final (`enable_thinking=True`).
+- Compatible con endpoints y con vLLM para despliegue en servidor.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
+- Soporte de agentes: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Razonamiento con coste controlado: en aplicaciones donde la latencia y el gasto en tokens importan, se puede fijar un esfuerzo bajo (25) para consultas simples y elevarlo (75 o 100) solo en tareas complejas, usando el mismo despliegue y los mismos pesos.
-- Asistencia en resolución de problemas matemáticos y científicos: el modelo genera cadenas de razonamiento explícitas y una respuesta final, útil en herramientas educativas o de verificación de cálculos, como demuestra el ejemplo de ecuación lineal de la model card.
-- Procesamiento de documentos e imágenes combinados: al ser image-text-to-text, puede recibir capturas, diagramas o páginas escaneadas junto con instrucciones textuales para extracción o análisis.
-- Análisis de contexto largo: con 262.144 tokens de ventana, es adecuado para resumir o razonar sobre expedientes, informes o bases de código extensas en una sola pasada.
-- Despliegue en servicios de chat mediante vLLM: el autor documenta el servicio con `vllm serve` y peticiones de chat-completion con `chat_template_kwargs={"enable_thinking": true}`, lo que facilita integrarlo en backends de API compatibles con OpenAI.
-- Experimentación en investigación sobre razonamiento condicionado: sirve como base para estudiar cómo el esfuerzo declarado afecta al número de tokens de pensamiento y a la precisión, dado que el repositorio incluye presets y ejemplos de petición para los cuatro niveles.
+- Razonamiento matemático en producción con coste controlado: usar esfuerzo 25 para consultas rutinarias y esfuerzo 100 para problemas difíciles, reduciendo los tokens de pensamiento hasta un 58,7 % en HMMT febrero 2026 con una precisión ligeramente superior a la del modelo base.
+- Análisis de documentos e imágenes: el modelo procesa entradas image-text-to-text; en RealWorldQA con esfuerzo 25 mantiene una precisión del 72,29 % frente al 71,88 % del base, con un 40 % menos de tokens de pensamiento, lo que abarata tareas de inspección visual repetitivas.
+- Asistentes conversacionales con contexto largo: el ejemplo de vLLM configura 262.144 tokens de ventana, adecuado para conversaciones multi-turno o análisis de documentos extensos (LongBench v2 con esfuerzo 25 mantiene el 60,54 % de precisión del base con un 30,3 % menos de tokens).
+- Generación de código asistida: con esfuerzo 25 se obtiene un 74,29 % en LiveCodeBench v6 frente al 75,92 % del base, con un 38,4 % menos de tokens de razonamiento, útil en pipelines de CI/CD donde la latencia importa.
+- Cumplimiento estricto de instrucciones: en IFBench con esfuerzo 25 la precisión es del 76,00 % frente al 75,90 % del base, con un 29,9 % menos de tokens, adecuado para sistemas que deben seguir formatos y restricciones rígidas.
+- Evaluación de modelos y ablaciones: los cuatro niveles permiten estudiar el compromiso precisión-coste de razonamiento con un único checkpoint, útil para investigación en RL y razonamiento.
+- Despliegue multilingüe: en MMMLU con esfuerzo 25 la precisión es del 84,15 % frente al 84,94 % del base, con un 64,2 % menos de tokens de pensamiento, lo que reduce costes en aplicaciones multilingües.
 
 ## Benchmarks y rendimiento
 
-Resultados preliminares de una sola pasada sobre GPQA-Diamond (198 preguntas, todas respondidas en cada configuración; temperatura 1.0, top-p 0.95, top-k 64, máximo 65.536 tokens de salida, contexto 262.144, vLLM y EvalScope 1.14.1; ninguna respuesta truncada):
+La model card publica una evaluación parcial: 107 de 312 pasadas de esfuerzo 25 completadas. Base = Gemma 4 26B-A4B-it original sin instrucción de esfuerzo; Ours = ThinkingBomb con esfuerzo 25.
 
-| Configuracion | Precision | Tokens de pensamiento medios | Tokens de salida medios |
-|---|---:|---:|---:|
-| Gemma 4 original | 79,80% | 11.040 | 11.822 |
-| Checkpoint 167, sin linea de esfuerzo | 80,81% | 8.849 | 9.580 |
-| Checkpoint 167, esfuerzo 25 | 81,31% | 4.726 | 5.238 |
-| Checkpoint 167, esfuerzo 50 | 76,26% | 6.147 | 6.781 |
-| Checkpoint 167, esfuerzo 75 | 81,82% | 8.131 | 8.852 |
-| Checkpoint 167, esfuerzo 100 | 79,29% | 8.362 | 9.092 |
+| Benchmark | Base (%) | Esfuerzo 25 (%) | Tokens pensamiento base | Tokens pensamiento esfuerzo 25 | Reducción (%) |
+|---|---:|---:|---:|---:|---:|
+| AIME 2026 | 88,10 ± 3,01 | 84,55 ± 1,35 | 15.813 | 7.460 | 52,8 |
+| HMMT febrero 2026 | 70,20 ± 4,68 | 72,27 ± 1,96 | 25.650 | 10.585 | 58,7 |
+| HMMT noviembre 2025 | 83,33 ± 3,56 | 74,85 ± 1,98 | 17.883 | 7.810 | 56,3 |
+| GPQA-Diamond | 80,59 ± 0,46 | 78,28 | 11.146 | 4.729 | 57,6 |
+| RealWorldQA | 71,88 ± 0,70 | 72,29 | 2.086 | 1.251 | 40,0 |
+| IFBench | 75,90 ± 1,11 | 76,00 | 6.515 | 4.569 | 29,9 |
+| AA-LCR | 66,67 ± 5,17 | 63,00 | 5.598 | 3.713 | 33,7 |
+| LongBench v2 | 60,23 ± 1,51 | 60,54 | 10.188 | 7.104 | 30,3 |
+| LiveCodeBench v6 | 75,92 ± 1,51 | 74,29 | 12.944 | 7.970 | 38,4 |
+| MMLU-Pro | 84,81 ± 0,20 | 84,51 | 4.923 | 2.982 | 39,4 |
+| MMMLU | 84,94 ± 0,21 | 84,15 | 2.257 | 808 | 64,2 |
 
-La evaluación de doce benchmarks se detuvo a petición del propietario: la pasada de MMLU-Pro quedó incompleta y los otros diez benchmarks no llegaron a iniciarse. Además, la evaluación del nivel de esfuerzo 25 solo completó 107 de 312 pasadas. Por tanto, estos datos no establecen preservación general de capacidades ni mejoras de precisión.
+No se han publicado resultados de benchmarks para los niveles de esfuerzo 50, 75 y 100 en la información disponible. Los resultados del modelo base corresponden al modelo original de Google, no a este ajuste fino.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 52 GB solo para los pesos BF16, más memoria adicional para el contexto y el estado de inferencia; el autor recomienda disponer de memoria suficiente para el modelo completo más la inferencia.
-- GPU recomendadas: el entorno de evaluación usó una GPU B300 con backends Triton de atención y MoE; para BF16 se requieren aceleradores con al menos 80 GB de memoria (A100 80 GB, H100, B300).
-- GPU de consumo: no cabe en GPU de consumo en BF16; no se documentan versiones cuantizadas GGUF ni requisitos para ellas.
-- Opciones de despliegue: Transformers (probado con 5.20.2 y PyTorch 2.14.0, usando `AutoModelForImageTextToText` y `AutoProcessor`) y vLLM con soporte de Gemma 4 (`--max-model-len 262144`). No se documenta soporte de llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles; los tokens de salida medios por consulta en GPQA-Diamond oscilan entre 5.238 (esfuerzo 25) y 11.822 (modelo original), lo que da una idea del coste relativo.
+- VRAM estimada: los pesos en BF16 ocupan aproximadamente 52 GB (51,6 GB de repo), más memoria de inferencia; se necesita en torno a 60-70 GB de VRAM para el modelo completo en BF16 con contexto moderado.
+- GPU recomendadas: la evaluación se realizó en una B300 con backends Triton de atención y MoE; también son válidas A100 80 GB, H100 80 GB o H200.
+- No cabe en GPU de consumo (RTX 4090 con 24 GB) en BF16; requeriría cuantización, para la que no se publican pesos en el repositorio.
+- Opciones de despliegue: Transformers 5.20.2 o superior con soporte de Gemma 4, y vLLM con soporte de Gemma 4 (`vllm serve ... --max-model-len 262144`).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | GPQA-Diamond | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Control de esfuerzo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThinkingBomb-gemma-4-26B-A4B (checkpoint 167) | 25,8 mil millones totales / aprox. 4 mil millones activos | 262.144 | 76,26%–81,82% según esfuerzo (preliminar) | Apache 2.0 | Hugging Face |
-| google/gemma-4-26B-A4B-it (modelo base) | 25,8 mil millones totales / aprox. 4 mil millones activos | 262.144 (usado en la evaluacion) | 79,80% | Apache 2.0 | Hugging Face |
-| Otros modelos de tamano o tarea comparable | No disponible | No disponible | No disponible | No disponible | No disponible |
+| ThinkingBomb-gemma-4-26B-A4B | 25,8B | hasta 262.144 (config. vLLM) | Sí (25/50/75/100) | Apache 2.0 | Hugging Face |
+| google/gemma-4-26B-A4B-it | 25,8B (aprox.) | no disponible | No | Apache 2.0 | Hugging Face |
+| Alternativas de razonamiento con control de esfuerzo | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de datos de benchmarks comparativos con otros modelos de razonamiento de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Entrenamiento incompleto: el checkpoint corresponde al paso 167 de los 500 previstos y el entrenamiento está pausado; el autor indica que esta no es la versión final planificada.
-- Evaluación parcial: solo hay resultados preliminares de una pasada en GPQA-Diamond; MMLU-Pro quedó incompleto y diez benchmarks no se iniciaron, por lo que no se puede afirmar preservación general de capacidades.
-- Resultados no agregados: no hay intervalos de confianza entre semillas y el nivel de esfuerzo 25 solo completó 107 de 312 pasadas.
-- Niveles de esfuerzo validados: solo se validan los valores 25, 50, 75 y 100; valores fuera de ese conjunto no están validados. El experimento con esfuerzo 10 se detuvo y no es un resultado soportado.
-- El esfuerzo no es un límite duro: los valores expresan preferencias aprendidas, no topes de tokens ni porcentajes de presupuesto, por lo que el coste real puede variar.
-- El razonamiento debe mantenerse activado (`enable_thinking=True`); desactivarlo queda fuera del protocolo documentado.
-- Riesgo de alucinación y sesgos: no documentados específicamente para este ajuste; se heredan los del modelo base Gemma 4, no detallados en la información disponible.
-- Idiomas soportados: no disponibles; no se documenta cobertura multilingüe de este ajuste.
-- Licencia: Apache 2.0, con enlace a la licencia de Gemma 4 de Google; deben revisarse `LICENSE`, `NOTICE` y `BASE_MODEL_CARD.md` para las condiciones upstream antes de uso comercial.
-- Los benchmarks del modelo base en su model card describen el modelo original, no este ajuste fino.
-- Requiere versiones recientes de Transformers con soporte de Gemma 4 y memoria suficiente para BF16; no hay pesos cuantizados publicados.
+- La evaluación publicada está incompleta: solo 107 de 312 pasadas de esfuerzo 25 completadas, y varios benchmarks tienen una única semilla (GPQA-Diamond, RealWorldQA, IFBench, AA-LCR, LongBench v2, LiveCodeBench v6, MMLU-Pro, MMMLU).
+- No hay resultados publicados para los niveles de esfuerzo 50, 75 y 100; no se puede validar su comportamiento.
+- Los valores de esfuerzo fuera de los cuatro entrenados (25, 50, 75, 100) no están validados.
+- La instrucción de esfuerzo debe ser exactamente la primera línea del system prompt y el modo thinking debe estar activado; un uso incorrecto puede degradar el comportamiento.
+- El modelo puede truncar el razonamiento o la respuesta final si se limita `max_new_tokens` por debajo de lo previsto (el protocolo de evaluación usa 65.536).
+- Riesgo de alucinación y sesgos: no documentados en la información proporcionada; aplican los del modelo base Gemma 4.
+- Idiomas soportados no declarados; el modelo se evaluó en MMMLU pero no se especifica la cobertura lingüística.
+- Licencia Apache 2.0 con enlace a la licencia de Gemma 4 de Google; conviene revisar `LICENSE`, `NOTICE` y `BASE_MODEL_CARD.md` para condiciones de uso comercial.
+- Los benchmarks del modelo base en la model card original describen el modelo original, no este ajuste fino.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/krystofmitka/ThinkingBomb-gemma-4-26B-A4B
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
-- Repositorio de ejemplo del autor (referenciado en la model card): https://huggingface.co/krystofmitka/gemma-4-26B-A4B-effort-checkpoint167
-- Papers, blogs, repos y demos adicionales: no disponibles en la información proporcionada.
+- Tabla de benchmarks (SVG): https://huggingface.co/krystofmitka/ThinkingBomb-gemma-4-26B-A4B/resolve/main/eval/thinkingbomb-effort25/table.svg
+- Ejemplos de peticiones: `examples/effort_25.json`, `examples/effort_50.json`, `examples/effort_75.json`, `examples/effort_100.json` en el repositorio
+- Presets de esfuerzo: `effort_presets.json` en el repositorio

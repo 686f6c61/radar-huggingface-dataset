@@ -2,83 +2,109 @@
 
 ## Resumen
 
-Qwen3.5-122B-A10B-AWQ-4bit es una cuantización a 4 bits (AWQ INT4, W4A16) del modelo Qwen3.5-122B-A10B de Qwen, realizada por el usuario axteam y orientada al despliegue eficiente con vLLM. El modelo base es un MoE multimodal de 122B parámetros totales con unos 10B parámetros activos por token, que combina atención híbrida (linear-attention más full-attention) con una torre de visión y una cabecera de predicción multi-token (MTP). La versión cuantizada reduce el tamaño en disco a unos 78,8 GB, haciendo viable servir el modelo en una sola GPU de gama alta o en configuraciones de dos GPU.
+Qwen3.5-122B-A10B-AWQ-4bit es una cuantizacion de 4 bits del modelo multimodal Qwen3.5-122B-A10B, desarrollado originalmente por el equipo Qwen (Alibaba) y cuantizado por axteam para servir con vLLM de forma eficiente. Se trata de un modelo de arquitectura hibrida que combina atencion lineal con atencion completa, y una estructura Mixture-of-Experts (MoE) con 256 expertos mas un experto compartido, de los cuales se activan aproximadamente 10B de los 122B totales en cada paso.
 
-Su relevancia radica en que ofrece las capacidades del modelo original —razonamiento con thinking mode, visión, generación de texto y arquitectura MoE eficiente— con un consumo de memoria muy inferior al de los pesos en BF16. Está publicado bajo licencia Apache-2.0, lo que permite su uso comercial sin restricciones, y se distribuye en formato compressed-tensors pensado específicamente para el stack de vLLM.
+El modelo resuelve el problema del coste de despliegue de un MoE multimodal de gran tamano: gracias a la cuantizacion AWQ INT4 (W4A16) con grupo de tamano 32, el checkpoint pasa de requerir el equivalente a un modelo BF16 de 122B a ocupar unos 78,8 GB en disco, manteniendo segun el autor una recuperacion media del 99,1% respecto al original BF16 en una bateria de benchmarks. Incluye torre de vision, cabecera de prediccion multi-token (MTP) y partes SSM no cuantizadas en BF16.
 
-## Especificaciones técnicas
+Es relevante ahora porque permite servir un modelo de ~125.000 millones de parametros con capacidades de imagen-texto en un unico nodo con GPUs de 80 GB, manteniendo licencia Apache-2.0. La revision del 1 de noviembre de 2026 corrige un error de la primera subida en el que el router MoE y la compuerta del experto compartido no estaban compensados durante el suavizado AWQ, lo que desviaba tokens a expertos distintos de los del modelo original.
 
-| Parámetro | Valor |
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida (linear-attention + full-attention), MoE (256 expertos + experto compartido), multimodal (visión), cabecera MTP |
-| Parámetros totales | 125.086.497.008 (dato real de safetensors; ~122B nominales) |
-| Parámetros activos | ~10B por token (MoE) |
-| Longitud de contexto | No disponible (el ejemplo de la model card usa `--max-model-len 32768`) |
-| Tipos de cuantización | AWQ INT4 W4A16 (pesos INT4 asimétricos, group size 32, escala BF16 + zero-point INT4; activaciones BF16); componentes sensibles en BF16 (~4% de parámetros) |
-| Idiomas soportados | No disponible (el corpus de calibración es mayoritariamente coreano con corpus mixto) |
+| Arquitectura | Hibrida (atencion lineal + atencion completa), MoE con 256 expertos + experto compartido, multimodal (vision), cabecera MTP |
+| Parametros totales | 125.086.497.008 (~125B) |
+| Parametros activos | ~10B por token (segun model card: ~10B / 122B total) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | AWQ INT4 W4A16 (pesos INT4 asimetricos, grupo de tamano 32, escala BF16 + zero-point INT4, activaciones BF16); formato compressed-tensors `pack-quantized` |
+| Idiomas soportados | no disponible (la calibracion AWQ uso un corpus mixto con predominio de coreano) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | Safetensors, compressed-tensors `pack-quantized` |
+| Formato de pesos | safetensors (compressed-tensors), compatible con transformers y vLLM |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.5-122B-A10B emplea una arquitectura híbrida que combina capas de atención lineal (con componentes conv1d, A_log y dt_bias típicos de modelos tipo SSM/linear attention) con capas de atención completa, lo que reduce el coste de la caché KV en secuencias largas. Sobre esa base se sitúa un bloque MoE con 256 expertos más un experto compartido, activando unos 10B de los 122B parámetros totales en cada token. Incluye además una torre de visión con proyector para entrada de imágenes y una cabecera de predicción multi-token (MTP) que puede acelerar la decodificación.
+El modelo base es un transformer hibrido que intercala capas de atencion lineal con capas de atencion completa, organizado como Mixture-of-Experts con 256 expertos enrutados mas un experto compartido. La activacion ronda los 10B parametros frente a los ~122B totales, lo que reduce el coste computacional por token. Incluye una torre de vision con proyector para entrada image-text-to-text y una cabecera de prediccion multi-token (MTP), habitualmente empleada para decodificacion especulativa. No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO en el modelo base.
 
-La cuantización AWQ es post-training (PTQ), sin reentrenamiento: utiliza un pequeño conjunto de calibración de 256 muestras (corpus mixto con predominio de coreano) para identificar y proteger los canales de pesos salientes antes del redondeo a INT4. En esta build se mantienen en BF16 la torre de visión y el proyector, la cabecera MTP, todas las RMSNorm, los embeddings y el LM head, el router MoE y la puerta del experto compartido, y las partes no lineales de la atención lineal, aproximadamente el 4% de los parámetros, con el objetivo de preservar la calidad. El tokenizador, el chat template y el generation config son idénticos a los del original; solo config.json añade el bloque de quantization_config.
+Esta publicacion concreta es una cuantizacion post-entrenamiento (PTQ) sin reentrenamiento: AWQ usa 256 muestras de calibracion (corpus mixto con predominio de coreano) para proteger canales de pesos salientes antes del redondeo. Se mantienen en BF16 la torre de vision y el proyector (`model.visual.*`), la cabecera MTP (`mtp.*`), todas las RMSNorm, los embeddings de tokens, la LM head, el router MoE (`mlp.gate`), la compuerta del experto compartido y las partes no lineales del SSM (`linear_attn.conv1d/A_log/dt_bias`), en total cerca del 4% de los parametros. `linear_attn.A_log` y la `linear_attn.norm` con compuerta, en FP32 en el original, se almacenan en BF16. La revision del 1 de noviembre de 2026 recompenso el router y la compuerta del experto compartido durante el suavizado AWQ (diferencia mediana por canal inferior al 2% frente al original) y excluyo del reescalado los canales con ganancia de norma cero, corrigiendo la perdida de precision en la capa 27 de la primera subida.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno con plantilla de chat estándar de Qwen.
-- Razonamiento con thinking mode activado por defecto en el chat template (desactivable con `chat_template_kwargs={"enable_thinking": False}`).
-- Comprensión de imágenes (pipeline image-text-to-text): acepta entrada de imagen mediante URL o data URI junto al texto.
-- Arquitectura MoE con ~10B parámetros activos, que permite latencias de inferencia propias de un modelo mucho menor manteniendo la capacidad de uno de 122B.
-- Cabecera de predicción multi-token (MTP) para acelerar la generación.
-- Atención híbrida (linear + full attention) que reduce el coste de memoria de la caché KV en contextos largos.
-- Compatibilidad con servidores OpenAI-compatible vía vLLM, lo que facilita la integración con tooling existente (tool calling y capacidades de agente dependen del modelo base; no se detalla en la información disponible).
+- Generacion de texto conversacional multi-turno.
+- Razonamiento y resolucion de problemas, con resultados medidos en MMLU, ARC-Challenge y Winogrande.
+- Matematicas y razonamiento aritmetico (GSM8K).
+- Comprension de imagenes: pipeline image-text-to-text con torre de vision integrada.
+- Capacidades multilingues, con evaluacion especifica en coreano (KMMLU, HAE-RAE) y en ingles (MMLU, GSM8K); el conjunto completo de idiomas no esta documentado.
+- Cabecera MTP (multi-token prediction) para decodificacion especulativa.
+- Soporte de tool calling y function calling: no documentado en la informacion disponible.
+- Soporte de agentes y razonamiento multi-paso: no documentado en la informacion disponible.
 
 ## Casos de uso
 
-- Servir un modelo grande de forma autosuficiente en una GPU: con ~78,8 GB en disco en INT4, el modelo cabe en una sola GPU de 80 GB (A100/H100), permitiendo despliegues de razonamiento avanzado sin clúster multi-nodo.
-- Chatbots conversacionales con capacidad de razonamiento: el thinking mode por defecto permite respuestas elaboradas paso a paso en tareas complejas, con muestreo recomendado temperature 0,6, top_p 0,95 y top_k 20.
-- Análisis de imágenes integrado en aplicaciones: se pueden enviar imágenes por URL o data URI para descripción, extracción de información visual o QA multimodal directamente desde un endpoint OpenAI-compatible.
-- Procesamiento por lotes offline en Python: la API `LLM.chat()` de vLLM permite ejecutar volúmenes grandes de inferencia (clasificación, resumen, generación sintética de datos) sin exponer un servidor.
-- Serving de solo texto optimizado: añadiendo `--limit-mm-per-prompt '{"image": 0, "video": 0}'` se libera el presupuesto de memoria del encoder de visión cuando no se necesita multimodalidad.
-- Contextos largos con memoria contenida: la combinación de atención lineal y KV-cache en FP8 (`--kv-cache-dtype fp8`) reduce aproximadamente a la mitad la memoria de caché, útil para documentos extensos o lotes grandes.
+- Servicio de chat multimodal en produccion: el modelo acepta imagen y texto y puede desplegarse con vLLM 0.32 en un nodo con GPUs de 80 GB gracias a los ~78,8 GB del checkpoint INT4, gestionando conversaciones multi-turno con un unico endpoint compatible con la API de OpenAI.
+- Analisis documental con imagenes: extraccion y resumen de informacion de capturas, formularios o diagramas combinando la torre de vision con generacion de texto, sin necesidad de un pipeline OCR separado.
+- Asistencia en razonamiento matematico: resolucion de problemas tipo GSM8K con una recuperacion del 99,2% respecto al BF16 original, adecuada para tutoria o verificacion de calculos.
+- Evaluacion y benchmarking interno: su fidelidad medida (perplejidad +2,4%, acuerdo top-1 del 93,8%) permite usarlo como aproximacion barata del modelo BF16 en pruebas de regresion de prompts antes de escalar al modelo completo.
+- Procesamiento multilingue con foco en coreano e ingles: los resultados en KMMLU (71,20) y HAE-RAE (80,93) lo hacen util para clasificacion, resumen y respuesta a preguntas en esos idiomas.
+- Despliegue con decodificacion especulativa: la cabecera MTP conservada en BF16 permite acelerar la generacion en vLLM sin un modelo draft adicional.
+- Sustitucion de inferencia BF16 en entornos con restricciones de memoria: reduce el espacio en disco y en VRAM aproximadamente a la mitad frente a pesos BF16, manteniendo el 99,1% de la puntuacion media en benchmarks.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Al tratarse de una cuantización PTQ, el rendimiento debería aproximarse al del modelo base Qwen3.5-122B-A10B, cuyos resultados tampoco constan en la información proporcionada.
+Resultados medidos por el autor con lm-evaluation-harness sobre vLLM, decodificacion greedy, prompts estilo completion sin plantilla de chat. MMLU corresponde a la variante generativa (`mmlu_generative`), no comparable con puntuaciones obtenidas por log-likelihood. Entre parentesis, porcentaje de recuperacion respecto al BF16 original.
+
+| Benchmark | BF16 (original) | FP8-dynamic | AWQ-8bit | NVFP4A16 | NVFP4 | AWQ-4bit (este repo) |
+|---|---|---|---|---|---|---|
+| MMLU (5-shot, generativo) | 88,06 | 87,89 (99,8%) | 87,89 (99,8%) | 87,91 (99,8%) | 87,69 (99,6%) | 87,69 (99,6%) |
+| GSM8K (5-shot, estricto) | 84,46 | 83,93 (99,4%) | 84,23 (99,7%) | 84,84 (100,4%) | 80,52 (95,3%) | 83,78 (99,2%) |
+| ARC-Challenge (0-shot) | 63,74 | 63,91 (100,3%) | 63,74 (100,0%) | 63,40 (99,5%) | 62,71 (98,4%) | 62,80 (98,5%) |
+| Winogrande (5-shot) | 73,09 | 73,24 (100,2%) | 73,56 (100,6%) | 72,77 (99,6%) | 73,16 (100,1%) | 73,01 (99,9%) |
+| KMMLU (5-shot, directo) | 71,72 | 71,72 (100,0%) | 71,67 (99,9%) | 71,35 (99,5%) | 70,80 (98,7%) | 71,20 (99,3%) |
+| HAE-RAE (0-shot) | 82,31 | 81,39 (98,9%) | 81,76 (99,3%) | 81,48 (99,0%) | 80,20 (97,4%) | 80,93 (98,3%) |
+| Media | 77,23 | 77,01 (99,7%) | 77,14 (99,9%) | 76,96 (99,7%) | 75,85 (98,2%) | 76,57 (99,1%) |
+
+Fidelidad frente al original BF16 en un conjunto interno mixto ingles/coreano de 100 prompts (respuestas greedy del BF16 original evaluadas bajo cada build), medido con vLLM 0.32 el 2 de noviembre de 2026:
+
+| Metrica | Este modelo | BF16 original |
+|---|---|---|
+| Perplejidad (menor = mas cercano) | 1,3579 | 1,3258 (+2,4%) |
+| Acuerdo top-1 en siguiente token | 93,8% | 98,4% |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: unos 78,8 GB solo de pesos; con caché KV y overhead de vLLM, se recomienda una GPU de 80 GB (o dos GPU de 48 GB con tensor parallel). Con `--max-model-len 32768` y KV-cache en FP8, una A100/H100 de 80 GB es suficiente.
-- GPU recomendadas: NVIDIA A100 80 GB, H100 80 GB. En consumer no cabe en una RTX 4090 (24 GB); sería necesario al menos hardware profesional de 80 GB o multi-GPU consumer (por ejemplo, 4x RTX 3090/4090 con tensor parallel, no verificado en la documentación).
-- No cabe en una única GPU consumer estándar; el tamaño en disco descarta despliegues en portátiles o GPU de 8-24 GB.
-- Despliegue: diseñado para vLLM (`vllm serve` con servidor OpenAI-compatible en el puerto 8000, o inferencia offline con la clase `LLM`). No hay soporte documentado para llama.cpp, Ollama o TGI; el formato compressed-tensors está orientado a vLLM.
-- Latencia y throughput: no disponibles; la activación de ~10B parámetros y la cabecera MTP sugieren latencias competitivas, pero no hay mediciones publicadas.
+- VRAM estimada para inferencia: el checkpoint ocupa ~78,8 GB en disco; en vLLM los pesos INT4 mas las capas BF16 requieren del orden de 80 GB de memoria de GPU, mas espacio para cache KV y activaciones.
+- GPU recomendadas: un nodo con GPUs de 80 GB (A100 80GB, H100 80GB) con tensor parallelism; no cabe en una unica RTX 4090 de 24 GB.
+- GPU de consumo: no es viable en consumer GPU de 24 GB; requeriria multiples GPUs consumer, opcion no documentada por el autor.
+- Opciones de despliegue: vLLM >= 0.17.0 (probado con 0.32.0); el formato compressed-tensors `pack-quantized` esta pensado para vLLM. No se documenta soporte en llama.cpp ni Ollama.
+- Entorno de ejecucion: Python 3.11-3.14, torch 2.13 (build CUDA 13.0, requiere driver NVIDIA con soporte CUDA 13), transformers >=5.16.1,<5.20 y compressed-tensors 0.17.0 (fijado por vLLM; el checkpoint se guardo con 0.19.0, no actualizar por separado).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Parámetros activos | Contexto | Multimodal | Licencia |
+| Modelo | Parametros | Contexto | Media en benchmarks | Licencia | Formato |
 |---|---|---|---|---|---|
-| Qwen3.5-122B-A10B-AWQ-4bit (esta ficha) | ~122B (125B reales) | ~10B | No disponible (ejemplo: 32.768) | Sí (visión) | Apache-2.0 |
-| Qwen/Qwen3.5-122B-A10B (base, BF16) | ~122B | ~10B | No disponible | Sí (visión) | Apache-2.0 |
-| Modelos MoE similares de tamaño comparable | No disponible | No disponible | No disponible | No disponible | No disponible |
+| AWQ-4bit (este repo) | 125B totales, ~10B activos | no disponible | 76,57 (99,1% vs BF16) | Apache-2.0 | safetensors compressed-tensors INT4 |
+| Qwen3.5-122B-A10B BF16 (original) | 122B totales, ~10B activos | no disponible | 77,23 | Apache-2.0 | safetensors BF16 |
+| Variante FP8-dynamic del mismo modelo | 122B totales, ~10B activos | no disponible | 77,01 (99,7%) | Apache-2.0 | safetensors FP8 |
+| Variante AWQ-8bit del mismo modelo | 122B totales, ~10B activos | no disponible | 77,14 (99,9%) | Apache-2.0 | safetensors INT8 |
 
-No se dispone de datos suficientes en la información proporcionada para comparar con alternativas concretas de terceros (por ejemplo, DeepSeek o Mixtral) en cuanto a rendimiento; la comparativa más directa es con el modelo base original, del que esta versión cuantizada reduce el tamaño en disco a ~78,8 GB a cambio de una posible pérdida mínima de calidad por la PTQ.
+No se dispone de datos de benchmarks de modelos de otros desarrolladores en la informacion proporcionada, por lo que la comparativa se limita a las variantes de cuantizacion del mismo modelo base.
 
 ## Limitaciones y advertencias
 
-- La cuantización AWQ se calibró con un corpus de 256 muestras con predominio de coreano, lo que puede degradar ligeramente la calidad en otros idiomas, incluido el castellano; conviene validar el modelo en el idioma de uso antes de producción.
-- Al ser una cuantización PTQ sin reentrenamiento, existe una pérdida de calidad inherente al paso a INT4, aunque la protección de canales salientes y el 4% de parámetros en BF16 la minimizan.
-- El riesgo de alucinación es el propio del modelo base; no hay datos publicados que lo cuantifiquen.
-- La longitud máxima de contexto no está documentada en la model card; el ejemplo usa 32.768 tokens, pero el límite real del modelo base no consta.
-- Los idiomas soportados no están especificados en los metadatos.
-- En cuanto a licencia, Apache-2.0 permite uso comercial sin restricciones relevantes; los derechos sobre pesos, tokenizador y chat template originales pertenecen al equipo de Qwen.
-- El modelo requiere vLLM (formato compressed-tensors); no es directamente compatible con llama.cpp, Ollama u otros runtimes de GGUF.
-- La descarga del modelo es muy baja (22 descargas y 1 like en el momento de la ficha), por lo que es una build comunitaria sin respaldo oficial de Qwen; se recomienda validarla frente al modelo base antes de uso crítico.
+- Perdida de fidelidad respecto al BF16 original: perplejidad un 2,4% superior y acuerdo top-1 del 93,8% (frente al 98,4% del BF16), lo que implica divergencias en la generacion token a token.
+- La cuantizacion AWQ es PTQ sin reentrenamiento; el calibrado uso solo 256 muestras con predominio de coreano, lo que puede sesgar la proteccion de canales hacia ese dominio.
+- Si se descargo el repositorio antes del 1 de noviembre de 2026 (18:54:07 UTC, revision `2578e49`), debe descargarse de nuevo: la primera subida no compensaba el router MoE ni la compuerta del experto compartido.
+- Riesgo de alucinacion inherente a los modelos generativos de gran escala; no se documentan evaluaciones especificas de factualidad.
+- Idiomas soportados no documentados oficialmente; la evaluacion se limita a ingles y coreano.
+- Longitud de contexto no disponible en la informacion proporcionada.
+- Restricciones de licencia: Apache-2.0 permite uso comercial, pero conviene revisar el fichero LICENSE del modelo base para condiciones adicionales.
+- Dependencia estricta de versiones: vLLM >= 0.17.0 (probado con 0.32.0), transformers <5.20 y compressed-tensors 0.17.0; no actualizar compressed-tensors de forma independiente.
+- Requiere driver NVIDIA con soporte CUDA 13 por el build de torch 2.13.
+- No se documenta soporte para llama.cpp, Ollama ni TGI.
 
 ## Enlaces
 
-- Modelo cuantizado: https://huggingface.co/axteam/Qwen3.5-122B-A10B-AWQ-4bit
+- Modelo en Hugging Face: https://huggingface.co/axteam/Qwen3.5-122B-A10B-AWQ-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-122B-A10B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/main/LICENSE
+- lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

@@ -2,53 +2,49 @@
 
 ## Resumen
 
-Qwen3.8-27B-chimachima-kaiPTQ es una cuantización mixta del modelo base Qwen/Qwen3.8-27B, publicada por el usuario kaitchup en Hugging Face. El nombre comercial del modelo base sugiere 27B parámetros, pero los pesos reales en safetensors suman 6.698.216.372 parámetros (aproximadamente 6,7B), lo que indica que la etiqueta "27B" del identificador no se corresponde con el recuento efectivo de parámetros del checkpoint. El repositorio ocupa 8,2 GB y se distribuye en formatos safetensors y GGUF.
+kaitchup/Qwen3.8-27B-chimachima-kaiPTQ es una cuantización de precisión mixta del modelo Qwen/Qwen3.8-27B, publicada por el usuario kaitchup (autor conocido en la comunidad por sus trabajos sobre cuantización y evaluación de LLM). El modelo aplica la técnica "chimachima" combinada con el pipeline kaiPTQ, que integra métodos como ITQ, QTIP y YAQA junto con decodificación especulativa (DSPine) para reducir el peso del modelo manteniendo la calidad de la generación. El resultado se distribuye en safetensors y GGUF, con licencia Apache 2.0.
 
-La ficha técnica se apoya en las etiquetas del repositorio, que mencionan varias técnicas de cuantización y compresión: chimachima, kaiPTQ, kaillm, ITQ, QTIP, YAQA, mixed-precision, DSPine y speculative-decoding. No se dispone de documentación adicional que detalle la metodología exacta, los ratios de compresión por capa ni los resultados de evaluación. El modelo se publica bajo licencia Apache 2.0, pero el acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
+El dato más relevante es la discrepancia entre el nombre comercial ("27B") y el recuento real de parámetros en los ficheros safetensors: 8.595.836.340 parámetros, es decir, aproximadamente 8,6 mil millones. Esto sugiere que el identificador del modelo base puede referirse a una variante nominal o que la cuantización ha alterado la estructura de pesos de forma significativa; en cualquier caso, el tamaño efectivo del repositorio (23,6 GB) es coherente con un modelo de ese orden en precisión mixta. Es importante tenerlo en cuenta antes de planificar el despliegue.
 
-La relevancia de esta ficha es doble. Por un lado, documenta una propuesta de cuantización mixta con decodificación especulativa sobre un modelo de la familia Qwen3. Por otro, advierte de una discrepancia importante entre el nombre del modelo y el número real de parámetros, un dato crítico para planificar el despliegue en producción.
+El modelo está orientado a generación de texto conversacional y su interés radica en que combina varias técnicas de compresión y aceleración en un único artefacto listo para usar con endpoints compatibles. No obstante, la información pública disponible es escasa: no se detallan idiomas soportados, composición del dataset de entrenamiento ni resultados de benchmarks, y el acceso está restringido (gated), por lo que es necesario aceptar las condiciones en Hugging Face antes de descargarlo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base Qwen/Qwen3.8-27B; arquitectura no documentada en la informacion proporcionada) |
-| Parametros totales | 6.698.216.372 (segun safetensors); el identificador indica 27B, discrepancia no aclarada |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer (derivada de Qwen3.8-27B; detalles no disponibles) |
+| Parametros totales | 8.595.836.340 (~8,6 mil millones, segun safetensors) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | cuantizacion mixta (mixed-precision) segun tags; ratios por capa no disponibles |
+| Tipos de cuantizacion | Precisión mixta (chimachima + kaiPTQ: ITQ, QTIP, YAQA); pesos en safetensors y GGUF |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors y GGUF |
-| Tamano del repositorio | 8,2 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones |
-| Pipeline | text-generation |
-| Modelo base | Qwen/Qwen3.8-27B |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado en la información disponible la arquitectura interna del modelo base Qwen/Qwen3.8-27B (tipo de transformer, número de capas, dimensiones ocultas, mecanismo de atención o si emplea mezcla de expertos). Tampoco se detallan los datos de entrenamiento del modelo base: número de tokens, composición del corpus, fases de ajuste supervisado, RLHF o DPO.
+El modelo es una cuantización del checkpoint Qwen/Qwen3.8-27B, por lo que hereda la arquitectura transformer del modelo base, aunque la ficha pública no especifica si se trata de un transformer denso, un MoE o una variante híbrida. La contribución propia del autor es el pipeline de compresión: la técnica "chimachima" junto con kaiPTQ, que combina cuantización de precisión mixta (asignando distintos bits por capa o por tensor), los métodos ITQ y QTIP para la cuantización de pesos, YAQA para la evaluación de calidad y DSPine para decodificación especulativa. Los tags del repositorio hacen referencia a tres artículos (arXiv:2505.22988, arXiv:2406.11235 y arXiv:2609.36173) que respaldan metodológicamente estas técnicas.
 
-Respecto a la cuantización, las etiquetas del repositorio indican el uso de técnicas denominadas chimachima, kaiPTQ, kaillm, ITQ, QTIP y YAQA, junto con mixed-precision y DSPine. No hay documentación que explique qué hace cada una, qué precisión efectiva se aplica por capa ni qué degradación introduce frente al modelo original. La etiqueta speculative-decoding sugiere que el paquete incorpora o está pensado para usarse con decodificación especulativa, pero no se especifica el modelo borrador asociado ni la tasa de aceptación esperada. Los tres identificadores arXiv referenciados (2505.22988, 2406.11235 y 2609.36173) aparecen en los tags sin que se haya podido verificar su correspondencia con estas técnicas en la información proporcionada.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si el modelo base pasó por RLHF o DPO. Tampoco se documenta en la información proporcionada si la cuantización incluye calibración específica por dominio, qué proporción de pesos queda en cada precisión ni cómo afecta la decodificación especulativa al throughput real. Todos estos datos deberían consultarse en la model card completa o en los papers referenciados.
 
 ## Capacidades
 
-- Generación de texto conversacional: el pipeline declarado es text-generation y el tag conversational indica uso previsto en diálogo multi-turno.
-- Razonamiento y generación de código: no confirmado explícitamente en la información disponible, aunque es esperable en la familia Qwen3; debe validarse con pruebas propias.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible; el campo de idiomas del repositorio está vacío.
-- Decodificación especulativa: mencionada en los tags, sin parámetros de configuración publicados.
-- Capacidades de visión o audio: no disponibles.
+- Generación de texto conversacional: el pipeline declarado es text-generation y el tag "conversational" indica uso orientado a diálogo multi-turno.
+- Cuantización de precisión mixta: pesos comprimidos con asignación de bits por tensor, pensada para reducir huella de memoria manteniendo calidad.
+- Decodificación especulativa: integración de DSPine, que puede acelerar la inferencia respecto a decodificación autoregresiva estándar.
+- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere despliegue directo en Hugging Face Inference Endpoints.
+- Formatos duales: safetensors para frameworks de alto rendimiento y GGUF para inferencia en CPU/GPU con llama.cpp.
+- Razonamiento, código, matemáticas, tool calling, agentes y capacidades multilingües: no disponible en la información proporcionada; deben verificarse contra el modelo base Qwen3.8-27B.
 
 ## Casos de uso
 
-- Despliegue de chat conversacional en infraestructura modesta: con 6,7B parámetros reales y pesos GGUF de 8,2 GB, el modelo puede servirse en una única GPU de consumo para asistentes conversacionales de uso interno, siempre que se valide la calidad frente al modelo base sin cuantizar.
-- Evaluación de técnicas de cuantización mixta: el repositorio sirve como banco de pruebas para comparar chimachima, kaiPTQ, ITQ, QTIP y YAQA frente a cuantizaciones estándar (GPTQ, AWQ, GGUF Q4_K_M), midiendo perplejidad y precisión en tareas de razonamiento.
-- Prototipado con decodificación especulativa: útil para medir la ganancia de latencia de la decodificación especulativa sobre un checkpoint ya comprimido, en entornos de investigación con presupuesto de GPU limitado.
-- Generación de texto por lotes en pipelines de datos: para tareas de etiquetado, resumen o reescritura a gran escala donde el coste por token importa más que la calidad máxima absoluta.
-- Integración en entornos con requisitos de licencia permisiva: la licencia Apache 2.0 permite uso comercial y modificación, sujeta a las condiciones del modelo base Qwen/Qwen3.8-27B, que deben revisarse por separado.
-- Docencia y experimentación reproducible: el tamaño manejable y los formatos safetensors/GGUF facilitan demostraciones en cursos sobre cuantización y despliegue de LLM.
+- Despliegue en endpoints gestionados: al ser compatible con Hugging Face Inference Endpoints, puede publicarse como API de generación de texto sin infraestructura propia, aceptando primero las condiciones de acceso del repositorio gated.
+- Prototipado conversacional en local: los pesos GGUF permiten ejecutar el modelo con llama.cpp u Ollama en estaciones de trabajo, útil para validar flujos de diálogo antes de invertir en GPU.
+- Servicio de chat de bajo coste: con ~8,6 mil millones de parámetros efectivos y cuantización mixta, la huella de memoria es menor que la de un modelo denso de 27B en FP16, lo que abarata el coste por token en entornos con presupuesto limitado.
+- Investigación en cuantización: el repositorio sirve como artefacto de referencia para estudiar el impacto de chimachima, ITQ, QTIP y YAQA en la calidad de salida frente al modelo base.
+- Evaluación de decodificación especulativa: permite medir en producción la ganancia de throughput de DSPine sobre un checkpoint cuantizado real.
+- Integración en pipelines de generación de texto con vLLM o TGI: los safetensors permiten cargar el modelo en servidores de inferencia de alto rendimiento para tareas de resumen, redacción o clasificación generativa.
+- Base para fine-tuning con QLoRA: al estar cuantizado en precisión mixta y bajo licencia Apache 2.0, puede servir de punto de partida para adaptaciones con adaptadores de bajo rango, siempre que el formato de cuantización sea compatible con las librerías de entrenamiento.
 
 ## Benchmarks y rendimiento
 
@@ -56,38 +52,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos suman 6,7B parámetros en un repositorio de 8,2 GB, lo que corresponde a una precisión efectiva cercana a 8-10 bits por parámetro. En FP16 serían necesarios unos 13,4 GB solo para pesos; con la cuantización incluida, alrededor de 8-9 GB más overhead de contexto y caché KV.
-- GPU recomendadas: no hay datos publicados de latencia ni throughput. Por tamaño, una RTX 4090 (24 GB) o una L40S (48 GB) deberían acomodar el modelo con contexto amplio; una A100 o H100 aportarían margen para lotes mayores y decodificación especulativa.
-- GPU de consumo: sí cabe en GPUs de 12 GB o más (RTX 3060 12 GB, RTX 4070, RTX 4080) usando los pesos cuantizados, con contexto reducido si la caché KV crece.
-- Opciones de despliegue: llama.cpp y Ollama para los pesos GGUF; vLLM o TGI para safetensors si la cuantización es compatible con estos motores (no confirmado). La decodificación especulativa requiere un motor que la soporte, como vLLM.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: el repositorio ocupa 23,6 GB en safetensors; en GGUF cuantizado a 4-5 bits, un modelo de ~8,6 mil millones de parámetros requiere aproximadamente 5-7 GB de VRAM, mientras que los pesos safetensors de precisión mixta pueden necesitar del orden de 20-24 GB según el reparto de bits.
+- GPU recomendadas: para los safetensors completos, A100 40 GB, H100 80 GB o L40S; para GGUF cuantizado, RTX 4090 (24 GB), RTX 4080 (16 GB) o RTX 3090 (24 GB).
+- GPU de consumo: sí, en formato GGUF cuantizado cabe en tarjetas de 8-12 GB con contexto moderado; los safetensors de precisión mixta probablemente no caben en GPUs de consumo de gama media.
+- Opciones de despliegue: vLLM y TGI para safetensors; llama.cpp, Ollama y LM Studio para GGUF; Hugging Face Inference Endpoints por el tag endpoints_compatible.
+- Latencia y throughput: no disponible; la decodificación especulativa DSPine debería mejorar el throughput frente a decodificación estándar, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Acceso | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| kaitchup/Qwen3.8-27B-chimachima-kaiPTQ | 6,7B reales (etiqueta 27B) | no disponible | Apache 2.0 | Gated | Cuantización mixta con decodificación especulativa |
-| Qwen/Qwen3.8-27B (base) | 27B segun nombre; no verificado | no disponible | no disponible en esta ficha | no disponible | Modelo original sin cuantizar |
-| Cuantizaciones GGUF estándar de la familia Qwen3 | variable | variable | normalmente Apache 2.0 | público | Alternativa convencional (Q4_K_M, Q5_K_M) sin técnicas mixtas |
+| kaitchup/Qwen3.8-27B-chimachima-kaiPTQ | ~8,6 mil millones (segun safetensors) | no disponible | Apache 2.0 | safetensors, GGUF | Cuantización de precisión mixta con decodificación especulativa; acceso gated |
+| Qwen/Qwen3.8-27B (modelo base) | 27 mil millones (nominal) | no disponible | no disponible en la informacion | safetensors | Checkpoint original sin cuantizar; mayor huella de memoria |
+| Qwen2.5-7B-Instruct | 7,6 mil millones | 131.072 tokens | Apache 2.0 | safetensors, GGUF | Alternativa densa de tamaño comparable, ampliamente soportada por vLLM y llama.cpp |
+| Llama 3.1 8B Instruct | 8,0 mil millones | 131.072 tokens | Llama 3.1 Community License | safetensors, GGUF | Referencia habitual en el rango de 8B; licencia con restricciones de uso comercial condicionadas |
 
-No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas.
+La comparativa con Qwen2.5-7B-Instruct y Llama 3.1 8B es aproximada por tamaño efectivo de parámetros, no por rendimiento medido, ya que no hay benchmarks publicados para esta cuantización.
 
 ## Limitaciones y advertencias
 
-- Discrepancia de parámetros: el identificador indica 27B pero los safetensors contienen 6.698.216.372 parámetros. Verificar el checkpoint antes de dimensionar infraestructura; un despliegue planificado para 27B estará sobredimensionado, y uno planificado para 6,7B podría no reproducir la calidad esperada del modelo original.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que complica la automatización de descargas en CI/CD.
-- Ausencia de evaluación: no hay benchmarks publicados de la cuantización, por lo que se desconoce la degradación frente al modelo base en razonamiento, código y matemáticas.
-- Documentación insuficiente: las técnicas chimachima, kaiPTQ, kaillm, ITQ, QTIP, YAQA y DSPine no están descritas; no se puede auditar el proceso de compresión ni la precisión efectiva por capa.
-- Idiomas no declarados: el campo de idiomas está vacío, así que el soporte multilingüe no está garantizado ni documentado.
-- Riesgo de alucinación: inherente a los modelos generativos y potencialmente amplificado por la cuantización; requiere validación en dominios sensibles.
-- Licencia: Apache 2.0 en este repositorio, pero el modelo base Qwen/Qwen3.8-27B puede tener condiciones adicionales que prevalecen para uso comercial; revisar ambas licencias.
-- Repositorio sin tracción: 0 descargas y 0 likes en el momento de la consulta, sin comunidad que haya validado los pesos; tratar como experimental.
-- Fechas del repositorio: creado y actualizado en noviembre de 2026, lo que puede indicar una publicación reciente sin ciclo de revisión.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga; no es un artefacto de uso inmediato sin registro.
+- Discrepancia de parámetros: el nombre indica "27B" pero los safetensors declaran 8.595.836.340 parámetros; verificar el tamaño real antes de dimensionar infraestructura.
+- Sin benchmarks publicados: no hay evidencia cuantitativa de la pérdida de calidad introducida por la cuantización de precisión mixta frente al modelo base.
+- Idiomas no documentados: se desconoce la cobertura multilingüe real, lo que desaconseja su uso en producción para idiomas distintos del inglés sin evaluación previa.
+- Riesgo de alucinación: inherente a los modelos generativos; la cuantización agresiva puede amplificarlo en tareas de razonamiento o matemáticas.
+- Sesgos: no se documenta ninguna evaluación de sesgos ni de seguridad en la información disponible.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar si el modelo base Qwen3.8-27B impone condiciones adicionales que se hereden en la cuantización.
+- Madurez: creado en noviembre de 2026 con solo 396 descargas y 1 like, lo que indica poca validación por parte de la comunidad.
+- Compatibilidad de cuantización: el esquema de precisión mixta puede no ser soportado por todas las versiones de vLLM, TGI o llama.cpp; comprobar la compatibilidad antes de desplegar.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/kaitchup/Qwen3.8-27B-chimachima-kaiPTQ
+- Hugging Face: https://huggingface.co/kaitchup/Qwen3.8-27B-chimachima-kaiPTQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Paper referenciado (arXiv 2505.22988): https://arxiv.org/abs/2505.22988
-- Paper referenciado (arXiv 2406.11235): https://arxiv.org/abs/2406.11235
-- Paper referenciado (arXiv 2609.36173): https://arxiv.org/abs/2609.36173
+- Paper ITQ (arXiv:2505.22988): https://arxiv.org/abs/2505.22988
+- Paper QTIP (arXiv:2406.11235): https://arxiv.org/abs/2406.11235
+- Paper adicional referenciado (arXiv:2609.36173): https://arxiv.org/abs/2609.36173

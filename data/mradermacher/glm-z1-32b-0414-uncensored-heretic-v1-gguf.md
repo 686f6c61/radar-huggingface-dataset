@@ -2,98 +2,91 @@
 
 ## Resumen
 
-GLM-Z1-32B-0414-uncensored-heretic-v1-GGUF es una cuantizacion en formato GGUF del modelo llmfan46/GLM-Z1-32B-0414-uncensored-heretic-v1, publicada por mradermacher. El modelo subyacente deriva de la familia GLM-Z1 de Zhipu AI (variante de 32B con fecha de corte 0414), y ha sido modificado mediante tecnicas de "abliteration" o "decensoring" para eliminar los mecanismos de rechazo y moderacion del modelo original, marcandose con las etiquetas heretic, uncensored, decensored y abliterated. Esta version GGUF esta pensada para ejecucion local con llama.cpp y derivados.
+GLM-Z1-32B-0414-uncensored-heretic-v1-GGUF es una cuantizacion en formato GGUF del modelo llmfan46/GLM-Z1-32B-0414-uncensored-heretic-v1, publicada por el usuario mradermacher. Se trata de una derivacion del modelo GLM-Z1-32B-0414 de Zhipu AI (familia GLM-4), que ha sido sometida a un proceso de "abliteration" (eliminacion de rechazos y capas de alineacion de seguridad) para producir una variante sin censura. El modelo base conserva la arquitectura transformer densa de 32.500 millones de parametros del GLM-Z1 original.
 
-El modelo cuenta con 32.566.081.536 parametros totales (aproximadamente 32,6 mil millones), lo que lo situa en la categoria de modelos densos de gran tamano aptos para despliegues en GPU de 24-80 GB segun cuantizacion. La model card no proporciona informacion sobre arquitectura interna, longitud de contexto ni regimen de entrenamiento del modelo base, por lo que estos datos se marcan como no disponibles.
+El interes de esta publicacion reside en que ofrece el modelo en multiples niveles de cuantizacion GGUF (desde Q2_K de 12,4 GB hasta Q8_0 de 34,7 GB), lo que permite ejecutarlo en hardware de consumo y en entornos donde no se dispone de GPUs de datacenter. La licencia MIT facilita su uso comercial, aunque la naturaleza "uncensored" del modelo implica riesgos considerables en produccion.
 
-La relevancia de esta publicacion es doble: por un lado, ofrece una via practica para ejecutar un modelo de 32B en hardware de consumo mediante cuantizaciones GGUF (desde Q2_K de 12,4 GB hasta Q8_0); por otro, documenta un caso de modelo "sin censura" que plantea consideraciones importantes sobre seguridad, sesgos y uso responsable en produccion. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 22 de noviembre de 2026.
+El modelo esta orientado a generacion de texto conversacional en chino e ingles, y su relevancia actual radica en la demanda de modelos locales sin restricciones de contenido para investigacion sobre alineacion, red teaming y aplicaciones donde los filtros de seguridad resultan problematicos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base GLM-Z1-32B-0414 de Zhipu AI; detalles no presentes en la informacion) |
-| Parametros totales | 32.566.081.536 (32,6 B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer denso (derivado de GLM-4 / GLM-Z1) |
+| Parametros totales | 32.566.081.536 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS, x-f16 (segun metadatos de la model card) |
-| Idiomas soportados | zh (chino), en (ingles) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
+| Idiomas soportados | zh, en |
 | Licencia | MIT |
-| Formato de pesos | GGUF (cuantizaciones); modelo base en transformers/safetensors |
-| Tamano del repo | 65,6 GB |
-| Libreria | transformers (con soporte GGUF via llama.cpp) |
-| Modelo base | llmfan46/GLM-Z1-32B-0414-uncensored-heretic-v1 |
-| Cuantizador | mradermacher (quantize_version 2, output_tensor_quantised 1, convert_type hf) |
-| Etiquetas | heretic, uncensored, decensored, abliterated, ara, zh, en, conversational, endpoints_compatible |
+| Formato de pesos | GGUF (cuantizaciones) y safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo base. Por la denominacion GLM-Z1-32B-0414 se infiere que proviene de la familia GLM-Z1 de Zhipu AI, pero la model card del repositorio GGUF no aporta datos sobre tipo de transformer, atencion, numero de capas, dimensiones ocultas ni regimen de entrenamiento (tokens, composicion del dataset, RLHF/DPO). Tampoco se documenta el proceso concreto de "abliteration" aplicado por llmfan46 para producir la variante uncensored-heretic-v1.
+El modelo subyacente es GLM-Z1-32B-0414, un transformer denso de 32.500 millones de parametros desarrollado por Zhipu AI dentro de la familia GLM-4. La variante "heretic" ha sido modificada mediante tecnicas de abliteration, un proceso que identifica y neutraliza las direcciones de activacion asociadas a comportamientos de rechazo, eliminando efectivamente las capas de alineacion de seguridad del modelo original. El resultado es un modelo que responde a practicamente cualquier prompt sin negativas.
 
-Lo unico verificable es el proceso de cuantizacion: mradermacher ha generado cuantizaciones estaticas (quantize_version 2, output_tensor_quantised 1) a partir de los pesos en formato Hugging Face (convert_type hf). La model card indica que no hay cuantizaciones ponderadas/imatrix disponibles por el momento y que no se han planificado, aunque se pueden solicitar via discusion comunitaria. El autor remite a los README de TheBloke para instrucciones de uso de GGUF y concatenacion de ficheros multiparte.
+La cuantizacion a GGUF ha sido realizada por mradermacher mediante conversion desde el formato Hugging Face (safetensors) a GGUF, con cuantizaciones estaticas (no imatrix) en el repositorio principal. Existe un repositorio separado con cuantizaciones ponderadas/imatrix (i1-GGUF) para mayor calidad. No se dispone de informacion detallada sobre el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO en el modelo original, ya que la model card no los documenta.
 
 ## Capacidades
 
-- Generacion de texto conversacional en chino e ingles (idiomas declarados en la model card).
-- Razonamiento y respuesta multi-turno: la etiqueta conversational sugiere uso en dialogos, aunque no se detallan capacidades especificas de razonamiento extendido.
-- Modo "sin censura": el proceso de abliteration/decensoring elimina los rechazos tipicos del modelo original, permitiendo generar contenido que el modelo base rechazaria.
-- Compatibilidad con endpoints: la etiqueta endpoints_compatible indica que puede servirse mediante APIs compatibles con el formato de endpoints de Hugging Face.
-- Ejecucion local via llama.cpp y derivados (Ollama, LM Studio, etc.) gracias al formato GGUF.
-- No se documentan capacidades de tool calling, function calling, agentes, vision, audio ni thinking mode en la informacion proporcionada.
+- Generacion de texto conversacional multi-turno en chino e ingles.
+- Razonamiento y respuesta a instrucciones sin restricciones de contenido (producto del proceso de abliteration).
+- Capacidad de seguir instrucciones complejas heredada del modelo GLM-Z1 original.
+- Soporte de conversacion general y tareas de conocimiento.
+- No se documenta soporte explicito de tool calling, function calling ni capacidades de agente en la informacion disponible.
+- No se documentan capacidades multimodales (vision, audio) en la informacion disponible.
+- No se documenta modo "thinking" explicito en la informacion disponible.
 
 ## Casos de uso
 
-- Investigacion sobre alineacion y seguridad: el modelo permite estudiar empiricamente que comportamientos emergen al eliminar los mecanismos de rechazo de un LLM de 32B, comparando respuestas con el modelo base original en tareas controladas.
-- Generacion creativa sin restricciones: escritura de ficcion, guiones o narrativa que aborde temas sensibles (violencia, contenido adulto) sin los rechazos del modelo alineado, en entornos donde el operador asume la responsabilidad editorial.
-- Despliegue local en estaciones de trabajo: con cuantizaciones Q4_K_S (18,8 GB) o Q4_K_M es posible ejecutar el modelo en una GPU consumer de 24 GB (RTX 3090/4090) usando llama.cpp u Ollama, sin dependencia de APIs en la nube.
-- Procesamiento de texto en chino e ingles: traduccion, resumen y reescritura bilingue en pipelines internos, aprovechando el soporte declarado de ambos idiomas.
-- Experimentacion con cuantizaciones: el repositorio ofrece 12 variantes de cuantizacion, lo que permite medir el impacto de la compresion (Q2_K a Q8_0) en perplejidad y calidad de salida sobre el mismo modelo.
-- Pruebas de robustez y red teaming: evaluar como responde un modelo decensored ante prompts adversariales, util para construir clasificadores de seguridad o filtros de contenido en produccion.
-- Fine-tuning posterior: al estar bajo licencia MIT y disponible en GGUF y safetensors (modelo base), puede servir como punto de partida para ajustes especificos de dominio en entornos de investigacion.
+- Investigacion sobre alineacion y seguridad: el modelo permite estudiar el comportamiento de un LLM sin capas de rechazo, util para analizar sesgos, jailbreaks y mecanismos de seguridad en entornos controlados de laboratorio.
+- Red teaming y evaluacion de robustez: sirve como modelo "sin filtros" para generar prompts adversarios y probar sistemas de moderacion de contenido.
+- Generacion creativa sin restricciones: escritura de ficcion, guiones o contenido narrativo donde los filtros de seguridad del modelo original resultan limitantes, ejecutado localmente con llama.cpp.
+- Despliegue local en hardware de consumo: las cuantizaciones Q4_K_M (19,8 GB) permiten ejecutar el modelo en GPUs con 24 GB de VRAM como la RTX 4090, o en configuraciones multi-GPU.
+- Analisis de contenido en chino e ingles: el modelo mantiene el soporte bilingue del GLM-Z1 original, adecuado para tareas de procesamiento de texto en ambos idiomas.
+- Experimentacion con cuantizaciones: los multiples niveles de cuantizacion permiten comparar calidad frente a tamano para estudiar el impacto de la cuantizacion en modelos de 32B.
+- Entornos air-gapped: al ser un GGUF ejecutable con llama.cpp u Ollama, puede desplegarse en sistemas sin conexion a internet.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio GGUF no incluye tablas de MMLU, HumanEval, GSM8K ni metricas de perplejidad para las distintas cuantizaciones. Tampoco se aportan datos de latencia o throughput.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada segun cuantizacion (tamanos de fichero declarados en la model card):
-  - Q2_K: 12,4 GB
-  - Q4_K_S: 18,8 GB (marcada como "fast, recommended")
-  - Otras variantes (Q3_K_S/M/L, Q4_K_M, Q5_K_S/M, Q6_K, Q8_0, IQ4_XS, x-f16): tamanos no listados en la informacion, aunque el repo completo ocupa 65,6 GB.
-- GPU recomendadas: no disponibles de forma explicita. Por el tamano de las cuantizaciones, Q4_K_S encaja en GPUs de 24 GB (RTX 3090, RTX 4090, A10G); Q8_0 y x-f16 requeririan 40-80 GB (A100 40/80 GB, H100).
-- GPU consumer: si, en RTX 3090/4090 con cuantizaciones Q4 o inferiores; Q2_K cabria incluso en GPUs de 16 GB con margen para contexto.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el modelo base puede servirse con vLLM o TGI en formato safetensors.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: ~12,4 GB (Q2_K), ~19,8 GB (Q4_K_M), ~23,2 GB (Q5_K_M), ~34,7 GB (Q8_0).
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_S; A100 40/80 GB o H100 para Q8_0 y contexto largo; configuraciones multi-GPU para cuantizaciones altas con contexto extendido.
+- Cabe en GPU de consumo: si, en RTX 3090/4090 (24 GB) con cuantizaciones Q4_K_M o inferiores; las cuantizaciones Q2_K y Q3 caben en GPUs de 16 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF; tambien puede usarse con transformers cargando el modelo base en safetensors.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| GLM-Z1-32B-0414-uncensored-heretic-v1-GGUF (este) | 32,6 B | no disponible | MIT | GGUF | Variante decensored, 12 cuantizaciones, 0 descargas |
-| llmfan46/GLM-Z1-32B-0414-uncensored-heretic-v1 | 32,6 B | no disponible | MIT | safetensors | Modelo base del que deriva esta cuantizacion |
-| Modelo GLM-Z1-32B-0414 original (Zhipu AI) | ~32 B | no disponible | no disponible en la informacion | safetensors | Version alineada con rechazos; referencia para comparar el efecto del decensoring |
+| GLM-Z1-32B-0414-uncensored-heretic-v1 (este) | 32,5B | no disponible | MIT | GGUF | Variante sin censura, bilingue zh/en |
+| GLM-Z1-32B-0414 (original, Zhipu AI) | 32,5B | no disponible | no disponible | safetensors | Modelo base con alineacion de seguridad |
+| Modelos 32B densos de la misma categoria | ~32B | variable | variable | variable | No se dispone de datos de rendimiento comparativo |
 
-No se dispone de datos de benchmarks que permitan comparar rendimiento numerico con alternativas de la misma categoria.
+No se dispone de datos de benchmarks que permitan una comparacion cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- Modelo explicitamente "uncensored/abliterated": no aplica los filtros de seguridad del modelo original. Puede generar contenido danino, ilegal o sexualmente explicito. No apto para produccion orientada al publico general sin capas de moderacion adicionales.
-- Riesgo elevado de alucinacion: no hay datos de evaluacion que cuantifiquen la fiabilidad factual; el proceso de abliteration puede degradar capacidades de razonamiento y coherencia respecto al modelo base.
-- Idiomas limitados a chino e ingles segun la model card; el rendimiento en castellano no esta documentado y probablemente sea inferior.
-- Longitud de contexto no documentada: no se puede garantizar el soporte de ventanas largas.
-- Cuantizaciones de baja calidad (Q2_K) degradan notablemente la perplejidad; la propia model card remite a la grafica de ikawrakow y al analisis de Artefact2 sobre el impacto de los tipos de cuantizacion.
-- Licencia MIT permite uso comercial, pero el operador asume toda la responsabilidad legal sobre el contenido generado; la licencia del modelo base GLM-Z1 original no se detalla en la informacion.
-- Repositorio sin adopcion (0 descargas, 0 likes) y sin garantias de mantenimiento; no hay cuantizaciones imatrix/ponderadas disponibles ni planificadas.
-- No se documentan capacidades de tool calling ni agentes; no asumir su disponibilidad en produccion.
+- El proceso de abliteration elimina las capas de rechazo, por lo que el modelo puede generar contenido danino, ilegal, ofensivo o sexualmente explicito sin advertencia.
+- Riesgo elevado de alucinacion, agravado por la falta de alineacion de seguridad que en el modelo original actuaba como filtro parcial.
+- Soporte limitado a chino e ingles; no se garantiza un rendimiento adecuado en castellano u otros idiomas.
+- La licencia MIT permite uso comercial, pero el despliegue en produccion de un modelo sin censura expone al operador a responsabilidades legales y reputacionales segun la jurisdiccion.
+- No se documenta la longitud de contexto soportada, lo que dificulta planificar aplicaciones con ventanas largas.
+- Las cuantizaciones Q2_K y Q3_K_M tienen calidad reducida segun la propia model card; para produccion se recomienda Q4_K_M o superior.
+- No se documentan capacidades de tool calling ni de agente, por lo que no es adecuado para pipelines que dependan de function calling.
+- El modelo tiene solo 368 descargas y 0 likes en el momento de la consulta, lo que indica escasa validacion por parte de la comunidad.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/GLM-Z1-32B-0414-uncensored-heretic-v1-GGUF
-- Modelo base: https://huggingface.co/llmfan46/GLM-Z1-32B-0414-uncensored-heretic-v1
-- Pagina de descargas del cuantizador: https://hf.tst.eu/model#GLM-Z1-32B-0414-uncensored-heretic-v1-GGUF
-- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafica de perplejidad por cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests
-- nethype GmbH (patrocinador del cuantizador): https://www.nethype.de/
+- Modelo base (Hugging Face): https://huggingface.co/llmfan46/GLM-Z1-32B-0414-uncensored-heretic-v1
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/GLM-Z1-32B-0414-uncensored-heretic-v1-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#GLM-Z1-32B-0414-uncensored-heretic-v1-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests

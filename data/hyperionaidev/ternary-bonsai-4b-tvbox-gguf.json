@@ -47,16 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Introducing 1-bit and Ternary Bonsai Image 4B: Image ... - PrismML",
-      "url": "https://prismml.com/news/bonsai-image-4b",
-      "snippet": "Today we're releasing Bonsai Image 4B, compact 1-bit and ternary diffusion models built on FLUX.2 Klein 4B that run image generation on laptops and phones."
-    },
-    {
-      "title": "Ternary Bonsai - a prism-ml Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/prism-ml/ternary-bonsai",
-      "snippet": "1.58-bit Bonsai models"
-    }
-  ]
+  "sources": []
 }

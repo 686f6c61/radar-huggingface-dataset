@@ -21,9 +21,9 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 413,
+  "likes": 415,
   "downloads_30d": 4056,
-  "trending_score": 62.5,
+  "trending_score": 53,
   "parameters": 36810559422,
   "parameters_human": "36.81B",
   "storage_bytes": 73625632574,
@@ -44,19 +44,14 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "James Clerk Maxwell — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/James_Clerk_Maxwell",
-      "snippet": "Maxwell est considéré par de nombreux physiciens comme le scientifique du XIXe siècle ayant eu le plus d'influence au XXe siècle. …"
-    },
-    {
-      "title": "Ghislaine Maxwell — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Ghislaine_Maxwell",
-      "snippet": "Elle est le neuvième et dernier enfant d' Elisabeth Maxwell (née Meynard), une historienne française spécialiste de la Shoah 4, et de …"
-    },
-    {
       "title": "Maxwell (musician) - Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Maxwell_(musician)",
       "snippet": "Maxwell released a series of EPs featuring different versions of his songs from Maxwell's Urban Hang Suite, including \"...Til the Cops …"
+    },
+    {
+      "title": "Ghislaine Maxwell - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ghislaine_Maxwell",
+      "snippet": "Ghislaine Maxwell ... Ghislaine Noelle Marion Maxwell (/ ɡiːˈlɛn / ghee-LEN; [7] born 25 December 1961) is a British convicted child sex …"
     },
     {
       "title": "Maxwell Technologies - Instant Power You Can Depend On",
@@ -64,9 +59,14 @@
       "snippet": "Discover advanced ultracapacitor technology by Maxwell Technologies. Rapid power delivery solutions for grid, automotive, wind, …"
     },
     {
-      "title": "James Clerk Maxwell - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/James_Clerk_Maxwell",
-      "snippet": "His unification of light and electrical phenomena led to his prediction of the existence of radio waves. Maxwell was the first to derive …"
+      "title": "Maxwell — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Maxwell",
+      "snippet": "Edith Maxwell (1952-), romancière américaine, auteure de roman policier historique ; Elisabeth Maxwell, (1921-2013), historienne …"
+    },
+    {
+      "title": "Maxwell Wireless Gaming Headset - Audeze",
+      "url": "https://www.audeze.com/products/maxwell",
+      "snippet": "Maxwell, like the Penrose and Mobius, requires power as it is an active headset on all connection types. Like those headsets, Maxwell …"
     }
   ]
 }

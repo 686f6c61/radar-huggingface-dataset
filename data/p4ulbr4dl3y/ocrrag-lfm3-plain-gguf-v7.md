@@ -2,50 +2,51 @@
 
 ## Resumen
 
-ocrrag-lfm3-plain-gguf-v7 es un ajuste fino mediante LoRA del modelo base LiquidAI/LFM3-1.7B, publicado por el usuario p4ulbr4dl3y en formato GGUF. No se trata de un modelo de propósito general, sino de un componente especializado dentro del sistema ocrrag: un respondedor extractivo con anclaje documental ("grounded extractive answerer") que recibe una ventana de fragmentos recuperados y devuelve una respuesta con citas del tipo `[chunk_id]` o un veredicto tipado de rechazo. El adaptador se entrenó sobre el checkpoint-280 (paso 275) con un eval_loss de 0,21152.
+ocrrag-lfm3-plain-gguf-v7 es un ajuste fino mediante LoRA del modelo base LiquidAI/LFM3-1.7B, publicado en formato GGUF por el usuario p4ulbr4dl3y. No se trata de un modelo de propósito general, sino de un componente especializado dentro del sistema ocrrag: un "answerer" extractivo y anclado (grounded) que recibe una ventana de fragmentos recuperados de un pipeline RAG y devuelve una respuesta con citas del tipo `[chunk_id]` o un veredicto tipado de rechazo cuando la información no está en el contexto.
 
-El modelo resuelve un problema concreto de los pipelines RAG sobre documentos OCR: obligar al modelo a responder únicamente con información presente en la ventana de contexto, citando el fragmento exacto, y a rechazar de forma controlada cuando la respuesta no está disponible. La salida se restringe mediante gramática a un objeto `{"answer": str, "refusal": bool}`, lo que convierte el formato en una garantía de servicio.
+El modelo resuelve un problema muy concreto de los sistemas RAG documentales: obligar al generador a no inventar y a declarar explícitamente cuándo no puede responder. Para ello se entrenó sobre un conjunto de 2268 filas de entrenamiento, 154 de validación y 108 de test, con un 35,1% de ejemplos de rechazo, y se sirve con `enable_thinking=False` y temperatura 0.
 
-Con 1.728.801.600 parámetros (aproximadamente 1,7B) y un repositorio de 2,9 GB que contiene dos cuantizaciones GGUF (Q4_K_M de 1,02 GiB y Q8_0 de 1,72 GiB), el modelo está pensado para despliegue en CPU o GPU de gama media. Su relevancia radica en la especialización: frente a modelos mayores, optimiza la fidelidad extractiva, la tasa de rechazo correcto y la latencia en un caso de uso acotado.
+La relevancia de esta ficha es doble: por un lado documenta un caso real de ajuste fino pequeño (1.728.801.600 parámetros) orientado a producción con requisitos de latencia y coste bajos; por otro, la propia model card advierte de que la versión v7 está superada por la v9 y de que, con el prompt en prosa que sirve el producto, el modelo rechaza 334 de 351 filas. Es, por tanto, un artefacto útil para entender el método y para hacer rollback, no una elección recomendada para nuevos despliegues.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de LiquidAI/LFM3-1.7B; detalles internos no disponibles) |
+| Arquitectura | Transformer (base LiquidAI/LFM3-1.7B) con adaptador LoRA fusionado |
 | Parametros totales | 1.728.801.600 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 8192 tokens en el ejemplo de despliegue (`-c 8192`); entrenamiento con `max_length 6144` |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 8192 tokens en el ejemplo de servicio (`-c 8192`); `max_length` de entrenamiento 6144 |
 | Tipos de cuantizacion | Q4_K_M (1,02 GiB) y Q8_0 (1,72 GiB) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (safetensors para el adaptador LoRA original) |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste LoRA sobre LFM3-1.7B, un transformer de aproximadamente 1,7B parámetros. El adaptador (`p4ulbr4dl3y/ocrrag-lfm3-plain-lora-v7`) se entrenó sobre el conjunto `p4ulbr4dl3y/ocrrag-lfm3-plain-data-v7`, compuesto por 2268 filas de entrenamiento, 154 de validación y 108 de test, con una proporción de rechazos del 35,1%. El mejor checkpoint fue el 280 (paso 275), con eval_loss de 0,21152. El prompt de servicio tiene 2530 caracteres, sha256 `5449aca38687225a`, y se ejecuta con `enable_thinking=False`.
+El modelo parte de LiquidAI/LFM3-1.7B, un transformer de 1.7B parámetros, sobre el que se aplicó un adaptador LoRA (`p4ulbr4dl3y/ocrrag-lfm3-plain-lora-v7`, mejor checkpoint `checkpoint-280`, paso 275, con `eval_loss` de 0,21152). El adaptador se fusionó y se exportó a GGUF en dos cuantizaciones. El entrenamiento usó el dataset `p4ulbr4dl3y/ocrrag-lfm3-plain-data-v7` con 2268 filas de entrenamiento, 154 de validación y 108 de test, y una proporción de rechazos del 35,1%.
 
-Una innovación destacable es el uso de decodificación restringida por gramática sobre el objeto `{"answer": str, "refusal": bool}`, que garantiza la estructura de salida en producción. Además, el entrenamiento incorpora ejemplos de rechazo tipado, lo que permite al modelo abstenerse cuando la respuesta no está en la ventana recuperada. Se descartaron 118 de las 2268 filas de entrenamiento (5,2%) por superar `max_length 6144`, correspondientes a las ventanas de tablas más largas, que es precisamente donde el recall es peor.
+La innovación técnica no está en la arquitectura sino en el contrato de salida: el modelo se entrena para emitir un objeto `{"answer": str, "refusal": bool}` y el autor recomienda imponer una gramática sobre ese objeto como garantía de servicio. El prompt de entrenamiento tiene 2530 caracteres (sha256 `5449aca38687225a`) y debe enviarse byte a byte. Un dato relevante para interpretar el rendimiento: 118 de las 2268 filas de entrenamiento (5,2%) se descartaron por superar `max_length 6144`, precisamente las ventanas con tablas más largas, que es donde la recall es peor.
 
 ## Capacidades
 
-- Generación de respuestas extractivas ancladas a una ventana de fragmentos recuperados, con citas `[chunk_id]`.
-- Rechazo controlado mediante veredicto tipado cuando la información no está en el contexto.
-- Salida estructurada garantizada por gramática: `{"answer": str, "refusal": bool}`.
-- Manejo de ventanas de contexto de hasta 8192 tokens en despliegue.
-- Procesamiento de contenido tabular dentro de los documentos, aunque con recall limitado (0,40–0,44 en tablas).
-- Integración con servidores compatibles con la API de endpoints (`llama-server` con `--jinja`).
-- No se documentan capacidades de tool calling, agentes multi-paso, visión, audio ni modo thinking (de hecho, `enable_thinking=False`).
+- Generación de respuestas extractivas ancladas a fragmentos recuperados, con citas `[chunk_id]` por cada dato aportado.
+- Rechazo tipado: emite un veredicto estructurado cuando la respuesta no está en la ventana de contexto.
+- Salida estructurada JSON con los campos `answer` y `refusal`, apta para validación mediante gramática en el servidor de inferencia.
+- Manejo de ventanas de contexto de hasta 8192 tokens en el despliegue de referencia.
+- Extracción de cifras y datos numéricos presentes en el contexto (recall de figuras doradas de 0,81 en texto plano).
+- Procesamiento de contenido tabular dentro del contexto, con recall notablemente inferior (0,40-0,44).
+- No se documentan capacidades de tool calling, agentes, visión, audio ni modo thinking; de hecho el servicio se configura con `enable_thinking=False`.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Respuesta documental en pipelines RAG sobre documentos OCR: el modelo recibe los fragmentos recuperados y devuelve una respuesta citada, lo que permite auditar la fuente de cada afirmación en sistemas de consulta documental.
-- Atención al cliente sobre base de conocimiento: con 8192 tokens de contexto puede procesar varios fragmentos recuperados y responder citando el documento, o rechazar cuando la consulta queda fuera de la base.
-- Extracción de datos de contratos y facturas: el formato de salida estructurado permite consumir la respuesta de forma programática en flujos de extracción, con veredicto de rechazo cuando el dato no aparece.
-- Verificación de cumplimiento normativo: la combinación de citas y rechazo tipado facilita generar respuestas trazables para auditorías internas.
-- Despliegue en CPU: la cuantización Q4_K_M de 1,02 GiB permite ejecutar el modelo en servidores sin GPU, con latencia p50 de 11,2 s en el test de referencia.
-- Despliegue en GPU de consumo o Apple Silicon: la cuantización Q8_0 de 1,72 GiB es adecuada para Metal/GPU, con latencia p50 de 9,1 s en el mismo test.
-- Filtrado previo en sistemas de búsqueda documental: el modelo puede actuar como capa de respuesta extractiva antes de derivar consultas complejas a un modelo mayor.
+- Atención al cliente sobre base documental: el modelo recibe los fragmentos recuperados por el retriever y responde citando `[chunk_id]`, lo que permite auditar cada afirmación contra el documento fuente y reducir el riesgo de respuestas inventadas.
+- Cumplimiento normativo y consulta de políticas internas: el veredicto de rechazo tipado permite distinguir entre "no lo sé" y "no está en la documentación", un requisito habitual en entornos regulados donde una respuesta inventada es peor que una negativa.
+- Despliegue en CPU sin GPU: la cuantización Q4_K_M ocupa 1,02 GiB y el autor la describe como el artefacto de cliente para despliegue en CPU, lo que habilita servir el answerer en hardware modesto o en el borde.
+- Servicio en GPU de gama baja o Apple Silicon: la variante Q8_0 de 1,72 GiB está pensada para Metal/GPU y cabe holgadamente en cualquier GPU de consumo actual.
+- Extracción de datos numéricos de informes: con una recall de figuras de 0,81 en texto plano, es adecuado para localizar importes, fechas y métricas en documentos financieros o técnicos, siempre con cita verificable.
+- Rollback controlado en producción: el autor mantiene el artefacto en el hub para poder revertir con una sola línea (`TAG=v7 bash labs/fetch_prod.sh`), lo que lo convierte en la pieza de contingencia del pipeline ocrrag.
+- Evaluación de pipelines RAG: al estar medido sobre un test fijo de 108 filas (64 respondibles, 44 vacías), sirve como referencia para comparar cambios en el retriever o en el prompt.
 
 ## Benchmarks y rendimiento
 
@@ -58,43 +59,46 @@ Resultados medidos sobre el mismo test de 108 filas (64 respondibles, 44 vacías
 | v7 Q8_0 | 108/108 | 2/64 (3%) | 42/44 (95%) | 62/62 | 0,63 | 0 | 9,1 s |
 | v7 Q4_K_M | 108/108 | 3/64 (5%) | 42/44 (95%) | 61/61 | 0,60 | 0 | 11,2 s |
 
-Recall de cifras (cifras de referencia presentes): v7 Q8_0 texto plano 0,81 / tablas 0,40 / global 0,56; v7 Q4_K_M 0,81 / 0,44 / 0,58. El autor advierte que las latencias entre versiones no son comparables porque las ejecuciones de v3 y v6 compartieron máquina con otros tres modelos, mientras que las de v7 no; dentro de un mismo día, v7 Q8_0 (9,1 s) y v7 Q4_K_M (11,2 s) sí son comparables.
+Recall de cifras (figuras doradas presentes): v7 Q8_0 obtiene 0,81 en texto plano, 0,40 en tablas y 0,56 global; v7 Q4_K_M obtiene 0,81, 0,44 y 0,58 respectivamente. El autor advierte que las latencias entre versiones no son comparables porque las ejecuciones de v3 y v6 compartieron máquina con otros tres modelos, mientras que las de v7 no; dentro de un mismo día, los 9,1 s de Q8_0 y los 11,2 s de Q4_K_M sí son comparables entre sí.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 1,1–1,3 GB para Q4_K_M y 1,8–2,0 GB para Q8_0, incluyendo overhead de contexto.
-- GPU recomendadas: cualquier GPU con al menos 2–3 GB de VRAM libre; el modelo es viable en RTX 3060, RTX 4060, RTX 4090, A100 y H100 sin problemas de capacidad.
-- Cabe en GPU de consumo: sí, en todas las GPU consumer modernas con 4 GB o más; también en Apple Silicon vía Metal con la cuantización Q8_0.
-- Despliegue en CPU: viable con Q4_K_M, que es el artefacto destinado a cliente según el autor.
-- Opciones de despliegue: `llama-server` (llama.cpp) con `--jinja`, `-ngl 99`, `-c 8192`, `--temp 0`, `-np 1`; compatible con endpoints según los tags del repositorio. No se documentan otras opciones (vLLM, TGI, Ollama).
-- Latencia: p50 de 9,1 s con Q8_0 y 11,2 s con Q4_K_M en el test de 108 filas; no se documenta throughput.
+- VRAM estimada: aproximadamente 1,0 GiB para Q4_K_M y 1,7 GiB para Q8_0 solo en pesos; añadir el espacio de contexto KV para 8192 tokens según la implementación.
+- GPU recomendadas: no se especifican modelos concretos; la variante Q8_0 está destinada a Metal/GPU y la Q4_K_M a CPU.
+- Cabe en cualquier GPU de consumo: con menos de 2 GiB de pesos, es viable en RTX 3060, RTX 4060, RTX 4090 y en memoria unificada de Apple Silicon.
+- Despliegue: el autor documenta `llama-server` con `-ngl 99 -c 8192 --jinja --temp 0 -np 1 --port 8081`; al ser GGUF, es compatible con llama.cpp y con los runners que lo envuelven (Ollama, entre otros). No se mencionan vLLM ni TGI.
+- Latencia: p50 de 9,1 s con Q8_0 y 11,2 s con Q4_K_M sobre el test de 108 filas, en las condiciones descritas por el autor.
+- Throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Especialización | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ocrrag-lfm3-plain-gguf-v7 | 1,7B | 8192 (despliegue) | Respondedor extractivo con citas y rechazo | no disponible | GGUF |
-| LiquidAI/LFM3-1.7B (base) | 1,7B | no disponible | Modelo conversacional general | no disponible | safetensors |
-| Modelos RAG generalistas de 1–3B | no disponible | no disponible | Generación aumentada sin formato garantizado | variable | variable |
+| ocrrag-lfm3-plain-gguf-v7 | 1,73B | 8192 (servicio) | Answerer extractivo con rechazo tipado | no disponible | GGUF en HF |
+| ocrrag-lfm3-plain-gguf-v9 | no disponible | no disponible | Sucesor directo de v7, corrige el fallo con el prompt en prosa | no disponible | GGUF en HF |
+| LiquidAI/LFM3-1.7B | 1,7B | no disponible | Modelo base de propósito general | no disponible | HF |
 
-No se dispone de datos de benchmarks de modelos alternativos en la información proporcionada para establecer una comparación cuantitativa directa.
+La comparación más relevante es interna a la familia: el propio autor declara v7 superado por v9 y documenta que, con el prompt en prosa que sirve el producto (2437 caracteres, sha256 `36a0d43a601f8318`), v7 rechaza 334 de 351 filas. No se dispone de datos de benchmarks frente a modelos de otros autores.
 
 ## Limitaciones y advertencias
 
-- Recall limitado en tablas: 0,40–0,44, porque la respuesta debe nombrar fila y columna; es el punto débil declarado por el autor.
-- Se descartaron 118 filas de entrenamiento (5,2%) por superar `max_length 6144`, precisamente las ventanas de tablas más largas, lo que agrava el problema anterior.
-- La decisión de rechazar o responder se cubre mejor con el reranker libre que con este adaptador; el adaptador se ocupa del texto, no de la clasificación.
-- El prompt de sistema debe enviarse byte a byte tal como se sirvió (2530 caracteres, sha256 `5449aca38687225a`); cualquier variación puede degradar el comportamiento.
-- La gramática sobre el objeto de salida es una garantía de servicio, no un sustituto del entrenamiento.
-- Licencia no disponible: no se puede confirmar el uso comercial sin consultar al autor.
-- Idiomas soportados no disponibles; el entrenamiento parece orientado a un caso de uso concreto y no a cobertura multilingüe.
-- Riesgo de alucinación mitigado por el anclaje y las citas, pero no eliminado; el modelo puede omitir cifras presentes en la ventana (recall global 0,56–0,58).
-- Las latencias publicadas no son comparables entre versiones por diferencias en la carga de la máquina de evaluación.
+- Versión superada: el autor indica explícitamente que v9 reemplaza a v7; usar v7 en un despliegue nuevo no está recomendado.
+- Fallo documentado con el prompt de producción: sobre el prompt en prosa servido por el producto, rechaza 334 de 351 filas, lo que lo inutiliza para ese formato de entrada.
+- Dependencia estricta del prompt: debe enviarse byte a byte el prompt de entrenamiento (2530 caracteres, sha256 `5449aca38687225a`); cualquier variación degrada el comportamiento.
+- Recall bajo en tablas: 0,40-0,44, porque la respuesta debe nombrar fila y columna; el autor lo señala como el problema abierto.
+- Filas descartadas en entrenamiento: 118 de 2268 (5,2%) se eliminaron por exceder `max_length 6144`, justo las ventanas con tablas más largas, que es donde peor rinde.
+- Decisión de rechazo: el autor recomienda delegar el binomio responder/rechazar en el reranker libre y reservar este adaptador para la generación del texto.
+- Licencia no disponible: no se puede confirmar el uso comercial; hay que verificar la licencia del modelo base LFM3-1.7B y del adaptador antes de producción.
+- Idiomas soportados no disponibles: no hay garantía documentada de comportamiento multilingüe.
+- Riesgo de alucinación mitigado pero no eliminado: la gramática sobre `{"answer", "refusal"}` es una garantía de formato, no de veracidad; las cifras fuera de ventana se midieron en 0, pero la recall numérica global es de 0,56-0,58.
+- Sesgos: no documentados en la información disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/p4ulbr4dl3y/ocrrag-lfm3-plain-gguf-v7
+- Versión sucesora: https://huggingface.co/p4ulbr4dl3y/ocrrag-lfm3-plain-gguf-v9
 - Adaptador LoRA: https://huggingface.co/p4ulbr4dl3y/ocrrag-lfm3-plain-lora-v7
 - Dataset de entrenamiento: https://huggingface.co/p4ulbr4dl3y/ocrrag-lfm3-plain-data-v7
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
-- No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.
+- Documento del defecto con el prompt en prosa: `docs/experiments/2026-11-09-plain-v9-stand.md` (referenciado en la model card; no se proporciona URL)
+- Documento de la corrección: `docs/experiments/2026-11-09-plain-v9-sft.md` (referenciado en la model card; no se proporciona URL)

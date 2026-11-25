@@ -41,31 +41,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ActionCodec2: A Streaming Action Tokenizer - zibindong.github.io",
-      "url": "https://zibindong.github.io/actioncodec2-page/",
-      "snippet": "ActionCodec2 — a training-free streaming action tokenizer built from minimal covering primitives, with provably bounded tracking error and lossless Set-BPE packing."
-    },
-    {
-      "title": "GitHub - ZibinDong/actioncodec: ActionCodec: What Makes for Good Action ...",
-      "url": "https://github.com/ZibinDong/actioncodec",
-      "snippet": "ActionCodec: What Makes for Good Action Tokenizers ActionCodec is a neural codec for encoding and decoding robot action sequences, enabling vision-language-action models to achieve better performance through learned action tokenization."
-    },
-    {
-      "title": "ActionCodec: What Makes for Good Action Tokenizers",
-      "url": "https://arxiv.org/abs/2602.15397",
-      "snippet": "Central to this paradigm is action tokenization, yet its design has primarily focused on reconstruction fidelity, failing to address its direct impact on VLA optimization. Consequently, the fundamental question of &#92;textit {what makes for good action tokenizers} remains unanswered."
-    },
-    {
-      "title": "ActionCodec2 - a ZibinDong Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/ZibinDong/actioncodec2",
-      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from ZibinDong"
-    },
-    {
-      "title": "ZibinDong/ActionCodec2-Extended-10mm-2k · Hugging Face",
-      "url": "https://huggingface.co/ZibinDong/ActionCodec2-Extended-10mm-2k",
-      "snippet": "ZibinDong / ActionCodec2-Extended-10mm-2k Like 0 Robotics Transformers actioncodec2 action-tokenization extended-edition 1st-order License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    }
-  ]
+  "sources": []
 }

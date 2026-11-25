@@ -2,69 +2,56 @@
 
 ## Resumen
 
-SANA-Robot-AR LIBERO es un modelo de accion-para-mundo (world-action model) orientado a politicas de manipulacion robotica, desarrollado por el grupo Efficient-Large-Model (NVIDIA Labs, segun la pagina del proyecto). El modelo parte de una observacion multivista, de la propiocepcion del robot y de una instruccion en lenguaje natural, y predice de forma conjunta un bloque de 32 acciones de control y el video futuro correspondiente. La variante AR incorpora una memoria hibrida sobre el historial visual del episodio, lo que permite mantener coherencia temporal sin que el coste computacional crezca con la duracion de la tarea.
+SANA-Robot-AR LIBERO es un modelo de accion mundial (world-action model) para robotica de manipulacion desarrollado por Efficient-Large-Model (grupo vinculado a NVIDIA Labs, segun la pagina del proyecto). A partir de una observacion multi-vista (camara en tercera persona y camara de muneca, 256x256 cada una), la propriocepcion del robot y una instruccion en lenguaje natural, el modelo predice de forma conjunta un bloque de 32 acciones de control y el video futuro correspondiente. Esta variante AR anade una memoria hibrida sobre el historial visual del episodio, de modo que el coste de inferencia no crece con la duracion del episodio.
 
-El modelo cuenta con 4.5B parametros y esta post-entrenado sobre las cuatro suites del benchmark LIBERO (Spatial, Object, Goal y Long), con un unico modelo que cubre las cuatro. Esta pensado para el robot Franka Panda de un solo brazo, con camara en tercera persona y camara de muneca a 256x256 por vista. Su relevancia actual radica en que combina generacion de video futuro con prediccion de acciones en un mismo backbone eficiente, y en que generaliza razonablemente bien frente a perturbaciones (camara, iluminacion, fondo, ruido, lenguaje) en benchmarks derivados de LIBERO.
+La innovacion central es la combinacion de capas de atencion softmax (que leen el primer fotograma y una ventana deslizante de un bloque reciente) con capas Gated DeltaNet que comprimen cada bloque pasado en un estado de tamano constante. Esto permite mantener contexto de episodios largos sin un coste cuadratico en atencion, algo relevante en tareas de manipulacion con horizonte extendido.
 
-La licencia Apache 2.0 y el hecho de que se publique junto con los pesos EMA del paso 8.000 de post-entrenamiento lo convierten en una base util para investigacion en politicas de manipulacion, si bien su uso esta restringido a entornos de investigacion y requiere fine-tuning para robots, camaras o tareas distintas de las de LIBERO.
+El modelo, de 4,5B parametros, se ha post-entrenado sobre las cuatro suites de LIBERO (Spatial, Object, Goal y Long) con un unico conjunto de pesos, y se evalua sobre tres benchmarks de perturbacion (LIBERO-Plus, LIBERO-PRO y LIBERO-MAX). Su licencia Apache 2.0 y su enfoque eficiente lo hacen util como referencia para investigacion en politicas de manipulacion y como base para fine-tuning en otros robots o escenas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | World-action model transformer hibrido con atencion softmax y capas Gated DeltaNet (memoria recurrente de estado constante); policy_type `ar` |
-| Parametros totales | 4.5B |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible como valor numerico; memoria compuesta por primer frame, ventana deslizante de 1 chunk y estado Gated DeltaNet sobre todos los chunks pasados |
+| Arquitectura | World-action model hibrido: capas de atencion softmax + capas Gated DeltaNet (memoria de estado constante); policy type `ar` |
+| Parametros totales | 4,5B |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | Memoria hibrida: primer fotograma + ventana deslizante de 1 bloque + estado Gated DeltaNet sobre todos los bloques pasados; sin limite de contexto en tokens declarado |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (las instrucciones de LIBERO estan en ingles, pero la model card no declara idiomas) |
+| Idiomas soportados | no disponible (instrucciones en lenguaje natural; idioma de entrenamiento no declarado) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.pth` (state dict bajo la clave `state_dict_ema`); no se publican safetensors ni GGUF |
-
-Otros datos tecnicos relevantes:
-
-| Parametro | Valor |
-|---|---|
-| Robot | Franka Panda, un brazo |
-| Camaras | tercera persona y muneca, 256x256 cada una, layout 2x2 |
-| Chunk de acciones | 32 pasos de control; video codificado con stride de 4 frames |
-| Datos de entrenamiento | demostraciones LIBERO de las cuatro suites |
-| Pesos publicados | EMA (decay 0.999) en el paso 8.000 de post-entrenamiento |
-| Text encoder | Gemma 2 2B (no incluido en el repo) |
-| Video VAE | LTX-2.3 VAE, layout diffusers (no incluido en el repo) |
-| Tamano del repo | 17.9 GB |
-| Ficheros | `sana_robot_ar_libero.pth`, `meta.json`, `normalization.json`, `SHA256SUMS` |
+| Formato de pesos | `.pth` (state dict bajo la clave `state_dict_ema`), acompanado de `meta.json`, `normalization.json` y `SHA256SUMS` |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un world-action model que genera simultaneamente acciones y video futuro. El componente distintivo es la memoria hibrida: las capas de atencion softmax leen el primer frame del episodio y una ventana deslizante de un chunk reciente, mientras que las capas Gated DeltaNet comprimen cada chunk pasado en un estado de tamano constante. Esto hace que los chunks atiendan causalmente a los anteriores y que el coste por peticion no crezca con la longitud del episodio, lo que resulta especialmente util en tareas de horizonte largo como la suite Long de LIBERO.
+SANA-Robot-AR es un modelo de accion mundial que combina prediccion de acciones con prediccion de video futuro. La entrada son dos camaras (tercera persona y muneca) a 256x256 con disposicion espacial 2x2, la propriocepcion y una instruccion textual. La salida es un bloque de 32 pasos de control; el video de cada bloque se codifica con un stride de 4 fotogramas. La memoria visual del episodio se gestiona de forma hibrida: las capas de atencion softmax acceden al primer fotograma y a una ventana deslizante de un bloque reciente, mientras que las capas Gated DeltaNet comprimen cada bloque pasado en un estado de tamano constante, evitando que el coste de una peticion crezca con la longitud del episodio.
 
-El modelo parte de un pre-entrenamiento (publicado como SANA-Robot-AR-Pretrain) y se post-entrena sobre las demostraciones de las cuatro suites LIBERO, con los pesos finales tomados como media exponencial de pesos (EMA, decay 0.999) en el paso 8.000. La model card no detalla el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO; esos datos no estan disponibles. El pipeline de inferencia combina un text encoder Gemma 2 2B y un VAE de video LTX-2.3, ambos externos al repositorio y que deben descargarse por separado.
+El modelo se ha post-entrenado sobre las demostraciones de las cuatro suites de LIBERO (Spatial, Object, Goal y Long), con un unico modelo para todas ellas. Los pesos publicados son los EMA (decay 0.999) en el paso 8.000 de post-entrenamiento. Utiliza como codificador de texto Gemma 2 2B (no incluido en el repositorio) y como VAE de video LTX-2.3 VAE en formato diffusers (tampoco incluido). El repositorio incluye `normalization.json` y `meta.json`, que deben usarse tal cual (no recalcular la normalizacion) al ejecutar los pesos. La receta de fine-tuning es `configs/libero_ar.yaml`.
 
 ## Capacidades
 
-- Prediccion de bloques de 32 acciones de control a partir de observacion multivista, propiocepcion e instruccion en lenguaje natural.
-- Generacion de video futuro del episodio, codificado con stride de 4 frames por chunk.
-- Memoria temporal hibrida que combina primer frame, ventana deslizante de un chunk y estado comprimido de todos los chunks pasados.
-- Razonamiento de horizonte largo gracias a la memoria de coste constante, orientado a tareas tipo LIBERO Long.
-- Generalizacion frente a perturbaciones de camara, robot, lenguaje, iluminacion, fondo, ruido y layout (evaluada en LIBERO-Plus).
-- Robustez parcial frente a cambios de objeto, posicion, semantica y tarea (evaluada en LIBERO-PRO).
-- No se documentan en la informacion disponible capacidades de tool calling, function calling, agentes multi-paso, audio ni thinking mode.
-- Capacidades multilingues: no disponibles como dato declarado.
+- Prediccion conjunta de bloques de 32 acciones de control y video futuro a partir de observacion multi-vista, propriocepcion e instruccion en lenguaje natural.
+- Memoria de episodio con coste constante: atencion al primer fotograma, ventana deslizante de un bloque y estado Gated DeltaNet sobre el historial.
+- Control de un brazo Franka Panda con camara de tercera persona y camara de muneca.
+- Generalizacion a perturbaciones de camara, robot, lenguaje, iluminacion, fondo, ruido y disposicion (evaluado en LIBERO-Plus).
+- Robustez frente a perturbaciones de objeto, posicion, semantica y tarea (evaluado en LIBERO-PRO).
+- Evaluacion en escenarios base y dinamicos (LIBERO-MAX).
+- Inferencia eficiente: 2 pasos de denoising sin guidance en LIBERO-Plus y LIBERO-MAX; 10 pasos con guidance de video 3 en LIBERO-PRO.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso en el sentido de LLM: no disponible; el modelo es una politica robotica.
 
 ## Casos de uso
 
-- Investigacion en politicas de manipulacion: utilizar los pesos como punto de partida para reproducir los resultados de LIBERO o como baseline en comparaciones academicas, gracias a la publicacion de los pesos EMA y de la receta de fine-tuning `configs/libero_ar.yaml`.
-- Fine-tuning para un nuevo robot o conjunto de camaras: el modelo esta entrenado para Franka Panda con camara de muneca y tercera persona; para otra configuracion se puede reutilizar el pre-entrenamiento SANA-Robot-AR-Pretrain y adaptar la normalizacion con `meta.json` y `normalization.json`.
-- Evaluacion de robustez ante perturbaciones: desplegar el modelo en LIBERO-Plus, LIBERO-PRO o LIBERO-MAX para medir el impacto de cambios de iluminacion, fondo, ruido o instrucciones sobre la tasa de exito.
-- Generacion de video de planificacion: usar la prediccion de video futuro como representacion intermedia para depurar o visualizar la intencion del policy antes de ejecutar acciones en simulacion.
-- Tareas de horizonte largo en simulacion: la memoria de coste constante permite sostener episodios de hasta 700 pasos de control en la suite Long sin que el coste por peticion crezca con la duracion.
-- Benchmarking de eficiencia de world-action models: comparar el coste por peticion frente a politicas con atencion completa sobre el historial, especialmente en episodios largos.
-- Prototipado de pipelines de evaluacion robotica: integrar el evaluador de `eval/libero` del codigo de SANA-Robot en infraestructuras de evaluacion automatizada en simulacion.
+- Investigacion en politicas de manipulacion: servir como referencia reproducible sobre LIBERO para comparar metodos de world-action models con memoria, usando los pesos publicados y el evaluador de `eval/libero`.
+- Fine-tuning en nuevos robots o escenas: partir de estos pesos (o de SANA-Robot-AR-Pretrain) y adaptar con la receta `configs/libero_ar.yaml` a tareas y camaras propias.
+- Manipulacion con horizonte largo: la memoria hibrida (estado Gated DeltaNet de tamano constante) permite mantener informacion de episodios de hasta 400-700 pasos de control sin que el coste crezca con la duracion.
+- Evaluacion de robustez: usar los pesos como linea base en benchmarks de perturbacion (LIBERO-Plus, LIBERO-PRO, LIBERO-MAX) para medir degradacion ante cambios de camara, iluminacion, lenguaje o posicion de objetos.
+- Prediccion de video futuro para planificacion: la salida de video por bloque puede usarse para inspeccionar la intencion del modelo antes de ejecutar acciones en simulacion.
+- Generacion de datos sinteticos de trayectorias en simulacion: el modelo puede producir bloques de acciones y videos asociados para aumentar datasets de investigacion, siempre en entorno simulado.
+- Prototipado de pipelines de control visual con instrucciones en lenguaje natural en laboratorio, con limites de espacio de trabajo y parada de emergencia.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card (tasa de exito en %; el modelo solo se post-entrena con las suites originales de LIBERO y se evalua en benchmarks que perturban esas tareas):
+Tasa de exito (%) reportada por el autor sobre benchmarks de perturbacion de LIBERO:
 
 | Benchmark | Episodios | Tasa de exito |
 |---|---|---|
@@ -74,7 +61,7 @@ Resultados publicados en la model card (tasa de exito en %; el modelo solo se po
 
 LIBERO-Plus por tipo de perturbacion:
 
-| Camara | Robot | Lenguaje | Luz | Fondo | Ruido | Layout |
+| Camara | Robot | Lenguaje | Luz | Fondo | Ruido | Disposicion |
 |---|---|---|---|---|---|---|
 | 84,1 | 98,4 | 93,9 | 99,7 | 98,8 | 94,4 | 91,8 |
 
@@ -84,54 +71,47 @@ LIBERO-PRO por tipo de perturbacion:
 |---|---|---|---|
 | 88,95 | 47,65 | 98,10 | 37,65 |
 
-Ajustes de inferencia declarados:
-
-- LIBERO-Plus y LIBERO-MAX: 2 pasos de denoising, sin guidance, nuevo chunk cada 16 pasos de control (`eval/libero/deploy.yaml`).
-- LIBERO-PRO: 10 pasos de denoising, guidance de video 3, nuevo chunk cada 8 pasos de control.
-- Episodios de LIBERO-Plus y LIBERO-PRO de hasta 400 pasos de control (700 en Long). Dentro de los limites de las cuatro suites originales (220, 280, 300 y 520 pasos), la tasa de exito en LIBERO-Plus es de 93,35. LIBERO-MAX usa siempre esos limites.
-
-No se han publicado resultados de benchmarks en la informacion disponible para MMLU, HumanEval, GSM8K ni metricas de lenguaje, al no ser un modelo de proposito general.
+Con los limites de pasos de las cuatro suites originales (220 / 280 / 300 / 520), la tasa de exito es 93,35 en LIBERO-Plus y 65,36 en LIBERO-PRO. LIBERO-MAX usa siempre esos limites. No se han publicado resultados de benchmarks en la informacion disponible mas alla de los anteriores.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita en la model card. Con 4.5B parametros en el policy y componentes adicionales (Gemma 2 2B como text encoder y LTX-2.3 VAE), el repo de pesos ocupa 17.9 GB; el consumo real depende del formato de pesos y de si se cuantiza, dato no documentado.
-- GPU recomendadas: no disponibles como recomendacion oficial. Por tamano, se situa en el rango de GPUs de datacenter (A100, H100) para ejecucion sin cuantizacion; el texto de la model card no confirma configuraciones concretas.
-- Viabilidad en GPU de consumo: no disponible como dato confirmado. El tamano de 4.5B parametros sugiere que podria caber en GPUs de consumo con cuantizacion, pero no se publican pesos cuantizados ni requisitos oficiales.
-- Opciones de despliegue: el modelo se sirve a traves de la libreria `sana` y del evaluador `eval/libero` del codigo de SANA-Robot; no se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles. Los ajustes de inferencia (2 o 10 pasos de denoising, frecuencia de nuevos chunks cada 16 u 8 pasos de control) permiten estimar el coste relativo, pero no se publican cifras absolutas de latencia.
+- VRAM estimada para inferencia: no disponible en la informacion proporcionada. Como referencia orientativa, un modelo de 4,5B en precision de 16 bits requiere del orden de 9 GB solo para pesos, a lo que hay que sumar el codificador de texto Gemma 2 2B y el VAE de video LTX-2.3, no incluidos en el repositorio.
+- GPU recomendadas: no disponible de forma explicita; por tamano, una GPU con 24 GB o mas (RTX 4090, A100, H100) es un punto de partida razonable, pero no confirmado por el autor.
+- Cabe en GPU de consumo: no confirmado; depende de la precision y de los componentes auxiliares (text encoder y VAE).
+- Opciones de despliegue: el autor remite al codigo de SANA-Robot y al evaluador en `eval/libero`; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles. La configuracion de inferencia usa 2 pasos de denoising sin guidance (LIBERO-Plus y LIBERO-MAX) y 10 pasos con guidance 3 (LIBERO-PRO), con nuevo bloque cada 16 u 8 pasos de control respectivamente.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / memoria | Benchmarks | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto / memoria | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SANA-Robot-AR LIBERO | 4.5B | primer frame + ventana de 1 chunk + estado Gated DeltaNet | LIBERO-Plus 93,98; LIBERO-PRO 68,09; LIBERO-MAX 88,30 / 76,06 | Apache 2.0 | Hugging Face |
-| SANA-Robot-AR-Pretrain | no disponible | misma arquitectura de memoria hibrida | no disponible en esta ficha | Apache 2.0 (segun repositorio relacionado) | Hugging Face |
-| SANA-Robot-AR-RoboDojo | no disponible | misma familia AR | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
-| SANA-Robot-AR-RoboTwin2.0 | no disponible | misma familia AR | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
+| SANA-Robot-AR LIBERO | 4,5B | Memoria hibrida (ventana + estado Gated DeltaNet) | World-action model con prediccion de acciones y video | Apache 2.0 | Pesos en Hugging Face |
+| SANA-Robot-AR-Pretrain | no disponible | Memoria hibrida | Modelo preentrenado para fine-tuning | Apache 2.0 | Pesos en Hugging Face |
+| SANA-Robot-AR-RoboDojo | no disponible | Memoria hibrida | Variante post-entrenada en RoboDojo | Apache 2.0 | Pesos en Hugging Face |
+| SANA-Robot-AR-RoboTwin2.0 | no disponible | Memoria hibrida | Variante post-entrenada en RoboTwin2.0 | Apache 2.0 | Pesos en Hugging Face |
 
-No se dispone en la informacion proporcionada de resultados comparativos con otros world-action models o politicas de manipulacion de terceros (por ejemplo, variantes de diffusion policy o VLA genericos); esos datos no estan disponibles.
+No se dispone de datos de rendimiento de modelos comparables de otros autores en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Uso previsto exclusivamente para investigacion en politicas de manipulacion robotica; no esta validado para produccion ni para operacion en robots fisicos sin supervision.
-- Entrenado unicamente con demostraciones simuladas de LIBERO y para un robot Franka Panda de un brazo; otros robots, camaras, tareas o escenas requieren fine-tuning.
-- Una politica aprendida puede fallar sin aviso; en un robot fisico debe ejecutarse con limites de espacio de trabajo, limites de velocidad y una persona junto al boton de parada.
-- Rendimiento desigual segun la perturbacion: en LIBERO-PRO la tasa de exito cae a 47,65 con cambios de posicion y a 37,65 con cambios de tarea, frente a 98,10 en perturbaciones semanticas.
-- Dependencia de componentes externos no incluidos en el repositorio (text encoder Gemma 2 2B y VAE LTX-2.3), lo que anade requisitos de descarga y versionado.
-- Debe usarse el `normalization.json` y el `meta.json` publicados junto a los pesos, no una normalizacion recalculada, para evitar desviaciones en las acciones predichas.
-- No se documentan sesgos conocidos, riesgos de alucinacion en texto ni restricciones adicionales de licencia mas alla de Apache 2.0; estos datos no estan disponibles.
-- Idiomas soportados no declarados; las instrucciones de LIBERO estan en ingles y no se garantiza comportamiento en castellano u otros idiomas.
+- Entrenado unicamente sobre demostraciones simuladas de LIBERO con un robot Franka Panda de un brazo; otros robots, camaras, tareas o escenas requieren fine-tuning.
+- Una politica aprendida puede fallar sin aviso: en un robot fisico debe ejecutarse solo con limites de espacio de trabajo, limites de velocidad y una persona junto al boton de parada.
+- El rendimiento cae de forma notable en perturbaciones de posicion (47,65) y de tarea (37,65) en LIBERO-PRO, lo que indica fragilidad ante cambios fuera de la distribucion de entrenamiento.
+- Requiere usar el `normalization.json` y el `meta.json` publicados; recalcular la normalizacion puede degradar el comportamiento.
+- El codificador de texto (Gemma 2 2B) y el VAE de video (LTX-2.3) no estan incluidos en el repositorio y deben obtenerse por separado, con sus propias licencias.
+- No se documentan sesgos, idiomas de entrenamiento ni riesgos de alucinacion en el sentido de LLM; el modelo es una politica robotica, no un modelo de lenguaje de proposito general.
+- Uso previsto: investigacion en politicas de manipulacion robotica; no se declaran garantias para produccion.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Efficient-Large-Model/SANA-Robot-AR-LIBERO
 - Pagina del proyecto: https://nvlabs.github.io/Sana/Robot/
-- Modelo pre-entrenado para fine-tuning: https://huggingface.co/Efficient-Large-Model/SANA-Robot-AR-Pretrain
+- Modelo preentrenado: https://huggingface.co/Efficient-Large-Model/SANA-Robot-AR-Pretrain
 - Variante RoboDojo: https://huggingface.co/Efficient-Large-Model/SANA-Robot-AR-RoboDojo
 - Variante RoboTwin2.0: https://huggingface.co/Efficient-Large-Model/SANA-Robot-AR-RoboTwin2.0
-- Text encoder Gemma 2 2B: https://huggingface.co/google/gemma-2-2b-it
-- Video VAE LTX-2.3: https://huggingface.co/Efficient-Large-Model/LTX-2.3-Diffusers
-- Benchmark LIBERO: https://github.com/Lifelong-Robot-Learning/LIBERO
-- Benchmark LIBERO-Plus: https://github.com/sylvestf/LIBERO-plus
-- Benchmark LIBERO-PRO: https://github.com/Zxy-MLlab/LIBERO-PRO
-- Benchmark LIBERO-MAX: https://github.com/liberomax/LIBERO-MAX
+- Codificador de texto Gemma 2 2B: https://huggingface.co/google/gemma-2-2b-it
+- VAE de video LTX-2.3: https://huggingface.co/Efficient-Large-Model/LTX-2.3-Diffusers
+- LIBERO (benchmark original): https://github.com/Lifelong-Robot-Learning/LIBERO
+- LIBERO-Plus: https://github.com/sylvestf/LIBERO-plus
+- LIBERO-PRO: https://github.com/Zxy-MLlab/LIBERO-PRO
+- LIBERO-MAX: https://github.com/liberomax/LIBERO-MAX

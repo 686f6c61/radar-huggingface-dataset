@@ -5,7 +5,7 @@
   "author": "FlagRelease",
   "url": "https://huggingface.co/FlagRelease/Hy4-flash-INT8-mthreads-FlagOS",
   "created_at": "2026-11-18T09:53:23.000Z",
-  "updated_at": "2026-11-20T06:04:36.000Z",
+  "updated_at": "2026-11-24T10:00:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 32,
   "trending_score": 0,
   "parameters": 220251201958,
   "parameters_human": "220.25B",

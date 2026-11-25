@@ -2,98 +2,101 @@
 
 ## Resumen
 
-Este repositorio contiene una cuantización ROCmFP4 (4.25 bpw) del modelo draft `z-lab/Qwen3.8-27B-DFlash2`, diseñado exclusivamente como sidecar para decodificación especulativa junto al modelo principal Qwen3.8-27B. El autor, agentionai, lo publica bajo licencia Apache-2.0 con el objetivo de acelerar la inferencia en hardware AMD, específicamente en APUs Strix Halo (Radeon 8060S). Según las mediciones del autor, combinado con el target `julianmb/Qwen-3.8-27B-ROCmFP4-FAST-GGUF`, alcanza 65.6 t/s en salida estructurada, lo que supone un factor de aceleración de 4.7x respecto a la decodificación directa.
+Qwen3.8-27B-DFlash2-ROCmFP4-FAST-GGUF es una recuantización en formato GGUF del modelo borrador (draft model) z-lab/Qwen3.8-27B-DFlash2, publicada por agentionai. No es un modelo autónomo: es un sidecar de decodificación especulativa diseñado para emparejarse con un modelo objetivo Qwen3.8-27B y acelerar su inferencia. El repositorio contiene pesos en cuantización Q4_0_ROCMFP4_FAST (tipo de fichero GGUF 103), con un tamaño de 1,0 GB y 1.924.404.480 parámetros reales según safetensors.
 
-El modelo tiene aproximadamente 1.9 mil millones de parámetros (1.924.404.480 según los safetensors originales) y usa una arquitectura DFlash2, optimizada para servir como borrador en esquemas de decodificación especulativa. No es un modelo autónomo: carece de grafo completo y falla al cargarse de forma independiente. Su relevancia radica en que permite aprovechar al máximo el hardware AMD de gama media-alta para ejecutar modelos de 27B con baja latencia, un caso de uso cada vez más demandado en entornos locales y de edge computing.
+Su relevancia es práctica: en hardware AMD Strix Halo (Radeon 8060S) emparejado con el objetivo julianmb/Qwen-3.8-27B-ROCmFP4-FAST-GGUF, alcanza 65,6 t/s en salida estructurada, lo que supone 4,7 veces la velocidad de decodificación sin borrador. La clave es el modo adaptativo del borrador, que ajusta dinámicamente el número de tokens propuestos según la aceptación medida.
+
+La licencia es Apache-2.0, heredada del modelo base, y el pipeline declarado es text-generation. No se dispone de información sobre idiomas soportados ni sobre la arquitectura interna del modelo base en la información proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DFlash2 (draft model para decodificación especulativa) |
+| Arquitectura | no disponible (modelo borrador de decodificación especulativa para Qwen3.8-27B) |
 | Parametros totales | 1.924.404.480 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (el comando de ejemplo usa 32768 tokens) |
-| Tipos de cuantizacion | ROCmFP4 (4.25 bpw), tipo GGUF 103 (Q4_0_ROCMFP4_FAST) |
-| Idiomas soportados | No disponibles |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (en el ejemplo de uso se configura `-c 32768` para el servidor, no como spec del modelo) |
+| Tipos de cuantizacion | Q4_0_ROCMFP4_FAST (4,25 bpw); formatos ROCmFPx del fork de llama.cpp |
+| Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (file type 103, Q4_0_ROCMFP4_FAST) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una requantización del draft model `z-lab/Qwen3.8-27B-DFlash2`, que a su vez es un modelo ligero (~1.9B) diseñado para predecir tokens que luego verifica el modelo principal Qwen3.8-27B. La arquitectura DFlash2 no está documentada en detalle en la información disponible, pero se infiere que es un transformer optimizado para inferencia rápida, probablemente con atención flash y mecanismos de decodificación especulativa integrados. El entrenamiento original del draft model no se detalla; solo se indica que el modelo base es de z-lab y que la cuantización ROCmFP4 es obra de agentionai.
+No se dispone de información sobre la arquitectura interna del modelo base z-lab/Qwen3.8-27B-DFlash2 ni sobre su proceso de entrenamiento (número de tokens, composición del dataset, RLHF/DPO). Lo que sí documenta la model card es su función: actúa como modelo borrador en un esquema de decodificación especulativa, proponiendo tokens que el modelo objetivo verifica. El borrador no tiene grafo completo propio y falla con `failed to create context` si se carga de forma aislada, lo cual es el comportamiento esperado.
 
-La innovación principal de esta versión es el uso del formato ROCmFP4, un tipo de cuantización de 4 bits por peso (4.25 bpw) que reduce el tamaño del modelo a aproximadamente 1 GB, permitiendo que quepa en la memoria unificada de APUs como Strix Halo. Además, el archivo GGUF tipo 103 (`Q4_0_ROCMFP4_FAST`) solo es compatible con un fork específico de llama.cpp que incluye soporte para los tipos ROCmFPx. El autor advierte que no se debe requantizar a `Q8_0_ROCMFPX` esperando paridad con `Q8_0`, ya que la escala de bloque en FP4 es un byte UE4M3, lo que degrada la tasa de aceptación a 53.5% frente al 60.2% del original.
+La innovación técnica destacable es el modo `--spec-draft-adaptive`, que dimensiona el borrador a partir de la aceptación medida en lugar de fijar un valor de `n`. Con `n` fijo a 7 la aceptación cae al 18 % y el throughput baja a 20,2 t/s; con modo adaptativo se mantiene en el 96 % de aceptación y alcanza 65,6 t/s. La cuantización emplea escalas de bloque en byte UE4M3 en lugar de fp16: el autor advierte que recuantizar a Q8_0_ROCMFPX no da paridad con Q8_0 (53,5 % de aceptación frente al 60,2 % del original), porque a 8 bits la escala gruesa es la que penaliza.
 
 ## Capacidades
 
-- Funciona exclusivamente como modelo borrador (draft) en decodificación especulativa, junto a un modelo target (Qwen3.8-27B).
-- Acelera la generación de texto estructurado (JSON, código, etc.) y prosa, manteniendo la calidad del target porque cada token es verificado por el modelo principal.
-- Soporta decodificación adaptativa mediante `--spec-draft-adaptive`, que ajusta dinámicamente el número de tokens borrador según la tasa de aceptación medida.
-- Requiere un fork de llama.cpp con soporte para tipos ROCmFPx; no carga en la versión estándar de llama.cpp.
-- Compatible con Vulkan 1.3, probado en Mesa RADV 26.0.8 sobre gfx1151 (AMD Strix Halo).
-- No es un modelo autónomo: no tiene grafo completo y falla al cargarse solo con `failed to create context`.
+- Decodificación especulativa: propone tokens candidatos que el modelo objetivo Qwen3.8-27B verifica, acelerando la generación sin alterar la calidad de la salida.
+- Ajuste adaptativo del borrador: `--spec-draft-adaptive` con `--spec-draft-n-min 3` y `--spec-draft-n-max 7` mantiene alta aceptación en distintos tipos de salida.
+- Rendimiento diferenciado por tipo de contenido: 65,6 t/s en salida estructurada y 26,1 t/s en prosa, ambos por encima de los 14,0-14,1 t/s de decodificación sin borrador.
+- Integración con llama-server mediante el flag `-md` y `--spec-type draft-dflash`.
+- No es un modelo de propósito general: no genera texto de forma autónoma, no soporta tool calling por sí mismo ni dispone de capacidades multimodales documentadas.
+- Idiomas y capacidades multilingües: no disponibles.
 
 ## Casos de uso
 
-- **Aceleración de inferencia en AMD Strix Halo**: el caso principal es ejecutar Qwen3.8-27B en APUs como Ryzen AI Max+ 395, donde la decodificación especulativa con este draft model multiplica por 4.7 la velocidad en salida estructurada (de 14.0 a 65.6 t/s).
-- **Despliegue local de asistentes conversacionales**: en entornos sin GPU dedicada, este sidecar permite reducir la latencia de respuestas en aplicaciones de chat, manteniendo la calidad del modelo de 27B.
-- **Generación de código y JSON en producción**: la salida estructurada se beneficia especialmente de la decodificación especulativa, logrando 65.6 t/s, lo que lo hace viable para pipelines de generación de código o extracción de datos.
-- **Prototipado de agentes con baja latencia**: en frameworks de agentes que requieren múltiples llamadas al modelo, la reducción de latencia por token permite ciclos de razonamiento más rápidos.
-- **Evaluación de modelos en hardware AMD**: sirve como referencia para medir el rendimiento de la cuantización ROCmFP4 y la decodificación adaptativa en GPUs de la serie Radeon.
-- **Integración en entornos con memoria unificada**: al ocupar solo ~1 GB, el draft model puede residir junto al target en la memoria compartida de APUs, sin necesidad de VRAM dedicada adicional.
+- Aceleración de inferencia local en AMD Strix Halo: emparejar este sidecar con el objetivo Qwen3.8-27B ROCmFP4-FAST reduce el tiempo de respuesta de 14 t/s a 65,6 t/s en salidas estructuradas, lo que hace viable la generación de JSON y formatos reglados en tiempo interactivo sobre hardware integrado.
+- Generación de salidas estructuradas en producción: con 65,6 t/s en structured output, resulta adecuado para pipelines que emiten JSON validado, tablas o registros con esquema fijo, donde el modo adaptativo del borrador mantiene una aceptación del 96 %.
+- Asistentes conversacionales de baja latencia: en prosa el rendimiento es de 26,1 t/s, suficiente para respuestas multi-turno fluidas en un servidor llama-server con contexto configurado a 32 768 tokens.
+- Despliegue en estaciones de trabajo con GPU integrada AMD: al requerir Vulkan 1.3 y el fork con tipos ROCmFPx, encaja en equipos Ryzen AI Max sin GPU discreta, un escenario donde otras alternativas de aceleración no están disponibles.
+- Evaluación y benchmarking de decodificación especulativa: sirve como banco de pruebas reproducible para medir aceptación y throughput con distintos valores de `n` frente al modo adaptativo.
+- Prototipado de servidores compatibles con endpoints: la etiqueta `endpoints_compatible` permite integrarlo en despliegues que exponen una API compatible, siempre con el fork de llama.cpp y el modelo objetivo presentes.
 
 ## Benchmarks y rendimiento
 
-La model card del autor proporciona mediciones de rendimiento en un AMD Strix Halo (Radeon 8060S) con el target `julianmb/Qwen-3.8-27B-ROCmFP4-FAST-GGUF`, usando greedy decoding y 300 tokens:
+Mediciones del autor en AMD Strix Halo (Radeon 8060S), objetivo Qwen3.8-27B FP4, greedy, 300 tokens:
 
-| Configuración | Salida estructurada (t/s) | Prosa (t/s) |
+| Configuracion | Salida estructurada | Prosa |
 |---|---|---|
-| Decodificación directa (bare decode) | 14.0 | 14.1 |
-| Draft fijo n=3 | 41.6 | 25.4 |
-| Draft fijo n=7 | 20.2 | 24.8 |
-| **Draft adaptativo (n_min 3, n_max 7)** | **65.6 (4.7x)** | **26.1** |
+| Decodificacion sin borrador | 14,0 t/s | 14,1 t/s |
+| Borrador fijo n=3 | 41,6 t/s | 25,4 t/s |
+| Borrador fijo n=7 | 20,2 t/s | 24,8 t/s |
+| Adaptativo (n_max 7, n_min 3) | 65,6 t/s (4,7x) | 26,1 t/s |
 
-No se publican benchmarks de calidad (MMLU, HumanEval, etc.) porque este modelo no genera contenido por sí mismo; la calidad la determina el modelo target. La tasa de aceptación del draft adaptativo se reporta en 96%, frente al 18% con n fijo de 7.
+Aceptación del borrador: 96 % en modo adaptativo; 18 % con n fijo a 7. En recuantización a Q8_0_ROCMFPX, la aceptación medida fue del 53,5 % frente al 60,2 % del modelo original de z-lab. No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la información disponible, lo cual es coherente con la naturaleza del modelo: la decodificación especulativa no altera la calidad, ya que el objetivo verifica cada token.
 
 ## Requisitos de hardware
 
-- **GPU/APU**: probado en AMD Strix Halo (Radeon 8060S, gfx1151). Debería funcionar en cualquier hardware donde compile el fork de llama.cpp con soporte ROCmFPx, pero los números de rendimiento son específicos de Strix Halo.
-- **VRAM**: el archivo GGUF del draft model ocupa aproximadamente 1 GB (tamaño del repo). El modelo target (Qwen3.8-27B ROCmFP4) ocupa 13.55 GiB. En APUs con memoria unificada, ambos caben en la RAM del sistema.
-- **Driver**: Vulkan 1.3, probado con Mesa RADV 26.0.8.
-- **Software**: fork de llama.cpp de LaurentZuijdwijk (https://github.com/LaurentZuijdwijk/llama.cpp/releases) o cualquier build con tipos ROCmFPx. La versión estándar de llama.cpp no carga este archivo (tipo GGUF 103).
-- **Opciones de despliegue**: llama-server con los flags `-md` para el draft model y `--spec-type draft-dflash`. No es compatible con vLLM, Ollama u otros runners sin soporte para ROCmFPx.
-- **Latencia/throughput**: 65.6 t/s en salida estructurada y 26.1 t/s en prosa con decodificación adaptativa, medidos en el hardware mencionado.
+- VRAM estimada para inferencia: el repositorio ocupa 1,0 GB, por lo que el borrador añade aproximadamente 1 GB sobre el modelo objetivo.
+- GPU recomendadas: AMD Strix Halo (Radeon 8060S, gfx1151) es el hardware de referencia y medición. El autor indica que debería funcionar en cualquier plataforma donde compile el fork, pero las cifras son específicas de ese hardware.
+- GPU de consumo: cabe en iGPU AMD Strix Halo; no hay datos de rendimiento en RTX 4090, A100 o H100.
+- Controlador: requiere Vulkan 1.3; medido con Mesa RADV 26.0.8.
+- Software de despliegue: exclusivamente el fork de llama.cpp con soporte de tipos ROCmFPx (binarios en github.com/LaurentZuijdwijk/llama.cpp/releases). llama.cpp upstream falla con `failed to load model` antes de llegar a la GPU.
+- Configuración de referencia: `-ngl 999 -fa on -b 2048 -ub 512 -c 32768`, `--spec-draft-ngl 99`, `--spec-type draft-dflash`, `--spec-draft-adaptive`, `--spec-draft-n-min 3`, `--spec-draft-n-max 7`.
+- Latencia y throughput: 65,6 t/s en structured output y 26,1 t/s en prosa con el objetivo FP4 indicado.
 
 ## Comparativa con modelos similares
 
-No hay muchos draft models comparables en el ecosistema de decodificación especulativa. La comparación más relevante es con el draft model original sin cuantizar (`z-lab/Qwen3.8-27B-DFlash2`) y con otras cuantizaciones del mismo modelo:
+| Modelo | Parametros | Formato | Funcion | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| agentionai/Qwen3.8-27B-DFlash2-ROCmFP4-FAST-GGUF | 1.924.404.480 | GGUF Q4_0_ROCMFP4_FAST | Borrador especulativo, 4,25 bpw | Apache-2.0 | Hugging Face, requiere fork |
+| z-lab/Qwen3.8-27B-DFlash2 | no disponible | no disponible | Borrador especulativo original | Apache-2.0 | Hugging Face |
+| julianmb/Qwen-3.8-27B-ROCmFP4-FAST-GGUF | no disponible | GGUF ROCmFP4 | Modelo objetivo | no disponible | Hugging Face |
 
-| Modelo | Tamaño | Cuantización | Tasa de aceptación | Notas |
-|---|---|---|---|---|
-| z-lab/Qwen3.8-27B-DFlash2 (original) | ~1.9B | FP16 (presumible) | 60.2% (a 8 bpw) | Modelo base, sin cuantizar |
-| agentionai/Qwen3.8-27B-DFlash2-ROCmFP4-FAST | ~1.9B | ROCmFP4 (4.25 bpw) | 96% (adaptativo) | Este modelo, optimizado para Strix Halo |
-| Requantización a Q8_0_ROCMFPX | ~1.9B | ROCmFP8 (8 bpw) | 53.5% | Desaconsejada por el autor, peor que Q8_0 estándar |
-
-No se dispone de datos de otros draft models para la misma familia de modelos.
+La comparación relevante es con el borrador original de z-lab: a igualdad de bits por peso en Q8, el original alcanza 60,2 % de aceptación frente al 53,5 % de esta recuantización, por la escala UE4M3. En FP4, el autor solo mide su propia versión. No se dispone de datos para comparar con otros borradores especulativos de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- **No es un modelo autónomo**: cargarlo solo produce el error `failed to create context`. Debe usarse siempre con `-md` junto al modelo target.
-- **Incompatibilidad con llama.cpp estándar**: el tipo GGUF 103 (`Q4_0_ROCMFP4_FAST`) no se carga en la versión oficial; se requiere un fork específico.
-- **Dependencia de hardware AMD**: el rendimiento medido es exclusivo de Strix Halo; en otras GPUs con Vulkan puede funcionar, pero no se garantizan las mismas velocidades.
-- **Riesgo de degradación de aceptación**: la cuantización FP4 puede reducir la tasa de aceptación del draft, especialmente si se usa con n fijo alto. El modo adaptativo es esencial para mantener el rendimiento.
-- **No se debe requantizar a Q8_0_ROCMFPX**: el autor advierte que a 8 bits por peso, la escala de bloque UE4M3 degrada la aceptación frente a Q8_0 estándar (53.5% vs 60.2%).
-- **Sin datos de sesgos o alucinaciones**: al ser un modelo auxiliar, no se evalúan sesgos; la responsabilidad recae en el modelo target.
-- **Licencia**: Apache-2.0, heredada del modelo base, permite uso comercial, pero el fork de llama.cpp puede tener sus propias restricciones.
+- No es un modelo autónomo: cargarlo sin `-md` y sin modelo objetivo produce `failed to create context`. No sirve para generación de texto por sí solo.
+- No funciona en llama.cpp upstream: requiere el fork con tipos ROCmFPx; el error es `failed to load model` antes de tocar la GPU.
+- Dependencia de Vulkan 1.3 y de controladores AMD; las cifras de rendimiento están medidas solo en Strix Halo con Mesa RADV 26.0.8 y no son extrapolables.
+- El modo adaptativo es necesario para el rendimiento declarado: con `n` fijo a 7 la aceptación cae al 18 % y el throughput a 20,2 t/s.
+- La recuantización a Q8_0_ROCMFPX no alcanza paridad con Q8_0 (53,5 % frente a 60,2 % de aceptación), por lo que no debe asumirse equivalencia entre formatos.
+- No mejora la calidad de la salida: la decodificación especulativa solo incrementa el throughput, ya que el objetivo verifica cada token.
+- Idiomas soportados: no disponibles; no se puede garantizar cobertura multilingüe.
+- Sesgos y riesgo de alucinación: no documentados en la información disponible; dependen íntegramente del modelo objetivo.
+- Licencia Apache-2.0, que permite uso comercial, pero sujeta a las condiciones del modelo base y del fork de llama.cpp utilizado.
 
 ## Enlaces
 
-- [Repositorio Hugging Face de este modelo](https://huggingface.co/agentionai/Qwen3.8-27B-DFlash2-ROCmFP4-FAST-GGUF)
-- [Modelo base z-lab/Qwen3.8-27B-DFlash2](https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2)
-- [Target model julianmb/Qwen-3.8-27B-ROCmFP4-FAST-GGUF](https://huggingface.co/julianmb/Qwen-3.8-27B-ROCmFP4-FAST-GGUF)
-- [Fork de llama.cpp con soporte ROCmFPx](https://github.com/LaurentZuijdwijk/llama.cpp/releases)
-- [Proyecto ROCmFPX (formatos FPx)](https://github.com/ciru-ai/ROCmFPX)
-- [PR #27342 de llama.cpp para DFlash2](https://github.com/ggml-org/llama.cpp)
-- [Guía de hardware para Qwen3.8-27B](https://www.contextstudios.ai/blog/qwen-3-8-27b-hardware-guide)
-- [Repositorio de despliegue en Strix Halo (julianmb)](https://github.com/julianmb/q38rocm)
+- Hugging Face: https://huggingface.co/agentionai/Qwen3.8-27B-DFlash2-ROCmFP4-FAST-GGUF
+- Modelo base: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
+- Modelo objetivo de referencia: https://huggingface.co/julianmb/Qwen-3.8-27B-ROCmFP4-FAST-GGUF
+- Binarios del fork de llama.cpp: https://github.com/LaurentZuijdwijk/llama.cpp/releases
+- Formatos de cuantización ROCmFPX: https://github.com/ciru-ai/ROCmFPX
+- llama.cpp upstream: https://github.com/ggml-org/llama.cpp
+- Soporte DFlash2 en llama.cpp, PR #27342 (Jian Chen): no disponible como enlace directo en la información proporcionada
+- Sitio del autor: https://agention.ai

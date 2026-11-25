@@ -2,109 +2,101 @@
 
 ## Resumen
 
-`mradermacher/KAT-Ornith-Coder-35B-A3B-GGUF` es un repositorio de cuantizaciones estáticas en formato GGUF generadas por el usuario mradermacher a partir del modelo base `OliviaRossi/KAT-Ornith-Coder-35B-A3B`. No se trata, por tanto, de un modelo entrenado desde cero, sino de una redistribución optimizada para inferencia local mediante llama.cpp y sus derivados (Ollama, LM Studio, koboldcpp). El repositorio se publicó el 10 de septiembre de 2026 según la fecha registrada en Hugging Face y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes", por lo que carece de validación comunitaria.
+KAT-Ornith-Coder-35B-A3B-GGUF es la versión cuantizada en formato GGUF del modelo KAT-Ornith-Coder-35B-A3B, un modelo de lenguaje de arquitectura Mixture of Experts (MoE) orientado a programación agéntica, publicado originalmente por OliviaRossi. Esta variante la distribuye mradermacher, un conocido cuantizador de la comunidad de Hugging Face, y su propósito es facilitar la ejecución local del modelo en hardware de consumo mediante el formato GGUF y la librería llama.cpp.
 
-El nombre del modelo sugiere un transformer de tipo mezcla de expertos (MoE) con aproximadamente 35 000 millones de parámetros totales y unos 3000 millones activos por token (el sufijo "A3B" sigue la convención habitual de Qwen3-MoE y similares), además de una especialización en código por el sufijo "Coder". Sin embargo, la model card publicada no incluye ninguna confirmación de arquitectura, longitud de contexto, composición del dataset ni proceso de entrenamiento, por lo que estas características deben considerarse inferencias a partir de la nomenclatura y no datos verificados.
+El modelo cuenta con 34.660.610.688 parámetros totales (aproximadamente 34,7 mil millones) y, según las etiquetas de su model card, emplea una arquitectura híbrida de atención con componentes tipo DeltaNet, además de estar construido como un merge mediante la técnica DARE-TIES. Las etiquetas también lo vinculan a las familias Qwen 3.5 y Qwen 3.6, lo que sugiere que su linaje parte de modelos base de esa familia, aunque la model card no detalla la composición exacta del merge.
 
-La relevancia de esta ficha es limitada y eminentemente práctica: sirve para saber que existe una versión cuantizada lista para desplegar en local de un modelo cuyo original no está documentado públicamente. No hay resultados de benchmarks, no se declara licencia y no se especifican idiomas soportados, de modo que cualquier uso en producción exige verificar primero esos extremos con el autor del modelo base.
+Su relevancia actual radica en que combina un tamaño de parámetros moderado (apto para GPUs de gama alta de consumo en cuantizaciones bajas) con un enfoque específico en tareas de agente de código y SWE-bench, un nicho de creciente interés para pipelines de desarrollo automatizado. La licencia Apache 2.0 facilita su uso comercial, y la disponibilidad de cuantizaciones desde Q2_K hasta Q8_0 amplía el rango de hardware capaz de ejecutarlo.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. La nomenclatura "A3B" sugiere mezcla de expertos (MoE), sin confirmar en la documentación |
-| Parámetros totales | 35 000 millones según la nomenclatura del repositorio; no confirmado en la model card |
-| Parámetros activos | Aproximadamente 3000 millones según el sufijo "A3B"; no confirmado |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible (la model card de esta cuantización no la declara; hay que remitirse al modelo base) |
-| Formato de pesos | GGUF (generado con llama.cpp; f16 es el tensor de referencia sin cuantizar) |
-| Metadatos de cuantización | `quantize_version: 2`, `convert_type: hf`, `output_tensor_quantised: 1` |
-| Modelo base | `OliviaRossi/KAT-Ornith-Coder-35B-A3B` |
-| Fecha de publicación | 10 de septiembre de 2026 (fecha registrada en Hugging Face) |
+| Arquitectura | Transformer MoE con atención híbrida (etiqueta "hybrid-attention", componente "deltanet" según tags); merge DARE-TIES |
+| Parametros totales | 34.660.610.688 (≈34,7 B) |
+| Parametros activos | no disponible (el nombre indica A3B, es decir, ≈3 B activos, pero no se confirma en la información proporcionada) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
+| Idiomas soportados | en, zh, code |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (repo de cuantizaciones); el modelo base se distribuye en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo base en los materiales disponibles. La model card de esta cuantización se limita a indicar que se trata de "static quants" del repositorio `OliviaRossi/KAT-Ornith-Coder-35B-A3B`, es decir, conversiones a GGUF realizadas con la herramienta de cuantización de llama.cpp a partir de pesos en formato Hugging Face (`convert_type: hf`). No hay datos sobre número de tokens de entrenamiento, composición del dataset, uso de RLHF, DPO u otras técnicas de alineamiento.
+La información disponible indica que se trata de un modelo MoE con atención híbrida, etiquetado con los términos "hybrid-attention" y "deltanet". DeltaNet es una variante de atención lineal basada en reglas de actualización delta, habitualmente combinada con capas de atención completa en arquitecturas híbridas para reducir el coste computacional en contextos largos. El modelo se ha construido mediante un merge con la técnica DARE-TIES, que combina los pesos de varios modelos especializados podando deltas redundantes y resolviendo conflictos de signo entre tensores. Las etiquetas "qwen3.5" y "qwen3.6" apuntan a que los modelos de origen pertenecen a esas familias, si bien la model card no especifica qué modelos concretos se fusionaron ni con qué proporciones.
 
-Los únicos indicios técnicos son indirectos: el sufijo "35B-A3B" es la convención empleada habitualmente para describir modelos MoE con 35 000 millones de parámetros totales y 3000 millones activos, y el sufijo "Coder" apunta a un ajuste orientado a generación de código. Ninguna de estas dos inferencias está confirmada por documentación del autor, y el prefijo "KAT" no corresponde a ninguna familia de modelos ampliamente conocida. Tampoco hay información sobre innovaciones técnicas como decodificación especulativa, atención lineal o variantes híbridas SSM.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron fases de RLHF o DPO tras el merge. Tampoco se detalla la innovación técnica concreta más allá de las etiquetas mencionadas. Todo lo relativo al proceso de entrenamiento y a la receta del merge debe considerarse no disponible en la información proporcionada.
 
 ## Capacidades
 
-- Generación de texto y de código: es la capacidad esperada por el sufijo "Coder" del nombre, pero no está documentada ni verificada en la información disponible.
-- Razonamiento y matemáticas: no disponible.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible; no se declara lista de idiomas.
-- Capacidades multimodales (visión, audio): no disponible; el pipeline de Hugging Face no está especificado.
-- Modo "thinking" o razonamiento extendido: no disponible.
-- Ejecución local eficiente: capacidad inherente al formato GGUF, con doce variantes de cuantización que cubren desde ~16 bits hasta Q2_K.
+- Generación de código: el modelo está etiquetado como "agentic-coding" y "coding-agent", lo que indica un ajuste orientado a tareas de programación dentro de flujos agénticos.
+- Razonamiento multi-paso para agentes: la etiqueta "swe-bench" sugiere capacidades orientadas a resolver incidencias de software en repositorios, típicamente mediante iteraciones de exploración, edición y verificación.
+- Soporte de tool calling / function calling: no confirmado explícitamente en la información proporcionada.
+- Capacidades multilingües: inglés, chino y código, según el campo `language` de la model card.
+- Conversación: la etiqueta "conversational" y el pipeline de endpoints compatibles indican uso en diálogo multi-turno.
+- No se ha confirmado soporte de visión, audio ni modo de razonamiento explícito (thinking mode) en la información disponible.
 
 ## Casos de uso
 
-Dado que no hay documentación funcional del modelo, los casos siguientes son escenarios plausibles para un modelo MoE de ~35B orientado a código y empaquetado en GGUF. Deben validarse empíricamente antes de llevarlos a producción.
-
-- Autocompletado y asistencia de código en el IDE: con unos 3000 millones de parámetros activos por token (si se confirma la arquitectura MoE), la generación sería lo bastante rápida para completar líneas y bloques en herramientas tipo Continue o tabby, ejecutándose en local sin enviar código a terceros.
-- Refactorización de repositorios pequeños y medianos: el modelo puede recibir varios ficheros como contexto y proponer cambios estructurales; conviene usar la variante Q6_K o Q8_0 para preservar fidelidad en tareas de reescritura.
-- Generación de tests unitarios y documentación técnica: tarea de bajo riesgo donde un fallo se detecta en la revisión de código, adecuada para un modelo sin benchmarks publicados.
-- Explicación y traducción de código legado: útil para equipos que migran bases de código antiguas y necesitan resúmenes funcionales por fichero.
-- Despliegue en estaciones de trabajo sin GPU dedicada: las variantes Q4_K_M y Q3_K_M permiten inferencia mixta CPU/GPU en equipos con 16-32 GB de RAM, algo que un modelo denso de 35B haría inviable en esas condiciones.
-- Prototipado de agentes de codificación en local: si el modelo base soporta tool calling, podría conectarse a un intérprete de Python o a un sistema de ficheros mediante llama.cpp y plantillas de chat adecuadas; requiere verificación previa.
-- Filtrado y clasificación de fragmentos de código en pipelines internos: por ejemplo, etiquetar si un fragmento es seguro, obsoleto o duplicado antes de indexarlo en una base de conocimiento.
-- Evaluación comparativa interna: sirve como candidato adicional en un banco de pruebas propio, ya que al ser GGUF se puede medir en el mismo hardware que otros modelos cuantizados.
+- Resolución automática de incidencias en repositorios (estilo SWE-bench): el modelo puede recibir un issue, explorar el código, proponer un parche y validarlo; su etiqueta "swe-bench" lo orienta específicamente a este escenario.
+- Asistente de programación en IDE con ejecución local: gracias a las cuantizaciones Q4_K_M (21,3 GB) o IQ4_XS (19,0 GB), puede desplegarse en una estación de trabajo con GPU de 24 GB y ofrecer autocompletado y explicación de código sin enviar datos a la nube.
+- Agente de CI/CD para revisión de pull requests: integrado mediante llama.cpp o un servidor compatible con la API de OpenAI, puede analizar diffs, señalar riesgos y sugerir cambios antes de la fusión.
+- Generación de tests unitarios a partir de código existente: el modelo puede leer funciones y producir casos de prueba en el lenguaje del proyecto, aprovechando su entrenamiento en código y su capacidad conversacional para iterar sobre los resultados.
+- Migración y refactorización de bases de código: con un contexto suficientemente amplio (no confirmado), puede procesar varios ficheros y proponer transformaciones coherentes, útil en tareas de actualización de dependencias o cambios de API.
+- Documentación técnica automatizada: generar docstrings, README y comentarios a partir del código fuente, con soporte para inglés y chino en la documentación resultante.
+- Agente de soporte para desarrolladores internos: desplegado sobre el código propietario de una empresa, puede responder preguntas sobre la arquitectura del repositorio manteniendo los datos en infraestructura propia gracias a la licencia Apache 2.0 y al formato GGUF.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Ni la model card del repositorio de cuantizaciones ni los resultados de búsqueda web contienen datos de MMLU, HumanEval, GSM8K, MBPP ni de ninguna otra evaluación. Tampoco hay métricas de latencia o throughput medidas por el autor.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Los tamaños siguientes son estimaciones a partir del número de parámetros declarado en el nombre (35B) y de los bits por peso típicos de cada tipo de cuantización de llama.cpp. No están medidos sobre estos ficheros concretos, por lo que pueden variar.
-
-- VRAM/RAM aproximada por cuantización (pesos, sin contar caché KV):
-  - Q2_K: ~12-14 GB
-  - Q3_K_S: ~15 GB; Q3_K_M: ~16-17 GB; Q3_K_L: ~18-19 GB
-  - Q4_K_S: ~19-20 GB; Q4_K_M: ~20-21 GB
-  - Q5_K_S: ~23-24 GB; Q5_K_M: ~24-25 GB
-  - Q6_K: ~28-30 GB
-  - Q8_0: ~36-38 GB
-  - f16: ~70 GB
-- GPU recomendadas: RTX 4090 o RTX 3090 (24 GB) para Q4_K_M y Q4_K_S; A6000, L40S o A100 40 GB para Q5 y Q6; A100 80 GB o H100 para Q8_0 y f16. Dos GPU de 24 GB permiten repartir Q6_K mediante `--split-mode layer` en llama.cpp.
-- ¿Cabe en GPU de consumo? Sí, con matices: Q4_K_M entra en 24 GB con contexto corto; Q3_K_M y Q3_K_S en 16 GB; Q2_K en 12 GB (RTX 3060 12 GB, RTX 4070). En 8 GB no cabe ninguna variante sin descargar capas a RAM.
-- Despliegue: llama.cpp (`llama-server`), Ollama, LM Studio, koboldcpp, text-generation-webui y llama-cpp-python son las opciones directas al ser GGUF. vLLM y TGI no consumen GGUF de forma nativa: requieren los pesos safetensors del modelo base, que no forman parte de este repositorio.
-- Latencia y throughput: no disponibles. Si se confirma la arquitectura MoE con ~3B activos, la velocidad de generación se acercaría a la de un modelo denso de 3B en la fase de cómputo, aunque limitada por el ancho de banda de memoria al leer los expertos activados. Es una hipótesis, no una medición.
+- VRAM estimada para inferencia (según tamaño de fichero GGUF, más overhead de contexto y caché KV):
+  - Q2_K: ≈13,0 GB
+  - Q3_K_M: ≈16,9 GB
+  - IQ4_XS: ≈19,0 GB
+  - Q4_K_M: ≈21,3 GB
+  - Q5_K_M: ≈24,8 GB
+  - Q6_K: ≈28,6 GB
+  - Q8_0: ≈37,0 GB
+- GPU recomendadas:
+  - Q4_K_M o IQ4_XS: RTX 3090 / RTX 4090 (24 GB) con margen ajustado para contexto.
+  - Q5_K_M y Q6_K: A6000 (48 GB), RTX 5090 (32 GB, solo Q5) o A100 40 GB.
+  - Q8_0: A100 80 GB o H100.
+- ¿Cabe en GPU de consumo? Sí: las cuantizaciones Q2_K a Q4_K_M caben en GPUs de 16-24 GB; Q2_K y Q3_K_S podrían ejecutarse incluso en tarjetas de 16 GB con contexto reducido.
+- Opciones de despliegue: llama.cpp (formato nativo), Ollama, LM Studio, servidores compatibles con la API de OpenAI basados en llama.cpp (p. ej., llama-server). vLLM y TGI no son opciones directas para GGUF en la mayoría de configuraciones; para esos motores habría que usar el modelo base en safetensors.
+- Latencia y throughput: no disponibles. Al ser un MoE con aproximadamente 3 B de parámetros activos (según el nombre), se espera un throughput superior al de un modelo denso de 35 B, pero no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-No hay datos verificados de este modelo que permitan una comparación rigurosa. La tabla siguiente sitúa el repositorio frente a dos alternativas de la misma categoría aproximada; los datos de las alternativas proceden de conocimiento general y no se han podido verificar con la información de esta búsqueda, por lo que conviene confirmarlos en sus repositorios oficiales.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| KAT-Ornith-Coder-35B-A3B (este) | 34,7 B totales (≈3 B activos, según nombre) | no disponible | Apache 2.0 | GGUF / safetensors | Merge DARE-TIES, enfoque agéntico de código |
+| Qwen2.5-Coder-32B | 32,5 B densos | 128 K (versión base) | Apache 2.0 | safetensors, GGUF | Referencia consolidada en código; denso, mayor coste por token |
+| DeepSeek-Coder-V2-Lite | 15,7 B totales (2,4 B activos) | 128 K | DeepSeek License (con restricciones) | safetensors, GGUF | MoE de código más pequeño; licencia no plenamente permisiva |
+| CodeLlama-34B | 34 B densos | 16 K | Llama 2 Community License | safetensors, GGUF | Referencia antigua; contexto corto y licencia restrictiva |
 
-| Modelo | Parámetros | Activos | Contexto | Licencia | Formato | Benchmarks públicos |
-|---|---|---|---|---|---|---|
-| KAT-Ornith-Coder-35B-A3B (esta ficha) | 35B (según nombre) | ~3B (según nombre) | No disponible | No disponible | GGUF | No disponibles |
-| Qwen3-30B-A3B | ~30,5B | ~3,3B | 128K (extensible por YaRN) | Apache 2.0 | safetensors, GGUF | Publicados por el autor |
-| Qwen2.5-Coder-32B | ~32,5B (denso) | No aplica | 128K | Apache 2.0 | safetensors, GGUF | Publicados por el autor |
-
-No se dispone de información suficiente para comparar rendimiento, calidad de generación de código ni comportamiento multilingüe. La diferencia más relevante y verificable es la falta de licencia declarada y de documentación del modelo objeto de esta ficha.
+La comparación se basa en categoría y tamaño; no se dispone de resultados de benchmarks del modelo para contrastar rendimiento real frente a estas alternativas.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: no hay model card del modelo base en esta información, ni arquitectura, ni dataset, ni proceso de alineamiento.
-- Licencia no declarada: al no especificarse, no puede asumirse uso comercial permitido. Hay que consultar el repositorio de `OliviaRossi/KAT-Ornith-Coder-35B-A3B` antes de cualquier despliegue productivo.
-- Sin benchmarks: no existen datos públicos que permitan estimar su calidad en código, matemáticas o razonamiento. Cualquier afirmación sobre su rendimiento sería especulativa.
-- Riesgo de alucinación: inherente a cualquier modelo generativo y agravado aquí al no conocerse el proceso de alineamiento ni la existencia de RLHF.
-- Sesgos: no se ha publicado información sobre la composición del corpus, por lo que no se puede evaluar el sesgo lingüístico, cultural o de dominio.
-- Idiomas: se desconoce si el modelo está ajustado para castellano; el sufijo "Coder" sugiere predominio del inglés en los datos de ajuste.
-- Contexto: al no declararse la longitud de contexto, no se puede planificar su uso en tareas de contexto largo.
-- Validación de la arquitectura: la suposición MoE con ~3B activos proviene únicamente del nombre. Si el modelo fuese denso, los requisitos de hardware y las estimaciones de latencia serían sustancialmente peores.
-- Procedencia de la cuantización: se trata de una conversión de terceros, no de pesos oficiales. Errores de conversión o pérdida de precisión en los tensores son posibles, especialmente en Q2_K e IQ4_XS.
-- Repositorio sin tracción: 0 descargas y 0 "likes" implican que no ha sido validado por la comunidad y que no hay informes de errores disponibles.
-- Resultados de búsqueda no relevantes: las consultas web realizadas devolvieron únicamente contenido de un foro tecnológico búlgaro sin relación alguna con el modelo, por lo que no se ha podido contrastar ningún dato externo.
+- Al ser un merge DARE-TIES, el comportamiento puede ser menos predecible que el de un modelo entrenado de forma monolítica; los merges pueden heredar sesgos o inconsistencias de los modelos de origen.
+- Riesgo de alucinación en código: como todo modelo generativo, puede producir APIs inexistentes, imports erróneos o parches que compilan pero no resuelven el problema; se requiere verificación automática (tests, linters) en producción.
+- Idiomas limitados a inglés, chino y código: el rendimiento en castellano no está garantizado ni documentado.
+- Longitud de contexto no documentada: planificar el despliegue sin asumir una ventana concreta; verificar en la model card del modelo base.
+- No se han publicado evaluaciones de sesgo, toxicidad ni robustez para esta variante cuantizada.
+- Las cuantizaciones de baja precisión (Q2_K, Q3_K_S) degradan la calidad; para uso en producción se recomienda Q4_K_M o superior.
+- Aunque la licencia es Apache 2.0, conviene revisar las licencias de los modelos de origen del merge por si imponen condiciones adicionales no reflejadas en esta ficha.
+- El repositorio tiene 0 likes y 283 descargas en el momento de la consulta: es un modelo de nicho con poca validación comunitaria.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones: https://huggingface.co/mradermacher/KAT-Ornith-Coder-35B-A3B-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/KAT-Ornith-Coder-35B-A3B-GGUF
 - Modelo base: https://huggingface.co/OliviaRossi/KAT-Ornith-Coder-35B-A3B
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
-- Repositorio de llama.cpp, herramienta empleada para generar los GGUF: https://github.com/ggml-org/llama.cpp
-- No se han encontrado papers, blogs, demos ni repositorios adicionales asociados al modelo en la búsqueda web realizada.
+- Página de descargas del cuantizador: https://hf.tst.eu/model#KAT-Ornith-Coder-35B-A3B-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Gráfico de perplejidad por tipo de cuantización: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Empresa del cuantizador: https://www.nethype.de/

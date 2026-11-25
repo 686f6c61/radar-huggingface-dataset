@@ -5,7 +5,7 @@
   "author": "LukasKunhardt",
   "url": "https://huggingface.co/LukasKunhardt/german-clinical-deid-base",
   "created_at": "2026-11-22T03:37:56.000Z",
-  "updated_at": "2026-11-23T15:06:21.000Z",
+  "updated_at": "2026-11-24T06:53:04.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -44,7 +44,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 48,
+  "downloads_30d": 80,
   "trending_score": 0,
   "parameters": 109351699,
   "parameters_human": "109.4M",

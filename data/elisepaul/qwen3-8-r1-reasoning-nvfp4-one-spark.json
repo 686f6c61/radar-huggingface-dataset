@@ -101,6 +101,13 @@
   "removal_pattern": null,
   "renamed_to": "elisepaul/Qwen3.8-Flash-Reasoning-NVFP4-One-Spark",
   "renamed_at": "2026-11-14T05:49:11.422Z",
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "MATH-500",
+      "metric": "Accuracy",
+      "value": 96.6
+    }
+  ],
   "sources": []
 }

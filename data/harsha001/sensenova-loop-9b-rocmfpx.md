@@ -1,91 +1,103 @@
 # Harsha001/SenseNova-Loop-9B-ROCmFPX
 
 ## Resumen
-SenseNova-Loop-9B-ROCmFPX es una cuantización en formato GGUF del modelo SenseNova-Loop-9B, un modelo vision-language de 9B parámetros desarrollado por el equipo SenseNova. La ficha corresponde a un repositorio no oficial publicado por el usuario Harsha001, que adapta los pesos originales para el runtime ROCmFPX, un fork de llama.cpp orientado a hardware AMD (ROCm y Vulkan), con especial atención a plataformas Strix Halo.
 
-El modelo base destaca por una arquitectura de transformer con bucle: 24 de sus 32 capas decodificadoras se ejecutan dos veces por token, lo que resulta en 56 pasadas de capa por token. Además, en la parte buclada se mezclan dos flujos residuales (mHC). Esta innovación estructural incrementa la profundidad efectiva sin aumentar proporcionalmente el número de parámetros, pero también amplifica el error de cuantización, ya que los errores de redondeo atraviesan las capas compartidas dos veces.
+SenseNova-Loop-9B-ROCmFPX es una cuantización GGUF del modelo vision-lenguaje SenseNova-Loop-9B, desarrollado originalmente por el equipo SenseNova y publicado en Hugging Face bajo licencia Apache-2.0. Esta versión concreta la mantiene el usuario Harsha001 y utiliza el formato propietario ROCmFPX, orientado a hardware AMD (en particular Strix Halo) y a Vulkan, con kernels específicos que no están disponibles en llama.cpp estándar ni en las distribuciones habituales como Ollama o LM Studio.
 
-La relevancia de esta ficha es doble: por un lado, documenta la disponibilidad de pesos cuantizados de un modelo multimodal reciente con licencia Apache-2.0; por otro, advierte de que la arquitectura `sensenova_loop` es nueva y requiere una versión específica del runtime (ROCmFPX compilado a partir del 18 de noviembre de 2026), por lo que no carga en llama.cpp estándar, LM Studio, Ollama ni versiones anteriores del fork.
+El modelo base es un transformer de 9B parámetros (8.956.949.625 exactos) con una arquitectura denominada `sensenova_loop`, que ejecuta 24 de sus 32 capas del decodificador dos veces, dando lugar a 56 pasadas de capa por token, y que mezcla dos flujos residuales dentro de la parte en bucle (mHC). Es multimodal: acepta texto e imágenes y genera texto, con soporte de inglés y chino. El contexto máximo no está especificado en la información disponible.
+
+La relevancia de esta ficha reside en dos factores: por un lado, es una de las primeras cuantizaciones publicadas de una arquitectura nueva y poco común (looped transformer con doble flujo residual); por otro, el formato ROCmFPX introduce una alternativa a las cuantizaciones GGUF convencionales con métricas de divergencia KL reportadas frente a BF16. El autor advierte de que el modelo es especialmente sensible a la cuantización y de que la implementación aún no se ha probado en hardware AMD real.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decodificador con bucle de capas (`sensenova_loop`), 32 capas con 24 ejecutadas dos veces (56 pasadas por token), mezcla de dos flujos residuales (mHC) en la parte buclada |
-| Parametros totales | 8.956.949.624 (dato de safetensors del modelo base) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q8_0 (ROCmFPX, 8 bits), Q6_K (tipo estándar de llama.cpp, 6 bits); codificador visual en F16 |
-| Idiomas soportados | en, zh |
+| Arquitectura | Transformer con bucle de capas (`sensenova_loop`): 32 capas, 24 ejecutadas dos veces (56 pasadas por token), doble flujo residual (mHC) |
+| Parametros totales | 8.956.949.625 (~9B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Q8_0 (ROCmFPX), Q6_K (ROCmFPX, `Q6_0_ROCMFPX`), Q4_0 (ROCmFP4-FAST con atención y salida en 8 bits, para Strix Halo); vision encoder en F16 |
+| Idiomas soportados | Inglés (en), chino (zh) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (incluye `mmproj` F16 para el codificador visual) |
+| Formato de pesos | GGUF (variantes ROCmFPX y mmproj F16 para el codificador visual) |
 
 ## Arquitectura y entrenamiento
-El modelo base es un transformer decodificador de 9B parámetros con una modificación estructural denominada "looped transformer": de las 32 capas del decodificador, 24 se recorren dos veces por token, dando lugar a 56 pasadas de capa. En el tramo buclado se combinan dos flujos residuales (mHC), lo que añade una vía de información paralela a la residual convencional. El modelo es multimodal: procesa texto e imágenes y genera texto, con un codificador visual independiente que en esta cuantización se distribuye como `mmproj-SenseNova-Loop-9B-F16.gguf` (0.9 GB).
 
-No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. El modelo base incluye una cabeza de predicción multi-token (MTP) que no está incluida en estos archivos GGUF. La plantilla de chat original incluye un bloque de razonamiento (`<think>`); para respuestas sin razonamiento explícito se debe iniciar la respuesta con un bloque `<think>\n\n</think>\n\n` vacío. El soporte de la arquitectura en el fork ROCmFPX reutiliza el código de Qwen3.5 de llama.cpp, ya que el decodificador comparte el mismo esquema de capas híbridas.
+El modelo base es un transformer con una innovación estructural: de sus 32 capas del decodificador, 24 se ejecutan dos veces por token, lo que resulta en 56 pasadas de capa. Durante la parte en bucle se mezclan dos flujos residuales (mHC, multi-stream residual mixing). Esta configuración incrementa el coste computacional por token respecto a un transformer de 9B convencional, ya que el número efectivo de operaciones de capa se aproxima al de un modelo mayor. El decodificador reutiliza el diseño híbrido de capas de Qwen3.5, lo que ha permitido al fork ROCmFPX reutilizar código de llama.cpp para Qwen3.5 en su implementación.
+
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. El modelo incluye una cabeza de predicción multi-token (MTP) que no está incluida en estos archivos GGUF. La plantilla de chat incorpora un bloque de razonamiento (`<think>`); para obtener respuestas sin razonamiento explícito, el autor indica que debe iniciarse la respuesta con un bloque `<think>\n\n</think>\n\n` vacío. El codificador visual se distribuye por separado como `mmproj-SenseNova-Loop-9B-F16.gguf` (0,9 GB) y es necesario para el procesamiento de imágenes.
 
 ## Capacidades
-- Generación de texto conversacional en inglés y chino.
-- Comprensión de imágenes y descripción de su contenido (pipeline `image-text-to-text`).
-- Razonamiento explícito mediante bloque de pensamiento (`<think>`), activable o desactivable desde la plantilla de chat.
-- Razonamiento multi-paso y tareas de tipo agente, según los tags del modelo base (`reasoning`).
-- No se documenta soporte de tool calling ni function calling en la información disponible.
-- No se documenta soporte de audio ni de otros modalidades distintas de texto e imagen.
-- Capacidades multilingües limitadas a inglés y chino según la model card.
+
+- Generación de texto conversacional multi-turno en inglés y chino.
+- Comprensión de imágenes y descripción de contenido visual (pipeline `image-text-to-text`), incluyendo localización espacial de objetos.
+- Razonamiento con modo de pensamiento explícito mediante bloques `<think>` en la plantilla de chat.
+- Capacidades de razonamiento general y respuesta a preguntas (verificadas con preguntas simples como la capital de Francia).
+- Soporte de plantilla de chat conversacional incluida en los archivos.
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- No se documenta soporte de tool calling, function calling ni comportamiento agéntico multi-paso en la información disponible.
 
 ## Casos de uso
-- Descripción y etiquetado de imágenes en pipelines de catalogación: el modelo recibe una imagen y devuelve texto descriptivo; en las pruebas publicadas identificó correctamente formas y posiciones (círculo rojo arriba a la izquierda, cuadrado azul abajo a la derecha sobre fondo blanco).
-- Asistentes conversacionales en inglés o chino con razonamiento visible: la plantilla de chat permite activar el bloque `<think>` para tareas que requieren cadena de razonamiento y desactivarlo para respuestas directas de baja latencia.
-- Despliegue en estaciones de trabajo con GPU AMD: al estar empaquetado para ROCmFPX con soporte ROCm y Vulkan, está pensado para entornos con hardware AMD, incluido Strix Halo, donde llama.cpp estándar no es una opción directa.
-- Evaluación de técnicas de cuantización en arquitecturas bucladas: el repositorio publica métricas de divergencia KL frente a BF16, lo que lo hace útil como caso de estudio de cómo el bucle amplifica el error de cuantización.
-- Prototipado de aplicaciones visión-lenguaje en local: con 9.3 GB para el archivo de 8 bits más 0.9 GB del codificador visual, es viable en equipos con suficiente memoria unificada o VRAM.
-- Investigación sobre transformers con capas recurrentes: sirve para experimentar con las diferencias de comportamiento frente a transformers convencionales de tamaño similar.
-- Procesamiento de documentación técnica bilingüe inglés-chino con extracción de información a partir de capturas o diagramas.
+
+- Asistente visual conversacional: el modelo puede recibir una imagen junto con una pregunta de texto y devolver una descripción o respuesta contextual; el codificador `mmproj` en F16 permite integrarlo en pipelines de image-text-to-text.
+- Descripción y verificación de contenido visual: útil para tareas de control de calidad de imágenes (por ejemplo, comprobar la disposición de elementos en una captura o diagrama), como demuestra la prueba del autor identificando un círculo rojo y un cuadrado azul en posiciones concretas.
+- Razonamiento con traza explícita: el bloque `<think>` permite obtener cadenas de razonamiento separadas de la respuesta final, adecuado para depuración de pipelines o para aplicaciones que necesitan auditar el proceso de decisión.
+- Despliegue en hardware AMD con memoria limitada: la variante Q4_0 ROCmFP4-FAST (6,6 GB) está pensada para Strix Halo, donde el presupuesto de memoria es ajustado y prima la velocidad sobre la fidelidad máxima al BF16.
+- Evaluación de arquitecturas experimentales: investigadores que quieran estudiar el comportamiento de un looped transformer con doble flujo residual pueden usar la cuantización Q8_0 (9,3 GB) como aproximación cercana al BF16 (KL 0,0012, 98,7% de mismo token superior).
+- Procesamiento de texto en inglés y chino: aplicaciones de generación o resumen bilingüe en entornos donde no se requiere tool calling ni agentes.
+- Integración en pipelines con llama.cpp modificado: el fork ROCmFPX permite cargar el modelo en entornos que ya usan llama.cpp, siempre que se compile la versión del 18 de noviembre de 2026 o posterior.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio incluye únicamente métricas de fidelidad de cuantización (divergencia KL frente a BF16 y porcentaje de coincidencia del token superior), medidas con `llama-perplexity --kl-divergence` sobre 40 fragmentos de 512 tokens de wikitext-2 en inglés, en una GPU NVIDIA GB10 tras expandir cada archivo a F16. La perplejidad del BF16 de referencia es 14.46.
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor sí reporta métricas de fidelidad de cuantización medidas con `llama-perplexity --kl-divergence` frente a un GGUF BF16 convertido desde los pesos originales (perplejidad 14,46), sobre 40 fragmentos de 512 tokens de wikitext-2 en inglés, en una GPU NVIDIA GB10 tras expandir cada archivo a F16:
 
 | Archivo | Tamano | KL a BF16 | Mismo token superior |
 |---|---:|---:|---:|
-| Q8_0 ROCmFPX | 9.3 GB | 0.0012 | 98.7% |
-| Q6_K (estándar) | 7.4 GB | 0.012 | 95.9% |
-| Q8_0 estándar (referencia) | 9.5 GB | 0.0023 | 98.5% |
-| Q6 ROCmFPX (referencia) | 7.4 GB | 0.013 | 95.5% |
+| Q8_0 ROCmFPX | 9,3 GB | 0,0012 | 98,7% |
+| Q6_K ROCmFPX (`Q6_0_ROCMFPX`) | 7,4 GB | 0,013 | 95,5% |
+| Q4_0 ROCmFP4-FAST Strix | 6,6 GB | No medido | No medido |
+| Q6_K estándar (referencia) | 7,4 GB | 0,012 | 95,9% |
+| Q8_0 estándar (referencia) | 9,5 GB | 0,0023 | 98,5% |
 
-El autor señala que el modelo es entre siete y diez veces más sensible a la cuantización que un fine-tune de Qwen3.5-9B con la misma receta, atribuido al doble paso de los errores de redondeo por las capas compartidas del bucle. No hay datos de latencia o throughput publicados; el autor advierte de que la generación es más lenta que en un modelo plano de 9B del mismo tamaño debido al elevado número de operaciones pequeñas en GPU por token.
+El autor señala que el modelo es entre siete y diez veces más sensible a la cuantización que un fine-tune de Qwen3.5-9B con la misma receta, probablemente porque los errores de redondeo en las capas compartidas atraviesan el bucle dos veces. No se reportan latencia ni throughput; el autor advierte de que la generación es más lenta que en un 9B plano del mismo tamaño por el gran número de operaciones pequeñas en GPU que generan el bucle y la mezcla de flujos.
 
 ## Requisitos de hardware
-- VRAM estimada: aproximadamente 9.3 GB para el archivo Q8_0 más 0.9 GB del `mmproj` F16 si se usa visión; unos 7.4 GB más 0.9 GB para el Q6_K.
-- GPU recomendadas: no hay pruebas publicadas en hardware AMD; el autor indica explícitamente que no se ha probado en AMD. Las métricas de cuantización se midieron en una NVIDIA GB10.
-- Compatibilidad con GPU de consumo: el archivo de 8 bits cabe en GPUs con 12 GB o más de VRAM; el de 6 bits, en GPUs con 8-10 GB, en ambos casos sumando el codificador visual si se procesan imágenes.
-- Opciones de despliegue: exclusivamente ROCmFPX compilado a partir del 18 de noviembre de 2026 o posterior. No funciona en llama.cpp estándar, LM Studio, Ollama ni versiones anteriores del fork.
-- Latencia y throughput: no disponibles. Se espera menor velocidad que un transformer plano de 9B por el doble recorrido de capas y la mezcla de flujos.
+
+- VRAM estimada: aproximadamente 9,3 GB para Q8_0, 7,4 GB para Q6_K y 6,6 GB para Q4_0 ROCmFP4, más 0,9 GB del `mmproj` F16 si se procesan imágenes.
+- GPU recomendadas: el formato está orientado a AMD (ROCm), con mención explícita de Strix Halo para la variante Q4_0; el autor midió las métricas de KL en una NVIDIA GB10. No se especifican modelos concretos como A100, H100 o RTX 4090.
+- Cabe en GPU de consumo: sí, en tarjetas con al menos 8-10 GB de VRAM para las variantes de 6 y 8 bits, siempre que se use el fork ROCmFPX; no es compatible con llama.cpp estándar, LM Studio ni Ollama.
+- Opciones de despliegue: exclusivamente el fork [HarshaVardhan3002/ROCmFPX](https://github.com/HarshaVardhan3002/ROCmFPX) compilado a partir del 18 de noviembre de 2026; no funciona en vLLM, TGI, llama.cpp upstream ni Ollama.
+- Latencia y throughput: no disponibles; el autor advierte de que serán peores que en un 9B convencional por la doble pasada de capas y las operaciones pequeñas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| SenseNova-Loop-9B (base) | 8.96B | no disponible | texto + imagen | Apache-2.0 | Hugging Face, PyTorch |
-| SenseNova-Loop-9B-ROCmFPX (esta ficha) | 8.96B | no disponible | texto + imagen | Apache-2.0 | GGUF para ROCmFPX |
-| Qwen3.5-9B (fine-tune citado como referencia) | ~9B | no disponible | texto | no disponible | no disponible |
+| SenseNova-Loop-9B-ROCmFPX (esta ficha) | ~9B | No disponible | GGUF ROCmFPX | Apache-2.0 | Requiere fork ROCmFPX; cuantizaciones Q8_0, Q6_K y Q4_0 |
+| SenseNova-Loop-9B (original) | ~9B | No disponible | Pesos PyTorch (safetensors) | Apache-2.0 | Modelo base multimodal; referencia BF16 con perplejidad 14,46 |
+| Qwen3.5-9B (fine-tune citado por el autor) | ~9B | No disponible | No disponible | No disponible | Usado como referencia de sensibilidad a cuantización (7-10 veces menor deriva) |
+| GGUF estándar Q6_K / Q8_0 del mismo modelo | ~9B | No disponible | GGUF | Apache-2.0 | Compatible con llama.cpp estándar; KL 0,012 y 0,0023 respectivamente |
 
-La comparación con Qwen3.5-9B procede únicamente de la afirmación del autor sobre sensibilidad a la cuantización; no se dispone de datos de rendimiento comparables entre ambos modelos. No se han identificado en la información proporcionada otras alternativas multimodales de 9B con arquitectura buclada.
+No se dispone de datos de benchmarks que permitan comparar rendimiento cualitativo con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
-- Cuantización no oficial: el repositorio lo publica un tercero, no el equipo SenseNova; los créditos del modelo corresponden al equipo original.
-- Sin probar en hardware AMD: a pesar de estar orientado a ROCm y Vulkan, el autor no ha verificado velocidad ni calidad en GPUs AMD.
-- Dependencia estricta de runtime: requiere ROCmFPX compilado a partir del 18 de noviembre de 2026; cualquier otra herramienta fallará al cargar el archivo.
-- Mayor degradación por cuantización que un modelo plano equivalente; para máxima fidelidad al BF16 se recomienda el archivo de 8 bits.
-- Cabeza MTP no incluida, lo que puede afectar a la velocidad de decodificación especulativa si se esperaba aprovecharla.
-- Idiomas limitados a inglés y chino; no se documenta soporte de castellano.
-- Riesgo de alucinación no cuantificado: no hay benchmarks de razonamiento, código ni tareas de agente en la información disponible, por lo que la fiabilidad en esos dominios no está verificada.
-- Las métricas de KL se midieron sobre texto general en inglés (wikitext-2) y no predicen el comportamiento en razonamiento, código o tareas multimodales.
-- Generación más lenta que un 9B plano por la estructura de bucle y la mezcla de flujos residuales.
-- Licencia Apache-2.0 permite uso comercial, pero se recomienda conservar los avisos de atribución al equipo SenseNova y verificar la licencia del modelo base.
+
+- Compatibilidad restringida: los archivos solo cargan con el fork ROCmFPX del 18 de noviembre de 2026 o posterior; llama.cpp estándar, LM Studio, Ollama y versiones antiguas del fork fallarán.
+- Sin probar en hardware AMD real: el autor indica explícitamente que no se ha validado en AMD y pide reportes de velocidad y calidad en la pestaña Community.
+- Alta sensibilidad a la cuantización: la deriva KL es entre siete y diez veces mayor que en un 9B equivalente; para máxima fidelidad debe usarse el archivo Q8_0.
+- La variante Q4_0 para Strix Halo no tiene métricas de KL publicadas; solo superó una prueba corta de respuesta ("The capital of France is Paris.").
+- Cabeza MTP no incluida en los GGUF, lo que puede afectar al rendimiento en decodificación especulativa si se esperaba esa funcionalidad.
+- Idiomas limitados a inglés y chino; no se documenta soporte de español ni de otros idiomas.
+- Longitud de contexto no especificada; no debe asumirse una ventana larga sin verificarla en el modelo base.
+- Sin soporte documentado de tool calling, function calling ni flujos agénticos.
+- Generación más lenta que un 9B plano por el bucle de capas y las operaciones pequeñas en GPU.
+- Riesgo de alucinación y sesgos: no se documentan evaluaciones específicas; al ser un modelo conversacional y multimodal, debe validarse en el dominio de aplicación.
+- Licencia Apache-2.0 permite uso comercial, pero la obligación de usar un fork concreto puede condicionar el mantenimiento y la seguridad a largo plazo.
+- No es una release oficial del equipo SenseNova; el crédito del modelo corresponde a dicho equipo y la cuantización es obra de un tercero.
 
 ## Enlaces
-- Repositorio Hugging Face: https://huggingface.co/Harsha001/SenseNova-Loop-9B-ROCmFPX
+
+- Modelo en Hugging Face: https://huggingface.co/Harsha001/SenseNova-Loop-9B-ROCmFPX
 - Modelo base: https://huggingface.co/sensenova/SenseNova-Loop-9B
-- Runtime ROCmFPX: https://github.com/HarshaVardhan3002/ROCmFPX
-- Código del modelo original: https://github.com/OpenSenseNova/SenseNova-Loop
+- Repositorio del fork ROCmFPX: https://github.com/HarshaVardhan3002/ROCmFPX
+- Código oficial del modelo: https://github.com/OpenSenseNova/SenseNova-Loop

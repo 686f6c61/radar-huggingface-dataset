@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 317,
+  "downloads_30d": 320,
   "trending_score": 0,
   "parameters": 596049920,
   "parameters_human": "596.0M",
@@ -56,31 +56,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Krzyżówki, Rozsypane Litery i Wykreślanki - Zabawy Słowne - Quizy",
-      "url": "https://www.quizme.pl/krzyzowki",
-      "snippet": "Krzyżówki, rozsypane litery, wykreślanki i wyszukiwanki w jednym miejscu. Rozwiązuj słowne łamigłówki online za darmo i …"
-    },
-    {
-      "title": "Krzyżówkowa środa - Krzyżówki - Quizy",
-      "url": "https://www.quizme.pl/dzial/krzyzowki",
-      "snippet": "Nowa krzyżówka w każdą środę - jeśli chcecie być na bieżąco, śledźcie nasz profil na Facebooku! Dodaj tę serię do ulubionych, aby …"
-    },
-    {
-      "title": "Quizowa.pl - Najlepsze Quizy Wiedzy w Internecie",
-      "url": "https://www.quizowa.pl/",
-      "snippet": "Rozwiązuj quizy wiedzy, psychotesty i testy psychologiczne. Zabawa i przyjemna intelektualna rozrywka w jednym!"
-    },
-    {
-      "title": "Najnowsze quizy - Quizowa.pl",
-      "url": "https://www.quizowa.pl/quiz/najnowsze",
-      "snippet": "Ten prosty quiz sprawdzi Twoją wiedzę! Gwara myśliwska - czy dogadałbyś się z myśliwym? Czy skojarzysz postać historyczną z …"
-    },
-    {
-      "title": "krzyżówki - Quizy.gazeta.pl",
-      "url": "https://quizy.gazeta.pl/krzyzowki",
-      "snippet": "Ten quiz jest jak krzyżówka, ale kryje w sobie pewien haczyk."
-    }
-  ]
+  "sources": []
 }

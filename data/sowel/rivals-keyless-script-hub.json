@@ -1,0 +1,98 @@
+{
+  "schema": 2,
+  "id": "sowel/rivals-keyless-script-hub",
+  "slug": "sowel-rivals-keyless-script-hub",
+  "author": "sowel",
+  "url": "https://huggingface.co/sowel/rivals-keyless-script-hub",
+  "created_at": "2026-11-24T23:59:11.000Z",
+  "updated_at": "2026-11-24T23:59:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id"
+  ],
+  "tags": [
+    "windows",
+    "windows-11",
+    "x64",
+    "portable",
+    "rivals-keyless-script-hub",
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SOWELL - Vacances et séjours en France : Mer, Ski, Campagne et …",
+      "url": "https://www.sowell.fr/",
+      "snippet": "Apr 13, 1991 · Sowell, c'est des Hôtels, Clubs et Résidences situés dans le plus beaux endroits de la France. Mer, Montagne, …"
+    },
+    {
+      "title": "Vacances All Inclusive & Séjours tout compris en France by Sowell",
+      "url": "https://www.sowell.fr/d/allinclusive/",
+      "snippet": "Découvrez notre sélection exclusive d’établissements en France proposant la formule All Inclusive, à la mer ou à la montagne. …"
+    },
+    {
+      "title": "L’application préférée de vos équipes de proximité - SoWell",
+      "url": "https://sowell.app/",
+      "snippet": "Simplifiez le quotidien de vos équipes de proximité avec SoWell : signalements, suivi des interventions et contrôles terrain depuis …"
+    },
+    {
+      "title": "LE GROUPE – SOWELL Groupe",
+      "url": "https://www.sowell-groupe.fr/le-groupe-sowell/",
+      "snippet": "Avec SOWELL HÔTELS, le Groupe propose des établissements lifestyle situés au cœur des plus belles destinations françaises. …"
+    },
+    {
+      "title": "SOWELL Groupe – Espace B2B SOWELL",
+      "url": "https://www.sowell-groupe.fr/",
+      "snippet": "Apr 11, 2023 · Directeur Général du groupe SOWELL Hôtels & Résidences Vincent MULLER « Dynamique et ambitieuse, la …"
+    }
+  ]
+}

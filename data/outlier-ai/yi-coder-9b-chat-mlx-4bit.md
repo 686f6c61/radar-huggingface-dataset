@@ -2,50 +2,52 @@
 
 ## Resumen
 
-Yi-Coder-9B-Chat-MLX-4bit es una conversión cuantizada a 4 bits en formato MLX del modelo 01-ai/Yi-Coder-9B-Chat, realizada por Outlier-Ai. Está pensada para ejecutarse de forma nativa en Apple Silicon (chips M1, M2, M3 y M4) mediante la librería mlx-lm, sin depender de la nube ni de claves de API. El modelo base es un transformer decoder-only orientado a generación de código y conversación, con 8.829.407.232 parámetros totales según los safetensors del repositorio.
+Yi-Coder-9B-Chat-MLX-4bit es una conversión cuantizada a 4 bits en formato MLX del modelo 01-ai/Yi-Coder-9B-Chat, publicada por Outlier-Ai para su ejecución local en Apple Silicon (chips M1, M2, M3 y M4) mediante el framework MLX de Apple. El modelo base es un transformer decoder-only de 8.829.407.232 parámetros (aproximadamente 8,8 mil millones) especializado en generación de código y conversación, desarrollado originalmente por 01.AI. Esta versión reduce el peso del repositorio a unos 5,0 GB, lo que permite ejecutarlo en Macs de gama alta con memoria unificada sin depender de la nube.
 
-La relevancia de esta ficha radica en que permite desplegar un modelo de código de aproximadamente 9.000 millones de parámetros en equipos de consumo con memoria unificada, manteniendo la licencia Apache 2.0 del modelo original. La conversión es un port fiel de los pesos upstream: no incluye fine-tuning ni merge adicional, solo la cuantización a 4 bits.
+La relevancia de esta conversión radica en que traslada un modelo de código de casi 9B a un formato on-device viable en hardware de consumo Apple, manteniendo la licencia Apache 2.0 del original y sin requerir claves de API ni conexión a internet. Está pensada para desarrolladores que necesitan un asistente de código privado, offline y con capacidad conversacional multi-turno en un portátil o en un Mac mini.
 
-El repositorio tiene un tamaño de 5,0 GB, lo que da una idea directa del espacio en disco necesario para cargar los pesos cuantizados. Los idiomas declarados son inglés y chino, y la librería asociada es mlx.
+El modelo conserva las capacidades del base: generación de código en múltiples lenguajes, razonamiento sobre fragmentos de código, refactorización y respuesta a instrucciones en inglés y chino. La conversión la publica el equipo de Outlier, que también distribuye una app macOS gratuita para inferencia MLX; conviene señalar que esta conversión concreta no se incluye en la app, según indica la propia model card.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Yi-Coder, modelo base 01-ai/Yi-Coder-9B-Chat) |
-| Parametros totales | 8.829.407.232 |
+| Arquitectura | Transformer decoder-only (familia Yi, base 01-ai/Yi-Coder-9B-Chat) |
+| Parametros totales | 8.829.407.232 (~8,8B) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | 4 bits (MLX); el modelo base admite otras cuantizaciones no detalladas aqui |
+| Tipos de cuantizacion | 4-bit (MLX 4bit) |
 | Idiomas soportados | en, zh |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (MLX) |
+| Formato de pesos | safetensors (MLX), libreria mlx |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una cuantizacion a 4 bits del checkpoint Yi-Coder-9B-Chat de 01-ai, empaquetada para MLX. La arquitectura subyacente es un transformer decoder-only de la familia Yi-Coder, orientado a generacion de codigo y dialogo. No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni las fases de alineacion (RLHF/DPO) del modelo original.
+El modelo subyacente es un transformer decoder-only de la familia Yi, en su variante Yi-Coder-9B-Chat, orientada a código y conversación. Esta publicación es una cuantizacion a 4 bits realizada con MLX, el framework de Apple para inferencia y entrenamiento en chips Apple Silicon, que aprovecha Metal para acelerar la ejecucion. El repositorio emplea safetensors como formato de pesos y la libreria mlx / mlx-lm para su carga.
 
-La innovacion tecnica de esta publicacion no esta en el entrenamiento, sino en el proceso de cuantizacion y empaquetado: se trata de un port fiel de los pesos upstream sin fine-tuning ni merge, cuantizado a 4 bits para reducir el uso de memoria y permitir inferencia local en Apple Silicon mediante Metal y mlx-lm.
+No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, el proceso de alineacion (RLHF/DPO) ni innovaciones tecnicas especificas del modelo base. La model card de esta conversion se limita a indicar que hereda los campos de licencia y modelo base del original y a documentar el uso con mlx-lm. Cualquier dato sobre el entrenamiento original debe consultarse en la model card de 01-ai/Yi-Coder-9B-Chat.
 
 ## Capacidades
 
-- Generacion de codigo en multiples lenguajes, con ejemplos en la model card para Python y SQL.
+- Generacion de codigo en multiples lenguajes de programacion (la model card incluye ejemplos de Python y SQL).
 - Conversacion multi-turno en modo chat/instruct.
-- Refactorizacion y depuracion de codigo: la model card incluye un ejemplo de "refactor for readability and flag one bug".
-- Generacion de consultas SQL complejas (por ejemplo, top 10 usuarios por valor de compra en los ultimos 90 dias).
-- Soporte bilingue ingles y chino.
-- Ejecucion local y offline en macOS sobre Apple Silicon, sin nube ni claves de API.
-- No se detalla en la informacion disponible soporte de tool calling, function calling, agentes, vision, audio ni modo thinking.
+- Razonamiento sobre fragmentos de codigo: refactorizacion, deteccion de bugs y explicacion de logica.
+- Generacion de consultas SQL y tareas de analisis de datos.
+- Capacidades multilingues limitadas a ingles y chino (en, zh).
+- Ejecucion local y offline en Apple Silicon, sin nube ni claves de API.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible en la informacion proporcionada.
+- Capacidades especiales (thinking mode, vision, audio): no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistente de codigo local en Mac: un desarrollador puede cargar el modelo con mlx-lm y usarlo para autocompletar funciones, generar docstrings y tests unitarios sin enviar codigo a servicios externos.
-- Generacion de consultas SQL: a partir de una descripcion en lenguaje natural, el modelo produce consultas con joins y agregaciones, util para equipos de analitica que trabajan con datos sensibles y prefieren inferencia on-device.
-- Refactorizacion y revision de codigo: integrado en un flujo de trabajo local, permite pedir mejoras de legibilidad y deteccion de bugs sobre fragmentos de codigo existentes.
-- Prototipado offline en entornos sin conectividad: al ejecutarse sin nube, es adecuado para entornos air-gapped o con requisitos de privacidad estrictos, siempre que el hardware sea un Mac con Apple Silicon.
-- Educacion y aprendizaje de programacion: el modelo puede explicar fragmentos de codigo y proponer ejercicios en ingles o chino, con la ventaja de que el estudiante no necesita cuenta ni API.
-- Automatizacion de tareas de scripting en macOS: generacion de scripts de shell o Python para tareas repetitivas, ejecutados localmente con mlx-lm como motor de inferencia.
-- Desarrollo de aplicaciones de escritorio con IA embebida: la app Outlier para macOS demuestra que el modelo puede integrarse en un producto de escritorio que ofrece inferencia local sin limites de uso.
+- Asistente de codigo privado en el portatil: un desarrollador puede cargar el modelo con mlx-lm y usarlo para autocompletar y explicar funciones sin enviar codigo propietario a servicios externos, gracias a la ejecucion on-device y a los ~5 GB del repositorio.
+- Refactorizacion y revision de codigo: el modelo responde a instrucciones del tipo "refactoriza esto para legibilidad y senala un bug", lo que encaja en flujos de revision previa a commit.
+- Generacion de SQL para analitica: adecuado para escribir consultas como rankings de usuarios por valor de compra en una ventana temporal, segun el ejemplo de la model card.
+- Prototipado rapido en entornos sin conectividad: util en escenarios de desarrollo en avion, entornos air-gapped o redes restringidas donde no se puede depender de APIs en la nube.
+- Educacion y aprendizaje de programacion: puede generar funciones comentadas con docstrings y casos de prueba, como el ejemplo de comprobacion de numeros primos en Python.
+- Automatizacion local en Mac mini o Mac Studio: al ejecutarse sobre Metal en hardware Apple, puede integrarse en scripts locales de procesamiento de codigo o generacion de documentacion tecnica.
+- Chat tecnico bilingue ingles-chino: para equipos que trabajan con documentacion o bases de codigo en ambos idiomas.
 
 ## Benchmarks y rendimiento
 
@@ -53,43 +55,44 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: el repositorio ocupa 5,0 GB en disco; en memoria, los pesos a 4 bits requieren del orden de 5 GB, mas overhead de la app y del contexto KV. No se dispone de una cifra oficial de memoria pico en la informacion proporcionada.
-- GPU recomendadas: Apple Silicon M1, M2, M3 y M4 (segun los tags del repositorio); no se mencionan GPU NVIDIA ni AMD.
-- Cabe en equipos de consumo: si, en Mac con Apple Silicon; no se indica compatibilidad con GPU de consumo tipo RTX.
-- Opciones de despliegue: mlx-lm (`python -m mlx_lm.generate`) y la app Outlier para macOS (`brew install --cask outlier-host/tap/outlier`). No se mencionan vLLM, llama.cpp, Ollama ni TGI para este formato.
+- VRAM/memoria estimada: el repositorio ocupa 5,0 GB en cuantizacion 4-bit; se necesita memoria unificada suficiente para pesos mas overhead de inferencia (orientativamente 6-8 GB, aunque no se proporciona una cifra oficial).
+- Hardware objetivo: chips Apple Silicon M1, M2, M3 y M4 (MacBook Air, MacBook Pro, Mac mini, Mac Studio), segun los tags del repositorio.
+- GPU NVIDIA (A100, H100, RTX 4090): esta conversion es especifica de MLX/Metal y no esta pensada para CUDA; para GPU NVIDIA habria que usar los pesos originales del modelo base.
+- Cabe en consumer hardware Apple: si, en funcion de la memoria unificada disponible del equipo.
+- Opciones de despliegue: mlx-lm (recomendado, con el comando `python -m mlx_lm.generate`), y la app Outlier para macOS (que distribuye modelos propios, no esta conversion).
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato/plataforma | Disponibilidad |
 |---|---|---|---|---|---|
-| Yi-Coder-9B-Chat-MLX-4bit (este) | 8.829.407.232 | no disponible | MLX safetensors 4-bit | apache-2.0 | Hugging Face, 66 descargas |
-| 01-ai/Yi-Coder-9B-Chat (base) | ~9B | no disponible | safetensors (upstream) | apache-2.0 | Hugging Face |
-| Outlier-Ai/Qwen2.5-Coder-7B-Instruct-MLX-4bit | ~7B | no disponible | MLX safetensors 4-bit | no disponible en esta ficha | Hugging Face, 1.450 descargas |
-| Outlier-Ai/DeepSeek-R1-Distill-Qwen-7B-MLX-4bit | ~7B | no disponible | MLX safetensors 4-bit | no disponible en esta ficha | Hugging Face, 1.932 descargas |
+| Yi-Coder-9B-Chat-MLX-4bit (esta ficha) | ~8,8B | no disponible | apache-2.0 | MLX 4-bit / Apple Silicon | Hugging Face, 307 descargas |
+| 01-ai/Yi-Coder-9B-Chat (base) | ~8,8B | no disponible | apache-2.0 | safetensors originales | Hugging Face (modelo base) |
+| Qwen2.5-Coder-7B-Instruct (MLX 4-bit, Outlier-Ai) | ~7B | no disponible | no disponible en la informacion | MLX 4-bit / Apple Silicon | Hugging Face, 1.450 descargas |
+| DeepSeek-R1-Distill-Qwen-7B (MLX 4-bit, Outlier-Ai) | ~7B | no disponible | no disponible en la informacion | MLX 4-bit / Apple Silicon | Hugging Face, 1.932 descargas |
 
-Los dos modelos de Outlier-Ai incluidos en la comparativa son conversiones del mismo autor para el mismo ecosistema (MLX 4-bit en Apple Silicon) y aparecen citados en la propia model card; los datos de rendimiento comparativo no estan disponibles.
+Los datos de rendimiento comparativo no estan disponibles en la informacion proporcionada; la comparativa se limita a parametros, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion a 4 bits puede degradar la calidad respecto al modelo base de 9B en tareas de codigo complejas; no se aportan metricas de esa perdida en la informacion disponible.
-- Solo se declaran idiomas ingles y chino; el rendimiento en castellano no esta documentado.
-- No se detalla la longitud de contexto soportada, lo que impide garantizar casos de uso con contextos largos.
-- Riesgo de alucinacion inherente a los modelos de lenguaje, especialmente en generacion de APIs o funciones inexistentes; conviene validar el codigo generado.
-- La licencia Apache 2.0 permite uso comercial, pero se hereda del modelo base y debe verificarse en la model card de 01-ai/Yi-Coder-9B-Chat.
-- El modelo esta empaquetado exclusivamente para MLX y Apple Silicon; no es directamente utilizable en GPU NVIDIA ni en servidores x86 sin conversion adicional.
-- La model card incluye promocion de la app Outlier y enlaces con parametros UTM; conviene tratarla como material comercial ademas de tecnico.
-- El numero de descargas (66) y de likes (0) es bajo, lo que sugiere poca validacion comunitaria hasta la fecha.
+- Solo soporta ingles y chino; no hay soporte declarado de castellano, lo que limita su uso en entornos hispanohablantes sin prompts en ingles.
+- Riesgo de alucinacion inherente a los modelos generativos, especialmente en APIs o librerias poco comunes; el codigo generado debe revisarse antes de produccion.
+- La cuantizacion a 4 bits puede degradar la calidad respecto a los pesos originales en tareas de razonamiento complejo o generacion de codigo largo.
+- La model card indica que la conversion no se distribuye en la app Outlier y que las cifras mencionadas provienen de experimentos internos, no de pruebas de release.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar los terminos del modelo base 01-ai/Yi-Coder-9B-Chat.
+- Dependencia de hardware Apple Silicon: no es portable a CUDA ni a CPU x86 sin reconvertir los pesos.
+- No se dispone de informacion sobre sesgos especificos, contexto maximo efectivo ni politicas de seguridad del modelo base en la informacion proporcionada.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Outlier-Ai/Yi-Coder-9B-Chat-MLX-4bit
-- README del repositorio: https://huggingface.co/Outlier-Ai/Yi-Coder-9B-Chat-MLX-4bit/blob/main/README.md
+- Modelo en Hugging Face: https://huggingface.co/Outlier-Ai/Yi-Coder-9B-Chat-MLX-4bit
 - Modelo base: https://huggingface.co/01-ai/Yi-Coder-9B-Chat
 - App Outlier para macOS: https://outlier.host/
-- Otras conversiones del autor:
+- Otras conversiones de Outlier-Ai:
   - https://huggingface.co/Outlier-Ai/DeepSeek-R1-Distill-Qwen-7B-MLX-4bit
   - https://huggingface.co/Outlier-Ai/Qwen3-Coder-30B-A3B-Instruct-MLX-4bit
   - https://huggingface.co/Outlier-Ai/Qwen2.5-Coder-7B-Instruct-MLX-4bit
   - https://huggingface.co/Outlier-Ai/Outlier-Core-27B-MLX-4bit
   - https://huggingface.co/Outlier-Ai/Outlier-Nano-4B-MLX-4bit
+  - https://huggingface.co/Outlier-Ai/Outlier-Lite-9B-MLX-4bit
+  - https://huggingface.co/Outlier-Ai/Outlier-Quick-26B-MLX-4bit

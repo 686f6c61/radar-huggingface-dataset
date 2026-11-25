@@ -2,91 +2,96 @@
 
 ## Resumen
 
-Rhea-4B-Coding-max es un modelo de lenguaje especializado en código y razonamiento agéntico, desarrollado por el usuario roskosmos19 a partir de un ajuste fino del modelo Aquiles-ai/Athenea-4B-Coding. Con 4.022 millones de parámetros, está diseñado para tareas de programación que requieren razonamiento estructurado en varias pasadas: una primera implementación, una auto-revisión de errores y casos límite, y una versión final optimizada. El modelo emplea etiquetas de razonamiento (`<think>`, `<review>`, `<final>`) para hacer explícito el proceso de depuración y refinamiento del código.
+Rhea-4B-Coding-max es un modelo de lenguaje de 4.022 millones de parámetros publicado por el usuario roskosmos19 en Hugging Face, derivado del modelo Aquiles-ai/Athenea-4B-Coding. La model card lo presenta como una especialización en razonamiento sobre código, depuración, uso de herramientas para agentes y resolución de problemas en múltiples pasadas, con un flujo de tres fases (implementación inicial, autorrevisión y versión final optimizada) articulado mediante las etiquetas `<think>`, `<review>` y `<final>`. La arquitectura subyacente es la de Qwen3, según los tags del repositorio, con licencia Apache 2.0.
 
-El modelo se distribuye bajo licencia Apache 2.0, está etiquetado como *uncensored* (sin restricciones de contenido) y solo declara soporte para inglés. Su relevancia actual radica en la tendencia hacia modelos pequeños y especializados que pueden desplegarse en hardware de consumo mientras ofrecen capacidades de razonamiento multi-paso y uso de herramientas, orientadas a pipelines de agentes y generación de código en producción.
+La relevancia de esta ficha viene marcada por una corrección publicada por el propio autor el 23 de noviembre de 2026: los pesos del repositorio son byte a byte idénticos a los del modelo base Aquiles-ai/Athenea-4B-Coding (comparación SHA-256 de los ficheros safetensors). Los cambios introducidos se limitan a la configuración, la plantilla de chat y la documentación. Por tanto, las afirmaciones sobre entrenamiento adicional o mejoras de rendimiento no corresponden a pesos distintos de los del original, y cualquier evaluación técnica debe remitirse al modelo base.
 
-No se dispone de información sobre la longitud de contexto, la arquitectura interna más allá de su base Qwen3 (según los tags) ni datos de benchmarks en la información proporcionada.
+Adicionalmente, el repositorio sufrió un arreglo el 13 de noviembre de 2026: antes de esa fecha no podía cargarse con Transformers porque el índice de pesos contenía una configuración de tokenizer en lugar del mapa de tensores, y los ficheros de tokenizer y plantilla de chat usaban tokens especiales corruptos. La corrección no modificó los pesos. El modelo declara soporte únicamente para inglés y está etiquetado como *uncensored*.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivado de Qwen3, segun tags; detalles no disponibles) |
-| Parametros totales | 4.022.468.096 |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer (familia Qwen3, según tags del repositorio) |
+| Parámetros totales | 4.022.468.096 |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF disponible via comunidad (mradermacher/Rhea-4B-Coding-max-GGUF); otras no disponibles |
-| Idiomas soportados | en (ingles) |
+| Tipos de cuantización | safetensors en el repo principal; GGUF de comunidad en mradermacher/Rhea-4B-Coding-max-GGUF |
+| Idiomas soportados | en (inglés) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (2 shards, 398 tensores); GGUF por comunidad |
+| Formato de pesos | safetensors (2 shards, 398 tensores); GGUF vía cuantizaciones de comunidad |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only derivado de la familia Qwen3, según los tags del repositorio, con 4.022 millones de parámetros. Se trata de un ajuste fino (finetune) del modelo Aquiles-ai/Athenea-4B-Coding, que a su vez parte de una base no censurada. El entrenamiento utilizó el dataset Aquiles-ai/Athenea-Coding-100k, que incluye desafíos de programación, cadenas de razonamiento estructuradas y explicaciones en lenguaje natural en múltiples lenguajes de programación, junto con el dataset propio roskosmos19/Rhea-Coding.
+El modelo es un transformer decoder-only de la familia Qwen3 con 4.022 millones de parámetros, según los tags del repositorio y el recuento de safetensors. La model card describe un entrenamiento sobre el dataset Aquiles-ai/Athenea-Coding-100k, con trazas de razonamiento explícitas delimitadas por etiquetas, y menciona también el dataset roskosmos19/Rhea-Coding. Sin embargo, la corrección del 23 de noviembre de 2026 aclara que los pesos son idénticos a los del modelo base Aquiles-ai/Athenea-4B-Coding, por lo que el entrenamiento efectivo corresponde al del modelo original y no a un proceso adicional propio de este repositorio.
 
-La innovación principal es el esquema de razonamiento multi-paso con etiquetas explícitas: `<think>` para la fase de auto-revisión (Pass 2), `<review>` para documentar los resultados de la revisión y `<final>` para la versión optimizada (Pass 3). Según la model card, este estructura garantiza funcionalidad idéntica entre pasadas mientras mejora la estructura del código, los comentarios y la robustez. No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO.
-
-Nota relevante: el repositorio fue corregido el 2026-11-13 porque anteriormente no podía cargarse con Transformers (el índice de safetensors contenía una configuración de tokenizer en lugar del mapa de pesos, y los tokens especiales estaban corruptos). Los pesos no se modificaron en esa corrección.
+La innovación declarada es el flujo de razonamiento en tres pasadas: una primera implementación, una autorrevisión centrada en errores, casos límite, seguridad y rendimiento, y una versión final optimizada con funcionalidad idéntica. Este flujo se articula mediante etiquetas de texto (`<think>`, `<review>`, `<final>`), que según la corrección del repositorio son etiquetas de texto plano y no tokens especiales del tokenizer. No se dispone de información sobre número de tokens de entrenamiento, composición detallada del dataset ni uso de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de código en múltiples lenguajes de programación, con especialización en tareas algorítmicas y de depuración.
-- Razonamiento multi-paso estructurado: implementación inicial, auto-revisión de errores, casos límite, seguridad y rendimiento, y versión final optimizada.
-- Auto-revisión de código para detección de bugs y optimización.
-- Soporte de herramientas agénticas (*agentic tools*) para agentes de IA, según la model card.
+- Generación de código en múltiples lenguajes de programación, según la model card.
 - Razonamiento paso a paso dentro de bloques ` thinking`.
-- Generación sin censura (*uncensored*), con visibilidad completa del razonamiento.
-- Compatibilidad con frameworks de inferencia abiertos (Transformers, vLLM, TGI).
+- Autorrevisión de código para detección de errores, casos límite, seguridad y rendimiento.
+- Refinamiento iterativo en tres pasadas con etiquetas `<think>`, `<review>` y `<final>`.
+- Soporte declarado de herramientas para agentes de IA (*agentic tools*).
+- Depuración y comprensión de código.
+- Diseño de algoritmos y resolución de problemas lógicos.
+- Generación sin censura (*uncensored*), orientada a visibilidad completa del razonamiento.
+- Compatibilidad con frameworks de inferencia abiertos (Transformers, vLLM, entre otros).
 - Capacidades multilingües: solo inglés declarado.
 
 ## Casos de uso
 
-- **Generación de código en producción con auto-revisión**: el modelo puede generar una función, revisar sus propios errores y entregar una versión final optimizada en una sola llamada, lo que reduce la necesidad de iteraciones manuales en pipelines de CI/CD.
-- **Depuración asistida**: dado un fragmento de código con un fallo, el modelo emplea la fase `<review>` para identificar casos límite y problemas de seguridad antes de proponer una corrección en `<final>`.
-- **Diseño de algoritmos**: para problemas de estructuras de datos y algoritmos, el razonamiento multi-paso permite explorar una solución, revisar su complejidad y entregar una versión refinada.
-- **Agentes de codificación autónomos**: gracias al soporte de *tool calling* declarado, puede integrarse en agentes que ejecutan comandos, consultan documentación o aplican parches de forma iterativa.
-- **Asistente de revisión de código (code review)**: el modelo puede analizar un *diff* o un fichero completo y documentar en `<review>` los problemas detectados (seguridad, rendimiento, legibilidad) antes de proponer cambios.
-- **Generación de tests unitarios**: a partir de una implementación, el modelo puede razonar sobre los casos límite y producir pruebas que cubran escenarios no triviales.
-- **Prototipado rápido en hardware de consumo**: con 4B parámetros y cuantizaciones GGUF de la comunidad, puede ejecutarse en GPUs consumer para tareas de asistencia de código en local.
+- Asistencia a desarrolladores en entornos de investigación: el modelo puede generar una implementación, revisarla y producir una versión final optimizada en una sola interacción, lo que encaja en prototipado rápido y experimentación con flujos de razonamiento estructurado.
+- Depuración de código en pipelines internos: la fase de autorrevisión permite señalar errores, casos límite y problemas de seguridad sobre un fragmento dado, útil como paso previo a la revisión humana.
+- Generación de código para proyectos con licencia permisiva: al ser Apache 2.0, puede integrarse en herramientas internas y productos derivados sin las restricciones de licencias copyleft, siempre que se respeten las condiciones de la licencia.
+- Experimentación con agentes y *tool calling*: el soporte declarado de herramientas para agentes permite prototipar asistentes que invocan funciones externas, aunque requiere validación empírica por parte del equipo.
+- Investigación sobre razonamiento multi-pasada: el esquema de tres fases con etiquetas explícitas facilita estudiar cómo evoluciona la calidad del código entre pasadas y comparar estrategias de autorrevisión.
+- Evaluación comparativa de modelos pequeños de código: con 4.022 millones de parámetros y cuantizaciones GGUF de comunidad, sirve como referencia en estudios de eficiencia frente a modelos mayores.
+- Generación de documentación técnica y explicaciones de código: la capacidad de razonamiento paso a paso permite producir explicaciones detalladas de fragmentos complejos, útil en formación interna.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card no incluye tablas de MMLU, HumanEval, GSM8K ni métricas comparables, y la corrección del autor indica que cualquier afirmación sobre mejores puntuaciones de benchmark no se refiere a pesos distintos de los del modelo base.
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia** (4B parámetros): aproximadamente 8 GB en bf16/fp16; alrededor de 4-5 GB en cuantización Q8; aproximadamente 2,5-3 GB en Q4_K_M (GGUF).
-- **GPU recomendadas**: para bf16 sin cuantizar, una RTX 4090 (24 GB) o A100/H100 ofrecen margen amplio; una RTX 3090/4080 (16-24 GB) también es suficiente.
-- **Cabe en GPU consumer**: sí, en GPUs con 8 GB o más en cuantizaciones Q4/Q5; en bf16 requiere al menos 8-10 GB de VRAM efectiva.
-- **Opciones de despliegue**: Transformers (con `flash_attention_2` opcional), vLLM, TGI, llama.cpp/Ollama mediante los GGUF de la comunidad (mradermacher/Rhea-4B-Coding-max-GGUF).
-- **Latencia y throughput**: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 8 GB solo para pesos (4.022 millones de parámetros × 2 bytes), más overhead de activaciones y caché KV.
+- VRAM estimada en cuantización de 8 bits: en torno a 4-5 GB para pesos.
+- VRAM estimada en cuantización de 4 bits (GGUF Q4): en torno a 2,5-3 GB para pesos.
+- Cabe en GPU de consumo: sí, previsiblemente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090 en FP16; en GPUs de 8 GB requiere cuantización.
+- GPU de datacenter recomendadas: A100, H100 y L40S para despliegues de mayor concurrencia.
+- Opciones de despliegue: Transformers, vLLM (declarado compatible), llama.cpp y Ollama mediante las cuantizaciones GGUF de comunidad; TGI aparece como tag del repositorio.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Rhea-4B-Coding-max | 4,02B | no disponible | Apache 2.0 | Hugging Face (safetensors + GGUF comunidad) | Especializado en código, multi-paso, uncensored |
-| Aquiles-ai/Athenea-4B-Coding | ~4B | no disponible | no disponible | Hugging Face | Modelo base del que deriva Rhea |
-| Qwen2.5-Coder-3B / 7B (referencia de familia) | 3B / 7B | no disponible en esta ficha | Apache 2.0 (segun familia) | Hugging Face | Alternativa de código de tamano similar; datos no verificados en esta busqueda |
+| Rhea-4B-Coding-max | 4.022 M | no disponible | Apache 2.0 | Hugging Face, GGUF de comunidad | Pesos idénticos a Athenea-4B-Coding; solo cambian configuración y plantilla |
+| Aquiles-ai/Athenea-4B-Coding | 4.022 M (mismo checkpoint) | no disponible | no disponible en la información | Hugging Face | Modelo base original; mismas capacidades efectivas |
+| Qwen3 de 4B (familia base) | ~4.000 M | no disponible | no disponible en la información | Hugging Face | Arquitectura de referencia según tags; comparación de rendimiento no disponible |
 
-No se dispone de datos de rendimiento comparativo verificables en la información proporcionada; la comparativa se limita a parámetros, licencia y disponibilidad.
+No se dispone de datos de rendimiento comparado que permitan establecer diferencias cuantitativas entre estas alternativas. La comparación relevante es que Rhea-4B-Coding-max no aporta pesos distintos respecto a Athenea-4B-Coding.
 
 ## Limitaciones y advertencias
 
-- **Modelo uncensored**: la model card advierte explícitamente de que la base no está censurada y que el usuario es plenamente responsable del contenido generado; está destinado exclusivamente a investigación y experimentación.
-- **Riesgo de alucinación**: como todo modelo de lenguaje, puede generar APIs, funciones o dependencias inexistentes, especialmente en la fase de implementación inicial; la fase de auto-revisión mitiga pero no elimina este riesgo.
-- **Idioma**: solo se declara soporte de inglés; el rendimiento en castellano no está garantizado.
-- **Contexto**: la longitud de contexto no está documentada, lo que impide planificar su uso en tareas de repositorios grandes.
-- **Historial del repositorio**: el repositorio tuvo problemas de carga con Transformers hasta la corrección del 2026-11-13 (índice de pesos y tokens especiales corruptos); conviene usar la versión actualizada y verificar la tokenización en producción.
-- **Licencia**: Apache 2.0 permite uso comercial, pero la naturaleza *uncensored* del modelo traslada al integrador la responsabilidad legal y ética sobre las salidas.
-- **Etiquetas `<review>` y `<final>`**: según la model card, son etiquetas de texto plano, no tokens especiales del tokenizer; los parsers de producción deben tenerlo en cuenta.
-- **Sin benchmarks publicados**: no hay evidencia cuantitativa de rendimiento frente a alternativas, lo que dificulta la comparación objetiva.
+- Los pesos son byte a byte idénticos a Aquiles-ai/Athenea-4B-Coding; no hay entrenamiento adicional ni mejora de benchmark atribuible a este repositorio.
+- Modelo etiquetado como *uncensored*: puede generar contenido sin filtros, y el autor declara que el usuario es el único responsable del uso y del contenido producido.
+- El autor indica que está destinado exclusivamente a investigación y experimentación.
+- Soporte de idiomas limitado al inglés; el rendimiento en castellano no está garantizado.
+- Longitud de contexto no documentada en la información disponible.
+- Riesgo de alucinación inherente a modelos de 4.000 millones de parámetros, especialmente en tareas de código complejas o APIs poco representadas.
+- Las etiquetas `<review>` y `<final>` son texto plano, no tokens especiales; los pipelines que dependan de tokens especiales deben adaptarse.
+- Historial de repositorio problemático: antes del 13 de noviembre de 2026 no cargaba correctamente con Transformers; conviene fijar una revisión concreta del repositorio en producción.
+- Licencia Apache 2.0 permite uso comercial, pero debe revisarse el cumplimiento de las condiciones de atribución y la cadena de licencias del modelo base.
+- Sin datos publicados de benchmarks, sesgos o evaluaciones de seguridad; se recomienda evaluación propia antes de cualquier despliegue.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/roskosmos19/Rhea-4B-Coding-max
 - Modelo base: https://huggingface.co/Aquiles-ai/Athenea-4B-Coding
-- Dataset de entrenamiento: https://huggingface.co/datasets/Aquiles-ai/Athenea-Coding-100k
-- Dataset propio: https://huggingface.co/datasets/roskosmos19/Rhea-Coding
-- GGUF de la comunidad: https://huggingface.co/mradermacher/Rhea-4B-Coding-max-GGUF
+- Cuantizaciones GGUF de comunidad: https://huggingface.co/mradermacher/Rhea-4B-Coding-max-GGUF
+- Dataset de entrenamiento declarado: https://huggingface.co/datasets/Aquiles-ai/Athenea-Coding-100k
+- Dataset adicional declarado: https://huggingface.co/datasets/roskosmos19/Rhea-Coding
+- Licencia: https://huggingface.co/roskosmos19/Rhea-4B-Coding-max/blob/main/LICENSE

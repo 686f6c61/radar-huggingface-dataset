@@ -2,109 +2,115 @@
 
 ## Resumen
 
-`millrace-ai/qwenpu-bonsai-4b-stock-prism` es un checkpoint de investigación que integra el circuito RISC-V y vectorial de QwenPU dentro del bloque de predicción multi-token (MTP) de una versión empaquetada de Bonsai 2 4B. El modelo anfitrión es un transformer de tipo `qwen35` con 2.560 dimensiones ocultas, 32 bloques de lenguaje más un bloque MTP adicional, y una longitud de contexto declarada de 262.144 tokens en la cabecera GGUF. El resultado es un GGUF combinado de 11.840.714.242 elementos tensoriales repartidos en 444 tensores, aunque el host de lenguaje original conserva sus 4.205.751.296 elementos.
+qwenpu-bonsai-4b-stock-prism es un checkpoint de investigación publicado por millrace-ai que integra el circuito RISC-V y vectorial de QwenPU dentro del bloque de predicción multi-token (MTP) del modelo empaquetado Bonsai 2 4B de Prism ML. No se trata de un modelo de lenguaje entrenado de nuevo, sino de una modificación estructural del GGUF base: el host conserva su estado oculto nativo de 2.560 dimensiones y sus 426 tensores de lenguaje PQ2_0 originales, mientras que el circuito invitado ocupa 36.352 filas feed-forward adicionales. El resultado es un GGUF combinado de 444 tensores y 11.840.714.242 elementos contables en el Hub (incluyendo relleno neutro y el circuito compilado), frente a los 4.205.751.296 elementos del host de lenguaje.
 
-El interés técnico del checkpoint no reside en sus capacidades de generación de texto, sino en la demostración de que un circuito invitado (guest) compilado para RISC-V puede ejecutarse dentro de un checkpoint GGUF cargado por una build estándar de Prism/llama.cpp, en concreto la b12128 para Windows CUDA 12.4, sin modificar el binario. El autor documenta una ejecución verificada en una GeForce GTX 1080 de 8 GiB que reproduce el guest de tres tokens `stories260K`, con coincidencia de 37.080 registros arquitectónicos, 55.375 escrituras ordenadas del guest y 726 operaciones VMAT, además de mantener intactos el estado KV, el estado recurrente y los logits del modelo original.
+El interés del artefacto es fundamentalmente de verificación de sistemas más que de calidad lingüística: demuestra que un invitado RISC-V puede ejecutarse dentro de un checkpoint cargado sobre APIs estándar de Prism (llama.cpp modificado), con handoff coherente de caché KV, estado recurrente y logits respecto al Bonsai 2 4B original. La prueba publicada en Windows sobre una GeForce GTX 1080 de 8 GiB ejecuta un invitado de tres tokens (stories260K) hasta halt limpio, imprimiendo `Once upon a`.
 
-Se trata, por tanto, de un artefacto de investigación reproducible más que de un modelo listo para producción: la captura completa tarda aproximadamente 8 h 49 min en la GPU de referencia y el modelo base es una cuantización ternaria PQ2_0 de Bonsai 2 4B. La licencia es Apache 2.0 y el repositorio ocupa 4,0 GB.
+Por tanto, esta ficha debe leerse como la de un checkpoint de investigación reproducible con licencia Apache 2.0, no como la de un modelo conversacional listo para producción. La mayor parte de sus métricas documentadas son de fidelidad de ejecución (registros arquitectónicos, escrituras de invitado, operaciones VMAT) y de consumo de recursos, no de rendimiento en benchmarks de NLP.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer `qwen35` con bloque MTP y circuito QwenPU embebido |
-| Parámetros totales | 11.840.714.242 elementos tensoriales en el GGUF combinado (host de lenguaje: 4.205.751.296) |
-| Parámetros activos | no disponible (no se documenta como MoE) |
-| Longitud de contexto | 262.144 tokens declarados en la cabecera GGUF |
-| Tipos de cuantización | PQ2_0 (ternaria empaquetada) en el host de lenguaje |
+| Arquitectura | GGUF `qwen35` (host Bonsai 2 4B, PQ2_0) + bloque MTP con circuito QwenPU RISC-V/vectorial |
+| Parametros totales | 11.840.714.242 elementos de tensor en el GGUF combinado (444 tensores, incluye relleno y circuito); el host de lenguaje declara 4.205.751.296 elementos |
+| Parametros activos | no disponible (no es un MoE declarado; el bloque MTP es un circuito invitado, no un experto) |
+| Longitud de contexto | 262.144 tokens declarados en la cabecera del GGUF |
+| Tipos de cuantizacion | PQ2_0 (empaquetado ternario del host); no se documentan otras variantes |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (archivo principal de 4.031.384.384 bytes) |
+| Formato de pesos | GGUF (fichero único `Bonsai-2-4B-PQ2_0-QwenPU-Stock-Prism.gguf`, 4.031.384.384 bytes, SHA-256 `ec6d177b3af28436f8aef2c82166ccd01ee087c5aed889b13a269fa414b6c973`) |
+| Ancho oculto | 2.560 |
+| Filas FFN por bloque | 36.352 |
+| Disposicion de bloques | 32 bloques de lenguaje + 1 bloque MTP QwenPU |
+| Runtime verificado | Prism b12128 (llama.cpp modificado) para Windows CUDA 12.4, x64 |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `prism-ml/Ternary-Bonsai-2-4B-gguf`, un transformer `qwen35` con 2.560 de ancho oculto y 36.352 filas feed-forward por bloque. Sobre esa base, el checkpoint añade un bloque MTP que aloja el circuito RISC-V y vectorial de QwenPU, manteniendo los 426 extents originales de los tensores de lenguaje PQ2_0. Los tensores empaquetados que requieren la forma ampliada conservan sus bytes originales y reciben padding neutro, de modo que el host de lenguaje no se altera funcionalmente. El layout final es de 32 bloques de lenguaje más 1 bloque MTP QwenPU.
+El modelo base es Bonsai 2 4B en su variante empaquetada PQ2_0, un transformer con arquitectura declarada `qwen35`, estado oculto de 2.560 dimensiones y 32 bloques de lenguaje. Sobre ese host, millrace-ai inserta un bloque MTP adicional que aloja el circuito RISC-V y vectorial de QwenPU. Los tensores de lenguaje empaquetados que requieren la forma ampliada conservan sus bytes originales y reciben relleno neutro, de modo que el host mantiene su comportamiento nativo; el invitado se ejecuta en un contexto separado dentro del checkpoint cargado. El launcher de Windows carga el ELF del invitado, realimenta las acciones seleccionadas por el circuito y aplica las peticiones de caché a través de las APIs estándar de Prism.
 
-No se documenta en la información disponible un proceso de entrenamiento adicional, número de tokens, composición del dataset ni fases de RLHF o DPO. El checkpoint se describe como una integración de inferencia, no como un modelo reentrenado: el autor indica que fue creado con Bonsai de Prism ML y que el guest se ejecuta en un contexto separado dentro del checkpoint cargado, con el launcher de Windows encargado de cargar el ELF, realimentar las acciones seleccionadas por el circuito y aplicar las peticiones de caché mediante las APIs estándar de Prism. La verificación se realiza con una referencia de CPU fijada por separado que comprueba la ejecución registrada offline.
+No se documenta ningún proceso de entrenamiento adicional: no hay datos de tokens de preentrenamiento, composición de dataset, RLHF ni DPO en la información disponible. La innovación técnica es de integración y verificación: un verificador de referencia en CPU, fijado de forma independiente, comprueba offline la ejecución registrada. En la prueba completa sobre GTX 1080 se validaron 37.080 registros arquitectónicos, 55.375 escrituras ordenadas del invitado y 726 operaciones VMAT, y se confirmó que la posición de texto aparcada, la caché KV, el estado recurrente y los logits coinciden con el Bonsai 2 4B original, así como la inserción de resultado y el siguiente decode sobre el mismo historial de texto.
 
 ## Capacidades
 
-- Generación de texto conversacional heredada del host Bonsai 2 4B en formato PQ2_0.
-- Predicción multi-token mediante el bloque MTP presente en el layout.
-- Ejecución de un circuito invitado RISC-V y vectorial (QwenPU) dentro del propio checkpoint, con realimentación de acciones y peticiones de caché a través de las APIs de Prism.
-- Verificación reproducible de trazas: comparación de registros arquitectónicos, escrituras del guest y operaciones VMAT contra una referencia de CPU.
-- Preservación del estado del host (posición de texto, caché KV, estado recurrente y logits) durante la ejecución del guest.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Generación de texto autoregresiva heredada del host Bonsai 2 4B (PQ2_0), con contexto declarado de 262.144 tokens.
+- Predicción multi-token mediante el bloque MTP que aloja el circuito QwenPU.
+- Ejecución de un invitado RISC-V y vectorial dentro del checkpoint, con realimentación de acciones seleccionadas por el circuito.
+- Handoff verificado de estado entre invitado y host: caché KV, estado recurrente, posición de texto y logits.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
 - Capacidades multilingües: no disponible.
-- Capacidades especiales: modo thinking, visión o audio no disponibles.
+- Capacidades especiales: modo de verificación reproducible con captura de traza, comprobación de hashes de paquete y runtime pin; no se documentan visión ni audio.
 
 ## Casos de uso
 
-- Investigación en ejecución de circuitos dentro de checkpoints GGUF: el modelo permite estudiar cómo un guest RISC-V compilado convive con tensores de lenguaje empaquetados y cómo se realimentan sus acciones a través de las APIs de Prism, usando el smoke test de exponenciación vectorial de 12 instrucciones como punto de partida.
-- Reproducibilidad de resultados de hardware: el launcher y los verificadores permiten replicar en una GTX 1080 la captura completa de tres tokens y comparar hashes de estado contra la referencia de CPU, útil para auditar pipelines de inferencia.
-- Validación de builds de llama.cpp: sirve como caso de prueba de la build Prism b12128 para Windows CUDA 12.4, comprobando la carga de DLLs, el pin de runtime y la integridad de paquetes mediante SHA-256.
-- Docencia y divulgación técnica: el checkpoint y sus evidencias (`checkpoint.json`, trazas, veredictos) permiten ilustrar conceptos de MTP, cuantización ternaria PQ2_0 y ejecución de código invitado en un runtime de inferencia.
-- Auditoría de integridad de modelos: los archivos de evidencia y las sumas SHA-256 publicadas facilitan verificar que un GGUF descargado coincide byte a byte con el artefacto auditado.
-- Pruebas de estrés de memoria en GPU de gama media: con picos medidos de 4,73 GiB de VRAM dedicada al proceso y 4,46 GiB de RAM de trabajo, el checkpoint sirve para caracterizar el comportamiento en tarjetas de 8 GiB.
+- Investigación en ejecución de invitados RISC-V sobre runtimes de inferencia: el checkpoint sirve para reproducir el experimento de QwenPU dentro de Prism b12128 y validar el handoff de estado con el verificador empaquetado, usando el smoke test de exponenciación vectorial de 12 instrucciones como comprobación previa.
+- Verificación de fidelidad de cuantización ternaria: comparar los hashes de estado del modelo original capturados en GTX 1080 con los del checkpoint combinado permite auditar que el relleno neutro y el circuito no alteran la posición de texto, la caché KV ni los logits del host.
+- Auditoría de artefactos de modelo: el repositorio incluye `SHA256SUMS.txt`, `evidence/checkpoint.json`, `evidence/prism-b12128.json` y capturas JSON de ejecución, lo que permite integrar comprobaciones de integridad en pipelines de publicación de modelos.
+- Reproducción en hardware de gama consumer: con 4,73 GiB de VRAM dedicada al proceso pico y 4,46 GiB de working set de RAM, el experimento completo cabe en una GTX 1080 de 8 GiB, lo que facilita la replicación en laboratorios con presupuesto limitado.
+- Docencia y divulgación de arquitecturas híbridas: el par host/invitado con contexto declarado de 262.144 tokens y bloque MTP ilustra de forma concreta cómo se acopla un acelerador lógico a un transformer empaquetado sin reentrenar.
+- Desarrollo de runtimes alternativos: el launcher de PowerShell y el pin exacto de Prism b12128 y del commit de QwenPU (`6e2767a`) sirven como base para portar la integración a otros backends que respeten las APIs de caché de Prism.
+- Pruebas de regresión de decodificación especulativa: el bloque MTP y la comprobación de la inserción de resultado y del siguiente decode permiten validar cambios en el pipeline de decodificación contra una referencia fijada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks de NLP (MMLU, HumanEval, GSM8K u otros) en la información disponible. Las métricas publicadas son de fidelidad de ejecución y de consumo de recursos:
 
-Los únicos datos de rendimiento publicados son mediciones de ejecución del guest en una GeForce GTX 1080 de 8 GiB con Prism b12128 para Windows CUDA 12.4:
-
-| Métrica | Valor |
+| Metrica | Valor |
 |---|---|
-| Tiempo de captura del guest | 8 h 49 min |
-| VRAM dedicada al proceso (pico muestreado) | 4,73 GiB |
-| Memoria GPU compartida del proceso (pico) | 84 MiB |
-| VRAM a nivel de dispositivo (pico) | 6,84 GiB |
-| RAM de trabajo del proceso | 4,46 GiB |
-| Registros arquitectónicos verificados | 37.080 |
-| Escrituras ordenadas del guest | 55.375 |
+| Registros arquitectonicos verificados | 37.080 |
+| Escrituras ordenadas del invitado | 55.375 |
 | Operaciones VMAT | 726 |
-| Tamaño del GGUF principal | 4.031.384.384 bytes |
+| Duracion de la captura del invitado | 8 h 49 min |
+| VRAM dedicada al proceso (pico muestreado) | 4,73 GiB |
+| Memoria GPU compartida del proceso | 84 MiB |
+| VRAM de dispositivo (pico, incluye otra actividad) | 6,84 GiB |
+| Working set de RAM del proceso | 4,46 GiB |
+| Salida del invitado de tres tokens | `Once upon a` + salto de linea, halt limpio |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el checkpoint completo pesa 4,0 GB en disco; en la ejecución de referencia se midieron 4,73 GiB de VRAM dedicada al proceso y 6,84 GiB a nivel de dispositivo.
-- GPU recomendadas: la única configuración verificada es una GeForce GTX 1080 de 8 GiB con controlador compatible con CUDA 12.4. No se documentan pruebas en A100, H100 ni RTX 4090.
-- Cabe en GPU de consumo: sí, al menos en la GTX 1080 de 8 GiB probada. No hay datos para tarjetas con menos de 8 GiB.
-- Opciones de despliegue: build Prism b12128 de llama.cpp para Windows CUDA 12.4 (ZIP de aplicación y ZIP de runtime CUDA), más el launcher `Run.py` y el repositorio QwenPU fijado en el commit `6e2767aaa59b69ea03300c0a5199d7b36debbe50`. No se documenta soporte para vLLM, Ollama ni TGI.
-- Requisitos de software: Windows x64 nativo, Python 3.11 x64 con NumPy 2.4.6 e ijson 3.4.0.post0, Git, `hf` CLI y Microsoft Visual C++ x64 Redistributable.
-- Latencia y throughput: no disponibles en términos de tokens por segundo; la captura de tres tokens tardó aproximadamente 8 h 49 min en la GTX 1080, un dato que refleja la instrumentación de verificación más que el rendimiento de decodificación del host.
+- VRAM estimada para inferencia: el experimento verificado consume 4,73 GiB de VRAM dedicada al proceso y 6,84 GiB de VRAM de dispositivo en pico (esta última incluye otra actividad de GPU).
+- GPU verificada: NVIDIA GeForce GTX 1080 de 8 GiB con driver compatible con CUDA 12.4.
+- GPU recomendadas: no se documentan otras; el runtime fijado es Prism b12128 para Windows CUDA 12.4 x64.
+- Cabe en GPU consumer: sí, al menos en GTX 1080 de 8 GiB según la verificación publicada.
+- RAM de sistema: 4,46 GiB de working set del proceso en la captura registrada.
+- Opciones de despliegue: Prism b12128 (llama.cpp modificado) con los ZIP oficiales de aplicación y runtime CUDA; el repositorio incluye launcher `Run.py` para smoke y verificación completa. No se documenta soporte para vLLM, TGI, Ollama ni llama.cpp upstream.
+- Latencia y throughput: no disponibles; la captura del invitado de tres tokens tardó 8 h 49 min, pero corresponde a una ejecución de verificación con traza, no a inferencia optimizada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato / cuantización | Licencia | Enfoque |
+| Modelo | Parametros (elementos GGUF) | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| millrace-ai/qwenpu-bonsai-4b-stock-prism | 11.840.714.242 elementos tensoriales en GGUF combinado (host: 4.205.751.296) | 262.144 | GGUF, PQ2_0 | Apache 2.0 | Host Bonsai 2 4B con circuito QwenPU embebido en bloque MTP |
-| prism-ml/Ternary-Bonsai-2-4B-gguf | no disponible en la información proporcionada | no disponible en la información proporcionada | GGUF, PQ2_0 | no disponible en la información proporcionada | Modelo base ternario del que deriva este checkpoint |
-| Otros checkpoints de la familia Bonsai (27B, 9B) | no disponible | no disponible | GGUF | no disponible | Trazas de comparación citadas por el autor |
+| qwenpu-bonsai-4b-stock-prism (este) | 11.840.714.242 combinados; 4.205.751.296 en host | 262.144 | Host Bonsai 2 4B PQ2_0 + bloque MTP con circuito QwenPU | Apache 2.0 | Hugging Face, 649 descargas |
+| prism-ml/Ternary-Bonsai-2-4B-gguf (base) | 4.205.751.296 | no disponible en esta ficha | Transformer ternario empaquetado PQ2_0 | no disponible en esta ficha | Hugging Face |
+| Receipts 27B y 9B de millrace (mencionados) | no disponible | no disponible | Trazas de comparación del mismo linaje de verificación | no disponible | Referenciados en la evidencia del repositorio |
 
-La información disponible no permite comparar rendimiento en benchmarks con alternativas de la misma categoría. El modelo base y los checkpoints de 27B y 9B se mencionan únicamente como referencias de trazabilidad en las evidencias del autor.
+No se dispone de datos de benchmarks que permitan comparar rendimiento lingüístico con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- El checkpoint está diseñado como artefacto de investigación reproducible, no como modelo de producción: la captura de tres tokens tarda horas y el flujo depende de un launcher y verificadores específicos.
-- La longitud de contexto de 262.144 tokens es la declarada en la cabecera GGUF; no se documenta una evaluación de calidad de atención a esa distancia.
-- El host de lenguaje es una cuantización ternaria PQ2_0, lo que implica una pérdida de precisión respecto a pesos de mayor rango; no se publican métricas de degradación.
-- Los tensores ampliados reciben padding neutro; aunque el autor afirma que el comportamiento del host se preserva, no se detallan análisis de sensibilidad en tareas distintas del guest de tres tokens.
-- La única plataforma verificada es Windows x64 con CUDA 12.4 y una GTX 1080; no hay evidencia publicada para Linux, ROCm, Metal ni GPUs de datacenter.
-- No se documentan idiomas soportados, sesgos conocidos ni tasas de alucinación del host de lenguaje.
-- El uso comercial está permitido por la licencia Apache 2.0, pero el modelo incorpora un circuito compilado de QwenPU y depende de la build Prism de llama.cpp; conviene revisar las licencias de esos componentes antes de redistribuir.
-- La integridad del artefacto debe comprobarse con las sumas SHA-256 publicadas y el pin de runtime; el autor advierte que el launcher verifica hashes de paquete antes de ejecutar.
-- El rendimiento medido incluye actividad de otros procesos en la VRAM a nivel de dispositivo, por lo que las cifras de 6,84 GiB no deben interpretarse como consumo aislado del modelo.
+- No es un modelo conversacional validado: la única salida documentada es un invitado de tres tokens (`Once upon a`); no hay evidencia publicada de calidad en generación libre, razonamiento o código.
+- El repositorio declara 11.840.714.242 elementos de tensor, pero incluyen relleno cero y el circuito compilado; el tamaño efectivo de parámetros de lenguaje es el del host (4.205.751.296 elementos), por lo que comparar por número de parámetros del Hub induce a error.
+- El bloque MTP con circuito invitado no debe interpretarse como un MoE ni como parámetros activos adicionales; no se documenta su impacto en velocidad de decodificación.
+- Dependencia estricta de un runtime modificado y fijado (Prism b12128) y de un commit concreto de QwenPU; no hay garantía de compatibilidad con llama.cpp upstream, vLLM, TGI u Ollama.
+- La verificación publicada es solo para Windows x64 con CUDA 12.4 y GTX 1080; el comportamiento en otras GPU, sistemas operativos o versiones de driver no está documentado.
+- La captura del invitado tarda 8 h 49 min, lo que refleja un proceso de trazado y verificación, no un uso interactivo.
+- Idiomas soportados no disponibles; no se puede asumir cobertura multilingüe.
+- Riesgo de alucinación y sesgos del host Bonsai 2 4B: no evaluados ni documentados en esta información.
+- Licencia Apache 2.0 permite uso comercial del artefacto, pero el modelo base y el runtime de terceros pueden tener condiciones propias que deben revisarse por separado.
+- El artefacto se autodescribe como checkpoint de investigación; no hay evidencia de validación en producción ni de soporte del autor.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/millrace-ai/qwenpu-bonsai-4b-stock-prism
-- GGUF principal: https://huggingface.co/millrace-ai/qwenpu-bonsai-4b-stock-prism/resolve/main/Bonsai-2-4B-PQ2_0-QwenPU-Stock-Prism.gguf
+- GGUF combinado: https://huggingface.co/millrace-ai/qwenpu-bonsai-4b-stock-prism/resolve/main/Bonsai-2-4B-PQ2_0-QwenPU-Stock-Prism.gguf
+- Preprint v1 y artefactos de reproducción: https://research.millrace.ai/bonsai-qwenpu/
 - Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2-4B-gguf
 - GGUF base fijado: https://huggingface.co/prism-ml/Ternary-Bonsai-2-4B-gguf/blob/50ebba61be85e5be07e8083db468ace0fc1bac43/Ternary-Bonsai-2-4B-PQ2_0.gguf
-- Repositorio QwenPU: https://github.com/divagr18/QwenPU
-- Build Prism de llama.cpp (release b12128): https://github.com/PrismML-Eng/llama.cpp/releases/download/prism-b12128-d7b2896
+- Runtime Prism (release b12128): https://github.com/PrismML-Eng/llama.cpp/releases/download/prism-b12128-d7b2896
 - ZIP de aplicación Prism: https://github.com/PrismML-Eng/llama.cpp/releases/download/prism-b12128-d7b2896/llama-prism-b12128-d7b2896-bin-win-cuda-12.4-x64.zip
 - ZIP de runtime CUDA: https://github.com/PrismML-Eng/llama.cpp/releases/download/prism-b12128-d7b2896/cudart-llama-bin-win-cuda-12.4-x64.zip
+- Repositorio QwenPU: https://github.com/divagr18/QwenPU
+- Commit fijado de QwenPU: https://github.com/divagr18/QwenPU/commit/6e2767aaa59b69ea03300c0a5199d7b36debbe50
 - Microsoft Visual C++ x64 Redistributable: https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist

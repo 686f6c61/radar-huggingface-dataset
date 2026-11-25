@@ -2,88 +2,90 @@
 
 ## Resumen
 
-LFM2-8B-A1B-mic es un artefacto de prueba publicado por el usuario `huggingface-mic` en Hugging Face. No es un modelo entrenado ni utilizable, sino un *fixture* (modelo reducido artificialmente) construido a partir de `LiquidAI/LFM2-8B-A1B` con el objetivo de validar integraciones de framework, contratos de entrada/salida y expectativas de ejecución. El repositorio se etiqueta explícitamente como `test-artifact` para excluirlo de las búsquedas de modelos candidatos.
+`huggingface-mic/LFM2-8B-A1B-mic` no es un modelo de lenguaje entrenado, sino un artefacto de prueba (fixture) de 4.355.752 parametros construido por el equipo de `huggingface-mic` para verificar la integracion de frameworks con la arquitectura del modelo real `LiquidAI/LFM2-8B-A1B`. Conserva la misma clase de arquitectura (`Lfm2MoeForCausalLM`), los mismos nombres de tensores y los ficheros de procesador copiados byte a byte del checkpoint original, pero con pesos aleatorios (semilla 17) y una configuracion reducida a 4 capas ocultas.
 
-El modelo conserva la arquitectura declarada del original (`Lfm2MoeForCausalLM`) pero con una configuración drásticamente reducida: 4 capas ocultas y tan solo 4.355.752 parámetros totales según los tensores en safetensors. Los pesos son aleatorios (semilla 17), no entrenados, y los ficheros de procesador (tokenizer, chat template, generation config, licencia) se copian byte a byte desde el checkpoint original de LiquidAI.
+Su proposito es servir como contrato ejecutable: permite validar tokenizador, plantilla de chat, configuracion de generacion y expectativas de salida de Transformers sin descargar ni ejecutar el modelo completo de ~8.000 millones de parametros. Esta etiquetado explicitamente como `test-artifact` para excluirlo de busquedas de modelos candidatos.
 
-Su relevancia es puramente de ingeniería: sirve como fixture reproducible para probar pipelines de carga, inferencia y validación de contratos en Transformers y otros frameworks sin necesidad de descargar los pesos completos del modelo real. No debe confundirse con el modelo LFM2-8B-A1B de LiquidAI, que sí es un modelo de producción.
+Por tanto, no debe emplearse para generacion de texto, razonamiento ni ninguna tarea cognitiva real: sus pesos son aleatorios y su calidad es nula. Es relevante unicamente para desarrolladores de infraestructura de IA que necesiten pruebas de regresion ligeras y deterministas sobre el pipeline de `Lfm2MoeForCausalLM`.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | `Lfm2MoeForCausalLM` (transformer MoE, configuración reducida a 4 capas) |
-| Parámetros totales | 4.355.752 |
-| Parámetros activos | no disponible (el original es MoE A1B; el fixture no documenta el reparto activo) |
+| Arquitectura | `Lfm2MoeForCausalLM` (transformer MoE, configuracion reducida a 4 capas ocultas) |
+| Parametros totales | 4.355.752 |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible (pesos en bfloat16; finito en float32, bfloat16 y float16) |
+| Tipos de cuantizacion | no disponible (pesos en bfloat16; finito tambien en float32 y float16) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (se copia el fichero `LICENSE` del modelo base, pero no se especifica su contenido) |
+| Licencia | no disponible (el fichero `LICENSE` se copia del modelo base, pero no se especifica su contenido en la informacion disponible) |
 | Formato de pesos | safetensors (bfloat16) |
 
 ## Arquitectura y entrenamiento
 
-El fixture reutiliza la clase `Lfm2MoeForCausalLM` del modelo base `LiquidAI/LFM2-8B-A1B`, pero con `num_hidden_layers` reducido a 4 mediante la regla genérica de reducción implementada en `sweep.py` del repositorio `transformers-mic`. Mantiene los mismos nombres de tensores que el checkpoint real, de modo que cualquier código que espere la estructura de parámetros del modelo original puede cargarlo sin cambios de API.
+El fixture replica la arquitectura `Lfm2MoeForCausalLM` del modelo base `LiquidAI/LFM2-8B-A1B`, pero con una configuracion encogida mediante la regla generica de `sweep.py` del repositorio `transformers-mic`, que reduce el numero de capas ocultas a 4. Mantiene exactamente los mismos nombres de tensores que el checkpoint real, de modo que cualquier codigo que cargue el modelo original deberia cargar este sin cambios estructurales.
 
-No hay entrenamiento. Los pesos se generan aleatoriamente con semilla 17 y se validan mediante una compuerta de sensibilidad a la entrada: cada perturbación de las entradas del contrato mueve los logits al menos 0.001 (el caso más débil, `attention_mask:all_ones`, produce 0.258). Los tensores se guardan en bfloat16, el dtype por defecto de carga del modelo original, y se verifica que el forward, la pérdida y los gradientes son finitos en float32, bfloat16 y float16. El fichero `build.json` registra las fuentes fijadas, los resultados de las compuertas y los hashes de los ficheros.
+No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y superaron una puerta de sensibilidad a la entrada: cada perturbacion de las entradas del contrato desplazo los logits al menos 0.001 (la mas debil, `attention_mask:all_ones`, con 0.258). El modelo es finito en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. Los ficheros de procesador (`LICENSE`, `chat_template.jinja`, `generation_config.json`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`) se copiaron byte a byte del checkpoint `LiquidAI/LFM2-8B-A1B`. La clave de fixture es `fac5a8d2dc0e`.
 
 ## Capacidades
 
-- No es un modelo funcional: los pesos son aleatorios y no han sido entrenados, por lo que no genera texto coherente ni resuelve tareas.
-- Sirve como fixture de integración para validar la carga del modelo, el flujo de forward, el cálculo de pérdida y la retropropagación de gradientes.
-- Permite verificar contratos de entrada/salida definidos en `integration.json` y en `integrations/transformers/expectations`.
-- Reutiliza el tokenizer, chat template y generation config del modelo base, por lo que valida el pipeline de tokenización y plantillas de conversación.
-- No soporta tool calling, agentes, razonamiento multilingüe ni ninguna capacidad cognitiva real, al carecer de entrenamiento.
-- Compatible con el ecosistema Transformers para pruebas de regresión de la clase `Lfm2MoeForCausalLM`.
+- Ninguna capacidad generativa real: los pesos son aleatorios y la salida carece de significado.
+- Verificacion de carga de la arquitectura `Lfm2MoeForCausalLM` en Transformers.
+- Validacion del tokenizador y de la plantilla de chat heredados del modelo base.
+- Comprobacion de la configuracion de generacion (`generation_config.json`) copiada del original.
+- Pruebas de regresion de formas de tensores, dtypes y nombres de parametros frente al checkpoint real.
+- Pruebas de finitud numerica en float32, bfloat16 y float16 (forward, loss, gradientes).
+- No soporta tool calling, agentes, vision, audio ni modo thinking de forma funcional.
 
 ## Casos de uso
 
-- Pruebas de integración en CI/CD: cargar el fixture en un pipeline de integración continua para verificar que la clase `Lfm2MoeForCausalLM` y el tokenizer se instancian correctamente sin descargar los pesos completos del modelo real.
-- Validación de contratos de framework: ejecutar `integrations/transformers/expectations` para comprobar que las entradas y salidas esperadas por el framework coinciden con las del checkpoint original tras la reducción.
-- Desarrollo de código de inferencia: probar bucles de generación, gestión de `attention_mask` y cálculo de logits con un modelo pequeño y rápido antes de escalar al checkpoint real.
-- Test de regresión de tokenizer y chat template: al copiarse byte a byte desde LiquidAI/LFM2-8B-A1B, permite validar plantillas de conversación y tokens especiales sin cargar el modelo completo.
-- Verificación de dtypes: comprobar que el forward, la pérdida y los gradientes son finitos en float32, bfloat16 y float16, útil para validar mixed precision en pipelines de entrenamiento.
-- Reproducibilidad de fixtures: reconstruir el artefacto con `python example/build_fixtures.py --fixture LFM2-8B-A1B-mic` y comparar hashes registrados en `build.json` para auditar la procedencia.
+- Pruebas de integracion en CI/CD: cargar el fixture en la suite de tests para verificar que el pipeline de Transformers acepta la arquitectura `Lfm2MoeForCausalLM` sin descargar los ~8.000 millones de parametros del modelo real, reduciendo tiempo y ancho de banda en cada build.
+- Desarrollo de kernels y optimizaciones: validar formas, dtypes y nombres de tensores de una implementacion nueva (por ejemplo, atencion optimizada) contra un checkpoint ligero antes de probarla con el modelo completo.
+- Verificacion de tokenizador y chat template: comprobar que el renderizado de conversaciones produce los tokens esperados usando los ficheros copiados byte a byte del modelo base.
+- Pruebas de cuantizacion y exportacion: ejercitar rutas de conversion (por ejemplo, a GGUF u otros formatos) sobre un checkpoint de 4,4 M de parametros para detectar errores de mapeo de tensores antes de aplicarlos al modelo real.
+- Validacion de contratos de framework: usar `integration.json` y `integrations/transformers/expectations` como especificacion ejecutable de lo que un framework debe producir al cargar y ejecutar el modelo.
+- Reproducibilidad de fixtures: reconstruir el artefacto con `python example/build_fixtures.py --fixture LFM2-8B-A1B-mic` y comparar hashes registrados en `build.json` para auditar cambios en el pipeline.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El modelo es un artefacto de prueba con pesos aleatorios, por lo que no procede evaluar calidad de generación, razonamiento ni tareas downstream.
+No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, cualquier metrica de calidad (MMLU, HumanEval, GSM8K) seria irrelevante.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 100 MB en bfloat16 (4,36 M de parámetros), aunque el tamaño del repo se indica como 0.0 GB y no se detalla el peso real de los ficheros.
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4090) o incluso CPU es suficiente; no requiere aceleradores de datacenter como A100 o H100.
-- Cabe holgadamente en cualquier GPU consumer y en entornos sin GPU.
-- Opciones de despliegue: Transformers (uso previsto según el repositorio); no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles; al ser un modelo de 4 capas con pesos aleatorios, la latencia sería mínima pero sin valor práctico.
+- VRAM estimada para inferencia: inferior a 100 MB en bfloat16 (4,36 M de parametros), asumiendo pesos mas estados de activacion minimos.
+- GPU recomendadas: cualquier GPU consumer moderna; tambien es viable en CPU.
+- Cabe en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) e incluso en entornos sin GPU.
+- Opciones de despliegue: Transformers (via `AutoModelForCausalLM` con la configuracion `Lfm2MoeForCausalLM`); otras rutas (vLLM, llama.cpp, Ollama, TGI) no estan documentadas para este fixture en la informacion disponible.
+- Latencia y throughput: no disponibles; al ser un modelo de 4 capas con pesos aleatorios, las mediciones no serian representativas del modelo real.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Propósito |
-|---|---|---|---|---|
-| LFM2-8B-A1B-mic (este) | 4,36 M | no disponible | no disponible | Fixture de test |
-| LiquidAI/LFM2-8B-A1B | no disponible en la información | no disponible | no disponible | Modelo MoE de producción |
-| Otros fixtures `*-mic` de huggingface-mic | variable (reducidos) | no disponible | no disponible | Fixtures de integración |
+| Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| `huggingface-mic/LFM2-8B-A1B-mic` | 4,36 M | no disponible | Fixture de pruebas | no disponible | Hugging Face |
+| `LiquidAI/LFM2-8B-A1B` | ~8.000 M (MoE, A1B) | no disponible | Modelo generativo real | no disponible | Hugging Face |
+| Otros fixtures de `huggingface-mic` | variable (reducidos) | no disponible | Pruebas de integracion | no disponible | Hugging Face |
 
-La comparación solo es significativa frente al modelo base: el fixture replica su arquitectura y ficheros de procesador con una configuración reducida y pesos aleatorios, por lo que no es un sustituto funcional. No se dispone de datos de benchmarks ni de especificaciones completas del modelo base en la información proporcionada.
+La comparacion directa con modelos generativos no es significativa: el fixture existe para validar infraestructura, no para producir texto. Frente al modelo base, comparte arquitectura, tokenizador y plantilla de chat, pero difiere en numero de capas y en la naturaleza aleatoria de los pesos.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: los pesos son aleatorios y no producen salidas coherentes; cualquier uso en producción generaría resultados sin sentido.
-- Etiquetado como `test-artifact` para excluirlo de búsquedas de modelos candidatos; no debe tratarse como un modelo de la familia LFM2 real.
-- La licencia no está especificada en la información disponible; aunque se copia el fichero `LICENSE` del modelo base, no se detalla su contenido ni las restricciones de uso comercial.
-- No se documentan sesgos, riesgo de alucinación ni limitaciones idiomáticas porque el modelo no ha sido entrenado; estas categorías no aplican en sentido estricto.
-- El tamaño del repo se indica como 0.0 GB, lo que puede reflejar un redondeo o una discrepancia con los 4,36 M de parámetros; conviene verificar los ficheros reales antes de usarlo.
-- No se garantiza compatibilidad con frameworks distintos de Transformers; el soporte se limita a lo documentado en `integrations/transformers/`.
+- No es un modelo utilizable: los pesos son aleatorios (semilla 17) y las salidas no tienen sentido. No debe desplegarse en produccion ni usarse para generar contenido.
+- Etiquetado como `test-artifact` precisamente para excluirlo de busquedas de modelos candidatos; respetar esa convencion en pipelines de seleccion.
+- Solo cubre checkpoints cuyos ficheros de procesador sean byte-identicos y cuya config coincida tras el encogido (clave de fixture `fac5a8d2dc0e`); no valida variantes con otro tokenizador o configuracion.
+- La configuracion reducida a 4 capas no reproduce el comportamiento numerico del modelo real; los tests de rendimiento o calidad no son extrapolables.
+- Licencia no especificada en la informacion disponible; el fichero `LICENSE` se copia del modelo base, por lo que las condiciones de uso comercial dependen de las de `LiquidAI/LFM2-8B-A1B` y deben consultarse alli.
+- Idiomas soportados no documentados; el tokenizador heredado puede cubrir varios idiomas, pero sin garantia funcional.
+- Riesgo de confusion: el nombre incluye "8B-A1B" aunque el artefacto tiene 4,36 M de parametros; verificar siempre el tamano real antes de asignar recursos.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/huggingface-mic/LFM2-8B-A1B-mic
 - Modelo base: https://huggingface.co/LiquidAI/LFM2-8B-A1B
-- Manifiesto de contrato: https://huggingface.co/huggingface-mic/LFM2-8B-A1B-mic/blob/main/integration.json
-- Uso con Transformers: https://huggingface.co/huggingface-mic/LFM2-8B-A1B-mic/blob/main/integrations/transformers/usage.md
-- Expectativas de Transformers: https://huggingface.co/huggingface-mic/LFM2-8B-A1B-mic/tree/main/integrations/transformers/expectations
-- Procedencia del fixture: https://huggingface.co/huggingface-mic/LFM2-8B-A1B-mic/blob/main/build.json
-- Cómo se redujo el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/LFM2-8B-A1B-mic.html
-- Script de reducción `sweep.py`: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Script de construcción `build_fixtures.py`: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Como se encogio el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/LFM2-8B-A1B-mic.html
+- Repositorio `transformers-mic` (script `sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Script de construccion de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Manifiesto de contrato: `integration.json` (en el repositorio)
+- Uso con Transformers: `integrations/transformers/usage.md` (en el repositorio)
+- Expectativas de Transformers: `integrations/transformers/expectations` (en el repositorio)
+- Procedencia del fixture: `build.json` (en el repositorio)

@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "YegStu/swedish-grammaticality",
+  "slug": "yegstu-swedish-grammaticality",
+  "author": "YegStu",
+  "url": "https://huggingface.co/YegStu/swedish-grammaticality",
+  "created_at": "2026-11-24T22:23:47.000Z",
+  "updated_at": "2026-11-24T22:34:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "sv"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "sv",
+    "dataset:YegStu/swedish-grammaticality-data",
+    "base_model:AI-Sweden-Models/ModernBERT-base",
+    "base_model:finetune:AI-Sweden-Models/ModernBERT-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149605633,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598442485,
+  "storage_human": "598 MB",
+  "context_length": null,
+  "base_model": "AI-Sweden-Models/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

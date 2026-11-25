@@ -2,99 +2,99 @@
 
 ## Resumen
 
-Ministral-3-3B-Reasoning-2512 es un modelo de lenguaje de 3B parámetros desarrollado por Mistral AI, diseñado para razonamiento paso a paso y despliegue en dispositivos edge. Esta versión publicada por litert-community es una conversión del modelo original al formato LiteRT-LM (`.litertlm`), optimizada para inferencia on-device con el runtime de Google LiteRT-LM, el motor que impulsa los modelos oficiales de la comunidad litert-community. Se trata de una conversión solo texto: se elimina la torre de visión Pixtral del modelo base, quedando únicamente el decodificador de texto.
+Ministral-3-3B-Reasoning-2512 en formato LiteRT-LM es una conversión del modelo de razonamiento Ministral 3B de Mistral AI, publicada por la comunidad `litert-community`, pensada para inferencia en dispositivo (on-device) y en el borde (edge) mediante el runtime LiteRT-LM de Google. El paquete `.litertlm` incluye tokenizador, plantilla de prompt y pesos cuantizados en un único fichero de 2,34 GB, lo que simplifica el despliegue en móviles, portátiles y navegadores sin necesidad de infraestructura de servidor.
 
-El modelo base forma parte de la familia Ministral 3, que según el paper técnico disponible en arXiv incluye tres tamaños (3B, 8B y 14B), todos descendientes de Mistral Small 3.1 mediante un enfoque de destilación en cascada (Cascade Distillation). La variante de razonamiento soporta contextos de hasta 128k tokens en su versión original, aunque esta conversión LiteRT limita la caché KV a 4096 tokens. La cuantización int4 blockwise con clipping OCTAV permite reducir el archivo a aproximadamente 2,2 GB, manteniendo un rendimiento competitivo en tareas de razonamiento matemático: alcanza un 90,7% en GSM8K evaluado con 0-shot chain-of-thought y un presupuesto generoso de tokens.
+La conversión es solo de texto: se conserva el decodificador de Ministral-3 y se descarta la torre de visión Pixtral del modelo base. Los pesos están cuantizados a int4 por bloques (bloque 32, simétrico, con recorte OCTAV) y el embedding y la cabeza lm_head atados se mantienen en INT8. La ventana de contexto del KV cache está fijada en 4096 tokens.
+
+El interés actual del modelo radica en que demuestra que un modelo de razonamiento de 3B puede ejecutarse en hardware de consumo con latencias utilizables: en una GPU de Galaxy S26 alcanza 22,3 tokens/s de decodificación y 213 tokens/s de prefill sobre 1.024 tokens. Es una opción relevante para prototipos de agentes locales, asistentes offline y demos web con WebGPU, con licencia Apache-2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (solo texto; se elimina la torre de visión del modelo base) |
-| Parametros totales | 3B (aproximado, según familia Ministral 3) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 4096 tokens (caché KV en esta conversión); el modelo base soporta hasta 128k |
-| Tipos de cuantizacion | int4 blockwise (bloque 32), simétrica, clipping OCTAV; embeddings y lm_head atados en INT8 |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer decoder-only (decodificador de texto de Ministral-3; sin torre de visión) |
+| Parametros totales | 3B (heredados del modelo base) |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | 4096 tokens (KV cache del paquete LiteRT-LM) |
+| Tipos de cuantizacion | int4 por bloques (bloque 32, simétrico, OCTAV clipping); embedding/lm_head atados en INT8 |
+| Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | `.litertlm` (bundle LiteRT-LM que incluye tokenizador y plantilla de chat) |
+| Formato de pesos | `.litertlm` (bundle LiteRT-LM); no se publican safetensors ni GGUF en este repo |
 
 ## Arquitectura y entrenamiento
 
-El modelo original de Mistral AI emplea una arquitectura transformer decoder-only con atención estándar, entrenado mediante Cascade Distillation a partir de Mistral Small 3.1. La variante de razonamiento incorpora cadenas de pensamiento explícitas antes de emitir la respuesta final, lo que mejora el rendimiento en tareas aritméticas y lógicas. Esta conversión de litert-community mantiene la arquitectura del decodificador de texto, pero descarta el codificador de visión, y aplica una cuantización int4 por bloques de 32 elementos con recorte óptimo OCTAV (data-free) para preservar la precisión frente a un esquema min-max ingenuo. El cómputo resultante es completamente entero, lo que permite ejecución eficiente en CPUs y GPUs móviles. El bundle `.litertlm` incorpora el tokenizador y la plantilla de chat nativa de Mistral (`[INST] ... [/INST]`, token de parada `</s>`).
+El modelo base es `mistralai/Ministral-3-3B-Reasoning-2512`, un transformer decoder-only denso de 3B parámetros orientado a razonamiento paso a paso (genera un bloque de pensamiento antes de la respuesta final). La conversión de LiteRT-LM mantiene únicamente el decodificador de texto; la información disponible no detalla la composición del dataset de entrenamiento, el número de tokens ni si hubo RLHF o DPO en el modelo original.
+
+La innovación técnica de esta publicación no está en el entrenamiento sino en el empaquetado y la optimización para edge: cuantización int4 por bloques con recorte OCTAV, embedding y lm_head atados en INT8, y un grafo de prefill/decode reescrito para GPU (versión del 2026-11-16, sin cambios en los pesos). El bundle incorpora tokenizador y plantilla nativa de Mistral (`[INST] … [/INST]`, stop token `</s>`), y el runtime expone un canal de pensamiento separado (`[thought] … [/thought]`).
 
 ## Capacidades
 
-- Generación de texto con razonamiento paso a paso (chain-of-thought): el modelo trabaja el problema de forma explícita antes de dar la respuesta final, terminando limpiamente en el token `</s>`.
-- Razonamiento matemático y lógico: evaluado en GSM8K con 90,7% de precisión en 0-shot con cadena de pensamiento.
-- Ejecución completamente on-device: compatible con el runtime LiteRT-LM y la app Google AI Edge Gallery, sin necesidad de servidor.
-- Soporte de plantilla de chat nativa Mistral: formato `[INST]` integrado en el bundle, sin configuración adicional.
-- Inferencia con backend GPU o CPU: en Apple M4 Max alcanza 95,8 tok/s de decodificación en GPU Metal y 22,4 tok/s en CPU.
-- No incluye capacidades de visión en esta conversión (solo texto), aunque el modelo base original sí las tiene.
-- No se documenta soporte de tool calling ni function calling en la información disponible.
+- Generación de texto y razonamiento paso a paso con canal de pensamiento explícito.
+- Razonamiento matemático de tipo chain-of-thought (el ejemplo de la model card resuelve un problema aritmético de dos pasos correctamente).
+- Generación de código y respuesta a instrucciones en formato chat de Mistral.
+- Inferencia on-device en Android (GPU y CPU), macOS y navegador con WebGPU.
+- Streaming de tokens mediante `send_message_async` en el runtime LiteRT-LM.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Visión: no soportada en esta conversión (torre Pixtral descartada).
 
 ## Casos de uso
 
-- Asistentes personales en smartphone: el modelo cabe en dispositivos con 8 GB de RAM (modo CPU) y ofrece respuestas razonadas sin conexión, ideal para privacidad y latencia cero en red. Se integraría mediante la app Google AI Edge Gallery o el runtime LiteRT-LM.
-- Chatbots de atención al cliente en dispositivos edge: gracias a su capacidad de razonamiento, puede resolver consultas que requieren varios pasos de lógica (por ejemplo, cálculos de facturación o políticas de devolución) manteniendo el contexto en la ventana de 4096 tokens.
-- Tutor de matemáticas offline: el 90,7% en GSM8K lo hace útil para explicar problemas aritméticos paso a paso en aplicaciones educativas sin conexión, mostrando el razonamiento intermedio al estudiante.
-- Análisis de texto en dispositivos industriales: por su tamaño reducido (~2,2 GB) y cómputo entero, puede desplegarse en hardware embebido o tablets para resumir informes, extraer conclusiones o clasificar contenido.
-- Generación de código asistida en entornos aislados: aunque no se documenta tool calling, puede producir fragmentos de código o explicaciones técnicas en dispositivos sin acceso a la nube, útil para desarrolladores en campo.
-- Demostraciones y prototipos de IA generativa en móviles: desarrolladores pueden usar la app AI Edge Gallery para probar el modelo en un teléfono y validar la viabilidad de productos de IA local antes de escalar a modelos mayores.
+- Asistentes offline en móvil Android: el paquete de 2,34 GB se ejecuta con LiteRT-LM 0.19.0 o superior en la GPU del dispositivo (22,3 tok/s de decode en Galaxy S26), lo que permite asistentes sin conexión con contexto de 4.096 tokens.
+- Demos web sin backend: la rama `web` del repo permite cargar el modelo en el navegador con WebGPU y ejecutar chat interactivo sin servidor.
+- Razonamiento matemático y resolución de problemas paso a paso: el canal de pensamiento permite auditar el razonamiento intermedio, útil en herramientas educativas o de verificación.
+- Prototipado de agentes locales: el modelo puede integrarse en pipelines de agentes en el propio dispositivo para tareas de clasificación, extracción o generación de texto con baja latencia de prefill (213 tok/s sobre 1.024 tokens).
+- Aplicaciones de privacidad estricta: al ejecutarse íntegramente en el dispositivo, los datos no salen del terminal, adecuado para sectores regulados o datos personales.
+- Evaluación de runtimes edge: sirve como banco de pruebas para medir throughput y consumo de memoria (4,69 GB de pico en CPU de Galaxy S26) en distintas plataformas antes de comprometerse con un despliegue.
 
 ## Benchmarks y rendimiento
 
-El modelo fue evaluado en GSM8K (n=150, greedy, 0-shot chain-of-thought, max-tokens 2048) por el autor de la conversión. Se compara con la versión Instruct del mismo modelo base en formato LiteRT.
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la información disponible. Los únicos datos de rendimiento son de inferencia en dispositivo:
 
-| Modelo | GSM8K |
-|---|---|
-| Ministral-3-3B-Reasoning-2512 (LiteRT int4 block32 + OCTAV) | 90,7% |
-| Ministral-3-3B-Instruct-2512 (LiteRT, mismo esquema de cuantización) | 85,0% |
+| Plataforma | Metrica | Valor |
+|---|---|---|
+| Galaxy S26, GPU | Decodificacion | 22,3 tokens/s |
+| Galaxy S26, GPU | Prefill (1.024 tokens) | 213 tokens/s |
+| Galaxy S26, GPU | Memoria GPU adicional (`kgsl_page_alloc`) | 4,35 GB |
+| Galaxy S26, CPU | Memoria pico (`VmHWM`) | 4,69 GB |
+| Pixel 11 Pro, GPU | Decodificacion vs. fichero anterior | 1,31–1,40x mas rapido |
+| Pixel 11 Pro, GPU | Prefill vs. fichero anterior | 1,22–1,39x mas rapido |
 
-Además, se reportan métricas de rendimiento de inferencia en Apple M4 Max (litert-lm 0.15.0, prefill 256 tokens, decode 256 tokens, 3 ejecuciones):
-
-| Dispositivo | Backend | Prefill | Decode | TTFT | Carga |
-|---|---|---|---|---|---|
-| Apple M4 Max (macOS) | CPU | 123 tok/s | 22,4 tok/s | 2,41 s | — |
-| Apple M4 Max (macOS) | GPU (Metal) | 1241 tok/s | 95,8 tok/s | 0,23 s | — |
-
-No se han publicado más resultados de benchmarks en la información disponible.
+Mediciones realizadas con LiteRT-LM v0.19.0; cada ejecución repite la carga tres veces y se reporta la mediana de las iteraciones 2 y 3 sobre dos pasadas.
 
 ## Requisitos de hardware
 
-- Tamaño del archivo: ~2,2 GB (`model.litertlm`), con embeddings externalizados para que cada sección sea menor de 2 GiB y pueda cargarse en iOS.
-- VRAM/RAM estimada: en Android, el backend GPU requiere aproximadamente 2× el tamaño del modelo (pesos más la caché de pesos GPU de ML Drift), por lo que se recomiendan dispositivos con 12 GB+ de RAM para GPU; en 8 GB solo está disponible CPU y hay que liberar RAM antes de cargar.
-- GPU recomendadas: Apple M4 Max (GPU Metal) ofrece 95,8 tok/s de decodificación; en un iPhone 17 Pro carga y genera correctamente (sin tiempos medidos). En Android, un Samsung Galaxy S26 (SM-S942Q / SM8850) ejecuta el backend GPU con un pico de memoria de 1159 MB.
-- Opciones de despliegue: runtime LiteRT-LM (`litert_lm_main`), app Google AI Edge Gallery (v1.0.16+ puede importar modelos directamente desde Hugging Face), o integración manual en aplicaciones Android/iOS.
-- Latencia y throughput: en Apple M4 Max GPU, TTFT de 0,23 s y decodificación de 95,8 tok/s; en CPU, TTFT de 2,41 s y 22,4 tok/s (con una variabilidad de aproximadamente ±7% en CPU).
+- VRAM/almacenamiento: fichero de 2,34 GB; asignación GPU de 4,35 GB en Galaxy S26; pico de memoria en CPU de 4,69 GB.
+- GPU recomendadas: GPU integradas de móviles recientes (Galaxy S26, Pixel 11 Pro) con soporte LiteRT-LM 0.19.0 o superior; en Mac, ejecución validada con LiteRT-LM 0.19.1–0.19.2.
+- Consumer GPU de escritorio: no se han publicado mediciones con A100, H100 ni RTX 4090; el modelo está pensado para edge, no para servidor.
+- Navegador: WebGPU con descarga de 2,34 GB desde la rama `web`.
+- Opciones de despliegue: runtime LiteRT-LM (CLI `litert-lm run`, binario `litert_lm_main` con `--backend gpu`), API Python con `send_message` y `send_message_async`, y demo web WebGPU. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: ver tabla de benchmarks; el prefill es sustancialmente más rápido que el decode en GPU móvil.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | GSM8K | Licencia | Formato |
-|---|---|---|---|---|---|---|
-| Ministral-3-3B-Reasoning-2512 (LiteRT) | 3B | 4096 (conversión) / 128k (base) | int4 blockwise + OCTAV | 90,7% | Apache-2.0 | `.litertlm` |
-| Ministral-3-3B-Instruct-2512 (LiteRT) | 3B | 4096 (conversión) / 128k (base) | int4 blockwise + OCTAV | 85,0% | Apache-2.0 | `.litertlm` |
-| Ministral-3-3B-Reasoning-2512 (original, sin cuantizar) | 3B | 128k | fp16/bf16 | No disponible | Apache-2.0 | safetensors |
-
-La comparación se limita a los modelos de la misma familia y conversión, ya que no se dispone de datos de otros modelos on-device comparables en la información proporcionada.
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Ministral-3-3B-Reasoning-2512 (LiteRT-LM) | 3B | 4096 (KV cache) | `.litertlm` int4 | Apache-2.0 | Optimizado para edge; sin visión |
+| mistralai/Ministral-3-3B-Reasoning-2512 | 3B | no disponible | safetensors (base) | Apache-2.0 | Modelo original con torre Pixtral |
+| Otros modelos edge de 3B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- La ventana de contexto efectiva en esta conversión es de 4096 tokens (caché KV), muy inferior a los 128k del modelo base, lo que limita tareas con historial largo o documentos extensos.
-- Es una conversión solo texto: no incluye capacidades de visión, aunque el modelo original de Mistral sí las tiene.
-- En dispositivos Android con 8 GB de RAM, el backend GPU no está disponible y la carga en CPU puede provocar que la app sea eliminada por OOM si no se libera memoria previamente.
-- El modelo es de razonamiento y emite cadenas de pensamiento largas; requiere un presupuesto de tokens generoso (por ejemplo, 2048) para evaluaciones justas, y en uso interactivo puede parecer lento si se limita el número máximo de tokens.
-- No se han documentado sesgos específicos ni evaluación de alucinaciones en la información disponible; como todo modelo de lenguaje, existe riesgo de generar contenido incorrecto o inventado.
-- La licencia Apache-2.0 permite uso comercial, pero se recomienda verificar los términos del modelo base original de Mistral para cualquier requisito adicional.
-- El rendimiento en CPU es notablemente inferior al de GPU (22,4 vs 95,8 tok/s en M4 Max), lo que puede afectar la experiencia de usuario en dispositivos sin aceleración gráfica.
+- El flag `--thinking false` no desactiva el bloque de pensamiento con litert-lm 0.19.2; hay que asignar un límite de tokens alto para evitar respuestas truncadas.
+- En litert-lm 0.18.x y 0.19.0, una llamada bloqueante `send_message` que siga generando tras 10 minutos falla con `DEADLINE_EXCEEDED` y puede provocar un crash; usar `send_message_async` para respuestas largas.
+- La CLI de litert-lm (0.14.0–0.19.2) reutiliza un `model.litertlm` descargado previamente sin verificar contra el repo; ficheros antiguos o descargas incompletas quedan en uso hasta borrarlos manualmente.
+- En Android la ruta GPU requiere LiteRT-LM 0.19.0 o superior.
+- El fichero no se ha probado en iOS.
+- Contexto limitado a 4.096 tokens, insuficiente para documentos largos o conversaciones extensas.
+- Sin capacidades de visión ni de audio en esta conversión.
+- Riesgo de alucinación inherente a modelos de 3B; no se han publicado evaluaciones de sesgo ni de robustez.
+- Idiomas soportados no documentados; no se garantiza calidad multilingüe más allá del inglés.
+- Licencia Apache-2.0 permite uso comercial, pero conviene verificar los términos del modelo base y del runtime LiteRT-LM.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/litert-community/Ministral-3-3B-Reasoning-2512
-- Modelo base original: https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512
-- Documentación de Ministral 3 3B en Mistral AI: https://docs.mistral.ai/models/ministral-3-3b-25-12
-- Paper técnico de Ministral 3 (arXiv): https://arxiv.org/html/2601.08584v1
-- Repositorio LiteRT-LM: https://github.com/google-ai-edge/litert-lm
-- App Google AI Edge Gallery: https://github.com/google-ai-edge/gallery
-- Guía de conversión a LiteRT-LM: https://github.com/john-rocky/hf-to-litertlm
-- Modelo Instruct equivalente en LiteRT: https://huggingface.co/litert-community/Ministral-3-3B-Instruct-2512
+- Repositorio Hugging Face: https://huggingface.co/litert-community/Ministral-3-3B-Reasoning-2512
+- Modelo base: https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512
+- Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
+- Demo web WebGPU: https://google-ai-edge.github.io/LiteRT-LM/web_demos/chat/index.html?model=litert-community/Ministral-3-3B-Reasoning-2512

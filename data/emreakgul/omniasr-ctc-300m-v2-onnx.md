@@ -1,72 +1,96 @@
 # EmreAkgul/omniASR-CTC-300M-v2-ONNX
 
 ## Resumen
-El modelo `EmreAkgul/omniASR-CTC-300M-v2-ONNX` es una exportacion en formato ONNX del checkpoint `omniASR_CTC_300M_v2` de Meta, perteneciente a la linea de investigacion Omnilingual ASR. El objetivo es facilitar la ejecucion del modelo sin depender del stack de PyTorch de Meta, permitiendo su uso con ONNX Runtime en entornos de produccion o en el edge. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en CTC, con 300 millones de parametros (nominales) y una salida de 10288 unidades, lo que lo hace adecuado para transcripcion de audio en multiples idiomas. La conversion fue realizada por EmreAkgul y se distribuye bajo licencia Apache-2.0, sin modificacion de los pesos originales. Su relevancia radica en que combina la calidad de un modelo ASR multilingue de Meta con la portabilidad de ONNX, ideal para despliegues con librerias ligeras como `fast-omniasr`.
+
+omniASR-CTC-300M-v2-ONNX es una exportación a formato ONNX del modelo de reconocimiento automático del habla (ASR) `omniASR_CTC_300M_v2` desarrollado por Meta dentro del proyecto Omnilingual ASR. La conversión la mantiene EmreAkgul y está pensada para su uso con la librería `fast-omniasr`, un runtime ligero que permite ejecutar el modelo mediante ONNX Runtime en CPU o GPU sin depender del stack original de fairseq2.
+
+El modelo resuelve la transcripción de audio monolingüe a texto con una cabeza CTC (Connectionist Temporal Classification) y está diseñado explícitamente como un modelo multilingüe de cobertura amplia, siguiendo la filosofía del proyecto Omnilingual ASR de Meta. Con 300 millones de parámetros se sitúa en un rango medio que permite despliegues en hardware modesto, algo relevante para aplicaciones de transcripción en producción donde el coste por hora de audio importa.
+
+La relevancia de esta ficha radica en que se trata de una conversión de formato, no de un modelo nuevo: no se ha reentrenado ni modificado intencionadamente ningún peso, y el tokenizador upstream se redistribuye sin cambios. Esto lo convierte en una opción práctica para quien quiera inferencia ONNX verificada con FP32, FP16 o BF16, con manifiestos de integridad SHA-256 en `config.json`.
 
 ## Especificaciones tecnicas
+
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo CTC para reconocimiento automatico del habla (ASR) |
-| Parametros totales | 300M (nominal, segun el nombre del modelo) |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | no disponible (acepta audio de longitud variable via dynamic shape) |
-| Tipos de cuantizacion | no disponible (export ONNX sin cuantizaciones publicadas) |
-| Idiomas soportados | no disponible (el modelo se presenta como omnilingue, sin listado concreto) |
+| Arquitectura | Transformer CTC (exportación ONNX del checkpoint fairseq2 `omniASR_CTC_300M_v2`) |
+| Parametros totales | 300M (según nombre del modelo; no se detalla desglose) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (audio de entrada dinámico, `[1, samples]`) |
+| Tipos de cuantizacion | FP32 (por defecto), FP16, BF16 (variantes en subcarpetas `fp16/` y `bf16/`) |
+| Idiomas soportados | multilingüe (cobertura exacta no disponible; paridad medida en inglés, turco y kurdo central) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | ONNX (`model.onnx`, ~1.3 GB) y tokenizer SentencePiece (`tokenizer.model`) |
+| Formato de pesos | ONNX (opset 18, `dynamo=False`), con posibles archivos externos de tensores; tokenizador SentencePiece (`tokenizer.model`) |
 
 ## Arquitectura y entrenamiento
-La arquitectura es la del modelo original de Meta, `omniASR_CTC_300M_v2`, que emplea una cabecera CTC (Connectionist Temporal Classification) para la transcripcion de audio. No se han proporcionado detalles sobre la estructura interna (tipo de encoder, atencion, etc.) en la informacion disponible. El repositorio de Meta `facebookresearch/omnilingual-asr` menciona la existencia de variantes LLM-ASR para decodificacion de audio ilimitado, pero esta version concreta es un modelo CTC estandar y no una variante LLM. Los datos de entrenamiento (num. de tokens, composicion del dataset, uso de RLHF/DPO) no estan disponibles. La conversion a ONNX se realizo con `torch.onnx.export` (opset 18, `dynamo=False`) partiendo de un checkpoint de fairseq2, sin modificar los pesos ni realizar entrenamiento adicional.
+
+La arquitectura subyacente es un transformer con cabeza CTC exportado desde el checkpoint oficial de fairseq2 de Meta. La exportación se realizó con `torch.onnx.export` en opset 18 y `dynamo=False`, generando un grafo ONNX de forma dinámica cuya entrada es `audio` (float32, `[1, samples]`) y cuya salida es `logits` (float32, `[1, frames, 10288]`), lo que refleja un vocabulario de 10 288 tokens del tokenizador SentencePiece upstream `omniASR_tokenizer_written_v2.model`.
+
+No se ha realizado reentrenamiento ni modificación intencionada de pesos. Los detalles de entrenamiento (número de tokens, composición del dataset, uso de RLHF/DPO) no están disponibles en la información proporcionada y deben consultarse en el repositorio upstream de Omnilingual ASR de Meta. La innovación técnica destacable de esta distribución es la exportación ONNX con manifiesto de integridad (`config.json` con tamaños y SHA-256 de cada activo), el soporte de precisión seleccionable y el almacenamiento de tensores en archivos complementarios referenciados por `model.onnx`.
 
 ## Capacidades
-- Transcripcion de audio a texto mediante CTC, con entrada de muestras de audio en formato float32 de longitud variable.
-- Salida de logits de 10288 unidades, que se corresponden con las piezas del tokenizer SentencePiece original (`omniASR_tokenizer_written_v2`).
-- Soporte de inferencia con ONNX Runtime, lo que permite desplegar el modelo en CPU o GPU sin necesidad de PyTorch ni del stack de Meta.
-- Integracion directa con la libreria `fast-omniasr`, que permite cargar el modelo con `OmniASR.from_pretrained("EmreAkgul/omniASR-CTC-300M-v2-ONNX", backend="onnx")` y transcribir ficheros de audio con una unica llamada.
-- Compatibilidad con dynamic shape: el modelo puede procesar segmentos de audio de diferente duracion sin redimensionar la entrada.
-- Uso combinado con otras librerias ONNX para pipelines de postproceso (e.g. segmentacion de frases, diarizacion) en un mismo entorno de inferencia.
+
+- Reconocimiento automático del habla (ASR) multilingüe con salida de texto.
+- Decodificación CTC, adecuada para transcripción en streaming o por lotes.
+- Entrada de audio dinámica: acepta longitudes variables de muestras en una sola pasada.
+- Re-muestreo automático a 16 kHz y normalización gestionados por `fast-omniasr`.
+- Ejecución en CPU y CUDA mediante ONNX Runtime.
+- Selección de precisión (FP32, FP16, BF16) con descarga solo de la variante solicitada.
+- No soporta tool calling, agentes ni razonamiento multi-paso (es un modelo ASR puro).
+- No soporta la ruta de inferencia LLM/seq2seq de OmniASR (solo CTC).
 
 ## Casos de uso
-- Transcripcion de reuniones y llamadas de trabajo: el modelo puede procesar grabaciones de audio largas, gracias a su entrada de longitud variable y a la cabecera CTC, generando texto de forma secuencial. Es adecuado cuando se necesita una transcripcion rapida y ligera que no consuma muchos recursos.
-- Subtitulado automatico de videos y contenido multimedia: la salida por frames permite mapear el audio a texto con una granularidad temporal util para generar subtitulos sincronizados. La licencia Apache-2.0 facilita su integracion en herramientas de edicion de video alojadas en empresas.
-- Herramientas de accesibilidad para personas sordas o con discapacidad auditiva: puede usarse en aplicaciones de transcribcion en vivo, ejecutandose en el lado del usuario con ONNX Runtime en CPU, sin necesidad de conexion a servidores externos.
-- Analisis de llamadas de atencion al cliente: el modelo es util para transcribir conversaciones de centros de contacto, y despues aplicar procesamiento de lenguaje natural para extraer topicos, sentimiento o cumplimiento de guiones. La ejecucion en ONNX facilita el despliegue interno de estos pipelines.
-- Dictado por voz en aplicaciones moviles o de escritorio: el modelo de 300M es suficientemente ligero para ejecutarse en equipos con GPU modesta o incluso en CPU, y su formato ONNX permite integrarlo en aplicaciones escritas en Python o en runtimes que soporten ONNX.
-- Investigacion en linguistica computacional y corpus multilingues: al ser un modelo omnilingue con tokenizer multilingue, sirve para transcribir corpus de audio en varios idiomas con el objetivo de entrenar modelos de lenguaje posteriormente. La conversion ONNX facilita la reproducibilidad de los experimentos sin cargar el stack de Meta.
+
+- Transcripción por lotes de reuniones y entrevistas: el modelo acepta audio de duración variable gracias a la forma dinámica de entrada, y la variante FP16 reduce la memoria residente a 1,4 GiB en CUDA, lo que permite procesar horas de audio en una sola GPU consumer.
+- Subtitulado automático de vídeo: al ejecutarse sobre ONNX Runtime en CPU, puede integrarse en pipelines de postproducción sin GPU dedicada, resampleando a 16 kHz de forma transparente.
+- Servicio de dictado o notas de voz en aplicaciones móviles o de escritorio: el tamaño de 300M y la opción FP16 (1,4 GiB) hacen viable el despliegue en estaciones de trabajo con GPU modesta.
+- Investigación en ASR multilingüe: sirve como línea base reproducible en ONNX para comparar con otros modelos CTC y para experimentar con precisión FP16/BF16 midiendo el impacto en la transcripción (paridad documentada de 2/3 clips idénticos frente a FP32).
+- Indexación y búsqueda de contenido audiovisual: la transcripción previa permite alimentar motores de búsqueda sobre archivos de audio y vídeo, con verificación de integridad de activos mediante SHA-256.
+- Prototipado rápido en entornos sin PyTorch/fairseq2: la instalación de `fast-omniasr[onnx,hub]` y una llamada a `from_pretrained` bastan para poner el modelo en marcha, útil en entornos de CI o contenedores ligeros.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la informacion disponible.
+
+No se han publicado resultados de benchmarks (WER, MMLU, etc.) en la información disponible. La model card solo aporta datos de paridad de precisión: frente a FP32, las transcripciones FP16 y BF16 son idénticas en 2 de cada 3 clips de prueba (inglés, turco y kurdo central), y pueden diferir en palabras individuales cuando FP32 está cerca de un empate.
+
+| Precisión | Dispositivos | Memoria GPU residente (CUDA) | Transcripciones vs FP32 |
+|---|---|---:|---|
+| FP32 (por defecto) | CPU, CUDA | 2,4 GiB | referencia |
+| FP16 | CPU, CUDA | 1,4 GiB | 2/3 idénticas |
+| BF16 | CUDA (Ampere o superior) | 1,5 GiB | 2/3 idénticas |
 
 ## Requisitos de hardware
-- VRAM estimada para inferencia: el modelo tiene ~300M de parametros; en FP32 los pesos ocupan aproximadamente 1.2 GB. Con los tensores de entrada, salida y el runtime, se recomienda un minimo de 2 GB de memoria libre en la GPU para inferencia en precision completa. Si se aplicara cuantizacion INT8, la memoria de pesos podria reducirse a ~0.3-0.5 GB, pero no hay una cuantizacion publicada en el repositorio.
-- GPU recomendadas: cualquier GPU con soporte para CUDA y ONNX Runtime, como RTX 3060 o superior, o una Tesla T4 en el caso de despliegue en la nube. En CPU, el modelo puede ejecutarse con ~4 GB de RAM y un procesador moderno, aunque la latencia sera mayor.
-- Despliegue: gracias al formato ONNX, el modelo se puede servir con ONNX Runtime (CPU o GPU), integrarse en contenedores Docker o ejecutarse en el edge. La libreria `fast-omniasr` ya gestiona la carga y validacion de archivos.
-- Latencia y throughput estimados: no disponible. No se han publicado mediciones experimentales en la documentacion del repositorio.
+
+- VRAM estimada: 2,4 GiB en FP32, 1,4 GiB en FP16 y 1,5 GiB en BF16 (memoria residente de pesos en CUDA).
+- GPU recomendadas: cualquier GPU CUDA compatible con ONNX Runtime; BF16 requiere Ampere o superior (p. ej. A100, RTX 30xx/40xx). FP16 funciona también en CPU, aunque sin ganancia de velocidad.
+- Cabe en GPU consumer: sí, con amplio margen (1,4-2,4 GiB de pesos), incluidas RTX 3060/4060 y superiores.
+- Despliegue: ONNX Runtime a través de `fast-omniasr` (versión 0.3.0 o superior para selección de precisión). No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles. TensorRT en `fast-omniasr` es experimental y FP16 puede alterar resultados.
 
 ## Comparativa con modelos similares
-| Parametro | omniASR-CTC-300M-v2-ONNX (este repo) | facebook/omniASR-CTC-300M (checkpoint original de Meta) | omniASR_LLM_Unlimited_300M_v2 (variante LLM del repo Meta) |
-|---|---|---|---|
-| Arquitectura | CTC ASR | CTC ASR (el mismo checkpoint, en formato PyTorch) | LLM-ASR con soporte para audio ilimitado |
-| Formato de pesos | ONNX | PyTorch (checkpoint fairseq2) | no disponible |
-| Parametros | 300M (nominal) | 300M | 300M (nominal, segun el repo) |
-| Longitud de contexto | dynamic shape | no disponible | audio ilimitado |
-| Idiomas | omnilingue (sin listado) | omnilingue | omnilingue |
-| Licencia | Apache-2.0 | Apache-2.0 | Apache-2.0 |
-| Disponibilidad | Descarga directa, listo para ejecutar | Descarga directa | no disponible |
-| Benchmarks | no disponibles | no disponibles | no disponibles |
+
+| Modelo | Parámetros | Contexto/entrada | Licencia | Formato | Disponibilidad |
+|---|---|---|---|---|---|
+| omniASR-CTC-300M-v2-ONNX (este) | 300M | audio dinámico `[1, samples]` | Apache-2.0 | ONNX | Hugging Face, runtime `fast-omniasr` |
+| omniASR_CTC_300M_v2 (upstream Meta) | 300M | audio dinámico | Apache-2.0 | fairseq2 | Repositorio GitHub de Omnilingual ASR |
+| Whisper (variantes de OpenAI) | 39M-1,55B | ventana fija de 30 s | MIT | PyTorch, GGUF, ONNX | Hugging Face, múltiples runtimes |
+| Wav2Vec 2.0 / MMS (Meta) | 95M-1B | audio variable | MIT/Apache-2.0 | PyTorch | Hugging Face |
+
+No se dispone de datos de rendimiento comparativo (WER) en la información proporcionada para establecer una comparación cuantitativa con Whisper o MMS.
 
 ## Limitaciones y advertencias
-- Este repositorio es una distribucion independiente y no esta afiliado a Meta. La redistribucion del modelo se realiza bajo Apache-2.0 con aviso de modificacion, pero el usuario debe verificar que cumple los terminos de la licencia original.
-- La lista de idiomas soportados no esta especificada en la documentacion. El nombre "omnilingue" no garantiza un rendimiento uniforme en todos los idiomas, por lo que es necesario probar el modelo con los corpus especificos de cada caso de uso.
-- No hay informacion sobre sesgos conocidos, riesgos de alucinacion o limitaciones de precision. En un modelo ASR, la alucinacion puede manifestarse como transcripcion de palabras que no estan presentes en el audio, especialmente con ruido de fondo o voces superpuestas.
-- Al ser un modelo CTC, la salida no incluye timestamps a nivel de palabra de forma nativa. Si se necesitan marcas de tiempo precisas, habra que realizar postproceso sobre los frames.
-- No se han publicado benchmarks, por lo que no es posible comparar su rendimiento con otros modelos ASR de forma objetiva.
-- El formato ONNX puede introducir diferencias numericas menores respecto al modelo original en PyTorch, debido a la conversion (opset 18, `dynamo=False`). Estas diferencias podrian afectar a la precision en tareas muy sensibles.
-- El archivo `model.onnx` ocupa ~1.3 GB y no se incluyen pesos externos. No se recomienda cargar el modelo completo en memoria en dispositivos con menos de 2 GB de RAM libre.
+
+- Es una conversión de formato: hereda íntegramente las capacidades, cobertura lingüística, precisión y limitaciones del modelo upstream; no las mejora.
+- Solo soporta la ruta CTC; no es compatible con la inferencia LLM/seq2seq de OmniASR.
+- La cobertura exacta de idiomas no está documentada en esta ficha; la paridad de precisión solo se midió en inglés, turco y kurdo central.
+- FP16 y BF16 pueden cambiar palabras individuales respecto a FP32; FP32 es la ruta verificada.
+- En CPU, FP16 ahorra memoria pero no acelera; ONNX Runtime no tiene kernels BF16 para CPU.
+- TensorRT en `fast-omniasr` es experimental.
+- Riesgo de alucinación y sesgos: no documentados en esta información; deben consultarse en el repositorio upstream de Meta.
+- La entrada debe ser audio mono; el re-muestreo a 16 kHz y la normalización los realiza `fast-omniasr`.
+- Licencia Apache-2.0 permite uso comercial, pero esta distribución es independiente y no está afiliada ni respaldada por Meta.
+- Los archivos de tensores externos referenciados por `model.onnx` son obligatorios y deben descargarse completos.
 
 ## Enlaces
-- Modelo en Hugging Face: https://huggingface.co/EmreAkgul/omniASR-CTC-300M-v2-ONNX
-- Libreria `fast-omniasr`: https://github.com/Emre-Akgul/fast-omniasr
-- Repositorio oficial de Omnilingual ASR (Meta): https://github.com/facebookresearch/omnilingual-asr
-- Modelo original en Hugging Face: https://huggingface.co/facebook/omniASR-CTC-300M
-- Checkpoint original de Meta: https://dl.fbaipublicfiles.com/mms/omniASR-CTC-300M-v2.pt
+
+- Hugging Face: https://huggingface.co/EmreAkgul/omniASR-CTC-300M-v2-ONNX
+- Runtime fast-omniasr: https://github.com/Emre-Akgul/fast-omniasr
+- Repositorio upstream Omnilingual ASR (Meta): https://github.com/facebookresearch/omnilingual-asr

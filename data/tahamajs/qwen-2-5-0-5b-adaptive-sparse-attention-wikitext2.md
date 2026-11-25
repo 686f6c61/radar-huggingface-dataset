@@ -2,90 +2,98 @@
 
 ## Resumen
 
-`tahamajs/qwen-2.5-0.5b-adaptive-sparse-attention-wikitext2` es un experimento de investigación publicado en Hugging Face por el usuario tahamajs. No se trata de un modelo entrenado desde cero, sino de un transplante de atención sobre el modelo base Qwen2.5-0.5B: se sustituye el mecanismo de atención original por una implementación denominada `adaptive_sparse_attention`, registrada en un `ATTENTION_REGISTRY` del framework NeuralOps. El objetivo declarado es evaluar el comportamiento de un esquema de atención dispersa adaptativa en un transformer pequeño.
+`qwen-2.5-0.5b-adaptive-sparse-attention-wikitext2` es un checkpoint experimental publicado por el usuario `tahamajs` dentro del proyecto NeuralOps Attention Surgery Zoo. Se trata de un transplante quirúrgico del modelo base Qwen2.5-0.5B (494 millones de parametros, 24 capas de decoder, dimension oculta 896, 14 cabezas de query y 2 de clave/valor) en el que 18 de las 24 capas de atencion han sido sustituidas por el operador `AdaptiveSparseAttention` de la libreria NeuralOps, mientras que 6 capas conservan la atencion GQA softmax original de Qwen2.
 
-El proceso de adaptación se realizó sobre el conjunto de datos WikiText-2 (`wikitext-2-raw-v1`) con un patrón de cirugía denominado `hybrid_3_1`, que presumiblemente alterna capas con atención estándar y capas con atención dispersa en una proporción 3:1. Tras el transplante se aplicó una fase de destilación (KD, knowledge distillation) de 61,1 segundos sobre una NVIDIA RTX 3090.
+El objetivo del experimento es evaluar si un esquema hibrido de atencion dispersa adaptativa (ratio 3:1, es decir, 75 por ciento de capas transplantadas frente a 25 por ciento nativas) puede mantener la calidad del modelo tras una destilacion de conocimiento en dos etapas sobre WikiText-2. El resultado medido es una perplejidad de 2.738,78 en el split de validacion, frente a los 15,38 del modelo profesor original: una degradacion severa que convierte este checkpoint en una pieza de investigacion sobre cirugia de atencion, no en un modelo listo para produccion.
 
-Los resultados reportados en la model card son negativos: la perplejidad causal antes de la destilación era de 31637,39 y después de la destilación pasó a `inf`. Es decir, el modelo resultante no es funcional para generación de texto. Este repositorio debe interpretarse como un artefacto de investigación con resultado fallido, no como un modelo listo para uso práctico.
+Es relevante ahora porque documenta de forma transparente el coste de sustituir atencion cuadratica por operadores subcuadraticos en modelos pequenos, con telemetria completa del proceso (perplejidad pre-destilacion de 244.977,47, reduccion relativa del 98,88 por ciento tras la destilacion). La licencia MIT y el formato de pesos abierto permiten reproducir y auditar el experimento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only derivado de Qwen2.5-0.5B, con atencion `adaptive_sparse_attention` transplantada (patron `hybrid_3_1`) |
-| Parametros totales | 0,5 mil millones (heredados del modelo base Qwen2.5-0.5B) |
+| Arquitectura | Transformer decoder-only (Qwen2) con atencion hibrida: 18/24 capas `AdaptiveSparseAttention` + 6/24 capas GQA softmax nativas |
+| Parametros totales | 494 millones (modelo base Qwen2.5-0.5B) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | no disponible (el tamano del repo es 0,0 GB, lo que sugiere que no se subieron pesos) |
+| Longitud de contexto | no disponible (el modelo base Qwen2.5-0.5B soporta 32.768 tokens; la model card no confirma el contexto efectivo tras la cirugia) |
+| Tipos de cuantizacion | no disponible (pesos publicados en FP16 completo, 1.021,32 MB, mas un adaptador) |
+| Idiomas soportados | ingles (segun la model card; el modelo base es multilingue) |
+| Licencia | MIT |
+| Formato de pesos | safetensors FP16 completo mas adaptador; libreria `neuralops` |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen2.5-0.5B, un transformer decoder-only de 0,5 mil millones de parametros. Sobre esa base se realiza una "cirugía" de atención: se reemplaza el mecanismo de self-attention por una variante llamada `adaptive_sparse_attention`, registrada en el `ATTENTION_REGISTRY` del stack NeuralOps. El patrón `hybrid_3_1` indica una combinacion de capas, presumiblemente tres capas con atencion estandar por cada capa con atencion dispersa, aunque la model card no detalla la implementacion exacta.
+El modelo parte de Qwen2.5-0.5B, un transformer decoder-only con 24 bloques, dimension oculta 896, 14 cabezas de query, 2 cabezas de clave/valor (GQA) y cabezas de 64 dimensiones, con RoPE configurado a theta = 1.000.000. Sobre esa base se aplica una "cirugia de atencion" determinista con ratio `hybrid_3_1`: las capas con indices [0, 1, 2, 4, 5, 6, 8, 9, 10, 12, 13, 14, 16, 17, 18, 20, 21, 22] usan `AdaptiveSparseAttention` envuelto en un `QwenAttentionAdapter`, mientras que las capas [3, 7, 11, 15, 19, 23] mantienen la atencion GQA softmax preentrenada para preservar el enrutamiento contextual global y las cabezas de induccion. Cada capa transplantada hereda los tensores `q_proj`, `k_proj`, `v_proj` y `o_proj` del profesor, con expansion de cabezas KV de 2 a 14 y una unica proyeccion de salida sin duplicados.
 
-El ajuste se realizo sobre WikiText-2 en su variante `wikitext-2-raw-v1`, un corpus de texto en ingles de tamano reducido, y se aplico una destilacion de conocimiento de 61,1 segundos en una RTX 3090. No se especifican hiperparametros, numero de tokens de entrenamiento, composicion del dataset ni si hubo RLHF o DPO. La metrica reportada es perplejidad causal: 31637,39 antes de la destilacion e `inf` despues, lo que indica que el proceso de adaptacion degradó completamente el modelo.
+`AdaptiveSparseAttention` implementa top-k dinamico y umbrales adaptativos de dispersidad, con soporte de mascaras causales y bidireccionales, RoPE, GQA y despacho de kernels en tres niveles (CUDA, Triton y PyTorch). El entrenamiento consiste en una destilacion de conocimiento en dos etapas sobre WikiText-2 (`wikitext-2-raw-v1`), con secuencia de 512, batch de 8 y acumulacion de gradiente de 4, ejecutada en una unica RTX 3090 de 24 GB mediante cacheado offline de representaciones (sin VRAM de profesor). La etapa 1 congela el backbone y entrena solo modulos de atencion y layer norms (30 por ciento del presupuesto, 79 pasos), con pesos maestros FP32 y AMP FP16. Tras el transplante, la perplejidad cero-shot del estudiante era de 244.977,47; la destilacion la reduce un 98,88 por ciento hasta 2.738,78.
 
 ## Capacidades
 
-- Generacion de texto: no funcional segun los datos reportados (perplejidad infinita tras la destilacion).
-- Razonamiento, codigo y matematicas: no evaluados y presumiblemente degradados por el transplante de atencion.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles.
-- Capacidades especiales (thinking mode, vision, audio): no disponibles.
+- Generacion de texto causal autoregresiva en ingles, heredada del modelo base.
+- Atencion dispersa adaptativa con top-k dinamico y umbrales, orientada a reducir el coste cuadratico de la atencion.
+- Soporte de mascaras causales y bidireccionales en el operador transplantado.
+- Compatibilidad con RoPE y GQA dentro del operador disperso.
+- Despacho de kernels en tres niveles (CUDA, Triton, PyTorch) para distintos backends.
+- Capacidades conversacionales y de tool calling del modelo base: no verificadas ni garantizadas tras la cirugia y la destilacion.
+- Capacidades multilingues del modelo base: no garantizadas; la model card declara solo ingles.
 
 ## Casos de uso
 
-- Investigacion sobre mecanismos de atencion dispersa: el artefacto sirve como referencia de un intento de transplante de atencion `adaptive_sparse_attention` sobre un transformer pequeno, util para comparar con implementaciones propias.
-- Reproduccion de experimentos de cirugia de atencion: el patron `hybrid_3_1` y el flujo de destilacion descritos permiten replicar el procedimiento en otros modelos base.
-- Estudio de fallos en destilacion de conocimiento: la transicion de perplejidad 31637,39 a `inf` es un caso documentado de colapso durante KD que puede analizarse para diagnosticar inestabilidades.
-- Benchmarking de frameworks de atencion (NeuralOps): el `ATTENTION_REGISTRY` puede probarse con este modelo como caso de prueba de integracion.
-- Docencia sobre perplejidad y evaluacion de modelos de lenguaje: el contraste pre/post destilacion es un ejemplo didactico de metrica de calidad.
-- Analisis de robustez de Qwen2.5-0.5B frente a modificaciones estructurales: permite medir cuanto tolera el modelo base la sustitucion de su atencion nativa.
+- Investigacion sobre atencion subcuadratica: sirve como referencia reproducible para medir el impacto de sustituir atencion softmax por operadores dispersos en un transformer pequeno, con telemetria completa de perplejidad antes y despues de la destilacion.
+- Benchmarking de operadores NeuralOps: permite comparar `AdaptiveSparseAttention` frente a GQA softmax en igualdad de condiciones (mismo modelo base, mismo dataset, mismo hardware), aislando el efecto del operador.
+- Estudio de destilacion de conocimiento: el protocolo en dos etapas con cacheado offline de representaciones es reutilizable para entrenar variantes con presupuesto de VRAM reducido (una sola RTX 3090).
+- Pruebas de integracion de la libreria `neuralops`: validar el pipeline de cirugia, serializacion de pesos y carga del adaptador en entornos de desarrollo.
+- Docencia y divulgacion: ejemplo didactico de como una modificacion arquitectonica agresiva degrada la perplejidad y de como la destilacion recupera solo parte de la calidad.
+- Exploracion de eficiencia en inferencia: medir latencia y memoria del esquema hibrido 3:1 en GPUs de consumo, aunque sin garantias de calidad de salida.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Valor reportado |
-|---|---|
-| Perplejidad causal pre-KD | 31637,39 |
-| Perplejidad causal post-KD | inf |
-| Delta de perplejidad | +inf |
-| Tiempo de destilacion | 61,1 s en NVIDIA RTX 3090 |
+Resultados declarados por el autor (no verificados) en WikiText-2 (`wikitext-2-raw-v1`, split de validacion, longitud de secuencia 512, batch 8, acumulacion 4, RTX 3090 24 GB):
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+| Metrica | Valor | Notas |
+|---|---:|---|
+| Perplejidad del profesor (Qwen2.5-0.5B) | 15,38 | Referencia GQA softmax causal |
+| Perplejidad del estudiante cero-shot tras cirugia | 244.977,47 | Inmediatamente tras transplantar 18/24 capas |
+| Perplejidad del estudiante tras destilacion (2 etapas) | 2.738,78 | Metrica principal de la model card |
+| Delta absoluto de perplejidad | -242.238,69 | Cambio logrado por la destilacion |
+| Reduccion relativa de perplejidad | 98,88 % | Recuperacion desde el pico post-cirugia |
+
+No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; con 0,5 mil millones de parametros, en fp16 serian aproximadamente 1 GB, pero el modelo no es funcional segun los datos reportados.
-- GPU recomendadas: la unica referencia es una NVIDIA RTX 3090 usada para la destilacion (61,1 s).
-- Cabe en GPU consumer: si, por tamano (0,5B), aunque la calidad del modelo resultante es nula.
-- Opciones de despliegue: no disponibles; el repositorio no contiene pesos (tamano 0,0 GB), por lo que no puede desplegarse con vLLM, llama.cpp, Ollama ni TGI.
+- VRAM estimada para inferencia: aproximadamente 2 GB en FP16 para los 494 millones de parametros (1,4 GB de repositorio, 1.021,32 MB de pesos FP16), mas overhead de activaciones y kernels.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; el autor entreno en una NVIDIA GeForce RTX 3090 de 24 GB.
+- Cabe en GPU de consumo: si, en RTX 3060, RTX 4060, RTX 4090 y equivalentes con 4 GB o mas.
+- Opciones de despliegue: la libreria `neuralops` es el entorno nativo; no se confirma soporte de vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Perplejidad WikiText-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tahamajs/qwen-2.5-0.5b-adaptive-sparse-attention-wikitext2 | 0,5B | no disponible | No funcional (PPL inf) | no disponible | Repo vacio (0,0 GB) |
-| Qwen2.5-0.5B (base) | 0,5B | 32.768 tokens (segun documentacion publica de Qwen) | Funcional | Apache 2.0 (segun documentacion publica de Qwen) | Hugging Face |
-| Qwen2.5-1.5B | 1,5B | 32.768 tokens (segun documentacion publica de Qwen) | Funcional | Apache 2.0 (segun documentacion publica de Qwen) | Hugging Face |
+| Este modelo (hibrido 3:1 + destilacion) | 494 M | no disponible | 2.738,78 (validacion, seq 512) | MIT | Hugging Face |
+| Qwen/Qwen2.5-0.5B (profesor) | 494 M | 32.768 tokens | 15,38 (validacion, seq 512) | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B-Instruct | 494 M | 32.768 tokens | no disponible | Apache 2.0 | Hugging Face |
 
-Los datos de contexto y licencia de los modelos Qwen2.5 provienen de la documentacion publica del modelo base y no de la informacion proporcionada en esta ficha; se incluyen solo como referencia comparativa.
+La comparativa se limita al modelo base y su variante Instruct porque no se dispone de datos de otros modelos con atencion dispersa adaptativa en el mismo rango de tamano dentro de la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo no es funcional: la perplejidad causal post-destilacion es `inf`, lo que indica colapso total en la generacion.
-- El repositorio tiene un tamano de 0,0 GB, por lo que probablemente no contiene pesos descargables.
-- La licencia no esta declarada; no puede asumirse uso comercial.
-- Los idiomas soportados no estan declarados; el ajuste se hizo sobre WikiText-2, corpus en ingles.
-- Riesgo elevado de alucinacion y salidas incoherentes dada la perplejidad infinita.
-- No hay informacion sobre sesgos, evaluaciones de seguridad ni restricciones de uso.
-- El proceso de destilacion de 61,1 s es extremadamente corto para un ajuste significativo, lo que sugiere un experimento preliminar o fallido.
-- No debe usarse en produccion bajo ninguna circunstancia.
+- Degradacion severa de calidad: la perplejidad de 2.738,78 es aproximadamente 178 veces la del modelo base (15,38); no es apto para produccion sin validacion adicional.
+- El checkpoint es un artefacto de investigacion sobre cirugia de atencion, no un modelo afinado para tareas concretas.
+- Riesgo elevado de alucinacion y de texto incoherente dada la perplejidad medida.
+- Idiomas: la model card declara solo ingles; las capacidades multilingues del base no estan garantizadas tras la cirugia.
+- Longitud de contexto efectiva no documentada; no se debe asumir la ventana de 32.768 tokens del modelo base.
+- Requiere la libreria `neuralops` para cargar el operador `AdaptiveSparseAttention`; la compatibilidad con otros runtimes no esta confirmada.
+- Licencia MIT: permite uso comercial, pero el modelo base Qwen2.5-0.5B tiene licencia Apache 2.0, cuyos terminos conviene revisar en despliegues derivados.
+- Los resultados de benchmarks son declarados por el autor y estan marcados como no verificados.
 
 ## Enlaces
 
-- [Hugging Face: tahamajs/qwen-2.5-0.5b-adaptive-sparse-attention-wikitext2](https://huggingface.co/tahamajs/qwen-2.5-0.5b-adaptive-sparse-attention-wikitext2)
-- No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.
+- Repositorio en Hugging Face: https://huggingface.co/tahamajs/qwen-2.5-0.5b-adaptive-sparse-attention-wikitext2
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
+- Libreria NeuralOps: https://github.com/tahamajs/NeuralOps
+- Implementacion del operador: https://github.com/tahamajs/NeuralOps/blob/main/neuralops/layers/sparse/adaptive_sparse_attention.py
+- Licencia del proyecto: https://github.com/tahamajs/NeuralOps/blob/main/LICENSE
+- Dataset WikiText-2: https://huggingface.co/datasets/Salesforce/wikitext

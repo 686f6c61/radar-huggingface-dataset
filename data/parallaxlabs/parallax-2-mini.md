@@ -2,84 +2,109 @@
 
 ## Resumen
 
-`parallaxlabs/parallax-2-mini` es un repositorio de modelo alojado en Hugging Face por el usuario `parallaxlabs`, publicado el 18 de octubre de 2026 bajo licencia Apache 2.0. El nombre sugiere una variante reducida ("mini") de una familia denominada "parallax-2", pero esta inferencia procede unicamente del identificador del repositorio y no esta confirmada por ninguna documentacion tecnica.
+Parallax 2 Mini es un modelo de lenguaje de aproximadamente 4.326 millones de parámetros (4.326.350.848 exactamente) desarrollado por Parallax Labs, construido sobre el modelo base Qwen/Qwen3.5-4B. Se presenta como el modelo más rápido y ligero de la familia Parallax, orientado a tareas cotidianas simples que requieren razonamiento de calidad, alta velocidad y precisión a pequeña escala. La model card lo describe explícitamente como una prueba de concepto (proof-of-concept preview) de los próximos modelos de la compañía.
 
-La model card publicada no contiene informacion sustantiva: se limita a dos lineas de texto promocional ("Heart and Follow to stay tuned. This will be a big- or do I say, mini one.") y a la declaracion de licencia en el frontmatter YAML. No se especifican arquitectura, numero de parametros, longitud de contexto, idiomas, formato de pesos ni pipeline de inferencia. El repositorio no tiene etiquetas de idioma ni de tarea, y registra 0 descargas y 0 likes en el momento de la consulta.
+La arquitectura es híbrida: combina capas de recurrencia lineal Gated DeltaNet con mecanismos de atención tradicionales, lo que mantiene el consumo de memoria del KV-cache plano a lo largo de contextos largos. Esto habilita servir con alta concurrencia y con poca VRAM, además de permitir cuantización del propio KV-cache. El modelo integra un modo de razonamiento (thinking) activable y desactivable, y soporte nativo de tool calling.
 
-Por tanto, no es posible evaluar el modelo con los datos disponibles. Esta ficha documenta de forma explicita que la informacion tecnica no existe publicamente y que cualquier dato que aparezca en terceros debe considerarse no verificado. Es relevante precisamente como caso de repositorio placeholder: util para saber que no debe incorporarse a un pipeline de produccion sin una verificacion previa del autor y de los artefactos reales.
+Su relevancia actual radica en el equilibrio entre tamaño reducido (cabe en GPUs de consumo con cuantizaciones de 2,32 GB a 4,61 GB), velocidad superior a 90 tokens por segundo en una RTX 5070 según el autor, y capacidades de razonamiento y ejecución de herramientas que habitualmente se asocian a modelos de mayor tamaño. La licencia Apache 2.0 facilita su adopción comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (no hay indicios de que sea MoE) |
+| Arquitectura | Transformer híbrido con capas Gated DeltaNet (recurrencia lineal) y atención |
+| Parametros totales | 4.326.350.848 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (sin etiquetas de idioma en el repositorio) |
-| Licencia | apache-2.0 |
-| Formato de pesos | no disponible |
+| Tipos de cuantizacion | GGUF: Q3_K_M, Q4_K_M, Q6_K, Q8_0 (y pesos safetensors en el repo) |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna descripcion de la arquitectura. La model card no menciona transformer, MoE, SSM ni arquitecturas hibridas, no referencia ningun paper ni repositorio de codigo, y no incluye `config.json` ni lista de ficheros de pesos en la informacion proporcionada.
+Parallax 2 Mini emplea una arquitectura híbrida que combina capas de recurrencia lineal Gated DeltaNet con capas de atención convencional. Las capas de recurrencia lineal mantienen el uso de memoria del KV-cache constante a lo largo de contextos largos, lo que reduce el coste de servir muchas peticiones concurrentes y permite cuantizar el KV-cache con poca penalización de VRAM. El modelo deriva del base Qwen/Qwen3.5-4B, según los metadatos del repositorio.
 
-Tampoco hay datos sobre el entrenamiento: se desconoce el volumen de tokens, la composicion del dataset, la existencia de fases de ajuste (SFT, RLHF, DPO) o cualquier innovacion tecnica. El unico metadato disponible es la licencia Apache 2.0 declarada en el frontmatter.
+No se han publicado en la información disponible datos sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF, DPO u otros ajustes de alineamiento. Tampoco se detalla la innovación de decodificación especulativa ni otros detalles de entrenamiento. La model card sí destaca el modo de razonamiento conmutable y el soporte nativo de tool calling como capacidades integradas en el modelo.
 
 ## Capacidades
 
-- No hay ninguna capacidad documentada ni verificable en la informacion disponible.
-- No se confirma generacion de texto, razonamiento, codigo, matematicas ni vision.
-- No se confirma soporte de tool calling o function calling.
-- No se confirma soporte de agentes ni de razonamiento multi-paso.
-- No se confirman capacidades multilingues.
-- No se confirma la existencia de modos especiales (thinking, vision, audio).
-
-La unica afirmacion que puede hacerse con certeza es que el repositorio existe y declara licencia Apache 2.0. Cualquier capacidad atribuida al modelo por el nombre del repositorio es especulativa.
+- Generación de texto conversacional y seguimiento de instrucciones.
+- Razonamiento multi-paso con modo thinking activable y desactivable.
+- Trazado de ejecución de código (code execution tracing), evaluado en CRUXEval.
+- Matemáticas y lógica de varios pasos cuando el razonamiento está activado.
+- Tool calling / function calling nativo, incluyendo búsqueda web e interacción con el sistema de ficheros según la model card.
+- Soporte de agentes y razonamiento multi-paso encadenado mediante herramientas.
+- Capacidades multilingües limitadas al inglés según los metadatos de idioma.
+- Despliegue en endpoints compatibles (tag `endpoints_compatible`).
 
 ## Casos de uso
 
-Ninguno de los siguientes escenarios esta respaldado por documentacion del modelo. Se enumeran como hipotesis de trabajo a validar experimentalmente antes de cualquier uso real, asumiendo que el modelo resulte ser un LLM pequeno funcional:
-
-- Prototipado interno de bajo coste: si el modelo es realmente una variante "mini", podria servir para pruebas de integracion de pipelines de inferencia en local antes de migrar a un modelo mayor; requiere verificar primero que los pesos existen y cargan.
-- Evaluacion comparativa de la familia "parallax": util como punto de partida para medir si existe una familia de modelos detras del nombre, comparando con la variante no mini si esta se publica.
-- Pruebas de despliegue con vLLM o llama.cpp: solo si se confirma el formato de pesos (safetensors o GGUF); sin esa confirmacion no es posible configurar el motor de inferencia.
-- Filtrado y clasificacion de texto a pequena escala: escenario tipico de modelos pequenos, pero sin conocer la ventana de contexto ni los idiomas no puede dimensionarse.
-- Generacion asistida en herramientas de desarrollo: requeriria confirmacion de soporte de tool calling y de calidad en codigo, ninguno de los cuales esta documentado.
-- Base para fine-tuning con datos propios: la licencia Apache 2.0 lo permitiria, pero se desconoce si los pesos estan disponibles y si el modelo base tiene calidad suficiente para que el ajuste aporte valor.
+- Chat de baja latencia: con el modo thinking desactivado, el modelo responde de forma instantánea, adecuado para asistentes conversacionales y enrutadores de intenciones donde la velocidad prima sobre el razonamiento profundo.
+- Razonamiento matemático de nivel medio: con thinking activado, el modelo obtiene 83,42% en MMLU-Pro Math (0-shot), lo que lo hace útil para resolución de problemas cuantitativos en entornos educativos o de análisis financiero básico.
+- Trazado de ejecución de código: con 59,25% Pass@1 y 82,75% Pass@10 en CRUXEval Output, puede emplearse para depurar y predecir salidas de fragmentos de código en pipelines de revisión automatizada.
+- Agentes con herramientas: el tool calling nativo permite construir agentes que consulten APIs, busquen en la web o manipulen ficheros, con el modelo actuando como planificador y ejecutor de llamadas.
+- Despliegue en hardware de consumo: con cuantización Q4_K_M (2,78 GB) cabe en GPUs de gama media y permite servir asistentes locales en portátiles o estaciones de trabajo sin GPU dedicada de datacenter.
+- Servicio de alta concurrencia: gracias al KV-cache plano de las capas Gated DeltaNet, es viable atender muchas sesiones simultáneas en una sola GPU con VRAM limitada, por ejemplo en un servicio interno de clasificación y generación de respuestas.
+- Prototipado rápido de aplicaciones de razonamiento: al ser un preview de la familia Parallax, sirve para validar pipelines de razonamiento y tool use antes de migrar a modelos mayores de la misma casa.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Evaluado localmente con `lm_eval` v0.4.13 sobre `parallax-2-mini.Q8_0.gguf`, con razonamiento activado (temperature=0.6, top_p=0.95, 0-shot). El autor advierte que los resultados de MMLU-Pro están sujetos a cambios por un recálculo de 4.042 preguntas debido a errores de calibración.
+
+| Benchmark | Categoria | Metrica | Resultado |
+|---|---|---|---|
+| CRUXEval Output (800 tareas) | Trazado de ejecución de código | Pass@1 / Pass@10 | 59,25% / 82,75% |
+| MMLU-Pro (Overall, 12.032 preguntas) | Conocimiento general y STEM | Exact Match 0-shot | 58,88% (pendiente de recálculo) |
+| MMLU-Pro Math (1.351) | Matemáticas | Exact Match 0-shot | 83,42% |
+| MMLU-Pro Business (789) | Negocios y finanzas | Exact Match 0-shot | 72,75% |
+| MMLU-Pro Biology (717) | Biología | Exact Match 0-shot | 65,97% |
+| MMLU-Pro Chemistry (1.132) | Química | Exact Match 0-shot | 80,04% |
+| MMLU-Pro Economics (844) | Economía | Exact Match 0-shot | 58,18% |
+| MMLU-Pro Physics (1.299) | Física | Exact Match 0-shot | 54,43% |
+| MMLU-Pro Psychology (798) | Psicología | Exact Match 0-shot | 48,87% |
+| MMLU-Pro Computer Science (410) | Informática | Exact Match 0-shot | 59,76% |
+| MMLU-Pro Health (818) | Salud | Exact Match 0-shot | 45,23% |
+| MMLU-Pro Other (924) | General / otros | Exact Match 0-shot | 42,86% |
+| MMLU-Pro Philosophy (499) | Filosofía | Exact Match 0-shot | 38,88% |
+| MMLU-Pro Engineering (969) | Ingeniería | Exact Match 0-shot | 59,24% |
+| MMLU-Pro History (381) | Historia | Exact Match 0-shot | 29,66% |
+| MMLU-Pro Law (1.101) | Derecho | Exact Match 0-shot | 22,16% (en recálculo) |
+
+No se han publicado resultados de MMLU estándar, HumanEval ni GSM8K en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; sin numero de parametros no puede calcularse.
-- GPU recomendadas: no disponible.
-- Viabilidad en GPU de consumo: no disponible. El sufijo "mini" del nombre no es una base valida para estimar el tamano.
-- Opciones de despliegue: no disponible; se desconoce el formato de pesos, lo que impide confirmar compatibilidad con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponible.
-
-Como referencia generica, no aplicada a este modelo: la VRAM necesaria para inferencia se aproxima como `parametros x bytes por peso` (2 bytes en FP16, ~1 byte en cuantizacion de 8 bits, ~0,5 bytes en 4 bits) mas el coste del KV cache, que crece linealmente con la longitud de contexto.
+- VRAM estimada para inferencia: 2,32 GB con Q3_K_M; 2,78 GB con Q4_K_M; 3,56 GB con Q6_K; 4,61 GB con Q8_0. Los pesos safetensors completos ocupan 13,3 GB de repositorio.
+- GPU recomendadas: el autor cita pruebas en una NVIDIA RTX 5070 con velocidades superiores a 90 tokens por segundo. Cabe en GPUs de consumo como RTX 3060, RTX 4060, RTX 4070 y superiores con las cuantizaciones GGUF.
+- Cabe en GPU de consumo: sí, con Q3_K_M y Q4_K_M en GPUs con 4 GB o más de VRAM; Q8_0 requiere al menos 6 GB.
+- Opciones de despliegue: llama.cpp y Ollama para GGUF; transformers para safetensors; vLLM y TGI no están confirmados en la información disponible, aunque el tag `endpoints_compatible` sugiere compatibilidad con endpoints estándar.
+- Latencia y throughput: más de 90 tokens por segundo en RTX 5070 según el autor; no se dispone de cifras para otras GPUs.
 
 ## Comparativa con modelos similares
 
-No disponible. Sin parametros, contexto, licencia de uso practico ni resultados de evaluacion no es posible establecer una comparacion fundamentada con alternativas de la misma categoria. La unica diferencia verificable frente a otros repositorios es la licencia Apache 2.0, insuficiente para una comparativa tecnica.
+No se dispone de datos de benchmarks de modelos comparables en la información proporcionada, por lo que la comparación se limita a características estructurales.
+
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Parallax 2 Mini | 4.326 M | no disponible | Apache 2.0 | Hugging Face (safetensors + GGUF) |
+| Qwen/Qwen3.5-4B (base) | ~4.000 M | no disponible | no disponible | Hugging Face |
+| Alternativas de ~4B con tool calling | no disponible | no disponible | no disponible | no disponible |
+
+El modelo base Qwen/Qwen3.5-4B es la referencia directa, ya que Parallax 2 Mini se construye sobre él y añade la arquitectura híbrida Gated DeltaNet, el modo de razonamiento conmutable y el tool calling nativo. No se han publicado comparaciones de rendimiento frente a otros modelos de tamaño similar en la información disponible.
 
 ## Limitaciones y advertencias
 
-- La model card es un placeholder: no documenta arquitectura, datos de entrenamiento, evaluaciones ni limitaciones. Un uso en produccion sin verificacion previa es desaconsejado.
-- No hay evidencia publica de que existan pesos descargables; el repositorio registra 0 descargas y 0 likes.
-- Sin etiquetas de idioma ni de pipeline, no puede asumirse calidad en castellano ni en ningun otro idioma.
-- Riesgo de alucinacion y sesgos: no evaluables sin artefactos ni documentacion.
-- La licencia Apache 2.0 permite uso comercial y modificacion, pero no certifica la procedencia ni los derechos sobre los datos de entrenamiento; ese riesgo recae en quien despliega el modelo.
-- El nombre puede confundirse con el framework de serving distribuido Parallax (GradientHQ), que es un proyecto distinto y no tiene relacion con este repositorio.
-- La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces encontrados eran contenido no relacionado y se han descartado.
-- Fecha de publicacion muy reciente (18 de octubre de 2026) con actualizacion 32 segundos posterior: patron habitual de repositorio creado como reserva de nombre.
+- El modelo solo declara soporte de inglés; el rendimiento en castellano u otros idiomas no está garantizado.
+- Los resultados de MMLU-Pro están sujetos a recálculo por errores de calibración, por lo que las cifras actuales pueden variar.
+- La puntuación en MMLU-Pro Law (22,16%) y History (29,66%) es notablemente baja, lo que indica debilidades en dominios jurídicos e históricos.
+- Riesgo de alucinación inherente a modelos de 4B; no se han publicado evaluaciones específicas de factualidad.
+- No se han publicado datos sobre sesgos conocidos ni sobre el dataset de entrenamiento, lo que dificulta evaluar riesgos de alineamiento.
+- Es un proof-of-concept preview; el autor no garantiza estabilidad de API ni continuidad de la familia.
+- La licencia Apache 2.0 permite uso comercial, pero al derivar de Qwen3.5-4B conviene verificar las condiciones del modelo base.
+- No se ha publicado la longitud de contexto soportada, lo que limita la planificación de despliegues con ventanas largas.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/parallaxlabs/parallax-2-mini
-- Proyecto homonimo sin relacion (framework de serving distribuido Parallax, GradientHQ): https://github.com/GradientHQ/parallax
-- Paper, blog, repositorio de codigo y demo del modelo: no disponibles en la informacion proporcionada.
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

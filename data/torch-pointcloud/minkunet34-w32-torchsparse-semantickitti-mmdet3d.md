@@ -2,103 +2,100 @@
 
 ## Resumen
 
-MinkUNet34-W32 es un modelo de segmentación semántica de nubes de puntos LiDAR, no un modelo de lenguaje. Se trata de una red residual en forma de U (U-Net) que opera mediante convoluciones dispersas de Minkowski, implementada sobre la librería `torch-pointcloud` y exportada desde el ecosistema MMDetection3D de OpenMMLab. El checkpoint que nos ocupa, `minkunet34-w32-torchsparse.semantickitti.mmdet3d`, está entrenado sobre el dataset SemanticKITTI y resuelve la tarea de asignar una de 19 clases semánticas a cada punto de un barrido LiDAR de escena urbana.
+MinkUNet34-W32 es un modelo de segmentación semántica de nubes de puntos LiDAR, implementado como una U-Net residual dispersa (sparse residual U-Net) sobre convoluciones de Minkowski. Lo desarrolla el proyecto torch-pointcloud (Arthur Dujardin) y este checkpoint concreto se ha convertido desde MMDetection3D, donde se entrenó originalmente sobre el dataset SemanticKITTI. El modelo resuelve la tarea de asignar una clase semántica a cada punto de una escena LiDAR (19 clases: coche, peatón, bicicleta, carretera, edificio, vegetación, etc.), un problema central en percepción para conducción autónoma, robótica móvil y cartografía 3D.
 
-El modelo cuenta con 37,9 millones de parámetros, recibe 4 canales de entrada (coordenadas xyz más intensidad) y produce 96 características internas por punto en su variante más ancha (w32). Su relevancia radica en que ofrece un checkpoint listo para usar en PyTorch con pesos en safetensors, algo poco habitual en el ecosistema de segmentación 3D, donde la mayoría de implementaciones viven acopladas a frameworks de detección como MMDetection3D o a código de investigación difícil de reproducir.
+La arquitectura sigue el diseño MinkUNet propuesto en el paper "4D Spatio-Temporal ConvNets: Minkowski Convolutional Neural Networks" (Choy et al., CVPR 2019), adaptado a la variante de 34 capas con ancho de features 32. Cuenta con 37,9 millones de parámetros, 4 canales de entrada (x, y, z, intensidad) y una cabeza de clasificación de 19 clases. El checkpoint se distribuye en formato safetensors dentro de un repositorio de 0,2 GB, con licencia Apache-2.0, lo que facilita su uso comercial.
 
-Está pensado para investigadores y desarrolladores que necesitan un baseline sólido de segmentación semántica LiDAR sin montar el pipeline completo de OpenMMLab. La licencia Apache-2.0 permite uso comercial, y su tamaño reducido (0,2 GB de repositorio) lo hace desplegable en GPU de consumo.
+Su relevancia actual radica en que ofrece un baseline sólido y reproducible de segmentación LiDAR con un rendimiento declarado de 68,91 mIoU y 92,49 % de accuracy global en SemanticKITTI, empaquetado en una librería Python (`torch-pointcloud`) que abstrae la construcción del modelo y el preprocesado. Es una pieza útil para pipelines de percepción 3D, extracción de features y comparación de arquitecturas dispersas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MinkUNet34-W32, U-Net residual con convoluciones dispersas de Minkowski (sparse conv) |
+| Arquitectura | MinkUNet34-W32 (U-Net residual dispersa sobre convoluciones de Minkowski, spconv/torchsparse) |
 | Parametros totales | 37.892.787 (37,9 M) |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | no disponible (no aplica; entrada variable de puntos LiDAR) |
-| Tipos de cuantizacion | no disponible (no se documentan variantes cuantizadas) |
-| Idiomas soportados | no disponible (no aplica; tarea de visión 3D) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no aplica (modelo de nubes de puntos; procesa conjuntos de puntos, no secuencias de texto) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no aplica (modelo de visión 3D, sin capacidades linguisticas) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (librería `torch-pointcloud`) |
-| Canales de entrada | 4 (xyz + intensidad) |
+| Formato de pesos | safetensors |
+| Canales de entrada | 4 (x, y, z, intensidad) |
 | Clases de salida | 19 (SemanticKITTI) |
-| Características internas | 96 (variante w32) |
-| Dependencias | `spconv` compilado para la versión de PyTorch y CUDA del entorno |
+| Ancho de features | 96 (features de la cabeza) |
 | Dataset de entrenamiento | SemanticKITTI |
+| Libreria | torch-pointcloud (requiere spconv compilado para la version de torch/CUDA) |
 
 ## Arquitectura y entrenamiento
 
-MinkUNet34-W32 es una U-Net residual con un backbone de 34 capas adaptado al dominio disperso mediante convoluciones de Minkowski (MinkowskiEngine), que operan únicamente sobre las coordenadas ocupadas del voxel grid en lugar de sobre el volumen denso. Esto reduce drásticamente el coste computacional y de memoria frente a convoluciones 3D densas, manteniendo la capacidad de agregar contexto espacial a múltiples escalas mediante el encoder-decoder con conexiones de salto. La variante W32 fija el ancho de los canales a 96 características por punto en la salida del backbone.
+El modelo es una U-Net residual dispersa de 34 capas construida con convoluciones de Minkowski, que operan únicamente sobre vóxeles ocupados en lugar de densificar toda la rejilla 3D. Esto reduce drásticamente el coste computacional y la memoria frente a convoluciones 3D densas, algo crítico en nubes de puntos LiDAR con millones de puntos y alta dispersión espacial. La red emplea un encoder con bloques residuales y un decoder con conexiones skip, y produce logits por punto para las 19 clases de SemanticKITTI.
 
-El entrenamiento se realizó sobre SemanticKITTI, el benchmark de referencia para segmentación semántica de secuencias LiDAR en entornos urbanos, con 19 clases (carretera, acera, coche, peatón, vegetación, edificio, etc.). La model card no documenta el número de tokens ni la composición exacta del dataset, ni si se aplicaron técnicas de aumento de datos o refinamiento posteriores; únicamente indica que el checkpoint fue convertido desde MMDetection3D. No se reporta RLHF, DPO ni técnicas de alineación, por tratarse de una tarea de percepción supervisada.
-
-La innovación técnica principal es la propia convolución de Minkowski (paper de Choy et al., CVPR 2019), que generaliza las convoluciones dispersas a 4D (espacio-tiempo) y permite procesar nubes de puntos de forma eficiente. El checkpoint requiere kernels GPU-only de `spconv`, lo que condiciona el despliegue.
+El entrenamiento se realizó sobre SemanticKITTI, el benchmark de referencia para segmentación semántica de secuencias LiDAR de KITTI, con 4 canales de entrada (coordenadas e intensidad). Este checkpoint procede de la implementación de MMDetection3D (Apache-2.0) y ha sido convertido al formato de `torch-pointcloud`. No se detallan en la información disponible el número exacto de tokens/puntos de entrenamiento, la composición precisa del dataset ni si se aplicaron técnicas de aumento de datos o ajuste fino adicional más allá de lo que define el pipeline de MMDetection3D. Tampoco se documentan innovaciones como decodificación especulativa o atención lineal, que no aplican a este tipo de arquitectura.
 
 ## Capacidades
 
-- Segmentación semántica de nubes de puntos LiDAR en 19 clases de escena urbana (SemanticKITTI).
-- Procesamiento de nubes de puntos dispersas de tamaño variable (el ejemplo de la model card usa 8192 puntos sintéticos, pero la arquitectura admite muestras mayores).
-- Extracción de características por punto mediante `forward_features`, devolviendo un vector de 96 dimensiones por punto utilizable para tareas downstream.
-- Reutilización como backbone: `reset_classifier(num_classes=0)` permite descabezar el clasificador y usar el modelo como extractor congelado o para fine-tuning.
-- Entrada multimodal por punto: coordenadas xyz más intensidad de retorno LiDAR (4 canales).
-- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingües: es un modelo puramente perceptivo.
+- Segmentación semántica de nubes de puntos LiDAR en 19 clases (coche, camión, autobús, persona, ciclista, motocicleta, carretera, acera, edificio, valla, vegetación, tronco, terreno, poste, señal de tráfico, etc.).
+- Procesamiento de nubes de puntos dispersas de forma eficiente mediante convoluciones de Minkowski (spconv).
+- Extracción de features por punto: la cabeza puede sustituirse por una identidad (`reset_classifier(num_classes=0)`) para obtener embeddings de 96 dimensiones por punto, útiles para tareas downstream.
+- Entrada multimodal básica a nivel de punto: coordenadas (x, y, z) e intensidad de retorno LiDAR.
+- Ejecución GPU-only: los kernels de spconv requieren CUDA.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingües, al no ser un modelo de lenguaje.
 
 ## Casos de uso
 
-- Segmentación de escenas urbanas en pipelines de conducción autónoma: el modelo clasifica cada punto del barrido LiDAR en 19 categorías, permitiendo distinguir carretera, acera, vehículos, peatones y vegetación para tareas de percepción y planificación.
-- Preprocesado para detección de objetos 3D: usar la salida semántica como máscara previa para aislar puntos de clase coche o peatón antes de alimentar un detector como PointPillars o CenterPoint.
-- Etiquetado asistido de datos LiDAR: generar pre-etiquetas automáticas sobre nuevas secuencias y reducir el coste de anotación manual, con revisión humana posterior de las clases minoritarias.
-- Mapeo y reconstrucción de entornos: agregar las predicciones semánticas a lo largo de secuencias SemanticKITTI para construir mapas de ocupación con clases semánticas.
-- Extracción de características para búsqueda o clustering: usar `forward_features` para obtener embeddings de 96 dimensiones por punto y alimentar modelos de segmentación no supervisada o recuperación de escenas similares.
-- Baseline de investigación: punto de partida reproducible para comparar nuevas arquitecturas de segmentación LiDAR sin reimplementar el pipeline de MMDetection3D.
-- Análisis de accesibilidad urbana: clasificar aceras, pasos de peatones y obstáculos a partir de nubes de puntos capturadas con LiDAR para estudios de movilidad.
+- Percepción para conducción autónoma: el modelo etiqueta cada punto de la nube LiDAR con su clase semántica, permitiendo a un vehículo autónomo distinguir carretera, peatones, vehículos y obstáculos en tiempo real, aprovechando su eficiencia sobre vóxeles dispersos.
+- Anotación automática de datasets 3D: pre-etiquetar grandes volúmenes de nubes de puntos LiDAR para acelerar la creación de datasets de percepción, reduciendo el coste de anotación manual.
+- Robótica móvil indoor/outdoor: segmentación del entorno para navegación segura, detección de suelo transitable, obstáculos y estructuras en robots con LiDAR.
+- Cartografía y modelado urbano: clasificación de edificios, vegetación, terreno y mobiliario urbano a partir de levantamientos LiDAR para gemelos digitales y SIG 3D.
+- Extracción de features para modelos downstream: usar los embeddings de 96 dimensiones por punto como entrada a clasificadores de escena, detectores 3D o modelos de segmentación de instancias.
+- Baseline y comparación de arquitecturas: referencia reproducible para evaluar nuevas arquitecturas de segmentación LiDAR (sparse convs, transformers 3D) sobre SemanticKITTI con métricas estándar (mIoU, OA).
+- Investigación en percepción 3D: punto de partida para experimentos de destilación, compresión o adaptación de dominio en segmentación de nubes de puntos.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor del modelo (no verificados) sobre el dataset SemanticKITTI:
+Resultados declarados por el autor en la model card (no verificados, `verified: false`):
 
-| Metrica | Valor | Verificado |
+| Benchmark | Metrica | Valor |
 |---|---|---|
-| mIoU (mean IoU) | 68,92 | No |
-| OA (overall accuracy) | 92,49 | No |
+| SemanticKITTI | mIoU | 68,91 |
+| SemanticKITTI | OA (accuracy global) | 92,49 |
 
-No se han publicado resultados de benchmarks adicionales en la información disponible.
+No se han publicado en la información disponible resultados adicionales (por clase, latencia, throughput) ni comparaciones oficiales con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita. Con 37,9 M de parámetros, los pesos en fp32 ocupan aproximadamente 150 MB; el grueso del consumo proviene de las activaciones de las convoluciones dispersas, que dependen del número de puntos de entrada.
-- GPU recomendadas: cualquier GPU NVIDIA compatible con CUDA y con `spconv` compilado para esa versión (A100, H100, RTX 4090, RTX 3090, etc.). La model card indica que los kernels son GPU-only.
-- Compatibilidad con GPU de consumo: sí, el tamaño del modelo es reducido; una RTX 3060 o superior debería ser suficiente para inferencia con nubes de puntos de tamaño típico de SemanticKITTI, aunque el consumo real depende del número de puntos y del batch.
-- Opciones de despliegue: `torch-pointcloud` con `spconv`; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (son herramientas para modelos de lenguaje, no aplicables aquí).
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no disponible de forma oficial; con 37,9 M de parámetros y kernels dispersos, el consumo depende fuertemente del número de puntos y del tamaño de vóxel. Para nubes de decenas de miles de puntos, es habitual que quepa en GPUs de 8-16 GB, pero no hay cifra confirmada.
+- GPU recomendadas: no disponible. Al requerir CUDA y spconv, se recomienda una GPU NVIDIA con drivers y CUDA compatibles con la versión de spconv compilada (por ejemplo, RTX 3090/4090, A100, H100 según el tamaño de lote).
+- Cabe en GPU consumer: probablemente sí en RTX 3060/4060 y superiores para lotes pequeños, aunque no confirmado en la información disponible.
+- Opciones de despliegue: `torch-pointcloud` (con `spconv`), PyTorch nativo; no se documentan exportaciones a ONNX, TensorRT, vLLM, llama.cpp ni Ollama (no aplicables a este tipo de modelo).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / entrada | mIoU SemanticKITTI | Licencia | Disponibilidad |
+| Modelo | Parametros | Dataset | mIoU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MinkUNet34-W32 (este) | 37,9 M | Nube de puntos variable, 4 canales | 68,92 (declarado) | Apache-2.0 | Hugging Face, safetensors |
-| MinkUNet (variante MMDetection3D original) | no disponible | Nube de puntos variable | no disponible en esta ficha | Apache-2.0 | GitHub OpenMMLab |
-| Cylinder3D | no disponible | Voxelización cilíndrica | no disponible en esta ficha | no disponible | Repositorio de investigación |
-| SPVNAS | no disponible | Búsqueda de arquitectura dispersa | no disponible en esta ficha | no disponible | Repositorio de investigación |
+| MinkUNet34-W32 (este) | 37,9 M | SemanticKITTI | 68,91 | Apache-2.0 | Hugging Face, torch-pointcloud |
+| MinkUNet (variantes MMDetection3D) | similar | SemanticKITTI | no disponible en la informacion | Apache-2.0 | MMDetection3D |
+| Otras arquitecturas de segmentacion LiDAR (Cylinder3D, SPVCNN, RangeNet++) | no disponible | SemanticKITTI | no disponible en la informacion | variable | variable |
 
-No se dispone de datos comparativos verificados de otros modelos en la información proporcionada; la comparativa se limita a señalar alternativas conocidas de la misma categoría sin cifras confirmadas.
+No se dispone en la información proporcionada de cifras de benchmarks de modelos alternativos para una comparación cuantitativa rigurosa; se indica "no disponible" en lugar de inventar valores.
 
 ## Limitaciones y advertencias
 
-- Modelo puramente perceptivo: no genera texto, no razona y no soporta instrucciones; no debe presentarse como un modelo de lenguaje.
-- Resultados de benchmark declarados por el autor y marcados como no verificados; conviene reproducirlos antes de usarlos como referencia en publicaciones.
-- Entrenado exclusivamente en SemanticKITTI: generaliza mal a sensores LiDAR con distinta densidad, a entornos no urbanos o a configuraciones de retorno diferentes.
-- Requiere `spconv` compilado para la versión exacta de PyTorch y CUDA, lo que complica la reproducibilidad y el despliegue en entornos heterogéneos.
-- Kernels GPU-only: no hay ruta CPU documentada, lo que limita su uso en entornos sin GPU NVIDIA.
-- Riesgo de confusión entre clases minoritarias (por ejemplo, peatones o ciclistas) y de degradación en condiciones de oclusión o lluvia, habitual en datos LiDAR.
-- Licencia Apache-2.0 permite uso comercial, pero el usuario debe verificar las licencias del dataset SemanticKITTI y de las dependencias (`spconv`, `torch-pointcloud`) para su caso concreto.
-- No se documentan sesgos demográficos ni geográficos, pero el dataset de origen está sesgado hacia ciudades alemanas y condiciones de captura específicas.
+- Modelo especializado exclusivamente en segmentación de nubes de puntos; no es un modelo de lenguaje ni soporta texto, tool calling o agentes.
+- Rendimiento limitado al dominio de SemanticKITTI (escenas urbanas y de carretera con LiDAR de KITTI); puede degradarse en otros sensores, densidades, entornos indoor o condiciones meteorológicas adversas.
+- Riesgo de confusión entre clases similares (por ejemplo, vegetación vs. tronco, o tipos de vehículos) y de errores en puntos alejados o con baja densidad.
+- Requiere kernels CUDA y `spconv` compilado para la combinación exacta de PyTorch y CUDA; la instalación puede ser frágil y no funciona en CPU.
+- Los resultados de benchmarks están declarados por el autor y no verificados (`verified: false`); deben tomarse como referencia, no como cifra auditada.
+- Licencia Apache-2.0 permite uso comercial, pero conviene revisar las licencias de las dependencias (spconv, MMDetection3D) y del dataset SemanticKITTI para usos concretos.
+- No se documentan sesgos específicos ni evaluaciones de robustez; en producción conviene validar sobre datos propios antes de desplegar.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/torch-pointcloud/minkunet34-w32-torchsparse.semantickitti.mmdet3d
-- Paper de Minkowski Convolutional Neural Networks: https://arxiv.org/abs/1904.08755
-- Repositorio de torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
-- Guía de instalación de torch-pointcloud: https://pytorch-pointcloud.org/latest/installation/
-- Repositorio de MMDetection3D: https://github.com/open-mmlab/mmdetection3d
-- Dataset SemanticKITTI: http://semantic-kitti.org/
+- Paper Minkowski Convolutional Neural Networks: https://arxiv.org/abs/1904.08755
+- Paper SemanticKITTI: https://arxiv.org/abs/1904.08755 (referencia citada en la model card para Minkowski; SemanticKITTI en ICCV 2019)
+- Repositorio torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
+- Documentación torch-pointcloud: https://pytorch-pointcloud.org/latest/installation/
+- MMDetection3D (origen del checkpoint): https://github.com/open-mmlab/mmdetection3d
+- DOI Zenodo de PyTorch PointCloud: https://doi.org/10.5281/zenodo.22159632

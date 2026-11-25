@@ -2,90 +2,93 @@
 
 ## Resumen
 
-ScanAtlas-Qwen3.5-2B-Planner-GGUF es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-2B, desarrollado por el usuario aibohphobia1, orientado especificamente a la planificacion de acciones para el asistente en dispositivo de la aplicacion ScanAtlas. No se trata de un modelo conversacional de proposito general: espera el prompt y la gramatica JSON propias de la aplicacion, y genera planes de accion estructurados en 15 idiomas.
+ScanAtlas-Qwen3.5-2B-Planner-GGUF es un ajuste fino del modelo Qwen/Qwen3.5-2B publicado por el usuario aibohphobia1. No es un modelo conversacional de propósito general: está especializado en planificar acciones para el asistente en dispositivo de la aplicación ScanAtlas, en 15 idiomas. El modelo espera el prompt y la gramática JSON específicos de la aplicación, por lo que su uso fuera de ese contexto produce resultados degradados. Se distribuye exclusivamente en formato GGUF cuantizado a Q4_0, pensado para ejecución local mediante llama.cpp.
 
-El modelo se construye mediante un LoRA entrenado sobre ejemplos de planificacion de ScanAtlas, fusionado en los pesos de texto del modelo base y posteriormente cuantizado a Q4_0 con llama.cpp (build b11799). El resultado es un artefacto de 1,2 GB en formato GGUF, disenado para inferencia en movil: la evaluacion publicada se realizo en un telefono con Snapdragon 8 Gen 1, con un turno mediano de 5,6 segundos usando 4 hilos de CPU.
+El proceso de adaptación consistió en fusionar LoRAs entrenados sobre ejemplos de planificación de ScanAtlas en los pesos de texto del modelo base, seguido de una cuantización a Q4_0 con llama.cpp build b11799. El modelo base Qwen3.5-2B aporta la arquitectura transformer subyacente y la tokenización multilingüe; el ajuste fino añade la capacidad de interpretar tarjetas de interfaz, correcciones del usuario y referencias anafóricas ("el segundo", "hazlo 6", "ahí también") para emitir llamadas a herramientas en JSON.
 
-Su relevancia radica en el nicho: demuestra un flujo completo de especializacion de un modelo pequeno (1.881.825.088 parametros) para una tarea concreta de tool calling en un entorno de recursos limitados, con licencia Apache-2.0 y pesos listos para llama.cpp. No obstante, el propio autor advierte que no es un modelo de chat general y que su evaluacion no ha sido revisada por hablantes nativos en los idiomas distintos del ingles.
+La relevancia del modelo es acotada pero clara: demuestra un caso de uso de modelos pequeños (1.880 millones de parámetros) desplegados en dispositivo para agentes con tool calling estructurado, con una ventana de contexto que debe cubrir turnos previos de conversación. La versión v5 mejora sustancialmente la evaluación conversacional respecto a v4 (64% a 83% de resultado correcto en la app), a costa de una ligera regresión en la evaluación de planificación aislada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (heredada de Qwen/Qwen3.5-2B); detalles no disponibles |
-| Parametros totales | 1.881.825.088 |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | Transformer (derivada de Qwen/Qwen3.5-2B) |
+| Parametros totales | 1.881.825.088 (~1,88 mil millones) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_0 (unica publicada en el repo) |
-| Idiomas soportados | 15 idiomas (lista concreta no disponible) |
+| Tipos de cuantizacion | Q4_0 (única publicada) |
+| Idiomas soportados | 15 idiomas (no se enumeran en la información disponible) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3.5-2B, del que hereda la arquitectura transformer; la informacion proporcionada no detalla la configuracion interna (numero de capas, dimension oculta, mecanismo de atencion ni contexto maximo). Sobre ese modelo base se entreno un LoRA con ejemplos de planificacion de ScanAtlas, que posteriormente se fusiono en los pesos de texto del modelo original. No se especifica el volumen de datos de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
+El modelo hereda la arquitectura transformer del base Qwen/Qwen3.5-2B, con 1.881.825.088 parámetros en los pesos de safetensors originales. Sobre esa base se entrenaron LoRAs específicos con ejemplos de planificación de ScanAtlas, que posteriormente se fusionaron en los pesos de texto. El resultado se cuantizó a Q4_0 mediante llama.cpp b11799, generando un artefacto GGUF de aproximadamente 3,6 GB en el repositorio.
 
-La innovacion tecnica principal no esta en la arquitectura sino en el pipeline de especializacion y despliegue: ajuste con LoRA, fusion, cuantizacion a Q4_0 con llama.cpp b11799 y explotacion de una gramatica JSON y un formato de prompt especificos de la aplicacion para forzar salidas estructuradas. El objetivo es ejecutar la planificacion de acciones en el propio dispositivo, sin depender de la nube.
+El conjunto de entrenamiento de la versión v5 combina 3.075 conversaciones multiturno en 15 idiomas con 2.000 ejemplos de un solo turno. Las conversaciones multiturno cubren respuestas a preguntas de desambiguación ("¿cuál querías decir?"), deshacer acciones ("undo that"), modificación de parámetros ("make it 6"), referencias ordinales ("the second one") y seguimientos ("there too"). La aplicación muestra al modelo las opciones de cada tarjeta previa y el estado de cada tarjeta de acción (herramienta, argumentos y estado), lo que constituye la señal principal para resolver referencias. No se documenta el uso de RLHF o DPO, ni el número total de tokens de entrenamiento.
 
 ## Capacidades
 
-- Planificacion de acciones para el asistente de ScanAtlas: genera planes en el formato JSON esperado por la aplicacion.
-- Tool calling / function calling: el modelo esta entrenado especificamente para decidir y estructurar acciones invocables.
-- Generacion de texto condicionada al prompt de la aplicacion, no como chat libre.
-- Soporte de 15 idiomas, segun la model card.
-- Inferencia en dispositivo mediante llama.cpp, compatible con endpoints (tag `endpoints_compatible`).
-- No se documentan capacidades de vision, audio, matemáticas avanzadas ni razonamiento multi-paso general fuera del dominio de la aplicacion.
+- Planificación de acciones: genera llamadas a herramientas en JSON según la gramática de la aplicación ScanAtlas, sobre un conjunto de 55 herramientas en la evaluación de planificación.
+- Tool calling estructurado: emite herramienta, argumentos y estado conforme al esquema JSON esperado por la app.
+- Razonamiento multiturno: interpreta respuestas previas de tarjetas, correcciones del usuario y referencias anafóricas a elementos anteriores de la conversación.
+- Desambiguación: responde a preguntas del tipo "¿cuál querías decir?" seleccionando entre opciones presentadas.
+- Modificación y deshacer: procesa instrucciones como "undo that", "make it 6" o "the second one" para ajustar acciones previas.
+- Multilingüe: entrenado en 15 idiomas (no se especifica la lista).
+- No es un modelo de chat general: fuera del prompt y la gramática de la app, su comportamiento no está garantizado.
 
 ## Casos de uso
 
-- Asistente en dispositivo de ScanAtlas: el modelo recibe el prompt y la gramatica JSON de la aplicacion y devuelve el siguiente plan de accion; es su caso de uso nativo y el unico validado por el autor.
-- Procesamiento offline en movil: al ejecutarse con llama.cpp sobre CPU, permite planificar acciones sin conexion en un Snapdragon 8 Gen 1, con turnos medianos de 5,6 s en 4 hilos.
-- Prototipado de asistentes con tool calling en recursos limitados: sirve como referencia para equipos que quieran especializar un modelo de ~2B en una tarea de planificacion estructurada mediante LoRA y cuantizacion Q4_0.
-- Despliegue en endpoints compatibles: la etiqueta `endpoints_compatible` permite servirlo en infraestructura de inferencia estandar para pruebas de integracion con la app.
-- Evaluacion de pipelines de gramatica JSON: util para medir la fiabilidad de salidas estructuradas forzadas por gramatica en modelos pequenos.
-- Base para nuevos ajustes de dominio: al estar bajo Apache-2.0 y en GGUF, puede servir de punto de partida para otras aplicaciones que necesiten planificacion de acciones multilingue en dispositivo.
+- Asistente en dispositivo de ScanAtlas: el modelo se integra en la app para traducir intenciones del usuario en llamadas a herramientas JSON, con ejecución local en el teléfono y sin depender de la nube; su tamaño de 1,88 mil millones de parámetros y cuantización Q4_0 lo hacen viable en hardware móvil.
+- Desambiguación de acciones en interfaces por tarjetas: cuando el usuario responde "el segundo" o "esa no", el modelo resuelve la referencia usando las opciones de tarjetas previas que la app le inyecta en el prompt.
+- Corrección de parámetros en flujos guiados: instrucciones como "make it 6" o "there too" se transforman en la actualización del argumento correspondiente de la herramienta seleccionada.
+- Reversión de acciones: la instrucción "undo that" se mapea a la herramienta de deshacer con el estado de la acción previa, apoyándose en el historial de tarjetas de acción.
+- Seguimiento conversacional corto: conversaciones de varios turnos donde el usuario encadena peticiones sobre la misma tarea sin repetir el contexto completo, gracias al entrenamiento específico en 3.075 diálogos multiturno.
+- Despliegue local con llama.cpp: servir el GGUF mediante llama-server o incrustarlo en la app con llama.cpp para inferencia en CPU/GPU de gama baja, con un artefacto de 3,6 GB en disco.
+- Evaluación de pipelines de agentes pequeños: usar el modelo como referencia para medir planificación con gramática JSON restringida y 55 herramientas en un entorno controlado.
 
 ## Benchmarks y rendimiento
 
-| Metrica | ScanAtlas-Qwen3.5-2B-Planner | Qwen3.5-2B sin entrenar |
+| Metrica | v4 | v5 |
 |---|---|---|
-| Tareas superadas (de 356) | 349 | 274 |
-| Entorno de evaluacion | Snapdragon 8 Gen 1, 4 hilos de CPU, mediante la app | PC |
-| Turno mediano | 5,6 s | no disponible |
+| Evaluación conversacional, resultado en la app, split de test (4.559 conversaciones) | 64% | 83% |
+| Evaluación de planificación, modelo aislado (3.036 tareas, 55 herramientas) | 2.808 | 2.793 |
+| 539 tareas de planificación originales, modelo aislado | 519 | 524 |
 
-La evaluacion cubre 356 tareas en 15 idiomas. El autor advierte que las tareas en idiomas distintos del ingles no han sido revisadas por hablantes nativos. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+Las cifras proceden de pruebas realizadas en un PC con llama-server y el prompt de la app, no en un teléfono. Las tareas en idiomas distintos del inglés no han sido revisadas por hablantes nativos. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita; el repo ocupa 1,2 GB en Q4_0, por lo que el peso en memoria rondara ese orden de magnitud mas el overhead de llama.cpp.
-- GPU recomendadas: no disponibles; el modelo esta pensado para CPU en movil (Snapdragon 8 Gen 1) y no se documentan requisitos de GPU.
-- Cabe en GPU de consumo: previsiblemente si, dado el tamano del archivo GGUF, aunque no se confirma en la informacion proporcionada.
-- Opciones de despliegue: llama.cpp (build b11799 o posterior), con soporte declarado para endpoints compatibles.
-- Latencia y throughput: turno mediano de 5,6 s en Snapdragon 8 Gen 1 con 4 hilos de CPU; no hay datos de throughput en GPU.
+- VRAM estimada para inferencia: no disponible de forma explícita; el artefacto Q4_0 ocupa aproximadamente 3,6 GB en el repositorio, por lo que se requiere espacio comparable en memoria o VRAM al cargarlo.
+- GPU recomendadas: no disponible; el modelo está pensado para ejecución en dispositivo (teléfono) y en PC con llama-server.
+- Cabe en GPU de consumo: previsiblemente sí en tarjetas con 6-8 GB o más, dado el tamaño del GGUF Q4_0, aunque no se documenta oficialmente.
+- Opciones de despliegue: llama.cpp (llama-server, build b11799 o posterior) y cualquier runtime compatible con GGUF; no se mencionan vLLM, TGI ni Ollama.
+- Latencia y throughput: no disponibles; las evaluaciones se hicieron en PC con llama-server, sin publicar métricas de velocidad.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Formato |
+| Modelo | Parametros | Contexto | Formato | Licencia | Enfoque |
 |---|---|---|---|---|---|
-| ScanAtlas-Qwen3.5-2B-Planner-GGUF | 1.881.825.088 | no disponible | 349/356 tareas propias | Apache-2.0 | GGUF Q4_0 |
-| Qwen/Qwen3.5-2B (base) | no disponible | no disponible | 274/356 tareas propias | no disponible en la informacion | safetensors |
-| Otras alternativas de ~2B para tool calling | no disponible | no disponible | no disponible | no disponible | no disponible |
+| ScanAtlas-Qwen3.5-2B-Planner | ~1,88 mil millones | no disponible | GGUF Q4_0 | Apache-2.0 | Planificación de acciones específica de ScanAtlas, 15 idiomas |
+| Qwen/Qwen3.5-2B (base) | ~1,88 mil millones | no disponible | safetensors | no disponible | Modelo general del que deriva |
+| Alternativas de tool calling de ~2B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de benchmarks comparables con otros modelos de la misma categoria en la informacion proporcionada.
+No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de chat general: espera el prompt y la gramatica JSON de ScanAtlas; fuera de ese contexto su comportamiento no esta garantizado.
-- La evaluacion se realizo con 356 tareas propias y las tareas no inglesas no fueron revisadas por hablantes nativos, por lo que el rendimiento multilingue real puede diferir.
-- Riesgo de alucinacion en la generacion de planes de accion no validados por la aplicacion; se recomienda validacion estricta de la salida JSON.
-- No se documentan sesgos conocidos, pero al derivar de un modelo base no auditado en la informacion disponible, deben asumirse los sesgos heredados.
-- Solo se publica una cuantizacion (Q4_0), lo que limita el ajuste de precision frente a velocidad.
-- Licencia Apache-2.0: permite uso comercial, pero el autor no ofrece garantias y el modelo se distribuye tal cual.
-- El repo tiene 0 descargas y 1 like en el momento de la consulta; no hay evidencia de uso en produccion por terceros.
+- No es un modelo de chat general: espera el prompt y la gramática JSON de la app ScanAtlas; su uso fuera de ese contrato no está validado.
+- Evaluación incompleta: las pruebas se hicieron en PC con llama-server, no en teléfono, y las tareas en idiomas distintos del inglés no fueron revisadas por hablantes nativos.
+- Regresión en planificación aislada: v5 baja de 2.808 a 2.793 en la evaluación de 3.036 tareas frente a v4, aunque mejora en el resultado conversacional de la app.
+- Idiomas no enumerados: se indica soporte de 15 idiomas pero no se lista cuáles, lo que dificulta validar cobertura.
+- Riesgo de alucinación en referencias: al depender de las tarjetas previas inyectadas en el prompt, referencias ambiguas o historiales truncados pueden producir selecciones incorrectas.
+- Sesgos: no se documentan sesgos conocidos en la información disponible.
+- Contexto: no se publica la longitud de contexto soportada, dato crítico para conversaciones multiturno largas.
+- Licencia Apache-2.0: permite uso comercial y modificación, con obligación de conservar avisos de licencia y atribución; el repositorio incluye el archivo LICENSE.
+- Cuantización única: solo se publica Q4_0, sin alternativas Q5, Q8 o de mayor precisión para evaluar el impacto de la cuantización.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/aibohphobia1/ScanAtlas-Qwen3.5-2B-Planner-GGUF
+- Modelo en Hugging Face: https://huggingface.co/aibohphobia1/ScanAtlas-Qwen3.5-2B-Planner-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
-- llama.cpp: no disponible en la informacion proporcionada
-- Paper, blog o demo: no disponible en la informacion proporcionada
+- llama.cpp: https://github.com/ggml-org/llama.cpp

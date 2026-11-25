@@ -1,0 +1,73 @@
+{
+  "schema": 2,
+  "id": "zhengzhou/MFM-VLA",
+  "slug": "zhengzhou-mfm-vla",
+  "author": "zhengzhou",
+  "url": "https://huggingface.co/zhengzhou/MFM-VLA",
+  "created_at": "2026-11-25T02:53:31.000Z",
+  "updated_at": "2026-11-25T03:06:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "vla",
+    "pi0.5",
+    "libero-pro",
+    "robocasa365",
+    "mobile-manipulation",
+    "embodied-ai",
+    "arxiv:2611.31452",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24880375217,
+  "storage_human": "24.9 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zhengzhou - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zhengzhou",
+      "snippet": "In 1954, the Henan Provincial Government relocated from Kaifeng to Zhengzhou, making Zhengzhou the provincial capital, as a …"
+    },
+    {
+      "title": "10 choses à faire incontournables à Zhengzhou (2026)",
+      "url": "https://www.tripadvisor.fr/Attractions-g297435-Activities-Zhengzhou_Henan.html",
+      "snippet": "Les meilleures activités à Zhengzhou, Henan : découvrez 28 387 avis de voyageurs et photos de 151 choses à faire à Zhengzhou, …"
+    },
+    {
+      "title": "Guide de voyage à Zhengzhou : Shaolin, gastronomie et conseils",
+      "url": "https://www.thechinajourney.com/fr/guide-voyage-zhengzhou/",
+      "snippet": "Aug 4, 2026 · Préparez votre séjour à Zhengzhou avec le temple Shaolin, les temps forts de la ville, la gastronomie, les conseils de …"
+    },
+    {
+      "title": "Visiter Zhengzhou : préparez votre séjour et voyage Zhengzhou",
+      "url": "https://www.routard.com/fr/guide/asie/chine/henan/zhengzhou",
+      "snippet": "Zhengzhou est une ville où le passé et le présent se côtoient. Elle offre aux visiteurs un aperçu de l’histoire ancienne de la Chine tout …"
+    },
+    {
+      "title": "Zhengzhou Travel Guide: Attractions, Weather, Transportation ...",
+      "url": "https://www.chinadiscovery.com/henan/zhengzhou.html",
+      "snippet": "This guide lists overfal useful travel information for visiting Zhengzhou, including top attractions, acitivities, weather & climate, …"
+    }
+  ]
+}

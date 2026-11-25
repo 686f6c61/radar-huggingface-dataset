@@ -2,95 +2,104 @@
 
 ## Resumen
 
-LFM3-1.7B-ROCmFPX es una cuantizacion GGUF del modelo LiquidAI/LFM3-1.7B, un modelo de lenguaje de 1.728 millones de parametros desarrollado por Liquid AI y orientado a agentes locales, tool calling y salida estructurada. Esta version concreta la publica el usuario Harsha001 y esta optimizada para el fork de llama.cpp denominado ROCmFPX, que anade tipos de peso de bajo bit para GPUs AMD, Vulkan y HIP/ROCm, con atencion especial al hardware Strix Halo.
+LFM3-1.7B-ROCmFPX es una cuantización comunitaria del modelo LiquidAI/LFM3-1.7B, un transformer de 1.728.801.742 parámetros desarrollado por Liquid AI para agentes locales, tool calling y salida estructurada. La versión aquí descrita la publica el usuario Harsha001 (repositorio GitHub de referencia: HarshaVardhan3002/ROCmFPX) y está empaquetada en formato GGUF con tipos de peso de bajo bit específicos para el fork ROCmFPX de llama.cpp, orientado a GPUs AMD, Vulkan y HIP/ROCm.
 
-El modelo base emplea una arquitectura tri-hibrida que combina convoluciones cortas con compuerta (gated short convolutions) junto con atencion de ventana deslizante y atencion global, lo que le permite alcanzar una ventana de contexto de hasta 256K tokens manteniendo un coste computacional contenido. Esta pensado para ejecutarse en entornos de borde (edge) y en equipos de consumo, no en clústeres de datacenter.
+El modelo base emplea una arquitectura tri-híbrida que combina convoluciones cortas con compuerta (gated short convolutions) y atención de ventana deslizante junto con atención global, con una ventana de contexto de hasta 256K tokens. Esa combinación busca reducir el coste computacional de la atención en secuencias largas manteniendo capacidad de recuperación de información lejana, algo relevante para flujos de agentes con historiales extensos.
 
-La relevancia de esta ficha radica en que el repositorio ofrece tres ficheros GGUF con distintos compromisos entre tamano y fidelidad respecto al modelo BF16, incluyendo un tipo de 6 bits propio de ROCmFPX que, segun el autor, supera al Q6_K estandar de llama.cpp con el mismo tamano de fichero. Es importante senalar que el autor indica explicitamente que los ficheros se han verificado en CPU y no se han probado aun en hardware AMD.
+La relevancia de esta ficha es doble: por un lado documenta el modelo base y sus capacidades; por otro, describe un esfuerzo de cuantización de bajo bit para hardware AMD consumer (Strix Halo, RX 7900), un nicho con menos tooling que el ecosistema NVIDIA. Conviene subrayar que los ficheros no son una release oficial de Liquid AI y que, según la model card, fueron verificados en CPU pero no probados aún en hardware AMD.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido: convoluciones cortas con compuerta + atencion de ventana deslizante + atencion global |
-| Parametros totales | 1.728.801.600 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 256K tokens (el ejemplo de ejecucion usa 32768) |
-| Tipos de cuantizacion | ROCmFPX Q6_0_ROCMFPX (recomendado), Q8_0, Q4_K_M |
+| Arquitectura | Transformer tri-híbrido: convoluciones cortas con compuerta + atención de ventana deslizante + atención global |
+| Parámetros totales | 1.728.801.742 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | hasta 256K tokens (el ejemplo de ejecución usa 32.768) |
+| Tipos de cuantización | ROCmFPX 8-bit (Q8_0_ROCMFPX con escalas por tensor), ROCmFPX 6-bit (Q6_0_ROCMFPX con escalas por tensor), ROCmFP4-FAST 4-bit para Strix Halo; referencia stock Q8_0, Q6_K y Q4_K_M |
 | Idiomas soportados | no disponible |
-| Licencia | LFM Open License v1.0 (identificador "other", licencia lfm1.0) |
+| Licencia | LFM Open License v1.0 (license_name: lfm1.0) |
 | Formato de pesos | GGUF |
+
+Detalle de ficheros publicados:
+
+| Fichero | Tamaño | Pesos | Divergencia KL vs BF16 (menor es mejor) | Mismo token top que BF16 |
+|---|---:|---|---:|---:|
+| LFM3-1.7B-Q8_0_ROCMFPX.gguf | 1,80 GB | ROCmFPX 8-bit con escalas por tensor | 0,0044* | 96,8%* |
+| LFM3-1.7B-Q6_K_ROCMFPX.gguf (recomendado) | 1,43 GB | ROCmFPX 6-bit con escalas por tensor | 0,0132 | 94,3% |
+| LFM3-1.7B-Q4_0_ROCMFP4_STRIX_O8.gguf | 1,06 GB | ROCmFP4-FAST 4-bit, atención y capa de salida en 8-bit | 0,159* | 80,5%* |
+| stock Q8_0 (referencia, no subido) | 1,85 GB | llama.cpp Q8_0 | 0,0031 | 97,2% |
+| stock Q6_K (referencia, no subido) | 1,43 GB | llama.cpp Q6_K | 0,0160 | 93,8% |
+| stock Q4_K_M (referencia, no subido) | 1,10 GB | llama.cpp Q4_K_M | 0,0922 | 85,5% |
+
+Las métricas se midieron sobre 40 fragmentos de 512 tokens de WikiText-2 (split de test) contra el GGUF BF16, en CPU. El asterisco indica que los ficheros de 8 y 4 bits se añadieron el 20 de noviembre de 2026 y sus cifras provienen de una ejecución de octubre con recetas casi idénticas.
 
 ## Arquitectura y entrenamiento
 
-El modelo base LFM3-1.7B sigue una arquitectura tri-hibrida que combina capas de convolucion corta con compuerta, capas de atencion de ventana deslizante y capas de atencion global. Esta mezcla busca reducir el coste de la atencion clasica manteniendo capacidad de modelado de dependencias largas, lo que habilita una ventana de contexto de 256K tokens en un modelo de solo 1.7B de parametros. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en la informacion proporcionada.
+El modelo base es un transformer tri-híbrido. Combina capas de convolución corta con compuerta, que procesan dependencias locales con coste lineal, con capas de atención de ventana deslizante y capas de atención global. Este diseño persigue un equilibrio entre eficiencia en secuencias largas y capacidad de atención a distancia, y es la base sobre la que Liquid AI construye su familia LFM3 orientada a agentes y salida estructurada. El contexto declarado llega a 256K tokens.
 
-En cuanto al proceso de cuantizacion, el autor documenta un flujo de tres pasos: conversion a GGUF BF16 con el script `convert_hf_to_gguf.py` del fork, generacion de una importance matrix a partir del fichero BF16 sobre el corpus de calibracion `calibration_datav3` en fragmentos de 512 tokens, y cuantizacion con `llama-quantize --imatrix`. El fichero de 6 bits se genero con `LLAMA_ROCMFPX_TENSOR_SCALE=1`, que almacena una escala potencia de dos por tensor de pesos, y con `--token-embedding-type q6_K`. El soporte de LFM3 en el fork proviene del pull request #31252 de llama.cpp.
+Sobre el proceso de entrenamiento del modelo base no se proporciona información en la documentación disponible: no hay datos sobre número de tokens, composición del dataset ni uso de RLHF o DPO. Respecto a esta cuantización, el procedimiento documentado es el siguiente: conversión a GGUF BF16 con el script convert_hf_to_gguf.py del fork; generación de una importance matrix a partir del fichero BF16 sobre el texto de calibración calibration_datav3 en fragmentos de 512 tokens; y cuantización con llama-quantize --imatrix para cada fichero, incluidos los stock. El fichero de 6 bits se generó con LLAMA_ROCMFPX_TENSOR_SCALE=1, que almacena una escala potencia de dos por tensor de pesos (el runtime la aplica sin configuración adicional), y con --token-embedding-type q6_K. La innovación destacable es el propio formato ROCmFPX: tipos de peso de bajo bit con kernels FP4 rápidos y escalas por tensor, pensados para GPUs AMD, Vulkan y HIP/ROCm. El soporte de LFM3 en el fork proviene del pull request #31252 de llama.cpp.
 
 ## Capacidades
 
-- Generacion de texto conversacional y salida estructurada, segun la model card del modelo base.
-- Soporte de tool calling y function calling, con parametros de muestreo recomendados especificos para uso de herramientas (temperatura 0.1, top-k 50, repetition penalty 1.1).
-- Orientado a agentes locales y razonamiento multi-paso, segun la descripcion del modelo base.
-- Capacidades matematicas, con ajustes de muestreo recomendados distintos (temperatura 1.0, top-p 0.95, top-k 20).
-- Capacidades multilingues: no disponible en la informacion proporcionada.
-- Modo thinking, vision o audio: no disponible en esta variante (el autor indica que LFM3-Omni y LFM3-Audio requeriran trabajo adicional en llama.cpp upstream).
+- Generación de texto conversacional (pipeline text-generation, tag conversational).
+- Tool calling y function calling, uno de los objetivos declarados del modelo base.
+- Salida estructurada, adecuada para extracción de datos y respuestas en formatos fijos.
+- Flujos de agente y razonamiento multi-paso, con contexto de hasta 256K tokens.
+- Razonamiento matemático, con parámetros de muestreo recomendados específicos (temperatura 1.0, top-p 0.95, top-k 20).
+- Ejecución local en hardware de borde (edge), motivo por el que existe esta cuantización.
+- Capacidades multilingües: no disponible.
+- Modo thinking, visión o audio: no disponible en esta variante (la model card indica que LFM3-Omni y LFM3-Audio requieren trabajo adicional en llama.cpp upstream y llegarán más tarde).
 
 ## Casos de uso
 
-- Agentes locales en equipos de consumo: el modelo cabe en ficheros de 1.10 a 1.85 GB, lo que permite ejecutarlo en portatiles y mini-PC con GPU integrada, gestionando bucles de agente con tool calling gracias a sus 256K tokens de contexto.
-- Automatizacion de escritorio y asistentes personales: con soporte de function calling y salida estructurada, puede invocar APIs locales o scripts en flujos de productividad sin depender de la nube.
-- Procesamiento de documentos largos en el borde: la ventana de 256K tokens permite resumir o extraer informacion de contratos, manuales o transcripciones extensas en un solo paso, aunque en la practica el ejemplo de ejecucion limita el contexto a 32768 tokens por consumo de memoria.
-- Generacion de codigo asistida en entornos con GPU AMD: el fichero ROCmFPX de 6 bits esta pensado para builds con Vulkan o HIP/ROCm, integrable en editores o pipelines locales de CI/CD mediante `llama-server` con `--jinja`.
-- Despliegue en hardware Strix Halo: el repositorio apunta explicitamente a este tipo de APUs AMD, donde la memoria unificada permite cargar el modelo completo en GPU sin VRAM dedicada.
-- Clasificacion y extraccion de informacion estructurada: la combinacion de contexto largo y salida estructurada lo hace adecuado para tareas de etiquetado, parsing de formularios o generacion de JSON validado en lotes.
-- Prototipado e investigacion de cuantizacion: los tres ficheros con metricas de divergencia KL documentadas sirven para estudiar el impacto de la cuantizacion de bajo bit en modelos hibridos pequenos.
+- Agentes locales en estaciones de trabajo AMD: el modelo puede orquestar tool calling y cadenas de varios pasos dentro de una ventana de 256K tokens, ejecutándose con el fork ROCmFPX sobre Vulkan o HIP en GPUs como RX 7900 o Strix Halo, sin depender de servicios en la nube.
+- Asistente de código en el editor: con salida estructurada y function calling, encaja en plugins que necesitan generar parches, invocar herramientas del IDE o producir JSON validable, con el fichero de 6 bits (1,43 GB) como opción equilibrada.
+- Extracción de datos de documentos largos: la combinación de contexto de 256K y capas híbridas permite procesar contratos o informes extensos y devolver campos estructurados, usando temperatura 0,1 para maximizar determinismo.
+- Automatización de atención al cliente en local: conversaciones multi-turno con historial largo, desplegadas con llama-server y --jinja para plantillas de chat, manteniendo los datos en la infraestructura propia.
+- Prototipado en portátiles y mini-PC con gráfica integrada AMD: el fichero de 4 bits para Strix Halo (1,06 GB) permite probar agentes en hardware de bajo consumo, aceptando una mayor divergencia respecto a BF16 a cambio de velocidad y tamaño.
+- Evaluación comparativa de cuantizaciones: los datos de divergencia KL y coincidencia de token top publicados permiten usar este repositorio como referencia para medir el impacto de esquemas de cuantización de bajo bit frente a Q8_0, Q6_K y Q4_K_M stock.
+- Razonamiento matemático asistido por herramienta: con los parámetros de muestreo recomendados para matemáticas, el modelo puede resolver problemas paso a paso e invocar una calculadora o intérprete como herramienta externa.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El autor unicamente reporta metricas de fidelidad de cuantizacion frente al modelo BF16, medidas sobre 40 fragmentos de 512 tokens de WikiText-2 (split de test) en CPU:
-
-| Fichero | Tamano | Pesos | Divergencia KL vs BF16 | Mismo token top que BF16 |
-|---|---:|---|---:|---:|
-| `LFM3-1.7B-Q6_K_ROCMFPX.gguf` (recomendado) | 1.43 GB | ROCmFPX 6 bits (`Q6_0_ROCMFPX` con escalas por tensor) | 0.0132 | 94.3% |
-| `LFM3-1.7B-Q8_0.gguf` | 1.85 GB | Q8_0 estandar de llama.cpp | 0.0031 | 97.2% |
-| `LFM3-1.7B-Q4_K_M.gguf` | 1.10 GB | Q4_K_M estandar de llama.cpp | 0.0922 | 85.5% |
-| Q6_K estandar (referencia, no subido) | 1.43 GB | Q6_K estandar de llama.cpp | 0.0160 | 93.8% |
-
-Segun el autor, el fichero ROCmFPX de 6 bits supera al Q6_K estandar con el mismo tamano de fichero. No se publico un fichero de 4 bits ROCmFPX porque sus tipos de 4 bits obtuvieron una divergencia KL entre 1.5 y 1.7 veces peor que Q4_K_M en este modelo.
+No se han publicado resultados de benchmarks en la información disponible (MMLU, HumanEval, GSM8K u otros). Los únicos datos cuantitativos son las métricas de fidelidad de cuantización frente a BF16 recogidas en la tabla de especificaciones técnicas (divergencia KL y porcentaje de coincidencia del token top sobre WikiText-2).
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 1.10 GB para Q4_K_M, 1.43 GB para el fichero ROCmFPX de 6 bits y 1.85 GB para Q8_0, a los que hay que sumar la memoria de la cache KV segun la longitud de contexto configurada.
-- GPU recomendadas: el repositorio apunta a GPUs AMD con soporte ROCm/HIP o Vulkan, incluyendo Strix Halo (objetivo `gfx1151`) y RX 7900 (objetivo `gfx1100`). No se documentan recomendaciones para NVIDIA.
-- GPU de consumo: por tamano, el modelo cabe en cualquier GPU de consumo con 4 GB o mas de VRAM, asi como en APUs con memoria unificada; el autor no ha verificado el funcionamiento en hardware AMD, solo en CPU.
-- Opciones de despliegue: `llama-server` del fork ROCmFPX con `-DGGML_VULKAN=ON` o `-DGGML_HIP=ON -DAMDGPU_TARGETS=gfx1151`. Los ficheros Q8_0 y Q4_K_M usan tipos estandar y cargan en cualquier build de llama.cpp con soporte de LFM3. El autor advierte que llama.cpp estandar, LM Studio, Ollama y otras builds de ROCmFPX pueden no cargar el fichero de 6 bits.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: aproximadamente 1,1 GB para el fichero de 4 bits, 1,5 GB para el de 6 bits y 1,9 GB para el de 8 bits, más el espacio de caché KV correspondiente al contexto configurado (no cuantificado en los datos disponibles).
+- GPU recomendadas: AMD Strix Halo (objetivo específico del fichero de 4 bits, con kernels FP4), RX 7900 (gfx1100) y, en general, GPUs AMD con soporte HIP/ROCm o Vulkan; el fork compila con -DGGML_VULKAN=ON o con -DGGML_HIP=ON -DAMDGPU_TARGETS=gfx1151 (gfx1100 para RX 7900).
+- Cabe en GPU consumer: sí, por tamaño de pesos; en GPUs AMD consumer es donde está pensado, aunque la model card advierte que los ficheros no se han probado aún en hardware AMD, solo en CPU.
+- Opciones de despliegue: llama-server del fork ROCmFPX (comando de ejemplo con -ngl 99 --jinja -c 32768). llama.cpp stock, LM Studio, Ollama y otras builds de ROCmFPX pueden no cargar estos ficheros.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato / disponibilidad |
-|---|---|---|---|---|
-| LFM3-1.7B-ROCmFPX (esta ficha) | 1.73B | 256K | LFM Open License v1.0 | GGUF, optimizado para fork ROCmFPX |
-| LiquidAI/LFM3-1.7B (modelo base) | 1.73B | 256K | LFM Open License v1.0 | safetensors / GGUF oficial |
-| Q6_K estandar de llama.cpp (misma base) | 1.73B | 256K | LFM Open License v1.0 | GGUF estandar, compatible con cualquier build |
+| Modelo | Parámetros | Contexto | Formato y cuantizaciones | Licencia | Notas |
+|---|---|---|---|---|---|
+| LFM3-1.7B-ROCmFPX (esta ficha) | 1.728.801.742 | hasta 256K | GGUF; ROCmFPX 8/6/4 bits y referencia stock | LFM Open License v1.0 | Requiere fork ROCmFPX; verificado en CPU, no en AMD |
+| LiquidAI/LFM3-1.7B (base) | 1.728.801.742 | hasta 256K | safetensors (formato del repo base, según información disponible) | LFM Open License v1.0 | Modelo original; misma arquitectura tri-híbrida |
+| Cuantizaciones stock de llama.cpp (Q8_0, Q6_K, Q4_K_M) | 1.728.801.742 | hasta 256K | GGUF | LFM Open License v1.0 | Compatibles con llama.cpp estándar; el 6 bits ROCmFPX supera a Q6_K stock en divergencia KL al mismo tamaño (0,0132 frente a 0,0160) |
 
-No se dispone de informacion sobre otros modelos comparables de la misma categoria en la documentacion proporcionada, por lo que no se incluyen alternativas adicionales.
+No se dispone de datos de benchmarks que permitan comparar rendimiento en tareas con modelos de otros autores.
 
 ## Limitaciones y advertencias
 
-- El autor indica que los ficheros se han verificado en CPU y no se han probado en hardware AMD; el rendimiento real en ROCm o Vulkan no esta validado.
-- El fichero de 6 bits recomendado requiere el fork ROCmFPX; llama.cpp estandar, LM Studio, Ollama y otras builds pueden no cargarlo.
-- No es una release oficial de Liquid AI; todos los creditos del modelo corresponden a sus autores.
-- La licencia LFM Open License v1.0 permite uso comercial solo a empresas con ingresos anuales inferiores a 10 millones de dolares; por encima de ese umbral no queda cubierto.
-- Riesgo de alucinacion inherente a un modelo de 1.7B de parametros; no se han publicado evaluaciones de fidelidad factual.
-- No hay informacion sobre sesgos conocidos ni sobre el reparto de idiomas del modelo base.
-- El contexto maximo de 256K puede no ser practico en hardware de consumo por el consumo de memoria de la cache KV; el ejemplo del autor limita a 32768 tokens.
-- No hay datos de benchmarks de tareas que permitan comparar su calidad frente a alternativas.
+- No es una release oficial de Liquid AI; el crédito del modelo corresponde a sus autores y la cuantización es un trabajo comunitario.
+- Los ficheros ROCmFPX (8 bits, 6 bits y 4 bits Strix) requieren el fork HarshaVardhan3002/ROCmFPX; llama.cpp stock, LM Studio, Ollama y otras builds pueden no cargarlos.
+- Según la model card, los ficheros se comprobaron en CPU y no se han probado en hardware AMD; el rendimiento real en GPU está sin verificar.
+- El fichero de 4 bits para Strix Halo diverge más de BF16 que el Q4_K_M stock en este modelo (KL 0,159 frente a 0,0922; coincidencia de token top 80,5% frente a 85,5%); para calidad debe preferirse el 6 u 8 bits.
+- Las cifras de los ficheros de 8 y 4 bits provienen de una ejecución previa con recetas casi idénticas y están pendientes de sustituirse por mediciones propias.
+- Licencia LFM Open License v1.0: el uso comercial solo está cubierto para empresas con ingresos anuales inferiores a 10 millones de dólares; por encima de ese umbral no queda cubierto. Es imprescindible leer el fichero LICENSE.
+- Riesgo de alucinación y sesgos: no hay información específica publicada para esta cuantización; debe evaluarse en el caso de uso concreto antes de producción.
+- Idiomas soportados: no disponible, lo que impide garantizar calidad multilingüe.
+- LFM3-Omni y LFM3-Audio no están soportados en este fork y requerirán trabajo adicional en llama.cpp upstream.
+- El contexto máximo de 256K exige memoria para la caché KV proporcional a la longitud configurada; el ejemplo de ejecución limita a 32.768 tokens.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Harsha001/LFM3-1.7B-ROCmFPX
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Fork ROCmFPX: https://github.com/HarshaVardhan3002/ROCmFPX
-- Pull request de llama.cpp con soporte LFM3: #31252 (referenciado en la model card)
+- Pull request de soporte LFM3 en llama.cpp: #31252 (referenciado en la model card)
+- Licencia LFM Open License v1.0: fichero LICENSE del repositorio de Hugging Face

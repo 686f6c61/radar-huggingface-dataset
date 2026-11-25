@@ -58,31 +58,5 @@
   "renamed_to": "Avifenesh/DictaLM-3.0-24B-NVFP4-healed",
   "renamed_at": "2026-11-15T09:05:52.216Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Actualités Tarn-et-Garonne - ladepeche.fr - La Dépêche",
-      "url": "https://www.ladepeche.fr/communes/tarn-et-garonne,82/",
-      "snippet": "1 day ago · Toute l'actu du Tarn-et-Garonne et de ses 195 communes. Le Tarn-et-Garonne est un département de la région …"
-    },
-    {
-      "title": "DictaLM 3.0 Collection - a dicta-il Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/dicta-il/dictalm-30-collection",
-      "snippet": "Dicta-LM 3.0 is a powerful open-weight collection of sovereign LLMs for Hebrew."
-    },
-    {
-      "title": "La Dépêche : Actualités en temps réel et l'info en continu",
-      "url": "https://www.ladepeche.fr/",
-      "snippet": "Toute l’actualité de Toulouse et sa région en direct, photos et vidéos avec La Dépêche du Midi. Retrouvez toutes les informations …"
-    },
-    {
-      "title": "dicta-il/DictaLM-3.0-24B-Base · Hugging Face",
-      "url": "https://huggingface.co/dicta-il/DictaLM-3.0-24B-Base",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Avis de décès 82 - Tarn-et-Garonne. Obsèques et nécrologie - La …",
-      "url": "https://avis-deces.ladepeche.fr/tarn-et-garonne-82/",
-      "snippet": "1 day ago · Avis de décès Tarn-et-Garonne - 82 : Consultez tous les derniers avis de décès du Tarn-et-Garonne en ligne avec La …"
-    }
-  ]
+  "sources": []
 }

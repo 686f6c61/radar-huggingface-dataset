@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "milliwattlabs/leokani-tts-1M",
+  "slug": "milliwattlabs-leokani-tts-1m",
+  "author": "milliwattlabs",
+  "url": "https://huggingface.co/milliwattlabs/leokani-tts-1M",
+  "created_at": "2026-11-25T03:06:49.000Z",
+  "updated_at": "2026-11-25T03:07:08.000Z",
+  "license": "milliwatt-labs-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "kokoro",
+    "cpu",
+    "esp32",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1137914,
+  "parameters_human": "1.1M",
+  "storage_bytes": 42780458,
+  "storage_human": "43 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

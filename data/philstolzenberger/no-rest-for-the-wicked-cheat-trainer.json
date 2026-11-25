@@ -1,0 +1,98 @@
+{
+  "schema": 2,
+  "id": "Philstolzenberger/no-rest-for-the-wicked-cheat-trainer",
+  "slug": "philstolzenberger-no-rest-for-the-wicked-cheat-trainer",
+  "author": "Philstolzenberger",
+  "url": "https://huggingface.co/Philstolzenberger/no-rest-for-the-wicked-cheat-trainer",
+  "created_at": "2026-11-24T21:38:07.000Z",
+  "updated_at": "2026-11-24T21:38:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id"
+  ],
+  "tags": [
+    "windows",
+    "windows-11",
+    "x64",
+    "portable",
+    "no-rest-for-the-wicked-cheat-trainer",
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LES 10 MEILLEURS restaurants près de Cathédrale Notre-Dame de …",
+      "url": "https://www.tripadvisor.fr/RestaurantsNear-g187147-d188679-Cathedrale_Notre_Dame_de_Paris-Paris_Ile_de_France.html",
+      "snippet": "Les lauréats Travellers' Choice (y compris « Best of the Best ») font partie des 10 % des meilleures pages listées sur Tripadvisor, …Read more"
+    },
+    {
+      "title": "Nos meilleures adresses de restaurants près de Notre-Dame de Paris",
+      "url": "https://guide.michelin.com/fr/fr/article/travel/nos-meilleures-adresses-restaurants-notre-dame-paris-michelin",
+      "snippet": "Dec 20, 2024 · Des bistros de quartier sans prétention aux restaurants gastronomiques qui valent le détour, voici 12 des meilleurs …Read more"
+    },
+    {
+      "title": "LES 10 MEILLEURS restaurants près de Le Notre Dame",
+      "url": "https://www.tripadvisor.fr/RestaurantsNear-g187147-d1014836-Le_Notre_Dame-Paris_Ile_de_France.html",
+      "snippet": "Les lauréats Travellers' Choice (y compris « Best of the Best ») font partie des 10 % des meilleures pages listées sur Tripadvisor, …Read more"
+    },
+    {
+      "title": "Les meilleurs restaus au pied de Notre Dame sur les iles de Paris",
+      "url": "https://mymarais.paris/manger/les-10-meilleurs-restaurants-au-pied-de-notre-dame-de-paris-sur-les-iles-saint-louis-et-de-la-cite/",
+      "snippet": "Et avec la Seine comme toile de fond, chaque repas dans les restaurants voisins de Notre Dame de Paris devient un instant hors du …Read more"
+    },
+    {
+      "title": "14 Locally Vetted Restaurants Notre Dame - The Tour Guy",
+      "url": "https://thetourguy.com/travel-blog/france/paris/notre-dame/best-places-to-eat-near-notre-dame-in-paris/",
+      "snippet": "Sep 24, 2026 · Our Parisian guides have put together a list of the best restaurants and eateries near Notre Dame, so you can leave …Read more"
+    }
+  ]
+}

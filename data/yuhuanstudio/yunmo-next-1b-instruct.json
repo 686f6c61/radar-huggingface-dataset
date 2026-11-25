@@ -1,0 +1,108 @@
+{
+  "schema": 2,
+  "id": "yuhuanstudio/Yunmo-Next-1B-Instruct",
+  "slug": "yuhuanstudio-yunmo-next-1b-instruct",
+  "author": "yuhuanstudio",
+  "url": "https://huggingface.co/yuhuanstudio/Yunmo-Next-1B-Instruct",
+  "created_at": "2026-10-10T18:20:47.000Z",
+  "updated_at": "2026-11-25T00:54:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "yunmo_next",
+    "text-generation",
+    "chat",
+    "traditional-chinese",
+    "hybrid-attention",
+    "kimi-delta-attention",
+    "linear-attention",
+    "research",
+    "conversational",
+    "custom_code",
+    "zh",
+    "en",
+    "dataset:a-m-team/AM-Thinking-v1-Distilled",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "dataset:guoxz/GX-Chinese-Instruct-1M-2508",
+    "dataset:opencsg/smoltalk-chinese",
+    "dataset:allenai/tulu-3-sft-mixture",
+    "dataset:Jackrong/Chinese-Qwen3-235B-Thinking-2507-Distill-100k",
+    "dataset:yuyijiong/context_qa_sum_qwen3_synthetic",
+    "dataset:a-m-team/AM-DeepSeek-R1-0528-Distilled",
+    "dataset:Congliu/Chinese-DeepSeek-R1-Distill-data-110k",
+    "dataset:Agent-Ark/Toucan-1.5M",
+    "dataset:HuggingFaceTB/smoltalk",
+    "dataset:nvidia/Nemotron-SFT-Competitive-Programming-v2",
+    "dataset:lianghsun/tw-instruct-500k",
+    "dataset:Crownelius/Complete-FABLE.5-traces-2M",
+    "dataset:twinkle-ai/tw-reasoning-instruct-50k",
+    "dataset:bigcode/self-oss-instruct-sc2-exec-filter-50k",
+    "dataset:Jackrong/glm-4.7-multiturn-CoT",
+    "base_model:yuhuanstudio/Yunmo-Next-1B-Base",
+    "base_model:finetune:yuhuanstudio/Yunmo-Next-1B-Base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": 1008058216,
+  "parameters_human": "1.01B",
+  "storage_bytes": 6048649074,
+  "storage_human": "6.0 GB",
+  "context_length": null,
+  "base_model": "yuhuanstudio/Yunmo-Next-1B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "IFEval",
+      "metric": "prompt_level_strict_acc",
+      "value": 44.7
+    },
+    {
+      "task": null,
+      "dataset": "GSM8K (chat, greedy)",
+      "metric": "acc",
+      "value": 13.9
+    },
+    {
+      "task": null,
+      "dataset": "HumanEval",
+      "metric": "pass@1",
+      "value": 15.9
+    },
+    {
+      "task": null,
+      "dataset": "MMLU (chat, 1,140-item subset)",
+      "metric": "acc",
+      "value": 29
+    },
+    {
+      "task": null,
+      "dataset": "TMMLU+ (chat, 990-item subset)",
+      "metric": "acc",
+      "value": 23
+    }
+  ],
+  "sources": []
+}

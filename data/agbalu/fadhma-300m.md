@@ -2,100 +2,97 @@
 
 ## Resumen
 
-Fadhma-300M es un modelo de reconocimiento automático del habla (ASR) especializado en cabilio (taqbaylit, código ISO `kab`), una lengua bereber del norte de Argelia escrita en alfabeto latino. Lo desarrolla el autor independiente `agbalu` y se publica con licencia Apache-2.0. El modelo resuelve un problema de nicho pero técnicamente relevante: dotar a una lengua de bajos recursos de un sistema de transcripción con una tasa de error medida sobre hablantes nunca vistos durante el entrenamiento, algo que, según el autor, no se había publicado antes para el cabilio.
+Fadhma-300M es un modelo acústico de reconocimiento automático del habla (ASR) especializado en cabilio (taqbaylit, código `kab_Latn`), una lengua bereber de la familia amazigh hablada principalmente en la región de Cabilia, Argelia. Lo desarrolla el usuario agbalu y se distribuye con licencia Apache 2.0. El modelo parte del backbone auto-supervisado `ylacombe/omniASR_W2V_300M_SSL` y se afina con 144,31 horas de audio en cabilio para producir transcripciones en ortografía latina canónica.
 
-Arquitectónicamente es un modelo CTC puro (wav2vec2) de 315,5 millones de parámetros, afinado a partir del codificador SSL de Meta `ylacombe/omniASR_W2V_300M_SSL`, que ya incluía `kab_Latn` entre las 1.668 lenguas de su preentrenamiento. La decisión de usar CTC en lugar de un encoder-decoder es deliberada: un decodificador con modelo de lenguaje interno puede alucinar frases fluidas que nadie pronunció, lo que contaminaría corpus lingüísticos con procedencia falsa. CTC puede equivocarse, pero no inventar oraciones.
+La arquitectura es un encoder tipo wav2vec2/Conformer de 24 capas con 315.479.720 parámetros totales (311.285.416 entrenables y 4.194.304 congelados en el frontend convolucional), cabeza CTC y vocabulario de 40 tokens que incluye los caracteres fonémicos propios del cabilio. No es un modelo generativo de texto: es un modelo acústico puro que emite logits por fotograma y requiere decodificación externa (greedy o beam search con un modelo de lenguaje de 5-gramas).
 
-Su relevancia actual reside en la combinación de un tamaño contenido (300M), licencia permisiva, salida en ortografía canónica cabilia y un resultado medido de forma honesta sobre un split disjunto por hablante de Common Voice 22.0 (15.003 clips, 888 hablantes). El modelo está pensado como pieza de una cadena más amplia de NLP para cabilio, alimentando modelos de texto del mismo autor.
+Su relevancia radica en que cubre una lengua de bajos recursos con pocos sistemas ASR públicos de calidad. Sobre el split de test de Common Voice 22.0 (15.003 clips, 888 hablantes no vistos, 16 horas) obtiene un 25,65 % de WER y un 8,01 % de CER con beam search y shallow fusion de 5-gramas, y un 30,12 % de WER y 8,53 % de CER con decodificación greedy. El modelo está pensado para integrarse en pipelines junto a herramientas del mismo autor para traducción y restauración de puntuación.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | wav2vec2 con cabeza CTC (encoder transformer con front-end convolucional) |
-| Parametros totales | 315.482.152 (311.287.848 entrenables, 4.194.304 congelados) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (ventana de audio fija de 30 s en el pipeline estándar; clips medios de 3,463 s) |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se documentan variantes GGUF/INT8) |
-| Idiomas soportados | cabilio (`kab`, Taqbaylit), alfabeto latino |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (repo de 1,4 GB) |
+| Arquitectura | Wav2Vec2/Conformer encoder + cabeza CTC (24 capas, hidden 1.024, FFN 4.096, 16 cabezas) |
+| Parametros totales | 315.479.720 (311.285.416 entrenables, 4.194.304 congelados) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo acústico por fotogramas; no aplica ventana de tokens) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | cabilio (`kab`, `kab_Latn`) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (repositorio de 1,4 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte del codificador SSL de Meta `ylacombe/omniASR_W2V_300M_SSL` y le añade una cabeza CTC. La red tiene 24 capas, dimensión oculta de 1.024 y 16 cabezas de atención (tamaño de cabeza 64), con feed-forward de 4.096 y activación GELU. El front-end consta de 7 convoluciones (kernels 10,3,3,3,3,2,2; strides 5,2,2,2,2,2,2), produciendo un frame cada 20 ms. El extractor convolucional de 7 capas (4.194.304 parámetros) permanece congelado durante el ajuste fino, de modo que la representación acústica preentrenada se preserva y solo se adapta la parte superior.
+El modelo es un encoder de 24 capas con dimensión oculta de 1.024 y feed-forward de 4.096 con activación GELU, 16 cabezas de atención de dimensión 64 y un frontend convolucional de 7 capas con strides 5,2,2,2,2,2,2 y campo receptivo de 20 ms por fotograma. Sobre el encoder se sitúa una cabeza CTC con vocabulario de 40 tokens: `[PAD]`, `[UNK]`, delimitador de palabra `|`, guion y 36 caracteres fonémicos del cabilio (incluyendo `ɣ ɛ ḥ ḍ ṣ ṭ ẓ ṛ č ǧ ţ`). La función de pérdida es CTC con `ctc_zero_infinity=True`.
 
-El vocabulario CTC tiene 40 clases: `[PAD]`, `[UNK]`, el separador de palabra `|`, 36 letras cabilias y el guion. La pérdida es CTC con `ctc_zero_infinity=True`. El entrenamiento se realizó sobre 144,31 horas de habla leída, con transcripciones reparadas previamente para que la salida quede en ortografía canónica cabilia. La decodificación se complementa con un modelo de lenguaje de 5-gramas construido a partir de tres millones de frases cabilias normalizadas, aplicado mediante shallow fusion. No se documenta en la información disponible el uso de RLHF, DPO ni otras etapas de alineación, algo esperable en un modelo ASR.
+El entrenamiento se realizó sobre Mozilla Common Voice 22.0 en cabilio (licencia CC-0) con 144,31 horas de audio, optimizador AdamW con learning rate máximo de 1e-4 y betas (0,9, 0,98). Para la decodificación se entrena un modelo de lenguaje KenLM de 5-gramas sobre 3,2 millones de frases, aplicado mediante shallow fusion. El modelo base es el backbone auto-supervisado `ylacombe/omniASR_W2V_300M_SSL`, lo que permite aprovechar representaciones preentrenadas multilingües en lugar de partir de cero en una lengua de bajos recursos.
 
 ## Capacidades
 
-- Transcripción de voz a texto en cabilio, con salida en ortografía latina canónica.
-- Decodificación CTC greedy (sin modelo de lenguaje) y beam search con shallow fusion de 5-gramas.
-- Manejo de las particularidades ortográficas del cabilio, incluidos pronombres objeto y partículas direccionales unidos con guion (`-d`, `-n`, `-awen`, `-iw`).
-- Salida directamente consumible por modelos de texto del mismo autor (Amrouche-1.3B, Masinissa-31M) sin paso de reparación ortográfica.
-- No soporta tool calling, function calling, razonamiento multi-paso ni capacidades de agente: es un modelo puramente acústico.
-- No tiene capacidades de visión, audio generativo, thinking mode ni traducción.
-- Monolingüe: no transcribe ninguna lengua distinta del cabilio.
+- Transcripción automática de voz en cabilio a 16 kHz, con salida en ortografía latina canónica (incluye caracteres especiales bereberes sin transliterar).
+- Decodificación greedy CTC (solo acústica) y beam search con shallow fusion de un modelo de lenguaje de 5-gramas.
+- Independencia de hablante: el conjunto de test contiene 888 hablantes sin solapamiento con train ni validation.
+- Integración en pipelines posteriores: la salida puede alimentar traducción (`Amrouche-1.3B`) o restauración de puntuación y mayúsculas (`Belaid-31M`).
+- No soporta tool calling, agentes, razonamiento multi-paso ni generación de texto libre: es exclusivamente un modelo acústico de ASR.
+- No dispone de capacidades de visión, audio generativo ni modo de razonamiento.
 
 ## Casos de uso
 
-- Transcripción de notas de voz: el modelo convierte mensajes de audio en cabilio a texto canónico, adecuado para aplicaciones de mensajería o asistentes locales donde se requiere latencia baja y un modelo de 300M desplegable en CPU o GPU modesta.
-- Archivado de historia oral: entrevistas y grabaciones de tradición oral cabilia pueden transcribirse en lote para su indexación y búsqueda; la naturaleza CTC evita que se inserten frases inventadas en el archivo.
-- Subtitulado de emisiones de radio o televisión en cabilio: con filtrado previo de voz (VAD) para separar música y ruido, el modelo genera transcripciones alineadas a frames que pueden servir de base para subtítulos revisados por humanos.
-- Generación de corpus para NLP de bajos recursos: la transcripción de las 571 horas de habla validada del proyecto convierte audio en texto, alimentando el entrenamiento de modelos de lenguaje cabilios como Amrouche-1.3B o Masinissa-31M sin necesidad de reparación ortográfica.
-- Entrada de voz para asistentes y teclados predictivos en cabilio: integrado en el pipeline ASR de una aplicación, permite dictado y búsqueda por voz en una lengua que los sistemas comerciales no cubren.
-- Investigación lingüística y fonética: la alineación por frames propia de CTC facilita el análisis de correspondencias entre señal acústica y grafemas, útil para estudiar fenómenos ortográficos como la unión con guiones.
-- Preprocesado para traducción o análisis de sentimiento: las transcripciones canónicas pueden pasar directamente a un modelo de texto para tareas posteriores de traducción cabilio-español o clasificación de contenido.
+- Transcripción de notas de voz en cabilio: el modelo convierte grabaciones de audio de 16 kHz en texto con ortografía canónica, adecuado para aplicaciones de mensajería o archivo personal donde no se requiere revisión humana inmediata.
+- Digitalización de archivos sonoros y patrimonio oral: permite transcribir entrevistas, cuentos y grabaciones etnográficas en cabilio para su indexación y búsqueda textual, aprovechando la independencia de hablante verificada sobre 888 hablantes.
+- Subtitulado y accesibilidad: generación de subtítulos para vídeo en cabilio, con la advertencia de que la puntuación y mayúsculas deben restaurarse con un modelo posterior como `Belaid-31M`.
+- Preprocesado para traducción automática: la transcripción sirve de entrada al modelo `Amrouche-1.3B` para pipelines de voz a texto a traducción, cubriendo un par de lenguas poco representado en sistemas comerciales.
+- Investigación lingüística y corpus: generación de transcripciones a escala para estudios fonéticos y morfológicos del cabilio, con la salvedad de que los clíticos unidos por guion pueden introducir discrepancias de segmentación.
+- Sistemas de dictado y asistencia por voz en entornos de bajos recursos: despliegue en servidores modestos por el tamaño de 315 M de parámetros y la licencia Apache 2.0, que permite uso comercial sin restricciones adicionales.
+- Análisis de llamadas o encuestas en cabilio: transcripción por lotes de audio telefónico previamente realzado, con revisión humana en contextos sensibles.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor sobre el split de test de Common Voice 22.0 en cabilio (15.003 clips, 16,00 horas, 888 hablantes no vistos en otros splits). Ningún resultado está verificado por un tercero (`verified: false`).
+Resultados declarados por el autor sobre el split de test de Common Voice 22.0 en cabilio (15.003 clips, 16,00 horas, 888 hablantes no vistos). No verificados de forma independiente.
 
-| Decodificacion | CER (%) | WER (%) |
+| Metodo de decodificacion | CER (%) | WER (%) |
 |---|---|---|
-| Beam search con shallow fusion de 5-gramas | 8,01 | 25,65 |
-| CTC greedy, sin modelo de lenguaje | 8,53 | 30,12 |
+| Beam search + shallow fusion 5-gramas | 8,01 | 25,65 |
+| Greedy CTC (solo acustica) | 8,53 | 30,12 |
 
-El modelo de lenguaje aporta 4,5 puntos de WER y 0,5 de CER, lo que refleja su función: prefiere grafías que sean palabras reales, pero no corrige sonidos mal oídos. La divergencia entre CER y WER se explica estructuralmente por la ortografía cabilia: un guion escrito como espacio cuenta como un error de carácter y dos de palabra.
-
-El autor no incluye tabla comparativa deliberadamente. La cifra de CER 6,2 que circula para cabilio corresponde a un modelo de 7B con decodificador LLM (Omnilingual ASR de Meta), 23 veces más parámetros y una arquitectura distinta. La comparación honesta sería `facebook/omniASR-CTC-300M`, del mismo tamaño y licencia, pero nadie lo ha evaluado en cabilio.
+El uso del modelo de lenguaje de 5-gramas reduce el WER en 4,47 puntos porcentuales y el CER en 0,52 puntos. El autor señala que parte del error a nivel de palabra proviene de discrepancias en la hyphenación de clíticos pronominales y direccionales (`-d`, `-awen`, `-iw`), mientras la precisión a nivel de carácter se mantiene por encima del 91,9 %.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1,3 GB en FP32 (315M parámetros), alrededor de 0,65 GB en FP16 y menos de 0,4 GB en INT8, sin contar activaciones y buffers de audio.
-- Cabe holgadamente en cualquier GPU consumer: RTX 3060, RTX 4060, RTX 4090, e incluso en GPUs integradas o CPU para uso por lotes.
-- GPU recomendadas para producción de alto throughput: A100, H100 o L4 para procesar grandes volúmenes de audio en paralelo; para uso individual basta una GPU modesta.
-- Opciones de despliegue: el pipeline `automatic-speech-recognition` de Transformers; vLLM no aplica a modelos CTC de este tipo; llama.cpp y Ollama no ofrecen soporte estándar para wav2vec2 CTC; TGI no está orientado a ASR. Para decodificación con shallow fusion de 5-gramas se requiere un harness externo tipo pyctcdecode con el modelo de lenguaje.
-- Latencia y throughput: no disponibles en la información proporcionada. Con clips medios de 3,463 s y una ventana fija de 30 s, el pipeline estándar procesa audio más corto que la ventana, lo que el autor señala como ineficiencia de cómputo (solo el 11,5 % de la ventana es señal en el caso medio).
+- VRAM estimada para inferencia en fp32: aproximadamente 1,3 GB solo para pesos (315 M de parámetros), más activaciones y buffers de decodificación; en la práctica, entre 2 y 4 GB según longitud de audio y batch.
+- En bfloat16 o float16 los pesos ocupan unos 0,65 GB, por lo que cabe holgadamente en cualquier GPU consumer con 6 GB o más (RTX 3060, RTX 4060, RTX 4090).
+- GPU recomendadas para producción: A100, H100 o L4 para procesamiento por lotes a gran escala; RTX 4090 o RTX 3090 para despliegues de baja latencia.
+- Cabe en CPU para inferencia offline, aunque con mayor latencia; el modelo es pequeño para estándares actuales.
+- Opciones de despliegue: `transformers` con `Wav2Vec2ForCTC` y `AutoProcessor`; `pyctcdecode` para beam search con KenLM; servidores compatibles con modelos de Hugging Face (TGI no está orientado a CTC, por lo que se recomienda un servicio propio con FastAPI o similar).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto/ventana | CER cabilio | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Fadhma-300M | 315M | ventana fija 30 s | 8,01 (beam + 5-gramas) | Apache-2.0 | Hugging Face |
-| facebook/omniASR-CTC-300M | ~300M | ventana fija 30 s | no evaluado en cabilio | Apache-2.0 | Hugging Face |
-| Omnilingual ASR 7B (LLM decoder) | ~7B | no disponible | 6,2 (reportado en tabla per-language) | no disponible | no disponible |
-| Whisper (referencia del autor) | no disponible | ventana fija 30 s | refutado por medición: 6 de 10 letras cabilias sin token, fertilidad 3,3600 tokens/palabra | no disponible | no disponible |
+No se dispone de datos de benchmarks de modelos comparables en la información proporcionada. A continuación se indican alternativas de categoría (ASR de bajos recursos basadas en wav2vec2/CTC) sin datos numéricos contrastados:
 
-La comparación directa más justa es con `facebook/omniASR-CTC-300M`: mismo tamaño, misma licencia y misma familia arquitectónica, pero sin resultados publicados en cabilio. El modelo de 7B de Meta logra mejor CER, pero con 23 veces más parámetros y un decodificador LLM que el autor descarta por riesgo de alucinación en la generación de corpus.
+| Modelo | Parametros | Contexto/idioma | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Fadhma-300M | 315 M | cabilio (`kab`) | Apache 2.0 | Hugging Face |
+| Backbone `ylacombe/omniASR_W2V_300M_SSL` | ~300 M | multilingüe auto-supervisado | no disponible en la informacion | Hugging Face |
+| wav2vec2-base fine-tuned en lenguas de bajos recursos | ~95 M | variable | variable | Hugging Face |
+
+Los datos de rendimiento de las alternativas no están disponibles en la información proporcionada, por lo que no se establece comparación numérica.
 
 ## Limitaciones y advertencias
 
-- Monolingüe: no es adecuado para ninguna lengua distinta del cabilio.
-- Sensible a ruido: el autor advierte que no debe usarse con audio con música de fondo intensa o ruido sin un filtrado previo de actividad vocal (VAD).
-- Sin evaluación de seguridad de ningún tipo: no se ha realizado ningún análisis de sesgos, robustez adversarial ni comportamiento en dominios sensibles.
-- Riesgo de alucinación bajo pero no nulo: CTC puede equivocarse en la transcripción, aunque no puede inventar oraciones completas como un decoder autorregresivo. Aun así, las transcripciones en contextos médicos, legales o de seguridad requieren revisión humana.
-- Divergencia CER/WER estructural: la ortografía cabilia con guiones infla el WER; un 25,65 % de WER con 8,01 % de CER debe interpretarse con cautela según la tarea.
-- Resultados no verificados: las métricas del model-index están marcadas como `verified: false` y proceden del propio autor.
-- Dependencia de un modelo de lenguaje externo para el mejor resultado: la decodificación greedy degrada el WER a 30,12 %, por lo que un despliegue sin el 5-gramas pierde calidad.
-- Licencia Apache-2.0: permite uso comercial, pero el usuario debe asumir la ausencia de garantías y de evaluaciones de seguridad.
-- Sin soporte documentado para cuantización GGUF/INT8 ni para motores de inferencia de alto throughput como vLLM, lo que limita opciones de despliegue estándar.
+- Sesgos conocidos: no documentados por el autor; al entrenarse sobre Common Voice, puede heredar sesgos de representación de hablantes, edad, género y variantes dialectales del cabilio.
+- Riesgo de alucinación: el modelo CTC no genera texto libre, pero puede producir transcripciones incorrectas o inventar secuencias plausibles en audio ruidoso o con acentos no representados.
+- Limitaciones de idioma: solo cabilio; no soporta otras variedades bereberes ni árabe argelino.
+- Calidad en audio ruidoso: el autor declara fuera de alcance el audio con alto ruido sin realce previo de la voz.
+- Uso clínico, legal o de emergencias: fuera de alcance sin revisión humana.
+- Segmentación de clíticos: las discrepancias de hyphenación inflan el WER; conviene normalizar antes de comparar métricas.
+- Licencia Apache 2.0: permite uso comercial, pero se recomienda revisar las condiciones de los datos de Common Voice (CC-0) y del modelo base.
+- No verificado: los resultados de benchmarks son declarados por el autor y no han sido verificados de forma independiente.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/agbalu/Fadhma-300M
-- Modelo base (codificador SSL de Meta): https://huggingface.co/ylacombe/omniASR_W2V_300M_SSL
-- Modelo de texto del mismo autor (Amrouche-1.3B): https://huggingface.co/agbalu/Amrouche-1.3B
-- Modelo de texto del mismo autor (Masinissa-31M): https://huggingface.co/agbalu/Masinissa-31M
-- Comparación directa sugerida por el autor: https://huggingface.co/facebook/omniASR-CTC-300M
-- Dataset de evaluación (Common Voice 22.0): https://huggingface.co/datasets/fsicoli/common_voice_22_0
+- Modelo base: https://huggingface.co/ylacombe/omniASR_W2V_300M_SSL
+- Modelo de traducción relacionado: https://huggingface.co/agbalu/Amrouche-1.3B
+- Modelo de puntuación y mayúsculas relacionado: https://huggingface.co/agbalu/Belaid-31M
+- Dataset de evaluación: https://huggingface.co/datasets/fsicoli/common_voice_22_0

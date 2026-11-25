@@ -2,90 +2,86 @@
 
 ## Resumen
 
-Wan 2.2 TI2V-5B Turbo para chips gráficos de teléfono es un empaquetado del modelo de difusión de vídeo Wan2.2-TI2V-5B-Turbo, una destilación a 4 pasos de Wan 2.2 TI2V-5B (5.076.839.616 parámetros), adaptado para ejecutarse en la GPU integrada de un teléfono mediante OpenCL estándar a través del motor Anima GPU Engine. Lo publica el usuario sebekblessing en Hugging Face y no entrena un modelo nuevo: reempaqueta los pesos del modelo base en un formato propietario del motor (no compatible con llama.cpp ni ComfyUI) para hacer viable la generación de vídeo imagen-a-vídeo en hardware móvil.
+Wan 2.2 TI2V-5B Turbo para chips gráficos de teléfono es un empaquetado especializado del modelo de generación de vídeo a partir de imagen (image-to-video) Wan 2.2 TI2V-5B, en su variante Turbo destilada a 4 pasos. Lo desarrolla el usuario sebekblessing a partir del trabajo original de Wan-AI (Alibaba) y de la destilación de quanhaol, y su propósito no es servir como modelo de propósito general, sino como artefacto de despliegue para el motor Anima GPU Engine, que ejecuta la inferencia sobre la GPU integrada de un teléfono mediante OpenCL estándar.
 
-El paquete es parcial e incompleto por diseño. Solo incluye el modelo de dibujo (el denoiser de 30 bloques) cuantizado a 8 bits en un único fichero GGUF de 5,4 GB, junto con los niveles de ruido (`sigmas.txt`). El codificador de texto umT5-XXL, el codificador de imagen inicial y el decodificador de fotogramas no están incluidos en este repositorio; el autor remite a otro paquete (`wan22-qnn-8elite`) para el lector de prompts, que se ejecuta en la CPU. Según la model card, la aplicación Anima todavía no lo utiliza y el conjunto no es autosuficiente en un teléfono.
+El repositorio no contiene pesos en formato convencional (safetensors o GGUF de llama.cpp), sino ficheros GGUF con un diseño propio del motor: el modelo de difusión de 30 bloques cuantizado a 8 bits, el codificador VAE de Wan 2.2, un decodificador ligero LightTAE y el codificador de texto umT5-XXL en 4 bits (Q4_K_M de city96). El pipeline declarado es image-to-video y el tamaño total del repositorio es de 14,3 GB.
 
-Su relevancia es acotada pero concreta: demuestra una vía para llevar difusión de vídeo de 5B parámetros a GPUs móviles con OpenCL, un terreno dominado por soluciones cerradas o específicas de NPU. Para desarrolladores que trabajan en inferencia on-device, es una referencia técnica de empaquetado y cuantización más que un modelo listo para producción.
+Es relevante ahora porque demuestra una vía para llevar generación de vídeo de 5B parámetros a hardware móvil sin depender de un acelerador neuronal propietario, usando solo OpenCL. La ficha debe leerse con cautela: la información pública es escasa, no hay benchmarks ni especificaciones formales de contexto o idiomas, y la licencia del modelo base Turbo no está declarada explícitamente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo de difusión de vídeo (denoiser de 30 bloques) derivado de Wan 2.2 TI2V-5B; detalles internos de la arquitectura no disponibles |
-| Parametros totales | 5.076.839.616 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (modelo de difusión condicionado por prompt, no por ventana de tokens) |
-| Tipos de cuantizacion | 8 bits (fichero `wan_q8.gguf`) |
-| Idiomas soportados | No disponible |
-| Licencia | `other` / `see-notice` (ver NOTICE); el modelo base Wan 2.2 TI2V-5B es Apache 2.0, la versión Turbo no declara licencia |
+| Arquitectura | Modelo de difusion (Wan 2.2 TI2V-5B) con backbone de 30 bloques; empaquetado para Anima GPU Engine |
+| Parametros totales | 9.923.532 (dato del safetensors del repo; el modelo base se denomina 5B, discrepancia no aclarada en la informacion disponible) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo de difusion, no aplica ventana de contexto de texto) |
+| Tipos de cuantizacion | Modelo de difusion a 8 bits (`wan_q8.gguf`); codificador de texto umT5-XXL a 4 bits (Q4_K_M de city96); VAE y decodificador LightTAE en el layout del motor |
+| Idiomas soportados | no disponible (el codificador de texto es umT5-XXL, multilingue, pero no se declaran idiomas) |
+| Licencia | other / see-notice (Wan 2.2 TI2V-5B es Apache 2.0; la version Turbo no declara licencia) |
 | Formato de pesos | GGUF con layout propio del motor Anima (no compatible con llama.cpp ni ComfyUI) |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es Wan2.2-TI2V-5B-Turbo, una destilación a 4 pasos de Wan 2.2 TI2V-5B, un modelo de difusión para generación de vídeo a partir de imagen y texto. El repositorio no aporta detalles sobre la arquitectura interna (tipo de bloques, mecanismos de atención, dimensiones ocultas) ni sobre los datos de entrenamiento del modelo base: número de tokens, composición del dataset, uso de RLHF o DPO. Esa información no está disponible en la documentación proporcionada.
+El modelo subyacente es Wan 2.2 TI2V-5B, un modelo de difusion para generacion de video a partir de imagen. La variante Turbo es una destilacion a 4 pasos de muestreo: cada paso predice el clip limpio y lo vuelve a ruidificar, segun los 4 niveles de ruido definidos en `sigmas.txt`. El empaquetado de sebekblessing trocea el backbone en 30 bloques de 8 bits que el motor lee uno a uno durante el dibujado, lo que reduce el pico de memoria en el dispositivo.
 
-La innovación técnica de este paquete no está en el entrenamiento sino en el despliegue: los pesos del denoiser se reempaquetan en un GGUF de layout propio del Anima GPU Engine y se cuantizan a 8 bits para que quepan y se ejecuten en la GPU integrada de un teléfono mediante OpenCL estándar. La destilación a 4 pasos del modelo Turbo reduce el coste de muestreo, lo que hace viable la inferencia en hardware de baja potencia. El autor indica que la codificación de texto (umT5-XXL) se ejecuta en el procesador, mientras que el codificador de imagen inicial y el decodificador de fotogramas carecen todavía de versión para GPU móvil.
+El pipeline descrito en la model card es: el lector de prompts (umT5-XXL en 4 bits) se ejecuta en el procesador con llama.cpp; la imagen inicial pasa por el codificador VAE completo de Wan 2.2 (cada filtro causal 3D recortado a su ultima rebanada temporal); se realizan 4 pasos de dibujado manteniendo la imagen como primer fotograma; y cada fotograma se decodifica con el decodificador pequeno LightTAE para Wan 2.2 (`lighttaew2_2`). No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens ni si hubo RLHF o DPO en la informacion proporcionada.
 
 ## Capacidades
 
-- Generación de vídeo a partir de imagen (image-to-video) condicionada por texto, mediante un muestreo destilado de 4 pasos.
-- Generación de vídeo a partir de texto (TI2V), siempre que se disponga del codificador de texto y del decodificador de fotogramas, no incluidos en este repositorio.
-- Ejecución en GPU móvil con OpenCL estándar a través del Anima GPU Engine.
-- Cuantización a 8 bits para reducir la huella de memoria del denoiser.
-- No soporta tool calling ni function calling: es un modelo de difusión, no un modelo de lenguaje.
-- No soporta agentes ni razonamiento multi-paso.
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- No dispone de modo thinking, visión general ni audio; su única modalidad de salida es vídeo.
+- Generacion de video a partir de una imagen inicial (image-to-video) con 4 pasos de muestreo.
+- Ejecucion sobre GPU integrada de telefono mediante OpenCL estandar, sin requerir acelerador neuronal propietario.
+- Codificacion de prompts de texto mediante umT5-XXL cuantizado a 4 bits, ejecutado en CPU con llama.cpp.
+- Decodificacion rapida de fotogramas mediante LightTAE, orientada a reducir el coste de decodificacion en movil.
+- Compatibilidad declarada con la app Anima y su gestion de modelos; en Snapdragon 8 Elite se recomienda la variante `wan22-qnn-8elite`.
+- No se declaran capacidades de tool calling, agentes, razonamiento multi-paso ni vision general; es un modelo generativo de video, no un LLM.
 
 ## Casos de uso
 
-- Prototipado de vídeo generativo on-device: usar el denoiser empaquetado junto con el lector umT5-XXL y los componentes restantes para experimentar con image-to-video en un teléfono con OpenCL, evaluando latencia y calidad en hardware real.
-- Investigación en inferencia móvil: servir de referencia para estudiar cómo se empaquetan y cuantizan pesos de difusión de 5B parámetros para GPUs integradas, comparando el layout del motor Anima con alternativas como GGUF de llama.cpp.
-- Integración en la aplicación Anima: cuando el autor complete el codificador de imagen y el decodificador de fotogramas, este paquete será el componente de dibujo de una app de generación de vídeo en teléfonos sin chip Snapdragon AI.
-- Evaluación de destilación a 4 pasos: medir la pérdida de calidad frente al modelo Wan 2.2 TI2V-5B completo en tareas de animación de imágenes fijas, útil para decidir si la destilación es aceptable en un producto.
-- Docencia y divulgación: ilustrar el pipeline completo de un modelo de difusión de vídeo (codificador de texto, codificador de imagen, denoiser y decodificador) usando un caso real de despliegue móvil.
-- Benchmarking de motores OpenCL: comparar el rendimiento del Anima GPU Engine con otros backends móviles (Vulkan, Metal, QNN) sobre el mismo denoiser de 5B parámetros.
+- Generacion de clips cortos en el propio telefono: el modelo permite crear video a partir de una foto sin subirla a la nube, usando la GPU del dispositivo y los 4 pasos de la destilacion Turbo.
+- Prototipado de animaciones para redes sociales: a partir de una imagen fija se obtiene un clip animado en el dispositivo, adecuado para iterar rapidamente sobre ideas antes de renderizar en servidor.
+- Demos y aplicaciones educativas de difusion en movil: sirve para mostrar el funcionamiento de un pipeline image-to-video completo (texto, VAE, difusion, decodificacion) sobre OpenCL.
+- Integracion en la app Anima: el manifest y los ficheros estan pensados para que la aplicacion los descargue y ejecute cuando el usuario selecciona la GPU para Wan.
+- Investigacion sobre cuantizacion y empaquetado de modelos de difusion: los scripts `build/pack_wan.py`, `build/pack_wanenc.py` y `build/pack_taehv.py` documentan el proceso de conversion a layout propio.
+- Evaluacion de motores de inferencia movil: permite comparar el rendimiento de OpenCL frente a aceleradores neuronales en tareas de generacion de video.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el fichero de pesos ocupa 5,4 GB en cuantización de 8 bits; a ello hay que sumar la memoria de activaciones y del decodificador de fotogramas, no cuantificada en la información disponible.
-- GPU recomendadas: GPU integrada de teléfono con soporte de OpenCL estándar. En dispositivos con Snapdragon 8 Elite, el autor remite al paquete `wan22-qnn-8elite`, específico para la NPU.
-- ¿Cabe en GPU de consumo? El paquete está pensado para GPUs móviles, no para GPU de escritorio; no se proporcionan requisitos para A100, H100 ni RTX 4090.
-- Opciones de despliegue: Anima GPU Engine (OpenCL). No es compatible con llama.cpp, ComfyUI, vLLM, TGI ni Ollama, según advierte el autor.
+- Dispositivo objetivo: telefonos con GPU integrada compatible con OpenCL estandar; la app Anima da soporte a telefonos sin chip Snapdragon AI.
+- En Snapdragon 8 Elite se recomienda la variante `wan22-qnn-8elite` en lugar de este empaquetado.
+- VRAM estimada: no disponible de forma explicita; el diseno lee un bloque de 8 bits a la vez para limitar el pico de memoria, y el repo completo ocupa 14,3 GB.
+- GPU de escritorio recomendadas: no disponible (el empaquetado esta orientado a movil, no a A100, H100 o RTX 4090).
+- Despliegue: Anima GPU Engine con OpenCL; el lector de prompts usa llama.cpp en CPU. No es compatible con vLLM, TGI, Ollama ni ComfyUI segun la model card.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wan22-gpu (este modelo) | 5.076.839.616 | No aplica | GGUF con layout Anima | `see-notice` | Hugging Face, solo denoiser |
-| quanhaol/Wan2.2-TI2V-5B-Turbo (base) | No disponible | No aplica | Pesos originales | No declarada | Hugging Face |
-| Wan-AI/Wan2.2-TI2V-5B | No disponible | No aplica | Pesos originales | Apache 2.0 | Hugging Face |
-| wan22-qnn-8elite | No disponible | No aplica | GGUF para QNN | No disponible | Hugging Face |
+| wan22-gpu (este) | 9.923.532 segun safetensors; base denominada 5B | no aplica | Image-to-video empaquetado para movil (OpenCL) | other / see-notice | Hugging Face, 1325 descargas |
+| quanhaol/Wan2.2-TI2V-5B-Turbo | 5B (denominacion) | no aplica | Destilacion a 4 pasos del base | no declarada en su pagina | Hugging Face |
+| Wan-AI/Wan2.2-TI2V-5B | 5B (denominacion) | no aplica | Image-to-video original | Apache 2.0 | Hugging Face |
 
-La comparación se limita al linaje del propio modelo, ya que no se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas de la misma categoría (difusión de vídeo en móvil) en la información proporcionada.
+No se dispone de datos de rendimiento comparativo en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Paquete incompleto: solo incluye el denoiser y los niveles de ruido; faltan el codificador de imagen inicial y el decodificador de fotogramas con versión para GPU móvil, por lo que no es autosuficiente en un teléfono.
-- No utilizado todavía por la aplicación Anima, según la propia model card.
-- Formato propietario: el GGUF usa el layout del Anima GPU Engine y no es compatible con llama.cpp ni ComfyUI, lo que impide reutilizarlo en ecosistemas estándar.
-- Licencia ambigua: el modelo base Wan 2.2 TI2V-5B es Apache 2.0, pero la versión Turbo no declara licencia y este paquete usa `see-notice`; es imprescindible revisar el fichero NOTICE antes de cualquier uso comercial.
-- Sin datos de benchmarks, sesgos, alucinación ni calidad de generación: no se han publicado evaluaciones.
-- Idiomas soportados no disponibles, lo que impide garantizar calidad en prompts en castellano.
-- Sin soporte de tool calling, agentes ni razonamiento multi-paso: no es un modelo de lenguaje.
-- Riesgo de obsolescencia: depende de un motor externo (Anima GPU Engine) y de un modelo base cuya página no declara licencia.
+- Licencia ambigua: el modelo base Wan 2.2 TI2V-5B es Apache 2.0, pero la version Turbo no declara licencia y este empaquetado usa `other` con un NOTICE; verificar antes de cualquier uso comercial.
+- Los ficheros GGUF usan un layout propio del motor Anima y no son cargables en llama.cpp ni ComfyUI.
+- No hay informacion sobre sesgos, alucinacion visual ni calidad de los clips generados.
+- El rendimiento depende del soporte OpenCL del telefono; en dispositivos con chip Snapdragon AI se recomienda otra variante.
+- No se declaran idiomas soportados ni evaluacion multilingue del codificador de texto.
+- La discrepancia entre el dato de parametros del safetensors (9,9 millones) y la denominacion 5B del modelo base no esta aclarada en la informacion disponible.
+- Uso previsto limitado a movil; no hay garantias de funcionamiento en GPU de escritorio ni en servidores.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/sebekblessing/wan22-gpu
-- Fichero NOTICE: https://huggingface.co/sebekblessing/wan22-gpu/blob/main/NOTICE
+- Repositorio Hugging Face: https://huggingface.co/sebekblessing/wan22-gpu
+- Aviso de licencia: https://huggingface.co/sebekblessing/wan22-gpu/blob/main/NOTICE
 - Modelo base Turbo: https://huggingface.co/quanhaol/Wan2.2-TI2V-5B-Turbo
 - Modelo original Wan 2.2 TI2V-5B: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Motor Anima GPU Engine: https://github.com/adiirfan/anima-gpu-engine
-- Paquete para Snapdragon 8 Elite: https://huggingface.co/sebekblessing/wan22-qnn-8elite

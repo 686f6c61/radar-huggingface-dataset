@@ -1,103 +1,81 @@
 # rSalone/Qwen3.8-Flash-Next-GSQ-RCO-uncensored-L6-41-GGUF
 
 ## Resumen
+Qwen3.8-Flash-Next-GSQ-RCO-uncensored-L6-41-GGUF es una variante "abliterated" (sin mecanismos de rechazo) del modelo Qwen3.8-Flash-Next, publicada por el usuario rSalone sobre el trabajo de cuantización de ISTA-DASLab. El modelo base es un Qwen3.8-Flash-Next cuantizado en formato GGUF IQ3_S, un transformer de gran tamano con 176.943.899.520 parametros totales (aproximadamente 177 mil millones) y un repositorio de 84,5 GB repartido en dos shards. La intervencion consiste en eliminar la "direccion de rechazo" (refusal direction) unicamente en las capas 6 a 41, en lugar de en las 45 capas del release anterior (q8g), con el objetivo de reducir la divergencia respecto al modelo original manteniendo el mismo nivel de cumplimiento de peticiones daninas.
 
-L6-41 es una variante "uncensored" (abliterated) del modelo Qwen3.8-Flash-Next, publicada por el usuario rSalone en Hugging Face. Se construye a partir del archivo GGUF cuantizado IQ3_S de ISTA-DASLab (GSQ-RCO), al que se le sustituyen los tensores de atención por versiones Q8_0 derivadas de los pesos BF16 oficiales y se le elimina la dirección de rechazo en las capas 6 a 41. El resultado es un modelo conversacional que reduce drásticamente las negativas a peticiones dañinas: en HarmBench cumple 207 de 240 prompts, frente a 5 del archivo sin editar.
+La relevancia de esta ficha es doble. Por un lado, documenta una tecnica de edicion de pesos (abliteration selectiva por capas) que busca minimizar el impacto en la distribucion de salida, medida mediante divergencia KL. Por otro, ilustra un caso practico de despliegue de un modelo de ~177B parametros en hardware de consumo (una RTX 5090 de 32 GB) mediante el motor de inferencia Strata, que combina offloading de expertos y cache KV en int8. Es, por tanto, un ejemplo de ingenieria de cuantizacion agresiva y de motores especializados mas que un modelo de proposito general listo para produccion.
 
-El modelo conserva la arquitectura híbrida subyacente de Qwen3.8-Flash-Next, con 48 capas que alternan atención lineal (36 capas) y atención completa (12 capas), y un bloque de expertos enrutados con 512 expertos por capa más un experto compartido. Los pesos totales ascienden a 176.943.899.520 parámetros según los safetensors del modelo base, distribuidos en un repositorio GGUF de 84,5 GB.
+El modelo se distribuye bajo licencia qwen-community-1.0 (etiquetada como "other" en Hugging Face) y esta pensado para ejecutarse exclusivamente con el motor Strata 0.2.15, no con llama.cpp. El autor no ha publicado resultados de benchmarks estandar ni mediciones de latencia o VRAM.
 
-La relevancia de esta ficha es doble: por un lado, documenta una técnica de edición de pesos sobre un GGUF ya cuantizado (eliminación de dirección de rechazo con preservación de formatos y escalas); por otro, advierte de que se trata de un modelo sin filtros de seguridad, con implicaciones legales y éticas para uso en producción. La licencia declarada es qwen-community-1.0, con etiqueta `license: other` en la model card.
+## Especificaciones tecnicas
 
-## Especificaciones técnicas
-
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido con atención lineal y atención completa alternadas; MoE con expertos enrutados y experto compartido |
-| Parámetros totales | 176.943.899.520 |
-| Parámetros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | GGUF IQ3_S (base), con tensores de atención en Q8_0, `ffn_down_shexp` en Q8_0 y `ffn_down_exps` en IQ4_NL/Q2_0 |
+| Arquitectura | Transformer (Qwen3.8-Flash-Next, presumiblemente MoE por el uso de perfiles de expertos en Strata; no confirmado en la informacion disponible) |
+| Parametros totales | 176.943.899.520 (~177B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | 262.144 tokens (256K, configurado en las pruebas del autor) |
+| Tipos de cuantizacion | IQ3_S (GGUF), atencion re-cuantizada a Q8_0 desde pesos BF16 oficiales; cache KV en int8 |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (`license: other`) |
-| Formato de pesos | GGUF (2 shards) |
+| Licencia | qwen-community-1.0 (etiqueta "other" en Hugging Face) |
+| Formato de pesos | GGUF (dos shards, 84,5 GB en total) |
 
 ## Arquitectura y entrenamiento
+El modelo deriva de Qwen3.8-Flash-Next, un transformer de gran escala del que la informacion disponible no detalla el numero de capas, la configuracion de atencion ni si emplea mezcla de expertos. El uso de un "expert profile" y de una cache de expertos en las opciones de Strata sugiere una arquitectura MoE, pero no se confirma explicitamente. El modelo base inmediato es la cuantizacion IQ3_S de ISTA-DASLab, que a su vez cuantiza los pesos BF16 oficiales; antes de la edicion, la atencion de este modelo se sustituyo por una version Q8_0 construida desde los pesos BF16 para reducir el error de cuantizacion.
 
-El modelo base Qwen3.8-Flash-Next emplea una arquitectura híbrida de 48 capas: 36 capas de atención lineal y 12 capas de atención completa (capas 3, 7, ..., 47). Cada capa incorpora un bloque MoE con 512 expertos enrutados y un experto compartido, con matrices `ffn_down_exps` y `ffn_down_shexp`. La model card menciona además "hyper-connection streams" (4 flujos por capa) cuyo residual se promedia para calcular las activaciones, un detalle arquitectónico poco habitual que conviene verificar contra la documentación oficial de Qwen.
-
-El proceso de edición de L6-41 parte del archivo IQ3_S de ISTA-DASLab (54.817.524.224 bytes). Primero se construye un archivo intermedio ("chimera") en el que los 156 tensores de atención de las 48 capas se sustituyen por Q8_0 cuantizados desde los pesos BF16 oficiales de Qwen/Qwen3.8-Flash-Next, con un error relativo máximo de 0,0087. Sobre ese archivo se calcula una dirección de rechazo por capa: se promedian los residuales de 200 prompts dañinos (mlabonne/harmful_behaviors) y se resta el promedio de 200 prompts inocuos (mlabonne/harmless_alpaca), normalizando a longitud 1. La dirección se elimina de 108 matrices en las capas 6 a 41 (36 capas × 3 matrices: salida de atención, down del experto compartido y down de los expertos enrutados) mediante W' = W − u uᵀW. Para los expertos enrutados se conservan formatos y escalas originales y se recodifican los códigos con GPTQ hacia W'. No se documenta en la información disponible ningún proceso de RLHF o DPO adicional; el entrenamiento del modelo base no se detalla en la model card proporcionada.
+La innovacion principal es la abliteration selectiva: en lugar de eliminar la direccion de rechazo en las 45 capas del release anterior (capas 0-44), se elimina solo en las 36 capas 6-41. El autor selecciono ese rango mediante un barrido de 59 rangos de capas, evaluando cada uno sobre 50 prompts daninos clasificados en cuatro categorias (refused, reluctant, partial/generic, complied) por un Qwen3.8 27B local, y despues con una tarea de agente en OpenCode (construccion de un flujo de imagenes en ComfyUI) ejecutada 3 veces por condicion. El rango 6-41 fue uno de los cuatro que completaron las 3 ejecuciones sin vacilacion, con una divergencia KL de 0,0214 frente al modelo pre-edicion (aproximadamente dos tercios de la KL de q8g, 0,0456). No se dispone de informacion sobre el dataset de entrenamiento original, el numero de tokens ni si hubo RLHF o DPO.
 
 ## Capacidades
-
-- Generación de texto conversacional multi-turno en formato chat.
-- Razonamiento y respuesta a instrucciones (evaluado con IFEval sin diferencias significativas respecto al archivo sin editar).
-- Generación de código, incluida la resolución de problemas complejos (evaluado con BigCodeBench-Hard).
-- Conocimiento académico y razonamiento experto (evaluado con 100 preguntas de texto de Humanity's Last Exam).
-- Comportamiento "uncensored": responde a peticiones que el modelo original rechazaría (207/240 en HarmBench).
-- Compatibilidad con endpoints (`endpoints_compatible` en los tags).
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Capacidades de visión o audio: no disponible en la información proporcionada.
+- Generacion de texto conversacional multi-turno, con soporte de contexto largo de hasta 262.144 tokens.
+- Entrada de imagenes (vision) mediante el proyector multimodal `mmproj-Qwen3.8-Flash-Next-BF16.gguf` de ISTA-DASLab y la opcion `--vision` del motor.
+- Ejecucion de tareas de agente multi-paso, segun la prueba del autor en OpenCode (generacion de flujos en ComfyUI).
+- Decodificacion especulativa MTP (multi-token prediction) soportada por el motor Strata.
+- Cumplimiento de peticiones que el modelo original rechazaria (comportamiento "uncensored"/abliterated), incluidas peticiones daninas.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible; la model card esta en ingles y japones, pero no se documentan idiomas soportados.
 
 ## Casos de uso
-
-- Investigación sobre alineación y seguridad: el modelo permite estudiar cómo la eliminación de una dirección de rechazo afecta al comportamiento, con métricas concretas (KL de 0,0333 frente al original, 207/240 en HarmBench) y comparación con la variante q8g (204/240, KL 0,0367).
-- Evaluación de técnicas de abliteration sobre GGUF cuantizados: sirve como referencia reproducible para medir el impacto de editar solo las capas 6-41 frente a 0-44, con un coste de +0,90 GB sobre el archivo original.
-- Generación de código en entornos controlados: el modelo mantiene puntuaciones en BigCodeBench-Hard sin diferencias significativas respecto al original, por lo que puede usarse en pipelines internos de generación y revisión de código donde no se requieran filtros de seguridad.
-- Red teaming y pruebas de robustez: al cumplir el 86% de los prompts de HarmBench, es útil para generar casos adversarios y evaluar clasificadores de seguridad o sistemas de moderación.
-- Experimentación con cuantizaciones mixtas: la combinación de atención en Q8_0 con expertos en IQ4_NL/Q2_0 permite estudiar el equilibrio entre calidad y tamaño en despliegues con llama.cpp.
-- Fine-tuning posterior sobre dominio específico: al ser un GGUF de 84,5 GB con licencia qwen-community-1.0, puede servir de base para adaptaciones siempre que se respeten los términos de la licencia.
-- Despliegue local en hardware de gama alta: con 176.900 millones de parámetros y cuantización IQ3_S, requiere estaciones con gran cantidad de VRAM o RAM; útil para pruebas offline sin dependencia de API.
+- Investigacion sobre alineacion y seguridad: el modelo sirve como caso de estudio controlado para medir como la eliminacion de la direccion de rechazo en un subconjunto de capas afecta al comportamiento y a la distribucion de salida (KL de 0,0214 frente al modelo pre-edicion).
+- Evaluacion de tecnicas de abliteration: comparar el rango 6-41 con q8g (0-44) permite analizar el compromiso entre supresion de rechazos y deriva del modelo en tareas de red teaming.
+- Despliegue de modelos de ~177B en hardware de consumo: con una RTX 5090 (32 GB), 128 GB de DDR5 y el motor Strata, el modelo se ejecuta con contexto de 256K, cache KV int8 y decodificacion especulativa MTP, lo que lo hace util para probar pipelines de inferencia con offloading de expertos.
+- Pruebas de agentes con contexto largo: la ventana de 262.144 tokens permite mantener historiales extensos de herramientas y ficheros en tareas de automatizacion como las ejecutadas en OpenCode.
+- Generacion de flujos multimodales: con el proyector de vision, puede procesar imagenes de entrada para tareas de descripcion o construccion de pipelines visuales (por ejemplo, ComfyUI).
+- Analisis de cuantizacion IQ3_S: util para estudiar la perdida de calidad de una cuantizacion de ~3 bits en un modelo de 177B y su interaccion con la re-cuantizacion Q8_0 de la atencion.
+- Escenarios de generacion creativa sin restricciones: el modelo responde a prompts que el original rechaza, lo que puede interesar en investigacion sobre contenido sensible, siempre con las cautelas legales correspondientes.
 
 ## Benchmarks y rendimiento
-
-| Benchmark | L6-41 | q8g | Archivo sin editar (chimera) |
-|---|---|---|---|
-| HarmBench (cumplimiento, de 240) | 207 | 204 | 5 |
-| KL de probabilidades next-token frente a GSQ-RCO original | 0,0333 | 0,0367 | no disponible |
-| BigCodeBench-Hard | sin diferencias significativas | sin diferencias significativas | sin diferencias significativas |
-| IFEval | sin diferencias significativas | sin diferencias significativas | sin diferencias significativas |
-| Humanity's Last Exam (100 preguntas texto) | sin diferencias significativas | sin diferencias significativas | sin diferencias significativas |
-
-No se han publicado valores numéricos absolutos para BigCodeBench-Hard, IFEval ni Humanity's Last Exam en la información disponible; solo se indica que las diferencias no son significativas.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor unicamente reporta metricas internas de la edicion: 0 rechazos sobre 50 prompts daninos y 3 de 3 ejecuciones completadas sin vacilacion en la tarea de agente, con una divergencia KL de 0,0214 frente al modelo pre-edicion. No se han medido VRAM, memoria ni velocidad de inferencia.
 
 ## Requisitos de hardware
-
-- VRAM/RAM estimada: el repositorio GGUF ocupa 84,5 GB, por lo que la inferencia requiere al menos esa cantidad de memoria combinada (GPU + RAM) para cargar el modelo completo.
-- GPU recomendadas: no disponible en la información proporcionada; el autor menciona el uso de una RTX 5090 para las ediciones de pesos, no para inferencia del modelo completo.
-- ¿Cabe en GPU de consumo? No de forma completa: 84,5 GB superan la VRAM de cualquier GPU de consumo actual (RTX 4090: 24 GB; RTX 5090: 32 GB). Sería necesario offloading a RAM del sistema o ejecución en CPU.
-- Opciones de despliegue: llama.cpp (formato GGUF nativo), y por extensión Ollama o servidores compatibles con GGUF. vLLM y TGI no soportan GGUF de forma nativa en la información disponible.
-- Latencia y throughput: no disponible en la información proporcionada.
+- VRAM estimada: no medida por el autor; el entorno de prueba emplea una RTX 5090 de 32 GB con offloading a RAM (contenedor limitado a 88 GB de los 128 GB DDR5 del sistema).
+- GPU recomendadas: el autor solo valida NVIDIA GeForce RTX 5090 (32 GB). No hay datos para A100, H100 u otras GPU.
+- Cabe en GPU de consumo: si, en una RTX 5090 (32 GB) con 128 GB de RAM DDR5 y almacenamiento en SSD M.2, segun el entorno probado.
+- Opciones de despliegue: exclusivamente el motor Strata 0.2.15 (con `--pack`, `--native` y `--ple-gguf`); el autor indica que el modelo no se ha probado con llama.cpp. Requiere construir un pack nuevo desde el GGUF con `tools/iq_pack.py`.
+- Latencia y throughput: no disponibles; el autor no los midio.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | HarmBench (cumplimiento) | Licencia | Formato |
+| Modelo | Parametros | Contexto | Edicion | Licencia | Motor |
 |---|---|---|---|---|---|
-| rSalone/Qwen3.8-Flash-Next-GSQ-RCO-uncensored-L6-41-GGUF | 176.943.899.520 | no disponible | 207/240 | qwen-community-1.0 | GGUF |
-| rSalone/Qwen3.8-Flash-Next-GSQ-RCO-uncensored-q8g-GGUF | mismo base | no disponible | 204/240 | qwen-community-1.0 | GGUF |
-| ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF (sin editar) | mismo base | no disponible | 5/240 | qwen-community-1.0 | GGUF |
-| Qwen/Qwen3.8-Flash-Next (BF16 oficial) | 176.943.899.520 | no disponible | no disponible | qwen-community-1.0 | safetensors |
+| rSalone/...-uncensored-L6-41-GGUF | ~177B | 262.144 | Abliteration capas 6-41, KL 0,0214 | qwen-community-1.0 | Strata 0.2.15 |
+| rSalone/...-uncensored-q8g-GGUF | ~177B | no disponible | Abliteration capas 0-44, KL 0,0456 | qwen-community-1.0 | Strata 0.2.15 |
+| ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF | ~177B | no disponible | Sin edicion (base cuantizado IQ3_S) | qwen-community-1.0 | Strata 0.2.15 |
 
-No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoría (por ejemplo, otras variantes abliterated de la familia Qwen) en la información proporcionada.
+No se dispone de datos de benchmarks que permitan comparar el rendimiento con alternativas de otros autores.
 
 ## Limitaciones y advertencias
-
-- Modelo sin filtros de seguridad: ha sido editado deliberadamente para eliminar la dirección de rechazo en 108 matrices, lo que implica que puede generar contenido dañino, ilegal o éticamente problemático.
-- Riesgo legal: la licencia qwen-community-1.0 puede imponer restricciones al uso comercial y a la redistribución; es necesario revisar el archivo LICENSE del repositorio antes de cualquier despliegue en producción.
-- Riesgo de alucinación: no se han publicado evaluaciones específicas de factualidad para esta variante; los benchmarks citados (IFEval, HLE) no muestran diferencias significativas respecto al original, pero tampoco garantizan ausencia de alucinaciones.
-- Sesgos: no se documentan análisis de sesgo en la model card; al derivar de Qwen3.8-Flash-Next, hereda los sesgos del modelo base, que no se detallan.
-- Idiomas: no se especifican los idiomas soportados; la información disponible no permite confirmar cobertura multilingüe.
-- Contexto: la longitud de contexto no se indica en la información proporcionada; no debe asumirse un valor concreto.
-- Cuantización agresiva: los expertos enrutados usan IQ4_NL y Q2_0, lo que puede degradar la calidad en tareas sensibles a precisión, aunque el autor reporta que las diferencias en los benchmarks citados no son significativas.
-- Reproducibilidad: el proceso de edición depende de herramientas concretas (Strata 0.2.10/0.2.15, llama.cpp con parches, RTX 5090) y de un archivo base específico; replicar los resultados requiere acceso a esos recursos.
-- Estado del repositorio: 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validación comunitaria independiente.
+- Modelo "uncensored"/abliterated: elimina deliberadamente los rechazos, por lo que puede generar contenido danino, ilegal o inseguro. No es apto para despliegues de produccion orientados al publico sin filtros externos.
+- La edicion afecta a 36 capas (6-41) y reduce la divergencia respecto al original, pero sigue siendo una modificacion de pesos que puede degradar capacidades no evaluadas.
+- No se han publicado benchmarks estandar (MMLU, HumanEval, GSM8K) ni evaluaciones de sesgo, alucinacion o multilingue.
+- Idiomas soportados no documentados; el comportamiento fuera del ingles y el japones es desconocido.
+- Requiere el motor Strata 0.2.15 y un pack construido especificamente desde este GGUF; no es compatible con packs del modelo original ni se ha probado con llama.cpp.
+- Entorno de ejecucion muy especifico (RTX 5090, 128 GB DDR5, Ubuntu 26.04.1, CUDA 13.0); no se garantiza el funcionamiento en otras configuraciones.
+- Licencia qwen-community-1.0: es necesario revisar el fichero LICENSE para conocer las restricciones de uso comercial, que no se detallan en la informacion disponible.
+- El autor no ha medido VRAM, memoria ni velocidad, por lo que no hay garantias de rendimiento en produccion.
+- El repositorio tiene solo 3 likes y 5830 descargas; es un artefacto de investigacion con soporte limitado.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/rSalone/Qwen3.8-Flash-Next-GSQ-RCO-uncensored-L6-41-GGUF
-- Variante q8g del mismo autor: https://huggingface.co/rSalone/Qwen3.8-Flash-Next-GSQ-RCO-uncensored-q8g-GGUF
-- Modelo base GGUF (ISTA-DASLab): https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
-- Pesos BF16 oficiales (Qwen): https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Dataset de prompts dañinos: https://huggingface.co/datasets/mlabonne/harmful_behaviors
-- Dataset de prompts inocuos: https://huggingface.co/datasets/mlabonne/harmless_alpaca
+- Release anterior (q8g): https://huggingface.co/rSalone/Qwen3.8-Flash-Next-GSQ-RCO-uncensored-q8g-GGUF
+- Modelo base (ISTA-DASLab): https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
+- Motor de inferencia Strata: https://github.com/Niko1221/Strata

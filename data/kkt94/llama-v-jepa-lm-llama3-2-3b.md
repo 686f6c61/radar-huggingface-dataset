@@ -2,56 +2,57 @@
 
 ## Resumen
 
-Llama-V-JEPA-LM-Llama3.2-3B es un modelo de lenguaje y vídeo desarrollado por el usuario kkt94, que combina un codificador de vídeo congelado basado en V-JEPA 2.1 (ViT-g) con el modelo de lenguaje Llama-3.2-3B-Instruct de Meta. El modelo resuelve el problema de la comprensión temporal de vídeo: en lugar de tratar los fotogramas como imágenes independientes, utiliza un world model que captura la dinámica de la escena (dirección, velocidad, orden, estado) y la proyecta al espacio del lenguaje mediante un puente espectral que convierte cada clip de 32 fotogramas en 1.024 tokens visuales.
+Llama-V-JEPA-LM-Llama3.2-3B es un modelo de video-lenguaje desarrollado por el usuario kkt94 (familia Llama-V-JEPA-LM) que combina un codificador de video basado en el modelo del mundo V-JEPA 2.1 (ViT-g, congelado) con el modelo de lenguaje Llama-3.2-3B-Instruct de Meta. La conexión entre ambos se realiza mediante un "spectral bridge" que convierte cada clip de 32 fotogramas en 1.024 tokens visuales, de modo que el LLM puede razonar sobre la dinámica de la escena (dirección, orden, velocidad, estado) directamente en su espacio de tokens.
 
-La innovación principal reside en el entrenamiento con supervisión contrafactual: se generan variantes de vídeos públicos mediante transformaciones de píxeles cuyas respuestas quedan fijadas por construcción y difieren únicamente en cómo cambia la escena. Así, el modelo de lenguaje aprende a leer la dinámica que el codificador del world model ya transporta, sin necesidad de anotación humana adicional. Se entrenó sobre 4,53 millones de muestras públicas.
+El modelo resuelve el problema de la comprensión temporal de video: no solo describe qué aparece en la imagen, sino cómo cambia a lo largo del tiempo. Para ello se entrena con supervisión contrafactual: transformaciones de píxeles sobre vídeos públicos generan variantes con respuestas equilibradas y fijadas por construcción, lo que obliga al modelo a leer la dinámica en lugar de explotar atajos del dataset. Se entrenó sobre 4,53 millones de muestras públicas.
 
-Con 4.248.521.728 parámetros totales (según los pesos en safetensors) y un repositorio de 8,5 GB, el modelo se posiciona como una alternativa compacta y eficiente para tareas de vídeo-question answering, superando según el autor a todos los modelos abiertos de su clase de tamaño en el promedio de 12 puntuaciones sobre 11 benchmarks de vídeo.
+Es relevante porque, con solo ~3B de parámetros en el LLM, supera a modelos abiertos de su clase en tareas de razonamiento temporal y de movimiento, y lo hace con una licencia Llama 3.2 y pesos en safetensors compatibles con transformers. El repositorio ocupa 8,5 GB y acumula 283 descargas y 9 me gusta en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo video-lenguaje: codificador de vídeo V-JEPA 2.1 (ViT-g) congelado + puente espectral + Llama-3.2-3B-Instruct |
-| Parametros totales | 4.248.521.728 |
+| Arquitectura | LLM transformer (Llama-3.2-3B-Instruct) + codificador de video V-JEPA 2.1 (ViT-g, congelado) unidos por un spectral bridge |
+| Parametros totales | 4.248.521.728 (dato de safetensors) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | inglés (en) |
+| Idiomas soportados | en (inglés) |
 | Licencia | llama3.2 (Llama 3.2 Community License) |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (librería transformers, custom_code) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un modelo multimodal de tipo video-text-to-text. Un codificador de vídeo V-JEPA 2.1 (ViT-g) congelado actúa como world model y extrae representaciones de la dinámica visual. Un puente espectral transforma cada clip de 32 fotogramas en 1.024 tokens visuales, independientemente de la resolución de entrada, que se inyectan en el modelo de lenguaje Llama-3.2-3B-Instruct. El modelo requiere código personalizado (`custom_code`) para su carga en transformers.
+La arquitectura es multimodal de tipo "encoder congelado + proyector + LLM". El codificador visual es V-JEPA 2.1, un modelo del mundo basado en ViT-g que procesa clips de 32 fotogramas; un spectral bridge transforma la representación del clip en 1.024 tokens visuales que se inyectan en Llama-3.2-3B-Instruct. El LLM es el único componente entrenado (fine-tuning sobre el modelo base de Meta), mientras que el encoder permanece congelado. El modelo requiere `custom_code` y se carga con la librería transformers.
 
-El entrenamiento emplea supervisión contrafactual: a partir de vídeos públicos se generan transformaciones de píxeles que producen variantes equilibradas en respuestas, fijadas por construcción y que difieren solo en el cambio de escena. De este modo el modelo de lenguaje aprende a interpretar dirección, orden, posición, velocidad, conteo y completitud a partir de la dinámica que porta el codificador. El conjunto de entrenamiento consta de 4,53 millones de muestras públicas. No se dispone de información sobre el uso de RLHF o DPO ni sobre el número total de tokens de texto empleados.
+El entrenamiento usa supervisión contrafactual sobre 4,53 millones de muestras públicas: se aplican transformaciones de píxeles a vídeos públicos para producir variantes con respuestas balanceadas y fijadas por construcción, que difieren únicamente en cómo evoluciona la escena. Así el modelo aprende a leer dirección, velocidad, orden, posición, conteo y finalización sin anotación humana adicional. No se detalla en la información disponible el uso de RLHF o DPO, ni la composición exacta del dataset más allá de su origen público.
 
 ## Capacidades
 
-- Comprensión de vídeo y respuesta a preguntas sobre el contenido (video question answering).
-- Razonamiento temporal: dirección, orden, velocidad, posición, conteo y completitud de acciones.
-- Procesamiento de clips de 32 fotogramas con 1.024 tokens visuales por clip a cualquier resolución de entrada.
-- Generación de texto a partir de entradas de vídeo y texto (salida únicamente textual).
-- Capacidades heredadas del modelo base Llama-3.2-3B-Instruct en generación de texto en inglés.
+- Respuesta a preguntas sobre vídeo (video question answering) en formato video-text-to-text.
+- Razonamiento temporal: orden de eventos, cambios de estado, velocidad y dirección del movimiento.
+- Razonamiento sobre movimiento y dinámica de escena (entrenado explícitamente para ello).
+- Conteo y detección de finalización de acciones a partir de clips.
+- Procesamiento de clips de 32 fotogramas convertidos en 1.024 tokens visuales.
+- Extracción de características (tag feature-extraction) además de generación.
+- Capacidad multilingüe limitada: solo inglés declarado.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: limitadas al inglés según la model card.
-- Modo thinking, visión de imágenes estáticas, audio: no disponible en la información proporcionada.
+- Modo thinking, visión de imagen estática, audio: no disponible.
 
 ## Casos de uso
 
-- Análisis de vigilancia y seguridad: el modelo puede responder preguntas sobre la secuencia de eventos en un clip de 32 fotogramas, identificando dirección y orden de movimientos, lo que resulta adecuado para revisión de grabaciones con preguntas en lenguaje natural.
-- Moderación de contenido en vídeo: gracias a su capacidad de leer dinámica temporal (velocidad, completitud de acciones), puede clasificar clips según el tipo de actividad mostrada y asistir en la revisión automática de material subido a plataformas.
-- Descripción y accesibilidad de vídeo: generación de respuestas descriptivas sobre lo que ocurre en un clip para sistemas de subtitulado enriquecido o asistentes de accesibilidad, con un coste de prefill bajo (20 ms por clip en una H100).
-- Análisis deportivo automatizado: identificación de dirección de movimiento, orden de acciones y conteo de eventos en secuencias cortas, útil para etiquetado automático de clips deportivos.
-- Robótica y sistemas de percepción: el uso de un world model V-JEPA como codificador permite integrar el modelo en pipelines que requieren interpretar dinámica de escena y responder preguntas operativas sobre lo observado.
-- Investigación en modelos de mundo: servir como base para experimentos de razonamiento temporal y evaluación de representaciones de dinámica, dado su entrenamiento con supervisión contrafactual y su naturaleza compacta (4,25B parámetros, 8,5 GB).
-- Asistentes de análisis de vídeo para educación o formación: responder preguntas sobre procedimientos mostrados en vídeos instructivos, aprovechando la comprensión de orden y completitud de pasos.
+- Moderación y análisis de contenido en vídeo: el modelo puede responder preguntas sobre lo que ocurre en un clip y en qué orden, lo que permite clasificar secuencias de acciones y detectar contenido que evoluciona de forma problemática a lo largo del tiempo.
+- Indexación y búsqueda semántica de archivos audiovisuales: al convertir cada clip de 32 fotogramas en 1.024 tokens, se pueden generar descripciones y etiquetas temporales que alimenten un motor de búsqueda sobre grandes videotecas.
+- Análisis de vídeo de vigilancia y tráfico: su entrenamiento en dirección, velocidad y orden de eventos lo hace adecuado para responder preguntas como "¿en qué sentido circula el vehículo?" o "¿qué ocurrió antes?".
+- Asistencia a personas con discapacidad visual: descripción de la dinámica de un clip (no solo de objetos) para narrar acciones en curso, con respuestas en inglés.
+- Evaluación automática de vídeo educativo o de procedimientos: comprobar si un tutorial muestra los pasos en el orden correcto y si la acción se completa, usando las capacidades de orden y finalización.
+- Análisis de deportes y movimiento: preguntas sobre trayectorias, cambios de dirección y secuencias de jugadas en clips cortos.
+- Investigación en modelos del mundo y representaciones video-lenguaje: servir como base para experimentos de alineación encoder-LLM con supervisión contrafactual, dado que el codificador V-JEPA permanece congelado y el proyector es reentrenable.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor del modelo (no verificados):
+Resultados declarados por el autor (no verificados). Promedio de 68,97 en 12 puntuaciones sobre 11 benchmarks de vídeo.
 
 | Benchmark | Metrica | Valor |
 |---|---|---|
@@ -68,51 +69,42 @@ Resultados declarados por el autor del modelo (no verificados):
 | Vinoground text | text pair accuracy | 71,0 |
 | Vinoground video | video pair accuracy | 62,8 |
 
-Promedio declarado de 12 puntuaciones sobre 11 benchmarks: 68,97. Según el autor, supera al mejor modelo abierto de su clase de tamaño (Molmo2-4B, 61,08) y es el mejor en 7 de las 12 puntuaciones. No se han proporcionado resultados de benchmarks de texto (MMLU, HumanEval, GSM8K) en la información disponible.
+El autor declara además una media de 96,0 en seis conjuntos reservados (ratios de velocidad no vistos, corpus fuente no visto, combinaciones no vistas y un escenario de simulación no visto).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; con 4,25B parámetros en safetensors el repositorio ocupa 8,5 GB, por lo que la inferencia en precisión nativa requiere al menos ~9-10 GB de VRAM, y en cuantizaciones de 8 o 4 bits cabría en GPUs de 8 GB o menos (estimación orientativa, no confirmada por el autor).
-- GPU recomendadas: el autor reporta mediciones en una H100 (prefill de un clip en 20 ms, 159 ms hasta el primer token). No se especifican otras GPUs.
-- Cabe en GPU de consumo: no confirmado en la información disponible; por tamaño, sería viable en RTX 4090 (24 GB) y potencialmente en GPUs de 12-16 GB con cuantización.
-- Opciones de despliegue: transformers con código personalizado (`custom_code`); no se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: 6,7 TFLOPs y 20 ms de prefill por clip en una H100; 159 ms hasta el primer token. El autor compara con 18,1-104,4 TFLOPs y 58-218 ms de los modelos abiertos de su clase. Throughput sostenido no disponible.
+- VRAM estimada para inferencia: no disponible de forma oficial; con 4,25 mil millones de parámetros, en fp16 rondaría los 8-9 GB solo para pesos, más el codificador V-JEPA 2.1 (ViT-g) y el overhead de activaciones, por lo que en la práctica se recomienda al menos 16-24 GB.
+- GPU recomendadas: no especificadas por el autor; por tamaño, una RTX 4090 (24 GB) o A100/H100 serían adecuadas para fp16, y GPUs de 16 GB podrían requerir cuantización del LLM.
+- Cabe en GPU de consumo: probablemente en RTX 4090 y RTX 3090 en fp16; en GPUs de 8-12 GB requeriría cuantización, no documentada.
+- Opciones de despliegue: transformers con `custom_code` (requisito del repositorio); compatibilidad con vLLM, llama.cpp, Ollama o TGI no está confirmada en la información disponible.
+- Latencia y throughput: no disponibles. El demo público funciona en ZeroGPU (Hugging Face Spaces).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento (promedio 12 scores) | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Rendimiento (media 12 scores) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-V-JEPA-LM-Llama3.2-3B | 4,25B | no disponible | 68,97 | Llama 3.2 Community | Hugging Face |
+| Llama-V-JEPA-LM-Llama3.2-3B | 4,25B | no disponible | 68,97 | llama3.2 | Hugging Face |
 | Molmo2-4B | ~4B | no disponible | 61,08 | no disponible | no disponible |
-| Otros modelos abiertos clase 4B | no disponible | no disponible | inferior según el autor | no disponible | no disponible |
+| Otros modelos abiertos de clase 4B | ~4B | no disponible | inferior a 61,08 segun el autor | no disponible | no disponible |
 
-El autor cita a Molmo2-4B como el mejor modelo abierto de la clase 4B, con 61,08 de promedio, frente a 68,97 de este modelo. No se dispone de datos detallados de parámetros, contexto ni licencia de Molmo2-4B en la información proporcionada.
+El autor afirma que este modelo es el mejor de su clase en 7 de las 12 puntuaciones, con diferencias notables en Vinoground video (62,8 frente a 33,8 de Molmo2-4B), SSv2 (91,3 frente a 68,3), TOMATO (55,9 frente a 36,5) y Vinoground text (71,0 frente a 55,0). No se dispone de datos de benchmarks de otros competidores en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la información disponible; al entrenarse sobre vídeos públicos, puede heredar sesgos de esos datos.
-- Riesgo de alucinación: no evaluado en la información proporcionada; como modelo generativo de lenguaje, es susceptible de producir respuestas no fundamentadas en el vídeo.
-- Limitaciones de contexto: la longitud de contexto no está especificada; cada clip se limita a 32 fotogramas y 1.024 tokens visuales, lo que restringe la duración de vídeo analizable por inferencia.
-- Idioma: soporte únicamente en inglés según la model card.
-- Licencia: sujeta a la Llama 3.2 Community License y a la Llama 3.2 Acceptable Use Policy de Meta; el uso comercial está condicionado por dicha licencia.
-- Requiere código personalizado (`custom_code`) para cargarse en transformers, lo que puede complicar el despliegue en entornos estándar.
-- Los resultados de benchmarks son declarados por el autor y no están verificados (`verified: false`).
-- No hay información sobre cuantizaciones oficiales ni sobre soporte en frameworks de inferencia de alto rendimiento.
+- Sesgos: al entrenarse sobre vídeos públicos, puede heredar sesgos de representación de esos datos; no se documentan análisis de sesgo.
+- Alucinación: como todo LLM, puede generar respuestas plausibles pero incorrectas sobre el contenido del vídeo, especialmente en clips ambiguos o de baja calidad.
+- Idioma: solo se declara inglés; el rendimiento en castellano no está garantizado.
+- Contexto: la longitud de contexto del LLM no se especifica; cada clip consume 1.024 tokens visuales, lo que limita cuántos clips caben en una ventana.
+- Licencia: sujeta a la Llama 3.2 Community License y a la Acceptable Use Policy de Meta; revisar restricciones para uso comercial y el requisito de atribución "Built with Llama".
+- Producción: requiere `custom_code` en transformers y no se confirma soporte en motores de inferencia habituales; los benchmarks son declarados por el autor y no están verificados.
+- Cobertura: orientado a vídeo; no se documentan capacidades de imagen estática, audio, tool calling ni agentes.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/kkt94/Llama-V-JEPA-LM-Llama3.2-3B
+- Paper: https://arxiv.org/abs/2611.17831
+- Código e informe técnico: https://github.com/kkt94/Llama-V-JEPA-LM
+- Demo en el navegador (variante 8B, ZeroGPU): https://huggingface.co/spaces/kkt94/llama-v-jepa-lm-8b
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/
 - Política de uso aceptable Llama 3.2: https://www.llama.com/llama3_2/use-policy/
-- Dataset MVBench: https://huggingface.co/datasets/OpenGVLab/MVBench
-- Dataset PerceptionTest: https://huggingface.co/datasets/lmms-lab/PerceptionTest
-- Dataset TVBench: https://huggingface.co/datasets/FunAILab/TVBench
-- Dataset TempCompass: https://huggingface.co/datasets/lmms-lab/TempCompass
-- Dataset TOMATO: https://huggingface.co/datasets/yale-nlp/TOMATO
-- Dataset MotionBench: https://huggingface.co/datasets/zai-org/MotionBench
-- Dataset NExT-QA: https://huggingface.co/datasets/lmms-lab/NExTQA
-- Dataset MVP: https://huggingface.co/datasets/facebook/minimal_video_pairs
-- Dataset TemporalBench: https://huggingface.co/datasets/microsoft/TemporalBench
-- Dataset Something-Something v2: https://huggingface.co/datasets/HuggingFaceM4/something_something_v2
-- Dataset Vinoground: https://huggingface.co/datasets/HanSolo9682/Vinoground

@@ -2,101 +2,102 @@
 
 ## Resumen
 
-FCAF3D (Fully Convolutional Anchor-Free 3D Object Detection) es un detector de objetos 3D para nubes de puntos, desarrollado originalmente por Danila Rukhovich, Anna Vorontsova y Anton Konushin y publicado en ECCV 2022. Este checkpoint concreto, `fcaf3d.sunrgbd.mmdet3d`, ha sido convertido desde MMDetection3D al framework PyTorch PointCloud por el usuario `torch-pointcloud`, y está entrenado sobre el dataset SUN RGB-D para detección de objetos 3D en interiores.
+FCAF3D (Fully Convolutional Anchor-Free 3D Object Detection) es un detector de objetos 3D para nubes de puntos, desarrollado originalmente por Danila Rukhovich, Anna Vorontsova y Anton Konushin y presentado en ECCV 2022. Este checkpoint concreto (`fcaf3d.sunrgbd.mmdet3d`) ha sido convertido desde MMDetection3D y publicado por el usuario `torch-pointcloud` para su uso con la librería PyTorch PointCloud de Arthur Dujardin. Detecta objetos 3D en escenas interiores representadas como nubes de puntos, devolviendo cajas 3D orientadas con sus clases.
 
-El modelo resuelve la detección de objetos 3D en escenas RGB-D de interior, prediciendo cajas 3D axis-aligned a partir de nubes de puntos. Su principal innovación es que elimina los anclas (anchor-free) y las propuestas de región (region proposals), usando una arquitectura totalmente convolucional sobre vóxeles dispersos. Cuenta con 70,5 millones de parámetros, 3 canales de entrada, 10 clases de objetos y 512 características por vóxel.
+El modelo emplea una arquitectura totalmente convolucional y libre de anclas (anchor-free) que opera sobre vóxeles dispersos. Con 70,5 millones de parámetros, 512 canales de características y 10 clases de objetos, está entrenado sobre el dataset SUN RGB-D, un benchmark de comprensión de escenas interiores RGB-D. Su relevancia actual radica en que ofrece un detector 3D compacto y con licencia permisiva, listo para integrarse en pipelines de percepción mediante una API de PyTorch.
 
-Es relevante ahora porque ofrece una implementación limpia y ligera (0,3 GB de pesos) en formato safetensors, integrada en una librería moderna de PyTorch, lo que facilita su uso en pipelines de percepción 3D sin depender del ecosistema completo de MMDetection3D. La licencia Apache-2.0 permite uso comercial sin restricciones adicionales.
+No se trata de un modelo de lenguaje: no genera texto ni procesa lenguaje natural. Su entrada es una nube de puntos con posición, color y normales, y su salida son cajas 3D con clase y puntuación de confianza.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | FCAF3D: detector 3D totalmente convolucional, anchor-free y sin propuestas de región, sobre vóxeles dispersos (sparse voxel) |
+| Arquitectura | FCAF3D: detector 3D totalmente convolucional, anchor-free, sobre vóxeles dispersos (sparse voxel) |
 | Parametros totales | 70.498.638 (70,5 M) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (no aplica: entrada de nube de puntos, no secuencia de texto) |
+| Longitud de contexto | no aplica (modelo de visión 3D sobre nubes de puntos) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (no es un modelo de lenguaje) |
-| Licencia | Apache-2.0 |
+| Idiomas soportados | no aplica (modelo de percepción 3D, sin capacidades lingüísticas) |
+| Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
-| Canales de entrada | 3 |
+| Canales de entrada | 3 (posición, color, normal) |
+| Canales de características | 512 |
 | Clases | 10 |
-| Caracteristicas por voxel | 512 |
 | Dataset de entrenamiento | SUN RGB-D |
-| Tarea | Deteccion de objetos 3D (3D object detection) |
+| Tarea | Detección de objetos 3D |
+| Librería | torch-pointcloud (requiere spconv compilado para torch/CUDA) |
 
 ## Arquitectura y entrenamiento
 
-FCAF3D es un detector de objetos 3D totalmente convolucional y anchor-free. A diferencia de los detectores 3D basados en propuestas (como VoteNet o los métodos de dos etapas), FCAF3D procesa directamente vóxeles dispersos mediante convoluciones 3D dispersas (implementadas con `spconv`) y predice directamente las cajas 3D en cada vóxel ocupado, sin necesidad de anclas ni de una etapa de generación de propuestas. La red tiene 3 canales de entrada (coordenadas y color), produce 512 características por vóxel y clasifica en 10 clases de objetos de interior.
+FCAF3D es un detector de objetos 3D completamente convolucional y sin anclas. En lugar de proponer regiones o anclas, predice directamente las cajas 3D a partir de un backbone convolucional disperso que opera sobre vóxeles de la nube de puntos. La arquitectura procesa la nube de puntos como una rejilla de vóxeles dispersos, extrae características de 512 canales y aplica cabezas convolucionales para clasificación y regresión de cajas 3D orientadas. El checkpoint incluye además la capacidad de extraer características mediante `forward_features`, útil como extractor para tareas posteriores.
 
-El checkpoint está entrenado sobre el dataset SUN RGB-D, un benchmark de comprensión de escenas RGB-D de interiores con anotaciones de cajas 3D. No se dispone de información detallada sobre el número exacto de tokens/puntos de entrenamiento, la composición del dataset ni si se aplicaron técnicas de refinamiento posteriores (RLHF/DPO no aplican en este dominio). Este checkpoint ha sido convertido desde la implementación original de MMDetection3D (Apache-2.0) al framework PyTorch PointCloud, manteniendo los pesos en formato safetensors.
+El entrenamiento se realizó sobre el dataset SUN RGB-D, un benchmark de escenas interiores RGB-D con 10 clases de objetos. La información disponible no detalla el número de tokens, la composición exacta del dataset ni si se aplicaron técnicas de refinamiento posteriores como RLHF o DPO (no aplicables en este dominio). El modelo original fue entrenado en el marco de MMDetection3D y este checkpoint es una conversión directa de esos pesos a la librería torch-pointcloud. La innovación principal del método es la eliminación de anclas y de propuestas de región, lo que simplifica el pipeline y reduce la complejidad de la cabeza de detección.
 
 ## Capacidades
 
-- Detección de objetos 3D en nubes de puntos de escenas de interior, con predicción de cajas 3D axis-aligned.
+- Detección de objetos 3D en nubes de puntos de escenas interiores: devuelve cajas 3D orientadas con clase y puntuación.
 - Clasificación en 10 clases de objetos del dataset SUN RGB-D.
-- Procesamiento de nubes de puntos con coordenadas (pos), color (color) y normales (normal).
-- Extracción de características por vóxel (512 canales) mediante `forward_features`, útil para tareas downstream como segmentación o clasificación.
-- Funciona exclusivamente en GPU (kernels CUDA-only para convoluciones dispersas).
-- No soporta tool calling, agentes, razonamiento multi-step ni capacidades multilingües: es un modelo de visión 3D, no de lenguaje.
+- Procesamiento de nubes de puntos con posición, color y normales (3 canales de entrada).
+- Extracción de características de 512 canales mediante `forward_features`, reutilizable para otras tareas de aprendizaje sobre nubes de puntos.
+- Funcionamiento GPU-only: los kernels de vóxeles dispersos requieren GPU.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingües: es un modelo de percepción 3D, no un modelo de lenguaje.
+- No dispone de modo thinking, visión 2D genérica, audio ni generación de texto.
 
 ## Casos de uso
 
-- Percepción robótica en interiores: el modelo detecta objetos 3D (muebles, sanitarios, etc.) en nubes de puntos capturadas por sensores RGB-D, adecuado para robots de servicio que necesitan localizar obstáculos y objetos manipulables en tiempo real.
-- Reconstrucción y comprensión de escenas: integrado en pipelines de escaneo 3D, permite etiquetar automáticamente objetos en mapas de interior generados con LiDAR o cámaras de profundidad.
-- Anotación asistida de datasets 3D: como preetiquetador para acelerar el etiquetado manual de cajas 3D en nuevos datasets de interiores, aprovechando su naturaleza anchor-free para generar propuestas directas.
-- Realidad aumentada y virtual: localización de objetos 3D en el entorno para anclar contenido virtual sobre muebles u objetos reales detectados en la escena.
-- Análisis de inventario y logística en interiores: detección de objetos y su posición 3D en almacenes o estancias para tareas de conteo y organización espacial.
-- Investigación en detección 3D: como baseline reproducible y ligero (70,5 M parámetros) para comparar arquitecturas anchor-free frente a métodos basados en propuestas en el benchmark SUN RGB-D.
-- Extracción de características 3D: uso de `forward_features` para obtener embeddings de 512 canales por vóxel que alimenten clasificadores o segmentadores downstream.
+- Robótica de interior: el modelo detecta objetos como sillas, mesas o camas en nubes de puntos captadas por sensores RGB-D, permitiendo a un robot doméstico localizar y manipular objetos en escenas interiores con 10 clases predefinidas.
+- Reconstrucción y modelado de escenas: integrado en un pipeline de captura 3D, permite segmentar objetos individuales a partir de la nube de puntos para generar mallas o inventarios de mobiliario.
+- Anotación automática de datos 3D: sirve como preanotador para acelerar el etiquetado de nuevas nubes de puntos, generando cajas 3D candidatas que un humano revisa y corrige.
+- Navegación asistida y accesibilidad: detección de obstáculos y objetos relevantes en interiores para aplicaciones de asistencia a personas con discapacidad visual, a partir de sensores de profundidad.
+- Investigación en percepción 3D: el checkpoint es un punto de partida reproducible para comparar métodos de detección 3D y para hacer fine-tuning sobre dominios específicos con la API de torch-pointcloud.
+- Extracción de características para tareas downstream: usando `forward_features`, se obtienen embeddings de 512 canales por punto para clasificación de escenas, segmentación o búsqueda de similitud entre nubes de puntos.
+- Prototipado rápido en entornos con GPU: la instalación vía `pip install torch-pointcloud` y la carga con `tp.create_model` permiten tener un detector 3D funcional en pocas líneas de código.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor del modelo en la model card (no verificados):
+Resultados declarados por el autor del modelo (no verificados) sobre el dataset SUN RGB-D para la tarea de detección de objetos 3D:
 
-| Metrica | Dataset | Valor |
-|---|---|---|
-| mAP@0.25 | SUN RGB-D | 64,7 |
-| mAP@0.5 | SUN RGB-D | 47,93 |
+| Metrica | Valor |
+|---|---|
+| mAP@0.25 | 64,35 |
+| mAP@0.5 | 47,82 |
 
-No se han publicado en la información disponible otros resultados de benchmarks (MMLU, HumanEval, GSM8K no aplican a este dominio).
+No se han publicado en la información disponible resultados adicionales (por ejemplo, mAP@0.5 con otras métricas de dificultad, latencia o throughput) ni comparaciones con otros modelos en la model card.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial; con 70,5 M parámetros y pesos en safetensors (repo de 0,3 GB), la inferencia requiere GPU con kernels CUDA para `spconv`. Se estima un consumo moderado, aunque el dato exacto no está publicado.
-- GPU recomendadas: cualquier GPU NVIDIA compatible con la compilación de `spconv` para la versión de torch y CUDA instalada; el modelo es GPU-only.
-- No se garantiza su funcionamiento en CPU: la model card indica explícitamente "GPU-only kernels".
-- Opciones de despliegue: librería `torch-pointcloud` (`pip install torch-pointcloud`) junto con `spconv` compilado para la versión de torch y CUDA correspondiente. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplican a este tipo de modelo).
+- VRAM estimada para inferencia: no disponible de forma explícita. Con 70,5 M de parámetros y pesos en safetensors (repo de 0,3 GB), el modelo es compacto; la memoria adicional la determina el número de puntos de la nube y el tamaño de los mapas de vóxeles dispersos.
+- GPU recomendadas: cualquier GPU NVIDIA con soporte CUDA compatible con la compilación de spconv y torch. El modelo es GPU-only, por lo que no funciona en CPU.
+- Cabe en GPU de consumo: sí, previsiblemente en tarjetas consumer con suficiente VRAM para el tamaño de la nube de puntos de entrada (no se especifica una cifra exacta en la información disponible).
+- Opciones de despliegue: librería torch-pointcloud (requiere `spconv` compilado para la versión de torch y CUDA). No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que no son aplicables a este tipo de modelo.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / entrada | mAP@0.5 (SUN RGB-D) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| fcaf3d.sunrgbd.mmdet3d (este) | 70,5 M | Nube de puntos, 3 canales | 47,93 (declarado) | Apache-2.0 | Hugging Face, torch-pointcloud |
-| FCAF3D original (MMDetection3D) | ~70,5 M (misma arquitectura) | Nube de puntos, 3 canales | no disponible en la informacion | Apache-2.0 | GitHub open-mmlab/mmdetection3d |
-| VoteNet | no disponible en la informacion | Nube de puntos | no disponible en la informacion | no disponible | MMDetection3D |
-| Otros detectores 3D anchor-free | no disponible en la informacion | Nube de puntos | no disponible en la informacion | no disponible | no disponible |
+No se dispone en la información proporcionada de datos de rendimiento de modelos comparables (por ejemplo, otros detectores 3D sobre SUN RGB-D como VoteNet, ImVoteNet o TR3D) que permitan una comparación rigurosa. Se indica a continuación lo que sí es comparable a nivel de ficha:
 
-No se dispone en la información proporcionada de resultados numéricos de modelos comparables para establecer una comparativa cuantitativa rigurosa.
+| Modelo | Parametros | Contexto | mAP@0.5 (SUN RGB-D) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| fcaf3d.sunrgbd.mmdet3d | 70,5 M | no aplica | 47,82 | Apache 2.0 | Hugging Face (torch-pointcloud) |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Entrenado exclusivamente sobre SUN RGB-D (escenas de interior), por lo que su generalización a escenas exteriores, LiDAR vehicular o dominios distintos es limitada.
-- Solo 10 clases de objetos: no cubre categorías fuera del vocabulario de SUN RGB-D.
-- Requiere GPU y una compilación específica de `spconv` compatible con la versión de torch y CUDA; esto complica el despliegue en entornos heterogéneos.
-- Riesgo de falsos positivos y negativos en escenas con oclusiones densas u objetos poco representados en el dataset de entrenamiento.
-- Los resultados de benchmarks son declarados por el autor y no están verificados (`verified: false`).
-- No es un modelo de lenguaje: no soporta texto, tool calling ni agentes; no debe evaluarse con métricas de NLP.
-- Licencia Apache-2.0 permite uso comercial, pero conviene revisar las licencias de las dependencias (`spconv`, `torch-pointcloud`) para producción.
-- No se documentan sesgos específicos ni limitaciones idiomáticas (no aplican), pero sí puede heredar sesgos de composición del dataset SUN RGB-D (entornos y objetos típicos de interiores occidentales).
+- Dominio restringido: entrenado exclusivamente sobre SUN RGB-D (escenas interiores), por lo que el rendimiento fuera de ese dominio (exteriores, conducción, industria) no está garantizado.
+- Solo 10 clases de objetos: cualquier objeto fuera de ese conjunto no será detectado correctamente.
+- Requiere GPU: los kernels de vóxeles dispersos son GPU-only; no hay inferencia en CPU documentada.
+- Dependencia de compilación: necesita `spconv` compilado para la versión concreta de torch y CUDA, lo que puede complicar el despliegue y la reproducibilidad.
+- Métricas no verificadas: los valores de mAP declarados en la model card figuran como no verificados (`verified: false`).
+- Riesgo de falsos positivos y negativos en escenas con oclusiones, objetos pequeños o nubes de puntos dispersas; no se documentan análisis de sesgo específicos.
+- Sin capacidades lingüísticas: no debe emplearse para tareas de texto, razonamiento o agentes.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las licencias de las dependencias (spconv, torch-pointcloud) y del dataset original SUN RGB-D para usos concretos.
+- Para producción: validar el modelo sobre datos propios antes de desplegar, dado que la conversión desde MMDetection3D puede introducir diferencias respecto al modelo original.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/torch-pointcloud/fcaf3d.sunrgbd.mmdet3d
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/fcaf3d.sunrgbd.mmdet3d
 - Paper FCAF3D (arXiv): https://arxiv.org/abs/2112.00322
-- Repositorio MMDetection3D (origen de la conversión): https://github.com/open-mmlab/mmdetection3d
-- Librería PyTorch PointCloud: https://github.com/arthurdjn/pytorch-pointcloud
-- Guía de instalación de PyTorch PointCloud: https://pytorch-pointcloud.org/latest/installation/
-- DOI de PyTorch PointCloud: https://doi.org/10.5281/zenodo.22159632
+- Repositorio torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
+- Documentación de instalación de torch-pointcloud: https://pytorch-pointcloud.org/latest/installation/
+- MMDetection3D (origen de la conversión): https://github.com/open-mmlab/mmdetection3d
+- Dataset SUN RGB-D (referencia en la model card): Song et al., CVPR 2015 (sin URL directa en la información disponible)

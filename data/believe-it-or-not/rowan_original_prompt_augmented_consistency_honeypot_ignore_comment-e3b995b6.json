@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "believe-it-or-not/rowan_original_prompt_augmented_consistency_honeypot_ignore_comment-e3b995b6",
+  "slug": "believe-it-or-not-rowan_original_prompt_augmented_consistency_honeypot_ignore_comment-e3b995b6",
+  "author": "believe-it-or-not",
+  "url": "https://huggingface.co/believe-it-or-not/rowan_original_prompt_augmented_consistency_honeypot_ignore_comment-e3b995b6",
+  "created_at": "2026-11-24T23:44:04.000Z",
+  "updated_at": "2026-11-24T23:45:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:togethercomputer/Meta-Llama-3.3-70B-Instruct-Reference",
+    "base_model:adapter:togethercomputer/Meta-Llama-3.3-70B-Instruct-Reference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1656903768,
+  "storage_human": "1.7 GB",
+  "context_length": null,
+  "base_model": "togethercomputer/Meta-Llama-3.3-70B-Instruct-Reference",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Believe France - One Global Artist Development Company",
+      "url": "https://www.believe.com/fr/france/",
+      "snippet": "Découvrez comment Believe France accompagne les artistes, auteurs-compositeurs, labels et éditeurs français indépendants vers le …Read more"
+    }
+  ]
+}

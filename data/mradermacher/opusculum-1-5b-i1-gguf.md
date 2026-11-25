@@ -2,88 +2,93 @@
 
 ## Resumen
 
-Opusculum-1.5B-i1-GGUF es una coleccion de cuantizaciones GGUF generadas por mradermacher a partir del modelo base Stoned-Code/Opusculum-1.5B. No se trata de un modelo original, sino de una redistribucion optimizada para inferencia local mediante llama.cpp y herramientas compatibles con el formato GGUF. El autor de las cuantizaciones es un colaborador habitual de la comunidad que publica versiones comprimidas de modelos pequenos para facilitar su despliegue en hardware de consumo.
+Opusculum-1.5B-i1-GGUF es la versión cuantizada en formato GGUF del modelo base Stoned-Code/Opusculum-1.5B-V0.1, un modelo de lenguaje de 1.543.714.304 parámetros (aproximadamente 1,5 mil millones) desarrollado por el usuario Stoned-Code y cuantizado por mradermacher. El modelo está pensado para generación de texto conversacional y, por la composición de su dataset de ajuste fino, orientado a escritura creativa y roleplay, incluyendo datasets derivados de Kalo, Hydrus-Claude y SynthRP. La versión aquí descrita es un conjunto de cuantizaciones imatrix (i1) generadas con llama.cpp, distribuidas bajo licencia Apache 2.0.
 
-El modelo base declara 1.5B en su nombre comercial, aunque el recuento real de parametros reportado en los safetensors del repositorio es de 1.020.404, un dato que debe interpretarse con cautela porque el propio repositorio no incluye los pesos originales en safetensors y la cifra puede corresponder a un tensor concreto o a un recuento parcial. La informacion disponible sobre arquitectura, contexto, datos de entrenamiento y licencia es practicamente nula: la model card solo contiene metadatos de la herramienta de cuantizacion.
+El interés de esta ficha reside en que permite ejecutar un modelo conversacional de 1,5B parámetros en hardware de consumo, con cuantizaciones que van desde ~0,5 GB (IQ1_S) hasta ~1,4 GB (Q6_K). La familia i1 emplea ficheros de importancia (imatrix) para mejorar la calidad de las cuantizaciones de baja precisión, lo que resulta especialmente relevante en modelos pequeños donde los cuantizados agresivos degradan rápidamente la coherencia.
 
-Su relevancia actual es limitada y muy especifica: sirve como artefacto de despliegue para quien quiera probar el modelo Opusculum-1.5B en CPU, GPUs modestas o entornos embebidos usando cuantizaciones de 1 a 6 bits. No hay evidencia publicada de benchmarks, licencia clara ni documentacion tecnica del modelo base, por lo que cualquier uso en produccion exige una verificacion previa por parte del integrador.
+No se dispone de información sobre la longitud de contexto, los idiomas soportados más allá del inglés declarado en los tags, ni resultados de benchmarks publicados por el autor. El modelo base es de tipo transformer denso (no MoE), entrenado con la librería Unsloth según los tags del repositorio, y el repositorio incluye tanto cuantizaciones estáticas (en el repo hermano Opusculum-1.5B-GGUF) como estas cuantizaciones ponderadas con imatrix.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 1.020.404 (segun safetensors del repo; el nombre comercial indica 1.5B) |
-| Parametros activos | no aplica (no se ha confirmado que sea MoE) |
+| Arquitectura | Transformer denso (no MoE); ajuste fino con Unsloth |
+| Parametros totales | 1.543.714.304 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ1_S, IQ1_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_NL (small), IQ4_XS, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones); el modelo base se distribuye en otro formato no confirmado |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-IQ3_XXS, i1-Q2_K, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-IQ4_NL, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K; además fichero imatrix |
+| Idiomas soportados | inglés (declarado en el campo `language` de la model card); no disponible para otros idiomas |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones i1); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura del modelo base Stoned-Code/Opusculum-1.5B en la informacion disponible. La model card del repositorio de cuantizaciones solo incluye metadatos de la herramienta de conversion (quantize_version 2, output_tensor_quantised 1, convert_type hf), lo que indica que los pesos se convirtieron desde un checkpoint en formato Hugging Face antes de aplicar la cuantizacion GGUF.
+El modelo base es un transformer denso de 1,5B parámetros. Según los tags del repositorio, el ajuste fino se realizó con Unsloth, una librería de entrenamiento optimizada para GPUs de consumo. No se dispone de información sobre el número total de tokens de entrenamiento, la composición exacta de la mezcla ni si se aplicaron técnicas de RLHF o DPO. La model card del cuantizador no incluye detalles arquitectónicos adicionales.
 
-El proceso de cuantizacion emplea pesos ponderados por importancia (imatrix), segun la propia descripcion del autor ("weighted/imatrix quants of Stoned-Code/Opusculum-1.5B"). Esto significa que las matrices de importancia se calcularon sobre un corpus de calibracion para reducir la perdida de calidad en las cuantizaciones de baja precision (IQ1, IQ2, IQ3). No se dispone de informacion sobre datos de entrenamiento, numero de tokens, composicion del dataset ni si hubo RLHF, DPO o alguna innovacion arquitectonica como decodificacion especulativa o atencion lineal.
+El ajuste fino del modelo base se apoya en una mezcla de datasets orientados a instrucciones conversacionales, escritura creativa y roleplay: Stoned-Code/magnum-v4, Delta-Vector/Hydrus-Claude-Instruct-5K, anthracite-org/kalo-opus-instruct-22k-no-refusal, Epiculous/SynthRP-Gens-v1.1-Filtered-n-Cleaned, lodrick-the-lafted/kalo-opus-instruct-3k-filtered, anthracite-org/nopm_claude_writing_fixed, Epiculous/Synthstruct-Gens-v1.1-Filtered-n-Cleaned, anthracite-org/kalo_opus_misc_240827 y anthracite-org/kalo_misc_part2. Esta composición sugiere un sesgo hacia prosa estilizada y diálogo de personajes, no hacia razonamiento matemático o código. Las cuantizaciones i1 incorporan un fichero imatrix (Opusculum-1.5B.imatrix.gguf) que pondera la importancia de los tensores durante la cuantización, mejorando la fidelidad en tipos de baja precisión (IQ2, IQ3) respecto a cuantizaciones estáticas del mismo tamaño.
 
 ## Capacidades
 
-- Generacion de texto: capacidad esperable en un modelo de ~1.5B, pero sin documentacion que confirme tareas concretas.
-- Razonamiento y matematicas: no disponible; no hay benchmarks ni ejemplos publicados.
-- Generacion de codigo: no disponible; el nombre del autor del modelo base (Stoned-Code) sugiere orientacion a codigo, pero no se confirma.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (thinking mode, vision, audio): no disponible.
-- Inferencia local en CPU y GPU de gama baja: confirmada por la existencia de cuantizaciones GGUF de 1 a 6 bits.
+- Generación de texto conversacional multi-turno, con especial énfasis en escritura creativa y roleplay según la composición del dataset de ajuste.
+- Generación de prosa estilizada y narrativa (ficción, diálogo de personajes, continuación de texto).
+- Instrucciones generales en inglés (los datasets incluyen corpus tipo instruct como Hydrus-Claude-Instruct y kalo-opus-instruct).
+- Soporte de plantillas conversacionales a través de `transformers` y de los metadatos GGUF; la model card no documenta un formato de prompt específico.
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito (thinking mode).
+- Capacidades multilingües: solo inglés declarado; no disponible para castellano u otros idiomas.
+- No se documentan capacidades de código ni matemáticas; el dataset de ajuste no las incluye de forma destacada.
 
 ## Casos de uso
 
-- Pruebas de concepto en portatiles sin GPU: las cuantizaciones Q4_0, Q4_1 y Q4_K_S permiten ejecutar el modelo en CPU con llama.cpp u Ollama, lo que facilita validar el comportamiento del modelo base antes de invertir en hardware.
-- Despliegue en dispositivos embebidos o Raspberry Pi: las variantes IQ1_S, IQ1_M e IQ2_XXS reducen el peso a unos cientos de MB, adecuadas para entornos con RAM muy limitada, siempre que se acepte la perdida de calidad asociada.
-- Evaluacion comparativa de cuantizaciones: el repositorio incluye mas de veinte variantes, lo que permite medir la degradacion de calidad entre Q6_K e IQ1_S sobre el mismo modelo base y elegir el punto de equilibrio para un pipeline concreto.
-- Prototipado de asistentes de codigo en local: si el modelo base conserva la orientacion a codigo que sugiere su nombre, las cuantizaciones Q5_K_M y Q6_K ofrecen un compromiso razonable para autocompletado en editores sin enviar codigo a la nube.
-- Filtrado y clasificacion de texto en lote: un modelo de este tamano puede procesar grandes volumenes de documentos en CPU con throughput aceptable, aunque no hay datos de rendimiento publicados.
-- Base para fine-tuning ligero: al ser un modelo pequeno, sirve como punto de partida para experimentos de ajuste con LoRA en una sola GPU consumer, aunque la falta de licencia clara obliga a verificar los terminos antes de redistribuir derivados.
+- Roleplay y diálogo de personajes: el modelo está ajustado sobre datasets de rol (SynthRP, kalo-opus) y puede mantener conversaciones multi-turno con un estilo consistente; su tamaño de 1,5B permite ejecutarlo en local con latencia baja en GPUs de consumo.
+- Escritura creativa asistida: generación y continuación de narrativa, descripciones y diálogos, aprovechando el sesgo del ajuste hacia prosa estilizada (nopm_claude_writing_fixed, magnum-v4).
+- Prototipado rápido de chatbots en local: con cuantizaciones Q4_K_M (~1,1 GB) se puede desplegar un asistente conversacional en una GPU de 4-8 GB o incluso en CPU, útil para demos y pruebas de concepto.
+- Generación de texto en dispositivos con recursos limitados: las cuantizaciones IQ2/IQ3 (0,6-0,9 GB) permiten inferencia en CPUs modestas o GPUs integradas mediante llama.cpp u Ollama, con la penalización de calidad asociada.
+- Filtrado y generación de datos sintéticos de rol: el modelo puede emplearse para producir diálogos de entrenamiento o aumentar datasets de roleplay, dado su ajuste específico en ese dominio.
+- Experimentación educativa con cuantización: el repositorio incluye un fichero imatrix y una matriz completa de cuantizaciones, lo que lo convierte en un caso práctico para estudiar el impacto de IQ1-IQ6 en la calidad de un modelo pequeño.
+- Sustitución de modelos mayores en tareas de prosa no crítica: cuando la latencia o el coste importan más que la precisión factual, un 1,5B ajustado en escritura puede cubrir la generación de textos breves.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del cuantizador no incluye métricas de MMLU, HumanEval, GSM8K ni evaluaciones comparativas; solo se aporta una gráfica externa de perplejidad frente a tipos de cuantización (enlace a nethype.de) que compara la calidad relativa de los formatos IQ, no el rendimiento del modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial; como referencia orientativa para un modelo de ~1.5B en GGUF, las cuantizaciones Q4 rondarian los 0,9-1,1 GB y las Q6_K en torno a 1,3-1,5 GB, aunque estas cifras no estan confirmadas para este repositorio concreto.
-- GPU recomendadas: no disponible; por tamano, cualquier GPU con al menos 2-4 GB de VRAM libre deberia poder cargar las cuantizaciones de 4 a 6 bits.
-- Compatibilidad con GPU consumer: previsiblemente si en GTX 1650, RTX 3050, RTX 4060 y superiores, asi como en Apple Silicon mediante Metal, pero sin confirmacion oficial.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; vLLM y TGI no soportan GGUF de forma nativa para este caso.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: ~0,5-0,6 GB para IQ1/IQ2; ~0,7-0,9 GB para Q2_K/IQ3; ~1,0-1,1 GB para IQ4/Q4_K; ~1,2 GB para Q5_K; ~1,4 GB para Q6_K. El modelo base en FP16 requiere aproximadamente 3,1 GB (1,543.714.304 parámetros × 2 bytes) más overhead de contexto.
+- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM para cuantizaciones Q4-Q6 (GTX 1650, RTX 3050, RTX 4060, RTX 4090); para FP16 se recomienda una GPU con 6 GB o más (RTX 3060, RTX 4060 Ti, A100/H100 para despliegues por lotes).
+- Cabe en GPU de consumo: sí, en todas las cuantizaciones GGUF; incluso en GPUs integradas o CPU con cuantizaciones IQ2/IQ3.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, LM Studio, text-generation-webui, y servidores compatibles con la API de OpenAI mediante llama.cpp (`llama-server`). El tag `endpoints_compatible` del repositorio sugiere compatibilidad con endpoints de inferencia alojados.
+- Latencia y throughput estimados: no disponibles en la información proporcionada. Para un modelo de 1,5B en cuantización Q4_K_M en una GPU de consumo, el throughput esperado es alto (decenas a cientos de tokens por segundo), pero no se aportan cifras oficiales.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Opusculum-1.5B-i1-GGUF | ~1.5B (nominal) | no disponible | no disponible | GGUF | Hugging Face |
-| Qwen2.5-1.5B-Instruct | 1.5B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
-| SmolLM2-1.7B-Instruct | 1.7B | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
-| Llama-3.2-1B-Instruct | 1.2B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | Hugging Face, Ollama |
+| Opusculum-1.5B-i1-GGUF | 1,54B | no disponible | Apache 2.0 | GGUF (i1) | Ajuste orientado a rol y escritura creativa |
+| Opusculum-1.5B-GGUF (estático) | 1,54B | no disponible | Apache 2.0 | GGUF (estático) | Mismo modelo base, cuantizaciones sin imatrix |
+| Stoned-Code/Opusculum-1.5B-V0.1 | 1,54B | no disponible | Apache 2.0 | safetensors | Modelo base sin cuantizar |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (según documentación pública del modelo) | Apache 2.0 | safetensors, GGUF | Modelo generalista con contexto largo y buen rendimiento en benchmarks; no especializado en rol |
 
-La comparativa se ofrece como referencia de categoria (modelos de ~1-2B con cuantizaciones GGUF), no como equivalencia funcional: para Opusculum-1.5B no hay datos publicados de rendimiento, contexto ni licencia que permitan una comparacion rigurosa con estas alternativas.
+La comparación con alternativas de la misma categoría (modelos densos de ~1,5B) queda limitada porque no se han publicado benchmarks del modelo. Frente a Qwen2.5-1.5B-Instruct, Opusculum prioriza el estilo conversacional y creativo sobre el razonamiento general y el código, y no documenta una ventana de contexto amplia.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card tecnica: no se documentan datos de entrenamiento, arquitectura, contexto ni evaluaciones, lo que impide valorar su calidad de forma objetiva.
-- Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; usar en produccion sin verificar los terminos del modelo base Stoned-Code/Opusculum-1.5B es un riesgo legal.
-- Riesgo de alucinacion: inherente a modelos de este tamano, agravado por la falta de benchmarks que permitan calibrar su fiabilidad.
-- Idiomas no confirmados: no hay garantia de soporte de castellano ni de otros idiomas distintos del que se uso en el entrenamiento original.
-- Perdida de calidad en cuantizaciones bajas: las variantes IQ1_S, IQ1_M e IQ2_XXS pueden degradar notablemente la coherencia y la fidelidad, especialmente en tareas de razonamiento o codigo.
-- Recuento de parametros inconsistente: la cifra de 1.020.404 en safetensors no cuadra con el nombre comercial de 1.5B, lo que sugiere que el dato puede estar incompleto o mal reportado.
-- Sin soporte de la comunidad: cero descargas y cero likes en el momento de la consulta, lo que reduce la probabilidad de encontrar issues resueltos o ejemplos de uso.
-- Fecha de creacion futura (2026-11-21): el metadato del repositorio es anomalo y conviene tratarlo con escepticismo.
+- No se han publicado evaluaciones de sesgos, toxicidad o alucinación; el ajuste sobre datasets de rol sin filtro de rechazo (kalo-opus-instruct-22k-no-refusal) puede aumentar la probabilidad de contenido inapropiado o de respuestas no alineadas con políticas de seguridad.
+- Riesgo de alucinación elevado en tareas factuales: es un modelo de 1,5B ajustado para prosa, no para precisión de conocimiento.
+- Idiomas: solo se declara inglés; el rendimiento en castellano no está garantizado ni documentado.
+- Longitud de contexto no documentada; no se recomienda asumir ventanas largas sin verificación empírica.
+- Las cuantizaciones IQ1 e IQ2 degradan notablemente la calidad (la propia model card las marca como "for the desperate" o "very low quality"); para producción se recomienda Q4_K_M o superior.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base y los datasets subyacentes pueden tener sus propias condiciones; conviene revisar la licencia del modelo base Stoned-Code/Opusculum-1.5B-V0.1 antes de un despliegue comercial.
+- El repositorio tiene 0 likes y 831 descargas en el momento de la consulta, lo que indica una adopción limitada y poca validación comunitaria.
+- No hay garantía de soporte de plantillas de chat específicas; es necesario verificar el formato de prompt con el modelo base.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones: https://huggingface.co/mradermacher/Opusculum-1.5B-i1-GGUF
-- Modelo base: https://huggingface.co/Stoned-Code/Opusculum-1.5B
-- llama.cpp: https://github.com/ggerganov/llama.cpp
-- Ollama: https://ollama.com
+- Repositorio Hugging Face (esta ficha): https://huggingface.co/mradermacher/Opusculum-1.5B-i1-GGUF
+- Modelo base: https://huggingface.co/Stoned-Code/Opusculum-1.5B-V0.1
+- Cuantizaciones estáticas del mismo autor: https://huggingface.co/mradermacher/Opusculum-1.5B-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Opusculum-1.5B-i1-GGUF
+- Guía de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfica de perplejidad por tipo de cuantización: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de cuantización del autor: https://huggingface.co/mradermacher/model_requests
+- Empresa del cuantizador: https://www.nethype.de/

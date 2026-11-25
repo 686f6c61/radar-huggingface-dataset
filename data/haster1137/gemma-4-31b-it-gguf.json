@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "Haster1137/gemma-4-31B-it-GGUF",
+  "slug": "haster1137-gemma-4-31b-it-gguf",
+  "author": "Haster1137",
+  "url": "https://huggingface.co/Haster1137/gemma-4-31B-it-GGUF",
+  "created_at": "2026-11-25T03:14:28.000Z",
+  "updated_at": "2026-11-25T03:19:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "abliteration",
+    "uncensored",
+    "gemma-4",
+    "gguf",
+    "text-generation",
+    "en",
+    "base_model:TrevorJS/gemma-4-31B-it-uncensored",
+    "base_model:quantized:TrevorJS/gemma-4-31B-it-uncensored",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": "TrevorJS/gemma-4-31B-it-uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

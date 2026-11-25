@@ -54,16 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
-      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
-      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba's Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
-    },
-    {
-      "title": "QDA-Qwen3.8-27B-W4A8 API & Inference Endpoint | FriendliAI",
-      "url": "https://friendli.ai/models/qda-lab/QDA-Qwen3.8-27B-W4A8",
-      "snippet": "Deploy QDA-Qwen3.8-27B-W4A8 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
-    }
-  ]
+  "sources": []
 }

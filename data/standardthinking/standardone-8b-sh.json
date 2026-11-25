@@ -53,31 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Triangle isocèle — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Triangle_isoc%C3%A8le",
-      "snippet": "Un triangle isocèle. En géométrie, un triangle isocèle est un triangle ayant au moins 1 deux côtés de même longueur. Plus …Read more"
-    },
-    {
-      "title": "AI inference for apps and coding — Standard Thinking",
-      "url": "https://standardthinking.ai/",
-      "snippet": "Eight open models from six labs, plus Standard One 3B and 8B, all through one API. Explore API models."
-    },
-    {
-      "title": "Le triangle isocèle : Aire, hauteur et propriétés",
-      "url": "https://progresser-en-maths.com/le-triangle-isocele-definition-et-proprietes/",
-      "snippet": "Feb 14, 2026 · Le triangle isocèle est un triangle qui possède (au moins) deux côtés de même longueur. C’est l’un des triangles les …"
-    },
-    {
-      "title": "Pay-per-token inference API — Standard Thinking",
-      "url": "https://standardthinking.ai/api/",
-      "snippet": "Choose a model for your workload. Text, image, and video models behind one base URL and API key. Standard One answers at /v1/systemone instead ..."
-    },
-    {
-      "title": "Isocèle Conseil : accompagnement qualité et règlementaire DM",
-      "url": "https://isocele-medical.com/",
-      "snippet": "Isocèle Conseil, société de Conseil en Qualité et Affaires Réglementaires accompagne depuis 20 ans les acteurs du dispositif médical"
-    }
-  ]
+  "sources": []
 }

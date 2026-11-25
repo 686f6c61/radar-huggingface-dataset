@@ -2,96 +2,97 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-Persian-Agent es un ajuste fino completo del modelo base Qwen/Qwen3.5-0.8B, desarrollado por el usuario MohammadBeigi y publicado en Hugging Face. Se trata de un asistente compacto orientado al persa (farsi) que busca cubrir chat natural, seguimiento de instrucciones, respuestas con razonamiento y, de forma destacada, llamada de herramientas (tool calling) y function calling en entornos agénticos. Con aproximadamente 752 millones de parámetros reales, está pensado para ejecutarse en CPU, portátiles y dispositivos móviles, lo que lo sitúa en la categoría de modelos pequeños para despliegue local y de bajo coste.
+Qwen3.5-0.8B-Persian-Agent es un ajuste fino completo del modelo base Qwen/Qwen3.5-0.8B, desarrollado por el usuario MohammadBeigi y publicado en Hugging Face. Se trata de un modelo de lenguaje compacto de aproximadamente 752 millones de parámetros (con embeddings atados) orientado prioritariamente al persa (farsi), que conserva las capacidades en inglés del modelo original. El objetivo es ofrecer un asistente conversacional ligero, capaz de seguir instrucciones y de invocar herramientas (tool calling / function calling), ejecutable en CPU, portátiles y teléfonos móviles.
 
-El modelo parte de la arquitectura híbrida Gated DeltaNet + Gated Attention del Qwen3.5 base y se ha entrenado con ajuste fino de todos los parámetros (sin LoRA) en dos etapas: una primera de chat e instrucciones en persa y una segunda específica de tool calling, abstención de herramientas y refuerzo de trayectorias agénticas en persa. Mantiene el inglés del modelo base como idioma secundario y se distribuye bajo licencia Apache 2.0, con pesos en safetensors y cuantizaciones GGUF (Q8_0 y Q4_K_M con imatrix persa).
+El modelo parte de la arquitectura híbrida de Qwen3.5, que combina Gated DeltaNet con Gated Attention, e incorpora un ajuste fino supervisado (SFT) de todos los parámetros en dos etapas sobre aproximadamente 38 000 muestras, sin emplear LoRA. Según la model card, la perplejidad en persa mejora de 13,14 a 10,52 (en torno a un 20 % mejor que el modelo base), lo que lo hace relevante para despliegues en entornos con recursos limitados donde se necesita un asistente en persa con soporte de agentes.
 
-Su relevancia actual radica en la escasez de modelos pequeños, abiertos y realmente competentes en persa con soporte de function calling, un nicho donde la mayoría de alternativas o son modelos grandes y costosos o carecen de capacidades agénticas. La ventana de contexto usada en entrenamiento es de 1.536 tokens, un dato importante a la hora de evaluar su idoneidad para conversaciones largas.
+La relevancia actual radica en su tamaño reducido (repo de 9,4 GB con pesos en FP16 de 1,50 GB) y en la disponibilidad de cuantizaciones GGUF desde 533 MB, lo que permite su uso en aplicaciones móviles y en hardware de consumo. La licencia Apache 2.0, heredada del modelo base, facilita su adopción comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido Gated DeltaNet + Gated Attention (heredada de Qwen3.5) |
-| Parametros totales | 752.393.024 (~0,8B) |
+| Arquitectura | Transformer híbrido (Gated DeltaNet + Gated Attention) |
+| Parametros totales | 752.393.024 (~0,75B, embeddings atados) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 1.536 tokens usados en entrenamiento (contexto nativo del base no disponible) |
-| Tipos de cuantizacion | FP16 (safetensors), GGUF Q8_0, GGUF Q4_K_M (con imatrix persa) |
-| Idiomas soportados | Persa (principal), ingles |
+| Longitud de contexto | no disponible (contexto usado en entrenamiento: 1.536 tokens) |
+| Tipos de cuantizacion | FP16 (safetensors), GGUF Q8_0, Q5_K_M, Q4_K_M |
+| Idiomas soportados | Persa (principal), inglés |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, GGUF |
+| Formato de pesos | safetensors (Transformers), GGUF (llama.cpp, LM Studio, Ollama, PocketPal) |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura híbrida del Qwen3.5-0.8B, que combina capas Gated DeltaNet con capas de atención con compuerta (Gated Attention). Sobre esta base se realizó un ajuste fino de parámetros completos en dos etapas, con AdamW de 8 bits, scheduler coseno, pérdida solo sobre tokens del asistente (completion-only loss) y batch efectivo de 8, ejecutado en 2× NVIDIA T4 con DDP. La primera etapa (chat e instrucciones en persa, ~30.600 ejemplos) mezcla datos SFT y QA en persa de fuentes como Maux, Persian QA, conocimiento general, ParsiNLU entailment, matemáticas y razonamiento en persa, Persian-English Thinking, Matina, ParsMap y Aya Persian, con una pequeña porción de SlimOrca para preservar el inglés, a un learning rate de 3e-5.
+El modelo se basa en Qwen3.5-0.8B, cuya arquitectura híbrida combina capas de Gated DeltaNet (un mecanismo de atención lineal recurrente) con capas de Gated Attention clásica. El ajuste fino es de parámetros completos (sin LoRA) en dos etapas de SFT, sobre aproximadamente 38 000 muestras. El contexto empleado durante el entrenamiento fue de 1.536 tokens y el modo de operación es "non-thinking" (respuestas directas, sin bloque de razonamiento).
 
-La segunda etapa se centra en tool calling y abstención, usando datos de xLAM/APIGen y Hermes function calling, con trayectorias de herramientas en persa variadas proceduralmente en dominios como clima, cuotas de préstamos, búsqueda de inventario, recordatorios de calendario y conversión de moneda a toman, además de ejemplos negativos que enseñan al modelo a no invocar herramientas irrelevantes y un buffer de repetición de chat en persa para evitar olvido, con learning rate de 1,5e-5. El autor indica que probó preentrenamiento continuado con texto web persa crudo y lo descartó porque degradaba la calidad posterior para este tamaño de modelo.
+Los datos de entrenamiento provienen de una mezcla de conjuntos en persa e inglés: Maux-Persian-SFT-30k, maux-gpt-sft-20k, Persian_QA_Chat_Format, Persian-Math-SFT, PersianML/persian-general-knowledge, SajjadAyoubi/persian_qa, persiannlp/parsinlu_entailment, hosseinhimself/persian-alpaca-reasoning-v1, artindnr/Persian-English-Thinking, MatinaAI/instruction_tuning_datasets, sbunlp/ParsMap, CohereForAI/aya_dataset, Open-Orca/SlimOrca, argilla/apigen-function-calling y NousResearch/hermes-function-calling-v1. Esta composición mezcla datos conversacionales, matemáticas, razonamiento, conocimiento general y ejemplos de function calling. No se documenta en la información disponible el uso de RLHF o DPO.
+
+Una innovación destacable es que las cuantizaciones GGUF emplean el layout clásico (no fusionado) de tensores de Qwen3.5, lo que permite cargarlas en versiones antiguas de llama.cpp y en aplicaciones móviles. Además, la plantilla de chat embebida cierra siempre el bloque `<think>`, de modo que las aplicaciones que activan el "thinking" por defecto siguen obteniendo respuestas directas.
 
 ## Capacidades
 
-- Generación de texto conversacional en persa con tono natural y respuestas concisas.
-- Seguimiento de instrucciones y respuestas con estilo de razonamiento.
-- Llamada de herramientas y function calling con salida estructurada en formato `<tool_call>`.
-- Abstención de herramientas: cuando ninguna herramienta encaja, responde directamente en lugar de inventar una llamada.
-- Razonamiento multi-paso básico orientado a agentes.
-- Capacidades multilingües limitadas a persa (principal) e inglés (secundario).
-- Modo thinking desactivable mediante `enable_thinking=False` en la plantilla de chat.
-- Conversación multi-turno con plantilla de chat compatible con Transformers.
+- Generación de texto conversacional en persa con fluidez mejorada respecto al modelo base.
+- Seguimiento de instrucciones (instruction following) en persa e inglés.
+- Razonamiento y matemáticas básicas, apoyado en los conjuntos Persian-Math-SFT y persian-alpaca-reasoning-v1.
+- Conocimiento general en persa (PersianML/persian-general-knowledge, SajjadAyoubi/persian_qa).
+- Tool calling / function calling en formato Qwen (`<tool_call>` con `<function=...>` y parámetros), entrenado con argilla/apigen-function-calling y NousResearch/hermes-function-calling-v1.
+- Capacidad de abstenerse de invocar herramientas cuando ninguna encaja con la petición, respondiendo directamente en lugar de inventar una llamada.
+- Soporte multilingüe limitado a persa e inglés.
+- Modo non-thinking (respuestas directas), sin bloque de razonamiento explícito.
+- Ejecución en CPU, portátiles, servidores de bajo coste y dispositivos móviles (Android/iOS vía PocketPal).
 
 ## Casos de uso
 
-- Asistente conversacional en persa para atención al cliente: el modelo gestiona diálogos multi-turno con respuestas breves y precisas, adecuado para integraciones en widgets web o mensajería donde el coste por inferencia debe ser mínimo.
-- Agente local de conversión de divisas: con la herramienta `convert_currency` y trayectorias entrenadas en persa, puede resolver consultas del tipo "200 dólares a toman" invocando la función correcta con parámetros estructurados.
-- Automatización de recordatorios de calendario: el modelo ha sido entrenado con trayectorias de recordatorios en persa, por lo que puede transformar peticiones en lenguaje natural en llamadas a APIs de calendario.
-- Consultas de inventario y stock: útil en paneles internos o bots de almacén donde el usuario pregunta en persa y el modelo genera la llamada de búsqueda con los filtros adecuados.
-- Cálculo de cuotas de préstamos: las trayectorias de dominio financiero permiten integrarlo en simuladores o asistentes bancarios en persa que invocan funciones de amortización.
-- Consultas meteorológicas: puede mapear preguntas en persa sobre el tiempo a una función de clima con ciudad y fecha como parámetros.
-- Asistente de escritorio o móvil offline: gracias a sus cuantizaciones GGUF Q8_0 y Q4_K_M, puede ejecutarse con llama.cpp, LM Studio u Ollama en portátiles y teléfonos sin conexión.
-- Chatbot educativo en persa: responde preguntas de conocimiento general, matemáticas y QA gracias a los datos de ParsiNLU, Persian QA y Persian Math SFT usados en el ajuste.
+- Asistencia conversacional en persa en dispositivos móviles: con cuantización Q4_K_M (533 MB) o Q5_K_M (578 MB) puede ejecutarse en teléfonos mediante PocketPal, ofreciendo un chatbot offline en farsi sin conexión a la nube.
+- Atención al cliente automatizada en persa: el modelo gestiona conversaciones multi-turno y sigue instrucciones de sistema, adecuado para integraciones ligeras en webs o apps donde el coste de inferencia debe ser mínimo.
+- Agentes con invocación de herramientas: gracias al entrenamiento en function calling, puede integrarse en flujos donde deba llamar a APIs (por ejemplo, conversión de divisas, consulta de datos) emitiendo bloques `<tool_call>` estructurados.
+- Asistentes de escritorio en CPU: con GGUF Q8_0 (812 MB, ~1,5 GB de RAM) puede desplegarse en portátiles sin GPU mediante llama.cpp o LM Studio para tareas de redacción y respuesta en persa.
+- Procesamiento de texto en persa en pipelines de bajo coste: clasificación, resumen o generación de respuestas sobre textos en farsi en servidores modestos, aprovechando su reducido consumo de memoria (~3 GB en FP16).
+- Prototipado de agentes conversacionales bilingües persa-inglés: útil para desarrolladores que necesitan validar flujos de agentes con soporte de herramientas antes de escalar a modelos mayores.
+- Educación y tutoría básica en persa: puede responder preguntas de conocimiento general y matemáticas elementales, apoyándose en los datos de QA y matemáticas del entrenamiento.
 
 ## Benchmarks y rendimiento
 
-La model card incluye una evaluación con una suite de pruebas en persa (perplejidad sobre conjunto retenido y sondas específicas de fluidez, conocimiento, seguimiento de instrucciones y tool calling) frente al modelo base. La tabla publicada está incompleta en la información disponible: solo se muestra la fila del modelo base.
+La model card incluye una evaluación interna en persa (perplejidad sobre conjunto reservado y 14 pruebas dirigidas de fluidez, conocimiento, seguimiento de instrucciones y uso de herramientas). La información proporcionada se interrumpe en la tabla, por lo que solo se dispone del dato de perplejidad del modelo ajustado.
 
-| Modelo | Persian PPL ↓ | Persian probes ↑ |
+| Modelo | Perplejidad en persa (↓) | Pruebas en persa (↑) |
 |---|---|---|
-| Qwen/Qwen3.5-0.8B (base) | 13.144 | 8/14 (57,1%) |
-| Qwen3.5-0.8B-Persian-Agent | no disponible en la información proporcionada | no disponible en la información proporcionada |
+| Qwen3.5-0.8B-Persian-Agent | 10,52 | no disponible |
+| Qwen/Qwen3.5-0.8B (base) | 13,14 | no disponible |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para FP16: aproximadamente 1,5 GB solo para pesos, más overhead de activaciones y KV cache; cómodo en GPUs con 4 GB o más.
-- GGUF Q8_0: en torno a 0,8 GB de pesos; recomendado por el autor como opción casi sin pérdida para un modelo de 0,8B.
-- GGUF Q4_K_M: la opción más pequeña, con cierta pérdida de calidad, para dispositivos muy limitados.
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) puede ejecutarlo con holgura; también tarjetas de gama baja e iGPUs. El ajuste fino se realizó en 2× NVIDIA T4, lo que da una idea de la modestia de los requisitos.
-- Cabe en GPU consumer: sí, en prácticamente todas las GPU dedicadas actuales e incluso en CPU.
-- Opciones de despliegue: Transformers, vLLM (según la model card), llama.cpp, LM Studio y Ollama (con `ollama run hf.co/MohammadBeigi/Qwen3.5-0.8B-Persian-Agent:Q8_0`).
-- Latencia y throughput: no disponibles en la información proporcionada; por tamaño, se espera inferencia interactiva en CPU y muy rápida en GPU, pero no hay cifras publicadas.
+- VRAM/RAM estimada para inferencia: ~3 GB en FP16 (safetensors de 1,50 GB); ~1,5 GB con GGUF Q8_0 (812 MB); ~1,2 GB con Q5_K_M (578 MB); ~1 GB con Q4_K_M (533 MB).
+- GPU recomendadas: cualquier GPU con al menos 3 GB de memoria para FP16; no se especifican modelos concretos (A100, H100, RTX 4090) en la información disponible, aunque por tamaño cabe en GPUs de consumo como RTX 3060 o superiores.
+- Cabe en GPU de consumo: sí, en la práctica totalidad de GPUs modernas con 4 GB o más; también en CPU y dispositivos móviles.
+- Opciones de despliegue: Transformers (requiere `transformers>=5`), vLLM (según la model card, para FP16), llama.cpp, LM Studio, Ollama y PocketPal (Android/iOS).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Tool calling | Licencia |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formatos |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B-Persian-Agent | ~0,75B | 1.536 (entrenamiento) | fa, en | Sí (entrenado específicamente) | Apache 2.0 |
-| Qwen/Qwen3.5-0.8B (base) | ~0,75B | no disponible | multilingüe (según base) | no disponible | Apache 2.0 |
-| Alternativas pequeñas especializadas en persa | no disponible | no disponible | fa | no disponible | no disponible |
+| Qwen3.5-0.8B-Persian-Agent | ~0,75B | no disponible (entrenado con 1.536) | fa, en | Apache 2.0 | safetensors, GGUF |
+| Qwen/Qwen3.5-0.8B (base) | ~0,75B | no disponible | multilingüe (no detallado) | Apache 2.0 | safetensors |
+| Alternativas de ~1B especializadas en persa | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La información proporcionada no incluye datos de rendimiento de modelos comparables, por lo que la comparación cuantitativa no está disponible. El base Qwen3.5-0.8B es la referencia directa, y el ajuste persa añade capacidades de chat y tool calling en persa a costa de un contexto de entrenamiento corto (1.536 tokens).
+No se dispone en la información proporcionada de datos de rendimiento comparativo con otras alternativas de la misma categoría, por lo que la comparación se limita a parámetros, licencia y formatos.
 
 ## Limitaciones y advertencias
 
-- Contexto de entrenamiento muy corto (1.536 tokens): las conversaciones o documentos largos pueden degradar la calidad; no está pensado para contextos extensos.
-- Modelo de menos de mil millones de parámetros: menor conocimiento factual y mayor riesgo de alucinación que modelos grandes, especialmente en dominios no cubiertos por los datos de ajuste.
-- Sesgos: no se documentan sesgos específicos en la información disponible, pero al entrenarse con datos persa de múltiples fuentes puede heredar sesgos culturales y de género de esos corpus.
-- Cobertura de idiomas limitada a persa e inglés; otros idiomas no están garantizados.
-- El tool calling está entrenado con un conjunto acotado de dominios (clima, préstamos, inventario, calendario, divisas); fuera de esos patrones la fiabilidad puede caer.
-- Licencia Apache 2.0 permite uso comercial, pero conviene revisar las licencias de los datasets de ajuste si se redistribuye el modelo.
-- La evaluación publicada está incompleta en la información disponible, por lo que no se puede verificar la mejora frente al base con cifras completas.
-- El modelo se publicó en noviembre de 2026 con 0 descargas y 1 like, lo que indica escasa validación por parte de la comunidad.
+- El contexto usado en entrenamiento es de solo 1.536 tokens; no se documenta la longitud de contexto máxima soportada, lo que limita conversaciones o documentos largos.
+- Modelo de ~0,75B parámetros: capacidad de razonamiento y conocimiento factual limitada en comparación con modelos mayores; riesgo de alucinación en preguntas de conocimiento general.
+- Sesgos: no se documentan evaluaciones de sesgo en la información disponible; al entrenarse con mezclas de datasets persas e ingleses puede heredar sesgos de esas fuentes.
+- Cobertura lingüística restringida a persa e inglés; el rendimiento en otros idiomas no está garantizado.
+- Modo non-thinking: no genera cadenas de razonamiento explícitas, lo que puede reducir la precisión en tareas complejas de varios pasos.
+- Licencia Apache 2.0 permite uso comercial, pero se recomienda verificar las licencias de los datasets de entrenamiento citados.
+- El autor indica que los GGUF usan el layout clásico de tensores, lo que facilita la compatibilidad, pero conviene validar la versión de llama.cpp y la plantilla de chat en producción.
+- No se han publicado benchmarks estándar ni evaluaciones independientes; las cifras de perplejidad provienen de una evaluación interna del autor.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/MohammadBeigi/Qwen3.5-0.8B-Persian-Agent
+- Modelo en Hugging Face: https://huggingface.co/MohammadBeigi/Qwen3.5-0.8B-Persian-Agent
+- Repositorio GGUF: https://huggingface.co/MohammadBeigi/Qwen3.5-0.8B-Persian-Agent-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

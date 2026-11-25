@@ -2,109 +2,101 @@
 
 ## Resumen
 
-Sriqwen-V1.3-GGUF es la versión cuantizada en formato GGUF del modelo sriq-ai/Sriqwen-V1.3, publicada por el usuario mradermacher, especializado en la conversión de pesos a formatos ejecutables en hardware de consumo. El modelo original es un ajuste fino de tipo SFT (supervised fine-tuning) con LoRA, realizado con Unsloth, sobre un modelo base de aproximadamente 27.320 millones de parámetros, y orientado a tareas de razonamiento. Esta ficha describe la variante GGUF, que es la que permite su ejecución con llama.cpp y herramientas derivadas.
+Sriqwen-V1.3-GGUF es la distribucion en formato GGUF del modelo Sriqwen-V1.3, publicada por el usuario mradermacher, especializado en la conversion y cuantizacion de modelos para su uso con llama.cpp y ecosistemas compatibles. El modelo original lo desarrolla sriq-ai y se distribuye bajo licencia Apache 2.0. Con 27.320.697.856 parametros totales (aproximadamente 27,3 mil millones) y capacidades multimodales de entrada texto-imagen, se posiciona en la franja de modelos densos de gran tamano orientados a razonamiento y conversacion.
 
-El repositorio incluye además dos ficheros mmproj (Q8_0 y f16), lo que indica que el modelo conserva capacidad multimodal de entrada de imagen, coherente con la etiqueta text-image-to-text de la ficha de Hugging Face. El repositorio ocupa 190,8 GB en total y ofrece un conjunto amplio de cuantizaciones estáticas, desde Q2_K (11,0 GB) hasta Q8_0 (29,1 GB).
+La relevancia de esta publicacion radica en que pone a disposicion del ecosistema local un conjunto amplio de cuantizaciones estaticas (desde Q2_K hasta Q8_0, ademas de IQ4_XS), lo que permite desplegar un modelo de 27B en hardware de consumo con compromisos controlados de calidad. El repo incluye tambien los ficheros mmproj necesarios para el procesamiento de imagenes, lo que habilita inferencia multimodal en llama.cpp.
 
-La relevancia de esta publicación es práctica: al ser una cuantización GGUF, un modelo de ~27B con visión puede desplegarse en una sola GPU de 24 GB e incluso en CPU con suficiente memoria RAM, sin necesidad de infraestructura de datacenter. Como contrapartida, el repositorio no incluye resultados de benchmarks, no documenta la longitud de contexto y no especifica la arquitectura interna del modelo base, por lo que su evaluación previa a producción exige pruebas propias.
+El modelo base fue entrenado mediante SFT (supervised fine-tuning) sobre el dataset sriq-ai/sriq-sft-v1.3, con tecnicas de LoRA y Unsloth, y esta etiquetado como orientado a razonamiento. La informacion publica disponible no detalla la arquitectura interna ni la longitud de contexto, por lo que varios parametros tecnicos deben considerarse no disponibles.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (la model card no la detalla; el modelo base es un ajuste SFT con LoRA sobre sriq-ai/Sriqwen-V1.3) |
-| Parámetros totales | 27.320.697.856 (≈27,3 mil millones) |
-| Parámetros activos | No aplica (no hay indicios de arquitectura MoE en la información disponible) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; además mmproj-Q8_0 y mmproj-f16 para la parte multimodal |
-| Idiomas soportados | Inglés (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base está en formato Hugging Face/transformers |
-| Dataset de ajuste | sriq-ai/sriq-sft-v1.3 |
-| Modelo base | sriq-ai/Sriqwen-V1.3 |
-| Tamaño del repositorio | 190,8 GB |
-| Descargas / likes | 0 / 0 |
+| Arquitectura | no disponible (modelo transformer denso de 27,3B parametros, segun el recuento de safetensors del modelo base) |
+| Parametros totales | 27.320.697.856 (aproximadamente 27,3B) |
+| Parametros activos | no aplica (no hay indicios de arquitectura MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; ficheros mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base se distribuye en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no describe la arquitectura interna del modelo base. Lo que sí consta es el procedimiento de ajuste: se trata de un fine-tuning supervisado (SFT) con LoRA, ejecutado con Unsloth, sobre el dataset sriq-ai/sriq-sft-v1.3, con etiquetas que declaran capacidades de razonamiento (reasoning). No se documentan el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases adicionales de RLHF o DPO.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base Sriqwen-V1.3. El recuento de parametros (27,3B) y el uso de la libreria transformers sugieren un transformer denso, pero no se confirma el tipo de atencion, la familia de tokenizador ni la longitud de contexto nativa. El modelo esta etiquetado con text-image-to-text y text-to-text, lo que implica un codificador visual acoplado al modelo de lenguaje, aunque no se especifica cual.
 
-El aspecto técnico más relevante de esta publicación es la parte multimodal: la presencia de ficheros mmproj (proyector multimodal) junto a los pesos cuantizados implica que el modelo acepta entradas de imagen además de texto, y que ese proyector debe cargarse por separado en llama.cpp para habilitar dicha funcionalidad. Las cuantizaciones son estáticas: el autor indica explícitamente que no ha publicado cuantizaciones ponderadas ni con imatrix, por lo que no existen variantes de calidad mejorada para este modelo en el momento de redactar esta ficha.
+El entrenamiento se realizo mediante SFT sobre el dataset sriq-ai/sriq-sft-v1.3, empleando LoRA y la libreria Unsloth, segun las etiquetas de la model card. No se documenta el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases posteriores de RLHF o DPO. Tampoco se detallan innovaciones tecnicas como decodificacion especulativa o atencion lineal. Esta publicacion concreta es una cuantizacion estatica (quantize_version 2, output_tensor_quantised 1) del modelo original, sin modificaciones de pesos mas alla de la cuantizacion.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, con un ajuste específico orientado a tareas de razonamiento (etiqueta reasoning).
-- Entrada de imagen además de texto (text-image-to-text), habilitada mediante los ficheros mmproj incluidos en el repositorio.
-- Razonamiento multi-paso, presumiblemente con cadenas de pensamiento, derivado del ajuste SFT sobre un dataset orientado a reasoning.
-- Ajuste sobre instrucciones conversacionales (etiqueta conversational en la ficha de Hugging Face).
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte explícito de agentes: no disponible en la información proporcionada.
-- Capacidades multilingües: no. El modelo declara únicamente inglés (en).
-- Capacidad de audio o vídeo: no disponible.
-- Modo thinking diferenciado: no disponible.
+- Generacion de texto conversacional multi-turno, con soporte de plantilla de chat (etiqueta conversational).
+- Razonamiento explicito: el modelo esta etiquetado como reasoning y entrenado con SFT orientado a tareas de razonamiento.
+- Entrada multimodal texto-imagen: incluye ficheros mmproj para procesar imagenes junto con texto en llama.cpp.
+- Comprension de imagenes y respuesta textual (text-image-to-text).
+- Generacion de codigo y matematicas: no confirmado explicitamente en la informacion disponible.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado.
+- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma.
+- Modo thinking explicito: no documentado.
 
 ## Casos de uso
 
-- Resolución de problemas con razonamiento encadenado: el ajuste SFT está orientado a tareas de razonamiento, de modo que puede emplearse en entornos educativos o de análisis donde se requiera justificar el resultado paso a paso en lugar de devolver solo la respuesta final.
-- Análisis de documentos con componentes visuales: gracias al proyector multimodal, puede procesar capturas, diagramas o páginas escaneadas y responder preguntas sobre su contenido, útil en pipelines de extracción documental en inglés.
-- Generación y asistencia de código en local: al ejecutarse vía GGUF en una estación de trabajo con una GPU de 24 GB, permite autocompletado y revisión de código sin enviar el código fuente a servicios externos, lo que facilita el cumplimiento de políticas de confidencialidad.
-- Atención al cliente en inglés: admite conversaciones multi-turno con formato conversacional; el despliegue con llama-server permite exponer una API compatible con OpenAI para integrarla en un CRM.
-- Clasificación y moderación con justificación: el sesgo hacia el razonamiento permite no solo etiquetar contenido, sino explicar el criterio aplicado, algo útil en colas de revisión humanas.
-- Prototipado e investigación en hardware de consumo: sus cuantizaciones Q4_K_M (16,9 GB) y Q5_K_M (19,6 GB) caben en GPUs de 24 GB, lo que permite evaluar un modelo de ~27B con visión sin acceso a clústeres.
-- Componente de un pipeline RAG con recuperación de imágenes o texto: puede combinar contexto recuperado con la imagen asociada y generar una respuesta sintetizada para un usuario final.
-- Evaluación comparativa interna de ajustes SFT: sirve como referencia para medir si un fine-tuning propio sobre el mismo modelo base aporta mejoras reales en tareas de razonamiento.
+- Asistente conversacional local en ingles: el modelo puede mantener dialogos multi-turno en un equipo con GPU de consumo usando la cuantizacion Q4_K_M (16,9 GB), adecuada para tarjetas con 24 GB de VRAM.
+- Analisis de documentos con imagenes: gracias a los ficheros mmproj, se pueden enviar capturas, diagramas o paginas escaneadas junto con preguntas en texto, util para extraccion de informacion en flujos internos.
+- Prototipado de razonamiento en entornos sin conectividad: al ejecutarse con llama.cpp en local, permite experimentar con tareas de razonamiento sin depender de APIs externas ni enviar datos a terceros.
+- Investigacion sobre cuantizacion: la disponibilidad de once variantes de cuantizacion permite medir el impacto de la compresion en la calidad de un modelo de 27B, comparando Q2_K (11,0 GB) con Q8_0 (29,1 GB) sobre el mismo conjunto de evaluacion.
+- Despliegue en estaciones de trabajo con una sola GPU: la version Q4_K_S (15,9 GB) o IQ4_XS (15,5 GB) cabe en GPUs de 24 GB y permite servir un asistente interno con latencia aceptable.
+- Generacion de descripciones textuales de imagenes: el modo text-image-to-text sirve para etiquetar o resumir contenido visual en pipelines de datos, siempre que el idioma de salida sea ingles.
+- Evaluacion comparativa de modelos abiertos: al ser Apache 2.0, se puede integrar en bancos de pruebas internos y comparar su rendimiento en tareas de razonamiento frente a otros modelos de tamano similar.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card del repositorio GGUF no incluye ninguna métrica (MMLU, HumanEval, GSM8K ni equivalentes), y el repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que tampoco existen evaluaciones de terceros asociadas. La búsqueda web realizada no devolvió ninguna fuente relacionada con el modelo.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Tamaño de pesos por cuantización (datos del autor): Q2_K 11,0 GB; Q3_K_S 12,4 GB; Q3_K_M 13,6 GB; Q3_K_L 14,7 GB; IQ4_XS 15,5 GB; Q4_K_S 15,9 GB; Q4_K_M 16,9 GB; Q5_K_S 19,1 GB; Q5_K_M 19,6 GB; Q6_K 22,5 GB; Q8_0 29,1 GB; f16 ≈54,6 GB (estimación a partir de los 27.320 millones de parámetros a 2 bytes por parámetro; el repositorio contiene asimismo el fichero f16 de referencia citado en las etiquetas del autor).
-- Componente multimodal: los ficheros mmproj añaden 0,7 GB (Q8_0) o 1,0 GB (f16) al consumo total.
-- VRAM estimada para inferencia: hay que sumar a los pesos el caché KV y el overhead del runtime. Como la longitud de contexto no está documentada, no es posible dar una cifra cerrada de caché KV; en la práctica, para Q4_K_M conviene reservar entre 18 y 22 GB en GPU.
-- GPU recomendadas: una única RTX 3090 o RTX 4090 (24 GB) para Q4_K_M, Q5_K_M y Q6_K con contextos moderados; A100 40 GB o H100 80 GB para f16 y Q8_0, o para Q4/Q5 con contextos largos; dos GPU de 24 GB en paralelo si se necesita Q8_0 con contexto amplio.
-- ¿Cabe en GPU de consumo? Sí: Q2_K, Q3_K e IQ4_XS entran incluso en tarjetas de 12-16 GB; Q4_K_M y Q5_K_M son las opciones razonables en 24 GB.
-- Ejecución sin GPU: llama.cpp permite descargar capas a CPU; para Q4_K_M se necesitan al menos unos 17 GB de RAM libres, y para Q8_0 alrededor de 30 GB.
-- Opciones de despliegue: llama.cpp y llama-server (API compatible con OpenAI), Ollama, LM Studio, koboldcpp, text-generation-webui y cualquier frontend que consuma GGUF. vLLM y TGI no son la vía natural para estos ficheros, ya que trabajan preferentemente con los pesos originales en safetensors.
-- Latencia y throughput estimados: no disponible (no hay mediciones publicadas, y dependen fuertemente de la cuantización, la GPU y la longitud de contexto).
+- VRAM estimada para inferencia (pesos mas overhead de contexto y KV cache):
+  - Q2_K: aproximadamente 11 GB de pesos; viable en GPUs de 16 GB con contexto moderado.
+  - Q4_K_S / Q4_K_M: 15,9-16,9 GB; recomendado para GPUs de 24 GB (RTX 3090, RTX 4090, A10G).
+  - Q5_K_M: 19,6 GB; requiere 24 GB o mas.
+  - Q6_K: 22,5 GB; ajustado en 24 GB, comodo en 32 GB o mas.
+  - Q8_0: 29,1 GB; requiere GPUs de 32-40 GB (A100 40 GB, A6000) o inferencia parcial en CPU.
+  - Ficheros mmproj: 0,7 GB (Q8_0) o 1,0 GB (f16) adicionales para el modo multimodal.
+- GPU recomendadas: RTX 4090 o RTX 3090 (24 GB) para cuantizaciones Q4 y Q5; A100 40 GB, A6000 o H100 para Q8_0 y contextos largos.
+- Cabe en GPU de consumo: si, en modelos con 24 GB de VRAM usando Q4_K_M o inferiores; en GPUs de 16 GB solo con Q2_K o Q3 y contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; los ficheros mmproj requieren builds de llama.cpp con soporte multimodal. Para el modelo base en safetensors, transformers, vLLM o TGI.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-La comparación se establece por rango de parámetros y por perfil multimodal, ya que no existen resultados de benchmarks de Sriqwen V1.3 que permitan comparar rendimiento. Los datos de los modelos alternativos corresponden a sus especificaciones públicas.
-
-| Modelo | Parámetros | Contexto | Multimodal | Licencia | Formatos disponibles |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Sriqwen-V1.3-GGUF (este modelo) | ≈27,3 mil millones | No disponible | Sí (mmproj) | Apache 2.0 | GGUF (12 cuantizaciones) y safetensors en el modelo base |
-| Qwen2.5-32B | 32,8 mil millones | 131.072 tokens | No en la variante de texto; existe Qwen2.5-VL aparte | Apache 2.0 | Safetensors, GGUF de terceros |
-| Gemma 3 27B | 27 mil millones | 131.072 tokens (según configuración) | Sí | Licencia Gemma (con condiciones de uso) | Safetensors, GGUF de terceros |
-| Mistral Small 3.1 24B | 24 mil millones | 131.072 tokens | Sí | Apache 2.0 | Safetensors, GGUF de terceros |
+| Sriqwen-V1.3 (esta ficha) | 27,3B | no disponible | Apache 2.0 | GGUF, safetensors | Multimodal texto-imagen, solo ingles, orientado a razonamiento |
+| Gemma 2 27B | 27B | 8K | Gemma Terms | safetensors, GGUF | Denso, ampliamente cuantizado, sin vision en la variante de texto |
+| Qwen2.5-VL 32B | 32B | 128K (segun documentacion del autor) | Apache 2.0 | safetensors, GGUF | Multimodal con contexto largo y multilingue |
+| Mistral Small 24B | 24B | 32K | Apache 2.0 | safetensors, GGUF | Denso, multilingue, sin vision |
 
-Comparación de rendimiento: no disponible para Sriqwen V1.3, al no haberse publicado benchmarks. En disponibilidad, este repositorio destaca por ofrecer un abanico de cuantizaciones estáticas muy completo, pero no ofrece variantes imatrix o ponderadas, que sí suelen existir para los modelos de la comparativa.
+La comparativa se basa en caracteristicas publicas de cada familia; no se dispone de resultados de benchmarks de Sriqwen-V1.3 para contrastar rendimiento real. Los datos de contexto de los modelos alternativos deben verificarse en sus model cards oficiales.
 
 ## Limitaciones y advertencias
 
-- Cobertura lingüística restringida: el modelo solo declara inglés (en). No hay evidencia de calidad en castellano, por lo que no debería desplegarse en producción para español sin evaluación previa.
-- Ausencia total de benchmarks: no hay métricas publicadas ni evaluaciones independientes; cualquier afirmación de calidad es especulativa hasta que se realicen pruebas propias.
-- Riesgo de alucinación: inherente a cualquier modelo generativo, y aquí sin documentación de mitigaciones (RLHF, DPO o filtros). En tareas de razonamiento, una cadena de pensamiento coherente no garantiza que el resultado sea correcto.
-- Dataset de ajuste opaco: la model card no describe la composición de sriq-ai/sriq-sft-v1.3, por lo que se desconocen sesgos potenciales, presencia de datos sintéticos y posibles problemas de contaminación.
-- Cuantizaciones de baja precisión: las variantes Q2_K y Q3_K (11-14,7 GB) degradan de forma perceptible la calidad, especialmente en tareas de razonamiento. Para razonamiento conviene partir de Q4_K_M o superior.
-- Sin cuantizaciones ponderadas ni imatrix: el propio autor indica que no las ha generado, lo que limita la calidad máxima alcanzable a igual tamaño de fichero.
-- Restricciones de licencia: la ficha declara Apache 2.0 tanto para la cuantización como para el modelo base, lo que en principio permite uso comercial. No obstante, conviene verificar la licencia real del modelo base original, ya que la información disponible solo refleja los metadatos de Hugging Face.
-- Metadatos con fechas anómalas: el repositorio figura como creado y actualizado el 17 de septiembre de 2026, una fecha posterior a la esperada; conviene contrastar la procedencia y la vigencia del repositorio antes de integrarlo.
-- Repositorio sin tracción: 0 descargas y 0 likes implican ausencia de validación comunitaria, de informes de errores y de correcciones.
-- Compatibilidad multimodal dependiente del runtime: para usar la entrada de imagen es imprescindible cargar el fichero mmproj correspondiente en llama.cpp; otras herramientas pueden no soportarlo todavía.
-- Longitud de contexto desconocida: impide planificar despliegues con documentos largos o conversaciones extensas sin pruebas empíricas de degradación.
+- Idioma: el modelo esta etiquetado unicamente para ingles; el rendimiento en castellano no esta documentado y probablemente sea inferior.
+- Contexto: se desconoce la longitud de contexto nativa, lo que impide garantizar conversaciones largas o analisis de documentos extensos.
+- Alucinacion: sin benchmarks publicados ni evaluaciones independientes, no hay evidencia sobre la tasa de alucinacion en tareas factuales.
+- Sesgos: no se documentan evaluaciones de sesgo, toxicidad ni seguridad; el dataset de SFT no es publico en detalle.
+- Licencia: Apache 2.0 permite uso comercial, pero el modelo base y el dataset de entrenamiento pueden tener condiciones adicionales no reflejadas en la model card; conviene revisar la ficha de sriq-ai/Sriqwen-V1.3.
+- Cuantizaciones agresivas: Q2_K y Q3_K_S degradan la calidad de forma notable en modelos de este tamano; para produccion se recomienda Q4_K_M o superior.
+- Soporte multimodal: los ficheros mmproj requieren runtimes con soporte especifico; no todos los clientes GGUF los procesan correctamente.
+- Madurez: el modelo tiene pocas descargas (320) y ningun like, lo que sugiere escasa validacion por parte de la comunidad.
+- Tool calling y agentes: no hay evidencia de soporte nativo, por lo que no deberia asumirse en disenos de produccion.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Sriqwen-V1.3-GGUF
 - Modelo base: https://huggingface.co/sriq-ai/Sriqwen-V1.3
-- Dataset de ajuste: https://huggingface.co/datasets/sriq-ai/sriq-sft-v1.3
-- Página de resumen y descargas del cuantizador: https://hf.tst.eu/model#Sriqwen-V1.3-GGUF
-- README de referencia sobre uso de ficheros GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Gráfico comparativo de perplejidad entre tipos de cuantización: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre tipos de cuantización: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Peticiones de cuantización del autor: https://huggingface.co/mradermacher/model_requests
-- Empresa del cuantizador: https://www.nethype.de/
-- La búsqueda web realizada no devolvió ningún resultado relacionado con el modelo: los enlaces obtenidos correspondían a foros sobre billetes de ferry y a un programa de consumo neerlandés, sin relación alguna con Sriqwen V1.3.
+- Dataset de SFT: https://huggingface.co/datasets/sriq-ai/sriq-sft-v1.3
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Sriqwen-V1.3-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Sriqwen-V1.3-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

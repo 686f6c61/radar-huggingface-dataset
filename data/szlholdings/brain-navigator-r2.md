@@ -2,87 +2,89 @@
 
 ## Resumen
 
-BrainNavigator-R2 es un adaptador LoRA de 0.800 millones de parámetros desarrollado por SZL Holdings, una organización centrada en infraestructura de IA gobernada para decisiones inspeccionables. El adaptador se basa en el modelo Qwen/Qwen3.5-0.8B, que cuenta con licencia Apache-2.0, y está diseñado específicamente para tareas de navegación y abstención en agentes gobernados, con un énfasis en la recuperación de información y la toma de decisiones con límites de prueba.
+brain-navigator-r2 es un adaptador LoRA (la librería declarada es `peft`) publicado por SZLHOLDINGS sobre el modelo base Qwen/Qwen3.5-0.8B, un transformer denso de la familia Qwen 3.5 con unos 0,8 mil millones de parámetros. El artefacto subido contiene 752.393.024 parámetros en formato safetensors y ocupa 6,1 GB en el repositorio, lo que sugiere que los pesos se distribuyen en precisión alta (bf16/fp32) junto con los ficheros del adaptador. La arquitectura declarada en las etiquetas es `qwen3_5_text`, es decir, la variante exclusivamente de texto de la familia.
 
-El modelo se presenta como un "SKU separado" que no sobrescribe otros modelos de la misma familia, como SZL-Khipu-1.5B-BrainNavigator. Su entrenamiento se realizó con un currículum sintético de instrucciones NAVIGATE/ABSTAIN sobre 575 handles públicos, y se entrenó en una GPU RTX 5050 Laptop 8GB. La model card menciona que la elegibilidad para publicación es falsa hasta que se realice una generación medida, lo que sugiere que se trata de un experimento de investigación en fase temprana.
+El modelo se presenta dentro de lo que el autor denomina "governed-AI estate": una colección de modelos, datasets y Spaces con trazabilidad de origen y resultados verificables mediante ficheros de "receipts" (registros de auditoría). La model card es explícita sobre sus límites: cualquier afirmación de entrenamiento o evaluación que no esté respaldada por un receipt con fecha se marca como UNKNOWN, y no se publica ninguna cifra de benchmark en la propia tarjeta. Esto es relevante para quien evalúe el modelo: la licencia Apache 2.0 y el tamaño reducido lo hacen fácil de desplegar, pero la ausencia de métricas medidas obliga a validarlo por cuenta propia.
 
-A pesar de su interés conceptual, el repositorio de Hugging Face muestra un tamaño de 0.0 GB y cero descargas, lo que indica que probablemente los pesos del adaptador no están disponibles públicamente o el repositorio está vacío. Esto limita su uso práctico inmediato.
+Por su escala (menos de mil millones de parámetros) y su naturaleza de adaptador sobre un modelo base pequeño, encaja en escenarios de inferencia en CPU o GPU de consumo, prototipado rápido y tareas acotadas de generación de texto. No hay información pública sobre el corpus de entrenamiento del adaptador, los idiomas soportados ni el propósito concreto del ajuste más allá del nombre "brain navigator".
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador) sobre Qwen/Qwen3.5-0.8B |
-| Parametros totales | No disponible (el adaptador LoRA tiene r=16, α=32, pero no se indica el número exacto de parámetros del adaptador) |
-| Parametros activos | No disponible (al ser LoRA, solo se activan los parámetros del adaptador durante el ajuste fino) |
-| Longitud de contexto | No disponible (heredada del modelo base Qwen3.5-0.8B, pero no se especifica) |
-| Tipos de cuantizacion | bf16 (según la model card, se usó bf16 para el LoRA; no se mencionan otras cuantizaciones) |
-| Idiomas soportados | No disponibles |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (según los tags), aunque el repositorio parece vacío (0.0 GB) |
+| Arquitectura | Transformer denso (familia Qwen 3.5, variante de texto `qwen3_5_text`); adaptador LoRA sobre Qwen/Qwen3.5-0.8B |
+| Parametros totales | 752.393.024 (según safetensors del repositorio) |
+| Parametros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | no disponible (heredada del modelo base Qwen3.5-0.8B; no declarada en la model card) |
+| Tipos de cuantizacion | no disponible en la model card; al ser compatible con la familia Qwen y PEFT, es cuantizable con las herramientas habituales (GGUF, AWQ, GPTQ) previa conversión |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (repositorio de 6,1 GB); compatible con PEFT |
 
 ## Arquitectura y entrenamiento
 
-BrainNavigator-R2 es un adaptador LoRA de rango 16 y alpha 32, entrenado en precisión bf16 sobre el modelo base Qwen/Qwen3.5-0.8B. La model card indica explícitamente que QLoRA está prohibido en Qwen3.5, por lo que el entrenamiento se realizó directamente en bf16 sin cuantización del adaptador. El entrenamiento se llevó a cabo en una GPU RTX 5050 Laptop 8GB (arquitectura Blackwell).
+El artefacto es un ajuste PEFT (LoRA) sobre Qwen/Qwen3.5-0.8B, un transformer denso decoder-only de la familia Qwen 3.5 en su variante solo texto. El repositorio combina el adaptador con pesos en safetensors que suman 752.393.024 parámetros, ligeramente por debajo de los ~0,8B del modelo base, lo que es coherente con un adaptador de bajo rango más los tensores base o con un guardado parcial. La etiqueta de arquitectura `qwen3_5_text` confirma que no se incluyen componentes multimodales.
 
-El proceso de entrenamiento utilizó un currículum sintético compuesto por instrucciones NAVIGATE y ABSTAIN, aplicadas sobre 575 handles públicos. No se especifica el número total de tokens de entrenamiento ni la composición exacta del dataset. La model card menciona un "grafo privado" con 9464 nodos admitidos a gradientes, pero el valor es 0, lo que sugiere que no se utilizaron datos privados en el entrenamiento. No se menciona el uso de RLHF, DPO u otras técnicas de alineación.
-
-Una innovación destacable es el concepto de "governed-agent" (agente gobernado), que parece implicar un mecanismo de control para decisiones inspeccionables, con límites de prueba y recepción de estados. Sin embargo, los detalles técnicos concretos no están disponibles en la información proporcionada.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones técnicas específicas del ajuste. La model card declara explícitamente que las afirmaciones de entrenamiento y evaluación residen en ficheros de receipt del "estate mesh" del autor y que cualquier dato no registrado allí se considera UNKNOWN. En consecuencia, no es posible verificar ni el proceso de ajuste ni la calidad del mismo a partir de la información pública del repositorio.
 
 ## Capacidades
 
-- Generación de texto conversacional: al ser un adaptador sobre Qwen3.5-0.8B, hereda las capacidades básicas de generación de texto del modelo base, aunque no se especifican las capacidades exactas de Qwen3.5-0.8B.
-- Navegación y abstención: el entrenamiento con instrucciones NAVIGATE/ABSTAIN sugiere que el adaptador está diseñado para decidir cuándo navegar (buscar información) y cuándo abstenerse de responder, probablemente en contextos de agentes con gobernanza.
-- Recuperación de información: los tags incluyen "retrieval", lo que indica un enfoque en tareas de recuperación, posiblemente integrado con el "holograma de recuperación de software" mencionado en la model card.
-- Soporte de tool calling y agentes: no se menciona explícitamente, pero la orientación a "governed-agent" y la existencia de un Developer Hub con integración MCP sugieren que podría haber soporte para herramientas, aunque no está confirmado en la información disponible.
+- Generación de texto autoregresiva, heredada del modelo base Qwen3.5-0.8B.
+- Razonamiento y respuesta a instrucciones en la medida en que el adaptador LoRA las haya reforzado; no hay documentación que lo confirme.
+- Soporte de tool calling / function calling: no disponible de forma explícita en la model card; dependería del modelo base.
+- Soporte de agentes y razonamiento multi-paso: no documentado.
+- Capacidades multilingües: no disponibles (el campo de idiomas no está declarado).
+- Capacidades especiales (modo thinking, visión, audio): no disponibles; la variante es solo texto.
+- Integración con el ecosistema PEFT/Hugging Face Transformers para carga del adaptador.
 
 ## Casos de uso
 
-Dado el estado experimental del modelo y la falta de pesos públicos, los casos de uso son hipotéticos y basados en la descripción del autor:
-
-- Agentes de IA gobernados: el modelo podría utilizarse como componente de decisión en un sistema agéntico donde se requiere inspeccionabilidad y límites de prueba. Por ejemplo, un agente que debe abstenerse de actuar cuando no tiene información suficiente, evitando decisiones no verificables.
-- Recuperación de información con control de calidad: el adaptador podría integrarse en un pipeline de retrieval-augmented generation (RAG) donde la abstención se activa cuando la confianza en los documentos recuperados es baja, reduciendo alucinaciones.
-- Prototipos de investigación en gobernanza de IA: dado su tamaño reducido (0.8B), es adecuado para experimentos académicos sobre mecanismos de control y verificación en modelos pequeños.
-- Evaluación de currículums sintéticos: el modelo podría servir como banco de pruebas para estudiar el efecto de entrenamientos basados en NAVIGATE/ABSTAIN en la capacidad de un modelo para reconocer sus propios límites.
-- Integración en el ecosistema SZL Holdings: como parte de la infraestructura "governed-agent", podría usarse junto con el repositorio SZL-Khipu-1.5B-BrainNavigator para tareas específicas que requieran un modelo más pequeño.
-- Demostraciones de LoRA sobre Qwen3.5: al ser un adaptador LoRA, puede servir como ejemplo de ajuste fino eficiente en parámetros para la familia Qwen3.5.
+- Prototipado de asistentes conversacionales ligeros: al apoyarse en un modelo de 0,8B, puede ejecutarse en una sola GPU de consumo o incluso en CPU, lo que permite iterar sobre prompts y adaptadores sin coste de infraestructura dedicada.
+- Clasificación y extracción de información en pipelines por lotes: su tamaño reducido permite procesar grandes volúmenes de documentos con latencia baja y coste por token mínimo, siempre que se valide la calidad en el dominio concreto.
+- Filtrado y enrutado previo en arquitecturas multi-modelo: puede actuar como primer nivel que descarta consultas triviales o las redirige a un modelo mayor, reduciendo el coste global del sistema.
+- Generación de texto asistida en entornos con requisitos de soberanía del dato: al ser Apache 2.0 y desplegable on-premise, encaja en organizaciones que no pueden enviar datos a APIs externas.
+- Investigación sobre ajuste fino eficiente: sirve como ejemplo práctico de adaptador LoRA sobre Qwen3.5-0.8B para estudiar técnicas PEFT, comparar rangos y medir degradación respecto al base.
+- Evaluación comparativa de "governed AI": útil para quienes quieran auditar la metodología de receipts del autor y reproducir sus verificaciones sobre un artefacto pequeño y manejable.
+- Educación y demos interactivas: su huella de memoria permite desplegarlo en portátiles con GPU integrada para talleres y demostraciones sin infraestructura cloud.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card menciona un archivo `eval_report.json` con resultados de generación "Named-N", pero no se proporcionan datos numéricos. Tampoco hay comparaciones con otros modelos en la información proporcionada.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente que no se afirma ninguna cifra de benchmark más allá de lo que una auditoría fechada haya medido, y que los datos no registrados en los receipts del estate se consideran UNKNOWN.
 
 ## Requisitos de hardware
 
-- Al ser un adaptador LoRA sobre un modelo base de 0.8B, la inferencia requiere cargar el modelo base Qwen3.5-0.8B más los pesos del adaptador. El modelo base en bf16 ocupa aproximadamente 1.6 GB de VRAM (0.8B × 2 bytes), por lo que cabe en GPUs con al menos 2-4 GB de VRAM.
-- El entrenamiento se realizó en una RTX 5050 Laptop 8GB, lo que indica que el ajuste fino es factible en GPUs de consumo medio con 8GB de VRAM.
-- Para despliegue, se podría usar vLLM, llama.cpp, Ollama o TGI, siempre que se convierta el adaptador al formato adecuado (por ejemplo, GGUF). Sin embargo, no se proporcionan archivos GGUF para este adaptador específico.
-- La latencia y el throughput dependen del hardware y del motor de inferencia. Para un modelo de 0.8B, se espera una latencia baja (del orden de decenas de milisegundos por token en GPUs modernas), pero no hay datos oficiales.
+- VRAM estimada para inferencia: en bf16, los ~752M parámetros requieren aproximadamente 1,5 GB solo para pesos, más caché KV y overhead del runtime; en la práctica, entre 2 y 4 GB para contextos moderados. En cuantización de 8 bits, en torno a 1 GB; en 4 bits, por debajo de 1 GB.
+- GPU recomendadas: cualquier GPU con 4 GB o más de VRAM es suficiente (RTX 3050, RTX 4060, RTX 4090, A100, H100). En A100/H100 el modelo estará limitado por el ancho de banda de memoria y no por la computación.
+- Cabe en GPU de consumo: sí, en prácticamente todas las GPU discretas modernas, incluidas las integradas con memoria compartida suficiente.
+- Opciones de despliegue: Transformers con PEFT para cargar el adaptador; llama.cpp/Ollama tras conversión a GGUF; vLLM y TGI son viables pero sobredimensionados para este tamaño. Para CPU pura, llama.cpp es la opción más eficiente.
+- Latencia y throughput estimados: no disponibles. Como referencia de orden de magnitud para un modelo de esta escala, en una RTX 4090 se pueden esperar cientos de tokens por segundo en bf16 con lotes pequeños, pero no hay medición publicada para este artefacto concreto.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
-|---|---|---|---|---|---|
-| SZLHOLDINGS/brain-navigator-r2 | LoRA sobre 0.8B | No disponible | Apache-2.0 | safetensors (repo vacío) | No disponible (0 descargas, 0.0 GB) |
-| SZLHOLDINGS/SZL-Khipu-1.5B-BrainNavigator | 1.5B | No disponible | No especificada | No especificado | Disponible en Hugging Face (con versión GGUF por mradermacher) |
-| Qwen/Qwen3.5-0.8B (modelo base) | 0.8B | No disponible | Apache-2.0 | safetensors | Disponible |
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| SZLHOLDINGS/brain-navigator-r2 | 752M (adaptador sobre Qwen3.5-0.8B) | no disponible | Apache 2.0 | Sin benchmarks publicados; artefacto PEFT |
+| Qwen/Qwen3.5-0.8B (base) | ~0,8B | no disponible | Apache 2.0 (según familia Qwen) | Modelo base sin ajuste; referencia directa |
+| Qwen2.5-0.5B / 1.5B | 0,5B / 1,5B | 32K (familia Qwen2.5) | Apache 2.0 | Alternativas de escala comparable con benchmarks públicos |
+| Llama 3.2 1B | 1,2B | 128K | Llama 3.2 Community License | Mayor contexto; licencia con restricciones de uso |
 
-La comparativa se limita a modelos de la misma familia SZL Holdings y al modelo base. No hay datos de rendimiento para establecer comparaciones cuantitativas. El modelo BrainNavigator-R2 se distingue por su tamaño reducido y su enfoque en gobernanza, pero su disponibilidad práctica es nula en el momento de redactar esta ficha.
+La comparación con alternativas de la misma escala es difícil porque brain-navigator-r2 no publica métricas. Frente al modelo base Qwen3.5-0.8B, la única diferencia verificable es la presencia del adaptador; frente a modelos de la generación anterior como Qwen2.5-0.5B o Llama 3.2 1B, la ventaja potencial sería la arquitectura más reciente del base, pero sin datos medidos no puede afirmarse.
 
 ## Limitaciones y advertencias
 
-- El repositorio de Hugging Face tiene un tamaño de 0.0 GB y cero descargas, lo que sugiere que los pesos del adaptador no están subidos o el repositorio está vacío. No es posible utilizarlo directamente.
-- La model card indica que `publication_eligible` es falso hasta que se realice una generación medida. Esto implica que el modelo no está validado ni listo para uso público.
-- No se proporcionan datos sobre sesgos, alucinaciones o limitaciones de contexto. Al ser un adaptador sobre un modelo pequeño (0.8B), es probable que tenga limitaciones significativas en tareas complejas.
-- La licencia Apache-2.0 permite uso comercial, pero al no haber pesos disponibles, esta licencia es teórica.
-- El concepto de "governed-agent" no está documentado en detalle; no hay especificaciones sobre cómo se implementa la gobernanza ni qué garantías ofrece.
-- La fecha de creación (2026-08-29) es posterior a la fecha actual, lo que podría indicar un error en los metadatos o un modelo ficticio. No se debe asumir que es un modelo real y funcional.
+- Ausencia total de benchmarks y de documentación del entrenamiento: no hay forma de verificar la calidad del ajuste ni compararlo con alternativas.
+- Riesgo de alucinación: inherente a los modelos de 0,8B, que tienen capacidad limitada de razonamiento factual y tienden a inventar detalles en tareas de conocimiento.
+- Idiomas no declarados: no se puede asumir un rendimiento multilingüe equilibrado; habría que evaluarlo por idioma.
+- Longitud de contexto no especificada en la tarjeta: debe consultarse la del modelo base Qwen3.5-0.8B antes de diseñar aplicaciones con documentos largos.
+- Naturaleza de adaptador LoRA: requiere cargar el modelo base Qwen/Qwen3.5-0.8B además del adaptador, con la dependencia de versión de PEFT y Transformers que ello implica.
+- Trazabilidad limitada: la model card remite a receipts externos alojados en el "estate mesh" del autor; sin acceso a esos ficheros, las afirmaciones del autor no son verificables de forma independiente.
+- Licencia Apache 2.0: permite uso comercial y modificación, pero conviene revisar también la licencia del modelo base y de los datos de ajuste, no documentados.
+- Madurez del repositorio: 319 descargas y 0 likes en el momento de la consulta; no hay evidencia de adopción ni de soporte de la comunidad.
 
 ## Enlaces
 
-- [Página del modelo en Hugging Face](https://huggingface.co/SZLHOLDINGS/brain-navigator-r2)
-- [Modelo relacionado: SZL-Khipu-1.5B-BrainNavigator](https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B-BrainNavigator)
-- [Versión GGUF de SZL-Khipu-1.5B-BrainNavigator](https://huggingface.co/mradermacher/SZL-Khipu-1.5B-BrainNavigator-GGUF)
-- [Perfil de SZL Holdings en Hugging Face](https://huggingface.co/SZLHOLDINGS)
-- [GitHub de SZL Holdings](https://github.com/szl-holdings)
-- [Developer Hub de SZL Holdings](https://holdings.a-11-oy.com/docs-site/developers/)
-- [Espacio second-brain (holograma de recuperación)](https://huggingface.co/spaces/SZLHOLDINGS/second-brain)
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/brain-navigator-r2
+- Organización del autor en Hugging Face: https://huggingface.co/SZLHOLDINGS
+- Organización en GitHub: https://github.com/szl-holdings
+- Repositorio de generación de tarjetas (estate-cards): https://github.com/szl-holdings/estate-cards
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

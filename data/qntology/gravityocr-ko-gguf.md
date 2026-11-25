@@ -2,49 +2,51 @@
 
 ## Resumen
 
-GravityOCR-KO-gguf es una conversión al formato GGUF de un modelo de reconocimiento óptico de caracteres (OCR) especializado en coreano, identificado internamente como `glm_ocr` y publicado por el usuario Qntology en Hugging Face. El modelo cuenta con 672.950.784 parámetros totales (aproximadamente 673 millones) y un repositorio de 2,0 GB, lo que lo sitúa en la gama de modelos compactos aptos para despliegue en hardware moderado. La model card publicada por el autor es prácticamente inexistente: solo incluye la declaración de licencia MIT, sin documentación técnica, instrucciones de uso ni datos de entrenamiento.
+GravityOCR-KO es un ajuste fino por continuacion (continued fine-tuning) en coreano del modelo `trillionlabs/GravityOCR`, publicado por el usuario Qntology en formato GGUF. El modelo base es un checkpoint `GlmOcrForConditionalGeneration` orientado a OCR y comprension de documentos, y este ajuste incorpora replay de los pools de entrenamiento originales en ingles y CJK para retener las tareas de tablas y formulas. Con 672.950.784 parametros (aproximadamente 673 millones), se situa en la gama de modelos pequenos especializados, lo que facilita su despliegue en hardware modesto.
 
-La relevancia de este modelo radica en su doble condición: por un lado, aborda una tarea específica y con demanda real como es el OCR sobre texto coreano, un idioma con menor cobertura que el inglés o el chino en el ecosistema de modelos abiertos; por otro, su empaquetado en GGUF facilita la inferencia local mediante herramientas como llama.cpp u Ollama, sin necesidad de GPU dedicada. El tag `endpoints_compatible` sugiere compatibilidad con la infraestructura de endpoints de Hugging Face.
+La relevancia tecnica del modelo reside en su esquema de decodificacion: conserva `ar_loss_weight: 1.0`, de modo que mantiene una ruta autorregresiva (AR) entrenada ademas de la ruta de difusion por bloques (block diffusion). Esto le permite auto-especular: la difusion genera borradores y la ruta AR los verifica, una variante de decodificacion especulativa que puede reducir el numero de pasos de generacion. El modelo se distribuye con licencia MIT y un repositorio de 3,9 GB en formato GGUF, lo que apunta a inferencia local eficiente.
 
-No obstante, la ausencia total de documentación, de resultados de benchmarks y de información sobre el dataset de entrenamiento limita seriamente cualquier evaluación rigurosa. Esta ficha se construye exclusivamente a partir de los metadatos disponibles en Hugging Face, y numerosos campos quedan marcados como "no disponible".
+No obstante, la informacion publica es escasa: la model card se marca como «internal, private», no hay resultados de benchmarks, no se detalla la composicion del dataset de ajuste ni el numero de tokens de entrenamiento, y la ficha de Hugging Face no declara el pipeline ni los idiomas de forma explicita (aunque las etiquetas indican coreano e ingles). Todo dato no confirmado se marca como «no disponible» en esta ficha.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (tag interno `glm_ocr`; presumiblemente transformer, sin confirmar) |
+| Arquitectura | Transformer con ruta autorregresiva (AR) y ruta de difusion por bloques (block diffusion); clase `GlmOcrForConditionalGeneration` |
 | Parametros totales | 672.950.784 |
-| Parametros activos | no disponible (no consta que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (formato GGUF; niveles concretos no especificados) |
-| Idiomas soportados | no disponible (el sufijo `-KO` sugiere coreano; sin confirmar en la model card) |
+| Parametros activos | no disponible (no es un modelo MoE segun la informacion disponible) |
+| Longitud de contexto | 16.384 tokens de longitud maxima de entrenamiento (`max_length=16384`); contexto de inferencia no confirmado |
+| Tipos de cuantizacion | no disponible (el repositorio se distribuye en GGUF; los niveles concretos no se detallan) |
+| Idiomas soportados | Coreano (ko) e ingles (en), segun las etiquetas de la model card; cobertura real no verificada |
 | Licencia | MIT |
-| Formato de pesos | GGUF (repositorio de 2,0 GB) |
+| Formato de pesos | GGUF (repositorio de 3,9 GB); el modelo base usa safetensors en `transformers` |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo. El tag `glm_ocr` apunta a una posible base de la familia GLM orientada a OCR, pero la model card no confirma ni detalla esta circunstancia, ni especifica si se trata de un transformer estándar, un modelo multimodal con encoder visual o una arquitectura híbrida. Tampoco se documenta el mecanismo de atención, la longitud de contexto nativa ni el tokenizador empleado.
+El modelo es un checkpoint `GlmOcrForConditionalGeneration` que combina una ruta autorregresiva estandar con una ruta de difusion por bloques. Segun la model card, el entrenamiento usa un objetivo conjunto AR + block diffusion con `ar_loss_weight=1.0`, `bd_size=32` y jitter en la fase de bloques. Los limites de entrenamiento declarados son `max_length=16384`, `max_response_length=6144` y `max_vision_tokens=8192`, lo que indica soporte de entradas visuales de hasta 8.192 tokens de vision y respuestas de hasta 6.144 tokens.
 
-Respecto al entrenamiento, no hay datos publicados sobre el volumen de tokens, la composición del dataset, el uso de RLHF/DPO ni ninguna innovación técnica (decodificación especulativa, atención lineal, etc.). El único dato verificable es el recuento de parámetros (672.950.784) y el tamaño del repositorio en formato GGUF (2,0 GB), coherente con una cuantización de pocos bits por parámetro.
+El ajuste parte de la release post-GRPO de `trillionlabs/GravityOCR` (no de la base GLM-OCR) y aplica fine-tuning continuado en coreano con replay de los pools originales en ingles y CJK para preservar las tareas de tablas y formulas. No se especifica el volumen de tokens de entrenamiento, la composicion exacta del dataset, ni si se aplicaron etapas adicionales de RLHF o DPO mas alla del GRPO heredado del modelo base. La innovacion destacable es la auto-especulacion: la ruta de difusion produce borradores que la ruta AR verifica, lo que requiere el repositorio `nanoVLM-DiffusionOCR` (en proceso) o el parche de SGLang para servir el modelo con esta capacidad.
 
 ## Capacidades
 
-- Reconocimiento óptico de caracteres: la denominación `OCR` y el sufijo `-KO` indican orientación a la extracción de texto, presumiblemente en coreano, aunque la model card no lo confirma explícitamente.
-- Inferencia local en formato GGUF: compatible con runtimes de cuantización como llama.cpp u Ollama, según el formato del repositorio.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede servirse a través de la infraestructura de endpoints de Hugging Face.
-- Generación de texto, razonamiento, código, matemáticas, visión general, tool calling, agentes y capacidades multilingües: no disponible; no hay evidencia documentada de ninguna de ellas.
-- Modo thinking, audio o visión más allá del OCR: no disponible.
+- Reconocimiento optico de caracteres (OCR) sobre documentos, con soporte declarado para coreano e ingles.
+- Comprension de documentos: extraccion de contenido estructurado, incluida la retencion de tareas de tablas y formulas gracias al replay del entrenamiento original.
+- Generacion autorregresiva estandar mediante `transformers>=5.8` con la clase `GlmOcrForConditionalGeneration`.
+- Decodificacion auto-especulativa (borradores por difusion, verificacion AR) con el repositorio `nanoVLM-DiffusionOCR` o el parche de SGLang.
+- Procesamiento de imagenes con hasta 8.192 tokens de vision por entrada.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades de audio o thinking mode: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Digitalización de documentos administrativos coreanos: el modelo podría emplearse para extraer texto de formularios, facturas o expedientes escaneados en coreano, aprovechando su tamaño compacto para procesamiento por lotes en servidores sin GPU de gama alta.
-- Archivado y búsqueda de prensa histórica: integrado en un pipeline de OCR, permitiría convertir hemerotecas escaneadas en coreano a texto indexable, habilitando búsqueda full-text sobre corpus antiguos.
-- Accesibilidad de material impreso: conversión de libros o folletos en coreano a texto digital para lectores de pantalla y sistemas de texto-a-voz.
-- Extracción de datos en entornos de oficina: procesamiento local de escaneos confidenciales sin enviar documentos a servicios en la nube, gracias al despliegue en GGUF sobre hardware propio.
-- Preprocesado para pipelines de NLP en coreano: generación de transcripciones que alimenten modelos de traducción, resumen o análisis de sentimiento sobre documentos escaneados.
-- Prototipado e investigación en OCR de bajo recurso: su licencia MIT y su formato GGUF lo hacen adecuado para experimentación académica y comparación de técnicas de cuantización sobre tareas de OCR coreano.
-
-En todos los casos, la ausencia de documentación obliga a validar empíricamente el comportamiento real del modelo antes de llevarlo a producción.
+- Digitalizacion de facturas y albaranes en coreano: el modelo puede extraer campos estructurados de documentos escaneados gracias a su especializacion OCR y a la retencion de tareas de tablas, con salida en texto o JSON mediante postprocesado.
+- Procesamiento de formularios administrativos: con hasta 8.192 tokens de vision por pagina, puede manejar documentos densos con tablas y campos multiples, adecuado para pipelines de back-office.
+- Extraccion de formulas y tablas en documentacion tecnica: el replay de los pools originales preserva esta capacidad, util para digitalizar manuales y papers en entornos bilingues coreano-ingles.
+- Despliegue local en estaciones de trabajo: con aproximadamente 673 millones de parametros y pesos GGUF, es viable en GPU de consumo para tareas de OCR por lotes sin depender de APIs externas.
+- Servicio de OCR de baja latencia con SGLang: la ruta de auto-especulacion (difusion + verificacion AR) permite servir peticiones con menos pasos de generacion, adecuado para aplicaciones interactivas de escaneo.
+- Preprocesado para RAG documental: convertir PDFs e imagenes en texto estructurado antes de indexar en un sistema de recuperacion, aprovechando el soporte bilingue coreano-ingles.
+- Traduccion asistida de documentos escaneados: al cubrir coreano e ingles, puede transcribir documentos en un idioma y facilitar su versionado en el otro, aunque la calidad de traduccion no esta documentada.
 
 ## Benchmarks y rendimiento
 
@@ -52,27 +54,34 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 672.950.784 parámetros, una cuantización de 4 bits requeriría aproximadamente 0,4-0,5 GB solo para los pesos, más el overhead del runtime y del contexto; una cuantización de 8 bits rondaría 0,7-0,8 GB. Estas cifras son estimaciones a partir del recuento de parámetros, no datos publicados por el autor.
-- GPU recomendadas: no disponible. Por tamaño, cualquier GPU consumer con 4 GB o más de VRAM debería poder alojar el modelo en cuantizaciones bajas, pero no hay confirmación oficial.
-- Compatibilidad con GPU consumer: probable en tarjetas como RTX 3060, RTX 4060 o superiores, así como en Apple Silicon mediante Metal; sin validación documentada.
-- Opciones de despliegue: llama.cpp, Ollama y otros runtimes compatibles con GGUF; también podría servirse vía endpoints de Hugging Face según el tag `endpoints_compatible`.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible de forma oficial. Con 672.950.784 parametros, en bfloat16 el peso ronda los 1,3 GB; en cuantizaciones GGUF de 4-8 bits el peso se situaria aproximadamente entre 0,4 y 0,7 GB, a lo que hay que sumar la cache KV y los tokens de vision (hasta 8.192 por entrada), que elevan el consumo de forma notable.
+- GPU recomendadas: no disponible en la informacion proporcionada. Por tamano, el modelo deberia caber en GPU de consumo con suficiente VRAM para la cache de vision, pero no hay datos oficiales de latencia ni throughput.
+- Cabe en GPU de consumo: probable por numero de parametros, pero no confirmado para el peor caso de 8.192 tokens de vision.
+- Opciones de despliegue: `transformers>=5.8` para decodificacion AR; SGLang con parche para auto-especulacion; el repositorio `nanoVLM-DiffusionOCR` (en proceso) para decodificacion auto-especulativa. El formato GGUF sugiere compatibilidad con runtimes de inferencia GGUF, aunque no se detalla cuales.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye modelos comparables de OCR coreano ni datos de rendimiento que permitan establecer una comparación rigurosa con alternativas como PaddleOCR, Tesseract o modelos OCR multimodales de mayor tamaño.
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| GravityOCR-KO (este modelo) | 672.950.784 | 16.384 (entrenamiento) | OCR + comprension de documentos, AR + difusion por bloques | MIT | GGUF en Hugging Face |
+| trillionlabs/GravityOCR (base) | no disponible | no disponible | OCR + comprension de documentos, AR + difusion por bloques | no disponible | Hugging Face |
+| Alternativas OCR especializadas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: la model card solo declara la licencia MIT; no hay instrucciones de uso, plantilla de prompt, tokenizador documentado ni descripción de la arquitectura.
-- Idiomas no confirmados: el sufijo `-KO` sugiere coreano, pero no se especifica si el modelo soporta otros idiomas ni su cobertura exacta.
-- Sin benchmarks: no es posible evaluar su precisión frente a alternativas establecidas en OCR coreano.
-- Riesgo de alucinación: inherente a los modelos generativos; en tareas OCR puede traducirse en texto inventado o corrupción de caracteres, especialmente con imágenes de baja calidad.
-- Sesgos desconocidos: al no documentarse el dataset de entrenamiento, no puede evaluarse el sesgo respecto a tipografías, dominios (manuscrito, imprenta, formularios) o variantes dialectales.
-- Licencia MIT: permisiva para uso comercial, pero conviene verificar que el modelo base (`glm_ocr`) no imponga restricciones adicionales que el autor no haya reflejado.
-- Madurez del repositorio: creado y actualizado el mismo día (1 de noviembre de 2026), con cero descargas y cero likes; no hay evidencia de validación por parte de la comunidad.
-- Para producción: se recomienda una evaluación exhaustiva sobre el dominio objetivo antes de cualquier despliegue.
+- La model card se etiqueta como «internal, private», lo que sugiere que el ajuste no fue concebido como release publica y puede carecer de validacion externa.
+- No hay resultados de benchmarks publicados: el rendimiento real en OCR, tablas y formulas no esta verificado de forma independiente.
+- La cobertura idiomatica declarada es coreano e ingles; el rendimiento en otros idiomas, incluido el espanol, no esta documentado y probablemente sea limitado.
+- Riesgo de alucinacion en la transcripcion de documentos: al ser un modelo generativo, puede producir texto plausible pero incorrecto en campos numericos, formulas o tablas; se recomienda validacion posterior en produccion.
+- La decodificacion auto-especulativa requiere el repositorio `nanoVLM-DiffusionOCR` (en proceso) o el parche de SGLang; con `transformers` estandar solo se dispone de la ruta AR, con la consiguiente perdida de la ventaja de velocidad.
+- Sesgos conocidos: no disponible en la informacion proporcionada.
+- La licencia MIT permite uso comercial, pero el modelo base `trillionlabs/GravityOCR` puede tener condiciones propias que conviene revisar antes de desplegar en produccion.
+- El contexto de inferencia efectivo no esta confirmado; los 16.384 tokens corresponden al limite de entrenamiento, no necesariamente al maximo soportado en serving.
 
 ## Enlaces
 
-- [Hugging Face: Qntology/GravityOCR-KO-gguf](https://huggingface.co/Qntology/GravityOCR-KO-gguf)
+- Modelo en Hugging Face: https://huggingface.co/Qntology/GravityOCR-KO-gguf
+- Modelo base: https://huggingface.co/trillionlabs/GravityOCR

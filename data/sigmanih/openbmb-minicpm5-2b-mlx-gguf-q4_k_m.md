@@ -1,131 +1,120 @@
 # sigmanih/openbmb-MiniCPM5-2B-MLX-GGUF-Q4_K_M
 
 ## Resumen
+Este repositorio contiene una cuantización GGUF Q4_K_M del modelo openbmb/MiniCPM5-2B-MLX, publicada por el usuario sigmanih a través de su herramienta Sigma Studio. Se trata de un modelo conversacional de aproximadamente 2.500 millones de parámetros (2.516.756.480 según los pesos en safetensors del modelo base) con arquitectura de tipo Llama, 42 capas y una dimensión oculta de 2048. El resultado es un artefacto de 1,6 GB de repositorio (1,45 GB de pesos) pensado para inferencia eficiente en CPU y GPU de gama baja mediante llama.cpp.
 
-openbmb-MiniCPM5-2B-MLX-GGUF-Q4_K_M es una conversión cuantizada en formato GGUF (Q4_K_M) del modelo openbmb/MiniCPM5-2B-MLX, publicada por el usuario sigmanih a través de su herramienta Sigma Studio. No es un modelo entrenado desde cero, sino una redistribución optimizada para inferencia en llama.cpp: el autor toma los pesos base, los cuantiza a 4 bits y los empaqueta para su ejecución en GPU de gama baja, CPU o dispositivos de borde. El repositorio tiene un tamano de 1,6 GB y no registra descargas ni valoraciones en el momento de la consulta.
+La relevancia de esta publicación es práctica: empaqueta un modelo de 2B en un formato GGUF Q4_K_M con una ventana de contexto declarada de 131.072 tokens, lo que permite desplegarlo en equipos con 6-8 GB de VRAM o incluso en modo CPU/híbrido con unos 2,2 GB de RAM. El autor declara compatibilidad con endpoints y con el motor SigmaEngine, además de una evaluación propia de benchmarks y de un protocolo de tool calling en sandbox.
 
-El modelo base es un transformer denso de tipo llama con aproximadamente 2.516.756.480 parámetros (≈2,52B) y una ventana de contexto declarada de 131.072 tokens, 42 capas y dimensión oculta de 2048. Está orientado a generación de texto conversacional y declara soporte únicamente para inglés e italiano. Su interés para desarrolladores reside en la relación entre tamaño reducido y contexto muy largo, lo que lo hace adecuado para agentes de voz en tiempo real y despliegues con restricciones de memoria.
+Conviene subrayar que se trata de una cuantización de terceros, no del modelo oficial de OpenBMB, y que los datos de rendimiento provienen de la model card del publicador, medida sobre subconjuntos de los benchmarks y no sobre las suites completas. La licencia figura como "other", lo que exige verificar los términos del modelo base antes de cualquier uso comercial.
 
-La relevancia práctica del repositorio es doble: por un lado, ofrece un artefacto listo para llama.cpp con un consumo declarado de unos 2,4 GB de VRAM con descarga completa en GPU; por otro, incluye un conjunto de evaluaciones publicadas por el propio autor (benchmarks, protocolo de tool calling y comparativa entre modos de razonamiento). Conviene tratar estas cifras con cautela, ya que la propia model card advierte que fueron medidas sobre subconjuntos de los datasets y no sobre las suites completas.
+## Especificaciones tecnicas
 
-## Especificaciones técnicas
-
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | llama (transformer denso) |
-| Parámetros totales | 2.516.756.480 (≈2,52B) |
-| Parámetros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | 131.072 tokens |
-| Tipos de cuantización | Q4_K_M (única cuantización publicada en este repositorio) |
-| Idiomas soportados | inglés (en) e italiano (it) |
-| Licencia | other (la model card muestra una insignia Apache-2.0; discrepancia no resuelta en la información disponible) |
-| Formato de pesos | GGUF (Q4_K_M) |
-
-Otros datos declarados por el autor: 42 capas transformer, dimensión oculta de 2048, huella en disco de 1,45 GB, VRAM estimada de ~2,4 GB con descarga completa en GPU y ~2,2 GB de RAM en CPU o modo híbrido. La fecha de creación y actualización del repositorio es el 15 de octubre de 2026.
+| Arquitectura | Llama (transformer denso), 42 capas, hidden size 2048 |
+| Parametros totales | 2.516.756.480 (~2,5B) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | 131.072 tokens (según model card del publicador) |
+| Tipos de cuantizacion | GGUF Q4_K_M (única variante en este repositorio) |
+| Idiomas soportados | en, it |
+| Licencia | other (verificar licencia del modelo base openbmb/MiniCPM5-2B-MLX) |
+| Formato de pesos | GGUF (Q4_K_M); el modelo base en safetensors |
+| Tamano del repositorio | 1,6 GB (1,45 GB de pesos) |
+| Uso de memoria | ~2,4 GB VRAM con offload completo a GPU; ~2,2 GB RAM en CPU/híbrido |
+| Hardware recomendado | GPU de 6-8 GB VRAM o 16 GB de RAM de sistema |
+| Pipeline | text-generation |
+| Descargas / likes | 330 / 1 |
 
 ## Arquitectura y entrenamiento
+La arquitectura es un transformer denso de tipo Llama con 42 capas y dimensión oculta de 2048, según declara el publicador. No se trata de un modelo MoE ni híbrido SSM: no hay parámetros activos que reportar porque todos los parámetros participan en cada forward pass. El contexto declarado alcanza los 131.072 tokens, un valor notable para un modelo de este tamaño, aunque no se documenta en la información disponible la técnica de extensión de contexto empleada ni si el modelo base fue entrenado nativamente con esa longitud.
 
-El modelo base es un transformer denso con arquitectura declarada como llama, sin mezcla de expertos (MoE) ni mecanismos de estado (SSM) o híbridos según la información disponible. Consta de 42 capas y una dimensión oculta de 2048, lo que da como resultado unos 2,52B de parámetros totales. La ventana de contexto indicada es de 131.072 tokens, un valor notablemente alto para su tamaño, lo que sugiere que el modelo base fue entrenado o ajustado específicamente para extender el contexto. No se detallan en la información proporcionada el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o similares.
-
-Este repositorio concreto no documenta entrenamiento alguno: es una cuantización posterior a Q4_K_M del modelo base openbmb/MiniCPM5-2B-MLX mediante el flujo de publicación de Sigma Studio. Por tanto, las innovaciones de entrenamiento pertenecen al modelo original y no se describen aquí. La model card sí documenta una característica funcional: un modo de razonamiento explícito ("Deep Thinking", con traza de cadena de pensamiento) frente a un modo directo ("No-Thinking"), con una mejora declarada de 5,5 puntos porcentuales al activar el razonamiento CoT.
+No se dispone de datos sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF, DPO o ajuste por preferencias en el modelo base. La model card del publicador no aporta información sobre el proceso de entrenamiento original de OpenBMB; solo describe el proceso de cuantización y publicación mediante Sigma Studio y el motor SigmaEngine. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal. El único dato técnico diferencial es la cuantización Q4_K_M, que reduce el peso a 1,45 GB manteniendo una calidad razonable para el tamaño del modelo.
 
 ## Capacidades
-
-- Generación de texto conversacional multi-turno, orientada a asistentes y diálogo.
-- Modo de razonamiento con cadena de pensamiento (Deep Thinking CoT) y modo directo sin traza de razonamiento, conmutables.
-- Razonamiento matemático elemental: en la evaluación publicada obtiene 9/9 en GSM8K y 6/9 en MATH.
-- Generación de código Python: 6/7 en HumanEval y 8/9 en MBPP según los datos del autor.
-- Soporte de tool calling / function calling, con una adherencia declarada al protocolo de herramientas del 77,2% (71/92 criterios verificados).
-- Capacidades agénticas de múltiples pasos: 50% de finalización autónoma de tareas (4/8 escenarios) en un entorno de sandbox aislado.
-- Capacidad multilingüe limitada a inglés e italiano según los metadatos; no se declara soporte de castellano.
-- Ventana de contexto de 131.072 tokens, apta para conversaciones o documentos largos.
+- Generación de texto conversacional multi-turno, con soporte declarado de contexto largo de hasta 131.072 tokens.
+- Razonamiento en dos modos: respuesta directa ("No-Thinking") y cadena de pensamiento ("Deep Thinking" / CoT), con una mejora declarada de +5,5 puntos porcentuales en el modo CoT.
+- Generación de código en Python, con resultados declarados en HumanEval (pass@1) y MBPP.
+- Razonamiento matemático multi-paso, con resultados declarados en GSM8K y MATH.
+- Tool calling y adherencia a protocolos de herramientas: el publicador reporta un 77,2% de cumplimiento de criterios analíticos en un sandbox de agentes.
+- Ejecución autónoma de tareas multi-paso en entornos aislados (completado del 50% de los escenarios del sandbox).
+- Capacidades multilingües limitadas a inglés e italiano según los metadatos del repositorio.
+- Compatibilidad con endpoints y con el motor SigmaEngine, además de llama.cpp por el formato GGUF.
 
 ## Casos de uso
-
-- Agentes de voz en tiempo real: el consumo declarado de ~2,4 GB de VRAM permite ejecutar el modelo en GPU de gama baja o en CPU, reduciendo la latencia de primer token, algo crítico en pipelines de voz conversacional.
-- Asistencia conversacional en dispositivos de borde: su cuantización Q4_K_M y su huella de 1,45 GB en disco lo hacen desplegable en equipos sin GPU dedicada, útil para asistentes locales de escritorio o integrados.
-- Procesamiento de documentos largos en inglés o italiano: con 131.072 tokens de contexto puede resumir o extraer información de contratos, informes o transcripciones extensas sin fragmentación agresiva.
-- Agentes con tool calling sobre sistemas de ficheros: la model card documenta un protocolo agéntico con operaciones sobre ficheros en un sandbox, replicable en tareas de automatización de escritorio o scripts controlados.
-- Generación y revisión de código Python en pipelines de CI/CD: los resultados declarados en HumanEval y MBPP sugieren su uso como asistente de autocompletado o revisión, integrándolo vía llama.cpp en herramientas de desarrollo.
-- Prototipado rápido y experimentación académica: al ser un GGUF ligero, permite iterar sobre prompts, modos de razonamiento y estrategias de tool calling en hardware de consumo sin costes de infraestructura.
-- Resolución de problemas matemáticos de nivel escolar: dado el 9/9 declarado en GSM8K, puede emplearse en tutores educativos o asistentes de ejercicios paso a paso en inglés o italiano.
+- Agentes conversacionales en dispositivos de borde: con 1,45 GB de pesos y ~2,2 GB de RAM en modo CPU, el modelo puede ejecutarse en mini-PC, Raspberry Pi de gama alta o portátiles sin GPU dedicada para asistentes de voz en tiempo real.
+- Atención al cliente automatizada: la ventana de 131.072 tokens permite mantener conversaciones multi-turno con historial extenso y documentos de referencia adjuntos sin truncar el contexto.
+- Generación de código en pipelines de CI/CD: el soporte de tool calling y los resultados declarados en HumanEval (86%) y MBPP (89%) lo hacen apto para tareas de autocompletado, generación de tests y revisión automatizada en entornos con recursos limitados.
+- Automatización de tareas de sistema de archivos en sandbox: el publicador valida escenarios de manipulación de ficheros con un 100% de contención en el sandbox, útil para agentes de operaciones controladas.
+- Prototipado rápido de asistentes con razonamiento: el modo CoT permite alternar entre respuestas de baja latencia y razonamiento paso a paso según la complejidad de la consulta, sin cambiar de modelo.
+- Educación y tutoría automatizada: con resultados declarados del 100% en GSM8K y 67% en MATH, puede resolver y explicar problemas de matemáticas de nivel escolar y competición en inglés e italiano.
+- Despliegue en entornos con GPU de gama baja: con ~2,4 GB de VRAM en offload completo, cabe en tarjetas de 6-8 GB (RTX 3060, RTX 4060, GTX 1660) y permite servir varias instancias en una sola GPU.
 
 ## Benchmarks y rendimiento
+Los siguientes datos provienen de la model card del publicador (Sigma Studio Training Lab, seed 42, temperatura 0.0) y fueron medidos sobre subconjuntos de cada suite, no sobre el conjunto completo. No son directamente comparables con ejecuciones de suite completa.
 
-Los siguientes resultados provienen de la model card y fueron medidos, según el autor, mediante Sigma Studio Training Lab en GPU (semilla 42, temperatura 0,0). La propia fuente advierte que se evaluaron subconjuntos de los datasets, no las suites completas, por lo que las cifras no son comparables con ejecuciones de referencia completas. Hash de reproducibilidad declarado: SHA256-3040EE2CBFBE22AF.
-
-| Benchmark | Dominio | Aciertos / total | Precisión |
+| Benchmark | Dominio | Correctos / Total | Precisión |
 |---|---|---|---|
-| ARC-Challenge | Ciencia y razonamiento escolar | 5 / 9 | 56% |
-| BIG-Bench Hard | Lógica y simbolismo multitarea | 5 / 7 | 71% |
+| ARC-Challenge | Razonamiento científico | 5 / 9 | 56% |
+| BIG-Bench Hard | Lógica multi-tarea | 5 / 7 | 71% |
 | GPQA | Razonamiento académico de posgrado | 1 / 9 | 11% |
 | GSM8K | Matemáticas escolares multi-paso | 9 / 9 | 100% |
 | HellaSwag | Sentido común y NLI situacional | 2 / 9 | 22% |
-| HumanEval | Codificación Python (pass@1) | 6 / 7 | 86% |
+| HumanEval | Código Python (pass@1) | 6 / 7 | 86% |
 | MATH | Matemáticas de competición | 6 / 9 | 67% |
 | MBPP | Programación Python con tests | 8 / 9 | 89% |
-| MMLU | Conocimiento general multisujeto | 6 / 14 | 43% |
+| MMLU | Conocimiento general multi-materia | 6 / 14 | 43% |
 | MMLU-Pro | Razonamiento avanzado multi-paso | 4 / 9 | 44% |
 | TruthfulQA | Factualidad y anti-alucinación | 3 / 9 | 33% |
-| Total | Todos los datasets evaluados | 55 / 100 | 55% |
+| Total | Todas las suites evaluadas | 55 / 100 | 55% |
 
-Comparativa de modos de razonamiento:
+Comparativa de modos de razonamiento declarada por el publicador:
 
-| Modo | Precisión | Aciertos / total | Perfil operativo |
+| Modo | Precisión | Preguntas superadas | Perfil |
 |---|---|---|---|
 | No-Thinking (respuesta directa) | 52,6% | 30 / 57 | Latencia mínima, sin tokens de razonamiento |
-| Deep Thinking (CoT) | 58,1% | 25 / 43 | Traza de razonamiento multi-paso, +5,5% |
+| Deep Thinking (CoT) | 58,1% | 25 / 43 | Razonamiento multi-paso, +5,5 puntos |
 
-Protocolo de tool calling y agente (sandbox aislado):
+Evaluación del protocolo de agentes en sandbox:
 
 | Métrica | Resultado | Detalle |
 |---|---|---|
-| Adherencia al protocolo de herramientas | 77,2% | 71/92 criterios verificados |
-| Finalización autónoma de tareas | 50,0% | 4/8 escenarios completados |
-| Confinamiento en sandbox | 100% conforme | Cero intentos de escape del espacio de trabajo |
-| Eficiencia de ejecución | 67 turnos (393,2 s) | Uso declarado óptimo del presupuesto |
-
-No se han publicado resultados de benchmarks verificados de forma independiente en la información disponible.
+| Adherencia al protocolo de herramientas | 77,2% | 71/92 criterios analíticos verificados |
+| Completado autónomo de tareas | 50,0% | 4/8 escenarios con fichero objetivo exacto |
+| Contención en sandbox | 100% | Cero intentos de escape del workspace |
+| Eficiencia de ejecución | 67 turnos (393,2 s) | Uso óptimo de turnos y tokens |
 
 ## Requisitos de hardware
-
-- VRAM estimada: ~2,4 GB con descarga completa en GPU; ~2,2 GB de RAM en CPU o ejecución híbrida (Q4_K_M).
-- VRAM de trabajo recomendada: GPU con 6-8 GB de VRAM según el autor.
-- RAM de sistema recomendada: 16 GB si se ejecuta sin GPU.
-- Compatibilidad con GPU de consumo: sí; el modelo entra holgadamente en tarjetas de 6-8 GB como RTX 3060, RTX 4060, RTX 2060 o superiores.
-- Opciones de despliegue: llama.cpp (formato GGUF nativo), Ollama mediante importación del GGUF, y motores compatibles con endpoints según la etiqueta `endpoints_compatible`. El modelo base está en formato MLX, por lo que la vía de despliegue en Apple Silicon pasa por el repositorio original.
-- Latencia y throughput: no disponible; la model card solo reporta el tiempo total de una ejecución agéntica (393,2 s para 67 turnos), que no equivale a una medición de throughput.
+- VRAM estimada: ~2,4 GB con offload completo a GPU en Q4_K_M; ~2,2 GB de RAM en modo CPU o híbrido.
+- GPU recomendadas: cualquier GPU con 6-8 GB de VRAM, como RTX 3060, RTX 4060, GTX 1660 Super o superiores. En A100/H100 el modelo ocupa una fracción mínima de memoria y permite batchear muchas instancias.
+- Cabe en GPU de consumo: sí, en tarjetas de 6 GB o más con offload completo; también en modo CPU puro con 16 GB de RAM de sistema.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, servidores compatibles con endpoints, y el motor SigmaEngine del publicador.
+- Latencia y throughput: no se han publicado mediciones de tokens por segundo en la información disponible. El publicador reporta 393,2 segundos para 67 turnos en la evaluación de agentes, pero sin desglose de tokens generados.
 
 ## Comparativa con modelos similares
+No se dispone de datos de benchmarks verificables de los modelos comparables en la información proporcionada, por lo que la comparación se limita a características estructurales.
 
-La comparación se limita a especificaciones, ya que no hay datos de benchmarks verificados de forma independiente en la información proporcionada.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
+|---|---|---|---|---|---|
+| openbmb-MiniCPM5-2B-MLX-GGUF-Q4_K_M (este) | ~2,5B | 131.072 | other | GGUF Q4_K_M | Hugging Face |
+| openbmb/MiniCPM5-2B-MLX (base) | ~2,5B | no disponible | other | safetensors | Hugging Face |
+| Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 | Apache-2.0 | safetensors, GGUF | Hugging Face |
+| Llama-3.2-1B-Instruct | ~1,2B | 131.072 | Llama 3.2 Community | safetensors, GGUF | Hugging Face |
 
-| Modelo | Parámetros | Contexto | Licencia | Formato / disponibilidad |
-|---|---|---|---|---|
-| MiniCPM5-2B-MLX (GGUF Q4_K_M, este repo) | ≈2,52B | 131.072 tokens | other (insignia Apache-2.0 en la model card) | GGUF Q4_K_M; base en MLX |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (ampliable a 131.072) | Apache-2.0 | safetensors, GGUF, múltiples cuantizaciones |
-| Gemma 2 2B | 2,61B | 8.192 tokens | Gemma (uso comercial con condiciones) | safetensors, GGUF |
-| SmolLM2-1.7B | 1,7B | 8.192 tokens | Apache-2.0 | safetensors, GGUF |
-
-El rasgo diferencial de este modelo es la combinación de un tamaño de ~2,5B con una ventana de contexto de 131.072 tokens, muy superior a la de alternativas de tamaño similar. No se dispone de datos comparativos de rendimiento entre estos modelos en la información proporcionada.
+Los datos de contexto y licencia de los modelos alternativos corresponden a sus especificaciones públicas habituales; no se dispone de comparación de rendimiento verificable frente a este modelo en la información proporcionada.
 
 ## Limitaciones y advertencias
-
-- Los benchmarks publicados se midieron sobre subconjuntos de los datasets, tal como advierte la propia model card; no son comparables con ejecuciones de suite completa.
-- Resultados bajos declarados en GPQA (11%), HellaSwag (22%) y TruthfulQA (33%), lo que indica debilidades en razonamiento avanzado, sentido común y factualidad.
-- Riesgo de alucinación relevante: el 33% en TruthfulQA sugiere una fiabilidad limitada en la veracidad factual.
-- Idiomas soportados únicamente inglés e italiano; no se declara soporte de castellano, por lo que su uso en español no está garantizado.
-- Discrepancia de licencia: los metadatos de Hugging Face indican `other`, mientras que la model card muestra una insignia Apache-2.0. Debe aclararse con el autor antes de cualquier uso comercial.
-- Es una conversión de terceros (autor sigmanih) y no una publicación oficial de OpenBMB; no hay garantía de fidelidad respecto al modelo base.
-- Repositorio sin descargas ni valoraciones, lo que implica ausencia de validación por parte de la comunidad.
-- Solo se ofrece una cuantización (Q4_K_M); no hay alternativas de mayor o menor precisión en este repositorio.
-- El modelo base está en formato MLX (Apple), de modo que este GGUF es una vía derivada y no la distribución oficial.
-- No se documentan la composición del dataset de entrenamiento ni los procesos de alineación, lo que dificulta evaluar sesgos conocidos.
+- Es una cuantización de terceros: la calidad puede diferir del modelo base en safetensors, especialmente en tareas sensibles a la precisión numérica como matemáticas o código.
+- Los benchmarks publicados se midieron sobre subconjuntos pequeños (entre 7 y 14 preguntas por suite) y el propio publicador advierte que no son comparables con ejecuciones de suite completa. Los resultados tienen alta varianza estadística.
+- GPQA (11%), HellaSwag (22%) y TruthfulQA (33%) muestran debilidades claras en razonamiento académico avanzado, sentido común y factualidad, lo que eleva el riesgo de alucinación en dominios especializados.
+- Idiomas soportados limitados a inglés e italiano según los metadatos; no hay evidencia de buen rendimiento en castellano.
+- La licencia figura como "other": es imprescindible revisar los términos del modelo base openbmb/MiniCPM5-2B-MLX antes de uso comercial. El badge Apache-2.0 de la model card hace referencia a la herramienta Sigma Studio, no necesariamente al modelo.
+- El contexto declarado de 131.072 tokens no está verificado de forma independiente; el rendimiento real en contextos muy largos puede degradarse.
+- El modelo base se distribuye con el sufijo "MLX", lo que sugiere un origen orientado a Apple Silicon; la cuantización GGUF busca ampliar la compatibilidad, pero no se documenta el proceso de conversión ni posibles pérdidas.
+- El repositorio tiene solo 330 descargas y 1 like, sin validación independiente de la comunidad.
 
 ## Enlaces
-
 - Repositorio Hugging Face: https://huggingface.co/sigmanih/openbmb-MiniCPM5-2B-MLX-GGUF-Q4_K_M
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B-MLX
-- Sigma Studio (GitHub): https://github.com/Sigmanih/SigmaStudio
-- Perfil del autor en Hugging Face: https://huggingface.co/sigmanih
-- Paper, blog o demo oficial: no disponible en la información proporcionada.
+- Repositorio Sigma Studio: https://github.com/Sigmanih/SigmaStudio
+- Perfil del publicador: https://huggingface.co/sigmanih
+- Licencia Apache-2.0 (referenciada en la model card): https://opensource.org/licenses/Apache-2.0

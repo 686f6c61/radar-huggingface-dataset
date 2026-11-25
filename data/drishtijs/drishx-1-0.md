@@ -2,88 +2,100 @@
 
 ## Resumen
 
-DrishX-1.0 es un ajuste fino (finetune) del modelo Qwen2.5-Coder-0.5B-Instruct, desarrollado por el usuario drishtijs y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de lenguaje causal de aproximadamente 494 millones de parametros, orientado a conversaciones sobre desarrollo de software y a la guia del proyecto Drishti (una aplicacion local de asistencia al desarrollo). El modelo se distribuye con su tokenizer completo y pesos en formato safetensors en float32.
+DrishX-1.0 es un ajuste fino (finetune) del modelo Qwen2.5-Coder-0.5B-Instruct de Alibaba, publicado por el usuario drishtijs bajo licencia Apache 2.0. Se trata de un checkpoint de lenguaje causal de aproximadamente 494 millones de parámetros (0,5B) orientado a conversaciones sobre desarrollo de software y a la orientación dentro del proyecto Drishti. No es un entrenamiento nuevo desde cero: la model card indica explícitamente que contiene el checkpoint local `data/models/finetuned` exportado con la receta de `scripts/train_model.py`, sin métricas de calidad retenidas registradas junto al artefacto.
 
-El modelo hereda la arquitectura Qwen2ForCausalLM del modelo base y esta configurado con un limite de contexto de 32.768 tokens, aunque el propio autor advierte que la calidad en contexto largo no ha sido evaluada. Su relevancia radica en ser un checkpoint pequeno y ligero que puede ejecutarse en hardware modesto, pensado para integrarse en una aplicacion de escritorio local en lugar de como modelo de proposito general.
+El modelo emplea la arquitectura `Qwen2ForCausalLM` (transformer decoder-only) con pesos en safetensors en float32 y una longitud de contexto configurada de 32.768 tokens, aunque el autor advierte que la calidad en contexto largo no se ha evaluado. Su relevancia es limitada y muy específica: sirve como pieza de pesos para la aplicación DrishX, que aporta las capacidades de edición de sistema de ficheros, control de navegador, recuperación de base de datos y aislamiento de permisos. El propio autor aclara que esos comportamientos pertenecen a la aplicación, no a los pesos.
 
-Es importante subrayar que el autor no reclama ningun resultado de benchmark ni metrica de calidad en produccion. La validacion incluida (`validation.json`) se limita a comprobar la carga en CPU, el funcionamiento del tokenizer, la finitud de los logits y una generacion determinista con un saludo sintetico. Se trata, por tanto, de un modelo de nicho cuya utilidad esta ligada al ecosistema Drishti.
+La publicación incluye un tag de revisión inmutable `v1.0.1`, ficheros `release.json` y `SHA256SUMS` para reproducibilidad, además de un adaptador Git opcional (`git-adapter-v1.1.4`). No se reclama ningún resultado de benchmark ni puntuación de calidad en producción; la validación registrada en `validation.json` es una prueba de humo en CPU con logits finitos y generación determinista sobre un saludo sintético.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen2ForCausalLM (transformer decoder-only) |
+| Arquitectura | Qwen2ForCausalLM (transformer decoder-only, causal) |
 | Parametros totales | 494.032.768 (aprox. 0,5B) |
-| Parametros activos | no aplica (no es MoE) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 32.768 tokens configurados; calidad en contexto largo no evaluada |
-| Tipos de cuantizacion | no disponible (pesos publicados en float32; no se incluye conversion GGUF) |
-| Idiomas soportados | ingles (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (float32) |
+| Tipos de cuantizacion | no disponible (pesos publicados en float32; no se incluye conversión GGUF) |
+| Idiomas soportados | en (inglés) |
+| Licencia | Apache 2.0 (incluye licencia y atribución upstream) |
+| Formato de pesos | safetensors, float32 |
+| Modelo base | Qwen/Qwen2.5-Coder-0.5B-Instruct (revision `ea3f2471cf1b1f0db85067f1ef93848e38e88c25`) |
+| Relación con el base | finetune |
+| Revisión publicada | `v1.0.1` (tag inmutable) |
+| Tamaño del repositorio | 3,1 GB |
+| Librería | transformers (>= 4.57.0 recomendado) |
+| Pipeline | text-generation |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea la arquitectura Qwen2ForCausalLM, un transformer decoder-only con atencion causal propia de la familia Qwen2. Al ser un finetune directo de Qwen2.5-Coder-0.5B-Instruct (revision base `ea3f2471cf1b1f0db85067f1ef93848e38e88c25`), conserva la tokenizer y la configuracion del modelo original, incluyendo el limite de contexto de 32.768 tokens.
+La arquitectura es la de Qwen2, un transformer decoder-only con atención causal estándar implementado en `Qwen2ForCausalLM`. El modelo parte de Qwen2.5-Coder-0.5B-Instruct, un modelo base ya ajustado por instrucciones por Alibaba, y sobre él se aplica un finetune adicional. La model card no documenta la composición del dataset de ajuste, el número de tokens utilizados, ni si hubo RLHF, DPO o cualquier otra etapa de alineación posterior; todos esos datos figuran como no disponibles.
 
-El autor indica explicitamente que esta release contiene un checkpoint local ya existente (`data/models/finetuned`) y no una nueva ejecucion de entrenamiento. La receta de entrenamiento del repositorio (`scripts/train_model.py`) parte del modelo base de Qwen y exporta un checkpoint completo, pero los hiperparametros exactos de la ejecucion y las metricas de calidad sobre conjuntos reservados no se registraron junto con el checkpoint. No se documenta el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se describen innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, etc.). El repositorio incluye un adaptador Git opcional (`git-adapter-v1.1.4`) que requiere la base v1.0.1 fijada, mientras que los pesos raiz siguen siendo los del modelo base ajustado.
+El autor indica que el repositorio contiene el checkpoint local existente y no una nueva ejecución de entrenamiento, y que los hiperparámetros exactos y las métricas de calidad sobre conjuntos retenidos no se registraron junto al checkpoint. La receta de entrenamiento referenciada (`scripts/train_model.py`) usa el modelo base Qwen y exporta un checkpoint completo. No se declara ninguna innovación técnica propia: no hay decodificación especulativa, atención lineal ni mecanismos híbridos documentados. La validación publicada (`validation.json`) consiste en una carga offline en CPU, comprobación del tokenizador, verificación de logits finitos y generación determinista sobre un saludo sintético, lo que confirma únicamente la ejecución básica.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, orientada a conversaciones sobre desarrollo de software.
-- Asistencia en codigo y guia del proyecto Drishti (explicacion de rutas de pagina, estructura del proyecto y flujos de la aplicacion).
-- Formato de chat mediante `apply_chat_template` con roles de sistema, usuario y asistente.
-- Soporte de generacion con muestreo (temperatura, top_p) y generacion determinista.
-- Capacidad multilingue limitada al ingles segun la model card.
-- No se documenta soporte de tool calling, function calling, agentes multi-paso, vision, audio ni modo de razonamiento explicito (thinking mode).
-- El modelo es solo de pesos: las funciones de edicion de sistema de archivos, control de navegador, recuperacion de base de datos, control de permisos y aislamiento de proyectos pertenecen a la aplicacion DrishX, no al modelo.
+- Generación de texto conversacional en inglés, heredada del modelo base Qwen2.5-Coder-0.5B-Instruct.
+- Asistencia en conversaciones sobre desarrollo de software y orientación dentro del proyecto Drishti, según el propósito declarado por el autor.
+- Plantilla de chat compatible con `apply_chat_template` de Transformers (formato de mensajes role/content).
+- Compatibilidad con text-generation-inference y endpoints compatibles (según los tags del repositorio).
+- Soporte de tool calling / function calling: no disponible de forma explícita en la información proporcionada; podría heredarse del base, pero no se documenta ni se valida.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según el campo `language` del repositorio.
+- Capacidades especiales (modo thinking, visión, audio): no disponibles.
+- Capacidad de edición de ficheros, control de navegador o acceso a base de datos: no residen en los pesos, sino en la aplicación DrishX según aclara el autor.
 
 ## Casos de uso
 
-- Asistencia conversacional dentro de la aplicacion Drishti: el modelo responde preguntas sobre rutas de pagina y estructura del proyecto, usando el template de chat de Qwen y un contexto configurado de hasta 32.768 tokens para mantener el hilo de la conversacion.
-- Explicacion de codigo en entornos de desarrollo locales: al derivar de Qwen2.5-Coder, puede describir fragmentos de codigo y sugerir cambios, con revision y pruebas humanas obligatorias dado que el autor advierte de posibles errores.
-- Prototipado rapido en hardware modesto: con 0,5B parametros en float32 (aprox. 2 GB de pesos), puede cargarse en CPU o en GPU de gama baja para experimentar con un asistente de codigo sin infraestructura dedicada.
-- Integracion en pipelines de Transformers: el ejemplo de la model card muestra como cargar la revision fijada `v1.0.1` con `transformers>=4.57.0`, lo que facilita su uso en scripts de evaluacion o demos reproducibles.
-- Base para experimentos de finetune adicional: al ser un checkpoint pequeno y con licencia Apache 2.0, sirve como punto de partida para ajustes especificos de dominio con coste computacional reducido.
-- Generacion de respuestas de guia en herramientas de documentacion internas: puede redactar explicaciones breves sobre el proyecto Drishti y sus convenciones, siempre que se valide la salida antes de publicarla.
+- Asistente de dudas sobre el proyecto Drishti: el modelo puede responder preguntas sobre rutas de página y estructura del proyecto, que es el caso de ejemplo incluido en la model card ("Explain a Drishti page route"), usando la plantilla de chat del tokenizador.
+- Generación de fragmentos de código en inglés para prototipado rápido: al derivar de Qwen2.5-Coder, puede producir snippets en conversaciones de desarrollo, aunque el autor advierte que el código generado requiere revisión y pruebas.
+- Chat de soporte técnico ligero en inglés: su ventana configurada de 32.768 tokens permite mantener conversaciones multi-turno, si bien la calidad en contextos largos no se ha evaluado y no debería asumirse.
+- Despliegue en entornos con recursos muy limitados: con 494 millones de parámetros y pesos float32, es viable en CPU para pruebas y en GPUs de gama baja, lo que lo hace adecuado para demos locales o entornos de desarrollo sin acelerador dedicado.
+- Integración como componente de pesos dentro de la aplicación DrishX: el repositorio está pensado para alimentar esa aplicación, que añade las capacidades de sistema de ficheros, navegador y permisos.
+- Pruebas de humo y pipelines de CI: los ficheros `release.json`, `SHA256SUMS` y `validation.json` permiten verificar integridad y carga determinista del checkpoint en un pipeline automatizado.
+- Base para experimentación con adaptadores: el adaptador Git opcional `git-adapter-v1.1.4` requiere el base fijado `v1.0.1`, lo que facilita experimentar con ajustes específicos sin tocar los pesos raíz.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor declara explicitamente que no reclama ninguna puntuacion de benchmark ni de calidad en produccion; `validation.json` solo registra una comprobacion de humo (carga en CPU, tokenizer, logits finitos y generacion determinista con un saludo sintetico).
+No se han publicado resultados de benchmarks en la informacion disponible. La model card declara explícitamente que no se reclama ninguna puntuación de benchmark ni de calidad en producción, y que las métricas de calidad sobre conjuntos retenidos no se registraron con el checkpoint. La única validación documentada es una prueba de humo en CPU (carga offline, tokenizador, logits finitos y generación determinista) que no mide precisión en código ni rendimiento en tareas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 2 GB para los pesos en float32; el pico de memoria depende de la longitud de contexto y del tamano de lote.
-- GPU recomendadas: no especificadas por el autor; por tamano, cualquier GPU con al menos 4 GB de VRAM deberia poder alojar el modelo en float32, y es viable en CPU para pruebas.
-- Cabe en GPU de consumo: si, en tarjetas de gama de entrada y media con suficiente VRAM (por ejemplo, series RTX xx60 o superiores); no se aportan mediciones concretas.
-- Opciones de despliegue: Hugging Face Transformers (probado con 4.57.0), con soporte de `text-generation-inference` segun los tags del repositorio. No se incluye conversion GGUF, por lo que llama.cpp u Ollama requeririan una conversion propia no documentada.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: con 494 millones de parámetros en float32, los pesos ocupan aproximadamente 2 GB (3,1 GB de repositorio incluyen tokenizador y artefactos); en float16 o bfloat16 bajaría a alrededor de 1 GB, aunque el repositorio no publica variantes cuantizadas.
+- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM puede alojar el modelo en precisión reducida; una RTX 3060, RTX 4060 o superior es suficiente. Para float32 conviene disponer de 6-8 GB.
+- Cabe en GPU de consumo: sí, en la práctica totalidad de GPUs de consumo modernas con 6 GB o más.
+- Ejecución en CPU: viable; de hecho, la validación publicada se ejecutó offline en CPU.
+- Opciones de despliegue: Transformers (versión de referencia 4.57.0), text-generation-inference y endpoints compatibles según los tags. No se incluye conversión GGUF, por lo que llama.cpp u Ollama requerirían una conversión propia no documentada por el autor.
+- Latencia y throughput estimados: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| DrishX-1.0 | 494 M | 32.768 tokens (configurado) | Apache 2.0 | Finetune de Qwen2.5-Coder-0.5B-Instruct; sin benchmarks publicados |
-| Qwen2.5-Coder-0.5B-Instruct | 0,5B | 32.768 tokens | Apache 2.0 | Modelo base; dispone de evaluaciones publicadas por el autor original |
-| Qwen2.5-Coder-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | Alternativa de mayor tamano de la misma familia, con mejores resultados reportados por Qwen |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| DrishX-1.0 | 494 M | 32.768 configurados (calidad no evaluada) | Apache 2.0 | Hugging Face, tag `v1.0.1` | Finetune de Qwen2.5-Coder-0.5B-Instruct; sin benchmarks publicados |
+| Qwen2.5-Coder-0.5B-Instruct | aprox. 0,5B | 32.768 | Apache 2.0 | Hugging Face | Modelo base; dispone de evaluación publicada por el autor original |
+| Qwen2.5-Coder-1.5B-Instruct | aprox. 1,5B | 32.768 | Apache 2.0 | Hugging Face | Misma familia, mayor capacidad; requiere más VRAM |
+| SmolLM2-360M-Instruct | aprox. 360 M | no disponible en esta ficha | Apache 2.0 | Hugging Face | Alternativa de tamaño similar para generación de texto en inglés |
 
-La comparacion con otros modelos de codigo de tamano similar (por ejemplo, variantes de 0,5B de otras familias) no esta disponible en la informacion proporcionada. Dado que DrishX-1.0 no publica metricas, cualquier comparacion de rendimiento con alternativas carece de base empirica en esta ficha.
+La comparación de rendimiento cuantitativo no está disponible para DrishX-1.0, ya que no se han publicado benchmarks. Frente a su modelo base, la diferencia principal es el ajuste específico al dominio Drishti, sin que existan métricas que cuantifiquen la mejora o el posible deterioro respecto al original.
 
 ## Limitaciones y advertencias
 
-- No se han publicado benchmarks ni metricas de calidad; la unica validacion es una comprobacion de humo de ejecucion basica.
-- El autor advierte que el codigo y los consejos generados pueden ser incorrectos y requieren revision y pruebas.
-- La calidad en contexto largo (hasta 32.768 tokens) no ha sido evaluada.
-- El modelo esta orientado al ingles; no se documenta soporte de otros idiomas.
-- No se documentan sesgos conocidos, pero al ser un finetune de un modelo base, puede heredar los sesgos de este.
-- Riesgo de alucinacion presente como en cualquier modelo de lenguaje; especialmente relevante en afirmaciones sobre APIs o comportamiento de la aplicacion Drishti.
-- Licencia Apache 2.0 permite uso comercial, pero se incluye la licencia y atribucion del modelo upstream, que deben conservarse.
-- Los hiperparametros exactos de entrenamiento y las metricas sobre conjuntos reservados no se registraron con el checkpoint, lo que dificulta la reproducibilidad del ajuste.
-- No se incluye conversion GGUF; la aplicacion Drishti mantiene un modelo GGUF de 7B separado que esta release no sustituye.
-- Las funciones de control de sistema, navegador o base de datos pertenecen a la aplicacion, no al modelo; no deben atribuirse a los pesos.
+- Ausencia total de benchmarks: no hay evidencia publicada de precisión en código, matemáticas o razonamiento; el autor lo declara explícitamente.
+- Riesgo de alucinación: el propio autor advierte que el código y los consejos generados pueden ser incorrectos y requieren revisión y pruebas.
+- Contexto largo no evaluado: la ventana de 32.768 tokens está configurada, pero la calidad más allá de contextos cortos no se ha medido.
+- Idioma: solo inglés declarado; el uso en castellano no está soportado ni validado.
+- Capacidades de agente atribuidas a la aplicación: la edición de ficheros, el control de navegador, la recuperación de base de datos y los permisos no forman parte de los pesos; no deben esperarse de un despliegue aislado del modelo.
+- Licencia Apache 2.0: permite uso comercial, pero debe conservarse la atribución y la licencia upstream de Qwen.
+- Sin conversión GGUF: el autor indica que no se incluye y que el GGUF de 7B de la aplicación es un modelo distinto que este release no reemplaza.
+- Reproducibilidad: se recomienda fijar la revisión `v1.0.1`, ya que `main` sigue al último release y podría cambiar.
+- Hiperparámetros y datos de entrenamiento no documentados: dificulta auditar el ajuste o reproducir el entrenamiento.
+- Popularidad muy baja: 981 descargas y 0 likes en el momento de la consulta, sin comunidad que valide su comportamiento.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/drishtijs/DrishX-1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
-- Dataset DrishtiX: https://huggingface.co/datasets/drishtijs/DrishtiX
-- Adaptador Git opcional (ruta dentro del repo): `adapters/git-v1.1.4/`
+- Dataset DrishtiX (instaladores y datos de referencia): https://huggingface.co/datasets/drishtijs/DrishtiX
+- Adaptador Git opcional: https://huggingface.co/drishtijs/DrishX-1.0/tree/main/adapters/git-v1.1.4
+- Revisión inmutable: https://huggingface.co/drishtijs/DrishX-1.0/tree/v1.0.1

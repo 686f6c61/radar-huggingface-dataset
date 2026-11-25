@@ -2,122 +2,108 @@
 
 ## Resumen
 
-Inkling-2-Mini-APEX-GGUF es una colección de cuantizaciones GGUF del modelo base thinkingmachines/Inkling-2-Mini, publicada por el equipo de LocalAI (mudler) bajo el método APEX (Adaptive Precision for EXpert Models). El modelo original, desarrollado por Thinking Machines Lab, es un Mixture-of-Experts con 26.070 millones de parámetros totales, 24 capas, tamaño oculto de 2304 y 128 expertos enrutados con 8 activos por token, sin experto compartido. La innovación estructural es que las capas 6 a 17 forman un núcleo que se ejecuta tres veces por token (arquitectura "looped MoE"). El modelo es multimodal en origen, pero estas cuantizaciones incluyen únicamente la torre de lenguaje.
+Inkling-2-Mini-APEX-GGUF es una colección de cuantizaciones GGUF del modelo thinkingmachines/Inkling-2-Mini, publicada por el equipo de LocalAI (mudler) bajo el proyecto APEX (Adaptive Precision for EXpert Models). El modelo base es un Mixture-of-Experts con bucle de Thinking Machines Lab: 24 capas, tamaño oculto 2304, 128 expertos enrutados con 8 activos por token y sin experto compartido, con un núcleo (capas 6 a 17) que se ejecuta tres veces por token. Cuenta con 26.070.385.152 parámetros totales según safetensors, aunque el checkpoint original pesa unos 19 GB en pesos de 4 y 8 bits.
 
-La relevancia de esta publicación es doble. Por un lado, permite ejecutar un MoE de 26B en hardware de consumo mediante cuantizaciones de 11,34 a 20,68 GB. Por otro, el método APEX aplica precisión adaptativa por rol de tensor y posición de capa: los expertos enrutados toleran menor precisión porque solo se activan unos pocos por token, mientras que las capas inicial y final conservan más bits. La model card reporta métricas de perplejidad y divergencia KL frente al modelo BF16 de referencia, lo que permite elegir el nivel de cuantización con datos objetivos.
+La relevancia de esta ficha reside en que APEX aplica una cuantización selectiva por rol de tensor y posición de capa: los expertos enrutados, que concentran la mayoría de los pesos pero solo activan una fracción por token, toleran menor precisión, mientras que las capas primera y última conservan más bits. Se ofrecen ocho niveles de cuantización entre 11,34 GB y 20,68 GB, con métricas de perplejidad y divergencia KL frente al modelo BF16 de referencia.
 
-El repositorio ocupa 133,5 GB e incluye ocho archivos GGUF organizados en cuatro niveles de calidad (Quality, Balanced, Compact, Mini y Nano), con y sin importance matrix. La licencia es Apache 2.0, idéntica a la del modelo base.
+El modelo es multimodal en origen, pero los ficheros de cuantización contienen únicamente el modelo de lenguaje; el proyector de visión se distribuye como fichero sidecar separado (mmproj). También se incluye un drafter de decodificación especulativa DSpark en Q8_0. La licencia es Apache 2.0 y requiere llama.cpp posterior al commit `29b52d398` (PR 32694, "Inkling 2 Mini").
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts con núcleo de capas reutilizadas (looped MoE), transformer decoder |
-| Parametros totales | 26.070.385.152 (26,07 B) |
-| Parametros activos | 8 de 128 expertos enrutados por token; sin experto compartido (número exacto de parámetros activos no disponible) |
+| Arquitectura | Transformer Mixture-of-Experts con bucle (looped MoE); 24 capas, hidden size 2304, 128 expertos enrutados, 8 activos por token, sin experto compartido; núcleo de capas 6-17 ejecutado 3 veces por token |
+| Parametros totales | 26.070.385.152 |
+| Parametros activos | no disponible (8 de 128 expertos enrutados por token, sin cifra oficial de parámetros activos) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF k-quant e i-quant con precisión adaptativa por rol (APEX); tiers Quality, Balanced, Compact, Mini y Nano, con y sin imatrix |
+| Tipos de cuantizacion | GGUF k-quant e i-quant (tiers APEX: Quality, I-Quality, Balanced, I-Balanced, Compact, I-Compact, I-Mini, I-Nano); el modelo base usa pesos de 4 y 8 bits float (~19 GB) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
-
-Detalle de capas y dimensiones (según model card): 24 capas, hidden size 2304, ancho de FFN de experto 1152, capas 6 a 17 ejecutadas tres veces por token.
-
-Tamaño de cada archivo:
-
-| Archivo | Tamaño | Uso previsto |
-|---|---|---|
-| Inkling-2-Mini-APEX-Quality.gguf | 20,07 GB | máxima calidad |
-| Inkling-2-Mini-APEX-I-Quality.gguf | 20,07 GB | máxima calidad, imatrix |
-| Inkling-2-Mini-APEX-Balanced.gguf | 20,68 GB | propósito general |
-| Inkling-2-Mini-APEX-I-Balanced.gguf | 20,68 GB | propósito general, imatrix |
-| Inkling-2-Mini-APEX-Compact.gguf | 14,10 GB | GPUs de consumo |
-| Inkling-2-Mini-APEX-I-Compact.gguf | 14,10 GB | GPUs de consumo, imatrix |
-| Inkling-2-Mini-APEX-I-Mini.gguf | 12,36 GB | pequeño, solo imatrix |
-| Inkling-2-Mini-APEX-I-Nano.gguf | 11,34 GB | el más pequeño, solo imatrix |
+| Formato de pesos | GGUF (con sidecar mmproj F16 para visión y drafter DSpark Q8_0) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un Mixture-of-Experts con 24 capas y 128 expertos enrutados, de los cuales 8 se activan por token. No hay experto compartido, lo que concentra la mayor parte de los pesos en los expertos enrutados. La particularidad arquitectónica es el bucle: las capas 6 a 17 se ejecutan tres veces por token, de modo que el cómputo efectivo es mayor que el de un transformer de 24 capas convencional, aunque el número de parámetros únicos no cambia. El ancho de la FFN de cada experto es 1152, un valor que no es múltiplo de 256 y que obliga a llama.cpp a almacenar los tensores `ffn_down` de los expertos en un tipo legacy de 32 de ancho cuando el tier solicita k-quant o i-quant; por eso los tiers pequeños reducen menos tamaño del que sugieren los nombres de tipo.
+El modelo base es un Mixture-of-Experts con bucle: 24 capas con tamaño oculto 2304, 128 expertos enrutados y 8 activos por token, sin experto compartido. Las capas 6 a 17 forman un núcleo que se ejecuta tres veces por token, lo que aumenta la profundidad efectiva sin incrementar el número de parámetros. El ancho del FFN de cada experto es 1152, que no es múltiplo de 256; por ello, llama.cpp almacena los expertos `ffn_down` en un tipo legacy de 32 anchos cuando el tier solicita un tipo k-quant o iq, lo que explica que los tiers pequeños reduzcan menos tamaño del que sugieren sus nombres.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO. La model card de la cuantización no los detalla y no se ha consultado la del modelo base en esta ficha. El modelo es un "thinking model", es decir, genera cadenas de razonamiento antes de la respuesta final, y el autor recomienda al menos 120 tokens de generación para evaluar correctamente una respuesta.
+La cuantización APEX (Adaptive Precision for EXpert Models) asigna precisión según el rol del tensor y la posición de la capa: los expertos enrutados, que solo se activan parcialmente por token, se comprimen más; las capas primera y última conservan mayor precisión; las capas intermedias se comprimen más agresivamente; y la atención sigue el mismo gradiente. Los ficheros con prefijo `I-` emplean una importance matrix construida con datos de calibración diversos (chat, código, razonamiento, tool-calling, trazas agénticas y Wikipedia). No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base.
 
-La innovación técnica de esta publicación es el método APEX: cuantización con precisión adaptativa según el rol del tensor y la posición de la capa. Las capas primera y última mantienen mayor precisión, las intermedias comprimen más, y la atención sigue el mismo gradiente. Los archivos con prefijo `I-` usan una importance matrix construida con datos de calibración diversos: chat, código, razonamiento, tool-calling, trazas agénticas y Wikipedia.
+El repositorio incluye además un proyector de visión F16 (mmproj, 639.348.512 bytes) convertido con `convert_hf_to_gguf.py --mmproj`, y un drafter de decodificación especulativa DSpark en Q8_0 (402.278.560 bytes) para `--spec-type draft-dspark`, espejo del publicado por unsloth y convertido a partir del bloque `mtp.safetensors` del checkpoint oficial. El conversor del drafter no está en llama.cpp master, por lo que no se pudo reconstruir; su SHA-256 es `2ec78510da837e8fc3be54a14757a0c5fbd2d8d9e85a0d92853fafdf674f3773`.
 
 ## Capacidades
 
-- Generación de texto conversacional: la model card confirma que una prompt de chat corta produjo respuestas coherentes en todos los tiers evaluados.
-- Razonamiento en modo "thinking": el modelo genera cadenas de razonamiento internas; se recomienda un mínimo de 120 tokens de generación.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Tool calling / function calling: no confirmado explícitamente para esta cuantización; la importance matrix incluye datos de tool-calling, lo que sugiere que el modelo base lo soporta, pero no se documenta como capacidad verificada.
-- Razonamiento multi-paso y uso agéntico: inferido del uso de trazas agénticas en la calibración de imatrix, sin confirmación explícita.
-- Visión: no incluida en estas cuantizaciones. El modelo base es multimodal, pero la torre de visión no está en los archivos GGUF.
-- Código y matemáticas: no disponible; no se han ejecutado suites de benchmark.
+- Generación de texto conversacional: el modelo es un modelo de razonamiento (thinking model) y requiere al menos 120 tokens de generación antes de juzgar una respuesta.
+- Razonamiento multi-paso: el bucle de capas 6-17 ejecutado tres veces por token favorece el procesamiento iterativo.
+- Capacidades multimodales: el modelo base es multimodal; la entrada de imagen se habilita cargando el sidecar `mmproj-Inkling-2-Mini-F16.gguf` con `llama-mtmd-cli`.
+- Tool calling y function calling: la importance matrix de los tiers `I-` incluye datos de tool-calling y trazas agénticas, lo que sugiere soporte de estas capacidades (no se detalla el formato exacto en la información disponible).
+- Decodificación especulativa: soporte de drafter DSpark mediante `--spec-type draft-dspark`.
+- Capacidades multilingües: no disponible.
+- Capacidades de código y matemáticas: no disponibles de forma explícita en la información proporcionada.
 
 ## Casos de uso
 
-- Inferencia local en estación de trabajo con GPU única: con el tier Compact (14,10 GB) o Nano (11,34 GB) el modelo cabe en GPUs de consumo de 16 GB o 12 GB respectivamente, lo que permite desplegar un MoE de 26B en local sin infraestructura de servidor.
-- Asistente conversacional con razonamiento visible: el modo thinking del modelo permite generar explicaciones paso a paso antes de la respuesta final, útil en herramientas de soporte técnico donde el usuario necesita ver el razonamiento.
-- Prototipado de aplicaciones agénticas: la importance matrix incluye trazas agénticas y de tool-calling, lo que hace al tier `I-` más adecuado para pipelines con llamadas a herramientas, aunque la capacidad debe validarse empíricamente.
-- Evaluación comparativa de cuantizaciones: los datos de perplejidad y KL permiten elegir el tier según el compromiso calidad/tamaño; el tier Quality conserva el 96,5 % del mismo token top con una PPL de 6,873 frente a 6,862 del BF16.
-- Investigación sobre cuantización de MoE: el método APEX, con precisión diferenciada por rol de tensor, sirve como caso de estudio reproducible para quienes investigan compresión de modelos dispersos.
-- Despliegue con llama.cpp en entornos sin CUDA: los GGUF son compatibles con llama.cpp, lo que permite ejecución en CPU o con offload parcial (`-ngl`), útil para servidores sin GPU dedicada.
-- Integración en LocalAI: al estar publicados por el equipo de LocalAI, los archivos están pensados para su uso con ese runtime y con endpoints compatibles con OpenAI.
+- Despliegue local en hardware de consumo: el tier I-Nano (11,34 GB) o I-Mini (12,36 GB) permiten ejecutar un MoE de 26.000 millones de parámetros en GPUs con 12-16 GB de VRAM, algo inviable con el checkpoint BF16 de 52,23 GB.
+- Asistente conversacional con razonamiento: el tier Balanced (20,68 GB) mantiene una perplejidad de 6,965 frente a 6,862 del BF16, adecuado para chat multi-turno donde se requiere coherencia con pérdida mínima de calidad.
+- Procesamiento de documentos con imágenes: cargando el proyector de visión (mmproj F16) junto con cualquier tier se habilita la entrada de imagen, útil para extracción de información de capturas, diagramas o documentos escaneados.
+- Inferencia de baja latencia en servidores: el drafter DSpark Q8_0 permite decodificación especulativa, reduciendo el coste por token en despliegues con llama.cpp y GPUs dedicadas.
+- Investigación sobre cuantización de MoE: los tiers con y sin importance matrix permiten comparar el impacto de la calibración en la divergencia KL (0,0063 en Quality frente a 0,0701 en I-Nano) para estudiar métodos de compresión.
+- Integración en LocalAI: al estar publicado por el equipo de LocalAI, los ficheros GGUF son directamente compatibles con ese runtime para servir el modelo vía API compatible con OpenAI.
+- Evaluación de modelos de razonamiento: al ser un thinking model, encaja en pipelines de generación de cadenas de razonamiento, siempre que se configure un límite de tokens suficiente (mínimo 120).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card indica explícitamente que "no benchmark suite has run". Sí se reportan métricas de compresión frente al BF16:
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor indica explícitamente que no se ha ejecutado ninguna suite de benchmarks. Sí se publican métricas de compresión frente al BF16 de referencia, medidas con `llama-perplexity` sobre wikitext-2 (contexto 512, todos los chunks) con llama.cpp `29b52d398` y CUDA:
 
-| Tier | Tamaño | PPL | KLD media | KLD mediana | KLD 99,9 % | Mismo token top |
+| Tier | Tamano | PPL | KLD media | KLD mediana | KLD 99,9% | Mismo token top-1 |
 |---|---|---|---|---|---|---|
-| BF16 (referencia) | 52,23 GB | 6,862 | — | — | — | — |
+| BF16 (referencia) | 52,23 GB | 6,862 | - | - | - | - |
 | APEX-Quality | 20,07 GB | 6,873 | 0,0063 | 0,0029 | 0,174 | 96,5 % |
 | APEX-Compact | 14,10 GB | 6,965 | 0,0245 | 0,0127 | 0,632 | 93,2 % |
 | APEX-I-Nano | 11,34 GB | 7,227 | 0,0701 | 0,0386 | 1,480 | 88,6 % |
 
-Metodología: llama.cpp en el commit `29b52d398` con CUDA, `llama-perplexity` sobre el split de test de wikitext-2, contexto 512, todos los chunks, mismo corpus y contexto para la referencia BF16 y cada tier. La divergencia KL se calcula con logits guardados una vez del GGUF BF16. La PPL del BF16 es 6,862 en su propia pasada y 6,853 en la pasada usada para los ratios KL. Los tiers Balanced, Mini y los archivos sin imatrix no fueron evaluados.
+Los demás tiers (I-Quality, Balanced, I-Balanced, I-Compact, I-Mini) no han sido evaluados. La PPL del BF16 es 6,862 en su propia pasada y 6,853 en la pasada usada para los ratios KL.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: entre 11,34 GB (Nano) y 20,68 GB (Balanced) solo para los pesos; hay que sumar el espacio para KV cache y contexto, no cuantificado en la información disponible.
-- GPU recomendadas: el autor cita una NVIDIA DGX Spark con 122 GB de memoria unificada como su hardware local, suficiente para MoE de clase 30-50B. Para estos tiers concretos, una GPU con 24 GB (RTX 4090, A10G, L4 de 24 GB) cubre los tiers Quality y Balanced; una de 16 GB cubre Compact; una de 12 GB cubre Nano.
-- Cabe en GPU de consumo: sí. El tier Compact (14,10 GB) entra en RTX 4080/4090 de 16 GB o más; el Nano (11,34 GB) entra en RTX 3060 de 12 GB. El Quality (20,07 GB) requiere 24 GB.
-- Opciones de despliegue: llama.cpp (obligatorio el commit `29b52d398` o posterior, master tras el PR 32694 "Inkling 2 Mini"), LocalAI y cualquier runtime compatible con GGUF. Compatible con endpoints OpenAI según los tags del repositorio.
-- Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo.
+- VRAM estimada para inferencia: entre 11,34 GB (I-Nano) y 20,68 GB (Balanced) solo para pesos; hay que añadir el espacio de contexto y el overhead de llama.cpp.
+- GPU recomendadas: cualquier GPU con al menos 16 GB de VRAM para los tiers Compact/I-Compact (14,10 GB); 24 GB o más para Balanced y Quality (20,07-20,68 GB).
+- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) para todos los tiers; en GPUs de 16 GB para Compact e inferiores; en GPUs de 12 GB para I-Nano e I-Mini (12,36 GB puede requerir gestión cuidadosa de contexto).
+- Opciones de despliegue: llama.cpp (obligatorio commit `29b52d398` o posterior), `llama-cli`, `llama-mtmd-cli` para visión, LocalAI. Compatible con endpoints según los tags del repositorio. vLLM, TGI, Ollama y otros runtimes no están confirmados en la información disponible.
+- Latencia y throughput: no disponibles. El autor solo indica que el modelo requiere al menos 120 tokens de generación para producir respuestas coherentes, lo que implica que la latencia percibida en respuestas cortas será alta.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento en tareas para comparar directamente. Comparativa estructural con alternativas de tamaño similar:
+No se dispone de datos de benchmarks de tareas que permitan comparar el rendimiento con modelos de la misma categoría. La comparación se limita a las alternativas de cuantización del mismo modelo base y a la referencia BF16:
 
-| Modelo | Parámetros | Arquitectura | Contexto | Licencia | Formato disponible |
+| Modelo | Parametros | Contexto | Licencia | Formato | Tamano |
 |---|---|---|---|---|---|
-| Inkling-2-Mini (esta ficha) | 26,07 B totales, 8 de 128 expertos activos | MoE con núcleo de capas reutilizadas | no disponible | Apache 2.0 | GGUF (APEX), safetensors en base |
-| Mixtral 8x7B | 46,7 B totales, 2 expertos activos | MoE transformer | 32k | Apache 2.0 | GGUF, safetensors |
-| Qwen2.5-32B | 32,5 B densos | Transformer denso | 128k | Apache 2.0 | GGUF, safetensors |
-| DeepSeek-V2-Lite | 15,7 B totales, 2,4 B activos | MoE | 32k | MIT (código) / licencia propia | safetensors, GGUF |
+| Inkling-2-Mini (BF16) | 26,07 B | no disponible | Apache 2.0 | safetensors | 52,23 GB |
+| Inkling-2-Mini APEX-Quality | 26,07 B | no disponible | Apache 2.0 | GGUF | 20,07 GB |
+| Inkling-2-Mini APEX-Balanced | 26,07 B | no disponible | Apache 2.0 | GGUF | 20,68 GB |
+| Inkling-2-Mini APEX-I-Nano | 26,07 B | no disponible | Apache 2.0 | GGUF | 11,34 GB |
+| unsloth/Inkling-2-Mini-GGUF | 26,07 B | no disponible | Apache 2.0 | GGUF | no disponible |
 
-La comparación de rendimiento real no está disponible porque no se han ejecutado benchmarks de tareas sobre Inkling-2-Mini en esta publicación. Las cifras de los modelos alternativos corresponden a sus especificaciones públicas y no se han verificado contra una fuente en esta ficha.
+No se conocen en la información proporcionada otros modelos comparables de la misma categoría (MoE de ~26 B con bucle) con datos verificables.
 
 ## Limitaciones y advertencias
 
-- Sin benchmarks de tareas: no se ha ejecutado MMLU, HumanEval, GSM8K ni ninguna suite equivalente. Las únicas métricas son perplejidad y KL sobre wikitext-2, que miden fidelidad de compresión, no capacidad.
-- Solo texto: la torre de visión del modelo base no está incluida. No sirve para tareas multimodales.
-- Modelo de razonamiento: requiere al menos 120 tokens de generación antes de juzgar una respuesta; con límites bajos de tokens puede devolver razonamiento truncado sin respuesta final.
-- Dependencia de versión de llama.cpp: necesita el commit `29b52d398` o posterior. Versiones anteriores no cargarán el modelo correctamente.
-- Tiers pequeños con compresión limitada: el ancho de FFN de 1152 obliga a almacenar `ffn_down` en un tipo legacy de 32 de ancho, por lo que los tiers pequeños reducen menos tamaño del esperado. No asumir que el nombre del tipo refleja el tamaño real.
-- Tiers no evaluados: Balanced, Mini y todos los archivos sin imatrix carecen de métricas publicadas. La elección entre ellos es a ciegas.
-- Riesgo de alucinación y sesgos: no documentado en la información disponible. Al ser un modelo de razonamiento sin benchmarks, no hay evidencia publicada sobre su tasa de alucinación.
-- Idiomas: no disponible. No se puede confirmar cobertura multilingüe ni calidad por idioma.
-- Licencia: Apache 2.0 permite uso comercial, pero la model card remite a la política de uso aceptable del modelo base, que no se ha verificado en esta ficha.
-- Repositorio de 133,5 GB: descargar el repo completo requiere espacio considerable; conviene descargar solo el archivo del tier elegido.
-- Publicación con 0 descargas y 0 likes en el momento de la consulta: sin validación comunitaria todavía.
+- Sesgos conocidos: no disponibles; el autor no documenta sesgos del modelo base ni de las cuantizaciones.
+- Riesgo de alucinación: no cuantificado. Al ser un modelo de razonamiento, requiere al menos 120 tokens de generación; respuestas truncadas pueden parecer incoherentes.
+- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no están documentados en la información disponible.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base thinkingmachines/Inkling-2-Mini de forma independiente.
+- Los tiers pequeños reducen menos tamaño del que sugieren sus nombres porque los expertos `ffn_down` se almacenan en un tipo legacy de 32 anchos al no ser 1152 múltiplo de 256.
+- Los ficheros de cuantización contienen solo el modelo de lenguaje; la visión requiere el sidecar mmproj y no está incluida por defecto.
+- Solo tres tiers tienen métricas publicadas (Quality, Compact, I-Nano); el resto no ha sido evaluado y no se ha ejecutado ninguna suite de benchmarks.
+- El drafter DSpark no fue convertido por el autor sino espejado de unsloth, y su conversor no está en llama.cpp master; se debe verificar el SHA-256 publicado.
+- Requiere una versión específica de llama.cpp (commit `29b52d398` o posterior); versiones anteriores no cargarán el modelo.
+- El tier Quality y Balanced no son más pequeños que el checkpoint original (~19 GB), por lo que no sirven para ahorrar espacio, sino para obtener GGUF estándar con formatos k-quant.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mudler/Inkling-2-Mini-APEX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mudler/Inkling-2-Mini-APEX-GGUF
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
 - Proyecto APEX: https://github.com/localai-org/apex-quant
 - LocalAI: https://github.com/mudler/LocalAI
-- Patreon del autor: https://www.patreon.com/cw/mudler
-- Buy Me a Coffee del autor: https://www.buymeacoffee.com/mudler
-- GitHub Sponsors del autor: https://github.com/sponsors/mudler
+- GGUF alternativo de unsloth: https://huggingface.co/unsloth/Inkling-2-Mini-GGUF
+- Apoyo al autor (Patreon): https://www.patreon.com/cw/mudler
+- Apoyo al autor (Buy Me a Coffee): https://www.buymeacoffee.com/mudler
+- Apoyo al autor (GitHub Sponsors): https://github.com/sponsors/mudler

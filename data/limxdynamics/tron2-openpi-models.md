@@ -2,67 +2,94 @@
 
 ## Resumen
 
-El modelo `limxdynamics/tron2-openpi-models` es un checkpoint orientado al despliegue derivado de la familia OpenPI e integrado con los módulos de política TRON2. Ha sido publicado por el usuario limxdynamics en Hugging Face con el propósito de ofrecer pesos listos para su uso en pipelines de inferencia de Pi0/Pi0.5 y en clientes robot físicos. El repositorio tiene un tamaño de 49,8 GB, lo que sugiere que se trata de un modelo de gran tamaño, aunque no se especifican los parámetros totales ni la arquitectura exacta.
+TRON 2 OpenPI Models es una colección de checkpoints del modelo vision-language-action (VLA) Pi0.5, desarrollada por LimX Dynamics y publicada en Hugging Face. Estos pesos están afinados mediante OpenPI (el framework de Physical Intelligence) y se integran con los módulos de política del robot humanoide modular LimX TRON 2, que combina brazos modulares, pinzas o manos BrainCo, cabeza, chasis y elevador.
 
-La relevancia de este modelo radica en su enfoque en la robótica física: está diseñado para ser integrado en sistemas de control de robots mediante el código de entrenamiento y despliegue `Tron2_openpi` y la pila de dependencias `Tron2_env`. Sin embargo, la información pública disponible es muy limitada: no se indican licencia, idiomas soportados, ni detalles técnicos más allá de la mención a OpenPI y Pi0/Pi0.5. Esto dificulta una evaluación completa, pero su existencia apunta a un esfuerzo por facilitar la adopción de modelos de visión-lenguaje-acción en entornos de producción robótica.
+El repositorio cubre seis tareas de manipulación real: entrega de caramelos, doblado de ropa, clasificación de objetos, organización de escritorio, vertido de judías y limpieza de suelo con el chasis. Cada tarea cuenta con su propio checkpoint y estadísticas de normalización, y se despliega a través del pipeline de servicio de políticas Pi0/Pi0.5 junto con los clientes de robot real del repositorio tron2_openpi.
 
-## Especificaciones técnicas
+La relevancia de esta publicación radica en que ofrece pesos orientados a despliegue para un robot comercial concreto, no modelos genéricos de investigación. El repositorio ocupa 87,1 GB e incluye pesos derivados de PaliGemma a través de OpenPI, por lo que su uso está sujeto tanto a la licencia Apache 2.0 del código como a los términos de Gemma para los pesos.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (derivado de OpenPI, integrado con TRON2) |
+| Arquitectura | VLA basada en Pi0.5 (OpenPI), derivada de PaliGemma |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible |
+| Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | no disponible (tamaño del repo: 49,8 GB) |
+| Idiomas soportados | en, zh (segun etiquetas de la model card) |
+| Licencia | apache-2.0-and-gemma-terms (otra) |
+| Formato de pesos | no disponible (checkpoints de OpenPI; el repo no detalla safetensors ni GGUF) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible indica que el modelo es un checkpoint orientado al despliegue derivado de OpenPI, una familia de modelos de visión-lenguaje-acción (VLA) utilizada en robótica. Se integra con los módulos de política TRON2, lo que sugiere una arquitectura modular que combina un modelo base de OpenPI con componentes específicos de control. No se proporcionan detalles sobre el número de parámetros, la composición del dataset de entrenamiento, ni si se emplearon técnicas como RLHF o DPO. Tampoco se especifican innovaciones técnicas concretas más allá de la compatibilidad declarada con los pipelines de inferencia de Pi0/Pi0.5 y los clientes robot físicos de `Tron2_openpi`.
+Los checkpoints se basan en Pi0.5, un modelo vision-language-action implementado dentro del framework OpenPI y derivado de PaliGemma. La arquitectura combina un backbone vision-language con una cabeza de política que genera acciones motoras a partir de observaciones visuales e instrucciones de tarea. LimX Dynamics ha afinado estos pesos para el robot TRON 2, integrando la salida del modelo con los módulos de política del robot (brazos, pinzas o manos, cabeza, chasis y elevador).
+
+El entrenamiento se realizó mediante fine-tuning sobre OpenPI para seis tareas específicas, cada una con su propio checkpoint y contador de pasos (por ejemplo, `candy_h30_rtc_25000`, `cloth_h30_rtc_74999`, `sort_h50_rtc_30000`). Los nombres sugieren configuraciones de horizonte (h30, h50) y variantes RTC. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. Tampoco se detallan innovaciones como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Control de robots físicos: el modelo está diseñado para ser desplegado en clientes robot reales, utilizando la pila `Tron2_env`.
-- Compatibilidad con Pi0/Pi0.5: los checkpoints son compatibles con los pipelines de inferencia de Pi0/Pi0.5, lo que permite su uso en sistemas existentes de esa familia.
-- Integración con `Tron2_openpi`: ofrece un flujo de trabajo de fine-tuning y despliegue de extremo a extremo.
-- No se dispone de información sobre capacidades de generación de texto, razonamiento, código, matemáticas, visión o tool calling, más allá de su orientación robótica.
+- Control de manipulación robótica mediante políticas vision-language-action para el robot LimX TRON 2.
+- Ejecución de tareas concretas: entrega de caramelos, doblado de ropa, clasificación, organización de escritorio, vertido de judías y limpieza de suelo con chasis.
+- Integración con brazos modulares, pinzas o manos BrainCo, cabeza, chasis y elevador del TRON 2.
+- Despliegue mediante pipeline de servicio de políticas Pi0/Pi0.5 con clientes de robot real.
+- Soporte de instrucciones en inglés y chino (según etiquetas de idioma de la model card).
+- Checkpoint adicional `pi05_tron2_banana` sin perfil de despliegue público.
+- No se documentan capacidades de tool calling, agentes multi-paso, visión general, audio ni modo thinking.
 
 ## Casos de uso
 
-- Despliegue de políticas robóticas en entornos de producción: el modelo puede integrarse en sistemas de control de robots mediante `Tron2_openpi`, permitiendo ejecutar tareas de manipulación o navegación en tiempo real.
-- Fine-tuning para tareas específicas de robótica: gracias a la compatibilidad con OpenPI, es posible ajustar el checkpoint sobre datasets propios de demostraciones o trayectorias.
-- Investigación en aprendizaje por imitación: al estar basado en OpenPI, puede utilizarse como punto de partida para experimentos sobre políticas de visión-lenguaje-acción.
-- Desarrollo de sistemas de control híbridos: la integración con TRON2 permite combinar el modelo con módulos de planificación o control clásico.
-- Evaluación de modelos VLA en hardware real: su orientación al despliegue facilita pruebas comparativas en robots físicos frente a otros checkpoints de la familia Pi0.
-- Integración en pipelines de inferencia existentes: al ser compatible con Pi0/Pi0.5, puede sustituir o complementar modelos previos sin cambios importantes en la infraestructura.
+- Entrega de objetos en entornos controlados: el checkpoint `pi05_tron2_candy` permite al TRON 2 recoger y entregar caramelos u objetos similares, usando el pipeline de servicio Pi0.5 y el cliente `pi_client_rtc.py` para control en tiempo real.
+- Doblado de ropa automatizado: el checkpoint `pi05_tron2_cloth` está entrenado para manipular telas, una tarea de alta destreza que requiere coordinación bimanual y percepción visual continua.
+- Clasificación de objetos: `pi05_tron2_sort` habilita tareas de picking and placing con criterios de clasificación, adecuado para líneas de montaje o logística ligera.
+- Organización de escritorio: `pi05_tron2_desktop` permite reordenar objetos sobre una superficie de trabajo, útil en entornos de oficina o laboratorio.
+- Vertido de sustancias: `pi05_tron2_beans` está orientado a tareas de pouring, que exigen control preciso de orientación y fuerza con las manos o pinzas.
+- Limpieza de suelo con chasis: `pi05_tron2_chassis` combina la base móvil del TRON 2 con la política VLA para tareas de barrido o limpieza, usando estadísticas de normalización específicas (`chassis270`).
+- Investigación en VLA: los checkpoints sirven como base para fine-tuning en nuevas tareas mediante el repositorio `tron2_openpi`, facilitando la experimentación con políticas Pi0.5 en robótica real.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- No se dispone de información sobre requisitos de VRAM, GPUs recomendadas, ni opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, etc.).
-- El tamaño del repositorio (49,8 GB) sugiere que el modelo es considerable y probablemente requiera GPUs de alta capacidad (por ejemplo, A100 o H100), pero no hay confirmación oficial.
-- Dado su enfoque en robótica física, el despliegue probablemente requiera un servidor con GPU dedicada y comunicación de baja latencia con el robot, aunque no se especifican detalles.
+- VRAM estimada para inferencia: no disponible en la información proporcionada.
+- GPU recomendadas: no disponible.
+- Compatibilidad con GPU de consumo: no disponible.
+- Opciones de despliegue: pipeline de servicio de políticas Pi0/Pi0.5 mediante `scripts/serve_policy.py` y cliente `examples/tron2/pi_client_rtc.py` del repositorio `tron2_openpi`, con perfiles de configuración YAML (`candy_server.yaml`, `candy_client.yaml`, etc.).
+- Latencia y throughput: no disponible.
+- Tamaño del repositorio: 87,1 GB, lo que implica requisitos de almacenamiento considerables para descargar los checkpoints.
 
 ## Comparativa con modelos similares
 
-No disponible. No se proporcionan datos sobre modelos comparables en la misma categoría (robótica VLA) ni sobre su rendimiento relativo.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| limxdynamics/tron2-openpi-models | no disponible | no disponible | apache-2.0-and-gemma-terms | Hugging Face, ModelScope |
+| OpenPI (Physical Intelligence) | no disponible | no disponible | según OpenPI | GitHub |
+| Pi0.5 base | no disponible | no disponible | según OpenPI/PaliGemma | no disponible |
+
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No se dispone de información sobre sesgos conocidos, riesgos de alucinación o limitaciones de contexto.
-- La licencia no está especificada, por lo que se desconoce si el uso comercial está permitido. Se recomienda contactar al autor antes de cualquier uso productivo.
-- El modelo está orientado a robótica física; su uso fuera de ese dominio no está documentado y podría no ser adecuado.
-- La ausencia de especificaciones técnicas detalladas (parámetros, contexto, idiomas) dificulta la evaluación de su idoneidad para tareas concretas.
-- Dado que es un checkpoint de despliegue, puede requerir ajustes adicionales para funcionar correctamente en entornos no contemplados por `Tron2_openpi`.
+- Los checkpoints están diseñados exclusivamente para el robot LimX TRON 2; no son transferibles directamente a otras plataformas sin fine-tuning.
+- Dirigen movimiento físico real: deben usarse desde el estado inicial del robot, con el espacio de trabajo despejado (ambos brazos se mueven), operador formado presente y parada de emergencia accesible.
+- La licencia combina Apache 2.0 (código) con los términos de Gemma (pesos derivados de PaliGemma), lo que impone restricciones adicionales para uso comercial.
+- No se documentan sesgos conocidos, tasas de alucinación ni limitaciones de contexto o idioma más allá de en/zh.
+- El checkpoint `pi05_tron2_banana` no tiene perfil de despliegue público, por lo que su uso en producción no está soportado oficialmente.
+- No se especifican requisitos de hardware ni cuantizaciones, lo que dificulta la planificación de despliegue.
+- El tamaño del repositorio (87,1 GB) puede suponer una barrera para entornos con almacenamiento limitado.
 
 ## Enlaces
 
-- [Hugging Face: limxdynamics/tron2-openpi-models](https://huggingface.co/limxdynamics/tron2-openpi-models)
-- [Repositorio Tron2_openpi (GitHub)](https://github.com/limxdynamics/tron2_openpi)
-- [Repositorio Tron2_env (GitHub)](https://github.com/limxdynamics/tron2_env)
+- Hugging Face: https://huggingface.co/limxdynamics/tron2-openpi-models
+- ModelScope: https://www.modelscope.cn/models/LimXDynamics/tron2-openpi-models
+- Repositorio de código (fine-tuning y despliegue): https://github.com/limxdynamics/tron2_openpi
+- Entorno de robot real: https://github.com/limxdynamics/tron2_env
+- OpenPI (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
+- Descripción del robot (URDF/MJCF/USD): https://huggingface.co/limxdynamics/tron2-robot-description
+- Issues: https://github.com/limxdynamics/tron2_openpi/issues
+- Hugging Face de LimX Dynamics: https://huggingface.co/limxdynamics
+- GitHub de LimX Dynamics: https://github.com/limxdynamics
+- Sitio web: https://www.limxdynamics.com/en
+- Contacto: opensource@limxdynamics.com

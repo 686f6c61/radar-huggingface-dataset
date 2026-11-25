@@ -2,111 +2,99 @@
 
 ## Resumen
 
-RAM_Altman_GPT es un modelo de lenguaje conversacional de caracter parodico desarrollado por el usuario brunuu y publicado en Hugging Face bajo licencia CC0-1.0. Se trata de un GPT-2 minúsculo entrenado desde cero, con tan solo 100.000 parámetros y una ventana de contexto de 379 tokens, cuyo único proposito es responder a cualquier mensaje del usuario con exigencias de mas memoria RAM. No es un modelo de proposito general: es una pieza de humor tecnico, un juguete deliberadamente limitado que satiriza la escasez de chips de memoria y las narrativas de la industria de la IA.
+RAM_Altman_GPT es un modelo de lenguaje conversacional creado por el usuario brunuu como proyecto de parodia. Se trata de un GPT-2 entrenado desde cero con tan solo 100.000 parámetros, cuyo único comportamiento es responder a cualquier entrada exigiendo más memoria RAM. El modelo no pretende resolver ningún problema técnico real: es una pieza de humor satírico sobre la escasez de chips de memoria y la fiebre por el hardware en el ecosistema de la IA.
 
-El modelo emplea la arquitectura `GPT2LMHeadModel` clasica con 3 capas, 4 cabezas de atencion y un tamano oculto de 40, con embeddings atados (tied embeddings). Ha sido entrenado con datos sinteticos y un tokenizador personalizado, y se distribuye en formatos safetensors, ONNX y GGUF (245 KB en cuantizacion GGUF), lo que permite ejecutarlo en CPU, en el navegador via transformers.js e incluso en dispositivos de muy bajos recursos.
+A pesar de su naturaleza cómica, el proyecto es técnicamente interesante como ejemplo de modelo mínimo entrenado desde cero con tokenizador propio y datos sintéticos. Con una ventana de contexto de 379 tokens y un tamaño de repositorio prácticamente nulo, demuestra que es posible publicar un modelo funcional (en el sentido de que genera texto coherente con su personaje) con recursos ínfimos.
 
-Su relevancia es fundamentalmente divulgativa y experimental: sirve como ejemplo minimo de pipeline completo de entrenamiento, publicacion y despliegue de un modelo conversacional, y como banco de pruebas para integraciones con Ollama, LM Studio, llama.cpp y transformers.js. No debe confundirse con un modelo util para tareas reales de generacion de texto.
+Es relevante ahora por su valor pedagógico y como curiosidad reproducible: sirve para experimentar con el pipeline completo de entrenamiento, conversión a GGUF/ONNX y despliegue en navegador, CPU y herramientas como Ollama o LM Studio, sin necesidad de GPU. No es un modelo apto para ninguna tarea de producción real.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (`GPT2LMHeadModel`), transformer decoder-only |
-| Parametros totales | 100.000 (embeddings atados) |
-| Parametros activos | no aplica (no es MoE) |
+| Arquitectura | GPT-2 (transformer decoder-only), entrenado desde cero |
+| Parametros totales | 100.000 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 379 tokens |
-| Tipos de cuantizacion | GGUF (incluye variante f16 de 245 KB); ONNX; safetensors en fp32 |
-| Idiomas soportados | ingles (en) |
-| Licencia | CC0-1.0 (dominio publico) |
+| Tipos de cuantizacion | GGUF (incluye f16; otras variantes no disponibles en la informacion) |
+| Idiomas soportados | en (ingles) |
+| Licencia | cc0-1.0 (dominio publico) |
 | Formato de pesos | safetensors, ONNX, GGUF |
-| Capas / cabezas / tamano oculto | 3 / 4 / 40 |
-| Tokenizador | personalizado (custom-tokenizer) |
-| Datos de entrenamiento | sinteticos (synthetic-data) |
-| Pipeline | text-generation |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura transformer decoder-only de GPT-2 en su variante mas pequena: 3 capas, 4 cabezas de atencion y dimension oculta de 40, con los embeddings de entrada y salida atados, lo que explica que el total de parametros se quede en 100.000. La ventana de contexto es de 379 tokens, un valor inusualmente bajo que condiciona por completo su uso: solo permite mantener conversaciones muy breves antes de truncar.
+El modelo sigue la arquitectura GPT-2, un transformer decoder-only con atención causal estándar, pero a una escala minúscula: 100.000 parámetros en total. Cuenta con un tokenizador personalizado (custom-tokenizer) y fue entrenado desde cero (trained-from-scratch) sobre datos sintéticos (synthetic-data), presumiblemente generados para reforzar su único rasgo de personalidad: la obsesión por la RAM.
 
-El entrenamiento se realizo desde cero (trained-from-scratch) con datos sinteticos y un tokenizador personalizado, segun los tags de la model card. No se documenta en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset ni si hubo fases de RLHF o DPO. Tampoco se detallan innovaciones tecnicas como decodificacion especulativa o atencion lineal; el interes del proyecto reside precisamente en su simplicidad extrema y en la inclusion de un token de parada especifico (`<|i_have_enough_ram|>`), que el autor recomienda usar como stop sequence en llama.cpp.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. La model card no documenta innovaciones técnicas más allá del propio enfoque minimalista y la publicación de artefactos en múltiples formatos (safetensors, ONNX para transformers.js y GGUF para llama.cpp/Ollama/LM Studio).
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, con respuestas cortas (mediana de 14 palabras, media de 19, con picos de hasta 240).
-- Personaje consistente: responde practicamente siempre (210 de 210 respuestas en la evaluacion del autor) con exigencias de mas RAM.
-- Eco parcial del tema del usuario: en torno al 35% de las respuestas reutilizan una palabra del mensaje recibido (pizza, perros, Python, etc.).
-- Reconocimiento de su propio nombre en aproximadamente el 70% de los casos.
-- Capacidad de seguir el hilo conversacional muy limitada: recuerda lo dicho anteriormente solo en un 8% de los casos, apenas por encima del azar.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles (solo ingles).
-- Capacidades especiales: no dispone de modo thinking, vision ni audio.
-- Despliegue en CPU, navegador (transformers.js) y entornos de bajos recursos.
+- Generación de texto conversacional en inglés, con respuestas de una o pocas frases.
+- Mantenimiento superficial del hilo conversacional: puede recoger una palabra del mensaje del usuario y reutilizarla, aunque sin comprensión real.
+- Consistencia de personaje: responde sistemáticamente como "RAM ALTMAN" exigiendo más memoria.
+- Reconocimiento de su propio nombre cuando se le pregunta.
+- Ejecución en CPU y en navegador mediante transformers.js.
+- No dispone de tool calling, function calling, razonamiento multi-paso, visión, audio ni modo thinking.
+- Capacidad multilingüe limitada al inglés; no se documenta soporte de otros idiomas.
 
 ## Casos de uso
 
-- Demo educativa de transformers.js: el modelo se puede cargar en el navegador con `dtype: "fp32"` y ejecutarse integramente en el cliente, sin backend, lo que lo convierte en un ejemplo minimo de inferencia local para talleres y tutoriales.
-- Prueba de integracion con Ollama y LM Studio: sirve para validar el flujo completo de creacion de un `Modelfile`, carga de un GGUF y ajuste de parametros de muestreo (temperature 1.0, top-k 50, top-p 1.0, min-p 0, repeat penalty desactivado) en pipelines de despliegue local.
-- Bot de humor para comunidades tecnicas: puede integrarse en un canal de Discord o Telegram como respuesta automatica parodica ante mensajes que mencionen memoria, GPUs o datacenters, aprovechando su sesgo tematico hacia la RAM.
-- Test de regresion de infraestructura de inferencia: al ser un modelo de 100.000 parametros y 245 KB en GGUF, permite verificar en segundos que un servidor de llama.cpp, TGI o un endpoint compatible responde correctamente, sin consumir recursos de GPU.
-- Ejemplo de publicacion de un modelo desde cero: el repositorio ilustra el ciclo completo (tokenizador personalizado, entrenamiento sintetico, exportacion a safetensors, ONNX y GGUF, model card y Space de demostracion), util como plantilla para proyectos docentes.
-- Benchmark de latencia en CPU y dispositivos embebidos: su tamano minimo permite medir el overhead de frameworks (transformers, llama.cpp, transformers.js) con independencia del coste computacional del modelo, aislando el coste de infraestructura.
-- Generacion de respuestas tematicas para juegos o bots de memes: la consistencia del personaje (practicamente el 100% de respuestas sobre RAM) lo hace adecuado como generador de frases para un juego de humor o un bot de satira tecnologica.
+- Demo educativa de transformers.js: el modelo se puede cargar en una página web y ejecutar íntegramente en el navegador del visitante, sirviendo como ejemplo mínimo de inferencia sin servidor.
+- Prueba de extremo a extremo del pipeline de publicación: conversión a GGUF y ONNX, generación de model card y despliegue en un Space de Hugging Face; útil para quien quiera replicar el flujo con un modelo propio.
+- Bot de humor para comunidades técnicas: integrarlo en un canal de Discord o chat interno como respuesta automática cómica cuando alguien menciona memoria o hardware.
+- Test de herramientas de inferencia: por su tamaño ínfimo, es práctico para verificar configuraciones de llama.cpp, Ollama o LM Studio (temperatura, top-k, repeat penalty) sin consumir recursos.
+- Material docente sobre entrenamiento desde cero: ilustra cómo un corpus sintético y un tokenizador propio determinan por completo el comportamiento de un modelo pequeño.
+- Ejercicio de evaluación de alucinación controlada: al ser un personaje que deliberadamente ignora la pregunta, sirve para discutir qué significa "seguir instrucciones" en modelos pequeños.
+- Curiosidad para benchmarks humorísticos: la propia model card lo presenta frente a modelos frontera con resultados de 0% o DNF, lo que puede usarse como ejemplo didáctico de cómo no interpretar una tabla de benchmarks.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El autor unicamente reporta metricas cualitativas de comportamiento medidas sobre unos cientos de respuestas con temperature 1.0 y top-k 50:
+Los únicos datos publicados en la model card son de carácter paródico y no deben tomarse como métricas reales de capacidad. Se reproducen a continuación tal como aparecen:
 
-| Metrica | Resultado |
-|---|---|
-| Respuestas que mencionan RAM | 210 de 210 |
-| Longitud de respuesta (mediana / media) | 14 / 19 palabras (maximo ocasional de 240) |
-| Respuestas que terminan por si solas | 209 de 210 |
-| Dice su nombre cuando se le pregunta | ~70% |
-| Repite el tema del usuario | ~35% |
-| Responde con un chiste de RAM a "can I download more RAM?" | ~90% |
-| Menciona datacenters sin que se le pregunte | ~10% de las respuestas |
-| Respuestas con al menos una falta de ortografia | ~13% (mayoritariamente `PIZZZA`) |
-| Recuerda lo dicho antes en la conversacion | 8% |
+| Benchmark | Claude Fable 5.2 | GPT-6.2 Astra | RAM_Altman_GPT |
+|---|---|---|---|
+| Terminal-Bench 4.0 | 67,6% | 63,1% | 0% |
+| Terminal-Bench-Science 0.1 | ~73% | ~77% | DNF |
+| Artificial Analysis Intelligence Index | 65 | 62 | No evaluado |
+| Parámetros | muchos | muchos | 100.000 |
+| Ventana de contexto | 1M tokens | grande | 379 tokens |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Los modelos comparados en la tabla de la model card son ficticios y forman parte del tono satírico del proyecto.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 MB en fp32 (100.000 parametros), por lo que cabe en cualquier GPU, CPU o incluso en memoria de un microcontrolador con suficiente RAM.
-- GPU recomendadas: no requiere GPU; funciona en CPU sin problemas. Cualquier GPU consumer (GTX 1050, RTX 3060, RTX 4090, A100, H100) lo ejecuta con holgura absoluta.
-- Cabe en cualquier GPU consumer, incluida la gama mas baja, y en dispositivos moviles y navegadores.
-- Opciones de despliegue: transformers (Python), transformers.js (navegador), llama.cpp (`llama-completion`), Ollama (`ollama create` con `Modelfile`), LM Studio (archivo `.gguf`), text-generation-inference y endpoints compatibles.
-- Latencia y throughput: no se publican cifras concretas en la informacion disponible; por el tamano del modelo, se espera una latencia de milisegundos en CPU, aunque el limite practico es el contexto de 379 tokens.
-- Parametros de muestreo recomendados: temperature 1.0, top-k 50, top-p 1.0, min-p 0, repeat penalty 1.0 y stop sequence `<|i_have_enough_ram|>`.
+- VRAM estimada para inferencia: inferior a 1 MB en f16 (100.000 parámetros); el GGUF ocupa 245 KB según la model card.
+- GPU recomendadas: ninguna necesaria; funciona en CPU.
+- Cabe en cualquier GPU consumer, e incluso en microcontroladores y navegadores.
+- Opciones de despliegue: transformers (Python), transformers.js (navegador), llama.cpp, Ollama (`ollama run hf.co/brunuu/RAM_Altman_GPT-GGUF`), LM Studio y text-generation-inference (tag endpoints_compatible).
+- Latencia y throughput: no disponibles de forma numérica; por el tamaño del modelo, la latencia será dominada por el arranque del runtime más que por el cálculo.
+- Configuración recomendada por el autor en LM Studio: temperatura 1.0, top-k 50, top-p 1.0, min-p 0 y repeat penalty desactivado.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de modelos comparables documentados en la informacion proporcionada. A modo de referencia estructural, se compara con alternativas de la misma categoria (modelos GPT-2 minimos y juguetes):
+| Modelo | Parámetros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|
+| RAM_Altman_GPT | 100.000 | 379 tokens | CC0 | Parodia conversacional |
+| GPT-2 small (original) | 124M | 1.024 tokens | MIT | Generación de texto general |
+| TinyStories-style models | ~1M–10M | variable | variable | Modelos mínimos educativos |
+| Modelos de juguete tipo nanoGPT | ~100K–10M | variable | variable | Reproducción docente |
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Proposito |
-|---|---|---|---|---|---|
-| RAM_Altman_GPT (brunuu) | 100.000 | 379 tokens | CC0-1.0 | safetensors, ONNX, GGUF | Parodia / juguete |
-| GPT-2 small (OpenAI) | 124 millones | 1.024 tokens | MIT | safetensors, GGUF | Generacion general |
-| Modelos "tiny" de transformers.js | variable (M) | variable | variable | ONNX | Demos en navegador |
-| Modelos de chat de 0,5B-1B (p. ej. Qwen, TinyLlama) | 500 M - 1,1 B | 2.048-32.768 tokens | Apache-2.0 / MIT | safetensors, GGUF | Uso real |
-
-La diferencia de ordenes de magnitud en parametros y contexto hace que RAM_Altman_GPT no sea funcionalmente comparable a ninguno de ellos: su interes es humoristico y didactico, no de rendimiento.
+La comparación más directa es con GPT-2 small (124M parámetros), unas 1.240 veces mayor, y con modelos de juguete similares a nanoGPT. Frente a ellos, RAM_Altman_GPT destaca por su licencia CC0, su empaquetado en múltiples formatos y su personaje fijo; carece, en cambio, de cualquier capacidad general de generación. No se dispone de datos de rendimiento comparables publicados.
 
 ## Limitaciones y advertencias
 
-- Sesgo tematico extremo: practicamente todas las respuestas giran en torno a la RAM, lo que lo inutiliza para cualquier tarea de generacion de texto real.
-- Riesgo de alucinacion total: el modelo no tiene conocimiento factual verificable; inventa exigencias de memoria y referencias a hardware (DDR4, DDR6, GDDR6, HBM4, LPDDR5X) sin base real.
-- Contexto muy limitado (379 tokens): las conversaciones multi-turno se truncan rapidamente y la memoria conversacional es practicamente nula (8%).
-- Solo ingles: no soporta castellano ni otros idiomas.
-- Ortografia imperfecta: aproximadamente el 13% de las respuestas contienen faltas deliberadas o involuntarias (`PIZZZA`).
-- Licencia CC0-1.0: permite uso comercial y modificacion sin restricciones, pero el contenido parodico no debe presentarse como producto serio ni atribuirse a terceros; el autor declara explicitamente que no esta afiliado ni respaldado por nadie.
-- Caveat de produccion: no debe desplegarse como chatbot de atencion al cliente ni en entornos donde se espere informacion veraz; su unico uso recomendado es divulgativo, humoristico o como prueba de infraestructura.
-- Riesgo de confusion de marca: el nombre parodia a una figura publica del sector; conviene revisar implicaciones legales antes de cualquier uso comercial del personaje.
+- No es apto para producción: no responde preguntas, no razona y no sigue instrucciones más allá de mantener su personaje.
+- Ventana de contexto de solo 379 tokens, insuficiente para la mayoría de conversaciones reales.
+- Riesgo de alucinación total y deliberada: el modelo inventa y desvía cualquier tema hacia la RAM.
+- Solo inglés; no se documenta soporte de castellano ni de otros idiomas.
+- Entrenado con datos sintéticos, lo que limita su vocabulario y produce respuestas repetitivas.
+- La licencia CC0 permite uso comercial sin restricciones, pero el contenido es una parodia; la model card aclara que no está afiliado ni respaldado por ninguna persona u organización.
+- La configuración de muestreo importa: con top-p y min-p por defecto el modelo puede no detenerse, según advierte el autor.
+- No debe citarse como referencia técnica ni incluirse en evaluaciones serias de modelos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/brunuu/RAM_Altman_GPT
-- Demo en navegador (Space): https://huggingface.co/spaces/brunuu/RAM_Altman_GPT
-- Documentacion de transformers.js: https://huggingface.co/docs/transformers.js
-- Repositorio de llama.cpp (mencionado en la model card): no disponible en la informacion proporcionada
-- Paper o blog tecnico del autor: no disponible en la informacion proporcionada
+- Repositorio GGUF: https://huggingface.co/brunuu/RAM_Altman_GPT-GGUF
+- Demo en el navegador (Space): https://huggingface.co/spaces/brunuu/RAM_Altman_GPT
+- Documentación de transformers.js: https://huggingface.co/docs/transformers.js

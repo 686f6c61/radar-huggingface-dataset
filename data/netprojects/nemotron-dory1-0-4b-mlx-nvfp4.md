@@ -2,116 +2,115 @@
 
 ## Resumen
 
-Nemotron-Labs Dory 1.0 4B es un modelo de razonamiento de 4.000 millones de parámetros desarrollado por NVIDIA (a través de Nemotron-Labs) y publicado el 16 de octubre de 2026. Su rasgo distintivo es que se trata de un modelo de lenguaje "en bucle" (looped language model): un bloque compartido de capas se ejecuta entre 1 y 4 veces, 2 por defecto. Esto permite que un único conjunto de pesos ofrezca un dial entre velocidad y precisión: con un solo bucle es más rápido, con cuatro es más preciso, sin necesidad de cargar variantes distintas del modelo.
+Este repositorio contiene una conversión a MLX del checkpoint NVFP4 de NVIDIA Nemotron-Labs Dory 1.0 4B, un modelo de razonamiento de 3.975 millones de parámetros publicado por NVIDIA a través de su iniciativa Nemotron-Labs. La particularidad de Dory es que es un *looped language model*: un bloque compartido de capas se ejecuta entre 1 y 4 veces (2 por defecto), de modo que un único conjunto de pesos ofrece un dial entre velocidad y precisión sin necesidad de cargar modelos distintos. Este build concreto, mantenido por NetProjects (Internet Projects Ltd), no re-cuantiza: copia byte a byte los pesos de 4 bits y las escalas de bloque calibradas por NVIDIA al formato nativo `nvfp4` de MLX, por lo que ejecuta exactamente los pesos que NVIDIA ajustó.
 
-La ficha que nos ocupa, `netprojects/nemotron-dory1.0-4b-mlx-nvfp4`, no es el modelo original de NVIDIA sino una conversión comunitaria realizada por NetProjects (Internet Projects Ltd) para Apple Silicon. Empaqueta los pesos NVFP4 de 4 bits calibrados por NVIDIA en el formato nativo `nvfp4` de MLX, dando como resultado un repositorio de 2,6 GB que, según el autor, es aproximadamente 1,4 veces más rápido que su build de 8 bits y mantiene la misma perplejidad que bf16. Está pensado para ejecutarse en Macs con chip M-series mediante el paquete `dory-mlx`.
+El resultado es un paquete de 2,6 GB que ocupa aproximadamente la mitad que el build de 8 bits (4,2 GB) y un tercio que el de bf16 (8,0 GB), con una perplejidad en WikiText-2 prácticamente idéntica (11,59 frente a 11,62 en bf16, con 2 loops) y una velocidad de generación de 99 tokens/s en un Apple M5 Max, frente a 69 tokens/s del build de 8 bits. La coincidencia con el token top-1 del build bf16 es del 89 %, lo que indica una deriva pequeña pero no despreciable respecto al original.
 
-El modelo es relevante porque demuestra dos tendencias convergentes: por un lado, la exploración de arquitecturas no convencionales (capas recurrentes compartidas) para exprimir modelos pequeños en tareas de razonamiento; por otro, la maduración del ecosistema MLX para ejecutar modelos de NVIDIA en hardware de Apple con cuantizaciones de 4 bits de alta fidelidad. El modelo está orientado únicamente a inglés, con entrada y salida de texto.
+Es relevante ahora porque demuestra una ruta de cuantización poco habitual: en lugar de comprimir un modelo en bf16, se reutiliza una cuantización NVFP4 ya calibrada por el fabricante y se traslada a un runtime distinto (MLX) preservando el layout de bloques de 16 valores con escala E4M3 por bloque. Para desarrolladores en Apple Silicon que quieran ejecutar modelos de razonamiento con cadena de pensamiento explícita en local, es una opción compacta y rápida, aunque limitada al inglés y a un único ecosistema de inferencia.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con bloque de capas compartido ejecutado en bucle (looped language model); 1 a 4 pasadas del bloque, 2 por defecto |
-| Parámetros totales | 3.975.229.440 (≈4B) |
-| Parámetros activos | No aplica (no es MoE); los parámetros efectivos por token varían según el número de bucles |
-| Longitud de contexto | No disponible (se han verificado prompts de 16K tokens en las pruebas del autor, pero no se declara un máximo oficial) |
-| Tipos de cuantización | NVFP4 de 4 bits (bloques de 16 con escala E4M3 de 8 bits por bloque más una escala por matriz); embeddings y cabeza de salida en 8 bits |
-| Idiomas soportados | Inglés únicamente (en) |
-| Licencia | OpenMDW-1.1 (heredada del modelo original de NVIDIA); el código de `dory-mlx` es Apache-2.0 |
-| Formato de pesos | safetensors, layout fusionado (query/key/value/gate en una matriz; gate/up del MLP en una matriz), optimizado para MLX |
+| Arquitectura | Transformer con bloque de capas compartido reutilizado en bucle (looped language model), con atención y MLP fusionados en matrices únicas |
+| Parametros totales | 3.975.229.440 (≈4B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada (se han validado prompts de 16K tokens en las pruebas del autor) |
+| Tipos de cuantizacion | NVFP4 (4 bits, bloques de 16 con escala E4M3 por bloque y escala por matriz); embeddings y cabeza de salida en 8 bits; existen builds bf16 y 8-bit del mismo modelo |
+| Idiomas soportados | Ingles (en) |
+| Licencia | OpenMDW-1.1 (modelo); codigo de `dory-mlx` bajo Apache-2.0 |
+| Formato de pesos | safetensors en formato MLX `nvfp4` (layout fusionado: query/key/value/gate en una matriz, gate/up del MLP en otra) |
 
 ## Arquitectura y entrenamiento
 
-Dory 1.0 4B es un modelo de lenguaje autorregresivo basado en transformer con una modificación estructural clave: un bloque de capas compartido que se recorre en bucle un número configurable de veces (de 1 a 4, con 2 como valor por defecto recomendado por NVIDIA). Al reutilizar el mismo conjunto de pesos en cada pasada, el modelo incrementa su profundidad computacional efectiva sin aumentar el número de parámetros, lo que le permite dedicar más cómputo a la cadena de razonamiento cuando se le pide. Es, en la práctica, una forma de "test-time compute" integrada en la arquitectura.
+Dory 1.0 4B es un modelo de lenguaje de tipo *looped*: en lugar de apilar decenas de capas distintas, define un bloque compartido que se aplica repetidamente entre 1 y 4 veces según se configure en tiempo de inferencia. El checkpoint por defecto usa 2 loops, que es la configuración recomendada por NVIDIA. Esta recurrencia permite que un mismo conjunto de pesos escale en capacidad de cómputo efectiva sin aumentar el número de parámetros almacenados, a costa de un mayor tiempo de inferencia por token. El modelo normaliza la salida de casi todas las matrices, lo que en la práctica cancela la escala por matriz del formato NVFP4; el conversor de NetProjects pliega esa escala en las escalas por canal ya existentes del modelo (en la puerta de salida de atención y en la puerta del MLP) para los dos casos en que sí importa.
 
-No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni las técnicas de alineación (RLHF, DPO) empleadas por NVIDIA. El modelo genera cadenas de razonamiento dentro de etiquetas `<think>...</think>` antes de emitir la respuesta final, lo que sugiere un entrenamiento orientado a razonamiento explícito. La conversión a MLX NVFP4 realizada por NetProjects copia byte a byte los valores de 4 bits y las escalas de bloque del checkpoint original de NVIDIA; en las dos matrices donde la escala por matriz importa (la puerta de salida de atención y la puerta del MLP), dicha escala se pliega en las escalas por canal ya existentes. El autor reporta un error relativo de 0,08 al de-cuantizar frente a los pesos bf16 de NVIDIA (un layout incorrecto daría 1,4) y una perplejidad en WikiText-2 de 11,59 con 2 bucles, idéntica a la del build bf16 (11,62).
+Sobre el entrenamiento no se proporcionan en la información disponible datos de número de tokens, composición del dataset ni si hubo RLHF o DPO; la model card remite a la ficha original de NVIDIA para los detalles. Lo que sí está documentado es el proceso de cuantización: NVIDIA publicó un checkpoint NVFP4 con valores de 4 bits en bloques de 16 y una escala E4M3 por bloque más una escala adicional por matriz. MLX usa exactamente la misma estructura de bloques y escalas, de modo que la conversión copia esos bytes sin alterarlos. Las verificaciones del autor muestran un error relativo de 0,08 al de-cuantizar frente a los pesos bf16 de NVIDIA (un layout incorrecto daría 1,4), y una deriva KL de 0,07 frente al re-cuantizado propio desde bf16, que sería de 0,13.
 
 ## Capacidades
 
-- Generación de texto en inglés con cadena de razonamiento explícita previa a la respuesta (modo "thinking" integrado mediante `<think>`).
-- Razonamiento multi-paso: el dial de bucles (1 a 4) permite asignar más cómputo a problemas complejos.
-- Aritmética y matemáticas básicas: el autor verifica que responde correctamente a "17 × 23 = 391".
-- Razonamiento de sentido común y explicaciones (ejemplo de la model card: explicar por qué el cielo es azul).
+- Generación de texto en inglés con cadena de razonamiento explícita: el modelo emite primero el razonamiento dentro de `` y después la respuesta final.
+- Razonamiento multi-paso y aritmética: la model card verifica respuestas como 17 × 23 = 391.
+- Modo de razonamiento con profundidad ajustable mediante el parámetro `loops` (1 a 4), que actúa como dial velocidad/precisión.
 - Conversación multi-turno (pipeline `text-generation`, etiqueta `conversational`).
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes: no disponible en la información proporcionada.
-- Capacidades multimodales (visión, audio): no disponibles; el modelo es solo texto.
-- Multilingüismo: limitado a inglés.
+- Inferencia local en Apple Silicon mediante MLX y el paquete `dory-mlx`.
+- Soporte de cachés de ventana deslizante con prefill por trozos y decodificación token a token, validado con una concordancia top-1 de al menos el 99,3 % frente a un pase completo.
+- No se documenta soporte de tool calling, function calling, visión, audio ni capacidades de agente en la información proporcionada.
 
 ## Casos de uso
 
-- Razonamiento asistido en local para desarrolladores: ejecutar el modelo en un MacBook con chip M-series para resolver problemas de lógica, matemáticas o explicaciones técnicas sin conexión a la nube, ajustando el número de bucles según la dificultad del problema.
-- Prototipado rápido de aplicaciones de razonamiento en Apple Silicon: gracias a los 2,6 GB del build NVFP4 y a los 99 tokens/s con 2 bucles en un M5 Max, es viable iterar sobre prompts y flujos de razonamiento en el propio portátil.
-- Educación y tutoría: el modelo produce cadenas de razonamiento visibles que pueden mostrarse al usuario para explicar cómo llega a una respuesta, útil en asistentes de aprendizaje de matemáticas o ciencias.
-- Evaluación de arquitecturas looped: investigadores que quieran medir el efecto del número de bucles sobre la calidad (la model card aporta perplejidades para 1, 2 y 4 bucles) pueden usar este build como banco de pruebas reproducible.
-- Generación de texto con restricciones de memoria: con 6,1 GB de pico de memoria para un prompt de 16K tokens a 1 bucle, encaja en equipos Apple con 16 GB o más, permitiendo procesar documentos largos en local.
-- Procesamiento por lotes de documentos en inglés: la velocidad de lectura de prompt (hasta 4.130 tokens/s a 1 bucle) permite preprocesar corpus de texto moderadamente largos en hardware de consumo.
-- Base para fine-tuning o experimentación con MLX: al ser un checkpoint MLX nativo con layout fusionado, sirve como punto de partida para trabajos que necesiten un modelo de 4B cuantizado a 4 bits en el ecosistema de Apple.
+- Razonamiento matemático y verificación de cálculos en local: el modelo puede resolver operaciones y mostrar la cadena de pensamiento, útil para herramientas de escritorio que necesiten justificar resultados sin enviar datos a la nube.
+- Asistente de análisis en portátiles Apple Silicon: con 2,6 GB de pesos y un pico de 7,3 GB con prompts de 16K tokens, cabe holgadamente en un MacBook con 16 GB o más y permite trabajar con documentos largos sin conexión.
+- Procesamiento por lotes de textos largos en el propio equipo: la lectura de un prompt de 16K tokens a 2.600 tokens/s con 2 loops permite indexar o resumir documentos extensos con latencia aceptable.
+- Prototipado e investigación sobre modelos looped: el dial de 1 a 4 loops y las métricas de perplejidad publicadas (12,01 / 11,59 / 11,52) lo convierten en una plataforma para estudiar el compromiso entre profundidad efectiva y coste computacional.
+- Generación de explicaciones educativas en inglés: el formato con razonamiento previo y respuesta posterior encaja en materiales didácticos donde interesa mostrar el proceso, no solo el resultado.
+- Evaluación comparativa de cuantizaciones: al existir builds bf16, 8-bit y NVFP4 del mismo modelo con métricas de perplejidad y acuerdo top-1 publicadas, sirve para medir el impacto real de la cuantización en un pipeline concreto antes de adoptarla en producción.
+- Herramientas de CLI y automatización local: el paquete `dory-mlx` expone carga y chat por línea de comandos, lo que facilita integrarlo en scripts de procesamiento de texto sin infraestructura de servidor.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card remite a la model card original de NVIDIA para los resultados de precisión. Sí se aportan métricas de calidad y rendimiento medidas por el autor de la conversión:
+Los datos publicados por el autor son de perplejidad, acuerdo con bf16 y velocidad, no de benchmarks de tareas estándar (MMLU, HumanEval, GSM8K). No se han publicado resultados de benchmarks de tareas en la información disponible.
 
-| Métrica | NVFP4 (este build) | 8-bit | bf16 |
+| Metrica | NVFP4 (este build) | 8-bit | bf16 |
 |---|---|---|---|
-| Tamaño | 2,6 GB | 4,2 GB | 8,0 GB |
-| Generación (2 bucles, prompt corto) | 99 tokens/s | 69 tokens/s | 39 tokens/s |
-| Perplejidad WikiText-2 (2 bucles) | 11,59 | 11,64 | 11,62 |
-| Perplejidad WikiText-2 (1 / 4 bucles) | 12,01 / 11,52 | 12,05 / 11,58 | 12,04 / 11,56 |
-| Coincidencia top-1 con bf16 (1 / 2 / 4 bucles) | 88,5% / 88,9% / 89,0% | 97% (2 bucles) | — |
-| KL frente a bf16 (1 / 2 / 4 bucles) | 0,064 / 0,061 / 0,063 | no disponible | — |
+| Tamano | 2,6 GB | 4,2 GB | 8,0 GB |
+| Generacion, 2 loops | 99 tokens/s | 69 tokens/s | 39 tokens/s |
+| Perplejidad WikiText-2, 1 loop | 12,01 | 12,05 | 12,04 |
+| Perplejidad WikiText-2, 2 loops | 11,59 | 11,64 | 11,62 |
+| Perplejidad WikiText-2, 4 loops | 11,52 | 11,58 | 11,56 |
+| Coincidencia top-1 con bf16, 2 loops | 88,9 % | 97 % | — |
 
-Rendimiento por número de bucles en M5 Max (128 GB), decodificación greedy, mediana de 3 ejecuciones:
-
-| Bucles | Generación, prompt corto | Generación tras prompt de 16K | Lectura de prompt de 16K | Memoria pico (16K) |
+| Loops | Generacion, prompt corto | Generacion tras prompt de 16K | Lectura de prompt de 16K | Memoria pico con 16K |
 |---|---|---|---|---|
 | 1 | 149 tokens/s | 124 tokens/s | 4.130 tokens/s | 6,1 GB |
 | 2 | 99 tokens/s | 82 tokens/s | 2.600 tokens/s | 7,3 GB |
 | 4 | 59 tokens/s | 49 tokens/s | 1.500 tokens/s | 9,8 GB |
 
+Mediciones realizadas el 7 de noviembre de 2026 en un MacBook Pro M5 Max de 128 GB con MLX 0.32, decodificación greedy y mediana de 3 ejecuciones tras un calentamiento.
+
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: 6,1 GB de pico con prompt de 16K y 1 bucle; 7,3 GB con 2 bucles; 9,8 GB con 4 bucles (medido en M5 Max con 128 GB).
-- Hardware objetivo: Apple Silicon (M-series). El autor lo construyó y probó en un MacBook Pro M5 Max de 128 GB; con 16 GB de memoria unificada debería caber holgadamente para prompts cortos.
-- GPU NVIDIA: el formato es MLX, por lo que no se ejecuta directamente en CUDA; para NVIDIA habría que usar el checkpoint original `nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4` o el bf16.
-- Cabe en GPU de consumo: sí, en el ecosistema Apple (cualquier Mac con 16 GB o más). Para GPUs discretas de consumo (RTX 4090, etc.) no aplica este build; el checkpoint NVFP4 original requeriría herramientas compatibles con ese formato.
-- Opciones de despliegue: paquete `dory-mlx` (instalable desde GitHub con `pip install "git+https://github.com/internet-projects/dory-mlx"`), sobre MLX 0.32.4 y mlx-lm 0.32.2. No se mencionan vLLM, llama.cpp, Ollama ni TGI para este build.
-- Latencia y throughput: 99 tokens/s de generación con 2 bucles y prompt corto; 82 tokens/s tras un prompt de 16K; 2.600 tokens/s de prefill a 2 bucles. A 1 bucle, 149 tokens/s de generación y 4.130 tokens/s de lectura de prompt.
+- VRAM/memoria unificada: 6,1 GB de pico con 1 loop y prompt de 16K; 7,3 GB con 2 loops; 9,8 GB con 4 loops. Para prompts cortos el consumo es inferior.
+- GPU recomendadas: Apple Silicon exclusivamente, dado que el runtime es MLX. El build se probó en un M5 Max de 128 GB; no se documentan pruebas en otras variantes de chip.
+- Cabe en GPU de consumo: sí, en equipos Apple Silicon con memoria unificada suficiente (16 GB o más para trabajar con contexto largo a 2 loops).
+- No es compatible con CUDA ni con GPUs NVIDIA/AMD convencionales: el formato `nvfp4` de MLX y el paquete `dory-mlx` están atados al ecosistema MLX.
+- Opciones de despliegue: MLX mediante `dory-mlx` (instalación desde GitHub con `pip install "git+https://github.com/internet-projects/dory-mlx"`), uso como CLI (`python -m dory_mlx`) o como API de Python (`dory_mlx.load` y `dory_mlx.chat`). No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 99 tokens/s de generación con 2 loops en prompt corto; 82 tokens/s tras un prompt de 16K; 2.600 tokens/s de lectura de prompt de 16K.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Runtime |
 |---|---|---|---|---|---|
-| Nemotron-Labs Dory 1.0 4B (este build, MLX NVFP4) | 3,97B | no disponible | 4 bits NVFP4 | OpenMDW-1.1 | Hugging Face (netprojects) |
-| Nemotron-Labs Dory 1.0 4B MLX 8-bit (netprojects) | 3,97B | no disponible | 8 bits | OpenMDW-1.1 | Hugging Face (netprojects) |
-| Nemotron-Labs Dory 1.0 4B MLX bf16 (netprojects) | 3,97B | no disponible | bf16 | OpenMDW-1.1 | Hugging Face (netprojects) |
-| NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4 (original) | 3,97B | no disponible | 4 bits NVFP4 | OpenMDW-1.1 | Hugging Face (nvidia) |
-| NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16 (original) | 3,97B | no disponible | bf16 | OpenMDW-1.1 | Hugging Face (nvidia) |
+| Dory 1.0 4B MLX NVFP4 (este) | ≈4B (3,975B) | No disponible | NVFP4 4-bit + embeddings 8-bit | OpenMDW-1.1 | MLX (Apple Silicon) |
+| Dory 1.0 4B MLX 8-bit | ≈4B | No disponible | 8-bit | OpenMDW-1.1 | MLX (Apple Silicon) |
+| Dory 1.0 4B MLX bf16 | ≈4B | No disponible | bf16 | OpenMDW-1.1 | MLX (Apple Silicon) |
+| NVIDIA Nemotron-Labs Dory1.0-4B NVFP4 (original) | ≈4B | No disponible | NVFP4 | OpenMDW-1.1 | Ecosistema NVIDIA |
 
-No se dispone de datos para comparar con modelos de otras familias (por ejemplo, Qwen, Llama o Gemma de tamaño similar) en la información proporcionada.
+La comparación con modelos de otros fabricantes y de tamaño similar no está disponible en la información proporcionada. Dentro de la propia familia, la elección es clara: NVFP4 para velocidad y memoria reducida, 8-bit cuando se prioriza la fidelidad al modelo original (97 % de coincidencia top-1 frente al 89 % del NVFP4).
 
 ## Limitaciones y advertencias
 
-- Solo inglés: no soporta castellano ni otros idiomas, lo que limita su uso en productos dirigidos al mercado hispanohablante.
-- Riesgo de alucinación: es un modelo de 4B con razonamiento explícito; las cadenas `<think>` pueden contener pasos plausibles pero incorrectos, y no se han publicado evaluaciones de fiabilidad factual.
-- Respuestas más largas de lo habitual: al incluir la cadena de razonamiento, el consumo de tokens y la latencia percibida son mayores que en un modelo de chat convencional.
-- Fidelidad de la cuantización: la coincidencia top-1 con bf16 es del 89% con 2 bucles, no del 100%; para aplicaciones que requieran la máxima fidelidad al modelo original, el autor recomienda el build de 8 bits (97% de coincidencia).
-- Licencia OpenMDW-1.1: es una licencia "other" que debe revisarse antes de uso comercial; no es Apache-2.0 ni MIT. El código de `dory-mlx` sí es Apache-2.0.
-- Ecosistema restringido: depende de MLX y de un paquete mantenido por un tercero (`dory-mlx`), no de frameworks de despliegue estándar como vLLM o TGI; la compatibilidad futura no está garantizada.
-- No afiliado a NVIDIA: la conversión es comunitaria; los problemas de soporte deben dirigirse a NetProjects, no a NVIDIA.
-- Longitud de contexto no declarada: aunque se han probado prompts de 16K, no se especifica el máximo oficial, lo que dificulta dimensionar aplicaciones de contexto largo.
-- Sin datos de benchmarks estándar: no hay resultados de MMLU, HumanEval o GSM8K en la información disponible, lo que impide comparar su calidad objetiva con otros modelos de 4B.
+- Solo inglés: la model card declara `language: [en]` y el texto de entrada y salida es exclusivamente en inglés.
+- Deriva de cuantización medible: la coincidencia top-1 con bf16 es del 88,9 % con 2 loops, inferior al 97 % del build de 8 bits. En tareas sensibles a tokens exactos (código, cifras, nombres propios) conviene validar salidas o usar el build de 8 bits.
+- Las respuestas incluyen la cadena de razonamiento completa, por lo que son más largas y consumen más tokens de salida que las de un modelo de chat convencional; hay que presupuestar `max_tokens` en consecuencia.
+- Riesgo de alucinación: no se documentan evaluaciones de factualidad ni tasas de alucinación en la información disponible.
+- Sesgos conocidos: no se documentan análisis de sesgo en la información proporcionada.
+- Longitud de contexto máxima: no especificada; las pruebas del autor llegan a 16K tokens, pero no se confirma que ese sea el límite del modelo.
+- Dependencia de plataforma: requiere Apple Silicon y MLX; no hay ruta de despliegue en CUDA, ROCm ni CPUs x86 documentada para este build.
+- Licencia OpenMDW-1.1: es una licencia de pesos abiertos con términos propios; antes de uso comercial conviene revisar el texto completo incluido en `LICENSE`, ya que la model card la etiqueta como `license: other`.
+- Este repositorio es una conversión de terceros (NetProjects) no afiliada a NVIDIA; los resultados de precisión de referencia deben consultarse en la ficha original de NVIDIA.
+- El repositorio tiene 0 likes y 316 descargas en el momento de la consulta, lo que indica una validación comunitaria todavía muy limitada.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/netprojects/nemotron-dory1.0-4b-mlx-nvfp4
-- Modelo base original (NVFP4): https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4
-- Modelo base original (BF16): https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16
+- Repositorio Hugging Face: https://huggingface.co/netprojects/nemotron-dory1.0-4b-mlx-nvfp4
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4
+- Model card original bf16 de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16
 - Build MLX 8-bit: https://huggingface.co/netprojects/nemotron-dory1.0-4b-mlx-8bit
 - Build MLX bf16: https://huggingface.co/netprojects/nemotron-dory1.0-4b-mlx-bf16
-- Repositorio dory-mlx en GitHub: https://github.com/internet-projects/dory-mlx
-- Organización NetProjects en Hugging Face: https://huggingface.co/netprojects
-- Colección de builds MLX de NetProjects: https://huggingface.co/collections/netprojects/netprojects-mlx-builds-6ae3b2683a59a1b4fc4c0c3a
+- Repositorio de codigo dory-mlx: https://github.com/internet-projects/dory-mlx
 - MLX (framework de Apple): https://github.com/ml-explore/mlx
-- Página de NetProjects sobre uso de IA: https://netprojects.com/standards/ai
+- Organizacion NetProjects en Hugging Face: https://huggingface.co/netprojects
+- Coleccion de builds MLX de NetProjects: https://huggingface.co/collections/netprojects/netprojects-mlx-builds-6ae3b2683a59a1b4fc4c0c3a
+- Estandares de uso de IA de NetProjects: https://netprojects.com/standards/ai
+- Sitio de NetProjects: https://netprojects.com

@@ -1,119 +1,103 @@
 # netprojects/Qwen3.8-27B-super-adapter-GGUF
 
 ## Resumen
+Qwen3.8-27B-super-adapter GGUF es una conversión a formato GGUF del modelo harness-hub/Qwen3.8-27B-super-adapter, que a su vez es el modelo base Qwen/Qwen3.8-27B con un super-adapter LoRA fusionado en sus pesos. Lo publica el usuario netprojects en Hugging Face bajo licencia Apache 2.0, con el objetivo de ofrecer ficheros listos para ejecutar en llama.cpp sin necesidad de cargar adaptadores por separado. El modelo está orientado a tareas de agentes de programación y automatización, y mantiene la capa de predicción multi-token (MTP) de Qwen para acelerar la decodificación.
 
-Qwen3.8-27B-super-adapter GGUF es una compilación cuantizada en formato GGUF del modelo Qwen3.8-27B de Alibaba, fusionado con el adaptador LoRA "super-adapter" publicado por harness-hub. Ese adaptador combina, mediante una media ponderada de pesos, tres especialistas de refuerzo entrenados para sendos arneses de agente de código: pi, Hermes Agent y OpenCode. El resultado es un único conjunto de pesos que funciona razonablemente bien con los tres arneses sin necesidad de cargar LoRA adicionales en tiempo de inferencia. El repositorio lo mantiene el usuario netprojects y está pensado para ejecutarse con llama.cpp.
+El super-adapter combina tres especialistas de reinforcement learning entrenados para tres harnesses de agentes de código: pi, Hermes Agent y OpenCode. Según la model card del adaptador original, esta fusión mejora el rendimiento en SWE-bench Pro y Terminal-Bench 2.1 frente al modelo base, con reducciones significativas en el número de llamadas a herramientas por tarea. La conversión GGUF incluye además un proyector de visión (mmproj) que habilita entrada de imágenes, por lo que el pipeline declarado es image-text-to-text.
 
-El modelo conserva la arquitectura original de Qwen3.8-27B, incluyendo la capa de predicción multi-token (MTP) que permite decodificación especulativa en llama-server, y añade un proyector multimodal (`mmproj`) que habilita entrada de imágenes. Con 27.320.697.856 parámetros totales y un contexto declarado de hasta 131.072 tokens en los ejemplos de despliegue, se posiciona como una opción de tamaño medio para tareas de agente autónomo y generación de código en hardware de gama alta de consumo o estaciones de trabajo.
-
-Su relevancia actual radica en que empaqueta en un solo artefacto listo para usar lo que de otro modo requeriría fusionar LoRA manualmente, y en que publica métricas de fidelidad de cuantización (coincidencia del siguiente token y divergencia KL frente a BF16) que permiten elegir el nivel de compresión con criterio. La licencia Apache 2.0 facilita su adopción comercial, aunque la información sobre idiomas soportados no está disponible en la model card.
+Con 27.320.697.856 parámetros totales y un repositorio de 139,3 GB que alberga múltiples cuantizaciones, el modelo está pensado para despliegues locales en estaciones de trabajo y servidores con GPU de gama alta o Apple Silicon. La recomendación del autor es Q6_K como equilibrio entre tamaño y fidelidad, con Q8_0 como opción más cercana a los pesos BF16 y Q4_K_M para máquinas con menos memoria.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (Qwen3.8-27B) con capa de predicción multi-token (MTP) y codificador de visión |
+| Arquitectura | Transformer (Qwen3.8-27B) con capa de predicción multi-token (MTP) y proyector de visión |
 | Parametros totales | 27.320.697.856 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | hasta 131.072 tokens en el ejemplo de llama-server; no se documenta el máximo arquitectónico |
-| Tipos de cuantizacion | Q8_0, Q6_K, Q4_K_M (GGUF); MLX 6-bit en repositorio aparte |
+| Longitud de contexto | 131.072 tokens (configurado en el ejemplo de llama-server con `-c 131072`) |
+| Tipos de cuantizacion | Q6_K, Q8_0, Q5_K_M, Q4_K_M, IQ4_XS, Q3_K_M, IQ3_XXS, IQ2_M, además de proyector de visión F16 y builds MLX de 6 bits |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp) y MLX |
+| Formato de pesos | GGUF (llama.cpp), con fichero mmproj separado para visión; también MLX 6-bit |
 
 ## Arquitectura y entrenamiento
+El modelo base es Qwen/Qwen3.8-27B, un transformer de 27.320.697.856 parámetros. Sobre él se aplica el super-adapter de harness-hub, que es un LoRA resultante de fusionar tres especialistas de reinforcement learning: pi y Hermes Agent en el paso 160 y OpenCode en el paso 150, cada uno con peso ½, sin entrenamiento adicional tras la fusión. Esta técnica permite que un único conjunto de pesos cubra el comportamiento de los tres harnesses de agentes de código.
 
-La base es Qwen3.8-27B, un transformer denso de 27.320 millones de parámetros con 16 capas de atención completa y 64 capas en total, según los módulos adaptados que se describen en el proceso de fusión. Incorpora una capa MTP que actúa como borrador para decodificación especulativa (`--spec-type draft-mtp` en llama-server) y un codificador de visión que se distribuye por separado como `mmproj-Qwen3.8-27B-super-adapter-F16.gguf` (0,9 GB).
-
-El adaptador de harness-hub no se entrena sobre estos pesos: se construye fusionando tres especialistas de aprendizaje por refuerzo (pi y Hermes Agent en el paso 160, OpenCode en el paso 150) con peso ½ cada uno. La fusión afecta a 256 módulos adaptados (q, k, v, o en las 16 capas de atención completa; gate, up, down en las 64 capas) y se verifica elemento a elemento contra la implementación de PEFT, comprobando que el resto de tensores, incluida la capa MTP y el codificador visual, son idénticos byte a byte a Qwen3.8-27B. Los archivos GGUF se cuantizaron desde el GGUF BF16 del modelo fusionado.
+La conversión a GGUF la realiza netprojects a partir de la revisión `adb00e9` del adaptador y la revisión `3756181` del modelo base Qwen. Cada fichero GGUF conserva la capa MTP de Qwen, que llama-server puede aprovechar con `--spec-type draft-mtp` para decodificación especulativa. El fichero `mmproj-Qwen3.8-27B-super-adapter-F16.gguf` (0,9 GB) añade la capacidad de entrada de imágenes. La model card incluye métricas de fidelidad de cuantización: Q6_K conserva el 98,9 % del siguiente token respecto a BF16 con divergencia KL media de 0,0032; Q8_0 alcanza el 99,7 % con KL 0,0003; Q4_K_M baja al 94,6 % con KL 0,0800. Las filas marcadas con nota (Q5_K_M, IQ4_XS, Q3_K_M, IQ3_XXS, IQ2_M) se midieron contra el Q8_0 del propio autor en texto reservado, no contra BF16 en las 12 prompts, por lo que no son directamente comparables.
 
 ## Capacidades
-
-- Generación de texto conversacional multi-turno.
-- Razonamiento con modo "thinking" activable o desactivable mediante `enable_thinking` en el chat template (activado por defecto y recomendado por harness-hub).
-- Generación y edición de código en el contexto de agentes de programación (pi, Hermes Agent, OpenCode).
-- Uso de herramientas (tool calling) a través de la API compatible con OpenAI que expone llama-server.
-- Ejecución de agentes multi-paso con reducción del número de llamadas a herramientas frente al modelo base (19-48 % menos con thinking activo, 53-73 % menos con thinking desactivado).
-- Entrada de imágenes mediante el proyector `mmproj` (pipeline image-text-to-text).
-- Decodificación especulativa con la capa MTP integrada.
-- Capacidades multilingües: no disponibles en la información proporcionada.
+- Generación de texto conversacional y razonamiento con modo de pensamiento (thinking) activable o desactivable mediante `enable_thinking` en la plantilla de chat.
+- Programación y tareas de agente de código: el adaptador está entrenado específicamente para pi, Hermes Agent y OpenCode.
+- Uso de herramientas (tool calling) en el contexto de los harnesses de agentes, con reducción de llamadas por tarea según los resultados publicados.
+- Razonamiento multi-paso y ejecución de tareas de agente en terminal y repositorios (Terminal-Bench 2.1, SWE-bench Pro).
+- Entrada de imágenes mediante el proyector mmproj (pipeline image-text-to-text).
+- Decodificación especulativa con la capa MTP integrada para acelerar la generación.
+- Capacidades multilingües: no disponible en la información proporcionada.
 
 ## Casos de uso
-
-- Agente de código en local con pi: servir el modelo con llama-server en `http://localhost:8000/v1` y configurar el proveedor en `~/.pi/agent/models.json` con `"api": "openai-completions"`; el adaptador está entrenado específicamente para este arnés y reduce el número de llamadas a herramientas por tarea.
-- Agente de terminal con Hermes Agent: requiere al menos 64.000 tokens de contexto según la model card; útil para tareas de línea de comandos y automatización de shell donde el agente debe encadenar comandos y verificar resultados.
-- Asistente de programación con OpenCode: el adaptador reporta la mayor mejora en SWE-bench Pro bajo este arnés (47,1 % a 66,7 %), por lo que es la combinación más indicada para resolución de issues reales sobre repositorios.
-- Revisión de código con capturas o diagramas: gracias al proyector multimodal se pueden enviar imágenes junto al texto, por ejemplo capturas de errores de compilación o diagramas de arquitectura para que el modelo los interprete.
-- Automatización de pipelines de CI/CD: al exponer una API compatible con OpenAI, el modelo se puede integrar como paso de análisis o generación de parches en flujos automatizados, con la ventaja de que los pesos corren en infraestructura propia.
-- Despliegue en estación de trabajo Apple Silicon: existe una build MLX de 6 bits en un repositorio hermano, lo que permite ejecutar el modelo en MacBook Pro con memoria unificada alta (la verificación se hizo en un M5 Max de 128 GB).
-- Experimentación con decodificación especulativa: la capa MTP conservada en todos los archivos GGUF permite medir el impacto de `--spec-type draft-mtp` en latencia sin cambiar de modelo.
+- Agente de código en local con pi: servir el modelo con llama-server en `http://localhost:8000/v1` y configurar pi como proveedor OpenAI-compatible; el adaptador está entrenado con el especialista de pi fusionado, lo que permite resolver tareas de repositorio con menos llamadas a herramientas.
+- Agente de terminal con Hermes Agent: configurar `~/.hermes/config.yaml` con el endpoint local y un contexto mínimo de 64.000 tokens, aprovechando la mejora publicada en Terminal-Bench 2.1 y la reducción de llamadas por tarea.
+- Automatización con OpenCode: usar el proveedor OpenAI-compatible en `~/.config/opencode/opencode.json` para tareas de edición y refactorización de código, con el especialista de OpenCode fusionado en los pesos.
+- Asistente de programación con entrada de imágenes: cargar el mmproj F16 junto al GGUF para analizar capturas de pantalla, diagramas o errores visuales en flujos de depuración.
+- Despliegue en estaciones de trabajo con una sola GPU: usar Q4_K_M (16,8 GB) o IQ4_XS (15,3 GB) para equipos con 24 GB de VRAM, manteniendo una fidelidad razonable respecto a BF16.
+- Ejecución en Apple Silicon: emplear los builds MLX de 6 bits publicados por el mismo autor para inferencia nativa en Mac.
+- Servicio de agente conversacional con contexto largo: aprovechar la ventana de 131.072 tokens para conversaciones multi-turno con historial extenso o repositorios completos en el prompt.
 
 ## Benchmarks y rendimiento
+Los resultados publicados en la model card corresponden al adaptador original (harness-hub) bajo cada harness, comparando con el modelo base Qwen3.8-27B al mismo esfuerzo de razonamiento:
 
-Resultados publicados por harness-hub para el adaptador, medidos bajo cada arnés en SWE-bench Pro (hard 51) y Terminal-Bench 2.1, comparando con el modelo base al mismo esfuerzo de razonamiento:
+| Configuración | Puntuación media pass@1 | Detalle |
+|---|---|---|
+| Thinking on (super-adapter) | 63,5 % | Media de seis pares harness-benchmark; 55,5 % en el base |
+| Thinking off (super-adapter) | 49,0 % | Media de seis pares; 39,5 % en el base |
+| SWE-bench Pro (hard 51), OpenCode, thinking on | 66,7 % | Base: 47,1 % |
+| SWE-bench Pro (hard 51), Hermes Agent, thinking on | 60,8 % | Base: 45,1 % |
 
-| Modo | Métrica | Base | Super-adapter |
-|---|---|---|---|
-| Thinking on | pass@1 medio (6 pares arnés-benchmark) | 55,5 % | 63,5 % |
-| Thinking on | SWE-bench Pro bajo OpenCode | 47,1 % | 66,7 % |
-| Thinking on | SWE-bench Pro bajo Hermes Agent | 45,1 % | 60,8 % |
-| Thinking off | pass@1 medio (6 pares) | 39,5 % | 49,0 % |
-
-Con thinking activo, el adaptador supera al base en cinco de los seis pares arnés-benchmark y empata en el sexto. Con thinking desactivado, supera al base en los seis pares.
-
-Fidelidad de cuantización frente al GGUF BF16 (misma muestra de 12 prompts cortos):
-
-| Archivo | Tamaño | Mismo siguiente token | Divergencia KL media |
-|---|---|---|---|
-| Q6_K (recomendado) | 22,4 GB | 98,9 % | 0,0032 |
-| Q8_0 | 29,0 GB | 99,7 % | 0,0003 |
-| Q4_K_M | 16,8 GB | 94,6 % | 0,0800 |
-| mmproj F16 | 0,9 GB | proyector de visión | — |
-
-No se han publicado resultados de MMLU, HumanEval o GSM8K en la información disponible.
+Según la model card, con thinking on el adaptador supera al base en cinco de seis pares harness-benchmark y empata en el sexto, con 19–48 % menos llamadas a herramientas por tarea. Con thinking off supera al base en los seis pares, con 53–73 % menos llamadas por tarea. No se han publicado en la información disponible resultados de benchmarks generales (MMLU, HumanEval, GSM8K) para esta conversión GGUF concreta.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: aproximadamente 17 GB con Q4_K_M, 23 GB con Q6_K y 30 GB con Q8_0, a los que se suman 0,9 GB del proyector si se usa visión y la memoria del contexto KV (crece con `-c`; el ejemplo usa 131.072 tokens).
-- GPU recomendadas: A100 o H100 para contexto completo y concurrencia; en consumer, RTX 4090 (24 GB) permite Q6_K ajustando el contexto, y Q4_K_M cabe con más holgura.
-- Cabe en GPU de consumo: sí, Q4_K_M en tarjetas de 24 GB y Q6_K en configuraciones de 24 GB con contexto reducido; Q8_0 requiere 32 GB o más.
-- Apple Silicon: la verificación se realizó en un MacBook Pro M5 Max con 128 GB de memoria unificada; existe build MLX 6-bit para este entorno.
-- Opciones de despliegue: llama.cpp mediante `llama-server` con `--jinja` y, opcionalmente, `--spec-type draft-mtp` y `-mm` para visión; también MLX. No se documentan vLLM, TGI ni Ollama en la información disponible.
-- Latencia y throughput: no disponibles. La model card solo indica que la capa MTP permite decodificación más rápida cuando se activa `--spec-type draft-mtp`.
+- VRAM estimada para inferencia: aproximadamente el tamaño del fichero GGUF más overhead de contexto. Q8_0: 29,0 GB; Q6_K: 22,4 GB; Q5_K_M: 19,5 GB; Q4_K_M: 16,8 GB; IQ4_XS: 15,3 GB; Q3_K_M: 13,5 GB; IQ3_XXS: 11,4 GB; IQ2_M: 10,2 GB. Añadir 0,9 GB si se carga el proyector de visión F16.
+- GPU recomendadas: no disponible de forma explícita en la información. Por tamaño, Q6_K y Q8_0 encajan en A100 40/80 GB, H100 y configuraciones multi-GPU; Q4_K_M e IQ4_XS son adecuados para GPU de 24 GB como la RTX 4090.
+- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) con Q4_K_M, IQ4_XS o cuantizaciones menores; Q5_K_M (19,5 GB) también es viable ajustando el contexto.
+- Opciones de despliegue: llama.cpp (llama-server) con `--jinja` y opcionalmente `--spec-type draft-mtp`; builds MLX para Apple Silicon. No se mencionan vLLM, TGI ni Ollama en la información disponible.
+- Latencia y throughput: no disponible. La capa MTP permite decodificación especulativa para acelerar la generación, pero no se publican cifras de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-super-adapter GGUF (este) | 27,3 B | hasta 131.072 en ejemplo | Agente de código multi-arnés (pi, Hermes, OpenCode) + visión | Apache 2.0 | GGUF y MLX en Hugging Face |
-| Qwen3.8-27B (base) | 27,3 B | no disponible | Modelo generalista | no disponible en esta ficha | Hugging Face (Qwen) |
-| Qwen3.8-27B-pi-adapted GGUF | 27,3 B | no disponible | Especialista en pi | no disponible en esta ficha | GGUF en NetProjects |
-| Qwen3.8-27B-hermes-adapted GGUF | 27,3 B | no disponible | Especialista en Hermes Agent | no disponible en esta ficha | GGUF en NetProjects |
-| Qwen3.8-27B-opencode-adapted GGUF | 27,3 B | no disponible | Especialista en OpenCode | no disponible en esta ficha | GGUF en NetProjects |
+| Qwen3.8-27B-super-adapter GGUF (este) | 27,3 B | 131.072 | 63,5 % medio pass@1 con thinking on (seis pares harness-benchmark) | Apache 2.0 | GGUF y MLX en Hugging Face |
+| Qwen/Qwen3.8-27B (base) | 27,3 B | no disponible en la información | 55,5 % medio pass@1 con thinking on | no disponible en la información | Hugging Face |
+| Qwen3.8-27B-pi-adapted GGUF | 27,3 B (mismo base) | no disponible | no disponible | Apache 2.0 (según repo) | GGUF en Hugging Face |
+| Qwen3.8-27B-hermes-adapted GGUF | 27,3 B (mismo base) | no disponible | no disponible | Apache 2.0 (según repo) | GGUF en Hugging Face |
+| Qwen3.8-27B-opencode-adapted GGUF | 27,3 B (mismo base) | no disponible | no disponible | Apache 2.0 (según repo) | GGUF en Hugging Face |
 
-Los tres especialistas individuales son la alternativa directa cuando se usa un único arnés con thinking desactivado, según recomienda harness-hub. El super-adapter es preferible cuando se necesita un solo modelo para varios arneses o cuando se usa thinking activo.
+Los tres adaptadores individuales son recomendados por harness-hub para un único harness con thinking off, mientras que el super-adapter cubre los tres con thinking on.
 
 ## Limitaciones y advertencias
-
-- La fusión por media de pesos no añade entrenamiento: el comportamiento en arneses distintos de pi, Hermes Agent y OpenCode no está validado.
-- Los benchmarks publicados son del adaptador original; no se han verificado de forma independiente en esta build GGUF, y la cuantización introduce divergencia (mayor en Q4_K_M, con 94,6 % de coincidencia del siguiente token).
-- No se documentan sesgos conocidos ni evaluación de alucinación en la información disponible.
-- Los idiomas soportados no están declarados; no se debe asumir cobertura multilingüe sin probarla.
-- El contexto práctico depende de la memoria disponible: usar 131.072 tokens exige hardware con VRAM o memoria unificada abundante.
-- Hermes Agent requiere un mínimo de 64.000 tokens de contexto según la model card; contextos menores pueden degradar su funcionamiento.
-- El modo thinking está activado por defecto y consume más tokens; desactivarlo cambia el perfil de rendimiento (49,0 % frente a 63,5 % de pass@1 medio).
-- La licencia Apache 2.0 se declara en el repositorio, pero conviene verificar las condiciones del modelo base Qwen3.8-27B antes de un uso comercial.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: no hay validación comunitaria de estos archivos.
+- Sesgos conocidos: no disponible en la información proporcionada; al derivar del modelo base Qwen, hereda los sesgos de sus datos de entrenamiento, que no se detallan.
+- Riesgo de alucinación: no se documenta una evaluación específica; como modelo generativo de 27 B, es susceptible de producir contenido incorrecto, especialmente en tareas de código sin verificación.
+- Limitaciones de contexto o idioma: el contexto máximo configurado en el ejemplo es de 131.072 tokens, pero reducir `-c` ahorra memoria; Hermes Agent requiere al menos 64.000 tokens. Los idiomas soportados no están documentados.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base Qwen subyacente, que no se detalla en la información disponible.
+- Caveats para producción: las métricas de fidelidad de cuantización de Q5_K_M, IQ4_XS, Q3_K_M, IQ3_XXS e IQ2_M se midieron contra el Q8_0 del autor, no contra BF16, por lo que no son directamente comparables. El super-adapter se creó fusionando especialistas sin entrenamiento adicional, lo que puede producir degradación en harnesses distintos de pi, Hermes Agent y OpenCode. El repositorio tiene 0 likes y 531 descargas, lo que indica una validación comunitaria limitada.
 
 ## Enlaces
-
-- Repositorio GGUF: https://huggingface.co/netprojects/Qwen3.8-27B-super-adapter-GGUF
-- Adaptador original: https://huggingface.co/harness-hub/Qwen3.8-27B-super-adapter
-- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Build MLX 6-bit: https://huggingface.co/netprojects/Qwen3.8-27B-super-adapter-MLX-6bit
-- Especialista pi: https://huggingface.co/netprojects/Qwen3.8-27B-pi-adapted-GGUF
-- Especialista Hermes Agent: https://huggingface.co/netprojects/Qwen3.8-27B-hermes-adapted-GGUF
-- Especialista OpenCode: https://huggingface.co/netprojects/Qwen3.8-27B-opencode-adapted-GGUF
-- Arnés pi: https://github.com/earendil-works/pi
-- Arnés Hermes Agent: https://github.com/NousResearch/hermes-agent
-- Arnés OpenCode: https://opencode.ai
+- Repositorio Hugging Face: https://huggingface.co/netprojects/Qwen3.8-27B-super-adapter-GGUF
+- Modelo base del adaptador: https://huggingface.co/harness-hub/Qwen3.8-27B-super-adapter
+- Modelo Qwen base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Builds MLX 6-bit: https://huggingface.co/netprojects/Qwen3.8-27B-super-adapter-MLX-6bit
+- Adaptador pi GGUF: https://huggingface.co/netprojects/Qwen3.8-27B-pi-adapted-GGUF
+- Adaptador Hermes Agent GGUF: https://huggingface.co/netprojects/Qwen3.8-27B-hermes-adapted-GGUF
+- Adaptador OpenCode GGUF: https://huggingface.co/netprojects/Qwen3.8-27B-opencode-adapted-GGUF
+- Repositorio pi: https://github.com/earendil-works/pi
+- Repositorio Hermes Agent: https://github.com/NousResearch/hermes-agent
+- OpenCode: https://opencode.ai
+- Fichero Q6_K: https://huggingface.co/netprojects/Qwen3.8-27B-super-adapter-GGUF/blob/main/Qwen3.8-27B-super-adapter-Q6_K.gguf
+- Fichero Q8_0: https://huggingface.co/netprojects/Qwen3.8-27B-super-adapter-GGUF/blob/main/Qwen3.8-27B-super-adapter-Q8_0.gguf
+- Fichero Q5_K_M: https://huggingface.co/netprojects/Qwen3.8-27B-super-adapter-GGUF/blob/main/Qwen3.8-27B-super-adapter-Q5_K_M.gguf
+- Fichero Q4_K_M: https://huggingface.co/netprojects/Qwen3.8-27B-super-adapter-GGUF/blob/main/Qwen3.8-27B-super-adapter-Q4_K_M.gguf
+- Fichero IQ4_XS: https://huggingface.co/netprojects/Qwen3.8-27B-super-adapter-GGUF/blob/main/Qwen3.8-27B-super-adapter-IQ4_XS.gguf
+- Fichero Q3_K_M: https://huggingface.co/netprojects/Qwen3.8-27B-super-adapter-GGUF/blob/main/Qwen3.8-27B-super-adapter-Q3_K_M.gguf
+- Fichero IQ3_XXS: https://huggingface.co/netprojects/Qwen3.8-27B-super-adapter-GGUF/blob/main/Qwen3.8-27B-super-adapter-IQ3_XXS.gguf
+- Fichero IQ2_M: https://huggingface.co/netprojects/Qwen3.8-27B-super-adapter-GGUF/blob/main/Qwen3.8-27B-super-adapter-IQ2_M.gguf
+- Proyector de visión F16: https://huggingface.co/netprojects/Qwen3.8-27B-super-adapter-GGUF/blob/main/mmproj-Qwen3.8-27B-super-adapter-F16.gguf

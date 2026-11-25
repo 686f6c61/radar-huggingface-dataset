@@ -81,16 +81,5 @@
       "value": 5.6506
     }
   ],
-  "sources": [
-    {
-      "title": "semsimula-ladder-live-code-d384-l8-none-norc-sr2-k2-r6",
-      "url": "https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l8-none-norc-sr2-k2-r6",
-      "snippet": "Text Generation model. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "semsimula-ladder-live-code-d384-l2-none-norc-sr2-vtlr0p25",
-      "url": "https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2-vtlr0p25",
-      "snippet": "Text Generation model. Download, explore files and run it on Hugging Face."
-    }
-  ]
+  "sources": []
 }

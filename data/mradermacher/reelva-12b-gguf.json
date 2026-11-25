@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/Reelva-12B-i1-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Reelva-12B-i1-GGUF",
-      "snippet": "mradermacher / Reelva-12B-i1-GGUF like 0 Transformers GGUF Indonesian English reelva gemma4 conversational thinking agentic imatrix License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "mradermacher/r1-12b-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/r1-12b-GGUF",
-      "snippet": "Model tree for mradermacher/r1-12b-GGUF Base model deepseek-ai/DeepSeek-R1-Distill-Llama-8B Finetuned"
-    },
-    {
-      "title": "Mradermacher - Find Top AI Models on Hugging Face",
-      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
-      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
-    },
-    {
-      "title": "mradermacher quant download page",
-      "url": "https://hf.tst.eu/model",
-      "snippet": "mradermacher quant download page BETA - this page is not finished: more explanations and changes are to come, but it should be functional."
-    },
-    {
-      "title": "ModelFitCheck — will this LLM fit your GPU?",
-      "url": "https://modelfitcheck.com/",
-      "snippet": "Free browser-based tool that detects your hardware and instantly tells you which local LLMs and GGUF quantizations will fit in your VRAM. No signup, no data sent."
-    }
-  ]
+  "sources": []
 }

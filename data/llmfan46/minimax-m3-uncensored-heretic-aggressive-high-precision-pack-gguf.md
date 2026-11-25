@@ -2,102 +2,108 @@
 
 ## Resumen
 
-MiniMax-M3-uncensored-heretic-aggressive-high-precision-pack-GGUF es una cuantización en formato GGUF del modelo MiniMax-M3, publicada por el contribuidor independiente llmfan46. El modelo base, MiniMaxAI/MiniMax-M3, es un modelo multimodal de tipo Mixture of Experts (MoE) desarrollado por MiniMax, orientado a tareas de agente, generación de código, razonamiento y comprensión de imagen y vídeo (pipeline image-text-to-text). Esta versión concreta aplica un proceso de "abliteration" mediante la herramienta Heretic v1.2.0 con el método Arbitrary-Rank Ablation (ARA) para reducir los rechazos del modelo ante determinadas peticiones.
+MiniMax-M3-uncensored-heretic-aggressive-high-precision-pack-GGUF es una cuantizacion en formato GGUF de un derivado "abliterated" del modelo multimodal MiniMax-M3 de MiniMaxAI. El autor de la cuantizacion y del proceso de abliteracion es llmfan46, un contribuidor independiente que publica versiones sin censura de modelos populares mediante la herramienta Heretic v1.2.0 y el metodo Arbitrary-Rank Ablation (ARA). El modelo original MiniMax-M3 es un transformer de tipo Mixture of Experts (MoE) con capacidades multimodales (image-text-to-text, video) y orientado a tareas de agente y generacion de codigo, con 426.174.572.928 parametros totales segun los pesos en safetensors del modelo base.
 
-El modelo cuenta con 426.174.572.928 parámetros totales según los pesos en safetensors del modelo base, lo que lo sitúa en la categoría de modelos de gran escala. El repositorio GGUF ocupa 1.658,7 GB, lo que refleja el tamaño de las cuantizaciones de alta precisión incluidas (BF16, Q8_0 y Q6_K). La licencia es "minimax-community", una licencia propia del desarrollador original que conviene revisar antes de cualquier uso comercial.
+El objetivo de esta version es reducir drásticamente las tasas de rechazo del modelo original (de 98/100 a 8/100 en una evaluacion interna de 100 prompts) preservando al mismo tiempo la calidad general, medida como una divergencia KL de 0,0258 respecto al modelo original. Para ello se aplica una ablacion selectiva sobre componentes de atencion (attn.o_proj) en las capas 14 a 51, con pesos concretos de preservacion y correccion de comportamiento.
 
-La relevancia de esta ficha radica en que combina dos factores poco habituales: por un lado, un modelo multimodal MoE de gran tamaño con capacidades de agente y código; por otro, una modificación de alineación (decensoring) que reduce los rechazos del 98/100 al 8/100 según el autor, con una divergencia KL de 0,0258 respecto al modelo original. Es importante señalar que la información disponible sobre el modelo base es limitada en esta ficha y que muchos datos técnicos no están confirmados.
+La relevancia de esta ficha radica en que combina tres elementos poco habituales: un modelo MoE de gran escala (mas de 426.000 millones de parametros), capacidades multimodales con soporte de video, y un proceso de "decensura" documentado con parametros reproducibles. El paquete incluye cuantizaciones BF16, Q8_0 y Q6_K, ademas de un proyector de vision separado en BF16 necesario para las capacidades multimodales. El repositorio ocupa 1.658,7 GB y acumula 303 descargas y 10 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE multimodal (image-text-to-text); detalles de capas y configuración no disponibles |
+| Arquitectura | Transformer Mixture of Experts (MoE) multimodal |
 | Parametros totales | 426.174.572.928 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16, Q8_0, Q6_K (GGUF); proyector de visión en BF16 |
+| Tipos de cuantizacion | BF16, Q8_0, Q6_K (mas proyector de vision en BF16) |
 | Idiomas soportados | no disponible |
 | Licencia | minimax-community (license: other) |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Formato de pesos | GGUF (con mmproj GGUF para vision) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base MiniMax-M3 emplea una arquitectura de tipo Mixture of Experts (MoE) con capacidades multimodales, según las etiquetas del repositorio (multimodal, moe, image-text-to-text). El pipeline declarado es image-text-to-text, lo que indica que acepta imágenes y texto como entrada y genera texto. No se dispone en la información proporcionada de detalles sobre el número de expertos, la dimensión de las capas, el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo original.
+El modelo base MiniMax-M3 es un transformer de tipo Mixture of Experts con capacidades multimodales, segun las etiquetas del repositorio (moe, multimodal, image-text-to-text, video). No se dispone en la informacion proporcionada de detalles sobre el numero de expertos, la proporcion de parametros activos por token, la longitud de contexto nativa ni el volumen y composicion del dataset de entrenamiento. Tampoco se documenta si el modelo original empleo RLHF, DPO u otras tecnicas de alineacion.
 
-La modificación de esta versión se realizó con Heretic v1.2.0 aplicando Arbitrary-Rank Ablation (ARA) sobre el componente attn.o_proj, entre las capas 14 y 51. Los parámetros de abliteración reportados son: preserve_good_behavior_weight 0,0847, steer_bad_behavior_weight 0,0002, overcorrect_relative_weight 1,1741 y neighbor_count 15. El autor reporta una divergencia KL de 0,0258 respecto al modelo original y una reducción de rechazos de 98/100 a 8/100. No se detallan innovaciones técnicas adicionales del modelo base como decodificación especulativa o atención lineal.
+La innovacion tecnica destacable de esta ficha no esta en la arquitectura del modelo original, sino en el proceso de modificacion de pesos. Se aplica Heretic v1.2.0 con el metodo Arbitrary-Rank Ablation (ARA) sobre las capas 14 a 51, actuando exclusivamente sobre `attn.o_proj`. Los parametros de ablacion documentados son: `start_layer_index` 14, `end_layer_index` 51, `preserve_good_behavior_weight` 0,0847, `steer_bad_behavior_weight` 0,0002, `overcorrect_relative_weight` 1,1741 y `neighbor_count` 15. El resultado declarado es una reduccion de rechazos del 92 % (de 98/100 a 8/100) con una divergencia KL de 0,0258 frente al modelo original, lo que indica una alteracion relativamente contenida de la distribucion de salida.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno.
-- Razonamiento y resolución de tareas de agente (etiqueta "agent").
-- Generación de código (etiqueta "coding").
-- Comprensión multimodal de imagen y texto (pipeline image-text-to-text); requiere el fichero proyector de visión mmproj en BF16.
-- Procesamiento de vídeo según la etiqueta "video" del repositorio (sin detalles adicionales disponibles).
-- Soporte de tool calling / function calling, probado por el autor con búsqueda web mediante SearXNG.
-- Comportamiento "decensored": reducción de rechazos y respuestas de tipo lecturing según la métrica del autor.
-- Capacidades multilingües: no disponibles en la información proporcionada.
+- Generacion de texto conversacional multi-turno.
+- Razonamiento y resolucion de problemas (etiqueta "agent" en el modelo base).
+- Generacion de codigo (etiqueta "coding").
+- Procesamiento de imagen y texto (pipeline image-text-to-text).
+- Procesamiento de video (etiqueta "video").
+- Capacidades de agente y razonamiento multi-paso (etiqueta "agent").
+- Comportamiento "uncensored"/"abliterated": reduce rechazos y respuestas evasivas frente al modelo original.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Modo "thinking" explicito: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistencia conversacional sin restricciones temáticas: el modelo está diseñado para reducir rechazos (8/100 según el autor), lo que lo hace adecuado para entornos de investigación donde se necesita explorar respuestas sin filtros de contenido, siempre que se cumpla la licencia.
-- Generación de código en pipelines de desarrollo: la etiqueta "coding" y el soporte de tool calling permiten integrarlo en flujos de asistencia a programación, aunque requiere un runtime compatible con la arquitectura minimax-m3.
-- Agentes autónomos con búsqueda web: el autor reporta funcionamiento de tool calling con SearXNG, lo que permite construir agentes que consulten fuentes externas y razonen sobre los resultados.
-- Análisis de imágenes y documentos visuales: gracias al pipeline image-text-to-text y al proyector de visión en BF16, puede emplearse para describir imágenes o extraer información de capturas y documentos escaneados.
-- Procesamiento de vídeo: la etiqueta "video" sugiere capacidad de análisis de contenido audiovisual, útil en tareas de descripción o resumen de clips, aunque no se detallan los límites.
-- Investigación sobre alineación y abliteración: el modelo sirve como caso de estudio para medir el impacto de ARA sobre el comportamiento (KL 0,0258) y comparar con el modelo original.
-- Experimentación local con llama.cpp o LM Studio: las cuantizaciones Q8_0 y Q6_K permiten desplegar el modelo en entornos con backend actualizado, aunque el tamaño del repositorio (1.658,7 GB) exige almacenamiento considerable.
+- Investigacion sobre alineacion y censura: el modelo permite estudiar empiricamente el efecto de la ablacion de direcciones de comportamiento sobre un MoE de gran escala, con parametros de ablacion reproducibles y una metrica de divergencia KL declarada (0,0258).
+- Analisis de contenido sensible en entornos controlados: para equipos que necesitan procesar material que el modelo original rechazaria sistematicamente (literatura, guiones, analisis de discurso), la reduccion de rechazos de 98/100 a 8/100 facilita la cobertura completa del material.
+- Procesamiento de documentos con imagenes: gracias al pipeline image-text-to-text y al proyector de vision en BF16, puede emplearse para extraccion y descripcion de contenido en documentos escaneados o capturas.
+- Analisis de video: la etiqueta "video" del modelo base sugiere capacidad de comprension de secuencias visuales, util para resumen o indexacion de material audiovisual.
+- Generacion de codigo en pipelines internos: la etiqueta "coding" y el enfoque "agent" permiten integrarlo en flujos de asistencia a desarrollo, siempre que la infraestructura soporte el tamano del modelo.
+- Despliegue local con llama.cpp, LM Studio u Ollama: las cuantizaciones Q8_0 y Q6_K permiten ejecutar el modelo en entornos GGUF compatibles, aunque el volumen de parametros exige hardware de gama muy alta.
+- Experimentacion con agentes autonomos: la combinacion de etiquetas "agent" y "moe" lo hace candidato para prototipos de agentes multi-paso, con la advertencia de que no se documentan detalles de tool calling.
 
 ## Benchmarks y rendimiento
 
+Los unicos datos de rendimiento publicados en la informacion disponible son los del proceso de abliteracion, no benchmarks estandar de capacidad (MMLU, HumanEval, GSM8K, etc.).
+
 | Metrica | Este modelo | Modelo original (MiniMaxAI/MiniMax-M3) |
 |---|---|---|
-| Divergencia KL | 0,0258 | 0 (por definición) |
-| Rechazos | 8/100 | 98/100 |
+| Divergencia KL | 0,0258 | 0 (por definicion) |
+| Tasa de rechazos | 8/100 | 98/100 |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Los únicos datos de rendimiento son las métricas de abliteración reportadas por el autor.
+No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial; con 426.174 millones de parámetros totales, incluso en Q6_K el modelo requiere un volumen de memoria muy elevado, muy por encima de cualquier GPU de consumo.
-- GPU recomendadas: no disponible en la información proporcionada; por el tamaño del modelo, se necesitarían configuraciones multi-GPU de clase centro de datos (A100/H100) o inferencia en CPU con RAM abundante.
-- ¿Cabe en GPU de consumo? No es viable en una única GPU de consumo; el tamaño del repositorio (1.658,7 GB) y los parámetros totales lo impiden.
-- Opciones de despliegue: llama.cpp (build compatible con MiniMax-M3), llama-server, llama-ui, LM Studio (última versión) y Unsloth Studio con soporte MiniMax-M3. No garantizado en Ollama, KoboldCpp, Jan u otros frontends sin backend compatible.
-- Requisitos de software: transformers 5.12.0 o 5.12.1, CUDA 13.0–13.3, PyTorch 2.12.0+cu132 o 2.12.1+cu132, torchvision 0.27.0/0.27.1+cu132 y Triton 3.6.0 o 3.7.0.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: con 426.174.572.928 parametros totales, incluso en Q6_K el modelo requiere del orden de cientos de gigabytes de memoria; en BF16 supera los 800 GB solo en pesos. No es viable en una unica GPU convencional.
+- GPU recomendadas: no disponible en la informacion proporcionada; por tamano, el despliegue realista exige nodos multi-GPU (varias A100/H100) o configuraciones con memoria unificada de gran capacidad.
+- GPU de consumo: no cabe en ninguna GPU de consumo actual (RTX 4090, 3090, etc.) en ninguna de las cuantizaciones ofrecidas.
+- Opciones de despliegue: llama.cpp, LM Studio y Ollama segun la model card; el formato GGUF tambien es compatible con otros runners GGUF. Para vision es obligatorio cargar ademas el fichero `MiniMax-M3-uncensored-heretic-aggressive-mmproj-BF16.gguf`.
+- Latencia y throughput: no disponible en la informacion proporcionada. El repositorio completo ocupa 1.658,7 GB, lo que condiciona tambien los requisitos de almacenamiento.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. La comparación más directa es con el modelo base MiniMaxAI/MiniMax-M3, del que esta versión es una cuantización decensored:
-
-| Modelo | Parámetros totales | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros totales | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| MiniMax-M3-uncensored-heretic-aggressive (este) | 426.174.572.928 | no disponible | minimax-community | GGUF | 8/100 rechazos, KL 0,0258 |
-| MiniMaxAI/MiniMax-M3 (base) | 426.174.572.928 | no disponible | minimax-community | safetensors | 98/100 rechazos |
+| Este modelo (MiniMax-M3-uncensored-heretic-aggressive GGUF) | 426.174.572.928 | no disponible | minimax-community | GGUF | Version abliterated, 8/100 rechazos, KL 0,0258 |
+| MiniMaxAI/MiniMax-M3 | 426.174.572.928 (segun base) | no disponible | minimax-community | safetensors (original) | Modelo original, 98/100 rechazos |
+| llmfan46/MiniMax-M3-uncensored-heretic-aggressive | no disponible | no disponible | no disponible | safetensors | Modelo base de esta cuantizacion, misma ablacion |
+
+No se dispone en la informacion proporcionada de datos de benchmarks que permitan comparar el rendimiento de capacidad con alternativas de la misma categoria; la comparativa se limita a parametros, licencia y estado de censura.
 
 ## Limitaciones y advertencias
 
-- El proceso de abliteración altera el comportamiento de alineación del modelo; puede generar contenido que el modelo original rechazaría, con implicaciones éticas y legales según el contexto de uso.
-- La divergencia KL de 0,0258 indica cambios respecto al modelo original; aunque el autor la presenta como baja, puede afectar a la calidad en tareas sensibles.
-- Riesgo de alucinación: no se han publicado evaluaciones específicas de fiabilidad factual en la información disponible.
-- Idiomas soportados no documentados; no se puede garantizar un rendimiento multilingüe adecuado.
-- Longitud de contexto no disponible; no se puede planificar su uso en tareas de contexto largo sin verificación previa.
-- Licencia "minimax-community": es una licencia propia del desarrollador original; es imprescindible revisar el archivo LICENSE antes de cualquier uso comercial.
-- Compatibilidad limitada: requiere runtimes con soporte de la arquitectura minimax-m3; errores como "unknown model architecture: 'minimax-m3'" indican backend no compatible, no un fichero corrupto.
-- El repositorio tiene un tamaño de 1.658,7 GB, lo que exige infraestructura de almacenamiento y descarga considerable.
-- El autor declara haber alcanzado el límite de almacenamiento gratuito de Hugging Face, lo que puede afectar a la disponibilidad futura de actualizaciones.
-- Solo 1 descarga y 10 likes en el momento de la ficha: baja validación comunitaria.
+- La ablacion altera el comportamiento del modelo de forma deliberada; la divergencia KL de 0,0258, aunque baja, implica cambios en la distribucion de salida que pueden afectar a tareas sensibles a la calibracion.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; es un riesgo generico de los modelos de gran escala y no se documenta una evaluacion especifica tras la ablacion.
+- El proceso de decensura no garantiza la ausencia de contenido problematico ni lo hace apto para todos los contextos; la reduccion de rechazos puede facilitar la generacion de contenido danino si no se aplican salvaguardas externas.
+- Licencia `minimax-community` (license: other): las condiciones exactas de uso comercial no estan detalladas en la informacion proporcionada; debe consultarse el fichero LICENSE del repositorio antes de cualquier despliegue en produccion.
+- Idiomas soportados: no disponible; no se puede confirmar el rendimiento multilingue.
+- Longitud de contexto: no disponible; limita la planificacion de casos de uso con documentos largos.
+- Requisitos de hardware extremos: el modelo no es desplegable en GPUs de consumo y exige infraestructura multi-GPU o memoria unificada de gran capacidad, lo que restringe su uso a entornos con recursos significativos.
+- El repositorio depende de un proyector de vision separado; omitirlo desactiva las capacidades multimodales.
+- La model card incluye un aviso del autor sobre haber alcanzado el limite de almacenamiento gratuito de Hugging Face, lo que puede afectar a la disponibilidad futura de artefactos.
+- El resultado de busqueda web proporcionado no contiene informacion tecnica relevante sobre el modelo y no se ha utilizado como fuente.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/llmfan46/MiniMax-M3-uncensored-heretic-aggressive-high-precision-pack-GGUF
-- Modelo intermedio del autor: https://huggingface.co/llmfan46/MiniMax-M3-uncensored-heretic-aggressive
-- Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3
-- Heretic (herramienta de abliteración): https://github.com/p-e-w/heretic
-- Pull request de Arbitrary-Rank Ablation (ARA): https://github.com/p-e-w/heretic/pull/211
-- llama.cpp: https://github.com/ggml-org/llama.cpp
-- LM Studio: https://lmstudio.ai/download
-- Unsloth Studio: https://unsloth.ai/docs/new/studio/install
+- Repositorio Hugging Face: https://huggingface.co/llmfan46/MiniMax-M3-uncensored-heretic-aggressive-high-precision-pack-GGUF
+- Modelo base de la cuantizacion: https://huggingface.co/llmfan46/MiniMax-M3-uncensored-heretic-aggressive
+- Modelo original: https://huggingface.co/MiniMaxAI/MiniMax-M3
+- Heretic (herramienta de abliteracion): https://github.com/p-e-w/heretic
+- Pull request del metodo ARA: https://github.com/p-e-w/heretic/pull/211
+- Paper arXiv: https://arxiv.org/abs/2606.13392
+- Repositorio GitHub de MiniMax-M3: https://github.com/MiniMax-AI/MiniMax-M3
+- Web de MiniMax: https://www.minimax.io
+- Documentacion de API: https://platform.minimax.io/docs/guides/text-generation
 - MiniMax Agent: https://agent.minimax.io/
+- Organizacion en ModelScope: https://modelscope.cn/organization/minimax
+- Discord de MiniMax: https://discord.com/invite/DPC4AHFCBw
 - Ko-fi del autor: https://ko-fi.com/llmfan46
-- Paper referenciado (arxiv:2606.13392): no disponible como enlace verificado en la búsqueda

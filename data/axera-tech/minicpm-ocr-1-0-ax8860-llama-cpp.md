@@ -2,105 +2,107 @@
 
 ## Resumen
 
-MiniCPM-OCR-1.0 es un modelo especializado en reconocimiento óptico de caracteres (OCR) desarrollado por OpenBMB, distribuido aquí por AXERA-TECH en una variante optimizada para el acelerador NPU AX8860 mediante llama.cpp y el backend ggml-axera. El modelo resuelve la transcripción de texto en chino e inglés a partir de documentos, tablas y capturas de pantalla, combinando un codificador visual con un modelo de lenguaje de aproximadamente 752 millones de parámetros totales.
+MiniCPM-OCR-1.0-AX8860-llama.cpp es una distribución empaquetada del modelo MiniCPM-OCR-1.0 de OpenBMB, adaptada por AXERA-TECH para ejecutarse sobre la NPU del SoC Axera AX8860 mediante llama.cpp con el backend ggml-axera. El modelo original es un modelo multimodal especializado en reconocimiento óptico de caracteres (OCR) en chino e inglés, capaz de procesar documentos, tablas y capturas de pantalla. Esta variante no modifica los pesos del modelo base, sino que los convierte a GGUF y proporciona los kernels de NPU, binarios estáticos y scripts necesarios para desplegarlo en hardware de borde.
 
-Esta ficha concreta no es el modelo original, sino un paquete de despliegue para hardware de borde: incluye pesos en formato GGUF (texto en bf16 de 1,52 GB y codificador visual de 0,9 GB), kernels compilados para la NPU, binarios estáticos de llama.cpp y scripts de ejecución y benchmark. El modelo base es openbmb/MiniCPM-OCR-1.0, sobre el que AXERA aplica conversión a MXFP8 en carga para los pesos de texto y mantiene la caché KV en BF16.
+La relevancia de esta ficha radica en que demuestra la viabilidad de ejecutar un modelo OCR multimodal de aproximadamente 752 millones de parámetros en una NPU de bajo consumo, con latencias de extremo a extremo de 1,62 segundos por imagen y velocidades de decodificación superiores a 143 tokens por segundo. El paquete incluye un servidor compatible con la API de OpenAI, lo que facilita su integración en pipelines existentes.
 
-Su relevancia radica en demostrar inferencia OCR multimodal en un SoC NPU de bajo consumo con latencias de 1,62 s por imagen (mediana, extremo a extremo) y velocidades de decodificación de 143,4 tokens/s en OCR, además de exponer un servidor compatible con la API de OpenAI. La longitud de contexto está fijada en 4096 tokens.
+El modelo base procede de OpenBMB y esta distribución concreta esta pensada para el ecosistema Axera: requiere SDK V0.5.1 o superior y ocupa los cuatro núcleos de la NPU durante la inferencia. El repositorio pesa 2,7 GB e incluye los pesos en BF16, el codificador visual, los kernels compilados y diez imágenes de prueba con sus textos de referencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (codificador visual + modelo de lenguaje); detalles internos no disponibles |
+| Arquitectura | Transformer multimodal (codificador visual + modelo de lenguaje) sobre llama.cpp / ggml-axera |
 | Parametros totales | 752.167.744 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 4096 tokens |
-| Tipos de cuantizacion | Pesos GGUF en BF16; conversion a MXFP8 en carga para texto; cache KV en BF16; vision en BF16 |
-| Idiomas soportados | Chino e ingles (segun la model card) |
+| Tipos de cuantizacion | BF16 en origen; conversion a MXFP8 de los pesos de texto en carga; KV cache en BF16; pesos visuales en BF16 |
+| Idiomas soportados | chino e ingles |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (texto: `gguf/minicpm-ocr-1.0-bf16.gguf`; vision: `gguf/mmproj-minicpm-ocr-1.0-bf16.gguf`) |
+| Formato de pesos | GGUF (texto: `minicpm-ocr-1.0-bf16.gguf`, 1,52 GB; vision: `mmproj-minicpm-ocr-1.0-bf16.gguf`, 0,9 GB) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible describe el paquete de despliegue, no la arquitectura interna del modelo base. Se trata de un modelo multimodal compuesto por un codificador visual (empaquetado por separado como `mmproj`, 0,9 GB en BF16) y un modelo de lenguaje de 752 millones de parametros (1,52 GB en BF16), ejecutados sobre llama.cpp con kernels especificos para la NPU AX8860. En carga, los pesos de texto del GGUF se convierten a MXFP8 y la cache KV se mantiene en BF16; los pesos visuales permanecen en BF16.
+La arquitectura combina un codificador visual con un modelo de lenguaje transformer, empaquetados ambos como dos artefactos GGUF separados (pesos de texto y `mmproj` del codificador visual). En esta distribución, los pesos de texto se convierten de GGUF a MXFP8 en el momento de la carga, mientras que los pesos del codificador visual permanecen en BF16 y la caché KV en BF16. La inferencia se ejecuta mediante tres kernels de NPU: prefill de texto, decode de texto (incluyendo la cabeza de salida) y codificador visual, gestionados a través de un `manifest.json`.
 
-No se han publicado en la informacion proporcionada datos sobre volumen de tokens de entrenamiento, composicion del dataset, ni si hubo RLHF, DPO o tecnicas de alineacion. Tampoco se detalla si emplea decodificacion especulativa u otras optimizaciones de atencion. La innovacion tecnica destacable de este paquete es la integracion de tres kernels NPU (prefill de texto, decode de texto con cabeza de salida, y codificador visual) junto con un `manifest.json`, que permiten ejecutar el pipeline completo en el SoC AX8860 con un consumo de memoria NPU de 2,08 GiB tras la carga y 3,01 GiB en pico.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo base, ya que la model card de esta distribución se centra en el despliegue y no en el entrenamiento. La innovación técnica destacable de este paquete es la integración del backend ggml-axera en llama.cpp, que permite ejecutar el modelo completo en la NPU del AX8860 con un consumo de memoria NPU de 2,08 GiB tras la carga y un pico de 3,01 GiB. El paquete incluye además un servidor compatible con OpenAI y un chat template en Jinja.
 
 ## Capacidades
 
-- OCR de documentos, tablas y capturas de pantalla en chino e ingles.
-- Reconocimiento de texto a partir de imagenes, con prompts como "Text Recognition:".
-- Procesamiento por lotes de directorios de imagenes PNG mediante `run.sh -b`.
-- Generacion de texto y completado de texto (por ejemplo, `run.sh "The capital of France is" 64`).
-- Servidor compatible con la API de OpenAI (`run.sh -s 8080`), con plantilla de chat incluida (`chat_template.jinja`).
-- Modo de razonamiento configurable; desactivado por defecto en el servidor (`--reasoning off`).
-- Soporte de prompt cache (probado con 160 peticiones sin errores de cache).
-- Capacidad conversacional (etiqueta `conversational` en Hugging Face).
+- Reconocimiento óptico de caracteres (OCR) de documentos, tablas y capturas de pantalla en chino e inglés.
+- Procesamiento multimodal: acepta imágenes y texto como entrada.
+- Generación de texto y finalización de texto (text completion).
+- Servidor compatible con la API de OpenAI para integración en aplicaciones existentes.
+- Procesamiento por lotes de imágenes (modo `-b` sobre directorios de PNG).
+- Modo de razonamiento configurable (desactivado por defecto en el servidor mediante `--reasoning off`).
+- Soporte de prompt cache, validado con una prueba de estrés de 160 peticiones sin errores de caché.
+- No se dispone de información sobre soporte de tool calling, function calling ni capacidades de agente multi-paso.
 
 ## Casos de uso
 
-- Digitalizacion de documentos en el borde: el modelo transcribe documentos escaneados en chino e ingles directamente en el dispositivo AX8860, sin enviar imagenes a la nube, con una latencia mediana de 1,62 s por imagen.
-- Procesamiento de tablas y formularios: la capacidad OCR permite extraer contenido tabular de capturas y documentos, adecuada para pipelines de ingestion de datos en entornos con conectividad limitada.
-- Extraccion de texto de capturas de pantalla: util en herramientas de accesibilidad o monitorizacion que necesitan convertir capturas en texto estructurado en tiempo real.
-- Servicio OCR interno con API compatible con OpenAI: el servidor integrado permite sustituir llamadas a APIs externas por un endpoint local en la red, reduciendo costes y dependencias.
-- Procesamiento por lotes en dispositivos de borde: `run.sh -b` recorre directorios de imagenes y lanza una peticion por imagen contra un servidor temporal, idoneo para digitalizacion masiva en campo.
-- Automatizacion documental en kioscos o terminales: con memoria NPU pico de 3,01 GiB y 182 MiB de RSS en carga, el modelo cabe en dispositivos empotrados para lectura de documentos de identidad, tickets o etiquetas.
-- Asistencia a la lectura con completado de texto: la faceta de modelo de lenguaje (154,9 tokens/s en decode de texto) permite tareas auxiliares de correccion o completado sobre el texto extraido.
+- Digitalización de documentos en el borde: el modelo puede ejecutarse íntegramente en el AX8860 sin conexión a la nube, procesando documentos escaneados en chino e inglés con una latencia mediana de 1,62 segundos por imagen, lo que lo hace adecuado para escáneres inteligentes o dispositivos de captura portátiles.
+- Extracción de tablas en facturas y formularios: al reconocer tablas, puede integrarse en flujos de contabilidad o gestión documental que necesiten convertir tablas impresas en texto estructurado, con el servidor compatible con OpenAI como punto de integración.
+- Procesamiento por lotes de capturas de pantalla: el script `run.sh -b images` permite enviar todas las imágenes de un directorio al servidor temporal en el puerto 18258, útil para auditorías de interfaz, accesibilidad o archivado masivo de capturas.
+- Asistencia a la lectura en dispositivos de bajo consumo: con un pico de 3,01 GiB de memoria NPU y 868 MiB de RSS en host, el modelo cabe en hardware embebido, lo que permite construir lectores aumentados o traductores de documentos sin depender de infraestructura cloud.
+- Automatización de atención al cliente con documentos adjuntos: el servidor compatible con OpenAI permite recibir imágenes de tickets o comprobantes y devolver el texto reconocido, integrándose en sistemas de ticketing existentes mediante llamadas HTTP estándar.
+- Verificación de calidad de OCR en pipelines de CI: el paquete incluye diez imágenes de prueba con texto de referencia en `images/reference.json` y un script `bench.sh`, lo que permite automatizar pruebas de regresión de precisión y rendimiento tras actualizaciones del SDK o de los kernels.
+- Procesamiento de texto puro en el borde: aunque su especialidad es el OCR, el modelo también realiza finalización de texto con 154,9 tokens/s de decodificación, lo que permite tareas ligeras de generación o clasificación textual en el mismo dispositivo.
 
 ## Benchmarks y rendimiento
 
+Los datos disponibles provienen de la model card del autor y se midieron en el AX8860 con contexto de 4096, decodificación greedy y mediana de 3 ejecuciones.
+
 | Metrica | Resultado |
 |---|---|
-| Peticion de imagen extremo a extremo (mediana) | 1,62 s (encode + prefill + generacion) |
-| Decode OCR | 143,4 tokens/s |
-| Decode de texto | 154,9 tokens/s |
-| Prefill de prompt de 4k | 7784 tokens/s (3908 tokens en 0,50 s) |
-| Prompt de 5 tokens | 0,03 s, decode 154,9 tokens/s |
-| Prompt de 3908 tokens | 0,50 s, decode 143,9 tokens/s (128 tokens generados) |
-| Codificacion de imagen | 1,61 s (`doc_en.png`, 1782 tokens de imagen) |
-| Memoria NPU (CMM) tras carga | 2,08 GiB |
-| Memoria NPU (CMM) pico | 3,01 GiB |
-| RSS de host tras carga | 182 MiB |
-| RSS de host pico | 868 MiB |
-| Perplejidad de texto en placa | 174,56 (referencia CPU: 172,74; +1,05%) |
+| Latencia total por peticion de imagen (mediana) | 1,62 s (codificacion + prefill + generacion) |
+| Decodificacion OCR | 143,4 tokens/s |
+| Decodificacion de texto | 154,9 tokens/s |
+| Prefill de 3908 tokens | 0,50 s (7784 tokens/s) |
+| Prefill de 5 tokens | 0,03 s |
+| Codificacion de imagen (`doc_en.png`, 1782 tokens de imagen) | 1,61 s |
+| Memoria NPU tras carga / pico | 2,08 GiB / 3,01 GiB |
+| RSS de host tras carga / pico | 182 MiB / 868 MiB |
+| Perplejidad de texto en placa vs. referencia CPU | 174,56 vs. 172,74 (+1,05%) |
 | Prueba de estres de prompt cache | 160 peticiones, 0 errores |
 
 No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- NPU AXERA AX8860 obligatoria, con SDK V0.5.1 o superior.
-- Memoria NPU: 2,08 GiB tras la carga, 3,01 GiB en pico (CMM).
-- Memoria de host: 182 MiB tras la carga, 868 MiB en pico (RSS).
-- El modelo ocupa los 4 nucleos de la NPU en tiempo de ejecucion; el servidor se ejecuta con `-np 1`.
-- No cabe en GPU consumer convencionales: los binarios de `bin/` son programas estaticos para la placa AX8860, no builds genericos de llama.cpp para CUDA o CPU.
-- Opciones de despliegue: `run.sh` para inferencia de una imagen, por lotes o como servidor compatible con OpenAI en el puerto indicado (8080 por defecto); `bench.sh` para reproducir el benchmark con `-c 4096` y decodificacion voraz (mediana de 3 ejecuciones).
-- Latencia y throughput: 1,62 s por imagen extremo a extremo, 143,4 tokens/s en decode OCR y 7784 tokens/s en prefill de 4k.
+- NPU Axera AX8860 obligatoria, con SDK V0.5.1 o superior; el modelo no funciona en CPU ni GPU convencionales con este paquete.
+- Memoria NPU: 2,08 GiB tras la carga y 3,01 GiB en pico.
+- Memoria de host: 182 MiB tras la carga y 868 MiB en pico.
+- La inferencia ocupa los cuatro núcleos de la NPU en exclusiva; el servidor se ejecuta con `-np 1`.
+- Almacenamiento: repositorio de 2,7 GB (pesos de texto 1,52 GB, codificador visual 0,9 GB, más binarios y kernels).
+- Despliegue mediante los scripts incluidos (`run.sh`, `bench.sh`) y binarios estáticos de llama.cpp en `bin/`; no se mencionan opciones como vLLM, Ollama o TGI para este paquete.
+- Los archivos descargados de Hugging Face no tienen permisos de ejecución; deben invocarse con `sh`.
+- No se dispone de datos de latencia o throughput en otras plataformas distintas del AX8860.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Despliegue | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Despliegue | Notas |
 |---|---|---|---|---|---|
-| MiniCPM-OCR-1.0-AX8860-llama.cpp (esta ficha) | 752 M | 4096 | NPU AX8860, llama.cpp | no disponible | Paquete GGUF + kernels NPU; OCR chino/ingles |
-| openbmb/MiniCPM-OCR-1.0 (modelo base) | 752 M | no disponible | Generico (transformers, llama.cpp) | no disponible | Modelo original del que deriva este paquete |
-| Alternativas OCR de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la informacion proporcionada |
+| MiniCPM-OCR-1.0-AX8860-llama.cpp | 752 M | 4096 | no disponible | NPU AX8860 (llama.cpp + ggml-axera) | Especializado en OCR chino/ingles; 1,62 s por imagen |
+| openbmb/MiniCPM-OCR-1.0 | 752 M | no disponible | no disponible | Generico (formato original) | Modelo base del que deriva esta distribucion |
+| Otros modelos OCR de la familia MiniCPM | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
+
+No se dispone de informacion suficiente para comparar con alternativas de otros fabricantes en parametros, contexto o rendimiento.
 
 ## Limitaciones y advertencias
 
-- Solo soporta chino e ingles segun la model card; otros idiomas no estan cubiertos.
-- Contexto fijo de 4096 tokens; el prompt mas largo entre las 10 imagenes incluidas es de 1830 tokens, lo que deja margen limitado para documentos extensos o multiples imagenes por peticion.
-- Dependencia estricta de hardware: requiere una NPU AX8860 con SDK V0.5.1 o superior; los binarios son estaticos y especificos de la placa, por lo que no son portables a otras plataformas.
-- La licencia no esta disponible en la informacion proporcionada, por lo que no puede confirmarse el uso comercial; debe verificarse en el repositorio del modelo base.
-- Los archivos descargados de Hugging Face no tienen permisos de ejecucion; es necesario invocarlos con `sh`.
-- El modo de razonamiento esta desactivado por defecto en el servidor; su activacion puede alterar latencia y calidad de salida.
-- Riesgo de alucinacion inherente a los modelos de lenguaje: en tareas OCR puede generar texto plausible no presente en la imagen, especialmente con documentos de baja calidad o dominios no representados.
-- Las imagenes de prueba se generaron con la fuente Noto CJK y su referencia esta en `images/reference.json`; el rendimiento en documentos reales con ruido, rotaciones o fuentes manuscritas no esta documentado.
-- La perplejidad de texto en placa (174,56) es un 1,05% superior a la referencia CPU (172,74), lo que indica una ligera degradacion numerica por la conversion a MXFP8.
-- No se han publicado sesgos conocidos ni evaluaciones de robustez en la informacion disponible.
+- La licencia no esta disponible en la informacion proporcionada, por lo que no puede confirmarse el uso comercial sin consultar el repositorio del modelo base.
+- El modelo solo soporta chino e ingles; no se garantiza el rendimiento en otros idiomas.
+- La ventana de contexto esta limitada a 4096 tokens; la prompt mas larga entre las diez imagenes incluidas alcanza 1830 tokens, lo que deja margen pero restringe documentos muy extensos.
+- Dependencia estricta del hardware Axera AX8860 y del SDK V0.5.1 o superior; no es portable a otras plataformas sin recompilar los kernels.
+- La NPU queda ocupada en exclusiva durante la inferencia, lo que impide ejecutar otras cargas de NPU en paralelo.
+- El modo de razonamiento esta desactivado por defecto en el servidor; su comportamiento con razonamiento activado no se documenta en detalle.
+- Riesgo de alucinacion inherente a los modelos generativos: en OCR, esto puede manifestarse como texto inventado en zonas de baja calidad o con tipografias no vistas durante el entrenamiento.
+- Las imagenes de prueba fueron generadas con la fuente Noto CJK, por lo que la validacion de precision cubre un dominio limitado y no representa documentos reales con ruido, sellos o caligrafia.
+- No se dispone de informacion sobre sesgos especificos del modelo base.
+- La diferencia de perplejidad respecto a la referencia en CPU es del +1,05%, lo que indica una degradacion pequena pero medible en la calidad de la generacion de texto.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/AXERA-TECH/MiniCPM-OCR-1.0-AX8860-llama.cpp
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-OCR-1.0
-- Fork de llama.cpp utilizado (ZHEQIUSHUI, commit `1970d6c5d`): https://github.com/ZHEQIUSHUI/llama.cpp
+- Fork de llama.cpp utilizado: https://github.com/ZHEQIUSHUI/llama.cpp (commit `6613735ce`)

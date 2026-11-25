@@ -2,89 +2,99 @@
 
 ## Resumen
 
-Juggernaut-Moss-DMD2-LoRA-Beta es un adaptador LoRA de destilación para generación de imagen a partir de texto (text-to-image), publicado por el usuario Kandoo en Hugging Face. Se construye sobre el modelo base Kandoo/Juggernaut-Moss y aplica la técnica DMD2 (Distribution Matching Distillation 2, referenciada en el paper arXiv:2405.14867) para reducir drásticamente el número de pasos de muestreo necesarios, transformando el modelo base en una variante de tipo "turbo" o "few-step". El repositorio ocupa 0,3 GB, lo que es coherente con un adaptador LoRA y no con un modelo completo de pesos.
+Juggernaut-Moss-DMD2-LoRA-Beta es un adaptador LoRA de destilación para el modelo de difusión de texto a imagen Juggernaut-Moss, publicado por el usuario Kandoo en Hugging Face. Su propósito es acelerar la inferencia del modelo base mediante la técnica DMD2 (Distribution Matching Distillation 2), descrita en el paper arXiv:2405.14867, reduciendo el número de pasos de muestreo necesarios para generar una imagen. El repositorio ocupa 0,3 GB y se distribuye bajo licencia Apache 2.0.
 
-El modelo está etiquetado con los identificadores moss-image, juggernaut, distillation, turbo, few-step y comfyui, lo que indica que está pensado para integrarse en flujos de trabajo de ComfyUI sobre la familia de modelos Moss. La licencia declarada es Apache 2.0 y el pipeline es text-to-image. El repositorio incluye una galería de prompts de ejemplo orientados a fotografía cinematográfica, retrato y escenas narrativas, lo que sugiere un enfoque en fidelidad fotográfica y control estilístico mediante prompts descriptivos largos.
+Se trata de un adaptador, no de un modelo completo: requiere cargar el modelo base Kandoo/Juggernaut-Moss junto con esta LoRA para funcionar. Está etiquetado como compatible con ComfyUI y con la librería diffusers, y se orienta a flujos de trabajo de generación de imágenes "few-step" o tipo turbo, donde la velocidad de muestreo es crítica.
 
-La relevancia de este adaptador reside en la destilación few-step: al reducir el número de pasos de inferencia, disminuye la latencia por imagen, lo que lo hace atractivo para prototipado rápido y generación interactiva. No se dispone de información sobre parámetros totales, longitud de contexto (en este caso, resolución nativa) ni idiomas soportados, ya que la model card proporcionada está truncada y no incluye esos datos.
+La relevancia de esta ficha es acotada: es un artefacto experimental (la etiqueta "Beta" lo indica) con 345 descargas y 4 likes en el momento de la consulta, sin datos publicados de benchmarks, idiomas soportados ni especificaciones técnicas detalladas en la model card. La información disponible se limita a los metadatos del repositorio y a los ejemplos de prompt incluidos por el autor.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (adaptador LoRA sobre modelo base de difusión Moss/Juggernaut) |
-| Parametros totales | no disponible (repo de 0,3 GB, compatible con adaptador LoRA) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (modelo text-to-image; resolución nativa no especificada) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (los prompts de ejemplo están en inglés) |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre modelo de difusión text-to-image; destilación DMD2 |
+| Parámetros totales | no disponible |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de imagen; longitud de prompt no especificada) |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (repo de 0,3 GB; presumiblemente safetensors para LoRA, no confirmado) |
+| Formato de pesos | diffusers (LoRA); formato de fichero concreto no especificado |
+| Modelo base | Kandoo/Juggernaut-Moss |
+| Relación con el base | adapter (LoRA) |
+| Tamaño del repositorio | 0,3 GB |
+| Pipeline | text-to-image |
+| Librería | diffusers |
+| Compatibilidad declarada | ComfyUI |
+| Técnica de destilación | DMD2 (arXiv:2405.14867) |
+| Descargas / likes | 345 / 4 |
+| Fecha de creación | 2026-11-15 |
+| Última actualización | 2026-11-16 |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se apoya en el modelo base Kandoo/Juggernaut-Moss, que no se describe en detalle en la información disponible. La técnica aplicada es DMD2 (Distribution Matching Distillation 2), un método de destilación que entrena un modelo de pocos pasos para igualar la distribución de salida del modelo original, permitiendo generar imágenes en un número reducido de pasos de muestreo. El tag "turbo" y "few-step" confirma este enfoque: el LoRA se entrena para que el modelo base funcione de forma eficiente en regímenes de 1 a pocos pasos, reduciendo el coste computacional por imagen.
+El adaptador se construye sobre el modelo base Juggernaut-Moss, un modelo de difusión de texto a imagen, e incorpora una LoRA entrenada con la metodología DMD2 (Distribution Matching Distillation 2, arXiv:2405.14867). DMD2 es una técnica de destilación que busca igualar la distribución de las muestras generadas por el modelo profesor con las del modelo estudiante, permitiendo reducir drásticamente el número de pasos de muestreo (de decenas a unos pocos) sin perder calidad de forma significativa. El autor etiqueta el resultado como "turbo" y "few-step".
 
-No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicó RLHF o DPO (técnicas propias de modelos de lenguaje, no directamente aplicables aquí). La model card truncada no detalla hiperparámetros de entrenamiento, número de pasos objetivo ni resolución de entrenamiento. El tamaño del repositorio (0,3 GB) es consistente con un LoRA de rango moderado sobre un transformer de difusión, pero no permite inferir el tamaño del modelo base.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, el número exacto de pasos objetivo, el rango de la LoRA ni si se aplicaron etapas de RLHF o DPO (no aplicables habitualmente en difusión, pero no confirmado). La model card no incluye detalles del proceso de entrenamiento más allá de las etiquetas. El repositorio se actualizó un día después de su creación, lo que sugiere una publicación en fase temprana o correcciones menores.
 
 ## Capacidades
 
-- Generación de imágenes fotorrealistas a partir de prompts de texto descriptivos y detallados.
-- Generación en pocos pasos (few-step) gracias a la destilación DMD2, reduciendo la latencia de inferencia.
-- Control estilístico mediante prompts largos con indicaciones de cámara, iluminación, composición y grano de película (los ejemplos muestran prompts tipo "film still", "35mm lens at f/1.4", "film grain").
-- Integración con ComfyUI, según los tags del repositorio.
-- Capacidad de representar escenas narrativas complejas: retratos, escenas nocturnas, paisajes, fotografía de producto y escenas de acción.
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión de entrada ni audio, dado que es un modelo text-to-image.
+- Generación de imágenes fotorrealistas a partir de prompts de texto en inglés, con énfasis en iluminación cinematográfica, grano de película y composición fotográfica (según los ejemplos de la model card).
+- Generación en pocos pasos (few-step / turbo) gracias a la destilación DMD2, lo que reduce el coste computacional por imagen.
+- Estilización fotográfica: los prompts de ejemplo describen lentes concretas (35 mm, 24 mm), aperturas (f/1.4) y cámaras (Sony ILCE-7M3), lo que sugiere capacidad de seguir instrucciones fotográficas detalladas.
+- Integración con ComfyUI y diffusers para pipelines de generación.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión, audio ni modo "thinking"; no aplican a un modelo de difusión de imagen.
 - Capacidades multilingües: no disponibles; los ejemplos están en inglés.
+- Contenido marcado como "not-for-all-audiences": el autor advierte de que el modelo puede generar contenido no apto para todos los públicos.
 
 ## Casos de uso
 
-- Prototipado rápido de conceptos visuales: al ser un adaptador few-step, permite iterar sobre prompts en segundos, útil para diseñadores que necesitan explorar variantes de una escena antes de encargar una generación de mayor calidad.
-- Generación de storyboards cinematográficos: los prompts de ejemplo (film stills con indicaciones de lente, iluminación y paleta) encajan con la producción de viñetas para cine o publicidad, donde se requiere coherencia estilística entre planos.
-- Ilustración editorial y fotografía de producto: los ejemplos incluyen fotografía de alimentos (ostras) y retratos con iluminación controlada, lo que lo hace adecuado para material de marketing que necesita un aspecto fotográfico consistente.
-- Creación de arte conceptual para videojuegos: escenas de ciencia ficción (astronauta en jungla bioluminiscente) y escenas históricas o culturales (haka en playa de arena negra) permiten generar referencias visuales para equipos de arte.
-- Generación de imágenes para redes sociales y contenido web: con inferencia few-step, se puede integrar en pipelines automatizados que producen imágenes bajo demanda con latencia baja.
-- Experimentación en investigación sobre destilación: el adaptador sirve como caso práctico para estudiar el efecto de DMD2 sobre un modelo base concreto, comparando calidad y diversidad frente al modelo no destilado.
-- Integración en ComfyUI para flujos de trabajo personalizados: al estar etiquetado para ComfyUI, encaja en grafos nodales donde se combinan LoRAs, upscalers y controles de estilo.
+- Generación rápida de imágenes de concepto en estudios de diseño: al ser una LoRA few-step, permite iterar decenas de variaciones visuales en menos tiempo que un muestreo completo, útil en fases de exploración creativa.
+- Producción de storyboards y fotogramas de referencia para cine o publicidad: los prompts de ejemplo (escenas nocturnas, retratos cinematográficos, western) demuestran capacidad para generar imágenes con dirección de fotografía detallada.
+- Creación de ilustraciones para blogs y medios digitales: el modelo responde a descripciones de iluminación, lente y composición, lo que facilita generar imágenes de acompañamiento coherentes con un estilo editorial.
+- Prototipado de assets para videojuegos o entornos virtuales: generación de referencias visuales de personajes, paisajes y atmósferas antes de pasar a modelado 3D.
+- Pruebas de concepto en investigación sobre destilación de modelos de difusión: el adaptador sirve como ejemplo práctico de aplicación de DMD2 sobre un modelo base concreto para comparar calidad y velocidad frente al muestreo estándar.
+- Automatización de generación de imágenes en pipelines con ComfyUI: al declararse compatible con ComfyUI, puede integrarse en flujos nodales para generar lotes de imágenes con pocos pasos, reduciendo el tiempo de GPU por imagen en entornos de producción.
+- Exploración artística y fotografía sintética: los ejemplos muestran retratos con grano de película y halation, adecuados para proyectos de arte digital que imitan estética analógica.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas como FID, CLIP score, número exacto de pasos de muestreo, ni comparaciones cuantitativas con el modelo base sin destilar.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. Al ser un adaptador LoRA, la VRAM dependerá principalmente del modelo base Kandoo/Juggernaut-Moss, cuyo tamaño no se especifica. El repo del adaptador ocupa 0,3 GB, pero el modelo base requiere memoria adicional no cuantificada.
-- GPU recomendadas: no disponible. Sin conocer el tamaño del modelo base, no es posible determinar si cabe en GPUs de consumo (RTX 3060, 4090) o si requiere A100/H100.
-- Compatibilidad con GPU de consumo: no confirmada.
-- Opciones de despliegue: ComfyUI (según tags); otras opciones (Diffusers, vLLM, llama.cpp, Ollama, TGI) no están confirmadas para este adaptador. Diffusers es plausible para modelos de difusión, pero no se documenta.
-- Latencia y throughput: no disponibles. La destilación few-step sugiere latencias menores que el modelo base, pero no hay cifras publicadas.
+- VRAM estimada para inferencia: no disponible de forma explícita; depende del modelo base Juggernaut-Moss, no especificado en la información proporcionada. La LoRA en sí ocupa 0,3 GB y se suma a los requisitos del base.
+- GPU recomendadas: no disponibles. Al ser un adaptador sobre un modelo de difusión de imagen, los requisitos vendrán determinados por el modelo base; no se confirman cifras.
+- ¿Cabe en GPU de consumo? No confirmado. Depende del modelo base; la reducción de pasos de DMD2 puede disminuir el tiempo de inferencia, pero no la memoria necesaria para cargar los pesos.
+- Opciones de despliegue: diffusers (declarado) y ComfyUI (declarado). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a modelos de difusión de imagen.
+- Latencia y throughput: no disponibles. La ventaja esperada de DMD2 es la reducción del número de pasos, pero no se publican tiempos medidos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto/resolucion | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Tipo | Parámetros | Contexto / pasos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Juggernaut-Moss-DMD2-LoRA-Beta | no disponible (LoRA de 0,3 GB) | no disponible | no disponible | Apache 2.0 | Hugging Face (Kandoo) |
-| Modelo base Kandoo/Juggernaut-Moss | no disponible | no disponible | no disponible | no disponible | Hugging Face (Kandoo) |
-| Alternativas de destilación few-step (p. ej., LCM/LCM-LoRA, Turbo LoRA) | no disponible | no disponible | no disponible | varía según autor | Hugging Face / ComfyUI |
+| Juggernaut-Moss-DMD2-LoRA-Beta | LoRA de destilación DMD2 sobre Juggernaut-Moss | no disponible | few-step (número no especificado) | Apache 2.0 | Hugging Face (345 descargas) |
+| Juggernaut-Moss (base) | Modelo de difusión text-to-image | no disponible | muestreo estándar | no disponible en esta ficha | Hugging Face |
+| Otras LoRA turbo/few-step para difusión (p. ej. LCM, Hyper-SD) | Adaptadores de aceleración | no aplica | 1-8 pasos típicos | variable según autor | Hugging Face / ComfyUI |
 
-No se dispone de datos suficientes para establecer una comparativa numérica con alternativas concretas. Los modelos comparables serían otros adaptadores LoRA de destilación few-step (LCM, DMD2, Turbo) sobre bases de difusión similares, pero no se han proporcionado métricas de ninguno de ellos en la información disponible.
+No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada; la comparativa se limita a tipo de artefacto, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- La model card está truncada en la información proporcionada; faltan detalles sobre entrenamiento, resolución, pasos objetivo y limitaciones declaradas por el autor.
-- El tag "not-for-all-adversaries" (not-for-all-audiences) indica que el modelo puede generar contenido no apto para todas las audiencias; se recomienda moderación en producción.
-- Riesgo de alucinación visual: como todo modelo generativo text-to-image, puede producir anatomías incorrectas, texto ilegible en la imagen y incoherencias espaciales, especialmente en escenas complejas con múltiples personajes.
-- Sesgos conocidos: no documentados en la información disponible; los modelos de difusión entrenados con datasets web suelen heredar sesgos de representación demográfica y cultural.
-- Limitaciones de idioma: no se especifican; los prompts de ejemplo están en inglés, y no hay evidencia de soporte multilingüe.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo base Kandoo/Juggernaut-Moss puede tener condiciones adicionales no reflejadas en este adaptador; conviene verificar la licencia del base antes de desplegar en producción.
-- Al ser un adaptador LoRA, requiere cargar el modelo base; su comportamiento y calidad dependen críticamente de la compatibilidad y del estado del base.
-- La destilación few-step puede sacrificar diversidad y fidelidad frente al modelo no destilado; no hay métricas publicadas que cuantifiquen esta pérdida.
-- Fecha de creación del repositorio (2026-11-15) y cero descargas/likes: poca validación comunitaria; usar con cautela en entornos productivos.
+- Es un adaptador, no un modelo autónomo: sin el modelo base Kandoo/Juggernaut-Moss no funciona.
+- Estado "Beta": el autor lo etiqueta como versión beta, lo que implica posible inestabilidad, cambios futuros o calidad no final.
+- Sin benchmarks publicados: no hay evidencia cuantitativa de la calidad frente al modelo base ni frente a otras técnicas de destilación.
+- Contenido marcado como "not-for-all-adolescents" (not-for-all-audiences): puede generar material no apto para todos los públicos; requiere moderación en producción.
+- Idiomas no especificados: los ejemplos están en inglés; el rendimiento en castellano u otros idiomas no está documentado.
+- Riesgo de alucinación visual: como todo modelo generativo de imagen, puede producir artefactos, anatomías incorrectas o texto ilegible en las imágenes.
+- Sesgos: no documentados por el autor; los modelos de difusión entrenados con datasets web pueden reproducir sesgos de género, etnia y estética.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base puede tener su propia licencia no detallada aquí; conviene verificarla antes de producción.
+- Sin información sobre cuantizaciones ni formatos alternativos (GGUF, safetensors explícito), lo que limita opciones de despliegue en hardware modesto.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Kandoo/Juggernaut-Moss-DMD2-LoRA-Beta
 - Modelo base: https://huggingface.co/Kandoo/Juggernaut-Moss
-- Paper DMD2 (referenciado en tags): https://arxiv.org/abs/2405.14867
-- ComfyUI: https://github.com/comfyanonymous/ComfyUI
-- Resultados de búsqueda web no relacionados con el modelo (kandoo.eu, kandoo.com) se han descartado por no ser pertinentes.
+- Paper DMD2: https://arxiv.org/abs/2405.14867
+- ComfyUI (herramienta declarada compatible): https://github.com/comfyanonymous/ComfyUI
+- Diffusers (librería declarada): https://github.com/huggingface/diffusers

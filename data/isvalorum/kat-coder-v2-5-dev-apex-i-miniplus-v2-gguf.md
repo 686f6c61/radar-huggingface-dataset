@@ -2,93 +2,104 @@
 
 ## Resumen
 
-KAT-Coder-V2.5-Dev APEX-I-MiniPlus-V2-GGUF es una cuantización GGUF artesanal del modelo Kwaipilot/KAT-Coder-V2.5-Dev, publicada por el usuario IsValorum. No se trata de un modelo entrenado desde cero, sino de una receta de cuantización tensor a tensor diseñada específicamente para arquitecturas MoE híbridas orientadas a código agéntico. El modelo base emplea la arquitectura `Qwen3_5MoeForConditionalGeneration`, con 40 capas, 256 micro-expertos de dimensión intermedia 512 y 8 expertos activos por token.
+KAT-Coder-V2.5-Dev-APEX-I-MiniPlus-V2-GGUF es una cuantizacion personalizada de tipo GGUF del modelo Kwaipilot/KAT-Coder-V2.5-Dev, un modelo de lenguaje orientado a generacion de codigo y flujos agenticos. La publica el usuario IsValorum bajo el identificador APEX-I-MiniPlus V2, una receta de cuantizacion tensor a tensor que busca preservar la calidad del modelo original en un peso de aproximadamente 14,6 GB, apto para inferencia en hardware de consumo.
 
-El resultado es un fichero de 14,64 GB (13,64 GiB) con 3,38 BPW que, según el autor, cabe completo en GPUs de 24 GB manteniendo la ventana de contexto de 256K, o funcionar con offload agresivo a RAM DDR4/DDR5 en portátiles. El modelo totaliza 34.660.610.688 parámetros (unos 34,66 B), de los cuales aproximadamente 3,2 B se activan por token, lo que le permite ofrecer un rendimiento de decodificación propio de un modelo pequeño con capacidad de razonamiento de escala 35B.
+El modelo base es un transformer de tipo Mixture of Experts (MoE) con 34.660.610.688 parametros totales, etiquetado en el repositorio como "qwen35moe", lo que sugiere una arquitectura derivada de la familia Qwen con 35.000 millones de parametros y enrutamiento disperso. El contexto declarado alcanza los 256.000 tokens, una ventana pensada para trabajar sobre bases de codigo extensas y conversaciones multi-turno de largo recorrido.
 
-La relevancia actual de esta ficha es doble: por un lado, documenta una alternativa práctica para ejecutar un modelo de código de 35B en hardware de consumo; por otro, conviene señalar que el propio autor la etiqueta como edición "legacy", sustituida por una revisión V2.1 anunciada pero aún no publicada en el momento de redactar esta ficha. La licencia declarada es Apache 2.0 y los idiomas soportados son inglés y chino.
+La relevancia de esta ficha radica en que el autor ofrece una alternativa de cuantizacion "artesanal" frente a las recetas genericas de 3 bits, con proteccion de tensores sensibles: puertas de enrutamiento en F32 sin comprimir, cabeza de salida en Q6_K, puertas de atencion en Q8_0 y expertos principales en IQ3_XXS/IQ3_S. El repositorio incluye ademas benchmark propio (WikiText-2), proyecciones de rendimiento en hardware de consumo y una edicion hermana (V2.1) recomendada por el propio autor para streaming desde RAM del sistema.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3_5MoeForConditionalGeneration (transformer MoE, 40 capas, 256 micro-expertos, dimension intermedia 512, 8 expertos activos por token) |
-| Parametros totales | 34.660.610.688 (aproximadamente 34,66 B) |
-| Parametros activos | Aproximadamente 3,2 B por token (MoE) |
-| Longitud de contexto | 256K tokens (segun el autor; soporte completo declarado en 24 GB de VRAM) |
-| Tipos de cuantizacion | GGUF mixta: IQ3_S / IQ4_NL en capas de frontera, IQ3_XXS + imatrix en expertos del nucleo, F32 en gates del router, Q6_K en la cabeza de salida. 3,38 BPW |
-| Idiomas soportados | en, zh |
+| Arquitectura | Transformer Mixture of Experts (MoE), etiquetado "qwen35moe" |
+| Parametros totales | 34.660.610.688 |
+| Parametros activos | no disponible |
+| Longitud de contexto | 256.000 tokens (declarado en la model card) |
+| Tipos de cuantizacion | GGUF personalizado APEX-I-MiniPlus V2: F32 en router gates, Q8_0 en attention gates, Q6_K en output head, IQ3_S + IQ4_NL en shared experts, IQ3_XXS/IQ3_S en expertos principales |
+| Idiomas soportados | en, zh, es, fr, de, pt, it, ru, ja, ko, vi, th, ar (segun tags); la model card solo declara en y zh como idiomas principales |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (fichero unico `KAT-Coder-V2.5-Dev.APEX-I-MiniPlus-V2.gguf`, 14,64 GB / 13,64 GiB) |
+| Formato de pesos | GGUF (llama.cpp) |
+| Tamano del repositorio | 14,6 GB |
+| Modelo base | Kwaipilot/KAT-Coder-V2.5-Dev |
+| Cuantizado por | IsValorum |
+| Herramienta de cuantizacion | unsloth-studio, con imatrix |
+| Fecha de creacion | 16 de septiembre de 2026 |
+| Ultima actualizacion | 11 de octubre de 2026 |
+| Descargas / likes | 451 / 2 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre el entrenamiento del modelo base en la documentacion proporcionada (numero de tokens, composicion del dataset, uso de RLHF/DPO, etc.). Lo que si se detalla es la arquitectura: un transformer MoE de 40 capas con 256 micro-expertos de dimension intermedia 512 y enrutamiento que activa 8 expertos por token. Esta granularidad fina de expertos es caracteristica de las arquitecturas Qwen3.5-MoE y es la razon por la que el autor insiste en que las cuantizaciones planas degradan el enrutamiento y la sintaxis del codigo generado.
+El modelo base es un transformer con capas de mezcla de expertos (MoE). El repositorio no detalla el numero de expertos por capa, el numero de parametros activos por token ni la composicion exacta del dataset de entrenamiento; esa informacion no esta disponible en la model card consultada. El tag "qwen35moe" apunta a una arquitectura de la familia Qwen de aproximadamente 35.000 millones de parametros totales con enrutamiento disperso, y el contexto maximo declarado es de 256.000 tokens.
 
-La innovacion tecnica de esta publicacion no esta en el entrenamiento sino en la cuantizacion. Frente a los bots que aplican una reduccion uniforme de bits, APEX-I-MiniPlus-V2 usa reglas definidas tensor a tensor: los expertos compartidos se mantienen en `IQ4_NL` (codebook no lineal), los expertos del nucleo se comprimen a `IQ3_XXS` calibrado con importance matrix (imatrix), las capas de atencion periodicas se elevan a `IQ3_S`/`IQ4_NL`, los gates del router se dejan sin comprimir en `F32` para evitar deriva en el enrutamiento y la cabeza de salida se mantiene en `Q6_K` para preservar la precision sintactica. El autor anuncia ademas una revision V2.1 con expertos compartidos en `Q5_K`, anclas de atencion en `Q4_K`/`Q6_K` y escalas recurrentes en `F32`.
+El trabajo de esta ficha es la cuantizacion, no el entrenamiento. La receta APEX-I-MiniPlus V2 aplica una asignacion de precision por tipo de tensor: los router gates se mantienen en F32 sin comprimir, la cabeza de salida (token output head) se protege en Q6_K, las puertas de atencion en Q8_0, los expertos compartidos en IQ3_S con IQ4_NL y los expertos principales en IQ3_XXS/IQ3_S. El autor indica que la cuantizacion se genero con unsloth-studio e imatrix, y que la edicion V2.1 hermana, con Q3_K lineal en expertos de borde y Q5_K en expertos compartidos, alcanza una perplexity de 5,5045 ± 0,1330 en WikiText-2, con una delta de aproximadamente +0,06 respecto al modelo sin cuantizar (unos 5,44). Para esta edicion V2 no se publica un valor de perplexity propio.
 
 ## Capacidades
 
-- Generacion de codigo en multiples lenguajes, con enfasis declarado en precision sintactica, llaves y indentacion correctas.
-- Refactorizacion y verificacion de sintaxis sobre fragmentos largos de codigo.
-- Razonamiento logico y de multiples pasos, orientado a tareas de ingenieria de software.
-- Flujo agéntico: el modelo base y la etiqueta del repositorio (`agentic`) apuntan a uso en pipelines de agentes con llamadas a herramientas, aunque la model card no detalla el soporte explicito de tool calling ni de function calling.
-- Contexto largo de 256K tokens para trabajar con varios ficheros o repositorios completos en una sola ventana.
-- Capacidades multilingues limitadas a ingles y chino, tanto en prompts como en generacion.
-- Conversacion multiturno (etiqueta `conversational` en el repositorio).
-- Ejecucion local en llama.cpp, con perfil de memoria disenado para evitar OOM en GPUs de 16 GB y 24 GB.
+- Generacion de codigo en multiples lenguajes, con enfasis en tareas de programacion y depuracion.
+- Razonamiento de multiples pasos y flujos agenticos (tags "agentic" y "coding").
+- Soporte de tool calling y function calling, segun la orientacion agentica del modelo base.
+- Contexto largo de hasta 256.000 tokens, adecuado para analisis de repositorios completos.
+- Capacidades multilingues: los tags declaran 13 idiomas, aunque la model card solo confirma en y zh.
+- Inferencia compatible con llama.cpp y endpoints compatibles (tag "endpoints_compatible").
+- No se declaran capacidades de vision, audio ni modo de pensamiento explicito en la informacion disponible.
 
 ## Casos de uso
 
-- Asistente de codigo en portatil sin GPU dedicada: con 13,64 GiB de pesos, el modelo puede ejecutarse con offload mayoritario a DDR4/DDR5 y mantener velocidades de streaming declaradas de 24 a 28+ tok/s, lo que hace viable un asistente de programacion local en equipos de gama media.
-- Refactorizacion de bases de codigo extensas: la ventana de 256K tokens permite introducir varios modulos simultaneamente y pedir cambios coherentes entre ellos, algo inviable con modelos de contexto de 8K o 32K.
-- Revision de codigo automatizada: el sesgo de la receta hacia la precision sintactica y los brackets lo hace adecuado para detectar errores de sintaxis, indentacion incorrecta y problemas de compilacion antes de llegar al CI.
-- Agentes de ingenieria de software multi-paso: con 3,2 B de parametros activos, el coste por token es bajo, lo que reduce el coste de ejecutar bucles agénticos largos con muchas iteraciones de planificacion, edicion y ejecucion de tests.
-- Generacion de tests y documentacion: dado un modulo completo en contexto, el modelo puede producir baterias de pruebas y documentacion de API en ingles o chino sin salir del equipo local.
-- Despliegue en 24 GB de VRAM con contexto completo: segun el autor, el build permite cargar los 256K de contexto en una GPU de 24 GB, habilitando analisis de repositorios enteros con latencia de GPU y sin fragmentacion por CPU.
-- Traduccion tecnica ingles-chino de codigo, comentarios y documentacion dentro de equipos con ambos idiomas.
-- Servidor de inferencia local para equipos de desarrollo: al ser GGUF, se puede exponer mediante `llama-server` y consumirse como API compatible con OpenAI para herramientas internas.
+- Asistente de programacion en IDE: el modelo puede autocompletar y refactorizar codigo dentro de un editor con integracion via llama.cpp o un servidor compatible con la API de OpenAI, aprovechando la ventana de 256.000 tokens para incluir varios ficheros del proyecto en el contexto.
+- Revision de repositorios completos: con contexto de 256.000 tokens es viable cargar un arbol de codigo amplio y pedir auditorias de seguridad, deteccion de deuda tecnica o explicaciones de arquitectura sin trocear el codigo en fragmentos.
+- Agentes autonomos de CI/CD: el soporte de tool calling permite encadenar llamadas a herramientas (ejecutar tests, abrir pull requests, consultar logs) en pipelines automatizados de integracion y despliegue.
+- Migracion de bases de codigo legacy: el modelo puede traducir modulos entre lenguajes o frameworks manteniendo la coherencia entre ficheros al disponer de todo el contexto en una sola ventana.
+- Despliegue en estaciones de trabajo con 24 GB de VRAM: segun el autor, la edicion permite ejecutar el contexto completo de 256K en VRAM con una GPU de 24 GB, lo que habilita asistentes de codigo locales sin depender de la nube.
+- Inferencia hibrida GPU + RAM del sistema: en equipos con DDR4/DDR5 y sin VRAM suficiente, los pesos pueden transmitirse desde RAM mientras la cache KV del contexto reside en GPU, con tasas de generacion declaradas de 20 a 45 tok/s.
+- Generacion de tests y documentacion tecnica: a partir de un modulo completo en contexto, el modelo puede producir suites de pruebas y documentacion de API coherentes con el codigo existente.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye secciones tituladas "Comparative Quantization Analysis", "Everyday Laptop Benchmarks (DDR4 / DDR5 RAM)" y "Hardware Throughput Projections (RTX 30 / 40 / 50)", pero el contenido proporcionado esta truncado y no incluye cifras de MMLU, HumanEval, GSM8K ni de ningun otro conjunto de evaluacion. Los unicos datos numericos de rendimiento declarados por el autor son los de velocidad de decodificacion bajo offload agresivo: entre 24 y 28+ tok/s en configuracion de VRAM minima con el grueso de los pesos en DDR4.
+La model card no publica resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) para esta edicion V2. El unico dato cuantitativo de calidad corresponde a la edicion hermana V2.1:
+
+| Metrica | Valor | Notas |
+|---|---|---|
+| Perplexity WikiText-2 (V2.1) | 5,5045 ± 0,1330 | Delta aproximada de +0,06 frente al modelo sin cuantizar (aprox. 5,44) |
+| Perplexity WikiText-2 (V2) | no disponible | El autor no publica valor propio para esta edicion |
+| Throughput streaming en RAM (V2.1) | +24 a +28 tok/s | Frente a cuantizaciones con paradas de dequantizacion AVX2 |
+| Throughput en RAM del sistema | 20 a 45 tok/s | Rango segun CPU, memoria y configuracion DDR4/DDR5 |
+
+No se han publicado resultados de benchmarks de tareas (codigo, razonamiento, matematicas) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 13,64 GiB solo para los pesos en precision de la cuantizacion. Hay que anadir el cache KV correspondiente al contexto utilizado; para 256K tokens el autor afirma que cabe en 24 GB, pero no se proporciona el desglose exacto de memoria del cache.
-- GPU de 24 GB (RTX 3090, RTX 4090, RTX 5090, A100 40 GB, etc.): escenario objetivo para contexto completo de 256K segun el autor.
-- GPU de 16 GB: el modelo esta disenado explicitamente para evitar OOM en este segmento, presumiblemente con contexto reducido o con parte de los pesos en RAM del sistema.
-- GPU de consumo con menos de 16 GB: viable con offload a RAM del sistema, a costa de velocidad; el autor cita 24-28+ tok/s en configuraciones de VRAM minima y DDR4.
-- CPU y RAM: ejecutable en portatiles con DDR4/DDR5, que es el escenario de los "everyday laptop benchmarks" mencionados en la model card.
-- Opciones de despliegue: llama.cpp (etiqueta explicita del repositorio), `llama-server` para exponer API, y cualquier frontend compatible con GGUF que use llama.cpp como backend. No se menciona soporte de vLLM, TGI u Ollama en la informacion disponible.
-- Latencia y throughput: no disponible mas alla de los 24-28+ tok/s declarados bajo offload agresivo. La model card anuncia proyecciones para RTX 30/40/50, pero las cifras no aparecen en el extracto proporcionado.
+- VRAM estimada: aproximadamente 14,6 GB para los pesos en esta cuantizacion; el autor afirma que el contexto completo de 256K cabe en VRAM en una GPU de 24 GB, aunque la memoria adicional para la cache KV no se detalla.
+- GPU recomendadas: el autor publica proyecciones para RTX 30, RTX 40 y RTX 50; una RTX 4090 (24 GB) es el caso destacado para contexto completo en VRAM. Para despliegues de mayor concurrencia, A100 o H100 son adecuadas por VRAM y ancho de banda, aunque no se publican cifras especificas para ellas.
+- Cabe en GPU de consumo: si, en tarjetas de 24 GB (RTX 3090, 4090) y con margen ajustado en 16 GB si se reduce contexto o se hace offload parcial.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), servidores compatibles con endpoints OpenAI, y Ollama por compatibilidad de formato. vLLM y TGI no se mencionan en la informacion disponible para este GGUF.
+- Latencia y throughput: 20 a 45 tok/s con inferencia total o parcial en RAM del sistema; el autor reporta +24 a +28 tok/s de mejora en streaming para la edicion V2.1 frente a cuantizaciones con paradas AVX2. No se publican cifras de throughput con todos los pesos en VRAM.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / tamano | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| KAT-Coder-V2.5-Dev APEX-I-MiniPlus-V2 (este) | 34,66 B totales, ~3,2 B activos | 256K | GGUF, 14,64 GB, 3,38 BPW | Apache 2.0 | Cuantizacion artesanal con imatrix, routers en F32 y salida en Q6_K |
-| Kwaipilot/KAT-Coder-V2.5-Dev (base) | 34,66 B totales, ~3,2 B activos | no disponible en la informacion proporcionada | safetensors (precision original) | Apache 2.0 | Modelo original sin cuantizar; requiere hardware muy superior |
-| APEX-I-Mini generico (comunidad) | 34,66 B totales | no disponible | GGUF de 2 bits | Apache 2.0 (presumible) | Expertos a IQ2_S y salida en Q3_K_M; el autor reporta picos de perplejidad y sintaxis rota |
-| Cuantizacion plana Q3_K_S / IQ3_S | 34,66 B totales | no disponible | GGUF de 3 bits | Apache 2.0 (presumible) | Reduccion uniforme de bits; el autor la situa por debajo de este build en calidad |
+| KAT-Coder-V2.5-Dev APEX-I-MiniPlus V2 (esta ficha) | 34,66 B (MoE) | 256K | Apache 2.0 | GGUF, 14,6 GB | Cuantizacion artesanal con router F32 y output head Q6_K |
+| KAT-Coder-V2.5-Dev APEX-I-MiniPlus V2.1 | 34,66 B (MoE) | 256K | Apache 2.0 | GGUF, aprox. 14,7 GB | Recomendada por el autor; PPL 5,5045 en WikiText-2; elimina paradas AVX2 |
+| APEX-I-Mini generico de la comunidad | 34,66 B (MoE) | 256K | Apache 2.0 | GGUF | Expertos en IQ2_S, output head en Q3_K_M y atencion en Q3_K; el autor lo describe como inferior en calidad |
+| Kwaipilot/KAT-Coder-V2.5-Dev (base sin cuantizar) | 34,66 B (MoE) | 256K | Apache 2.0 | safetensors | Referencia de calidad; PPL aproximada de 5,44 en WikiText-2 |
 
-No se dispone de datos de rendimiento comparativos entre estas opciones en la informacion proporcionada; las diferencias de calidad descritas proceden de la propia model card del autor y no de una evaluacion independiente.
+No se dispone de comparativas con otros modelos de codigo de tamano similar (por ejemplo, variantes de Qwen-Coder o DeepSeek-Coder) en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es una cuantizacion, no un modelo original: introduce perdida de precision frente a los pesos completos. El autor afirma que la perdida es menor que en cuantizaciones planas, pero no aporta mediciones publicas de perplejidad.
-- La model card se autodenomina "edicion legacy". Existe una revision V2.1 anunciada como definitiva con mejoras en expertos compartidos, anclas de atencion, escalas recurrentes en F32 y velocidad de offload; puede no tener sentido desplegar esta V2 en produccion si V2.1 esta disponible.
-- Solo ingles y chino. No hay soporte declarado de castellano ni de otros idiomas, lo que limita su uso en equipos hispanohablantes sin prompts en ingles.
-- Las capacidades agénticas y de tool calling se infieren de las etiquetas del repositorio, no de una especificacion detallada en la model card. Conviene validarlas antes de integrarlo en un pipeline de agentes.
-- No hay resultados de benchmarks publicados en la informacion disponible, por lo que cualquier afirmacion de calidad relativa frente a otros modelos carece de respaldo verificable.
-- El repositorio tiene un numero muy bajo de descargas (77) y cero likes en el momento de la consulta, lo que implica poca validacion por parte de la comunidad.
-- Las cifras de velocidad (24-28+ tok/s) y de contexto completo en 24 GB provienen del autor y no han sido verificadas de forma independiente; dependen fuertemente de la CPU, la RAM y el ancho de banda de memoria del sistema.
-- Licencia Apache 2.0 heredada del modelo base, que permite uso comercial, pero conviene verificar los terminos del repositorio original Kwaipilot/KAT-Coder-V2.5-Dev por si existiesen condiciones adicionales.
-- El enrutamiento MoE con 256 micro-expertos es sensible a la cuantizacion; aunque los gates se mantienen en F32, no hay datos publicos sobre la deriva de enrutamiento en secuencias muy largas.
-- El cache KV para contexto de 256K puede consumir una cantidad significativa de memoria adicional que no se detalla en la informacion proporcionada.
+- La cuantizacion a 3 bits en los expertos principales introduce perdida de calidad respecto al modelo sin cuantizar; el autor cifra la delta de perplexity de la edicion V2.1 en aproximadamente +0,06, pero no publica el dato para esta V2.
+- El autor advierte de que las recetas genericas de 3 bits provocan picos de perplexity, errores de sintaxis y corchetes de codigo rotos en modelos de razonamiento profundo; esta edicion mitiga el problema pero no lo elimina por completo.
+- La model card solo confirma ingles y chino como idiomas principales; el resto de los 13 idiomas aparece unicamente en los tags y no esta validado.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; en generacion de codigo puede producir APIs inexistentes o dependencias no disponibles.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Kwaipilot/KAT-Coder-V2.5-Dev antes de desplegarlo en produccion.
+- El rendimiento en RAM del sistema depende de la CPU y del ancho de banda de memoria (DDR4 frente a DDR5); las cifras de 20 a 45 tok/s son rangos del autor, no garantias.
+- No se publican datos sobre sesgos del modelo base ni sobre evaluaciones de seguridad.
+- El autor recomienda la edicion V2.1 sobre esta V2 para practicamente todos los usuarios; esta V2 se mantiene por transparencia arquitectonica.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/IsValorum/KAT-Coder-V2.5-Dev-APEX-I-MiniPlus-V2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/KAT-Coder-V2.5-Dev-APEX-I-MiniPlus-V2-GGUF
+- Edicion recomendada V2.1: https://huggingface.co/IsValorum/KAT-Coder-V2.5-Dev-APEX-I-MiniPlus-V2.1-GGUF
 - Modelo base: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
-- Catalogo del autor (donde se anuncia la revision V2.1): https://huggingface.co/IsValorum
+- Apoyo al autor (Ko-fi): https://ko-fi.com/isvalorum

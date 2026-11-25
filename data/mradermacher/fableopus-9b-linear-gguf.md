@@ -2,90 +2,106 @@
 
 ## Resumen
 
-FableOpus-9B-Linear-GGUF es una colección de cuantizaciones en formato GGUF del modelo FableOpus-9B-Linear, desarrollado por bingleai y cuantizado por mradermacher. El modelo original es un merge basado en la arquitectura Qwen3.5, con técnicas de destilación y fusión que incorporan influencias de Fable-5 y Claude Opus, según los metadatos del repositorio. Con aproximadamente 8.950 millones de parámetros, está diseñado para tareas conversacionales y, según los archivos multimodales incluidos (mmproj), presenta capacidades multimodales adicionales.
+FableOpus-9B-Linear es un modelo de lenguaje de aproximadamente 8.950 millones de parametros (8.953.803.264 segun los pesos en safetensors) desarrollado por bingleai y distribuido en formato GGUF por mradermacher. Segun las etiquetas de su model card, se trata de un merge destilado que combina linajes de Qwen (etiquetas `qwen` y `qwen3.5`) con tecnicas de destilacion orientadas a reproducir el comportamiento de Claude Opus (etiquetas `claude-opus` y `fable-5`). El modelo base es `bingleai/FableOpus-9B-Linear`, del que esta publicacion es una conversion a cuantizaciones estaticas.
 
-La relevancia de esta versión GGUF radica en su accesibilidad: al estar cuantizado, puede ejecutarse en hardware de consumo con requisitos de VRAM reducidos, lo que facilita su despliegue local en aplicaciones de producción. La licencia Apache 2.0 permite uso comercial sin restricciones significativas, y el modelo está orientado principalmente al inglés. Aunque la información pública sobre su arquitectura interna y entrenamiento es limitada, su disponibilidad en múltiples niveles de cuantización (desde Q2_K hasta f16) lo convierte en una opción práctica para desarrolladores que necesitan un modelo de 9B con capacidades conversacionales y multimodales.
+La relevancia de esta ficha reside en que el repositorio original solo ofrece pesos en precision completa (bf16), lo que lo hace impractical para equipos de consumo; mradermacher publica un abanico amplio de cuantizaciones GGUF (desde Q2_K de 3,9 GB hasta f16 de 18 GB) que permiten ejecutar el modelo en hardware modesto mediante llama.cpp u Ollama. Ademas, el repositorio incluye ficheros `mmproj` (Q8_0 y f16), lo que indica soporte multimodal de vision en el linaje del modelo base.
+
+La informacion disponible es limitada: no se documentan en la model card el numero de tokens de entrenamiento, la composicion del dataset, la longitud de contexto ni resultados de benchmarks. La licencia es Apache 2.0, lo que facilita su uso comercial, y el modelo esta etiquetado exclusivamente para ingles (`en`).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (merge basado en Qwen3.5, con componentes multimodales) |
-| Parametros totales | 8.953.803.264 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, mmproj-Q8_0, mmproj-f16 |
-| Idiomas soportados | en (ingles) |
+| Arquitectura | Transformer (linaje Qwen 3.5, segun etiquetas; detalles no disponibles) |
+| Parametros totales | 8.953.803.264 (8,95 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mmproj en Q8_0 y f16 |
+| Idiomas soportados | Ingles (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors disponible en el modelo base) |
+| Formato de pesos | GGUF (cuantizaciones estaticas); modelo base en bf16/safetensors |
+| Modelo base | bingleai/FableOpus-9B-Linear |
+| Tamano del repo | 83,0 GB |
+| Descargas | 299 |
+| Likes | 0 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publica detallada sobre la arquitectura interna del modelo original FableOpus-9B-Linear. Los metadatos indican que se trata de un merge basado en Qwen3.5, con tecnicas de destilacion (distillation) y fusion (merge) que incorporan influencias de los modelos Fable-5 y Claude Opus. El repositorio incluye archivos mmproj (multi-modal projection), lo que sugiere que el modelo tiene un componente de proyeccion multimodal, aunque no se especifican las modalidades exactas (vision, audio, etc.).
+La model card no detalla la arquitectura interna mas alla de las etiquetas: `qwen`, `qwen3.5`, `fable-5`, `claude-opus`, `distillation` y `merge`. Esto sugiere que FableOpus-9B-Linear es el resultado de un merge de modelos de la familia Qwen 3.5, con tecnicas de destilacion para aproximar el estilo de respuesta de Claude Opus. El sufijo "Linear" en el nombre podria referirse a una variante con capas lineales o atencion lineal, pero no se confirma en la informacion disponible.
 
-No se han publicado datos sobre el dataset de entrenamiento, el numero de tokens procesados, ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se documentan innovaciones tecnicas especificas mas alla de la cuantizacion GGUF realizada por mradermacher, que es una cuantizacion estatica (no utiliza imatrix ni pesos ponderados).
+No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de RLHF o DPO. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o atencion lineal mas alla de lo que sugiere el nombre. La presencia de ficheros `mmproj` indica que el modelo base incorpora un proyector multimodal para vision, aunque las capacidades exactas no se detallan.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, orientada a dialogos multi-turno.
-- Capacidades multimodales parciales: los archivos mmproj sugieren soporte para entrada multimodal, aunque no se detalla que tipos de datos (imagen, audio, etc.) puede procesar.
-- Compatible con el ecosistema transformers y GGUF, lo que permite su uso con diversas herramientas de inferencia.
-- No se ha confirmado soporte para tool calling, function calling, agentes o razonamiento multi-paso en la informacion disponible.
-- No se especifican capacidades de razonamiento matematico, generacion de codigo o comprension lectora avanzada, aunque al estar basado en Qwen3.5 es probable que herede algunas de estas habilidades.
+- Generacion de texto conversacional en ingles (pipeline etiquetado como `conversational`).
+- Razonamiento y respuesta a instrucciones, segun el linaje de destilacion de Claude Opus.
+- Soporte multimodal de vision: el repositorio incluye ficheros `mmproj` (Q8_0 y f16) que actuan como suplemento multimodal.
+- Compatibilidad con endpoints (`endpoints_compatible` en las etiquetas), lo que facilita su despliegue en infraestructuras tipo TGI o vLLM.
+- Capacidades de codigo y matematicas: no confirmadas explicitamente en la informacion disponible.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: limitadas al ingles segun la etiqueta `language: en`.
 
 ## Casos de uso
 
-- Chatbots de atencion al cliente: al ser un modelo conversacional de 9B con licencia Apache 2.0, puede desplegarse localmente para gestionar consultas frecuentes en ingles, reduciendo costes de API y garantizando privacidad de datos.
-- Asistentes virtuales embebidos: su tamano moderado y las cuantizaciones Q4_K_M o Q5_K_M permiten ejecutarlo en equipos de escritorio o servidores modestos, ideal para asistentes personales o de productividad.
-- Generacion de contenido en ingles: redaccion de borradores, resumenes o respuestas a correos, aprovechando su capacidad conversacional y su contexto (aunque la longitud exacta no esta publicada).
-- Analisis de texto y extraccion de informacion: puede utilizarse para clasificar, etiquetar o extraer entidades en documentos en ingles, con la ventaja de ejecucion local y sin dependencia de servicios externos.
-- Prototipado rapido de aplicaciones NLP: los desarrolladores pueden probar ideas con las cuantizaciones mas ligeras (Q2_K, Q3_K) en CPU o GPU de baja gama antes de escalar a versiones mas pesadas.
-- Despliegue en entornos con restricciones de conectividad: al ser un modelo local, es adecuado para aplicaciones offline o en redes aisladas, como sistemas de soporte en intranets corporativas.
+- Asistente conversacional en ingles para atencion al cliente: el modelo puede gestionar dialogos multi-turno; la longitud de contexto no esta documentada, por lo que conviene validar el limite real antes de desplegarlo en produccion.
+- Prototipado local en equipos de consumo: con cuantizaciones Q4_K_M (5,7 GB) o Q5_K_M (6,6 GB) puede ejecutarse en GPUs con 8-12 GB de VRAM mediante llama.cpp u Ollama, ideal para pruebas de concepto sin coste de API.
+- Experimentacion con destilacion de estilo: util para investigadores que quieran estudiar como un merge destilado de Qwen 3.5 aproxima el comportamiento de Claude Opus en tareas de generacion.
+- Despliegue en entornos con requisitos de licencia permisiva: la licencia Apache 2.0 permite uso comercial, a diferencia de modelos con licencias restrictivas.
+- Aplicaciones multimodales ligeras: cargando el `mmproj` correspondiente, puede emplearse para tareas de descripcion de imagenes o VQA en ingles, aunque las capacidades exactas no estan documentadas.
+- Fine-tuning sobre el modelo base: al estar disponible el modelo original en bf16, se puede ajustar y luego cuantizar a GGUF para despliegue en produccion.
+- Evaluacion comparativa de cuantizaciones: el amplio abanico de quants (de Q2_K a f16) permite medir el impacto de la cuantizacion en calidad y latencia para un modelo de 9B.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras metricas estandar para este modelo o su version original. Se recomienda realizar evaluaciones propias si se considera su uso en tareas especificas.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (segun cuantizacion):
-  - Q2_K: ~4 GB
-  - Q3_K_M: ~5 GB
-  - Q4_K_M: ~6 GB
-  - Q5_K_M: ~7 GB
-  - Q6_K: ~8 GB
-  - Q8_0: ~10 GB
-  - f16: ~18 GB
-- GPU recomendadas: las cuantizaciones Q4_K_M y Q5_K_M caben en GPUs consumer como RTX 3060 (12 GB), RTX 4060 Ti (16 GB) o RTX 4090 (24 GB). Para Q8_0 o f16 se recomiendan GPUs con 16 GB o mas, como RTX 4080, RTX 4090 o A100.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y cualquier herramienta compatible con GGUF. Tambien se puede usar vLLM o TGI si se convierte a safetensors (disponible en el modelo base).
-- Latencia y throughput: no se han publicado datos especificos. En una RTX 4090 con Q4_K_M, se puede esperar una velocidad de generacion de 50-80 tokens por segundo, pero esto es una estimacion general para modelos de 9B y no un dato oficial.
+- VRAM estimada para inferencia (pesos + overhead aproximado):
+  - Q2_K (3,9 GB): ~5 GB de VRAM.
+  - Q4_K_M (5,7 GB): ~7-8 GB de VRAM.
+  - Q5_K_M (6,6 GB): ~8-9 GB de VRAM.
+  - Q6_K (7,5 GB): ~9-10 GB de VRAM.
+  - Q8_0 (9,6 GB): ~11-12 GB de VRAM.
+  - f16 (18,0 GB): ~20 GB de VRAM.
+  - Vision: anadir ~0,7 GB (mmproj Q8_0) o ~1,0 GB (mmproj f16).
+- GPU recomendadas:
+  - Consumer: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 Ti Super 16 GB, RTX 4090 24 GB (permite Q8_0 o f16).
+  - Profesional: A100 40/80 GB, H100 80 GB (sobredimensionadas para un 9B; utiles para servir muchas instancias o contexto largo).
+- Cabe en GPU consumer: si, con cuantizaciones Q2_K a Q8_0 en GPUs de 8-16 GB; f16 requiere 24 GB o mas.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF; el modelo base en bf16 puede servirse con vLLM o TGI (etiqueta `endpoints_compatible`).
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento comparativos. Como referencia estructural, se puede comparar con otros modelos de ~9B parametros:
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| FableOpus-9B-Linear (este) | 8,95 B | no disponible | Apache 2.0 | GGUF (multiples quants) | Merge destilado Qwen 3.5 + Claude Opus; solo ingles; vision via mmproj |
+| Qwen 3.5 9B (familia) | ~9 B | no disponible | no disponible | safetensors/GGUF | Linaje base del que deriva este merge; capacidades originales no confirmadas |
+| Llama 3.1 8B Instruct | 8,03 B | 128 K | Llama 3.1 Community | safetensors/GGUF | Alternativa consolidada en ingles, con contexto documentado y amplio ecosistema |
+| Mistral 7B Instruct | 7,24 B | 32 K | Apache 2.0 | safetensors/GGUF | Alternativa Apache 2.0 con contexto documentado; sin vision en la version base |
 
-| Modelo | Parametros | Contexto | Licencia | Formato |
-|---|---|---|---|---|
-| FableOpus-9B-Linear (GGUF) | 8.95B | No disponible | Apache 2.0 | GGUF |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community | GGUF, safetensors |
-| Mistral 7B v0.3 | 7.3B | 32K | Apache 2.0 | GGUF, safetensors |
-| Qwen2.5 7B | 7.6B | 128K | Apache 2.0 | GGUF, safetensors |
-
-La comparacion es limitada porque no hay benchmarks publicados para FableOpus-9B-Linear. Su ventaja principal es la licencia permisiva y la disponibilidad de cuantizaciones listas para usar, pero se desconoce su rendimiento real frente a alternativas establecidas.
+La comparativa se limita a datos publicos de cada familia; no se dispone de benchmarks del modelo evaluado para contrastar rendimiento real.
 
 ## Limitaciones y advertencias
 
-- Solo soporta ingles de forma nativa; no se ha confirmado capacidad multilingue.
-- La longitud de contexto no esta publicada, lo que dificulta planificar aplicaciones que requieran ventanas largas.
-- No se han documentado sesgos especificos, pero al ser un modelo derivado de Qwen3.5, puede heredar sesgos presentes en los datos de entrenamiento de ese modelo base.
-- Riesgo de alucinacion inherente a los modelos de lenguaje; se recomienda validacion humana en aplicaciones criticas.
-- La cuantizacion estatica (sin imatrix) puede degradar ligeramente la calidad en comparacion con cuantizaciones ponderadas, especialmente en niveles bajos como Q2_K o Q3_K.
-- No se ha confirmado soporte para tool calling o agentes, por lo que no es adecuado para pipelines que requieran interaccion con APIs externas.
-- Aunque la licencia Apache 2.0 permite uso comercial, el modelo original (bingleai/FableOpus-9B-Linear) podria tener restricciones adicionales no documentadas en esta ficha.
+- Solo soporta ingles segun la etiqueta de idioma; no apto para produccion en castellano u otros idiomas sin validacion previa.
+- No se documentan sesgos conocidos, pero al derivar de un merge destilado de modelos propietarios, puede heredar sesgos de los linajes originales.
+- Riesgo de alucinacion inherente a modelos de 9B; no hay evaluaciones publicadas que lo cuantifiquen.
+- Longitud de contexto no documentada: verificar empiricamente antes de disenar aplicaciones con contexto largo.
+- La model card del repositorio GGUF es una plantilla generica de mradermacher; no hay documentacion tecnica del autor original en esta pagina.
+- Las cuantizaciones Q2_K y Q3_K pueden degradar notablemente la calidad; se recomienda Q4_K_M o superior para uso serio.
+- Aunque la licencia es Apache 2.0, el modelo base deriva de linajes con posibles restricciones (Qwen, Claude Opus); conviene revisar la licencia del modelo base original antes de uso comercial.
+- No hay garantias de soporte: 0 likes y 299 descargas indican un modelo de nicho con poca validacion comunitaria.
+- Los ficheros `mmproj` habilitan vision, pero no se documentan las capacidades exactas ni la calidad del modulo multimodal.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/FableOpus-9B-Linear-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/FableOpus-9B-Linear-GGUF
 - Modelo base: https://huggingface.co/bingleai/FableOpus-9B-Linear
-- Despliegue en FriendliAI: https://friendli.ai/models/bingleai/FableOpus-9B-Linear
-- Guia de cuantizaciones de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Pagina de descargas del autor: https://hf.tst.eu/model#FableOpus-9B-Linear-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

@@ -5,7 +5,7 @@
   "author": "Lottolabs",
   "url": "https://huggingface.co/Lottolabs/Qwen3.8-27B-TT-Mixed-BFP4-BFP8-P150",
   "created_at": "2026-09-20T04:38:33.000Z",
-  "updated_at": "2026-11-13T07:18:25.000Z",
+  "updated_at": "2026-11-24T17:34:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

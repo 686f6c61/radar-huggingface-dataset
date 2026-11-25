@@ -2,50 +2,49 @@
 
 ## Resumen
 
-NOVA-Judex-4.8-Omni-ft es un ajuste fino (fine-tuning) del modelo multimodal LiquidAI/LFM3-Omni-2B, publicado por el usuario cortex-ai-nova en Hugging Face. Se trata de un modelo de tipo image-text-to-text construido sobre la arquitectura LFM3 Omni de Liquid AI, con 2.166.928.384 parametros totales (aproximadamente 2,17 mil millones) y pesos almacenados en safetensors y GGUF. El ajuste se realizo mediante LoRA con rango 8, fusionado posteriormente en los pesos base en precision BF16.
+NOVA-Judex-4.8-Omni-ft es un ajuste fino (fine-tune) del modelo multimodal LiquidAI/LFM3-Omni-2B, publicado por el usuario cortex-ai-nova en Hugging Face. Se trata de un modelo de tipo image-text-to-text construido sobre la arquitectura LFM3 Omni de Liquid AI, con 2.166.928.384 parámetros totales (aproximadamente 2,17 mil millones) y un tamaño de repositorio de 9,1 GB, lo que refleja la presencia de pesos en BF16 junto con artefactos adicionales como GGUF.
 
-El modelo resuelve el problema de adaptar un modelo omni (texto, imagen y audio) a tareas conversacionales e instruccionales mediante un conjunto de datos mixto compuesto por alpaca-cleaned, FineTome-100k y un subconjunto de ASR de LibriSpeech. Su relevancia actual radica en que demuestra el flujo de trabajo de ajuste fino sobre la familia LFM3 de Liquid AI, una arquitectura reciente orientada a modelos compactos multimodales con licencia abierta pero restrictiva.
+El modelo se ha entrenado mediante LoRA con rango 8 fusionada en los pesos finales en BF16, partiendo del modelo base LFM3-Omni-2B. Según la model card, el ajuste se realizó sobre tres conjuntos de datos de instrucciones y conversación (yahma/alpaca-cleaned, mlabonne/FineTome-100k y un subconjunto de ASR de librispeech), con un número muy limitado de ejemplos (hasta 1000 y 50 según el dataset). El ajuste afectó únicamente a la salida de texto; la generación de voz no fue entrenada.
 
-No obstante, la informacion publicada es extremadamente limitada: la model card esta mayoritariamente en ruso, no se documentan resultados de benchmarks, no se especifican los idiomas soportados y no se detalla la longitud de contexto. El modelo tiene 84 descargas y 0 likes en el momento de la consulta, lo que sugiere un uso muy incipiente o experimental.
+Su relevancia radica en que demuestra el flujo de especialización de un modelo omni (texto, imagen y audio) de pequeño tamaño para tareas conversacionales, con licencia LFM Open License v1.0 y compatibilidad con transformers y endpoints. No obstante, la información pública disponible es escasa: no se detallan idiomas soportados, benchmarks ni composición completa del dataset, y la model card contiene inconsistencias de nombre respecto al identificador del repositorio.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LFM3 Omni (transformer multimodal, image-text-to-text) |
-| Parametros totales | 2.166.928.384 (~2,17 B) |
-| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
+| Arquitectura | LFM3 Omni (transformer multimodal, image-text-to-text); detalles internos no disponibles |
+| Parametros totales | 2.166.928.384 (~2,17 mil millones) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16 (pesos publicados); GGUF disponible en el repositorio |
+| Tipos de cuantizacion | no disponible (el repositorio incluye artefactos GGUF; no se detallan variantes) |
 | Idiomas soportados | no disponible |
-| Licencia | LFM Open License v1.0 (lfm1.0) |
-| Formato de pesos | safetensors y GGUF |
+| Licencia | LFM Open License v1.0 (license: other, license_name: lfm1.0) |
+| Formato de pesos | safetensors (BF16) y GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en LiquidAI/LFM3-Omni-2B, un modelo de la familia LFM3 Omni de Liquid AI disenado para procesar entradas multimodales (texto, imagen y audio) y generar salida de texto. La arquitectura exacta (atencion, capas, mecanismos internos) no se detalla en la informacion proporcionada; la model card unicamente indica la etiqueta `lfm3_omni` y el pipeline `image-text-to-text`. El modelo requiere `trust_remote_code=True`, lo que implica que utiliza codigo personalizado (`custom_code`) para su carga.
+El modelo parte de LiquidAI/LFM3-Omni-2B, un modelo multimodal de la familia LFM3 Omni de Liquid AI orientado a entrada image-text-to-text. La información disponible no detalla la arquitectura interna del modelo base (tipo de atención, componentes de audio o visión, mecanismo de fusión multimodal), por lo que estos aspectos quedan como no disponibles. El ajuste fino se realizó mediante LoRA con rango 8, posteriormente fusionada en los pesos en BF16, lo que produce un checkpoint denso estándar.
 
-El ajuste fino se realizo con LoRA de rango 8, posteriormente fusionado en los pesos base en BF16. Los datos de entrenamiento documentados son: `yahma/alpaca-cleaned` (formato instruction, hasta 1000 ejemplos), `mlabonne/FineTome-100k` (formato ShareGPT, hasta 1000 ejemplos) y `hf-internal-testing/librispeech_asr_dummy` (tarea ASR, hasta 50 ejemplos). Segun la model card, solo se ajusto la salida de texto; la generacion de voz no fue entrenada. No se documenta el numero total de tokens de entrenamiento, la composicion exacta del dataset ni si hubo etapas de RLHF o DPO.
+El entrenamiento se llevó a cabo sobre tres fuentes: yahma/alpaca-cleaned (formato instruction, hasta 1000 ejemplos), mlabonne/FineTome-100k (formato ShareGPT, hasta 1000 ejemplos) y hf-internal-testing/librispeech_asr_dummy (ASR, hasta 50 ejemplos). No se especifican hiperparámetros, número de épocas, tokens totales, ni si hubo etapas de RLHF o DPO. La model card indica explícitamente que solo se ajustó la salida de texto y que la generación de voz no fue entrenada, lo que limita el alcance del fine-tune a la rama textual del modelo omni.
 
 ## Capacidades
 
-- Generacion de texto conversacional e instruccional, heredada del ajuste sobre alpaca-cleaned y FineTome-100k.
-- Procesamiento de entradas image-text-to-text (multimodal imagen + texto), segun el pipeline declarado.
-- Capacidad de audio/ASR potencial, dado que el modelo base es omni y se incluyo un subconjunto de LibriSpeech en el ajuste, aunque la generacion de voz no fue entrenada.
-- Soporte de conversacion multi-turno en formato chat (etiqueta `conversational`).
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible; la model card esta en ruso pero no se declaran idiomas oficiales.
-- Modo thinking, vision detallada o audio avanzado: no disponible mas alla de lo indicado por el pipeline.
+- Generación de texto conversacional e instruccional, heredada del ajuste sobre alpaca-cleaned y FineTome-100k.
+- Procesamiento de entrada multimodal image-text-to-text según la pipeline declarada (image-text-to-text).
+- Capacidades omni del modelo base (audio y voz) potencialmente presentes, aunque la generación de voz no fue ajustada y su comportamiento tras el fine-tune no está documentado.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible; no se declaran idiomas en la model card ni en los metadatos.
+- Modo thinking, visión o audio especial: no disponible más allá de la naturaleza omni del modelo base.
 
 ## Casos de uso
 
-- Prototipado de asistentes conversacionales multimodales: el modelo puede gestionar dialogos multi-turno con entradas de imagen y texto, adecuado para pruebas de concepto en entornos de investigacion dado su tamano compacto (~2,17 B) y su disponibilidad en GGUF para despliegue local.
-- Experimentacion academica con ajuste fino de modelos omni: sirve como ejemplo reproducible de LoRA r=8 fusionado en BF16 sobre LFM3-Omni-2B, util para investigadores que quieran replicar el flujo con sus propios datasets.
-- Transcripcion o procesamiento de audio basico: aunque la generacion de voz no fue entrenada, la inclusion de LibriSpeech en el ajuste sugiere capacidad potencial de ASR que puede evaluarse en pipelines de audio a texto.
-- Descripcion de imagenes en entornos con recursos limitados: al ser un modelo de ~2,17 B, puede ejecutarse en GPUs de consumo con cuantizacion GGUF, lo que permite tareas de image-to-text en estaciones de trabajo sin infraestructura de datacenter.
-- Evaluacion comparativa de modelos compactos multimodales: util como baseline en estudios que comparen LFM3-Omni-2B frente a otros modelos pequenos de vision-lenguaje.
-- Demostraciones y docencia: su tamano y su disponibilidad en safetensors y GGUF lo hacen manejable para tutoriales sobre modelos multimodales y ajuste fino con LoRA.
+- Asistente conversacional de texto: el ajuste sobre alpaca-cleaned y FineTome-100k lo hace adecuado para prototipos de chat instruccional y respuestas a preguntas generales, aunque con un volumen de entrenamiento muy reducido.
+- Experimentación con modelos omni de pequeño tamaño: sirve para validar pipelines de inferencia multimodal (texto e imagen) en transformers con `trust_remote_code=True` antes de escalar a modelos mayores.
+- Evaluación de fine-tuning con LoRA: al estar fusionada la LoRA en BF16, es un caso práctico para estudiar el efecto de un ajuste ligero sobre un modelo base omni y comparar con el original.
+- Prototipado de asistentes con entrada de imagen: la pipeline image-text-to-text permite probar descripciones o preguntas sobre imágenes en entornos de investigación.
+- Despliegue ligero en local: con ~2,17 mil millones de parámetros y artefactos GGUF en el repositorio, es viable para pruebas en hardware de consumo mediante llama.cpp u Ollama, siempre que la arquitectura omni esté soportada.
+- Docencia y demostraciones de ajuste fino: útil para ilustrar el flujo completo de preparación de datasets (instruction, ShareGPT, ASR) y fusión de adaptadores en un modelo multimodal.
 
 ## Benchmarks y rendimiento
 
@@ -53,40 +52,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: aproximadamente 4,3 GB solo para pesos (2,17 B x 2 bytes), mas overhead de activaciones y cache KV; en la practica se recomienda al menos 8-12 GB de VRAM para contexto moderado.
-- VRAM estimada en cuantizacion GGUF (Q4): aproximadamente 1,5-2,5 GB para pesos, permitiendo ejecucion en GPUs de consumo.
-- GPU recomendadas: RTX 4090, RTX 3090, A100 o H100 para BF16; GPUs consumer de gama media (RTX 3060 12 GB, RTX 4060 Ti 16 GB) para cuantizaciones GGUF.
-- Cabe en GPU consumer: si, especialmente en cuantizaciones GGUF de 4-8 bits.
-- Opciones de despliegue: transformers con `trust_remote_code=True` y `AutoModelForMultimodalLM`; llama.cpp u Ollama para los pesos GGUF; vLLM y TGI no estan confirmados para esta arquitectura en la informacion disponible.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia en BF16: aproximadamente 4,3 GB solo para pesos (2,17 mil millones de parámetros × 2 bytes), más overhead de activaciones y del procesador multimodal; en la práctica, se recomienda al menos 8 GB.
+- VRAM estimada en cuantización de 8 bits: del orden de 2,2-3 GB para pesos; en 4 bits, del orden de 1,2-2 GB, aunque no se confirman variantes GGUF concretas ni su calidad.
+- GPU recomendadas: para BF16, GPU con 8-16 GB como RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4090; para entornos de servidor, A100 o H100 si se busca throughput alto o lotes mayores.
+- Cabe en GPU de consumo: sí, previsiblemente en modelos con 8 GB o más en BF16 y en GPUs con 4-6 GB usando cuantización, sujeto a que el runtime soporte la arquitectura LFM3 Omni.
+- Opciones de despliegue: transformers con `AutoModelForMultimodalLM` y `trust_remote_code=True` (método documentado); GGUF sugiere compatibilidad potencial con llama.cpp u Ollama, aunque no se confirma; vLLM y TGI no están verificados para esta arquitectura en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| NOVA-Judex-4.8-Omni-ft | ~2,17 B | no disponible | LFM Open License v1.0 | safetensors, GGUF | Ajuste fino multimodal (imagen+texto+audio) |
-| LiquidAI/LFM3-Omni-2B | ~2 B | no disponible | LFM Open License v1.0 | safetensors | Modelo base original de Liquid AI |
-| Otros modelos compactos multimodales | no disponible | no disponible | no disponible | no disponible | Sin datos comparativos en la informacion proporcionada |
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| NOVA-Judex-4.8-Omni-ft | ~2,17 mil millones | no disponible | LFM Open License v1.0 | Fine-tune LoRA de LFM3-Omni-2B; multimodal image-text-to-text |
+| LiquidAI/LFM3-Omni-2B | ~2 mil millones | no disponible | LFM Open License v1.0 | Modelo base sin ajuste; referencia directa |
+| Modelos omni pequeños de otras familias (p. ej. Qwen2.5-Omni-3B, Gemma 3n) | 3-4 mil millones | variable según modelo | licencias propias | Alternativas de tamaño similar; datos concretos no verificados en esta ficha |
 
-La comparativa con alternativas de la misma categoria no puede completarse con rigor porque no se dispone de especificaciones detalladas (contexto, benchmarks, idiomas) ni del modelo base en la informacion proporcionada. Se recomienda consultar la model card de LiquidAI/LFM3-Omni-2B para obtener los datos del modelo original.
+La comparación cuantitativa de rendimiento no está disponible porque no se han publicado benchmarks del modelo ajustado ni del base en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La model card esta redactada principalmente en ruso y no declara los idiomas soportados oficialmente; el rendimiento fuera del ingles y ruso es incierto.
-- No se publican benchmarks, por lo que no hay evidencia cuantitativa del rendimiento tras el ajuste fino.
-- El ajuste se realizo con un volumen muy reducido de datos (hasta 1000 ejemplos por dataset, 50 de ASR), lo que puede provocar sobreajuste y degradacion de capacidades generales del modelo base.
-- La generacion de voz no fue entrenada; el modelo solo produce salida de texto aunque el pipeline sea omni.
-- Riesgo de alucinacion inherente a los modelos de lenguaje de este tamano, agravado por la falta de evaluacion publicada.
-- Licencia LFM Open License v1.0: es una licencia restrictiva con condiciones especificas (consultar el enlace oficial); no es una licencia de codigo abierto permisiva y puede limitar el uso comercial.
-- Requiere `trust_remote_code=True`, lo que implica ejecutar codigo personalizado del autor; revisar el codigo antes de usarlo en produccion.
-- Solo 84 descargas y 0 likes: comunidad practicamente inexistente, sin validacion externa.
-- No se documenta la longitud de contexto, lo que impide planificar casos de uso con ventanas largas.
+- El ajuste se realizó con un número muy reducido de ejemplos (hasta 1000 por dataset y 50 de ASR), lo que limita la generalización y puede provocar sobreajuste a los estilos de esos conjuntos.
+- La generación de voz no fue entrenada; las capacidades de audio del modelo base pueden haberse degradado o no estar alineadas tras el fine-tune.
+- No se declaran idiomas soportados; el comportamiento multilingüe es incierto y no está documentado.
+- No hay benchmarks publicados, por lo que no se puede verificar la calidad frente al modelo base ni frente a alternativas.
+- Riesgo de alucinación inherente a modelos de este tamaño, agravado por el ajuste ligero y la falta de evaluación.
+- La model card menciona el nombre "NOVA-Spark-4" y una ruta de ejemplo distinta ("cortex-ai-nova/NOVA-Spark-4-Omni"), lo que genera ambigüedad sobre el artefacto exacto y conviene verificar los archivos del repositorio antes de usarlo.
+- La licencia LFM Open License v1.0 impone condiciones específicas para uso comercial; es necesario revisar el texto completo en el enlace de licencia antes de desplegar en producción.
+- Requiere `trust_remote_code=True`, lo que implica ejecutar código del repositorio; debe auditarse en entornos sensibles.
+- No se dispone de información sobre sesgos conocidos ni sobre la composición demográfica o lingüística de los datos de entrenamiento.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/cortex-ai-nova/NOVA-Judex-4.8-Omni-ft
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Licencia LFM Open License v1.0: https://huggingface.co/LiquidAI/LICENSE
-- Dataset alpaca-cleaned: https://huggingface.co/datasets/yahma/alpaca-cleaned
-- Dataset FineTome-100k: https://huggingface.co/datasets/mlabonne/FineTome-100k
-- Dataset LibriSpeech ASR dummy: https://huggingface.co/datasets/hf-internal-testing/librispeech_asr_dummy
+- Dataset yahma/alpaca-cleaned: https://huggingface.co/datasets/yahma/alpaca-cleaned
+- Dataset mlabonne/FineTome-100k: https://huggingface.co/datasets/mlabonne/FineTome-100k
+- Dataset hf-internal-testing/librispeech_asr_dummy: https://huggingface.co/datasets/hf-internal-testing/librispeech_asr_dummy

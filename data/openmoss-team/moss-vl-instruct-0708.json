@@ -59,31 +59,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "OpenMOSS-Team/MOSS-VL-Instruct-0708 · Hugging Face",
-      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-VL-Instruct-0708",
-      "snippet": "Limitations and Future Work MOSS-VL-Instruct-0708 is optimized for general offline multimodal understanding. Very dense videos, highly specialized domains, precise small-text OCR, and tasks requiring strict numerical reasoning may still require task-specific prompting, sampling choices, or fine-tuning. We are continuing to improve mathematical reasoning, code reasoning, RL post-training, and ..."
-    },
-    {
-      "title": "GitHub - OpenMOSS/MOSS-VL: MOSS-VL is the core multimodal model series ...",
-      "url": "https://github.com/OpenMOSS/MOSS-VL",
-      "snippet": "MOSS-VL is an open-weight model series for long-form, real-time video understanding, built on a unified cross-attention architecture. All three models are 11B-parameter and open-weight. MOSS-VL-Realtime: real-time interaction over continuous video streams — interruptible at any moment, answering on the fly, and deciding on its own when to respond and when to keep watching. MOSS-VL-Instruct ..."
-    },
-    {
-      "title": "OpenMOSS-Team/MOSS-VL-Instruct-0708 at ... - Hugging Face",
-      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-VL-Instruct-0708/tree/e59a15d590d0cfbaba17455aeed040cbc4f2e28e",
-      "snippet": "like 28 Follow OpenMOSS 1.14k Video-Text-to-Text Transformers Safetensors English Chinese moss_vl feature-extraction SFT Video-Understanding Image-Understanding MOSS-VL OpenMOSS multimodal video vision-language custom_code License:apache-2.0 Model card FilesFiles and versions xet Community 2 Deploy Copy to bucket new Use this model Libraries Transformers How to use OpenMOSS-Team/MOSS-VL ..."
-    },
-    {
-      "title": "MOSS-VL · OpenMOSS",
-      "url": "https://openmoss.ai/MOSS-VL/moss-vl.html",
-      "snippet": "MOSS-VL: A Multimodal Foundation for Video Understanding MOSS-VL is the core multimodal model series in the OpenMOSS ecosystem, dedicated to pushing the frontier of visual understanding. To tackle the challenges inherent to video understanding, our technical roadmap pursues a systematic scaling strategy along three key dimensions."
-    },
-    {
-      "title": "OpenMOSS-Team/MOSS-VL-Instruct-0708 · Hugging Face",
-      "url": "https://hf-p-cfw.fyan.top/OpenMOSS-Team/MOSS-VL-Instruct-0708",
-      "snippet": "Model Performance MOSS-VL-Instruct-0708 is intended for offline multimodal evaluation across visual perception, multimodal reasoning, OCR/document understanding, and video understanding."
-    }
-  ]
+  "sources": []
 }

@@ -1,89 +1,77 @@
 # brainworkup/LFM3-VL-2B-MLX-oQ8e
 
 ## Resumen
+LFM3-VL-2B-MLX-oQ8e es una cuantización mixta del modelo multimodal LiquidAI/LFM3-VL-2B, publicada por el usuario brainworkup. El modelo base es un modelo de lenguaje y visión de Liquid AI, con aproximadamente 1.918 millones de parámetros, orientado a tareas que combinan comprensión de imágenes y generación de texto. Esta versión concreta está pensada para ejecutarse en el stack MLX de Apple, lo que la hace relevante para desarrolladores que quieren desplegar un modelo visión-lenguaje en hardware Apple Silicon sin renunciar a una precisión cercana a la de los pesos originales.
 
-LFM3-VL-2B-MLX-oQ8e es una cuantización mixta del modelo multimodal LFM3-VL-2B, publicada por el usuario brainworkup en Hugging Face. El checkpoint original pertenece a la familia LFM3 (Liquid Foundation Models) de Liquid AI, e integra un modelo de lenguaje de aproximadamente 1,73 mil millones de parámetros con un codificador visual de unos 189 millones de parámetros, sumando 1.918.181.888 parámetros totales según los safetensors del repositorio.
+La cuantización se ha realizado con la herramienta oQe (oMLX v0.7.3), que aplica precisión mixta: la mayor parte de los pesos (90,107%) se almacenan en affine 8-bit con grupos de 64, mientras que un 9,893% se mantiene en BF16. El resultado es un checkpoint de 2,064 GiB con un promedio efectivo de 9,242 bits por peso, un compromiso que reduce el tamaño respecto al BF16 original manteniendo en BF16 las capas presumiblemente más sensibles.
 
-Esta versión concreta ha sido cuantizada con la herramienta oQ (oMLX v0.7.3), que aplica cuantización de precisión mixta: la mayor parte de los pesos (90,1 %) se almacena en affine 8-bit con grupo de 64, mientras que un 9,9 % permanece en BF16. El resultado es un checkpoint con un promedio efectivo de 9,242 bits por peso y un tamaño de 2,064 GiB, lo que facilita su ejecución en hardware Apple Silicon mediante MLX.
+Al tratarse de una cuantización derivada y no de un modelo original, su interés es fundamentalmente práctico: permite ejecutar un VLM de 2B en entornos MLX con un coste de memoria contenido. La información pública sobre el modelo base (licencia, idiomas, benchmarks) no está disponible en los datos proporcionados, por lo que conviene consultar la ficha de LiquidAI/LFM3-VL-2B antes de usarlo en producción.
 
-El interés de esta ficha radica en que combina dos tendencias relevantes: los modelos multimodales compactos (~2B parámetros) aptos para inferencia local, y los formatos de cuantización optimizados para el framework MLX de Apple. No obstante, la información publicada por el autor es muy limitada: no hay model card del modelo base, ni datos de entrenamiento, benchmarks o licencia declarada en el repositorio, lo que condiciona cualquier evaluación rigurosa.
+## Especificaciones tecnicas
 
-## Especificaciones técnicas
-
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (modelo de lenguaje + codificador visual); detalles no disponibles |
-| Parámetros totales | 1.918.181.888 (~1,92 B) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo base LFM3-VL, visión-lenguaje; familia lfm3_vl) |
+| Parametros totales | 1.918.181.888 (1,918B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | Affine 8-bit grupo 64 (90,1 % de pesos) + BF16 (9,9 %); promedio 9,242 bits/peso |
+| Tipos de cuantizacion | Affine 8-bit con grupo 64 (90,107% de los pesos) y BF16 (9,893%); promedio efectivo 9,242 bits/peso |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (MLX, custom_code) |
+| Formato de pesos | safetensors (librería mlx, custom_code) |
 
 ## Arquitectura y entrenamiento
+El checkpoint es una cuantización del modelo LiquidAI/LFM3-VL-2B, un modelo de la familia lfm3_vl que combina un componente de lenguaje (1,729B parámetros lógicos) y un componente de visión (0,189B parámetros lógicos). La arquitectura interna detallada del modelo base no se especifica en la información disponible; la etiqueta de la familia y la presencia de un módulo de visión confirman que se trata de un modelo multimodal, pero no se documenta aquí si emplea atención estándar, atención lineal u otra variante propietaria de Liquid AI.
 
-El checkpoint es una cuantización del modelo LFM3-VL-2B, un modelo multimodal que combina un backbone de lenguaje de 1,729 mil millones de parámetros con un módulo de visión de 189 millones de parámetros. La naturaleza exacta del transformer (atención completa, atención lineal, híbrido SSM, etc.) no está documentada en la información disponible; la familia LFM de Liquid AI ha explorado arquitecturas híbridas en otras generaciones, pero no se confirma aquí.
-
-El proceso de cuantización aplicado por oQ (oMLX v0.7.3) es de precisión mixta: identifica capas o tensores sensibles y los mantiene en BF16 (0,190 B de parámetros, 0,353 GiB) mientras cuantiza el resto a affine 8-bit con grupo de 64 (1,728 B de parámetros, 1,710 GiB). No se dispone de información sobre los datos de entrenamiento del modelo base, el número de tokens, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO.
+El proceso de cuantización lo realiza oQe (oMLX v0.7.3) con precisión mixta: los pesos del modelo de lenguaje (1,729B) se almacenan en affine 8-bit con grupos de 64, con 8,50 bits/peso efectivos, mientras que el módulo de visión (0,189B) se conserva íntegramente en BF16, con 16,00 bits/peso. No se dispone de información sobre los datos de entrenamiento del modelo base, el número de tokens utilizados, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
 ## Capacidades
-
-- Generación de texto y razonamiento en lenguaje natural (heredadas del backbone LFM3 de 1,73 B).
-- Comprensión de imágenes y respuesta a preguntas visuales (VQA) gracias al codificador visual de 189 M de parámetros.
-- Descripción de imágenes y extracción de información visual en texto.
-- Conversación multimodal de uno o varios turnos (la longitud de contexto no está documentada).
-- Capacidades multilingües: no confirmadas en la información disponible.
-- Tool calling / function calling: no disponible.
-- Modo de razonamiento explícito (thinking): no disponible.
-- Soporte de audio: no disponible.
+- Generación de texto y comprensión de imágenes, al tratarse de un modelo visión-lenguaje (VL).
+- Procesamiento conjunto de entradas visuales y textuales para tareas de descripción, respuesta a preguntas sobre imágenes y similares.
+- Ejecución en el stack MLX, orientada a hardware Apple Silicon.
+- Capacidades de tool calling, agentes o razonamiento multi-paso: no disponibles en la información proporcionada.
+- Cobertura multilingüe: no disponible; no se especifican idiomas soportados.
+- Modo thinking, audio u otras capacidades especiales: no disponibles.
 
 ## Casos de uso
-
-- Asistente visual local en Mac: al estar empaquetado en formato MLX y ocupar solo 2,064 GiB, puede ejecutarse en un Mac con Apple Silicon (16 GB o más) para tareas de descripción de imágenes y VQA sin conexión a internet.
-- Prototipado de aplicaciones multimodales en el ecosistema Apple: útil para desarrolladores que quieran validar pipelines de visión-lenguaje integrados en apps macOS/iOS mediante MLX antes de escalar a modelos mayores.
-- Extracción de texto e información de capturas y documentos: el modelo puede procesar imágenes y devolver descripciones o respuestas estructuradas, adecuado para automatizar la digitalización de formularios sencillos en local.
-- Moderación y etiquetado de imágenes a pequeña escala: para clasificar o describir lotes de imágenes en entornos con requisitos de privacidad, al no requerir envío de datos a la nube.
-- Educación e investigación: como banco de pruebas ligero para estudiar el efecto de la cuantización mixta 8-bit/BF16 en tareas multimodales sobre hardware de consumo.
-- Evaluación comparativa de cuantizaciones: sirve como referencia para medir la degradación de calidad frente al checkpoint original LFM3-VL-2B en tareas de VQA, dado que el autor documenta con precisión la distribución de bits.
+- Descripción automática de imágenes en aplicaciones macOS o iOS: el modelo puede recibir una imagen y generar una descripción textual, ejecutándose localmente vía MLX en equipos Apple Silicon, lo que evita enviar datos a la nube.
+- Respuesta a preguntas sobre documentos escaneados: útil para extraer información de capturas, formularios o diagramas en flujos de trabajo de escritorio, con la ventaja de la inferencia local.
+- Asistentes de accesibilidad: generación de descripciones de contenido visual para personas con discapacidad visual, integrado en aplicaciones nativas de Apple.
+- Moderación y etiquetado de contenido visual: clasificación y descripción de imágenes en pipelines internos que requieren procesamiento local por privacidad.
+- Prototipado de investigación en VLMs: al ser una cuantización de 2,064 GiB, permite experimentar con un modelo visión-lenguaje en un portátil Apple sin GPU dedicada.
+- Herramientas de productividad con captura de pantalla: análisis de capturas para generar resúmenes o extraer texto estructurado en aplicaciones de escritorio.
+- Evaluación de técnicas de cuantización mixta: sirve como referencia para comparar el impacto de oQe frente a otras cuantizaciones del mismo modelo base.
 
 ## Benchmarks y rendimiento
-
 No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
-
-- VRAM/RAM estimada: ~2,1 GiB para los pesos en el formato cuantizado; se recomienda al menos 4-6 GiB de memoria unificada para margen de activaciones y contexto.
-- GPU recomendadas: Apple Silicon (M1/M2/M3/M4) con memoria unificada; el formato MLX no está pensado para CUDA.
-- Compatibilidad con GPU de consumo: sí en Mac con 8 GB o más de memoria unificada, aunque 16 GB es el mínimo cómodo para contexto amplio.
-- Opciones de despliegue: MLX (mlx-lm / mlx-vlm) y oMLX; no compatible de forma nativa con vLLM, llama.cpp, Ollama ni TGI sin conversión previa.
+- VRAM/unified memory estimada: al menos 2,064 GiB solo para los pesos; conviene reservar margen adicional para el contexto y los estados de atención, por lo que se recomienda un mínimo de 4 GB de memoria unificada disponible.
+- GPU recomendadas: hardware Apple Silicon con soporte MLX (series M1, M2, M3, M4); no aplica a GPU NVIDIA o AMD en este formato.
+- Cabe en GPU de consumo: sí, en equipos Apple Silicon con 8 GB o más de memoria unificada; el tamaño reducido del checkpoint lo hace viable en portátiles.
+- Opciones de despliegue: MLX (librería mlx) y el ecosistema oMLX; no se garantiza compatibilidad directa con vLLM, llama.cpp, Ollama o TGI, dado que el formato es específico de MLX.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| LFM3-VL-2B-MLX-oQ8e | ~1,92 B | no disponible | no disponible | safetensors (MLX) | Hugging Face |
-| LFM3-VL-2B (original) | ~1,92 B | no disponible | no disponible | no disponible | no disponible en la información |
-| Qwen2-VL-2B | ~2,2 B | 32k (según variante) | Apache 2.0 (variantes) | safetensors, GGUF | Hugging Face |
-| SmolVLM-2B | ~2,2 B | 8k (aprox.) | Apache 2.0 | safetensors | Hugging Face |
+| LFM3-VL-2B-MLX-oQ8e (este) | 1,918B | no disponible | safetensors MLX, 8-bit mixto | no disponible | Cuantización MLX de precisión mixta |
+| LiquidAI/LFM3-VL-2B | 1,918B (aprox.) | no disponible | safetensors | no disponible | Modelo base en BF16 |
+| Otras cuantizaciones del mismo base | 1,918B | no disponible | variable | no disponible | No se dispone de datos específicos |
 
-La comparación con alternativas de la misma categoría (modelos visión-lenguaje de ~2 B) es limitada porque no se dispone de benchmarks ni licencia del modelo evaluado. Los datos de Qwen2-VL-2B y SmolVLM-2B se incluyen a modo de referencia general y deben verificarse en sus respectivas model cards.
+No se dispone de información suficiente para comparar con alternativas de otros autores en la misma categoría.
 
 ## Limitaciones y advertencias
-
-- No se declara licencia en el repositorio: el uso comercial queda sin autorización explícita y requiere contactar con el autor o con Liquid AI.
-- No hay model card del modelo base ni información sobre sesgos, datos de entrenamiento o evaluación de seguridad.
-- La cuantización mixta a 8-bit puede degradar ligeramente la calidad en tareas visuales finas (OCR, detalles pequeños) frente al checkpoint BF16 original.
-- El formato MLX limita el despliegue a hardware Apple Silicon; no es portable a CUDA sin conversión.
-- Riesgo de alucinación inherente a modelos de ~2 B, especialmente en descripciones de imágenes complejas o texto dentro de imágenes.
-- Idiomas soportados no confirmados; el rendimiento en castellano no está verificado.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: sin validación comunitaria.
-- El campo `custom_code` implica que la carga requiere confiar en código remoto del repositorio; conviene auditar antes de ejecutarlo en producción.
+- Al ser una cuantización de 8-bit mixta, puede haber una degradación leve de calidad respecto al modelo base en BF16, especialmente en tareas que dependen de los pesos cuantizados del módulo de lenguaje.
+- El módulo de visión se mantiene en BF16, lo que preserva su precisión, pero el conjunto sigue siendo una aproximación al modelo original.
+- No se dispone de información sobre sesgos, riesgo de alucinación ni limitaciones idiomáticas del modelo base.
+- La licencia no está especificada en la información disponible; es imprescindible verificar la licencia de LiquidAI/LFM3-VL-2B antes de un uso comercial.
+- El formato es específico de MLX: no es directamente portable a otros runtimes sin conversión.
+- El autor del checkpoint es un usuario independiente (brainworkup), no Liquid AI; la responsabilidad sobre la calidad de la cuantización recae en el publicador.
+- No se documentan limitaciones de contexto ni de idioma; conviene consultar la ficha del modelo base.
 
 ## Enlaces
-
-- Hugging Face: https://huggingface.co/brainworkup/LFM3-VL-2B-MLX-oQ8e
-- Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
-- Repositorio MLX: https://github.com/ml-explore/mlx
-- Liquid AI (familia LFM): https://www.liquid.ai/
+- Modelo en Hugging Face: https://huggingface.co/brainworkup/LFM3-VL-2B-MLX-oQ8e
+- Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
+- Herramienta de cuantización oQe (oMLX): https://github.com/jundot/omlx

@@ -2,89 +2,90 @@
 
 ## Resumen
 
-Chat-bit-1.7B-Quant es un modelo conversacional publicado por el usuario netizen4-bit en Hugging Face, distribuido exclusivamente en formato GGUF para su uso con llama.cpp. Aunque el nombre comercial indica 1.7B, los pesos reales en safetensors suman 1.543.714.304 parametros, y el unico fichero publicado se denomina `Qwen2.5-1.5B-Instruct.Q8_0.gguf`, lo que apunta a que se trata de un fine-tuning de Qwen2.5-1.5B-Instruct convertido a GGUF con la herramienta Unsloth. La model card es extremadamente escueta y no documenta el dataset de entrenamiento, la licencia ni los idiomas soportados.
+Chat-bit-1.7B-Quant es un modelo conversacional derivado de Qwen2.5-1.5B-Instruct, afinado y convertido a formato GGUF por el usuario netizen4-bit mediante Unsloth. Se distribuye como un único archivo cuantizado en Q4_K_M, pensado para ejecutarse con llama.cpp y Ollama en hardware modesto. Aunque el nombre comercial indica "1.7B", los pesos en safetensors declaran 1.543.714.304 parámetros, es decir, aproximadamente 1,54 mil millones, coherentes con la base Qwen2.5-1.5B.
 
-El modelo resuelve el caso de uso de un asistente conversacional ligero que puede ejecutarse en hardware de consumo, con un unico fichero cuantizado en Q8_0 (aproximadamente 1.5 GB de pesos) y un Modelfile de Ollama incluido para despliegue rapido. Su relevancia practica es limitada: no hay benchmarks publicados, no hay licencia declarada y el repositorio no tiene descargas ni likes en el momento de la consulta, lo que lo situa como un experimento personal mas que como un modelo listo para produccion.
+El modelo hereda la arquitectura transformer decoder-only de Qwen2.5, con atención de tipo causal y soporte de plantillas de chat mediante Jinja (de ahí el flag `--jinja` en los ejemplos de uso). Su interés práctico radica en ofrecer un punto de partida ligero y desplegable localmente para tareas conversacionales, con un único artefacto GGUF y un Modelfile de Ollama incluido, lo que reduce la fricción de puesta en marcha frente a alternativas que requieren conversión manual.
 
-La informacion disponible no permite verificar la calidad del fine-tuning ni el proceso de alineacion. Cualquier evaluacion seria requiere descargar el GGUF y ejecutar pruebas propias contra el modelo base Qwen2.5-1.5B-Instruct.
+La información pública es muy escasa: no se documentan datos de entrenamiento, hiperparámetros, licencia, idiomas ni resultados de evaluación. La model card se limita a describir el proceso de conversión con Unsloth y a mostrar comandos de ejecución. Por tanto, esta ficha distingue explícitamente entre lo declarado por el autor y lo que no está disponible.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivada de Qwen2, segun tags del repo) |
-| Parametros totales | 1.543.714.304 (safetensors); el fichero GGUF publicado se etiqueta como 1.5B |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la model card; el modelo base Qwen2.5-1.5B-Instruct soporta 32.768 tokens, pero no se confirma para este fine-tuning |
-| Tipos de cuantizacion | Q8_0 (unico fichero publicado) |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (`Qwen2.5-1.5B-Instruct.Q8_0.gguf`); tamano del repo 4.9 GB |
+| Arquitectura | Transformer decoder-only (base Qwen2.5, según tags y nombre de archivo) |
+| Parámetros totales | 1.543.714.304 (~1,54 B) |
+| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible (no declarada en la model card) |
+| Tipos de cuantización | Q4_K_M (único archivo publicado) |
+| Idiomas soportados | No disponible |
+| Licencia | No disponible |
+| Formato de pesos | GGUF (`Qwen2.5-1.5B-Instruct.Q4_K_M.gguf`); repo de 6,9 GB |
+| Tag de pipeline | No disponible |
+| Compatibilidad | llama.cpp, Ollama, endpoints compatibles |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only de la familia Qwen2, tal como indican los tags del repositorio (`qwen2`) y el nombre del fichero de pesos, que referencia explicitamente Qwen2.5-1.5B-Instruct. No hay informacion sobre el numero de capas, dimensiones ocultas, cabezas de atencion ni sobre el uso de GQA o RoPE, mas alla de lo heredado del modelo base. El autor indica que el fine-tuning y la conversion a GGUF se realizaron con Unsloth, lo que sugiere un entrenamiento con LoRA o QLoRA sobre el modelo instruct de Qwen2.5.
+El modelo parte de Qwen2.5-1.5B-Instruct, un transformer decoder-only denso con atención causal estándar y RoPE para codificación posicional. Sobre esa base, el autor aplicó un fine-tuning y posterior conversión a GGUF usando Unsloth, una librería optimizada para entrenamiento y exportación de modelos con menor consumo de memoria. La model card no detalla el conjunto de datos de ajuste, el número de tokens, la composición del corpus ni si se aplicaron técnicas de alineación como RLHF o DPO.
 
-No se documenta el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas de RLHF, DPO o preferencia. Tampoco se detalla ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, modos de razonamiento). El unico artefacto verificable es el fichero Q8_0 y un Modelfile de Ollama incluido en el repositorio.
+No se documentan innovaciones técnicas propias más allá del pipeline de Unsloth y de la inclusión de un Modelfile de Ollama. El soporte de plantillas Jinja en llama.cpp (`--jinja`) sugiere que el modelo conserva el formato de chat de Qwen2.5, pero no se especifica si se modificó la plantilla durante el fine-tuning. Tampoco hay información sobre decodificación especulativa, atención lineal ni otras optimizaciones.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, heredada del modelo base Qwen2.5-1.5B-Instruct.
-- Razonamiento basico y respuesta a instrucciones en formato chat.
-- Soporte de plantilla Jinja (`--jinja` en llama-cli), lo que permite aplicar la plantilla de chat de Qwen2.5.
-- Compatibilidad con llama.cpp y con endpoints compatibles (tag `endpoints_compatible`).
-- Despliegue en Ollama mediante el Modelfile incluido.
-- Capacidades multilingues: no documentadas en la model card; el modelo base Qwen2.5 soporta varios idiomas, pero no se confirma para este fine-tuning.
-- Tool calling, function calling, agentes, vision, audio o thinking mode: no documentados; no se pueden asumir.
+- Generación de texto conversacional multi-turno, heredada de la base Qwen2.5-1.5B-Instruct.
+- Razonamiento básico y respuesta a instrucciones, condicionado al tamaño reducido del modelo.
+- Generación de código y matemáticas a nivel elemental, sin datos de evaluación que lo confirmen.
+- Soporte de plantillas de chat mediante Jinja en llama.cpp (`--jinja`).
+- Despliegue en Ollama mediante Modelfile incluido.
+- Capacidades multilingües: no documentadas; se desconoce qué idiomas cubre el fine-tuning.
+- Tool calling / function calling: no documentado.
+- Capacidades de agente y razonamiento multi-paso: no documentadas.
+- Modo thinking, visión o audio: no disponible.
 
 ## Casos de uso
 
-- Prototipado rapido de asistentes conversacionales en local: el fichero Q8_0 de aproximadamente 1.5 GB cabe en cualquier GPU de consumo con 4 GB o mas de VRAM, y permite validar flujos de chat sin coste de API.
-- Despliegue en Ollama para pruebas internas: el Modelfile incluido permite levantar el modelo con `ollama create` y `ollama run` en minutos, util para demos y entornos de desarrollo.
-- Sustitucion de un modelo base en pipelines llama.cpp existentes: al ser un GGUF compatible con `llama-cli --jinja`, se puede integrar en scripts que ya usan llama.cpp sin cambios de infraestructura.
-- Generacion de texto offline en dispositivos con recursos limitados: al ser un modelo de 1.5B cuantizado a Q8_0, es viable en portatiles con GPU integrada o en CPU con llama.cpp, para tareas de resumen o redaccion asistida.
-- Experimentacion con fine-tuning ligero: sirve como referencia para comparar el efecto de un LoRA sobre Qwen2.5-1.5B-Instruct en tareas conversacionales concretas.
-- Base para evaluacion de calidad de fine-tunings comunitarios: util en investigacion para medir deriva respecto al modelo base en tareas de instruccion, siempre que se ejecuten benchmarks propios dado que no hay datos publicados.
+- Asistente conversacional local en equipos de sobremesa: el tamaño de ~1,54 B en Q4_K_M permite ejecutarlo en CPU o GPU de gama baja con llama.cpp, adecuado para prototipos de chatbot sin conexión.
+- Pruebas de integración con Ollama: el Modelfile incluido permite levantar el modelo con un solo comando y validar flujos de chat en entornos de desarrollo.
+- Generación de respuestas cortas en aplicaciones embebidas: su huella reducida lo hace viable en dispositivos con poca memoria, siempre que se acepte la pérdida de calidad frente a modelos mayores.
+- Filtrado y clasificación de texto sencilla: tareas de etiquetado o resumen breve donde no se requiere razonamiento profundo.
+- Base para fine-tuning posterior: al ser un modelo pequeño en GGUF, sirve como referencia para experimentar con Unsloth y comparar pipelines de cuantización.
+- Educación y demostraciones: útil para explicar el flujo completo de ajuste, conversión a GGUF y despliegue con llama.cpp u Ollama en talleres y cursos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1.6-2.0 GB para el fichero Q8_0 (1.5B parametros a 8 bits) mas overhead de contexto KV cache; con contexto de 8K tokens se puede estimar en 2.5-3.5 GB en total.
-- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM (RTX 3050, RTX 4060, RTX 4090, A100, H100); el modelo es sobredimensionado para GPUs de datacenter.
-- Cabe en GPU de consumo: si, en practicamente todas las GPU discretas modernas y en muchas integradas con suficiente memoria compartida.
-- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), Ollama (Modelfile incluido), y cualquier runtime compatible con GGUF (koboldcpp, LM Studio). No hay ficheros para vLLM ni TGI en el repositorio.
+- VRAM estimada para inferencia: el archivo Q4_K_M ocupa aproximadamente 1 GB, por lo que la inferencia requiere del orden de 1-2 GB de memoria, dependiendo del contexto y del backend.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; tarjetas como RTX 3060, RTX 4060 o superiores son suficientes. También funciona en CPU.
+- Cabe en GPU de consumo: sí, en la práctica totalidad de GPU consumer actuales e incluso en sistemas integrados con memoria compartida.
+- Opciones de despliegue: llama.cpp (`llama-cli`), Ollama (Modelfile incluido) y endpoints compatibles con la API de llama.cpp.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Chat-bit-1.7B-Quant | 1.54B | no disponible | no disponible | GGUF Q8_0 | Hugging Face, 0 descargas |
-| Qwen2.5-1.5B-Instruct | 1.54B | 32.768 tokens | Apache 2.0 | safetensors, GGUF, AWQ | Hugging Face, ampliamente usado |
-| Llama 3.2 1B Instruct | 1.24B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | Hugging Face, ampliamente usado |
-| SmolLM2-1.7B-Instruct | 1.71B | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, ampliamente usado |
+| Chat-bit-1.7B-Quant | ~1,54 B | No disponible | No disponible | GGUF (Q4_K_M) | Hugging Face (284 descargas) |
+| Qwen2.5-1.5B-Instruct | ~1,5 B | No disponible en esta ficha | No disponible en esta ficha | Safetensors, GGUF | Hugging Face (modelo base) |
+| SmolLM2-1.7B-Instruct | ~1,7 B | No disponible en esta ficha | No disponible en esta ficha | Safetensors, GGUF | Hugging Face |
 
-La comparativa se limita a specs publicas de los modelos alternativos; no hay datos de rendimiento de Chat-bit-1.7B-Quant para contrastar calidad. Frente al modelo base Qwen2.5-1.5B-Instruct, la unica ventaja documentada es la disponibilidad en GGUF Q8_0 y el Modelfile de Ollama, que el propio modelo base ya ofrece en su repositorio oficial.
+La comparación se limita a datos estructurales; no hay benchmarks publicados para Chat-bit-1.7B-Quant que permitan contrastar calidad frente a sus alternativas.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: no se puede asumir uso comercial permitido; hay que contactar con el autor o tratar el modelo como no licenciado para produccion.
-- Sin benchmarks ni evaluacion publicada: no hay evidencia de que el fine-tuning mejore al modelo base; puede degradarlo en tareas generales.
-- Model card practicamente vacia: no se documenta dataset, idiomas, contexto efectivo ni proceso de alineacion.
-- Riesgo de alucinacion: inherente a un modelo de 1.5B; la capacidad de razonamiento y factualidad es limitada en comparacion con modelos de mayor tamano.
-- Contexto no confirmado: aunque el modelo base soporta 32K tokens, el fine-tuning y la configuracion del GGUF pueden haber reducido la ventana efectiva; no hay dato verificado.
-- Idiomas no documentados: no se puede garantizar calidad fuera del ingles sin pruebas propias.
-- Repositorio sin traccion (0 descargas, 0 likes): no hay comunidad que valide el modelo ni issues que documenten problemas.
-- Nombre confuso: la etiqueta "1.7B" no coincide con los 1.54B reales ni con el nombre del fichero (1.5B), lo que puede indicar un fine-tuning sobre Qwen2.5-1.5B con renombrado comercial.
-- Sin soporte de vLLM ni TGI: el despliegue en servidores de alta concurrencia requiere llama.cpp o conversiones adicionales.
+- Licencia no declarada: no se puede confirmar si el uso comercial está permitido; conviene contactar con el autor antes de desplegarlo en producción.
+- Idiomas no documentados: se desconoce si el fine-tuning conserva el multilingüismo de la base o lo ha reducido.
+- Sin benchmarks: no hay evidencia publicada de calidad, por lo que las afirmaciones sobre capacidades son inferencias a partir de la base Qwen2.5.
+- Riesgo de alucinación: esperable en un modelo de ~1,5 B, especialmente en tareas de razonamiento o datos factuales.
+- Contexto no declarado: no se puede planificar el uso en conversaciones largas sin conocer la ventana real.
+- Modelo con muy poca tracción (0 likes, 284 descargas): menor probabilidad de mantenimiento y soporte comunitario.
+- Un único archivo cuantizado (Q4_K_M): no hay opciones de mayor o menor precisión para ajustar calidad frente a memoria.
+- No se documentan sesgos específicos; al desconocerse el dataset de ajuste, no es posible evaluarlos.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/netizen4-bit/Chat-bit-1.7B-Quant
-- Unsloth (herramienta de fine-tuning y conversion): https://github.com/unslothai/unsloth
-- Modelo base presumible, Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
-- llama.cpp (runtime GGUF): https://github.com/ggml-org/llama.cpp
-- Ollama: https://ollama.com
+- Unsloth (herramienta de fine-tuning y conversión): https://github.com/unslothai/unsloth
+- llama.cpp (runtime de inferencia GGUF): https://github.com/ggml-org/llama.cpp
+- Ollama (despliegue con Modelfile): https://ollama.com

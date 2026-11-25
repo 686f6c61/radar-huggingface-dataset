@@ -2,51 +2,53 @@
 
 ## Resumen
 
-DistilQwen3-1.7B-uncensored-GGUF es la variante cuantizada en formato GGUF del modelo DistilQwen3-1.7B-uncensored, desarrollado por Convergent Intelligence LLC (Research Division) bajo el identificador de Hugging Face `reaperdoesntknow`. Se trata de un modelo de lenguaje de 2.031.739.904 parametros (aproximadamente 2,03 mil millones) derivado por destilacion de conocimiento a partir de Qwen3-30B-A3B, un modelo Mixture-of-Experts de 30 mil millones de parametros totales con 3 mil millones activos. El objetivo declarado es trasladar capacidades del profesor a un modelo pequeno orientado a despliegue en el borde (edge) y en CPU.
+DistilQwen3-1.7B-uncensored-GGUF es la variante cuantizada en formato GGUF del modelo DistilQwen3-1.7B-uncensored, desarrollado por Convergent Intelligence LLC (Research Division) bajo el identificador de Hugging Face `reaperdoesntknow`. Se trata de un modelo de lenguaje conversacional de 2.031.739.904 parametros totales (aproximadamente 2,03 mil millones), destilado a partir de un profesor de mayor tamano (Qwen3-30B-A3B, segun la documentacion del portfolio del autor) y ajustado para eliminar restricciones de rechazo, orientado a despliegue en entornos de borde (edge) y hardware de consumo.
 
-La relevancia de esta ficha reside en su enfoque metodologico: el autor documenta un pipeline de destilacion basado en lo que denomina "Discrepancy Calculus" y "Topological Knowledge Distillation", con un operador de discrepancia denotado como $Df(x)$ y una descomposicion BV (variacion acotada). Segun la model card, estas fronteras estructurales detectadas durante el entrenamiento quedan codificadas en los pesos y se preservan tras la cuantizacion, de modo que no dependerian de la precision numerica del formato.
+El modelo parte de la familia Qwen3 de Alibaba, concretamente de la variante de 1.7B, y aplica un pipeline de destilacion de conocimiento que el autor denomina "Topological Knowledge Distillation" y "Discrepancy Calculus" (DISC), descrito en la model card del modelo fuente. Esta version GGUF preserva esas caracteristicas estructurales en los pesos cuantizados, de modo que el comportamiento aprendido no depende de la precision numerica original en BF16.
 
-El modelo se distribuye en formato GGUF, lo que facilita su ejecucion con llama.cpp y herramientas derivadas (Ollama, LM Studio, etc.) en hardware sin GPU dedicada. La etiqueta "uncensored" indica que el autor ha reducido o eliminado los filtros de rechazo habituales del modelo base, lo que tiene implicaciones directas para su uso en produccion. La licencia es Apache 2.0 y el repositorio ocupa 9,0 GB, lo que sugiere la presencia de multiples niveles de cuantizacion.
+Su relevancia actual radica en tres factores: el tamano reducido (apto para GPU de consumo e incluso CPU), la licencia Apache 2.0 (permisiva para uso comercial) y la disponibilidad en GGUF, lo que permite ejecutarlo con llama.cpp, Ollama y otros runners compatibles. No obstante, la informacion publica es escasa: no se detallan idiomas soportados, benchmarks ni composicion del dataset de entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer derivado de Qwen3 (destilado de Qwen3-30B-A3B); detalles completos no disponibles en la informacion proporcionada |
-| Parametros totales | 2.031.739.904 (aproximadamente 2,03 mil millones) |
-| Parametros activos | No aplica (el modelo destilado no es MoE; el profesor Qwen3-30B-A3B si lo era, con 3B activos) |
+| Arquitectura | Transformer decoder-only (derivada de Qwen3-1.7B); detalles completos no disponibles |
+| Parametros totales | 2.031.739.904 (aproximadamente 2,03B) |
+| Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Multiples variantes GGUF (el tamano del repo, 9,0 GB, implica varios niveles); niveles concretos no disponibles |
+| Tipos de cuantizacion | GGUF (multiples niveles de cuantizacion; niveles concretos no disponibles) |
 | Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (repo); el modelo base se distribuye presumiblemente en safetensors/BF16 |
+| Formato de pesos | GGUF (repo de 9,0 GB); el modelo base en safetensors esta en un repo separado |
 
 ## Arquitectura y entrenamiento
 
-El modelo es el resultado de un proceso de destilacion de conocimiento (knowledge distillation) desde Qwen3-30B-A3B hacia un transformer denso de aproximadamente 2,03 mil millones de parametros. El profesor es un modelo Mixture-of-Experts con 30 mil millones de parametros totales y 3 mil millones activos por token, lo que lo convierte en un profesor de alta capacidad pero costoso de desplegar. El alumno resultante es denso y mucho mas ligero, pensado para inferencia en el borde.
+El modelo es un transformer decoder-only derivado de Qwen3-1.7B, con 2.031.739.904 parametros. Sobre esa base, el autor aplica un proceso de destilacion de conocimiento desde un profesor mayor (Qwen3-30B-A3B segun la documentacion del portfolio) mediante una metodologia propia denominada "Topological Knowledge Distillation", basada en un operador de discrepancia \(Df(x)\) y una descomposicion BV (variacion acotada) que, segun el autor, detecta fronteras estructurales en el espacio de representaciones durante el entrenamiento. El ajuste "uncensored" implica un entrenamiento adicional orientado a reducir los rechazos del modelo base ante peticiones sensibles.
 
-La model card describe un marco matematico propio: "Discrepancy Calculus" (calculo de discrepancias) y "Topological Knowledge Distillation" (destilacion topologica del conocimiento), con un operador de discrepancia $Df(x)$ y una descomposicion en espacios de variacion acotada (BV). Segun el autor, este enfoque identifica fronteras estructurales en el espacio de representaciones del profesor y las transfiere al alumno, de forma que la cuantizacion posterior no las degrada porque estan "horneadas" en los pesos. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron etapas de RLHF o DPO. Tampoco se detalla la innovacion de decodificacion o atencion mas alla de lo heredado de la familia Qwen3.
+La model card indica que esta variante GGUF conserva las caracteristicas estructurales aprendidas porque estas quedan "grabadas" en los pesos y no dependen de la precision. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo RLHF o DPO. El autor publica un documento de metodologia bajo el DOI 10.57967/hf/8165 titulado "Structure Over Scale".
 
 ## Capacidades
 
-- Generacion de texto conversacional: el tag `conversational` y la naturaleza del modelo base Qwen3 apuntan a un uso principal como asistente de chat.
-- Razonamiento y conocimiento general: heredado por destilacion del profesor Qwen3-30B-A3B, aunque con la perdida de capacidad inherente a la reduccion de 30B a 2B parametros.
-- Generacion de codigo: la familia del autor incluye variantes especificas de codigo (`Qwen3-1.7B-Coder-Distilled-SFT`), pero esta variante concreta no declara capacidades de codigo en la informacion disponible.
-- Modo "uncensored": el autor ha reducido los filtros de rechazo, por lo que el modelo responde a peticiones que el base rechazaria; esto no implica capacidades adicionales, solo menor alineacion.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponibles; el modelo base Qwen3 es multilingue, pero no se confirma el grado de preservacion tras la destilacion.
-- Capacidades especiales (vision, audio, thinking mode): no disponibles.
+- Generacion de texto conversacional multi-turno (tag `conversational` en Hugging Face).
+- Razonamiento basico y respuesta a instrucciones, heredado de la destilacion de Qwen3.
+- Generacion de codigo y matematicas de nivel basico, limitado por el tamano de 2B parametros.
+- Despliegue en entornos de borde (tag `edge`) y hardware de consumo.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que facilita su integracion en infraestructuras de inferencia tipo Hugging Face Inference Endpoints.
+- Modo "uncensored": menor tasa de rechazos ante peticiones que el modelo base rechazaria.
+- Soporte de tool calling / function calling: no disponible (no documentado).
+- Capacidades de agente y razonamiento multi-paso: no disponible (no documentado).
+- Capacidades multilingues: no disponible (idiomas no declarados).
+- Vision, audio o modo thinking explicito: no disponible.
 
 ## Casos de uso
 
-- Asistencia conversacional en el borde: el modelo, con aproximadamente 2,03 mil millones de parametros y formato GGUF, puede ejecutarse en dispositivos de gama baja (portatiles sin GPU, Raspberry Pi de gama alta, moviles de gama alta) para chatbots locales sin conexion, donde la latencia de red y la privacidad son criticas.
-- Prototipado rapido de aplicaciones de chat: gracias a su licencia Apache 2.0 y su tamano reducido, es adecuado para validar pipelines de inferencia con llama.cpp u Ollama antes de escalar a modelos mayores.
-- Generacion de texto creativo sin restricciones: la variante "uncensored" permite explorar narrativa, role-play y escritura creativa sin los rechazos del modelo alineado, util en entornos de investigacion sobre alineacion y seguridad.
-- Educacion e investigacion sobre destilacion: sirve como caso de estudio reproducible para analizar como se preservan (o no) las capacidades del profesor tras la destilacion y la cuantizacion, dado que el autor publica la metodologia (DOI 10.57967/hf/8165).
-- Filtrado y clasificacion de texto en local: con 2B parametros y cuantizacion agresiva, puede desplegarse como clasificador o extractor de informacion en entornos con recursos limitados, aunque sin garantias de rendimiento especificadas.
-- Despliegue en entornos aislados (air-gapped): al ser un modelo pequeno y autoejecutable, encaja en sistemas sin acceso a internet donde no se puede llamar a APIs externas, como laboratorios o infraestructuras criticas.
-- Base para fine-tuning ligero: su tamano permite ajuste fino con LoRA en una sola GPU consumer, partiendo de un modelo ya destilado y con licencia permisiva.
+- Asistentes conversacionales en dispositivos locales: el tamano de 2B parametros y el formato GGUF permiten ejecutar el modelo en portatiles con GPU integrada o CPU, ofreciendo un chatbot privado sin conexion a servicios en la nube.
+- Prototipado rapido de aplicaciones de chat: con licencia Apache 2.0 y pesos GGUF, un desarrollador puede integrar el modelo en una demo con Ollama o llama.cpp en minutos, sin coste de licencia.
+- Filtrado y clasificacion de texto en el borde: tareas de etiquetado, resumen corto o extraccion de informacion en dispositivos con recursos limitados donde no es viable un modelo de 7B o superior.
+- Generacion de codigo asistida en entornos con restricciones de privacidad: al ejecutarse localmente, el codigo del usuario no sale del equipo, lo que resulta adecuado para entornos con requisitos de confidencialidad.
+- Investigacion sobre destilacion y cuantizacion: el modelo sirve como caso de estudio para evaluar como se preservan las propiedades de un pipeline de destilacion tras la cuantizacion GGUF, dado que el autor documenta explicitamente esa hipotesis.
+- Experimentacion con modelos sin censura en entornos controlados: util para estudiar el comportamiento de modelos con rechazos reducidos en tareas de analisis de contenido sensible, siempre con las salvaguardas adecuadas.
+- Despliegue en endpoints de bajo coste: la compatibilidad declarada con endpoints permite servir el modelo en infraestructuras economicas para cargas de baja concurrencia.
 
 ## Benchmarks y rendimiento
 
@@ -54,41 +56,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con aproximadamente 2,03 mil millones de parametros, las cuantizaciones GGUF tipicas ocuparian en torno a 1,2-1,5 GB (Q4_K_M), 1,8-2,2 GB (Q8_0) y 4,1 GB (F16). Estas cifras son estimaciones basadas en el numero de parametros, no datos publicados por el autor.
-- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM puede ejecutar el modelo en cuantizaciones bajas; una RTX 3060 (12 GB) o superior permite cargar la version F16 completa con contexto amplio. Para mayor throughput, A100 o H100 no son necesarias dado el tamano.
-- Compatibilidad con GPU consumer: si, cabe holgadamente en GTX 1650 (4 GB), RTX 3050 (8 GB), RTX 4060 (8 GB) y superiores; tambien en CPU pura.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo Hugging Face Inference Endpoints.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: aproximadamente 1,5-2 GB en cuantizacion Q4_K_M (estimacion a partir de los 2,03B parametros; el nivel exacto de cuantizacion no esta documentado). En Q8, alrededor de 2,2-2,5 GB; en F16, aproximadamente 4 GB.
+- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM; RTX 3060, RTX 4060, RTX 4090, A100 y H100 funcionan sin problema, aunque las GPU de gama alta estan sobredimensionadas para este tamano.
+- Cabe en GPU de consumo: si, en practicamente todas las GPU de consumo modernas (GTX 1650 4 GB en adelante) y en CPU con suficiente RAM.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runner compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones; para esos motores habria que usar el modelo base en safetensors.
+- Latencia y throughput: no disponibles (no documentados).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| DistilQwen3-1.7B-uncensored-GGUF (este) | 2,03B | No disponible | Apache 2.0 | GGUF | Destilado de Qwen3-30B-A3B, sin censura |
-| Qwen3-1.7B (base oficial) | 1,7B | No disponible en esta ficha | Apache 2.0 | Safetensors, GGUF | Modelo original de Alibaba; alineado y con contexto documentado |
-| Qwen3-0.6B-Distilled-30B-A3B-Thinking-SFT-GGUF (mismo autor) | 0,6B | No disponible | Apache 2.0 | GGUF | Variante mas pequena del mismo pipeline, con SFT de "thinking" |
-| LFM2.5-1.2B-Distilled-SFT (mismo autor) | 1,2B | No disponible | No disponible | No disponible | Alternativa de otro profesor, orientada a CPU |
+| DistilQwen3-1.7B-uncensored-GGUF | 2,03B | No disponible | Apache 2.0 | GGUF | Variante sin censura destilada de Qwen3 |
+| Qwen3-1.7B (Alibaba) | 1,7B | 32.768 tokens (segun documentacion publica de Qwen3) | Apache 2.0 | safetensors, GGUF | Modelo base original, con alineacion estandar |
+| Llama 3.2 1B Instruct (Meta) | 1,24B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | Alternativa de borde con contexto amplio, licencia no comercial en la practica para grandes empresas |
+| Gemma 3 1B (Google) | 1B | 32.000 tokens | Gemma Terms of Use | safetensors, GGUF | Alternativa de borde con licencia restrictiva |
 
-La comparativa con modelos de terceros no puede completarse con datos verificados en la informacion disponible; los modelos listados del mismo autor comparten metodologia pero no se dispone de sus especificaciones completas.
+La comparativa se limita a datos publicos de los modelos base; no hay benchmarks del modelo evaluado que permitan comparar rendimiento de forma cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Riesgo de alucinacion: con 2,03 mil millones de parametros y destilado de un profesor MoE, la fidelidad factica es limitada; no debe usarse como fuente de verdad sin verificacion externa.
-- Sesgos: no se documentan evaluaciones de sesgo; el entrenamiento "uncensored" puede amplificar respuestas toxicas o sesgadas al eliminar los filtros del modelo alineado.
-- Contenido sin filtros: la etiqueta "uncensored" implica que el modelo puede generar contenido que el base rechazaria; es inadecuado para aplicaciones de cara al publico sin una capa de moderacion adicional.
-- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no estan documentados; no se puede garantizar un rendimiento multilingue equivalente al de Qwen3.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el autor no ofrece garantias sobre el cumplimiento de las condiciones del modelo base Qwen3; conviene revisar la licencia de Qwen3-30B-A3B antes de un despliegue comercial.
-- Caveat de produccion: la metodologia (Discrepancy Calculus) no ha sido validada de forma independiente en la informacion disponible; los claims sobre preservacion de estructura tras cuantizacion son del autor.
-- Trazabilidad: el repositorio tiene pocas descargas (2.705) y me gusta (4), y no se han publicado benchmarks; el soporte de la comunidad es limitado.
+- Riesgo de alucinacion elevado: con 2B parametros, la tasa de errores factuales es significativamente mayor que en modelos de 7B o superiores.
+- Sesgos conocidos: no documentados por el autor; al derivar de Qwen3 y aplicar un ajuste "uncensored", es probable que herede sesgos del modelo base y que el ajuste reduzca salvaguardas ante contenido sensible.
+- Limitaciones de contexto e idioma: no se declara la longitud de contexto ni los idiomas soportados; se recomienda validar ambos antes de usar en produccion.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el autor no ofrece garantias ni soporte; conviene revisar la licencia del modelo base Qwen3 y los terminos del pipeline de destilacion.
+- Caveat de produccion: la model card incluye terminologia matematica propia ("Discrepancy Calculus", "Topological Knowledge Distillation") sin validacion independiente publicada; tratar las afirmaciones del autor con cautela.
+- El ajuste "uncensored" puede generar contenido inapropiado; requiere filtros o moderacion adicionales en aplicaciones orientadas al publico.
+- No hay informacion sobre tool calling ni soporte de agentes, por lo que no debe asumirse su disponibilidad.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/DistilQwen3-1.7B-uncensored-GGUF
-- Modelo base (no cuantizado): https://huggingface.co/reaperdoesntknow/DistilQwen3-1.7B-uncensored
-- Perfil del autor: https://huggingface.co/reaperdoesntknow
+- Modelo base (safetensors): https://huggingface.co/reaperdoesntknow/DistilQwen3-1.7B-uncensored
 - Coleccion DistilQwen: https://huggingface.co/collections/reaperdoesntknow/distilqwen-69bf40ec669117e3f069ef1c
-- Metodologia "Structure Over Scale" (DOI): https://doi.org/10.57967/hf/8165
-- Modelo relacionado Qwen3-1.7B-Thinking-Distil: https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Thinking-Distil
-- Modelo relacionado LFM2.5-1.2B-Distilled-SFT: https://huggingface.co/reaperdoesntknow/LFM2.5-1.2B-Distilled-SFT
-- Modelo relacionado Qwen3-1.7B-Coder-Distilled-SFT: https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Coder-Distilled-SFT
-- Modelo relacionado Qwen3-0.6B-Distilled-30B-A3B-Thinking-SFT-GGUF: https://huggingface.co/reaperdoesntknow/Qwen3-0.6B-Distilled-30B-A3B-Thinking-SFT-GGUF
+- Documento de metodologia "Structure Over Scale": https://doi.org/10.57967/hf/8165
+- Perfil del autor: https://huggingface.co/reaperdoesntknow

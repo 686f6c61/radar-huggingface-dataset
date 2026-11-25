@@ -2,52 +2,49 @@
 
 ## Resumen
 
-K-WALUAN es un modelo de lenguaje publicado en Hugging Face por el usuario wolffenbuetell bajo el identificador `wolffenbuetell/K-WALUAN`. Se distribuye exclusivamente en formato GGUF, lo que indica que esta pensado para inferencia local mediante herramientas compatibles con dicho formato (llama.cpp, Ollama, LM Studio, entre otras). El repositorio tiene un tamano de 65,8 GB y acumula 312 descargas, sin likes registrados.
+K-WALUAN es un modelo de generación de imágenes fotorrealistas publicado por el usuario wolffenbuetell en Hugging Face. Se trata de un merge (fusión) de pesos derivado del modelo base krea/Krea-2-Turbo, al que se han incorporado mediante fusión un conjunto extenso de LoRAs orientados al realismo fotográfico, la estética analógica, el detalle de piel y diversos deslizadores (sliders) de estilo. El modelo se distribuye en formato GGUF, lo que lo orienta a su uso en herramientas de inferencia local como ComfyUI o interfaces basadas en stable-diffusion.cpp.
 
-El dato mas relevante disponible es el recuento de parametros en safetensors: 12.820.073.036, es decir, aproximadamente 12,8 mil millones de parametros. Este tamano lo situa en la categoria de modelos de gama media, adecuados para despliegue en GPU de consumo con cuantizacion agresiva o en configuraciones multi-GPU. Sin embargo, la informacion publica del repositorio es muy limitada: no se especifica licencia, idiomas soportados, pipeline ni arquitectura concreta.
+La propuesta del autor es la simplicidad: obtener resultados realistas con prompts directos, sin necesidad de upscalers obligatorios ni de cargar LoRAs adicionales. Aunque el modelo funciona de forma autónoma, también admite la incorporación de LoRAs y upscalers para personalizar el resultado. El repositorio ocupa 91,5 GB y el recuento de parámetros reportado en safetensors es de 12.820.073.036 (aproximadamente 12,8 mil millones), un dato que debe interpretarse con cautela dado que el pipeline declarado no está disponible y el modelo es de difusión, no un LLM.
 
-La ausencia de documentacion tecnica (model card sin contenido descriptivo, sin benchmarks, sin detalles de entrenamiento) hace que cualquier evaluacion rigurosa deba basarse en pruebas empiricas por parte del usuario. Esta ficha recoge unicamente los datos verificables del repositorio y marca explicitamente como "no disponible" todo aquello que no puede confirmarse.
+La información pública disponible es muy limitada: la model card es fundamentalmente promocional, no declara licencia, idiomas ni arquitectura detallada, y no incluye benchmarks. Esta ficha refleja por tanto únicamente lo verificable a partir de los metadatos y del contenido de la model card.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 12.820.073.036 (~12,8 B) |
-| Parametros activos | no disponible (no se confirma que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repo es GGUF; se desconoce que variantes incluye) |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (tamano del repo: 65,8 GB) |
+| Arquitectura | No disponible (modelo de difusión para generación de imágenes; derivado de krea/Krea-2-Turbo) |
+| Parametros totales | 12.820.073.036 (según safetensors) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (no es un modelo de lenguaje) |
+| Tipos de cuantizacion | GGUF (cuantizaciones concretas no especificadas) |
+| Idiomas soportados | No disponible (la entrada es texto; el idioma de los prompts no se declara) |
+| Licencia | No disponible |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en el repositorio de Hugging Face. El recuento de parametros en safetensors (12.820.073.036) sugiere una red de aproximadamente 12,8 mil millones de parametros, pero se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE) o una arquitectura hibrida. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO o cualquier innovacion tecnica (atencion lineal, decodificacion especulativa, etc.).
+No se dispone de información técnica sobre la arquitectura interna del modelo base Krea-2-Turbo ni sobre el proceso de entrenamiento original. Por el tipo de repositorio y las etiquetas (`base_model:quantized:krea/Krea-2-Turbo`, `gguf`), K-WALUAN es una cuantización en GGUF de un merge de pesos construido sobre Krea-2-Turbo, no un modelo entrenado desde cero.
 
-El unico dato estructural confirmado es el formato de distribucion: GGUF. Este formato, propio del ecosistema llama.cpp, empaqueta pesos cuantizados junto con metadatos de arquitectura en un unico fichero, lo que facilita la inferencia en CPU y GPU sin dependencias de frameworks pesados. El tamano de 65,8 GB del repositorio es coherente con la presencia de multiples variantes de cuantizacion de un modelo de ~12,8 B, aunque no se detalla cuales.
+El autor documenta explícitamente las LoRAs utilizadas en las versiones V2 y Alternative V2, en su mayoría procedentes de Civitai y centradas en realismo, estética amateur, fotografía de móvil, deslizadores de detalle y de edad, y contenido para adultos. No se indica el método de fusión (por ejemplo, suma ponderada, TIES, DARE), los pesos relativos de cada LoRA ni el número de pasos de entrenamiento. Tampoco se documenta el dataset de entrenamiento ni si hubo ajuste fino adicional tras la fusión.
 
 ## Capacidades
 
-- Generacion de texto: capacidad esperada por tratarse de un modelo de lenguaje, si bien no hay documentacion que la confirme explicitamente.
-- Razonamiento y codigo: no disponible; no se han publicado evaluaciones.
-- Matematicas: no disponible.
-- Vision: no disponible; el repositorio no incluye tags ni ficheros que indiquen capacidades multimodales.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; no se declaran idiomas.
-- Modo thinking o cualquier capacidad especial: no disponible.
+- Generación de imágenes fotorrealistas a partir de prompts de texto.
+- Producción de resultados realistas con prompts simples, sin requerir upscaler obligatorio ni LoRAs adicionales según el autor.
+- Compatibilidad con LoRAs y upscalers externos para personalizar o mejorar el resultado.
+- Estética orientada a fotografía realista: retrato, piel, iluminación natural y estética analógica o de cámara compacta, según las LoRAs fusionadas.
+- Inclusión de contenido para adultos (varias de las LoRAs citadas son de temática NSFW).
+- No se declaran capacidades de tool calling, agentes, razonamiento multi-paso, visión de entrada ni audio, por tratarse de un modelo de generación de imágenes.
 
 ## Casos de uso
 
-Dado que la unica informacion confirmada es el tamano (~12,8 B) y el formato GGUF, los casos de uso se plantean como escenarios plausibles para un modelo de esta categoria, sujetos a validacion empirica:
-
-- Inferencia local en estacion de trabajo: al distribuirse en GGUF, el modelo puede ejecutarse con llama.cpp u Ollama en equipos sin GPU dedicada o con GPU de consumo, aprovechando cuantizaciones de 4-5 bits para reducir el uso de memoria.
-- Prototipado rapido de asistentes conversacionales: un modelo de ~12,8 B ofrece un equilibrio razonable entre calidad y coste computacional para entornos de desarrollo y pruebas internas.
-- Generacion de texto offline y privacidad: al ejecutarse localmente, permite procesar documentos sensibles sin enviar datos a servicios externos, siempre que la licencia lo permita (no confirmada).
-- Experimentacion academica: util como base para estudios comparativos de cuantizacion y rendimiento en hardware modesto, dado su tamano intermedio.
-- Despliegue en edge con CPU: el formato GGUF y el tamano permiten ejecucion en servidores sin acelerador, con latencias mayores pero sin dependencia de proveedores cloud.
-- Evaluacion comparativa de modelos de gama media: sirve como referencia adicional en pipelines de benchmarking internos, aunque la falta de model card obliga a medir todo desde cero.
+- Generación de retratos fotorrealistas para portfolios o pruebas de concepto: el modelo está orientado a piel y rostros realistas, por lo que resulta adecuado para generar retratos con iluminación natural a partir de prompts breves.
+- Creación de imágenes de producto con estética fotográfica: al no exigir upscaler, permite iterar rápido en composiciones de catálogo o mockups antes de un render final de mayor calidad.
+- Previsualización de conceptos artísticos: útil para explorar direcciones visuales en ilustración, cine o publicidad antes de encargar un trabajo definitivo.
+- Generación de imágenes con estética de fotografía amateur o de móvil: las LoRAs de "smartphone photography", "amateur slider" e "InstaPic" permiten obtener resultados de aspecto cotidiano y no excesivamente pulido.
+- Flujos de trabajo locales en ComfyUI: al distribuirse en GGUF, puede cargarse en pipelines locales de difusión para prototipado sin depender de servicios en la nube.
+- Experimentación con merges y LoRAs: sirve como base para que otros usuarios apliquen sus propios deslizadores de estilo o realismo sobre un modelo ya fusionado.
+- Contenido para adultos, si el caso de uso y la legislación aplicable lo permiten: parte de las LoRAs fusionadas están orientadas a NSFW, aunque debe verificarse la licencia antes de cualquier uso.
 
 ## Benchmarks y rendimiento
 
@@ -55,41 +52,62 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (estimacion basada en 12,8 B de parametros, no confirmada por el autor):
-  - Cuantizacion 4 bits: ~7-8 GB de VRAM.
-  - Cuantizacion 5 bits: ~9-10 GB.
-  - Cuantizacion 8 bits: ~13-14 GB.
-  - FP16: ~25-26 GB.
-- GPU recomendadas: RTX 4090 (24 GB) para FP16 o cuantizaciones altas; RTX 4070/4080 o RTX 3090 para 4-8 bits; A100/H100 solo si se busca throughput alto en FP16.
-- Cabe en GPU de consumo: si, en cuantizaciones de 4-5 bits cabe en GPUs de 8-12 GB (RTX 3060 Ti, RTX 4060 Ti, RTX 4070); en 8 bits requiere 16 GB o mas.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF. No se confirma soporte para vLLM o TGI, que habitualmente requieren safetensors.
-- Latencia y throughput: no disponibles; dependen de la cuantizacion y del hardware. No se han publicado mediciones.
+- VRAM estimada: no disponible de forma oficial. Con 12,8 mil millones de parámetros declarados, una carga en precisión completa requeriría del orden de 25 GB o más; las cuantizaciones GGUF reducen sustancialmente ese requisito, pero el repositorio no detalla los niveles disponibles ni su tamaño exacto.
+- GPU recomendadas: no disponible. Por el tamaño del repositorio (91,5 GB), el conjunto completo de cuantizaciones no cabe en una GPU de consumo; conviene descargar solo el archivo GGUF necesario.
+- GPU de consumo: probablemente viable en tarjetas con 8-24 GB de VRAM según la cuantización elegida, aunque el autor no aporta cifras verificables.
+- Opciones de despliegue: ComfyUI, stable-diffusion.cpp y otras herramientas compatibles con GGUF para modelos de difusión. No se declara compatibilidad con vLLM, TGI ni Ollama, que no aplican a este tipo de modelo.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No hay datos de rendimiento del modelo que permitan una comparacion fiable. A modo orientativo por tamano, se citan alternativas de la misma categoria (~12-14 B), sin afirmar superioridad o inferioridad:
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| K-WALUAN | 12,8 mil millones (según safetensors) | No aplica | Sin benchmarks publicados | No disponible | GGUF en Hugging Face |
+| krea/Krea-2-Turbo (base) | No disponible | No aplica | No disponible | No disponible | Hugging Face |
+| Alternativas de realismo basadas en Krea 2 | No disponible | No aplica | No disponible | No disponible | Principalmente en Civitai |
 
-| Modelo | Parametros | Contexto | Licencia | Formato |
-|---|---|---|---|---|
-| K-WALUAN | ~12,8 B | no disponible | no disponible | GGUF |
-| Mistral NeMo | 12 B | 128K | Apache 2.0 | safetensors, GGUF |
-| Gemma 2 | 9 B | 8K | Gemma Terms | safetensors, GGUF |
-| Qwen2.5 | 14 B | 32K | Apache 2.0 (mayoria de variantes) | safetensors, GGUF |
-
-La comparacion se limita a parametros y disponibilidad; no se dispone de datos de benchmarks de K-WALUAN para contrastar calidad.
+No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas. La comparación más directa es con su modelo base Krea-2-Turbo, del que K-WALUAN es una cuantización fusionada con LoRAs de realismo.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: no se documentan datos de entrenamiento, sesgos, idiomas ni limitaciones, lo que impide evaluar su idoneidad para produccion.
-- Licencia no especificada: no puede confirmarse si se permite uso comercial; debe contactarse con el autor o asumir el riesgo legal.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje; sin evaluaciones publicadas no puede acotarse su magnitud.
-- Sesgos desconocidos: al no documentarse la composicion del dataset, no es posible identificar sesgos de genero, etnia, idioma o dominio.
-- Cobertura idiomatica incierta: no se declaran idiomas soportados; el rendimiento en castellano es desconocido.
-- Longitud de contexto desconocida: impide planificar casos de uso con documentos largos o conversaciones multi-turno extensas.
-- Formato exclusivamente GGUF: dificulta el uso con frameworks de servido de alto rendimiento (vLLM, TGI) que prefieren safetensors.
-- Procedencia del modelo no verificada: el autor no ofrece informacion sobre el origen de los pesos ni sobre posibles fine-tunings, lo que anade riesgo de calidad y de cumplimiento.
+- La model card no declara licencia, lo que impide determinar si el uso comercial está permitido; debe consultarse al autor o al modelo base antes de cualquier despliegue en producción.
+- El recuento de parámetros de 12,8 mil millones procede de safetensors y no está confirmado por el autor; en modelos de difusión este dato puede no corresponder a la arquitectura real.
+- La información técnica es escasa: no hay detalles de arquitectura, método de fusión, dataset ni evaluación objetiva.
+- Riesgo de alucinación visual: como todo modelo generativo de imágenes, puede producir anatomías incorrectas, texto ilegible o artefactos en manos y rostros.
+- Sesgos: las LoRAs fusionadas incluyen deslizadores de edad, estética amateur y contenido para adultos, lo que puede introducir sesgos de representación y facilitar la generación de contenido sensible.
+- Contenido NSFW: parte de las LoRAs citadas son explícitamente para adultos; debe garantizarse el cumplimiento legal y las políticas de la plataforma donde se despliegue.
+- Idiomas: no se declara qué idiomas acepta en los prompts; el rendimiento con prompts en castellano no está verificado.
+- El repositorio es grande (91,5 GB) y contiene múltiples cuantizaciones; descargar el conjunto completo puede ser costoso en almacenamiento y ancho de banda.
+- Sin garantías de mantenimiento: el autor se despide en la model card ("farewell"), lo que sugiere que el modelo podría no recibir actualizaciones.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/wolffenbuetell/K-WALUAN
-- No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.
+- Modelo en Hugging Face: https://huggingface.co/wolffenbuetell/K-WALUAN
+- Modelo base: https://huggingface.co/krea/Krea-2-Turbo
+- LoRAs citadas en la model card (Civitai), entre otras:
+  - [BSS] - Better NSFW (Krea2): https://civitai.com/models/2758345
+  - [KREA 2] Amateur Slider: https://civitai.com/models/2773343
+  - [KREA 2] Mystic XXX: https://civitai.com/models/2728644
+  - [KREA 2] Realism Slider: https://civitai.com/models/2781697
+  - 2000s Analog Core: https://civitai.com/models/1134895
+  - Candid Slider (Krea2): https://civitai.com/models/2774295
+  - Canon UltraReal: https://civitai.com/models/2783143
+  - Detail Slider (Krea 2): https://civitai.com/models/2772451
+  - Elusarca's Krea 2 Smartphone Photography Slider: https://civitai.com/models/2796343
+  - Famegrid Realism LoRA: https://civitai.com/models/2088956
+  - GalaxyAce LoRA: https://civitai.com/models/2200329
+  - InstaPic Ultrareal: https://civitai.com/models/2168120
+  - Krea 2 Identity Edit: https://civitai.com/models/2761113
+  - Krea 2 Natural Expressions: https://civitai.com/models/2877049
+  - Lenovo UltraReal: https://civitai.com/models/1662740
+  - Light Slider Krea2: https://civitai.com/models/2764018
+  - NiceGirls UltraReal: https://civitai.com/models/1862761
+  - NSFW Helper Slider Krea2: https://civitai.com/models/2779347
+  - NSFW Krea2 (Low VRAM): https://civitai.com/models/2742336
+  - PornMaster Krea2 Age Slider: https://civitai.com/models/2772293
+  - Realism Engine Ideogram 4 + Krea 2: https://civitai.com/models/2688234
+  - Realistic Slider (Krea-2): https://civitai.com/models/2727636
+  - Realistic Snapshot (Z-Image-Turbo + Krea 2): https://civitai.com/models/2268008
+  - Skin Detail Slider (Krea2 + ZIT): https://civitai.com/models/2682644
+  - SNOFS: https://civitai.com/models/1972981
+  - Voye-Spy Krea 2: https://civitai.com/models/2821995

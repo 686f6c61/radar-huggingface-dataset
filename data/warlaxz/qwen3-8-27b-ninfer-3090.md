@@ -1,99 +1,105 @@
 # WarlaxZ/Qwen3.8-27B-NInfer-3090
 
 ## Resumen
-Qwen3.8-27B-NInfer-3090 es un artefacto de pesos cuantizados del modelo multimodal Qwen3.8-27B (27.000 millones de parámetros) de Alibaba Qwen, convertido al formato propietario `.ninfer` por el fork de NInfer para RTX 3090 mantenido en `ashalliants/ninfer-3090` y publicado por el usuario WarlaxZ. No es un checkpoint de Transformers, ni una distribución de safetensors, ni un GGUF: requiere los ejecutables de ese fork concreto para cargarse.
 
-El problema que resuelve es el despliegue de un modelo multimodal de 27B en una única GPU de consumo de 24 GB (RTX 3090), algo imposible con precisión completa. El artefacto ocupa 17,68 GiB (18.979.828.480 bytes) frente a los 20.437.521.664 bytes del artefacto upstream, gracias a un esquema de cuantización mixta (4/5/6 bits) con búsqueda de escalas guiada por una matriz de importancia (imatrix) y escalas con signo.
+Qwen3.8-27B-NInfer-3090 es un artefacto de pesos cuantizados del modelo multimodal Qwen3.8-27B, publicado por el usuario WarlaxZ y generado con el motor de inferencia NInfer, en su bifurcación específica para la GPU RTX 3090 (ashalliants/ninfer-3090). No se trata de un checkpoint en formato Transformers, Safetensors o GGUF, sino de un contenedor propietario `.ninfer` que solo puede cargarse con los ejecutables de esa bifurcación concreta. El modelo base, Qwen3.8-27B, es un modelo de la familia Qwen con arquitectura `Qwen3_5ForCausalLM` que combina atención y capas GDN (probablemente una variante de atención lineal o híbrida), e incluye componentes de visión, MTP (multi-token prediction), DFlash2 y una cabeza de propuesta de 131.072 filas para decodificación especulativa.
 
-La revisión del 16 de noviembre de 2026 recoloca los bytes de 5 bits en las capas donde el error ponderado por imatrix es mayor (capas 23, 24 y 30 en lugar de 0–35), reduciendo la divergencia KL un 9% aproximado respecto a la primera revisión con el mismo tamaño de archivo. La licencia declarada es Apache 2.0 y el pipeline es image-text-to-text.
+La relevancia de este artefacto reside en su enfoque de cuantización: en lugar de usar el redondeo clásico `absmax/qmax` por grupo de 64 pesos, emplea un codificador `grouped_search` que busca la escala FP16 óptima entre 50 candidatos minimizando el error cuadrático ponderado por importancia (imatrix), y permite escalas negativas para aprovechar todo el rango de códigos. El resultado es un archivo de 17,68 GiB que reduce la divergencia KL frente a una referencia Q8_0 en aproximadamente un 23 % respecto a la codificación upstream, con un tamaño un 7 % menor y una velocidad de decodificación hasta 2,1 veces superior a llama.cpp según las mediciones del autor.
+
+El modelo está pensado para ejecutarse en una única RTX 3090 de 24 GB, lo que lo convierte en una opción interesante para desarrolladores que quieran desplegar un modelo multimodal de 27B en hardware de consumo. La licencia declarada es Apache 2.0, heredada del modelo base, aunque las condiciones reales de uso dependen tanto de la licencia de Qwen3.8-27B como de las restricciones del motor NInfer.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `Qwen3_5ForCausalLM` (transformer multimodal con componentes de visión, MTP, DFlash2 y cabeza de propuesta) |
-| Parametros totales | 27.000 millones (según nombre del modelo base; no se detalla desglose) |
+| Arquitectura | `Qwen3_5ForCausalLM` (transformer con atención y capas GDN; componentes de visión, MTP, DFlash2 y cabeza de propuesta) |
+| Parametros totales | 27B (según el nombre del modelo base; no se detalla el desglose exacto) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible (la cabeza de propuesta tiene 131.072 filas) |
-| Tipos de cuantizacion | Mixta: embeddings 4 bits, cabeza de salida 6 bits, Q4 en query/key/gate/up, Q5 en value/z/gate/down/output; proyecciones de salida de atención y GDN y down de MLP en 4 bits en capas tempranas y 5 bits desde capas 23/24/30 |
-| Idiomas soportados | no disponible (el corpus de evaluación incluye wikipedia en/zh, arXiv, GitHub y chat) |
-| Licencia | apache-2.0 |
-| Formato de pesos | `.ninfer` (contenedor versión 3, 1.190 objetos: 1.184 tensores y 6 recursos) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Pesos mixtos de 4 y 5 bits (Q4/Q5) con escalas FP16 por grupo de 64 pesos; embedding de 4 bits, cabeza de salida de 6 bits; atención Q4 para query/key/gate/up y Q5 para value/z/gate/down/output; proyecciones de salida de atención, GDN y MLP down en 4 bits en capas tempranas y 5 bits desde las capas 23, 24 y 30 respectivamente |
+| Idiomas soportados | no disponible (el corpus de evaluación incluye wikipedia en/zh, arXiv, GitHub y chat, lo que sugiere soporte al menos de inglés y chino) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | `.ninfer` (contenedor propietario versión 3; no es Safetensors ni GGUF) |
 
 ## Arquitectura y entrenamiento
-El modelo base Qwen3.8-27B emplea la arquitectura `Qwen3_5ForCausalLM`, un transformer multimodal que integra un componente de visión junto al decodificador de texto. El artefacto incluye además componentes MTP (multi-token prediction), DFlash2 y una cabeza de propuesta de 131.072 filas, presumiblemente para decodificación especulativa. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si el modelo base usó RLHF o DPO.
 
-La innovación técnica relevante está en la codificación de pesos, no en el entrenamiento. El codificador `grouped_search` busca la escala FP16 de cada grupo de 64 pesos sobre 50 candidatos, eligiendo la que minimiza el error cuadrático ponderado por importancia (media cuadrática de activaciones de entrada por canal, es decir, una imatrix). Las escalas pueden ser negativas, lo que permite usar el rango completo de códigos (−8 para Q4, −16 para Q5). La revisión del 16-11-2026 mueve los bytes de 5 bits a las capas 23, 24 y 30 (salida de atención, salida GDN y down de MLP) en lugar de las capas 0–35, manteniendo el mismo recuento de bytes y reduciendo la KL en torno al 9%. El repositorio incluye el informe de conversión (`qwen3_8_27b.ninfer.conversion.json`) y la imatrix (`qwen3_8_27b.imatrix.safetensors`) para poder reconstruir el artefacto.
+El modelo base Qwen3.8-27B emplea una arquitectura de transformer con capas de atención estándar y capas GDN, que probablemente corresponden a un mecanismo de atención lineal o híbrido orientado a reducir el coste computacional en contextos largos. El artefacto incluye además un módulo de visión para entrada image-text-to-text, un componente MTP (multi-token prediction) para decodificación especulativa, DFlash2 y una cabeza de propuesta de 131.072 filas, todos ellos heredados de la codificación upstream sin modificaciones. El contenedor almacena 1.190 objetos (1.184 tensores y 6 recursos) y se genera mediante un conversor que produce un informe de conversión (`qwen3_8_27b.ninfer.conversion.json`) y una imatrix (`qwen3_8_27b.imatrix.safetensors`) que permite reconstruir el artefacto.
+
+La innovación principal de esta versión no está en el entrenamiento —del que no se proporcionan datos como número de tokens, composición del dataset o uso de RLHF/DPO— sino en la codificación de pesos. El codificador `grouped_search` sustituye el redondeo clásico por una búsqueda de 50 candidatos de escala por grupo, ponderada por la media cuadrática de activación de entrada por canal (imatrix). Además, permite escalas negativas para usar todo el rango de códigos (−8 para Q4, −16 para Q5) y asigna 5 bits a las proyecciones de salida de atención (desde capa 23), GDN (desde capa 24) y MLP down (desde capa 30) en lugar de a las capas 0–35 como hacía la primera revisión. Este cambio, según el autor, reduce la divergencia KL un 9 % con el mismo número de bytes.
 
 ## Capacidades
-- Generación de texto y razonamiento conversacional multi-turno.
-- Procesamiento de imagen y texto (pipeline `image-text-to-text`), con componente de visión incluido en el artefacto.
-- Decodificación especulativa mediante MTP, DFlash2 y cabeza de propuesta de 131.072 filas, orientada a acelerar la generación.
-- Capacidades multilingües: el corpus de evaluación incluye wikipedia en inglés y chino, aunque no se declara una lista formal de idiomas.
-- No se documenta soporte explícito de tool calling, function calling ni comportamiento de agente multi-paso en la información disponible.
-- No se documentan modos especiales (thinking, audio) más allá de la multimodalidad imagen-texto.
+
+- Generación de texto conversacional multi-turno, con soporte para diálogos de chat.
+- Procesamiento multimodal image-text-to-text: el artefacto incluye el componente de visión del modelo base, por lo que acepta imágenes como entrada junto con texto.
+- Razonamiento y generación de código, a juzgar por la inclusión de flujos de GitHub y código propio en el corpus de evaluación de perplejidad.
+- Capacidades multilingües limitadas al menos a inglés y chino, según los corpus de evaluación (wikipedia en/zh).
+- Decodificación especulativa mediante MTP, DFlash2 y cabeza de propuesta de 131.072 filas, que acelera la generación en el motor NInfer.
+- Soporte de tool calling y agentes: no confirmado explícitamente en la información disponible, aunque el autor menciona mejoras en la decodificación de turnos de agente en la versión v0.15.1 del motor.
+- Modo de pensamiento (thinking mode): no disponible.
 
 ## Casos de uso
-- Asistente multimodal local en estación de trabajo con una RTX 3090: el artefacto de 17,68 GiB cabe en 24 GB de VRAM y permite conversaciones imagen-texto sin depender de la nube, con la ventaja de privacidad y coste cero por token.
-- Análisis de documentos escaneados y capturas: al aceptar entrada de imagen y texto, puede extraer y razonar sobre contenido visual en flujos de digitalización, con la ventaja de ejecutarse íntegramente en local.
-- Generación asistida por decodificación especulativa: los componentes MTP y DFlash2 permiten acelerar la decodificación en escenarios de chat interactivo, donde la latencia por token es crítica.
-- Prototipado e investigación en cuantización: el repositorio incluye imatrix, informe de conversión y mediciones de perplejidad y KL, lo que lo convierte en un banco de pruebas reproducible para estudiar codificadores de cuantización mixta.
-- Evaluación comparativa de motores de inferencia: al existir un artefacto upstream equivalente (`neroued/Qwen3.8-27B-NInfer`), sirve para medir diferencias de calidad (perplejidad, KL) y velocidad entre codificaciones sobre el mismo hardware.
-- Despliegue en entornos Windows con CUDA 12.8: las mediciones del autor se hicieron en esa configuración, por lo que es un caso realista para equipos de desarrollo con GPU consumer y sistema Windows.
-- Sustitución de un modelo de 27B en precisión reducida en pipelines existentes de NInfer, siempre que se actualice a la versión del fork que soporta la ruta MLP down de 4 bits.
+
+- Despliegue de un modelo multimodal de 27B en una única RTX 3090: el artefacto está específicamente optimizado para 24 GB de VRAM, con un tamaño de 17,68 GiB que deja margen para el contexto y las activaciones, lo que permite ejecutar visión y texto en hardware de consumo.
+- Asistente conversacional con imágenes: gracias al componente de visión y a la pipeline image-text-to-text, puede gestionar conversaciones multi-turno en las que el usuario adjunta capturas, diagramas o fotografías, siempre que el contexto lo permita (longitud no especificada).
+- Generación de código asistida en local: la evaluación incluye flujos de GitHub y código propio, y el modelo puede integrarse en entornos de desarrollo sin conexión a la nube, usando el motor NInfer con decodificación especulativa para reducir la latencia.
+- Investigación en cuantización: el artefacto es un caso de estudio reproducible, ya que incluye la imatrix y el informe de conversión, lo que permite analizar el impacto de distintas estrategias de codificación (grouped_search frente a absmax) sobre la perplejidad y la divergencia KL.
+- Evaluación comparativa de motores de inferencia: sirve para medir el rendimiento de NInfer-3090 frente a llama.cpp en la misma GPU, con métricas de velocidad de prefill y decode publicadas por el autor.
+- Procesamiento de documentos con texto e imágenes en inglés y chino: el corpus de evaluación incluye wikipedia en/zh, arXiv y chat, lo que sugiere un rendimiento razonable en tareas de comprensión de documentos mixtos en esos idiomas.
+- Prototipado de agentes con decodificación especulativa: la inclusión de MTP y la cabeza de propuesta permite experimentar con generación acelerada en flujos de varios pasos, aunque la información sobre soporte de tool calling no está confirmada.
 
 ## Benchmarks y rendimiento
-Calidad medida con `ninfer-perplexity --quick --kv-dtype int8`:
 
-| Corpus | Upstream | Primera revisión | Esta revisión | Cambio vs upstream |
+El autor publica métricas de perplejidad y divergencia KL, no benchmarks estándar como MMLU o HumanEval.
+
+| Metrica | Upstream | Primera revision | Esta revision | Cambio vs upstream |
 |---|---:|---:|---:|---:|
-| `perplexity-1m` (heredado) | 4,3428 | 4,3025 | 4,3014 | −0,95% |
-| `perplexity-heldout-2026-09` (wikipedia en/zh, arXiv, GitHub, código propio, chat) | 4,3396 | 4,3169 | 4,3224 | −0,40% |
+| Perplejidad `perplexity-1m` | 4,3428 | 4,3025 | 4,3014 | −0,95 % |
+| Perplejidad `perplexity-heldout-2026-09` | 4,3396 | 4,3169 | 4,3224 | −0,40 % |
+| KL div. media vs Q8_0 (held-out) | 0,0376 | 0,0318 | 0,0288 | −23,4 % |
 
-Divergencia KL frente al GGUF Q8_0 de Unsloth en el corpus held-out (8 × 4096 tokens por flujo, llama.cpp b11316 con pesos NInfer exportados bit a bit a bloques Q8_0):
-
-| Pesos | KLD media |
+| Pesos | KL div. media |
 |---|---:|
 | Codificación y layout upstream | 0,0376 |
-| Layout de la primera revisión con embedding de 6 bits | 0,0304 |
-| Primera revisión (embedding de 4 bits) | 0,0318 |
-| **Esta revisión** (embedding 4 bits, Q5 desde capas 23, 24 y 30) | **0,0288** |
-| Unsloth UD-Q4_K_XL (formatos llama.cpp, 17,56 GB de pesos de texto) | 0,0156 |
+| Primera revisión (embedding 4 bits) | 0,0318 |
+| Esta revisión (embedding 4 bits, Q5 desde capas 23, 24 y 30) | 0,0288 |
+| Unsloth UD-Q4_K_XL (formatos llama.cpp, 17,56 GB) | 0,0156 |
 
-El autor reporta hasta 2,1× la velocidad de decodificación frente a llama.cpp en una RTX 3090, y mejoras de prefill y decodificación en turnos de agente con NInfer-3090 v0.15.1, aunque las cifras concretas de tokens por segundo no se detallan en la información disponible.
+El autor también reporta que la velocidad de decodificación en una RTX 3090 es hasta 2,1 veces superior a llama.cpp con el mismo modelo, y que la versión v0.15.1 del motor mejora el prefill y la decodificación de turnos de agente, aunque no se proporcionan cifras absolutas de tokens por segundo en la información disponible.
 
 ## Requisitos de hardware
-- VRAM estimada: el artefacto pesa 17,68 GiB, por lo que requiere al menos 24 GB de VRAM para cargar pesos y dejar margen para caché KV (medido con `--kv-dtype int8`).
-- GPU recomendada: RTX 3090 (24 GB) es el objetivo declarado y probado; no se documentan otras GPU.
-- Cabe en GPU consumer: sí, en RTX 3090; no se confirma compatibilidad con GPU de 16 GB o menos.
-- Despliegue: exclusivamente mediante los ejecutables del fork `ashalliants/ninfer-3090`; NInfer upstream y builds antiguos del fork lo rechazan al arrancar por falta de la ruta MLP down de 4 bits.
-- Entorno probado: RTX 3090, CUDA 12.8, Windows.
-- Latencia y throughput: hasta 2,1× la velocidad de decodificación de llama.cpp según el autor; no se publican tokens/s absolutos.
+
+- VRAM estimada: el artefacto pesa 17,68 GiB; en una RTX 3090 de 24 GB quedan aproximadamente 6 GB para contexto, activaciones y caché KV (el autor usa `--kv-dtype int8` en las pruebas de perplejidad).
+- GPU recomendadas: RTX 3090 (24 GB) es el objetivo declarado; no se confirma soporte para otras GPU, aunque el motor NInfer-3090 está orientado a CUDA.
+- Cabe en GPU de consumo: sí, en RTX 3090; no se indica compatibilidad con GPU de 16 GB o menos.
+- Opciones de despliegue: exclusivamente el motor NInfer-3090 (bifurcación ashalliants/ninfer-3090); no es compatible con vLLM, llama.cpp, Ollama, TGI ni Transformers, y las versiones upstream de NInfer lo rechazan al arrancar por falta de la ruta MLP down de 4 bits.
+- Latencia y throughput: no se proporcionan cifras absolutas; el autor reporta mejoras relativas de hasta 2,1× en decodificación frente a llama.cpp y mejoras de prefill y decodificación de turnos de agente en la versión v0.15.1.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WarlaxZ/Qwen3.8-27B-NInfer-3090 | 27B | no disponible | `.ninfer` (17,68 GiB) | Apache 2.0 | Hugging Face, requiere fork ninfer-3090 |
-| neroued/Qwen3.8-27B-NInfer (upstream) | 27B | no disponible | `.ninfer` (20.437.521.664 bytes) | Apache 2.0 | Hugging Face, NInfer upstream |
-| Unsloth UD-Q4_K_XL (formato llama.cpp) | 27B | no disponible | GGUF (17,56 GB de pesos de texto) | Apache 2.0 (heredada) | Hugging Face, llama.cpp |
+| WarlaxZ/Qwen3.8-27B-NInfer-3090 | 27B | no disponible | `.ninfer` | Apache 2.0 | Hugging Face, requiere NInfer-3090 |
+| neroued/Qwen3.8-27B-NInfer (upstream) | 27B | no disponible | `.ninfer` | Apache 2.0 | Hugging Face, NInfer upstream |
+| Qwen/Qwen3.8-27B (base) | 27B | no disponible | Safetensors (presumiblemente) | Apache 2.0 | Hugging Face |
+| Unsloth UD-Q4_K_XL (formato llama.cpp) | 27B | no disponible | GGUF | Apache 2.0 | Hugging Face, llama.cpp |
 
-En calidad medida por KL frente a Q8_0, el formato GGUF de llama.cpp (0,0156) supera a esta codificación (0,0288), mientras que esta revisión mejora al artefacto upstream de NInfer (0,0376). No se dispone de comparación con otros modelos de 27B en benchmarks estándar (MMLU, HumanEval, GSM8K) en la información proporcionada.
+La comparación se limita a variantes del mismo modelo base, ya que no se proporcionan datos de benchmarks estándar que permitan contrastarlo con otras familias. Frente al artefacto upstream, esta versión es un 7 % más pequeña (17,68 GiB frente a 20,44 GB), tiene una KL div. un 23 % menor y es más rápida según el autor. Frente a la cuantización UD-Q4_K_XL de Unsloth en formato llama.cpp, la KL div. es mayor (0,0288 frente a 0,0156), aunque el autor argumenta ventajas de velocidad y de integración con el motor NInfer.
 
 ## Limitaciones y advertencias
-- No es un checkpoint estándar: no funciona con Transformers, safetensors ni llama.cpp; exige los binarios del fork `ashalliants/ninfer-3090` en una versión que soporte la ruta MLP down de 4 bits.
-- La cuantización introduce pérdida de calidad: la KL media (0,0288) es casi el doble que la del GGUF Q4_K_XL de Unsloth (0,0156), con degradación concentrada en wikipedia en chino (perplejidad de 9,14 a 9,27) y en chat.
-- El embedding de 4 bits empeora chino (KL 0,0794 → 0,0859) y chat (0,0355 → 0,0373) frente a un embedding de 6 bits, según las mediciones del autor.
-- Riesgo de alucinación inherente a un modelo de 27B cuantizado a 4/5 bits; no se documentan evaluaciones de factualidad.
-- Sesgos conocidos: no disponibles en la información proporcionada.
-- Idiomas soportados: no se declara lista oficial; la evaluación sugiere mejor comportamiento en inglés que en chino bajo esta cuantización.
-- Licencia Apache 2.0 permite uso comercial, pero la dependencia del fork de inferencia puede condicionar el despliegue en producción (soporte, mantenimiento y compatibilidad futura no garantizados).
-- El artefacto se actualizó el 2026-11-16 y los scripts `download-model` de versiones anteriores descargan la revisión antigua por pin, lo que puede provocar inconsistencias si no se fija la revisión.
-- Solo 4 likes y 58.151 descargas en el momento de la consulta; comunidad pequeña y validación externa limitada.
+
+- El artefacto solo funciona con los ejecutables de la bifurcación ashalliants/ninfer-3090; las versiones upstream de NInfer y las compilaciones antiguas de la bifurcación lo rechazan al arrancar.
+- No es un checkpoint de Transformers, Safetensors ni GGUF, por lo que no puede cargarse con las herramientas habituales del ecosistema (vLLM, llama.cpp, Ollama, TGI).
+- La licencia Apache 2.0 se hereda del modelo base, pero el uso comercial debe verificar también las condiciones de Qwen3.8-27B y del motor NInfer.
+- La calidad medida en chino wikipedia empeora ligeramente en esta revisión (perplejidad de 9,14 a 9,27) y la KL div. de chat sube de 0,0355 a 0,0373, según el autor.
+- La cuantización de 4/5 bits introduce pérdida de precisión frente a Q8_0; la KL div. es casi el doble que la de UD-Q4_K_XL de Unsloth (0,0288 frente a 0,0156).
+- No se proporcionan datos sobre sesgos, riesgo de alucinación, longitud de contexto ni idiomas soportados más allá de los corpus de evaluación.
+- El rendimiento se midió en Windows con CUDA 12.8; no se documenta comportamiento en Linux ni en otras GPU.
+- El repositorio tiene solo 6 likes y 49.122 descargas, lo que sugiere una adopción limitada y poca validación independiente.
 
 ## Enlaces
+
 - Hugging Face: https://huggingface.co/WarlaxZ/Qwen3.8-27B-NInfer-3090
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Artefacto upstream: https://huggingface.co/neroued/Qwen3.8-27B-NInfer
-- Repositorio del fork: https://github.com/ashalliants/ninfer-3090
+- Repositorio del motor: https://github.com/ashalliants/ninfer-3090
 - Pull request de la revisión: https://github.com/ashalliants/ninfer-3090/pull/445

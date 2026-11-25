@@ -1,0 +1,150 @@
+{
+  "schema": 2,
+  "id": "yuhuanstudio/Yunmo-Next-1B-Base",
+  "slug": "yuhuanstudio-yunmo-next-1b-base",
+  "author": "yuhuanstudio",
+  "url": "https://huggingface.co/yuhuanstudio/Yunmo-Next-1B-Base",
+  "created_at": "2026-10-03T06:44:57.000Z",
+  "updated_at": "2026-11-25T00:54:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "yunmo_next",
+    "text-generation",
+    "base-model",
+    "traditional-chinese",
+    "hybrid-attention",
+    "kimi-delta-attention",
+    "linear-attention",
+    "research",
+    "conversational",
+    "custom_code",
+    "zh",
+    "en",
+    "dataset:epfml/FineWeb2-HQ",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:opencsg/Fineweb-Edu-Chinese-V2.1",
+    "dataset:BAAI/IndustryCorpus2",
+    "dataset:yuhuanstudio/wikipedia-pretrain-zh-tw",
+    "dataset:erhwenkuo/zhwikisource-zhtw",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:HuggingFaceCode/stack-v3-train",
+    "dataset:HuggingFaceTB/issues-kaggle-notebooks",
+    "dataset:jingyaogong/minimind_dataset",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 58,
+  "trending_score": 0,
+  "parameters": 1008058216,
+  "parameters_human": "1.01B",
+  "storage_bytes": 6048649074,
+  "storage_human": "6.0 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ARC-Easy",
+      "metric": "acc_norm",
+      "value": 50.3
+    },
+    {
+      "task": null,
+      "dataset": "ARC-Challenge",
+      "metric": "acc_norm",
+      "value": 29.2
+    },
+    {
+      "task": null,
+      "dataset": "HellaSwag",
+      "metric": "acc_norm",
+      "value": 41.3
+    },
+    {
+      "task": null,
+      "dataset": "PIQA",
+      "metric": "acc_norm",
+      "value": 65.9
+    },
+    {
+      "task": null,
+      "dataset": "Winogrande",
+      "metric": "acc",
+      "value": 56.1
+    },
+    {
+      "task": null,
+      "dataset": "OpenBookQA",
+      "metric": "acc_norm",
+      "value": 34.4
+    },
+    {
+      "task": null,
+      "dataset": "SciQ",
+      "metric": "acc_norm",
+      "value": 85.2
+    },
+    {
+      "task": null,
+      "dataset": "LAMBADA (OpenAI)",
+      "metric": "acc",
+      "value": 44.5
+    },
+    {
+      "task": null,
+      "dataset": "MMLU",
+      "metric": "acc",
+      "value": 22.9
+    },
+    {
+      "task": null,
+      "dataset": "TMMLU+",
+      "metric": "acc",
+      "value": 25
+    },
+    {
+      "task": null,
+      "dataset": "XStoryCloze (zh)",
+      "metric": "acc",
+      "value": 57.5
+    },
+    {
+      "task": null,
+      "dataset": "XCOPA (zh)",
+      "metric": "acc",
+      "value": 61.8
+    },
+    {
+      "task": null,
+      "dataset": "XWinograd (zh)",
+      "metric": "acc",
+      "value": 67.5
+    }
+  ],
+  "sources": []
+}

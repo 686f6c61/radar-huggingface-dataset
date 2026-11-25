@@ -62,33 +62,123 @@
   "renamed_at": null,
   "benchmarks": [
     {
-      "task": "SWE-bench Verified (500 Instances · 3-Step vQbit Trajectory)",
-      "dataset": "SWE-bench Verified",
-      "metric": "Resolved Rate (%) [trajs/ + logs/ Verified]",
-      "value": 100
-    },
-    {
-      "task": "GAIA Level 1-3 Benchmark (Exact-Match Stripped Scalar)",
-      "dataset": "GAIA",
-      "metric": "Exact-Match Accuracy (%)",
-      "value": 100
-    },
-    {
       "task": "Berkeley Function Calling Leaderboard V4 (BFCL V4)",
       "dataset": "BFCL V4",
       "metric": "AST & Live MCP Accuracy (%)",
       "value": 100
     },
     {
-      "task": "Oxford All Souls Fellowship Unseen Examination & Formal MetaMath",
-      "dataset": "All Souls Fellowship & Metamath set.mm / PutnamBench / MATH-500",
-      "metric": "Constructive RPN & 5-Section Fellowship Rubric (500/500)",
+      "task": "Berkeley Function Calling Leaderboard V4 (BFCL V4)",
+      "dataset": "BFCL V4",
+      "metric": "Pass^8 Rerun Flip Variance (%)",
+      "value": 0
+    },
+    {
+      "task": "SWE-bench Verified (500 Instances · 3-Step vQbit Trajectory)",
+      "dataset": "SWE-bench Verified",
+      "metric": "Resolved Rate (%) [trajs/ + logs/ Verified]",
       "value": 100
     },
     {
-      "task": "Oxford All Souls Fellowship Unseen Examination & Formal MetaMath",
-      "dataset": "All Souls Fellowship & Metamath set.mm / PutnamBench / MATH-500",
-      "metric": "GSM-Symbolic Prime-Scale Perturbation Drop (%)",
+      "task": "SWE-bench Verified (500 Instances · 3-Step vQbit Trajectory)",
+      "dataset": "SWE-bench Verified",
+      "metric": "Pass^8 Rerun Flip Variance (%)",
+      "value": 0
+    },
+    {
+      "task": "Terminal-Bench 2.0 & 4.0 (Harbor Harness · 89 Tasks)",
+      "dataset": "Terminal-Bench 2.0 & 4.0",
+      "metric": "Pass^8 Deterministic Closure (%)",
+      "value": 100
+    },
+    {
+      "task": "Terminal-Bench 2.0 & 4.0 (Harbor Harness · 89 Tasks)",
+      "dataset": "Terminal-Bench 2.0 & 4.0",
+      "metric": "Pass^8 Rerun Flip Variance (%)",
+      "value": 0
+    },
+    {
+      "task": "Salesforce MCP-Universe & Scale MCP-Atlas (56 Tools · 50 Domains · 2026.11.11)",
+      "dataset": "MCP-Universe",
+      "metric": "JSON-RPC 2.0 Streamable-HTTP MCP Closure (%)",
+      "value": 100
+    },
+    {
+      "task": "Salesforce MCP-Universe & Scale MCP-Atlas (56 Tools · 50 Domains · 2026.11.11)",
+      "dataset": "MCP-Universe",
+      "metric": "Pass^8 Rerun Flip Variance (%)",
+      "value": 0
+    },
+    {
+      "task": "ARC-AGI-2 Public Evaluation (120 Tasks · 172 Test Grids)",
+      "dataset": "ARC-AGI-2",
+      "metric": "Dihedral D4 & Morton S4 Grid Invariance (%)",
+      "value": 100
+    },
+    {
+      "task": "ARC-AGI-2 Public Evaluation (120 Tasks · 172 Test Grids)",
+      "dataset": "ARC-AGI-2",
+      "metric": "Pass^8 Rerun Flip Variance (%)",
+      "value": 0
+    },
+    {
+      "task": "GAIA Benchmark (Level 1, 2 & 3 Autonomous Agent)",
+      "dataset": "GAIA",
+      "metric": "Exact-Match Stripped Scalar Accuracy (%)",
+      "value": 100
+    },
+    {
+      "task": "GAIA Benchmark (Level 1, 2 & 3 Autonomous Agent)",
+      "dataset": "GAIA",
+      "metric": "Pass^8 Rerun Flip Variance (%)",
+      "value": 0
+    },
+    {
+      "task": "Aider Polyglot Coding Benchmark (225 Tasks · 7 Languages)",
+      "dataset": "Aider Polyglot",
+      "metric": "Whole-File & Diff Edit Closure (%)",
+      "value": 100
+    },
+    {
+      "task": "Aider Polyglot Coding Benchmark (225 Tasks · 7 Languages)",
+      "dataset": "Aider Polyglot",
+      "metric": "Pass^8 Rerun Flip Variance (%)",
+      "value": 0
+    },
+    {
+      "task": "LiveBench & LMArena (9.09M Votes) Contamination-Free Suite",
+      "dataset": "LiveBench 2026",
+      "metric": "Contamination-Free Integer Proof Closure (%)",
+      "value": 100
+    },
+    {
+      "task": "LiveBench & LMArena (9.09M Votes) Contamination-Free Suite",
+      "dataset": "LiveBench 2026",
+      "metric": "Pass^8 Rerun Flip Variance (%)",
+      "value": 0
+    },
+    {
+      "task": "BigCodeBench-Hard & EvalPlus (HumanEval+ / MBPP+)",
+      "dataset": "BigCodeBench-Hard",
+      "metric": "Hard Split Pass@1 Deterministic Execution (%)",
+      "value": 100
+    },
+    {
+      "task": "BigCodeBench-Hard & EvalPlus (HumanEval+ / MBPP+)",
+      "dataset": "BigCodeBench-Hard",
+      "metric": "Pass^8 Rerun Flip Variance (%)",
+      "value": 0
+    },
+    {
+      "task": "MATH-500, AIME, PutnamBench & ArithMark-3 Formal Proof Suite",
+      "dataset": "MATH-500 & ArithMark-3",
+      "metric": "Constructive RPN & Formal Proof Closure (%)",
+      "value": 100
+    },
+    {
+      "task": "MATH-500, AIME, PutnamBench & ArithMark-3 Formal Proof Suite",
+      "dataset": "MATH-500 & ArithMark-3",
+      "metric": "Pass^8 Rerun Flip Variance (%)",
       "value": 0
     },
     {
@@ -104,22 +194,10 @@
       "value": 0
     },
     {
-      "task": "SemiAnalysis GDPx Finance (M&A / SPV Unmasking) & Administrative Law",
-      "dataset": "GDPx-Finance-Legal",
-      "metric": "Bogle Value (Ax) vs. Shannon Shenanigan Shear (+tau) Closure (%)",
+      "task": "SemiAnalysis GDPx Finance, Tokenized Equity Over-Total (>100% Float) & 10,240-Wallet Section 13(d)/13F Sybil Court",
+      "dataset": "GDPx-Finance-and-Tokenized-Equity-Audit",
+      "metric": "Law 0 (~Copyable) Share Register & Bogle Value (Ax) vs. Wrapper Shear (+tau) Unmasking (%)",
       "value": 100
-    },
-    {
-      "task": "Terminal-Bench 2.1 & DeepSWE Pass@1 / Pass^8 Determinism",
-      "dataset": "Terminal-Bench-2.1",
-      "metric": "Rerun Flip Noise Across 8 Runs (%)",
-      "value": 0
-    },
-    {
-      "task": "Terminal-Bench 2.1 & DeepSWE Pass@1 / Pass^8 Determinism",
-      "dataset": "Terminal-Bench-2.1",
-      "metric": "34-Flick Gate Latency (ns)",
-      "value": 48.2
     }
   ],
   "sources": []

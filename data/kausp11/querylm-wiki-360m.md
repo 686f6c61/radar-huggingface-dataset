@@ -2,95 +2,93 @@
 
 ## Resumen
 
-QueryLM 360M (Wikipedia) es un modelo de lenguaje base de 361,8 millones de parámetros entrenado desde cero por el autor independiente Kausp11 sobre texto de la Wikipedia en inglés. Su particularidad no es el tamaño, sino el preentrenamiento: durante el entrenamiento se insertaron bloques de búsqueda en el texto (una consulta generada más un pasaje recuperado) en posiciones donde una consulta habría ayudado a predecir lo siguiente. El modelo aprendió así a formular consultas de búsqueda y a utilizarlas como contexto, aunque nunca genera los pasajes: los aporta el llamador mediante su propio recuperador.
+QueryLM 360M (Wikipedia) es un modelo de lenguaje base de 361,8 millones de parametros entrenado desde cero por el autor independiente Kausp11 sobre texto de Wikipedia en ingles. Su particularidad es que durante el preentrenamiento se insertaron bloques de busqueda en el propio texto: en los puntos donde una consulta externa ayudaria a predecir lo siguiente, el corpus contiene una consulta de busqueda seguida de un pasaje recuperado. El modelo aprende asi a formular consultas y a utilizar los pasajes insertados, aunque nunca genera los pasajes por si mismo.
 
-La arquitectura sigue la configuración de SmolLM2-360M (32 capas, anchura 960, 15 cabezas de atención), con una longitud de contexto de 4.096 tokens y vocabulario de 49.156 tokens (el tokenizador de SmolLM2 más cuatro tokens especiales para delimitar consultas y respuestas). Se carga con `transformers` estándar como `LlamaForCausalLM`, sin código personalizado, lo que facilita su integración en pipelines existentes.
+La arquitectura sigue la configuracion de SmolLM2-360M (32 capas, anchura 960, 15 cabezas de atencion) y se carga con `transformers` estandar como `LlamaForCausalLM`, sin codigo personalizado. El contexto es de 4.096 tokens y el vocabulario es el del tokenizador de SmolLM2 ampliado con cuatro tokens especiales para delimitar consultas y respuestas de busqueda, hasta un total de 49.156 entradas.
 
-Es relevante ahora porque explora una vía poco común en modelos pequeños: internalizar el uso de recuperación durante el preentrenamiento en lugar de añadirla a posteriori mediante prompting o fine-tuning. El modelo se publica como base (solo preentrenamiento); existe una versión con fine-tuning conversacional (`Kausp11/querylm-wiki-360m-sft-search`) y un baseline de cómputo equivalente entrenado sin bloques de búsqueda que aún no está publicado. No se han publicado resultados de evaluación.
+El interes del modelo es metodologico: demuestra a pequena escala un paradigma de preentrenamiento con busqueda integrada ("search-augmented pretraining") en el que el modelo aprende a decidir cuando consultar y a condicionar su generacion al resultado recuperado. Se distribuye bajo licencia Apache 2.0 y esta pensado como base para experimentacion, no como modelo de produccion.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (configuración SmolLM2-360M: 32 capas, anchura 960, 15 cabezas), `LlamaForCausalLM` |
-| Parámetros totales | 361.824.960 |
-| Parámetros activos | no aplica (no es MoE) |
+| Arquitectura | Transformer decoder-only (configuracion SmolLM2-360M: 32 capas, anchura 960, 15 cabezas) |
+| Parametros totales | 361.824.960 |
+| Parametros activos | no aplica (modelo denso) |
 | Longitud de contexto | 4.096 tokens |
-| Tipos de cuantización | no disponible (pesos publicados en bfloat16; compatible con cuantización estándar de `transformers`/llama.cpp, no verificada por el autor) |
-| Idiomas soportados | inglés (`en`) |
-| Licencia | no disponible |
-| Formato de pesos | safetensors (`model.safetensors`, sha256 `8d5750a5f80cc257235e03339c7c94cdb5f53ea0ccce4101ed71aba788431187`) |
-| Vocabulario | 49.156 tokens (tokenizador SmolLM2 + 4 tokens de búsqueda) |
-| Tokens especiales | `<WEB_QUERY>` (49152), `</WEB_QUERY>` (49153), `<WEB_RESPONSE>` (49154), `</WEB_RESPONSE>` (49155) |
-| Tamaño del repositorio | 0,7 GB |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; el ejemplo de la model card usa bfloat16) |
+| Idiomas soportados | ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (repo de 0,7 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only estándar con la configuración de SmolLM2-360M, entrenado desde cero (no es un fine-tuning de SmolLM2). La innovación está en el formato del texto de entrenamiento: en posiciones donde una búsqueda ayudaría a predecir el texto siguiente, se inserta un bloque `…texto<WEB_QUERY>consulta</WEB_QUERY> <WEB_RESPONSE>pasaje</WEB_RESPONSE> texto continúa…`. La función de pérdida cubre el texto, la consulta y las etiquetas de consulta, pero no las etiquetas de respuesta ni el pasaje, de modo que el modelo aprende a escribir consultas y a usar pasajes, pero no a generarlos.
+El modelo es un transformer decoder-only denso con la configuracion de SmolLM2-360M, entrenado desde cero (sin inicializacion desde otro checkpoint) con el script causal-LM del `Trainer` de Hugging Face. El tokenizador es el de SmolLM2 mas cuatro tokens especiales: `<WEB_QUERY>` (id 49152), `</WEB_QUERY>` (49153), `<WEB_RESPONSE>` (49154) y `</WEB_RESPONSE>` (49155). El texto de entrenamiento tiene la forma `...texto<WEB_QUERY>consulta</WEB_QUERY> <WEB_RESPONSE>pasaje</WEB_RESPONSE> texto continua...`; la funcion de perdida cubre el texto, la consulta y las etiquetas de consulta, pero no las etiquetas de respuesta ni el pasaje, de modo que el modelo aprende a escribir consultas y a usar pasajes, no a generarlos.
 
-Los datos de preentrenamiento son 4.885.877 artículos de Wikipedia en inglés (54.582 adicionales reservados para evaluación), anotados con bloques de búsqueda por un modelo anotador afinado (Gemma 4 E4B-it con un adaptador LoRA). El anotador marca posiciones con probabilidad de inserción de al menos 0,05 y separación mínima de 40 caracteres, y escribe consultas de como máximo 24 tokens. Los pasajes provienen de recuperación BM25 sobre el corpus web público Sphere y se acortan mediante limpieza extractiva; una inserción solo se conserva si el pasaje solapa el texto posterior del documento (ROUGE-1 F1 de al menos 0,1 contra los siguientes 260 caracteres).
+Los datos de preentrenamiento son 4.885.877 articulos de Wikipedia en ingles (con 54.582 adicionales reservados para evaluacion). Los bloques de busqueda se anotaron con un modelo anotador afinado (Gemma 4 E4B-it con un adaptador LoRA) que marca posiciones donde una busqueda ayudaria (probabilidad de insercion de al menos 0,05, separacion minima de 40 caracteres) y redacta una consulta de como maximo 24 tokens. Los pasajes provienen de recuperacion BM25 sobre el corpus web publico Sphere y se acortan mediante limpieza extractiva; una insercion solo se conserva si el pasaje solapa con el texto posterior del documento (ROUGE-1 F1 de al menos 0,1 frente a los siguientes 260 caracteres).
 
-El entrenamiento usó AdamW con LR pico de 5e-4 y weight decay 0,1, lotes de 256 secuencias de 4.096 tokens (1.048.576 tokens por actualización), calentamiento del 2 % y decaimiento coseno hasta cero durante 4 épocas. El presupuesto total fue de 31.860 actualizaciones, 33,4 mil millones de tokens procesados (16,0 mil millones de tokens de documento) y 6,31e19 FLOPs en bf16. El checkpoint publicado corresponde al paso 31.860 de 31.860 (final de la época 4).
+El entrenamiento uso AdamW con LR pico de 5e-4 y weight decay de 0,1, lotes de 256 secuencias de 4.096 tokens (1.048.576 tokens por actualizacion), calentamiento del 2 por ciento y decaimiento coseno hasta cero durante 4 epocas. El presupuesto total fue de 31.860 actualizaciones, 33,4 mil millones de tokens procesados (de los cuales 16,0 mil millones son tokens de documento) y 6,31e19 FLOPs en bf16. El checkpoint publicado corresponde al paso 31.860 (final de la epoca 4) del run `search_360M_v2_e4`.
 
 ## Capacidades
 
-- Generación de texto causal en inglés como cualquier modelo de lenguaje.
-- Formulación de consultas de búsqueda: escribe consultas de hasta 24 tokens dentro de `<WEB_QUERY>…</WEB_QUERY>`.
-- Uso de pasajes recuperados: incorpora el contenido de `<WEB_RESPONSE>…</WEB_RESPONSE>` para continuar la generación.
-- Aprendizaje en contexto mediante ejemplos few-shot con bloques de búsqueda para fijar el formato pregunta-respuesta.
-- Funcionamiento sin búsqueda: puede usarse como modelo causal convencional (con `bad_words_ids` para bloquear la apertura de consultas).
-- No dispone de formato de chat nativo (es un modelo base); el fine-tuning conversacional está en un repositorio aparte.
-- No soporta tool calling genérico, agentes multi-paso, visión, audio ni modo de razonamiento explícito.
-- Capacidad multilingüe limitada al inglés.
+- Generacion de texto causal en ingles como cualquier modelo de lenguaje base, sin necesidad de busqueda.
+- Formulacion de consultas de busqueda: el modelo escribe la consulta entre `<WEB_QUERY>` y `</WEB_QUERY>` cuando se le abre el bloque.
+- Uso de pasajes recuperados: condiciona la continuacion al contenido insertado entre `<WEB_RESPONSE>` y `</WEB_RESPONSE>`.
+- Aprendizaje en contexto mediante ejemplos few-shot con bloques de busqueda para fijar el formato pregunta-respuesta.
+- Decodificacion determinista en el ejemplo oficial (`do_sample=False`), con posibilidad de desactivar la busqueda mediante `bad_words_ids` sobre el token de apertura de consulta.
+- No soporta tool calling generico, agentes multi-paso ni modos de razonamiento extendido (`thinking mode`) de forma nativa; la unica "herramienta" integrada es el bloque de busqueda.
+- No dispone de capacidades de vision, audio ni multimodalidad.
+- Multilingue: no, solo ingles.
 
 ## Casos de uso
 
-- Investigación sobre recuperación aumentada integrada en preentrenamiento: sirve para estudiar si un modelo pequeño aprende a formular consultas útiles y a explotar pasajes, comparándolo con el baseline de cómputo equivalente (aún no publicado).
-- Prototipos de pipelines RAG con modelo pequeño: el flujo de tres pasos (el modelo escribe la consulta, el recuperador devuelve un pasaje, el modelo continúa) permite montar un sistema de respuesta abierta sobre un índice BM25 propio con un modelo de 361,8 M de parámetros que cabe en CPU.
-- Experimentos de destilación y currículo de entrenamiento: el formato de bloques de búsqueda con pérdida selectiva (sin pérdida en pasajes) es un patrón reutilizable para entrenar modelos que delegen la recuperación en un componente externo.
-- Evaluación de calidad de consultas generadas: el modelo puede usarse como generador de consultas para medir la calidad de la formulación de búsquedas en dominios de conocimiento enciclopédico.
-- Docencia y divulgación: su tamaño reducido y su carga con `transformers` estándar lo hacen adecuado para demostrar en clase cómo se entrena y se usa un modelo con recuperación integrada.
-- Base para fine-tuning posterior: al ser un modelo base sin formato de chat, sirve como punto de partida para adaptaciones supervisadas (el autor ya publica una versión SFT con búsqueda).
+- Experimentacion academica sobre recuperacion aumentada: el modelo permite estudiar a escala reducida como un LM aprende a decidir cuando consultar y como integra el pasaje recuperado en su generacion, con un pipeline reproducible de tres pasos (consulta, recuperacion, continuacion).
+- Respuesta a preguntas sobre un corpus propio: conectando el bloque de consulta a un indice BM25 o a una API de busqueda, el modelo formula la consulta y redacta la respuesta condicionada al pasaje; es adecuado para prototipos de RAG con presupuesto de computo minimo (0,7 GB de pesos).
+- Investigacion sobre destilacion de comportamiento de busqueda: al estar entrenado con anotaciones de un modelo mayor (Gemma 4 E4B-it con LoRA), sirve para analizar como se transfiere la politica de insercion de consultas a un modelo de 360M.
+- Educacion y demos: su tamano permite ejecutarlo en CPU en bfloat16 (el propio autor incluye una ejecucion en CPU en la model card), lo que facilita talleres y demostraciones de RAG sin GPU.
+- Generacion de texto asistida por hechos: en tareas donde la precision factica importa, el flujo de consulta-recuperacion-respuesta permite anclar la continuacion en un pasaje externo en lugar de depender solo de la memoria parametrica del modelo.
+- Baseline para comparativas de preentrenamiento: el autor menciona un baseline "Standard" con la misma arquitectura y computo pero sin bloques de busqueda, util para medir el efecto del paradigma de busqueda integrada en tareas controladas.
+- Prototipado de asistentes de documentacion tecnica: con un indice interno de manuales, el modelo puede generar consultas acotadas (maximo 24 tokens) y responder con el fragmento recuperado, aunque la calidad final dependera del recuperador y del formato few-shot.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica explícitamente que los resultados de evaluación se añadirán más adelante. El único ejemplo de ejecución incluido en la model card (consulta generada: «Jane Austen Pride and Prejudice capital Australia answer»; respuesta: «The capital of Australia») demuestra la mecánica del flujo, no la precisión del modelo, y el propio autor lo advierte.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explicitamente que los resultados de evaluacion se anadiran mas adelante ("Evaluation results will be added later"). El unico dato de rendimiento publicado es el ejemplo de ejecucion en CPU con bfloat16, torch 2.8.0 y transformers 4.56.0, cuyo resultado ilustra la mecanica del flujo y no la precision del modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en bfloat16, aproximadamente 0,7 GB de pesos más memoria de activaciones y caché KV; en cuantización de 8 bits, en torno a 0,4 GB; en 4 bits, en torno a 0,2 GB (estimaciones a partir del número de parámetros, no verificadas por el autor).
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para bf16; el modelo cabe holgadamente en RTX 3060, RTX 4060, RTX 4090, A100 y H100.
-- Cabe en GPU de consumo y también en CPU: el ejemplo de la model card se ejecutó en CPU con bfloat16, torch 2.8.0 y transformers 4.56.0.
-- Opciones de despliegue: `transformers` (soporte nativo, sin código personalizado), text-generation-inference (el repositorio incluye la etiqueta `text-generation-inference` y `endpoints_compatible`); vLLM, llama.cpp y Ollama no están verificados en la información disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 0,7 GB en bfloat16 (361,8M parametros x 2 bytes) mas overhead de activaciones y cache KV; en cuantizacion de 8 bits rondaria los 0,4 GB y en 4 bits los 0,2 GB, aunque el autor no publica pesos cuantizados.
+- GPU recomendadas: cualquier GPU consumer moderna sirve; una RTX 3060 de 12 GB o superior deja margen amplio. En entornos profesionales, A100 o H100 no son necesarias para este tamano.
+- Cabe en GPU consumer: si, en practicamente todas las GPU con al menos 2-4 GB de VRAM, e incluso en CPU (el autor documenta una ejecucion en CPU en bfloat16).
+- Opciones de despliegue: `transformers` con `AutoModelForCausalLM` (soporte nativo, sin codigo personalizado); la model card menciona compatibilidad con text-generation-inference y endpoints. No se documenta soporte especifico de llama.cpp, Ollama o vLLM, aunque al ser un `LlamaForCausalLM` estandar deberia poder convertirse a GGUF con las herramientas habituales (no verificado en la informacion disponible).
+- Latencia y throughput: no disponibles. El unico dato es que el ejemplo oficial se ejecuto en CPU, lo que sugiere viabilidad sin acelerador, pero sin cifras de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
 |---|---|---|---|---|---|
-| QueryLM 360M (Wikipedia) | 361,8 M | 4.096 | Preentrenamiento con bloques de búsqueda insertados | no disponible | Hugging Face (`Kausp11/querylm-wiki-360m`) |
-| SmolLM2-360M | 361,8 M (misma configuración) | no disponible en la información proporcionada | Preentrenamiento estándar sobre texto plano | no disponible en la información proporcionada | Hugging Face (HuggingFaceTB) |
-| Baseline de cómputo equivalente de QueryLM | misma arquitectura y cómputo | 4.096 | Texto plano sin bloques de búsqueda | no disponible | No publicado aún según la model card |
+| QueryLM 360M (Wikipedia) | 361,8M | 4.096 | en | Apache 2.0 | Preentrenado con bloques de busqueda insertados; base, sin formato chat |
+| SmolLM2-360M | 360M (aprox.) | 8.192 (segun su model card publica) | en (principalmente) | Apache 2.0 | Arquitectura de referencia del mismo tamano; contexto mayor y modelo ampliamente evaluado |
+| Qwen2.5-0.5B | 494M (aprox.) | 32.768 (segun su model card publica) | multilingue | Apache 2.0 | Alternativa de tamano cercano con contexto mucho mayor y soporte multilingue |
 
-La comparación con SmolLM2-360M es pertinente porque QueryLM adopta su configuración exacta (32 capas, anchura 960, 15 cabezas) y su tokenizador, pero se entrena desde cero; no se dispone de datos de rendimiento comparativo entre ambos en la información proporcionada.
+La comparacion con SmolLM2-360M es la mas directa porque QueryLM reutiliza su configuracion y su tokenizador; la diferencia principal es el paradigma de entrenamiento con busqueda y un contexto menor (4.096 frente a 8.192 tokens). Qwen2.5-0.5B ofrece mas contexto y multilingueismo a cambio de un tamano algo mayor. No hay datos de benchmarks publicados para QueryLM, por lo que no es posible comparar rendimiento empirico.
 
 ## Limitaciones y advertencias
 
-- Es un modelo base sin formato de chat: no sigue instrucciones de forma fiable sin ejemplos few-shot que fijen el formato.
-- Solo inglés; no se ha validado su comportamiento en otros idiomas.
-- El modelo no genera pasajes: la calidad de la respuesta depende por completo del recuperador externo que aporte el pasaje.
-- Riesgo de alucinación: al ser un modelo de 361,8 M entrenado sobre Wikipedia, puede producir afirmaciones incorrectas, especialmente cuando el pasaje recuperado no cubre la pregunta.
-- El ejemplo incluido en la model card produce una respuesta truncada («The capital of Australia»), lo que ilustra la fragilidad del formato sin ajuste fino.
-- No se han publicado evaluaciones cuantitativas; no hay evidencia pública de su precisión frente a alternativas.
-- La licencia no está disponible, por lo que no puede confirmarse el uso comercial.
-- El corpus de entrenamiento (Wikipedia en inglés) introduce los sesgos propios de esa fuente y de la cobertura enciclopédica occidental.
-- La ventana de contexto es de solo 4.096 tokens, lo que limita conversaciones o documentos largos.
-- La fecha de creación del repositorio (2026-11-19) y el uso de un anotador «Gemma 4 E4B-it» deben tratarse con cautela: no hay verificación independiente de estos detalles en la información disponible.
+- Es un modelo base sin ajuste conversacional: no sigue instrucciones de forma fiable ni mantiene un formato de chat; requiere ejemplos few-shot para fijar el formato pregunta-respuesta.
+- Solo ingles: no se ha entrenado con otros idiomas y su rendimiento fuera del ingles sera deficiente.
+- Contexto limitado a 4.096 tokens, inferior al de alternativas contemporaneas de tamano similar.
+- Riesgo de alucinacion: aunque el flujo de busqueda ancla la respuesta en un pasaje, el modelo puede ignorar el pasaje o combinarlo incorrectamente; el ejemplo oficial muestra una respuesta truncada ("The capital of Australia") que ilustra la mecanica, no la calidad.
+- Dependencia del recuperador externo: la calidad final depende del indice BM25 o API de busqueda que conecte el usuario, y el modelo no genera los pasajes.
+- El unico dato de evaluacion disponible es el ejemplo de la model card; no hay benchmarks publicados, por lo que no se puede estimar su calidad frente a alternativas.
+- Sesgos: al entrenarse exclusivamente con Wikipedia en ingles, hereda los sesgos de cobertura y perspectiva de esa fuente; no se documentan analisis de sesgo.
+- Licencia Apache 2.0: permite uso comercial, pero al ser un modelo base sin evaluacion publicada, no es recomendable para produccion sin una validacion propia exhaustiva.
+- El autor menciona un baseline "Standard" con el mismo computo que aun no esta publicado, por lo que no se puede medir el beneficio del paradigma de busqueda frente a un entrenamiento convencional.
+- El checkpoint tiene un unico hash SHA-256 publicado (`8d5750a5...`), lo que permite verificar integridad, pero no hay garantias de mantenimiento o soporte por parte del autor.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Kausp11/querylm-wiki-360m
-- Versión con fine-tuning conversacional: https://huggingface.co/Kausp11/querylm-wiki-360m-sft-search
+- Version con ajuste fino conversacional: https://huggingface.co/Kausp11/querylm-wiki-360m-sft-search
 - Checkpoints alternativos (mismos pesos, subcarpeta `search/ep4`): https://huggingface.co/Kausp11/wiki6m-360m-v2-ckpts
-- Corpus web Sphere (recuperación de pasajes): https://github.com/facebookresearch/Sphere
-- Repositorio de SmolLM2 (configuración y tokenizador de referencia): https://huggingface.co/HuggingFaceTB/SmolLM2-360M
+- Corpus web Sphere (recuperacion BM25): https://github.com/facebookresearch/Sphere
+- Paper referenciado en los tags (`arxiv:2611.26809`): https://arxiv.org/abs/2611.26809

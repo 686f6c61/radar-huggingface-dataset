@@ -2,93 +2,96 @@
 
 ## Resumen
 
-Juggernaut-Moss es un ajuste fino completo (full finetune) del modelo de difusion texto-a-imagen MOSS-Image-Base, desarrollado por OpenMOSS-Team y adaptado por Kandoo (KandooAI), el autor de la serie Juggernaut XL para Stable Diffusion XL. El objetivo declarado es el mismo que en sus trabajos anteriores: generar imagenes fotograficas y cinematograficas con piel natural, iluminacion creible y un aspecto de pelicula moderno, sin sacrificar la versatilidad general del modelo base.
+Juggernaut-Moss es un ajuste fino completo (full finetune) del modelo de difusion texto-a-imagen MOSS-Image-Base, desarrollado por el creador conocido como Kandoo (KandooAI), autor de la serie Juggernaut XL para Stable Diffusion XL. El objetivo declarado es producir fotografia y estetica cinematografica realista: piel natural, iluminacion creible y un aspecto de pelicula moderna, manteniendo capacidad generalista para otros estilos. Se distribuye bajo licencia Apache 2.0 y con pesos en safetensors y GGUF, lo que facilita su integracion en pipelines de `diffusers` y en ComfyUI.
 
-Se trata de un modelo de difusion con aproximadamente 5.082 millones de parametros (5,08 mil millones), distribuido en formato safetensors y tambien en GGUF para su uso en ComfyUI y otros entornos. La licencia es Apache 2.0 y el repositorio ocupa 68,1 GB, lo que refleja los pesos completos en precision alta junto con las variantes cuantizadas.
+Tecnicamente es un modelo de difusion de aproximadamente 5.080 millones de parametros (5,08 B), alojado en un repositorio de 68,2 GB, lo que sugiere pesos en precision alta (fp32 o fp16) ademas de las variantes cuantizadas. La arquitectura subyacente es la de MOSS-Image, un transformer de difusion para generacion de imagenes a partir de texto; el autor no detalla en la model card ni el numero de tokens de entrenamiento ni la composicion del dataset, mas alla de calificarlo como "bastante pequeno" para un primer ajuste sobre una arquitectura nueva.
 
-Es relevante ahora porque representa uno de los primeros ajustes finos de la arquitectura MOSS-Image, una arquitectura nueva dentro del ecosistema diffusers, y porque traslada el estilo fotografico de la familia Juggernaut a un modelo base distinto de SDXL. El autor lo presenta explicitamente como una version 1 entrenada con un dataset relativamente pequeno, con margen de mejora en manos, texto pequeno, multitudes y algunos estilos artisticos.
+Su relevancia actual radica en que es uno de los primeros finetunes comunitarios de la arquitectura MOSS-Image, una alternativa emergente a los modelos de difusion dominantes (SDXL, FLUX). Para desarrolladores e investigadores resulta interesante como banco de pruebas de una arquitectura nueva con licencia permisiva, aunque el propio autor advierte que la version 1 tiene defectos conocidos en manos, texto pequeno, multitudes y algunos estilos artisticos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo de difusion texto-a-imagen basado en MOSS-Image (arquitectura no detallada en la informacion disponible) |
-| Parametros totales | 5.082.308.624 (aprox. 5,08 mil millones) |
-| Parametros activos | no disponible (no es un modelo MoE segun la informacion disponible) |
-| Longitud de contexto | no disponible (no aplica a un modelo texto-a-imagen) |
-| Tipos de cuantizacion | safetensors (precision completa) y GGUF; niveles GGUF concretos no disponibles |
-| Idiomas soportados | no disponible (el prompt se procesa en lenguaje natural, sin lista de idiomas publicada) |
+| Arquitectura | Transformer de difusion para texto-a-imagen (MOSS-Image) |
+| Parametros totales | 5.082.308.624 (~5,08 B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (prompt de texto; sin limite documentado) |
+| Tipos de cuantizacion | safetensors (precision completa) y GGUF (variantes cuantizadas) |
+| Idiomas soportados | no disponible (prompts en ingles en los ejemplos) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors y GGUF |
-| Tamano del repositorio | 68,1 GB |
+| Formato de pesos | safetensors, GGUF |
 | Modelo base | OpenMOSS-Team/MOSS-Image-Base |
 | Tipo de ajuste | full finetune |
-| Libreria | diffusers (MOSSImagePipeline) |
-| Pipeline | text-to-image |
+| Libreria | diffusers (`MOSSImagePipeline`) |
+| Tamano del repositorio | 68,2 GB |
+| Descargas | 3501 |
+| Likes | 28 |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna de MOSS-Image-Base mas alla de que se integra en la libreria diffusers mediante la clase `MOSSImagePipeline`. No se especifican el tipo de backbone (UNet, transformer de difusion o hibrido), el codificador de texto ni el VAE empleados. Lo que si se conoce es que Juggernaut-Moss es un ajuste fino completo del modelo base, no un LoRA ni un ajuste parcial, y que fue entrenado por Kandoo con computo patrocinado por RunDiffusion.
+El modelo hereda la arquitectura de MOSS-Image-Base, un transformer de difusion condicionado por texto para generacion de imagenes. Sobre esa base, Kandoo realizo un full finetune (actualizacion de todos los pesos, no un LoRA ni un ajuste parcial) orientado a fotografia realista y look cinematografico. El computo del entrenamiento fue esponsorizado por RunDiffusion.
 
-El entrenamiento se realizo sobre lo que el autor describe como un dataset relativamente pequeno, orientado a fotografia realista y estetica cinematografica. No se publican el numero de imagenes, el numero de pasos, la composicion del dataset ni si se aplicaron tecnicas como RLHF, DPO o filtrado estetico, ya que en modelos de difusion esos metodos no son el estandar. Tampoco se documentan innovaciones tecnicas especificas como decodificacion especulativa o atencion lineal. El autor reconoce abiertamente que, al ser su primer ajuste sobre una arquitectura nueva y con pocos datos, el modelo conserva puntos debiles en manos, texto pequeno, multitudes y ciertos estilos artisticos.
+La informacion publicada no incluye el numero de tokens o imagenes de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de preferencia (RLHF/DPO) o de destilacion. El autor si indica que el dataset fue "bastante pequeno" y que se trata de la primera version sobre una arquitectura nueva, lo que sitúa el modelo en una fase temprana de madurez. No se documentan innovaciones tecnicas propias (decodificacion especulativa, atencion lineal u otras) mas alla del propio ajuste de pesos.
 
 ## Capacidades
 
-- Generacion de imagenes fotorrealistas a partir de prompts de texto, con enfasis en retrato, piel natural, iluminacion creible y acabado cinematografico.
-- Reproduccion de estilos fotograficos concretos: retrato editorial, fotografia de producto, macro, deportiva, automocion, gastronomia, moda y fotografia callejera.
-- Simulacion de caracteristicas opticas y de camara descritas en el prompt: distancias focales (35 mm, 50 mm, 85 mm, 100 mm macro, 400 mm), aperturas (f/1.2, f/1.4), efecto anamorfico, bokeh, halacion, grano de pelicula y flares.
-- Generacion de escenas cinematograficas y estills de pelicula, incluyendo atmosferas de epoca (por ejemplo, drama criminal de los anos 70).
-- Capacidad general de texto-a-imagen heredada del modelo base, segun el autor, que afirma que el modelo "puede seguir haciendo todo lo demas".
-- Compatibilidad con ComfyUI y con el pipeline de diffusers, lo que permite integrarlo en flujos de trabajo existentes.
-- Soporte de tool calling, agentes, razonamiento multi-paso, vision o audio: no disponible (no aplica a un modelo de difusion texto-a-imagen).
-- Capacidades multilingues: no documentadas; la informacion no incluye lista de idiomas soportados.
+- Generacion de imagenes fotorrealistas a partir de prompts de texto, con enfasis en retrato, piel natural y luz creible.
+- Estetica cinematografica: grano de pelicula, halation, flares, paletas calidas y composiciones de tipo "film still".
+- Fotografia de producto y macro (cristal, liquidos, refraccion, causticas).
+- Fotografia deportiva con captura de movimiento congelado (barridos, lluvia, iluminacion de estadio).
+- Fotografia de automocion y publicidad (reflejos en carroceria, gran angular, hora dorada).
+- Fotografia gastronomica editorial (texturas, luz de ventana natural).
+- Escenas de fantasia y cine epico con profundidad de campo reducida.
+- Control de parametros fotograficos mediante prompt: distancia focal (35 mm, 50 mm, 85 mm, 100 mm macro, 400 mm), apertura (f/1.2, f/1.4), velocidad de obturador.
+- Compatibilidad con ComfyUI y con el pipeline `MOSSImagePipeline` de `diffusers`.
+- Soporte de tool calling, agentes, vision de entrada, audio y modo thinking: no disponible (es un modelo texto-a-imagen).
 
 ## Casos de uso
 
-- Generacion de retratos editoriales y de moda: el modelo esta entrenado especificamente para piel realista, poros, vello facial y luz de estudio, por lo que resulta adecuado para producir imagenes de campana con descripciones detalladas de esquema de iluminacion (softbox, reflector, catchlights).
-- Fotografia de producto y bodegon: los prompts de ejemplo incluyen macro de vaso de whisky con refraccion y causticas, lo que indica buen comportamiento en superficies reflectantes, cristal y liquidos para catalogos y publicidad.
-- Storyboarding y previsualizacion cinematografica: permite generar stills con estetica de pelicula (paletas de color, grano, halacion, lentes anamorficas) para comunicar direccion de fotografia antes del rodaje.
-- Ilustracion de articulos y medios: genera imagenes de atmosfera (deporte, automocion, gastronomia) con credibilidad fotografica para acompanar contenido editorial.
-- Prototipado creativo en estudios de diseno: al integrarse en ComfyUI y diffusers, se puede encadenar con otros nodos para iterar variaciones de encuadre, iluminacion y estilo sin salir del pipeline.
-- Generacion de imagenes para campanas publicitarias de automocion y estilo de vida: los ejemplos de coche clasico en calle costera y de motocicleta en garaje muestran capacidad para escenas con reflejos, cromados y luz dramatica.
-- Experimentacion e investigacion sobre ajuste fino de nuevas arquitecturas: al ser uno de los primeros finetunes publicos de MOSS-Image, sirve como referencia para estudiar como responde la arquitectura al entrenamiento completo con datasets pequenos.
+- Generacion de retratos para campanas publicitarias: el modelo responde bien a descripciones detalladas de iluminacion (softbox, reflector, key light) y produce textura de piel con poros y vello facial, util para maquetas de campanas de belleza antes de la sesion real.
+- Storyboarding cinematografico: permite generar "film stills" con referencias explicitas a decadas, opticas y paletas (por ejemplo, drama criminal de los 70 con lente anamorfica de 35 mm), lo que agiliza la previsualizacion de escenas.
+- Fotografia de producto y e-commerce: con prompts de macro a 100 mm y control de refraccion y causticas, sirve para generar imagenes de catalogo de bebidas, cristaleria o relojes sin sesion de estudio.
+- Contenido editorial gastronomico: genera imagenes de platos con texturas apetitosas y luz natural de ventana, adecuadas para blogs, menus y redes sociales de restaurantes.
+- Previsualizacion de automocion: renderiza vehiculos clasicos o modernos en localizaciones concretas (calle adoquinada, costa, hora dorada) con reflejos creibles, util para agencias antes de disponer del vehiculo fisico.
+- Ilustracion de fantasia y videojuegos: escenas epicas con niebla, armaduras y profundidad de campo reducida para concept art y material promocional.
+- Generacion de material para ComfyUI: al estar disponible en GGUF y safetensors, se integra en flujos de trabajo nodales para produccion por lotes con cuantizacion segun la VRAM disponible.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor solo menciona pruebas ciegas propias en las que, segun su valoracion, el modelo supera claramente a MOSS-Image Base, sin aportar metricas cuantitativas (FID, CLIP score, preferencia humana medida, etc.).
+No se han publicado resultados de benchmarks en la informacion disponible. El autor solo menciona que, en sus pruebas ciegas, el modelo supera claramente a MOSS-Image Base, sin aportar metricas numericas (FID, CLIP score, preferencia humana cuantificada u otras).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Con 5,08 mil millones de parametros, los pesos en precision completa (fp16/bf16) rondan los 10 GB, por lo que se puede estimar un consumo de VRAM en torno a 10-14 GB en fp16, dependiendo de la resolucion y del pipeline; las variantes GGUF reducen este requisito de forma proporcional a la cuantizacion.
-- GPU recomendadas: no especificadas por el autor. Por tamano, una RTX 4090 (24 GB) o una A100/H100 son opciones holgadas; una RTX 3090 (24 GB) tambien deberia ser suficiente en fp16.
-- Cabe en GPU de consumo: previsiblemente si en tarjetas con 12-16 GB o mas usando cuantizacion GGUF; no hay confirmacion oficial de umbrales minimos.
-- Opciones de despliegue: diffusers con `MOSSImagePipeline`, ComfyUI (soporte explicito en las etiquetas y en la model card) y formatos GGUF para entornos compatibles con esa cuantizacion. Soporte de vLLM, llama.cpp u Ollama no disponible, ya que no son aplicables a un modelo de difusion de imagen.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa por tamano (5,08 B parametros), en fp16 serian necesarios del orden de 10-12 GB solo para pesos, mas el overhead del pipeline de difusion; las variantes GGUF reducen este requisito de forma proporcional a la cuantizacion.
+- GPU recomendadas: no especificadas por el autor. Por tamano, GPU de datacenter (A100, H100) o consumer de gama alta (RTX 4090, 3090) son las candidatas naturales para precision completa.
+- Cabe en GPU consumer: previsiblemente si, en las gamas altas y con cuantizacion GGUF; el autor no confirma modelos concretos.
+- Opciones de despliegue: `diffusers` mediante `MOSSImagePipeline`, ComfyUI (etiqueta explicita en el repositorio) y carga de pesos GGUF.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto/prompt | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Juggernaut-Moss | 5,08 mil millones | no aplica | Texto-a-imagen fotorrealista y cinematografico, finetune de MOSS-Image | Apache 2.0 | Hugging Face (safetensors y GGUF) |
-| MOSS-Image-Base | no disponible | no aplica | Modelo base texto-a-imagen de OpenMOSS-Team | no disponible en la informacion | Hugging Face |
-| Juggernaut XL (serie) | no disponible en la informacion | no aplica | Finetune fotorrealista de SDXL | no disponible en la informacion | Hugging Face / Civitai |
+| Juggernaut-Moss | ~5,08 B | no disponible | Fotorrealismo cinematografico (finetune de MOSS-Image) | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| MOSS-Image-Base | no disponible | no disponible | Modelo base texto-a-imagen de OpenMOSS | no disponible en la informacion | Hugging Face |
+| Juggernaut XL (serie del mismo autor) | no disponible en la informacion | no disponible | Fotorrealismo sobre SDXL | no disponible en la informacion | Hugging Face / Civitai |
 
-La comparacion cuantitativa con alternativas de la misma categoria no esta disponible: no se han publicado benchmarks ni especificaciones detalladas del modelo base que permitan una comparacion rigurosa de rendimiento.
+No se dispone de datos de rendimiento cuantitativos que permitan una comparacion numerica con alternativas de la misma categoria; la comparativa se limita a parametros, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- El propio autor advierte de fallos ocasionales en manos, texto pequeno, multitudes y algunos estilos artisticos.
-- Es una version 1 entrenada con un dataset relativamente pequeno; el rendimiento puede ser irregular fuera de la estetica fotografica y cinematografica para la que fue ajustado.
-- Riesgo de alucinacion visual: como todo modelo de difusion, puede generar detalles anatomicos o fisicos incoherentes, especialmente en escenas complejas.
-- La etiqueta `not-for-all-audiences` indica que el modelo puede producir contenido no apto para todas las audiencias; conviene aplicar filtros en despliegues publicos.
-- No hay lista publicada de idiomas soportados para el prompt; el comportamiento multilingue no esta documentado.
-- Licencia Apache 2.0: permite uso comercial, pero se recomienda verificar las condiciones del modelo base y de los datos de entrenamiento, no detalladas en la informacion disponible.
-- No se documentan sesgos demograficos ni de representacion; al ser un finetune con dataset pequeno, es probable que la diversidad de rostros, cuerpos y contextos culturales sea limitada.
-- El tamano del repositorio (68,1 GB) exige espacio de almacenamiento considerable y una gestion cuidadosa de versiones de pesos.
+- El propio autor reconoce fallos en manos, texto pequeno, multitudes grandes y algunos estilos artisticos.
+- Es la version 1 de un primer finetune sobre una arquitectura nueva y con un dataset pequeno; cabe esperar menor robustez que en modelos maduros.
+- Riesgo de alucinacion visual: elementos anatomicos o tipograficos incoherentes, habitual en modelos de difusion.
+- Sesgos conocidos: no documentados; al entrenarse con datos no especificados, pueden reproducirse sesgos de representacion demografica y estetica.
+- Idiomas: la model card solo muestra prompts en ingles; el soporte multilingue de prompts no esta confirmado.
+- Etiqueta `not-for-all-audiences`: el repositorio puede contener o generar contenido para adultos; conviene filtrar en despliegues publicos.
+- Licencia Apache 2.0 permisiva para uso comercial, pero el autor no detalla condiciones adicionales ni la licencia del modelo base MOSS-Image, que conviene verificar antes de produccion.
+- Sin datos publicados de benchmarks, latencia ni requisitos de VRAM, la planificacion de produccion debe basarse en pruebas propias.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Kandoo/Juggernaut-Moss
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - RunDiffusion (patrocinador del computo): https://www.rundiffusion.com
-- No se han encontrado en la informacion disponible otros enlaces a papers, blogs, repositorios o demos.
+- Repositorio del autor (KandooAI): no disponible en la informacion proporcionada

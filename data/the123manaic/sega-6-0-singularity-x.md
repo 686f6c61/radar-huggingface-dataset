@@ -2,78 +2,90 @@
 
 ## Resumen
 
-Sega-6.0-Singularity-X es un modelo de generación de texto publicado en Hugging Face por el usuario the123manaic bajo la etiqueta "Segacopter Technology", presentado como la generación 6.0 de su familia de modelos. La model card declara una arquitectura propietaria denominada `SegaForCausalLM` con un esquema Mixture-of-Experts de 320B parámetros totales y 36B activos, además de un modo de razonamiento basado en Tree-of-Thought con verificación especulativa. La licencia declarada es Apache 2.0 y la librería de referencia es transformers con pesos en safetensors.
+Sega-6.0-Singularity-X es un modelo de generación de texto publicado en Hugging Face por el usuario the123manaic bajo licencia Apache 2.0. La model card lo presenta como la "Generación 6.0" de la supuesta tecnología "Segacopter", con una arquitectura denominada `SegaForCausalLM` y etiquetas que aluden a tree-of-thought, "nano-banana" y endpoints compatibles. La información declarada por el autor es, sin embargo, contradictoria con los datos reales del repositorio.
 
-Sin embargo, existe una discrepancia crítica entre la documentación y los artefactos publicados: el recuento real de parámetros de los ficheros safetensors del repositorio es de 1.792 parámetros, no de 320.000 millones. Esta cifra es compatible con un modelo de juguete o con un repositorio de demostración cuyo contenido no se corresponde con lo descrito en el README. El repositorio no registra descargas ni likes en el momento de la consulta y fue creado el 15 de noviembre de 2026.
+El dato objetivo disponible —el recuento de parámetros en los ficheros safetensors— indica un total de 1.792 parámetros, es decir, un modelo de escala trivial, muy lejos de los "320B MoE (36B activos)" que afirma la model card. Esta discrepancia de seis órdenes de magnitud, junto con métricas no verificables como "Epistemic IQ: 99.9%" o "Tree-of-Thought Verification: 14 pasadas / 96 ramas especulativas", hace que la ficha deba leerse con máxima cautela: los datos de rendimiento del autor no son fiables y no se han podido contrastar con benchmarks independientes.
 
-Por tanto, esta ficha debe leerse con cautela: las especificaciones que siguen distinguen explícitamente entre lo declarado por el autor en la model card y lo verificable en los artefactos del repositorio. No se dispone de información sobre datos de entrenamiento, tokenizador, benchmarks publicados ni idiomas soportados más allá de las afirmaciones del README.
+El modelo acumula 346 descargas y 0 likes en el momento de la consulta, con creación el 15 de noviembre de 2026 y última actualización el 23 de noviembre de 2026. No se dispone de información sobre idiomas soportados, datos de entrenamiento ni resultados de evaluación.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | `SegaForCausalLM` (declarada); no verificable en los artefactos |
-| Parámetros totales | 320B declarados en la model card; 1.792 reales según safetensors del repositorio |
-| Parámetros activos | 36B declarados (esquema MoE); no verificable |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible (solo se distribuyen pesos safetensors) |
-| Idiomas soportados | no disponible |
+| Arquitectura | `SegaForCausalLM` (declarada por el autor); no verificable |
+| Parámetros totales | 1.792 (según safetensors); el autor declara 320B, dato no contrastable |
+| Parámetros activos | El autor declara 36B (MoE); no verificable |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | No disponible |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-La model card describe una arquitectura denominada `SegaForCausalLM` con un esquema Mixture-of-Experts de 320B parámetros totales y 36B activos, junto con un mecanismo de razonamiento basado en Tree-of-Thought con "14 pasadas de verificación y 96 ramas especulativas". Se mencionan además métricas propietarias como "Epistemic IQ 99,9%", "Token Efficiency 95%" y una velocidad de síntesis de 270 tokens por segundo. Ninguna de estas afirmaciones viene acompañada de detalles técnicos verificables: no se especifica el número de tokens de entrenamiento, la composición del dataset, la presencia de RLHF o DPO, ni innovaciones de atención o decodificación más allá de las etiquetas del repositorio.
+La model card describe una arquitectura propietaria llamada `SegaForCausalLM` con un esquema MoE de 320B parámetros totales y 36B activos, además de un mecanismo de "Tree-of-Thought Verification" con 14 pasadas y 96 ramas especulativas. No se aporta información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO.
 
-El contraste con los artefactos publicados es determinante: el recuento de parámetros de los ficheros safetensors (1.792) es incompatible con una arquitectura de 320B. No se ha publicado información sobre el proceso de entrenamiento, la tokenización ni la configuración del modelo (`config.json` no se detalla en la información disponible). Cualquier evaluación de la arquitectura debe considerarse no verificada.
+Los datos reales del repositorio contradicen esa descripción: el recuento de safetensors arroja 1.792 parámetros, un tamaño compatible con un modelo de juguete o con pesos de prueba, no con un MoE de 320B. No hay documentación técnica, paper ni repositorio de código que respalde las afirmaciones de la model card. Cualquier innovación mencionada (decodificación especulativa, verificación ToT) debe considerarse no verificada.
 
 ## Capacidades
 
-- Generación de texto autoregresiva según el pipeline declarado (`text-generation`).
-- Razonamiento multi-paso mediante Tree-of-Thought, según la model card (no verificado).
-- Verificación especulativa con múltiples ramas, según la model card (no verificado).
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes: no disponible.
-- Capacidades multilingües: no disponible (no se declaran idiomas).
-- Capacidades de visión o audio: no disponibles.
+- Generación de texto: es la tarea declarada en el pipeline (`text-generation`), pero no hay evidencia de calidad o coherencia.
+- Razonamiento y tree-of-thought: el autor lo anuncia, pero no se ha demostrado ni evaluado de forma independiente.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: no disponible.
+- Capacidades especiales (visión, audio, thinking mode): no disponible; la etiqueta "nano-banana" no tiene definición técnica pública asociada.
 
 ## Casos de uso
 
-- Evaluación de repositorios de modelos: el caso de uso realista e inmediato es el estudio de discrepancias entre model cards y artefactos publicados, útil para investigadores que auditan la calidad de publicaciones en Hugging Face.
-- Pruebas de integración con transformers: el fragmento de código del README permite verificar el flujo `AutoTokenizer` + `AutoModelForCausalLM` en entornos de CI para validar la carga de safetensors, aunque el modelo resultante no tendrá las capacidades declaradas.
-- Docencia sobre buenas prácticas de publicación: sirve como ejemplo de model card con métricas no reproducibles y recuento de parámetros inconsistente.
-- Prototipado de pipelines de texto: si el repositorio contiene realmente un modelo pequeño, podría usarse para pruebas de humo de infraestructura (serving, logging, tokenización) sin coste de GPU.
-- No se recomienda su uso en producción, atención al cliente, generación de código, matemáticas o cualquier tarea que requiera las capacidades declaradas en la model card, al no estar respaldadas por los artefactos.
-- No se dispone de información suficiente para proponer casos de uso adicionales realistas.
+- Evaluación de la veracidad de model cards: el modelo sirve como caso de estudio de discrepancias entre las métricas declaradas por el autor y los datos reales del repositorio, útil para formar a revisores de modelos.
+- Pruebas de pipelines de carga con transformers: al ser un checkpoint mínimo, permite validar flujos de `AutoModelForCausalLM.from_pretrained` y `AutoTokenizer.from_pretrained` sin consumir recursos.
+- Docencia sobre licencias y publicación de modelos: ilustra cómo una licencia Apache 2.0 no garantiza que las afirmaciones técnicas del autor sean correctas.
+- Experimentos de auditoría de repositorios de Hugging Face: sirve para probar herramientas que detecten inconsistencias entre parámetros declarados y parámetros reales en safetensors.
+- Pruebas de integración de endpoints compatibles: la etiqueta `endpoints_compatible` permite ensayar el despliegue en infraestructuras de inferencia sin coste de cómputo relevante.
+- No se recomienda su uso en producción, atención al cliente, generación de código ni ninguna tarea real de generación de texto, dada la ausencia de evidencia de calidad y la incoherencia de los datos declarados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card incluye métricas propietarias ("Epistemic IQ 99,9%", "Token Efficiency 95%", 270 tokens/s) sin metodología, conjunto de evaluación ni comparación con modelos de referencia, por lo que no se presentan como resultados de benchmark.
+No se han publicado resultados de benchmarks verificables en la información disponible. La model card incluye cifras no auditadas (270 tokens/s, "Token Efficiency 95%", "Epistemic IQ 99.9%") que no corresponden a ninguna métrica estándar reconocida y que no pueden contrastarse con MMLU, HumanEval, GSM8K ni similares.
+
+| Métrica declarada por el autor | Valor | Verificable |
+|---|---|---|
+| Velocidad de razonamiento | 270 tokens/s | No |
+| Eficiencia de tokens | 95% | No (métrica no estándar) |
+| Epistemic IQ | 99.9% | No (métrica no estándar) |
+| Pasadas de verificación ToT | 14 | No |
+| Ramas especulativas | 96 | No |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible para la configuración declarada de 320B MoE (requeriría, en estimación teórica, varios cientos de GB en BF16 y un clúster multi-GPU; no confirmado).
-- Para los 1.792 parámetros reales de los safetensors, la inferencia cabría en CPU o en cualquier GPU consumer, pero no se trata de un modelo funcional de propósito general.
-- GPU recomendadas: no disponible.
-- Despliegue: transformers con safetensors según el README; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: los 270 tokens/s declarados no son verificables.
+- VRAM estimada para inferencia: con 1.792 parámetros reales, el modelo cabe en cualquier GPU consumer e incluso en CPU; el espacio necesario es de kilobytes, no de gigabytes.
+- GPU recomendadas: cualquiera; no se requiere A100, H100 ni RTX 4090 para los pesos reales del repositorio.
+- Si el autor hubiera publicado realmente un MoE de 320B/36B activos, el requisito sería de decenas de GB de VRAM (aproximadamente 64-80 GB en FP16 para los pesos activos más caché, y varios cientos de GB para los pesos completos), pero no hay evidencia de que tales pesos existan.
+- Opciones de despliegue: transformers con safetensors (según la model card); compatibilidad con vLLM, llama.cpp, Ollama o TGI no está confirmada.
+- Latencia y throughput: no disponibles de forma fiable; la cifra de 270 tokens/s no es verificable.
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen modelos comparables de la familia "Segacopter Technology" ni alternativas MoE de 320B/36B activos con las que contrastar de forma fiable en la información proporcionada.
+No disponible. No se conocen modelos comparables de la familia "Segacopter" ni alternativas publicadas por el mismo autor con documentación técnica verificable. Frente a modelos reales de escala similar (por ejemplo, modelos de menos de 10M de parámetros usados en pruebas), la comparación no aporta valor porque la propuesta declarada (320B MoE) no se sostiene con los datos del repositorio.
+
+| Modelo | Parámetros (reales) | Contexto | Licencia | Evidencia pública |
+|---|---|---|---|---|
+| Sega-6.0-Singularity-X | 1.792 | No disponible | Apache 2.0 | Model card contradictoria |
+| Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
-- Inconsistencia crítica: la model card declara 320B parámetros y los safetensors contienen 1.792; el modelo no puede ofrecer las capacidades descritas.
-- Métricas no reproducibles: "Epistemic IQ", "Token Efficiency" y velocidad de síntesis carecen de definición y metodología.
-- Sin información sobre datos de entrenamiento, sesgos o composición del corpus.
-- Sin información sobre idiomas soportados ni calidad multilingüe.
-- Riesgo elevado de alucinación si se usa como modelo de texto real, dado el tamaño efectivo de los pesos.
-- Licencia Apache 2.0 permite uso comercial de los artefactos, pero la ausencia de capacidades verificadas hace inviable su explotación en producción.
-- Repositorio sin descargas ni validación comunitaria en el momento de la consulta.
-- No se debe citar este modelo como referencia de arquitecturas MoE de 320B sin verificación independiente de los pesos.
+- Discrepancia grave entre los parámetros declarados (320B MoE) y los reales (1.792), lo que invalida las afirmaciones de rendimiento de la model card.
+- Métricas inventadas o no estándar ("Epistemic IQ", "Token Efficiency", "Tree-of-Thought Verification") sin definición ni metodología.
+- Ausencia total de documentación sobre datos de entrenamiento, evaluación y alineación.
+- Riesgo elevado de alucinación y de comportamiento incoherente si se usa para generación de texto real.
+- Idiomas soportados no especificados; no hay garantía de calidad en castellano ni en ningún otro idioma.
+- La licencia Apache 2.0 permite uso comercial de los pesos, pero eso no implica que el modelo funcione ni que las afirmaciones del autor sean ciertas.
+- No apto para producción, investigación seria ni sistemas que requieran fiabilidad.
+- Las etiquetas "nano-banana" y "segacopter" no tienen significado técnico público verificable.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/the123manaic/Sega-6.0-Singularity-X
-- No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.
+- No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

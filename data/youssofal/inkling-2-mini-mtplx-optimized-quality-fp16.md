@@ -2,100 +2,101 @@
 
 ## Resumen
 
-Inkling 2 Mini MTPLX Optimized Quality FP16 es un empaquetado cuantizado del modelo abierto Inkling-2-Mini, desarrollado originalmente por Thinking Machines Lab y redistribuido por el usuario Youssofal para su uso con MTPLX, la aplicacion y CLI de inferencia local para Apple Silicon. El modelo base es un transformer de tipo mezcla de expertos (MoE) con 26.388.646.440 parametros totales y 3.400 millones de parametros activos por token, disenado para tareas de codigo, agentes y vision, con una ventana de contexto de hasta 1.048.576 tokens.
+Inkling-2-Mini-MTPLX-Optimized-Quality-FP16 es un empaquetado de pesos del modelo Inkling-2-Mini de Thinking Machines Lab, adaptado por el usuario Youssofal para su ejecución en Apple Silicon mediante el runtime MTPLX. El modelo base es un transformer de tipo mezcla de expertos (MoE) con 26.388.646.440 parámetros totales y 3.400 millones de parámetros activos por token, según la model card, con una ventana de contexto de hasta 1.000.000 de tokens. Está orientado a generación de código, agentes y tareas multimodales de imagen y texto.
 
-Este empaquetado concreto esta pensado para Macs con chip M1 y M2, que carecen de soporte nativo de bfloat16: todos los tensores de 16 bits (torre de vision y cabeza de borrador incluidas) se almacenan en float16, mientras que los codigos de 4 y 8 bits se conservan identicos al empaquetado padre. Incluye decodificacion especulativa mediante una cabeza de prediccion multi-token propia del modelo, de modo que el borrador propone tokens y el modelo completo los verifica en una sola pasada, preservando la distribucion original de salida.
+La particularidad de este paquete es su enfoque de despliegue: MTPLX incorpora decodificación especulativa mediante una cabeza de predicción multi-token (MTP) propia del modelo, que permite proponer varios tokens y validarlos en una sola pasada del modelo completo, preservando la distribución original. Además, esta variante concreta almacena todos los tensores de 16 bits (incluida la torre de visión y la cabeza de borrador) como float16, porque los Mac con chip M1 y M2 no disponen de bfloat16 nativo, mientras que conserva los códigos de 4 y 8 bits del paquete padre.
 
-Su relevancia es practica: permite ejecutar un modelo MoE de 26.400 millones de parametros con vision y contexto de hasta 1 millon de tokens en hardware de consumo Apple Silicon con 32 GB o mas de memoria unificada, algo que no es posible con los pesos en precision completa. El paquete requiere MTPLX 2.13 o superior y no carga en MTPLX 2.12.
+Es relevante ahora porque demuestra que un modelo MoE de 26.400 millones de parámetros con capacidades de visión y contexto de un millón de tokens puede servirse en hardware de consumo Apple con 32 GB o más, con velocidades de decodificación medidas por encima de 90 tokens por segundo en un M5 Max. La licencia Apache 2.0 y la disponibilidad de pesos en safetensors facilitan su evaluación y uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (mezcla de expertos) con torre de vision y cabeza de prediccion multi-token |
+| Arquitectura | Transformer con mezcla de expertos (MoE) y torre de visión; decodificación especulativa con cabeza MTP |
 | Parametros totales | 26.388.646.440 |
-| Parametros activos | 3.400 millones (8 de 128 expertos por token) |
-| Longitud de contexto | Hasta 1.048.576 tokens en el modelo; en este pack: 65.536 tokens con 32 GB, 647.168 tokens con 64 GB y 1.048.576 tokens con 96-192 GB (M1/M2) |
-| Tipos de cuantizacion | Expertos en NVFP4 (capas 0-19) y MXFP8 (capas 20-23); proyecciones de atencion, cabeza de salida, embeddings, torre de vision y cabeza de borrador en FP16 |
-| Idiomas soportados | No disponible |
-| Licencia | Apache 2.0 (con politica de uso aceptable de Thinking Machines) |
-| Formato de pesos | safetensors (libreria mtplx) |
+| Parametros activos | 3.400 millones por token |
+| Longitud de contexto | Hasta 1.000.000 de tokens (según model card del modelo base) |
+| Tipos de cuantizacion | Pesos de 16 bits almacenados como float16; códigos de 4 y 8 bits heredados del paquete padre; referencias a NVFP4 y MXFP8 en los tags |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (librería mtplx, orientada a MLX en Apple Silicon) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer de mezcla de expertos con 128 expertos, de los cuales se activan 8 por token, lo que da 3.400 millones de parametros activos sobre un total de 26.400 millones. Incorpora una torre de vision completa que permite entrada de imagen y texto (pipeline image-text-to-text), asi como una cabeza de prediccion multi-token que actua como borrador para decodificacion especulativa. El modelo soporta modo de razonamiento (thinking) segun los tags del repositorio.
+El modelo base Inkling-2-Mini emplea una arquitectura de mezcla de expertos con 26.400 millones de parámetros totales y 3.400 millones activos por token, lo que reduce el coste computacional por paso de decodificación respecto a un modelo denso del mismo tamaño. Incorpora una torre de visión completa que permite entrada de imagen y texto (pipeline image-text-to-text), y una cabeza de predicción multi-token (MTP) que actúa como mecanismo de borrador para decodificación especulativa. Esta cabeza es la que explota MTPLX: propone varios tokens candidatos y el modelo completo los verifica en una única pasada, de modo que la salida mantiene la distribución del modelo original en lugar de recurrir a un modelo borrador externo.
 
-Este empaquetado no reentrena ni modifica la arquitectura: solo altera la precision de almacenamiento. Los expertos se guardan en NVFP4 en las capas 0 a 19 (15,67 GB) y en MXFP8 en las capas 20 a 23; las proyecciones de atencion (1,29 GB), la cabeza de salida (0,93 GB), los embeddings (0,93 GB), la torre de vision (0,64 GB) y la cabeza de borrador (0,64 GB) se almacenan en FP16. El muestreo recomendado por el autor es temperatura 1.0 sobre la distribucion completa (top-p 1.0, sin top-k), y la verificacion especulativa acepta cada token candidato por la regla de razon de probabilidades, de modo que la salida sigue la distribucion del modelo a cualquier temperatura. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni las etapas de RLHF o DPO del modelo base.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la información proporcionada. El paquete de Youssofal no reentrena el modelo: es una conversión de precisión que preserva los pesos de expertos y de atención originales, sustituyendo únicamente el almacenamiento de los tensores de 16 bits por float16 para chips sin bfloat16 nativo. Los códigos de 4 y 8 bits se mantienen idénticos al paquete padre, y el diseño de contexto y kernels es el mismo.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento conversacional multi-turno.
-- Generacion de codigo y asistencia en tareas de programacion (tag `coding`).
-- Razonamiento agentico y multi-paso, con soporte de herramientas segun los tags del modelo base.
-- Vision: lectura de capturas de pantalla, diagramas y fotografias mediante la torre de vision incluida en FP16.
-- Entrada image-text-to-text (pipeline declarado).
-- Decodificacion especulativa con cabeza de prediccion multi-token propia, con salida que preserva la distribucion del modelo.
-- Modo de razonamiento (thinking) segun los tags del repositorio.
-- Capacidades multilingues: no disponible.
+- Generación de texto conversacional multi-turno con ventanas de contexto de hasta 1.000.000 de tokens.
+- Generación y razonamiento sobre código, incluyendo tareas de corrección y ejecución de pruebas: la model card reporta 6 de 6 pruebas de código ejecutables superadas en 3 tareas con 2 semillas cada una a temperatura 1.0.
+- Comprensión de imágenes: la torre de visión completa permite leer capturas de pantalla, diagramas y fotografías; se documenta la lectura del nombre y ambos recuentos de una captura de un test fallido.
+- Llamada a herramientas (tool calling / function calling): se documenta una turno de llamada que invoca la herramienta solicitada con la ciudad indicada por el usuario.
+- Razonamiento multi-paso y uso como agente, apoyado por el contexto largo y la capacidad de llamada a herramientas.
+- Decodificación especulativa nativa mediante la cabeza MTP, integrada en el runtime MTPLX.
+- Capacidades multilingües: no disponible.
 
 ## Casos de uso
 
-- Asistencia de codigo en local: el modelo puede integrarse en editores y CLI (OpenCode, Pi, Hermes) mediante la API compatible con OpenAI y Anthropic que sirve MTPLX en `127.0.0.1:8000`, aprovechando sus 3.400 millones de parametros activos para mantener latencia baja en Macs M1/M2.
-- Analisis de capturas de pantalla y diagramas: la torre de vision en FP16 permite enviar imagenes de interfaces, esquemas de arquitectura o graficos y obtener explicaciones o codigo derivado, sin salir del equipo.
-- Agentes multi-paso con contexto largo: con hasta 1.048.576 tokens de contexto en Macs de 96-192 GB, el modelo puede mantener el estado de una sesion agentica extensa con muchas llamadas a herramientas y documentos intermedios.
-- Procesamiento de repositorios completos: en Macs de 64 GB o mas, el contexto de 647.168 tokens permite cargar grandes porciones de un codebase para revision, refactorizacion o busqueda semantica asistida.
-- Desarrollo offline y privado: al ejecutarse integramente en Apple Silicon, es adecuado para entornos con requisitos de confidencialidad donde no se permite enviar codigo o imagenes a servicios en la nube.
-- Prototipado de aplicaciones con API local: `mtplx serve` expone endpoints compatibles con OpenAI y Anthropic, lo que permite sustituir un proveedor remoto por este modelo en fases de desarrollo y pruebas.
-- Generacion de documentacion tecnica a partir de imagenes y texto combinados, usando la entrada image-text-to-text del pipeline.
+- Asistencia de programación local en Mac: el modelo puede generar, revisar y corregir código en un entorno sin conexión, aprovechando sus 3.400 millones de parámetros activos para mantener velocidades de decodificación altas (medidas en torno a 85-97 tokens por segundo en un M5 Max) y su contexto de hasta 1.000.000 de tokens para cargar repositorios completos o trazas de error extensas.
+- Análisis de capturas de pantalla y diagramas: la torre de visión permite interpretar imágenes de interfaces, diagramas de arquitectura o capturas de fallos de test, lo que resulta útil para depuración asistida a partir de material visual del usuario.
+- Agentes locales con llamada a herramientas: al soportar function calling, puede integrarse en flujos que consulten APIs, ejecuten comandos o recuperen datos, manteniendo la conversación en local y evitando enviar información sensible a servicios externos.
+- Revisión de código en pipelines de integración continua: con contexto largo puede procesar diffs amplios y registros de compilación, y su licencia Apache 2.0 permite integrarlo en herramientas internas de empresa sin restricciones de uso comercial.
+- Prototipado de asistentes conversacionales en Apple Silicon: MTPLX ofrece una aplicación y una CLI (`mtplx start`) que seleccionan automáticamente esta variante FP16 en Macs M1 y M2 con 32 GB o más, lo que simplifica el despliegue en equipos de desarrollo.
+- Evaluación e investigación de decodificación especulativa: al exponer una cabeza MTP y un runtime que la explota, sirve para estudiar el equilibrio entre velocidad de decodificación y fidelidad de distribución (la model card reporta un 95,7 % de coincidencia en el token superior y una divergencia KL media de 0,0174 frente a los pesos oficiales).
+- Procesamiento de documentos largos con componente visual: la combinación de contexto de un millón de tokens y visión permite analizar informes extensos con gráficos incrustados en un solo flujo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card sí incluye mediciones propias de fidelidad y velocidad del runtime:
 
-## Requisitos de hardware
+| Prueba | Resultado |
+|---|---|
+| Coincidencia del token superior frente a pesos oficiales (256 posiciones tras prompt de 4.142 tokens) | 245 de 256 (95,7 %); divergencia KL media 0,0174 |
+| Pérdida sobre 6.140 tokens de código y prosa reales frente a pesos oficiales | -0,0028 nats por token (error estándar 0,0028, dentro del ruido) |
+| Pruebas de código ejecutables (3 tareas, 2 semillas, temperatura 1.0) | 6 de 6 superadas |
+| Memoria pico sirviendo un prompt de 4.142 tokens | 22,3 GiB |
 
-- Hardware objetivo: exclusivamente Apple Silicon M1 y M2 (este pack no esta pensado para M3, M4 o M5, que deben usar los packs padre).
-- Memoria unificada minima: 32 GB para M1/M2; con 32 GB el contexto maximo es de 65.536 tokens, con 64 GB de 647.168 tokens y con 96-192 GB de 1.048.576 tokens.
-- Descarga: 20,2 GB.
-- Memoria pico medida: 22,3 GiB sirviendo un prompt de 4.142 tokens en la ruta de codigo de M1/M2, medido en un M5 Max.
-- Despliegue: aplicacion MTPLX (mtplx.com) o CLI `mtplx` (instalable via Homebrew o pip); requiere MTPLX 2.13 o superior.
-- Integraciones de cliente: OpenCode, Pi y Hermes mediante `mtplx start`; API OpenAI y Anthropic en `127.0.0.1:8000` mediante `mtplx serve`.
-- No compatible con vLLM, llama.cpp, Ollama ni TGI segun la informacion disponible.
-- Latencia y throughput: no disponibles.
+Velocidad de decodificación en tokens por segundo, sobre los mismos pesos oficiales (MacBook Pro M5 Max, 128 GB, 23 de noviembre de 2026):
+
+| Prueba | MTPLX 2.13.2 | mlx-serve 26.11.4 | oMLX 0.8.3 |
+|---|---:|---:|---:|
+| Prompt de código de 4.142 tokens, primera petición | 96,2 | 79,0 | 62,9 |
+| Prompt de código de 4.142 tokens, petición repetida | 90,5 | 73,9 | 57,6 |
+| Prompt corto de 558 tokens | 75,0 | 72,3 | 56,8 |
+| Respuesta larga de 1.500 tokens | 78,1 | 70,1 | 53,0 |
+| Media de las cuatro pruebas | 85,0 | 73,8 | 57,6 |
+
+Con cada motor sobre su propio paquete rápido, la media de MTPLX es de 97,1 tokens por segundo frente a 85,7 de mlx-serve y 68,9 de oMLX. En tiempo hasta el primer token, MTPLX queda por detrás: 1,78 s frente a 1,53 s de mlx-serve y 2,54 s de oMLX en un prompt nuevo de 4.142 tokens. No se han medido velocidades en un M1 o M2 real; las cifras anteriores se obtuvieron en el M5 Max recorriendo la ruta de código que usaría un M1 o M2.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales / activos | Contexto | Licencia | Disponibilidad |
+| Modelo | Parámetros totales / activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Inkling 2 Mini MTPLX Optimized Quality FP16 (este pack) | 26,4 B / 3,4 B | Hasta 1.048.576 tokens (segun memoria) | Apache 2.0 | Hugging Face, MTPLX |
-| Inkling 2 Mini MTPLX Optimized Quality (padre, M3/M4/M5) | 26,4 B / 3,4 B | Hasta 1.048.576 tokens | Apache 2.0 | Hugging Face, MTPLX |
-| Inkling 2 Mini MTPLX Bare Speed FP16 | 26,4 B / 3,4 B | Hasta 1.048.576 tokens | Apache 2.0 | Hugging Face, MTPLX |
-| thinkingmachines/Inkling-2-Mini (base) | 26,4 B / 3,4 B | Hasta 1.048.576 tokens | Apache 2.0 | Hugging Face |
+| Inkling-2-Mini (Thinking Machines) | 26.400 M / 3.400 M | Hasta 1.000.000 tokens | Apache 2.0 | Pesos abiertos en Hugging Face |
+| Este paquete (Youssofal, FP16 MTPLX) | 26.400 M / 3.400 M | Hasta 1.000.000 tokens | Apache 2.0 | safetensors, runtime MTPLX para Apple Silicon |
+| mlx-serve 8-bit pack (referenciado en la model card) | no disponible | no disponible | no disponible | Paquete de 18,7 GB para MLX |
+| oMLX oQ4e pack (referenciado en la model card) | no disponible | no disponible | no disponible | Paquete de 16,9 GB para MLX |
 
-No se dispone de datos de rendimiento comparativo entre estos packs ni con modelos de otros fabricantes en la informacion proporcionada.
+La comparación disponible se limita a los motores de inferencia y paquetes de cuantización citados por el autor; no se aportan datos de otros modelos de la misma categoría (MoE multimodal de ~26.000 millones de parámetros) para comparar parámetros, contexto o rendimiento.
 
 ## Limitaciones y advertencias
 
-- Exclusivo para Apple Silicon M1 y M2: en M3, M4 o M5 debe usarse el pack padre; el autor indica que MTPLX selecciona automaticamente el adecuado.
-- Requiere MTPLX 2.13 o superior; no carga en MTPLX 2.12.
-- No cabe en Macs de 8, 16 o 24 GB; el autor recomienda modelos alternativos en esos casos.
-- La cuantizacion NVFP4/MXFP8 en los expertos puede degradar la calidad frente a los pesos originales en precision completa; el pack conserva los codigos del padre, pero no se aportan metricas de perdida de calidad.
-- Riesgo de alucinacion inherente a los modelos generativos; no se documentan evaluaciones especificas de fidelidad.
-- Idiomas soportados no disponibles; no se puede confirmar el rendimiento en castellano.
-- Sesgos conocidos: no disponibles en la informacion proporcionada.
-- Licencia Apache 2.0, pero sujeta a la politica de uso aceptable de Thinking Machines Lab, que puede restringir determinados usos.
-- El muestreo debe seguir la configuracion del autor (temperatura 1.0, top-p 1.0, sin top-k) para preservar la distribucion; otros ajustes pueden alterar el comportamiento esperado.
-- El rendimiento y la latencia dependen del ancho de banda de memoria del chip; no se publican cifras de throughput.
+- Este paquete es una conversión de precisión, no un modelo entrenado desde cero: su calidad depende enteramente del modelo base Inkling-2-Mini y de la fidelidad de la conversión. La model card reporta una coincidencia del 95,7 % en el token superior, por lo que existe una divergencia pequeña pero no nula frente a los pesos oficiales.
+- Las mediciones de velocidad se realizaron en un MacBook Pro M5 Max, no en un M1 o M2; el autor indica explícitamente que esta variante aún no se ha ejecutado en un M1 o M2 real.
+- Requiere el runtime MTPLX y hardware Apple Silicon con 32 GB o más; no es un paquete portable a CUDA, vLLM, llama.cpp ni otros ecosistemas.
+- La memoria pico medida sirviendo un prompt de 4.142 tokens es de 22,3 GiB, lo que deja poco margen en equipos de 32 GB con prompts más largos o respuestas extensas.
+- No se dispone de información sobre idiomas soportados, sesgos conocidos ni tasas de alucinación del modelo base en la información proporcionada.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base original y de los componentes de terceros antes de desplegarlo en producción.
+- El tiempo hasta el primer token es superior al de mlx-serve en prompts nuevos (1,78 s frente a 1,53 s), lo que puede penalizar cargas interactivas con prompts largos y peticiones no repetidas.
 
 ## Enlaces
 
-- Hugging Face (este pack): https://huggingface.co/Youssofal/Inkling-2-Mini-MTPLX-Optimized-Quality-FP16
-- Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
-- Pack padre Optimized Quality: https://huggingface.co/Youssofal/Inkling-2-Mini-MTPLX-Optimized-Quality
-- Pack hermano Bare Speed FP16: https://huggingface.co/Youssofal/Inkling-2-Mini-MTPLX-Bare-Speed-FP16
-- Pack hermano Optimized Speed FP16: https://huggingface.co/Youssofal/Inkling-2-Mini-MTPLX-Optimized-Speed-FP16
-- Pack Bare Speed (M3/M4/M5): https://huggingface.co/Youssofal/Inkling-2-Mini-MTPLX-Bare-Speed
-- Pack Optimized Speed (M3/M4/M5): https://huggingface.co/Youssofal/Inkling-2-Mini-MTPLX-Optimized-Speed
-- MTPLX: https://mtplx.com
-- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
-- Politica de uso aceptable de Thinking Machines: https://thinkingmachines.ai/model-acceptable-use-policy/
+- [Hugging Face: Youssofal/Inkling-2-Mini-MTPLX-Optimized-Quality-FP16](https://huggingface.co/Youssofal/Inkling-2-Mini-MTPLX-Optimized-Quality-FP16)
+- [Paquete padre: Inkling-2-Mini-MTPLX-Optimized-Quality](https://huggingface.co/Youssofal/Inkling-2-Mini-MTPLX-Optimized-Quality)
+- [Modelo base: thinkingmachines/Inkling-2-Mini](https://huggingface.co/thinkingmachines/Inkling-2-Mini)
+- [MTPLX](https://mtplx.com)
+- [Ficha del modelo en MTPLX](https://mtplx.com/models/inkling-2-mini/)
+- [Comparativa MTPLX, mlx-serve y oMLX en Inkling 2 Mini](https://mtplx.com/compare/mlx-serve-vs-omlx-vs-mtplx/)
+- [Licencia Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)

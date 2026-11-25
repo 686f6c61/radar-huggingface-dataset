@@ -42,11 +42,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Upscale AI Models (283) | Civitai",
-      "url": "https://civitai.com/tag/upscale",
-      "snippet": "Browse 283 AI models tagged \"Upscale\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
-    }
-  ]
+  "sources": []
 }

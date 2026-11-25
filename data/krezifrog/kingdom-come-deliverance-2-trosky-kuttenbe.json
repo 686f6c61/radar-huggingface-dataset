@@ -1,0 +1,93 @@
+{
+  "schema": 2,
+  "id": "krezifrog/kingdom-come-deliverance-2-trosky-kuttenbe",
+  "slug": "krezifrog-kingdom-come-deliverance-2-trosky-kuttenbe",
+  "author": "krezifrog",
+  "url": "https://huggingface.co/krezifrog/kingdom-come-deliverance-2-trosky-kuttenbe",
+  "created_at": "2026-11-25T00:05:18.000Z",
+  "updated_at": "2026-11-25T00:05:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id"
+  ],
+  "tags": [
+    "windows",
+    "windows-11",
+    "x64",
+    "portable",
+    "kingdom-come-deliverance-2-trosky-kuttenbe",
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comedy Gigs & Open Mic Nights Near You | Open Comedy",
+      "url": "https://opencomedy.com/gigs/comedy",
+      "snippet": "Find comedy shows, open mic nights, and paid gigs in your area. Apply with one click and get booked. Updated daily with new …"
+    },
+    {
+      "title": "Billets humour & spectacles comedy | AXS",
+      "url": "https://www.axs.com/fr/category/artsandfamily/comedy",
+      "snippet": "Voici votre invitation pour le prochain one-man show près de chez vous. Que vous soyez amateur de stand-up, d’improvisation ou …"
+    },
+    {
+      "title": "Comedy Shows Near You - Schedule & Tickets 2026–2027",
+      "url": "https://comedy.tickets/near-me/",
+      "snippet": "6 days ago · Find your favorite comedy shows and comedians performing near you. Check out the schedule of your city’s current and …"
+    },
+    {
+      "title": "Les évènements Comédie, humour en France",
+      "url": "https://www.infolocale.fr/evenements/rubrique-concerts-spectacles/categorie-spectacle/genre-comedie-humour",
+      "snippet": "30 minutes ago · Dans ce nouveau spectacle brillant et salvateur, la stand-uppeuse, chroniqueuse et philanthrope Morgane …"
+    }
+  ]
+}

@@ -2,86 +2,98 @@
 
 ## Resumen
 
-El modelo `mradermacher/Qwen3.6-27B-Heretic-SDFT-v1.2-GGUF` es una cuantización en formato GGUF del modelo base `ReadyArt/Qwen3.6-27B-Heretic-SDFT-v1.2`, desarrollado por el usuario mradermacher (nethype GmbH). Se trata de un modelo de 27.320 millones de parámetros, basado en la arquitectura Qwen 3.6, que ha sido finamente ajustado («heretic» y «SDFT») para eliminar filtros de seguridad y permitir generación de contenido sin restricciones, incluyendo roleplay explícito y contenido NSFW. El modelo incluye un componente multimodal (proyectores `mmproj`), lo que sugiere capacidades de visión además de texto.
+Qwen3.6-27B-Heretic-SDFT-v1.2-GGUF es la distribucion en formato GGUF del modelo ReadyArt/Qwen3.6-27B-Heretic-SDFT-v1.2, un ajuste fino de la familia Qwen 3.6 con 27.320.697.856 parametros totales (aproximadamente 27,3 mil millones). El modelo se presenta explicitamente como una variante "unaligned" y "heretic", orientada a roleplay, contenido explicito y generacion de conversaciones sin los filtros de alineamiento habituales. La cuantizacion la firma mradermacher, un conocido empaquetador de pesos GGUF para llama.cpp y derivados.
 
-La relevancia de este modelo radica en su orientación a casos de uso creativos y conversacionales no moderados, donde se prioriza la libertad de expresión sobre la seguridad. Se distribuye en 13 cuantizaciones GGUF que van desde Q2_K (11 GB) hasta Q8_0 (29,1 GB), más dos variantes del proyector multimodal. Es un modelo «desalineado» por diseño, por lo que su uso en entornos de producción conlleva riesgos importantes que deben evaluarse.
+El repositorio incluye un conjunto amplio de cuantizaciones estaticas (de Q2_K a Q8_0, mas IQ4_XS) y dos ficheros mmproj, lo que indica que el modelo base incorpora componentes multimodales (vision) que se conservan en la conversion. El tamano total del repositorio es de 190,8 GB, aunque cada fichero individual ocupa entre 11 GB y 29,1 GB. La licencia declarada es Apache 2.0, con etiquetas adicionales de "Other License" en los metadatos del autor original.
 
-## Especificaciones técnicas
+Su relevancia practica es doble: por un lado, permite ejecutar un modelo de 27B en hardware de consumo mediante cuantizacion; por otro, documenta un caso de uso de "desalineamiento" deliberado que conviene tratar con cautela en entornos de produccion. No se dispone de informacion publica sobre la longitud de contexto, la composicion del dataset de entrenamiento ni resultados de benchmarks.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal (familia Qwen 3.6) con encoder de visión |
-| Parametros totales | 27.320.697.856 (27,32B) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
+| Arquitectura | no disponible (modelo base de la familia Qwen 3.6; no se detalla en la informacion proporcionada) |
+| Parametros totales | 27.320.697.856 (~27,3 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF: Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 + mmproj-f16 y mmproj-Q8_0 |
-| Idiomas soportados | inglés (en) |
-| Licencia | apache-2.0 (declarada en metadata; tag adicional «Other License» en el repositorio) |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16; variantes imatrix en repo i1-GGUF |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 (con etiqueta "Other License" en los metadatos del autor original) |
+| Formato de pesos | GGUF (transformers como libreria declarada; el repo base contiene safetensors) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta no está documentada en la información proporcionada, pero se trata de un modelo de lenguaje causal de la familia Qwen 3.6 con 27.320 millones de parámetros. El hecho de que se incluyan archivos `mmproj` (multi-modal projection) indica que el modelo incorpora un codificador visual que permite entrada de imágenes, aunque no se detalla la arquitectura de este componente. El entrenamiento incluye un ajuste fino denominado «SDFT» (posiblemente Supervised Direct Fine-Tuning) sobre el modelo base `ReadyArt/Qwen3.6-27B-Heretic-SDFT-v1.2`, que a su vez es una variante «heretic» (desprovista de filtros de seguridad) de Qwen3.6-27B.
+No se dispone de informacion detallada sobre la arquitectura interna en la documentacion proporcionada. El nombre del modelo base (Qwen3.6-27B) sugiere una arquitectura transformer de la familia Qwen 3.6 con aproximadamente 27,3 mil millones de parametros, pero no se confirma si emplea attention lineal, decodificacion especulativa u otras innovaciones. La presencia de ficheros mmproj en el repositorio GGUF indica que el modelo base incorpora un proyector multimodal, presumiblemente para entrada de imagenes, aunque no se detalla su funcionamiento.
 
-No se proporcionan datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. La cuantización es estática (no imatrix) y fue realizada por mradermacher, quien indica que las cuantizaciones con imatrix podrían estar disponibles posteriormente. No hay información sobre innovaciones técnicas como decodificación especulativa o atención lineal.
+Respecto al entrenamiento, la model card del repositorio cuantizado no aporta informacion sobre el numero de tokens, la composicion del dataset ni las tecnicas de alineamiento empleadas. El sufijo "Heretic" y la etiqueta "unaligned" sugieren un proceso de ajuste fino orientado a eliminar o reducir el comportamiento de rechazo y la alineacion de seguridad del modelo original, pero no se documenta la metodologia (SFT, DPO, RLHF u otra). El sufijo "SDFT" tampoco se explica en la informacion disponible.
 
 ## Capacidades
 
-- Generación de texto libre sin filtros de seguridad, incluyendo contenido explícito, NSFW, roleplay y temas tabú.
-- Capacidades multimodales: el modelo incluye un proyecto multimodal (`mmproj`) que permite procesar imágenes junto con texto.
-- Soporte conversacional y de roleplay multi-turno, con capacidad para mantener contextos largos (longitud de contexto no especificada).
-- Multilingüismo: solo se declara soporte para inglés, aunque es probable que el modelo base de Qwen tenga capacidades multilingües, pero no está confirmado.
-- Sin información sobre tool calling, function calling o capacidades de agente.
-- El modelo está etiquetado como «unaligned» y «dangerous», lo que implica ausencia de alineación de seguridad.
+- Generacion de texto conversacional en ingles, con enfasis en dialogos multi-turno y roleplay.
+- Generacion de contenido explicito y NSFW, segun las etiquetas del autor (nsfw, explicit, ERP).
+- Comportamiento "unaligned": menor tendencia a rechazar peticiones, segun la propia descripcion del autor.
+- Capacidades multimodales: la presencia de ficheros mmproj sugiere soporte de entrada de imagenes, aunque no se detalla en la model card.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles segun el campo `language`.
+- Modo thinking explicito: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- **Roleplay y narración interactiva**: el modelo puede gestionar conversaciones multi-turno de personajes en escenarios de ficción, incluyendo tramas explícitas, gracias a su entrenamiento orientado a roleplay y su capacidad de mantener coherencia contextual.
-- **Escritura creativa sin restricciones**: para autores que necesitan generar contenido literario con temas adultos, violencia, sexo o transgresión, sin que el modelo rechace la solicitud.
-- **Simulación de personajes para juegos**: integración en motores de juego o chatbots de personajes no jugadores (NPC) que requieren respuestas sin censura en diálogos interactivos.
-- **Investigación sobre comportamiento de modelos desalineados**: estudio de sesgos, alucinaciones o dinámicas de generación en modelos sin filtros de seguridad, útil para la comunidad de IA responsable.
-- **Generación de contenido para ficción interactiva**: aplicaciones de novelas visuales o juegos de texto que requieren escenas explícitas, donde el modelo puede mantener un tono coherente y adaptarse a las elecciones del usuario.
-- **Experimentación en entornos de laboratorio**: evaluación de la capacidad de un modelo de 27B para producir contenido dañino o inapropiado, con fines de investigación sobre mitigación de riesgos.
+- Roleplay y narrativa interactiva: el modelo esta ajustado especificamente para conversaciones de personaje y ficcion, con etiquetas explicitas de roleplay y ERP; su tamano de 27B permite mantener coherencia en dialogos largos si el contexto lo permite (longitud no confirmada).
+- Generacion de ficcion para adultos: orientado a escritura creativa sin restricciones de contenido, adecuado para plataformas que requieran este tipo de material con las advertencias legales correspondientes.
+- Investigacion sobre alineamiento y seguridad: util como caso de estudio de modelos "desalineados" para evaluar comportamientos de rechazo, sesgos y riesgos en entornos controlados.
+- Despliegue local en hardware de consumo: las cuantizaciones Q4_K_M (16,9 GB) y Q4_K_S (15,9 GB) permiten ejecutar el modelo en GPUs con 24 GB de VRAM o en configuraciones con offload a CPU.
+- Prototipado de chatbots sin filtros: para pruebas internas de sistemas conversacionales donde se requiera evaluar el comportamiento del modelo sin capas de rechazo.
+- Evaluacion comparativa de cuantizaciones: el repositorio ofrece un espectro amplio de cuantizaciones (de Q2_K a Q8_0) que permite medir el impacto de la compresion en la calidad de generacion.
+- Analisis multimodal experimental: los ficheros mmproj permiten probar entrada de imagenes en llama.cpp, aunque la documentacion no detalla el alcance de esta capacidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos sobre MMLU, HumanEval, GSM8K ni otras métricas estándar. Tampoco se comparan con otros modelos de la misma categoría. La única referencia a rendimiento es el tamaño de las cuantizaciones y la nota de la tabla que indica que Q4_K_M y Q8_0 son «rápidas» y recomendadas, mientras que Q6_K ofrece «muy buena calidad».
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia**:
-  - Q2_K: ~11 GB de VRAM (puede ejecutarse en GPUs de 12 GB como RTX 3060/4060).
-  - Q4_K_M: ~16,9 GB (requiere GPUs de 16 GB o más, como RTX 4080, RTX 4090, A100 40 GB).
-  - Q8_0: ~29,1 GB (necesita GPUs de 32 GB o múltiples GPUs, como A100 80 GB o dos RTX 3090/4090).
-- **GPU recomendadas**: RTX 4090 (24 GB) para cuantizaciones hasta Q5_K_M; A100 80 GB o H100 para Q8_0 y mayor calidad.
-- **En consumer GPU**: sí, con cuantizaciones Q2_K a Q5_K_M en GPUs de 12-24 GB. Las cuantizaciones más pesadas requieren hardware profesional o multi-GPU.
-- **Opciones de despliegue**: llama.cpp, Ollama, KoboldCpp, LM Studio, text-generation-webui (vía GGUF). No se menciona compatibilidad con vLLM, pero es un modelo de Qwen, por lo que debería ser compatible si se convierte a formato safetensors.
-- **Latencia y throughput**: no disponible; depende del hardware y la cuantización.
+- VRAM estimada para inferencia (aproximada, segun el tamano de los ficheros GGUF):
+  - Q2_K: ~11 GB
+  - Q3_K_M: ~13,6 GB
+  - Q4_K_M: ~16,9 GB
+  - Q5_K_M: ~19,6 GB
+  - Q6_K: ~22,5 GB
+  - Q8_0: ~29,1 GB
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M con comodidad; A100 40 GB o H100 para Q8_0 y contextos largos; RTX 3090 (24 GB) para cuantizaciones Q4 y Q5.
+- Cabe en GPU de consumo: si, en RTX 3090/4090 con Q4_K_M o inferiores; en GPUs de 16 GB solo con Q2_K o Q3_K_S y offload parcial.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el repositorio declara `endpoints_compatible` y libreria `transformers` para el modelo base.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| `mradermacher/Qwen3.6-27B-Heretic-SDFT-v1.2-GGUF` | 27,32B | no disponible | apache-2.0 | GGUF | Desalineado, con visión |
-| `ReadyArt/Qwen3.6-27B-Heretic-SDFT-v1.2` | 27,32B | no disponible | apache-2.0 | safetensors | Modelo base original |
-| `mradermacher/Qwen3.6-27B-uncensored-heretic-v2-Native-MTP-Preserved-i1-GGUF` | 27,32B | no disponible | apache-2.0 | GGUF | Variante similar, con MTP preservado y cuantizaciones imatrix |
+| Qwen3.6-27B-Heretic-SDFT-v1.2-GGUF (este) | ~27,3 B | no disponible | apache-2.0 | GGUF | Ajuste "unaligned" para roleplay/NSFW |
+| Modelo base ReadyArt/Qwen3.6-27B-Heretic-SDFT-v1.2 | ~27,3 B | no disponible | apache-2.0 | safetensors | Pesos originales sin cuantizar |
+| Variantes i1-GGUF del mismo autor | ~27,3 B | no disponible | apache-2.0 | GGUF (imatrix) | Cuantizaciones ponderadas de mayor calidad |
 
-No hay datos de rendimiento comparativo entre estos modelos. El modelo base es el mismo, y las diferencias están en las cuantizaciones y en la presencia del proyecto multimodal.
+No se dispone de informacion sobre modelos comparables de otros autores en la documentacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Ausencia de filtros de seguridad**: el modelo está diseñado para generar contenido explícito, violento o peligroso sin restricciones. Puede producir respuestas inapropiadas, ofensivas o dañinas en contextos de producción.
-- **Riesgo de alucinación**: como cualquier modelo de lenguaje, puede generar información falsa o inventada, especialmente en temas no cubiertos por su entrenamiento.
-- **Soporte solo en inglés**: no se garantiza la calidad en otros idiomas.
-- **Contexto limitado**: no se especifica la longitud de contexto; si es similar a otros modelos Qwen, podría ser de 32K tokens, pero no se confirma.
-- **Licencia**: aunque la metadata indica apache-2.0, el tag «Other License» en el repositorio y el contenido del modelo pueden implicar restricciones adicionales para uso comercial o redistribución. Verificar con el modelo base.
-- **Cuantizaciones estáticas**: las cuantizaciones no son imatrix, por lo que la calidad puede ser inferior a las cuantizaciones con imatrix en ciertos casos.
-- **Riesgo legal**: el uso de este modelo para generar contenido ilegal (pornografía infantil, incitación al odio, etc.) puede violar leyes locales. No se recomienda su uso en entornos sin supervisión.
+- Modelo explicitamente "unaligned" y "dangerous" segun las etiquetas del autor: no incorpora las capas de rechazo y seguridad habituales, lo que aumenta el riesgo de generar contenido danino, ilegal o inapropiado.
+- Contenido NSFW y explicito: no apto para menores ni para entornos laborales sin controles; requiere moderacion externa si se expone a usuarios finales.
+- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad; como modelo de 27B sin benchmarks conocidos, la fiabilidad factua no esta verificada.
+- Idioma: solo se declara soporte de ingles; el rendimiento en castellano no esta garantizado.
+- Longitud de contexto desconocida: no se puede planificar su uso en tareas de contexto largo sin verificacion empirica.
+- Licencia: aunque se declara Apache 2.0, los metadatos incluyen "Other License" en el modelo original; conviene revisar los terminos del repo base antes de uso comercial.
+- Procedencia y trazabilidad: no se documenta el dataset de ajuste fino ni el proceso de "desalineamiento", lo que dificulta evaluar sesgos heredados.
+- Cuantizaciones de baja precision (Q2_K, Q3_K_S): perdida de calidad notable; el autor recomienda Q4_K_S o Q4_K_M para uso general.
 
 ## Enlaces
 
-- Modelo GGUF: https://huggingface.co/mradermacher/Qwen3.6-27B-Heretic-SDFT-v1.2-GGUF
-- Modelo base (safetensors): https://huggingface.co/ReadyArt/Qwen3.6-27B-Heretic-SDFT-v1.2
-- Variante similar con MTP: https://huggingface.co/mradermacher/Qwen3.6-27B-uncensored-heretic-v2-Native-MTP-Preserved-i1-GGUF
-- Análisis de la serie Qwen 3.x 27B: https://kgptalkie.com/tutorials/generative-ai/qwen-3-8-27b-vs-qwen-3-6-27b-vs-qwen-3-5-27b
-- Nota sobre la serie Heretic: https://www.hfdailybriefer.com/post/2707
+- Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.6-27B-Heretic-SDFT-v1.2-GGUF
+- Modelo base: https://huggingface.co/ReadyArt/Qwen3.6-27B-Heretic-SDFT-v1.2
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Qwen3.6-27B-Heretic-SDFT-v1.2-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3.6-27B-Heretic-SDFT-v1.2-GGUF
+- Guia de uso de GGUF (README de referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

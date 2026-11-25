@@ -2,90 +2,100 @@
 
 ## Resumen
 
-Aria 3B GGUF es una cuantización Q4_K_M del modelo Aria, un ajuste fino de tipo instrucción derivado de Qwen/Qwen2.5-3B-Instruct. Lo desarrolla Zerak Jamil (Department of Information System Engineering) y está orientado a funcionar como compañero personal de IA y agente de terminal en sandbox, entrenado expresamente en hardware de gama de entrada (una NVIDIA GeForce GTX 1650 Mobile con 4.096 MiB de VRAM). El modelo se distribuye en formato GGUF para su uso con llama.cpp y Ollama, con una ventana de contexto declarada de 4.096 tokens.
+Aria 3B GGUF es un ajuste fino del modelo Qwen2.5-3B-Instruct orientado a tareas de reparación de código y operación de terminal en entornos aislados (sandbox). Lo desarrolla Zerak Jamil, del Departamento de Ingeniería de Sistemas de Información de la Universidad Politécnica de Erbil, y se distribuye cuantizado en Q4_K_M para su ejecución en hardware de gama baja. La propuesta central es el entrenamiento en dispositivo mediante GRPO (Group Relative Policy Optimization) y RLVR (Reinforcement Learning with Verifiable Rewards), tecnicas de aprendizaje por refuerzo que el autor aplica sobre una GTX 1650 Mobile con 4.096 MiB de VRAM.
 
-La propuesta del autor se centra en un proceso de ajuste iterativo en ocho fases sobre 448 pares de interacción curados, con una pérdida de entrenamiento mínima reportada de 0,9130 y una verificación de 48 invariantes de sistema con una tasa de éxito del 100 %. El repositorio incluye tanto el modelo fusionado completo como un adaptador LoRA independiente en GGUF (rango 16, alpha 32), además de un Modelfile listo para Ollama.
+El modelo se presenta como un "companero personal de IA" y agente de terminal, con un enfasis claro en la auto-reparacion de trayectorias fallidas: cuando una solucion candidata no supera las aserciones de un sandbox de subprocesos, un mecanismo de reflexion guiado por ejecucion intenta corregirla. La ventana de contexto es de 4.096 tokens, coherente con el modelo base, y el entrenamiento se realizo sobre un conjunto muy reducido de 557 muestras.
 
-Por su tamaño (3,09B parámetros según la model card, 3.686.400 según los metadatos de safetensors) y su licencia Apache 2.0, el modelo es relevante para quienes necesitan un asistente conversacional ligero y desplegable en GPUs de consumo, aunque la información pública sobre evaluación, idiomas y datos de entrenamiento es muy limitada.
+Es relevante ahora porque demuestra un flujo completo de RL verificable en hardware de consumo, un enfoque poco habitual en modelos de 3B y que interesa a quienes investigan alineamiento y agentes autonomos con recursos limitados. No obstante, conviene tratar sus resultados con cautela: el volumen de datos de entrenamiento es minimo y los benchmarks publicados son internos, no comparables con evaluaciones estandar.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Qwen2ForCausalLM (transformer decoder-only) |
-| Parametros totales | 3,09B según model card; 3.686.400 según metadatos de safetensors (dato inconsistente) |
+| Parametros totales | 3.686.400.000 (3,09B segun model card; 3,686B en safetensors) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 4.096 tokens |
-| Tipos de cuantizacion | Q4_K_M (modelo fusionado); adaptador LoRA en GGUF (rango 16, alpha 32) |
+| Tipos de cuantizacion | Q4_K_M (fusionada); adaptador LoRA GGUF separado |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (modelo fusionado `aria_q4.gguf` de 2,17 GB y adaptador `aria_adapter_v8.gguf` de 14,7 MB) |
+| Formato de pesos | GGUF (llama.cpp / Ollama); adaptador LoRA GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura Qwen2ForCausalLM, un transformer decoder-only con atención causal estándar, heredada de Qwen2.5-3B-Instruct. La model card declara 3,09B parámetros, aunque los metadatos de safetensors del repositorio indican 3.686.400, una discrepancia que conviene verificar antes de cualquier despliegue. El contexto máximo declarado es de 4.096 tokens, notablemente inferior al que suele soportar la familia Qwen2.5.
+La base es un transformer decoder-only de la familia Qwen2, con 3,09B parametros y atencion causal estandar. Sobre ella se aplica un ajuste fino con GRPO: se muestrean grupos de G=4 candidatos con temperatura T=0,7, se ejecutan en un sandbox de subprocesos de dos niveles contra invariantes de referencia y se calcula una ventaja relativa normalizada (A_i = (r_i - r_barra) / (sigma_r + 1e-4)). El objetivo es reforzar trayectorias contrastivas, es decir, premiar la separacion entre respuestas correctas e incorrectas dentro del grupo. Las trayectorias fallidas pasan por un mecanismo de reflexion guiado por ejecucion implementado con un componente llamado TracebackDistiller, que reinyecta informacion del error para la auto-reparacion.
 
-El ajuste fino se realizó en ocho fases iterativas sobre 448 pares de interacción curados, alcanzando una pérdida de entrenamiento mínima de 0,9130. El autor reporta la verificación de 48 invariantes de sistema con un 100 % de éxito. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF o DPO. La cuantización Q4_K_M se describe como una fusión en memoria de tipo zero-copy mediante una herramienta propia denominada `llama-export-lora`. No se documentan innovaciones arquitectónicas adicionales como decodificación especulativa o atención lineal.
+El conjunto de entrenamiento consta de 557 muestras: 542 anclas de la fase 9 y 15 trayectorias doradas verificadas mediante RLVR. El entrenamiento se ejecuto durante 753 pasos y 3 epocas, con una perdida que descendio de 0,8113 a 0,0812 y una precision media de token del 78,7% al 82,3% en la fase final de decaimiento coseno. El autor declara que se superaron 109 de 109 invariantes de verificacion (48 invariantes, 10 contrafactuales, 8 de arnes y los propios de RLVR). Todo el proceso se realizo en una GTX 1650 Mobile, lo que constituye la innovacion metodologica principal mas que la arquitectura en si.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, orientada a un uso de compañero personal de IA.
-- Ejecución como agente de terminal en entorno sandbox, según la descripción del autor.
-- Reparación de código (etiqueta `code-repair` en los metadatos del repositorio).
-- Ajuste fino orientado a seguir invariantes de sistema (48 verificadas al 100 % según la model card).
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Capacidades especiales (modo thinking, visión, audio): no disponible en la información proporcionada.
+- Generacion de texto y razonamiento general heredados de Qwen2.5-3B-Instruct.
+- Generacion y reparacion de codigo, con enfasis en correccion de errores a partir de trazas de ejecucion.
+- Operacion de terminal en sandbox: ejecucion de comandos, interpretacion de salidas y correccion iterativa.
+- Razonamiento multi-paso con reflexion guiada por ejecucion (hasta un 55,0% de tasa de exito declarada y un 40,0% de recuperacion tras fallo).
+- Ajuste fino LoRA distribuido como adaptador independiente, lo que permite aplicar la fase 10 sobre la base sin reemplazarla.
+- Capacidades multilingues: no disponibles de forma explicita en la informacion proporcionada.
+- Tool calling / function calling: no documentado de forma especifica; el enfoque del modelo es la ejecucion directa en terminal, no el protocolo de funciones.
+- Vision y audio: no soportados.
 
 ## Casos de uso
 
-- Asistente personal conversacional en local: el modelo puede desplegarse con Ollama mediante `ollama run hf.co/zerak12/aria-3b-gguf:aria_q4.gguf` y mantener conversaciones multi-turno con hasta 4.096 tokens de contexto en equipos con GPU de gama de entrada.
-- Agente de terminal en sandbox: por su entrenamiento declarado como agente de terminal, encaja en flujos donde el modelo interpreta comandos y responde en un entorno aislado, con la cautela de validar los invariantes de seguridad en producción.
-- Reparación de código asistida: la etiqueta `code-repair` sugiere su uso para detectar y corregir errores en fragmentos de código dentro de editores o pipelines ligeros, aunque no se aportan métricas de calidad.
-- Prototipado rápido en hardware de consumo: con 2,17 GB en Q4_K_M, permite iterar sobre asistentes conversacionales en portátiles con 4 GB de VRAM, como la GTX 1650 Mobile usada en el entrenamiento.
-- Despliegue en entornos con requisitos de licencia permisiva: al ser Apache 2.0, puede integrarse en productos comerciales sin las restricciones de licencias copyleft, previa revisión de las obligaciones de atribución.
-- Experimentación con adaptadores LoRA: el adaptador `aria_adapter_v8.gguf` (14,7 MB, rango 16, alpha 32) permite aplicar el ajuste sobre la base Qwen2.5-3B-Instruct en flujos de llama.cpp sin cargar el modelo fusionado completo.
-- Educación e investigación sobre ajuste fino en hardware limitado: el repositorio documenta un proceso de destilación iterativa en ocho fases que puede servir como referencia metodológica, aunque la validación académica es limitada.
+- Reparacion automatica de codigo en pipelines de CI: el modelo recibe la traza de error de un test fallido, propone un parche y lo valida contra las aserciones del proyecto; su entrenamiento con RLVR esta disenado precisamente para este bucle de intento-verificacion.
+- Agente de terminal en entornos aislados: ejecucion de comandos de shell en un sandbox de subprocesos para tareas de administracion acotadas, con capacidad de recuperarse de fallos mediante reflexion.
+- Asistente de depuracion para desarrolladores: dado un traceback, el modelo genera hipotesis de causa raiz y comandos de diagnostico, aprovechando el componente TracebackDistiller.
+- Automatizacion de tareas de mantenimiento en equipos con GPU de gama baja: al ocupar aproximadamente 1.436 MiB de VRAM en Q4_K_M, puede convivir con otras cargas en una GTX 1650 o similar.
+- Prototipado de agentes autonomos en investigacion: su naturaleza abierta (Apache 2.0) y su adaptador LoRA permiten reproducir el flujo GRPO/RLVR sobre la base Qwen2.5-3B.
+- Despliegue local en Ollama para asistencia de codigo sin conexion: el Modelfile incluido permite arrancar el modelo con un solo comando, util en entornos air-gapped.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta una pérdida de entrenamiento mínima de 0,9130 y una tasa de éxito del 100 % en 48 invariantes de sistema, métricas internas que no son comparables con evaluaciones estándar como MMLU, HumanEval o GSM8K.
+Los unicos datos publicados son metricas internas de entrenamiento y de sistema, no benchmarks estandar como MMLU o HumanEval. Se reproducen tal cual:
+
+| Metrica | Resultado | Entorno / metodo |
+|---|---|---|
+| Perdida de entrenamiento (fase 10) | 0,8113 -> 0,0812 | 557 muestras, 753 pasos, 3 epocas |
+| Precision media de token | 78,7% - 82,3% | Fase final de decaimiento coseno |
+| Envolvente de servicio en edge | 1.436 MiB VRAM, 28,6-40,1 tok/s | GTX 1650 Mobile (4.096 MiB) |
+| Suite de invariantes y tests | 109/109 (100%) | 48 invariantes, 10 contrafactuales, 8 de arnes, RLVR |
+| Reparacion via reflexion | 55,0% exito, 40,0% recuperacion | +30,0% absoluto frente a un solo intento |
+
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 2,5-3 GB con la cuantización Q4_K_M (archivo de 2,17 GB más overhead de contexto y KV cache).
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; el autor entrenó en una NVIDIA GeForce GTX 1650 Mobile (4.096 MiB).
-- Cabe en GPU de consumo: sí, en modelos como GTX 1650, GTX 1660, RTX 3050, RTX 4060 y superiores; también puede ejecutarse en CPU con llama.cpp.
-- Opciones de despliegue: Ollama (Modelfile incluido), llama.cpp y cualquier runtime compatible con GGUF; no se documenta soporte para vLLM o TGI.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM para inferencia: aproximadamente 1.436 MiB con la cuantizacion Q4_K_M (1,8 GB de archivo), segun el autor.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM libre; el autor lo valida en NVIDIA GTX 1650 Mobile (4.096 MiB). En GPUs superiores (RTX 3060, RTX 4090, A100) funcionara sin problema, aunque el modelo no aprovecha ese excedente.
+- Cabe en GPU de consumo: si, en GTX 1650, GTX 1060 6GB, RTX 2060 y superiores.
+- Opciones de despliegue: Ollama (Modelfile incluido), llama.cpp, y cualquier runtime compatible con GGUF. vLLM y TGI no estan documentados para este artefacto GGUF.
+- Rendimiento: 28,6-40,1 tokens por segundo en GTX 1650 Mobile; la latencia exacta no se detalla.
+- CPU: al ser un modelo de 3B en Q4_K_M, es viable en CPU con llama.cpp, aunque el autor no publica cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aria 3B GGUF (este modelo) | 3,09B (model card) | 4.096 | Apache 2.0 | GGUF | Ajuste fino sobre Qwen2.5-3B-Instruct; sin benchmarks públicos |
-| Qwen2.5-3B-Instruct | 3,09B | 32.768 (según la familia Qwen2.5) | Apache 2.0 | safetensors, GGUF | Modelo base; contexto mucho mayor y evaluación pública disponible |
-| Llama 3.2 3B Instruct | 3,21B | 128.000 | Llama 3.2 Community License | safetensors, GGUF | Contexto amplio; licencia con restricciones de uso comercial |
-| Phi-3.5-mini-instruct | 3,8B | 128.000 | MIT | safetensors, GGUF | Mayor contexto y licencia permisiva; benchmarks públicos |
+| Aria 3B GGUF (este) | 3,09B | 4.096 | RLVR/GRPO para reparacion de codigo y terminal | Apache 2.0 | GGUF en HF, Ollama |
+| Qwen2.5-3B-Instruct (base) | 3,09B | 32.768 | Instruccion general | Apache 2.0 | Safetensors, GGUF, multiples runtimes |
+| Qwen2.5-Coder-3B-Instruct | 3,09B | 32.768 | Codigo | Apache 2.0 | Safetensors, GGUF |
+| Llama 3.2 3B Instruct | 3,21B | 131.072 | Instruccion general | Llama 3.2 Community | Safetensors, GGUF |
 
-La comparativa se basa en características públicas de los modelos alternativos; no se dispone de datos de rendimiento de Aria 3B GGUF que permitan una comparación cuantitativa.
+La comparativa mas directa es con el propio Qwen2.5-3B-Instruct: Aria reduce la ventana de contexto de 32.768 a 4.096 tokens y especializa el comportamiento en tareas de reparacion y terminal, a costa de un conjunto de entrenamiento muy pequeno (557 muestras). Frente a Qwen2.5-Coder-3B, Aria no esta entrenado sobre corpus masivo de codigo, sino sobre trayectorias verificadas, por lo que su rendimiento en generacion de codigo general probablemente sea inferior. No hay datos publicos que permitan una comparacion cuantitativa con HumanEval u otras suites.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks públicos: no hay evidencia cuantitativa de calidad en tareas estándar, lo que dificulta evaluar su idoneidad frente al modelo base.
-- Discrepancia en el número de parámetros entre la model card (3,09B) y los metadatos de safetensors (3.686.400), que debe resolverse antes de confiar en las estimaciones de recursos.
-- Contexto reducido a 4.096 tokens, muy inferior al de Qwen2.5-3B-Instruct, lo que limita tareas con documentos largos o conversaciones extensas.
-- Idiomas soportados no documentados: no se garantiza un comportamiento adecuado fuera del inglés, idioma probable del dataset de ajuste.
-- Riesgo de alucinación inherente a un modelo de 3B ajustado con solo 448 pares de interacción; la pérdida de entrenamiento baja no equivale a robustez en producción.
-- Sesgos conocidos: no documentados por el autor; al heredar la base Qwen2.5, pueden persistir sesgos del modelo original.
-- Las 48 invariantes de sistema verificadas son una métrica interna del autor, no una garantía de seguridad para despliegues reales de agentes de terminal.
-- Licencia Apache 2.0 permisiva para uso comercial, pero conviene revisar las condiciones de la base Qwen2.5-3B-Instruct y citar la atribución correspondiente.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: ecosistema de validación prácticamente inexistente.
+- El conjunto de entrenamiento es de solo 557 muestras, lo que limita la generalizacion y aumenta el riesgo de sobreajuste a los invariantes concretos del autor.
+- Los benchmarks publicados son internos (perdida, precision de token, suite propia de 109 invariantes); no hay evaluaciones independientes en MMLU, HumanEval o GSM8K.
+- La ventana de contexto se reduce a 4.096 tokens frente a los 32.768 del modelo base, lo que restringe tareas de contexto largo.
+- Los idiomas soportados no estan documentados; se desconoce el comportamiento en castellano u otras lenguas distintas del ingles.
+- Riesgo de alucinacion inherente a un modelo de 3B, agravado por el ajuste fino sobre un dataset reducido.
+- El uso como agente de terminal exige un sandbox real y supervision: el modelo puede generar comandos destructivos si se le da acceso sin aislamiento.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias sobre el rendimiento en produccion.
+- El modelo esta pensado para hardware edge con VRAM muy limitada; en GPUs grandes no aporta ventajas frente al base.
+- No hay evidencia de soporte de tool calling estandar ni de integracion con frameworks de agentes tipo LangChain o similar.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/zerak12/aria-3b-gguf
 - Repositorio GitHub: https://github.com/zerakjamil/aria
-- Paper académico: https://github.com/zerakjamil/aria/blob/main/docs/aria_academic_paper.pdf
+- Paper academico: https://github.com/zerakjamil/aria/blob/main/docs/aria_academic_paper.pdf
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct

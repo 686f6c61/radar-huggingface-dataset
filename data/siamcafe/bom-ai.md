@@ -2,86 +2,95 @@
 
 ## Resumen
 
-BOM AI (siamcafe/bom-ai) es un modelo de lenguaje con capacidades vision-language (VL) orientado primero al idioma tailandés ("Thai-first"), desarrollado por el usuario siamcafe y publicado en Hugging Face en formato GGUF. Se trata de un ajuste (fine-tune) sobre el modelo DavidAU/Qwen3.5-4B-Claude-4.6-HighIQ-THINKING, que a su vez deriva de la familia Qwen3.5 de aproximadamente 4.000 millones de parámetros. El proyecto se presenta como un asistente de IA en tailandés capaz de "ver imágenes y leer tailandés", gratuito y utilizable sin conexión.
+BOM AI (identificador `siamcafe/bom-ai`) es un modelo de lenguaje y visión de 4.205.751.296 parámetros (aproximadamente 4,2 mil millones) afinado a partir de `DavidAU/Qwen3.5-4B-Claude-4.6-HighIQ-THINKING`, que a su vez deriva de la familia Qwen3-VL. Lo desarrolla el usuario siamcafe y su propósito declarado es ser un asistente de IA "Thai-first": un modelo que entiende y genera tailandés de forma nativa, lee texto en imágenes y funciona en local sin conexión. La ficha pública corresponde a la línea v0.3.x (v0.3.2, publicada el 30 de octubre de 2026), conservada por el autor como registro histórico de una versión que ya no es la actual.
 
-Su relevancia radica en dos puntos concretos: primero, aborda un problema habitual en los modelos generalistas, la fuga de caracteres Han (chinos/canji) cuando se generan textos en tailandés, resuelta aquí mediante una lista blanca gramatical GBNF que, según el autor, reduce la fuga a 0 casos en 250 pruebas. Segundo, ofrece inferencia multimodal (texto + visión) en un tamaño pequeño (4B) y cuantizado (Q4_K_M, unos 3,4 GB), lo que lo hace ejecutable en hardware de consumo y en escenarios offline.
+El problema que aborda es concreto: la mayoría de los modelos abiertos multilingües rinden de forma notablemente inferior en tailandés que en inglés o chino, y con frecuencia filtran caracteres han (CJK) en las respuestas en tailandés. BOM AI ataca ambos problemas mediante un ajuste supervisado en tres rondas y, sobre todo, una gramática GBNF que restringe el vocabulario de salida a un conjunto de tokens permitidos, eliminando por completo la fuga de caracteres CJK (0 de 250 casos en la puerta de calidad declarada).
 
-La versión estable actual es la v0.3.2 (promocionada desde v0.3.1-rc.1 sin reentrenamiento, con pesos idénticos), tras superar seis controles de calidad internos ("ship gates") que cubren visión, identidad, fuga de caracteres Han, calidad del tailandés, rechazos de seguridad y regresiones.
+La relevancia actual del modelo es doble: por un lado, demuestra un patrón de despliegue práctico (cuantización Q4_K_M en GGUF, proyector visual separado en f16, distribución vía Ollama) que cabe en hardware de consumo; por otro, ilustra una técnica poco habitual, el uso de gramáticas de decodificación como mecanismo de control de idioma en producción, en lugar de confiar únicamente en el ajuste fino.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Qwen3-VL (Vision-Language, 4B parámetros) |
-| Parametros totales | 4.205.751.296 (dato real de safetensors) |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | Qwen3-VL (vision-language), transformer multimodal |
+| Parámetros totales | 4.205.751.296 (~4,2 B) |
+| Parámetros activos | no disponible (no es MoE según la información disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_K_M (~3,4 GB); también se distribuye versión bf16 |
-| Idiomas soportados | Tailandés (th) e inglés (en) |
+| Tipos de cuantización | Q4_K_M (GGUF, ~3,4 GB), bf16 (GGUF) |
+| Idiomas soportados | tailandés (th), inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (model-Q4_K_M.gguf, mmproj-f16.gguf como proyector de visión, model-bf16.gguf) |
+| Formato de pesos | GGUF (`model-Q4_K_M.gguf`, `model-bf16.gguf`, `mmproj-f16.gguf`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura Qwen3-VL en su variante de 4B parámetros, un transformer multimodal que combina un modelo de lenguaje con un proyector de visión (distribuido como archivo separado, mmproj-f16.gguf en precisión f16). El modelo base utilizado, DavidAU/Qwen3.5-4B-Claude-4.6-HighIQ-THINKING, es un fine-tune comunitario de Qwen3.5 orientado a razonamiento ("THINKING") y alta calidad de respuestas.
+El modelo es un transformer multimodal de la familia Qwen3-VL, con un codificador visual acoplado mediante un proyector multimodal que se distribuye como archivo independiente (`mmproj-f16.gguf`). Sobre esa base, el autor aplicó tres rondas de ajuste supervisado (SFT) más reparaciones posteriores: PhaseA con 465 pasos, `repair_r2` con 157 pasos y `repair_r3` con 162 pasos. La model card menciona además un paso de ORPO (optimización por preferencias sin modelo de recompensa) en la exportación Q4_K_M de la release candidate previa, aunque los pesos de v0.3.2 son idénticos a los de v0.3.1-rc.1 y la promoción a estable no implicó reentrenamiento.
 
-Sobre esa base, el autor realizó tres rondas de SFT (supervised fine-tuning) con reparaciones sucesivas: una fase principal de 465 pasos (PhaseA) y dos rondas de reparación de 157 y 162 pasos (repair_r2 y repair_r3). La model card menciona también "Q4_K_M ORPO + GBNF export" en la release candidate, lo que sugiere el uso de ORPO (odds-ratio preference optimization) y una exportación con gramáticas GBNF. El detalle más destacable es la solución "Zero-Han": una lista blanca gramatical GBNF que restringe los tokens generables para eliminar por completo la fuga de caracteres CJK (Han) en la salida en tailandés, un problema frecuente en modelos entrenados con corpus que mezclan chino y tailandés. No se ha publicado información sobre el número de tokens de entrenamiento ni la composición del dataset.
+La innovación técnica destacable no está en la arquitectura sino en el control de la salida: el autor impone una gramática GBNF con una lista blanca de tokens que elimina cualquier carácter han (CJK) de las respuestas. Esto resuelve un fallo típico de los modelos Qwen cuando se les pide responder en tailandés, ya que el tokenizador comparte subpalabras entre chino y tailandés. La model card también menciona una configuración de inferencia fijada ("GOD CONFIG v7.0") desplegada de forma uniforme, aunque no se detallan sus parámetros (temperatura, top_p, penalizaciones) en la información disponible.
 
 ## Capacidades
 
-- Generación de texto conversacional en tailandés e inglés, con identidad propia ("BOM") configurada mediante fine-tuning.
-- Comprensión de imágenes (visión multimodal), verificada por el autor como funcional en la inferencia con Qwen3.5-4B multimodal.
-- Lectura y generación de texto en tailandés con control de calidad declarado (umbral interno "Thai ≥ 9.0" superado).
-- Respuestas de seguridad y rechazos adecuados (gate de "Refusal" verificado por el autor).
-- Razonamiento tipo "thinking" heredado del modelo base DavidAU/Qwen3.5-4B-Claude-4.6-HighIQ-THINKING (sin detalles publicados).
-- Ejecución completamente offline gracias al formato GGUF.
-- No consta soporte de tool calling / function calling ni de agentes multi-paso en la información disponible.
+- Generación de texto conversacional en tailandés e inglés, con identidad declarada como "BOM" ("ผมชื่อ BOM").
+- Comprensión de imágenes (VL): lectura de texto en tailandés dentro de imágenes y respuesta multimodal, verificado en la puerta de calidad G1.
+- Control estricto del idioma de salida mediante gramática GBNF: cero caracteres han en 250 pruebas declaradas.
+- Respuestas de rechazo ante peticiones inseguras (puerta de calidad G5 verificada).
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible`) y uso conversacional.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Razonamiento multi-paso o modo "thinking" explícito: el modelo base lo sugiere por su nombre, pero no se documenta en esta ficha.
+- Capacidades de audio: no disponibles.
 
 ## Casos de uso
 
-- Asistente conversacional en tailandés offline: al ser un GGUF de ~3,4 GB ejecutable con Ollama o llama.cpp, puede desplegarse en equipos sin conexión, útil en zonas con conectividad limitada o por privacidad de datos.
-- Descripción y análisis de imágenes con consultas en tailandés: gracias al proyector de visión mmproj-f16.gguf, puede responder preguntas sobre fotografías, capturas o documentos escaneados en el idioma local.
-- Atención al cliente en tailandés para pequeñas empresas: su enfoque Thai-first y la identidad configurada ("BOM") lo hacen adecuado para chatbots de soporte multi-turno en el mercado tailandés, evitando la fuga de caracteres Han que degradaría la experiencia.
-- OCR y lectura de texto en tailandés sobre imágenes: la combinación de visión y fuerte soporte del alfabeto tailandés permite extraer texto de imágenes (señales, documentos, menús) sin depender de servicios en la nube.
-- Integración en aplicaciones de escritorio o móviles ligeras: el tamaño cuantizado en Q4_K_M permite ejecutar el modelo en GPUs de consumo o incluso en CPU, embebiéndolo en apps locales.
-- Prototipado y demos de IA multimodal en Tailandia: la licencia Apache 2.0 y la disponibilidad en Ollama (`ollama pull siamcafe/bom-ai:latest`) facilitan su uso en pruebas de concepto y hackathons sin coste de licencia.
-- Generación de contenido bilingüe tailandés-inglés: al soportar ambos idiomas, sirve para redacción asistida y traducción aproximada entre ellos en flujos de trabajo locales.
+- Atención al cliente en tailandés: el modelo puede mantener conversaciones multi-turno en tailandés sin derivar a caracteres chinos, un fallo frecuente en asistentes desplegados con modelos Qwen sin control de gramática. Adecuado para pymes tailandesas que necesitan un bot local sin coste por token.
+- Digitalización de documentos con OCR en tailandés: gracias al codificador visual y al proyector f16, puede extraer y resumir texto de facturas, carteles o formularios fotografiados, ejecutándose íntegramente en local.
+- Asistente offline en dispositivos con recursos limitados: la cuantización Q4_K_M de ~3,4 GB permite desplegarlo en portátiles con GPU de 6-8 GB de VRAM o incluso en CPU, útil en entornos con conectividad intermitente.
+- Moderación y filtrado de contenido en tailandés: las respuestas de rechazo verificadas lo hacen apto para capas de pre-filtrado en foros o chats, siempre como complemento de un sistema de moderación más amplio.
+- Prototipado rápido con Ollama: el comando `ollama pull siamcafe/bom-ai:latest` permite tener un asistente multimodal tailandés operativo en minutos, ideal para validar ideas de producto antes de invertir en infraestructura.
+- Investigación sobre control de idioma en decodificación: el uso de GBNF como lista blanca de tokens es un caso de estudio reproducible para quienes investigan técnicas de restricción léxica en modelos multilingües.
+- Educación y tutoría en tailandés: puede explicar conceptos a partir de imágenes de libros de texto o pizarras, con la ventaja de que el contenido no sale del dispositivo del estudiante.
 
 ## Benchmarks y rendimiento
 
-El model-index de la model card no contiene resultados ("results": []). Los únicos controles de calidad publicados son los "ship gates" internos del autor (visión verificada, identidad correcta, 0/250 casos de fuga de caracteres Han, calidad de tailandés ≥ 9.0 según criterio propio, rechazos de seguridad y ausencia de regresiones), que no son benchmarks estandarizados comparables.
+El `model-index` de la model card declara una entrada para "bom-ai" con la lista de resultados vacía. El autor no publica puntuaciones de MMLU, HumanEval, GSM8K ni de benchmarks multimodales.
 
-No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
+No se han publicado resultados de benchmarks en la información disponible.
+
+Las únicas métricas declaradas son las puertas de calidad internas del autor: visión verificada (G1), identidad correcta (G2), 250/250 respuestas sin caracteres han (G3), calidad en tailandés ≥ 9,0 según su propio criterio (G4), rechazo verificado (G5) y ausencia de regresiones en pruebas internas (G6). No son comparables con benchmarks estándar.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: la versión Q4_K_M ocupa unos 3,4 GB de pesos, a los que hay que sumar el proyector de visión mmproj-f16.gguf y el contexto; una GPU con 6-8 GB de VRAM debería ser suficiente para la inferencia multimodal. La versión bf16 requeriría en torno a 8-9 GB adicionales para los pesos.
-- GPUs recomendadas: no disponible (no se publican recomendaciones específicas). Por tamaño, cualquier GPU de consumo con 8 GB de VRAM (por ejemplo, RTX 3060, RTX 4060 o superiores) es razonable; también es viable la ejecución en CPU dado el tamaño de 4B.
-- Consumer GPUs: sí, cabe en GPUs de consumo de 8 GB en Q4_K_M; en CPU también es ejecutable con velocidad reducida.
-- Opciones de despliegue: Ollama (canal oficial documentado: `ollama pull siamcafe/bom-ai:latest`), llama.cpp (cargando model-Q4_K_M.gguf con mmproj-f16.gguf como proyector de visión), ComfyUI y "cualquier runtime GGUF". No se menciona soporte de vLLM o TGI (al ser GGUF, requieren llama.cpp o runtimes compatibles).
-- Latencia y throughput: no disponible.
+- VRAM estimada para Q4_K_M: en torno a 3,4 GB para los pesos más el proyector visual f16; con overhead de contexto, un presupuesto realista de 5-6 GB.
+- VRAM estimada para bf16: aproximadamente 8,4 GB solo para los pesos, más el proyector y el contexto; se recomienda 12-16 GB.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4090 para la variante bf16; A100/H100 no son necesarias dado el tamaño del modelo.
+- Cabe en GPU de consumo: sí, la variante Q4_K_M funciona en tarjetas de 6-8 GB y, con llama.cpp, en CPU con RAM suficiente.
+- Opciones de despliegue: Ollama (`siamcafe/bom-ai`), llama.cpp, ComfyUI y cualquier runtime compatible con GGUF; requiere cargar `mmproj-f16.gguf` como proyector visual.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Multimodal | Idioma prioritario | Cuantizacion distribuida | Licencia |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| siamcafe/bom-ai (v0.3.2) | 4,2B | Sí (visión, mmproj) | Tailandés | Q4_K_M GGUF, bf16 | Apache 2.0 |
-| Qwen3.5-4B (base, dato del modelo base) | ~4B | Variante VL disponible | Multilingüe (fuerte en chino/inglés) | Varias (GGUF, safetensors) | Apache 2.0 (familia Qwen) |
-| Typhoon (SCB 10X, familia de ~7-12B) | ~7-12B según versión | No en todas las versiones | Tailandés | GGUF comunitario | Apache 2.0 (según versión) |
+| BOM AI v0.3.2 | ~4,2 B | no disponible | th, en | Apache 2.0 | GGUF |
+| Qwen2.5-VL-3B (referencia de la familia) | ~3,8 B | no disponible en esta ficha | multilingüe | Apache 2.0 | safetensors, GGUF |
+| Qwen3-VL-4B (base de la familia) | ~4 B | no disponible en esta ficha | multilingüe | Apache 2.0 | safetensors, GGUF |
+| Typhoon (familia tailandesa de SCB 10X) | variable | no disponible | th, en | variable según versión | safetensors, GGUF |
 
-BOM AI se diferencia de alternativas tailandesas como Typhoon en su tamaño menor (4B frente a 7-12B), su capacidad multimodal nativa y su distribución centrada en GGUF con Ollama, a costa de una menor capacidad bruta y la ausencia de benchmarks públicos. La comparación con Qwen3.5-4B base muestra que BOM AI añade especialización en tailandés y control de fuga de caracteres Han, pero los datos de rendimiento comparativo no están disponibles.
+La comparación cuantitativa de rendimiento no es posible porque BOM AI no publica benchmarks. La diferencia principal frente a sus antecesores Qwen es el ajuste específico para tailandés y el control de gramática; frente a modelos tailandeses nativos como la familia Typhoon, la ventaja de BOM AI es la multimodalidad integrada y el despliegue en un solo archivo GGUF.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados por el autor. Al derivar de Qwen3.5 y de un fine-tune comunitario (DavidAU), hereda los sesgos de sus datos de entrenamiento, que no están publicados.
-- Riesgo de alucinación: no cuantificado; no se han publicado benchmarks de fidelidad factual. El control "Zero-Han" solo cubre la fuga de caracteres CJK, no la exactitud del contenido.
-- Limitaciones de idioma: centrado en tailandés e inglés; el rendimiento en otros idiomas no está verificado y la gramática GBNF anti-Han podría interferir si se intenta generar chino, japonés o coreano.
-- Limitaciones de contexto: la longitud de contexto no está publicada, lo que dificulta planificar casos de uso con documentos largos.
-- Uso comercial: la licencia Apache 2.0 permite uso comercial, pero conviene revisar también la licencia del modelo base (DavidAU/Qwen3.5-4B-Claude-4.6-HighIQ-THINKING) y de Qwen3.5 en sus términos aplicables.
-- Caveats de producción: es un proyecto comunitario de un autor individual con muy pocas descargas (460) y sin benchmarks estandarizados; los "ship gates" son criterios internos del autor. Los parámetros de inferencia ("GOD CONFIG v7.0") se mencionan pero no se documentan en la model card. La versión estable es reciente (2026-10-30) y el historial de versiones es corto, por lo que se recomienda validación propia antes de uso en producción.
+- La model card corresponde a la línea v0.3.x y el propio autor la marca como histórica; la versión actual (v2.x) se distribuye fuera de Hugging Face, en bomai.app y GitHub. Quien despliegue esta versión debe saber que no recibe mantenimiento.
+- No hay benchmarks estándar publicados, por lo que no se puede verificar su calidad frente a alternativas con datos objetivos; las puertas de calidad son internas y autoevaluadas.
+- El modelo está afinado para tailandés e inglés; su rendimiento en castellano u otros idiomas no está documentado y probablemente sea deficiente.
+- La restricción GBNF, aunque elimina la fuga de caracteres CJK, puede limitar la expresividad en dominios que requieran símbolos, emojis o terminología técnica fuera de la lista blanca.
+- Riesgo de alucinación inherente a un modelo de 4 B: no es adecuado para tareas que exijan alta precisión factual sin verificación externa.
+- Sesgos: no se documentan evaluaciones de sesgo; al derivar de Qwen3-VL, hereda los sesgos de sus datos de entrenamiento, con posible infrarrepresentación de contextos culturales tailandeses específicos.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base y los datos de ajuste pueden arrastrar obligaciones adicionales no detalladas en la información disponible.
+- El tamaño del repositorio (11,8 GB) incluye varias cuantizaciones; conviene descargar solo los archivos necesarios para evitar consumo innecesario de disco.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/siamcafe/bom-ai
+- Hugging Face: https://huggingface.co/siamcafe/bom-ai
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.5-4B-Claude-4.6-HighIQ-THINKING
-- No se han encontrado enlaces adicionales (papers, blogs, repos de código o demos) en la información disponible.
+- Versión actual del proyecto: https://bomai.app
+- Etiquetas de Ollama: https://ollama.com/siamcafe/bom-ai/tags
+- Código fuente y changelog: https://github.com/siamcafe/bomai

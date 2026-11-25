@@ -2,49 +2,51 @@
 
 ## Resumen
 
-Phai-A1-35B-1M-MTP-Repacked-GGUF es una distribucion de pesos cuantizados en formato GGUF generada por mradermacher a partir del modelo Phai-A1-35B-1M-MTP-Repacked, publicado por prithivMLmods. El modelo base subyacente es Phai-A1-35B-1M, desarrollado por PhaiModelLab, que segun la informacion disponible se construye sobre Qwen3.6-35B-A3B y ha sido sometido a un pipeline de post-entrenamiento (SFT y RL) orientado a cargas de trabajo de codigo y agentes, ejecutado sobre NPUs Huawei Ascend.
+Phai-A1-35B-1M-MTP-Repacked-GGUF es la distribucion en formato GGUF del modelo Phai-A1-35B-1M-MTP-Repacked, publicada por el cuantizador mradermacher. El modelo base, alojado por prithivMLmods, es un transformer de tipo Mixture of Experts (MoE) con 35.505.251.456 parametros totales y una arquitectura identificada en los metadatos como `qwen3_5_moe`. Incorpora decodificacion especulativa mediante Multi-Token Prediction (MTP), lo que permite generar varios tokens por paso de inferencia y reducir la latencia.
 
-El repositorio contiene unicamente cuantizaciones estaticas del modelo repacked, con un conjunto de variantes que abarca desde Q2_K hasta F16, incluyendo Q3_K_S/M/L, Q4_K_S/M, Q5_K_S/M, Q6_K, Q8_0 e IQ4_XS. El tamano del repositorio es de 1,5 GB y el recuento de parametros reportado en los safetensors es de 446.571.248, un dato que no concuerda con la denominacion "35B" del nombre del modelo y que conviene tratar con cautela.
+El modelo esta orientado a tareas de generacion de codigo, uso como agente y contexto largo, segun las etiquetas del repositorio (`coding`, `agent`, `long-context`, `rl`). La nomenclatura "1M" sugiere una ventana de contexto de hasta 1.000.000 de tokens, aunque este dato no se confirma de forma explicita en la informacion disponible. Soporta oficialmente los idiomas chino, ingles, japones, arabe, ruso y aleman.
 
-La relevancia de esta ficha es doble: por un lado, documenta una distribucion GGUF lista para inferencia local con llama.cpp; por otro, advierte de las inconsistencias de metadatos (parametros, licencia, idiomas y benchmarks no disponibles) que deben resolverse antes de cualquier uso en produccion.
+La relevancia de esta publicacion radica en que mradermacher ofrece un conjunto completo de cuantizaciones estaticas (desde Q2_K hasta Q8_0, ademas de IQ4_XS y los ficheros mmproj para uso multimodal), lo que permite desplegar un modelo de 35B en hardware de consumo con llama.cpp, llama-cli o text-generation-inference. La licencia Apache 2.0 facilita el uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base descrito como construido sobre Qwen3.6-35B-A3B, presumiblemente MoE) |
-| Parametros totales | 446.571.248 segun safetensors del repo; la denominacion del modelo indica 35B (dato contradictorio) |
+| Arquitectura | Transformer MoE (tag `qwen3_5_moe`), con Multi-Token Prediction (MTP) para decodificacion especulativa |
+| Parametros totales | 35.505.251.456 |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible (el sufijo "1M" del nombre sugiere 1M tokens, sin confirmacion en la informacion proporcionada) |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas; repo origen en safetensors) |
+| Longitud de contexto | no disponible de forma explicita (la nomenclatura "1M" sugiere hasta 1.000.000 de tokens) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
+| Idiomas soportados | zh, en, ja, ar, ru, de |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (modelo base en safetensors) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna en la documentacion proporcionada. El modelo base Phai-A1-35B-1M se describe como construido sobre Qwen3.6-35B-A3B, lo que sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 35.000 millones de parametros totales y 3.000 millones activos por token, aunque esta inferencia no esta confirmada por los metadatos del repositorio GGUF.
+El modelo es un transformer con arquitectura Mixture of Experts, identificada en los metadatos como `qwen3_5_moe`. La etiqueta `mxfp4_moe` indica que el modelo base emplea cuantizacion MXFP4 en las capas de expertos, un formato de 4 bits con escala compartida por bloques. Incorpora Multi-Token Prediction (MTP), un mecanismo de decodificacion especulativa que predice varios tokens futuros por paso y acelera la generacion; de ahi la etiqueta `speculative-decoding` y el sufijo MTP del nombre.
 
-Respecto al entrenamiento, la informacion disponible indica que PhaiModelLab realizo un post-entrenamiento completo sobre el modelo base, incluyendo Supervised Fine-Tuning (SFT) y Reinforcement Learning (RL), con enfasis en tareas de codigo y agentes. Todo el pipeline se ejecuto sobre NPUs Huawei Ascend. No se especifican el volumen de tokens de entrenamiento, la composicion del dataset ni los detalles del algoritmo de RL. El sufijo "MTP" del nombre podria referirse a Multi-Token Prediction, pero no hay confirmacion en la informacion disponible.
+Los metadatos mencionan entrenamiento con refuerzo (`rl`), aunque no se detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se aplico RLHF o DPO. Tampoco se especifica el numero de expertos ni cuantos se activan por token. Esta informacion no esta disponible en la documentacion proporcionada.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento general, heredadas del modelo base Qwen3.6-35B-A3B.
-- Generacion de codigo y tareas de programacion, segun el enfasis declarado del post-entrenamiento.
-- Cargas de trabajo de agentes, incluyendo razonamiento multi-paso, segun la descripcion del modelo base.
-- Soporte de tool calling / function calling: no confirmado en la informacion disponible.
-- Capacidades multilingues: no disponibles.
-- Modo thinking, vision o audio: no disponibles.
-- Inferencia local mediante llama.cpp y ecosistema GGUF (Ollama, LM Studio, etc.).
+- Generacion de texto conversacional multi-turno.
+- Generacion y asistencia en codigo (etiqueta `coding`).
+- Uso como agente y razonamiento multi-paso (etiqueta `agent`).
+- Procesamiento de contexto largo (etiqueta `long-context`).
+- Capacidades multimodales: el repositorio incluye ficheros `mmproj` (Q8_0 y f16), lo que habilita entrada de imagenes en llama.cpp.
+- Decodificacion especulativa nativa mediante MTP para acelerar la inferencia.
+- Soporte multilingue en chino, ingles, japones, arabe, ruso y aleman.
+- Compatibilidad con endpoints y con text-generation-inference segun las etiquetas del repositorio.
 
 ## Casos de uso
 
-- Asistencia de codigo en local: el formato GGUF y las cuantizaciones Q4_K_M y Q5_K_M permiten desplegar el modelo en estaciones de trabajo sin GPU de datacenter, usando llama.cpp u Ollama para autocompletado y generacion de funciones.
-- Agentes de automatizacion de tareas: el post-entrenamiento orientado a agentes del modelo base sugiere utilidad en flujos multi-paso, aunque la ausencia de datos sobre tool calling exige validacion previa.
-- Prototipado de pipelines de IA en entornos con hardware limitado: las variantes Q2_K y Q3_K_S reducen el peso en disco y memoria, permitiendo pruebas rapidas en equipos de gama media.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece un espectro amplio (de Q2_K a F16) que facilita estudios de degradacion de calidad frente a compresion.
-- Despliegue en entornos aislados o air-gapped: al ser pesos estaticos descargables, el modelo puede ejecutarse sin conexion una vez obtenido el GGUF.
-- Experimentacion academica con modelos post-entrenados en NPUs: permite reproducir y comparar el comportamiento del modelo original en hardware x86/ARM convencional.
+- Asistencia de codigo en local: con las cuantizaciones Q4_K_M (21,8 GB) o Q5_K_M (25,4 GB) el modelo puede ejecutarse en estaciones de trabajo con GPU de consumo y ofrecer autocompletado y generacion de funciones en IDE, aprovechando la etiqueta `coding` y la aceleracion por MTP.
+- Agentes autonomos con contexto largo: la ventana de contexto extendida (hasta 1M segun la nomenclatura) permite mantener historiales de herramientas, trazas y documentos extensos en memoria, adecuado para pipelines de agentes multi-paso.
+- Analisis de documentos largos: informes, expedientes o bases de codigo que superan el contexto de modelos convencionales pueden procesarse en una sola pasada sin troceado.
+- Atencion al cliente multilingue: el soporte de chino, ingles, japones, arabe, ruso y aleman permite desplegar un unico modelo para mercados con esos idiomas.
+- Despliegue en hardware de consumo: la cuantizacion Q4_K_S (20,5 GB) permite ejecutar el modelo en una RTX 4090 de 24 GB o en configuraciones con memoria unificada, usando llama.cpp u Ollama.
+- Procesamiento multimodal local: los ficheros mmproj habilitan tareas de descripcion de imagenes y extraccion de informacion de capturas o documentos escaneados sin depender de APIs externas.
+- Servicio de inferencia en produccion: con text-generation-inference o vLLM (cuando soporte la arquitectura) se puede servir el modelo con batching continuo y decodificacion especulativa MTP.
 
 ## Benchmarks y rendimiento
 
@@ -52,37 +54,41 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con precision debido a la contradiccion entre los 446 millones de parametros reportados y la denominacion "35B". Si se confirma el tamano de 35B, una cuantizacion Q4_K_M requeriria aproximadamente 20-22 GB de VRAM; una Q2_K, en torno a 12-14 GB.
-- GPU recomendadas: no disponibles en la informacion proporcionada. Para un modelo de 35B en Q4 se necesitarian GPUs con 24 GB o mas (RTX 4090, A6000, L40S, A100 40 GB).
-- Cabe en GPU de consumo: probablemente si en RTX 4090 (24 GB) con cuantizaciones Q4 o inferiores, condicionado a confirmar el tamano real.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores compatibles con GGUF. vLLM y TGI no soportan GGUF de forma nativa para este formato.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia segun cuantizacion: Q2_K 13,3 GB; Q3_K_S 15,6 GB; Q3_K_M 17,3 GB; Q3_K_L 18,7 GB; IQ4_XS 19,5 GB; Q4_K_S 20,5 GB; Q4_K_M 21,8 GB; Q5_K_S 24,7 GB; Q5_K_M 25,4 GB; Q6_K 29,3 GB; Q8_0 37,9 GB.
+- GPU recomendadas: A100 40/80 GB o H100 para Q8_0 y Q6_K con contexto largo; RTX 4090 (24 GB) para Q4_K_S/Q4_K_M con contexto moderado; RTX 3090 (24 GB) o RTX 4080 (16 GB) para cuantizaciones Q3 o IQ4_XS.
+- Cabe en GPU de consumo: si, en RTX 4090/3090 con Q4_K_M o inferiores; en GPUs de 16 GB con Q3_K_M o IQ4_XS; en GPUs de 12 GB solo con Q2_K y contexto reducido.
+- Opciones de despliegue: llama.cpp, llama-cli, Ollama, text-generation-inference; vLLM si soporta la arquitectura `qwen3_5_moe`.
+- Latencia y throughput: no disponibles. La decodificacion especulativa MTP deberia reducir la latencia respecto a un modelo equivalente sin MTP, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Phai-A1-35B-1M-MTP-Repacked-GGUF | 446M reportados / 35B nominales | no disponible | no disponible | GGUF | Cuantizaciones estaticas de un modelo post-entrenado para codigo y agentes |
-| Qwen3.6-35B-A3B (modelo base referenciado) | 35B totales / 3B activos (segun denominacion) | no disponible | no disponible | safetensors | Base sobre la que se construye Phai-A1 |
-| Phai-A1-35B-1M-i1-GGUF (mradermacher) | 35B nominales | no disponible | no disponible | GGUF | Variante i1 (imatrix) del mismo modelo, alternativa a esta version estatica |
+| Phai-A1-35B-1M-MTP-Repacked-GGUF | 35,5B (MoE) | hasta 1M (segun nomenclatura, no confirmado) | Apache 2.0 | GGUF | MTP, multimodal, 6 idiomas |
+| Modelo base prithivMLmods/Phai-A1-35B-1M-MTP-Repacked | 35,5B (MoE) | no disponible | Apache 2.0 | safetensors | Pesos originales sin cuantizar |
+| Variante i1-GGUF de mradermacher | 35,5B (MoE) | no disponible | Apache 2.0 | GGUF (imatrix) | Cuantizaciones ponderadas con imatrix |
 
-No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas.
+No se dispone de datos de rendimiento para comparar con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Inconsistencia critica de metadatos: el recuento de parametros en safetensors (446.571.248) no concuerda con la denominacion "35B" del modelo; verificar antes de dimensionar hardware.
-- Licencia no disponible: no puede confirmarse el uso comercial. Contactar con el autor del modelo base (PhaiModelLab) antes de cualquier despliegue en produccion.
-- Idiomas no declarados: se desconoce el soporte multilingue real.
-- Ausencia de benchmarks: no hay evidencia publicada de calidad en codigo, agentes o razonamiento.
-- Riesgo de alucinacion: inherente a los modelos generativos; sin datos de evaluacion no puede acotarse.
-- Sesgos: no documentados en la informacion disponible.
-- Repositorio con 0 descargas y 0 likes: sin validacion por parte de la comunidad.
-- Modelo derivado de un "repacked": pueden existir diferencias respecto al modelo original no documentadas.
-- El pipeline de post-entrenamiento se ejecuto en NPUs Huawei Ascend; la transferencia a GPUs convencionales no esta validada en la informacion disponible.
+- No se han publicado benchmarks, por lo que el rendimiento real en tareas concretas no esta verificado.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; sin datos de evaluacion no puede acotarse.
+- Las cuantizaciones de baja precision (Q2_K, Q3_K_S) degradan la calidad; el autor recomienda Q4_K_S o superiores para uso general.
+- El contexto de 1M tokens no esta confirmado en la documentacion; debe validarse empiricamente antes de disenar flujos que dependan de el.
+- Los idiomas soportados no incluyen el espanol de forma explicita, lo que puede degradar la calidad en castellano.
+- El modelo base esta identificado como `qwen3_5_moe`; la compatibilidad con vLLM y otras herramientas depende de que estas soporten dicha arquitectura.
+- La licencia Apache 2.0 permite uso comercial, pero deben respetarse las condiciones de atribucion.
+- El tamano del repositorio (244,4 GB) implica descargas largas y requisitos de almacenamiento considerables si se quieren varias cuantizaciones.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Phai-A1-35B-1M-MTP-Repacked-GGUF
-- Modelo repacked de origen: https://huggingface.co/prithivMLmods/Phai-A1-35B-1M-MTP-Repacked
-- Variante i1 GGUF del mismo autor: https://huggingface.co/mradermacher/Phai-A1-35B-1M-i1-GGUF
-- Modelo base: https://huggingface.co/PhaiModelLab/Phai-A1-35B-1M
+- Modelo base: https://huggingface.co/prithivMLmods/Phai-A1-35B-1M-MTP-Repacked
+- Variante imatrix: https://huggingface.co/mradermacher/Phai-A1-35B-1M-MTP-Repacked-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Phai-A1-35B-1M-MTP-Repacked-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Grafico de calidad de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- nethype GmbH: https://www.nethype.de/

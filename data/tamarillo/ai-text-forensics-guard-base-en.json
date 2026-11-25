@@ -1,0 +1,115 @@
+{
+  "schema": 2,
+  "id": "Tamarillo/ai-text-forensics-guard-base-en",
+  "slug": "tamarillo-ai-text-forensics-guard-base-en",
+  "author": "Tamarillo",
+  "url": "https://huggingface.co/Tamarillo/ai-text-forensics-guard-base-en",
+  "created_at": "2026-11-25T02:18:28.000Z",
+  "updated_at": "2026-11-25T02:19:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "ai-detection",
+    "ai-text-detection",
+    "forensics",
+    "observability",
+    "security",
+    "guardrails",
+    "transformers.js",
+    "apache-2.0",
+    "en",
+    "dataset:liamdugan/raid",
+    "dataset:yaful/MAGE",
+    "base_model:answerdotai/ModernBERT-large",
+    "base_model:quantized:answerdotai/ModernBERT-large",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 395833346,
+  "parameters_human": "395.8M",
+  "storage_bytes": 3959778962,
+  "storage_human": "4.0 GB",
+  "context_length": null,
+  "base_model": "answerdotai/ModernBERT-large",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "AI-Generated Text & Agent Output Forensics",
+      "dataset": "2025-2026 Disjoint 4B/8B Open-Weight LLMs (Qwen3-4B + DeepSeek-R1-Distill-Llama-8B, OOD)",
+      "metric": "ROC-AUC",
+      "value": 0.9996
+    },
+    {
+      "task": "AI-Generated Text & Agent Output Forensics",
+      "dataset": "2025-2026 Disjoint 4B/8B Open-Weight LLMs (Qwen3-4B + DeepSeek-R1-Distill-Llama-8B, OOD)",
+      "metric": "TPR@5%FPR",
+      "value": 1
+    },
+    {
+      "task": "AI-Generated Text & Agent Output Forensics",
+      "dataset": "2025-2026 Disjoint 4B/8B Open-Weight LLMs (Qwen3-4B + DeepSeek-R1-Distill-Llama-8B, OOD)",
+      "metric": "Macro-F1",
+      "value": 0.9866
+    },
+    {
+      "task": "Non-Native English (ESL) Human False-Positive Audit",
+      "dataset": "chillies/ielts-writing-task2-essays (100% Human ESL Essays, OOD)",
+      "metric": "False Positive Rate @ 0.50",
+      "value": 0.0958
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tamarillo : conseils de culture et entretien",
+      "url": "https://mieuxjardiner.com/tamarillo-conseils-de-culture-et-entretien/",
+      "snippet": "Sep 3, 2025 · Caractéristiques et origines du tamarillo Pour bien cultiver le tamarillo, il est essentiel de comprendre sa nature et son …Read more"
+    },
+    {
+      "title": "Le tamarillo : un fruit étonnant - Vergers de Gally",
+      "url": "https://www.lesvergersdegally.com/fruit/tamarillo/",
+      "snippet": "Avec seulement 27 calories pour 100 grammes, le tamarillo est un fruit léger qui peut être apprécié sans culpabiliser. Il est riche en …Read more"
+    },
+    {
+      "title": "Le Tamarillo ou arbre à tomates - Les Jardins de Mélusine",
+      "url": "https://biodiversitefrance.com/le-tamarillo-arbre-a-tomates/",
+      "snippet": "Le Tamarillo, que l'on nomme aussi Arbre à tomates, est un étonnant petit arbuste qui produit des fruits rouges, au goût acidulé. …Read more"
+    },
+    {
+      "title": "Tamarillo : culture et entretien de l'arbre à tomates",
+      "url": "https://www.jardiner-malin.fr/fiche/tamarillo.html",
+      "snippet": "Apr 28, 2012 · Le tamarillo ou arbre à tomates est un petit fruitier offrant de délicieux fruits acidulés. La culture et l'entretien, en terre …Read more"
+    },
+    {
+      "title": "Tamarillo - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Tamarillo",
+      "snippet": "In Yunnan, China, the Dai people make a tamarillo nanpie, a sauce like dish made with roasted tamarillo, sawtooth coriander, chillies …Read more"
+    }
+  ]
+}

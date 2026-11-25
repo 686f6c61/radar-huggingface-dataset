@@ -2,90 +2,91 @@
 
 ## Resumen
 
-Inkling-2-Mini-Unbound-oQ4e es una cuantizacion mixta en formato MLX del checkpoint nokeepai/Inkling-2-Mini-Unbound, que a su vez deriva de Inkling-2-Mini, el modelo multimodal de Thinking Machines Lab. El autor de esta version, wren6991, ha aplicado la receta oQ (oMLX v0.8.1) en modo oQ4e para producir un checkpoint de 26.388.646.400 parametros (unos 26,4 mil millones) con un peso efectivo de 4,915 bits por parametro, distribuido en 4 shards que ocupan 15,098 GiB. El objetivo es ofrecer una alternativa de 4 bits que pueda ejecutarse en hardware Apple Silicon mediante MLX, manteniendo la misma estructura que mlx-community/Inkling-2-Mini-oQ4e-mtp.
+Inkling-2-Mini-Unbound-oQ4e es una cuantización mixta de precisión en formato MLX del checkpoint nokeepai/Inkling-2-Mini-Unbound v2.0, una variante "abliterated" (con el comportamiento de rechazo eliminado) y destilada por autodestilación del modelo Inkling 2 Mini de Thinking Machines Lab. El modelo lo publica el usuario wren6991 y está pensado para ejecutarse en hardware Apple Silicon mediante la librería MLX y el runtime oMLX. Con 26.388.646.400 parámetros totales y un peso efectivo de 4,915 bits por parámetro, ocupa 15,098 GiB repartidos en cuatro shards, lo que lo sitúa en la franja de modelos de ~26B aptos para equipos de sobremesa con memoria unificada amplia.
 
-La caracteristica diferencial de esta variante es que hereda la edicion de pesos de "Unbound": las 20 proyecciones de salida de atencion han sido modificadas para eliminar el comportamiento de rechazo del modelo original, sin que se haya aplicado posteriormente ningun entrenamiento de seguridad. Esto convierte al modelo en un checkpoint "abliterated" y "uncensored", orientado a investigacion sobre alineamiento y evaluacion de salvaguardas, no a despliegue directo con usuarios finales. La licencia declarada es Apache 2.0, aunque el autor remite a la politica de uso aceptable del modelo base.
+El modelo es multimodal (pipeline image-text-to-text): procesa imagen y texto y genera texto, con una arquitectura que incluye mezcla de expertos (MoE) en las capas 0-23, un encoder de visión en BF16 y un borrador DSpark para decodificación especulativa multi-token (MTP) en `mtp.safetensors`. La cuantización preserva la disposición de tensores del checkpoint mlx-community/Inkling-2-Mini-oQ4e-mtp, por lo que es un reemplazo directo de ese modelo en oMLX y mlx-vlm.
 
-La relevancia actual del checkpoint es doble: por un lado, demuestra una tecnica de cuantizacion mixta que preserva el encoder de vision y el draft especulativo en BF16 mientras comprime los expertos enrutados y las proyecciones; por otro, incluye el modulo DSpark en mtp.safetensors para decodificacion especulativa con oMLX Lightning MTP, lo que reduce la latencia en inferencia local. Requiere oMLX 0.8.1 o superior.
+Su relevancia actual es doble: por un lado, demuestra una receta de cuantización mixta reproducible y verificable (con comprobaciones bit a bit frente al release original); por otro, es un modelo sin alineación de seguridad, lo que lo hace útil para investigación sobre comportamiento de rechazo y fine-tuning, pero inadecuado para despliegue directo a usuarios finales sin salvaguardas propias.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal con mezcla de expertos (MoE), segun los tags inkling2_loop y mtp; detalles completos no disponibles |
-| Parametros totales | 26.388.646.400 (26,4 mil millones) |
+| Arquitectura | Transformer multimodal con mezcla de expertos (MoE) en capas 0-23, encoder de vision y borrador DSpark para MTP; runtime MLX |
+| Parametros totales | 26.388.646.400 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | oQ4e (4 bits mixto), grupo 64, bfloat16, redondeo mejorado con imatrix; expertos de capas 0-19 en NVFP4 grupo 16; capas 20-23 en affine 4-bit grupo 64; atencion, embeddings y lm_head en affine 8-bit grupo 64; vision y draft en BF16; routers y controladores en FP32 |
-| Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 (sujeta a la politica de uso aceptable del modelo base) |
-| Formato de pesos | safetensors (MLX), 4 shards, 15,098 GiB; incluye mtp.safetensors para decodificacion especulativa |
+| Tipos de cuantizacion | oQ4e mixta: expertos en NVFP4 (grupo 16) en capas 0-19, expertos en affine 4-bit (grupo 64) en capas 20-23, proyecciones de atencion/embeddings/lm_head en affine 8-bit (grupo 64), vision y borrador DSpark en BF16, routers y controladores de bucle en FP32; 4,915 bits/peso efectivos (5,047 con el borrador) |
+| Idiomas soportados | no disponible (calibracion multilingue) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (MLX), 4 shards, 15,098 GiB; `mtp.safetensors` para el borrador |
 
 ## Arquitectura y entrenamiento
 
-El checkpoint es una cuantizacion, no un entrenamiento nuevo. La arquitectura subyacente corresponde a Inkling-2-Mini de Thinking Machines Lab, descrita en los tags como inkling2_loop, lo que sugiere un diseno con controladores de bucle (loop controllers) en FP32 dentro del grafo, y con un modulo MTP (multi-token prediction) empaquetado aparte como draft DSpark. La presencia de expertos enrutados confirma una estructura MoE, aunque el numero de expertos, el ratio de activacion y la dimension oculta no se detallan en la informacion disponible. El modelo es multimodal (pipeline image-text-to-text), con un encoder de vision que en esta cuantizacion se mantiene integramente en BF16.
+La arquitectura subyacente es un transformer multimodal con capas de mezcla de expertos, encoder de vision y un modulo de decodificacion especulativa DSpark (MTP) que acelera la generacion en oMLX Lightning MTP. El checkpoint base Inkling 2 Mini procede de Thinking Machines Lab; la variante Unbound v2.0 se obtuvo mediante abliteracion (edicion de pesos en las proyecciones q, k, v, o y la puerta de atencion de las 24 capas) seguida de autodestilacion, y se verifico que exactamente 120 tensores difieren de la v1.0, reproduciendose de forma bit-exacta a partir de los pesos v1.0 mas la fusion LoRA publicada (`W + 2·BᵀA`, fp64).
 
-La receta de cuantizacion es el elemento tecnico mas relevante. Se aplico oQ4e con grupo 64 y redondeo mejorado mediante imatrix, con calibracion fresca sobre los pesos ya editados de Unbound (128 x 512 muestras, conjunto multilingue). Los expertos enrutados de las capas 0-19 se conservan en el NVFP4 original (grupo 16), mientras que los de las capas 20-23 se recuantizan desde MXFP8 a affine 4-bit (grupo 64). Las proyecciones de atencion, los embeddings y lm_head pasan a affine 8-bit. El resultado es un peso efectivo de 4,915 bits (5,047 incluyendo el draft). La verificacion publicada indica que 903 de 1.098 tensores son byte-identicos al checkpoint mlx-community/Inkling-2-Mini-oQ4e-mtp, y que las 20 proyecciones attn.o_proj reproducen la edicion BF16 de Unbound con un error rms del 0,53-0,57%. No se especifican datos de preentrenamiento, volumen de tokens ni si hubo RLHF o DPO en el modelo original.
+Esta cuantizacion concreta se genero con oQ (oMLX v0.8.1) en modo oQ4e, grupo 64, bfloat16, con redondeo mejorado por imatrix y calibracion fresca sobre los pesos v2 (128 x 512 muestras, conjunto multilingue). Los expertos enrutados de las capas 0-19 se mantienen en NVFP4 de origen (grupo 16) y los de las capas 20-23 se recuantizan desde MXFP8 a affine 4-bit. La verificacion reporta que 903 de 1.098 tensores son identicos byte a byte respecto a la build v1 de este mismo repositorio, y que las proyecciones modificadas codifican los pesos BF16 v2 con un error rms del 0,53-0,61 %.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, con plantilla de chat compatible con oMLX y mlx-vlm.
-- Procesamiento de imagen y texto de entrada (image-text-to-text) mediante encoder de vision en BF16.
-- Razonamiento con esfuerzo configurable: el argumento reasoning_effort admite valores de 0 a 0,99 o las etiquetas none, low, medium, high y xhigh.
-- Decodificacion especulativa mediante el draft DSpark incluido en mtp.safetensors, activable con oMLX Lightning MTP.
-- Comportamiento sin rechazo: el modelo sigue instrucciones que el checkpoint original rechazaria, por eliminacion del comportamiento de rechazo en los pesos.
-- Capacidades multilingues: la calibracion uso un conjunto multilingue, pero no se publica la lista de idiomas soportados.
-- Soporte de tool calling, function calling y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Generacion de texto conversacional multi-turno.
+- Razonamiento con modo de pensamiento configurable mediante `reasoning_effort` (valores de 0 a 0,99 o `none`...`xhigh`).
+- Procesamiento de imagen y texto (image-text-to-text) mediante encoder de vision.
+- Generacion de codigo y matematicas (capacidad heredada del modelo base; sin metricas publicadas en esta ficha).
+- Decodificacion especulativa multi-token (MTP) con el borrador DSpark para acelerar la inferencia.
+- Comportamiento sin rechazo: sigue instrucciones daninas por diseno (abliterated + fine-tuning de cumplimiento).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible detalle; la calibracion de la cuantizacion uso un conjunto multilingue.
 
 ## Casos de uso
 
-- Investigacion sobre alineamiento y seguridad: el checkpoint permite estudiar como se distribuye el comportamiento de rechazo en los pesos de un modelo multimodal, comparando las 20 proyecciones attn.o_proj editadas con el original y midiendo el efecto de la edicion sobre las respuestas.
-- Evaluacion de tecnicas de cuantizacion mixta: al conservar el encoder de vision en BF16 y comprimir selectivamente los expertos, sirve como caso de estudio para medir la degradacion por capas y validar recetas oQ4e frente a cuantizaciones uniformes.
-- Pruebas de decodificacion especulativa en Apple Silicon: el draft DSpark y la integracion con oMLX Lightning MTP permiten medir aceleraciones de latencia en hardware MLX con un modelo de 26,4 mil millones de parametros.
-- Red teaming automatizado: al no aplicar salvaguardas, es util como generador de prompts adversarios y respuestas no filtradas en pipelines internos de evaluacion, siempre en entornos aislados.
-- Desarrollo de filtros y clasificadores de seguridad: las respuestas del modelo sin rechazo sirven como corpus negativo para entrenar o validar clasificadores de contenido dañino.
-- Inferencia local multimodal en macOS: con 15,098 GiB en 4 shards y formato MLX, cabe en equipos Apple Silicon con memoria unificada suficiente para prototipos de vision-lenguaje sin depender de GPU dedicadas.
-- Analisis de robustez ante prompts de rechazo: la comparacion entre el checkpoint previo a la edicion y este permite cuantificar la tasa de cumplimiento en prompts sensibles, tal como se documenta en la verificacion conductual del autor.
+- Investigacion sobre alineacion y rechazo: el modelo permite estudiar como se comporta una red sin capa de rechazo y comparar con el checkpoint original, usando `reasoning_effort` para medir la deliberacion ante peticiones sensibles.
+- Evaluacion de cuantizacion en Apple Silicon: sirve como banco de pruebas reproducible para medir la degradacion de un oQ4e frente al BF16, dado que la model card documenta el error rms (0,53-0,61 %) y la equivalencia tensor a tensor.
+- Desarrollo de salvaguardas externas: al no incorporar entrenamiento de seguridad, es un caso de uso realista para probar clasificadores de entrada/salida, filtros y moderacion en pipelines propios antes de exponer el modelo.
+- Asistentes multimodales locales: con encoder de vision y 15,098 GiB de pesos, puede desplegarse en estaciones de trabajo Apple con memoria unificada para tareas de descripcion de imagenes, extraccion de informacion de documentos escaneados o respuesta a preguntas sobre capturas.
+- Aceleracion de inferencia con MTP: el borrador DSpark en `mtp.safetensors` permite evaluar tecnicas de decodificacion especulativa en oMLX Lightning MTP sobre un modelo de ~26B cuantizado a 4 bits.
+- Fine-tuning e investigacion de destilacion: la receta de abliteracion + autodestilacion documentada (120 tensores, fusion LoRA `W + 2·BᵀA`) sirve de referencia para reproducir ediciones de pesos sobre otros checkpoints.
+- Prototipado de chat conversacional en local: con licencia Apache 2.0 y formato MLX, encaja en entornos de desarrollo macOS para iterar sobre plantillas de chat y ajustes de `reasoning_effort` sin coste de API.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card solo incluye verificaciones de integridad de la cuantizacion (identidad de configuracion 101/101 entradas, 903 de 1.098 tensores byte-identicos, error rms del 0,53-0,57% en las proyecciones editadas) y una comprobacion conductual cualitativa sobre un prompt propenso al rechazo, sin cifras de MMLU, HumanEval, GSM8K ni comparaciones numericas con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica que la suite completa de capacidades de la v2 estaba pendiente de reejecucion en el momento del release, y que las estadisticas de rechazo/utilidad/capacidad son las del release de origen.
 
 ## Requisitos de hardware
 
-- VRAM o memoria unificada estimada: 15,098 GiB solo para los pesos en 4 shards; hay que sumar el espacio del draft mtp.safetensors y la cache KV, cuyo tamano depende de la longitud de contexto (no disponible).
-- Hardware objetivo: Apple Silicon con MLX, dado que el checkpoint usa la libreria mlx y requiere oMLX 0.8.1 o superior; no esta pensado para CUDA.
-- GPU dedicadas tipo A100, H100 o RTX 4090: no aplicables de forma nativa, ya que el formato es MLX y no GGUF ni safetensors genericos de PyTorch.
-- Cabe en consumer hardware Apple: si, en equipos con memoria unificada de 24 GB o superior, siempre que la cache KV y el contexto lo permitan; el limite exacto no se especifica.
-- Opciones de despliegue: oMLX (version 0.8.1 o posterior) y mlx-vlm; no se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles; la unica indicacion es que la decodificacion especulativa con DSpark y oMLX Lightning MTP esta pensada para reducir latencia.
+- VRAM/memoria unificada: aproximadamente 15,1 GiB solo para los pesos (4 shards, 15,098 GiB); hay que anadir la cache KV y el overhead del runtime, por lo que se recomienda un minimo practico de 20-24 GiB de memoria unificada.
+- Hardware objetivo: Apple Silicon con MLX; el formato y la libreria (`mlx`, `mlx-vlm`, oMLX >= 0.8.1) no estan pensados para GPU NVIDIA o AMD.
+- GPU consumer: no aplica en el sentido tradicional; en equipos Apple encaja en configuraciones con memoria unificada de 24 GB o superior (M-series Pro/Max/Ultra).
+- Despliegue: oMLX 0.8.1 o superior y mlx-vlm; no se mencionan vLLM, llama.cpp, Ollama ni TGI como compatibles con este checkpoint MLX.
+- Latencia y throughput: no disponibles en la informacion proporcionada; el uso de MTP (DSpark) esta orientado a reducir la latencia de decodificacion.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
 |---|---|---|---|---|---|
-| Inkling-2-Mini-Unbound-oQ4e (este) | 26,4 mil millones | no disponible | oQ4e, 4,915 bits/peso | Apache 2.0 | Hugging Face, formato MLX |
-| mlx-community/Inkling-2-Mini-oQ4e-mtp | no disponible | no disponible | oQ4e con MTP | no disponible en la informacion | Hugging Face, formato MLX |
-| nokeepai/Inkling-2-Mini-Unbound | no disponible | no disponible | BF16 (checkpoint sin cuantizar) | Apache 2.0 | Hugging Face |
-| Inkling-2-Mini (Thinking Machines Lab) | no disponible | no disponible | original | Apache 2.0 con politica de uso aceptable | Hugging Face |
-
-La comparativa se limita a la propia familia Inkling-2-Mini porque la informacion proporcionada no incluye datos de modelos alternativos de otros desarrolladores. La diferencia clave entre las variantes es el nivel de cuantizacion (BF16 frente a oQ4e) y la presencia o ausencia de la edicion de rechazo; los parametros y el contexto de los checkpoints base no se detallan.
+| wren6991/Inkling-2-Mini-Unbound-oQ4e (este) | 26,39 B | no disponible | oQ4e MLX, 4,915 bits/peso | Apache 2.0 | Sin rechazo, vision, MTP |
+| nokeepai/Inkling-2-Mini-Unbound (base) | no disponible | no disponible | BF16 (checkpoint fuente) | Apache 2.0 | Version abliterated v2 de referencia |
+| mlx-community/Inkling-2-Mini-oQ4e-mtp | no disponible | no disponible | oQ4e MLX | no disponible | Misma disposicion de tensores; reemplazo directo |
+| Inkling 2 Mini (Thinking Machines Lab) | no disponible | no disponible | BF16 | Apache 2.0 (via AUP) | Modelo original con alineacion de seguridad |
 
 ## Limitaciones y advertencias
 
-- Modelo sin salvaguardas: sigue instrucciones dañinas por diseno, ya que el comportamiento de rechazo fue eliminado de los pesos y no se ha reentrenado seguridad. No debe desplegarse ante usuarios finales sin controles propios.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible; la cuantizacion a 4 bits añade ruido de redondeo respecto al BF16, aunque el autor afirma que es equivalente al de cualquier oQ4e.
-- Bucles de generacion: la model card advierte que el checkpoint fuente puede entrar en bucle en algunos prompts y recomienda fijar un limite de pensamiento en esfuerzo alto.
-- Idiomas: la lista de idiomas soportados no esta publicada; la calibracion multilingue no garantiza cobertura uniforme.
-- Contexto: la longitud maxima no se especifica, lo que impide planificar despliegues con ventanas largas sin medir empiricamente.
-- Licencia: Apache 2.0, pero el autor remite a la politica de uso aceptable de Thinking Machines Lab, que puede imponer restricciones adicionales al uso comercial.
-- Compatibilidad: solo funciona con oMLX 0.8.1 o superior y mlx-vlm; no es portable a ecosistemas CUDA sin conversion.
-- Trazabilidad de la edicion: la eliminacion del rechazo se hereda del checkpoint Unbound y solo se verifica de forma cualitativa, sin estadisticas publicadas de tasa de cumplimiento.
+- El modelo sigue instrucciones daninas: su comportamiento de rechazo fue eliminado y el de cumplimiento ajustado por fine-tuning; no debe desplegarse a usuarios finales sin salvaguardas propias.
+- Se aplica la Acceptable Use Policy del modelo base de Thinking Machines Lab, ademas de la licencia Apache 2.0.
+- Riesgo elevado de alucinacion y de respuestas no verificadas, agravado por la ausencia de entrenamiento de seguridad.
+- La v2 delibera extensamente en peticiones dificiles: en el release upstream, el 17 % de los prompts daninos alcanzaba el limite de 4.096 tokens con esfuerzo 0,9; se recomienda fijar un tope de pensamiento.
+- La suite completa de capacidades de la v2 estaba pendiente de reejecucion en el momento del release, por lo que las metricas de rendimiento no estan confirmadas para esta version.
+- La cuantizacion introduce ruido de redondeo propio de oQ4e (error rms del 0,53-0,61 % en las proyecciones modificadas), que puede afectar a tareas de precision.
+- Dependencia estricta de oMLX 0.8.1 o superior y de hardware Apple Silicon; no hay soporte documentado para CUDA.
+- Idiomas soportados no documentados de forma explicita; la cobertura multilingue solo se infiere del conjunto de calibracion.
+- Longitud de contexto no disponible, lo que impide garantizar conversaciones de contexto largo sin pruebas propias.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/wren6991/Inkling-2-Mini-Unbound-oQ4e
-- Modelo base (Unbound): https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound
-- Checkpoint de referencia de la cuantizacion: https://huggingface.co/mlx-community/Inkling-2-Mini-oQ4e-mtp
-- Politica de uso aceptable del modelo base: https://thinkingmachines.ai/model-acceptable-use-policy/
+- Hugging Face: https://huggingface.co/wren6991/Inkling-2-Mini-Unbound-oQ4e
+- Modelo base: https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound
+- Checkpoint de referencia con misma disposicion: https://huggingface.co/mlx-community/Inkling-2-Mini-oQ4e-mtp
+- Revision v1 de este repositorio: https://huggingface.co/wren6991/Inkling-2-Mini-Unbound-oQ4e/tree/v1
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
+- Acceptable Use Policy del modelo base: https://thinkingmachines.ai/model-acceptable-use-policy/

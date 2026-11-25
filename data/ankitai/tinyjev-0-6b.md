@@ -2,92 +2,99 @@
 
 ## Resumen
 
-TinyJev-0.6b es un modelo de decisiones tipadas desarrollado por AnkitAI, afinado a partir de Qwen3-0.6B-Base. A diferencia de un modelo generativo convencional, no produce texto libre: recibe un estado (un ticket, un registro, una linea de log) junto con preguntas y las respuestas candidatas, y devuelve una probabilidad para cada opcion ofrecida. Es, en la practica, un clasificador estructurado con confianza calibrada que se ejecuta en una sola pasada hacia delante.
+TinyJev 0.6B es un modelo de decisión tipada desarrollado por AnkitAI, un fine-tune del modelo base Qwen/Qwen3-0.6B-Base. A diferencia de un modelo generativo convencional, no produce texto libre: recibe un estado (un ticket, un registro, una línea de log) junto con una serie de preguntas y las respuestas aceptadas para cada una, y devuelve una probabilidad calibrada para cada opción. El modelo nunca genera nada que no se le haya ofrecido, lo que elimina por diseño el riesgo de respuestas fuera de formato.
 
-El modelo tiene 596.049.920 parametros (~596M) y ocupa aproximadamente 1,2 GB en el repositorio. Se apoya en tres tipos de decision: `Choice` (elegir una opcion de una lista), `Noul` (medir si una afirmacion es verdadera) y `Score` (situar el estado en una escala ordenada). Su propuesta de valor es ofrecer juicio sobre lenguaje con umbrales de confianza utilizables, de forma totalmente offline, sobre MLX en Apple Silicon y PyTorch en el resto de plataformas.
+El modelo implementa cuatro tipos de decisión: `Choice` (selección entre opciones con probabilidad por opción), `Noul` (verificación de veracidad de una afirmación), `Score` (posicionamiento en una escala ordenada) y confianza calibrada para que un umbral tenga significado operativo. Con 596 millones de parámetros y aproximadamente 1,2 GB de pesos, está pensado para ejecutarse íntegramente en local, con soporte de MLX en Apple Silicon y PyTorch en el resto de plataformas.
 
-Es relevante ahora porque cubre un nicho poco atendido: la toma de decisiones barata y local dentro de pipelines agénticos (enrutado, triaje, escalado), donde no se necesita generacion de texto sino una puntuacion calibrada y reproducible. El autor lo situa explicitamente como un modelo de clase 0.6B y no de clase 4B, alineado con el ancla publica de su mismo tamano en las suites de evaluacion.
+Su relevancia actual radica en la propuesta de "system-one": resolver decisiones estructuradas en un único forward pass, en lugar de encadenar generación de tokens. Frente a un LLM generativo que debe escribir JSON token a token, TinyJev devuelve todas las decisiones de un caso en una sola pasada, con latencias del orden de decenas o centenares de milisegundos en hardware de consumo.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen3) con cabeza pointer de decision |
-| Parametros totales | 596.049.920 (~596M) |
-| Parametros activos | No aplica (no es MoE) |
+| Arquitectura | Transformer (derivada de Qwen3-0.6B-Base), con cabeza de clasificación de decisión tipada |
+| Parámetros totales | 596.049.920 |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Cuantizacion de 8 bits en MLX al cargar; fp16 por defecto en PyTorch; no se documentan GGUF ni otras |
-| Idiomas soportados | en (ingles) |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | inglés (`en`) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (backbone fp16 + `head.safetensors` para la cabeza de decision) |
+| Formato de pesos | safetensors |
+| Pipeline | text-classification |
+| Modelo base | Qwen/Qwen3-0.6B-Base |
+| Dataset de entrenamiento | jaredpalmer/kev-suites |
+| Tamaño del repositorio | 1,2 GB |
+| Librería | transformers |
+| Descargas / likes | 320 / 3 |
 
 ## Arquitectura y entrenamiento
 
-La base es un `Qwen3Model` estandar en fp16 (decoder-only), sobre el que se anade una cabeza pointer que convierte los estados ocultos en respuestas calibradas. La cabeza de decision se distribuye por separado en `head.safetensors`, mientras que `AutoModel.from_pretrained` carga unicamente el backbone. El entrenamiento consistio en un ajuste LoRA de rango 16 con learning rate 5e-5, fusionado despues de vuelta en el modelo base. Los datos proceden del split `decision-v7` del conjunto publico `jaredpalmer/kev-suites`, y no se utilizo ninguna fuente de transferencia reservada durante el entrenamiento. En inferencia se aplica una temperatura ajustada de 1,46.
+TinyJev parte de Qwen3-0.6B-Base, un transformer denso de 596 millones de parámetros, y lo fine-tunea para una tarea de clasificación tipada en lugar de generación de texto. La innovación central es la cabeza de decisión: en lugar de producir tokens, el modelo puntúa cada opción candidata proporcionada por el usuario y devuelve una distribución de probabilidad sobre ellas. El modelo no puede responder con algo distinto de las opciones ofrecidas, porque nunca genera texto.
 
-El diseno de la cabeza pointer y las suites de evaluacion provienen del proyecto Kev de Jared Palmer, y la interfaz de decisiones tipadas sigue a Jev de TypeSafe. El autor probo otras tres configuraciones que resultaron peores: ajuste completo, destilacion desde un profesor de 4B y un encoder de 149M. Una innovacion operativa destacable es que el modelo puntua opciones en lugar de generar, lo que elimina la posibilidad de respuestas fuera del conjunto ofrecido y hace que la confianza sea directamente interpretable en umbrales.
+El entrenamiento se realizó sobre el dataset `jaredpalmer/kev-suites`, según declara el autor. No se especifican en la información disponible el número de tokens de entrenamiento, la composición detallada del dataset, ni si se emplearon técnicas de RLHF o DPO. La model card menciona que la confianza está calibrada, lo que sugiere un proceso de calibración posterior al entrenamiento, aunque no se detalla el método. El modelo se distribuye con soporte dual: MLX para Apple Silicon y PyTorch para el resto de plataformas, con funcionamiento completamente offline.
 
 ## Capacidades
 
-- Puntuacion de opciones (`Choice`): asigna una probabilidad a cada alternativa de una lista y permite seleccionar la mas probable.
-- Verificacion de afirmaciones (`Noul`): estima si un enunciado es verdadero o falso.
-- Puntuacion en escala ordenada (`Score`): situa un estado en un rango como "calmado", "frustrado", "muy enfadado".
-- Confianza calibrada: el autor reporta un error de calibracion (ECE) de 0,082 en el test, de modo que un umbral de confianza tiene un significado medible.
-- Multiples preguntas en una sola pasada hacia delante (por ejemplo, tres preguntas por ticket).
-- Ejecucion totalmente offline, con soporte de cuantizacion de 8 bits en MLX al cargar.
-- Servicio HTTP mediante `tinyjev serve` con el esquema System One (`POST /v1/systemone` en 127.0.0.1:8077).
-- No incluye generacion de texto, tool calling, razonamiento multi-paso ni capacidades multimodales.
+- Decisión tipada `Choice`: selecciona una opción de una lista y devuelve una probabilidad para cada una.
+- Verificación de veracidad `Noul`: mide si una afirmación es verdadera.
+- Puntuación ordenada `Score`: sitúa un estado en una escala ordenada.
+- Confianza calibrada: los umbrales de decisión tienen significado estadístico.
+- Salida restringida: nunca genera texto libre, solo puntúa las opciones proporcionadas.
+- Procesamiento por lotes de decisiones: múltiples preguntas sobre un mismo estado se resuelven en un único forward pass.
+- Ejecución local offline, sin dependencia de API.
+- Soporte de MLX (Apple Silicon) y PyTorch.
+- Integración con `text-embeddings-inference` y endpoints compatibles.
+- No soporta tool calling, agentes autónomos, visión, audio ni razonamiento multi-paso generativo.
 
 ## Casos de uso
 
-- Triaje de tickets de soporte: el modelo recibe el texto del ticket y devuelve probabilidades por equipo ("returns", "shipping", "billing") mas un indicador `Noul` de escalado y un `Score` de enfado, todo en una sola pasada. El demo del autor procesa 8 tickets reales con tres preguntas cada uno a unos 110 ms por ticket en una M1 base.
-- Enrutado con puerta de confianza: cuando la probabilidad se reparte entre varias opciones (por ejemplo, 0,14 en un ticket ambiguo), se deriva a una persona en lugar de adivinar, lo que reduce errores en flujos automaticos.
-- Moderacion y clasificacion de contenido: uso de `Choice` para asignar categorias y `Score` para graduar severidad, con umbrales calibrados en lugar de etiquetas binarias rigidas.
-- Analisis de sentimiento o urgencia sobre logs y registros de aplicacion: `Score` permite colocar cada linea en una escala ordenada de severidad o tono.
-- Verificacion de hechos simples en pipelines de datos: `Noul` mide si una afirmacion concreta se sostiene en funcion del estado aportado, util para filtrado previo.
-- Preprocesado de agentes: actuar como capa de decision barata y local que decide que herramienta o rama debe activarse antes de invocar un modelo generativo mayor.
-- Clasificacion en el borde o en portatil: al ocupar ~1,2 GB y funcionar offline en Apple Silicon o CPU/GPU con PyTorch, encaja en entornos sin conectividad o con requisitos de privacidad estrictos.
+- Triaje de tickets de soporte: dado un ticket, el modelo responde en una sola pasada a preguntas como qué equipo debe atenderlo, qué prioridad tiene y qué quiere el cliente. La model card documenta una demo con doce decisiones sobre un mismo ticket resueltas en 596 ms, con 10 de 12 aciertos.
+- Enrutamiento de incidencias en producción: a partir de una línea de log o un registro de error, el modelo puntúa categorías de destino y permite aplicar un umbral de confianza calibrada para derivar automáticamente los casos ambiguos a revisión humana.
+- Clasificación de registros estructurados: para pipelines ETL donde cada registro debe etiquetarse según un conjunto cerrado de categorías, el modelo evita el coste de generar JSON con un LLM y garantiza que la salida siempre es una de las etiquetas válidas.
+- Verificación de afirmaciones en flujos de datos: usando `Noul`, se puede comprobar si una aserción extraída de un documento o de una respuesta es verdadera respecto al estado proporcionado, con una probabilidad asociada.
+- Puntuación de severidad o calidad: con `Score`, el modelo sitúa un estado en una escala ordenada (por ejemplo, gravedad de un incidente o calidad de un registro), adecuado para sistemas de alerta temprana.
+- Decisión en el borde o en local: con 1,2 GB de pesos, puede desplegarse en un portátil con Apple Silicon vía MLX o en cualquier máquina con PyTorch, sin conexión a internet, para aplicaciones con requisitos de privacidad o latencia estricta.
+- Control de agentes en entornos simulados: la model card incluye una demo con VizDoom en la que el modelo elige tácticas a partir de estado numérico estructurado (salud, munición, posiciones de enemigos), aunque el propio autor advierte que es una demo y no un benchmark.
 
 ## Benchmarks y rendimiento
 
-Datos aportados en la model card (harness upstream sobre la suite congelada; lectura unica del test):
+La model card presenta resultados sobre OD-500, un conjunto de 500 casos nunca vistos procedentes de 25 dominios, con todas las probabilidades registradas en el repositorio del proyecto. La latencia se midió en un Apple M1 base (16 GB) vía MLX, con un forward pass por caso.
 
-| Modelo | transfer-v4 dev | transfer-v4 test | ECE en test |
-|---|---|---|---|
-| tinyjev-0.6b | 0,625 | 0,663 | 0,082 |
-| Ancla publica de mismo tamano | 0,620 | 0,642 | — |
+| Modelo | Parámetros | OD-500 | Gate 0.85 | ms / caso |
+|---|---:|---:|---|---:|
+| TinyJev 0.6B | 596M | no disponible en el extracto | no disponible en el extracto | no disponible en el extracto |
 
-El autor indica que tinyjev-0.6b iguala al ancla publica de su mismo tamano y se situa ligeramente por delante en el test bloqueado, con menor error de calibracion. No se han publicado otros resultados (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
+El extracto de la model card disponible se interrumpe en la tabla de modelos, por lo que los valores concretos de OD-500, Gate 0.85 y latencia para TinyJev no pueden citarse con exactitud. Los datos cualitativos sí están documentados en las demos: seis decisiones de seis dominios no vistos, 6 de 6 correctas, 86 ms por pregunta en un M1 base, frente a 2.042 ms por pregunta de un LLM generativo que escribe JSON. En la demo de doce decisiones sobre un ticket: 596 ms y 10 de 12 correctas. En la demo de triaje de ocho tickets con tres preguntas cada uno: aproximadamente 110 ms por ticket. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 1,2 GB en fp16; en torno a 600 MB con cuantizacion de 8 bits en MLX.
-- Cabe holgadamente en GPU de consumo (RTX 3060, RTX 4090 y similares) y en Apple Silicon; el demo se ejecuta en una M1 base a unos 110 ms por ticket.
-- GPU de centro de datos (A100, H100) no son necesarias para este tamano, aunque pueden usarse para despliegue en lote.
-- Opciones de despliegue: MLX en Apple Silicon (`pip install 'tinyjev[mlx]'`), PyTorch en el resto (`pip install 'tinyjev[torch]'`), y servidor HTTP propio mediante `tinyjev serve`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: ~110 ms por ticket con tres preguntas por ticket en una M1 base, segun el autor. No se aportan cifras de throughput agregado.
+- VRAM estimada para inferencia: aproximadamente 1,2 GB en precisión nativa (tamaño de los pesos safetensors); en FP16 sería del orden de 1,2 GB, y en cuantizaciones de 8 o 4 bits podría reducirse por debajo de 1 GB, aunque el autor no documenta cuantizaciones específicas.
+- GPU recomendadas: no se especifican; el modelo está validado en Apple Silicon (M1 base, 16 GB) vía MLX y en PyTorch sobre cualquier plataforma.
+- Cabe holgadamente en GPU de consumo: cualquier GPU con 2 GB o más de VRAM debería poder alojarlo en precisión nativa.
+- Opciones de despliegue: MLX (Apple Silicon), PyTorch/transformers, `text-embeddings-inference` y endpoints compatibles. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: en M1 base vía MLX, 86 ms por pregunta en la demo de seis decisiones y unos 110 ms por ticket en la demo de triaje; 596 ms para doce decisiones sobre un mismo caso en un solo forward pass.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tinyjev-0.6b | ~596M | Decisiones tipadas / clasificacion con confianza calibrada | no disponible | MIT | Hugging Face, PyPI |
-| Qwen3-0.6B-Base | ~600M (clase) | Generacion de texto (modelo base) | no disponible en esta ficha | Apache-2.0 | Hugging Face |
-| Ancla publica de mismo tamano | mismo tamano | Decisiones / clasificacion | no disponible | no disponible | no disponible |
+| TinyJev 0.6B | 596M | no disponible | Decisión tipada, sin generación | MIT | Hugging Face, PyPI |
+| Qwen3-0.6B-Base | 0,6B | no disponible | Generación de texto | no disponible en esta ficha | Hugging Face |
+| LLM generativo con salida JSON (p. ej. GPT-6 Sol, según la demo del autor) | no disponible | no disponible | Generación token a token | propietaria | API |
 
-La comparacion directa con alternativas equivalentes de decision es limitada porque la model card solo menciona un "ancla publica de mismo tamano" sin identificarla ni enlazarla. Frente a Qwen3-0.6B-Base, la diferencia no es de rendimiento bruto sino de proposito: tinyjev no genera texto y solo puntua opciones. No se dispone de datos de benchmarks comparables con otros clasificadores de la misma categoria en la informacion proporcionada.
+La comparación más directa es con su modelo base Qwen3-0.6B-Base: TinyJev hereda la arquitectura pero sustituye la generación por una cabeza de clasificación tipada, lo que restringe la salida y reduce la latencia a un único forward pass. Frente a un LLM generativo que produce JSON, la diferencia medida por el autor es de 86 ms frente a 2.042 ms por pregunta, a costa de perder la flexibilidad de la generación libre. No se dispone de datos de benchmarks comparativos adicionales en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No genera texto: no puede responder nada que no este entre las opciones o preguntas ofrecidas, lo que es una restriccion de diseno, no un fallo.
-- El autor advierte que, ante estados ya estructurados y numericos, el modelo deja de discriminar; su competencia es el juicio sobre lenguaje.
-- Rendimiento de clase 0.6B: el propio autor indica que "no es de clase 4B y no pretende serlo".
-- Conviene usar la puerta de confianza en entradas alejadas de lo visto en entrenamiento (el autor cita explicitamente el caso del demo con 0,14 de confianza).
-- Solo soporta ingles (`language: [en]`); no se documenta soporte multilingue.
-- Riesgo de alucinacion: reducido por diseno al no generar texto, pero las probabilidades pueden estar mal calibradas fuera de la distribucion de entrenamiento.
-- Sesgos: no se documenta ninguna evaluacion de sesgos en la model card.
-- Licencia MIT, que permite uso comercial; el backbone Qwen3-0.6B-Base es Apache-2.0 y los componentes Kev y Jev son Apache-2.0, por lo que conviene revisar las atribuciones correspondientes.
-- El repositorio registra 0 descargas y 0 likes en la fecha de consulta, lo que indica un modelo muy reciente y con poca validacion independiente por parte de la comunidad.
+- El modelo solo procesa inglés; no hay soporte multilingüe declarado.
+- No genera texto: solo puede responder dentro del conjunto de opciones proporcionadas. No sirve para tareas generativas, resumen, traducción ni conversación abierta.
+- No soporta tool calling, agentes autónomos ni razonamiento multi-paso generativo.
+- La model card advierte que, en estado numérico estructurado, la respuesta apenas varía con la entrada; la demo de VizDoom no es un benchmark y el enrutador basado en reglas hace el trabajo principal del juego.
+- Riesgo de alucinación: no aplica en el sentido generativo, pero la calibración de probabilidades puede degradarse fuera de la distribución de entrenamiento; los umbrales deben validarse en el dominio de despliegue.
+- No se documentan sesgos conocidos, composición del dataset de entrenamiento ni procesos de mitigación.
+- Licencia MIT: permite uso comercial, modificación y redistribución, con la obligación habitual de incluir el aviso de copyright y la licencia.
+- No se documentan cuantizaciones oficiales ni longitud de contexto, lo que limita la planificación de despliegues con entradas largas.
+- El proyecto es reciente (creado en septiembre de 2026) y con pocas descargas (320); la madurez y el soporte comunitario son limitados.
 
 ## Enlaces
 
@@ -95,8 +102,10 @@ La comparacion directa con alternativas equivalentes de decision es limitada por
 - Repositorio GitHub: https://github.com/ankit-aglawe/tinyjev
 - Paquete PyPI: https://pypi.org/project/tinyjev/
 - Ejemplos: https://github.com/ankit-aglawe/tinyjev/tree/main/examples
-- Modelo base Qwen3-0.6B-Base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
-- Proyecto Kev (Jared Palmer): https://github.com/jaredpalmer/kev
-- Interfaz Jev de TypeSafe: https://docs.typesafe.ai/introduction
-- Dataset de entrenamiento: https://huggingface.co/datasets/jaredpalmer/kev-suites
-- Busqueda web: no se encontraron resultados relevantes sobre este modelo; las consultas devolvieron unicamente sitios de pasatiempos y quiz sin relacion.
+- Benchmarks OpenDecision: https://github.com/ankit-aglawe/tinyjev/tree/main/benchmarks/opendecision
+- README en chino simplificado: https://github.com/ankit-aglawe/tinyjev/blob/main/README.zh-CN.md
+- README en japonés: https://github.com/ankit-aglawe/tinyjev/blob/main/README.ja.md
+- README en coreano: https://github.com/ankit-aglawe/tinyjev/blob/main/README.ko.md
+- Licencia: https://github.com/ankit-aglawe/tinyjev/blob/main/LICENSE
+- Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
+- Dataset: https://huggingface.co/datasets/jaredpalmer/kev-suites

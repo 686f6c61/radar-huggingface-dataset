@@ -39,21 +39,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Suriya777ff/INF-5-Tanglish-GGUF · Hugging Face",
-      "url": "https://huggingface.co/Suriya777ff/INF-5-Tanglish-GGUF",
-      "snippet": "Suriya777ff / INF-5-Tanglish-GGUF Like 0 GGUF conversational License:infinite-tech-use-only Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
-    },
-    {
-      "title": "Inf 5 Tanglish Gguf - AI Model Insights & Benchmarks",
-      "url": "https://free2aitools.com/model/suriya777ff/inf-5-tanglish-gguf",
-      "snippet": "Registry entry for model Inf 5 Tanglish Gguf; source metadata pending."
-    },
-    {
-      "title": "Suriya777ff (Superior) - Hugging Face",
-      "url": "https://huggingface.co/Suriya777ff",
-      "snippet": "Recent Activity updated a modelabout 10 hours ago Suriya777ff/INF-5-Tanglish-GGUF published a model2 days ago Suriya777ff/INF-5-Tanglish-GGUF View all activity"
-    }
-  ]
+  "sources": []
 }

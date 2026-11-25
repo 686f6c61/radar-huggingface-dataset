@@ -2,51 +2,48 @@
 
 ## Resumen
 
-Minico M1 1105 MLX es una compilación cuantizada a 8 bits en formato MLX del modelo Minico M1 1105, un ajuste fino de LiquidAI/LFM2.5-350M desarrollado por el usuario Mincofficial. El modelo está pensado para ejecutarse en Apple Silicon mediante la librería `mlx-lm`, y su rasgo más distintivo es la incorporación de niveles de esfuerzo de razonamiento (`reasoning_effort`) configurables por conversación, que controlan cuántos tokens dedica el modelo a "pensar" antes de responder.
+Minico M1 1105 MLX es una compilación cuantizada a 8 bits en formato MLX del modelo Minico-M1-1105, un ajuste fino de LiquidAI/LFM2.5-350M orientado a razonamiento con niveles de esfuerzo configurables. Lo desarrolla el usuario Mincofficial y está pensado específicamente para ejecución en Apple Silicon mediante la librería `mlx-lm`, lo que permite desplegar un modelo conversacional de 354 millones de parámetros en Macs sin necesidad de GPU dedicada.
 
-Con 354 millones de parámetros totales y un repositorio de 0,4 GB, se trata de un modelo pequeño orientado a generación de texto y conversación en inglés. No es un modelo de propósito general de gran escala, sino una variante especializada en razonamiento con presupuesto controlado, lo que lo hace interesante para prototipado local en portátiles y equipos de sobremesa con chip de Apple.
+El modelo hereda la arquitectura LFM2 (familia de Liquid AI) y añade un mecanismo de control del razonamiento (`reasoning_effort`) con cinco niveles —`off`, `low`, `medium`, `high` y `max`— que ajusta la longitud del bloque de pensamiento antes de la respuesta final. Esta funcionalidad, junto con el ajuste por SFT, DPO y GRPO, lo sitúa como una opción ligera para tareas de razonamiento controlado en entornos de desarrollo locales.
 
-La relevancia actual radica en su enfoque de "esfuerzo de razonamiento" ajustable, una tendencia creciente en modelos que permiten al desarrollador equilibrar latencia y calidad sin cambiar de modelo. Al estar construido sobre LFM2.5-350M, hereda la arquitectura y las limitaciones del modelo base de Liquid AI, pero añade un mecanismo de control explícito del pensamiento que no está presente en el original.
+Su relevancia actual radica en tres factores: el tamaño reducido (0,4 GB en el repositorio), la licencia LFM Open v1.0 que permite uso comercial bajo umbral de ingresos, y la integración nativa con el ecosistema MLX para Macs con chips M-series. No obstante, el soporte de idiomas se limita al inglés y la información pública sobre benchmarks es inexistente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LFM2 (hereda de LiquidAI/LFM2.5-350M); detalles internos no disponibles |
+| Arquitectura | LFM2 (familia Liquid AI, transformer) |
 | Parametros totales | 354.483.968 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | 8-bit (MLX); el repo base ofrece precisión completa |
-| Idiomas soportados | en (inglés) |
-| Licencia | LFM Open License v1.0 (license_name: lfm1.0) |
-| Formato de pesos | safetensors (MLX) |
+| Idiomas soportados | inglés (en) |
+| Licencia | LFM Open License v1.0 (lfm1.0) |
+| Formato de pesos | safetensors (MLX, 8-bit) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una versión modificada de LiquidAI/LFM2.5-350M. Según la model card, los pesos se modificaron mediante ajuste fino supervisado (SFT), DPO (Direct Preference Optimization) y GRPO (Group Relative Policy Optimization), además de fusión de pesos (weight merging). No se especifican el número de tokens de entrenamiento, la composición del dataset ni detalles sobre la arquitectura interna más allá de la referencia a LFM2.
+El modelo se construye sobre LFM2.5-350M de Liquid AI, una arquitectura de tipo transformer perteneciente a la familia LFM2. Según la model card, los pesos originales fueron modificados mediante ajuste fino supervisado (SFT), optimización por preferencias (DPO) y optimización por políticas con recompensa (GRPO), además de fusión de pesos (weight merging). No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni detalles sobre la innovación arquitectónica concreta de LFM2.
 
-La innovación técnica destacable es el sistema de niveles de esfuerzo de razonamiento, que se controla mediante la plantilla de chat con el parámetro `reasoning_effort`. Los niveles disponibles son `off`, `low`, `medium` (por defecto), `high` y `max`, con presupuestos máximos de tokens nuevos de 1024, 640, 1152, 2368 y 4608 respectivamente. La plantilla también acepta alias (`none`, `minimal`, `xhigh`) y `enable_thinking=False` como equivalente a `off`. Los valores desconocidos recaen en `medium`. El modelo fue entrenado con conversaciones que mantienen un único ajuste de esfuerzo de principio a fin, por lo que no se recomienda cambiarlo a mitad de una conversación.
+La contribución técnica más destacable es el sistema de niveles de esfuerzo de razonamiento, implementado a través de la plantilla de chat. El modelo fue entrenado con conversaciones que mantienen un único ajuste de esfuerzo de principio a fin, lo que implica que cambiar el nivel a mitad de una conversación degrada el comportamiento. La compilación MLX aplica cuantización a 8 bits que, según el autor, es prácticamente sin pérdida a este tamaño.
 
 ## Capacidades
 
 - Generación de texto conversacional en inglés.
-- Razonamiento con presupuesto de tokens controlable mediante `reasoning_effort` (cinco niveles).
-- Modo sin pensamiento (`off`) para respuestas inmediatas, con bloque de pensamiento vacío pre-rellenado.
-- Modos de pensamiento corto (`low`), normal (`medium`), largo (`high`) y máximo (`max`).
-- Compatibilidad con la plantilla de chat de `mlx-lm` y sus opciones de configuración.
-- Soporte de cuantización 8-bit para Apple Silicon con pérdida mínima declarada por el autor.
-- No se documentan capacidades de tool calling, function calling, agentes multi-paso, visión, audio ni multimodalidad.
-- Capacidad multilingüe limitada al inglés según el campo `language`.
+- Razonamiento con control de esfuerzo: cinco niveles (`off`, `low`, `medium`, `high`, `max`) que determinan la longitud del bloque de pensamiento antes de la respuesta.
+- Modo sin pensamiento (`off`) para respuestas inmediatas, útil en aplicaciones de baja latencia.
+- Alias adicionales en la plantilla de chat (`none`, `minimal`, `xhigh`) y parámetro `enable_thinking=False`.
+- Ejecución nativa en Apple Silicon mediante MLX.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión, audio ni capacidades multilingües más allá del inglés.
 
 ## Casos de uso
 
-- Asistente conversacional local en Mac: el modelo puede gestionarse con `mlx-lm` en un equipo Apple Silicon, usando el nivel `off` o `low` para respuestas rápidas en un chat de atención al usuario o asistente personal, con latencia baja gracias a sus 354M de parámetros.
-- Prototipado de razonamiento con presupuesto controlado: investigadores pueden comparar la calidad de las respuestas con `low`, `medium`, `high` y `max` sobre el mismo conjunto de preguntas para estudiar el efecto del presupuesto de pensamiento en un modelo pequeño.
-- Generación de respuestas matemáticas paso a paso: el comando de ejemplo de la model card (`"What is 5 + 5 x 5?"`) ilustra su uso para problemas aritméticos simples donde el modo `medium` o `high` permite mostrar el razonamiento intermedio.
-- Educación y tutoría: con el nivel `high` o `max`, el modelo puede generar explicaciones más detalladas para preguntas de estudiantes, manteniendo un único ajuste de esfuerzo durante toda la sesión.
-- Evaluación de técnicas de ajuste fino: al estar construido con SFT, DPO y GRPO sobre un modelo base público, sirve como caso de estudio para comparar el efecto de estas técnicas en un modelo de 350M.
-- Despliegue en entornos con recursos limitados: su tamaño de 0,4 GB en 8-bit permite incluirlo en aplicaciones de escritorio o scripts locales sin necesidad de GPU dedicada, siempre que se disponga de Apple Silicon.
-- Generación de texto en pipelines de CI para pruebas: por su bajo coste de ejecución, puede usarse como modelo de referencia en tests automatizados de generación de texto en inglés.
+- Asistente de razonamiento local en Mac: el modelo se ejecuta con `mlx-lm` en chips M-series y permite alternar entre respuestas rápidas (`off`) y razonamiento profundo (`max`) según la consulta, sin depender de servicios en la nube.
+- Resolución de problemas matemáticos paso a paso: con `reasoning_effort` en `medium` o `high`, el modelo genera cadenas de pensamiento antes de la respuesta final, adecuado para ejercicios de aritmética y lógica sencilla.
+- Prototipado de aplicaciones conversacionales: al ocupar 0,4 GB y cargarse en memoria unificada, sirve para iterar rápidamente en el desarrollo de chatbots o interfaces de chat en entornos de desarrollo locales.
+- Filtrado y clasificación de texto con justificación: el modo `low` produce un razonamiento breve que puede registrarse como traza explicativa junto a la decisión del modelo.
+- Educación y demostraciones de razonamiento controlado: útil para mostrar cómo varía la calidad y la longitud del razonamiento según el nivel de esfuerzo configurado.
+- Evaluación comparativa de cuantizaciones: al existir versión de precisión completa y versión MLX 8-bit, permite medir la degradación introducida por la cuantización en tareas de razonamiento.
 
 ## Benchmarks y rendimiento
 
@@ -54,38 +51,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: al ser un modelo MLX para Apple Silicon, no aplica VRAM de GPU dedicada; el repositorio ocupa 0,4 GB en 8-bit, por lo que la memoria unificada necesaria es del orden de 1 GB o menos en inferencia.
-- GPU recomendadas: Apple Silicon (series M1, M2, M3, M4 y posteriores) con memoria unificada suficiente; no se documenta soporte para GPU NVIDIA o AMD en esta compilación.
-- Cabe en cualquier Mac con Apple Silicon; no requiere GPU dedicada.
-- Opciones de despliegue: `mlx-lm` (librería oficial indicada en la model card); para precisión completa, cargar el repo base `Mincofficial/Minico-M1-1105` con `mlx_lm`.
-- Latencia y throughput: no disponibles en la información proporcionada. La model card recomienda temperatura 0,1–0,3, top_k 50 y penalización de repetición 1,05.
+- VRAM/memoria unificada estimada: el repositorio ocupa 0,4 GB en 8 bits, por lo que la inferencia requiere aproximadamente 0,5–1 GB de memoria considerando overhead de runtime.
+- Hardware objetivo: Apple Silicon (chips M1, M2, M3, M4 y variantes Pro/Max/Ultra) mediante MLX.
+- Cabe holgadamente en cualquier Mac con Apple Silicon, incluidos modelos con 8 GB de memoria unificada.
+- Despliegue: `mlx-lm` (librería oficial); para precisión completa, el repo base `Mincofficial/Minico-M1-1105` se carga directamente con `mlx_lm`.
+- Latencia y throughput: no disponibles en la información proporcionada.
+- Parámetros de muestreo recomendados: temperatura 0,1–0,3, top_k 50, repetition penalty 1,05.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| Minico M1 1105 MLX | 354M | no disponible | LFM Open License v1.0 | safetensors (MLX, 8-bit) | Razonamiento con esfuerzo configurable; solo inglés; Apple Silicon |
-| LiquidAI/LFM2.5-350M | 350M (aprox.) | no disponible | no disponible en la información | no disponible | Modelo base del que deriva; sin el sistema de esfuerzo de razonamiento documentado aquí |
-| Minicofficial/Minico-M1-1105 | 354M | no disponible | LFM Open License v1.0 | safetensors (precisión completa) | Versión sin cuantizar del mismo modelo; requiere `mlx-lm` para cargar |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Minico M1 1105 MLX | 354 M | no disponible | LFM Open v1.0 | Hugging Face (MLX 8-bit) |
+| LiquidAI/LFM2.5-350M | ~350 M | no disponible | LFM Open v1.0 | Hugging Face (modelo base) |
+| Mincofficial/Minico-M1-1105 | 354 M | no disponible | LFM Open v1.0 | Hugging Face (precisión completa) |
 
-No se dispone de datos de benchmarks ni de otros modelos comparables en la información proporcionada.
+Las alternativas comparables son el modelo base de Liquid AI y la versión de precisión completa del propio Minico; no se dispone de datos de rendimiento para establecer comparaciones cuantitativas con otros modelos de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- El modelo solo soporta inglés según el campo `language`; no se documentan otros idiomas.
-- No se especifica la longitud de contexto, lo que impide planificar conversaciones largas con garantías.
-- Riesgo de alucinación inherente a modelos de 354M de parámetros; la calidad del razonamiento en los modos `high` y `max` no está validada con benchmarks publicados.
-- El cambio de nivel de esfuerzo a mitad de conversación no está recomendado y puede degradar la coherencia, ya que el modelo fue entrenado con un único ajuste por conversación.
-- La licencia LFM Open License v1.0 permite uso comercial solo a organizaciones por debajo del umbral de ingresos definido en la licencia; es necesario leerla antes de un uso comercial.
-- El modelo es una modificación de LFM2.5-350M y conserva los avisos de atribución del modelo base en el archivo `LICENSE`.
-- Al ser una compilación MLX, está restringido a Apple Silicon; no es portable a otros backends sin conversión.
-- No se documentan capacidades de tool calling, agentes, visión ni audio, por lo que no debe asumirse su disponibilidad en producción.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validación comunitaria.
+- Solo soporta inglés; no se documentan capacidades multilingües.
+- No se han publicado benchmarks, por lo que el rendimiento real en tareas de razonamiento, código o matemáticas es desconocido.
+- Riesgo de alucinación inherente a modelos de 350 M de parámetros, especialmente en conocimiento factual.
+- El cambio de nivel de esfuerzo a mitad de conversación no está recomendado: el modelo fue entrenado con un ajuste constante por chat.
+- La licencia LFM Open v1.0 permite uso comercial solo a organizaciones por debajo del umbral de ingresos definido en la licencia; es necesario leerla antes de un uso comercial.
+- Es una versión modificada del modelo base de Liquid AI; se mantienen las atribuciones en el archivo `LICENSE`.
+- La cuantización a 8 bits, aunque descrita como casi sin pérdida, puede introducir degradaciones menores no cuantificadas públicamente.
+- No se documenta soporte de tool calling ni de agentes, lo que limita su uso en pipelines automatizados complejos.
 
 ## Enlaces
 
-- [Minicofficial/Minico-M1-1105-MLX en Hugging Face](https://huggingface.co/Mincofficial/Minico-M1-1105-MLX)
-- [Minicofficial/Minico-M1-1105 (modelo base, precisión completa)](https://huggingface.co/Mincofficial/Minico-M1-1105)
-- [LiquidAI/LFM2.5-350M (modelo original de Liquid AI)](https://huggingface.co/LiquidAI/LFM2.5-350M)
-- [Licencia LFM Open License v1.0 (archivo LICENSE del repositorio)](https://huggingface.co/Mincofficial/Minico-M1-1105-MLX/blob/main/LICENSE)
-- [mlx-lm (librería de inferencia)](https://github.com/ml-explore/mlx-lm)
+- Hugging Face (MLX 8-bit): https://huggingface.co/Mincofficial/Minico-M1-1105-MLX
+- Modelo base (precisión completa): https://huggingface.co/Mincofficial/Minico-M1-1105
+- Modelo original de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-350M
+- Librería MLX-LM: https://github.com/ml-explore/mlx-lm

@@ -2,107 +2,102 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-Mew-Surgeon es una edición sin entrenamiento (training-free) del modelo Qwen/Qwen3.5-0.8B, publicada por el usuario zazeen123 mediante una técnica de "model-surgery" que reduce el vocabulario del tokenizador de 248.320 a 83.172 tokens. El objetivo no es mejorar la capacidad del modelo, sino reducirlo: se conservan únicamente los tokens que aparecen realmente en un corpus de Wikipedia en tailandés e inglés (con un recuento mínimo de 20 apariciones), de modo que el texto en esos dos idiomas se tokeniza exactamente igual que en el modelo original, pero el archivo pesa menos y genera más rápido.
+Qwen3.5-0.8B-Mew-Surgeon es una variante del modelo Qwen/Qwen3.5-0.8B (aproximadamente 0,8 mil millones de parámetros) publicada por el usuario zazeen123 en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una intervención sobre los pesos del modelo base mediante técnicas de "model surgery" (edición de pesos sin entrenamiento). El objetivo declarado es doble: reducir el vocabulario al par tailandés-inglés y corregir el bucle de razonamiento que el modelo original presenta al activar el modo thinking.
 
-El resultado es un modelo de 704.327.232 parámetros (aproximadamente 0,8B) con arquitectura Qwen3.5, pipeline image-text-to-text y licencia Apache 2.0, heredada del modelo base. La reducción de vocabulario baja el Q8_0 de 795 MB a 616 MB y mejora la velocidad de generación de 290 a 347 tok/s en una RTX 5060 Ti, sin diferencias estadísticamente fiables en preguntas en tailandés, matemáticas o tool calling tailandés/inglés. El precio que se paga es la pérdida total de los scripts eliminados: japonés, chino, coreano y cualquier otro sistema de escritura que no sea tailandés o latino deja de funcionar.
+El modelo conserva la arquitectura del Qwen3.5-0.8B original, con 704.327.232 parámetros reales según los safetensors, y está orientado a tareas de image-text-to-text, conversación y llamadas a herramientas. La intervención quirúrgica elimina una dirección del flujo residual en las 48 capas de escritura residual (o_proj, out_proj, down_proj) con una intensidad de 1,1, sin alterar formas, tamaño ni velocidad de inferencia.
 
-Es relevante ahora porque ejemplifica una práctica creciente de publicación de variantes "quirúrgicas" de modelos abiertos: el autor documenta con rigor (pruebas pareadas, valores p, comparaciones contra el modelo de origen) que el modelo no es mejor, solo más pequeño, y advierte explícitamente contra interpretaciones optimistas. Para desarrolladores que despliegan un modelo de 0,8B en entornos con restricciones de tamaño o latencia y solo necesitan tailandés e inglés, es una opción práctica; para cualquier otro caso, el modelo base es la referencia.
+Es relevante porque demuestra que es posible mitigar el fallo de repetición infinita en modelos pequeños de razonamiento mediante edición de pesos, sin reentrenar. El autor publica mediciones detalladas y honestas sobre qué mejora y qué empeora, lo que lo convierte en un caso interesante para investigadores que trabajan con modelos compactos y modos de pensamiento extendido.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3.5 (transformer multimodal image-text-to-text; incluye tensores `attn_qkv`, `attn_gate`, `ssm_beta`, `ssm_alpha`) |
+| Arquitectura | Transformer (Qwen3.5), edición de pesos sin entrenamiento |
 | Parametros totales | 704.327.232 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible (el ejemplo de despliegue usa `-c 8192`) |
-| Tipos de cuantizacion | BF16 (safetensors), Q8_0, Q4_K_M-imat (GGUF) |
-| Idiomas soportados | Tailandes e ingles unicamente (el resto de scripts eliminados) |
-| Licencia | Apache 2.0 (mismos terminos que el modelo base) |
-| Formato de pesos | safetensors (BF16) y GGUF |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF (Q8_0 mencionado en las mediciones); safetensors en el repo |
+| Idiomas soportados | tailandés (th), inglés (en) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura de Qwen3.5-0.8B, un transformer multimodal con pipeline image-text-to-text cuyos pesos de visión permanecen intactos. La intervención consiste en un "vocab-prune" ejecutado el 2026-11-18: se contó un corpus de Wikipedia en tailandés e inglés, se conservaron los tokens con recuento mínimo 20 y se recortó el vocabulario de 248.320 a 83.172 entradas. Los pesos de cada token conservado no se modifican, por lo que la tokenización de texto tailandés e inglés es idéntica a la del modelo original.
+El modelo parte de Qwen/Qwen3.5-0.8B, un transformer de aproximadamente 0,8 mil millones de parámetros. Sobre esa base se aplican dos modificaciones sin entrenamiento adicional. La primera es un recorte de vocabulario de 248.320 a 83.172 tokens, calculado contando un corpus de Wikipedia en tailandés e inglés con un mínimo de 20 apariciones; los pesos de los tokens conservados no se tocan, por lo que la tokenización de tailandés e inglés permanece idéntica al original. La segunda es la corrección del bucle: se identifica en la capa 9 una dirección del flujo residual que separa el pensamiento que empieza a repetirse del que termina, y se elimina de las 48 capas de escritura residual (o_proj, out_proj, down_proj) con la fórmula W ← W − 1,1·r(rᵀW). No hay RLHF, DPO ni entrenamiento supervisado en esta variante; todo el ajuste es edición directa de pesos.
 
-No hay entrenamiento, ajuste fino, RLHF ni DPO: es una edición puramente estructural de la matriz de embeddings y de la cabeza de salida. Los GGUF publicados conservan los tensores `attn_qkv`/`attn_gate` y `ssm_beta`/`ssm_alpha` separados (los conversores más recientes los fusionan, lo que rompe la compatibilidad con Ollama y builds antiguas de llama.cpp); el split es un corte de filas de los mismos bytes cuantizados, por lo que las mediciones siguen siendo válidas. El autor buscó sin éxito un Q4 que respondiera como el Q8_0: una mezcla por capas (8 capas en Q8_0, 450 MB) con una importance matrix en formato chat redujo la divergencia KL respecto a BF16 un 38 %, pero seguía respondiendo peor.
+La innovación técnica destacable es precisamente ese enfoque de "model surgery": localizar una dirección semántica en el espacio residual y restarla de forma controlada para corregir un comportamiento patológico (la repetición palabra por palabra) sin degradar otras capacidades. El autor probó intensidades de 0,9, 1,0, 1,1 y 1,25, y eligió 1,1 por ser la que menos bucles producía con un rendimiento comparable a 1,0.
 
 ## Capacidades
 
-- Generación de texto conversacional en tailandés e inglés, con tokenización idéntica al modelo base en esos dos idiomas.
-- Razonamiento y matemáticas básicas: evaluado en GSM8K (200 preguntas) y MMLU-ProX en tailandés (2.000 preguntas), sin diferencias fiables frente al original.
-- Tool calling / function calling en tailandés e inglés: evaluado en un conjunto de 45 ítems, sin diferencias fiables frente al original.
-- Capacidades multimodales (image-text-to-text) presentes en los pesos, aunque no fueron probadas tras el recorte de vocabulario.
-- Modo thinking disponible pero contraproducente: con thinking activado entra en bucle hasta el límite de tokens y responde mucho peor (+3 / −134 ítems frente a thinking desactivado). El autor recomienda mantenerlo siempre desactivado.
-- Sin soporte para japonés, chino, coreano ni ningún otro script eliminado: esos textos se leen como bytes crudos y el tool calling en japonés pasó de funcionar a 0/15.
+- Generación de texto conversacional en tailandés e inglés.
+- Razonamiento matemático con modo thinking activable (gsm8k y mgsm-th en las mediciones).
+- Llamadas a herramientas (tool calling / function calling): 7 herramientas evaluadas con peticiones en tailandés e inglés.
+- Generación de código: resolución de problemas tipo HumanEval con verificación contra tests propios.
+- Procesamiento image-text-to-text según el pipeline declarado en Hugging Face.
+- Seguimiento de instrucciones de formato: listas con N viñetas exactas, JSON con claves dadas, límite de palabras, respuestas sí/no, idioma forzado.
+- Modo thinking con corrección de bucle; el autor recomienda usarlo con thinking activado.
+- Capacidad de declarar "no lo sé" en algunas preguntas sin respuesta, aunque de forma inconsistente.
 
 ## Casos de uso
 
-- Despliegue en dispositivos con almacenamiento limitado: el Q8_0 ocupa 616 MB frente a los 795 MB del original, lo que facilita incluirlo en imágenes de contenedor, aplicaciones móviles o entornos embebidos donde cada megabyte cuenta.
-- Asistentes conversacionales en tailandés e inglés: el modelo mantiene la tokenización nativa de ambos idiomas y no muestra diferencias fiables frente al original en preguntas de conocimiento y matemáticas, por lo que sirve para chatbots de atención al cliente bilingües tailandés/inglés.
-- Generación de alto rendimiento en GPU de consumo: con 347 tok/s en una RTX 5060 Ti (prompt 512 / generate 128, todas las capas en GPU), es adecuado para aplicaciones interactivas de baja latencia en hardware asequible.
-- Pipelines de tool calling en producción: al conservar el comportamiento del original en tool calls tailandés/inglés (sin diferencias fiables en el conjunto de 45 ítems), puede integrarse en agentes que invocan APIs en esos idiomas, siempre con thinking desactivado.
-- Procesamiento de texto tailandés a gran escala: el recorte de vocabulario está optimizado para ese idioma, lo que lo hace apropiado para tareas de clasificación, resumen o extracción sobre corpus tailandeses.
-- Entornos con restricciones extremas de tamaño: el Q4_K_M-imat de 382 MB y 423 tok/s es la única opción cuando el espacio manda sobre la calidad, aceptando la pérdida documentada (preguntas en tailandés −14 % relativo a BF16, matemáticas en tailandés −25 % frente a Q8_0).
-- Base para experimentos de model-surgery: sirve como referencia reproducible de cómo un recorte de vocabulario afecta a tamaño, velocidad y calidad, con mediciones pareadas publicadas.
+- Asistente conversacional bilingüe tailandés-inglés: el recorte de vocabulario a esos dos idiomas hace que la tokenización sea idéntica a la del original para ambos, y el modelo puede mantener conversaciones multi-turno en entornos de atención al cliente donde solo se necesitan esos idiomas.
+- Razonamiento matemático con thinking activado en entornos educativos o de cálculo: el modelo pasa de quedar en bucle en casi todas las preguntas de gsm8k a resolver correctamente 31 de 60 en dev y 49 de 100 en test, lo que lo hace utilizable para problemas aritméticos de primaria y secundaria.
+- Llamadas a herramientas en asistentes de automatización: con un 85-91% de acierto en peticiones con 7 herramientas, puede integrarse en flujos donde el modelo debe decidir qué función invocar y con qué argumentos, por ejemplo en un bot de gestión de tareas o consultas de datos.
+- Generación de funciones Python cortas en pipelines de CI/CD: con un 27,5% de pass en HumanEval tras la corrección del bucle (frente al 8,75% anterior), es adecuado para autocompletar funciones simples o generar tests, no para código complejo.
+- Despliegue en dispositivos con recursos limitados: el archivo Q8_0 ocupa 616 MB tras el recorte de vocabulario (frente a 795 MB del original), lo que permite ejecutarlo en portátiles y mini-PC con llama.cpp u Ollama.
+- Investigación sobre edición de pesos: sirve como caso de estudio reproducible para quienes quieran aplicar model surgery a otros modelos pequeños con problemas de repetición en modo thinking.
+- Filtrado y clasificación de texto en tailandés e inglés: el vocabulario reducido y el tamaño compacto permiten usarlo como clasificador o extractor en pipelines de bajo coste.
 
 ## Benchmarks y rendimiento
 
-Los datos disponibles son comparaciones pareadas del autor contra el modelo de origen, no puntuaciones absolutas de benchmarks estándar.
+Los datos provienen de las mediciones del autor, con decodificación greedy, hasta 4.096 tokens, Q8_0 en llama.cpp y verificación por regla.
 
-| Comparacion | Conjunto | Resultado | p |
-|---|---|---|---|
-| Q8_0 recortado vs. Q8_0 original (respuestas generadas) | dev: toolcall 70 | Peor: +0 / −16 | 0,0 |
-| Q8_0 recortado vs. Q8_0 original, sin los 15 ítems de script eliminado | dev: toolcall 70 | Sin diferencia fiable: +0 / −2 | 0,5 |
-| Q8_0 recortado vs. BF16 recortado (preguntas) | dev: mmlu-prox-th 2000 | Sin diferencia fiable: +14 / −24 | 0,1433 |
-| Q8_0 recortado vs. Q8_0 original (respuestas generadas) | dev: gsm8k 200, mgsm-th 100, toolcall 45 | Sin diferencia fiable: +10 / −20 | 0,0987 |
-| Q4_K_M-imat vs. Q8_0 recortado (respuestas generadas) | dev: gsm8k 200, mgsm-th 100, toolcall 45 | Peor: +30 / −50 | 0,033 |
-| Q4_K_M-imat vs. BF16 recortado (preguntas) | dev: mmlu-prox-th 2000 | Peor: +83 / −146 | 0,0 |
+| Benchmark | Resultado | Contexto |
+|---|---|---|
+| HumanEval (80 problemas) | 27,5% pass | Thinking on, tras corrección del bucle; antes: 8,75% |
+| HumanEval, thinking off | 25% pass | Sin diferencia fiable respecto a antes de la corrección |
+| HumanEval, solo recorte de vocabulario | 32,5% pass | Frente al 35% del Qwen3.5-0.8B original, sin diferencia fiable |
+| gsm8k (100, test) | 49 correctas / 2 "no lo sé" / 49 incorrectas | Thinking on, tras corrección |
+| mgsm-th (100) | 37 correctas / 2 "no lo sé" / 61 incorrectas | Thinking on, tras corrección |
+| Tool calls (55 peticiones, 7 herramientas) | 85-91% correctas | Sin diferencia fiable respecto a antes de la corrección |
+| Instrucciones de formato (26) | 65% | Thinking on |
+| Preguntas sin respuesta (80) | 84% de "no lo sé" con votación de 5 | Sin votación: 62,5% |
 
-Rendimiento medido con llama-bench en una RTX 5060 Ti (todas las capas en GPU, prompt 512 / generate 128, 3 repeticiones):
-
-| Archivo | Tamano | Velocidad de generacion | Calidad |
-|---|---|---|---|
-| Q8_0 recortado | 616 MB (original Q8_0: 795 MB) | 347 tok/s (original: 290) | Sin diferencia fiable; recomendado |
-| Q4_K_M-imat | 382 MB | 423 tok/s | Peor: tailandes −14 % relativo a BF16, matematicas tailandesas −25 % vs. Q8_0 |
-| safetensors BF16 | 1,3 GB | no disponible | Modelo de precision completa del que se generaron los GGUF |
-
-El procesamiento de prompt es de aproximadamente 20–22k tok/s en todos los formatos. En 2.000 preguntas de MMLU-ProX en tailandés el modelo puntúa alrededor del 22 % (azar: 10 %).
+En dev con thinking on, el modelo corrigido mejora en +55 y empeora en −3 respecto al modelo sin corregir (gsm8k +30/−0, mgsm-th +20/−0, tools +5/−3). Con thinking off, el modelo corregido empeora: +32/−64, p 0,0014. La comparación directa thinking on corregido frente a thinking off sin corregir no da ventaja global: +49/−66, p 0,14.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el Q8_0 de 616 MB cabe holgadamente en cualquier GPU con 2 GB o más; el BF16 de 1,3 GB requiere al menos 2–3 GB; el Q4_K_M-imat de 382 MB es el más ligero.
-- GPU recomendadas: RTX 5060 Ti (medición oficial del autor), RTX 4090, A100 y H100 funcionan sin problema; cualquier GPU de consumo con 4 GB o más es suficiente para el Q8_0.
-- Cabe en GPU de consumo: sí, en todas las tarjetas modernas con 4 GB o más de VRAM; también es viable en CPU con llama.cpp.
-- Opciones de despliegue: Ollama (`ollama run hf.co/zazeen123/Qwen3.5-0.8B-Mew-Surgeon:Q8_0`), llama.cpp (builds antiguas y actuales, con `--jinja -ngl 99 -c 8192 --reasoning off`), transformers (con `enable_thinking=False` en `apply_chat_template`). vLLM y TGI no se mencionan en la información disponible.
-- Latencia y throughput: 347 tok/s de generación y 20–22k tok/s de procesamiento de prompt en una RTX 5060 Ti con Q8_0; 423 tok/s con Q4_K_M-imat.
+- VRAM estimada: con Q8_0 (616 MB) cabe en GPUs con 2 GB o más; en fp16 los 704 millones de parámetros ocupan aproximadamente 1,4 GB.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) puede ejecutarlo con holgura; también funciona en CPU.
+- Cabe en GPU consumer: sí, en prácticamente todas las GPU dedicadas de los últimos años, e incluso en iGPU con suficiente memoria compartida.
+- Opciones de despliegue: llama.cpp (usado en las mediciones), Ollama (el autor menciona que usa thinking on por defecto), transformers con safetensors, y servidores compatibles con endpoints.
+- Latencia y throughput: no disponible de forma numérica; el autor indica que la corrección no altera la velocidad ("same speed").
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Notas |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B-Mew-Surgeon (Q8_0) | 704.327.232 | no disponible | Tailandes e ingles | Apache 2.0 | 616 MB, 347 tok/s; sin diferencia fiable frente al original en tailandes/ingles |
-| Qwen/Qwen3.5-0.8B (original) | no disponible en la informacion | no disponible | Multilingue (incluye japones, chino, coreano) | Apache 2.0 | 795 MB en Q8_0, 290 tok/s; referencia de calidad y cobertura idiomatica |
-| Qwen3.5-0.8B-th-en-c20 (BF16) | no disponible en la informacion | no disponible | Tailandes e ingles | Apache 2.0 | 1,3 GB; modelo de precision completa del que derivan los GGUF |
+| Qwen3.5-0.8B-Mew-Surgeon | 704.327.232 | no disponible | th, en | apache-2.0 | Corrección de bucle, vocabulario recortado |
+| Qwen/Qwen3.5-0.8B | ~0,8B | no disponible | no disponible | apache-2.0 | Modelo base; HumanEval 35%, bucles en thinking |
+| Qwen3.5-0.8B (recorte th-en sin corrección) | 704.327.232 | no disponible | th, en | apache-2.0 | HumanEval 32,5%, bucles en thinking |
 
-No se dispone de datos sobre otros modelos comparables de la misma categoria en la informacion proporcionada.
+No se dispone de datos de benchmarks de otros modelos de 0,8B comparables en la información proporcionada, por lo que la comparativa se limita a las variantes del propio Qwen3.5-0.8B.
 
 ## Limitaciones y advertencias
 
-- Solo tailandés e inglés: japonés, chino, coreano y cualquier otro script eliminado se leen como bytes crudos; el tool calling en japonés pasó de funcionar a 0/15.
-- No es mejor que el modelo original: el propio autor lo declara explícitamente. En el conjunto completo de toolcall (70 ítems) el Q8_0 recortado responde peor que el original (+0 / −16, p 0,0); la diferencia desaparece al excluir los 15 ítems de scripts eliminados.
-- El Q4_K_M-imat responde peor de forma estadísticamente significativa (p 0,033 en respuestas generadas; p 0,0 en MMLU-ProX tailandés): solo debe usarse cuando el tamaño importa más que la calidad.
-- El modo thinking debe permanecer desactivado: con thinking activado entra en bucle hasta el límite de tokens y responde mucho peor (+3 / −134 ítems).
-- Imágenes y vídeo no fueron probados tras el recorte: los pesos de visión están intactos, pero solo se midió texto.
-- Modelo pequeño (0,8B): puntúa alrededor del 22 % en MMLU-ProX tailandés (azar 10 %), por lo que no es adecuado para tareas que exijan razonamiento complejo.
-- Riesgo de alucinación inherente a un modelo de 0,8B; no se han publicado evaluaciones específicas de sesgo en la información disponible.
-- Licencia Apache 2.0 heredada del modelo base; el autor recomienda verificar que esos términos permiten la redistribución antes de publicar.
-- Compatibilidad: los GGUF conservan tensores separados (`attn_qkv`/`attn_gate`, `ssm_beta`/`ssm_alpha`) para funcionar en Ollama y builds antiguas de llama.cpp; los conversores nuevos que los fusionan no son compatibles con esos entornos.
-- No se han publicado comparaciones pareadas contra el modelo base en la model card ("no paired comparison on record" para la afirmación principal).
+- El modelo responde mal con confianza: en gsm8k acierta 49 y falla 49 de 100, y solo dice "no lo sé" en 2 casos.
+- En tailandés el rendimiento matemático es peor: 61 incorrectas de 100 en mgsm-th.
+- Con thinking off, el modelo corregido es peor que el original sin corregir (+32/−64, p 0,0014); el autor recomienda usar thinking on.
+- Incluso con thinking on, quedan bucles: 38 de 200 en gsm8k y 10 de 100 en mgsm-th en dev.
+- El seguimiento de instrucciones de formato es limitado: 65% de acierto en 26 pruebas.
+- El consejo de añadir un system prompt para decir "no lo sé" mejora la honestidad en matemáticas pero degrada el código (26% → 14% en HumanEval) porque el modelo piensa más y agota tokens.
+- El vocabulario está recortado a tailandés e inglés; otros idiomas tokenizan peor o no están soportados.
+- Licencia apache-2.0, que permite uso comercial, pero el modelo base y los datos de entrenamiento originales pueden tener sus propias condiciones; conviene revisar la licencia de Qwen/Qwen3.5-0.8B.
+- No hay datos publicados sobre sesgos demográficos o culturales en la información disponible.
+- El modelo es una edición no oficial del Qwen3.5-0.8B; no está respaldado por el equipo de Qwen.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/zazeen123/Qwen3.5-0.8B-Mew-Surgeon
+- Hugging Face: https://huggingface.co/zazeen123/Qwen3.5-0.8B-Mew-Surgeon
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE
-- Ejecución con Ollama: `ollama run hf.co/zazeen123/Qwen3.5-0.8B-Mew-Surgeon:Q8_0`

@@ -2,93 +2,104 @@
 
 ## Resumen
 
-MultiClinicalBERT es un modelo de tipo BERT (encoder transformer) desarrollado por YLab-Open, preentrenado específicamente sobre notas clínicas reales en cinco idiomas: inglés, chino, español, japonés y ruso. Se presenta como el primer modelo BERT de código abierto entrenado sobre corpus clínicos multilingües reales, lo que lo diferencia de otros modelos clínicos que suelen ser monolingües (como ClinicalBERT en inglés) o de propósito general (como mmBERT). El modelo está inicializado desde mmBERT y se somete a un preentrenamiento adaptativo de dos etapas sobre una combinación de datos clínicos (corpus BRIDGE), literatura biomédica (PubMed) y texto general (Wikipedia), con un total de más de 1.200 millones de tokens.
+MultiClinicalBERT es un modelo transformer de tipo encoder (familia BERT) desarrollado por YLab-Open y especializado en procesamiento de lenguaje natural clinico multilingue. Se inicializa a partir de `mmBERT` y se somete a un preentrenamiento adicional con una estrategia de adaptacion de dominio en dos etapas sobre un corpus clinico multilingue de gran escala denominado BRIDGE, complementado con literatura biomedica de PubMed y texto general de Wikipedia. El resultado es un modelo de 307,8 millones de parametros con licencia MIT, pensado para tareas de comprension de texto clinico en ingles, chino, espanol, japones y ruso.
 
-Con 307.786.240 parámetros, MultiClinicalBERT ofrece representaciones contextuales de alta calidad para tareas de procesamiento de lenguaje natural clínico, como clasificación de mortalidad, extracción de entidades, de-identificación de historiales y razonamiento sobre lenguaje médico. Su licencia MIT permite uso comercial sin restricciones, y su tamaño moderado lo hace viable para despliegue en entornos con recursos limitados. La relevancia actual del modelo radica en la creciente necesidad de sistemas de IA que comprendan documentación clínica multilingüe, especialmente en entornos sanitarios globales y en contextos de bajo recursos lingüísticos.
+El modelo aborda un problema concreto: la mayoria de los modelos BERT clinicos existentes estan entrenados unicamente con notas clinicas en ingles (por ejemplo, sobre MIMIC), lo que limita su utilidad en entornos hospitalarios multilingues o en contextos de bajos recursos. MultiClinicalBERT cubre 87 conjuntos de datos clinicos multilingues con 1,42 millones de documentos y 860,08 millones de tokens, lo que lo convierte, segun sus autores, en el primer BERT de codigo abierto preentrenado especificamente sobre notas clinicas reales en multiples idiomas.
+
+Su relevancia actual radica en que ofrece una base solida para tareas de clasificacion, reconocimiento de entidades nombradas (NER), desidentificacion de registros electronicos de salud y recuperacion de informacion en pipelines de RAG clinico, con un rendimiento que, segun la model card, iguala o supera a modelos especializados por idioma y mejora especialmente en escenarios de pocos recursos. El modelo se distribuye en formato safetensors y esta disenado para fine-tuning supervisado, no para generacion de texto libre.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (encoder transformer) |
+| Arquitectura | Transformer encoder (familia BERT, inicializado desde mmBERT) |
 | Parametros totales | 307.786.240 |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | en, zh, es, ja, ru |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-MultiClinicalBERT sigue la arquitectura BERT estándar (encoder transformer bidireccional) y se inicializa desde mmBERT (BERT multilingüe de Google). El preentrenamiento se realiza en dos etapas: en la primera, se entrena con una mezcla de datos clínicos (BRIDGE), literatura biomédica (PubMed) y texto general (Wikipedia) para inyectar conocimiento biomédico y multilingüe; en la segunda, se adapta exclusivamente al corpus clínico BRIDGE para capturar patrones lingüísticos específicos de la práctica médica. El objetivo de entrenamiento es masked language modeling (MLM) con un 15% de tokens enmascarados.
+MultiClinicalBERT es un transformer encoder de tipo BERT, inicializado desde `mmBERT` y adaptado al dominio clinico mediante un esquema de preentrenamiento adaptativo en dos etapas. La primera etapa combina el corpus clinico BRIDGE con literatura biomedica de PubMed y texto general de Wikipedia, con el objetivo de inyectar conocimiento biomedico y cobertura multilingue. La segunda etapa se restringe exclusivamente a BRIDGE para aprender patrones finos del lenguaje clinico real. El objetivo de entrenamiento es Masked Language Modeling (MLM) con un 15 % de tokens enmascarados.
 
-El corpus BRIDGE incluye 87 conjuntos de datos clínicos multilingües, con aproximadamente 1,42 millones de documentos y 995 millones de tokens. PubMed aporta 1,25 millones de documentos (194 millones de tokens) y Wikipedia 5.800 documentos (43 millones de tokens) para los idiomas español, japonés y ruso. En total, el modelo se entrena sobre más de 1.200 millones de tokens, lo que permite una cobertura amplia de terminología médica y variaciones lingüísticas. No se menciona el uso de técnicas como RLHF o DPO; el entrenamiento se basa únicamente en MLM.
+El corpus de preentrenamiento suma aproximadamente 2,7 millones de documentos y mas de 1.000 millones de tokens. BRIDGE aporta 87 conjuntos de datos clinicos multilingues con 1,42 millones de documentos y 860,08 millones de tokens en ingles, chino, espanol y japones. PubMed aporta 1,25 millones de documentos y 161,47 millones de tokens de terminologia medica. Wikipedia aporta 5.500 documentos y 14,73 millones de tokens en espanol y japones. No se documenta en la informacion disponible el uso de RLHF, DPO ni tecnicas de decodificacion especulativa, lo cual es coherente con un modelo encoder orientado a comprension y no a generacion.
 
 ## Capacidades
 
-- Generacion de representaciones contextuales para texto clinico en cinco idiomas (en, zh, es, ja, ru).
-- Tarea principal: fill-mask (prediccion de tokens enmascarados), utilizable como modelo base para fine-tuning.
-- Soporte para tareas de clasificacion de texto, extraccion de entidades (NER), respuesta a preguntas y razonamiento sobre lenguaje medico.
-- Capacidad multilingue: el modelo puede transferir conocimiento entre idiomas, lo que resulta especialmente util en entornos con pocos recursos para alguna lengua.
-- No se documentan capacidades de tool calling, agentes ni generacion de texto libre (es un encoder, no un modelo generativo).
-- No incluye capacidades de vision ni audio.
+- Representaciones contextuales de texto clinico multilingue en cinco idiomas (ingles, chino, espanol, japones y ruso).
+- Tarea nativa de fill-mask (MLM), util para sondeo y evaluacion de conocimiento terminologico.
+- Extraccion de embeddings para clasificacion de documentos clinicos (mortalidad, codificacion de causas de muerte, tipologia de incidentes).
+- Reconocimiento de entidades nombradas (NER) en textos medicos, incluidos informes de alta y registros electronicos.
+- Desidentificacion de registros electronicos de salud (EHR) para proteger informacion personal identificable.
+- Recuperacion de informacion clinica y soporte a pipelines de RAG: segun la model card, se evaluo como retriever sobre corpus de Wikipedia y obtuvo el mejor promedio global entre siete enfoques de recuperacion en cuatro benchmarks de clasificacion clinica y tres tamanos de Qwen3.5 (2B, 4B, 9B).
+- No dispone de capacidades generativas, de tool calling, de agentes ni de vision o audio: es un encoder de comprension.
+- No se documenta un modo "thinking" ni razonamiento multi-paso nativo.
 
 ## Casos de uso
 
-- De-identificacion de historiales clinicos: el modelo puede entrenarse para detectar y eliminar informacion personal en notas medicas, cumpliendo normativas de privacidad como HIPAA o GDPR. Su entrenamiento en datos clinicos reales mejora la precision en terminologia medica y formatos de documentacion.
-- Clasificacion de mortalidad y prediccion de resultados clinicos: en tareas como MIMIC-III Mortality, el modelo alcanza un 89,40% de exactitud, lo que lo hace adecuado para sistemas de soporte a la decision clinica que estiman riesgo de fallecimiento o complicaciones.
-- Extraccion de entidades medicas (NER): puede identificar medicamentos, enfermedades, sintomas y procedimientos en notas clinicas multilingues, facilitando la construccion de bases de conocimiento estructuradas a partir de texto no estructurado.
-- Sistemas de recuperacion aumentada (RAG): al ser un encoder, puede utilizarse para generar embeddings de documentos clinicos y alimentar pipelines de retrieval-augmented generation, mejorando la precision de respuestas en asistentes medicos.
-- Analisis de documentacion clinica multilingue: permite procesar historiales de pacientes en varios idiomas, lo que es valioso en hospitales internacionales o en sistemas de salud con poblaciones migrantes.
-- Investigacion en NLP clinico: sirve como modelo base para experimentos academicos y desarrollo de nuevas tecnicas de adaptacion de dominio en el ambito sanitario.
+- Clasificacion de mortalidad en UCI: fine-tuning sobre notas clinicas de MIMIC-III para predecir el desenlace de mortalidad; la model card reporta un 89,40 % de exactitud, lo que lo hace adecuado como baseline clinico en entornos de investigacion.
+- Codificacion de causas de muerte (CDM) sobre MIMIC-IV: el modelo alcanza un 92,18 % de exactitud, por lo que puede integrarse en pipelines de codificacion automatica de certificados de defuncion.
+- Reconocimiento de entidades en informes de alta en japones (IFMIR NER): con 86,21 de F1, sirve para extraer diagnosticos, procedimientos y medicamentos de notas hospitalarias en japones.
+- Desidentificacion de registros electronicos de salud en espanol: con 88,64 de F1 en la tarea EHR De-identification, es utilizable como capa de anonimizacion previa al almacenamiento o comparticion de datos clinicos.
+- Procesamiento de registros medicos electronicos en chino (C-EMR): con 94,24 % de exactitud, permite clasificar y estructurar notas clinicas en hospitales sin necesidad de un modelo monolingue especifico.
+- Recuperacion aumentada para soporte a la decision clinica: al generar embeddings de consultas y documentos, puede actuar como retriever en un sistema RAG que alimente a un LLM generativo con evidencia clinica multilingue.
+- Analisis secundario de cohorts retrospectivas: extraccion de fenotipos y variables de interes a partir de grandes volumenes de notas clinicas heterogeneas en varios idiomas.
+- Investigacion en NLP clinico multilingue: base para experimentos de transferencia entre idiomas y evaluacion de sesgos linguisticos en modelos medicos.
 
 ## Benchmarks y rendimiento
 
-La model card reporta resultados en 10 tareas clinicas en 5 idiomas, aunque solo se proporcionan valores parciales. A continuacion se muestran los datos disponibles:
+Resultados reportados en la model card (tareas clinicas, cuatro idiomas):
 
 | Tarea | Idioma | Metrica | Resultado |
 |---|---|---|---|
-| MIMIC-III Mortality | en | Accuracy | 89,40% |
-| MIMIC-IV CDM | en | Accuracy | 92,18% |
-| CEMR | zh | Accuracy | 94,24% |
-| IFMIR NER | ja | F1 | 86,21 |
-| EHR De-identification | es | F1 | 88,64 |
+| MIMIC-III Mortality | Ingles | Accuracy | 89,40 % |
+| MIMIC-IV CDM | Ingles | Accuracy | 92,18 % |
+| C-EMR | Chino | Accuracy | 94,24 % |
+| IFMIR NER | Japones | F1 | 86,21 |
+| EHR De-identification | Espanol | F1 | 88,64 |
 
-No se proporcionan comparaciones con otros modelos en la informacion disponible, aunque la model card afirma que supera consistentemente a mmBERT y que iguala o supera a modelos especificos por idioma, con las mayores mejoras en entornos de bajos recursos. No se han publicado resultados adicionales de benchmarks como MMLU o HumanEval, ya que el modelo no esta disenado para tareas generativas.
+La model card indica que el modelo supera de forma consistente a mmBERT y que iguala o excede a modelos especializados por idioma, con las mayores ganancias en escenarios de bajos recursos. No se proporcionan en la informacion disponible los resultados numericos de las tareas restantes (IMCS-V2 NER, IFMIR Incident Type, PPTS) ni la comparacion detallada frente a mmBERT y modelos monolingues.
+
+En el experimento de RAG, MultiClinicalBERT obtuvo el mejor promedio global entre siete enfoques de recuperacion, evaluado sobre cuatro benchmarks de clasificacion clinica y tres tamanos de Qwen3.5 (2B, 4B y 9B). No se detallan las cifras exactas de este experimento.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1,2 GB en FP32 (307M parametros x 4 bytes) y unos 0,6 GB en FP16. Con cuantizacion a 8 bits, el uso de memoria podria reducirse a unos 0,3 GB.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente para inferencia; tarjetas consumer como NVIDIA GTX 1060, RTX 2060 o superiores pueden ejecutar el modelo sin problemas. Para fine-tuning, se recomienda al menos 8 GB de VRAM.
-- El modelo cabe en GPUs consumer de gama media y baja, y tambien puede ejecutarse en CPU con un rendimiento aceptable para tareas de batch pequeno.
-- Opciones de despliegue: se puede usar con la libreria transformers de Hugging Face, tanto en Python como en C++ via torch. Tambien es compatible con ONNX Runtime para optimizacion en produccion, y con vLLM si se convierte a un formato adecuado (aunque vLLM esta orientado a modelos generativos, puede servir para embeddings).
-- Latencia y throughput: no se proporcionan datos oficiales; en una GPU moderna (p.ej., RTX 3090), la inferencia de un solo texto corto deberia ser inferior a 10 ms, y se pueden procesar cientos de textos por segundo en batch.
+- VRAM estimada para inferencia en fp32: aproximadamente 1,2 GB solo para pesos (307,8 M de parametros), mas activaciones y memoria del tokenizador; en la practica, entre 2 y 4 GB segun longitud de secuencia y tamano de batch.
+- En fp16/bf16: aproximadamente 0,6 GB para pesos; entre 1,5 y 3 GB con activaciones para batches moderados.
+- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM es suficiente para fine-tuning con batches pequenos; para entrenamiento a mayor escala se recomiendan A100 (40/80 GB) o H100. Una RTX 4090 (24 GB) permite fine-tuning comodo con secuencias largas.
+- Cabe en GPU de consumo: si, en RTX 3060 (12 GB), RTX 4060 Ti (16 GB), RTX 4070, RTX 4080 y RTX 4090, asi como en GPUs de 8 GB con batches reducidos.
+- Opciones de despliegue: transformers (PyTorch), vLLM no aplica de forma nativa a encoders BERT para generacion, pero si es posible servir embeddings con Text Embeddings Inference (TEI); tambien es viable la exportacion a ONNX Runtime y el despliegue en CPU con cuantizacion dinamica.
+- Latencia y throughput: no disponibles en la informacion proporcionada. Al tratarse de un encoder de 307 M de parametros, se espera un throughput alto en GPU moderna, pero no se aportan cifras concretas.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos directos en la informacion proporcionada. Sin embargo, se pueden establecer comparaciones cualitativas con alternativas conocidas:
-
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Enfoque |
 |---|---|---|---|---|---|
-| MultiClinicalBERT | 307M | No disponible | en, zh, es, ja, ru | MIT | Preentrenado en notas clinicas multilingues |
-| medicalai/ClinicalBERT | ~110M | 512 | en | MIT | Monolingue ingles, preentrenado en MIMIC-III |
-| mmBERT (BERT multilingual) | ~178M | 512 | 104 idiomas | Apache 2.0 | Modelo base general, sin adaptacion clinica |
+| MultiClinicalBERT | 307,8 M | no disponible | en, zh, es, ja, ru | MIT | BERT clinico multilingue (BRIDGE + PubMed + Wikipedia) |
+| mmBERT | no disponible | no disponible | multilingue | no disponible | BERT multilingue general, base de inicializacion |
+| BioBERT / PubMedBERT | ~110 M | 512 tokens (tipico) | en | MIT / Apache 2.0 (segun variante) | BERT biomedico en ingles |
+| MedBERT / ClinicalBERT | ~110 M | 512 tokens (tipico) | en | varía | BERT clinico en ingles sobre MIMIC |
 
-MultiClinicalBERT ofrece una ventaja clara en entornos multilingues clinicos frente a ClinicalBERT (solo ingles) y mmBERT (sin especializacion medica). Su tamano mayor que mmBERT sugiere una mayor capacidad de representacion, aunque no se han publicado comparativas de rendimiento con estos modelos en la informacion disponible.
+La comparacion cuantitativa frente a mmBERT y modelos monolingues no se detalla numericamente en la informacion disponible; la model card solo afirma que MultiClinicalBERT supera a mmBERT y que iguala o excede a los modelos especificos por idioma. Los datos de contexto de mmBERT, BioBERT, PubMedBERT y ClinicalBERT no se han proporcionado en la informacion de referencia y se marcan como no disponibles cuando corresponde.
 
 ## Limitaciones y advertencias
 
-- Sesgos: al estar entrenado en notas clinicas reales, el modelo puede heredar sesgos presentes en los datos (p.ej., diferencias demograficas o de tratamiento). No se han realizado auditorias de sesgo publicas.
-- Riesgo de alucinacion: al ser un encoder, no genera texto libre, por lo que el riesgo de alucinacion es bajo; sin embargo, las predicciones en tareas de clasificacion o NER pueden ser incorrectas si los datos de entrenamiento no cubren ciertos casos.
-- Limitaciones de contexto: la longitud de contexto no esta documentada; se asume que sigue el estandar de BERT (512 tokens), lo que limita el procesamiento de documentos clinicos largos sin estrategias de truncamiento o segmentacion.
-- Limitaciones de idioma: aunque cubre cinco idiomas, no incluye otros como frances, aleman o portugues, lo que limita su uso en regiones donde esos idiomas son predominantes.
-- Restricciones de licencia: la licencia MIT permite uso comercial sin restricciones, pero no se ofrecen garantias de exactitud medica ni de cumplimiento normativo; cualquier uso en entornos clinicos reales debe validarse rigurosamente.
-- Caveat de produccion: el modelo no esta disenado para tomar decisiones clinicas autonomamente; debe integrarse como componente de un sistema mas amplio con supervision humana.
+- Es un encoder de comprension: no genera texto, no soporta tool calling ni razonamiento multi-paso; no debe emplearse como sustituto de un LLM generativo.
+- La longitud maxima de contexto no se documenta en la informacion disponible; los modelos BERT suelen limitarse a 512 tokens, lo que restringe el analisis de notas clinicas muy largas sin truncado o segmentacion.
+- El corpus BRIDGE cubre ingles, chino, espanol y japones; el ruso figura en los metadatos de idiomas pero no se detalla su presencia en el corpus de preentrenamiento, por lo que su rendimiento en ruso es incierto.
+- Riesgo de alucinacion bajo en tareas de clasificacion y NER, pero los errores de extraccion pueden propagarse a decisiones clinicas; se requiere validacion humana en cualquier uso asistencial.
+- Sesgos potenciales derivados de la distribucion de los 87 conjuntos de datos clinicos: posible infrarrepresentacion de especialidades, poblaciones o variantes dialectales.
+- Aunque la licencia es MIT y permite uso comercial, el modelo se ha entrenado con datos clinicos reales; el usuario debe verificar el cumplimiento de normativas de proteccion de datos (RGPD, HIPAA) y las condiciones de uso de los corpus originales.
+- No debe utilizarse como dispositivo medico ni para diagnostico autonomo sin validacion regulatoria y clinica.
+- El modelo se publico en marzo de 2026 y se actualizo en noviembre de 2026; la informacion disponible no incluye detalles sobre mantenimiento a largo plazo ni versionado.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/YLab-Open/MultiClinicalBERT
-- GitHub de YLab-Open: https://github.com/YLab-Open/
-- Space de leaderboard BRIDGE Medical: https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard
-- Repositorio BRIDGE (GitHub): https://github.com/YLab-Open/BRIDGE
+- Repositorio de pesos (safetensors): incluido en la pagina de Hugging Face del modelo
+- Paper, blog o repositorio de codigo adicional: no disponibles en la informacion proporcionada
+- Corpus BRIDGE: no se proporciona enlace directo en la informacion disponible
+- Demo o espacio de inferencia: no disponible en la informacion proporcionada

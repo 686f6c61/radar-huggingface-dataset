@@ -2,92 +2,91 @@
 
 ## Resumen
 
-Inkling 2 Mini GGUF es una conversión independiente del checkpoint original Inkling 2 Mini de Thinking Machines Lab, publicada por MirrorNeuronLab en formato GGUF para su uso con llama.cpp y Docker Model Runner. El modelo base es un modelo multimodal de tipo image-text-to-text con 26.070.385.152 parámetros totales (aproximadamente 26 mil millones), lo que lo sitúa en la categoría de modelos de tamaño medio-grande orientados a inferencia local en hardware de gama alta.
+Inkling 2 Mini GGUF es la conversión a formato GGUF del checkpoint original Inkling 2 Mini desarrollado por Thinking Machines Lab. MirrorNeuronLab ha realizado la conversión de forma independiente, decodificando los pesos de expertos empaquetados en NVFP4 y MXFP8 a un intermedio BF16 en GGUF, y publicando varias cuantizaciones optimizadas para llama.cpp y Docker Model Runner. El modelo base cuenta con 26.070.385.152 parámetros (aproximadamente 26.000 millones) y es un modelo multimodal de tipo image-text-to-text.
 
-La relevancia de esta ficha radica en que el checkpoint original distribuía los pesos de sus expertos en formatos empaquetados NVFP4 y MXFP8, poco habituales en el ecosistema GGUF. MirrorNeuronLab decodificó esos pesos a un intermedio BF16 y aplicó el preset estándar Q4_K_M de llama.cpp sin importance matrix, produciendo un fichero de texto de 17,48 GB más un proyector visual BF16 de 642 MB. Esto permite ejecutar un modelo multimodal de 26B en entornos con llama.cpp, algo que no era posible directamente con el checkpoint upstream.
+La relevancia de esta ficha radica en que el checkpoint original no se distribuye en un formato directamente consumible por herramientas de inferencia local estándar. Esta conversión permite ejecutar el modelo con llama.cpp, Docker Model Runner y backends compatibles, incluyendo variantes de muy baja precisión (IQ1_M e IQ1_S con medias de 2,25 y 2,13 bits por peso) que reducen el peso a 7,35 GB y 6,96 GB respectivamente, frente a los 17,48 GB de la variante Q4_K_M. La arquitectura interna del modelo base (tipo de transformer, mecanismo de atención, datos de entrenamiento) no se detalla en la información disponible; la model card de esta conversión remite a la model card original de Thinking Machines Lab para capacidades y limitaciones.
 
-El modelo se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial, aunque el autor original impone además una política de uso aceptable. Esta conversión excluye el modelo draft MTP opcional del checkpoint original, por lo que no incorpora decodificación especulativa en esta release.
+La licencia es Apache 2.0 tanto para el modelo original como para esta conversión. El repositorio ocupa 32,4 GB e incluye el proyector multimodal BF16 (642 MB) compartido entre todas las variantes. La conversión excluye el modelo borrador MTP opcional del checkpoint original.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base multimodal image-text-to-text; pesos de expertos empaquetados en NVFP4 y MXFP8 en origen) |
-| Parámetros totales | 26.070.385.152 (aproximadamente 26B) |
-| Parámetros activos | no disponible |
-| Longitud de contexto | no disponible en la model card; validado a 4.096 tokens en Docker Model Runner |
-| Tipos de cuantización | Q4_K_M (texto) y BF16 (proyector visual) |
+| Arquitectura | no disponible (modelo base multimodal image-text-to-text; detalles internos no publicados en esta ficha) |
+| Parametros totales | 26.070.385.152 (~26,1 mil millones) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible en la model card; las validaciones se realizaron a 4.096 tokens |
+| Tipos de cuantizacion | Q4_K_M (4 bits, preset estándar sin importance matrix), AD-IQ1_M (media 2,25 bits/peso), AD-IQ1_S (media 2,13 bits/peso); proyector multimodal en BF16 |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 (con Model Acceptable Use Policy del autor original) |
-| Formato de pesos | GGUF (llama.cpp) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp); cuantizaciones derivadas de un intermedio BF16 GGUF |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo base en la información proporcionada. La model card de esta conversión indica únicamente que el checkpoint original de Thinking Machines Lab empaqueta los pesos de sus expertos en NVFP4 y MXFP8, lo que sugiere una arquitectura con componentes de mezcla de expertos (MoE) o al menos pesos de experto diferenciados, aunque no se confirma el tipo exacto de arquitectura. El pipeline declarado es image-text-to-text, con un proyector visual BF16 que habilita la entrada de imágenes.
+La información disponible no describe la arquitectura interna del modelo base (tipo de transformer, uso de MoE, mecanismo de atención o estrategia de decodificación). Lo que sí se documenta es el proceso de conversión: el checkpoint original de Thinking Machines Lab empaqueta los pesos de los expertos en NVFP4 y MXFP8, y MirrorNeuronLab los decodificó a un intermedio BF16 en GGUF antes de aplicar las cuantizaciones. La mención explícita a "expert weights" (pesos de expertos) y a "expert gate and up weights" / "expert down weights" en las recetas de cuantización sugiere una arquitectura con componentes tipo mezcla de expertos, aunque el número de expertos, el enrutamiento y los parámetros activos no se detallan.
 
-El proceso de conversión realizado por MirrorNeuronLab consistió en decodificar los pesos empaquetados NVFP4 y MXFP8 a un GGUF intermedio en BF16 y aplicar después el preset Q4_K_M estándar de llama.cpp sin importance matrix. No se documentan en la información disponible los datos de entrenamiento, el número de tokens, la composición del dataset ni si hubo etapas de RLHF o DPO. La release excluye el modelo draft MTP opcional presente en el checkpoint original, por lo que no se incluye decodificación especulativa en esta conversión.
+Las variantes AD (IQ1_M e IQ1_S) se cuantizaron a partir de los mismos pesos BF16 usando la matriz de calibración publicada por AtomicChat y reglas por tensor adaptadas a llama.cpp upstream. Los pesos gate y up de los expertos usan IQ1_M o IQ1_S, mientras que los pesos down de los expertos usan bloques Q2_0 estándar con escalas ponderadas por calibración. Los controladores del bucle (loop controllers) se mantienen en F32. La variante Q4_K_M usa el preset estándar de llama.cpp sin importance matrix. No se dispone de información sobre volumen de tokens de entrenamiento, composición del dataset ni uso de RLHF/DPO en el modelo base.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, según la etiqueta `conversational` de la model card.
-- Entrada de imágenes (image-text-to-text) mediante el proyector visual BF16 incluido (`mmproj-Inkling-2-Mini-BF16.gguf`).
-- Soporte de inferencia a través de llama.cpp (`llama-server`) y de Docker Model Runner con backend llama.cpp.
-- Compatibilidad con la API OpenAI de chat completions en Docker Model Runner, incluyendo el tipo de contenido `image_url` para entrada de imágenes.
-- Funcionamiento validado en Linux ARM64 con GPU NVIDIA GB10 a contexto de 4.096 tokens, con pruebas de humo de texto e imagen superadas.
-- Soporte del backend llama.cpp para el modelo (`inkling2_loop`) a partir del build `b12600`.
-- No se documentan en la información disponible capacidades de tool calling, function calling, agentes, modo thinking explícito ni soporte de audio.
+- Generación de texto conversacional: el modelo está etiquetado como `conversational` y validado con prompts de texto en Docker Model Runner.
+- Entrada de imágenes: pipeline `image-text-to-text`; el proyector multimodal BF16 (`mmproj-Inkling-2-Mini-BF16.gguf`) habilita la entrada de imágenes vía el tipo de contenido `image_url` en el endpoint compatible con OpenAI de Docker Model Runner.
+- Razonamiento aritmético básico: validado con el prompt de ejemplo "What is 17 multiplied by 23?" en la documentación.
+- Soporte de bucle de inferencia específico (`inkling2_loop`): requiere builds de llama.cpp con soporte para esta arquitectura (b12600 o superior).
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Modo thinking, audio u otras capacidades especiales: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente conversacional multimodal local: el modelo puede gestionar diálogos multi-turno con entrada de imágenes usando llama.cpp o Docker Model Runner, adecuado para prototipos de asistentes que necesitan describir o razonar sobre capturas, diagramas o fotos sin depender de APIs externas.
-- Procesamiento de documentos con imágenes: al aceptar image-text-to-text, puede emplearse para extraer información de capturas de pantalla, formularios escaneados o gráficos simples en flujos de preprocesamiento, siempre con validación humana dado el riesgo de alucinación.
-- Despliegue en infraestructura Docker existente: la integración con Docker Model Runner permite incorporar el modelo a pipelines de contenedores ya existentes, con configuración de contexto mediante `docker model configure` y consumo vía API compatible con OpenAI.
-- Evaluación y benchmarking de modelos multimodales de 26B en local: útil para investigadores que quieran comparar el comportamiento de un modelo de este tamaño en cuantización Q4_K_M frente a alternativas en la misma GPU, con ficheros verificables mediante `SHA256SUMS`.
-- Prototipado de aplicaciones de visión-lenguaje en estaciones de trabajo con GPU única: el tamaño de 17,48 GB en Q4_K_M más 642 MB de proyector permite cargar el modelo en GPUs de gama alta de consumo o profesional, facilitando iteración rápida sin clúster.
-- Reproducción de entornos validados: la model card incluye un launcher (`reproduce/start-docker-runner.sh`) y registros de validación, lo que permite reproducir el entorno exacto (Docker Model Runner v1.2.9, commit CUDA `29b52d398`, GB10) para pruebas de regresión.
-- Integración en herramientas de línea de comandos y scripting: mediante `llama-server` con `--jinja` y contexto configurable, se puede exponer el modelo como servicio HTTP local para tareas de generación y análisis de imágenes en scripts.
+- Despliegue local con Docker Model Runner: el modelo se puede ejecutar con `docker model pull hf.co/MirrorNeuronLab/Inkling-2-Mini-GGUF:Q4_K_M` y `docker model run`, lo que facilita probar el modelo en entornos con Docker sin gestionar manualmente binarios de llama.cpp. Es adecuado para equipos que ya usan Docker Model Runner como capa de inferencia.
+- Inferencia en GPU de consumo con cuantización extrema: las variantes AD-IQ1_M (7,99 GB con visión) e IQ1_S (7,61 GB con visión) permiten cargar un modelo de ~26 mil millones de parámetros en GPUs con 8-12 GB de VRAM, a costa de una precisión reducida (2,13-2,25 bits por peso). Útil para prototipado y pruebas de concepto en estaciones de trabajo modestas.
+- Procesamiento de documentos con imagen y texto: gracias al proyector BF16 y al pipeline image-text-to-text, se puede usar para tareas de descripción de imágenes o preguntas sobre contenido visual, enviando la imagen como `image_url` en el endpoint compatible con OpenAI.
+- Servidor de chat compatible con OpenAI: `llama-server -hf MirrorNeuronLab/Inkling-2-Mini-GGUF:Q4_K_M --jinja -c 4096` expone una API de chat que se puede integrar en aplicaciones existentes que ya consumen la API de OpenAI, sin reescribir el cliente.
+- Validación y benchmarking de cuantizaciones: el repositorio incluye archivos de procedencia, SHA256SUMS y scripts de validación, lo que lo hace adecuado para reproducir experimentos de cuantización con matrices de calibración e importance matrix.
+- Investigación sobre cuantización de precisión ultra-baja: las recetas AD (IQ1_M/IQ1_S con Q2_0 en pesos down y controladores en F32) sirven como referencia para estudiar el impacto de la cuantización agresiva en modelos multimodales de ~26B.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente documenta pruebas de humo (smoke tests) de texto e imagen en CUDA a 4.096 tokens de contexto sobre Docker Model Runner v1.2.9 y una NVIDIA GB10, sin métricas de calidad (MMLU, HumanEval, GSM8K u otras).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el fichero de texto Q4_K_M ocupa 17,48 GB y el proyector visual BF16 642 MB; se necesita al menos esa cantidad de VRAM más overhead de contexto y caché KV, por lo que en la práctica se recomienda disponer de 20-24 GB o más para contexto moderado.
-- GPU recomendadas: NVIDIA GB10 (validada oficialmente en la model card); por tamaño, GPUs con 24 GB o más como RTX 4090, RTX 3090, A100 40 GB, H100 o L40S son candidatas razonables, aunque solo la GB10 está documentada como validada.
-- ¿Cabe en GPU de consumo? Sí, en GPUs de consumo con 24 GB de VRAM como la RTX 4090 o la RTX 3090, siempre que se limite el contexto; no cabe en GPUs de 16 GB o menos en Q4_K_M.
-- Opciones de despliegue: llama.cpp (`llama-server` con `-hf` o `-m` más `--mmproj`), Docker Model Runner con backend llama.cpp build `b12600` o superior, y el launcher incluido para Linux con CUDA (`-DGGML_CUDA=ON`).
-- Latencia y throughput: no disponibles; la model card solo documenta que las pruebas de humo de texto e imagen se superaron a contexto de 4.096 tokens en Docker Model Runner v1.2.9 sobre GB10.
+- VRAM estimada para inferencia (según tamaño de archivo, sin overhead de runtime):
+  - AD-IQ1_S: 6,96 GB (7,61 GB con proyector de visión).
+  - AD-IQ1_M: 7,35 GB (7,99 GB con visión).
+  - Q4_K_M: 17,48 GB (18,12 GB con visión).
+- GPU recomendadas: NVIDIA GB10 (validada oficialmente para Q4_K_M y variantes AD en CUDA); cualquier GPU NVIDIA con CUDA y suficiente VRAM para la variante elegida.
+- ¿Cabe en GPU de consumo? Las variantes AD (IQ1_S e IQ1_M) caben en GPUs de 8-12 GB de VRAM. La variante Q4_K_M requiere aproximadamente 18 GB, por lo que encaja en GPUs de 24 GB (RTX 3090/4090) o superiores.
+- Opciones de despliegue: llama.cpp (build b12600 o superior con soporte `inkling2_loop`), Docker Model Runner (v1.2.9 validado; backend llama.cpp b12600+), llama-server con flag `--jinja`. En Apple Silicon se requiere el motor Metal nativo de Docker Desktop con llama.cpp b12600 o superior, que incluye kernels Metal para multiplicaciones de matrices de expertos IQ1_M, IQ1_S y Q2_0.
+- Latencia y throughput: no disponibles. La validación documentada se limita a pruebas de humo a 4.096 tokens de contexto.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. La model card no incluye comparativas con alternativas de la misma categoría, y no se han facilitado datos de rendimiento que permitan establecer una comparación rigurosa con otros modelos multimodales de aproximadamente 26B parámetros.
-
-| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
-|---|---|---|---|---|---|
-| Inkling 2 Mini (esta conversión) | 26B | no disponible (validado a 4.096) | Apache 2.0 | GGUF Q4_K_M | Hugging Face |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+No disponible. La información proporcionada no incluye datos de rendimiento ni comparaciones con otros modelos de la misma categoría o tamaño, por lo que no es posible establecer una comparativa rigurosa sin inventar cifras.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la información disponible; al ser un modelo derivado de un checkpoint de Thinking Machines Lab, hereda los sesgos del modelo base, que no se detallan.
-- Riesgo de alucinación: no cuantificado en la model card; como modelo generativo conversacional, existe riesgo de fabricación de contenido, especialmente en tareas de razonamiento sobre imágenes.
-- Limitaciones de contexto: la model card no declara la longitud máxima de contexto del modelo base; la validación se realizó únicamente a 4.096 tokens, por lo que no hay garantía documentada de funcionamiento correcto más allá de esa cifra en esta conversión.
-- Idiomas: no se especifican los idiomas soportados; no se debe asumir un rendimiento multilingüe sin evaluación previa.
-- Restricciones de licencia: los pesos son Apache 2.0, pero el autor original impone una Model Acceptable Use Policy adicional que debe revisarse antes de uso comercial o en producción.
-- Cuantización sin importance matrix: la conversión aplicó el preset Q4_K_M estándar sin imatrix, lo que puede implicar una pérdida de calidad algo mayor que una cuantización con importance matrix; no se han publicado evaluaciones comparativas de calidad.
-- Ausencia de modelo draft MTP: esta release excluye el modelo draft opcional, por lo que no se dispone de decodificación especulativa y el throughput puede ser inferior al del checkpoint original con MTP.
-- Requisito de build específico: el soporte de `inkling2_loop` en llama.cpp requiere el build `b12600` o superior; versiones anteriores no cargarán el modelo correctamente.
-- Validación limitada: la única plataforma documentada como validada es Linux ARM64 con NVIDIA GB10 y Docker Model Runner v1.2.9; otros entornos (x86, otras GPUs, macOS) no están verificados en la model card.
-- Verificación de integridad: se recomienda comprobar los ficheros con `sha256sum -c SHA256SUMS` antes de desplegar, dado que la conversión es de un tercero independiente del autor original.
+- La información sobre sesgos, alucinación y comportamiento del modelo base no está incluida en esta model card; se remite a la model card original de Thinking Machines Lab.
+- Las variantes AD operan a 2,13-2,25 bits por peso, lo que implica una pérdida de precisión significativa frente a Q4_K_M; no se han publicado métricas de degradación de calidad.
+- El contexto validado es de 4.096 tokens; no se documenta la longitud de contexto nativa del modelo ni su comportamiento más allá de esa ventana.
+- El soporte de la arquitectura `inkling2_loop` requiere builds específicos de llama.cpp (b12600 o superior); versiones anteriores no cargarán el modelo.
+- En Apple Silicon se requiere el motor Metal nativo de Docker Desktop con llama.cpp b12600+; la validación oficial de hardware se realizó únicamente en NVIDIA CUDA.
+- Docker Model Runner v1.2.9 deja en blanco las columnas de resumen en `docker model ls` para los archivos AD; los tamaños medidos se proporcionan en la tabla de la model card.
+- La conversión excluye el modelo borrador MTP opcional del checkpoint original, por lo que no se dispone de decodificación especulativa con ese borrador en esta release.
+- Licencia Apache 2.0 para el modelo y la conversión, pero el uso está sujeto además a la Política de Uso Aceptable de Thinking Machines Lab, que puede imponer restricciones adicionales al uso comercial.
+- Los idiomas soportados no están documentados; no se puede asumir cobertura multilingüe sin verificación.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta conversión: https://huggingface.co/MirrorNeuronLab/Inkling-2-Mini-GGUF
+- Repositorio Hugging Face: https://huggingface.co/MirrorNeuronLab/Inkling-2-Mini-GGUF
 - Modelo base original: https://huggingface.co/thinkingmachines/Inkling-2-Mini
 - Checkpoint original (revisión concreta): https://huggingface.co/thinkingmachines/Inkling-2-Mini/tree/ed40e7da625f594fc9c4990f5f66be24873c22d7
-- Release de llama.cpp con soporte `inkling2_loop` (b12600): https://github.com/ggml-org/llama.cpp/releases/tag/b12600
-- Documentación de la API de Docker Model Runner: https://docs.docker.com/ai/model-runner/api-reference/
-- Política de uso aceptable de Thinking Machines Lab: https://thinkingmachines.ai/model-acceptable-use-policy/
-- Fichero de pesos Q4_K_M: https://huggingface.co/MirrorNeuronLab/Inkling-2-Mini-GGUF/resolve/main/Inkling-2-Mini-Q4_K_M.gguf
-- Proyector visual BF16: https://huggingface.co/MirrorNeuronLab/Inkling-2-Mini-GGUF/resolve/main/mmproj-Inkling-2-Mini-BF16.gguf
+- Calibración y recetas de AtomicChat: https://huggingface.co/datasets/AtomicChat/Inkling-2-Mini-GGUF-metrics/tree/298cd819ae69d1f9268b70c3aa47b5ef3832ff7d
+- Release de llama.cpp b12600: https://github.com/ggml-org/llama.cpp/releases/tag/b12600
+- Kernel Metal para multiplicaciones de matrices (b12600): https://github.com/ggml-org/llama.cpp/blob/b12600/ggml/src/ggml-metal/kernels/mul_mm.metal#L963
+- Documentación de Docker Model Runner (motores de inferencia): https://docs.docker.com/ai/model-runner/inference-engines/
+- Referencia de API de Docker Model Runner: https://docs.docker.com/ai/model-runner/api-reference/
+- Política de Uso Aceptable de Thinking Machines Lab: https://thinkingmachines.ai/model-acceptable-use-policy/
+- Archivos del repositorio: SHA256SUMS, PROVENANCE.json, PUBLISHED_DMR_VALIDATION.json, DMR_VALIDATION.json, AD_PUBLISHED_DMR_VALIDATION.json, AD_DMR_VALIDATION.json, reproduce/start-docker-runner.sh, reproduce/q2_0-imatrix.patch, reproduce/LICENSE.llama.cpp, LICENSE

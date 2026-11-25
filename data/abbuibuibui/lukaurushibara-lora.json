@@ -50,16 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "abbuibuibui/LukaUrushibara-Lora · Hugging Face",
-      "url": "https://huggingface.co/abbuibuibui/LukaUrushibara-Lora",
-      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "abbuibuibui (abbuibuibui) - Hugging Face",
-      "url": "https://huggingface.co/abbuibuibui/models",
-      "snippet": "User profile of abbuibuibui on Hugging Face"
-    }
-  ]
+  "sources": []
 }

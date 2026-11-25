@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "elnemer7/ElNeMeR-Child-Online-Safety-ONNX",
+  "slug": "elnemer7-elnemer-child-online-safety-onnx",
+  "author": "elnemer7",
+  "url": "https://huggingface.co/elnemer7/ElNeMeR-Child-Online-Safety-ONNX",
+  "created_at": "2026-11-25T02:15:59.000Z",
+  "updated_at": "2026-11-25T02:16:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "child-safety",
+    "anti-grooming",
+    "anti-cyberbullying",
+    "arabic",
+    "humanitarian-ai",
+    "elnemer-ai",
+    "text-classification",
+    "ar",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 301192,
+  "storage_human": "301192 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

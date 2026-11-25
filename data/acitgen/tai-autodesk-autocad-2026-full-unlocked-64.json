@@ -1,0 +1,93 @@
+{
+  "schema": 2,
+  "id": "Acitgen/tai-autodesk-autocad-2026-full-unlocked-64",
+  "slug": "acitgen-tai-autodesk-autocad-2026-full-unlocked-64",
+  "author": "Acitgen",
+  "url": "https://huggingface.co/Acitgen/tai-autodesk-autocad-2026-full-unlocked-64",
+  "created_at": "2026-11-24T23:10:22.000Z",
+  "updated_at": "2026-11-24T23:10:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id"
+  ],
+  "tags": [
+    "windows",
+    "windows-11",
+    "x64",
+    "portable",
+    "tai-autodesk-autocad-2026-full-unlocked-64",
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Classic Pickled Eggs Recipe",
+      "url": "https://www.allrecipes.com/recipe/234065/classic-pickled-eggs/",
+      "snippet": "Sep 25, 2026 · These pickled eggs make a tasty savory snack or delicious addition to salads, or sandwiches! The hard-boiled eggs …Read more"
+    },
+    {
+      "title": "How to Make Pickled Hard Boiled Eggs: Easy Step-by-Step",
+      "url": "https://rusticrootsliving.com/how-to-make-pickled-hard-boiled-eggs/",
+      "snippet": "Sep 3, 2026 · Learn how to make pickled hard boiled eggs with our easy guide. From perfect boiling to flavor variations like spicy …Read more"
+    },
+    {
+      "title": "Old-Fashioned Pickled Eggs Recipe",
+      "url": "https://www.allrecipes.com/recipe/22699/pickled-eggs-ii/",
+      "snippet": "Sep 2, 2026 · Combine vinegar, water, and pickling spice in a medium saucepan over medium heat; bring to a boil. Add garlic and …Read more"
+    },
+    {
+      "title": "Pickled Eggs Recipe (Four of the Best Variations)",
+      "url": "https://practicalselfreliance.com/pickled-eggs/",
+      "snippet": "Apr 17, 2026 · Four pickled eggs recipes that turn humble hard-boiled eggs into the perfect tangy snack — beet, dill, bread & butter, …Read more"
+    }
+  ]
+}

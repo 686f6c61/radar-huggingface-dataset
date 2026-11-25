@@ -2,95 +2,90 @@
 
 ## Resumen
 
-Inkling-2-Mini-GGUF es una cuantización Q4_K_M en formato GGUF del modelo Inkling 2 Mini, desarrollado originalmente por Thinking Machines. El modelo base es un mixture of experts (MoE) de 26.070.385.152 parámetros (26,4B) con una arquitectura denominada `inkling2_loop`, en la que las capas intermedias se ejecutan tres veces por token, y con capacidad de entrada de imagen (pipeline image-text-to-text). Esta distribución la publica el usuario nikolaus714 y está pensada para su uso con llama.cpp.
+Inkling 2 Mini GGUF es una distribución cuantizada del modelo multimodal Inkling 2 Mini desarrollado por Thinking Machines. Se trata de un modelo de mezcla de expertos (MoE) con 26.400 millones de parámetros totales que incorpora una innovación arquitectónica poco habitual: las capas intermedias se ejecutan tres veces por token (denominada internamente `inkling2_loop`). El modelo acepta entradas de imagen y texto, lo que lo sitúa en la categoría image-text-to-text.
 
-El paquete incluye dos ficheros: el modelo de lenguaje cuantizado (`Inkling-2-Mini-Q4_K_M.gguf`, 17,48 GB) y un proyector de visión separado en F16 (`mmproj-Inkling-2-Mini-F16.gguf`, 639 MB). La cuantización se realizó con `llama-quantize` a partir de un GGUF BF16 de ggml-org, que a su vez es un upcast del checkpoint original en precisión mixta NVFP4/MXFP8, no de un original en precisión completa. El proyector F16 procede de otra distribución (InterpreticAI) y no se genera en el paso de cuantización del modelo de lenguaje.
+Esta ficha concreta, publicada por el usuario nikolaus714, ofrece dos cuantizaciones GGUF del modelo base (Q2_K de 10,86 GB y Q4_K_M de 17,48 GB) más un proyector de visión F16 independiente de 639 MB. El objetivo es permitir la ejecución del modelo en hardware de consumo mediante llama.cpp, algo imposible con los pesos originales en NVFP4/MXFP8.
 
-Su relevancia es doble: por un lado, permite ejecutar un MoE multimodal de 26,4B en hardware de consumo mediante cuantización de 4 bits; por otro, la arquitectura `inkling2_loop` requiere versiones recientes de llama.cpp (b12612 o superior). El autor advierte explícitamente de que la calidad de texto, la inferencia de imagen, el tool calling y el rendimiento de esta subida no han sido validados.
+La relevancia actual radica en que Thinking Machines apuesta por arquitecturas con cómputo recurrente en lugar de escalar únicamente el número de parámetros, y esta distribución facilita la evaluación práctica de dicha arquitectura en equipos locales con GPU NVIDIA. La licencia Apache 2.0 elimina restricciones de uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of experts (MoE) con arquitectura `inkling2_loop`; las capas intermedias se ejecutan tres veces por token |
+| Arquitectura | Mezcla de expertos (MoE) con bucle en capas intermedias (`inkling2_loop`), transformer multimodal |
 | Parametros totales | 26.070.385.152 (26,4B) |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible (el ejemplo de llama.cpp usa `-c 4096`) |
-| Tipos de cuantizacion | Q4_K_M (modelo de lenguaje); F16 (proyector de visión); el original es NVFP4/MXFP8 mixto |
+| Longitud de contexto | no disponible (el ejemplo de despliegue usa `-c 4096`) |
+| Tipos de cuantizacion | Q2_K (10,86 GB), Q4_K_M (17,48 GB); proyector de visión F16 (639 MB) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp) |
-| Vision | Sí, mediante proyector separado `mmproj-Inkling-2-Mini-F16.gguf` (639 MB) |
-| Tamano del repo | 18,1 GB |
-| Modelo base | thinkingmachines/Inkling-2-Mini |
+| Formato de pesos | GGUF (llama.cpp); origen BF16 derivado de checkpoint mixto NVFP4/MXFP8 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un mixture of experts con una innovación estructural denominada `inkling2_loop`: las capas intermedias de la red se recorren tres veces por cada token procesado, lo que incrementa la profundidad efectiva de cómputo sin aumentar proporcionalmente el número de parámetros. El total de parámetros es de 26,4B, aunque no se dispone del dato de parámetros activos por token. Incorpora un codificador de visión y un proyector para entrada image-text-to-text.
+El modelo base es un MoE con 26,4B parámetros totales en el que las capas centrales se ejecutan tres veces por token, un esquema de cómputo recurrente que incrementa la profundidad efectiva sin aumentar el número de parámetros. Incorpora además un codificador de visión y proyector para entrada de imágenes, empaquetado por separado en el GGUF (`mmproj-Inkling-2-Mini-F16.gguf`). No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF, DPO u otras fases de alineación; esa información no aparece en la model card de esta distribución. La cuantización Q4_K_M se realizó sin importance matrix a partir de un GGUF BF16 de ggml-org (revisión `db61c5b492a6a034d986328d28274af0a439aa6c`), que es un upcast del checkpoint original en precisión mixta NVFP4/MXFP8, por lo que la cadena de conversión acumula dos pasos de pérdida potencial de precisión antes de la cuantización final a 4 bits.
+La cadena de cuantización es relevante para evaluar la fidelidad de estos pesos: los GGUF de este repositorio se generaron con `llama-quantize` a partir del BF16 publicado por ggml-org (revisión `db61c5b492a6a034d986328d28274af0a439aa6c`), que a su vez es un upcast del checkpoint original mixto NVFP4/MXFP8, no una versión en precisión completa. Se usaron presets estándar sin matriz de importancia; Q2_K mantiene algunos tensores en mayor precisión, con 24 tensores que requirieron cuantización de respaldo. El proyector F16 proviene de InterpreticAI (revisión `0aba1d7193f6bf28fd24c68b0628166f7e2ddbe8`) y no fue generado por el proceso de cuantización del modelo de lenguaje.
 
 ## Capacidades
 
-- Generación de texto conversacional (tag `conversational` en la ficha de Hugging Face).
-- Entrada multimodal image-text-to-text: acepta imágenes junto con texto mediante el proyector de visión F16.
-- Razonamiento y generación de texto en general, condicionados por la arquitectura MoE del modelo base.
-- Compatibilidad con endpoints (`endpoints_compatible`).
-- Soporte de plantillas de chat mediante `--jinja` en llama.cpp.
-- Tool calling: no validado en esta distribución según el autor; el modelo base podría soportarlo, pero no hay confirmación.
-- Capacidades de agente y razonamiento multi-paso: no disponibles en la información proporcionada.
-- Idiomas soportados: no disponibles.
+- Generación de texto conversacional multi-turno (etiqueta `conversational`).
+- Comprensión de imágenes y respuesta en texto (pipeline image-text-to-text).
+- Razonamiento y respuesta a instrucciones mediante plantilla Jinja (`--jinja` en llama.cpp).
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su exposición como API.
+- Soporte de tool calling: no validado en esta distribución según el autor.
+- Capacidades de agente y razonamiento multi-paso: no validadas en esta distribución.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Inferencia local de un MoE multimodal de 26,4B en estaciones de trabajo con GPU de consumo: gracias a la cuantización Q4_K_M (17,48 GB), es posible ejecutarlo con offload parcial en GPUs de 12-16 GB apoyándose en RAM del sistema, algo inviable con el checkpoint original en NVFP4/MXFP8.
-- Asistente conversacional con entrada de imágenes en local: el par modelo + proyector permite adjuntar imágenes en `llama-server` y mantener diálogos multi-turno sin depender de APIs externas, útil para prototipos de privacidad.
-- Procesamiento de documentación escaneada o capturas: al aceptar image-text-to-text, se puede usar para describir, resumir o extraer información de imágenes en pipelines internos, siempre que se valide la calidad (no verificada por el autor).
-- Experimentación con arquitecturas looped MoE: investigadores pueden estudiar el comportamiento de `inkling2_loop` (tres pasadas por las capas intermedias) en un entorno GGUF reproducible con llama.cpp b12612.
-- Despliegue de servidor HTTP compatible con OpenAI: `llama-server` expone un endpoint en el puerto 8080 que puede integrarse en aplicaciones existentes que consuman APIs compatibles.
-- Evaluación comparativa de cuantizaciones: al existir otras distribuciones GGUF del mismo modelo base (ggml-org en BF16, InterpreticAI), sirve como referencia para medir la degradación de Q4_K_M frente a precisiones mayores.
-- Desarrollo en Windows con CUDA: el autor documenta un flujo completo con binarios CUDA 12 de llama.cpp para Windows, lo que facilita entornos de desarrollo en esa plataforma.
+- Asistente visual local: desplegar el modelo con `llama-server` y el proyector F16 para responder preguntas sobre capturas de pantalla, diagramas o fotografías sin enviar datos a la nube, usando Q4_K_M en una GPU de 24 GB con offload parcial.
+- Procesamiento de documentos con imágenes: extraer información de facturas, gráficos o formularios escaneados combinando entrada visual y contexto textual en una única llamada.
+- Prototipado de agentes con tool calling: aunque no validado, la plantilla Jinja y la compatibilidad con endpoints permiten experimentar con function calling en un servidor OpenAI-compatible local antes de migrar a producción.
+- Evaluación de arquitecturas recurrentes: investigadores pueden comparar el comportamiento de las capas con bucle triple frente a transformers convencionales del mismo tamaño usando las cuantizaciones Q2_K y Q4_K_M como referencia de coste-calidad.
+- Despliegue en estaciones de trabajo con GPU de consumo: Q2_K (10,86 GB) más el proyector permite intentar carga completa en GPUs de 16 GB, con la advertencia de que el autor no garantiza el offload total.
+- Chat multimodal conversacional: servir una interfaz web local en `http://127.0.0.1:8080` con llama.cpp para conversaciones que alternan texto e imágenes adjuntas.
+- Integración en pipelines de CI/CD para pruebas de regresión multimodal: usar el servidor local como endpoint determinista en tests de aplicaciones que consumen modelos vision-language.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor indica explícitamente que la calidad de texto, la inferencia de imagen, el tool calling y el rendimiento de esta subida no han sido validados.
+No se han publicado resultados de benchmarks en la información disponible. El autor indica explícitamente que la calidad de texto, la inferencia de imagen, el tool calling y el rendimiento no han sido validados para estas subidas, y que la calidad de Q2_K no ha sido medida.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el fichero del modelo de lenguaje ocupa 17,48 GB y el proyector 639 MB; se necesita además memoria para el contexto KV. Con `-c 4096` y `-ngl 99` se intenta cargar todo en GPU, pero una RTX 4070 de 12 GB no puede alojar los 17,48 GB completos.
-- GPU recomendadas: para carga completa en VRAM, GPUs con 24 GB o más (RTX 4090, RTX 3090, A100, H100). Con GPUs de 12-16 GB (RTX 4070, RTX 4080) es necesario offload parcial y RAM del sistema suficiente para los pesos restantes, el contexto y el proyector.
-- Cabe en consumer GPU: sí, con offload parcial en GPUs de 12 GB o más; con carga completa requiere GPUs de 24 GB.
-- Opciones de despliegue: llama.cpp (versión b12612 o superior, con soporte `inkling2_loop`); `llama-server` para servidor HTTP. Ollama 0.40.17 solo soporta Inkling 2 Mini en Apple Silicon y en Windows devuelve `unknown model architecture: inkling2_loop`; la importación en futuras versiones de Ollama no está verificada.
-- Latencia y throughput: no disponibles. Contextos mayores requieren más memoria según el autor.
+- VRAM estimada: Q4_K_M requiere 17,48 GB solo para los pesos del lenguaje, más el proyector F16 (639 MB), contexto KV y overhead del runtime; Q2_K parte de 10,86 GB con las mismas adiciones.
+- GPU recomendadas: el autor cita una RTX 4070 de 12 GB como insuficiente para cargar Q4_K_M completo en VRAM; se necesita offload parcial a RAM del sistema. Para carga completa de Q4_K_M se requiere al menos una GPU de 24 GB (RTX 4090, A100 40 GB, H100).
+- GPU de consumo: Q2_K más proyector puede intentar caber en 16 GB, pero el autor advierte que el offload total no está garantizado y recomienda reducir `-ngl` si es necesario.
+- Opciones de despliegue: llama.cpp (build b12612 o posterior con soporte `inkling2_loop`), con binarios CUDA 12 para Windows; Ollama 0.40.17 solo soporta el modelo en Apple Silicon y en Windows devuelve `unknown model architecture: inkling2_loop`; vLLM y TGI no están mencionados como compatibles.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Inkling-2-Mini-GGUF (esta distribucion) | 26,4B (MoE) | no disponible | GGUF Q4_K_M + proyector F16 | Apache 2.0 | Vision, arquitectura `inkling2_loop` |
-| ggml-org/Inkling-2-Mini-GGUF | 26,4B (MoE) | no disponible | GGUF BF16 | Apache 2.0 (modelo base) | Origen de la cuantizacion; mayor precision, mayor tamano |
-| InterpreticAI/Inkling-2-Mini-GGUF | 26,4B (MoE) | no disponible | GGUF + proyector F16 | Apache 2.0 (modelo base) | Origen del proyector de vision usado aqui |
-| thinkingmachines/Inkling-2-Mini | 26,4B (MoE) | no disponible | Checkpoint original NVFP4/MXFP8 mixto | Apache 2.0 | Modelo base oficial |
+| Inkling 2 Mini (esta ficha) | 26,4B MoE con bucle triple | no disponible | Apache 2.0 | GGUF Q2_K/Q4_K_M | Visión integrada, requiere llama.cpp reciente |
+| thinkingmachines/Inkling-2-Mini (base) | 26,4B MoE | no disponible | Apache 2.0 | NVFP4/MXFP8 original | Pesos de referencia sin cuantizar |
+| ggml-org/Inkling-2-Mini-GGUF | 26,4B MoE | no disponible | Apache 2.0 | GGUF BF16 | Upcast del checkpoint original, mayor tamaño |
+| InterpreticAI/Inkling-2-Mini-GGUF | 26,4B MoE | no disponible | Apache 2.0 | GGUF | Origen del proyector F16 usado aquí |
 
-No se dispone de datos de rendimiento comparativo entre estas distribuciones ni frente a modelos de otras familias.
+No se dispone de datos de benchmark para establecer comparaciones de rendimiento con alternativas de otros desarrolladores.
 
 ## Limitaciones y advertencias
 
-- La cadena de conversión acumula pérdidas: original NVFP4/MXFP8 mixto, upcast a BF16, y cuantización Q4_K_M sin importance matrix. La calidad puede degradarse respecto al checkpoint original.
-- El autor no ha validado la calidad de texto, la inferencia de imagen, el tool calling ni el rendimiento de esta subida concreta.
-- Requiere llama.cpp b12612 o superior; versiones anteriores no reconocen la arquitectura `inkling2_loop`.
-- Ollama en Windows no soporta esta arquitectura en la versión 0.40.17 (error `unknown model architecture: inkling2_loop`); en esa versión el soporte es solo para Apple Silicon.
-- La longitud de contexto no está documentada; el ejemplo oficial usa 4096 tokens y contextos mayores incrementan el consumo de memoria.
-- Idiomas soportados no documentados; no se puede garantizar un comportamiento multilingüe adecuado.
-- Riesgo de alucinación y sesgos: no evaluados ni documentados en esta distribución; se remite a la model card original para usos previstos y limitaciones.
-- Licencia Apache 2.0 permite uso comercial, pero conviene revisar la model card del modelo base para condiciones adicionales de uso previsto.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: distribución sin validación por parte de la comunidad.
+- Los pesos GGUF derivan de un upcast BF16 de un checkpoint mixto NVFP4/MXFP8, no de precisión completa; la fidelidad respecto al modelo original es limitada por construcción.
+- Q2_K usa presets sin matriz de importancia y 24 tensores con cuantización de respaldo; su calidad no ha sido medida y el autor advierte de mayor pérdida.
+- Ninguna capacidad (texto, imagen, tool calling, rendimiento) ha sido validada en esta distribución; úsese con cautela en producción.
+- Ollama en Windows no soporta la arquitectura `inkling2_loop` en la versión 0.40.17; solo Apple Silicon está soportado en esa release.
+- Se requiere un build de llama.cpp con soporte `inkling2_loop` (b12612 verificado); versiones anteriores fallarán al cargar el modelo.
+- El contexto de ejemplo es de 4096 tokens y no se documenta la longitud máxima soportada; contextos mayores incrementan el consumo de memoria.
+- Riesgo de alucinación y sesgos: no documentados en la información disponible; aplican los del modelo base, cuya model card debe consultarse.
+- Licencia Apache 2.0 permite uso comercial sin restricciones adicionales, pero el autor remite a la model card original para usos previstos y limitaciones.
 
 ## Enlaces
 
-- Distribución en Hugging Face: https://huggingface.co/nikolaus714/Inkling-2-Mini-GGUF
+- Repositorio Hugging Face: https://huggingface.co/nikolaus714/Inkling-2-Mini-GGUF
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
-- GGUF BF16 de origen: https://huggingface.co/ggml-org/Inkling-2-Mini-GGUF (revisión `db61c5b492a6a034d986328d28274af0a439aa6c`)
-- Proyector de visión de origen: https://huggingface.co/InterpreticAI/Inkling-2-Mini-GGUF (revisión `0aba1d7193f6bf28fd24c68b0628166f7e2ddbe8`)
+- GGUF BF16 de ggml-org: https://huggingface.co/ggml-org/Inkling-2-Mini-GGUF
+- Proyector de visión (InterpreticAI): https://huggingface.co/InterpreticAI/Inkling-2-Mini-GGUF
 - Release de llama.cpp b12612: https://github.com/ggml-org/llama.cpp/releases/tag/b12612
-- Notas de la versión de Ollama 0.40.17: https://github.com/ollama/ollama/releases/tag/v0.40.17
+- Notas de Ollama 0.40.17: https://github.com/ollama/ollama/releases/tag/v0.40.17

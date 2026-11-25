@@ -2,54 +2,54 @@
 
 ## Resumen
 
-Z-Image-Turbo-AIO es un checkpoint de generación de imágenes texto-a-imagen publicado por el usuario SeeSee21 en Hugging Face. Se trata de un repackage "todo en uno" del modelo Tongyi-MAI/Z-Image-Turbo desarrollado por Alibaba Tongyi Lab, un generador fotorrealista de aproximadamente 6.000 millones de parámetros que integra en un único paquete el VAE y el codificador de texto, eliminando la necesidad de descargar componentes por separado. El modelo está orientado a la generación rápida: produce imágenes en 8-9 pasos con CFG 1.0.
+Z-Image-Turbo AIO es un checkpoint "todo en uno" para generación de imágenes texto-a-imagen, publicado por el usuario SeeSee21 sobre el modelo base Tongyi-MAI/Z-Image-Turbo de Alibaba Tongyi Lab. El paquete integra en un único fichero el modelo de difusión, el VAE y el codificador de texto, de modo que puede cargarse directamente en ComfyUI con el nodo "Load Checkpoint" sin ensamblar componentes por separado. Se distribuye en dos variantes: una fotorrealista (Z-Image-Turbo-AIO) y otra orientada a anime (Z-Image-Turbo-Anime) con LoRAs fusionados.
 
-La arquitectura subyacente es un Diffusion Transformer de flujo único (Single-Stream DiT), según la información disponible, y el modelo es bilingüe inglés/chino. Su principal atractivo es la combinación de velocidad (pocos pasos de muestreo), calidad fotorrealista y un consumo de VRAM contenido que lo hace compatible con GPUs de 8 GB. Se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial.
+El modelo base es un transformer de difusión de 6B parámetros (denominado S3-DiT en la documentación del autor) optimizado para generación ultrarrápida en 8-9 pasos con CFG 1.0, lo que reduce drásticamente el coste de inferencia frente a modelos de difusión convencionales que requieren 20-50 pasos. Soporta renderizado bilingüe de texto en inglés y chino, y está publicado bajo licencia Apache-2.0.
 
-El repositorio incluye además una variante Anime (con LoRAs fusionadas) y varios flujos de trabajo para ComfyUI: estándar, ControlNet Union, variación de semilla, upscaling con SeedVR2 y control de profundidad con Depth Anything V3. Es relevante ahora porque ofrece una alternativa abierta y ligera frente a generadores propietarios, con un ecosistema de workflows ya preparado para producción en ComfyUI.
+Su relevancia radica en la combinación de velocidad (8 pasos), requisitos de VRAM moderados (funciona con 8 GB en FP8) y la distribución all-in-one, que simplifica el despliegue en entornos de producción y en GPUs de consumo. El repositorio incluye además siete flujos de trabajo de ComfyUI para casos como ControlNet, depth control, upscaling y variación de semilla.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Single-Stream Diffusion Transformer (DiT) con VAE y text encoder integrados |
-| Parámetros totales | ~6.000 millones (6B) |
+| Arquitectura | Transformer de difusión (S3-DiT según el autor), modelo base Tongyi-MAI/Z-Image-Turbo |
+| Parámetros totales | 6B (modelo base) |
 | Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (modelo de difusión) |
+| Longitud de contexto | no disponible (modelo de imagen; no aplica ventana de tokens de texto) |
 | Tipos de cuantización | FP8 (~10 GB), FP16 (~20 GB), BF16 (~20 GB) |
-| Idiomas soportados | inglés (en), chino (zh) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (checkpoint para ComfyUI); variantes FP8/FP16/BF16 |
+| Idiomas soportados | Inglés (en) y chino (zh), incluido renderizado de texto en imagen |
+| Licencia | Apache-2.0 |
+| Formato de pesos | Checkpoint all-in-one para ComfyUI (VAE y text encoder integrados); no se indica GGUF ni safetensors suelto |
+| Pasos de muestreo recomendados | 8-9 pasos, CFG 1.0 |
+| Samplers recomendados | Fotorrealista: res_multistep + simple; Anime: euler_ancestral + beta |
+| Tamaño del repositorio | 102,8 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en un Diffusion Transformer de flujo único (Single-Stream DiT), según la información disponible, con VAE y codificador de texto integrados en el propio checkpoint. Esta integración simplifica el despliegue: no requiere descargar por separado el text encoder ni el VAE, algo habitual en otros pipelines de difusión. El muestreo está optimizado para muy pocos pasos (8-9) con CFG 1.0, lo que sugiere un entrenamiento orientado a destilación o ajuste para generación rápida, aunque no se detallan en la información disponible los detalles del proceso de entrenamiento, el número de tokens, la composición del dataset ni si hubo etapas de RLHF/DPO.
+El modelo se basa en Tongyi-MAI/Z-Image-Turbo, un transformer de difusión de 6B parámetros que el autor denomina S3-DiT. La variante AIO empaqueta en un único checkpoint el modelo de difusión, el VAE y el codificador de texto, lo que elimina la necesidad de cargar componentes por separado en ComfyUI. La variante Anime es un merge con LoRAs fusionados para reforzar la estética anime.
 
-El autor publica dos checkpoints: AIO (fotorrealista, basado directamente en Tongyi-MAI/Z-Image-Turbo) y Anime (con LoRAs fusionadas para estética anime, parcialmente capaz de contenido NSFW). Además, se distribuyen flujos de trabajo que combinan el modelo con ControlNet Union (Canny, HED, Depth, Pose, MLSD), un upscaler basado en DiT (SeedVR2, en variantes de 3B y 7B) y Depth Anything V3 para control de profundidad y previsualización 3D.
+El diseño está optimizado para generación en muy pocos pasos (8-9) con CFG 1.0, lo que implica que el modelo está destilado o entrenado específicamente para funcionar sin classifier-free guidance convencional y con un número reducido de evaluaciones. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO (no aplicables de forma estándar a modelos de difusión). Tampoco se detallan innovaciones como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generación de imágenes texto-a-imagen con calidad fotorrealista en 8-9 pasos y CFG 1.0.
-- Generación bilingüe: comprensión de prompts en inglés y chino.
-- Resolución de salida de hasta 1920×1088 según la información disponible.
-- Control de composición mediante ControlNet Union con cinco tipos de control: Canny (bordes), HED (bordes suaves), Depth (profundidad), Pose (pose corporal) y MLSD (detección de líneas).
-- Upscaling de alta calidad mediante SeedVR2 (modelos de 3B y 7B, con opciones FP16/FP8/GGUF).
-- Generación con control de profundidad y previsualización 3D mediante Depth Anything V3.
-- Variación controlada de semilla (Seed Variance Enhancer) para aumentar la diversidad de salidas con el mismo prompt.
-- Estilo anime mediante el checkpoint Z-Image-Turbo-Anime (LoRAs fusionadas).
-- Integración nativa con ComfyUI mediante flujos de trabajo preconfigurados.
-- No se documenta soporte de tool calling, agentes ni otras capacidades de lenguaje; es un modelo exclusivamente generativo de imágenes.
+- Generación de imágenes texto-a-imagen fotorrealistas a partir de prompts en lenguaje natural.
+- Generación de imágenes estilo anime mediante el checkpoint Z-Image-Turbo-Anime con LoRAs fusionados.
+- Renderizado de texto bilingüe inglés/chino dentro de la imagen generada.
+- Generación ultrarrápida en 8-9 pasos con CFG 1.0, sin prompt negativo.
+- Integración nativa con ComfyUI mediante el nodo Load Checkpoint (VAE y text encoder incluidos).
+- Soporte de flujos guiados: ControlNet, depth control (Depth Anything V3) y upscaling (SeedVR2).
+- Variación de semilla para diversidad de salidas (workflow Seed Variance).
+- No se documentan capacidades de tool calling, agentes, visión de entrada ni audio (es un modelo exclusivamente de generación de imagen).
 
 ## Casos de uso
 
-- Generación de imágenes de producto para comercio electrónico: el modelo produce renders fotorrealistas en 8-9 pasos, lo que permite generar lotes grandes de imágenes de catálogo con prompts bilingües y un coste computacional bajo.
-- Creación de material gráfico para marketing y redes sociales: con CFG 1.0 y pocos pasos, la latencia es reducida, lo que facilita la iteración rápida sobre conceptos visuales y la producción de variantes mediante el flujo Seed Variance.
-- Ilustración de artículos y documentación técnica: la integración de VAE y text encoder en un solo checkpoint simplifica el despliegue en pipelines editoriales que usan ComfyUI como backend.
-- Diseño de personajes y previsualización de poses: el flujo ControlNet con control de pose (Pose) y detección de líneas (MLSD) permite fijar la composición y la postura de figuras antes de refinar el render.
-- Reconstrucción de escenas con control de profundidad: el flujo con Depth Anything V3 permite generar imágenes coherentes con una estructura de profundidad dada, útil para previsualización 3D y composición de escenarios.
-- Restauración y ampliación de imágenes: el flujo SeedVR2 (3B o 7B) permite ampliar renders a resolución 1536 en el lado corto con corrección de color en espacio Lab, adecuado para impresión o material de alta resolución.
-- Generación de arte estilo anime: el checkpoint Anime, con LoRAs fusionadas y sampler euler_ancestral, está pensado para ilustración de personajes y contenido creativo.
-- Prototipado rápido en estaciones de trabajo con GPU de consumo: al requerir unos 8 GB de VRAM en FP8, puede ejecutarse en GPUs de gama media sin infraestructura dedicada.
+- Generación de ilustraciones para blogs y medios: el modelo produce imágenes fotorrealistas en 8-9 pasos, lo que permite generar banners y figuras de artículo en segundos dentro de un flujo ComfyUI, reduciendo el coste frente a modelos de 30-50 pasos.
+- Creación de arte conceptual para videojuegos: la variante Anime, con estética reforzada mediante LoRAs, sirve para iterar rápidamente sobre personajes y escenarios estilizados.
+- Prototipado de material de marketing bilingüe: al renderizar texto en inglés y chino, permite generar carteles y mockups con texto incrustado para mercados hispanohablantes con producto en Asia o viceversa.
+- Automatización de catálogos de producto: con el workflow de upscaling (SeedVR2) se generan imágenes fotorrealistas de alta resolución para fichas de e-commerce a partir de descripciones textuales.
+- Control de composición con depth maps: el workflow Depth Anything V3 permite generar imágenes respetando la geometría de una escena de referencia, útil para integración en pipelines de previsualización 3D.
+- Generación condicionada con ControlNet: para tareas donde se requiere respetar siluetas o poses concretas, el workflow ControlNet permite guiar la generación sin reentrenar el modelo.
+- Exploración creativa con diversidad de semillas: el workflow Seed Variance facilita generar múltiples variaciones de un mismo prompt para selección de concepto.
 
 ## Benchmarks y rendimiento
 
@@ -57,46 +57,39 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: ~10 GB en FP8, ~20 GB en FP16 y ~20 GB en BF16.
-- El autor indica compatibilidad con GPUs de 8 GB de VRAM (presumiblemente con la variante FP8 y optimizaciones de ComfyUI).
-- GPU recomendadas: no se especifican modelos concretos en la información disponible; por el perfil de VRAM, encajan GPUs de consumo de gama media-alta (8 GB o más) y GPUs de datacenter (A100, H100) para lotes grandes.
-- Cabe en GPU de consumo: sí, según el autor, con 8 GB de VRAM en la configuración adecuada.
-- Opciones de despliegue: ComfyUI (flujos de trabajo oficiales); el repositorio incluye workflows para ControlNet, SeedVR2 y Depth Anything V3. No se documentan otros backends como vLLM, llama.cpp, Ollama o TGI (no aplicables a un modelo de difusión de este tipo).
-- Latencia y throughput: no disponibles de forma numérica; el modelo está optimizado para 8-9 pasos, lo que reduce el coste frente a pipelines de 20-50 pasos.
+- VRAM estimada: FP8 ~10 GB; FP16 ~20 GB; BF16 ~20 GB. El autor indica compatibilidad con 8 GB de VRAM (presumiblemente en FP8 con gestión de memoria de ComfyUI).
+- GPU recomendadas: no se especifican modelos concretos; por capacidad de VRAM, encajan GPUs de consumo con 8-16 GB (por ejemplo, RTX 3060/4060 Ti/4070 en FP8) y GPUs profesionales con 24 GB o más (RTX 4090, A100, H100) para FP16/BF16.
+- Cabe en GPU de consumo: sí, en FP8 con 8 GB según el autor; en FP16/BF16 se requiere aproximadamente 20 GB.
+- Opciones de despliegue: ComfyUI (soporte nativo mediante Load Checkpoint y los siete workflows incluidos). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a modelos de difusión de imagen.
+- Latencia y throughput: no disponibles de forma numérica; el autor destaca generación en 8-9 pasos como principal ventaja de velocidad.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Pasos típicos | Idiomas | Licencia | Disponibilidad |
+| Modelo | Parámetros | Pasos típicos | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Z-Image-Turbo-AIO (este) | ~6B | 8-9 | en, zh | Apache 2.0 | Hugging Face, CivitAI |
-| Tongyi-MAI/Z-Image-Turbo (base) | ~6B | no disponible | en, zh | no disponible en la información | Hugging Face |
-| Z-Image-Turbo-Anime (variante del autor) | ~6B | 8-9 | en, zh | Apache 2.0 | Hugging Face, CivitAI |
+| Z-Image-Turbo AIO (este) | 6B | 8-9 | Apache-2.0 | Checkpoint ComfyUI all-in-one | VAE y text encoder integrados; bilingüe EN/ZH |
+| Tongyi-MAI/Z-Image-Turbo (base) | 6B | 8-9 | Apache-2.0 | Pesos del modelo base | Requiere ensamblar componentes por separado |
+| Alternativas de difusión de gran formato (p. ej. familia SDXL/Flux) | no disponible en la información | no disponible | no disponible | no disponible | No se aportan datos comparativos en la información disponible |
 
-No se dispone en la información proporcionada de datos de rendimiento (benchmarks) ni de especificaciones de otros modelos de difusión comparables (por ejemplo, familia SDXL o Flux), por lo que la comparación se limita a los checkpoints derivados del mismo modelo base.
+No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos alternativos en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no está disponible.
 
 ## Limitaciones y advertencias
 
-- No se han documentado sesgos específicos; como modelo entrenado con datos web bilingües (inglés/chino), es previsible que herede sesgos culturales y demográficos de esos datos.
-- Riesgo de alucinación visual: como todo modelo generativo, puede producir detalles incoherentes (manos, texto en imagen, geometría) pese al fotorrealismo; se recomienda revisión humana en producción.
-- Cobertura lingüística limitada a inglés y chino; los prompts en otros idiomas pueden degradar la adherencia.
-- La variante Anime se describe como "parcialmente capaz de NSFW"; su uso requiere políticas de moderación propias y verificación de cumplimiento normativo.
-- La licencia Apache 2.0 del repackage permite uso comercial, pero conviene verificar la licencia y condiciones del modelo base Tongyi-MAI/Z-Image-Turbo antes de explotación comercial.
-- El repositorio ocupa 102,8 GB, lo que implica requisitos de almacenamiento considerables si se descargan todas las variantes y workflows.
-- Los flujos de trabajo dependen de nodos externos de ComfyUI (rgthree-comfy, comfyui_image_metadata_extension, comfyui_controlnet_aux, SeedVarianceEnhancer, ComfyUI-SeedVR2_VideoUpscaler), cuya disponibilidad y mantenimiento no están garantizados.
-- No hay datos publicados de benchmarks ni de latencia, lo que dificulta la comparación objetiva con alternativas.
+- No se documentan sesgos conocidos del modelo; al ser un modelo de imagen, puede reproducir estereotipos presentes en sus datos de entrenamiento.
+- Riesgo de alucinación visual: el renderizado de texto bilingüe puede producir caracteres incorrectos o ilegibles, especialmente en chino con prompts complejos.
+- El modelo está pensado para funcionar con CFG 1.0 y sin prompt negativo; desviarse de esta configuración puede degradar la calidad según el autor.
+- La variante Anime se declara "parcialmente capaz de NSFW", lo que exige moderación y políticas de uso en entornos de producción.
+- Soporte lingüístico limitado a inglés y chino; no se garantiza calidad con prompts en castellano u otros idiomas.
+- Licencia Apache-2.0 permite uso comercial, pero debe verificarse la licencia del modelo base Tongyi-MAI/Z-Image-Turbo y de los LoRAs fusionados en la variante Anime antes de explotación comercial.
+- El repositorio ocupa 102,8 GB, lo que implica requisitos de almacenamiento considerables para descargar todas las precisiones y variantes.
+- No se especifican límites de resolución nativa ni comportamiento en relaciones de aspecto extremas.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/SeeSee21/Z-Image-Turbo-AIO
+- Hugging Face del modelo: https://huggingface.co/SeeSee21/Z-Image-Turbo-AIO
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
-- ControlNet Union: https://huggingface.co/alibaba-pai/Z-Image-Turbo-Fun-Controlnet-Union
-- Ficha en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/z-image-turbo-aio-seesee21
-- CivitAI (AIO BF16): https://civitai.com/models/2173571?modelVersionId=2447693
-- CivitAI (AIO FP16): https://civitai.com/models/2173571?modelVersionId=2550362
-- CivitAI (AIO FP8): https://civitai.com/models/2173571?modelVersionId=2448013
-- CivitAI (Anime BF16): https://civitai.com/models/2259646?modelVersionId=2543657
-- CivitAI (Anime FP16): https://civitai.com/models/2259646?modelVersionId=2550879
-- CivitAI (Anime FP8): https://civitai.com/models/2259646?modelVersionId=2544019
-- ComfyUI: https://github.com/comfyanonymous/ComfyUI
-- SeedVarianceEnhancer: https://github.com/ChangeTheConstants/SeedVarianceEnhancer
-- ComfyUI-SeedVR2_VideoUpscaler: https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler
+- Perfil del autor en Hugging Face: https://huggingface.co/SeeSee21
+- Civitai (fotorrealista): https://civitai.com/models/2173571
+- Civitai (anime): https://civitai.com/models/2259646
+- YouTube del autor: https://www.youtube.com/@SeeSee-AI
+- GitHub del autor: https://github.com/seesee75-commits

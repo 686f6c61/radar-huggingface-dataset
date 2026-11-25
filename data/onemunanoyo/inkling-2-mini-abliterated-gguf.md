@@ -2,90 +2,112 @@
 
 ## Resumen
 
-Inkling-2-Mini-Abliterated-GGUF es una compilación de pesos en formato GGUF derivada de `thinkingmachines/Inkling-2-Mini`, un modelo de lenguaje de aproximadamente 26.070 millones de parámetros. La versión que nos ocupa ha sido sometida a un proceso de *abliteration* (eliminación de direcciones de rechazo en el espacio de activaciones) por parte del usuario `onemunanoyo`, partiendo de los builds GGUF dinámicos de Unsloth. El objetivo declarado es obtener una variante sin los mecanismos de rechazo habituales, orientada a investigación, *red-teaming* y evaluación de alineamiento.
+Inkling-2-Mini-Abliterated-GGUF es una versión "abliterated" (con supresión de rechazos) del modelo multimodal Inkling-2-Mini de Thinking Machines, publicada por el usuario onemunanoyo en Hugging Face. Se distribuye exclusivamente en formato GGUF, con cuantizaciones dinámicas de Unsloth (UD) que preservan la asignación de tipos por tensor del modelo base. El modelo original tiene 26.070.390.272 parámetros totales y una arquitectura MoE (mezcla de expertos), según las etiquetas del repositorio.
 
-El modelo conserva la asignación de cuantización por tensor del build original de Unsloth (UD, *Unsloth Dynamic*), lo que significa que no se ha recuantizado de forma uniforme: cada tensor mantiene su tipo original (BF16, Q8_0, Q6_K, Q5_K, Q4_K, Q2_0, NVFP4, MXFP4). Esta decisión preserva mejor la fidelidad numérica respecto al modelo base que una cuantización homogénea, a costa de un tamaño de repositorio de 22,9 GB.
+El interés de esta ficha radica en que combina tres elementos poco habituales: una arquitectura MoE multimodal (image-text-to-text), una ventana de cuantizaciones que va desde 22,87 GB hasta 9,14 GB, y un proceso de abliteración que elimina la mayor parte de las respuestas de rechazo del modelo base, con un coste medido en perplejidad de aproximadamente un 3 % y una divergencia KL media de 0,035-0,041. Está pensado para investigación, red-teaming y evaluación de alineamiento, no para despliegue comercial sin supervisión.
 
-La relevancia de esta ficha es doble: por un lado documenta una variante *abliterated* de un modelo reciente con soporte multimodal (incluye un proyector de visión `mmproj-BF16.gguf`); por otro, advierte de que la model card original está prácticamente vacía en cuanto a benchmarks, idiomas y detalles de entrenamiento, por lo que muchos datos técnicos deben marcarse como no disponibles.
+La relevancia actual es doble: por un lado, demuestra que las técnicas de abliteración pueden aplicarse sobre pesos ya cuantizados en GGUF sin re-cuantizar desde cero; por otro, documenta de forma cuantitativa el compromiso entre supresión de rechazos y degradación de la distribución de salida, algo que la mayoría de publicaciones de modelos "uncensored" no hace.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (detalles internos no disponibles en la informacion proporcionada) |
+| Arquitectura | Transformer con mezcla de expertos (MoE), multimodal image-text-to-text |
 | Parametros totales | 26.070.390.272 |
-| Parametros activos | no disponible (no se confirma que sea MoE) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q5_K, Q4_K, Q2_0, NVFP4, MXFP4 (asignacion por tensor, estilo UD de Unsloth) |
-| Idiomas soportados | no disponibles |
+| Tipos de cuantizacion | UD-Q8_K_XL, UD-Q4_K_XL, UD-Q4_K_M, UD-Q2_K_XL (Unsloth Dynamic, con asignación por tensor: BF16, Q8_0, Q6_K, Q5_K, Q4_K, Q2_0, NVFP4, MXFP4) |
+| Idiomas soportados | inglés (en) y japonés (ja) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (mas proyector `mmproj-BF16.gguf` para vision) |
+| Formato de pesos | GGUF (más proyector de visión mmproj-BF16.gguf) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo base `thinkingmachines/Inkling-2-Mini`. Se sabe que es un transformer de aproximadamente 26.000 millones de parametros y que el repositorio incluye un proyector multimodal (`mmproj-BF16.gguf`), lo que confirma capacidades de vision en el modelo original. No se especifica si emplea atencion lineal, mezcla de expertos, atencion estandar o alguna variante hibrida.
+El modelo base es Inkling-2-Mini de Thinking Machines, un transformer con capas de mezcla de expertos (MoE) y capacidad multimodal de entrada imagen-texto. La etiqueta `inkling2_loop` sugiere algún mecanismo de bucle o iteración interna en el razonamiento, aunque la información disponible no detalla su funcionamiento. El repositorio no documenta el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO en el modelo original.
 
-Respecto al entrenamiento, la model card no aporta datos sobre volumen de tokens, composicion del dataset, fases de RLHF/DPO ni proceso de alineamiento. Lo unico documentado es el proceso de *abliteration* aplicado por el autor: se usaron los datasets `heretic-org/Semantic-Harmful` y `heretic-org/Semantic-Harmless` como referencia para identificar y eliminar las direcciones de rechazo en el espacio de activaciones. Este proceso se aplico sobre los pesos ya cuantizados de Unsloth, preservando la asignacion de cuantizacion por tensor de cada variante (por ejemplo, `attn_output` en Q8_0 y `ffn_down_exps` con mezcla de NVFP4 y Q8_0 en la variante Q4_K_XL).
+La innovación técnica de esta publicación no está en el entrenamiento sino en el post-procesado: la abliteración se aplica "in-place" sobre los GGUF dinámicos de Unsloth, preservando la asignación de tipos por tensor de cada variante (por ejemplo, `attn_output` en 24 tensores BF16 para Q8_K_XL, o `ffn_down_exps` con 20 tensores NVFP4 más 4 BF16). Además, se usa una matriz de importancia (`imatrix`) y la opción `--skip-qtypes Q2_0` en la variante de 2 bits para no degradar los tensores ya cuantizados a Q2_0. El proceso se evalúa con perplejidad sobre WikiText-2 (15 fragmentos, `-c 512`) y con un clasificador automático de rechazos (`LiquidAI/d1-2B`).
 
 ## Capacidades
 
-- Generacion de texto conversacional (el tag `conversational` esta presente en el repositorio).
-- Procesamiento multimodal de imagenes gracias al proyector `mmproj-BF16.gguf` incluido.
-- Capacidades de razonamiento y codigo: no confirmadas explicitamente en la informacion disponible, pero plausibles dado el tamano del modelo; deben verificarse empiricamente.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponibles; el repositorio no declara idiomas.
-- Modo *abliterated*: el modelo ha sido modificado para reducir los rechazos ante peticiones que el modelo base rechazaria. Esta es una capacidad tecnica del artefacto, no una mejora funcional.
+- Generación de texto conversacional multi-turno, con etiqueta `conversational` en el repositorio.
+- Comprensión de imágenes y texto combinados (pipeline `image-text-to-text`), gracias al proyector `mmproj-BF16.gguf` incluido.
+- Razonamiento con modo de esfuerzo configurable (`reasoning_effort` con valores como `low` y `high`), según la model card.
+- Soporte bilingüe inglés-japonés, con evaluación de rechazos separada para ambos idiomas.
+- Supresión de rechazos en inglés y japonés: 14/93 (15,0 %) de rechazos en inglés dañino y 0/25 (0,0 %) en japonés dañino con UD-Q8_K_XL.
+- Compatibilidad con endpoints (`endpoints_compatible` en las etiquetas), lo que facilita su integración en servicios de inferencia.
+- No se documenta soporte explícito de tool calling, function calling ni razonamiento multi-paso con agentes en la información disponible.
 
 ## Casos de uso
 
-- Investigacion de alineamiento y *red-teaming*: el modelo permite estudiar como se comporta una variante sin mecanismos de rechazo frente a la original, comparando respuestas y midiendo la eficacia del proceso de abliteration. Es el uso principal declarado por el autor.
-- Evaluacion de robustez de filtros de seguridad: util para probar clasificadores y capas de moderacion externas, ya que genera contenido que un modelo alineado rechazaria, permitiendo validar que los filtros aguas abajo funcionan.
-- Analisis de sesgos y comportamientos no deseados: al eliminar la capa de rechazo, se pueden observar sesgos subyacentes del modelo base que normalmente quedan enmascarados por respuestas evasivas.
-- Procesamiento multimodal en local: con el proyector `mmproj-BF16.gguf` y una build GGUF compatible (llama.cpp), se pueden hacer tareas de descripcion de imagenes o VQA en hardware de consumo, sujeto a la VRAM disponible.
-- Generacion de texto creativo sin restricciones tematicas: escritura de ficcion, guiones o narrativa que aborde temas sensibles, en entornos controlados y con revision humana.
-- Despliegue en entornos con recursos limitados: las variantes Q4_K_M y Q2_K_XL permiten ejecutar un modelo de 26B en GPUs de consumo o incluso en CPU, algo inviable con los pesos BF16 originales.
-- Experimentacion con cuantizacion dinamica: el repositorio sirve como caso de estudio de la estrategia UD de Unsloth, comparando fidelidad y perplexity entre variantes Q8_K_XL, Q4_K_XL, Q4_K_M y Q2_K_XL.
+- Red-teaming y evaluación de alineamiento: el modelo sirve para generar respuestas que un modelo alineado rechazaría, permitiendo a equipos de seguridad medir la robustez de clasificadores y filtros. La variante UD-Q8_K_XL reduce los rechazos al 15 % en inglés y al 0 % en japonés, lo que la hace útil como generador de casos adversarios controlados.
+- Investigación sobre abliteración: comparar la perplejidad y la divergencia KL de cada cuantización (1,0276x-1,0316x de PPL, KLD de 0,035-0,041) permite estudiar cuánto degrada la supresión de rechazos a cada nivel de compresión, un dato poco frecuente en la literatura.
+- Análisis de sesgos y daño semántico: los datasets `heretic-org/Semantic-Harmful` y `heretic-org/Semantic-Harmless` usados en el proceso permiten reproducir experimentos sobre cómo se separan las direcciones semánticas de daño y seguridad en el espacio de activaciones.
+- Despliegue local en hardware de consumo: la variante UD-Q2_K_XL ocupa 9,14 GB y cabe en GPUs con 12 GB de VRAM, lo que facilita experimentos de investigación sin infraestructura de datacenter.
+- Procesamiento multimodal de documentos en japonés e inglés: al conservar el proyector de visión, puede usarse para tareas de descripción de imágenes o extracción de información en entornos de investigación bilingües.
+- Evaluación comparativa de cuantizaciones: las cuatro variantes (Q8, Q4_XL, Q4_M, Q2) con checksums SHA-256 públicos permiten reproducir estudios sobre el impacto de la cuantización dinámica en modelos MoE multimodales.
+- Generación de datos sintéticos para ajuste fino: al no rechazar peticiones, puede producir pares de instrucción-respuesta variados para entrenar modelos más pequeños, siempre con revisión humana posterior.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye tablas de perplexity y evaluacion de rechazos, pero estan vacias (sin valores). No se deben inferir cifras.
+Los datos publicados en la model card se centran en perplejidad, divergencia KL y tasas de rechazo, no en benchmarks estándar de conocimiento o código.
+
+| Variante | PPL base | PPL abliterada | Ratio vs base | KLD media | Same Top-p |
+|---|---:|---:|---:|---:|---:|
+| UD-Q8_K_XL | 8,3390 ± 0,3496 | 8,5777 ± 0,3636 | 1,0304x | 0,04037 | 90,95 % |
+| UD-Q4_K_XL | 8,3346 ± 0,3491 | 8,5845 ± 0,3641 | 1,0316x | 0,04056 | 90,72 % |
+| UD-Q4_K_M | 8,3335 ± 0,3489 | 8,5835 ± 0,3638 | 1,0315x | 0,04056 | 91,16 % |
+| UD-Q2_K_XL | 8,7473 ± 0,3672 | 8,9752 ± 0,3814 | 1,0276x | 0,03513 | 91,82 % |
+
+| Modelo | Variante | EN dañino (93) | JA dañino (25) | XSTest seguro (250) |
+|---|---|---:|---:|---:|
+| Base UD | UD-Q8_K_XL | 92/93 (98,9 %) | 25/25 (100,0 %) | 128/250 (51,2 %) |
+| Abliterado | UD-Q8_K_XL | 14/93 (15,0 %) | 0/25 (0,0 %) | 18/250 (7,2 %) |
+| Abliterado | UD-Q4_K_XL | 15/93 (16,1 %) | 2/25 (8,0 %) | 19/250 (7,6 %) |
+| Abliterado | UD-Q4_K_M | 17/93 (18,3 %) | 0/25 (0,0 %) | 23/250 (9,2 %) |
+| Abliterado | UD-Q2_K_XL | 22/93 (23,7 %) | no disponible | no disponible |
+
+No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de capacidad en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: depende de la variante. Q8_K_XL ronda los 27-28 GB (pesos cercanos a BF16 en muchos tensores); Q4_K_XL y Q4_K_M en torno a 14-16 GB; Q2_K_XL aproximadamente 8-10 GB. Estas cifras son estimaciones a partir del tamano del repositorio (22,9 GB) y del numero de parametros, no datos publicados.
-- GPU recomendadas: A100 40/80 GB o H100 para Q8_K_XL; RTX 4090 (24 GB) o RTX 3090 para Q4_K_XL/Q4_K_M; GPUs de 8-12 GB para Q2_K_XL.
-- Cabe en GPU de consumo: si, en las variantes Q4 y Q2. La Q8_K_XL no cabe en una RTX 4090 de 24 GB sin offloading.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, LM Studio y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa para este tipo de builds; requeririan los pesos originales en safetensors.
-- Latencia y throughput: no disponibles. No se han publicado mediciones.
+- VRAM estimada para inferencia: aproximadamente el tamaño del archivo más overhead de contexto. UD-Q8_K_XL requiere unos 23 GB, UD-Q4_K_XL unos 18 GB, UD-Q4_K_M unos 17 GB y UD-Q2_K_XL unos 9,5 GB.
+- GPU recomendadas: A100 40 GB o H100 para la variante Q8 con contexto largo; RTX 4090 (24 GB) para Q8 justo o Q4 con holgura; RTX 3090/4080 (16-24 GB) para Q4; GPUs de 12 GB para Q2.
+- Cabe en GPU de consumo: sí, la variante UD-Q2_K_XL en 12 GB y las Q4 en 16-24 GB.
+- Opciones de despliegue: llama.cpp (probado con `llama-server` y `llama-perplexity`), Ollama y cualquier runtime compatible con GGUF. El proyector de visión se carga por separado con `mmproj-BF16.gguf`.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| Inkling-2-Mini-Abliterated (este) | ~26,07B | no disponible | Apache 2.0 | GGUF | Variante sin rechazos, multimodal |
-| thinkingmachines/Inkling-2-Mini (base) | ~26,07B | no disponible | no disponible | safetensors | Modelo original alineado |
-| unsloth/Inkling-2-Mini-GGUF | ~26,07B | no disponible | no disponible | GGUF | Builds UD sin abliteration |
-| Alternativas de ~24-27B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados de modelos comparables en la informacion proporcionada |
+| Modelo | Parámetros | Contexto | Multimodal | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Inkling-2-Mini-Abliterated (este) | 26,07 B (MoE) | no disponible | Sí | Apache 2.0 | GGUF | Abliterado, 4 cuantizaciones UD |
+| Inkling-2-Mini (base) | 26,07 B (MoE) | no disponible | Sí | Apache 2.0 | GGUF, safetensors | Modelo original de Thinking Machines |
+| Inkling-2-Mini-Abliterated-Balanced (v2) | 26,07 B (MoE) | no disponible | Sí | Apache 2.0 | GGUF | 6 cuantizaciones, KLD 0,048-0,062, 2,5 % rechazos EN |
+| Inkling-2-Mini-Abliterated-Aggressive (v2) | 26,07 B (MoE) | no disponible | Sí | Apache 2.0 | GGUF | 0 % rechazos EN y XSTest, KLD 0,056-0,073 |
 
-No se dispone de informacion suficiente para comparar rendimiento (benchmarks) con alternativas de la misma categoria.
+La comparación con modelos de otros autores no está disponible en la información proporcionada. Dentro de la propia familia, la versión v2 Balanced ofrece menor deriva KL a costa de más rechazos, y la Aggressive elimina por completo los rechazos con mayor coste en perplejidad.
 
 ## Limitaciones y advertencias
 
-- El modelo ha sido *abliterated*: no rechaza peticiones que el modelo base rechazaria. Esto lo hace inadecuado para despliegues de cara al publico sin una capa de moderacion externa.
-- Riesgo elevado de generar contenido danino, ilegal o eticamente problematico. El autor lo restringe explicitamente a investigacion, *red-teaming* y evaluacion de alineamiento.
-- La model card no documenta sesgos conocidos, pero al eliminar la capa de rechazo es probable que sesgos subyacentes del modelo base queden mas expuestos.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible; debe asumirse el comportamiento tipico de un modelo de ~26B sin datos de evaluacion.
-- Idiomas y contexto no declarados: no se puede garantizar un rendimiento multilingue ni una ventana de contexto concreta sin pruebas empiricas.
-- La licencia Apache 2.0 permite uso comercial, pero el uso comercial de una variante sin rechazos conlleva riesgos legales y reputacionales que el usuario debe evaluar.
-- El proceso de abliteration puede degradar capacidades generales (razonamiento, codigo); no hay benchmarks que lo confirmen o descarten.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin validacion de la comunidad.
-- Los pesos GGUF no son directamente compatibles con vLLM/TGI; para produccion a gran escala habria que reconvertir o usar llama.cpp con servidor.
+- El modelo está deliberadamente desalineado: su tasa de rechazo ante peticiones dañinas cae al 15 % en inglés y al 0 % en japonés, por lo que no debe desplegarse en producción orientada a usuarios sin filtros externos.
+- Riesgo elevado de generar contenido dañino, ilegal o inseguro; la model card lo restringe explícitamente a investigación, red-teaming y evaluación de alineamiento.
+- La abliteración degrada la distribución de salida: entre un 2,8 % y un 3,2 % de aumento de perplejidad y una KLD media de 0,035-0,041, con pérdida de coincidencia top-p de aproximadamente el 8-9 %.
+- La variante UD-Q2_K_XL muestra mayor tasa de rechazo residual en inglés (23,7 %) y no tiene datos publicados para japonés ni XSTest, lo que indica un comportamiento menos consistente a 2 bits.
+- Idiomas limitados a inglés y japonés; no se documenta soporte de español ni de otros idiomas.
+- Longitud de contexto no disponible, lo que impide planificar despliegues con ventanas largas.
+- Sesgos conocidos del modelo base no documentados en la información proporcionada; la abliteración puede amplificar sesgos al eliminar la capa de rechazo.
+- Aunque la licencia es Apache 2.0, el uso comercial de un modelo abliterado puede entrar en conflicto con legislación local sobre contenido dañino; la model card recomienda revisar las leyes aplicables.
+- El repositorio v1 (`bw_s088`) está desactualizado respecto a las versiones v2 Balanced y Aggressive, que ofrecen mejor supresión de rechazos bajo `reasoning_effort="high"`.
+- No se documenta soporte de tool calling ni de agentes, lo que limita su uso en pipelines automatizados complejos.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/onemunanoyo/Inkling-2-Mini-Abliterated-GGUF
-- Modelo base original: https://huggingface.co/thinkingmachines/Inkling-2-Mini
-- Builds GGUF de Unsloth: https://huggingface.co/unsloth/Inkling-2-Mini-GGUF
-- Dataset de referencia (harmful): https://huggingface.co/datasets/heretic-org/Semantic-Harmful
-- Dataset de referencia (harmless): https://huggingface.co/datasets/heretic-org/Semantic-Harmless
+- Modelo base (Thinking Machines): https://huggingface.co/thinkingmachines/Inkling-2-Mini
+- GGUF de Unsloth: https://huggingface.co/unsloth/Inkling-2-Mini-GGUF
+- Versión v2 Balanced: https://huggingface.co/onemunanoyo/Inkling-2-Mini-Abliterated-Balanced-GGUF
+- Versión v2 Aggressive: https://huggingface.co/onemunanoyo/Inkling-2-Mini-Abliterated-Aggressive-GGUF
+- Dataset Semantic-Harmful: https://huggingface.co/datasets/heretic-org/Semantic-Harmful
+- Dataset Semantic-Harmless: https://huggingface.co/datasets/heretic-org/Semantic-Harmless
+- Checksums SHA-256: https://huggingface.co/onemunanoyo/Inkling-2-Mini-Abliterated-GGUF/blob/main/SHA256SUMS.txt
+- Clasificador de rechazos usado en la evaluación: https://huggingface.co/LiquidAI/d1-2B

@@ -2,115 +2,112 @@
 
 ## Resumen
 
-TinyBrainBot-100M-v5.1-Base es un modelo de lenguaje base de 100,1 millones de parámetros desarrollado por el usuario independiente nkthebass y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo entrenado desde cero ("from scratch") siguiendo la arquitectura estándar `LlamaForCausalLM` de Hugging Face Transformers, sin código personalizado, lo que garantiza compatibilidad directa con el ecosistema transformers, llama.cpp, Ollama, LM Studio y Jan.
+TinyBrainBot-100M-v5.1-Base es un modelo de lenguaje de 100 millones de parámetros entrenado desde cero por el desarrollador independiente nkthebass. Se trata de un transformer tipo Llama (`LlamaForCausalLM`) con arquitectura estándar, sin código personalizado, pensado como modelo base para generación de texto en inglés. Es la continuación de TinyBrainBot-100M-v3-Base, al que se le añadieron 4,6 mil millones de tokens adicionales de datos densos en conocimiento hasta alcanzar un total de 29,6 mil millones de tokens de entrenamiento.
 
-El modelo es la continuación de TinyBrainBot-100M-v3-Base, al que se le añadieron 4,56 mil millones de tokens adicionales de datos densos en conocimiento (Q&A, hechos, textbooks, Wikipedia, aritmética y ciencia de nivel escolar), alcanzando un total de 29,6 mil millones de tokens de entrenamiento. Su relevancia radica en que demuestra que un modelo de apenas 100M de parámetros, entrenado con una curación de datos cuidadosa y sin contaminación de benchmarks, puede superar a alternativas de tamaño similar (90M-140M) en tareas de razonamiento de sentido común y conocimiento elemental.
+El modelo destaca por su enfoque en eficiencia extrema: con solo 100,1 millones de parámetros y una ventana de contexto de 1.024 tokens, compite en la categoría de modelos pequeños (small language models) contra alternativas de 90-140 millones de parámetros en tareas de sentido común, razonamiento elemental y aritmética. Según los datos declarados por el autor, supera a su versión anterior en todas las tareas del Open SLM Leaderboard sin haber entrenado con datos de benchmark.
 
-Con una ventana de contexto de solo 1.024 tokens, un vocabulario de 32.000 tokens SentencePiece y arquitectura GQA (12 cabezas de consulta, 4 de clave/valor), el modelo está pensado como base para experimentación, fine-tuning ligero y despliegue en entornos con recursos muy limitados. Es un modelo base, no instructado: continúa texto, no mantiene conversaciones.
+Es relevante ahora porque demuestra que un modelo entrenado desde cero con un presupuesto reducido y una mezcla de datos cuidadosamente curada (web filtrada, libros de texto, Wikipedia, QA destilado y aritmética) puede alcanzar un índice de inteligencia de 26,07, por encima de modelos más grandes como MobileLLM-R1-140M-base (24,64) o BananaMind-2-Pro (24,96). Se distribuye con licencia Apache 2.0, en safetensors y con cuantizaciones GGUF listas para llama.cpp, LM Studio, Ollama y Jan.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (LlamaForCausalLM), GQA, SwiGLU, RMSNorm, RoPE |
+| Arquitectura | Transformer tipo Llama (`LlamaForCausalLM`): hidden 768, 12 capas, 12 cabezas de consulta de 64 con 4 cabezas KV (GQA), SwiGLU 2048, RMSNorm, RoPE |
 | Parametros totales | 100.092.672 (75,5M no-embedding + 24,6M embedding atado) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 1.024 tokens |
-| Tipos de cuantizacion | F16, Q8_0, Q4_K_M (GGUF publicados); cuantizaciones adicionales via llama.cpp |
-| Idiomas soportados | Ingles (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (transformers) y GGUF (llama.cpp, LM Studio, Ollama, Jan) |
+| Tipos de cuantizacion | F16 (201 MB), Q8_0 (107 MB), Q4_K_M (66 MB) en GGUF; pesos originales en safetensors |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue una arquitectura transformer decoder-only estándar de tipo Llama: 12 capas, dimensión oculta de 768, 12 cabezas de consulta de 64 dimensiones con 4 cabezas KV (GQA, ratio 3:1), FFN SwiGLU con dimensión intermedia 2.048, normalización RMSNorm y embeddings posicionales rotatorios (RoPE). El vocabulario es de 32.000 tokens SentencePiece y el embedding está atado a la capa de salida (weight tying), lo que explica la diferencia entre los 75,5M de parámetros no-embedding y los 100,1M totales.
+El modelo es un transformer decoder-only estándar de la familia Llama, sin modificaciones arquitectónicas. Usa 12 capas con dimensión oculta de 768, 12 cabezas de atención de 64 dimensiones con 4 cabezas KV (Grouped Query Attention), FFN SwiGLU con dimensión intermedia de 2048, normalización RMSNorm y embeddings rotatorios (RoPE). El vocabulario es de 32.000 tokens SentencePiece y el embedding de entrada está atado al de salida (tied embedding), lo que reduce el recuento efectivo de parámetros no-embedding a 75,5M. El contexto máximo es de 1.024 tokens.
 
-El entrenamiento acumula 29,6 mil millones de tokens en dos fases: los 25,06B del modelo v3-Base y 4,56B adicionales repartidos en cinco etapas, cada una con recalentamiento de la tasa de aprendizaje (pico entre 3e-4 y 6e-4) y decaimiento posterior. Los pesos publicados corresponden al paso final de la última etapa (step 113.000), no a una fusión de checkpoints. La mezcla de datos de continuación se compone aproximadamente de: 30% Q&A y hechos (GooAQ, FactBase-DCLM, finephrase FAQ, ELI5 y sets destilados propios), 23% web (DCLM-Ultra-1.1, ClimbMix, páginas FineWeb-Edu con puntuación 4-5), 21% textbooks (Cosmopedia, incluido SmolLM cosmopedia-v2, WikiHow), 11% Wikipedia (densa y Simple English), 6,5% sentido común y escritura, 4,5% aritmética (Orca-Math, UltraData-Math, drills propios), 3% ciencia de nivel escolar (solo en la etapa final, ~420.000 preguntas generadas por Ling-3.0-Flash con filtrado de contaminación contra ARC) y 1% narrativa (Gutenberg, BookCorpus). No se usaron datos de entrenamiento ni de test de los benchmarks evaluados.
+El entrenamiento total fue de 29,6 mil millones de tokens: los 25,06B de la versión v3 más 4,56B adicionales distribuidos en cinco etapas, cada una con recalentamiento de la tasa de aprendizaje (pico entre 3e-4 y 6e-4) y decaimiento posterior. Los pesos publicados corresponden al paso final de la última etapa (step 113.000), no a un merge. La mezcla de datos de continuación se compone aproximadamente de: 30% QA y hechos (conjuntos destilados propios, GooAQ, FactBase-DCLM, finephrase FAQ, ELI5), 23% web (DCLM-Ultra-1.1, ClimbMix, páginas FineWeb-Edu con puntuación 4-5), 21% libros de texto (Cosmopedia, incluido SmolLM cosmopedia-v2 y WikiHow), 11% Wikipedia (densa y Simple English), 6,5% sentido común, how-to y escritura, 4,5% aritmética (drills propios, Orca-Math, UltraData-Math), 3% QA de ciencia de primaria (solo en la etapa final) y 1% narrativa (Gutenberg, BookCorpus). La etapa final incluye unas 420.000 preguntas de ciencia de nivel escolar con respuestas cortas explicadas, generadas por Ling-3.0-Flash, sin opciones de respuesta y con eliminación de cualquier ítem que compartiera una frase de 8 palabras con una pregunta de ARC antes del entrenamiento. No se usaron datos de entrenamiento ni de test de benchmarks en la continuación.
 
 ## Capacidades
 
-- Generación de texto autoregresiva en inglés: continuación de texto, completado de frases y generación libre.
-- Razonamiento de sentido común básico y respuesta a preguntas de ciencia de nivel escolar (ARC-Easy 57,15 acc_norm).
-- Aritmética elemental: el modelo obtiene 47,00 en ArithMark-3.0 y 40,7 en un conjunto retenido de 1.380 problemas con temáticas y formulaciones no vistas.
-- Conocimiento factual denso procedente de Wikipedia, DCLM y FactBase-DCLM.
-- Capacidad multilingüe: únicamente inglés declarado; no se garantiza comportamiento en otros idiomas.
-- No soporta tool calling ni function calling de forma nativa (es un modelo base sin post-entrenamiento instructivo).
-- No soporta agentes ni razonamiento multi-paso estructurado (sin modo thinking, sin plantilla de chat).
-- No dispone de visión, audio ni otras modalidades.
+- Generación de texto en inglés: continuación de texto coherente dentro de su ventana de contexto de 1.024 tokens.
+- Razonamiento elemental y sentido común: resuelve tareas de elección múltiple de nivel escolar (ARC-Easy, ARC-Challenge, HellaSwag, PIQA).
+- Aritmética básica: entrenado explícitamente con drills aritméticos, Orca-Math y UltraData-Math; obtiene 47,00 en ArithMark-3.0 y 40,7 en 1.380 problemas aritméticos retenidos con temas y formulaciones no vistos.
+- Conocimiento factual denso: mezcla intensiva de Wikipedia, QA destilado y FactBase-DCLM.
+- Capacidades multilingües: limitadas al inglés (idioma declarado: en).
+- Tool calling / function calling: no disponible; es un modelo base sin post-entrenamiento de instrucciones.
+- Soporte de agentes y razonamiento multi-paso: no disponible; no ha recibido RLHF, DPO ni ajuste de instrucciones.
+- Modo thinking, visión o audio: no disponible.
+- Chat: no soportado; el propio autor indica que es un modelo base que continúa texto y no conversa.
 
 ## Casos de uso
 
-- Fine-tuning para clasificación o extracción de información: al ser un modelo base pequeño con licencia Apache 2.0, se puede ajustar con LoRA en una sola GPU consumer para tareas de etiquetado, análisis de sentimiento o extracción de entidades en inglés, partiendo de representaciones ya entrenadas con 29,6B tokens.
-- Generación de texto asistida en entornos embebidos: con cuantización Q4_K_M (66 MB) cabe en dispositivos con poca memoria (Raspberry Pi, móviles de gama alta, microcontroladores con suficiente RAM) y puede usarse para autocompletado o generación de descripciones cortas.
-- Prototipado educativo e investigación en modelos pequeños: sirve como referencia reproducible de entrenamiento desde cero con recetas de datos documentadas, útil para estudiar el efecto de la curación de datos (DCLM, FineWeb-Edu, Cosmopedia) en modelos de 100M.
-- Respuesta a preguntas de ciencia elemental: con 57,15 en ARC-Easy y 34,47 en ARC-Challenge, puede emplearse como base para un tutor de ciencia de primaria tras un fine-tuning ligero con instrucciones.
-- Generación de problemas aritméticos y drills: dado su rendimiento en ArithMark-3.0 (47,0), puede servir para generar variaciones de problemas de aritmética elemental en pipelines de aumento de datos.
-- Benchmarking de infraestructura de inferencia: su reducido tamaño (0,9 GB de repo, 66-201 MB en GGUF) lo convierte en un modelo de prueba ideal para validar despliegues de vLLM, llama.cpp, TGI u Ollama antes de pasar a modelos mayores.
-- Educación y demos de bajo coste: para talleres o charlas donde se quiera mostrar el ciclo completo de entrenamiento, cuantización y despliegue de un LLM sin necesidad de GPUs de datacenter.
+- Generación de texto y autocompletado en inglés: el modelo continúa texto de forma coherente dentro de 1.024 tokens, adecuado para completar párrafos, descripciones o explicaciones breves en aplicaciones de escritura asistida de bajo coste.
+- Prototipado y educación en entrenamiento de LLM: al ser un Llama estándar de 100M entrenado desde cero con documentación detallada de la mezcla de datos y las etapas, sirve como caso de estudio reproducible para cursos y experimentos de preentrenamiento.
+- Evaluación de pipelines de inferencia: sus cuantizaciones GGUF (F16, Q8_0, Q4_K_M) con `add_space_prefix=false` permiten verificar que la tokenización coincide exactamente con transformers y que la salida greedy es idéntica, útil para validar despliegues en llama.cpp, Ollama, LM Studio o Jan.
+- Respuesta a preguntas de ciencia escolar: la etapa final incluye 420.000 preguntas de ciencia de primaria con respuestas explicadas, lo que lo hace adecuado para generar respuestas cortas y explicadas en contextos educativos de nivel básico.
+- Práctica aritmética automatizada: con 47,00 en ArithMark-3.0 y 40,7 en problemas retenidos, puede emplearse para generar y resolver ejercicios aritméticos simples en herramientas de refuerzo educativo.
+- Filtrado y clasificación ligera por perplejidad: al ser un modelo pequeño y rápido, puede usarse como scorer para puntuar la fluidez de textos generados por otros sistemas o para filtrar datos en pipelines de curación.
+- Despliegue en dispositivos con recursos muy limitados: con 66 MB en Q4_K_M cabe en CPU, Raspberry Pi o móviles de gama media, permitiendo generación de texto offline en inglés sin GPU.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor (zero-shot, conjuntos de test completos, acc_norm; entre paréntesis la accuracy bruta cuando se publica). Los datos de otros modelos proceden del Open SLM Leaderboard.
+Resultados declarados por el autor (zero-shot, conjuntos de test completos, acc_norm; entre paréntesis la precisión bruta cuando se indica). La columna Int Index corresponde al Intelligence Index del Open SLM Leaderboard.
 
-| Modelo | Params | Int Index | HellaSwag | ARC-E | ARC-C | PIQA | ArithMark-3 |
+| Modelo | Parametros | Int Index | HellaSwag | ARC-E | ARC-C | PIQA | ArithMark-3 |
 |---|--:|--:|--:|--:|--:|--:|--:|
-| **TinyBrainBot-100M-v5.1-Base** | 100,1M | **26,07** | **34,98** | **57,15** | **34,47** | **67,52** | 47,00 |
-| *(accuracy bruta)* | | *24,87* | *30,83* | *62,92* | *30,29* | *67,57* | *47,00* |
+| TinyBrainBot-100M-v5.1-Base (este modelo) | 100,1M | 26,07 | 34,98 | 57,15 | 34,47 | 67,52 | 47,00 |
+| (precisión bruta) | | 24,87 | 30,83 | 62,92 | 30,29 | 67,57 | 47,00 |
 | TinyBrainBot-100M-v3-Base (anterior) | 100,1M | 20,97 | 32,62 | 54,67 | 30,12 | 66,21 | 37,40 |
 | void.1 | 90,2M | 24,38 | 39,5 | 49,3 | 29,4 | 67,2 | 43,7 |
 | MobileLLM-R1-140M-base | 140M | 24,64 | 33,8 | 49,9 | 24,7 | 63,2 | 65,7 |
 | BananaMind-2-Pro | 139M | 24,96 | 42,8 | 53,6 | 27,8 | 67,5 | 38,2 |
 | GPT-X2.5-135M | 135M | 25,17 | 40,6 | 51,8 | 29,2 | 69,4 | 38,4 |
 
-En el conjunto retenido de 1.380 problemas aritméticos con temáticas y formulaciones no vistas, el modelo obtiene 40,7 frente al 47,0 público de ArithMark-3.0.
+Las cifras de los modelos comparativos proceden del leaderboard citado por el autor. En aritmética retenida (1.380 problemas con temas y formulaciones no vistos), el modelo obtiene 40,7 frente al 47,0 público de ArithMark-3.0.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: ~0,4 GB en FP16 (200 MB de pesos + overhead de activaciones y KV cache), ~0,2 GB en Q8_0 y ~0,13 GB en Q4_K_M.
-- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM; funciona en RTX 3060/4060, GTX 1650, T4, A100, H100 sin aprovechar su capacidad.
-- Cabe en GPU consumer y en hardware integrado: iGPU Intel/AMD, Apple Silicon (M1 en adelante), Raspberry Pi 5 con 4 GB o más.
-- Opciones de despliegue: transformers (PyTorch), llama.cpp, Ollama, LM Studio, Jan, text-generation-inference (tag `text-generation-inference` declarado en el repo), vLLM.
-- Latencia y throughput: no disponibles en la información proporcionada. Por tamaño, se espera generación en tiempo real incluso en CPU, pero no se han publicado cifras.
-- Los GGUF publicados tienen `add_space_prefix=false` configurado para que la tokenización coincida exactamente con transformers y la salida greedy sea idéntica.
+- VRAM estimada para inferencia: aproximadamente 0,2 GB en F16, 0,1 GB en Q8_0 y 0,07 GB en Q4_K_M (tamaños de archivo GGUF declarados: 201 MB, 107 MB y 66 MB).
+- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente; no requiere A100, H100 ni RTX 4090. Funciona en GPUs integradas y en CPU.
+- Cabe en consumer GPU: sí, en cualquier GPU de consumo moderna e incluso en iGPUs y dispositivos móviles; también en Raspberry Pi con la cuantización Q4_K_M.
+- Opciones de despliegue: transformers (con `AutoModelForCausalLM` y `AutoTokenizer`), llama.cpp, LM Studio, Ollama, Jan; el tag `text-generation-inference` y `endpoints_compatible` sugiere compatibilidad con TGI y endpoints de Hugging Face.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Params | Contexto | Int Index | Licencia | Disponibilidad |
-|---|--:|--:|--:|---|---|
-| TinyBrainBot-100M-v5.1-Base | 100,1M | 1.024 | 26,07 | Apache 2.0 | Hugging Face (safetensors + GGUF) |
-| void.1 | 90,2M | no disponible | 24,38 | no disponible | Hugging Face |
-| MobileLLM-R1-140M-base | 140M | no disponible | 24,64 | no disponible | Hugging Face |
-| BananaMind-2-Pro | 139M | no disponible | 24,96 | no disponible | Hugging Face |
-| GPT-X2.5-135M | 135M | no disponible | 25,17 | no disponible | Hugging Face |
+| Modelo | Parametros | Contexto | Int Index | HellaSwag | ARC-E | ARC-C | PIQA | ArithMark-3 | Licencia |
+|---|--:|--:|--:|--:|--:|--:|--:|--:|---|
+| TinyBrainBot-100M-v5.1-Base | 100,1M | 1.024 | 26,07 | 34,98 | 57,15 | 34,47 | 67,52 | 47,00 | apache-2.0 |
+| MobileLLM-R1-140M-base | 140M | no disponible | 24,64 | 33,8 | 49,9 | 24,7 | 63,2 | 65,7 | no disponible |
+| BananaMind-2-Pro | 139M | no disponible | 24,96 | 42,8 | 53,6 | 27,8 | 67,5 | 38,2 | no disponible |
+| GPT-X2.5-135M | 135M | no disponible | 25,17 | 40,6 | 51,8 | 29,2 | 69,4 | 38,4 | no disponible |
 
-TinyBrainBot-100M-v5.1-Base lidera el Intelligence Index del Open SLM Leaderboard entre los modelos comparados pese a ser el de menor tamaño (100,1M frente a 135-140M de sus competidores). Destaca especialmente en ARC-Easy (57,15 frente a 49,3-53,6) y ARC-Challenge (34,47 frente a 24,7-29,4), mientras que MobileLLM-R1-140M-base lo supera claramente en aritmética (65,7 frente a 47,0) y BananaMind-2-Pro y GPT-X2.5-135M lo superan en HellaSwag (42,8 y 40,6 frente a 34,98).
+TinyBrainBot-100M-v5.1-Base lidera el Intelligence Index de la comparativa pese a tener menos parámetros, con ventaja clara en ARC-Easy (57,15 frente a 49,3-53,6 de los rivales) y en ARC-Challenge (34,47 frente a 24,7-29,4). Sin embargo, pierde en HellaSwag (34,98 frente a 39,5-42,8) y queda muy por detrás en aritmética frente a MobileLLM-R1-140M-base (47,00 frente a 65,7), aunque supera a BananaMind-2-Pro y GPT-X2.5-135M en esa tarea. La licencia Apache 2.0 es una ventaja frente a modelos cuyas condiciones no se detallan en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Modelo base, no instructado: no mantiene conversaciones ni sigue instrucciones; solo continúa texto. Para uso conversacional requiere fine-tuning instructivo o SFT.
-- Ventana de contexto muy corta (1.024 tokens): insuficiente para documentos largos, conversaciones multi-turno o tareas de RAG con contexto extenso.
-- Solo inglés declarado: el vocabulario SentencePiece de 32.000 tokens y los datos de entrenamiento están centrados en inglés; el rendimiento en castellano u otros idiomas no está garantizado.
-- Riesgo de alucinación elevado: con 100M de parámetros, la capacidad de memorizar hechos es limitada y es probable que genere afirmaciones plausibles pero falsas, especialmente en temas especializados.
-- Sesgos conocidos: no documentados explícitamente en la model card; al entrenar sobre FineWeb-Edu, DCLM, Wikipedia y Cosmopedia, hereda los sesgos presentes en esas fuentes (predominantemente anglosajonas y de registro formal).
-- Rendimiento débil en HellaSwag (34,98), por debajo de modelos similares: el razonamiento de sentido común sobre situaciones cotidianas es limitado.
-- Sin soporte de tool calling, function calling ni agentes: no apto para pipelines que requieran invocación estructurada de herramientas sin post-entrenamiento.
-- Licencia Apache 2.0: permite uso comercial, modificación y redistribución, pero el autor no ofrece garantías sobre el modelo (cláusula estándar de la licencia).
-- El modelo card está truncado en la sección "Limitations" ("A..."), por lo que podrían existir advertencias adicionales no visibles en la información disponible.
-- La fecha de creación del repo (2026-10-31) es posterior a la fecha actual de referencia habitual; conviene verificar la vigencia del modelo antes de integrarlo en producción.
+- Es un modelo base: continúa texto y no mantiene conversaciones ni sigue instrucciones; no debe usarse como asistente sin un post-entrenamiento adicional.
+- Ventana de contexto muy corta (1.024 tokens), insuficiente para documentos largos, conversaciones multi-turno extensas o tareas de recuperación aumentada con contexto amplio.
+- Solo soporta inglés; no se ha validado su comportamiento en castellano ni en otros idiomas.
+- Riesgo de alucinación alto: con 100M de parámetros y sin RLHF/DPO, puede generar afirmaciones factuales incorrectas con fluidez.
+- Sesgos conocidos: no disponibles en la información proporcionada; al entrenarse con web filtrada (FineWeb-Edu, DCLM, ClimbMix) y Wikipedia, es probable que herede sesgos de esas fuentes, pero no se documentan análisis específicos.
+- Rendimiento limitado en sentido común y generación abierta: HellaSwag de 34,98 está por debajo de modelos comparables de tamaño similar.
+- La aritmética decae fuera de distribución: 40,7 en problemas retenidos frente a 47,0 en ArithMark-3.0 público, una caída de más de 6 puntos.
+- Licencia Apache 2.0: permite uso comercial y modificación con atribución, pero el autor no ofrece garantías sobre el modelo; conviene revisar las condiciones de los datasets de entrenamiento si se redistribuye.
+- Los resultados de benchmarks son declarados por el autor y no están verificados (`verified: false` en el model-index); deben tomarse como indicativos.
+- Existe una versión posterior (TinyBrainBot-100M-v6-Base) que continúa el entrenamiento con 10B tokens adicionales; para nuevos proyectos conviene evaluar esa variante.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/nkthebass/tinybrainbot-100m-v5.1-base
-- Modelo anterior (v3-Base): https://huggingface.co/nkthebass/tinybrainbot-100m-v3-base
+- Versión anterior (v3-Base): https://huggingface.co/nkthebass/tinybrainbot-100m-v3-base
+- Versión posterior (v6-Base): https://huggingface.co/nkthebass/tinybrainbot-100m-v6-base
 - Open SLM Leaderboard: https://huggingface.co/spaces/AxiomicLabs/Open_SLM_Leaderboard
-- Dataset de matemáticas propio: https://huggingface.co/datasets/nkthebass/tinybrainbot-3m-math-data
+- Dataset de matemáticas del autor: https://huggingface.co/datasets/nkthebass/tinybrainbot-3m-math-data
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset SmolLM corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
 - Dataset Cosmopedia: https://huggingface.co/datasets/HuggingFaceTB/cosmopedia
 - Dataset DCLM-Ultra-1.1: https://huggingface.co/datasets/ArrowLabs/DCLM-Ultra-1.1
 - Dataset ClimbMix: https://huggingface.co/datasets/karpathy/climbmix-400b-shuffle
 - Dataset FactBase-DCLM: https://huggingface.co/datasets/AxiomicLabs/FactBase-DCLM
-- Dataset finephrase: https://huggingface.co/datasets/HuggingFaceFW/finephrase
-- Dataset Orca-Math: https://huggingface.co/datasets/microsoft/orca-math-word-problems-200k
-- Dataset UltraData-Math: https://huggingface.co/datasets/openbmb/UltraData-Math
-- Dataset ArithMark-3.0: https://huggingface.co/datasets/AxiomicLabs/Arithmark-3.0
+- Dataset Arithmark-3.0: https://huggingface.co/datasets/AxiomicLabs/Arithmark-3.0

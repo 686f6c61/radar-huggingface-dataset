@@ -2,51 +2,54 @@
 
 ## Resumen
 
-Audio8-TTS Realistic 0.6B es un modelo de síntesis de voz (text-to-speech) desarrollado por Edge0 y exportado por loom-ai-org al formato GGUF propio de loom.cpp. Se trata de un modelo DualAR (dos bloques autorregresivos) de 605.117.837 parámetros que convierte texto en tokens de códec neuronal, no en audio directamente: la segunda mitad del pipeline, el códec `audio8-tts-codec-loom`, transforma esos tokens en una onda de 44.1 kHz. Soporta clonación de voz zero-shot a partir de un clip de referencia y su transcripción exacta.
+Audio8-TTS Realistic 0.6B Loom es la exportación al motor loom.cpp del modelo de síntesis de voz Edge0/Audio8-TTS-Realistic-0.6b, un TTS zero-shot con clonación de voz que cubre 23 idiomas. El modelo original lo desarrolla Edge0 y esta versión la publica loom-ai-org como un único fichero GGUF autocontenido que incluye las topologías de grafo, el tokenizador y el script de control necesarios para ejecutarlo con la librería loom-py-rt. Con 605.102.732 parámetros (0,6B), se posiciona como una alternativa ligera para generación de habla en producción.
 
-El modelo cubre 23 idiomas (chino, inglés, japonés, coreano, alemán, francés, español, italiano, ruso, árabe, finés, hindi, indonesio, malayo, neerlandés, noruego, polaco, portugués, sueco, tailandés, turco, vietnamita y cantonés) y se distribuye bajo licencia Apache 2.0, heredada del modelo base. Su relevancia actual radica en que ofrece un pipeline TTS multilingüe con clonación de voz ejecutable en el runtime ligero loom.cpp, sin dependencia de PyTorch en inferencia (aunque sí para crear ficheros de voz).
+La particularidad arquitectónica es que no genera audio directamente: es un modelo DualAR (autorregresivo dual) de texto a códigos que emite diez flujos de tokens de códec, en disposición frame-major a 21,5 fotogramas por segundo. La síntesis final a 44,1 kHz la realiza un segundo modelo, el códec `audio8-tts-codec-loom`, publicado en un repositorio aparte. Esta separación permite reutilizar el códec entre distintos modelos de la familia y tratar los códigos como un intermedio útil para streaming o procesado.
 
-La exportación incluye un GGUF autodescriptivo que embebe las topologías de grafo, el tokenizador y el script controlador, lo que permite su uso con la librería `loom-py-rt` (versión 1.0.0rc20 o superior). El modelo emite 10 codebooks por fotograma a 21,5 fotogramas por segundo.
+Su relevancia actual radica en tres factores: licencia Apache 2.0 sin restricciones para uso comercial, soporte de clonación de voz zero-shot a partir de un clip de 3 a 15 segundos con su transcripción exacta, y un formato de pesos GGUF con cuantizaciones que facilitan el despliegue fuera de entornos PyTorch. El repo ocupa 7,3 GB e incluye varias precisiones.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DualAR (dos bloques autorregresivos), text-to-codes |
-| Parametros totales | 605.117.837 |
+| Arquitectura | DualAR (autorregresivo dual) de texto a codigos; familia 10 de loom.cpp |
+| Parametros totales | 605.102.732 (0,6B) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F32 y cuantizaciones derivadas (el repo incluye varias precisiones; no se detallan los tipos exactos en la informacion disponible) |
+| Tipos de cuantizacion | F32 y cuantizaciones adicionales derivadas (el repo incluye varias precisiones; no se detallan todas) |
 | Idiomas soportados | zh, en, ja, ko, de, fr, es, it, ru, ar, fi, hi, id, ms, nl, no, pl, pt, sv, th, tr, vi, yue (23) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (formato propio de loom.cpp) |
+| Formato de pesos | GGUF (autodescriptivo, con grafo, tokenizador y driver embebidos) |
+| Salida | Tokens de codec: frame-major, 10 codebooks, 21,5 frames/s |
+| Frecuencia de audio final | 44,1 kHz mono (via codec `audio8-tts-codec-loom`) |
+| Libreria de inferencia | loom-py-rt (PyPI), motor loom.cpp |
+| Tamano del repo | 7,3 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura DualAR, es decir, dos bloques autorregresivos encadenados que generan tokens de códec neuronal en lugar de muestras de audio. La salida es frame-major: una fila por fotograma, con 10 codebooks de ancho, a una tasa de 21,5 fotogramas por segundo. El texto de entrada determina el idioma de salida sin necesidad de un conmutador explícito de idioma.
+El modelo es un DualAR, es decir, un esquema autorregresivo con dos niveles de predicción que genera de forma secuencial diez flujos de tokens de códec por fotograma. La salida es frame-major: una fila por fotograma, diez codebooks de ancho, a una tasa de 21,5 fotogramas por segundo. El modelo detecta el idioma a partir del texto de entrada, sin necesidad de etiqueta explícita. La exportación a loom.cpp conserva los parámetros del checkpoint original en el fichero F32 y deriva de él las versiones cuantizadas; el GGUF resultante es autocontenido e incluye la topología del grafo y el driver de inferencia.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La model card original indica que el fichero F32 conserva los parámetros sin modificar y que el resto de precisiones se cuantizan a partir de él. La exportación a GGUF la realiza `loom-exporter` y el GGUF resultante es autodescriptivo: incluye sus propias topologías de grafo, tokenizador y script controlador.
-
-Una innovación destacable es el muestreo propio del modelo: por defecto muestrea con temperatura 0,7, top-k 50 y top-p 0,9, con un redibujado sensible a repeticiones. El muestreador mide top-k y top-p antes de aplicar la temperatura, lo que difiere del comportamiento de `transformers`. Con `temperature=0` la decodificación es voraz y reproduce exactamente la salida de `generate(do_sample=False)` del modelo original en F32, código por código, incluso con voz clonada.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La model card indica que el muestreo por defecto usa temperatura 0,7, top-k 50 y top-p 0,9, con una regla de redibujado sensible a repeticiones propia del modelo original (no la de transformers: top-k y top-p se miden antes de aplicar la temperatura). Con `temperature=0` se decodifica de forma greedy y se reproduce exactamente la salida de `generate(do_sample=False)` del modelo original en F32, código por código, incluso con voz clonada. La clonación se realiza mediante ficheros de voz generados una sola vez con loom-exporter, que ejecutan el encoder del códec en PyTorch y producen un GGUF de tokens de voz sellado con una huella de los cuantizadores del códec.
 
 ## Capacidades
 
-- Síntesis de voz a partir de texto en 23 idiomas, con detección automática del idioma a partir del texto de entrada.
-- Clonación de voz zero-shot: el modelo acepta un clip de referencia y su transcripción exacta, codificados como tokens de códec, para imitar la voz.
-- Generación de tokens de códec neuronal (10 codebooks, 21,5 fps) que un códec separado convierte en audio de 44,1 kHz mono.
-- Muestreo configurable con semilla (`seed=`) para reproducir tomas concretas, y decodificación voraz determinista con `temperature=0`.
-- Integración con el runtime loom.cpp mediante la API `model.text2codes.infer(...)` y acceso de bajo nivel a través de `model.infer(...)` y `model.driver_source`.
-- No soporta tool calling, function calling, agentes ni razonamiento multi-paso: es un modelo especializado exclusivamente en text-to-speech.
+- Síntesis de voz (text-to-speech) en 23 idiomas, incluidos chino, inglés, japonés, coreano, alemán, francés, español, italiano, ruso, árabe, finés, hindi, indonesio, malayo, neerlandés, noruego, polaco, portugués, sueco, tailandés, turco, vietnamita y cantonés.
+- Clonación de voz zero-shot a partir de un clip de referencia de 3 a 15 segundos junto con su transcripción exacta; el clip se introduce como tokens de códec.
+- Detección automática del idioma a partir del texto de entrada.
+- Salida en forma de tokens de códec (10 codebooks, 21,5 frames/s) que un códec separado convierte en audio a 44,1 kHz.
+- Inferencia en streaming: los códigos se emiten a medida que se muestrean y cada fragmento se decodifica al llegar (ADR-102 de loom.cpp), lo que permite reproducir audio en tiempo real.
+- Control de muestreo: semilla fija (`seed=`) para reproducibilidad, decodificación greedy con `temperature=0`, y acceso al driver subyacente mediante `model.infer(...)` para ajustar parámetros no expuestos por la API de alto nivel.
+- No soporta tool calling, function calling ni razonamiento multi-step: es un modelo puramente de texto a códigos de audio.
 
 ## Casos de uso
 
-- Audiolibros y narración automatizada: el modelo convierte texto largo en voz sintética en cualquiera de sus 23 idiomas, y el muestreo con semilla permite regenerar tomas consistentes para corregir fragmentos concretos sin rehacer toda la narración.
-- Clonación de voz para doblaje y localización: a partir de un clip limpio de 3 a 15 segundos y su transcripción exacta, se genera un fichero de voz reutilizable que permite producir el mismo locutor en varios idiomas, útil para doblar contenido sin grabar de nuevo.
-- Asistentes de voz embebidos: al ejecutarse sobre loom.cpp con pesos GGUF cuantizados, el modelo puede integrarse en aplicaciones de escritorio o servidores ligeros que necesiten TTS sin depender de PyTorch en tiempo de inferencia.
-- Generación de avisos y locuciones en sistemas de atención al cliente: el modelo produce voz natural en español, inglés, francés y otros idiomas europeos para mensajes pregrabados dinámicos, con control de semilla para mantener coherencia entre ejecuciones.
-- Prototipado de interfaces conversacionales: los desarrolladores pueden encadenar `text2codes.infer` con `codes2speech.infer` para obtener audio en un solo flujo de Python, lo que acelera la validación de productos de voz antes de invertir en infraestructura de producción.
-- Investigación en síntesis de voz multilingüe: al ser Apache 2.0 y estar disponible en GGUF, sirve como base reproducible para experimentos de clonación zero-shot y evaluación de códecs neuronales, con la ventaja de que los tokens de códec son un intermedio manipulable.
-- Accesibilidad: conversión de texto a voz para lectores de pantalla y aplicaciones de accesibilidad en 23 idiomas, con la posibilidad de clonar la voz del propio usuario a partir de una grabación corta.
+- Audiolibros y narración automatizada: el modelo convierte texto largo en habla en 23 idiomas y permite fijar una voz consistente mediante un fichero de voz clonado, de modo que capítulos completos mantienen el mismo timbre.
+- Asistentes de voz y agentes conversacionales: la salida en streaming (códigos emitidos y decodificados por fragmentos) permite iniciar la reproducción antes de completar la síntesis, lo que reduce la latencia percibida en respuestas de un chatbot.
+- Localización de vídeo y e-learning: con 23 idiomas y detección automática, un mismo guion puede sintetizarse en español, inglés, japonés o árabe sin cambiar de modelo, integrándose en pipelines de doblaje.
+- Clonación de voz para contenido corporativo: a partir de un clip de 3 a 15 segundos del locutor autorizado se genera un fichero de voz reutilizable, adecuado para formaciones internas o mensajes de marca con licencia Apache 2.0.
+- Generación de datos de audio sintético: los tokens de códec son un intermedio manipulable que puede alimentar pipelines de aumento de datos o entrenamiento de modelos de reconocimiento de voz, ya que el modelo no produce la onda directamente.
+- Integración en aplicaciones de escritorio o embebidas: el formato GGUF con cuantizaciones y la librería loom-py-rt permiten desplegar el modelo sin pila PyTorch en tiempo de inferencia (el encoder del códec solo se necesita para crear ficheros de voz).
+- Accesibilidad: lectura en voz alta de documentos y pantallas con selección de idioma automática y voces clonadas para usuarios que requieran un timbre concreto.
 
 ## Benchmarks y rendimiento
 
@@ -54,40 +57,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 605 millones de parámetros, el fichero F32 ocupa aproximadamente 2,4 GB en pesos; las versiones cuantizadas reducen esta cifra, aunque no se detallan los tipos exactos en la información disponible. El repositorio completo pesa 3,6 GB.
-- GPU recomendadas: no se especifican en la información disponible. Por tamaño, el modelo cabe en GPUs de consumo como RTX 3060, RTX 4060 o superiores en cuantización, y en A100/H100 para despliegues de mayor throughput.
-- Cabe en GPU de consumo: sí, previsiblemente en cualquier GPU con 4 GB o más de VRAM en cuantización; el fichero F32 requiere alrededor de 3 GB.
-- Opciones de despliegue: runtime loom.cpp mediante la librería `loom-py-rt` (PyPI, versión 1.0.0rc20 o superior). No se mencionan vLLM, llama.cpp, Ollama ni TGI en la información disponible.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma explícita. Con 605 millones de parámetros, el fichero F32 ocupa aproximadamente 2,4 GB solo en pesos; las cuantizaciones reducen esta cifra de forma proporcional. El repo completo ocupa 7,3 GB porque incluye varias precisiones.
+- GPU recomendadas: no disponible. Por tamaño, el modelo cabe en GPUs de consumo con suficiente VRAM para la precisión elegida, pero la model card no especifica modelos concretos.
+- Cabe en consumer GPU: previsiblemente sí en el caso de las cuantizaciones, dado el tamaño de 0,6B; no se detalla qué tarjetas exactas.
+- Opciones de despliegue: loom-py (paquete `loom-py-rt` en PyPI, con extra `[hub]`) sobre el motor loom.cpp. No se menciona soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles. La arquitectura de streaming permite solapar síntesis y reproducción, pero no se publican cifras de latencia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
-|---|---|---|---|---|---|
-| Audio8-TTS Realistic 0.6B (loom) | 605 M | no disponible | 23 | Apache 2.0 | GGUF |
-| Audio8-TTS-Realistic-0.6b (Edge0, original) | 0,6 B | no disponible | 23 | Apache 2.0 | safetensors (no confirmado) |
-| Audio8-TTS-Preview | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Audio8-TTS Realistic 0.6B Loom | 0,6B | no disponible | 23 | Apache 2.0 | GGUF (loom.cpp) | Exportación; requiere códec aparte para audio |
+| Edge0/Audio8-TTS-Realistic-0.6b | 0,6B | no disponible | 23 | Apache 2.0 (heredada) | safetensors (checkpoint original) | Modelo base; salida en tokens de códec |
+| Audio8-TTS-Preview | no disponible | no disponible | no disponible | no disponible | no disponible | Comparte el mismo fichero de códec según la model card |
 
-El modelo base de Edge0 comparte arquitectura, parámetros e idiomas con esta exportación; la diferencia es el formato (GGUF para loom.cpp frente a los pesos originales) y el runtime de inferencia. Audio8-TTS-Preview comparte el mismo fichero de códec según la model card, pero no se dispone de más datos para comparar. No se dispone de información sobre otros modelos TTS comparables en la documentación proporcionada.
+No se dispone de datos de benchmarks ni de especificaciones completas de los modelos alternativos en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y formato.
 
 ## Limitaciones y advertencias
 
-- El modelo no produce audio directamente: emite tokens de códec que requieren el códec `audio8-tts-codec-loom` para convertirse en onda de 44,1 kHz. Sin ese segundo modelo el pipeline está incompleto.
-- No existe un conmutador de idioma: el modelo infiere el idioma a partir del texto de entrada, lo que puede provocar resultados inesperados en textos mixtos o ambiguos.
-- El muestreo por defecto (temperatura 0,7, top-k 50, top-p 0,9) produce variabilidad entre ejecuciones; para reproducibilidad es necesario fijar `seed=` o usar `temperature=0`, que tiende a continuar más allá del final de la frase.
-- La clonación de voz requiere un fichero de voz generado con `loom-exporter` y PyTorch instalado, además del checkpoint original en disco; los repositorios de loom solo incluyen el decodificador.
-- Los ficheros de voz están vinculados al códec con el que se crearon mediante una huella de sus cuantizadores; loom rechaza ficheros creados con un códec distinto.
-- Riesgo de uso indebido en clonación de voz: la licencia del fichero de voz corresponde a la grabación, y el consentimiento del hablante es responsabilidad del usuario. Solo deben clonarse voces sobre las que se tenga derecho de uso.
-- Riesgo de alucinación y artefactos de pronunciación: no se documentan sesgos específicos, pero al ser un modelo generativo de voz puede producir entonaciones o pronunciaciones incorrectas en textos atípicos.
-- La licencia Apache 2.0 permite uso comercial, pero las restricciones sobre el contenido de las grabaciones clonadas y los derechos de imagen y voz del hablante deben evaluarse por separado.
-- La información disponible no detalla la longitud de contexto, los tipos exactos de cuantización ni los requisitos de hardware oficiales, lo que limita la planificación de despliegues en producción.
+- El modelo no produce audio: emite diez flujos de tokens de códec que deben pasar por `audio8-tts-codec-loom` para obtener la onda a 44,1 kHz. Usarlo de forma aislada no genera sonido.
+- El muestreo por defecto es estocástico (temperatura 0,7, top-k 50, top-p 0,9 con redibujado sensible a repeticiones), por lo que dos ejecuciones dan resultados distintos salvo que se fije `seed=` o se use `temperature=0`.
+- La clonación de voz exige un clip limpio de 3 a 15 segundos con su transcripción exacta; un clip ruidoso o una transcripción incorrecta degradan el resultado.
+- Los ficheros de voz están sellados con una huella de los cuantizadores del códec: un fichero generado con otro códec es rechazado.
+- La licencia del fichero de voz corresponde a la grabación original, no a la del modelo; la responsabilidad sobre el consentimiento del locutor recae en el usuario.
+- No se documentan sesgos conocidos, tasas de alucinación ni limitaciones específicas por idioma más allá de la lista de lenguas soportadas.
+- La longitud de contexto no está publicada, lo que dificulta planificar la síntesis de textos muy largos sin fragmentación.
+- El modelo base está identificado como `Edge0/Audio8-TTS-Realistic-Air` en las etiquetas de Hugging Face y como `Edge0/Audio8-TTS-Realistic-0.6b` en la model card; conviene verificar cuál es el checkpoint de referencia exacto antes de reproducir resultados.
+- No se especifican requisitos de hardware ni cifras de latencia, por lo que el dimensionamiento para producción debe validarse empíricamente.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/loom-ai-org/audio8-tts-realistic-0.6b-loom
 - Modelo base: https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b
-- Códec emparejado: https://huggingface.co/loom-ai-org/audio8-tts-codec-loom
-- Repositorio loom.cpp: https://github.com/loom-ai-org/loom.cpp
-- Repositorio loom-py: https://github.com/loom-ai-org/loom-py
-- Repositorio loom-exporter: https://github.com/loom-ai-org/loom-exporter
-- PyPI loom-py-rt: https://pypi.org/project/loom-py-rt/
+- Códec complementario: https://huggingface.co/loom-ai-org/audio8-tts-codec-loom
+- Motor loom.cpp: https://github.com/loom-ai-org/loom.cpp
+- Exportador loom-exporter: https://github.com/loom-ai-org/loom-exporter
+- API loom-py: https://github.com/loom-ai-org/loom-py

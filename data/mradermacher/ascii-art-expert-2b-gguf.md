@@ -2,49 +2,52 @@
 
 ## Resumen
 
-`mradermacher/ascii-art-expert-2b-GGUF` es una publicación de cuantizaciones estáticas en formato GGUF del modelo base `jokasia/ascii-art-expert-2b`, un modelo de 2.000 millones de parámetros especializado, a juzgar por su nombre, en la generación de arte ASCII. El autor de esta ficha, mradermacher, es un conocido publicador de cuantizaciones GGUF en Hugging Face que habitualmente convierte modelos de terceros a formatos ligeros para su uso con llama.cpp y derivados. No se trata, por tanto, de un modelo entrenado desde cero, sino de una redistribución optimizada del trabajo de jokasia.
+`mradermacher/ascii-art-expert-2b-GGUF` es una recopilación de cuantizaciones en formato GGUF del modelo base `jokasia/ascii-art-expert-2b`, un modelo de lenguaje especializado en la generación de arte ASCII. El trabajo de cuantización lo firma mradermacher, un perfil conocido en Hugging Face por publicar versiones GGUF de modelos de terceros para su uso con llama.cpp y herramientas compatibles. El modelo original, según su nombre, está orientado a la generación conversacional de arte ASCII y tiene aproximadamente 1.540 millones de parámetros (1.543.714.304 según los pesos en safetensors).
 
-La relevancia de esta publicación radica en que permite ejecutar un modelo especializado de 2B en hardware de consumo mediante cuantizaciones de 2 a 8 bits, algo imposible con los pesos originales en precisión completa. Sin embargo, la información pública disponible es extremadamente escasa: la model card no incluye arquitectura, licencia, idiomas, datos de entrenamiento ni resultados de benchmarks, y el repositorio registra cero descargas y cero likes en el momento de la consulta.
+La relevancia de esta ficha reside en que permite ejecutar un modelo de 2B especializado en una tarea muy concreta (arte ASCII) en hardware de consumo, gracias a las cuantizaciones que van desde 0,8 GB (Q2_K) hasta 3,2 GB (f16). Es un caso típico de modelo pequeño y de nicho, donde la cuantización agresiva tiene un impacto limitado en la calidad porque el dominio de salida es muy restringido y estructurado.
 
-Por todo ello, esta ficha documenta lo que se puede verificar (el conjunto de cuantizaciones ofrecidas y el origen del modelo) y marca explícitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluación de calidad, sesgos o idoneidad para producción requeriría pruebas empíricas por parte del usuario.
+No se dispone de información sobre la arquitectura interna del modelo base, el dataset de entrenamiento, la longitud de contexto ni la licencia. La model card del repositorio GGUF es puramente operativa (lista de cuantizaciones y notas de uso) y no incluye datos técnicos del modelo original. Todo lo que se indica a continuación se limita a lo que consta en la información proporcionada, marcando explícitamente lo que no está disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre indica un modelo de 2B parámetros; la arquitectura concreta no se especifica) |
-| Parametros totales | aproximadamente 2.000 millones (deducido del nombre del modelo, no confirmado en la model card) |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo base: jokasia/ascii-art-expert-2b) |
+| Parametros totales | 1.543.714.304 (≈1,54 B) |
+| Parametros activos | no disponible (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | inglés (tag `en` en la model card) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas generadas con `convert_type: hf`, `quantize_version: 2`, `output_tensor_quantised: 1`) |
+| Formato de pesos | GGUF (repo de cuantizaciones); el modelo base se distribuye presumiblemente en safetensors (tag `transformers`) |
+| Tamano del repo | 14,2 GB (incluye todas las cuantizaciones) |
+| Libreria declarada | transformers |
+| Pipeline | no disponible |
+| Etiquetas | conversational, endpoints_compatible |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo base `jokasia/ascii-art-expert-2b` en la información disponible. El nombre sugiere un transformer de aproximadamente 2.000 millones de parámetros afinado para la tarea de generar arte ASCII, pero no se confirma ni la familia arquitectónica (Llama, Qwen, Gemma, Mistral u otra), ni el número de tokens de entrenamiento, ni la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO.
+No se dispone de información sobre la arquitectura del modelo base `jokasia/ascii-art-expert-2b`. Por el tamaño (≈1,54 B de parámetros) y la librería declarada (`transformers`), se trata con alta probabilidad de un transformer decoder-only de escala pequeña, pero esto no está confirmado en la información proporcionada. Tampoco consta el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO.
 
-Lo único verificable técnicamente es el proceso de cuantización: los metadatos de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que señala una conversión desde pesos en formato Hugging Face (probablemente safetensors) a GGUF mediante la herramienta de cuantización de llama.cpp, con cuantizaciones estáticas de tipo K-quant e IQ4_XS. No se incluye proyección multimodal (`skip_mmproj` vacío), lo que sugiere un modelo exclusivamente de texto.
+Lo único verificable es el proceso de cuantización: mradermacher ha generado cuantizaciones estáticas (no ponderadas ni con imatrix) en formatos K-quant e IQ, con una versión f16 de referencia. La model card indica explícitamente que las cuantizaciones ponderadas/imatrix "no parecen estar disponibles" en el momento de la publicación, y que el autor no las ha planificado salvo petición en la sección de discusión de la comunidad. El proceso de conversión se realizó a partir de pesos en formato Hugging Face (`convert_type: hf`).
 
 ## Capacidades
 
-- Generación de texto especializada, presumiblemente orientada a la producción de arte ASCII a partir de instrucciones en lenguaje natural, según indica el nombre del modelo.
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes ni razonamiento multi-paso.
-- Capacidades multilingües: no disponibles.
-- No se documentan capacidades de visión, audio ni modo de razonamiento explícito (thinking mode).
-- Al ser un modelo de 2B parámetros, su capacidad de razonamiento general y conocimiento del mundo es previsiblemente limitada en comparación con modelos de mayor tamaño, aunque esto no está cuantificado en la información disponible.
+- Generación de texto conversacional en inglés, según la etiqueta `conversational` de la model card.
+- Generación de arte ASCII: es la especialidad declarada por el nombre del modelo base (`ascii-art-expert`), aunque no se detalla el formato exacto de las salidas ni los estilos soportados.
+- Compatible con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en infraestructuras de inferencia compatibles con la API de Hugging Face.
+- No consta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo "thinking".
+- Capacidades multilingües: solo se declara inglés; no hay información sobre otros idiomas.
 
 ## Casos de uso
 
-- Generación de arte ASCII en terminal: el modelo puede integrarse en herramientas CLI o scripts que conviertan descripciones textuales en diagramas o ilustraciones ASCII, aprovechando su especialización y su reducido tamaño para ejecutarse localmente.
-- Documentación técnica con diagramas ligeros: útil para insertar representaciones ASCII de arquitecturas, flujos o árboles de directorios en README y documentación donde no se desean imágenes binarias.
-- Prototipado rápido en local: al ofrecer cuantizaciones desde Q2_K hasta Q8_0, permite probar el modelo en portátiles o equipos sin GPU dedicada mediante llama.cpp u Ollama, sin depender de servicios en la nube.
-- Firma de correos y banners de texto: generación de logotipos o banners ASCII para aplicaciones de terminal, foros o sistemas con restricciones de formato.
-- Filtrado y generación en entornos con recursos limitados: su tamaño de 2B y las cuantizaciones de 4 bits permiten desplegarlo en dispositivos edge o contenedores con poca memoria, donde modelos mayores no caben.
-- Investigación sobre especialización de modelos pequeños: sirve como caso de estudio para analizar hasta qué punto un modelo de 2B puede especializarse en una tarea creativa concreta frente a modelos generalistas.
-- Educación y demos de cuantización: útil para ilustrar el impacto de distintas cuantizaciones (Q2_K frente a Q8_0) en la calidad de salida de una tarea concreta y medible subjetivamente.
+- Generación de arte ASCII para terminales y documentación: el modelo puede producir banners, logotipos y figuras en texto plano para incluir en READMEs, scripts de arranque o documentación técnica. Su tamaño reducido permite ejecutarlo localmente sin depender de servicios externos.
+- Herramientas de línea de comandos para desarrolladores: integración en un CLI que convierta descripciones textuales en arte ASCII, aprovechando las cuantizaciones Q4_K_M (1,1 GB) para mantener un binario ligero y una latencia baja en portátiles.
+- Generación de cabeceras y separadores para ficheros de código: un caso de uso acotado donde la creatividad del modelo importa menos que la consistencia del formato de salida, lo que encaja con un modelo pequeño especializado.
+- Prototipado de chatbots temáticos: al ser un modelo conversacional en inglés, puede servir como base para un asistente de nicho centrado en arte textual, desplegado con llama.cpp u Ollama en hardware modesto.
+- Educación y demostraciones de cuantización: el repositorio incluye doce niveles de cuantización del mismo modelo, lo que lo convierte en un caso práctico para comparar calidad frente a tamaño en un modelo de 2B, por ejemplo en talleres sobre GGUF y llama.cpp.
+- Pruebas de integración en pipelines de inferencia: la etiqueta `endpoints_compatible` permite usarlo como modelo de prueba en despliegues con TGI o endpoints compatibles, validando la infraestructura antes de pasar a modelos mayores.
+- Generación de contenido para juegos de texto o MUDs: la producción de arte ASCII bajo demanda encaja en interfaces de terminal y juegos basados en texto donde no se dispone de recursos gráficos.
 
 ## Benchmarks y rendimiento
 
@@ -52,42 +55,42 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, calculada a partir de 2B parámetros; no confirmada por el autor):
-  - Q8_0: en torno a 2,1-2,3 GB.
-  - Q6_K: en torno a 1,7-1,9 GB.
-  - Q5_K_M: en torno a 1,5-1,7 GB.
-  - Q4_K_M: en torno a 1,3-1,5 GB.
-  - Q3_K_M: en torno a 1,1-1,3 GB.
-  - Q2_K: en torno a 0,9-1,1 GB.
-  - x-f16: en torno a 4,0-4,5 GB.
-- GPU recomendadas: cualquier GPU consumer con 4 GB o más de VRAM puede ejecutar las cuantizaciones de 4-5 bits; una RTX 3060 de 12 GB o superior permite ejecutar incluso x-f16 con contexto amplio. Para servidores, A100 o H100 no son necesarias para este tamaño, pero funcionarían.
-- Cabe en GPU consumer: sí, en la práctica totalidad de GPU con 4 GB o más, e incluso en CPU con suficiente RAM.
-- Opciones de despliegue: llama.cpp, Ollama (mediante importación del GGUF), LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa para este tipo de modelos sin conversión adicional.
-- Latencia y throughput estimados: no disponibles; dependerán del hardware y de la cuantización elegida.
+- VRAM estimada para inferencia (según tamaño de cuantización):
+  - Q2_K: ~0,8 GB de pesos; en la práctica, alrededor de 1,5-2 GB de VRAM con overhead de contexto.
+  - Q4_K_M: ~1,1 GB de pesos; alrededor de 2-2,5 GB de VRAM con contexto moderado.
+  - Q8_0: ~1,7 GB de pesos; alrededor de 3 GB de VRAM.
+  - f16: ~3,2 GB de pesos; alrededor de 4-5 GB de VRAM.
+- GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM para cuantizaciones Q4/Q5 (GTX 1650, RTX 3050, RTX 4060, etc.). Para f16, una RTX 3060 de 12 GB o superior ofrece margen sobrado. En entornos de servidor, A100 o H100 no aportan ventaja significativa para un modelo de este tamaño.
+- Cabe en GPU consumer: sí, en todas las cuantizaciones, incluidas GPUs de gama baja con 4 GB o incluso en CPU con suficiente RAM.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. Para el modelo base en safetensors, transformers con PyTorch; también podría servirse con vLLM o TGI si el modelo base es compatible, aunque no se confirma en la información disponible.
+- Latencia y throughput: no disponibles. Por el tamaño (≈1,54 B), se espera una latencia baja en GPU consumer, pero no hay mediciones publicadas en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Especialización | Licencia | Formato |
-|---|---|---|---|---|---|
-| mradermacher/ascii-art-expert-2b-GGUF | ~2B | no disponible | Arte ASCII | no disponible | GGUF |
-| jokasia/ascii-art-expert-2b (original) | ~2B | no disponible | Arte ASCII | no disponible | Hugging Face (safetensors, presumiblemente) |
-| Modelos generalistas de 2B (p. ej. Qwen2.5-1.5B, Gemma-2-2B) | 1,5-2B | 32K-8K según modelo | Generalista | Apache 2.0 / Gemma license | safetensors, GGUF |
+No se dispone de información sobre modelos comparables especializados en arte ASCII ni sobre sus parámetros, contexto o rendimiento. Se indica "no disponible" para evitar datos no verificados.
 
-La comparación cuantitativa con alternativas no es posible porque no se han publicado benchmarks del modelo. Frente a modelos generalistas del mismo tamaño, la única ventaja documentada es la especialización declarada en el nombre; la desventaja es la ausencia total de documentación sobre licencia, idiomas y rendimiento, lo que dificulta su adopción en entornos profesionales.
+| Modelo | Parametros | Contexto | Licencia | Formato | Observaciones |
+|---|---|---|---|---|---|
+| ascii-art-expert-2b (este) | ≈1,54 B | no disponible | no disponible | GGUF, safetensors | Especializado en arte ASCII, solo inglés |
+| Alternativas | no disponible | no disponible | no disponible | no disponible | No se han identificado modelos comparables en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card sustantiva: no se documentan sesgos, datos de entrenamiento, licencia ni limitaciones, lo que impide evaluar riesgos.
-- Licencia no disponible: no se puede confirmar si el uso comercial está permitido; en ausencia de licencia explícita, debe asumirse que no hay permiso claro y contactar con el autor original antes de usarlo en producción.
-- Riesgo de alucinación: no cuantificado, pero esperable en un modelo de 2B sin documentación de alineación.
-- Idiomas soportados desconocidos: no se puede garantizar un rendimiento aceptable en castellano ni en ningún otro idioma.
-- Contexto desconocido: no se puede planificar su uso en conversaciones multi-turno o documentos largos sin pruebas empíricas.
-- Repositorio sin tracción: cero descargas y cero likes en el momento de la consulta, lo que reduce la probabilidad de que existan informes de terceros sobre su calidad.
-- Las cuantizaciones de 2 y 3 bits pueden degradar notablemente la calidad en tareas creativas como el arte ASCII, donde la estructura espacial de los caracteres es sensible a errores.
-- El modelo base podría tener restricciones de uso derivadas de la familia arquitectónica de la que proviene, desconocidas en la información disponible.
+- Licencia no disponible: no se puede confirmar si el uso comercial está permitido. Es imprescindible consultar la licencia del modelo base `jokasia/ascii-art-expert-2b` antes de cualquier despliegue en producción.
+- Idiomas: solo se declara inglés; el rendimiento en castellano u otros idiomas no está documentado y probablemente sea deficiente.
+- Contexto: se desconoce la longitud de contexto, lo que impide planificar conversaciones largas o entradas extensas con garantías.
+- Sesgos: no hay información sobre los datos de entrenamiento, por lo que no se pueden evaluar sesgos conocidos. Un modelo especializado en arte ASCII tiene un dominio de salida muy restringido, lo que reduce pero no elimina el riesgo de respuestas fuera de tono.
+- Alucinación: como cualquier modelo generativo, puede producir arte ASCII mal formado o incoherente, especialmente en cuantizaciones agresivas (Q2_K, Q3_K_S). La model card advierte que Q3_K_M es de "lower quality".
+- Cuantizaciones no ponderadas: el autor indica que no hay cuantizaciones con imatrix, lo que puede afectar a la calidad relativa de los formatos IQ frente a los K-quant equivalentes en tamaño.
+- Sin benchmarks: no hay métricas publicadas que permitan comparar la calidad del modelo base ni de las cuantizaciones.
+- Fecha de creación futura: la fecha indicada (2026-11-21) es posterior a la fecha actual de referencia, lo que sugiere un posible error en los metadatos del repositorio; conviene verificar la integridad de los ficheros antes de usarlos.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/ascii-art-expert-2b-GGUF
 - Modelo base: https://huggingface.co/jokasia/ascii-art-expert-2b
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
+- Página de descargas del autor: https://hf.tst.eu/model#ascii-art-expert-2b-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y peticiones de cuantización del autor: https://huggingface.co/mradermacher/model_requests
+- Gráfico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

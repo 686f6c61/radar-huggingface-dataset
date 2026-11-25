@@ -2,99 +2,98 @@
 
 ## Resumen
 
-Kimi K3.1 Pro es un modelo de pesos abiertos, nativamente multimodal y orientado a agentes, desarrollado por Moonshot AI. Se trata del modelo de clase 3T mas capaz de la compania hasta la fecha y el primero de la serie K3.1. Parte de Kimi K3 y se ha post-entrenado con aprendizaje por refuerzo conjunto a gran escala sobre cientos de dominios, con mejoras sustanciales en programacion, creacion 3D, investigacion financiera y precision factual.
+Kimi-K3.1-Pro-abliterated es un checkpoint derivado del modelo Kimi K3.1-Pro de Moonshot AI, publicado por el usuario yetalabs en Hugging Face. Se trata de una variante "abliterated": se ha extraído una dirección de rechazo a partir de las activaciones residuales del modelo base y se ha proyectado fuera de las matrices de escritura residual en una sola pasada. El enrutador (router), la torre de visión, el embedding y la cabeza del modelo de lenguaje permanecen sin cambios respecto al modelo base.
 
-La arquitectura es un transformer de mezcla de expertos (MoE) con 2,8 billones de parametros totales y 104.000 millones activos por token, 93 capas y una ventana de contexto de un millon de tokens. Combina 69 capas de atencion KDA con 24 capas de Gated DSA, e incorpora 896 expertos con 16 seleccionados por token mas 2 expertos compartidos.
+El modelo conserva la arquitectura y capacidades del Kimi K3.1-Pro original, con 2,78 billones de parámetros totales según los pesos en safetensors, lo que lo sitúa en la categoría de modelos de frontera de gran escala. El pipeline declarado es image-text-to-text, lo que indica capacidades multimodales de entrada de imagen y texto. El repositorio ocupa 1.561,4 GB y los pesos se distribuyen en formato safetensors de 8 bits.
 
-La version aqui descrita es `yetalabs/Kimi-K3.1-Pro-abliterated`, un derivado publicado por el usuario yetalabs que aplica una modificacion de tipo *abliteration* sobre los pesos originales de Moonshot AI. El repositorio pesa 1561,4 GB y se distribuye en formato safetensors con cuantizacion de 8 bits mediante compressed-tensors. No registra descargas ni likes en el momento de la consulta.
+La relevancia de esta ficha radica en que documenta una modificación de alineación (eliminación de la dirección de rechazo) sobre un modelo de gran escala, con datos de evaluación propios sobre comportamiento de rechazo, Terminal Bench 2.1 y GSM8K. No obstante, la información pública disponible es muy limitada: no se detallan idiomas soportados, datos de entrenamiento, contexto ni la mayoría de especificaciones técnicas del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE) transformer; 69 capas KDA + 24 capas Gated DSA |
-| Parametros totales | 2.780.110.363.392 (2,8T) |
-| Parametros activos | 104B |
-| Longitud de contexto | 1.000.000 tokens |
-| Tipos de cuantizacion | 8 bits (compressed-tensors); otros formatos no disponibles |
+| Arquitectura | no disponible (etiqueta `kimi_k31`, `custom_code`; transformer multimodal presumiblemente, sin confirmar) |
+| Parametros totales | 2.780.110.363.392 (2,78 billones) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | pesos en 8 bits (etiqueta `8-bit`); no se documentan otras variantes |
 | Idiomas soportados | no disponible |
-| Licencia | kimi-k3.1-pro (license: other) |
-| Formato de pesos | safetensors (compressed-tensors, 8-bit) |
+| Licencia | other (licencia personalizada, ver repositorio) |
+| Formato de pesos | safetensors (librería transformers, `custom_code`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer MoE con 93 capas, de las cuales 1 es densa. La composicion de atencion combina 69 capas KDA (Kimi Delta Attention) con 24 capas Gated DSA (DeepSeek Sparse Attention, segun la nomenclatura del autor), con una dimension oculta de atencion de 7168 y 96 cabezas. La rama DSA emplea 32 cabezas de indice con dimension 128 y un top-K de 2048, lo que sugiere un mecanismo de atencion dispersa sobre el contexto largo.
+No se dispone de información detallada sobre la arquitectura del modelo base Kimi K3.1-Pro en la documentación proporcionada. La etiqueta `kimi_k31` y el uso de `custom_code` indican que requiere código personalizado de transformers para su carga, y el pipeline image-text-to-text confirma que acepta entradas multimodales de imagen y texto. El número de parámetros totales (2,78 billones) se ha obtenido directamente de los tensores en safetensors.
 
-La capa MoE utiliza una dimension latente de 3584, 896 expertos con dimension oculta de 3072 por experto, 16 expertos seleccionados por token y 2 expertos compartidos. El vocabulario es de 160K tokens. El post-entrenamiento se realizo mediante aprendizaje por refuerzo conjunto a gran escala sobre cientos de dominios downstream, partiendo de Kimi K3. No se dispone de datos sobre el numero de tokens de preentrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO especificas.
-
-La variante *abliterated* de yetalabs modifica los pesos para eliminar o atenuar los mecanismos de rechazo aprendidos durante el alineamiento. No se dispone de documentacion tecnica sobre el metodo exacto aplicado ni sobre el impacto en capacidades.
+El proceso de "abliteration" descrito en la model card consiste en extraer una dirección de rechazo a partir de las activaciones residuales y proyectarla fuera de las matrices de escritura residual en una única pasada. Según el autor, el enrutador, la torre de visión, el embedding y la cabeza del modelo de lenguaje no se modifican respecto al modelo base. No se especifican datos de entrenamiento, número de tokens, composición del dataset ni si hubo RLHF o DPO en el modelo base ni en este checkpoint derivado.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento multi-paso con ventana de contexto de un millon de tokens.
-- Capacidades multimodales nativas de entrada imagen-texto (pipeline `image-text-to-text`).
-- Programacion y generacion de codigo, con mejoras declaradas por el autor en tareas de coding.
-- Creacion 3D, segun la model card del modelo base.
-- Investigacion financiera y analisis de documentos extensos.
-- Capacidades agenticas: el autor lo describe como modelo agentico, con soporte para razonamiento multi-paso.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible.
-- Modo thinking explicito: no disponible en la informacion proporcionada.
-- La variante abliterated elimina total o parcialmente los rechazos del modelo base, lo que afecta al comportamiento en consultas sensibles.
+- Generación de texto y razonamiento: heredadas del modelo base Kimi K3.1-Pro, sin datos específicos publicados.
+- Entrada multimodal imagen-texto: el pipeline declarado es image-text-to-text y la torre de visión se mantiene intacta.
+- Comportamiento sin rechazo: según el benchmark del autor, el modelo entrega respuesta en el 78,5% de los casos frente al 5,4% del base, con 0% de rechazos explícitos.
+- Razonamiento matemático: el autor reporta 40/40 correctos en GSM8K con evaluación por LLM judge.
+- Ejecución de tareas de terminal/agente: Terminal Bench 2.1 con 43/51 aprobados frente a 44/51 del base.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible.
+- Modo thinking, audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- Analisis de documentacion extensa: con un millon de tokens de contexto, el modelo puede procesar informes anuales completos, expedientes o bases de codigo enteras en una sola pasada sin necesidad de troceado ni recuperacion.
-- Generacion de codigo en produccion: integrable en pipelines de CI/CD para revision de cambios, generacion de tests y refactorizacion sobre repositorios grandes, aprovechando la ventana de contexto para incluir multiples ficheros relacionados.
-- Investigacion financiera asistida: extraccion y sintesis de datos de informes, comparacion de estados financieros y generacion de resumenes con trazabilidad sobre documentos largos.
-- Agentes autonomos multi-paso: orquestacion de tareas que requieren planificacion, uso de herramientas y verificacion sobre contextos largos, gracias a los 104B parametros activos y al entrenamiento por RL en dominios downstream.
-- Creacion y edicion 3D asistida: generacion de descripciones estructuradas y codigo de escenas 3D a partir de instrucciones e imagenes de referencia.
-- Procesamiento de imagenes y texto combinados: transcripcion de diagramas, extraccion de datos de capturas o analisis de documentacion escaneada junto con texto de contexto.
-- Atencion al cliente con contexto largo: gestion de conversaciones multi-turno con historial extenso e integracion de base de conocimiento completa en el contexto.
+- Investigación sobre alineación y rechazo: el checkpoint permite estudiar cómo la proyección de una dirección de rechazo afecta al comportamiento del modelo en dominios sensibles, comparando directamente con el modelo base mediante las trazas publicadas.
+- Evaluación de robustez de salvaguardas: útil para equipos de seguridad que quieran medir la eficacia de filtros externos cuando el propio modelo no rechaza, ya que el autor advierte que las moderaciones de CSAM, daño físico y actos ilegales no se han eliminado.
+- Automatización de tareas de terminal y agentes: con 43/51 en Terminal Bench 2.1, puede emplearse en pipelines de ejecución de comandos y resolución de tareas multi-paso en entornos controlados.
+- Procesamiento multimodal documental: al conservar la torre de visión, puede emplearse para tareas image-text-to-text como extracción de información de capturas o documentos escaneados, siempre que se valide su comportamiento.
+- Razonamiento matemático supervisado: los resultados de GSM8K (40/40) sugieren uso en resolución de problemas aritméticos dentro de pipelines con verificación posterior.
+- Investigación comparativa de checkpoints derivados: permite contrastar el efecto de la abliteración frente a otras variantes del mismo modelo base, como la de penclaw citada en la model card.
+- Generación de contenido sin fricción de rechazo en dominios creativos: para casos donde el rechazo del modelo base resulta un obstáculo (ficción, role-play), con la advertencia de que las salvaguardas legales no están garantizadas por el modelo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Datos publicados por el autor en la model card:
+
+| Benchmark | Base | Este modelo |
+|---|---|---|
+| Refusal benchmark (DELIVERED) | 28 (5,4%) | 408 (78,5%) |
+| Refusal benchmark (DEFLECTED) | 480 (92,3%) | 112 (21,5%) |
+| Refusal benchmark (REFUSED) | 12 (2,3%) | 0 (0,0%) |
+| Terminal Bench 2.1 (PASS) | 44/51 | 43/51 |
+| GSM8K (LLM judge, correct) | no disponible | 40/40 |
+
+No se han publicado en la información disponible resultados de MMLU, HumanEval ni otros benchmarks estándar para este modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio ocupa 1561,4 GB en cuantizacion de 8 bits. Se requiere un nodo multi-GPU con al menos 1,6 TB de memoria agregada solo para cargar los pesos; el estado KV para un millon de tokens anade una demanda adicional significativa no cuantificada en la informacion disponible.
-- GPU recomendadas: no disponible en la informacion proporcionada. Por el volumen de pesos, el despliegue requiere clústeres de GPU de centro de datos (familias H100/H200/B200 o equivalentes) en configuracion multi-nodo.
-- Compatibilidad con GPU de consumo: no cabe en ninguna GPU de consumo actual, ni siquiera con cuantizaciones agresivas, dado el tamano de 2,8T parametros.
-- Opciones de despliegue: transformers con `trust_remote_code` (el modelo declara `custom_code`); compatibilidad con vLLM, llama.cpp, Ollama o TGI no disponible en la informacion proporcionada.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada: con 2,78 billones de parámetros en 8 bits, el peso de los parámetros ronda los 2,78 TB; el repositorio completo ocupa 1.561,4 GB, por lo que la inferencia requiere clústeres multi-GPU de gran escala, no una sola GPU.
+- GPU recomendadas: no disponibles en la documentación; por el tamaño, se requiere hardware de centro de datos (clases H100/H200/B200 o equivalentes) en configuración multi-nodo.
+- Consumer GPU: no cabe en ninguna GPU de consumo (RTX 4090, 3090, etc.) en ninguna cuantización documentada.
+- Opciones de despliegue: transformers con `custom_code`; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Kimi K3.1 Pro (abliterated, yetalabs) | 2,8T | 104B | 1M tokens | kimi-k3.1-pro (other) | Hugging Face, 8-bit compressed-tensors |
-| Kimi K3.1 Pro (Moonshot AI) | 2,8T | 104B | 1M tokens | kimi-k3.1-pro (other) | Hugging Face, ModelScope, API Kimi |
-| Kimi K3 | no disponible | no disponible | no disponible | no disponible | Hugging Face (moonshotai) |
+| Modelo | Parámetros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Kimi-K3.1-Pro-abliterated (este) | 2,78 B (total) | no disponible | other | Checkpoint abliterated, 8 bits, multimodal |
+| moonshotai/Kimi-K3.1-Pro (base) | no disponible | no disponible | no disponible | Modelo original de Moonshot AI; 92,3% de deflexión en refusal benchmark |
+| Checkpoint abliterated de penclaw | no disponible | no disponible | no disponible | Citado en la model card con trazas comparativas en el repositorio |
 
-No se dispone de datos de rendimiento comparado entre estas variantes en la informacion proporcionada. La diferencia principal entre la version de yetalabs y la original de Moonshot AI es la modificacion abliterated y la cuantizacion a 8 bits; el resto de especificaciones arquitectonicas coinciden.
+No se dispone de datos suficientes para comparar con otras alternativas de la misma categoría (contexto, rendimiento, disponibilidad).
 
 ## Limitaciones y advertencias
 
-- La modificacion abliterated elimina o atenua los rechazos del modelo base, lo que incrementa el riesgo de generar contenido danino, ofensivo o inseguro en produccion. No se recomienda su uso en aplicaciones orientadas al publico sin filtros adicionales.
-- No se dispone de evaluacion del impacto de la abliteration sobre capacidades, precision factual ni tasas de alucinacion.
-- Riesgo de alucinacion inherente a los modelos de lenguaje de gran escala; no se han publicado metricas de factualidad para esta variante.
-- Idiomas soportados no documentados; el comportamiento fuera de los idiomas principales del modelo base es incierto.
-- La licencia `kimi-k3.1-pro` (license: other) no esta detallada en la informacion disponible; es imprescindible revisar el fichero LICENSE del repositorio original de Moonshot AI antes de cualquier uso comercial.
-- El modelo requiere infraestructura de centro de datos (mas de 1,5 TB de pesos en 8 bits); no es viable en hardware de consumo.
-- El repositorio no registra descargas ni likes, y el autor yetalabs no es el desarrollador original; no hay garantias de calidad ni de integridad de los pesos modificados.
-- La model card del derivado no documenta el proceso de abliteration ni los cambios exactos respecto al modelo base.
+- El autor advierte explícitamente que las moderaciones para CSAM, daño físico y otras acciones ilegales NO se han eliminado; el modelo no sustituye a filtros de seguridad externos.
+- Riesgo elevado de contenido dañino o inapropiado en producción: la eliminación de la dirección de rechazo reduce la deflexión del 92,3% al 21,5% según el propio benchmark del autor.
+- Licencia "other": es imprescindible revisar los términos del repositorio y los del modelo base antes de cualquier uso comercial.
+- Idiomas soportados no documentados; no se puede garantizar calidad multilingüe.
+- Longitud de contexto no disponible, lo que impide planificar cargas de trabajo con ventanas largas.
+- Riesgo de alucinación no evaluado en la información disponible.
+- Sesgos conocidos no documentados.
+- El modelo requiere `custom_code` y transformers, con un tamaño de repositorio de 1.561,4 GB; el despliegue es costoso y complejo.
+- Los benchmarks publicados son escasos y autoevaluados por el autor (LLM judge), sin comparación con estándares externos.
 
 ## Enlaces
 
-- Repositorio del derivado: https://huggingface.co/yetalabs/Kimi-K3.1-Pro-abliterated
-- Repositorio original: https://huggingface.co/moonshotai/Kimi-K3.1-Pro
-- Fichero de licencia original: https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/main/LICENSE
-- Blog tecnico: https://www.kimi.ai/blog/kimi-k3-1-pro
-- Documentacion de API: https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart
-- Web de Kimi: https://www.kimi.ai
-- Web de Moonshot AI: https://www.moonshot.ai
-- Organizacion en Hugging Face: https://huggingface.co/moonshotai
-- Organizacion en ModelScope: https://modelscope.cn/organization/moonshotai
-- X (Twitter): https://twitter.com/kimi_moonshot
-- Discord: https://discord.gg/TYU2fdJykW
+- Hugging Face: https://huggingface.co/yetalabs/Kimi-K3.1-Pro-abliterated
+- Trazas de benchmark: https://huggingface.co/yetalabs/Kimi-K3.1-Pro-abliterated/tree/main/benchmark
+- Modelo base: https://huggingface.co/moonshotai/Kimi-K3.1-Pro

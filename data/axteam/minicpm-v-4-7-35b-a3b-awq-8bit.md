@@ -2,99 +2,107 @@
 
 ## Resumen
 
-MiniCPM-V-4.7-35B-A3B-AWQ-8bit es una cuantización de 8 bits del modelo multimodal openbmb/MiniCPM-V-4.7-35B-A3B, publicada por el usuario axteam para servir el modelo con vLLM. No se trata de un modelo nuevo: es un derivado post-entrenamiento (PTQ, sin reentrenamiento) que aplica AWQ INT8 con pesos simétricos en grupos de 32 y activaciones en BF16 (esquema W8A16), almacenado en el formato `pack-quantized` de compressed-tensors. El objetivo es reducir la huella de memoria del modelo base para hacer viable su despliegue en infraestructura de inferencia estándar.
+MiniCPM-V-4.7-35B-A3B-AWQ-8bit es una cuantización INT8 (W8A16) del modelo multimodal openbmb/MiniCPM-V-4.7-35B-A3B, publicada por axteam. El modelo base es un transformer de tipo Mixture-of-Experts con backbone Qwen3.5-MoE, torre de visión y capacidad image-text-to-text, empaquetado en formato compressed-tensors `pack-quantized` para servir con vLLM. La cuantización es post-entrenamiento (sin reentrenamiento) y mantiene en BF16 la torre de visión, el merger visión-texto, los embeddings, la LM head, todas las RMSNorm y los routers del MoE.
 
-El modelo original pertenece a la familia MiniCPM-V 4.7 de OpenBMB, publicada el 12 de octubre de 2026 en dos variantes (1B y 35B-A3B). La variante grande es un transformer disperso de tipo MoE con backbone de lenguaje derivado de Qwen3.5-MoE, torre de visión y pipeline `image-text-to-text`, con aproximadamente 35.000 millones de parámetros totales y unos 3.000 millones activos por token (de ahí la denominación A3B). OpenBMB lo presenta como el primer modelo multimodal MoE open source diseñado para ejecutarse en dispositivo (iOS/Android) con un consumo del orden de 3 GB de memoria en su versión optimizada.
+El objetivo de esta versión es reducir el peso en disco a aproximadamente 38,9 GB (frente a los 116,8 GB del repositorio completo) y permitir el despliegue en GPUs con menor VRAM, conservando una fidelidad alta respecto al original BF16: perplejidad de 1,2086 frente a 1,2063 (+0,2 %) y una tasa de coincidencia top-1 del 97,7 % en un conjunto interno mixto inglés/coreano de 100 prompts. La licencia Apache-2.0 facilita el uso comercial.
 
-La relevancia de este repositorio es práctica: el original en BF16 ocupa del orden del doble que esta versión (36,2 GB en disco), por lo que la cuantización INT8 acerca el modelo a GPUs de 48 GB y a nodos con tensor parallelism sobre GPUs de consumo. La contrapartida es que solo se cuantiza el backbone del modelo de lenguaje (proyecciones de atención y MLP); la torre de visión, el merger visión-texto, los embeddings, el LM head y todas las RMSNorm se conservan en BF16, de modo que el ahorro es parcial. La licencia es Apache-2.0, heredada del modelo base.
+La ficha se basa en los datos publicados en la model card del repositorio de cuantización; los detalles de arquitectura y entrenamiento del modelo base no se detallan en la información disponible y se indican como no disponibles cuando corresponde.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE multimodal con torre de vision (backbone de lenguaje tipo Qwen3.5-MoE) |
-| Parametros totales | ~35B en el modelo base (denominacion 35B-A3B); el repo cuantizado declara 11.047.643.804 parametros en safetensors, cifra no coincidente que probablemente refleja un recuento parcial de tensores empaquetados y debe verificarse |
-| Parametros activos | ~3B (variante A3B del modelo base) |
+| Arquitectura | MoE (backbone Qwen3.5-MoE) con torre de visión y fusión multimodal; transformer con atención (incluida linear-attention) y proyecciones MoE/MLP |
+| Parametros totales | 11.047.643.804 (según safetensors del repositorio cuantizado); el nombre del modelo base indica 35B-A3B |
+| Parametros activos | no disponible (el nombre del modelo base sugiere ~3B activos, sin confirmar en la información proporcionada) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | AWQ INT8 W8A16 (pesos INT8 simetricos, grupo 32, activaciones BF16); misma autoria publica una variante NVFP4A16 |
-| Idiomas soportados | no disponible; la evaluacion del cuantizador se realizo en ingles y coreano |
+| Tipos de cuantizacion | AWQ INT8 W8A16: pesos INT8 simétricos, grupo 32, activaciones BF16, formato compressed-tensors `pack-quantized`; calibración con 256 muestras |
+| Idiomas soportados | no disponible (la evaluación interna usa un conjunto mixto inglés/coreano; se reportan KMMLU y HAE-RAE) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors con compressed-tensors `pack-quantized` |
-| Tamano en disco | ~36,2 GB (repo completo: 38,9 GB) |
-| Calibracion | 256 muestras |
-| Muestras en BF16 | Torre de vision, merger vision-texto, embeddings de tokens, LM head y todas las RMSNorm |
-| Libreria y runtime | transformers; soporte nativo en vLLM |
-| Pipeline | image-text-to-text |
+| Formato de pesos | safetensors con compressed-tensors `pack-quantized`; compatible con transformers y vLLM |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer multimodal disperso: un backbone de lenguaje MoE (aproximadamente 35B totales, 3B activos) acoplado a una torre de visión y a un módulo merger que proyecta las representaciones visuales al espacio del lenguaje. La model card del cuantizador identifica el backbone como Qwen3.5-MoE. No se dispone de informacion detallada sobre el numero de tokens de entrenamiento, la composicion del dataset ni las etapas de alineacion (RLHF/DPO) del modelo original en la informacion proporcionada.
+El modelo base es un transformer multimodal de tipo Mixture-of-Experts con backbone Qwen3.5-MoE, que combina una torre de visión con un modelo de lenguaje MoE. Incluye atención estándar y linear-attention, proyecciones MoE/MLP y routers (`mlp.gate` y `shared_expert_gate`) que seleccionan expertos. Esta versión es una cuantización post-entrenamiento AWQ INT8 (W8A16) sin reentrenamiento; el tokenizador y el `chat_template` son idénticos a los del original.
 
-Lo que si documenta esta ficha es el proceso de cuantizacion: cuantizacion post-entrenamiento sin reentrenamiento, con 256 muestras de calibracion, pesos INT8 simetricos agrupados de 32 en 32 y activaciones en BF16. Solo se cuantizan las proyecciones de atencion y MLP del backbone de lenguaje; los componentes sensibles a la precision (torre de vision, merger, embeddings, LM head, RMSNorm) permanecen en BF16. El tokenizer y el `chat_template` son identicos a los del original. El autor declara haber validado la calidad frente al BF16 mediante perplejidad y acuerdo top-1 en ingles y coreano, aunque no publica los valores numericos.
+La model card documenta una revisión del 2026-11-01 que recompensó los routers del MoE y el gate del experto compartido durante el suavizado AWQ, de modo que el reescalado del router coincide con el de las normas (diferencia mediana por canal inferior al 2 %) y los tokens se enrutan a los mismos expertos que en el original. También se excluyeron del suavizado los canales con ganancia de norma cero para preservar la precisión BF16 de las normas. Los pesos cuantizados cubren las proyecciones de atención y MoE/MLP; se mantienen en BF16 la torre de visión, el merger visión-texto, los embeddings, la LM head, las RMSNorm y los routers (aproximadamente el 5 % de los parámetros). No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF/DPO en el modelo base.
 
 ## Capacidades
 
-- Generacion de texto e imagen-a-texto: el pipeline declarado es `image-text-to-text`, con entrada conjunta de imagenes y prompts textuales.
-- Comprension de documentos y OCR: la familia MiniCPM-V se posiciona explicitamente en tareas de OCR y comprension de documentos; el modelo cuantizado hereda estas capacidades del base.
-- Razonamiento matematico y multimodal: la familia se presenta con capacidades destacadas en matematicas e interpretacion de diagramas y tablas.
-- Comprension de video: capacidades de video understanding atribuidas a la familia MiniCPM-V 4.7.
-- Multilingue: no hay listado oficial de idiomas en la informacion disponible; el cuantizador evalua en ingles y coreano.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Modo thinking o razonamiento multi-paso explicito: no disponible en la informacion proporcionada.
-- Capacidades de audio: no disponible en la informacion proporcionada.
+- Generación de texto y razonamiento en formato conversacional (pipeline image-text-to-text).
+- Comprensión de imágenes: la model card reporta una prueba con una imagen sintética (círculo rojo, cuadrado azul, texto "QWEN TEST 2026") descrita correctamente.
+- Razonamiento matemático y de sentido común, según los benchmarks reportados (GSM8K, ARC-Challenge, Winogrande).
+- Conocimiento multilingüe parcial: se reportan resultados en KMMLU (coreano) y HAE-RAE, además de inglés.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Modo thinking, audio u otras capacidades especiales: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Digitalizacion de documentos con OCR: el modelo recibe imagenes de facturas, formularios o escaneos y devuelve texto estructurado. La torre de vision se mantiene en BF16, por lo que la calidad de lectura no se degrada por la cuantizacion del backbone.
-- Extraccion de datos de tablas y graficos: util en pipelines de analisis documental donde hay que convertir imagenes de informes en series de datos o en JSON consumible por otro servicio.
-- Atencion al cliente multimodal: el usuario envia capturas de pantalla o fotos de un producto o error y el modelo interpreta la imagen junto con el historial de conversacion; el despliegue en vLLM permite batching continuo para varios agentes simultaneos.
-- Moderacion y enriquecimiento de contenido visual: clasificacion y descripcion automatica de imagenes subidas por usuarios, con salida textual lista para indexar o auditar.
-- Asistencia en entornos moviles o embebidos: OpenBMB posiciona la variante 35B-A3B para ejecucion en dispositivo con un consumo del orden de 3 GB; esta version INT8 es mas adecuada para servidor, pero la variante A3B del backbone mantiene un coste por token bajo en despliegues edge con hardware dedicado.
-- Prototipado e investigacion en vision-lenguaje: servir el modelo con `vllm serve` en una GPU de 48-80 GB permite evaluar el comportamiento del modelo base a un coste de memoria reducido, sin reentrenar.
-- Generacion de descripciones accesibles: alt-text automatico para catalogos de imagenes, con control del estilo mediante prompting.
+- Servicio de inferencia multimodal con vLLM: el checkpoint está empaquetado en compressed-tensors y la arquitectura está soportada en vLLM ≥ 0.32.0, lo que permite desplegar un endpoint image-text-to-text con pesos INT8 y menor huella de memoria.
+- Descripción y análisis de imágenes en pipelines de documentación: el modelo puede recibir una imagen y generar una descripción textual; útil para catalogar capturas, diagramas o material gráfico.
+- Asistente conversacional con contexto visual: al ser un modelo conversacional image-text-to-text, puede gestionar intercambios multi-turno en los que se adjuntan imágenes.
+- Evaluación de calidad de cuantización: el repositorio incluye métricas de fidelidad (perplejidad y coincidencia top-1) que sirven para comparar variantes INT8, FP8, NVFP4 y AWQ-4bit antes de elegir un despliegue.
+- Razonamiento matemático y de sentido común en producción: los resultados en GSM8K (89,23) y ARC-Challenge (61,18) permiten usar el modelo en tareas de resolución de problemas con requisitos moderados de precisión.
+- Procesamiento de texto multilingüe inglés/coreano: los resultados en KMMLU (64,78) y HAE-RAE (73,42) respaldan su uso en tareas de comprensión en esos idiomas.
+- Despliegue en GPUs Turing o superiores: al ser cuantización weight-only INT8 sin necesidad de tensor cores especiales, puede ejecutarse en hardware NVIDIA sm75 o más reciente, ampliando las opciones de infraestructura.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Resultados medidos con lm-evaluation-harness sobre vLLM, greedy, prompts de estilo completion sin chat template. MMLU corresponde a la variante generativa (`mmlu_generative`), no directamente comparable con MMLU por log-likelihood.
 
-La model card del cuantizador menciona una validacion de calidad frente al original BF16 mediante perplejidad y acuerdo top-1 en ingles y coreano, pero no incluye cifras. Las referencias web a comparaciones de la familia MiniCPM-V 4.7 con Qwen3.6 y Gemma-4 no aportan numeros en la informacion recuperada. No se dispone de datos de latencia ni de throughput para esta cuantizacion concreta.
+| Benchmark | BF16 (original) | FP8-dynamic | AWQ-8bit (este repo) | NVFP4A16 | NVFP4 | AWQ-4bit |
+|---|---|---|---|---|---|---|
+| MMLU (5-shot, generative) | 85,65 | 85,61 (100,0 %) | 85,71 (100,1 %) | 85,76 (100,1 %) | 85,41 (99,7 %) | 85,31 (99,6 %) |
+| GSM8K (5-shot, strict) | 90,14 | 89,69 (99,5 %) | 89,23 (99,0 %) | 90,75 (100,7 %) | 90,22 (100,1 %) | 90,52 (100,4 %) |
+| ARC-Challenge (0-shot) | 60,92 | 61,01 (100,1 %) | 61,18 (100,4 %) | 60,84 (99,9 %) | 61,09 (100,3 %) | 62,03 (101,8 %) |
+| Winogrande (5-shot) | 80,11 | 79,87 (99,7 %) | 78,93 (98,5 %) | 79,32 (99,0 %) | 77,11 (96,3 %) | 79,56 (99,3 %) |
+| KMMLU (5-shot, direct) | 64,95 | 64,77 (99,7 %) | 64,78 (99,7 %) | 64,65 (99,5 %) | 64,38 (99,1 %) | 64,67 (99,6 %) |
+| HAE-RAE (0-shot) | 73,14 | 73,69 (100,8 %) | 73,42 (100,4 %) | 73,51 (100,5 %) | 74,06 (101,3 %) | 72,69 (99,4 %) |
+| **Promedio** | **75,82** | **75,77 (99,9 %)** | **75,54 (99,6 %)** | **75,80 (100,0 %)** | **75,38 (99,4 %)** | **75,80 (100,0 %)** |
+
+Fidelidad respecto al original BF16 en un conjunto interno mixto inglés/coreano de 100 prompts, medido con vLLM 0.32 el 2026-11-01:
+
+| Métrica | Este modelo | Original BF16 |
+|---|---|---|
+| Perplejidad (menor = más cercano) | 1,2086 | 1,2063 (+0,2 %) |
+| Coincidencia top-1 del siguiente token | 97,7 % | 98,1 % |
 
 ## Requisitos de hardware
 
-- VRAM para los pesos: ~36,2 GB en INT8 W8A16. Sumando overhead del runtime, cache KV y procesamiento de imagenes, se recomienda reservar 48 GB como minimo.
-- GPU recomendadas: A100 80 GB, H100 80 GB, L40S 48 GB, RTX 6000 Ada 48 GB. En A100 40 GB el modelo probablemente no entra con cache KV para contextos largos.
-- GPU de consumo: no cabe en una unica RTX 4090 (24 GB). Seria necesario tensor parallelism sobre 2x RTX 4090 (48 GB agregados) o 2x RTX 3090.
-- Opciones de despliegue: vLLM es el runtime objetivo declarado (`vllm serve axteam/MiniCPM-V-4.7-35B-A3B-AWQ-8bit`), con soporte de compressed-tensors. Tambien es cargable con transformers. No se documenta soporte de llama.cpp, Ollama ni TGI para este formato `pack-quantized`.
-- Latencia y throughput: no disponible. Como referencia cualitativa, el backbone A3B activa ~3B parametros por token, lo que reduce el coste computacional por token frente a un modelo denso de 35B.
-- Alternativa de menor huella: el mismo autor publica una variante NVFP4A16, orientada a precision de 4 bits en pesos con activaciones de 16 bits.
+- VRAM estimada para inferencia: el peso en disco es de aproximadamente 38,9 GB; se requiere VRAM suficiente para los pesos más las activaciones BF16 y la caché KV, no cuantificada en esta build.
+- GPUs recomendadas: NVIDIA Turing (sm75) o superior. Al ser cuantización weight-only INT8, no requiere tensor cores especiales; V100 (sm70) queda fuera del soporte indicado.
+- Cabe en GPU consumer: no disponible de forma explícita; por el tamaño de pesos (~38,9 GB) no cabe en GPUs consumer de 24 GB sin técnicas adicionales, y la información no detalla opciones de offload.
+- Despliegue: vLLM ≥ 0.32.0 (probado con 0.32.0); requiere Python 3.11–3.14, torch 2.13 (build CUDA 13.0), transformers ≥ 5.16.1,< 5.20 y compressed-tensors 0.17.0 (fijado por vLLM; no actualizar por separado). Para este modelo, vLLM 0.32 necesita transformers 5.18.x o 5.19.x (5.17 no conoce `minicpmv4_7`); las ejecuciones documentadas usaron transformers 5.21.0 instalado con `--no-deps`.
+- Latencia y throughput: no disponible.
+- Nota de compatibilidad: los benchmarks y métricas de fidelidad son solo de texto; la entrada de imagen falla en esa configuración (procesador de imagen de vLLM frente a transformers 5.21). La única prueba con imagen requirió rellenar el argumento `downsample_mode` del procesador con su valor por defecto.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Precision de pesos | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| axteam/MiniCPM-V-4.7-35B-A3B-AWQ-8bit | ~35B totales / ~3B activos (recuento safetensors: 11,05B) | INT8 W8A16 | no disponible | Apache-2.0 | safetensors (compressed-tensors) | Version analizada; 36,2 GB en disco; vision en BF16 |
-| openbmb/MiniCPM-V-4.7-35B-A3B | ~35B totales / ~3B activos | BF16 | no disponible | Apache-2.0 | safetensors | Original de OpenBMB; referencia de calidad; mayor huella de memoria |
-| axteam/MiniCPM-V-4.7-35B-A3B-NVFP4A16 | ~35B totales / ~3B activos | FP4 en pesos, A16 | no disponible | Apache-2.0 (heredada) | no disponible | Misma autoria, cuantizacion de 4 bits; tamano en disco no disponible |
-| Qwen3.6 / Gemma-4 | no disponible | no disponible | no disponible | no disponible | no disponible | Citados como referencias de comparacion en la web, sin datos numericos en la informacion recuperada |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| MiniCPM-V-4.7-35B-A3B-AWQ-8bit (este) | 11.047.643.804 (safetensors); nombre base 35B-A3B | no disponible | compressed-tensors `pack-quantized`, INT8 W8A16 | Apache-2.0 | Hugging Face, vLLM ≥ 0.32.0 |
+| openbmb/MiniCPM-V-4.7-35B-A3B (BF16) | nombre base 35B-A3B | no disponible | safetensors BF16 | Apache-2.0 | Hugging Face |
+| Variante FP8-dynamic del mismo modelo base | no disponible | no disponible | FP8 | no disponible | referenciada en la model card |
+| Variante AWQ-4bit del mismo modelo base | no disponible | no disponible | AWQ INT4 | no disponible | referenciada en la model card |
+
+Las variantes FP8-dynamic, NVFP4A16, NVFP4 y AWQ-4bit se comparan en la tabla de benchmarks; sus repositorios no se detallan en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion degrada ligeramente el backbone de lenguaje. El autor reporta verificacion por perplejidad y top-1 frente a BF16, pero no publica los valores, por lo que el impacto real no es auditable sin evaluacion propia.
-- Solo se cuantizan atención y MLP del backbone: los pesos en BF16 (visión, merger, embeddings, LM head, normas) limitan el ahorro de memoria a aproximadamente la mitad del BF16 y no a un cuarto.
-- El recuento de parametros de safetensors (11.047.643.804) no concuerda con la denominacion 35B-A3B del modelo base. Conviene verificar la integridad del repositorio antes de usarlo en produccion.
-- Repositorio de terceros: 0 descargas y 0 likes en el momento de la consulta. No es una publicacion oficial de OpenBMB; para produccion conviene comparar con el original y con otras cuantizaciones.
-- La longitud de contexto no esta documentada en la informacion disponible, lo que impide planificar cargas de trabajo con documentos largos o video extenso.
-- No hay listado oficial de idiomas soportados. La evaluacion del cuantizador cubre ingles y coreano; el rendimiento en castellano no esta verificado.
-- Riesgo de alucinacion inherente a los modelos vision-lenguaje: las descripciones de imagenes y el OCR pueden inventar texto o cifras, especialmente en documentos de baja calidad. Requiere validacion posterior en flujos criticos.
-- Sin datos publicados sobre tool calling ni razonamiento multi-paso explicito; no asumir soporte de agentes sin probarlo.
-- Licencia Apache-2.0: permite uso comercial y modificacion, con obligacion de conservar avisos de copyright y atribucion a OpenBMB por los pesos y tokenizer originales.
-- El formato `pack-quantized` de compressed-tensors exige versiones recientes de vLLM y de la libreria compressed-tensors; versiones antiguas fallaran al cargar.
+- La cuantización introduce una pérdida pequeña pero medible: perplejidad +0,2 % y coincidencia top-1 del 97,7 % frente al 98,1 % del BF16 original.
+- Los benchmarks y las métricas de fidelidad son solo de texto; la entrada de imagen no funciona en la configuración documentada (vLLM 0.32 con transformers 5.21) y solo se validó una prueba con imagen rellenando manualmente un argumento del procesador.
+- La revisión del 2026-11-01 corrigió problemas de las subidas anteriores (routers no compensados y pérdida de precisión en normas de las capas 4–5). Si se descargó el repositorio antes de esa fecha (revisión `f66eadb`), debe descargarse de nuevo.
+- Dependencias muy específicas: vLLM 0.32.0, transformers 5.18.x/5.19.x, compressed-tensors 0.17.0 fijado y torch 2.13 con CUDA 13.0; actualizar compressed-tensors por separado puede romper la carga del checkpoint.
+- No hay información sobre sesgos, riesgo de alucinación, límites de contexto ni idiomas soportados más allá de los evaluados (inglés y coreano).
+- La licencia Apache-2.0 permite uso comercial, pero debe verificarse el cumplimiento de las condiciones de los componentes del modelo base.
+- El tamaño de pesos (~38,9 GB) limita el despliegue a GPUs de gama alta; no se documentan opciones de cuantización adicional para GPUs consumer.
 
 ## Enlaces
 
-- Modelo cuantizado en Hugging Face: https://huggingface.co/axteam/MiniCPM-V-4.7-35B-A3B-AWQ-8bit
+- Repositorio de la cuantización: https://huggingface.co/axteam/MiniCPM-V-4.7-35B-A3B-AWQ-8bit
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
-- Variante NVFP4A16 del mismo autor: https://huggingface.co/axteam/MiniCPM-V-4.7-35B-A3B-NVFP4A16
-- Pagina oficial de MiniCPM-V 4.7 en OpenBMB: https://openbmb.cn/en/model/minicpm-v-4-7
-- Nota de prensa de ModelBest y OpenBMB: https://www.prnewswire.com/news-releases/modelbest-and-openbmb-launch-minicpm-v-4-7--bringing-a-35b-multimodal-moe-model-to-phones-and-tablets-with-about-3-gb-of-memory-302909881.html
-- Analisis de la familia MiniCPM-V 4.7: https://ai-tldr.dev/models/minicpm-v-4-7/
+- lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness
+- vLLM: https://github.com/vllm-project/vllm
+- compressed-tensors: https://github.com/neuralmagic/compressed-tensors
+- Paper, blog, repositorio o demo adicionales: no disponible en la información proporcionada.

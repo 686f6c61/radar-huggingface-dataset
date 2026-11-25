@@ -2,95 +2,104 @@
 
 ## Resumen
 
-Whittle-Next-26B-A3B es un modelo de lenguaje experimental de tipo mixture-of-experts (MoE) desarrollado por logic65 como parte de una línea de investigación sobre compresión y destilación de modelos. Se presenta como un "research preview" que sirve de precursor a una versión final de 27B, y su principal interés radica en que implementa la arquitectura `qwen4_exp` (formato Qwen3.8-Flash-Next) sobre un cuerpo derivado de Qwen3.6-35B-A3B, ejecutándose sin modificaciones en llama.cpp estándar.
+Whittle-Next-26B-A3B es un modelo de lenguaje de tipo mixtura de expertos (MoE) desarrollado por el investigador independiente logic65. Se trata de un derivado de Qwen3.6-35B-A3B podado y reconvertido al formato de arquitectura `qwen4_exp`, que el autor describe como un punto intermedio entre las generaciones Qwen3.6 y Qwen3.8-Flash-Next. El modelo tiene 26.553.382.016 parametros totales (25,1B del cuerpo mas 1,0B de una tabla de memoria n-grama) y aproximadamente 3B parametros activos por token, lo que lo situa en la categoria de MoE disperso de bajo coste de inferencia.
 
-El modelo tiene 26.1B parámetros totales (25.1B del cuerpo pruned más 1.0B de una tabla de memoria n-gram) y activa aproximadamente 3B parámetros por token. Incorpora innovaciones técnicas como hyper-connections de cuatro flujos residuales, puertas sigmoide en lugar de silu, y una memoria hashed de n-gramas que se puede ampliar sin reentrenar. Su relevancia actual reside en que demuestra la viabilidad de combinar poda, destilación online y arquitecturas experimentales en un formato servible con herramientas estándar.
+El interes tecnico del modelo reside en su receta de construccion: poda de expertos enrutados de 256 a 180 por capa, autoconsulta (self-distillation) para recuperar calidad, conversion progresiva de la puerta silu a sigmoid en las capas GDN (gated delta net), retrofit de hyper-connections de cuatro flujos residuales, una memoria n-grama hasheada de 1,0B parametros leida antes de la capa 2, y destilacion online desde Qwen3.8-27B con KL directa sobre corpus y KL inversa sobre respuestas muestreadas por el propio estudiante.
 
-La licencia es Apache-2.0, lo que permite uso comercial y modificación, aunque al ser un modelo de investigación con una memoria n-gram entrenada solo durante una hora, sus capacidades están limitadas respecto a modelos de producción consolidados.
+Es relevante ahora porque demuestra un camino reproducible para portar un modelo existente a un formato de arquitectura nuevo (el `qwen4_exp` de la familia Qwen4-Next) manteniendo compatibilidad con llama.cpp sin parches ni `--override-kv`. El autor lo publica explicitamente como research preview superado por su sucesor Whittle-Next-27B-A3B, y advierte que no es un modelo de proposito general terminado sino un punto de partida para quien quiera construir sobre esa arquitectura.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `qwen4_exp` (MoE con gated-delta-net, hyper-connections, memoria n-gram) |
-| Parametros totales | 26.553.382.016 (26.1B: 25.1B cuerpo + 1.0B tabla n-gram) |
-| Parametros activos | ~3B por token (las búsquedas en tabla n-gram no activan parámetros adicionales) |
-| Longitud de contexto | no disponible (el README recomienda `-c 8192` en ejecución) |
-| Tipos de cuantizacion | Q8_0 (GGUF) |
-| Idiomas soportados | no disponible (hereda el tokenizador de Qwen3.6, presumiblemente multilingüe) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF, safetensors |
+| Arquitectura | `qwen4_exp` (MoE transformer con puerta sigmoid GDN, hyper-connections de 4 flujos y memoria n-grama hasheada) |
+| Parametros totales | 26.553.382.016 (25,1B cuerpo + 1,0B tabla n-grama) |
+| Parametros activos | ~3B por token (las consultas a la tabla no computan) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q8_0 (publicado y evaluado); GGUF compatible con llama.cpp |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors y GGUF (Q8_0) |
 
 ## Arquitectura y entrenamiento
 
-Whittle-Next-26B-A3B se construye a partir de Qwen3.6-35B-A3B mediante un proceso de poda que reduce los expertos enrutados de 256 a 180 por capa, pasando de 34.7B a 25.1B parámetros. Tras la poda, se aplica una fase de "curación" con auto-destilación desde los pesos no podados usando una máscara de enrutamiento, con LoRA sobre los expertos conservados y optimizadores Muon + AdamW. El resultado intermedio se publicó como Qwen3.6-Whittle-25B-A3B.
+El cuerpo es un transformer MoE con atencion de tipo gated delta net (GDN). Frente al `qwen3_5_moe` del modelo base, que usa una puerta silu, esta version emplea una puerta sigmoid en las capas GDN, incorpora hyper-connections de cuatro flujos residuales por capa con un mezclador de cabeza, y anade una memoria n-grama hasheada de 8 cabezas x 488.320 filas x 256 dimensiones que codifica bigramas y trigramas con el mismo esquema de hash que usa PLE en llama.cpp; la tabla se lee hacia el residual antes de la capa 2 mediante una ruta clave/valor con compuerta. El modelo base se podo de 256 a 180 expertos enrutados por capa (criterio de masa de activacion sin puerta, conservando el 82% de la masa enrutada), pasando de 34,7B a 25,1B parametros, y se recupero mediante autoconsulta con mascara de enrutamiento y LoRA sobre los expertos conservados (Muon + AdamW).
 
-La conversión a la arquitectura `qwen4_exp` se realiza en varias etapas: primero se convierten progresivamente las puertas silu a sigmoide (tres capas GDN a la vez desde atrás, con reajuste y entrenamiento), luego se retrofitan hyper-connections de cuatro flujos residuales con un mezclador de cabeza en identidad exacta, y finalmente se añade una tabla de memoria n-gram de 1.0B parámetros (8 cabezas × 488,320 filas × 256) que se lee antes de la capa 2 mediante una ruta gated key/value. La tabla se entrena con SGD disperso normalizado y puede duplicarse por replicación sin perder comportamiento.
-
-La fase final consiste en destilación online desde Qwen3.8-27B: forward KL sobre el vocabulario completo de 248k tokens en ventanas de corpus, más reverse KL sobre las respuestas muestreadas por el propio estudiante, con el gradiente on-policy acumulado en el siguiente paso de corpus. El modelo se exporta al formato GGUF estándar con `convert_hf_to_gguf.py` de llama.cpp sin parches.
+La conversion de puerta silu a sigmoid se hizo de forma progresiva, en grupos de tres capas GDN desde el final, con reajuste y entrenamiento por grupo; la conversion en un solo paso dejaba la entropia cruzada en 14,7 (modelo muerto), mientras que la progresiva alcanzo 2,05 en held-out. Las hyper-connections se retrofit con identidad exacta (el modelo convertido era bit a bit identico en el paso 0) y se entrenaron despues; el autor documenta que inicializar a cero tanto `down` como `up` produce una silla de montar sin gradiente, y que la receta correcta es `down` aleatorio con `up` a cero. La tabla n-grama se entreno con SGD disperso normalizado (cada fila visitada se mueve 0,02 fijo en la direccion del gradiente), porque el SGD recortado convencional dejaba la tabla fp16 congelada por debajo del ulp. La destilacion online desde Qwen3.8-27B combina KL directa sobre la ventana de corpus (vocabulario completo de 248k) con CE, y KL inversa sobre las respuestas muestreadas por el estudiante, acumulando el gradiente on-policy en el siguiente paso de corpus para reducir el ruido (el paso aislado era 32 veces mas ruidoso). La exportacion usa `convert_hf_to_gguf.py` de llama.cpp estandar con `model_type: qwen4_exp_text`, indice QSA inerte y contrato de hash emitido; se sirve con una build CUDA estandar sin ningun fichero modificado.
 
 ## Capacidades
 
-- Generación de texto conversacional: sigue la plantilla de chat, produce respuestas coherentes y alcanza EOS en 10 de 12 respuestas abiertas según la prueba de parada del autor.
-- Razonamiento matemático: obtiene 87.0% (174/200) en GSM8K con muestreo, sin modo thinking, en llama.cpp con Q8_0.
-- Memoria n-gram: la tabla hashed de bigramas y trigramas se lee en el residual antes de la capa 2, lo que permite capturar patrones locales de repetición sin activar parámetros adicionales.
-- Multi-turno: el autor reporta que la retención de nombres en conversaciones multi-turno funciona correctamente.
-- Sin modo thinking explícito: se recomienda desactivar `enable_thinking` en la plantilla de chat.
-- Capacidades de tool calling, agentes o visión: no disponibles en la información proporcionada.
+- Generacion de texto conversacional y razonamiento de tipo cadena de pensamiento (el sucesor 27B incorpora destilacion sobre trazas de pensamiento completas; este 26B es la base previa).
+- Razonamiento matematico: GSM8K del 87,0% (174/200) sin modo thinking, en llama.cpp Q8_0 con el sampler de servicio.
+- Codigo y respuesta tecnica: las dos respuestas que no alcanzan EOS en la sonda de parada son respuestas largas sobre TCP/UDP, lo que indica cobertura de contenido tecnico de redes.
+- Memoria n-grama hasheada con crecimiento sin reentrenamiento: duplicar filas por replicacion (`hash % 2R ∈ {r, r+R}`) preserva el comportamiento, lo que permite escalar la tabla.
+- Recuperacion de nombres en conversaciones multi-turno (verificado como correcto por el autor).
+- Compatibilidad con llama.cpp estandar, sin parches ni `--override-kv`.
+- Tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Vision o audio: no disponibles.
 
 ## Casos de uso
 
-- Experimentación con arquitecturas MoE: el repositorio incluye los tensores entrenados de hyper-connections, puertas y routers, así como la tabla n-gram en bruto, lo que permite a investigadores continuar el entrenamiento o estudiar el comportamiento de la arquitectura `qwen4_exp`.
-- Evaluación de formatos de exportación: al ejecutarse en llama.cpp estándar sin parches, sirve como banco de pruebas para verificar la compatibilidad de arquitecturas experimentales con el ecosistema GGUF.
-- Generación de texto conversacional en entornos con recursos limitados: con ~3B parámetros activos, puede desplegarse en GPUs de consumo para chatbots o asistentes de dominio específico, aunque con las limitaciones de un modelo de investigación.
-- Razonamiento aritmético y explicaciones paso a paso: el autor señala que el teacher (Qwen3.8-27B) tiende a explicar operaciones aritméticas detalladamente, un comportamiento que se transfiere al estudiante y que puede aprovecharse en aplicaciones educativas.
-- Investigación sobre destilación online: los logs de entrenamiento y los intentos fallidos documentados ofrecen material para estudiar estrategias de destilación on-policy y sus problemas de ruido.
-- Desarrollo de memorias externas para LLMs: la tabla n-gram entrenable y ampliable sin reentrenar es un caso de estudio para integrar memorias no paramétricas en modelos MoE.
+- Investigacion sobre arquitecturas Qwen4-Next: sirve como cuerpo de partida que ya carga y se sirve en llama.cpp estandar, con los tensores de hyper-connections, memoria n-grama y embeddings por capa cableados, para experimentar con el formato `qwen4_exp` sin tener que reconstruir el pipeline de conversion.
+- Destilacion y ajuste fino sobre arquitectura nueva: el repositorio incluye cuerpo congelado, checkpoint entrenable, tabla, contrato de hash, entrenador y exportador, lo que permite continuar el entrenamiento con recetas propias (LoRA, destilacion online, RLHF) sobre una base que ya funciona.
+- Evaluacion de tecnicas de poda de expertos: el modelo documenta una poda de 256 a 180 expertos con criterio de masa de activacion y recuperacion por autoconsulta, util como referencia reproducible para estudiar el impacto de la poda en MoE.
+- Servicio de inferencia de bajo coste en GPU de consumo: con ~3B parametros activos por token y cuantizacion Q8_0, es adecuado para desplegar en hardware modesto con llama.cpp, manteniendo una calidad de matematicas cercana al 87% en GSM8K.
+- Pruebas de estabilidad de generacion: la sonda de parada (10/12 respuestas alcanzan EOS con repeticion maxima de 4-grama de 0,038) lo hace util para validar pipelines de generacion larga y detectar bucles, aunque el autor senala que las dos respuestas sin EOS son contenido largo, no bucles.
+- Base para el desarrollo de modelos sucesores: el 27B y el 35B-A3B de la misma familia se construyen sobre esta receta, por lo que sirve como referencia de linaje y para comparar el efecto de duplicar la tabla n-grama y desbloquear los flujos de hyper-connections.
+- Experimentos de memoria asociativa: la tabla n-grama hasheada con crecimiento por replicacion permite estudiar memorizacion de secuencias y recuperacion de contexto sin reentrenar el cuerpo.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Resultado | Condiciones |
+| Benchmark | Qwen3.6-Whittle-25B-A3B (base) | Whittle-Next-26B-A3B |
 |---|---|---|
-| GSM8K (200 preguntas) | 87.0% (174/200) | Sin thinking, llama.cpp Q8_0, sampler de servidor |
-| Prueba de parada (12 respuestas abiertas, 400 tokens) | 10/12 alcanzan EOS | Repetición máxima de 4-gram: 0.038 |
-| Retención de nombres multi-turno | Correcta | Evaluación cualitativa del autor |
+| Parametros totales | 25,1B | 26,1B (25,1B + 1,0B memoria n-grama) |
+| Parametros activos por token | ~3B | ~3B |
+| GSM8K (200 preguntas, sin thinking, llama.cpp Q8_0, sampler de servicio) | 86,5% | 87,0% (174/200) |
+| Sonda de parada (12 respuestas abiertas, limite 400 tokens) | no disponible | 10/12 alcanzan EOS, repeticion maxima de 4-grama 0,038 |
+| Recuperacion de nombres multi-turno | correcto | correcto |
 
-No se han publicado resultados de benchmarks en la información disponible más allá de los anteriores. El autor indica que el rendimiento en GSM8K está dentro del ruido respecto al modelo base, y que la ganancia principal de la memoria n-gram se espera con el entrenamiento nocturno de la versión 27B.
+No se han publicado resultados de MMLU, HumanEval ni otros benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el archivo Q8_0 del modelo completo (26.1B) requiere aproximadamente 26-28 GB de VRAM para los pesos, más overhead de contexto y KV cache. Con `-c 8192`, se recomiendan al menos 32 GB de VRAM.
-- GPU recomendadas: A100 40GB, H100, o RTX 4090 24GB (ajustando el contexto). No cabe en GPUs de 16 GB o inferiores con Q8_0.
-- Opciones de despliegue: llama.cpp (llama-server), compatible con el ecosistema GGUF. No se menciona soporte para vLLM, TGI u Ollama en la información proporcionada.
-- Latencia y throughput: no disponibles. Al ser un MoE con ~3B activos, se espera un throughput superior al de un denso de 26B, pero no hay cifras publicadas.
+- VRAM estimada para inferencia: con 26,1B parametros en Q8_0, el peso del modelo ronda los 26-28 GB, por lo que se necesita al menos una GPU de 32 GB o reparto entre varias. Las consultas a la tabla n-grama no anaden computo por token.
+- GPU recomendadas: A100 40/80 GB, H100, o configuraciones multi-GPU con 2 x RTX 4090 (24 GB cada una) en Q8_0. Una unica RTX 4090 no cabe en Q8_0; requeriria cuantizaciones menores no publicadas en la informacion disponible.
+- Cabe en GPU de consumo: solo mediante reparto multi-GPU o cuantizaciones mas agresivas no documentadas; no en una sola GPU de 24 GB en Q8_0.
+- Opciones de despliegue: llama.cpp (build CUDA estandar, sin parches), con el GGUF Q8_0 publicado; el autor indica compatibilidad con endpoints. vLLM, TGI y Ollama no estan confirmados en la informacion disponible.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Activos | Contexto | GSM8K | Licencia |
-|---|---|---|---|---|---|
-| Whittle-Next-26B-A3B | 26.1B | ~3B | no disponible | 87.0% (Q8_0, llama.cpp) | Apache-2.0 |
-| Qwen3.6-Whittle-25B-A3B (base) | 25.1B | ~3B | no disponible | 92.5% (transformers) | Apache-2.0 |
-| Qwen3.6-35B-A3B (origen) | 35B | 3B | no disponible | no disponible | Apache-2.0 |
-| Qwen3.8-27B (teacher) | 27B denso | 27B | no disponible | no disponible | Apache-2.0 |
+| Modelo | Parametros totales | Activos | Contexto | GSM8K | Licencia | Estado |
+|---|---|---|---|---|---|---|
+| Whittle-Next-26B-A3B | 26,1B | ~3B | no disponible | 87,0% (sin thinking, Q8_0) | Apache 2.0 | Research preview, superado |
+| Whittle-Next-27B-A3B | no disponible (2B filas de memoria) | ~3B | no disponible | 86,5% / 86,0% | Apache 2.0 | Recomendado por el autor |
+| Qwen3.6-Whittle-25B-A3B | 25,1B | ~3B | no disponible | 92,5% (transformers) | Apache 2.0 | Base del linaje |
+| Whittle-Qwen-3.8-35B-A3B | 35B (aprox.) | ~3B | no disponible | no disponible | Apache 2.0 | Flagship actual de la familia |
 
-La comparativa muestra que la poda y conversión reducen el rendimiento en GSM8K respecto al modelo base en transformers (92.5% vs 87.0%), aunque las condiciones de evaluación difieren (transformers vs llama.cpp Q8_0). El teacher denso de 27B no tiene cifras publicadas en la información disponible.
+El autor senala que, para matematicas, este 26B es marginalmente mejor que el 27B, pero que el 27B es el modelo a ejecutar por su mejor regimen de memorizacion, LoRA en capas 2-12 y destilacion de razonamiento sobre trazas completas.
 
 ## Limitaciones y advertencias
 
-- Modelo de investigación: es un "research preview" con una memoria n-gram entrenada solo durante una hora; el autor indica que su valor crece con el entrenamiento nocturno de la versión 27B.
-- Decodificación greedy: el autor advierte explícitamente que la decodificación greedy provoca bucles de repetición; es obligatorio usar muestreo (temperatura 0.7, top_p 0.8, top_k 20, repeat_penalty 1.05).
-- Rendimiento matemático inferior al base: la conversión de arquitectura y la poda reducen el GSM8K de 92.5% a 87.0% en las condiciones evaluadas.
-- Alucinaciones y sesgos: no se han documentado específicamente, pero al derivar de Qwen3.6, hereda los sesgos de su corpus de entrenamiento.
-- Longitud de contexto no verificada: no se especifica la longitud máxima soportada; el autor solo recomienda `-c 8192` en ejecución.
-- Sin tool calling ni capacidades multimodales: la información disponible no menciona soporte para funciones, agentes, visión o audio.
-- Restricciones de licencia: Apache-2.0 permite uso comercial, pero el modelo incluye pesos derivados de Qwen3.6 y Qwen3.8, ambos Apache-2.0, por lo que no hay restricciones adicionales conocidas.
+- Modelo de research preview explicitamente superado por Whittle-Next-27B-A3B; el autor recomienda ejecutar el sucesor y tratar estas cifras como linea base, no como producto.
+- No es un modelo de proposito general terminado: esta pensado como punto de partida para construir sobre la arquitectura `qwen4_exp`.
+- La sonda de parada muestra 2 de 12 respuestas que no alcanzan EOS (respuestas largas sobre TCP/UDP), lo que indica riesgo de generaciones excesivamente largas en consultas tecnicas abiertas.
+- La tabla n-grama se entrena con SGD disperso normalizado y una tasa fija de 0,02; el autor documenta que el SGD recortado convencional la deja congelada en fp16, lo que implica sensibilidad al regimen de entrenamiento si se continua el ajuste.
+- La conversion de puerta silu a sigmoid es fragil: la conversion en un solo paso produjo un modelo muerto (CE 14,7); solo la progresiva en grupos de tres capas funciono. Cualquier reentrenamiento debe respetar ese procedimiento.
+- El retrofit de hyper-connections requiere inicializacion asimetrica (`down` aleatorio, `up` cero); inicializar ambos a cero produce una silla sin gradiente.
+- Sesgos conocidos: no disponibles en la informacion proporcionada.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; al ser un modelo pequeno y destilado, cabe esperar el comportamiento tipico de modelos de ~3B activos, pero no hay datos publicados.
+- Idiomas soportados: no disponibles; no se confirma cobertura multilingue.
+- Licencia Apache 2.0 permite uso comercial, pero el estado de research preview y la falta de evaluaciones de seguridad desaconsejan produccion sin validacion propia.
+- El repo ocupa 261,8 GB, lo que implica un coste de almacenamiento considerable para descargar el conjunto completo de pesos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/logic65/Whittle-Next-26B-A3B
-- Modelo base (Qwen3.6-Whittle-25B-A3B): https://huggingface.co/logic65/Qwen3.6-Whittle-25B-A3B
-- Repositorio relacionado (whittle-next, base sin entrenar): https://huggingface.co/logic65/whittle-next
-- Repositorio de pruebas (whittle-next-moe-test): https://huggingface.co/logic65/whittle-next-moe-test
-- Guía de Qwen 3.6 (contexto de la familia): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/
-- Blog de Qwen3-Next (arquitectura relacionada): https://qwen.ai/blog?id=4074cca80393150c248e508aa62983f9cb7d27cd&from=research.latest-advancements-list
-- Ficha de Qwen3.8-Whittle-MoE-27B-A17.8B (modelo relacionado): https://aimarketcap.tech/models/logic65-qwen3-8-whittle-moe-27b-a17-8b
+- Modelo base: https://huggingface.co/logic65/Qwen3.6-Whittle-25B-A3B
+- Sucesor recomendado: https://huggingface.co/logic65/Whittle-Next-27B-A3B
+- Flagship de la familia: https://huggingface.co/logic65/Whittle-Qwen-3.8-35B-A3B
+- Apoyo al autor: https://ko-fi.com/davida81328
+- Paper, blog o demo adicionales: no disponibles en la informacion proporcionada.

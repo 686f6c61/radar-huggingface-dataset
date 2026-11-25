@@ -2,130 +2,102 @@
 
 ## Resumen
 
-Standard One 8B SH es un modelo de decisión (decision model) desarrollado por StandardThinking. No es un modelo generativo: lee un escenario una sola vez y puntúa simultáneamente todas las opciones de todas las preguntas de una petición en un único forward pass, devolviendo distribuciones de probabilidad calibradas. Se construye sobre el backbone Standard One 8B v2.2 (arquitectura mistral3, que combina Ministral 3 8B de texto con la torre de visión Pixtral) y añade una cabeza de esquema conjunta (joint schema head, SH) de 70,6 M de parámetros en float32 que atiende a los estados ocultos de la capa final y de la capa 25.
+Standard One 8B SH es un modelo de decisión tipada (typed-decision model) desarrollado por StandardThinking, derivado por fine-tuning del modelo base Standard One 8B v2.2. No es un modelo generativo: lee un escenario una sola vez y puntúa simultáneamente todas las opciones de todas las preguntas de una petición en un único forward pass, devolviendo distribuciones de probabilidad calibradas. Sustituye la cabeza de lenguaje por una "joint schema head" (SH) de 70,6 M de parámetros que atiende sobre los estados ocultos de la capa final y de la capa 25 del backbone.
 
-El problema que resuelve es el de la clasificación y decisión con alfabetos de etiquetas grandes. El enfoque previo de Standard One leía una letra de respuesta por opción, de modo que cada pregunta requería su propia pasada sobre el escenario y el número de opciones quedaba limitado por el alfabeto de etiquetas. La cabeza de esquema coloca todas las preguntas y opciones en un grafo conjunto y devuelve la distribución de cada pregunta a la vez, lo que permite manejar entre 2 y 255 opciones por pregunta y varias preguntas por escenario compartiendo una única pasada.
+El backbone es de arquitectura mistral3 (Ministral 3 8B para texto más una torre de visión Pixtral), con 8.918.026.240 parámetros totales según los pesos safetensors, y soporta hasta 32.768 tokens de contexto por petición. El modelo está pensado para tareas de clasificación y enrutamiento con muchas opciones (2-255), preguntas de sí/no (`noul`) y escalas ordinales (`score`), y se expone mediante el contrato `POST /v1/systemone` del motor Standard One.
 
-La versión v3, publicada el 11 de octubre de 2026, es la que se distribuye en este repositorio (8.918.026.240 parámetros totales, 37,3 GB de repositorio, licencia Apache-2.0, contexto de 32.768 tokens). Frente a la v2 mejora el nivel hard de JevBench de 63,96 a 74,77 y las decisiones enterradas en documentos largos de 84,67 a 87,33, a costa de retroceder en algunos conjuntos retenidos. El modelo solo declara soporte de inglés y está pensado para servirse a través del contrato `POST /v1/systemone`.
+La relevancia de esta release (v4, publicada el 2026-10-13) radica en una mejora sustancial del Decision Index 0.3 público, que pasa de 48,34 en v3 a 57,40 en v4, además de mejoras notables en las áreas de Tools (60,9 a 84,0) y Arts (25,5 a 42,5). La licencia es Apache-2.0 y el modelo está disponible en transformers, FP8 y GGUF.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer mistral3 (Ministral 3 8B de texto + torre de vision Pixtral) con joint schema head |
-| Parametros totales | 8.918.026.240 (~8,9 B); la cabeza suma 70,6 M en float32 |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 32.768 tokens por peticion |
-| Tipos de cuantizacion | Este repositorio sirve pesos safetensors sin cuantizar; existen variantes FP8 y GGUF, ambas todavia en v2 |
-| Idiomas soportados | en (ingles) |
+| Arquitectura | Transformer mistral3 (Ministral 3 8B texto + torre de visión Pixtral) con joint schema head (SH) de 70,6 M de parámetros en float32 que lee la capa final y la capa 25 |
+| Parametros totales | 8.918.026.240 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 32.768 tokens por petición |
+| Tipos de cuantizacion | FP8 (variante StandardOne-8B-SH-FP8), GGUF (variante StandardOne-8B-SH-GGUF); pesos principales en safetensors |
+| Idiomas soportados | Inglés (según la model card); los gráficos mencionan decisiones equivalentes en 21 idiomas, pero el campo `language` declara solo `en` |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (backbone + `head/` en float32) |
-| Tipos de pregunta | `choice` (2-255 opciones), `noul` (si/no), `score` (escala ordinal) |
-| Modelo base | StandardThinking/StandardOne-8B (v2.2) |
-| Version del modelo | v3 (pesos actualizados el 2026-10-11); v2 y v1 siguen disponibles |
-| Tamano del repositorio | 37,3 GB |
+| Formato de pesos | safetensors (transformers); variantes FP8 y GGUF publicadas por separado |
 
 ## Arquitectura y entrenamiento
 
-El backbone es Standard One 8B v2.2, basado en mistral3: Ministral 3 8B para texto más la torre de visión Pixtral (el tag `image-text-to-text` aparece en el repositorio, aunque la model card no documenta tareas de visión en esta ficha). Sobre ese backbone se monta una cabeza de esquema conjunta de 70,6 M de parámetros en float32, almacenada en `head/`, que lee los estados ocultos de la capa final y de la capa 25. En lugar de generar texto, la cabeza construye un grafo conjunto con todas las preguntas y opciones de la petición y emite una distribución calibrada por pregunta. El modelo se entrena para la cabeza y después se fusiona (merged); la v1 se publicó como adaptador LoRA, la v2 como pesos fusionados y la v3 es la release actual.
+El modelo parte del backbone Standard One 8B v2.2, que combina un modelo de texto Ministral 3 8B con una torre de visión Pixtral bajo la arquitectura `mistral3`. Sobre ese backbone se ha añadido y fusionado una joint schema head de 70,6 M de parámetros en float32, que atiende sobre los estados ocultos de la capa final y de la capa 25 para construir un grafo conjunto de preguntas y opciones. A diferencia de Standard One, que genera una letra de respuesta por opción y requiere una pasada por pregunta, esta cabeza procesa todas las preguntas de una petición en un único forward pass y devuelve una distribución calibrada por pregunta. El modelo no genera texto.
 
-La v3 se afina sobre aproximadamente 2.200 nuevos ítems de decisión redactados en las familias donde la v2 era más débil: políticas largas con excepciones y anulaciones, compensaciones multicriterio, evaluación de una respuesta contra una rúbrica y razonamiento sobre fechas y números. Los ítems fueron generados por modelos de lenguaje grandes y cada respuesta de referencia fue verificada por un modelo independiente que respondía sin verla, recalculándose los casos de desacuerdo; se eliminaron los ítems que compartían texto con el conjunto público de JevBench o con los conjuntos de evaluación propios, y no se usó ningún ítem de JevBench. Estos ítems se entrenan con objetivos suavizados (0,8 sobre la opción correcta) para evitar que la cabeza se vuelva demasiado confiada en tareas que no siempre puede resolver. Una pasada final corta sobre política, documentos largos y tareas multi-paso evita el retroceso en esas habilidades.
-
-Una innovación destacable es que el modelo es decode-free: no hay decodificación autorregresiva, lo que reduce la latencia a una sola pasada por petición. La calibración se reporta explícitamente: en el nivel hard de JevBench la confianza media es de 76,8 para un 74,8 de acierto, con un expected calibration error de 0,045 (frente a 0,097 en v2).
+El entrenamiento de v4 continúa desde v3 sobre ítems de decisión, en su mayoría sintéticos propios (escritos por LLM en estilos variados y verificados por código), con replay de datos anteriores. v3, a su vez, se había afinado sobre unas 2.200 nuevas tareas de decisión en las familias donde v2 era más débil. La model card advierte que, para algunos benchmarks del Decision Index, el split público de entrenamiento o el generador público del benchmark formaron parte del entrenamiento (HoVer entre ellos), aunque los ítems evaluados nunca se usaron en entrenamiento.
 
 ## Capacidades
 
-- Puntuación de decisiones tipadas: devuelve distribuciones calibradas sobre preguntas de tipo `choice` (de 2 a 255 opciones), `noul` (sí/no) y `score` (escala ordinal).
-- Clasificación de intenciones con alfabetos grandes: los resultados reportados cubren CLINC150, BANKING77 y MASSIVE con entre 27 y 255 etiquetas.
-- Procesamiento de múltiples preguntas por escenario en una sola pasada sobre el escenario.
-- Localización de decisiones enterradas en documentos largos, hasta 32.768 tokens de contexto.
-- Juicio de respuestas contra una rúbrica (policy-judgement repair) y razonamiento sobre políticas largas con excepciones.
-- Razonamiento sobre fechas y números.
-- Evaluación de posiciones de juego (dots and boxes, snake, 2048, tetris), según los benchmarks publicados.
-- Razonamiento de sentido común tipo WinoGrande.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y multi-step reasoning generativo: no disponible; el modelo no genera texto.
-- Capacidades multilingües: solo inglés declarado.
-- Modo thinking explícito, audio o visión como tarea documentada: no disponible en la informacion proporcionada.
+- Decisión tipada sobre escenarios: preguntas de tipo `choice` (2-255 opciones), `noul` (sí/no) y `score` (escala ordinal), con salida de distribuciones de probabilidad calibradas.
+- Procesamiento de múltiples preguntas por escenario en una sola pasada, compartiendo el coste de lectura del contexto.
+- Manejo de conjuntos de opciones muy grandes (100-255) con precisión cercana a la de conjuntos pequeños, orientado a intención y enrutamiento.
+- Localización de decisiones enterradas en documentos largos de hasta 32.768 tokens.
+- Capacidad multimodal heredada del backbone (torre de visión Pixtral), aunque la model card no detalla tareas de decisión sobre imagen.
+- Verificación de afirmaciones multi-hop (HoVer), recuperación razonada sobre documentos largos (BRIGHT) y comprensión de contratos (ContractNLI), según los benchmarks reportados.
+- No soporta generación de texto libre ni tool calling generativo: la interfaz es de clasificación/decisión.
+- El formato de prompt usa la plantilla de chat sin mensaje de sistema por defecto.
 
 ## Casos de uso
 
-- Enrutamiento de intenciones en asistentes conversacionales: con 255 etiquetas de intención el modelo alcanza un 97,32 % (CLINC150, 1.100 enunciados) y un 92,48 % en el rango de 27 a 151 opciones sobre 18.000 ítems, por lo que puede sustituir a clasificadores dedicados en un router de diálogo sin segmentar el alfabeto de etiquetas.
-- Clasificación de tickets y correo entrante en atención al cliente: BANKING77 y MASSIVE forman parte de la evaluación reportada, lo que permite mapear cada mensaje a una cola o categoría con una sola pasada y varias preguntas por petición.
-- Cumplimiento normativo sobre documentos largos: la detección de decisiones ocultas en documentos largos sube al 87,33 % en la suite de 150 ítems, lo que permite evaluar contratos, políticas internas o pliegos de hasta 32.768 tokens contra un conjunto de reglas.
-- Evaluación automática de respuestas con rúbrica: la tarea de «policy-judgement repair» (1.200 ítems, 72,50 %) permite puntuar la respuesta de otro modelo o de un operador frente a criterios explícitos, devolviendo una distribución en lugar de una etiqueta dura.
-- Encuestas y escalas ordinales: el tipo de pregunta `score` admite escalas ordinales, útil para convertir respuestas abiertas de NPS, satisfacción o calidad percibida en puntuaciones calibradas.
-- Moderación y decisiones binarias: el tipo `noul` (sí/no) cubre casos de aprobación/rechazo de contenido, concesión de crédito o validación de publicaciones con un único forward pass.
-- Compensaciones multicriterio en sistemas de recomendación o pricing: la v3 se entrenó específicamente en trade-offs multicriterio, de modo que puede ordenar opciones según varias dimensiones ponderadas dentro de una misma petición.
-- Evaluación de posiciones en juegos y entornos de simulación: los resultados en dots and boxes (49,05), snake (68,00) y tetris (63,81) lo sitúan como evaluador de estados en agentes de búsqueda, sin generar jugadas en lenguaje natural.
+- Enrutamiento de intenciones en asistentes conversacionales: el modelo puede clasificar la intención del usuario entre 100-255 opciones manteniendo precisión gracias a la schema head, adecuado para sistemas de triaje previos a un LLM generativo.
+- Moderación y clasificación de contenido: preguntas de sí/no (`noul`) o escalas ordinales (`score`) permiten puntuar políticas de forma calibrada y consistente en lotes grandes.
+- Verificación de afirmaciones en pipelines de fact-checking: el rendimiento en HoVer (72,8 en Decision Index) lo hace útil para comprobar afirmaciones multi-hop contra evidencia recuperada.
+- Recuperación razonada sobre documentación larga: con 32.768 tokens de contexto puede decidir relevancia sobre pasajes de ~12k tokens (BRIGHT), útil en motores de búsqueda empresarial.
+- Comprensión de contratos y documentos legales: clasificación de cláusulas y compromisos (ContractNLI) en flujos de revisión automatizada.
+- Relevancia en búsqueda de producto: evaluación de la pertinencia de resultados (Amazon ESCI) para reordenar o filtrar catálogos.
+- Automatización de domótica: interpretación de peticiones en simuladores de electrodomésticos para decidir la acción o el comando adecuado.
+- Análisis musical estructurado: lectura de acordes en partituras (POP909-CL), un caso de nicho donde el modelo muestra capacidad de clasificación especializada.
 
 ## Benchmarks y rendimiento
 
-Datos de la model card, en porcentaje de acierto y sobre ítems idénticos puntuados del mismo modo:
+| Benchmark | SH v3 | SH v4 (esta release) |
+|---|---:|---:|
+| Decision Index 0.3, índice público | 48,34 | 57,40 |
+| Áreas: Knowledge / Language / Retrieval / Tools / Arts | 32,1 / 51,0 / 65,8 / 60,9 / 25,5 | 36,9 / 57,9 / 66,4 / 84,0 / 42,5 |
+| HoVer, verificación multi-hop (DI) | 72,6 | 72,8 |
+| BRIGHT, recuperación razonada sobre documentos largos (~12k tokens, DI) | 34,8 | 34,2 |
+| Decisión oculta en documento largo (set propio, 150 ítems) | 87,33 | 88,00 |
+| JevBench público: easy / original / hard (48 / 72 / 111 ítems) | 100,00 / 95,83 / 74,77 | 100,00 / 94,44 / 75,68 |
 
-| Benchmark | Standard One 8B v2.2 | SH v2 | SH v3 (esta release) |
-|---|---:|---:|---:|
-| JevBench public, nivel hard (111 items) | 56,76 | 63,96 | 74,77 |
-| JevBench public, nivel original (72 items) | 98,61 | 98,61 | 95,83 |
-| JevBench public, nivel easy (48 items) | 100,00 | 100,00 | 100,00 |
-| Intent labels con 27-151 opciones (CLINC150, BANKING77, MASSIVE; 18.000 items) | 82,67 | 92,50 | 92,48 |
-| Intent labels con hasta 26 opciones (750 items) | 88,13 | 95,20 | 95,47 |
-| Intent labels con 255 opciones (CLINC150, 1.100 enunciados) | 85,34 | 97,43 | 97,32 |
-| Decision oculta en documento largo (150 items) | 40,00 | 84,67 | 87,33 |
-| WinoGrande (dev, 2.010 items) | 87,86 | 95,07 | 94,98 |
-| Policy-judgement repair (1.200 items) | 60,58 | 72,92 | 72,50 |
-| Game positions: dots and boxes / snake / 2048 / tetris | 38,37 / 58,63 / no consta / 54,86 | 50,42 / 67,59 / no consta / 65,90 | 49,05 / 68,00 / no consta / 63,81 |
-| Held-out decision suite (600 items) | 82,50 | 90,67 | 87,67 |
-| Held-out realistic decision suite (600 items) | 91,50 | 90,83 | 89,67 |
-| Held-out hard decision suite (600 items) | 53,50 | 46,00 | 41,17 |
-
-Notas de medición aportadas por el autor: la columna v3 se midió con el motor Standard One, que coincide con el servidor de referencia de `code/` en el 99,58 % de las 1.431 preguntas comprobadas (las 231 respuestas públicas de JevBench son idénticas); el resto de columnas se midieron con el servidor de referencia. La v2 obtuvo 48,68 en el Decision Index 0.2.1 (etiqueta `v2`); el valor para la v3 está pendiente de medición.
-
-Calibración reportada en la v3: confianza media de 76,8 para un acierto de 74,8 en el nivel hard de JevBench, con un expected calibration error de 0,045 (0,097 en la v2).
+Las filas marcadas como DI son puntuaciones de habilidad corregidas por azar (0 = aleatorio, 100 = perfecto) obtenidas por el propio autor con el kit oficial sobre las 140.178 peticiones puntuables del suite público 0.3. Las demás filas son precisión en porcentaje medida con el motor Standard One sobre ítems idénticos. No se han publicado resultados de MMLU, HumanEval, GSM8K ni benchmarks generativos en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (cálculo aritmético a partir de los 8.918 M de parámetros; la model card no publica requisitos de hardware): aproximadamente 17,8 GB en bf16/fp16 y 8,9 GB en fp8. La cabeza en float32 añade unos 0,28 GB. Repositorio completo: 37,3 GB.
-- Formato cuantizado disponible: existe una variante GGUF de este modelo (todavía en v2, no en v3), lo que en principio permite despliegue en llama.cpp u Ollama con cuantizaciones de 4 bits del orden de 5-6 GB, aunque no hay cifras oficiales de VRAM para esa variante.
-- GPU recomendadas: no disponible en la informacion proporcionada. Por tamaño, un modelo de 8,9 B en bf16 requiere memorias de 24 GB o superiores (RTX 3090/4090, L4, A10G, A100 40/80 GB, H100).
-- ¿Cabe en GPU de consumo? En bf16 cabe en RTX 3090/4090 de 24 GB; en las variantes cuantizadas FP8 o GGUF podría caber en GPUs de 8-12 GB, pero no se publican requisitos oficiales.
-- Opciones de despliegue: servidor de referencia incluido en `code/` (requiere torch, transformers y safetensors, con `code/render.py` y la variable `SH_SYSTEM_PROMPT=none` por defecto), más el motor propietario Standard One y el contrato `POST /v1/systemone`. También hay variantes FP8 y GGUF publicadas. Compatibilidad con vLLM o TGI: no disponible.
-- Latencia y throughput: no disponible en la informacion proporcionada. El diseño decode-free implica una única pasada por petición con todas las preguntas y opciones, frente a una pasada por pregunta en el enfoque anterior.
+- VRAM estimada para inferencia: los pesos completos en safetensors ocupan 55,4 GB de repositorio; en FP8 la huella se reduce aproximadamente a la mitad (~9 GB de pesos más overhead), y las variantes GGUF permiten cuantizaciones de 4-8 bits para entornos con menos memoria.
+- GPU recomendadas: A100 80 GB o H100 para pesos completos en float32/bf16; A100 40 GB o L40S para FP8; RTX 4090 (24 GB) viable con FP8 o GGUF cuantizado.
+- Cabe en GPU de consumo: sí, en RTX 4090/RTX 3090 con cuantización FP8 o GGUF; en 16 GB (RTX 4080) solo con GGUF de 4 bits.
+- Opciones de despliegue: transformers (librería declarada), FP8 para vLLM/TGI, GGUF para llama.cpp/Ollama. El modelo se sirve a través del contrato `POST /v1/systemone` del motor Standard One.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se han publicado en la informacion disponible datos de modelos de terceros comparables en la categoría de modelos de decisión con cabeza de esquema. La comparación posible es con las propias variantes de la familia Standard One:
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| StandardOne-8B-SH (este) | 8,92 B | 32.768 | Decisión tipada con schema head, sin generación | Apache-2.0 | HF (safetensors, FP8, GGUF) |
+| StandardOne-3B-SH | no disponible | no disponible | Misma familia, versión reducida | Apache-2.0 | HF |
+| Standard One 8B (base, sin SH) | 8 B (aprox.) | no disponible | Decisión por generación de letra, una pasada por pregunta | Apache-2.0 | HF |
 
-| Modelo | Parametros | Contexto | JevBench hard | Documento largo | Licencia | Disponibilidad |
-|---|---:|---:|---:|---:|---|---|
-| StandardOne-8B-SH (v3, este) | 8,9 B (+70,6 M de cabeza) | 32.768 | 74,77 | 87,33 | Apache-2.0 | Pesos safetensors en HF |
-| StandardOne-8B-SH (v2) | 8,9 B (+70,6 M de cabeza) | 32.768 | 63,96 | 84,67 | Apache-2.0 | Etiqueta `v2`; tambien en FP8 y GGUF |
-| StandardOne-8B v2.2 (sin cabeza) | 8,9 B | 32.768 | 56,76 | 40,00 | Apache-2.0 | Modelo base en HF |
-| StandardOne-3B-SH | no disponible | no disponible | no disponible | no disponible | no disponible | Version reducida en HF |
-
-Comparativa con alternativas externas de la misma categoría: no disponible.
+La model card solo ofrece comparación interna con la propia familia Standard One; no se dispone de comparativas con modelos de clasificación de otros proveedores en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo no genera texto: solo devuelve distribuciones sobre opciones. No puede usarse como chatbot ni como modelo instruct al uso.
-- Idiomas: solo inglés declarado. No hay soporte documentado de castellano ni de otros idiomas.
-- Retrocesos de la v3 frente a la v2: la suite retenida de decisiones baja 3,0 puntos (87,67 frente a 90,67), la suite retenida difícil 4,8 puntos (41,17 frente a 46,00) y el nivel original de JevBench dos ítems (95,83 frente a 98,61). El propio autor recomienda mantener la v2 si esos conjuntos son prioritarios.
-- Rendimiento bajo en decisiones difíciles retenidas: 41,17 % en la suite difícil de 600 ítems, lo que indica que las tareas de decisión complejas fuera de la distribución de entrenamiento siguen siendo un punto débil.
-- Riesgo de sobreconfianza mitigado pero no eliminado: los objetivos se suavizaron a 0,8 sobre la opción correcta y el ECE es de 0,045, pero la confianza no es una garantía de corrección en todas las tareas.
-- Riesgo de alucinación: no aplica en el sentido generativo (no produce texto libre), pero sí existe riesgo de asignación errónea de probabilidad alta a opciones incorrectas, especialmente en el nivel difícil.
-- Formato de prompt estricto: la plantilla de chat usa un mensaje de sistema vacío por defecto y el servidor de referencia renderiza las peticiones sin mensaje de sistema (`SH_SYSTEM_PROMPT=none`). Añadir el prompt de sistema por defecto de Ministral cambia los estados ocultos que lee la cabeza y degrada el resultado.
-- Las variantes FP8 y GGUF publicadas contienen todavía la v2, no la v3; quien necesite cuantización no dispone de la versión más reciente.
-- Licencia Apache-2.0: permite uso comercial y modificación con las obligaciones habituales de atribución y conservación de avisos. No se documentan restricciones adicionales.
-- Adopción mínima: 0 descargas y 0 likes en el momento del análisis, sin ecosistema de terceros ni confirmación independiente de los resultados.
-- No se publican requisitos de hardware, latencia ni throughput oficiales para producción.
-- Los benchmarks provienen del propio autor del modelo; no hay verificación independiente en la informacion disponible.
+- El modelo no genera texto: no puede usarse para tareas generativas, diálogo libre ni tool calling generativo.
+- El campo `language` declara únicamente inglés, pese a que los gráficos mencionan decisiones en 21 idiomas; el soporte multilingüe no está formalmente garantizado.
+- Riesgo de alucinación o calibración deficiente fuera de la distribución de entrenamiento; las probabilidades deben validarse en el dominio de producción.
+- Contaminación de benchmarks declarada: para algunos benchmarks del Decision Index (incluido HoVer) el split público de entrenamiento o el generador público formaron parte del entrenamiento, por lo que las cifras pueden estar infladas.
+- Las puntuaciones del Decision Index son autoevaluadas por el autor con su propio kit; no son verificaciones independientes.
+- El formato de prompt requiere la plantilla de chat sin mensaje de sistema por defecto; un formato incorrecto puede degradar las decisiones.
+- Licencia Apache-2.0 permite uso comercial, pero conviene revisar las obligaciones de atribución y las condiciones del backbone base.
+- El tamaño del repositorio (55,4 GB) y la necesidad de servir la cabeza en float32 añaden complejidad operativa frente a un clasificador convencional.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/StandardThinking/StandardOne-8B-SH
 - Variante FP8: https://huggingface.co/StandardThinking/StandardOne-8B-SH-FP8
 - Variante GGUF: https://huggingface.co/StandardThinking/StandardOne-8B-SH-GGUF
-- Modelo reducido: https://huggingface.co/StandardThinking/StandardOne-3B-SH
+- Modelo menor: https://huggingface.co/StandardThinking/StandardOne-3B-SH
 - Modelo base: https://huggingface.co/StandardThinking/StandardOne-8B
-- Sitio del proveedor: https://standardthinking.ai/
-- Documentación de la API: https://standardthinking.ai/api/
+- Dataset de runs del Decision Index: https://huggingface.co/datasets/StandardThinking/StandardOne-SH-decision-index
+- Guía del Decision Index: https://standardthinking.ai/resources/guides/standard-one-sh-decision-index/
+- Gráficos de benchmarks: https://huggingface.co/StandardThinking/StandardOne-8B-SH/resolve/main/assets/charts/01-index-vs-size.png

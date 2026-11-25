@@ -56,29 +56,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "openbmb/MiniCPM-V-4-int4 · Hugging Face",
-      "url": "https://huggingface.co/openbmb/MiniCPM-V-4-int4",
-      "snippet": "The model is built based on SigLIP2-400M and MiniCPM4-3B with a total of 4.1B parameters. It inherits the strong single-image, multi-image and video understanding performance of MiniCPM-V 2.6 with largely improved efficiency."
+      "title": "OpenBMB · Big Model for Everyone",
+      "url": "https://openbmb.cn/en/",
+      "snippet": "OpenBMB is an open-source large model community. We build MiniCPM, AgentCPM, VoxCPM and UltraRAG — efficient models …Read more"
     },
     {
-      "title": "MiniCPM-V/docs/minicpm_v4_en.md at main · OpenBMB/MiniCPM-V - GitHub",
-      "url": "https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_v4_en.md",
-      "snippet": "MiniCPM-V 4.0 is an efficient model in the MiniCPM-V series. The model is built based on SigLIP2-400M and MiniCPM4-3B with a total of 4.1B parameters. It inherits the strong single-image, multi-image and video understanding performance of MiniCPM-V 2.6 with largely improved efficiency. Notable ..."
+      "title": "openbmb (OpenBMB) - Hugging Face",
+      "url": "https://huggingface.co/openbmb",
+      "snippet": "openbmb/MiniCPM-V-4.6 ... openbmb/MiniCPM-V-4.6-gguf ... openbmb/MiniCPM-V-4.7-35B-A3B-gguf ... openbmb/MiniCPM-V-4.7 …Read more"
     },
     {
-      "title": "README.md · openbmb/MiniCPM-V-4-int4 at main - Hugging Face",
-      "url": "https://huggingface.co/openbmb/MiniCPM-V-4-int4/blob/main/README.md",
-      "snippet": "The model is built in an end-to-end fasion based on SigLip2-400M and MiniCPM4-3B with a total of 4.1B parameters. It inherents the strong single-image, multi-image and video understanding performance of MiniCPM-V 2.6 with the efficiency largely improved. Notable features of MiniCPM-V 4.0 include:"
+      "title": "OpenBMB · 让大模型飞入千家万户",
+      "url": "https://openbmb.cn/",
+      "snippet": "OpenBMB 开源大模型社区，致力于让大模型飞入千家万户。 MiniCPM、AgentCPM、VoxCPM、UltraRAG 全系开源模型，云端到端 …Read more"
     },
     {
-      "title": "GitHub - OpenBMB/MiniCPM-V: A Pocket-Sized MLLM for Ultra-Efficient ...",
-      "url": "https://github.com/OpenBMB/MiniCPM-V",
-      "snippet": "The most notable models in the series currently include: MiniCPM-V 4.6: 🔥🔥🔥 The latest and most efficient model in the MiniCPM-V series. With a total of 1.3B parameters, it surpasses larger models like Gemma4-E2B-it in performance, while showing superior efficiency than smaller models like Qwen3.5-0.8B (achieving ~1.5x token throughput)."
+      "title": "openbmb",
+      "url": "https://ollama.com/openbmb",
+      "snippet": "Get up and running with large language models."
     },
     {
-      "title": "MiniCPM-V-4-int4 · Models - modelscope.cn",
-      "url": "https://www.modelscope.cn/models/OpenBMB/MiniCPM-V-4-int4",
-      "snippet": "The model is built based on SigLIP2-400M and MiniCPM4-3B with a total of 4.1B parameters. It inherits the strong single-image, multi-image and video understanding performance of MiniCPM-V 2.6 with largely improved efficiency. Notable features of MiniCPM-V 4.0 include: 🔥 Leading Visual Capability."
+      "title": "openbmb/MiniCPM5-2B · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-2B",
+      "snippet": "Text Generation model with 3B parameters. Download, explore files and run it on Hugging Face."
     }
   ]
 }

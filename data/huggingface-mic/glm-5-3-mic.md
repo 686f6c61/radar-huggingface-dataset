@@ -2,11 +2,11 @@
 
 ## Resumen
 
-GLM-5.3-mic es un artefacto de prueba (fixture) publicado por la organizacion huggingface-mic, no un modelo de lenguaje utilizable. Se trata de una version reducida de forma deliberada del checkpoint zai-org/GLM-5.3, con tan solo 40.287.984 parametros reales (frente a los cientos de miles de millones que cabria esperar en un modelo MoE de esa familia). Su proposito es servir como contrato de integracion reproducible para validar el comportamiento de frameworks (en concreto, Transformers) frente a la arquitectura GLM-MoE-DSA.
+GLM-5.3-mic es un artefacto de prueba (fixture) publicado en Hugging Face por el usuario `huggingface-mic`, no un modelo entrenado ni utilizable. Se trata de una version reducida ("slim") del checkpoint `zai-org/GLM-5.3`, generada para validar la integracion de la arquitectura `GlmMoeDsaForCausalLM` en el ecosistema Transformers. El repositorio incluye pesos reducidos, ejemplos de uso ejecutables y expectativas de framework, y esta etiquetado explicitamente como `test-artifact` para excluirlo de la busqueda de modelos candidatos.
 
-El repositorio incluye pesos "slim" en safetensors, un manifiesto de contrato (integration.json), ejemplos de uso ejecutables y un directorio de expectativas de framework. Los pesos son aleatorios (semilla 17) y no han sido entrenados: unicamente superaron una puerta de sensibilidad a la entrada, en la que cada perturbacion de las entradas del contrato desplazaba los logits al menos 0,001. Esta etiquetado explicitamente como `test-artifact` para excluirlo de las busquedas de modelos candidatos.
+El modelo conserva la estructura de tensores del checkpoint original (mismos nombres de parametro, incluidos los tensores de escala de cuantizacion `weight_scale_inv` en float32), pero con una configuracion mucho menor: 3 capas ocultas y 40.287.984 parametros totales, frente al modelo completo de referencia. Los pesos son aleatorios (semilla 17) y no han sido entrenados; unicamente superaron una puerta de sensibilidad a la entrada que verifica que las perturbaciones en las entradas del contrato mueven los logits al menos 0,001.
 
-Por tanto, su relevancia no es funcional sino de ingenieria: permite a los desarrolladores de Transformers y de otros frameworks verificar que la carga, el forward, la perdida y los gradientes funcionan correctamente con la arquitectura GlmMoeDsaForCausalLM sin necesidad de descargar ni ejecutar el modelo completo. Cualquier evaluacion de capacidades, calidad o rendimiento queda fuera del alcance de este artefacto.
+Su relevancia es puramente de ingenieria: permite a desarrolladores de Transformers probar pipelines de carga, forward, calculo de perdida y gradientes para la arquitectura GLM-MoE-DSA sin descargar ni ejecutar el modelo grande. No debe confundirse con un modelo de lenguaje funcional: no genera texto coherente, no razona y no tiene capacidades de inferencia reales.
 
 ## Especificaciones tecnicas
 
@@ -16,74 +16,75 @@ Por tanto, su relevancia no es funcional sino de ingenieria: permite a los desar
 | Parametros totales | 40.287.984 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos guardados en bfloat16) |
+| Tipos de cuantizacion | no disponible (pesos en bfloat16; tensores de escala en float32) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (el fichero LICENSE se copia byte a byte del modelo base) |
-| Formato de pesos | safetensors (bfloat16) |
+| Licencia | no disponible (se copia el fichero LICENSE del modelo base, pero su contenido no se especifica) |
+| Formato de pesos | safetensors (bfloat16, con tensores `weight_scale_inv` en float32) |
 
 ## Arquitectura y entrenamiento
 
-El fixture replica la arquitectura del modelo base zai-org/GLM-5.3, identificada como GLM-MoE-DSA (MoE con atencion DSA, segun la nomenclatura del tag y de la clase GlmMoeDsaForCausalLM). Para reducir el tamano se aplico la regla generica de `sweep.py` del repositorio transformers-mic, que en este caso dejo `num_hidden_layers` en 3. Los nombres de tensores son identicos a los del checkpoint real, de modo que el fixture conserva la estructura de parametros aunque con dimensiones reducidas.
+La arquitectura es `GlmMoeDsaForCausalLM`, una variante de tipo Mixture-of-Experts con atencion dispersa (DSA) segun la nomenclatura del checkpoint base `zai-org/GLM-5.3`. El fixture se genero aplicando la regla generica de reduccion de `sweep.py` del repositorio `transformers-mic`, que fija `num_hidden_layers` en 3. Los nombres de tensores coinciden exactamente con los del checkpoint real, incluyendo proyecciones de atencion con compresion KV (`kv_a_proj_with_mqa`, `kv_b_proj`), un indexador de atencion (`indexer.wk`, `indexer.wq_b`), expertos enrutados y expertos compartidos (`shared_experts`), y un sesgo de correccion de enrutamiento (`gate.e_score_correction_bias`).
 
-No hubo entrenamiento. Los pesos se inicializaron aleatoriamente con semilla 17 y solo se validaron mediante una puerta de sensibilidad a la entrada: cada perturbacion de las entradas del contrato debia mover los logits al menos 0,001 (el caso mas debil, `attention_mask:all_ones`, alcanzo 0,869). Los ficheros de procesador (`LICENSE`, `chat_template.jinja`, `generation_config.json`, `tokenizer.json`, `tokenizer_config.json`) se copiaron byte a byte del modelo base. El fixture se guardo en bfloat16, el dtype con el que carga por defecto zai-org/GLM-5.3, y se verifico que es finito en float32, bfloat16 y float16 tanto en forward como en perdida y gradientes. La clave de fixture es `5336369c673f` y cubre todos los checkpoints cuyos ficheros de procesador son identicos byte a byte y cuya config coincide tras el shrink.
+No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y se validaron mediante una puerta de sensibilidad a la entrada: cada perturbacion de las entradas del contrato desplaza los logits al menos 0,001 (el caso mas debil, `attention_mask:all_ones`, con 0,869). El modelo es finito en float32, bfloat16 y float16 tanto en forward como en perdida y gradientes. Los ficheros de procesador (`LICENSE`, `chat_template.jinja`, `generation_config.json`, `tokenizer.json`, `tokenizer_config.json`) se copiaron byte a byte desde `zai-org/GLM-5.3`, por lo que el tokenizador y la plantilla de chat son los del modelo real, aunque los pesos no.
 
 ## Capacidades
 
-- No es un modelo funcional: los pesos son aleatorios y no producen texto coherente.
-- Sirve como contrato de integracion para validar la carga de la arquitectura GlmMoeDsaForCausalLM en Transformers.
-- Permite comprobar forward, calculo de perdida y retropropagacion de gradientes en float32, bfloat16 y float16.
-- Verifica la sensibilidad del modelo a las entradas del contrato (incluida `attention_mask`).
-- Incluye expectativas de framework en `integrations/transformers/expectations` para tests automatizados.
-- Reproduce los nombres de tensores del checkpoint real, util para pruebas de compatibilidad de herramientas.
-- No dispone de tool calling, agentes, vision, audio ni modo thinking utilizables.
-- No dispone de capacidades multilingues evaluables.
+- No es un modelo funcional: los pesos aleatorios no producen texto coherente ni respuestas utiles.
+- Sirve como fixture de prueba para validar la carga del modelo con Transformers y la arquitectura `GlmMoeDsaForCausalLM`.
+- Permite comprobar forward pass, calculo de perdida y retropropagacion de gradientes en float32, bfloat16 y float16.
+- Verifica la compatibilidad de nombres de tensores y del contrato de integracion (`integration.json`).
+- Incluye expectativas de framework (`integrations/transformers/expectations`) para tests automatizados.
+- Reutiliza el tokenizador y la plantilla de chat del modelo base, utiles para probar el preprocesado.
+- No dispone de tool calling, agentes, vision, audio ni modo thinking funcionales, al no estar entrenado.
 
 ## Casos de uso
 
-- Pruebas de integracion en Transformers: cargar el fixture con `GlmMoeDsaForCausalLM` y comprobar que el forward y la perdida coinciden con las expectativas registradas, sin descargar el modelo completo.
-- CI/CD de frameworks: ejecutar tests de regresion en pipelines automatizados con un artefacto de 0,3 GB en lugar de un checkpoint de gran tamano.
-- Validacion de toolchains de conversion: verificar que scripts de conversion a otros formatos (por ejemplo, exportadores a GGUF o a otros runtimes) manejan correctamente los nombres de tensores y la config de GLM-MoE-DSA.
-- Desarrollo de kernels y optimizaciones: probar implementaciones de atencion o de capas MoE contra un modelo pequeno con la misma estructura de parametros.
-- Verificacion de dtypes: comprobar que el modelo es finito en float32, bfloat16 y float16 en forward, perdida y gradientes antes de escalar al checkpoint real.
-- Pruebas de sensibilidad a entradas: usar la puerta de sensibilidad documentada para validar que cambios en el codigo de preprocesado alteran los logits de forma medible.
-- Onboarding de contribuidores: disponer de un repositorio ligero con uso ejecutable y expectativas para que nuevos desarrolladores entiendan el contrato de la arquitectura.
+- Pruebas de integracion en Transformers: cargar el fixture con `AutoModelForCausalLM` para verificar que la arquitectura `GlmMoeDsaForCausalLM` se registra y se instancia correctamente antes de probar con el checkpoint completo.
+- CI/CD de librerias de inferencia: ejecutar tests de forward y backward en pipelines de integracion continua sin necesidad de GPU de gran capacidad ni de descargar el modelo real de decenas de miles de millones de parametros.
+- Validacion de kernels y precisiones: comprobar que los kernels de atencion y MoE producen resultados finitos en float32, bfloat16 y float16, detectando regresiones numericas.
+- Desarrollo de herramientas de cuantizacion: usar los nombres de tensores `weight_scale_inv` para probar logica de conversion y escalado antes de aplicarla al checkpoint real.
+- Verificacion de contratos de integracion: validar `integration.json` y el directorio de expectativas como parte de un framework de conformidad para modelos GLM.
+- Pruebas de tokenizacion y plantillas de chat: al copiarse el tokenizador y `chat_template.jinja` del modelo base, sirve para testear el preprocesado de conversaciones sin cargar pesos reales.
+- Reproducibilidad de fixtures: reconstruir el artefacto con `build_fixtures.py` y comparar hashes registrados en `build.json` para auditar la procedencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo es un artefacto de prueba con pesos aleatorios, por lo que cualquier metrica de calidad (MMLU, HumanEval, GSM8K) carece de sentido.
+No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un fixture con pesos aleatorios, cualquier metrica de calidad (MMLU, HumanEval, GSM8K) carece de sentido.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en bfloat16 (40,3 M de parametros, aproximadamente 80 MB de pesos) mas overhead de activaciones y runtime.
-- GPU recomendadas: cualquier GPU consumer moderna; no requiere A100 ni H100.
-- Cabe en GPU consumer: si, en cualquier GPU con al menos 1-2 GB de VRAM (por ejemplo, GTX 1650, RTX 3060, RTX 4090).
-- Tambien puede ejecutarse en CPU sin problema dado su tamano.
-- Opciones de despliegue: Transformers es el framework de referencia segun la model card; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI para este fixture.
-- Latencia y throughput: no disponibles; al ser un artefacto de prueba no se han publicado mediciones.
+- VRAM estimada para inferencia: aproximadamente 0,08 GB en bfloat16 (40,3 M de parametros), mas el overhead de activaciones y del tokenizador; cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: cualquier GPU con soporte de bfloat16 o float16, incluidas RTX 3060, RTX 4090, A100 o H100; tambien es viable en CPU.
+- Cabe en GPU consumer: si, en practicamente cualquier modelo con al menos 1 GB de VRAM.
+- Opciones de despliegue: Transformers (uso previsto segun la model card); otras opciones como vLLM, llama.cpp, Ollama o TGI no estan documentadas para este fixture.
+- Latencia y throughput: no disponibles; al ser un modelo de 3 capas y 40 M de parametros, la latencia seria minima, pero sin valor practico por los pesos aleatorios.
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen fixtures equivalentes de otros modelos en la informacion proporcionada, y la comparacion con el modelo base zai-org/GLM-5.3 no es significativa por la diferencia de escala (40,3 M frente al checkpoint completo) y por la ausencia de entrenamiento.
+| Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| GLM-5.3-mic | 40,3 M | no disponible | Fixture de prueba | no disponible | Hugging Face |
+| zai-org/GLM-5.3 | no disponible | no disponible | Modelo real de lenguaje | no disponible | Hugging Face |
+| Otros fixtures de transformers-mic | variable | no disponible | Pruebas de integracion | no disponible | Hugging Face (org. huggingface-mic) |
+
+La comparacion con modelos de lenguaje funcionales no es aplicable: GLM-5.3-mic no compite en calidad ni rendimiento, sino que es una herramienta de validacion de la arquitectura del modelo base.
 
 ## Limitaciones y advertencias
 
-- Los pesos son aleatorios: el modelo no genera texto util ni responde a instrucciones.
-- Esta etiquetado como `test-artifact` y no debe usarse en produccion ni como modelo candidato.
-- No se han publicado datos de sesgos, alucinacion ni evaluacion de seguridad porque no aplica a un fixture.
-- La licencia figura como "no disponible" en los metadatos; el fichero LICENSE se copia del modelo base, por lo que las condiciones reales dependen de zai-org/GLM-5.3.
-- El tokenizador y la plantilla de chat se copian del modelo base, pero no se garantiza que el comportamiento de generacion sea representativo.
-- La configuracion esta reducida a 3 capas ocultas, por lo que no reproduce el comportamiento numerico del checkpoint completo.
-- No hay informacion sobre contexto maximo, idiomas ni cuantizaciones soportadas para este artefacto.
+- Pesos aleatorios: el modelo no ha sido entrenado y no produce salidas coherentes; no debe usarse en produccion ni para evaluacion de calidad.
+- Etiquetado `test-artifact`: excluido deliberadamente de la busqueda de modelos candidatos; su uso previsto es unicamente testing.
+- Licencia no disponible: aunque se copia el fichero `LICENSE` del modelo base, su contenido no se detalla en la informacion proporcionada; verificar antes de cualquier redistribucion.
+- Configuracion reducida: solo 3 capas ocultas, por lo que no reproduce el comportamiento numerico ni el rendimiento del checkpoint completo.
+- Idiomas y contexto: no disponibles; el tokenizador copiado puede cubrir los idiomas del modelo base, pero sin pesos entrenados no hay capacidad multilingue real.
+- Riesgo de confusion: por el nombre, puede confundirse con una version cuantizada o ligera de GLM-5.3; no lo es.
+- Sin garantias de soporte en frameworks de inferencia de alto rendimiento (vLLM, TGI, llama.cpp) segun la informacion disponible.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/huggingface-mic/GLM-5.3-mic
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
-- Documentacion del shrink del fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/GLM-5.3-mic.html
-- Script de barrido (sweep.py): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Script de construccion de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Pagina del fixture MIC: https://huggingface.co/huggingface-mic/GLM-5.3-mic
+- Explicacion del proceso de reduccion: https://huggingface-mic-mic-coverage.static.hf.space/shrink/GLM-5.3-mic.html
 - Repositorio transformers-mic: https://github.com/huggingface/transformers-mic
-- Manifiesto de contrato: integration.json (en el repositorio)
-- Uso en Transformers: integrations/transformers/usage.md (en el repositorio)
-- Expectativas de Transformers: integrations/transformers/expectations (en el repositorio)
-- Procedencia del fixture: build.json (en el repositorio)
+- Script de construccion de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Regla de reduccion (`sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py

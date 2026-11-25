@@ -2,93 +2,102 @@
 
 ## Resumen
 
-SenseNova-Loop-9B es un modelo de lenguaje multimodal desarrollado por SenseNova (el brazo de IA de SenseTime) y distribuido en formato MLX por la comunidad `mlx-community`. Esta ficha describe concretamente la conversión cuantizada a 8 bits afín (group size 64) del modelo original, empaquetada para su ejecución en Apple Silicon mediante el framework MLX. El modelo base tiene 9.412.963.952 parámetros (aproximadamente 9,4 mil millones) y declara una longitud de contexto de 524.288 tokens, lo que lo sitúa en la gama de modelos de contexto largo con capacidades de visión.
+SenseNova-Loop-9B-mlx-affine8-g64 es una conversión a formato MLX del modelo SenseNova-Loop-9B publicado por SenseNova (sensenova/SenseNova-Loop-9B), realizada por la comunidad mlx-community para su ejecución en hardware Apple Silicon mediante el framework MLX. Se trata de una cuantización de solo pesos en 8 bits con tipo affine y tamaño de grupo 64, aplicada a 250 módulos lineales y de embedding, manteniendo en BF16 las normas, convoluciones y la totalidad de los 333 tensores de visión del modelo original.
 
-La relevancia de esta conversión concreta reside en que permite ejecutar un modelo de casi 10 mil millones de parámetros con visión integrada en hardware de consumo de Apple (el autor probó en un M5 Max con 128 GiB de memoria unificada), manteniendo los pesos de visión en BF16 y cuantizando solo las capas lineales y de embedding a 8 bits. No obstante, la model card advierte de que no es una conversión de referencia para PyTorch ni para `mlx_lm` estándar: requiere un cargador personalizado incluido en el repositorio y no debe ejecutarse el código original del editor.
+El modelo base emplea una arquitectura denominada `sensenova_loop` con una innovación central: una capa compartida que se ejecuta dos veces sobre el rango `[4,28)`, de modo que 32 capas físicas producen 56 visitas lógicas. Incorpora además un mecanismo mHC (multi-hyper-connection) con dos flujos y 20 iteraciones de Sinkhorn, atención completa combinada con atención lineal, y una ventana de contexto declarada de 524.288 tokens. El resultado es un modelo multimodal de 9.412.963.952 parámetros totales con capacidades de texto, código, matemáticas y visión.
 
-El modelo base emplea una arquitectura poco convencional, con una "capa compartida" que se ejecuta dos veces sobre el rango `[4,28)` (32 capas físicas, 56 visitas lógicas) y un mecanismo de routing denominado mHC con dos streams y 20 iteraciones de Sinkhorn. Esta conversión es experimental y su estado de validación es limitado: el propio autor documenta que solo uno de tres ejemplos cortos de texto, código y matemáticas terminó dentro de un presupuesto de 512 tokens de salida.
+La relevancia de esta ficha radica en que ofrece una vía práctica para ejecutar un modelo de casi 9.400 millones de parámetros con contexto extremadamente largo en equipos Apple Silicon con memoria unificada, algo que las conversiones estándar de PyTorch no permiten directamente. No obstante, se trata de una conversión comunitaria temprana, con validación limitada y sin benchmarks públicos de calidad, por lo que debe evaluarse con cautela antes de usarla en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido con atención completa y atención lineal, capa compartida reejecutada (loop) y routing mHC; multimodal (texto + imagen) |
+| Arquitectura | `sensenova_loop` (transformer con capa compartida reejecutada, mHC de dos flujos, atención completa + atención lineal) |
 | Parametros totales | 9.412.963.952 |
-| Parametros activos | no disponible (no se declara como MoE) |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
 | Longitud de contexto | 524.288 tokens (declarada, heredada del modelo original) |
-| Tipos de cuantizacion | Afín 8-bit solo de pesos, group size 64, sobre 250 módulos lineales/embedding; FP32 mHC routing, `A_log` y `dt_bias` excluidos; normas y convoluciones en BF16; pesos de visión en BF16 |
+| Tipos de cuantizacion | Affine 8-bit, group size 64, solo pesos (weight-only); normas, convoluciones y visión en BF16; FP32 en mHC routing, `A_log` y `dt_bias` |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (5 shards, 1.357 tensores indexados), librería MLX |
+| Formato de pesos | safetensors (MLX), 5 shards, 1.357 tensores indexados |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura combina atención completa con atención lineal (estados convolucionales y recurrentes distintos por cada visita lógica), una capa compartida que el modelo entrena para ejecutar dos veces sobre el rango de capas `[4,28)`, y un mecanismo de routing mHC con dos streams y 20 iteraciones de Sinkhorn. El modelo incorpora además una torre de visión con 333 tensores BF16 originales, lo que lo convierte en un modelo multimodal de imagen fija y texto. La configuración original declara una compuerta (gate) en FP32 que permanece inactiva y no se ejecuta, según la configuración del editor.
+La arquitectura `sensenova_loop` se basa en un transformer con una capa compartida que el modelo entrena para ejecutarse dos veces sobre el rango de capas `[4,28)`. Esto implica que, aunque físicamente hay 32 capas, el cómputo efectivo recorre 56 visitas lógicas, con estados KV de atención completa y estados convolucionales/recurrentes de atención lineal distintos para cada visita lógica. El mecanismo mHC (multi-hyper-connection) utiliza dos flujos y 20 iteraciones de Sinkhorn, que no deben confundirse con 20 pasadas de bucle. La configuración original incluye una compuerta FP32 inactiva que se conserva pero no se ejecuta, y un conjunto de 333 tensores de visión que permanecen en BF16 en esta conversión.
 
-No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF, DPO u otras fases de alineación. Tampoco se documentan innovaciones de decodificación especulativa ni detalles del proceso de preentrenamiento. La model card de esta conversión se centra exclusivamente en el proceso de cuantización y en las pruebas de fidelidad respecto al modelo BF16, no en el entrenamiento del modelo base.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otras fases de alineación, ya que la model card de esta conversión no los detalla y la información proporcionada no los incluye. La innovación técnica destacable es la combinación de capa compartida reejecutada con atención híbrida (completa y lineal) y contexto de 524.288 tokens, junto con la retención íntegra de la torre de visión en BF16 dentro de una conversión cuantizada.
 
 ## Capacidades
 
-- Generación de texto y razonamiento de propósito general, con contexto declarado de hasta 524.288 tokens.
-- Comprensión de imágenes fijas: la API directa acepta una imagen RGB (PIL) junto con texto en un lote de tamaño uno, sin padding.
-- Generación de código y respuestas matemáticas (validado de forma limitada: un ejemplo de matemáticas respondió `323`; un ejemplo de código llegó al límite de tokens y ofreció una alternativa de división en coma flotante inválida para enteros arbitrarios).
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible (no se declaran idiomas).
-- Capacidades especiales: modo de visión de imagen fija; no se soporta vídeo, ni batching de imágenes, ni prefill de imagen por chunks; el uso multi-imagen no está establecido.
+- Generación de texto en modo conversacional y completado de prompts cortos, validado en pruebas de humo con recarga estricta Q8.
+- Razonamiento matemático básico: en una observación con presupuesto de 512 tokens, una de tres pruebas (matemáticas) finalizó con la respuesta `323`.
+- Generación de código: en las pruebas observadas, la respuesta de código alcanzó el límite de 512 tokens y ofreció una alternativa con división en coma flotante inválida para enteros arbitrarios.
+- Capacidades de visión: clasificación de imágenes RGB PIL en lotes de uno; en tres imágenes de color sólido respondió `Red`, `Blue` y `Green` respectivamente.
+- Soporte de tool calling: se ejercitó una llamada a herramienta en una prueba de humo aislada de oMLX en modo texto.
+- Soporte de agentes y multi-step reasoning: no disponible como capacidad validada; el soporte de oMLX existe en una rama en revisión.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Capacidades especiales: contexto declarado de 524.288 tokens, atención híbrida completa/lineal, y modo de visión con prefill de imagen que rechaza el token 248044 (padding/EOS).
 
 ## Casos de uso
 
-- Procesamiento de documentos con imágenes en local: el modelo puede recibir una imagen RGB y una pregunta de texto para extraer información de capturas, diagramas o formularios, ejecutándose en un Mac con memoria unificada suficiente gracias a su cuantización a 8 bits.
-- Asistencia de código en entornos Apple Silicon: integrable en flujos de desarrollo local mediante el cargador personalizado, útil para autocompletado y explicación de fragmentos, aunque con la advertencia de que las respuestas de código pueden requerir revisión (se observó una sugerencia de división en coma flotante incorrecta para enteros).
-- Experimentación académica con arquitecturas de capa compartida: investigadores que estudien el efecto del reejecutado de capas y el routing mHC pueden usar esta conversión para inspeccionar el comportamiento del modelo con un coste de memoria reducido (10,5 GB de repositorio).
-- Clasificación o descripción de imágenes simples: la prueba de sanidad con tres imágenes de color sólido (rojo, azul, verde) respondió correctamente, lo que permite usarlo en tareas de verificación visual básica o prototipos de etiquetado.
-- Evaluación de fidelidad de cuantización: el repositorio incluye métricas de divergencia KL frente al modelo BF16 (0,000540 nats de media, 100% de acuerdo top-1 en 41 posiciones), lo que lo hace útil como caso de estudio para comparar técnicas de cuantización afín en MLX.
-- Prototipado de asistentes conversacionales de contexto largo en local: con la advertencia de que el soporte de oMLX es experimental, texto únicamente, sin streaming y con una sola petición activa, adecuado para pruebas de coherencia hasta 8k tokens verificados manualmente.
+- Procesamiento de documentos largos en local: con una ventana declarada de 524.288 tokens, el modelo puede ingerir libros completos, expedientes o bases de código extensas en un solo contexto, aunque la memoria necesaria a esa longitud no está medida en la información disponible.
+- Asistente de código en estación de trabajo Apple Silicon: al ejecutarse vía MLX en un M5 Max con 128 GiB de memoria unificada, permite autocompletado y explicación de código sin depender de la nube, con la advertencia de que la calidad de código no está benchmarkeada.
+- Clasificación y descripción de imágenes simples: la ruta de visión acepta una imagen RGB PIL por lote y responde a preguntas básicas de color o contenido, útil para tareas de etiquetado ligero en local.
+- Experimentación académica con arquitecturas de capa compartida: investigadores pueden estudiar el comportamiento de la reejecución de capas y del mecanismo mHC en un entorno MLX reproducible, con el código de soporte legible incluido en el repositorio.
+- Evaluación de cuantización y drift distribucional: el repositorio documenta métricas de divergencia KL entre BF16 y Q8 sobre 41 posiciones, lo que lo hace útil como caso de estudio de cuantización affine 8-bit en MLX.
+- Pruebas de integración de tool calling en agentes ligeros: la rama `feat/sensenova-loop` de oMLX permite ejercitar SSE, llamadas a herramientas y solicitudes concurrentes con límite serial global, aunque el soporte no está en la versión estable.
+- Desarrollo de prototipos multimodales sin GPU dedicada: al ejecutarse en memoria unificada de Apple Silicon, sirve para validar pipelines de visión-texto antes de migrar a infraestructura CUDA.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card solo incluye métricas de fidelidad de cuantización frente al modelo BF16:
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la información disponible. La model card únicamente documenta métricas de comparación de cuantización sobre prefijos teacher-forced congelados:
 
 | Metrica | Resultado |
-|---|---|
-| KL media forward, D_KL(BF16 ‖ Q8) | 0,000539691 nats (≈0,000540) |
+|---|---:|
+| KL media forward, D_KL(BF16 ‖ Q8) | 0,000539691 nats |
 | Acuerdo top-1 | 41/41 (100%) |
 | Diferencia media absoluta de NLL objetivo | 0,035126663 nats |
 | Posiciones evaluadas | 41 (23 texto + 15 código + 3 matemáticas) |
+| Distribuciones comparadas | 248.320 tokens por posición |
 
-Estas métricas se calcularon sobre prefijos forzados por profesor con distribuciones completas de 248.320 tokens, usando el adaptador solo-texto de la comparación, no el adaptador multimodal actual ni la ruta de imagen, y no establecen paridad con PyTorch nativo. El acuerdo top-1 indica coincidencia en el token más probable en esas posiciones, no precisión de tarea ni coincidencia de secuencia libre.
+Estas cifras miden deriva de la distribución del siguiente token en entradas fijas, no precisión de tarea ni acuerdo en generación libre. Además, la comparación se realizó con el adaptador de solo texto, no con el adaptador multimodal actual ni con la ruta de imagen, y no establece paridad con PyTorch nativo.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: el repositorio ocupa 10,5 GB en safetensors a 8 bits; en ejecución se requiere memoria adicional para estados KV y de atención lineal, además de los tensores BF16 de visión y normas.
-- GPU recomendadas: el entorno probado es un Apple M5 Max con 128 GiB de memoria unificada; no se documentan pruebas en GPU NVIDIA (A100, H100, RTX 4090) ni en otras configuraciones.
-- ¿Cabe en GPU de consumo? En Apple Silicon con memoria unificada suficiente, sí según la prueba del autor; en GPU de consumo NVIDIA no hay datos disponibles.
-- Opciones de despliegue: cargador personalizado incluido en `support/sensenova_mlx/` (con script de build `support/build_wheel.sh`); MLX 0.32.4 y MLX-LM en la revisión `c4c9c762cc797fd979fc98645f5db5112753bbe9`; oMLX parcheado de forma experimental solo para texto, sin streaming y con caché de prefijo desactivada. `mlx_lm.load` estándar no está establecido para esta arquitectura. No se debe ejecutar el `modeling_sensenova_loop.py` original ni habilitar código remoto.
-- Latencia y throughput: no disponibles; solo se documenta una prueba manual de coherencia hasta 8k tokens en oMLX parcheado en frío.
+- VRAM/memoria unificada estimada: el repositorio ocupa 10,5 GB en disco con cuantización affine 8-bit; en ejecución se necesita además memoria para estados KV de atención completa y estados recurrentes/convolucionales de atención lineal, que crecen con la longitud de contexto y no están cuantificados.
+- Entorno probado: Apple M5 Max con 128 GiB de memoria unificada, macOS 27.2.1, Python 3.12.13, MLX 0.32.4, MLX-LM en revisión `0d4d3d04f8ab7ce4a51e7209e8615755a48ba94d`, Transformers 5.22.2 y NumPy 2.3.5.
+- GPU recomendadas: no aplica a CUDA; el formato MLX está orientado a Apple Silicon. No hay datos de ejecución en A100, H100 ni RTX 4090.
+- Cabe en GPU de consumo: no disponible para GPUs NVIDIA; en Apple Silicon se validó en un equipo de gama alta con 128 GiB, y no se documenta el mínimo de memoria unificada necesario.
+- Opciones de despliegue: MLX-LM con el modelo registrado desde `support/sensenova_mlx/`; cargador estricto directo; oMLX en la rama `feat/sensenova-loop` (pendiente de revisión upstream). No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles. Solo se documenta que la carga registrada y la directa coincidieron exactamente en los 1.023 tensores ejecutables, logits de prompt corto y tokens greedy.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos de la misma categoría (multimodales de ~9B con contexto largo), por lo que no es posible establecer una comparación rigurosa de parámetros, contexto, rendimiento, licencia y disponibilidad.
+No disponible. La información proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos de tamaño o tarea comparable, y la model card no ofrece comparaciones con otros modelos.
 
 ## Limitaciones y advertencias
 
-- Conversión experimental: no es una conversión de referencia ni paridad con PyTorch nativo; las métricas de cuantización provienen del adaptador solo-texto, no del adaptador multimodal actual.
-- Cargador no estándar: requiere el cargador personalizado del repositorio; `mlx_lm.load` estándar no está establecido para esta arquitectura.
-- Riesgo de ejecución insegura: no se debe ejecutar el `modeling_sensenova_loop.py` original incluido ni habilitar código remoto; el código se conserva solo porque la configuración sin cambios referencia la fuente del editor.
-- Soporte multimodal restringido: solo imagen fija RGB, lote de uno, sin padding; el prefill de imagen rechaza el token 248044 (padding/EOS); no se soporta vídeo, batching de imágenes ni prefill por chunks; el uso multi-imagen no está establecido.
-- Calidad de generación limitada en las pruebas: de tres ejemplos cortos (texto, código, matemáticas), solo uno terminó dentro de 512 tokens de salida; la respuesta de código incluyó una alternativa de división en coma flotante inválida para enteros arbitrarios.
-- oMLX experimental: probado solo con texto, sin streaming, sin caché de prefijo y con una sola petición activa; los parches no se distribuyen.
-- Idiomas y sesgos: no se declaran idiomas soportados ni se documentan sesgos conocidos; el riesgo de alucinación no está cuantificado.
-- Contexto declarado no verificado: los 524.288 tokens provienen de la fuente original; no se han medido memoria ni precisión a longitudes crecientes.
-- Licencia Apache-2.0: permite uso comercial, pero el código de soporte derivado de la fuente se distribuye bajo Apache-2.0 con avisos de terceros; conviene revisar `THIRD_PARTY_NOTICES.md` y `docs/NOTICES.md` antes de producción.
+- No se han publicado benchmarks de calidad para código, matemáticas ni razonamiento; la model card propone establecerlos como trabajo futuro.
+- En las observaciones con presupuesto de 512 tokens, solo una de tres pruebas (matemáticas) finalizó; texto y código alcanzaron el límite, y la respuesta de código incluyó una alternativa con división en coma flotante inválida para enteros arbitrarios.
+- La ruta de imagen solo admite una imagen RGB PIL por lote, completa y sin padding; rechaza el token 248044 (padding/EOS) en el prefill. No soporta vídeo, batching de imágenes ni prefill de imagen por trozos, y el uso multi-imagen no está establecido.
+- No se debe ejecutar el `modeling_sensenova_loop.py` original incluido ni habilitar código remoto: se conserva solo porque la configuración sin cambios referencia el código del publicador, no como cargador MLX.
+- Las métricas de cuantización proceden del adaptador de solo texto y no del adaptador multimodal actual ni de la ruta de imagen; no establecen paridad con PyTorch nativo.
+- El soporte en oMLX está en una rama pendiente de revisión upstream, no en la versión estable.
+- La longitud de contexto de 524.288 tokens está declarada pero no se ha medido memoria ni precisión a longitudes crecientes; la model card lo lista como trabajo futuro.
+- Idiomas soportados no disponibles; sesgos conocidos no documentados en la información proporcionada.
+- Riesgo de alucinación: no cuantificado en la información disponible; las pruebas de humo son insuficientes para estimarlo.
+- Licencia Apache-2.0, que permite uso comercial, pero el código de soporte derivado se distribuye bajo Apache-2.0 con avisos de terceros que deben revisarse en `THIRD_PARTY_NOTICES.md` y `docs/NOTICES.md`.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/mlx-community/SenseNova-Loop-9B-mlx-affine8-g64
+- Hugging Face: https://huggingface.co/mlx-community/SenseNova-Loop-9B-mlx-affine8-g64
 - Modelo base: https://huggingface.co/sensenova/SenseNova-Loop-9B
-- Guía de instalación y API: `docs/INSTALL.md` (dentro del repositorio)
-- Metodología de pruebas: `docs/METHODS.md` (dentro del repositorio)
-- Script de build: `support/build_wheel.sh` (dentro del repositorio)
-- Código de soporte: `support/sensenova_mlx/` (dentro del repositorio, Apache-2.0)
-- Avisos de terceros: `THIRD_PARTY_NOTICES.md` y `docs/NOTICES.md` (dentro del repositorio)
+- Código de soporte: `support/sensenova_mlx/` dentro del repositorio
+- Script de construcción: `support/build_wheel.sh`
+- Guía de instalación y API: `docs/INSTALL.md`
+- Métodos de evaluación: `docs/METHODS.md`
+- Avisos de terceros: `THIRD_PARTY_NOTICES.md`
+- Evidencia de licencias: `docs/NOTICES.md`
+- Licencia del código de soporte: `support/LICENSE`
+- Rama oMLX: https://github.com/rgarcia-fx/omlx/tree/feat/sensenova-loop
+- Guía oMLX: https://github.com/rgarcia-fx/omlx/blob/feat/sensenova-loop/docs/sensenova.md

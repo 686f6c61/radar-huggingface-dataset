@@ -48,7 +48,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 296,
+  "downloads_30d": 298,
   "trending_score": 0,
   "parameters": 4715520,
   "parameters_human": "4.7M",
@@ -68,7 +68,7 @@
   "benchmarks": [
     {
       "task": "cell and molecular biology question answering",
-      "dataset": "Golden answers (619 documented questions, Windows + Linux Python 3.10-3.14)",
+      "dataset": "Golden answers (701 documented questions, Windows + Linux Python 3.10-3.14)",
       "metric": "identical on every platform",
       "value": 1
     }

@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "Alfaaz-jarvis/adobe-acrobat-pro-2026-dc-x64-portable",
+  "slug": "alfaaz-jarvis-adobe-acrobat-pro-2026-dc-x64-portable",
+  "author": "Alfaaz-jarvis",
+  "url": "https://huggingface.co/Alfaaz-jarvis/adobe-acrobat-pro-2026-dc-x64-portable",
+  "created_at": "2026-11-24T22:28:45.000Z",
+  "updated_at": "2026-11-24T22:28:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "other",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alfaaz - Hamza Malik, Zain Ali | Lyrics - YouTube",
+      "url": "https://www.youtube.com/watch?v=9sk055GaoSg",
+      "snippet": "Sep 17, 2026 · #Alfaaz #HamzaMalik #ZainAli Audio Credits :- Composition - Hamza Malik, Zain Ali, Najaf Ali Lyrics - Hamza Malik, …"
+    },
+    {
+      "title": "Hamza Malik & Zain Zohaib – Alfaaz Lyrics | Genius Lyrics",
+      "url": "https://genius.com/Hamza-malik-and-zain-zohaib-alfaaz-lyrics",
+      "snippet": "Jul 23, 2026 · “Alfaaz” explores the feeling of being so deeply in love that words seem inadequate to express the depth of your …"
+    }
+  ]
+}

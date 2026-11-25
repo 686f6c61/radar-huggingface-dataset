@@ -60,16 +60,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "STEL-LIUM · GitHub",
-      "url": "https://github.com/STEL-LIUM",
-      "snippet": "Sort Triton-General- Public Just another AI Agent Batchfile 1 0 0 0 Updated 2 weeks ago triton-extensions Public Optional add-ons for Triton — simulation, board design, and more."
-    },
-    {
-      "title": "STEL-LIUM/triton-engine · Hugging Face",
-      "url": "https://huggingface.co/STEL-LIUM/triton-engine",
-      "snippet": "STEL-LIUM / triton-engine Like 1 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
-    }
-  ]
+  "sources": []
 }

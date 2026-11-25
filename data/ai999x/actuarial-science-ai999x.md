@@ -2,94 +2,105 @@
 
 ## Resumen
 
-`actuarial-science-ai999x` es un motor de resolución de problemas actuariales y de seguros desarrollado por AI999X (Ibnul Jaif Farabi) y publicado en Hugging Face bajo licencia Apache-2.0. A pesar de su nombre y de su empaquetado como modelo, no es un modelo de lenguaje en sentido estricto: se trata de un motor neuro-simbólico determinista que combina un lector basado en reglas con 91 procedimientos simbólicos certificados escritos en Python (sympy, mpmath). Recibe preguntas en inglés natural o llamadas tipadas y devuelve resultados exactos con pasos, unidades, LaTeX y supuestos, o un rechazo explícito cuando no puede verificar la respuesta.
+actuarial-science-ai999x es un solver determinista de ciencia actuarial y seguros publicado por AI999X en Hugging Face bajo licencia Apache 2.0. No es un modelo de lenguaje generativo al uso: se distribuye como un motor compilado (con build en Rust y API en Python) que resuelve 93 calculos agrupados en 15 temas del dominio actuarial, desde tablas de mortalidad y rentas vitalicias hasta reservas de siniestralidad con chain-ladder, Bornhuetter-Ferguson o Cape Cod. Cada calculo devuelve formula, pasos intermedios, unidades y una explicacion en lenguaje natural cuando una entrada falta o queda fuera de rango.
 
-El paquete declara 4.715.520 parámetros en formato safetensors, aunque su funcionamiento real no depende de inferencia neuronal clásica: la librería se distribuye como wheel de Python puro y se ejecuta exclusivamente en CPU, sin GPU, sin red y sin clave de API. Su propuesta de valor es el determinismo y la ausencia de alucinaciones por diseño, con siete resultados posibles (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR) y 568 respuestas documentadas reproducidas de forma idéntica en Windows y Linux sobre Python 3.10 a 3.14.
+El paquete pesa apenas 4.715.520 parametros declarados en safetensors y el repositorio ocupa 0,0 GB, lo que refleja que el nucleo es un motor de reglas y calculo simbolico, no una red neuronal de gran escala. Se puede usar de cuatro formas: aplicacion de escritorio para Windows y Linux, CLI, version web y biblioteca de Python 3.10+. Todo se ejecuta en local, sin conexion, lo que encaja con el requisito de trazabilidad y reproducibilidad que exige el trabajo actuarial en produccion.
 
-Es relevante ahora para el nicho EdTech y de tutoría STEM porque ofrece una alternativa verificable a los LLM generativos en dominios donde un error numérico es inaceptable (contingencias de vida, reservas de siniestros, credibilidad). Su cobertura se limita a seis áreas actuariales concretas y su interfaz de lenguaje natural solo reconoce formas de pregunta documentadas, por lo que no debe confundirse con un asistente conversacional general.
+Su relevancia actual esta en el nicho: frente a los LLM generalistas que alucinan formulas o confunden convenciones (por ejemplo, anualidad-vencida frente a anticipada, o descuento con tipo de interes tecnico frente a tipo de descuento), este motor ofrece respuestas identicas y auditables en cada plataforma. La model card declara una precision de 1,0 sobre 586 preguntas documentadas con respuestas de referencia, verificadas en Windows y Linux con Python 3.10 a 3.14.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Motor neuro-simbólico determinista (lector basado en reglas + 91 capacidades simbólicas certificadas en Python/sympy/mpmath) |
-| Parámetros totales | 4.715.520 (según safetensors del repo) |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (no es un modelo de contexto; procesa una pregunta por llamada) |
-| Tipos de cuantización | No disponible (no requiere cuantización; ejecución en CPU con Python puro) |
-| Idiomas soportados | Inglés (`en`) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors y ONNX en el repo; distribución principal como wheel de Python (`actuarial_science_ai999x-1.0.0-py3-none-any.whl`) |
+| Arquitectura | Motor de calculo compilado (nucleo en Rust, API Python); no es un transformer |
+| Parametros totales | 4.715.520 (safetensors declarados) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (no aplica: solver determinista, no modelo generativo) |
+| Tipos de cuantizacion | no disponible (no se distribuyen pesos cuantizados; el paquete pip instala el motor compilado o un build en Python puro) |
+| Idiomas soportados | en |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors en el repo; distribucion principal via pip (`actuarial-science-ai999x`), binarios de escritorio y CLI para Windows y Linux x86-64 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es neuro-simbólica híbrida: una capa de lectura basada en reglas interpreta la pregunta en inglés natural o la llamada tipada, selecciona una de las 91 capacidades certificadas y delega el cálculo en procedimientos simbólicos deterministas implementados con sympy y mpmath. Cada resultado se verifica antes de devolverse mediante sustitución inversa, comprobación dimensional o comparación con un cálculo independiente. No hay entrenamiento neuronal con descenso de gradiente, RLHF ni DPO documentado; el conocimiento reside en un "knowledge pack" versionado (1.0.0) y en las capacidades certificadas.
+No se trata de una red neuronal entrenada con descenso de gradiente. El modelo es un solver de dominio cerrado: 93 calculos en 15 temas, cada uno con su formula, su secuencia de pasos y sus unidades. El nucleo esta compilado (Rust segun los tags y la descripcion del paquete) y se expone mediante una API de Python; en plataformas sin binario precompilado (macOS, ARM) `pip` instala un build en Python puro que produce las mismas respuestas. La model card no documenta corpus de entrenamiento, numero de tokens, RLHF ni DPO, porque no aplica a esta clase de artefacto.
 
-La innovación técnica destacable es el diseño de "cero respuestas incorrectas": el sistema prefiere rechazar (NEEDS_INPUT, AMBIGUOUS, OUT_OF_SCOPE) antes que adivinar, y garantiza reproducibilidad exacta entre plataformas. El paquete declara compatibilidad con Python 3.10, 3.11, 3.12, 3.13 y 3.14, y se ha probado en Windows (Python 3.13) y Linux x86-64. La model card indica explícitamente `inference: false` en los metadatos, lo que confirma que no se trata de un modelo para generación autoregresiva.
+Los temas cubiertos incluyen tablas de vida y modelos de supervivencia, seguros de vida y rentas, primas netas y brutas, reservas y ecuacion de Thiele, teoria del interes, modelos de perdida con deducibles y limites, recursion de Panjer, VaR y TVaR, credibilidad (Buhlmann) y reservas de siniestralidad (chain-ladder, Bornhuetter-Ferguson, Cape Cod, Mack). La innovacion tecnica destacable es el comportamiento ante entradas invalidas: en lugar de devolver un numero plausible pero erroneo, el motor emite una razon en lenguaje natural. Eso lo hace apto para docencia y para pipelines donde un fallo silencioso es mas caro que un error explicito.
 
 ## Capacidades
 
-- Resolución de problemas actuariales de contingencias de vida: primas netas de seguros de vida entera, anualidades contingentes y cálculos asociados.
-- Teoría del interés y anualidades ciertas: valor actual, valor final, anualidades anticipadas y vencidas.
-- Primas y reservas: cálculo de primas netas y reservas para distintos productos.
-- Modelos de pérdidas: distribución de Pareto con deducible, frecuencia y severidad, agregación de siniestros.
-- Credibilidad de Bühlmann: cálculo del factor de credibilidad, prima de credibilidad y parámetros estructurales.
-- Reservas de siniestros mediante chain-ladder: proyección de valores últimos y reservas por año de origen.
-- Interfaz de doble vía: `ask()` para preguntas en inglés natural documentadas y `solve(capability_id, **inputs)` para llamadas tipadas garantizadas.
-- Salida explicativa: pasos, fórmulas en LaTeX, unidades, supuestos y capacidad utilizada, apta para notebooks y correctores de deberes.
-- Ejecución totalmente offline en CPU, sin GPU, sin red y sin clave de API.
-- No soporta tool calling genérico, agentes multi-paso, visión, audio ni modo de razonamiento libre; su alcance está acotado a las 91 capacidades certificadas.
+- Resolucion de 93 calculos actuariales en 15 areas: tablas de mortalidad, supervivencia, seguros de vida, rentas vitalicias y ciertas, primas netas y brutas, reservas y ecuacion de Thiele, teoria del interes.
+- Modelos de perdida con deducibles ordinarios y con limite, agregacion por recursion de Panjer, VaR y TVaR.
+- Credibilidad de Buhlmann con parametros estructurales conocidos.
+- Reservas de siniestralidad: chain-ladder (reservas y perdidas ultimas), Bornhuetter-Ferguson, Cape Cod y Mack.
+- Salida paso a paso con formula, pasos intermedios, unidades y resultado final, apta para revision y auditoria.
+- Manejo explicito de entradas faltantes o fuera de rango mediante mensajes razonados en lugar de cifras inventadas.
+- Cuatro interfaces: aplicacion de escritorio (Windows, Linux), CLI `actuarial-science`, version web y biblioteca de Python 3.10+.
+- Ejecucion completamente offline, sin llamadas a servicios externos.
+- Escenas y graficos generados a partir de la respuesta calculada (por ejemplo, primas, reservas y valores de anualidades).
+- No soporta tool calling generativo, agentes multi-paso ni razonamiento abierto: el alcance es el dominio actuarial cerrado.
 
 ## Casos de uso
 
-- Tutoría de asignaturas actuariales: un estudiante plantea un problema de prima neta o de credibilidad y el motor devuelve el resultado con pasos y LaTeX, lo que permite usar la salida como solución comentada en plataformas EdTech sin riesgo de cifras inventadas.
-- Corrección automática de deberes STEM: integrado en un pipeline de evaluación, `solve()` con entradas tipadas valida respuestas numéricas de ejercicios de contingencias de vida y reservas, y el rechazo explícito evita calificar mal por una alucinación.
-- Generación de exámenes y solucionarios: el motor produce 568 respuestas documentadas reproducibles, útiles como banco de referencia para generar variantes de problemas con solución verificada.
-- Formación interna en aseguradoras: cálculo de primas, reservas chain-ladder y credibilidad de Bühlmann en sesiones de formación, ejecutándose en portátiles sin GPU ni conexión.
-- Validación cruzada en producción aseguradora: uso como oráculo determinista que contrasta resultados de hojas de cálculo o de modelos internos en cálculos de reservas y primas, con verificación por sustitución inversa.
-- Despliegue en entornos edge o air-gapped: al ser Python puro y funcionar offline, puede instalarse en equipos sin acceso a internet ni aceleradores, por ejemplo en aulas o auditorías internas.
-- Integración en notebooks de investigación: la salida estructurada con unidades y supuestos facilita la reproducibilidad de cálculos actuariales en cuadernos Jupyter y la comparación entre plataformas Windows y Linux.
+- Formacion y preparacion de examenes actuariales: el alumno plantea un problema de prima neta de vida entera o de renta vitalicia diferida y obtiene formula, pasos y unidades, lo que permite comparar su desarrollo con el del motor sin depender de un tutor.
+- Validacion de hojas de calculo en produccion: se replica en Python el calculo de reservas por chain-ladder o Bornhuetter-Ferguson y se contrasta con el resultado del motor para detectar discrepancias en supuestos o en el tratamiento de la cola.
+- Auditoria y revision interna: al devolver la secuencia de pasos y las unidades, el resultado es trazable y se puede adjuntar como evidencia en un informe de revision de reservas o de tarificacion.
+- Tarificacion de productos de vida y rentas: calculo de primas netas y brutas, anualidades ciertas y seguros con deducible para escenarios de sensibilidad sobre tipo de interes tecnico y tabla de mortalidad.
+- Cuantificacion de riesgo agregado: VaR y TVaR sobre carteras modeladas con deducibles y limites, y agregacion de frecuencias y severidades mediante recursion de Panjer.
+- Docencia universitaria y material de practicas: la version web y la de escritorio permiten construir ejercicios interactivos con controles deslizantes donde la escena y los graficos se actualizan con la respuesta calculada.
+- Integracion en pipelines de Python: `pip install actuarial-science-ai999x` permite invocar el motor desde scripts de validacion, notebooks o servicios internos sin salida a Internet, util en entornos con requisitos de confidencialidad de datos.
 
 ## Benchmarks y rendimiento
 
-Los datos siguientes proceden del `model-index` declarado por el autor; la métrica figura como `verified: false`.
+Datos declarados por el autor en el model-index de la model card:
 
-| Tarea | Dataset | Métrica | Valor |
-|---|---|---|---|
-| Question answering (ciencia actuarial y seguros) | Golden answers (568 preguntas documentadas, Windows + Linux, Python 3.10-3.14) | Accuracy (idéntico en cada plataforma) | 1.0 |
+| Tarea | Dataset | Metrica | Valor | Verificado |
+|---|---|---|---|---|
+| Question answering actuarial y de seguros | Golden answers (586 preguntas documentadas, Windows + Linux, Python 3.10-3.14) | Accuracy | 1,0 | No |
+| Question answering actuarial y de seguros | Mismo conjunto | Identico en todas las plataformas | Si (declarado como nombre de metrica) | No |
 
-No se han publicado en la información disponible resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) ni comparaciones con otros modelos.
+No se han publicado en la informacion disponible resultados comparativos con otros modelos en MMLU, HumanEval, GSM8K ni en benchmarks actuariales estandar. La cifra de 1,0 procede del propio autor y no esta verificada de forma independiente.
 
 ## Requisitos de hardware
 
-- VRAM: no requiere GPU; ejecución exclusiva en CPU.
-- GPU recomendadas: ninguna; el paquete no usa aceleración por hardware.
-- Cabe en cualquier equipo consumer: depende solo de Python 3.10-3.14 y de las dependencias sympy y mpmath.
-- Despliegue: instalación vía `pip install actuarial-science-ai999x` o del wheel del repositorio; también disponible como app de escritorio, CLI y ejecución en navegador según los enlaces de la model card. No aplica despliegue con vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo generativo.
-- Latencia y throughput: no disponibles en la información proporcionada; al ser cálculo simbólico determinista, la latencia depende de la capacidad invocada y no del hardware gráfico.
+- VRAM estimada para inferencia: no aplica; el motor no ejecuta pesos en GPU. Consumo de CPU y memoria RAM moderado, coherente con un paquete de 0,0 GB y 4,7 millones de parametros declarados.
+- GPU recomendadas: no disponible; no se requiere GPU.
+- Cabe en cualquier equipo de consumo: la build compilada cubre Windows y Linux x86-64; en macOS y ARM se instala la build en Python puro con las mismas respuestas.
+- Opciones de despliegue: aplicacion de escritorio (Windows, Linux), CLI `actuarial-science`, version web en la pagina del modelo y biblioteca de Python (`pip install actuarial-science-ai999x`).
+- No es compatible con vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo de lenguaje con pesos transformer.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye modelos comparables de la misma categoría (motores neuro-simbólicos actuariales deterministas) ni datos de rendimiento frente a alternativas.
+| Modelo | Tipo | Parametros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|---|
+| actuarial-science-ai999x | Solver de dominio compilado | 4.715.520 declarados | no aplica | Apache 2.0 | 93 calculos actuariales deterministas, offline |
+| LLM generalista (p. ej. familia Llama o Mistral) | Transformer generativo | Miles de millones | Miles de tokens | Variable | Razonamiento abierto, riesgo de alucinacion en formulas |
+| Bibliotecas actuariales de Python (p. ej. `lifelib`, `chainladder`) | Libreria de calculo | no aplica | no aplica | Variable (habitualmente BSD o similar) | Funciones sueltas, sin pasos explicados ni escenas |
+| Hojas de calculo propietarias | Herramienta ofimatica | no aplica | no aplica | Comercial | Flexibilidad alta, trazabilidad y validacion manuales |
+
+La comparativa con LLM generalistas no es directa: estos cubren un espectro mucho mayor de tareas, pero no garantizan consistencia en convenciones actuariales ni ofrecen el mismo nivel de trazabilidad paso a paso. Frente a librerias como `lifelib` o `chainladder`, la diferencia esta en la cobertura integrada de 15 temas y en la salida didactica con unidades y mensajes de error razonados. No se dispone de datos de rendimiento comparativo publicados.
 
 ## Limitaciones y advertencias
 
-- Cobertura acotada: solo seis áreas actuariales (contingencias de vida, teoría del interés, primas y reservas, modelos de pérdidas, credibilidad y reservas de siniestros) mediante 91 capacidades certificadas; cualquier cuestión fuera de ese alcance devuelve OUT_OF_SCOPE.
-- Idioma: únicamente inglés; las formas de pregunta aceptadas por `ask()` están documentadas y las variantes no reconocidas devuelven UNRECOGNIZED_FORMAT.
-- No es un LLM conversacional: no mantiene diálogo multi-turno, no genera texto libre ni razona fuera de sus capacidades; los metadatos declaran `inference: false`.
-- El benchmark de accuracy 1.0 procede del propio autor, se evalúa sobre su propio conjunto de 568 preguntas documentadas y figura como no verificado; no debe interpretarse como validación independiente.
-- Riesgo de alucinación: bajo por diseño (rechazo explícito en lugar de adivinar), pero la corrección depende de que la pregunta se mapee a la capacidad adecuada y de que los supuestos declarados coincidan con el problema real.
-- Licencia Apache-2.0: permite uso comercial y modificación con atribución; conviene revisar el archivo LICENSE del repositorio para los términos exactos.
-- Para producción: validar que la versión del knowledge pack (1.0.0) y del paquete coinciden, y fijar la versión en el pipeline para preservar la reproducibilidad de las 568 respuestas documentadas.
+- Cobertura cerrada: solo resuelve los 93 calculos documentados en 15 temas; cualquier problema fuera de ese conjunto queda sin respuesta.
+- Idioma unico: la interfaz y las explicaciones estan en ingles; no hay soporte documentado de castellano.
+- La precision de 1,0 esta declarada por el autor y no verificada de forma independiente; conviene reproducirla con casos propios antes de confiar en ella en produccion.
+- No es un modelo generativo: no redacta informes, no interpreta enunciados en lenguaje natural libre ni mantiene conversaciones multi-turno.
+- Dependencia de las convenciones implementadas: si el usuario trabaja con otra convencion (por ejemplo, anualidad anticipada frente a vencida, o UDD frente a fuerza de mortalidad constante), el resultado puede diferir aunque el motor sea correcto bajo su propio marco.
+- En macOS y ARM se ejecuta la build en Python puro; el autor afirma respuestas identicas, pero el rendimiento puede ser inferior al de la build compilada.
+- Licencia Apache 2.0: permite uso comercial, modificacion y redistribucion con atribucion y aviso de cambios; no hay clausula de uso responsable adicional documentada.
+- Al ser un solver determinista, el riesgo de alucinacion se limita a entradas mal especificadas; aun asi, la validacion de unidades y supuestos sigue siendo responsabilidad del usuario.
+- No sustituye la revision de un actuario cualificado en decisiones de tarificacion, reservas o solvencia.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/AI999X/actuarial-science-ai999x
-- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
-- Aplicación de escritorio y CLI: https://www.ai999x.com/desktop-cli/
-- Ejecución en navegador: https://www.ai999x.com/models/actuarial-science-ai999x/#try
-- Paquete en PyPI: https://pypi.org/project/actuarial-science-ai999x/
-- Guías del repositorio: https://huggingface.co/AI999X/actuarial-science-ai999x/tree/main/docs
-- Evaluación del repositorio: https://huggingface.co/AI999X/actuarial-science-ai999x/tree/main/evaluation
-- Sitio web: https://ai999x.com
-- Apoyo al desarrollo: https://buymeacoffee.com/ibnuljaiffarabi
+- Pagina del modelo con demo web: https://www.ai999x.com/models/actuarial-science-ai999x/
+- Repositorio de escritorio y CLI: https://github.com/AI999X/ai999x-desktop
+- Release de escritorio Windows v1.6.7: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-actuarial-science-1.6.7-windows-x86_64.zip
+- Release de escritorio Linux v1.6.7: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-actuarial-science-1.6.7-linux-x86_64.tar.gz
+- Release de CLI Windows v1.6.7: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-windows-x86_64.zip
+- Release de CLI Linux v1.6.7: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-linux-x86_64.tar.gz
+- Video de demostracion (MP4): https://www.ai999x.com/?ax_shot=actuarial-science-ai999x/clip.mp4
+- Paquete de Python: `pip install actuarial-science-ai999x`

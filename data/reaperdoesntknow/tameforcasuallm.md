@@ -2,89 +2,91 @@
 
 ## Resumen
 
-TameForCasualLM es un modelo de generacion de texto presentado por el usuario de Hugging Face `reaperdoesntknow` bajo la denominacion interna TAMELM-AFMoER-BHR (Time Aware Model of Emergence / Adaptive Fuzzy Model of Expert Routers con Blackhole Rope). Se trata de un modelo conversacional de aproximadamente 1.000 millones de parametros descrito por su autor como una ampliacion (2,5x) de una variante previa de 421M, con una arquitectura propietaria basada en enrutamiento disperso entre 16 expertos y un mecanismo denominado Blackhole Rope que actua como estabilizador de dinamicas multi-escala.
+TameForCasualLM es un modelo experimental de generacion de texto desarrollado por el usuario independiente reaperdoesntknow (vinculado a Convergent Intelligence LLC, Research Division). Se presenta como una variante de 1B parametros de la familia TAMELM (Time Aware Model of Emergence) con un mecanismo denominado AFMoER-BHR (Adaptive Fuzzy Model of Expert Routers con Blackhole Rope). El modelo parte de una version previa de 421M parametros y aplica un esquema de routing por expertos con dinamicas inspiradas en fisica (atractores tipo gravitatorio, osciladores multi-escala y amplificacion de energia) para estabilizar el flujo de informacion entre escalas temporales.
 
-El modelo se posiciona como una exploracion de investigacion sobre eficiencia en el entrenamiento: el autor afirma haberlo entrenado con aproximadamente 1 millon de tokens en CPU (FP32), sin GPU, y con una perdida final de 3,8, lo que segun su propia model card indica que sigue en fase de preentrenamiento. No se trata, por tanto, de un modelo listo para produccion, sino de una prueba de concepto sobre arquitecturas de enrutamiento con atractores gravitacionales y dinamicas temporales multiples.
+El modelo esta disenado para conversacion y razonamiento basico (matematicas y fisica), y se distribuye bajo licencia Apache 2.0. Su relevancia actual es limitada pero interesante como experimento de investigacion: propone un paradigma de routing MoE con regularizacion por entropia y dinamicas simpecticas, entrenado integramente en CPU en FP32 con un presupuesto de tokens muy reducido (~1M). Es, por tanto, un modelo de investigacion mas que un modelo listo para produccion.
 
-La relevancia actual del modelo es limitada fuera del ambito de la investigacion experimental: la informacion publica es escasa, no hay benchmarks verificables, el entrenamiento declarado es minimo y la model card mezcla terminologia tecnica con metaforas fisicas. Resulta util como referencia para quienes siguen lineas heterodoxas de arquitecturas MoE y mecanismos de estabilizacion, pero no como alternativa practica a modelos consolidados de tamano similar.
+El repositorio ocupa 4,3 GB y acumula 2670 descargas con solo 1 like, lo que sugiere interes por curiosidad mas que adopcion real. La model card es extensa en filosofia de diseno pero escasa en resultados empiricos verificables.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | TAMELM con Adaptive Vortex + Blackhole Rope (AFMoER-BHR); transformer con enrutamiento disperso entre expertos |
-| Parametros totales | ~1B (aprox. 1.000 millones) |
-| Parametros activos | 4 expertos por paso sobre 16 totales (dimension de experto 128); no se especifica el numero exacto de parametros activos |
-| Longitud de contexto | No disponible (entrenado con longitudes de secuencia de 512 y 1024) |
-| Tipos de cuantizacion | No disponible (entrenamiento en FP32; no se documentan pesos cuantizados) |
-| Idiomas soportados | Ingles (segun el campo `language: en`) |
+| Arquitectura | TAMELM con Adaptive Vortex + Blackhole Rope (AFMoER-BHR), transformer con routing MoE disperso y osciladores multi-escala |
+| Parametros totales | ~1B (2,5x respecto a la base de 421M) |
+| Parametros activos | 4 expertos de 16 por paso (routing disperso, dim de experto 128) |
+| Longitud de contexto | no disponible (entrenado con secuencias de 512 y 1024) |
+| Tipos de cuantizacion | no disponible (entrenado y publicado en FP32) |
+| Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | No disponible (repo de 4,3 GB en transformers/pytorch; no se confirma safetensors ni GGUF) |
+| Formato de pesos | no disponible (repo de 4,3 GB, libreria transformers; probablemente safetensors o bin, no confirmado) |
+
+Otros datos tecnicos declarados: 26 capas, dimension de embedding 512, dimension de fase 64, 3 escalas temporales (dt = 0,1 / 0,02 / 0,0005), amplificacion de energia 1e4, regularizacion de entropia de routing lambda = 0,01, lambda_discrepancy = 0,3, lambda_quantum = 0,001.
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada combina un transformer con modulos de enrutamiento disperso (16 expertos, 4 activos por paso) y un mecanismo de "osciladores multifase" que opera en tres escalas temporales (rapida, media y lenta, con dt de 0,1 / 0,02 / 0,0005). El componente Blackhole Rope se describe como un sistema de enrutamiento basado en campos que ancla las decisiones de routing a atractores tipo gravitatorio, con amplificacion de energia controlada (1e4) y regularizacion de entropia de enrutamiento (lambda = 0,01). El modelo tiene 26 capas, dimension de embedding 512 y dimension de fase 64. La model card menciona terminos de discrepancia (lambda_discrepancy = 0,3) y cuanticos (lambda_quantum = 0,001) sin detallar su implementacion.
+La arquitectura combina un transformer con un sistema MoE de 16 expertos y routing disperso (4 activos por paso), sobre el que se anaden osciladores multi-fase que simulan tres velocidades de "pensamiento" (rapida, media y lenta) y un mecanismo Blackhole Rope que actua como atractor estabilizador entre escalas. La idea declarada es que el rope ancla las decisiones de routing, evita derivas caoticas entre escalas y amplifica gradientes de discrepancia manteniendo la acotacion de las dinamicas. El modelo se enmarca en el framework Discrepancy Calculus (DISC) del autor, una aproximacion de teoria de la medida a la diferencia entre la salida esperada y la producida.
 
-El entrenamiento se realizo exclusivamente en CPU en FP32, con AdamW (lr = 5e-4), tamanos de batch de 8, 16 y 32, y longitudes de secuencia de 512 y 1024. Los datos declarados son dos datasets publicos (`O1-OPEN/OpenO1-SFT` y `WeMake/Intelligent-Content-Understanding`), con un total aproximado de 1 millon de tokens. No se documenta RLHF, DPO ni ninguna fase de alineacion posterior. El autor afirma una reduccion de "~1000x" en tokens necesarios para la emergencia de razonamiento, una afirmacion no verificable con la informacion disponible.
+El entrenamiento se realizo exclusivamente en CPU en FP32, con AdamW (lr = 5e-4), tamanos de batch de 8, 16 y 32, y longitudes de secuencia de 512 y 1024. Los datos son dos datasets publicos de Hugging Face: O1-OPEN/OpenO1-SFT (~500k tokens) y WeMake/Intelligent-Content-Understanding (~500k tokens), sumando aproximadamente 1M de tokens en total. La loss reportada es 3,8, lo que el propio autor reconoce que indica que el modelo sigue en fase de preentrenamiento. No se menciona RLHF, DPO ni ninguna fase de alineacion posterior. El autor afirma una reduccion de ~1000x en tokens necesarios para la emergencia de razonamiento, pero no aporta evidencia empirica que lo respalde.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, segun el pipeline `text-generation` y la etiqueta `Conversational`.
-- Razonamiento de tipo cadena de pensamiento (tag `Cot`), aunque sin evidencia publica de calidad.
-- Incursion declarada en matematicas y fisica (tags `math`, `physics`), sin benchmarks que lo respalden.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible de forma documentada.
-- Capacidades multilingues: limitadas al ingles.
-- Capacidades especiales (vision, audio, modo thinking explicito): no disponibles.
+- Generacion de texto conversacional en ingles.
+- Razonamiento basico orientado a matematicas y fisica (declarado en tags, sin benchmarks que lo verifiquen).
+- Cadena de pensamiento (CoT) como tag declarado, aunque sin validacion publica.
+- Routing adaptativo por expertos con especializacion por fases (los primeros 5-8 expertos se especializan antes; el resto se activa al saturar).
+- Capacidades multilingues: solo ingles.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes o razonamiento multi-paso: no disponible.
+- Vision, audio u otras modalidades: no disponible.
 
 ## Casos de uso
 
-- Investigacion sobre arquitecturas MoE con enrutamiento disperso: el modelo sirve como banco de pruebas para estudiar el comportamiento de 16 expertos con 4 activos por paso y la evolucion de la especializacion por fases descrita por el autor.
-- Experimentacion con mecanismos de estabilizacion temporal: util para replicar o criticar el concepto de Blackhole Rope y las dinamicas multi-escala (dt de 0,1 / 0,02 / 0,0005) en entornos academicos.
-- Estudio de eficiencia en entrenamiento en CPU: su entrenamiento declarado en FP32 sin GPU permite analizar curvas de perdida y consumo energetico en hardware asequible.
-- Docencia y divulgacion: ejemplo didactico de model card con terminologia fisica aplicada a redes neuronales, util para discutir la brecha entre metafora y validacion empirica.
-- Prototipado conversacional de muy baja exigencia: generacion de respuestas en ingles en entornos de prueba donde no se requiera calidad de produccion.
-- Base para fine-tuning experimental: al estar bajo licencia Apache 2.0, puede servir como punto de partida para experimentos academicos de ajuste con datasets propios.
+- Investigacion sobre routing MoE: el modelo sirve como banco de pruebas para estudiar especializacion por fases de expertos y regularizacion por entropia de routing en entornos de recursos limitados (CPU).
+- Experimentacion con dinamicas multi-escala: util para quienes investigan osciladores temporales, atractores y estabilidad en arquitecturas neuronales, ya que el codigo y la configuracion estan publicados.
+- Reproduccion de entrenamiento en CPU: con ~1M de tokens y FP32, es viable reproducir el pipeline completo en una estacion de trabajo sin GPU, lo que facilita la docencia y la validacion de resultados.
+- Generacion de texto conversacional en ingles de baja exigencia: para prototipos internos o demos donde no se requiera calidad de produccion.
+- Estudio de eficiencia de tokens: como referencia para comparar curvas de loss con presupuestos de entrenamiento muy reducidos frente a modelos de escala similar.
+- Base para fine-tuning experimental: al estar bajo Apache 2.0 y en formato transformers, puede servir de punto de partida para ajustes en dominios concretos, asumiendo que la calidad base es limitada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El unico dato de rendimiento reportado por el autor es una perdida de entrenamiento de 3,8 y tiempos por paso de 3 a 7 segundos en FP32 con longitud de secuencia 1024 y batch 16, sobre CPU.
+No se han publicado resultados de benchmarks en la informacion disponible. El unico dato de rendimiento reportado por el autor es la loss de entrenamiento (3,8) y los tiempos por paso (3-7 s/paso en FP32 con seq_len 1024 y batch 16), que no constituyen benchmarks de calidad.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16: aproximadamente 2 GB para 1B de parametros, mas overhead de activaciones y cache KV.
-- VRAM estimada en FP32: aproximadamente 4 GB, coherente con el tamano del repo (4,3 GB).
-- GPU recomendadas: no se especifican; el autor entreno en CPU. Para inferencia practica, una RTX 3060 de 12 GB o superior seria suficiente en FP16.
-- Cabe en GPU de consumo: si, en la mayoria de GPUs consumer con 8 GB o mas en FP16, y en 4-6 GB con cuantizacion a 8 bits (aunque no se publican pesos cuantizados).
-- Opciones de despliegue: transformers (libreria declarada); vLLM, llama.cpp, Ollama y TGI no estan confirmados por falta de pesos en formatos compatibles.
-- Latencia y throughput: no disponibles; el unico dato es el entrenamiento en CPU (3-7 s por paso), no representativo de inferencia.
+- VRAM estimada para inferencia en FP32: ~4 GB para 1B parametros (coincide con el tamano del repo de 4,3 GB); en FP16 ~2 GB; en cuantizacion de 8 bits ~1 GB; en 4 bits ~0,5-0,7 GB (estimaciones teoricas, no verificadas por el autor).
+- GPU recomendadas: cualquier GPU consumer con al menos 6-8 GB de VRAM para FP16 (RTX 3060, RTX 4060, RTX 4090); en FP32 se recomienda 8 GB o mas.
+- Cabe en GPU consumer: si, en la mayoria de GPU modernas con 8 GB o mas; tambien es viable en CPU dado que fue entrenado en CPU.
+- Opciones de despliegue: transformers (libreria declarada); vLLM, llama.cpp, Ollama y TGI no estan confirmados para esta arquitectura custom, por lo que su compatibilidad es no disponible.
+- Latencia y throughput: no disponibles; el autor solo reporta tiempos de entrenamiento (3-7 s/paso), no de inferencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| TameForCasualLM (TAMELM-AFMoER-BHR) | ~1B | No disponible | Apache 2.0 | Hugging Face, transformers | Entrenamiento experimental en CPU, sin benchmarks |
-| TinyLlama 1.1B | 1,1B | 2048 tokens | Apache 2.0 | Hugging Face, multiples formatos | Entrenado con ~3T tokens, benchmarks publicos |
-| Qwen2.5-1.5B | 1,5B | 32.768 tokens | Apache 2.0 | Hugging Face, GGUF, vLLM | Entrenamiento a gran escala, multilingue |
-| SmolLM2-1.7B | 1,7B | 8192 tokens | Apache 2.0 | Hugging Face, GGUF | Entrenado con ~11T tokens, benchmarks publicos |
+| TameForCasualLM (AFMoER-BHR) | ~1B (4/16 expertos activos) | no disponible | Apache 2.0 | Hugging Face | Experimental, loss 3,8, solo ingles |
+| Qwen2.5-1.5B | 1,5B | 32k | Apache 2.0 | Hugging Face, amplia adopcion | Modelo denso con benchmarks publicos |
+| SmolLM2-1.7B | 1,7B | 8k | Apache 2.0 | Hugging Face | Entrenado con billones de tokens |
+| TinyLlama-1.1B | 1,1B | 2k | Apache 2.0 | Hugging Face | Entrenado con ~3T tokens |
 
-La comparacion es estructural: TameForCasualLM comparte categoria de tamano con estos modelos, pero carece de la escala de entrenamiento, los benchmarks y el ecosistema de despliegue que si ofrecen las alternativas.
+La comparacion es desfavorable en calidad esperada: los modelos de referencia se entrenan con ordenes de magnitud mas de tokens y publican evaluaciones; TameForCasualLM se entrena con ~1M de tokens y no publica benchmarks. Su interes es arquitectonico, no de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Modelo en fase de preentrenamiento segun su propio autor (perdida de 3,8), por lo que la calidad de generacion sera muy inferior a la de modelos entrenados a escala.
-- Entrenado con solo ~1 millon de tokens, ordenes de magnitud por debajo de lo habitual para modelos de 1B; alto riesgo de alucinacion, incoherencia y repeticion.
-- Solo soporta ingles; no hay evidencia de capacidades multilingues.
-- La model card emplea terminologia no estandar (Blackhole Rope, discrepancia cuantica, symplectic vortex) sin validacion empirica publica; tratar las afirmaciones como hipotesis, no como hechos.
-- No se publican benchmarks, evaluaciones de sesgo ni resultados de seguridad.
-- La licencia Apache 2.0 permite uso comercial, pero la calidad del modelo no es apta para produccion sin un ajuste y validacion exhaustivos.
-- No se confirma el formato de pesos (safetensors, GGUF, etc.), lo que dificulta el despliegue en herramientas estandar distintas de transformers.
-- Riesgo de sesgos derivados de los datasets de entrenamiento (`O1-OPEN/OpenO1-SFT` y `WeMake/Intelligent-Content-Understanding`), no evaluados por el autor.
+- Modelo en fase de preentrenamiento segun el propio autor (loss 3,8): la calidad de generacion sera baja e inestable.
+- Entrenado con solo ~1M de tokens, muy por debajo de lo necesario para un modelo de 1B; riesgo alto de alucinacion y respuestas incoherentes.
+- Solo soporta ingles; no hay capacidades multilingues.
+- No se han publicado evaluaciones, benchmarks ni pruebas de seguridad.
+- La model card contiene afirmaciones no verificadas (reduccion de 1000x en tokens, "emergencia de razonamiento") sin evidencia empirica.
+- Arquitectura custom (TAMELM/AFMoER-BHR) con soporte limitado en herramientas estandar como vLLM o llama.cpp; la integracion en produccion requeriria trabajo adicional.
+- Licencia Apache 2.0 permite uso comercial, pero la falta de calidad y de validacion hace desaconsejable su uso en produccion sin evaluacion previa.
+- Sesgos desconocidos: los datasets de entrenamiento (OpenO1-SFT e Intelligent-Content-Understanding) pueden introducir sesgos no documentados.
+- Un solo like y autor independiente: sin comunidad de soporte ni mantenimiento garantizado.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/TameForCasualLM
-- Perfil del autor: https://huggingface.co/reaperdoesntknow
+- Hugging Face: https://huggingface.co/reaperdoesntknow/TameForCasualLM
+- Perfil del autor (Convergent Intelligence LLC, Research Division): https://huggingface.co/reaperdoesntknow
 - Dataset O1-OPEN/OpenO1-SFT: https://huggingface.co/datasets/O1-OPEN/OpenO1-SFT
 - Dataset WeMake/Intelligent-Content-Understanding: https://huggingface.co/datasets/WeMake/Intelligent-Content-Understanding
-- Convergent Intelligence LLC (Research Division), mencionada en la model card: https://huggingface.co/reaperdoesntknow

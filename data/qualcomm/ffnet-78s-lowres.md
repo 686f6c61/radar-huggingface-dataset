@@ -2,101 +2,103 @@
 
 ## Resumen
 
-FFNet-78S-LowRes es un modelo de segmentación semántica de escenas urbanas desarrollado por Qualcomm AI Research, diseñado para ejecutarse en tiempo real en dispositivos con hardware Qualcomm, especialmente en el NPU integrado en sus SoC. El nombre "FFNet" proviene de "fuss-free network", una arquitectura que busca simplificar el diseño de redes de segmentación sin sacrificar precisión ni velocidad. El modelo clasifica cada píxel de una imagen en una de 19 categorías propias de entornos urbanos, como carretera, acera, peatón, vehículo o señal de tráfico, y está entrenado sobre el dataset Cityscapes.
+FFNet-78S-LowRes es un modelo de segmentación semántica de imágenes de escenas urbanas desarrollado por Qualcomm AI Research, distribuido a través de Qualcomm AI Hub. Segmenta cada píxel de una imagen en 19 clases predefinidas (calzada, acera, peatón, vehículo, vegetación, etc.) y está entrenado sobre el conjunto de datos Cityscapes. Su particularidad es que se trata de una variante "low resolution" del FFNet-78S original, con una resolución de entrada de 1024x512 píxeles, pensada para maximizar el rendimiento en tiempo real sobre hardware móvil y embebido.
 
-La versión "78S" indica una variante de tamaño medio dentro de la familia FFNet, con 26,8 millones de parámetros y una resolución de entrada de 1024x512 píxeles. El modelo se distribuye pre-exportado en formatos ONNX, QNN_DLC y TFLITE, con precisiones float y w8a8 (cuantización de 8 bits), lo que permite su despliegue directo en dispositivos Snapdragon y otras plataformas Qualcomm. Su relevancia actual radica en la creciente demanda de modelos de visión por computador eficientes para aplicaciones embebidas, como la conducción autónoma, la asistencia al conductor y la robótica móvil, donde la latencia y el consumo energético son críticos.
+El modelo es una red neuronal convolucional de tipo "fuss-free network" (FFNet), una familia de arquitecturas diseñadas para segmentación semántica eficiente sin componentes complejos como decodificadores multi-escala o attention. Con 26,8 millones de parámetros y un tamaño de 102 MB en precisión float (26 MB en cuantización w8a8), está optimizado para ejecutarse en la NPU de los chipsets Snapdragon y en las plataformas Dragonwing de Qualcomm.
 
-## Especificaciones tecnicas
+La relevancia actual del modelo reside en su orientación a producción en dispositivos: Qualcomm distribuye artefactos pre-exportados en ONNX, QNN_DLC y TFLite, con soporte para cuantización w8a8, lo que permite desplegar segmentación semántica en tiempo real en teléfonos, cámaras y sistemas de asistencia a la conducción sin depender de la nube. La licencia BSD-3-Clause facilita su uso comercial.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Red convolucional para segmentación semántica (FFNet, "fuss-free network") |
-| Parametros totales | 26,8 millones |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no aplica (modelo de visión, entrada de imagen 1024x512) |
-| Tipos de cuantizacion | float (FP32) y w8a8 (cuantización de 8 bits en pesos y activaciones) |
-| Idiomas soportados | no disponible (modelo de visión, sin procesamiento de lenguaje) |
+| Arquitectura | CNN FFNet (fuss-free network) para segmentación semántica |
+| Parámetros totales | 26,8 M |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de visión) |
+| Resolución de entrada | 1024x512 píxeles |
+| Clases de salida | 19 (Cityscapes) |
+| Tipos de cuantización | float y w8a8 |
+| Idiomas soportados | no disponible (modelo de visión, sin capacidades lingüísticas) |
 | Licencia | BSD-3-Clause |
-| Formato de pesos | ONNX, QNN_DLC, TFLITE (pre-exportados); PyTorch (repo original) |
+| Formato de pesos | ONNX, QNN_DLC, TFLite (artefactos pre-exportados); checkpoint PyTorch original |
+| Tamaño del modelo | 102 MB (float), 26,0 MB (w8a8) |
+| Tamaño del repositorio | 11,0 GB |
 
 ## Arquitectura y entrenamiento
 
-FFNet-78S-LowRes es una red neuronal convolucional diseñada específicamente para segmentación semántica en tiempo real. La arquitectura se describe en el artículo arXiv:2206.08236, donde se presenta como una alternativa "sin complicaciones" a modelos más complejos como DeepLabV3 o BiSeNet, priorizando la simplicidad y la eficiencia computacional sin renunciar a la precisión. El modelo utiliza un encoder que extrae características de la imagen y un decoder que produce mapas de probabilidad por píxel para las 19 clases de Cityscapes. No se dispone de detalles adicionales sobre el número de capas, bloques residuales o mecanismos de atención, ya que la información pública se centra en el despliegue y el rendimiento en hardware Qualcomm.
+FFNet (Fuss-Free Network) es una arquitectura convolucional diseñada explícitamente para segmentación semántica en tiempo real. El término "fuss-free" hace referencia a la ausencia de componentes considerados innecesariamente complejos en otras arquitecturas de segmentación: no emplea decodificadores multi-escala elaborados ni módulos de attention, sino una estructura encoder-decoder convolucional simplificada que prioriza la eficiencia computacional y la facilidad de despliegue en hardware heterogéneo. La variante 78S corresponde a un escalado concreto de la familia, y el sufijo "LowRes" indica una entrada de 1024x512 píxeles en lugar de resoluciones mayores.
 
-El entrenamiento se realizó sobre el dataset Cityscapes, compuesto por imágenes de escenas urbanas capturadas en ciudades alemanas, con anotaciones densas a nivel de píxel. El checkpoint utilizado es `ffnet78S_BCC_cityscapes_state_dict_quarts_pre_down`, que sugiere un pre-entrenamiento en un conjunto de datos más amplio (posiblemente ImageNet) seguido de un ajuste fino en Cityscapes. No se menciona el uso de técnicas como RLHF o DPO, que no son aplicables a modelos de visión. La innovación principal de FFNet radica en su diseño compacto y en la optimización para hardware de borde, más que en una novedad arquitectónica radical.
+El modelo está entrenado sobre Cityscapes, un dataset de referencia de escenas urbanas con anotaciones densas a nivel de píxel en 19 clases. El checkpoint utilizado se denomina `ffnet78S_BCC_cityscapes_state_dict_quarts_pre_down`. No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de refinamiento posteriores como RLHF o DPO (no aplicables, por otra parte, a un modelo discriminativo de visión). La innovación técnica destacable es la exportación optimizada para NPU de Qualcomm mediante Qualcomm AI Hub Workbench, con compilación específica por chipset y cuantización w8a8 que reduce el tamaño a 26 MB y acelera la inferencia.
 
 ## Capacidades
 
-- Segmentación semántica de escenas urbanas: clasifica cada píxel en 19 categorías (carretera, acera, edificio, peatón, vehículo, etc.).
-- Inferencia en tiempo real en dispositivos Qualcomm: tiempos de 2,7 ms a 40 ms según el chipset y la precisión, lo que permite su uso en aplicaciones de vídeo en tiempo real.
-- Soporte de cuantización w8a8: reduce el tamaño del modelo de 102 MB a 26 MB y acelera la inferencia en NPU sin pérdida significativa de precisión (no se especifica el impacto exacto).
-- Compatibilidad con múltiples formatos de exportación: ONNX, QNN_DLC y TFLITE, lo que facilita la integración en diferentes entornos de desarrollo (Android, Linux embebido, etc.).
-- No incluye capacidades de generación de texto, tool calling, agentes ni procesamiento de lenguaje, al ser un modelo puramente visual.
+- Segmentación semántica densa a nivel de píxel sobre imágenes de escenas urbanas.
+- Clasificación en 19 clases de Cityscapes: calzada, acera, edificio, muro, valla, poste, semáforo, señal de tráfico, vegetación, terreno, cielo, persona, ciclista, coche, motocicleta, camión, autobús, tren y motocicleta/bicicleta (según la taxonomía estándar de Cityscapes).
+- Inferencia en tiempo real sobre NPU de chipsets Snapdragon y plataformas Dragonwing.
+- Despliegue en dispositivos Android y embebidos mediante ONNX Runtime, QNN SDK o TFLite.
+- Soporte de cuantización w8a8 para reducir huella de memoria y latencia.
+- No dispone de capacidades de generación de texto, razonamiento, código, matemáticas, tool calling, agentes ni procesamiento multilingüe: es un modelo puramente visual y discriminativo.
 
 ## Casos de uso
 
-- Conducción autónoma y asistencia al conductor: el modelo puede segmentar la escena en tiempo real para identificar carriles, peatones, vehículos y obstáculos, alimentando sistemas de frenado automático o aviso de colisión. Su baja latencia (8-15 ms en Snapdragon 8 Gen 3) lo hace adecuado para procesar vídeo a 30-60 fps.
-- Vigilancia y análisis de tráfico: en cámaras fijas o embarcadas, permite contar vehículos, detectar infracciones o monitorizar el flujo de peatones en intersecciones, gracias a su capacidad de clasificar píxeles en categorías urbanas.
-- Robótica móvil y drones: un robot de reparto o un dron de inspección puede usar la segmentación para navegar en entornos urbanos, distinguiendo zonas transitables (carretera, acera) de obstáculos (vehículos, personas).
-- Sistemas de asistencia en aparcamiento: el modelo puede identificar plazas libres, bordillos y otros elementos del entorno para ayudar en maniobras de estacionamiento automático o semiautomático.
-- Realidad aumentada en navegación: una aplicación móvil puede superponer indicaciones sobre la carretera o resaltar peligros en tiempo real, usando la segmentación para entender la escena.
-- Análisis de imágenes aéreas urbanas: aunque entrenado en Cityscapes (perspectiva de cámara de coche), puede adaptarse con fine-tuning para segmentar tejados, calles o zonas verdes en imágenes de drones, útil para planificación urbana.
+- Asistencia a la conducción (ADAS): segmentación en tiempo real de la calzada, carriles, peatones y vehículos para sistemas de alerta de colisión o mantenimiento de carril, aprovechando latencias de 2-10 ms en NPU de Snapdragon 8 Elite y X Elite.
+- Realidad aumentada urbana: sustitución o superposición de elementos de la escena (cielo, edificios, calzada) en aplicaciones móviles de AR, con el modelo ejecutándose en la NPU del teléfono sin conexión a la nube.
+- Vehículos autónomos y robótica de bajo consumo: percepción semántica embebida en plataformas Dragonwing (QCS8550, IQ-8275, IQ-9075) para robots de reparto, drones o vehículos industriales con restricciones térmicas y energéticas.
+- Videovigilancia inteligente en el borde: detección y clasificación de personas, vehículos y zonas de tránsito en cámaras IP con SoC Qualcomm, procesando localmente para preservar privacidad y reducir ancho de banda.
+- Mapeo y análisis geoespacial: generación automática de mapas de ocupación del suelo y clasificación de vías urbanas a partir de imágenes capturadas por flotas de vehículos o satélites de baja altitud.
+- Aplicaciones de movilidad accesible: descripción automática de escenas urbanas para personas con discapacidad visual, identificando aceras, pasos de peatones y obstáculos en tiempo real desde la cámara del móvil.
+- Preprocesamiento en pipelines de visión: generación de máscaras semánticas como entrada para modelos posteriores de detección, tracking o planificación de trayectorias en sistemas autónomos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de precisión (mIoU, accuracy, etc.) en la información disponible. La model card solo proporciona datos de rendimiento de inferencia en hardware Qualcomm, que se resumen a continuación:
+No se han publicado resultados de benchmarks de precisión (mIoU, etc.) en la información disponible. Sí se dispone de métricas de latencia y memoria por chipset, ejecutando ONNX Runtime sobre NPU:
 
-| Runtime | Precision | Chipset | Inference Time (ms) | Peak Memory Range (MB) | Compute Unit |
-|---|---|---|---|---|---|
-| ONNX | float | Snapdragon X2 Elite | 10,083 | 10 - 10 | NPU |
-| ONNX | float | Snapdragon X Elite | 20,084 | 47 - 47 | NPU |
-| ONNX | float | Snapdragon 8 Gen 3 Mobile | 15,269 | 4 - 252 | NPU |
-| ONNX | float | Snapdragon 8 Gen 1 Mobile | 36,559 | 11 - 244 | NPU |
-| ONNX | float | Snapdragon 8 Elite Mobile | 13,341 | 7 - 193 | NPU |
-| ONNX | float | Snapdragon 8 Elite Gen 5 Mobile | 8,209 | 5 - 194 | NPU |
-| ONNX | w8a8 | Snapdragon X2 Elite | 2,723 | 4 - 4 | NPU |
-| ONNX | w8a8 | Snapdragon X Elite | 5,814 | 26 - 26 | NPU |
-| ONNX | w8a8 | Snapdragon 8 Gen 3 Mobile | 3,962 | 3 - 253 | NPU |
-| ONNX | w8a8 | Snapdragon 8 Gen 1 Mobile | 8,276 | 0 - 252 | NPU |
-| ONNX | w8a8 | Snapdragon 8 Elite Mobile | 3,962 | 3 - 253 | NPU |
-| ONNX | w8a8 | Snapdragon 8 Elite Gen 5 Mobile | 2,723 | 4 - 4 | NPU |
+| Chipset | Precisión | Tiempo de inferencia (ms) | Rango de memoria pico (MB) |
+|---|---|---|---|
+| Snapdragon 8 Elite Extreme Gen 6 Mobile | float | 7,22 | 7 - 195 |
+| Snapdragon 8 Elite Gen 5 For Galaxy Mobile | float | 8,447 | 6 - 186 |
+| Snapdragon 8 Elite Gen 6 Mobile | float | 8,863 | 12 - 189 |
+| Snapdragon X2 Elite | float | 10,274 | 10 - 10 |
+| Snapdragon 8 Elite For Galaxy Mobile | float | 10,692 | 5 - 183 |
+| Snapdragon 8 Gen 3 Mobile | float | 13,497 | 13 - 249 |
+| Snapdragon X Elite | float | 19,273 | 47 - 47 |
+| Snapdragon 8 Gen 1 Mobile | float | 32,918 | 11 - 241 |
+| Snapdragon 8 Elite Gen 5 For Galaxy Mobile | w8a8 | 2,263 | 0 - 198 |
+| Snapdragon 8 Elite For Galaxy Mobile | w8a8 | 3,04 | 0 - 191 |
+| Snapdragon X2 Elite | w8a8 | 2,681 | 4 - 4 |
+| Snapdragon 8 Gen 3 Mobile | w8a8 | 3,858 | 3 - 248 |
+| Snapdragon X Elite | w8a8 | 5,745 | 26 - 26 |
+| Snapdragon 8 Gen 1 Mobile | w8a8 | 6,842 | 3 - 251 |
 
-La cuantización w8a8 reduce el tiempo de inferencia entre 2 y 4 veces en la mayoría de los chipsets, con un aumento mínimo del uso de memoria. No se proporcionan métricas de precisión como mIoU, por lo que no es posible comparar el rendimiento cualitativo con otros modelos.
-
-## Requisitos de hardware
-
-- El modelo está optimizado para el NPU de los SoC Qualcomm, por lo que el despliegue recomendado es en dispositivos con Snapdragon (móviles, tablets, portátiles) o plataformas Dragonwing (IoT, automoción).
-- En formato float, el modelo ocupa 102 MB; en w8a8, 26 MB. Esto permite su ejecución en dispositivos con poca memoria, como cámaras IP o módulos de automoción.
-- Para inferencia en GPU de escritorio (NVIDIA, AMD), no se proporcionan datos específicos, pero al ser un modelo de 26,8M parámetros, cabría en cualquier GPU con al menos 2 GB de VRAM (por ejemplo, GTX 1650 o superior). Sin embargo, el modelo no está optimizado para CUDA y requeriría conversión a ONNX o TensorRT.
-- Opciones de despliegue: Qualcomm AI Hub Workbench para compilar y perfilar en dispositivos reales; también se puede usar ONNX Runtime, TFLite o el runtime QNN directamente.
-- La latencia en NPU de Qualcomm varía entre 2,7 ms (w8a8 en Snapdragon X2 Elite) y 40 ms (float en Dragonwing IQ-8275), lo que permite procesamiento en tiempo real (30+ fps) en la mayoría de los chipsets modernos.
+La cuantización w8a8 reduce la latencia aproximadamente a un tercio respecto a float en los mismos chipsets, a costa de una posible pérdida de precisión no cuantificada en la información disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa cuantitativa con otros modelos de segmentación semántica (como DeepLabV3, BiSeNet o SegFormer) en términos de precisión y velocidad, ya que la model card no incluye métricas de mIoU ni resultados en benchmarks estándar. Sin embargo, se puede contextualizar:
-
-| Modelo | Parametros | Resolucion de entrada | Dataset | Licencia | Formato |
+| Modelo | Parámetros | Resolución | Clases | Licencia | Enfoque |
 |---|---|---|---|---|---|
-| FFNet-78S-LowRes | 26,8M | 1024x512 | Cityscapes | BSD-3-Clause | ONNX, TFLITE, QNN |
-| DeepLabV3 (ResNet50) | ~39M | 513x513 | Cityscapes | Apache-2.0 | PyTorch, ONNX |
-| BiSeNetV2 | ~49M | 1024x512 | Cityscapes | MIT | PyTorch |
+| FFNet-78S-LowRes | 26,8 M | 1024x512 | 19 | BSD-3-Clause | CNN eficiente para NPU Qualcomm |
+| FFNet-78S (original) | no disponible | mayor que LowRes | 19 | BSD-3-Clause | CNN eficiente, mayor resolución |
+| Modelos tipo DeepLabv3+ / SegFormer | no disponible | variable | 19 | variable | Segmentación semántica generalista |
 
-FFNet-78S-LowRes es significativamente más ligero que BiSeNetV2 y comparable a DeepLabV3 en tamaño, pero su ventaja principal es la optimización específica para NPU de Qualcomm, que no está disponible en los otros modelos. No se dispone de datos de precisión para afirmar que supera o iguala a estos modelos.
+No se dispone en la información proporcionada de datos de rendimiento (mIoU) ni de especificaciones detalladas de los modelos alternativos que permitan una comparación cuantitativa rigurosa. La comparativa se limita a la categoría funcional y a la licencia.
 
 ## Limitaciones y advertencias
 
-- El modelo está entrenado exclusivamente en Cityscapes, un dataset de escenas urbanas de ciudades alemanas (Múnich, Stuttgart, etc.). Esto puede introducir sesgos geográficos y de estilo: el rendimiento puede degradarse en entornos con diferente señalización, clima, vegetación o densidad de tráfico.
-- La resolución de entrada está fijada en 1024x512. Si se usan otras resoluciones, el modelo puede requerir re-escalado o fine-tuning, y la precisión puede verse afectada.
-- No se han publicado métricas de precisión (mIoU, accuracy) en la documentación oficial, por lo que es difícil evaluar su calidad frente a alternativas sin realizar pruebas propias.
-- El modelo está pensado para hardware Qualcomm. En otras plataformas (GPU NVIDIA, CPU x86) puede funcionar, pero no se garantiza el mismo rendimiento ni se ofrecen guías de optimización.
-- La cuantización w8a8 puede introducir una pérdida de precisión no cuantificada en la documentación. Se recomienda validar el impacto en el caso de uso específico.
-- La licencia BSD-3-Clause permite uso comercial, pero el modelo depende de pesos pre-entrenados que pueden estar sujetos a condiciones adicionales del dataset Cityscapes (que tiene su propia licencia de investigación). Es necesario revisar los términos de uso de Cityscapes si se planea un despliegue comercial.
+- Entrenado exclusivamente sobre Cityscapes (escenas urbanas europeas), por lo que su generalización a otros dominios (interiores, paisajes rurales, imágenes aéreas) es limitada.
+- La resolución de entrada baja (1024x512) reduce el detalle en objetos pequeños o lejanos, lo que puede degradar la segmentación de peatones distantes o señales de tráfico.
+- No se han publicado métricas de precisión (mIoU) en la información disponible, lo que impide evaluar la pérdida de calidad introducida por la cuantización w8a8.
+- El modelo es discriminativo y no genera texto; no debe confundirse con un modelo de lenguaje.
+- Aunque la licencia BSD-3-Clause permite uso comercial, conviene verificar las condiciones de uso del dataset Cityscapes y de los artefactos exportados por Qualcomm AI Hub.
+- El repositorio ocupa 11,0 GB debido a los múltiples artefactos exportados; el despliegue real solo requiere el archivo correspondiente al runtime y chipset objetivo.
+- No se dispone de información sobre sesgos del dataset ni sobre el rendimiento en condiciones de iluminación adversas (noche, lluvia), que suelen ser puntos débiles de los modelos entrenados en Cityscapes.
 
 ## Enlaces
 
-- [Hugging Face - qualcomm/FFNet-78S-LowRes](https://huggingface.co/qualcomm/FFNet-78S-LowRes)
-- [Qualcomm AI Hub - FFNet-78S-LowRes](https://aihub.qualcomm.com/models/ffnet_78s_lowres)
-- [Qualcomm AI Hub IoT - FFNet-78S-LowRes](https://aihub.qualcomm.com/iot/models/ffnet_78s_lowres)
-- [GitHub - Qualcomm-AI-research/FFNet (implementación original)](https://github.com/Qualcomm-AI-research/FFNet)
-- [GitHub - qualcomm/ai-hub-models (carpeta del modelo)](https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/ffnet_78s_lowres)
-- [Artículo arXiv:2206.08236](https://arxiv.org/abs/2206.08236)
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/FFNet-78S-LowRes
+- Página en Qualcomm AI Hub: https://aihub.qualcomm.com/models/ffnet_78s_lowres
+- Repositorio de implementación FFNet: https://github.com/Qualcomm-AI-research/FFNet
+- Librería Qualcomm AI Hub Models (FFNet-78S-LowRes): https://github.com/qualcomm/ai-hub-models/blob/v0.67.0/src/qai_hub_models/models/ffnet_78s_lowres
+- Paper de referencia (arXiv:2206.08236): https://arxiv.org/abs/2206.08236
+- Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com
+- Web corporativa de Qualcomm: https://www.qualcomm.com/

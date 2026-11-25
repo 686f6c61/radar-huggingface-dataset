@@ -69,16 +69,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "NVIDIA Nemotron 3.5 Bolt E4B 4GB - NVIDIA Nemotron",
-      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3.5-Bolt-E4B-4GB/",
-      "snippet": "Introducing NVIDIA Nemotron 3.5 Bolt E4B 4GB Today, we’re excited to release Nemotron 3.5 Bolt E4B 4GB — our latest open small language model optimized for speed and intelligence per GB in conversational agents. Bolt E4B builds on Gemma 4 E4B with Nemotron post-training. It combines natural conversation with multi-turn agentic capabilities to power voice/device assistants, interactive ..."
-    },
-    {
-      "title": "Nemotron 3.5 Bolt E4B Model by NVIDIA | NVIDIA NIM",
-      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-bolt-e4b",
-      "snippet": "Compact text model for reasoning, tool calling, and agentic chat."
-    }
-  ]
+  "sources": []
 }

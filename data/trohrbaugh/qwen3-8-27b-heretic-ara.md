@@ -2,88 +2,101 @@
 
 ## Resumen
 
-El modelo `trohrbaugh/Qwen3.8-27B-heretic-ara` es una versión modificada del modelo oficial `Qwen/Qwen3.8-27B` de Alibaba, sometida a un proceso de "abliteración" (abliteration) mediante la herramienta Heretic en una bifurcación personalizada, utilizando el método Arbitrary-Rank Ablation (ARA). El objetivo de esta modificación es eliminar los comportamientos de rechazo del modelo original, de modo que responda a peticiones que normalmente serían denegadas por las políticas de seguridad, manteniendo en lo posible el resto de capacidades.
+Qwen3.8-27B-heretic-ara es una variante "decensored" (abliterated) del modelo multimodal Qwen3.8-27B de Alibaba Qwen, publicada por el usuario trohrbaugh. El modelo conserva la arquitectura original del Qwen3.8-27B (modelo de lenguaje causal denso de 27B parámetros con encoder de visión, atención híbrida Gated DeltaNet + Gated Attention y contexto nativo de 262.144 tokens) pero se ha modificado mediante la técnica de abliteration para eliminar los comportamientos de rechazo aprendidos durante el post-entrenamiento. El resultado es un modelo que responde a peticiones que el original rechazaría, a cambio de una divergencia de distribución medible (KL divergence de 0,0535 frente al modelo base).
 
-El modelo base, Qwen3.8-27B, es un modelo de lenguaje causal denso de 27 000 millones de parámetros con codificador de visión nativo (image-text-to-text), capaz de procesar imágenes y vídeo, con un contexto nativo de 262 144 tokens ampliable hasta 1 000 000. Incorpora un diseño híbrido con capas de atención lineal (Gated DeltaNet) y atención clásica (Gated Attention), además de predicción multi-token (MTP). La versión heretic-ara conserva estas características técnicas, pero altera los pesos mediante abliteración para reducir drásticamente la tasa de rechazos (de 99/100 a 0/100 en las pruebas del autor), con una divergencia KL de 0,0535 respecto al original.
+La modificación se realizó con la herramienta Heretic (fork personalizado de timrohrbaugh) en su versión v1.2.0+custom, aplicando el método Arbitrary-Rank Ablation (ARA). Según la model card, el modelo original rechaza 99 de cada 100 peticiones de la batería de evaluación utilizada, mientras que esta variante rechaza 0 de 100, con una divergencia KL de 0,0535 respecto a la distribución del modelo base.
 
-Este modelo resulta relevante para la comunidad de investigación en alineación y seguridad de IA, así como para desarrolladores que necesitan un modelo de propósito general sin restricciones de contenido, aunque su uso conlleva riesgos importantes que se detallan en la sección de limitaciones.
+Es relevante para desarrolladores e investigadores que necesitan un modelo multimodal de 27B con contexto largo sin las restricciones de alineación del modelo original, por ejemplo para investigación sobre seguridad, generación de contenido creativo sin filtros o estudios de comportamiento de modelos abliterated. La licencia Apache 2.0 del modelo base se mantiene, aunque el uso en producción de una variante decensored conlleva riesgos adicionales de contenido dañino.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Causal Language Model con Vision Encoder (Qwen3.8-27B modificado) |
-| Parametros totales | 27.356.728.560 (27B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 262 144 tokens nativo, extensible a 1 000 000 |
-| Tipos de cuantizacion | No disponible (repo en safetensors, sin cuantizaciones publicadas) |
-| Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (Transformers) |
+| Arquitectura | Transformer causal denso con encoder de visión; layout híbrido 16 × (3 × (Gated DeltaNet → FFN) → 1 × (Gated Attention → FFN)) |
+| Parámetros totales | 27.356.728.560 (27,36B) |
+| Parámetros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | 262.144 tokens nativos; extensible hasta 1.000.000 |
+| Tipos de cuantización | no disponible en la información proporcionada (pesos en safetensors; compatible con cuantización estándar vía transformers/vLLM) |
+| Idiomas soportados | no disponible |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (transformers) |
+
+Otros datos de arquitectura del modelo base: hidden dimension 5120, 64 capas, embedding de tokens 248.320 (padded), FFN con dimensión intermedia 17.408, Gated DeltaNet con 48 cabezas lineales para V y 16 para QK (dimensión 128), Gated Attention con 24 cabezas para Q y 4 para KV (dimensión 256, RoPE dim 64), y entrenamiento con Multi-Token Prediction (MTP) en varios pasos.
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B emplea una arquitectura de transformer causal denso con codificador de visión. La parte de lenguaje tiene 64 capas con una disposición interna de 16 bloques, cada uno compuesto por 3 sub-bloques de `Gated DeltaNet → FFN` seguidos de 1 sub-bloque de `Gated Attention → FFN`. La Gated DeltaNet es un mecanismo de atención lineal con 48 cabezas para V y 16 para QK (dimensión de cabeza 128), mientras que la Gated Attention clásica usa 24 cabezas para Q y 4 para KV (dimensión de cabeza 256, RoPE de dimensión 64). La dimensión oculta es 5120, el FFN intermedio es de 17 408 y el embedding de salida está rellenado a 248 320. El modelo fue entrenado con predicción multi-token (MTP) en varias etapas.
+El modelo base Qwen3.8-27B es un transformer causal denso con encoder de visión, que combina capas de atención lineal (Gated DeltaNet) y capas de atención completa (Gated Attention) en un patrón repetido 16 veces: tres bloques DeltaNet seguidos de un bloque de atención gated. Esta arquitectura híbrida busca reducir el coste computacional en contextos largos manteniendo la calidad de la atención completa. El modelo incorpora además Multi-Token Prediction (MTP) durante el entrenamiento, lo que puede habilitar decodificación especulativa. El contexto nativo es de 262.144 tokens, extensible a 1.000.000 según la model card.
 
-La modificación heretic-ara aplica abliteración con el método Arbitrary-Rank Ablation (ARA) sobre las capas 26 a 56, con los siguientes parámetros: `preserve_good_behavior_weight` = 0,9432, `steer_bad_behavior_weight` = 0,0009, `overcorrect_relative_weight` = 0,5038 y `neighbor_count` = 10. Según el autor, el resultado es una reducción de rechazos de 99/100 a 0/100 en una prueba de 100 prompts, con una divergencia KL de 0,0535 respecto al modelo original, lo que indica una alteración relativamente baja del comportamiento general.
+El post-entrenamiento original incluye control flexible de "thinking mode" (activado por defecto, desactivable por petición, con parámetros `reasoning_effort` y `preserve_thinking`). Sobre esa base, trohrbaugh aplicó abliteration con Heretic v1.2.0+custom y el método ARA, con los siguientes parámetros: `start_layer_index` 26, `end_layer_index` 56, `preserve_good_behavior_weight` 0,9432, `steer_bad_behavior_weight` 0,0009, `overcorrect_relative_weight` 0,5038 y `neighbor_count` 10. La abliteration modifica los pesos en las capas indicadas para eliminar la dirección de rechazo, y el resultado reportado es de 0 rechazos en 100 peticiones frente a 99/100 del original, con una KL divergence de 0,0535. No se dispone de información sobre el volumen de tokens de entrenamiento del modelo base ni sobre la composición del dataset.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: conserva las capacidades lingüísticas del Qwen3.8-27B, incluyendo razonamiento complejo y matemáticas.
-- Comprensión de imágenes y vídeo: al ser un modelo de visión-lenguaje nativo, puede interpretar diagramas STEM, documentos, imágenes y vídeos de hasta una hora de duración.
-- Modo de pensamiento (thinking mode): activado por defecto, con control de esfuerzo de razonamiento (`reasoning_effort`) y preservación del contexto de razonamiento (`preserve_thinking`).
-- Ejecución de agentes: planificación autónoma y manejo de feedback del entorno para tareas de varios pasos.
-- Tool calling / function calling: soporte integrado, según las capacidades del modelo base.
-- Respuesta sin rechazos: la principal diferencia con el original es que no rechaza peticiones que el modelo base denegaría, lo que amplía el rango de temas tratables (con los riesgos asociados).
+- Generación de texto y razonamiento multi-paso con modo "thinking" activable y profundidad de razonamiento ajustable mediante `reasoning_effort`.
+- Comprensión de imágenes y vídeos de forma nativa (pipeline image-text-to-text): diagramas STEM, documentos y vídeos de hasta una hora según la model card.
+- Generación de código y tareas de trabajo profesional e investigación, con mejoras declaradas por el autor del modelo base en estas áreas.
+- Ejecución de agentes autónomos: planificación, manejo de feedback del entorno y finalización de tareas de extremo a extremo.
+- Compatibilidad con harnesses y herramientas de desarrollo populares (tool calling / function calling, según la model card del base).
+- Contexto largo de 262.144 tokens nativos, extensible a 1M, adecuado para documentos extensos y conversaciones multi-turno.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Comportamiento decensored: sin rechazos en la batería de evaluación del autor (0/100 frente a 99/100 del original).
 
 ## Casos de uso
 
-- Investigación en alineación y seguridad de IA: permite estudiar cómo se comporta un modelo sin mecanismos de rechazo, comparando con el original para analizar la efectividad de la abliteración y sus efectos en la calidad de las respuestas.
-- Generación de contenido creativo sin restricciones: escritura de ficción, guiones o diálogos que aborden temas tabú o controvertidos que el modelo original bloquearía.
-- Análisis de sesgos y comportamientos indeseados: útil para auditar qué tipos de peticiones activan rechazos en el modelo original y cómo responde el modelo abliteado, contribuyendo a mejorar las técnicas de alineación.
-- Desarrollo de asistentes conversacionales especializados: en dominios donde se requiere una respuesta directa sin filtros de seguridad, como ciertos entornos de simulación o juegos de rol.
-- Evaluación de robustez de modelos: probar la resistencia del modelo a jailbreaks o prompts adversariales, dado que ya no tiene barreras de rechazo.
-- Despliegue en entornos controlados de investigación: uso en laboratorios que necesitan un modelo de 27B con visión y contexto largo, sin las restricciones de contenido del original, bajo supervisión experta.
+- Investigación sobre seguridad y alineación: comparar el comportamiento del modelo original y esta variante abliterated permite estudiar qué capacidades y sesgos se ven afectados por la eliminación de la dirección de rechazo, con una métrica objetiva de divergencia (KL 0,0535).
+- Generación creativa sin filtros: escritura de ficción, guiones o narrativa con temáticas adultas o controvertidas que el modelo base rechazaría, usando el contexto largo para mantener coherencia en novelas o series extensas.
+- Análisis de documentos largos con imágenes: informes técnicos, papers con figuras o vídeos de formación, aprovechando la ventana de 262.144 tokens y el encoder de visión nativo.
+- Agentes autónomos de larga duración: tareas de investigación o automatización que requieren decenas de pasos con feedback del entorno, donde el modelo base declara mejoras en planificación y ejecución.
+- Asistencia en código en pipelines internos: generación y revisión de código con tool calling, integrado en herramientas de desarrollo compatibles con el modelo base.
+- Evaluación de robustez de salvaguardas: usar esta variante como modelo "adversario" para probar clasificadores de contenido, filtros de salida y sistemas de moderación en producción.
+- Prototipado multimodal en local: despliegue de un modelo de 27B con visión y contexto largo en infraestructura propia para experimentación con datos sensibles que no pueden enviarse a APIs externas.
 
 ## Benchmarks y rendimiento
 
-La model card del autor solo proporciona métricas de la abliteración (divergencia KL y tasa de rechazos), no resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) para esta versión modificada. La model card original de Qwen3.8-27B incluye una tabla de benchmarks comparativos con Qwen3.6-27B y Qwen3.7-Plus, pero los valores numéricos no están disponibles en la información proporcionada. Por tanto:
+La model card incluye una tabla de benchmarks del modelo base Qwen3.8-27B frente a Qwen3.6-27B y Qwen3.7-Plus, pero los valores numéricos de esa tabla no están disponibles en la información proporcionada (la tabla aparece truncada). Los únicos datos de rendimiento disponibles son los de la modificación abliterated:
 
-No se han publicado resultados de benchmarks para esta versión heretic-ara en la información disponible. Se recomienda consultar la model card del modelo original para conocer el rendimiento base de Qwen3.8-27B.
+| Métrica | Este modelo | Qwen3.8-27B original |
+|---|---|---|
+| KL divergence | 0,0535 | 0 (por definición) |
+| Rechazos | 0/100 | 99/100 |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) para esta variante en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el modelo tiene 27 356 millones de parámetros. En FP16/FP32 ocupa aproximadamente 55 GB de pesos (el repo pesa 55,6 GB). Con cuantización a 4 bits (Q4_K_M, ~14-15 GB) o 8 bits (~28 GB) se podría ejecutar en GPUs de consumo.
-- GPU recomendadas: para FP16, se necesitan GPUs con al menos 60-80 GB de VRAM, como A100 80GB, H100 80GB o A6000 48GB (con cuantización). Para cuantización 8 bits, una RTX 4090 (24 GB) podría ser suficiente; para 4 bits, también RTX 3090/4090.
-- Compatibilidad con consumer GPU: sí, con cuantización GGUF o AWQ de 4 bits, aunque no se han publicado cuantizaciones oficiales para esta versión.
-- Opciones de despliegue: compatible con Hugging Face Transformers, vLLM, SGLang y TokenSpeed según la model card del original. Para cuantización local, se podría convertir a GGUF para llama.cpp u Ollama, pero no hay archivos preconvertidos disponibles.
-- Latencia y throughput: no disponible. Dependerá del hardware y del método de cuantización.
+- VRAM estimada para inferencia en BF16/FP16: aproximadamente 55 GB solo para pesos (el repo ocupa 55,6 GB), más overhead de KV cache y activaciones; se recomienda al menos 80 GB.
+- En cuantización de 8 bits: alrededor de 28-30 GB de VRAM; en 4 bits: alrededor de 15-17 GB (estimaciones según el tamaño de parámetros, no confirmadas en la información proporcionada).
+- GPU recomendadas: A100 80GB, H100 80GB o configuraciones multi-GPU para BF16; una RTX 4090 (24 GB) solo es viable con cuantización de 4 bits agresiva, con contexto reducido.
+- Despliegue: la model card del base indica compatibilidad con Hugging Face Transformers, vLLM, SGLang y TokenSpeed; llama.cpp/Ollama no se mencionan explícitamente.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Vision | Rechazos | Licencia |
+| Modelo | Parámetros | Contexto | Visión | Licencia | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (original) | 27B | 262K (ext. 1M) | Sí | 99/100 (según autor) | Apache-2.0 |
-| Qwen3.8-27B-heretic-ara | 27B | 262K (ext. 1M) | Sí | 0/100 | Apache-2.0 |
-| Qwen3.6-27B | 27B | No disponible | No disponible | No disponible | Apache-2.0 |
-| Qwen3.7-Plus | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Qwen3.8-27B-heretic-ara | 27,36B | 262.144 (ext. 1M) | Sí | Apache 2.0 | Abliterated, 0/100 rechazos, KL 0,0535 |
+| Qwen3.8-27B (original) | 27B | 262.144 (ext. 1M) | Sí | Apache 2.0 | Alineado, 99/100 rechazos |
+| Qwen3.6-27B | no disponible | no disponible | no disponible | no disponible | Generación anterior; benchmarks comparativos en la model card del base, valores no disponibles |
+| Qwen3.7-Plus | no disponible | no disponible | no disponible | no disponible | Modelo de la generación intermedia; valores de benchmarks no disponibles |
 
-La comparativa con Qwen3.6-27B y Qwen3.7-Plus se menciona en la model card original de Qwen3.8-27B, pero no se dispone de sus especificaciones detalladas. La principal diferencia de este modelo frente a otras versiones abliteadas (por ejemplo, las basadas en Dolphin o en otras técnicas de "uncensoring") es que usa el método ARA de Heretic, que busca preservar el comportamiento bueno mientras elimina los rechazos, con una divergencia KL baja (0,0535).
+No se dispone de datos suficientes para comparar con alternativas de otros fabricantes de la misma categoría (modelos multimodales densos de ~27B).
 
 ## Limitaciones y advertencias
 
-- Riesgo de contenido dañino: al eliminar los rechazos, el modelo puede generar contenido violento, ilegal, discriminatorio o sexualmente explícito sin filtros. Su uso debe limitarse a entornos de investigación controlados y con supervisión.
-- Alucinaciones: como cualquier modelo de lenguaje, puede producir información falsa o inventada, especialmente en temas de actualidad o especializados.
-- Sesgos: el proceso de abliteración no elimina los sesgos del modelo original; puede amplificarlos al no rechazar ciertas peticiones sesgadas.
-- Divergencia de comportamiento: aunque la divergencia KL es baja (0,0535), la modificación de pesos en las capas 26-56 puede afectar a la calidad de las respuestas en tareas que dependen de esas capas.
-- Sin garantías de producción: el autor no ha publicado benchmarks de rendimiento ni pruebas de robustez. No se recomienda su uso en producción sin una evaluación exhaustiva.
-- Licencia: Apache-2.0 permite uso comercial, pero el usuario es responsable del contenido generado. No hay restricciones adicionales documentadas.
-- Cuantizaciones no disponibles: no hay versiones GGUF o AWQ publicadas, lo que limita el despliegue en entornos con recursos reducidos.
+- La abliteration elimina la dirección de rechazo pero no garantiza la ausencia de contenido dañino: el modelo puede generar respuestas inseguras, sesgadas o ilegales según el contexto de uso.
+- La KL divergence de 0,0535 respecto al modelo base indica una divergencia no trivial en la distribución de salida; pueden aparecer degradaciones en capacidades no evaluadas (razonamiento, código, visión) que no se han medido en la información disponible.
+- Riesgo de alucinación: no se han publicado evaluaciones específicas para esta variante; el proceso de abliteration puede afectar a la calibración del modelo.
+- Idiomas soportados no documentados; no se garantiza un rendimiento multilingüe equivalente al del modelo base.
+- La licencia Apache 2.0 permite uso comercial, pero el despliegue de un modelo decensored en productos orientados a usuarios conlleva responsabilidad legal y reputacional por el contenido generado; se recomienda moderación externa.
+- El proceso de abliteration se aplicó en las capas 26 a 56 de 64; el resto de capas conserva el comportamiento original, lo que puede producir respuestas inconsistentes según la ruta de activación.
+- No hay información sobre cuantizaciones oficiales publicadas ni sobre el rendimiento en llama.cpp/Ollama.
+- El modelo base declara contexto extensible a 1M, pero el rendimiento real en contextos muy largos no está verificado en la información disponible.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
-- Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
-- Herramienta Heretic: https://github.com/p-e-w/heretic
-- Bifurcación personalizada de Heretic: https://github.com/timrohrbaugh/heretic
-- PR del método ARA: https://github.com/p-e-w/heretic/pull/211
+- Modelo en Hugging Face: https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Heretic (herramienta de abliteration): https://github.com/p-e-w/heretic
+- Fork de Heretic usado por el autor: https://github.com/timrohrbaugh/heretic
+- Pull request del método Arbitrary-Rank Ablation (ARA): https://github.com/p-e-w/heretic/pull/211
+- Qwen Cloud (servicio gestionado del modelo base): https://www.qwencloud.com
+- Overview de Qwen3.8-27B en Qwen Cloud: https://www.qwencloud.com/models/qwen3.8-27b

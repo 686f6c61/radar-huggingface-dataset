@@ -2,83 +2,145 @@
 
 ## Resumen
 
-PRATIBHA-2, anteriormente conocido como MANAS-2, es un modelo fundacional basado en transformer disenado especificamente para el aprendizaje de representaciones de electroencefalograma (EEG). Lo desarrolla MannasAI y resuelve un problema concreto: la falta de representaciones generalizables para senales cerebrales que puedan reutilizarse en multiples tareas downstream (deteccion de patologias, clasificacion de estados, decodificacion de intencion) sin reentrenar desde cero. Su relevancia actual radica en que aplica al dominio neurofisiologico tecnicas de autoaprendizaje enmascarado que ya han demostrado su valor en texto e imagen.
+PRATIBHA-2 (anteriormente conocido como MANAS-2) es un modelo fundacional basado en transformer para el aprendizaje de representaciones de señales EEG, desarrollado por MannasAI. Con 92,8 millones de parámetros, 22 capas de transformer y embeddings de 512 dimensiones, el modelo procesa EEG muestreado a 200 Hz mediante parches de un segundo con solapamiento de 0,1 segundos y codificación posicional espaciotemporal. Su objetivo es proporcionar representaciones genéricas y reutilizables que sirvan como base para múltiples tareas downstream de neurociencia y neurotecnología, evitando entrenar un modelo desde cero para cada aplicación.
 
-El modelo tiene 92,8 millones de parametros, 22 capas transformer y embeddings de 512 dimensiones. Procesa EEG muestreado a 200 Hz mediante parches de un segundo con solapamiento de 0,1 segundos y codificacion posicional espacio-temporal, lo que le permite manejar un numero variable de canales y longitudes de senal. Combina un autoencoder enmascarado hibrido crudo-banda (RBH) con una regularizacion de reconstruccion restringida (ConRec) que preserva la continuidad de la energia RMS local.
+La innovación técnica central es la combinación de un autoencoder enmascarado híbrido Raw-Band (RBH), que reconstruye tanto la forma de onda como su contenido espectral, con Constrained Reconstruction (ConRec), una regularización que impone continuidad en la energía RMS local de las formas de onda reconstruidas. El preentrenamiento se realizó sobre EEG clínico sin etiquetar de fuentes internas, TUH EEG e I-CARE. Esta versión pública contiene únicamente el codificador, pensado para extracción de características y ajuste fino.
 
-Se distribuye bajo licencia Apache-2.0 e incluye unicamente el codificador, pensado para extraccion de caracteristicas y ajuste fino. No es un modelo generativo de texto: su pipeline es `feature-extraction` y su salida son tensores de caracteristicas con forma `[batch, patches, channels, 512]`.
+El modelo es relevante porque, según la model card, supera a todos los modelos fundacionales de EEG de código abierto incluidos en NeuralBench en el conjunto de 34 tareas "core", con un rango medio de 3,94 frente a 4,94 de LaBraM o 5,00 de REVE. Se publica bajo licencia Apache-2.0, lo que facilita su adopción tanto en investigación como en desarrollo comercial.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (codificador) con masked autoencoding hibrido crudo-banda (RBH) y reconstruccion restringida (ConRec) |
-| Parametros totales | 92.814.848 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en tokens; procesa parches de 1 s con solapamiento de 0,1 s, con longitud de senal y numero de canales variables |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | en (etiqueta de idioma del repositorio; el modelo opera sobre senales EEG, no sobre texto) |
+| Arquitectura | Transformer (encoder) con autoencoder enmascarado híbrido Raw-Band y Constrained Reconstruction |
+| Parámetros totales | 92.814.848 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (procesa parches de 1 s a 200 Hz con solapamiento de 0,1 s; número de canales y longitud de señal variables) |
+| Tipos de cuantización | no disponible (pesos en safetensors; no se documentan cuantizaciones oficiales) |
+| Idiomas soportados | en (etiqueta de idioma; el modelo procesa señales EEG, no texto) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (libreria transformers, requiere `trust_remote_code=True`) |
+| Formato de pesos | safetensors (con custom_code, requiere trust_remote_code=True) |
 
 ## Arquitectura y entrenamiento
 
-PRATIBHA-2 es un transformer de 22 capas con embeddings de 512 dimensiones que opera sobre senales EEG preprocesadas. La entrada se segmenta en parches de un segundo a 200 Hz con un solapamiento de 0,1 segundos, y cada parche recibe codificacion posicional espacio-temporal que incorpora las coordenadas de los electrodos (obtenidas mediante una tabla de busqueda incluida en el modelo, en centimetros). Esto permite que el modelo acepte configuraciones de montaje variables, tanto en numero de canales como en duracion de la senal.
+PRATIBHA-2 es un transformer de 22 capas con embeddings de 512 dimensiones que opera sobre parches temporales de un segundo de EEG a 200 Hz, con solapamiento de 0,1 segundos entre parches consecutivos. Incorpora codificación posicional espaciotemporal, de modo que el modelo conoce tanto la posición temporal del parche como la localización del electrodo en el cuero cabelludo (coordenadas en centímetros obtenidas mediante una tabla de búsqueda incluida). El número de canales y la longitud de la señal pueden variar entre entradas.
 
-El preentrenamiento combina dos objetivos. Por un lado, RBH (Raw-Band Hybrid) realiza reconstruccion tanto de la forma de onda cruda como de su contenido espectral. Por otro, ConRec (Constrained Reconstruction) regulariza la continuidad de la energia RMS local en las formas de onda reconstruidas, lo que actua como restriccion fisicamente plausible sobre la senal. Los datos de preentrenamiento son EEG clinico sin etiquetar procedente de fuentes internas, del corpus TUH EEG y de I-CARE. La model card no detalla el numero total de tokens ni la composicion exacta del dataset, ni menciona el uso de RLHF o DPO (no aplicable a este dominio). Esta version publicada contiene solo el codificador.
+El preentrenamiento emplea enmascaramiento con reconstrucción híbrida: RBH reconstruye simultáneamente la forma de onda y su contenido espectral, mientras que ConRec regulariza la continuidad de la energía RMS local en las formas de onda reconstruidas, lo que guía al modelo hacia representaciones que preservan la estructura temporal y frecuencial del EEG. Los datos de preentrenamiento son EEG clínico sin etiquetar procedente de fuentes internas, del corpus TUH EEG y de I-CARE. No se documentan en la información disponible detalles sobre número total de tokens, composición exacta del dataset ni uso de RLHF o DPO.
 
 ## Capacidades
 
-- Extraccion de caracteristicas (embeddings) de senales EEG, con salida `[batch, patches, channels, 512]`.
-- Aprendizaje de representaciones temporales y espectrales de la senal cerebral.
-- Manejo de numero variable de canales y longitud de senal arbitraria.
-- Codificacion posicional basada en nombres de electrodos mediante `get_channel_positions`, con coordenadas en centimetros.
-- Acepta configuraciones de montaje heterogeneas (por ejemplo Fz, Cz, Pz u otras combinaciones).
-- Base para ajuste fino en tareas downstream de clasificacion o regresion sobre EEG.
-- No soporta generacion de texto, tool calling, agentes, vision ni audio.
-- Capacidades multilingues: no aplicable; el modelo procesa senales, no lenguaje natural.
+- Extracción de características (feature extraction) de señales EEG: devuelve tensores de forma [batch, patches, channels, 512] que pueden promediarse para obtener un embedding global por ventana.
+- Aprendizaje de representaciones genéricas para ajuste fino en tareas downstream de clasificación y regresión sobre EEG.
+- Procesamiento de configuraciones variables de canales y longitud de señal, con codificación posicional basada en nombres de electrodos estándar (Fz, Cz, Pz, etc.).
+- Captura de características temporales y espectrales gracias al objetivo de reconstrucción híbrido (forma de onda + espectro).
+- Soporte de tareas cognitivas, BCI, potenciales evocados, tareas clínicas, estados internos, sueño, fenotipado y detección de artefactos (según la evaluación en NeuralBench).
+- Capacidades multilingües: no aplica (modelo de señales, no de texto).
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no aplica.
+- Modo thinking, visión o audio: no disponible.
 
 ## Casos de uso
 
-- Deteccion de anomalias epileptiformes: usar los embeddings por parche como entrada a un clasificador ligero entrenado con pocas muestras etiquetadas, aprovechando que el modelo ya ha aprendido patrones temporales y espectrales de EEG clinico de TUH EEG.
-- Monitorizacion de estados de sueno: extraer caracteristicas por ventana de un segundo y agregarlas para clasificar fases del sueno, ya que la resolucion de parche y el muestreo a 200 Hz cubren las bandas relevantes (delta, theta, alfa, sigma).
-- Decodificacion de intencion en interfaces cerebro-computador: generar embeddings de epocas cortas y alimentar un clasificador de imagenes motoras o potenciales evocados, con la ventaja de que el codificador es reutilizable entre sujetos.
-- Investigacion en neurociencia computacional: usar las representaciones como espacio latente para estudiar similitudes entre condiciones experimentales o entre sujetos, sin necesidad de definir caracteristicas manuales.
-- Preprocesado inteligente en pipelines clinicos: integrar el modelo como extractor de caracteristicas en un sistema de triaje que priorice registros con patrones atipicos para revision por especialistas.
-- Ajuste fino con datos propios de un laboratorio: al ser Apache-2.0 y de solo 92,8 M de parametros, es viable reentrenar el codificador completo o parcialmente en un unico servidor con GPU de gama media.
-- Benchmarking de representaciones EEG: servir como linea base reproducible para comparar metodos de autoaprendizaje en el dominio, dado que el codigo y los pesos son publicos.
+- Clasificación de etapas de sueño: el modelo alcanza un 74,23 % de balanced accuracy en la tarea de sleep stage de NeuralBench, por lo que puede integrarse en pipelines de polisomnografía para etiquetar automáticamente épocas de sueño a partir de EEG multicanal.
+- Detección de patologías clínicas: con un 79,43 % de balanced accuracy en la tarea de pathology y un 70,89 % en seizure, es adecuado como extractor de características en sistemas de cribado de anomalías epileptiformes o patológicas.
+- Interfaces cerebro-computador (BCI): los resultados en SSVEP (92,96 %) y c-VEP (87,06 %) lo hacen útil para decodificar intención del usuario en sistemas de comunicación asistida basados en potenciales evocados visuales.
+- Monitorización de carga mental y estados internos: con un 70,09 % en workload y un 73,54 % en mental arithmetic, puede emplearse en entornos de evaluación cognitiva o interfaces adaptativas que ajusten la dificultad según la carga del usuario.
+- Investigación en neurociencia cognitiva: los embeddings de 512 dimensiones por parche y canal permiten analizar correlaciones con variables conductuales, como demuestra el Pearson R de 0,706 en predicción de edad y 0,562 en tiempo de reacción.
+- Detección de artefactos en EEG: con un Macro F1 de 0,550 en la tarea de artifact, puede usarse como etapa de control de calidad previa a análisis clínicos o de investigación.
+- Ajuste fino para fenotipado: la balanced accuracy del 91,91 % en predicción de sexo sugiere que las representaciones capturan información biológica estable, útil para estudios poblacionales a gran escala.
+- Preentrenamiento de modelos específicos con pocos datos: al ser un codificador genérico, permite congelar las capas y entrenar solo un cabezal de clasificación en dominios con datasets pequeños.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Resultados publicados en la model card, evaluados con NeuralBench (conjunto de 34 tareas "core"). El rango medio (average rank) es menor cuanto mejor.
+
+| Modelo fundacional | Rango medio ↓ |
+|---|---:|
+| **Pratibha-2** | **3,94** |
+| LaBraM | 4,94 |
+| REVE | 5,00 |
+| LUNA | 6,47 |
+| CBraMod | 6,76 |
+| BENDR | 10,71 |
+| BIOT | 12,32 |
+
+Rendimiento por tarea de Pratibha-2:
+
+| Categoría | Tarea | Métrica | Resultado |
+|---|---|---|---:|
+| Cognitive | Image | Top-5 accuracy (%) | 86,12 ± 1,64 |
+| Cognitive | Sentence | Top-5 accuracy (%) | 12,69 ± 0,60 |
+| Cognitive | Typing | Balanced accuracy (%) | 4,66 ± 0,27 |
+| Cognitive | Word | Top-5 accuracy (%) | 16,59 ± 0,83 |
+| BCI | c-VEP | Balanced accuracy (%) | 87,06 ± 0,73 |
+| BCI | Mental imagery | Balanced accuracy (%) | 27,54 ± 1,27 |
+| BCI | Motor execution | Balanced accuracy (%) | 55,12 ± 2,40 |
+| BCI | Motor imagery | Balanced accuracy (%) | 66,81 ± 0,20 |
+| BCI | P300 | Balanced accuracy (%) | 66,00 ± 0,38 |
+| BCI | SSVEP | Balanced accuracy (%) | 92,96 ± 0,71 |
+| Evoked Responses | Audiovisual | Balanced accuracy (%) | 43,69 ± 6,19 |
+| Evoked Responses | ERN | Balanced accuracy (%) | 78,14 ± 3,26 |
+| Evoked Responses | LRP | Balanced accuracy (%) | 78,69 ± 1,13 |
+| Evoked Responses | MMN | Balanced accuracy (%) | 58,05 ± 0,55 |
+| Evoked Responses | N170 | Balanced accuracy (%) | 71,35 ± 2,82 |
+| Evoked Responses | N2pc | Balanced accuracy (%) | 63,96 ± 0,67 |
+| Evoked Responses | N400 | Balanced accuracy (%) | 64,83 ± 1,52 |
+| Clinical | Clinical event | Macro F1 | 0,562 ± 0,024 |
+| Clinical | Dementia | Balanced accuracy (%) | 42,34 ± 6,03 |
+| Clinical | Depression | Balanced accuracy (%) | 88,37 ± 1,18 |
+| Clinical | Parkinson's | Balanced accuracy (%) | 69,96 ± 0,49 |
+| Clinical | Pathology | Balanced accuracy (%) | 79,43 ± 0,79 |
+| Clinical | Schizophrenia | Balanced accuracy (%) | 67,27 ± 4,51 |
+| Clinical | Seizure | Balanced accuracy (%) | 70,89 ± 0,39 |
+| Internal State | Emotion | Balanced accuracy (%) | 30,21 ± 0,18 |
+| Internal State | Mental arithmetic | Balanced accuracy (%) | 73,54 ± 2,63 |
+| Internal State | Workload | Balanced accuracy (%) | 70,09 ± 1,80 |
+| Sleep | Sleep arousal | Balanced accuracy (%) | 58,02 ± 0,72 |
+| Sleep | Sleep stage | Balanced accuracy (%) | 74,23 ± 0,12 |
+| Phenotyping | Age | Pearson R | 0,706 ± 0,012 |
+| Phenotyping | Psychopathology | Pearson R | 0,089 ± 0,015 |
+| Phenotyping | Sex | Balanced accuracy (%) | 91,91 ± 0,38 |
+| Misc | Artifact | Macro F1 | 0,550 ± 0,006 |
+| Misc | Reaction time | Pearson R | 0,562 ± 0,004 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el modelo tiene 92,8 M de parametros; en fp32 ocupa aproximadamente 0,37 GB de pesos, y en fp16 alrededor de 0,19 GB. La VRAM real dependera del tamano del lote y de la longitud de la senal de entrada.
-- GPU recomendadas: cualquier GPU con al menos 4-8 GB de VRAM es suficiente para inferencia; una RTX 3060, RTX 4090, A100 o H100 funcionan sin problema, aunque el modelo no aprovecha la capacidad de las de gama alta.
-- Cabe en GPU de consumo: si, practicamente en cualquier GPU consumer moderna (GTX 1660 en adelante), dado su tamano reducido.
-- Opciones de despliegue: al requerir `trust_remote_code=True` y codigo personalizado, el despliegue esta pensado para la libreria `transformers` (torch >= 2.2, transformers >= 4.57 y < 5, safetensors >= 0.4). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
-- Preprocesado necesario: filtrar y remuestrear la senal a 200 Hz y normalizar cada canal por ventana antes de la inferencia.
+- VRAM estimada para inferencia: el modelo tiene 92,8 millones de parámetros y el repositorio ocupa 0,4 GB en safetensors. En FP32 requiere aproximadamente 0,37 GB solo para pesos; en FP16/BF16, unos 0,19 GB. La memoria adicional depende del tamaño del lote y de la longitud de la señal de entrada.
+- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM es suficiente para inferencia en FP32; una RTX 3060, RTX 4060 o superior es más que adecuada. Para lotes grandes o ajuste fino completo, se recomienda una RTX 4090, A100 o H100.
+- Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna con 4 GB o más de VRAM (GTX 1650, RTX 3050, etc.).
+- Opciones de despliegue: transformers (>=4.57,<5) con trust_remote_code=True, PyTorch >=2.2 y safetensors >=0.4. No se documentan integraciones oficiales con vLLM, llama.cpp, Ollama o TGI (son herramientas orientadas a modelos de lenguaje; este modelo es de señales).
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable con alternativas de la misma categoria (modelos fundacionales de EEG como BENDR, LaBraM o BIOT). Se indica "no disponible".
+| Modelo | Parámetros | Contexto / entrada | Rango medio NeuralBench ↓ | Licencia | Disponibilidad |
+|---|---:|---|---:|---|---|
+| **Pratibha-2** | 92,8 M | Parches de 1 s a 200 Hz, canales variables | **3,94** | Apache-2.0 | Hugging Face (MannasAI) |
+| LaBraM | no disponible | no disponible | 4,94 | no disponible | no disponible |
+| REVE | no disponible | no disponible | 5,00 | no disponible | no disponible |
+| LUNA | no disponible | no disponible | 6,47 | no disponible | no disponible |
+| CBraMod | no disponible | no disponible | 6,76 | no disponible | no disponible |
+| BENDR | no disponible | no disponible | 10,71 | no disponible | no disponible |
+| BIOT | no disponible | no disponible | 12,32 | no disponible | no disponible |
+
+Los datos de parámetros, contexto y licencia de los modelos comparables no se detallan en la información proporcionada; solo se dispone de su rango medio en NeuralBench.
 
 ## Limitaciones y advertencias
 
-- El modelo espera senales EEG ya preprocesadas: filtrado, remuestreo a 200 Hz y normalizacion por canal y ventana. Omitir este paso degrada las representaciones.
-- Los nombres de electrodos deben coincidir exactamente con el orden de canales de la senal; un desajuste produce codificaciones posicionales incorrectas.
-- Solo se publica el codificador; no hay cabeza de clasificacion ni tarea downstream incluida, por lo que el rendimiento final depende del ajuste fino del usuario.
-- No se documentan sesgos especificos, pero al entrenarse con EEG clinico de fuentes internas, TUH EEG e I-CARE, puede heredar sesgos de poblacion, equipo de registro y protocolo clinico de esos corpus.
-- Riesgo de generalizacion limitada a montajes, dispositivos o poblaciones no representados en el preentrenamiento.
-- El modelo no es generativo ni conversacional; no debe emplearse para tareas de texto, codigo o razonamiento.
-- La etiqueta de idioma "en" es irrelevante para el funcionamiento real, que opera sobre senales.
-- Licencia Apache-2.0: permite uso comercial y modificacion con atribucion; no obstante, el uso clinico real exige validacion regulatoria independiente.
-- El repositorio tiene pocas descargas (107) y likes (3) en el momento de la consulta, lo que sugiere una validacion comunitaria aun limitada.
+- El modelo es un codificador de representaciones, no un clasificador final: requiere una cabeza de tarea y ajuste fino para aplicaciones concretas.
+- Requiere preprocesamiento específico: filtrado, remuestreo a 200 Hz y normalización por canal dentro de cada ventana. Un preprocesamiento incorrecto degrada las representaciones.
+- Los nombres de electrodos deben coincidir con el orden de canales de la señal; la tabla de posiciones solo cubre electrodos estándar y devuelve coordenadas en centímetros.
+- Rendimiento desigual entre tareas: algunas tareas muestran resultados bajos, como Typing (4,66 %), Mental imagery (27,54 %), Emotion (30,21 %) o el Pearson R de 0,089 en Psychopathology, lo que indica que no todas las representaciones son igualmente útiles.
+- Posibles sesgos en los datos de preentrenamiento (TUH EEG, I-CARE y fuentes internas): la composición demográfica y clínica no está documentada, lo que puede introducir sesgos en tareas de fenotipado o clínicas.
+- Riesgo de alucinación: no aplica en el sentido de generación de texto, pero el modelo puede producir representaciones poco fiables en señales fuera de distribución o con artefactos severos.
+- Limitaciones de idioma: la etiqueta de idioma es "en", aunque el modelo procesa señales, no texto; la documentación y el ecosistema están en inglés.
+- Licencia Apache-2.0: permite uso comercial, pero el modelo se distribuye con custom_code y requiere trust_remote_code=True, lo que implica ejecutar código del autor; conviene auditar dicho código antes de usarlo en producción.
+- Validación clínica: los resultados en tareas clínicas (seizure, pathology) no constituyen validación regulatoria; no debe usarse como dispositivo médico sin las certificaciones oportunas.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/MannasAI/pratibha-2
+- Modelo en Hugging Face: https://huggingface.co/MannasAI/pratibha-2
 - Paper (arXiv): https://arxiv.org/abs/2609.13717
-- Organizacion en Hugging Face: https://huggingface.co/MannasAI
+- Organización MannasAI: https://huggingface.co/MannasAI
+- NeuralBench: https://github.com/facebookresearch/neuroai/tree/main/neuralbench-repo
+- Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

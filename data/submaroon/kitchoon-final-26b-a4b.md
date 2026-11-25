@@ -2,102 +2,104 @@
 
 ## Resumen
 
-Kitchoon-Final-26B-A4B es un modelo de lenguaje de tipo Mixture of Experts (MoE) derivado de la familia Gemma 4, desarrollado por el usuario independiente SubMaroon y publicado en Hugging Face. Con 25.805.933.872 parámetros totales (aproximadamente 26B) y un diseño A4B (4B parámetros activos por token), está especializado en roleplay y narrativa de personajes, incluyendo contenido ERP (roleplay erótico), con un estilo de escritura neutro y orientado al desarrollo de personajes. El modelo se distribuye bajo licencia Apache 2.0 y está etiquetado como "uncensored" y "heretic".
+Kitchoon-Final-26B-A4B es un ajuste fino de tipo roleplay y ERP construido sobre la arquitectura Gemma 4 en configuracion Mixture of Experts, con 25.805.933.872 parametros totales y 4B activos segun el sufijo del nombre. Lo desarrolla el usuario SubMaroon y deriva de su propio modelo previo Kitchoon-V5.1-Clean-26B-A4B-EXP, al que se le ha integrado un LoRA denominado Anthropos v3 con una fuerza de 0.7. El objetivo declarado es mejorar la variedad lexica y la diversidad de respuestas en generacion de rol sin alterar el modo de razonamiento ni el formato solicitado.
 
-La versión Final parte de Kitchoon-V5.1-Clean-26B-A4B-EXP como modelo base y le incorpora un LoRA denominado Anthropos v3, integrado ("baked") con una fuerza de 0.7 en las capas 10 a 29. Este LoRA se entrena mediante divergencia KL hacia una mezcla a nivel de token entre las predicciones de V5.1 y el modelo Gemma 4 preentrenado (antes del instruction tuning), siguiendo la idea del paper BACo (arXiv 2511.05650). El objetivo es recuperar la diversidad léxica del modelo base sin perder el formato y el estilo aprendidos, reduciendo muletillas y aumentando la variación entre respuestas sucesivas.
+La innovacion principal es la aplicacion de la tecnica BACo (arXiv 2511.05650): en lugar de ajustar el modelo para que imite una unica distribucion, se entrena un LoRA por divergencia KL hacia una mezcla a nivel de token entre el modelo ajustado (V5.1) y el modelo base preentrenado de Gemma 4. El modelo base aporta vocabulario y decisiones de composicion en un 70 por ciento de los casos, mientras que V5.1 conserva el control de la gramatica de formato, los tokens especiales y todo el canal de razonamiento. El resultado son respuestas menos repetitivas entre swipes y un uso mucho menor de muletillas y guiones largos.
 
-El modelo es relevante en el nicho de modelos de roleplay sin censura: mantiene el modo de razonamiento ("thinking") del modelo base intacto, conserva el soporte de formato solicitado en las tarjetas de personaje y ofrece una diversidad de muestreo mayor que su predecesor. Su ventana de contexto, idiomas y detalles de despliegue no están documentados en la información disponible.
+Es relevante ahora porque demuestra una via practica para recuperar diversidad estilistica en modelos fuertemente alineados por instruction tuning, sin reentrenar el modelo completo y manteniendo intactos los expertos MoE, el router, los embeddings y la torre de vision. La licencia Apache 2.0 facilita su uso comercial, aunque el modelo esta disenado especificamente para roleplay en ingles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture of Experts (MoE), familia Gemma 4; fine-tune LoRA sobre Kitchoon-V5.1-Clean-26B-A4B-EXP |
-| Parametros totales | 25.805.933.872 (~26B) |
-| Parametros activos | ~4B (sufijo A4B) |
+| Arquitectura | Transformer Mixture of Experts (Gemma 4) |
+| Parametros totales | 25.805.933.872 |
+| Parametros activos | 4B (segun nomenclatura A4B) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (repo en safetensors sin variantes GGUF publicadas) |
-| Idiomas soportados | en (inglés) |
+| Tipos de cuantizacion | no disponible (repo en safetensors de 51,6 GB) |
+| Idiomas soportados | en |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (tamaño del repo: 51.6 GB) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer MoE de la familia Gemma 4 con aproximadamente 26B parámetros totales y unos 4B activos por token. Incluye un "vision tower" (torre de visión) que, según la model card, permanece idéntico al del modelo base tras el fine-tune. El modelo Final no modifica el `lm_head`, los expertos MoE, el router ni los embeddings: todos los cambios se concentran en las capas 10 a 29, donde se aplican LoRAs sobre las proyecciones de atención QK (`q_proj` + `k_proj`), OV (`v_proj` + `o_proj`) y el MLP denso (`gate_proj` + `up_proj` + `down_proj`).
+El modelo parte de Gemma 4 en variante MoE con 26B totales y 4B activos, e incorpora una torre de vision heredada del modelo base. Sobre Kitchoon-V5.1-Clean se aplica el LoRA Anthropos v3 (rango 32, alpha 64) en las capas 10 a 29, cubriendo las proyecciones de atencion q, k, v y o, asi como el MLP denso (gate, up y down). El LoRA se integra con fuerza 0.7 y no toca lm_head, expertos MoE, router, embeddings ni torre de vision, que permanecen identicos a V5.1.
 
-El entrenamiento de Anthropos v3 usa rango 32, alpha 64, learning rate 3e-5 con schedule coseno, una época (108 pasos) y pesos de pérdida de 1 (mezcla) / 5 (mantener como V5.1) / 15 (thinking). La mezcla objetivo asigna al modelo base una cuota de 0.7 en palabras de contenido y decisiones de composición (saltos de párrafo, primera palabra de párrafo, apertura de acciones o citas, puntuación), mientras que V5.1 decide en solitario la "gramática" del formato (cierre de asteriscos o comillas, interior de palabras, tokens especiales, fin de respuesta y todo el contenido dentro de `[...]`). Cuando V5.1 es muy confiado y el base discrepa con fuerza, la cuota del base se reduce a la mitad para proteger nombres y hechos de la escena; si la tarjeta impone una regla de formato explícita, la composición queda enteramente en manos de V5.1. El razonamiento nunca se mezcla. Los datos de entrenamiento consisten en contextos de un dataset propio de roleplay (~500 escenas, 416 tarjetas de personaje), 150 escenas del dataset de Kitchoon de Indexnusrefather, un cuarto de escenas con reglas de formato explícitas, 150 respuestas con razonamiento y 200 respuestas generadas por la propia mezcla; todas las respuestas de entrenamiento fueron escritas por V5.1. En validación, la KL respecto a la mezcla bajó de 1.49 a 0.62, y la KL del thinking se mantuvo en ~0.03.
+El entrenamiento de Anthropos v3 sigue el marco BACo: en cada posicion de la respuesta el objetivo es una mezcla token a token entre V5.1 y el Gemma 4 base preentrenado. El modelo base recibe el 70 por ciento de las palabras de contenido y de las decisiones de composicion (saltos de parrafo, primera palabra de parrafo, apertura de acciones o citas, puntuacion), mientras que V5.1 decide en solitario el cierre de asteriscos y comillas, el interior de palabras, los tokens especiales, el final de la respuesta y todo el contenido entre corchetes. Cuando V5.1 es muy confiado y el base discrepa con fuerza, la cuota del base se reduce a la mitad para proteger nombres y hechos de la escena. Si la tarjeta de personaje incluye una regla de formato explicita, la composicion queda enteramente en manos de V5.1. El canal de razonamiento nunca se mezcla.
+
+Los datos de entrenamiento usan solo contextos de datasets: aproximadamente 500 escenas de un dataset propio de roleplay con 416 tarjetas de personaje distintas, 150 escenas del dataset Kitchoon de Indexnusrefather, y un cuarto de las escenas con reglas de formato explicitas. Todas las respuestas fueron generadas por V5.1, incluyendo 150 respuestas con razonamiento y 200 escritas por la propia mezcla. El entrenamiento consistio en 1 epoca (108 pasos), learning rate 3e-5 con scheduler coseno, y pesos de perdida de 1 para la mezcla, 5 para mantener el comportamiento de V5.1 y 15 para preservar el razonamiento. La KL respecto a la mezcla en textos de validacion bajo de 1,49 a 0,62, y la KL del canal de pensamiento se mantuvo en torno a 0,03.
 
 ## Capacidades
 
-- Generación de texto narrativo y roleplay multi-turno con estilo de escritura neutro y foco en desarrollo de personajes.
-- Roleplay de contenido adulto (ERP) sin censura, etiquetado explícitamente como "uncensored" y "heretic".
-- Modo de razonamiento ("thinking") con canales de pensamiento que se abren y cierran de forma consistente, incluso en conversaciones largas.
-- Respeto de reglas de formato explícitas en la tarjeta de personaje (prohibición de asteriscos, límite de párrafos, cabecera `[Time | Place]`, ausencia de em dashes).
-- Mayor diversidad de muestreo: menor solapamiento léxico entre respuestas sucesivas ("swipes") y menor repetición de frases hechas.
-- Capacidad de visión heredada del modelo base (torre de visión idéntica), aunque no se documenta su uso en este fine-tune.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso más allá del thinking de roleplay: no disponible.
-- Capacidades multilingües: limitadas al inglés según la model card.
+- Generacion de texto orientada a roleplay y ERP, con foco en desarrollo de personaje y estilo de escritura neutro.
+- Modo de razonamiento (thinking) que se abre y cierra de forma consistente en todas las pruebas realizadas por el autor.
+- Mayor diversidad lexica entre swipes: menor solapamiento de palabras y menor repeticion de las tres primeras palabras.
+- Reduccion de muletillas y guiones largos: aproximadamente 2,7 guiones largos por 1000 palabras frente a 7,2 en V5.1, y unas 5 muletillas por 1000 palabras frente a 10.
+- Respeto de reglas de formato explicitas en la tarjeta de personaje (sin asteriscos, maximo de parrafos, cabecera de tiempo y lugar, prohibicion de guiones largos).
+- Capacidad de vision heredada del modelo base Gemma 4 (torre de vision intacta), aunque no se documenta su uso en roleplay.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado especificamente; el canal de thinking existe pero no se describe su uso para tareas de agente.
+- Capacidades multilingues: limitadas al ingles segun la model card.
 
 ## Casos de uso
 
-- Roleplay conversacional en frontends tipo SillyTavern: el modelo está diseñado y etiquetado específicamente para este flujo, con ajustes de muestreo recomendados (temperatura 0.85, Min-P 0.05) y respuestas largas de ~400 palabras que encajan con el formato de tarjetas de personaje.
-- Creación de personajes interactivos con reglas de formato estrictas: la mezcla preserva las reglas explícitas de la tarjeta (sin asteriscos, cabeceras de tiempo y lugar, límite de párrafos), lo que permite definir convenciones de salida sin que el modelo las rompa.
-- Escritura narrativa asistida y generación de ficción: la reducción de em dashes (~2.7 por 1000 palabras frente a ~7.2 en V5.1) y de frases hechas (~5 frente a ~10 por 1000 palabras en tarjetas nuevas) produce prosa menos formulaica para borradores de relato.
-- Exploración de variantes de respuesta ("swipes"): el menor solapamiento entre respuestas (0.024 frente a 0.036) y la menor coincidencia en las tres primeras palabras (11% frente a 14% de pares) facilitan generar alternativas realmente distintas en una misma escena.
-- Investigación sobre diversidad y calibración en modelos ajustados: el enfoque BACo con mezcla a nivel de token y entrenamiento por KL es un caso de estudio reproducible para quienes investigan cómo recuperar la distribución del modelo preentrenado sin reentrenar.
-- Roleplay adulto en entornos privados: la licencia Apache 2.0 y la ausencia de censura permiten desplegarlo en instalaciones locales para contenido para adultos, siempre con las advertencias legales y de seguridad correspondientes.
-- Prototipado de asistentes de personaje con razonamiento: el thinking intacto permite separar el razonamiento interno de la respuesta final en pipelines que necesiten trazabilidad del proceso.
+- Roleplay conversacional de larga duracion: el modelo mantiene coherencia de personaje en chats extensos gracias a que el canal de razonamiento se preserva intacto y el LoRA no altera los expertos ni el router; encaja en frontends tipo SillyTavern con temperatura 0.85 y Min-P 0.05.
+- Generacion de ficcion interactiva con tarjetas de personaje: la capacidad de respetar reglas de formato explicitas permite imponer estilos narrativos concretos (por ejemplo, sin asteriscos o con cabecera de escena) sin que el modelo derive hacia otros formatos.
+- Creacion de dialogos variados para guiones o narrativa ramificada: la menor tasa de muletillas y el menor solapamiento entre swipes reducen la sensacion de repeticion al generar multiples alternativas de una misma escena.
+- Prototipado de asistentes de escritura creativa en ingles: el estilo neutro y la ausencia de sesgo hacia un genero concreto permiten adaptarlo a distintos registros mediante la tarjeta de personaje.
+- Investigacion sobre diversidad estilistica en modelos alineados: el modelo sirve como referencia reproducible de la tecnica BACo aplicada mediante LoRA, con hiperparametros y metricas de KL documentados.
+- Despliegue en entornos con recursos moderados: al ser un MoE de 26B con 4B activos, la inferencia activa una fraccion pequena de parametros, lo que facilita servir el modelo en GPUs de gama alta consumer o profesional con cuantizacion adecuada, aunque el repo en safetensors ocupa 51,6 GB.
+- Generacion de contenido para comunidades de rol en ingles con requisitos de formato estricto: la combinacion de thinking estable y reglas de formato lo hace adecuado para pipelines automatizados de generacion de escenas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card solo incluye métricas internas de comparación con V5.1:
+No se han publicado resultados de benchmarks en la informacion disponible. El autor unicamente reporta metricas internas de estilo y de entrenamiento:
 
-| Metrica (vs. Kitchoon-V5.1-Clean) | Kitchoon-Final |
-|---|---|
-| Em dashes por 1000 palabras | ~2.7 (frente a ~7.2) |
-| Frases hechas por 1000 palabras en tarjetas nuevas | ~5 (frente a ~10) |
-| Solapamiento de palabras entre swipes | ~0.024 (frente a ~0.036) |
-| Pares de swipes con las mismas tres primeras palabras | 11% (frente a 14%) |
-| KL respecto a la mezcla objetivo (held-out) | 0.62 (frente a 1.49) |
-| KL del canal de thinking | ~0.03 |
+| Metrica | Kitchoon-V5.1-Clean | Kitchoon-Final |
+|---|---|---|
+| Guiones largos por 1000 palabras | ~7,2 | ~2,7 |
+| Muletillas por 1000 palabras (tarjetas nuevas) | ~10 | ~5 |
+| Solapamiento de palabras entre swipes | ~0,036 | ~0,024 |
+| Swipes con las mismas tres primeras palabras | 14 % | 11 % |
+| KL respecto a la mezcla (validacion) | 1,49 | 0,62 |
+| KL del canal de razonamiento | no disponible | ~0,03 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa, los pesos en safetensors ocupan ~51.6 GB en el repo, lo que exige al menos ~52 GB de VRAM en precisión original (bf16/fp16) para cargar el modelo completo; la cuantización a 8 bits o 4 bits reduciría el requisito, pero no se publican variantes cuantizadas.
-- GPU recomendadas: para carga completa en precisión original se necesita una GPU con 80 GB (A100 80GB, H100 80GB) o varias GPUs. No se documenta soporte oficial para GPUs de consumo.
-- GPU de consumo: no cabe en GPUs de consumo de 24 GB (RTX 4090) en precisión original; sería necesario cuantizar, y no hay pesos GGUF publicados en la información disponible.
-- Opciones de despliegue: no se especifican en la model card. Al ser un modelo safetensors de arquitectura Gemma 4 MoE, sería compatible con stacks que soporten dicha arquitectura (por ejemplo, vLLM o TGI), pero no hay confirmación oficial en la información proporcionada.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en precision completa (BF16): en torno a 52 GB solo para pesos, mas overhead de activaciones y cache KV; requiere GPUs de 80 GB o multi-GPU.
+- Cuantizacion a 8 bits: aproximadamente 26 GB de pesos, viable en una A100 40 GB o H100.
+- Cuantizacion a 4 bits: aproximadamente 13 a 15 GB de pesos, viable en RTX 4090 (24 GB) y GPUs consumer de gama alta.
+- GPU recomendadas: A100 80 GB o H100 para BF16; A100 40 GB o L40S para 8 bits; RTX 4090, RTX 3090 o similares para 4 bits.
+- Cabe en GPU consumer: si, con cuantizacion de 4 bits en tarjetas de 16 GB o mas, aunque el contexto largo puede elevar el consumo por cache KV.
+- Opciones de despliegue: llama.cpp y Ollama para cuantizaciones GGUF (no incluidas en el repo, requieren conversion), vLLM o TGI para safetensors en BF16 o FP8. El soporte de Gemma 4 MoE dependera de la version de cada runtime.
+- Latencia y throughput estimados: no disponibles. Al activar solo 4B parametros por token, el throughput deberia ser superior al de un modelo denso de 26B, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Licencia | Enfoque |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kitchoon-Final-26B-A4B | ~26B | ~4B | no disponible | Apache 2.0 | Roleplay/ERP sin censura, diversidad léxica vía BACo |
-| Kitchoon-V5.1-Clean-26B-A4B-EXP | ~26B | ~4B | no disponible | no disponible | Modelo base del que deriva; mismo dataset y estilo |
-| Kitchoon-26B-A4B | ~26B | ~4B | no disponible | no disponible | Predecesor de la serie, basado en Pantheon-Reasoning 1.1 (heretic) con LoRA OV fusionado y lm_head propio |
+| Kitchoon-Final-26B-A4B | 26B totales / 4B activos | no disponible | Roleplay y ERP en ingles, MoE Gemma 4 | Apache 2.0 | Hugging Face |
+| Kitchoon-V5.1-Clean-26B-A4B-EXP | 26B totales / 4B activos | no disponible | Roleplay, modelo base del anterior | Apache 2.0 | Hugging Face |
+| Gemma 4 base (MoE) | 26B totales / 4B activos | no disponible | Modelo generalista preentrenado | Licencia Gemma | Google / Hugging Face |
 
-No se dispone de datos de rendimiento comparativo (benchmarks) entre estos modelos en la información proporcionada; la comparación se limita a linaje, licencia y enfoque.
+No se dispone de datos de benchmarks publicos que permitan comparar el rendimiento de Kitchoon-Final con alternativas de la misma categoria. La comparacion se limita a parametros, licencia y enfoque declarado.
 
 ## Limitaciones y advertencias
 
-- Modelo especializado en roleplay y ERP: su uso fuera de ese dominio no está validado y puede degradar la calidad frente a modelos de propósito general.
-- Contenido sin censura ("uncensored", "heretic"): puede generar material adulto, ofensivo o inapropiado; requiere moderación y control de acceso en cualquier despliegue.
-- Riesgo de alucinación: como todo modelo generativo, puede inventar hechos, nombres o detalles de la escena; la mezcla con el modelo base reduce pero no elimina este riesgo.
-- Idioma: solo inglés documentado; no hay soporte declarado de castellano ni de otros idiomas.
-- Contexto: la longitud de contexto no está documentada, lo que impide planificar conversaciones largas con garantías.
-- Formato de muestreo: la model card advierte contra truncadores agresivos (Min-P alto, Top-K, XTC), ya que gran parte de la diversidad introducida vive en las opciones menos probables; se recomienda temperatura 0.85, Min-P 0.05, sin repetition penalty ni DRY, y al menos 900 tokens de longitud de respuesta.
-- Licencia Apache 2.0: permite uso comercial, pero el contenido generado puede estar sujeto a restricciones legales según la jurisdicción (contenido adulto, derechos de imagen, etc.).
-- Autor independiente con 0 descargas y 0 likes en el momento de la ficha: no hay validación comunitaria ni garantías de mantenimiento.
-- No se publican pesos cuantizados ni instrucciones de despliegue, lo que complica su puesta en producción.
+- Entrenado exclusivamente en ingles; el rendimiento en castellano u otros idiomas no esta garantizado y probablemente sera deficiente.
+- Modelo sin censura (uncensored) y orientado a contenido adulto: no es adecuado para aplicaciones dirigidas a menores ni para entornos con politicas de contenido estrictas.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; el autor afirma que la mezcla protege nombres y hechos de la escena cuando V5.1 es confiado, pero no hay evaluacion independiente de esta proteccion.
+- Las respuestas son largas (en torno a 400 palabras) y requieren configurar al menos 900 tokens de longitud de respuesta; esto puede ser un problema en aplicaciones con limites estrictos de coste o latencia.
+- Sensible a la configuracion de muestreo: truncadores agresivos (Min-P alto, Top-K, XTC) eliminan buena parte de la diversidad que aporta Anthropos; se recomienda temperatura 0.85, Min-P 0.05 y penalizacion de repeticion desactivada.
+- El LoRA solo modifica las capas 10 a 29 con fuerza 0.7; los cambios de estilo son moderados y el autor estima que el LoRA reproduce aproximadamente la mitad de las alteraciones de la mezcla.
+- No se documentan capacidades de tool calling ni de agente, por lo que no deberia asumirse su uso en pipelines de automatizacion sin validacion previa.
+- Licencia Apache 2.0 permite uso comercial, pero el contenido generado puede infringir derechos de terceros si se usa con personajes protegidos; la responsabilidad recae en el usuario.
+- El repo ocupa 51,6 GB y no incluye cuantizaciones GGUF; la conversion a formatos ligeros corre a cargo del usuario.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/SubMaroon/Kitchoon-Final-26B-A4B
 - Modelo base: https://huggingface.co/SubMaroon/Kitchoon-V5.1-Clean-26B-A4B-EXP
-- Predecesor de la serie: https://huggingface.co/SubMaroon/Kitchoon-26B-A4B
-- Repositorio de archivos: https://huggingface.co/SubMaroon/Kitchoon-26B-A4B/tree/main
 - Paper BACo: https://arxiv.org/abs/2511.05650
-- Dataset de Kitchoon de Indexnusrefather: https://huggingface.co/Indexnusrefather
+- Dataset Kitchoon de Indexnusrefather: https://huggingface.co/Indexnusrefather
 - Donaciones del autor (Boosty): https://boosty.to/submaroon/donate

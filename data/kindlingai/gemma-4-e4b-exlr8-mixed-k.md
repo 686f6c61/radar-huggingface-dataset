@@ -2,88 +2,90 @@
 
 ## Resumen
 
-Gemma 4 E4B exlr8 mixed K es una cuantizacion del modelo google/gemma-4-E4B-it publicada por kindlingai. Se trata de una version comprimida en la que las capas lineales de atencion y MLP se almacenan como codificaciones trellis de 2, 3 y 4 bits en el formato exlr8, mientras que el resto de tensores se mantienen en BF16. Un manifiesto selecciona la anchura de bits para cada tipo de matriz, lo que permite distintos perfiles de compromiso entre tamano y fidelidad respecto al modelo original.
+Gemma 4 E4B · exlr8 mixed K es una versión cuantizada del modelo google/gemma-4-E4B-it, publicada por el usuario kindlingai en Hugging Face. La cuantización se realiza mediante el formato propietario exlr8, basado en trellis encodes de 2, 3 y 4 bits aplicados a las capas lineales de atención y MLP, mientras que el resto de tensores se mantienen en BF16. El objetivo es reducir el peso del modelo (12,3 GB en el repositorio) manteniendo una fidelidad razonable respecto al modelo original en BF16.
 
-El modelo base es la variante instructiva E4B de la familia Gemma 4 de Google, aunque la informacion disponible no detalla su arquitectura interna, numero de parametros ni longitud de contexto. La relevancia de esta publicacion radica en el formato de cuantizacion exlr8, una alternativa a las tecnicas habituales (GPTQ, AWQ, GGUF K-quants) que codifica las matrices con trellis y permite perfiles por debajo de 3 bits por peso con metricas de divergencia KL y acuerdo top-1 declaradas frente a BF16.
+El modelo hereda la arquitectura y capacidades del Gemma 4 E4B-it original de Google, pero no se dispone de información detallada sobre la arquitectura interna, el número de parámetros, la longitud de contexto o los idiomas soportados en la información proporcionada. La model card se limita a describir el esquema de cuantización y a ofrecer métricas de divergencia (KL y acuerdo top-1) para tres perfiles de bits por peso.
 
-El repositorio ocupa 10,9 GB y esta etiquetado con licencia Apache 2.0, si bien el enlace de licencia apunta a la licencia propia de Gemma 4 de Google. La libreria asociada es trellis y el modelo fue creado el 21 de noviembre de 2026, sin descargas ni likes registrados en el momento de la consulta.
+La relevancia de esta ficha radica en que documenta una alternativa de despliegue de bajo peso para Gemma 4 E4B, con perfiles que van desde 2,17 hasta 3,09 bits por peso, lo que permite evaluar el compromiso entre tamaño y fidelidad antes de adoptarlo en producción. No obstante, la ausencia de benchmarks de tareas y de especificaciones del modelo base limita su evaluación directa.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (hereda la del modelo base google/gemma-4-E4B-it; detalles no disponibles) |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
+| Arquitectura | no disponible (modelo base: google/gemma-4-E4B-it; capas lineales en formato trellis exlr8) |
+| Parámetros totales | no disponible |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Trellis exlr8 de 2, 3 y 4 bits en lineales de atencion y MLP; resto de tensores en BF16. Perfiles: bit217 (2,17 bits/peso), bit245 (2,45 bits/peso), bit309 (3,09 bits/peso) |
+| Tipos de cuantización | trellis 2, 3 y 4 bits en lineales de atención y MLP; embeddings en trellis 4 bits por fila; resto en BF16 |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 (con enlace a la licencia de Gemma 4 de Google) |
-| Formato de pesos | Formato exlr8 (trellis), libreria trellis; no safetensors ni GGUF |
+| Licencia | Apache 2.0 (según model card, con enlace a la licencia de Gemma 4) |
+| Formato de pesos | trellis exlr8 (librería `trellis`); no se indica safetensors ni GGUF |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la del modelo google/gemma-4-E4B-it, de la que no se aportan detalles estructurales en la informacion disponible (numero de capas, dimension oculta, atencion, contexto). Lo especifico de esta publicacion es el esquema de cuantizacion: las matrices lineales de atencion (q, k, v, o) y de MLP (gate, up, down) se codifican con trellis en el formato exlr8, con anchuras de 2 a 4 bits segun el tipo de matriz y el perfil elegido en el manifiesto.
+No se dispone de información sobre la arquitectura del modelo base Gemma 4 E4B-it en la documentación proporcionada. La model card de esta versión cuantizada describe únicamente el esquema de compresión: las matrices lineales de atención (k, v, o, q) y de MLP (gate, up, down) se almacenan como trellis encodes de 2, 3 o 4 bits según el perfil seleccionado, mientras que la tabla de embeddings por capa se codifica como trellis de 4 bits por fila, de modo que cada token decodifica sus 256 valores por capa desde 128 bytes propios. El resto de tensores permanece en BF16. Un manifiesto asigna un ancho de bits a cada tipo de matriz.
 
-No se trata de un modelo reentrenado ni de un ajuste fino: es una conversion post-entrenamiento del modelo instructivo original. No hay informacion sobre datos de entrenamiento, tokens vistos, RLHF/DPO ni innovaciones de inferencia (decodificacion especulativa, atencion lineal, etc.) mas alla del propio esquema de compresion trellis.
+No se indica en la información disponible si el modelo base fue entrenado con RLHF, DPO u otras técnicas, ni la composición del dataset, el número de tokens de entrenamiento o innovaciones técnicas del modelo original. La cuantización no implica reentrenamiento: se aplica sobre los pesos del modelo base ya entrenado.
 
 ## Capacidades
 
-- Hereda las capacidades del modelo base google/gemma-4-E4B-it, si bien la informacion disponible no las enumera de forma explicita.
-- Generacion de texto e instrucciones en modo instructivo (sufijo -it del modelo base).
-- Las capacidades de razonamiento, codigo, matematicas, vision, tool calling, agentes o multilingue no estan documentadas en la informacion disponible.
-- Perfiles de cuantizacion con distinto compromiso de fidelidad: el perfil bit309 alcanza un 89,1 % de acuerdo top-1 con BF16, mientras que bit217 baja al 78,0 %.
+- No se detallan capacidades específicas en la información proporcionada.
+- Se heredan las capacidades del modelo base google/gemma-4-E4B-it, pero no se documentan en la model card de esta versión.
+- No se confirma soporte de tool calling, function calling, agentes, multi-step reasoning, visión, audio ni modo thinking.
+- No se confirma el soporte multilingüe ni la lista de idiomas.
 
 ## Casos de uso
 
-- Despliegue en entornos con memoria limitada: los perfiles de 2,17 y 2,45 bits por peso reducen el espacio de las lineales de atencion y MLP frente a BF16, lo que permite servir el modelo en hardware con menos VRAM que el modelo original.
-- Evaluacion de tecnicas de cuantizacion: el repositorio publica metricas de divergencia KL y acuerdo top-1 por perfil, lo que lo hace util como referencia para comparar exlr8 con GPTQ, AWQ o GGUF K-quants sobre el mismo modelo base.
-- Investigacion en formatos de compresion: el formato exlr8 y su manifiesto por tipo de matriz permiten estudiar el impacto de asignar anchuras distintas a q, k, v, o, gate, up y down.
-- Prototipado de asistentes conversacionales: al derivar de un modelo instructivo, puede emplearse para generar respuestas en tareas de dialogo, siempre que se valide la calidad tras la cuantizacion.
-- Pruebas de regresion de calidad: las metricas de acuerdo top-1 (78,0 %, 81,8 % y 89,1 %) permiten seleccionar el perfil que cumple un umbral de fidelidad antes de desplegar.
-- Integracion en pipelines de investigacion con la libreria trellis: el formato de pesos requiere esta libreria, por lo que encaja en flujos que ya la utilicen para cargar y ejecutar modelos cuantizados.
+- Despliegue con restricciones de memoria: el perfil `bit217` (2,17 bits por peso en las lineales) reduce el peso del repositorio a 12,3 GB, lo que permite alojar el modelo en GPUs de gama alta con menos VRAM que la versión BF16, a costa de un acuerdo top-1 del 78,0 % frente a BF16.
+- Evaluación de compromiso fidelidad/tamaño: los tres perfiles (`bit217`, `bit245`, `bit309`) permiten medir la degradación en KL y acuerdo top-1 sobre 131K tokens de validación antes de elegir uno para producción.
+- Prototipado rápido en entornos de investigación: al estar bajo licencia Apache 2.0, puede usarse para experimentos internos sin las restricciones adicionales de la licencia Gemma original, según indica la model card.
+- Servicio de generación de texto en entornos con presupuesto de memoria ajustado: usando el perfil `bit309` (3,09 bits por peso, 89,0 % de acuerdo top-1) se obtiene la mayor fidelidad de los tres perfiles publicados.
+- Integración en pipelines de la librería `trellis`: el formato exlr8 y el manifiesto de anchos por matriz permiten cargar el modelo con la librería `trellis` y seleccionar el perfil en tiempo de carga.
+- Investigación sobre cuantización trellis: los datos de KL y acuerdo top-1 por perfil sirven como referencia para comparar esquemas de cuantización alternativos sobre el mismo modelo base.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos publicados son las metricas de fidelidad frente a BF16 sobre 131 000 tokens reservados, por perfil de cuantizacion.
+La model card publica métricas de fidelidad frente a BF16 sobre 131K tokens de validación, decodificadas con la tabla de embeddings por capa en K4:
 
-| Perfil | k, v, o | q | gate, up | down | Bits/peso | KL vs BF16 | Acuerdo top-1 |
+| Perfil | k, v, o | q | gate, up | down | bits/peso | KL vs BF16 | Acuerdo top-1 |
 |---|---|---|---|---|---|---|---|
-| bit217 | K4 | K2 | K2 | K2 | 2,17 | 0,384 | 78,0 % |
-| bit245 | K4 | K2 | K2 | K3 | 2,45 | 0,264 | 81,8 % |
-| bit309 | K4 | K3 | K3 | K3 | 3,09 | 0,092 | 89,1 % |
+| `bit217` | K4 | K2 | K2 | K2 | 2,17 | 0,385 | 78,0 % |
+| `bit245` | K4 | K2 | K2 | K3 | 2,45 | 0,265 | 81,8 % |
+| `bit309` | K4 | K3 | K3 | K3 | 3,09 | 0,093 | 89,0 % |
 
-No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma directa. El repositorio ocupa 10,9 GB, lo que da una cota superior del espacio en disco de los pesos; la VRAM en inferencia depende del perfil y del runtime.
-- GPU recomendadas: no disponibles. Al no conocerse el numero de parametros ni el contexto, no puede estimarse con rigor.
-- Compatibilidad con GPU de consumo: no confirmada. El tamano del repositorio (10,9 GB) sugiere que podria cargarse en GPUs con 12-16 GB de VRAM, pero no hay datos oficiales que lo verifiquen.
-- Opciones de despliegue: la libreria indicada es trellis, con formato exlr8; no se menciona soporte para vLLM, llama.cpp, Ollama ni TGI.
+- VRAM estimada: no disponible de forma explícita; el repositorio ocupa 12,3 GB, por lo que se requiere al menos esa cantidad de memoria para cargar los pesos, más el espacio para activaciones y KV cache.
+- GPU recomendadas: no disponibles en la información proporcionada.
+- Compatibilidad con GPU de consumo: no confirmada; el tamaño del repositorio (12,3 GB) supera la VRAM de muchas GPU de consumo de 8-12 GB, aunque podría caber en modelos con 16 GB o más si el runtime lo permite.
+- Opciones de despliegue: la librería indicada es `trellis`; no se mencionan vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kindlingai/gemma-4-e4b-exlr8-mixed-k | no disponible | no disponible | Trellis exlr8 2-4 bits | Apache 2.0 | Hugging Face |
-| google/gemma-4-E4B-it (modelo base) | no disponible | no disponible | BF16 | Gemma 4 license | Hugging Face |
+| kindlingai/gemma-4-e4b-exlr8-mixed-k | no disponible | no disponible | trellis 2/3/4 bits + BF16 | Apache 2.0 | Hugging Face (librería `trellis`) |
+| google/gemma-4-E4B-it (modelo base) | no disponible | no disponible | BF16 (original) | Gemma 4 license | Hugging Face |
+| Otras cuantizaciones de Gemma 4 E4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de informacion sobre otras alternativas comparables (mismo tamano o misma tarea) en la informacion proporcionada.
+No se dispone de información suficiente para comparar con alternativas de la misma categoría más allá del modelo base.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion introduce perdida de fidelidad: incluso el perfil mas alto (bit309) solo alcanza un 89,1 % de acuerdo top-1 con BF16, y el perfil bit217 baja al 78,0 %.
-- El formato exlr8 requiere la libreria trellis; no es compatible con runtimes estandar como llama.cpp, vLLM u Ollama sin conversion.
-- No hay informacion sobre sesgos, riesgo de alucinacion, idiomas soportados ni limitaciones de contexto del modelo base en esta ficha.
-- La licencia se declara Apache 2.0, pero el enlace apunta a la licencia de Gemma 4 de Google; conviene verificar los terminos aplicables antes de un uso comercial.
-- El repositorio no registra descargas ni likes, por lo que no hay evidencia de uso en produccion ni validacion independiente de las metricas declaradas.
-- No se han publicado benchmarks de tareas, de modo que el rendimiento real en razonamiento, codigo o matematicas no esta cuantificado.
+- La cuantización introduce degradación medible: el perfil `bit217` presenta un KL de 0,385 y solo un 78,0 % de acuerdo top-1 frente a BF16, lo que puede afectar a tareas sensibles a la fidelidad de la distribución.
+- El perfil `bit309` es el más fiel (KL 0,093, acuerdo 89,0 %), pero sigue sin igualar al modelo en BF16.
+- No se documentan sesgos conocidos, riesgo de alucinación ni limitaciones idiomáticas específicas en la información proporcionada.
+- La licencia se declara como Apache 2.0, pero la model card enlaza a la licencia de Gemma 4; conviene verificar los términos aplicables antes de un uso comercial.
+- El formato exlr8 y la librería `trellis` son específicos de este ecosistema, lo que puede limitar la portabilidad a otros runtimes de inferencia.
+- No se dispone de benchmarks de tareas ni de especificaciones del modelo base, por lo que la evaluación de calidad en producción queda pendiente de validación propia.
+- El repositorio no registra "likes" y la información de idiomas y pipeline no está disponible, lo que sugiere una documentación incompleta.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/kindlingai/gemma-4-e4b-exlr8-mixed-k
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
-- Especificacion del formato exlr8: https://github.com/kindlingai/exlr8/blob/main/FORMAT.md
+- Especificación del formato exlr8: https://github.com/kindlingai/exlr8/blob/main/FORMAT.md
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

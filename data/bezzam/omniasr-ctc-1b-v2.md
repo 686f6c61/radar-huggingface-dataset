@@ -2,57 +2,49 @@
 
 ## Resumen
 
-`bezzam/omniasr-ctc-1b-v2` es un modelo alojado en Hugging Face por el usuario bezzam, con casi mil millones de parámetros (975.674.928 según el recuento de los ficheros safetensors) y un repositorio de 3,9 GB. La librería declarada es `transformers` y la etiqueta principal es `omniasr_ctc`, lo que apunta a un sistema de reconocimiento automático del habla (ASR) con cabecera CTC (Connectionist Temporal Classification), aunque la model card no lo confirma de forma explícita en ningún momento.
+omniasr-ctc-1b-v2 es un modelo de reconocimiento automático del habla (ASR) publicado en Hugging Face por el usuario bezzam, derivado del proyecto Omnilingual ASR de Meta (referencia al paper arXiv:2511.09690 y al corpus facebook/omnilingual-asr-corpus). Se trata de un modelo de ~976 millones de parámetros con arquitectura CTC (Connectionist Temporal Classification), orientado a transcripción multilingüe a gran escala. Su rasgo más distintivo es la cobertura declarada de más de 1.500 códigos ISO 639-3, lo que lo sitúa en la categoría de modelos ASR masivamente multilingües, incluyendo lenguas de bajos recursos.
 
-El problema que resuelve, por tanto, sería la transcripción de audio a texto, presumiblemente con decodificación no autorregresiva en una sola pasada hacia delante. El identificador sugiere una variante o reempaquetado del modelo omniASR-CTC-1B de la familia Omnilingual ASR, pero esto es una hipótesis derivada del nombre y no un dato confirmado por el autor: la model card publicada es la plantilla automática de Hugging Face, sin ninguna sección rellenada.
+El modelo resuelve el problema de la transcripción de voz en un número muy elevado de idiomas con un único conjunto de pesos, evitando la necesidad de desplegar un modelo específico por lengua. Frente a sistemas ASR monolingües o con cobertura de decenas de idiomas, propone una alternativa con licencia Apache 2.0 y pesos en safetensors compatibles con la librería transformers, lo que facilita su integración en pipelines existentes.
 
-Su relevancia práctica es hoy limitada y hay que tratarlo con cautela: cero descargas, cero "likes", licencia no declarada, idiomas no declarados y ausencia total de documentación sobre datos de entrenamiento, evaluación o uso previsto. Cualquier integración en producción debería ir precedida de una validación propia del comportamiento del modelo y de una comprobación legal de la licencia.
+Es relevante ahora porque la combinación de licencia permisiva, tamaño contenido (~1B parámetros) y cobertura lingüística extrema lo convierte en un candidato práctico para aplicaciones de transcripción en contextos multilingües y para investigación en lenguas de bajos recursos, un área donde la mayoría de los modelos comerciales no ofrecen soporte.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. La etiqueta `omniasr_ctc` y la librería `transformers` apuntan a un modelo de ASR con cabecera CTC; la estructura interna (transformer, convolucional, híbrida) no está documentada |
-| Parametros totales | 975.674.928 (aproximadamente 0,98 mil millones), según el recuento de safetensors |
-| Parametros activos | No aplica: no hay indicios de arquitectura de mezcla de expertos (MoE) |
-| Longitud de contexto | No disponible. En ASR la restricción práctica es la duración máxima del audio de entrada, que tampoco se declara |
-| Tipos de cuantizacion | No disponible. No se publican variantes GGUF, AWQ, GPTQ ni FP8 en el repositorio |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible |
-| Formato de pesos | safetensors (compatible con `transformers`); tamaño del repositorio 3,9 GB |
+| Arquitectura | CTC (Connectionist Temporal Classification) sobre encoder tipo transformer; arquitectura `omniasr_ctc` |
+| Parametros totales | 975.674.928 (~976 M) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se documentan variantes GGUF/INT8 en la información disponible) |
+| Idiomas soportados | más de 1.500 códigos ISO 639-3 declarados en la model card (aae, aal, abb, abi, abk, ... zza), incluyendo español (spa), inglés (eng), francés (fra), alemán (deu), portugués (por), catalán (cat), euskera (eus), gallego (glg), etc. |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada. La model card es la plantilla autogenerada por Hugging Face y todas las secciones relevantes ("Model Description", "Training Data", "Training Procedure", "Evaluation", "Technical Specifications") contienen el marcador `[More Information Needed]`. No se especifican tokens de entrenamiento, composición del dataset, número de idiomas, ni si hubo fases de ajuste fino supervisado, RLHF o DPO.
+El modelo emplea una cabeza CTC sobre un encoder acústico, identificado en la model card con la arquitectura `omniasr_ctc`. La CTC permite alinear secuencias de audio y texto sin necesidad de alineamientos forzados a nivel de frame, lo que simplifica el entrenamiento multilingüe y reduce los requisitos de datos anotados finamente. El tamaño de ~976 M parámetros lo sitúa en un rango manejable para inferencia en GPU de gama alta y media.
 
-La única referencia técnica presente en los metadatos es la etiqueta `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de impacto ambiental en aprendizaje automático, citado en la propia plantilla de Hugging Face. No es un artículo descriptivo de este modelo, por lo que no debe tomarse como fuente sobre su arquitectura o su entrenamiento.
-
-Como observación sobre el tamaño: 975,67 millones de parámetros ocuparían aproximadamente 3,9 GB en precisión fp32 y 1,95 GB en fp16/bf16. El tamaño del repositorio (3,9 GB) es coherente con pesos en fp32, aunque esto no está confirmado y también podría deberse a ficheros duplicados o a otros artefactos.
+El entrenamiento se asocia al corpus `facebook/omnilingual-asr-corpus` y al paper arXiv:2511.09690, que documenta el proyecto Omnilingual ASR. No se detallan en la información disponible el número exacto de horas de audio, la composición por idioma del dataset ni si se aplicaron etapas de ajuste fino supervisado o preferencias (RLHF/DPO); al ser un modelo CTC de ASR, es esperable un entrenamiento puramente supervisado sobre pares audio-transcripción, pero este extremo no se confirma en la documentación accesible. Tampoco se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-Todas las capacidades que se listan a continuación son inferencias a partir de las etiquetas del repositorio y del recuento de parámetros. No están verificadas por el autor.
-
-- Transcripción de voz a texto sobre audio de entrada, presumiblemente mediante decodificación CTC en una sola pasada no autorregresiva.
-- Procesamiento de audio en lotes largos, si la arquitectura sigue el patrón habitual de los modelos CTC.
-- Posible soporte multilingüe: no confirmado, los idiomas no están declarados.
-- Compatibilidad con la librería `transformers` y con el ecosistema `safetensors`.
-- Etiqueta `endpoints_compatible`, lo que indica que el repositorio es desplegable como endpoint gestionado dentro de Hugging Face Inference Endpoints.
-- Soporte de tool calling / function calling: no disponible, no tiene sentido en un modelo de ASR puro.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades de visión, audio generativo, thinking mode o matemáticas: no disponibles.
+- Reconocimiento automático del habla (transcripción de audio a texto) en más de 1.500 lenguas declaradas.
+- Cobertura de lenguas de altos recursos (inglés, español, francés, alemán, portugués, chino, árabe, hindi, ruso, japonés) y de bajos recursos (numerosas lenguas africanas, indígenas americanas, oceánicas y asiáticas).
+- Salida CTC con alineamiento temporal implícito, apta para transcripción continua sin segmentación previa.
+- Compatibilidad con la librería `transformers` (pipeline `automatic-speech-recognition`).
+- Soporte de decodificación greedy y, potencialmente, decodificación con modelo de lenguaje externo (no documentado explícitamente en la información disponible).
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión ni audio-vision, por tratarse de un modelo especializado en ASR.
 
 ## Casos de uso
 
-- Transcripción de reuniones y notas de voz: el modelo generaría texto plano a partir de grabaciones, y su tamaño de ~1B parámetros permitiría ejecutarlo en una GPU de gama media durante el postprocesado por lotes de las grabaciones del día.
-- Subtitulado y generación de subtítulos para vídeo: la decodificación CTC no autorregresiva es adecuada para procesar material ya grabado en pipelines de transcripción masiva, siempre que se valide antes la calidad por idioma.
-- Transcripción de llamadas de atención al cliente: integrado en un sistema de calidad o de análisis de conversaciones, permitiría convertir audio de call center en texto para su posterior búsqueda y clasificación, sujeto a la validación de la licencia y del cumplimiento normativo.
-- Generación de corpus de texto para entrenar modelos de voz (TTS) o para ajustar correctores ortográficos: el modelo serviría como anotador automático de un corpus de audio previamente recopilado.
-- Accesibilidad: dictado y transcripción en directo para personas con discapacidad auditiva o para entornos donde el texto es preferible al audio, desplegado en local sobre hardware de consumo.
-- Indexación y búsqueda de archivos de audio: transcripción previa de un archivo histórico de podcasts, entrevistas o clases para habilitar búsqueda por texto completo.
-- Preetiquetado en anotación humana: uso como primer paso de un flujo de etiquetado semisupervisado, con revisión manual posterior para corregir errores.
-
-En todos los casos, y dado que no hay benchmarks ni licencia declarada, el uso debería limitarse a entornos de experimentación hasta que el autor publique información adicional.
+- Transcripción multilingüe de reuniones y conferencias: el modelo permite procesar audio en varios idiomas dentro de una misma sesión sin cambiar de modelo, gracias a su cobertura de más de 1.500 códigos ISO 639-3.
+- Subtitulado automático de vídeo en plataformas de contenido: la salida CTC con alineamiento temporal implícito facilita la generación de subtítulos sincronizados a nivel de segmento.
+- Digitalización de archivos orales en lenguas minoritarias: investigadores en lingüística pueden transcribir grabaciones de campo en lenguas de bajos recursos que carecen de sistemas ASR comerciales.
+- Atención al cliente por voz en mercados multilingües: un único despliegue cubre múltiples idiomas de una organización, simplificando la infraestructura frente a soluciones por idioma.
+- Generación de corpus textuales a partir de audio para entrenamiento de modelos de lenguaje: la transcripción a gran escala de audio en muchos idiomas permite construir datasets paralelos.
+- Accesibilidad: transcripción en tiempo real o diferido de contenido audiovisual para personas con discapacidad auditiva en comunidades lingüísticas desatendidas.
+- Análisis de llamadas y compliance: transcripción de grabaciones telefónicas multilingües para auditoría y extracción de información.
 
 ## Benchmarks y rendimiento
 
@@ -60,47 +52,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las cifras de esta sección son estimaciones derivadas del recuento de parámetros (975,67 M) y no proceden de ninguna medición publicada por el autor.
-
-- VRAM estimada para los pesos: en torno a 3,9 GB en fp32, 1,95 GB en fp16/bf16, 1 GB en int8 y 0,5 GB en int4 (estas dos últimas requerirían cuantización propia, ya que no hay variantes publicadas).
-- VRAM estimada para inferencia completa (pesos más activaciones, buffers de audio y contexto de CUDA): aproximadamente 5-6 GB en fp32 y 3-4 GB en fp16/bf16 para lotes pequeños.
-- Cabe con holgura en GPUs de consumo: RTX 3060 de 12 GB, RTX 4060 Ti, RTX 4070, RTX 4080 y RTX 4090. También es viable en GPUs con 8 GB si se usa fp16.
-- Inferencia en CPU: viable, aunque con latencia mayor; un servidor con suficiente RAM podría procesar audio por lotes sin GPU.
-- GPUs de centro de datos recomendadas para alto rendimiento: A100, H100, L40S o similares, con posibilidad de procesar varios streams en paralelo.
-- Opciones de despliegue: la librería declarada es `transformers`, por lo que el despliegue natural es un `pipeline` de Hugging Face, un endpoint de Inference Endpoints (etiqueta `endpoints_compatible`) o un servidor propio basado en PyTorch. La compatibilidad con vLLM, llama.cpp, Ollama o TGI no está confirmada y, en el caso de los modelos CTC, no es habitual en esos motores.
-- Latencia y throughput: no disponibles. Como referencia cualitativa, una cabecera CTC decodifica en una sola pasada hacia delante, frente a la decodificación token a token de los modelos autorregresivos, lo que en igualdad de cómputo suele reducir la latencia.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 2 GB solo para pesos (~976 M parámetros × 2 bytes), más memoria para activaciones y buffers de audio; en la práctica, entre 3 y 6 GB según la longitud del audio y el tamaño de batch.
+- VRAM estimada en FP32: aproximadamente 4 GB solo para pesos, con picos superiores según batch.
+- GPU recomendadas: NVIDIA A100, H100 o L40S para procesamiento por lotes de alto throughput; RTX 4090, RTX 3090 o RTX A6000 para despliegues de una sola GPU con buena latencia.
+- GPU de consumo: cabe en GPUs consumer con 8 GB o más de VRAM (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090). En GPUs con 6 GB puede requerir cuantización o batches pequeños.
+- Opciones de despliegue: `transformers` (pipeline `automatic-speech-recognition`), servidores de inferencia compatibles con transformers como TGI o vLLM (siempre que soporten la arquitectura `omniasr_ctc`), y exportación a ONNX para producción. No se documenta soporte GGUF/llama.cpp en la información disponible.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos comparativos proceden de sus fichas públicas y deben verificarse antes de citarlos. Para `omniasr-ctc-1b-v2` no hay datos publicados.
-
-| Modelo | Parametros | Tipo | Idiomas | Licencia | Disponibilidad |
+| Modelo | Parámetros | Idiomas | Contexto | Licencia | Formato |
 |---|---|---|---|---|---|
-| bezzam/omniasr-ctc-1b-v2 | 975,7 M | ASR con CTC (inferido) | No disponible | No disponible | Repositorio con 0 descargas |
-| MMS-1B-all (Meta) | ~965 M | ASR con CTC sobre wav2vec 2.0 | Más de 1100 lenguas | CC-BY-NC 4.0 (no comercial) | Ampliamente distribuido |
-| wav2vec 2.0 Large (fairseq / Hugging Face) | ~317 M | ASR con CTC | Principalmente inglés en los checkpoints más conocidos | MIT en fairseq, Apache-2.0 en varios checkpoints de Hugging Face | Muy extendido |
-| Whisper large-v3 (OpenAI) | ~1550 M | ASR seq2seq autorregresivo | ~99 idiomas | Apache-2.0 en el código de referencia | Muy extendido |
+| bezzam/omniasr-ctc-1b-v2 | ~976 M | >1.500 códigos ISO 639-3 | no disponible | Apache 2.0 | safetensors |
+| Whisper large-v3 (OpenAI) | ~1.550 M | ~99 idiomas | 30 s de audio por ventana | MIT | safetensors, GGML |
+| MMS (Meta) | ~1.000 M (por idioma) | >1.100 idiomas (modelos por lengua) | no disponible | CC-BY-NC 4.0 | safetensors |
+| SeamlessM4T v2 (Meta) | ~2.300 M | ~100 idiomas de entrada | no disponible | CC-BY-NC 4.0 | safetensors |
 
-La diferencia principal frente a estos modelos es que todos ellos cuentan con documentación, licencia explícita y evaluaciones publicadas, mientras que `omniasr-ctc-1b-v2` no ofrece ninguno de esos tres elementos.
+La comparación con Whisper large-v3 es la más directa en términos de tamaño y uso práctico: Whisper ofrece mejor documentación y ecosistema, pero cobertura de ~99 idiomas frente a los más de 1.500 declarados por omniasr. Frente a MMS, omniasr propone un único modelo multilingüe en lugar de un modelo por idioma, con licencia Apache 2.0 más permisiva que la CC-BY-NC de MMS y SeamlessM4T. No se dispone de datos de benchmarks que permitan comparar la precisión relativa entre estos modelos.
 
 ## Limitaciones y advertencias
 
-- La model card está vacía: no hay descripción, ni uso previsto, ni uso fuera de alcance, ni guía de inicio rápido.
-- La licencia no está declarada. Sin una licencia explícita, el uso comercial es jurídicamente arriesgado y, en muchas jurisdicciones, no se puede asumir permiso de uso.
-- No se declaran los idiomas soportados, por lo que cualquier afirmación sobre cobertura multilingüe es especulativa.
-- No hay benchmarks ni evaluación publicada: se desconoce la tasa de error por palabra (WER) en cualquier condición.
-- Cero descargas y cero "likes": el modelo no ha sido validado por la comunidad y no hay informes independientes de funcionamiento.
-- Riesgo de alucinación inherente a los modelos CTC: es frecuente la inserción de palabras espurias, repeticiones o bucles en segmentos con silencio, ruido o solapamiento de hablantes.
-- Sesgos: no evaluables, ya que se desconoce la composición del corpus de entrenamiento y la distribución de acentos, dialectos y hablantes.
-- Restricciones de audio: se desconoce la frecuencia de muestreo esperada, la duración máxima admitida y el comportamiento en audio con ruido o con múltiples hablantes.
-- Los metadatos son inconsistentes: la fecha de creación indicada es 2026-09-29, posterior a la fecha habitual de publicación, lo que sugiere que los campos temporales del repositorio no son fiables.
-- La etiqueta `arxiv:1910.09700` se refiere a la calculadora de impacto ambiental de Lacoste et al., no a un artículo de este modelo; no debe usarse como referencia técnica.
-- Cualquier uso en producción debería ir precedido de una evaluación propia con datos representativos y de una revisión legal de la licencia.
+- No se han publicado métricas de WER por idioma en la información disponible, por lo que el rendimiento real en lenguas de bajos recursos es incierto.
+- La cobertura declarada de más de 1.500 idiomas no implica calidad uniforme; es esperable un rendimiento muy variable entre lenguas con muchos y pocos datos de entrenamiento.
+- Riesgo de alucinación en pasajes de audio con ruido, silencios largos o solapamiento de hablantes, comportamiento común en modelos CTC.
+- No se documenta el manejo de cambio de idioma dentro de un mismo audio (code-switching), lo que puede degradar la transcripción en contextos bilingües.
+- El modelo no realiza diarización de hablantes ni puntuación automática de forma documentada; puede requerir post-procesado.
+- Aunque la licencia es Apache 2.0 y permite uso comercial, conviene verificar las condiciones del corpus de entrenamiento subyacente (`facebook/omnilingual-asr-corpus`) para usos sensibles.
+- El repositorio tiene pocas descargas (296) y ningún "like", lo que sugiere validación comunitaria limitada; se recomienda evaluar en el dominio objetivo antes de producción.
+- No se documentan versiones cuantizadas ni soporte para despliegue en CPU de bajo consumo.
 
 ## Enlaces
 
-- Ficha en Hugging Face: https://huggingface.co/bezzam/omniasr-ctc-1b-v2
-- Referencia citada en los metadatos (Lacoste et al., 2019, sobre estimación de emisiones): https://arxiv.org/abs/1910.09700
-- Calculadora de impacto ambiental del aprendizaje automático, enlazada en la plantilla de la model card: https://mlco2.github.io/impact#compute
-
-No se han encontrado en la información disponible otros enlaces a artículos, blogs, repositorios, demos o documentación del autor sobre este modelo.
+- Modelo en Hugging Face: https://huggingface.co/bezzam/omniasr-ctc-1b-v2
+- Paper Omnilingual ASR: https://arxiv.org/abs/2511.09690
+- Corpus de entrenamiento: https://huggingface.co/datasets/facebook/omnilingual-asr-corpus
+- Documentación de transformers (pipeline ASR): https://huggingface.co/docs/transformers/main/en/main_classes/pipelines#transformers.AutomaticSpeechRecognitionPipeline

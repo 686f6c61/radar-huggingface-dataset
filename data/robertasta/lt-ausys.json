@@ -58,13 +58,13 @@
       "task": "Automatic Speech Recognition",
       "dataset": "FLEURS (Lithuanian)",
       "metric": "WER",
-      "value": 10.58
+      "value": 8.32
     },
     {
       "task": "Automatic Speech Recognition",
       "dataset": "FLEURS (Lithuanian)",
       "metric": "CER",
-      "value": 6.15
+      "value": 4.26
     }
   ],
   "sources": []

@@ -5,10 +5,10 @@
   "author": "Kausp11",
   "url": "https://huggingface.co/Kausp11/querylm-annotator-gemma4-e4b-lora",
   "created_at": "2026-11-20T12:57:22.000Z",
-  "updated_at": "2026-11-23T14:52:20.000Z",
+  "updated_at": "2026-11-24T15:49:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "text-generation",
   "library": "peft",
   "languages": [
     "en"
@@ -16,6 +16,8 @@
   "tags": [
     "peft",
     "safetensors",
+    "text-generation",
+    "conversational",
     "en",
     "arxiv:2611.26809",
     "base_model:google/gemma-4-E4B-it",
@@ -35,7 +37,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": false,
+  "is_conversational": true,
   "gated": false,
   "disabled": false,
   "removed": false,

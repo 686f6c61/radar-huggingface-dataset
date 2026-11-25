@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 326,
+  "downloads_30d": 322,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -42,31 +42,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Onet – Jesteś na bieżąco",
-      "url": "https://www.onet.pl/",
-      "snippet": "Onet: codzienne źródło informacji milionów Polaków - wiadomości z kraju i ze świata 24/7, pogoda, sport, biznes, moto, rozrywka. …"
-    },
-    {
-      "title": "facebook/omniASR-CTC-300M · Hugging Face",
-      "url": "https://huggingface.co/facebook/omniASR-CTC-300M",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Onet Wiadomości",
-      "url": "https://wiadomosci.onet.pl/",
-      "snippet": "Odpowiedź na pytanie przygotowana przez Onet Czat z AI: Coś poszło nie tak. Spróbuj ponownie później. Wyczerpałeś dzienny limit …"
-    },
-    {
-      "title": "GitHub - facebookresearch/omnilingual-asr: Omnilingual ASR Open-Source ...",
-      "url": "https://github.com/facebookresearch/omnilingual-asr",
-      "snippet": "A new variant of the LLM-ASR model that supports decoding on unlimited audio length (omniASR_LLM_Unlimited_{300M,1B,3B,7B}_v2). The unlimited audio length models are briefly described in the architecture overview section."
-    },
-    {
-      "title": "Najnowsze - Onet Wiadomości",
-      "url": "https://wiadomosci.onet.pl/najnowsze",
-      "snippet": "Ja chciałem być lojalny wobec tych ustaleń, które były z obywatelami poczynione, że będziemy dążyć do tego, by TK odpolitycznić — …"
-    }
-  ]
+  "sources": []
 }

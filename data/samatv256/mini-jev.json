@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Premier League Table, Standings & Form Guide for 2026/27 season",
-      "url": "https://www.premierleague.com/en/tables/premier-league",
-      "snippet": "View the latest standings in the Premier League table for 2026/27 season, along with form guides and season archives, on the official …"
-    },
-    {
-      "title": "Premier League Table and Standings - Football - BBC Sport",
-      "url": "https://www.bbc.co.uk/sport/football/premier-league/table",
-      "snippet": "1 day ago · Find out which football teams are leading the pack or at the foot of the table in the Premier League on BBC Sport"
-    },
-    {
-      "title": "Premier League Football News, Fixtures, Scores & Results",
-      "url": "https://www.premierleague.com/",
-      "snippet": "Visit the official website of the Premier League, for all the latest Premier League news and features."
-    },
-    {
-      "title": "2026-27 English Premier League Standings - ESPN",
-      "url": "https://www.espn.com/soccer/standings/_/league/eng.1",
-      "snippet": "Get the 2026-27 season English Premier League standings on ESPN. Find the full standings with win, loss and draw record for each …"
-    },
-    {
-      "title": "Premier League Table - Sky Sports",
-      "url": "https://www.skysports.com/premier-league-table",
-      "snippet": "Complete table of Premier League standings for the current Season, plus access to tables from past seasons and other Football …"
-    }
-  ]
+  "sources": []
 }

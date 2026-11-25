@@ -2,84 +2,79 @@
 
 ## Resumen
 
-`lucidml/gta` es un repositorio publicado en Hugging Face por el usuario u organizacion `lucidml`. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial, modificacion y redistribucion sin restricciones adicionales significativas. El repositorio fue creado y actualizado el 10 de noviembre de 2026 (fecha declarada en los metadatos de la plataforma) y, en el momento de la consulta, registra 0 descargas y 0 likes.
+GTA es un modelo de mundo interactivo (world model) desarrollado por lucidml que genera vídeo de forma autorregresiva, un fotograma a la vez, a partir de una única imagen inicial. Su propósito es servir como motor de simulación visual en tiempo real: el usuario mantiene pulsadas teclas y el modelo produce y transmite por streaming el vídeo que continúa la escena, actuando como un entorno jugable generado por IA. El checkpoint publicado se ha entrenado desde cero sobre GG800, un dataset propio de 800 horas de GTA V.
 
-La model card asociada esta practicamente vacia: unicamente contiene el campo de licencia (`apache-2.0`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. Tampoco se declaran idiomas soportados ni pipeline de inferencia, por lo que no es posible determinar a partir de la informacion disponible que tipo de modelo es (lenguaje, vision, audio u otro) ni que tarea resuelve.
+La arquitectura, denominada Summaryformer, es un transformer autorregresivo con un diseño de memoria jerárquica original. Cada fotograma se representa como un registro compuesto por 1.008 tokens crudos (rejilla latente de 24x42 a la resolución servida de 384x672) más 96 tokens de resumen generados por el propio forward pass del modelo. Los fotogramas recientes se conservan a resolución completa y los antiguos solo mediante sus resúmenes, lo que reduce el buffer de atención de 26.208 a 6.528 claves para la misma ventana temporal.
 
-Dada la ausencia total de documentacion tecnica y de pesos descritos, esta ficha se limita a reflejar los metadatos publicos del repositorio e indica explicitamente "no disponible" en cada especificacion que no puede verificarse. No debe interpretarse ninguna seccion como una descripcion funcional del modelo: se trata de un artefacto sin informacion publica suficiente para evaluacion.
+El repositorio (3,4 GB) incluye los pesos y el runtime de inferencia completo: modelo, memoria, sampler y servidor de streaming, pero no el código de entrenamiento. La licencia es Apache 2.0. Es relevante por su enfoque de memoria de largo horizonte sin summarizer separado y por estar entrenado en hardware de consumo, lo que lo sitúa como una alternativa abierta a los world models propietarios.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
+| Arquitectura | Summaryformer (transformer autorregresivo con memoria jerárquica de tokens de resumen) |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | ventana de memoria de 24 fotogramas corporales (96 RGB); el servidor sirve 16 por defecto; 6.528 claves en buffer |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
+| Idiomas soportados | no disponible (modelo de generación de vídeo, no de texto) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible |
+| Formato de pesos | no disponible (el repo contiene pesos y runtime de inferencia; no se especifica el formato) |
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card no describe la arquitectura (transformer, MoE, SSM, hibrida u otra), el numero de parametros, la composicion del dataset de entrenamiento, el volumen de tokens procesados ni si se aplicaron tecnicas de alineacion como RLHF, DPO o instruction tuning. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento extendido.
+Summaryformer es un transformer autorregresivo que genera latentes de vídeo fotograma a fotograma. Cada fotograma entra al modelo como un registro de dos partes: 1.008 tokens crudos (la rejilla latente de 24x42 a 384x672) y 96 tokens de resumen sin posición en la rejilla, inicializados con un embedding aprendido y procesados en los mismos 28 bloques que los tokens crudos. El resumen es un subproducto del forward pass de generación, sin red summarizer ni pase adicional. Un fotograma corporal de latentes decodifica a 4 fotogramas RGB, de modo que la ventana de 24 cubre 96 fotogramas RGB.
+
+La atención de cada fotograma cubre: sus propios tokens, los últimos Y=2 fotogramas como registros completos, los fotogramas más antiguos dentro de la ventana W=24 solo mediante sus 96 tokens de resumen, y el fotograma 0 (imagen inicial) siempre completo y nunca expulsado. Todo reside en un único buffer preasignado de clave/valor por bloque sin máscara de atención: al salir un fotograma de la ventana cruda, se copian sus 96 filas de resumen de RAW a SUM. Para distinguir tokens crudos de resumen sin embedding de tipo, se usan los dos planos de menor frecuencia del RoPE temporal como eje de nivel, aplicando un cuarto de vuelta exacto a los tokens de resumen. Para sesiones largas, las claves de la imagen inicial se rotan hacia delante in situ cuando la distancia con el fotograma más antiguo en memoria llega a 5, manteniendo el hueco en 1 sin recomputar valores. El entrenamiento se realizó desde cero sobre GG800 (800 horas de GTA V); no se detallan número de tokens, composición del dataset ni uso de RLHF/DPO.
 
 ## Capacidades
 
-- No disponible. La informacion publica del repositorio no enumera capacidades de generacion de texto, razonamiento, codigo, matematicas, vision, audio ni multilingues.
-- No se confirma soporte de tool calling ni function calling.
-- No se confirma soporte de agentes ni razonamiento multi-paso.
-- No se confirma la existencia de modos especiales (thinking mode, vision, audio).
+- Generación de vídeo autorregresiva condicionada por imagen (image-to-video) a partir de un único fotograma inicial.
+- Simulación interactiva en tiempo real: el modelo responde a la entrada del usuario (pulsaciones de teclas) generando el vídeo que continúa la escena.
+- Streaming de fotogramas a un navegador durante la interacción.
+- Memoria de largo horizonte mediante tokens de resumen, que preservan información de hasta 24 fotogramas corporales (96 RGB) hacia atrás.
+- Anclaje de escena: la imagen inicial se mantiene siempre en memoria y se reajusta temporalmente para sesiones prolongadas.
+- Generación de latentes de vídeo a resolución 384x672.
+- No se documentan capacidades de texto, código, matemáticas, tool calling, agentes ni multilingüismo; es un modelo exclusivamente visual.
 
 ## Casos de uso
 
-No es posible recomendar casos de uso concretos sin informacion sobre arquitectura, tamano, contexto o capacidades del modelo. A continuacion se indican unicamente escenarios genericos que requeririan validacion previa y que, a dia de hoy, no pueden justificarse tecnicamente:
-
-- Evaluacion interna controlada: cargar los pesos (si existen y son accesibles) en un entorno aislado para inspeccionar su comportamiento real antes de cualquier integracion.
-- Prototipado experimental: usar el repositorio como base para pruebas de concepto, asumiendo el riesgo de que el artefacto no sea funcional o no contenga pesos utilizables.
-- Auditoria de licencia: verificar el cumplimiento de Apache 2.0 en caso de que el modelo se incorpore a un producto, revisando obligaciones de atribucion y avisos.
-- Benchmarking comparativo: incluir el modelo en una bateria de pruebas junto a alternativas documentadas, siempre que se disponga de pesos y tokenizador verificables.
-- Fine-tuning exploratorio: solo si se confirma que los pesos son entrenables y compatibles con frameworks estandar (PyTorch, safetensors).
-- Docencia o formacion: emplear el repositorio como ejemplo de publicacion incompleta en Hugging Face y de la importancia de una model card rigurosa.
-
-En todos los casos, la idoneidad del modelo no puede confirmarse con la informacion disponible.
+- Prototipado de videojuegos interactivos generativos: el modelo actúa como motor de mundo que responde a la entrada del jugador en tiempo real, permitiendo explorar mecánicas de juego sin assets pregenerados.
+- Demos y experiencias web interactivas: el runtime incluye servidor de streaming, de modo que puede desplegarse como demo jugable en navegador (el autor ofrece una en lucidml.ai).
+- Investigación en world models: la arquitectura Summaryformer y su esquema de memoria jerárquica sirven como base reproducible para estudiar atención de largo horizonte en generación de vídeo.
+- Generación de vídeo condicionada por imagen para previsualización de escenas: dado un fotograma de referencia, producir la continuación animada de la escena con coherencia temporal.
+- Simulación de entornos para entrenamiento de agentes: un mundo generado interactivo puede usarse como entorno sintético donde agentes aprenden por refuerzo sin un motor físico tradicional.
+- Benchmarking de memoria en transformers autorregresivos: la reducción de 26.208 a 6.528 claves con ventana equivalente permite medir el equilibrio entre detalle reciente y contexto lejano en tareas de vídeo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible (depende de un tamano de parametros que no se declara).
+- VRAM estimada para inferencia: no disponible en la información proporcionada; el repositorio ocupa 3,4 GB, lo que da una cota inferior del tamaño de los pesos.
 - GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible; no se confirma que existan pesos en formatos compatibles (safetensors, GGUF).
-- Latencia y throughput estimados: no disponible.
+- Compatibilidad con GPU de consumo: el autor indica que llegó a la arquitectura tras probar ideas en hardware de consumo, pero no se especifican modelos concretos.
+- Opciones de despliegue: el repositorio incluye un runtime de inferencia propio con sampler y servidor de streaming; no se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo de vídeo de este tipo).
+- Latencia y throughput: no disponibles; el modelo se describe como de generación en tiempo real, pero no se aportan cifras de FPS ni latencia por fotograma.
 
 ## Comparativa con modelos similares
 
-No disponible. No es posible identificar modelos comparables sin conocer la categoria, el tamano, la arquitectura ni las capacidades del modelo.
-
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| lucidml/gta | no disponible | no disponible | Apache 2.0 | Repositorio en HF sin documentacion |
-| Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
-| Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
+No disponible. La información proporcionada no incluye modelos comparables de la misma categoría (world models interactivos de vídeo) con datos de parámetros, contexto o rendimiento que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: no hay descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso, lo que impide cualquier evaluacion tecnica rigurosa.
-- Riesgo de repositorio vacio o incompleto: con 0 descargas y 0 likes, no hay evidencia publica de que contenga pesos funcionales ni tokenizador.
-- Sesgos conocidos: no disponible; no pueden evaluarse sin documentacion ni datos de entrenamiento.
-- Riesgo de alucinacion: no evaluable sin acceso al modelo y a su comportamiento.
-- Limitaciones de contexto o idioma: no disponible.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero persiste la obligacion de conservar avisos de copyright y licencia; conviene verificar que el autor tenga derechos sobre los pesos publicados.
-- Caveat para produccion: no debe desplegarse en entornos productivos sin una auditoria previa de pesos, tokenizador, licencia y comportamiento.
-- Fecha de creacion declarada en 2026: conviene contrastar la autenticidad de los metadatos antes de cualquier uso.
+- No se han documentado sesgos conocidos; al entrenarse sobre 800 horas de GTA V, es esperable que herede el sesgo visual y de contenido de ese videojuego, aunque no se detalla.
+- Riesgo de alucinación visual: al ser un modelo generativo autorregresivo, la escena puede derivar y perder coherencia con la imagen inicial en sesiones largas, pese al anclaje del fotograma 0.
+- Limitación de contexto: la memoria de largo plazo se limita a 24 fotogramas corporales (96 RGB), y el servidor sirve 16 por defecto; lo anterior a esa ventana se olvida por completo.
+- Resolución fija de 384x672; no se documentan otras resoluciones.
+- El repositorio no incluye código de entrenamiento, lo que limita la reproducibilidad y el ajuste fino.
+- No se especifican los formatos de pesos ni opciones de cuantización, lo que dificulta estimar requisitos de despliegue en producción.
+- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones de los datos de entrenamiento (GTA V) para usos derivados.
+- No hay datos de benchmarks ni de latencia, por lo que no puede evaluarse su rendimiento frente a alternativas antes de desplegarlo.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/lucidml/gta
-- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
-- No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.
+- Modelo en Hugging Face: https://huggingface.co/lucidml/gta
+- Demo interactiva en navegador: https://lucidml.ai/dashboard/minidemo?world=gta5
+- No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs o repositorios.

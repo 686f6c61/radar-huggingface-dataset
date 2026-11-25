@@ -2,105 +2,108 @@
 
 ## Resumen
 
-data-science-ml-ai999x es un solver determinista escrito en Python, publicado por la organización AI999X (autor: Ibnul Jaif Farabi) bajo licencia Apache-2.0, que responde preguntas de ciencia de datos y aprendizaje automático con resultados verificados en lugar de texto generado. No es un transformer ni un modelo de lenguaje generativo: se trata de un motor neuro-simbólico en el que una capa de lectura basada en reglas interpreta la pregunta en inglés y selecciona una de las 107 capacidades certificadas, que se calcula de forma exacta con sympy y mpmath y se comprueba antes de devolver la respuesta (sustitución inversa, comprobación de dimensiones o cálculo independiente).
+`data-science-ml-ai999x` es un motor de cálculo determinista empaquetado y distribuido a través de Hugging Face por el autor AI999X. No es un modelo de lenguaje neuronal: es un solver compilado (Rust, con build puro en Python para plataformas no x86-64) que resuelve 107 cálculos de ciencia de datos y aprendizaje automático repartidos en 14 temas, devolviendo fórmula, pasos intermedios y unidades. El repositorio declara 4.715.520 parámetros en safetensors, un dato que corresponde a los pesos empaquetados del artefacto y no a una red transformer con capacidad generativa.
 
-El repositorio de Hugging Face incluye artefactos en safetensors y ONNX, con 4.715.520 parámetros declarados en el fichero de pesos y un tamaño total de 0,1 GB, pero la ejecución real se realiza mediante el paquete Python `data-science-ml-ai999x` 1.0.1 (wheel `py3-none-any`), que corre únicamente en CPU, sin GPU, sin red y sin clave de API. La model card marca `inference: false`, de modo que no está pensado para desplegarse en los endpoints de Hugging Face.
+El propósito declarado es servir como ayuda para resolver ejercicios de métricas de evaluación, funciones de pérdida y gradientes, algoritmos clásicos, reducción de dimensionalidad, validación cruzada, teoría de la información y aritmética de redes neuronales, todo de forma offline y sin generación libre de texto. El autor enfatiza el modo "zero-hallucination": cuando una entrada falta o está fuera de rango, el motor devuelve una razón en lenguaje natural en lugar de un número inventado.
 
-Su relevancia práctica está en la propuesta de "cero respuestas incorrectas por diseño": frente a un LLM que puede alucinar un resultado numérico, este motor devuelve uno de siete estados explícitos (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR) y se niega a responder cuando no puede verificar el cálculo. El autor declara 711 respuestas doradas reproducidas de forma idéntica en Windows y Linux sobre Python 3.10 a 3.14. El ámbito es exclusivamente en inglés y está acotado a las 107 capacidades documentadas.
+Su relevancia actual es acotada pero concreta: cubre el nicho de herramientas de cómputo verificable para docencia y validación de pipelines, donde un LLM generativo introduce riesgo de error aritmético. Se distribuye como aplicación de escritorio (Windows y Linux), CLI, build web y paquete de Python, con licencia Apache 2.0 y soporte exclusivo de inglés.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Motor neuro-simbólico determinista: lectura de la pregunta basada en reglas más 107 capacidades simbólicas certificadas (no es un transformer) |
-| Parametros totales | 4.715.520 (según los pesos en safetensors del repositorio) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible; no aplica: `ask()` interpreta formas de pregunta documentadas y `solve()` recibe argumentos tipados |
-| Tipos de cuantizacion | No disponible; no aplica (ejecución en CPU con Python puro sobre sympy y mpmath) |
-| Idiomas soportados | en (inglés) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors, onnx; distribución principal como wheel de Python (`py3-none-any`) |
-| Versión del paquete | 1.0.1 (import `data_science_ml_ai999x`), knowledge pack 1.0.0 |
-| Capacidades certificadas | 107 procedimientos |
-| Respuestas doradas | 711 respuestas documentadas |
-| Plataformas probadas | Windows (Python 3.13); Linux x86-64 (Python 3.10, 3.11, 3.12, 3.13, 3.14) |
-| Runtime | Solo CPU, offline; sin GPU, sin red, sin clave de API |
-| Tamaño del repositorio | 0,1 GB |
+| Arquitectura | Motor de cálculo determinista compilado (Rust); build puro en Python para macOS y ARM. No es un transformer generativo |
+| Parámetros totales | 4.715.520 (según safetensors del repositorio) |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (no es un modelo de contexto; resuelve cálculos individuales) |
+| Tipos de cuantización | No disponible (no aplica a un motor determinista) |
+| Idiomas soportados | Inglés (`en`) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (tamaño del repo: 0.0 GB) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es neuro-simbólica y determinista, no neuronal en el sentido habitual: una capa de lectura basada en reglas analiza la pregunta en lenguaje natural (o la llamada tipada) y la empareja con una capacidad certificada del knowledge pack 1.0.0; a continuación el motor simbólico (sympy, mpmath) calcula el resultado de forma exacta y lo verifica mediante sustitución inversa, comprobación dimensional o comparación con un cálculo independiente antes de devolverlo. Cada respuesta incluye pasos, fórmulas en LaTeX, unidades, supuestos y el identificador del modelo utilizado, lo que la hace apta para cuadernos, aplicaciones de tutoría y correctores de ejercicios.
+El artefacto no sigue una arquitectura de red neuronal entrenada con descenso de gradiente sobre corpus de texto. La model card describe "un motor compilado" con cuatro interfaces de acceso (app de escritorio, línea de comandos, navegador y paquete de Python) que implementa 107 cálculos organizados en 14 temas. Cada cálculo expone su fórmula, sus pasos y sus unidades, y el sistema devuelve una explicación en lenguaje natural cuando una entrada falta o queda fuera de rango.
 
-No se han publicado datos de entrenamiento en la información disponible: no hay cifras de tokens, composición de dataset ni procesos de RLHF o DPO, y en rigor no aplican, ya que el comportamiento procede de reglas y procedimientos simbólicos certificados en lugar de ajuste de pesos. La innovación destacable es el contrato de salida con siete estados explícitos y la reproducibilidad declarada entre plataformas (Windows y Linux, Python 3.10-3.14), así como la doble interfaz: `ask()` para preguntas en inglés documentado y `solve(capability_id, **inputs)` como interfaz tipada garantizada.
+No se documenta en la información disponible ningún proceso de entrenamiento, conjunto de datos, número de tokens, RLHF, DPO ni técnica de optimización tipo decodificación especulativa o atención lineal. El campo `inference: false` de la model card indica que el repositorio no está pensado para inferencia mediante las librerías estándar de Hugging Face (transformers, vLLM, etc.), sino que se consume a través de los binarios y el paquete `data-science-ml-ai999x` publicados por el autor.
 
 ## Capacidades
 
-- Resolución de preguntas de ciencia de datos y aprendizaje automático en inglés con respuesta paso a paso, unidades, LaTeX y supuestos.
-- Métricas de clasificación y regresión (por ejemplo, exactitud, precisión, sensibilidad, especificidad, ROC AUC y Gini calculados a partir de recuentos o de vectores de puntuaciones).
-- Funciones de pérdida y gradientes, aritmética de redes neuronales, teoría de la información y métricas de ranking.
-- Algoritmos clásicos de aprendizaje automático supervisado y no supervisado, incluido k-means con centroides y asignaciones paso a paso.
-- Reducción de dimensionalidad, agrupamiento (clustering) y cálculo de métricas de evaluación asociadas.
-- Interfaz tipada `solve(capability_id, **inputs)` que siempre resuelve una tarea soportada con entradas válidas.
-- Rechazo explícito y tipificado: NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT e INTERNAL_ERROR en lugar de una suposición silenciosa.
-- Ejecución totalmente offline en CPU, sin GPU, sin red y sin credenciales.
-- No disponible: tool calling o function calling, orquestación de agentes, razonamiento multi-paso abierto, visión, audio, modo "thinking" o generación de texto libre.
+- Resolución de 107 cálculos de ciencia de datos y machine learning en 14 temas, con fórmula, pasos y unidades.
+- Métricas de clasificación binaria a partir de recuentos de matriz de confusión.
+- Métricas de regresión y de ranking.
+- Funciones de pérdida y gradientes, incluida entropía cruzada binaria con logits y su gradiente.
+- Algoritmos clásicos: k-means con centroides iniciales dados, regresión Lasso con alpha indicado, un paso de descenso de gradiente para regresión lineal.
+- Reducción de dimensionalidad: análisis de componentes principales (varianza explicada y primera componente).
+- Teoría de la información: información mutua ajustada entre dos agrupamientos.
+- Aritmética de redes neuronales: atención de producto escalar escalada.
+- Validación cruzada y particionado.
+- Clasificación y regresión sobre datos tabulares.
+- Devolución de una razón en lenguaje natural cuando falta una entrada o está fuera de rango (comportamiento "zero-hallucination" declarado por el autor).
+- Ejecución totalmente offline en el equipo del usuario.
+- Cuatro interfaces: app de escritorio (Windows, Linux), CLI `data-science-ml`, navegador y paquete de Python 3.10+.
+
+No se documenta soporte de tool calling, function calling, razonamiento multi-paso sobre lenguaje natural, visión, audio ni modo thinking.
 
 ## Casos de uso
 
-- Tutoría y ayuda con ejercicios: el motor recibe una pregunta documentada del tipo "Binary metrics from counts: TP = 40, FP = 10, FN = 5, TN = 45" y devuelve exactitud, precisión, sensibilidad y especificidad con los pasos intermedios, lo que permite explicar el procedimiento al estudiante en lugar de solo dar el número.
-- Corrección automática de tareas: al ser determinista y reproducible en Windows y Linux, el mismo enunciado produce exactamente la misma salida en el equipo del alumno y en el servidor de corrección, lo que simplifica la comparación contra una solución de referencia.
-- Validación cruzada de métricas en pipelines de datos: se puede usar como oráculo independiente que recalcula ROC AUC, Gini o métricas derivadas de una matriz de confusión y contrastarlas con las de scikit-learn antes de publicar un informe.
-- Documentación técnica y material didáctico: la salida incluye fórmulas en LaTeX, unidades y supuestos, de modo que puede alimentar directamente cuadernos Jupyter, apuntes o documentación interna sin retoques manuales.
-- Entornos aislados o air-gapped: al no requerir red ni clave de API, encaja en instalaciones industriales, aulas sin conectividad o contenedores sin salida a internet donde un servicio en la nube no es viable.
-- Suites de regresión para librerías internas: las 711 respuestas doradas documentadas pueden reutilizarse como conjunto de pruebas que detecte regresiones de cálculo entre versiones de Python o entre sistemas operativos.
-- Asistentes de estudio con contrato estricto: integrado en una aplicación educativa, el estado OUT_OF_SCOPE o NEEDS_INPUT permite derivar al usuario a un docente o pedir los datos que faltan, evitando respuestas inventadas en un contexto de evaluación.
+- Docencia de métricas de evaluación: el motor calcula precisión, recall, F1 y métricas derivadas de una matriz de confusión mostrando la fórmula y los pasos, lo que permite al alumnado verificar el resultado a mano sin depender de una generación libre.
+- Validación de pipelines de ML: integrar el paquete de Python en tests unitarios para comprobar que las métricas implementadas en producción coinciden con un cálculo de referencia determinista.
+- Reproducción de ejercicios de optimización: ejecutar un paso de descenso de gradiente para regresión lineal o calcular los coeficientes de Lasso con un alpha dado, obteniendo los pasos intermedios para auditar el resultado.
+- Cálculo de información mutua ajustada entre dos agrupamientos: útil para comparar particiones de clustering en experimentos donde se necesita una referencia independiente del software de análisis.
+- Análisis de componentes principales: obtener la varianza explicada y la primera componente con pasos explícitos para informes técnicos o material didáctico.
+- Entornos sin conectividad: despliegue en aulas, laboratorios o máquinas aisladas mediante la app de escritorio o el binario CLI, sin llamadas a servicios externos.
+- Verificación cruzada de resultados de librerías: contrastar la salida de scikit-learn u otras herramientas frente a un motor determinista con fórmula publicada, útil en revisión de código y auditoría de cuadernos.
 
 ## Benchmarks y rendimiento
 
-| Tarea | Conjunto de evaluación | Métrica | Valor | Verificado |
-|---|---|---|---|---|
-| Question answering (data science and machine learning) | Golden answers (711 preguntas documentadas, Windows + Linux Python 3.10-3.14) | Accuracy, "identical on every platform" | 1,0 | No (declarado por el autor, `verified: false`) |
+Los únicos datos disponibles son los declarados por el autor en el `model-index` de la model card. No se han publicado resultados de benchmarks convencionales (MMLU, HumanEval, GSM8K) en la información disponible.
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible. El único dato del model-index es la exactitud de 1,0 sobre el conjunto propio de 711 preguntas documentadas, declarada por el autor y no verificada por terceros; al ser un conjunto interno y cerrado, no es directamente comparable con benchmarks abiertos.
+| Tarea | Dataset | Métrica | Valor | Verificado |
+|---|---|---|---|---|
+| Question answering (ciencia de datos y ML) | Golden answers (711 preguntas documentadas, Windows y Linux, Python 3.10-3.14) | Accuracy ("identical on every platform") | 1.0 | No (`verified: false`) |
+
+El autor declara resultado idéntico en todas las plataformas probadas, pero la métrica figura como no verificada de forma independiente.
 
 ## Requisitos de hardware
 
-- VRAM: 0 GB; el motor se ejecuta íntegramente en CPU y no requiere GPU.
-- GPU recomendadas: ninguna; no aplica a esta arquitectura.
-- Cabe en cualquier equipo de consumo: el repositorio ocupa 0,1 GB y el wheel es `py3-none-any`, por lo que funciona en portátiles y en contenedores pequeños.
-- Memoria RAM y latencia/throughput: no disponible en la información proporcionada.
-- Despliegue: `pip install data-science-ml-ai999x` desde PyPI o instalación directa del wheel alojado en el repositorio de Hugging Face.
-- No aplica soporte de vLLM, llama.cpp, Ollama o TGI: la model card declara `inference: false` y el runtime es una librería Python, no un servidor de inferencia neuronal.
+- Al no ser un modelo generativo, no requiere VRAM dedicada para inferencia; el cálculo se ejecuta en CPU.
+- El paquete x86-64 se distribuye como motor compilado; en macOS y ARM `pip` instala una build pura de Python que, según el autor, produce las mismas respuestas.
+- No se especifican requisitos mínimos de CPU, RAM ni versiones de sistema operativo más allá de Windows, Linux y Python 3.10+.
+- Opciones de despliegue: app de escritorio (Windows/Linux), CLI `data-science-ml`, build web en la página del modelo y paquete `pip install data-science-ml-ai999x`.
+- No aplican vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo de pesos transformer.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de modelos comparables de la misma categoría en la información proporcionada; las alternativas funcionales habituales (motores simbólicos como SymPy o librerías de métricas como scikit-learn) no son modelos publicados con parámetros, contexto ni benchmarks comparables, por lo que sus celdas se marcan como no disponibles.
+No se dispone de información sobre modelos comparables de la misma categoría (solvers deterministas de ciencia de datos empaquetados como artefactos de Hugging Face). Se indica "no disponible".
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| data-science-ml-ai999x | 4.715.520 (safetensors) | No aplica | Accuracy 1,0 en 711 preguntas propias (no verificado) | apache-2.0 | Hugging Face y PyPI |
-| Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Modelo | Parámetros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|
+| data-science-ml-ai999x | 4.715.520 (safetensors) | No aplica | Apache 2.0 | Motor determinista de 107 cálculos |
+| Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
-- Alcance cerrado: solo cubre las 107 capacidades certificadas; cualquier consulta fuera de ese conjunto devuelve OUT_OF_SCOPE, no una respuesta aproximada.
-- Idioma único: únicamente inglés, tanto en `ask()` como en la documentación de las capacidades.
-- No es un modelo generativo: no redacta texto libre, no mantiene conversaciones abiertas y no puede sustituir a un LLM en tareas de síntesis o explicación abierta.
-- Sin soporte de tool calling, agentes, visión, audio ni razonamiento multi-paso no estructurado.
-- Riesgo de ambigüedad en la capa de lectura: una pregunta en lenguaje natural puede devolver AMBIGUOUS o UNRECOGNIZED_FORMAT; para producción conviene usar la interfaz tipada `solve()`.
-- El benchmark declarado (accuracy 1,0) está marcado como no verificado y se calcula sobre el conjunto propio de preguntas documentadas del autor; no demuestra robustez ante preguntas nuevas ni es comparable con MMLU u otros benchmarks abiertos.
-- No se han publicado datos de entrenamiento, composición del dataset ni evaluación de sesgos; al ser determinista y simbólico, el riesgo de alucinación numérica es bajo por diseño, pero la cobertura y las convenciones de cada capacidad deben auditarse por separado.
-- La licencia Apache-2.0 permite uso comercial y modificación con obligaciones de atribución y aviso; se distribuye sin garantías, según los términos estándar de dicha licencia.
-- Dependencia de las librerías sympy y mpmath, y de la versión del knowledge pack (1.0.0): cambios de versión pueden alterar resultados y requieren revalidar las respuestas doradas.
-- La model card declara `inference: false`: no es desplegable en los endpoints de inferencia de Hugging Face.
+- No es un modelo de lenguaje: no genera texto libre ni mantiene conversaciones; solo resuelve los 107 cálculos documentados.
+- Solo soporta inglés, tanto en la documentación como en las respuestas en lenguaje natural.
+- El resultado de accuracy 1.0 del `model-index` está marcado como `verified: false`; procede del propio autor y no de una evaluación independiente.
+- El recuento de 4.715.520 parámetros en safetensors no debe interpretarse como tamaño de una red neuronal entrenada; corresponde al artefacto empaquetado.
+- `inference: false` en la model card: no es cargable con las librerías estándar de Hugging Face; hay que usar los binarios o el paquete Python del autor.
+- El tamaño del repositorio figura como 0.0 GB, lo que sugiere que los pesos reales se distribuyen fuera de Hugging Face (GitHub Releases y PyPI), con el riesgo de disponibilidad que ello implica.
+- La build pura de Python en macOS y ARM puede tener rendimiento distinto al motor compilado, aunque el autor afirma paridad de respuestas.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar el fichero LICENSE del repositorio por si añade condiciones adicionales.
+- No se documentan sesgos, tasas de alucinación ni límites de contexto porque el artefacto no es generativo; el riesgo principal es de cobertura (cálculos no soportados) y de dependencia del mantenimiento por parte de un único autor.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/AI999X/data-science-ml-ai999x
-- Paquete en PyPI: https://pypi.org/project/data-science-ml-ai999x/
-- Guía de capacidades (docs): https://huggingface.co/AI999X/data-science-ml-ai999x/tree/main/docs
-- Evaluación: https://huggingface.co/AI999X/data-science-ml-ai999x/tree/main/evaluation
-- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
-- Sitio web del autor: https://ai999x.com
-- Apoyo al desarrollo: https://buymeacoffee.com/ibnuljaiffarabi
-- Licencia en el repositorio: https://huggingface.co/AI999X/data-science-ml-ai999x/blob/main/LICENSE
+- Página del modelo con demo web: https://www.ai999x.com/models/data-science-ml-ai999x/
+- Demo interactiva (sección de capacidades): https://www.ai999x.com/models/data-science-ml-ai999x/#capabilities
+- Clip de demostración (MP4): https://www.ai999x.com/?ax_shot=data-science-ml-ai999x/clip.mp4
+- App de escritorio Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-data-science-ml-1.6.7-windows-x86_64.zip
+- App de escritorio Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-data-science-ml-1.6.7-linux-x86_64.tar.gz
+- CLI Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-windows-x86_64.zip
+- CLI Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-linux-x86_64.tar.gz
+- Repositorio de escritorio: https://github.com/AI999X/ai999x-desktop
+- Paquete de Python: `pip install data-science-ml-ai999x`

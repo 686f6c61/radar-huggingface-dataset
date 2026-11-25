@@ -2,118 +2,122 @@
 
 ## Resumen
 
-Qwen3-ASR-1.7B-Cantonese-HK es un ajuste fino completo (full-parameter fine-tune) del modelo de reconocimiento automático del habla Qwen/Qwen3-ASR-1.7B, desarrollado por el usuario koelony (joe2643 en GitHub). El modelo está especializado en cantonés coloquial de Hong Kong (yue-HK) con cambio de código (code-switching) a inglés, y produce de forma nativa caracteres tradicionales hongkoneses con partículas coloquiales como 係, 喺, 嘅, 咗, 㗎 o 閂, manteniendo las palabras inglesas en inglés.
+Qwen3-ASR-1.7B-Cantonese-HK es un ajuste fino completo (full fine-tune) del modelo de reconocimiento automático del habla Qwen/Qwen3-ASR-1.7B, desarrollado por el usuario koelony (Joe, @joe2643). Su objetivo es especializar el modelo base en cantonés coloquial de Hong Kong (yue-HK) con conmutación de código (code-switching) hacia el inglés, un escenario que los modelos ASR multilingües genéricos cubren de forma deficiente. El modelo conserva la arquitectura del original, un transformer de aproximadamente 2.038 millones de parámetros (2,04 mil millones) con encoder acústico y decoder de lenguaje, y se distribuye en pesos BF16 en formato Transformers.
 
-El problema que resuelve es la baja calidad de la transcripción de cantonés coloquial en modelos ASR generalistas: el modelo base Qwen3-ASR-1.7B ya es razonablemente bueno, pero el ajuste reduce el error de caracteres (CER) de forma notable en todos los conjuntos de evaluación cantonés, especialmente en cambio de código y en vocabulario específico de Hong Kong. La versión actual v2.1 (14 de noviembre de 2026) añade además alineación para el sesgo de vocabulario contextual (hotwords), reduciendo el CER en el escenario de comando corto con glosario largo del 21,88 % al 7,19 % sin parroting del prompt.
+La relevancia del modelo radica en dos frentes. Por un lado, reduce de forma sustancial la tasa de error de caracteres (CER) frente al modelo base y frente a whisper-large-v3 en todos los conjuntos de evaluación cantoneses publicados, incluyendo code-switching cantonés-inglés. Por otro, incorpora soporte nativo de sesgo por contexto y vocabulario de palabras clave (hotword biasing), lo que permite condicionar la transcripción con glosarios de dominio sin que el modelo reproduzca el prompt en la salida. El modelo emite directamente caracteres tradicionales de Hong Kong con formas coloquiales (係, 喺, 嘅, 咗, 㗎, 閂) y mantiene las palabras inglesas en inglés.
 
-Con 2.038.052.480 parámetros (aproximadamente 2,04 mil millones), licencia Apache 2.0 y pesos en BF16 en formato Transformers, es un modelo compacto que cabe en GPU de consumo y se puede desplegar con transformers, vLLM, llama.cpp (vía GGUF) o ComfyUI-Drama3. Su relevancia actual radica en cubrir un nicho lingüístico concreto (cantonés de Hong Kong) con calidad medible y con soporte de vocabulario de dominio, algo poco habitual en modelos ASR abiertos.
+La versión actual es la v2.1 (2026-11-14), que mejora cinco de los seis benchmarks estándar respecto a la v2 y añade la alineación del sesgo por vocabulario. El repositorio incluye los pesos BF16 originales, una variante para ComfyUI-Drama3 y enlaces a repositorios derivados en GGUF, FP8 y NVFP4. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (modelo base Qwen3-ASR-1.7B; ASR multimodal con encoder de audio y decoder de lenguaje) |
-| Parametros totales | 2.038.052.480 (aproximadamente 2,04 B) |
+| Arquitectura | Transformer encoder-decoder para ASR (Qwen3-ASR), segun modelo base |
+| Parametros totales | 2.038.052.480 (2,04 mil millones) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16 (original), FP8 W8A8, NVFP4A16, GGUF Q4_K_M / Q6_K / Q6_K_H (recomendado) / Q8_0 |
-| Idiomas soportados | yue (cantonés, yue-HK), zh (chino), en (inglés); evaluación solo en cantonés y cantonés-inglés |
+| Tipos de cuantizacion | BF16 (original), GGUF Q4_K_M, Q6_K, Q6_K_H (recomendado), Q8_0, FP8 W8A8, NVFP4A16 |
+| Idiomas soportados | yue (cantonés, yue-HK), zh (chino), en (inglés); entrenado para cantonés y code-switching cantonés-inglés |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (BF16, Transformers), GGUF, FP8 compressed-tensors, NVFP4 compressed-tensors, layout ComfyUI-Drama3 |
+| Formato de pesos | safetensors (BF16, Transformers); GGUF y variantes cuantizadas en repositorios derivados |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino completo (full-parameter, sin adaptadores LoRA/PEFT) del checkpoint Qwen/Qwen3-ASR-1.7B en su revisión 7278e1e. Al ser un fine-tune completo, todos los pesos del modelo base se actualizan, y el repositorio contiene los pesos BF16 originales en formato Hugging Face Transformers (config.json + model.safetensors). El modelo base es un sistema ASR de tipo multimodal que combina un encoder de audio con un decoder de lenguaje de la familia Qwen3, y el fine-tune se orienta a la transcripción de cantonés de Hong Kong con cambio de código a inglés.
+El modelo parte de Qwen/Qwen3-ASR-1.7B (revision 7278e1e) y se obtiene mediante un ajuste fino de todos los parámetros, sin adaptadores LoRA ni PEFT. Mantiene por tanto la arquitectura del modelo base: un sistema ASR con componente acústico y decoder de lenguaje de aproximadamente 2,04 mil millones de parámetros. El entrenamiento se orienta a cantonés coloquial de Hong Kong y a la conmutación de código cantonés-inglés, con el objetivo de que la salida sea en caracteres tradicionales de Hong Kong y preserve las palabras inglesas sin traducirlas. No se especifican en la información disponible el número de tokens de entrenamiento ni la composición exacta del dataset.
 
-El entrenamiento se centra en tres objetivos: (1) mejorar la transcripción de cantonés coloquial con caracteres tradicionales hongkoneses y partículas orales; (2) preservar las palabras inglesas en inglés dentro de enunciados cantoneses (code-switching); y (3) alinear el sesgo de vocabulario contextual (hotwords / domain vocabulary biasing) para que el modelo aproveche una lista de términos de dominio sin copiar el prompt en la salida. La versión v2.1 añade esta alineación de biasing, que reduce el CER del escenario short_long_prompt del 21,88 % al 7,19 % con 0,0 % de prompt parroting, y mejora 5 de los 6 benchmarks estándar de cantonés respecto a v2. No se dispone de información sobre el número de tokens de entrenamiento ni la composición exacta del dataset.
+La innovación técnica destacable de la v2.1 es la alineación del sesgo por contexto y vocabulario de dominio (context/hotword vocabulary biasing). Según la model card, esta versión reduce el CER en el escenario de comando corto con glosario largo del 21,88% al 7,19%, con un 0,0% de reproducción del prompt en la salida (prompt parroting). Además, en la sonda de entidades de Hong Kong (entity_probe_v1, 220 enunciados, 271 menciones, 20 distractores por enunciado), la v2.1 alcanza un recall de entidades del 94,83% frente al 89,67% anterior, con una tasa de corrección del 53,57% (15 de 28) y una tasa de rotura del 0,41%, sin copia falsa de distractores (0 de 4.400). No se detalla si el ajuste incluyó RLHF o DPO.
 
 ## Capacidades
 
-- Reconocimiento automático del habla (ASR) para cantonés de Hong Kong (yue-HK) con salida en caracteres tradicionales hongkoneses y partículas coloquiales (係, 喺, 嘅, 咗, 㗎, 閂).
-- Cambio de código (code-switching) cantonés-inglés: mantiene las palabras inglesas en inglés dentro de enunciados cantoneses.
-- Sesgo de vocabulario contextual (hotwords / domain vocabulary biasing): acepta una lista de términos separados por comas mediante el parámetro `context` para mejorar el reconocimiento de vocabulario específico de dominio.
-- Salida de texto con normalización de números y sin espacios (según el protocolo de evaluación del autor).
-- Soporte de despliegue en transformers (qwen-asr), vLLM, llama.cpp (llama-server) y ComfyUI-Drama3.
-- Capacidades multilingües limitadas a yue, zh y en; la evaluación solo cubre cantonés y cantonés-inglés.
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión ni audio más allá de la transcripción ASR.
+- Reconocimiento automático del habla en cantonés de Hong Kong (yue-HK), con salida nativa en caracteres tradicionales y formas coloquiales.
+- Conmutación de código cantonés-inglés: mantiene las palabras inglesas en inglés dentro de la transcripción.
+- Sesgo por contexto y vocabulario de dominio (hotword/context biasing): permite condicionar la transcripción con glosarios, con 0,0% de reproducción del prompt en las pruebas publicadas.
+- Salida en chino (zh) e inglés (en), además de cantonés, según los idiomas declarados.
+- Integración con Transformers, vLLM (variantes FP8 y NVFP4), llama.cpp (GGUF) y ComfyUI-Drama3.
+- No se documentan en la información disponible capacidades de tool calling, agentes, razonamiento multi-paso, visión ni audio más allá de la transcripción ASR.
 
 ## Casos de uso
 
-- Transcripción de reuniones y actas del Consejo Legislativo de Hong Kong (LegCo): el modelo está evaluado específicamente en este conjunto (CER 7,16 %) y maneja registro formal con terminología política y jurídica en cantonés.
-- Subtitulado automático de contenido de YouTube en cantonés: el autor evalúa el modelo en un conjunto de 1.292 segmentos de YouTube (MER agrupado 12,33 %), lo que lo hace adecuado para generar subtítulos de creadores hongkoneses con mezcla de inglés.
-- Asistentes de voz para comandos de domótica en hogares de Hong Kong: con el sesgo de hotwords se pueden definir términos como 閂燈, 開燈 o 閂冷氣 y reducir el CER del escenario de comando corto con glosario largo al 7,19 %, lo que lo hace viable para comandos de voz con vocabulario cerrado.
-- Transcripción de entrevistas y material etnográfico con cambio de código: el modelo mantiene el inglés en inglés y el cantonés en caracteres tradicionales, lo que simplifica el post-proceso de entrevistas bilingües.
-- Integración en pipelines de accesibilidad (subtítulos en directo): al caber en GPU de consumo y disponer de GGUF Q6_K_H para llama.cpp, se puede desplegar en estaciones de trabajo locales para subtitulado en tiempo real de eventos en cantonés.
-- Reconocimiento de entidades y nombres propios de Hong Kong en audio: el autor reporta una recall de entidades del 94,83 % en su prueba entity_probe_v1 (220 enunciados, 271 menciones), útil para extracción de nombres de personas, organizaciones y lugares en grabaciones.
-- Preprocesado de audio para pipelines de NLP en cantonés: transcripción previa a análisis de sentimiento, resumen o indexación de audio en aplicaciones de atención al cliente de empresas hongkonesas.
+- Transcripción de reuniones y actas del Consejo Legislativo de Hong Kong: el modelo obtiene un CER del 7,16% en el conjunto LegCo, adecuado para generar borradores de actas que luego revisa un humano.
+- Subtitulado de contenido audiovisual en cantonés coloquial: la salida en caracteres tradicionales de Hong Kong con formas coloquiales evita la normalización a chino escrito estándar que degrada la fidelidad de los subtítulos.
+- Transcripción de pódcasts y vídeos de YouTube con mezcla cantonés-inglés: el modelo alcanza un MER del 12,33% en el conjunto T1 de 1.292 segmentos, con un recall de palabras inglesas del 76,22%, superior al 63,53% del modelo base.
+- Atención al cliente y asistentes de voz en Hong Kong: el sesgo por glosario permite fijar nombres de productos, marcas y entidades locales, con un recall de entidades del 94,83% en la sonda publicada y sin copia de distractores.
+- Dictado y transcripción de comandos cortos con vocabulario específico de dominio: el escenario de comando corto con glosario largo reduce el CER al 7,19%, útil en entornos de manos libres o industriales.
+- Integración en flujos de ComfyUI: la variante en el directorio comfyui/ permite usar el modelo con el cargador nativo de Qwen3-ASR de ComfyUI-Drama3 para pipelines de audio.
+- Despliegue en local con llama.cpp: la variante GGUF Q6_K_H (recomendada) permite ejecutar la transcripción en estaciones de trabajo sin GPU de datacenter.
+- Evaluación e investigación en ASR cantón: los scripts de evaluación del repositorio de GitHub permiten reproducir los benchmarks y comparar variantes.
 
 ## Benchmarks y rendimiento
 
-Tasa de error de caracteres (CER, greedy, BF16 con transformers) según la model card del autor:
+Tasa de error de caracteres (CER) con decodificación greedy en BF16 con Transformers. Texto convertido a simplificado (OpenCC t2s), números normalizados y espacios eliminados; idioma forzado a cantonés.
 
-| Conjunto de prueba | Qwen3-ASR-1.7B stock | v1 | v2 | v2.1 (este) | whisper-large-v3 |
+| Conjunto de prueba | Qwen3-ASR-1.7B base | v1 | v2 | v2.1 (esta version) | whisper-large-v3 |
 |---|---:|---:|---:|---:|---:|
-| FLEURS (yue_hant_hk) | 4,20 % | 4,00 % | 3,95 % | 3,89 % | 20,97 % |
-| Common Voice yue | 5,46 % | 3,80 % | 3,86 % | 3,94 % | 36,44 % |
-| Common Voice 23 zh-HK | 7,65 % | 5,18 % | 5,09 % | 5,02 % | 41,76 % |
-| MDCC | 4,25 % | 2,53 % | 2,49 % | 2,47 % | 34,52 % |
-| LegCo (Consejo Legislativo de HK) | 7,22 % | 7,17 % | 7,16 % | 7,16 % | 32,15 % |
-| MCE (code-switching cantonés-inglés) | 11,74 % | 5,61 % | 5,62 % | 5,52 % | 24,00 % |
+| FLEURS (yue_hant_hk) | 4,20% | 4,00% | 3,95% | 3,89% | 20,97% |
+| Common Voice yue | 5,46% | 3,80% | 3,86% | 3,94% | 36,44% |
+| Common Voice 23 zh-HK | 7,65% | 5,18% | 5,09% | 5,02% | 41,76% |
+| MDCC | 4,25% | 2,53% | 2,49% | 2,47% | 34,52% |
+| LegCo | 7,22% | 7,17% | 7,16% | 7,16% | 32,15% |
+| MCE (code-switching cantonés-inglés) | 11,74% | 5,61% | 5,62% | 5,52% | 24,00% |
 
-Suite de prueba held-out de YouTube (T1, 1.292 segmentos, MER script-neutral L1_PURE_NEUTRAL):
+Suite de prueba de YouTube retenida (T1, 1.292 segmentos, MER neutral respecto al sistema de escritura, L1_PURE_NEUTRAL):
 
-| Variante (BF16, language="Cantonese") | T1 agrupado (1.292) | legacy (279) | jimpae (431) | unseen (582) | code_switch | Recall de palabras EN | % simplificado |
+| Variante (BF16, language="Cantonese") | T1 agrupado (1.292) | legacy (279) | jimpae (431) | unseen (582) | code_switch | Recall de palabras EN | Porcentaje simplificado |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Qwen3-ASR-1.7B stock | 14,28 % | 12,26 % | 19,80 % | 12,25 % | 14,95 % | 63,53 % | (simplificado) |
-| v2.1 (este) | 12,33 % | 10,05 % | 18,47 % | 10,09 % | 12,66 % | 76,22 % | 0,20 % |
+| Qwen3-ASR-1.7B base | 14,28% | 12,26% | 19,80% | 12,25% | 14,95% | 63,53% | (simplificado) |
+| v2.1 (esta version) | 12,33% | 10,05% | 18,47% | 10,09% | 12,66% | 76,22% | 0,20% |
 
-Benchmark de sesgo de vocabulario contextual (210 clips):
+Benchmark de sesgo por contexto y vocabulario (suite de 210 clips, 70 por condición):
 
-| Condición (70 clips cada una) | CER v2 | CER v2.1 | Prompt parroting v2.1 |
+| Condición | CER v2 | CER v2.1 | Reproducción del prompt v2.1 |
 |---|---:|---:|---:|
-| Comando corto + glosario largo (short_long_prompt) | 21,88 % | 7,19 % | 0,0 % |
-| Homófono / objetivo de dominio (hit_homo) | 7,50 % | 6,54 % | 0,0 % |
-| Glosario solo distractores (pure_distractor) | 10,14 % | 10,02 % | 0,0 % |
+| Comando corto + glosario largo (short_long_prompt) | 21,88% | 7,19% | 0,0% |
+| Acierto de homófono / objetivo de dominio (hit_homo) | 7,50% | 6,54% | 0,0% |
+| Glosario de distractores puro (pure_distractor) | 10,14% | 10,02% | 0,0% |
 
-Prueba de entidades de Hong Kong held-out (entity_probe_v1: 220 enunciados, 271 menciones, 20 distractores por enunciado): v2.1 BF16 alcanza una recall de entidades del 94,83 % (frente a 89,67 % de la versión anterior), con fix-rate del 53,57 % (15/28), break-rate del 0,41 % y falsa copia de distractores del 0,00 % (0/4.400).
+Sonda de entidades de Hong Kong retenida (entity_probe_v1: 220 enunciados, 271 menciones, 20 distractores por enunciado): recall de entidades del 94,83% (frente al 89,67% de la v2), tasa de corrección del 53,57% (15 de 28), tasa de rotura del 0,41% y copia falsa de distractores del 0,00% (0 de 4.400).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: aproximadamente 4,1 GB solo para los pesos (2,04 B × 2 bytes), más overhead de activaciones y caché KV; se recomienda al menos 8 GB de VRAM para uso cómodo en BF16.
-- VRAM estimada en cuantización FP8: aproximadamente 2 GB de pesos; NVFP4A16: aproximadamente 1 GB de pesos; GGUF Q6_K_H: aproximadamente 1,6 GB; Q4_K_M: aproximadamente 1,2 GB.
-- GPU recomendadas: NVIDIA A100, H100, L40S o RTX 4090 para BF16 y despliegues de producción con vLLM; RTX 3090/4080/4090 para BF16 en local; RTX 3060 12 GB o superior para cuantizaciones GGUF/FP8.
-- Cabe en GPU de consumo: sí, en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090; también en GPUs con 8 GB en cuantizaciones de 8 bits o inferiores.
-- Opciones de despliegue: transformers con qwen-asr, vLLM (BF16, FP8 W8A8, NVFP4A16), llama.cpp (llama-server, GGUF Q4_K_M / Q6_K / Q6_K_H / Q8_0 con mmproj), ComfyUI-Drama3 (layout nativo) y OraType.
+- VRAM estimada para inferencia en BF16: aproximadamente 4 GB solo para los pesos (2,04 mil millones de parámetros a 2 bytes), más memoria para activaciones y caché; el repositorio completo ocupa 20,4 GB, por lo que se recomienda descargar solo los archivos necesarios.
+- La variante GGUF Q4_K_M reduce los pesos a aproximadamente 1,2 GB; Q6_K_H (recomendada por el autor) a aproximadamente 1,7 GB; Q8_0 a aproximadamente 2,2 GB.
+- La variante NVFP4A16 es la más pequeña y rápida según el autor, pensada para vLLM.
+- GPU recomendadas: no se especifican en la información disponible. Por tamaño, el modelo cabe en GPU de consumo como RTX 4090, RTX 4080 o RTX 3090 en BF16, y en GPU de menor VRAM con cuantización GGUF o FP8.
+- Opciones de despliegue: Transformers, qwen-asr, vLLM (FP8, NVFP4), llama.cpp (llama-server con GGUF), transcribe.cpp y Hex en macOS, ComfyUI-Drama3.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | CER en cantonés (referencia) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Qwen3-ASR-1.7B-Cantonese-HK (este, v2.1) | 2,04 B | no disponible | FLEURS 3,89 %; Common Voice yue 3,94 %; MCE 5,52 % | Apache 2.0 | Hugging Face (BF16, GGUF, FP8, NVFP4) |
-| Qwen3-ASR-1.7B stock | 2,04 B | no disponible | FLEURS 4,20 %; Common Voice yue 5,46 %; MCE 11,74 % | Apache 2.0 (según modelo base) | Hugging Face |
-| whisper-large-v3 | no disponible en la información | no disponible | FLEURS 20,97 %; Common Voice yue 36,44 %; MCE 24,00 % | no disponible en la información | Hugging Face / OpenAI |
+| Modelo | Parametros | Contexto | CER en FLEURS yue_hant_hk | CER en MCE (code-switching) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Qwen3-ASR-1.7B-Cantonese-HK (v2.1) | 2,04 mil millones | no disponible | 3,89% | 5,52% | Apache 2.0 | Hugging Face, GGUF, FP8, NVFP4, ComfyUI |
+| Qwen3-ASR-1.7B (base) | 2,04 mil millones | no disponible | 4,20% | 11,74% | no disponible en la informacion | Hugging Face |
+| whisper-large-v3 | no disponible en la informacion | no disponible | 20,97% | 24,00% | no disponible en la informacion | no disponible en la informacion |
 
-La comparativa se limita a los modelos presentes en la model card del autor; no se dispone de datos de otros modelos ASR abiertos especializados en cantonés para ampliar la tabla.
+La comparativa se limita a los datos publicados en la model card; no se dispone de información sobre parámetros, contexto ni licencia de whisper-large-v3 en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo se ha evaluado en cantonés y cantonés-inglés; para otros idiomas el rendimiento puede ser peor que el del modelo base Qwen3-ASR-1.7B.
-- El autor advierte de que, al igual que el modelo base, el ajuste muestra un 100 % de disparos en silencio sintético o ambiente (conjunto T3), por lo que se recomienda filtrar silencio y no-habla (voice activity detection) antes de la transcripción.
-- Riesgo de alucinación y de parroting del prompt: aunque la v2.1 reporta 0,0 % de prompt parroting en su suite de biasing, el uso de glosarios largos puede inducir copias de términos del contexto en la salida si no se controla.
-- El parámetro `language` debe forzarse a "Cantonese"; dejarlo en `None` no mejora el code-switching (−0,06 puntos) y añade riesgo de detección errónea de idioma en clips cortos o ruidosos.
-- La salida nativa es en caracteres tradicionales hongkoneses; para comparaciones entre modelos el autor normaliza a simplificado con OpenCC `t2s`, lo que puede introducir artefactos de conversión.
-- Sesgos conocidos: no se documentan sesgos específicos en la información proporcionada; al ser un fine-tune sobre un modelo base de Qwen, puede heredar sesgos del corpus original, no disponibles.
-- Licencia Apache 2.0: permite uso comercial, pero se recomienda revisar las condiciones del modelo base Qwen3-ASR-1.7B y de los datasets de evaluación (FLEURS, Common Voice, MDCC, LegCo, MCE) si se redistribuyen derivados.
-- El repositorio ocupa 20,4 GB, lo que incluye múltiples formatos y el layout de ComfyUI; conviene descargar solo los archivos necesarios.
+- El modelo está especializado en cantonés y code-switching cantonés-inglés; solo se evaluaron voz en cantonés y en cantonés-inglés, por lo que su rendimiento en otros idiomas o variedades del chino no está documentado.
+- Riesgo de alucinación y de errores en la transcripción no cuantificado más allá de las métricas de CER y MER publicadas; el CER en el conjunto LegCo (7,16%) y en el subconjunto jimpae (18,47%) indica margen de error relevante en audio difícil.
+- El sesgo por glosario puede inducir copia de términos del contexto; el autor reporta 0,0% de reproducción del prompt y 0,00% de copia falsa de distractores en sus pruebas, pero son resultados de una suite concreta y no garantizan el comportamiento en otros dominios.
+- La salida en caracteres tradicionales de Hong Kong con formas coloquiales puede requerir normalización para pipelines que esperan chino escrito estándar.
+- No se documentan sesgos demográficos, acentos o condiciones acústicas específicas en la información disponible.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3-ASR-1.7B debe verificarse por separado; la información disponible no detalla su licencia.
+- El repositorio ocupa 20,4 GB; conviene descargar solo los archivos de la variante necesaria para evitar consumo innecesario de almacenamiento.
+- No se especifican requisitos de contexto ni límites de duración de audio en la información disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/koelony/Qwen3-ASR-1.7B-Cantonese-HK
-- Repositorio GitHub del autor: https://github.com/joe2643/qwen3-asr-cantonese-hk
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
-- Versión GGUF: https://huggingface.co/joe2643/Qwen3-ASR-1.7B-Cantonese-HK-GGUF
-- Versión FP8: https://huggingface.co/joe2643/Qwen3-ASR-1.7B-Cantonese-HK-FP8
-- Versión NVFP4: https://huggingface.co/joe2643/Qwen3-ASR-1.7B-Cantonese-HK-NVFP4
+- Variante GGUF: https://huggingface.co/koelony/Qwen3-ASR-1.7B-Cantonese-HK-GGUF
+- Variante FP8: https://huggingface.co/koelony/Qwen3-ASR-1.7B-Cantonese-HK-FP8
+- Variante NVFP4: https://huggingface.co/koelony/Qwen3-ASR-1.7B-Cantonese-HK-NVFP4
+- Repositorio GitHub: https://github.com/koelony/qwen3-asr-cantonese-hk
+- Demo en vivo: https://demo.koelony.com
+- Página del proyecto: https://koelony.com/asr/
+- Sitio del autor: https://koelony.com
 - ComfyUI-Drama3: https://github.com/PedroMarinhoDev/ComfyUI-Drama3
-- Apoyo al autor: https://buymeacoffee.com/joe2643
+- transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
+- Perfil del autor en Hugging Face: https://huggingface.co/joe2643

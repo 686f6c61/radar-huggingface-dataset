@@ -2,108 +2,109 @@
 
 ## Resumen
 
-Prom-1.5B es un modelo de generacion de texto publicado en Hugging Face por el usuario tncyypttvk bajo el identificador `tncyypttvk/Prom-1.5B`. Se trata de un checkpoint de 1.543.714.304 parametros (aproximadamente 1,54 mil millones) etiquetado con la arquitectura `qwen2`, lo que lo situa en la familia de transformers decoder-only derivada de Qwen2, con atencion causal y pesos en formato safetensors. El repositorio ocupa 3,1 GB, un tamano coherente con pesos almacenados en bf16/fp16 (2 bytes por parametro).
+Prom-1.5B es un ajuste fino mediante QLoRA del modelo Qwen2.5-1.5B-Instruct, desarrollado por el usuario tncyypttvk en el contexto de un bootcamp. Está diseñado como asistente bilingüe (turco e inglés) de asuntos estudiantiles para la ficticia Prometheus University, combinando recuperación aumentada (RAG) sobre una guía institucional, consulta de información de asignaturas vía herramienta CSV y cálculo de medias ponderadas por ECTS mediante una herramienta dedicada. El modelo resuelve el problema de dotar a un LLM pequeño de comportamiento consistente en tareas de identidad, agente con llamadas a herramientas y RAG en dos idiomas.
 
-La relevancia de esta ficha es limitada y conviene ser explicito: la model card es la plantilla automatica de Hugging Face sin rellenar, con todos los campos marcados como "More Information Needed". No se declara licencia, ni idiomas, ni datos de entrenamiento, ni procedimiento de ajuste, ni resultados de evaluacion. El modelo registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion alguna por parte de la comunidad.
+Arquitectónicamente hereda la estructura transformer decoder-only de Qwen2.5-1.5B-Instruct, con 1.543.714.304 parámetros totales (dato real de safetensors) y una ventana de contexto base de 32.768 tokens según la familia Qwen2.5, aunque el entrenamiento se realizó con un máximo de 2048 tokens. La relevancia actual reside en que demuestra un flujo completo de especialización de un modelo pequeño con recursos limitados (entrenamiento en T4, publicación en CPU/GGUF), útil como referencia para quienes abordan RAG y tool calling con modelos de menos de 2B parámetros.
 
-En consecuencia, esta ficha documenta lo que es verificable (arquitectura declarada, recuento real de parametros, formato de pesos, tamano del repositorio) y marca explicitamente como "no disponible" todo lo demas. Cualquier evaluacion de calidad, sesgos o idoneidad para produccion requiere una validacion empirica por parte del usuario antes de adoptar el modelo.
+El modelo se publica bajo licencia Apache-2.0, con 316 descargas y sin likes en el momento de la consulta, y su repositorio ocupa 9,3 GB. La model card incluye métricas de evaluación antes/después del ajuste y una tabla de prueba con correcciones de aplicación, con una puntuación media de 0,77 según un juez Gemini.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | qwen2 (transformer decoder-only con atencion causal, segun el tag del repositorio) |
-| Parametros totales | 1.543.714.304 (1,54 mil millones) |
-| Longitud de contexto | no disponible en la model card; la arquitectura qwen2 soporta nativamente hasta 32.768 tokens, pero no se confirma la configuracion de este checkpoint |
-| Tipos de cuantizacion | no disponible; el repositorio solo contiene safetensors en precision completa/mixta (bf16 o fp16, inferido del tamano del repo) |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible (la model card no especifica licencia) |
-| Formato de pesos | safetensors |
-| Libreria de carga | transformers |
-| Pipeline declarado | text-generation (tag adicional: conversational) |
-| Tamano del repositorio | 3,1 GB |
-| Fecha de creacion | 2026-10-13 |
-| Ultima actualizacion | 2026-10-13 |
-| Descargas / likes | 0 / 0 |
+| Arquitectura | Transformer decoder-only (Qwen2) |
+| Parametros totales | 1.543.714.304 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 32.768 tokens en el modelo base; entrenamiento con máximo de 2048 tokens |
+| Tipos de cuantizacion | no disponible en la información proporcionada (existe repositorio GGUF) |
+| Idiomas soportados | turco (tr) e inglés (en) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors; GGUF disponible en repositorio separado |
 
 ## Arquitectura y entrenamiento
 
-El unico dato tecnico fiable sobre la arquitectura es el tag `qwen2`, que situa el modelo en la familia Qwen2 de Alibaba. Esto implica, si el tag es correcto, un transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU, embeddings rotatorios (RoPE) y probablemente atencion con consultas agrupadas (GQA), que es la configuracion estandar de la familia. Para un modelo de 1,54 mil millones de parametros, el checkpoint base de referencia de esa familia (Qwen2-1.5B) emplea 28 capas, dimension oculta de 1536 y vocabulario de 151.936 tokens, pero no hay confirmacion de que este checkpoint reproduzca esa configuracion exacta.
+El modelo parte de Qwen/Qwen2.5-1.5B-Instruct, un transformer decoder-only con atención causal estándar y plantilla de chat predefinida. El ajuste se realizó con QLoRA: r=16, alpha=32, aplicado a todas las capas lineales, durante 3 épocas, con tasa de aprendizaje 2e-4 y longitud máxima de secuencia de 2048 tokens. El conjunto de entrenamiento es un dataset sintético de 648 conversaciones generadas con Gemini, etiquetado como `tncyypttvk/prom-1.5b-veri`, que cubre tres ejes: identidad del asistente, RAG sobre guía institucional y comportamiento de agente con llamadas a herramientas.
 
-No hay absolutamente ninguna informacion sobre el entrenamiento: ni numero de tokens, ni composicion del dataset, ni si hubo preentrenamiento desde cero, fine-tuning supervisado, RLHF o DPO. El tag `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. sobre el calculador de impacto medioambiental de machine learning, un enlace que la plantilla de Hugging Face incluye por defecto; no es un paper asociado al modelo. No se declara ninguna innovacion tecnica (decodificacion especulativa, atencion lineal, mezcla de expertos, estado espacio-temporal) ni se publican hiperparametros de entrenamiento.
+No se documenta el uso de RLHF ni DPO, ni el número total de tokens de entrenamiento más allá de las 648 conversaciones y 3 épocas. La innovación técnica destacable no es arquitectónica sino de integración: el modelo aprende a invocar una herramienta CSV para información de asignaturas y una herramienta de cálculo de medias ponderadas por ECTS, además de responder con abstención explícita cuando la información no está en la guía. La model card indica que las correcciones de aplicación (búsqueda multi-asignatura y adaptación de parámetros) son parte del ajuste de comportamiento, no del preentrenamiento.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva: es la unica capacidad garantizada por el pipeline declarado (`text-generation`).
-- Conversacion multi-turno: el tag `conversational` sugiere un ajuste orientado a dialogo, aunque no se documenta la plantilla de chat ni los tokens especiales utilizados.
-- Soporte de tool calling / function calling: no disponible; no se documenta.
-- Soporte de agentes y razonamiento multi-paso: no disponible; no se documenta.
-- Capacidades multilingues: no disponible; no se declaran idiomas.
-- Capacidades de vision o audio: no disponible; el repositorio no contiene procesadores de imagen ni audio.
-- Modo de razonamiento explicito (thinking mode): no disponible.
-- Generacion de codigo y matematicas: sin datos de entrenamiento ni benchmarks no puede afirmarse nada; en modelos densos de ~1,5B la competencia en codigo y matematicas suele ser limitada.
+- Generación de texto conversacional bilingüe turco-inglés con plantilla de chat de Qwen2.5.
+- RAG sobre una guía institucional: responde preguntas sobre normativa académica y se abstiene cuando el dato no está en la guía.
+- Tool calling / function calling: invocación de una herramienta CSV para información de asignaturas y de una herramienta de cálculo de medias ponderadas por ECTS.
+- Comportamiento de agente con salida JSON estructurada para llamadas a herramientas.
+- Identidad de asistente consistente (nombre y marcador de identidad) en ambos idiomas.
+- Cálculo aritmético de medias ponderadas por ECTS con advertencia de que el resultado no es un GNO oficial.
+- Manejo de conversaciones multi-turno dentro del contexto de entrenamiento (2048 tokens).
+- No se documentan capacidades de visión, audio, thinking mode ni decodificación especulativa.
 
 ## Casos de uso
 
-Dado que el modelo carece de documentacion y de evaluaciones publicadas, los casos siguientes son escenarios tecnicamente plausibles para un transformer denso de 1,54B con licencia indeterminada. En todos ellos se recomienda una validacion previa y, en entornos comerciales, una revision legal de la licencia.
-
-- Prototipado local en maquina de desarrollo: con pesos bf16 (3,1 GB) o una conversion a GGUF Q4 (en torno a 1 GB), el modelo puede ejecutarse en un portatil con GPU consumer o incluso en CPU, lo que lo hace util para iterar sobre plantillas de prompts y pipelines de generacion antes de escalar a un modelo mayor.
-- Clasificacion y extraccion de informacion: tareas de etiquetado de texto, extraccion de entidades o estructuracion de documentos en JSON son abordables con un modelo de este tamano si se validan las tasas de acierto, ya que el coste por inferencia es bajo.
-- Asistente conversacional ligero en el borde: el tag `conversational` apunta a este uso, con la ventaja de que el modelo puede desplegarse en dispositivos con recursos limitados; seria necesario verificar la calidad del dialogo multi-turno antes de exponerlo a usuarios.
-- Generacion de texto controlada en lote: redaccion de resumenes cortos, descripciones de producto o respuestas plantilla a gran escala, donde el coste computacional domina sobre la calidad maxima alcanzable.
-- Base para fine-tuning de dominio vertical: partir de un checkpoint de 1,54B en safetensors es barato en terminos de GPU respecto a modelos de 7B o superiores, por lo que sirve como punto de partida para ajustes especificos de sector con datasets propios.
-- Componente auxiliar en un sistema mayor: uso como modelo de cribado (draft model) para prefiltrar respuestas o como generador de candidatos en una arquitectura en cascada, delegando en un modelo mayor las peticiones de alta complejidad.
-- Investigacion sobre comportamiento de modelos pequenos: analisis de alucinacion, sesgos y degradacion de contexto en la franja de 1-2B parametros, ambito donde faltan checkpoints documentados.
+- Asistente de asuntos estudiantiles: el modelo gestiona consultas sobre normativa académica (plazos de matrícula, requisitos de graduación, becas) recuperando información de una guía institucional y absteniéndose cuando el dato no existe, lo que reduce alucinaciones en atención al alumno.
+- Consulta de información de asignaturas: mediante tool calling a un CSV, responde horarios, aulas y ECTS de asignaturas concretas, integrándose en un backend de gestión académica.
+- Cálculo de medias ponderadas: invoca una herramienta dedicada para calcular la media ECTS a partir de calificaciones y créditos, con aviso explícito de que no sustituye al expediente oficial.
+- Chatbot bilingüe de campus: al soportar turco e inglés, cubre estudiantes nacionales e internacionales con una sola instancia desplegada en CPU o GPU modesta.
+- Prototipo de agente con salida JSON: sirve como referencia para pipelines de agentes que requieren formato estructurado de llamadas a herramientas en modelos de menos de 2B parámetros.
+- Base para fine-tuning adicional: al ser un ajuste QLoRA sobre Qwen2.5-1.5B-Instruct con licencia Apache-2.0, puede reutilizarse como punto de partida para dominios institucionales similares con presupuesto de entrenamiento reducido.
+- Evaluación de RAG en modelos pequeños: útil en investigación para medir tasas de abstención y fidelidad a la guía en modelos de 1,5B parámetros.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye ninguna seccion de evaluacion cumplimentada (MMLU, HumanEval, GSM8K, MT-Bench u otros) y la busqueda web no ha devuelto resultados relacionados con el modelo.
+La model card publica métricas propias antes/después del ajuste sobre un conjunto de test, no benchmarks estándar (MMLU, HumanEval, GSM8K). Se reproducen a continuación.
+
+| Metrica | Base | Prom |
+|---|---|---|
+| tr_kimlik_ad | 0,00 | 0,50 |
+| tr_kimlik_isaret | 0,00 | 1,00 |
+| tr_ajan_json | 0,50 | 0,67 |
+| tr_ajan_arac | 0,00 | 0,67 |
+| tr_rag_hakem | 0,50 | 0,47 |
+| tr_rag_isaret | 0,00 | 1,00 |
+| tr_sure_sn | 122,00 | 159,00 |
+| en_kimlik_ad | 0,00 | 0,40 |
+| en_kimlik_isaret | 0,00 | 1,00 |
+| en_ajan_json | 0,40 | 0,60 |
+| en_ajan_arac | 0,00 | 0,60 |
+| en_rag_hakem | 0,60 | 1,00 |
+| en_rag_isaret | 0,00 | 1,00 |
+| en_sure_sn | 117,00 | 131,00 |
+
+Además, la model card reporta una prueba de aplicación con juez Gemini (escala 1 / 0,5 / 0) con media 0,77, y una ejecución previa registrada de 23/30 = 0,7667 (TR 0,7333, EN 0,80). No se han publicado resultados de benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM que siguen son estimaciones calculadas a partir del recuento real de parametros (1,54B) y del overhead habitual de la cache KV; no proceden de mediciones publicadas por el autor, que no las facilita.
-
-- Pesos en bf16/fp16 (formato del repositorio): aproximadamente 3,1 GB solo de pesos; con cache KV y margen de ejecucion, entre 4 y 5 GB de VRAM en total.
-- Pesos en int8 (requiere cuantizacion propia): aproximadamente 1,6 GB de pesos; en torno a 2,5-3 GB de VRAM en total.
-- Pesos en int4 / GGUF Q4_K_M (requiere conversion, no incluida en el repo): aproximadamente 1 GB de pesos; en torno a 1,5-2 GB de VRAM en total.
-- GPU consumer: cabe con holgura en RTX 3060 12 GB, RTX 4060/4060 Ti, RTX 4070 y superiores; tambien en GPUs de 8 GB si se cuantiza a int8 o int4. En RTX 4090 o A100/H100 el modelo queda sobredimensionado para la GPU y el cuello de botella sera el ancho de banda de memoria.
-- CPU: la inferencia en CPU con llama.cpp es viable a velocidades de pocos tokens por segundo en cuantizacion Q4, aunque no se dispone de mediciones concretas.
-- Opciones de despliegue: `transformers` de forma nativa (unico formato publicado); vLLM y TGI son compatibles con la arquitectura qwen2 y los safetensors; Ollama y llama.cpp requieren convertir previamente los pesos a GGUF; SGLang tambien es una opcion si la arquitectura declarada es correcta.
-- Latencia y throughput: no disponible; no se han publicado mediciones y no pueden inferirse con fiabilidad sin ejecutar el modelo.
+- VRAM estimada para inferencia: en fp16, aproximadamente 3,1 GB solo para pesos (1,54B parámetros); en 8 bits, en torno a 1,6 GB; en 4 bits, alrededor de 0,8-1 GB, sin contar caché KV ni overhead del runtime.
+- GPU recomendadas: T4 (usada para el entrenamiento), RTX 3060/4060, RTX 4090, A100 y H100; el modelo cabe holgadamente en cualquier GPU consumer con 8 GB o más.
+- Cabe en GPU consumer: sí, en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 y GPUs integradas con suficiente memoria unificada.
+- Opciones de despliegue: transformers (librería declarada), llama.cpp y Ollama mediante el repositorio GGUF publicado, además de vLLM y TGI para servir en GPU.
+- Latencia y throughput: no disponibles en la información proporcionada; la model card solo reporta tiempos de evaluación (tr_sure_sn 159 s y en_sure_sn 131 s para el conjunto de test, no por petición).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| tncyypttvk/Prom-1.5B | 1,54B | no disponible | no disponible | no disponible | repositorio Hugging Face, 0 descargas |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache 2.0 | si, en su model card oficial | Hugging Face, ampliamente utilizado |
-| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License (con restricciones) | si, en su model card oficial | Hugging Face, ampliamente utilizado |
-| SmolLM2-1.7B-Instruct | 1,71B | 8.192 tokens | Apache 2.0 | si, en su model card oficial | Hugging Face, ampliamente utilizado |
+| Prom-1.5B | 1,54B | 32.768 (base); entrenado a 2048 | Apache-2.0 | safetensors + GGUF | Especializado en asuntos estudiantiles tr/en con RAG y tool calling |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 | Apache-2.0 | safetensors + GGUF | Modelo base; mejor generalización, sin especialización institucional |
+| Qwen2.5-3B-Instruct | 3,09B | 32.768 | Apache-2.0 | safetensors + GGUF | Mayor capacidad general, requiere más VRAM |
+| Llama-3.2-1B-Instruct | 1,24B | 128.000 | Llama 3.2 Community License | safetensors + GGUF | Alternativa pequeña multilingüe con licencia restrictiva para algunos usos |
 
-La comparacion relevante no es de rendimiento, ya que Prom-1.5B no publica ninguna cifra, sino de madurez: los tres modelos alternativos cuentan con licencia explicita, contexto documentado, evaluaciones reproducibles y soporte activo en herramientas de despliegue. Prom-1.5B no ofrece ninguna de esas garantias. Cualquier decision de adopcion deberia apoyarse en una evaluacion propia frente a estas alternativas.
+Los datos de rendimiento comparativo en benchmarks estándar no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Model card sin contenido: todos los campos estan sin rellenar, incluidos desarrollador, datos de entrenamiento, hiperparametros, evaluacion e impacto medioambiental. No hay informacion verificable sobre procedencia.
-- Licencia indeterminada: al no declararse licencia, no puede asumirse permiso de uso comercial. En la practica, esto equivale a ausencia de concesion explicita de derechos, lo que supone un riesgo legal para su integracion en productos.
-- Ausencia de benchmarks: no existe ninguna medicion de calidad, lo que impide compararlo objetivamente con alternativas de la misma franja.
-- Riesgo de alucinacion: inherente a los modelos generativos y especialmente acusado en la franja de 1,5B parametros, donde la capacidad de mantener coherencia factual decae rapidamente. No debe usarse en tareas de decision critica sin verificacion humana.
-- Sesgos: se desconoce por completo la composicion del dataset de entrenamiento, por lo que no puede caracterizarse el sesgo de genero, raza, religion o ideologia. No hay seccion de sesgos cumplimentada.
-- Idiomas no declarados: no puede afirmarse que el modelo funcione correctamente en castellano, ni siquiera en ingles, sin pruebas empiricas.
-- Contexto no confirmado: aunque la arquitectura qwen2 soporte hasta 32.768 tokens, no hay garantia de que este checkpoint haya sido entrenado con esa longitud; un contexto largo entrenado deficientemente degrada la generacion.
-- Formato limitado: solo se publican safetensors, sin versiones GGUF, AWQ, GPTQ ni ONNX, lo que obliga a convertir los pesos para usar llama.cpp u Ollama.
-- Sin validacion comunitaria: 0 descargas y 0 likes implican que nadie ha reportado problemas ni verificaciones de funcionamiento.
-- Trazabilidad dudosa: el repositorio se creo y actualizo el mismo dia (2026-10-13) y el tag de arXiv apunta a un articulo generico de la plantilla, no a un paper del modelo. El nombre "Prom" no tiene documentacion asociada.
-- Advertencia sobre los resultados de busqueda: las consultas web realizadas no devolvieron ninguna fuente relacionada con el modelo; los resultados obtenidos corresponden a una sociedad mercantil francesa sin relacion alguna con este proyecto.
+- Modelo altamente especializado: su comportamiento fuera del dominio de asuntos estudiantiles de Prometheus University no está evaluado y puede degradarse respecto al modelo base.
+- Riesgo de alucinación en consultas fuera de la guía: aunque aprende a abstenerse, la métrica tr_rag_hakem empeora ligeramente (0,50 a 0,47) tras el ajuste, lo que indica que la fidelidad al contexto no es perfecta.
+- Sesgos conocidos: no documentados en la información proporcionada; al entrenarse con datos sintéticos generados por Gemini, puede heredar sesgos de ese generador.
+- Limitaciones de idioma: solo turco e inglés; no se garantiza calidad en otras lenguas.
+- Limitación de contexto práctico: aunque el modelo base soporta 32.768 tokens, el entrenamiento se hizo con máximo de 2048, por lo que el rendimiento más allá de esa longitud no está validado.
+- Restricciones de licencia: Apache-2.0 permite uso comercial, pero el modelo se distribuye sin garantías y el contenido institucional es ficticio; no debe usarse como fuente normativa real.
+- Caveat de producción: las métricas publicadas son sobre conjuntos de test propios y un juez automático (Gemini), no sobre benchmarks independientes; la media de 0,77 en la prueba de aplicación incluye respuestas parcialmente correctas.
+- El repositorio ocupa 9,3 GB, lo que sugiere que puede contener múltiples formatos o checkpoints además de los pesos safetensors.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/tncyypttvk/Prom-1.5B
-- Model card del autor: plantilla automatica de Hugging Face sin contenido cumplimentado
-- Paper de referencia de la plantilla (no asociado al modelo): https://arxiv.org/abs/1910.09700
-- Calculador de impacto medioambiental citado en la plantilla: https://mlco2.github.io/impact
-- Referencias comparativas de la misma franja:
-  - https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
-  - https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
-  - https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct
-- Repositorio, demo o publicacion asociada al modelo: no disponible
+- Adaptador LoRA: https://huggingface.co/tncyypttvk/Prom-1.5B-LoRA
+- GGUF: https://huggingface.co/tncyypttvk/Prom-1.5B-GGUF
+- Dataset de entrenamiento: https://huggingface.co/datasets/tncyypttvk/prom-1.5b-veri
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

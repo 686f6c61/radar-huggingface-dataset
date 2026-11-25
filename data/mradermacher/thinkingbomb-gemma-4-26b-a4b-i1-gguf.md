@@ -2,51 +2,50 @@
 
 ## Resumen
 
-ThinkingBomb-gemma-4-26B-A4B-i1-GGUF es una cuantizacion en formato GGUF del modelo ThinkingBomb-gemma-4-26B-A4B, desarrollado por krystofmitka y cuantizado por mradermacher. Se trata de un ajuste fino del modelo Gemma 4 de Google con 25.233.142.046 parametros totales, orientado a tareas de razonamiento y equipado con mecanismos de control de esfuerzo (effort-control) y entrenamiento mediante GRPO (Group Relative Policy Optimization). El modelo base conserva la arquitectura multimodal de Gemma 4, incluyendo capacidades de vision segun indica la model card.
+ThinkingBomb-gemma-4-26B-A4B-i1-GGUF es la versión cuantizada en formato GGUF del modelo ThinkingBomb-gemma-4-26B-A4B, un ajuste fino de tipo reasoning desarrollado por krystofmitka sobre la base Gemma 4 de Google. Esta ficha concreta corresponde al repositorio publicado por mradermacher, que aplica cuantización con matrices de importancia (imatrix) para generar una batería de ficheros GGUF utilizables con llama.cpp y herramientas compatibles. El modelo base tiene 25.233.142.046 parámetros (aproximadamente 25,2 mil millones), lo que lo sitúa en la gama de modelos medianos-grandes ejecutables en hardware de consumo con cuantizaciones agresivas.
 
-La relevancia de esta ficha reside en que ofrece una via practica para ejecutar un modelo de razonamiento de aproximadamente 25B parametros en hardware de consumo, gracias a las cuantizaciones con imatrix que reducen el peso desde los 80 GB del repositorio original hasta los 10,7-16,9 GB de las variantes mas comprimidas. Las cuantizaciones i1 (imatrix) de mradermacher estan disenadas para preservar la calidad en niveles de compresion agresivos, lo que resulta especialmente critico en modelos de razonamiento donde los errores de cuantizacion pueden degradar las cadenas de pensamiento.
+El modelo está etiquetado con los tags `reasoning`, `grpo` y `effort-control`, lo que indica que el ajuste fino se orientó a reforzar capacidades de razonamiento mediante GRPO (Group Relative Policy Optimization) e incorpora algún mecanismo de control de esfuerzo en la generación de cadenas de pensamiento. La licencia declarada es Apache 2.0, aunque el enlace de licencia apunta a los términos de Gemma 4 de Google, lo que conviene verificar antes de un uso comercial. El idioma declarado es únicamente inglés.
 
-El modelo esta publicado bajo licencia Apache 2.0, aunque la model card enlaza a la licencia especifica de Gemma 4 de Google, lo que introduce cierta ambiguedad que conviene verificar antes de un uso comercial. El soporte de idiomas declarado se limita al ingles.
+La relevancia de este repositorio es práctica: ofrece el modelo en múltiples niveles de cuantización (desde IQ1_S de 8,4 GB hasta Q6_K de 22,7 GB), lo que permite desplegarlo desde GPUs de consumo modestas hasta estaciones de trabajo con VRAM amplia. Además, el modelo base es multimodal (visión), aunque los ficheros mmproj necesarios para la parte visual se alojan en el repositorio estático hermano, no en este.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal basada en Gemma 4 (MoE, segun el sufijo A4B) |
-| Parametros totales | 25.233.142.046 |
-| Parametros activos | no disponible (el sufijo A4B sugiere ~4B activos, sin confirmacion) |
+| Arquitectura | Transformer (derivada de Gemma 4); detalles especificos no disponibles |
+| Parametros totales | 25.233.142.046 (aprox. 25,2 B) |
+| Parametros activos | no disponible (no se confirma que sea MoE pese al sufijo A4B) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-Q2_K, i1-IQ3_XXS, i1-IQ3_M, i1-Q3_K_M, i1-Q4_K_S, i1-Q4_K_M (imatrix); estaticas en repositorio separado |
-| Idiomas soportados | en |
-| Licencia | apache-2.0 (con enlace a licencia Gemma 4 de Google) |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K, Q2_K_S, IQ3_XXS, IQ3_XS, IQ3_S, Q3_K_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_1, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K (todas i1/imatrix) |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 (con license_link a los terminos de Gemma 4 de Google) |
+| Formato de pesos | GGUF (cuantizado); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un ajuste fino de Gemma 4 con 25.233.142.046 parametros. El sufijo "A4B" en el nombre sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 4 mil millones de parametros activos por token, aunque la informacion proporcionada no confirma explicitamente esta cifra. La model card etiqueta el modelo con "gemma4", "reasoning", "grpo" y "effort-control", lo que indica que el ajuste fino se realizo mediante GRPO, una tecnica de aprendizaje por refuerzo utilizada habitualmente para mejorar el razonamiento, y que incorpora algun mecanismo de control del esfuerzo computacional en la generacion de cadenas de pensamiento.
+El modelo base es un ajuste fino de Gemma 4, la familia de modelos de Google, con 25,2 mil millones de parámetros. El sufijo "A4B" en el nombre sugiere una posible arquitectura de mezcla de expertos con aproximadamente 4 mil millones de parámetros activos, pero la información disponible no confirma esta interpretación, por lo que no debe asumirse. El ajuste fino incorpora las etiquetas `reasoning`, `grpo` y `effort-control`: GRPO es una técnica de optimización por refuerzo (empleada habitualmente para entrenar modelos de razonamiento) y "effort-control" apunta a la capacidad de modular la profundidad del razonamiento generado.
 
-La model card menciona que se trata de un modelo de vision, con archivos mmproj disponibles en el repositorio de cuantizaciones estaticas. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni los detalles del proceso de RLHF o DPO. Las cuantizaciones i1 utilizan un archivo imatrix generado especificamente para este modelo, lo que permite una asignacion optimizada de bits por tensor.
+No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF o DPO adicionales. Tampoco se detalla si el modelo incorpora innovaciones como decodificación especulativa o atención lineal. Esta ficha corresponde a la cuantización GGUF con imatrix realizada por mradermacher, que no modifica la arquitectura sino que reduce la precisión de los pesos para facilitar el despliegue local. Los ficheros estáticos (sin imatrix) están disponibles en un repositorio hermano.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento explicito, con modo de pensamiento (thinking) derivado del entrenamiento con GRPO.
-- Control de esfuerzo (effort-control): el modelo permite ajustar la profundidad del razonamiento segun la tarea.
-- Capacidades de vision, segun la model card (archivos mmproj en el repositorio estatico).
-- Soporte conversacional multi-turno (tag "conversational").
-- Compatibilidad con endpoints (tag "endpoints_compatible").
-- Capacidades multilingues limitadas al ingles segun el campo de idiomas.
-- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no confirmado explicitamente, aunque el entrenamiento con GRPO sugiere orientacion a tareas de razonamiento complejo.
+- Generación de texto conversacional en inglés.
+- Razonamiento reforzado mediante GRPO, orientado a tareas que requieren cadenas de pensamiento.
+- Control de esfuerzo (`effort-control`): capacidad declarada de modular la profundidad del razonamiento.
+- Capacidades de visión: el modelo base es multimodal y dispone de ficheros mmproj en el repositorio estático, aunque no se incluyen en este repositorio i1.
+- No se documenta soporte de tool calling ni function calling en la información disponible.
+- No se documenta soporte explícito de agentes o razonamiento multi-paso más allá del razonamiento inherente.
+- Multilingüismo: limitado al inglés según la etiqueta de idioma declarada.
 
 ## Casos de uso
 
-- Razonamiento en local con hardware de consumo: las cuantizaciones i1-Q4_K_M (16,9 GB) permiten ejecutar un modelo de razonamiento de 25B parametros en GPUs con 24 GB de VRAM, como la RTX 4090, usando llama.cpp u Ollama.
-- Asistencia en resolucion de problemas matematicos y logicos: el entrenamiento con GRPO y el modo de pensamiento lo hacen adecuado para tareas que requieren cadenas de razonamiento paso a paso, ajustando el esfuerzo segun la dificultad.
-- Procesamiento de documentos con componente visual: al ser un modelo de vision, puede emplearse en tareas de extraccion de informacion de imagenes y documentos escaneados, siempre que se despliegue con los archivos mmproj correspondientes.
-- Prototipado de agentes de razonamiento en entornos con recursos limitados: la variante i1-IQ3_XXS (11,4 GB) permite experimentar con razonamiento avanzado en GPUs de 12-16 GB.
-- Evaluacion comparativa de tecnicas de cuantizacion: el repositorio ofrece seis variantes i1 con distintos niveles de compresion, lo que facilita estudiar el impacto de la cuantizacion en la calidad del razonamiento.
-- Despliegue en servidores sin GPU dedicada de gran capacidad: las variantes Q2_K (10,7 GB) y IQ3_XXS (11,4 GB) permiten inferencia en CPU o GPUs modestas, a costa de cierta perdida de calidad.
-- Investigacion sobre control de esfuerzo en modelos de razonamiento: el mecanismo effort-control permite estudiar el equilibrio entre precision y coste computacional en tareas de inferencia.
+- Razonamiento matemático y lógico en local: el ajuste con GRPO está orientado a problemas que requieren pasos intermedios; puede desplegarse con llama.cpp en una estación de trabajo para resolver problemas de matemáticas o lógica sin depender de la nube.
+- Asistente de análisis técnico en inglés: gracias a su ventana de contexto (no documentada) y a su capacidad de razonamiento, puede emplearse para revisar documentación técnica o código en inglés y producir explicaciones paso a paso.
+- Prototipado de investigación en razonamiento: al ser un modelo abierto con licencia permisiva, sirve para experimentar con técnicas de control de esfuerzo y comparar la calidad del razonamiento según el nivel de cuantización.
+- Despliegue en hardware de consumo: las cuantizaciones IQ2/IQ3 (9-13 GB) permiten ejecutar el modelo en GPUs de 12-16 GB, útil para desarrolladores que quieren un modelo de razonamiento local sin infraestructura dedicada.
+- Evaluación de cuantizaciones: el repositorio ofrece una escala completa de cuantizaciones con imatrix, lo que facilita estudios comparativos de degradación de calidad frente a tamaño.
+- Procesamiento de imágenes con el repositorio estático: usando los ficheros mmproj del repositorio hermano, puede emplearse para tareas de descripción o análisis de imágenes en inglés.
+- Generación de documentación o resúmenes técnicos: para flujos de trabajo en inglés donde se requiera un modelo local con razonamiento moderado y sin coste de API.
 
 ## Benchmarks y rendimiento
 
@@ -54,46 +53,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, segun tamano del archivo GGUF mas overhead de contexto):
-  - i1-Q2_K (10,7 GB): ~12 GB de VRAM.
-  - i1-IQ3_XXS (11,4 GB): ~13 GB de VRAM.
-  - i1-IQ3_M (12,5 GB): ~14 GB de VRAM.
-  - i1-Q3_K_M (13,4 GB): ~15 GB de VRAM.
-  - i1-Q4_K_S (15,6 GB): ~17 GB de VRAM.
-  - i1-Q4_K_M (16,9 GB): ~18-19 GB de VRAM.
-- GPU recomendadas: RTX 4090 (24 GB) para las variantes Q4; RTX 3090 (24 GB) equivalente; A100 o H100 para despliegues de mayor throughput o contexto largo.
-- GPUs de consumo compatibles: RTX 4090 y 3090 con Q4_K_M; RTX 4080 (16 GB) con IQ3_M o Q3_K_M; GPUs de 12 GB con IQ3_XXS o Q2_K.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; los tags indican compatibilidad con endpoints.
-- Latencia y throughput: no disponible en la informacion proporcionada.
+- VRAM estimada para inferencia según cuantización: IQ1_S ~8,4 GB; IQ2_M ~10,5 GB; IQ3_M ~12,5 GB; IQ4_XS ~14,0 GB; Q4_K_M ~16,9 GB; Q5_K_M ~19,2 GB; Q6_K ~22,7 GB. Añadir margen para el contexto KV cache (típicamente 1-4 GB adicionales según longitud de contexto).
+- GPU recomendadas: RTX 4090 (24 GB) para Q5_K_M o Q6_K; RTX 4080/4070 Ti (16 GB) para Q4_K_M; RTX 3060 12 GB o RTX 4070 (12 GB) para IQ3_M o IQ3_S; GPUs de 8-10 GB solo con IQ1/IQ2 (calidad muy degradada).
+- Cabe en GPU de consumo: sí, en la mayoría de configuraciones con cuantizaciones IQ2 a Q4; las cuantizaciones Q5/Q6 requieren 24 GB o más.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa para este formato, por lo que se requeriría el modelo base en safetensors.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| ThinkingBomb-gemma-4-26B-A4B-i1-GGUF | 25.233.142.046 | no disponible | apache-2.0 | GGUF | Razonamiento con GRPO y effort-control, vision |
-| ThinkingBomb-gemma-4-26B-A4B (base) | 25.233.142.046 | no disponible | apache-2.0 | safetensors | Modelo original sin cuantizar |
-| ThinkingBomb-gemma-4-26B-A4B-GGUF (estatico) | 25.233.142.046 | no disponible | apache-2.0 | GGUF | Cuantizaciones estaticas del mismo autor, incluye mmproj |
+| ThinkingBomb-gemma-4-26B-A4B-i1-GGUF | 25,2 B | no disponible | apache-2.0 | GGUF | Ajuste de razonamiento sobre Gemma 4; solo inglés |
+| Modelo base (krystofmitka/ThinkingBomb-gemma-4-26B-A4B) | 25,2 B | no disponible | apache-2.0 | safetensors | Mismo modelo sin cuantizar; referencia de calidad |
+| Versión estática (mradermacher/ThinkingBomb-gemma-4-26B-A4B-GGUF) | 25,2 B | no disponible | apache-2.0 | GGUF | Cuantizaciones sin imatrix; incluye mmproj de visión |
 
-No se dispone de informacion sobre modelos alternativos de la misma categoria con datos verificables de rendimiento en la informacion proporcionada.
+No se dispone de información sobre otros modelos comparables de la misma categoría (razonamiento de ~25 B) en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo solo declara soporte para ingles; el rendimiento en castellano no esta garantizado.
-- La licencia se declara como apache-2.0, pero la model card enlaza a la licencia de Gemma 4 de Google, lo que puede imponer restricciones adicionales al uso comercial. Verificar antes de desplegar en produccion.
-- Las cuantizaciones agresivas (Q2_K, IQ3_XXS) pueden degradar la calidad de las cadenas de razonamiento, que son especialmente sensibles a errores de cuantizacion.
-- No hay datos publicados de benchmarks que permitan validar el rendimiento real del ajuste fino frente al modelo base.
-- Riesgo de alucinacion inherente a los modelos de razonamiento; el modo de pensamiento no garantiza correccion factual.
-- La ausencia de informacion sobre el dataset de entrenamiento impide evaluar sesgos potenciales.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la ficha, por lo que no hay evidencia de validacion por parte de la comunidad.
-- El tamano del repositorio (80 GB) refleja el conjunto completo de cuantizaciones; cada archivo individual debe descargarse por separado.
+- El modelo declara únicamente inglés como idioma soportado; el rendimiento en castellano u otros idiomas no está garantizado.
+- Las cuantizaciones IQ1 e IQ2 degradan notablemente la calidad; el propio autor las describe como "for the desperate" o "mostly desperate".
+- Riesgo de alucinación inherente a los modelos de razonamiento; no se documentan evaluaciones de fiabilidad.
+- La licencia declarada es Apache 2.0, pero el enlace apunta a los términos de Gemma 4 de Google, que pueden imponer restricciones adicionales al uso comercial; es imprescindible revisar dichos términos.
+- No hay información sobre sesgos conocidos ni sobre el dataset de entrenamiento, lo que dificulta evaluar riesgos.
+- La ausencia de datos sobre longitud de contexto impide planificar despliegues con ventanas largas.
+- El sufijo "A4B" sugiere una arquitectura MoE, pero no está confirmado; no asumir parámetros activos de 4 B sin verificación.
+- Los ficheros mmproj para visión no están en este repositorio; para uso multimodal hay que acudir al repositorio estático.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/ThinkingBomb-gemma-4-26B-A4B-i1-GGUF
 - Modelo base: https://huggingface.co/krystofmitka/ThinkingBomb-gemma-4-26B-A4B
-- Cuantizaciones estaticas: https://huggingface.co/mradermacher/ThinkingBomb-gemma-4-26B-A4B-GGUF
-- Pagina de descargas del autor: https://hf.tst.eu/model#ThinkingBomb-gemma-4-26B-A4B-i1-GGUF
+- Cuantizaciones estáticas (incluye mmproj): https://huggingface.co/mradermacher/ThinkingBomb-gemma-4-26B-A4B-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#ThinkingBomb-gemma-4-26B-A4B-i1-GGUF
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
-- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

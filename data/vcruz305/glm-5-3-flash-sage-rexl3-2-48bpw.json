@@ -49,16 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "vcruz305/GLM-5.3-Flash-SAGE-REXL3-2.48bpw · Hugging Face",
-      "url": "https://huggingface.co/vcruz305/GLM-5.3-Flash-SAGE-REXL3-2.48bpw",
-      "snippet": "GLM-5.3-Flash is Z.ai's natively multimodal model: 320B total parameters, ~18B active, hybrid sparse + linear attention with manifold-constrained hyper-connections."
-    },
-    {
-      "title": "vcruz305/RED-SNOW-5.3-FLASH-EXL3-SAGE-2.49bpw · Hugging Face",
-      "url": "https://huggingface.co/vcruz305/RED-SNOW-5.3-FLASH-EXL3-SAGE-2.49bpw",
-      "snippet": "GLM-5.3-Flash architecture and BF16 RED-SNOW conversion source from Blackfrost-AI. SAGE MixedK EXL3 conversion from that BF16 source; this conversion adds no training stage."
-    }
-  ]
+  "sources": []
 }

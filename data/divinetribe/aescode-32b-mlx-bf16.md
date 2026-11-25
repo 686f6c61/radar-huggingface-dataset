@@ -2,106 +2,106 @@
 
 ## Resumen
 
-AesCode-32B-MLX-bf16 es una conversion a formato MLX, en precision completa bfloat16, del modelo multimodal microsoft/AesCode-32B, publicada por el usuario divinetribe para ejecucion nativa en Apple Silicon. El modelo original lo desarrolla el equipo de AesCode en Microsoft y es un fine-tune de Qwen/Qwen3-VL-32B-Instruct bajo la clase `Qwen3VLForConditionalGeneration`: recibe una imagen de referencia (una captura de pantalla, un mockup, una foto de producto) junto con un prompt y genera artefactos visuales en HTML y CSS (presentaciones, posters, dashboards, paginas de producto). La conversion no altera pesos ni comportamiento: son los mismos 33.357.390.064 parametros re-troceados para cargarse con `mlx-vlm` sin PyTorch y sin nube.
+AesCode-32B-MLX-bf16 es una conversión a formato MLX en precisión completa (bfloat16) del modelo microsoft/AesCode-32B, un finetune de Qwen3-VL-32B-Instruct especializado en generar artefactos visuales (presentaciones, pósters, dashboards, páginas de producto) como HTML y CSS a partir de una instrucción y una imagen de referencia. La conversión la mantiene el usuario divinetribe y está pensada para ejecutarse de forma nativa en Apple Silicon mediante la librería mlx-vlm, sin PyTorch ni inferencia en la nube.
 
-La relevancia de esta publicacion es doble. Por un lado, preserva el tower de vision completo (351 tensores `vision_tower.*`), un fallo habitual en conversiones MLX de modelos vision-language que solo entienden la mitad textual y fallan en la primera imagen. Por otro, habilita inferencia local y privada de un modelo de 33,4B en bf16 sobre un Mac, algo que en CUDA exigiria una GPU de 80 GB o cuantizacion agresiva.
+El modelo conserva la torre de visión completa (351 tensores `vision_tower.*`) y los configs de visión y procesador, algo que no siempre ocurre en conversiones MLX de modelos multimodales. Con 33.357.390.064 parámetros (~33,4B) en bf16, ocupa aproximadamente 62 GB en disco y el repo completo pesa 66,7 GB. Es un modelo multimodal de tipo image-text-to-text: recibe una captura de pantalla o imagen de referencia y produce código HTML/CSS que replica o mejora el diseño.
 
-El modelo resuelve el problema design-to-code con calidad estetica: segun el paper de los autores (arXiv:2610.18860), obtiene 85,89 de puntuacion global en un benchmark de 300 muestras de infografias, frente a 61,10 del Qwen3-VL-32B base evaluado con la misma imagen de referencia. La longitud de contexto no se especifica en la informacion disponible.
+Su relevancia actual radica en dos factores: por un lado, ofrece una vía para ejecutar local y privadamente un modelo de generación de código visual de 32B en un Mac con chip de la serie M; por otro, el modelo base reporta resultados en el benchmark propio de AesCode (300 muestras de infografías) que superan a Qwen3-VL-32B base y se acercan a modelos frontera cerrados en calidad visual. La licencia es Apache 2.0 y el único idioma declarado es el inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer vision-language (`Qwen3VLForConditionalGeneration`), tower de vision + modelo de lenguaje |
-| Parametros totales | 33.357.390.064 (33,4B) |
-| Longitud de contexto | no disponible (la model card no lo especifica) |
-| Tipos de cuantizacion | bfloat16 sin cuantizacion; no se distribuyen variantes cuantizadas en este repositorio |
-| Idiomas soportados | en (ingles) |
+| Arquitectura | Transformer multimodal basada en Qwen3VLForConditionalGeneration (Qwen3-VL-32B-Instruct), con torre de visión y modelo de lenguaje |
+| Parametros totales | 33.357.390.064 (~33,4B) |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | bf16 (esta build); la familia incluye variantes MLX 8-bit y 4-bit |
+| Idiomas soportados | en (inglés) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors en formato MLX (re-troceado desde PyTorch); ~62 GB en disco, repositorio de 66,7 GB |
-| Framework de inferencia | `mlx-vlm` sobre Apple Silicon |
-| Modelo base | microsoft/AesCode-32B (fine-tune de Qwen/Qwen3-VL-32B-Instruct) |
-| Relacion con el base | finetune; esta publicacion es solo una conversion de formato, no un entrenamiento adicional |
+| Formato de pesos | safetensors en formato MLX (librería mlx) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de Qwen3-VL: un transformer multimodal con un tower de vision que codifica la imagen de referencia y un modelo de lenguaje que genera la secuencia HTML/CSS condicionada por ese contexto visual. El modelo es denso (no hay indicios de Mixture-of-Experts en la informacion disponible) y tiene 33,4B parametros en bf16. La conversion de divinetribe mantiene intactos los 351 tensores del tower de vision, ademas de `vision_config` y las configuraciones del procesador, de modo que la ruta multimodal funciona igual que en el modelo original.
+El modelo es un finetune de Qwen3-VL-32B-Instruct, que a su vez es un transformer multimodal con torre de visión y modelo de lenguaje, empaquetado bajo la clase `Qwen3VLForConditionalGeneration`. La build aquí descrita no modifica el comportamiento del modelo: son los mismos pesos bf16 de 33,4B reempaquetados en formato MLX, conservando los 351 tensores de la torre de visión y los configs de visión y procesador. La ejecución se realiza con mlx-vlm sobre Apple Silicon.
 
-Sobre el entrenamiento: el modelo lo produjo el equipo de AesCode en Microsoft y el paper asociado se titula "AesCode: Aesthetic Code Generation with Decoupled Cross-Modal Rewards", lo que indica un entrenamiento guiado por recompensas multimodales desacopladas orientadas a calidad estetica y cumplimiento de reglas. El numero de tokens de entrenamiento, la composicion exacta del dataset y si hubo RLHF/DPO no estan disponibles en la informacion proporcionada. Esta publicacion concreta no anade conocimiento ni modifica el comportamiento: solo reempaqueta los pesos.
+El entrenamiento original de AesCode-32B se describe en el paper "AesCode: Aesthetic Code Generation with Decoupled Cross-Modal Rewards" (arXiv:2610.18860), que propone un esquema de recompensas cross-modales desacopladas para generar código estético. No se dispone en la información proporcionada del número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO. La innovación destacable del modelo base es su enfoque de recompensas desacopladas orientado a la calidad visual del código generado, evaluado con un benchmark propio de 300 muestras de infografías.
 
 ## Capacidades
 
-- Generacion de codigo HTML y CSS a partir de una imagen de referencia: convierte capturas, mockups y fotos de producto en artefactos renderizables (slides, posters, dashboards, paginas de producto).
-- Comprension de interfaces: identifica elementos de una captura (breadcrumbs, H1, precio, valoracion por estrellas, botones CTA, notas de precio secundarias) y los describe o los reproduce.
-- Auditoria visual: genera informes de SEO, marketing/conversion y accesibilidad a partir de una captura de pagina, incluida la propuesta de textos alternativos para imagenes.
-- Generacion de alt-text para imagenes de producto.
-- Razonamiento multimodal multi-paso sobre el contenido de la imagen (lectura de texto incrustado, jerarquia visual, relaciones entre elementos).
-- Capacidad conversacional multi-turno (`pipeline_tag: image-text-to-text`).
-- Ejecucion local y privada: sin claves de API, sin telemetria y sin salida a la nube en el flujo documentado.
-- No documentado en la informacion disponible: soporte explicito de tool calling o function calling, modo thinking, audio, y capacidades de agente autonomo.
+- Generación de código HTML y CSS a partir de una imagen de referencia o captura de pantalla (image-to-code).
+- Generación de artefactos visuales ricos en información: presentaciones, pósters, dashboards y páginas de producto.
+- Comprensión de imágenes y razonamiento visual: auditorías de páginas web (SEO, marketing, accesibilidad) y generación de textos alternativos para imágenes.
+- Generación de texto y conversación multi-turno (pipeline image-text-to-text, tag conversational).
+- Capacidades heredadas del backbone Qwen3-VL-32B-Instruct (razonamiento general y visión), si bien el finetune está orientado a código visual.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- Ejecución local y offline en Apple Silicon, sin telemetría ni claves de API.
 
 ## Casos de uso
 
-- Recreacion de capturas en HTML/CSS: se introduce un screenshot y el modelo devuelve un unico fichero HTML con CSS inline. Es el flujo documentado oficialmente (`--prompt "Recreate this screenshot as a single HTML file with inline CSS."`) y el caso de uso principal del modelo.
-- Design-to-code en equipos de marketing: a partir de la imagen de una pagina de producto o de un mockup, generar el maquetado base que luego se refina a mano, reduciendo el tiempo de prototipado de landings y fichas de producto.
-- Auditoria SEO y de conversion sobre capturas: el modelo lee la pagina y emite recomendaciones sobre title tag, meta description, datos estructurados de producto/review/offer, jerarquia visual del CTA y elementos enterrados en el layout. Util para revisiones rapidas sin acceso al DOM.
-- Accesibilidad de catalogos de e-commerce: generar textos alternativos descriptivos para cada imagen de producto a partir de la propia imagen, cubriendo el requisito de alt-text en catalogos grandes.
-- Generacion de dashboards e infografias: producir el HTML/CSS de un panel o infografia a partir de una referencia visual, aprovechando el entrenamiento especifico en artefactos con calidad estetica.
-- Prototipado offline en entornos con datos sensibles: procesar capturas de paneles internos, backoffice o material no publico en un Mac local, sin enviar imagenes a servicios en la nube.
-- Migracion de interfaces legacy: capturar una UI antigua y regenerar su estructura en HTML/CSS moderno como punto de partida de una migracion.
+- Recreación de capturas de pantalla como HTML/CSS: se introduce una screenshot y una instrucción del tipo "recreate this screenshot as a single HTML file with inline CSS"; el modelo devuelve un único fichero HTML con estilos embebidos, útil para prototipado rápido de interfaces.
+- Generación de páginas de producto: a partir de una imagen de referencia, el modelo produce el HTML/CSS de una página de producto con jerarquía visual, precios y llamadas a la acción, adecuado para equipos de e-commerce que iteran diseños.
+- Creación de dashboards e infografías: el modelo genera maquetaciones con estructura de datos visual, aprovechando su entrenamiento específico en artefactos visuales ricos en información.
+- Auditoría de accesibilidad y SEO asistida por visión: se le pasa una captura de una página real y devuelve análisis de metadatos, estructura de encabezados, breadcrumbs y textos alternativos para imágenes, como se documenta en la prueba con ineedhemp.com.
+- Generación de alt-text y descripciones de imágenes: dado que conserva la torre de visión, puede describir imágenes de producto y generar textos alternativos utilizables en producción.
+- Asistencia de código en local dentro de Claude Code: la model card indica que puede ejecutarse dentro de Claude Code Local en un Mac propio, de forma gratuita, privada y offline, para tareas de generación de código sin enviar datos a la nube.
+- Prototipado de pósters y material de marketing: conversión de una referencia visual en maquetación HTML lista para renderizar o exportar.
 
 ## Benchmarks y rendimiento
 
-Los datos proceden del paper de los autores (arXiv:2610.18860) y de la model card del modelo original: 300 muestras de estilo infografia, puntuadas en correccion de seguimiento de reglas y calidad visual. No existe un leaderboard publico independiente que liste AesCode.
+Los datos provienen del paper de AesCode y de la model card del modelo base (benchmark propio de 300 muestras de infografías, con puntuación de seguimiento de reglas y calidad visual). No existe un leaderboard público independiente que liste AesCode.
 
-| Modelo | Overall | Visual | Condicion |
-|---|---|---|---|
-| AesCode-32B | 85,89 | 77,44 | con imagen de referencia |
-| Claude Opus 4.8 | 76,78 | no disponible | sin imagen de referencia |
-| GPT-5.5 | 76,31 | no disponible | sin imagen de referencia |
-| Qwen3-VL-32B base | 61,10 | no disponible | con imagen de referencia |
+| Modelo (con imagen de referencia) | Overall | Visual |
+|---|---|---|
+| AesCode-32B | 85,89 | 77,44 |
+| Claude Opus 4.8 (sin referencia) | 76,78 | no disponible |
+| GPT-5.5 (sin referencia) | 76,31 | no disponible |
+| Qwen3-VL-32B base (con referencia) | 61,10 | no disponible |
 
-AesCode-32B supera al Qwen3-VL-32B del mismo orden de magnitud en 22,4 puntos de calidad visual. Nota metodologica: las filas de modelos cerrados corresponden a evaluaciones sin imagen de referencia, por lo que la comparacion no es simetrica respecto a las filas de AesCode y Qwen3-VL. Los benchmarks generales de vision del backbone deben consultarse en la evaluacion oficial de Qwen3-VL, no en estos numeros. Para esta conversion MLX en concreto no se han publicado mediciones propias de latencia o throughput.
+Según la model card, AesCode-32B mejora en 22,4 puntos la calidad visual respecto al baseline Qwen3-VL-32B de la misma escala. Para benchmarks generales de visión del backbone, la model card remite a las evaluaciones oficiales de Qwen3-VL, que no corresponden a AesCode. No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- Memoria: los pesos bf16 suman 33.357.390.064 × 2 bytes ≈ 66,7 GB. A eso hay que anadir KV cache y activaciones, por lo que se necesita un Mac con memoria unificada claramente superior a 66,7 GB; en la practica, configuraciones de 96 GB o mas (estimacion derivada del tamano de pesos, no publicada por el autor).
-- Almacenamiento: ~62 GB en disco para los pesos; 66,7 GB de descarga del repositorio.
-- GPU: este build esta atado a Apple Silicon (M-series) mediante MLX. No se ejecuta en CUDA, por lo que A100/H100 no son una opcion para estos pesos concretos, y no cabe en GPUs de consumo tipo RTX 4090 (24 GB) ni en A100 de 40 GB.
-- Cabe en consumer GPU: no, en ningun caso en bf16 con este formato. Cualquier ejecucion en GPU NVIDIA requeriria cuantizacion y otro runtime, no documentado en la informacion disponible.
-- Despliegue: `mlx-vlm` (instalacion con `pip install mlx-vlm` y ejecucion via `python -m mlx_vlm.generate`). No se documenta soporte para vLLM, TGI, llama.cpp ni Ollama en este repositorio.
+- VRAM/espacio en disco: la build bf16 ocupa aproximadamente 62 GB en disco; el repo completo pesa 66,7 GB. Para inferencia en memoria unificada se requiere un Mac con al menos esa cantidad disponible; las variantes 8-bit y 4-bit reducen el requisito a aproximadamente la mitad y un cuarto, respectivamente.
+- GPU recomendadas: Apple Silicon de la serie M (M-series) con memoria unificada suficiente; no está pensado para GPUs NVIDIA.
+- ¿Cabe en consumer GPU? No en el sentido habitual (GPU dedicada con VRAM limitada); sí en Macs de gama alta con memoria unificada amplia. Para máquinas más pequeñas, la model card recomienda las variantes 8-bit o 4-bit.
+- Opciones de despliegue: mlx-vlm sobre Apple Silicon (comando `python -m mlx_vlm.generate`); no se mencionan vLLM, llama.cpp, Ollama ni TGI en la información disponible.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / runtime | Licencia | Overall en el benchmark de AesCode | Disponibilidad |
-|---|---|---|---|---|---|---|
-| AesCode-32B-MLX-bf16 (esta publicacion) | 33,4B | no disponible | safetensors MLX / mlx-vlm | apache-2.0 | 85,89 (mismos pesos) | Hugging Face, 0 descargas, 0 likes |
-| microsoft/AesCode-32B | 33,4B | no disponible | safetensors (PyTorch) | apache-2.0 | 85,89 | Hugging Face |
-| Qwen3-VL-32B-Instruct | 32B (segun denominacion; no confirmado) | no disponible | no disponible | no disponible | 61,10 (con referencia) | Hugging Face |
-| Claude Opus 4.8 | no disponible | no disponible | API propietaria | propietaria | 76,78 (sin referencia) | API comercial |
-| GPT-5.5 | no disponible | no disponible | API propietaria | propietaria | 76,31 (sin referencia) | API comercial |
+| Modelo | Parámetros | Contexto | Rendimiento (benchmark AesCode, Overall) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| AesCode-32B-MLX-bf16 | 33,4B | no disponible | 85,89 (modelo base) | Apache 2.0 | Hugging Face (MLX, bf16/8-bit/4-bit) |
+| Qwen3-VL-32B-Instruct (base) | ~32B | no disponible | 61,10 (con referencia) | no disponible en la información | Hugging Face |
+| Claude Opus 4.8 | no disponible | no disponible | 76,78 (sin referencia) | propietaria | API cerrada |
+| GPT-5.5 | no disponible | no disponible | 76,31 (sin referencia) | propietaria | API cerrada |
 
-La ventaja diferencial de esta publicacion frente a microsoft/AesCode-32B no es de rendimiento, sino de portabilidad: mismos pesos, mismo resultado, pero ejecutables en local sobre Apple Silicon sin PyTorch.
+La comparación debe tomarse con cautela: las puntuaciones de los modelos cerrados se obtuvieron sin imagen de referencia, mientras que AesCode y Qwen3-VL base se evaluaron con referencia, según la model card.
 
 ## Limitaciones y advertencias
 
-- Solo ingles: la model card declara `language: en`; no hay soporte multilingue documentado, incluido el castellano.
-- Plataforma unica: MLX sobre Apple Silicon. No hay ruta de despliegue documentada en CUDA, CPU x86, vLLM, TGI, llama.cpp ni Ollama para estos pesos.
-- Coste de memoria muy alto: 66,7 GB solo en pesos bf16, sin variantes cuantizadas en el repositorio. No apto para equipos de consumo convencionales.
-- Es una conversion, no un modelo nuevo: no anade conocimiento ni corrige errores. Hereda todos los sesgos y fallos del modelo original, incluido el riesgo de alucinacion en el codigo HTML/CSS generado, que no se ejecuta ni se valida antes de devolverse.
-- Benchmark de parte: los 85,89 puntos provienen de los propios autores, sobre 300 muestras de infografias, sin leaderboard independiente. Ademas, la comparacion con modelos cerrados es asimetrica (AesCode usa imagen de referencia; Claude Opus 4.8 y GPT-5.5 no).
-- Validacion visual limitada: la comprobacion del tower de vision descrita en la model card se basa en una unica captura de una pagina de producto real, no en una suite de evaluacion publicada.
-- Licencia apache-2.0: permite uso comercial y modificacion, pero se distribuye sin garantias; la responsabilidad sobre el resultado recae en quien lo despliega.
-- Madurez nula de la comunidad: 0 descargas y 0 likes en el momento de la consulta, publicacion reciente sin verificacion independiente por terceros.
-- Riesgo de deriva en el formato de salida: al pedir HTML/CSS de un solo fichero, salidas largas pueden truncarse si se fija un `--max-tokens` bajo (la model card usa 1200 en su ejemplo).
+- El único idioma declarado es el inglés; el rendimiento en castellano u otros idiomas no está documentado.
+- La longitud de contexto no se especifica en la información disponible, lo que impide planificar casos de uso con prompts o imágenes múltiples de forma fiable.
+- Riesgo de alucinación en la lectura de imágenes y en la generación de código: la auditoría de ejemplo podría contener inferencias no verificadas sobre la página.
+- El benchmark reportado es propio del autor del modelo base (300 muestras de infografías) y no ha sido validado por un leaderboard independiente.
+- No hay datos publicados sobre sesgos, tool calling, razonamiento multi-paso ni rendimiento en código general más allá de HTML/CSS.
+- La build MLX está atada al ecosistema Apple Silicon y a mlx-vlm; no es directamente portable a CUDA sin reconversión.
+- Aunque la licencia es Apache 2.0, conviene verificar las condiciones del modelo base (microsoft/AesCode-32B) y del backbone Qwen3-VL para uso comercial en producción.
+- El modelo está orientado a generación de código visual; su uso como modelo generalista de código o de texto puede dar resultados inferiores a alternativas específicas.
 
 ## Enlaces
 
-- Hugging Face (esta conversion): https://huggingface.co/divinetribe/AesCode-32B-MLX-bf16
-- Modelo original: https://huggingface.co/microsoft/AesCode-32B
-- Modelo base del fine-tune: https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct
-- Paper "AesCode: Aesthetic Code Generation with Decoupled Cross-Modal Rewards": https://arxiv.org/abs/2610.18860
-- Repositorio mlx-vlm: https://github.com/Blaizzy/mlx-vlm
-- Perfil del autor de la conversion: https://huggingface.co/divinetribe
-- Pagina del autor con mas modelos: https://nicedreamzwholesale.com/software/huggingface/
+- Hugging Face (esta build): https://huggingface.co/divinetribe/AesCode-32B-MLX-bf16
+- Variante 8-bit: https://huggingface.co/divinetribe/AesCode-32B-MLX-8bit
+- Variante 4-bit: https://huggingface.co/divinetribe/AesCode-32B-MLX-4bit
+- Variante abliterated: https://huggingface.co/divinetribe/AesCode-32B-abliterated-MLX-bf16
+- Modelo base: https://huggingface.co/microsoft/AesCode-32B
+- Backbone: https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct
+- Paper: https://arxiv.org/abs/2610.18860
+- mlx-vlm: https://github.com/Blaizzy/mlx-vlm
+- Claude Code Local: https://github.com/nicedreamzapp/claude-code-local
+- Perfil del autor en GitHub: https://github.com/nicedreamzapp
+- Perfil del autor en Hugging Face: https://huggingface.co/divinetribe

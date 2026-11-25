@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Graft-VL-4B-GGUF",
+  "slug": "mradermacher-graft-vl-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Graft-VL-4B-GGUF",
+  "created_at": "2026-11-24T23:44:52.000Z",
+  "updated_at": "2026-11-24T23:45:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 415347712,
+  "parameters_human": "415.3M",
+  "storage_bytes": 1290156032,
+  "storage_human": "1.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

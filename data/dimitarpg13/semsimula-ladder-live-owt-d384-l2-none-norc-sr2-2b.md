@@ -2,104 +2,102 @@
 
 ## Resumen
 
-`semsimula-ladder-live-owt-d384-l2-none-norc-sr2-2b` es un modelo de lenguaje de investigación desarrollado por el usuario `dimitarpg13` dentro del proyecto SemSimula, una línea experimental que explora modelos de lenguaje conservativos basados en mecánica lagrangiana y potenciales escalares en lugar de la atención transformer convencional. Este checkpoint concreto (SR2-2B) es la versión del modelo SR2 entrenada con cuatro veces más tokens: 2,13 mil millones de tokens de OpenWebText frente a los 0,53 mil millones del SR2 original, manteniendo idéntica arquitectura y configuración.
+SR2-2B es un modelo de lenguaje de investigación desarrollado por dimitarpg13 que explora una arquitectura radicalmente distinta a los transformers convencionales: un modelo de lenguaje "conservativo" basado en mecánica lagrangiana y potenciales escalares, sin mecanismo de atención. Forma parte de la familia semsimula, un estudio escalonado (ladder study) con hipótesis pre-registradas que compara ablaciones de mecanismos bajo presupuestos de tokens igualados. Esta versión concreta (SR2-2B) es la variante conservativa pura entrenada con 2,13 mil millones de tokens sobre OpenWebText, cuatro veces más que su predecesora SR2 de 0,53B.
 
-El modelo resuelve un problema de investigación concreto: medir si el núcleo conservativo (sin atención) escala con datos de forma comparable a un transformer de referencia. El resultado declarado es que SR2-2B alcanza una perplejidad de validación de 48,58 en OpenWebText (bloque 512), mejorando un 16,7% respecto a SR2 a 0,53B, aunque queda un 13,8% por encima del GPT-2 emparejado en presupuesto de tokens (42,69). Es relevante ahora porque documenta de forma pre-registrada el comportamiento de un paradigma no-transformer, sin atención y con memoria constante en inferencia, bajo un protocolo de ablación por escalones ("ladder study").
+El modelo tiene 76,57 millones de parámetros (35,43 millones en el banco de potenciales Vθ de ocho pozos) y una dimensión oculta de 384 con dos capas. Su innovación central es integrar los modos rígidos como osciladores amortiguados exactos mediante integradores simplécticos (BAOAB, cFC) sobre una geometría riemanniana con métrica de Jacobi, lo que permite inferencia con memoria constante y sin atención. El resultado principal es que el núcleo conservativo se acerca a un GPT-2 emparejado en presupuesto de tokens: la perplejidad de validación baja a 48,58 frente a 42,69 del GPT-2 equivalente, estrechando la brecha del 20,6% al 13,8%.
 
-El modelo tiene 76.572.110 parámetros, dos capas y está entrenado exclusivamente en inglés. No es un modelo de producción: es un artefacto de investigación con hipótesis pre-registradas, resultados de ablación y trazabilidad de sesiones de entrenamiento.
+Es relevante ahora porque documenta un hallazgo negativo controlado: al entrenar más tokens, el paso de capa del modelo deja de aproximar un flujo continuo (se aleja 0,92 nats frente a 0,10 nats a 0,53B), lo que sugiere que el entrenamiento prolongado acopla el paso discreto a su tamaño. Es un experimento de ciencia abierta con predicciones pre-registradas, útil para investigadores que estudian alternativas a la atención y modelos basados en energía.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No-transformer, sin atención; modelo de lenguaje conservativo con potencial escalar (banco Vθ de ocho pozos), integrador exacto de osciladores amortiguados, geometría riemanniana (métrica de Jacobi), espacio de Fock |
+| Arquitectura | Modelo de lenguaje conservativo (energy-based, lagrangiano), no-transformer, sin atención; integrador simpléctico exacto (BAOAB/cFC) sobre potencial escalar anisotrópico gaussiano |
 | Parametros totales | 76.572.110 (35.427.080 en el banco Vθ de ocho pozos) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (entrenado y evaluado con bloques de 512 tokens) |
+| Longitud de contexto | no disponible (entrenado con bloques de 512 tokens) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | inglés (`en`) |
-| Licencia | CC-BY-4.0 |
-| Formato de pesos | no disponible (librería `pytorch`, repo de 1,2 GB) |
+| Idiomas soportados | en (inglés) |
+| Licencia | cc-by-4.0 |
+| Formato de pesos | pytorch (checkpoint PyTorch; no se indica safetensors ni GGUF) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es explícitamente no-transformer y sin atención. El modelo se describe como un "conservative language model" basado en un potencial escalar Vθ con un banco de ocho pozos, integrado mediante un integrador exacto de osciladores amortiguados para los modos rígidos, con formulación de mecánica lagrangiana, geometría riemanniana (geodesicas riemannianas y métrica de Jacobi) y espacio de Fock. El tag `cfc` y `baoab` sugieren el uso de esquemas de integración tipo BAOAB para dinámica de Langevin. La inferencia se declara de memoria constante (`constant-memory-inference`), lo que es una propiedad estructural de esta familia frente al coste cuadrático de la atención.
+La arquitectura es un modelo de lenguaje conservativo que sustituye la atención por dinámica hamiltoniana/lagrangiana: un potencial escalar anisotrópico gaussiano con un banco de ocho pozos (Vθ) define un campo de fuerzas conservativo, y los modos rígidos se integran como osciladores amortiguados exactos mediante el integrador BAOAB con subpasos (cFC). El modelo opera sobre una geometría riemanniana con métrica de Jacobi y geodésicas riemannianas, lo que da lugar a una formulación en espacio de Fock (parFLM). La inferencia tiene memoria constante por construcción, al no requerir atención sobre el contexto.
 
-El entrenamiento se realizó sobre OpenWebText (`Skylion007/openwebtext`), con exactamente 2.129.920.000 tokens (130.000 pasos × 32 × 512, unos 28 tokens por parámetro), usando ventanas aleatorias con reemplazo de un pool de 2,0 mil millones de tokens (aproximadamente 1,07 pasadas). El schedule fue warm-up lineal hasta el paso 6.500, tasa de aprendizaje máxima de 1,2e-03 mantenida hasta el paso 84.500 y decaimiento coseno hasta 6e-05 en el paso 130.000. El entrenamiento se ejecutó en dos sesiones de Colab sobre una A100 de 80 GB, a aproximadamente 1,1 s por paso, con reanudación desde el autosave del paso 76.993 restaurando optimizador y sampler de batches. No se menciona RLHF ni DPO; el modelo es un LM autorregresivo entrenado con el objetivo estándar de modelado de lenguaje.
-
-La innovación metodológica destacable es el protocolo pre-registrado (RT3, DG1, DG2, OC1-OC3) con predicciones y probabilidades declaradas antes de observar resultados, y el hallazgo de que el paso por capa deja de ser una muestra cercana de un flujo continuo al entrenar más tiempo (0,92 nats de separación frente a 0,10 nats a 0,53B).
+El entrenamiento usó exactamente 2.129.920.000 tokens (130.000 pasos × 32 × 512), unas 28 tokens por parámetro, con ventanas aleatorias extraídas con reemplazo de un pool de 2,0B tokens de OpenWebText (aproximadamente 1,07 pasadas). El pool se reconstruyó desde el mismo flujo antes de esta ejecución y el archivo de validación es el original del ladder. Se ejecutó en dos sesiones de Colab sobre una A100 de 80 GB, a ~1,1 s por paso, con reanudación desde el autosave del paso 76.993 restaurando optimizador y sampler de batches. No se mencionan RLHF ni DPO; el entrenamiento es de modelado de lenguaje autorregresivo puro con integrador exacto y presupuesto de tokens igualado al del GPT-2 de referencia.
 
 ## Capacidades
 
 - Generación de texto autorregresiva en inglés (pipeline `text-generation`).
-- Modelado de lenguaje y evaluación de perplejidad sobre OpenWebText.
-- Inferencia con memoria constante, independiente de la longitud de secuencia (propiedad declarada de la arquitectura).
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes ni razonamiento multi-paso.
-- No se documenta capacidad multilingüe: solo inglés.
-- No se documenta visión, audio ni modo "thinking".
-- El modelo es un artefacto de investigación con hipótesis de ablación, no un asistente afinado por instrucciones.
+- Modelado de lenguaje y estimación de perplejidad sobre OpenWebText.
+- Inferencia con memoria constante (sin atención, sin caché KV de tamaño creciente).
+- Integración exacta de modos rígidos mediante osciladores amortiguados (BAOAB/cFC).
+- Formulación en espacio de Fock (parFLM) con potencial escalar conservativo.
+- No se documentan capacidades de tool calling, function calling, agentes, razonamiento multi-paso, matemáticas, código, visión ni audio.
+- Capacidad multilingüe: solo inglés.
+- No se documenta modo "thinking" ni capacidades especiales adicionales.
 
 ## Casos de uso
 
-- Investigación en arquitecturas alternativas al transformer: sirve como punto de comparación controlado (mismo dataset, mismo presupuesto de tokens, misma semilla de protocolo) frente a un GPT-2 emparejado para estudiar el escalado de modelos conservativos sin atención.
-- Estudio de eficiencia en memoria de inferencia: la propiedad de memoria constante permite analizar despliegues en entornos con RAM/VRAM limitada donde la longitud de contexto crece, aunque el modelo solo se haya validado a bloques de 512.
-- Reproducción de experimentos pre-registrados: el repositorio documenta predicciones, resultados y desviaciones (RT3, DG1, DG2, OC1-OC3), lo que lo hace útil para cursos y trabajos sobre metodología de investigación reproducible en ML.
-- Ablación de mecanismos internos: el banco de ocho pozos y las lecturas por capa (OC1-OC3) permiten estudiar qué componentes retienen relevancia al aumentar el presupuesto de entrenamiento.
-- Evaluación de perplejidad como referencia: útil como baseline no-transformer en benchmarks de modelado de lenguaje sobre OpenWebText con bloques de 512.
-- Docencia sobre modelos energy-based y mecánica lagrangiana aplicada a NLP: el modelo ilustra de forma concreta la formulación de potencial escalar, integradores exactos y geometría riemanniana en un LM funcional.
+- Investigación en alternativas a la atención: el modelo sirve como brazo de ablación controlado dentro del ladder semsimula para medir el efecto de sustituir atención por dinámica conservativa bajo presupuesto de tokens igualado.
+- Estudio de modelos basados en energía: permite analizar cómo un potencial escalar con ocho pozos y métrica de Jacobi modela distribuciones de texto, comparando perplejidad con un GPT-2 emparejado.
+- Experimentos de ciencia abierta con hipótesis pre-registradas: útil para replicar las llamadas RT3, DG1, DG2, OC1-OC3 y TL1/TL2 y evaluar la reproducibilidad de predicciones.
+- Inferencia con memoria constante en entornos restringidos: al no requerir caché KV creciente, es adecuado para estudiar despliegues donde la memoria por token es un cuello de botella, aunque su perplejidad es superior a la de un transformer pequeño.
+- Análisis de integradores simplécticos en generación de texto: permite medir el efecto del número de subpasos (k=8) y del tamaño de paso sobre la calidad del flujo por capa.
+- Docencia y divulgación sobre mecánica lagrangiana aplicada a aprendizaje automático: el modelo y sus notas companion documentan de forma explícita la construcción del potencial, el integrador y las métricas de salud del entrenamiento.
+- Referencia de escalado de datos: sirve para estudiar la ganancia por cuadruplicar tokens (−16,7% de perplejidad) frente a la de un GPT-2 emparejado (−11,7%).
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor (no verificados de forma independiente):
+Datos declarados por el autor (no verificados):
 
-| Modelo | Tokens | Perplejidad de validación (bloque 512) | Ratio frente a GPT-2 emparejado |
-|---|---:|---:|---:|
-| SR2-2B (este modelo) | 2,13B | 48,58 (media de las últimas tres evaluaciones: 48,36 / 49,19 / 48,21; mejor 47,56 en el paso 126.500; final 48,21) | 1,138× |
-| SR2 (mismo modelo a 0,53B) | 0,53B | 58,32 | 1,206× |
-| GPT-2 emparejado a 2B (G2B) | 2,13B | 42,69 | 1,000× |
-| GPT-2 emparejado a 0,53B (W2) | 0,53B | 48,37 | 1,000× |
+| Modelo | Tokens | Perplejidad de validación (bloque 512, asentada) | Relación con este modelo | Relación con GPT-2 emparejado |
+|---|---:|---:|---:|---:|
+| SR2-2B (este modelo) | 2,13B | 48,58 | — | 1,138× |
+| SR2 (mismo modelo a 0,53B) | 0,53B | 58,32 | −16,7% | 1,206× |
+| GPT-2 emparejado a 2B (G2B) | 2,13B | 42,69 | +13,8% | 1,000× |
+| GPT-2 emparejado a 0,53B (W2) | 0,53B | 48,37 | +0,4% | 1,000× |
 
-Lecturas adicionales declaradas: ganancia por datos de −16,7% frente a SR2 a 0,53B (frente al −11,7% del GPT-2 emparejado en el mismo salto de presupuesto); ganancia del decaimiento de 0,220 nats (SE 0,011), inferior a la del GPT-2 en 0,148 nats; separación del flujo por capa respecto al paso entrenado de 0,92 nats (frente a 0,10 nats a 0,53B). Salud del entrenamiento: 0 disparos de watchdog, 0 pasos omitidos, mayor subida entre evaluaciones de +0,066 nats (paso 51.500), norma global de gradiente superior a 1,0 en 355 de 1.593 pasos registrados en fase estable y en 448 de 910 pasos de decaimiento (máximo 15,0).
-
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de tareas en la información disponible.
+Detalle del resultado de SR2-2B: media de las tres últimas evaluaciones (48,36, 49,19, 48,21); mejor valor 47,56 en el paso 126.500; valor final 48,21. Perplejidad de validación sobre el archivo de validación de OpenWebText del propio ladder, por lo que es comparable con todos los modelos del ladder. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita. Con 76,57 M de parámetros, los pesos en fp32 ocupan aproximadamente 306 MB, en fp16 unos 153 MB y en int8 unos 77 MB; el repo completo pesa 1,2 GB, probablemente por checkpoints y estados del optimizador.
-- GPU recomendadas: el autor entrenó en una A100 de 80 GB (dos sesiones de Colab), pero ese requisito corresponde al entrenamiento, no a la inferencia. Para inferencia, el tamaño de parámetros sugiere que cualquier GPU consumer moderna es suficiente.
-- Cabe en GPU consumer: sí, por tamaño de parámetros; no se especifica el soporte de kernels optimizados para esta arquitectura no-transformer.
-- Opciones de despliegue: la librería declarada es `pytorch`; no se documenta soporte de vLLM, llama.cpp, Ollama ni TGI, y al ser una arquitectura no-transformer es improbable que funcione sin código específico del autor.
-- Latencia y throughput: no disponibles. El dato de 1,1 s por paso corresponde al entrenamiento en A100, no a inferencia.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 76,57M parámetros en fp32 el checkpoint ocupa aproximadamente 3,1 GB (tamaño del repo), por lo que cabría en GPUs de consumo con 4-8 GB en fp32 y menos con cuantización, aunque no se documentan formatos cuantizados.
+- GPU recomendadas: el autor entrenó en A100 80 GB (dos sesiones de Colab); para inferencia no se especifican GPU recomendadas.
+- Cabe en GPU de consumo: previsiblemente sí por tamaño de parámetros, pero no se documenta soporte de llama.cpp, Ollama ni GGUF.
+- Opciones de despliegue: PyTorch (librería declarada); no se documenta soporte de vLLM, TGI, llama.cpp ni Ollama.
+- Latencia y throughput: ~1,1 s por paso de entrenamiento en A100 80 GB; no se documenta latencia ni throughput de inferencia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Perplejidad (OWT, bloque 512) | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Perplejidad (OWT val, bloque 512) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| SR2-2B (este modelo) | 76,57 M | no disponible (entrenado a 512) | 48,58 | CC-BY-4.0 | Hugging Face |
-| SR2 (0,53B tokens) | 76,57 M | no disponible (entrenado a 512) | 58,32 | CC-BY-4.0 | Hugging Face |
-| GPT-2 emparejado a 2B (G2B) | 33,7 M (8 capas) | 1.024 tokens (GPT-2 estándar) | 42,69 | no disponible en la información | Hugging Face (repo del autor) |
-| GPT-2 emparejado a 0,53B (W2) | 33,7 M (8 capas) | 1.024 tokens (GPT-2 estándar) | 48,37 | no disponible en la información | Hugging Face (repo del autor) |
+| SR2-2B (este modelo) | 76,57M | no disponible | 48,58 | cc-by-4.0 | Hugging Face |
+| SR2 (0,53B) | 76,57M | no disponible | 58,32 | cc-by-4.0 | Hugging Face |
+| GPT-2 emparejado a 2B (G2B) | 33,7M (8 capas) | no disponible | 42,69 | no disponible en la información | Hugging Face (repo del autor) |
+| GPT-2 emparejado a 0,53B (W2) | 33,7M (8 capas) | no disponible | 48,37 | no disponible en la información | Hugging Face (repo del autor) |
 
-La comparación es de orientación, no like-for-like: el autor advierte que las ratios no constituyen una afirmación de eficiencia equivalente, dado que GPT-2 tiene 33,7 M de parámetros y ocho capas frente a dos.
+Nota: las ratios de parámetros no constituyen una comparación de eficiencia equivalente, ya que GPT-2 tiene 33,7M parámetros y ocho capas frente a las dos de SR2-2B. No se dispone de comparación con otros modelos de la misma categoría fuera del ladder semsimula.
 
 ## Limitaciones y advertencias
 
-- Modelo de investigación: no está afinado por instrucciones ni por preferencias humanas (sin RLHF/DPO documentado); no debe usarse como asistente conversacional.
-- Solo inglés; no hay soporte multilingüe declarado.
-- Contexto validado únicamente a bloques de 512 tokens; no se documenta ventana de contexto mayor.
-- Riesgo de alucinación no medido: no se han publicado evaluaciones de factualidad ni de sesgos.
-- Licencia CC-BY-4.0: permite uso comercial con atribución, pero el modelo no está diseñado ni validado para producción.
-- Arquitectura no estándar: la integración con ecosistemas de despliegue (vLLM, TGI, llama.cpp) no está documentada y probablemente requiera código propio del autor.
-- Resultados de benchmarks declarados por el autor y marcados como no verificados (`verified: false`); deben tratarse como preliminares.
-- El propio autor reporta desviaciones de sus predicciones pre-registradas (RT3, DG1, OC1, OC2 falladas), lo que evidencia que el comportamiento del modelo no se ajusta a las intuiciones teóricas iniciales en varios puntos.
-- La norma de gradiente superó 1,0 en una fracción significativa de pasos (hasta 15,0), lo que sugiere inestabilidad numérica durante el entrenamiento.
+- Modelo de investigación: no está pensado para producción ni para uso comercial general, pese a la licencia CC-BY-4.0.
+- Solo inglés; no hay soporte multilingüe documentado.
+- Perplejidad superior a la de un GPT-2 emparejado (48,58 frente a 42,69), por lo que la calidad de generación es inferior en el mismo presupuesto de tokens.
+- El hallazgo de que el paso de capa se aleja 0,92 nats del flujo continuo (frente a 0,10 a 0,53B) indica que la interpretación como flujo continuo no se sostiene al entrenar más; caveat importante para quienes repliquen el método.
+- Riesgo de alucinación y sesgos: no documentados explícitamente, pero propios de un modelo entrenado solo con OpenWebText y sin RLHF/DPO.
+- Longitud de contexto no disponible; el entrenamiento usó bloques de 512 tokens, lo que limita el contexto efectivo.
+- Sin soporte documentado de tool calling, agentes ni cuantización; el despliegue práctico requiere PyTorch y trabajo de ingeniería adicional.
+- Resultados de benchmarks declarados por el autor y marcados como no verificados (`verified: false`); deben tratarse con cautela.
+- Inestabilidad del entrenamiento documentada: la norma global del gradiente superó 1,0 en 355 de 1.593 pasos de fase estable y 448 de 910 pasos de decaimiento (máximo 15,0).
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-sr2-2b
-- Modelo SR2 base (0,53B tokens): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-sr2
+- Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-sr2-2b
+- Modelo predecesor SR2 (0,53B): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-sr2
 - GPT-2 emparejado a 2B: https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-gpt2-matched-2b
-- Colección de modelos de 2B tokens: https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-2b-training-tokens-6ad56f3d2a560dd121e59b60
-- Colección Gen 3 (escalón de 0,53B tokens): https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-cfc-baoab-live-gradients-6abf371ea3c83f127057020c
-- Dataset OpenWebText: https://huggingface.co/datasets/Skylion007/openwebtext
+- Colección 2B tokens: https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-2b-training-tokens-6ad56f3d2a560dd121e59b60
+- Colección Gen 3 (ladder 0,53B): https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-cfc-baoab-live-gradients-6abf371ea3c83f127057020c
+- Notas companion (predicciones pre-registradas): https://github.com/dimitarpg13/semsimula-paper/blob/main/companion_notes/depth_ladder/Two_Billion_Token_Runs.md
+- Dataset: https://huggingface.co/datasets/Skylion007/openwebtext

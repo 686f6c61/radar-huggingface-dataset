@@ -2,49 +2,50 @@
 
 ## Resumen
 
-Qwen3.8-27B-SuperAdapter-i1-GGUF es una cuantización en formato GGUF del modelo Qwen3.8-27B-SuperAdapter, publicada por el usuario mradermacher, especializado en generar versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo base es un transformer denso de 27.320.697.856 parámetros (aproximadamente 27,3 mil millones), según los pesos en safetensors del repositorio original.
+Qwen3.8-27B-SuperAdapter-i1-GGUF es una cuantizacion del modelo OliviaRossi/Qwen3.8-27B-SuperAdapter, un modelo de lenguaje de 27.320.697.856 parametros (aproximadamente 27,3 mil millones) construido sobre la arquitectura Qwen3.5 y publicado bajo licencia Apache 2.0. El autor de la cuantizacion es mradermacher, un conocido creador de cuantizaciones GGUF que produce versiones con imatrix para reducir la perdida de calidad respecto a las cuantizaciones estaticas convencionales.
 
-La relevancia de esta publicación es fundamentalmente práctica: ofrece un conjunto amplio de cuantizaciones (desde IQ1_S hasta Q6_K, pasando por Q4_K_M, IQ4_XS o Q5_K_M) generadas con imatrix, lo que permite desplegar un modelo de 27B en hardware de consumo ajustando el equilibrio entre calidad y uso de memoria. El repositorio ocupa 40 GB en total, lo que refleja la suma de todas las variantes incluidas.
+El modelo original incorpora la etiqueta "lora-merge", lo que indica que se ha construido fusionando adaptadores LoRA sobre un modelo base de la familia Qwen3.5, y la etiqueta "agentic-coding" sugiere un enfoque de ajuste orientado a tareas de codigo con agentes. Segun la model card del cuantizador, se trata de un modelo de vision, por lo que los ficheros mmproj (proyector multimodal) estarian disponibles en el repositorio estatico complementario.
 
-No se dispone de información sobre la licencia, los idiomas soportados, el pipeline declarado ni la composición del entrenamiento del modelo base. La model card se limita a los metadatos de la cuantización (versión de quantize, tipo de conversión, lista de quants generados y referencia al modelo original de OliviaRossi).
+Este repositorio es relevante para desarrolladores que quieran ejecutar un modelo de 27B en hardware de consumo o en servidores modestos mediante llama.cpp u otros motores compatibles con GGUF, con opciones de cuantizacion que van desde 11,3 GB (i1-Q2_K) hasta 22,5 GB (i1-Q6_K). La licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (detalle no disponible) |
-| Parametros totales | 27.320.697.856 (~27,3B) |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | Transformer de la familia Qwen3.5 (tag `qwen3_5`); modelo multimodal (vision) segun la model card |
+| Parametros totales | 27.320.697.856 (27,3B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); safetensors en el modelo base |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K; fichero imatrix incluido |
+| Idiomas soportados | en (segun la model card del cuantizador) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); pesos originales en safetensors en el repositorio base |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo base Qwen3.8-27B-SuperAdapter más allá de su naturaleza transformer y su recuento de parámetros (27,3B). No se especifican el número de capas, la dimensión oculta, el mecanismo de atención, la longitud de contexto nativa ni si incorpora innovaciones como atención lineal o decodificación especulativa.
+El modelo subyacente pertenece a la familia Qwen3.5 (tags `qwen3_5` y `qwen3.8`), con 27,3 mil millones de parametros y estructura de transformer denso. La etiqueta `lora-merge` indica que el checkpoint publicado por OliviaRossi se obtuvo fusionando uno o varios adaptadores LoRA sobre un modelo base, probablemente con el objetivo de especializarlo en tareas de codigo agentico (`agentic-coding`). La model card del cuantizador menciona explicitamente que es un modelo de vision, lo que implica la existencia de un proyector multimodal (mmproj) que se distribuye por separado en el repositorio de cuantizaciones estaticas.
 
-Tampoco se documentan los datos de entrenamiento: no hay cifras de tokens, composición del dataset, ni confirmación de fases de RLHF, DPO o ajuste por preferencias. La única información técnica relevante procede de los metadatos de la cuantización: se ha usado `quantize_version: 2`, `output_tensor_quantised: 1`, conversión desde `hf` y generación de cuantizaciones ponderadas con imatrix (importancia matrix), una técnica que mejora la fidelidad de los quants de baja precisión al calibrar con estadísticas de activaciones.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de RLHF o DPO. Tampoco se documentan innovaciones tecnicas especificas como decodificacion especulativa o atencion lineal. La cuantizacion i1 de mradermacher utiliza ficheros imatrix generados a partir del modelo original para ponderar la cuantizacion por capas, lo que en la practica reduce la perplejidad frente a cuantizaciones estaticas del mismo tamano; el autor incluye una tabla comparativa de calidad por tipo de cuantizacion.
 
 ## Capacidades
 
-- Generación de texto conversacional: la etiqueta `conversational` del repositorio indica uso previsto para diálogo multi-turno.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el formato GGUF puede servirse mediante endpoints compatibles (por ejemplo, servidores de inferencia que aceptan GGUF).
-- Razonamiento y generación de código: no confirmado explícitamente en la información disponible; el nombre del modelo base sugiere linaje Qwen, pero no se documenta.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible (idiomas no declarados).
-- Capacidades especiales (thinking mode, visión, audio): no disponible.
+- Generacion de texto conversacional y razonamiento general, heredadas del modelo base Qwen3.5.
+- Especializacion en codigo agentico segun la etiqueta `agentic-coding`: generacion de codigo, edicion multi-paso y tareas de agente.
+- Capacidades de vision: la model card indica que es un modelo de vision y remite a los ficheros mmproj del repositorio estatico.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su despliegue detras de APIs compatibles con OpenAI.
+- Soporte de tool calling y function calling: no confirmado explicitamente en la informacion disponible, aunque el enfoque agentico del ajuste lo hace plausible.
+- Capacidades multilingues: la model card solo declara ingles (`en`); no se confirma soporte de castellano ni otros idiomas.
+- Modo thinking o razonamiento explicito: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Despliegue local en estación de trabajo con GPU de consumo: usar la cuantización Q4_K_M o IQ4_XS para ejecutar un modelo de 27B en una GPU con 24 GB de VRAM (RTX 3090/4090) mediante llama.cpp u Ollama, con calidad cercana al original y sin depender de la nube.
-- Servicio conversacional autoalojado: aprovechar la etiqueta `conversational` y las variantes Q5_K_M o Q6_K para montar un chatbot multi-turno en un servidor con GPU profesional, manteniendo la privacidad de los datos al no enviar prompts a terceros.
-- Experimentación e investigación en entornos con memoria limitada: las variantes IQ2_XXS, IQ1_S o Q2_K permiten probar el comportamiento de un modelo de 27B en máquinas con 8-12 GB de VRAM o incluso en CPU, a costa de degradación de calidad.
-- Evaluación comparativa de cuantizaciones: el amplio conjunto de quants (más de 20 variantes) permite medir la pérdida de calidad frente al modelo en safetensors en tareas concretas del usuario antes de fijar una configuración de producción.
-- Integración en pipelines de inferencia compatibles con GGUF: servir el modelo mediante endpoints compatibles para tareas de generación de texto por lotes, resúmenes o clasificación, ajustando el quant al presupuesto de latencia y memoria.
-- Prototipado offline en portátiles: con las variantes de menor tamaño (Q2_K_S, IQ2_M) es posible ejecutar el modelo en CPU con llama.cpp para pruebas de concepto sin GPU dedicada.
+- Asistencia a la programacion en local: con cuantizaciones i1-Q4_K_M (17,1 GB) el modelo cabe en una GPU de 24 GB y permite autocompletado, refactorizacion y explicacion de codigo sin depender de APIs externas, manteniendo el codigo en la maquina del desarrollador.
+- Agentes de codigo autonomos: el ajuste orientado a `agentic-coding` lo hace adecuado para pipelines que encadenan lectura de repositorio, edicion de ficheros y ejecucion de tests en bucle, siempre que el motor de inferencia soporte plantillas de herramientas.
+- Procesamiento de documentacion tecnica con imagenes: al ser un modelo de vision, puede extraer informacion de diagramas de arquitectura, capturas de pantalla de errores o tablas escaneadas, combinando el proyector mmproj con el modelo principal.
+- Despliegue en servidores sin GPU dedicada de gran capacidad: la cuantizacion i1-Q2_K (11,3 GB) permite ejecucion en CPU con llama.cpp o en GPUs de 12-16 GB, util para prototipos y entornos de desarrollo.
+- Generacion de codigo en produccion con vLLM o TGI: el repositorio base en safetensors y la compatibilidad con endpoints permiten servir el modelo detras de una API interna, con la ventaja de la licencia Apache 2.0 para uso comercial.
+- Fine-tuning posterior y experimentacion: al ser un merge de LoRA sobre Qwen3.5, sirve como punto de partida para nuevos adaptadores en dominios especificos, reutilizando el ecosistema de herramientas de la familia Qwen.
+- Evaluacion comparativa de cuantizaciones: el repositorio incluye 14 variantes GGUF y el fichero imatrix, lo que permite medir el impacto de la cuantizacion en tareas concretas antes de fijar una version para produccion.
 
 ## Benchmarks y rendimiento
 
@@ -52,40 +53,46 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, según tamaño del quant y overhead de contexto):
-  - IQ1_S / IQ1_M / IQ2_XXS / IQ2_XS: en torno a 6-9 GB.
-  - Q2_K / Q2_K_S / IQ2_M / IQ2_S: en torno a 9-11 GB.
-  - Q3_K_S / Q3_K_M / Q3_K_L / IQ3_XXS / IQ3_XS / IQ3_S / IQ3_M: en torno a 11-14 GB.
-  - Q4_0 / Q4_1 / Q4_K_S / Q4_K_M / IQ4_XS / small-IQ4_NL: en torno a 15-17 GB.
-  - Q5_K_S / Q5_K_M: en torno a 18-20 GB.
-  - Q6_K: en torno a 22-24 GB.
-- GPU recomendadas: RTX 4090 (24 GB) o RTX 3090 (24 GB) para Q4_K_M, Q5_K_M y, con margen ajustado, Q6_K; A100 40/80 GB y H100 para servir varias instancias o contextos largos; GPU de 12-16 GB (RTX 4070 Ti, RTX 4080) para quants Q2-Q3.
-- Cabe en GPU de consumo: sí, desde GPUs de 8 GB con quants IQ1/IQ2 hasta 24 GB con Q6_K.
-- Opciones de despliegue: llama.cpp, Ollama, servidores compatibles con GGUF (etiqueta `endpoints_compatible`); vLLM y TGI no soportan GGUF de forma nativa para este formato.
-- Latencia y throughput: no disponibles; dependen del quant, del hardware y de la longitud de contexto.
+- VRAM estimada para inferencia (pesos mas overhead de contexto y cache KV):
+  - i1-Q2_K: ~11,3 GB, apto para GPU de 12-16 GB o ejecucion en CPU.
+  - i1-IQ3_M / i1-Q3_K_M: ~13-14 GB, apto para GPU de 16 GB.
+  - i1-Q4_K_M: ~17,1 GB, recomendado para GPU de 24 GB (RTX 3090, RTX 4090, A10G).
+  - i1-Q5_K_M: ~19,7 GB, requiere 24 GB con contexto moderado.
+  - i1-Q6_K: ~22,5 GB, cerca del limite de 24 GB; contexto largo puede requerir offloading.
+- GPU recomendadas: RTX 4090 (24 GB) para cuantizaciones Q4-Q5; A100 40/80 GB o H100 para el modelo en BF16 o Q6_K con contexto amplio; RTX 3090 como alternativa economica a la 4090.
+- Cabe en GPU de consumo: si, en RTX 3090/4090 con cuantizaciones hasta Q5_K_M; en GPUs de 16 GB con IQ3_M o Q3_K_M; en GPUs de 12 GB solo con Q2_K y contexto reducido.
+- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, koboldcpp) para GGUF; vLLM y TGI para el modelo base en safetensors; el tag `endpoints_compatible` sugiere compatibilidad con servidores de API tipo OpenAI.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-SuperAdapter-i1-GGUF (este) | 27,3B | no disponible | GGUF (24 quants) | no disponible | Cuantización imatrix de un modelo de 27B |
-| Modelo base Qwen3.8-27B-SuperAdapter | 27,3B | no disponible | safetensors | no disponible | Pesos originales en precisión completa |
-| Otras cuantizaciones GGUF de modelos de ~27B | ~27B | variable | GGUF | según modelo base | Alternativas equivalentes en tamaño; rendimiento no comparable sin benchmarks |
+| Qwen3.8-27B-SuperAdapter-i1-GGUF (este) | 27,3B | no disponible | Apache 2.0 | GGUF (i1, imatrix) | Vision, ajuste agentic-coding, 14 cuantizaciones |
+| Qwen3.8-27B-SuperAdapter (base) | 27,3B | no disponible | Apache 2.0 | safetensors | Modelo original en transformers |
+| Qwen3.8-27B-SuperAdapter-GGUF (estatico) | 27,3B | no disponible | Apache 2.0 | GGUF (estatico) | Incluye ficheros mmproj para vision |
+| Otros modelos de ~27B de la familia Qwen | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion proporcionada |
 
-No se dispone de datos de benchmarks ni de especificaciones del modelo base que permitan una comparación cuantitativa con alternativas concretas.
+No se dispone de informacion suficiente para comparar rendimiento numerico con alternativas de la misma categoria; los datos de benchmarks no estan publicados en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: no se puede confirmar si el uso comercial está permitido; es imprescindible verificar la licencia del modelo base antes de cualquier despliegue en producción.
-- Idiomas no declarados: se desconoce el soporte multilingüe real; conviene evaluar en el idioma objetivo antes de usarlo.
-- Sin benchmarks publicados: no hay evidencia de rendimiento en MMLU, HumanEval, GSM8K ni otras tareas; la calidad debe validarse empíricamente.
-- Degradación por cuantización: los quants de baja precisión (IQ1_S, IQ2_XXS, Q2_K) pueden introducir pérdida notable de calidad y errores en tareas de razonamiento; se recomienda Q4_K_M o superior para uso serio.
-- Riesgo de alucinación: inherente a los modelos generativos; no hay documentación específica sobre mitigaciones.
-- Sesgos: no documentados en la información disponible.
-- Contexto: se desconoce la longitud de contexto soportada; los quants bajos pueden degradar el rendimiento en contextos largos por presión de memoria.
-- Repositorio con 0 descargas y creado recientemente: no hay evidencia de uso comunitario ni de validación independiente de las cuantizaciones.
+- La model card solo declara ingles (`en`); el rendimiento en castellano no esta verificado y podria ser inferior al de modelos multilingues explicitos.
+- No se documentan sesgos conocidos ni evaluaciones de seguridad del modelo original ni del merge de LoRA; se recomienda auditoria propia antes de uso en produccion.
+- Riesgo de alucinacion inherente a los modelos de 27B sin datos de evaluacion publicados; no hay benchmarks que permitan estimar su tasa de error en tareas factuales.
+- La longitud de contexto no esta documentada en la informacion disponible, lo que impide planificar casos de uso con documentos largos.
+- El repositorio es una cuantizacion de terceros (mradermacher), no el modelo oficial; la calidad final depende del proceso de cuantizacion y del fichero imatrix, aunque el autor documenta la comparativa de calidad por tipo.
+- Las capacidades de vision requieren descargar los ficheros mmproj del repositorio estatico complementario, no incluidos en este repositorio i1.
+- Aunque la licencia Apache 2.0 permite uso comercial, el modelo base y los datos de entrenamiento originales no estan documentados en detalle; conviene verificar la procedencia del checkpoint OliviaRossi antes de un despliegue comercial.
+- El modelo tiene 27,3B parametros, por lo que la inferencia en CPU es lenta y las cuantizaciones bajas (Q2_K, Q3) degradan la calidad de forma perceptible.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-SuperAdapter-i1-GGUF
 - Modelo base: https://huggingface.co/OliviaRossi/Qwen3.8-27B-SuperAdapter
+- Cuantizaciones estaticas (incluye mmproj): https://huggingface.co/mradermacher/Qwen3.8-27B-SuperAdapter-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Qwen3.8-27B-SuperAdapter-i1-GGUF
+- Ejemplo de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

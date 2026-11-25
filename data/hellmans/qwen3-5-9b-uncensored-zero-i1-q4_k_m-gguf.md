@@ -2,87 +2,105 @@
 
 ## Resumen
 
-Qwen3.5-9B-uncensored-zero.i1-Q4_K_M-GGUF es una cuantización en formato GGUF de un modelo de lenguaje de la familia Qwen 3.5, publicada por el usuario hellmans en Hugging Face. El modelo base declarado es "Qwen3.5-9B-uncensored-zero", una variante del modelo Qwen3.5 de 9B parámetros sometida a un proceso de "uncensoring" (eliminación o atenuación de los mecanismos de rechazo y alineación) por parte de la comunidad. Esta ficha se refiere concretamente al artefacto cuantizado publicado, no al modelo original de Alibaba.
+Qwen3.5-9B-uncensored-zero es una variante "abliterated" (decensored) del modelo Qwen3.5-9B de Alibaba Qwen, publicada por el usuario hellmans en Hugging Face como un clon del repositorio de MiguelMendez101. El modelo base es un transformer multimodal (texto e imagen) de 8.953.803.264 parámetros con arquitectura híbrida que combina Gated Delta Networks (atención lineal) con atención con compuertas y una red feed-forward de tipo Mixture-of-Experts dispersa. La modificación principal consiste en la eliminación de los comportamientos de rechazo mediante la técnica de abliteration ARA (Arbitrary-Rank Ablation) implementada en Heretic v1.2.0.
 
-El repositorio contiene un único archivo GGUF con cuantización Q4_K_M generada mediante imatrix (importance matrix), una técnica que mejora la calidad de la cuantización de 4 bits ponderando los pesos según su importancia. El tamaño del repositorio es de 5,6 GB y el recuento de parámetros del modelo base, según los safetensors originales, es de 8.953.803.264 (aproximadamente 8,95 mil millones). La model card no aporta información técnica adicional: no incluye descripción de arquitectura, datos de entrenamiento, benchmarks ni idiomas soportados.
+El interés de esta ficha reside en dos planos. Por un lado, documenta un modelo de la familia Qwen3.5 de 9B con contexto nativo de 262.144 tokens, extensible hasta 1.010.000, y capacidades de visión integradas. Por otro, describe un proceso de decensurado que, según la model card, reduce los rechazos de 84/100 a 0/100 en un conjunto de prueba de 100 prompts, a costa de una divergencia KL de 0,3980 respecto al modelo original. Esta versión se distribuye cuantizada en Q4_K_M con formato GGUF, lo que la hace desplegable en hardware de consumo.
 
-La relevancia de este artefacto es limitada y de nicho: se trata de una publicación con cero descargas y cero likes en el momento de la consulta, sin licencia definida y sin documentación. Resulta útil únicamente para quien busque una versión cuantizada y sin filtros de un modelo de ~9B para ejecución local, asumiendo el riesgo de licencia desconocida y la ausencia de garantías de calidad.
+La licencia declarada es Apache 2.0, heredada del modelo base. El repositorio tiene 5,6 GB y registra 433 descargas en el momento de la consulta.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base Qwen3.5, arquitectura transformer; no detallada en la información) |
-| Parámetros totales | 8.953.803.264 (~8,95B) |
-| Parámetros activos | no aplica (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | Q4_K_M (GGUF, generada con imatrix) |
-| Idiomas soportados | no disponible |
-| Licencia | unknown (desconocida) |
-| Formato de pesos | GGUF |
+| Arquitectura | Transformer causal híbrido con vision encoder; capas Gated DeltaNet (atención lineal) intercaladas con capas de atención con compuertas; FFN de tipo MoE disperso |
+| Parametros totales | 8.953.803.264 (~9B) |
+| Parametros activos | no disponible (la model card no detalla el reparto activo del MoE) |
+| Longitud de contexto | 262.144 tokens nativos; extensible hasta 1.010.000 |
+| Tipos de cuantizacion | Q4_K_M (esta publicación); el repositorio base admite otras cuantizaciones GGUF, no detalladas |
+| Idiomas soportados | 201 idiomas y dialectos según la model card del modelo base; no se detalla la lista |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantización Q4_K_M); el modelo base se distribuye en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base en la documentación proporcionada. Por la denominación "Qwen3.5" se infiere que deriva de la familia Qwen de Alibaba, de arquitectura transformer, pero no se confirma en la model card ni se detallan capas, atención, tamaño de vocabulario ni ventana de contexto. El modelo base declarado lleva el sufijo "uncensored-zero", lo que indica una modificación comunitaria orientada a eliminar o reducir el comportamiento de rechazo, típicamente mediante fine-tuning sobre datasets sin filtros o mediante abliteration; no se especifica el método.
+El modelo base Qwen3.5-9B emplea una arquitectura causal con encoder de visión y un layout híbrido de 32 capas organizado en 8 bloques de la forma 3 × (Gated DeltaNet → FFN) → 1 × (Gated Attention → FFN). La dimensión oculta es 4096, con un vocabulario de 248.320 tokens (con padding). Las capas Gated DeltaNet usan 32 cabezas de atención lineal para V y 16 para QK, con dimensión de cabeza 128; las capas de atención con compuertas usan 16 cabezas para Q y 4 para KV, con dimensión de cabeza 256 y RoPE de dimensión 64. La FFN tiene dimensión intermedia 12.288. El modelo incorpora entrenamiento multi-step MTP (multi-token prediction).
 
-Respecto al entrenamiento, no hay datos disponibles sobre número de tokens, composición del dataset, uso de RLHF/DPO ni innovaciones técnicas. La única información técnica concreta del artefacto publicado es el proceso de cuantización: Q4_K_M con imatrix, que produce pesos de aproximadamente 4,5 bits efectivos por parámetro y un archivo de unos 5,6 GB, coherente con un modelo de ~9B parámetros.
+El entrenamiento combina preentrenamiento y postentrenamiento, con fusión temprana de tokens multimodales y escalado de reinforcement learning en entornos multiagente. La model card menciona paridad con Qwen3 y mejora sobre Qwen3-VL en razonamiento, código, agentes y comprensión visual. No se especifica el número de tokens de entrenamiento ni la composición del dataset.
+
+La modificación abliterated aplica ARA con preservación de norma de fila sobre las capas 13 a 24, con los parámetros: `preserve_good_behavior_weight` 0,8846, `steer_bad_behavior_weight` 0,0003, `overcorrect_relative_weight` 1,2549 y `neighbor_count` 1. El resultado declarado es una divergencia KL de 0,3980 frente al original y 0 rechazos en 100 prompts, frente a 84/100 del modelo base.
 
 ## Capacidades
 
-- Generación de texto conversacional: la etiqueta "conversational" del repositorio indica uso previsto para diálogo.
-- Razonamiento y código: capacidades presumibles por herencia de la familia Qwen3.5, aunque no documentadas en este artefacto.
-- Soporte de tool calling / function calling: no disponible en la información.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información.
-- Capacidades multilingües: no disponibles; no se declara lista de idiomas.
-- Capacidades especiales (thinking mode, visión, audio): no disponibles.
-- Comportamiento sin filtros: el sufijo "uncensored" indica que el modelo base fue modificado para reducir rechazos, aunque el alcance real de esa modificación no está documentado.
+- Generación de texto y razonamiento en lenguaje natural, con soporte de modo thinking según la familia Qwen3.5.
+- Comprensión de imágenes y texto (pipeline `image-text-to-text`), gracias al encoder de visión integrado.
+- Generación de código y resolución de problemas matemáticos y STEM.
+- Capacidades de agente y razonamiento multi-paso, con soporte declarado para entornos multiagente durante el entrenamiento.
+- Soporte multilingüe amplio: 201 idiomas y dialectos según la model card del base.
+- Comportamiento sin rechazos en el conjunto de prueba declarado por el autor (0/100), orientado a usos donde el modelo base rechazaría peticiones.
+- Contexto largo efectivo de hasta 262.144 tokens nativos, útil para documentos extensos o conversaciones prolongadas.
+- Compatibilidad declarada con Transformers, vLLM, SGLang y KTransformers para los pesos del base; esta publicación GGUF está pensada para llama.cpp y derivados.
 
 ## Casos de uso
 
-- Inferencia local en equipos de consumo: el archivo Q4_K_M de 5,6 GB permite ejecutar un modelo de ~9B en GPUs con 8 GB de VRAM o en CPU con RAM suficiente, usando llama.cpp u Ollama, sin depender de servicios en la nube.
-- Experimentación con modelos sin alineación: útil para investigadores que estudian el comportamiento de modelos tras procesos de uncensoring y comparan respuestas frente a la versión alineada original.
-- Generación creativa sin restricciones de contenido: escritura de ficción, guiones o narrativa donde los filtros de seguridad del modelo base resultan limitativos, asumiendo la responsabilidad legal y ética del contenido generado.
-- Prototipado rápido de chatbots: la etiqueta "conversational" y el formato GGUF permiten montar un prototipo de chat local en minutos con llama.cpp server u Ollama, sin infraestructura dedicada.
-- Evaluación de cuantización con imatrix: sirve como caso práctico para medir la pérdida de calidad de Q4_K_M con imatrix frente a los pesos originales en tareas de generación y razonamiento.
-- Pruebas de robustez y red teaming: al carecer de filtros, es un candidato para evaluar la eficacia de sistemas de moderación externos que deban operar sobre las salidas del modelo.
-- Despliegue en entornos aislados (air-gapped): al ser un archivo único GGUF, puede copiarse a máquinas sin conexión para pruebas internas, siempre que se resuelva la ambigüedad de licencia.
+- Procesamiento de documentos largos: con 262.144 tokens de contexto nativo, el modelo puede ingerir contratos, informes o expedientes completos y responder preguntas sobre ellos sin fragmentación, lo que reduce la pérdida de contexto entre secciones.
+- Análisis de imágenes técnicas: al ser `image-text-to-text`, permite extraer texto de capturas, interpretar diagramas o describir figuras en documentación, integrándose en pipelines de digitalización.
+- Generación de código en local: la cuantización Q4_K_M (5,6 GB) permite ejecutarlo en una GPU de consumo y usarlo como asistente de código offline, sin enviar el código a servicios externos.
+- Investigación sobre alineación y seguridad: la variante abliterated sirve para estudiar el efecto de la eliminación de rechazos sobre el comportamiento del modelo, comparando respuestas con el base y midiendo la degradación vía KL.
+- Creación de contenido sin restricciones de filtro: para guionización, ficción o divulgación donde el modelo base rechazaría temas sensibles; conviene revisar la salida por la mayor probabilidad de contenido sesgado o inexacto.
+- Despliegue en edge o estación de trabajo: al caber en GGUF Q4_K_M, puede ejecutarse con llama.cpp u Ollama en equipos sin GPU dedicada de gran capacidad, con contexto ajustable según RAM/VRAM.
+- Asistencia multilingüe: con 201 idiomas declarados, es adecuado para traducción, atención al cliente o moderación en mercados con varias lenguas, aunque la calidad por idioma no está desglosada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+La model card del modelo base incluye una tabla comparativa con GPT-OSS-120B, GPT-OSS-20B, Qwen3-Next-80B-A3B-Thinking y Qwen3-30BA3B-Thinking-2507. El fragmento disponible solo muestra la fila de MMLU-Pro:
+
+| Modelo | MMLU-Pro |
+|---|---|
+| GPT-OSS-120B | 80,8 |
+| GPT-OSS-20B | 74,8 |
+| Qwen3.5-9B | no disponible en el fragmento |
+| Qwen3.5-4B | no disponible en el fragmento |
+
+No se han publicado en la información disponible resultados de benchmarks del modelo abliterated frente al base más allá de las métricas de abliteration (KL 0,3980 y 0/100 rechazos). No se inventan cifras adicionales.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 6-7 GB con Q4_K_M (5,6 GB de pesos más overhead de contexto y caché KV); con contexto largo la demanda de VRAM crece de forma proporcional.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080, RTX 4090; en el ámbito profesional, A100 o H100 si se busca mayor throughput con contexto amplio.
-- Cabe en GPU de consumo: sí, en modelos con 8 GB o más de VRAM; en GPUs de 6 GB requeriría offloading parcial a CPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; vLLM y TGI no soportan GGUF de forma nativa (requerirían conversión a safetensors).
-- Latencia y throughput estimados: no disponibles; dependen del hardware y del backend. Como referencia orientativa, un modelo de ~9B en Q4_K_M suele generar entre 20 y 50 tokens/s en GPUs de consumo recientes, pero no hay mediciones publicadas para este artefacto.
+- VRAM estimada para esta cuantización Q4_K_M: aproximadamente 5,6 GB de pesos, más overhead de contexto KV; con 8 GB de VRAM se puede ejecutar con contexto moderado.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 para uso en consumo; A100 o H100 si se requiere contexto largo (262K) o mayor throughput.
+- Cabe en GPU de consumo: sí, en modelos con 8 GB o más de VRAM para Q4_K_M; para contexto muy largo se necesita más memoria o técnicas de offloading.
+- Opciones de despliegue: llama.cpp, Ollama y otros runtimes GGUF; los pesos del base son compatibles con Transformers, vLLM, SGLang y KTransformers.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Formato / disponibilidad | Notas |
 |---|---|---|---|---|---|
-| hellmans/Qwen3.5-9B-uncensored-zero.i1-Q4_K_M-GGUF | ~8,95B | no disponible | Q4_K_M GGUF | unknown | Hugging Face, 0 descargas |
-| Qwen3.5-9B (modelo base, presumible) | ~9B | no disponible | safetensors y GGUF oficiales | según familia Qwen (no confirmada) | Hugging Face, oficial |
-| Llama 3.1 8B Instruct | 8B | 128K | múltiples (GGUF, AWQ, etc.) | Llama 3.1 Community License | amplia, con ecosistema maduro |
-| Mistral 7B Instruct | 7,2B | 32K | múltiples | Apache 2.0 | amplia |
+| Qwen3.5-9B-uncensored-zero (esta ficha) | ~9B | 262.144 (ext. 1.010.000) | Apache 2.0 | GGUF Q4_K_M | Abliterated, 0/100 rechazos, KL 0,3980 |
+| Qwen3.5-9B (base) | ~9B | 262.144 (ext. 1.010.000) | Apache 2.0 | Safetensors | Modelo original con alineación de seguridad |
+| Qwen3.5-4B | ~4B | no disponible | Apache 2.0 | Safetensors | Versión menor de la misma familia |
+| GPT-OSS-20B | ~20B | no disponible | no disponible | no disponible | MMLU-Pro 74,8 según la tabla del base |
 
-La comparación con el modelo base y con alternativas de la misma categoría (~7-9B) es desfavorable en términos de trazabilidad: frente a Llama 3.1 8B o Mistral 7B, este artefacto carece de licencia clara, documentación, benchmarks e idiomas declarados, aunque ofrece el aliciente de un comportamiento sin filtros que las alternativas alineadas no proporcionan.
+No se dispone de datos de benchmarks del modelo abliterated frente a alternativas de su misma categoría más allá de los citados.
 
 ## Limitaciones y advertencias
 
-- Licencia desconocida: la model card declara "license: unknown", lo que impide determinar si el uso comercial está permitido; en la práctica, tratar el modelo como no apto para producción comercial hasta aclarar la licencia del modelo base y de la modificación.
-- Sin documentación: no hay información sobre arquitectura, contexto, idiomas, datos de entrenamiento ni evaluación; cualquier decisión de producción basada en este artefacto carece de base técnica verificable.
-- Riesgo de alucinación: no cuantificado; los modelos de ~9B y las variantes sin alineación suelen presentar mayor propensión a generar contenido factualmente incorrecto sin señales de duda.
-- Ausencia de filtros de seguridad: el proceso "uncensored" elimina o reduce los rechazos, lo que aumenta el riesgo de generar contenido dañino, ilegal o sesgado; requiere moderación externa obligatoria en cualquier despliegue público.
-- Sesgos conocidos: no documentados; los sesgos del modelo base persisten y la modificación comunitaria puede haberlos alterado de forma no controlada.
-- Idiomas: no se declara lista de idiomas soportados; el rendimiento fuera del inglés y el chino (idiomas habituales de la familia Qwen) es incierto.
-- Reputación del artefacto: cero descargas y cero likes en el momento de la consulta, sin historial de validación por la comunidad.
-- Fecha de creación futura en los metadatos (2026-11-18): inconsistencia que sugiere que los metadatos del repositorio no son fiables.
+- La abliteration elimina los rechazos, pero no garantiza corrección: puede aumentar la probabilidad de respuestas dañinas, sesgadas o factualmente erróneas en temas sensibles.
+- La divergencia KL de 0,3980 respecto al base indica una alteración medible en la distribución de salida; puede degradar capacidades en tareas que dependían de la alineación original.
+- Riesgo de alucinación inherente a los modelos de lenguaje; la pérdida de filtros puede agravar la confianza en información incorrecta.
+- No se detalla la lista de idiomas ni la calidad por idioma; el soporte de 201 idiomas es una declaración del base, no una garantía uniforme.
+- El contexto extensible hasta 1.010.000 tokens requiere hardware y configuraciones específicas; el rendimiento en contextos muy largos no está documentado.
+- Licencia Apache 2.0 permite uso comercial, pero el usuario asume la responsabilidad legal y ética del contenido generado sin filtros.
+- Esta publicación es un clon de otro repositorio (MiguelMendez101/Qwen3.5-9B-uncensored-zero); conviene verificar la procedencia y la integridad de los pesos.
+- Solo se ofrece la cuantización Q4_K_M en este repositorio; para otras precisiones hay que acudir a otras publicaciones.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/hellmans/Qwen3.5-9B-uncensored-zero.i1-Q4_K_M-GGUF
-- Modelo base declarado ("Qwen3.5-9B-uncensored-zero"): no se proporciona enlace en la información disponible.
-- Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.
+- Repositorio original clonado: https://huggingface.co/MiguelMendez101/Qwen3.5-9B-uncensored-zero
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
+- Modelo base (variante Base): https://huggingface.co/Qwen/Qwen3.5-9B-Base
+- Licencia del base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
+- Heretic (herramienta de abliteration): https://github.com/p-e-w/heretic
+- Pull request de ARA: https://github.com/p-e-w/heretic/pull/211
+- Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
+- Qwen Chat: https://chat.qwen.ai

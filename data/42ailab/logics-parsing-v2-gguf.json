@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 307,
+  "downloads_30d": 312,
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",
@@ -51,16 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Models compatible with the GGUF library - Hugging Face",
-      "url": "https://huggingface.co/models?library=gguf&p=0&sort=created",
-      "snippet": "Models ; Hanno-Labs/bosun-v3.1-1.7b-GGUF. 2B ; 0arch-io/kisoku-1.6b-preview-GGUF. Text Generation • 2B ; 42ailab/Logics-Parsing-V3-GGUF. Image-Text-to-Text • 0.8B ..."
-    },
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?p=0&sort=modified&search=gguf",
-      "snippet": "• 7.94k • 2 · 0arch-io/kisoku-1.6b-preview-GGUF. Text Generation • 2B • Updated in about 22 hours · 42ailab/Logics-Parsing-V3-GGUF. Image-Text-to-Text • ..."
-    }
-  ]
+  "sources": []
 }

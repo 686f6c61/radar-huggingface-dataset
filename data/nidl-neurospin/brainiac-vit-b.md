@@ -2,86 +2,97 @@
 
 ## Resumen
 
-BrainIAC ViT-B es un modelo de vision 3D basado en un Vision Transformer (ViT-B) preentrenado de forma auto-supervisada con SimCLR sobre imagenes de resonancia magnetica (MRI) cerebral humana. Lo desarrollan los autores del proyecto BrainIAC (AIM-KannLab) y esta redistribucion corre a cargo de nidl-neurospin, que lo publica en formato safetensors compatible con la libreria `nidl` para su uso en pipelines de neuroimagen. El modelo resuelve el problema de obtener representaciones genericas y reutilizables de volumenes de MRI sin necesidad de etiquetas, lo que permite hacer fine-tuning posterior en tareas clinicas con pocos datos anotados.
+BrainIAC ViT-B es un modelo fundacional auto-supervisado para resonancia magnetica estructural cerebral, desarrollado originalmente por el grupo de investigación del paper publicado en *Nature Neuroscience* (Tak et al., 2026) y redistribuido en Hugging Face por nidl-neurospin (NeuroSpin). Se trata de un vision transformer 3D (ViT-B con parches de 16³) entrenado con SimCLR sobre volúmenes de MRI cerebral, cuyo objetivo es producir representaciones (features) de 768 dimensiones transferibles a múltiples tareas clínicas y neurocientíficas: predicción de edad cerebral, clasificación de mutación IDH, deterioro cognitivo leve, supervivencia en glioma o tiempo hasta ictus.
 
-El modelo cuenta con 90.514.688 parametros y una arquitectura transformer 3D que procesa parches volumetricos. Es relevante ahora porque los foundation models en neuroimagen estan emergiendo como alternativa a los entrenamientos especificos por tarea, y BrainIAC se presenta como un modelo generalizable para el analisis de MRI cerebral. La redistribucion en `nidl` facilita su integracion en flujos de trabajo de investigacion en neurociencia computacional.
+El modelo resuelve el problema de la escasez de datos etiquetados en neuroimagen médica: en lugar de entrenar desde cero para cada tarea, se extraen features congelados del encoder preentrenado y se ajusta un clasificador o regresor ligero encima. Con 88,3 M de parámetros en el encoder (90,5 M totales incluyendo la cabeza de proyección), es lo bastante compacto para ejecutarse en GPUs de consumo, aunque su entrada 3D de 96³ y el preprocesado requerido lo alejan de los flujos de trabajo de NLP convencionales.
 
-La licencia es de solo investigacion (research-only), lo que restringe su uso a ambito academico y educativo no comercial. No es un modelo de lenguaje: no genera texto ni soporta conversacion, sino que produce embeddings de imagenes de MRI para tareas downstream.
+Es relevante ahora porque consolida la tendencia de modelos fundacionales en imagen médica 3D y porque su redistribución vía la librería `nidl` facilita su uso reproducible en pipelines de PyTorch, con preprocesado estandarizado y compatibilidad con fine-tuning. Su licencia es estrictamente de investigación no comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Vision Transformer 3D (ViT-B) con preentrenamiento SimCLR |
-| Parametros totales | 90.514.688 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (no aplica; procesa volumenes de MRI) |
-| Tipos de cuantizacion | no disponible (pesos en safetensors, sin cuantizaciones publicadas) |
-| Idiomas soportados | no disponible (no aplica; modelo de imagen) |
-| Licencia | brainiac-research-only (solo investigacion academica y educacion, no comercial) |
+| Arquitectura | Vision Transformer 3D (ViT-B) con parches de 16³, entrenado con SimCLR (contrastivo auto-supervisado) |
+| Parametros totales | 90.514.688 (encoder: 88,3 M; incluye cabeza de proyección) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de visión 3D; entrada fija 1 × 96 × 96 × 96) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no aplica (modelo de imagen médica, sin capacidad lingüística) |
+| Licencia | BrainIAC Research-Only License (solo investigación académica y educación, no comercial) |
 | Formato de pesos | safetensors |
+| Dimension de features | 768 |
+| Entrada esperada | MRI cerebral con skull-stripping (HD-BET), corrección de sesgo (N4), registrada rígidamente a plantilla BrainIAC (170 × 206 × 162 a 1 mm, LAS) |
+| Libreria | nidl (`nidl.estimators.ssl.SimCLR`) |
 
 ## Arquitectura y entrenamiento
 
-BrainIAC ViT-B es un Vision Transformer de tamano base adaptado a entrada 3D, disenado para procesar volumenes de resonancia magnetica cerebral. El preentrenamiento se realizo con SimCLR, un metodo de aprendizaje auto-supervisado contrastivo que aprende representaciones maximizando la similitud entre vistas aumentadas de la misma imagen y minimizando la de imagenes distintas. El modelo original no incorpora token de clase y devuelve el primer token de parche; la version redistribuida por nidl promedia los tokens de parche tras la normalizacion final, por lo que sus caracteristicas difieren de las originales. La cabeza de proyeccion se entreno sobre el primer token de parche.
+El modelo es un ViT-B tridimensional: divide el volumen de entrada en parches cúbicos de 16³ y procesa la secuencia resultante con un transformer estándar. El preentrenamiento emplea SimCLR, un marco contrastivo que aprende representaciones invariantes a aumentaciones de la imagen sin necesidad de etiquetas. El checkpoint redistribuido incluye tanto el encoder como la cabeza de proyección empleada durante el entrenamiento contrastivo.
 
-Los pesos publicados son los originales convertidos a safetensors sin modificaciones, con aprobacion de los autores. No se dispone en la informacion proporcionada de datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si hubo etapas de ajuste supervisado adicionales. La innovacion principal es el uso de SimCLR sobre MRI 3D para obtener un foundation model generalizable, segun el articulo de Tak et al. publicado en Nature Neuroscience (2026).
+Una diferencia relevante respecto al código original: el modelo original no usa token de clase y devuelve el primer token de parche (una posición de esquina del volumen). La implementación de `nidl` promedia los tokens de parche tras la normalización final, por lo que sus features difieren de las del modelo original. La cabeza de proyección, en cambio, se entrenó sobre ese primer token de parche. El autor reporta que el encoder devuelve los mismos tokens que una implementación independiente del modelo original con una tolerancia de 1e-6. No se detalla en la información disponible el número de tokens de entrenamiento ni la composición exacta del dataset más allá de que son MRI cerebrales estructurales de varias secuencias.
 
 ## Capacidades
 
-- Extraccion de caracteristicas (embeddings) de volumenes de MRI cerebral 3D.
-- Aprendizaje auto-supervisado que permite fine-tuning en tareas downstream con pocas etiquetas.
-- Base para clasificacion, regresion y segmentacion de imagenes de neuroimagen tras ajuste.
-- Procesamiento de parches volumetricos mediante atencion transformer 3D.
-- Integracion con la libreria `nidl` mediante `SimCLR.from_pretrained` y utilidades de preprocesado.
-- No soporta generacion de texto, tool calling, agentes ni capacidades multilingues.
-- No dispone de modo thinking, vision 2D general ni audio.
+- Extracción de features de MRI cerebral estructural 3D: devuelve un vector de 768 dimensiones por volumen.
+- Aprendizaje auto-supervisado contrastivo (SimCLR): representaciones útiles sin etiquetas.
+- Transferencia a tareas clínicas mediante regresión ridge sobre features congelados o fine-tuning con `fit`.
+- Tareas evaluadas por los autores: predicción de edad cerebral, clasificación de mutación IDH, clasificación de deterioro cognitivo leve, supervivencia en glioma y predicción de tiempo hasta ictus.
+- Preprocesado integrado (`BrainIACPreprocessing`): redimensionado a 96³ y estandarización de vóxeles cerebrales.
+- Utilidad de cropping: volúmenes registrados a otra plantilla 1 mm LAS pueden recortarse al campo de visión de la plantilla BrainIAC.
+- No soporta tool calling, agentes, generación de texto, visión natural ni capacidades multilingües: es un extractor de features de imagen médica.
 
 ## Casos de uso
 
-- Investigacion en clasificacion de enfermedades neurodegenerativas: el modelo sirve como extractor de caracteristicas congelado sobre volumenes de MRI, y las representaciones resultantes se usan para entrenar clasificadores lineales o ligeros que distingan sujetos sanos de pacientes con Alzheimer o Parkinson, reduciendo la necesidad de grandes cohortes etiquetadas.
-- Segmentacion de estructuras cerebrales tras fine-tuning: partiendo de los pesos preentrenados, se ajusta una cabeza de segmentacion para delimitar tejido gris, blanco y liquido cefalorraquideo, aprovechando que el encoder ya ha aprendido representaciones anatomicas genericas.
-- Analisis de cohortes en estudios longitudinales: los embeddings permiten agrupar y comparar sujetos a lo largo del tiempo, detectando cambios morfologicos asociados a progresion de enfermedad sin reentrenar el modelo desde cero.
-- Preentrenamiento para tareas de imagen medica con datos escasos: en entornos con pocos estudios anotados, el modelo actua como inicializacion que acelera la convergencia y mejora la generalizacion frente a entrenar desde cero.
-- Control de calidad y deteccion de artefactos en MRI: las representaciones pueden alimentar un detector de imagenes corruptas o de baja calidad en pipelines de adquisicion, filtrando estudios antes del analisis.
-- Investigacion en representaciones latentes del cerebro: el modelo permite estudiar el espacio de embeddings para analizar similitudes estructurales entre sujetos y poblaciones, como herramienta de exploracion en neurociencia computacional.
-- Reproducibilidad de estudios: al redistribuirse los pesos originales en safetensors con una API estable (`nidl`), se facilita replicar experimentos de la publicacion original en entornos de investigacion.
+- Predicción de edad cerebral: extraer features congelados y ajustar una regresión ridge; el autor reporta MAE de 6,47 años (R² 0,47) en OpenBHB, lo que lo hace adecuado como biomarcador de envejecimiento cerebral en cohortes de investigación.
+- Clasificación de mutación IDH en glioma: usar los features como entrada a un clasificador ligero para estratificar tumores, tarea clínica de alto interés pronóstico.
+- Detección de deterioro cognitivo leve: servir como extractor en pipelines de cribado de cohortes con etiquetas escasas, aprovechando el preentrenamiento contrastivo.
+- Análisis de supervivencia en glioma: alimentar modelos de supervivencia con representaciones 768-d en lugar de imágenes crudas, reduciendo la dimensionalidad y el sobreajuste.
+- Predicción de tiempo hasta ictus: integrar el encoder en estudios longitudinales de riesgo cerebrovascular como extractor de features por visita.
+- Investigación en neuroimagen a gran escala: procesar cohortes (por ejemplo OpenBHB) con features estandarizados para análisis estadísticos, clustering de fenotipos o búsqueda de similitud entre sujetos.
+- Fine-tuning sobre datasets pequeños: usar `fit` de nidl para adaptar el encoder a una tarea concreta cuando se dispone de pocas etiquetas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+| Tarea / dataset | Metrica | Resultado |
+|---|---|---|
+| OpenBHB test (757 participantes), regresión ridge sobre features congelados, edad | MAE | 6,47 años |
+| OpenBHB test (757 participantes), regresión ridge sobre features congelados, edad | R² | 0,47 |
+| Fidelidad frente a implementación original | Diferencia de tokens | ≤ 1e-6 |
+
+No se han publicado en la información disponible resultados numéricos de los benchmarks clínicos del paper (IDH, deterioro cognitivo leve, supervivencia en glioma, tiempo hasta ictus) ni comparaciones cuantitativas con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 90,5 millones de parametros, los pesos en precision completa (fp32) ocupan aproximadamente 0,36 GB; en fp16 unos 0,18 GB. El consumo real depende del tamano del volumen de entrada y del numero de parches 3D procesados.
-- GPU recomendadas: cualquier GPU con al menos 4-8 GB de VRAM es suficiente para inferencia en fp32; para lotes grandes de volumenes 3D se recomienda una GPU con 16 GB o mas (RTX 4090, A100, H100).
-- Cabe en GPU de consumo: si, en tarjetas como RTX 3060, RTX 4060, RTX 4070 o superiores, siempre que se ajuste el tamano de lote al volumen de entrada.
-- Opciones de despliegue: la via documentada es la libreria `nidl` (`pip install nidl[pretrained]`). No se dispone de informacion sobre soporte en vLLM, llama.cpp, Ollama o TGI, que no aplican a este tipo de modelo de vision.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 88,3 M de parámetros en fp32 el encoder ocupa aproximadamente 0,35 GB de pesos, más activaciones para lotes de volúmenes 96³ (el consumo real depende del batch size).
+- GPU recomendadas: cualquier GPU con suficiente VRAM para el batch deseado; el tamaño del modelo permite GPUs de consumo como RTX 3090 o RTX 4090, aunque no se han publicado mediciones oficiales.
+- Cabe en GPU de consumo: sí, por tamaño de parámetros; las activaciones de la entrada 3D y el preprocesado son el factor limitante, no el número de pesos.
+- Opciones de despliegue: librería `nidl` sobre PyTorch (`pip install nidl[pretrained]`); no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI (no aplicables a este tipo de modelo).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone en la informacion proporcionada de datos sobre modelos comparables de ViT 3D auto-supervisados para MRI (parametros, contexto, rendimiento o licencia), por lo que la comparativa se indica como no disponible.
+| Modelo | Parametros | Entrada | Preentrenamiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| BrainIAC ViT-B (este) | 88,3 M (encoder) | MRI 3D 96³ | SimCLR | Research-only | Hugging Face + GitHub |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| BrainIAC ViT-B | 90.514.688 | no aplica | research-only | Hugging Face (nidl-neurospin) |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
+No se dispone en la información proporcionada de datos sobre modelos comparables de la misma categoría (modelos fundacionales de MRI cerebral 3D) que permitan una comparación rigurosa de parámetros, contexto o rendimiento.
 
 ## Limitaciones y advertencias
 
-- Licencia research-only: prohibido el uso comercial; solo investigacion academica y educacion.
-- Modelo especializado en MRI cerebral; no es un modelo de lenguaje ni de vision general, y no debe usarse fuera de ese dominio.
-- Diferencia respecto al original: la version de `nidl` promedia los tokens de parche en lugar de devolver el primero, por lo que las caracteristicas no son identicas a las del codigo original y pueden afectar a la reproducibilidad exacta de resultados publicados.
-- Riesgo de sesgo por la composicion del dataset de preentrenamiento, que no se detalla en la informacion disponible; puede generalizar peor en poblaciones o protocolos de adquisicion distintos.
-- Riesgo de alucinacion no aplica en el sentido generativo, pero si existe riesgo de representaciones poco fiables en volumenes atipicos o con artefactos.
-- No se documentan limitaciones de idioma porque el modelo no procesa texto.
-- Para produccion clinica se requeriria validacion externa y regulatoria; el modelo no esta destinado a diagnostico.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica adopcion temprana y poca validacion comunitaria.
+- Licencia BrainIAC Research-Only: uso restringido a investigación académica y educación; prohibido el uso comercial.
+- Modelo específico de MRI cerebral estructural: no procesa texto, imágenes naturales, audio ni otros dominios.
+- Requiere un preprocesado estricto (skull-stripping con HD-BET, corrección N4, registro rígido a la plantilla BrainIAC); desviaciones en el pipeline degradan las features.
+- Diferencia de features respecto al modelo original: `nidl` promedia tokens de parche en lugar de usar el primer token, por lo que los resultados no son directamente comparables con los del código original.
+- La cabeza de proyección se entrenó sobre el primer token de parche, lo que puede introducir inconsistencias si se usa con el promedio de tokens.
+- Riesgo de sesgo poblacional: el rendimiento depende de la distribución de los datos de preentrenamiento, no detallada en la información disponible; puede generalizar peor en cohortes con características distintas (edad, patología, secuencia, equipo).
+- No es un dispositivo médico: no debe usarse para diagnóstico clínico sin validación regulatoria.
+- No se documentan tasas de alucinación ni calibración en tareas clínicas; los resultados reportados (MAE 6,47 años) provienen de una única evaluación en OpenBHB.
+- El repositorio tiene pocas descargas (306) y ningún like, lo que sugiere adopción temprana y escasa validación independiente.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/nidl-neurospin/brainiac-vit-b
-- Repositorio original de BrainIAC: https://github.com/AIM-KannLab/BrainIAC
-- Libreria nidl: https://github.com/neurospin-deepinsight/nidl
-- Articulo: Tak et al., A generalizable foundation model for analysis of human brain MRI, Nature Neuroscience, 2026. https://doi.org/10.1038/s41593-026-02202-6
+- Paper: https://doi.org/10.1038/s41593-026-02202-6
+- Código y pesos originales: https://github.com/AIM-KannLab/BrainIAC
+- Documentación de nidl: https://neurospin-deepinsight.github.io/nidl
+- Ejemplo en OpenBHB: https://neurospin-deepinsight.github.io/nidl/auto_examples/plot_pretrained_openbhb.html

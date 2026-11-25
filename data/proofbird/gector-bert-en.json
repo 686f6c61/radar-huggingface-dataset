@@ -47,11 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "BERT (language model) - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/BERT_(language_model)",
-      "snippet": "Bidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google. [2][3] It learns to represent text as a sequence of vectors using self-supervised learning. It uses the encoder-only transformer architecture. BERT dramatically improved the state of the art for large language models. As of 2026, BERT is a common ..."
-    }
-  ]
+  "sources": []
 }

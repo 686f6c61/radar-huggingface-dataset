@@ -101,6 +101,13 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "MATH-500",
+      "metric": "Accuracy",
+      "value": 96.6
+    }
+  ],
   "sources": []
 }

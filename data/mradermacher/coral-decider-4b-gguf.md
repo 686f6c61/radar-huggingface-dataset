@@ -2,115 +2,94 @@
 
 ## Resumen
 
-Coral-decider-4b-GGUF es un repositorio de cuantizaciones estaticas en formato GGUF generado por mradermacher a partir del modelo base OceanLabs/Coral-decider-4b. No se trata, por tanto, de un modelo entrenado por el autor del repositorio, sino de una conversion y cuantizacion del checkpoint original en precision completa (etiquetado internamente como `convert_type: hf`) a una familia de ficheros GGUF listos para inferencia en CPU y GPU con llama.cpp y herramientas compatibles. El repositorio fue creado el 27 de septiembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni valoraciones.
+Coral-decider-4b-GGUF es una compilación de cuantizaciones estáticas en formato GGUF del modelo base OceanLabs/Coral-4b, publicada por mradermacher. El modelo original es un "decision model" de aproximadamente 4.200 millones de parámetros, entrenado para producir salidas estructuradas y calibradas en tareas de decisión multi-tarea. La versión GGUF facilita el despliegue en entornos con recursos limitados mediante llama.cpp y herramientas compatibles, sin necesidad de GPUs de gama alta.
 
-El modelo pertenece a la categoria de los transformers de ~4.000 millones de parametros, pero la model card publicada no incluye informacion sobre arquitectura, datos de entrenamiento, longitud de contexto, idiomas o licencia del modelo original. El nombre "decider" y la existencia de otros repositorios de la misma familia en Hugging Face (mradermacher/decider-4b-GGUF y mradermacher/assay-4b-GGUF, ambos etiquetados como `decision-model`, `calibrated` y `structured-output`) sugieren una orientacion a tareas de decision y salida estructurada, pero no hay confirmacion de que Coral-decider-4b comparta ese diseno.
+El modelo base está orientado a un paradigma "system-one" y "one-pass": genera una decisión en una sola pasada, sin cadenas de razonamiento extendidas, lo que reduce latencia y coste computacional en comparación con modelos que emplean modos de pensamiento iterativos. Está etiquetado como conversacional y compatible con endpoints, lo que sugiere integración sencilla en APIs y pipelines de producción.
 
-Su relevancia practica es limitada pero concreta: permite ejecutar un modelo de 4B en hardware de consumo gracias a las 13 cuantizaciones publicadas (desde Q2_K hasta f16), lo que facilita prototipado local, pruebas de latencia y despliegue en entornos sin GPU dedicada. Cualquier evaluacion seria del modelo requiere consultar el repositorio del modelo base, cuya informacion no esta disponible en los datos proporcionados.
+La relevancia de esta ficha radica en que ofrece una vía práctica para desplegar un modelo de decisión calibrado de 4B en hardware de consumo, con cuantizaciones que van desde 2,0 GB (Q2_K) hasta 8,5 GB (f16). La licencia Apache 2.0 permite uso comercial sin restricciones significativas, aunque la información pública sobre arquitectura interna, datos de entrenamiento y benchmarks es muy limitada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre del modelo indica ~4B; no se confirma si es transformer decoder-only, MoE u otra) |
-| Parametros totales | ~4.000 millones (inferido de la denominacion "4b"; cifra exacta no disponible) |
-| Parametros activos | no aplica / no disponible |
+| Arquitectura | no disponible (modelo base transformer, inferido por librería transformers; no confirmado) |
+| Parametros totales | 4.205.751.296 |
+| Parametros activos | no disponible (no es MoE según los datos disponibles) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible (la metadata de Hugging Face no la declara; debe consultarse la del modelo base OceanLabs/Coral-decider-4b) |
-| Formato de pesos | GGUF (cuantizaciones estaticas, `quantize_version: 2`, `output_tensor_quantised: 1`) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base. La model card del repositorio GGUF se limita a indicar que son cuantizaciones estaticas de https://huggingface.co/OceanLabs/Coral-decider-4b y anade metadatos del proceso de conversion: `convert_type: hf` (conversion desde pesos Hugging Face), `quantize_version: 2` y `output_tensor_quantised: 1`, ademas de la lista de 13 cuantizaciones generadas. No hay datos sobre numero de tokens de entrenamiento, composicion del dataset, uso de RLHF, DPO u otras tecnicas de alineamiento, ni sobre innovaciones tecnicas como atencion lineal o decodificacion especulativa.
+No se dispone de información detallada sobre la arquitectura interna del modelo base OceanLabs/Coral-4b. Los tags indican "decision-model", "calibrated", "structured-output", "multi-task", "system-one" y "one-pass", lo que apunta a un transformer decoder-only entrenado específicamente para emitir decisiones estructuradas en una única pasada, con calibración de probabilidades orientada a tareas de clasificación o selección. No se han publicado datos sobre número de tokens de entrenamiento, composición del dataset, ni si se emplearon técnicas de RLHF o DPO.
 
-Respecto al proceso de cuantizacion en si, se trata de una conversion estandar del pipeline de mradermacher: el modelo base se convierte al formato GGUF y se emiten simultaneamente varias cuantizaciones k-quant (Q2_K a Q6_K) e i-quant (IQ4_XS), junto con una version f16 y una Q8_0 como referencias de mayor fidelidad. No se documenta el uso de mixed-precision selectiva por capas ni de calibracion con datasets especificos, mas alla de lo implicito en los propios algoritmos de llama.cpp.
+La cuantización fue realizada por mradermacher con "quantize_version: 2", "output_tensor_quantised: 1" y "convert_type: hf", partiendo del modelo en formato Hugging Face. Se trata de cuantizaciones estáticas; el autor indica que las cuantizaciones ponderadas/imatrix no estaban disponibles en el momento de la publicación. La innovación destacable de esta versión es la disponibilidad de un abanico completo de cuantizaciones K-quants e IQ para distintos compromisos entre tamaño y calidad.
 
 ## Capacidades
 
-La informacion disponible no permite confirmar ninguna capacidad concreta del modelo. A continuacion se enumeran unicamente los aspectos verificables y se marcan explicitamente las incognitas:
-
-- Generacion de texto: no confirmado, aunque es la funcion esperada de un modelo de ~4B en formato GGUF compatible con llama.cpp.
-- Razonamiento, codigo y matematicas: no disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; el repositorio no declara idiomas.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Salida estructurada o calibrada: no confirmado para Coral-decider-4b. Los repositorios hermanos de la familia "decider" gestionados por el mismo cuantizador (decider-4b, assay-4b) si se etiquetan como `calibrated` y `structured-output`, pero se trata de modelos distintos y no se debe extrapolar esa caracteristica sin verificacion.
+- Generación de decisiones estructuradas y calibradas en una sola pasada ("one-pass").
+- Modelo multi-tarea: orientado a múltiples tipos de decisión dentro de un mismo modelo.
+- Salida estructurada ("structured-output"), adecuada para integración con parsers y validación automática.
+- Paradigma "system-one": respuestas directas sin cadenas de razonamiento extensas, con menor latencia.
+- Carácter conversacional según los tags del modelo.
+- Compatibilidad con endpoints ("endpoints_compatible").
+- Soporte multilingüe limitado al inglés ("en").
+- No se dispone de información sobre tool calling, function calling, agentes, visión, audio ni modo de pensamiento explícito.
 
 ## Casos de uso
 
-Dado que no se dispone de la model card del modelo base, los casos siguientes son escenarios genericos y realistas para un modelo de ~4B cuantizado en GGUF, condicionados a que el modelo base rinda de forma adecuada en cada tarea. Deben validarse empiricamente antes de llevarlos a produccion.
-
-- Prototipado local en portatil sin GPU: las cuantizaciones Q4_K_M e IQ4_XS permiten cargar el modelo en 4-8 GB de RAM y probar flujos conversacionales o de clasificacion sin coste de API.
-- Clasificacion y etiquetado por lotes en servidor CPU: usando llama.cpp con Q5_K_M o Q6_K se puede procesar grandes volumenes de texto en un servidor sin GPU, con buena relacion coste/rendimiento si la tarea no exige razonamiento profundo.
-- Generacion asistida en aplicaciones de escritorio: integracion en herramientas tipo LM Studio, Ollama o GPT4All para resumen, reescritura y extraccion de entidades en local, con los datos sin salir del equipo.
-- Filtrado previo (pre-filtering) en pipelines de datos: emplear la cuantizacion Q2_K o Q3_K_S como clasificador rapido de bajo coste que descarte ejemplos irrelevantes antes de invocar un modelo mayor.
-- Evaluacion comparativa de cuantizaciones: el repositorio publica 13 variantes del mismo modelo, lo que lo hace util para medir la degradacion de calidad entre Q2_K y f16 sobre un conjunto de validacion propio.
-- Despliegue en dispositivos con memoria limitada: las variantes Q2_K y Q3_K_S son las unicas viables en equipos con menos de 4 GB de RAM/VRAM disponibles, a costa de una perdida de fidelidad notable.
-- Servicio de inferencia multimodal de bajo trafico: con llama-cpp-python o un servidor compatible con la API de OpenAI se puede exponer el modelo en un contenedor pequeno para uso interno.
+- Clasificación y enrutamiento de tickets: el modelo puede recibir el texto de una incidencia y emitir una categoría o prioridad estructurada en una sola pasada, lo que encaja en pipelines de soporte con requisitos de baja latencia.
+- Triage automático en atención al cliente: gracias a su naturaleza conversacional y de decisión, puede clasificar consultas entrantes y derivarlas al equipo adecuado, con salidas calibradas que permiten aplicar umbrales de confianza.
+- Moderación de contenido asistida: el modelo puede evaluar texto y producir una decisión estructurada (permitir, revisar, bloquear) con probabilidad calibrada, integrándose en flujos de revisión humana.
+- Extracción de decisiones en formularios o documentos: al generar salida estructurada, puede mapear campos de texto libre a opciones predefinidas en sistemas de gestión documental.
+- Automatización de reglas de negocio con LLM: en lugar de cadenas de if-else complejas, el modelo puede decidir la acción a tomar en un flujo (aprobar, escalar, rechazar) y devolverla en formato parseable.
+- Despliegue en edge o entornos con recursos limitados: las cuantizaciones Q4_K_M (2,8 GB) y Q5_K_M (3,2 GB) permiten ejecutar el modelo en CPUs y GPUs de consumo mediante llama.cpp, ideal para prototipos y servicios de baja concurrencia.
+- Evaluación de respuestas en pipelines de QA: el modelo puede actuar como juez de decisión binaria o multiclase sobre pares pregunta-respuesta, con calibración que facilita el análisis de umbrales.
 
 ## Benchmarks y rendimiento
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-El repositorio GGUF no incluye ninguna tabla de evaluacion. Los resultados que aparecen en los resultados de busqueda (por ejemplo, las filas comparativas de `Mapika/decider` en su MODEL_CARD_4B.md) corresponden a otros modelos de la familia "decider" y no deben atribuirse a Coral-decider-4b.
-
 ## Requisitos de hardware
 
-Los valores de memoria son estimaciones derivadas del numero de parametros (~4B) y del tamano tipico de cada cuantizacion en llama.cpp. El repositorio no publica tamanos de fichero en la informacion disponible, por lo que deben tomarse como orden de magnitud.
-
-- VRAM/RAM estimada por cuantizacion (solo pesos):
-  - Q2_K: ~1,7-2,0 GB
-  - Q3_K_S: ~1,9-2,2 GB
-  - Q3_K_M: ~2,1-2,4 GB
-  - Q3_K_L: ~2,3-2,6 GB
-  - IQ4_XS: ~2,3-2,6 GB
-  - Q4_K_S: ~2,4-2,7 GB
-  - Q4_K_M: ~2,6-2,9 GB
-  - Q5_K_S: ~2,9-3,2 GB
-  - Q5_K_M: ~3,0-3,4 GB
-  - Q6_K: ~3,4-3,8 GB
-  - Q8_0: ~4,4-4,8 GB
-  - f16: ~8,0-8,6 GB
-- Anadir entre 0,5 y 2 GB adicionales para la cache KV, en funcion de la longitud de contexto configurada y del numero de secuencias concurrentes.
-- GPU consumer: practicamente todas las cuantizaciones hasta Q6_K caben en tarjetas con 6-8 GB de VRAM (RTX 3060, RTX 4060, RTX 2070, GTX 1660 con Q3/Q4). Q8_0 requiere 8 GB o mas; f16 requiere 12-16 GB (RTX 4080, RTX 4090, RTX A4000).
-- GPU de centro de datos: A100, H100, L40S o A10 ejecutan cualquier variante con margen amplio y permiten lotes grandes.
-- CPU: las cuantizaciones Q4_K_M e inferiores son viables en CPU moderna con 8-16 GB de RAM; Q2_K y Q3_K_S funcionan incluso en equipos con 4-6 GB de RAM.
-- Opciones de despliegue: llama.cpp (CLI y servidor), Ollama, LM Studio, GPT4All, llama-cpp-python, text-generation-webui y, de forma experimental, el soporte GGUF de vLLM. TGI no soporta GGUF de forma nativa.
-- Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo para este repositorio.
+- VRAM estimada para inferencia: aproximadamente 2,0-2,6 GB con cuantizaciones Q2_K a IQ4_XS; 2,7-3,2 GB con Q4_K_S a Q5_K_M; 3,6-4,6 GB con Q6_K y Q8_0; 8,5 GB con f16. Añadir overhead de contexto KV cache, cuyo tamaño depende de la longitud de contexto no publicada.
+- GPU recomendadas: cualquier GPU con 4-6 GB de VRAM para cuantizaciones Q4/Q5; RTX 3060 12 GB, RTX 4060 Ti 16 GB o superiores para Q6_K/Q8_0 con contextos amplios; A100/H100 no son necesarias para este tamaño, pero pueden usarse para alta concurrencia.
+- Cabe en GPU de consumo: sí, en tarjetas con 4 GB o más para cuantizaciones Q4_K_M/Q5_K_M; incluso GPUs integradas o CPUs modernas pueden ejecutar Q2_K/Q3_K con llama.cpp.
+- Opciones de despliegue: llama.cpp, Ollama (importando GGUF), LM Studio, text-generation-webui, y servidores compatibles con GGUF. Para el modelo base en safetensors: transformers, vLLM o TGI (no confirmado para este modelo específico).
+- Latencia y throughput estimados: no disponibles. Al ser un modelo "one-pass" de 4B, se espera latencia baja en comparación con modelos de razonamiento extendido, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-Todos los modelos listados son cuantizaciones GGUF de ~4B publicadas por el mismo autor, lo que permite una comparacion homogenea en formato y proceso, aunque la informacion publica de cada uno es escasa.
-
-| Modelo | Parametros | Contexto | Licencia | Idiomas | Orientacion declarada |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| mradermacher/Coral-decider-4b-GGUF (este) | ~4B | no disponible | no disponible (consultar modelo base) | no disponible | no disponible |
-| mradermacher/decider-4b-GGUF | ~4B | no disponible | apache-2.0 | ingles | decision-model, calibrated, structured-output, multi-task, one-pass conversational |
-| mradermacher/assay-4b-GGUF | ~4B | no disponible | apache-2.0 | ingles | decision-model, calibrated, conformal-prediction, structured-output |
+| Coral-decider-4b-GGUF | 4.205.751.296 | no disponible | apache-2.0 | GGUF | Modelo de decisión calibrado, one-pass, inglés |
+| Qwen2.5-3B-Instruct | ~3.000 M | 32.768 tokens (aprox.) | apache-2.0 | safetensors, GGUF | Modelo generalista multilingüe con buen rendimiento en instrucciones |
+| Llama-3.2-3B-Instruct | ~3.200 M | 131.072 tokens (aprox.) | Llama 3.2 Community License | safetensors, GGUF | Generalista multilingüe, contexto largo, licencia con restricciones |
+| Phi-3-mini-4K-Instruct | ~3.800 M | 4.096 tokens | MIT | safetensors, GGUF | Generalista entrenado con datos sintéticos de alta calidad |
 
-No se dispone de datos de rendimiento comparativos entre estos tres repositorios. La diferencia principal observable es documental: los repositorios decider-4b y assay-4b declaran licencia Apache 2.0 e idioma ingles, mientras que Coral-decider-4b no declara ninguno de los dos.
+La comparación con modelos generalistas es aproximada: Coral-decider-4b está especializado en decisiones estructuradas y calibradas, mientras que los alternativos son generalistas. No hay datos de benchmarks públicos para Coral-decider-4b que permitan una comparación cuantitativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: no hay informacion sobre arquitectura, datos de entrenamiento, sesgos, idiomas o contexto, lo que impide evaluar el modelo con criterios rigurosos antes de desplegarlo.
-- Licencia no declarada: la metadata del repositorio no especifica licencia. Es imprescindible verificar la licencia del modelo base OceanLabs/Coral-decider-4b antes de cualquier uso comercial; su ausencia no implica permisividad.
-- Riesgo de alucinacion: no cuantificado. En modelos de ~4B la tasa de alucinacion suele ser apreciable, especialmente en tareas de conocimiento factual y razonamiento largo.
-- Degradacion por cuantizacion: las variantes Q2_K, Q3_K_S y Q3_K_M pueden degradar notablemente el rendimiento en tareas sensibles a la precision (matematicas, codigo, instrucciones complejas). Se recomienda Q4_K_M o superior para uso real.
-- Idiomas no confirmados: no hay garantia de soporte de castellano ni de ningun otro idioma distinto del que haya aprendido el modelo base.
-- Longitud de contexto desconocida: no se puede planificar el uso en conversaciones o documentos largos sin consultar el modelo base.
-- Repositorio sin traccion: cero descargas y cero valoraciones en el momento del analisis, sin senales de validacion por parte de la comunidad.
-- Fecha de creacion inusual (2026): conviene confirmar la integridad de los ficheros y la coherencia de los metadatos antes de usarlos en produccion.
-- Idoneidad para agentes y tool calling: no verificada. No debe asumirse que soporte function calling.
+- Información pública muy limitada: no se dispone de datos sobre arquitectura interna, contexto máximo, dataset de entrenamiento ni benchmarks, lo que dificulta evaluar su calidad frente a alternativas.
+- Idiomas: soporta únicamente inglés según los tags; no se recomienda para producción en castellano u otros idiomas sin validación previa.
+- Riesgo de alucinación: como todo modelo generativo, puede producir decisiones estructuradas incorrectas o inconsistentes; la calibración declarada debe validarse en el dominio de uso.
+- Sesgos conocidos: no documentados; al no publicarse detalles del dataset, no es posible evaluar sesgos de género, raza o dominio.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las obligaciones de atribución y las condiciones del modelo base OceanLabs/Coral-4b.
+- Cuantizaciones de baja calidad: Q2_K y Q3_K_M pueden degradar la calibración y precisión de las decisiones; para producción se recomienda Q4_K_M o superior.
+- Sin cuantizaciones imatrix/ponderadas: el autor indica que no estaban disponibles, lo que puede limitar la calidad en cuantizaciones bajas.
+- Contexto desconocido: no se puede planificar el uso en conversaciones multi-turno largas sin conocer la ventana máxima.
+- Compatibilidad de endpoints declarada, pero sin documentación de API específica; requiere validación de integración.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Coral-decider-4b-GGUF
-- Modelo base (citado en la model card): https://huggingface.co/OceanLabs/Coral-decider-4b
-- Repositorio hermano: https://huggingface.co/mradermacher/decider-4b-GGUF
-- Repositorio hermano: https://huggingface.co/mradermacher/assay-4b-GGUF
-- Perfil del autor en Hugging Face: https://www.aimodels.fyi/creators/huggingFace/mradermacher
-- Ficha de referencia de la familia decider (modelo distinto, orientativo): https://www.gradually.ai/en/ai-models/decider-4b/
-- Model card de Mapika/decider (modelo distinto, orientativo): https://github.com/Mapika/decider/blob/main/MODEL_CARD_4B.md
+- [Hugging Face: mradermacher/Coral-decider-4b-GGUF](https://huggingface.co/mradermacher/Coral-decider-4b-GGUF)
+- [Modelo base: OceanLabs/Coral-4b](https://huggingface.co/OceanLabs/Coral-4b)
+- [Página de descargas convenientes del autor](https://hf.tst.eu/model#Coral-decider-4b-GGUF)
+- [README de referencia de TheBloke sobre uso de GGUF](https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF)
+- [Gráfico comparativo de cuantizaciones de ikawrakow](https://www.nethype.de/huggingface_embed/quantpplgraph.png)
+- [Notas de Artefact2 sobre cuantizaciones](https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9)
+- [FAQ y solicitudes de modelos de mradermacher](https://huggingface.co/mradermacher/model_requests)
+- [nethype GmbH](https://www.nethype.de/)

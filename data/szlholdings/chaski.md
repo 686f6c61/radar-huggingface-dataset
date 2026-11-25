@@ -2,96 +2,89 @@
 
 ## Resumen
 
-chaski es un modelo de generacion de texto publicado por SZLHOLDINGS, un consorcio que agrupa sus artefactos bajo la denominacion "governed-AI estate". El modelo se presenta como un ajuste o artefacto entrenado derivado del modelo base Qwen/Qwen3.5-0.8B, lo que lo situa en la categoria de modelos pequenos (menos de 1.000 millones de parametros) orientados a despliegues con recursos limitados. El repositorio declara 873.438.784 parametros reales en formato safetensors y un peso total de 1,8 GB.
+chaski es un modelo de generacion de texto de 873.438.784 parametros publicado por SZLHOLDINGS, un espacio de Hugging Face orientado a lo que su autor denomina "governed-AI estate": artefactos con trazabilidad de origen y resultados verificables mediante recibos de auditoria. El modelo se presenta como un ajuste fino del modelo base Qwen/Qwen3.5-0.8B, del que hereda la arquitectura y el tokenizador, y se distribuye en formato safetensors bajo licencia Apache 2.0.
 
-La relevancia de chaski no reside en una innovacion arquitectonica propia, sino en su enfoque de trazabilidad: la model card insiste en que cualquier afirmacion sobre entrenamiento o evaluacion debe estar respaldada por ficheros de "recibo" (receipts) con marca temporal, y que aquello no verificado se etiqueta explicitamente como UNKNOWN. Esta politica de honestidad documental es poco habitual en el ecosistema y resulta util para equipos que necesitan auditar el origen de un modelo antes de integrarlo.
+La relevancia del artefacto no reside en sus capacidades declaradas, sino en su enfoque de documentacion: la model card explicita que no se afirma ningun resultado de benchmark que no haya sido medido en una auditoria fechada, y etiqueta cada dato como MEASURED, REPORTED o UNKNOWN. En el momento de la ultima auditoria registrada (2026-11-22T23:29:30Z), el modelo no supera el criterio estricto de cadena de recibos completa, con estado UNKNOWN_NO_EVAL_RECEIPT.
 
-Tecnicamente hereda la arquitectura y el tokenizador de Qwen3.5-0.8B, con licencia Apache 2.0 y soporte declarado unicamente para ingles. No se han publicado resultados de benchmarks ni detalles del dataset de ajuste en la informacion disponible, por lo que su evaluacion practica debe hacerse mediante pruebas propias.
+Por tanto, chaski debe evaluarse como un modelo pequeno de la familia Qwen3.5 con un envoltorio de gobernanza y auditoria, no como un modelo con rendimiento documentado. La informacion publica disponible no incluye datos de entrenamiento, composicion del dataset ni resultados de evaluacion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de Qwen3.5-0.8B; tag `qwen3_5`) |
+| Arquitectura | transformer decoder-only (heredada de Qwen/Qwen3.5-0.8B; tag de libreria `qwen3_5`) |
 | Parametros totales | 873.438.784 |
-| Parametros activos | no disponible (no se declara como MoE) |
+| Parametros activos | no disponible (no se declara que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se listan GGUF ni otras variantes) |
-| Idiomas soportados | en |
+| Tipos de cuantizacion | no disponible (repo en safetensors sin variantes GGUF publicadas) |
+| Idiomas soportados | en (ingles, segun metadatos del repo) |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
-| Modelo base | Qwen/Qwen3.5-0.8B |
-| Libreria | transformers |
-| Tamano del repositorio | 1,8 GB |
 
 ## Arquitectura y entrenamiento
 
-chaski es un artefacto derivado de Qwen3.5-0.8B, un transformer decoder-only de la familia Qwen 3.5 con 873 millones de parametros. El tag `qwen3_5` en el repositorio confirma la arquitectura de origen, pero la model card no documenta modificaciones estructurales, cambios de tokenizador ni extensiones de contexto respecto al modelo base. Tampoco se especifica si el ajuste fue por instrucciones (SFT), por preferencias (DPO/RLHF) o por destilacion.
+La arquitectura corresponde a la del modelo base Qwen/Qwen3.5-0.8B, un transformer decoder-only de la familia Qwen3.5, con 873.438.784 parametros totales segun el recuento real de los tensores en safetensors. El tag `qwen3_5` en el repositorio confirma la compatibilidad con la implementacion de esa familia en la libreria `transformers`. No se dispone de informacion sobre numero de capas, dimensiones ocultas, mecanismo de atencion ni vocabulario.
 
-Respecto a los datos de entrenamiento, la card es deliberadamente parca: indica que las afirmaciones sobre entrenamiento y evaluacion viven en ficheros de recibo del "estate mesh" y que cualquier dato no respaldado por esos recibos se marca como UNKNOWN. No se publica numero de tokens, composicion del dataset, mezcla de idiomas ni estrategia de alineacion. La unica innovacion destacable es de gobernanza, no tecnica: generacion determinista de graficos SVG a partir de una instantanea de auditoria con marca temporal (2026-11-20T03:48:04Z) y etiquetado explicito de cada cifra como MEASURED, REPORTED o UNKNOWN.
+Respecto al entrenamiento, la model card no documenta el numero de tokens, la composicion del dataset, ni si hubo etapas de RLHF, DPO o ajuste supervisado. El autor declara explicitamente que cualquier afirmacion de entrenamiento o evaluacion que no aparezca en los ficheros de recibo del "estate mesh" debe considerarse UNKNOWN. La auditoria registrada indica que las rutas estandar de recibos (`eval/frontier-v1/DONE.json`, `final/train_receipt.json`) no constituyen una cadena completa de validacion estricta, por lo que no se emite ninguna afirmacion de calidad sobre el artefacto.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva en ingles, heredada del modelo base Qwen3.5-0.8B.
-- Razonamiento basico y respuesta a instrucciones, en la medida en que el ajuste las preserve (no documentado en la card).
-- Generacion de codigo y matematicas: plausible por herencia del base, pero sin verificacion publicada.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: limitadas al ingles segun el campo `language` del repositorio.
-- Capacidades especiales (vision, audio, modo thinking explicito): no disponible.
-- Trazabilidad documental: cada afirmacion del repositorio se vincula a recibos auditables con fecha de captura.
+- Generacion de texto autoregresiva, heredada del modelo base Qwen3.5-0.8B.
+- Compatibilidad con el pipeline `text-generation` de Hugging Face y carga mediante `transformers`.
+- Capacidades multilingues: los metadatos solo declaran ingles (`en`); no se documentan otros idiomas.
+- Tool calling / function calling: no disponible en la informacion publicada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion publicada.
+- Modo de razonamiento explicito (thinking mode), vision o audio: no disponible en la informacion publicada.
 
 ## Casos de uso
 
-- Clasificacion y etiquetado de texto en ingles a gran escala: con 873 millones de parametros el modelo cabe en una sola GPU de consumo, lo que permite procesar lotes grandes por un coste marginal bajo en tareas de categorizacion, extraccion de entidades o moderacion preliminar.
-- Prototipado rapido de asistentes conversacionales: al ser un modelo pequeno con licencia Apache 2.0, se puede desplegar en un portatil con GPU para validar flujos de dialogo antes de escalar a modelos mayores.
-- Generacion de borradores tecnicos y documentacion: util como primer paso en pipelines de redaccion asistida donde un humano revisa la salida; el tamano reducido permite ejecutarlo en local sin enviar datos a terceros.
-- Entorno de pruebas para investigacion de alineacion: su licencia permisiva y su tamano permiten hacer fine-tuning completo o LoRA en una sola GPU, sirviendo como banco de experimentos reproducible.
-- Filtrado y preprocesado en pipelines de datos: tareas de resumen corto, reescritura o normalizacion de texto en ingles que no requieren razonamiento profundo y se benefician de la baja latencia de un modelo sub-1B.
-- Educacion y demostraciones de gobernanza de IA: el formato de recibos auditables con marcas temporales y etiquetas MEASURED/UNKNOWN lo convierte en un ejemplo didactico de documentacion verificable de modelos.
-- Inferencia en el borde (edge): con 1,8 GB en safetensors y cuantizacion a 8 o 4 bits, es viable en dispositivos con 2-4 GB de memoria, aunque el repositorio no publica variantes GGUF.
+- Clasificacion y etiquetado de texto en ingles: con menos de 900 millones de parametros, el modelo puede ejecutarse en CPU o en GPU de gama baja para tareas de clasificacion por generacion controlada, util en pipelines de preprocesado a gran escala.
+- Generacion de texto auxiliar en entornos con recursos limitados: su tamano permite desplegarlo en dispositivos edge o en contenedores sin GPU dedicada, para resumenes cortos o reescritura de fragmentos.
+- Prototipado de pipelines de `transformers`: al ser compatible con la familia Qwen3.5 y estar en safetensors, sirve para validar integraciones de carga, tokenizacion y generacion antes de escalar a modelos mayores.
+- Experimentacion academica sobre gobernanza de modelos: la estructura de recibos y etiquetado MEASURED/REPORTED/UNKNOWN del repositorio es un caso de estudio sobre trazabilidad de artefactos, independientemente del rendimiento del modelo.
+- Base para ajuste fino especifico de dominio: al ser un modelo pequeno con licencia Apache 2.0, puede servir como punto de partida para fine-tuning en tareas acotadas en ingles con presupuesto de computo reducido.
+- Evaluacion comparativa de modelos pequenos: util como linea base de ~0,87B parametros en estudios que midan el efecto del ajuste fino sobre un modelo base de la misma familia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card declara explicitamente que no se afirma ninguna cifra de benchmark mas alla de lo medido en una auditoria fechada, y no se incluye tal medicion en los datos proporcionados.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card declara explicitamente que no se afirma ningun numero de benchmark mas alla de lo medido en una auditoria fechada, y la auditoria registrada concluye con estado UNKNOWN_NO_EVAL_RECEIPT, sin afirmaciones de calidad para este artefacto.
 
 ## Requisitos de hardware
 
-- VRAM estimada en FP16/BF16: aproximadamente 1,8 GB solo para pesos, mas overhead de activaciones y cache KV; en la practica 3-4 GB con contexto moderado.
-- VRAM estimada en cuantizacion de 8 bits: en torno a 1 GB para pesos; 2-3 GB totales con contexto.
-- VRAM estimada en cuantizacion de 4 bits: en torno a 0,5-0,6 GB para pesos; 1,5-2 GB totales.
-- GPU recomendadas para produccion: A100 40 GB, H100 80 GB o L40S para despliegues con muchas peticiones concurrentes; el modelo es pequeno y el cuello de botella sera el throughput, no la memoria.
-- GPU de consumo: cabe holgadamente en RTX 4090, RTX 4080, RTX 3090, RTX 4070 y en tarjetas con 8 GB o mas; tambien en iGPU con memoria unificada si se usa cuantizacion.
-- Opciones de despliegue: transformers (soporte nativo declarado), vLLM y TGI para serving, llama.cpp/Ollama solo si se generan conversiones GGUF (no publicadas en el repositorio).
+- VRAM estimada para inferencia en fp16/bf16: aproximadamente 1,7-1,8 GB solo para pesos (873M parametros x 2 bytes), mas memoria para cache KV y activaciones.
+- VRAM estimada en cuantizacion de 8 bits: en torno a 0,9-1,0 GB para pesos; en 4 bits, aproximadamente 0,5 GB. No se publican variantes cuantizadas oficiales.
+- GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM es suficiente en fp16; una RTX 3060, RTX 4060 o superior ofrece margen holgado. En entornos de servidor, una A100 o H100 no aporta ventaja por capacidad, solo por paralelismo de peticiones.
+- Cabe en GPU consumer: si, practicamente en cualquier GPU dedicada de los ultimos anos, y es viable en CPU para inferencia de baja concurrencia.
+- Opciones de despliegue: `transformers` (libreria declarada); vLLM, TGI, llama.cpp u Ollama no estan confirmados para este artefacto concreto, y la ausencia de pesos GGUF publicados limita el despliegue directo en llama.cpp/Ollama sin conversion previa.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Idiomas | Notas |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| chaski (SZLHOLDINGS) | 873 M | no disponible | Apache 2.0 | en | Derivado de Qwen3.5-0.8B, documentacion con recibos auditables |
-| Qwen3.5-0.8B (Qwen) | ~0,8 B | no disponible en esta ficha | Apache 2.0 | multilingue (segun modelo base) | Modelo base del que deriva chaski; referencia directa |
-| Llama 3.2 1B (Meta) | 1,2 B | 128 K | Llama 3.2 Community License | multilingue | Alternativa de tamano comparable con contexto largo declarado |
-| Gemma 2 2B (Google) | 2,6 B | 8 K | Gemma Terms of Use | multilingue | Mayor tamano y contexto mas corto; licencia menos permisiva |
+| SZLHOLDINGS/chaski | 873.438.784 | no disponible | Apache 2.0 | Hugging Face, safetensors | Sin benchmarks publicados; estado de recibos UNKNOWN_NO_EVAL_RECEIPT |
+| Qwen/Qwen3.5-0.8B (base) | ~0,8B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face | Modelo base declarado de chaski; referencia directa de comparacion |
+| Otros modelos ~1B de la familia Qwen | ~1B | no disponible | no disponible | Hugging Face | Alternativa de misma escala; requiere verificacion en su propia model card |
 
-La comparacion con Qwen3.5-0.8B es la mas relevante: chaski no documenta mejoras medibles sobre su base, por lo que en ausencia de benchmarks la eleccion entre ambos deberia basarse en la trazabilidad documental que ofrece chaski frente a la documentacion mas completa del modelo original.
+La comparacion con alternativas de terceros no puede completarse con datos verificados en la informacion proporcionada; las filas correspondientes al modelo base y a otros modelos de la familia se incluyen solo como referencia estructural.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks publicados: no hay evidencia de que el ajuste mejore al modelo base en ninguna tarea; podria degradarlo.
-- Idiomas: solo ingles declarado; el rendimiento en castellano no esta verificado y probablemente sea deficiente.
-- Longitud de contexto no documentada: no se puede planificar su uso en tareas de contexto largo sin medirla empiricamente.
-- Riesgo de alucinacion: inherente a modelos de este tamano; sin datos de alineacion ni evaluaciones de veracidad, debe asumirse un riesgo alto en dominios factuales.
-- Sesgos: no se documenta ninguna evaluacion de sesgo, toxicidad o seguridad.
-- Licencia Apache 2.0: permisiva para uso comercial, pero el usuario es responsable de verificar que los terminos del modelo base Qwen3.5-0.8B se respetan en la redistribucion.
-- Procedencia: el autor es un consorcio con poca trazabilidad publica en el ecosistema (0 likes, 655 descargas en el momento de la consulta); conviene auditar los ficheros de recibo antes de un despliegue en produccion.
-- Formato: solo safetensors; no hay GGUF ni cuantizaciones oficiales, lo que anade trabajo si se quiere ejecutar en llama.cpp u Ollama.
-- Nomenclatura de la card: buena parte del contenido es generado automaticamente por herramientas del propio consorcio, lo que limita la informacion tecnica sustantiva disponible.
+- Ausencia de evaluacion: no hay benchmarks ni cadena de recibos completa; el autor no emite afirmaciones de calidad y la auditoria marca el artefacto como UNKNOWN_NO_EVAL_RECEIPT.
+- Idiomas: los metadatos solo declaran ingles; el rendimiento en castellano no esta documentado y no deberia asumirse.
+- Contexto: se desconoce la longitud de contexto soportada; no debe planificarse su uso en escenarios de contexto largo sin verificacion previa.
+- Alucinacion: al ser un modelo de ~0,87B parametros sin evaluacion publicada, el riesgo de fabricacion de datos es alto en tareas factuales; requiere verificacion externa en produccion.
+- Sesgos: no se documenta ninguna evaluacion de sesgo, toxicidad o robustez.
+- Licencia: Apache 2.0 permite uso comercial, pero el usuario asume toda la responsabilidad sobre el comportamiento del modelo al no existir garantias ni evaluaciones publicadas.
+- Gobernanza: la documentacion del repositorio prioriza la trazabilidad sobre las capacidades; no debe interpretarse la existencia de recibos como evidencia de calidad.
+- Produccion: sin datos de latencia, throughput ni estabilidad, no se recomienda su despliegue en sistemas criticos sin una evaluacion propia previa.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/chaski
+- Repositorio Hugging Face: https://huggingface.co/SZLHOLDINGS/chaski
 - Organizacion en Hugging Face: https://huggingface.co/SZLHOLDINGS
-- Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Repositorio de la organizacion en GitHub: https://github.com/szl-holdings
-- Herramienta de generacion de model cards: https://github.com/szl-holdings/estate-cards
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
+- Organizacion en GitHub: https://github.com/szl-holdings
+- Herramienta de generacion de tarjetas: https://github.com/szl-holdings/estate-cards
+- Recibos de auditoria (referenciados en la model card): SZLHOLDINGS/wave-logs, rutas `mesh/2026-11-22/ouroboros/model-receipts-lap1/` y `mesh/2026-11-22/model-receipts/pass3-core/`
+- Ledger de bloqueo: szl-holdings/szl-eval-harness, `ledger/blocking_ledger_v1.json`

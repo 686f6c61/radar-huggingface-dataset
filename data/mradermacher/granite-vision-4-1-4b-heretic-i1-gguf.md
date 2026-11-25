@@ -2,86 +2,94 @@
 
 ## Resumen
 
-Este repositorio contiene una colección de cuantizaciones GGUF del modelo `granite-vision-4.1-4b-heretic`, una variante "abliterated/heretic" del modelo multimodal Granite Vision 4.1 de IBM, publicada por la organización `heretic-org`. El trabajo de cuantización lo realiza `mradermacher`, un autor habitual en el ecosistema GGUF que distribuye versiones comprimidas de modelos para su uso con llama.cpp y derivados. El modelo base combina un backbone de lenguaje tipo Granite (familia de IBM, licencia Apache 2.0 en sus versiones públicas) con un codificador visual, orientado a tareas de comprensión de imágenes y documentos.
+`mradermacher/granite-vision-4.1-4b-heretic-i1-GGUF` es una cuantizacion GGUF del modelo multimodal `heretic-org/granite-vision-4.1-4b-heretic`, una variante "abliterated" (decensored) del modelo Granite Vision 4.1 de 4B de IBM. El trabajo de cuantizacion lo firma mradermacher, un autor habitual en el ecosistema GGUF conocido por publicar versiones imatrix de modelos populares. El modelo base hereda la arquitectura vision-lenguaje de la familia Granite, con aproximadamente 3.400 millones de parametros (3.402.839.040 segun los pesos safetensors del repo base).
 
-El interés de esta ficha radica en que se trata de un artefacto derivado: el repositorio no aporta la model card original del modelo base ni datos de entrenamiento, evaluación o licencia específicos. La información disponible se limita a metadatos de Hugging Face y a los comentarios técnicos del script de cuantización incrustados en el README. Por tanto, muchos campos de esta ficha se marcan como "no disponible" en lugar de inferirse.
+El problema que resuelve es doble: por un lado, ofrece una version de Granite Vision con los mecanismos de rechazo y censura atenuados mediante la tecnica de "abliteration" (modificacion de direcciones de rechazo en el espacio de activaciones), lo que permite usar el modelo en tareas creativas, de analisis de contenido sensible o de investigacion sobre alineamiento sin las negativas sistematicas del modelo original. Por otro, al estar cuantizado en GGUF con distintos niveles (desde IQ1_S hasta Q6_K), permite ejecutar un modelo de vision-lenguaje en hardware consumer modesto, algo imposible con los pesos en precision completa.
 
-Un detalle relevante es la discrepancia entre el nombre del modelo ("4b", que sugiere 4 mil millones de parámetros) y el recuento de parámetros safetensors reportado por Hugging Face (1.887.800, aproximadamente 1,9 millones). Este último dato probablemente corresponde a un tensor parcial o a un artefacto del indexado de Hugging Face, no al total del modelo. Se recomienda verificar el tamaño real antes de planificar el despliegue.
+La relevancia actual radica en que combina tres tendencias: modelos pequenos multimodales ejecutables en local, cuantizacion imatrix de calidad y variantes "uncensored" para casos de uso que el modelo original bloquea. La licencia Apache 2.0 facilita su uso comercial, aunque las implicaciones eticas de una variante decensored requieren cautela.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base multimodal Granite Vision; transformer de lenguaje + codificador visual, según nomenclatura del modelo base) |
-| Parametros totales | no disponible de forma fiable; el nombre indica "4b" (≈4 mil millones); el recuento safetensors reportado es 1.887.800, probablemente parcial |
-| Parametros activos | no disponible (no consta que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ3_XXS, IQ3_XXS, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL (small-IQ4_NL), Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (con variantes de cuantización weighted/imatrix) |
+| Arquitectura | Transformer multimodal vision-lenguaje (base Granite Vision 4.1 de IBM) |
+| Parametros totales | 3.402.839.040 (~3,4B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-IQ4_NL, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (mas fichero imatrix) |
+| Idiomas soportados | en (ingles; segun la model card) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizacion i1/imatrix); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna, los datos de entrenamiento, el número de tokens utilizados ni el proceso de alineación (RLHF/DPO) del modelo base `granite-vision-4.1-4b-heretic`. La model card del repositorio cuantizado no incluye estos datos; solo contiene comentarios del script de cuantización (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`) y la lista de cuantizaciones generadas.
+El modelo base es `heretic-org/granite-vision-4.1-4b-heretic`, una variante del Granite Vision 4.1 de IBM de aproximadamente 3,4B de parametros. Se trata de un transformer multimodal que combina un codificador de vision con un modelo de lenguaje para tareas de comprension de imagen y texto. La variante "heretic" aplica la tecnica de abliteration, que identifica y elimina (o atenua) las direcciones de activacion asociadas al rechazo de peticiones, de modo que el modelo deja de negarse a responder ante ciertos tipos de contenido. Esta tecnica se aplica tipicamente sin reentrenamiento completo, mediante edicion de pesos en las capas de atencion y MLP.
 
-Lo que sí se puede afirmar es el método de cuantización: se han producido cuantizaciones de tipo "weighted/imatrix", es decir, utilizando una matriz de importancia (imatrix) calculada sobre un corpus de calibración para minimizar la pérdida de calidad en los formatos de baja precisión (IQ1, IQ2, IQ3). Esta técnica es la recomendada por llama.cpp para cuantizaciones agresivas por debajo de 4 bits. El sufijo "heretic" indica que el modelo base ha sido sometido a una modificación del comportamiento de rechazo (abliteration), un proceso que altera los pesos para reducir las negativas del modelo ante peticiones, sin datos públicos sobre el método exacto empleado.
+La cuantizacion de mradermacher es de tipo "i1" con fichero imatrix, lo que significa que se ha utilizado una matriz de importancia (importance matrix) calculada sobre un corpus de calibracion para preservar mejor los pesos relevantes en cada nivel de compresion. El autor indica que las cuantizaciones IQ suelen ser preferibles a las no-IQ de tamano similar, y que las versiones estaticas (sin imatrix) estan en el repositorio hermano `granite-vision-4.1-4b-heretic-GGUF`. No se dispone en la informacion proporcionada del numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO en el modelo base original.
 
 ## Capacidades
 
-- Generación de texto multimodal: al derivar de Granite Vision, se espera capacidad de responder a preguntas sobre imágenes, aunque no se documenta en este repositorio.
-- Comprensión de documentos e imágenes: presumiblemente heredada del modelo base, sin confirmación en la información disponible.
-- Razonamiento y código: no disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Modo "thinking", audio u otras capacidades especiales: no disponible.
+- Generacion de texto y razonamiento general en ingles, heredadas del modelo de lenguaje subyacente de Granite.
+- Comprension de imagenes: el modelo es multimodal y acepta entradas de vision junto con texto (los ficheros mmproj, si existen, estan en el repositorio estatico del autor).
+- Conversacion multi-turno (tag `conversational`).
+- Modo "uncensored": al estar abliterated, responde a peticiones que el modelo original rechazaria, util para investigacion sobre alineamiento y generacion creativa sin restricciones.
+- Soporte de tool calling / function calling: no confirmado en la informacion proporcionada (el tag `endpoints_compatible` sugiere compatibilidad con endpoints de inferencia, pero no se detalla).
+- Capacidades de agente y razonamiento multi-paso: no confirmadas en la informacion disponible.
+- Capacidades multilingues: la model card solo declara ingles (`en`); no se confirman otros idiomas.
 
 ## Casos de uso
 
-- Despliegue en entornos con recursos limitados: las cuantizaciones IQ2/IQ3/Q4 permiten ejecutar un modelo de aproximadamente 4 mil millones de parámetros en GPUs de consumo (8-12 GB de VRAM) mediante llama.cpp, algo inviable con los pesos originales en precisión completa.
-- Prototipado rápido de pipelines multimodales: usar la variante Q4_K_M como punto de partida para validar flujos de extracción de información de imágenes antes de invertir en infraestructura mayor.
-- Investigación sobre abliteration: comparar el comportamiento del modelo "heretic" frente al Granite Vision original para estudiar el efecto de la modificación de rechazos en tareas de visión-lenguaje.
-- Experimentación con cuantización imatrix: evaluar la degradación de calidad entre las distintas variantes (IQ1_S a Q6_K) sobre tareas de comprensión de imágenes, dado que el repositorio ofrece prácticamente toda la escala de bits.
-- Inferencia local en estaciones de trabajo sin GPU dedicada: las variantes Q2/Q3 pueden ejecutarse en CPU con llama.cpp, útil para demos offline o entornos air-gapped.
-- Evaluación comparativa de formatos GGUF: servir como caso de estudio para medir throughput y latencia entre Q4_0, Q4_K_M e IQ4_XS en hardware consumer.
+- Investigacion sobre alineamiento y seguridad: la variante abliterated permite estudiar como se comporta un modelo sin mecanismos de rechazo, comparandolo con el original para analizar sesgos y patrones de negativa en el espacio de activaciones.
+- Generacion creativa sin restricciones: escritura de ficcion, guiones o narrativa que aborde temas sensibles (violencia, contenido adulto no explicito, temas controvertidos) sin las negativas sistematicas del modelo alineado.
+- Analisis de imagenes en local: al ser un modelo de vision de 4B cuantizado a 2-3 GB, permite describir, clasificar o extraer informacion de imagenes en equipos consumer sin enviar datos a la nube, util en entornos con requisitos de privacidad.
+- Prototipado rapido de aplicaciones multimodales: con cuantizaciones Q4_K_M de ~2,2 GB, se puede desplegar en un portatil con GPU modesta para validar ideas de producto antes de invertir en modelos mayores.
+- Educacion e investigacion academica: el bajo coste de inferencia y la licencia Apache 2.0 permiten usarlo en laboratorios con recursos limitados para experimentos de vision-lenguaje.
+- Moderacion de contenido asistida: analisis de imagenes y texto para detectar contenido sensible en pipelines internos, donde un modelo decensored puede describir el contenido sin filtros que oculten la naturaleza del material (con las cautelas eticas correspondientes).
+- Despliegue en edge computing: las cuantizaciones IQ2/IQ3 (1,1-1,7 GB) caben en dispositivos con poca memoria, permitiendo inferencia multimodal en entornos embebidos o moviles de gama alta.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio cuantizado no incluye tablas de MMLU, HumanEval, GSM8K ni metricas multimodales, y no se dispone de datos del modelo base en la informacion proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma exacta. Para un modelo de ~4B parámetros, las estimaciones habituales serían aproximadamente 2-3 GB en Q2_K, 2,5-3,5 GB en Q3_K_M, 3-4 GB en Q4_K_M y 5-6 GB en Q6_K, pero estos valores son orientativos y no proceden de la información proporcionada.
-- GPU recomendadas: no disponible. Por tamaño, cabría en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 o GPUs profesionales A100/H100, pero sin confirmación oficial.
-- Compatibilidad con GPU de consumo: probable para cuantizaciones Q2-Q4 en GPUs de 8 GB o más, sin datos verificados.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, LM Studio, koboldcpp y servidores compatibles con GGUF. vLLM y TGI no son la vía natural para este artefacto, aunque vLLM ha incorporado soporte GGUF experimental.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia (aproximada, segun tamano de cuantizacion y overhead de contexto):
+  - i1-IQ1_S (~0,9 GB): ~1,5-2 GB de VRAM.
+  - i1-IQ2_M (~1,3 GB): ~2-2,5 GB.
+  - i1-IQ3_M (~1,7 GB): ~2,5-3 GB.
+  - i1-Q4_K_M (~2,2 GB): ~3-3,5 GB.
+  - i1-Q5_K_M (~2,5 GB): ~3,5-4 GB.
+  - i1-Q6_K (~2,9 GB): ~4-4,5 GB.
+- GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060) para cuantizaciones Q4; RTX 3090/4090 o A100/H100 para mayor velocidad y contextos largos.
+- Cabe en GPU consumer: si, en la mayoria de tarjetas con 4 GB o mas usando cuantizaciones Q4 o inferiores. Las cuantizaciones IQ2/IQ3 caben incluso en iGPU y dispositivos con 2-3 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF (koboldcpp, text-generation-webui). Para vision es necesario cargar tambien el fichero mmproj correspondiente del repositorio estatico.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada. Como referencia cualitativa, un modelo de 4B en Q4_K_M en una RTX 4090 suele generar decenas de tokens por segundo, pero no se aportan cifras medidas para este modelo concreto.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| granite-vision-4.1-4b-heretic-i1-GGUF (este) | ≈4B (nombre) | no disponible | no disponible | GGUF | Hugging Face |
-| granite-vision-4.1-4b-heretic (base) | ≈4B | no disponible | no disponible | safetensors | Hugging Face (heretic-org) |
-| Granite Vision 4.1 (IBM, original) | ≈4B | no disponible en esta ficha | Apache 2.0 (versiones públicas de IBM Granite) | safetensors | Hugging Face (ibm-granite) |
+| granite-vision-4.1-4b-heretic-i1-GGUF (este) | ~3,4B | no disponible | si | Apache 2.0 | GGUF en HF |
+| Granite Vision 4.1 4B (original IBM) | ~3,4B | no disponible | si | Apache 2.0 | safetensors en HF |
+| LLaVA 1.5 7B | ~7B | no disponible | si | LLaMA 2 (uso comercial restringido) | safetensors/GGUF |
+| Qwen2-VL 2B | ~2B | no disponible | si | Apache 2.0 | safetensors/GGUF |
 
-La comparación con alternativas de otros fabricantes (Qwen2-VL, Llama 3.2 Vision, Phi-3.5-vision) no puede realizarse con rigor porque faltan datos de rendimiento del modelo base en la información disponible.
+La comparativa se limita a la categoria de modelos vision-lenguaje pequenos (2-7B). Frente al Granite Vision original, la diferencia principal es la atenuacion de rechazos (abliteration); frente a LLaVA 7B, este modelo es mas pequeno y con licencia mas permisiva; frente a Qwen2-VL 2B, ofrece mas parametros pero se desconoce su rendimiento relativo al no haber benchmarks publicados en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- Ausencia de model card completa: no hay información sobre licencia, idiomas, contexto ni datos de entrenamiento; no se recomienda uso comercial sin verificar la licencia del modelo base en `heretic-org/granite-vision-4.1-4b-heretic`.
-- Discrepancia en el recuento de parámetros: el valor safetensors (1.887.800) contradice el "4b" del nombre; conviene inspeccionar los tensores reales antes de desplegar.
-- Riesgo de alucinación: inherente a los modelos de lenguaje; no hay evaluación publicada que lo cuantifique en esta variante.
-- Efecto de la abliteration: la modificación "heretic" puede degradar la coherencia, la seguridad o el rendimiento en tareas específicas; no hay datos que lo confirmen ni lo descarten.
-- Cuantizaciones agresivas (IQ1/IQ2): pérdida de calidad significativa esperada, especialmente en tareas de percepción visual, aunque el uso de imatrix mitiga parte del efecto.
-- Sesgos: no documentados; presumiblemente heredados del corpus de entrenamiento del modelo base.
-- Licencia incierta: si el modelo base es Apache 2.0 (como las publicaciones públicas de IBM Granite), la redistribución de cuantizaciones es posible con atribución; debe verificarse.
-- Repositorio con 0 descargas y 1 like: artefacto muy reciente (creado el 21 de noviembre de 2026) y sin validación comunitaria.
+- Alucinacion: como todo modelo de lenguaje de 4B, tiene riesgo elevado de generar informacion falsa, especialmente en tareas de razonamiento complejo o descripcion de imagenes ambiguas.
+- Sesgos: la abliteration elimina los mecanismos de rechazo pero no los sesgos subyacentes del modelo original; puede producir contenido ofensivo, estereotipado o inapropiado sin filtro.
+- Limitacion de idioma: la model card solo declara ingles; el rendimiento en castellano u otros idiomas no esta garantizado y probablemente sea deficiente.
+- Contexto: no se dispone de la longitud de contexto en la informacion proporcionada; conviene verificar la model card del modelo base antes de usarlo en tareas de contexto largo.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el caracter "uncensored" puede incumplir politicas de plataformas (Hugging Face, proveedores cloud) y legislacion sobre contenido en determinadas jurisdicciones; el usuario asume la responsabilidad legal del contenido generado.
+- Caveat de produccion: las cuantizaciones IQ1/IQ2 degradan notablemente la calidad; para uso real se recomienda Q4_K_M o superior. Ademas, para vision hay que cargar el mmproj del repositorio estatico, no incluido en este repositorio i1.
+- Trazabilidad: al ser una cuantizacion de una variante abliterated de un modelo de terceros, la cadena de responsabilidad sobre el comportamiento final es difusa; no hay garantias de que el proceso de abliteration no haya degradado capacidades generales.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/granite-vision-4.1-4b-heretic-i1-GGUF
-- Modelo base (referenciado en el README): https://huggingface.co/heretic-org/granite-vision-4.1-4b-heretic
-- Familia Granite Vision de IBM: https://huggingface.co/ibm-granite (referencia general de la familia, no enlazada directamente en la información proporcionada)
-- llama.cpp (runtime recomendado para GGUF): https://github.com/ggerganov/llama.cpp (no enlazado en la información proporcionada)
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/granite-vision-4.1-4b-heretic-i1-GGUF
+- Modelo base: https://huggingface.co/heretic-org/granite-vision-4.1-4b-heretic
+- Cuantizaciones estaticas del mismo autor: https://huggingface.co/mradermacher/granite-vision-4.1-4b-heretic-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#granite-vision-4.1-4b-heretic-i1-GGUF
+- Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

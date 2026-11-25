@@ -5,7 +5,7 @@
   "author": "Digilidaahz",
   "url": "https://huggingface.co/Digilidaahz/Freedream-1B-Instruct-V2",
   "created_at": "2026-11-01T08:38:11.000Z",
-  "updated_at": "2026-11-08T02:03:20.000Z",
+  "updated_at": "2026-11-24T11:20:53.000Z",
   "license": "creativeml-openrail-m",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -16,6 +16,7 @@
     "1B",
     "custom-architecture",
     "from-scratch",
+    "text-generation-inference",
     "text-generation",
     "en",
     "base_model:Digilidaahz/Freedream_1B_BaseModel",
@@ -42,5 +43,11 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "Discover 66 Napkin Folding Ideas - Instructions (Easy & Hard)",
+      "url": "https://www.diy-magazine.com/instructions/napkin-folding/",
+      "snippet": "Learn more than 66 Napkin Folding Instruction with our detailed step-by-step instructions Easy & Hard For Cloth- and Paper Napkins"
+    }
+  ]
 }

@@ -2,130 +2,123 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-NanoSeedLM-TQ3 es una cuantización de investigación del modelo Qwen/Qwen3.8-Flash-Next, publicada por el usuario txgsync. Se trata de un empaquetado que combina los pesos densos en 8 bits MLX con los expertos enrutados del modelo original codificados con trellis (K = 3, estados de 12 bits) a 3,125 bits por peso, reduciendo los 120,8 B de pesos de expertos a 47,2 GB. El resultado es un modelo MoE de 56,69 B de parámetros totales (según safetensors) ejecutable en GPUs de 16 GB con 64 GB de RAM del sistema y en Macs de 96 GB.
+Qwen3.8-Flash-Next-NanoSeedLM-TQ3 es una cuantización de investigación del modelo Qwen3.8-Flash-Next de Alibaba Qwen, publicada por el usuario txgsync. Se trata de un empaquetado de pesos que reduce el modelo original (aproximadamente 120.800 millones de parámetros en pesos de expertos enrutados, más pesos densos, con un total real de 68.954.623.455 parámetros según los safetensors del repo) a un formato de 3,125 bits por peso de experto mediante un esquema de cuantización denominado TCQ (Trellis Coded Quantization) implementado en los motores NanoSeedLM.
 
-El modelo base Qwen3.8-Flash-Next es un MoE de aproximadamente 125 B de parámetros principales más 51 B de embeddings N-gram, con 6 B de parámetros activos por token, desarrollado por Qwen (Alibaba). Esta variante concreta no es un modelo nuevo: es un experimento de compresión extrema que busca preservar la calidad del BF16 con una huella de memoria muy reducida, a costa de una divergencia KL medible y de requerir un motor de inferencia específico (NanoSeedLM), ya que mlx-vlm y oMLX todavía no cargan los expertos trellis.
+El objetivo declarado es hacer ejecutable un modelo MoE de gran tamaño en equipos de consumo: un PC con GPU de 12 o 16 GB de VRAM y 64 GB de RAM, manteniendo los pesos de expertos en RAM y cacheando en la GPU los expertos en uso. La divergencia KL frente a BF16 es de 0,0778, un 16 % inferior a los empaquetados de Unsloth del mismo tamaño según el autor. En una RTX 4080 con CUDA decodifica a 44,0 tokens por segundo, y a 43,1 tras un prompt de 30.000 tokens.
 
-Es relevante ahora porque demuestra una vía práctica para servir modelos MoE de gran tamaño en hardware de consumo, con métricas de calidad explícitas (KLD media de 0,0778 frente a BF16) y velocidades medidas (61,3 tok/s en una RTX 4080 de 16 GB, 48,8 tok/s en un M4 Max). No obstante, es una vista previa de investigación, no un artefacto listo para producción.
+Es un research preview: requiere código remoto (Trust Remote Code) y motores específicos (NanoSeedLM en CUDA/Metal, mlx-vlm, oMLX con un parche concreto). No es un modelo nuevo, sino un artefacto de compresión y despliegue sobre el modelo base Qwen3.8-Flash-Next, con licencia qwen-community-1.0 heredada.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (base Qwen3.8-Flash-Next), con expertos enrutados codificados con trellis |
-| Parámetros totales | 56.687.443.859 (safetensors); el modelo base declara ~125 B principales + 51 B de embeddings N-gram |
-| Parámetros activos | 6 B por token (según el modelo base) |
-| Longitud de contexto | 32.768 tokens en el ejemplo de servicio (`--ctx 32768`); el máximo del modelo base no está disponible en la información proporcionada |
-| Tipos de cuantización | Expertos enrutados: trellis K = 3, 3,125 bits/peso; pesos densos: 8 bits MLX; tabla PLE: 4 bits MLX; MTP head incluido |
+| Arquitectura | MoE (mezcla de expertos) sobre transformer, con pesos densos y expertos enrutados; formato de pesos MLX (custom_code) |
+| Parametros totales | 68.954.623.455 (safetensors); 120,8 B en pesos de expertos enrutados según la model card |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible (la model card menciona pruebas con prompts de 30.000 tokens) |
+| Tipos de cuantizacion | Expertos a 3,125 bits (Trellis K3); pesos densos a 8 bits; tabla PLE n-gram en disco. Familia: TCQ4 (4,125 bits), TCQ3-D4 (3,458 bits), TCQ3 (3,125 bits), P4 (4,5 bits), P3 (4,0 bits) |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (Qwen Community License 1.0) |
-| Formato de pesos | safetensors (densos, PLE, vision tower, MTP head) + ficheros `.blkt` (expertos trellis); repo de 86,5 GB |
+| Licencia | qwen-community-1.0 (license: other) |
+| Formato de pesos | safetensors en formato MLX (librería mlx), con custom_code; requiere Trust Remote Code |
+| Tamano del repo | 195,6 GB (descarga del pack TCQ3: 112,1 GB) |
+| Memoria residente | ~55 GB (47,2 GB de expertos + pesos densos 8-bit) |
+| Divergencia KL vs BF16 | 0,0778 (64 ventanas de 2.048 tokens de wikitext-2) |
+| Descargas | 314 |
+| Creado / actualizado | 2026-11-06 / 2026-11-07 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer de mezcla de expertos con 6 B de parámetros activos por token y una tabla adicional de embeddings N-gram (PLE) de 32 GB en esta variante. Esta publicación no entrena nada: reempaqueta los pesos del modelo original. Los expertos enrutados (`gate_proj`, `up_proj`, `down_proj` de las capas 0 a 47 y de la cabeza MTP, capa 48) se codifican con trellis K = 3: cada peso es un código de una ventana de 12 bits de un flujo de bits, y pesos vecinos comparten bits. No se almacena codebook; el valor se obtiene con una suma-multiplicación fija sobre la ventana. Los pesos densos provienen de `mlx-community/Qwen3.8-Flash-Next-oQ8e-mtp` en 8 bits MLX, y las estadísticas de activación para la cuantización proceden de la imatrix de Unsloth.
+El modelo base Qwen3.8-Flash-Next es una arquitectura de mezcla de expertos (MoE) con pesos densos y expertos enrutados. Esta ficha no documenta el entrenamiento del modelo base (número de tokens, composición del dataset, RLHF/DPO), por lo que esos datos no están disponibles en la información proporcionada. Lo relevante aquí es el proceso de cuantización: los 120,8 B de pesos de expertos se comprimen a 3,125 bits por peso mediante un código de trellis (TCQ) que reconstruye cada peso a partir de unos pocos bits almacenados con aritmética entera, sin almacenar codebook. Los pesos densos se mantienen a 8 bits, y la tabla PLE n-gram permanece en disco, con la caché de páginas sirviendo las filas que lee cada sesión.
 
-La innovación técnica es la codificación trellis aplicada a expertos, inspirada en QTIP (arXiv:2406.11235), que permite 3,125 bits por peso con una divergencia KL moderada. La tabla PLE de 32 GB permanece en disco y la caché de página mantiene las filas leídas durante la ejecución. En GPU, los expertos enrutados residen en memoria del sistema y una caché mantiene en VRAM los usados. El motor NanoSeedLM (CUDA en Linux y Windows, Metal en macOS) es el único que implementa los kernels trellis. No se dispone de información sobre la composición del dataset de entrenamiento del modelo base ni sobre si hubo RLHF o DPO.
+La innovación técnica principal es doble. Por un lado, el esquema TCQ frente a los "seeds" de las variantes P3/P4: con los mismos pesos densos a 8 bits, TCQ4 da KL 0,0398 a 4,125 bits, P4 da 0,0408 a 4,5 bits y P3 da 0,0600 a 4,0 bits, es decir, el trellis es más cercano a BF16 por bit. Por otro, la decisión de mantener los pesos densos a 8 bits: aunque son una fracción pequeña de los bytes, en P3 y P4 causan la mayor parte del KL (P3 pasa de 0,0600 con densos 8-bit a 0,182 con los 4-bit que distribuye; P4 de 0,0408 a 0,169). El coste es velocidad: los packs TCQ leen 1,84 GB más por token y en M4 Max decodifican aproximadamente un 15 % más lento que P3. No se documenta decodificación especulativa ni atención lineal en la información disponible.
 
 ## Capacidades
 
-- Generación de texto conversacional multiturno, con plantilla de chat incluida.
-- Razonamiento y código: el modelo base se posiciona explícitamente en capacidades de programación superiores a Qwen3.7-Plus según su repositorio.
-- Entrada image-text-to-text declarada en el pipeline, con vision tower incluido en los ficheros; sin embargo, el autor indica que no probó entrada de imagen ni vídeo.
-- Cabeza MTP (multi-token prediction) incluida, lo que habilita decodificación especulativa en el motor.
-- Servicio de API compatible con OpenAI mediante `nslm-serve`.
-- Capacidades de tool calling y agentes: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
+- Generación de texto conversacional multi-turno (pipeline image-text-to-text, etiquetas conversational).
+- Procesamiento de imagen y texto combinados (image-text-to-text, mlx-vlm), aunque el detalle de las capacidades de visión no se especifica en la model card.
+- Razonamiento y generación de código y matemáticas: no se documentan explícitamente en la información proporcionada; deben asumirse las del modelo base Qwen3.8-Flash-Next, sin datos verificables aquí.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponibles (idiomas no listados).
+- Capacidad especial: modo de cuantización extrema (3,125 bits por experto) que permite ejecutar el modelo con 12-16 GB de VRAM y 64 GB de RAM, con servidor compatible con la API de OpenAI en el puerto 8080.
+- Ejecución en CUDA (Linux y Windows) y Metal (macOS) mediante los motores NanoSeedLM, además de mlx-vlm y oMLX.
 
 ## Casos de uso
 
-- Inferencia local de un MoE de gran tamaño en GPU de consumo: con una RTX 4080 de 16 GB y 64 GB de RAM, el modelo cabe gracias a que los expertos viven en memoria del sistema y solo se cachean en VRAM los usados, con 61,3 tok/s medidos.
-- Estación de trabajo en Mac: en un M4 Max de 128 GB se obtienen 48,8 tok/s, lo que permite usar el modelo como asistente de código local sin conexión.
-- Servicio interno compatible con OpenAI: `nslm-serve --ctx 32768 --port 8080` expone el modelo para integrarlo en herramientas que ya consumen la API de OpenAI, con contexto de 32K para conversaciones largas o documentos extensos.
-- Evaluación de técnicas de compresión: el pack sirve para reproducir las mediciones de KLD y comparar trellis frente a cuantizaciones GGUF de Unsloth en el mismo pipeline de llama.cpp.
-- Investigación sobre decodificación especulativa: la cabeza MTP incluida permite experimentar con predicción multi-token en el motor NanoSeedLM.
-- Prototipado de asistentes con contexto largo: 32.768 tokens cubren casos de análisis de documentos medianos y conversaciones multi-turno, siempre que se acepte la divergencia frente a BF16.
+- Despliegue local de un MoE de gran tamaño en estaciones de trabajo de consumo: con una GPU de 12-16 GB y 64 GB de RAM, el pack TCQ3 mantiene los expertos en RAM y cachea en VRAM los expertos activos, permitiendo servir el modelo sin infraestructura de centro de datos.
+- Servicio de API compatible con OpenAI en local: el script de arranque levanta un servidor en el puerto 8080, lo que permite integrarlo como backend en aplicaciones existentes que ya consumen la API de OpenAI sin cambios de cliente.
+- Procesamiento de documentos largos con imagen y texto: la combinación de pipeline image-text-to-text y prompts de hasta 30.000 tokens (con decodificación a 43,1 tok/s en RTX 4080) es adecuada para tareas de extracción y resumen sobre documentos escaneados o capturas.
+- Experimentación en investigación sobre cuantización extrema: las cinco variantes (TCQ4, TCQ3-D4, TCQ3, P4, P3) permiten comparar esquemas trellis frente a seeds con métricas KL publicadas, útil para estudiar el compromiso bits-fidelidad en MoE.
+- Prototipado en Apple Silicon: con 96-128 GB de memoria unificada, los packs TCQ y P3 se ejecutan vía mlx-vlm u oMLX, sirviendo como banco de pruebas de modelos grandes en macOS.
+- Evaluación de viabilidad antes de invertir en hardware: la tabla de la model card permite decidir qué pack cabe en una máquina concreta (por ejemplo, TCQ3-D4 para 96 GB de RAM con contexto largo, TCQ4 para 128 GB con la menor KL) antes de comprar GPU o ampliar RAM.
+- Investigación sobre seeds y códigos trellis: los packs P4 y P3 están orientados explícitamente a la investigación sobre SeedLM y sus semillas.
 
 ## Benchmarks y rendimiento
 
-Calidad medida como divergencia KL frente a BF16 en llama.cpp, sobre 64 ventanas de 2.048 tokens de wikitext-2:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Los únicos datos de rendimiento son métricas de cuantización y velocidad:
 
-| Métrica | Este pack (TQ3) | BF16 |
-|---|---|---|
-| KLD media | 0,0778 ± 0,0008 | 0 |
-| KLD mediana | 0,0217 | 0 |
-| KLD percentil 99 | 0,939 | 0 |
-| Acuerdo top-1 | 90,40% | 100% |
-| Perplejidad | 3,865 | 3,802 |
-
-Comparación con packs de Unsloth medidos del mismo modo:
-
-| Pack | Bits por peso de experto | KLD media |
-|---|---|---|
-| Este pack (TQ3) | 3,125 | 0,0778 |
-| Unsloth UD-Q4_K_XL | 5,101 | 0,0304 |
-| Unsloth UD-IQ4_XS | 3,999 | 0,0509 |
-| Unsloth UD-Q3_K_XL | 3,720 | 0,0593 |
-| Unsloth UD-IQ3_XXS | 3,331 | 0,0735 |
-| Unsloth UD-Q2_K_XL | 3,049 | 0,0994 |
-
-Velocidad de decodificación (prompt de código, 256 tokens, pesos densos 4-bit MLX de las primeras builds; el autor advierte que los densos 8-bit de esta release leen 1,7 veces más bytes y pueden ser más lentos):
-
-| Máquina | Tokens/s |
+| Metrica | Valor |
 |---|---|
-| RTX 4080 (16 GB), caché automática de expertos | 61,3 |
-| M4 Max (128 GB) | 48,8 |
+| KL vs BF16 (TCQ3, tal como se distribuye) | 0,0778 |
+| KL vs BF16 (TCQ4) | 0,0415 |
+| KL vs BF16 (TCQ3-D4) | 0,0638 |
+| KL vs BF16 (P4) | 0,169 |
+| KL vs BF16 (P3) | 0,182 |
+| KL con densos 8-bit (TCQ4 / P4 / P3) | 0,0398 / 0,0408 / 0,0600 |
+| Decodificacion en RTX 4080 (16 GB, CUDA) | 44,0 tok/s |
+| Decodificacion tras prompt de 30.000 tokens | 43,1 tok/s |
+| Decodificacion en RTX 4080 limitada a 12 GB | 27 tok/s |
+| TCQ4 vs P3 en M4 Max | ~15 % mas lento TCQ4 |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+Metodología KL: 64 ventanas de 2.048 tokens de wikitext-2, con tabla PLE Q8_0 de Unsloth, frente a BF16 en llama.cpp.
 
 ## Requisitos de hardware
 
-- Memoria residente estimada: unos 55 GB con este pack (expertos 47,2 GB + densos 8-bit + vision tower + MTP head); la tabla PLE de 32 GB queda en disco.
-- Configuración mínima indicada por el autor: GPU de 16 GB con 64 GB de RAM del sistema; Mac de 96 GB (un Mac de 64 GB no está probado).
-- GPUs recomendadas: RTX 4080 de 16 GB (medida), GPUs de 24 GB o más con 96-128 GB de RAM para el pack TQ4 de mayor calidad.
-- Cabe en GPU de consumo: sí, en el rango de 16 GB de VRAM siempre que el sistema tenga 64 GB de RAM o más, porque los expertos enrutados residen en host memory.
-- Despliegue: exclusivamente mediante el motor NanoSeedLM (`nslm-chat` y `nslm-serve` con API compatible con OpenAI). mlx-vlm y oMLX no pueden cargarlo todavía; no hay soporte de vLLM, llama.cpp, Ollama ni TGI para estos pesos trellis.
-- Rendimiento medido: 61,3 tok/s en RTX 4080 y 48,8 tok/s en M4 Max, con la salvedad de que corresponden a builds con densos 4-bit.
+- VRAM: 12-16 GB en GPU para cachear expertos; los 47,2 GB de expertos TCQ3 residen en RAM (total residente ~55 GB).
+- RAM: mínimo 64 GB para TCQ3; 96-128 GB para TCQ4 y TCQ3-D4; menos de 64 GB no es viable porque los expertos deben caber en RAM.
+- GPU recomendadas: RTX 4080 (16 GB) con CUDA; RTX 4080 limitada a 12 GB funciona a 27 tok/s. No se documentan A100 ni H100 en la información proporcionada.
+- Apple Silicon: Mac con 128 GB (TCQ4 o P3 para velocidad) y Mac con 96 GB (TCQ3-D4 para contexto largo).
+- Consumer GPU: sí, en el rango de 12-16 GB, siempre que se cumpla el requisito de RAM del sistema.
+- Despliegue: motores NanoSeedLM (CUDA en Linux y Windows, Metal en macOS), mlx-vlm con Trust Remote Code, oMLX con el parche jundot/omlx#5112. El script de arranque (START-HERE.bat o start-here.sh) verifica la máquina, descarga y comprueba el pack y levanta un servidor compatible con OpenAI en el puerto 8080.
+- Latencia y throughput: 44,0 tok/s en RTX 4080 con 16 GB; 43,1 tok/s tras prompt de 30.000 tokens; 27 tok/s con 12 GB. TCQ4 aproximadamente un 15 % más lento que P3 en M4 Max por los pesos densos a 8 bits (1,84 GB adicionales leídos por token).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Calidad (KLD vs BF16) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Este pack (TQ3) | 56,69 B totales, 6 B activos | 32.768 en servicio | 0,0778 | qwen-community-1.0 | NanoSeedLM (CUDA/Metal) |
-| TQ3-D4 (mismo autor) | igual base | igual | 0,0638 | qwen-community-1.0 | NanoSeedLM; 16 GB GPU + 96-128 GB RAM |
-| TQ4 (mismo autor) | igual base | igual | 0,0415 | qwen-community-1.0 | NanoSeedLM; 24 GB GPU + 96-128 GB RAM o Mac de 128 GB |
-| Unsloth UD-Q3_K_XL | igual base | según llama.cpp | 0,0593 | qwen-community-1.0 | GGUF en llama.cpp |
+| Modelo | Parametros | Bits expertos | Memoria | KL vs BF16 | Licencia | Runtime |
+|---|---|---|---|---|---|---|
+| Qwen3.8-Flash-Next-NanoSeedLM-TCQ3 (este) | 68,95 B (safetensors) | 3,125 | ~55 GB | 0,0778 | qwen-community-1.0 | NanoSeedLM, mlx-vlm, oMLX |
+| Qwen3.8-Flash-Next-NanoSeedLM-TCQ4 | mismo base | 4,125 | ~70 GB | 0,0415 | qwen-community-1.0 | NanoSeedLM, mlx-vlm, oMLX |
+| Qwen3.8-Flash-Next-NanoSeedLM-TCQ3-D4 | mismo base | 3,458 | ~60 GB | 0,0638 | qwen-community-1.0 | NanoSeedLM, mlx-vlm, oMLX |
+| Qwen3.8-Flash-Next-NanoSeedLM-P4 | mismo base | 4,5 | ~74 GB | 0,169 | qwen-community-1.0 | NanoSeedLM, mlx-vlm, oMLX |
+| Qwen3.8-Flash-Next-NanoSeedLM-P3 | mismo base | 4,0 | ~66 GB | 0,182 | qwen-community-1.0 | NanoSeedLM, mlx-vlm, oMLX |
 
-Frente a las alternativas GGUF de Unsloth, este pack ocupa menos bits por peso de experto (3,125 frente a 3,720 del UD-Q3_K_XL) pero obtiene peor KLD (0,0778 frente a 0,0593), y a cambio exige un motor específico. Los packs TQ3-D4 y TQ4 del mismo autor ofrecen mejor calidad a costa de más memoria.
+No se dispone de comparación con modelos de otros autores (por ejemplo, cuantizaciones GGUF de llama.cpp o packs de Unsloth) más allá de la referencia cualitativa del autor de que TCQ3 está un 16 % por debajo en KL respecto a los packs de Unsloth del mismo tamaño. Los datos cuantitativos de esa comparación no están disponibles.
 
 ## Limitaciones y advertencias
 
-- Es una vista previa de investigación: la salida no es idéntica a la del modelo original.
-- Divergencia medible frente a BF16: KLD media de 0,0778 y acuerdo top-1 del 90,40%, con un percentil 99 de 0,939 que indica colas de error apreciables.
-- Compatibilidad muy restringida: solo NanoSeedLM; mlx-vlm y oMLX no tienen kernels trellis, y no hay soporte en vLLM, llama.cpp, Ollama ni TGI.
-- Entrada de imagen y vídeo no probada, pese a que el pipeline declarado sea image-text-to-text.
-- La tabla PLE en 4-bit MLX no está medida frente a BF16; las cifras de KL usan la tabla Q8_0 de Unsloth.
-- Las mediciones de velocidad proceden de un único PC (RTX 4080) y un único Mac (M4 Max), y corresponden a builds con densos 4-bit, no a los densos 8-bit de esta release.
-- Idiomas soportados no documentados; no se puede garantizar cobertura multilingüe.
-- Licencia Qwen Community License 1.0: conviene revisar sus condiciones antes de cualquier uso comercial, ya que no es una licencia permisiva estándar.
-- Riesgo de alucinación y sesgos del modelo base: no documentados en la información disponible.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: sin validación comunitaria.
+- Research preview: no es un artefacto listo para producción estable; depende de motores y parches concretos (jundot/omlx#5112) y de Trust Remote Code.
+- Licencia qwen-community-1.0: es una licencia "other" con términos comunitarios; deben revisarse las restricciones de uso comercial en el enlace de licencia del modelo base antes de desplegarlo en producto.
+- Idiomas soportados no documentados: no se puede garantizar cobertura multilingüe ni calidad por idioma.
+- Contexto máximo no documentado: solo se verifican prompts de 30.000 tokens; no se conoce la ventana oficial.
+- Requisito estricto de RAM: con menos de 64 GB el pack no es viable; el rendimiento depende de la caché de expertos en GPU (27 tok/s con 12 GB frente a 44 tok/s con 16 GB).
+- Divergencia KL de 0,0778 frente a BF16: implica degradación medible de calidad respecto al modelo original, mayor que TCQ4 (0,0415) y TCQ3-D4 (0,0638).
+- Riesgo de alucinación y sesgos: no documentados en la información proporcionada; deben evaluarse empíricamente sobre el modelo base.
+- Pesos densos a 8 bits penalizan velocidad (1,84 GB más por token, ~15 % más lento que P3 en M4 Max).
+- La tabla PLE n-gram reside en disco: el rendimiento depende de la caché de páginas y del almacenamiento.
+- No probado en PC con 64 GB de RAM según el autor; el caso de uso principal está pendiente de validación por terceros.
+- Solo 314 descargas y 0 likes: ecosistema y validación comunitaria muy limitados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/txgsync/Qwen3.8-Flash-Next-NanoSeedLM-TQ3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Repositorio del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
-- Pesos densos 8-bit MLX: https://huggingface.co/mlx-community/Qwen3.8-Flash-Next-oQ8e-mtp
-- Pesos densos 4-bit MLX: https://huggingface.co/mlx-community/Qwen3.8-Flash-Next-4bit-mtp
-- GGUF de Unsloth (imatrix): https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
-- Motor NanoSeedLM: https://github.com/mbarnson/NanoSeedLM
-- Guía de compilación: https://github.com/mbarnson/NanoSeedLM/blob/main/docs/guides/build.md
-- Guía de ejecución y servicio: https://github.com/mbarnson/NanoSeedLM/blob/main/docs/guides/run-and-serve.md
-- Documentación de expertos trellis: https://github.com/mbarnson/NanoSeedLM/blob/main/docs/concepts/trellis.md
-- Formato de carpeta del modelo: https://github.com/mbarnson/NanoSeedLM/blob/main/docs/reference/model-folder.md
-- Mediciones de mezclas trellis: https://github.com/mbarnson/NanoSeedLM/blob/main/docs/results/2026-11-05-trellis-mixes.md
-- Paper QTIP: https://arxiv.org/abs/2406.11235
-- Pack TQ4: https://huggingface.co/txgsync/Qwen3.8-Flash-Next-NanoSeedLM-TQ4
-- Pack TQ3-D4: https://huggingface.co/txgsync/Qwen3.8-Flash-Next-NanoSeedLM-TQ3-D4
-- Licencia: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
+- Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
+- Pack TCQ4: https://huggingface.co/txgsync/Qwen3.8-Flash-Next-NanoSeedLM-TCQ4
+- Pack TCQ3-D4: https://huggingface.co/txgsync/Qwen3.8-Flash-Next-NanoSeedLM-TCQ3-D4
+- Pack P4: https://huggingface.co/txgsync/Qwen3.8-Flash-Next-NanoSeedLM-P4
+- Pack P3: https://huggingface.co/txgsync/Qwen3.8-Flash-Next-NanoSeedLM-P3
+- Motor NanoSeedLM (repositorio): https://github.com/mbarnson/NanoSeedLM
+- Releases del motor NanoSeedLM: https://github.com/mbarnson/NanoSeedLM/releases
+- Parche oMLX: https://github.com/jundot/omlx/pull/5112
+- Paper referenciado (arXiv:2410.10714): https://arxiv.org/abs/2410.10714
+- Paper referenciado (arXiv:2406.11235): https://arxiv.org/abs/2406.11235

@@ -2,91 +2,116 @@
 
 ## Resumen
 
-Inkling-2-Mini-MLX-RCO-4.5bpw es una cuantizacion mixta de precision del modelo thinkingmachines/Inkling-2-Mini, publicada por el usuario hermitdave mediante el pipeline `rco-mlx` sobre Apple Silicon. El modelo base es un VLM MoE de 26.388.641.280 parametros (26,4 B) con arquitectura de transformer "looped": 24 capas fisicas de decoder, de las cuales las 12 centrales se ejecutan tres veces por token (48 visitas de capa), con 128 expertos enrutados y routing top-8, una torre de vision de 23 capas y un borrador MTP DSpark en el checkpoint publicado.
+Inkling-2-Mini-MLX-RCO-4.5bpw es una cuantizacion mixta de precision (RCO, rate-constrained optimisation) del modelo thinkingmachines/Inkling-2-Mini, publicada por el usuario hermitdave para el ecosistema MLX de Apple Silicon. El modelo base es un VLM MoE con arquitectura de transformer con bucles (looped transformer): 26.388.641.280 parametros totales, 24 capas fisicas de decoder de las cuales las 12 centrales se ejecutan tres veces por token (48 visitas de capa), 128 expertos enrutados con routing top-8, una torre de vision de 23 capas y una cabeza MTP DSpark en el checkpoint publicado.
 
-El objetivo de esta publicacion es reducir el tamano del checkpoint original (19,53 GB) hasta 16,57 GB mediante una asignacion de bits variable por tensor: expertos enrutados en 3/4 bits, proyecciones de atencion en 6/8 bits y embeddings, `lm_head`, router, normalizaciones y torre de vision intactos en BF16. Es relevante para quienes despliegan modelos MoE multimodales en hardware Apple con `mlx-lm`, aunque la model card advierte de que las metricas de calidad aun son marcadores de posicion sin medir.
+El interes de esta ficha no esta en el modelo base sino en la cuantizacion: reduce el checkpoint publicado de 19,53 GB a 16,57 GB (4,46 bits por peso en los tensores cuantizados) manteniendo una perplexity de 10,6018 frente a 10,5150 del checkpoint nativo NVFP4, un KL de 0,0249 y una recuperacion zero-shot media de 0,9906 en cinco tareas. Ademas acelera la decodificacion (30,9 tok/s frente a 28,6 tok/s del nativo) y reduce el pico de RAM a 16,87 GB en un M3 Max de 64 GB.
 
-La licencia es Apache 2.0 y el formato de pesos es safetensors para `mlx-lm`. El autor advierte de que la carga requiere soporte de Inkling 2 en `mlx-lm` (PRs #2086 y #2061, ambos en borrador) y un remapeo `inkling2_loop -> inkling2` en `MODEL_REMAPPING`.
+Es relevante ahora porque demuestra que es posible cuantizar un MoE con bucles a 4,5 bits efectivos sin perdida medible en tareas de razonamiento, y porque incluye un `model_file` autocontenido (`inkling2_loop.py`) que permite cargar la arquitectura en `mlx-lm` estandar sin arbol parcheado, algo que hasta la fecha no hacia ninguna release oficial de `mlx-lm`.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE "looped" (24 capas fisicas, 12 centrales repetidas 3 veces = 48 visitas de capa); VLM con torre de vision de 23 capas |
+| Arquitectura | Looped transformer MoE con torre de vision (VLM); 24 capas fisicas de decoder, 12 centrales repetidas 3 veces (48 visitas de capa); 128 expertos enrutados, top-8; torre de vision de 23 capas |
 | Parametros totales | 26.388.641.280 (26,4 B) |
-| Parametros activos | no disponible (128 expertos enrutados, routing top-8) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Afin mixta por tensor: 8 bits (118 tensores), 6 bits (58), 4 bits (44), 3 bits (4); 4,46 bpw sobre pesos cuantizados |
+| Tipos de cuantizacion | RCO mixed-precision affine: 8-bit x 118 tensores, 6-bit x 58, 4-bit x 44, 3-bit x 4 (224 tensores cuantizados); 4,46 bpw efectivos en pesos cuantizados |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (MLX); repo de 16,6 GB |
+| Formato de pesos | safetensors (MLX), libreria `mlx-lm` |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer MoE con estructura "looped": 24 capas fisicas de decoder en las que las 12 centrales se ejecutan tres veces por token, resultando en 48 visitas de capa. Incorpora 128 expertos enrutados con routing top-8, una torre de vision de 23 capas (es un VLM) y un borrador MTP DSpark en el checkpoint publicado. La model card menciona ademas componentes especificos: proyecciones de atencion `q/k/v/r/o/gate/sink`, un `weight_proj` de atencion completa, kernels `conv1d` depthwise, una tabla de logits relativos, compuertas de mensaje de rango 64 y consultas de residuo de atencion / mensaje de bucle.
+El modelo base es un transformer con bucles: 24 capas fisicas de decoder en las que las 12 capas centrales se ejecutan tres veces por token, dando 48 visitas de capa efectivas. Es un MoE con 128 expertos enrutados y routing top-8. Incorpora ademas una torre de vision de 23 capas y, en el checkpoint publicado, una cabeza MTP (multi-token prediction) DSpark que lee estados ocultos en las visitas de bucle 5, 23, 41 y 48. La implementacion de referencia vive en los PRs borrador de `mlx-lm` #2086 y #2061.
 
-Sobre el entrenamiento (numero de tokens, composicion del dataset, RLHF/DPO) no hay informacion en la documentacion proporcionada. La publicacion de hermitdave es una cuantizacion, no un reentrenamiento, y detalla el proceso: el checkpoint original almacena los expertos enrutados en NVFP4 (capas 0-19) y MXFP8 (capas 20-23), y el resto ya en BF16; no existe release BF16 del modelo. Como RCO necesita pesos en coma flotante, los expertos se dequantizaron primero a BF16 mediante las formulas documentadas (NVFP4: `W = E2M1[nibble] * FP8_E4M3[block scale] * (amax / outer_scale_denominator)`; MXFP8: `W = FP8_E4M3[value] * 2 ** (E8M0[scale] - 127)`). El autor advierte de que esta reconstruccion es exacta respecto al checkpoint publicado pero no equivale al BF16 original, ya que el redondeo NVFP4 ya esta incorporado.
+Sobre el entrenamiento no se dispone de informacion en la documentacion proporcionada: no hay datos sobre numero de tokens, composicion del dataset, ni si hubo RLHF, DPO u otras fases de alineamiento. Lo que si documenta el autor de la cuantizacion es la procedencia de los pesos: el checkpoint publicado almacena los expertos enrutados en NVFP4 (capas 0-19) y MXFP8 (capas 20-23), con el resto en BF16. No existe una release BF16 de Inkling-2-Mini, por lo que el pipeline RCO dequantizo primero los expertos a BF16 mediante las formulas `NVFP4: W = E2M1[nibble] * FP8_E4M3[block scale] * (amax / outer_scale_denominator)` y `MXFP8: W = FP8_E4M3[value] * 2 ** (E8M0[scale] - 127)`. Esta reconstruccion es exacta respecto al checkpoint publicado pero no recupera el BF16 original: el redondeo NVFP4 ya esta incorporado.
 
-La asignacion de bits es la siguiente: expertos enrutados como un unico tensor pre-apilado por (capa, proyeccion), 44 a 4 bits y 4 a 3 bits; proyecciones de atencion y `weight_proj` de atencion completa, 58 a 6 bits y 118 a 8 bits; y en BF16 sin tocar `embed_tokens`, `lm_head`, todas las RMSNorm, el router MoE, las consultas de residuo de atencion / mensaje de bucle, los kernels `conv1d` depthwise, la tabla de logits relativos, las compuertas de mensaje de rango 64 y la torre de vision completa.
+La innovacion tecnica de esta cuantizacion es la asignacion de bits por tipo de tensor: los expertos enrutados se agrupan en un unico tensor pre-apilado por (capa, proyeccion) y se cuantizan a 4 bits (44 tensores) o 3 bits (4 tensores); las proyecciones de atencion (`q/k/v/r/o/gate/sink`) y el `weight_proj` de atencion completa se llevan a 6 bits (58) u 8 bits (118); y se dejan intactos en BF16 `embed_tokens`, `lm_head`, todas las RMSNorm, el router MoE, las queries de atencion-residual y de mensaje de bucle, los kernels `conv1d` depthwise, la tabla de logits relativos, las puertas de mensaje de rango 64 y toda la torre de vision. El autor reconoce que en las 20 capas NVFP4 el resultado puede igualar al nativo pero no superarlo, y que la ganancia potencial de RCO esta en la asignacion 6-8 bits de las proyecciones de atencion.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento: modelo de lenguaje de 26,4 B con arquitectura MoE y capas repetidas.
-- Vision: dispone de torre de vision de 23 capas (VLM), conservada en BF16 en esta cuantizacion.
-- Codigo y matematicas: no hay informacion especifica en la documentacion proporcionada.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (idiomas no declarados).
-- Modo thinking: no disponible.
-- Decodificacion especulativa: el checkpoint original incluye un borrador MTP DSpark (`mtp.safetensors`), pero esta cuantizacion no lo incluye porque el modulo Inkling 2 de `mlx-lm` no tiene cabeza MTP.
+- Generacion de texto autoregresiva con arquitectura MoE y bucles de capa.
+- Razonamiento multi-paso: la repeticion de las 12 capas centrales tres veces por token esta disenada para profundidad de computo sin aumentar el numero de parametros fisicos.
+- Vision: el modelo base incluye torre de vision de 23 capas, pero en esta cuantizacion la torre se mantiene en BF16 y la ruta de imagen **no esta cableada** en oMLX (`model_type_override: "llm"`); en `mlx-lm` estandar la carga verificada es de texto.
+- Codigo y matematicas: no hay benchmarks especificos publicados en la informacion disponible, pero la recuperacion zero-shot incluye MMLU (0,996) y ARC (0,996-1,000).
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y multi-step reasoning: no documentado explicitamente; la arquitectura de bucle sugiere capacidad de razonamiento iterativo, pero no hay validacion publicada.
+- Capacidades multilingues: no disponible.
+- MTP / decodificacion especulativa: el checkpoint publicado incluye una cabeza DSpark MTP de 636 MB en BF16, pero **no se incluye** en esta cuantizacion y el runtime no implementa la cabeza MTP (`mtp_enabled: false`).
 
 ## Casos de uso
 
-- Inferencia local en Apple Silicon: el modelo esta empaquetado para `mlx-lm` y ocupa 16,57 GB en disco, lo que permite ejecutarlo en equipos Mac con memoria unificada suficiente (por encima de ~17-18 GB libres) sin GPU dedicada.
-- Prototipado de pipelines multimodales: al conservar la torre de vision en BF16, sirve para experimentar con tareas imagen-texto en local antes de pasar a despliegues mayores.
-- Evaluacion de tecnicas de cuantizacion: util para comparar la asignacion RCO mixta (3/4 bits en expertos, 6/8 bits en atencion) frente al esquema NVFP4/MXFP8 fijo del checkpoint publicado.
-- Investigacion sobre arquitecturas looped MoE: permite estudiar el comportamiento de un transformer con 12 capas repetidas tres veces y routing top-8 sobre 128 expertos en un entorno de escritorio.
-- Desarrollo offline y privacidad: al ejecutarse integramente en local via MLX, encaja en escenarios donde los datos no pueden salir del dispositivo.
-- Pruebas de integracion con `mlx-lm`: sirve como banco de pruebas para los PRs de soporte de Inkling 2 (#2086 y #2061) y para el remapeo `inkling2_loop -> inkling2`.
+- Inferencia local en Apple Silicon: el modelo cabe en un M3 Max de 64 GB con un pico de 16,87 GB y decodifica a 30,9 tok/s, lo que permite ejecutar un MoE de 26,4 B en un portatil sin GPU dedicada. Adecuado para desarrollo y prototipado offline.
+- Servicio de texto en oMLX: con prefill de 669 tok/s en frio a ~4,5k de contexto y 27,4 tok/s de decodificacion, es viable como endpoint local para asistentes de texto en un equipo de desarrollo.
+- Evaluacion de arquitecturas con bucles: util para investigadores que quieran estudiar el comportamiento de un looped transformer MoE sin depender de un runtime parcheado, gracias al `model_file` autocontenido y a `trust_remote_code=True`.
+- Baseline de cuantizacion: sirve como referencia reproducible para comparar tecnicas de cuantizacion mixta (RCO, NVFP4, MXFP8) sobre un MoE de 26 B, con metricas de PPL, KL, top-1 y recuperacion zero-shot ya publicadas.
+- Generacion de texto en pipelines de CI: al cargar en `mlx-lm` 0.32.2 estandar sin arbol parcheado, se puede integrar en tests automatizados de calidad de cuantizacion (perplexity, KL) sobre hardware Apple.
+- Razonamiento y QA en ingles tecnico: los benchmarks zero-shot (ARC, HellaSwag, WinoGrande, MMLU) muestran recuperacion casi perfecta, por lo que es adecuado para tareas de comprension y respuesta sobre texto en el idioma de entrenamiento del modelo base.
+- Prototipado de asistentes con vision (limitado): la torre de vision esta presente en BF16 pero la ruta de imagen no esta cableada en esta release; solo util si se implementa manualmente el pipeline multimodal sobre `inkling2_loop.py`.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye una tabla de metricas (perplejidad en WikiText-2, KL frente al checkpoint NVFP4 nativo, acuerdo top-1, recuperacion zero-shot en 5 tareas, tok/s de decodificacion y RAM pico) pero todos los valores figuran como `TBD` (marcadores de posicion sin medir).
+Metricas medidas en un M3 Max de 64 GB. Perplexity, KL y top-1 usan 8 filas de WikiText-2 x 256 tokens con el checkpoint nativo NVFP4 como referencia (PPL propia 10,5150 en las mismas filas). Zero-shot: 5 tareas x 400 muestras; recuperacion = `quant_acc / reference_acc`.
+
+| Metrica | Este quant (RCO 4.5bpw) | Nativo NVFP4 |
+|---|---|---|
+| Perplexity (WikiText-2, 8x256) | 10,6018 (+0,09) | 10,5150 |
+| KL vs checkpoint nativo | 0,0249 | referencia |
+| Top-1 agreement vs nativo | 92,99 % | referencia |
+| Recuperacion zero-shot (media, 5 tareas, n=400) | 0,9906 (TASK-LOSSLESS) | 1,000 |
+| arc_challenge | 0,996 | 1,000 |
+| arc_easy | 1,000 | 1,000 |
+| hellaswag | 0,995 | 1,000 |
+| winogrande | 0,966 | 1,000 |
+| mmlu | 0,996 | 1,000 |
+| Decode tok/s (`mlx_lm`, 128 tok) | 30,9 | 28,6 |
+| Prompt tok/s | 309 | 264 |
+| Pico de RAM | 16,87 GB | 19,82 GB |
+
+Rendimiento en oMLX (verificado 2026-11-21):
+
+| Metrica | Valor |
+|---|---|
+| Huella de carga (oMLX `actual:`) | 15,57 GB |
+| Prefill tok/s (frio, ~4,5k ctx) | 669 |
+| Decode tok/s (~4,5k ctx) | 27,4 |
+
+No se han publicado resultados de benchmarks estandar (MMLU completo, HumanEval, GSM8K) para el modelo base en la informacion disponible; las cifras anteriores son de recuperacion respecto al checkpoint nativo, no absolutas.
 
 ## Requisitos de hardware
 
-- VRAM / memoria estimada: el repo pesa 16,57 GB; se necesita memoria unificada por encima de esa cifra (mas overhead de runtime y cache KV) para cargar el modelo.
-- GPU recomendadas: hardware Apple Silicon con memoria unificada suficiente; no se documentan GPU NVIDIA en la model card.
-- Cabe en consumer GPU: no hay datos para GPU de consumo NVIDIA; en Apple Silicon depende del modelo de chip y de la memoria unificada disponible.
-- Opciones de despliegue: `mlx-lm` con soporte de Inkling 2 (PRs #2086 y #2061, en borrador) y el remapeo `inkling2_loop -> inkling2`; hasta que se fusionen, hay que cargar con el arbol parcheado que acompana al modelo.
-- Latencia y throughput: no disponibles (valores `TBD` en la model card).
+- VRAM/RAM estimada para inferencia: pico medido de 16,87 GB en `mlx_lm` y huella de carga de 15,57 GB en oMLX. El repo pesa 16,6 GB en disco.
+- GPU recomendadas: Apple Silicon exclusivamente (MLX). Verificado en M3 Max de 64 GB. No hay soporte CUDA ni ROCm documentado.
+- Cabe en consumer GPU: si, en Apple Silicon con al menos 24-32 GB de memoria unificada; el pico medido de 16,87 GB deja margen en un M3 Max de 64 GB, y en configuraciones de 32 GB deberia caber con holgura. En GPUs NVIDIA consumer no es desplegable sin conversion a otro formato, no documentada.
+- Opciones de despliegue: `mlx-lm` 0.32.2 (verificado), `mlx-lm` 0.32.3.dev8 empaquetado en oMLX (verificado), y oMLX con `trust_remote_code: true`, `model_type_override: "llm"`, `mtp_enabled: false`, `ttl_seconds: 3600`. No compatible con vLLM, llama.cpp, Ollama ni TGI en su formato actual.
+- Latencia y throughput: decodificacion 30,9 tok/s (`mlx_lm`, 128 tok) y 27,4 tok/s (oMLX, ~4,5k ctx); prefill 309 tok/s (`mlx_lm`) y 669 tok/s (oMLX, frio). El autor advierte que el prefill de oMLX es en frio (cada peticion con prefijo unico para evitar la cache de prefijos).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| hermitdave/Inkling-2-Mini-MLX-RCO-4.5bpw | 26,4 B | no disponible | RCO mixta 3/4/6/8 bits, 4,46 bpw | Apache 2.0 | MLX, safetensors, 16,57 GB |
-| thinkingmachines/Inkling-2-Mini (checkpoint publicado) | 26,4 B | no disponible | NVFP4 + MXFP8 en expertos, BF16 en el resto | Apache 2.0 | 19,53 GB, incluye borrador MTP DSpark |
+| hermitdave/Inkling-2-Mini-MLX-RCO-4.5bpw | 26,4 B (MoE, 128 expertos top-8) | no disponible | MLX safetensors, 4,46 bpw | Apache 2.0 | Cuantizacion RCO mixta; PPL 10,6018; 30,9 tok/s en M3 Max |
+| thinkingmachines/Inkling-2-Mini (checkpoint publicado) | 26,4 B (MoE looped) | no disponible | safetensors NVFP4/MXFP8/BF16 | Apache 2.0 | Referencia nativa; PPL 10,5150; 19,53 GB; 28,6 tok/s |
+| Alternativas de mismo tamano en MLX | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la informacion proporcionada |
 
-No se dispone de informacion sobre otros modelos comparables de la misma categoria en la documentacion proporcionada.
+No se dispone de informacion sobre otros modelos de 26 B en formato MLX con los que comparar directamente en la documentacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Metricas de calidad sin medir: perplejidad, KL, acuerdo top-1, recuperacion zero-shot, tok/s y RAM pico figuran como `TBD` en la model card.
-- Reconstruccion no equivalente al BF16 original: los expertos se dequantizaron desde NVFP4/MXFP8; el redondeo original ya esta incorporado y en las 20 capas NVFP4 el resultado puede igualar, no superar, al NVFP4 nativo.
-- Dependencia de PRs en borrador: requiere soporte de Inkling 2 en `mlx-lm` (#2086 sobre #2061) y el remapeo `inkling2_loop -> inkling2`; sin ellos hay que usar el arbol parcheado.
-- Sin cabeza MTP: el borrador DSpark (`mtp.safetensors`) no se incluye, por lo que no hay decodificacion especulativa con este paquete.
-- Idiomas no declarados: no hay informacion sobre cobertura linguistica ni sesgos por idioma.
-- Riesgo de alucinacion: no documentado en la informacion disponible.
-- Contexto maximo no disponible: no se puede planificar el uso en conversaciones largas sin ese dato.
-- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base y de los componentes derivados.
-- Publicacion con 0 descargas y 0 likes en el momento de la consulta: ecosistema de validacion practicamente nulo.
+- La reconstruccion BF16 de los expertos no es el BF16 original: el redondeo NVFP4 ya esta incorporado en el checkpoint publicado. En las 20 capas NVFP4 el resultado puede igualar al nativo pero no superarlo.
+- La cabeza MTP DSpark (636 MB, BF16) no se incluye; el runtime no implementa la cabeza MTP (`mtp_enabled: false`), por lo que no hay decodificacion especulativa.
+- La torre de vision esta presente en BF16 pero la ruta de imagen no esta cableada en oMLX (`model_type_override: "llm"`); el uso multimodal no esta soportado en esta release.
+- Requiere `trust_remote_code=True` obligatoriamente: el `model_file` (`inkling2_loop.py`) es el unico hook de `mlx-lm` para una arquitectura que ninguna release registra. Esto implica ejecutar codigo del repositorio, con el riesgo de seguridad asociado.
+- Solo funciona en Apple Silicon con `mlx-lm`; no hay soporte para CUDA, ROCm, vLLM, llama.cpp, Ollama ni TGI documentado.
+- No hay datos publicados sobre sesgos, tasas de alucinacion, idiomas soportados ni rendimiento en tareas de codigo o matematicas del modelo base en la informacion disponible.
+- El autor advierte que `eval_quality.py` carga la referencia solo para puntuar KL/top-1 y nunca imprime su PPL, por lo que el delta de perplexity no es legible directamente de ese script.
+- El prefill medido en oMLX es en frio; el throughput en caliente con cache de prefijos puede diferir.
+- Licencia Apache 2.0 permite uso comercial, pero la ausencia de datos sobre sesgos y alineamiento hace recomendable evaluacion propia antes de produccion.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/hermitdave/Inkling-2-Mini-MLX-RCO-4.5bpw
+- Hugging Face: https://huggingface.co/hermitdave/Inkling-2-Mini-MLX-RCO-4.5bpw
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
-- Pipeline de cuantizacion `rco-mlx`: https://github.com/hermitdave/rco-mlx
-- PR de soporte Inkling 2 en mlx-lm: https://github.com/ml-explore/mlx-lm/pull/2086
-- PR base en mlx-lm: https://github.com/ml-explore/mlx-lm/pull/2061
-- Thinking Machines Lab: https://thinkingmachines.ai
+- PR borrador `mlx-lm` #2086 (looped Mini): https://github.com/ml-explore/mlx-lm/pull/2086
+- PR borrador `mlx-lm` #2061: https://github.com/ml-explore/mlx-lm/pull/2061

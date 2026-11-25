@@ -2,94 +2,89 @@
 
 ## Resumen
 
-Hammershoi-Flux3-LoRA es un adaptador LoRA de bajo rango para generación de imágenes texto-a-imagen, entrenado sobre el modelo base FLUX 3 Image Klein Base de Black Forest Labs. Lo desarrolla el usuario jejunepixels y su objetivo es reproducir el estilo pictórico del pintor danés Vilhelm Hammershøi (1864-1916): paletas apagadas, interiores domésticos austeros, figuras solitarias y una atmósfera de quietud introspectiva. El adaptador se activa con la frase disparadora `hmrsh style` al final del prompt.
+Hammershoi-Flux3-LoRA es un adaptador LoRA de generacion de imagenes (text-to-image) entrenado sobre el modelo base `black-forest-labs/flux-3-image-klein-base`. Lo desarrolla el usuario jejunepixels y su proposito es reproducir el estilo pictorico del pintor danes Vilhelm Hammershoi: interiores domesticos despojados, luz gris y difusa de ventana, paletas apagadas y figuras femeninas de espaldas en habitaciones silenciosas. Se activa mediante el token de estilo `hmrsh style` en el prompt.
 
-El modelo resuelve un problema concreto: obtener un estilo pictórico muy específico sin necesidad de describirlo en cada prompt. Según la model card, las imágenes de la galería se generaron con prompts que no contienen palabras de estilo, solo el sujeto y la frase disparadora. Esto reduce la longitud del prompt y mejora la consistencia estilística frente a la ingeniería de prompts manual.
+El artefacto es un LoRA, no un modelo autonomo: requiere cargar el modelo base Flux 3 (variante klein) y aplicar el adaptador con la libreria `diffusers`. El repositorio pesa aproximadamente 0,2 GB, lo que es coherente con un adaptador de bajo rango y no con pesos completos. La model card incluye una bateria de prompts de ejemplo con semillas fijas (42 y 1234) que sirven como referencia reproducible del estilo.
 
-Técnicamente es un LoRA de diffusers sobre un transformer de difusión, con un repositorio de 0,2 GB, entrenado con 288 recortes y ajustado en una única RTX 4090. Es relevante ahora porque acompaña al lanzamiento de la familia FLUX 3 y porque el autor publica versiones equivalentes para FLUX 1, FLUX 2 e Ideogram 4, lo que permite comparar el mismo estilo entre distintos motores generativos.
+Es relevante ahora por dos motivos: por un lado, demuestra el flujo habitual de personalizacion de modelos de difusion de gran escala mediante LoRA sobre arquitecturas Flux de tercera generacion; por otro, su licencia derivada (flux-kommunity-license) condiciona el uso comercial, un aspecto critico para quien quiera integrarlo en un producto. La informacion publica disponible es escasa: no se detallan hiperparametros de entrenamiento, dataset exacto ni resultados cuantitativos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de bajo rango) sobre un transformer de difusion FLUX 3 Image Klein Base |
-| Parametros totales | no disponible (el repositorio ocupa 0,2 GB; el numero de parametros del adaptador no se publica) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible (modelo texto-a-imagen; no aplica ventana de contexto textual) |
-| Tipos de cuantizacion | no disponible (pesos del adaptador en safetensors; el modelo base admite bfloat16 segun el codigo de ejemplo) |
-| Idiomas soportados | ingles (en) |
+| Arquitectura | LoRA sobre modelo de difusion Flux 3 (base: black-forest-labs/flux-3-image-klein-base) |
+| Parametros totales | no disponible (adaptador LoRA; el modelo base no reporta cifra en la informacion disponible) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (modelo text-to-image; la ventana de texto depende del codificador del modelo base) |
+| Tipos de cuantizacion | no disponible (el adaptador se distribuye en precision de entrenamiento; la cuantizacion aplica al modelo base) |
+| Idiomas soportados | en (ingles) |
 | Licencia | flux-kommunity-license (etiquetada como "other" en Hugging Face) |
-| Formato de pesos | safetensors (`Hammershoi_flux3_klein.safetensors`) |
+| Formato de pesos | safetensors via `diffusers` (repo de 0,2 GB) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador es un LoRA aplicado sobre FLUX 3 Image Klein Base, un modelo de difusión texto-a-imagen de Black Forest Labs. El código de ejemplo usa `diffusers.modular_pipelines.Flux3AutoBlocks`, carga los componentes en `bfloat16` y permite eliminar el sub-bloque `prompt_upsampler` para enviar el prompt tal cual se escribe. El LoRA se carga con `pipe.load_lora_weights` y se activa mediante `set_adapters` con un peso de 1.0.
+El adaptador emplea la tecnica LoRA (Low-Rank Adaptation) sobre el modelo de difusion Flux 3 en su variante klein. LoRA congela los pesos del modelo base e inyecta matrices de bajo rango en determinadas capas, de modo que el ajuste de estilo se aprende con una fraccion minima de parametros y el resultado se combina con el modelo original en tiempo de inferencia. La arquitectura subyacente es la del modelo Flux 3, un transformer de difusion para generacion de imagenes a partir de texto.
 
-El entrenamiento se realizó con AI Toolkit sobre una RTX 4090, usando 288 recortes provenientes del dataset `jejunepixels/Hammershoi-Ideogram4-Dataset`, cuyas fuentes son SMK Open y Wikimedia Commons. Los pies de foto se limitaron a encuadre y sujeto, con un máximo de 15 palabras y sin términos de estilo; fueron redactados por Claude, revisados a mano y acortados por script, con comprobación por muestreo y correcciones manuales puntuales. No se documentan número de pasos de entrenamiento, tasa de aprendizaje ni composición exacta del dataset más allá de las fuentes citadas.
+No se especifican en la informacion disponible el numero de pasos de entrenamiento, la tasa de aprendizaje, el rango del adaptador, el numero de imagenes del dataset ni si se aplicaron tecnicas como regularizacion o captions automaticos. La model card referencia un dataset (`jejunepixels/Hammershoi-Ideogram4-Dataset`), pero no se detalla su composicion ni su tamano. Tampoco consta el uso de RLHF ni de optimizacion por preferencias, algo por otra parte ajeno al entrenamiento tipico de un LoRA de estilo.
 
 ## Capacidades
 
-- Generación de imágenes texto-a-imagen en el estilo pictórico de Vilhelm Hammershøi, activado con la frase `hmrsh style`.
-- Reproducción de paletas apagadas, interiores domésticos vacíos, ventanas con luz natural, suelos de madera y paredes desnudas.
-- Representación de figuras solitarias, frecuentemente mujeres de espaldas o de perfil y con vestimenta de época.
-- Generación de paisajes urbanos tranquilos y fachadas planas con hileras de ventanas altas.
-- Funciona tanto con prompts cortos como con descripciones completas de escena, según la model card.
-- Control de intensidad del estilo mediante la escala LoRA: 1.0 para un efecto moderado y 1.5 para acercarse más a los colores apagados de las pinturas, con riesgo de grano.
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni otras capacidades de modelos de lenguaje; es exclusivamente un adaptador de imagen.
+- Generacion de imagenes text-to-image en el estilo pictorico de Vilhelm Hammershoi, activado con el token `hmrsh style`.
+- Reproduccion de interiores domesticos: habitaciones vacias, mesas redondas con mantel, estufas de hierro, sillas de madera curvada, ventanas con luz difusa.
+- Figuras humanas, principalmente mujeres de espaldas o de perfil con vestido oscuro, en composiciones sobrias.
+- Paisajes y escenas exteriores contenidas: calles tranquilas, campos arados, cielos cubiertos, puertos con veleros.
+- Bodegones y primeros planos de objetos: tazas, candelabros, lamparas de aceite, portatiles y teteras sobre mesas oscuras.
+- Composicion fotografica controlada mediante indicaciones de encuadre en el prompt ("wide view", "medium view", "close-up").
+- Generacion reproducible mediante semillas fijas, segun los ejemplos de la model card.
+- No se documenta soporte de tool calling, agentes, razonamiento multi-paso, vision de entrada ni audio; son capacidades ajenas a un modelo text-to-image.
 
 ## Casos de uso
 
-- Ilustración editorial de temática nórdica: generar imágenes de acompañamiento para artículos sobre arte danés, arquitectura o literatura del siglo XIX, usando prompts de encuadre y sujeto más `hmrsh style` para obtener una estética coherente en toda la serie.
-- Diseño de interiores y moodboards: producir referencias visuales de habitaciones austeras con luz natural y paletas apagadas, útiles para estudios de arquitectura que quieran explorar atmósferas minimalistas antes de pasar a renders técnicos.
-- Preproducción audiovisual: crear planos conceptuales de interiores y figuras de época para cortometrajes o proyectos de vestuario ambientados en la Escandinavia de principios del siglo XX.
-- Portadas de libros y publicaciones: generar cubiertas con una estética pictórica reconocible y consistente, ajustando la escala LoRA a 1.5 para acentuar el efecto de pintura.
-- Pruebas de estilo comparativas: al existir versiones para FLUX 1, FLUX 2 e Ideogram 4 con el mismo dataset y frase disparadora, sirve para evaluar cómo cada motor base interpreta un mismo estilo pictórico.
-- Docencia y divulgación artística: ilustrar explicaciones sobre Hammershøi y el simbolismo danés con imágenes generadas que respetan sus rasgos compositivos, siempre indicando que son recreaciones sintéticas.
-- Exploración creativa personal: experimentar con la transferencia de estilo sobre sujetos contemporáneos, teniendo en cuenta que el adaptador puede transformar figuras modernas en personajes de época.
+- Ilustracion editorial de ambientacion nordica: generar imagenes de portada o interiores para articulos, libros o revistas que requieran una estetica sobria y atmosferica, controlando el encuadre con indicaciones como "wide view" en el prompt.
+- Direccion de arte y moodboards: producir rapidamente referencias visuales coherentes con la paleta y la luz de Hammershoi para equipos de diseno de interiores, escenografia o fotografia.
+- Previsualizacion de escenarios para cine o teatro: generar bocetos de decorados de epoca (habitaciones, mobiliario, iluminacion de ventana) antes de construir el set fisico.
+- Contenido para productos editoriales de papeleria y decoracion: laminas, postales o calendarios con un estilo pictorico consistente, siempre que la licencia lo permita.
+- Prototipado de assets para videojuegos de ambientacion historica: texturas de fondo y conceptos de interiores para juegos narrativos de epoca, combinando el LoRA con el modelo base en un pipeline de `diffusers`.
+- Investigacion sobre personalizacion de modelos de difusion: servir de caso de estudio reproducible (semillas y prompts documentados) para analizar como un LoRA de bajo rango captura un estilo pictorico concreto sobre Flux 3.
+- Generacion de imagenes de acompanamiento en publicaciones culturales o educativas sobre pintura danesa, con prompts que describan escenas del estilo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card solo documenta pruebas cualitativas con seis prompts y una única semilla, a escala de guiado 3.5 y resolución 1024×1024.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El adaptador en sí ocupa 0,2 GB, pero requiere cargar el modelo base FLUX 3 Image Klein Base, cuyo peso no se detalla en la información disponible.
-- El código de ejemplo carga los componentes en `bfloat16` sobre CUDA, por lo que se necesita una GPU con memoria suficiente para el modelo base completo en esa precisión; la cifra exacta de VRAM no está disponible.
-- El entrenamiento se realizó en una RTX 4090, lo que confirma que el flujo de ajuste es viable en hardware de consumo de gama alta.
-- Despliegue mediante la librería `diffusers` instalada desde GitHub, junto con `peft`, usando `Flux3AutoBlocks` y `load_lora_weights`.
-- No se documenta compatibilidad con ComfyUI, llama.cpp, Ollama, vLLM ni TGI; de hecho, la model card indica que no se ha probado en ComfyUI.
-- No se publican cifras de latencia ni de throughput.
+- VRAM estimada: no disponible de forma especifica. El adaptador pesa 0,2 GB, pero la inferencia requiere cargar el modelo base Flux 3, cuyo consumo de VRAM no se detalla en la informacion proporcionada.
+- GPU recomendadas: no disponible. Depende enteramente de los requisitos del modelo base `black-forest-labs/flux-3-image-klein-base`.
+- Viabilidad en GPU de consumo: no disponible; condicionada por el modelo base.
+- Opciones de despliegue: `diffusers` (libreria declarada en el repo). Otros entornos (ComfyUI, A1111, vLLM) no se mencionan en la informacion disponible.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Base | Parametros | Contexto | Licencia | Disponibilidad |
+| Modelo | Tipo | Modelo base | Contexto/uso | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hammershoi-Flux3-LoRA | FLUX 3 Image Klein Base | no disponible (repo de 0,2 GB) | no aplica | flux-kommunity-license | Hugging Face, 0 descargas |
-| Hammershoi-Flux2-LoRA | FLUX 2 | no disponible | no aplica | no disponible en la información | Hugging Face |
-| Hammershoi-Flux1-LoRA | FLUX 1 | no disponible | no aplica | no disponible en la información | Hugging Face |
-| Hammershoi-Ideogram4-LoRA | Ideogram 4 | no disponible | no aplica | no disponible en la información | Hugging Face |
+| Hammershoi-Flux3-LoRA | LoRA de estilo | flux-3-image-klein-base | text-to-image, estilo Hammershoi | flux-kommunity-license | Hugging Face, 344 descargas |
+| LoRA de estilo generico sobre Flux | LoRA de estilo | Flux (varias versiones) | text-to-image | depende del autor | no disponible |
+| Modelo base Flux 3 klein | Modelo completo | no aplica | text-to-image general | flux-kommunity-license | Hugging Face |
 
-Las cuatro variantes comparten el mismo dataset de 288 recortes y la misma frase disparadora `hmrsh style`, según la model card, lo que las hace directamente comparables en cuanto a estilo aprendido, aunque no se han publicado métricas cuantitativas de fidelidad o calidad para ninguna de ellas.
+No se dispone de datos de rendimiento comparativo ni de otros LoRA especificos de Hammershoi en la informacion proporcionada para establecer una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Las pruebas son muy reducidas: seis prompts, una sola semilla, guiado 3.5 y resolución 1024×1024; otros sujetos, semillas y formatos no se han probado.
-- No se ha probado con el upsampler de prompts de Klein, con el checkpoint destilado FLUX 3 Image Klein ni en ComfyUI.
-- El adaptador puede alterar el sujeto, no solo la superficie: a escala 1.0 una figura moderna puede convertirse en una mujer con el pelo recogido y vestido oscuro de época aunque no se solicite.
-- Rango temático estrecho: se entrenó con la obra de un solo pintor, con interiores daneses austeros, paisajes y retratos; las personas representadas son mayoritariamente europeas y a menudo mujeres con vestimenta oscura de época.
-- Los pies de foto no son perfectos: se acortaron por script a partir de borradores de Claude revisados a mano, con comprobación por muestreo y correcciones puntuales.
-- La licencia flux-kommunity-license impone condiciones específicas para uso comercial; es necesario revisar el archivo LICENSE.md del repositorio antes de cualquier despliegue en producción.
-- El modelo base está restringido (gated), por lo que hay que aceptar su licencia en la página de Hugging Face e iniciar sesión con un token antes de descargarlo.
-- Solo se documenta soporte de inglés en los prompts; no hay evidencia de comportamiento con otros idiomas.
-- Riesgo de alucinación visual y de resultados incoherentes fuera del dominio entrenado, dado el escaso conjunto de validación.
+- La licencia `flux-kommunity-license` impone restricciones que deben revisarse antes de cualquier uso comercial; no es una licencia de codigo abierto permisiva.
+- El modelo solo esta etiquetado para ingles (`en`); los prompts en otros idiomas pueden degradar el resultado.
+- El estilo esta fuertemente sesgado hacia la obra de Hammershoi: interiores, figuras femeninas de espaldas y paletas apagadas. Otros tipos de escena pueden no reproducirse fielmente.
+- Riesgo de alucinacion visual: como todo modelo de difusion, puede generar anatomia incorrecta (manos, rostros de perfil), objetos incoherentes o texto ilegible en la imagen.
+- Dependencia total del modelo base: cualquier limitacion de Flux 3 klein (resolucion, fidelidad al prompt, sesgos de entrenamiento) se hereda.
+- No se documentan sesgos demograficos ni de representacion; la mayoria de ejemplos muestran mujeres blancas en contextos nordicos, lo que puede reflejar un sesgo del dataset.
+- Ausencia de datos de entrenamiento y de evaluacion: dificulta la reproducibilidad y la estimacion de calidad fuera de los prompts de ejemplo.
+- El token de estilo `hmrsh style` debe incluirse en el prompt; sin el, el adaptador puede no activarse correctamente.
+- Sin soporte documentado de integracion en herramientas de terceros (ComfyUI, Automatic1111); el unico entorno declarado es `diffusers`.
 
 ## Enlaces
 
-- [Hugging Face: jejunepixels/Hammershoi-Flux3-LoRA](https://huggingface.co/jejunepixels/Hammershoi-Flux3-LoRA)
-- [Modelo base: black-forest-labs/flux-3-image-klein-base](https://huggingface.co/black-forest-labs/flux-3-image-klein-base)
-- [Dataset: jejunepixels/Hammershoi-Ideogram4-Dataset](https://huggingface.co/datasets/jejunepixels/Hammershoi-Ideogram4-Dataset)
-- [Version FLUX 1: jejunepixels/Hammershoi-Flux1-LoRA](https://huggingface.co/jejunepixels/Hammershoi-Flux1-LoRA)
-- [Version FLUX 2: jejunepixels/Hammershoi-Flux2-LoRA](https://huggingface.co/jejunepixels/Hammershoi-Flux2-LoRA)
-- [Version Ideogram 4: jejunepixels/Hammershoi-Ideogram4-LoRA](https://huggingface.co/jejunepixels/Hammershoi-Ideogram4-LoRA)
-- [SMK Open](https://open.smk.dk)
-- [Wikimedia Commons](https://commons.wikimedia.org)
+- Modelo en Hugging Face: https://huggingface.co/jejunepixels/Hammershoi-Flux3-LoRA
+- Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
+- Dataset referenciado: https://huggingface.co/datasets/jejunepixels/Hammershoi-Ideogram4-Dataset
+- Libreria diffusers: https://github.com/huggingface/diffusers

@@ -2,99 +2,105 @@
 
 ## Resumen
 
-`BeardedMonster/gemma-3-270m-science-translate-best-GGUF` es una build en formato GGUF (cuantización Q8_0) de un modelo de traducción de 270 millones de parámetros derivado de Gemma 3. El modelo traduce exclusivamente de inglés a 77 lenguas africanas, con un enfoque declarado en vocabulario y registro científico. Lo publica el usuario BeardedMonster como release de investigación, sin licencia definitiva elegida todavía (`tbd-owner-to-choose`).
+`BeardedMonster/gemma-3-270m-science-translate-best-GGUF` es la cuantización Q8_0 en formato GGUF de un modelo de traducción inglés→lenguas africanas afinado para texto científico. Lo desarrolla BeardedMonster (bajo la marca Aletheia AI) a partir de `google/gemma-3-270m-it`, y está pensado para ejecutarse en CPU de portátil con un único fichero de unos 300 MB. El modelo base tiene 268.098.176 parámetros (270M), arquitectura transformer decoder-only de la familia Gemma 3 y una ventana de contexto que la model card no documenta explícitamente.
 
-La relevancia del modelo está en su tamaño: con 268.098.176 parámetros y un fichero de unos 300 MB, está diseñado para ejecutarse en CPU de portátil mediante llama.cpp, lo que lo hace viable en entornos sin GPU. Cubre un conjunto de lenguas africanas muy poco representadas en modelos abiertos (yoruba, hausa, igbo, suajili, zulú, amhárico, wolof, bambara, entre otras), e incluye una plantilla de chat Gemma embebida en el propio GGUF.
+El problema que aborda es la escasez de traducción técnica hacia lenguas africanas de bajos recursos: cubre 77 lenguas meta (más 8 en zero-shot no recomendadas) con dirección única inglés→africano, e incorpora datos de ciencia en seis de ellas. La relevancia práctica está en que ofrece una alternativa ligera, ejecutable sin GPU, para digitalizar material científico en yoruba, hausa, suajili, zulú, amhárico y decenas más.
 
-La ficha describe la versión cuantizada Q8_0, que según el autor pierde -0,02 chrF++ respecto al modelo bf16 de referencia. Se trata de un modelo de una sola dirección (inglés a lengua africana), sin capacidades generales de conversación, razonamiento o código: es una herramienta de traducción especializada.
+Esta ficha describe específicamente el artefacto GGUF Q8_0 (`gemma-science-translate-final2-step401-Q8_0.gguf`), convertido con llama.cpp sin entrenamiento adicional. La model card reporta los benchmarks del modelo fuente en bf16, no de la cuantización, salvo la pérdida de cuantización medida (-0,02 chrF++).
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Gemma 3 (transformer decoder-only); arquitectura GGUF `gemma3` |
-| Parametros totales | 268.098.176 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 32.768 tokens |
-| Tipos de cuantizacion | Q8_0 (esta build); el repo base contiene safetensors en bf16 |
-| Idiomas soportados | Inglés de origen; 77 lenguas africanas de destino (85 nombres aceptados, 8 sin entrenamiento RL) |
-| Licencia | `other` / `tbd-owner-to-choose` (licencia no elegida); sujeto a Gemma Terms of Use |
-| Formato de pesos | GGUF (fichero `gemma-science-translate-final2-step401-Q8_0.gguf`, 299.748.320 bytes, `general.file_type` 7) |
+| Arquitectura | Transformer decoder-only (familia Gemma 3, fine-tuning de `google/gemma-3-270m-it`) |
+| Parámetros totales | 268.098.176 (270M) |
+| Parámetros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la model card; los ejemplos de uso emplean `-c 2048` |
+| Tipos de cuantización | Q8_0 (8 bits); el repo solo publica esta variante |
+| Idiomas soportados | Inglés como origen; 77 lenguas africanas como destino (85 nombres aceptados en el prompt, 8 en zero-shot no recomendadas). Escritura latina salvo amhárico y tigriña (etiópico) |
+| Licencia | `other`: uso comercial libre con atribución obligatoria ("Translation models by Aletheia AI") y cita del paper; se aplican además los Gemma Terms of Use y la Prohibited Use Policy |
+| Formato de pesos | GGUF (fichero `gemma-science-translate-final2-step401-Q8_0.gguf`, ~0,3 GB) |
+| Plantilla de chat | Plantilla Gemma embebida en el GGUF |
+| Tokens especiales | `<end_of_turn>` id 106 (stop), `<eos>` id 1 |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Gemma 3, un transformer decoder-only, en su variante de 270M parámetros. Sobre esa base se aplicó un proceso de ajuste con RL cuyo run final se identifica como `final2`, paso 401, según la model card. La señal de recompensa emplea NLLB-200-3.3B y los datos de entrenamiento provienen del conjunto AfriScience-MT, orientado a contenido científico. El autor no detalla el volumen de tokens ni la composición exacta del dataset.
+El modelo es un fine-tuning del checkpoint instruct de 270M de Gemma 3, un transformer decoder-only denso. La model card no detalla la composición del dataset de entrenamiento ni el número de tokens, pero sí indica que 77 de las lenguas destino se entrenaron con RL (las otras 8 se marcan como zero-shot no soportadas) y que seis lenguas cuentan con datos específicos de ciencia. No se documenta el uso de RLHF/DPO clásico ni innovaciones de decodificación; el pipeline es ajuste supervisado más una etapa de RL sobre las lenguas objetivo.
 
-La build GGUF se convirtió con llama.cpp a partir del `model.safetensors` original (sha256 `1bd2e310f146e233aac0c0be339329321f30823dfe05d95c39f561cfbd6589c5`) sin entrenamiento adicional. El fichero incluye metadatos relevantes: `add_bos_token` activado, bos id 2, eos id 1, `<end_of_turn>` con id 106 y la plantilla de chat Gemma embebida. El prompt de entrenamiento es un único turno de usuario con la forma `Translate the text to {NombreDelIdioma}:  {texto}`, con dos espacios tras los dos puntos y el nombre del idioma en lugar del código ISO. El modelo responde con la etiqueta de tres letras seguida de la traducción (por ejemplo `yor `).
+La conversión a GGUF se hizo con llama.cpp sin entrenamiento posterior, y la model card cuantifica el coste de la cuantización en -0,02 chrF++ (intervalo [-0,22, +0,16]) frente al modelo bf16, medido sobre 6 lenguas y 1.170 frases. El formato de prompt es rígido: un único turno de usuario con la plantilla `Translate the text to {Language}:  {English text}` (dos espacios tras los dos puntos, nombre de la lengua en inglés, sin mensaje de sistema), y la respuesta viene prefijada por la etiqueta ISO de tres letras y un espacio (`hau `, `yor `, etc.).
 
 ## Capacidades
 
-- Traducción de inglés a 77 lenguas africanas, en una única dirección; no traduce hacia inglés ni entre lenguas africanas.
-- Registro orientado a contenido científico y técnico (AfriScience-MT), aunque no se documenta una evaluación específica por dominio.
-- Salida con etiqueta de idioma de tres letras antepuesta, que debe eliminarse en posprocesado.
-- Plantilla de chat Gemma embebida, compatible con el endpoint `/v1/chat/completions` de llama.cpp y con `llama-cpp-python`.
-- Ejecución en CPU sin GPU, con decodificación greedy recomendada (`temperature 0`, `top_k 1`).
-- No dispone de tool calling, function calling, capacidades de agente, visión, audio ni modo de razonamiento extendido.
-- No es un modelo conversacional general: no se debe usar con mensajes de sistema ni en diálogos multi-turno.
+- Traducción unidireccional inglés→lengua africana, con 77 lenguas destino entrenadas y 8 adicionales en zero-shot no recomendadas.
+- Especialización en registro científico y técnico, con datos de ciencia en seis lenguas.
+- Ejecución en CPU sin GPU, con un fichero de ~300 MB y plantilla de chat embebida.
+- Decodificación greedy determinista (temperatura 0, top_k 1) con parada en `<end_of_turn>`.
+- Manejo de una frase o párrafo corto por petición; los documentos largos deben dividirse en frases.
+- Prefijado automático de la etiqueta de lengua en la salida, que el consumidor debe eliminar.
+- No soporta tool calling, function calling, agentes, visión, audio ni modo de razonamiento extendido (no documentado).
 
 ## Casos de uso
 
-- Traducción de material sanitario o divulgativo a lenguas africanas en entornos con hardware limitado: el modelo cabe en unos 300 MB y corre en CPU, por lo que puede desplegarse en portátiles o servidores modestos de ONG y centros de salud.
-- Localización de contenidos científicos y educativos: el ajuste sobre AfriScience-MT lo hace adecuado para textos de divulgación, guías y material formativo en registro técnico.
-- Servicio HTTP ligero de traducción: con `llama-server` y varias ranuras (`-np 8`), se puede exponer un endpoint compatible con la API de chat de OpenAI para integrarlo en aplicaciones existentes.
-- Procesamiento por lotes en pipelines de datos: al ser determinista con decodificación greedy y tener un coste de cómputo bajo, encaja en tareas de traducción masiva de frases o párrafos cortos.
-- Prototipado e investigación en traducción automática de bajos recursos: sirve como línea base reproducible para comparar con NLLB o modelos mayores en las mismas 77 lenguas.
-- Aplicaciones offline en campo: al no requerir GPU ni conexión, puede empaquetarse en dispositivos locales para traducción de documentos in situ.
-- Evaluación de cobertura lingüística: permite comprobar rápidamente la calidad en lenguas concretas antes de invertir en modelos de mayor tamaño.
+- Traducción de resúmenes científicos a lenguas africanas: dado un abstract en inglés, se envía frase a frase con `Translate the text to Swahili:  ...` y se obtiene el texto en suajili; el tamaño de 270M permite procesar lotes grandes en un portátil sin GPU.
+- Localización de material sanitario y divulgativo: la ventana de contexto y el formato de una frase por petición encajan con folletos y guiones divididos en oraciones, y el modelo cubre lenguas como hausa, yoruba o amhárico con datos de ciencia.
+- Digitalización de documentación agrícola o climática: se trocea el documento en frases, se traduce cada una de forma determinista (temperatura 0) y se recompone, aprovechando que la decodificación greedy evita variación entre ejecuciones.
+- Integración en pipelines de publicación con CPU: el GGUF Q8_0 se carga con `llama-cpp-python` o `llama-cli` en servidores sin acelerador, lo que abarata el procesamiento por lotes de corpus.
+- Preservación lingüística y educación: traducción de textos escolares a lenguas de bajos recursos como ewe, fon, wolof o bambara, con la etiqueta de lengua como control explícito del destino.
+- Prototipado y evaluación de sistemas de traducción: al ser un modelo pequeño y determinista, sirve como línea base reproducible para comparar con modelos mayores en FLORES+ o AfriScience-MT.
+- Traducción de interfaces y avisos cortos: frases sueltas (menús, alertas, mensajes de error) con `max_tokens` de 256 y parada en `<end_of_turn>`.
 
 ## Benchmarks y rendimiento
 
-La model card solo documenta la pérdida de calidad por cuantización: -0,02 chrF++ (intervalo [-0,22, +0,16]) frente al modelo bf16, medida sobre 6 lenguas y 1.170 frases. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, BLEU por lengua) en la información disponible.
+Los datos publicados corresponden al modelo fuente en bf16, no al GGUF Q8_0, salvo la fila de pérdida por cuantización.
 
-| Metrica | Resultado |
-|---|---|
-| chrF++ Q8_0 vs bf16 | -0,02 [-0,22, +0,16] (6 lenguas, 1.170 frases) |
-| BLEU / chrF++ por lengua | no disponible |
-| Benchmarks generales (MMLU, etc.) | no aplica / no disponible |
+| Benchmark | Métrica | Resultado |
+|---|---|---|
+| AfriScience-MT test | chrF (frase) | 50,2 |
+| AfriScience-MT test | chrF++ (frase) | 47,3 |
+| AfriScience-MT test | chrF (paper completo) | 46,1 |
+| FLORES+ devtest, subconjunto core (45 lenguas, 48 frases) | chrF++ | 31,83 |
+| FLORES+ devtest, subconjunto extended | chrF++ | 34,31 |
+| Cuantización Q8_0 vs bf16 (6 lenguas, 1.170 frases) | Δ chrF++ | -0,02 [-0,22, +0,16] |
+
+No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K u otros) en la información disponible, ni comparativas directas con modelos alternativos.
 
 ## Requisitos de hardware
 
-- VRAM: no requiere GPU; en Q8_0 el fichero ocupa unos 300 MB y la inferencia en CPU necesita del orden de 1 GB de RAM incluyendo contexto y overhead.
-- GPU recomendadas: no son necesarias. Cualquier GPU con más de 1 GB de VRAM puede alojarlo, pero el caso de uso declarado es CPU.
-- GPU de consumo: cabe en cualquier GPU de consumo moderna (RTX 3060, RTX 4090, etc.), aunque no aporta ventaja frente a CPU para este tamaño.
-- Despliegue: llama.cpp (`llama-cli`, `llama-server`), `llama-cpp-python` y cualquier runtime compatible con GGUF. El autor lo verificó con Homebrew llama.cpp 0.7.0 (build 11669).
-- Configuración sugerida por el autor: `-t 4`, `-c 2048`, `-n 256` para frases (unas 1.024 para párrafos), `--temp 0 --top-k 1`, parada en `<end_of_turn>`.
-- Latencia y throughput: no disponibles de forma medida; por el tamaño del modelo y la decodificación greedy, se espera una latencia baja en CPU, pero no hay cifras publicadas.
+- VRAM estimada: no requiere GPU; el fichero Q8_0 ocupa unos 0,3 GB y cabe holgadamente en memoria RAM de cualquier equipo actual.
+- GPU recomendadas: no aplica; el modelo está pensado para CPU. Cualquier GPU con más de 1 GB de VRAM podría cargarlo, pero no se documenta soporte acelerado específico.
+- Cabe en cualquier GPU de consumo (RTX 4090, RTX 3060, integradas) por tamaño, aunque el diseño objetivo es CPU.
+- Despliegue: llama.cpp (`llama-cli`), `llama-cpp-python` (`create_chat_completion`), y cualquier runtime compatible con GGUF y plantilla Gemma embebida (Ollama, llama.cpp server). No se documenta vLLM ni TGI para este artefacto.
+- Latencia y throughput: no disponibles. Los ejemplos usan 4 hilos (`-t 4`) y contexto 2048, sin cifras de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas destino | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Idiomas destino | Licencia | Formato |
 |---|---|---|---|---|---|
-| gemma-3-270m-science-translate-best-GGUF (Q8_0) | 268M | 32.768 | 77 lenguas africanas (solo EN→XX) | no elegida; Gemma Terms | GGUF |
-| NLLB-200-3.3B (referencia usada como reward) | 3.300M | 512 | 200 lenguas | CC-BY-NC 4.0 | safetensors, GGUF comunitario |
-| Gemma 3 270M base | 268M | 32.768 | multilingüe general | Gemma Terms of Use | safetensors, GGUF |
-| Modelos de traducción de bajos recursos tipo M2M-100 | 418M–10.300M | 512 | ~100 lenguas | MIT (418M) | safetensors |
+| Este modelo (Gemma 3 270M science-translate, Q8_0) | 270M | no disponible (ejemplos a 2048) | 77 entrenadas + 8 zero-shot | Uso comercial con atribución + Gemma Terms | GGUF Q8_0 |
+| `google/gemma-3-270m-it` (base) | 270M | no disponible en esta ficha | Multilingüe general | Gemma Terms of Use | safetensors, GGUF |
+| NLLB-200 (variantes pequeñas) | 600M–54B | 512 tokens | ~200 | CC-BY-NC 4.0 | safetensors |
+| M2M-100 (418M) | 418M | 1024 tokens | 100 | MIT | safetensors |
 
-La comparación de rendimiento cuantitativo entre estos modelos no está disponible en la información proporcionada. Frente a NLLB-200-3.3B, este modelo es aproximadamente doce veces menor y está especializado en un subconjunto de lenguas; frente a Gemma 3 270M base, sustituye las capacidades generales por traducción especializada.
+La comparativa se limita a categorías y datos públicos conocidos; no se dispone de resultados de benchmarks cruzados entre estos modelos en la información proporcionada. Frente a NLLB y M2M-100, este modelo destaca por su licencia comercial permisiva con atribución y por su especialización científica, pero su cobertura (77 lenguas africanas, solo desde inglés) es mucho más estrecha.
 
 ## Limitaciones y advertencias
 
-- Licencia sin elegir (`tbd-owner-to-choose`): no hay autorización clara para uso comercial; además, al derivar de Gemma 3, quedan vinculados los Gemma Terms of Use.
-- Modelo de una sola dirección: solo inglés a lengua africana; no soporta traducción inversa ni entre lenguas africanas.
-- 8 de los 85 nombres de lengua aceptados no recibieron entrenamiento RL, por lo que su calidad es incierta.
-- Riesgo de alucinación y de deriva en textos largos: el autor recomienda limitar a 256 tokens para frases y unos 1.024 para párrafos.
-- Sensible al formato del prompt: requiere el nombre del idioma (no el código ISO), dos espacios tras los dos puntos y ningún mensaje de sistema; desviarse del formato degrada la salida.
-- No debe enviarse un `<bos>` literal al servidor, ya que se añadiría un segundo token BOS y cambiaría la salida.
-- La etiqueta de tres letras antepuesta obliga a posprocesar la salida.
-- Sin datos publicados de sesgos por lengua ni evaluaciones de calidad por dominio; el release es de investigación.
-- Solo 21 descargas y 0 likes en el momento de la consulta: ecosistema y validación comunitaria muy limitados.
+- Dirección única: solo traduce inglés→africano; no soporta traducción inversa ni entre lenguas africanas.
+- Ocho lenguas marcadas como zero-shot no recomendadas (`nde`, `fat`, `knc`, `gaa`, `men`, `luy`, `tzm`, `ful`); en `nde` y `knc` el modelo ni siquiera emite la etiqueta de lengua.
+- Formato de prompt frágil: exige dos espacios tras los dos puntos, nombre de lengua en inglés, sin mensaje de sistema y sin `<bos>` manual (provoca doble BOS y altera la salida).
+- Recomendado una frase o párrafo corto por petición; los documentos largos deben trocearse, lo que puede degradar la coherencia del texto completo.
+- Riesgo de alucinación y de deriva terminológica en textos científicos especializados, dado el tamaño de 270M y la limitada cobertura de datos de ciencia (solo seis lenguas).
+- Sesgos no documentados: la model card no detalla sesgos de género, dialectales ni de dominio.
+- Licencia con obligación de atribución ("Translation models by Aletheia AI") y cita del paper, además de los Gemma Terms of Use y la Prohibited Use Policy; conviene revisar ambas antes de uso comercial.
+- No se documentan cifras de latencia ni de rendimiento en producción, ni garantías de calidad fuera del dominio científico.
+- El repositorio solo publica Q8_0; no hay variantes de menor precisión para entornos con restricciones extremas de memoria.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/BeardedMonster/gemma-3-270m-science-translate-best-GGUF
 - Modelo base (bf16): https://huggingface.co/BeardedMonster/gemma-3-270m-science-translate-best
-- Gemma 3 (modelo original): https://huggingface.co/google/gemma-3-270m
+- Modelo original de Google: https://huggingface.co/google/gemma-3-270m-it
+- Gemma Terms of Use: https://ai.google.dev/gemma/terms
+- Gemma Prohibited Use Policy: https://ai.google.dev/gemma/prohibited_use_policy
 - llama.cpp: https://github.com/ggml-org/llama.cpp
-- NLLB-200 (señal de recompensa): https://huggingface.co/facebook/nllb-200-3.3B
-- Paper de Gemma 3: https://arxiv.org/abs/2503.19786
-- Paper de NLLB-200: https://arxiv.org/abs/2207.04672
+- llama-cpp-python: https://github.com/abetlen/llama-cpp-python

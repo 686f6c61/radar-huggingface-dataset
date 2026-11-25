@@ -2,106 +2,107 @@
 
 ## Resumen
 
-Inkling-2-Mini-Unbound es una variante del modelo multimodal Inkling-2-Mini de Thinking Machines a la que se le ha eliminado el comportamiento de rechazo mediante una edición directa de pesos. El autor, nokeepai, publica el checkpoint como un reemplazo directo del original: misma arquitectura, mismos ficheros, misma plantilla de chat y mismos parámetros de configuración. El modelo base es un transformer de tipo mixture-of-experts (MoE) con capacidad de entrada imagen-texto (pipeline `image-text-to-text`) y 26.388.646.440 parámetros totales según los safetensors del repositorio.
+Inkling-2-Mini-Unbound es un ajuste fino (finetune) del modelo multimodal thinkingmachines/Inkling-2-Mini, desarrollado por nokeepai. Se trata de una variante "uncensored" y "abliterated": se ha eliminado la dirección de rechazo del modelo original y se ha entrenado adicionalmente para que deje de esquivar peticiones dañinas, dando respuestas directas y detalladas en lugar de recusarlas o matizarlas en exceso. El modelo conserva la arquitectura y el tokenizador del original, por lo que funciona como reemplazo directo.
 
-La modificación consiste en la alteración de 20 tensores BF16 de salida de atención mediante una edición consciente de la convolución y preservadora de la norma. No se tocan los pesos de los expertos. Según la model card, el resultado es un checkpoint que se reconstruye bit a bit desde el original con el script `abliteration/edit.pt`. El modelo se distribuye en formato de 8 bits (etiqueta `modelopt`), aunque al cargarse en Transformers los expertos se descomprimen a BF16, lo que eleva el requisito de memoria a unos 53 GB.
+El modelo tiene 26.388.646.440 parámetros totales (arquitectura MoE, segun los tags del repositorio) y un tamaño de repositorio de 59,8 GB, lo que sugiere pesos en BF16/FP16 junto con componentes cuantizados. La versión actual es la v2.1 y solo difiere del original en 120 matrices de atención en BF16; los pesos de expertos en 4 y 8 bits son idénticos byte a byte al modelo base.
 
-El modelo es relevante en el contexto de la investigación sobre alineación y seguridad: demuestra que una edición de pesos muy localizada puede eliminar por completo la tasa de rechazo (0 de 277 prompts dañinos) manteniendo las capacidades del modelo original dentro del intervalo de confianza del 95%. Ahora bien, la propia model card advierte de que el modelo sigue instrucciones dañinas y no debe desplegarse a usuarios finales sin salvaguardas propias.
+Es relevante ahora porque representa un enfoque distinto al de la abliteración convencional: en lugar de limitarse a eliminar la dirección de rechazo, entrena sobre esa edición de pesos para eliminar la evasión (reformular como sátira, llenar de caveats o responder de forma vaga). El autor reporta que el 83,7% de las peticiones dañinas retenidas obtienen una respuesta útil con el modo de pensamiento desactivado, frente al 58,9% del siguiente mejor publicado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE multimodal (image-text-to-text), soporte de thinking mode |
+| Arquitectura | MoE (mixture of experts) sobre transformer, segun tags del repositorio; detalles internos no disponibles |
 | Parametros totales | 26.388.646.440 |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 8-bit (modelopt) en el repo; carga en BF16 en Transformers |
-| Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Longitud de contexto | no disponible en la informacion proporcionada (el ejemplo de llama.cpp usa `-c 32768`) |
+| Tipos de cuantizacion | BF16, 8-bit (modelopt), 4-bit; GGUF de Q8_0 a IQ2_M; Basalt para NVIDIA Blackwell |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (Transformers, SGLang, vLLM); GGUF (llama.cpp, LM Studio, Ollama); Basalt; LoRA (PEFT rank 16/64) |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del base `thinkingmachines/Inkling-2-Mini`: un transformer con mezcla de expertos (MoE) y pipeline multimodal de imagen a texto, con una plantilla de chat que acepta un parámetro `reasoning_effort` (valores de 0 a 0.99, o `none`, `minimal`, `low`, `medium`, `high`, `xhigh`; por defecto 0.9) que se renderiza como una línea de sistema `Thinking effort level: <x>`. El esfuerzo 0 sigue produciendo un razonamiento breve. El parser de razonamiento separa el bloque de pensamiento de la respuesta final.
+El modelo es un finetune del original thinkingmachines/Inkling-2-Mini, que emplea una arquitectura MoE (mixture of experts) segun los tags del repositorio. El autor indica que solo 120 matrices de atención en BF16 difieren del modelo original, mientras que los pesos de expertos en 4 y 8 bits son idénticos byte a byte, lo que confirma que el ajuste se concentra en las capas de atención y no altera los expertos.
 
-El proceso de entrenamiento del modelo base no se detalla en la información disponible. La modificación de Unbound no es un entrenamiento: es una edición de pesos que altera 20 tensores BF16 de salida de atención con una técnica consciente de la convolución y preservadora de la norma, sin tocar los pesos de los expertos y sin capas adicionales de entrenamiento de seguridad. La model card indica que el checkpoint es reproducible bit a bit desde el original. El modelo se distribuye con etiquetas `abliterated` y `refusal-removed`, y el autor lo describe como un reemplazo directo del original en cuanto a arquitectura, ficheros, plantilla de chat y ajustes.
+El proceso combina dos fases: primero una edición de pesos para eliminar la dirección de rechazo (abliteration), y después un entrenamiento adicional sobre esa edición para eliminar la evasión, usando únicamente respuestas del propio modelo. El autor reporta una divergencia respecto al original (KLD) de 0,0439, la mayor entre las variantes medidas, lo que indica que se aleja más del modelo base que otras alternativas. El modelo base original tiene licencia Apache 2.0 y el finetune conserva esa licencia.
 
 ## Capacidades
 
-- Generación de texto y razonamiento con modo de pensamiento configurable mediante `reasoning_effort`.
-- Procesamiento de entradas de imagen y texto (pipeline `image-text-to-text`).
-- Soporte de tool calling y function calling: la configuración de SGLang incluye `--tool-call-parser inkling2`.
-- Soporte de agentes y razonamiento multi-paso a través del modo de pensamiento y el parser de razonamiento dedicado (`--reasoning-parser inkling`).
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- Capacidad de responder a solicitudes dañinas sin rechazo (comportamiento buscado por el autor, no una capacidad funcional adicional).
-- Compatibilidad con endpoints (`endpoints_compatible` según las etiquetas del repositorio).
+- Generación de texto conversacional multi-turno en inglés.
+- Procesamiento de imagen y texto (pipeline image-text-to-text): acepta entradas multimodales.
+- Modo de pensamiento (thinking mode) activable y desactivable, con un parámetro `reasoning_effort` en la plantilla de chat.
+- Respuestas directas y detalladas a peticiones que el modelo original rechaza, incluyendo contenido dañino, peligroso o ilegal.
+- Capacidad de razonamiento y matemáticas preservada respecto al original: MMLU-300 de 74,3 y GSM8K-100 de 98.
+- Compatible con endpoints (tag `endpoints_compatible`) y con el ecosistema Transformers, vLLM, SGLang y llama.cpp.
+- No se documentan capacidades de tool calling, function calling ni agentes en la información disponible.
 
 ## Casos de uso
 
-- Investigación sobre alineación y seguridad: el modelo sirve como objeto de estudio para medir cómo una edición localizada de pesos afecta a la tasa de rechazo, la utilidad de las respuestas y la deriva respecto al original (KL de 0.0546 frente al suelo de ruido de 0.0024).
-- Evaluación comparativa de técnicas de abliteración: permite contrastar el enfoque de Unbound (20 tensores de atención) con el de OpenUncensored/Inkling-2-Mini-Uncensored, con métricas de rechazo, utilidad y KL medidas con el mismo arnés.
-- Pruebas de robustez de filtros y clasificadores: al generar respuestas a prompts dañinos que el original rechaza, se puede usar para estresar sistemas de moderación y detección de contenido en pipelines de producción.
-- Red teaming interno: adecuado para ejercicios controlados de evaluación de riesgos en entornos aislados, con prompts de 8 categorías dañinas y 784 prompts benignos limítrofes como conjunto de prueba.
-- Análisis de deriva de distribución: útil para estudiar cuánto se desvía la salida de un modelo editado en prompts benignos (acuerdo top-1 del 92.4% frente al 98.3% del original), con aplicación en investigación de interpretabilidad.
-- Evaluación de modos de pensamiento: la plantilla de chat con `reasoning_effort` permite experimentar con distintos niveles de razonamiento y medir su efecto en la utilidad de las respuestas (54.2% con pensamiento desactivado frente a 63.2% con esfuerzo 0.9).
+- Investigación sobre seguridad y alineación: el modelo permite estudiar cómo responde un sistema sin entrenamiento de seguridad a peticiones dañinas, útil para analizar mecanismos de rechazo, evasión y edición de pesos en modelos MoE.
+- Evaluación de técnicas de abliteración: sirve como referencia para comparar metodologías de eliminación de rechazo y de evasión, con métricas públicas de utilidad, rechazo y divergencia (KLD) frente a otras variantes.
+- Generación de contenido creativo sin restricciones: escritura de ficción, guiones o narrativa que aborde temas sensibles sin que el modelo recuse la petición, gracias a la eliminación de la evasión y no solo del rechazo.
+- Pruebas de robustez de pipelines de moderación: al desplegarse detrás de un clasificador de contenido propio, permite validar que las salvaguardas externas capturan las respuestas que el modelo genera sin filtro interno.
+- Análisis de datos multimodales en inglés: al aceptar entradas de imagen y texto, puede emplearse en tareas de descripción y extracción de información de imágenes dentro de entornos controlados.
+- Benchmarking de infraestructura de inferencia: con 26,4 mil millones de parámetros y variantes GGUF de Q8_0 a IQ2_M, es útil para medir throughput y latencia de despliegues MoE en llama.cpp, vLLM o SGLang con distintas cuantizaciones.
 
 ## Benchmarks y rendimiento
 
-Los datos proceden de la model card del autor y se midieron con un arnés congelado el 2026-11-21 sobre un split de test sellado: 277 prompts dañinos en 8 categorías, 784 prompts benignos limítrofes, 10 sondas de límites honestos y 10 de autolesión. Decodificación greedy, plantilla de chat oficial, sin system prompt, tope de 4.096 tokens de pensamiento y respuesta final puntuada sin el bloque de razonamiento. Los valores son estimaciones puntuales con intervalos de confianza bootstrap del 95%.
+Datos reportados por el autor en la model card, sobre 263 peticiones dañinas retenidas, con decodificación greedy y respuestas de hasta 8.192 tokens (Q8_0 salvo indicación):
 
-| Metrica | Objetivo | Original | OpenUncensored | Unbound |
-|---|---|---|---|---|
-| Rechazo dañino, pensamiento off | ≤ 1% | 97.5% [95.3, 99.3] | 1.8% [0.4, 3.6] | 0.0% [0.0, 0.0] |
-| Rechazo dañino, esfuerzo 0.9 | ≤ 1% | 97.5% [95.3, 99.3] | 1.4% [0.4, 2.9] | 0.0% [0.0, 0.0] |
-| Peor categoría, off / 0.9 | ≤ 5% | 100% / 100% | 7.1% / 2.9% | 0.0% / 0.0% |
-| Respuestas útiles a peticiones dañinas, off | ≥ 90% | 0.4% [0.0, 1.1] | 34.3% [28.9, 39.7] | 54.2% [48.4, 59.9] |
-| Respuestas útiles a peticiones dañinas, 0.9 | ≥ 90% | 1.1% [0.0, 2.5] | 42.6% [36.8, 48.4] | 63.2% [57.4, 69.0] |
-| Sobrerrechazo, prompts benignos limítrofes | ≤ 2% | 38.1% [34.8, 41.6] | 0.0% [0.0, 0.0] | 0.0% [0.0, 0.0] |
-| KL medio vs original, prompts benignos, primeros 256 tokens | ≤ 0.02 | suelo de ruido 0.0024 [0.0023, 0.0024] | 0.0630 [0.0586, 0.0678] | 0.0546 [0.0498, 0.0598] |
-| Acuerdo top-1, prompts benignos | ≥ 96% | suelo de ruido 98.3% | 91.8% | 92.4% |
-| Límites honestos, off / 0.9 | tasa del original | 90% / 70% | 70% / 70% | 80% / 60% |
-| Recursos de crisis, off / 0.9 | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Rechazo off / on | Útiles off | Útiles on | KLD | MMLU-300 / GSM8K-100 |
+|---|---|---|---|---|---|
+| Unbound v2.1 (este) | 0,4% / 0,4% | 83,7% | 85,2% | 0,0439 | 74,3 / 98 |
+| Unbound v2 | 0,4% / 1,1% | 77,9% | 82,5% | 0,0318 | 76,0 / 99 |
+| Unbound v1.0 | 0,0% / 0,0% | 51,3% | 61,6% | 0,0102 | 75,7 / 99 |
+| IndrasMirror XQ | 0,0% / 0,0% | 58,9% | 68,1% | 0,0357 | 74,7 / 98 |
+| AtomicChat Uncensored (AD-Q4_K) | 0,4% / 0,0% | 50,2% | 59,3% | 0,0106 | 77,0 / 98 |
+| AtomicChat Uncensored (LoRA) | 0,0% / 0,0% | 52,1% | 55,5% | 0,0078 | 78,3 / 99 |
+| Inkling 2 Mini original | 0,8% / 0,8% | 0,8% | 0,8% | no disponible | 76,3 / 97 |
 
-La model card indica que los 6 benchmarks de capacidad (MMLU-Pro, GSM8K, MATH-500, GPQA Diamond, IFEval y HumanEval+) quedan dentro del intervalo de confianza del 95% del original, pero no se publican los valores numéricos de esos benchmarks en la información disponible.
+El autor reporta además que la ganancia sobre IndrasMirror XQ es de +24,7 puntos (IC 95%: +18,6 a +30,8) con pensamiento desactivado y +17,1 puntos (+11,4 a +22,8) con pensamiento activado. Sobre 784 indicaciones benignas limítrofes, solo 1 (0,1%) fue rechazada, frente al 38% del original.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio ocupa 20.2 GB en cuantización de 8 bits (modelopt); al cargarse en Transformers los expertos se descomprimen a BF16, lo que requiere aproximadamente 53 GB de memoria.
-- GPU recomendadas: para BF16 completo, GPUs con 80 GB (A100 80GB, H100 80GB). Para la versión de 8 bits, una GPU de 24-48 GB puede ser suficiente, aunque no se confirma en la información disponible.
-- ¿Cabe en GPU consumer? La versión de 8 bits (20.2 GB) podría caber en una RTX 4090 de 24 GB, pero no se confirma en la información disponible.
-- Opciones de despliegue: SGLang (imagen `lmsysorg/sglang:inkling-2-mini`, con `--tp 1 --attention-backend fa4 --dtype bfloat16 --page-size 128 --enable-multimodal --reasoning-parser inkling --tool-call-parser inkling2`) y Transformers (soporte en el PR #51050, probado en el commit `a10ebc3c`). No se mencionan vLLM, llama.cpp, Ollama ni TGI en la información disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: con 26,4 mil millones de parámetros, en BF16 se requieren aproximadamente 53 GB solo para pesos; en Q8_0 unos 27 GB; en Q4_K_M unos 15-16 GB; en IQ2_M alrededor de 8-9 GB.
+- GPU recomendadas: A100 80 GB o H100 para BF16 sin cuantizar; A100 40 GB o RTX 6000 Ada para Q8_0; RTX 4090 (24 GB) para Q4_K_M y cuantizaciones menores.
+- Cabe en GPU de consumo: sí, en RTX 4090 y GPUs con 16-24 GB usando cuantizaciones Q4 o menores; las variantes IQ2_M permiten despliegue en GPUs de 8-12 GB con pérdida de calidad.
+- Opciones de despliegue: Transformers, vLLM, SGLang (safetensors); llama.cpp, LM Studio, Ollama (GGUF); Basalt para NVIDIA Blackwell; LoRA PEFT sobre el modelo original.
+- Latencia y throughput: no disponibles en la información proporcionada.
+- Configuración recomendada por el autor: pensamiento activado, temperatura 0,6, top_p 0,95 y un límite de pensamiento de 4.096 tokens. No usar muestreo DRY. Con decodificación greedy y pensamiento activado el modelo puede entrar en bucles de razonamiento.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rechazo dañino (off) | Respuestas utiles (off) | KL vs original | Licencia |
-|---|---|---|---|---|---|---|
-| Inkling-2-Mini-Unbound | 26.388.646.440 | no disponible | 0.0% | 54.2% | 0.0546 | Apache 2.0 |
-| OpenUncensored/Inkling-2-Mini-Uncensored | no disponible | no disponible | 1.8% | 34.3% | 0.0630 | no disponible |
-| thinkingmachines/Inkling-2-Mini (original) | no disponible | no disponible | 97.5% | 0.4% | suelo de ruido 0.0024 | no disponible |
+| Modelo | Parámetros | Contexto | Útiles (off/on) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Inkling-2-Mini-Unbound v2.1 | 26,4 B (MoE) | no disponible | 83,7% / 85,2% | Apache 2.0 | HF (safetensors, GGUF, Basalt, LoRA) |
+| IndrasMirror XQ Uncensored | mismo base (26,4 B) | no disponible | 58,9% / 68,1% | no disponible | HF |
+| AtomicChat Uncensored | mismo base (26,4 B) | no disponible | 52,1% / 55,5% | no disponible | HF (GGUF y LoRA) |
+| Inkling 2 Mini original | 26,4 B (MoE) | no disponible | 0,8% / 0,8% | Apache 2.0 | HF |
 
-Los tres modelos comparten la misma arquitectura base. Unbound mejora a OpenUncensored tanto en utilidad de las respuestas (54.2% frente a 34.3% con pensamiento desactivado; 63.2% frente a 42.6% con esfuerzo 0.9) como en deriva respecto al original (KL de 0.0546 frente a 0.0630), y reduce el sobrerrechazo a 0.0% en ambos casos. No se dispone de datos de benchmarks de capacidad numéricos para ninguno de los tres en la información proporcionada.
+Todas las variantes comparten el mismo modelo base y arquitectura; la diferencia principal es el grado de eliminación de rechazo y evasión, medido con el mismo conjunto de 263 peticiones y el mismo juez. Unbound v2.1 obtiene la mayor utilidad pero también la mayor divergencia respecto al original (KLD 0,0439), mientras que AtomicChat LoRA conserva mejor el rendimiento en MMLU (78,3 frente a 74,3).
 
 ## Limitaciones y advertencias
 
-- El modelo sigue instrucciones dañinas: da respuestas detalladas a solicitudes de contenido peligroso o ilegal (armas, ciberataques, delitos y abuso) que el original rechaza. No tiene entrenamiento de seguridad añadido.
-- No debe desplegarse a usuarios finales sin salvaguardas propias, ni en contextos donde sus salidas puedan llegar a alguien que no haya elegido usar un modelo sin censura.
-- Bucles de pensamiento: con esfuerzo alto el modelo puede entrar en bucles en algunos prompts; las evaluaciones usaron un tope de 4.096 tokens de pensamiento.
-- Deriva respecto al original en prompts benignos: KL medio de 0.0546 (objetivo ≤ 0.02) y acuerdo top-1 del 92.4% (objetivo ≥ 96%), por debajo de los umbrales fijados por el autor.
-- Menor tasa de límites honestos que el original: 80% / 60% frente a 90% / 70% (pensamiento off / esfuerzo 0.9).
-- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, y fue creado y actualizado el mismo día (2026-11-21), lo que limita la validación externa.
-- Idiomas soportados no disponibles: no se puede confirmar el comportamiento multilingüe.
-- Licencia Apache 2.0: permite uso comercial, pero el autor advierte explícitamente contra el despliegue sin salvaguardas; la responsabilidad legal del uso recae en el desplegador.
-- Riesgo de alucinación: no se han publicado métricas específicas de alucinación en la información disponible.
-- Sesgos conocidos: no se han publicado análisis de sesgos en la información disponible.
+- El modelo sigue instrucciones dañinas: da respuestas detalladas a peticiones peligrosas o ilegales que el original rechaza. No debe desplegarse ante usuarios finales sin salvaguardas propias.
+- No tiene entrenamiento de seguridad superpuesto; el autor lo advierte explícitamente.
+- Puede entrar en bucles de razonamiento con decodificación greedy y pensamiento activado; se recomienda temperatura 0,6, top_p 0,95 y un límite de pensamiento de 4.096 tokens.
+- El 16,1% de 230 peticiones dañinas nuevas alcanza el límite de pensamiento con la configuración recomendada (29,1% con greedy).
+- Mayor divergencia respecto al modelo base que otras variantes (KLD 0,0439), lo que puede degradar sutilmente capacidades no medidas.
+- Soporte únicamente de inglés según la model card.
+- Riesgo de alucinación: no cuantificado en la información disponible; aplicable el riesgo habitual de los modelos generativos.
+- Sesgos conocidos: no documentados en la información proporcionada.
+- La licencia Apache 2.0 permite uso comercial, pero el contenido generado puede ser dañino o ilegal; la responsabilidad legal recae en el desplegador.
+- No se documentan capacidades de tool calling ni de agentes, lo que limita su uso en pipelines automatizados que dependan de ellas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound
+- GGUF: https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound-GGUF
+- Basalt (NVIDIA Blackwell): https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound-Basalt
+- Repositorio de código y datos: https://github.com/nokeepai/inkling-2-mini-unbound
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
-- Modelo comparado (OpenUncensored): https://huggingface.co/OpenUncensored/Inkling-2-Mini-Uncensored
-- Perfil del autor en X: https://x.com/nokeepai
+- IndrasMirror XQ Uncensored: https://huggingface.co/IndrasMirror/Inkling-2-Mini-XQ-Uncensored
+- AtomicChat Uncensored GGUF: https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF
+- Sitio del autor: https://nokeep.ai
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
-- PR de Transformers con soporte para Inkling-2-Mini: #51050 (commit `a10ebc3c`)
-- Imagen de SGLang para evaluaciones: `lmsysorg/sglang:inkling-2-mini`

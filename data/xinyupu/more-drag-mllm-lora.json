@@ -1,0 +1,54 @@
+{
+  "schema": 2,
+  "id": "xinyupu/MoRe-Drag-MLLM-LoRA",
+  "slug": "xinyupu-more-drag-mllm-lora",
+  "author": "xinyupu",
+  "url": "https://huggingface.co/xinyupu/MoRe-Drag-MLLM-LoRA",
+  "created_at": "2026-11-25T03:53:01.000Z",
+  "updated_at": "2026-11-25T03:57:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "drag-based-editing",
+    "image-editing",
+    "arxiv:2609.36755",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 207402480,
+  "storage_human": "207 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to create a home office if you just don't have the space",
+      "url": "https://www.redonline.co.uk/interiors/a31693022/home-office/",
+      "snippet": "Mar 17, 2020 · As more and more of us embark on working from home full-time due to the coronavirus, we're often having to contend …"
+    }
+  ]
+}

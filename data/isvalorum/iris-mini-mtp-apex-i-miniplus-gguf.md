@@ -2,106 +2,108 @@
 
 ## Resumen
 
-Iris-mini-MTP-APEX-I-MiniPlus-GGUF es una cuantización GGUF del modelo base AllSpark-Research/Iris-mini, publicada por el usuario IsValorum. El modelo original emplea una arquitectura identificada en la model card como `qwen35moe`, que combina mezcla de expertos (MoE) con una capa nativa de predicción multi-token (MTP). La versión cuantizada conserva esa capa MTP íntegra, lo que permite usarla como su propio modelo borrador para decodificación especulativa dentro de llama.cpp, sin necesidad de un draft model externo.
+Iris-mini-MTP-APEX-I-MiniPlus-GGUF es una cuantizacion GGUF personalizada del modelo base AllSpark-Research/Iris-mini, un modelo de lenguaje de arquitectura Mixture of Experts (MoE) con 35.505.251.456 parametros totales segun los pesos en safetensors del modelo original. La publica el usuario IsValorum bajo licencia Apache 2.0, y su objetivo es ofrecer una version comprimida que preserve la fidelidad de los tensores criticos (router, cabeza de salida y compuertas de atencion) frente a las cuantizaciones genericas de 2 y 3 bits.
 
-El dato de parámetros totales reportado en safetensors es de 35.505.251.456 (aproximadamente 35,5 mil millones). El archivo GGUF resultante ocupa 14,84 GB (13,82 GiB), gracias a una receta de cuantización mixta calibrada con importance matrix denominada APEX-I-MiniPlus, que asigna precisión variable según la sensibilidad de cada capa.
+La ficha del autor la etiqueta como variante "MiniPlus V1", un perfil compacto y agil con router en F32 sin comprimir, cabeza de salida en Q6_K, compuertas de atencion en Q8_0 y expertos nucleo en IQ3_XXS, con un peso aproximado de 13,56 GiB. Incluye soporte nativo de decodificacion especulativa mediante Multi-Token Prediction (MTP), pensado para acelerar la generacion en llama.cpp.
 
-La relevancia de esta publicación es doble: por un lado, comprime un modelo MoE de ~35,5B en un único archivo que cabe en GPUs de consumo con 24 GB de VRAM; por otro, demuestra que la capa MTP nativa puede aprovecharse en llama.cpp con una tasa de aceptación medida del 58,8 % al 65,5 %, lo que se traduce en 1,59–1,66 tokens por paso. La licencia es Apache-2.0 y los idiomas declarados son inglés y chino.
+Su relevancia practica radica en que permite ejecutar un MoE de 35B en hardware de consumo y en RAM de sistema (DDR4/DDR5), manteniendo contexto largo (hasta 256K segun el autor) y velocidades de 20 a 45 tok/s en inferencia por RAM. El propio autor recomienda su variante V2.1 como opcion principal, por lo que esta V1 debe considerarse una edicion heredada mantenida por transparencia arquitectonica.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | `qwen35moe` (mezcla de expertos, MoE, con capa nativa de predicción multi-token) |
-| Parámetros totales | 35.505.251.456 (según safetensors del modelo base) |
-| Parámetros activos | no disponible |
-| Longitud de contexto | no disponible (los ejemplos de la model card usan `-c 8192`, pero se trata de un ajuste de ejecución, no de una especificación confirmada) |
-| Tipos de cuantización | Receta mixta APEX-I-MiniPlus: `Q6_K` (cabeza de salida), `Q3_K` (expertos de borde, capas 0–9 y 30–39), `IQ3_XXS` ~3,06 bpw (expertos enrutados centrales, capas 10–29), `Q3_K`/`Q4_K` (expertos compartidos y enrutamiento), `Q3_K`/`Q4_K`/`Q5_K` (capa MTP `blk.40`) |
-| Idiomas soportados | inglés (en), chino (zh) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (archivo único `Iris-mini.APEX-I-MiniPlus.gguf`, 14,84 GB / 13,82 GiB) |
+| Arquitectura | Mixture of Experts (MoE) tipo transformer, etiquetada como qwen35moe |
+| Parametros totales | 35.505.251.456 (35,5B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | hasta 256K tokens (segun el autor) |
+| Tipos de cuantizacion | GGUF personalizada: router F32, cabeza de salida Q6_K, compuertas de atencion Q8_0, expertos nucleo IQ3_XXS; tamano aproximado de 13,56 GiB |
+| Idiomas soportados | en, zh, es, fr, de, pt, it, ru, ja, ko, vi, th, ar (la model card declara 13 idiomas; los metadatos de Hugging Face solo listan en y zh) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp), con imatrix |
+| Modelo base | AllSpark-Research/Iris-mini |
+| Tamano del repositorio | 14,8 GB |
+| Decodificacion especulativa | MTP (Multi-Token Prediction) nativo |
 
 ## Arquitectura y entrenamiento
 
-El modelo base AllSpark-Research/Iris-mini se etiqueta con la arquitectura `qwen35moe`, es decir, un transformer con mezcla de expertos al que se añade una capa de predicción multi-token. La capa MTP ocupa el bloque `blk.40.nextn` y funciona como un bloque de predicción de un solo paso: el propio modelo genera el token borrador que después verifica en la pasada principal, lo que evita mantener en memoria un segundo modelo borrador. Según la model card, esto habilita decodificación especulativa de coste prácticamente nulo en cuanto a VRAM adicional.
+El modelo subyacente es un transformer con capas Mixture of Experts, identificado en las etiquetas como `qwen35moe`, lo que sugiere una familia derivada de la arquitectura Qwen con 35B de parametros totales. No se dispone de informacion sobre el numero de parametros activos por token, el numero de expertos, el reparto de capas compartidas ni la dimension oculta. Tampoco hay datos publicados sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron fases de RLHF, DPO u otras técnicas de alineación. Tampoco se detalla la configuración interna de la MoE (número de expertos, top-k de enrutamiento, dimensión oculta o número de capas más allá de la referencia a las capas 0–39 en la tabla de cuantización). La innovación técnica destacable de esta publicación concreta es la receta de cuantización APEX-I-MiniPlus: calibrada con importance matrix, aplica precisión variable por sensibilidad, comprimiendo los expertos internos a `IQ3_XXS` mientras mantiene en `Q6_K` la cabeza de salida y en `Q3_K`/`Q4_K`/`Q5_K` la capa MTP, con el objetivo de preservar tanto la fidelidad de las probabilidades de token como la calidad de los borradores especulativos.
+La aportacion tecnica de esta ficha no esta en el entrenamiento, sino en la cuantizacion tensor a tensor. El autor describe una estrategia que mantiene sin comprimir las compuertas del router en F32 (criticas para enrutar correctamente a los expertos), protege la cabeza de salida de tokens en Q6_K para evitar errores de sintaxis y corchetes en codigo, y fija las compuertas de atencion en Q8_0. Los expertos nucleo se cuantizan en IQ3_XXS, por encima del umbral de calidad que el autor situa en las recetas genericas de 2 bits (`IQ2_S`).
+
+Ademas, el paquete incorpora soporte de Multi-Token Prediction para decodificacion especulativa en llama.cpp, lo que permite proponer varios tokens por paso y validarlos en paralelo. La cuantizacion se genero con imatrix y se realizo en Unsloth Studio. La model card menciona vectorizacion lineal compatible con CPU para evitar bloqueos de busqueda en AVX2, orientada a inferencia total o parcial en RAM de sistema.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, según los ejemplos de uso con `-cnv` incluidos en la model card.
-- Decodificación especulativa nativa mediante la capa MTP integrada (`--spec-type draft-mtp`), con tasa de aceptación medida del 58,8 % al 65,5 %.
-- Razonamiento multi-turno: los benchmarks de MTP declarados se midieron "across multi-turn reasoning and conversational prompts".
-- Capacidades multilingües limitadas a inglés y chino según los metadatos declarados.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible explícitamente; la model card solo menciona razonamiento multi-turno conversacional.
-- Modo thinking, visión o audio: no disponible en la información proporcionada.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` aparece en los metadatos de Hugging Face.
+- Generacion de texto conversacional multi-turno, con pipeline `text-generation`.
+- Razonamiento y matematicas de contexto profundo, hasta 256K tokens segun el autor.
+- Generacion de codigo, con proteccion especifica de la cabeza de salida para evitar corrupcion de sintaxis y delimitadores.
+- Decodificacion especulativa nativa via MTP, que acelera la generacion en llama.cpp.
+- Soporte multilingue declarado para 13 idiomas: ingles, chino, espanol, frances, aleman, portugues, italiano, ruso, japones, coreano, vietnamita, tailandes y arabe.
+- Inferencia total o parcial en RAM de sistema, con offload de la KV cache a VRAM.
+- Compatibilidad con endpoints (`endpoints_compatible`) y con el ecosistema llama.cpp.
+- No se documentan capacidades de vision, audio, tool calling ni uso agentico en la informacion disponible.
 
 ## Casos de uso
 
-- Asistente conversacional local en inglés o chino: al ocupar 14,84 GB en GGUF y caber en una GPU de 24 GB, puede desplegarse en una estación de trabajo sin depender de APIs externas, con `llama-server` exponiendo un endpoint compatible con OpenAI.
-- Atención al cliente bilingüe: el modelo cubre en/zh, lo que permite atender consultas de usuarios de ambos mercados con un único despliegue, usando la capacidad conversacional multi-turno descrita en la model card.
-- Generación asistida en producción con latencia reducida: activando `--spec-type draft-mtp` con `--spec-draft-n-max 1` y `--spec-draft-p-min 0.8` se obtienen 1,59–1,66 tokens por paso, lo que reduce el tiempo de respuesta en generaciones largas sin añadir VRAM.
-- Inferencia en servidor de gama media: al comprimir los expertos internos a `IQ3_XXS` (unos 3,06 bpw), el modelo puede servirse en GPUs de 24 GB junto con la caché KV necesaria para 8192 tokens de contexto.
-- Prototipado e investigación sobre MoE y decodificación especulativa: sirve como banco de pruebas para medir tasas de aceptación de MTP en llama.cpp con distintas profundidades de borrador y umbrales de probabilidad.
-- Despliegue offline o en entornos con restricciones de red: al ser un archivo GGUF único con licencia Apache-2.0, puede copiarse a máquinas aisladas y ejecutarse con llama.cpp sin componentes adicionales.
-- Evaluación comparativa de recetas de cuantización: permite contrastar la receta APEX-I-MiniPlus (mixta con iMatrix) frente a cuantizaciones uniformes del mismo modelo base en tareas de generación de texto.
+- Despliegue en estaciones de trabajo sin GPU de gama alta: al pesar unos 13,56 GiB, el modelo puede residir mayoritariamente en DDR4/DDR5 y generar entre 20 y 45 tok/s, lo que permite montar un asistente local de 35B en equipos sin A100 ni H100.
+- Analisis de documentos largos: con contexto de hasta 256K tokens, es adecuado para resumir contratos, informes tecnicos o expedientes completos en una sola pasada, colocando la KV cache en VRAM y los pesos en RAM.
+- Asistencia de programacion en local: la cabeza de salida en Q6_K reduce la corrupcion de sintaxis, lo que lo hace util para autocompletado y generacion de funciones en entornos sin conexion.
+- Razonamiento matematico por etapas: el perfil V1 esta pensado para contextos profundos de razonamiento, con lo que sirve para resolver problemas encadenados y verificaciones paso a paso.
+- Atencion multilingue: al declarar 13 idiomas, puede emplearse en traduccion y atencion al cliente en espanol, frances, aleman, portugues, japones o arabe, entre otros.
+- Prototipado e investigacion de cuantizaciones: su configuracion tensor a tensor documentada lo convierte en referencia para estudiar el impacto de F32, Q8_0 y Q6_K en modelos MoE.
+- Servicio de chat con presupuesto de memoria ajustado: integrable en llama.cpp sobre portatiles con 16-24 GB de VRAM y 32 GB o mas de RAM.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Los únicos datos de rendimiento medidos son los de la decodificación especulativa con la capa MTP:
+La model card incluye una seccion de benchmark independiente de la familia APEX-I-MiniPlus (referencia Occamy V2) y una comparativa frente a cuantizaciones planas y APEX generico, pero no se han transcrito los valores numericos en la informacion disponible. El unico dato cuantitativo concreto corresponde a la variante V2.1, no a esta V1: perplejidad de 5,3735 ± 0,1214 frente a una linea base sin cuantizar de aproximadamente 5,31.
 
-| Métrica | Valor medido |
-|---|---|
-| Tasa de aceptación del borrador | 58,8 % – 65,5 % |
-| Media de tokens por paso | 1,59 – 1,66 tokens/paso |
-| Mejor caso en generación continua | Hasta 2,0 tokens/paso (100 % de aceptación del borrador) |
-| Entorno de medición | llama.cpp, sobre prompts de razonamiento multi-turno y conversacionales |
-
-Parámetros recomendados por el autor para la decodificación especulativa:
-
-| Argumento | Valor | Descripción |
+| Metrica | Este modelo (V1) | Referencia |
 |---|---|---|
-| `--spec-type` | `draft-mtp` | Activa la decodificación especulativa con MTP nativo |
-| `--spec-draft-n-max` | `1` | Coincide con el único bloque MTP nativo |
-| `--spec-draft-p-min` | `0,7` – `0,8` | Umbral mínimo de probabilidad para aceptar tokens borrador |
+| Perplejidad | no disponible | Base sin cuantizar: aprox. 5,31; V2.1: 5,3735 ± 0,1214 |
+| MMLU | no disponible | no disponible |
+| HumanEval | no disponible | no disponible |
+| GSM8K | no disponible | no disponible |
+| Throughput en RAM | 20-45 tok/s (segun autor, depende de CPU y DDR) | no disponible |
+
+No se han publicado resultados de benchmarks completos de esta V1 en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el archivo GGUF pesa 14,84 GB (13,82 GiB); con caché KV para 8192 tokens de contexto hay que añadir varios GB, por lo que conviene reservar del orden de 17–20 GB en total. Cifra orientativa derivada del tamaño de archivo, no confirmada por el autor.
-- GPU recomendadas: RTX 4090 (24 GB) y RTX 3090 (24 GB) pueden cargar el modelo completo con `-ngl 99 -c 8192`. A100 (40/80 GB) y H100 ofrecen margen sobrado para lotes mayores y contextos más largos.
-- Cabe en GPU de consumo: sí, en tarjetas de 24 GB. En tarjetas de 16 GB (por ejemplo, RTX 4080) será necesario descargar capas a CPU o reducir el contexto, a menos que se use una cuantización más agresiva que la publicada.
-- Memoria unificada: en Apple Silicon, un sistema con 32 GB o más de memoria unificada debería poder ejecutarlo, aunque esto no está confirmado por el autor.
-- Opciones de despliegue: llama.cpp (`llama-server` y `llama-cli`) es el único backend documentado por el autor, con los flags `--spec-type draft-mtp`, `--spec-draft-n-max 1` y `--spec-draft-p-min 0.8`. No se mencionan vLLM, TGI, Ollama ni otros motores.
-- Latencia y throughput: no hay cifras absolutas de tokens por segundo publicadas. El único dato relativo es la ganancia de la decodificación especulativa, con 1,59–1,66 tokens por paso y un mejor caso de 2,0.
+- VRAM estimada: aproximadamente 13,56 GiB para los pesos en cuantizacion MiniPlus V1; a ello se suma la KV cache para contexto largo.
+- El autor afirma que el contexto completo de 256K puede ejecutarse en VRAM en configuraciones de 24 GB, asignando la KV cache a GPU y los pesos a RAM.
+- GPU recomendadas: no se especifican modelos concretos; la model card incluye proyecciones de throughput para RTX 30, RTX 40 y RTX 50 sin cifras transcritas.
+- Cabe en GPU de consumo con 16 GB o mas si se acepta offload parcial a RAM; con 24 GB (RTX 3090, 4090) se puede mantener contexto largo en VRAM.
+- Despliegue: llama.cpp como runtime principal, con soporte de MTP para decodificacion especulativa. No se mencionan vLLM, TGI ni Ollama.
+- Latencia y throughput: 20-45 tok/s en inferencia por RAM de sistema, segun CPU y ancho de banda DDR4/DDR5. No hay cifras de latencia por token ni de throughput en GPU pura.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones completas de modelos alternativos en la información proporcionada, por lo que la comparación se limita al propio modelo base frente a su versión cuantizada:
-
-| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
 |---|---|---|---|---|---|
-| IsValorum/Iris-mini-MTP-APEX-I-MiniPlus-GGUF | 35,5B (activos: no disponible) | no disponible | GGUF, 14,84 GB | Apache-2.0 | Cuantización mixta con iMatrix; conserva la capa MTP |
-| AllSpark-Research/Iris-mini (modelo base) | 35,5B | no disponible | safetensors | Apache-2.0 | Modelo original sin cuantizar; arquitectura `qwen35moe` |
-| Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | No se han encontrado datos comparables en la información disponible |
+| Iris-mini APEX-I-MiniPlus V1 (este) | 35,5B | hasta 256K | GGUF custom, aprox. 13,56 GiB | Apache 2.0 | Perfil agil, router F32, salida Q6_K |
+| Iris-mini APEX-I-MiniPlus V2.1 | 35,5B | hasta 256K | GGUF custom, aprox. 13,74 GiB | Apache 2.0 | Recomendada por el autor; expertos compartidos en Q5_K; PPL 5,3735 |
+| APEX-I-Mini generico de la comunidad | 35,5B | no disponible | IQ2_S en expertos, Q3_K_M en salida | Apache 2.0 | Menor calidad segun el autor; riesgo de picos de perplejidad |
+| AllSpark-Research/Iris-mini (base) | 35,5B | no disponible | safetensors sin cuantizar | Apache 2.0 | Referencia de calidad; PPL aprox. 5,31 |
+
+No se dispone de comparaciones con modelos de otras familias en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros), por lo que no es posible estimar la degradación introducida por la cuantización mixta a `IQ3_XXS` en los expertos internos.
-- El uso de `IQ3_XXS` (~3,06 bpw) en las capas 10–29 implica una pérdida de precisión relevante en los expertos centrales; la model card no aporta comparaciones con el modelo en bf16/fp16.
-- Idiomas soportados limitados a inglés y chino. No hay evidencia de buen rendimiento en castellano ni en otras lenguas.
-- No se documenta el número de parámetros activos ni la configuración de la MoE, lo que impide estimar el coste real de cómputo por token.
-- La longitud de contexto real del modelo base no se especifica; los `-c 8192` de los ejemplos son ajustes de ejecución y no deben interpretarse como el máximo soportado.
-- Riesgo de alucinación: no evaluado ni cuantificado en la información disponible.
-- Sesgos: no documentados. Al no haber información sobre el dataset de entrenamiento, no se puede evaluar la composición ni los sesgos potenciales.
-- Restricciones de licencia: Apache-2.0 permite uso comercial, pero conviene verificar la licencia y las condiciones del modelo base AllSpark-Research/Iris-mini, así como las de los pesos originales sobre los que se ha generado esta cuantización.
-- Estado del repositorio: en el momento de la consulta figura con 0 descargas y 0 "likes", por lo que no existe validación comunitaria de la calidad de la cuantización. La fecha de creación registrada (2026-09-14) resulta inconsistente con el contexto temporal habitual, lo que aconseja tratar los metadatos con cautela.
-- Compatibilidad: el autor solo documenta llama.cpp; el uso en otros motores de inferencia no está verificado, especialmente en lo relativo al soporte de la capa MTP.
-- La decodificación especulativa MTP requiere invocar el modelo con los flags adecuados; en caso contrario, el rendimiento cae al de una generación autoregresiva convencional y la capa MTP queda desaprovechada.
+- El autor recomienda explicitamente la variante V2.1 frente a esta V1; la V1 se mantiene como edicion heredada por transparencia arquitectonica.
+- No hay datos publicados de parametros activos, numero de expertos ni composicion del dataset de entrenamiento, lo que dificulta evaluar su comportamiento real.
+- Los metadatos de Hugging Face solo declaran ingles y chino, mientras que la model card lista 13 idiomas; el soporte real del resto no esta verificado.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no se documentan evaluaciones de factualidad.
+- La cuantizacion IQ3_XXS en los expertos nucleo introduce perdida de calidad respecto al modelo sin cuantizar (perplejidad de referencia aproximada de 5,31 en el base).
+- El rendimiento depende fuertemente del ancho de banda de memoria DDR4/DDR5 y del soporte AVX2 del procesador.
+- No se documentan capacidades de tool calling, uso agentico ni vision, por lo que no deben asumirse en produccion.
+- La licencia Apache 2.0 permite uso comercial, pero debe verificarse la licencia del modelo base AllSpark-Research/Iris-mini antes de desplegarlo.
+- El repositorio tiene 316 descargas y 2 likes, con lo que la validacion por parte de la comunidad es limitada.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/IsValorum/Iris-mini-MTP-APEX-I-MiniPlus-GGUF
+- Hugging Face (este modelo): https://huggingface.co/IsValorum/Iris-mini-MTP-APEX-I-MiniPlus-GGUF
+- Variante recomendada V2.1: https://huggingface.co/IsValorum/Iris-mini-APEX-I-MiniPlus-V2.1-GGUF
 - Modelo base: https://huggingface.co/AllSpark-Research/Iris-mini
-- Otros enlaces (papers, blogs, repositorios, demos): no disponible. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los resultados obtenidos eran contenido no relacionado y se han descartado.
+- Apoyo al autor: https://ko-fi.com/isvalorum
+- llama.cpp: no disponible en la informacion proporcionada
+- Unsloth Studio: no disponible en la informacion proporcionada

@@ -2,84 +2,85 @@
 
 ## Resumen
 
-`gemma-270m-math-reasoner` es un ajuste fino experimental del modelo `google/gemma-3-270m` publicado por el usuario `reaperdoesntknow` (Convergent Intelligence LLC) en Hugging Face. El objetivo declarado es que el modelo produzca razonamiento matematico paso a paso: cadenas de pasos que conducen a una respuesta final. Se trata de un checkpoint de investigacion, no de un modelo de produccion, y el propio autor lo presenta como una prueba rapida de capacidad ("quick capacity test") sobre el modelo base.
+gemma-270m-math-reasoner es un ajuste fino experimental del modelo google/gemma-3-270m, publicado por el usuario reaperdoesntknow (Convergent Intelligence LLC) bajo licencia Apache 2.0. Se trata de un checkpoint de 268 millones de parámetros entrenado para producir razonamiento matemático paso a paso, con el objetivo declarado de estudiar hasta qué punto el entrenamiento en formato de razonamiento transfiere a escalas muy pequenas. El autor lo describe explícitamente como un artefacto de investigación y no como un modelo de matemáticas para producción.
 
-Con 268.098.176 parametros reales (segun los safetensors del repo), es un modelo muy pequeno, pensado para experimentos en dispositivo o para estudiar como de lejos llega el entrenamiento en formato de razonamiento a escala minima. La model card advierte explicitamente de que el modelo ha aprendido la *forma* del razonamiento (escribe pasos y avanza hacia una respuesta) pero a menudo no puede sostener la aritmetica, produciendo cadenas que parecen convincentes y fallan a mitad de camino, sobre todo en problemas verbales de varios pasos.
+El modelo parte de la arquitectura Gemma 3 (gemma3_text) y conserva la tokenizador y plantilla de chat del modelo base. Su relevancia es fundamentalmente metodológica: sirve como referencia para analizar el fenómeno de las "cadenas de razonamiento plausibles pero aritméticamente incorrectas" en modelos de muy baja capacidad, y como linea base frente a destilaciones de mayor tamano. El autor anuncia una variante de 1B prevista.
 
-Es relevante ahora como artefacto de investigacion y como linea base frente a destilaciones mayores: el autor anuncia una variante de 1B. La licencia es Apache 2.0, heredada del modelo base Gemma 3, y el repo ocupa 1,1 GB en formato safetensors para transformers.
+El repo ocupa 1,1 GB en formato safetensors y acumula 3085 descargas, aunque no tiene likes ni evaluación formal publicada. La model card deja sin rellenar las secciones de datos de entrenamiento, método (SFT o destilación), hardware y evaluación, por lo que la mayor parte de los detalles de entrenamiento no están disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | transformer decoder-only (gemma3_text) |
+| Arquitectura | Transformer decoder-only (familia Gemma 3, variante gemma3_text) |
 | Parametros totales | 268.098.176 |
-| Parametros activos | no disponible (no es MoE) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (repo solo en safetensors; sin GGUF publicado) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se documentan GGUF ni otras variantes) |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del transformer decoder-only `google/gemma-3-270m`, identificado en los tags como `gemma3_text`. No se trata de una arquitectura MoE ni hibrida: es un transformer denso de 268 millones de parametros. El pipeline declarado es `text-generation` y la libreria `transformers`, con soporte de plantilla de chat (`apply_chat_template`) y compatibilidad con text-generation-inference y endpoints.
+El modelo es un ajuste fino del checkpoint google/gemma-3-270m, un transformer decoder-only denso de 268 millones de parámetros perteneciente a la familia Gemma 3 de Google. No se documentan cambios arquitectónicos respecto al base: el ajuste se orienta a modificar la distribución de salida para que el modelo emita cadenas de razonamiento matemático estructuradas antes de la respuesta final, aprovechando la plantilla de chat heredada del modelo original.
 
-Los detalles de entrenamiento no estan publicados: la model card deja sin rellenar los campos de dataset, metodo (SFT o destilacion), numero de epocas, learning rate y hardware. Por los tags (`math`, `reasoning`, `small-model`, `experimental`) y la descripcion, se deduce que el objetivo del ajuste fue el formato de razonamiento paso a paso, pero no hay informacion sobre el volumen de tokens, la composicion del dataset ni si hubo RLHF o DPO. Tampoco se documenta ninguna innovacion tecnica de decodificacion o atencion.
+La información de entrenamiento es prácticamente inexistente en la model card: los campos de dataset, método (SFT, destilación de trazas, número de épocas y learning rate) y hardware aparecen como marcadores sin rellenar. El autor únicamente declara que el entrenamiento fue "una prueba rápida de capacidad" y que el objetivo era que el modelo aprendiera la forma del razonamiento. No se especifica volumen de tokens, composición del corpus ni si hubo preferencias (RLHF/DPO). Tampoco se documentan innovaciones de decodificación ni técnicas de atención alternativas.
 
 ## Capacidades
 
-- Generacion de texto conversacional con plantilla de chat.
-- Razonamiento matematico en formato paso a paso: produce cadenas de pasos y una respuesta final.
-- Aritmetica basica y problemas verbales simples, con fiabilidad limitada segun el propio autor.
+- Generación de texto conversacional mediante plantilla de chat compatible con transformers.
+- Razonamiento matemático en formato paso a paso: el modelo produce cadenas de pasos intermedios antes de una respuesta final.
+- Resolución de problemas aritméticos simples de un solo paso, con fiabilidad limitada.
+- Capacidad de seguir instrucciones básicas en formato conversacional.
 - Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible como capacidad fiable; el modelo emula el formato multi-paso pero no lo sostiene.
-- Capacidades multilingues: no disponibles (idiomas no declarados).
-- Capacidades especiales (vision, audio, thinking mode explicito): no disponibles.
+- Soporte de agentes y razonamiento multi-paso fiable: no disponible; el propio autor advierte de fallos aritméticos en problemas de varios pasos.
+- Capacidades multilingües: no documentadas.
+- Capacidades especiales (modo thinking, visión, audio): no disponibles en este checkpoint.
 
 ## Casos de uso
 
-- Estudio de transferencia del formato de razonamiento a escala minima: usar el modelo como sujeto de experimentos sobre como el entrenamiento en cadenas de pasos afecta a un modelo de 270M, comparando con el base sin ajustar.
-- Linea base en evaluaciones de destilacion: medir GSM8K u otros conjuntos de matematicas sobre este checkpoint antes de comparar con destilaciones mayores (el autor planea una variante de 1B).
-- Experimentos en dispositivo y edge: con 268M parametros y pesos safetensors de ~1,1 GB, es viable en entornos con recursos muy limitados para probar latencia y consumo.
-- Prototipado de interfaces de razonamiento: validar plantillas de prompt y formatos de salida paso a paso en un modelo barato antes de pasar a uno mayor.
-- Docencia y demostraciones: ilustrar de forma tangible las limitaciones de los modelos pequenos en aritmetica multi-paso, mostrando cadenas que fallan a mitad de camino.
-- Generacion de datos sinteticos de razonamiento para filtrado: producir candidatos de cadenas de pasos que luego se verifican y filtran con un modelo mayor o un verificador simbolico.
+- Investigación sobre transferencia del formato de razonamiento a escala reducida: el modelo permite medir cuánto de la estructura de una cadena de pasos se aprende con 270M parámetros, comparando la forma de las trazas con la corrección del resultado final en subconjuntos controlados.
+- Linea base en experimentos de destilación: sirve como referencia de baja capacidad contra la que comparar destilaciones de modelos mayores o la futura variante de 1B anunciada por el autor.
+- Experimentos en dispositivos de borde: con 268M parámetros y pesos en safetensors de aproximadamente 1,1 GB, es viable ejecutarlo en CPU o GPUs integradas para prototipos de asistentes matemáticos offline, aceptando la tasa de error aritmético.
+- Docencia y demostraciones sobre limitaciones de los LLM: útil para ilustrar en clase cómo un modelo puede generar cadenas de razonamiento convincentes con errores internos, sin necesidad de infraestructura costosa.
+- Pruebas de integración de pipelines de transformers y TGI: al ser compatible con text-generation-inference y endpoints, sirve para validar flujos de despliegue con un modelo pequeno antes de pasar a checkpoints mayores.
+- Generación de datos sintéticos de formato: puede emplearse para producir plantillas de razonamiento paso a paso que luego se filtren y corrijan manualmente, nunca como fuente de verdad matemática.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explicitamente "Not yet formally evaluated" y deja pendiente una ejecucion sobre un subconjunto de GSM8K.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente "Not yet formally evaluated" y deja pendiente una posible ejecución sobre un subconjunto de GSM8K.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16/bf16: aproximadamente 0,55 GB solo para pesos (268M x 2 bytes), mas overhead de activaciones y cache KV; en la practica cabe en cualquier GPU consumer con 4 GB o mas.
-- VRAM estimada en cuantizacion de 8 bits: aproximadamente 0,3 GB para pesos; en 4 bits, aproximadamente 0,15 GB. No hay GGUF publicado, por lo que habria que convertir los pesos.
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) e incluso CPU para inferencia de baja concurrencia; A100/H100 no son necesarias.
-- Cabe en GPU consumer: si, en practicamente todas las GPU con 4 GB o mas, y en CPU.
-- Opciones de despliegue: transformers (soporte nativo), text-generation-inference (tag `text-generation-inference`), endpoints compatibles; llama.cpp/Ollama requeririan conversion previa a GGUF, no publicada.
-- Latencia y throughput: no disponibles (no se han publicado mediciones).
+- VRAM estimada para inferencia en fp16/bf16: aproximadamente 0,6 GB solo para pesos, más overhead de activaciones y cache KV; en la práctica cabe en cualquier GPU con 2 GB o más.
+- Cuantización a 8 bits: en torno a 0,3 GB de pesos; a 4 bits, alrededor de 0,15 GB, aunque el autor no publica variantes GGUF.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) e incluso GPUs integradas o CPU para prototipos; no requiere A100 ni H100.
+- Cabe holgadamente en GPU consumer y en dispositivos de borde.
+- Opciones de despliegue: transformers (soporte nativo), text-generation-inference (etiqueta endpoints_compatible); llama.cpp u Ollama requerirían conversión a GGUF no publicada por el autor.
+- Latencia y throughput: no disponibles; por el tamano, se espera decodificación muy rápida en GPU consumer, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-270m-math-reasoner | 268.098.176 | no disponible | Ajuste fino de razonamiento matematico sobre Gemma 3 270M | apache-2.0 | Hugging Face, safetensors |
-| google/gemma-3-270m (base) | 270M (aprox.) | no disponible | Modelo base generalista | Gemma (terminos de Google) | Hugging Face |
-| Destilaciones mayores del mismo autor (p. ej. Gemma-3-270m-Opus-Distil) | 270M (aprox.) | no disponible | Destilacion generalista | no disponible en la informacion | Hugging Face |
+| gemma-270m-math-reasoner | 268M | no disponible | Razonamiento matemático experimental | Apache 2.0 | Hugging Face |
+| google/gemma-3-270m (base) | 270M | no disponible en la informacion proporcionada | Modelo generalista | Gemma Terms (no Apache 2.0 en el original) | Hugging Face |
+| Variante 1B anunciada por el autor | ~1B (previsto) | no disponible | Razonamiento matemático | no disponible | No publicada |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada. La comparativa se limita a parametros, licencia y disponibilidad.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El propio autor advierte de que es un checkpoint experimental y no un modelo de matematicas para produccion.
-- A 270M parametros, el modelo a menudo no sostiene la aritmetica: produce cadenas de pasos con apariencia convincente que fallan a mitad de camino, especialmente en problemas verbales de varios pasos.
-- Riesgo alto de alucinacion en resultados numericos: las respuestas finales pueden ser incorrectas aunque el formato sea correcto.
-- Sesgos conocidos: no documentados en la informacion disponible; al derivar de Gemma 3, hereda los sesgos del modelo base, no evaluados aqui.
-- Idiomas soportados no declarados; no se puede asumir un rendimiento multilingue fiable.
-- Longitud de contexto no documentada.
-- No hay evaluacion formal publicada ni resultados de benchmarks.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero al derivar de Gemma 3 conviene revisar los terminos de uso de Gemma de Google ademas de la licencia declarada en el repo.
-- No hay pesos GGUF ni cuantizaciones publicadas, lo que limita el despliegue directo en llama.cpp/Ollama sin conversion manual.
+- El propio autor advierte de que el modelo genera cadenas de razonamiento con apariencia correcta pero errores aritméticos frecuentes, especialmente en problemas de varios pasos.
+- No es apto para producción como modelo matemático: debe tratarse como artefacto de investigación.
+- Sesgos conocidos: no documentados; al heredar el base Gemma 3, puede reproducir sesgos del corpus original de Google, no evaluados aquí.
+- Riesgo de alucinación elevado en contenido factual y en resultados numéricos.
+- Idiomas soportados no documentados; se desconoce el comportamiento fuera del inglés.
+- Longitud de contexto no especificada; no se garantiza el manejo de conversaciones largas.
+- La licencia Apache 2.0 del checkpoint no exime de revisar los términos del modelo base google/gemma-3-270m para usos comerciales derivados.
+- La model card está incompleta (datos, método y evaluación sin rellenar), lo que impide reproducir el entrenamiento o auditar el dataset.
+- No hay variantes cuantizadas publicadas, lo que limita el despliegue en llama.cpp u Ollama sin conversión manual.
 
 ## Enlaces
 

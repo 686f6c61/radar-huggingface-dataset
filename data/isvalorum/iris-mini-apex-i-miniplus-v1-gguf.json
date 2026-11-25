@@ -61,7 +61,7 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 299,
+  "downloads_30d": 316,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
@@ -81,31 +81,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Download der AusweisApp",
-      "url": "https://www.ausweisapp.bund.de/download",
-      "snippet": "Darüber hinaus ermöglicht die AusweisApp den verschlüsselten Datenaustausch zwischen Ausweis und Online-Dienst, bei dem Sie …"
-    },
-    {
-      "title": "AusweisApp - Software zur Nutzung der Online-Ausweisfunktion",
-      "url": "https://www.ausweisapp.bund.de/home/",
-      "snippet": "Die AusweisApp ermöglicht den verschlüsselten Datenaustausch zwischen Ausweis und Dienst bei Nutzung der Online …"
-    },
-    {
-      "title": "AusweisApp: Häufig gestellte Fragen",
-      "url": "https://www.ausweisapp.bund.de/faq-fuer-nutzende",
-      "snippet": "Die Funktion \"Gerät und Ausweis prüfen\", die Sie auf der Startseite der App finden, leitet Sie durch den Prüfvorgang. Ihr Smartphone …"
-    },
-    {
-      "title": "AusweisApp: Online-Ausweisfunktion: Das brauchen Sie",
-      "url": "https://www.ausweisapp.bund.de/online-ausweisen/das-brauchen-sie/",
-      "snippet": "Wenn Sie die Webseite eines Anbieters der Online-Ausweisfunktion direkt über das Smartphone besuchen möchten, reicht es, die …"
-    },
-    {
-      "title": "AusweisApp: Online-Ausweisfunktion nutzen - Bund",
-      "url": "https://www.ausweisapp.bund.de/ausweisapp-nutzen",
-      "snippet": "Der App-Hersteller, Governikus, bietet diesen Dienst an und erscheint daher als Anbieter, bei dem Sie sich ausweisen möchten. …"
-    }
-  ]
+  "sources": []
 }

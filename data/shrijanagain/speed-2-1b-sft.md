@@ -2,78 +2,88 @@
 
 ## Resumen
 
-Speed-2-1B-SFT es un modelo de lenguaje publicado en Hugging Face por el usuario Shrijanagain bajo licencia Apache 2.0. Por el nombre se deduce que se trata de un modelo de aproximadamente 1.000 millones de parametros (1B) sometido a una fase de ajuste supervisado (SFT, *Supervised Fine-Tuning*), presumiblemente sobre una base previa denominada "Speed-2". No obstante, la model card publicada no contiene ninguna descripcion tecnica, ni datos de arquitectura, ni informacion sobre el proceso de entrenamiento.
+Speed-2-1B-SFT es un ajuste supervisado (SFT) del modelo base SPEED2-V0-0B7-CPT-SFT-fp8cpt, un modelo de arquitectura MoE personalizada del autor Shrijanagain. El modelo se distribuye como un adaptador LoRA sobre el modelo base, aunque la model card indica que tambien se han publicado pesos fusionados en fp16 que no requieren el adaptador. A pesar del nombre comercial "1B", los pesos reales en safetensors suman 746.280.448 parametros, por lo que la cifra de 1B del nombre no coincide con el recuento efectivo de parametros del repositorio.
 
-El repositorio no incluye pipeline declarado, no especifica idiomas soportados y no registra descargas ni interacciones en el momento de la consulta. La informacion disponible se limita practicamente a los metadatos del repositorio: identificador, autor, licencia y fechas de creacion y actualizacion (18 de noviembre de 2026).
+El modelo se ha entrenado sobre el dataset propio SPEED-2-COOKER con 73.010.148 tokens supervisados, 35.200 ejemplos vistos y 2.200 pasos de entrenamiento, con una longitud de secuencia de 4.096 tokens. La validacion reporta una perdida de 3,9190 y una perplejidad de 50,35. La licencia es Apache 2.0, lo que facilita su uso comercial, aunque la documentacion publica es muy escasa y no se detallan capacidades, idiomas ni resultados de benchmarks.
 
-Dada la ausencia de documentacion, esta ficha se limita a reflejar los datos verificables y marca explicitamente como "no disponible" todo aquello que el autor no ha hecho publico. Cualquier evaluacion de capacidades, rendimiento o idoneidad para produccion requeriria inspeccionar los pesos y la configuracion del repositorio directamente.
+La relevancia de este modelo es limitada y muy experimental: se trata de un trabajo de un autor individual, sin paper asociado, sin evaluaciones publicadas y con un repositorio de 43,3 GB que incluye pesos en fp8 y fp16. Resulta util como referencia para quienes exploran arquitecturas MoE pequenas con ajuste LoRA, pero no es un modelo recomendable para produccion sin una evaluacion propia previa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | aproximadamente 1B (inferido del nombre del modelo; no confirmado en la model card) |
+| Arquitectura | MoE personalizada (custom_code), transformer con mezcla de expertos |
+| Parametros totales | 746.280.448 (segun safetensors); el nombre indica "1B" |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Longitud de contexto | 4.096 tokens (longitud de secuencia usada en el SFT) |
+| Tipos de cuantizacion | fp8 (modelo base CPT) y fp16 (pesos fusionados publicados); no se detallan otras |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible |
+| Formato de pesos | safetensors (adaptador LoRA y pesos fusionados fp16); libreria peft |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card. El sufijo "SFT" sugiere que el modelo ha pasado por una etapa de ajuste supervisado sobre una base previa ("Speed-2"), pero se desconoce si la arquitectura subyacente es un transformer denso, un modelo de mezcla de expertos u otra variante, asi como el numero exacto de parametros, la composicion del dataset de ajuste, el numero de tokens utilizados o si se aplicaron tecnicas de alineacion adicionales como RLHF o DPO.
+La arquitectura es una MoE personalizada (tag `moe`, `custom_code`) definida en el modelo base SPEED2-V0-0B7. El ajuste se realizo mediante LoRA con rango 16, alpha 32 y aplicado a las capas de atencion (`target=attn`), sobre el checkpoint base ya sometido a continued pretraining y SFT en fp8. El entrenamiento uso 2.200 pasos, con micro batch de 1 y acumulacion de gradientes de 16, secuencia de 4.096 tokens y una tasa de aprendizaje de 0,0002, empleando una plantilla de chat basada en etiquetas ("tags").
 
-Tampoco hay datos sobre innovaciones tecnicas (atencion lineal, decodificacion especulativa, modos de razonamiento extendido) ni sobre el tokenizador o el vocabulario empleado.
+El conjunto de datos de SFT es propietario del autor (SPEED-2-COOKER) y no se documenta su composicion, procedencia ni proceso de filtrado. No se menciona el uso de RLHF, DPO ni tecnicas de alineacion adicionales, ni innovaciones como decodificacion especulativa o atencion lineal. La informacion sobre el numero total de tokens de preentrenamiento del modelo base es parcial: la model card cita 999,4M tokens de CPT (continued pretraining) para el checkpoint base.
 
 ## Capacidades
 
-- No se han documentado capacidades especificas en la model card.
-- Se desconoce si el modelo soporta generacion de texto general, razonamiento, codigo o matematicas mas alla de lo implicito en un ajuste SFT generico.
-- No hay informacion sobre soporte de *tool calling* o *function calling*.
-- No hay informacion sobre capacidades de agente o razonamiento multi-paso.
-- No hay informacion sobre cobertura multilingue.
-- No hay informacion sobre modos especiales (thinking mode, vision, audio).
+- Generacion de texto autoregresiva basica, derivada de un modelo MoE de ~0,75B parametros.
+- Ajuste supervisado sobre un dataset propio, orientado presumiblemente a seguir instrucciones, aunque no se documentan las tareas concretas.
+- Soporte de plantilla de chat basada en etiquetas ("tags"), segun la configuracion del SFT.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- Capacidades multilingues: no disponibles (no se declaran idiomas).
+- No se documentan capacidades de vision, audio ni modo de razonamiento explicito.
 
 ## Casos de uso
 
-- Experimentacion academica con modelos de ~1B parametros: el tamano reducido permite ejecutar el modelo en hardware de consumo, lo que lo hace util para prototipos de investigacion sobre ajuste supervisado, siempre que se validen previamente sus pesos y configuracion.
-- Fine-tuning adicional sobre dominios especificos: al estar bajo licencia Apache 2.0 y tener un tamano manejable, podria servir como base para experimentos de SFT o LoRA en tareas concretas, una vez verificada su calidad.
-- Evaluacion comparativa de modelos pequenos: util para medir el efecto del SFT frente a la base "Speed-2" en tareas controladas, si el autor publica ambas versiones.
-- Despliegue en entornos con recursos limitados: un modelo de ~1B puede ejecutarse en CPU o en GPUs de gama media, aunque se desconoce su rendimiento real.
-- Generacion de texto en aplicaciones de baja latencia: potencialmente adecuado para tareas simples de completado o resumen, sujeto a validacion empirica.
-- Docencia y formacion: como ejemplo practico de un modelo ajustado con SFT publicado abiertamente, util en cursos sobre ciclo de vida de modelos.
-
-En todos los casos, la ausencia de documentacion y de benchmarks obliga a realizar una evaluacion propia antes de cualquier uso real.
+- Experimentacion con arquitecturas MoE pequenas: el modelo sirve como base para estudiar el comportamiento de una MoE de menos de 1B parametros con ajuste LoRA, en entornos de investigacion con recursos limitados.
+- Fine-tuning adicional con LoRA: al distribuirse como adaptador peft, permite aplicar nuevos adaptadores sobre el modelo base sin reentrenar todos los pesos, util en prototipos de bajo coste.
+- Pruebas de pipelines de inferencia con vLLM o TGI: valido para verificar el soporte de `custom_code` y arquitecturas MoE no estandar en servidores de inferencia.
+- Generacion de texto en tareas acotadas de dominio: si el dataset SPEED-2-COOKER cubre un dominio concreto, el modelo puede usarse para generar texto en ese dominio tras una evaluacion manual.
+- Comparacion de estrategias de cuantizacion: la disponibilidad de pesos en fp8 y fp16 permite medir el impacto de la cuantizacion en calidad y latencia sobre una MoE pequena.
+- Docencia y formacion: util como ejemplo practico de SFT con LoRA sobre un modelo base custom, con hiperparametros y metricas de validacion documentados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La unica metrica reportada es la perdida de validacion (3,9190) y la perplejidad (50,35) del proceso de SFT.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa para un modelo denso de ~1B parametros, en FP16 requeriria aproximadamente 2 GB de VRAM solo para pesos, y en cuantizacion de 4 bits alrededor de 0,5-0,7 GB, mas el espacio adicional para el contexto y el runtime. Estas cifras son estimaciones genericas y no estan confirmadas para este modelo.
-- GPU recomendadas: no disponible. Un modelo de este tamano podria ejecutarse teoricamente en GPUs de consumo como RTX 3060, RTX 4060 o superiores, pero no hay validacion publicada.
-- Cabe en GPU de consumo: probablemente si, dado el tamano inferido, pero no confirmado.
-- Opciones de despliegue: no disponible. No se ha confirmado compatibilidad con vLLM, llama.cpp, Ollama, TGI ni otros runtimes.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: con 746M parametros, en fp16 se requieren aproximadamente 1,5 GB solo para pesos; en fp8, unos 0,75 GB. El overhead de la implementacion MoE y del `custom_code` puede aumentar el consumo.
+- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM (RTX 3060, RTX 4060, RTX 4090) para fp16; A100 o H100 no son necesarias para un modelo de este tamano, salvo para entrenamiento o evaluacion a gran escala.
+- Cabe en GPU de consumo: si, en la mayoria de GPU consumer con 8 GB o mas, asumiendo que la implementacion de la MoE sea eficiente.
+- Opciones de despliegue: al requerir `custom_code`, es necesario confiar en el codigo del repositorio (`trust_remote_code=True`). La compatibilidad con vLLM, llama.cpp u Ollama no esta confirmada y depende de que dichos motores soporten la arquitectura. El adaptador LoRA requiere peft o su fusion previa a fp16.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado en la informacion proporcionada modelos comparables de la misma familia o con caracteristicas verificables equivalentes.
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Speed-2-1B-SFT | 746M | 4.096 | Apache 2.0 | MoE custom, sin benchmarks publicados |
+| Qwen2.5-0.5B | 494M | 32.768 | Apache 2.0 | Denso, ampliamente evaluado y soportado |
+| SmolLM2-1.7B | 1.700M | 8.192 | Apache 2.0 | Denso, con benchmarks publicados |
+| TinyLlama-1.1B | 1.100M | 2.048 | Apache 2.0 | Denso, con benchmarks publicados |
+
+La comparativa es orientativa: Speed-2-1B-SFT no publica resultados que permitan una comparacion de rendimiento rigurosa con estas alternativas.
 
 ## Limitaciones y advertencias
 
-- La model card esta practicamente vacia: no hay descripcion, ni arquitectura, ni datos de entrenamiento, lo que impide evaluar el modelo con rigor.
-- Riesgo elevado de sesgos y alucinaciones desconocidos, al no haberse documentado el dataset de entrenamiento ni procesos de alineacion.
-- Se desconoce la cobertura idiomatica; no asumir soporte de castellano sin validacion previa.
-- Se desconoce la longitud de contexto efectiva.
-- Aunque la licencia es Apache 2.0 (permite uso comercial), la ausencia de documentacion sobre procedencia de datos puede plantear riesgos de cumplimiento si el modelo se integra en productos.
-- El repositorio no registra descargas ni interacciones, lo que sugiere que no ha sido validado por la comunidad.
-- No se debe asumir que el modelo funciona correctamente solo por su nombre; es imprescindible inspeccionar los pesos y la configuracion antes de cualquier uso.
+- Ausencia total de benchmarks publicados: no hay evidencia objetiva de calidad en tareas estandar.
+- Perplejidad de validacion elevada (50,35), lo que sugiere un ajuste limitado y posiblemente un dataset de SFT pequeno o ruidoso.
+- No se declaran idiomas soportados; el rendimiento fuera del idioma o dominio del dataset de entrenamiento es desconocido.
+- Riesgo de alucinacion no evaluado; al ser un modelo pequeno y poco documentado, la fiabilidad factual es incierta.
+- Requiere `trust_remote_code=True` por el uso de `custom_code`, lo que implica ejecutar codigo del autor; conviene auditar el repositorio antes de usarlo.
+- El repositorio ocupa 43,3 GB, en gran parte por los pesos fp8 y fp16; la descarga y el almacenamiento tienen un coste considerable para un modelo de este tamano.
+- El nombre "1B" no coincide con los 746M parametros reales, lo que puede inducir a error en comparaciones.
+- Aunque la licencia Apache 2.0 permite uso comercial, la falta de evaluacion y de documentacion desaconseja su uso en produccion sin validacion propia.
+- No hay informacion sobre sesgos; un modelo entrenado con un dataset propietario y no documentado puede arrastrar sesgos desconocidos.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Shrijanagain/Speed-2-1B-SFT
-- No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.
+- Modelo en Hugging Face: https://huggingface.co/Shrijanagain/Speed-2-1B-SFT
+- Modelo base: https://huggingface.co/Shrijanagain/SPEED2-V0-0B7-CPT-SFT-fp8cpt
+- Dataset de SFT (referenciado en la model card): https://huggingface.co/Shrijanagain/SPEED-2-COOKER
+- Perfil del autor: https://huggingface.co/Shrijanagain

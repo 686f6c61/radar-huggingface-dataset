@@ -2,98 +2,100 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-W4A16-HGPTQ es una cuantización de 4 bits del modelo multimodal Qwen3.8-Flash-Next de Qwen (Alibaba), publicada por el usuario nchapman. El modelo base es un transformer híbrido de 180.000 millones de parámetros que combina capas de atención lineal (GDN), atención indexada QSA y capas MoE con 512 expertos, además de una torre de visión y una capa de embeddings por n-gramas (PLE) de 51.200 millones de parámetros. Esta versión reduce el peso en BF16 de 360 GB a 93,42 GiB, lo que supone una compresión de 3,83 veces.
+Qwen3.8-Flash-Next-W4A16-HGPTQ es una cuantizacion de 4 bits del modelo multimodal Qwen/Qwen3.8-Flash-Next, desarrollado por el usuario nchapman sobre el modelo base de Qwen. Se trata de un modelo de mezcla de expertos (MoE) de clase 180B con atencion hibrida, torre de vision, embeddings de busqueda n-gram y decodificacion especulativa integrada mediante Multi-Token Prediction (MTP). La cuantizacion reduce el peso de 335,3 GiB en BF16 a 92,84 GiB, un factor de 3,6 veces, manteniendo una fidelidad cercana al modelo original.
 
-La relevancia de esta ficha radica en su enfoque de cuantización: no se limita a un GPTQ estándar, sino que combina GPTQ con descomposición de Cholesky, rotación Hadamard en línea por bloques, una LUT personalizada de 4 bits para la capa PLE y rankings estáticos de expertos en caché. El objetivo es preservar la fidelidad del modelo original en tareas de texto, código, matemáticas, ciencia y visión, con un incremento de perplejidad medido de solo el 3,34 % respecto al BF16.
+El modelo resuelve el problema de desplegar un MoE multimodal de gran tamano en hardware asequible: dos GPU de 24 GB o una sola GPU de 80-96 GB. La calibracion de 4 bits cubre los 512 expertos enrutados por capa, los expertos compartidos, las capas de atencion y GDN, la torre de vision, el borrador MTP y la tabla n-gram de 102 GB, que queda comprimida a 26,8 GiB.
 
-El resultado es un artefacto pensado para despliegue en producción con vLLM y con kernels especializados (MarlinMoE, Humming, warp-3090 HostExpertStore), no para uso genérico en transformers sin adaptaciones. La licencia declarada en el repositorio es Apache 2.0, aunque el modelo base upstream está sujeto a la Qwen Community License 1.0.
+Es relevante ahora porque combina cuantizacion agresiva con preservacion de capacidades multimodales y de decodificacion especulativa, algo poco habitual en cuantizaciones W4A16 de modelos MoE. El modelo esta pensado para el runtime warp34, con soporte tambien en vLLM 0.34 o superior.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: capas GDN (atención lineal) + QSA (atención indexada) + MoE con 512 expertos; torre de visión; capa PLE de embeddings por n-gramas; MTP nativo |
-| Parametros totales | 179.789.244.307 (aprox. 180B) |
+| Arquitectura | Transformer MoE multimodal con atencion hibrida, torre de vision, embeddings n-gram y MTP (Multi-Token Prediction) |
+| Parametros totales | 180.635.682.707 (180,6B) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | W4A16 GPTQ con group_size=64, actorder=weight; Custom-LUT4 para PLE (group_size=32, 90 B/fila); BF16/FP32 en capas preservadas |
+| Tipos de cuantizacion | W4A16 (pesos de 4 bits, activaciones de 16 bits), GPTQ con Hadamard |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 (repo); modelo base bajo Qwen Community License 1.0 |
-| Formato de pesos | safetensors (59 shards, 93,418 GiB), compressed-tensors, compatible con vLLM |
+| Licencia | qwen-community-1.0 (licencia "other" en Hugging Face) |
+| Formato de pesos | safetensors, compressed-tensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-Flash-Next emplea una arquitectura híbrida con 48 capas que alternan mecanismos de atención lineal (GDN) y atención indexada QSA, junto con capas MoE de 512 expertos enrutados. Incluye una torre de visión con 27 bloques transformer y un merger, una capa PLE (Per-Layer Embedding) de 51.200 millones de parámetros con 128 shards de n-gramas (320.000.456 filas × 160 dimensiones) y un módulo MTP (Multi-Token Prediction) nativo con 1.540 capas lineales.
+El modelo base es un MoE multimodal de Qwen con 180,6B parametros totales. La arquitectura combina capas de atencion hibrida con capas GDN (Gated DeltaNet, segun la nomenclatura de la model card), una torre de vision para entrada image-text-to-text, una tabla de embeddings de busqueda n-gram de gran tamano (102 GB en BF16) y un cabezal de Multi-Token Prediction que actua como decodificador especulativo integrado. La model card indica 512 expertos enrutados por capa mas expertos compartidos.
 
-La cuantización de nchapman aplica GPTQ con Cholesky y group_size=64 sobre 156 proyecciones de atención y 73.728 proyecciones de expertos MoE, preapiladas en tensores 3D para ejecución directa en kernels MarlinMoE. La capa PLE se cuantiza a 4 bits no uniformes con Custom-LUT4 y feedback de error W_kv-HGPTQ, de modo que el error de cuantización queda ortogonal a los subespacios de atención cruzada downstream. Se añade rotación Hadamard en línea (head_dim=64) y tablas alineadas a páginas de 4 KiB para búsquedas mmap/io_uring. La calibración de texto y MTP usó 999 muestras × 2.048 tokens de nvidia/Nemotron-Cascade-2-SFT-Data; la de visión, 120 imágenes multimodales disjuntas de los conjuntos de evaluación.
+Esta version concreta es una cuantizacion, no un entrenamiento nuevo. El proceso aplica GPTQ con transformada de Hadamard sobre todos los componentes: los 512 expertos enrutados por capa, los expertos compartidos, las capas de atencion y GDN, la torre de vision, el borrador MTP y la tabla n-gram. Segun el autor, la cuantizacion retiene el 97,4% del top-1 aislado en vision (99,3% en la guarda UI/OCR) y el 95,4% de acuerdo en los borradores MTP respecto al modelo base de 335 GiB. El repositorio incluye rankings precalculados de expertos calientes (`static_hot_cache_rankings.json`) para que warp34 fije los expertos mas usados en VRAM y transmita por streaming los accesos frios.
 
 ## Capacidades
 
-- Generación de texto conversacional e instructivo con plantilla de chat Qwen fijada (froggeric v22.5).
-- Razonamiento matemático y científico, con perplejidad medida en los dominios math, science, chat e instruct.
-- Generación de código y uso en tareas agénticas de tool calling, según los conjuntos de evaluación empleados para los rankings de expertos.
-- Comprensión de imagen y texto (pipeline image-text-to-text) mediante la torre de visión cuantizada.
-- Soporte multilingüe, aunque los idiomas concretos no están detallados en la información disponible.
-- Predicción multi-token nativa (MTP) con Top-1 del 94,16 % y KL media de 0,022547 en la sonda aislada.
-- Enrutamiento de expertos con rankings estáticos precalculados sobre 9.804.460 asignaciones por capa, compatible con VLLM_WNA16_STATIC_HOT_CACHE_FILE.
-- No se documenta modo thinking explícito ni capacidades de audio en la información proporcionada.
+- Generacion de texto y razonamiento conversacional multi-turno.
+- Procesamiento de imagen y texto (pipeline image-text-to-text): la torre de vision esta incluida y cuantizada.
+- Reconocimiento de texto en imagenes (OCR) e interfaces de usuario, con una guarda especifica que retiene el 99,3% del top-1.
+- Decodificacion especulativa integrada mediante MTP, con un 95,4% de acuerdo en los borradores respecto al modelo base.
+- Embeddings de busqueda n-gram para recuperacion y copia de secuencias largas.
+- Soporte de tool calling y function calling: no confirmado en la informacion disponible.
+- Soporte de agentes y razonamiento multi-paso: no confirmado en la informacion disponible.
+- Capacidades multilingues: no disponibles.
+- Modo thinking explicito: no disponible en la informacion.
 
 ## Casos de uso
 
-- Despliegue de asistente conversacional multiusuario en vLLM: el formato compressed-tensors y los kernels MarlinMoE permiten servir el modelo con 93,42 GiB de pesos, reduciendo los requisitos de VRAM frente al BF16 de 360 GB.
-- Generación de código en pipelines de CI/CD: el modelo conserva las proyecciones de atención y MoE en 4 bits con GPTQ y mantiene el token mean KL en 0,092594, adecuado para autocompletado y revisión de parches.
-- Razonamiento matemático y científico en entornos de investigación: la perplejidad en math se mantiene en 2,3484 frente a 2,3400 en BF16, lo que permite usar el modelo cuantizado para evaluación de problemas sin degradación apreciable.
-- Análisis de documentos con imagen y texto: la torre de visión cuantizada (0,225 GiB) permite procesar capturas, diagramas y formularios junto con texto en el mismo pipeline image-text-to-text.
-- Sistemas agénticos con tool calling: los rankings estáticos de expertos y el perfil de enrutamiento precalculado sobre suites de agentic tool use facilitan la caché en caliente de expertos y reducen la latencia de arranque en inferencia.
-- Decodificación especulativa con MTP: el módulo MTP nativo (1,340 GiB) con Top-1 del 94,16 % puede usarse como cabezal de borrador para acelerar la generación en producción.
-- Servicio multimodal de atención al cliente: la combinación de contexto conversacional, visión y cuantización de 4 bits permite desplegar en GPUs de 80 GB con menor huella de memoria que el modelo original.
+- Despliegue de un MoE multimodal de 180B en dos GPU de 24 GB: con `warp34 serve --tp 2`, el modelo cabe en 92,84 GiB totales gracias al streaming por mmap de la tabla n-gram y al cache de expertos calientes, lo que permite servir un modelo de clase 180B en hardware de gama alta de consumo profesional.
+- Procesamiento de documentos con OCR e interfaces: la guarda UI/OCR al 99,3% de top-1 y la torre de vision cuantizada lo hacen adecuado para extraer texto de capturas, formularios y pantallas en pipelines de digitalizacion.
+- Asistentes conversacionales con contexto largo: la tabla n-gram y el MTP integrado reducen la latencia de generacion en dialogos multi-turno, utiles en atencion al cliente automatizada con historial extenso.
+- Inferencia en una sola GPU de 80-96 GB: para equipos con A100 80 GB o H100 80/96 GB, el modelo corre sin tensor parallelism, simplificando el despliegue en vLLM 0.34 o superior.
+- Generacion aumentada por recuperacion (RAG) multimodal: la combinacion de vision y embeddings n-gram permite indexar y consultar documentos con imagenes y texto en un mismo pipeline.
+- Prototipado e investigacion de tecnicas de cuantizacion: el repositorio incluye rankings de expertos calientes y un laboratorio de cuantizacion (`warp34-quant-lab`) que sirve como referencia para estudiar el impacto de W4A16 en MoE multimodales.
+- Servicio de inferencia de bajo coste por token: la reduccion de 335,3 GiB a 92,84 GiB y el uso de MTP para decodificacion especulativa disminuyen los requisitos de memoria y mejoran el throughput frente al modelo en BF16.
 
 ## Benchmarks y rendimiento
 
-| Suite / metrica | Valor | Notas |
-|---|---:|---|
-| Payload total safetensors | 93,418 GiB (100.306.498.784 B) | Compresión 3,83× desde 360 GB BF16, 59 shards |
-| probe-v4 weighted KL (cascade90-ml10-language-macro) | 0,052489 | 378 filas, 852.269 tokens |
-| probe-v4 token mean KL / p99.9 KL | 0,092594 / 6,7448 | chat: 0,0186; instruct: 0,0293; math: 0,0320; science: 0,0346 |
-| probe-v4 perplejidad BF16 → cuantizado | 3,6085 → 3,7291 (+3,34 %) | math: 2,3400 → 2,3484; chat: 3,7979 → 3,8778 |
-| probe-guard token mean KL / no_robots mean KL | 0,091269 / 0,058278 | 76 filas, 22.746 tokens; no_robots PPL 22,3109 → 22,8762 |
-| MTP nativo KL media / KL mediana / Top-1 | 0,022547 / 0,003868 / 94,16 % | 32 filas |
+No se han publicado resultados de benchmarks en la informacion disponible. El autor solo reporta metricas de fidelidad de la cuantizacion respecto al modelo base:
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+| Metrica | Resultado |
+|---|---|
+| Top-1 aislado en vision | 97,4% de retencion |
+| Top-1 en guarda UI/OCR | 99,3% de retencion |
+| Acuerdo de borradores MTP | 95,4% |
+| Reduccion de tamano | 3,6x (335,3 GiB BF16 a 92,84 GiB) |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos cuantizados ocupan 93,42 GiB; se necesita al menos una GPU de 96 GB o varias GPUs para alojar el modelo completo, más memoria para KV cache y activaciones.
-- GPU recomendadas: H100 80 GB en configuración multi-GPU, A100 80 GB en tensor parallel, o GPUs con soporte de kernels MarlinMoE y Humming.
-- No cabe en GPUs de consumo como RTX 4090 (24 GB) sin descarga parcial de expertos a host; el formato incluye tablas alineadas a páginas de 4 KiB para mmap/io_uring y HostExpertStore en warp-3090.
-- Opciones de despliegue: vLLM con compressed-tensors y VLLM_WNA16_STATIC_HOT_CACHE_FILE; warp-3090 HostExpertStore; MarlinMoE; Humming. No se documenta soporte para llama.cpp, Ollama ni TGI.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: 92,84 GiB totales en W4A16, de los cuales 66,0 GiB corresponden al modelo activo y 26,8 GiB a la tabla n-gram comprimida que warp34 transmite por mmap.
+- Configuraciones validadas: 2 GPU de 24 GB con `--tp 2` y MoE por niveles, o una GPU de 80-96 GB.
+- GPU recomendadas: A100 80 GB, H100 80/96 GB para una sola tarjeta; dos RTX 4090 de 24 GB o equivalentes para la configuracion `--tp 2`.
+- Cabe en GPU de consumo: si, en dos GPU de 24 GB (por ejemplo, RTX 4090) mediante warp34 con streaming de expertos frios.
+- Opciones de despliegue: warp34 (runtime principal, con cache de expertos calientes) y vLLM 0.34 o superior con `--trust-remote-code`.
+- Latencia y throughput: no disponibles. El autor menciona que el MTP integrado y el borrador DFlash2 opcional (0,52 GiB) aceleran la generacion, pero no publica cifras.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nchapman/Qwen3.8-Flash-Next-W4A16-HGPTQ | 180B | no disponible | W4A16 GPTQ + LUT4 + Hadamard | apache-2.0 (repo); Qwen Community License 1.0 (base) | Hugging Face, 0 descargas |
-| VnimanieAI/Qwen3.8-Flash-Next-W4A16 | no disponible | no disponible | W4A16 | Qwen Community License 1.0 | Hugging Face |
-| Qwen/Qwen3.8-Flash-Next (BF16) | 180B | no disponible | BF16 (360 GB) | Qwen Community License 1.0 | Hugging Face |
+| Qwen3.8-Flash-Next-W4A16-HGPTQ | 180,6B | no disponible | W4A16 GPTQ | qwen-community-1.0 | Hugging Face, warp34, vLLM 0.34+ |
+| Qwen3.8-Flash-Next (base) | 180,6B | no disponible | BF16 (335,3 GiB) | qwen-community-1.0 | Hugging Face |
+| Qwen3.8-Flash-Next-W2.6A16-HGPTQ-RCO | 180,6B | no disponible | W2.6A16 (44,84 GiB activo / 71,67 GiB total) | qwen-community-1.0 | Hugging Face, warp34 |
+| Qwen3.8-Flash-Next-DFlash2-W4A16-HGPTQ | no disponible (borrador de 0,52 GiB) | no disponible | W4A16 | qwen-community-1.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- La licencia del repositorio es Apache 2.0, pero el modelo base upstream está bajo Qwen Community License 1.0: se exige atribución a partir de 100M MAU o 20M USD de ingresos mensuales, y las ofertas Model-as-a-Service y de asistente comercial de IA requieren licencia separada de Qwen.
-- El repositorio declara 0 descargas y 0 likes, por lo que no hay validación comunitaria ni evidencia de uso en producción.
-- El modelo está diseñado para kernels específicos (MarlinMoE, Humming, warp-3090); no se garantiza su funcionamiento en transformers estándar ni en otros runtimes sin adaptación.
-- El incremento de perplejidad del 3,34 % y el p99.9 KL de 6,7448 indican que existen colas de error apreciables en algunas muestras, aunque la KL media sea baja.
-- No se detallan sesgos conocidos, idiomas soportados ni longitud de contexto en la información disponible.
-- Riesgo de alucinación inherente al modelo base, no cuantificado en las sondas presentadas.
-- La calibración se realizó con un conjunto limitado (999 muestras de texto y 120 imágenes), lo que puede no cubrir todos los dominios de producción.
-- Los rankings de expertos estáticos se calcularon sobre 9.804.460 asignaciones por capa; cambios en la distribución de entrada pueden degradar la caché en caliente.
+- La licencia qwen-community-1.0 es una licencia "other" con terminos comunitarios propios; es necesario revisar el texto completo en el enlace del modelo base antes de cualquier uso comercial.
+- Al ser una cuantizacion W4A16, existe una perdida de fidelidad respecto al BF16: el propio autor mide un 97,4% de retencion en vision y un 95,4% de acuerdo en MTP, lo que implica divergencia en tareas sensibles.
+- La tabla n-gram se sirve por streaming con mmap en warp34; en otros runtimes como vLLM el comportamiento y los requisitos de memoria pueden diferir y no estan documentados en la model card.
+- El modelo depende de `--trust-remote-code` en vLLM y de un runtime especifico (warp34) para aprovechar el cache de expertos calientes; el rendimiento fuera de ese ecosistema no esta cuantificado.
+- No se dispone de informacion sobre sesgos, idiomas soportados ni evaluaciones de seguridad del modelo base ni de la cuantizacion.
+- Riesgo de alucinacion inherente a los modelos generativos de gran escala; no se han publicado evaluaciones especificas de veracidad para esta cuantizacion.
+- La longitud de contexto no esta documentada en la informacion disponible, por lo que no se puede garantizar el comportamiento en ventanas muy largas.
+- El repositorio ocupa 337,5 GB, lo que exige almacenamiento considerable incluso aunque la inferencia use 92,84 GiB.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/nchapman/Qwen3.8-Flash-Next-W4A16-HGPTQ
+- Modelo en Hugging Face: https://huggingface.co/nchapman/Qwen3.8-Flash-Next-W4A16-HGPTQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Cuantización alternativa VnimanieAI: https://huggingface.co/VnimanieAI/Qwen3.8-Flash-Next-W4A16
-- Repositorio de herramientas: https://github.com/nchapman/warp-3090-model-lab
-- Dataset de calibración: https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-SFT-Data
-- Datos congelados de calibración: https://huggingface.co/datasets/nchapman/warp-3090-quant-lab-frozen-data
-- Plantillas de chat: https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates
+- Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
+- Runtime warp34: https://github.com/nchapman/warp34
+- Laboratorio de cuantizacion warp34-quant-lab: https://github.com/nchapman/warp34-quant-lab
+- Variante de menor precision W2.6A16: https://huggingface.co/nchapman/Qwen3.8-Flash-Next-W2.6A16-HGPTQ-RCO
+- Borrador DFlash2 W4A16: https://huggingface.co/nchapman/Qwen3.8-Flash-Next-DFlash2-W4A16-HGPTQ
+- Informe tecnico: TECHNICAL.md (referenciado en la model card del repositorio)

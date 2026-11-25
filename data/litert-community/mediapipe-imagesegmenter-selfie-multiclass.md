@@ -2,116 +2,105 @@
 
 ## Resumen
 
-El MediaPipe Selfie Multiclass Segmenter es un modelo de segmentación semántica de imagen orientado a la clasificación por píxel de personas en primer plano, desarrollado por el equipo de MediaPipe (Google AI Edge) y redistribuido en el ecosistema LiteRT. Su función concreta es asignar cada píxel de una imagen a una de seis categorías semánticas: fondo, pelo, piel del cuerpo, piel de la cara, ropa y otros (accesorios), lo que permite construir efectos de realidad aumentada, sustitución de fondos y filtros de videoconferencia en tiempo real directamente en el dispositivo.
+MediaPipe Selfie Multiclass Segmenter es un modelo de segmentación semántica de imagen orientado a la segmentación de personas en selfies y vídeo, desarrollado originalmente por el equipo de MediaPipe de Google y redistribuido en el ecosistema LiteRT a través de la organización `litert-community`. Clasifica cada píxel de una imagen de entrada en seis categorías semánticas: fondo, pelo, piel del cuerpo, piel de la cara, ropa y otros accesorios, lo que permite construir efectos de realidad aumentada y sustitución de fondos con precisión por región anatómica.
 
-Técnicamente es un Vision Transformer (ViT) empaquetado en formato TensorFlow Lite con precisión FP32, con un tamaño de 16,37 MB y una resolución fija de entrada de 256×256 píxeles. Se integra como tarea `ImageSegmenter` dentro del framework MediaPipe Tasks, disponible para Python, Web/JavaScript, Android, iOS y Flutter, lo que lo convierte en una pieza reutilizable para pipelines de visión en movilidad sin dependencia de servidores.
+El modelo se distribuye como un único fichero TFLite de 16,37 MB en precisión FP32, con entrada de `[1, 256, 256, 3]` y salida de `[1, 256, 256, 6]`, y está pensado para inferencia on-device en Android, iOS, web, Python y Flutter mediante la tarea `ImageSegmenter` de MediaPipe. Su relevancia actual radica en que ofrece segmentación multiclase de personas con un tamaño muy reducido y sin dependencia de servicios en la nube, lo que lo hace adecuado para aplicaciones móviles y web en tiempo real.
 
-Su relevancia actual reside en que cubre el segmentado multiclase de personas (no solo fondo/primer plano, como los modelos Selfie clásicos) con un coste computacional bajo: 71,24 ms de latencia en GPU y 217,76 ms en CPU sobre un Pixel 6. Es, por tanto, una opción práctica para procesado on-device en aplicaciones de entretenimiento interactivo y videollamadas donde la privacidad y la latencia importan más que la precisión de máscara a nivel de píxel.
+No es un modelo de lenguaje ni un modelo multimodal generativo: es un modelo de visión puro de tipo segmentación densa, con licencia Apache 2.0, lo que facilita su integración en productos comerciales. La información disponible no especifica el número de parámetros ni la longitud de contexto (no aplicable en este tipo de modelo).
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Vision Transformer (ViT) para segmentación semántica multiclase |
-| Parámetros totales | no disponible |
-| Parámetros activos | no aplica (no es MoE) |
+| Arquitectura | Vision Transformer (ViT) para segmentación semántica densa, empaquetado como TFLite con metadatos `ImageSegmenter` v1 |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no aplica (modelo de visión; entrada fija de 256×256×3) |
-| Tipos de cuantización | FP32 (float32) únicamente en el repositorio |
-| Idiomas soportados | no disponible (modelo de visión, sin procesamiento de lenguaje) |
+| Tipos de cuantizacion | FP32 (float32); no se distribuyen variantes cuantizadas en el repositorio |
+| Idiomas soportados | no disponible (no aplica; modelo de visión) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | TFLite (`selfie_multiclass_256x256.tflite`), 16,37 MB, SHA-256 `c6748b1253a99067ef71f7e26ca71096cd449baefa8f101900ea23016507e0e0` |
-
-Especificaciones adicionales relevantes:
-
-| Parámetro | Valor |
-|---|---|
-| Tensor de entrada | `input_29`, forma `[1, 256, 256, 3]`, `float32` |
-| Normalización de entrada | `mean=[127.5]`, `std=[127.5]` |
-| Tensor de salida | `Identity`, forma `[1, 256, 256, 6]`, `float32` (probabilidades por clase) |
-| Etiquetas | `background`, `hair`, `body-skin`, `face-skin`, `clothes`, `others` |
-| Metadatos embebidos | `TFLITE_METADATA`: nombre `ImageSegmenter`, versión `1`, autor `MediaPipe`, fichero asociado `labels.txt` |
-| Relación de aspecto de entrada | admite retrato, paisaje y cualquier proporción |
+| Formato de pesos | TFLite (`selfie_multiclass_256x256.tflite`, 16,37 MB) |
+| Tamano del repositorio | 0,0 GB (fichero principal de 16,37 MB + PDF de model card de 1,38 MB) |
+| Entrada | `input_29`, shape `[1, 256, 256, 3]`, `float32`, normalización `mean=[127.5]`, `std=[127.5]` |
+| Salida | `Identity`, shape `[1, 256, 256, 6]`, `float32`, máscaras de probabilidad por clase |
+| Clases | `0` background, `1` hair, `2` body-skin, `3` face-skin, `4` clothes, `5` others (accesorios) |
+| Metadatos embebidos | `TFLITE_METADATA`: name `ImageSegmenter`, version `1`, author `MediaPipe`, `labels.txt` empaquetado |
+| SHA-256 del modelo | `c6748b1253a99067ef71f7e26ca71096cd449baefa8f101900ea23016507e0e0` |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura de Vision Transformer adaptada a segmentación densa: la imagen de 256×256 se divide en parches, se procesa mediante bloques de auto-atención y se reconstruye una salida por píxel de 6 canales de probabilidad. La salida es un tensor `[1, 256, 256, 6]` que representa, para cada píxel, la distribución de probabilidad sobre las seis clases semánticas. El modelo se distribuye exclusivamente en FP32, sin variantes cuantizadas en el repositorio.
+La model card identifica el modelo como un Vision Transformer aplicado a segmentación semántica multiclase de personas. La entrada es una imagen RGB normalizada con media y desviación estándar de 127,5, lo que corresponde a la convención habitual de MediaPipe para modelos de visión on-device. La salida es un tensor de probabilidades por píxel y por clase (`[1, 256, 256, 6]`), del que se derivan tanto una máscara de categoría (argmax) como máscaras de confianza por clase, tal como expone la API `ImageSegmenter` con `output_category_mask=True` y `output_confidence_masks=True`.
 
-No se dispone en la información proporcionada de detalles sobre el volumen de datos de entrenamiento, la composición del dataset, el uso de técnicas de alineación (RLHF/DPO no aplican a un modelo de visión) ni innovaciones específicas de entrenamiento. La model card referenciada (Adel Ahmadyan, Google, 10 de mayo de 2023) documenta aplicaciones previstas, usos fuera de alcance y evaluación de equidad, pero los detalles de entrenamiento no se incluyen en el extracto disponible. La integración se realiza a través de la API `ImageSegmenter` de MediaPipe Tasks, que gestiona el preprocesado (redimensionado y normalización) y el postprocesado de máscaras.
+El modelo acepta imágenes en retrato, paisaje o cualquier relación de aspecto, y el pipeline de MediaPipe se encarga del redimensionado a 256×256. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de ajuste fino con RLHF/DPO (no aplicable a un modelo de segmentación). Tampoco se detalla si se emplearon técnicas de destilación o poda para reducir el tamaño a 16,37 MB. La model card incluye un PDF de referencia (`Model Card Multiclass Segmentation.pdf`) que probablemente contiene detalles adicionales de entrenamiento, pero su contenido no se ha proporcionado.
 
 ## Capacidades
 
-- Segmentación semántica multiclase por píxel en seis categorías: `background`, `hair`, `body-skin`, `face-skin`, `clothes` y `others` (accesorios).
-- Segmentación de una o varias personas en la misma imagen (single- o multi-person).
-- Generación simultánea de máscara de categorías (`output_category_mask=True`) y máscaras de confianza por clase (`output_confidence_masks=True`).
-- Procesado de imágenes con cualquier relación de aspecto (retrato, paisaje, formato libre).
-- Ejecución on-device en Android, iOS, Web/JavaScript, Python y Flutter mediante MediaPipe Tasks.
-- Modo de ejecución de imagen individual (`VisionRunningMode.IMAGE`); no se documenta en la información disponible soporte de vídeo en streaming ni de modo LIVE_STREAM para esta variante.
-- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades de lenguaje: es un modelo puramente visual.
+- Segmentación semántica multiclase de personas en imágenes: clasifica cada píxel en seis categorías (fondo, pelo, piel del cuerpo, piel de la cara, ropa y otros/accesorios).
+- Segmentación de una o varias personas en la misma imagen, útil para efectos de AR y vídeo con múltiples sujetos.
+- Generación de máscaras de categoría (argmax) y máscaras de confianza por clase, lo que permite umbralizar y combinar regiones.
+- Procesamiento on-device en Android, iOS, web (JavaScript/TypeScript), Python y Flutter mediante MediaPipe Tasks.
+- Entrada flexible en relación de aspecto: el modelo acepta imágenes en retrato, paisaje o cualquier proporción, con redimensionado interno a 256×256.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni generación de texto: es un modelo puramente visual de segmentación.
+- No dispone de modo "thinking", visión generativa, audio ni capacidades multilingües.
 
 ## Casos de uso
 
-- **Sustitución de fondo en videoconferencias**: el modelo clasifica cada píxel en `background` frente a las clases de persona, lo que permite recortar al sujeto y componer un fondo virtual en tiempo real. Con 71,24 ms en GPU sobre Pixel 6, es viable para vídeo a tasas interactivas en dispositivos móviles de gama media-alta.
-- **Filtros de realidad aumentada por regiones**: al distinguir `hair`, `face-skin`, `body-skin` y `clothes`, se pueden aplicar efectos independientes (recoloreado de pelo, maquillaje virtual, cambio de ropa) sin necesidad de un modelo separado por región.
-- **Edición fotográfica on-device**: aplicaciones de retoque que ajustan exposición o saturación solo sobre la piel de la cara o el cuerpo, preservando el resto de la imagen, ejecutando la inferencia localmente sin enviar fotos a un servidor.
-- **Previsualización de productos de moda y cosmética**: segmentar `clothes`, `hair` y `face-skin` permite superponer probadores virtuales de ropa o tonos de maquillaje sobre la imagen del usuario en el propio dispositivo.
-- **Anonimización selectiva en captura de vídeo**: combinado con el pipeline de MediaPipe, se puede difuminar el fondo o regiones concretas (`background`, `others`) antes de transmitir, útil en herramientas de comunicación con requisitos de privacidad.
-- **Generación de máscaras para pipelines de posprocesado**: las máscaras de confianza por clase (`[1, 256, 256, 6]`) sirven como entrada a etapas posteriores de composición, maduración alfa o estilización, integrándose en herramientas de creación de contenido en Flutter o Web.
-- **Prototipado rápido multiplataforma**: al estar disponible como tarea MediaPipe con guías para Python, Web, Android, iOS y Flutter, permite validar una idea de segmentación de personas en un cuaderno de Colab y portarla al móvil con cambios mínimos de código.
+- Sustitución de fondos en videollamadas y aplicaciones de vídeo: la máscara de la clase `background` permite recortar al sujeto y recomponerlo sobre un fondo virtual, con separación adicional de pelo y ropa para mejorar los bordes.
+- Efectos de maquillaje virtual y retoque facial: las clases `face-skin` y `body-skin` permiten aplicar filtros de color, suavizado o correctores solo sobre la piel, evitando afectar al pelo o la ropa.
+- Prueba virtual de ropa y accesorios: la clase `clothes` aísla la prenda para recolorearla o sustituirla, y la clase `others` permite detectar accesorios como gafas o sombreros.
+- Recoloreado de pelo en tiempo real: la clase `hair` posibilita cambiar el color del cabello en apps de belleza o entretenimiento sin afectar a la piel ni al fondo.
+- Segmentación para edición fotográfica por regiones: en aplicaciones de retoque, el modelo proporciona máscaras por región que el usuario puede ajustar de forma independiente (piel, pelo, ropa) antes de aplicar ajustes locales.
+- Procesamiento por lotes en Python para preetiquetado de datasets: dado su tamaño reducido y su licencia Apache 2.0, puede usarse para generar máscaras preliminares de personas en pipelines de anotación, que luego se revisan manualmente.
+- Efectos de vídeo en web sin servidor: mediante la integración con MediaPipe Tasks para JavaScript, se puede ejecutar la segmentación en el navegador del usuario, evitando enviar vídeo a un backend y reduciendo la latencia y los costes de infraestructura.
+- Aplicaciones móviles de realidad aumentada: en Android e iOS, el modelo se ejecuta on-device con la API `ImageSegmenter`, lo que permite experiencias de AR que funcionan sin conexión y con baja latencia.
 
 ## Benchmarks y rendimiento
 
-Latencia extremo a extremo del pipeline MediaPipe Task reportada en la documentación del Image Segmenter:
-
-| Variante | Dispositivo | Latencia CPU | Latencia GPU |
-|---|---|---:|---:|
-| SelfieMulticlass (256×256) | Pixel 6 | 217,76 ms | 71,24 ms |
-
-No se han publicado resultados de benchmarks de calidad de segmentación (mIoU, precisión por clase) en la información disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card incluye una sección titulada "Latency Benchmarks", pero su contenido no se ha proporcionado, por lo que no se pueden citar cifras de latencia ni de throughput.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: no aplica en el sentido habitual; el modelo es de 16,37 MB en FP32 y está pensado para inferencia on-device. En aceleradores móviles, el consumo de memoria es del orden de decenas de MB incluyendo buffers intermedios del grafo TFLite.
-- **GPU recomendadas**: GPU integrada de dispositivos móviles (el benchmark usa un Pixel 6 con aceleración GPU); en escritorio, cualquier GPU compatible con el delegado GPU de TFLite o LiteRT. No requiere A100, H100 ni RTX 4090.
-- **Compatibilidad con GPU de consumo**: sí, cabe holgadamente en cualquier GPU de consumo e incluso en CPU de móvil; no es un modelo que requiera hardware de centro de datos.
-- **Opciones de despliegue**: MediaPipe Tasks (`ImageSegmenter`) en Python, Web/JavaScript, Android (Kotlin/Java), iOS (Swift) y Flutter (Dart); el fichero `.tflite` puede ejecutarse también con el intérprete de TensorFlow Lite / LiteRT directamente.
-- **Latencia y throughput**: 217,76 ms en CPU y 71,24 ms en GPU sobre Pixel 6 (pipeline completo MediaPipe). El throughput no se documenta explícitamente; a partir de la latencia GPU se puede estimar del orden de 14 inferencias por segundo en ese dispositivo, aunque la cifra no está confirmada en la información disponible.
+- VRAM estimada para inferencia: no disponible. Al tratarse de un modelo TFLite de 16,37 MB en FP32, la huella de memoria es muy reducida y está pensada para ejecutarse en CPU/GPU/NPU móviles, no en GPUs de servidor.
+- GPU recomendadas: no aplica en el sentido habitual de servidor; el modelo está diseñado para aceleradores on-device (GPU móvil, DSP, NPU) a través del delegado de LiteRT/TFLite. En escritorio o servidor puede ejecutarse en CPU sin problema.
+- ¿Cabe en consumer GPU? Sí, con holgura; su tamaño (16,37 MB) es trivial para cualquier GPU de consumo, aunque no es su escenario objetivo.
+- Opciones de despliegue: MediaPipe Tasks (`ImageSegmenter`) en Python, Android (Kotlin/Java), iOS (Swift), web (JavaScript/TypeScript) y Flutter (Dart); el fichero TFLite también puede cargarse con el intérprete de TensorFlow Lite / LiteRT directamente.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Clases | Resolución | Tamaño | Licencia | Contexto de uso |
+| Modelo | Tipo | Clases | Entrada | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MediaPipe Selfie Multiclass Segmenter (este) | ViT, TFLite | 6 (fondo, pelo, piel cuerpo, piel cara, ropa, otros) | 256×256 | 16,37 MB FP32 | Apache 2.0 | On-device, MediaPipe Tasks |
-| MediaPipe Selfie Segmenter (variante binaria) | Segmentación binaria persona/fondo | 2 | no disponible en esta ficha | no disponible | Apache 2.0 (ecosistema MediaPipe) | On-device, efectos de fondo |
-| Modelos de segmentación de personas de propósito general (p. ej., variantes de SegFormer/Mask2Former) | Transformer de segmentación | variable (COCO, ADE20K, etc.) | variable | cientos de MB | variable | Servidor o GPU de escritorio |
+| MediaPipe Selfie Multiclass Segmenter (este modelo) | ViT, segmentación de personas | 6 | 256×256×3 | 16,37 MB FP32 | Apache 2.0 | Hugging Face (litert-community) |
+| MediaPipe Selfie Segmenter (variante binaria) | Segmentación de personas | 1 (persona/fondo) | 256×256×3 | no disponible en la información | Apache 2.0 | MediaPipe / LiteRT |
+| Segment Anything (SAM) | Segmentación promptable | N/A (máscaras genéricas) | 1024×1024 | cientos de MB | Apache 2.0 (variantes) | Repositorios públicos |
+| DeepLabV3+ (MobileNet backbone) | Segmentación semántica | depende del dataset | variable | decenas de MB | variable | TensorFlow Hub / otros |
 
-La comparación cuantitativa con alternativas concretas no está disponible en la información proporcionada. La ventaja diferencial de este modelo frente a segmentadores genéricos es su tamaño reducido y su integración nativa en MediaPipe para móvil; su limitación es la resolución fija de 256×256 y la ausencia de variantes cuantizadas publicadas.
+La comparación con SAM o DeepLabV3+ es orientativa: este modelo está especializado en personas y en despliegue on-device, mientras que SAM es un modelo genérico de segmentación promptable de mayor tamaño y orientado a otro tipo de flujo. No se dispone de datos de rendimiento comparativo en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Usos explícitamente fuera de alcance**: cualquier forma de vigilancia o reconocimiento de identidad está fuera de alcance y no habilitada por la tecnología, según la model card original.
-- **Decisiones críticas para la vida humana**: no debe usarse en aplicaciones que requieran máscaras perfectas a nivel de píxel ni en decisiones de alto riesgo.
-- **Resolución limitada**: la salida es de 256×256, por lo que los contornos finos (pelo, accesorios pequeños) pueden presentar imprecisión al reescalar a la resolución original.
-- **Rendimiento dependiente del dominio**: el modelo está entrenado para sujetos humanos en selfis y cuerpo completo; su comportamiento en escenas sin personas o con oclusiones complejas no está documentado en la información disponible.
-- **Sesgos**: la model card original incluye una evaluación de equidad para la variante de 256×256, pero los resultados concretos no se recogen en el extracto disponible; se recomienda consultar el PDF adjunto antes de desplegar en producción.
-- **Sin variantes cuantizadas**: solo se publica FP32, lo que limita optimizaciones de tamaño y latencia en dispositivos de gama baja.
-- **Idiomas**: no aplica, pero tampoco se documenta el comportamiento ante texto en la imagen (rótulos, subtítulos) más allá de la clase `others`.
-- **Licencia**: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del ecosistema MediaPipe y de los metadatos embebidos en el `.tflite` antes de redistribuirlo.
-- **Fecha de creación del repositorio**: el registro indica creación en noviembre de 2026; verificar la vigencia y el mantenimiento del repositorio antes de adoptarlo como dependencia estable.
+- El modelo está especializado en personas (selfies y vídeo con personas); no está pensado para segmentación semántica genérica de escenas, objetos o animales.
+- Solo distingue seis clases; no separa categorías finas como ojos, labios, calzado o tipos de prendas.
+- La resolución de entrada es fija a 256×256, por lo que los detalles finos (pelo rizado, gafas, bordes de ropa) pueden perder precisión tras el redimensionado.
+- No se especifican en la información disponible los sesgos demográficos del dataset de entrenamiento; como en cualquier modelo de visión, puede presentar diferencias de rendimiento según tono de piel, tipo de pelo, iluminación o accesorios culturales.
+- Riesgo de alucinación en sentido generativo no aplica, pero sí puede producir máscaras erróneas en condiciones de oclusión, movimiento rápido, baja iluminación o personas parcialmente fuera de encuadre.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar la model card original de Google incluida como PDF para condiciones adicionales de atribución o uso responsable.
+- No se distribuyen variantes cuantizadas (INT8, FP16) en el repositorio, lo que puede limitar optimizaciones específicas en algunos aceleradores.
+- No es un modelo de lenguaje: no procesa texto, no soporta tool calling ni agentes, y no debe evaluarse con benchmarks de NLP.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/litert-community/MediaPipe-ImageSegmenter-Selfie-Multiclass
-- Fichero de pesos: https://huggingface.co/litert-community/MediaPipe-ImageSegmenter-Selfie-Multiclass/blob/main/selfie_multiclass_256x256.tflite
-- Model card original (PDF): https://huggingface.co/litert-community/MediaPipe-ImageSegmenter-Selfie-Multiclass/blob/main/Model%20Card%20Multiclass%20Segmentation.pdf
-- Documentación de Image Segmenter: https://developers.google.com/edge/mediapipe/solutions/vision/image_segmenter
-- Benchmarks de la tarea: https://developers.google.com/edge/mediapipe/solutions/vision/image_segmenter#task_benchmarks
-- Guía de configuración en Python: https://developers.google.com/edge/mediapipe/solutions/setup_python
-- Guía de configuración en Web/JavaScript: https://developers.google.com/edge/mediapipe/solutions/setup_web
-- Guía de configuración en Android: https://developers.google.com/edge/mediapipe/solutions/setup_android
-- Guía de configuración en iOS: https://developers.google.com/edge/mediapipe/solutions/setup_ios
-- Guía de configuración en Flutter: https://developers.google.com/edge/mediapipe/solutions/setup_flutter
-- Demo web: https://google-ai-edge.github.io/mediapipe-samples-web/#/vision/image_segmenter
+- Fichero del modelo: https://huggingface.co/litert-community/MediaPipe-ImageSegmenter-Selfie-Multiclass/blob/main/selfie_multiclass_256x256.tflite
+- Documentación de MediaPipe Image Segmenter: https://developers.google.com/edge/mediapipe/solutions/vision/image_segmenter
+- Guía de instalación en Python: https://developers.google.com/edge/mediapipe/solutions/setup_python
+- Guía de instalación en web/JavaScript: https://developers.google.com/edge/mediapipe/solutions/setup_web
+- Guía de instalación en Android: https://developers.google.com/edge/mediapipe/solutions/setup_android
+- Guía de instalación en iOS: https://developers.google.com/edge/mediapipe/solutions/setup_ios
+- Guía de instalación en Flutter: https://developers.google.com/edge/mediapipe/solutions/setup_flutter
+- Demo web en vivo: https://google-ai-edge.github.io/mediapipe-samples-web/#/vision/image_segmenter
+- Código fuente del ejemplo web: https://github.com/google-ai-edge/mediapipe-samples-web/blob/main/src/tasks/image-segmenter.ts
 - Ejemplo Android: https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/image_segmentation/android
 - Ejemplo iOS: https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/image_segmentation/ios
-- Cuaderno de Colab (Python): https://colab.research.google.com/github/google-ai-edge/mediapipe-samples/blob/main/examples/image_segmentation/python/image_segmentation.ipynb
+- Notebook de Python (Colab): https://colab.research.google.com/github/google-ai-edge/mediapipe-samples/blob/main/examples/image_segmentation/python/image_segmentation.ipynb
 - Ejemplo Flutter: https://github.com/google/flutter-mediapipe/tree/main/samples/vision/image_segmenter

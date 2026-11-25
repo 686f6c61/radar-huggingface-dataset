@@ -2,89 +2,84 @@
 
 ## Resumen
 
-RusMind Zernyshko 1 es un modelo de lenguaje de generación de texto de tamano muy reducido desarrollado por DICPlay dentro de la familia RusMind, entrenado desde cero y orientado exclusivamente al idioma ruso. Con 35,46 millones de parámetros y un peso de repositorio de aproximadamente 0,1 GB, se posiciona como la variante más compacta de la línea, pensada para ejecución totalmente offline en hardware de muy bajos recursos.
+RusMind Zernyshko 1 es un modelo de lenguaje de generación de texto en ruso desarrollado por DICPlay, presentado como la variante más pequeña de la familia RusMind. Se trata de un modelo entrenado desde cero (from-scratch), con 35,46 millones de parámetros y una arquitectura propia identificada como "RusMind AI" que requiere `trust_remote_code=True` para cargarse en Transformers. Su tamaño de repositorio es de aproximadamente 0,1 GB y el autor indica un peso de unos 70 MB, lo que lo sitúa en la categoría de modelos extremadamente ligeros.
 
-El modelo emplea una arquitectura transformer propia de RusMind AI (requiere `trust_remote_code=True` para cargarse) con 8 capas y dimensión de 512, una longitud de contexto de 1024 tokens y un formato de diálogo ChatML. Su entrenamiento parte de cero, sin destilación de modelos mayores, y está especializado en conversación en ruso.
+El modelo está especializado en conversación en ruso y emplea el formato de diálogo ChatML, con una longitud de contexto de 1024 tokens. Su propuesta de valor es la ejecución totalmente offline en hardware muy limitado; la model card menciona de forma deliberadamente exagerada su funcionamiento en dispositivos como un Nokia N95 o un frigorífico inteligente. Está pensado para uso personal, no comercial, investigación y evaluación.
 
-Su relevancia radica en el nicho: modelos de decenas de millones de parámetros que quepan en dispositivos embebidos, entornos sin conectividad o pruebas de concepto de bajo coste. No obstante, conviene tratarlo como un experimento de escala minima: su card no publica datos de benchmarks, composición del dataset ni resultados de evaluación, y la licencia es restrictiva para uso comercial.
+Es relevante ahora por su enfoque de entrenamiento desde cero en ruso y por su licencia restrictiva para uso comercial, que exige contrato escrito con DICPlay. No obstante, la información pública disponible es escasa: no se detallan datos de entrenamiento, benchmarks ni composición del dataset, y las descargas registradas son 295 con cero likes en el momento de la consulta.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer propia de RusMind AI (8 capas, dimensión 512), requiere `trust_remote_code=True` |
-| Parámetros totales | 35.463.680 (~35 M) |
-| Parámetros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer propia "RusMind AI" (custom_code, requiere `trust_remote_code=True`); 8 capas × 512 |
+| Parametros totales | 35.463.680 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 1024 tokens |
-| Tipos de cuantización | no disponible de forma explícita; existe versión GGUF en repositorio aparte |
-| Idiomas soportados | ruso (`ru`) |
-| Licencia | RusMind License (DICPlay), basada en `other`; uso comercial solo con contrato escrito |
-| Formato de pesos | safetensors (transformers); GGUF en repositorio separado |
+| Tipos de cuantizacion | no disponible en la informacion proporcionada; existe variante GGUF en repositorio separado |
+| Idiomas soportados | Ruso (ru) |
+| Licencia | RusMind License (DICPlay); uso personal, no comercial, investigación y evaluación gratuitos; uso comercial solo con contrato escrito |
+| Formato de pesos | safetensors (transformers); GGUF en repositorio aparte |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de 8 capas con dimensión oculta de 512, sumando 35,46 millones de parámetros. La implementación es personalizada (etiqueta `custom_code` y `from-scratch`), por lo que no se corresponde con una arquitectura estándar de `transformers` y exige cargar el código remoto del autor. El formato de conversación es ChatML y la ventana de contexto está fijada en 1024 tokens.
+La arquitectura es un transformer propio denominado RusMind AI, con 8 capas y dimensión de modelo de 512, lo que da lugar a los 35,46 millones de parámetros totales. El autor indica que el modelo fue entrenado completamente desde cero, sin partir de un modelo base preexistente. No se especifica en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del corpus, el uso de RLHF/DPO ni de técnicas de alineación. La model card únicamente indica que el entrenamiento se realizó íntegramente desde cero y que el modelo está orientado a conversación en ruso. Tampoco se documentan innovaciones técnicas como decodificación especulativa, atención lineal o variantes híbridas.
+El modelo utiliza el formato de conversación ChatML y una ventana de contexto de 1024 tokens. La carga requiere código remoto propio, lo que implica que la implementación de la arquitectura no está incluida en las librerías estándar de Transformers. No se han detallado innovaciones técnicas adicionales como decodificación especulativa, atención lineal u otras optimizaciones.
 
 ## Capacidades
 
-- Generación de texto conversacional en ruso, con plantilla de chat ChatML.
-- Respuesta a instrucciones simples en formato multi-turno (dentro del límite de 1024 tokens).
+- Generación de texto conversacional en ruso.
+- Soporte de diálogo multi-turno mediante plantilla ChatML.
 - Ejecución totalmente offline en hardware de muy bajos recursos.
-- Inferencia en CPU y en dispositivos embebidos gracias a su tamano reducido.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: limitadas al ruso según la model card.
-- Capacidades especiales (thinking mode, visión, audio): no disponibles.
+- Despliegue en entornos ligeros mediante GGUF (LM Studio, Ollama, llama.cpp).
+- Capacidad multilingüe limitada al ruso según la etiqueta de idioma del modelo.
+- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo de pensamiento.
 
 ## Casos de uso
 
-- Asistentes conversacionales embebidos en dispositivos sin conectividad: el modelo puede gestionar diálogos breves en ruso en un microcontrolador o una Raspberry Pi, ya que sus ~70 MB de pesos caben en memoria muy limitada.
-- Pruebas de concepto y demos de chatbots en ruso: útil para validar pipelines de inferencia (transformers, llama.cpp, Ollama) antes de migrar a modelos mayores de la familia RusMind.
-- Prototipado de interfaces de voz offline: combinado con un motor TTS/STT local, puede servir para asistentes de voz básicos en ruso sin depender de la nube.
-- Filtrado y clasificación de texto ligero en ruso: tareas de etiquetado simple o generación de respuestas cortas donde la latencia y el consumo importan más que la calidad.
-- Educación y experimentación: modelo adecuado para estudiar el comportamiento de transformers de escala minima y el efecto de la tokenización en ruso.
-- Generación de texto de relleno o plantillas en aplicaciones de bajo coste: respuestas cortas y predecibles en entornos donde no se requiere alta fidelidad.
+- Asistentes conversacionales en ruso para dispositivos embebidos: el modelo, con 35 millones de parámetros y contexto de 1024 tokens, puede ejecutarse en microcontroladores o hardware de gama muy baja para respuestas conversacionales breves.
+- Prototipado e investigación en entrenamiento desde cero: sirve como base de experimentación para estudiar arquitecturas transformer pequeñas entrenadas en ruso sin depender de modelos preentrenados.
+- Aplicaciones educativas de demostración: permite ilustrar el funcionamiento de un modelo de lenguaje en entornos con recursos mínimos, con despliegue offline y sin coste de infraestructura.
+- Integración en herramientas de escritorio mediante GGUF: puede cargarse en LM Studio, Ollama o llama.cpp para asistentes locales en ruso sin conexión a internet.
+- Evaluación de licencias y despliegue corporativo: su licencia restrictiva lo hace útil como caso de estudio para equipos que analizan condiciones de uso comercial de modelos open source.
+- Chatbots de bajo consumo en entornos con restricciones de energía o conectividad: al ejecutarse offline y con un peso de unos 70 MB, es viable en escenarios de campo o dispositivos aislados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en FP32 (35 M de parámetros); en la práctica cabe en CPU.
-- GPU recomendadas: no requiere GPU; funciona en CPU. Cualquier GPU consumer (GTX 1050 o superior) es más que suficiente.
-- Cabe en consumer GPU: sí, en cualquier GPU con al menos ~0,2 GB de VRAM libre; también en CPU y dispositivos embebidos.
-- Opciones de despliegue: `transformers` (con `trust_remote_code=True`), llama.cpp, Ollama y LM Studio mediante el GGUF del repositorio `DICPlay/RusMind-Zernyshko-1-GGUF`.
-- Latencia y throughput estimados: no disponibles de forma oficial; por tamano, la inferencia en CPU debería ser de decenas de tokens por segundo, pero no hay cifras publicadas.
+- VRAM estimada para inferencia: muy baja; con 35,46 millones de parámetros, la inferencia en fp32 requiere aproximadamente 140 MB de pesos, y menos de 100 MB en cuantizaciones de 8 o 4 bits, además de la memoria para el contexto de 1024 tokens.
+- GPU recomendadas: no requiere GPU dedicada; puede ejecutarse en CPU. Cualquier GPU consumer moderna (por ejemplo, RTX 4090) es sobradamente suficiente, y también tarjetas de gama baja o iGPU.
+- Cabe en GPU consumer: sí, en cualquier GPU consumer e incluso en CPU y dispositivos embebidos.
+- Opciones de despliegue: Transformers con `trust_remote_code=True`; GGUF mediante llama.cpp, Ollama y LM Studio. No se documenta soporte de vLLM ni TGI.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RusMind Zernyshko 1 | 35 M | 1024 | ruso | RusMind License (comercial con contrato) | Hugging Face + GGUF |
-| RusMind Zernyshko 1.6 | no disponible | no disponible | ruso | no disponible | Hugging Face (según la card) |
-| SmolLM-135M | 135 M | 2048 | inglés (principalmente) | Apache 2.0 | Hugging Face |
-| Qwen2.5-0.5B | 494 M | 32 768 | multilingüe | Apache 2.0 | Hugging Face |
+| RusMind Zernyshko 1 | 35,46 M | 1024 | Ruso | RusMind License (restrictiva para uso comercial) | Hugging Face, GGUF |
+| RusMind Zernyshko 1.6 | no disponible | no disponible | Ruso | no disponible | Hugging Face (referenciado por el autor) |
+| Alternativas de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparación con SmolLM-135M y Qwen2.5-0.5B es orientativa por categoria de tamano; no se dispone de benchmarks del modelo RusMind que permitan comparar rendimiento de forma directa.
+No se dispone de datos de benchmarks ni de especificaciones completas de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Modelo de 35 M de parámetros: capacidad de razonamiento, conocimiento factual y coherencia muy limitadas en comparación con modelos de cientos de millones de parámetros.
-- Riesgo elevado de alucinación y de respuestas incoherentes en temas complejos o fuera del dominio de entrenamiento.
-- Contexto de solo 1024 tokens: insuficiente para documentos largos o conversaciones extensas.
-- Entrenado únicamente en ruso; no se garantiza un comportamiento correcto en otros idiomas.
-- Licencia restrictiva: el uso comercial, la reventa, la distribución de versiones modificadas y la integración en productos requieren contrato escrito con DICPlay.
-- Requiere `trust_remote_code=True`, lo que implica ejecutar código del autor; conviene revisarlo antes de desplegarlo en producción.
-- No se publican datos de entrenamiento, evaluación ni sesgos conocidos; la trazabilidad es mínima.
-- La model card incluye afirmaciones no verificables (ejecución en un Nokia N95 o en un hervidor) que deben tomarse como mercadotecnia, no como especificación técnica.
+- Sesgos conocidos: no documentados; al entrenarse desde cero y con información escasa sobre el dataset, no puede descartarse la presencia de sesgos propios de los datos utilizados.
+- Riesgo de alucinación: alto en un modelo de 35 millones de parámetros y contexto de 1024 tokens, especialmente en preguntas factuales o conversaciones largas.
+- Limitaciones de contexto e idioma: ventana de solo 1024 tokens y soporte exclusivo del ruso; no se garantiza un rendimiento adecuado en otros idiomas.
+- Restricciones de licencia: el uso comercial, la reventa, la distribución de versiones modificadas y la integración en productos requieren contrato escrito con DICPlay; el uso gratuito se limita a fines personales, no comerciales, de investigación y evaluación.
+- Caveats para producción: requiere `trust_remote_code=True`, lo que implica ejecutar código del autor; la información pública sobre entrenamiento y evaluación es muy limitada, y el modelo se ofrece "tal cual" sin garantías.
+- El tamaño reducido limita su calidad frente a modelos mayores; el propio autor remite a RusMind Zernyshko 1.6 para obtener más calidad con un tamaño similar.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/DICPlay/RusMind-Zernyshko-1
-- Versión GGUF: https://huggingface.co/DICPlay/RusMind-Zernyshko-1-GGUF
-- Versión 1.6 (mayor calidad): https://huggingface.co/DICPlay/RusMind-Zernyshko-1.6
-- Licencia: archivo `LICENSE` en el repositorio del modelo
-- Paper, blog o demo oficial: no disponible
+- Variante GGUF: https://huggingface.co/DICPlay/RusMind-Zernyshko-1-GGUF
+- Versión 1.6: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.6
+- Contacto del autor (Telegram): https://t.me/DanKirillin
+- Contacto del autor (MAX): https://max.ru/u/f9LHodD0cOIENg5eShucR-RyhC02ijx-XXjPGcPbjBRy6_KKvmdKIu9tdQU

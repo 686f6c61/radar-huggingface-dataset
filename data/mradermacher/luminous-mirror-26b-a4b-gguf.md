@@ -2,76 +2,88 @@
 
 ## Resumen
 
-Luminous-Mirror-26B-A4B-GGUF es la versión cuantizada en formato GGUF del modelo Luminous-Mirror-26B-A4B, desarrollado por Vortex5 y cuantizado por mradermacher. Se trata de un modelo de lenguaje de gran tamaño orientado a roleplay y narración de historias, construido mediante merge de varios modelos con la herramienta mergekit. El nombre del modelo indica una arquitectura de mezcla de expertos (MoE) con aproximadamente 26 mil millones de parámetros totales y 4 mil millones activos por token, aunque el recuento exacto de safetensors es de 25.233.142.046 parámetros. Incluye además un proyector multimodal (mmproj) que sugiere capacidades de visión, aunque no se detallan en la documentación.
+Luminous-Mirror-26B-A4B-GGUF es la versión cuantizada en formato GGUF del modelo Vortex5/Luminous-Mirror-26B-A4B, un merge de modelos creado con mergekit y orientado a roleplay y narrativa (storytelling). El autor de la cuantización es mradermacher, un conocido publicador de cuantizaciones GGUF para la comunidad de inferencia local. El modelo base declara 25.233.142.046 parámetros totales (aproximadamente 25,2 mil millones), lo que coincide con la nomenclatura "26B" del nombre.
 
-La relevancia de esta ficha radica en que ofrece a desarrolladores e investigadores una opción de modelo de roleplay con licencia Apache 2.0, ejecutable localmente en hardware de consumo gracias a las cuantizaciones GGUF. El modelo está pensado para aplicaciones conversacionales y creativas, con soporte para inglés únicamente. Al ser un merge, hereda características de los modelos originales, pero no se dispone de información detallada sobre su entrenamiento o arquitectura interna más allá de lo indicado.
+La relevancia de esta ficha radica en que ofrece el modelo en múltiples niveles de cuantización (desde Q2_K hasta Q8_0, más variantes IQ4_XS y suplementos multimodales mmproj), lo que permite ejecutarlo en hardware de consumo con pérdidas de calidad controladas. Está publicado bajo licencia Apache 2.0, lo que facilita su uso comercial sin restricciones adicionales, y está etiquetado exclusivamente para inglés.
+
+No se dispone de información sobre la longitud de contexto, la arquitectura interna del modelo base ni los datos de entrenamiento en la documentación proporcionada. La model card del cuantizador se limita a listar los ficheros generados y a remitir al modelo original para más detalles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) con proyector multimodal (mmproj); merge de modelos mediante mergekit |
-| Parametros totales | 25.233.142.046 (aprox. 25,2B) |
-| Parametros activos | 4B (según nomenclatura "A4B") |
+| Arquitectura | no disponible (modelo base creado con mergekit; arquitectura interna no especificada) |
+| Parametros totales | 25.233.142.046 (aprox. 25,2 B) |
+| Parametros activos | no disponible (la nomenclatura A4B sugiere un esquema de mezcla de expertos con ~4 B activos, pero no se confirma en la documentación) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF: Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; además mmproj en Q8_0 y f16 |
-| Idiomas soportados | en (inglés) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; suplementos mmproj-Q8_0 y mmproj-f16 |
+| Idiomas soportados | inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors para el modelo base) |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo base. El nombre "26B-A4B" sugiere una arquitectura de mezcla de expertos (MoE) con 26 mil millones de parámetros totales y 4 mil millones activos por token, similar a otros modelos recientes como Gemma 4 26B-A4B, pero no se confirma que Luminous-Mirror derive de esa familia. El modelo fue construido mediante merge de varios modelos usando mergekit, una herramienta que combina pesos de distintos modelos para obtener capacidades híbridas. Además, el repositorio incluye archivos mmproj (proyector multimodal), lo que indica que el modelo puede procesar entradas visuales, aunque no se especifican los detalles del proyector ni el dataset de entrenamiento.
+El modelo base Vortex5/Luminous-Mirror-26B-A4B es un merge construido con mergekit, según las etiquetas de la model card. No se proporciona información sobre la arquitectura subyacente (transformer denso, MoE, híbrido), el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO. La etiqueta "A4B" en el nombre sugiere un diseño de mezcla de expertos con aproximadamente 4 mil millones de parámetros activos, pero este dato no se confirma explícitamente en la documentación disponible.
 
-No se ha publicado información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otras. Al ser un merge, el modelo hereda el conocimiento y las limitaciones de sus modelos base, que no se enumeran en la documentación.
+La contribución técnica de esta ficha concreta es la cuantización: mradermacher ha generado cuantizaciones estáticas (no imatrix) en el rango Q2_K a Q8_0, además de suplementos multimodales mmproj en Q8_0 y f16. También existe una versión con cuantizaciones ponderadas/imatrix en el repositorio mradermacher/Luminous-Mirror-26B-A4B-i1-GGUF, que el autor recomienda para mayor calidad a igual tamaño. No se documentan innovaciones arquitectónicas adicionales.
 
 ## Capacidades
 
-- Generación de texto en inglés, especialmente optimizado para roleplay y storytelling.
-- Capacidades multimodales básicas gracias al proyector mmproj (se requiere el archivo mmproj correspondiente).
-- Soporte de conversaciones multi-turno, típico en modelos de chat, aunque no se confirma explícitamente.
-- No se indica soporte de tool calling, function calling ni razonamiento multi-paso específico.
-- El modelo está etiquetado como "conversational" y "roleplay", lo que sugiere un buen desempeño en diálogos creativos y narración.
-- No se especifican capacidades multilingües más allá del inglés.
+- Generación de texto conversacional y narrativo, con especial orientación a roleplay y storytelling según las etiquetas del modelo.
+- Soporte multimodal: la presencia de ficheros mmproj indica capacidad de procesamiento de imágenes en el modelo base, aunque no se detalla el alcance.
+- Conversación multi-turno (etiqueta "conversational").
+- No se documenta soporte explícito de tool calling, function calling ni razonamiento agéntico multi-paso.
+- Capacidades multilingües limitadas al inglés según la model card.
+- No se documenta modo de razonamiento (thinking mode), audio ni otras capacidades especiales.
 
 ## Casos de uso
 
-- Roleplay interactivo: el modelo puede mantener personajes y tramas en conversaciones largas, ideal para juegos de rol escritos o asistentes narrativos.
-- Escritura creativa asistida: generar historias, diálogos y descripciones con un tono consistente, aprovechando su entrenamiento en storytelling.
-- Creación de personajes virtuales: construir avatares conversacionales con personalidad definida para aplicaciones de entretenimiento o educación.
-- Prototipado rápido de chatbots narrativos: gracias a su licencia Apache 2.0 y formato GGUF, puede integrarse en entornos de desarrollo locales sin coste de API.
-- Análisis de contenido multimodal: si se usa el proyector, puede procesar imágenes junto con texto para descripciones o narrativas basadas en ellas.
-- Experimentación académica: investigadores pueden estudiar el comportamiento de modelos merge en tareas de generación creativa y compararlo con otros modelos de tamaño similar.
+- Roleplay y ficción interactiva: el modelo está etiquetado específicamente para roleplay, por lo que puede emplearse en aplicaciones de personajes conversacionales y narrativa ramificada donde se requiere mantener consistencia de voz y estilo a lo largo de turnos.
+- Escritura creativa asistida: generación de relatos, diálogos y descripciones con cuantizaciones Q5_K_M o Q6_K para preservar matices estilísticos, desplegadas en local con llama.cpp.
+- Prototipado de chatbots de entretenimiento: gracias a la licencia Apache 2.0 y a las cuantizaciones Q4_K_M (16,9 GB), puede integrarse en servicios comerciales de ocio sin obligaciones de atribución adicionales.
+- Inferencia local en estaciones de trabajo: con Q4_K_S (15,6 GB) o IQ4_XS (14,2 GB) cabe en GPUs de consumo de 16-24 GB, lo que permite experimentar sin infraestructura cloud.
+- Evaluación comparativa de merges: investigadores que estudian el efecto de fusiones de modelos pueden usar esta versión cuantizada para pruebas rápidas de calidad narrativa frente al modelo base en safetensors.
+- Despliegue con capacidades de visión: los suplementos mmproj-Q8_0 (0,9 GB) y mmproj-f16 (1,3 GB) permiten añadir procesamiento de imágenes en entornos llama.cpp, útil para aplicaciones narrativas que incorporan referencias visuales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos sobre MMLU, HumanEval, GSM8K ni otras métricas estándar para este modelo. Se recomienda realizar evaluaciones propias si se considera su uso en aplicaciones críticas.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: según el quants, desde 10,7 GB (Q2_K) hasta 27,0 GB (Q8_0). El Q4_K_M (16,9 GB) es un equilibrio razonable entre calidad y requisitos.
-- GPU recomendadas: para Q4_K_M o Q5_K_M, una GPU con 16-20 GB de VRAM (por ejemplo, RTX 4080/4090, A4000, etc.). Para Q8_0 se necesitan 24 GB o más (RTX 4090, A5000, etc.).
-- En CPU: se puede ejecutar con llama.cpp, pero la velocidad será limitada; se recomienda al menos 32 GB de RAM para los quants más grandes.
-- Opciones de despliegue: llama.cpp, Ollama, text-generation-webui, LM Studio, o cualquier frontend compatible con GGUF.
-- Latencia y throughput: no disponibles. Dependerá del hardware y del quants elegido.
+- VRAM estimada para inferencia: aproximadamente el tamaño del fichero GGUF más el contexto y el overhead de la KV cache. Orientativamente: Q2_K ~10,7 GB, Q3_K_M ~13,4 GB, IQ4_XS ~14,2 GB, Q4_K_M ~16,9 GB, Q5_K_M ~19,2 GB, Q6_K ~22,7 GB, Q8_0 ~27,0 GB.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M con contexto moderado; RTX 3090/4080 (16-24 GB) para Q4_K_S e IQ4_XS; A100 40 GB o H100 para Q8_0 con contexto largo.
+- Cabe en GPU de consumo: sí, en tarjetas de 16 GB o más con cuantizaciones Q4 o inferiores; en 12 GB solo con Q2_K o Q3_K_S y contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; los suplementos mmproj requieren soporte multimodal de llama.cpp.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa rigurosa. El nombre del modelo sugiere una arquitectura similar a google/gemma-4-26B-A4B-it, que también tiene 26B totales y 4B activos, pero no hay datos que confirmen que Luminous-Mirror derive de esa familia. No se conocen modelos directamente comparables en cuanto a rendimiento, licencia y orientación a roleplay con el mismo tamaño y formato GGUF.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Luminous-Mirror-26B-A4B-GGUF | ~25,2 B | no disponible | Apache 2.0 | GGUF | Merge orientado a roleplay; cuantizaciones estáticas |
+| Luminous-Mirror-26B-A4B (base) | ~25,2 B | no disponible | Apache 2.0 | safetensors | Modelo original sin cuantizar |
+| Luminous-Mirror-26B-A4B-i1-GGUF | ~25,2 B | no disponible | Apache 2.0 | GGUF | Cuantizaciones imatrix del mismo autor, mayor calidad a igual tamaño |
+
+No se dispone de información suficiente para comparar con modelos de la misma categoría (roleplay/storytelling de ~25 B) en parámetros, contexto o rendimiento; los datos de benchmarks no están publicados.
 
 ## Limitaciones y advertencias
 
-- No se han documentado sesgos específicos, pero al ser un modelo de roleplay, puede generar contenido inapropiado, ofensivo o sexualmente explícito. Se recomienda supervisión humana y filtros de contenido en aplicaciones públicas.
-- Riesgo de alucinación: como todo LLM, puede inventar información o hechos, especialmente en contextos creativos.
-- Limitaciones de idioma: solo inglés, no soporta otros idiomas de forma fiable.
-- Longitud de contexto no especificada: se desconoce el límite de tokens de entrada, lo que puede afectar a tareas que requieran contexto largo.
-- Al ser un merge, no se garantiza la coherencia interna ni la estabilidad en todos los dominios.
-- La licencia Apache 2.0 permite uso comercial, pero se debe verificar que los modelos base también tengan licencias compatibles (no se listan en la documentación).
-- Los archivos mmproj son complementos multimodales; si no se usan, el modelo se comporta como un LLM de texto puro.
+- Idiomas: solo inglés declarado; el rendimiento en castellano no está garantizado ni documentado.
+- Alucinación: al ser un merge orientado a narrativa, no se han publicado evaluaciones de fidelidad factual; en usos informativos puede generar contenido inventado.
+- Contexto: se desconoce la longitud máxima de contexto, lo que impide planificar despliegues con ventanas largas sin pruebas previas.
+- Licencia: Apache 2.0 permite uso comercial, pero el modelo base es un merge cuyos componentes originales no se detallan en la documentación; conviene verificar las licencias de los modelos fusionados antes de un despliegue comercial.
+- Calidad de cuantización: las cuantizaciones Q2_K y Q3_K_S degradan notablemente la calidad; el autor recomienda Q4_K_S o Q4_K_M para uso general y Q5_K_M o superiores para preservar matices narrativos.
+- Multimodalidad: la capacidad de visión depende de los ficheros mmproj y del soporte del runtime; no se especifica qué tareas visuales están cubiertas.
+- Producción: sin benchmarks ni datos de contexto, no se recomienda su uso en sistemas críticos sin una evaluación propia previa.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Luminous-Mirror-26B-A4B-GGUF
 - Modelo base: https://huggingface.co/Vortex5/Luminous-Mirror-26B-A4B
-- Perfil de mradermacher: https://huggingface.co/mradermacher
-- Página de solicitudes de modelos: https://huggingface.co/mradermacher/model_requests
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Luminous-Mirror-26B-A4B-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Luminous-Mirror-26B-A4B-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico de calidad de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de modelos: https://huggingface.co/mradermacher/model_requests

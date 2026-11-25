@@ -2,85 +2,93 @@
 
 ## Resumen
 
-El modelo `nm-testing/model_free_fp8-e2e` es una versión cuantizada en FP8 del conocido TinyLlama-1.1B-Chat, un modelo de lenguaje pequeño (1.100 millones de parámetros) desarrollado por el proyecto TinyLlama y posteriormente ajustado para conversación siguiendo la receta de Zephyr. La cuantización FP8, aplicada mediante la librería `compressed-tensors`, reduce el tamaño del modelo a aproximadamente 2,5 GB, lo que lo hace especialmente adecuado para entornos con recursos limitados, como GPUs de consumo o inferencia en el borde.
+`nm-testing/model_free_fp8-e2e` es un checkpoint derivado de TinyLlama-1.1B-Chat-v1.0, publicado por el usuario de pruebas `nm-testing` (repo de validación de la librería `compressed-tensors` de Neural Magic). El modelo base es un transformer decoder-only tipo Llama de 1.100.048.384 parámetros, preentrenado por el proyecto TinyLlama sobre 3 billones de tokens y posteriormente afinado con el recetario de Zephyr (SFT sobre UltraChat y alineamiento con DPO sobre UltraFeedback). La variante publicada aquí incorpora pesos cuantizados en FP8 (formato `compressed-tensors`), orientados a servir el modelo con menor huella de memoria en GPUs con soporte de FP8 nativo.
 
-El modelo base fue preentrenado sobre 3 billones de tokens (SlimPajama y Starcoder) y después afinado con SFT sobre UltraChat y alineado con DPO sobre UltraFeedback. Esta versión concreta, publicada por el usuario `nm-testing`, mantiene la arquitectura Llama 2 y el tokenizer original, por lo que es compatible con el ecosistema de herramientas existente. Su relevancia actual radica en ofrecer una alternativa ligera y de código abierto (licencia Apache 2.0) para tareas de chat y generación de código, con un coste computacional mínimo.
+Su relevancia es fundamentalmente técnica: sirve como referencia end-to-end para validar pipelines de cuantización FP8 sobre arquitecturas Llama, y como modelo compacto de 1,1B parámetros para prototipado, entornos con VRAM limitada y pruebas de integración de tooling de inferencia (vLLM, TGI, transformers). No es un modelo destinado a producción de alta exigencia: es un checkpoint de test con 324 descargas y sin pipeline declarado.
+
+La ventana de contexto no está especificada en la información disponible; el modelo base TinyLlama emplea la arquitectura y tokenizador de Llama 2, con contexto de entrenamiento típico de 2.048 tokens, pero este dato no se confirma en la ficha del autor.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (arquitectura Llama 2) |
-| Parametros totales | 1.100.048.384 (1,1B) |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | no disponible (el modelo base TinyLlama usa 2048 tokens) |
-| Tipos de cuantizacion | FP8 (compressed-tensors) |
-| Idiomas soportados | ingles |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Arquitectura | Transformer decoder-only (familia Llama 2, mismo tokenizador y arquitectura que Llama 2) |
+| Parametros totales | 1.100.048.384 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | FP8 (formato `compressed-tensors`); el modelo base admite cuantizaciones estándar (INT8, INT4, GGUF) no verificadas en este checkpoint |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (con metadatos `compressed-tensors`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura estándar de Llama 2: un transformer decoder-only con atención causal, normalización RMSNorm, activación SiLU y embeddings rotatorios (RoPE). El tokenizer es el mismo que el de Llama 2, con un vocabulario de 32.000 tokens. El preentrenamiento se realizó sobre 3 billones de tokens combinando SlimPajama (texto general) y Starcoder (código), lo que le confiere una doble capacidad lingüística y de programación.
+El modelo es un transformer decoder-only con la arquitectura exacta de Llama 2: atención multi-cabeza con RoPE, normalización RMSNorm y activación SwiGLU, reutilizando el tokenizador de Llama 2 para compatibilidad directa con el ecosistema. El preentrenamiento del modelo base TinyLlama se realizó sobre 3 billones de tokens con un dataset compuesto por `cerebras/SlimPajama-627B`, `bigcode/starcoderdata`, `HuggingFaceH4/ultrachat_200k` y `HuggingFaceH4/ultrafeedback_binarized`, según los tags del repositorio.
 
-Posteriormente, el modelo fue afinado en dos fases: primero con SFT (supervised fine-tuning) sobre el dataset UltraChat, que contiene diálogos sintéticos generados por ChatGPT, y después con DPO (Direct Preference Optimization) sobre UltraFeedback, un conjunto de 64.000 prompts con respuestas rankeadas por GPT-4. Esta receta, tomada de Zephyr, busca mejorar la calidad de las respuestas y la alineación con preferencias humanas. La versión aquí presentada añade una cuantización FP8 que reduce el tamaño de los pesos sin cambios arquitectónicos, manteniendo la compatibilidad con el código original.
+Sobre esa base, el afinamiento siguió la receta de Zephyr: una fase de SFT sobre una variante de UltraChat (diálogos sintéticos generados por ChatGPT) y una fase de alineamiento con DPO mediante `DPOTrainer` de TRL sobre `openbmb/UltraFeedback` (64k prompts con completions rankeadas por GPT-4). La innovación de esta publicación concreta no está en el entrenamiento sino en la cuantización: los pesos se almacenan en FP8 mediante `compressed-tensors`, lo que reduce el tamaño del repo a 2,5 GB y permite inferencia con menor ancho de banda de memoria en hardware compatible. No se documentan innovaciones adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generacion de texto y chat conversacional multi-turno, con soporte de plantillas de chat (chat template) integradas en el tokenizer.
-- Generacion de codigo en multiples lenguajes (Python, JavaScript, etc.) gracias al entrenamiento con Starcoder.
-- Razonamiento basico y resolucion de problemas matematicos sencillos, aunque limitado por su tamano.
-- Capacidad de seguir instrucciones y mantener el estilo solicitado (por ejemplo, responder como un pirata).
-- Solo soporta ingles; no se han documentado capacidades multilingues.
-- No se ha confirmado soporte de tool calling, function calling ni uso como agente autonomo.
-- No incluye capacidades de vision ni audio; es exclusivamente texto.
+- Generación de texto conversacional multi-turno con plantilla de chat (`<|system|>`, `<|user|>`, `<|assistant|>`).
+- Generación de código en Python y otros lenguajes presentes en `bigcode/starcoderdata` (el widget de ejemplo muestra una función de Fibonacci).
+- Razonamiento básico y respuesta a instrucciones tras el alineamiento con DPO.
+- Soporte de system prompt para control de estilo y rol.
+- Capacidades multilingües limitadas: solo inglés declarado.
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo thinking.
 
 ## Casos de uso
 
-- Asistente de chat ligero para aplicaciones moviles o web: el modelo puede integrarse en un backend con vLLM o llama.cpp para ofrecer respuestas conversacionales con baja latencia, gracias a su tamano reducido y cuantizacion FP8.
-- Generacion de codigo en entornos de desarrollo: puede usarse como autocompletado o generador de funciones simples en editores de codigo, aprovechando su entrenamiento con Starcoder.
-- Prototipado rapido de chatbots: su licencia Apache 2.0 permite experimentar sin restricciones comerciales, ideal para validar ideas antes de migrar a modelos mayores.
-- Educacion y aprendizaje: sirve como ejemplo didactico de un modelo de lenguaje pequeno con pipeline completo de preentrenamiento, SFT y DPO, util para cursos de IA.
-- Inferencia en el borde (edge): con un peso de ~2,5 GB en FP8, puede ejecutarse en dispositivos con 4 GB de RAM o menos, como Raspberry Pi 5 o mini-PCs, para asistentes locales.
-- Filtrado y clasificacion de texto: aunque no esta optimizado para ello, puede usarse para tareas de clasificacion simple o extraccion de informacion con prompts adecuados.
+- Validación de pipelines de cuantización FP8: usar el checkpoint como caso de prueba end-to-end para verificar que `compressed-tensors` carga y ejecuta correctamente en vLLM o transformers antes de aplicarlo a modelos mayores.
+- Prototipado de asistentes conversacionales: con 1,1B parámetros cabe en cualquier GPU consumer y permite iterar sobre plantillas de chat y prompts de sistema sin coste de infraestructura.
+- Generación de código asistida en local: el modelo base se entrenó con `starcoderdata` y responde a peticiones de funciones sencillas, adecuado para autocompletado en editores con recursos limitados.
+- Pruebas de integración en CI/CD: su tamaño reducido (2,5 GB en FP8) permite incluirlo en tests automatizados que verifiquen regresiones en servidores de inferencia (TGI, vLLM, llama.cpp) sin necesidad de GPUs de datacenter.
+- Docencia y experimentación académica: modelo de referencia para estudiar el efecto de SFT + DPO en modelos pequeños y comparar recetas de alineamiento.
+- Despliegue en edge o entornos con VRAM restringida: al ser FP8 y 1,1B, puede servirse en GPUs de 8-16 GB o incluso CPU con cuantización adicional, para tareas de generación de texto de baja latencia y baja concurrencia.
+- Benchmarking de hardware FP8: medir throughput y latencia de kernels FP8 en GPUs Ada/Hopper frente a BF16 usando este checkpoint como carga controlada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo base TinyLlama reporta valores en MMLU, HumanEval y otros, pero esta version cuantizada no incluye mediciones propias. Se recomienda evaluar el modelo en el caso de uso concreto antes de desplegarlo en produccion.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con cuantizacion FP8, los pesos ocupan aproximadamente 1,1 GB, mas overhead de activaciones y cache, por lo que se necesitan entre 2 y 3 GB de VRAM para inferencia con batch pequeno.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, como NVIDIA GTX 1650, RTX 2060, RTX 3050, o incluso iGPUs con suficiente memoria compartida. En el lado profesional, una T4 o A10 es mas que suficiente.
-- Cabe en GPUs de consumo: si, en la mayoria de tarjetas modernas con 4 GB o mas.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, o directamente con Transformers y PyTorch. La cuantizacion FP8 requiere soporte de `compressed-tensors` o de la libreria de inferencia correspondiente.
-- Latencia y throughput: no hay datos publicados, pero por su tamano se espera una generacion de 20-50 tokens/segundo en una GPU consumer media (RTX 3060) con batch 1.
+- VRAM estimada en FP8: aproximadamente 1,1 GB para pesos, más overhead de activaciones y KV cache (estimación típica de 2-4 GB en total para contextos cortos).
+- VRAM estimada en BF16 (modelo base): aproximadamente 2,2 GB para pesos, 4-6 GB en total con activaciones.
+- GPU recomendadas para FP8 nativo: NVIDIA H100, H200, L40S, RTX 4090 (Ada Lovelace soporta FP8 en tensor cores).
+- Cabe en GPU consumer: sí, en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090 y cualquier GPU con 8 GB o más; también en GPUs integradas con cuantización INT4 vía llama.cpp.
+- Opciones de despliegue: transformers (>=4.34), vLLM (con soporte `compressed-tensors`), TGI, llama.cpp/Ollama (requiere conversión a GGUF, no incluida en este repo).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Cuantizacion | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| nm-testing/model_free_fp8-e2e | 1,1B | no disponible (base 2048) | Apache 2.0 | FP8 | Version cuantizada de TinyLlama-Chat |
-| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1B | 2048 | Apache 2.0 | BF16/FP16 | Modelo original sin cuantizar |
-| Qwen/Qwen1.5-1.8B-Chat | 1,8B | 32768 | Apache 2.0 | FP16 | Mayor contexto y tamano, pero mas pesado |
-| Microsoft/Phi-2 | 2,7B | 2048 | MIT | FP16 | Mejor rendimiento en razonamiento, pero mas grande |
+| nm-testing/model_free_fp8-e2e | 1,1B | no disponible | Apache 2.0 | safetensors FP8 | Checkpoint de test, cuantizado FP8 |
+| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1B | 2.048 (típico Llama 2) | Apache 2.0 | safetensors BF16 | Modelo base original, sin cuantizar |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 | safetensors | Mayor contexto y multilingüismo |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 | Apache 2.0 | safetensors | Alternativa moderna de tamaño similar |
 
-La comparativa se basa en especificaciones publicas; no se dispone de benchmarks comparativos para esta version concreta.
+La comparativa de rendimiento cuantitativo no está disponible: no se han publicado benchmarks de este checkpoint frente a las alternativas.
 
 ## Limitaciones y advertencias
 
-- Contexto limitado: la ventana de contexto del modelo base es de 2048 tokens, lo que restringe conversaciones largas o documentos extensos.
-- Solo ingles: no soporta otros idiomas, lo que limita su uso en entornos multilingues.
-- Riesgo de alucinacion: como todo modelo pequeno, puede generar informacion falsa o inconsistente, especialmente en temas especializados.
-- Sesgos: el entrenamiento con datos de codigo y texto general puede reflejar sesgos presentes en esos corpus; no se han realizado auditorias especificas.
-- Rendimiento limitado en tareas complejas: su tamano reducido implica menor capacidad de razonamiento y comprension que modelos de 7B o superiores.
-- La cuantizacion FP8 puede introducir una ligera perdida de precision en comparacion con el modelo original en BF16, aunque en la practica suele ser minima.
-- No se ha verificado el soporte de tool calling ni de agentes; para esos casos se recomienda usar modelos mas grandes.
+- Modelo de pruebas: el autor (`nm-testing`) es un espacio de validación, no un proyecto mantenido con garantías de soporte o actualizaciones.
+- Solo inglés: no se declara soporte de castellano ni otros idiomas; el rendimiento fuera del inglés será degradado.
+- Contexto no documentado: no se especifica la longitud de contexto efectiva de este checkpoint; asumir el valor del modelo base sin confirmación es arriesgado en producción.
+- Riesgo de alucinación elevado: con 1,1B parámetros y alineamiento DPO sobre datos sintéticos, la fiabilidad factual es limitada.
+- Sesgos heredados: los datasets de preentrenamiento (SlimPajama, UltraChat) y el ranking de GPT-4 en UltraFeedback introducen sesgos de dominio, estilo y demográficos no auditados.
+- Cuantización FP8: requiere hardware compatible para aprovechar el formato; en GPUs sin soporte FP8 los pesos pueden convertirse a BF16 con pérdida de la ventaja de memoria.
+- Licencia Apache 2.0 permite uso comercial, pero al ser un checkpoint de test no se recomienda su uso en producción sin validación propia.
+- Sin pipeline declarado en Hugging Face: la integración automática con `pipeline()` puede requerir especificar la tarea manualmente.
 
 ## Enlaces
 
-- [Hugging Face: nm-testing/model_free_fp8-e2e](https://huggingface.co/nm-testing/model_free_fp8-e2e)
-- [GitHub del proyecto TinyLlama](https://github.com/jzhang38/TinyLlama)
-- [Modelo base TinyLlama-1.1B-Chat-v1.0](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
-- [Dataset UltraChat](https://huggingface.co/datasets/stingning/ultrachat)
-- [Dataset UltraFeedback](https://huggingface.co/datasets/openbmb/UltraFeedback)
+- Hugging Face: https://huggingface.co/nm-testing/model_free_fp8-e2e
+- Repositorio TinyLlama: https://github.com/jzhang38/TinyLlama
+- Modelo base intermedio: https://huggingface.co/TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T
+- Modelo base chat: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
+- Receta Zephyr: https://huggingface.co/HuggingFaceH4/zephyr-7b-alpha
+- Dataset UltraChat: https://huggingface.co/datasets/stingning/ultrachat
+- Dataset UltraFeedback: https://huggingface.co/datasets/openbmb/UltraFeedback
+- TRL (DPOTrainer): https://github.com/huggingface/trl
+- Librería compressed-tensors: no disponible en la información proporcionada

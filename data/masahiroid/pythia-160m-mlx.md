@@ -2,56 +2,50 @@
 
 ## Resumen
 
-`masahiroid/pythia-160m-mlx` es una conversión no oficial al framework MLX de Apple del modelo base `EleutherAI/pythia-160m`, perteneciente a la suite Pythia de EleutherAI. Pythia es un conjunto de modelos entrenados con orden de datos y arquitectura idénticos a distintas escalas, diseñado específicamente para investigación en interpretabilidad y dinámica de entrenamiento de LLMs. Este repositorio no aporta pesos nuevos: reproduce en formato MLX (float16, safetensors) el checkpoint original de 160 millones de parámetros.
+`masahiroid/pythia-160m-mlx` es una conversión comunitaria al formato MLX del modelo base `EleutherAI/pythia-160m`, desarrollado originalmente por EleutherAI como parte de la suite Pythia. La suite Pythia se entrena con un orden de datos y una arquitectura idénticos a través de distintas escalas, con el objetivo de servir como plataforma de investigación en interpretabilidad y dinámica de entrenamiento de modelos de lenguaje. Esta conversión, publicada por el usuario masahiroid, adapta los pesos a MLX para su ejecución eficiente en hardware Apple Silicon.
 
-El modelo emplea una arquitectura transformer de tipo GPT-NeoX con 162.322.944 parámetros reales según los safetensors del repositorio. Al ser un modelo base sin ajuste por instrucciones, su función es la continuación de texto, no el seguimiento de instrucciones conversacionales. Su relevancia actual es acotada y muy específica: sirve como pieza ligera y reproducible para experimentos de interpretabilidad, docencia y pruebas de pipelines MLX en hardware Apple Silicon, donde el consumo medido es de aproximadamente 0,35 GB de memoria pico.
+El modelo es un transformer de tipo GPT-NeoX con 162.322.944 parámetros (aproximadamente 160M), pesos en float16 y un tamaño de repositorio de 0,3 GB. Al ser un modelo base sin ajuste por instrucciones, su función es la continuación de texto, no el seguimiento de instrucciones conversacionales. Su relevancia actual radica en su utilidad como banco de pruebas ligero para experimentos de interpretabilidad, docencia y prototipado rápido en entornos con recursos limitados, especialmente en Macs con chip de la serie M.
 
-La conversión la mantiene el usuario masahiroid, incluye una auditoría frente al modelo original mediante la herramienta `model-audit-lite` (formato de pesos, código incluido y linaje legible por máquina) y se distribuye bajo licencia Apache 2.0. No debe confundirse con un modelo listo para producción conversacional: es una herramienta de investigación.
+La licencia Apache 2.0 permite uso comercial y modificación sin restricciones significativas, lo que facilita su integración en herramientas y pipelines de investigación. No obstante, se trata de una conversión no oficial: la autoría del modelo original corresponde íntegramente a EleutherAI.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only GPT-NeoX (`gpt_neox`) |
+| Arquitectura | GPT-NeoX (transformer decoder-only) |
 | Parametros totales | 162.322.944 |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Pythia-160m usa 2048 tokens, dato no confirmado en esta ficha) |
-| Tipos de cuantizacion | no disponible; el repositorio publica pesos en float16 |
-| Idiomas soportados | ingles (entrenamiento principal); la model card declara tambien japones en metadatos, sin garantia de calidad |
-| Licencia | Apache 2.0 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Pythia-160m emplea 2048 tokens, pero este dato no se confirma en la ficha de la conversion) |
+| Tipos de cuantizacion | float16 (precision del checkpoint); no se documentan otras cuantizaciones en la informacion disponible |
+| Idiomas soportados | en, ja (segun los tags de la model card; el campo `language` de Hugging Face solo declara en) |
+| Licencia | apache-2.0 |
 | Formato de pesos | safetensors (formato MLX) |
-| Framework | MLX (`mlx-lm`) |
-| Precision publicada | float16 |
-| Memoria pico medida | ~0,35 GB |
-| Tamano del repositorio | 0,3 GB |
-| Modelo base | `EleutherAI/pythia-160m` |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only de la familia GPT-NeoX, con atención causal estándar y sin mecanismos híbridos ni atención lineal. El repositorio no entrena el modelo: convierte los pesos de `EleutherAI/pythia-160m` a formato MLX en float16. Por tanto, los datos de entrenamiento, el número de tokens y la composición del corpus corresponden al modelo original de EleutherAI (The Pile), no a esta conversión, y no se detallan en la información disponible de este repositorio.
+La arquitectura subyacente es GPT-NeoX, un transformer decoder-only con atención causal estándar, tal como se define en el modelo base `EleutherAI/pythia-160m`. La suite Pythia se caracteriza por entrenar modelos de distintos tamaños con exactamente el mismo orden de datos y la misma configuración arquitectónica, lo que permite comparaciones controladas entre escalas. El modelo base se entrenó sobre el dataset Pile, aunque la información proporcionada no detalla el número exacto de tokens, la composición del dataset ni si hubo etapas de RLHF o DPO.
 
-La innovación relevante de la familia Pythia no es arquitectónica sino metodológica: todos los modelos de la suite comparten orden de datos y configuración, lo que permite estudiar cómo emergen capacidades y sesgos a distintas escalas. Esta conversión añade una capa de auditoría reproducible (`SECURITY.md` con checksums y ML-BOM) que verifica que los pesos convertidos coinciden con el upstream. No se documenta RLHF, DPO ni ningún ajuste posterior.
+Esta conversión concreta no introduce cambios arquitectónicos: se limita a transformar los pesos originales al formato MLX en precisión float16 para su ejecución en Apple Silicon. No se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal. El autor indica que la conversión fue auditada con la herramienta `model-audit-lite`, que verifica formato de pesos, código incluido y linaje del modelo (ML-BOM).
 
 ## Capacidades
 
-- Generación de texto por continuación de secuencia (modelo base, no instruct).
-- Razonamiento y matemáticas: capacidades muy limitadas por escala (160M), sin datos de benchmark publicados en este repositorio.
-- Código: sin soporte específico ni evaluación publicada.
-- Tool calling / function calling: no soportado.
-- Agentes y razonamiento multi-paso: no soportado de forma nativa.
-- Multilingüe: entrenamiento predominantemente en inglés; el metadato declara japonés, pero sin evaluación de calidad.
-- Capacidades especiales: ninguna (sin visión, audio ni modo thinking).
-- Ejecución nativa en Apple Silicon mediante MLX, con carga en `mlx-lm`.
+- Generación y continuación de texto en inglés y, según los tags, japonés.
+- Modelo base sin ajuste por instrucciones: no sigue instrucciones conversacionales de forma fiable; está diseñado para completar texto.
+- Razonamiento y conocimiento factual limitados por su tamaño (160M parámetros).
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- Capacidades multilingües limitadas; el campo `language` de Hugging Face solo declara inglés, aunque los tags incluyen japonés.
+- No dispone de modo de razonamiento (thinking mode), visión ni audio.
+- Ejecución optimizada en Apple Silicon mediante MLX.
 
 ## Casos de uso
 
-- Investigación en interpretabilidad: análisis de activaciones, atención y representaciones internas en un modelo pequeño y reproducible, aprovechando la uniformidad de la suite Pythia para comparar escalas.
-- Docencia y formación: demostraciones de continuación de texto y de mecánica de transformers en portátiles con Apple Silicon, con un consumo de ~0,35 GB que cabe en cualquier Mac moderno.
-- Pruebas de pipelines MLX: validación de flujos `mlx-lm` (carga, generación, cuantización posterior) antes de escalar a modelos mayores, gracias a su reducido tamaño de descarga (0,3 GB).
-- Generación de texto auxiliar de bajo coste: completado de plantillas, expansión de frases o generación de datos sintéticos rudimentarios en entornos con recursos mínimos.
-- Reproducibilidad y auditoría de cadena de suministro: uso del ML-BOM y los checksums incluidos para verificar integridad de artefactos en pipelines de CI, como ejemplo de buenas prácticas.
-- Evaluación comparativa de frameworks: medición de latencia y throughput de MLX frente a otros runtimes sobre el mismo checkpoint base.
-- Filtrado o clasificación simple por perplejidad: puntuación de textos mediante log-probabilidades del modelo en tareas de investigación lingüística.
+- Investigación en interpretabilidad: al compartir arquitectura y orden de datos con el resto de la suite Pythia, permite estudiar circuitos y representaciones internas en un modelo pequeño que cabe en memoria de forma holgada (~0,35 GB en pico según el autor).
+- Docencia y formación: sirve para ilustrar el funcionamiento de un transformer decoder-only y experimentar con generación de texto sin requerir infraestructura de GPU dedicada, ejecutándose en un Mac con MLX.
+- Prototipado rápido de pipelines de generación: permite validar integraciones con `mlx-lm` y flujos de continuación de texto antes de escalar a modelos mayores.
+- Pruebas de infraestructura MLX: útil para verificar el correcto funcionamiento de entornos MLX, versiones de `mlx-lm` y flujos de carga de pesos safetensors en hardware Apple.
+- Generación de texto exploratoria: continuación de fragmentos en inglés para experimentos de creatividad o análisis lingüístico a pequeña escala.
+- Referencia para conversiones de modelos: sirve como ejemplo de conversión comunitaria auditada, con documentación de seguridad y linaje, para quienes quieran replicar el proceso con otros modelos de la suite Pythia.
 
 ## Benchmarks y rendimiento
 
@@ -59,38 +53,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada: ~0,35 GB en float16 según medición del autor; en cuantizaciones de 8 o 4 bits el consumo sería inferior, aunque no se publican pesos cuantizados.
-- GPU recomendadas: no requiere GPU dedicada; está pensado para Apple Silicon (M1, M2, M3, M4 y posteriores) mediante MLX.
-- GPU consumer: cabe holgadamente en cualquier GPU con más de 1 GB de VRAM (RTX 3060, RTX 4090, etc.), aunque el repositorio no está optimizado para CUDA.
-- Despliegue: `mlx-lm` (CLI `mlx_lm.generate` y API Python `load`/`generate`). Para otros runtimes sería necesario reconvertir desde el modelo base original (por ejemplo a GGUF para llama.cpp u Ollama), no incluido en este repositorio.
+- VRAM/memoria estimada: aproximadamente 0,35 GB en pico según las pruebas del autor con float16.
+- GPU recomendadas: hardware Apple Silicon (series M1, M2, M3, M4) mediante MLX; no está pensado para GPU NVIDIA.
+- Cabe holgadamente en cualquier Mac moderno con memoria unificada, incluso en configuraciones de 8 GB.
+- Opciones de despliegue: `mlx-lm` (librería oficial de MLX para modelos de lenguaje); no se documentan otras opciones como vLLM, llama.cpp, Ollama o TGI para este checkpoint.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato/runtime | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| `masahiroid/pythia-160m-mlx` | 162,3 M | no disponible | MLX, float16 | Apache 2.0 | Conversión comunitaria auditada |
-| `EleutherAI/pythia-160m` | 160 M | 2048 (modelo original) | PyTorch/safetensors | Apache 2.0 | Upstream oficial, base de esta conversión |
-| `EleutherAI/pythia-410m` | 410 M | 2048 (modelo original) | PyTorch/safetensors | Apache 2.0 | Misma suite, mayor escala para comparativas de interpretabilidad |
-| `google/bert_uncased_L-12` (referencia encoder) | ~110 M | 512 | PyTorch | Apache 2.0 | Alternativa pequeña, pero encoder y no generativa |
-
-No se dispone de comparativas de rendimiento (benchmarks) entre estas opciones en la información proporcionada.
+| masahiroid/pythia-160m-mlx | 162M | no disponible | Apache 2.0 | safetensors (MLX) | Conversión comunitaria para Apple Silicon |
+| EleutherAI/pythia-160m | 160M | 2048 (modelo base) | Apache 2.0 | safetensors (PyTorch) | Modelo original de EleutherAI |
+| EleutherAI/pythia-410m | 410M | 2048 (modelo base) | Apache 2.0 | safetensors (PyTorch) | Misma suite, mayor escala |
+| Otros modelos MLX de tamano similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Modelo base sin ajuste por instrucciones: no sigue órdenes ni mantiene formato de chat; solo continúa texto.
-- Escala muy reducida (160M): alta propensión a incoherencias, repeticiones y errores factuales; el riesgo de alucinación es elevado para cualquier uso informativo.
-- Sesgos: hereda los sesgos del corpus de entrenamiento original (The Pile), no documentados en este repositorio.
-- Idiomas: el entrenamiento es predominantemente en inglés; el soporte de japonés declarado en metadatos no está evaluado.
-- Contexto: la longitud de contexto no se especifica en la información de esta conversión; no asumir ventanas largas.
-- Licencia: Apache 2.0 permite uso comercial, pero al ser una conversión comunitaria no oficial conviene verificar la procedencia y los checksums antes de integrarla en producción.
-- Producción: no recomendado como modelo de servicio al cliente ni de generación de código; su valor es investigador y educativo.
-- Compatibilidad: limitado al ecosistema MLX; no funciona directamente en CUDA sin reconversión.
+- Es un modelo base: no está ajustado por instrucciones, por lo que puede producir continuaciones incoherentes o no seguir peticiones conversacionales.
+- Riesgo elevado de alucinación y de generar contenido factualmente incorrecto debido a su reducido tamaño (160M parámetros).
+- Sesgos conocidos: el modelo base Pythia se entrenó sobre el dataset Pile, que puede contener sesgos de diversa índole; la información proporcionada no detalla análisis de sesgos específicos para esta conversión.
+- Limitaciones de idioma: el campo `language` solo declara inglés; el soporte de japonés aparece únicamente en los tags y no está verificado en la documentación.
+- Longitud de contexto no confirmada en la información de esta conversión.
+- Conversión no oficial: no cuenta con el respaldo de EleutherAI; posibles incidencias deben reportarse al autor de la conversión.
+- Licencia Apache 2.0: permite uso comercial, pero se recomienda conservar los avisos de atribución correspondientes a EleutherAI y al autor de la conversión.
+- Para producción con requisitos de calidad, se recomienda evaluar modelos mayores o ajustados por instrucciones.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/masahiroid/pythia-160m-mlx
-- Modelo base: https://huggingface.co/EleutherAI/pythia-160m
-- Framework MLX: https://github.com/ml-explore/mlx
-- Herramienta de auditoría: https://github.com/masahiroid/model-audit-lite
-- Documento de seguridad del repositorio: https://huggingface.co/masahiroid/pythia-160m-mlx/blob/main/SECURITY.md
+- [Hugging Face: masahiroid/pythia-160m-mlx](https://huggingface.co/masahiroid/pythia-160m-mlx)
+- [Modelo base: EleutherAI/pythia-160m](https://huggingface.co/EleutherAI/pythia-160m)
+- [MLX (repositorio oficial)](https://github.com/ml-explore/mlx)
+- [model-audit-lite (herramienta de auditoría)](https://github.com/masahiroid/model-audit-lite)
+- [SECURITY.md de la conversión](https://huggingface.co/masahiroid/pythia-160m-mlx/blob/main/SECURITY.md)
+- [README en japonés](https://huggingface.co/masahiroid/pythia-160m-mlx/blob/main/README.ja.md)

@@ -2,111 +2,114 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-moved-store es un reempaquetado del modelo Qwen/Qwen3.8-Flash-Next (aproximadamente 180.000 millones de parametros) realizado por el usuario jalenluorion, orientado a ejecutar un modelo de mezcla de expertos (MoE) de gran tamano en equipos Apple Silicon con tan solo 16 GB de memoria unificada. La idea central es mantener en memoria unicamente el 3 % de los parametros (capas de atencion, expertos compartidos, normas, embeddings, cabeza de salida y enrutadores) y dejar el resto —los 24.576 expertos enrutados y una memoria de n-gramas— en el SSD, leyendolos bajo demanda.
+Qwen3.8-Flash-Next-moved-store es una repackaging del modelo Qwen3.8-Flash-Next de Qwen (Alibaba) realizada por el desarrollador independiente jalenluorion. El repositorio redistribuye el modelo original de 180.000 millones de parámetros en un formato que permite ejecutarlo en un MacBook con 16 GB de memoria unificada, manteniendo solo unos 9 GB en RAM y dejando el resto (112 GiB de expertos y memoria n-gram) en el SSD. Se trata, por tanto, de una conversión orientada al despliegue en Apple Silicon mediante MLX, no de un modelo nuevo entrenado desde cero.
 
-El problema que resuelve es el de la inferencia de modelos MoE masivos en hardware de consumo: en el modelo original cada experto debe residir en memoria porque el enrutador de cada capa decide en el mismo instante en que se necesita. Aqui se anade un pequeno enrutador entrenado por capa que predice, con cuatro capas de antelacion, que expertos se van a requerir, de modo que el disco los lee mientras las capas intermedias computan. El resultado reportado por el autor es de 5,7 tokens/s en un prompt de benchmark y 4,6 tokens/s en una sesion de agente, con unos 9 GB de memoria en uso.
+La arquitectura del modelo base es un transformer de tipo mixture-of-experts (MoE) con capas de atención híbridas: 36 capas Gated DeltaNet y 12 capas de atención dispersa. El modelo activa 10 de 512 expertos en cada una de las 48 capas, lo que resulta en 1,27 GB de lecturas de expertos por token antes de reutilización. La innovación clave de esta conversión es el uso de routers "lag-4": pequeños routers entrenados por capa que predicen, basándose en el estado oculto de cuatro capas anteriores, qué expertos necesitará la capa actual, permitiendo leerlos del SSD mientras se computan las capas intermedias.
 
-Es relevante ahora porque demuestra una via practica de "storage offloading" para MoE en Apple Silicon mediante MLX, con un consumo de disco de unos 140 GB y un formato de pesos especifico (safetensors para la parte residente, ficheros binarios por capa para los expertos y la memoria n-gram). No obstante, se trata de un trabajo de terceros, no oficial de Qwen, con licencia comunitaria y sin benchmarks de tareas publicados.
+El interés actual de esta ficha reside en que demuestra una técnica viable de offloading de expertos MoE a almacenamiento secundario con prefetch predictivo, logrando 5,7 tokens/s en un benchmark y 4,6 tokens/s en una sesión de agente bajo OpenCode. Es relevante para desarrolladores que quieran estudiar patrones de despliegue de modelos de gran tamaño en hardware de consumo, aunque con caveats importantes sobre fidelidad de salida y licencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido MoE con capas Gated DeltaNet y atencion dispersa, mas memoria de n-gramas; reempaquetado con enrutadores de prediccion (lag-4) y offloading a disco |
-| Parametros totales | ~180B (4,9B residentes + 576M enrutadores + 120,8B expertos enrutados + 51,2B memoria n-gram) |
-| Parametros activos | 10 de 512 expertos por capa en 48 capas (segun model card) |
+| Arquitectura | Transformer MoE híbrido: 36 capas Gated DeltaNet + 12 capas de atención dispersa, 48 capas totales |
+| Parametros totales | 180B (4,9B residentes + 576M routers lag-4 + 120,8B expertos enrutados + 51,2B memoria n-gram) |
+| Parametros activos | 10 de 512 expertos por capa en 48 capas (no se especifica el total de parámetros activos por token) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Expertos a 4 bits (escala y sesgo fp16 por grupo de 64); memoria n-gram a 8 bits (int8 con escala fp16); pesos residentes a 8 bits en maquina de 16 GB; enrutadores a fp16 |
+| Tipos de cuantizacion | Expertos enrutados a 4-bit (escala fp16 + bias por grupo de 64); memoria n-gram a 8-bit (int8 con escala fp16); pesos residentes a 8-bit en Mac de 16 GB; routers lag-4 a fp16 |
 | Idiomas soportados | no disponible |
 | Licencia | qwen-community-1.0 (Qwen Community License 1.0) |
-| Formato de pesos | safetensors (residente, bf16), ficheros binarios por capa para expertos (`store/layer_XX.bin`), binarios int8 para n-gram (`ngram/part_PP.bin`), enrutadores en `.npz` |
+| Formato de pesos | safetensors (resident.safetensors, bf16), .npz (routers_k4.npz), .bin (store/layer_XX.bin, ngram/part_PP.bin) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-Flash-Next es un transformer MoE con 48 capas, de las cuales 36 son Gated DeltaNet y 12 de atencion dispersa, con expertos compartidos y 512 expertos enrutados por capa (24.576 en total). El reempaquetado congela y cuantiza los pesos liberados: expertos a 4 bits, memoria n-gram a 8 bits y pesos residentes a 8 bits en el Mac de 16 GB. La unica parte entrenada son los enrutadores "lag-4", que imitan a los enrutadores originales con el modelo congelado; se entrenaron sobre 20,5 millones de tokens de wikitext-103, FineWeb-Edu y UltraChat.
+El modelo base Qwen3.8-Flash-Next es un transformer MoE con una combinación híbrida de capas: 36 capas Gated DeltaNet (atención lineal con estado recurrente) y 12 capas de atención dispersa. Cada capa dispone de 512 expertos enrutados, de los cuales se activan 10 por token. Adicionalmente, el modelo incorpora una memoria n-gram de 51,2B parámetros que funciona como tabla hash: un token consulta 16 filas cuyas direcciones dependen únicamente de los ids de tokens previos. Los pesos liberados están congelados y cuantizados; la única parte entrenada en esta conversión son los routers lag-4, entrenados sobre 20,5M tokens de wikitext-103, FineWeb-Edu y UltraChat para imitar los routers originales con el modelo congelado.
 
-La innovacion clave es el prefetch de expertos: un enrutador por capa lee el estado del token cuatro capas antes y nombra los expertos que esa capa necesitara, de modo que el SSD los carga mientras las cuatro capas intermedias computan. En modo prefetch (por defecto) ningun experto se lee durante el computo de la propia capa; si la prediccion falla, el enrutador original elige entre lo que ya esta en memoria. En modo exacto (`--mode exact`) se respeta siempre la eleccion del enrutador original, leyendo lo que falte cuando se necesite. La memoria n-gram es una tabla hash: cada token consulta 16 filas cuyas direcciones dependen solo de los ids de tokens previos. Un token activa 10 de 512 expertos en cada una de las 48 capas, lo que supone 1,27 GB de lecturas de expertos por token antes de reutilizacion.
+La innovación técnica principal es el mecanismo de prefetch a cuatro capas de distancia. En el modelo original, el router de cada capa selecciona expertos a partir del estado oculto de esa misma capa, lo que obliga a tener todos los expertos en memoria. En esta conversión, un router pequeño por capa lee el estado del token cuatro capas antes y nombra los expertos que esa capa necesitará; esos expertos se leen del SSD mientras las cuatro capas intermedias computan. El router original sigue tomando su decisión habitual entre los expertos que ya han llegado. Existen dos modos: prefetch (por defecto, sin lecturas durante el cómputo de la capa propia, con posibles cambios menores en la salida) y exacto (`--mode exact`), que respeta siempre la elección del router original y lee lo que falte cuando se necesita. Los routers lag-4 se entrenaron sobre 20,5M tokens y la cabeza de predicción multi-token y la torre de visión del release original no están incluidas.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento conversacional multi-turno, heredados del modelo base Qwen3.8-Flash-Next.
-- Capacidad de mezcla de expertos con enrutamiento disperso (10 de 512 expertos por capa).
-- Memoria de n-gramas para modelado de secuencias largas mediante tabla hash.
-- Ejecucion en Apple Silicon con MLX, incluida una API compatible con OpenAI para integrarse en herramientas como OpenCode.
-- Modo de agente verificado por el autor en una sesion bajo OpenCode (4,6 tokens/s).
-- Soporte de tool calling: no medido ni confirmado en la informacion disponible.
-- Capacidades de vision: no incluidas (la torre de vision del release no se incluye).
-- Cabeza de prediccion multi-token: no incluida.
-- Capacidades multilingues: no disponibles.
+- Generación de texto conversacional: el modelo base es un LLM de propósito general; esta conversión mantiene las capas de atención, expertos compartidos, normas, embeddings y cabeza de salida.
+- Razonamiento y conocimiento general: heredado del modelo base Qwen3.8-Flash-Next, sujeto a la fidelidad de la cuantización y del prefetch.
+- Memoria n-gram de largo alcance: 51,2B parámetros en forma de tabla hash consultada por token, orientada a capturar dependencias léxicas y de secuencia.
+- Tool calling y function calling: no medido explícitamente en esta conversión; la model card indica que trazas de pensamiento, código, tool calls y benchmarks de tarea no han sido evaluados.
+- Soporte de agentes y multi-step reasoning: el autor reporta 4,6 tokens/s en una sesión de agente bajo OpenCode, lo que evidencia viabilidad operativa, aunque sin métricas de calidad de tarea.
+- Capacidades multilingües: no disponible.
+- Modo thinking: no disponible (no se menciona en la información proporcionada).
+- Visión: no incluida; la torre de visión del release original no forma parte de esta conversión.
+- Predicción multi-token: no incluida; la cabeza correspondiente del release original no forma parte de esta conversión.
 
 ## Casos de uso
 
-- Prototipado local de modelos MoE de gran escala en un MacBook de 16 GB: permite experimentar con un modelo de ~180B sin GPU dedicada, usando el SSD como almacen de expertos y obteniendo unos 5,7 tokens/s en benchmark.
-- Asistentes de codigo en local integrados en OpenCode: el autor reporta 4,6 tokens/s en una sesion de agente, adecuado para tareas interactivas no sensibles a la latencia.
-- Evaluacion de tecnicas de offloading y prefetch: util como banco de pruebas para investigar enrutadores predictivos, politicas de cache (`--keep`, `--max-slots`) y su impacto en la calidad (gaps de loss medidos en nats).
-- Servicio local compatible con OpenAI: el demo expone una API compatible para conectar clientes existentes sin infraestructura en la nube.
-- Investigacion sobre cuantizacion y su efecto en calidad: el autor documenta gaps de loss por configuracion (expertos 4 bits, n-gram 8 bits, pesos residentes 8 bits, enrutadores), lo que permite estudiar el compromiso calidad/memoria.
-- Despliegue educativo o de demostracion en entornos con recursos limitados: el modelo ocupa unos 9 GB en memoria y requiere ~140 GB de disco, viable en portatiles Apple Silicon con SSD amplio.
+- Investigación de técnicas de offloading MoE: el repositorio y el runner MLX permiten reproducir el patrón de prefetch lag-4 y medir el impacto en latencia y calidad; adecuado para experimentos académicos sobre inferencia de modelos grandes en hardware limitado.
+- Despliegue de un LLM de 180B en un MacBook de 16 GB: permite ejecutar un modelo de escala de centro de datos en un portátil Apple Silicon con unos 9 GB de RAM y 140 GB de disco libre, con 5,7 tokens/s en benchmark y 4,6 tokens/s en agente.
+- Prototipado de agentes locales en Apple Silicon: el demo incluido expone una API compatible con OpenAI que puede conectarse a OpenCode, útil para probar flujos de agente sin depender de servicios en nube.
+- Evaluación comparativa de modos prefetch vs. exacto: permite medir la diferencia de calidad (gap de loss de +0,011/+0,011/+0,019 nats por la elección temprana sola) y decidir cuándo sacrificar fidelidad por velocidad.
+- Estudio de cuantización mixta 4-bit/8-bit en MoE: los datos de rounding (9,2-9,6% RMS relativo por elemento en expertos a 4-bit) sirven para analizar el impacto de la cuantización en modelos con muchos expertos.
+- Base para conversiones similares: el mismo pipeline se aplica a Qwen3-Next-80B-A3B, Qwen3-Coder-Next y Qwen3-30B-A3B, por lo que este repositorio sirve como referencia para replicar la técnica en otros modelos Qwen.
+- Docencia y demostraciones de arquitecturas híbridas: útil para ilustrar en clase cómo se combinan Gated DeltaNet, atención dispersa, MoE y memoria n-gram en un mismo modelo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El autor indica explicitamente que "thinking traces, code, tool calls and task benchmarks have not been measured".
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card indica explícitamente que trazas de pensamiento, código, tool calls y benchmarks de tarea no han sido medidos. Los únicos datos de rendimiento publicados son de velocidad y de calidad relativa (loss gap):
 
-Datos de calidad reportados (gap de loss en nats frente al modelo bf16 liberado, sobre wikitext-103 test / FineWeb-Edu / UltraChat retenido; referencia 1,611 / 2,089 / 1,828):
-
-| Configuracion | Gap de loss |
+| Metrica | Valor |
 |---|---|
-| Expertos a 4 bits | +0,013 / +0,007 / -0,028 |
-| + memoria n-gram a 8 bits | +0,014 / +0,008 / -0,026 |
-| + pesos en memoria a 8 bits | +0,014 / +0,008 / -0,037 |
-| + enrutadores: 10 nombrados, 3 retenidos, 24 slots por capa | +0,027 / +0,019 / -0,008 |
-
-El coste de elegir con antelacion, frente al mismo modelo cuantizado con todos los expertos en memoria, es de +0,011 / +0,011 / +0,019 nats. El error de redondeo a 4 bits por elemento es del 9,2 al 9,6 % RMS relativo; el de una fila n-gram a 8 bits, del 0,66 %.
-
-Rendimiento medido (MacBook Pro M4 base, 16 GB, SSD interno, `--bench --max-new 120`, cache de ficheros del SO evitada):
-
-| Configuracion | Tokens/s | Memoria (pico MLX) |
-|---|---|---|
-| Benchmark (prompt unico) | 5,7 | ~9 GB |
-| Sesion de agente (OpenCode) | 4,6 | ~9 GB |
+| Throughput en benchmark | 5,7 tokens/s |
+| Throughput en sesión de agente (OpenCode) | 4,6 tokens/s |
+| Memoria en RAM (Mac 16 GB) | ~9 GB |
+| Memoria en disco (expertos + n-gram) | 112 GiB (63,4 GiB expertos + 48,3 GiB n-gram) |
+| Lecturas de expertos por token | 1,27 GB antes de reutilización |
+| Gap de loss vs. bf16 original (wikitext-103 / FineWeb-Edu / UltraChat) | +0,027 / +0,019 / -0,008 nats (configuración en Mac) |
+| Gap por elección temprana sola | +0,011 / +0,011 / +0,019 nats |
+| Ruido por ventana (chat) | mediana +0,016, desviación estándar 0,133 sobre 128 ventanas |
+| Rounding RMS relativo expertos 4-bit | 9,2-9,6% por elemento |
 
 ## Requisitos de hardware
 
-- Memoria: aproximadamente 9 GB en uso (pico MLX) en el Mac de 16 GB; la parte residente ocupa 4,3 GiB cuantizada y cacheada en el primer arranque, y los enrutadores 1,1 GB a fp16.
-- Disco: unos 140 GB libres (descarga de 123 GiB mas una cache de 4,3 GiB escrita en el primer arranque).
-- GPU: Apple Silicon con 16 GB o mas de memoria unificada; el autor lo prueba en un MacBook Pro M4 base. No se documenta soporte para A100, H100 ni RTX 4090.
-- Caben en GPU de consumo: si, en Apple Silicon de 16 GB; no hay datos para GPU NVIDIA.
-- Despliegue: MLX mediante `mlx_run.py` (chat, prompt unico, benchmark) y una API compatible con OpenAI en `demo/demo.sh` para OpenCode. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: 5,7 tokens/s en benchmark y 4,6 tokens/s en agente; 1,27 GB de lecturas de expertos por token antes de reutilizacion, lo que hace del SSD un cuello de botella relevante.
+- VRAM/RAM estimada: unos 9 GB de memoria unificada en Mac de 16 GB (4,3 GiB de pesos residentes cuantizados y cacheados en el primer load, más 1,1 GB de routers lag-4 a fp16, más slots de expertos en memoria).
+- Disco: aproximadamente 140 GB libres (la descarga es de 123 GiB y el primer run escribe una caché de 4,3 GiB).
+- GPU recomendadas: Apple Silicon con 16 GB o más de memoria unificada. No se proporcionan recomendaciones para GPU NVIDIA (A100, H100, RTX 4090) en la información disponible.
+- ¿Cabe en GPU de consumo? La conversión está diseñada específicamente para Apple Silicon; no se documenta compatibilidad con GPU de consumo NVIDIA.
+- Opciones de despliegue: MLX mediante `mlx_run.py` (chat, prompt único, benchmark), demo con API compatible OpenAI (`demo/demo.sh`) para OpenCode, y el engine C++ `dmeng` del mismo repositorio para otros modelos. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 5,7 tokens/s en benchmark y 4,6 tokens/s en agente bajo OpenCode en un Mac de 16 GB. No se proporcionan datos de latencia por token ni de throughput en otros hardware.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-moved-store | ~180B totales (4,9B residentes + expertos en disco) | no disponible | qwen-community-1.0 | Hugging Face (jalenluorion) | Offloading a disco con enrutadores lag-4; 5,7 tokens/s en M4 16 GB |
-| Qwen3-Next-80B-A3B-moved-store | 80B totales (A3B) | no disponible | no disponible | Hugging Face (jalenluorion) | Misma conversion de offloading para Qwen3-Next-80B-A3B |
-| Qwen3-Coder-Next-moved-store | no disponible | no disponible | no disponible | Hugging Face (jalenluorion) | Misma conversion orientada a codigo |
-| Qwen3-30B-A3B-moved-store | 30B totales (A3B) | no disponible | no disponible | Hugging Face (jalenluorion) | Misma conversion, menor huella de disco |
+| Qwen3.8-Flash-Next-moved-store (esta ficha) | 180B (4,9B residentes + 120,8B expertos + 51,2B n-gram) | no disponible | 5,7 tok/s benchmark, 4,6 tok/s agente en Mac 16 GB | qwen-community-1.0 | Hugging Face, MLX, Apple Silicon |
+| Qwen3-Next-80B-A3B-moved-store | 80B (A3B activos) | no disponible | no disponible | qwen-community-1.0 (presumible, no confirmado) | Hugging Face, misma técnica |
+| Qwen3-Coder-Next-moved-store | no disponible | no disponible | no disponible | no disponible | Hugging Face, misma técnica |
+| Qwen3-30B-A3B-moved-store | 30B (A3B activos) | no disponible | no disponible | no disponible | Hugging Face, misma técnica |
 
-No se dispone de datos de rendimiento comparables entre estas variantes en la informacion proporcionada.
+Las alternativas listadas son conversiones del mismo autor con la misma técnica de offloading; no se dispone de datos de benchmarks comparativos entre ellas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo oficial de Qwen: es un reempaquetado de terceros; la licencia qwen-community-1.0 impone condiciones de uso comercial que deben revisarse en el fichero LICENSE antes de produccion.
-- No incluye la cabeza de prediccion multi-token ni la torre de vision del release original, por lo que no puede usarse para tareas multimodales.
-- No se han medido trazas de razonamiento, codigo, tool calls ni benchmarks de tareas; el rendimiento real en esas areas es desconocido.
-- El modo prefetch (por defecto) puede alterar ligeramente la salida si los enrutadores predicen mal; para fidelidad exacta hay que usar `--mode exact`, con posible penalizacion de latencia.
-- En el conjunto de chat el gap de loss sale por debajo del modelo liberado tras cuantizar; el autor no lo explica y no lo interpreta como mejora, lo que anade incertidumbre sobre el comportamiento cualitativo.
-- El rendimiento depende fuertemente del SSD: 1,27 GB de lecturas por token implican que discos lentos degraden drasticamente los tokens/s.
-- En maquinas de 16 GB hay que cerrar otras aplicaciones: macOS empieza a comprimir memoria cuando el resto del sistema demanda mas de lo disponible.
-- Sesgos, idiomas soportados y riesgo de alucinacion: no documentados en la informacion disponible; heredados del modelo base, no evaluados en este reempaquetado.
-- Requiere Apple Silicon; no hay soporte documentado para CUDA ni otras plataformas.
+- Fidelidad de salida reducida: en modo prefetch (por defecto), si los routers lag-4 nombran un experto equivocado, el router original elige entre lo que hay en memoria, alterando ligeramente la salida. El gap de loss es de +0,027/+0,019/-0,008 nats en la configuración de Mac.
+- Calidad no medida en tareas clave: trazas de pensamiento, código, tool calls y benchmarks de tarea no han sido evaluados; no hay garantía de rendimiento en esos dominios.
+- El conjunto de chat sale por debajo del modelo original tras la cuantización (-0,037 nats), algo que el autor declara no explicar y no interpretar como ganancia.
+- Ruido por ventana elevado en chat: mediana +0,016 y desviación estándar 0,133 sobre 128 ventanas, lo que implica variabilidad considerable por ventana.
+- Componentes eliminados: la cabeza de predicción multi-token y la torre de visión del release original no están incluidas, por lo que no hay capacidades multimodales ni de predicción multi-token.
+- Cuantización agresiva: expertos a 4-bit con rounding RMS relativo de 9,2-9,6% por elemento; memoria n-gram a 8-bit.
+- Requisito de hardware específico: diseñado para Apple Silicon con 16 GB o más; no se documenta soporte para GPU NVIDIA ni para otros backends.
+- Consumo de disco elevado: aproximadamente 140 GB libres necesarios, con 123 GiB de descarga.
+- Presión de memoria: en un Mac de 16 GB, el modelo ocupa unos 9 GB y macOS puede empezar a comprimir memoria si el resto del sistema demanda más de lo disponible; se recomienda cerrar otras aplicaciones.
+- Licencia: Qwen Community License 1.0, con posibles restricciones para uso comercial que deben consultarse en el enlace LICENSE del repositorio.
+- Idiomas soportados no documentados: no hay información sobre cobertura multilingüe.
+- Longitud de contexto no disponible: no se especifica la ventana de contexto del modelo base ni de esta conversión.
+- Repositorio de terceros: se trata de una conversión no oficial de un desarrollador independiente, no del equipo de Qwen; la responsabilidad de validación recae en quien la despliega.
+- Riesgo de alucinación: inherente al modelo base; no se han publicado evaluaciones específicas de factualidad en esta conversión.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/jalenluorion/Qwen3.8-Flash-Next-moved-store
+- Hugging Face (esta conversión): https://huggingface.co/jalenluorion/Qwen3.8-Flash-Next-moved-store
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Codigo, runner y demo: https://github.com/jalenluorion/Qwen3.8-Flash-Next-moved-store
-- Conversion equivalente para Qwen3-Next-80B-A3B: https://huggingface.co/jalenluorion/Qwen3-Next-80B-A3B-moved-store
-- Conversion equivalente para Qwen3-Coder-Next: https://huggingface.co/jalenluorion/Qwen3-Coder-Next-moved-store
-- Conversion equivalente para Qwen3-30B-A3B: https://huggingface.co/jalenluorion/Qwen3-30B-A3B-moved-store
+- Repositorio de código, runner y demo: https://github.com/jalenluorion/prefetchable-store (carpeta `reference/flash`)
+- Conversión Qwen3-Next-80B-A3B: https://huggingface.co/jalenluorion/Qwen3-Next-80B-A3B-moved-store
+- Conversión Qwen3-Coder-Next: https://huggingface.co/jalenluorion/Qwen3-Coder-Next-moved-store
+- Conversión Qwen3-30B-A3B: https://huggingface.co/jalenluorion/Qwen3-30B-A3B-moved-store
+- Conversión Qwen3.6-35B-A3B: https://huggingface.co/jalenluorion/Qwen3.6-35B-A3B-prefetchable-store
+- Conversión Inkling 2 Mini: https://huggingface.co/jalenluorion/Inkling-2-Mini-prefetchable-store
+- Licencia: LICENSE en el repositorio de Hugging Face

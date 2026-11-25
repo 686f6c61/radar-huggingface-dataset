@@ -2,78 +2,103 @@
 
 ## Resumen
 
-Eklav-9B-Reranker es un modelo de reranking de pasajes desarrollado por AdarshSingh7647, diseñado para mejorar la relevancia de los resultados en sistemas de recuperación aumentada por generación (RAG). Se basa en el modelo de lenguaje zai-org/GLM-Z1-9B-0414, un LLM de 9.400 millones de parámetros, y se entrena con un método novedoso llamado Eklav, que condiciona el razonamiento del estudiante a trazas parciales del razonamiento del profesor en lugar de imitar la traza completa. Este enfoque reduce los costes de entrenamiento en un 30% y mejora el rendimiento en la tarea de reranking en un 10% respecto a la destilación de cadena de pensamiento (CoT) estándar, según los datos publicados por el autor.
+Eklav-9B-Reranker es un modelo de reordenación (reranking) de pasajes construido a partir de GLM-Z1-9B-0414, un transformer denso de 9.400 millones de parámetros desarrollado originalmente por Zhipu AI (zai-org). El modelo ha sido afinado por AdarshSingh7647 mediante una técnica denominada Eklav, en la que el razonamiento del modelo profesor se inyecta como pista en el prompt y la función de pérdida se calcula únicamente sobre la respuesta final. El resultado es un reranker puntual (pointwise) que emite una cadena de razonamiento y concluye con un token `true` o `false`, cuya probabilidad se interpreta como puntuación de relevancia.
 
-El modelo está pensado para su uso como reranker en pipelines de RAG, donde recibe un conjunto de pasajes recuperados y los reordena según su relevancia para una consulta. Su arquitectura es la de un transformer de lenguaje generativo, con pipeline de text-generation, y se distribuye en formato safetensors con pesos en bf16. Aunque la licencia y los idiomas soportados no están especificados, el modelo base GLM-Z1-9B-0414 es conocido por su soporte multilingüe, por lo que es probable que herede esa capacidad, aunque no se puede confirmar.
+El modelo aborda un problema concreto en pipelines de recuperación de información: los rerankers de tipo cross-encoder clásico no aprovechan el razonamiento explícito, mientras que los rerankers generativos con reasoning sí pueden mejorar el juicio de relevancia en consultas complejas. Eklav-9B-Reranker se posiciona en la estela de Rank1 y está orientado a tareas de passage reranking evaluadas con BRIGHT, un benchmark de recuperación con consultas de razonamiento intensivo.
+
+Su relevancia radica en que, según los datos publicados por el autor, el entrenamiento con Eklav supera al SFT estándar en todos los tamaños comparados, y el modelo de 9B alcanza 33,2 nDCG@10 en BRIGHT, por encima de Qwen3-8B con SFT estándar (31,5) y cerca de Qwen3-14B con Eklav (34,7). La información disponible no detalla la licencia ni los idiomas soportados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (basado en zai-org/GLM-Z1-9B-0414) |
-| Parametros totales | 9.400.279.040 (9,4B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (formato bf16 en safetensors) |
+| Arquitectura | Transformer denso (familia GLM-Z1), con modo de razonamiento |
+| Parametros totales | 9.400.279.040 |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible en la model card; el ejemplo de uso configura `max_model_len=20000` en vLLM |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se documentan GGUF ni AWQ) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (bf16) |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre el checkpoint zai-org/GLM-Z1-9B-0414, un LLM de la familia GLM con arquitectura transformer. No se proporcionan detalles adicionales sobre la arquitectura interna (número de capas, atención, etc.) en la información disponible. El entrenamiento utiliza el método Eklav, una variante de destilación de cadena de pensamiento (CoT) en la que el modelo estudiante recibe una traza de razonamiento parcial del profesor, con la parte que revela la respuesta eliminada, y debe continuar el razonamiento y producir la respuesta por sí mismo. A diferencia de la destilación CoT estándar, que reproduce la traza completa palabra por palabra, Eklav condiciona el razonamiento del estudiante a la traza parcial, lo que reduce los FLOPs de entrenamiento en un 30% y mejora el rendimiento en reranking en un 10% (nDCG@10 en BRIGHT). No se especifican los datos de entrenamiento (número de tokens, composición del dataset) ni si se usaron técnicas adicionales como RLHF o DPO.
+El modelo parte de GLM-Z1-9B-0414, un transformer denso con capacidad de razonamiento explícito (modo thinking) que genera una traza de pensamiento antes de la respuesta. Sobre esta base, el autor aplica un afinado supervisado con la metodología Eklav: durante el entrenamiento, el razonamiento del profesor se proporciona como pista dentro del prompt, pero la pérdida se aplica exclusivamente sobre la respuesta final (`true` o `false`). Esto separa la señal de supervisión del formato del razonamiento y evita que el modelo memorice trazas del profesor como objetivo directo.
+
+El modelo se usa como reranker puntual al estilo de Rank1: se construye un prompt con instrucción de sistema, consulta y pasaje, se habilita el modo thinking mediante `enable_thinking=True` en la plantilla de chat, y se calcula la probabilidad normalizada del token `true` frente a `false` en el último paso de logprobs. La información disponible no especifica el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO. El autor publica una variante con SFT estándar (Std-SFT-Passage-9B) para comparación directa.
 
 ## Capacidades
 
-- Reranking de pasajes: el modelo está específicamente entrenado para reordenar documentos o pasajes según su relevancia para una consulta, tarea clave en sistemas RAG.
-- Generación de texto: al ser un LLM generativo, puede producir texto, aunque su uso principal es el reranking.
-- Razonamiento: gracias al entrenamiento con destilación de CoT, el modelo puede generar cadenas de razonamiento, lo que contribuye a una mejor comprensión de la relevancia.
-- Multilingüismo: no confirmado, pero probablemente heredado del modelo base GLM-Z1-9B-0414, que soporta múltiples idiomas.
-- No se mencionan capacidades de tool calling, agentes, visión ni audio en la información disponible.
+- Reordenación de pasajes (passage reranking) en modo puntual, con puntuación derivada de la probabilidad del token `true` en la conclusión del razonamiento.
+- Razonamiento explícito previo a la decisión, habilitado mediante el modo thinking de la plantilla de chat.
+- Generación de texto y conversación multi-turno, heredadas de la base GLM-Z1-9B.
+- Juicio de relevancia consulta-pasaje con consultas de razonamiento intensivo, evaluado en BRIGHT.
+- Integración con vLLM para inferencia de alto rendimiento y acceso a logprobs por token.
+- Compatibilidad con endpoints (tag `endpoints_compatible` en Hugging Face).
+- Soporte de tool calling y function calling: no documentado en la información disponible.
+- Capacidades multilingües: no documentadas en la información disponible.
+- Visión y audio: no disponibles.
 
 ## Casos de uso
 
-- Mejora de resultados en sistemas RAG: el modelo puede integrarse como reranker entre el recuperador y el generador, reordenando los pasajes recuperados para que el LLM final reciba los más relevantes. Su rendimiento en BRIGHT (nDCG@10 de 33,2) lo hace adecuado para dominios variados.
-- Búsqueda semántica en entornos empresariales: en motores de búsqueda internos, puede filtrar y reordenar documentos de una base de conocimiento, mejorando la precisión de las respuestas a consultas de empleados.
-- Asistencia a la investigación académica: para recuperar artículos o pasajes relevantes en dominios científicos, el modelo puede priorizar los documentos más pertinentes antes de que un LLM genere resúmenes o respuestas.
-- Optimización de chatbots de atención al cliente: al integrarse en un pipeline de RAG, ayuda a seleccionar las respuestas más adecuadas de una base de FAQs o manuales, reduciendo la probabilidad de respuestas incorrectas.
-- Filtrado de documentos en pipelines de generación aumentada: en aplicaciones que procesan grandes volúmenes de texto (informes legales, noticias, etc.), el reranker puede descartar pasajes irrelevantes y reducir la carga computacional del generador.
-- Mejora de motores de recomendación: en sistemas que sugieren contenido basado en consultas de usuario, el modelo puede reordenar candidatos según su relevancia semántica, mejorando la calidad de las recomendaciones.
+- Reordenación en pipelines RAG: tras una primera fase de recuperación densa o híbrida, el modelo reordena los candidatos calculando la probabilidad de `true` para cada par consulta-pasaje y se seleccionan los mejores para el contexto del generador. Es adecuado porque su salida calibrada permite umbralizar y ordenar sin entrenamiento adicional.
+- Búsqueda empresarial sobre documentación interna: consultas formuladas de forma indirecta o con jerga se benefician del razonamiento previo del modelo, que puede relacionar conceptos no coincidentes léxicamente antes de emitir el juicio de relevancia.
+- Preguntas de dominio científico o técnico: BRIGHT está diseñado con consultas que requieren razonamiento; el modelo es apropiado para recuperación en dominios donde la coincidencia superficial de términos es insuficiente.
+- Filtrado de candidatos en pipelines de alta precisión: el reranker puede aplicarse a los 50-100 mejores resultados de un retriever para reducir falsos positivos antes de la generación, con coste controlado al ejecutarse en vLLM con temperatura 0.
+- Evaluación y anotación de datasets de recuperación: la puntuación continua derivada de la probabilidad de `true` permite generar etiquetas de relevancia graduadas para construir o validar conjuntos de evaluación.
+- Sistemas de respuesta sobre base documental legal o normativa: la traza de razonamiento permite auditar por qué un pasaje se consideró relevante, lo que facilita la revisión humana en entornos con requisitos de explicabilidad.
+- Enrutamiento de consultas a fuentes: comparar la puntuación máxima de cada fuente candidata permite decidir qué colección consultar primero en arquitecturas de recuperación federada.
 
 ## Benchmarks y rendimiento
 
-El autor reporta un único resultado de benchmark: nDCG@10 en BRIGHT, con un promedio de 33,2 sobre 12 dominios. También indica una mejora del 10% respecto a la destilación CoT estándar con el mismo modelo base y datos, y una reducción del 30% en FLOPs de entrenamiento. No se han publicado resultados en otros benchmarks como MMLU, HumanEval o GSM8K.
+Datos publicados en la model card (BRIGHT nDCG@10):
 
-| Benchmark | Resultado |
-|---|---|
-| BRIGHT (nDCG@10, promedio 12 dominios) | 33,2 |
-| Mejora vs. CoT SFT estándar | +10% |
-| Reducción de FLOPs de entrenamiento | -30% |
+| Modelo | Std-SFT | Eklav |
+|---|---|---|
+| Qwen3-4B | 29,3 | 31,5 |
+| Qwen3-8B | 31,5 | 34,2 |
+| GLM-Z1-9B (este modelo) | 30,1 | 33,2 |
+| Qwen3-14B | 32,5 | 34,7 |
+
+No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de propósito general para este modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada: con 9,4B parámetros en bf16, los pesos ocupan aproximadamente 18,8 GB. Para inferencia sin cuantización se necesitan al menos 20-24 GB de VRAM, dependiendo del overhead de activaciones y caché.
-- GPU recomendadas: una GPU con 24 GB de VRAM (por ejemplo, RTX 3090, RTX 4090, A10G) es suficiente para inferencia en bf16. Para cuantización en 8 bits (~9,4 GB) o 4 bits (~4,7 GB), podría caber en GPUs de 12 GB o 8 GB, pero no se han publicado versiones cuantizadas.
-- Compatibilidad con GPU de consumo: sí, una RTX 4090 (24 GB) puede ejecutar el modelo en bf16 sin problemas. Con cuantización, incluso una RTX 3060 (12 GB) podría ser viable, aunque no hay confirmación oficial.
-- Opciones de despliegue: al ser un modelo transformers estándar, se puede servir con vLLM, TGI, llama.cpp (si se convierte a GGUF) u Ollama (si se crea un Modelfile). No se han publicado integraciones específicas.
-- Latencia y throughput: no se proporcionan datos. En una GPU de 24 GB, se espera una latencia de decodificación de unos 20-40 ms por token para generación, pero para reranking (que suele ser de una sola pasada) el tiempo dependerá del número de pasajes y la longitud de la consulta.
+- VRAM estimada para inferencia en BF16/FP16: aproximadamente 19 GB solo para pesos (9,4B × 2 bytes), más caché KV; en la práctica se recomienda un mínimo de 24 GB para contextos cortos y 40-48 GB para contextos de hasta 20.000 tokens.
+- VRAM estimada en cuantización de 8 bits: alrededor de 10-12 GB para pesos, con margen adicional para caché KV.
+- VRAM estimada en cuantización de 4 bits: alrededor de 6-7 GB para pesos; no se documentan pesos GGUF oficiales, por lo que habría que generarlos.
+- GPU recomendadas: A100 40/80 GB, H100 80 GB o L40S para producción con vLLM; RTX 4090 (24 GB) es viable en BF16 con contextos moderados o en 8 bits con contextos amplios.
+- GPU de consumo: cabe en RTX 4090 y, en cuantización de 4-8 bits, en GPUs de 12-16 GB como RTX 4070 Ti Super o RTX 4080, con limitaciones de longitud de contexto.
+- Opciones de despliegue: vLLM es la vía documentada por el autor (con `logprobs=20` y `max_model_len=20000`); transformers es compatible por la librería declarada. llama.cpp, Ollama y TGI no están documentados en la información disponible.
+- Latencia y throughput: no disponibles. El modo thinking implica generar hasta 4096 tokens por par consulta-pasaje, lo que incrementa notablemente el coste frente a un cross-encoder clásico.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre otros rerankers comparables en la documentación proporcionada. El modelo base GLM-Z1-9B-0414 es un LLM generalista, no un reranker, por lo que no es directamente comparable. Se recomienda evaluar Eklav-9B-Reranker frente a alternativas como BGE-Reranker-v2-m3, Cohere Rerank o Jina Reranker, pero no se han publicado comparativas en la información disponible.
+| Modelo | Parámetros | Contexto | BRIGHT nDCG@10 (Eklav) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Eklav-9B-Reranker | 9,4B | no disponible (ejemplo con 20.000) | 33,2 | no disponible | Hugging Face |
+| Std-SFT-Passage-9B | 9,4B | no disponible | 30,1 (Std-SFT) | no disponible | Hugging Face |
+| Qwen3-8B (Eklav) | 8B | no disponible | 34,2 | no disponible en la información | Hugging Face |
+| Qwen3-14B (Eklav) | 14B | no disponible | 34,7 | no disponible en la información | Hugging Face |
+| Rank1-7B | 7B | no disponible | no disponible | no disponible | Hugging Face (jhu-clsp) |
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: no se puede confirmar si el modelo es de uso libre para aplicaciones comerciales. Se debe contactar al autor o revisar el repositorio del modelo base para aclarar los términos.
-- Sesgos y alucinaciones: al ser un LLM, puede generar contenido sesgado o inventado, especialmente si se usa para generación de texto en lugar de solo reranking. No se han documentado sesgos específicos.
-- Contexto limitado: no se conoce la longitud máxima de contexto, lo que puede afectar a la capacidad de procesar consultas o pasajes muy largos.
-- Poca adopción: con solo 31 descargas y 0 likes, el modelo no ha sido ampliamente validado por la comunidad. Se recomienda realizar pruebas exhaustivas antes de usarlo en producción.
-- Dependencia del modelo base: el rendimiento y las capacidades dependen del checkpoint GLM-Z1-9B-0414, que puede tener sus propias limitaciones (por ejemplo, en idiomas de bajos recursos).
+- La licencia no está declarada en la información disponible; antes de uso comercial debe verificarse la licencia del modelo base GLM-Z1-9B-0414 y la del propio repositorio.
+- No se documentan los idiomas soportados; el rendimiento fuera del inglés es incierto.
+- El modo thinking genera hasta 4096 tokens por par consulta-pasaje, lo que eleva la latencia y el coste por consulta en comparación con rerankers cross-encoder convencionales.
+- La puntuación depende de la extracción correcta del token `true`/`false` en los logprobs; el propio autor advierte de un posible desfase de un token por la coincidencia de cadenas de parada en vLLM, y el código de ejemplo escanea desde el final para mitigarlo. Una implementación incorrecta devuelve 0,5 por defecto.
+- Riesgo de alucinación en la traza de razonamiento: el modelo puede justificar una decisión con argumentos incorrectos aunque la etiqueta final sea adecuada, por lo que la traza no debe tratarse como explicación fiable sin verificación.
+- Sesgos: no documentados en la información disponible; al derivar de GLM-Z1-9B hereda los sesgos de su corpus de entrenamiento, no especificado.
+- El modelo está entrenado para una tarea concreta (relevancia consulta-pasaje); su uso como generador de propósito general no está validado y puede degradarse respecto a la base original.
+- Solo 301 descargas y 0 likes en el momento de la consulta: ecosistema pequeño, poca validación independiente y riesgo de que el repositorio no reciba mantenimiento.
+- No se publican resultados de benchmarks de propósito general ni evaluaciones multilingües.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/AdarshSingh7647/Eklav-9B-Reranker
-- Modelo base: https://huggingface.co/zai-org/GLM-Z1-9B-0414
-- Repositorio del autor (forge-CoTCond): https://huggingface.co/AdarshSingh7647/forge-CoTCond
-- Referencia general sobre rerankers: https://machinelearningmastery.com/top-5-reranking-models-to-improve-rag-results/
-- Referencia general sobre rerankers: https://www.analyticsvidhya.com/blog/2025/06/top-rerankers-for-rag/
+- Modelo en Hugging Face: https://huggingface.co/AdarshSingh7647/Eklav-9B-Reranker
+- Variante Std-SFT: https://huggingface.co/AdarshSingh7647/Std-SFT-Passage-9B
+- Código de Eklavya: https://github.com/AdarshSingh7647/Eklavya
+- Modelo base GLM-Z1-9B-0414: https://huggingface.co/zai-org/GLM-Z1-9B-0414
+- Rank1 (referencia de diseño): https://huggingface.co/jhu-clsp/rank1-7b
+- Perfil del autor: https://huggingface.co/AdarshSingh7647

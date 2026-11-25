@@ -55,6 +55,25 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "Banknote classification",
+      "dataset": "Cédulas do Real (Kaggle), held-out half of the authors' test split",
+      "metric": "Accuracy (129/135)",
+      "value": 0.956
+    },
+    {
+      "task": "Banknote classification",
+      "dataset": "Cédulas do Real (Kaggle), authors' extra test set",
+      "metric": "Accuracy (62/66)",
+      "value": 0.939
+    },
+    {
+      "task": "Banknote classification",
+      "dataset": "NotavelAI phone photos (held-out scenes)",
+      "metric": "Accuracy (19/24)",
+      "value": 0.792
+    }
+  ],
   "sources": []
 }

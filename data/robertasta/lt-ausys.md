@@ -2,98 +2,109 @@
 
 ## Resumen
 
-lt-ausys es un modelo de reconocimiento automático del habla (ASR) para lituano, publicado por RobertasTa como una exportación a ONNX y cuantización int8 del modelo `kristijonas/kmynas-parakeet-lt-v4`. No se trata de un modelo nuevo: el trabajo lingüístico corresponde a Kristijonas Jakubsonas, que ajustó finamente el `nvidia/parakeet-tdt-0.6b-v3` sobre el corpus LIEPA-3 (3.087 horas de la Universidad de Vilna). La aportación de este repositorio es exclusivamente de ingeniería de despliegue: elimina la dependencia de NeMo y PyTorch para que el modelo pueda ejecutarse en CPU con onnxruntime y numpy.
+lt-ausys es un modelo de reconocimiento automatico del habla (ASR) para lituano, publicado por RobertasTa en Hugging Face. No es un modelo entrenado desde cero: es una exportacion a ONNX y cuantizacion int8 de `datolabs/upelis-0.6b-lt-v1`, un fine-tuning sobre el Nemotron unified ASR 0.6B de NVIDIA, que a su vez es un transductor RNN-T con encoder FastConformer. El objetivo es ejecutar ASR lituano en CPU sin PyTorch ni NeMo, con un consumo de memoria de aproximadamente 1,4 GB en int8.
 
-La arquitectura subyacente es un transductor Conformer-TDT (Token-and-Duration Transducer) de aproximadamente 0,6 mil millones de parámetros, con 128 características mel y factor de subsampling 8. Frente a la familia Whisper, que impone una ventana fija de 30 segundos por cada inferencia, un transductor solo procesa el audio que recibe: según el autor, un comando de 2 segundos tarda 0,2 s en un Ryzen 7 8845HS con este modelo, frente a 3,5 s con Whisper large-v3-turbo int8.
+La motivacion declarada por el autor es practica: los modelos de la familia Whisper pagan un coste fijo de ventana de 30 segundos por cada utterance, lo que en una CPU Ryzen 7 8845HS supone 3,5 s para un comando de 2 s con Whisper large-v3-turbo int8. Un transductor solo procesa el audio que recibe, y este modelo resuelve el mismo comando en 0,18 s en el mismo hardware. El caso de uso principal es un asistente de voz domestico integrado en Home Assistant mediante el protocolo Wyoming.
 
-El modelo está pensado para asistentes de voz domésticos, en particular Home Assistant mediante el protocolo Wyoming, y para cualquier cliente que necesite transcripción offline de lituano en hardware modesto. La versión publicada (v0) es solo la conversión; el autor anuncia una v1 ajustada con comandos de voz domésticos.
+El repositorio incluye los pesos en ONNX (fp32 e int8), el vocabulario SentencePiece de 4 095 tokens, la configuracion y la licencia. El modelo base incorpora el prompt de idioma lituano directamente en el encoder exportado, de modo que no es necesario pasarlo en tiempo de inferencia. El tamano del repositorio es de 6,6 GB, aunque la descarga en int8 es de aproximadamente 0,7 GB.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | NeMo Conformer-TDT (transductor Token-and-Duration), 128 features mel, subsampling 8 |
-| Parametros totales | aproximadamente 0,6 mil millones (modelo base parakeet-tdt-0.6b-v3) |
+| Arquitectura | Transductor RNN-T con encoder FastConformer (Nemotron unified ASR) |
+| Parametros totales | 0,6B (modelo base upelis-0.6b-lt-v1) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (modelo ASR por utterance, sin ventana fija de 30 s) |
-| Tipos de cuantizacion | fp32 e int8 (cuantización dinámica QInt8 per-channel solo sobre MatMul) |
+| Longitud de contexto | no disponible (modelo de audio; ventana no fija de 30 s como Whisper) |
+| Tipos de cuantizacion | fp32 e int8 (cuantizacion dinamica de MatMul en el encoder) |
 | Idiomas soportados | lituano (lt) |
-| Licencia | CC BY 4.0 |
-| Formato de pesos | ONNX (encoder-model.onnx + encoder-model.onnx.data, decoder_joint-model.onnx, variantes .int8.onnx) |
+| Licencia | OpenMDW-1.1 (license: other, license_name: openmdw-1.1) |
+| Formato de pesos | ONNX (`encoder-model.onnx`, `decoder_joint-model.onnx`, variantes `.int8.onnx`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transductor Conformer-TDT. El encoder es un Conformer con atención y convoluciones, exportado en fp32 con los pesos en un fichero externo `.onnx.data` de 2,44 GB; el decoder joint combina la red de predicción y el joint en un único ONNX de 73 MB. La decodificación TDT predice conjuntamente tokens y duraciones, lo que permite emitir varios tokens por paso y procesar únicamente el audio recibido, sin relleno a ventanas fijas.
+El modelo es un transductor RNN-T (Recurrent Neural Network Transducer) con encoder FastConformer. La entrada son 128 features mel con subsampling 8. El decoder_joint combina la red de prediccion y el joint en un unico grafo ONNX. El vocabulario es SentencePiece con 4 095 tokens mas el token `<blk>`, lo que da 4 096 lineas en `vocab.txt`. El modelo base es un modelo multilingue con prompt de idioma: NeMo introduce el one-hot de idioma (lituano = indice 31) mediante `prompt_kernel` despues del encoder, dentro de `model.forward`. La exportacion de este repositorio usa una subclase del encoder que incorpora ese prompt, de modo que el ONNX resultante ya lleva el idioma lituano integrado y no requiere pasarlo en inferencia.
 
-El entrenamiento original lo realizó Kristijonas Jakubsonas: ajuste fino de `nvidia/parakeet-tdt-0.6b-v3` sobre LIEPA-3 (3.087 horas, Universidad de Vilna), publicado bajo CC BY 4.0. Este repositorio no reentrena nada: exporta el checkpoint `.nemo` con NeMo 3.0.0 en CPU, opset 17, usando el exportador TorchScript legacy (`dynamo=False`), y aplica `onnxruntime.quantization.quantize_dynamic` con `weight_type=QInt8`, `per_channel=True` y `op_types_to_quantize=["MatMul"]`. El decoder se deja en fp32 deliberadamente: cuantizarlo cuesta un comando adicional en el banco de pruebas a cambio de ahorrar solo 54 MB. El vocabulario contiene 8.196 tokens SentencePiece más `<blk>`.
+El entrenamiento original corresponde a Datolabs, que hizo fine-tuning de `nvidia/nemotron-labs-unified-asr-0.6b` sobre el corpus LIEPA-3 (Universidad Vytautas Magnus, Universidad de Vilnius, Instituto de la Lengua Lituana; CC BY 4.0) y Mozilla Common Voice 22.0 (CC0). Este repositorio no entrena: convierte el checkpoint `.nemo` original (2 507 796 480 bytes, SHA-256 `cfd2d9f1a10c2c764a932a2802c6b981ae7567b8a624f637a5cbb55e7258c0ef`) a ONNX y aplica cuantizacion dinamica int8 solo sobre las operaciones MatMul del encoder. El decoder_joint en int8 es en realidad el mismo fichero fp32 renombrado con el nombre que onnx-asr espera para `quantization="int8"`. La inferencia se realiza con onnx-asr, onnxruntime y numpy, sin dependencia de PyTorch ni NeMo.
 
 ## Capacidades
 
-- Transcripción de voz a texto en lituano con puntuación, mayúsculas y números escritos como palabras.
-- Reconocimiento de comandos de voz cortos con latencia baja, adecuado para asistentes domésticos.
-- Entrada de audio de 16 kHz mono 16 bits en WAV o arrays numpy float32 con sample rate explícito.
-- Ejecución en CPU sin PyTorch ni NeMo, mediante onnx-asr y onnxruntime.
-- Integración con Home Assistant a través de un servidor Wyoming incluido en el repositorio complementario.
-- Funcionamiento completamente offline.
-- No soporta tool calling, agentes, visión, audio de salida ni modos de razonamiento: es exclusivamente ASR.
+- Reconocimiento de voz en lituano con salida puntuada y con mayusculas.
+- Escritura de numeros a partir de 10 en cifras (por ejemplo, "Įjunk šviesą svetainėje 20 procentų.").
+- Procesamiento de audio de duracion variable sin coste fijo de ventana: solo procesa el audio recibido.
+- Entrada de fichero WAV de 16 kHz mono 16-bit o array numpy float32 con `sample_rate`.
+- Ejecucion en CPU sin PyTorch ni NeMo, con onnxruntime.
+- Integracion con Home Assistant y cualquier cliente Wyoming mediante el servidor companero del autor.
+- No soporta tool calling, agentes, vision, audio de entrada mas alla de ASR ni modo thinking: es exclusivamente un modelo ASR.
 
 ## Casos de uso
 
-- Asistente de voz doméstico en Home Assistant: el servidor Wyoming del repositorio complementario sirve este modelo a la integración Wyoming de Home Assistant de forma local, con 1,6 GB de RAM en int8, lo que permite desplegarlo en un LXC o mini-PC sin GPU.
-- Comandos de voz de baja latencia: al no pagar la ventana fija de 30 segundos de Whisper, un comando de 2 segundos se resuelve en torno a 0,2 s en un Ryzen 7 8845HS, lo que hace viable la interacción conversacional por voz.
-- Transcripción offline de reuniones o notas de voz en lituano: el modelo procesa utterances completas y devuelve texto puntuado y con mayúsculas, sin enviar audio a servicios externos.
-- Subtitulado y transcripción por lotes en servidores sin GPU: con onnxruntime en CPU y 4 hilos se obtiene un throughput suficiente para procesar archivos de audio en pipelines nocturnos.
-- Automatización de accesibilidad: dictado y control por voz de aplicaciones en lituano para usuarios con movilidad reducida, ejecutándose en hardware de bajo coste.
-- Investigación en ASR de bajos recursos: sirve como referencia reproducible de exportación ONNX y cuantización selectiva de un transductor Conformer para lenguas bálticas.
+- Asistente de voz domestico en Home Assistant: el modelo se sirve mediante el servidor Wyoming de `RobertasTa/lt-ausys` y responde a comandos cortos en lituano con latencia de 0,18 s en CPU Ryzen 7 8845HS, lo que permite interaccion conversacional fluida sin GPU.
+- Comandos de voz offline en dispositivos de bajos recursos: al requerir aproximadamente 1,4 GB de RAM en int8 y no depender de PyTorch, se puede desplegar en mini-PC, LXC o contenedores sin acelerador.
+- Transcripcion de notas de voz cortas: util para capturar ordenes, recordatorios o busquedas dictadas donde la puntuacion completa no es critica.
+- Automatizacion de hogar por voz: integracion con el pipeline de intents de Home Assistant para encender luces, ajustar porcentajes o consultar estados.
+- Prototipado de ASR lituano en CPU: sirve como referencia para evaluar el rendimiento de un transductor frente a Whisper en tareas de audio corto.
+- Transcripcion de audio en entornos sin conexion: al ejecutarse completamente offline con onnxruntime, es adecuado para escenarios con requisitos de privacidad o sin red.
+- No es adecuado para dictado de texto largo: el propio autor recomienda la revision `v1-kmynas` (kmynas-parakeet-lt-v4) para dictado por su mejor segmentacion de frases y comas.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor (no verificados) sobre FLEURS lituano, split test:
+Datos declarados por el autor en la model card (no verificados):
 
-| Modelo | Dataset | WER | CER |
+| Benchmark | Dataset | Metrica | Valor |
 |---|---|---|---|
-| lt-ausys | FLEURS (Lithuanian), lt_lt, test | 10,58 | 6,15 |
+| ASR lituano | FLEURS (Lithuanian), `lt_lt`, split test | WER | 8,32 |
+| ASR lituano | FLEURS (Lithuanian), `lt_lt`, split test | CER | 4,26 |
 
-El autor menciona además mediciones propias en un banco de 127 comandos de voz domésticos (un hablante, altavoz de conferencia) y comparaciones de latencia y RTF frente a Paprika (Whisper large-v3-turbo int8) y faster-whisper-tiny int8 en un Ryzen 7 8845HS con 4 hilos, pero los valores completos de esas tablas no están incluidos en la información disponible. El único dato de exactitud en comandos que se cita explícitamente es 101/119 aciertos para la variante int8 con cuantización solo de MatMul.
+Metricas adicionales reportadas por el autor sobre el mismo conjunto FLEURS (986 frases):
+
+| Metrica | lt-ausys (Upelis) | kmynas (v1-kmynas) |
+|---|---|---|
+| Frases que terminan en punto | 82 de 986 | no disponible |
+| Deteccion de limites de frase en ~45 s de habla continua | 2,8 % | 84,7 % |
+| Comma F1 | 58,0 % | 82,6 % |
+
+Latencia medida en CPU Ryzen 7 8845HS: 0,18 s para un comando de 2 s con int8, frente a 3,5 s con Whisper large-v3-turbo int8 (Paprika).
 
 ## Requisitos de hardware
 
-- RAM estimada: 1,6 GB con int8; 5,8 GB con el checkpoint original `.nemo` en NeMo/PyTorch.
-- Tamaño en disco: 882 MB para `encoder-model.int8.onnx` y 73 MB para el decoder int8; 2,44 GB + 42 MB + 73 MB en fp32.
-- CPU: el autor reporta 0,2 s por comando de 2 segundos en un AMD Ryzen 7 8845HS con 4 hilos y decodificación greedy.
-- GPU: no es necesaria; el modelo está optimizado para CPU. No se han publicado requisitos ni rendimientos en GPU.
-- Cabe en cualquier equipo consumer con al menos 2 GB de RAM libre en int8, incluidos mini-PC y contenedores LXC.
-- Despliegue: onnx-asr con onnxruntime (`pip install "onnx-asr[cpu,hub]"`), servidor Wyoming propio del autor para Home Assistant. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
-- Latencia: 0,2 s por comando de 2 s en la máquina de referencia; el resto de cifras de RTF no están disponibles en la información proporcionada.
+- VRAM: no aplica; el modelo esta pensado para CPU.
+- RAM estimada: aproximadamente 1,4 GB en int8; 5,8 GB para el checkpoint `.nemo` original con NeMo y PyTorch.
+- GPU: no requiere GPU. No se han publicado mediciones en GPU para esta exportacion.
+- CPU: validado en Ryzen 7 8845HS. Cabe en cualquier CPU x86-64 moderna con al menos 2 GB de RAM libre en int8.
+- Despliegue: onnx-asr + onnxruntime + numpy. Compatible con el servidor Wyoming companero (`lt_ausys_server.py`, unidad systemd, pasos de instalacion en LXC).
+- Descarga: aproximadamente 0,7 GB en int8; 2,5 GB en fp32.
+- Latencia: 0,18 s por comando de 2 s en int8 sobre Ryzen 7 8845HS. Throughput no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / ventana | WER FLEURS lt | Licencia | Despliegue |
-|---|---|---|---|---|---|
-| lt-ausys | ~0,6 B | por utterance (sin ventana fija) | 10,58 | CC BY 4.0 | ONNX CPU (onnxruntime) |
-| kristijonas/kmynas-parakeet-lt-v4 | ~0,6 B | por utterance | no disponible en esta ficha | CC BY 4.0 | NeMo + PyTorch (5,8 GB RAM) |
-| kristijonas/paprika-whisper-lt-v3 (Whisper large-v3-turbo int8) | no disponible | ventana fija de 30 s | no disponible en esta ficha | no disponible | CTranslate2 / faster-whisper |
-| faster-whisper-tiny int8 | no disponible | ventana fija de 30 s | no disponible en esta ficha | no disponible | CTranslate2 |
-
-La comparación cualitativa que aporta el autor es de latencia: 0,2 s frente a 3,5 s para un comando de 2 s en el mismo CPU, con mayor exactitud en comandos para lt-ausys según sus mediciones.
+| Modelo | Arquitectura | Parametros | Idiomas | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| lt-ausys (este) | RNN-T FastConformer | 0,6B | lt | OpenMDW-1.1 | ONNX (fp32/int8) | Optimizado para CPU y Home Assistant; peor puntuacion en dictado |
+| kmynas-parakeet-lt-v4 (v1-kmynas) | Parakeet-TDT | no disponible | lt | CC BY 4.0 | ONNX | Mejor segmentacion de frases y comas; recomendado para dictado |
+| Paprika (Whisper large-v3-turbo int8) | Whisper encoder-decoder | large-v3-turbo | multilingue (incl. lt) | no disponible en la informacion | no disponible | Coste fijo de ventana de 30 s; 3,5 s por comando de 2 s en el mismo CPU |
+| upelis-0.6b-lt-v1 | RNN-T FastConformer | 0,6B | lt | OpenMDW-1.1 | `.nemo` (NeMo) | Modelo original; requiere NeMo 3.1, PyTorch y 5,8 GB de RAM |
 
 ## Limitaciones y advertencias
 
-- Solo reconoce lituano; no es multilingüe.
-- Es una conversión, no un modelo nuevo: cualquier sesgo o error del checkpoint original `kmynas-parakeet-lt-v4` se hereda íntegramente.
-- Los resultados de FLEURS están marcados como no verificados en el model-index.
-- La cuantización int8 se aplicó solo a MatMul; otras recetas redujeron la exactitud en el banco de comandos del autor (de 101 a 96 aciertos de 119) y aumentaron la latencia entre 2 y 4 veces.
-- El fichero `decoder_joint-model.int8.onnx` contiene en realidad el decoder fp32; es una convención de nombres de onnx-asr, no una cuantización real.
-- Riesgo de alucinación inherente a los modelos ASR, especialmente con audio ruidoso, acentos no vistos o solapamiento de hablantes; el banco de comandos del autor usa un solo hablante y un altavoz de conferencia.
-- La licencia CC BY 4.0 permite uso comercial con atribución; es necesario citar a Kristijonas Jakubsonas, NVIDIA y LIEPA-3 según corresponda.
-- La v0 no está ajustada específicamente a comandos domésticos; el autor anuncia una v1 para ese fin.
-- No hay datos publicados sobre rendimiento en GPU ni sobre throughput en lote.
+- Puntuacion deficiente: solo 82 de 986 frases de FLEURS terminan en punto, y en habla continua detecta el 2,8 % de los limites de frase y aproximadamente la mitad de las comas (comma F1 58,0 %). No es adecuado para dictado de texto legible.
+- El modelo base tiene el mismo comportamiento de puntuacion; no es un defecto introducido por la cuantizacion.
+- Solo soporta lituano. No hay capacidades multilingues en esta exportacion.
+- Riesgo de alucinacion y errores de transcripcion inherente a los modelos ASR; el WER de 8,32 en FLEURS es un dato declarado por el autor y no verificado de forma independiente.
+- Sesgos: no se documentan sesgos especificos en la informacion disponible; al entrenarse con LIEPA-3 y Common Voice, puede reflejar los sesgos de esos corpus.
+- Licencia OpenMDW-1.1: es necesario conservar `LICENSE` y `NOTICE` si se redistribuye. Verificar los terminos para uso comercial en el fichero de licencia.
+- El decoder_joint en int8 es en realidad el fichero fp32 renombrado; no esta cuantizado.
+- Cargar por nombre de tipo requiere `"nemo-conformer-rnnt"`; con `"nemo-conformer-tdt"` (valido para la revision antigua `v1-kmynas`) el modelo no carga.
+- La model card indica que la conversion, el servidor y la propia card fueron escritos con asistencia de IA (Claude, Anthropic) y medidos en hardware real.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/RobertasTa/lt-ausys
-- Modelo original: https://huggingface.co/kristijonas/kmynas-parakeet-lt-v4
-- Modelo base de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
+- Modelo base (Datolabs): https://huggingface.co/datolabs/upelis-0.6b-lt-v1
+- Modelo original de NVIDIA: https://huggingface.co/nvidia/nemotron-labs-unified-asr-0.6b
 - Repositorio del servidor Wyoming: https://github.com/RobertasTa/lt-ausys
 - onnx-asr: https://github.com/istupakov/onnx-asr
-- Paprika (Whisper large-v3-turbo lituano): https://huggingface.co/kristijonas/paprika-whisper-lt-v3
+- Aplicacion de dictado Diktuokle: https://github.com/RobertasTa/diktuokle
+- Revision anterior (kmynas-parakeet-lt-v4 en ONNX): https://huggingface.co/RobertasTa/lt-ausys (revision `v1-kmynas`)
+- Modelo kmynas-parakeet-lt-v4: https://huggingface.co/kristijonas/kmynas-parakeet-lt-v4
+- Modelo Paprika (Whisper lituano): https://huggingface.co/kristijonas/paprika-whisper-lt-v3

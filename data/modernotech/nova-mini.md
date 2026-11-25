@@ -2,88 +2,87 @@
 
 ## Resumen
 
-Nova Mini 1.0 es una distribución con marca propia del modelo Qwen3-0.6B de Alibaba Qwen, publicada por Moderno Tech bajo su familia comercial Nova Edge. No se trata de un entrenamiento nuevo: la propia model card reconoce que los pesos son el artefacto original de Qwen, redistribuido sin cambios en pesos, arquitectura, tokenizador ni parámetros de inferencia. El repositorio empaqueta el fichero `Qwen3-0.6B-Q4_K_M.gguf` bajo el nombre `Nova-Mini-1.0-Q4_K_M.gguf` y añade identidad visual, documentación y estructura de producto.
+Nova Mini es un modelo de lenguaje denso de tipo conversacional desarrollado por Moderno Tech dentro de su familia Nova AI. Con 751.632.384 parámetros (~0,75B), deriva del modelo base Qwen/Qwen3-0.6B mediante un proceso de ajuste del que la model card no ofrece detalles técnicos. Su propuesta es ocupar la categoría intermedia entre los modelos ultracompactos de la familia (Nano) y los de mayor tamaño (Spark), orientándose a asistentes locales ejecutados en el propio dispositivo del usuario.
 
-El modelo base es un transformer denso de aproximadamente 752 millones de parámetros (0,6B en denominación comercial), orientado a generación de texto y conversación en inglés y español. Se distribuye exclusivamente en formato GGUF con cuantización Q4_K_M, lo que lo sitúa en el segmento de inferencia local en hardware modesto: el artefacto publicado ocupa unos 484 MB.
+La filosofía del proyecto es la inferencia local: el usuario descarga los pesos y ejecuta las conversaciones con los recursos de su teléfono, tablet o portátil, sin depender de servidores centralizados. Nova Mini se distribuye principalmente en formato GGUF cuantizado, lo que lo hace apto para motores de inferencia ligeros y despliegue en navegador o escritorio.
 
-Su relevancia es limitada desde el punto de vista técnico, ya que no aporta innovaciones de arquitectura ni pesos nuevos, pero resulta útil como ejemplo de empaquetado de un modelo abierto bajo licencia Apache 2.0 con fines de distribución comercial. Para evaluar capacidades reales conviene remitirse al repositorio original de Qwen3-0.6B.
+Es relevante por su licencia Apache 2.0, que permite uso comercial sin restricciones, y por su soporte declarado de inglés y español. No obstante, la información pública disponible es escasa: no se documentan datos de entrenamiento, número de tokens, proceso de alineación ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (heredada de Qwen/Qwen3-0.6B) |
-| Parametros totales | 751.632.384 (según safetensors del repo base) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible en la información proporcionada |
-| Tipos de cuantizacion | Q4_K_M (única publicada) |
-| Idiomas soportados | Inglés (en), español (es) |
+| Arquitectura | Transformer denso (derivado de Qwen3-0.6B) |
+| Parametros totales | 751.632.384 (~0,75B) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF cuantizado (niveles concretos no disponibles) |
+| Idiomas soportados | en, es |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (`Nova-Mini-1.0-Q4_K_M.gguf`, 484.220.288 bytes) |
+| Formato de pesos | GGUF (repo de 0,5 GB); safetensors para los parámetros declarados |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde íntegramente a Qwen3-0.6B: un transformer denso decoder-only con aproximadamente 752 millones de parámetros. Moderno Tech no documenta ningún proceso de entrenamiento propio; la model card indica explícitamente que "no se afirma aquí que Moderno Tech haya entrenado estos pesos desde cero en esta primera publicación" y que la redistribución se realiza "sin cambiar pesos, arquitectura, tokenizador, prompts o parámetros de inferencia".
+Nova Mini es un transformer denso construido a partir de Qwen/Qwen3-0.6B, según declara el propio autor en los metadatos del repositorio. No se especifica si se aplicó fine-tuning supervisado, DPO, RLHF u otra técnica de alineación, ni se detalla la composición del dataset de ajuste. Tampoco se indica el número de tokens de entrenamiento ni si hubo extensión de contexto respecto al modelo base.
 
-Por tanto, los detalles de datos de entrenamiento, número de tokens, composición del corpus y posibles fases de RLHF o DPO deben consultarse en la documentación oficial de Qwen3-0.6B. La única transformación aplicada es la cuantización a Q4_K_M, con SHA-256 `03a9f2b5eaa26e8a801012cf5c2eb75f2997da0725ce99bc03622d4bae583fdd`, que permite reducir el peso del artefacto a menos de 500 MB a costa de una ligera pérdida de precisión respecto a los pesos originales en BF16.
+La model card se centra en la filosofía de producto (ejecución local, distribución por navegador, selección de modelo según el dispositivo) más que en detalles técnicos de arquitectura. No se documentan innovaciones como decodificación especulativa, atención lineal o modos de razonamiento explícito. La única información estructural fiable es la derivación de Qwen3-0.6B y el recuento real de parámetros en safetensors.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno en inglés y español.
-- Razonamiento básico y respuesta a preguntas de complejidad baja o media, condicionado por el tamaño del modelo (0,6B).
-- Generación de código sencillo y tareas de formateo o transformación de texto.
-- Operaciones aritméticas elementales; las tareas matemáticas complejas quedan fuera del alcance típico de un modelo de este tamaño.
-- Ejecución local en CPU y GPU de gama baja gracias al formato GGUF.
-- Capacidad multilingüe limitada a los dos idiomas declarados (en, es).
-- No se documenta soporte de tool calling, function calling, agentes, modo thinking, visión ni audio en la información disponible.
+- Generación de texto conversacional multi-turno en inglés y español.
+- Razonamiento básico y respuesta a preguntas, limitado por su tamaño de ~0,75B.
+- Ejecución local en dispositivos de consumo mediante cuantización GGUF.
+- Integración prevista en interfaces web con motor de inferencia en navegador.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades de visión o audio: no disponibles.
+- Modo thinking explícito: no disponible.
 
 ## Casos de uso
 
-- Inferencia local en dispositivos con recursos limitados: el artefacto Q4_K_M de 484 MB se puede ejecutar en portátiles sin GPU dedicada mediante llama.cpp u Ollama, lo que lo hace adecuado para prototipos offline y entornos sin conectividad.
-- Asistente conversacional embebido en aplicaciones de escritorio o móviles: su tamaño reducido permite integrarlo en clientes ligeros que necesiten respuestas en inglés o español sin depender de una API externa.
-- Clasificación y etiquetado de texto a pequeña escala: tareas de categorización, extracción de entidades simples o reformateo de documentos donde la latencia y el coste importan más que la precisión máxima.
-- Generación de borradores y autocompletado: útiles en editores de texto o herramientas de productividad que requieran sugerencias rápidas y de bajo coste computacional.
-- Filtrado y preprocesado en pipelines de datos: normalización, resumen de líneas cortas o generación de metadatos antes de pasar el contenido a un modelo mayor.
-- Base para fine-tuning ligero o experimentación educativa: al estar bajo Apache 2.0 y ser un modelo pequeño, sirve como punto de partida para LoRA o para prácticas de despliegue con GGUF.
-- Evaluación de infraestructura de despliegue: útil como modelo de humo (smoke test) para validar pipelines con llama.cpp, Ollama o servidores compatibles con GGUF antes de escalar a modelos mayores.
+- Asistente conversacional de escritorio: el modelo puede ejecutarse localmente en un portátil con recursos moderados, gestionando conversaciones multi-turno sin enviar datos a la nube, lo que encaja con la propuesta de privacidad del proyecto.
+- Chat integrado en navegador: gracias a su formato GGUF y tamaño reducido (~0,5 GB en el repo), puede cargarse en memoria desde una página web y procesar consultas con un motor de inferencia compatible con WebGPU/WASM.
+- Automatizaciones ligeras de texto: generación de respuestas plantilla, resúmenes cortos o reformulación de textos en pipelines locales donde no se justifica una API remota.
+- Asistente en dispositivos móviles y tablets: su tamaño permite considerar su despliegue en hardware con memoria limitada, seleccionándolo como opción intermedia frente a modelos ultracompactos.
+- Prototipado y evaluación de la familia Nova: sirve como banco de pruebas para desarrolladores que quieran integrar la familia Nova AI antes de escalar a modelos mayores.
+- Aplicaciones educativas o de demostración: para enseñar el funcionamiento de la inferencia local sin costes de infraestructura, con la salvedad de sus limitadas capacidades de razonamiento.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card de Nova Mini 1.0 no incluye métricas de MMLU, HumanEval, GSM8K ni comparaciones cuantitativas. Para referencias de rendimiento del modelo subyacente debe consultarse la documentación oficial de Qwen3-0.6B.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,6-1 GB con Q4_K_M, incluyendo overhead de contexto y caché KV.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; tarjetas como GTX 1650, RTX 3050, RTX 4060 o superiores funcionan sin problema. También es viable en Apple Silicon (M1 en adelante) vía Metal.
-- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU dedicada moderna e incluso en iGPU con memoria unificada suficiente.
-- Ejecución en CPU: viable con llama.cpp; se recomienda al menos 4 GB de RAM del sistema para dejar margen al contexto.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores compatibles con GGUF (por ejemplo, llama-cpp-python). vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que requerirían convertir los pesos a safetensors.
-- Latencia y throughput estimados: no disponibles en la información proporcionada; dependerán del hardware y de la longitud de contexto configurada.
+- VRAM estimada para inferencia: no disponible de forma oficial. Por el tamaño (~0,75B parámetros), una cuantización de 4 bits ocuparía del orden de 0,4-0,5 GB, y en fp16 en torno a 1,5 GB, aunque estos cálculos no están confirmados por el autor.
+- GPU recomendadas: no especificadas. Por tamaño, cualquier GPU de consumo moderna (RTX 3060 en adelante) sería sobredimensionada; el modelo está pensado para CPU y aceleración integrada.
+- Cabe en GPU de consumo: previsiblemente sí en la práctica totalidad de GPU consumer actuales, así como en CPU con RAM suficiente.
+- Opciones de despliegue: GGUF es compatible con llama.cpp y derivados (Ollama, LM Studio); el autor menciona motores de inferencia en navegador, sin nombrar uno concreto.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
-|---|---|---|---|---|---|
-| Nova Mini 1.0 | ~752 M | No disponible | GGUF Q4_K_M | Apache 2.0 | Redistribución de Qwen3-0.6B sin cambios |
-| Qwen3-0.6B | ~752 M | No disponible en esta ficha | Safetensors, GGUF | Apache 2.0 | Modelo original; referencia para benchmarks y contexto |
-| Llama 3.2 1B | ~1,2 B | 128K (según documentación de Meta) | Safetensors, GGUF | Llama 3.2 Community License | Algo mayor; licencia con restricciones de uso comercial para grandes entidades |
-| Gemma 2 2B | ~2,6 B | 8K (según documentación de Google) | Safetensors, GGUF | Gemma Terms of Use | Mayor capacidad pero requisitos de hardware superiores |
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Nova Mini | ~0,75B | no disponible | Apache 2.0 | Derivado de Qwen3-0.6B, GGUF, en/es |
+| Qwen3-0.6B | ~0,6B | no disponible en esta ficha | Apache 2.0 | Modelo base del que deriva Nova Mini |
+| Qwen2.5-0.5B | ~0,5B | 32K (según documentación pública de Qwen) | Apache 2.0 | Alternativa ultracompacta de la misma familia |
+| SmolLM2-360M | ~0,36B | 8K (según documentación pública) | Apache 2.0 | Alternativa aún más pequeña para ejecución local |
 
-La comparación directa más relevante es con Qwen3-0.6B, del que Nova Mini 1.0 es una copia funcional. Frente a Llama 3.2 1B y Gemma 2 2B, Nova Mini ofrece menor huella de memoria pero también menor capacidad de razonamiento; su ventaja principal es la licencia Apache 2.0 sin restricciones adicionales.
+No se dispone de datos de rendimiento comparativo para Nova Mini, por lo que la comparación se limita a parámetros, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- No es un modelo entrenado por Moderno Tech: cualquier evaluación de calidad debe atribuirse al modelo base Qwen3-0.6B, no a la marca Nova.
-- Riesgo elevado de alucinación en tareas de conocimiento factual, razonamiento matemático complejo y generación de código no trivial, dado el tamaño de 0,6B.
-- Contexto limitado: no se documenta la longitud de contexto en esta ficha; conviene verificar la del modelo base antes de usarlo en aplicaciones con ventanas largas.
-- Cobertura lingüística restringida a inglés y español; el rendimiento en otros idiomas no está garantizado.
-- Única cuantización publicada (Q4_K_M); no hay variantes Q5, Q8 ni BF16 en este repositorio, lo que limita el ajuste fino entre calidad y tamaño.
-- El repositorio no incluye información sobre sesgos, filtros de seguridad ni evaluaciones de alineación; se heredan las características del modelo base.
-- Licencia Apache 2.0 permite uso comercial, pero se debe mantener la atribución a Qwen y a los términos originales, tal como indica la propia model card.
-- El SHA-256 publicado permite verificar la integridad del artefacto; conviene comprobarlo antes de desplegarlo en producción.
+- Con ~0,75B parámetros, la capacidad de razonamiento, matemáticas y código es intrínsecamente limitada; no es adecuado para tareas complejas de agente o generación de código en producción.
+- Riesgo elevado de alucinación, habitual en modelos de este tamaño.
+- No se documentan datos de entrenamiento ni proceso de alineación, lo que impide evaluar sesgos conocidos.
+- Longitud de contexto no especificada; no debe asumirse una ventana amplia.
+- Soporte multilingüe limitado a inglés y español según los metadatos; el rendimiento real en español no está verificado.
+- La model card incluye advertencias del propio autor sobre no prometer privacidad absoluta, ejecución sin conexión ni compatibilidad universal sin verificar el dispositivo.
+- Licencia Apache 2.0: permite uso comercial, pero al derivar de Qwen3-0.6B conviene revisar los términos del modelo base.
+- Escasa tracción pública (304 descargas, 0 likes en el momento de la consulta) y ausencia de benchmarks: tratar con cautela en entornos de producción.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/ModernoTech/Nova-Mini
+- Hugging Face: https://huggingface.co/ModernoTech/Nova-Mini
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
-- Organización Moderno Tech en Hugging Face: https://huggingface.co/ModernoTech
+- Sitio oficial de Moderno Tech: https://moderno.com.ar

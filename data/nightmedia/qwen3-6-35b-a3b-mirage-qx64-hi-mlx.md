@@ -1,106 +1,102 @@
 # nightmedia/Qwen3.6-35B-A3B-Mirage-qx64-hi-mlx
 
 ## Resumen
+Qwen3.6-35B-A3B-Mirage-qx64-hi-mlx es una fusión (merge) experimental de modelos de la familia Qwen3.6 con arquitectura MoE (Mixture of Experts) de 35.000 millones de parámetros totales y aproximadamente 3.000 millones activos por token. Lo publica el usuario nightmedia en Hugging Face y combina ocho modelos base, entre ellos TerminalHorizon-35B-A3B, Qwen-AgentWorld-35B-A3B, Iris-mini, Thomson-1.0-Small y varios derivados propios de la serie Fable y FSM. El resultado es un modelo afinado para razonamiento con cadena de pensamiento larga (long-CoT), matemáticas, código y conversación multilingüe en inglés, chino, japonés y español.
 
-Qwen3.6-35B-A3B-Mirage-qx64-hi-mlx es una cuantización de 6 bits (etiquetada como qx64-hi) de un merge experimental de modelos de la familia Qwen3.5/3.6, publicado por el usuario nightmedia en Hugging Face. El modelo resultante es un MoE de 35.107.181.936 parámetros totales (etiqueta A3B, es decir, aproximadamente 3.000 millones de parámetros activos por token según la convención de nomenclatura de Qwen) con pipeline declarado image-text-to-text, lo que sugiere capacidades multimodales heredadas del modelo base.
+La variante qx64-hi hace referencia a una cuantización de 6 bits en formato MLX (Deckard qx), pensada para ejecución en Apple Silicon. Según la model card, esta cuantización mantiene una perplejidad de 3,797 ± 0,023 frente a los 3,765 del bf16 original y reduce el pico de memoria de 76,22 GB a 36,91 GB, con un throughput de 1.664 tokens por segundo en el hardware de referencia del autor.
 
-El modelo no es un entrenamiento original: es una fusión (merge con mergekit) de TerminalHorizon-35B-A3B y de Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored, que a su vez integra componentes de Iris-mini, Thomson-1.0-Small, Fable-Holo3.1, FSM, Qwen-AgentWorld-35B-A3B, Nex-N2.5-mini-Uncensored y SuperQwen-AgentWorld-35B-A3B-abliterated. La model card está dominada por contenido narrativo y humorístico (referencias a Star Trek, el Papa Francisco y debates sobre consciencia artificial) más que por documentación técnica convencional, lo que dificulta extraer especificaciones fiables.
-
-Su relevancia es acotada: se trata de un artefacto de investigación y experimentación comunitaria, con 53 descargas y 0 likes en el momento de la consulta, orientado a usuarios de Apple Silicon (etiqueta mlx) que quieran probar un merge multimodal de gran tamaño en formato de 6 bits. No debe considerarse un modelo de producción ni un checkpoint oficial de Qwen.
+Su relevancia actual radica en dos factores: por un lado, demuestra que las fusiones de modelos MoE de gran tamaño pueden preservar casi intactas las capacidades del modelo original tras una cuantización agresiva; por otro, su licencia Apache 2.0 y su soporte para transformers y MLX lo hacen directamente desplegable en entornos de investigación y prototipado sin restricciones comerciales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE tipo transformer (familia Qwen3.5/3.6, tag `qwen3_5_moe`); detalles de capas y atención no disponibles |
+| Arquitectura | Transformer MoE (qwen3_5_moe), multimodal image-text-to-text |
 | Parametros totales | 35.107.181.936 |
-| Parametros activos | ~3B (según la convención A3B del nombre; cifra exacta no disponible) |
+| Parametros activos | Aproximadamente 3.000 millones (A3B, segun nomenclatura) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | qx64-hi (6 bits, formato propietario de la serie qx); la model card compara además con mxfp4, mxfp8, qx86-hi y oQ6e-mtp/oQ3e-mtp |
+| Tipos de cuantizacion | 6 bits (qx64-hi, MLX); el autor publica variantes q8, mxfp8, qx86, q6, oQ8e, oQ6e, oQ4e, mxfp4, oQ3e, oQ2.7e, oQ2.5e y oQ2e |
 | Idiomas soportados | en, zh, ja, es |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (librería transformers; etiqueta mlx en los tags) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (transformers), variantes MLX |
 
 ## Arquitectura y entrenamiento
+El modelo es una fusión realizada con mergekit a partir de ocho modelos base: shunzou05/TerminalHorizon-35B-A3B, AllSpark-Research/Iris-mini, thomsonreuters/Thomson-1.0-Small, nightmedia/Qwen3.6-35B-A3B-Fable-Holo3.1, nightmedia/Qwen3.6-35B-A3B-FSM, Qwen/Qwen-AgentWorld-35B-A3B, orcarouter/Nex-N2.5-mini-Uncensored y Jiunsong/SuperQwen-AgentWorld-35B-A3B-abliterated. La arquitectura subyacente es un transformer con mezcla de expertos (MoE) de la familia qwen3_5_moe, con capacidad multimodal de entrada imagen-texto, tal como indica el pipeline_tag image-text-to-text.
 
-La arquitectura subyacente es un transformer con mezcla de expertos (MoE) de la familia Qwen3.5/3.6, según el tag `qwen3_5_moe` y la nomenclatura A3B (aproximadamente 3B de parámetros activos sobre 35B totales). El pipeline declarado es image-text-to-text, lo que implica que el merge conserva componentes de visión y proyección multimodal, aunque la model card no detalla la torre visual ni la resolución de imagen soportada.
-
-No hay información sobre el entrenamiento original: número de tokens, composición del dataset, fases de SFT, RLHF o DPO. Los tags mencionan distillation, chain-of-thought, long-cot, sft y lora, lo que indica que los modelos participantes se construyeron con destilación y ajuste supervisado sobre trazas de razonamiento, pero no se aportan cifras. El proceso de este checkpoint concreto es una fusión con mergekit de dos merges previos, seguida de una cuantización a 6 bits (qx64-hi) orientada a MLX. La model card menciona una actualización in-place para corregir problemas en tensores de visión (VL), sin especificar la naturaleza del fallo ni si la corrección está validada.
+No se detalla en la información disponible el volumen de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO específicas. Los tags de la model card mencionan destilación, chain-of-thought, long-CoT, SFT y LoRA, lo que sugiere que los modelos base incorporan afinado por instrucciones y destilación de razonamiento. La innovación técnica destacable es la cuantización qx64-hi en formato MLX, que según las métricas del autor conserva la perplejidad prácticamente idéntica al bf16 (3,797 frente a 3,765) con la mitad de memoria pico.
 
 ## Capacidades
-
 - Generación de texto conversacional multi-turno en inglés, chino, japonés y español.
-- Razonamiento con cadena de pensamiento (long-cot), con conmutador de modo thinking mediante los tokens `<|think_on|>` y `<|think_off|>` insertables en el prompt de sistema o de usuario; el template los intercepta y los elimina del contexto.
-- Control adicional del flag `preserve_thinking` mediante `<|think_forget|>` y `<|think_remember|>`.
-- Procesamiento de imagen y texto (pipeline image-text-to-text), aunque sin especificaciones de resolución ni de número de imágenes por prompt.
-- Matemáticas, STEM y código, según los tags del modelo.
-- Soporte de tool calling y function calling: no confirmado explícitamente en la información disponible, aunque los modelos base incluyen AgentWorld, orientado a agentes.
-- Capacidades de agente y razonamiento multi-paso: probable por herencia de Qwen-AgentWorld-35B-A3B, pero no documentado en esta ficha.
-- Modo conversacional con matices de humor y estilo narrativo (tags fable, humour), derivado de los merges Fable-Holo3.1.
+- Razonamiento con cadena de pensamiento larga (long-CoT) y destilación de trazas de razonamiento.
+- Matemáticas y tareas STEM, según los tags math y stem.
+- Generación y comprensión de código, con soporte declarado para HumanEval en las evaluaciones del autor.
+- Capacidad multimodal de entrada imagen-texto (pipeline image-text-to-text).
+- Soporte de tool calling y function calling heredado de los modelos base tipo AgentWorld.
+- Capacidades de agente y razonamiento multi-paso, por herencia de Qwen-AgentWorld-35B-A3B.
+- Modo experimental con rasgos de humor y creatividad (tags fable y humour).
+- Compatibilidad con endpoints (tag endpoints_compatible).
 
 ## Casos de uso
-
-- Experimentación con merges MoE en Apple Silicon: el checkpoint está pensado para MLX y 6 bits, con un pico de memoria medido de 36,92 GB y 1416 tokens/s según la model card, lo que permite probarlo en equipos con memoria unificada alta (por ejemplo, Mac Studio con 64 GB o más).
-- Investigación sobre cuantización: la model card incluye comparativas de perplejidad y throughput entre qx64-hi, mxfp4, mxfp8 y qx86-hi, útiles para estudiar el compromiso entre precisión y memoria en MoE multimodales.
-- Evaluación de técnicas de merge (mergekit): sirve como caso de estudio de fusión de ocho modelos base y de su efecto sobre benchmarks como ARC, BoolQ, HellaSwag, OpenBookQA, PIQA y Winogrande.
-- Prototipado de asistentes conversacionales multimodales en español: al declarar soporte de es, puede usarse para pruebas de diálogo con entrada de imagen, aunque sin garantías de calidad en producción.
-- Pruebas de razonamiento con thinking toggle: el control `<|think_on|>`/`<|think_off|>` permite comparar respuestas con y sin cadena de pensamiento en el mismo checkpoint, útil para investigación sobre long-cot.
-- Docencia y divulgación: la model card y los artefactos asociados ilustran de forma práctica cómo se documenta (y cómo no se documenta) un merge comunitario, y sirven para discutir buenas prácticas de fichas técnicas.
-- Generación creativa y narrativa: los tags fable y humour, junto con el tono de la model card, sugieren uso en escritura creativa y generación de diálogo estilizado, siempre con revisión humana.
+- Razonamiento matemático asistido: el modelo puede resolver problemas de varios pasos generando trazas CoT largas, útil en herramientas educativas o de verificación de cálculos donde se necesita auditar el razonamiento intermedio.
+- Generación de código en pipelines de desarrollo: con soporte de tool calling y buen rendimiento declarado en HumanEval (96,3 % en la variante oQ4e), puede integrarse en asistentes de IDE o revisores automáticos de pull requests.
+- Agentes autónomos multi-paso: hereda de AgentWorld la capacidad de planificar y ejecutar secuencias de acciones con llamadas a herramientas, adecuado para automatización de tareas de oficina o consultas a APIs.
+- Atención al cliente multilingüe: cubre inglés, chino, japonés y español, lo que permite desplegar un único modelo para soporte en cuatro mercados sin cambiar de checkpoint.
+- Análisis de documentos con imagen: al ser image-text-to-text, puede procesar capturas de pantalla, formularios escaneados o diagramas junto con texto para extraer información estructurada.
+- Prototipado en Apple Silicon: la cuantización qx64-hi reduce el pico de memoria a 36,91 GB, lo que permite ejecutar el modelo en estaciones Mac con memoria unificada alta para investigación y demos locales.
+- Experimentación en investigación sobre fusiones de modelos: sirve como caso de estudio de cómo el merge de ocho checkpoints MoE afecta a benchmarks de sentido común (ARC, BoolQ, HellaSwag, PIQA, Winogrande).
 
 ## Benchmarks y rendimiento
+Datos publicados por el autor para la variante qx64-hi y comparativas de cuantización (brainwaves: ARC, ARC/e, BoolQ, HellaSwag, OpenBookQA, PIQA, Winogrande):
 
-Los datos de la model card son métricas internas de la serie Brainwaves (no benchmarks estándar publicados), expresadas como precisión en ARC, ARC-e, BoolQ, HellaSwag, OpenBookQA, PIQA y Winogrande, además de perplejidad, memoria pico y tokens/s. Se reproducen a continuación para el checkpoint qx64-hi y sus comparadores directos.
+| Metrica | bf16 | qx64-hi |
+|---|---|---|
+| ARC | 0,677 | 0,670 |
+| ARC/e | 0,868 | 0,870 |
+| BoolQ | 0,903 | 0,902 |
+| HellaSwag | 0,770 | 0,771 |
+| OpenBookQA | 0,454 | 0,448 |
+| PIQA | 0,820 | 0,818 |
+| Winogrande | 0,714 | 0,721 |
+| Perplejidad | 3,765 ± 0,023 | 3,797 ± 0,023 |
+| Memoria pico | 76,22 GB | 36,91 GB |
+| Tokens/s | 1.697 | 1.664 |
 
-| Modelo / quant | ARC | ARC-e | BoolQ | HellaSwag | OpenBookQA | PIQA | Winogrande |
-|---|---|---|---|---|---|---|---|
-| Mirage qx64-hi | 0,670 | 0,870 | 0,902 | no disponible | no disponible | no disponible | no disponible |
-| oQ6e-mtp | 0,676 | 0,868 | 0,904 | no disponible | no disponible | no disponible | no disponible |
-| mxfp4 | 0,672 | 0,857 | 0,901 | no disponible | no disponible | no disponible | no disponible |
-| oQ3e-mtp | 0,677 | 0,865 | 0,905 | no disponible | no disponible | no disponible | no disponible |
+Resultados oMLX de variantes relacionadas:
 
-| Modelo / quant | Perplejidad | Memoria pico | Tokens/s |
-|---|---|---|---|
-| Mirage qx64-hi | 3,786 ± 0,023 | 36,92 GB | 1416 |
-| oQ6e-mtp | 3,766 ± 0,023 | 35,69 GB | 1544 |
-| mxfp4 | 3,969 ± 0,025 | 25,33 GB | 1663 |
-| oQ3e-mtp | 3,827 ± 0,024 | 23,40 GB | 1700 |
-
-Para contexto, el componente Brainwaves-Nex-Uncensored en bf16 obtiene 0,668 / 0,866 / 0,906 / 0,777 / 0,446 / 0,817 / 0,727 en la misma batería, y el baseline Qwen3.6-35B-A3B-Instruct en mxfp8 obtiene 0,581 / 0,757 / 0,892 / 0,751 / 0,428 / 0,803 / 0,688. No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+| Benchmark | oQ4e-mtp | oQ3e-mtp |
+|---|---|---|
+| ARC_CHALLENGE | 97,5 % | 96,7 % |
+| TruthfulQA | 91,7 % | 91,4 % |
+| HumanEval | 96,3 % | 95,7 % |
 
 ## Requisitos de hardware
-
-- VRAM/memoria: 36,92 GB de pico medido para qx64-hi según la model card; el repo pesa 36,2 GB.
-- GPU recomendadas: no se especifican; por tamaño, requiere A100 80 GB, H100 80 GB o GPUs con 48 GB o más (L40S, RTX 6000 Ada) si se ejecuta fuera de MLX.
-- Consumer GPU: no cabe en RTX 4090 (24 GB) ni en RTX 3090 (24 GB) a esta cuantización; sí podría caber en configuraciones de memoria unificada de Apple Silicon de 64 GB o más, dado el enfoque MLX.
-- Despliegue: transformers (librería declarada), MLX (tag del modelo) y, en principio, cualquier runtime compatible con safetensors de transformers; no se confirma soporte de vLLM, llama.cpp, Ollama ni TGI en la información disponible.
-- Latencia y throughput: 1416 tokens/s y perplejidad 3,786 ± 0,023 medidos por el autor; las cifras comparativas de la serie van de 1416 a 1700 tokens/s según cuantización.
+- VRAM estimada: 36,91 GB de pico de memoria para la variante qx64-hi; 76,22 GB para bf16.
+- GPU recomendadas: para bf16, A100 80 GB o H100; para qx64-hi, estaciones Apple Silicon con memoria unificada de al menos 48 GB (M2 Ultra, M3 Max con 64 GB o superior).
+- Cabe en GPU de consumo: la variante qx64-hi no cabe en RTX 4090 (24 GB); las variantes oQ2.7e, oQ2.5e y oQ2e reducen el pico a 19,58-21,06 GB y sí podrían caber en GPUs de 24 GB, aunque con mayor perplejidad (4,160 en oQ2e).
+- Opciones de despliegue: transformers (safetensors), MLX para Apple Silicon; no se confirma soporte de vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Latencia y throughput: 1.664 tokens/s en la configuración de referencia del autor para qx64-hi; 1.697 tokens/s en bf16.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|
-| Qwen3.6-35B-A3B-Mirage-qx64-hi-mlx | 35,1B totales / ~3B activos | no disponible | Apache 2.0 | Hugging Face, 53 descargas | Merge comunitario cuantizado a 6 bits para MLX |
-| Qwen3.6-35B-A3B-Instruct (baseline) | 35B totales / ~3B activos | no disponible | Apache 2.0 (presumible, no confirmado) | Hugging Face | Modelo oficial de referencia; perplejidad 5,138 en mxfp8 |
-| Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored | 35B totales / ~3B activos | no disponible | no disponible | Hugging Face | Componente del merge; mejor perplejidad bf16 (3,738) |
-| TerminalHorizon-35B-A3B | 35B totales / ~3B activos | no disponible | no disponible | Hugging Face | Otro componente del merge; solo se reporta ARC 0,589 en mxfp8 |
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Qwen3.6-35B-A3B-Mirage-qx64-hi-mlx | 35,1 B (3 B activos) | no disponible | Apache 2.0 | Fusion experimental, cuantizacion MLX 6 bits |
+| Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored | 35 B (3 B activos) | no disponible | no disponible | Modelo componente del merge; perplejidad bf16 3,738 |
+| TerminalHorizon-35B-A3B | 35 B (3 B activos) | no disponible | no disponible | Modelo base del merge; datos de benchmark muy limitados |
+| Qwen/Qwen-AgentWorld-35B-A3B | 35 B (3 B activos) | no disponible | no disponible | Modelo base orientado a agentes |
 
 ## Limitaciones y advertencias
-
-- Modelo experimental y comunitario: la model card contiene texto narrativo y humorístico en lugar de documentación técnica; no hay garantías de reproducibilidad ni de validación independiente.
-- Riesgo elevado de alucinación: es un merge de merges, sin evaluación estándar publicada (MMLU, HumanEval, GSM8K) que permita estimar su fiabilidad real.
-- Idiomas: solo se declaran en, zh, ja y es; el rendimiento en español no está cuantificado y podría degradarse respecto al inglés.
-- Contexto: la longitud de contexto no está documentada, lo que impide planificar cargas de trabajo con ventanas largas.
-- Multimodalidad: la model card menciona una actualización in-place para corregir problemas en tensores de visión y que las métricas se están recompilando; el soporte de imagen debe considerarse inestable.
-- Licencia Apache 2.0 declarada, pero los modelos base (algunos con etiquetas abliterated o uncensored) pueden imponer condiciones adicionales no reflejadas; conviene verificar cada componente antes de uso comercial.
-- Contenido sin filtros: la presencia de componentes "uncensored" y "abliterated" implica mayor probabilidad de generar contenido inapropiado sin salvaguardas, lo que exige moderación externa en producción.
-- Huella de memoria alta (36,92 GB) que excluye GPUs de consumo de 24 GB y limita el despliegue a hardware profesional o Apple Silicon de gama alta.
-- Advertencia de la propia model card: el modelo "simula todo, incluso programar", lo que sugiere que sus capacidades de código pueden ser imitativas más que funcionales; no usar en pipelines de CI/CD sin validación.
+- Modelo experimental: el autor lo etiqueta como experimental y fruto de un merge de ocho checkpoints, sin validación independiente publicada.
+- Riesgo de alucinación: no se han publicado evaluaciones de fidelidad factual más allá de TruthfulQA (91,7 % en oQ4e), insuficientes para garantizar un uso en producción sin verificación.
+- Idiomas limitados a en, zh, ja y es; no se declara soporte para otras lenguas.
+- Longitud de contexto no documentada, lo que impide planificar despliegues con ventanas largas.
+- La cuantización qx64-hi está pensada para MLX y Apple Silicon; el rendimiento en GPUs NVIDIA no está caracterizado.
+- Aunque la licencia es Apache 2.0, los modelos base pueden tener condiciones adicionales no reflejadas en la model card; conviene revisar cada uno antes de uso comercial.
+- La model card incluye contenido narrativo y humorístico (referencias a un "Holodeck" y diálogos ficticios) que no debe interpretarse como documentación técnica.
+- No se dispone de información sobre sesgos demográficos, toxicológicos o de seguridad.
 
 ## Enlaces
-
 - Hugging Face: https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-Mirage-qx64-hi-mlx
-- Template de chat corregido: https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates
 - Modelo base TerminalHorizon-35B-A3B: https://huggingface.co/shunzou05/TerminalHorizon-35B-A3B
 - Modelo base Iris-mini: https://huggingface.co/AllSpark-Research/Iris-mini
 - Modelo base Thomson-1.0-Small: https://huggingface.co/thomsonreuters/Thomson-1.0-Small
@@ -109,3 +105,8 @@ Para contexto, el componente Brainwaves-Nex-Uncensored en bf16 obtiene 0,668 / 0
 - Modelo base Qwen-AgentWorld-35B-A3B: https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B
 - Modelo base Nex-N2.5-mini-Uncensored: https://huggingface.co/orcarouter/Nex-N2.5-mini-Uncensored
 - Modelo base SuperQwen-AgentWorld-35B-A3B-abliterated: https://huggingface.co/Jiunsong/SuperQwen-AgentWorld-35B-A3B-abliterated
+- Benchmarks oMLX ARC_CHALLENGE (oQ4e): https://omlx.ai/benchmarks/intelligence/at212qt2
+- Benchmarks oMLX TruthfulQA (oQ4e): https://omlx.ai/benchmarks/intelligence/0cfturoz
+- Benchmarks oMLX HumanEval (oQ4e): https://omlx.ai/benchmarks/intelligence/9203c64r
+- Benchmarks oMLX ARC_CHALLENGE (oQ3e): https://omlx.ai/benchmarks/intelligence/vcdqpguq
+- Benchmarks oMLX TruthfulQA (oQ3e): https://omlx.ai/benchmarks/intelligence/3zij6idy

@@ -1,93 +1,80 @@
 # mradermacher/granite-4.0-3b-vision-i1-GGUF
 
 ## Resumen
+Esta ficha describe la cuantización GGUF del modelo Granite 4.0 3B Vision, publicada por el usuario mradermacher bajo licencia Apache 2.0. El modelo original lo desarrolla IBM dentro de la familia Granite 4.0, orientada a tareas de lenguaje y visión en entornos empresariales. La versión aquí documentada emplea cuantización con imatrix (etiquetada como i1) para reducir el peso de los 3.659.742.720 parámetros del modelo base a ficheros de entre 1,0 GB y 3,1 GB, lo que permite ejecutarlo en hardware de consumo.
 
-`mradermacher/granite-4.0-3b-vision-i1-GGUF` es una coleccion de cuantizaciones GGUF generadas por mradermacher a partir del modelo multimodal `ibm-granite/granite-4.0-3b-vision` de IBM. No se trata de un modelo original, sino de una redistribucion optimizada para inferencia local con llama.cpp y herramientas compatibles, empleando cuantizacion ponderada con fichero imatrix (denominada "i1" por el autor) para preservar en lo posible la calidad del modelo de referencia en cada nivel de compresion.
+El interés de esta publicación es práctico: ofrece una batería amplia de niveles de cuantización (desde IQ1_S hasta Q6_K) en formato GGUF, compatible con llama.cpp y sus derivados, para un modelo multimodal de 3B parámetros. Esto lo convierte en una opción atractiva para prototipado local de tareas de visión-lenguaje, donde el coste de VRAM es una restricción habitual.
 
-El modelo base pertenece a la familia Granite 4.0 de IBM, orientada a casos de uso empresariales con licencia Apache 2.0. La variante de 3B con vision combina procesamiento de texto e imagen, lo que la hace atractiva para despliegues en hardware modesto donde se requiere comprension de imagenes junto con generacion de texto. El repositorio incluye unicamente el fichero imatrix en el momento de la consulta, con un tamano de 0,1 GB, y el autor remite al repositorio estatico hermano para los ficheros de cuantizacion finales y los ficheros mmproj necesarios para la parte visual.
-
-La relevancia de esta ficha radica en que facilita el acceso a un modelo multimodal de 3B en formato GGUF cuantizado, lo que permite ejecutarlo en GPU de consumo y en CPU, algo impracticable con los pesos originales en precision completa. No obstante, la informacion publicada en el repositorio es muy limitada: no se detallan composicion del dataset, resultados de benchmarks ni especificaciones completas del modelo base.
+No obstante, la información disponible es limitada: la model card del repositorio se centra casi por completo en los aspectos de cuantización y no detalla la arquitectura interna, los datos de entrenamiento ni los resultados de benchmarks del modelo base. Los datos que faltan se indican explícitamente como "no disponible" a lo largo de la ficha.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base multimodal de texto e imagen de la familia Granite 4.0; detalles no publicados en la informacion disponible) |
-| Parametros totales | 1.887.800 (dato de safetensors del modelo base segun metadatos de Hugging Face; no coincide con la denominacion "3b", que hace referencia al modelo base de IBM) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo base multimodal de la familia Granite 4.0; detalles no publicados en la informacion disponible) |
+| Parametros totales | 3.659.742.720 |
+| Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q4_0, Q4_1, Q4_K_S, Q4_K_M, IQ4_NL (small), IQ4_XS, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M (segun la lista de quants del repositorio) |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-IQ4_NL, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (cuantizacion con imatrix) |
 | Idiomas soportados | en |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizaciones i1 ponderadas con imatrix); el fichero imatrix esta en el repositorio, los GGUF finales en el repositorio estatico enlazado |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
+No se dispone de información detallada sobre la arquitectura interna del modelo base ibm-granite/granite-4.0-3b-vision en la información proporcionada. Por el nombre y la naturaleza del repositorio, se trata de un modelo multimodal de 3.659.742.720 parámetros que procesa lenguaje e imágenes, pero no se especifican el tipo de transformer, la composición del dataset, el número de tokens de entrenamiento ni si se aplicaron técnicas de alineación como RLHF o DPO. Tampoco se documentan innovaciones técnicas concretas (atención lineal, decodificación especulativa, etc.).
 
-No se dispone de informacion detallada sobre la arquitectura del modelo base `ibm-granite/granite-4.0-3b-vision` en la documentacion proporcionada. Por la denominacion y la pertenencia a la familia Granite 4.0, se trata de un modelo multimodal que procesa texto e imagenes, pero no se especifican en la informacion disponible el tipo de transformer, el mecanismo de atencion, la composicion del dataset de entrenamiento, el numero de tokens vistos ni si se aplicaron tecnicas de RLHF, DPO u otras fases de alineamiento.
-
-Respecto al proceso de cuantizacion, el autor indica que se trata de cuantizaciones "weighted/imatrix" (i1), generadas con un fichero imatrix propio incluido en el repositorio. Este enfoque asigna importancia diferencial a los tensores durante la cuantizacion para reducir la perdida de calidad en comparacion con cuantizaciones estaticas equivalentes. El autor distingue explicitamente entre estas cuantizaciones i1 y las estaticas, disponibles en un repositorio separado. No se documentan innovaciones de arquitectura ni de decodificacion (decodificacion especulativa, atencion lineal, etc.) en la informacion disponible.
+La contribución técnica de esta publicación es la cuantización: mradermacher genera versiones GGUF con imatrix (fichero imatrix.gguf de 0,1 GB incluido para crear cuantizaciones propias) y ofrece tanto quants estáticos como quants i1 ponderados. Los ficheros mmproj, necesarios para la parte visual, se alojan en el repositorio estático hermano (mradermacher/granite-4.0-3b-vision-GGUF), no en este repositorio i1.
 
 ## Capacidades
-
-- Generacion de texto y comprension de imagenes, al derivar de un modelo multimodal (`granite-4.0-3b-vision`).
-- Procesamiento de entradas multimodales texto-imagen, segun la naturaleza del modelo base.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: el repositorio declara unicamente ingles (`en`).
-- Modo thinking, vision, audio u otras capacidades especiales: solo se confirma vision por el nombre del modelo base; el resto no disponible.
+- Generación de texto conversacional en inglés, según la etiqueta "conversational" del repositorio.
+- Procesamiento de imágenes: el modelo base es de visión, y la cuantización mantiene esa capacidad mediante los ficheros mmproj del repositorio estático.
+- Compatibilidad con endpoints (etiqueta "endpoints_compatible"), lo que facilita su despliegue en infraestructuras de inferencia estándar.
+- Formato GGUF, que permite su uso con llama.cpp y herramientas compatibles.
+- No se documentan en la información disponible capacidades específicas de tool calling, razonamiento multi-paso, matemáticas avanzadas, audio ni modo thinking.
 
 ## Casos de uso
-
-- Clasificacion y descripcion de imagenes en local: el modelo puede recibir una imagen y generar una descripcion textual o etiqueta, ejecutandose en formato GGUF sobre llama.cpp en equipos sin GPU dedicada.
-- Extraccion de informacion de documentos escaneados: al combinar vision y texto, puede procesar capturas o digitalizaciones y devolver campos estructurados, siempre que se valide la calidad con las cuantizaciones mas bajas.
-- Asistentes de accesibilidad: generacion de descripciones de imagenes para lectores de pantalla en tiempo real, aprovechando el bajo coste computacional de un modelo de 3B cuantizado.
-- Prototipado rapido de pipelines multimodales: uso del repositorio como banco de pruebas para validar integraciones con llama.cpp u Ollama antes de migrar al modelo base en precision completa.
-- Moderacion de contenido visual en entornos con recursos limitados: analisis de imagenes enviadas por usuarios para detectar contenido no deseado, con el modelo desplegado en CPU o GPU de gama baja.
-- Educacion y demos interactivas: despliegue en portatiles o mini-PC para demostrar capacidades de vision-lenguaje sin depender de APIs en la nube, gracias a la licencia Apache 2.0 y al formato GGUF.
-- Investigacion sobre cuantizacion: comparacion de la calidad de las distintas cuantizaciones i1 frente a las estaticas del repositorio hermano para estudiar el impacto de imatrix en modelos multimodales pequenos.
+- Prototipado local de visión-lenguaje: con la cuantización i1-Q4_K_M (2,3 GB) el modelo cabe en una GPU de consumo de 8 GB de VRAM, lo que permite experimentar con descripciones de imágenes y preguntas visuales sin infraestructura en la nube.
+- Asistentes de accesibilidad: el modelo puede describir imágenes a usuarios con discapacidad visual; su tamaño reducido permite ejecutarlo en dispositivos de borde con llama.cpp, aunque la calidad en cuantizaciones bajas será limitada.
+- Análisis de documentos escaneados en local: para extraer información de capturas o formularios en inglés, una cuantización Q5_K_M (2,7 GB) ofrece un equilibrio razonable entre calidad y huella de memoria en estaciones de trabajo sin GPU dedicada.
+- Clasificación y etiquetado de imágenes en pipelines de datos: el modelo puede generar etiquetas textuales para lotes de imágenes, y su licencia Apache 2.0 permite integrarlo en herramientas internas sin restricciones de uso comercial.
+- Chat conversacional en inglés de bajo coste: para demos y pruebas de concepto de asistentes, la cuantización IQ3_M (1,8 GB) permite desplegar el modelo en CPU con llama.cpp y latencias aceptables para uso interactivo no crítico.
+- Evaluación comparativa de cuantizaciones: el repositorio incluye el fichero imatrix y 24 variantes de cuantización, lo que lo convierte en un banco de pruebas útil para medir la degradación de calidad de un modelo multimodal de 3B según el nivel de compresión.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada: no disponible de forma oficial; para un modelo de aproximadamente 3B en GGUF, las cuantizaciones Q4_K_M suelen ocupar del orden de 2 GB, Q8 alrededor de 3-4 GB y Q2 por debajo de 1,5 GB, aunque estas cifras son estimaciones generales y no datos publicados por el autor.
-- GPU recomendadas: no especificadas en la informacion disponible. Por tamano, el modelo es apto para GPUs de consumo con 4-8 GB de VRAM en cuantizaciones medias; para las cuantizaciones mas altas se recomienda 8 GB o mas.
-- Cabe en GPU de consumo: si, previsiblemente en tarjetas como RTX 3060, RTX 4060, RTX 4090 y similares, en funcion de la cuantizacion elegida; no confirmado por el autor.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF) y herramientas derivadas como Ollama o LM Studio; el autor menciona `endpoints_compatible` en los tags, lo que sugiere compatibilidad con endpoints tipo OpenAI a traves de servidores GGUF. vLLM y TGI no soportan GGUF de forma nativa en todos los casos.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 1,0 GB (i1-IQ1_S) hasta 3,1 GB (i1-Q6_K) solo para los pesos; hay que añadir el coste de la caché KV, el fichero mmproj de la parte visual y el contexto, por lo que conviene reservar margen adicional.
+- GPU recomendadas: no se especifican en la información disponible; por tamaño, cualquier GPU con 8 GB o más de VRAM (RTX 3060/4060, RTX 4070, RTX 4090, A10, L4) puede alojar las cuantizaciones de 4 bits o superiores con holgura.
+- Cabe en GPU de consumo: sí; las cuantizaciones i1-Q4_K_M (2,3 GB) e i1-Q5_K_M (2,7 GB) son adecuadas para GPUs de 8 GB, y las de 2-3 bits caben incluso en GPUs de 4-6 GB.
+- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, llama-cpp-python); el repositorio declara compatibilidad con endpoints. No se documenta soporte específico de vLLM o TGI para estos ficheros GGUF.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
+No se dispone de datos de rendimiento del modelo base en la información proporcionada, por lo que la comparación se limita a características estructurales.
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| mradermacher/granite-4.0-3b-vision-i1-GGUF (este) | ~3B (denominacion; metadatos indican 1.887.800 en safetensors) | no disponible | Apache 2.0 | GGUF | Cuantizaciones i1 con imatrix; vision; solo ingles declarado |
-| mradermacher/granite-4.0-3b-vision-GGUF | ~3B | no disponible | Apache 2.0 | GGUF | Cuantizaciones estaticas del mismo modelo base, sin imatrix |
-| ibm-granite/granite-4.0-3b-vision | ~3B | no disponible | Apache 2.0 | safetensors (transformers) | Modelo base original en precision completa |
-| Alternativas multimodales pequenas (p. ej. Qwen2-VL-2B, PaliGemma) | 2-3B | variable | variable | safetensors, GGUF | No se dispone de datos comparativos de rendimiento en la informacion proporcionada |
+| Modelo | Parametros | Contexto | Licencia | Formato |
+|---|---|---|---|---|
+| granite-4.0-3b-vision (i1-GGUF, esta ficha) | 3,66 B | no disponible | Apache 2.0 | GGUF |
+| granite-4.0-3b-vision (base) | 3,66 B | no disponible | Apache 2.0 | safetensors |
+| Alternativas de 3B multimodales | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de benchmarks que permitan una comparacion cuantitativa con alternativas de la misma categoria.
+No se identifican en la información disponible modelos comparables concretos de la misma categoría con datos verificables; se indica "no disponible".
 
 ## Limitaciones y advertencias
-
-- La informacion publicada en el repositorio es minima: no hay model card detallada, benchmarks ni especificaciones del modelo base, lo que dificulta evaluar su calidad real antes de desplegarlo.
-- El repositorio contiene en el momento de la consulta unicamente el fichero imatrix (0,1 GB); los ficheros GGUF de cuantizacion y los mmproj para la parte visual deben descargarse del repositorio estatico enlazado, lo que anade un paso y un riesgo de desactualizacion.
-- El modelo declara soporte unicamente de ingles; el rendimiento en castellano u otros idiomas no esta garantizado y probablemente sea deficiente.
-- Las cuantizaciones de muy baja precision (Q2, IQ1, IQ2) pueden degradar notablemente la calidad, especialmente en tareas de vision donde los errores de cuantizacion afectan a la representacion de imagenes.
-- Riesgo de alucinacion inherente a los modelos de lenguaje, agravado en tareas de descripcion de imagenes con cuantizaciones agresivas.
-- Sesgos: no documentados por el autor; al no publicarse la composicion del dataset de entrenamiento, no es posible evaluar sesgos conocidos.
-- Licencia Apache 2.0 permite uso comercial, pero conviene verificar la licencia y condiciones del modelo base original de IBM antes de un despliegue en produccion.
-- El dato de parametros de safetensors (1.887.800) no concuerda con la denominacion "3b" del modelo base; conviene tratarlo con cautela y verificar el modelo original antes de dimensionar infraestructura.
-- No se garantiza soporte de tool calling, agentes ni modo thinking en esta variante cuantizada; estas capacidades dependen del modelo base y no estan documentadas aqui.
+- Idiomas: el modelo solo declara soporte de inglés; no se garantiza un rendimiento aceptable en castellano u otros idiomas.
+- Cuantizaciones extremas: las variantes IQ1 e IQ2 (1,0-1,5 GB) degradan la calidad de forma notable; la propia model card advierte que IQ1 es "para desesperados" y que Q2_K_S es de "calidad muy baja". Para producción conviene usar Q4_K_M o superior.
+- Parte visual: los ficheros mmproj no están en este repositorio sino en el estático; un despliegue que los omita perderá la capacidad de procesar imágenes.
+- Alucinación: no se documentan evaluaciones de fiabilidad ni tasas de alucinación; al ser un modelo de 3B, el riesgo en tareas de razonamiento complejo es inherentemente alto.
+- Sesgos: no se publica información sobre sesgos conocidos en la información disponible.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base de IBM por si hubiera términos adicionales no reflejados aquí.
+- Fecha de creación: el repositorio figura creado el 2026-11-21, fecha que debe tratarse con cautela al planificar el soporte a largo plazo.
 
 ## Enlaces
-
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/granite-4.0-3b-vision-i1-GGUF
-- Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/granite-4.0-3b-vision-GGUF
+- Repositorio Hugging Face (esta cuantización): https://huggingface.co/mradermacher/granite-4.0-3b-vision-i1-GGUF
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-3b-vision
-- Pagina de descargas del autor: https://hf.tst.eu/model#granite-4.0-3b-vision-i1-GGUF
-- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Peticiones de modelos del autor: https://huggingface.co/mradermacher/model_requests
+- Cuantizaciones estáticas y ficheros mmproj: https://huggingface.co/mradermacher/granite-4.0-3b-vision-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#granite-4.0-3b-vision-i1-GGUF
+- Preguntas frecuentes y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (README de referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

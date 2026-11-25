@@ -2,92 +2,93 @@
 
 ## Resumen
 
-Qwen3.5-4B-Amadeus-i1-GGUF es una cuantizacion GGUF en formato imatrix del modelo Jitheswar/Qwen3.5-4B-Amadeus, un derivado "abliterated" y "decensored" de la familia Qwen3.5 de 4B parametros. El trabajo lo firma mradermacher, un cuantizador conocido en el ecosistema open source por publicar versiones GGUF de alta calidad con matrices de importancia (imatrix) para modelos populares. El modelo base conserva la arquitectura transformer y la ventana de vision del Qwen3.5 original, pero ha sido modificado para eliminar los mecanismos de rechazo y censura, lo que lo hace util para investigacion sobre alineamiento y para aplicaciones donde las respuestas excesivamente cautas resultan problematicas.
+Qwen3.5-4B-Amadeus-i1-GGUF es una distribución de cuantizaciones GGUF del modelo Qwen3.5-4B-Amadeus, publicado por el usuario mradermacher. El modelo base, desarrollado por Jitheswar, parte de Qwen3.5-4B de Alibaba y ha sido modificado mediante técnicas de abliteration y decensoring para eliminar los mecanismos de rechazo y las restricciones de contenido del modelo original. El resultado es un modelo de 4.326.350.848 parámetros (aproximadamente 4,3 mil millones) orientado a generación de texto conversacional sin filtros de seguridad, con capacidades de visión.
 
-Con 4.326.350.848 parametros totales, este modelo se situa en el rango de los 4B, lo que lo convierte en una opcion ligera y desplegable en hardware de consumo. La cuantizacion imatrix permite reducir el peso a entre 2,1 GB (i1-Q2_K) y 3,7 GB (i1-Q6_K) manteniendo una calidad razonable, lo que facilita su ejecucion en GPUs consumer como la RTX 3060 o superiores. El repositorio ocupa 39,2 GB porque incluye multiples variantes de cuantizacion.
+La relevancia de esta ficha radica en que combina tres elementos poco habituales: un modelo pequeño (4B) con capacidad multimodal (vision), cuantizaciones imatrix de alta calidad generadas por mradermacher, y un proceso de abliteration que lo hace útil para investigación sobre alineamiento, evaluación de sesgos y experimentación con modelos sin censura. El repositorio ocupa 39,2 GB e incluye un amplio abanico de cuantizaciones que van desde i1-Q2_K (2,1 GB) hasta i1-Q6_K (3,7 GB), lo que permite desplegarlo en hardware muy modesto.
 
-La relevancia actual de esta ficha radica en que combina tres tendencias del ecosistema: la familia Qwen3.5 (con soporte de vision y contexto largo), las tecnicas de abliteration para eliminar rechazos, y el formato GGUF optimizado con imatrix para inferencia local eficiente. Es un modelo pensado para desarrolladores que necesitan un asistente conversacional sin restricciones excesivas en entornos controlados, y para investigadores que estudian el comportamiento de modelos "decensored".
+La licencia declarada es Apache 2.0, heredada del modelo Qwen3.5-4B original, aunque la modificación del comportamiento mediante abliteration plantea consideraciones éticas y legales que el usuario debe evaluar. Los idiomas soportados declarados son inglés, chino y multilingüe. El modelo fue creado el 27 de octubre de 2026 y actualizado el 23 de noviembre de 2026, con 2.326 descargas acumuladas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivado de Qwen3.5-4B), con soporte de vision |
-| Parametros totales | 4.326.350.848 |
+| Arquitectura | Transformer (derivada de Qwen3.5-4B, con capacidad de visión) |
+| Parametros totales | 4.326.350.848 (4,3B) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-IQ4_NL, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (imatrix); versiones estaticas en el repo Qwen3.5-4B-Amadeus-GGUF |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-IQ4_NL, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K, más imatrix |
 | Idiomas soportados | en, zh, multilingual |
 | Licencia | apache-2.0 |
 | Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Jitheswar/Qwen3.5-4B-Amadeus es un derivado de la familia Qwen3.5 de 4B parametros. La arquitectura es un transformer denso (no MoE) con 4.326 millones de parametros, e incluye capacidades de vision segun los tags del repositorio ("vision"). El proceso de "abliteration" consiste en identificar y eliminar la direccion de activacion asociada al rechazo de peticiones, de modo que el modelo deja de negarse a responder ciertos temas. El tag "decensored" indica que se ha aplicado un proceso adicional para reducir respuestas moralizantes o excesivamente cautas.
+El modelo base Qwen3.5-4B-Amadeus deriva de la arquitectura transformer de Qwen3.5-4B, un modelo denso de aproximadamente 4,3 mil millones de parámetros con capacidad de procesamiento de visión (el repositorio incluye etiqueta "vision" y referencia a ficheros mmproj en el repositorio estático). La modificación principal es la aplicación de técnicas de abliteration y decensoring sobre el modelo original, un proceso que identifica y suprime las direcciones de activación asociadas a comportamientos de rechazo, produciendo un modelo que responde a solicitudes que el modelo original declinaría.
 
-Los datos de entrenamiento del modelo base no estan detallados en la informacion proporcionada. Los datasets listados (mlabonne/harmless_alpaca y mlabonne/harmful_behaviors) son tipicos en procesos de abliteration y evaluacion de comportamientos, pero no se especifica el numero de tokens ni la composicion exacta. No se dispone de informacion sobre RLHF, DPO u otras tecnicas de alineamiento aplicadas tras la abliteration. La cuantizacion imatrix de mradermacher utiliza matrices de importancia calculadas sobre el modelo base para preservar mejor la calidad en cuantizaciones bajas, una tecnica que mejora la perplejidad respecto a cuantizaciones estaticas del mismo tamano.
+El proceso de cuantización empleado es imatrix (importance matrix), que calcula matrices de importancia a partir de un dataset de calibración para preservar mejor la calidad en cuantizaciones agresivas. Los datasets de calibración y entrenamiento declarados son mlabonne/harmless_alpaca y mlabonne/harmful_behaviors, habituales en el ecosistema de modelos abliterated. No se dispone de información sobre el número de tokens de entrenamiento original, la composición exacta del dataset de Qwen3.5-4B, ni si hubo fases de RLHF o DPO en el modelo base. La innovación técnica destacable es la combinación de cuantización imatrix con un modelo multimodal pequeño, lo que permite ejecutar visión y lenguaje en hardware de consumo.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en ingles, chino y otros idiomas (multilingual).
-- Razonamiento y respuesta a preguntas generales, con la salvedad de que la abliteration puede afectar a la coherencia en temas sensibles.
-- Capacidades de vision heredadas del Qwen3.5-4B original (procesamiento de imagenes, segun el tag "vision").
-- Soporte de tool calling / function calling heredado de la familia Qwen3.5 (no confirmado explicitamente en la informacion disponible).
-- Capacidades de agente y razonamiento multi-paso (no confirmado explicitamente en la informacion disponible).
-- Modo "uncensored": responde a peticiones que el modelo original rechazaria, util para investigacion sobre alineamiento.
-- Capacidades multilingues limitadas a los idiomas del modelo base (en, zh y otros no especificados).
+- Generación de texto conversacional multi-turno en inglés, chino y otros idiomas (multilingual).
+- Procesamiento de imágenes (modelo de visión; los ficheros mmproj se distribuyen en el repositorio estático).
+- Razonamiento general y respuesta a instrucciones sin restricciones de contenido (abliterated/decensored).
+- Generación de código y matemáticas (capacidad heredada de la familia Qwen, sin datos específicos de rendimiento).
+- Soporte de tool calling / function calling: no confirmado en la información disponible.
+- Soporte de agentes y razonamiento multi-paso: no confirmado en la información disponible.
+- Capacidades multilingües limitadas a los idiomas declarados (en, zh, multilingual); no se especifica la lista completa.
+- No se declara modo "thinking" explícito ni capacidades de audio.
 
 ## Casos de uso
 
-- Investigacion sobre alineamiento y abliteration: el modelo permite estudiar como la eliminacion de la direccion de rechazo afecta a la coherencia, la utilidad y la seguridad de las respuestas, comparandolo con el Qwen3.5-4B original.
-- Asistente conversacional sin restricciones en entornos controlados: para prototipos internos donde las negativas del modelo base interrumpen flujos de trabajo legitimos (por ejemplo, redaccion creativa de ficcion con temas adultos).
-- Despliegue local en hardware de consumo: con cuantizaciones de 2,1 a 3,7 GB, cabe en GPUs como la RTX 3060 (12 GB) o incluso en CPU con llama.cpp, lo que permite ejecutar un asistente de 4B sin conexion.
-- Procesamiento de imagenes en local: gracias al soporte de vision heredado, puede usarse para descripcion de imagenes, OCR basico o respuesta a preguntas visuales en entornos sin acceso a APIs externas.
-- Generacion de contenido multilingue: para traduccion y redaccion en ingles y chino, aprovechando el soporte multilingual del modelo base.
-- Evaluacion de riesgos en pipelines de moderacion: sirve como modelo "adversario" para probar sistemas de moderacion y detectar fallos en filtros de contenido.
-- Fine-tuning posterior: al ser un GGUF, no es ideal para reentrenamiento, pero el modelo base en safetensors (Jitheswar/Qwen3.5-4B-Amadeus) puede usarse como punto de partida para ajustes con LoRA en tareas especificas.
+- Investigación sobre alineamiento y seguridad: el modelo permite estudiar cómo la abliteration afecta a la distribución de respuestas y a los sesgos, comparando su comportamiento con el Qwen3.5-4B original en tareas de evaluación de rechazo.
+- Experimentación con modelos sin censura en entornos controlados: útil para investigadores que necesitan un modelo que no filtre contenido para analizar respuestas en dominios creativos o controvertidos, siempre con las salvaguardas éticas y legales correspondientes.
+- Despliegue en hardware de consumo: con cuantizaciones de 2,1 a 3,7 GB, puede ejecutarse en GPUs de gama media (8-12 GB VRAM) o incluso en CPU con llama.cpp, lo que facilita prototipado rápido y pruebas locales.
+- Procesamiento de imágenes en local: al ser un modelo de visión, puede emplearse para describir imágenes, extraer texto de capturas o responder preguntas sobre figuras en entornos sin conexión.
+- Generación de texto creativo sin restricciones: escritura de ficción, guiones o contenido narrativo donde el modelo original aplicaría filtros de contenido.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece 16 variantes de cuantización, lo que permite medir el impacto de la compresión en calidad (perplejidad) y velocidad para elegir el equilibrio óptimo en producción.
+- Chat multilingüe ligero: atención al cliente o asistentes conversacionales en inglés y chino con requisitos de hardware mínimos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: entre 2,1 GB (i1-Q2_K) y 3,7 GB (i1-Q6_K) solo para los pesos; anadir 1-2 GB para el contexto KV cache segun la longitud de contexto.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 24 GB para mayor velocidad; A100 o H100 solo si se necesita throughput alto en servidor.
-- Cabe en GPU consumer: si, en practicamente cualquier GPU con 6 GB o mas de VRAM usando cuantizaciones Q4 o superiores.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con GGUF (endpoints_compatible segun los tags). vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que se recomienda llama.cpp para produccion local.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada; dependen del hardware y de la cuantizacion elegida.
+- VRAM estimada para inferencia: entre 2,5 y 4,5 GB según cuantización (i1-Q2_K: 2,1 GB de pesos; i1-Q6_K: 3,7 GB), más overhead de contexto y, en su caso, del proyector de visión (mmproj).
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090, A100 o H100 para mayor throughput; cualquier GPU con al menos 6-8 GB VRAM es suficiente para las cuantizaciones Q4.
+- Cabe en GPU de consumo: sí, en RTX 3050 8 GB, RTX 3060, RTX 4060, RTX 4070 y superiores; también en iGPU con memoria unificada suficiente.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui; vLLM y TGI no soportan GGUF de forma nativa (requieren el modelo en safetensors).
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| Qwen3.5-4B-Amadeus-i1-GGUF (este) | 4,33B | no disponible | apache-2.0 | GGUF (imatrix) | Abliterated, vision, multilingual |
-| Qwen3.5-4B-Amadeus-GGUF (estatico) | 4,33B | no disponible | apache-2.0 | GGUF (estatico) | Misma base, cuantizacion sin imatrix |
-| Jitheswar/Qwen3.5-4B-Amadeus | 4,33B | no disponible | apache-2.0 | safetensors | Modelo base sin cuantizar |
-| Qwen/Qwen3.5-4B | 4,33B | no disponible | apache-2.0 | safetensors | Modelo original con alineamiento completo |
+| Modelo | Parámetros | Contexto | Visión | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Qwen3.5-4B-Amadeus-i1-GGUF (este) | 4,3B | no disponible | Sí | Apache 2.0 | GGUF | Abliterated, cuantizaciones imatrix |
+| Qwen3.5-4B (original) | 4,3B | no disponible | Sí | Apache 2.0 | safetensors | Modelo base con alineamiento completo |
+| Qwen2.5-3B-Instruct-GGUF | 3,1B | 32K (típico) | No | Apache 2.0 | GGUF | Alternativa densa sin visión |
+| Llama-3.2-3B-Instruct-GGUF | 3,2B | 128K | No | Llama 3.2 | GGUF | Alternativa con contexto largo |
 
-No se dispone de datos de benchmarks para comparar rendimiento entre estas variantes. La diferencia principal entre el modelo original y el Amadeus es la eliminacion de rechazos, que puede afectar a la calidad en tareas que requieren juicio etico o cautela.
+La comparativa se limita a características estructurales; no se dispone de datos de rendimiento comparativo en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La abliteration y el proceso "decensored" pueden degradar la coherencia y la calidad de las respuestas en temas sensibles, y aumentar el riesgo de alucinacion en areas donde el modelo original era mas cauto.
-- Riesgo de generar contenido ofensivo, ilegal o danino: el modelo ha sido modificado para eliminar rechazos, por lo que no es apto para aplicaciones de cara al publico sin moderacion adicional.
-- Sesgos conocidos: hereda los sesgos del Qwen3.5-4B original, y la abliteration puede amplificar sesgos al eliminar la cautela en temas controvertidos.
-- Limitaciones de contexto e idioma: el contexto maximo no esta especificado en la informacion disponible; los idiomas confirmados son en, zh y multilingual, sin garantia de calidad en castellano.
-- Restricciones de licencia: apache-2.0 permite uso comercial, pero el autor no ofrece garantias sobre el comportamiento del modelo modificado; el uso en produccion es responsabilidad del desplegador.
-- Caveat importante: al ser un GGUF cuantizado, la calidad se reduce respecto al modelo en safetensors, especialmente en cuantizaciones Q2 y Q3; se recomienda Q4_K_M o superior para uso en produccion.
-- El repositorio ocupa 39,2 GB por incluir todas las variantes; descargar solo la cuantizacion necesaria para ahorrar espacio.
+- El proceso de abliteration elimina los mecanismos de rechazo, lo que puede producir respuestas a solicitudes dañinas, ilegales o éticamente problemáticas; no es apto para despliegues públicos sin moderación externa.
+- Riesgo elevado de alucinación inherente a modelos de 4B, agravado por la pérdida de calidad en cuantizaciones agresivas (i1-Q2_K, i1-Q3_K_S).
+- La licencia Apache 2.0 permite uso comercial, pero la modificación del comportamiento puede contravenir los términos de uso del modelo original Qwen3.5-4B; se recomienda revisar la licencia enlazada.
+- Longitud de contexto no documentada en la información disponible; no se debe asumir una ventana concreta sin verificarla.
+- Idiomas limitados a inglés, chino y multilingüe genérico; el rendimiento en castellano no está garantizado ni documentado.
+- Los datasets de calibración (harmless_alpaca, harmful_behaviors) están orientados a inglés, lo que puede sesgar el comportamiento en otros idiomas.
+- No hay información sobre tool calling, agentes ni modo de razonamiento explícito; no asumir su disponibilidad en producción.
+- El repositorio incluye 16 cuantizaciones; elegir una demasiado agresiva puede degradar gravemente la coherencia y la capacidad multimodal.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-4B-Amadeus-i1-GGUF
 - Modelo base: https://huggingface.co/Jitheswar/Qwen3.5-4B-Amadeus
-- Cuantizaciones estaticas: https://huggingface.co/mradermacher/Qwen3.5-4B-Amadeus-GGUF
-- Pagina de descargas convenientes: https://hf.tst.eu/model#Qwen3.5-4B-Amadeus-i1-GGUF
-- Licencia del modelo original: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
-- README de referencia para GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/Qwen3.5-4B-Amadeus-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Qwen3.5-4B-Amadeus-i1-GGUF
+- Licencia Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

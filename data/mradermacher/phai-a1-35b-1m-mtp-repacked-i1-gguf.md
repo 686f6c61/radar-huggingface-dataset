@@ -2,51 +2,51 @@
 
 ## Resumen
 
-Phai-A1-35B-1M-MTP-Repacked-i1-GGUF es una cuantizacion GGUF con imatrix realizada por mradermacher sobre el modelo Phai-A1-35B-1M-MTP-Repacked, publicado por prithivMLmods. Se trata de un modelo de lenguaje de 35.505.251.456 parametros (aproximadamente 35,5 mil millones) construido sobre la arquitectura Qwen3.5 MoE, segun la etiqueta `qwen3_5_moe` de la model card. El sufijo "1M" del nombre alude a una ventana de contexto de un millon de tokens y "MTP" hace referencia a Multi-Token Prediction, una tecnica de decodificacion especulativa integrada en el modelo.
+Phai-A1-35B-1M-MTP-Repacked-i1-GGUF es una cuantizacion GGUF del modelo Phai-A1-35B-1M-MTP-Repacked, publicada por mradermacher, un conocido creador de cuantizaciones del ecosistema llama.cpp. El modelo base, desarrollado por prithivMLmods, es un transformer de tipo Mixture of Experts (MoE) con arquitectura derivada de Qwen3.5, 35.505 millones de parametros totales y una ventana de contexto que el nombre del modelo sugiere en torno al millon de tokens. Incluye soporte de Multi-Token Prediction (MTP), una tecnica que permite decodificacion especulativa nativa y acelera la inferencia.
 
-Este repositorio concreto no contiene el modelo original en safetensors, sino una coleccion de cuantizaciones GGUF generadas con matrices de importancia (imatrix) para su uso con llama.cpp, llama-cli y otros motores compatibles con GGUF. El objetivo es permitir el despliegue del modelo en hardware mas modesto que el requerido por los pesos en precision completa, manteniendo la mayor calidad posible gracias al calibrado por imatrix.
+El modelo esta orientado a generacion de texto, codigo, tareas de agente y contexto largo, con soporte declarado para chino, ingles, japones, arabe, ruso y aleman. La licencia Apache 2.0 facilita su uso comercial. Esta ficha se centra en la version cuantizada i1-GGUF, que ofrece un abanico de cuantizaciones con imatrix (desde Q2_K hasta Q6_K) pensadas para ejecucion local con llama.cpp.
 
-La relevancia de esta ficha radica en que el modelo original esta orientado a generacion de codigo, uso como agente, contexto largo y razonamiento con refuerzo (RL), con soporte declarado para chino, ingles, japones, arabe, ruso y aleman bajo licencia Apache 2.0. La disponibilidad de cuantizaciones GGUF amplia el alcance practico de estos modelos a entornos de inferencia locales y de servidor sin GPU de gama alta.
+La relevancia actual de esta publicacion radica en que permite desplegar un modelo MoE de 35B con contexto muy largo y capacidades de agente en hardware de consumo, gracias a las cuantizaciones de 4 bits que ocupan entre 20 y 22 GB. La integracion de MTP y mxfp4_moe en el ecosistema llama.cpp es un avance practico para reducir latencia en produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (etiqueta `qwen3_5_moe`), con Multi-Token Prediction (MTP) |
-| Parametros totales | 35.505.251.456 (~35,5 B) |
+| Arquitectura | Transformer MoE (qwen3_5_moe), con Multi-Token Prediction (MTP) |
+| Parametros totales | 35.505.251.456 |
 | Parametros activos | no disponible |
-| Longitud de contexto | 1.000.000 tokens (segun el sufijo "1M" del nombre; no confirmado en la model card) |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q4_0, Q4_1, Q4_K_S, Q4_K_M, IQ4_XS, IQ4_NL (small-IQ4_NL), Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M, mas fichero imatrix |
+| Longitud de contexto | no disponible (el nombre del modelo sugiere 1M) |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (con imatrix) |
 | Idiomas soportados | zh, en, ja, ar, ru, de |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones con imatrix); el modelo base en safetensors no esta incluido en este repo |
+| Formato de pesos | GGUF (con fichero imatrix separado) |
 
 ## Arquitectura y entrenamiento
 
-La model card del repositorio de cuantizacion no detalla la arquitectura interna ni el proceso de entrenamiento del modelo original. Las etiquetas indican que se trata de un transformer de mezcla de expertos (MoE) de la familia Qwen3.5, con soporte de Multi-Token Prediction (MTP), una tecnica de decodificacion especulativa que permite predecir varios tokens por paso y acelerar la generacion. Tambien aparece la etiqueta `mxfp4_moe`, que sugiere el uso de formatos de cuantizacion MXFP4 en los expertos del modelo base.
+El modelo base es un transformer de tipo Mixture of Experts con arquitectura etiquetada como qwen3_5_moe, lo que indica que deriva de la familia Qwen3.5 MoE. La presencia de MTP (Multi-Token Prediction) implica que el modelo fue entrenado para predecir varios tokens futuros de forma simultanea, lo que habilita decodificacion especulativa integrada y reduce la latencia de generacion. Los tags del repositorio mencionan tambien mxfp4_moe, un formato de cuantizacion de precision mixta para capas MoE, y rl, lo que sugiere que el modelo base paso por fases de aprendizaje por refuerzo.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de RLHF o DPO. La etiqueta `rl` sugiere que el modelo incorpora entrenamiento con refuerzo, y las etiquetas `coding`, `agent` y `long-context` indican las areas de optimizacion declaradas. El repositorio de mradermacher se limita a generar las cuantizaciones GGUF con imatrix a partir del modelo base de prithivMLmods; no aporta informacion adicional sobre el entrenamiento.
+No se dispone de informacion detallada sobre el numero de tokens de entrenamiento, la composicion del dataset ni las tecnicas exactas de alineacion (RLHF/DPO) empleadas en el modelo base. El repositorio de mradermacher es exclusivamente una cuantizacion: no aporta datos de entrenamiento propios, sino que transforma los pesos del modelo original a formato GGUF con calibracion imatrix para minimizar la perdida de calidad.
 
 ## Capacidades
 
-- Generacion de texto conversacional y de proposito general.
-- Generacion y asistencia en programacion (etiqueta `coding`).
-- Uso como agente y razonamiento multi-paso (etiqueta `agent`).
-- Manejo de contextos largos, con ventana declarada de hasta 1 millon de tokens (etiqueta `long-context`).
-- Decodificacion especulativa mediante Multi-Token Prediction (MTP) para acelerar la inferencia.
-- Soporte multilingue en chino, ingles, japones, arabe, ruso y aleman.
-- Capacidades de vision: la model card indica explicitamente que es un modelo de vision y que los ficheros mmproj, si existen, se encuentran en el repositorio estatico.
-- Compatibilidad con text-generation-inference y endpoints compatibles, segun las etiquetas.
+- Generacion de texto conversacional multi-turno en seis idiomas (chino, ingles, japones, arabe, ruso y aleman).
+- Generacion de codigo y asistencia en programacion, segun los tags coding y agent.
+- Razonamiento de multiples pasos y flujos de agente, respaldado por el tag agent.
+- Contexto largo (long-context), con un nombre de modelo que apunta a 1M de tokens.
+- Decodificacion especulativa mediante MTP, que acelera la generacion.
+- Capacidad de vision: la model card indica explicitamente que es un modelo de vision y que los ficheros mmproj estan en el repositorio estatico.
+- Compatibilidad con text-generation-inference y endpoints_compatible.
+- Ejecucion local mediante llama.cpp (llama-cli, llama-cpp).
 
 ## Casos de uso
 
-- Asistencia de programacion en local: las cuantizaciones Q4_K_M o Q5_K_M permiten ejecutar un modelo de 35,5 B orientado a codigo en una unica GPU de consumo o en un servidor con llama.cpp, integrable en editores y pipelines de revision.
-- Agentes autonomos con contexto largo: la ventana declarada de 1M tokens permite mantener el estado de tareas complejas, repositorios completos o historiales extensos de conversacion sin truncar el contexto.
-- Procesamiento de documentacion tecnica multilingue: el soporte de chino, ingles, japones, arabe, ruso y aleman cubre casos de traduccion, resumen y extraccion de informacion en entornos internacionales.
-- Despliegue en servidores sin GPU de gama alta: las cuantizaciones IQ2/IQ3 y Q4 reducen el peso del modelo lo suficiente para ejecutarlo en estaciones de trabajo con VRAM limitada o incluso en CPU con llama.cpp.
-- Generacion acelerada en produccion: el uso de MTP y decodificacion especulativa reduce la latencia por token en servicios de generacion de texto con text-generation-inference.
-- Analisis de imagenes y documentos escaneados: al ser un modelo de vision, puede emplearse para extraer texto y describir contenido de imagenes cuando se dispone del fichero mmproj del repositorio estatico.
-- Experimentacion e investigacion: las cuantizaciones con imatrix permiten comparar el impacto de distintos niveles de cuantizacion en tareas de razonamiento y codigo sin necesidad de infraestructura de gran escala.
+- Asistencia de codigo en local: con cuantizaciones Q4_K_M de 21,8 GB, el modelo puede ejecutarse en una GPU de 24 GB y ofrecer autocompletado y generacion de codigo sin enviar datos a la nube, lo que resulta adecuado para entornos con requisitos de privacidad.
+- Agentes autonomos de multiples pasos: el soporte de MTP y el tag agent permiten construir pipelines donde el modelo planifica, llama a herramientas y ejecuta acciones encadenadas con menor latencia gracias a la decodificacion especulativa.
+- Analisis de documentos extensos: la ventana de contexto de hasta 1M tokens (segun el nombre del modelo) permite procesar libros, expedientes o bases de codigo completas en una sola pasada, util para resumen y extraccion de informacion.
+- Atencion al cliente multilingue: los seis idiomas soportados (incluido arabe y ruso) permiten desplegar un asistente conversacional que atiende a usuarios en varios mercados con un unico modelo.
+- Procesamiento de imagenes y documentos escaneados: al ser un modelo de vision con ficheros mmproj, puede emplearse para extraer informacion de capturas, formularios o diagramas combinando texto e imagen.
+- Despliegue en hardware de consumo: las cuantizaciones IQ3 y Q4 caben en GPUs de 16 a 24 GB, lo que permite prototipar y ejecutar en estaciones de trabajo sin infraestructura de centro de datos.
+- Generacion aumentada por recuperacion (RAG) sobre corpus grandes: el contexto largo reduce la necesidad de trocear documentos, mejorando la coherencia de las respuestas.
 
 ## Benchmarks y rendimiento
 
@@ -54,37 +54,33 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, segun el tamano de pesos de un modelo de 35,5 B):
-  - Q2_K / IQ2: en torno a 12-14 GB.
-  - Q3_K_M / IQ3: en torno a 16-18 GB.
-  - Q4_K_M / IQ4_XS: en torno a 20-22 GB.
-  - Q5_K_M: en torno a 24-26 GB.
-  - Q6_K: en torno a 28-30 GB.
-- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 6000 Ada para cuantizaciones altas; RTX 4090 (24 GB) para Q4_K_M o IQ4_XS; RTX 3090 (24 GB) en el mismo rango; GPUs de 16 GB para cuantizaciones Q3.
-- Cabe en GPU de consumo: si, en RTX 4090/3090 con cuantizaciones Q4 o inferiores; en GPUs de 16 GB con Q3 o IQ3.
-- Opciones de despliegue: llama.cpp (llama-cli, llama-server), Ollama, text-generation-inference y endpoints compatibles con GGUF; los ficheros imatrix permiten generar cuantizaciones propias.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada segun cuantizacion (tamano del fichero GGUF): i1-Q2_K 13,3 GB; i1-IQ3_S 15,7 GB; i1-Q3_K_M 17,3 GB; i1-IQ4_XS 19,3 GB; i1-Q4_K_M 21,8 GB; i1-Q5_K_M 25,4 GB; i1-Q6_K 29,3 GB.
+- Para Q4_K_M (21,8 GB) se recomienda una GPU con al menos 24 GB de VRAM (RTX 3090, RTX 4090, A10G, L4 con 24 GB) o reparto entre GPU y RAM del sistema.
+- Las cuantizaciones IQ3 (15,7-15,9 GB) caben en GPUs de 16 GB como la RTX 4060 Ti 16 GB o la RTX A4000.
+- Las cuantizaciones Q5 y Q6 (25,4-29,3 GB) requieren GPUs de 32 GB o superiores, como la A100 40 GB, la H100 o la RTX 5090 si dispone de suficiente memoria.
+- Despliegue mediante llama.cpp (llama-cli, llama-server), y compatibilidad declarada con text-generation-inference y endpoints_compatible.
+- No se dispone de datos de latencia ni throughput medidos.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Phai-A1-35B-1M-MTP-Repacked (este, GGUF i1) | 35,5 B | 1M (declarado) | Apache 2.0 | GGUF imatrix | Cuantizaciones de mradermacher sobre el modelo de prithivMLmods |
-| Phai-A1-35B-1M-MTP-Repacked-GGUF (estatico) | 35,5 B | 1M (declarado) | Apache 2.0 | GGUF estatico | Mismo modelo base, cuantizaciones sin imatrix, incluye mmproj para vision |
-| Modelo base prithivMLmods/Phai-A1-35B-1M-MTP-Repacked | 35,5 B | 1M (declarado) | Apache 2.0 | safetensors | Pesos originales en precision completa |
+| Phai-A1-35B-1M-MTP-Repacked-i1-GGUF | 35,5B (MoE) | no disponible (nombre sugiere 1M) | Apache 2.0 | GGUF | Vision, MTP, seis idiomas |
+| Modelo base Phai-A1-35B-1M-MTP-Repacked | 35,5B (MoE) | no disponible | Apache 2.0 | safetensors | Sin cuantizar, referencia original |
+| Versiones GGUF estaticas del mismo modelo | 35,5B (MoE) | no disponible | Apache 2.0 | GGUF | Sin imatrix, menor calidad relativa |
 
 No se dispone de informacion sobre otros modelos comparables de la misma categoria en la documentacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No se han publicado datos de benchmarks ni evaluaciones de calidad en la informacion disponible; el rendimiento real no esta verificado.
-- El repositorio contiene unicamente cuantizaciones GGUF; no incluye los pesos en safetensors ni el fichero mmproj para vision, que reside en el repositorio estatico.
-- Las cuantizaciones de baja precision (IQ1, IQ2, Q2) degradan la calidad de forma notable; para uso en produccion se recomienda Q4_K_M o superior.
-- La ventana de 1M tokens se deduce del nombre del modelo y no esta confirmada en la model card; el comportamiento real con contextos muy largos puede degradarse.
-- El modelo puede presentar sesgos y alucinaciones propios de los modelos de lenguaje; no se documentan mitigaciones especificas.
-- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar las condiciones del modelo base y de los datos de entrenamiento originales.
-- El soporte de idiomas se limita a los seis declarados (zh, en, ja, ar, ru, de); el rendimiento en castellano no esta documentado.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
+- Las cuantizaciones de baja precision (Q2_K, IQ2, IQ1) degradan notablemente la calidad; para produccion se recomienda IQ3_S o superior.
+- El modelo base no documenta en esta ficha los sesgos conocidos ni las tasas de alucinacion; deben evaluarse empiricamente antes de desplegar en produccion.
+- La ventana de contexto real no esta confirmada en la informacion disponible; el nombre del modelo sugiere 1M pero no hay especificacion tecnica que lo verifique.
+- El soporte de vision depende de ficheros mmproj alojados en el repositorio estatico, no en este repositorio i1-GGUF.
+- Aunque la licencia es Apache 2.0, conviene revisar las condiciones del modelo base original por si hubiera restricciones adicionales no reflejadas.
+- El modelo no incluye el idioma espanol entre los soportados, lo que puede afectar a la calidad en castellano.
+- El tamano del repositorio (279,4 GB) implica descargas parciales; hay que seleccionar la cuantizacion concreta.
+- No hay benchmarks publicados que permitan validar el rendimiento frente a alternativas.
 
 ## Enlaces
 
@@ -92,6 +88,8 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 - Modelo base: https://huggingface.co/prithivMLmods/Phai-A1-35B-1M-MTP-Repacked
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/Phai-A1-35B-1M-MTP-Repacked-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Phai-A1-35B-1M-MTP-Repacked-i1-GGUF
-- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
 - Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Analisis de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- nethype GmbH: https://www.nethype.de/

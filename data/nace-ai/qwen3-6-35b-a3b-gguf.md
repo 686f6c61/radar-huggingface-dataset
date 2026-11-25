@@ -2,115 +2,122 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por Alibaba Qwen, con 34.660.610.688 parámetros totales según los pesos en safetensors del modelo base. La ficha que nos ocupa, `nace-ai/Qwen3.6-35B-A3B-GGUF`, es una recuantización en formato GGUF publicada por el usuario nace-ai, pensada para su uso con llama.cpp, LM Studio y Ollama. El repositorio ocupa 98,8 GB e incluye varios archivos cuantizados con pesos de entre 14,30 y 15,30 GB.
+Qwen3.6-35B-A3B es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por Alibaba Qwen, con 34.660.610.688 parámetros totales y aproximadamente 3.000 millones de parámetros activos por token (de ahí el sufijo A3B). La ficha que nos ocupa, `nace-ai/Qwen3.6-35B-A3B-GGUF`, no es el modelo original sino una colección de cuantizaciones GGUF publicadas por el usuario nace-ai para su uso con llama.cpp, LM Studio y Ollama, con pesos que van de 9,47 GB a 18,02 GB.
 
-El interés principal de esta publicación no reside en el modelo base, sino en el trabajo de cuantización: el autor proporciona métricas de divergencia KL frente al modelo BF16 de referencia, comparando sus archivos con los de otros publicadores (bartowski, Unsloth, byteshape) en rangos de tamaño equivalentes. Según la model card, `IQ3_XXS` (14,30 GB, KL medio 0,074) queda más cerca del BF16 que el IQ3_XXS de bartowski (14,85 GB, KL 0,081), y `Q3_K_S` (15,30 GB, KL 0,061) iguala al UD-Q3_K_S de Unsloth (15,35 GB, KL 0,061) y lo supera en ventanas de 128K tokens.
+El interés de esta publicación radica en su metodología de cuantización: el autor reporta métricas de divergencia KL frente al modelo BF16 de referencia, comparando sus ficheros con los de otros publicadores (Unsloth, bartowski, byteshape) en rangos de tamaño equivalentes. En varios casos, sus ficheros presentan una KL media inferior a la de alternativas del mismo tamaño o mayores, lo que los hace atractivos para despliegues con restricciones de VRAM donde cada gigabyte cuenta.
 
-La licencia es Apache 2.0, lo que facilita el uso comercial. La relevancia actual es doble: por un lado, permite ejecutar un modelo MoE de ~35B parámetros en hardware de consumo gracias a la cuantización agresiva; por otro, documenta de forma poco habitual el impacto de la cuantización a contexto largo (128K), un aspecto que rara vez se mide en las publicaciones de GGUF.
+La licencia Apache 2.0 del modelo base permite uso comercial sin restricciones adicionales, lo que convierte esta colección en una opción práctica para equipos que necesitan ejecutar un MoE de 35B en hardware de consumo o en una única GPU de datacenter con cuantización agresiva.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE) transformer, según el nombre del modelo base; detalles internos no disponibles en la información proporcionada |
-| Parametros totales | 34.660.610.688 (34,66B) |
-| Parametros activos | no disponible (el nombre "A3B" sugiere ~3B activos, pero no se confirma en la información) |
-| Longitud de contexto | 128K tokens (evaluado a esa longitud en la model card) |
-| Tipos de cuantizacion | IQ3_XXS (14,30 GB) y Q3_K_S (15,30 GB); mezcla de tipos tensoriales de 2,6 a 6,6 bits por peso |
+| Arquitectura | Mixture of Experts (MoE), transformer (detalles del modelo base no disponibles en la informacion proporcionada) |
+| Parametros totales | 34.660.610.688 |
+| Parametros activos | aproximadamente 3B (inferido del sufijo A3B; no confirmado en la informacion proporcionada) |
+| Longitud de contexto | 128K tokens (evaluado a esa longitud en la model card; contexto maximo del modelo base no confirmado) |
+| Tipos de cuantizacion | IQ2_XXS, IQ3_XXS, IQ3_S, Q3_K_S, IQ4_XS (mezclas de tipos por tensor, de 2,19 a 4,16 bits por peso) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp stock) |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.6-35B-A3B es un transformer con arquitectura Mixture of Experts, a juzgar por la nomenclatura "A3B" (aproximadamente 3B parámetros activos) y los 34,66B totales. No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otras. Tampoco se documentan innovaciones como decodificación especulativa o atención lineal.
+La informacion proporcionada no describe la arquitectura interna del modelo base Qwen/Qwen3.6-35B-A3B mas alla de su naturaleza MoE y su tamano (34.660.610.688 parametros totales, con un subconjunto activo por token que el nombre comercial sugiere en torno a 3B). No se detallan el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO. Tampoco se especifican innovaciones como atencion lineal o decodificacion especulativa, aunque la model card menciona la existencia de un componente MTP (multi-token prediction) excluido del computo de tamano de los pesos de lenguaje.
 
-La contribución técnica de esta ficha es la cuantización. Los archivos no corresponden a un único tipo de llama.cpp, sino a mezclas de tipos tensoriales: `IQ3_XXS` se compone en un 30% de IQ3_S, 27% IQ3_XXS, 25% IQ2_S, 14% Q6_K y 4% de otros tipos; `Q3_K_S` es 54% IQ3_XXS, 22% IQ3_S, 14% Q6_K, 9% IQ4_XS y 1% otros. El autor emplea la técnica imatrix (indicada en los tags) y evalúa la divergencia KL frente al BF16 con 64 ventanas de 32.704 tokens, usando texto (Wikipedia, chat, tool-calls y código de GitHub) creado después del 20 de septiembre de 2026, separado del corpus de ajuste.
+La innovacion tecnica destacable de esta publicacion es el proceso de cuantizacion: los ficheros no corresponden a un unico tipo de llama.cpp, sino que mezclan tipos de tensor de 2,6 a 6,6 bits por peso, todos soportados por llama.cpp estandar. El autor uso imatrix (tag presente en el repo) y valido cada fichero midiendo la divergencia KL por token frente al modelo BF16, con intervalos de confianza bootstrap pareados al 95%. Las evaluaciones se hicieron sobre texto en ingles (articulos de Wikipedia, datos de chat y tool-calls, y codigo de GitHub) creado despues del 2026-09-20, separado del material usado para ajustar las cuantizaciones, con 64 ventanas y 32.704 tokens, usando la misma build de llama.cpp (0a94a3f2) para todos los ficheros.
 
 ## Capacidades
 
-- Generación de texto conversacional: el pipeline declarado es text-generation y los tags incluyen "conversational".
-- Soporte de tool calling y function calling: la model card menciona explícitamente datos de "chat and tool-call" en su conjunto de evaluación, lo que indica que el modelo base está entrenado para ello.
-- Contexto largo: evaluado a 128K tokens, lo que permite conversaciones multi-turno extensas y procesamiento de documentos largos.
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- Modo thinking, visión o audio: no disponibles en la información proporcionada. La model card menciona que el tamaño medido excluye "vision and MTP", lo que sugiere que el modelo base podría incluir componentes de visión y multi-token prediction, pero no se detalla su funcionamiento.
-- Razonamiento, código y matemáticas: no se documentan explícitamente en la información disponible; la evaluación incluye código y MMLU/ARC-Challenge/Winogrande como comprobación de tareas.
+- Generacion de texto conversacional: la model card incluye datos de chat y tool-calls en su conjunto de evaluacion, lo que indica soporte para dialogos multi-turno.
+- Tool calling / function calling: el texto de evaluacion incluye turnos de usuario, de herramienta y de asistente, lo que sugiere que el modelo base esta entrenado para invocar funciones.
+- Razonamiento y codigo: la evaluacion cubre codigo de GitHub y texto de prosa, y el autor reporta KL especificas para codigo a 128K de contexto.
+- Contexto largo: se evalua explicitamente a 128K tokens, con metricas separadas para chat/tool-calls, codigo y prosa.
+- Capacidades multimodales: la model card menciona que el computo de tamano excluye "vision y MTP", lo que implica que el modelo base incorpora un componente de vision; no se detalla su alcance.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Modo thinking: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistente conversacional local con contexto largo: el modelo puede mantener conversaciones multi-turno de hasta 128K tokens, lo que permite adjuntar documentos extensos o historiales completos sin truncar. La cuantización a 14-15 GB lo hace viable en GPUs de consumo.
-- Evaluación de cuantizaciones en pipelines de despliegue: los equipos que dudan entre IQ3_XXS y Q3_K_S pueden usar las tablas de KL y precisión top-1 de esta ficha para elegir el archivo según su presupuesto de VRAM y su tolerancia a la degradación.
-- Integración en herramientas de escritorio: al estar en formato GGUF compatible con LM Studio y Ollama, encaja en asistentes locales para programadores que necesitan privacidad y no quieren depender de APIs.
-- Procesamiento de código en local: la model card evalúa específicamente texto de GitHub y reporta KL de 0,063-0,077 a 128K en código, lo que respalda su uso para autocompletado o revisión de repositorios largos.
-- Investigación sobre cuantización: el repositorio documenta metodología de evaluación (ventanas de 32.704 tokens, bootstrap pareado al 95%, build 0a94a3f2 de llama.cpp), útil como referencia reproducible para estudiar el efecto de la cuantización a contexto largo.
-- Despliegue con tool calling en agentes: los tags y los datos de evaluación de tool-calls sugieren que el modelo puede integrarse en flujos de agentes que invocan funciones, aunque la información no detalla la calidad de esta capacidad.
-- Servicio de chat en hardware modesto: con 14,30 GB de pesos, un servidor con una única GPU de 24 GB puede alojar el modelo con margen para caché KV, lo que permite ofrecer un endpoint compatible (tag "endpoints_compatible").
+- Despliegue en estaciones de trabajo con una sola GPU de 24 GB: el fichero `IQ2_XXS-9.5GB` (9,47 GB de pesos de lenguaje) deja margen para cache KV y contexto en una RTX 4090 o similar, permitiendo ejecutar un MoE de 35B en hardware de consumo.
+- Asistentes de codigo en local: los ficheros `IQ3_XXS` y `Q3_K_S` mantienen una KL baja en texto de codigo a 128K de contexto (0,077 y 0,063 respectivamente), lo que los hace adecuados para autocompletado y revision de codigo en entornos sin conexion.
+- Atencion al cliente automatizada: el modelo base maneja tool-calls y dialogos multi-turno, y la cuantizacion `Q3_K_S` (15,30 GB) ofrece un equilibrio razonable entre fidelidad y huella de memoria para servir conversaciones con contexto largo.
+- Procesamiento de documentos extensos: con 128K tokens de contexto, se pueden ingerir contratos, informes o bases de codigo completas en una sola pasada; la KL en prosa a 128K es especialmente baja (0,049 para `IQ3_XXS`, 0,036 para `Q3_K_S`).
+- Pipelines de agentes con function calling: la presencia de datos de tool-calls en la evaluacion y el soporte de llama.cpp para gramaticas y plantillas de chat permiten integrar el modelo en flujos de agente multi-paso.
+- Inferencia en servidores con vLLM o TGI: aunque esta publicacion es GGUF, el modelo base Qwen/Qwen3.6-35B-A3B puede servirse en formato safetensors con motores de alto rendimiento; los GGUF sirven como alternativa para entornos con poca VRAM o CPU.
+- Experimentacion e investigacion: la metodologia de evaluacion por KL y los ficheros intermedios (de 2,19 a 4,16 bits por peso) permiten estudiar el impacto de la cuantizacion en la fidelidad del modelo a distintas longitudes de contexto.
 
 ## Benchmarks y rendimiento
 
-La model card no publica resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) comparables a leaderboards; de hecho, advierte que las precisiones de su "task check" no son comparables con puntuaciones publicadas porque se calculan por verosimilitud sin plantilla de chat ni few-shot. Se reproducen a continuación los datos de divergencia KL y precisión top-1 frente al BF16.
+La model card no reporta benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.), sino metricas de fidelidad de cuantizacion (divergencia KL frente a BF16, KL en el percentil 99,9 y precision top-1). Se reproducen a continuacion los datos publicados.
 
-| Archivo | LM GB | KL medio (512 tok) | KL p99.9 | Top-1 acc. % | KL medio (128K, chat/tool) | KL medio (128K, código) | KL medio (128K, prosa) |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| IQ3_XXS | 14,30 | 0,074 | 6,382 | 91,8 | 0,643 | 0,077 | 0,049 |
-| Q3_K_S | 15,30 | 0,061 | 6,695 | 93,1 | 0,601 | 0,063 | 0,036 |
+Ficheros destacados a 512 tokens:
 
-Comparación con publicadores alternativos (mismo rango de tamaño, 0,98-1,06x):
+| Fichero | GB (LM) | KL media | KL p99,9 | Top-1 % | Baseline (GB, KL media) | Diferencia KL (IC 95%) |
+|---|---:|---:|---:|---:|---|---|
+| IQ3_S | 13,67 | 0,085 | 7,120 | 90,9 | Unsloth UD-IQ3_S (13,67; 0,091) | −0,005 (−0,008 a −0,002) |
+| IQ3_XXS | 14,30 | 0,074 | 6,382 | 91,8 | bartowski IQ3_XXS (14,85; 0,081) | −0,007 (−0,012 a −0,003) |
+| Q3_K_S | 15,30 | 0,061 | 6,695 | 93,1 | Unsloth UD-Q3_K_S (15,35; 0,061) | +0,0000 (−0,004 a +0,006) |
 
-| Archivo | Tamaño (GB) | KL medio (512 tok) | Referencia |
-|---|---:|---:|---|
-| Nace IQ3_XXS | 14,30 | 0,074 | — |
-| bartowski IQ3_XXS | 14,85 | 0,081 | Peor que Nace |
-| byteshape Q3_K_S-3.39bpw | 14,70 | no disponible | Peor que Nace IQ3_XXS |
-| byteshape IQ3_S-3.48bpw | 15,06 | no disponible | Peor que Nace IQ3_XXS |
-| Nace Q3_K_S | 15,30 | 0,061 | — |
-| Unsloth UD-Q3_K_S | 15,35 | 0,061 | Igual a Nace a 512 tok; peor a 128K (gap −0,005; IC 95% −0,008 a −0,001) |
-| bartowski Q3_K_S | 15,50 | no disponible | Peor que Nace Q3_K_S |
-| bartowski Q3_K_M | 16,21 | no disponible | Peor que Nace Q3_K_S |
+Ficheros adicionales a 512 tokens:
 
-Task check (precisión frente al archivo de referencia, con intervalos bootstrap pareados al 95%):
+| Fichero | GB (LM) | Bits/peso | KL media | KL p99,9 | Top-1 % |
+|---|---:|---:|---:|---:|---:|
+| IQ2_XXS-9.5GB | 9,47 | 2,19 | 0,211 | 9,260 | 84,5 |
+| IQ2_XXS-9.8GB | 9,76 | 2,25 | 0,193 | 9,498 | 85,4 |
+| IQ4_XS-16.8GB | 16,75 | 3,87 | 0,050 | 6,249 | 93,9 |
+| IQ3_S-16.8GB | 16,83 | 3,88 | 0,048 | 6,055 | 94,0 |
+| IQ3_S-17.6GB | 17,58 | 4,06 | 0,045 | 6,021 | 94,1 |
+| IQ4_XS-17.7GB | 17,69 | 4,08 | 0,044 | 5,863 | 94,3 |
+| IQ4_XS-18.0GB | 18,02 | 4,16 | 0,043 | 6,240 | 94,4 |
 
-| Archivo | Baseline | MMLU | ARC-Challenge | Winogrande |
-|---|---|---|---|---|
-| IQ3_XXS | Unsloth UD-IQ3_S | similar, +0,1 (−0,3 a +0,6) | similar, +1,0 (−2,0 a +4,3) | similar, +1,7 (−0,3 a +3,6) |
-| Q3_K_S | bartowski IQ3_XXS | similar, −0,1 (−0,5 a +0,3) | similar, −0,3 (−3,0 a +2,3) | similar, −1,5 (−3,4 a +0,4) |
+A 128K de contexto:
+
+| Fichero | GB (LM) | Tipo de texto | KL media | KL p99,9 | Top-1 % |
+|---|---:|---|---:|---:|---:|
+| IQ3_XXS | 14,30 | chat y tool calls | 0,643 | 22,168 | 86,1 |
+| Q3_K_S | 15,30 | chat y tool calls | 0,601 | 21,390 | 87,0 |
+| IQ3_XXS | 14,30 | codigo | 0,077 | 9,929 | 93,7 |
+| Q3_K_S | 15,30 | codigo | 0,063 | 9,438 | 94,5 |
+| IQ3_XXS | 14,30 | prosa | 0,049 | 1,996 | 90,9 |
+| Q3_K_S | 15,30 | prosa | 0,036 | 1,444 | 92,1 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos ocupan 14,30 GB (`IQ3_XXS`) o 15,30 GB (`Q3_K_S`); a ello hay que sumar la caché KV, que a 128K tokens es significativa y no se cuantifica en los datos aportados.
-- GPU recomendadas: no disponibles en la información proporcionada. Por tamaño de pesos, encaja en GPUs de 24 GB (RTX 4090, A10G, L4) y en GPUs de 48-80 GB (A100, H100) para servir con contexto largo y concurrencia.
-- GPU de consumo: sí cabe en tarjetas de 16 GB solo con contexto corto y margen ajustado; en 24 GB (RTX 3090/4090) hay holgura para el modelo, pero el contexto a 128K requiere planificación de la caché KV.
-- Opciones de despliegue: llama.cpp (build 0a94a3f2 usado en la evaluación), LM Studio y Ollama, según la model card; el tag "endpoints_compatible" sugiere compatibilidad con endpoints de inferencia.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: entre aproximadamente 10 GB (fichero IQ2_XXS-9.5GB) y 19 GB (IQ4_XS-18.0GB) solo para pesos de lenguaje; hay que sumar la cache KV, que a 128K de contexto puede ser considerable y depende de la configuracion de llama.cpp.
+- GPU recomendadas: RTX 4090 (24 GB) o RTX 3090 para los ficheros de 9,5 a 18 GB con contexto moderado; A100 40/80 GB o H100 para contexto completo de 128K con los ficheros mayores.
+- Cabe en GPU de consumo: si, los ficheros IQ2_XXS e IQ3_S caben en GPUs de 12-16 GB con contexto limitado; los de 16-18 GB requieren 24 GB para dejar espacio a la cache KV.
+- Opciones de despliegue: llama.cpp, LM Studio y Ollama (indicados en la model card); el tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo OpenAI.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| nace-ai/Qwen3.6-35B-A3B-GGUF (esta ficha) | 34,66B totales | 128K | Apache 2.0 | GGUF | Cuantización con KL documentado y comparado con otros publicadores |
-| bartowski IQ3_XXS de Qwen3.6-35B-A3B | 34,66B totales | 128K (evaluado) | Apache 2.0 (heredada) | GGUF | 14,85 GB, KL 0,081 a 512 tok; peor que Nace en el mismo rango |
-| Unsloth UD-Q3_K_S de Qwen3.6-35B-A3B | 34,66B totales | 128K (evaluado) | Apache 2.0 (heredada) | GGUF | 15,35 GB, KL 0,061 a 512 tok; igual a Nace a 512 tok, peor a 128K |
-| byteshape Qwen3.6-35B-A3B-IQ3_S-3.48bpw | 34,66B totales | 128K (evaluado) | Apache 2.0 (heredada) | GGUF | 15,06 GB; peor que Nace IQ3_XXS a 512 tok |
+La model card compara los ficheros de nace-ai con cuantizaciones del mismo modelo base publicadas por otros autores:
 
-No se dispone de comparación con modelos de otras familias (por ejemplo, Llama o Mistral de tamaño similar) en la información proporcionada.
+| Publicador / fichero | GB (LM) | KL media (512 tok) | Notas |
+|---|---:|---:|---|
+| nace-ai IQ3_XXS | 14,30 | 0,074 | Mejor KL que bartowski IQ3_XXS y que byteshape Q3_K_S (3,39 bpw) e IQ3_S (3,48 bpw) en el rango 0,98-1,06x su tamano |
+| bartowski IQ3_XXS | 14,85 | 0,081 | Alternativa de tamano similar |
+| byteshape Q3_K_S-3.39bpw | 14,70 | no disponible | Alternativa de tamano similar |
+| byteshape IQ3_S-3.48bpw | 15,06 | no disponible | Alternativa de tamano similar |
+| nace-ai Q3_K_S | 15,30 | 0,061 | Mejor KL que byteshape IQ3_S (15,06), bartowski Q3_K_S (15,50) y bartowski Q3_K_M (16,21) |
+| Unsloth UD-Q3_K_S | 15,35 | 0,061 | Equivalente a 512 tokens; nace-ai reporta mejor KL a 128K (diferencia −0,005, IC −0,008 a −0,001) |
+
+No se dispone de comparativas con modelos de otros desarrolladores (por ejemplo, otros MoE de tamano similar) en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La cuantización introduce degradación medible: a 128K tokens el KL medio en chat y tool-calls sube a 0,643 (`IQ3_XXS`) y 0,601 (`Q3_K_S`), muy por encima de los 0,074 y 0,061 a 512 tokens. Para tareas sensibles a contexto largo conviene validar el comportamiento.
-- Los benchmarks publicados son de divergencia respecto al BF16, no de capacidad absoluta; no permiten afirmar que el modelo sea mejor o peor que otros modelos en tareas reales.
-- Las precisiones de MMLU, ARC-Challenge y Winogrande se calculan por verosimilitud sin plantilla de chat ni few-shot y no son comparables con puntuaciones de leaderboards.
-- Sesgos conocidos: no disponibles en la información proporcionada.
-- Riesgo de alucinación: no cuantificado en la información proporcionada; es un riesgo inherente a los modelos generativos.
-- Idiomas soportados: no disponibles; no se puede garantizar un rendimiento multilingüe sin verificación.
-- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base Qwen3.6-35B-A3B por si añade restricciones adicionales.
-- La model card menciona que el tamaño medido excluye "vision and MTP", lo que sugiere que el modelo base podría tener componentes multimodales o de multi-token prediction no incluidos en estos GGUF; verificar antes de asumir capacidades de visión.
-- El repositorio tiene solo 2 likes y 1545 descargas en el momento de la consulta; es una publicación reciente (creada el 12 de noviembre de 2026) con poca validación comunitaria.
+- Sesgos conocidos: no disponibles en la informacion proporcionada; el modelo base no documenta sesgos en esta ficha.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje; la cuantizacion agresiva (IQ2_XXS, 2,19 bits por peso) incrementa la divergencia respecto a BF16 (KL media 0,211 y top-1 del 84,5%), lo que puede amplificar errores.
+- Limitaciones de contexto: aunque se evalua a 128K, la KL en chat y tool-calls a esa longitud es alta (0,643 para IQ3_XXS), muy superior a la de prosa y codigo; el rendimiento conversacional con contextos muy largos puede degradarse.
+- Idiomas: no se documenta que idiomas soporta el modelo base; la evaluacion de la cuantizacion se hizo solo con texto en ingles.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base Qwen/Qwen3.6-35B-A3B por si anade condiciones adicionales.
+- Caveat de produccion: los ficheros mezclan tipos de tensor y requieren una build de llama.cpp que los soporte; verificar compatibilidad con la version desplegada. La evaluacion usa una unica build (0a94a3f2) y texto posterior a 2026-09-20, lo que limita la comparabilidad con otras evaluaciones.
+- El autor reporta solo 2 likes y 2.803 descargas en el momento de la consulta, lo que indica una adopcion limitada y poca validacion independiente.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/nace-ai/Qwen3.6-35B-A3B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- llama.cpp: https://github.com/ggml-org/llama.cpp
-- LM Studio: no disponible en la información proporcionada
-- Ollama: no disponible en la información proporcionada
-- Paper, blog o demo del modelo base: no disponibles en la información proporcionada
+- llama.cpp: no disponible en la informacion proporcionada
+- Papers, blogs o demos adicionales: no disponibles en la informacion proporcionada

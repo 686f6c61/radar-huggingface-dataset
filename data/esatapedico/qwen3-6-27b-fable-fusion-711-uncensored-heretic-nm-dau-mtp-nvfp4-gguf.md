@@ -2,98 +2,116 @@
 
 ## Resumen
 
-`Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP-NVFP4-GGUF` es una familia de cuatro archivos GGUF híbridos creada por el usuario esatapedico, que combina la cuantización nativa NVFP4 del backbone de 64 bloques transformer con tensores extra de precisión variable según el nivel elegido. El modelo base es `DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP`, un fine-tune y merge de múltiples etapas sobre el modelo denso `Qwen/Qwen3.6-27B` de Alibaba, que destaca por superar la barrera de 700 puntos en el benchmark ARC-C en cuantizaciones de 8 y 4 bits, algo inédito en modelos abiertos de este tamaño.
+Esta ficha describe una familia de cuatro cuantizaciones GGUF del modelo `Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP`, publicadas por el usuario `esatapedico` en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un trabajo de conversión y ensamblado de tensores: el backbone NVFP4 procede del checkpoint safetensors de `maci0`, el fine-tune subyacente es de `DavidAU` y el modelo original es `Qwen/Qwen3.6-27B` de Alibaba. El objetivo declarado es conservar la ventaja de prefill de NVFP4, reducir el tamaño del archivo por debajo de los 24 GB y acelerar la decodificación mediante una cabeza MTP de mayor calidad.
 
-El objetivo de esta conversión es doble: mantener la ventaja de prefill de NVFP4 en hardware Blackwell (sm_120) y reducir el tamaño del archivo por debajo de los 24 GB para que quepa en configuraciones de doble GPU de 16 GB. Los cuatro niveles (LOW, MEDIUM, HIGH y VERY-HIGH) comparten el mismo backbone NVFP4 de 13,70 GB y se diferencian en la precisión del LM head, el embedding y el MTP draft head, lo que permite ajustar el equilibrio entre calidad de salida y uso de VRAM. Además, el modelo mantiene capacidades de visión si se combina con el proyector mmproj publicado por DavidAU.
+El modelo subyacente es un transformer denso de 27.320.698.848 parámetros (unos 27,3 mil millones), con 64 capas y una disposición híbrida Gated DeltaNet + Gated Attention. Su contexto nativo es de 262.144 tokens. La familia publicada aquí ofrece cuatro niveles (LOW, MEDIUM, HIGH y VERY-HIGH) que comparten un backbone NVFP4 idéntico de 496 tensores (13,70 GB) y difieren únicamente en diez tensores: la cabeza de salida, el embedding de tokens y los ocho tensores de la cabeza de borrador MTP.
 
-La relevancia de este lanzamiento radica en que es uno de los primeros GGUFs que aprovecha la cuantización nativa NVFP4 (tipo GGML 40) sin re-cuantización, incorpora decodificación especulativa MTP integrada en el propio archivo y ofrece un rendimiento de razonamiento de nivel frontera en un formato desplegable en hardware de consumo. Todo el trabajo es un derivado de artefactos Apache-2.0, sin entrenamiento adicional.
+La relevancia de esta publicación es doble. Por un lado, demuestra un flujo de conversión que preserva el tipo nativo GGML 40 (NVFP4) sin re-cuantización ni ida y vuelta de dequant/requant, algo poco habitual. Por otro, integra la cabeza MTP de decodificación especulativa dentro del propio GGUF, de modo que no hace falta un archivo drafter separado. Está pensada para hardware Blackwell (sm_120) y para despliegues en llama.cpp con presupuestos de VRAM ajustados.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Dense transformer híbrido: Gated DeltaNet + Gated Attention (64 capas) |
-| Parametros totales | 27.320.698.848 (27,32 B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
+| Arquitectura | Transformer denso híbrido Gated DeltaNet + Gated Attention (64 capas) |
+| Parámetros totales | 27.320.698.848 (27,3 B) |
+| Parámetros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 262.144 tokens nativos |
-| Tipos de cuantizacion | NVFP4 (backbone, nativo GGML tipo 40), Q5_0, Q8_0, BF16, IQ4_XS, Q6_K (tensores extra según nivel) |
-| Idiomas soportados | Inglés, multilingüe |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (4 archivos: LOW, MEDIUM, HIGH, VERY-HIGH) |
+| Tipos de cuantización | NVFP4 (backbone), Q5_0, Q8_0, IQ4_XS, Q6_K, BF16, F32 (según nivel) |
+| Idiomas soportados | Inglés y multilingüe |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (tipo nativo GGML 40 para NVFP4) |
+
+Detalle de los cuatro niveles publicados:
+
+| Nivel | lm_head (`output.weight`) | token_embd | Cabeza MTP | Tamaño |
+|---|---|---|---|---|
+| LOW | Q5_0 (0,87 GB) | IQ4_XS | IQ4_XS | 15,49 GB |
+| MEDIUM | Q8_0 (1,35 GB) | Q6_K | IQ4_XS | 16,34 GB |
+| HIGH | BF16 (2,54 GB) | Q6_K | IQ4_XS | 17,53 GB |
+| VERY-HIGH | BF16 | BF16 | BF16 | 19,65 GB |
+
+Composición de tensores (idéntica en los cuatro niveles salvo los diez tensores extra, sobre un total de 1.858):
+
+| Tipo GGML | Tensores | Tamaño | Componente |
+|---|---|---|---|
+| NVFP4 | 496 | 13,70 GB | 64 bloques transformer (QKV, salida de atención, gate/up/down de FFN, gates) |
+| F32 | 1.352 | 0,01 GB | normas, gates, escalas |
+| Dependiente del nivel | 10 | Variable | `output.weight`, `token_embd.weight`, `blk.64.*` (cabeza MTP, incl. `nextn.eh_proj`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base `Qwen3.6-27B` de Alibaba utiliza una arquitectura híbrida que combina Gated DeltaNet y Gated Attention en sus 64 capas transformer, con un contexto nativo de 262.144 tokens. Sobre esta base, DavidAU aplicó un proceso de fine-tune y merge multi-etapa que integra contribuciones de múltiples modelos, dando como resultado `Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP`. Este modelo se distingue por alcanzar una puntuación ARC-C de 0,711 en cuantización de 8 bits y 0,701 en 4 bits, superando por primera vez en un modelo abierto de 27B el umbral de 700 puntos que antes solo lograban sistemas propietarios como OpenAI, Claude o Gemini.
+El modelo base es un transformer denso de 64 capas que combina capas de Gated DeltaNet con capas de Gated Attention, una disposición híbrida que busca reducir el coste de atención en contextos largos manteniendo la calidad de atención completa en parte de la red. El contexto nativo es de 262.144 tokens. Sobre esta base, `DavidAU` aplicó un proceso de fine-tune y merge (denominado Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP) del que no se detallan en la información disponible ni el volumen de tokens, ni la composición del dataset, ni si hubo RLHF o DPO.
 
-La conversión a GGUF realizada por esatapedico preserva los tensores NVFP4 nativos del checkpoint safetensors de maci0 sin re-cuantización ni ciclos de dequantización-recuantización. La innovación técnica principal es el tensor splice: los 496 tensores del backbone (13,70 GB) se mantienen idénticos en los cuatro niveles, mientras que los 10 tensores extra (output.weight, token_embd.weight y los 8 tensores del bloque MTP draft) varían en precisión. El MTP draft head está embebido en el propio GGUF, por lo que no requiere un drafter externo y se activa en llama.cpp con `--spec-type draft-mtp`. El LM head es el principal factor de calidad: pasar de Q5_0 a BF16 elimina progresivamente el ruido de cuantización en el tensor que determina la distribución de siguiente token.
+La innovación técnica principal de esta publicación no está en el entrenamiento, sino en el ensamblado de tensores. El backbone NVFP4 se convierte a GGUF preservando el tipo nativo GGML 40 desde el checkpoint de `maci0`, sin re-cuantización. Los diez tensores restantes se cuantizan por nivel: la cabeza de salida actúa como principal palanca de calidad (Q5_0 → Q8_0 → BF16), mientras que la cabeza de borrador MTP se mantiene en IQ4_XS para preservar la calidad de las predicciones del drafter, que es lo que hace rentable la decodificación especulativa. La cabeza MTP está embebida en el GGUF y se activa en llama.cpp con `--spec-type draft-mtp`.
+
+El autor indica que el modelo es capaz de visión, aunque los GGUF publicados son solo de texto: la funcionalidad se obtiene emparejándolos con el proyector de visión del repositorio `DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF` (archivos `mmproj-BF16.gguf`, `mmproj-F16.gguf` o `mmproj-F32.gguf`) mediante el parámetro `--mmproj`.
 
 ## Capacidades
 
-- Generación de texto y razonamiento complejo con nivel ARC-C de 0,711 en 8 bits y 0,701 en 4 bits, comparable a modelos propietarios de frontera.
-- Razonamiento multi-step y resolución de problemas que requieren inferencia lógica avanzada.
-- Capacidades de visión: aunque los GGUFs son solo texto, el modelo puede procesar imágenes si se combina con el proyector `mmproj-BF16.gguf`, `mmproj-F16.gguf` o `mmproj-F32.gguf` de DavidAU, apuntando con `--mmproj`.
-- Decodificación especulativa MTP integrada: el draft head embebido predice tokens que el modelo principal acepta, acelerando el decode en hardware Blackwell.
-- Soporte de contexto largo de 262.144 tokens, adecuado para documentos extensos y conversaciones multi-turno prolongadas.
-- Capacidades multilingües con énfasis en inglés.
-- Cuatro niveles de precisión (LOW, MEDIUM, HIGH, VERY-HIGH) que permiten ajustar el equilibrio entre calidad y consumo de VRAM.
-- Compatible con llama.cpp y endpoints compatibles, sin necesidad de archivos adicionales para el drafter.
+- Generación de texto conversacional y de un solo turno, con pipeline declarado `text-generation`.
+- Razonamiento y matemáticas: capacidades heredadas del modelo base Qwen3.6-27B, si bien no se aportan resultados concretos en la información disponible.
+- Generación de código: el autor menciona explícitamente el uso en coding y tool use como escenario relevante para la elección del sampler.
+- Reproducción literal de cadenas largas (rutas, identificadores, argumentos de herramientas), motivo por el que el autor retiró la recomendación del sampler DRY.
+- Capacidad de visión (fuera de los GGUF, mediante proyector `mmproj` externo).
+- Decodificación especulativa con cabeza MTP embebida, activable con `--spec-type draft-mtp`.
+- Soporte multilingüe declarado (etiquetas `en` y `multilingual`); el grado de cobertura por idioma no está detallado.
+- Soporte de tool calling y function calling: no confirmado explícitamente en la información disponible, aunque el autor lo trata como caso de uso relevante.
+- Modo thinking: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Razonamiento científico y resolución de problemas ARC-C: el modelo alcanza puntuaciones de 711 en 8 bits y 701 en 4 bits, lo que lo hace adecuado para tareas de razonamiento abstracto, puzzles visuales y lógica de alto nivel. Se usaría con el proyector de visión para tareas que requieren comprensión de diagramas y patrones.
-- Análisis de documentos extensos: con 262.144 tokens de contexto, puede procesar libros completos, informes técnicos o expedientes legales en una sola pasada, manteniendo coherencia a lo largo de decenas de miles de tokens.
-- Generación de código con tool calling: el modelo soporta reproducción verbatim de cadenas largas (paths, identificadores, argumentos de herramientas), lo que lo hace útil para pipelines de CI/CD, generación de código en producción y automatización de tareas de desarrollo.
-- Despliegue en hardware de consumo: con el nivel LOW (15,49 GB) cabe en una sola GPU de 24 GB o en configuraciones de doble GPU de 16 GB, permitiendo inferencia local de alta calidad sin infraestructura de centro de datos.
-- Asistente de investigación multilingüe: su capacidad multilingüe y su contexto largo permiten resumir, traducir y analizar literatura académica en varios idiomas, manteniendo referencias cruzadas entre documentos.
-- Experimentación con decodificación especulativa: el MTP draft head embebido permite investigar y optimizar el rendimiento de speculative decoding en hardware Blackwell, midiendo tasas de aceptación y velocidad de decode en diferentes configuraciones.
+- Asistencia de código en local con presupuesto de VRAM ajustado: los niveles LOW (15,49 GB) y MEDIUM (16,34 GB) permiten ejecutar un modelo de 27 B en una GPU consumer de 16 GB o en una configuración de dos GPU de 16 GB, manteniendo la capacidad de generar y completar código en un IDE o CLI.
+- Reproducción fiel de rutas y argumentos en pipelines de herramientas: el autor desaconseja el sampler DRY precisamente para preservar la reproducción literal de cadenas largas, lo que hace estos GGUF adecuados para agentes que emiten comandos de shell, rutas de fichero o JSON de llamadas a funciones.
+- Procesamiento de documentos largos: con 262.144 tokens de contexto nativo, el modelo puede ingerir repositorios completos, expedientes o transcripciones extensas en una sola ventana, siempre que la VRAM permita cachear el contexto.
+- Despliegue en estaciones de trabajo Blackwell: al estar orientado a sm_120 y conservar el backbone NVFP4, encaja en equipos con GPU RTX 50xx o Blackwell profesional donde interesa maximizar el throughput de prefill.
+- Aceleración de decodificación en producción: la cabeza MTP embebida permite activar decodificación especulativa sin gestionar un segundo archivo de drafter, simplificando el empaquetado de contenedores y el versionado de artefactos.
+- Análisis de imágenes con documentación técnica: emparejando el GGUF con un `mmproj` BF16 se puede usar el modelo para extraer texto de capturas, diagramas o documentación escaneada, aunque el GGUF en sí sea solo de texto.
+- Experimentación e investigación sobre cuantización NVFP4: la preservación del tipo GGML 40 sin re-cuantización convierte esta familia en un banco de pruebas útil para medir el impacto real de NVFP4 frente a Q4/Q5 en un modelo de 27 B.
 
 ## Benchmarks y rendimiento
 
-Según los resultados publicados por DavidAU y recogidos en las búsquedas web:
-
-| Benchmark | Resultado |
-|---|---|
-| ARC-C (8-bit quant) | 0,711 |
-| ARC-C (4-bit quant) | 0,701 |
-
-No se han publicado resultados adicionales de benchmarks (MMLU, HumanEval, GSM8K) en la información disponible. El modelo es el primero de su clase (27B, open source) en superar el umbral de 700 puntos en ARC-C tanto en 8 como en 4 bits, un logro que anteriormente solo pertenecía a modelos propietarios de OpenAI, Claude y Gemini.
+No se han publicado resultados de benchmarks en la información disponible. El autor menciona de forma cualitativa una ventaja de prefill derivada de NVFP4 y una mejora de velocidad de decodificación gracias a la cabeza MTP, pero no aporta cifras de tokens por segundo, latencias ni puntuaciones en MMLU, HumanEval, GSM8K u otras pruebas. Tampoco se documentan comparaciones numéricas entre los cuatro niveles.
 
 ## Requisitos de hardware
 
-- VRAM estimada: los cuatro archivos ocupan entre 15,49 GB (LOW) y 19,65 GB (VERY-HIGH). El backbone NVFP4 ocupa 13,70 GB en todos los casos.
-- GPU recomendadas: el formato NVFP4 nativo requiere hardware Blackwell con soporte sm_120 (por ejemplo, RTX 50-series). El autor indica que ha probado los cuatro niveles en una configuración de doble GPU de 16 GB.
-- Compatibilidad con GPU de consumo: sí, el nivel LOW cabe en una sola GPU de 24 GB (RTX 3090/4090 no Blackwell, pero el formato NVFP4 requiere sm_120) o en configuraciones duales de 16 GB.
-- Opciones de despliegue: llama.cpp con soporte para NVFP4 y MTP (`--spec-type draft-mtp`), así como cualquier endpoint compatible con GGUF.
-- Latencia y throughput: no se han publicado cifras concretas. El autor indica que la ventaja principal es el prefill rápido gracias a NVFP4 y un decode más rápido gracias al MTP draft head de mayor calidad.
+- VRAM estimada para inferencia: el tamaño de archivo marca el mínimo aproximado. LOW requiere unos 15,5 GB, MEDIUM unos 16,3 GB, HIGH unos 17,5 GB y VERY-HIGH unos 19,7 GB, a los que hay que sumar la caché KV del contexto utilizado.
+- GPU recomendadas: el autor apunta explícitamente a Blackwell sm_120. En la práctica, los niveles LOW y MEDIUM caben en una GPU de 16 GB (por ejemplo, una RTX 5060 Ti de 16 GB) o en configuraciones de dos GPU de 16 GB, que es el setup que el autor declara haber usado. Los niveles HIGH y VERY-HIGH requieren 24 GB o más (RTX 4090, RTX 5090, A100 40 GB, H100).
+- Cabe en GPU consumer: sí, en función del nivel. LOW y MEDIUM en 16 GB; HIGH y VERY-HIGH en 24 GB.
+- Opciones de despliegue: llama.cpp es el runtime de referencia, dado que el formato es GGUF y el tipo NVFP4 corresponde al tipo GGML 40. La decodificación especulativa se activa con `--spec-type draft-mtp`. El repositorio incluye la etiqueta `endpoints_compatible`. No se documenta soporte para vLLM, TGI ni Ollama en la información disponible.
+- Latencia y throughput: no disponibles. El autor no publica cifras de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | ARC-C | Licencia |
-|---|---|---|---|---|---|
-| Qwen3.6-27B-Fable-Fusion-711 (este) | 27,32 B | 262.144 | NVFP4 + extras | 0,711 (8-bit) / 0,701 (4-bit) | Apache-2.0 |
-| Qwen/Qwen3.6-27B (base) | 27 B | 262.144 | — | no disponible | Apache-2.0 |
-| DavidAU/Qwen3.6-27B-Fable-Fusion-711-NEO-MAX-MTP-GGUF | 27 B | 262.144 | GGUF (Q5_0/Q6_K/IQ4_XS) | 0,711 (8-bit) / 0,701 (4-bit) | Apache-2.0 |
+La información disponible no permite una comparación numérica fiable con alternativas, ya que no se aportan benchmarks. La tabla siguiente recoge únicamente los datos estructurales conocidos del modelo y de su base.
 
-La diferencia principal frente al GGUF de DavidAU es el uso de NVFP4 nativo para el backbone (13,70 GB frente a pesos más pesados en otras cuantizaciones) y el MTP draft head embebido, que elimina la necesidad de un drafter externo. El modelo base sin fine-tune no alcanza los resultados ARC-C del merge de DavidAU.
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Este modelo (Qwen3.6-27B-Fable-Fusion-711 NVFP4 GGUF) | 27,3 B | 262.144 | GGUF NVFP4 + extras | Apache 2.0 | Cuatro niveles de 15,49 a 19,65 GB; MTP embebida |
+| Qwen/Qwen3.6-27B | 27 B (denso) | 262.144 | Safetensors | Apache 2.0 | Modelo base original de Alibaba |
+| DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP | 27 B (denso) | No disponible en esta información | Safetensors | Apache 2.0 | Fine-tune y merge sobre el que se construye esta familia |
+| maci0/Qwen3.6-27B-Fable-Fusion-711-...-NVFP4 | 27 B (denso) | No disponible en esta información | Safetensors NVFP4 | Apache 2.0 | Checkpoint de origen del backbone NVFP4 |
+
+No se dispone de datos de rendimiento comparado con otros modelos de 27 B, por lo que no se puede establecer una comparación de calidad.
 
 ## Limitaciones y advertencias
 
-- El formato NVFP4 requiere hardware Blackwell (sm_120); no funcionará en GPUs Ampere o anteriores, lo que limita su despliegue a hardware muy reciente.
-- Los GGUFs son solo texto; las capacidades de visión requieren descargar el proyector mmproj por separado del repositorio de DavidAU.
-- El autor advierte de un modo de fallo de bucle de repetición en niveles bajos de precisión del LM head (LOW); los niveles MEDIUM, HIGH y VERY-HIGH lo mitigan con mayor precisión en output.weight.
-- El sampler DRY anti-loop ya no se recomienda porque interfiere con la reproducción verbatim de cadenas largas, importante para código y tool use.
-- No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) para esta conversión específica, solo ARC-C.
-- Al ser un derivado sin entrenamiento, la calidad final depende enteramente del trabajo de DavidAU y maci0; cualquier sesgo o alucinación presente en el modelo base se mantiene.
-- El modelo se describe como "uncensored", lo que implica que no tiene los guardrails habituales de seguridad; debe usarse con precaución en entornos de producción.
+- No es un modelo entrenado: se trata de una conversión y ensamblado de tensores sobre artefactos existentes. Cualquier limitación del fine-tune de `DavidAU` se hereda íntegramente.
+- El autor advierte de un "modo de fallo de bucle de repetición" poco frecuente, que los niveles MEDIUM, HIGH y VERY-HIGH mitigan parcialmente elevando la precisión de los tensores de salida. LOW es el más expuesto.
+- La recomendación de sampler DRY fue retirada: interfiere con la reproducción literal de cadenas largas, lo que puede romper rutas, identificadores y argumentos de herramientas en flujos de código y agentes.
+- El autor pide explícitamente no tratar las cifras de rendimiento como significativas, ya que no se aportan mediciones formales.
+- Dependencia de hardware Blackwell: el backbone NVFP4 y el tipo GGML 40 requieren un runtime y una GPU que lo soporten; en hardware anterior el rendimiento o la compatibilidad pueden degradarse.
+- Los GGUF son solo de texto. La visión requiere descargar un `mmproj` de otro repositorio y emparejarlo manualmente.
+- Idiomas: se declara inglés y multilingüe, pero no se especifica cobertura ni calidad por idioma. Para castellano no hay evaluación publicada.
+- Riesgo de alucinación: no cuantificado en la información disponible. Al ser un fine-tune "uncensored", cabe esperar una menor resistencia a generar contenido sensible o factualmente incorrecto.
+- Licencia Apache 2.0: permite uso comercial, pero conviene verificar la cadena de atribución (Alibaba, DavidAU, maci0, esatapedico) y las condiciones de los artefactos intermedios.
+- El repositorio ocupa 84,5 GB, aunque cada archivo individual sea mucho menor; hay que planificar el almacenamiento.
+- Trazabilidad limitada: el autor no documenta el proceso de evaluación ni métricas de perplejidad por nivel.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/esatapedico/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP-NVFP4-GGUF
-- Nivel LOW: https://huggingface.co/esatapedico/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP-NVFP4-LOW-GGUF
-- Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP
-- GGUF de DavidAU con mmproj: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
-- Checkpoint NVFP4 (maci0): https://huggingface.co/maci0/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP-NVFP4
-- Modelo base original (Alibaba): https://huggingface.co/Qwen/Qwen3.6-27B
-- Artículo sobre el logro ARC-C: https://hackernoon.com/qwen36-27b-fable-fusion-breaks-the-700-arc-c-barrier
-- Ficha en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/qwen3.6-27b-fable-fusion-711-uncensored-heretic-nm-dau-neo-max-mtp-gguf-davidau
-- Ko-fi del autor: https://ko-fi.com/esatapedico
+- Modelo base (fine-tune): https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP
+- Repositorio de cuantizaciones y proyectores de visión de DavidAU: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
+- Checkpoint NVFP4 en safetensors: https://huggingface.co/maci0/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP-NVFP4
+- Modelo original de Alibaba: https://huggingface.co/Qwen/Qwen3.6-27B
+- Sitio del autor: https://www.esatapedico.com

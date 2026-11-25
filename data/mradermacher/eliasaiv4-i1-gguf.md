@@ -2,50 +2,50 @@
 
 ## Resumen
 
-EliasAIv4-i1-GGUF es la versión cuantizada en formato GGUF del modelo EliasAIv4, un fine-tuning de Qwen2.5-7B desarrollado por ETME-TECH y orientado a conversación en alemán. El modelo original parte de la base Qwen2.5-7B (7.615.616.512 parámetros) y ha sido ajustado específicamente para el idioma alemán, manteniendo la licencia Apache 2.0 del modelo base. Esta variante ha sido generada por mradermacher, un conocido publicador de cuantizaciones GGUF, aplicando cuantización con imatrix (importancia matricial) para preservar la calidad en tamaños reducidos.
+EliasAIv4-i1-GGUF es una recopilación de cuantizaciones GGUF del modelo ETME-TECH/EliasAI-7B-v1.0, un ajuste fino (fine-tune) de Qwen2.5-7B orientado a conversación en alemán. El trabajo de cuantización lo firma mradermacher, un publicador habitual de versiones GGUF de modelos open source, y emplea cuantizaciones con imatrix (importance matrix) para preservar mejor la calidad en los rangos bajos de bits. El modelo base cuenta con 7.615.616.512 parámetros reales (según los tensores en safetensors) y hereda la arquitectura transformer densa de la familia Qwen2.5.
 
-La relevancia de esta ficha radica en que ofrece un modelo de 7B parámetros con licencia permisiva, especializado en alemán y disponible en múltiples niveles de cuantización que van desde 2,1 GB hasta 6,4 GB. Esto permite desplegar el modelo en hardware de consumo, desde GPUs modestas hasta estaciones de trabajo más potentes, sin necesidad de infraestructura de datacenter. La cuantización con imatrix (denominada i1) suele ofrecer mejor relación calidad/tamaño que las cuantizaciones estáticas equivalentes.
+La relevancia de esta ficha reside en que permite ejecutar un modelo de 7B especializado en alemán en hardware de consumo, desde equipos con poca VRAM (variantes IQ1/IQ2 de 2-3 GB) hasta configuraciones de 8-12 GB (Q5_K_M, Q6_K). Al estar construido sobre Qwen2.5, conserva el tokenizador y el formato de chat de dicha familia, lo que facilita su integración en herramientas como llama.cpp, Ollama o servidores compatibles con la API de OpenAI. La licencia Apache 2.0 del modelo base y de esta cuantización elimina fricciones para uso comercial.
 
-El modelo está pensado para aplicaciones conversacionales en alemán, con soporte para despliegue mediante llama.cpp y herramientas compatibles con GGUF. Al estar basado en Qwen2.5, hereda la arquitectura transformer decoder-only del modelo original, aunque la información disponible no detalla cambios específicos en la arquitectura más allá del fine-tuning. La fecha de creación del repositorio (noviembre de 2026) y la ausencia de descargas y likes indican que se trata de una publicación reciente y con poca tracción todavía.
+El repositorio ocupa 89 GB porque incluye todas las variantes de cuantización (desde IQ1_S de 2,0 GB hasta Q6_K de 6,4 GB) más el fichero imatrix. No se dispone de información publicada sobre el proceso de entrenamiento del fine-tune, los datos utilizados ni evaluaciones de rendimiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivada de Qwen2.5-7B) |
+| Arquitectura | Transformer denso (derivado de Qwen2.5-7B) |
 | Parametros totales | 7.615.616.512 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Qwen2.5-7B soporta 32.768 tokens, pero no se confirma para este fine-tuning) |
-| Tipos de cuantizacion | i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-Q3_K_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-IQ4_NL, i1-Q4_K_S, i1-Q4_K_M, i1-Q5_K_S, i1-Q6_K, mas imatrix |
-| Idiomas soportados | aleman (de) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible (heredada de Qwen2.5-7B, sin confirmar en la model card) |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (todas con imatrix) |
+| Idiomas soportados | Alemán (de) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Formato de pesos | GGUF (cuantizado); el modelo base original en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente corresponde a Qwen2.5-7B, un transformer decoder-only con atención causal estándar. El modelo EliasAIv4 es un fine-tuning de esta base, realizado por ETME-TECH, orientado a conversación en alemán. La información disponible no especifica el volumen de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO en el ajuste. Tampoco se detallan innovaciones arquitectónicas propias más allá de las heredadas del modelo base.
+El modelo subyacente es un fine-tune de Qwen2.5-7B, un transformer decoder-only denso con 7.615 millones de parámetros. La model card de la cuantización no documenta la composición del dataset de ajuste fino, el número de tokens empleados, ni si se aplicaron técnicas de RLHF, DPO o SFT. Tampoco se detalla si se modificó el tokenizador o la ventana de contexto respecto al modelo original. La etiqueta "conversational" y el idioma "de" indican que el ajuste se orientó a diálogo en alemán.
 
-La variante aquí descrita es una cuantización GGUF generada por mradermacher mediante el método i1 (imatrix), que calcula matrices de importancia a partir de datos de calibración para asignar mayor precisión a los pesos más relevantes. El repositorio incluye el fichero imatrix (0,1 GB) para que otros usuarios puedan generar sus propias cuantizaciones. Se ofrecen tanto cuantizaciones estáticas (en el repositorio hermano EliasAIv4-GGUF) como dinámicas con imatrix (este repositorio), siendo las IQ generalmente preferibles frente a las no-IQ de tamaño similar.
+La innovación técnica de este repositorio no está en el modelo, sino en el proceso de cuantización: mradermacher emplea cuantizaciones i1 (imatrix) que usan una matriz de importancia calculada sobre un corpus de calibración para asignar más bits a los pesos con mayor impacto en la perplejidad. Esto permite que variantes como IQ3_S (3,6 GB) superen en calidad a cuantizaciones estáticas del mismo tamaño, según las notas del propio autor. El repositorio incluye el fichero imatrix (0,1 GB) para que terceros puedan generar sus propias cuantizaciones.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno en alemán, con especialización en registro conversacional.
-- Razonamiento y respuesta a preguntas en alemán, heredando las capacidades del modelo base Qwen2.5-7B.
-- Generación de código y matemáticas: no se documenta explícitamente para este fine-tuning, pero el modelo base Qwen2.5-7B las soporta; la especialización en alemán podría reducir el rendimiento en estas tareas.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada para este fine-tuning.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: limitadas al alemán según la model card (tag `language: de`); el modelo base es multilingüe, pero el fine-tuning está orientado a alemán.
-- Capacidades especiales (thinking mode, visión, audio): no disponible.
+- Generación de texto y conversación multi-turno en alemán, con estilo conversacional.
+- Razonamiento y respuesta a preguntas generales, heredado de las capacidades de Qwen2.5-7B.
+- Generación de código y matemáticas básicas (capacidad del modelo base, no validada específicamente para este fine-tune).
+- Soporte de tool calling / function calling: no confirmado en la model card para este fine-tune.
+- Soporte de agentes y razonamiento multi-paso: no confirmado.
+- Capacidades multilingües: limitadas al alemán según la etiqueta de idioma; el modelo base Qwen2.5 es multilingüe, pero el fine-tune declara solo "de".
+- Capacidades especiales (thinking mode, visión, audio): no disponibles.
 
 ## Casos de uso
 
-- Atención al cliente en alemán: el modelo puede gestionar conversaciones multi-turno en alemán con un tono conversacional, adecuado para chatbots de soporte en empresas germanoparlantes. Su tamaño de 7B permite desplegarlo en infraestructura moderada.
-- Asistentes virtuales para pymes alemanas: con cuantizaciones Q4_K_M (4,8 GB) puede ejecutarse en GPUs de consumo, facilitando asistentes locales sin dependencia de la nube y con costes de inferencia bajos.
-- Procesamiento de documentación interna en alemán: resumen y reescritura de textos corporativos, correos y actas, aprovechando la especialización lingüística del fine-tuning.
-- Generación de contenido editorial en alemán: borradores de artículos, descripciones de producto y textos de marketing con estilo conversacional.
-- Despliegue en entornos con requisitos de soberanía de datos: al ser Apache 2.0 y ejecutable localmente con llama.cpp, permite mantener los datos en infraestructura propia, relevante para sectores regulados en Alemania.
-- Prototipado rápido de aplicaciones de chat en alemán: la variedad de cuantizaciones (desde 2,1 GB hasta 6,4 GB) permite iterar en portátiles y estaciones de trabajo sin GPU dedicada, usando llama.cpp u Ollama.
-- Investigación en ajuste fino y cuantización: el fichero imatrix incluido permite a investigadores generar cuantizaciones propias y estudiar el impacto de la cuantización en un modelo especializado en alemán.
+- Asistente conversacional en alemán para atención al cliente: el modelo puede mantener diálogos multi-turno en alemán con un tono conversacional, desplegado en local con llama.cpp u Ollama para evitar enviar datos de clientes a la nube.
+- Chatbot de soporte interno para empresas germanoparlantes: al ser Apache 2.0, se puede integrar en herramientas internas sin coste de licencia, usando la cuantización Q4_K_M (4,8 GB) en estaciones de trabajo con GPU de 8 GB.
+- Generación de borradores de correo y documentación en alemán: el fine-tune conversacional es adecuado para redactar textos cotidianos; la variante Q5_K_M (5,5 GB) ofrece un equilibrio razonable entre calidad y velocidad en una RTX 3060 de 12 GB.
+- Prototipado de aplicaciones de IA en alemán en portátiles: las variantes IQ2/IQ3 (2,4-3,7 GB) permiten ejecutar el modelo en CPU o en GPUs integradas, útil para demos y pruebas de concepto sin infraestructura dedicada.
+- Evaluación comparativa de fine-tunes alemanes: el repositorio ofrece 24 cuantizaciones del mismo modelo, lo que permite medir el impacto de la compresión en la calidad de las respuestas en alemán con un único modelo de referencia.
+- Despliegue en entornos con requisitos de privacidad: al ejecutarse completamente en local y con licencia permisiva, encaja en escenarios sanitarios o legales donde el texto no puede salir de la organización.
+- Investigación sobre cuantización: el fichero imatrix incluido permite reproducir o generar nuevas cuantizaciones y estudiar la relación entre bits por peso y perplejidad en modelos de 7B.
 
 ## Benchmarks y rendimiento
 
@@ -53,45 +53,47 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (según cuantización):
-  - i1-IQ1_M (2,1 GB): ~2,5-3 GB de VRAM.
-  - i1-IQ2_M (2,9 GB): ~3,5-4 GB de VRAM.
-  - i1-Q3_K_M (3,9 GB): ~4,5-5 GB de VRAM.
-  - i1-Q4_K_M (4,8 GB): ~5,5-6 GB de VRAM (recomendada por el autor como "fast, recommended").
-  - i1-Q5_K_S (5,4 GB): ~6-6,5 GB de VRAM.
-  - i1-Q6_K (6,4 GB): ~7-7,5 GB de VRAM.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090, A100, H100 para despliegues de mayor concurrencia.
-- Cabe en GPU de consumo: sí, desde una GTX 1660 6 GB con cuantizaciones IQ2/IQ3, hasta una RTX 3060 12 GB o RTX 4060 Ti 16 GB con Q4_K_M o Q6_K.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con GGUF (por ejemplo, llama-cpp-python). El tag `endpoints_compatible` sugiere compatibilidad con endpoints estilo OpenAI a través de herramientas de servicio.
-- Latencia y throughput estimados: no disponible en la información proporcionada.
+- VRAM estimada para inferencia (según tamaño del fichero GGUF, más overhead de contexto):
+  - IQ1_S / IQ1_M: ~2,0-2,1 GB.
+  - IQ2_XXS a IQ2_M: ~2,4-2,9 GB.
+  - Q2_K_S / Q2_K: ~2,9-3,1 GB.
+  - IQ3_XXS a Q3_K_L: ~3,2-4,2 GB.
+  - IQ4_XS a Q4_1: ~4,3-5,0 GB.
+  - Q5_K_S / Q5_K_M: ~5,4-5,5 GB.
+  - Q6_K: ~6,4 GB.
+- GPU recomendadas: RTX 3060 12 GB o RTX 4060 Ti 16 GB para Q4_K_M y Q5_K_M con contexto amplio; RTX 4090 24 GB para Q6_K con contexto largo; A100/H100 solo si se necesita alto throughput en servidor.
+- Cabe en GPU de consumo: sí, desde GPUs de 4 GB (variantes IQ1/IQ2) hasta 8-12 GB (Q4/Q5). Las variantes de 2-3 GB también funcionan en CPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con la API de OpenAI (el tag "endpoints_compatible" lo indica), y cualquier runtime que soporte GGUF. No se recomienda vLLM ni TGI para GGUF sin conversión previa.
+- Latencia y throughput: no disponibles; dependen del hardware y de la cuantización elegida.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| EliasAIv4-i1-GGUF (este) | 7,6B | no disponible | de | Apache 2.0 | GGUF | Fine-tuning de Qwen2.5-7B para alemán, cuantizado con imatrix |
-| Qwen2.5-7B (base) | 7,6B | 32.768 tokens (según documentación del base) | Multilingüe | Apache 2.0 | safetensors, GGUF | Modelo base generalista; multilingüe y con soporte de tool calling documentado |
-| mradermacher/EliasAIv4-GGUF | 7,6B | no disponible | de | Apache 2.0 | GGUF | Cuantizaciones estáticas del mismo modelo, sin imatrix |
-| Modelos alemanes de 7B (p. ej. fine-tunes de Mistral/Llama) | ~7B | variable | de | variable (a menudo Apache 2.0 o Llama) | GGUF, safetensors | Alternativas de la comunidad para conversación en alemán; rendimiento no comparable sin benchmarks |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|
+| EliasAIv4-i1-GGUF (este) | 7,6B | No disponible | Alemán | Apache 2.0 | GGUF |
+| Qwen2.5-7B-Instruct | 7,6B | 32.768 tokens (modelo base, no confirmado aquí) | Multilingüe | Apache 2.0 | Safetensors, GGUF |
+| Llama 3.1 8B Instruct | 8B | 128.000 tokens | Multilingüe | Llama 3.1 Community License | Safetensors, GGUF |
+| Mistral 7B Instruct | 7,3B | 32.000 tokens | Multilingüe | Apache 2.0 | Safetensors, GGUF |
+
+La comparación con Qwen2.5-7B-Instruct es la más directa, ya que este fine-tune deriva de él; la diferencia principal es la especialización en alemán y la disponibilidad de cuantizaciones imatrix. Frente a Llama 3.1 8B, la licencia Apache 2.0 es más permisiva para uso comercial, aunque no se dispone de datos de rendimiento comparativo para este fine-tune concreto.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la información proporcionada; al ser un fine-tuning sobre Qwen2.5, puede heredar sesgos del corpus del modelo base y del dataset de ajuste alemán.
-- Riesgo de alucinación: presente como en cualquier modelo de 7B; no se han publicado evaluaciones específicas de fidelidad para este fine-tuning.
-- Limitaciones de contexto o idioma: la model card declara únicamente alemán (`language: de`); el uso en otros idiomas puede degradar la calidad. La longitud de contexto no se confirma en la información disponible.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, modificación y redistribución, siempre que se conserve el aviso de licencia y se indiquen los cambios. No se han documentado restricciones adicionales.
-- Caveats para producción: el repositorio tiene 0 descargas y 0 likes, lo que indica ausencia de validación por la comunidad; se recomienda evaluar el modelo en el dominio objetivo antes de desplegarlo. Las cuantizaciones IQ1 e IQ2 están marcadas por el autor como de baja calidad ("mostly desperate", "very low quality") y no deberían usarse en producción.
-- El modelo no documenta soporte de tool calling ni de agentes; si la aplicación los requiere, conviene verificar su comportamiento empíricamente o considerar el modelo base Qwen2.5-7B.
+- No hay datos publicados sobre sesgos del fine-tune; al derivar de Qwen2.5, puede heredar sesgos presentes en los datos de entrenamiento del modelo original.
+- Riesgo de alucinación inherente a los modelos de 7B, especialmente en tareas de conocimiento factual y matemáticas complejas.
+- El modelo declara únicamente alemán; su rendimiento en castellano u otros idiomas no está garantizado y probablemente sea inferior al del Qwen2.5 original.
+- La longitud de contexto no está documentada en la model card; conviene verificar la configuración antes de usarlo con contextos largos.
+- Las cuantizaciones por debajo de Q4 pierden calidad de forma notable; el propio autor desaconseja IQ1/IQ2 salvo para hardware muy limitado.
+- No se ha validado el soporte de tool calling ni de agentes para este fine-tune específico; no asumir que funciona igual que Qwen2.5-7B-Instruct.
+- La licencia Apache 2.0 permite uso comercial, pero el usuario debe verificar las obligaciones de atribución y las condiciones del modelo base.
+- El repositorio de 89 GB incluye todas las variantes; descargar solo el fichero GGUF necesario para evitar consumo innecesario de disco y ancho de banda.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/EliasAIv4-i1-GGUF
-- Modelo base (fine-tuning): https://huggingface.co/ETME-TECH/EliasAIv4
-- Modelo original Qwen2.5-7B: https://huggingface.co/Qwen/Qwen2.5-7B
-- Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/EliasAIv4-GGUF
-- Página de overview de mradermacher para este modelo: https://hf.tst.eu/model#EliasAIv4-i1-GGUF
+- Modelo base: https://huggingface.co/ETME-TECH/EliasAI-7B-v1.0
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/EliasAIv4-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#EliasAIv4-i1-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- FAQ y peticiones de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Gráfico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- nethype GmbH (patrocinador del trabajo de cuantización): https://www.nethype.de/
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

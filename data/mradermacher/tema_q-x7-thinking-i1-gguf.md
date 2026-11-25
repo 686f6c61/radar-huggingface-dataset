@@ -2,75 +2,101 @@
 
 ## Resumen
 
-Tema_Q-X7-Thinking es un modelo de lenguaje de 35.505 millones de parámetros desarrollado por temaq-org, del que mradermacher ha publicado una versión cuantizada en formato GGUF con calibración imatrix. El modelo está diseñado para tareas de agente, con soporte multilingüe (japonés, inglés y chino) y capacidades de visión, según se indica en la propia model card. Se presenta como un modelo instruction-tuned y sin censura, orientado a entornos donde se requiere flexibilidad y respuestas sin filtros.
+Tema_Q-X7-Thinking-i1-GGUF es una colección de cuantizaciones GGUF, generadas con imatrix, del modelo temaq-org/Tema_Q-X7-Thinking. El trabajo de cuantización lo firma mradermacher, un autor habitual en el ecosistema GGUF, y está pensado para ejecutar el modelo en llama.cpp y derivados (Ollama, LM Studio, etc.) sin necesidad de GPUs de datacenter. El modelo base cuenta con 35.505.251.456 parámetros (aproximadamente 35,5 mil millones), lo que lo sitúa en la franja de los modelos densos de gran tamano.
 
-La versión cuantizada que nos ocupa, Tema_Q-X7-Thinking-i1-GGUF, incluye varios niveles de cuantización (desde Q2_K hasta Q6_K) y un archivo imatrix para generar cuantizaciones personalizadas. Al ser un modelo de 35.5B, requiere hardware con suficiente VRAM para su ejecución, aunque las cuantizaciones más bajas permiten su uso en GPUs de consumo con 24 GB o más. No se dispone de información pública sobre la arquitectura exacta, el contexto máximo o la licencia del modelo base, lo que limita la evaluación completa de sus capacidades.
+El modelo base se presenta como un transformer instruction-tuned, multilingüe (japonés, inglés y chino), orientado a uso agéntico y con una orientación explícita a la ausencia de censura (etiquetas "uncensored", "non-censored", "unfiltered"). Incorpora un modo de razonamiento ("Thinking") y, según la model card del cuantizador, es un modelo de visión: los ficheros mmproj, si existen, se distribuyen en el repositorio estático hermano.
+
+La relevancia de esta ficha es práctica: permite desplegar un modelo de ~35B con modo thinking y supuestas capacidades de visión en hardware de consumo mediante cuantizaciones que van desde 13,3 GB (i1-Q2_K) hasta 29,3 GB (i1-Q6_K). No obstante, la información pública disponible sobre el modelo base es muy escasa: no hay datos de benchmarks, ni de licencia, ni de composición del dataset de entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (el modelo base se etiqueta como transformer, pero no se especifica el tipo exacto) |
-| Parametros totales | 35.505.251.456 (35,5 B) |
-| Parametros activos | No disponible (no se indica si es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | i1-Q2_K, i1-IQ3_M, i1-Q3_K_M, i1-Q4_K_S, i1-Q4_K_M, i1-Q6_K, ademas de archivo imatrix |
+| Arquitectura | Transformer (instruction-tuned); detalles internos no disponibles |
+| Parametros totales | 35.505.251.456 (~35,5B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | i1 (imatrix): Q2_K, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K; también se ofrecen cuantizaciones estáticas en el repositorio hermano |
 | Idiomas soportados | ja, en, zh |
-| Licencia | No disponible |
-| Formato de pesos | GGUF (cuantizado) |
+| Licencia | no disponible |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Tamano del repo | 279,2 GB |
+| Fichero imatrix | Tema_Q-X7-Thinking.imatrix.gguf (0,3 GB) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion detallada sobre la arquitectura interna del modelo base Tema_Q-X7-Thinking. Los tags de Hugging Face indican que se trata de un transformer, y por el tamano de 35.5B probablemente siga un diseño denso, pero no se confirma. Tampoco hay datos sobre el dataset de entrenamiento, el numero de tokens procesados o si se aplicaron tecnicas como RLHF o DPO. La unica informacion relevante es que el modelo es instruction-tuned y esta disenado para tareas de agente, lo que sugiere un entrenamiento orientado a seguir instrucciones y a interactuar con herramientas o entornos.
+La información disponible confirma que el modelo base es un transformer instruction-tuned con etiquetas de "agent", "ornith-1.5" y "ornith", lo que sugiere una línea de modelos propia del autor temaq-org, sin documentación pública accesible en los datos proporcionados. No se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o similares. Tampoco hay detalles sobre mecanismos de atención (lineal, decodificación especulativa u otras innovaciones).
 
-La version GGUF ha sido cuantizada por mradermacher utilizando calibracion imatrix, un metodo que mejora la calidad de las cuantizaciones de baja precision. Se ofrecen multiples niveles de cuantizacion para equilibrar tamano y rendimiento, siendo el Q4_K_M el recomendado por el autor por su equilibrio entre velocidad y calidad.
+Lo que sí está documentado es el proceso de cuantización: mradermacher ha generado cuantizaciones ponderadas con imatrix (fichero de importancia de matrices), lo que en la práctica mejora la calidad de los cuantos de baja precisión respecto a las cuantizaciones estáticas. La model card indica explícitamente que el modelo es de visión y que los ficheros mmproj, si los hay, residen en el repositorio estático (mradermacher/Tema_Q-X7-Thinking-GGUF). También se menciona que las cuantizaciones usan convert_type "hf" y quantize_version 2.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento: al ser un modelo de 35.5B, puede abordar tareas complejas de lenguaje, aunque no se han publicado benchmarks que lo confirmen.
-- Soporte de agentes: los tags indican que esta disenado para funcionar como agente, lo que implica capacidad para planificar, ejecutar acciones y posiblemente integrarse con herramientas externas.
-- Capacidades de vision: la model card menciona que es un modelo de vision, por lo que puede procesar y comprender imagenes, aunque no se detalla el mecanismo (posiblemente un proyector multimodal).
-- Multilingue: soporta japones, ingles y chino, lo que permite su uso en entornos multilingues.
-- Sin censura: se etiqueta como uncensored, non-censored y unfiltered, lo que indica que no aplica filtros de contenido, generando respuestas sin restricciones politicas o eticas.
-- Instrucciones: al ser instruction-tuned, esta optimizado para seguir comandos y peticiones de forma directa.
+- Generación de texto conversacional multi-turno (etiqueta "conversational").
+- Modo de razonamiento explícito ("Thinking"), indicado en el nombre del modelo.
+- Capacidades agénticas: la etiqueta "agent" sugiere soporte para flujos de trabajo con herramientas, aunque no se documenta formalmente el tool calling.
+- Multilingüe en japonés, inglés y chino.
+- Instruction-tuned: alineado para seguir instrucciones.
+- Orientación "uncensored/unfiltered": menor rechazo a peticiones, según declara el autor.
+- Visión: la model card del cuantizador lo describe como modelo de visión, con mmproj en el repositorio estático.
+- No se documentan capacidades específicas de código, matemáticas ni audio.
 
 ## Casos de uso
 
-- Asistentes virtuales multilingues: gracias a su soporte de ja, en y zh, puede desplegarse en aplicaciones de atencion al cliente o asistentes personales que requieran conversacion fluida en estos idiomas, con capacidad de entender imagenes enviadas por el usuario.
-- Automatizacion de tareas con vision: al ser un modelo de vision, puede utilizarse en sistemas que necesiten interpretar capturas de pantalla, documentos escaneados o fotografias para extraer informacion o tomar decisiones, por ejemplo en flujos de trabajo de RPA.
-- Agentes de razonamiento multi-paso: su diseno orientado a agentes permite construir sistemas que descompongan problemas complejos en pasos, consulten bases de conocimiento o ejecuten acciones en entornos simulados.
-- Generacion de contenido sin restricciones: en entornos de investigacion o creatividad donde se requiere explorar temas sensibles sin filtros, este modelo puede producir textos que otros modelos rechazarian, aunque con los riesgos asociados.
-- Analisis de imagenes y texto combinado: puede procesar entradas mixtas (imagen + texto) para tareas como descripcion de imagenes, extraccion de datos de graficos o traduccion asistida por contexto visual.
-- Desarrollo de prototipos de agentes conversacionales: su formato GGUF facilita la integracion en frameworks como llama.cpp u Ollama, permitiendo iterar rapidamente en entornos de desarrollo locales con hardware moderado.
+- Asistente conversacional autoalojado en japonés, inglés o chino: con ~35B parámetros y cuantización i1-Q4_K_M (21,8 GB) puede desplegarse en una GPU de 24 GB o en dos de 16 GB, ofreciendo conversaciones multi-turno sin depender de APIs externas.
+- Razonamiento en modo thinking para tareas de análisis: el modo de razonamiento permite generar cadenas de pensamiento antes de la respuesta, útil en resolución de problemas y planificación.
+- Flujos agénticos locales: la etiqueta "agent" y el soporte de endpoints compatibles permiten integrarlo en orquestadores de agentes, aunque la ausencia de documentación sobre tool calling obliga a validar el formato de funciones manualmente.
+- Procesamiento de documentos con imágenes: si se confirma la disponibilidad de mmproj en el repositorio estático, podría usarse para tareas de visión-lenguaje como descripción de imágenes o extracción de información, siempre con validación previa.
+- Investigación sobre alineación y censura: al ser un modelo "uncensored", es útil para estudiar el comportamiento de modelos sin filtros de rechazo en entornos controlados y con revisión humana.
+- Generación de contenido creativo multilingüe: para equipos que trabajan con contenido en japonés y chino, el soporte nativo de estos idiomas evita depender de traducciones intermedias.
+- Despliegue en estaciones de trabajo sin conexión: los GGUF permiten ejecución en llama.cpp con CPU+GPU híbrido, útil en entornos air-gapped donde no se puede llamar a servicios en la nube.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos sobre MMLU, HumanEval, GSM8K u otras metricas estandar, ni comparaciones con modelos similares.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: para el cuant Q4_K_M (21,8 GB) se necesitan al menos 24 GB de VRAM para cargar el modelo con overhead de contexto. El Q6_K (29,3 GB) requiere 32 GB o mas.
-- GPU recomendadas: RTX 3090/4090 (24 GB) para Q4_K_M, A100 40 GB o H100 para Q6_K. Para cuantizaciones mas bajas (Q2_K, 13,3 GB) podria caber en una RTX 4080 de 16 GB, aunque con perdida de calidad.
-- En consumer GPU: si, con cuantizaciones Q4 o inferiores en GPUs de 24 GB, aunque el rendimiento dependera de la velocidad de memoria.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, o cualquier runtime compatible con GGUF. No se recomienda vLLM para GGUF (usa safetensors).
-- Latencia y throughput: no se dispone de datos medidos. En una RTX 4090 con Q4_K_M, se puede esperar una generacion de 20-40 tokens/s, pero es una estimacion orientativa.
+- VRAM estimada según cuantización (tamano del fichero, más overhead de contexto y KV cache):
+  - i1-Q2_K: 13,3 GB (calidad baja; el autor recomienda IQ3_XXS en su lugar).
+  - i1-IQ3_S / i1-IQ3_M: 15,7-15,9 GB.
+  - i1-Q4_K_S / i1-Q4_K_M: 20,5-21,8 GB (el autor marca Q4_K_M como "fast, recommended").
+  - i1-Q5_K_M: 25,4 GB.
+  - i1-Q6_K: 29,3 GB.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M; A100 40 GB o H100 para Q5/Q6 con contexto largo; dos RTX 3090/4090 para Q5_K_M o Q6_K.
+- Cabe en GPU de consumo: sí, con cuantizaciones Q2 a Q4 en GPUs de 16-24 GB; Q5/Q6 requiere 24 GB con contexto corto o configuraciones multi-GPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con endpoints (la etiqueta "endpoints_compatible" lo indica). vLLM y TGI no soportan GGUF de forma nativa generalizada, por lo que requerirían el modelo base en safetensors.
+- Latencia y throughput: no disponibles. Como referencia estructural, un modelo denso de ~35B en Q4_K_M en una RTX 4090 suele quedar limitado por ancho de banda de memoria, pero no se aportan cifras medidas para este modelo.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa fiable. El modelo base Tema_Q-X7-Thinking no tiene datos publicos de rendimiento, y no se conocen alternativas directas de 35.5B con caracteristicas similares (vision, agente, multilingue). Se podria comparar con modelos como Yi-34B o Qwen-32B, pero sin datos de benchmarks no es posible hacer una evaluacion objetiva.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Tema_Q-X7-Thinking (i1-GGUF) | ~35,5B | no disponible | no disponible | GGUF | Multilingüe ja/en/zh, modo thinking, visión declarada, uncensored |
+| Modelos densos de ~30-35B en GGUF (familia genérica) | ~30-35B | variable | variable | GGUF | No se dispone de datos verificados de comparación para esta ficha |
+| Alternativas MoE de ~30B activos | variable | variable | variable | GGUF/safetensors | No disponible |
+
+No se dispone de información suficiente para establecer una comparativa rigurosa con modelos concretos de la misma categoría; los datos de benchmarks del modelo base no están publicados en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos y alucinaciones: al ser un modelo sin censura y sin informacion sobre su entrenamiento, es probable que presente sesgos no mitigados y una mayor tendencia a generar contenido falso o inventado, especialmente en temas delicados.
-- Riesgo de contenido inapropiado: la ausencia de filtros puede producir respuestas ofensivas, ilegales o daninas, lo que limita su uso en aplicaciones publicas sin una capa de moderacion adicional.
-- Licencia desconocida: al no especificarse la licencia del modelo base, no esta claro si se permite uso comercial o si existen restricciones de redistribucion. Esto supone un riesgo legal para su integracion en productos.
-- Contexto limitado: se desconoce la longitud maxima de contexto, lo que impide planificar aplicaciones que requieran ventanas largas (por ejemplo, analisis de documentos extensos).
-- Soporte de vision no verificado: aunque se menciona que es un modelo de vision, no se detalla el mecanismo ni se proporcionan ejemplos de uso, por lo que su rendimiento real en tareas multimodales es incierto.
-- Dependencia de la cuantizacion: las versiones GGUF de baja precision (Q2, IQ3) pueden degradar significativamente la calidad de las respuestas, especialmente en razonamiento complejo.
+- Licencia no disponible: no se puede confirmar si el uso comercial está permitido; es imprescindible contactar con el autor del modelo base antes de usarlo en producción.
+- Ausencia total de benchmarks: no hay evidencia publicada de rendimiento en MMLU, HumanEval, GSM8K ni tareas multimodales.
+- Riesgo de alucinación: inherente a los modelos de ~35B sin datos de evaluación; el modo thinking no garantiza corrección factual.
+- Orientación "uncensored": puede generar contenido inapropiado o dañino; requiere filtros y revisión humana en aplicaciones de cara al público.
+- Cobertura idiomática limitada a ja, en y zh; el rendimiento en castellano no está documentado y probablemente sea inferior.
+- Longitud de contexto desconocida: no se puede planificar su uso en tareas de contexto largo sin validación empírica.
+- Capacidad de visión no confirmada: la model card del cuantizador la menciona, pero los mmproj no están en este repositorio; hay que verificar el repositorio estático.
+- Tool calling no documentado formalmente: la etiqueta "agent" no equivale a un formato de funciones verificado.
+- Repositorio de 279,2 GB: la descarga completa es costosa; conviene bajar solo el cuanto necesario.
+- Modelo con muy poca tracción (309 descargas, 1 like): comunidad pequeña, menor probabilidad de que los errores estén reportados.
 
 ## Enlaces
 
-- Repositorio del modelo cuantizado: https://huggingface.co/mradermacher/Tema_Q-X7-Thinking-i1-GGUF
-- Repositorio del modelo base: https://huggingface.co/temaq-org/Tema_Q-X7-Thinking
-- Version con cuantizaciones estaticas: https://huggingface.co/mradermacher/Tema_Q-X7-Thinking-GGUF
-- Pagina de descargas de mradermacher: https://hf.tst.eu/model
+- Repositorio Hugging Face (i1-GGUF): https://huggingface.co/mradermacher/Tema_Q-X7-Thinking-i1-GGUF
+- Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/Tema_Q-X7-Thinking-GGUF
+- Modelo base: https://huggingface.co/temaq-org/Tema_Q-X7-Thinking
+- Página de overview del cuantizador: https://hf.tst.eu/model#Tema_Q-X7-Thinking-i1-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y peticiones de modelos del cuantizador: https://huggingface.co/mradermacher/model_requests

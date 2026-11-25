@@ -1,0 +1,76 @@
+{
+  "schema": 2,
+  "id": "nainiayoub/FloraNER-camembert-coarse",
+  "slug": "nainiayoub-floraner-camembert-coarse",
+  "author": "nainiayoub",
+  "url": "https://huggingface.co/nainiayoub/FloraNER-camembert-coarse",
+  "created_at": "2026-11-24T21:14:10.000Z",
+  "updated_at": "2026-11-24T21:14:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "token-classification",
+    "named-entity-recognition",
+    "botany",
+    "biodiversity",
+    "flora",
+    "french",
+    "fr",
+    "dataset:nainiayoub/FloraNER",
+    "base_model:almanach/camembert-base",
+    "base_model:finetune:almanach/camembert-base",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110035205,
+  "parameters_human": "110.0M",
+  "storage_bytes": 440981276,
+  "storage_human": "441 MB",
+  "context_length": null,
+  "base_model": "camembert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Named entity recognition",
+      "dataset": "FloraNER (coarse test split)",
+      "metric": "entity-level F1 (seqeval)",
+      "value": 93.13
+    },
+    {
+      "task": "Named entity recognition",
+      "dataset": "FloraNER (coarse test split)",
+      "metric": null,
+      "value": 90.92
+    },
+    {
+      "task": "Named entity recognition",
+      "dataset": "FloraNER (coarse test split)",
+      "metric": null,
+      "value": 95.45
+    }
+  ],
+  "sources": []
+}

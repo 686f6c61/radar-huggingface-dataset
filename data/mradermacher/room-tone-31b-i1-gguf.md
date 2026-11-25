@@ -2,49 +2,52 @@
 
 ## Resumen
 
-Room-Tone-31B-i1-GGUF es la colección de cuantizaciones GGUF, generadas con imatrix, del modelo Room-Tone-31B desarrollado por ReadyArt. El modelo base es un transformer denso de 30.697.345.596 parámetros (aproximadamente 31B) orientado a generación de texto conversacional, con un enfoque explícito en roleplay, contenido para adultos, conversaciones multi-personaje y dinámicas de ensemble. La ficha que nos ocupa corresponde al trabajo de cuantización de mradermacher, un publicador habitual de versiones GGUF de modelos de la comunidad.
+Room-Tone-31B es un modelo de lenguaje de 30.697.345.596 parámetros (aproximadamente 30,7 mil millones) afinado para conversación de rol (roleplay) y contenido para adultos, desarrollado por ReadyArt. La versión aquí descrita es la cuantización GGUF realizada por mradermacher bajo la metodología i1 (imatrix), que publica el modelo en múltiples niveles de compresión para su uso con llama.cpp y entornos compatibles. El modelo está etiquetado explícitamente como NSFW, adult-content y not-for-all-audiences, y su orientación principal es la generación de diálogo multi-personaje y conversaciones de rol maduras.
 
-El modelo está etiquetado como `not-for-all-audiences` y `nsfw`, y su model card declara únicamente el idioma inglés. La licencia es Apache 2.0 según los metadatos del repositorio. La relevancia de esta publicación radica en que permite ejecutar un modelo de 31B en hardware de consumo mediante cuantizaciones que van desde 7,3 GB (IQ1_S) hasta 25,3 GB (Q6_K), usando el formato GGUF y el ecosistema llama.cpp.
+La relevancia de esta ficha radica en que se trata de una cuantización práctica de un modelo de 31B pensada para ejecución local: los archivos van desde 7,3 GB (IQ1_S) hasta 25,3 GB (Q6_K), lo que permite desplegarlo en hardware de consumo con las cuantizaciones bajas y en GPUs de 24 GB con las intermedias. La licencia declarada es Apache 2.0, lo que facilita su uso comercial, aunque el contenido generado está orientado a adultos y requiere las salvaguardas adecuadas.
 
-No se dispone de información sobre la longitud de contexto, la composición del dataset de entrenamiento ni los detalles de alineación del modelo base en la información proporcionada. Esta ficha se limita a documentar lo que consta en los metadatos y la model card del repositorio de cuantización.
+La información disponible es limitada: la model card del repositorio de cuantización no incluye detalles sobre arquitectura, datos de entrenamiento, longitud de contexto ni benchmarks. Esta ficha refleja únicamente los datos verificables del repositorio y marca explícitamente como "no disponible" todo aquello que no se ha publicado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (detalles no disponibles) |
-| Parametros totales | 30.697.345.596 |
-| Parametros activos | no disponible (no es MoE según los datos disponibles) |
+| Arquitectura | no disponible (modelo base: ReadyArt/Room-Tone-31B; transformer, no confirmado en la información disponible) |
+| Parametros totales | 30.697.345.596 (≈30,7B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, IQ3_S, Q3_K_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (i1/imatrix) |
+| Tipos de cuantizacion | i1 (imatrix): IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, IQ3_S, Q3_K_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K; también se ofrecen cuantizaciones estáticas en el repositorio Room-Tone-31B-GGUF |
 | Idiomas soportados | en (inglés) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones); el modelo base en safetensors |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones i1/imatrix); el modelo base se distribuye en safetensors vía transformers |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo base más allá de que se trata de un transformer de aproximadamente 31B parámetros. El repositorio de cuantización no incluye datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otras variantes de alineación. Tampoco se documentan innovaciones técnicas como decodificación especulativa, atención lineal o arquitecturas híbridas.
+No se han publicado en la información disponible detalles sobre la arquitectura interna del modelo base ReadyArt/Room-Tone-31B (tipo de transformer, uso de atención lineal, decodificación especulativa u otras innovaciones). El recuento de parámetros (30.697.345.596) es consistente con un modelo denso de aproximadamente 31B, pero no se confirma si emplea mezcla de expertos ni el número de parámetros activos.
 
-Lo que sí consta es el proceso de cuantización: mradermacher ha generado cuantizaciones ponderadas con imatrix (fichero `Room-Tone-31B.imatrix.gguf` de 0,1 GB) a partir del modelo base ReadyArt/Room-Tone-31B, empleando la herramienta de cuantización de llama.cpp con la variante i1. Las cuantizaciones i1 con imatrix suelen ofrecer mejor calidad que las cuantizaciones estáticas equivalentes en tamaño, especialmente en rangos bajos (IQ2, IQ3). El repositorio también remite a una colección de cuantizaciones estáticas en mradermacher/Room-Tone-31B-GGUF.
+Tampoco se documentan el volumen de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o ajuste supervisado. Lo único verificable es la orientación temática del modelo (roleplay, conversación multi-personaje, contenido adulto) y que la cuantización i1 utiliza un fichero imatrix (Room-Tone-31B.imatrix.gguf, 0,1 GB) para ponderar la importancia de los tensores durante la compresión, lo que según el autor mejora la calidad frente a cuantizaciones estáticas de tamaño similar.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, con énfasis en diálogos multi-turno.
-- Roleplay y conversaciones multi-personaje (ensemble), según las etiquetas del repositorio.
-- Contenido para adultos y temática madura, declarado explícitamente en la model card.
-- Generación de texto general (`text-generation` como pipeline declarado).
-- Compatibilidad con endpoints (`endpoints_compatible` en los tags).
-- No consta soporte de tool calling, function calling, agentes, visión, audio ni modo thinking en la información disponible.
-- Capacidades multilingües: solo inglés declarado.
+- Generación de texto conversacional en inglés, orientada a diálogo multi-turno.
+- Roleplay y conversación multi-personaje (etiquetas multi-character y ensemble), pensada para escenas con varios interlocutores.
+- Contenido para adultos y temática madura (nsfw, adult-content, mature), con las advertencias de uso correspondientes.
+- Generación de texto genérica (pipeline text-generation).
+- Compatibilidad con endpoints (etiqueta endpoints_compatible) para despliegue como API.
+- Capacidades de visión: la model card menciona que se trata de un modelo de visión y que los ficheros mmproj, si existen, se alojan en el repositorio estático; no se confirma la disponibilidad efectiva de pesos multimodales.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma del repositorio.
 
 ## Casos de uso
 
-- Roleplay conversacional: el modelo está etiquetado específicamente para roleplay, por lo que puede emplearse en aplicaciones de personajes interactivos donde se mantenga una persona consistente a lo largo de múltiples turnos. La ventana de contexto no está documentada, así que la longitud de las sesiones dependerá de la configuración del runtime.
-- Simulación de conversaciones multi-personaje: la etiqueta `multi-character` y `ensemble` sugiere que el modelo puede gestionar diálogos con varios interlocutores en un mismo contexto, útil para prototipos de ficción interactiva o narrativa ramificada.
-- Despliegue local en hardware de consumo: con cuantizaciones desde 7,3 GB (IQ1_S) hasta 25,3 GB (Q6_K), es posible ejecutar el modelo en GPUs consumer o en configuraciones CPU+GPU mediante llama.cpp, lo que facilita pruebas y desarrollo sin infraestructura de datacenter.
-- Generación creativa de ficción para adultos: dado el etiquetado `adult-content` y `mature`, el modelo está pensado para contenido narrativo dirigido a audiencias adultas, siempre que se cumplan los requisitos legales y de plataforma correspondientes.
-- Experimentación con cuantizaciones: el repositorio incluye el fichero imatrix y una amplia gama de tipos de cuantización, lo que permite comparar calidad y rendimiento entre IQ1, IQ2, IQ3, IQ4, Q4, Q5 y Q6 en un mismo modelo, útil para investigación sobre el impacto de la cuantización en modelos de 31B.
-- Integración en pipelines de generación de texto con llama.cpp: al ser GGUF, puede servirse con llama.cpp, Ollama u otros runtimes compatibles, lo que permite incorporarlo a aplicaciones de chat o generación de texto en local.
+- Roleplay conversacional local: el modelo puede mantener diálogos de rol prolongados en inglés, con cuantizaciones IQ4_XS (16,8 GB) o Q4_K_M (18,8 GB) que caben en GPUs de 24 GB, lo que permite ejecutarlo en estaciones de trabajo sin depender de servicios en la nube.
+- Simulación de personajes múltiples: gracias a sus etiquetas multi-character y ensemble, es adecuado para generar escenas con varios personajes que interactúan entre sí, útil en prototipos de narrativa interactiva o videojuegos de texto.
+- Escritura creativa asistida para adultos: para autores que necesitan generar borradores de ficción madura, el modelo puede producir diálogo y descripción en inglés con un tono consistente, siempre con revisión humana y control de contenido.
+- Investigación sobre seguridad y alineación: al ser un modelo explícitamente NSFW con licencia Apache 2.0, sirve como objeto de estudio para evaluar filtros de contenido, clasificadores de toxicidad y mecanismos de moderación en pipelines de generación.
+- Despliegue en entornos con presupuesto de VRAM ajustado: las cuantizaciones IQ2_M (11,0 GB) o Q3_K_M (15,4 GB) permiten ejecutar un modelo de 31B en GPUs de consumo de 12-16 GB, con la pérdida de calidad asociada, para pruebas de concepto de chat conversacional.
+- Integración en servicios de API compatibles: la etiqueta endpoints_compatible facilita exponer el modelo mediante servidores compatibles con la API de OpenAI, útil para prototipar aplicaciones de chat que luego se migrarán a modelos mayores.
+- Generación de datos sintéticos de diálogo: para crear corpus de conversación multi-turno en inglés destinados a entrenar o evaluar otros modelos, con la salvedad de que el contenido adulto debe filtrarse según el caso de uso.
 
 ## Benchmarks y rendimiento
 
@@ -52,39 +55,46 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia según cuantización: aproximadamente 7,3 GB (IQ1_S), 11,0 GB (IQ2_M), 13,9 GB (IQ3_S), 18,8 GB (Q4_K_M), 21,9 GB (Q5_K_M) y 25,3 GB (Q6_K), a los que hay que sumar el overhead de contexto y del runtime.
-- GPU recomendadas: no disponibles en la información proporcionada. Por tamaño, las cuantizaciones Q4_K_M y superiores encajan en GPUs con 24 GB de VRAM (RTX 3090, RTX 4090) o en A100/H100 con 40-80 GB; las cuantizaciones IQ2 e IQ3 pueden caber en GPUs de 12-16 GB.
-- Cabe en GPU consumer: sí, al menos en las cuantizaciones bajas y medias; las cuantizaciones Q5/Q6 requieren 24 GB o más de VRAM para residir completamente en GPU.
-- Opciones de despliegue: llama.cpp y cualquier runtime compatible con GGUF (Ollama, entre otros). El repositorio declara `endpoints_compatible`.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia (según tamaño del fichero GGUF, más overhead de contexto y KV cache):
+  - IQ1_S: 7,3 GB; IQ1_M: 7,8 GB; IQ2_XXS: 8,8 GB; IQ2_XS: 9,6 GB; IQ2_S: 10,3 GB; IQ2_M: 11,0 GB.
+  - Q2_K_S: 11,1 GB; Q2_K: 12,0 GB; IQ3_XXS: 12,2 GB; IQ3_XS: 13,2 GB; IQ3_S y Q3_K_S: 13,9 GB; IQ3_M: 14,5 GB; Q3_K_M: 15,4 GB; Q3_K_L: 16,7 GB.
+  - IQ4_XS: 16,8 GB; Q4_0: 17,8 GB; Q4_K_S: 17,9 GB; Q4_K_M: 18,8 GB; Q4_1: 19,6 GB.
+  - Q5_K_S: 21,4 GB; Q5_K_M: 21,9 GB; Q6_K: 25,3 GB.
+- GPU recomendadas: para las cuantizaciones de 4 bits (Q4_K_M, 18,8 GB) una RTX 4090 (24 GB) o A100 40 GB; para Q5 y Q6, A100 40 GB, H100 o RTX 4090 con offload parcial; para IQ1-IQ2, GPUs de 12-16 GB como RTX 4070 Ti Super o RTX 4080.
+- ¿Cabe en GPU de consumo? Sí: las cuantizaciones IQ1 a Q3 caben en GPUs de 12-16 GB; Q4_K_M cabe en 24 GB; Q5_K_M y Q6_K requieren 24 GB con margen ajustado o 32 GB+.
+- Opciones de despliegue: llama.cpp, Ollama, servidores compatibles con la API de OpenAI (etiqueta endpoints_compatible), y cualquier runtime que soporte GGUF con cuantizaciones i1. Para el modelo base en safetensors, transformers.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento ni de especificaciones completas de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparativa rigurosa. Como referencia estructural, se trata de un modelo denso de ~31B en formato GGUF con licencia Apache 2.0 y soporte exclusivo de inglés; los modelos comparables serían otros transformers densos de tamaño similar con cuantizaciones GGUF de la comunidad, pero no se aportan datos concretos de benchmarks, contexto ni calidad para ninguno de ellos.
-
-| Modelo | Parametros | Contexto | Licencia | Formato | Datos de rendimiento |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Room-Tone-31B-i1-GGUF | 30,7B | no disponible | Apache 2.0 | GGUF | no disponible |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Room-Tone-31B-i1-GGUF | ≈30,7B | no disponible | Apache 2.0 | GGUF (i1) | Roleplay/NSFW, solo inglés; cuantizaciones de 7,3 a 25,3 GB |
+| Modelo base ReadyArt/Room-Tone-31B | ≈30,7B | no disponible | Apache 2.0 | safetensors | Origen de la cuantización; sin datos de entrenamiento publicados |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | No se dispone de información sobre modelos comparables en la documentación proporcionada |
+
+No se dispone de datos de rendimiento ni de especificaciones de contexto de modelos alternativos en la información proporcionada, por lo que no es posible una comparación cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Contenido NSFW y para adultos: el modelo está etiquetado como `nsfw`, `adult-content` y `not-for-all-audiences`; no es apto para aplicaciones dirigidas a menores ni para entornos sin las salvaguardas adecuadas.
-- Idioma: solo se declara inglés; el rendimiento en castellano u otros idiomas no está documentado y probablemente sea deficiente.
-- Longitud de contexto desconocida: no se puede garantizar el comportamiento en conversaciones largas sin datos del modelo base.
-- Riesgo de alucinación: no se han publicado evaluaciones de fidelidad factual; al ser un modelo orientado a roleplay, la precisión factual no es su objetivo principal.
-- Sesgos: no se documentan evaluaciones de sesgo; los modelos de roleplay y contenido adulto pueden reproducir estereotipos presentes en sus datos de entrenamiento.
-- Licencia: Apache 2.0 permite uso comercial, pero el contenido generado y el uso en productos para adultos están sujetos a la legislación aplicable y a las políticas de las plataformas de distribución.
-- Sin datos de benchmarks: no hay evidencia publicada de calidad en tareas estándar (MMLU, HumanEval, GSM8K), por lo que la evaluación debe hacerse empíricamente en el caso de uso concreto.
-- Cuantizaciones muy bajas (IQ1, IQ2): la propia model card advierte de que IQ1_S es "for the desperate" y Q2_K_S es de "very low quality"; para producción conviene usar Q4_K_M o superior.
+- Contenido explícito: el modelo está etiquetado como NSFW, adult-content y not-for-all-audiences; no debe desplegarse en entornos accesibles a menores sin filtros y controles de edad.
+- Idioma: solo se declara soporte de inglés; el rendimiento en castellano u otros idiomas no está garantizado ni documentado.
+- Sesgos: no se han publicado evaluaciones de sesgo; al ser un modelo de roleplay entrenado presumiblemente con datos conversacionales, puede reproducir estereotipos presentes en esos datos.
+- Alucinación: no hay datos publicados sobre tasas de alucinación; en tareas factuales debe tratarse como no fiable sin verificación.
+- Contexto: se desconoce la longitud de contexto soportada, lo que impide planificar conversaciones largas con garantías.
+- Licencia: Apache 2.0 permite uso comercial, pero el contenido generado puede estar sujeto a normativas locales sobre material para adultos; la responsabilidad del cumplimiento recae en el desplegador.
+- Cuantizaciones extremas: IQ1_S, IQ1_M e IQ2_XXS degradan notablemente la calidad (el propio autor las describe como "for the desperate"); para producción se recomienda Q4_K_M o superior.
+- Visión: la model card menciona que es un modelo de visión, pero no se confirma la disponibilidad de ficheros mmproj en este repositorio; verificar en el repositorio estático antes de asumir capacidades multimodales.
+- Sin benchmarks: la ausencia de resultados publicados impide comparar su calidad objetiva frente a alternativas.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones: https://huggingface.co/mradermacher/Room-Tone-31B-i1-GGUF
+- Repositorio Hugging Face (cuantización i1): https://huggingface.co/mradermacher/Room-Tone-31B-i1-GGUF
+- Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/Room-Tone-31B-GGUF
 - Modelo base: https://huggingface.co/ReadyArt/Room-Tone-31B
-- Cuantizaciones estáticas: https://huggingface.co/mradermacher/Room-Tone-31B-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#Room-Tone-31B-i1-GGUF
-- FAQ y solicitudes de modelos: https://huggingface.co/mradermacher/model_requests
-- README de referencia sobre uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Gráfica de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantización: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Peticiones de cuantización del autor: https://huggingface.co/mradermacher/model_requests
+- Gráfico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- nethype GmbH: https://www.nethype.de/

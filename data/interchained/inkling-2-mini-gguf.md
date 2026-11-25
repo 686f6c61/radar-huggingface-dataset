@@ -2,93 +2,90 @@
 
 ## Resumen
 
-Inkling-2-Mini-GGUF es la distribucion cuantizada en formato GGUF del modelo thinkingmachines/Inkling-2-Mini, un modelo multimodal de proposito general desarrollado por Thinking Machines Lab y publicado bajo licencia Apache-2.0. La conversion y cuantizacion la ha realizado Interchained mediante su herramienta Hearth, partiendo del checkpoint oficial en precision mixta NVFP4/MXFP8. El modelo base es un transformer decoder-only de 24 capas y 26.400 millones de parametros totales, con aproximadamente 3.400 millones de parametros activos por token, lo que lo situa en la categoria de modelos Mixture-of-Experts (MoE) de eficiencia alta.
+Inkling-2-Mini es un modelo multimodal de tipo mixture-of-experts (MoE) desarrollado por Thinking Machines Lab, con aproximadamente 26.400 millones de parámetros y una arquitectura de bucle (loop architecture) que incorpora un codificador de visión nativo. El repositorio aquí descrito no contiene los pesos originales, sino las conversiones a formato GGUF publicadas por Interchained LLC, pensadas para su ejecución con llama.cpp tanto en modo texto como en modo visión mediante el proyector mmproj incluido.
 
-La innovacion principal del modelo es su arquitectura "looped": las 12 capas centrales se ejecutan tres veces con pesos compartidos, de modo que cada token atraviesa 48 aplicaciones de capa a partir de solo 24 conjuntos de pesos. Cada token se enruta a 8 de 128 expertos MoE, y la atencion combina capas locales (ventana de 1024 tokens) con capas globales. El contexto nativo es de 1.000.000 de tokens.
+La relevancia de esta revisión radica en que corrige los defectos de una primera publicación convertida sobre un borrador de pull request: ahora incorpora el arreglo upstream del bucle (ggml-org/llama.cpp #32704) que restaura las escalas NVFP4 por experto en tiempo de inferencia, además del soporte final de arquitectura fusionado en llama.cpp (#32217 para texto y visión, #32694 para la arquitectura de bucle definitiva). Esto se traduce en una cadena de razonamiento coherente y en inferencia de imagen verificada de extremo a extremo.
 
-Esta release GGUF esta pensada exclusivamente para inferencia de texto: el proyector de vision (mmproj) no se incluye, por lo que la entrada de imagenes no esta habilitada en estos ficheros. Es relevante ahora porque permite ejecutar un modelo de 26.4B parametros con contexto de un millon de tokens en hardware de consumo, siempre que se use una build de llama.cpp con soporte para la arquitectura `inkling2_loop`.
+El conjunto de cuantizaciones cubre desde TQ1_0 (8,4 GB) hasta Q8_0 (26 GB), con Q4_K_M (17 GB) como punto de partida recomendado por el publicador, verificado a ~35 tok/s en texto sobre una Tesla V100 de 32 GB. La licencia declarada es Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only con capas "looped" (arquitectura `inkling2_loop`), MoE, atencion local/global mixta |
-| Parametros totales | 26.070.385.152 (26.4B) |
-| Parametros activos | ~3.4B por token |
-| Longitud de contexto | 1.000.000 tokens (nativo) |
-| Tipos de cuantizacion | q8_0, q6_k, q5_k_m, q4_k_m, q4_0, q3_k_m, q2_k, tq1_0 |
+| Arquitectura | Transformer MoE con arquitectura de bucle (loop architecture) y codificador de vision nativo |
+| Parametros totales | 26.070.385.152 (~26,4B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible (el publicador indica "contexto muy largo" sin cifra; recomienda fijar `-c` manualmente) |
+| Tipos de cuantizacion | TQ1_0, Q2_K, Q3_K_M, Q4_0, Q4_K_M, Q5_K_M, Q6_K, Q8_0; proyector de vision en BF16 |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (modelo base original en safetensors, precision mixta NVFP4/MXFP8) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base); mmproj GGUF para vision |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer decoder-only de 24 capas con 26.4B parametros totales y ~3.4B activos por token. Su rasgo distintivo es el bucle de capas: las 12 capas centrales se aplican tres veces compartiendo pesos, lo que produce 48 aplicaciones de capa por token a partir de 24 conjuntos de pesos. La capa MoE enruta cada token a 8 de 128 expertos. La atencion alterna capas locales con ventana de 1024 tokens y capas globales, lo que permite sostener un contexto nativo de 1.000.000 de tokens. El modelo base fue publicado por Thinking Machines Lab en precision mixta NVFP4/MXFP8 bajo licencia Apache-2.0; los GGUFs de esta ficha se generaron a partir de ese checkpoint oficial.
+El modelo base es un mixture-of-experts multimodal con arquitectura de bucle, es decir, un transformer en el que determinados bloques se reutilizan iterativamente, combinado con un codificador de visión nativo que se conecta al modelo de lenguaje mediante un proyector multimodal (mmproj). El repositorio GGUF conserva esa topología y añade el proyector en BF16 (642 MB) para habilitar la ruta image-text-to-text.
 
-La informacion disponible no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO. En el proceso de cuantizacion, los tensores de down-projection de los expertos tienen 1152 filas, cantidad que los tamanos de bloque de los K-quants no pueden dividir; por ello, en los K-quants el cuantizador de llama.cpp asigna tipos de respaldo a 120 de los 694 tensores (tipos de clase Q5_0/Q4_0 en esos tensores). Es el comportamiento estandar del cuantizador para esta arquitectura y queda reflejado en las cifras de BPW efectivos.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni las etapas de alineación (RLHF/DPO) en la documentación proporcionada. El detalle técnico destacable documentado por el publicador es el arreglo upstream que preserva las escalas NVFP4 por experto durante la inferencia: sin él, la cuantización de los tensores de los expertos degradaba visiblemente el razonamiento. Además, durante la conversión los tensores de down-projection de los expertos (anchura 1152) no encajan en bloques K-quant, por lo que llama-quantize los mantiene en mayor precisión (Q8_0/Q5_1/Q5_0) como fallback esperado.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno (pipeline `text-generation`, tag `conversational`).
-- Razonamiento y tareas de conocimiento general propias de un modelo de 26.4B parametros con ~3.4B activos.
-- Contexto largo: ventana nativa de 1.000.000 de tokens gracias a la combinacion de atencion local y global.
-- Capacidad multimodal en el modelo base (proyector de vision), no habilitada en esta release GGUF al no incluirse mmproj.
-- Compatibilidad con endpoints (`endpoints_compatible` segun los tags del repositorio).
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible en la informacion proporcionada.
-- Modo thinking explicito: no disponible en la informacion proporcionada.
+- Generación de texto conversacional con cadena de razonamiento extensa (thinking mode implícito: el publicador advierte que "piensa largo" y requiere presupuestos de generación amplios).
+- Comprensión de imágenes y descripción visual mediante el proyector mmproj, con pipeline image-text-to-text.
+- Razonamiento multi-paso, adecuado para prompts complejos con `-n 8192`.
+- Ejecución local en llama.cpp: `llama-cli`, `llama-mtmd-cli` y `llama-server`.
+- Compatibilidad con plantillas de chat propias del modelo (requiere `--jinja` en `llama-mtmd-cli` para visión).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de código, matemáticas o audio: no disponibles en la información proporcionada.
+- Cobertura multilingüe: no disponible.
 
 ## Casos de uso
 
-- Analisis de documentos extensos: con 1.000.000 de tokens de contexto nativo, el modelo puede procesar libros tecnicos completos, expedientes o bases de codigo en una sola pasada sin fragmentacion, lo que reduce la perdida de contexto entre trozos.
-- Asistente conversacional de larga duracion: el contexto de un millon de tokens permite mantener historiales de conversacion muy extensos sin resumir, util en atencion al cliente o soporte tecnico con trazas largas.
-- Procesamiento de texto en hardware de consumo: la cuantizacion q4_k_m (16.19 GiB, 5.33 BPW) cabe en una GPU de 24 GB con margen para contexto, lo que permite desplegar un modelo de 26.4B en una RTX 4090 o similar.
-- Despliegue en servidores con GPU de 32 GB: en una Tesla V100 de 32 GB caben todas las cuantizaciones de la tabla, incluida q8_0 (25.83 GiB), lo que facilita servir la version de mayor fidelidad en infraestructura existente.
-- Investigacion sobre arquitecturas looped: el modelo sirve como banco de pruebas para estudiar el comportamiento de capas recurrentes con pesos compartidos y enrutamiento MoE disperso (8 de 128 expertos) en tareas de generacion.
-- Prototipado local con llama.cpp: mediante `llama-server` o `hearth serve` se puede levantar un endpoint HTTP compatible con la API de OpenAI para integrar el modelo en pipelines de desarrollo sin depender de servicios en la nube.
-- Escenarios con restriccion de memoria muy severa: la cuantizacion tq1_0 (8.25 GiB, 2.72 BPW) permite ejecutar el modelo en GPUs de 12 GB o menos, asumiendo perdida de calidad.
+- Descripción y análisis de imágenes en local: usar `llama-mtmd-cli` con `--mmproj` y `--jinja` permite pasar una fotografía y obtener una descripción detallada sin salir del equipo, útil para catalogación de imágenes o accesibilidad.
+- Asistente conversacional con razonamiento profundo: con Q4_K_M y `-n 8192`, el modelo puede abordar preguntas analíticas que requieren cadena de pensamiento larga, como diagnóstico de problemas técnicos o planificación.
+- Procesamiento por lotes de documentos escaneados con OCR asistido: combinando el codificador de visión y el contexto largo, se pueden extraer y resumir contenidos de capturas o páginas.
+- Despliegue como servidor HTTP interno: `llama-server` con `-c 8192` expone una API compatible con endpoints, apta para integrar en herramientas internas de soporte o búsqueda.
+- Prototipado en hardware de consumo: las variantes Q2_K (11 GB) y Q3_K_M (13 GB) permiten probar el modelo en GPUs de gama alta para consumidor antes de escalar a servidores.
+- Evaluación comparativa de cuantizaciones: el conjunto completo de GGUF permite medir la degradación de calidad y velocidad entre TQ1_0 y Q8_0 para un mismo modelo, útil en estudios de eficiencia.
+- Investigación sobre arquitecturas de bucle y MoE: al ser ejecutable en llama.cpp, sirve como banco de pruebas para estudiar el comportamiento de modelos con reutilización de bloques.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible. El único dato de rendimiento aportado es empírico del publicador: ~35 tok/s en texto con Q4_K_M sobre una Tesla V100 de 32 GB.
 
 ## Requisitos de hardware
 
-- VRAM estimada segun cuantizacion (tamano del fichero GGUF): q8_0 25.83 GiB, q6_k 21.80 GiB, q5_k_m 18.45 GiB, q4_k_m 16.19 GiB, q4_0 13.81 GiB, q3_k_m 12.69 GiB, q2_k 10.02 GiB, tq1_0 8.25 GiB. Hay que sumar la memoria para la cache KV del contexto configurado.
-- GPU recomendadas: una Tesla V100 de 32 GB aloja todas las cuantizaciones completas en VRAM; una GPU de 24 GB (RTX 4090, A10G 24GB) admite q4_k_m con margen para contexto, segun el autor.
-- Cabe en GPU de consumo: si, en tarjetas de 24 GB con q4_k_m y en tarjetas de 12 GB o menos con q3_k_m, q2_k o tq1_0 (con perdida de calidad en las mas agresivas).
-- Opciones de despliegue: llama.cpp (obligatorio con soporte para `inkling2_loop`, PR #32695, integrado en el fork aiassistsecure/llama.cpp), `llama-server` y Hearth (`hearth serve`). vLLM, TGI y Ollama no se mencionan en la informacion disponible.
-- Latencia y throughput: no disponible en la informacion proporcionada.
-- Requisito critico de runtime: las builds estandar de llama.cpp sin el PR #32695 no cargaran estos ficheros.
+- VRAM estimada para inferencia (solo pesos): 8,4 GB (TQ1_0), 11 GB (Q2_K), 13 GB (Q3_K_M), 14 GB (Q4_0), 17 GB (Q4_K_M), 19 GB (Q5_K_M), 22 GB (Q6_K), 26 GB (Q8_0); añadir ~642 MB para el proyector de visión y el espacio de caché KV correspondiente al contexto configurado.
+- GPU recomendadas: Tesla V100 32 GB verificada por el publicador con Q4_K_M; para Q6_K y Q8_0 se requiere al menos 22-26 GB de VRAM, lo que apunta a A100 40/80 GB, H100 o RTX 4090 (24 GB, justa para Q6_K).
+- Cabe en GPU de consumo: sí, las variantes Q2_K a Q4_K_M en tarjetas de 12-24 GB; Q4_K_M requiere 17 GB más caché KV, por lo que encaja en RTX 4090 o RTX 3090 con contexto moderado.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-mtmd-cli`, `llama-server`); el publicador menciona que los modelos son "endpoints_compatible" y usa el fork `aiassistsecure/llama.cpp`. vLLM, TGI u Ollama no se mencionan en la información disponible.
+- Latencia y throughput: ~35 tok/s en texto con Q4_K_M sobre V100 32 GB; sin datos para el resto de cuantizaciones ni para visión.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Formato |
-|---|---|---|---|---|---|
-| Inkling-2-Mini (esta ficha) | 26.4B | ~3.4B | 1.000.000 | Apache-2.0 | GGUF / safetensors |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la informacion proporcionada para establecer una comparativa cuantitativa fiable.
+No disponible. La información proporcionada no incluye datos de benchmarks ni especificaciones de modelos alternativos que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- Esta release es solo de texto: el proyector de vision (mmproj) no se incluye, por lo que no se puede usar entrada de imagenes aunque el modelo base sea multimodal.
-- Requiere una build especifica de llama.cpp con soporte para `inkling2_loop` (PR #32695). Las releases estandar no cargaran los ficheros, lo que complica el despliegue en entornos gestionados.
-- En los K-quants, 120 de 694 tensores reciben tipos de respaldo por la forma de los tensores de down-projection de los expertos (1152 filas); esto puede introducir diferencias de calidad respecto a una cuantizacion ideal.
-- La cuantizacion tq1_0 (ternaria, 1-bit) conlleva perdida de calidad esperada; el propio autor lo advierte.
-- Riesgo de alucinacion: inherente a los modelos generativos; no se han publicado evaluaciones de fidelidad en la informacion disponible.
-- Sesgos conocidos: no disponible en la informacion proporcionada.
-- Idiomas soportados: no disponible; no se puede garantizar un rendimiento multilingue sin datos.
-- Licencia Apache-2.0: permite uso comercial y modificacion con atribucion; el modelo base tambien es Apache-2.0, por lo que no hay restricciones adicionales conocidas.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el mismo dia (2026-11-21); se trata de una publicacion muy reciente sin validacion comunitaria.
-- El contexto nativo es de 1.000.000 de tokens, pero la cache KV a esa longitud puede exceder la VRAM disponible; en la practica habra que limitar `-c` segun el hardware.
+- El modelo "piensa largo": presupuestos de generación de pocos cientos de tokens pueden cortar la cadena de razonamiento antes de la respuesta; se recomienda `-n 2048` mínimo y `-n 8192` para prompts difíciles.
+- No mezclar ficheros entre revisiones: los GGUF del primer release (layout de borrador) son incompatibles con esta revisión; hay que descargar el conjunto completo, incluido el mmproj.
+- La visión en `llama-mtmd-cli` requiere obligatoriamente `--jinja`; sin el flag, el handler especializado de plantilla de chat sale silenciosamente antes de codificar la imagen.
+- La cuantización de los tensores de down-projection de los expertos queda en mayor precisión (Q8_0/Q5_1/Q5_0) por incompatibilidad con bloques K-quant: es esperado, pero implica que los tamaños declarados no son una compresión uniforme.
+- La longitud de contexto real no está documentada; en tarjetas de 32 GB conviene fijar `-c` a un valor sensato en lugar de aceptar los valores por defecto del servidor.
+- Idiomas soportados no disponibles: no se puede garantizar calidad multilingüe.
+- Sesgos conocidos y riesgo de alucinación: no documentados en la información disponible, pero aplicables como en cualquier LLM; la cadena de razonamiento larga no elimina el riesgo de afirmaciones incorrectas.
+- Licencia Apache 2.0 declarada en el repo de conversión, con la advertencia del publicador de que el uso está sujeto a los términos del modelo original de Thinking Machines Lab; conviene verificar la licencia del modelo base antes de uso comercial.
+- El repo ocupa 326,5 GB en total (todas las cuantizaciones), lo que exige planificar la descarga selectiva de ficheros.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/Interchained/Inkling-2-Mini-GGUF
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
-- Organizacion Thinking Machines Lab: https://huggingface.co/thinkingmachines
-- Herramienta Hearth (Interchained): https://github.com/Eth-Interchained/hearth
-- Fork de llama.cpp con soporte Inkling 2: https://github.com/aiassistsecure/llama.cpp
-- PR de llama.cpp #32695 (soporte Inkling 2): https://github.com/ggml-org/llama.cpp/pull/32695
+- Fork de llama.cpp usado en la conversión: https://github.com/aiassistsecure/llama.cpp
+- llama.cpp upstream: https://github.com/ggml-org/llama.cpp
+- PR upstream de soporte Inkling (texto y visión): https://github.com/ggml-org/llama.cpp/pull/32217
+- PR upstream de arquitectura de bucle final: https://github.com/ggml-org/llama.cpp/pull/32694
+- PR upstream del arreglo de escalas NVFP4 por experto: https://github.com/ggml-org/llama.cpp/pull/32704
+- Publicador (modelos): https://huggingface.co/Interchained
+- Publicador (código): https://github.com/aiassistsecure
+- Publicador (portfolio): https://interchained.tech
+- Red de inferencia: https://aiassistsecure.com

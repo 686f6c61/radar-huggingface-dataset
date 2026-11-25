@@ -2,93 +2,90 @@
 
 ## Resumen
 
-Nemotron-3.5-Embed-8B es un modelo de embeddings de tipo encoder-only (feature extraction) desarrollado por NVIDIA, publicado originalmente como `nvidia/Nemotron-3.5-Embed-8B-BF16`. Su funcion principal es convertir texto e imagenes en representaciones vectoriales densas de alta dimensionalidad para tareas de recuperacion de informacion, busqueda semantica y generacion aumentada por recuperacion (RAG). El modelo combina modalidades: segun las etiquetas del repositorio, genera tanto embeddings de texto como de imagen, lo que lo situa en la categoria de modelos de embeddings multimodales orientados a recuperacion.
+Nemotron-3.5-Embed-8B-BF16-i1-GGUF es una cuantización en formato GGUF del modelo de embeddings multimodales nvidia/Nemotron-3.5-Embed-8B-BF16, publicada por el usuario mradermacher. El modelo original lo desarrolla NVIDIA y está orientado a la generación de embeddings tanto de texto como de imagen, pensados para tareas de recuperación de información (retrieval), RAG y búsqueda semántica. Esta versión concreta emplea cuantizaciones con matriz de importancia (imatrix) para preservar la calidad en tamaños reducidos.
 
-La ficha que nos ocupa no es el modelo original, sino la cuantizacion GGUF realizada por mradermacher, que ofrece el modelo en formato GGUF con cuantizaciones de tipo i1 (imatrix) y estaticas. El modelo base cuenta con 7.952.683.008 parametros (aproximadamente 8 mil millones), lo que lo convierte en un encoder de gran tamano para tareas de embedding, con un coste de inferencia considerablemente mayor que los clasicos de 300-600 millones de parametros, pero con potencial de mayor calidad semantica. El repositorio GGUF ocupa 92,9 GB e incluye un amplio abanico de cuantizaciones desde i1-IQ1_S (2,0 GB) hasta i1-Q6_K (6,6 GB).
+El modelo cuenta con 7.952.683.008 parámetros (aproximadamente 8 mil millones) y está diseñado para producir representaciones vectoriales densas, no para generación de texto libre. Su relevancia actual radica en la creciente demanda de modelos de embedding de alta calidad que cubran múltiples idiomas y modalidades, lo que permite construir sistemas de búsqueda y RAG que operen sobre corpus multilingües y con contenido visual.
 
-Es relevante ahora porque la demanda de modelos de embeddings de mayor capacidad, capaces de manejar contextos largos y contenido multimodal, ha crecido con la popularizacion de sistemas RAG en produccion. La disponibilidad en GGUF permite desplegarlo en llama.cpp y en entornos con GPU de consumo, algo impensable con el BF16 original (que requiere aproximadamente 16 GB solo para pesos). El soporte de mas de 30 idiomas, incluido el castellano, lo hace util para sistemas de recuperacion multilingues.
+La ficha se centra en la versión cuantizada publicada por mradermacher, que ofrece múltiples niveles de cuantización (desde IQ1_S de 2,0 GB hasta Q6_K y superiores) para adaptarse a distintos presupuestos de memoria. Al tratarse de una cuantización de un modelo base de NVIDIA, las especificaciones de arquitectura y entrenamiento provienen del modelo original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder-only (feature extraction, embeddings multimodales) |
-| Parametros totales | 7.952.683.008 (aprox. 8B) |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer (modelo de embeddings; detalles de la arquitectura del modelo base no disponibles) |
+| Parametros totales | 7.952.683.008 |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1 (imatrix): IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, IQ4_NL, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | multilingual, en, ar, as, bn, bg, zh, da, nl, fi, fr, de, hi, id, it, ja, ko, ms, mr, ne, no, fa, pt, ro, ru, es, sw, sv, ta, te, th, uk, ur, vi |
-| Licencia | openmdw-1.1 (etiquetada como "other") |
-| Formato de pesos | GGUF (BF16 original y cuantizaciones i1) |
+| Tipos de cuantizacion | i1 (imatrix): IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, IQ4_NL, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (y otras); también disponibles cuantizaciones estáticas en el repo hermano |
+| Idiomas soportados | multilingüe: en, ar, as, bn, bg, zh, da, nl, fi, fr, de, hi, id, it, ja, ko, ms, mr, ne, no, fa, pt, ro, ru, es, sw, sv, ta, te, th, uk, ur, vi |
+| Licencia | openmdw-1.1 (etiquetada como "other" en Hugging Face) |
+| Formato de pesos | GGUF (con fichero imatrix separado para crear cuantizaciones propias) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo base `nvidia/Nemotron-3.5-Embed-8B-BF16` mas alla de su naturaleza de modelo de embeddings multimodales para extraccion de caracteristicas (feature extraction) y recuperacion. Los tags indican soporte de embeddings de texto e imagen, lo que sugiere una arquitectura con torres o proyecciones separadas para cada modalidad, pero no se dispone de detalles sobre el numero de capas, dimension de hidden, dimension del embedding de salida ni mecanismo de atencion.
+La información disponible no detalla la arquitectura interna del modelo base nvidia/Nemotron-3.5-Embed-8B-BF16 más allá de que se trata de un modelo de embeddings multimodales (texto e imagen) con aproximadamente 8 mil millones de parámetros. No se especifican en la información proporcionada el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO.
 
-Respecto al entrenamiento, no se dispone de informacion sobre volumen de tokens, composicion del dataset, uso de RLHF/DPO ni tecnicas de contrastive learning empleadas. La model card del repositorio GGUF es exclusivamente la generada por la herramienta de cuantizacion de mradermacher y no incluye datos del autor original. La unica innovacion tecnica documentada en esta ficha es el proceso de cuantizacion: uso de imatrix (importance matrix) generada a partir del modelo base y cuantizaciones i1, que segun las notas del autor suelen superar a cuantizaciones estaticas de tamano similar (por ejemplo, "i1-IQ3_S beats Q3_K*").
+La innovación técnica destacable de esta publicación es el uso de cuantizaciones con matriz de importancia (imatrix), que permiten generar versiones comprimidas del modelo preservando mejor la calidad que las cuantizaciones estándar de tamaño similar. El repositorio incluye el propio fichero imatrix (0,1 GB) para que otros usuarios puedan crear sus propias cuantizaciones. Además, al ser un modelo de visión, los ficheros mmproj (si los hay) se alojan en el repositorio estático hermano.
 
 ## Capacidades
 
-- Generacion de embeddings de texto densos para recuperacion, similitud semantica y busqueda.
-- Generacion de embeddings de imagen (multimodal-embedding, image-embeddings), lo que permite recuperacion cross-modal texto-imagen.
-- Soporte multilingue en mas de 30 idiomas, incluidos espanol, ingles, arabe, chino, hindi, japones, coreano, portugues, ruso y vietnamita, entre otros.
-- Orientado a tareas de retrieval y RAG: adecuado para indexacion de documentos y consulta semantica.
-- Compatible con vLLM segun los tags del repositorio.
-- Compatible con transformers como libreria de referencia.
-- No se documentan capacidades de generacion de texto, tool calling, agentes ni modos de razonamiento, ya que es un modelo de embeddings y no un modelo generativo.
+- Generación de embeddings de texto para recuperación semántica y búsqueda.
+- Generación de embeddings de imagen (modelo multimodal), lo que permite búsqueda cruzada entre texto e imagen.
+- Soporte multilingüe en más de 30 idiomas, incluidos español, inglés, árabe, chino, hindi, japonés, coreano y la mayoría de lenguas europeas.
+- Orientado a tareas de retrieval, RAG y búsqueda semántica.
+- Compatible con transformers y vLLM según las etiquetas del repositorio.
+- No es un modelo generativo: no produce texto libre ni soporta tool calling ni razonamiento multi-paso.
+- Extracción de características (feature-extraction) como tarea principal.
 
 ## Casos de uso
 
-- Busqueda semantica multilingue en corpus empresariales: el modelo genera embeddings para documentos y consultas en mas de 30 idiomas, permitiendo que un usuario consulte en castellano sobre documentacion en ingles o aleman sin traduccion intermedia, gracias a la representacion vectorial compartida entre idiomas.
-- RAG sobre bases de conocimiento tecnicas: indexar manuales, documentacion de API y tickets de soporte como vectores y recuperar los fragmentos relevantes antes de pasarlos a un LLM generativo. El tamano de 8B parametros apunta a mayor calidad de recuperacion que encoders pequenos en dominios especializados.
-- Recuperacion multimodal de productos: en un catalogo de comercio electronico, generar embeddings de imagenes de producto y de descripciones textuales en un mismo espacio vectorial, permitiendo busquedas del tipo "imagen similar a esta" o "producto que encaje con esta descripcion".
-- Deduplicacion y clustering de documentos: calcular embeddings de grandes volumenes de textos para detectar near-duplicates y agrupar contenidos tematicamente en pipelines de curacion de datos.
-- Moderacion y clasificacion semantica: usar las representaciones vectoriales como entrada para clasificadores ligeros (regresion logistica, kNN) en tareas de etiquetado de contenido, con la ventaja de no requerir fine-tuning del encoder.
-- Despliegue en entornos con recursos limitados: gracias a las cuantizaciones GGUF desde 2,0 GB (i1-IQ1_S) hasta 6,6 GB (i1-Q6_K), es posible ejecutar el modelo en llama.cpp sobre GPU de consumo o incluso CPU, para prototipos y sistemas de recuperacion de baja latencia en local.
-- Sistemas de recomendacion basados en contenido: generar embeddings de items (texto e imagen) y calcular similitud con el perfil del usuario representado como vector.
+- Sistemas RAG multilingües: el modelo genera embeddings de fragmentos de documentos y consultas en más de 30 idiomas, lo que permite construir índices vectoriales que respondan a preguntas en español sobre corpus en inglés, francés o árabe sin necesidad de traducción previa.
+- Búsqueda semántica en bases de conocimiento internas: se indexan manuales, tickets y documentación técnica; el modelo produce vectores densos que permiten recuperar los fragmentos más relevantes por similitud semántica en lugar de coincidencia léxica.
+- Búsqueda multimodal de productos: al generar embeddings de imagen y texto en un mismo espacio, permite que un usuario busque con una descripción textual ("camisa azul de lino") y recupere imágenes de catálogo relevantes.
+- Moderación y deduplicación de contenido: los embeddings permiten agrupar documentos o imágenes casi duplicados y detectar contenido semánticamente similar a gran escala.
+- Clasificación y clustering de documentos: los vectores generados sirven como características de entrada para clasificadores o algoritmos de clustering (por ejemplo, agrupación de noticias por temática) sin entrenar un modelo desde cero.
+- Recomendación de contenido: se calculan embeddings de artículos, vídeos o imágenes y se comparan con el perfil vectorial del usuario para generar recomendaciones por similitud semántica.
+- Enriquecimiento de motores de búsqueda existentes: se integra como capa de re-ranking semántico sobre los resultados de un buscador léxico (BM25), mejorando la relevancia en consultas conversacionales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Pesos en BF16: aproximadamente 16 GB solo para el modelo, mas overhead de activaciones y contexto; requiere GPU de 24 GB o superior (RTX 4090, A100 40 GB, H100) para inferencia comoda.
-- Cuantizacion i1-Q6_K (6,6 GB): cabe en GPU de 8-12 GB (RTX 3060 12 GB, RTX 4070) con margen para contexto moderado.
-- Cuantizacion i1-Q4_K_M (5,0 GB, recomendada por el autor como "fast, recommended"): viable en GPU de 8 GB (RTX 3070, RTX 4060 Ti) y en Apple Silicon con memoria unificada de 16 GB.
-- Cuantizaciones de 2-4 GB (IQ1_S a IQ3_M): aptas para GPU de 4-6 GB y para inferencia en CPU, con penalizacion de calidad en los extremos (el autor marca IQ1_S como "for the desperate" y Q2_K_S como "very low quality").
-- Opciones de despliegue: llama.cpp (formato GGUF nativo), Ollama (importando el GGUF), vLLM (soportado segun tags, aunque para GGUF conviene verificar compatibilidad de la version), transformers con el modelo BF16 original.
-- Latencia y throughput: no disponibles en la informacion proporcionada. Como referencia estructural, un encoder de 8B parametros tiene coste de inferencia proporcional al tamano, muy superior a encoders de 300-600M; para indexacion masiva conviene batch grande en GPU y para consulta en linea evaluar latencia con la cuantizacion Q4_K_M o inferior.
+- El modelo completo en BF16 requiere aproximadamente 16 GB de VRAM solo para los pesos (8 mil millones de parámetros a 2 bytes por parámetro), más el overhead de activaciones y del contexto.
+- Cuantizaciones pequeñas (i1-IQ1_S de 2,0 GB, i1-IQ2_M de 3,0 GB) permiten ejecución en GPUs de consumo con 4-6 GB de VRAM, aunque con pérdida de calidad notable.
+- Cuantizaciones medias (i1-Q4_K_M de 5,0 GB, i1-Q5_K_M de 5,8 GB) son adecuadas para GPUs de consumo de 8-12 GB, como RTX 3060, RTX 4060 Ti o RTX 4070.
+- Cuantizaciones altas (Q6_K y superiores) requieren 8-12 GB o más y se benefician de GPUs como RTX 4080, RTX 4090 o A100.
+- Para despliegue en producción con vLLM se recomienda el modelo en BF16 o cuantizaciones altas sobre GPUs A100, H100 o L40S.
+- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; vLLM y transformers para el modelo original en BF16.
+- No se dispone de datos de latencia ni throughput en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos comparables en la informacion proporcionada, por lo que la comparacion se limita a aspectos estructurales conocidos.
-
-| Modelo | Parametros | Contexto | Modalidad | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Multimodal | Licencia | Formato |
 |---|---|---|---|---|---|
-| Nemotron-3.5-Embed-8B (esta ficha, GGUF i1) | 7,95B | no disponible | texto + imagen | openmdw-1.1 | GGUF |
-| Nemotron-3.5-Embed-8B-BF16 (original) | 7,95B | no disponible | texto + imagen | openmdw-1.1 | safetensors/BF16 |
-| Encoders de embedding tipicos de 300-600M (familia no especificada) | 0,3-0,6B | no disponible | texto | variable | safetensors, GGUF |
-| Encoders multimodales tipo CLIP/SigLIP (familia no especificada) | 0,1-1B aprox. | no disponible | texto + imagen | variable | safetensors |
+| Nemotron-3.5-Embed-8B (esta ficha) | 7,95 B | no disponible | Sí (texto e imagen) | openmdw-1.1 | GGUF, BF16 |
+| Alternativas de embedding de ~8B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparacion cuantitativa de rendimiento en recuperacion (nDCG, Recall@k, MTEB) no esta disponible en la informacion proporcionada.
+No se dispone en la información proporcionada de datos suficientes sobre modelos comparables de la misma categoría (embeddings multimodales de ~8B) para establecer una comparativa rigurosa con parámetros, contexto y rendimiento.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: no produce texto, no soporta tool calling ni razonamiento multi-paso; usarlo para esas tareas daria resultados incorrectos.
-- La licencia openmdw-1.1 esta etiquetada como "other" en el repositorio; antes de uso comercial conviene revisar los terminos en https://openmdw.ai/license/1-1/ y las condiciones del modelo base de NVIDIA, ya que la cuantizacion no altera los terminos de licencia originales.
-- Las cuantizaciones extremas (IQ1_S, IQ1_M, Q2_K_S) degradan la calidad de los embeddings de forma significativa; el propio autor las desaconseja salvo casos de fuerza mayor. Para produccion se recomienda Q4_K_M o superior.
-- La longitud de contexto no esta documentada en la informacion disponible; indexar fragmentos demasiado largos sin conocer el limite puede truncar contenido silenciosamente y degradar la recuperacion.
-- No hay datos publicados de benchmarks en esta ficha, por lo que la calidad de recuperacion debe validarse empiricamente en el dominio de uso antes de desplegar.
-- Riesgo de sesgos: al no documentarse la composicion del dataset de entrenamiento, no es posible evaluar sesgos de genero, etnicos o culturales en el espacio de embeddings; conviene auditar la recuperacion en casos sensibles.
-- El repositorio GGUF (92,9 GB) contiene muchos archivos; descargar solo la cuantizacion necesaria para evitar consumo innecesario de almacenamiento y ancho de banda.
-- La model card del repositorio cuantizado no documenta el pipeline de uso recomendado (prefijos de instruccion, pooling, normalizacion); es necesario consultar la documentacion del modelo base de NVIDIA para aplicar el formato de entrada correcto.
+- Al ser un modelo de embeddings y no generativo, no puede usarse para chat, generación de texto, razonamiento ni tool calling.
+- Las cuantizaciones de muy baja precisión (IQ1_S, IQ1_M, IQ2_XXS) degradan notablemente la calidad de los embeddings; se desaconsejan para producción.
+- No se dispone de información sobre sesgos específicos del modelo base; como todo modelo entrenado con datos web multilingües, es probable que herede sesgos presentes en esos datos.
+- Riesgo de que los embeddings no capturen bien dominios muy especializados (jurídico, médico, código) si el entrenamiento no los cubrió; no hay datos disponibles al respecto.
+- La licencia openmdw-1.1 debe revisarse antes de uso comercial; está etiquetada como "other" en Hugging Face y enlaza a los términos de OpenMDW.
+- La longitud de contexto no está especificada, lo que impide planificar con precisión el tamaño máximo de fragmento a indexar.
+- Esta publicación es una cuantización de terceros (mradermacher), no la versión oficial de NVIDIA; para producción crítica conviene validar contra el modelo base en BF16.
+- El repositorio ocupa 92,9 GB debido a la gran cantidad de cuantizaciones incluidas; conviene descargar solo el fichero necesario.
 
 ## Enlaces
 
-- Repositorio GGUF (esta ficha): https://huggingface.co/mradermacher/Nemotron-3.5-Embed-8B-BF16-i1-GGUF
-- Modelo base BF16 de NVIDIA: https://huggingface.co/nvidia/Nemotron-3.5-Embed-8B-BF16
-- Cuantizaciones estaticas del mismo autor: https://huggingface.co/mradermacher/Nemotron-3.5-Embed-8B-BF16-GGUF
-- Pagina de descargas del autor para este modelo: https://hf.tst.eu/model#Nemotron-3.5-Embed-8B-BF16-i1-GGUF
-- Licencia openmdw-1.1: https://openmdw.ai/license/1-1/
-- Guia de uso de GGUF (README de referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/Nemotron-3.5-Embed-8B-BF16-i1-GGUF
+- Modelo base original: https://huggingface.co/nvidia/Nemotron-3.5-Embed-8B-BF16
+- Cuantizaciones estáticas del mismo autor: https://huggingface.co/mradermacher/Nemotron-3.5-Embed-8B-BF16-GGUF
+- Página de resumen y descargas del autor: https://hf.tst.eu/model#Nemotron-3.5-Embed-8B-BF16-i1-GGUF
+- Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

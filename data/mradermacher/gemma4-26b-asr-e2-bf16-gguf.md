@@ -2,81 +2,90 @@
 
 ## Resumen
 
-Gemma4-26B-ASR-E2-BF16-GGUF es una versión cuantizada en formato GGUF de un modelo derivado de la familia Gemma 4, publicada por el usuario mradermacher en Hugging Face. El nombre del repositorio sugiere un modelo orientado a reconocimiento automático del habla (ASR), construido a partir del checkpoint `taharmasmaliyev07/Gemma4-26B-ASR-E2-BF16`. La model card es prácticamente inexistente: solo incluye metadatos generados automáticamente por la herramienta de conversión a GGUF y una referencia al modelo origen.
+Gemma4-26B-ASR-E2-BF16-GGUF es una redistribucion en formato GGUF del modelo taharmasmaliyev07/Gemma4-26B-ASR-E2-BF16, un ajuste fino de la familia Gemma 4 de Google orientado a reconocimiento automatico del habla (ASR, por sus siglas en ingles). El trabajo de cuantizacion lo firma mradermacher, un conocido publicador de versiones GGUF de modelos abiertos, que ofrece aqui una bateria completa de cuantizaciones estaticas (desde Q2_K hasta Q8_0) junto con los suplementos multimodales mmproj en Q8_0 y f16.
 
-El dato más llamativo es la discrepancia entre el nombre del repositorio y los parámetros reales declarados en los safetensors: 572.794.416 parámetros (aproximadamente 0,57 mil millones), no 26 mil millones. Esta inconsistencia, junto con la ausencia de licencia, idiomas, pipeline y benchmarks, impide validar las capacidades reales del modelo. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamaño de 2,0 GB, lo que es coherente con un modelo de ~0,6 mil millones de parámetros en BF16 (unos 1,1 GB de pesos) más las múltiples cuantizaciones incluidas.
+El modelo base cuenta con 25.233.142.046 parametros (aproximadamente 25,2 mil millones) y se distribuye bajo licencia Apache 2.0. La nomenclatura "ASR-E2" sugiere un ajuste especifico para tareas de transcripcion de audio, aunque la model card no detalla la composicion del dataset de entrenamiento ni el proceso de ajuste. El repositorio original esta etiquetado como conversational y compatible con endpoints, lo que indica que puede desplegarse en infraestructuras de inferencia estandar.
 
-La relevancia de esta ficha es, por tanto, limitada y fundamentalmente cautelar: sirve para documentar un artefacto del ecosistema GGUF del que no se puede confirmar ni arquitectura, ni licencia, ni rendimiento, y cuyo uso en producción no está justificado sin verificación adicional del modelo origen.
+La relevancia de esta ficha radica en que permite ejecutar un modelo de ~25B especializado en voz en hardware de consumo mediante cuantizacion GGUF, algo impensable hace unos anos. Con la cuantizacion Q4_K_M (16,9 GB) cabe en GPUs de 24 GB como la RTX 4090, y con Q2_K (10,7 GB) incluso en tarjetas de 12-16 GB. Es, por tanto, una opcion practica para prototipado local de pipelines de voz sin depender de APIs cerradas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere un derivado de Gemma 4 orientado a ASR; no confirmado) |
-| Parametros totales | 572.794.416 (según safetensors del repo); el nombre indica "26B", dato no verificado y en aparente contradicción |
+| Arquitectura | Transformer (familia Gemma 4; detalles especificos no disponibles) |
+| Parametros totales | 25.233.142.046 (~25,2B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo origen se distribuye en BF16 |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mas mmproj Q8_0 y f16 |
+| Idiomas soportados | en (ingles, segun la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura interna del modelo. El nombre del repositorio apunta a un derivado de la familia Gemma 4 con una variante denominada "E2" y una orientación a ASR (reconocimiento automático del habla), pero la model card no describe capas, mecanismo de atención, tipo de tokenizador ni si incorpora un encoder de audio. Tampoco se detalla si es un transformer denso, un modelo híbrido o un adaptador sobre un modelo base.
+El modelo base es un ajuste fino de la familia Gemma 4 de Google, una arquitectura transformer decoder-only. La model card del repositorio cuantizado no aporta detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. El sufijo "ASR" y el uso de ficheros mmproj (suplementos multimodales) indican que el modelo incorpora un proyector multimodal para procesar audio, presumiblemente entrenado para tareas de transcripcion.
 
-Respecto al entrenamiento, no se indica el número de tokens, la composición del dataset, ni si hubo fases de RLHF, DPO o ajuste supervisado. La única información técnica disponible es la relativa al proceso de cuantización: los metadatos indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica una conversión desde pesos Hugging Face a GGUF con la herramienta estándar de llama.cpp. No se documenta ninguna innovación técnica (decodificación especulativa, atención lineal, etc.).
+La cuantizacion realizada por mradermacher es de tipo estatico (quantize_version 2, output_tensor_quantised 1, convert_type hf), sin versiones ponderadas por imatrix en el momento de la publicacion. Esto implica que las cuantizaciones de baja precision (Q2_K, Q3_K) pueden degradar mas la calidad que sus equivalentes con imatrix. El repositorio incluye dos ficheros mmproj (Q8_0 de 0,9 GB y f16 de 1,3 GB) necesarios para el procesamiento multimodal.
 
 ## Capacidades
 
-- No se documentan capacidades específicas en la información disponible.
-- El nombre del repositorio sugiere reconocimiento automático del habla (ASR), pero no se confirma ni el tipo de entrada (audio) ni el formato de salida (transcripción, timestamps, etc.).
-- No se confirma soporte de tool calling ni function calling.
-- No se confirma soporte de agentes ni razonamiento multi-paso.
-- No se confirman capacidades multilingües.
-- No se confirma ningún modo especial (thinking mode, visión, audio, etc.).
-- La única capacidad verificable es la de ser cargado por runtimes compatibles con GGUF (llama.cpp y derivados).
+- Generacion de texto conversacional, segun la etiqueta "conversational" del repositorio.
+- Reconocimiento automatico del habla (transcripcion de audio a texto), a juzgar por el nombre del modelo y la presencia de suplementos mmproj.
+- Procesamiento multimodal mediante el proyector mmproj (audio; no se confirma vision).
+- Compatibilidad con text-generation-inference y endpoints estandar.
+- Capacidades de tool calling y agentes: no disponible.
+- Capacidades multilingues: limitadas al ingles segun la model card.
+- Modo thinking: no disponible.
 
 ## Casos de uso
 
-- Evaluación comparativa de cuantizaciones GGUF: el repositorio incluye 12 variantes (desde Q2_K hasta Q8_0 y x-f16), lo que permite medir la degradación de calidad frente a tamaño en un pipeline de pruebas controlado, siempre que se valide primero el modelo origen.
-- Transcripción de audio en local (hipotético): si el modelo origen confirma su naturaleza ASR, podría desplegarse con llama.cpp en entornos sin GPU para transcripciones de baja latencia; requiere verificación previa.
-- Prototipado de pipelines de audio en CPU: el tamaño reducido de los pesos (2,0 GB de repo, ~1,1 GB en BF16) permite experimentar en máquinas sin acelerador, aunque la viabilidad funcional no está demostrada.
-- Archivado y preservación de artefactos del ecosistema: dado el contexto de discusión sobre la disponibilidad futura de pesos abiertos, este repo puede conservarse como referencia histórica de una conversión GGUF concreta.
-- Pruebas de integración de runtimes GGUF: útil para validar que una versión de llama.cpp carga correctamente cuantizaciones IQ4_XS y Q3_K_L sobre un checkpoint concreto.
-- Auditoría de licencias y procedencia: caso de uso centrado en revisar la cadena de derivación (modelo origen → conversión → cuantización) antes de adoptar cualquier artefacto de la familia.
+- Transcripcion local de reuniones: desplegando el modelo con llama.cpp y el fichero mmproj correspondiente, se puede transcribir audio en local sin enviar datos a servicios externos, lo que resulta adecuado para entornos con requisitos de privacidad.
+- Subtitulado automatizado de contenido audiovisual: el modelo puede procesar fragmentos de audio y generar texto sincronizable, con la ventaja de ejecutarse en una sola GPU de 24 GB usando Q4_K_M.
+- Prototipado de asistentes de voz: combinado con un TTS, permite construir pipelines de voz a voz completamente locales para demos y pruebas de concepto.
+- Investigacion en ASR: al ser Apache 2.0 y estar disponible en multiples cuantizaciones, facilita experimentos de evaluacion comparativa de calidad frente a otros modelos ASR sin coste de licencia.
+- Indexacion y busqueda de archivos de audio: transcripcion por lotes de grabaciones para generar indices de texto searchable, usando Q8_0 si se prioriza calidad o Q4_K_S si se prioriza velocidad.
+- Educacion y accesibilidad: generacion de transcripciones para estudiantes con dificultades auditivas en entornos donde no se permite el uso de APIs en la nube.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma fiable. Como referencia orientativa basada en los 572.794.416 parámetros declarados, en BF16 los pesos ocuparían aproximadamente 1,1 GB; en Q4_K_M, alrededor de 0,35-0,4 GB; en Q8_0, unos 0,6 GB. Estas cifras son estimaciones aritméticas, no medidas publicadas.
-- GPU recomendadas: no disponible. Por tamaño, cualquier GPU consumer con 4 GB o más de VRAM podría alojar las cuantizaciones pequeñas, pero no hay confirmación de que el modelo funcione.
-- Cabe en GPU consumer: probablemente sí en el rango de 4-8 GB para cuantizaciones Q4-Q8, sujeto a verificación.
-- Opciones de despliegue: llama.cpp y runtimes compatibles con GGUF (Ollama, LM Studio, llama-cpp-python). No se confirma soporte de vLLM ni TGI, que requieren formatos distintos o conversión.
+- VRAM estimada segun cuantizacion: Q2_K ~10,7 GB; Q3_K_S ~12,3 GB; IQ4_XS ~14,2 GB; Q4_K_S ~15,6 GB; Q4_K_M ~16,9 GB; Q5_K_M ~19,2 GB; Q6_K ~22,7 GB; Q8_0 ~27,0 GB. Anadir ~1 GB si se usa el mmproj.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; A100 40/80 GB o H100 para Q8_0 y f16; RTX 3090 (24 GB) valida para Q4_K_M.
+- Cabe en GPU de consumo: si, desde Q2_K en tarjetas de 12-16 GB (RTX 4070 Ti, RTX 4080) y Q4_K_M en 24 GB (RTX 3090/4090).
+- Opciones de despliegue: llama.cpp, Ollama (previa importacion del GGUF), text-generation-inference (solo con backend compatible), y cualquier runtime que soporte GGUF.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen modelos comparables verificables, dado que no se puede confirmar la categoría real del modelo (ASR de ~0,6 B, derivado de Gemma 4, u otra cosa). Cualquier comparación con alternativas ASR (Whisper, Qwen3-ASR) o con modelos Gemma de distinto tamaño sería especulativa y no se sostiene con los datos proporcionados.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Gemma4-26B-ASR-E2-BF16-GGUF (este) | ~25,2B | no disponible | Apache 2.0 | GGUF | Ajuste ASR sobre Gemma 4 |
+| Whisper large-v3 | ~1,55B | 30 s por ventana | MIT | safetensors, GGUF via whisper.cpp | Referencia ASR, mucho menor |
+| Qwen2-Audio-7B | ~7B | no disponible | Apache 2.0 | safetensors | Multimodal audio-texto |
+| Gemma 2 27B (base) | ~27B | 8K | Gemma license | safetensors, GGUF | Texto general, no ASR |
+
+La comparacion es aproximada: no hay datos publicados de rendimiento ASR para este modelo, por lo que no puede establecerse una jerarquia de calidad frente a Whisper o Qwen2-Audio.
 
 ## Limitaciones y advertencias
 
-- Discrepancia crítica entre el nombre ("26B") y los parámetros reales declarados (572.794.416): no se puede asumir que el modelo tenga 26 mil millones de parámetros.
-- Ausencia total de licencia: no se puede determinar si el uso comercial está permitido. La licencia del modelo origen tampoco se especifica en la información disponible.
-- Sin idiomas declarados: imposible evaluar cobertura lingüística.
-- Sin benchmarks ni evaluaciones: no hay evidencia de calidad, precisión de transcripción ni robustez.
-- Sin model card sustantiva: no se documentan sesgos, datos de entrenamiento ni limitaciones conocidas.
-- Riesgo de alucinación: no evaluable por falta de información; en modelos ASR, el riesgo típico es la generación de texto inventado en segmentos de silencio o ruido.
-- Procedencia dudosa: el autor de la conversión (mradermacher) es un tercero, no el desarrollador original; el checkpoint origen (`taharmasmaliyev07/...`) tampoco está verificado.
-- 0 descargas y 0 likes: sin validación por parte de la comunidad.
-- Fecha de creación futura (2026-11-21) en los metadatos: conviene tratar las marcas temporales con cautela.
-- No apto para producción sin auditoría previa del modelo origen, de la licencia y de una evaluación funcional reproducible.
+- Solo se declara soporte de ingles; el rendimiento en castellano no esta documentado.
+- No hay benchmarks publicados, por lo que la calidad ASR real es desconocida.
+- Las cuantizaciones Q2_K y Q3_K pueden degradar notablemente la calidad al no existir versiones imatrix.
+- El modelo base es un ajuste fino de terceros (taharmasmaliyev07); su procedencia y calidad de datos no estan verificadas por Google.
+- Riesgo de alucinacion en transcripciones con audio ruidoso o acentos no ingleses.
+- Aunque la licencia es Apache 2.0, conviene revisar los terminos del modelo Gemma subyacente por si hubiera restricciones adicionales de uso.
+- El repositorio ocupa 184,9 GB en total; descargar solo la cuantizacion necesaria.
+- No se dispone de informacion sobre tool calling ni comportamiento agentico.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Gemma4-26B-ASR-E2-BF16-GGUF
-- Modelo origen referenciado en la model card: https://huggingface.co/taharmasmaliyev07/Gemma4-26B-ASR-E2-BF16
-- Hilo de discusión relacionado (r/LocalLLaMA): https://www.reddit.com/r/LocalLLaMA/comments/1xuthme/if_open_weights_dry_up_what_are_you_archiving/
+- Repositorio GGUF: https://huggingface.co/mradermacher/Gemma4-26B-ASR-E2-BF16-GGUF
+- Modelo base: https://huggingface.co/taharmasmaliyev07/Gemma4-26B-ASR-E2-BF16
+- Pagina de descargas de mradermacher: https://hf.tst.eu/model#Gemma4-26B-ASR-E2-BF16-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

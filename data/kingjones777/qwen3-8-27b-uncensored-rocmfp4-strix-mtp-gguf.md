@@ -2,109 +2,115 @@
 
 ## Resumen
 
-Qwen3.8-27B-Uncensored-ROCmFP4-STRIX-MTP-GGUF es una cuantización en formato GGUF del modelo Qwen/Qwen3.8-27B, preparada específicamente para hardware AMD Strix Halo (iGPU Radeon 8060S, gfx1151) y el runtime ROCm 7.2.4. El autor, kingjones777, aplica un proceso de abliteration sobre los pesos originales para eliminar los rechazos de contenido (refusals), manteniendo intactas las capacidades del modelo base. El resultado es una variante "uncensored" pensada como artefacto de investigación, no como producto de producción.
+Qwen3.8-27B-Uncensored-ROCmFP4-STRIX-MTP-GGUF es una cuantización de pesos en formato GGUF del modelo Qwen/Qwen3.8-27B, publicada por el usuario kingjones777. El artefacto combina tres elementos: una variante "abliterated" o "uncensored" del modelo base (que elimina el comportamiento de rechazo de contenido), una cuantización de 4 bits específica para hardware AMD (denominada ROCmFP4/ROCmFPX), y un conjunto de ajustes orientados a decodificación especulativa mediante Multi-Token Prediction (MTP) sobre la iGPU Radeon 8060S del sistema AMD Strix Halo (gfx1151).
 
-El modelo destaca por integrar soporte de decodificación especulativa MTP (multi-token prediction) con un drafter head separado, lo que permite alcanzar velocidades de inferencia notablemente superiores a las de una ejecución sin especulación. Según las pruebas publicadas, el punto óptimo de rendimiento se sitúa en `--spec-draft-n-max 4`, y las cuantizaciones ROCmFP4 (ftype 103 y 106) logran entre 23 y 25 tok/s en prosa y hasta 42 tok/s en código sobre la iGPU del Strix Halo. La licencia Apache 2.0 facilita su uso en investigación y despliegues internos.
+El modelo resuelve un problema muy concreto: servir un LLM de aproximadamente 27 000 millones de parámetros en un equipo con memoria unificada de 128 GB y aceleración ROCm, maximizando el throughput de decodificación en un único dispositivo integrado. Para ello el autor publica variantes con distintos "ftypes" (103 FAST, 106 STRIX_LEAN, 114 Q6 AGENT, 116 Q6 LEAN) y documenta una curva de decodificación especulativa cuyo punto óptimo se sitúa en `--spec-draft-n-max 4`, con velocidades medidas de 23-25 tok/s en prosa y 42-43 tok/s en código.
 
-## Especificaciones técnicas
+Es relevante ahora porque ejemplifica una tendencia práctica: cuantizaciones hiperespecializadas por hardware para inferencia local en equipos de consumo o semiprofesionales, con ajustes de decodificación especulativa documentados empíricamente. No obstante, se trata explícitamente de un artefacto de investigación según su propio autor, no de un modelo recomendado para producción por defecto.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (basada en Qwen3.8-27B, con MTP) |
-| Parametros totales | 26.895.998.464 (≈26,9B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 65536 tokens (configuración de ejemplo en llama-server) |
-| Tipos de cuantizacion | ROCmFP4 (ftype 103 FAST, 106 STRIX_LEAN), Q6_0 ROCmFPX (ftype 114 AGENT, 116 LEAN) |
-| Idiomas soportados | no disponible (heredado de Qwen3.8-27B, probablemente multilingüe) |
+| Arquitectura | Transformer decoder-only (modelo base Qwen3.8-27B); decodificación especulativa MTP con drafter separado |
+| Parametros totales | 26.895.998.464 (26,9 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 65 536 tokens en el ejemplo de despliegue del autor; ventana nativa del modelo base no disponible |
+| Tipos de cuantizacion | ROCmFP4 ftype 103 (FAST), 106 (STRIX_LEAN), 114 (Q6 AGENT), 116 (Q6 LEAN); drafter MTP en Q4_0 |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (con tensores ROCmFP4 y Q6) |
+| Formato de pesos | GGUF (llama.cpp / ROCmFPX) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una cuantización de Qwen3.8-27B, un transformer denso con arquitectura similar a la serie Qwen3, que incluye atención multi-cabeza y capas de predicción multi-token (MTP). La variante uncensored se obtiene aplicando abliteration a los pesos BF16 del modelo original, un proceso que elimina los patrones de rechazo de contenido sin modificar la capacidad de generación. No se ha realizado entrenamiento adicional: el autor parte del checkpoint BF16 y lo cuantiza con su pipeline ROCmFPX, optimizado para la iGPU gfx1151.
+El modelo subyacente es Qwen/Qwen3.8-27B, un transformer decoder-only de 26,9 mil millones de parámetros. El artefacto publicado no reentrena el modelo: aplica una modificación de tipo "abliteration" sobre los pesos BF16 del modelo base para eliminar las respuestas de rechazo, y después cuantiza a 4 bits con el pipeline ROCmFPX, generando ftypes propios (103 FAST y 106 STRIX_LEAN) más dos variantes Q6 (114 AGENT y 116 LEAN). El autor indica que las variantes de 4 bits 103 y 106 provienen del mismo checkpoint abliterated y que, por tanto, no deberían reintroducir rechazos.
 
-La innovación técnica principal es la integración de un drafter head MTP separado (`mtp-Qwen3.8-27B-Q4_0.gguf`) que permite decodificación especulativa en llama.cpp. El modelo expone `nextn_predict_layers = 1` como cabecera de borrador externa, y el autor determinó que el número óptimo de tokens especulativos es 4, donde la tasa de aceptación alcanza 0.926. El pipeline de cuantización usa ROCmFPX, un formato adaptado a la arquitectura RDNA 3.5 que mejora la eficiencia de memoria y velocidad en comparación con FP16 o Q8.
+La innovación técnica principal es la integración de decodificación especulativa mediante Multi-Token Prediction. Qwen3.8-27B expone `nextn_predict_layers = 1` como un drafter GGUF separado (`mtp-Qwen3.8-27B-Q4_0.gguf`), no como capas nextn internas. El autor documenta que el valor por defecto de llama.cpp (`--spec-draft-n-max 16`) queda al otro lado de la curva de rendimiento y que el punto óptimo es n=4, con una tasa de aceptación de 0,926 en la variante alineada. También advierte de que el drafter debe residir en GPU (`--spec-draft-ngl 99`) para que la ganancia no desaparezca. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni el uso de RLHF/DPO en el modelo base.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: el modelo conserva las capacidades del Qwen3.8-27B original, incluyendo razonamiento de múltiples pasos y generación de texto creativo.
-- Generación de código: alto rendimiento en tareas de programación (42 tok/s en pruebas de código con MTP).
-- Soporte de tool calling y function calling: heredado del modelo base, disponible en el formato GGUF con chat template.
-- Capacidades de agente: puede integrarse en flujos multi-paso con el modo de razonamiento activado (`enable_thinking` o `reasoning_effort`).
-- Multilingüismo: no especificado en la ficha, pero el modelo base Qwen3.8-27B es multilingüe (cubre inglés, chino y otros idiomas).
-- Capacidad de vision: se incluye el proyector de vision (`mmproj-Qwen3.8-27B-Q8_0.gguf`) para entrada de imágenes, aunque el modelo base es texto-imagen.
-- Decodificación especulativa: MTP con drafter head, que acelera la inferencia hasta un 50% frente a la generación sin especulación.
-- Sin rechazos de contenido: la abliteration elimina la mayoría de los rechazos en el conjunto de pruebas de seguridad (24 casos dañinos, 23 cumplen).
+- Generación de texto conversacional multi-turno en formato chat, con plantilla Jinja.
+- Generación de código, con throughput medido notablemente superior al de prosa (42,70-42,80 tok/s frente a 23,08-24,73 tok/s en las pruebas del autor).
+- Modo de razonamiento configurable mediante `enable_thinking` y `reasoning_effort`; el valor por defecto es `xhigh` y el autor recomienda `false` o `low` para presupuestos de tokens pequeños.
+- Tool calling / function calling: el autor reporta que funciona en la configuración verificada con el repositorio oficial ROCmFPX.
+- Decodificación especulativa MTP con drafter separado, con ganancia de throughput documentada.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Visión, audio u otras modalidades: no disponibles en la información proporcionada.
+- Alineación de seguridad reducida deliberadamente (abliterated): no rechaza contenido que el modelo alineado rechazaría.
 
 ## Casos de uso
 
-- **Investigación en seguridad y sesgos**: el modelo permite estudiar cómo se comporta un LLM sin capas de rechazo, útil para analizar el impacto de la alineación en el rendimiento y para desarrollar técnicas de moderación más robustas. Se puede ejecutar localmente con llama.cpp y comparar con el modelo alineado.
-- **Generación de código en entornos con restricciones de hardware**: gracias a las cuantizaciones ROCm4 y la optimización para AMD Strix Halo, el modelo puede ejecutarse en equipos portátiles con iGPU Radeon 8060S, ofreciendo asistencia de programación en tiempo real con latencia baja (42 tok/s en código).
-- **Prototipado de agentes conversacionales**: con soporte de tool calling y el modo de razonamiento, se puede construir un agente que interactúe con APIs y ejecute tareas de múltiples pasos, aunque debe limitarse a entornos controlados por el riesgo de salidas no moderadas.
-- **Generación de texto creativo y narrativo**: la ausencia de rechazos permite explorar temas sensibles o de ficción sin restricciones automáticas, útil para escritores que necesitan un generador flexible.
-- **Análisis de datos y generación de informes**: el modelo puede procesar documentos largos (hasta 65K tokens) y resumir o extraer información, aunque la abliteration puede producir respuestas inesperadas en dominios sensibles.
-- **Despliegue en edge con ROCm**: la integración con ROCm 7.2.4 y la optimización para gfx1151 permite ejecutar el modelo en dispositivos AMD de bajo consumo, como servidores edge o estaciones de trabajo, con velocidad de generación aceptable.
+- Inferencia local en AMD Strix Halo: el artefacto está calibrado para Ryzen AI Max+ 395 con Radeon 8060S (gfx1151), ROCm 7.2.4 y 128 GB de memoria unificada, donde ocupa 13,33-13,59 GiB en las variantes de 4 bits y deja margen para contexto largo y otros procesos.
+- Asistencia de código en estación de trabajo: con 42,70-42,80 tok/s en código y tool calling operativo, es adecuado para autocompletado, generación de parches y refactorizaciones en un flujo local sin depender de API externa.
+- Prototipado de agentes con razonamiento multi-paso: la ventana de 65 536 tokens configurada en el ejemplo de despliegue permite mantener historiales largos de herramientas y observaciones intermedias.
+- Investigación sobre alineación y rechazo: el autor emplea un conjunto de 24 prompts dañinos, 12 inofensivos y 8 de calidad para medir tasas de rechazo, lo que hace del artefacto un instrumento para estudiar el efecto de la abliteration sobre el comportamiento de negativa.
+- Evaluación de decodificación especulativa: sirve para reproducir curvas de throughput frente a la profundidad del drafter (n=3, n=4, n=5) en hardware integrado AMD, un escenario poco cubierto por los benchmarks habituales de GPU discretas.
+- Despliegue de servicio local con `llama-server`: el comando documentado expone una API HTTP en el puerto 8080 con plantilla de chat, útil para integrar el modelo en herramientas internas de un equipo pequeño.
+- Experimentación con cuantizaciones de 4 bits no estándar: los ftypes 103 y 106 permiten comparar tamaño, perplejidad y velocidad dentro del mismo pipeline ROCmFPX.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card incluye datos de rendimiento de inferencia y de comportamiento de rechazo:
+Los datos disponibles son mediciones de throughput y de comportamiento de rechazo realizadas por el autor, no benchmarks académicos estándar.
 
-**Velocidad de decodificación (llama-server, ROCm 7.2.4, Ryzen AI Max+ 395, ctx 8192, batch 1, temp 0, thinking off)**
+| Metrica | Resultado |
+|---|---|
+| Unc FAST (103) decode @8K MTP, prosa | 23,08 tok/s |
+| Unc FAST (103) decode @8K MTP, codigo | 42,80 tok/s |
+| Unc STRIX_LEAN (106) decode @8K MTP, prosa | 24,73 tok/s |
+| Unc STRIX_LEAN (106) decode @8K MTP, codigo | 42,70 tok/s |
+| Alineado STRIX (105) MTP n=4 (publicado) | 30,30 tok/s |
+| Alineado STRIX_LEAN (106) sin especulacion (publicado) | 13,46 tok/s |
+| Alineado STRIX_LEAN (106) perplejidad (publicado) | 5,8871 |
+| Curva MTP alineada STRIX @8K | n=3: 30,13 · n=4: 30,30 (aceptacion 0,926) · n=5: 27,52 |
+| Curva MTP uncensored Q6 LEAN (116) | n=3: 24,96 · n=4: 27,66 · n=5: 25,27 |
 
-| Build | ftype | Tamaño | prosa tok/s | código tok/s |
-|---|---|---|---|---|
-| Unc FAST | 103 | 13,33 GiB | 23,08 | 42,80 |
-| Unc STRIX_LEAN | 106 | 13,59 GiB | 24,73 | 42,70 |
-| Unc Q6 AGENT | 114 | 23,15 GiB | — | ~23 (sin MTP) |
-| Unc Q6 LEAN | 116 | 20,37 GiB | — | ~10 sin MTP / ~28 con MTP |
-| Alineado STRIX (publicado) | 105 | 13,75 GiB | — | 30,30 (MTP n=4) |
-| Alineado STRIX_LEAN (publicado) | 106 | 13,59 GiB | — | 13,46 sin MTP |
+Evaluación de rechazo (greedy, conteo de respuestas):
 
-**Pruebas de rechazo de contenido (conjunto de 24 dañinas / 12 inofensivas / 8 de calidad, greedy)**
-
-| Modelo | Dañinas (24) | Inofensivas (12) | Calidad (8) |
+| Modelo | Dañinos (24) | Inofensivos (12) | Calidad (8) |
 |---|---|---|---|
-| Qwen3.8 alineado Q8 AGENT | 23 rechaza, 1 cumple | 11/12 ok | 6/8 |
-| Qwen3.8 uncensored Q6 AGENT (114) | 23 cumple, 1 roto | 11/12 ok | 6/8 |
-| Muse alineado Q6 AGENT (114) | 18 rechaza, 6 cumple | 11/12 ok | 7/8 |
-| Muse uncensored STRIX_LEAN (106) | 24 cumple | 12/12 ok | 7/8 |
+| Qwen3.8 alineado Q8 AGENT | 23 rechazan, 1 cumple | 11/12 correctos | 6/8 |
+| Qwen3.8 uncensored Q6 AGENT (114) | 23 cumplen, 1 roto | 11/12 correctos | 6/8 |
+| Muse alineado Q6 AGENT (114) | 18 rechazan, 6 cumplen | 11/12 correctos | 7/8 |
+| Muse uncensored STRIX_LEAN (106) | 24 cumplen | 12/12 correctos | 7/8 |
 
-La calidad de generación es idéntica entre la variante alineada y la uncensored (6/8 en ambos casos), lo que indica que la abliteration no degrada las capacidades generales.
+No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
 
-- **GPU objetivo**: AMD iGPU Radeon 8060S (gfx1151) integrada en el Ryzen AI Max+ 395, con 128 GB de memoria unificada. Es el hardware de referencia para las pruebas.
-- **VRAM estimada**: los archivos GGUF requieren entre 13,3 GiB (ftype 103) y 23,2 GiB (ftype 114) de memoria para la inferencia completa. Con `-ngl 999` se carga todas las capas en la GPU/iGPU.
-- **GPU recomendadas**: AMD Strix Halo (gfx1151), aunque el modelo puede ejecutarse en otras GPUs AMD con ROCm 7.2.4 y en GPUs NVIDIA con CUDA (formato GGUF estándar).
-- **Consumer GPU**: sí, cabe en GPUs de 16 GB VRAM (por ejemplo, RTX 4080/4090, RX 7900 XTX) con cuantización 4-bit (13,3-13,6 GiB). Para Q6 se necesitan al menos 24 GB.
-- **Opciones de despliegue**: llama.cpp (llama-server, llama-cli), Ollama (con modelfile), vLLM (con adaptaciones ROCm), y cualquier servidor compatible con GGUF.
-- **Latencia y throughput**: con MTP n=4, el modelo alcanza 24-25 tok/s en prosa y 42 tok/s en código en el hardware de referencia. Sin MTP, la velocidad se reduce a ~13-14 tok/s en prosa (según el modelo alineado).
+- VRAM/memoria estimada: 13,33 GiB (ftype 103 FAST), 13,59 GiB (ftype 106 STRIX_LEAN), 20,37 GiB (ftype 116 Q6 LEAN), 23,15 GiB (ftype 114 Q6 AGENT). El repositorio completo ocupa 77,9 GB.
+- Hardware de referencia: Ryzen AI Max+ 395 con Radeon 8060S (gfx1151), 128 GB de memoria unificada, ROCm 7.2.4.
+- GPU discretas: no se han documentado pruebas en A100, H100 o RTX 4090; el artefacto está orientado a iGPU AMD con memoria unificada.
+- Cabe en GPU de consumo: las variantes de 4 bits (13,3-13,6 GiB) caben en GPUs con 16 GB o más de VRAM, aunque los ajustes y el drafter están calibrados para gfx1151.
+- Despliegue: `llama-server` de llama.cpp o del fork ROCmFPX, con `--spec-type draft-mtp`, `--spec-draft-ngl 99`, `--spec-draft-n-max 4`, `-fa on`, `-dio`, `--jinja`, `-fit off`, `--parallel 1` y `-dev ROCm0`.
+- Throughput: 23-25 tok/s en prosa y 42-43 tok/s en código con MTP n=4 en el hardware de referencia; 13,46 tok/s sin especulación en la variante alineada equivalente.
+- Nota de compatibilidad: el autor reporta cinco bugs apilados en la línea legacy `charlie12345/ROCmFPX` en Windows 11 / gfx1151 / HIP SDK 7.2, resueltos en el repositorio oficial ROCmFPX.
 
 ## Comparativa con modelos similares
 
-| Modelo | Params | Contexto | Cuantizaciones | Licencia | MTP | Velocidad (Strix Halo) | Refusals |
-|---|---|---|---|---|---|---|---|
-| Qwen3.8-27B (alineado) | 26,9B | 65536 | ROCmFP4, Q6 | Apache 2.0 | Sí (30,3 tok/s) | 23-25 tok/s | 23/24 rechaza |
-| Qwen3.8-27B-Uncensored (este) | 26,9B | 65536 | ROCmFP4, Q6 | Apache 2.0 | Sí (42 tok/s código) | 24,7 tok/s prosa | 1/24 rechaza |
-| Muse (alineado) | no disp. | no disp. | Q6 | Apache 2.0 | No | no disp. | 18/24 rechaza |
-| Muse (uncensored) | no disp. | no disp. | ROCmFP4 | Apache 2.0 | No | no disp. | 0/24 rechaza |
-
-La diferencia principal con el modelo alineado es la eliminación de rechazos de contenido: mientras que el alineado rechaza 23 de 24 peticiones dañinas, la variante uncensored cumple 23 de 24. La velocidad de inferencia es similar entre ambas, aunque la variante alineada publica un valor más alto (30,3 tok/s) en el mismo hardware, lo que sugiere que la abliteration puede tener un coste mínimo en rendimiento.
+| Modelo | Parametros | Contexto | Formato | Licencia | Enfoque |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-Uncensored-ROCmFP4-STRIX-MTP-GGUF | 26,9 B | 65 536 (config. autor) | GGUF ROCmFP4 | Apache 2.0 | Cuantización 4-bit para AMD Strix Halo con MTP |
+| kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF (alineado) | 26,9 B | no disponible | GGUF ROCmFP4 | Apache 2.0 | Misma receta sin abliteration; 30,30 tok/s en código con MTP n=4 |
+| Qwen/Qwen3.8-27B (base) | 26,9 B | no disponible | safetensors BF16 | Apache 2.0 | Modelo alineado de referencia, sin cuantización específica de hardware |
+| Muse uncensored STRIX_LEAN (106) | no disponible | no disponible | GGUF | no disponible | Variante uncensored comparable citada por el autor; 24/24 cumplen en el set dañino |
 
 ## Limitaciones y advertencias
 
-- **Artefacto de investigación**: el autor declara explícitamente que el modelo no debe usarse como producto por defecto. La abliteration elimina los rechazos de contenido, lo que puede generar respuestas inapropiadas, ilegales o dañinas si se despliega sin moderación adicional.
-- **Riesgo de alucinación**: el modelo hereda la tendencia del Qwen3.8-27B a alucinar hechos, especialmente en contextos largos. La ausencia de rechazos puede amplificar la confianza en respuestas incorrectas.
-- **Sesgos**: no se han publicado evaluaciones de sesgo específicas para esta variante. El modelo base Qwen3.8-27B puede presentar sesgos culturales o de género, y la abliteration no los corrige.
-- **Limitaciones de idioma**: aunque el modelo base es multilingüe, la ficha no especifica los idiomas soportados. El rendimiento en lenguas distintas del inglés o chino puede ser inferior.
-- **Restricciones de uso**: la licencia Apache 2.0 permite uso comercial, pero el autor recomienda no desplegarlo en producción sin un sistema de moderación externo. El uso en aplicaciones públicas puede violar políticas de contenido de plataformas.
-- **Dependencia de hardware**: el formato ROCmFP4 está optimizado para gfx1151 y ROCm 7.2.4; en otras plataformas (NVIDIA, Intel) el rendimiento puede degradarse o requerir conversión a cuantizaciones estándar (Q4_K_M, Q5_K_M).
-- **Comportamiento de MTP**: la decodificación especulativa requiere el drafter head Q4_0; usar Q8_0 o configuraciones con `--spec-draft-n-max` superiores a 4 puede reducir la velocidad en lugar de mejorarla.
+- El propio autor califica el artefacto como "research artifact" y advierte explícitamente de que no debe desplegarse como opción por defecto en un producto; el repositorio alineado sigue siendo la referencia de servicio.
+- La abliteration elimina el rechazo de contenido, no añade capacidad. El modelo cumplirá solicitudes dañinas que el modelo alineado rechaza (23 de 24 en el conjunto de prueba del autor).
+- Riesgo elevado de usos indebidos: sin capa de rechazo, no hay salvaguarda integrada frente a contenido dañino, ilegal o inseguro.
+- La evaluación de rechazo se realizó sobre la variante Q6 AGENT (114); el autor asume, sin medirlo directamente, que las variantes de 4 bits 103 y 106 se comportan igual por provenir del mismo checkpoint.
+- El modo de razonamiento por defecto es `xhigh`; con presupuestos de tokens pequeños devuelve `content` vacío. El valor `none` lanza una excepción y debe usarse `false` o `low`.
+- La ruta de decodificación especulativa con drafter separado tiene bugs conocidos en la línea legacy de ROCmFPX en Windows 11 con gfx1151 e HIP SDK 7.2; requiere el repositorio oficial.
+- El rendimiento está calibrado para un hardware muy concreto (gfx1151, ROCm 7.2.4); los tok/s no son extrapolables a otras GPU.
+- No hay datos publicados de benchmarks estándar (MMLU, HumanEval, GSM8K), ni de idiomas soportados, ni de sesgos medidos.
+- La licencia Apache 2.0 permite uso comercial, pero la ausencia de filtros de seguridad traslada al operador toda la responsabilidad legal y ética del despliegue.
+- El repositorio ocupa 77,9 GB, lo que exige espacio en disco considerable aunque solo se use una variante.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/kingjones777/Qwen3.8-27B-Uncensored-ROCmFP4-STRIX-MTP-GGUF)
-- [Modelo alineado (sin abliteration)](https://huggingface.co/kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF)
-- [Modelo base Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
-- [Repositorio GitHub "Qwen 3.8 27B Uncensored"](https://github.com/Wassimyounes01/qwen38-uncensored)
-- [Blog de orcarouter: cómo ejecutar localmente](https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally)
+- Modelo en Hugging Face: https://huggingface.co/kingjones777/Qwen3.8-27B-Uncensored-ROCmFP4-STRIX-MTP-GGUF
+- Variante alineada del mismo autor: https://huggingface.co/kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio oficial ROCmFPX: https://github.com/ROCmFPX/ROCmFPX
+- Pull request de la línea legacy: https://github.com/charlie12345/ROCmFPX/pull/109

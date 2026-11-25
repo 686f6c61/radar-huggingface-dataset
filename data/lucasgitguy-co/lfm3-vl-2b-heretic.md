@@ -2,89 +2,90 @@
 
 ## Resumen
 
-LFM3-VL-2B Heretic es una variante afinada del modelo vision-lenguaje LFM3-VL-2B de LiquidAI, publicada por el usuario independiente Lucasgitguy-co. El modelo base es un transformer multimodal de aproximadamente 1.918 millones de parámetros que combina un codificador visual, un proyector y un modelo de lenguaje para tareas de imagen-a-texto (image-text-to-text). Esta versión "heretic" se distribuye en formato Safetensors BF16 e incluye código de modelo personalizado (`Lfm3VlForConditionalGeneration`).
+LFM3-VL-2B Heretic es un ajuste fino (fine-tune) del modelo vision-lenguaje LiquidAI/LFM3-VL-2B, publicado por el usuario Lucasgitguy-co en Hugging Face. Se distribuye en formato Safetensors BF16 e incorpora el modelo de lenguaje, el codificador visual, el proyector, el tokenizador, la configuración del procesador y código de modelo personalizado. Con 1.918.181.888 parámetros (aproximadamente 1,92 mil millones) y un repositorio de 3,9 GB, está pensado para tareas de image-text-to-text, es decir, generación de texto condicionada por imagen y texto.
 
-El interés de esta ficha reside en que se trata de un derivado comunitario de un modelo de LiquidAI, no de un lanzamiento oficial. El autor documenta únicamente los artefactos del repositorio (pesos, tokenizador, procesador y configuración) y declara explícitamente que no documenta datos de entrenamiento, procedimiento ni resultados de benchmarks. Por tanto, la información técnica disponible es limitada y se limita a lo que puede inferirse de la configuración y de la model card.
+La etiqueta "heretic" hace referencia a la familia de técnicas de desalineación (abliteration) que buscan eliminar los mecanismos de rechazo de un modelo ajustado con RLHF, de modo que responda a peticiones que el modelo original declinaría. El autor no documenta el procedimiento de entrenamiento ni los datos utilizados en esta variante, por lo que la ficha se limita a lo que consta en los artefactos publicados. El modelo base es de Liquid AI y hereda su licencia LFM Open License v1.0, que no es una licencia de código abierto permisiva y restringe el uso comercial de derivados.
 
-La relevancia es acotada: sirve como ejemplo de fine-tuning/derivación multimodal de pequeño tamaño (2B) sobre el que existen también cuantizaciones GGUF y MLX-4bit publicadas por el mismo autor. Su licencia LFM Open License v1.0 impone restricciones de uso comercial sobre los derivados, lo que condiciona su adopción en producción.
+Por su tamaño compacto, el modelo es relevante para despliegues en hardware modesto, incluidos equipos de consumo, y para experimentación con modelos vision-lenguaje de segunda generación de la familia LFM. El autor publica además versiones cuantizadas en GGUF y MLX 4-bit, lo que amplía las opciones de despliegue local.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (codificador visual + proyector + modelo de lenguaje); clase `Lfm3VlForConditionalGeneration` |
-| Parametros totales | 1.918.181.888 (aprox. 1,92 B) |
-| Parametros activos | no disponible (no se declara MoE) |
+| Arquitectura | Transformer vision-lenguaje (clase `Lfm3VlForConditionalGeneration`: codificador visual + proyector + modelo de lenguaje) |
+| Parametros totales | 1.918.181.888 (~1,92 B) |
+| Parametros activos | no disponible (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16 en el repo principal; existen variantes GGUF y MLX-4bit del mismo autor |
+| Tipos de cuantizacion | BF16 (pesos publicados); GGUF y MLX 4-bit en repositorios derivados |
 | Idiomas soportados | en (inglés) |
-| Licencia | LFM Open License v1.0 (license: other) |
-| Formato de pesos | safetensors (BF16); GGUF y MLX-4bit en repos relacionados |
+| Licencia | LFM Open License v1.0 (con limitación de uso comercial para derivados); documentación añadida bajo Apache 2.0 |
+| Formato de pesos | safetensors (BF16); GGUF y MLX disponibles en repositorios separados |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a un modelo vision-lenguaje con tres componentes declarados en el repositorio: un codificador visual, un proyector que alinea las representaciones visuales con el espacio del lenguaje y un modelo de lenguaje. La clase de modelo es `Lfm3VlForConditionalGeneration`, propia de la familia LFM3-VL de LiquidAI, e incluye código personalizado que requiere `trust_remote_code=True` en Transformers (la configuración declara Transformers 5.21.0).
+El modelo sigue una arquitectura vision-lenguaje de tipo transformer: un codificador visual procesa la imagen, un proyector mapea las representaciones visuales al espacio del modelo de lenguaje y un modelo de lenguaje autoregresivo genera la respuesta condicionada por la imagen y el texto de entrada. La configuración declara BF16 y requiere Transformers 5.21.0 o una versión compatible, además de cargarse con `trust_remote_code=True` por incluir código de modelo personalizado. El repositorio incluye el procesador de imagen y la plantilla de chat necesarios para el preprocesado.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o similar. La model card indica explícitamente que los datos de entrenamiento y el procedimiento no están documentados en los artefactos inspeccionados. Tampoco se detalla qué modificación concreta introduce el sufijo "heretic" respecto al modelo base; el término se asocia habitualmente a ajustes que reducen el comportamiento de rechazo, pero no hay documentación que lo confirme en este repositorio.
+No se documentan en los artefactos inspeccionados ni el número de tokens de entrenamiento, ni la composición del dataset, ni si hubo RLHF, DPO u otra fase de alineación. La model card indica explícitamente que "detailed training data, training procedure, and benchmark results are not documented in the inspected artifacts". El sufijo "heretic" sugiere una modificación orientada a reducir o eliminar las respuestas de rechazo del modelo base, pero el autor no describe el método concreto empleado (abliteration, fine-tuning con datos específicos u otro).
 
 ## Capacidades
 
-- Generación de texto condicionada por imagen (image-text-to-text).
-- Descripción y respuesta a preguntas sobre imágenes.
-- Conversación multimodal multi-turno (tag `conversational`).
-- Procesamiento de imágenes mediante el image processor incluido en el repositorio.
-- Capacidades de lenguaje natural en inglés.
-- No se documenta soporte de tool calling, function calling, agentes ni razonamiento multi-paso.
-- No se documentan modos especiales (thinking mode, audio, vídeo).
+- Generación de texto condicionada por imagen (image-text-to-text): descripción de imágenes, respuesta a preguntas visuales y diálogo multimodal.
+- Conversación multi-turno con plantilla de chat incluida en el repositorio.
+- Procesamiento de imágenes mediante el procesador y el codificador visual del modelo base.
+- Capacidad de respuesta a peticiones que el modelo base alinearía como rechazables, según el propósito declarado de la variante "heretic".
+- Soporte de tool calling / function calling: no disponible (no documentado).
+- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
+- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma del repositorio.
+- Modo thinking, visión, audio u otras capacidades especiales: solo visión; el resto no disponible.
 
 ## Casos de uso
 
-- Descripción automática de imágenes: el modelo puede generar texto descriptivo a partir de una imagen de entrada, útil para etiquetado de catálogos o accesibilidad.
-- Respuesta a preguntas visuales (VQA): integrable en asistentes que respondan a preguntas sobre capturas, diagramas o fotografías.
-- Extracción de información de documentos escaneados: al ser multimodal, puede procesar imágenes de documentos y devolver texto estructurado, aunque su tamaño 2B limita la precisión en documentos densos.
-- Prototipado rápido de aplicaciones multimodales: al caber en GPUs de consumo y ofrecer variantes GGUF/MLX, permite experimentar en local sin infraestructura dedicada.
-- Moderación o clasificación de contenido visual: puede usarse para generar descripciones que alimenten clasificadores posteriores.
-- Investigación sobre alineación y comportamiento de rechazo: la variante "heretic" resulta de interés para estudiar cómo cambia el comportamiento conversacional respecto al modelo base de LiquidAI.
-- Despliegue en dispositivos Apple Silicon: la variante MLX-4bit permite ejecución local en Mac para demos y pruebas.
+- Descripción automática de imágenes en inglés: el modelo puede generar pies de foto y descripciones detalladas para catálogos, archivos fotográficos o accesibilidad web, usando el procesador de imagen incluido.
+- Respuesta a preguntas visuales (VQA) en prototipos: útil para construir asistentes que respondan sobre el contenido de capturas, diagramas o documentos escaneados en fase de experimentación.
+- Investigación sobre alineación y seguridad: la variante "heretic" permite estudiar el comportamiento de un modelo vision-lenguaje tras eliminar mecanismos de rechazo, comparándolo con el modelo base de Liquid AI.
+- Evaluación de técnicas de abliteration: sirve como caso de estudio reproducible para medir el impacto de estas técnicas en un modelo multimodal de 2 B de parámetros.
+- Despliegue local en hardware de consumo: con cuantizaciones GGUF o MLX 4-bit, puede ejecutarse en portátiles y estaciones con GPU modesta para pruebas de concepto multimodales.
+- Generación de texto asistida por imagen en pipelines de investigación: integrable en scripts de Transformers para experimentos por lotes sobre conjuntos de imágenes, dado su tamaño reducido y su formato estándar.
+- Extracción de información de imágenes en inglés: lectura de gráficos, tablas o formularios simples como paso previo a un pipeline de datos, siempre con validación humana por el riesgo de alucinación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card indica que los resultados de evaluación no están documentados en los artefactos inspeccionados.
 
 ## Requisitos de hardware
 
-- VRAM estimada en BF16: aproximadamente 3,8 GB solo para pesos (3.836 GB declarados en el archivo `model.safetensors`), más overhead de activaciones y del codificador visual; en la práctica se recomienda al menos 8 GB de VRAM para inferencia cómoda.
-- Cuantizaciones: la variante GGUF reduce el requisito y permite ejecución en CPU o GPUs con 4-6 GB; la variante MLX-4bit está pensada para Apple Silicon.
-- GPUs recomendadas: RTX 3060 12 GB, RTX 4070, RTX 4090 para BF16; A100/H100 no son necesarias por el tamaño del modelo.
-- Cabe en GPU de consumo: sí, en modelos con 8 GB o más en BF16 y en GPUs de 4-6 GB con cuantización.
-- Opciones de despliegue: Transformers con `trust_remote_code=True`, llama.cpp/Ollama a través de la variante GGUF, MLX para Apple Silicon.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en BF16: en torno a 4 GB solo para pesos (3,836 GB de safetensors), más overhead de activaciones y caché KV; se recomienda al menos 8 GB de VRAM para comodidad.
+- Cuantización 4-bit (GGUF/MLX): aproximadamente 1-1,5 GB de pesos, apta para GPUs de consumo con 4-6 GB de VRAM.
+- GPU recomendadas: RTX 3060/4060 o superiores para BF16; RTX 4090, A100 o H100 para mayor throughput y lotes grandes; Apple Silicon mediante la variante MLX 4-bit.
+- Cabe en GPU de consumo: sí, especialmente en las versiones cuantizadas; en BF16 requiere GPUs con al menos 8 GB de VRAM.
+- Opciones de despliegue: Transformers (con `trust_remote_code=True`), llama.cpp u Ollama mediante el repositorio GGUF, y MLX en macOS mediante el repositorio MLX 4-bit. vLLM y TGI no están documentados para este modelo.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| LFM3-VL-2B Heretic (este) | ~1,92 B | no disponible | LFM Open License v1.0 | Hugging Face (comunidad) |
-| LiquidAI/LFM3-VL-2B (base) | ~1,92 B | no disponible | LFM Open License v1.0 | Hugging Face (oficial) |
-| Alternativas de 2B multimodales | no disponible | no disponible | no disponible | no disponible |
-
-La comparación con otros modelos de la misma categoría no puede completarse con los datos proporcionados; únicamente se dispone del modelo base oficial como referencia directa.
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| LFM3-VL-2B Heretic (este) | ~1,92 B | no disponible | LFM Open License v1.0 | Hugging Face, GGUF, MLX | Fine-tune "heretic" del base |
+| LiquidAI/LFM3-VL-2B | ~1,92 B (base) | no disponible | LFM Open License v1.0 | Hugging Face | Modelo original de Liquid AI, alineado |
+| Alternativas de 2 B vision-lenguaje | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- No hay documentación sobre datos de entrenamiento, sesgos ni evaluación de calidad; el autor advierte que los ejemplos de carga no constituyen una afirmación de calidad medida.
-- Riesgo de alucinación no cuantificado; al ser un derivado "heretic", puede presentar un comportamiento de rechazo reducido que conviene validar antes de usar en producción.
-- Soporte únicamente de inglés según los metadatos; no se declaran otros idiomas.
-- Longitud de contexto no disponible, lo que impide planificar casos de uso con entradas largas.
-- La licencia LFM Open License v1.0 impone limitaciones de uso comercial que se extienden a los derivados; no es Apache-2.0.
-- Requiere `trust_remote_code=True`, lo que implica ejecutar código Python del repositorio; conviene auditar dicho código antes de desplegarlo.
-- Modelo publicado por un autor independiente con pocas descargas (38) y un solo like; no hay garantía de mantenimiento ni soporte.
-- El término "heretic" no está documentado en el repositorio; su significado técnico concreto es desconocido.
+- El autor no documenta datos de entrenamiento, procedimiento ni evaluación; la calidad real del fine-tune no está verificada.
+- La variante "heretic" está diseñada para reducir los rechazos del modelo base, lo que aumenta el riesgo de generar contenido inapropiado, dañino o no conforme a políticas de seguridad; no es recomendable para aplicaciones de cara al público sin filtros adicionales.
+- Riesgo de alucinación inherente a los modelos de ~2 B de parámetros, especialmente en tareas de razonamiento complejo o lectura precisa de imágenes.
+- Soporte limitado al inglés según la etiqueta del repositorio; el rendimiento en castellano no está garantizado.
+- La LFM Open License v1.0 no es Apache 2.0 ni una licencia de código abierto permisiva: impone limitaciones de uso comercial sobre los derivados, incluida esta variante.
+- Requiere `trust_remote_code=True`, lo que implica ejecutar código Python del repositorio; conviene auditar dicho código antes de usarlo en producción.
+- La longitud de contexto no está documentada; no debe asumirse una ventana larga para conversaciones o documentos extensos.
+- El modelo se publicó en octubre de 2026 y se actualizó en noviembre de 2026, con solo 284 descargas y 2 likes; la comunidad de validación es muy reducida.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Lucasgitguy-co/lfm3-vl-2b-heretic
-- Modelo base oficial: https://huggingface.co/LiquidAI/LFM3-VL-2B
-- Variante GGUF: https://huggingface.co/Lucasgitguy-co/lfm3-vl-2b-heretic-gguf
-- Variante MLX-4bit: https://huggingface.co/Lucasgitguy-co/lfm3-vl-2b-heretic-mlx-4bit
-- Guía upstream de LFM3-VL: https://huggingface.co/LiquidAI/LFM3-VL-2B
+- Modelo en Hugging Face: https://huggingface.co/Lucasgitguy-co/lfm3-vl-2b-heretic
+- Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
+- Versión GGUF: https://huggingface.co/Lucasgitguy-co/lfm3-vl-2b-heretic-gguf
+- Versión MLX 4-bit: https://huggingface.co/Lucasgitguy-co/lfm3-vl-2b-heretic-mlx-4bit
+- Colección LFM vision-language: https://huggingface.co/collections/Lucasgitguy-co/lfm-vision-language-6aef2dcb0a92787c93414433
+- Informe técnico (referenciado en la model card): docs/paper.md y docs/paper.pdf dentro del repositorio
+- Guía de uso (referenciada en la model card): docs/USAGE.md dentro del repositorio

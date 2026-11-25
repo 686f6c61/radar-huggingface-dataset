@@ -53,16 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - internet-projects/dory-mlx: NVIDIA Nemotron-Labs Dory 1.0 4B ...",
-      "url": "https://github.com/internet-projects/dory-mlx",
-      "snippet": "Run NVIDIA's Nemotron-Labs Dory 1.0 4B (released 16 October 2026) on Apple Silicon with MLX. Dory is a looped 4B reasoning model: a shared block of layers runs 1 to 4 times (2 by default), so one set of weights gives you a speed-versus-accuracy dial."
-    },
-    {
-      "title": "NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16 - Hugging Face",
-      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    }
-  ]
+  "sources": []
 }

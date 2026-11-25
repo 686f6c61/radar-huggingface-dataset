@@ -2,78 +2,82 @@
 
 ## Resumen
 
-Qwen3-ASR-0.6B-GGUF es la conversión al formato GGUF del modelo Qwen3-ASR-0.6B, desarrollado originalmente por el equipo Qwen de Alibaba. Se trata de un modelo especializado en reconocimiento automático del habla (ASR, *automatic speech recognition*) que toma audio como entrada y produce transcripciones de texto. La versión GGUF la publica la organización ggml-org, responsable del ecosistema llama.cpp, para permitir su ejecución en CPU y GPU de consumo mediante dicha herramienta.
+Qwen3-ASR-0.6B-GGUF es la version cuantizada en formato GGUF del modelo de reconocimiento automatico del habla Qwen3-ASR-0.6B, desarrollado originalmente por el equipo Qwen (Alibaba) y convertido a GGUF por ggml-org, el mismo colectivo que mantiene llama.cpp. El modelo resuelve dos tareas combinadas: transcripcion de audio a texto e identificacion automatica del idioma, cubriendo 30 idiomas y 22 dialectos chinos. Su publicacion en GGUF lo hace ejecutable en llama.cpp y en el ecosistema de aplicaciones derivadas, sin necesidad de infraestructura de GPU dedicada.
 
-El modelo cuenta con aproximadamente 751 millones de parámetros (según los pesos en safetensors del modelo base), lo que lo sitúa en la gama ligera y lo hace apto para despliegues con recursos limitados. Su relevancia actual radica en que permite integrar transcripción de audio en entornos locales sin depender de servicios en la nube, gracias al formato GGUF y a la compatibilidad con llama.cpp y sus derivados.
+Con 751.632.384 parametros reales (etiquetado comercialmente como 0.6B), es un modelo compacto pensado para inferencia local y despliegues de bajo coste. Su relevancia actual radica en que combina transcripcion multilingue e identificacion de idioma en una sola pasada generativa, con un formato de salida estructurado (primero el idioma detectado, despues la transcripcion) que facilita su integracion en pipelines de ASR.
 
-La información pública disponible sobre esta ficha es limitada: la model card del repositorio GGUF es mínima y se limita a indicar el origen de la conversión y el comando de uso con `llama-server`. Los detalles sobre arquitectura interna, datos de entrenamiento, idiomas y licencia no están especificados en la información proporcionada.
+La licencia Apache 2.0 permite uso comercial sin restricciones adicionales, lo que lo convierte en una opcion atractiva frente a soluciones propietarias de ASR para aplicaciones que requieren procesamiento local o privacidad de los datos de audio.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base orientado a ASR; detalles no especificados) |
-| Parametros totales | 751.632.384 (según safetensors del modelo base) |
-| Parametros activos | no aplica (no es MoE según la información disponible) |
+| Arquitectura | no disponible (modelo generativo de ASR basado en la familia Qwen3; detalles de la arquitectura interna no publicados en la informacion disponible) |
+| Parametros totales | 751.632.384 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (variantes concretas no especificadas en la información disponible) |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (conversión desde safetensors del modelo base) |
+| Tipos de cuantizacion | GGUF cuantizado (variantes concretas no especificadas en la informacion disponible) |
+| Idiomas soportados | 30 idiomas y 22 dialectos chinos |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (repo de 5,8 GB; modelo base en safetensors) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo en la documentación proporcionada. Por el nombre y la familia a la que pertenece (Qwen3-ASR), se trata de un modelo especializado en reconocimiento de voz, pero no se especifican en la información disponible ni el tipo de encoder de audio, ni el decoder de texto, ni si emplea atención estándar o variantes lineales.
+No se dispone de informacion detallada sobre la arquitectura interna, el numero de tokens de entrenamiento ni la composicion del dataset en la informacion proporcionada. El modelo pertenece a la familia Qwen3 y se presenta como un modelo generativo de reconocimiento automatico del habla: recibe audio y genera texto de forma autoregresiva, emitiendo primero una etiqueta de idioma (por ejemplo, `language English`) y a continuacion la transcripcion.
 
-Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. La model card del repositorio GGUF únicamente indica que el modelo se ha convertido desde `Qwen/Qwen3-ASR-0.6B` mediante `convert_hf_to_gguf.py`, sin aportar detalles adicionales sobre el proceso de entrenamiento original.
+Una particularidad tecnica destacable es el uso de la plantilla de chat: la parte correspondiente al idioma detectado se coloca en el bloque de razonamiento (thinking), de modo que el contenido del mensaje final contiene unicamente la transcripcion. Esto simplifica el postprocesado en produccion, ya que el consumidor del modelo recibe directamente el texto transcrito. La conversion a GGUF la realiza la herramienta automatica de ggml-org (https://github.com/ggml-org/convert).
 
 ## Capacidades
 
-- Reconocimiento automático del habla: el modelo está diseñado para transcribir audio a texto.
-- Conversación: la etiqueta `conversational` del repositorio sugiere soporte de interacción conversacional, aunque no se detalla su alcance.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse a través de infraestructura compatible con endpoints estándar.
-- Ejecución local: al estar en formato GGUF, puede ejecutarse con llama.cpp y herramientas derivadas en CPU y GPU de consumo.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Capacidades especiales (modo thinking, visión, audio): la entrada es audio según la naturaleza del modelo ASR; no se detallan otras modalidades.
+- Reconocimiento automatico del habla (transcripcion de audio a texto).
+- Identificacion automatica del idioma del audio de entrada.
+- Cobertura de 30 idiomas.
+- Cobertura de 22 dialectos chinos.
+- Salida estructurada: etiqueta de idioma en el bloque de razonamiento y transcripcion en el contenido del mensaje.
+- Ejecucion local mediante llama.cpp y el ecosistema de aplicaciones derivadas (por ejemplo, la aplicacion Llama).
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- Soporte conversacional (tag `conversational`).
 
 ## Casos de uso
 
-- Transcripción local de reuniones: el modelo puede ejecutarse con `llama-server` en una máquina de desarrollo para convertir grabaciones de audio en texto sin enviar datos a servicios externos, lo que resulta adecuado por su tamaño reducido y su formato GGUF.
-- Subtitulado de vídeos y podcasts: al ser un modelo ASR ligero, puede integrarse en pipelines de postproducción para generar transcripciones base que luego se revisan y sincronizan.
-- Asistentes de voz en aplicaciones de escritorio: su ejecución mediante llama.cpp permite incorporar dictado por voz en herramientas locales sin dependencia de API externas.
-- Prototipado de sistemas de atención al cliente por voz: permite validar flujos de transcripción en tiempo casi real en entornos de desarrollo antes de escalar a modelos mayores.
-- Investigación en ASR: sirve como punto de partida reproducible para experimentos académicos gracias a su disponibilidad en GGUF y a su tamaño manejable.
-- Procesamiento por lotes de archivos de audio: puede desplegarse en servidores modestos para transcribir grandes volúmenes de grabaciones de forma asíncrona.
-- Integración en entornos con requisitos de privacidad: al no requerir conexión a la nube, encaja en escenarios donde el audio no puede salir de la infraestructura propia.
+- Transcripcion de reuniones y notas de voz: el modelo convierte audio en texto y ademas identifica el idioma, lo que permite enrutar automaticamente la transcripcion al pipeline de procesamiento correspondiente segun el idioma detectado.
+- Subtitulado multilingue de contenido audiovisual: al cubrir 30 idiomas, puede generar subtitulos en escenarios con contenido en varios idiomas sin necesidad de cambiar de modelo.
+- Atencion al cliente por voz: la transcripcion local con licencia Apache 2.0 permite procesar llamadas sin enviar audio a servicios externos, lo que ayuda a cumplir requisitos de privacidad y proteccion de datos.
+- Procesamiento de audio en el mercado chino: la cobertura de 22 dialectos chinos lo hace adecuado para aplicaciones de dictado y transcripcion en regiones con fuerte variacion dialectal.
+- Investigacion en ASR: su tamano compacto (751 millones de parametros) y su formato GGUF facilitan experimentos de evaluacion y ajuste fino en entornos con recursos limitados.
+- Despliegue en dispositivos de borde: al ser un modelo pequeno y cuantizado, puede ejecutarse en equipos sin GPU dedicada mediante llama.cpp, habilitando transcripcion offline en portatiles o estaciones de trabajo modestas.
+- Indexacion y busqueda de archivos de audio: la transcripcion con identificacion de idioma permite construir indices de texto buscables a partir de grabaciones y clasificarlas por idioma de forma automatica.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: con 751 millones de parámetros, la inferencia en FP16 requiere aproximadamente 1,5 GB solo para pesos; en cuantizaciones GGUF de 8 bits o 4 bits el consumo se reduce sustancialmente (del orden de 0,8 GB y 0,4-0,5 GB respectivamente, estimación orientativa).
-- GPU recomendadas: no se especifican en la información disponible; por tamaño, cualquier GPU con al menos 2-4 GB de VRAM debería poder alojar el modelo en cuantizaciones reducidas.
-- GPU de consumo: previsiblemente cabe en tarjetas como RTX 3060, RTX 4060, RTX 4090 y similares, así como en equipos Apple Silicon, aunque no se confirma en la documentación.
-- Opciones de despliegue: llama.cpp mediante `llama-server`, con el comando indicado en la model card (`llama-server -hf ggml-org/Qwen3-ASR-0.6B-GGUF`). No se documentan otras opciones como vLLM, TGI u Ollama en la información disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: no disponible de forma oficial; con 751 millones de parametros, las cuantizaciones GGUF habituales de 4 a 8 bits ocupan del orden de 0,5 a 1 GB de pesos, aunque el consumo real depende de la variante concreta y del backend.
+- GPU recomendadas: no especificadas en la informacion disponible; por tamano, el modelo es apto para GPU de consumo.
+- Cabe en GPU de consumo: si, previsiblemente en la mayoria de GPU consumer actuales gracias a su tamano reducido, aunque no hay datos oficiales de requisitos.
+- Opciones de despliegue: llama.cpp (requiere una build que incluya el PR https://github.com/ggml-org/llama.cpp/pull/32571), la aplicacion Llama (https://llama.app) y el comando `llama serve -hf ggml-org/Qwen3-ASR-0.6B-GGUF`.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye modelos comparables de la misma categoría ni datos de rendimiento que permitan una comparación rigurosa.
+No disponible. La informacion proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos de ASR comparables, por lo que no es posible establecer una comparativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- La model card del repositorio GGUF es mínima y no documenta sesgos conocidos, tasas de alucinación ni limitaciones específicas de idioma.
-- No se especifica la licencia del modelo, lo que impide confirmar si el uso comercial está permitido; es necesario consultar la licencia del modelo base `Qwen/Qwen3-ASR-0.6B` antes de usarlo en producción.
-- No se detallan los idiomas soportados, por lo que no puede garantizarse un rendimiento adecuado en castellano u otras lenguas sin una evaluación previa.
-- Al ser una conversión GGUF, la fidelidad respecto al modelo original depende del proceso de conversión; conviene validar la calidad de transcripción frente al modelo en safetensors.
-- No hay información sobre el comportamiento del modelo ante audio con ruido, acentos marcados o solapamiento de hablantes.
-- La fecha de creación del repositorio (2026) y la falta de documentación adicional hacen recomendable verificar el estado del proyecto antes de adoptarlo en entornos críticos.
+- La informacion disponible no detalla sesgos conocidos del modelo; al ser un modelo de ASR, es previsible que el rendimiento varie segun el idioma, el acento y la calidad del audio, aunque no se aportan datos concretos.
+- Riesgo de alucinacion: no documentado en la informacion disponible; en modelos generativos de ASR existe el riesgo de que la transcripcion incluya texto no presente en el audio, pero no se confirma ni se cuantifica.
+- Requiere una build especifica de llama.cpp que incluya el PR 32571; versiones anteriores no podran cargar el modelo correctamente.
+- La identificacion de idioma se emite en el bloque de razonamiento (thinking); los consumidores deben tener en cuenta esta estructura de salida al integrar el modelo.
+- No se especifican limitaciones de longitud de audio ni de contexto en la informacion disponible.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los terminos del modelo base original (Qwen/Qwen3-ASR-0.6B) para confirmar condiciones adicionales.
+- El repo GGUF ocupa 5,8 GB, lo que incluye varias variantes de cuantizacion; conviene seleccionar la variante adecuada segun el hardware.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/ggml-org/Qwen3-ASR-0.6B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
+- Herramienta de conversion: https://github.com/ggml-org/convert
+- Pull request de llama.cpp requerido: https://github.com/ggml-org/llama.cpp/pull/32571
+- Aplicacion Llama: https://llama.app

@@ -2,102 +2,97 @@
 
 ## Resumen
 
-Hy4-Flash es un modelo de lenguaje multimodal desarrollado por Tencent Hunyuan, publicado originalmente como `tencent/Hy4-flash`. Se trata de un transformer de tipo Mixture-of-Experts (MoE) con 220.000 millones de parametros totales y solo 12.000 millones activos por token, disenado para aceptar entradas de texto e imagen y generar texto, con una ventana de contexto de hasta 1.048.576 tokens (1M). La ficha que nos ocupa, `AMAImedia/Hy4-Flash-BF16-GGUF`, es una conversion a GGUF en BF16 realizada por el usuario AMAImedia a partir del modelo base de Tencent.
+Hy4-Flash es un modelo de lenguaje multimodal desarrollado por Tencent (familia Hunyuan), publicado originalmente bajo el identificador `tencent/Hy4-flash`. Se trata de un transformer de tipo Mixture-of-Experts (MoE) con 220.251.201.958 parámetros totales, de los cuales solo 12B se activan por token, lo que lo sitúa en la gama de modelos "flash" optimizados para coste. Acepta de forma nativa entradas de texto e imagen y genera texto, con una ventana de contexto de hasta 1M tokens.
 
-El modelo incorpora varias innovaciones arquitectonicas respecto a su predecesor Hy4: atencion hibrida que intercala atencion dispersa (IndexPool) y sliding-window attention en proporcion 1:3, LatentMoE con expertos en espacio latente de baja dimension (16 de 512 expertos enrutados por token mas un experto compartido), y embeddings N-gram (Engram) con representaciones de bigramas y trigramas recuperadas mediante hash multibyte. Ademas incluye un drafter de 5 capas (DFly2, 0.85B parametros) para decodificacion especulativa de contexto largo.
+El repositorio `AMAImedia/Hy4-Flash-BF16-GGUF` no es el modelo original, sino una republicación de cuantizaciones GGUF en BF16 (y variantes) generada por un tercero (AMAImedia/NOESIS) a partir del repositorio oficial de Tencent y de la versión Strata. Por tanto, quien evalúe este artefacto debe tener claro que la autoría del modelo corresponde a Tencent y que el repositorio aquí descrito es un empaquetado de pesos para inferencia local.
 
-La relevancia de esta publicacion radica en su eficiencia: con solo 12B parametros activos por token ofrece capacidades multimodales y contexto de 1M tokens, lo que lo posiciona como una alternativa de coste reducido frente a modelos densos de tamano comparable. La version GGUF de AMAImedia facilita su despliegue en entornos de inferencia local y frameworks compatibles con este formato.
+La relevancia del modelo radica en su relación entre tamaño total (220B) y parámetros activos (12B), combinada con atención híbrida (sparse + sliding window), LatentMoE y embeddings de n-gramas (Engram), además de un drafter de decodificación especulativa (DFly2) de 0,85B parámetros que reutiliza la caché KV del modelo objetivo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE) con atencion hibrida (IndexPool + SWA), LatentMoE y embeddings Engram |
-| Parametros totales | 220.251.201.958 (220,25B) |
-| Parametros activos | 11,3B texto + 0,43B vision por token |
-| Parametros del backbone (sin Engram, ViT ni DFly2) | 155,5B |
-| Parametros Engram | 63,5B |
-| Parametros ViT | 0,43B |
-| Parametros DFly2 (drafter) | 0,85B |
-| Longitud de contexto | 1.048.576 tokens (1M) |
-| Tipos de cuantizacion | BF16 y GGUF (repositorio etiquetado como imatrix) |
-| Idiomas soportados | Chino (zh) e ingles (en) |
-| Licencia | tencent-hy-license (Tencent Hy License) |
-| Formato de pesos | safetensors, GGUF |
-| Capas del backbone | 42 (1 densa + 41 MoE) |
-| Hidden size | 3.072 |
-| Tamano del vocabulario | 12 (dato truncado en la model card) |
-| Tamano del repositorio | 609,9 GB |
-| Pipeline | image-text-to-text |
+| Arquitectura | Transformer MoE multimodal con atención híbrida (sparse IndexPool + sliding-window attention en ratio 1:3), LatentMoE y embeddings Engram (bigramas/trigramas) |
+| Parametros totales | 220.251.201.958 (220B, incluye 64B de parámetros Engram) |
+| Parametros activos | 12B por token (16 de 512 expertos enrutados + 1 experto compartido) |
+| Longitud de contexto | Hasta 1.000.000 tokens (1M) |
+| Tipos de cuantizacion | Repositorio BF16-GGUF; el modelo base dispone de cuantizaciones GGUF publicadas por AngelSlim (niveles concretos no disponibles en la información) |
+| Idiomas soportados | Chino (zh) e inglés (en) |
+| Licencia | Tencent Hy License (`tencent-hy-license`, marcada como "other") |
+| Formato de pesos | safetensors (original) y GGUF (este repositorio); también transformers |
 
 ## Arquitectura y entrenamiento
 
-El backbone linguistico de Hy4-Flash consta de 42 capas: una capa densa feed-forward y 41 capas MoE, con conexiones hiperbolicas de identidad (iHC) que soportan el flujo de informacion entre capas. La atencion es hibrida, intercalando atencion dispersa (IndexPool) y sliding-window attention (SWA) en una proporcion 1:3. El modulo LatentMoE opera con expertos enrutados en un espacio latente de menor dimension: cada token activa 16 de 512 expertos enrutados, ademas de un experto compartido. Los embeddings Engram anaden representaciones aprendidas de bigramas y trigramas recuperadas mediante busquedas hash multi-cabeza.
+El backbone lingüístico consta de 42 capas: una capa densa feed-forward y 41 capas MoE, con Hyper-Connections de identidad (iHC) que soportan el flujo de información entre capas. La atención es híbrida: atención dispersa (IndexPool) y atención de ventana deslizante (SWA) se intercalan en proporción 1:3. En LatentMoE, los expertos enrutados operan en un espacio latente de menor dimensión; cada token activa 16 de 512 expertos enrutados más un experto compartido. Además, el backbone se aumenta con representaciones aprendidas de bigramas y trigramas (Engram), recuperadas mediante búsquedas hash multi-cabeza.
 
-La componente multimodal se compone de un codificador visual adaptado de SigLIP2-So400m-Patch16-Res512, conectado al backbone mediante un proyector MLP. El modelo incluye un drafter DFly2 de 5 capas y 0,85B parametros que reutiliza la cache KV y los indices dispersos del modelo objetivo para realizar decodificacion especulativa de contexto largo con coste constante y bajo. No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
+La parte multimodal se resuelve con un codificador visual adaptado de SigLIP2-So400m-Patch16-Res512, conectado al backbone mediante un proyector MLP. Para decodificación especulativa incorpora un drafter de 5 capas, DFly2 (0,85B parámetros), que reutiliza la caché KV y los índices dispersos del modelo objetivo para soportar decodificación especulativa en contexto largo a coste bajo y constante.
+
+No se dispone en la información proporcionada de datos sobre el número de tokens de entrenamiento, la composición del dataset ni las etapas de alineación (RLHF/DPO).
 
 ## Capacidades
 
-- Generacion de texto y razonamiento en chino e ingles.
-- Procesamiento de imagenes como entrada (image-text-to-text) mediante el codificador SigLIP2 y el proyector MLP.
-- Contexto largo de hasta 1M tokens, adecuado para documentos extensos y conversaciones multi-turno prolongadas.
-- Decodificacion especulativa integrada mediante el drafter DFly2, que acelera la generacion en contextos largos.
-- Capacidades de instruccion (etiqueta `instruct` en el repositorio).
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues limitadas a chino e ingles segun los metadatos del repositorio.
-- Modo thinking, audio u otras capacidades especiales: no disponible en la informacion proporcionada.
+- Generación de texto e instrucciones conversacionales (etiqueta `instruct`).
+- Comprensión de imagen y texto combinados, con salida de texto (pipeline `image-text-to-text`).
+- Razonamiento y generación de código: la model card incluye referencias a resultados de benchmarks en el apéndice, aunque los valores no se detallan en la información disponible.
+- Ventana de contexto muy larga (hasta 1M tokens), adecuada para documentos extensos y conversaciones multi-turno prolongadas.
+- Decodificación especulativa de contexto largo mediante el drafter DFly2 integrado.
+- Soporte multilingüe limitado a chino e inglés.
+- Compatibilidad con API compatible con OpenAI según la model card.
+- Soporte de despliegue en vLLM y SGLang, y cuantización GGUF para inferencia local.
+- No se confirma en la información disponible soporte explícito de tool calling, function calling ni modo "thinking".
 
 ## Casos de uso
 
-- Analisis de documentos extensos con imagenes: el modelo puede procesar contratos, informes o articulos cientificos de hasta 1M tokens junto con figuras y diagramas, extrayendo conclusiones y resumiendo secciones concretas gracias a su ventana de contexto.
-- Atencion al cliente multimodal: gestion de conversaciones multi-turno donde el usuario adjunta capturas de pantalla o fotografias de productos, manteniendo el historial completo dentro del contexto de 1M tokens.
-- Extraccion de informacion de facturas y formularios escaneados: la combinacion de entrada de imagen y generacion de texto permite transcribir y estructurar datos de documentos visuales en ingles o chino.
-- Generacion asistida de codigo y documentacion tecnica: con 12B parametros activos por token, el coste de inferencia es contenido para tareas de generacion de texto tecnico en ingles.
-- Traduccion chino-ingles de material multimodal: el modelo puede traducir texto incrustado en imagenes o acompanar la traduccion de contenido visual, aprovechando su soporte bilingue nativo.
-- Procesamiento por lotes de corpus largos: la decodificacion especulativa con DFly2 y el contexto de 1M tokens permiten procesar grandes volumenes de texto en pipelines de analisis sin fragmentar los documentos.
-- Investigacion sobre arquitecturas MoE eficientes: el repositorio GGUF en BF16 sirve como referencia para estudiar el comportamiento de LatentMoE, Engram y atencion hibrida en entornos de inferencia estandar.
+- Procesamiento de documentos largos: con 1M tokens de contexto, el modelo puede ingerir contratos, informes o bases de código completas en una sola pasada y responder preguntas sobre el conjunto, evitando pipelines de chunking y recuperación.
+- Análisis de documentos con imágenes: al aceptar imagen y texto, resulta adecuado para extraer y razonar sobre información de capturas, diagramas o páginas escaneadas junto con el texto que las acompaña.
+- Asistentes conversacionales de dominio: su naturaleza instruct y su contexto largo permiten mantener historiales extensos de conversación sin truncar, útil en atención al cliente o soporte técnico especializado en chino e inglés.
+- Generación y revisión de código: puede integrarse en flujos de revisión de repositorios completos gracias al contexto de 1M tokens, comparando cambios contra el resto del código base.
+- Despliegue local con cuantización GGUF: este repositorio permite ejecutar el modelo en entornos con llama.cpp u otros runners compatibles con GGUF, útil para prototipado e investigación sin depender de infraestructura en la nube.
+- Servicio de inferencia de alto rendimiento: con vLLM o SGLang y decodificación especulativa DFly2, es apto para servir cargas concurrentes donde el coste por token activo (12B) importa más que el tamaño total del modelo.
+- Investigación en arquitecturas MoE y atención híbrida: la combinación de LatentMoE, IndexPool, SWA y Engram lo convierte en un objeto de estudio para experimentos de eficiencia y decodificación especulativa.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del modelo base menciona una seccion de resultados de benchmarks y una evaluacion ciega de usuarios, pero los valores numericos no estan incluidos en la informacion proporcionada.
+La model card del modelo original incluye un apéndice de resultados de benchmarks, pero los valores concretos no están disponibles en la información proporcionada. No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- El repositorio GGUF en BF16 ocupa 609,9 GB, por lo que la inferencia en precision completa requiere un nodo con multiples GPU de alta capacidad (varios A100 80GB o H100 80GB) o almacenamiento en disco con offloading.
-- Con 220B parametros totales y 12B activos, el modelo no cabe en una GPU de consumo individual en BF16; se requiere cuantizacion adicional para reducir el footprint.
-- El autor de la conversion indica que su hardware local (RTX 3060 Laptop de 6 GB, 64 GB DDR5) solo es adecuado para trabajo de clase 0,6-35B en RAM, y que los modelos de 9B+ requieren alquiler de H200/Blackwell, lo que sugiere que esta conversion no esta pensada para ejecucion local en equipos de consumo.
-- Opciones de despliegue mencionadas en la model card: Transformers, API compatible con OpenAI, vLLM, SGLang y DFly2 para decodificacion especulativa.
-- Latencia y throughput estimados: no disponible en la informacion proporcionada.
+- VRAM estimada para inferencia: no disponible de forma explícita. Con 220B parámetros totales, los pesos en BF16 ocupan aproximadamente 440 GB; las cuantizaciones GGUF reducen sustancialmente ese requisito, pero los niveles y tamaños concretos no se detallan en la información.
+- El repositorio completo ocupa 943,7 GB, lo que refleja múltiples variantes de pesos.
+- GPU recomendadas: no disponibles en la información. Por tamaño, el modelo en BF16 excede la memoria de cualquier GPU consumer y requiere nodos multi-GPU de clase datacenter (A100/H100/H200); las cuantizaciones GGUF podrían permitir despliegue parcial en memoria RAM/VRAM combinada, sin datos confirmados.
+- Cabe en GPU consumer: no en BF16; para cuantizaciones GGUF no hay datos confirmados en la información.
+- Opciones de despliegue: transformers, vLLM, SGLang, llama.cpp/Ollama para GGUF, y API compatible con OpenAI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos que permitan una comparacion rigurosa.
+No se dispone en la información proporcionada de datos de rendimiento de modelos comparables. A nivel estructural, las alternativas de la misma categoría (MoE multimodal de gran tamaño con pocos parámetros activos) serían modelos como Qwen o DeepSeek en sus variantes MoE, pero no se aportan cifras que permitan una comparación rigurosa.
+
+| Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Hy4-Flash | 220B (64B Engram) | 12B | 1M | Tencent Hy License | Hugging Face, ModelScope, GitCode |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Idiomas limitados a chino e ingles; no se garantiza un rendimiento adecuado en castellano u otros idiomas.
-- Riesgo de alucinacion inherente a los modelos generativos; no se han publicado evaluaciones de fidelidad en la informacion disponible.
-- Sesgos conocidos: no disponible en la informacion proporcionada.
-- La licencia tencent-hy-license impone restricciones que deben revisarse antes de cualquier uso comercial; el enlace a la licencia esta en el repositorio del modelo base.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia de validacion comunitaria de la conversion.
-- La model card original contiene metadatos truncados (por ejemplo, el tamano del vocabulario aparece como "12"), lo que impide verificar algunos parametros.
-- El tamano de 609,9 GB del repositorio hace inviable su uso en entornos con almacenamiento limitado.
-- No se dispone de informacion sobre soporte de tool calling, agentes o modos de razonamiento extendido, lo que limita su evaluacion para pipelines agenticos.
-- Al ser una conversion de terceros (AMAImedia) y no una publicacion oficial de Tencent, la integridad y fidelidad de los pesos cuantizados no estan garantizadas por el autor original.
+- Idiomas: solo chino e inglés; el rendimiento en castellano no está garantizado ni documentado.
+- Licencia: Tencent Hy License, marcada como "other"; es imprescindible revisar sus términos antes de cualquier uso comercial, ya que puede imponer restricciones adicionales.
+- El repositorio aquí descrito es una republicación de terceros (AMAImedia/NOESIS), no la distribución oficial de Tencent; conviene verificar la integridad de los pesos frente al repositorio original.
+- Riesgo de alucinación: no cuantificado en la información disponible.
+- Sesgos: no documentados en la información proporcionada.
+- El contexto de 1M tokens no implica que el modelo mantenga calidad uniforme en toda la ventana; no hay datos de evaluación al respecto.
+- El tamaño total de 220B hace inviable el despliegue en hardware consumer en BF16; las cuantizaciones GGUF mitigan el problema pero degradan la calidad en grados no especificados.
+- La model card incluye llamadas a donaciones y datos de hardware del publicador; no constituyen información técnica del modelo.
 
 ## Enlaces
 
-- Repositorio Hugging Face de la conversion: https://huggingface.co/AMAImedia/Hy4-flash-GGUF (segun el ID proporcionado: https://huggingface.co/AMAImedia/Hy4-Flash-BF16-GGUF)
-- Modelo base: https://huggingface.co/tencent/Hy4-flash
+- Repositorio descrito: https://huggingface.co/AMAImedia/Hy4-Flash-BF16-GGUF
+- Modelo original: https://huggingface.co/tencent/Hy4-flash
+- Repositorio GGUF de referencia: https://huggingface.co/AngelSlim/Hy4-flash-GGUF
+- Repositorio Strata: https://huggingface.co/strata-engine/Hy4-Flash-Strata
 - Licencia: https://huggingface.co/tencent/Hy4-flash/blob/main/LICENSE
-- README en chino: https://huggingface.co/tencent/Hy4-flash/blob/main/README_CN.md
 - Web oficial: https://hy.tencent.ai/research/hy4-flash
 - GitHub: https://github.com/Tencent-Hunyuan/Hy4-flash
-- GGUF alternativo: https://huggingface.co/AngelSlim/Hy4-flash-GGUF
 - ModelScope: https://modelscope.cn/models/Tencent-Hunyuan/Hy4-flash
 - GitCode: https://ai.gitcode.com/tencent_hunyuan/Hy4-flash
-- Web de AMAImedia: https://www.amaimedia.com
-- X (Twitter) de AMAImedia: https://x.com/AMAImediacom
-- LinkedIn de Ilia Bolotnikov: https://www.linkedin.com/in/ilia-bolotnikov
-- Telegram: https://t.me/djbionicl
+- README en chino: https://huggingface.co/tencent/Hy4-flash/blob/main/README_CN.md

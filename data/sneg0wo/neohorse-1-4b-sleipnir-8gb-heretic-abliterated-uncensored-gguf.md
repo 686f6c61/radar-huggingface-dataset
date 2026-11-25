@@ -2,106 +2,123 @@
 
 ## Resumen
 
-NeoHorse-1-4B-Sleipnir-8GB-Heretic-Abliterated-Uncensored-GGUF es una cuantizacion GGUF de un modelo de lenguaje de 4.205.751.296 parametros (~4,2B) obtenido mediante un merge ponderado de tres variantes del modelo base NeoHorse-1-4B, que a su vez deriva de Qwen3.5-4B. Lo publica el usuario Sneg0wo en Hugging Face bajo licencia Apache-2.0. El objetivo declarado del autor es ofrecer una variante "uncensored" (con las capas de rechazo reducidas mediante tecnicas de abliteration y heretic) que conserve la capacidad de tool calling y quepa en una GPU de 8 GB de VRAM.
+NeoHorse-1-4B · Sleipnir · 8 GB es una cuantización GGUF del modelo base TokenRhythm/NeoHorse-1-4B, un transformer de 4.205.751.296 parámetros derivado de la familia Qwen3.5-4B. Lo publica el usuario Sneg0wo en Hugging Face bajo licencia Apache-2.0 y está pensado específicamente para ejecutarse completo en una GPU de 8 GB de VRAM, un objetivo que el modelo original no cumple con su ventana de contexto publicada de 262.144 tokens.
 
-El modelo esta pensado para despliegue local con llama.cpp y llama-server, con un enfoque explicitamente agentico: la model card incluye metricas de llamada a herramientas (tool_strict, tool_name) y de falsos rechazos sobre prompts benignos (over_refusal), ademas de una tabla de contexto maximo alcanzable segun el tipo de cache KV. La cuantizacion principal (IQ4_XS) ocupa 2,55 GB, lo que deja margen para cache KV extensa dentro de los 8 GB.
+El modelo no es un entrenamiento nuevo, sino una fusión ponderada de tres variantes: `huihui-ai/Huihui-NeoHorse-1-4B-abliterated` (peso 0,6), `prithivMLmods/NeoHorse-1-4B-Max-Heretic-Uncensored-TURBO` (peso 0,25) y el base `TokenRhythm/NeoHorse-1-4B` (peso 0,15). El resultado se cuantiza en tres formatos (IQ4_XS, Q5_K_M e IQ3_M) calibrados con imatrix sobre transcripciones sintéticas de tool calls, y se distribuye con un conjunto de benchmarks medidos por el propio autor.
 
-La relevancia actual reside en su propuesta de compromiso: un modelo pequeno, con contexto anunciado de 262.144 tokens (aunque en la practica limitado por la VRAM disponible), capacidades de function calling verificadas y una licencia permisiva. No obstante, los propios benchmarks publicados muestran un rendimiento muy bajo en tareas de conocimiento y matematicas, por lo que su utilidad practica se circunscribe a tareas de agente con herramientas y generacion conversacional.
+Su relevancia práctica está en la documentación del compromiso real entre tamaño en disco, contexto utilizable y calidad: el autor publica tablas de contexto máximo por cuantización y tipo de caché KV calculadas sobre la configuración real del modelo y verificadas contra el informe de asignación de llama.cpp. El objetivo declarado es el despliegue local en hardware de consumo con soporte de tool calling y sin rechazos en prompts benignos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivado de Qwen3.5-4B, segun credits de la model card); detalles de atencion no disponibles |
-| Parametros totales | 4.205.751.296 (~4,2B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 262.144 tokens anunciados; maximo efectivo segun cuantizacion y cache KV (ver tabla de hardware) |
-| Tipos de cuantizacion | IQ4_XS, Q5_K_M, IQ3_M (variantes "agentic"); f16 para conversion intermedia |
-| Idiomas soportados | en (ingles) |
+| Arquitectura | Transformer (derivado de Qwen3.5-4B, según tags del autor) |
+| Parametros totales | 4.205.751.296 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 262.144 tokens anunciados; contexto máximo real por cuantización y caché KV: 34.014–145.220 tokens (ver tabla de hardware) |
+| Tipos de cuantizacion | IQ4_XS (2,55 GB), Q5_K_M (3,09 GB), IQ3_M (2,2 GB) |
+| Idiomas soportados | en (inglés) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (libreria gguf, compatible con llama.cpp) |
+| Formato de pesos | GGUF (llama.cpp) |
+| Modelo base | TokenRhythm/NeoHorse-1-4B |
+| Tamano del repositorio | 7,8 GB |
+| Elementos de caché KV | 65.536 por token |
 
 ## Arquitectura y entrenamiento
 
-El modelo es el resultado de un merge ponderado en streaming sobre CPU de tres donantes: `huihui-ai/Huihui-NeoHorse-1-4B-abliterated` con peso 0,6, `prithivMLmods/NeoHorse-1-4B-Max-Heretic-Uncensored-TURBO` con peso 0,25 y `TokenRhythm/NeoHorse-1-4B` con peso 0,15. El proceso consistio en conversion a GGUF f16, calculo de una imatrix "agentic" (200 x 512 muestras), cuantizacion y evaluacion a traves de llama-server con temperatura 0. Todo el pipeline se ejecuto en una Colab T4 gratuita, sin GPU de escritorio.
+El modelo es un transformer denso de aproximadamente 4.200 millones de parámetros, heredado de la arquitectura Qwen3.5-4B según los tags del autor. No hay información en la documentación proporcionada sobre el número de tokens de entrenamiento, la composición del dataset ni si el modelo base empleó RLHF o DPO.
 
-La arquitectura subyacente corresponde a la familia Qwen3.5-4B, un transformer decoder-only, si bien la model card no detalla configuracion de capas, cabezas de atencion ni composicion del dataset de preentrenamiento original. No se documentan fases de RLHF o DPO en esta ficha; las tecnicas aplicadas son de edicion de pesos (abliteration y heretic) orientadas a reducir los rechazos, no un ajuste supervisado adicional. El autor publica `eval.json` y `merge_info.json` en el repositorio como trazabilidad del proceso.
+La innovación técnica de esta publicación es el proceso de fusión y cuantización: un merge ponderado en streaming sobre CPU de tres checkpoints, conversión a GGUF en f16, calibración de imatrix con 200 secuencias de 512 tokens de transcripciones sintéticas de tool calls, cuantización y evaluación a través de `llama-server` con temperatura 0. El autor documenta explícitamente un error de metodología corregido: la primera pasada de evaluación solo leía `message.content`, pero Qwen3.5 escribe el razonamiento en `reasoning_content`, de modo que MMLU puntuaba 0/150 mientras el tool calling seguía funcionando porque lee el campo estructurado `tool_calls`. La versión actual detecta cómo desactivar el modo thinking y lee ambos campos.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles.
-- Tool calling / function calling: la model card reporta metricas especificas de llamada estricta a herramientas (tool_strict y tool_name) sobre 100 prompts ejecutados por la ruta real `/v1/chat/completions`.
-- Uso agentico: el modelo se presenta como "agentic" y las cuantizaciones llevan el sufijo `-agentic`, con una imatrix calibrada para ese perfil.
-- Reduccion de rechazos: variante "uncensored" con abliteration y heretic, orientada a minimizar falsos rechazos en prompts benignos (over_refusal reportado como 0,0 % en las variantes evaluadas).
-- Multilingue: no disponible; la model card solo declara ingles (`language: [en]`).
-- Razonamiento y matematicas: tecnicamente soportados por la arquitectura, pero con rendimiento medido muy bajo (ver benchmarks).
-- Vision y audio: no disponibles.
-- Modo thinking explicito: no disponible en la informacion proporcionada.
+- Generación de texto conversacional multi-turno en inglés.
+- Razonamiento con modo thinking activable y desactivable; el autor mide el impacto del modo thinking en tool calling (por ejemplo, IQ4_XS pasa de 81,0 a 94,0 en precisión estricta).
+- Tool calling / function calling con argumentos estructurados, validado a través de la ruta real `/v1/chat/completions` con 100 prompts.
+- Razonamiento matemático de varios pasos (GSM8K medido).
+- Conocimiento general y respuesta a preguntas de opción múltiple (MMLU 0-shot medido).
+- Comportamiento sin rechazos en prompts benignos (0 rechazos en 30 prompts de prueba), orientado a uso sin censura.
+- Capacidades multilingües: solo inglés declarado.
+- No se documentan capacidades de visión, audio ni agentes multi-paso más allá del tool calling.
 
 ## Casos de uso
 
-- Agentes locales con tool calling: el modelo puede ejecutar llamadas a funciones con argumentos estrictos (92-99 % de acierto segun cuantizacion en las pruebas del autor) e integrarse en bucles de agente sobre llama-server con la API compatible con OpenAI, lo que permite conectar herramientas externas sin infraestructura en la nube.
-- Asistentes conversacionales sin filtros excesivos: para entornos donde los falsos rechazos sobre prompts benignos son un problema operativo (por ejemplo, redaccion tecnica o creativa), la variante abliterated reporta 0,0 % de over_refusal en la muestra evaluada.
-- Automatizacion de escritorio o CI/CD con GPU de 8 GB: al ocupar 2,55 GB en IQ4_XS, cabe en tarjetas consumer y permite desplegar un agente de codigo o de operaciones en una estacion de trabajo sin GPU dedicada de datacenter.
-- Procesamiento de documentos largos con contexto extendido: con cache KV q4_0 la ventana alcanza 135.535 tokens en IQ4_XS, util para resumir o extraer informacion de ficheros extensos, aunque con perdida de precision por la cuantizacion de la cache.
-- Prototipado e investigacion de tecnicas de abliteration: el repositorio incluye `merge_info.json` y `eval.json`, lo que facilita reproducir y comparar merges ponderados y el efecto de la imatrix agentica.
-- Servicio de inferencia ligero multi-cliente: con `-np 1` y cache KV q8_0 el modelo ofrece 71.754 tokens de contexto en IQ4_XS, suficiente para atender sesiones conversacionales concurrentes de tamano moderado en un solo servidor.
-- Evaluacion comparativa de cuantizaciones: la tabla de benchmarks por cuantizacion (IQ3_M, IQ4_XS, Q5_K_M) permite elegir el punto de equilibrio entre VRAM, contexto y acierto en tool calling.
+- Asistente local de atención al cliente: el modelo puede mantener conversaciones multi-turno con hasta 64.000–77.000 tokens de contexto real en cuantización q8_0 sobre una GPU de 8 GB, suficiente para incorporar historial de tickets y documentación de producto en la ventana.
+- Automatización de tool calling en pipelines internos: con 99/100 en precisión estricta de herramientas (Q5_K_M, thinking on), es adecuado para orquestar llamadas a APIs como consulta de pedidos, envío de correos o búsqueda en catálogos, integrándose vía `llama-server` con `--jinja`.
+- Generación de código y scripting en entornos con GPU de consumo: el modelo cabe en 2,2–3,1 GB en disco y deja margen de VRAM para caché KV, lo que permite usarlo como copiloto local en un portátil con RTX 5060 o similar.
+- Resolución de problemas matemáticos de nivel escolar: 96,2 % en GSM8K con Q5_K_M, útil para tutores automáticos o validación de ejercicios con razonamiento paso a paso.
+- Evaluación de modelos sin censura para investigación: la variante abliterated/heretic permite estudiar comportamientos sin rechazos en dominios donde los modelos alineados bloquean respuestas, con la advertencia de que el autor indica que la métrica de over-refusal no es una métrica de seguridad.
+- Despliegue en LM Studio o llama.cpp para prototipado rápido: el autor documenta la configuración exacta (contexto 8192, KV f16, Flash Attention off, desactivar decodificación especulativa MTP) y el tiempo de carga (6,4 s, 2,9 GB de VRAM a 8k de contexto).
+- Procesamiento de documentos largos en local: con IQ3_M y caché q4_0 se alcanzan 145.220 tokens de contexto, adecuado para resumir o extraer información de documentos extensos en hardware de 8 GB, asumiendo la pérdida de calidad (−9,4 puntos de MMLU frente al donante Q8_0).
 
 ## Benchmarks y rendimiento
 
-Datos publicados por el autor en la model card. Nota: MMLU se midio en 0-shot con 150 preguntas (no comparable con cifras 5-shot publicadas); GSM8K con 80 muestras; AIME con 30 problemas (muestra ruidosa); tool_strict y tool_name sobre 100 prompts; over_refusal sobre 30 prompts benignos.
+Resultados publicados por el autor. MMLU: 150 preguntas, 0-shot, letra exacta, thinking off (no comparable con cifras publicadas de 5-shot). GSM8K: 80 preguntas, número exacto. Tool calling: 100 prompts a través de `/v1/chat/completions`, thinking on, herramienta y todos los argumentos exactos. PPL: wikitext-2, contexto 512.
 
-| Modelo | GB | MMLU 0-shot % | GSM8K % | AIME % | tool_strict % | tool_name % | over_refusal % |
-|---|---|---|---|---|---|---|---|
-| Huihui-NeoHorse-1-4B-abliterated-q8_0 | 4,61 | 0,0 | 1,2 | 0,0 | 100,0 | 100,0 | 0,0 |
-| Sleipnir-IQ4_XS-agentic | 2,55 | 0,0 | 3,8 | 0,0 | 92,0 | 92,0 | 0,0 |
-| Sleipnir-Q5_K_M-agentic | 3,09 | no ejecutado | no ejecutado | no ejecutado | 98,0 | 99,0 | 0,0 |
-| Sleipnir-IQ3_M-agentic | 2,20 | no ejecutado | no ejecutado | no ejecutado | 90,0 | 91,0 | 0,0 |
+| Modelo | GB | MMLU 0-shot % | GSM8K % | Tool estricto % | Over-refusal % | PPL |
+|---|---|---|---|---|---|---|
+| Sleipnir-IQ4_XS | 2,55 | 70,0 | 90,0 | 94,0 | 0,0 | 9,605 |
+| Sleipnir-Q5_K_M | 3,09 | 72,0 | 96,2 | 99,0 | 0,0 | 9,508 |
+| Sleipnir-IQ3_M | 2,2 | 63,3 | 93,8 | 99,0 | 0,0 | 9,871 |
+| Donante Q8_0 | 4,61 | 72,7 | 93,8 | 100,0 | 0,0 | 9,393 |
 
-Los resultados de conocimiento y matematicas son practicamente nulos en la muestra evaluada, mientras que el rendimiento en tool calling es alto y decrece con la agresividad de la cuantizacion (de 100 % en q8_0 a 90 % en IQ3_M). No se han publicado resultados de benchmarks adicionales en la informacion disponible.
+Coste de la cuantización frente al donante Q8_0:
+
+| Cuantización | GB | Tamaño | MMLU | GSM8K | Tool | PPL |
+|---|---|---|---|---|---|---|
+| IQ4_XS | 2,55 | −45 % | −2,7 | −3,8 | −6,0 | +2,3 % |
+| Q5_K_M | 3,09 | −33 % | −0,7 | +2,4 | −1,0 | +1,2 % |
+| IQ3_M | 2,2 | −52 % | −9,4 | 0,0 | −1,0 | +5,1 % |
+
+Rendimiento medido con `llama-bench` en una RTX 5060 Laptop: 91 tok/s de generación y 3.570 tok/s de prefill. AIME no se reporta porque 21–28 de 30 respuestas alcanzaron el límite de 2.048 tokens a mitad de derivación.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: 2,2 GB (IQ3_M), 2,55 GB (IQ4_XS) y 3,09 GB (Q5_K_M) solo para pesos; hay que sumar la cache KV.
-- Cache KV: 65.536 elementos por token. Contexto maximo alcanzable en una GPU de 8 GB:
-  - IQ4_XS: 38.119 tokens con KV f16, 71.754 con KV q8_0, 135.535 con KV q4_0.
-  - Q5_K_M: 34.014 con f16, 64.026 con q8_0, 120.939 con q4_0.
-  - IQ3_M: 40.843 con f16, 76.881 con q8_0, 145.220 con q4_0.
-- El contexto anunciado de 262.144 tokens requeriria unos 18,3 GB solo de cache KV en q8_0, inviable en 8 GB.
-- GPU recomendadas: cualquier GPU consumer con 8 GB o mas (RTX 3060 Ti, RTX 3070, RTX 4060 Ti, RTX 4070) para las cuantizaciones IQ3_M/IQ4_XS; Q5_K_M requiere algo mas de margen. Para contexto largo con KV q8_0 conviene una GPU de 12-16 GB (RTX 4080, RTX 4090, A4000).
-- Cabe en GPU consumer: si, en todas las tarjetas de 8 GB o superiores con las cuantizaciones indicadas.
-- Despliegue: llama.cpp / llama-server (comando documentado en la model card con `-ngl 99 --jinja -fa on`), y por extension cualquier runtime compatible con GGUF. vLLM, TGI u Ollama no se mencionan en la informacion disponible.
-- Latencia y throughput: no disponibles; el autor no publica medidas de velocidad, solo de calidad.
+- VRAM utilizable estimada: ≈7,55 GB tras contexto CUDA y buffers de cómputo.
+- Pesos en disco: 2,2 GB (IQ3_M), 2,55 GB (IQ4_XS), 3,09 GB (Q5_K_M).
+- Contexto máximo por cuantización y tipo de caché KV (elementos/token: 65.536):
+
+| Archivo | GB | f16 | q8_0 | q4_0 |
+|---|---|---|---|---|
+| Sleipnir-IQ4_XS | 2,55 | 38.119 | 71.754 | 135.535 |
+| Sleipnir-Q5_K_M | 3,09 | 34.014 | 64.026 | 120.939 |
+| Sleipnir-IQ3_M | 2,2 | 40.843 | 76.881 | 145.220 |
+
+- GPU recomendadas: cualquier GPU con 8 GB de VRAM; el autor valida en RTX 5060 Laptop. No hay datos para A100, H100 o RTX 4090 en la información disponible.
+- Cabe en GPU de consumo de 8 GB; el contexto anunciado de 262.144 tokens requiere ~18,3 GB solo de caché KV en q8_0 y no es viable en 8 GB con ninguna cuantización.
+- Despliegue: llama.cpp (`llama-server`), LM Studio. Ejemplo del autor: `llama-server -m Sleipnir-Q5_K_M-agentic.gguf -c 16384 -ngl 99 --jinja -np 1`.
+- Para superar los límites f16 se requiere `--cache-type-k q8_0 --cache-type-v q8_0 -fa on`; el autor advierte que esa ruta fue ~600× más lenta en su build de Windows y recomienda medirla antes.
+- Latencia y throughput: 91 tok/s de generación y 3.570 tok/s de prefill en RTX 5060 Laptop; carga de 6,4 s en LM Studio con 2,9 GB de VRAM a 8k de contexto.
+- LM Studio: desactivar "Draft MTP speculative decoding" antes de cargar; el modelo no tiene cabeza MTP y el motor aborta con `GGML_ASSERT(layer.nextn.eh_proj && "MTP block missing nextn.eh_proj")`, mostrando solo `exitCode=3221226505`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tool calling | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| NeoHorse-1-4B-Sleipnir-8GB (este) | ~4,2B | 262.144 anunciados; 38k-145k efectivos en 8 GB | 90-98 % tool_strict segun cuantizacion | Apache-2.0 | GGUF en HF |
-| Huihui-NeoHorse-1-4B-abliterated | ~4,2B (no confirmado) | no disponible | 100 % tool_strict en la muestra del autor | no disponible | GGUF en HF |
-| NeoHorse-1-4B-Max-Heretic-Uncensored-TURBO | no disponible | no disponible | no disponible | no disponible | HF (donante del merge) |
-| TokenRhythm/NeoHorse-1-4B (base) | ~4,2B | no disponible | no disponible | Apache-2.0 | HF |
+| NeoHorse-1-4B · Sleipnir (este) | 4,2 B | 262.144 anunciados; 34k–145k reales en 8 GB | Apache-2.0 | GGUF | Fusion de 3 variantes, cuantizado con imatrix |
+| TokenRhythm/NeoHorse-1-4B (base) | 4,2 B | no disponible | Apache-2.0 | safetensors | Modelo original sin fusión ni cuantización |
+| huihui-ai/Huihui-NeoHorse-1-4B-abliterated | 4,2 B | no disponible | no disponible | no disponible | Donante de abliteration (peso 0,6 en el merge) |
+| prithivMLmods/NeoHorse-1-4B-Max-Heretic-Uncensored-TURBO | 4,2 B | no disponible | no disponible | no disponible | Donante heretic/uncensored (peso 0,25 en el merge) |
 
-La comparativa se limita a los modelos donantes citados en la propia model card, ya que no se dispone de datos de benchmarks de alternativas externas de la misma categoria en la informacion proporcionada.
+No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- Rendimiento nulo en MMLU 0-shot y AIME en las pruebas del autor, y GSM8K entre 1,2 % y 3,8 %: no es adecuado para tareas de conocimiento factual ni de razonamiento matematico.
-- Riesgo elevado de alucinacion en ausencia de herramientas: el modelo esta optimizado para tool calling y conversacion, no para responder con precision sin apoyo externo.
-- Solo ingles declarado; el rendimiento en castellano no esta documentado y no deberia asumirse.
-- El contexto efectivo en 8 GB es muy inferior al anunciado (38k-145k segun cache KV), y la cuantizacion de la cache (q4_0) degrada la calidad de la atencion en secuencias largas.
-- La abliteration y el heretic eliminan parte de las capas de rechazo: el modelo puede generar contenido inapropiado y no debe desplegarse en entornos orientados al publico sin filtros externos.
-- Licencia Apache-2.0, pero el autor remite a las mismas restricciones de uso que el modelo upstream; conviene verificar las condiciones de Qwen3.5-4B antes de uso comercial.
-- Repositorio sin descargas ni likes en el momento de la consulta, creado y actualizado el mismo dia: sin validacion externa de la comunidad.
-- Evaluaciones con muestras pequenas (30-150 items), lo que introduce alta varianza; las cifras no son directamente comparables con benchmarks publicados de otros modelos.
-- No se documentan sesgos especificos ni resultados de evaluaciones de seguridad.
+- La referencia de los benchmarks es el donante en Q8_0, no este merge en Q8, de modo que los deltas mezclan el coste de la cuantización con el efecto de la fusión.
+- MMLU 0-shot con n=150 tiene un intervalo de confianza del 95 % de ±8 puntos; diferencias menores son ruido estadístico.
+- GSM8K: 3/80 respuestas de IQ4_XS, 3/80 de Q5_K_M, 1/80 de IQ3_M y 2/80 de la referencia alcanzaron el límite de tokens y puntúan mal.
+- El tool calling falla sistemáticamente en la familia de prompts "email vs order" (confunde `search_orders` con la herramienta de correo), especialmente en IQ4_XS (94/100).
+- Solo inglés declarado; no hay soporte multilingüe documentado.
+- El contexto anunciado de 262.144 tokens no es alcanzable en 8 GB de VRAM con ninguna cuantización; el contexto real depende del tipo de caché KV.
+- El modo thinking afecta materialmente al tool calling; desactivarlo degrada la selección de herramientas en varios prompts.
+- La variante está ablacionada y sin censura (0 rechazos en 30 prompts benignos); el autor advierte que la métrica de over-refusal no es una métrica de seguridad. No debe desplegarse en producción orientada a usuarios sin filtros adicionales.
+- Licencia Apache-2.0 permite uso comercial, pero el comportamiento sin alineación traslada al operador la responsabilidad sobre el contenido generado.
+- Riesgo de alucinación no cuantificado en la documentación; aplicable el riesgo habitual de modelos de 4 B.
+- La ruta de caché KV q8_0 con Flash Attention fue ~600× más lenta en el build de Windows del autor; requiere validación en cada entorno.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Sneg0wo/NeoHorse-1-4B-Sleipnir-8GB-Heretic-Abliterated-Uncensored-GGUF
+- Hugging Face: https://huggingface.co/Sneg0wo/NeoHorse-1-4B-Sleipnir-8GB-Heretic-Abliterated-Uncensored-GGUF
 - Modelo base: https://huggingface.co/TokenRhythm/NeoHorse-1-4B
 - Donante abliterated: https://huggingface.co/huihui-ai/Huihui-NeoHorse-1-4B-abliterated
 - Donante heretic: https://huggingface.co/prithivMLmods/NeoHorse-1-4B-Max-Heretic-Uncensored-TURBO
-- llama.cpp: https://github.com/ggml-org/llama.cpp
-- Papers, blogs, demos y repositorios adicionales: no disponibles en la informacion proporcionada.

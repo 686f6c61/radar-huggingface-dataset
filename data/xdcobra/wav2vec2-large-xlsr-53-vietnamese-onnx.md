@@ -2,84 +2,90 @@
 
 ## Resumen
 
-XDcobra/wav2vec2-large-xlsr-53-vietnamese-ONNX es una exportación a formato ONNX del modelo not-tanh/wav2vec2-large-xlsr-53-vietnamese, un sistema de reconocimiento automático del habla (ASR) para vietnamita basado en la arquitectura wav2vec2-large con XLSR-53. El modelo original fue ajustado para transcripción y alineación forzada a nivel de carácter mediante CTC. Esta versión ONNX está pensada para su uso en aplicaciones comerciales offline, con pesos en fp32, fp16 y cuantización dinámica int8.
+wav2vec2-large-xlsr-53-vietnamese-ONNX es una exportacion a formato ONNX del checkpoint `not-tanh/wav2vec2-large-xlsr-53-vietnamese`, un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura wav2vec2-large XLSR-53 y especializado en vietnamita. Lo publica el desarrollador XDcobra como artefacto listo para inferencia en dispositivos, orientado a alineamiento forzado (forced alignment) por CTC de caracteres y a transcripcion ASR. El modelo original parte de un preentrenamiento multilingue XLSR-53 (53 idiomas) y se afina para vietnamita, con una salida CTC a nivel de caracter.
 
-El repositorio, publicado por el usuario XDcobra, ocupa 2,2 GB e incluye los archivos ONNX, el vocabulario CTC y la configuración. La licencia es Apache 2.0, lo que permite uso comercial siempre que se respete la licencia del modelo base. Su relevancia radica en que facilita el despliegue en entornos sin conexión y en hardware modesto gracias a ONNX Runtime y las cuantizaciones disponibles.
+La relevancia de esta ficha no esta en el modelo en si, sino en el empaquetado: se distribuyen pesos en fp32, fp16 e int8 (cuantizacion dinamica QUInt8) en un unico repositorio de 2,2 GB, junto con el vocabulario CTC y la configuracion de Transformers. Estos artefactos estan preparados para el SDK movil `react-native-sherpa-onnx`, que ofrece herramientas de voz offline para React Native, Android e iOS, e incluye los paquetes de alineamiento forzado que consume la aplicacion VoiceLab.
 
-## Especificaciones técnicas
+Se trata, por tanto, de un modelo de tamano grande (wav2vec2-large, en el orden de cientos de millones de parametros) con licencia Apache 2.0, pensado para ejecucion offline en movil mediante ONNX Runtime. No es un modelo generativo ni de chat: su unica funcion es convertir audio PCM mono a 16 kHz en transcripciones o alineamientos temporales a nivel de caracter. La informacion publica no detalla el numero exacto de parametros ni resultados de benchmarks, por lo que esos datos se marcan como no disponibles.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | wav2vec2-large con XLSR-53 (extractor convolucional + transformer encoder) |
-| Parametros totales | no disponible (modelo base: wav2vec2-large) |
+| Arquitectura | wav2vec2-large XLSR-53 (transformer convolucional + encoder Transformer, cabeza CTC) |
+| Parametros totales | no disponible (familia wav2vec2-large; cifra exacta no publicada) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de audio; procesa secuencias de audio de duración variable) |
-| Tipos de cuantizacion | fp32, fp16, int8 dinámica (QUInt8) |
+| Longitud de contexto | no disponible (ventana de audio dependiente de la implementacion; muestreo a 16 kHz) |
+| Tipos de cuantizacion | fp32, fp16 e int8 (cuantizacion dinamica QUInt8 de pesos) |
 | Idiomas soportados | vietnamita (vi) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | ONNX |
+| Formato de pesos | ONNX (`onnx/model.onnx`, `onnx/model_fp16.onnx`, `onnx/model_int8.onnx`) + `vocab.json` + `config.json` |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en wav2vec2-large, una arquitectura que combina un extractor de características convolucional con un transformer encoder. Fue preentrenado con XLSR-53 (cross-lingual speech representations) en 53 idiomas y posteriormente ajustado para vietnamita. El ajuste final emplea una cabeza CTC a nivel de carácter, lo que permite tanto la transcripción como la alineación forzada. No se dispone de información sobre el número de horas de audio, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el ajuste.
+El modelo hereda la arquitectura wav2vec2-large XLSR-53: un extractor de caracteristicas convolucional que procesa la forma de onda cruda a 16 kHz, seguido de un encoder Transformer y una cabeza de clasificacion CTC. La variante XLSR-53 se preentreno de forma autosupervisada sobre audio de 53 idiomas, lo que proporciona representaciones acusticas multilingues; posteriormente el checkpoint `not-tanh/wav2vec2-large-xlsr-53-vietnamese` se afino para vietnamita con una salida CTC a nivel de caracter (char-CTC), tal como indica la model card.
 
-La innovación principal de esta versión es su exportación a ONNX mediante optimum-cli y la cuantización dinámica con onnxruntime, que reduce el tamaño y acelera la inferencia en CPU. El modelo espera audio de entrada a 16 kHz mono PCM.
+No se detallan en la informacion disponible el numero de horas de audio de entrenamiento, la composicion del dataset de afinamiento, ni si se aplicaron tecnicas de RLHF o DPO (no procede en un modelo ASR). La innovacion tecnica relevante de esta publicacion es el proceso de exportacion: se uso `optimum-cli export onnx` seguido de cuantizacion dinamica con `onnxruntime` (script `export_hf_onnx_pack.py` del repositorio del SDK), generando tres variantes de precision. El objetivo es la inferencia offline en dispositivos moviles y el alineamiento forzado por CTC, con entrada de audio PCM mono a 16 kHz.
 
 ## Capacidades
 
-- Reconocimiento automático del habla (ASR) en vietnamita.
-- Alineación forzada (forced alignment) a nivel de carácter mediante CTC, útil para obtener marcas temporales por carácter.
-- Salida a nivel de carácter (char-CTC), sin puntuación ni mayúsculas.
-- Funcionamiento offline: no requiere conexión a internet.
-- Compatible con ONNX Runtime, lo que permite ejecución en CPU y GPU.
-- No soporta tool calling, function calling ni razonamiento multi-paso.
-- No es un modelo multimodal (solo audio).
-- Idiomas: únicamente vietnamita (aunque el preentrenamiento XLSR-53 cubre 53 idiomas, este ajuste es específico para vietnamita).
+- Reconocimiento automatico del habla (ASR) en vietnamita a partir de audio PCM mono a 16 kHz.
+- Alineamiento forzado (forced alignment) por CTC a nivel de caracter, util para obtener marcas temporales de fonemas o caracteres sobre una transcripcion conocida.
+- Salida CTC con vocabulario de caracteres (`vocab.json`), adecuada para decodificacion greedy o beam search.
+- Ejecucion en dispositivo (on-device) mediante ONNX Runtime, sin dependencia de red.
+- Tres variantes de precision (fp32, fp16, int8) para ajustar el equilibrio entre calidad y consumo de recursos.
+- Integracion con el SDK `react-native-sherpa-onnx` para React Native, Android e iOS.
+- No soporta tool calling, agentes, razonamiento multi-paso, vision ni audio generativo; es un modelo puramente discriminativo de ASR/alineamiento.
 
 ## Casos de uso
 
-- Transcripción automática de audio en vietnamita: ideal para convertir grabaciones de reuniones, entrevistas o podcasts a texto. Su naturaleza offline y su bajo consumo permiten procesar archivos localmente sin enviar datos a la nube.
-- Generación de subtítulos sincronizados: gracias a la alineación forzada por carácter, se pueden obtener marcas temporales precisas para cada carácter, facilitando la creación de subtítulos en formato SRT o VTT.
-- Análisis de llamadas de atención al cliente: el modelo transcribe conversaciones telefónicas en vietnamita, lo que permite aplicar análisis de sentimiento o extracción de temas posteriormente.
-- Accesibilidad para personas con discapacidad auditiva: integrado en aplicaciones de transcripción en tiempo real (con latencia adecuada gracias a las optimizaciones ONNX), muestra el texto de lo que se habla.
-- Indexación y búsqueda de contenido audiovisual: transcribir grandes volúmenes de vídeo o audio en vietnamita para habilitar búsqueda por palabras clave.
-- Creación de datasets etiquetados: la alineación forzada permite generar corpus de voz con transcripciones a nivel de carácter, útiles para entrenar otros modelos de ASR o TTS.
-- Dictado por voz en aplicaciones de escritorio o móviles: el modelo puede ejecutarse en dispositivos con recursos limitados gracias a la cuantización int8 y a ONNX Runtime.
+- Transcripcion offline en aplicaciones moviles: el modelo puede integrarse en apps React Native, Android o iOS a traves de `react-native-sherpa-onnx` para dictado o notas de voz sin conexion, usando la variante int8 en dispositivos con recursos limitados.
+- Alineamiento forzado de subtitulos: dado un audio vietnamita y su transcripcion, el modelo produce marcas temporales por caracter que permiten sincronizar subtitulos o karaoke con precision a nivel de caracter.
+- Herramientas de aprendizaje de idiomas: en apps como VoiceLab, el alineamiento permite comparar la pronunciacion del usuario con la referencia y resaltar desviaciones a nivel de caracter.
+- Post-procesado de pipelines ASR: como etapa de alineamiento sobre transcripciones generadas por otro motor, para obtener timestamps fiables en la produccion de subtitulos o indices de busqueda sobre audio.
+- Procesamiento por lotes en servidor: la variante fp32 puede ejecutarse con ONNX Runtime en servidores para transcribir archivos de audio vietnamitas en pipelines de archivado o analitica.
+- Prototipado rapido en entornos sin GPU: la cuantizacion int8 permite ejecutar el modelo en CPU con un consumo de memoria reducido, adecuado para pruebas y demos.
+- Integracion en dispositivos de borde (edge): al ser ONNX y con variantes ligeras, puede desplegarse en hardware embebido con ONNX Runtime para transcripcion local en vietnamita.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- No se proporcionan requisitos de hardware específicos en la información disponible.
-- El repositorio ocupa 2,2 GB en total, incluyendo los tres formatos ONNX (fp32, fp16, int8) y el vocabulario. Se estima que el modelo fp32 ocupa aproximadamente 1,2-1,3 GB, el fp16 unos 0,6-0,7 GB y el int8 unos 0,3-0,4 GB.
-- Al ser un modelo de la familia wav2vec2-large, su tamaño es moderado y puede ejecutarse en GPUs consumer con 8 GB de VRAM o superiores, e incluso en CPU.
-- Opciones de despliegue: ONNX Runtime (CPU/GPU), y potencialmente otros runtimes compatibles con ONNX como TensorRT u OpenVINO, aunque no se especifican en la información disponible.
-- Latencia y throughput: no disponibles.
+- VRAM/RAM estimada: el repositorio completo ocupa 2,2 GB; la variante fp32 requiere en torno a ese orden de memoria, la fp16 aproximadamente la mitad y la int8 una fraccion adicional menor (cifras exactas no publicadas).
+- GPU recomendadas: no se especifican; al ser un modelo de ASR de tamano grande, una GPU consumer moderna (por ejemplo, RTX 3090 o RTX 4090) o una A100/H100 permitirian inferencia rapida, aunque el objetivo declarado es la ejecucion en dispositivo.
+- Cabe en GPU consumer: si, en tarjetas con suficiente memoria para la variante elegida; la variante int8 esta pensada para CPU y movil.
+- Opciones de despliegue: ONNX Runtime (principal), con integracion en `react-native-sherpa-onnx`; no se documentan despliegues con vLLM, llama.cpp, Ollama o TGI (no aplicables a este tipo de modelo).
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| XDcobra/wav2vec2-large-xlsr-53-vietnamese-ONNX | no disponible | no aplica (audio) | Apache 2.0 | ONNX (fp32, fp16, int8) | Hugging Face |
-| not-tanh/wav2vec2-large-xlsr-53-vietnamese (base) | no disponible | no aplica | Apache 2.0 | PyTorch (safetensors) | Hugging Face |
-| facebook/wav2vec2-large-xlsr-53 (original) | no disponible | no aplica | Apache 2.0 | PyTorch | Hugging Face |
+| XDcobra/wav2vec2-large-xlsr-53-vietnamese-ONNX | no disponible (familia wav2vec2-large) | no disponible | no publicado | Apache 2.0 | Hugging Face (ONNX) |
+| not-tanh/wav2vec2-large-xlsr-53-vietnamese | no disponible (familia wav2vec2-large) | no disponible | no disponible | Apache 2.0 | Hugging Face (checkpoint original) |
+| Alternativas ASR vietnamita de la familia wav2vec2 | no disponible | no disponible | no disponible | variable | no disponible |
 
-No se dispone de información sobre otros modelos comparables en la información proporcionada. La comparación más directa es con el checkpoint base en PyTorch, del que este modelo es una exportación ONNX cuantizada.
+No se dispone de datos de benchmarks ni de comparativas cuantitativas con otros modelos ASR en vietnamita dentro de la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos: no se dispone de información sobre sesgos específicos. Al ser un modelo entrenado en vietnamita, puede tener peor rendimiento con acentos regionales, ruido de fondo o audio de baja calidad.
-- Riesgo de alucinación: como todo modelo ASR, puede generar transcripciones incorrectas, especialmente en segmentos con solapamiento de voces, jerga o nombres propios.
-- Limitaciones de contexto: no aplica el concepto de ventana de contexto de texto; procesa secuencias de audio, pero puede degradarse en grabaciones muy largas sin segmentar.
-- Idioma: únicamente vietnamita. No soporta otros idiomas.
-- Licencia: Apache 2.0 permite uso comercial, pero se debe mantener la atribución y el aviso de licencia. El modelo base también es Apache 2.0.
-- Caveats para producción: requiere audio a 16 kHz mono PCM. La salida es a nivel de carácter, sin puntuación ni mayúsculas, por lo que puede necesitar post-procesamiento. No soporta tool calling ni funciones de agente.
-- No se han publicado benchmarks, por lo que el rendimiento real no puede verificarse con los datos disponibles.
+- Solo soporta vietnamita; no es multilingue en su uso afinado, aunque el preentrenamiento XLSR-53 sea multilingue.
+- Es un modelo discriminativo de ASR/alineamiento: no genera texto libre, no razona y no soporta instrucciones.
+- Riesgo de errores de transcripcion en audio con ruido, acentos no representados en el dataset de entrenamiento o solapamiento de hablantes; no se documentan tasas de error (WER/CER).
+- No se detalla la composicion del dataset de afinamiento, por lo que se desconocen sesgos acusticos, dialectales o de genero.
+- Requiere audio PCM mono a 16 kHz; otras frecuencias o formatos exigen remuestreo previo.
+- La licencia Apache 2.0 permite uso comercial, pero el autor remite a verificar que la licencia del modelo base lo permita; conviene revisar el checkpoint original.
+- La variante int8 puede degradar la precision del alineamiento o de la transcripcion respecto a fp32; no se publican metricas de dicha degradacion.
+- No se han publicado resultados de benchmarks, por lo que no es posible validar su calidad frente a alternativas.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/XDcobra/wav2vec2-large-xlsr-53-vietnamese-ONNX
 - Modelo base: https://huggingface.co/not-tanh/wav2vec2-large-xlsr-53-vietnamese
-- Modelo original XLSR-53: https://huggingface.co/facebook/wav2vec2-large-xlsr-53
+- SDK react-native-sherpa-onnx: https://github.com/XDcobra/react-native-sherpa-onnx
+- Script de exportacion: https://github.com/XDcobra/react-native-sherpa-onnx/blob/main/scripts/alignment-models/export_hf_onnx_pack.py
+- VoiceLab en Google Play: https://play.google.com/store/apps/details?id=com.xdcobra.voicelab
+- VoiceLab en App Store: https://apps.apple.com/us/app/voice-lab-stt-tts-more/id6761100598
+- Pagina de producto VoiceLab: https://xdcobra.github.io/voice-lab-offline-tools/

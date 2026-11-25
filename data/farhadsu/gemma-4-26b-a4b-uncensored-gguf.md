@@ -2,100 +2,105 @@
 
 ## Resumen
 
-Gemma-4-26B-A4B-Uncensored-GGUF es una cuantizacion GGUF del checkpoint abliterated (sin censura) del modelo instructivo google/gemma-4-26b-a4b-it, publicada por el usuario FarhadSu. Se trata de un modelo de arquitectura Mixture of Experts (MoE) con 25.233.142.046 parametros totales, del que la model card indica que solo una fraccion (A4B, aproximadamente 4.000 millones) esta activa por token. El autor lo ha empaquetado en un unico fichero IQ3_XXS de 11,2 GB con importance matrix, pensado para caber en una GPU de 16 GB de VRAM manteniendo contexto largo.
+Gemma-4-26B-A4B-Uncensored-GGUF es una cuantización GGUF de tipo IQ3_XXS (con importance matrix) de un checkpoint "abliterated" (sin censura) del modelo instructivo google/gemma-4-26b-a4b-it. Lo publica el usuario FarhadSu en Hugging Face y su objetivo es ofrecer una versión de Gemma 4 con arquitectura Mixture of Experts (26B totales, 4B activos) que quepa en una GPU de 16 GB de VRAM manteniendo contexto largo. El resultado es un único fichero de 11,2 GB que, según el autor, carga con 256K de contexto en 14,8 GB de VRAM.
 
-El problema que resuelve es doble: por un lado, ofrecer una version sin rechazos del modelo Gemma 4 MoE para casos donde el filtrado de seguridad del modelo original resulta limitante; por otro, permitir ejecutar un MoE de 26B en hardware consumer modesto mediante cuantizacion agresiva de 3 bits con imatrix. El autor reporta pruebas en llama.cpp con backend Vulkan sobre dos RX 580 de 8 GB, con velocidades de generacion de 27-34 tokens por segundo y carga de contexto de hasta 256K tokens en 14,8 GB de VRAM.
+El modelo base es un transformer MoE de Google con 25.233.142.046 parámetros totales (según los safetensors del repo) y aproximadamente 4B activos por token, según indica el sufijo A4B. La intervención del autor consiste en convertir el checkpoint FP8 sin censura a GGUF Q8_0 con un script parcheado de llama.cpp para manejar correctamente los tensores de expertos fusionados (`ffn_gate_up_exps.weight`), generar una importance matrix con 66 fragmentos de 512 tokens de un corpus inglés de código y agentes, y cuantizar a IQ3_XXS con tensor de salida IQ4_NL.
 
-La relevancia actual radica en que demuestra la viabilidad de desplegar modelos MoE grandes en GPUs de gama media mediante tecnicas de cuantizacion avanzada (IQ3_XXS con imatrix y tensor de salida IQ4_NL), aunque con limitaciones claras en idiomas de bajos recursos y en la verificacion de retrieval mas alla de 30K tokens.
+Su relevancia es doble: por un lado, demuestra que un MoE de 26B puede desplegarse en hardware de consumo modesto (el autor lo prueba en 2× RX 580 de 8 GB con backend Vulkan); por otro, es un ejemplo de "abliteration" aplicada a un modelo de Google, con las implicaciones legales y de seguridad que ello conlleva. La licencia es "other" y remite a la del modelo base de Google, lo que condiciona su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE) transformer, basada en google/gemma-4-26b-a4b-it |
-| Parametros totales | 25.233.142.046 |
-| Parametros activos | A4B (aproximadamente 4.000 millones activos por token, segun nomenclatura del modelo base) |
-| Longitud de contexto | Hasta 256K tokens (carga verificada en llama.cpp con 14,8 GB de VRAM); retrieval verificado solo hasta 30K |
-| Tipos de cuantizacion | IQ3_XXS con importance matrix (imatrix), tensor de salida IQ4_NL |
-| Idiomas soportados | No disponible (el imatrix de calibracion es solo en ingles) |
-| Licencia | other (enlazada a la licencia de google/gemma-4-26b-a4b-it) |
-| Formato de pesos | GGUF (fichero unico de 11,2 GB) |
+| Arquitectura | Transformer Mixture of Experts (MoE), derivado de google/gemma-4-26b-a4b-it |
+| Parametros totales | 25.233.142.046 (dato de safetensors del repo) |
+| Parametros activos | aproximadamente 4B (según el sufijo A4B del modelo base) |
+| Longitud de contexto | hasta 256K cargados según el autor; recuperación verificada solo hasta 30K |
+| Tipos de cuantizacion | IQ3_XXS con importance matrix (tensor de salida IQ4_NL); el repo contiene un único GGUF de 11,2 GB |
+| Idiomas soportados | no disponibles (la model card no los declara; la calibración de la imatrix es solo en inglés) |
+| Licencia | other (remite a https://huggingface.co/google/gemma-4-26b-a4b-it) |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es google/gemma-4-26b-a4b-it, un transformer con arquitectura Mixture of Experts de 26B parametros totales y aproximadamente 4B activos por token. El checkpoint publicado por FarhadSu es una version abliterated (sin censura) en FP8, que posteriormente se convirtio a GGUF Q8_0 mediante el script `convert_hf_to_gguf.py` de llama.cpp, parcheado especificamente para escribir y cuantizar correctamente los tensores de expertos fusionados `ffn_gate_up_exps.weight`.
+El modelo base es un transformer con capas de mezcla de expertos (MoE): 26B parámetros totales con unos 4B activos por token, lo que reduce el coste computacional de inferencia frente a un denso del mismo tamaño. El autor no documenta el dataset de preentrenamiento ni el proceso de alineación del modelo original; solo indica que parte de un checkpoint FP8 "uncensored" (abliterated) de `google/gemma-4-26b-a4b-it`, es decir, un modelo al que se le ha eliminado o atenuado la capa de rechazo mediante técnicas de abliteration sobre las direcciones de activación asociadas a la negativa.
 
-La cuantizacion final se realizo con `llama-quantize IQ3_XXS --imatrix`, usando una importance matrix construida a partir de 66 fragmentos de 512 tokens de un corpus de calibracion en ingles orientado a codigo y agentes. El tensor de salida se cuantizo a IQ4_NL. No se dispone de informacion sobre el proceso de entrenamiento original (numero de tokens, composicion del dataset, RLHF/DPO) ni sobre el metodo exacto de abliteration aplicado, mas alla de que el autor lo describe como "uncensored (abliterated)".
+La parte técnica propia de esta ficha es la cuantización: conversión HF → GGUF Q8_0 con `convert_hf_to_gguf.py` parcheado para escribir y cuantizar correctamente los tensores de expertos fusionados, importance matrix construida con 66 fragmentos de 512 tokens de un corpus inglés de código y agentes, y cuantización final a IQ3_XXS con `llama-quantize --imatrix`. No se documentan innovaciones de decodificación; de hecho, el autor advierte explícitamente contra el uso de decodificación especulativa por n-gramas (`--spec-type ngram-*`), que provoca bucles de repetición.
 
 ## Capacidades
 
-- Generacion de texto conversacional en formato instruct.
-- Razonamiento aritmetico y logico: el autor verifica respuestas correctas en problemas tipo "bat and ball" y de widgets.
-- Generacion de codigo: verificado con un test de calculo del n-esimo numero primo.
-- Respuestas sin rechazo ante peticiones que el modelo original filtraria (abliterated).
-- Retrieval de contexto largo: needle-in-haystack superado en 4K, 16K y 30K tokens.
-- Carga de contexto de hasta 256K tokens en llama.cpp (verificado el uso de VRAM, no la calidad del retrieval a esa longitud).
-- Compatible con el flag `--jinja` de llama.cpp, lo que habilita plantillas de chat y potencialmente tool calling segun la plantilla del modelo base.
-- Capacidades multilingues: no verificadas; el autor advierte de bucles de repeticion en idiomas de bajos recursos (por ejemplo, azerbaiyano).
+- Generación de texto conversacional en formato instruct (pipeline `text-generation`, tag `conversational`).
+- Razonamiento básico: el autor verifica problemas tipo "bat & ball" y "widgets" con resultado correcto.
+- Generación de código: prueba de cálculo del n-ésimo primo correcta.
+- Recuperación en contexto largo: needle-in-haystack superado a 4K, 16K y 30K tokens.
+- Llamadas a herramientas (tool calling) simples: funcionan llamadas individuales, según la model card.
+- Modo sin censura: responde a peticiones que un modelo alineado rechazaría (el autor cita una explicación de lock picking).
+- Soporte de plantilla de chat vía `--jinja` en llama.cpp.
+- No se documentan capacidades multimodales (visión, audio) ni modo "thinking" explícito.
 
 ## Casos de uso
 
-- Investigacion sobre alineacion y seguridad: el modelo permite estudiar el comportamiento de un LLM sin filtros de rechazo, util para analizar sesgos, riesgos y eficacia de mecanismos de seguridad en modelos abliterated.
-- Despliegue en hardware consumer con VRAM limitada: con 11,2 GB en IQ3_XXS cabe en GPUs de 16 GB, permitiendo ejecutar un MoE de 26B en equipos de gama media o en configuraciones multi-GPU modestas como las dos RX 580 del autor.
-- Procesamiento de documentos largos en local: la ventana de 256K tokens permite cargar contratos, informes o bases de codigo extensas, aunque el retrieval fiable se limita a unos 30K tokens segun las pruebas del autor.
-- Asistencia a la programacion en entornos aislados: el modelo genera codigo y razona sobre problemas algoritmicos, adecuado para pipelines de CI/CD o asistentes locales donde no se desea dependencia de APIs externas.
-- Generacion de texto creativo sin restricciones editoriales: util para escritura de ficcion, guiones o contenido donde el filtrado del modelo base resulta limitante, siempre con supervision humana.
-- Experimentacion con cuantizacion extrema: sirve como caso de estudio de hasta donde se puede comprimir un MoE con imatrix e IQ3_XXS manteniendo coherencia en tareas de codigo y razonamiento.
-- Prototipado de agentes conversacionales: la compatibilidad con `--jinja` y el contexto largo permiten construir agentes multi-turno en local, aunque la latencia en hardware antiguo limita su uso interactivo.
+- Despliegue local en GPU de consumo: con 11,2 GB de pesos IQ3_XXS cabe en tarjetas de 16 GB (o incluso en 2× 8 GB con Vulkan, como prueba el autor) y permite contexto de 32K con caché KV q8_0, útil para asistentes personales sin conexión.
+- Análisis de documentos largos con recuperación moderada: el modelo supera needle-in-haystack hasta 30K tokens, adecuado para resumir contratos, informes o hilos de correo de hasta esa longitud en una sola pasada.
+- Generación de código puntual: para autocompletar funciones, explicar fragmentos o resolver ejercicios algorítmicos en un IDE local, sin depender de APIs externas.
+- Investigación sobre alineación y seguridad: al ser un modelo abliterated, sirve para estudiar cómo varía la tasa de rechazo y la calidad tras eliminar la capa de negativa, comparándolo con el Gemma 4 original.
+- Experimentación con cuantización extrema: la ficha documenta el pipeline completo (imatrix, IQ3_XXS, tensor IQ4_NL) y sirve como referencia para replicar cuantizaciones de MoE con expertos fusionados.
+- Pruebas de robustez en contextos largos: útil para medir degradación de recuperación entre 30K y 117K tokens, donde el autor reporta consumo de VRAM de 15,6 GB en prompt de 117K.
+- Base para fine-tuning ligero o LoRA sobre un modelo sin censura en entornos de investigación controlados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. El autor unicamente reporta pruebas cualitativas y metricas de velocidad en su hardware:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor solo reporta pruebas cualitativas y métricas de velocidad en su hardware (2× RX 580 8 GB, Vulkan, KV q8_0, flash-attn):
 
 | Prueba | Resultado |
 |---|---|
-| Codigo (n-esimo primo) | Correcto |
-| Razonamiento (bat & ball, widgets) | Correcto |
-| Sin censura (explicacion de lock picking) | Responde sin rechazo |
-| Needle-in-haystack 4K / 16K / 30K | Correcto / Correcto / Correcto |
-| Contexto 256K | Carga con 14,8 GB VRAM; prompt de 117K pico de 15,6 GB |
-| Generacion | 27-34 t/s |
-| Procesamiento de prompt | 292 t/s @4K, 192 @16K, 128 @30K, ~55 @117K |
+| Código (n-ésimo primo) | correcto |
+| Razonamiento (bat & ball, widgets) | correcto |
+| Sin censura (explicación de lock picking) | responde, sin rechazo |
+| Needle-in-haystack 4K / 16K / 30K | correcto / correcto / correcto |
+| Contexto 256K | carga con 14,8 GB de VRAM; prompt de 117K pico 15,6 GB |
 
-Hardware de prueba: llama.cpp con backend Vulkan, 2x RX 580 8 GB, KV cache q8_0, flash-attn activado, `ubatch-size 256`.
+| Métrica de velocidad | Valor |
+|---|---|
+| Generación | 27–34 t/s |
+| Prompt processing @4K | 292 t/s |
+| Prompt processing @16K | 192 t/s |
+| Prompt processing @30K | 128 t/s |
+| Prompt processing @117K | ~55 t/s |
 
 ## Requisitos de hardware
 
-- VRAM estimada: 11,2 GB para los pesos en IQ3_XXS, mas la KV cache. Con contexto de 256K y KV q8_0 el autor reporta 14,8 GB; un prompt de 117K alcanzo 15,6 GB.
-- GPU recomendadas: el autor lo prueba en 2x RX 580 8 GB (Vulkan). Por tamano, cabe en RTX 4080/4090 (16-24 GB), A100 40 GB, H100, y en GPUs de 16 GB como RTX 4060 Ti 16 GB o RX 7600 XT 16 GB.
-- Cabe en GPU consumer: si, en modelos con 16 GB o mas de VRAM, o mediante offload parcial a CPU en GPUs de 8-12 GB.
-- Opciones de despliegue: llama.cpp (`llama-server`, `llama-cli`), con backend Vulkan o CUDA; compatible con el flag `--jinja`. No se menciona soporte verificado en vLLM, TGI u Ollama.
-- Latencia y throughput: 27-34 t/s de generacion y 292 t/s de procesamiento de prompt a 4K en 2x RX 580; el rendimiento decae a ~55 t/s de prompt a 117K tokens.
+- VRAM estimada: 11,2 GB solo para pesos en IQ3_XXS; el autor reporta 14,8 GB con contexto de 256K y 15,6 GB de pico con prompt de 117K usando caché KV q8_0.
+- GPU recomendadas: RTX 4090, RTX 4080, RTX 3090 o cualquier GPU con 16 GB o más. El autor lo ejecuta en 2× RX 580 8 GB con backend Vulkan de llama.cpp.
+- Cabe en GPU de consumo: sí, en modelos con 16 GB (RTX 4060 Ti 16 GB, RTX 4070 Ti Super, RTX 4080, RTX 4090) o en configuraciones multi-GPU de 8 GB.
+- Opciones de despliegue: llama.cpp (`llama-server`, `llama-cli`) con `-ngl 99 -fa on --cache-type-k q8_0 --cache-type-v q8_0 -ub 256 --jinja`; compatible con endpoints de Hugging Face según el tag `endpoints_compatible`.
+- Latencia y throughput: 27–34 t/s de generación y 55–292 t/s de prompt processing según longitud, medidos en 2× RX 580; en GPU modernas se espera bastante más, pero no hay datos publicados.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Cuantización / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma-4-26B-A4B-Uncensored-GGUF (este) | 25,2B totales / ~4B activos | Hasta 256K (retrieval verificado a 30K) | IQ3_XXS imatrix, 11,2 GB | other (Gemma) | Hugging Face, 0 descargas |
-| google/gemma-4-26b-a4b-it (base) | 25,2B totales / ~4B activos | No disponible en la informacion | safetensors, FP8/BF16 | Gemma | Hugging Face oficial |
-| Otras cuantizaciones GGUF del mismo base | 25,2B totales / ~4B activos | Depende de la cuantizacion | Q4_K_M, Q5_K_M, etc. | Gemma | Depende del publicador |
+| Gemma-4-26B-A4B-Uncensored-GGUF (este) | 25,2B totales, ~4B activos | hasta 256K (verificado 30K) | IQ3_XXS GGUF, 11,2 GB | other (remite a Google) | Hugging Face, 428 descargas |
+| google/gemma-4-26b-a4b-it (base) | 25,2B totales, ~4B activos | no disponible en esta ficha | safetensors (FP8/BF16 según checkpoint) | Gemma (Google) | Hugging Face oficial |
+| Otras cuantizaciones GGUF del mismo base | 25,2B totales | depende del despliegue | Q4_K_M, Q5_K_M, IQ4_XS, etc. | heredada del base | comunidad en Hugging Face |
 
-No se dispone de datos de benchmarks que permitan comparar rendimiento numerico con alternativas de la misma categoria.
+No se dispone de datos de benchmarks para comparar rendimiento real frente a otras cuantizaciones o frente al modelo base; la comparación se limita a parámetros, formato y licencia.
 
 ## Limitaciones y advertencias
 
-- Modelo abliterated: no rechaza peticiones daninas; el autor declara explicitamente que la responsabilidad de uso recae en el usuario.
-- Retrieval de contexto largo verificado solo hasta 30K tokens; mas alla no esta probado y el rendimiento decae notablemente en hardware modesto.
-- Idiomas de bajos recursos: el imatrix de calibracion es solo en ingles y la cuantizacion de 3 bits agrava el problema; se observan bucles de repeticion en lenguas como el azerbaiyano.
-- La cuantizacion IQ3_XXS introduce perdida de calidad frente al modelo original; no se han publicado evaluaciones cuantitativas de esa degradacion.
-- Licencia "other" vinculada a la licencia de Gemma: es necesario revisar los terminos de google/gemma-4-26b-a4b-it para uso comercial, que pueden incluir restricciones de uso aceptable incompatibles con la version sin censura.
-- Modelo con 0 descargas y 1 like en el momento de la ficha: sin validacion comunitaria ni mantenimiento demostrado.
-- Riesgo de alucinacion inherente a los LLM, agravado por la cuantizacion agresiva y la falta de benchmarks publicados.
-- No se especifican los idiomas soportados oficialmente; la informacion disponible no permite confirmar cobertura multilingue fiable.
+- Sin censura por diseño: el modelo no rechaza peticiones dañinas; el autor declara explícitamente que la responsabilidad de uso recae en el usuario.
+- Recuperación verificada solo hasta 30K tokens; más allá no hay pruebas y el rendimiento cae (55 t/s de prompt processing a 117K).
+- Bucles de repetición en idiomas de bajos recursos (el autor cita azerí), atribuidos a la imatrix solo en inglés y a la cuantización de 3 bits.
+- No apto para sesiones largas de agente o coding multi-paso: puede quedarse repitiendo "I will write the file now" sin invocar la herramienta; las llamadas individuales sí funcionan.
+- Incompatible con decodificación especulativa por n-gramas: provoca bucles infinitos de repetición.
+- Licencia "other" que remite a la de Gemma de Google: hay que revisar los términos del modelo base antes de cualquier uso comercial, y la abliteration puede contravenir cláusulas de uso aceptable.
+- Riesgo de alucinación no cuantificado: no hay benchmarks publicados que midan factualidad ni sesgos.
+- Idiomas soportados no declarados; el corpus de calibración es solo inglés, lo que puede degradar el rendimiento multilingüe.
+- Cuantización de 3 bits: pérdida de calidad esperable frente al FP8 original, no medida con benchmarks estándar.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/FarhadSu/Gemma-4-26B-A4B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-26b-a4b-it
 - Licencia del modelo base: https://huggingface.co/google/gemma-4-26b-a4b-it
-- llama.cpp (herramienta de conversion y cuantizacion): https://github.com/ggerganov/llama.cpp
+- llama.cpp (herramientas de conversión y cuantización): https://github.com/ggml-org/llama.cpp

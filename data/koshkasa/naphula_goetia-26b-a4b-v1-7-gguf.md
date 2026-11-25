@@ -2,54 +2,49 @@
 
 ## Resumen
 
-Naphula_Goetia-26B-A4B-v1.7-GGUF es el repositorio de cuantizaciones en formato GGUF del modelo Naphula/Goetia-26B-A4B-v1.7, un modelo de lenguaje de tipo mezcla de expertos (MoE) orientado a escritura creativa, narrativa de ficción y roleplay. Lo publica el usuario Koshkasa, que actua como cuantizador (quantized_by), mientras que el modelo original (pesos safetensors) procede de Naphula. La relevancia de esta ficha esta en que permite ejecutar en local, mediante llama.cpp y herramientas compatibles, una variante cuantizada con imatrix de un modelo de generacion de texto de gran calidad estilistica.
+Naphula_Goetia-26B-A4B-v1.7-GGUF es la versión cuantizada en formato GGUF del modelo Naphula/Goetia-26B-A4B-v1.7, publicada por el usuario Koshkasa. El modelo base es un merge de tipo Mixture of Experts (MoE) construido con mergekit y orientado a escritura creativa, narrativa de ficción, roleplay y generación de tramas, según los tags declarados por el autor. Esta versión GGUF está pensada para ejecutarse con llama.cpp y herramientas compatibles, lo que facilita su despliegue en entornos locales.
 
-El modelo base se construyo combinando varios modelos preentrenados mediante la tecnica de merge MoE DELLA, tomando como base google/gemma-4-26B-A4B, segun la documentacion de las versiones previas del mismo linaje (v1.4, v1.5). De ahi la denominacion 26B-A4B: aproximadamente 26.000 millones de parametros totales con unos 4.000 millones activos por token gracias al enrutamiento MoE. La ventana de contexto documentada para el linaje es de 32.768 tokens.
+La relevancia de esta ficha radica en que permite ejecutar un modelo de gran tamaño nominal (26B según el nombre, con aproximadamente 4B de parámetros activos por token, a juzgar por la nomenclatura A4B) en hardware de consumo mediante cuantización. El repositorio incluye cuantizaciones estándar e imatrix generadas a partir de un dataset combinado de bartowski, lo que suele mejorar la calidad de los cuantizados de baja precisión.
 
-Este repositorio concreto aporta las cuantizaciones GGUF generadas con un imatrix calculado sobre el dataset combinado de bartowski a partir de los pesos en q8_0, con llama.cpp en el commit 1692f9e50. Esta pensado para despliegue local con llama.cpp y derivados (Ollama, LM Studio, entre otros). El modelo esta etiquetado unicamente en ingles y distribuido bajo licencia apache-2.0, aunque conviene verificar la licencia del modelo base Gemma antes de uso comercial.
+No obstante, la información pública disponible es limitada: no se detallan la arquitectura interna exacta, los datos de entrenamiento ni resultados de benchmarks. La model card se limita a indicar el proceso de cuantización y a recomendar presets de SillyTavern para aplicaciones creativas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE basada en google/gemma-4-26B-A4B; fusion mediante MoE DELLA merge (mergekit) |
-| Parametros totales | ~26B segun la denominacion del modelo; la ficha de Hugging Face reporta 14.224.235 en el campo safetensors (dato inconsistente, probablemente erroneo) |
-| Parametros activos | ~4B (denominacion A4B) |
-| Longitud de contexto | 32.768 tokens (segun documentacion del linaje v1.4) |
-| Tipos de cuantizacion | GGUF con imatrix y cuantizaciones estandar; imatrix generado sobre pesos q8_0 con -c 512 -b 512 -ub 512; tipos concretos no disponibles en la informacion |
-| Idiomas soportados | Ingles (en) |
+| Arquitectura | Transformer MoE (inferido del nombre A4B; detalles no disponibles) |
+| Parametros totales | 26B nominales en el nombre del modelo; el dato de safetensors del repo GGUF indica 14.224.235 (no aclarado por el autor) |
+| Parametros activos | Aproximadamente 4B (inferido de la nomenclatura A4B; no confirmado) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF estándar e imatrix (generado sobre pesos q8_0 con -c 512 -b 512 -ub 512) |
+| Idiomas soportados | en |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (repositorio de cuantizacion; modelo base en safetensors) |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-Se trata de un modelo de arquitectura Mixture of Experts (MoE) derivado de google/gemma-4-26B-A4B. No es un modelo entrenado desde cero, sino una fusion (merge) de varios modelos preentrenados de la familia Gemma-4-26B-A4B, realizada con la tecnica MoE DELLA implementada en mergekit. Entre los modelos combinados figuran variantes especializadas en razonamiento y ajuste de estilo, segun la documentacion de versiones anteriores del mismo linaje. La activacion dispersa implica que, pese a tener unos 26B de parametros totales, solo se activan aproximadamente 4B por token, lo que reduce el coste computacional de inferencia frente a un modelo denso del mismo tamano.
+El modelo base es un merge construido con mergekit (tags mergekit, mergekit-exp, multifusion, nearswap), lo que indica una combinación de pesos de varios modelos mediante técnicas de fusión. La nomenclatura "26B-A4B" sugiere una arquitectura Mixture of Experts con aproximadamente 26B de parámetros totales y unos 4B activos por token, aunque el autor no proporciona detalles técnicos confirmados sobre la arquitectura interna, el número de expertos ni la estrategia de enrutamiento.
 
-En cuanto a los datos de entrenamiento, no se dispone de informacion sobre el numero de tokens, la composicion del dataset ni si se aplicaron fases de RLHF o DPO en el modelo base. Lo unico documentado en este repositorio es que el fichero imatrix usado para la cuantizacion se genero sobre el dataset combinado de bartowski, publicado como gist, partiendo de los pesos en q8_0. La cuantizacion se realizo con llama.cpp en el commit 1692f9e50. No se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, etc.) en la informacion disponible.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La model card únicamente documenta el proceso de cuantización: se generó una imatrix con el dataset combinado de bartowski sobre pesos q8_0 usando llama.cpp (commit 1692f9e50), con parámetros de contexto y batch de 512. El repositorio ocupa 103 GB e incluye varias cuantizaciones.
 
 ## Capacidades
 
-- Generacion de texto y escritura creativa en ingles, con enfasis declarado en prosa vivida y estilos oscuros (dark writing), terror, suspense y romance.
-- Generacion de narrativa y ficcion: creacion de tramas, subtramas (sub-plot generation), continuacion de escenas y storytelling.
-- Roleplay y conversacion (RP) multiuso, con etiquetas de "all genres" y "conversational".
-- Ciencia ficcion y ficcion especulativa como genero soportado explicitamente.
-- Capacidad de generacion de guiones y escenas con continuacion de contexto (scene continue).
-- Soporte de vocabulario adulto o soez (tag "swearing"), segun la propia model card.
-- Tool calling / function calling: no disponible en la informacion.
-- Capacidades de agente y razonamiento multi-paso: no disponible en la informacion.
-- Capacidades multilingues: unicamente ingles.
-- Capacidades especiales (thinking mode, vision, audio): no disponible. Nota: la ficha del modelo base v1.7 en Hugging Face aparece como Image-Text-to-Text, lo que podria implicar soporte multimodal, pero no se confirma en la informacion de este repositorio GGUF.
+- Generación de texto creativo en inglés, con énfasis en ficción, terror, suspense, romance y ciencia ficción.
+- Escritura narrativa vívida ("vivid prosing", "vivid writing") y generación de tramas y subtramas.
+- Roleplay y conversación multi-turno, con soporte para continuar escenas.
+- Capacidades conversacionales generales ("all genres", "conversational").
+- Estilo de escritura oscuro ("dark writing") y uso de lenguaje soez ("swearing") según los tags.
+- No se documentan capacidades de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito.
+- Capacidades multilingües limitadas al inglés según el campo language.
 
 ## Casos de uso
 
-- Escritura creativa asistida: el modelo puede generar y continuar relatos largos de ficcion, terror o romance apoyandose en sus 32.768 tokens de contexto para mantener coherencia de personajes y trama a lo largo de varios capitulos.
-- Roleplay conversacional: adecuado para motores de personajes en aplicaciones de entretenimiento, dado su ajuste especifico a RP y su manejo de estilos "oscuros" y de suspense.
-- Generacion de tramas y subtramas para guiones o novelas: util para autores que necesitan explorar variantes argumentales, con capacidad declarada de sub-plot generation.
-- Continuacion de escenas en herramientas de escritura: puede integrarse en editores de texto como motor de "scene continue", completando pasajes a partir de un contexto largo de la obra.
-- Prototipado de videojuegos narrativos: como backend de dialogo y narrativa ramificada en juegos de rol o aventuras conversacionales, ejecutado en local por su naturaleza MoE eficiente en activacion.
-- Experimentacion con merges y cuantizaciones: la propia existencia del repositorio lo hace util para investigadores que quieran estudiar el comportamiento de un merge DELLA bajo distintas cuantizaciones imatrix.
-- Despliegue local en estaciones de trabajo: permite generar texto sin conexion a servicios en la nube en equipos con VRAM o RAM suficientes, con foco en prosa creativa en ingles.
-- Generacion de contenido de ficcion en ingles: blogs, newsletters o ficcion seriada donde el idioma de trabajo sea exclusivamente el ingles.
+- Escritura de ficción asistida: el modelo puede generar borradores de relatos de terror, suspense o ciencia ficción, así como continuar escenas existentes, gracias a su orientación declarada hacia la narrativa y el "scene continue".
+- Roleplay conversacional: adecuado para personajes interactivos en aplicaciones tipo SillyTavern, con presets recomendados por el autor para mejorar la experiencia creativa.
+- Generación de tramas y subtramas: útil para guionistas y escritores que necesitan estructuras narrativas o ideas argumentales en géneros como el terror o el romance.
+- Prototipado de videojuegos narrativos: puede alimentar diálogos de personajes no jugadores (NPC) en juegos de rol o aventuras conversacionales en inglés.
+- Herramientas de escritura creativa para autores: integrable en editores o asistentes que sugieran continuaciones, descripciones vívidas o giros argumentales.
+- Experimentación local con modelos MoE cuantizados: sirve como banco de pruebas para desarrolladores que quieran evaluar el rendimiento de un MoE de 26B nominales con ~4B activos en llama.cpp.
 
 ## Benchmarks y rendimiento
 
@@ -57,44 +52,30 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en precision completa (FP16) el linaje de 26B se estima en torno a 52 GB de VRAM, segun el agregador LLM Explorer para la version v1.5. Las cuantizaciones GGUF reducen este requisito de forma sustancial (el repositorio completo ocupa 103 GB, sumando todas las variantes).
-- Cuantizaciones bajas (Q4_K_M y similares): deberian caber en GPUs de consumo con 16-24 GB de VRAM, aunque el dato exacto por cuantizacion no esta especificado en el repositorio.
-- Cuantizaciones altas (Q8_0 y superiores): orientadas a GPUs profesionales tipo A100, H100 o configuraciones multi-GPU, dado el tamano del modelo.
-- GPU recomendadas: A100, H100 o RTX 4090 para cuantizaciones medias; GPUs con 24 GB o mas para cuantizaciones Q4.
-- Ejecucion en CPU: posible mediante llama.cpp, dado que el formato GGUF esta disenado para inferencia hibrida CPU/GPU; el rendimiento dependera de la RAM disponible.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier servidor compatible con GGUF. El soporte de vLLM con GGUF depende de la version.
-- Latencia y throughput estimados: no disponibles en la informacion.
+- VRAM estimada: no disponible de forma oficial; dependerá de la cuantización elegida. Para un modelo de 26B nominales, las cuantizaciones Q4_K_M suelen requerir del orden de 15-17 GB, y las Q8_0 en torno a 27-28 GB, aunque estas cifras son estimaciones generales y no datos confirmados por el autor.
+- GPU recomendadas: no especificadas. Por tamaño, una RTX 4090 (24 GB) podría ejecutar cuantizaciones de 4 bits; configuraciones de mayor precisión requerirían A100 o H100.
+- Compatibilidad con GPU de consumo: probable en cuantizaciones bajas (Q4 y similares) en GPUs con 16-24 GB de VRAM, sujeto a verificación empírica.
+- Opciones de despliegue: llama.cpp y frontends compatibles con GGUF (por ejemplo, Ollama o LM Studio, aunque no se mencionan explícitamente en la model card).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Naphula/Goetia-26B-A4B-v1.7-GGUF (este) | ~26B totales, ~4B activos | 32.768 tokens (linaje) | MoE DELLA sobre gemma-4-26B-A4B | apache-2.0 | GGUF en Hugging Face |
-| Naphula/Goetia-26B-A4B-v1.7 (base) | ~26B totales, ~4B activos | 32.768 tokens (linaje) | MoE DELLA sobre gemma-4-26B-A4B | no disponible | Safetensors en Hugging Face |
-| Naphula/Goetia-26B-A4B-v1.4 | ~26B totales, ~4B activos | 32.768 tokens | MoE DELLA sobre gemma-4-26B-A4B | no disponible | Safetensors en Hugging Face |
-| Naphula/Goetia-26B-A4B-v1.3 Absolute Heretic ARA | ~25,8B | no disponible | MoE sobre gemma | no disponible | Safetensors en Hugging Face |
-
-Alternativas externas de la misma categoria (modelos MoE de ~20-30B totales con activacion reducida): los datos concretos de rendimiento no estan disponibles en la informacion proporcionada, por lo que no se incluye una comparativa cuantitativa fiable.
+No disponible. La información proporcionada no incluye modelos comparables ni datos de rendimiento que permitan establecer una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la informacion disponible; al ser un merge sin ficha de evaluacion, no se han auditado sesgos.
-- Riesgo de alucinacion: inherente a los modelos generativos de este tamano; no hay evaluaciones publicadas que lo cuantifiquen.
-- Idioma: el modelo esta etiquetado unicamente como ingles (en), por lo que el rendimiento en castellano u otros idiomas no esta garantizado y probablemente sea inferior.
-- Contenido: las etiquetas incluyen dark writing, horror, suspense y swearing, por lo que puede generar contenido adulto o soez; requiere filtrado si se usa en productos orientados a publico general.
-- Licencia: aunque el repositorio declara apache-2.0, el modelo base deriva de google/gemma-4-26B-A4B, cuya licencia (Gemma Terms of Use) puede imponer condiciones adicionales al uso comercial. Conviene verificar la licencia del modelo base antes de un despliegue en produccion.
-- Dato inconsistente: el campo de parametros safetensors de la ficha de Hugging Face (14.224.235) no concuerda con la denominacion 26B del modelo; debe tratarse con cautela.
-- Naturaleza de merge: al ser una fusion de modelos, no hay garantias de comportamiento uniforme ni de robustez frente a entradas adversarias.
-- Fecha de publicacion: la ficha indica una fecha de creacion de 2026-10-08, posterior a la fecha actual de referencia, lo que puede indicar un error de metadatos.
-- Madurez del despliegue: el repositorio registra 0 descargas en el momento de la consulta, por lo que no hay comunidad de validacion ni reportes de problemas.
+- Solo soporta inglés según el campo language; no se garantiza un rendimiento adecuado en castellano.
+- No se documentan sesgos conocidos, pero al ser un merge de modelos de escritura creativa puede heredar sesgos de sus componentes.
+- Riesgo de alucinación inherente a los modelos generativos; no se han publicado evaluaciones de fidelidad.
+- La licencia apache-2.0 permite uso comercial, pero el modelo base es un merge cuyos componentes originales no se detallan, por lo que conviene verificar las licencias de los modelos fusionados.
+- La información técnica es escasa: no hay confirmación oficial de la arquitectura MoE, el contexto máximo ni los parámetros activos.
+- El repositorio ocupa 103 GB, lo que requiere espacio de almacenamiento considerable.
+- El autor recomienda presets de SillyTavern para aplicaciones creativas, lo que sugiere que su uso óptimo está orientado a ese ecosistema.
 
 ## Enlaces
 
-- Repositorio GGUF (este modelo): https://huggingface.co/Koshkasa/Naphula_Goetia-26B-A4B-v1.7-GGUF
-- Modelo base Naphula/Goetia-26B-A4B-v1.7: https://huggingface.co/Naphula/Goetia-26B-A4B-v1.7
-- Version previa Naphula/Goetia-26B-A4B-v1.4: https://huggingface.co/Naphula/Goetia-26B-A4B-v1.4
-- Ficha en LLM Explorer (Goetia 26B A4B V1.5): https://llm-explorer.com/model/Naphula%2FGoetia-26B-A4B-v1.5,6wYAB9f0FBG0Kw9LmmRSKI
-- Ficha en LLM Explorer (V1.3 Absolute Heretic ARA): https://llm-explorer.com/model/Naphula%2FGoetia-26B-A4B-v1.3-Absolute-Heretic-ARA,75JAgWoH2Ayv97PPP2xglw
-- Modelo en Featherless (v1.4): https://featherless.ai/models/Naphula/Goetia-26B-A4B-v1.4
-- Dataset del imatrix combinado de bartowski: https://gist.github.com/bartowski1182/82ae9b520227f57d79ba04add13d0d0d
-- Dataset OccultAI/illuminati_imatrix_v1: https://huggingface.co/datasets/OccultAI/illuminati_imatrix_v1
+- Repositorio GGUF: https://huggingface.co/Koshkasa/Naphula_Goetia-26B-A4B-v1.7-GGUF
+- Modelo base: https://huggingface.co/Naphula/Goetia-26B-A4B-v1.7
+- Dataset de imatrix: https://huggingface.co/datasets/OccultAI/illuminati_imatrix_v1
+- Dataset combinado de bartowski: https://gist.github.com/bartowski1182/82ae9b520227f57d79ba04add13d0d0d
+- Presets de SillyTavern recomendados: https://huggingface.co/nohurry/sillytavern

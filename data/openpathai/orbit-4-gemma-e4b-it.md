@@ -2,102 +2,87 @@
 
 ## Resumen
 
-Orbit-4-Gemma-E4B-it es un modelo publicado en Hugging Face por el usuario OpenPathAI bajo licencia Apache 2.0. El repositorio no incluye model card más allá del bloque de metadatos de licencia, no declara pipeline, no declara idiomas y no incorpora ninguna descripción de arquitectura, dataset de entrenamiento o proceso de alineación. A fecha de la consulta registra 0 descargas y 0 likes, y la única información disponible es el identificador del repositorio y su licencia.
+Orbit-4-Gemma-E4B-it es un ajuste fino (fine-tuning) del modelo multimodal Gemma 3n E4B-it de Google DeepMind, desarrollado por OpenPathAI con el objetivo de reforzar la comprension y el conocimiento del indonesio. El entrenamiento se realizo mediante LoRA sobre un dataset de instrucciones en indonesio a gran escala (AksaraLLM), cubriendo una epoca completa sin muestreo, y los pesos resultantes se fusionaron en precision float32 sobre CPU.
 
-El nombre sugiere una adaptación de instrucciones sobre una variante "E4B" de la familia Gemma, pero esta interpretación procede únicamente del identificador y no está confirmada por ninguna fuente del repositorio. No hay evidencia publicada sobre el número de parámetros, la longitud de contexto, el tokenizador utilizado, los idiomas cubiertos ni el procedimiento de ajuste (SFT, DPO o RLHF).
+El modelo conserva la arquitectura multimodal de Gemma 3n (entrada de texto, imagen, audio y video; salida de texto), aunque el ajuste se aplico exclusivamente a las capas de texto, por lo que el rendimiento multimodal no se ha reforzado especificamente. El repositorio contiene 7.818.517.072 parametros en formato safetensors y ocupa 20,6 GB.
 
-Por tanto, esta ficha debe leerse como un documento de evaluación preliminar centrado en lo que se puede verificar: licencia, estado del repositorio y riesgos asociados a la ausencia de documentación. Cualquier uso en producción exige una validación empírica propia antes de adoptar el modelo.
+Su relevancia radica en ser una adaptacion regionalizada de un modelo Gemma 3n de tamano compacto (E4B, con parametros efectivos de 4B), orientada a tareas de instruccion, contexto local indonesio, escritura creativa y traduccion id-en. La ventana de contexto efectiva queda limitada a 2048 tokens por la configuracion de entrenamiento, muy por debajo de la del modelo base.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (no se confirma que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | no disponible |
+| Arquitectura | Transformer multimodal (Gemma 3n), ajuste fino LoRA sobre capas de texto |
+| Parametros totales | 7.818.517.072 |
+| Parametros activos | no disponible (el modelo base Gemma 3n E4B emplea parametros efectivos de 4B; el dato exacto de activos no se detalla en la informacion proporcionada) |
+| Longitud de contexto | 2048 tokens (segun configuracion de entrenamiento) |
+| Tipos de cuantizacion | no disponible (los pesos se distribuyen en safetensors; el modelo base admite cuantizaciones habituales, pero no se especifican en la ficha) |
+| Idiomas soportados | indonesio (id) e ingles (en) |
+| Licencia | Gemma (Gemma Terms of Use) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura en el repositorio. La model card se limita a la declaración de licencia Apache 2.0 y no incluye referencia a tipo de transformer, uso de mezcla de expertos, atención lineal, capas recurrentes ni a ninguna innovación técnica concreta. Tampoco se indica si el modelo emplea un tokenizador propio o heredado de otro checkpoint.
+El modelo parte de Gemma 3n E4B-it, una arquitectura transformer multimodal de Google DeepMind que acepta texto, imagen, audio y video como entrada y genera texto. Sobre esa base, OpenPathAI aplico un ajuste fino con LoRA de rango 16 y alpha 16, con dropout 0, sobre los modulos q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj y down_proj. El entrenamiento cubrio una epoca completa (aproximadamente 29.807 pasos) con batch efectivo de 4 (batch 1 x acumulacion de gradientes 4), tasa de aprendizaje 2e-4 con schedule lineal, warmup del 3% de los pasos, weight decay 0,01 y optimizador adamw_8bit. La longitud maxima de secuencia fue de 2048 tokens y la semilla 3407.
 
-No hay datos sobre volumen de tokens de entrenamiento, composición del corpus, técnicas de alineación (SFT, RLHF, DPO) ni sobre el proceso de ajuste de instrucciones implícito en el sufijo "it" del identificador. Toda afirmación sobre estas cuestiones sería especulativa y no verificable con la información disponible.
+El proceso se ejecuto en una Tesla T4 de 16 GB con el framework Unsloth junto a TRL y Transformers. La fusion de los adaptadores LoRA se realizo en float32 sobre CPU. No se menciona en la informacion disponible el uso de RLHF, DPO ni tecnicas de decodificacion especulativa. El dataset de entrenamiento es AksaraLLM, un conjunto de instrucciones en indonesio, y el formato de prompt sigue la plantilla de chat de Gemma 3n.
 
 ## Capacidades
 
-- Generación de texto: no confirmada por documentación, aunque es esperable en un checkpoint con sufijo de instrucción; requiere validación empírica.
-- Razonamiento, matemáticas y código: no disponible.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible; el repositorio no declara idiomas.
-- Capacidades multimodales (visión, audio): no disponible.
-- Modo de razonamiento explícito (thinking mode): no disponible.
-- Longitud de contexto efectiva: no disponible.
+- Comprension de instrucciones en indonesio, incluidas instrucciones complejas y de varios pasos.
+- Conocimiento general y contexto local indonesio: historia, cultura, geografia y temas cotidianos.
+- Generacion de texto natural en indonesio para explicaciones, resumenes y narraciones.
+- Escritura creativa en indonesio: poesia (puisi, pantun) y relatos cortos.
+- Traduccion entre indonesio e ingles.
+- Analisis de sentimiento y procesamiento de texto en indonesio.
+- Razonamiento matematico basico y resolucion de problemas sencillos.
+- Capacidades multimodales heredadas del modelo base (entrada de texto, imagen, audio y video; salida de texto), no reforzadas durante el ajuste fino.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-Los siguientes escenarios son plantillas de evaluación, no usos recomendados sin validación previa. En todos los casos debe realizarse una batería de pruebas propia antes de comprometer el modelo en un flujo real.
-
-- Evaluación comparativa interna en prototipado rápido: desplegar el modelo en un entorno aislado con llama.cpp u Ollama y medir calidad de respuesta frente a un modelo base de referencia con un conjunto de 100 a 200 prompts fijos, dado que no existe ningún benchmark publicado.
-- Generación de texto asistida con revisión humana obligatoria: usar el modelo como generador de borradores en herramientas internas donde un editor valide cada salida, adecuado únicamente si la validación empírica confirma coherencia en el idioma objetivo.
-- Clasificación y extracción de entidades sobre documentos: probar el modelo con esquemas de salida JSON forzada y medir la tasa de parseo correcto, ya que se desconoce si respeta formatos estructurados.
-- Experimentación académica sobre ajuste fino: al estar bajo Apache 2.0, el checkpoint puede servir como punto de partida para trabajos que requieran licencia permisiva, siempre que se verifique primero el origen de los pesos.
-- Chatbot de demostración en entornos no críticos: integrar en un entorno de staging para evaluar latencia y consumo de memoria reales antes de cualquier decisión de arquitectura.
-- Generación de código en pipelines internos con puerta de revisión: únicamente viable si las pruebas muestran calidad suficiente en HumanEval o similar; sin datos publicados, la validación debe ser propia.
-- Análisis de sentimiento o resumen en un dominio acotado: requiere few-shot y medición de alucinación, dado que no hay información sobre el corpus de entrenamiento ni sobre el dominio cubierto.
-- Sustitución de un modelo base en un servicio existente: solo tras comparar con el modelo actual en el mismo conjunto de evaluación, ya que no hay garantías de compatibilidad de tokenizador ni de plantilla de chat.
+- Atencion al cliente en indonesio: el modelo gestiona conversaciones multi-turno en indonesio con instrucciones de varios pasos, adecuado para chatbots de soporte orientados al mercado indonesio, con la limitacion de 2048 tokens de contexto.
+- Generacion de contenido editorial local: redaccion de articulos, resumenes y narraciones en indonesio con conocimiento de contexto cultural e historico local, util para medios o blogs regionales.
+- Traduccion id-en en flujos documentales: traduccion de documentacion tecnica o comercial entre indonesio e ingles, con supervision humana para terminos especializados.
+- Analisis de sentimiento de resenas: clasificacion y procesamiento de opiniones de usuarios en indonesio para paneles de monitorizacion de producto o reputacion.
+- Escritura creativa asistida: generacion de poesia tradicional (pantun) y relatos cortos para talleres literarios, educacion o contenido cultural.
+- Educacion y tutoria basica: explicaciones y resolucion de problemas matematicos sencillos en indonesio para plataformas de aprendizaje.
+- Prototipado de asistentes multimodales: al conservar la arquitectura de Gemma 3n, permite experimentar con entrada de imagen o audio, aunque el rendimiento multimodal no esta garantizado tras el ajuste.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
-
-El repositorio no incluye métricas de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluación. Tampoco se aportan datos de latencia, throughput o consumo de memoria.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-No es posible determinar requisitos de hardware sin conocer el número de parámetros y el formato de pesos, datos que no están disponibles.
-
-- VRAM estimada para inferencia: no disponible.
-- GPU recomendadas: no disponible.
-- Viabilidad en GPU de consumo: no determinable.
-- Opciones de despliegue: no disponibles; el repositorio no declara formatos GGUF, safetensors ni plantilla de chat, por lo que no se puede confirmar compatibilidad con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles.
-
-Recomendación operativa: antes de planificar infraestructura, inspeccionar el árbol de ficheros del repositorio (tamaño de los shards, presencia de `config.json`, `tokenizer_config.json` y `generation_config.json`) para derivar el número de parámetros y la ventana de contexto real.
+- VRAM estimada para inferencia: el repositorio ocupa 20,6 GB en safetensors (float32 tras la fusion); en precision bf16/fp16 se estima en torno a 15-16 GB, y en cuantizaciones de 8 bits o 4 bits podria reducirse sustancialmente, aunque no se proporcionan cifras oficiales.
+- GPU recomendadas: el entrenamiento se realizo en una Tesla T4 de 16 GB; para inferencia en precision completa se recomienda al menos una A100 o H100. En consumer GPU, una RTX 4090 (24 GB) o una RTX 3090 (24 GB) podrian alojar el modelo en bf16; en GPUs de 16 GB seria necesario cuantizar.
+- Cabe en consumer GPU: si, en tarjetas de 24 GB en bf16 y en tarjetas de 16 GB o menos mediante cuantizacion, aunque no se detallan las cuantizaciones soportadas.
+- Opciones de despliegue: Transformers (libreria indicada), y potencialmente vLLM, TGI, llama.cpp u Ollama si se generan los formatos correspondientes; solo Transformers esta confirmado en la informacion disponible.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos verificables del modelo evaluado, por lo que la comparación cuantitativa no es posible. La siguiente tabla recoge únicamente el estado de la información.
-
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
 |---|---|---|---|---|---|
-| OpenPathAI/Orbit-4-Gemma-E4B-it | no disponible | no disponible | no disponible | Apache 2.0 | pública, 0 descargas, sin model card |
-| Alternativa de la familia Gemma con sufijo E4B | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | no verificada | requiere consulta a la fuente original |
-| Alternativa de ~4B parámetros de otra familia | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | no verificada | requiere consulta a la fuente original |
-
-No se han incluido cifras de terceros porque no forman parte de la información proporcionada y su inclusión sin verificación introduciría datos no contrastados.
+| Orbit-4-Gemma-E4B-it | 7.818.517.072 | 2048 tokens | id, en | Gemma | Ajuste fino LoRA de Gemma 3n E4B-it sobre dataset indonesio |
+| google/gemma-3n-E4B-it | no disponible en la informacion | no disponible en la informacion | multilingue (segun modelo base) | Gemma | Modelo base multimodal; contexto superior al del ajuste |
+| Alternativas de ajuste regional en indonesio | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Model card vacía: el repositorio no documenta arquitectura, datos de entrenamiento, idiomas ni evaluación. Es el principal indicador de riesgo.
-- Trazabilidad inexistente: no se especifica sobre qué checkpoint base se ha realizado el ajuste ni si los pesos derivan de un modelo con condiciones de uso adicionales; la declaración Apache 2.0 no garantiza por sí sola la licitud de la cadena de derivación.
-- Metadatos anómalos: el campo de creación indica 2026-10-25, una fecha que conviene contrastar antes de asumir cualquier cronología de publicación.
-- Sin señal de adopción: 0 descargas y 0 likes implican ausencia de validación por parte de la comunidad.
-- Riesgo de alucinación: desconocido y no medido; sin benchmarks no puede acotarse.
-- Sesgos: no evaluados. Sin información sobre el corpus de entrenamiento no es posible estimar sesgos de género, idioma o dominio.
-- Cobertura de idiomas: no declarada; el uso en castellano requiere prueba explícita.
-- Restricciones de licencia: Apache 2.0 permite uso comercial y modificaciones, pero no exime de verificar los términos del modelo base subyacente.
-- Caveat para producción: no desplegar en flujos con usuarios finales sin auditoría previa de calidad, seguridad y cumplimiento.
+- El modelo esta optimizado para texto en indonesio; el rendimiento en otros idiomas o en modalidades no textuales puede degradarse respecto al modelo base.
+- No se ha probado de forma exhaustiva en tareas multimodales dentro del contexto indonesio.
+- Puede producir alucinaciones; es necesaria la verificacion de hechos criticos.
+- No ha recibido ajuste adicional de seguridad; su despliegue en produccion debe acompanarse de supervision.
+- La longitud maxima de contexto es de 2048 tokens, limitada por la configuracion de entrenamiento y muy inferior a la del modelo base.
+- El uso comercial esta sujeto a los Terminos de Uso de Gemma de Google.
+- No se dispone de informacion sobre sesgos especificos evaluados ni sobre soporte de tool calling o agentes.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/OpenPathAI/Orbit-4-Gemma-E4B-it
-- Model card: no disponible (el repositorio no incluye contenido descriptivo)
-- Paper técnico: no disponible
-- Blog o anuncio: no disponible
-- Repositorio de código: no disponible
-- Demo: no disponible
+- Hugging Face: https://huggingface.co/OpenPathAI/Orbit-4-Gemma-E4B-it
+- Modelo base: https://huggingface.co/google/gemma-3n-E4B-it
+- Framework de ajuste fino (Unsloth): https://github.com/unslothai/unsloth
+- Terminos de licencia Gemma: https://ai.google.dev/gemma/terms

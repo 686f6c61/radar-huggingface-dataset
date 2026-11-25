@@ -2,107 +2,102 @@
 
 ## Resumen
 
-gector-bert-en es un modelo de corrección gramatical del inglés basado en GECToR (Grammatical Error Correction: Tag, Not Rewrite), un esquema de etiquetado de secuencias que en lugar de reescribir texto predice una etiqueta de edición por token. Lo publica Patrick Hartnett bajo el nombre proofbird como el modelo de gramática on-device de Proofbird, un asistente de escritura para Windows, y el repositorio se publica para que cualquiera pueda inspeccionar qué se ejecuta en su máquina. Sobre el encoder google-bert/bert-base-cased se añaden una cabeza de etiquetado con 5 000 etiquetas de edición y una cabeza de detección de errores, y el conjunto se exporta a ONNX (fp32, opset 17) para inferencia en CPU.
+`proofbird/gector-bert-en` es un modelo de corrección gramatical del inglés (GEC, *grammatical error correction*) desarrollado por Proofbird, el equipo detrás de la aplicación de asistencia a la escritura proofbird.app. Se trata de un etiquetador de secuencias al estilo GECToR construido sobre el encoder `google-bert/bert-base-cased` con una cabeza de clasificación de 990 etiquetas de edición y una segunda cabeza de detección de errores. El modelo no reescribe texto: para cada token predice una edición local (mantener, borrar, reemplazar, añadir, cambiar mayúsculas o cambiar forma verbal) y aplica las ediciones de forma iterativa hasta cinco pasadas.
 
-El modelo no parafrasea: para cada token predice una de seis operaciones (mantener, borrar, reemplazar por una palabra, añadir una palabra, cambiar mayúsculas/minúsculas, cambiar la forma verbal) y aplica las ediciones, reetiquetando la frase hasta cinco veces. Corrige concordancia sujeto-verbo, tiempos y participios, `a`/`an`, plurales irregulares, confundibles (`their`/`there`/`they're`, `its`/`it's`, `then`/`than`), palabras duplicadas, mayúsculas iniciales y errores de registro cotidiano en preguntas, imperativos y primera y segunda persona.
+Su relevancia actual radica en que está exportado a ONNX en fp32 para ejecutarse íntegramente en CPU, lo que lo hace apto para inferencia *on-device*: la propia demo de Hugging Face Spaces corre en el navegador del usuario sin enviar el texto a ningún servidor. El repositorio ocupa 0,9 GB, el modelo solo entiende inglés y se distribuye con licencia Apache-2.0, lo que permite inspección, uso comercial y despliegue local sin dependencias de API.
 
-Su relevancia está en el enfoque de precisión: se entrenó exclusivamente con datos sintéticos (Wikipedia y Tatoeba corrompidos con reglas escritas a mano, sin corpus de aprendices ni datos de usuario) y se midió con un conjunto de oro de 420 frases escritas a mano, donde corrigió 258 errores, dejó intactas las 154 frases correctas, falló 8 y no empeoró ninguna. Es un modelo pequeño, determinista y auditable, pensado para ejecutarse localmente en CPU sin conexión.
+La versión publicada es la 1.2.1 (ficheros de modelo 1.2.0, actualización de model card), con el tag `v1.2.1` y run id `2026-11-22-2313`. El entrenamiento es exclusivamente sintético (3 250 000 frases) y no emplea corpus de aprendices ni texto de usuario.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder-only (BERT base) con cabeza de etiquetado de ediciones (GECToR) y cabeza de detección de errores |
-| Parámetros totales | no disponible (el modelo base google-bert/bert-base-cased tiene 110 M; el total con las cabezas no se especifica) |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (el modelo base BERT admite 512 tokens; el autor no declara límite explícito) |
-| Tipos de cuantización | fp32 (única versión publicada, `model.onnx`) |
-| Idiomas soportados | inglés (`en`) |
+| Arquitectura | Transformer encoder (BERT-base) con cabeza de etiquetado de ediciones (990 etiquetas) y cabeza de detección de errores; paradigma GECToR |
+| Parámetros totales | no disponible (modelo base `bert-base-cased`, ~110 M de parámetros) |
+| Parámetros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible (limitada por la ventana de BERT-base, 512 tokens) |
+| Tipos de cuantización | fp32 (exportación ONNX publicada); no se documentan otras variantes |
+| Idiomas soportados | inglés (`en`), con cobertura de ortografía americana y británica |
 | Licencia | Apache-2.0 |
-| Formato de pesos | ONNX (opset 17); tokenizador WordPiece en `vocab.txt`, `tokenizer.json` y `tokenizer_config.json` |
+| Formato de pesos | ONNX (fp32); modelo base en safetensors vía `google-bert/bert-base-cased` |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue el esquema GECToR: un encoder BERT base (google-bert/bert-base-cased) con dos cabezas, una de etiquetado con 5 000 etiquetas de edición (`logits_labels`, salida [1, T, 5000]) y otra de detección de errores (`logits_d`, salida [1, T, 2]). Las entradas son `input_ids` y `attention_mask`. La decodificación es iterativa: se predicen las etiquetas, se aplican las ediciones y se reetiqueta la frase hasta cinco veces, de modo que el modelo solo propone ediciones locales y nunca reescribe ni parafrasea el texto.
+El modelo sigue el esquema GECToR: un encoder BERT-base-cased produce representaciones por token y una cabeza de clasificación predice, para cada token, una etiqueta de edición entre 990 posibles. Las ediciones se aplican sobre la frase, se vuelve a etiquetar y se repite el proceso hasta cinco iteraciones. Una cabeza adicional de detección de errores decide si la frase contiene algún error. El tagger solo propone ediciones locales; nunca parafrasea ni reordena el texto.
 
-El entrenamiento usó únicamente datos sintéticos: 3 000 000 de frases de Wikipedia en inglés (`wikimedia/wikipedia`, `20231101.en`) y 250 000 de Tatoeba, corrompidas con reglas de error escritas a mano, manteniendo aproximadamente un 10 % limpias para que el modelo aprenda a no tocar texto correcto. Se añadieron 150 000 frases de plantilla para patrones poco frecuentes en Wikipedia (preguntas, imperativos, primera y segunda persona, sustantivos colectivos y de masa, plurales irregulares, errores en una cláusula posterior). No se usaron corpus de aprendices, datos no comerciales ni texto de usuario. El entrenamiento fue de una época (100 344 pasos, batch 64, learning rate máximo 1,5e-5) en una NVIDIA L4, con identificador de ejecución `2026-11-06-0801`. No se documenta RLHF ni DPO.
+El entrenamiento usó exclusivamente datos sintéticos: 1 500 000 frases de Wikipedia en inglés (`wikimedia/wikipedia`, `20231101.en`), 1 500 000 frases de los proceedings del Parlamento Europeo (Europarl v10, sesiones anteriores a junio de 2011) y 250 000 frases de Tatoeba, en total 3 250 000 frases. Las frases se corrompieron con reglas de error escritas a mano, normalmente un error por frase con independencia de su longitud; cerca del 10 % se mantuvieron limpias para que el modelo aprenda a no tocar texto correcto. Las reglas solo reemplazan o duplican palabras, ninguna elimina una, por lo que el modelo no aprende a insertar palabras. Se añadieron frases reales con patrones específicos (`there` como lugar, `they're`/`you're` ante verbo o adjetivo, `its`/`it's`, `than` tras comparativo, plurales irregulares, imperativos), 8 139 frases de plantilla para formas poco frecuentes en los corpus (`mice`, `knives`, `wolves`, `they're`) y 150 000 frases de plantilla adicionales para preguntas, imperativos, primera y segunda persona, sustantivos colectivos y de masa, y errores en cláusulas posteriores. No se usaron corpus de aprendices ni datos no comerciales.
 
-Una innovación operativa destacable es el fichero `gector-guards.json`: reglas del lado de la aplicación que retienen ediciones que el modelo falla de forma conocida (por ejemplo, un cambio de número en un sustantivo justo después de un numeral). Estas guardas forman parte del resultado medido. El runtime también usa `language-rules.json` (puntuación final de frase) y `verb-form-vocab.txt` (tabla de formas verbales para las etiquetas `$TRANSFORM_VERB_*`).
+El entrenamiento consistió en una época (125 863 pasos, batch 64, learning rate pico 1,5e-5) sobre una NVIDIA L4; los pesos publicados son el paso final. La exportación a ONNX fp32 permite ejecución en CPU sin GPU.
 
 ## Capacidades
 
 - Corrección de concordancia sujeto-verbo (`The results shows` → `show`).
-- Corrección de tiempos y formas participiales (`have went` → `have gone`).
+- Corrección de tiempos y formas de participio (`have went` → `have gone`).
 - Uso correcto de `a`/`an`.
-- Corrección de plurales irregulares.
-- Resolución de confundibles (`their`/`there`/`they're`, `its`/`it's`, `then`/`than`).
-- Eliminación de palabras duplicadas.
-- Corrección de mayúsculas al inicio de frase.
-- Corrección de errores de registro cotidiano en preguntas, imperativos y primera y segunda persona (`Does the machines work` → `Do`, `Opens the window` → `Open`).
-- Etiquetado de secuencias (pipeline `token-classification`) con detección de errores por token.
-- Inferencia en CPU mediante ONNX Runtime, sin GPU ni conexión.
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo thinking.
+- Plurales irregulares (`The mouses ran away` → `mice`, `Two knifes` → `knives`).
+- Confundibles (`their`/`there`/`they're`, `your`/`you're`, `its`/`it's`, `then`/`than`, `to`/`too`).
+- Detección y eliminación de palabras duplicadas.
+- Capitalización al inicio de frase.
+- Errores de registro cotidiano en preguntas, imperativos y primera y segunda persona (`Does the machines work` → `Do`, `Opens the window` → `Open`).
+- Detección de un único error en frases largas con una tasa similar a frases cortas.
+- Salida estructurada con sugerencias: posición de carácter (`start`, `length`), texto original (`original`) y reemplazo (`replacement`), apta para subrayar y ofrecer la corrección en una interfaz.
+- Compatibilidad con ortografía americana y británica: deja la ortografía al corrector ortográfico (`colour`/`color`, `organise`/`organize`, `theatre`/`theater`) y, con las guardas, mantiene verbo plural con sustantivo colectivo según permite el inglés británico (`The team are playing`).
+- No soporta tool calling, function calling, agentes, visión, audio ni modo de razonamiento; es un corrector gramatical de edición local.
+- Capacidad multilingüe: no disponible (solo inglés).
 
 ## Casos de uso
 
-- Asistente de escritura de escritorio: integrado en un editor de texto para Windows mediante ONNX Runtime y un tokenizador propio, corrige la gramática localmente sin enviar el texto a un servidor, lo que encaja con requisitos de privacidad.
-- Revisión de documentación técnica en inglés: aplica correcciones conservadoras a manuales y README, dejando intactas las frases correctas (en la medición, 154 de 154 frases correctas sin cambios) para no introducir ruido en textos ya cuidados.
-- Preprocesado de corpus para NLP: normaliza errores de concordancia, tiempos verbales y confundibles antes de alimentar pipelines de búsqueda, clasificación o traducción, con bajo riesgo de falsos positivos (0,05 % en 4 000 frases de Tatoeba).
-- Filtrado de calidad en plataformas de contenido: detecta y corrige errores frecuentes en comentarios y publicaciones de usuario en inglés, con la ventaja de que el modelo solo propone ediciones locales y nunca reescribe el mensaje original.
-- Corrección en herramientas educativas: señala errores gramaticales típicos de aprendices (concordancia, participios, confundibles) en ejercicios de inglés, con la advertencia de que no se entrenó con corpus de aprendices y puede no cubrir errores poco frecuentes.
-- Integración en editores y correctores de código abierto: los ficheros son estándar (ONNX, tokenizador WordPiece, vocabulario de etiquetas en `config.json`), de modo que cualquier decodificador estilo GECToR puede consumirlos dentro de un plugin o un servicio ligero.
-- Verificación de textos generados: como paso de control de calidad sobre salidas de otros modelos, corrige errores de concordancia y confundibles sin alterar el contenido semántico.
+- Corrección gramatical en el navegador: el modelo se ejecuta vía ONNX Runtime en el equipo del usuario y el texto nunca abandona la página, lo que permite integrarlo en extensiones o editores web con privacidad total.
+- Asistente de escritura embebido: Proofbird lo usa como modelo gramatical on-device en su aplicación; las sugerencias con `start`/`length`/`original`/`replacement` permiten subrayar el error y ofrecer el arreglo en la interfaz.
+- Revisión de textos en inglés no nativos: corrige concordancia, tiempos verbales, confundibles y plurales irregulares en frases de registro cotidiano y académico, útil para revisar emails, informes o documentación antes de publicarlos.
+- Preprocesado de corpus: puede aplicarse a grandes volúmenes de texto en inglés en CPU para normalizar errores gramaticales antes de alimentar otros pipelines de NLP, sin coste de GPU.
+- Herramienta de línea de comandos y CI: `quickstart.py` permite ejecutar la corrección desde terminal o dentro de un pipeline de CI/CD para validar la gramática de textos generados o de documentación.
+- Corrección en entornos sin GPU o sin conectividad: al ser ONNX fp32 sobre CPU, es desplegable en portátiles, servidores modestos o dispositivos edge donde no hay acelerador disponible.
+- Filtrado de calidad en generación de texto: la cabeza de detección de errores permite marcar frases candidatas generadas por otros modelos y descartar o marcar las que contienen errores gramaticales.
+- Investigación y auditoría: al publicarse los pesos y el código de inferencia, permite inspeccionar exactamente qué correcciones se aplican en la máquina del usuario, algo relevante para equipos que exigen transparencia sobre el software que procesa sus textos.
 
 ## Benchmarks y rendimiento
 
-| Comprobación | Resultado |
-|---|---|
-| Conjunto de oro (420 frases escritas a mano: 266 con un error cada una, 154 correctas) | 258 corregidas, 154 intactas, 8 no detectadas, 0 empeoradas |
-| Falsas alarmas en 4 000 frases cotidianas de Tatoeba (reservadas del entrenamiento) | 2 modificadas (0,05 %) |
-| Falsas alarmas en 2 000 frases de Wikipedia no editadas por humanos | 3 modificadas (0,15 %) |
-| Estabilidad: repetición del conjunto de oro anteponiendo un token a cada frase | 8 de 206 frases cambian de resultado (las 4 filas de mayúsculas cambian por construcción y no se cuentan) |
-
-La puntuación del conjunto de oro se obtuvo con las guardas del lado de la aplicación de `gector-guards.json`. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, CoNLL-2014, BEA-2019) en la información disponible.
+La model card menciona una tabla de medición con un "Gold set (420 hand-written sentences: 2..." pero el contenido citado está truncado y no incluye los resultados numéricos. No se han publicado resultados de benchmarks completos (MMLU, HumanEval, GSM8K, etc.) en la información disponible, y este modelo no es evaluable con esos benchmarks al no ser un modelo generativo general.
 
 ## Requisitos de hardware
 
-- VRAM: no aplica; el modelo se ejecuta en CPU. El repositorio ocupa 0,4 GB en fp32.
-- GPU recomendadas: ninguna necesaria. El entrenamiento se realizó en una NVIDIA L4, pero la inferencia está pensada para CPU.
-- Cabe en cualquier equipo de consumo: el tamaño del encoder BERT base (110 M de parámetros) y el formato ONNX fp32 permiten ejecutarlo en portátiles y equipos de escritorio sin GPU dedicada.
-- Opciones de despliegue: ONNX Runtime (el runtime de referencia de Proofbird, con tokenizador y decodificador propios en C#); cualquier decodificador estilo GECToR que consuma los ficheros estándar del repositorio. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no aplica en la variante publicada; el modelo está exportado a ONNX fp32 y está pensado para ejecución en CPU.
+- GPU recomendadas: innecesarias para la inferencia publicada; el entrenamiento se realizó en una NVIDIA L4.
+- ¿Cabe en GPU consumer? Sí, cualquier GPU consumer con memoria suficiente podría cargar un modelo de ~110 M de parámetros en fp32 (menos de 1 GB de pesos), aunque la distribución publicada está optimizada para CPU.
+- Opciones de despliegue: ONNX Runtime (vía `quickstart.py`), Hugging Face Spaces (demo en navegador), línea de comandos con `python quickstart.py`. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que no aplican a este tipo de modelo de token classification.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| proofbird/gector-bert-en | no disponible (base BERT 110 M) | no disponible | GECToR sobre BERT base, ONNX fp32, on-device | Apache-2.0 | Hugging Face |
-| GECToR original (Omelianchuk et al., 2020) | no disponible | no disponible | GECToR sobre BERT/RoBERTa, esquema de etiquetado de origen | Apache-2.0 | Repositorio del proyecto GECToR |
-| google-bert/bert-base-cased | 110 M | 512 tokens | Encoder BERT base sin cabeza de corrección | Apache-2.0 | Hugging Face |
+| proofbird/gector-bert-en | ~110 M (base BERT) | no disponible (ventana BERT, 512 tokens) | Corrección gramatical GECToR, ONNX CPU | Apache-2.0 | Hugging Face, on-device |
+| google-bert/bert-base-cased | ~110 M | 512 tokens | Encoder general (modelo base) | Apache-2.0 | Hugging Face |
+| GECToR original (grammatical error correction) | no disponible | no disponible | Corrección gramatical por etiquetado de ediciones | no disponible | Repositorio académico |
+| Modelos GEC generativos (seq2seq) | no disponible | no disponible | Reescriben la frase completa | varía | varía |
 
-No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada.
+La comparativa directa con alternativas GEC queda limitada porque la información proporcionada no incluye resultados de benchmarks ni otros modelos GEC con datos verificables. El modelo base `google-bert/bert-base-cased` es el componente sobre el que se construye, no un competidor directo en la tarea.
 
 ## Limitaciones y advertencias
 
-- Solo inglés: no cubre otros idiomas.
-- Entrenado exclusivamente con datos sintéticos: no se usaron corpus de aprendices, por lo que puede no cubrir errores típicos de estudiantes ni errores poco frecuentes.
-- El conocimiento léxico es su punto más débil: un sustantivo compuesto o de masa no visto (`dog food`, `consumer market`) puede provocar un cambio de número incorrecto; las guardas lo retienen cuando la forma es conocida.
-- Está optimizado para precisión, no para exhaustividad: edita poco, y que deje un texto intacto no significa que sea correcto.
-- Riesgo de falsos positivos bajo pero no nulo: 0,05 % en Tatoeba y 0,15 % en Wikipedia en las mediciones del autor.
-- Sensibilidad a la posición: anteponer un token a la frase cambió el resultado en 8 de 206 frases del conjunto de oro.
-- No parafrasea ni reescribe: solo aplica ediciones locales, por lo que no corrige problemas de estructura, estilo o coherencia global.
-- Licencia Apache-2.0 para pesos y ficheros, pero los datos de entrenamiento tienen sus propios términos: Wikipedia es CC BY-SA 4.0 y Tatoeba es CC BY 2.0 FR; conviene revisar la atribución si se redistribuye el modelo.
-- Publicado como trabajo personal de Patrick Hartnett; sin descargas ni likes en el momento de la consulta, por lo que no hay validación independiente de la comunidad.
-- No se documentan límites de longitud de contexto explícitos; el modelo base BERT admite 512 tokens.
+- Solo inglés: no soporta otros idiomas.
+- Solo propone ediciones locales: nunca parafrasea, reordena ni inserta palabras (las reglas de corrupción no eliminaban palabras, por lo que no aprendió a insertarlas).
+- Entrenamiento exclusivamente sintético: puede no generalizar a errores de aprendices reales o a fenómenos ausentes de las reglas de corrupción.
+- Dependencia del corrector ortográfico: no corrige ortografía (`colour`/`color` se dejan intactos), por lo que necesita un componente adicional para esa capa.
+- Riesgo de falsos positivos en textos correctos: aunque ~10 % de frases limpias enseñan a no tocar texto, las guardas y reglas pueden alterar construcciones válidas en registros específicos.
+- Longitud de contexto no documentada; al derivar de BERT-base, está limitada a 512 tokens, lo que restringe su uso en documentos largos sin segmentación.
+- Licencia Apache-2.0: permite uso comercial, pero conviene revisar las condiciones de los datos de entrenamiento subyacentes (Wikipedia, Europarl, Tatoeba) para usos específicos.
+- No es un modelo generativo ni un agente: no soporta tool calling, razonamiento multi-paso ni multimodalidad.
+- La model card advierte que la tabla de medición está truncada en la información disponible; no deben asumirse métricas de precisión o recall sin consultar la fuente original.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/proofbird/gector-bert-en
+- Demo en navegador (Hugging Face Space): https://huggingface.co/spaces/proofbird/try-grammar
+- Quickstart en Colab: https://colab.research.google.com/#fileId=https%3A//huggingface.co/proofbird/gector-bert-en/blob/main/quickstart.ipynb
+- Tag de versión: https://huggingface.co/proofbird/gector-bert-en/tree/v1.2.1
 - Modelo base: https://huggingface.co/google-bert/bert-base-cased
-- Dataset de entrenamiento: https://huggingface.co/datasets/wikimedia/wikipedia
+- Dataset Wikipedia: https://huggingface.co/datasets/wikimedia/wikipedia
 - Tatoeba: https://tatoeba.org
-- Proofbird: https://proofbird.app
-- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
-- Licencia CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/
-- Licencia CC BY 2.0 FR: https://creativecommons.org/licenses/by/2.0/fr/
-- Artículo sobre BERT en Wikipedia: https://en.wikipedia.org/wiki/BERT_(language_model)
+- Aplicación Proofbird: https://proofbird.app

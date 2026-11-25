@@ -1,0 +1,80 @@
+{
+  "schema": 2,
+  "id": "xiaomi-research/Xiaomi-Lens-0",
+  "slug": "xiaomi-research-xiaomi-lens-0",
+  "author": "xiaomi-research",
+  "url": "https://huggingface.co/xiaomi-research/Xiaomi-Lens-0",
+  "created_at": "2026-10-19T03:09:27.000Z",
+  "updated_at": "2026-11-25T04:10:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "xiaomi-lens",
+    "multimodal",
+    "visual-grounding",
+    "image-segmentation",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2610.23279",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 33,
+  "downloads_30d": 941,
+  "trending_score": 0,
+  "parameters": 4622144192,
+  "parameters_human": "4.62B",
+  "storage_bytes": 9364036633,
+  "storage_human": "9.4 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mi, Xiaomi, Xiaomi France | Mi.com",
+      "url": "https://www.mi.com/fr/",
+      "snippet": "Boutique officielle en ligne Xiaomi France. Achetez des produits Xiaomi, mobiles, tablettes et appareils intelligents à des prix …Read more"
+    },
+    {
+      "title": "Boutique Officielle Xiaomi France | Réductions | Garantie",
+      "url": "https://www.mi.com/fr/store",
+      "snippet": "Venez sur Xiaomi France Store pour trouver des promotions sur les téléphones portables, les téléviseurs, les bracelets intelligents, etc."
+    },
+    {
+      "title": "Xiaomi",
+      "url": "https://offre-xiaomi.com/platform/rn17/fr-FR",
+      "snippet": "Effectuez votre achat Achetez un smartphone Xiaomi éligible dans un magasin participant entre le 17 septembre 2026 et le 3 janvier …Read more"
+    },
+    {
+      "title": "Home - Xiaomi Base - Ordinateurs",
+      "url": "https://www.xiaomibase.fr/",
+      "snippet": "La seule boutique officielle Xiaomi vendant les prestigieux ordinateurs portables Xiaomi en France, en français, avec garantie et …Read more"
+    },
+    {
+      "title": "Forum Xiaomi France, Poco, actualités et conseils",
+      "url": "https://forum-xiaomi.com/",
+      "snippet": "Forum Xiaomi francophone dédié à l’entraide, aux mises à jour HyperOS, aux smartphones Xiaomi, Redmi et POCO, ainsi qu’aux …Read more"
+    }
+  ]
+}

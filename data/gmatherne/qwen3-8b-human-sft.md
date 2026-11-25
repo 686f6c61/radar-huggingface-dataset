@@ -2,96 +2,100 @@
 
 ## Resumen
 
-Qwen3-8b-human-sft es un ajuste fino mediante QLoRA del modelo Qwen3-8B (en su variante no-thinking), desarrollado por el usuario GMatherne como artefacto educativo y de investigación. Su objetivo no es mejorar la capacidad bruta del modelo base, sino modificar su "voz": producir respuestas de tutoría educativa que suenen a prosa humana natural, evitando el registro característico de los asistentes de IA (relleno, hedging, listas de andamiaje y ritmo uniforme). El modelo se entrenó para responder como lo haría una persona experta en un foro, en primera persona y sin citar fuentes.
+Qwen3-8B Human-Sounding Educational Tutor es un ajuste fino por QLoRA del modelo Qwen3-8B de Alibaba, desarrollado por el usuario GMatherne como artefacto educativo e investigador. El objetivo del modelo no es mejorar la capacidad bruta del modelo base, sino modificar su "voz": producir respuestas de tutoría educativa en prosa natural, conversacional y en primera persona, sin el andamiaje típico de la escritura generada por IA (listas, hedges, cierres del tipo "espero que te ayude"). Según el autor, un detector de texto IA (Pangram) clasifica sus respuestas como humanas en torno al 10 % de los casos, frente al ~100 % del modelo base.
 
-El modelo parte de `unsloth/Qwen3-8B`, una arquitectura transformer densa de 8.190.735.360 parámetros (8,19 mil millones). El ajuste se realizó con QLoRA de 4 bits sobre las siete proyecciones de atención y MLP, con rango `r=32` y `alpha=32`. El corpus de entrenamiento son aproximadamente 1.800 respuestas humanas curadas procedentes de StackExchange y Reddit (ELI5, AskScience, AskHistorians y sitios temáticos), filtradas para eliminar andamiaje de foro, citas fabricadas, enlaces, markdown y texto no inglés.
+El modelo parte de `unsloth/Qwen3-8B`, una variante del Qwen3-8B (8.190.735.360 parámetros, arquitectura transformer densa) en modo no-thinking. El ajuste se realizó con QLoRA de 4 bits mediante Unsloth, con r=32, alpha=32, sobre todas las proyecciones de atención y MLP, durante 2 épocas y con un learning rate de 2e-4. Existen dos variantes: SFT (la publicada) y una pasada adicional de DPO.
 
-Es relevante ahora porque documenta de forma explícita y honesta un compromiso técnico poco habitual en las fichas de modelos: la ganancia en "humanidad" del texto se paga con una pérdida medible de precisión fáctica y un aumento de fabricaciones. El propio autor lo presenta como una demostración de "comportamiento a partir de datos", no como un tutor listo para producción. Existen dos variantes, SFT y DPO, siendo la SFT la que obtiene mejores resultados en la evaluación publicada.
+Su relevancia es doble: por un lado, demuestra control de comportamiento ("behavior from data") mediante un dataset curado de ~1.800 respuestas humanas de StackExchange y Reddit; por otro, documenta de forma honesta el coste de ese control: la precisión factual cae respecto al base y la tasa de fabricaciones aumenta. Es, por tanto, un modelo de investigación sobre estilo, no un tutor de producción ni una fuente de autoridad factual.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (base Qwen3-8B, modo no-thinking) |
-| Parametros totales | 8.190.735.360 (8,19 B) |
+| Arquitectura | Transformer denso (Qwen3), ajuste fino QLoRA de 4 bits sobre `unsloth/Qwen3-8B` |
+| Parametros totales | 8.190.735.360 |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible en la informacion proporcionada (heredada del base Qwen3-8B) |
-| Tipos de cuantizacion | QLoRA 4-bit para entrenamiento; GGUF Q8_0 mencionado para Ollama; otras no disponibles |
-| Idiomas soportados | Ingles (en) |
+| Tipos de cuantizacion | QLoRA 4 bits en entrenamiento; se menciona GGUF Q8_0 para Ollama; safetensors en el repo |
+| Idiomas soportados | Ingles (`en`) |
 | Licencia | Apache-2.0 (heredada del modelo base) |
-| Formato de pesos | safetensors (repo de 16,4 GB); GGUF para despliegue en Ollama |
+| Formato de pesos | safetensors; se distribuye tambien una variante GGUF (Q8_0) para Ollama |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del transformer denso Qwen3-8B, ejecutado en modo no-thinking (`enable_thinking=False`). El entrenamiento emplea QLoRA de 4 bits mediante la librería Unsloth, con configuración LoRA de `r=32`, `alpha=32`, dropout 0 y adaptadores aplicados a las siete proyecciones de atención y MLP. Se realizaron 2 épocas con tasa de aprendizaje `2e-4`, plantilla ChatML y `train_on_responses_only` (la pérdida se calcula únicamente sobre las respuestas del asistente). Existen dos variantes: una SFT (el ajuste supervisado) y una DPO (una pasada de ajuste por preferencias sobre la anterior).
+El modelo es un transformer denso de 8.190 millones de parámetros basado en Qwen3-8B, ejecutado en modo no-thinking (`enable_thinking=False`). Sobre esa base se aplicó un ajuste QLoRA cuantizado a 4 bits con Unsloth: LoRA con r=32, alpha=32, dropout 0, aplicado a las 7 proyecciones de atención y MLP, durante 2 épocas, con learning rate 2e-4, plantilla ChatML y `train_on_responses_only` (la pérdida se calcula solo sobre las respuestas).
 
-El dato diferenciador es el corpus: unas 1.800 respuestas humanas de StackExchange y Reddit, limpiadas exhaustivamente para eliminar andamiaje de foro, citas fabricadas, enlaces, markdown y texto no inglés. El autor señala que el conjunto de datos es el verdadero producto y que el entrenamiento es una operación posterior casi mecánica. No se documentan innovaciones arquitectónicas propias (decodificación especulativa, atención lineal ni similares); la contribución es exclusivamente de datos y comportamiento.
+El dato clave es el dataset: aproximadamente 1.800 respuestas humanas curadas y limpiadas de StackExchange y Reddit (subforos ELI5, AskScience, AskHistorians y sitios temáticos de StackExchange). El filtrado elimina andamiaje de foro, citas fabricadas, enlaces, Markdown y texto no inglés. El autor señala explícitamente que el dataset es el verdadero entregable y que el entrenamiento es un paso posterior trivial. Existe además una variante DPO (ajuste de preferencias sobre el SFT) que, según la evaluación del autor, empeora los resultados frente al SFT.
 
 ## Capacidades
 
-- Generación de texto conversacional en registro de foro: respuestas en primera persona, directas, sin relleno ni despedidas.
+- Generación de texto conversacional en inglés con registro de foro: primera persona, directo, sin listas ni cierres formulaicos.
 - Tutoría educativa: explicación de conceptos, ayuda con redacción y corrección de errores en prosa natural.
-- Producción de texto que un detector de IA (Pangram) puede clasificar como escrito por humanos, según el objetivo declarado del ajuste.
-- Respuesta como asistente de IA: el modelo no afirma ser una persona ni un producto.
-- Capacidad multilingüe: limitada al inglés según la model card y los tags.
-- Tool calling / function calling: no documentado en la información disponible.
-- Soporte de agentes y razonamiento multi-paso: no documentado; de hecho, el autor advierte un deterioro del seguimiento de instrucciones en tareas concisas o con formato restringido.
-- Modo thinking: desactivado explícitamente en el entrenamiento.
+- Estilo "humano": optimizado para que un detector de texto IA (Pangram) lo clasifique como escrito por una persona (~10 % de detección, frente a ~100 % del base).
+- Respuesta como asistente IA: mantiene la declaración de ser una IA y no afirma ser una persona.
+- Sin citas ni fuentes: el prompt de sistema prohíbe citar estudios, papers, autores, DOIs o enlaces, y explica las cosas con palabras propias.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible; el modelo se entrena en modo no-thinking y el autor advierte degradación en tareas con formato restringido.
+- Capacidades multilingües: solo inglés.
+- Capacidades especiales: ninguna adicional (sin visión, audio ni modo thinking).
 
 ## Casos de uso
 
-- Investigación sobre control de comportamiento mediante datos: el modelo sirve como caso de estudio reproducible de cómo un corpus pequeño y curado (~1.800 ejemplos) modifica el registro estilístico de un modelo de 8 B, con métricas de coste asociadas.
-- Generación de prosa educativa donde la precisión fáctica no es crítica: materiales de divulgación, borradores de explicaciones o ejemplos de estilo que se revisarán posteriormente por una persona.
-- Evaluación de detectores de texto IA: banco de pruebas para medir la sensibilidad de herramientas como Pangram frente a ajustes finos orientados a "humanizar" la salida.
-- Docencia sobre ajuste fino eficiente: ejemplo práctico de QLoRA con Unsloth, configuración de LoRA y limpieza de datasets de foros para cursos de aprendizaje automático.
-- Despliegue local ligero: con cuantización GGUF Q8_0 y Ollama, cabe en equipos de consumo para experimentación sin conexión, dado su tamaño de 8 B.
-- Estudio de alineación y calibración: la comparación SFT frente a DPO del propio autor ilustra cómo una pasada de preferencias puede degradar aún más la precisión (3,25 a 2,88 sobre 5) y la retención de información (64% a 56%).
+- Investigación sobre control de comportamiento mediante datos: usar el modelo y su dataset como caso de estudio de cómo un dataset pequeño y curado (~1.800 ejemplos) modifica la "voz" de un modelo de 8B sin reentrenarlo desde cero.
+- Generación de prosa educativa de estilo humano: producir textos divulgativos o respuestas de foro donde la naturalidad del registro importa más que la precisión factual exacta, por ejemplo borradores de artículos de divulgación.
+- Evaluación de detectores de texto IA: emplear el modelo como contraste (humano vs. IA) para calibrar o probar herramientas de detección como Pangram, dado que el autor reporta ~10 % de detección frente al ~100 % del base.
+- Docencia sobre ajuste fino eficiente: servir de ejemplo reproducible de QLoRA con Unsloth (r=32, alpha=32, 4 bits, 2 épocas) en cursos de IA, incluyendo la comparación SFT frente a DPO.
+- Generación de respuestas de estilo foro para prototipos: alimentar demos de comunidades o foros de preguntas y respuestas donde el tono conversacional es el requisito principal y no se exige verificación factual.
+- Estudio de compromisos precisión-estilo: analizar cuantitativamente la caída de precisión (de 4,56 a 3,25 sobre 5) y el aumento de fabricaciones (de 1 a 12) al optimizar por estilo, como material de investigación sobre alineación.
 
 ## Benchmarks y rendimiento
 
-Evaluación con LLM-as-judge (GPT-5) sobre 16 prompts educativos reservados, base frente a ajustado:
+Evaluación del autor con LLM-as-judge (GPT-5) sobre 16 prompts educativos reservados, comparando el base con las variantes SFT y DPO:
 
-| Modelo | Precision /5 | Retencion de informacion | Respuestas con >=1 error | Fabricaciones confiadas |
+| Modelo | Precision /5 | Retencion de informacion | Respuestas con >=1 error | Fabricaciones con confianza |
 |---|---|---|---|---|
-| Qwen3-8B base (sin ajustar) | 4,56 | 65% | 3/16 | 1 |
-| Este modelo - SFT | 3,25 | 64% | 11/16 | 12 |
-| Este modelo - DPO | 2,88 | 56% | 15/16 | 11 |
+| Qwen3-8B base (sin ajustar) | 4,56 | 65 % | 3/16 | 1 |
+| Este modelo — SFT | 3,25 | 64 % | 11/16 | 12 |
+| Este modelo — DPO | 2,88 | 56 % | 15/16 | 11 |
 
-La métrica de "humanidad" con el detector Pangram aparece sin puntuar en la model card (marcador pendiente de rellenar). El autor indica que el modelo base se lee como ~100% IA. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+| Metrica adicional | Valor |
+|---|---|
+| Humanidad (detector Pangram) | ~10 % de deteccion como IA (el base, ~100 %) |
+
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; para un transformer denso de 8,19 B, la huella típica ronda los 16 GB en FP16 y aproximadamente 8-9 GB en cuantización de 8 bits (Q8_0), aunque estas cifras son estimaciones de categoría y no datos publicados por el autor.
-- GPU recomendadas: no especificadas en la información disponible. Por tamaño, el modelo es apto para GPUs de consumo de gama alta (por ejemplo, RTX 4090 con 24 GB) en FP16, y para GPUs profesionales (A100, H100) en escenarios de mayor throughput.
-- Cabe en GPU de consumo: sí, especialmente con cuantización GGUF Q8_0; el formato GGUF está documentado para Ollama.
-- Opciones de despliegue: Ollama (con GGUF Q8_0, mediante Modelfile) y Transformers (pesos fusionados con plantilla ChatML). vLLM, TGI y llama.cpp no se mencionan en la información proporcionada.
+- VRAM estimada para inferencia: no disponible de forma explícita; para un modelo denso de 8,19B, en FP16 serían necesarios aproximadamente 16,4 GB de pesos (tamaño del repo), y en cuantización de 4 bits en torno a 5-6 GB, aunque estas cifras son estimaciones por tamaño y no datos publicados por el autor.
+- GPU recomendadas: no especificadas en la información proporcionada; por tamaño, cabría en GPU de consumo con suficiente VRAM (por ejemplo, RTX 4090 de 24 GB en FP16 o GPUs de 8-12 GB en cuantización de 4 bits), si bien no hay confirmación del autor.
+- Cabe en GPU de consumo: probablemente sí en cuantización (GGUF Q8_0 o 4 bits), sin dato oficial.
+- Opciones de despliegue: Ollama con GGUF (el autor incluye instrucciones con `ollama create` y un Modelfile sobre `qwen3-human*.Q8_0.gguf`) y Transformers cargando los pesos fusionados con la plantilla ChatML.
+- Parámetros de muestreo recomendados por el autor: `temperature=0.7`, `top_p=0.8`, `top_k=20`, `repetition_penalty=1.15`.
 - Latencia y throughput: no disponibles.
-- Parámetros de muestreo recomendados: `temperature=0.7`, `top_p=0.8`, `top_k=20`, `repetition_penalty=1.15`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Precision evaluada | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Precision (evaluacion del autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8b-human-sft (SFT) | 8,19 B | No disponible | 3,25/5 (16 prompts, juez GPT-5) | Apache-2.0 | Hugging Face (9 descargas) |
-| Qwen3-8B base (unsloth) | ~8 B | No disponible | 4,56/5 (misma eval) | Apache-2.0 | Hugging Face |
-| Variante DPO del mismo ajuste | 8,19 B | No disponible | 2,88/5 (misma eval) | Apache-2.0 | Hugging Face |
+| Este modelo (SFT) | 8,19B | No disponible | 3,25/5; 12 fabricaciones | Apache-2.0 | Hugging Face, GGUF/Ollama |
+| Qwen3-8B base (`unsloth/Qwen3-8B`) | 8,19B | No disponible | 4,56/5; 1 fabricacion | Apache-2.0 | Hugging Face |
+| Este modelo (DPO) | 8,19B | No disponible | 2,88/5; 11 fabricaciones | Apache-2.0 | Hugging Face (variante del autor) |
 
-No se dispone de datos de benchmarks estándar ni de comparaciones con otros modelos de la misma categoría (por ejemplo, otros ajustes de Qwen3-8B orientados a estilo) en la información proporcionada.
+No se dispone de datos de benchmarks estandar ni de comparaciones con otros ajustes finos de estilo en la información proporcionada, por lo que la comparativa se limita al modelo base y a la variante DPO del propio autor.
 
 ## Limitaciones y advertencias
 
-- Precisión fáctica degradada: la evaluación del autor muestra 11 de 16 respuestas con al menos un error frente a 3 de 16 del base, y 12 fabricaciones confiadas frente a 1.
-- La variante DPO es peor que la SFT en todas las métricas publicadas (precisión 2,88, retención 56%, 15/16 con errores).
-- No debe usarse como fuente de autoridad factual, matemáticas, código ni salidas con formato restringido (JSON, "responde en una palabra"); tiende a sobreexplicar y a ignorar restricciones de formato.
-- Riesgo de alucinación elevado: el registro de foro favorece afirmaciones seguras pero incorrectas.
-- El modelo puede seguir leyéndose como IA en algunos prompts; la métrica de humanidad con Pangram no está puntuada.
-- Idiomas: solo inglés; no se documenta soporte multilingüe.
-- Sesgos: no documentados explícitamente, pero el corpus procede de foros (StackExchange, Reddit) con los sesgos demográficos y temáticos inherentes a esas comunidades.
-- Licencia Apache-2.0 permite uso comercial, pero el autor desaconseja explícitamente el uso en producción como tutor o fuente de hechos.
-- Artefacto educativo: 9 descargas y 0 likes en el momento de la consulta; sin mantenimiento ni garantías documentadas.
+- Precisión factual reducida: cae de 4,56 a 3,25 sobre 5 respecto al base, con 11 de 16 respuestas conteniendo al menos un error.
+- Fabricaciones: 12 respuestas con afirmaciones falsas pero seguras, frente a 1 en el base; efecto secundario del registro de foro.
+- No apto como fuente de autoridad factual, matemáticas, código ni salidas con formato restringido (JSON, "responde en una palabra"); tiende a sobre-explicar.
+- Solo inglés: no soporta otros idiomas.
+- Detección de IA imperfecta: puede seguir leyéndose como IA en algunos prompts.
+- Licencia Apache-2.0 permite uso comercial, pero el propio autor desaconseja el uso en producción como tutor.
+- Sesgos: no documentados explícitamente en la información disponible; al entrenarse con respuestas de StackExchange y Reddit, puede heredar sesgos de esas comunidades.
+- Longitud de contexto: no confirmada en la información proporcionada.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/GMatherne/qwen3-8b-human-sft
+- Modelo en Hugging Face: https://huggingface.co/GMatherne/qwen3-8b-human-sft
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B
-- Unsloth (repositorio): https://github.com/unslothai/unsloth
+- Unsloth (framework de entrenamiento): https://github.com/unslothai/unsloth

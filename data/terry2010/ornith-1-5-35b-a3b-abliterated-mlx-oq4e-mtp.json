@@ -54,16 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ornith-ai/Ornith-1.5-35B-A3B-MLX-6bit · Hugging Face",
-      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX-6bit",
-      "snippet": "Ornith-1.5-35B-A3B is a ~35B mixture-of-experts model with ~3B activated parameters per token (≈70 GB in bf16). The recipes below stand up an OpenAI-compatible server on 2× 80GB GPUs to leave headroom for the 256K context; adjust --tensor-parallel-size / --tp to match your hardware."
-    },
-    {
-      "title": "ornith-ai/Ornith-1.5-35B-A3B · Hugging Face",
-      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    }
-  ]
+  "sources": []
 }

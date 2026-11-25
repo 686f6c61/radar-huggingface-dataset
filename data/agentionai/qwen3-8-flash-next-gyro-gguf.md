@@ -2,102 +2,93 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-Gyro es una cuantización GGUF del modelo Qwen3.8-Flash-Next (125.743.653.760 parámetros totales, arquitectura MoE) publicada por agentionai. El objetivo declarado por el autor es hacer correr un modelo de 125B en una única GPU de consumo: la variante Gyro-S ocupa 27,64 GiB de VRAM (pensada para tarjetas de 32 GB como la RTX 5090 o la R9700), la Gyro-M 34,98 GiB (48 GB o 64 GB de memoria unificada) y la Gyro-L 50,21 GiB (64 GB de memoria unificada tipo Strix Halo). El modelo es multimodal image-text-to-text, con hasta 128k de contexto según la model card.
+Qwen3.8-Flash-Next Gyro es una familia de cuantizaciones GGUF del modelo Qwen3.8-Flash-Next (125.743.653.760 parámetros totales, arquitectura MoE) publicada por agentionai. El objetivo declarado es permitir ejecutar un modelo de 125B en una única GPU de consumo: la variante Gyro-S ocupa 27,64 GiB de VRAM y está pensada para tarjetas de 32 GB como la RTX 5090 o la R9700, mientras que Gyro-M (34,98 GiB) apunta a 48 GB y Gyro-L (50,21 GiB) a equipos con 64 GB de memoria unificada como Strix Halo.
 
-La relevancia de esta publicación está en el formato propietario de cuantización: los expertos enrutados se almacenan en una base rotada mediante el códec APR (Agention Precision Rotor) y tipos trellis (TQK6/TQK7, TQ2_T, TQP5-7). Los nombres TQ1_0, TQ2_0 y TQ3_0 son solo clases de tamaño para el Hub y no corresponden a los tipos GGUF estándar. Como consecuencia, llama.cpp upstream no puede cargar estos ficheros todavía: requieren Strata 0.2.0 o superior, el fork halo-box/strix-llama.cpp o el fork agentionai/llama.cpp.
+La innovación principal es el uso de un esquema propio de cuantización denominado Agention Precision Rotor (APR), que almacena los expertos enrutados en una base rotada con códecs trellis (TQK6/TQK7, TQ2_T, TQP5-7); los nombres TQ1_0/TQ2_0/TQ3_0 son solo clases de tamaño para el Hub. Además, el modelo incorpora decodificación especulativa mediante un draft MTP separado y una tabla n-gram que permanece en disco, lo que reduce la huella de VRAM.
 
-El repositorio acumula 2.249.697 descargas y 254 likes, con un tamaño total de 706,7 GB (incluye múltiples variantes, el draft MTP, el proyector de visión mmproj y las versiones `-noPLE` sin tabla n-gram). La licencia es `qwen-community-1.0` (etiquetada como `other` en el Hub), lo que condiciona el uso comercial.
+El modelo es relevante porque demuestra que un MoE de 125B puede desplegarse en hardware de consumo con pérdida de calidad medida (KLD 0,331 en Gyro-S v2 frente a 0,401 en v1) y velocidades de hasta 221 tok/s en salida JSON sobre una RTX 5090 con Strata. Sin embargo, requiere runtimes modificados: llama.cpp upstream todavía no carga estos ficheros.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (Mixture of Experts) transformer; cuantización GGUF con códec APR y tipos trellis propietarios |
-| Parámetros totales | 125.743.653.760 |
-| Parámetros activos | no disponible |
-| Longitud de contexto | hasta 128k (según la model card; el ejemplo de arranque usa `-c 65536`) |
-| Tipos de cuantización | TQ1_0 (Gyro-S, 27,64 GiB), TQ2_0 (Gyro-M, 34,98 GiB), TQ3_0 (Gyro-L, 50,21 GiB); expertos en TQK6/TQK7, TQ2_T y TQP5-7; variantes `-noPLE`; Gyro-Coder en 19,92 GiB |
+| Arquitectura | MoE (Mixture of Experts) sobre transformer; modelo base Qwen/Qwen3.8-Flash-Next |
+| Parametros totales | 125.743.653.760 |
+| Parametros activos | no disponible |
+| Longitud de contexto | hasta 128k (declarado en la model card; ejemplo de arranque con -c 65536) |
+| Tipos de cuantizacion | APR con trellis TQK6/TQK7, TQ2_T, TQP5-7; clases de tamano TQ1_0 (Gyro-S), TQ2_0 (Gyro-M), TQ3_0 (Gyro-L); variantes -noPLE sin tabla n-gram |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (`license: other` en el Hub) |
-| Formato de pesos | GGUF (con codec APR propietario); incluye `mtp-Qwen3.8-Flash-Next-draft.gguf` y `mmproj-F16.gguf` |
+| Licencia | qwen-community-1.0 (license: other) |
+| Formato de pesos | GGUF (safetensors para el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Qwen/Qwen3.8-Flash-Next, un transformer con mezcla de expertos de 125.743.653.760 parámetros totales. Esta publicación no entrena el modelo: es una cuantización (`base_model_relation: quantized`) que reescribe los pesos para reducir el espacio ocupado. La innovación técnica propia es el códec APR: los expertos enrutados se guardan en una base rotada y se cuantizan con tipos trellis (TQK6/TQK7, TQ2_T, TQP5-7), lo que permite mantener los pesos en VRAM de 32 GB con una pérdida de calidad declarada baja. El autor reporta un KLD de 0,291 para Gyro-M frente a 0,311 de ISTA IQ3_XXS, con un 20 % menos de memoria de GPU.
+El modelo subyacente es Qwen3.8-Flash-Next, un transformer con mezcla de expertos (MoE) de 125.743.653.760 parámetros totales. La model card no detalla el número de parámetros activos por token, la composición del dataset de entrenamiento, el número de tokens vistos ni si hubo fases de RLHF o DPO; esos datos no están disponibles en la información proporcionada.
 
-La publicación incluye un draft MTP (`mtp-Qwen3.8-Flash-Next-draft.gguf`) para decodificación especulativa, soportada explícitamente por el fork agentionai/llama.cpp, y un proyector de visión `mmproj-F16.gguf` que habilita la entrada de imágenes. La tabla n-gram se mantiene en disco (`--ngram-on-disk`), de modo que no consume VRAM; las variantes `-noPLE` omiten esa tabla para reducir el tamaño de descarga. No se detallan en la información disponible los datos de entrenamiento del modelo base (número de tokens, composición del dataset, uso de RLHF/DPO).
+La aportación técnica del repositorio es la cuantización: los expertos enrutados se almacenan en una base rotada mediante el códec propietario APR, con tipos trellis en lugar de los tipos GGUF estándar. El paquete incluye tres artefactos adicionales: un draft MTP (`mtp-Qwen3.8-Flash-Next-draft.gguf`) para decodificación especulativa, un proyector de visión (`mmproj-F16.gguf`) que habilita la modalidad image-text-to-text, y una tabla n-gram que se mantiene en disco (`--ngram-on-disk`) para no consumir VRAM. La versión Gyro-S v2 (24-11-2026) reduce la divergencia respecto al original un 18% en texto held-out y un 27% en llamadas a herramientas, manteniendo paridad en coding agéntico.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, con hasta 128k de contexto según la model card.
-- Entrada de imágenes: pipeline `image-text-to-text`, con proyector de visión `mmproj-F16.gguf`.
-- Generación de código: el autor publica una variante específica (Gyro-Coder, 256 expertos de código por capa) y una versión afinada para coding agéntico (Signal 2).
-- Razonamiento agéntico y multi-step: Signal 2 se describe como Gyro-S con un tune de coding agéntico fusionado, con la misma tasa de acierto usando menos tokens.
-- Salida estructurada JSON: el benchmark de velocidad del autor mide 221 tok/s en salida JSON con Gyro-S sobre RTX 5090 con Strata.
-- Decodificación especulativa mediante draft MTP.
-- Tool calling / function calling: no se documenta explícitamente en la información disponible.
-- Capacidades multilingües: no disponibles.
-- Variante abliterated publicada por el mismo autor (Gyro-abliterated-Huihui).
+- Generación de texto conversacional multi-turno, con soporte de plantilla Jinja (`--jinja`).
+- Procesamiento de imagen y texto (pipeline image-text-to-text) mediante el proyector `mmproj-F16.gguf`.
+- Llamada a herramientas (tool calling / function calling), con una variante específicamente ajustada (Signal 2) que reduce un 27% los tokens de salida en tareas agénticas de coding.
+- Razonamiento agéntico multi-paso y coding agéntico, con un modelo derivado (Gyro-Coder) que incorpora 256 expertos de código por capa.
+- Decodificación especulativa mediante draft MTP para acelerar la inferencia.
+- Contexto largo de hasta 128k tokens, con ejemplo de servidor a 65.536 tokens.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente de código en estación de trabajo local: Gyro-Coder (19,92 GiB) cabe en una GPU de 24 GB y permite integrar un agente de coding en el editor sin enviar código a la nube, con contexto ampliable hasta 128k para repositorios medianos.
-- Automatización de tareas agénticas con salida JSON: la variante Signal 2 está afinada para coding agéntico y el autor mide 221 tok/s en JSON sobre RTX 5090, lo que la hace adecuada para pipelines que encadenan llamadas estructuradas.
-- Análisis de documentos con imágenes en local: el pipeline image-text-to-text con `mmproj-F16.gguf` permite procesar capturas, diagramas y páginas escaneadas junto con texto en un servidor `llama-server` propio.
-- Despliegue en hardware de 32 GB de consumo: Gyro-S ocupa 27,64 GiB y corre íntegramente en GPU en una RTX 5090 o R9700, habilitando inferencia de un modelo de 125B sin clúster.
-- Estaciones con memoria unificada (Strix Halo, 64 GB): Gyro-L a 50,21 GiB ofrece la mayor calidad de la familia en un equipo compacto, útil para prototipado de agentes y evaluación de prompts.
-- Servidor interno compatible con endpoints: el tag `endpoints_compatible` y el arranque con `--jinja` permiten exponer el modelo en `http://localhost:8080` y apuntar aplicaciones o agentes existentes contra esa API.
-- Investigación sobre cuantización extrema: el códec APR y los tipos trellis permiten estudiar la relación entre tamaño, KLD y comportamiento en bucles (el autor reporta cero bucles en 45 ejecuciones de estrés para Gyro-S y Gyro-M).
+- Asistente de coding agéntico en local: desplegando Gyro-S o Signal 2 en una RTX 5090 con Strata, el modelo puede ejecutar tareas de edición multi-archivo con tool calling; Signal 2 reduce un 27% los tokens de salida, acortando cada ejecución.
+- Automatización de atención al cliente con contexto largo: la ventana de hasta 128k tokens permite mantener historiales de conversación extensos y documentación de producto en el mismo contexto sin truncar.
+- Análisis de documentos con imágenes: gracias al proyector de visión, se pueden procesar capturas, diagramas o formularios escaneados junto con texto en un mismo flujo image-text-to-text.
+- Servidor de inferencia para equipos pequeños: Gyro-M (34,98 GiB) cabe en una GPU de 48 GB o en dos de 24 GB, ofreciendo un endpoint compatible con la API de OpenAI para integrarse en aplicaciones internas.
+- Despliegue en estaciones de trabajo con memoria unificada: Gyro-L (50,21 GiB) sobre Strix Halo con 64 GB permite ejecutar el modelo completo en CPU/GPU integrada mediante strix-llama.cpp, sin GPU dedicada.
+- Generación de JSON estructurado a alta velocidad: con 221 tok/s en salida JSON sobre RTX 5090, es adecuado para pipelines que necesitan respuestas estructuradas en tiempo casi real.
+- Investigación sobre cuantización extrema: el repositorio sirve como referencia para estudiar el impacto de los códecs trellis APR frente a cuantizaciones GGUF convencionales, con métricas KLD publicadas.
 
 ## Benchmarks y rendimiento
 
-| Métrica | Gyro-S | Gyro-M | Referencia |
-|---|---|---|---|
-| VRAM de pesos | 27,64 GiB | 34,98 GiB | Gyro-L: 50,21 GiB |
-| KLD | no disponible | 0,291 | ISTA IQ3_XXS: 0,311 |
-| Throughput (RTX 5090, Strata, JSON) | 221 tok/s | no disponible | — |
-| Throughput prosa / código | 140 / 209 tok/s | no disponible | — |
-| Bucles en test de estrés (45 ejecuciones) | 0 | 0 | — |
-| Contexto máximo | 128k | no disponible | — |
+| Metrica | Gyro-S v2 | Gyro-S v1 | Gyro-M | Referencia ISTA IQ3_XXS |
+|---|---|---|---|---|
+| KLD (divergencia del original) | 0,331 | 0,401 | 0,291 | 0,311 |
+| VRAM de pesos | 27,64 GiB | 27,64 GiB | 34,98 GiB | 20% más que Gyro-M |
+| Throughput JSON (RTX 5090, Strata) | 221 tok/s | no disponible | no disponible | no disponible |
+| Throughput prosa (RTX 5090, Strata) | 140 tok/s | no disponible | no disponible | no disponible |
+| Throughput código (RTX 5090, Strata) | 209 tok/s | no disponible | no disponible | no disponible |
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la información disponible.
+No se han publicado resultados de benchmarks académicos (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM de pesos: 27,64 GiB (Gyro-S), 34,98 GiB (Gyro-M), 50,21 GiB (Gyro-L), 19,92 GiB (Gyro-Coder).
-- GPU de 32 GB: RTX 5090, R9700 (Gyro-S).
-- GPU de 48 GB (una tarjeta o 2×24 GB) o 64 GB de memoria unificada: Gyro-M.
-- Memoria unificada de 64 GB o más (Strix Halo): Gyro-L; también Gyro-S o Gyro-M.
-- GPU de 24 GB: Gyro-Coder para coding, o Gyro-S con la caché de expertos de Strata; GPU de 16–24 GB con la caché de expertos de Strata.
-- Aceleración: CUDA (fork agentionai/llama.cpp), Vulkan y HIP (halo-box/strix-llama.cpp), y Strata 0.2.0+ para NVIDIA y AMD RX 7000 / RX 9000 / R9700.
-- Despliegue: contenedor `agentionai/agention-llama:server`, Strata (app, Terminal y motor) o strix-llama.cpp. llama.cpp upstream no carga estos ficheros.
-- Throughput medido: 221 tok/s en JSON, 140 tok/s en prosa y 209 tok/s en código sobre RTX 5090 con Strata (Gyro-S).
-- El draft MTP y el proyector de visión son descargas adicionales; la tabla n-gram reside en disco y no consume VRAM.
+- VRAM de pesos: Gyro-S 27,64 GiB; Gyro-M 34,98 GiB; Gyro-L 50,21 GiB; Gyro-Coder 19,92 GiB.
+- GPU recomendadas: RTX 5090 o R9700 (32 GB) para Gyro-S; 48 GB en una o dos tarjetas de 24 GB para Gyro-M; 64 GB de memoria unificada (Strix Halo) para Gyro-L.
+- Cabe en GPU de consumo: sí, Gyro-S en RTX 5090/R9700 y Gyro-Coder en tarjetas de 16-24 GB con la caché de expertos de Strata.
+- Runtimes compatibles: Strata 0.2.0 o superior (NVIDIA y AMD RX 7000/RX 9000/R9700), halo-box/strix-llama.cpp master (CPU, Vulkan, HIP), y agentionai/llama.cpp con contenedor (CPU, Vulkan, CUDA, incluye el draft MTP). llama.cpp upstream no puede cargar estos ficheros todavía.
+- Throughput medido: 221 tok/s en JSON, 140 tok/s en prosa y 209 tok/s en código sobre RTX 5090 con Strata.
+- La tabla n-gram reside en disco (`--ngram-on-disk`), por lo que no consume VRAM adicional.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | VRAM mínima | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-Gyro (Gyro-S) | 125,7B (MoE) | 128k | 27,64 GiB | qwen-community-1.0 | GGUF con APR; requiere Strata, strix-llama.cpp o fork agentionai |
-| Qwen3.8-Flash-Next-Gyro (Gyro-M) | 125,7B (MoE) | no disponible | 34,98 GiB | qwen-community-1.0 | ídem |
-| Qwen3.8-Flash-Next-Gyro (Gyro-L) | 125,7B (MoE) | no disponible | 50,21 GiB | qwen-community-1.0 | ídem |
-| ISTA IQ3_XXS (referencia del autor) | no disponible | no disponible | 20 % más que Gyro-M | no disponible | no disponible |
+| Qwen3.8-Flash-Next Gyro (S/M/L) | 125,7B | hasta 128k | qwen-community-1.0 | GGUF (APR) | Requiere runtimes modificados |
+| ISTA IQ3_XXS (referencia citada) | no disponible | no disponible | no disponible | GGUF | Gyro-M usa 20% menos VRAM con menor KLD (0,291 vs 0,311) |
+| Signal 2 (mismo autor) | 125,7B | hasta 128k | qwen-community-1.0 | GGUF | Gyro-S ajustado en coding agéntico, mismo tamaño |
+| Gyro-Coder (mismo autor) | 125,7B | hasta 128k | qwen-community-1.0 | GGUF | 256 expertos de código por capa, 19,92 GiB |
 
-La información disponible no incluye comparaciones con otras familias de modelos (Llama, Mistral, DeepSeek) ni sus cifras de benchmarks, por lo que la comparativa se limita a las variantes del propio autor y a la referencia ISTA citada en la model card.
+No se dispone de datos de benchmarks académicos ni de especificaciones completas de ISTA IQ3_XXS en la información proporcionada para una comparación más detallada.
 
 ## Limitaciones y advertencias
 
-- Compatibilidad rota con llama.cpp upstream: los ficheros solo cargan en Strata 0.2.0+, halo-box/strix-llama.cpp o el fork agentionai/llama.cpp, lo que limita la portabilidad y ata el despliegue a herramientas concretas.
-- Formato propietario: el códec APR y los tipos trellis no son GGUF estándar; las herramientas de inspección, conversión y cuantización habituales pueden no interpretarlos.
-- Licencia qwen-community-1.0: es necesario revisar sus términos antes de cualquier uso comercial; el Hub la etiqueta como `other`.
-- Idiomas soportados no documentados: no hay garantía de calidad multilingüe y conviene evaluar el comportamiento en castellano antes de producción.
-- Parámetros activos no disponibles: impide estimar con precisión el coste de cómputo por token y comparar eficiencia frente a otros MoE.
-- Sin benchmarks de calidad publicados: no hay datos de MMLU, HumanEval ni GSM8K para esta cuantización; el KLD de 0,291 solo mide la divergencia respecto al modelo base, no la calidad absoluta.
-- Riesgo de alucinación inherente al modelo base, no cuantificado en la información disponible.
-- Naturaleza experimental: los tags `experimental` y `qwen4exp` sugieren que el formato y los pesos pueden cambiar; fijar versiones y verificar checksums en producción.
-- Tamaño del repositorio de 706,7 GB: la descarga selectiva del fichero adecuado es obligatoria para no consumir almacenamiento innecesario.
-- La variante abliterated elimina los rechazos del modelo base; no debe usarse en entornos donde se requieran salvaguardas.
-- Las cifras de throughput proceden del autor y de un hardware concreto (RTX 5090 con Strata); no son extrapolables a otras GPU sin medir.
+- Los ficheros no cargan en llama.cpp upstream; es obligatorio usar Strata, strix-llama.cpp o el fork agentionai/llama.cpp, lo que limita la portabilidad.
+- Gyro-S v2 no ha sido probada todavía en Strata ni en strix-llama.cpp; el catálogo de Strata sigue descargando v1 hasta que se actualice.
+- La cuantización introduce divergencia respecto al modelo original (KLD 0,331 en Gyro-S v2), lo que puede degradar tareas sensibles a la precisión.
+- Existe una variante "abliterated" del mismo autor que elimina rechazos de seguridad; no debe confundirse con los pesos estándar ni usarse en producción sin revisión.
+- La licencia qwen-community-1.0 ("other") impone condiciones específicas de uso comercial que deben revisarse antes de desplegar en producto.
+- No hay información disponible sobre sesgos, idiomas soportados ni tasas de alucinación medidas.
+- El tamaño del repositorio (794,9 GB) implica descargas largas; las variantes `-noPLE` reducen el tamaño eliminando la tabla n-gram.
+- El modelo es experimental (tag `experimental`, `qwen4exp`), por lo que su estabilidad en producción no está garantizada.
 
 ## Enlaces
 
@@ -106,11 +97,10 @@ La información disponible no incluye comparaciones con otras familias de modelo
 - Web del autor: https://www.agention.ai/
 - Guía del modelo: https://agention.ai/models/qwen3.8-flash-next/
 - Agente de coding Marshall: https://marshall.agention.ai
-- Variante Signal 2 (coding agéntico): https://huggingface.co/agentionai/Signal-2-Flash-Next-Gyro-GGUF
-- Variante Gyro-Coder: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-Coder-GGUF
+- Signal 2 (variante para coding agéntico): https://huggingface.co/agentionai/Signal-2-Flash-Next-Gyro-GGUF
+- Gyro-Coder: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-Coder-GGUF
 - Variante abliterated: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-abliterated-Huihui-GGUF
-- Strata (motor y app): https://github.com/Niko1221/Strata
-- Releases de Strata: https://github.com/Niko1221/Strata/releases/latest
-- Fork strix-llama.cpp: https://github.com/halo-box/strix-llama.cpp
-- Fork agentionai/llama.cpp: https://gitlab.com/agentionai-group/llama.cpp
 - Fieldwork Ledger: https://www.fieldworkledger.com
+- Strata: https://github.com/Niko1221/Strata
+- strix-llama.cpp: https://github.com/halo-box/strix-llama.cpp
+- Fork agentionai/llama.cpp: https://gitlab.com/agentionai-group/llama.cpp

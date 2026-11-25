@@ -37,16 +37,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "buddysburrow/buddy-4b · Hugging Face",
-      "url": "https://huggingface.co/buddysburrow/buddy-4b",
-      "snippet": "The on-device AI model used by Buddy: Your AI Friend, by Buddy's Burrow."
-    },
-    {
-      "title": "buddysburrow/buddy-gemma4 · Hugging Face",
-      "url": "https://huggingface.co/buddysburrow/buddy-gemma4",
-      "snippet": "Machine learning model with 0.6B parameters. Download, explore files and run it on Hugging Face."
-    }
-  ]
+  "sources": []
 }

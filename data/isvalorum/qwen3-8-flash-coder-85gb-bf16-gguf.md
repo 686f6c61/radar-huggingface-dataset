@@ -2,101 +2,92 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Coder-85GB-BF16-GGUF es la referencia sin comprimir en formato GGUF BF16 del modelo Jab1718/qwen3.8-flash-coder-85gb-bf16, publicada por el usuario IsValorum. No se trata de un modelo entrenado desde cero, sino de una conversion directa a GGUF del checkpoint original en BF16, pensada como linea base sin ruido de recuantizacion para evaluaciones de perplejidad, pruebas locales e inferencia de alta fidelidad con llama.cpp. El repositorio ocupa 85,3 GB en disco y el modelo cuenta con 42.620.341.120 parametros totales.
+Qwen3.8-Flash-Coder-85GB-BF16-GGUF es la version de referencia sin compresion (BF16, 16.00 BPW) en formato GGUF del modelo Jab1718/qwen3.8-flash-coder-85gb-bf16, publicada por el usuario IsValorum. Se trata de una conversion directa a GGUF pensada como linea base de fidelidad para `llama.cpp`: al no aplicar recomputacion de pesos, sirve para medir perplejidad y calidad sin el ruido que introducen las cuantizaciones intermedias. El repositorio ocupa 85,3 GB (79,44 GiB) y el modelo base declara 42.620.341.120 parametros totales.
 
-El modelo subyacente es un MoE de tipo Qwen4ExpForCausalLM con 48 capas hibridas (36 de atencion lineal tipo SSM y 12 de atencion dispersa) y hyper-connections de cuatro vias. Su ventana de contexto nativa es de 262.144 tokens y activa aproximadamente 3.700 millones de parametros por token (10 expertos enrutados de 160 por capa, mas un experto compartido y la columna densa; 4.900 millones si se incluyen los embeddings de vocabulario). El checkpoint del que deriva es una rebanada experimental intermedia generada con `moe-slice`, en la que se podaron de forma permanente 352 de los 512 expertos enrutados usando exclusivamente datos de calibracion de Python en ingles y SWE-bench.
+El modelo subyacente es un MoE experimental derivado de la familia Qwen (etiquetado internamente como `Qwen4ExpForCausalLM`) al que se le han podado 352 de los 512 expertos enrutados originales, dejando 160 expertos por capa. La poda se realizo exclusivamente contra conjuntos de calibracion de Python y SWE-bench en ingles, por lo que el resultado es un especialista estricto en programacion y agentic coding en ingles, con degradacion severa en conversacion general y en cualquier idioma distinto del ingles.
 
-Es relevante ahora porque documenta un caso extremo de especializacion por poda: el resultado es un modelo estrictamente orientado a programacion y tool calling en ingles, con degradacion severa en cualquier otro idioma y en conversacion general, y sin la pasada de fine-tuning de recuperacion por parte del autor original. Ademas, la tabla de n-gramas PLE esta desactivada (`ple_layer_ids: []`), lo que permite ejecucion integra en VRAM de GPU sin offload a RAM del host, y el modelo no es compatible con Strata Engine al usar un esquema de 160 expertos con tablas de n-gramas desacopladas.
+Su relevancia practica es doble: por un lado documenta el estado de un recorte MoE agresivo antes de la fase de fine-tuning de recuperacion (que el autor original aun no ha publicado); por otro, ofrece una referencia BF16 reproducible para validar las variantes comprimidas de la misma familia (APEX-I-MiniPlus V2.1 a 3,45 BPW y APEX-I-NanoPlus a 2,90 BPW). La licencia es Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen4ExpForCausalLM (MoE hibrido: 48 capas, 36 de atencion lineal SSM + 12 de atencion dispersa, hyper-connections de 4 vias) |
-| Parametros totales | 42.620.341.120 (42,6 mil millones) |
-| Parametros activos | Aproximadamente 3,7 mil millones por token (4,9 mil millones incluyendo embeddings de vocabulario); 10 expertos enrutados activos de 160 por capa + 1 experto compartido + columna densa |
-| Longitud de contexto | 262.144 tokens nativos (256K) |
-| Tipos de cuantizacion | Repositorio en BF16 GGUF sin comprimir (16,00 BPW); la familia incluye APEX-I-MiniPlus V2.1 (aprox. 3,45 BPW) y APEX-I-NanoPlus (aprox. 2,90 BPW) |
-| Idiomas soportados | Ingles (en); degradacion severa en el resto de idiomas |
+| Arquitectura | Transformer hibrido MoE (`Qwen4ExpForCausalLM`): 48 capas, 36 de atencion lineal tipo SSM y 12 de atencion dispersa, con hyper-connections de 4 vias |
+| Parametros totales | 42.620.341.120 |
+| Parametros activos | aprox. 3,7B por token (10 expertos enrutados activos de 160 por capa + 1 experto compartido + backbone denso); 4,9B contando embeddings de vocabulario |
+| Longitud de contexto | 262.144 tokens (256K) nativos |
+| Tipos de cuantizacion | BF16 sin compresion (16.00 BPW) en este repo; la familia incluye variantes a aprox. 3,45 BPW y aprox. 2,90 BPW |
+| Idiomas soportados | en (unicamente ingles) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp) |
-| Tamano del repositorio | 85,3 GB en disco (79,44 GiB de huella en RAM/VRAM) |
-| Modelo base | Jab1718/qwen3.8-flash-coder-85gb-bf16 (relacion: quantized) |
-| Tabla PLE / n-gramas | Desactivada (`ple_layer_ids: []`), ejecucion integra en VRAM sin offload |
-| Descargas / likes | 444 descargas, 1 like |
-| Fecha de publicacion | 5 de octubre de 2026 (actualizado el 8 de octubre de 2026) |
+| Formato de pesos | GGUF (BF16) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es `Qwen4ExpForCausalLM`, un transformer hibrido con 48 capas que combina 36 capas de atencion lineal basada en SSM con 12 capas de atencion dispersa, e incorpora hyper-connections de cuatro vias. El componente MoE enruta cada token hacia 10 de los 160 expertos por capa, sumando un experto compartido y una columna densa, lo que da un total de 42,6 mil millones de parametros con un coste de computo por token correspondiente a unos 3,7 mil millones de parametros activos. La ventana de contexto nativa es de 262.144 tokens. La tabla PLE de n-gramas esta desactivada, lo que segun el autor permite ejecucion 100% en VRAM de GPU sin offload a RAM del host.
+La arquitectura combina 48 capas hibridas: 36 capas de atencion lineal basada en SSM y 12 capas de atencion dispersa, con hyper-connections de 4 vias. El componente MoE consta de 160 expertos enrutados por capa, de los cuales se activan 10 por token, mas un experto compartido y un backbone denso, lo que situa la computacion efectiva en torno a 3,7B parametros activos por token. La tabla PLE de n-gramas esta desactivada (`ple_layer_ids: []`), de modo que la inferencia se ejecuta integramente en VRAM de GPU sin offload a RAM del host.
 
-No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO en la informacion proporcionada. Lo que si se documenta es el proceso de derivacion: el checkpoint base es una rebanada experimental intermedia producida con `moe-slice`, en la que 352 de los 512 expertos enrutados fueron podados de forma permanente, calibrando exclusivamente contra datasets de Python en ingles y SWE-bench. El autor indica que la pasada de fine-tuning de recuperacion aun no ha sido publicada. Como innovacion destacable, el repositorio se presenta como el equivalente GGUF sin comprimir de referencia de la familia, util como linea base de perplejidad frente a las recuantizaciones APEX-I del mismo autor.
+El dato de entrenamiento mas relevante es el proceso de poda: el modelo base fue generado con la herramienta `moe-slice`, eliminando de forma permanente 352 de los 512 expertos enrutados originales. La seleccion de expertos supervivientes se calibro exclusivamente con datasets de Python y SWE-bench en ingles. No se ha publicado la fase de fine-tuning de recuperacion posterior a la poda, lo que explica la degradacion funcional fuera del dominio de codigo en ingles. No hay informacion disponible sobre el volumen total de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de codigo: completado de codigo, refactorizacion y tareas de programacion, con especializacion en Python en ingles segun la calibracion de la poda.
-- Razonamiento orientado a codigo: el modelo se etiqueta como `reasoning` y `agentic-coding`, con orientacion a flujos de razonamiento multi-paso aplicados a tareas de ingenieria de software.
-- Tool calling y function calling: soporte declarado para agentic tool-calling en ingles, lo que habilita su integracion en bucles de agente.
-- Evaluacion SWE-bench: el tag `swe-bench` indica que fue calibrado contra este benchmark de resolucion de incidencias en repositorios reales.
-- Contexto largo: ventana nativa de 262.144 tokens, adecuada para razonar sobre bases de codigo extensas.
-- Multilingue: no disponible salvo ingles; el autor advierte explicitamente de degradacion severa y salida de texto roto en idiomas como espanol, frances o aleman.
-- Conversacion general: no soportada de forma fiable; los expertos conversacionales fueron podados.
-- Vision y audio: no disponible.
+- Generacion y completado de codigo en Python, con enfasis declarado en tareas de SWE-bench.
+- Refactorizacion y edicion de codigo dentro de flujos de trabajo en ingles.
+- Agentic coding: soporte declarado de tool calling y function calling para agentes de programacion.
+- Razonamiento multi-paso orientado a tareas de ingenieria de software (la etiqueta `reasoning` aparece en los metadatos del modelo).
+- Capacidad de conversacion multi-turno con ventana nativa de 256K tokens, aunque limitada a contenido tecnico en ingles.
+- No soporta vision, audio ni otros modos: los metadatos no los declaran.
+- Capacidades multilingues practicamente inexistentes: el autor advierte de salida rota en idiomas distintos del ingles.
 
 ## Casos de uso
 
-- Agentes de resolucion de incidencias (SWE-bench style): el modelo fue calibrado contra SWE-bench, por lo que se puede integrar en un bucle de agente que reciba un issue, navegue el repositorio mediante tool calling y proponga un parche. La ventana de 256K tokens permite cargar contexto amplio del proyecto sin truncar.
-- Asistente de completado y refactorizacion en el IDE: desplegado con `llama-server` en local, sirve para autocompletar y refactorizar codigo Python en ingles, donde la poda de expertos ha conservado la capacidad especifica.
-- Generacion de tests y cobertura: dado un modulo, el modelo puede producir suites de pruebas unitarias en el mismo idioma y lenguaje de programacion para los que fue calibrado, integrndose en un pipeline de CI/CD previo al merge.
-- Revision de pull requests automatizada: con contexto largo y tool calling, puede leer el diff mas los ficheros relacionados y emitir comentarios estructurados sobre posibles fallos.
-- Migracion y traduccion de codigo entre versiones de una misma libreria: al mantener capacidades de razonamiento sobre codigo, resulta util para actualizar APIs obsoletas dentro de un unico lenguaje, siempre en ingles.
-- Linea base de evaluacion de cuantizaciones: dado que es la referencia BF16 sin comprimir, sirve para medir la perdida de perplejidad de otras cuantizaciones de la misma familia antes de decidir que build desplegar en produccion.
-- Extraccion estructurada de informacion de trazas y logs de aplicaciones: como especialista en codigo, puede parsear stack traces y devolver JSON estructurado con la causa probable.
+- Generacion de codigo en produccion: el modelo puede integrarse en pipelines de CI/CD para autocompletar funciones y parchear tests en Python, apoyandose en su ventana de 256K tokens para incluir el contexto completo de un repositorio mediano en un solo prompt.
+- Agentes de resolucion de issues: con soporte de tool calling, encaja como motor de un agente que lee un issue de GitHub, navega el arbol de ficheros, aplica parches y ejecuta la suite de tests de forma iterativa.
+- Refactorizacion asistida a gran escala: la ventana de 256K permite pasar modulos completos o varios ficheros relacionados y pedir reescrituras coherentes con el resto de la base de codigo.
+- Linea base de evaluacion de cuantizaciones: al ser BF16 sin recompresion, sirve para medir la perplejidad de referencia (30,0975 +/- 0,1200 en WikiText-2) y comparar el delta de las variantes APEX-I-MiniPlus y NanoPlus en un mismo hardware.
+- Desarrollo local con `llama.cpp` o LM Studio: util para validar prompts, plantillas de chat y comportamiento de tool calling antes de pasar a una version cuantizada mas ligera en produccion.
+- Generacion de documentacion tecnica y docstrings en ingles a partir del codigo fuente, tarea alineada con su calibracion en Python.
+- Investigacion sobre poda de expertos en MoE: permite estudiar el impacto de eliminar el 68,75% de los expertos enrutados sobre calidad y perplejidad antes de la fase de recuperacion.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos cuantitativos publicados corresponden a perplejidad sobre WikiText-2 de la familia de cuantizaciones de IsValorum. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en la informacion disponible.
+El unico dato cuantitativo publicado en la informacion disponible es la perplejidad en WikiText-2 de la familia, medida por el autor de la cuantizacion:
 
-| Variante | Tamano en disco | Huella en RAM/VRAM | BPW medio | Perplejidad WikiText-2 | Delta PPL vs BF16 | Tier de calidad |
-|---|---|---|---|---|---|---|
-| BF16 (referencia, este repositorio) | 85,30 GB (79,44 GiB) | 79,44 GiB | 16,00 | 30,0975 +/- 0,1200 | Linea base (0,00%) | Sin comprimir |
-| APEX-I-MiniPlus V2.1 | 21,77 GB (20,27 GiB) | 20,27 GiB | aprox. 3,45 | 30,1495 +/- 1,0089 | +0,0520 (+0,17%) | Q5_K_L / Q6_K |
-| APEX-I-NanoPlus | 18,34 GB (17,08 GiB) | 17,08 GiB | aprox. 2,90 | 34,4199 +/- 1,1591 | +4,3224 (+14,36%) | Q4_K_M |
+| Variante | Tamano en disco | BPW | Perplejidad WikiText-2 | Delta frente a BF16 |
+|---|---|---|---|---|
+| BF16 (referencia) | 85,30 GB (79,44 GiB) | 16,00 | 30,0975 +/- 0,1200 | linea base (0,00%) |
+| APEX-I-MiniPlus V2.1 | 21,77 GB (20,27 GiB) | aprox. 3,45 | 30,1495 +/- 1,0089 | +0,0520 (+0,17%) |
+| APEX-I-NanoPlus | 18,34 GB (17,08 GiB) | aprox. 2,90 | 34,4199 +/- 1,1591 | +4,3224 (+14,36%) |
+
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, SWE-bench) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: 79,44 GiB solo para los pesos en BF16, sin contar la cache KV. Es la variante mas exigente de la familia.
-- GPU recomendadas: GPU con 80 GB o mas de memoria, como A100 80GB, H100 80GB o H200 141GB. Dado que la huella de pesos deja un margen muy reducido sobre los 80 GB nominales, en la practica puede requerir reparto entre dos GPU o el uso de las variantes comprimidas.
-- GPU de consumo: no cabe en ninguna GPU de consumo actual (RTX 4090 con 24 GB, RTX 5090 con 32 GB). Para esas tarjetas el autor ofrece APEX-I-MiniPlus V2.1 (20,27 GiB) y APEX-I-NanoPlus (17,08 GiB).
-- Opciones de despliegue: llama.cpp mediante `llama-server` con `-ngl 999` para descargar todas las capas en GPU, o LM Studio. El modelo no es compatible con Strata Engine, que requiere el monolito de 512 expertos y las tablas PLE de 51B.
-- Comando de referencia indicado por el autor: `./llama-server -m ./Qwen3.8-Flash-Coder-85GB-BF16.gguf -c 65536 -ngl 999 --host 0.0.0.0 --port 8080`.
-- Offload a RAM del host: no necesario segun el autor, ya que la tabla PLE/n-gramas esta desactivada y el modelo se ejecuta integramente en VRAM.
-- Latencia y throughput: no disponible en la informacion proporcionada.
-- Tamano de la cache KV para los 262.144 tokens de contexto: no disponible.
+- VRAM estimada para inferencia: al menos 79,44 GiB solo para los pesos en BF16, mas overhead de contexto KV; en la practica requiere nodos con 80 GB o mas de VRAM y margen adicional para una ventana de 256K.
+- GPU recomendadas: H100 de 80 GB o A100 de 80 GB en configuracion single-GPU al limite; para contexto largo conviene multi-GPU o reducir `-c`. Las RTX 4090 (24 GB) no pueden alojar el modelo BF16 completo.
+- Cabe en GPU de consumo: no en BF16. Para equipos de consumo hay que recurrir a las variantes comprimidas de la familia (18-22 GB), que si entran en tarjetas de 24 GB.
+- Opciones de despliegue: `llama.cpp` (`llama-server`) y LM Studio segun el autor. No es compatible con Strata Engine, que exige el monolito de 512 expertos y tablas PLE de 51B.
+- Latencia y throughput: no disponibles. Como referencia estructural, con unos 3,7B parametros activos por token el coste computacional por token es bajo en comparacion con un modelo denso de 42B, pero el ancho de banda de memoria para leer los pesos BF16 limita el throughput.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks de modelos de terceros en la informacion proporcionada. La comparacion fiable posible es con las otras builds de la misma familia publicadas por el mismo autor:
-
-| Modelo | Parametros | Contexto | Perplejidad WikiText-2 | Licencia | Disponibilidad |
+| Modelo | Parametros totales / activos | Contexto | Perplejidad WikiText-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Coder-85GB BF16 (este) | 42,6B totales / aprox. 3,7B activos | 262.144 tokens | 30,0975 | Apache 2.0 | GGUF en Hugging Face |
-| Qwen3.8-Flash-Coder APEX-I-MiniPlus V2.1 | Misma base, recuantizada | 262.144 tokens | 30,1495 | Apache 2.0 | GGUF en Hugging Face |
-| Qwen3.8-Flash-Coder APEX-I-NanoPlus | Misma base, recuantizada | 262.144 tokens | 34,4199 | Apache 2.0 | GGUF en Hugging Face |
+| Qwen3.8-Flash-Coder BF16 (este) | 42,6B / aprox. 3,7B | 256K | 30,0975 | Apache 2.0 | GGUF BF16, 85,3 GB |
+| Qwen3.8-Flash-Coder APEX-I-MiniPlus V2.1 | mismo backbone podado | 256K | 30,1495 | Apache 2.0 | GGUF, 21,77 GB |
+| Qwen3.8-Flash-Coder APEX-I-NanoPlus | mismo backbone podado | 256K | 34,4199 | Apache 2.0 | GGUF, 18,34 GB |
 
-Comparativa con alternativas externas de la misma categoria (tamano o tarea): no disponible.
+No hay informacion disponible sobre modelos de otros autores con los que comparar parametros, contexto y rendimiento de tareas.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental de prepublicacion: el propio autor lo etiqueta como lanzamiento experimental y advierte de que es un especialista en codigo en ingles.
-- Idiomas distintos del ingles: el autor afirma que el modelo degrada severamente y produce texto roto en espanol, frances o aleman, porque los expertos conversacionales y multilingues fueron podados. No debe desplegarse en produccion para usuarios en castellano.
-- Conversacion general: degradada por el mismo motivo; no es un modelo de chat de proposito general.
-- Poda irreversible: 352 de los 512 expertos enrutados fueron eliminados de forma permanente y la pasada de fine-tuning de recuperacion del autor original aun no se ha publicado.
-- Riesgo de alucinacion: no disponible como dato medido, pero es un riesgo inherente a cualquier modelo generativo y no se ha publicado ninguna evaluacion al respecto.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia del checkpoint base Jab1718/qwen3.8-flash-coder-85gb-bf16, ya que el presente repositorio es solo una conversion de formato.
-- Compatibilidad de runtime: no funciona con Strata Engine; requiere llama.cpp (`llama-server`) o LM Studio.
-- Coste de hardware: 79,44 GiB de pesos en BF16 hacen inviable el despliegue en GPU de consumo, lo que limita su uso practico a nodos de nube con GPU de 80 GB o al uso como referencia de evaluacion.
-- Sesgos: no disponible en la informacion proporcionada.
+- Modelo experimental de prepublicacion: el autor original no ha publicado la fase de fine-tuning de recuperacion tras la poda de expertos.
+- Solo ingles: la salida se degrada gravemente y produce texto roto en espanol, frances, aleman y otros idiomas, asi como en conversacion general.
+- Especializado en codigo: no es adecuado para chat general, redaccion, traduccion ni tareas no tecnicas.
+- Riesgo de alucinacion en APIs y librerias: como cualquier modelo de codigo, puede inventar funciones o firmas inexistentes; requiere validacion con tests.
+- Poda agresiva: se eliminaron 352 de 512 expertos enrutados, lo que reduce la cobertura de dominios fuera de Python y SWE-bench.
+- Incompatibilidad con Strata Engine; solo `llama.cpp` y LM Studio estan indicados.
+- Requisito de hardware elevado: 85,3 GB de pesos BF16 hacen inviable su uso en GPU de consumo y complican el despliegue en produccion frente a las variantes cuantizadas.
+- Licencia Apache 2.0 permite uso comercial, pero la calidad degradada fuera del dominio de codigo en ingles limita su aplicacion real en producto.
+- Contexto nativo de 256K, pero el ejemplo de uso del autor arranca con `-c 65536`; ventanas mayores incrementan mucho el consumo de KV cache.
 
 ## Enlaces
 
@@ -104,6 +95,4 @@ Comparativa con alternativas externas de la misma categoria (tamano o tarea): no
 - Modelo base: https://huggingface.co/Jab1718/qwen3.8-flash-coder-85gb-bf16
 - Variante APEX-I-MiniPlus V2.1: https://huggingface.co/IsValorum/Qwen3.8-Flash-Coder-APEX-I-MiniPlus-V2.1-GGUF
 - Variante APEX-I-NanoPlus: https://huggingface.co/IsValorum/Qwen3.8-Flash-Coder-APEX-I-NanoPlus-GGUF
-- Pagina de soporte del cuantizador (Ko-fi): https://ko-fi.com/isvalorum
-- Paper, blog o demo oficial: no disponible.
-- Resultados de busqueda web: no se han encontrado enlaces tecnicos relevantes sobre este modelo en la busqueda realizada.
+- Apoyo al autor de las cuantizaciones: https://ko-fi.com/isvalorum

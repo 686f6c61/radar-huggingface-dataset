@@ -1,63 +1,56 @@
 # inferencerlabs/Hy4-MLX-Q4i
 
 ## Resumen
+Hy4-MLX-Q4i es una cuantización de 4 bits dinámica del modelo Hy4 de Tencent, publicada por el usuario inferencerlabs en Hugging Face. El modelo base (tencent/Hy4) es un modelo multimodal de tipo image-text-to-text, orientado a conversación y generación de texto a partir de imágenes. Esta versión concreta está empaquetada en formato MLX (safetensors), lo que la hace ejecutable en hardware Apple Silicon mediante la librería MLX, y no en GPUs NVIDIA convencionales.
 
-Hy4-MLX-Q4i es una cuantización de 4 bits en formato MLX del modelo multimodal Hy4, desarrollado originalmente por Tencent. La ficha corresponde al artefacto publicado por inferencerlabs, un tercero que no es el creador del modelo base, y que aplica una técnica de cuantización dinámica en la que la mayor parte de las capas se reducen a 4 bits mientras que las capas sensibles (presumiblemente relacionadas con código) se mantienen en mayor precisión.
+La relevancia de esta ficha radica en que se trata de un artefacto de cuantización, no de un modelo original: su interés está en permitir ejecutar un modelo de gran tamaño (el repositorio ocupa 449,4 GB) en un Mac con memoria unificada muy elevada, a costa de una pérdida de precisión controlada. El autor reporta velocidades de aproximadamente 11,3 tokens/s en un M3 Ultra con 500 tokens de generación, y hasta 13,4 tokens/s en modo coding con el motor DFly.
 
-El modelo base Hy4 es un modelo de tipo image-text-to-text, es decir, acepta entradas de imagen y texto y genera texto, con arquitectura de la familia `hy_v4_vl`. Se distribuye en formato MLX, la librería de Apple para ejecución eficiente en silicio Apple (M-series), y el repo ocupa 40,4 GB en safetensors. El pipeline declarado es `image-text-to-text` y el idioma soportado declarado es únicamente inglés.
-
-La relevancia de esta ficha es acotada: se trata de un artefacto de cuantización con cero descargas y cero likes en el momento de la consulta, y la propia model card advierte que las métricas de calidad mostradas provienen de un modelo distinto (GLM 5.1) de tamaño similar convertido con una técnica comparable, no del propio Hy4. Por tanto, debe tratarse como una build experimental para ejecución local en Mac, no como una distribución de referencia del modelo.
+La información disponible es escasa en cuanto a arquitectura, datos de entrenamiento y benchmarks del modelo base. La model card se centra en las métricas de cuantización y en las pruebas de rendimiento en hardware Apple, y no incluye detalles sobre el entrenamiento ni sobre evaluaciones estándar. Esta ficha refleja únicamente lo que el autor y los metadatos de Hugging Face declaran, marcando como "no disponible" todo aquello que no se especifica.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (familia `hy_v4_vl`, multimodal image-text-to-text) |
+| Arquitectura | no disponible (modelo base tencent/Hy4, multimodal image-text-to-text) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4 dinámica (mayoría de capas a 4 bits, capas sensibles a mayor precisión); el autor publica tabla comparativa Q3, Q4, Q4i, Q5, Q6, Q8, Q9 y Base |
-| Idiomas soportados | en (inglés) |
+| Tipos de cuantizacion | 4 bits dinámica (Q4i), con capas sensibles en mayor precisión |
+| Idiomas soportados | inglés (en) |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (MLX) |
-| Libreria | mlx |
-| Tamano del repo | 40,4 GB |
+| Tamano del repositorio | 449,4 GB |
+| Libreria | MLX |
+| Pipeline | image-text-to-text |
 | Modelo base | tencent/Hy4 |
-| Relacion con el base | quantized |
+| Descargas | 689 |
 | Fecha de creacion | 2026-11-21 |
 
 ## Arquitectura y entrenamiento
+No se dispone de información sobre la arquitectura del modelo base tencent/Hy4 en la documentación proporcionada: no se especifica si es un transformer denso, un MoE, un modelo híbrido ni el número de parámetros. Tampoco se detallan los datos de entrenamiento, el número de tokens, la composición del dataset ni si hubo fases de RLHF o DPO. El pipeline declarado (image-text-to-text) indica que el modelo acepta imágenes y texto como entrada y genera texto, por lo que incorpora algún tipo de codificador visual, pero su naturaleza concreta no está documentada.
 
-No se dispone de información sobre la arquitectura interna del modelo base Hy4 más allá de la etiqueta `hy_v4_vl` y su naturaleza multimodal (image-text-to-text). No se han publicado en la información disponible datos sobre número de parámetros, composición del dataset de entrenamiento, número de tokens, ni sobre si se aplicaron técnicas de RLHF, DPO u otras etapas de alineamiento.
-
-Lo que sí está documentado es el proceso de cuantización aplicado por inferencerlabs: una build de 4 bits "dinámica" en la que la mayoría del modelo se cuantiza a 4 bits pero las capas sensibles se conservan a mayor precisión para preservar la exactitud en tareas de código. La cuantización se realizó con una versión modificada de MLX. El autor declara que, por restricciones de memoria y tiempo del sistema, las cifras de calidad que publica no corresponden a Hy4 sino a un modelo GLM 5.1 de tamaño similar convertido con una técnica comparable, lo que limita seriamente la validez de esas métricas para este artefacto.
+La innovación técnica documentada corresponde a la cuantización: el autor describe un build de 4 bits dinámico que cuantiza la mayor parte del modelo a 4 bits y mantiene las capas sensibles en mayor precisión para preservar la exactitud en tareas de código. La cuantización se realizó con una versión modificada de MLX. El autor advierte que las cifras de la tabla comparativa proceden de un modelo GLM 5.1 de tamaño similar usando una técnica de conversión comparable, debido a restricciones de memoria y tiempo del sistema, por lo que no son medidas directas sobre Hy4.
 
 ## Capacidades
-
-- Generación de texto a partir de entradas multimodales (imagen + texto), según el pipeline `image-text-to-text`.
-- Conversación multi-turno (tag `conversational`).
-- Procesamiento de imágenes como entrada, con salida en texto.
-- Énfasis declarado en exactitud para código: la cuantización preserva capas sensibles para no degradar tareas de programación.
-- Ejecución en Apple Silicon mediante MLX.
-- Soporte de un motor alternativo denominado DFly, activable desde los controles de inferencia de la aplicación Inferencer.
-- Soporte de tool calling: no disponible en la información proporcionada.
-- Capacidades de agente o razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: solo inglés declarado.
-- Modo thinking, audio u otras capacidades especiales: no disponible en la información proporcionada.
+- Generación de texto conversacional en inglés, con pipeline image-text-to-text.
+- Comprensión de imágenes combinada con texto (entrada multimodal imagen-texto).
+- Generación de código, con capas preservadas a mayor precisión para mejorar la exactitud en tareas de programación.
+- Generación de texto creativo y redacción (el autor reporta pruebas separadas de coding y writing).
+- Conversación multi-turno (etiqueta "conversational").
+- No se documenta soporte de tool calling, function calling, agentes, audio ni modo thinking en la información disponible.
+- Capacidades multilingües limitadas al inglés según los metadatos.
 
 ## Casos de uso
-
-- Asistencia de código en local sobre Mac: la build mantiene capas sensibles a mayor precisión, por lo que es adecuada para autocompletado y explicación de código en un entorno Apple Silicon sin depender de la nube; el autor reporta ~13,4 tokens/s en modo coding con DFly en un M3 Ultra.
-- Análisis de capturas de pantalla y diagramas: al ser image-text-to-text, permite describir interfaces, extraer texto de imágenes y responder preguntas sobre diagramas técnicos en flujos de documentación.
-- Prototipado de asistentes conversacionales en local: el tag `conversational` y el pipeline multimodal permiten construir demos de chat con adjuntos de imagen sin salir del equipo.
-- Evaluación comparativa de cuantizaciones: la tabla Q3–Q9 publicada por el autor sirve para estudiar el compromiso entre bits por peso, perplejidad y exactitud de tokens en un pipeline MLX.
-- Investigación sobre cuantización dinámica: útil para reproducir y contrastar la técnica de mantener capas selectivas en mayor precisión frente a una cuantización uniforme.
-- Despliegue offline en estaciones de trabajo Mac: al ejecutarse con MLX y ocupar 40,4 GB en disco, encaja en escenarios con requisitos de privacidad donde no se permite enviar imágenes o código a servicios externos.
-- Pruebas de integración con la aplicación Inferencer: el autor valida la build con Inferencer v2.5.4, por lo que sirve para verificar flujos de inferencia con y sin el motor DFly.
+- Asistencia conversacional multimodal en local: el modelo puede recibir una imagen junto con una pregunta y responder en inglés, adecuado para prototipos de análisis de capturas, diagramas o documentos escaneados en un Mac con memoria unificada amplia.
+- Generación de código en estación de trabajo Apple: gracias a las capas sensibles mantenidas en mayor precisión, es utilizable para autocompletado y explicación de código en entornos MLX, con un rendimiento reportado de 13,4 tokens/s en modo coding sobre M3 Ultra.
+- Redacción y edición de texto: el autor reporta pruebas específicas de writing a 9,9 tokens/s, por lo que encaja en tareas de generación de borradores y reescritura en inglés.
+- Evaluación de cuantizaciones: al publicar métricas de perplejidad y exactitud de tokens, sirve como referencia para comparar técnicas de cuantización MLX en modelos multimodales grandes.
+- Investigación en eficiencia de inferencia: permite estudiar el compromiso entre precisión y velocidad en hardware Apple Silicon con modelos de cientos de gigabytes.
+- Despliegue de demostraciones privadas: al ejecutarse en local con MLX, evita enviar imágenes o texto a servicios externos, lo que resulta útil para pruebas con datos sensibles.
+- No se recomienda para producción multilingüe ni para tareas que requieran contexto largo documentado, al no disponerse de esos datos.
 
 ## Benchmarks y rendimiento
-
-La model card publica una tabla de calidad de cuantización, pero el propio autor advierte que las cifras provienen de un GLM 5.1 de tamaño similar y no de Hy4. Se reproducen a título informativo, con esa salvedad explícita:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor sí publica métricas de calidad de cuantización, aunque advierte que proceden de un modelo GLM 5.1 de tamaño similar con técnica comparable, no de Hy4:
 
 | Cuantizacion (bpw) | Perplejidad | Exactitud de tokens | Missed divergence |
 |---|---|---|---|
@@ -70,52 +63,44 @@ La model card publica una tabla de calidad de cuantización, pero el propio auto
 | Q9 | 1,20312 | 97,80 % | 9,60 % |
 | Base | 1,20312 | 100 % | 0,000 % |
 
-Métricas de velocidad declaradas por el autor en M3 Ultra:
+Rendimiento de inferencia reportado por el autor:
 
-| Configuracion | Tarea | Tokens/s | Memoria reportada |
+| Configuracion | Tarea | Tokens/s | Memoria |
 |---|---|---|---|
-| M3 Ultra, motor estandar | 500 tokens | ~11,3 | ~415 GiB |
-| M3 Ultra, DFly | 500 tokens (coding) | ~13,4 | ~417 GiB |
-| M3 Ultra, DFly | 500 tokens (writing) | ~9,9 | ~417 GiB |
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
+| M3 Ultra | 500 tokens | ~11,3 | ~415 GiB |
+| M3 Ultra + DFly | 500 tokens (coding) | ~13,4 | ~417 GiB |
+| M3 Ultra + DFly | 500 tokens (writing) | ~9,9 | ~417 GiB |
 
 ## Requisitos de hardware
-
-- El repo pesa 40,4 GB en safetensors, por lo que se necesita al menos ese espacio en disco más margen para la carga.
-- Las cifras de memoria de la model card (~415–417 GiB) son incoherentes con un artefacto de 40,4 GB y probablemente arrastran el error de haber sido medidas sobre otro modelo; no deben usarse para dimensionar el sistema.
-- Hardware objetivo declarado: Apple Silicon, en concreto un M3 Ultra con memoria unificada. No hay datos de funcionamiento en GPU NVIDIA o AMD.
-- No cabe en GPUs de consumo convencionales por formato: MLX está orientado a silicio Apple; no se documenta soporte CUDA.
-- Opciones de despliegue: librería MLX y la aplicación Inferencer v2.5.4 (con motor estándar o DFly). No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: ~11,3 tokens/s en modo estándar y ~9,9–13,4 tokens/s con DFly sobre M3 Ultra, según el autor.
+- Memoria: el autor reporta ~415-417 GiB de uso en M3 Ultra, coherente con un repositorio de 449,4 GB. Se requiere un Mac con memoria unificada de al menos ese orden (M3 Ultra con 512 GB o similar).
+- GPU recomendadas: Apple Silicon de gama alta; el autor cita explícitamente M3 Ultra. No se documenta soporte para A100, H100 ni RTX 4090, al estar empaquetado en MLX.
+- GPU de consumo: no cabe en ninguna GPU de consumo convencional (RTX 4090 con 24 GB, por ejemplo) ni en Macs con menos de ~450 GB de memoria unificada.
+- Despliegue: librería MLX; el autor prueba con Inferencer v2.5.4 y con el motor DFly (Inference controls > Engine). No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: ~11,3 tokens/s base en M3 Ultra; ~13,4 tokens/s en coding y ~9,9 tokens/s en writing con DFly, para generaciones de 500 tokens.
 
 ## Comparativa con modelos similares
-
-No se dispone de información suficiente para establecer una comparativa rigurosa: no hay datos de parámetros, contexto ni benchmarks del modelo base Hy4, y el único punto de referencia citado por el autor (GLM 5.1) se usa solo como proxy de cuantización, no como alternativa funcional.
+No se dispone de información suficiente para establecer una comparativa rigurosa con alternativas de la misma categoría. El propio autor menciona GLM 5.1 como modelo de tamaño similar usado para estimar las métricas de cuantización, pero no se aportan especificaciones de parámetros, contexto ni licencia de ninguno de los dos. Se indica a continuación lo que sí está documentado:
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Hy4-MLX-Q4i | no disponible | no disponible | no disponible | safetensors MLX | Cuantización de terceros sobre tencent/Hy4 |
-| tencent/Hy4 (base) | no disponible | no disponible | no disponible | no disponible | Modelo original multimodal |
-| GLM 5.1 (referencia del autor) | no disponible ("tamaño similar") | no disponible | no disponible | no disponible | Solo usado como proxy para métricas de cuantización |
+| Hy4-MLX-Q4i (esta ficha) | no disponible | no disponible | no disponible | safetensors MLX | Cuantización 4 bits de tencent/Hy4; ~449 GB |
+| tencent/Hy4 (base) | no disponible | no disponible | no disponible | no disponible | Modelo original multimodal image-text-to-text |
+| GLM 5.1 | no disponible | no disponible | no disponible | no disponible | Citado solo como referencia de tamaño para métricas de cuantización |
 
 ## Limitaciones y advertencias
-
-- Las métricas de calidad publicadas (perplejidad, exactitud de tokens) no corresponden a Hy4 sino a un GLM 5.1 de tamaño similar; no son válidas como evaluación de esta build.
-- Las cifras de memoria (~415 GiB) son incompatibles con el tamaño del repo (40,4 GB) y probablemente son un error de copia; no deben usarse para planificar despliegues.
-- Artefacto de terceros: inferencerlabs no es el creador ni propietario del modelo base y declina responsabilidad sobre exactitud o adecuación del contenido generado.
-- Licencia no disponible: no puede confirmarse el uso comercial ni las condiciones de redistribución, ni del base ni de la cuantización.
-- Idioma declarado únicamente inglés; no hay evidencia de calidad en castellano.
-- Cero descargas y cero likes en el momento de la consulta: sin validación comunitaria.
-- Riesgo de alucinación y sesgos: no documentados por el autor; aplican los del modelo base, que tampoco están descritos en la información disponible.
-- La cuantización a 4 bits introduce degradación medible frente al base (según la tabla del propio autor, incluso la mejor variante Q9 no alcanza el 100 % de exactitud de tokens).
-- Dependencia de la aplicación Inferencer para reproducir las condiciones declaradas; el soporte fuera de MLX no está documentado.
-- No se documentan limitaciones de contexto porque la longitud de contexto no está disponible.
+- Es una cuantización, no el modelo original: la pérdida de precisión frente al base es medible (exactitud de tokens del 97,70 % en Q4i según la tabla del autor, aunque medida sobre otro modelo).
+- Las métricas de cuantización publicadas no se midieron sobre Hy4, sino sobre un GLM 5.1 de tamaño similar, según admite el propio autor.
+- Idiomas: solo se declara inglés; no hay evidencia de soporte de castellano ni de otros idiomas.
+- Licencia no disponible: no se puede confirmar si el uso comercial está permitido. Es imprescindible verificar la licencia del modelo base tencent/Hy4 antes de cualquier despliegue en producción.
+- Requisitos de hardware extremos (~415 GiB de memoria), lo que limita su uso a estaciones de trabajo Apple de gama muy alta.
+- Riesgo de alucinación inherente a los modelos generativos; el autor declara explícitamente que no garantiza la exactitud del contenido y que el usuario debe verificar la información.
+- El autor no es el creador del modelo original y declina responsabilidad por daños derivados del uso.
+- No se documentan tool calling, agentes, contexto largo ni otras capacidades avanzadas; no deben asumirse.
+- El repositorio tiene muy poca tracción (1 like, 689 descargas) y fue creado y actualizado en noviembre de 2026, por lo que la validación comunitaria es mínima.
 
 ## Enlaces
-
-- Repositorio Hugging Face: https://huggingface.co/inferencerlabs/Hy4-MLX-Q4i
-- Modelo base: https://huggingface.co/tencent/Hy4
-- Vídeos de demostración: https://youtube.com/xcreate
-- Aplicación Inferencer: https://inferencer.com
-- MLX: https://github.com/ml-explore/mlx
+- [Hugging Face: inferencerlabs/Hy4-MLX-Q4i](https://huggingface.co/inferencerlabs/Hy4-MLX-Q4i)
+- [Modelo base: tencent/Hy4](https://huggingface.co/tencent/Hy4)
+- [Vídeos de demostración](https://youtube.com/xcreate)
+- [Inferencer](https://inferencer.com)
+- [MLX (GitHub)](https://github.com/ml-explore/mlx)

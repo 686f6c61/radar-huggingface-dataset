@@ -2,102 +2,115 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-GGUF-KQuant es una cuantización GGUF del modelo Qwen/Qwen3.6-35B-A3B, publicada por nace-ai para su motor de inferencia local Kapitsa, orientado a equipos Apple Silicon. El paquete incluye cuatro niveles de cuantización (Q2_K, Q3_K_M, Q4_K_M y Q8_0), además del proyector de visión en bf16 y la matriz de importancia utilizada en el proceso de calibración. El modelo base es multimodal (pipeline image-text-to-text) y cuenta con 35.505.251.456 parámetros totales.
+Qwen3.6-35B-A3B-GGUF-KQuant es una coleccion de cuantizaciones GGUF del modelo base Qwen/Qwen3.6-35B-A3B, publicada por el usuario nace-ai bajo licencia Apache 2.0. El modelo base es un transformer de tipo mezcla de expertos (MoE) con 34.660.610.688 parametros totales, orientado a generacion de texto conversacional y compatible con tool calling. Esta publicacion no entrena ningun modelo nuevo: su aportacion es un conjunto de ficheros GGUF optimizados para llama.cpp, LM Studio y Ollama, con pesos de modelo de lenguaje entre 9,47 GB y 18,02 GB.
 
-La aportación diferencial del repositorio no es el modelo en sí, sino la metodología de cuantización denominada KQuant: en GGUF se construye una matriz de importancia a partir de texto de calibración para ajustar las escalas por capa, y solo se publica un paquete si, midiendo, resulta más cercano al modelo original con el mismo tamaño y velocidad. Según la model card, en Q4_K_M esto se traduce en una divergencia KL de 0,031 frente a 0,048 de la cuantización plana, manteniendo idéntico tamaño de archivo (21,7 GB).
+La relevancia de esta ficha radica en el trabajo de cuantizacion medido con rigor. El autor publica valores de divergencia KL respecto al modelo BF16, precision top-1 y comparaciones directas con cuantizaciones de otros publicadores (Unsloth, bartowski, byteshape) en rangos de tamano equivalentes. Segun la model card, varios ficheros igualan o superan a alternativas del mismo tamano en fidelidad al modelo original, tanto a 512 tokens como en ventanas de 128K tokens.
 
-Es relevante para desarrolladores que necesitan ejecutar un modelo de 35B con capacidades de visión en hardware de consumo Apple Silicon sin renunciar a la fidelidad respecto al bf16. La licencia es Apache 2.0, heredada del modelo base, lo que facilita el uso comercial.
+El repositorio ocupa 200,9 GB e incluye vision y MTP (multi-token prediction) ademas de los pesos de lenguaje. La fecha de creacion indicada es 2026-11-12. El modelo esta etiquetado como compatible con endpoints y con la etiqueta `imatrix`, lo que sugiere el uso de matrices de importancia para calibrar la cuantizacion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base Qwen3.6-35B-A3B; presumiblemente transformer MoE por la nomenclatura A3B, no confirmado en la informacion) |
-| Parametros totales | 35.505.251.456 |
+| Arquitectura | Transformer con mezcla de expertos (MoE), segun el modelo base Qwen/Qwen3.6-35B-A3B |
+| Parametros totales | 34.660.610.688 (34,66 mil millones) |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_M, Q4_K_M, Q8_0 (GGUF); bf16 para el proyector de vision |
+| Longitud de contexto | hasta 128K tokens (evaluado a 128K en la model card); contexto nativo del modelo base no disponible |
+| Tipos de cuantizacion | IQ2_XXS, IQ3_XXS, IQ3_S, IQ4_XS, Q3_K_S y mezclas de tipos por tensor (2,19 a 4,16 bits por peso) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Formato de pesos | GGUF (compatible con llama.cpp, LM Studio y Ollama) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base en la documentación proporcionada. La nomenclatura "35B-A3B" del modelo base Qwen/Qwen3.6-35B-A3B sugiere un diseño de mezcla de expertos con aproximadamente 35B parámetros totales y 3B activos por token, pero este dato no está confirmado explícitamente en la información disponible. El pipeline declarado es image-text-to-text, lo que confirma capacidades multimodales con entrada de imagen y texto.
+El modelo base Qwen3.6-35B-A3B es un transformer con arquitectura de mezcla de expertos (MoE), con 34,66 mil millones de parametros totales. El numero de parametros activos por token no se especifica en la informacion disponible. La model card menciona que el repositorio incluye pesos de vision y de MTP (multi-token prediction) ademas de los pesos de lenguaje, lo que indica que el modelo base incorpora capacidades multimodales y decodificacion especulativa mediante prediccion multi-token. No se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
-El proceso de cuantización sí está documentado: KQuant es la cuantización calibrada de Nace.AI. En GGUF construye una matriz de importancia a partir de texto de calibración (el repositorio incluye el archivo `imatrix.gguf` de 0,4 GB). Las variantes Q2_K, Q3_K_M y Q4_K_M se generaron con dicha matriz de importancia, mientras que Q8_0 se generó sin ella. La evaluación de calidad se realizó con 64 fragmentos de 512 tokens (wikitext-2, conversaciones GSM8K y HumanEval) comparando logits contra el GGUF en bf16, y con el conjunto de test completo de GSM8K (1.319 preguntas) a través de llama-server. No se documenta el entrenamiento del modelo base ni si hubo RLHF o DPO.
+Esta publicacion concreta no entrena el modelo: aplica cuantizacion con matrices de importancia (`imatrix`) para generar ficheros GGUF. Cada fichero mezcla tipos de tensor de 2,6 a 6,6 bits por peso, todos compatibles con llama.cpp estandar. Por ejemplo, `IQ3_S` se compone de un 50% de IQ2_S, 31% de IQ3_S, 15% de Q6_K y 4% de otros tipos (3,15 bits por peso de media); `Q3_K_S` mezcla 54% IQ3_XXS, 22% IQ3_S, 14% Q6_K, 9% IQ4_XS y 1% de otros tipos. La evaluacion se realizo con el build 0a94a3f2 de llama.cpp sobre 64 ventanas y 32.704 tokens de texto en ingles creado despues del 2026-09-20 (Wikipedia, chat y tool calls, y codigo de GitHub), separado del texto usado para ajustar los ficheros.
 
 ## Capacidades
 
-- Generación de texto conversacional y respuesta a instrucciones (tag "conversational").
-- Procesamiento multimodal de imagen y texto (pipeline image-text-to-text, con proyector de visión `mmproj-bf16.gguf`).
-- Razonamiento matemático: evaluado en GSM8K con 0,958 de acierto en la variante Q4_K_M de este repositorio.
-- Generación de código: incluido en el conjunto de calibración (HumanEval) y en las pruebas de velocidad con respuestas de código de 512 tokens.
-- Decodificación especulativa mediante cabeza MTP (multi-token prediction) propia del archivo, usada en las mediciones de velocidad de la model card.
-- Compatibilidad con endpoints (tag "endpoints_compatible").
-- Soporte de tool calling: no confirmado explícitamente en la información disponible.
-- Capacidades de agente multi-paso: no confirmadas en la información disponible.
-- Cobertura multilingüe: no disponible.
+- Generacion de texto conversacional en formato chat, con soporte de turnos de usuario y de herramienta.
+- Tool calling y function calling: la model card evalua explicitamente texto de chat y de llamadas a herramientas.
+- Razonamiento multi-turno y concatenacion de pasos, heredado del modelo base Qwen3.6.
+- Capacidades multimodales: el repositorio incluye pesos de vision segun la model card, aunque las cuantizaciones publicadas se centran en los pesos de lenguaje.
+- Decodificacion especulativa mediante MTP (multi-token prediction) presente en el modelo base.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Contexto largo de hasta 128K tokens, con evaluacion especifica de fidelidad a esa longitud.
 
 ## Casos de uso
 
-- Asistencia conversacional local en Mac: el modelo puede ejecutarse con `kapitsa serve` sobre un archivo GGUF y exponer una página de chat y una API en `http://127.0.0.1:8000`, lo que permite desplegar un asistente privado sin conexión a servicios en la nube.
-- Análisis de documentos con imágenes: al incluir el proyector de visión en bf16, permite tareas image-text-to-text como descripción de capturas, extracción de información de gráficos o respuesta a preguntas sobre figuras, todo en local.
-- Razonamiento matemático y resolución de problemas: con un 0,958 en GSM8K en Q4_K_M, es adecuado para tutores automáticos o verificación de cálculos paso a paso en entornos educativos.
-- Generación de código en estaciones de trabajo Apple Silicon: la model card mide 115,9 tok/s de escritura en un MacBook Pro M5 Pro de 48 GB con una respuesta de código de 512 tokens, lo que lo hace viable para autocompletado y generación de fragmentos en el editor.
-- Prototipado e investigación con cuantizaciones de bajo peso: las variantes Q2_K (13,3 GB) y Q3_K_M (17,2 GB) permiten probar el modelo en equipos con menos memoria unificada, a costa de mayor divergencia respecto al bf16.
-- Evaluación comparativa de técnicas de cuantización: la disponibilidad de la matriz de importancia y de las métricas KL, coincidencia de top token y GSM8K facilita reproducir experimentos sobre calibración de cuantizaciones en pipelines de investigación.
-- Despliegue en pipelines con llama.cpp: la model card documenta el uso con llama-server (commit `0a94a3f2`), lo que permite integrar el modelo en servicios compatibles con la API de llama.cpp.
+- Despliegue local en estaciones de trabajo: los ficheros de 9,47 a 18,02 GB permiten ejecutar un MoE de 34,66 mil millones de parametros en GPUs de consumo con llama.cpp, LM Studio u Ollama, sin depender de API externa.
+- Asistentes de codigo en IDE: la cuantizacion `Q3_K_S` mantiene una precision top-1 del 94,5% frente al BF16 en texto de codigo a 128K tokens, lo que la hace adecuada para autocompletado y explicacion de repositorios completos dentro de la ventana de contexto.
+- Atencion al cliente automatizada: el soporte de tool calling y de conversaciones multi-turno con contexto de hasta 128K tokens permite gestionar historiales largos y consultas a sistemas internos en una sola sesion.
+- Procesamiento de documentos extensos: con 128K tokens de contexto se pueden analizar contratos, informes o bases de codigo completas; la fidelidad medida a esa longitud (KL medio de 0,601 en chat y 0,063 en codigo para `Q3_K_S`) respalda su uso en tareas de extraccion y resumen.
+- Pipelines de agentes con herramientas: la combinacion de tool calling y MTP encaja en flujos de razonamiento multi-paso donde el modelo debe invocar funciones y encadenar resultados.
+- Experimentacion e investigacion: la publicacion de metricas KL, precision top-1 y comparaciones con otras cuantizaciones facilita estudios de degradacion por cuantizacion y la seleccion de ficheros segun el presupuesto de memoria.
+- Inferencia en entornos con VRAM limitada: los ficheros `IQ2_XXS` de 9,47 y 9,76 GB permiten ejecutar el modelo en GPUs de 12-16 GB, a costa de una mayor divergencia (KL medio de 0,211 y 0,193 respectivamente).
 
 ## Benchmarks y rendimiento
 
-Datos publicados en la model card para Q4_K_M (ambos archivos de 21,7 GB), medidos contra el GGUF en bf16:
+La model card no publica resultados en benchmarks estandar como MMLU, HumanEval o GSM8K. En su lugar, proporciona metricas de fidelidad de la cuantizacion respecto al modelo BF16.
 
-| Metrica | Q4_K_M plano | Q4_K_M de este repo |
-|---|---:|---:|
-| KL respecto a bf16 (menor es mejor) | 0,048 | 0,031 |
-| Mismo token top que bf16 | 93,4% | 94,7% |
-| GSM8K (1.319 preguntas) | 0,952 | 0,958 |
-| GSM8K (primeras 100) | 0,98 | 0,96 |
-| Escritura (tok/s) | 114,4 | 115,9 |
-| Lectura de prompt de 4K (tok/s) | 1136 | 1262 |
+| Fichero | Pesos LM (GB) | Bits por peso | KL medio (512 tok) | KL p99.9 | Precision top-1 (%) |
+|---|---:|---:|---:|---:|---:|
+| IQ2_XXS-9.5GB | 9,47 | 2,19 | 0,211 | 9,260 | 84,5 |
+| IQ2_XXS-9.8GB | 9,76 | 2,25 | 0,193 | 9,498 | 85,4 |
+| IQ3_S | 13,67 | no disponible | 0,085 | 7,120 | 90,9 |
+| IQ3_XXS | 14,30 | no disponible | 0,074 | 6,382 | 91,8 |
+| Q3_K_S | 15,30 | no disponible | 0,061 | 6,695 | 93,1 |
+| IQ4_XS-16.8GB | 16,75 | 3,87 | 0,050 | 6,249 | 93,9 |
+| IQ3_S-16.8GB | 16,83 | 3,88 | 0,048 | 6,055 | 94,0 |
+| IQ3_S-17.6GB | 17,58 | 4,06 | 0,045 | 6,021 | 94,1 |
+| IQ4_XS-17.7GB | 17,69 | 4,08 | 0,044 | 5,863 | 94,3 |
+| IQ4_XS-18.0GB | 18,02 | 4,16 | 0,043 | 6,240 | 94,4 |
 
-Condiciones de medición: KL calculada sobre 64 fragmentos de 512 tokens (wikitext-2, chats GSM8K, HumanEval); GSM8K ejecutado con llama-server pregunta a pregunta; velocidad medida en MacBook Pro M5 Pro de 48 GB con Kapitsa 0.2.32, cabeza MTP propia del archivo, respuesta de código de 512 tokens a temperatura 0,6, ejecuciones intercaladas y dos ejecuciones válidas por archivo. La propia model card advierte que la diferencia en GSM8K sobre las 1.319 preguntas está dentro del ruido de medición (unas 0,4 puntos) y que la cifra de lectura debe interpretarse como aproximada. Solo se midió Q4_K_M.
+Fidelidad a 128K tokens (KL medio respecto a BF16):
+
+| Fichero | Tipo de texto | KL medio | KL p99.9 | Top-1 (%) |
+|---|---|---:|---:|---:|
+| IQ3_XXS | chat y tool calls | 0,643 | 22,168 | 86,1 |
+| Q3_K_S | chat y tool calls | 0,601 | 21,390 | 87,0 |
+| IQ3_XXS | codigo | 0,077 | 9,929 | 93,7 |
+| Q3_K_S | codigo | 0,063 | 9,438 | 94,5 |
+| IQ3_XXS | prosa | 0,049 | 1,996 | 90,9 |
+| Q3_K_S | prosa | 0,036 | 1,444 | 92,1 |
+
+Comparaciones directas publicadas por el autor: `IQ3_S` (13,67 GB, KL 0,085) frente a Unsloth UD-IQ3_S (13,67 GB, KL 0,091); `IQ3_XXS` (14,30 GB, KL 0,074) frente a bartowski IQ3_XXS (14,85 GB, KL 0,081); `Q3_K_S` (15,30 GB, KL 0,061) frente a Unsloth UD-Q3_K_S (15,35 GB, KL 0,061). A 512 tokens, `IQ3_XXS` supera en fidelidad a tres ficheros de otros publicadores en el rango de 0,98 a 1,06 veces su tamano.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada según el archivo: Q2_K 13,3 GB, Q3_K_M 17,2 GB, Q4_K_M 21,7 GB, Q8_0 37,8 GB, más 0,9 GB del proyector de visión si se usa entrada de imagen.
-- Hardware de referencia de las mediciones: MacBook Pro con chip M5 Pro y 48 GB de memoria unificada.
-- Encaje en hardware de consumo: las variantes Q2_K, Q3_K_M y Q4_K_M caben en Macs con 16-24 GB o más de memoria unificada; Q8_0 requiere aproximadamente 40 GB o más. No hay datos de ejecución en GPUs NVIDIA o AMD en la información disponible.
-- Motor de despliegue principal: Kapitsa (instalación vía `brew install nace-ai/tap/kapitsa`), con conversión en el primer uso. También se documenta compatibilidad con llama.cpp/llama-server (commit `0a94a3f2`). No se mencionan vLLM, TGI ni Ollama.
-- Throughput medido: 115,9 tok/s de escritura y 1262 tok/s de lectura de prompt de 4K en el hardware de referencia con Q4_K_M.
+- VRAM estimada para inferencia: desde aproximadamente 10 GB para `IQ2_XXS-9.5GB` hasta unos 19-20 GB para `IQ4_XS-18.0GB`, sumando overhead de contexto KV cache.
+- GPU de consumo: los ficheros de 9,47 a 14,30 GB caben en GPUs de 12-16 GB (por ejemplo, RTX 4070 Ti Super, RTX 4080, RTX 4090). Los ficheros de 15,30 a 18,02 GB requieren 20-24 GB y encajan en RTX 4090 (24 GB) o en configuraciones con offload parcial a CPU.
+- GPU de datacenter: A100 (40/80 GB), H100 (80 GB) y L40S (48 GB) permiten cargar cualquier fichero con contexto largo; para 128K tokens es necesario reservar VRAM adicional para la cache KV, que puede superar los pesos del modelo.
+- Opciones de despliegue: llama.cpp (build 0a94a3f2 usado en la evaluacion), LM Studio, Ollama y servidores compatibles con endpoints (etiqueta `endpoints_compatible`).
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.6-35B-A3B-GGUF-KQuant (este repo) | 35,5B | no disponible | GGUF | Apache 2.0 | Cuantizacion calibrada con imatrix; Q4_K_M medido |
-| Qwen/Qwen3.6-35B-A3B (base) | 35,5B | no disponible | safetensors | Apache 2.0 | Modelo original en bf16; referencia de calidad |
-| Qwen3.6-35B-A3B MLX 4-bit KQuant | no disponible | no disponible | MLX | Apache 2.0 | Misma calibracion KQuant para el runtime MLX |
-| Q4_K_M plano del mismo modelo | 35,5B | no disponible | GGUF | Apache 2.0 | Referencia de cuantizacion estandar sin imatrix |
-
-No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
+| Qwen3.6-35B-A3B (Nace GGUF KQuant) | 34,66 mil M (MoE) | 128K | Apache 2.0 | GGUF | Cuantizaciones con KL medido y comparado con otros publicadores |
+| Qwen3.6-35B-A3B (Unsloth UD) | 34,66 mil M (MoE) | 128K | Apache 2.0 | GGUF | Alternativa de cuantizacion; `UD-Q3_K_S` iguala en KL a `Q3_K_S` de Nace a 512 tokens, pero Nace es mejor a 128K |
+| Qwen3.6-35B-A3B (bartowski) | 34,66 mil M (MoE) | 128K | Apache 2.0 | GGUF | `IQ3_XXS` de bartowski (14,85 GB, KL 0,081) es superado por el de Nace (14,30 GB, KL 0,074) |
+| Qwen3.6-35B-A3B (byteshape) | 34,66 mil M (MoE) | 128K | Apache 2.0 | GGUF | Ficheros `Q3_K_S-3.39bpw` e `IQ3_S-3.48bpw` superados en KL por los ficheros de Nace de tamano equivalente |
 
 ## Limitaciones y advertencias
 
-- Solo se ha medido la calidad de la variante Q4_K_M; Q2_K, Q3_K_M y Q8_0 no tienen métricas publicadas en la model card, por lo que su fidelidad respecto al bf16 es desconocida.
-- La ventaja de KQuant en GSM8K sobre la cuantización plana está dentro del ruido de medición según el propio autor; la mejora clara se observa en KL y en coincidencia de token top.
-- Las cifras de velocidad proceden de un único equipo (MacBook Pro M5 Pro, 48 GB) y de dos ejecuciones válidas por archivo; no deben extrapolarse a otro hardware.
-- No hay información sobre sesgos, tasas de alucinación ni comportamiento multilingüe del modelo base en la documentación disponible.
-- La longitud de contexto no está especificada, lo que impide planificar cargas de contexto largo con garantías.
-- El repositorio tiene un volumen de descargas muy bajo (1 descarga, 0 likes en el momento de la consulta) y fue creado en noviembre de 2026, por lo que carece de validación comunitaria amplia.
-- El soporte de tool calling, agentes y modo thinking no está confirmado; conviene verificar la model card del modelo base antes de diseñar flujos que dependan de estas capacidades.
-- La licencia Apache 2.0 permite uso comercial, pero las condiciones del modelo base deben revisarse en su propio repositorio por si añade términos adicionales.
+- Sesgos conocidos: no disponibles en la informacion proporcionada; se heredan los del modelo base Qwen3.6-35B-A3B.
+- Riesgo de alucinacion: no cuantificado en la model card; las metricas publicadas miden fidelidad a la salida BF16, no veracidad.
+- Idiomas: la evaluacion de cuantizacion se realizo exclusivamente con texto en ingles; el rendimiento en castellano u otros idiomas no esta medido.
+- Contexto: a 128K tokens la divergencia crece de forma notable en chat y tool calls (KL medio de 0,601-0,643 frente a 0,061-0,074 a 512 tokens), lo que puede degradar respuestas en conversaciones muy largas.
+- Los ficheros de menor tamano (`IQ2_XXS`) presentan una precision top-1 del 84,5-85,4%, con perdida apreciable de fidelidad; no son recomendables para tareas que exijan alta precision.
+- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.6-35B-A3B por si anaden restricciones adicionales.
+- El repositorio ocupa 200,9 GB; descargar el conjunto completo requiere espacio en disco considerable, aunque basta con bajar el fichero GGUF deseado.
+- La fecha de creacion indicada (2026-11-12) y el contexto de evaluacion (texto posterior al 2026-09-20) deben tratarse como datos de la model card, no verificados de forma independiente.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/nace-ai/Qwen3.6-35B-A3B-GGUF-KQuant
+- Hugging Face: https://huggingface.co/nace-ai/Qwen3.6-35B-A3B-GGUF-KQuant
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Version MLX 4-bit KQuant: https://huggingface.co/nace-ai/Qwen3.6-35B-A3B-MLX-4bit-KQuant
-- Motor Kapitsa (GitHub): https://github.com/nace-ai/kapitsa
-- Nace.AI: https://www.nace.ai/
+- Repositorio llama.cpp (build de referencia 0a94a3f2): https://github.com/ggml-org/llama.cpp
+- LM Studio: https://lmstudio.ai/
+- Ollama: https://ollama.com/
+- Paper o blog del modelo base: no disponible
+- Demo: no disponible

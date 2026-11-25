@@ -38,31 +38,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "westlake-repl/Pinal · Hugging Face",
-      "url": "https://huggingface.co/westlake-repl/Pinal",
-      "snippet": "Model Card for Pinal: Toward De Novo Protein Design from Natural Language Pinal is an advanced protein design framework that translates human design intent into novel protein sequences. It utilizes a two-stage process: first generating protein structures from language instructions, then designing sequences based on those structures. With a substantial parameter count of 16 billion and trained ..."
-    },
-    {
-      "title": "GitHub - westlake-repl/Denovo-Pinal: Programmable Design of Functional ...",
-      "url": "https://github.com/westlake-repl/Denovo-Pinal",
-      "snippet": "The repository is an official implementation of Pinal: Programmable design of functional proteins from natural language Quickly try our online server (Pinal 16B) here Also try SaProt-T/SaProt-O for protein redesign/editing If you have any questions about the paper or the code, feel free to raise an issue! We have 2 PhD positions for international students at Westlake University, China! see here."
-    },
-    {
-      "title": "GitHub - westlake-repl/Denovo-Pinal: Programmable Design of Functional ...",
-      "url": "https://github.com/westlake-repl/Denovo-Pinal/tree/main",
-      "snippet": "westlake-repl Denovo-Pinal Denovo-Pinal 12 (12) Star143 (143) Programmable Design of Functional Proteins from Natural Language 143 3 12 forks main"
-    },
-    {
-      "title": "westlake-repl/Pinal at main - Hugging Face",
-      "url": "https://huggingface.co/westlake-repl/Pinal/tree/main",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Programmable design of functional proteins from natural language",
-      "url": "https://www.nature.com/articles/s41586-026-11205-z",
-      "snippet": "Pinal, a 16-billion-parameter artificial intelligence model, designs functional proteins from natural-language descriptions, demonstrating experimentally validated activities and improved CO2 ..."
-    }
-  ]
+  "sources": []
 }

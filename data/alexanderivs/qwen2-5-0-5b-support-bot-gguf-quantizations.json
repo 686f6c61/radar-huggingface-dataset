@@ -29,7 +29,7 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 309,
   "trending_score": 0,
   "parameters": 494032768,
@@ -50,16 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qwen/Qwen2.5-0.5B · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B",
-      "snippet": "Text Generation model with 0.5B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "Qwen/Qwen2.5-0.5B-Instruct-GGUF · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF",
-      "snippet": "Text Generation model with 0.6B parameters. Download, explore files and run it on Hugging Face."
-    }
-  ]
+  "sources": []
 }

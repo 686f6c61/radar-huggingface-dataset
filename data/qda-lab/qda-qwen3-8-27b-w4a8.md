@@ -2,98 +2,106 @@
 
 ## Resumen
 
-QDA-Qwen3.8-27B-W4A8 es un checkpoint cuantizado del modelo denso Qwen3.8-27B de Alibaba (equipo Qwen), generado por qda-lab mediante una busqueda automatizada de configuraciones de cuantizacion denominada QDA ("Closed-Loop Quantization Design with LLM Agents", enviado a MLSys 2027). El modelo aplica cuantizacion de pesos a 4 bits y activaciones a 8 bits (W4A8) sobre el modelo base, en formato compressed-tensors, y esta pensado para servirse directamente en vLLM sin pasos de conversion adicionales.
+QDA-Qwen3.8-27B-W4A8 es una version cuantizada del modelo Qwen/Qwen3.8-27B, desarrollada por qda-lab mediante su herramienta de busqueda automatizada de recetas de cuantizacion QDA. Se trata de una cuantizacion de pesos a 4 bits (INT4) y activaciones a 8 bits en coma flotante (FP8), conocida como W4A8, que reduce el peso del checkpoint de 55,6 GB en BF16 a 19,5 GB, es decir, un factor de compresion de aproximadamente 2,9x, manteniendo una precision practicamente identica a la del modelo original segun la evaluacion publicada por el autor.
 
-El interes practico reside en que reduce el coste de memoria del modelo original (27.781.427.952 parametros, unos 27,8 mil millones) manteniendo, segun la model card, una precision agregada del 79,1 % de media en cuatro benchmarks exigentes (matematicas de competicion, GPQA-Diamond, LiveCodeBench v6 e IFBench). Es, por tanto, una opcion orientada a despliegue en produccion de un modelo de razonamiento y codigo de tamano medio-grande, no un modelo nuevo entrenado desde cero.
+El modelo base es un transformer multimodal de tipo image-text-to-text con 27.781.427.952 parametros totales (unos 27,8 mil millones), orientado a tareas de razonamiento, matematicas, codigo y comprension de imagenes. La cuantizacion se realizo con GPTQ sobre una copia del modelo rotada con Hadamard, de modo que la rotacion queda plegada en los pesos y no requiere transformacion en tiempo de ejecucion. El resultado se empaqueta en formato compressed-tensors para su uso con vLLM.
 
-La informacion publica disponible es limitada: la model card es muy breve y no detalla la composicion del dataset de calibracion, los idiomas soportados ni la licencia del checkpoint. El modelo base Qwen3.8-27B se describe en su repositorio oficial como un LLM denso nativo multimodal, orientado a codigo, flujos agenticos y automatizacion de oficina.
+Su relevancia actual radica en que permite desplegar un modelo de casi 28 mil millones de parametros multimodales en una unica GPU NVIDIA Hopper (H100 o H200) con una huella de memoria notablemente menor, sin sacrificar rendimiento medible en los benchmarks reportados. La licencia Apache-2.0, heredada del modelo base, facilita su adopcion en entornos comerciales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (modelo base Qwen3.8-27B, nativo multimodal); checkpoint cuantizado en formato compressed-tensors |
-| Parametros totales | 27.781.427.952 (~27,8 mil millones) |
-| Parametros activos | no disponible (modelo denso, no MoE) |
+| Arquitectura | Transformer multimodal (image-text-to-text); familia Qwen3.8, tag qwen3_5 |
+| Parametros totales | 27.781.427.952 (aprox. 27,8 mil millones) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | W4A8 (pesos a 4 bits, activaciones a 8 bits), formato compressed-tensors |
+| Tipos de cuantizacion | W4A8: pesos INT4 en grupos de 128, activaciones FP8 dinamicas; GPTQ sobre copia rotada con Hadamard; formato compressed-tensors |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | safetensors (compressed-tensors), cargable en vLLM |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (compressed-tensors), compatible con vLLM |
 
 ## Arquitectura y entrenamiento
 
-El checkpoint hereda la arquitectura del modelo base Qwen3.8-27B, que el repositorio oficial de Alibaba describe como un LLM denso de pesos abiertos con capacidad multimodal nativa. Sobre esa arquitectura, qda-lab no ha reentrenado el modelo: ha aplicado un proceso de cuantizacion post-entrenamiento W4A8 en el que la configuracion de cuantizacion (que capas se cuantizan, con que granularidad y que rangos) se selecciona mediante una busqueda cerrada guiada por agentes LLM. La model card identifica la ejecucion concreta de esa busqueda (`r-883a8a93`, entrega manual `h4`), lo que sugiere un pipeline reproducible y evaluado de forma sistematica.
+El modelo base Qwen/Qwen3.8-27B es un transformer multimodal de tipo image-text-to-text, segun la etiqueta de pipeline y el tag qwen3_5. No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO en el modelo base.
 
-No se dispone de informacion sobre el dataset de calibracion, el numero de tokens empleado en la cuantizacion ni sobre si el modelo base incorpora RLHF, DPO u otras fases de alineamiento. Tampoco se detalla si el checkpoint conserva intactas las capacidades multimodales del modelo base tras la cuantizacion, un punto relevante porque la cuantizacion de capas de vision o de proyector multimodal suele ser delicada.
+La innovacion tecnica de esta ficha es el proceso de cuantizacion: los pesos se almacenan como enteros de 4 bits en grupos de 128 y las activaciones como FP8 dinamicas, aplicando GPTQ sobre una copia del modelo rotada con Hadamard. La rotacion se pliega dentro de los pesos, por lo que no hay coste de transformacion en inferencia. La receta concreta fue seleccionada por la busqueda automatizada de QDA, y el proceso completo se ejecuto en una unica GPU H100 de 80 GB. El modelo se distribuye en formato compressed-tensors y requiere el kernel W4A8 de vLLM, que exige compute capability 9.0 (arquitectura Hopper: H100, H200).
 
 ## Capacidades
 
-- Generacion de texto y razonamiento de multiples pasos, con resultados altos en benchmarks de matematicas de competicion (AIME 2025 y HMMT Feb 2026).
-- Razonamiento cientifico de nivel experto, evidenciado por la puntuacion en GPQA-Diamond.
-- Generacion de codigo competitivo y de nivel de entrevista tecnica (LiveCodeBench v6).
-- Seguimiento de instrucciones complejas y con restricciones (IFBench).
-- Capacidad multimodal nativa heredada del modelo base Qwen3.8-27B (vision), aunque no se confirma en la model card que se preserve tras la cuantizacion.
-- Soporte de tool calling y function calling: no confirmado explicitamente en la informacion disponible, aunque el modelo base esta orientado a flujos agenticos.
-- Soporte de agentes y razonamiento multi-paso: coherente con el perfil de benchmarks del modelo base, sin detalle tecnico publicado.
-- Capacidades multilingues: no disponible.
+- Generacion de texto y razonamiento en modo thinking (el razonamiento termina en el token ``), con control mediante `reasoning_effort` (por ejemplo, `"medium"`).
+- Razonamiento matematico avanzado, evaluado en AIME 2025 y HMMT Feb 2026.
+- Razonamiento cientifico de nivel experto, evaluado en GPQA-Diamond.
+- Generacion y resolucion de codigo, evaluada en LiveCodeBench.
+- Seguimiento de instrucciones complejas, evaluado en IFBench.
+- Conocimiento general y razonamiento multietapa, evaluado en MMLU-Pro.
+- Procesamiento de imagenes y texto (pipeline image-text-to-text), lo que habilita tareas de comprension visual combinadas con texto.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible de forma explicita, aunque el modo thinking y el formato conversacional lo permiten.
 
 ## Casos de uso
 
-- Razonamiento matematico asistido: resolucion de problemas de competicion y verificacion de demostraciones, aprovechando el 81,8 % en AIME 2025 + HMMT Feb 2026 del checkpoint cuantizado.
-- Generacion de codigo en produccion: el 86,0 % en LiveCodeBench v6 lo hace adecuado para asistentes de programacion, generacion de tests y revision de parches en pipelines de CI/CD.
-- Evaluacion cientifica y tecnica: con 80,3 % en GPQA-Diamond, sirve para responder preguntas de nivel posgrado en fisica, quimica y biologia dentro de herramientas de investigacion internas.
-- Agentes automatizados con instrucciones estrictas: el 68,3 % en IFBench indica buena adherencia a formatos y restricciones, util para generacion de informes estructurados o extraccion de datos con esquemas fijos.
-- Despliegue en infraestructura propia con vLLM: al cargarse directamente con `vllm serve`, encaja en plataformas internas que ya usan el motor de vLLM y necesitan un modelo de ~28B con menor huella de memoria que el original en BF16.
-- Automatizacion de oficina y procesamiento documental: el modelo base esta orientado a tareas de oficina y es multimodal, por lo que puede emplearse en resumen de documentos y extraccion de informacion, siempre que se valide que la cuantizacion conserva la via visual.
-- Servicio de inferencia gestionado: existe una ficha del checkpoint en FriendliAI, lo que permite desplegarlo como API sin gestionar GPU propia.
+- Razonamiento matematico asistido: el modelo obtiene 89,3 en AIME 2025 en modo thinking, por lo que es adecuado para tutoria o verificacion de problemas de competicion y calculo simbolico paso a paso.
+- Generacion de codigo en produccion: con 86,8 en LiveCodeBench, puede integrarse en pipelines de revision y generacion de codigo, siempre que el backend sea vLLM sobre GPU Hopper.
+- Analisis de documentos con imagenes: al ser image-text-to-text, permite extraer y razonar sobre contenido de capturas, diagramas o documentos escaneados combinados con instrucciones textuales.
+- Evaluacion cientifica y QA de dominio experto: su 81,9 en GPQA-Diamond lo hace util para asistentes de investigacion que requieren razonamiento de nivel graduado.
+- Despliegue en una sola GPU: con 19,5 GB de pesos, cabe en una H100 o H200 individual, lo que simplifica la infraestructura frente al BF16 de 55,6 GB.
+- Seguimiento estricto de instrucciones: con 66,9 en IFBench, es apto para tareas de formateo, extraccion estructurada y generacion de respuestas con restricciones.
+- Prototipado e investigacion en cuantizacion: la receta y los datos de calibracion son publicos, lo que permite reproducir el proceso y estudiar el impacto de W4A8 en modelos multimodales.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card del checkpoint cuantizado (vLLM 0.27.1 sobre GH200, batching estatico, muestreo `temperature=1.0, top_p=0.95, top_k=20, presence_penalty=0.0`, semillas 17+j):
+Resultados publicados por el autor (thinking mode, pass@1 promediado sobre 1-32 semillas, mismas condiciones para ambos modelos):
 
-| Benchmark | Puntuacion (%) |
-|---|---|
-| Math (AIME 2025 + HMMT Feb 2026) | 81,8 |
-| GPQA-Diamond | 80,3 |
-| LiveCodeBench v6 | 86,0 |
-| IFBench | 68,3 |
-| Media | 79,1 |
+| Benchmark | BF16 (55,6 GB) | QDA W4A8 (19,5 GB) |
+|---|---|---|
+| AIME 2025 | 88,0 | 89,3 |
+| HMMT Feb 2026 | 74,1 | 75,6 |
+| GPQA-Diamond | 82,0 | 81,9 |
+| IFBench | 67,7 | 66,9 |
+| MMLU-Pro | 83,7 | 82,6 |
+| LiveCodeBench | 85,8 | 86,8 |
+| Media | 80,2 | 80,5 |
 
-No se han publicado en la informacion disponible los resultados del modelo base sin cuantizar ni de otras variantes de cuantizacion, por lo que no es posible calcular la perdida exacta atribuible al proceso W4A8.
+Configuracion de evaluacion: max new tokens de 81.920 para AIME 2025, HMMT Feb 2026 y LiveCodeBench, y 32.768 para GPQA-Diamond, IFBench y MMLU-Pro; temperatura 1,0, top-p 0,95, top-k 20, min-p 0, sin penalizacion de presencia ni de repeticion; thinking activado con `reasoning_effort: medium`; MTP y decodificacion especulativa desactivados.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio ocupa 19,5 GB en disco; en W4A8 la huella de pesos ronda ese orden de magnitud, a la que hay que sumar cache KV y buffers de activacion (dependientes del contexto y del batch).
-- GPU recomendadas: la evaluacion oficial se realizo en NVIDIA GH200. Para produccion son razonables A100 80 GB, H100 80 GB o L40S 48 GB, especialmente con contextos largos o batches grandes.
-- GPU de consumo: con ~20 GB de pesos, cabe en tarjetas de 24 GB (RTX 4090, RTX 3090) para contextos moderados y batch pequeno; en 16 GB no es viable sin reducir contexto o usar variantes mas agresivas.
-- Opciones de despliegue: vLLM es la via soportada de forma nativa (`vllm serve qda-lab/QDA-Qwen3.8-27B-W4A8`). El formato compressed-tensors no es directamente compatible con llama.cpp u Ollama sin conversion a GGUF, que no se ofrece en el repositorio. Tambien esta disponible como endpoint gestionado en FriendliAI.
-- Latencia y throughput: no disponibles. La model card solo indica batching estatico en GH200, sin cifras de tokens por segundo.
+- VRAM estimada para inferencia: aproximadamente 19,5 GB solo para los pesos en W4A8; hay que sumar la memoria de activaciones, cache KV y overhead del runtime, por lo que se recomienda una GPU con al menos 24-40 GB.
+- GPU recomendadas: NVIDIA H100 o H200 (sm90, compute capability 9.0). El kernel W4A8 de vLLM exige compute capability 9.0, por lo que no funciona en GPUs Ampere o Ada.
+- Cabe en consumer GPU: no, segun la restriccion del kernel W4A8, que limita el despliegue a GPUs Hopper de centro de datos.
+- Opciones de despliegue: vLLM (`vllm serve qda-lab/QDA-Qwen3.8-27B-W4A8`); el modelo se distribuye en formato compressed-tensors compatible con vLLM. No se indica soporte para llama.cpp, Ollama o TGI.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- El proceso de cuantizacion se ejecuto en 1x H100 (80 GB); la reconstruccion de los pesos no es bit-identica al checkpoint publicado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QDA-Qwen3.8-27B-W4A8 | ~27,8 B (denso) | no disponible | W4A8 | no disponible | Hugging Face, vLLM, FriendliAI |
-| Qwen/Qwen3.8-27B (base) | ~27,8 B (denso) | no disponible | BF16 (original) | no disponible | Hugging Face, GitHub oficial |
-| Otras variantes cuantizadas del mismo base | no disponible | no disponible | no disponible | no disponible | no disponible |
+| QDA-Qwen3.8-27B-W4A8 | 27,8 mil millones | no disponible | W4A8, compressed-tensors, 19,5 GB | Apache-2.0 | Hugging Face, vLLM en Hopper |
+| Qwen/Qwen3.8-27B (base) | 27,8 mil millones | no disponible | BF16, 55,6 GB | Apache-2.0 | Hugging Face |
+| Alternativas de otros laboratorios | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos publicados de benchmarks de los modelos alternativos en la informacion proporcionada, por lo que no se incluye comparacion de rendimiento numerica.
+No se dispone en la informacion proporcionada de datos sobre otros modelos comparables de la misma categoria (mismo tamano o misma tarea) para establecer una comparativa con cifras de rendimiento.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion W4A8 puede degradar tareas sensibles a la precision numerica; la model card no publica la diferencia frente al modelo base, solo la puntuacion absoluta del checkpoint.
-- No se confirma que las capacidades multimodales del modelo base sobrevivan a la cuantizacion; conviene validarlas antes de usarlas en produccion.
-- No hay informacion sobre sesgos, datos de entrenamiento ni evaluaciones de seguridad del checkpoint ni del modelo base.
-- Riesgo de alucinacion propio de un LLM de este tamano, especialmente en dominios fuera de los benchmarks evaluados (matematicas, ciencia, codigo e instrucciones).
-- Longitud de contexto e idiomas soportados no documentados: no se debe asumir el contexto del modelo base sin verificarlo.
-- Licencia no indicada en el repositorio: es imprescindible consultar la licencia del modelo base Qwen3.8-27B antes de cualquier uso comercial.
-- El checkpoint tiene un uso muy bajo (7 descargas, 0 likes) y procede de un articulo aun en evaluacion (envio a MLSys 2027); no es un artefacto con historial de produccion.
-- La evaluacion se hizo con un unico motor (vLLM 0.27.1) y un unico hardware (GH200); el rendimiento en otras configuraciones puede diferir.
+- Restriccion de hardware: el kernel W4A8 de vLLM solo funciona en GPUs con compute capability 9.0 (H100, H200), lo que excluye GPUs consumer y de generaciones anteriores.
+- La evaluacion la publica el propio autor del modelo; no se dispone de validacion independiente de los resultados.
+- La reconstruccion de los pesos no es bit-identica al checkpoint publicado, lo que puede introducir diferencias menores en reproducibilidad.
+- Riesgo de alucinacion: no se documenta en la informacion proporcionada, pero es inherente a los modelos generativos de este tamano.
+- Sesgos conocidos: no disponibles en la informacion proporcionada.
+- Idiomas soportados: no disponibles; no se puede confirmar cobertura multilingue.
+- Longitud de contexto: no disponible; conviene verificarla en la model card del modelo base antes de disenar aplicaciones con contexto largo.
+- Licencia Apache-2.0, heredada del modelo base, permite uso comercial; aun asi, deben revisarse las condiciones del modelo base Qwen/Qwen3.8-27B.
+- El modelo esta pensado para inferencia con vLLM; no se documenta soporte para otros runtimes, lo que limita la portabilidad.
 
 ## Enlaces
 
-- Checkpoint en Hugging Face: https://huggingface.co/qda-lab/QDA-Qwen3.8-27B-W4A8
+- Modelo en Hugging Face: https://huggingface.co/qda-lab/QDA-Qwen3.8-27B-W4A8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Repositorio oficial del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
-- Endpoint gestionado en FriendliAI: https://friendli.ai/models/qda-lab/QDA-Qwen3.8-27B-W4A8
+- Paper QDA: https://arxiv.org/abs/2611.23388
+- Repositorio QDA: https://github.com/humanfia/qda
+- Dataset de entradas de receta: https://huggingface.co/datasets/qda-lab/qda-recipe-inputs
+- Receta de cuantizacion: https://huggingface.co/datasets/qda-lab/qda-recipe-inputs/blob/main/QDA-Qwen3.8-27B-W4A8/qwen3.8-27b-w4a8.yaml

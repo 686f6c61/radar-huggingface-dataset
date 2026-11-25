@@ -2,120 +2,108 @@
 
 ## Resumen
 
-ko-hand-ocr-vl-GGUF es la versión cuantizada en formato GGUF de ko-hand-ocr-vl, un modelo de visión-lenguaje de 0,8B parámetros especializado en reconocimiento óptico de caracteres (OCR) de escritura manual en coreano (hangul). Lo desarrolla el usuario localdeel y se construye mediante fine-tuning de Qwen3.5-0.8B sobre datos sintéticos de caligrafía coreana, sin modificar la arquitectura original. El problema que resuelve es concreto: convertir una fotografía de texto manuscrito en coreano directamente a texto, algo que el modelo base no hace bien (su CER en escritura manual ronda el 98-160 %, es decir, prácticamente inutilizable para esta tarea).
+ko-hand-ocr-vl-GGUF es la versión cuantizada en formato GGUF de ko-hand-ocr-vl, un modelo visión-lenguaje de 0,66 mil millones de parámetros especializado en reconocimiento óptico de caracteres (OCR) de escritura manual en hangul (coreano). Lo desarrolla el autor independiente localdeel y se construye mediante ajuste fino supervisado sobre Qwen3.5-0.8B, sin modificar la arquitectura original, lo que permite desplegarlo en Ollama, LM Studio, llama.cpp, vLLM o transformers sin código adicional.
 
-El modelo es relevante porque ofrece OCR de manuscrito coreano con pesos abiertos, licencia Apache-2.0 y un tamaño que cabe en cualquier GPU de consumo, e incluso en CPU. Su arquitectura es la de Qwen3.5-0.8B: un híbrido de 18 capas Gated DeltaNet y 6 capas de atención, más un codificador visual de aproximadamente 100 millones de parámetros, con 752.393.024 parámetros totales. El repositorio ocupa 1,5 GB e incluye cuantizaciones Q4_K_M (505 MB) y Q8_0 (774 MB), además del proyector multimodal mmproj en F16 (195 MB).
+El modelo resuelve un problema concreto: leer líneas y fotografías completas de formularios manuscritos coreanos, una tarea en la que los OCR tradicionales (Tesseract, EasyOCR, PaddleOCR) fallan estrepitosamente por la variabilidad caligráfica del hangul. Frente al modelo base sin ajustar, la mejora es drástica: la similitud de jamo en fuentes de prueba pasa de 53,0 a 97,0 y el CER baja de 161,8 a 5,8.
 
-Se trata de una **versión intermedia**: se ha entrenado durante 2.000 de los 16.000 pasos previstos, y el autor anuncia que publicará los pesos finales y una comparativa contra otros seis motores de OCR en la misma dirección. El modelo se distribuye con la plantilla de chat modificada (el bloque de razonamiento permanece cerrado) y con `top_k: 1` fijado, de modo que la salida sea determinista línea a línea.
+Es relevante ahora porque ofrece, en un paquete de 570 MB (Q8_0) más 195 MB de proyector multimodal, un rendimiento de OCR manuscrito coreano que supera a modelos visión-lenguaje de mayor tamaño como Qwen3-VL-2B-Instruct o PaddleOCR-VL-1.6, con licencia Apache 2.0 y compatibilidad con el ecosistema llama.cpp.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: 18 capas Gated DeltaNet + 6 capas de atención, con codificador visual de ~100 M de parámetros (arquitectura Qwen3.5-0.8B sin modificaciones) |
-| Parametros totales | 752.393.024 |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | 8.192 tokens en la configuración de referencia (Ollama/llama.cpp); la imagen se reduce a un máximo de 4.096 tokens |
-| Tipos de cuantizacion | Q4_K_M (505 MB), Q8_0 (774 MB, recomendada); proyector multimodal mmproj en F16 (195 MB); safetensors en bf16 en el repositorio base |
-| Idiomas soportados | coreano (ko) y ingles (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (este repositorio); safetensors en localdeel/ko-hand-ocr-vl |
+| Arquitectura | Transformer visión-lenguaje (Qwen3.5-0.8B, sin cambios estructurales) |
+| Parametros totales | 558.993.216 (tras recorte de vocabulario; 853M en la versión full-vocab) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q4_K_M, Q8_0; proyector multimodal en F16 |
+| Idiomas soportados | coreano (ko), inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors en el repo base localdeel/ko-hand-ocr-vl) |
 
 ## Arquitectura y entrenamiento
 
-El modelo conserva íntegramente la arquitectura de Qwen3.5-0.8B: un transformer híbrido compuesto por 18 capas Gated DeltaNet y 6 capas de atención convencional, más un codificador de visión de aproximadamente 100 millones de parámetros. El autor indica explícitamente que no se ha cambiado ninguna capa, de modo que el modelo es compatible con cualquier runtime que ya soporte Qwen3.5 (Ollama, LM Studio, llama.cpp, vLLM, transformers) sin necesidad de código específico.
+El modelo parte de Qwen3.5-0.8B, un transformer denso de tipo visión-lenguaje, y se ajusta finamente sobre datos de escritura manual coreana sin alterar la topología de la red. La innovación técnica principal no está en la arquitectura sino en la compresión del vocabulario: de los 248.077 tokens originales de Qwen3.5 se conservan 59.453, limitados a hangul, jamo, dígitos, signos, fragmentos cortos de inglés y los tokens vistos en entrenamiento y evaluación. Este recorte reduce el modelo de 853M a 660M parámetros sin reentrenamiento y mantiene respuestas idénticas carácter a carácter en las pruebas realizadas, además de mejorar la velocidad de generación entre un 26% y un 36% en llama.cpp.
 
-El entrenamiento se realizó con LoRA de rango 64 aplicado a todas las capas lineales, incluido el codificador visual, con la pérdida calculada únicamente en las posiciones de respuesta, y posteriormente se fusionó (merge) en los pesos finales. Todos los datos de entrenamiento son sintéticos: un 55 % son líneas dibujadas con 450 tipografías manuscritas, un 35 % son fotografías simuladas de 1 a 10 líneas escritas a mano sobre papel y fotografiadas sobre una mesa (con lado largo entre 640 y 2.400 píxeles), y un 10 % son líneas de texto impreso. Se aplicaron aumentos de datos que incluyen marcas de borrado, deformación de trazos, inclinación, sombras, desenfoque y compresión JPEG. Las 30 tipografías de prueba y las 11 fotografías de evaluación quedaron excluidas del entrenamiento.
-
-Las modificaciones de configuración respecto al modelo base son tres: el bloque de razonamiento de la plantilla de chat permanece siempre cerrado, la imagen se limita a 4.096 tokens y se fija `top_k: 1` para forzar la selección del token más probable.
+El entrenamiento se apoya en un corpus sintético de caligrafía generado con 450 fuentes de escritura manual, a las que se aplican perturbaciones de textura de papel, inclinación y marcas de borrado. Los conjuntos de evaluación excluyen deliberadamente las fuentes de prueba y cualquier fuente con similitud superior a 0,7 respecto a las de entrenamiento. No se documenta en la información disponible el uso de RLHF o DPO, ni el volumen total de tokens de entrenamiento. El proyector multimodal (mmproj) incorpora los límites de resolución de imagen (64 a 4.096 tokens) directamente en el archivo, de modo que llama.cpp y LM Studio los aplican automáticamente.
 
 ## Capacidades
 
-- OCR de escritura manual en coreano: recibe una fotografía y devuelve el texto en hangul, una línea por línea de salida.
-- Lectura de imagen completa, no solo de recortes: procesa la fotografía entera y segmenta implícitamente las líneas.
-- Funciona con cualquier instrucción de entrada: "OCR", "lee el texto", en coreano, en inglés o incluso con un mensaje vacío; la salida es siempre solo texto.
-- Inferencia determinista: con `temperature 0` y `top_k 1`, la salida es estable entre ejecuciones, lo que es adecuado para OCR.
-- Compatibilidad con tool calling y agentes: no documentada en la información disponible.
-- Capacidades multilingües: limitadas a coreano e inglés; el coreano es el idioma objetivo real.
-- Capacidades especiales: OCR de texto impreso (entrenado con un 10 % de líneas impresas), tolerancia a sombras, desenfoque, inclinación, JPEG y marcas de borrado.
-- No hay modo de razonamiento visible: el bloque de pensamiento está cerrado por plantilla.
+- Reconocimiento de escritura manual coreana (hangul) en líneas aisladas y en fotografías completas de formularios.
+- Lectura de caracteres compuestos por jamo, incluyendo sílabas sin sentido léxico (nombres, razones sociales) que exigen reconocimiento puramente visual.
+- Procesamiento de campos de formulario con etiquetas («성명 : …», «일자 : 2026.03.17»), títulos, números, fechas, acrónimos en inglés y símbolos.
+- Entrada image-text-to-text conversacional mediante pipeline estándar de Hugging Face.
+- Compatibilidad con tool calling heredada del modelo base Qwen3.5 (no verificada específicamente para esta especialización).
+- Capacidades multilingües limitadas a coreano e inglés.
+- Soporte de decodificación greedy documentado en las evaluaciones; no se especifican modos de razonamiento extendido.
 
 ## Casos de uso
 
-- Digitalizacion de formularios manuscritos en coreano: el modelo puede procesar la fotografía de un formulario rellenado a mano (por ejemplo, campos de nombre, departamento o dirección) y devolver el texto línea a línea, lo que permite volcarlo después a una base de datos mediante un parser sencillo.
-- OCR en dispositivo o en el borde: con Q8_0 (774 MB) más el proyector mmproj (195 MB), el conjunto cabe en menos de 1 GB de memoria, por lo que puede ejecutarse en portátiles, mini-PC o incluso en CPU sin GPU dedicada, algo relevante para aplicaciones de digitalización en campo.
-- Archivado y catalogación de documentos coreanos: permite extraer el texto de fotografías de apuntes, cartas o notas manuscritas para indexarlas en un sistema de búsqueda, sin depender de servicios en la nube.
-- Preprocesado para pipelines de PLN en coreano: la salida de texto puede alimentar directamente tareas posteriores de normalización, traducción, análisis de sentimiento o resumen, sustituyendo a la introducción manual de texto.
-- Automatización de la entrada de datos en aplicaciones móviles: integrado tras una API compatible con OpenAI, una app puede enviar una imagen en base64 y recibir el texto, con latencia baja gracias al tamaño reducido del modelo.
-- Asistencia a la accesibilidad: conversión de notas manuscritas en coreano a texto digital para personas con dificultades de lectura o para lectores de pantalla.
-- Procesamiento por lotes en servidores modestos: al ocupar menos de 1 GB en Q8_0, se pueden desplegar varias instancias en una sola GPU o servir peticiones concurrentes con vLLM (`--limit-mm-per-prompt '{"image": 1}'`).
-- Extracción de texto para investigación lingüística: permite construir corpus de escritura manual coreana a partir de fotografías, aunque con las limitaciones de precisión indicadas más abajo.
+- Digitalización de formularios manuscritos en oficinas públicas y empresas coreanas: el modelo procesa la fotografía completa de un documento y extrae el texto de todos los campos en una sola pasada, con un CER de 15,3 a nivel de página y similitud de jamo del 94,3.
+- Automatización de archivo histórico de documentos en hangul: permite transcribir lotes de imágenes escaneadas sin recortar líneas manualmente, reduciendo el preprocesamiento respecto a OCR de línea.
+- Extracción de datos en aplicaciones móviles de banca o seguros: con 570 MB en Q8_0 y 195 MB de proyector, cabe en dispositivos con GPU de 8 GB y permite validar solicitudes manuscritas en el propio terminal.
+- Verificación de firmas y anotaciones en actas: el modelo mantiene un 61,3% de acierto en documentos de baja resolución con firma, útil como primera pasada con revisión humana posterior.
+- Procesamiento de correspondencia y notas manuscritas en atención al cliente: la ventana de imagen de hasta 4.096 tokens admite fotografías de páginas completas sin fragmentar.
+- Integración en pipelines de digitalización con llama.cpp u Ollama: al ser GGUF nativo, se puede desplegar en servidores sin GPU dedicada mediante cuantización Q4_K_M (345 MB) y procesar colas de documentos por lotes.
+- Investigación en OCR de escrituras no latinas: sirve como línea base reproducible con licencia Apache 2.0 para comparar técnicas de ajuste fino sobre modelos visión-lenguaje pequeños.
 
 ## Benchmarks y rendimiento
 
-Datos medidos por el autor en el mismo equipo (RTX 5060 Laptop, 8 GB) con las mismas pruebas. "Similitud jamo" es la similitud a nivel de jamo (letra componente) y "CER" es la tasa de error de caracteres; en similitud, más alto es mejor, y en CER, más bajo es mejor.
+Resultados medidos por el autor en una RTX 5060 Laptop de 8 GB, con decodificación greedy. La similitud de jamo es mejor cuanto más alta; el CER (tasa de error de caracteres) es mejor cuanto más bajo.
 
-Lectura línea a línea:
+| Modelo | Tamaño | Fuentes de prueba (jamo / CER) | Fuentes no vistas (jamo) | Líneas en fotos (jamo / CER) | Líneas/s en GPU |
+|---|---:|---:|---:|---:|---:|
+| ko-hand-ocr-vl (este, 660M) | 1,27 GB | 97,0 / 5,8 | 97,4 | 93,4 / 15,8 | 10,8 |
+| Qwen3.5-0.8B (base) | 1,63 GB | 53,0 / 161,8 | 51,4 | 54,2 / 115,3 | 9,6 |
+| ko-hand-ocr (41M, solo líneas) | 78 MB | 96,8 / 7,2 | 97,3 | 94,2 / 13,4 | 42,0 |
+| Qwen3-VL-2B-Instruct | 3,96 GB | 66,6 / 79,1 | 68,0 | 69,9 / 38,3 | 7,3 |
+| PaddleOCR-VL-1.6 | 1,79 GB | 63,6 / 62,9 | 66,5 | 61,7 / 44,0 | 1,2 |
+| ko-trocr | 408 MB | 78,2 / 42,3 | 80,4 | 78,5 / 39,2 | 6,1 |
+| PaddleOCR PP-OCRv5 (korean) | 13 MB | 72,7 / 40,5 | 75,3 | 71,8 / 39,7 | 397,4 |
+| EasyOCR (korean) | 15 MB | 56,6 / 64,3 | 64,6 | 66,9 / 55,0 | 81,3 |
+| Tesseract 5 (kor+eng) | 6 MB | 17,7 / 97,3 | 19,7 | 13,2 / 98,6 | — |
 
-| Modelo | 6 tipografias de prueba (similitud jamo / CER) | 11 fotos, casilla de linea (similitud jamo / CER) |
-|---|---:|---:|
-| ko-hand-ocr-vl (este) | 89,1 / 14,1 | 84,6 / 23,4 |
-| Qwen3.5-0.8B (original) | 51,1 / 160,6 | 55,1 / 98,6 |
+En fotografía completa (página entera), el modelo alcanza una similitud de jamo de 94,3 y un CER de 15,3, frente a 72,7/42,1 de Qwen3.5-0.8B, 76,9/41,1 de Qwen3-VL-2B-Instruct y 79,9/37,3 de PaddleOCR-VL-1.6. La página de baja resolución con firma, excluida del cómputo, obtiene un 61,3%.
 
-Lectura de fotografía completa:
-
-| Modelo | Similitud jamo (pagina) | CER (pagina) | Foto mas baja (pagina) | Similitud jamo (pares de linea) |
-|---|---:|---:|---:|---:|
-| ko-hand-ocr-vl (este) | 82,0 | 31,6 | 63,6 | 61,6 |
-| Qwen3.5-0.8B (original) | 72,7 | 42,1 | 55,3 | 62,1 |
-
-Consistencia según la vía de despliegue:
-
-| Via de ejecucion | 6 tipografias de prueba | Casilla de linea en fotos | Foto completa |
-|---|---:|---:|---:|
-| transformers (bf16, safetensors) | 89,1 | 84,6 | 82,0 |
-| llama.cpp `llama-server` — Q8_0 | 88,5 | 86,9 | 83,7 |
-| LM Studio — Q8_0, sin tocar ajustes | 88,5 | 86,2 | 84,9 |
-| Ollama — `hf.co/...:Q8_0`, sin tocar ajustes | 88,2 | 86,9 | 83,7 |
-
-El autor advierte de que el conjunto de prueba de fotografías es de solo 11 imágenes, por lo que cada una pesa aproximadamente 9 puntos porcentuales en la métrica de página.
+La consistencia entre entornos de despliegue es alta: transformers (bf16) 96,9 en fuentes de prueba y 94,3 en página completa; llama-server Q8_0 96,7 y 91,8; LM Studio Q8_0 96,4 y 91,8; Ollama Q8_0 96,2 y 91,8. La diferencia en fotografía se atribuye al redimensionado de imagen de llama.cpp (relleno negro y reducción mínima de 8 tokens), no a la cuantización.
 
 ## Requisitos de hardware
 
-- VRAM estimada: Q4_K_M (505 MB) más mmproj F16 (195 MB) ronda los 700 MB; Q8_0 (774 MB) más mmproj (195 MB) ronda 1,0 GB. Con contexto de 8.192 tokens hay que sumar el espacio de la caché KV.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM. El autor validó el modelo en una RTX 5060 Laptop de 8 GB. También es viable en A100, H100 o RTX 4090, aunque están sobredimensionadas para este tamaño.
-- GPU de consumo: sí, cabe con holgura en cualquier GPU de consumo moderna (RTX 3060, 4060, 4090, etc.), e incluso en CPU, dado que el conjunto en Q8_0 no llega a 1 GB.
-- Opciones de despliegue: Ollama (`ollama run hf.co/localdeel/ko-hand-ocr-vl-GGUF:Q8_0`), LM Studio (`lms get https://huggingface.co/localdeel/ko-hand-ocr-vl-GGUF@q8_0`), llama.cpp (`llama-server -hf localdeel/ko-hand-ocr-vl-GGUF:Q8_0 --temp 0`), vLLM (`vllm serve localdeel/ko-hand-ocr-vl --max-model-len 8192 --limit-mm-per-prompt '{"image": 1}'`) y transformers con `AutoModelForImageTextToText`.
-- Latencia y throughput: no disponibles. El autor no publica medidas de tiempo por imagen ni de tokens por segundo.
-- Nota: el autor no pudo probar vLLM directamente porque desarrolla en Windows, aunque afirma que debería funcionar por la compatibilidad con Qwen3.5.
+- VRAM estimada: aproximadamente 1,5 GB para el modelo Q8_0 más el proyector F16 en bf16; alrededor de 1,0 GB con Q4_K_M.
+- GPU recomendadas: cualquier GPU con 4 GB o más de VRAM; el autor validó en RTX 5060 Laptop de 8 GB. Para lotes grandes, A100 o H100 no son necesarias por el tamaño del modelo.
+- Cabe en GPU de consumo: sí, en GTX 1650 4 GB, RTX 3060, RTX 4060, RTX 4090 y equivalentes.
+- Opciones de despliegue: llama.cpp (llama-server), Ollama, LM Studio, vLLM y transformers con safetensors.
+- Rendimiento: 10,8 líneas/s en GPU con Q8_0; el modelo de 41M de la misma familia alcanza 42,0 líneas/s, por lo que para líneas aisladas en producción de alto volumen puede ser preferible el modelo pequeño.
+- En CPU: no se publican cifras de latencia; el tamaño reducido permite inferencia en CPU con llama.cpp, aunque la velocidad será sustancialmente menor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento OCR | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| ko-hand-ocr-vl-GGUF (este) | 752 M | 8.192 tokens (imagen a 4.096) | 89,1 similitud jamo / 14,1 CER en línea a línea; 82,0 / 31,6 en página | Apache-2.0 | GGUF y safetensors en Hugging Face |
-| Qwen3.5-0.8B (modelo base) | 0,8 B | el del modelo base | 51,1 / 160,6 en línea a línea; 72,7 / 42,1 en página | Apache-2.0 | Hugging Face |
-| ko-hand-ocr (mismo autor) | 41 M | no disponible | No comparable directamente: lee solo una línea ya recortada; según el autor, sigue siendo más preciso que este modelo para ese caso concreto | no disponible en la información | Hugging Face y repositorio en GitHub |
+| Modelo | Parámetros | Contexto | OCR manuscrito coreano (jamo) | Licencia | Disponibilidad |
+|---|---:|---|---:|---|---|
+| ko-hand-ocr-vl-GGUF | 660M | no disponible | 97,0 (fuentes) / 94,3 (página) | Apache 2.0 | GGUF y safetensors en HF |
+| Qwen3-VL-2B-Instruct | 2B | no disponible | 66,6 / 76,9 | Apache 2.0 | HF, múltiples formatos |
+| PaddleOCR-VL-1.6 | 1,6B | no disponible | 63,6 / 79,9 | Apache 2.0 | HF, PaddlePaddle |
+| ko-hand-ocr (41M) | 41M | no disponible | 96,8 / no medido en página | no disponible | HF |
 
-No se dispone de datos sobre otros motores de OCR coreano comparables; el autor anuncia una tabla comparativa contra seis motores de OCR en la publicación de los pesos finales.
+Frente a los modelos generalistas de mayor tamaño, la especialización en hangul manuscrito marca una diferencia de más de 20 puntos en similitud de jamo. Frente al modelo de 41M de la misma familia, la ventaja está en la lectura de páginas completas, no en líneas aisladas.
 
 ## Limitaciones y advertencias
 
-- **No se ha entrenado con escritura manual humana real**: solo con caligrafía generada a partir de tipografías. La letra cursiva o con trazos superpuestos es un punto débil declarado por el propio autor.
-- **Versión intermedia**: solo 2.000 de los 16.000 pasos de entrenamiento. Los pesos finales sustituirán a estos en la misma dirección.
-- **Conjunto de prueba muy pequeño**: 11 fotografías, de modo que la métrica de página tiene una varianza alta (cada imagen pesa unos 9 puntos porcentuales).
-- **Riesgo de alucinación**: no cuantificado por el autor, pero al ser un modelo generativo de 0,8 B existe la posibilidad de que produzca texto plausible que no esté en la imagen, especialmente con caligrafía fuera de distribución.
-- **No interpreta estructuras de formato**: no lee tablas, sellos ni firmas; devuelve únicamente texto línea a línea, sin estructura.
-- **Cobertura idiomática limitada**: coreano como idioma objetivo e inglés de forma secundaria. No se ha validado para otras lenguas.
-- **Cabeza `mtp.*` sin ajustar**: en los safetensors, la cabeza de predicción multi-token no se ha afinado. Según el autor, esto no cambia la respuesta pero puede reducir el acierto de la predicción especulativa. No está presente en los GGUF.
-- **Dependencia de configuración estricta**: el autor recomienda `temperature 0` (y el archivo fija `top_k 1`). Cambiar estos parámetros puede degradar la salida, ya que el OCR requiere decodificación determinista.
-- **Licencia**: Apache-2.0 tanto en este modelo como en el base Qwen3.5-0.8B, por lo que no hay restricciones conocidas para uso comercial. El autor remite al archivo `NOTICE` para más detalle.
-- **Aviso de producción**: al tratarse de una versión intermedia y con un conjunto de evaluación reducido, conviene validar el modelo con muestras propias antes de desplegarlo en un flujo crítico.
+- El ámbito es exclusivamente OCR de coreano manuscrito; no es un modelo de propósito general y su rendimiento en otras tareas de visión o texto no está documentado.
+- Los idiomas soportados son coreano e inglés; no se garantiza calidad en otras escrituras.
+- El recorte de vocabulario degrada ligeramente la similitud de jamo en líneas compuestas solo por palabras inglesas largas (de 98,34 a 98,01) y solo el 86,5% de esas 200 líneas de prueba coinciden exactamente con la versión full-vocab.
+- En llama.cpp, LM Studio y Ollama el rendimiento en fotografías es inferior al de transformers (91,8 frente a 94,3) por el método de redimensionado de imagen; Ollama 0.34.4 no lee los límites de resolución del mmproj y rinde peor (90,9 en líneas de foto).
+- El 61,3% en documentos de baja resolución con firma indica que no es fiable para verificación automática sin revisión humana.
+- Riesgo de alucinación inherente a los modelos generativos: puede producir texto plausible no presente en la imagen, especialmente en imágenes borrosas o con caracteres poco legibles.
+- No se documentan sesgos específicos ni evaluaciones de robustez frente a dominios distintos de los formularios y la caligrafía sintética.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías ni soporte.
+- La fecha de creación del repositorio (2026-10-07) y la versión de Qwen3.5 referenciada indican que el ecosistema base puede evolucionar; conviene fijar la revisión concreta en producción.
 
 ## Enlaces
 
-- Repositorio Hugging Face (GGUF): https://huggingface.co/localdeel/ko-hand-ocr-vl-GGUF
-- Repositorio Hugging Face (safetensors): https://huggingface.co/localdeel/ko-hand-ocr-vl
+- Repositorio GGUF: https://huggingface.co/localdeel/ko-hand-ocr-vl-GGUF
+- Repositorio safetensors base: https://huggingface.co/localdeel/ko-hand-ocr-vl
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Modelo hermano ko-hand-ocr (41 M): https://huggingface.co/localdeel/ko-hand-ocr
-- Repositorio de código del recorte de líneas ko-hand-ocr: https://github.com/jysvai/ko-hand-ocr
+- Modelo de líneas ko-hand-ocr (41M): https://huggingface.co/localdeel/ko-hand-ocr
+- Repositorio de la herramienta de recorte de líneas: https://github.com/jysvai/ko-hand-ocr
+- Revisión con vocabulario completo: https://huggingface.co/localdeel/ko-hand-ocr-vl-GGUF/tree/full-vocab

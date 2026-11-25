@@ -2,84 +2,93 @@
 
 ## Resumen
 
-FableOpus-9B-Delta-GGUF es la versión cuantizada en formato GGUF del modelo bingleai/FableOpus-9B-Delta, preparada por mradermacher para su uso con herramientas de inferencia local como llama.cpp, Ollama o LM Studio. El modelo base es un merge delta anclado en Qwen3.5-9B que combina el comportamiento de tool-use de la familia Fable-5 con un sesgo hacia las respuestas estilo Claude Opus, según la descripción de FriendliAI. Está pensado para tareas conversacionales y de llamada a funciones, y los archivos mmproj incluidos sugieren capacidades multimodales adicionales.
+FableOpus-9B-Delta-GGUF es la distribucion en formato GGUF del modelo bingleai/FableOpus-9B-Delta, un modelo de lenguaje de aproximadamente 8.950 millones de parametros (8,95 B) publicado por el usuario mradermacher. La model card del repositorio lo etiqueta como un merge y una destilacion que combina elementos de Qwen 3.5, Fable 5 y Claude Opus, aunque no se detalla la receta exacta de la mezcla ni los datos de destilacion. El resultado es un unico archivo de pesos en bf16 que se ha cuantizado a multiples precisiones para facilitar su despliegue en hardware modesto.
 
-Con 8.953.803.264 parámetros (aproximadamente 8,95 mil millones), el modelo se distribuye bajo licencia Apache-2.0 y está entrenado únicamente en inglés. La versión GGUF ofrece múltiples niveles de cuantización, desde f16 (18 GB) hasta Q2_K (3,9 GB), lo que permite adaptar el consumo de memoria a distintos tipos de hardware. La relevancia de esta ficha radica en que facilita la evaluación rápida de un modelo de tamaño medio con capacidades de agentes y posible visión, sin necesidad de acceder a los pesos originales en safetensors.
+La relevancia de esta ficha reside en que el repositorio original solo ofrece pesos en safetensors (bf16), mientras que esta version aporta 13 cuantizaciones GGUF distintas, desde Q2_K hasta f16, ademas de dos ficheros mmproj que sugieren capacidades multimodales. Esto permite ejecutar el modelo en CPU y en GPUs de consumo mediante llama.cpp, Ollama o cualquier runtime compatible con GGUF, algo imposible con los pesos completos en bf16.
+
+El modelo se distribuye bajo licencia Apache 2.0, esta etiquetado como conversacional y solo declara soporte para ingles. Con 305 descargas y 3 likes en el momento de la consulta, es un modelo de nicho orientado a experimentacion mas que a produccion a gran escala. No se han publicado resultados de benchmarks ni detalles sobre la longitud de contexto en la informacion disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (basado en Qwen3.5-9B, probablemente transformer) |
-| Parametros totales | 8.953.803.264 |
-| Parametros activos | no aplica (no es MoE) |
+| Arquitectura | Transformer (derivada de Qwen 3.5 segun tags; detalles no disponibles) |
+| Parametros totales | 8.953.803.264 (8,95 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, mmproj-Q8_0, mmproj-f16 |
-| Idiomas soportados | ingles |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (el modelo base usa safetensors) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (original en safetensors bf16) |
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles oficiales sobre la arquitectura interna ni el proceso de entrenamiento del modelo base. Según los metadatos y la descripción de FriendliAI, se trata de un "Opus-forward delta merge" anclado en Qwen3.5-9B, que conserva el comportamiento de tool-use de Fable-5 mientras sesga las respuestas hacia el estilo de Claude Opus. Esto sugiere una técnica de fusión de pesos (merge) más que un entrenamiento desde cero, probablemente combinando capas o interpolando parámetros de varios modelos base.
+La informacion disponible no describe la arquitectura interna mas alla de las etiquetas del repositorio, que apuntan a una base Qwen 3.5 combinada mediante merge con componentes etiquetados como Fable 5 y Claude Opus, y sometida a un proceso de destilacion. No se especifica el numero de capas, dimensiones ocultas, mecanismo de atencion ni si emplea atencion lineal o hibrida. Tampoco se documenta el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO.
 
-La presencia de archivos mmproj (multi-modal projection) en la versión GGUF indica que el modelo incorpora un proyector multimodal, probablemente para procesar imágenes, aunque no se especifica el tipo de encoder visual utilizado. Tampoco hay información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de técnicas como RLHF o DPO.
+El proceso de cuantizacion lo firma mradermacher con quantize_version 2 y output_tensor_quantised 1, generando cuantizaciones estaticas a partir de los pesos bf16 del modelo base. La model card indica que no se han generado cuantizaciones ponderadas con imatrix en el momento de la publicacion, lo que implica que las cuantizaciones IQ y K disponibles son estaticas y no aprovechan calibracion por importancia de pesos. Se incluyen ficheros mmproj (Q8_0 y f16) que actuan como suplemento multimodal, lo que sugiere que el modelo base incorpora algun tipo de proyeccion visual, aunque no se detalla su funcionamiento.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el modelo está orientado a diálogo y respuestas de estilo asistente, con un sesgo hacia el tono de Claude Opus.
-- Tool calling / function calling: heredado de la familia Fable-5, permite invocar funciones externas en flujos de agente.
-- Posible soporte multimodal: los archivos mmproj incluidos sugieren que el modelo puede procesar entradas de imagen, aunque no hay documentación que lo confirme.
-- Razonamiento multi-step: al estar basado en Qwen3.5, es probable que soporte cadenas de razonamiento, pero no hay benchmarks que lo verifiquen.
-- Idioma: exclusivamente inglés, sin soporte multilingüe declarado.
+- Generacion de texto conversacional en ingles, segun la etiqueta `conversational` del repositorio.
+- Razonamiento y respuesta multi-turno, derivado de su naturaleza de modelo de chat.
+- Capacidades multimodales potenciales: la presencia de ficheros mmproj Q8_0 y f16 indica soporte de entrada visual en el modelo base, aunque no se documenta el alcance.
+- Herencia de capacidades de los modelos fuente (Qwen 3.5, Fable 5, Claude Opus) por merge y destilacion, sin que se detalle cuales se conservan.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma.
+- Modo thinking explicito: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistentes conversacionales locales: al ser un GGUF de 9B, puede ejecutarse en una GPU de consumo (por ejemplo, RTX 3060 con 12 GB) usando Ollama o llama.cpp para ofrecer un chatbot privado sin conexión.
-- Automatizacion de tareas con tool calling: el modelo puede integrarse en pipelines que requieran llamar a APIs o ejecutar acciones (por ejemplo, consultar bases de datos, enviar correos) mediante function calling, gracias a su herencia Fable.
-- Prototipado rapido de agentes: su tamaño moderado y licencia permisiva permiten experimentar con arquitecturas de agente (ReAct, plan-ejecución) en entornos de desarrollo sin coste de API.
-- Analisis de imagenes en entornos sin GPU potente: si se confirma el soporte multimodal, podría usarse para extraer texto de capturas o describir imágenes con cuantizaciones ligeras (Q4_K_M) en hardware modesto.
-- Educacion e investigacion: sirve como ejemplo de merge delta y cuantización GGUF, útil para estudiar técnicas de fusión de modelos y su impacto en la calidad de salida.
-- Despliegue en edge devices: las cuantizaciones Q3_K_M o Q2_K (4,7 y 3,9 GB respectivamente) permiten ejecutar el modelo en dispositivos con poca memoria, como mini-PCs o portátiles sin GPU dedicada.
+- Experimentacion con merges y destilaciones: el modelo permite estudiar como se comporta una mezcla de Qwen 3.5, Fable 5 y Claude Opus en tareas conversacionales, usando las cuantizaciones Q4_K_M o Q5_K_M para iterar rapidamente en una sola GPU de consumo.
+- Prototipado de asistentes conversacionales en ingles: con Q4_K_S (5,5 GB) se puede desplegar un chatbot local en una RTX 3060 de 12 GB o superior, evaluando calidad antes de invertir en modelos mayores.
+- Despliegue en CPU con llama.cpp u Ollama: las cuantizaciones Q2_K (3,9 GB) y Q3_K_S (4,4 GB) permiten ejecutar el modelo en equipos sin GPU dedicada, util para demos y pruebas de integracion.
+- Evaluacion de capacidades multimodales: cargando el fichero mmproj junto con los pesos principales en llama.cpp se puede probar la entrada de imagenes, si el runtime lo soporta, para tareas de descripcion o VQA en ingles.
+- Generacion de texto en entornos con requisitos de licencia permisiva: la licencia Apache 2.0 facilita su uso en productos comerciales sin obligaciones de atribucion mas alla de las habituales.
+- Fine-tuning ligero sobre la base bf16: el repositorio original en safetensors permite aplicar LoRA o QLoRA y luego cuantizar el resultado, usando este repo GGUF como referencia de despliegue.
+- Investigacion sobre cuantizacion: comparar la degradacion de calidad entre Q2_K, IQ4_XS y Q8_0 sobre el mismo modelo base para estudiar el impacto de la precision en tareas conversacionales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras pruebas estandar para este modelo o su versión base.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: según la cuantización, entre 4 GB (Q2_K) y 18 GB (f16). La opción recomendada Q4_K_M ocupa 5,7 GB, por lo que cabe en GPUs de 8 GB.
-- GPU recomendadas: para Q4_K_M o Q5_K_M, una RTX 3060/4060 de 8-12 GB es suficiente. Para Q8_0 (9,6 GB) se necesita una GPU con 12-16 GB, como RTX 4070 Ti o A10. Para f16, se requieren 24 GB o más (RTX 3090/4090, A100).
-- Compatibilidad con consumer GPU: sí, las cuantizaciones Q4 y Q5 funcionan en GPUs de gama media. Las versiones Q2 y Q3 pueden ejecutarse incluso en CPUs con suficiente RAM.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, o cualquier runtime compatible con GGUF. También es posible usar vLLM si se convierte a otro formato, aunque no es lo habitual.
-- Latencia y throughput: no disponibles. Como referencia orientativa, un modelo de 9B en Q4_K_M suele generar entre 20 y 40 tokens por segundo en una RTX 3060, pero estos valores no están confirmados para este modelo concreto.
+- VRAM estimada para inferencia (pesos mas overhead de contexto): Q2_K ~3,9 GB; Q3_K_S ~4,4 GB; Q4_K_M ~5,7 GB; Q5_K_M ~6,6 GB; Q6_K ~7,5 GB; Q8_0 ~9,6 GB; f16 ~18 GB. Añadir entre 1 y 3 GB adicionales para la cache KV segun contexto.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 para cuantizaciones Q4 a Q8; A100 o H100 solo necesarias para f16 o para servir muchas peticiones concurrentes.
+- Cabe en GPU de consumo: si, desde una GTX 1660 6 GB con Q2_K hasta una RTX 4090 24 GB con Q8_0 o f16.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. El repositorio esta etiquetado con `endpoints_compatible`, lo que sugiere compatibilidad con endpoints tipo OpenAI.
+- Latencia y throughput estimados: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento para comparar directamente. A continuación se muestra una comparación estructural con otros modelos de tamaño similar, basada únicamente en información pública:
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| FableOpus-9B-Delta-GGUF | 8,95 B | no disponible | Apache 2.0 | GGUF | Merge/destilacion de Qwen 3.5, Fable 5 y Claude Opus; solo ingles |
+| Qwen 2.5 7B Instruct (GGUF) | 7,6 B | 32 K (tipico) | Apache 2.0 | GGUF | Base consolidada, multilingue, benchmarks publicos |
+| Llama 3.1 8B Instruct (GGUF) | 8,0 B | 128 K | Llama 3.1 Community | GGUF | Multilingue, amplio ecosistema de cuantizaciones |
+| Mistral 7B Instruct v0.3 (GGUF) | 7,2 B | 32 K | Apache 2.0 | GGUF | Alternativa ligera con licencia permisiva |
 
-| Modelo | Parametros | Contexto | Licencia | Formato |
-|---|---|---|---|---|
-| FableOpus-9B-Delta (GGUF) | 8,95B | no disponible | Apache-2.0 | GGUF |
-| Qwen2.5-7B-Instruct | 7,6B | 128K | Apache-2.0 | safetensors/GGUF |
-| Llama-3.1-8B-Instruct | 8,0B | 128K | Llama 3.1 Community | safetensors/GGUF |
-| Mistral-7B-Instruct-v0.3 | 7,3B | 32K | Apache-2.0 | safetensors/GGUF |
-
-La comparativa es limitada porque no se conocen la longitud de contexto ni los resultados de benchmarks de FableOpus-9B-Delta. Los modelos alternativos tienen documentación más completa y están más probados en producción.
+La comparativa se limita a parametros, contexto y licencia porque no hay benchmarks publicados de FableOpus-9B-Delta que permitan contrastar calidad. La ventaja principal de este modelo frente a los anteriores es su origen como merge experimental; la desventaja es la ausencia de documentacion sobre entrenamiento, contexto y evaluacion.
 
 ## Limitaciones y advertencias
 
-- Idioma limitado: solo inglés, no apto para aplicaciones multilingües.
-- Longitud de contexto desconocida: no se ha publicado este dato, lo que dificulta planificar tareas que requieran ventanas largas.
-- Riesgo de alucinacion: al ser un modelo de 9B sin benchmarks publicados, no hay garantías sobre su fiabilidad factual. Se recomienda validar las salidas en entornos críticos.
-- Sesgos no documentados: no hay información sobre evaluaciones de sesgo o toxicidad.
-- Soporte multimodal no confirmado: aunque existen archivos mmproj, no hay documentación que acredite su funcionamiento ni el tipo de imágenes soportadas.
-- Cuantizaciones de baja precision: las versiones Q2_K y Q3_K_M pueden degradar notablemente la calidad de las respuestas; se recomienda usar Q4_K_M o superior para tareas serias.
-- Modelo experimental: al ser un merge delta reciente (creado en junio de 2026), no tiene historial de uso en producción ni comunidad amplia que reporte incidencias.
+- Solo declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta documentado y probablemente sea deficiente.
+- No se publican benchmarks, por lo que no hay evidencia objetiva de calidad frente a modelos establecidos.
+- Al ser un merge y una destilacion sin receta publica, el comportamiento puede ser erratico en tareas especificas y dificil de depurar.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; sin evaluacion no se puede acotar su magnitud.
+- La longitud de contexto no esta documentada, lo que impide planificar aplicaciones con ventanas largas.
+- Las cuantizaciones son estaticas (sin imatrix), por lo que las variantes de baja precision (Q2_K, Q3_K_S) pueden degradar la calidad mas de lo habitual.
+- El repositorio pesa 83 GB por incluir todas las cuantizaciones; conviene descargar solo el fichero necesario.
+- Aunque la licencia es Apache 2.0, el modelo deriva de otros con condiciones propias (Qwen, Claude Opus); el autor no detalla la cadena de licencias, lo que introduce riesgo legal en uso comercial.
+- Solo 305 descargas y 3 likes: comunidad minima, sin garantias de mantenimiento ni soporte.
 
 ## Enlaces
 
-- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/FableOpus-9B-Delta-GGUF
-- Modelo base (safetensors): https://huggingface.co/bingleai/FableOpus-9B-Delta
-- Pagina de inferencia en FriendliAI: https://friendli.ai/models/interpolators/FableOpus-9B-Delta
-- Guia de uso de GGUF de TheBloke (referencia): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/FableOpus-9B-Delta-GGUF
+- Modelo base: https://huggingface.co/bingleai/FableOpus-9B-Delta
+- Pagina de descargas del autor: https://hf.tst.eu/model#FableOpus-9B-Delta-GGUF
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

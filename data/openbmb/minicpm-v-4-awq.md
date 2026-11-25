@@ -2,100 +2,109 @@
 
 ## Resumen
 
-MiniCPM-V-4-AWQ es la versión cuantizada en 4 bits (AWQ) del modelo multimodal MiniCPM-V 4.0, desarrollado por el equipo OpenBMB. Se trata de un modelo de visión-lenguaje (MLLM) que combina un codificador de visión SigLIP2-400M con el modelo de lenguaje MiniCPM4-3B, sumando aproximadamente 4.060 millones de parámetros en total. Su objetivo es ofrecer capacidades de comprensión de imagen única, múltiples imágenes y vídeo comparables a las de GPT-4V, pero con una eficiencia suficiente para ejecutarse en dispositivos móviles y hardware de consumo.
+MiniCPM-V-4-AWQ es la versión cuantizada a 4 bits mediante AWQ del modelo multimodal MiniCPM-V 4.0, desarrollado por OpenBMB (comunidad de modelos abiertos vinculada a la Universidad de Tsinghua y ModelBest). Se trata de un modelo image-text-to-text de 4.059.533.040 parámetros totales que combina un encoder visual SigLIP2-400M con un modelo de lenguaje MiniCPM4-3B, orientado a comprensión de imagen única, múltiples imágenes y vídeo en dispositivos de borde.
 
-La versión AWQ reduce el peso del modelo a 4 bits, lo que disminuye los requisitos de memoria y acelera la inferencia sin una pérdida significativa de calidad. Según la model card, MiniCPM-V 4.0 alcanza una puntuación media de 69,0 en OpenCompass (promedio de 8 benchmarks), superando a GPT-4.1-mini-20250414 (68,9), a MiniCPM-V 2.6 (65,2) y a Qwen2.5-VL-3B-Instruct (64,5), a pesar de tener solo 4,1B de parámetros. El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+El modelo resuelve el problema de desplegar capacidades de nivel GPT-4V en hardware con recursos limitados: según la model card, alcanza una puntuación media de 69,0 en OpenCompass (agregado de 8 benchmarks) superando a GPT-4.1-mini-20250414 (68,9), MiniCPM-V 2.6 de 8,1B (65,2) y Qwen2.5-VL-3B-Instruct (64,5). Su relevancia actual radica en la eficiencia: el autor reporta menos de 2 s de latencia al primer token y más de 17 tokens/s en decodificación sobre un iPhone 16 Pro Max sin problemas de calentamiento.
 
-Esta ficha se centra en la variante AWQ, que facilita el despliegue en entornos con recursos limitados, como portátiles con GPU de gama media o incluso dispositivos móviles. El repositorio ocupa 3,3 GB y los pesos están en formato safetensors, listos para usar con Transformers, vLLM, llama.cpp, Ollama y otras herramientas.
+Esta variante AWQ reduce el peso del repositorio a 3,3 GB (frente a los aproximadamente 8 GB en precisión completa), lo que facilita su despliegue en GPUs de consumo y entornos con VRAM ajustada, manteniendo la licencia Apache 2.0 del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Vision-language (SigLIP2-400M + MiniCPM4-3B) |
-| Parametros totales | 4.059.533.040 (~4,06B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | AWQ 4-bit (esta variante) |
-| Idiomas soportados | Multilingue (no se especifica lista completa) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors |
+| Arquitectura | Multimodal: encoder visual SigLIP2-400M + LLM MiniCPM4-3B (transformer) |
+| Parametros totales | 4.059.533.040 |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | 4 bits AWQ (esta variante); el modelo base admite otras cuantizaciones vía llama.cpp/Ollama |
+| Idiomas soportados | multilingüe |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (transformers), cuantización AWQ 4-bit |
 
 ## Arquitectura y entrenamiento
 
-MiniCPM-V 4.0 combina un codificador de vision SigLIP2-400M con el modelo de lenguaje MiniCPM4-3B, dando lugar a un total de 4,1B parametros. No se trata de un modelo de mezcla de expertos (MoE), sino de un modelo denso. El componente de vision procesa imagenes y videos, mientras que el modulo de lenguaje gestiona la generacion de texto y la interaccion multimodal. El modelo hereda las capacidades de comprension de imagen unica, multiple y video de MiniCPM-V 2.6, pero con una eficiencia mejorada gracias a la compresion de tokens visuales y a un diseno optimizado para inferencia en dispositivos.
+MiniCPM-V 4.0 es un modelo multimodal que empareja un encoder visual SigLIP2-400M con el LLM MiniCPM4-3B, sumando 4,1B parámetros totales. La arquitectura sigue el patrón de los MLLM contemporáneos: proyección de las representaciones visuales al espacio del modelo de lenguaje para permitir generación condicionada por imagen, multi-imagen y vídeo. Esta variante AWQ aplica cuantización de pesos de 4 bits con Activation-aware Weight Quantization sobre el modelo base openbmb/MiniCPM-V-4.
 
-Los datos de entrenamiento no se detallan en la informacion proporcionada, aunque se menciona el uso del dataset RLAIF-V-Dataset en la model card, lo que sugiere un proceso de alineacion con retroalimentacion de IA (RLAIF). No se especifica el numero total de tokens de entrenamiento ni la composicion exacta del corpus. La cuantizacion AWQ se aplica posteriormente al modelo base para reducir el peso a 4 bits, manteniendo un equilibrio entre rendimiento y requisitos de memoria.
+En cuanto a datos de entrenamiento, la model card referencia el dataset openbmb/RLAIF-V-Dataset, lo que sugiere el uso de técnicas de alineación tipo RLHF/RLAIF para reducir alucinaciones visuales. No se especifica en la información disponible el número total de tokens de entrenamiento ni la composición detallada del corpus. El modelo hereda las capacidades de comprensión de imagen única, multi-imagen y vídeo de MiniCPM-V 2.6, con mejoras de eficiencia orientadas a despliegue en dispositivo.
 
 ## Capacidades
 
-- Comprension de imagen unica: analisis de contenido visual, reconocimiento de objetos, escenas y relaciones espaciales.
-- Comprension de multiples imagenes: comparacion y razonamiento entre varias imagenes en una misma conversacion.
-- Comprension de video: procesamiento de secuencias de video para extraer informacion temporal y contextual.
-- OCR (reconocimiento optico de caracteres): extraccion de texto de imagenes y documentos escaneados.
-- Conversacion multimodal: interaccion dialogica en la que el modelo responde a preguntas sobre el contenido visual.
-- Multilingue: soporte para multiples idiomas, aunque no se detalla la lista completa.
-- No se menciona soporte explicito para tool calling ni function calling en la informacion disponible.
+- Comprensión de imagen única: descripción, VQA, razonamiento visual y matemáticas sobre imágenes (MathVista).
+- OCR y comprensión de documentos: etiqueta `ocr` explícita y puntuación OCRBench de 826 en el modelo base.
+- Comprensión de múltiples imágenes: comparación y razonamiento conjunto sobre varias imágenes (etiqueta `multi-image`).
+- Comprensión de vídeo: análisis de secuencias de vídeo (etiqueta `video`).
+- Generación de texto conversacional multimodal (pipeline image-text-to-text).
+- Capacidades multilingües (etiqueta `multilingual`).
+- Extracción de características (`feature-extraction`) además de generación.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte explícito de agentes y multi-step reasoning: no disponible en la información proporcionada.
+- Modo thinking, audio u otras modalidades: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Extraccion de texto de documentos: el modelo puede digitalizar facturas, recibos o formularios mediante OCR, convirtiendo imagenes en texto estructurado para su posterior procesamiento en sistemas de gestion documental.
-- Analisis de imagenes medicas: aunque no se ha validado especificamente para diagnostico, puede ayudar a radiólogos a revisar radiografias o resonancias, generando descripciones preliminares de hallazgos visibles.
-- Moderacion de contenido visual: en plataformas sociales, puede analizar imagenes y videos para detectar contenido inapropiado o que viole las politicas de uso.
-- Asistente de accesibilidad: descripcion de imagenes en tiempo real para personas con discapacidad visual, integrable en aplicaciones moviles gracias a su eficiencia en dispositivos.
-- Automatizacion de soporte tecnico: responder consultas de clientes que incluyen capturas de pantalla o fotografias de productos, identificando el problema y ofreciendo soluciones.
-- Educacion interactiva: generar explicaciones a partir de diagramas, graficos o ilustraciones en libros de texto, facilitando el aprendizaje autonomo.
-- Analisis de video de vigilancia: procesar grabaciones para identificar eventos relevantes (personas, vehiculos, movimientos anomalos) con baja latencia en hardware de borde.
+- Digitalización y extracción de datos de documentos: el modelo puede procesar facturas, formularios o capturas y devolver texto estructurado, apoyándose en su capacidad OCR (OCRBench 826 en el modelo base) y en su reducido tamaño para ejecutarse en local sin enviar documentos sensibles a la nube.
+- Asistencia a personas con discapacidad visual: descripción de escenas en tiempo real desde la cámara de un móvil, aprovechando la latencia reportada de menos de 2 s al primer token en iPhone 16 Pro Max.
+- Moderación y análisis de contenido visual: clasificación y descripción automática de imágenes en pipelines de revisión, con la ventaja de la licencia Apache 2.0 para uso comercial.
+- Análisis de vídeo para vigilancia o monitorización: resumen de eventos en secuencias de vídeo gracias a la capacidad de comprensión de vídeo del modelo.
+- Automatización de atención al cliente con soporte visual: el usuario envía una foto de un producto o error y el modelo responde en conversación multi-turno; su naturaleza multilingüe permite atender a usuarios en varios idiomas.
+- Despliegue en el borde (edge computing): aplicaciones iOS/iPadOS o embebidos con la app oficial open source, donde el tamaño de 4,1B parámetros y la cuantización AWQ de 4 bits permiten inferencia local sin conexión.
+- Razonamiento matemático sobre figuras y gráficos: resolución de problemas tipo MathVista en herramientas educativas, con la ventaja de poder ejecutarse en un portátil con GPU de consumo.
 
 ## Benchmarks y rendimiento
 
-La model card proporciona el promedio de OpenCompass (8 benchmarks) para MiniCPM-V 4.0, asi como comparaciones con otros modelos. No se publican desgloses individuales por benchmark para este modelo en la informacion disponible.
+Resultados del modelo base MiniCPM-V 4.0 (4,1B) según la model card del autor, en imagen única:
 
-| Modelo | Tamano | OpenCompass (media) |
-|---|---|---|
-| MiniCPM-V 4.0 | 4,1B | 69,0 |
-| GPT-4.1-mini-20250414 | - | 68,9 |
-| MiniCPM-V 2.6 | 8,1B | 65,2 |
-| Qwen2.5-VL-3B-Instruct | 3,8B | 64,5 |
-| InternVL2.5-4B | 3,7B | 65,1 |
-| Qwen2.5-VL-7B-Instruct | 8,3B | 70,9 |
-| InternVL2.5-8B | 8,1B | 68,1 |
+| Modelo | Tamano | OpenCompass | OCRBench | MathVista | HallusionBench | MMMU | MMVet | MMBench V1.1 | MMStar | AI2D |
+|---|---|---|---|---|---|---|---|---|---|---|
+| MiniCPM-V 4.0 | 4,1B | 69,0 | no disponible en el extracto | no disponible en el extracto | no disponible en el extracto | no disponible en el extracto | no disponible en el extracto | no disponible en el extracto | no disponible en el extracto | no disponible en el extracto |
+| GPT-4.1-mini-20250414 | - | 68,9 | 840 | 70,9 | 49,3 | 55,0 | 74,3 | 80,9 | 60,9 | 76,0 |
+| Qwen2.5-VL-3B-Instruct | 3,8B | 64,5 | 828 | 61,2 | 46,6 | 51,2 | 60,0 | 76,8 | 56,3 | 81,4 |
+| InternVL2.5-4B | 3,7B | 65,1 | 820 | 60,8 | 46,6 | 51,8 | 61,5 | 78,2 | 58,7 | 81,4 |
+| Qwen2.5-VL-7B-Instruct | 8,3B | 70,9 | 888 | 68,1 | 51,9 | 58,0 | 69,7 | 82,2 | 64,1 | 84,3 |
+| InternVL2.5-8B | 8,1B | 68,1 | 821 | 64,5 | 49,0 | 56,2 | 62,8 | 82,5 | 63,2 | 84,6 |
+| MiniCPM-V 2.6 | 8,1B | 65,2 | 852 | 60,8 | 48,1 | 49,8 | 60,0 | 78,0 | 57,5 | 82,1 |
+| GPT-4v-20240409 | - | 63,5 | 656 | 55,2 | 43,9 | 61,7 | 67,5 | 79,8 | 56,0 | 78,6 |
+| Gemini-1.5-Pro | - | 64,5 | 754 | 58,3 | 45,6 | 60,6 | 64,0 | 73,9 | 59,1 | 79,1 |
+| Claude 3.5 Sonnet-20241022 | - | 70,6 | 798 | 65,3 | 55,5 | 66,4 | 70,1 | 81,7 | 65,1 | 81,2 |
 
-No se han publicado resultados detallados para OCRBench, MathVista, HallusionBench, MMMU, MMVet, MMBench, MMStar o AI2D especificamente para MiniCPM-V 4.0 en la informacion disponible.
+Nota: la tabla del extracto de la model card aparece truncada; los valores por benchmark de MiniCPM-V 4.0 no están completos en la información disponible. Los datos corresponden al modelo base sin cuantizar; no se han publicado resultados específicos de esta variante AWQ.
 
 ## Requisitos de hardware
 
-- La cuantizacion AWQ 4-bit reduce el peso a aproximadamente 2,2 GB (calculado a partir de 4,06B parametros × 0,5 bytes/parametro), aunque el repositorio ocupa 3,3 GB por los archivos adicionales. Esto permite ejecutar el modelo en GPUs con 4-6 GB de VRAM, como una NVIDIA RTX 3050 o superior.
-- La model card menciona que el modelo base se ejecuta en iPhone 16 Pro Max con menos de 2 segundos de latencia para el primer token y mas de 17 tokens/segundo, lo que indica que es viable en dispositivos moviles con aceleracion neuronal.
-- Para inferencia en servidor, se recomienda vLLM, SGLang o TGI, que soportan cuantizacion AWQ de forma nativa.
-- En entornos sin GPU, es posible usar llama.cpp u Ollama con cuantizacion adicional (por ejemplo, GGUF), aunque el rendimiento sera menor.
-- No se proporcionan datos de throughput en servidores con multiples peticiones concurrentes, aunque el modelo esta disenado para alta eficiencia bajo carga.
+- VRAM estimada para inferencia: el repositorio AWQ ocupa 3,3 GB, por lo que se estima un consumo de VRAM en torno a 4-5 GB en 4 bits, aunque el dato exacto no está disponible en la información proporcionada.
+- GPU recomendadas: no disponible en la información proporcionada; por tamaño, cualquier GPU con al menos 6-8 GB de VRAM debería poder alojarlo.
+- ¿Cabe en GPU de consumo? Sí, por el tamaño del repositorio (3,3 GB) es compatible con GPUs de consumo de gama media; el autor reporta ejecución en iPhone 16 Pro Max con menos de 2 s de latencia al primer token y más de 17 tokens/s.
+- Opciones de despliegue: llama.cpp, Ollama, vLLM, SGLang, LLaMA-Factory, transformers y demo web local; el autor también publica una app iOS open source.
+- Latencia y throughput: menos de 2 s al primer token y más de 17 tokens/s en decodificación en iPhone 16 Pro Max (modelo base); el autor menciona buen throughput bajo peticiones concurrentes, sin cifras concretas adicionales.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | OpenCompass | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-V 4.0 (AWQ) | 4,1B | No disponible | 69,0 | Apache-2.0 | Hugging Face, ModelScope |
-| Qwen2.5-VL-3B-Instruct | 3,8B | No disponible | 64,5 | Apache-2.0 | Hugging Face |
-| MiniCPM-V 2.6 | 8,1B | No disponible | 65,2 | Apache-2.0 | Hugging Face |
-| InternVL2.5-4B | 3,7B | No disponible | 65,1 | MIT | Hugging Face |
+| MiniCPM-V-4-AWQ | 4,1B | no disponible | 69,0 (modelo base) | Apache 2.0 | Hugging Face, Ollama, llama.cpp |
+| Qwen2.5-VL-3B-Instruct | 3,8B | no disponible | 64,5 | no disponible en la información | Hugging Face |
+| InternVL2.5-4B | 3,7B | no disponible | 65,1 | no disponible en la información | Hugging Face |
+| MiniCPM-V 2.6 | 8,1B | no disponible | 65,2 | no disponible en la información | Hugging Face |
 
-MiniCPM-V 4.0 supera a modelos de tamano similar (Qwen2.5-VL-3B) y a su predecesor con el doble de parametros (MiniCPM-V 2.6), manteniendo una licencia permisiva. La principal ventaja es su eficiencia, que permite despliegue en dispositivos de borde.
+MiniCPM-V 4.0 ofrece la mejor puntuación OpenCompass de su categoría de tamaño (69,0) frente a Qwen2.5-VL-3B (64,5) e InternVL2.5-4B (65,1), con la mitad de parámetros que MiniCPM-V 2.6 y una puntuación superior. La ventaja de esta variante AWQ es el tamaño reducido del repositorio (3,3 GB) para despliegue en hardware limitado.
 
 ## Limitaciones y advertencias
 
-- No se han publicado analisis de sesgos especificos para este modelo; como cualquier sistema multimodal, puede reflejar sesgos presentes en los datos de entrenamiento.
-- Riesgo de alucinacion visual: el modelo puede generar descripciones inexactas de imagenes ambiguas o de baja calidad.
-- La longitud de contexto no se ha especificado, lo que limita la planificacion de tareas que requieran ventanas largas de entrada (por ejemplo, analisis de documentos extensos).
-- El soporte multilingue no esta detallado; la calidad puede variar significativamente entre idiomas.
-- Aunque la licencia Apache-2.0 permite uso comercial, es recomendable verificar que el uso previsto cumple con las politicas de la comunidad y con posibles patentes de terceros.
-- Para produccion, se recomienda validar el rendimiento en el dominio especifico antes de desplegar, especialmente en tareas criticas como diagnostico medico o moderacion de contenido.
+- Sesgos conocidos: no se documentan en la información disponible; como todo modelo entrenado con datos web, es previsible que herede sesgos de esos datos.
+- Riesgo de alucinación: el uso del dataset RLAIF-V sugiere que el autor trabajó en mitigar alucinaciones visuales, pero no se dispone de cifras específicas de HallusionBench para esta variante.
+- Limitaciones de contexto o idioma: la longitud de contexto no está especificada en la información disponible; el soporte es multilingüe pero no se detallan los idiomas concretos ni su calidad relativa.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, modificación y redistribución con atribución; no se han identificado restricciones adicionales en la información disponible.
+- Caveats para producción: la cuantización AWQ de 4 bits puede degradar ligeramente la precisión respecto al modelo base; no se han publicado benchmarks específicos de esta variante. El uso de `custom_code` en transformers puede requerir `trust_remote_code=True`. Verificar el rendimiento real en la tarea concreta antes de desplegar.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/openbmb/MiniCPM-V-4-AWQ
-- Modelo base (sin cuantizar): https://huggingface.co/openbmb/MiniCPM-V-4
-- Repositorio GitHub (MiniCPM-o): https://github.com/OpenBMB/MiniCPM-o
-- Modelo en ModelScope: https://www.modelscope.cn/models/OpenBMB/MiniCPM-V-4
-- Cookbook con ejemplos de uso: https://github.com/OpenSQZ/MiniCPM-V-CookBook
-- Demo en linea: http://211.93.21.133:8889/
+- Hugging Face: https://huggingface.co/openbmb/MiniCPM-V-4-AWQ
+- Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4
+- GitHub: https://github.com/OpenBMB/MiniCPM-o
+- Cookbook: https://github.com/OpenSQZ/MiniCPM-V-CookBook
+- Wiki (chino): https://openbmb.cn/docs/
+- Demo: http://211.93.21.133:8889/
+- OpenBMB: https://openbmb.cn/en/
+- Perfil de OpenBMB en Hugging Face: https://huggingface.co/openbmb
+- OpenBMB en Ollama: https://ollama.com/openbmb
+- Dataset RLAIF-V: https://huggingface.co/datasets/openbmb/RLAIF-V-Dataset

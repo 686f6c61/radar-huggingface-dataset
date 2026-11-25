@@ -2,115 +2,102 @@
 
 ## Resumen
 
-CYBER-FROST-3.8-EXL3-SAGE-3.87bpw es un artefacto de cuantizacion EXL3, generado con el metodo SAGE, del modelo CYBER-FROST-3.8 de Blackfrost-AI. No es un modelo entrenado desde cero ni un adaptador: es un checkpoint independiente de 32.843.734.528 parametros (unos 32,84 mil millones) que no necesita el padre en BF16 ni en FP8 para cargarse. Lo publica el usuario vcruz305 en colaboracion oficial con Blackfrost-AI (Sir Frosty), y su proposito es servir como paquete de despliegue para profesionales de seguridad que realicen investigacion, evaluacion, ingenieria y respuesta autorizadas.
+CYBER-FROST-3.8-EXL3-SAGE-3.87bpw es una cuantizacion EXL3 de 3,87 bits por parametro del modelo CYBER-FROST-3.8, desarrollado por Blackfrost-AI (Sir Frosty) y convertido por vcruz305 en colaboracion oficial. Se trata de un modelo de lenguaje especializado en ciberseguridad, orientado a flujos de trabajo profesionales autorizados (red team, blue team, respuesta a incidentes, analisis de malware y desarrollo de deteccion), y construido sobre la arquitectura `Qwen4ExpForConditionalGeneration` con mezcla de expertos (MoE).
 
-El modelo hereda el dominio funcional del padre: seguridad ofensiva y defensiva, con enfasis declarado en reducir los falsos rechazos cuando el vocabulario tecnico (explotacion, analisis de malware, respuesta a incidentes) coincide con el de actividad no autorizada. La arquitectura registrada es Qwen4ExpForConditionalGeneration, con etiqueta de mezcla de expertos (MoE), ventana de contexto configurada de 262.144 tokens y una capa MTP nativa para decodificacion especulativa.
+El modelo resuelve un problema concreto del dominio: los asistentes generalistas tienden a rechazar peticiones legitimas de seguridad porque reaccionan a terminos individuales (exploit, malware, ransomware) en lugar de al contexto y al alcance autorizado del operador. CYBER-FROST busca mantener una respuesta tecnicamente directa en trabajos de investigacion y respuesta autorizados. Conviene subrayar que la autorizacion es un control externo al modelo: este no puede verificar propiedad, consentimiento ni alcance.
 
-La relevancia practica esta en su formato: el cuerpo se comprime a 3,87 bits por parametro con una fidelidad declarada del 93,89% de top-1 en held-out frente al BF16, lo que permite desplegar un modelo de ~32,8B en un payload de 97,67 GiB. Es, por tanto, una pieza de infraestructura de inferencia mas que un modelo de investigacion en si mismo.
+Tecnicamente, el checkpoint cuenta con 32.843.734.528 parametros totales, una ventana de contexto configurada de 262.144 tokens, cabeza LM en 8 bits, capa MTP (multi-token prediction) en 4 bits para decodificacion especulativa nativa, torre de vision en 6 bits y una tabla de n-gramas en 6 bits incluida. El artefacto pesa 104.872.927.412 bytes (97,67 GiB) repartidos en 9 shards SafeTensors mas `ngram_embedding.safetensors`, y esta pensado para servirse con ExLlamaV3 sobre una DGX Spark (GB10, 128 GB de memoria unificada).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen4ExpForConditionalGeneration (tag `moe`; transformer con mezcla de expertos) |
-| Parametros totales | 32.843.734.528 (~32,84 mil millones) |
+| Arquitectura | `Qwen4ExpForConditionalGeneration` (transformer MoE, con torre de vision y capa MTP) |
+| Parametros totales | 32.843.734.528 |
 | Parametros activos | no disponible |
 | Longitud de contexto | 262.144 tokens (configurada) |
-| Tipos de cuantizacion | EXL3 (SAGE), cuerpo a 3,87 bits/parametro; tag 4-bit. Componentes: LM head 8 bits, capa MTP 4 bits, torre de vision 6 bits, tabla n-gram 6 bits |
+| Tipos de cuantizacion | EXL3 SAGE a 3,87 bits/parametro en el cuerpo; cabeza LM a 8 bits; capa MTP a 4 bits; torre de vision a 6 bits; tabla de n-gramas a 6 bits |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-license-1.0 (campo `license: other`, con `LICENSE` incluido en el repo) |
-| Formato de pesos | safetensors (9 shards EXL3 mas `ngram_embedding.safetensors`), index de pesos, tabla n-gram, configuracion, tokenizer, processor y plantilla de chat empaquetada |
-
-Otros datos del artefacto: repositorio de 104,9 GB; payload publicado de 104.872.927.412 bytes (97,67 GiB), sin contar la model card ni el banner; libreria `exllamav3`; pipeline `text-generation`; creado el 28 de septiembre de 2026.
+| Licencia | qwen-community-license-1.0 (etiquetada como `other` en Hugging Face) |
+| Formato de pesos | SafeTensors EXL3 (9 shards + `ngram_embedding.safetensors`), libreria exllamav3 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada por el autor es Qwen4ExpForConditionalGeneration, integrada en la familia Qwen y etiquetada como MoE (`qwen4-exp`). Sobre esa base, el proceso de creacion de este repositorio no es entrenamiento sino conversion: se toma el checkpoint BF16 (Blackfrost-AI/CYBER-FROST-3.8-BF16) y se cuantiza con el metodo SAGE en formato EXL3. La model card indica explicitamente que esta conversion no anadio datos de entrenamiento, por lo que las capacidades y el sesgo del modelo provienen integramente del padre.
+El modelo base es un transformer con mezcla de expertos (MoE) de la familia Qwen4-Exp, con 32.843 millones de parametros totales. Incluye una torre de vision y ficheros de procesador, ademas de una capa MTP (multi-token prediction) que actua como cabeza especulativa nativa, y una tabla de n-gramas empaquetada junto a los pesos. La ventana de contexto configurada es de 262.144 tokens.
 
-El padre BF16 fue afinado sobre un corpus de seguridad de Blackfrost-AI que combina material curado, flujos de trabajo escritos por operadores, escenarios realistas de tipo engagement y datos de destilacion propiedad de Blackfrost. Los tamanos del corpus, los recuentos por fuente y el material de engagement no se publican. El dominio cubierto abarca reconocimiento y OSINT, ingenieria social, seguridad de aplicaciones web y API, identidad y Active Directory, seguridad de red y perimetral, investigacion de vulnerabilidades y explotacion binaria, analisis de malware y ransomware, seguridad de cloud, contenedores y Kubernetes, cadena de suministro de software, seguridad movil, IoT, inalambrica y fisica, y sistemas de control industrial.
-
-En el plano de inferencia, el pack incorpora dos mecanismos de aceleracion: una capa MTP (multi-token prediction) como cabeza especulativa nativa y una tabla n-gram empaquetada. Ademas, la configuracion incluye torre de vision y ficheros de processor, aunque el autor advierte que no se ha realizado ninguna evaluacion de calidad multimodal sobre este release EXL3 y que su presencia no debe interpretarse como capacidad de imagen o video validada.
+El padre BF16 fue ajustado por Blackfrost-AI sobre un corpus de seguridad que combina material curado del dominio, flujos de trabajo escritos por operadores, escenarios realistas de tipo engagement y datos de destilacion propiedad de Blackfrost. Los tamanos del corpus, el desglose por fuente y el material bruto de los engagements no se publican. Esta conversion EXL3 no anadio datos de entrenamiento: es una cuantizacion, no un ajuste adicional. La cuantizacion SAGE conserva el 93,89% de top-1 en el conjunto held-out (9.614/10.240) con una KL de 0,0264 nats (0,0380 bits) frente al BF16, y el 93,64% de top-1 en el conjunto independiente (9.589/10.240) con KL de 0,0423 nats (0,0610 bits).
 
 ## Capacidades
 
-- Generacion de texto conversacional y tecnico con pipeline declarado `text-generation`.
-- Asistencia especializada en seguridad: reconocimiento y OSINT, explotacion binaria, analisis de malware, deteccion, respuesta a incidentes y seguridad de infraestructura (cobertura heredada del padre BF16).
-- Uso de herramientas (tag `tool-use`), lo que habilita function calling en agentes de seguridad.
-- Operacion como agente multi-paso, segun la etiqueta de agente y el enfoque de despliegue descrito en DEPLOY.md.
-- Diseno orientado a reducir falsos rechazos en vocabulario de doble uso (ofensivo/defensivo) dentro de flujos autorizados. Es un objetivo de diseno heredado, no una afirmacion de comportamiento medida en este pack EXL3.
-- Contexto largo: ventana configurada de 262.144 tokens.
-- Decodificacion especulativa nativa mediante una capa MTP, con soporte EXL3 en exllamav3.
-- Multilingue: no disponible.
-- Vision y audio: no disponible; hay torre de vision y processor presentes, pero sin evaluacion multimodal declarada.
+- Generacion de texto conversacional y asistencia tecnica en el dominio de ciberseguridad.
+- Cobertura de reconocimiento y OSINT, ingenieria social, BEC y abuso con deepfakes, seguridad de aplicaciones web y APIs, identidad y Active Directory, seguridad de red y perimetral, investigacion de vulnerabilidades, bug bounty y explotacion binaria, analisis de malware y ransomware.
+- Soporte de tool calling / function calling (etiqueta `tool-use`).
+- Orientado a flujos de agente y razonamiento multi-paso en tareas de seguridad.
+- Decodificacion especulativa nativa mediante una capa MTP.
+- Presencia de torre de vision y procesador multimodal en la configuracion, aunque el autor advierte explicitamente que esta version EXL3 no ha recibido evaluacion de calidad multimodal.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Triaje de alertas en un SOC: el modelo puede resumir telemetria y priorizar alertas encadenando contexto de multiples fuentes, apoyandose en la ventana de 262.144 tokens para mantener el hilo de un turno completo de analisis sin trocear el historial.
-- Respuesta a incidentes: reconstruccion de lineas temporales a partir de logs y notas de analistas, con generacion de hipotesis de alcance y siguiente accion. El contexto largo evita perder correlaciones entre eventos separados en el tiempo.
-- Analisis de malware: descripcion de comportamiento, extraccion de indicadores y propuesta de reglas de deteccion a partir de informes o fragmentos de codigo, en un entorno aislado y bajo autorizacion.
-- Ingenieria de deteccion: redaccion de reglas Sigma, YARA o consultas KQL a partir de una descripcion de amenaza, con iteracion multi-turno sobre falsos positivos.
-- Validacion de vulnerabilidades en laboratorio: reproduccion controlada de hallazgos y redaccion de pruebas de concepto dentro de un scope aprobado, aprovechando la tolerancia del modelo al vocabulario tecnico.
-- Hardening y revision de configuraciones (blue team): auditoria de parametros de Active Directory, Kubernetes o VPN con recomendaciones justificadas.
-- Integracion como agente en plataformas SOAR: con soporte de tool calling, el modelo puede encadenar consultas a APIs, enriquecimiento de IOCs y apertura de tickets bajo permisos externos.
-- Documentacion post-engagement: generacion de informes tecnicos y ejecutivos a partir de notas de trabajo, con trazabilidad de hallazgos.
-
-En todos los casos, la autorizacion, el alcance y los permisos de herramienta son controles externos al modelo y deben aplicarse en la capa de despliegue.
+- Respuesta a incidentes: el modelo puede mantener conversaciones multi-turno con contexto muy largo (262.144 tokens) para correlacionar hallazgos, artefactos y lineas temporales de un incidente sin perder el hilo.
+- Analisis de malware: revision de cadenas, comportamiento y tecnicas MITRE ATT&CK en muestras, con una respuesta tecnicamente directa en lugar de rechazos por vocabulario.
+- Desarrollo de deteccion: generacion y revision de reglas Sigma, YARA, Suricata o KQL para pipelines de deteccion, apoyandose en tool calling para consultar fuentes o validar sintaxis.
+- Validacion de vulnerabilidades en entorno controlado: reproduccion y triaje de hallazgos en laboratorios autorizados, con el modelo como asistente de analisis y no como ejecutor autonomo.
+- Agente de seguridad aprobado: integracion en un agente con permisos acotados, donde el modelo propone pasos y el orquestador externo aplica identidad, alcance, registro y limites de tasa.
+- Ingenieria defensiva y hardening: revision de configuraciones de Active Directory, VPN, perimetro y protocolos, con recomendaciones concretas sobre identidad y autenticacion.
+- Formacion y simulacion de red team: generacion de escenarios de ingenieria social y BEC para ejercicios internos de concienciacion, siempre bajo reglas de enfrentamiento definidas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. Las unicas metricas publicadas son de fidelidad de la cuantizacion frente al modelo BF16, con 10.240 posiciones por conjunto y siguiente token sin redondear:
-
-| Metrica (frente a BF16) | Resultado |
+| Metrica | Resultado |
 |---|---|
-| Top-1 held-out | 9.614 / 10.240 (93,89%) |
-| KL held-out | 0,0264 nats (0,0380 bits) |
-| Top-1 independiente | 9.589 / 10.240 (93,64%) |
-| KL independiente | 0,0423 nats (0,0610 bits) |
+| Top-1 held-out (vs. BF16) | 9.614 / 10.240 (93,89%) |
+| KL held-out (vs. BF16) | 0,0264 nats (0,0380 bits) |
+| Top-1 independiente (vs. BF16) | 9.589 / 10.240 (93,64%) |
+| KL independiente (vs. BF16) | 0,0423 nats (0,0610 bits) |
+| Top-1 held-out (pack anterior 3,5 bpw vs. FP8) | 86,96% |
+| Top-1 independiente (pack anterior 3,5 bpw vs. FP8) | 85,16% |
 
-No hay datos publicados de calidad funcional, tasa de rechazo, ni evaluacion multimodal para este pack.
+Estas cifras miden fidelidad de cuantizacion frente al modelo de referencia, no capacidad absoluta en tareas de seguridad. No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para pesos: el payload publicado es de 97,67 GiB, por lo que se necesita un minimo practico de ~98-100 GiB solo para los pesos, mas overhead de runtime (tabla n-gram, embeddings, cabeza MTP, torre de vision y buffers de ejecucion).
-- Cache KV para 262.144 tokens: no disponible; no se publican el numero de capas ni la configuracion de atencion necesaria para calcularlo.
-- GPU recomendadas (estimacion derivada del tamano): configuraciones multi-GPU de 80 GB, como 2x A100 80 GB o 2x H100 80 GB; una H200 de 141 GB o una B200 serian opciones de GPU unica.
-- GPU de consumo: no cabe. Un solo acelerador de 24 GB (RTX 4090, 3090) es muy inferior al payload de pesos.
-- DGX Spark: el autor indica explicitamente que no se ha probado la carga en un unico Spark y que no debe inferirse que quepa a partir del bitrate.
-- Opciones de despliegue: exclusivamente exllamav3 (libreria declarada), construyendo el fork vcruz305/exllamav3 mediante la receta Qwen3.8-Flash-Next-EXL3-DGX-Spark, en el pin de fork medido. No hay soporte declarado para vLLM, llama.cpp, Ollama, TGI ni formato GGUF.
-- Latencia y throughput: no disponible.
+- VRAM/memoria estimada: el payload publicado es de 97,67 GiB, por lo que se necesita un dispositivo con al menos 128 GB de memoria unificada o VRAM para cargar el pack completo con la configuracion indicada.
+- Hardware probado: una DGX Spark (GB10, 128 GB de memoria unificada), con ventana de 262.144 tokens, cache KV en 8 bits, tabla de n-gramas en streaming desde disco y una peticion simultanea.
+- GPU recomendadas: no disponible mas alla de la DGX Spark; el autor advierte que otros hardware y configuraciones no se han probado y que no debe inferirse un ajuste a partir del bitrate.
+- GPU de consumo: no hay datos que confirmen que quepa en GPU de consumo; el tamano del payload (97,67 GiB) lo hace inviable en tarjetas de 24 GB o 48 GB sin offload agresivo, escenario no validado.
+- Despliegue: ExLlamaV3 (fork `vcruz305/exllamav3` en el pin medido), siguiendo `DEPLOY.md` y la receta Qwen3.8-Flash-Next para DGX Spark. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles; solo se indica servicio de una peticion a la vez en la configuracion probada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / bits | Fidelidad publicada | Licencia |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CYBER-FROST-3.8-EXL3-SAGE-3.87bpw | ~32,84 B | 262.144 | EXL3 SAGE 3,87 bpw | Top-1 93,89% held-out y 93,64% independiente frente a BF16 | qwen-community-license-1.0 |
-| CYBER-FROST-3.8-EXL3-SAGE-3.5bpw | ~32,84 B (mismo padre) | no disponible | EXL3 SAGE 3,5 bpw | Top-1 86,96% held-out y 85,16% independiente frente a FP8 | qwen-community-license-1.0 |
-| CYBER-FROST-3.8-FP8 (padre) | ~32,84 B | no disponible | FP8 | referencia de comparacion del pack de 3,5 bpw | no disponible en la informacion |
-| CYBER-FROST-3.8-BF16 (padre) | ~32,84 B | no disponible | BF16 | referencia de comparacion de este pack | no disponible en la informacion |
+| CYBER-FROST-3.8-EXL3-SAGE-3.87bpw | 32,84 B | 262.144 | EXL3 3,87 bpw | qwen-community-license-1.0 | Hugging Face, 327 descargas |
+| CYBER-FROST-3.8-EXL3-SAGE-3.5bpw | no disponible | no disponible | EXL3 3,5 bpw | no disponible | Hugging Face |
+| CYBER-FROST-3.8-BF16 | no disponible | no disponible | BF16 | no disponible | Hugging Face (Blackfrost-AI) |
+| CYBER-FROST-3.8-FP8 | no disponible | no disponible | FP8 | no disponible | Hugging Face (Blackfrost-AI) |
 
-Advertencia de comparabilidad: las cifras del pack de 3,5 bpw se midieron contra el release FP8, mientras que las del pack de 3,87 bpw se midieron contra el BF16. Al no compartir referencia, las dos series de top-1 y KL no son directamente comparables entre si.
+No se dispone de datos de benchmarks de capacidad ni de especificaciones completas de los packs hermanos que permitan una comparacion de rendimiento entre ellos; la unica comparacion publicada es de fidelidad de cuantizacion (top-1 y KL frente al BF16). No se han identificado en la informacion proporcionada modelos de ciberseguridad de terceros comparables.
 
 ## Limitaciones y advertencias
 
-- Es un artefacto de cuantizacion: no anade entrenamiento ni corrige sesgos del padre. Cualquier comportamiento problematico del BF16 se hereda.
-- Riesgo de alucinacion: no hay evaluacion publicada de veracidad ni de tasa de alucinacion en este pack. En dominios de seguridad, una salida incorrecta puede tener consecuencias operativas.
-- La reduccion de falsos rechazos es un objetivo de diseno heredado, no un comportamiento medido en este release.
-- Authorization es un control externo: el modelo no puede establecer propiedad, consentimiento, reglas de enfrentamiento, jurisdiccion ni si un objetivo esta en alcance. El despliegue debe imponer identidad, scope, permisos de herramienta, registro, limites de tasa y revision humana.
-- Capacidad multimodal no validada: aunque se incluyen torre de vision y processor, no se ha evaluado la calidad de imagen o video. No debe inferirse capacidad multimodal.
-- Idiomas soportados: no disponible; no hay evaluacion multilingue publicada.
-- Licencia: qwen-community-license-1.0 bajo el campo `other`. Es una licencia con condiciones especificas de la comunidad Qwen; debe revisarse el fichero `LICENSE` del repositorio antes de cualquier uso comercial o redistribucion.
-- Compatibilidad de runtime restringida: requiere exllamav3, y en concreto el fork y el pin indicados en DEPLOY.md. No hay soporte declarado para otros motores ni formato GGUF.
-- Estado del release: investigacion publica bajo evaluacion de calidad activa, con 0 descargas y 1 like en el momento de la ficha.
-- Sin evaluacion de encaje en hardware de gama unica: la carga en un unico DGX Spark no se ha probado. No debe inferirse del bitrate.
+- La autorizacion es un control externo: el modelo no puede establecer propiedad, consentimiento, reglas de enfrentamiento, jurisdiccion ni si un objetivo esta en alcance. El despliegue debe imponer identidad, alcance, permisos de herramientas, registro, limites de tasa y revision humana.
+- La reduccion de rechazos es un objetivo de diseno heredado del padre BF16, no una afirmacion de comportamiento medida para este pack EXL3.
+- Riesgo de alucinacion: no se han publicado evaluaciones de veracidad o robustez para esta version; en dominios tecnicos las respuestas deben validarse.
+- La torre de vision esta presente en la configuracion, pero no hay evaluacion de calidad multimodal; no debe asumirse capacidad de imagen o video validada.
+- Idiomas soportados no documentados; no se garantiza calidad fuera del idioma o idiomas del corpus de entrenamiento, cuyos detalles no se publican.
+- Licencia qwen-community-license-1.0: deben revisarse las condiciones antes de uso comercial; el repositorio la etiqueta como `other`.
+- Release publica en evaluacion de calidad activa; es un checkpoint independiente, no un adaptador, y no requiere el padre FP8 o BF16 en carga.
+- Solo se ha validado el despliegue en una DGX Spark con la configuracion de `DEPLOY.md`; otros entornos no estan probados y el ajuste no debe inferirse del bitrate, ya que empaquetado, cabeza, embeddings, tabla de n-gramas, MTP, vision y memoria en tiempo de ejecucion son independientes de la cifra de 3,87 bpw.
+- El corpus de seguridad no es publico (tamanos, fuentes, identidades de clientes, prompts y respuestas), lo que limita la auditabilidad del ajuste.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/vcruz305/CYBER-FROST-3.8-EXL3-SAGE-3.87bpw
+- Modelo en Hugging Face: https://huggingface.co/vcruz305/CYBER-FROST-3.8-EXL3-SAGE-3.87bpw
 - Modelo base BF16: https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-BF16
 - Release FP8: https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-FP8
-- Pack anterior de 3,5 bpw: https://huggingface.co/vcruz305/CYBER-FROST-3.8-EXL3-SAGE-3.5bpw
+- Pack anterior 3,5 bpw: https://huggingface.co/vcruz305/CYBER-FROST-3.8-EXL3-SAGE-3.5bpw
+- Fork de ExLlamaV3: https://github.com/vcruz305/exllamav3
+- Receta Qwen3.8-Flash-Next para DGX Spark: https://github.com/vcruz305/Qwen3.8-Flash-Next-EXL3-DGX-Spark-recipe
 - Organizacion Blackfrost-AI: https://huggingface.co/Blackfrost-AI
-- Fork de exllamav3: https://github.com/vcruz305/exllamav3
-- Receta Qwen3.8-Flash-Next-EXL3-DGX-Spark: https://github.com/vcruz305/Qwen3.8-Flash-Next-EXL3-DGX-Spark-recipe
-- Guia de despliegue: DEPLOY.md (incluida en el repositorio)
-- Paper o blog tecnico del modelo: no disponible

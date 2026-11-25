@@ -1,0 +1,55 @@
+{
+  "schema": 2,
+  "id": "Miradow/solidworks-2026-sp1-premium-deutsch-de",
+  "slug": "miradow-solidworks-2026-sp1-premium-deutsch-de",
+  "author": "Miradow",
+  "url": "https://huggingface.co/Miradow/solidworks-2026-sp1-premium-deutsch-de",
+  "created_at": "2026-11-24T22:28:32.000Z",
+  "updated_at": "2026-11-24T22:28:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "other",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Défaut de paiement du Sénégal : la BAD bloque 1 630 ... - Seneweb",
+      "url": "https://www.seneweb.com/fr/news/Economie/defaut-de-paiement-du-senegal-la-bad-bloque-1-630-milliards-f-cfa-39-projets-a-larret-et-des-mois-sans-salaires_n_490197.html",
+      "snippet": "Apr 21, 2026 · Défaut de paiement du Sénégal : la BAD bloque 1 630 milliards F CFA, 39 projets à l’arrêt et des mois sans salaires …"
+    },
+    {
+      "title": "Sénégal : Vers une restructuration de la dette dès 2026 ... - Seneweb",
+      "url": "https://www.seneweb.com/fr/news/Economie/senegal-vers-une-restructuration-de-la-dette-des-2026-selon-bank-of-america_n_476358.html",
+      "snippet": "Dec 4, 2025 · Bank of America estime qu’une restructuration de la dette extérieure du Sénégal devient de plus en plus probable d’ici …"
+    },
+    {
+      "title": "Allongement du congé de maternité à 18 semaines : Diomaye",
+      "url": "https://www.seneweb.com/fr/news/Societe/allongement-du-conge-de-maternite-a-18-semaines-diomaye-faye-dit-oui-aux-femmes_n_491523.html",
+      "snippet": "Au lendemain d’un 1er Mai 2026 chargé de symboles, le Réseau national des femmes travailleuses du Sénégal (RENAFETS) a …"
+    }
+  ]
+}

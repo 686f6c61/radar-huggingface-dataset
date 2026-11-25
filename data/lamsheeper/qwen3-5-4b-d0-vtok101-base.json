@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 316,
+  "downloads_30d": 314,
   "trending_score": 0,
   "parameters": 4206155776,
   "parameters_human": "4.21B",
@@ -48,31 +48,5 @@
   "renamed_to": "catt-bench/Qwen3.5-4B-d0-vtok101-base",
   "renamed_at": "2026-11-11T03:10:41.489Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Lamsheeper/Qwen3.5-4B-d0-vtok-lora-seeds · Hugging Face",
-      "url": "https://huggingface.co/Lamsheeper/Qwen3.5-4B-d0-vtok-lora-seeds",
-      "snippet": "Qwen3.5-4B-d0-vtok-lora-seeds Per-seed LoRA replicates for a documents-per-function suite: 50 synthetic constant functions, each answer a single added vocabulary token rather than a digit string."
-    },
-    {
-      "title": "qwen3.5:4b - ollama.com",
-      "url": "https://ollama.com/library/qwen3.5:4b",
-      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
-    },
-    {
-      "title": "Fine-tuned Models for Qwen/Qwen3.5-4B - Hugging Face",
-      "url": "https://huggingface.co/models?other=base_model:finetune:Qwen%2FQwen3.5-4B&p=18&sort=trending",
-      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Qwen/Qwen3.5-4B Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment Misc Apply filters"
-    },
-    {
-      "title": "qwen/qwen3.5-4b • LM Studio",
-      "url": "https://lmstudio.ai/models/qwen/qwen3.5-4b",
-      "snippet": "Qwen3.5 4B Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 4B parameter dense model, supporting a native context length of 262,144 tokens. Highlights Unified Vision-Language Foundation."
-    },
-    {
-      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
-      "url": "https://github.com/ABDtmx/Qwen3.5",
-      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
-    }
-  ]
+  "sources": []
 }

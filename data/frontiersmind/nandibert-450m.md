@@ -2,91 +2,118 @@
 
 ## Resumen
 
-NandiBERT-450M es un codificador bidireccional (encoder) de tipo masked language modeling desarrollado por FrontiersMind, pensado para cubrir simultáneamente inglés y lenguas índicas en un único modelo. Forma parte de la familia NandiBERT, junto a una variante de 150M de parámetros, y su propuesta central es resolver la brecha que existía en encoders previos, que solían rendir bien en inglés o en índico pero no en ambos. El modelo declara 548.471.808 parámetros reales en safetensors y un tamaño de repositorio de 1,1 GB.
+NandiBERT-450M es un codificador bidireccional (encoder) de tipo BERT desarrollado por FrontiersMind, diseñado para cubrir simultáneamente inglés, lenguas índicas y un conjunto adicional de idiomas de Asia meridional y Oriente Medio. El modelo resuelve un problema concreto: hasta ahora los encoders existentes solían ser fuertes en inglés o en índico, pero rara vez en ambos, lo que obligaba a mantener dos modelos separados en pipelines multilingües. NandiBERT unifica ambos mundos en un único checkpoint con licencia Apache-2.0.
 
-Arquitectónicamente es un transformer encoder de 28 capas con tamaño oculto de 1.024, normalización QK, activación SwiGLU y atención de consultas agrupadas (GQA) con 8 cabezas de consulta y 2 de clave-valor, lo que reduce el consumo de memoria en entradas largas. Su ventana de contexto es de 32.768 tokens, adecuada para documentos completos en una sola pasada, y comparte con el resto de la familia un vocabulario multilingüe de 100.000 tokens almacenado como embedding factorizado de rango 512.
+La arquitectura es un transformer bidireccional de 28 capas con tamaño oculto de 1.024, atención de consultas agrupadas (GQA) con 8 cabezas de consulta y 2 de clave-valor, QK-norm y SwiGLU. El encoder propiamente dicho tiene 445M de parámetros, aunque el checkpoint completo almacena 548M porque incluye la capa de salida MLM no atada (103M). Su ventana de contexto alcanza los 32.768 tokens, lo que lo sitúa en la categoría de encoders de contexto largo.
 
-Es relevante ahora porque ofrece una alternativa Apache-2.0 para tareas de comprensión (clasificación, NER, reranking, recuperación de documentos largos) en un abanico amplio de idiomas, con contexto largo y sin depender de encoders separados por familia lingüística. No obstante, la model card no publica todavía resultados de benchmarks ni un informe técnico definitivo, por lo que su rendimiento real debe validarse en cada caso de uso.
+El modelo está pensado como base para fine-tuning en tareas de clasificación, reconocimiento de entidades, reranking y recuperación de documentos largos. Su vocabulario multilingüe de 100K tokens, compartido con el resto de la familia NandiBERT, y sus embeddings factorizados de rango 512 lo hacen especialmente adecuado para escenarios donde se necesita procesar documentos completos en una sola pasada sin segmentar.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder bidireccional, 28 capas, hidden 1.024, QK-norm, SwiGLU, GQA (8 cabezas de consulta, 2 de clave-valor) |
-| Parametros totales | 548.471.808 |
+| Arquitectura | Transformer encoder bidireccional (estilo BERT) con GQA, QK-norm y SwiGLU |
+| Parametros totales | 548.471.808 (445M encoder + 103M capa MLM no atada) |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | 32.768 tokens |
-| Tipos de cuantizacion | No disponible (la model card solo muestra carga en bfloat16) |
+| Tipos de cuantizacion | No disponible |
 | Idiomas soportados | en, hi, mr, pa, ta, te, kn, ml, bn, gu, as, or, ur, ne, ar, id, ms |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un encoder transformer de 28 capas con tamaño oculto de 1.024, normalización QK y SwiGLU en las capas feed-forward. Usa atención de consultas agrupadas con 8 cabezas de consulta y 2 cabezas de clave-valor, decisión que reduce el coste de memoria de la caché de atención en secuencias largas. El vocabulario de 100.000 tokens, compartido por la familia NandiBERT, se almacena como embedding factorizado de rango 512, lo que rebaja la tabla de embeddings de 103M a 52M parámetros y libera capacidad para las capas del encoder.
+NandiBERT-450M es un encoder bidireccional de 28 capas con dimensión oculta de 1.024. Incorpora atención de consultas agrupadas (8 cabezas de consulta, 2 de clave-valor) para reducir el coste de memoria en secuencias largas, QK-norm para estabilizar el entrenamiento y SwiGLU como activación en las capas feed-forward. El vocabulario de 100K tokens se almacena como embedding factorizado de rango 512, lo que reduce la tabla de embeddings de 103M a 52M parámetros y libera capacidad para las capas del encoder. La capa de salida MLM está desatada del embedding de entrada, de ahí que el checkpoint completo tenga 548M de parámetros frente a los 445M del encoder fine-tuneable.
 
-La model card no detalla el volumen de tokens de entrenamiento, la composición del corpus ni si hubo etapas de ajuste posteriores (RLHF, DPO u otras), y el apartado de benchmarks está marcado como pendiente. La información disponible se limita a la descripción arquitectónica y a la ventana de contexto de 32.768 tokens, que sitúa al modelo en el rango de encoders de contexto largo.
+El modelo se preentrenó con objetivo de modelado de lenguaje enmascarado (MLM) sobre un corpus multilingüe que cubre 13 lenguas índicas en escritura nativa (asamés, bengalí, guyaratí, hindi, canarés, malayalam, maratí, nepalí, odia, punyabí, tamil, telugu y urdu), además de inglés, árabe, indonesio y malayo. La model card no detalla el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron fases de RLHF o DPO. Tampoco se especifican innovaciones adicionales como decodificación especulativa, ya que se trata de un encoder y no de un modelo generativo autorregresivo. El informe técnico está anunciado como "coming soon" en la model card.
 
 ## Capacidades
 
-- Masked language modeling (fill-mask) sobre texto en inglés, 11 lenguas índicas en escritura nativa y romanizada, lenguas del sudeste asiático y de Oriente Medio.
-- Codificación bidireccional de contexto, apta para tareas de comprensión y no para generación autoregresiva.
-- Procesamiento de documentos largos de hasta 32.768 tokens en una sola pasada.
-- Base para fine-tuning en clasificación de secuencias, etiquetado de tokens (NER), reranking y recuperación de documentos largos.
-- Cobertura multilingüe con un vocabulario compartido de 100.000 tokens para toda la familia.
-- Carga mediante Hugging Face `transformers` 5.x con `trust_remote_code=True`, usando `AutoModelForMaskedLM` y `AutoTokenizer`.
-- No se documentan capacidades de tool calling, agentes, visión, audio ni modo de razonamiento explícito.
+- Modelado de lenguaje enmascarado (fill-mask) sobre texto multilingüe.
+- Codificación bidireccional de secuencias de hasta 32.768 tokens en una sola pasada.
+- Cobertura de 13 lenguas índicas en escritura nativa más inglés, árabe, indonesio y malayo.
+- Soporte de formas romanizadas de las lenguas índicas según la model card.
+- Base para fine-tuning en clasificación de texto, NER, reranking y recuperación de documentos largos.
+- Capacidad de representación para código y matemáticas, evaluada en los benchmarks RAR-b Code y RAR-b Math.
+- No es un modelo generativo: no soporta tool calling, function calling ni razonamiento multi-step por sí mismo.
+- No dispone de modo thinking, visión ni audio.
 
 ## Casos de uso
 
-- Clasificación de documentos multilingües: fine-tuning sobre la cabeza de clasificación para categorizar tickets, contratos o informes en inglés e índico con un único modelo, evitando mantener encoders separados por idioma.
-- Reconocimiento de entidades nombradas (NER): el etiquetado de tokens sobre la salida del encoder permite extraer nombres, organizaciones y localizaciones en las 18 lenguas declaradas, con contexto suficiente para desambiguar entidades en párrafos largos.
-- Reranking en pipelines de búsqueda: usar las representaciones del encoder para reordenar candidatos recuperados por un sistema léxico o vectorial, aprovechando la ventana de 32K para puntuar pasajes extensos con su contexto completo.
-- Recuperación de documentos largos: codificar contratos, informes o artículos científicos de hasta 32.768 tokens en una sola pasada, lo que evita el troceado agresivo y la pérdida de contexto en tareas de retrieval.
-- Análisis de contratos y documentos legales: la ventana de 32K permite procesar el documento íntegro para tareas de extracción de cláusulas o clasificación de riesgo, algo que encoders de 512 tokens no cubren sin segmentación.
-- Moderación y filtrado de contenido: clasificación de textos en múltiples lenguas índicas y del sudeste asiático con un solo modelo, simplificando el despliegue en plataformas con audiencias diversas.
-- Preentrenamiento base para dominio financiero o sanitario: partir de un encoder Apache-2.0 y ajustarlo con datos propios en las lenguas objetivo, reduciendo el coste frente a entrenar desde cero.
+- Clasificación de sentimiento multilingüe: fine-tuning sobre IndicSentiment o datasets propios para moderación de comentarios en hindi, tamil, bengalí y otras lenguas índicas, aprovechando que un único modelo cubre todos los idiomas sin cambiar de checkpoint.
+- Reconocimiento de entidades nombradas en documentos legales o periodísticos: el contexto de 32K permite procesar contratos o artículos completos y extraer entidades con coherencia global, algo que un encoder de 512 tokens no puede hacer sin segmentar.
+- Recuperación de documentos largos (long-document retrieval): usar los embeddings del modelo como base para un sistema de búsqueda sobre informes anuales, papers o expedientes, con la ventana de 32K alineada con las necesidades de LongEmbed.
+- Reranking en pipelines RAG: fine-tuning como cross-encoder para reordenar candidatos recuperados por un retriever bi-encoder, con la ventaja de evaluar pares consulta-documento largos sin truncar.
+- Análisis de contratos y cumplimiento normativo: clasificación de cláusulas y detección de riesgos en documentos legales multilingües (inglés, hindi, árabe, indonesio) en una sola pasada por documento.
+- Procesamiento de atención al cliente en mercados asiáticos: clasificación de tickets y extracción de entidades en conversaciones multi-turno en lenguas índicas y del sudeste asiático, reduciendo la necesidad de mantener modelos separados por idioma.
+- Etiquetado de datos para entrenamiento de LLMs: uso del modelo como anotador o filtro de calidad en corpus multilingües, aprovechando su cobertura de 17 idiomas y su licencia permisiva.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye una tabla de resultados con marcadores `TODO` sin cifras, y el informe técnico figura como pendiente de publicación.
+Resultados publicados en la model card. La columna "Average" es la media de las métricas reportadas por el autor.
+
+### Benchmarks en índico
+
+| Modelo | Params | IndicSentiment | IndicXNLI | IndicCOPA | IndicXParaphrase | Naamapadam NER (f1) | MASSIVE Slot-fill (f1) | IndicQA (f1) | Media |
+|---|---|---|---|---|---|---|---|---|---|
+| IndicBERT-v2 | 272M | 88,3 | 74,3 | 63,0 | 57,0 | 72,4 | 57,3 | 49,2 | 65,93 |
+| NandiBERT-450M | 445M | 92,9 | 81,3 | 76,1 | 77,8 | 72,5 | 61,0 | 51,0 | 73,23 |
+
+### Benchmarks en inglés
+
+| Modelo | Idiomas | Params | GLUE | SQuAD 2.0 | MUltiCoNERv2 | few-nerd | Reward Bench | BEIR | RAR-b Code | RAR-b Math | MLDR | LongEmbed | Media |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| BERT-large | English | 334M | 85,2 | 81,8 | 57,7 | 67,8 | 62,6 | 38,6 | 12,2 | 33,0 | 29,8 | 30,0 | 49,87 |
+| RoBERTa-large | English | 355M | 88,9 | 89,4 | 62,3 | 68,1 | 68,5 | 42,8 | 20,3 | 37,8 | 29,5 | 32,2 | 53,98 |
+| GTE-en-MLM-large | English | 434M | 87,6 | 87,2 | 63,0 | 67,1 | 62,2 | 39,4 | 13,5 | 32,0 | 40,8 | 57,0 | 54,98 |
+| NeoBERT | English | 222M | 89,0 | 86,6 | 57,4 | 66,4 | 57,6 | 42,9 | 17,3 | 33,4 | 21,7 | 32,4 | 50,47 |
+| LFM2.5-Encoder-350M | English | 355M | 89,2 | 87,2 | 62,7 | 67,9 | 68,5 | 47,3 | 38,6 | 50,2 | 44,5 | 71,7 | 62,78 |
+| Ettin-Encoder-400M | English | 395M | 90,8 | 90,4 | 62,3 | 67,8 | 76,7 | 45,9 | 38,5 | 54,0 | 40,9 | 64,3 | 63,16 |
+| ModernBERT-large | English | 395M | 90,4 | 89,8 | 60,9 | 67,6 | 72,8 | 45,2 | 34,0 | 46,1 | 39,9 | 63,5 | 61,02 |
+| UltraBERT-380M | English | 380M | 91,0 | 90,9 | 63,5 | 68,3 | 78,8 | 47,7 | 47,0 | 61,7 | 44,1 | 74,9 | 66,79 |
+| NandiBERT-450M | Multi-Lingual | 445M | 89,9 | 89,7 | 61,4 | 68,5 | 74,7 | 46,1 | 37,4 | 52,8 | 41,46 | 71,4 | 63,34 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bfloat16: aproximadamente 1,1 GB de pesos más memoria de activaciones; con 32.768 tokens de contexto, las activaciones y la caché de atención elevan el consumo de forma notable, por lo que conviene reservar varios GB adicionales según el tamaño de lote.
-- GPU recomendadas: A100, H100 o L40S para lotes grandes y secuencias de 32K; RTX 4090 (24 GB) es suficiente para inferencia con lotes moderados.
-- Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más para secuencias cortas; para contexto completo de 32K se recomienda 16-24 GB.
-- Opciones de despliegue: Hugging Face `transformers` 5.x con `trust_remote_code=True`; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- VRAM estimada para inferencia en fp32: aproximadamente 2,2 GB para los 548M de parámetros.
+- VRAM estimada en fp16/bf16: aproximadamente 1,1 GB.
+- VRAM estimada en int8: aproximadamente 0,55 GB.
+- Cabe holgadamente en cualquier GPU de consumo con al menos 4 GB de VRAM (RTX 3050, GTX 1660, RTX 4060, etc.).
+- GPU recomendadas para producción: A100, H100 o L40S para alto throughput con lotes grandes y secuencias de 32K; RTX 4090 o RTX 3090 para desarrollo y despliegues de baja latencia.
+- La ventana de 32K incrementa el uso de memoria de activaciones; con GQA (2 cabezas KV) el coste es menor que en un encoder con atención multi-cabeza completa, pero conviene monitorizar el batch size en secuencias largas.
+- Opciones de despliegue: `transformers` (carga directa con `AutoModel`), vLLM no aplica para encoders, Text Embeddings Inference (TEI) de Hugging Face es la opción recomendada para servir embeddings, ONNX Runtime para CPU, y llama.cpp/Ollama no soportan encoders BERT de forma nativa.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| NandiBERT-450M | 548M | 32.768 | Apache-2.0 | Encoder multilingüe en/índico, GQA, embeddings factorizados |
-| NandiBERT-150M | 150M | 16.384 | Apache-2.0 | Variante pequeña de la misma familia, hidden 768 |
-| Alternativas de la misma categoría | No disponible | No disponible | No disponible | No se dispone de datos de benchmarks ni de comparativas publicadas en la información proporcionada |
+| Modelo | Params | Contexto | Idiomas | Licencia | Media (índico) | Media (inglés) |
+|---|---|---|---|---|---|---|
+| NandiBERT-450M | 445M (548M checkpoint) | 32K | 17 (índico + inglés + árabe + SEA) | Apache-2.0 | 73,23 | 63,34 |
+| IndicBERT-v2 | 272M | No disponible | Índico (13 lenguas) | No disponible en la información | 65,93 | No evaluado |
+| ModernBERT-large | 395M | No disponible en la información | Inglés | Apache-2.0 | No evaluado | 61,02 |
+| UltraBERT-380M | 380M | No disponible en la información | Inglés | No disponible en la información | No evaluado | 66,79 |
+| Ettin-Encoder-400M | 395M | No disponible en la información | Inglés | No disponible en la información | No evaluado | 63,16 |
 
-La única comparación documentada es interna a la familia NandiBERT: la variante de 150M ofrece menor coste con contexto de 16K, mientras que la de 450M duplica la ventana y aumenta la profundidad y el tamaño oculto.
+NandiBERT-450M es el único de la comparativa que cubre simultáneamente índico e inglés con rendimiento competitivo en ambos. En índico supera a IndicBERT-v2 por 7,3 puntos de media. En inglés queda por debajo de UltraBERT-380M (66,79) y Ettin-Encoder-400M (63,16 frente a 63,34, prácticamente empatado) y por encima de ModernBERT-large (61,02), a costa de un tamaño ligeramente mayor.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: está diseñado para masked language modeling y fine-tuning sobre tareas de comprensión; no debe usarse como modelo de chat o de generación autoregresiva.
-- Ausencia de benchmarks publicados: la model card mantiene la tabla de resultados con marcadores `TODO`, por lo que el rendimiento declarado no está verificado de forma independiente.
-- Riesgo de sesgo: el corpus de entrenamiento no se detalla, de modo que no es posible evaluar sesgos lingüísticos, culturales o de género en las 18 lenguas declaradas.
-- Riesgo de alucinación: en tareas de fill-mask el modelo puede producir predicciones plausibles pero incorrectas, especialmente en contextos ambiguos o en lenguas con menor representación en el corpus.
-- Cobertura desigual por idioma: aunque se declaran 18 lenguas, la model card no especifica el volumen de datos por idioma, por lo que el rendimiento puede variar significativamente entre ellas.
-- Dependencia de `trust_remote_code=True`: la carga requiere ejecutar código del autor, lo que implica revisar el repositorio antes de desplegarlo en entornos de producción.
-- Licencia Apache-2.0: permite uso comercial y modificación, pero conviene conservar los avisos de atribución y verificar las condiciones de los datos de entrenamiento, no detalladas en la información disponible.
-- Informe técnico pendiente: la referencia al technical report apunta a un enlace `TODO`, por lo que la documentación metodológica completa aún no está disponible.
+- No es un modelo generativo: no puede usarse para chat, generación de texto libre, tool calling ni razonamiento multi-step sin fine-tuning específico y una cabeza adicional.
+- La model card no documenta sesgos conocidos ni la composición exacta del corpus de entrenamiento, lo que dificulta evaluar riesgos de sesgo lingüístico o cultural.
+- Riesgo de alucinación no aplica en el sentido generativo, pero sí existe riesgo de predicciones erróneas en fill-mask y en tareas downstream si el dominio de fine-tuning difiere del corpus de preentrenamiento.
+- El rendimiento en lenguas no índicas del conjunto (árabe, indonesio, malayo) no se reporta en los benchmarks publicados; la cobertura declarada no equivale a calidad verificada.
+- La ventana de 32K es teórica: no se documenta la degradación del rendimiento en longitudes cercanas al límite ni se publican resultados de LongEmbed desglosados por longitud.
+- La licencia Apache-2.0 permite uso comercial sin restricciones adicionales, pero el autor no ofrece garantías ni soporte.
+- El informe técnico está pendiente de publicación, por lo que faltan detalles sobre datos de entrenamiento, tokens vistos y recetas de fine-tuning recomendadas.
+- El checkpoint incluye la capa MLM no atada (103M parámetros); quien solo necesite el encoder debe descartarla al cargar el modelo para ahorrar memoria.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/FrontiersMind/NandiBERT-450M
-- Variante de 150M: https://huggingface.co/FrontiersMind/NandiBERT-150M
-- Perfil del autor en Hugging Face: https://huggingface.co/FrontiersMind
-- GitHub de FrontiersMind: https://github.com/FrontiersMindAI/
-- Blog de lanzamiento: https://www.frontiersmind.ai/
+- Hugging Face: https://huggingface.co/FrontiersMind/NandiBERT-450M
+- Modelo hermano NandiBERT-150M: https://huggingface.co/FrontiersMind/NandiBERT-150M
+- Organización en Hugging Face: https://huggingface.co/FrontiersMind
+- GitHub: https://github.com/FrontiersMindAI/
+- Blog de lanzamiento: https://www.frontiersmind.ai/blog/nandibert/
 - Sitio web: https://www.frontiersmind.ai/
-- Informe técnico: no disponible (enlace marcado como `TODO` en la model card)
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
+- Informe técnico: anunciado como "coming soon", no disponible

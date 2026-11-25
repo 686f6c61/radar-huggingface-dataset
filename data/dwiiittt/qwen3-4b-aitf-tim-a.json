@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "dwiiittt/qwen3-4b-aitf-tim-a",
+  "slug": "dwiiittt-qwen3-4b-aitf-tim-a",
+  "author": "dwiiittt",
+  "url": "https://huggingface.co/dwiiittt/qwen3-4b-aitf-tim-a",
+  "created_at": "2026-11-25T03:09:53.000Z",
+  "updated_at": "2026-11-25T03:11:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "lora-merged",
+    "aitf",
+    "tor",
+    "checklist",
+    "id",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404482,
+  "storage_human": "8.1 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

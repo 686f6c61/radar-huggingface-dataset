@@ -2,93 +2,87 @@
 
 ## Resumen
 
-Inflect Micro v3 es un modelo de síntesis de voz (text-to-speech) en inglés desarrollado por owensong, publicado como paquete de acceso anticipado no comercial en Hugging Face. Se trata de la variante más pequena de la familia Inflect v3, que también incluye Mini y Atom. El núcleo de síntesis entrenado contiene 11.787.634 parámetros y genera audio nativo a 24 kHz, lo que lo sitúa en la categoría de modelos TTS ultraligeros orientados a inferencia local en CPU.
+Inflect Micro v3 es un modelo de síntesis de voz (text-to-speech) en inglés desarrollado por owensong, tercer miembro de la familia Inflect v3 junto a Mini y Atom. Se trata de un núcleo de síntesis neuronal de tan solo 11.787.634 parámetros que genera audio WAV nativo a 24 kHz a partir de texto en inglés y una de seis voces predefinidas (Cassidy, Mark, Hope, James, Sophia y Jasper). Su propuesta de valor es clara: ofrecer una voz neuronal compacta que se ejecuta íntegramente en local, sin dependencia de servicios en la nube, con un paquete de inferencia completo que incluye modelos de pronunciación, dependencias y activos de condicionamiento de voz.
 
-El modelo resuelve el problema de generar voz inglesa de calidad razonable sin depender de servicios en la nube ni de GPU dedicada. Ofrece seis voces fijas predefinidas (hope, sophia, cassidy, james, jasper, mark) y no expone clonación por audio de referencia ni etiquetas de estilo aprendidas. Su peso serializado ocupa 48,06 MB, y el repositorio completo apenas 0,1 GB, lo que facilita su distribución y despliegue en entornos con recursos limitados.
+El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas, y está pensado para despliegues en entornos con recursos limitados. Según la model card, alcanza un 0,73 % de WER (7/50) en el Open TTS Leaderboard, una puntuación UTMOS22 de 4,37 y un rendimiento de 71,87 veces tiempo real sobre una GPU H200. El repositorio ocupa 0,1 GB, lo que refleja su naturaleza ligera.
 
-Es relevante ahora porque representa una opcion de TTS local de muy bajo coste computacional, con receta de CPU incluida y verificación de integridad mediante `release-manifest.json`. No obstante, su licencia `inflect-preview-evaluation-1.0` restringe el uso a evaluación no comercial, lo que limita su adopción en producción sin acuerdo previo con el autor.
+La relevancia actual de Inflect Micro v3 radica en la creciente demanda de TTS local y de baja latencia para aplicaciones embebidas, asistentes offline y pipelines de accesibilidad, donde el coste por inferencia y la privacidad de los datos son críticos. Frente a soluciones propietarias basadas en API, este modelo permite integrar síntesis de voz en productos sin enviar texto a terceros.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Núcleo de síntesis neuronal propietario (FastMicro); detalles internos no disponibles |
+| Arquitectura | Núcleo de síntesis neuronal (detalles arquitectónicos no disponibles) |
 | Parametros totales | 11.787.634 (núcleo de síntesis) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (modelo TTS, no de lenguaje) |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Inglés (en) |
-| Licencia | inflect-preview-evaluation-1.0 (acceso anticipado, no comercial) |
-| Formato de pesos | PyTorch (`models/micro/weights.pt`, 48.056.467 bytes) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | no disponible (el repositorio incluye el paquete de inferencia completo, no solo pesos) |
 
 ## Arquitectura y entrenamiento
 
-La información pública describe un "núcleo de síntesis aprendido" denominado FastMicro, con 11.787.634 parámetros, que sustituye al anterior Micro preview de 12,63M parámetros. No se especifica si la arquitectura interna es un transformer, un modelo basado en difusión, un vocoder neuronal o una combinación híbrida; la model card únicamente detalla el recuento de parámetros, el tamaño serializado del fichero de pesos y la frecuencia de muestreo nativa de 24 kHz.
+La información disponible no detalla la arquitectura interna del núcleo de síntesis más allá de su naturaleza neuronal y su recuento de parámetros (11.787.634). La model card especifica que el recuento de núcleos y el tamaño de los ficheros de pesos no equivalen al tamaño total de la instalación ni a los requisitos de memoria en tiempo de ejecución: los modelos de pronunciación, las dependencias y los activos fijos de condicionamiento de voz son componentes separados del núcleo aprendido. Se recomienda descargar el repositorio completo, no solo los pesos.
 
-No se han publicado datos sobre el volumen de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones técnicas como decodificación especulativa o atención lineal. La model card indica explícitamente que los parámetros del núcleo no incluyen los activos externos de pronunciación ni los activos fijos de condicionamiento de voz, y que el fichero de pesos no constituye la instalación completa: se requieren también activos de frontend, runtime y vendor. Los componentes opcionales de Mini (como el enhancer de 48 kHz) se contabilizan por separado y no forman parte de este paquete.
+No se han publicado en la información proporcionada datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF o DPO. Tampoco se documentan innovaciones técnicas específicas como decodificación especulativa o atención lineal. Lo que sí se indica es que el modelo produce salida nativa a 24 kHz y que el paquete de inferencia v3 es autónomo, incluyendo todo lo necesario para la generación local mediante su interfaz de línea de comandos.
 
 ## Capacidades
 
-- Síntesis de voz en inglés a 24 kHz con salida PCM16 WAV.
-- Seis voces fijas predefinidas: `hope`, `sophia`, `cassidy`, `james`, `jasper`, `mark`.
-- Inferencia local en CPU con receta incluida (`requirements-cpu.txt`) en Python 3.12.
-- Ejecución opcional en CUDA mediante `--device cuda`, requiriendo una instalación compatible de PyTorch/CUDA no incluida.
-- Verificación de integridad del paquete mediante `synthesize.py --verify` y `release-manifest.json`.
-- Preparación conservadora de números y gestión de chunks con metadatos de retorno.
-- No soporta clonación de voz por audio de referencia.
-- No soporta etiquetas de estilo o eventos como `[laugh]` o `[excited]`.
-- No soporta conversión de acento ni otras lenguas distintas del inglés.
-- No expone tool calling, function calling ni razonamiento multi-paso (no es un modelo de lenguaje).
+- Síntesis de voz (text-to-speech) en inglés a partir de texto plano, con salida WAV nativa a 24 kHz.
+- Seis voces predefinidas en inglés: Cassidy, Mark, Hope, James, Sophia y Jasper.
+- Ejecución local completa mediante una interfaz de línea de comandos incluida en el repositorio.
+- Paquete de inferencia autónomo que integra modelos de pronunciación y activos de condicionamiento de voz.
+- No se documentan capacidades de clonación de voz, control de emociones, multilingüismo, tool calling ni razonamiento multi-paso; es un modelo exclusivamente de TTS.
 
 ## Casos de uso
 
-- Lectura de artículos y documentos en local: el modelo puede convertir texto inglés en audio a 24 kHz íntegramente en CPU, sin enviar contenido a servicios externos, lo que resulta adecuado para entornos con requisitos de privacidad.
-- Prototipado de asistentes de voz: las seis voces fijas permiten generar diálogos multi-personaje en fase de diseño sin necesidad de grabar referencias ni entrenar modelos adicionales.
-- Accesibilidad en aplicaciones de escritorio: integración en lectores de pantalla o herramientas de lectura para usuarios con discapacidad visual, gracias a su reducido tamaño (48 MB de pesos) y su receta de instalación en CPU.
-- Evaluación comparativa de sistemas TTS: la posibilidad de fijar revisión, voz, dispositivo, semilla y perfil permite reproducir comparaciones controladas entre modelos de la familia Inflect y alternativas.
-- Generación de avisos y notificaciones pregrabadas: síntesis por lotes de mensajes cortos en inglés para sistemas de megafonía o alertas, donde la latencia de un modelo de 11,8M de parámetros en CPU es suficiente.
-- Investigación en síntesis de voz de bajo coste: servir como línea base ligera para estudiar calidad, prosodia y naturalidad en modelos de menos de 12M de parámetros, siempre bajo la licencia de evaluación no comercial.
-- Pruebas de integración en pipelines de audio: validación de formatos WAV PCM16 a 24 kHz y de la gestión de chunks antes de migrar a variantes mayores de la familia.
+- Asistentes de voz offline: el modelo puede generar respuestas habladas en inglés directamente en el dispositivo del usuario, sin enviar texto a servicios externos, gracias a su núcleo de 11,7 M de parámetros y su ejecución local.
+- Accesibilidad y lectores de pantalla: integración en aplicaciones de escritorio o móviles para convertir texto en audio a 24 kHz con seis voces seleccionables, adecuado para entornos donde la latencia de red es inaceptable.
+- Sistemas embebidos y edge computing: su reducido tamaño (repositorio de 0,1 GB) permite desplegarlo en dispositivos con recursos limitados, como Raspberry Pi o mini-PC, para interfaces de voz en kioscos o electrodomésticos.
+- Generación de audiolibros y contenido narrado: la salida WAV a 24 kHz y las seis voces permiten producir narraciones en inglés por lotes mediante la CLI, con calidad suficiente según la puntuación UTMOS22 de 4,37.
+- Prototipado rápido de productos de voz: los desarrolladores pueden validar flujos de conversación texto-a-voz en local antes de migrar a soluciones en la nube, usando el playground de Hugging Face o la CLI del repositorio.
+- Privacidad en sectores regulados: en aplicaciones sanitarias o legales donde el texto no puede salir de la infraestructura propia, el modelo permite síntesis de voz completamente on-premise bajo licencia Apache 2.0.
+- Automatización de avisos y notificaciones: generación programática de mensajes hablados en inglés para sistemas de megafonía, centralitas o alertas industriales, con throughput de 71,87 veces tiempo real en H200.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+| Benchmark | Resultado |
+|---|---|
+| Open TTS Leaderboard (WER) | 0,73 % (7/50) |
+| UTMOS22 | 4,37 |
+| Velocidad de inferencia (H200) | 71,87x tiempo real |
+
+No se han publicado en la información disponible resultados comparativos adicionales frente a otros modelos TTS.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; el modelo está diseñado para ejecución en CPU.
-- GPU recomendadas: no se especifican; `--device cuda` requiere una instalación compatible de PyTorch/CUDA aportada por el usuario.
-- Cabe en GPU de consumo: previsiblemente sí, dado el tamaño del núcleo (11,8M de parámetros, 48 MB de pesos), aunque no se confirma oficialmente.
-- Opciones de despliegue: CLI propia (`synthesize.py`) con receta de CPU en Python 3.12 y `requirements-cpu.txt`; no se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput estimados: no disponibles.
-- Tamaño del repositorio completo: 0,1 GB.
+- VRAM estimada para inferencia: no disponible de forma explícita; el núcleo de síntesis tiene 11,7 M de parámetros, pero el paquete completo incluye modelos de pronunciación y activos adicionales cuyo consumo no se detalla.
+- GPU recomendadas: la model card cita una H200 para la medición de 71,87x tiempo real; no se especifican requisitos mínimos ni otras GPU validadas.
+- Compatibilidad con GPU de consumo: no confirmada en la información disponible; el tamaño reducido del núcleo sugiere que podría ejecutarse en GPU de consumo, pero no hay datos oficiales.
+- Opciones de despliegue: interfaz de línea de comandos incluida en el repositorio y playground en Hugging Face Spaces; no se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo TTS de este tipo).
+- Latencia y throughput: 71,87x tiempo real sobre H200 según la model card; no hay datos para otras GPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto / salida | Idiomas | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Inflect Micro v3 | 11.787.634 (núcleo) | 24 kHz, 6 voces fijas | Inglés | inflect-preview-evaluation-1.0 (no comercial) | Hugging Face, acceso anticipado |
-| Inflect Mini v3 | No disponible en la información proporcionada | No disponible | Inglés | No disponible | Hugging Face (familia Inflect v3) |
-| Inflect Atom v3 | No disponible en la información proporcionada | No disponible | Inglés | No disponible | Hugging Face (familia Inflect v3) |
-
-No se dispone de datos de benchmarks ni de especificaciones completas de Mini y Atom en la información proporcionada, por lo que la comparación cuantitativa con alternativas externas no está disponible.
+No disponible. La información proporcionada no incluye datos de otros modelos TTS comparables (parámetros, contexto, rendimiento o licencia) que permitan establecer una comparativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- Licencia `inflect-preview-evaluation-1.0`: uso restringido a evaluación no comercial; cualquier uso comercial requiere revisión de los términos en `LICENSE.md`.
-- Modelo exclusivamente en inglés; el texto no soportado falla de forma explícita en lugar de generar una salida degradada.
-- No soporta clonación de voz, conversión de acento, etiquetas de estilo ni eventos generados.
-- No incluye el enhancer de 48 kHz de Cassidy Q1500, que es un componente específico de Mini.
-- El fichero de pesos no es la instalación completa: se requieren activos de frontend, runtime y vendor, y la instalación puede necesitar acceso a red.
-- Riesgo de alucinación no aplica en el sentido de generación de texto, pero la pronunciación de números, símbolos y scripts no soportados puede fallar o requerir verificación mediante los metadatos devueltos.
-- No se garantiza compatibilidad bit a bit entre plataformas, runtimes ni instalaciones CUDA limpias.
-- El estado es de acceso anticipado ("early access"), no un lanzamiento final; la disponibilidad de funciones se limita a lo descrito en el paquete.
-- No se han publicado datos sobre sesgos, calidad prosódica ni evaluación perceptual.
+- Solo soporta inglés; no se ha documentado soporte multilingüe.
+- El modelo únicamente dispone de seis voces predefinidas; no se documenta clonación de voz ni control fino de prosodia o emoción.
+- El recuento de 11,7 M de parámetros corresponde solo al núcleo de síntesis; el consumo real de memoria y disco es mayor al incluir modelos de pronunciación, dependencias y activos de condicionamiento.
+- La model card advierte explícitamente de que debe descargarse el repositorio completo, no solo los pesos, para que la inferencia funcione.
+- No se han publicado datos sobre sesgos de pronunciación, acento o género en las voces disponibles.
+- Riesgo de errores de pronunciación en palabras poco frecuentes, acrónimos o nombres propios, mitigado parcialmente por el modelo de pronunciación incluido, aunque sin datos de cobertura.
+- Licencia Apache 2.0: permite uso comercial y modificación, pero no se detallan restricciones adicionales sobre el uso de las voces o los datos de entrenamiento.
+- El repositorio se creó en noviembre de 2026 y tiene pocas descargas (296) y likes (12), por lo que la validación comunitaria es aún limitada.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/owensong/Inflect-Micro-v3
-- Repositorio de archivos: https://huggingface.co/owensong/Inflect-Micro-v3/tree/main
-- GitHub: https://github.com/owenawsong/Inflect
+- Modelo en Hugging Face: https://huggingface.co/owensong/Inflect-Micro-v3
+- Playground: https://huggingface.co/spaces/owensong/Inflect-v3
+- Repositorio GitHub: https://github.com/owenawsong/Inflect
+- Documentación de descargas v3: https://github.com/owenawsong/Inflect/blob/main/docs/v3/downloads.md
+- Colección de modelos Inflect v3: https://huggingface.co/collections/owensong/inflect-v3
 - Discord: https://discord.gg/CVJYedvzvp
-- Licencia: https://huggingface.co/owensong/Inflect-Micro-v3/blob/main/LICENSE.md

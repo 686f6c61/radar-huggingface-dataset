@@ -2,53 +2,50 @@
 
 ## Resumen
 
-Nemotron-3.5-Bolt-E4B-Abliterated-GGUF es una cuantizacion estatica en formato GGUF del modelo monamoe/Nemotron-3.5-Bolt-E4B-Abliterated, publicada por el usuario mradermacher, conocido en la comunidad por generar versiones GGUF de modelos recientes para inferencia local. El nombre sugiere una variante derivada de la familia Nemotron (NVIDIA) con 3.500 millones de parametros nominales y una designacion "E4B" que, por convencion en modelos tipo MoE, apuntaria a 4.000 millones de parametros activos; sin embargo, el dato real de safetensors del repositorio indica 7.518.069.290 parametros totales, por lo que la nomenclatura no coincide de forma directa con el conteo efectivo.
+Nemotron-3.5-Bolt-E4B-Abliterated-GGUF es la distribucion en formato GGUF del modelo monamoe/Nemotron-3.5-Bolt-E4B-Abliterated, publicada por el cuantizador mradermacher. Se trata de una variante "abliterated" (es decir, con el comportamiento de rechazo mitigado mediante intervencion sobre las direcciones de activacion) del modelo Nemotron-3.5-Bolt-E4B, que segun los tags del repositorio deriva de la familia Gemma 4 y esta orientado a uso conversacional en ingles.
 
-El modelo base pertenece presuntamente a la estirpe Nemotron 3.5 de NVIDIA, orientada a tareas conversacionales y de razonamiento, aunque la model card incluida en este repositorio no aporta informacion sobre arquitectura, datos de entrenamiento ni evaluaciones. El sufijo "Abliterated" es una convencion de la comunidad de fine-tuning que suele indicar la eliminacion o reduccion de mecanismos de rechazo y alineacion de seguridad, lo que tiene implicaciones directas para su uso en produccion.
+El modelo cuenta con 7.518.069.290 parametros totales segun los pesos en safetensors del modelo base, lo que lo situa en la categoria de modelos de aproximadamente 7B-8B. El sufijo "E4B" del nombre sugiere una configuracion de tipo mixture-of-experts con aproximadamente 4B de parametros activos, aunque esta informacion no se confirma explicitamente en la model card proporcionada y debe tratarse como no verificada.
 
-La relevancia de esta publicacion es practica: ofrece el modelo en multiples niveles de cuantizacion (desde Q2_K hasta F16, incluyendo IQ4_XS) para facilitar su despliegue en hardware de consumo mediante llama.cpp u Ollama. No obstante, el repositorio no registra descargas ni interacciones, no declara licencia y no incluye documentacion tecnica verificable, por lo que debe tratarse como un artefacto de procedencia incierta.
+La relevancia de esta publicacion radica en que ofrece el modelo en multiples niveles de cuantizacion (desde Q2_K hasta f16, incluyendo variantes IQ) junto con los ficheros mmproj necesarios para el procesamiento multimodal, lo que facilita su despliegue en hardware de consumo mediante llama.cpp u Ollama. La licencia openmdw-1.1 y la ausencia de datos de benchmarks publicados en la informacion disponible limitan las conclusiones sobre su rendimiento real.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (presuntamente transformer, sin confirmar; "E4B" sugiere posible MoE) |
-| Parametros totales | 7.518.069.290 |
-| Parametros activos | no disponible |
+| Arquitectura | no disponible (tags indican nemotron-3.5 y gemma4; se desconoce la arquitectura exacta) |
+| Parametros totales | 7.518.069.290 (dato real de safetensors del modelo base) |
+| Parametros activos | no disponible (el sufijo E4B sugiere ~4B activos, sin confirmar) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
-| Tamano del repositorio | 60,3 GB |
-| Version de cuantizacion | quantize_version 2, output_tensor_quantised 1 |
-| Conversion | hf |
+| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (ingles) |
+| Licencia | openmdw-1.1 |
+| Formato de pesos | GGUF (con ficheros mmproj para multimodal); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base en la documentacion proporcionada. El identificador "E4B" es consistente con la convencion empleada en modelos de mezcla de expertos (MoE) para indicar parametros activos (4B), pero el conteo real de parametros del repositorio (7,52B) no encaja con esa lectura sin ambiguedad, por lo que no es posible confirmar si se trata de un transformer denso, un MoE o una arquitectura hibrida. Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO o ajuste por preferencias.
+No se dispone de informacion detallada sobre la arquitectura interna en la model card proporcionada. Los tags del repositorio apuntan a las familias nemotron-3.5 y gemma4, y el nombre "E4B" sugiere una configuracion de mezcla de expertos con aproximadamente 4B de parametros activos sobre un total de 7.518.069.290 parametros. Esta interpretacion no esta confirmada por documentacion oficial en la informacion disponible.
 
-Respecto al proceso de cuantizacion, la model card indica que se trata de cuantizaciones estaticas (quantize_version 2) con cuantizacion de tensores de salida activada, generadas a partir del modelo base monamoe/Nemotron-3.5-Bolt-E4B-Abliterated en formato Hugging Face. El sufijo "Abliterated" sugiere un proceso de fine-tuning orientado a suprimir comportamientos de rechazo, pero no se aporta ninguna especificacion tecnica sobre dicho proceso, su metodologia ni el impacto sobre las capacidades del modelo.
+Respecto al entrenamiento, la model card no incluye datos sobre volumen de tokens, composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO u otras. La unica informacion tecnica relevante es que se trata de una variante "abliterated", lo que implica que el modelo base ha sido modificado para reducir o eliminar las respuestas de rechazo, presumiblemente mediante tecnicas de abliteracion sobre las direcciones de activacion. Tampoco se detalla el proceso de cuantizacion mas alla de que se han generado cuantizaciones estaticas (quantize_version 2) con output_tensor_quantised 1 y convert_type hf.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el tag "conversational" del repositorio y el pipeline asociado indican uso previsto para dialogos multi-turno.
-- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere que el modelo puede servirse a traves de infraestructura compatible con la API de Hugging Face.
-- Inferencia local: al distribuirse en GGUF, es ejecutable en llama.cpp, Ollama y otros runners compatibles.
-- Razonamiento y codigo: no confirmado en la informacion disponible.
-- Tool calling / function calling: no disponible.
-- Capacidades de agente y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declaran idiomas).
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Generacion de texto conversacional en ingles, segun el tag "conversational" del repositorio.
+- Procesamiento multimodal: la presencia de ficheros mmproj (Q8_0 y f16) indica soporte de entrada de imagenes o vision, aunque no se detalla el alcance.
+- Comportamiento "abliterated": el modelo ha sido modificado para reducir los rechazos, lo que puede afectar a su comportamiento en consultas sensibles.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles segun el campo language del repositorio.
+- Modo thinking, audio u otras capacidades especiales: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Prototipado de asistentes conversacionales en local: las cuantizaciones Q4_K_M y Q5_K_M permiten ejecutar un modelo de 7,5B parametros en GPU de consumo, lo que facilita iterar sobre prompts y flujos de dialogo sin coste de API.
-- Evaluacion de variantes "abliterated" en investigacion de seguridad: util para estudiar como el fine-tuning de supresion de rechazos altera las respuestas del modelo en dominios sensibles, siempre dentro de un marco de evaluacion controlado.
-- Pruebas de integracion con llama.cpp y Ollama: el repositorio incluye doce niveles de cuantizacion, lo que permite medir el compromiso entre calidad y huella de memoria en distintas configuraciones de hardware.
-- Despliegue en entornos con recursos limitados: la variante Q2_K o IQ4_XS reduce el peso a unos pocos GB, adecuada para equipos sin GPU dedicada o con VRAM muy ajustada.
-- Generacion de texto offline en estaciones de trabajo aisladas: al no requerir conexion a servicios externos, encaja en escenarios con requisitos de privacidad donde el contenido no puede salir de la red local.
-- Comparativas de cuantizacion: sirve como caso de estudio para medir la degradacion de calidad entre F16 y Q2_K en un modelo de ~7,5B parametros, con fines de documentacion tecnica.
+- Despliegue local en hardware de consumo: las cuantizaciones Q4_K_M (5,4 GB) y Q4_K_S (5,3 GB) permiten ejecutar el modelo en GPUs con 6-8 GB de VRAM mediante llama.cpp u Ollama, lo que lo hace adecuado para prototipado y experimentacion en estaciones de trabajo personales.
+- Generacion de texto conversacional en ingles: el modelo esta etiquetado como conversacional y puede emplearse en asistentes de chat de proposito general, aunque su naturaleza abliterated lo hace poco recomendable para aplicaciones con filtros de contenido estrictos.
+- Experimentacion con modelos sin censura: investigadores interesados en estudiar el efecto de la abliteracion sobre el comportamiento del modelo pueden comparar esta variante con el modelo base original.
+- Procesamiento multimodal en local: los ficheros mmproj permiten combinar el modelo con entradas visuales en pipelines de llama.cpp, util para tareas de descripcion de imagenes o analisis de documentos escaneados.
+- Evaluacion de cuantizaciones: la disponibilidad de 12 niveles de cuantizacion (desde Q2_K hasta f16) facilita estudios comparativos de degradacion de calidad frente a tamano, utiles para decidir el compromiso optimo en produccion.
+- Integracion en entornos con requisitos de licencia permisiva: la licencia openmdw-1.1 puede encajar en proyectos que necesiten redistribuir el modelo, siempre que se verifiquen los terminos exactos del fichero LICENSE.
+- Fine-tuning y experimentacion: al estar disponible tambien el modelo base en safetensors, es posible partir de el para ajuste fino y luego cuantizar los resultados con el mismo pipeline de mradermacher.
 
 ## Benchmarks y rendimiento
 
@@ -56,44 +53,42 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, segun el conteo de 7,52B parametros y las cuantizaciones declaradas):
-  - F16: en torno a 15 GB de pesos, mas overhead de contexto.
-  - Q8_0: en torno a 8 GB.
-  - Q6_K: en torno a 6,2 GB.
-  - Q5_K_M: en torno a 5,4 GB.
-  - Q4_K_M: en torno a 4,6 GB.
-  - Q3_K_M: en torno a 3,7 GB.
-  - Q2_K: en torno a 2,9 GB.
-  - IQ4_XS: en torno a 4,2 GB.
-- GPU recomendadas: no especificadas por el autor. Por tamano, una RTX 4090 (24 GB) permite F16 con contexto amplio; una RTX 4060 Ti de 16 GB o una RTX 4070 de 12 GB cubren Q8_0 y Q6_K; GPUs de 8 GB cubren Q4_K_M con contexto moderado.
-- Cabe en GPU de consumo: si, en todas las cuantizaciones de Q8_0 hacia abajo con 8 GB o mas de VRAM; las variantes Q3 y Q2 caben en 4-6 GB.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runner compatible con GGUF (koboldcpp, LM Studio, text-generation-webui). vLLM y TGI requeririan el modelo base en safetensors, no las cuantizaciones GGUF.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
+- VRAM estimada para inferencia: aproximadamente 4,5 GB (Q2_K), 5,4 GB (Q4_K_M), 6,3 GB (Q6_K), 8,1 GB (Q8_0) y 15,2 GB (f16), segun los tamanos de fichero publicados.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090, A100 y H100 para las cuantizaciones mas altas o para mayor throughput.
+- Cabe en GPU de consumo: si, en la mayoria de GPUs con 6-8 GB o mas de VRAM usando cuantizaciones Q4 o Q5; las variantes Q8_0 y f16 requieren 8-16 GB.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base puede servirse con vLLM o TGI en formato safetensors.
+- Latencia y throughput estimados: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Nemotron-3.5-Bolt-E4B-Abliterated-GGUF (este) | 7,52B | no disponible | no disponible | GGUF | Sin benchmarks ni documentacion |
-| Mistral-7B-Instruct (referencia de tamano) | 7,24B | 32K (v0.2) | Apache 2.0 | safetensors, GGUF | Ampliamente documentado y evaluado |
-| Qwen2.5-7B-Instruct (referencia de tamano) | 7,62B | 128K | Apache 2.0 | safetensors, GGUF | Benchmarks publicos y soporte de tool calling |
-| Llama-3.1-8B-Instruct (referencia de tamano) | 8,03B | 128K | Llama 3.1 Community | safetensors, GGUF | Ecosistema amplio y evaluaciones publicas |
+| Nemotron-3.5-Bolt-E4B-Abliterated-GGUF (este) | 7.518.069.290 | no disponible | openmdw-1.1 | GGUF | Variante abliterated, multimodal via mmproj |
+| monamoe/Nemotron-3.5-Bolt-E4B-Abliterated | 7.518.069.290 | no disponible | openmdw-1.1 | safetensors | Modelo base sin cuantizar del que deriva esta publicacion |
+| Nemotron-3.5-Bolt-E4B (original, sin abliterar) | no disponible | no disponible | no disponible | no disponible | Referencia por nombre; no se dispone de ficha en la informacion proporcionada |
+| Modelos de ~7B de proposito general (p. ej. Llama 3.1 8B, Qwen2.5 7B) | ~7-8B | 128K en algunos casos | licencias propias | safetensors, GGUF | Alternativas habituales; no se dispone de comparacion de rendimiento en la informacion proporcionada |
 
-La comparativa se limita al rango de parametros, ya que no existen datos de rendimiento del modelo evaluado. Frente a las alternativas citadas, la principal desventaja es la ausencia de licencia declarada, benchmarks y documentacion, lo que impide verificar su calidad y sus condiciones de uso.
+No se dispone de datos de rendimiento comparativo en la informacion proporcionada, por lo que la comparativa se limita a parametros, formato y licencia.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: no es posible determinar si el uso comercial esta permitido; debe tratarse como no apto para produccion hasta verificar la licencia del modelo base.
-- Procedencia incierta: el autor de la cuantizacion no es el desarrollador original; el modelo base monamoe/Nemotron-3.5-Bolt-E4B-Abliterated no aporta documentacion tecnica en este repositorio.
-- Riesgo de alucinacion: sin benchmarks ni evaluaciones publicadas, no hay evidencia sobre la fiabilidad factual del modelo.
-- Sesgos: no documentados; al no declararse composicion del dataset ni idiomas, no es posible evaluar sesgos linguisticos o culturales.
-- Efecto "Abliterated": la eliminacion de mecanismos de rechazo puede producir respuestas inapropiadas en dominios sensibles y complica el cumplimiento de politicas de contenido en entornos comerciales.
-- Contexto desconocido: se desconoce la ventana de contexto efectiva, lo que impide planificar su uso en tareas de documento largo.
-- Sin soporte ni mantenimiento: cero descargas y cero interacciones en el momento de la consulta; no hay garantia de actualizaciones ni de correccion de errores.
-- Ambiguedad en la nomenclatura: la designacion "E4B" no concuerda con el conteo real de parametros, lo que sugiere que el nombre comercial puede no reflejar la arquitectura efectiva.
-- Cuantizaciones de baja precision: Q2_K y Q3_K_S pueden degradar notablemente la coherencia en modelos de este tamano; se recomienda validar la calidad antes de desplegar.
+- Modelo "abliterated": la mitigacion del comportamiento de rechazo puede producir respuestas inapropiadas o inseguras en consultas sensibles; no es recomendable para aplicaciones orientadas al publico sin filtros adicionales.
+- Sesgos conocidos: no disponible en la informacion proporcionada; cabe esperar los sesgos inherentes al modelo base y a sus datos de entrenamiento, no documentados aqui.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; como todo modelo generativo, puede producir contenido factualmente incorrecto.
+- Limitaciones de idioma: el repositorio declara unicamente ingles, por lo que el rendimiento en castellano u otros idiomas no esta garantizado.
+- Limitaciones de contexto: la longitud de contexto no se especifica en la model card; debe consultarse la configuracion del modelo base antes de usarlo en tareas de contexto largo.
+- Restricciones de licencia: la licencia openmdw-1.1 debe revisarse en el fichero LICENSE del repositorio antes de cualquier uso comercial o redistribucion.
+- Caveat de cuantizacion: las cuantizaciones Q2_K y Q3_K pueden degradar notablemente la calidad; se recomienda Q4_K_M o superior para produccion.
+- Ficheros mmproj: son necesarios para el modo multimodal; sin ellos, el modelo funciona solo como texto.
+- Datos de rendimiento ausentes: no hay benchmarks publicados en la informacion disponible, por lo que cualquier decision de produccion deberia basarse en evaluaciones propias.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Nemotron-3.5-Bolt-E4B-Abliterated-GGUF
 - Modelo base: https://huggingface.co/monamoe/Nemotron-3.5-Bolt-E4B-Abliterated
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Nemotron-3.5-Bolt-E4B-Abliterated-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Nemotron-3.5-Bolt-E4B-Abliterated-GGUF
+- Guia de uso de GGUF (README de TheBloke referenciado): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

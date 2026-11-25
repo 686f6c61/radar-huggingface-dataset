@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 303,
+  "downloads_30d": 309,
   "trending_score": 0,
   "parameters": 8034471936,
   "parameters_human": "8.03B",
@@ -52,11 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Election results: Find out who won across the country | Sky News",
-      "url": "https://election.news.sky.com/",
-      "snippet": "Sky News delivers breaking news, headlines and top stories from business, politics, entertainment and more in the UK and worldwide."
-    }
-  ]
+  "sources": []
 }

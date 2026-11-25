@@ -2,89 +2,96 @@
 
 ## Resumen
 
-LukaUrushibara-Lora es un adaptador LoRA de personaje para modelos de difusion SDXL, entrenado por el usuario abbuibuibui sobre el checkpoint waiIllustriousSDXL v17. Reproduce a Luka Urushibara (漆原琉华), personaje de la novela visual y anime Steins;Gate, y se distribuye como un conjunto de siete ficheros safetensors correspondientes a las epocas E1-E7 del entrenamiento. No es un modelo de lenguaje ni un modelo fundacional: es un peso adicional de bajo rango que se carga junto al modelo base para condicionar la generacion de imagenes.
+LukaUrushibara-Lora es un LoRA de personaje para modelos de difusion SDXL, desarrollado por el usuario abbuibuibui, que reproduce al personaje Luka Urushibara (漆原琉华) de la visual novel y anime *Steins;Gate*. No es un modelo de lenguaje ni un modelo fundacional: es un adaptador de bajo rango (rank 64, alpha 32) que se aplica sobre pesos SDXL preentrenados para condicionar la generacion de imagenes hacia la identidad visual del personaje. Su relevancia practica esta en el ecosistema de generacion de imagenes anime, donde los LoRA de personaje permiten a artistas y desarrolladores obtener consistencia de personaje sin reentrenar el modelo base.
 
-El adaptador se entrena con rango 64 y alpha 32, optimizador AdamW en bf16, buckets con limite de 1536 y 7 epocas sobre un dataset de 86 pares imagen-texto que cubren 7 conjuntos de vestuario. El autor publica una evaluacion comparativa propia (rondas 1 y 3) que recomienda la epoca E6 con una fuerza de LoRA de 0.8 como configuracion por defecto. Los pesos se activan mediante tokens de disparo especificos (`luka_urushibara` para identidad y variantes como `luka_urushibara_shrine_maiden_robes` para vestuario).
+El repositorio es inusual porque contiene tres linajes independientes de pesos en un mismo espacio: el LoRA original entrenado sobre waiIllustriousSDXL v17 (archivos en la raiz), un LoRA entrenado sobre AutismMix Pony (directorio `autism_pony/`) y un LoRA para MOSS-Image (directorio `moss/`). Cada linaje requiere su propio modelo base, prompts y negativos, y no son intercambiables. El autor recomienda el epoch E6 a fuerza 0.8 para el linaje WAI/Illustrious, con evaluacion comparativa documentada entre E5, E6 y E7 en diez escenas y cuatro intensidades.
 
-Su relevancia es acotada y practica: sirve para generar ilustraciones consistentes de un personaje concreto dentro de pipelines de Stable Diffusion XL/Illustrious, con control fino de identidad y vestuario mediante prompting. La licencia CreativeML OpenRAIL-M impone restricciones de uso, y al tratarse de una obra derivada no oficial los derechos del personaje siguen en manos de sus titulares.
+El modelo se distribuye con licencia CreativeML OpenRAIL-M, pesa 7,9 GB en el repositorio completo y cada archivo de pesos individual ocupa 456.497.260 bytes. Esta etiquetado para ingles y chino, cuenta con 353 descargas y ningun "like" en el momento de la consulta, y fue creado el 3 de noviembre de 2026 con ultima actualizacion el 21 de noviembre de 2026.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de bajo rango) sobre difusion latente SDXL; modelo base waiIllustriousSDXL v17 |
-| Parametros totales | No disponible (adaptador LoRA; rango 64, alpha 32) |
-| Parametros activos | No disponible (no es MoE) |
-| Longitud de contexto | No aplica (modelo de generacion de imagen) |
-| Tipos de cuantizacion | No disponible; pesos en safetensors (bf16 durante el entrenamiento) |
-| Idiomas soportados | en, zh (prompts y documentacion) |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre SDXL; rank 64, alpha 32 |
+| Parametros totales | no disponible (adaptador LoRA; tamano de archivo 456.497.260 bytes por checkpoint) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de difusion de imagenes) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; no se documentan variantes cuantizadas) |
+| Idiomas soportados | en, zh (etiquetas del repositorio) |
 | Licencia | creativeml-openrail-m |
-| Formato de pesos | safetensors (7 ficheros de 456.497.260 bytes cada uno) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El adaptador es un LoRA de rango 64 con alpha 32 acoplado a un UNet de SDXL a traves del checkpoint waiIllustriousSDXL v17, una variante afinada de SDXL orientada a estetica anime. El entrenamiento empleo AdamW en bf16, buckets de resolucion con limite de 1536 pixeles, 7 epocas y 3 repeticiones por imagen sobre un dataset de 86 pares imagen-texto que cubren 7 conjuntos de vestuario distintos. Las captions se generaron con `keep_tokens = 2`, lo que deja los dos primeros tokens fijos y explica que el color de pelo y de ojos se omita a menudo en las descripciones: el autor indica que conviene anadirlos explicitamente en el prompt.
+El adaptador es un LoRA de rango 64 y alpha 32 aplicado sobre SDXL. El linaje principal se entreno sobre waiIllustriousSDXL v17, con optimizador AdamW en bf16, buckets con tope de 1536 y 7 epochs. El dataset consta de 86 pares imagen-texto distribuidas en 7 conjuntos de vestuario, con repeticion 3. Las captions se generaron con `keep_tokens = 2`, y el autor advierte que los colores de pelo y ojos a menudo se omitieron en las captions, por lo que conviene anadirlos explicitamente en el prompt. La etiqueta de sujeto empleada es `1boy`.
 
-La innovacion practica no esta en la arquitectura sino en el proceso de seleccion de checkpoint: el autor realizo una ronda 1 de cribado de E1-E7 a fuerza 0.8 y una ronda 3 de matriz sobre E5, E6 y E7 cruzadas con 10 escenas y 4 intensidades (0.4, 0.6, 0.8 y 1.0). El resultado recomienda E6 a 0.8 por producir una silueta estable de Luka (pelo largo morado, ojos morados, ropas de doncella de santuario con ornamento de campana plateada). El tag de sujeto entrenado es `1boy`.
+El repositorio incluye ademas un segundo linaje entrenado sobre AutismMix Pony (cuyas muestras se renderizaron con AutismMix Confetti) y un tercer linaje para MOSS-Image. No se documentan en la model card detalles de composicion del dataset, procedencia de las imagenes, tecnicas de regularizacion ni uso de RLHF/DPO (no aplicable a este tipo de modelo). La innovacion practica documentada es el proceso de seleccion de epoch: una primera ronda de cribado de E1 a E7 a fuerza 0.8 y una tercera ronda con matriz E5/E6/E7 por 10 escenas por 4 intensidades (0.4, 0.6, 0.8, 1.0).
 
 ## Capacidades
 
-- Generacion de imagenes de personaje condicionada por texto: reproduce la identidad de Luka Urushibara mediante el token `luka_urushibara`.
-- Control de vestuario mediante tokens especificos: `luka_urushibara_shrine_maiden_robes` (ropas de doncella de santuario blancas y rojas con campana), `luka_urushibara_black_top`, `luka_urushibara_black_jacket_red_vest`, `luka_urushibara_pink_dress`, `luka_urushibara_purple_top`, `luka_urushibara_red_cardigan` y `luka_urushibara_tactical_gear`.
-- Composición de escenas: retrato frontal, tres cuartos, perfil, cuerpo entero, sentado, fondo simple, fondo complejo nocturno y ausencia de outfit token.
-- Integracion con pipelines SDXL/Illustrious: funciona en ComfyUI y en cualquier runtime que cargue LoRA sobre SDXL (diffusers, A1111/Forge, etc.).
-- Ajuste de intensidad: la fuerza del LoRA modula la fidelidad al personaje frente a la libertad creativa (0.4-1.0 evaluado).
-- Prompts bilingues: documentacion y ejemplos en ingles y chino.
-- No soporta tool calling, agentes, razonamiento multi-paso ni modalidades de audio o video; es exclusivamente generacion de imagen.
+- Generacion de imagenes de personaje condicionada por texto: reproduce la identidad visual de Luka Urushibara (pelo corto desordenado verde-azulado oscuro, flequillo, ojos morados, clip de pelo con forma de calavera).
+- Control de vestuario mediante tokens especificos: `luka_urushibara_shrine_maiden_robes` (ropas de doncella del santuario blancas y rojas con adorno de campana), `luka_urushibara_black_top`, `luka_urushibara_black_jacket_red_vest`, `luka_urushibara_pink_dress`, `luka_urushibara_purple_top`, `luka_urushibara_red_cardigan`, `luka_urushibara_tactical_gear`.
+- Token de identidad `luka_urushibara` como disparador principal.
+- Composicion de escenas: retrato frontal, tres cuartos, perfil, cuerpo completo, sentado, fondos simples y complejos, escenas nocturnas.
+- Compatibilidad con el ecosistema SDXL: funciona en ComfyUI y en flujos basados en diffusers.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni generacion de texto: es exclusivamente un modelo de sintesis de imagen.
+- Capacidades multilingues limitadas a la interpretacion de prompts en ingles y chino segun las etiquetas del repositorio.
 
 ## Casos de uso
 
-- Ilustracion de fan art consistente: cargar `luka_urushibara-000006.safetensors` a 0.8 en ComfyUI con el prompt de ejemplo y generar retratos del personaje con identidad estable entre iteraciones, gracias a los tokens de identidad y vestuario entrenados.
-- Creacion de hojas de personaje: combinar las vistas frontal, tres cuartos y perfil evaluadas por el autor para producir un turnaround coherente destinado a documentacion o referencia de produccion.
-- Escenas narrativas para proyectos derivados: usar los tokens de vestuario alternativo (traje tactico, vestido rosa, cardigan rojo) para situar al personaje en contextos distintos dentro de una misma historia visual.
-- Prototipado de assets para juegos o novelas visuales no comerciales: generar variaciones de pose y encuadre con el mismo LoRA para mantener consistencia de personaje en un conjunto de sprites.
-- Pruebas de pipeline de difusion: emplear el adaptador como caso de prueba reproducible (fuerza, epoch y seed fijos) para validar configuraciones de ComfyUI, CLIP skip o schedulers en entornos SDXL.
-- Comparacion de epocas y fuerzas: el conjunto E1-E7 permite estudiar el efecto del sobreentrenamiento y de la intensidad del LoRA en la fidelidad de un personaje, usando la matriz de evaluacion del autor como referencia.
+- Ilustracion de fan art de *Steins;Gate*: aplicar el LoRA a fuerza 0.8 sobre waiIllustriousSDXL v17 con el prompt de ejemplo del autor para obtener retratos consistentes del personaje en pocas iteraciones, sin necesidad de reentrenar el modelo base.
+- Creacion de hojas de personaje para proyectos derivados: generar vistas frontal, tres cuartos y perfil con los mismos tokens de identidad y vestuario, aprovechando que el autor documenta estas vistas en su evaluacion publica.
+- Prototipado de vestuario alternativo: usar los tokens de vestuario entrenados (`luka_urushibara_pink_dress`, `luka_urushibara_tactical_gear`, etc.) para explorar variaciones visuales del personaje en contextos distintos al de la obra original.
+- Generacion de assets para proyectos de fan game o novela visual no comercial: producir retratos y escenas con fondo simple o complejo para menus, dialogos o ilustraciones de ambientacion, respetando los terminos de la licencia OpenRAIL-M.
+- Comparacion de linajes en investigacion de adaptadores: el repositorio permite estudiar como un mismo personaje se comporta sobre tres bases distintas (Illustrious, AutismMix Pony, MOSS-Image) con el mismo dataset, lo que resulta util para analisis de transferencia de estilo entre modelos base.
+- Integracion en pipelines automatizados de generacion por lotes: cargar el safetensors de E6 en ComfyUI o diffusers y generar variaciones controladas por seed y fuerza del LoRA para pruebas A/B de prompts, dado el tamano manejable del checkpoint (unos 456 MB por archivo).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks cuantitativos (FID, CLIP score, similitud facial) en la informacion disponible. El autor solo aporta una evaluacion cualitativa comparativa:
+No se han publicado resultados de benchmarks cuantitativos (FID, CLIP score, etc.) en la informacion disponible. El autor aporta una evaluacion cualitativa comparativa:
 
-| Candidato | Observacion | Decision |
+| Candidato | Observacion documentada | Decision |
 |---|---|---|
-| E5 | Pelo largo morado y ojos morados utilizables; ropas de santuario a menudo presentes | Alternativa |
-| E6 | Retrato con pelo largo morado, ojos morados y ropas de doncella con campana plateada; silueta estable | Recomendado a 0.8 |
-| E7 | Muy cercano a E6 | Alternativa final |
+| E5 | Pelo corto verde-azulado oscuro y ojos morados usables; las ropas de santuario aparecen a menudo | Alternativa |
+| E6 | Retrato con pelo corto verde-azulado oscuro, ojos morados, ropas de doncella del santuario y clip de pelo; silueta de Luka estable | Recomendado a 0.8 |
+| E7 | Cercano a E6 | Alternativa final |
 
-Ajustes de referencia del showcase: ComfyUI, sampler Euler a, 28 pasos, CFG 4.5, CLIP skip 2, resolucion 832x1216, sin hires fix ni ADetailer.
+Ajustes de muestreo declarados para las imagenes de muestra: ComfyUI, sampler Euler a, 28 pasos, CFG 4.5, CLIP skip 2, resolucion 832x1216, sin hires ni ADetailer, fuerza 0.8 en el linaje WAI/Illustrious y 1.0 en el linaje AutismMix Pony.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explicita; al ser un LoRA sobre SDXL, los requisitos son los del modelo base (waiIllustriousSDXL v17) mas el adaptador de aproximadamente 456 MB por fichero.
-- GPU recomendadas: no especificadas por el autor; para SDXL en general se recomienda al menos 8-12 GB de VRAM, con A100/H100 para lotes grandes y RTX 4090 para inferencia rapida en consumer.
-- Compatibilidad con GPU consumer: probable en tarjetas con VRAM suficiente para SDXL a 832x1216; no confirmado por el autor.
-- Opciones de despliegue: ComfyUI (configuracion usada en el showcase), diffusers (libreria declarada), y por extension otros runners SDXL compatibles con LoRA.
+- VRAM estimada para inferencia: no disponible de forma especifica en la model card; depende del modelo base SDXL (waiIllustriousSDXL v17, AutismMix Pony o MOSS-Image) y de la precision de carga, no del tamano del LoRA, que es de unos 456 MB por checkpoint.
+- GPU recomendadas: no documentadas por el autor. Para SDXL en general se requieren GPUs con VRAM suficiente para el modelo base completo; el LoRA anade una sobrecarga pequena.
+- Cabe en GPU de consumo: no confirmado en la informacion proporcionada; depende del modelo base y de las optimizaciones empleadas.
+- Opciones de despliegue: ComfyUI (verificado por el autor con los ajustes indicados) y la libreria diffusers (etiqueta `library_name: diffusers`). No se documentan vLLM, llama.cpp, Ollama ni TGI, que no aplican a modelos de difusion.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye otros LoRA de personaje comparables ni datos de rendimiento que permitan una comparacion rigurosa.
+No se dispone de datos de otros LoRA de personaje comparables en la informacion proporcionada (parametros, contexto, rendimiento, licencia y disponibilidad de alternativas). La comparacion interna relevante es entre los tres linajes del propio repositorio:
+
+| Linaje | Modelo base | Directorio | Epoch recomendado | Fuerza recomendada |
+|---|---|---|---|---|
+| WAI/Illustrious | waiIllustriousSDXL v17 | raiz | E6 (`luka_urushibara-000006.safetensors`) | 0.8 |
+| AutismMix Pony | AutismMix Pony | `autism_pony/` | E6 | 1.0 |
+| MOSS-Image | MOSS-Image | `moss/` | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Obra derivada no oficial: los derechos de Luka Urushibara y Steins;Gate permanecen en sus titulares; el autor lo declara explicitamente como fan-made.
-- Licencia CreativeML OpenRAIL-M: permite uso comercial con restricciones de uso aceptable; conviene revisar sus clausulas antes de explotar el modelo en produccion.
-- Sesgo de dataset: 86 pares imagen-texto y 7 outfits implican cobertura limitada de poses, angulos e iluminacion; escenas fuera de la distribucion pueden degradar la identidad.
-- Captions con `keep_tokens = 2`: el color de pelo y ojos se omite a menudo, por lo que hay que anadirlo manualmente en el prompt para evitar derivas cromaticas.
-- Riesgo de sobreajuste al checkpoint recomendado: E6 a 0.8 puede rigidizar la composicion; el autor evalua 0.4-1.0 como rango de ajuste.
-- Dependencia estricta del modelo base: el LoRA esta entrenado sobre waiIllustriousSDXL v17 y su comportamiento en otros checkpoints SDXL no esta documentado.
-- Ausencia de benchmarks cuantitativos: la seleccion de E6 se basa en evaluacion visual subjetiva del propio autor.
-- Sin soporte de texto, codigo, razonamiento ni herramientas: no debe emplearse fuera de tareas de generacion de imagen.
+- Es una obra derivada no oficial: los derechos sobre el personaje y la obra original pertenecen a sus titulares; el autor lo declara explicitamente.
+- Licencia CreativeML OpenRAIL-M: permite uso comercial con restricciones de uso (prohibicion de usos daninos y de ciertas aplicaciones descritas en la licencia); conviene revisar los terminos completos antes de un despliegue en produccion.
+- Riesgo de mezclar linajes: usar pesos de `autism_pony/` o `moss/` con el modelo base WAI/Illustrious (o viceversa) produce resultados incorrectos; prompts y negativos tampoco son intercambiables entre linajes.
+- Las captions omiten con frecuencia color de pelo y ojos, por lo que el modelo puede no reproducirlos de forma fiable si no se anaden explicitamente al prompt.
+- El token de sujeto es `1boy`; prompts que asuman otra etiqueta de sujeto pueden degradar la consistencia del personaje.
+- Dataset pequeno (86 pares, 7 vestuarios): riesgo de sobreajuste a las poses y composiciones del dataset y menor generalizacion a escenas muy distintas de las vistas en entrenamiento.
+- No hay datos publicados sobre sesgos, tasas de alucinacion visual ni evaluaciones cuantitativas de fidelidad.
+- El repositorio pesa 7,9 GB por contener tres linajes completos; descargar solo el archivo necesario.
+- Fechas de creacion y actualizacion (noviembre de 2026) posteriores a la fecha habitual de consulta; verificar vigencia de los enlaces.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/abbuibuibui/LukaUrushibara-Lora
 - Dataset: https://huggingface.co/datasets/abbuibuibui/LukaUrushibara-Dataset
 - ModelScope: https://www.modelscope.cn/models/abbuibuibui/LukaUrushibara-Lora
-- Perfil del autor: https://huggingface.co/abbuibuibui/models
-- Notas de evaluacion (chino): `evaluation/横向测评记录.md` en el repositorio
+- Notas de evaluacion en chino: `evaluation/横向测评记录.md` (dentro del repositorio)
+- README en chino: `README_zh.md` (dentro del repositorio)

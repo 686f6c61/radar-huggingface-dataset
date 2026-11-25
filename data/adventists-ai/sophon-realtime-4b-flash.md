@@ -2,113 +2,118 @@
 
 ## Resumen
 
-Sophon-Realtime-4B-Flash es un modelo de voz a voz (speech-to-speech) en modo full-duplex desarrollado por adventists-ai. Forma parte de la familia Sophon-Realtime y constituye la variante de 4B parámetros de la rama "Flash", diseñada para ejecutarse en una única GPU de 24 GB (consume aproximadamente 21 GB). El modelo escucha mientras el usuario habla, decide a partir de la prosodia y el contenido cuándo el interlocutor ha terminado, y genera una respuesta con etiquetas de sonido paralingüístico mientras la sintetiza.
+Sophon-Realtime-4B-Flash es un modelo de voz a voz (speech-to-speech) full-duplex de 4.000 millones de parametros desarrollado por adventists-ai, disenado para mantener conversaciones habladas en tiempo real. A diferencia de los pipelines clasicos de tipo VAD + ASR + LLM + TTS, el modelo escucha mientras el usuario habla, decide a partir de la propia senal de voz cuando el interlocutor ha terminado y genera una respuesta con etiquetas de sonido paralinguisticas (`[laughter]`, `[cough]`, `[sigh]`, `[breath]`, `<strong>…</strong>`) que un modelo de sintesis ligero convierte en audio.
 
-El núcleo de razonamiento es DuplexJev-4B-Para, un modelo de voz de 4B parámetros al que se le ha fusionado un adaptador para escribir etiquetas de sonido (`[laughter]`, `[cough]`, `[sigh]`, `[breath]`, `<strong>…</strong>`). La síntesis corre a cargo de un modelo de habla más ligero que pronuncia la respuesta etiquetada en un único forward pass por trama de 80 ms. Todo se sirve como un solo modelo vLLM-Omni con endpoints `/v1/realtime` y `/v1/chat/completions`.
+Forma parte de la familia Sophon-Realtime, que incluye builds de 4B y 32B en tres variantes (Tag, Flash y E2E). El cerebro de 4B es DuplexJev-4B-Para con un adaptador de escritura de etiquetas fusionado; la variante Flash anade un modelo de sintesis mas rapido que genera un pase forward por cada trama de 80 ms. Todo el sistema se sirve como un unico modelo vLLM-Omni con endpoints `/v1/realtime` y `/v1/chat/completions`.
 
-Es relevante porque ofrece interacción conversacional full-duplex (back-channels, barge-in, detección de fin de turno) en hardware de gama consumer-profesional, con licencia Apache-2.0 y pesos abiertos, algo poco habitual en esta categoría. La contrapartida es su capacidad de razonamiento: el propio autor advierte que puede afirmar hechos erróneos con confianza y recomienda las variantes de 32B o la API alojada cuando la exactitud es crítica.
+Su relevancia actual radica en que ofrece interaccion full-duplex (back-channels, barge-in, gestion de pausas) en una sola GPU de 24 GB, con un consumo aproximado de 21 GB y un tiempo hasta el primer audio de 0,21 s en una RTX PRO 6000. La licencia Apache-2.0 y los pesos abiertos lo hacen apto para investigacion sobre turn-taking y para demos locales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Full-duplex speech-to-speech; thinker (4B, transformer) + talker ligero de síntesis; pipeline any-to-any sobre vLLM-Omni |
-| Parametros totales | 4B (thinker) + modelo de habla ligero (tamaño no especificado) |
+| Arquitectura | Full-duplex speech-to-speech; cerebro transformer de 4B (DuplexJev-4B-Para) con adaptador de etiquetas + modelo de sintesis ligero (tag-tts) |
+| Parametros totales | 4B (cerebro); el talker de la variante E2E es de ~350M, no aplicable a Flash |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos en bf16) |
-| Idiomas soportados | chino (zh), inglés (en) |
+| Tipos de cuantizacion | no disponible; pesos en bf16 |
+| Idiomas soportados | chino (zh) e ingles (en) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (repo de 13.0 GB; `thinker/` en bf16) |
+| Formato de pesos | safetensors (layout `config.json`, `thinker/`, `talker/`, `voices/`) |
+| Tamano del repo | 13,0 GB |
+| Pipeline | audio-to-audio |
+| Libreria / runtime | vLLM 0.30 + vLLM-Omni 0.30 con plugin |
+| Tramas de audio | 80 ms por pase forward en el sintetizador |
+| VRAM de inferencia | ~21 GB en una GPU de 24 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue un diseño full-duplex en el que la entrada de audio y la generación de salida ocurren de forma simultánea. El "cerebro" es un transformer de 4B parámetros (DuplexJev-4B-Para) con un adaptador fusionado que le permite emitir etiquetas de sonido paralingüístico junto al texto de la respuesta. La rama Flash delega la síntesis en un modelo de habla más ligero y rápido que la variante Tag: pronuncia la respuesta etiquetada con un único forward pass por trama de 80 ms, lo que reduce la latencia del primer audio a 0,21 s (medido en una RTX PRO 6000 con un solo usuario).
+El modelo sigue un diseno full-duplex: el cerebro de 4B procesa simultaneamente el flujo de audio entrante y el estado de la conversacion, sin necesidad de un detector de actividad vocal externo. Sobre el cerebro se ha fusionado un adaptador que aprende a insertar etiquetas de sonido en el texto de respuesta, de modo que el sintetizador (tag-tts) las interpreta y las convierte en audio expresivo. En la variante Flash, este sintetizador es un modelo de voz mas ligero y rapido que el de la variante Tag, con un unico pase forward por cada trama de 80 ms, lo que reduce el tiempo hasta el primer audio a 0,21 s.
 
-El repositorio se organiza en `config.json`, `thinker/` (4B, bf16), `talker/` y `voices/`. El modelo se sirve como un único modelo vLLM-Omni (vLLM 0.30 + vLLM-Omni 0.30 + plugin) y expone endpoints compatibles con OpenAI Realtime. No se han publicado en la información disponible detalles sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se emplearon RLHF o DPO.
+No se dispone de informacion publica sobre el numero de tokens de entrenamiento, la composicion del dataset ni sobre si se aplicaron tecnicas de RLHF o DPO. La model card unicamente indica que el cerebro es DuplexJev-4B-Para con el adaptador de etiquetas fusionado, que el modelo es solo de voz (sin vision) y que la tasa de etiquetas de sonido en conversaciones held-out es de 0,36, identica a la de los datos de referencia. El sistema se empaqueta como un unico modelo vLLM-Omni, lo que simplifica el despliegue frente a pipelines multi-etapa.
 
 ## Capacidades
 
-- Conversación de voz a voz en tiempo real con modo full-duplex: escucha mientras el usuario habla.
-- Detección de fin de turno basada en la voz del usuario (no solo en pausas silenciosas).
-- Back-channels (señales de escucha activa) y barge-in (interrupción del usuario).
-- Generación de etiquetas de sonido paralingüístico: `[laughter]`, `[cough]`, `[sigh]`, `[breath]`, `<strong>…</strong>`.
-- Síntesis de voz expresiva mediante un modelo de habla ligero (una pasada por trama de 80 ms).
-- Clonación de voz zero-shot (según la documentación del repositorio).
-- Modo Live (según la documentación del repositorio).
-- Endpoints `/v1/realtime` y `/v1/chat/completions`, compatibles con el protocolo OpenAI Realtime.
-- Capacidades multilingües limitadas a chino e inglés.
-- Sin visión: el cerebro de 4B no procesa imágenes.
+- Conversacion de voz a voz full-duplex: escucha mientras el usuario habla y responde sin esperar a un turno cerrado.
+- Deteccion de fin de turno basada en la propia senal de voz, sin VAD externo.
+- Back-channels (asentimientos, interjecciones) y gestion de barge-in (interrupcion del usuario).
+- Generacion de etiquetas paralinguisticas: `[laughter]`, `[cough]`, `[sigh]`, `[breath]`, `<strong>…</strong>`.
+- Sintesis de voz expresiva mediante el modelo tag-tts integrado.
+- Clonacion de voz zero-shot (documentada en el README del repositorio).
+- Soporte de modo Live.
+- Endpoints compatibles con OpenAI Realtime: `/v1/realtime` y `/v1/chat/completions`.
+- Multilinguee limitado a chino e ingles.
+- Sin capacidades de vision ni de procesamiento de imagen.
 
 ## Casos de uso
 
-- Demos locales de conversación por voz: el modelo cabe en una GPU de 24 GB y arranca con un script (`start.sh`), lo que permite montar una demo full-duplex en una sola máquina sin infraestructura adicional.
-- Compañeros y personajes conversacionales: las etiquetas de sonido y los back-channels aportan naturalidad a interacciones de rol o acompañamiento, donde la exactitud factual no es el requisito principal.
-- Investigación sobre turn-taking: el modelo expone métricas de detección de fin de turno, interrupción y pausas (Full-Duplex-Bench v1.0), lo que lo hace útil como banco de pruebas reproducible para estudiar la dinámica conversacional.
-- Atención al cliente de baja exigencia factual: para flujos guionizados o FAQ donde las respuestas están acotadas, la latencia de 0,21 s al primer audio y el soporte de barge-in permiten conversaciones fluidas multi-turno.
-- Clonación de voz para prototipos: la clonación zero-shot permite generar voces personalizadas para demos, siempre que se cuente con permiso explícito sobre la voz clonada.
-- Integración en aplicaciones compatibles con OpenAI Realtime: al exponer `/v1/realtime`, puede conectarse a clientes existentes de ese protocolo sin reescribir la capa de transporte.
-- Evaluación comparativa de modelos full-duplex: sus puntuaciones publicadas (VoiceBench 62,4; Full-Duplex-Bench 87,7) sirven como referencia para comparar alternativas abiertas en la misma franja de tamaño.
+- Demos locales de voz en tiempo real: el modelo cabe en una GPU de 24 GB (~21 GB) y arranca con un script (`start.sh`) que detecta la configuracion de 24 GB, lo que permite montar una demo interactiva en una sola maquina sin infraestructura adicional.
+- Companeros y personajes conversacionales: las etiquetas de sonido (`[laughter]`, `[sigh]`) y los back-channels aportan naturalidad a interacciones de larga duracion, adecuadas para aplicaciones de acompanamiento o entretenimiento.
+- Investigacion sobre turn-taking: el modelo expone comportamiento full-duplex medible con Full-Duplex-Bench v1.0 (87,7 en la variante Flash), lo que lo hace util para estudiar gestion de pausas, interrupciones y solapamiento de habla.
+- Prototipado de agentes de voz con API compatible OpenAI: al servir `/v1/realtime`, se puede integrar en clientes existentes que hablen el protocolo Realtime de OpenAI sin reescribir la capa de transporte.
+- Clonacion de voz para produccion de contenido: la clonacion zero-shot documentada permite generar locuciones con una voz de referencia propia o autorizada, con la advertencia explicita de usar solo voces propias o con permiso.
+- Evaluacion comparativa de modelos full-duplex abiertos: al publicar pesos y benchmarks (VoiceBench, Big Bench Audio, Full-Duplex-Bench), sirve como baseline reproducible frente a Freeze-Omni, Moshi o MiniCPM-o.
+- Asistentes de voz para chino e ingles en entornos con GPU unica: el soporte bilinguee y el bajo requisito de VRAM permiten desplegar un asistente conversacional en una sola tarjeta profesional de 24 GB.
 
 ## Benchmarks y rendimiento
 
-| Metrica | 4B (Flash) | 32B (publicado) |
+| Benchmark | 4B (Flash) | 32B (publicado) |
 |---|---|---|
 | VoiceBench overall | 62,4 | 82,8 |
 | Big Bench Audio (respuesta hablada, transcrita) | 44,3 % | 81,8 % |
-| Full-Duplex-Bench v1.0 (media de 2 tareas de pausa, turn-taking e interrupción) | 87,7 | 94,0 |
+| Full-Duplex-Bench v1.0 (media de 2 tareas de pausa, turn-taking e interrupcion) | 87,7 | 94,0 |
 | Tasa de etiquetas de sonido en conversaciones held-out (referencia: 0,36) | 0,36 | no disponible |
-| Primer audio, un usuario (RTX PRO 6000) | 0,21 s | 0,31 s (E2E) / 0,4 s (Tag) |
+| Primer audio, un usuario (RTX PRO 6000) | 0,21 s | no disponible en esta ficha |
 
-Comparativa de VoiceBench con otros modelos full-duplex abiertos citada por el autor: Freeze-Omni 55,2; Moshi 29,5; MiniCPM-o 71,2. El modelo de 4B se sitúa por encima de Freeze-Omni y Moshi y por debajo de MiniCPM-o. Las mediciones se realizaron el 2026-11-16 en una RTX PRO 6000, con evaluadores oficiales de VoiceBench (juez gpt-4o-mini, AlpacaEval sobre el subconjunto estándar de 199 preguntas, media de 9 tareas) y 1.000 preguntas de Big Bench Audio juzgadas por GPT-4.1 sobre la transcripción de la respuesta hablada.
+Comparativa de VoiceBench citada en la model card: Sophon-Realtime-4B (62,4) supera a Freeze-Omni (55,2) y Moshi (29,5) y queda por debajo de MiniCPM-o (71,2). Las mediciones se realizaron el 2026-11-16 en una RTX PRO 6000, con evaluadores oficiales de VoiceBench y juez gpt-4o-mini sobre el subconjunto estandar de 199 preguntas (media de 9 tareas); Big Bench Audio con 1.000 preguntas y jueces GPT-4.1 sobre la transcripcion de la respuesta hablada.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 21 GB en bf16 para la variante Flash.
-- GPU recomendada: una única GPU de 24 GB (el autor indica que usa ~21 GB); las mediciones se hicieron en una RTX PRO 6000.
-- Cabe en GPU consumer de gama alta con 24 GB, como la RTX 4090; no cabe en GPUs de 16 GB o menos en esta variante.
-- Existe una variante MLX para Apple silicon con 16 GB o más (Sophon-Realtime-4B-Flash-MLX).
-- Despliegue: vLLM 0.30 + vLLM-Omni 0.30 + plugin, mediante los scripts `install.sh` y `start.sh` del repositorio; expone `/v1/realtime` y `/v1/chat/completions`.
-- Latencia: 0,21 s hasta el primer audio con un solo usuario en RTX PRO 6000. Throughput con múltiples usuarios concurrentes: no disponible.
-- Alternativa sin GPU local: API alojada de adventists.ai (compatible con OpenAI Realtime).
+- VRAM de inferencia: aproximadamente 21 GB, disenado para una GPU de 24 GB.
+- GPU recomendadas: RTX PRO 6000 (mediciones oficiales), cualquier GPU profesional de 24 GB; las builds de 32B requieren una GPU de 32 GB (~27 GB en Tag, ~31 GB en E2E).
+- GPU de consumo: no se confirma compatibilidad con tarjetas consumer; el requisito de ~21 GB excluye la mayoria de GPUs de 16 GB y encaja justo en modelos de 24 GB como la RTX 4090, aunque la model card no lo valida explicitamente.
+- Apple silicon: existe una build separada, Sophon-Realtime-4B-Flash-MLX, para Macs con 16 GB o mas (MLX, novedad en 1.5.0).
+- Despliegue: vLLM 0.30 + vLLM-Omni 0.30 con plugin, instalado via `install.sh` (entorno Python 3.12); servido con `start.sh` y cliente de ejemplo `client_example.py`.
+- Alternativa sin GPU: API alojada compatible con OpenAI Realtime, con 3 horas gratuitas de voz tras registro.
+- Latencia: 0,21 s hasta el primer audio con un usuario en RTX PRO 6000; el sintetizador ejecuta un pase forward por trama de 80 ms.
+- Throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Full-duplex | VoiceBench | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Sophon-Realtime-4B-Flash | 4B (+ talker ligero) | Si | 62,4 | Apache-2.0 | Pesos abiertos en HF y ModelScope |
-| Sophon-Realtime-32B-Flash | 32B | Si | 82,8 | Apache-2.0 (según familia) | Pesos abiertos en HF |
-| MiniCPM-o | no disponible | Si | 71,2 | no disponible | Pesos abiertos |
-| Freeze-Omni | no disponible | Si | 55,2 | no disponible | Pesos abiertos |
-| Moshi | no disponible | Si | 29,5 | no disponible | Pesos abiertos |
-
-Dentro de la propia familia, la variante Tag de 4B obtiene 94,3 en Full-Duplex-Bench v1.0 (frente a 87,7 de Flash) pero requiere 32 GB de VRAM y presenta 0,4 s de latencia al primer audio; la variante E2E obtiene 92,3 y 0,31 s, con un consumo de ~31 GB.
+| Modelo | Parametros | Tipo | VoiceBench overall | Full-Duplex-Bench v1.0 | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Sophon-Realtime-4B-Flash | 4B | full-duplex speech-to-speech | 62,4 | 87,7 | Apache-2.0 | pesos abiertos en HF y ModelScope |
+| Sophon-Realtime-32B (familia) | 32B | full-duplex speech-to-speech | 82,8 | 94,0 | Apache-2.0 | pesos abiertos en HF y ModelScope |
+| MiniCPM-o | no disponible | speech-to-speech | 71,2 | no disponible | no disponible | no disponible |
+| Freeze-Omni | no disponible | speech-to-speech | 55,2 | no disponible | no disponible | no disponible |
+| Moshi | no disponible | full-duplex speech-to-speech | 29,5 | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Capacidad de razonamiento limitada: el autor advierte explícitamente que el cerebro de 4B "sabe y razona mucho menos" que el de 32B y que puede afirmar hechos erróneos con confianza. No es adecuado para respuestas que deban ser correctas.
-- Riesgo de alucinación factual elevado en comparación con modelos de mayor tamaño (Big Bench Audio 44,3 % frente a 81,8 % del 32B).
-- Idiomas limitados a chino e inglés; no se declara soporte de castellano.
-- Sin capacidades de visión.
-- Longitud de contexto no publicada, lo que dificulta planificar conversaciones de muy largo recorrido.
-- Restricciones éticas y legales sobre clonación de voz: solo debe clonarse la propia voz o una voz sobre la que se tenga permiso explícito.
-- El despliegue requiere vLLM 0.30 y vLLM-Omni 0.30 con un plugin específico, lo que limita la portabilidad frente a stacks más estándar (llama.cpp, Ollama, TGI no aparecen soportados).
-- Licencia Apache-2.0 permite uso comercial, pero debe revisarse el archivo `NOTICE` para conocer las fuentes de los pesos incluidos.
-- Aunque la licencia es permisiva, la exactitud limitada del modelo hace recomendable una capa de verificación o un modelo mayor en producción cuando la respuesta importa.
+- Capacidad de conocimiento y razonamiento muy inferior a la de las builds de 32B (VoiceBench 62,4 frente a 82,8; Big Bench Audio 44,3 % frente a 81,8 %), por lo que puede afirmar datos incorrectos con seguridad. La propia model card recomienda usar 32B o la API alojada cuando las respuestas deban ser correctas.
+- Riesgo de alucinacion en contenido factual: el modelo esta pensado para demos locales, companeros, personajes e investigacion sobre turn-taking, no para asistencia con precision factual.
+- Solo voz: el cerebro de 4B no tiene vision.
+- Idiomas limitados a chino e ingles.
+- Licencia Apache-2.0, pero el aviso `NOTICE` del repositorio detalla las fuentes de los pesos empaquetados; es necesario revisarlo antes de uso comercial.
+- Restriccion etica explicita: solo se debe clonar la propia voz o una voz para la que se tenga permiso.
+- La longitud de contexto, los tipos de cuantizacion y el throughput no estan documentados.
+- El rendimiento medido corresponde a una RTX PRO 6000; en GPUs de 24 GB con menos compute la latencia hasta el primer audio puede diferir.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/adventists-ai/Sophon-Realtime-4B-Flash
-- Variante MLX para Apple silicon: https://huggingface.co/adventists-ai/Sophon-Realtime-4B-Flash-MLX
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/adventists-ai/Sophon-Realtime
 - Repositorio GitHub: https://github.com/adventists-ai/sophon-realtime
 - Instrucciones de la variante Flash: https://github.com/adventists-ai/sophon-realtime/blob/main/flash/README.md
 - Changelog: https://github.com/adventists-ai/sophon-realtime/blob/main/CHANGELOG.md
+- Build MLX para Apple silicon: https://huggingface.co/adventists-ai/Sophon-Realtime-4B-Flash-MLX
+- Variante Tag (4B): https://huggingface.co/adventists-ai/Sophon-Realtime-4B-Tag
+- Variante E2E (4B): https://huggingface.co/adventists-ai/Sophon-Realtime-4B-E2E
+- Build 32B Tag: https://huggingface.co/adventists-ai/Sophon-Realtime-32B-Tag
+- Build 32B Flash: https://huggingface.co/adventists-ai/Sophon-Realtime-32B-Flash
+- Build 32B E2E: https://huggingface.co/adventists-ai/Sophon-Realtime-32B-E2E
 - Cerebro base DuplexJev-4B-Para: https://huggingface.co/adventists-ai/DuplexJev-4B-Para
-- Variante 4B Tag: https://huggingface.co/adventists-ai/Sophon-Realtime-4B-Tag
-- Variante 4B E2E: https://huggingface.co/adventists-ai/Sophon-Realtime-4B-E2E
-- Variante 32B Tag: https://huggingface.co/adventists-ai/Sophon-Realtime-32B-Tag
-- Variante 32B Flash: https://huggingface.co/adventists-ai/Sophon-Realtime-32B-Flash
-- Variante 32B E2E: https://huggingface.co/adventists-ai/Sophon-Realtime-32B-E2E
 - ModelScope (Flash): https://www.modelscope.cn/models/AdventistsAI/Sophon-Realtime-4B-Flash
-- API alojada: https://api.adventists.ai/console/
-- Documentación de la API: https://api.adventists.ai/console/docs
+- ModelScope (Tag): https://www.modelscope.cn/models/AdventistsAI/Sophon-Realtime-4B-Tag
+- API alojada (consola): https://api.adventists.ai/console/
+- Documentacion de la API: https://api.adventists.ai/console/docs

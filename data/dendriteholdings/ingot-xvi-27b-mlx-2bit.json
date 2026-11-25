@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Abraham Lincoln - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Abraham_Lincoln",
-      "snippet": "Abraham Lincoln[b] (February 12, 1809 – April 15, 1865) was the 16th president of the United States, from 1861 until his …"
-    },
-    {
-      "title": "Abraham Lincoln — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Abraham_Lincoln",
-      "snippet": "Il est le 16e président des États-Unis, en fonction du 4 mars 1861 jusqu'à sa mort, et le premier issu du Parti républicain."
-    },
-    {
-      "title": "Abraham Lincoln | Biography, Childhood, Quotes, Death, & Facts",
-      "url": "https://www.britannica.com/biography/Abraham-Lincoln",
-      "snippet": "Oct 14, 2026 · Abraham Lincoln (born February 12, 1809, near Hodgenville, Kentucky, U.S.—died April 15, 1865, Washington, D.C.) …"
-    },
-    {
-      "title": "Abraham Lincoln and slavery - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Abraham_Lincoln_and_slavery",
-      "snippet": "The Civil War began early in Lincoln's presidency, after Southern states seceded in order to preserve slavery. Lincoln's position on …"
-    },
-    {
-      "title": "Abraham Lincoln : biographie du président américain qui abolit …",
-      "url": "https://www.linternaute.com/actualite/biographie/1776136-abraham-lincoln-biographie-courte-dates-citations/",
-      "snippet": "Mar 22, 2021 · BIOGRAPHIE ABRAHAM LINCOLN - Figure majeure de l'histoire américaine, Abraham Lincoln, né le 12 février 1809 …"
-    }
-  ]
+  "sources": []
 }

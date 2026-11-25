@@ -50,16 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Głośny wentylator zasilacza. - Chłodzenie, obudowy, zasilacze i ...",
-      "url": "https://forum.pclab.pl/topic/1184952-g%C5%82o%C5%9Bny-wentylator-zasilacza/",
-      "snippet": "Jan 2, 2017 · Dzisiaj wziąłem się za próbę wyciszenia PC, aby można go było używać do oglądanie filmów na TV bez słuchawek (w …"
-    },
-    {
-      "title": "Czy na płytach z biosem AMI UEFI można wgrać SLIC?",
-      "url": "https://forum.pclab.pl/topic/761784-Czy-na-p%C5%82ytach-z-biosem-AMI-UEFI-mo%C5%BCna-wgra%C4%87-SLIC/",
-      "snippet": "Jan 22, 2012 · W tym dziale temat pasuje najbardziej, ale jeśli mod znajdzie bardziej odpowiednie miejsce proszę o przeniesienie. …"
-    }
-  ]
+  "sources": []
 }

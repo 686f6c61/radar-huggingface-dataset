@@ -5,7 +5,7 @@
   "author": "1aurent",
   "url": "https://huggingface.co/1aurent/densenet121.medmae_CXR_mocov2_ft_CXR",
   "created_at": "2023-11-28T11:12:02.000Z",
-  "updated_at": "2026-11-23T07:52:47.000Z",
+  "updated_at": "2026-11-23T08:50:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 42,
+  "downloads_30d": 84,
   "trending_score": 0,
   "parameters": 7051854,
   "parameters_human": "7.1M",

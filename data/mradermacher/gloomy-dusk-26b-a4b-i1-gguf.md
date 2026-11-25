@@ -2,51 +2,50 @@
 
 ## Resumen
 
-Gloomy-Dusk-26B-A4B-i1-GGUF es una colección de cuantizaciones GGUF, generadas por mradermacher, del modelo base Gloomy-Dusk-26B-A4B publicado por Sorihon. Se trata de un modelo conversacional de aproximadamente 26.000 millones de parámetros totales (25.971.339.550 según los pesos en safetensors), del que el sufijo A4B sugiere, aunque no está confirmado en la información disponible, una arquitectura de mezcla de expertos (MoE) con unos 4.000 millones de parámetros activos por token.
+Gloomy-Dusk-26B-A4B-i1-GGUF es una cuantización en formato GGUF del modelo Gloomy-Dusk-26B-A4B, publicada por mradermacher. El modelo original lo desarrolla Sorihon y, por las etiquetas del repositorio (`mergekit`, `merge`), se trata de una fusión de modelos (model merge) más que de un entrenamiento desde cero. El sufijo "A4B" sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 4.000 millones de parámetros activos, aunque este dato no está confirmado en la información disponible.
 
-El interés de esta publicación es práctico: ofrece el modelo base en múltiples niveles de cuantización (desde IQ1_S hasta Q6_K, pasando por Q4_K_M, IQ4_XS, Q5_K_M, etc.), utilizando cuantizaciones con imatrix y pesos ponderados, lo que permite desplegar un modelo de este tamaño en hardware de consumo o en servidores con VRAM limitada. El repositorio ocupa 51,2 GB y se publicó el 21 de noviembre de 2026, con la actualización ese mismo día.
+El modelo cuenta con 25.971.339.550 parámetros totales (unos 26.000 millones) según los pesos en safetensors del modelo base. Esta versión concreta ofrece cuantizaciones con imatrix (i1) en una amplia gama de tipos, desde IQ1_S (8,6 GB) hasta Q6_K (23,3 GB), lo que permite desplegarlo en hardware muy diverso. La model card indica que se trata de un modelo de visión, con archivos mmproj disponibles en el repositorio estático del mismo autor.
 
-La información pública es muy escasa: no se especifican licencia, idiomas, pipeline ni detalles de entrenamiento, y el modelo no registra descargas ni likes en el momento de la consulta. Esta ficha se limita, por tanto, a los datos verificables del repositorio y marca explícitamente como no disponible todo aquello que no consta.
+La relevancia de esta ficha radica en que es una de las pocas vías prácticas para ejecutar un modelo de ~26.000 millones de parámetros con capacidades multimodales en hardware de consumo, gracias a la compresión GGUF y a la posible arquitectura MoE que reduce los parámetros activos durante la inferencia. No obstante, la información pública es muy escasa: no hay benchmarks, no se especifica la licencia ni la longitud de contexto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (el sufijo A4B sugiere MoE con ~4B activos, sin confirmar) |
+| Arquitectura | MoE (mezcla de expertos) segun el sufijo "A4B"; detalles no disponibles |
 | Parametros totales | 25.971.339.550 (~26B) |
-| Parametros activos | No disponible (posiblemente ~4B por el sufijo A4B, sin confirmar) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ4_XS, IQ4_NL (small) |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible |
-| Formato de pesos | GGUF (repo de cuantizaciones); el modelo base se distribuye en safetensors |
-| Tamano del repositorio | 51,2 GB |
-| Metodo de cuantizacion | Imatrix / pesos ponderados (weighted/imatrix quants) |
-| Version de cuantizacion | quantize_version 2, output_tensor_quantised 1, convert_type hf |
-| Tags | gguf, endpoints_compatible, imatrix, conversational, region:us |
+| Parametros activos | ~4B (inferido del sufijo "A4B"; no confirmado) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K, i1-Q2_K_S, i1-IQ3_XXS, i1-IQ3_XS, i1-IQ3_S, i1-Q3_K_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_1, i1-Q4_K_M, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K |
+| Idiomas soportados | ingles (`language: en`) |
+| Licencia | no disponible |
+| Formato de pesos | GGUF (con fichero imatrix incluido) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base Gloomy-Dusk-26B-A4B más allá de su tamaño (unos 26B parámetros totales) y de la convención de nombres A4B, que en la práctica habitual de la comunidad indica una mezcla de expertos con aproximadamente 4.000 millones de parámetros activos por token. No obstante, esta interpretación no está confirmada por la model card ni por documentación adicional del autor original.
+El modelo base Sorihon/Gloomy-Dusk-26B-A4B está etiquetado con `mergekit` y `merge`, lo que indica que se ha generado mediante fusión de pesos de otros modelos, probablemente con la herramienta mergekit. No se dispone de información sobre los modelos de origen, la estrategia de fusión (SLERP, TIES, DARE, etc.) ni los datos de entrenamiento o ajuste posteriores. El sufijo "A4B" es coherente con una arquitectura de mezcla de expertos con unos 4.000 millones de parámetros activos por token, pero no hay confirmación explícita en la documentación disponible.
 
-Tampoco constan datos sobre el corpus de entrenamiento (número de tokens, composición del dataset), el proceso de alineación (RLHF, DPO u otros), ni innovaciones técnicas específicas como decodificación especulativa o mecanismos de atención lineal. La model card del repositorio de cuantizaciones es puramente técnica y se limita a indicar que se trata de cuantizaciones con imatrix y pesos ponderados del modelo Sorihon/Gloomy-Dusk-26B-A4B, generadas con quantize_version 2 y conversión desde formato Hugging Face.
+La model card del repositorio de cuantización no aporta detalles arquitectónicos adicionales. Sí indica que el modelo es multimodal (visión), con archivos mmproj gestionados en el repositorio estático. Las cuantizaciones i1 utilizan una matriz de importancia (imatrix) generada por el propio autor para mejorar la calidad de los cuantizados de baja precisión. No se documentan innovaciones técnicas como decodificación especulativa, atención lineal o modos de razonamiento extendido.
 
 ## Capacidades
 
-- Generación de texto conversacional: el tag `conversational` indica que el modelo está orientado a diálogo multi-turno, aunque no se detallan formatos de prompt ni plantillas de chat.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el GGUF puede servirse mediante infraestructuras compatibles con la API de endpoints de Hugging Face.
-- Cuantizaciones de muy baja precisión (IQ1_S, IQ2_XXS) que permiten ejecución en entornos con memoria muy restringida, a costa de degradación de calidad.
-- Capacidades de razonamiento, código, matemáticas, visión, tool calling o agentes: no disponibles en la información proporcionada.
-- Capacidades multilingües: no disponibles; no se declara ningún idioma en los metadatos.
+- Generación de texto conversacional: la etiqueta `conversational` indica que está orientado a diálogo.
+- Capacidades de visión: la model card lo describe explícitamente como modelo de visión, con archivos mmproj para procesar imágenes.
+- Soporte multilingüe limitado: la única lengua declarada es el inglés.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse mediante la infraestructura de Inference Endpoints de Hugging Face.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
+- Modo de razonamiento (thinking mode): no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo con GPU de consumo: las variantes Q4_K_M e IQ4_XS permiten ejecutar un modelo de ~26B parámetros en GPUs con 16-24 GB de VRAM mediante llama.cpp u Ollama, algo inviable con los pesos completos en precisión original.
-- Servicio conversacional en CPU: las cuantizaciones IQ2_M o Q3_K_M reducen el peso a un rango manejable para servidores sin GPU, adecuadas para prototipos de chatbot con requisitos de latencia moderados.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece más de veinte variantes del mismo modelo, lo que facilita medir la degradación de calidad frente al tamaño en un pipeline de pruebas propio.
-- Integración en aplicaciones de escritorio: al ser GGUF, puede embeberse en herramientas tipo LM Studio, GPT4All o Jan sin dependencia de servicios en la nube.
-- Experimentación académica con modelos MoE de tamaño medio: si se confirma la arquitectura A4B, resulta útil para estudiar el equilibrio entre parámetros totales y activos en tareas de razonamiento.
-- Sustitución de modelos propietarios en entornos con requisitos de privacidad: al ejecutarse localmente, los datos no salen del dispositivo, siempre que la licencia del modelo base lo permita (dato no disponible).
+- Asistente conversacional autoalojado: el modelo puede desplegarse con llama.cpp u Ollama en una estación de trabajo con GPU de consumo usando cuantizaciones Q4_K_M (17,3 GB), adecuado para prototipos de chat con datos sensibles que no deben salir de la infraestructura local.
+- Análisis de imágenes en local: al ser un modelo de visión, puede emplearse para descripción de imágenes, extracción de texto de capturas o clasificación visual en entornos sin acceso a APIs en la nube, usando el fichero mmproj correspondiente.
+- Procesamiento por lotes de documentos escaneados: con la cuantización Q5_K_M (19,7 GB) y una GPU de 24 GB, se puede ejecutar un pipeline de OCR asistido y resumen de documentos en inglés.
+- Experimentación con fusiones de modelos: investigadores interesados en el impacto de mergekit sobre capacidades conversacionales y multimodales pueden usar este GGUF como referencia reproducible frente al modelo base en safetensors.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece 23 variantes de cuantización, lo que permite medir la degradación de calidad (perplejidad, coherencia) entre IQ1_S y Q6_K en una misma tarea, útil para estudiar el compromiso tamaño/calidad.
+- Despliegue en endpoints compatibles: gracias a la etiqueta `endpoints_compatible`, puede servirse como API HTTP interna para aplicaciones de chat o visión en equipos pequeños, con la cuantización IQ4_XS (14,4 GB) como opción equilibrada.
+- Prototipado en portátiles con GPU de 12-16 GB: las variantes IQ3_M (12,8 GB) o IQ4_XS (14,4 GB) permiten probar el modelo en GPUs como la RTX 4080 o 4070 Ti, aunque con pérdida de calidad respecto a Q5/Q6.
 
 ## Benchmarks y rendimiento
 
@@ -54,34 +53,43 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia, según cuantización: Q6_K en torno a 22-24 GB; Q5_K_M en torno a 19-21 GB; Q4_K_M en torno a 16-18 GB; IQ4_XS en torno a 14-16 GB; Q3_K_M en torno a 12-13 GB; IQ2_M en torno a 9-10 GB; IQ1_S por debajo de 8 GB. Estas cifras son estimaciones a partir del tamaño del repositorio y del número de parámetros, no datos publicados por el autor.
-- GPU recomendadas: A100 40/80 GB o H100 para las cuantizaciones altas con contexto largo; RTX 4090 (24 GB) para Q5_K_M y Q6_K; RTX 4080/4070 Ti Super (16 GB) para Q4_K_M e IQ4_XS; RTX 4060 Ti (16 GB) o GPUs de 12 GB para Q3_K_M.
-- Cabe en GPU de consumo: sí, en la mayoría de cuantizaciones desde IQ4_XS hacia abajo en tarjetas de 16 GB o más; las variantes IQ2 e IQ3 caben en 8-12 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con GGUF y endpoints compatibles con la API de Hugging Face.
-- Latencia y throughput: no disponibles; dependerán de la cuantización, del hardware y de la longitud de contexto, que tampoco se especifica.
+- VRAM estimada para inferencia: desde ~8,6 GB (IQ1_S) hasta ~23,3 GB (Q6_K), más el espacio para el contexto KV y, en su caso, el proyector multimodal (mmproj).
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M, Q5_K_M o Q6_K; RTX 4080/4070 Ti (16 GB) para IQ3_M o IQ4_XS; A100/H100 para servir el modelo en precisión completa o con lotes grandes.
+- Cabe en GPU de consumo: sí, en la mayoría de cuantizaciones. Q4_K_M (17,3 GB) entra en una RTX 4090; IQ3_M (12,8 GB) entra en GPUs de 16 GB; las variantes IQ1/IQ2 (8,6-10,8 GB) caben en GPUs de 12 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. Para servir como API, servidores basados en llama.cpp o endpoints compatibles.
+- Latencia y throughput: no disponibles. Al tratarse de un posible MoE con ~4B parámetros activos, la velocidad de generación debería ser notablemente superior a la de un modelo denso de 26B, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros totales | Activos | Contexto | Licencia | Formato |
 |---|---|---|---|---|---|
-| Gloomy-Dusk-26B-A4B-i1-GGUF | ~26B totales | No disponible | No disponible | GGUF | Cuantizaciones imatrix de un modelo de Sorihon |
-| Modelos MoE de ~26B con ~4B activos (categoría genérica) | ~26B totales / ~4B activos | Variable | Variable | Safetensors, GGUF | No se dispone de datos concretos para una comparación verificable |
-| Alternativas densas de ~27-32B (categoría genérica) | 27-32B | Variable | Variable | Safetensors, GGUF | Mayor coste de inferencia por token al no ser MoE |
+| Gloomy-Dusk-26B-A4B-i1-GGUF | ~26B | ~4B (inferido) | no disponible | no disponible | GGUF |
+| Mistral Small 3.1 24B | 24B | 24B (denso) | 128K | Apache 2.0 | safetensors, GGUF |
+| Gemma 3 27B | 27B | 27B (denso) | 128K | Gemma license | safetensors, GGUF |
+| Qwen2.5-VL 32B | 32B | 32B (denso) | 128K | Apache 2.0 | safetensors, GGUF |
 
-No se dispone de información suficiente para establecer una comparativa numérica fiable con modelos concretos; los datos de rendimiento, contexto y licencia del modelo evaluado no están publicados.
+La comparación con Mistral Small 3.1, Gemma 3 27B y Qwen2.5-VL 32B es orientativa por tamaño y capacidades multimodales; no hay datos de rendimiento del modelo Gloomy-Dusk para establecer una comparación cuantitativa. La ventaja principal de Gloomy-Dusk es la posible eficiencia de su arquitectura MoE, mientras que sus alternativas cuentan con licencias claras y documentación extensa.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de información sobre licencia: no se puede confirmar si el uso comercial está permitido; es imprescindible contactar con el autor o consultar el repositorio del modelo base Sorihon/Gloomy-Dusk-26B-A4B antes de usarlo en producción.
-- Idiomas no declarados: se desconoce si el modelo tiene un rendimiento aceptable en castellano u otros idiomas distintos del inglés.
-- Sin benchmarks publicados: no hay evidencia cuantitativa de calidad, lo que impide compararlo con alternativas establecidas.
-- Riesgo de alucinación inherente a los modelos generativos; no consta ningún proceso de alineación documentado.
-- Las cuantizaciones de muy baja precisión (IQ1_S, IQ2_XXS, Q2_K_S) degradan notablemente la calidad y pueden producir salidas incoherentes; no se recomiendan para uso en producción.
-- El repositorio no registra descargas ni likes, y su fecha de creación es muy reciente, por lo que carece de validación por parte de la comunidad.
-- El tag `skip_mmproj: 1` indica que no se incluye el proyector multimodal; si el modelo base tuviera capacidades de visión, estas no estarían disponibles en estas cuantizaciones.
-- No se especifica la longitud de contexto soportada; usar contextos largos sin conocer el límite puede provocar degradación o errores.
+- Licencia no declarada: no se puede confirmar si el uso comercial está permitido; es un riesgo legal importante para producción.
+- Modelo derivado de una fusión: las fusiones de modelos pueden heredar sesgos y comportamientos inconsistentes de los modelos de origen, y los detalles de la fusión no están documentados.
+- Idioma: solo se declara inglés; el rendimiento en castellano es incierto y probablemente degradado.
+- Contexto desconocido: sin longitud de contexto documentada, no se puede planificar su uso en tareas de contexto largo.
+- Riesgo de alucinación: inherente a los modelos generativos; no hay evaluaciones publicadas que lo cuantifiquen.
+- Cuantizaciones de muy baja precisión: IQ1_S, IQ1_M e IQ2_* degradan notablemente la calidad; la propia model card las etiqueta como "for the desperate" o "very low quality".
+- Visión parcialmente documentada: los archivos mmproj están en el repositorio estático, no en este; hay que descargarlos por separado y verificar compatibilidad con el runtime.
+- Sin benchmarks ni evaluación independiente: no hay evidencia pública de su rendimiento frente a alternativas consolidadas.
+- Repositorio de gran tamaño (309 GB): la descarga completa es costosa; conviene descargar solo la cuantización necesaria.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Gloomy-Dusk-26B-A4B-i1-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/Gloomy-Dusk-26B-A4B-i1-GGUF
 - Modelo base: https://huggingface.co/Sorihon/Gloomy-Dusk-26B-A4B
+- Cuantizaciones estáticas (incluye mmproj): https://huggingface.co/mradermacher/Gloomy-Dusk-26B-A4B-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Gloomy-Dusk-26B-A4B-i1-GGUF
+- Preguntas frecuentes y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Gráfico comparativo de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Empresa del autor de la cuantización: https://www.nethype.de/

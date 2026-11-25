@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MzansiLM 125M es un modelo de lenguaje decoder-only de 125.008.384 parámetros desarrollado por el grupo uctnlp (University of Cape Town NLP) y preentrenado desde cero sobre MzansiText, un corpus abierto que cubre las once lenguas oficiales de Sudáfrica. Se publica junto al artículo de LREC 2026 «MzansiText and MzansiLM: An Open Corpus and Decoder-Only Language Model for South African Languages» y constituye una de las pocas bases abiertas de este tamaño centradas explícitamente en lenguas africanas de bajos recursos.
+MzansiLM 125M es un modelo de lenguaje decoder-only de 125.008.384 parametros entrenado desde cero por el grupo UCT NLP (Universidad de Ciudad del Cabo) sobre MzansiText, un corpus abierto de 3.800 millones de tokens que cubre las once lenguas oficiales escritas de Sudafrica. Se publico en LREC 2026 y esta disenado como modelo base para investigacion y ajuste fino en un contexto de recursos linguisticos escasos.
 
-Arquitecturalmente sigue el patrón LlamaForCausalLM con atención de consultas agrupadas (GQA), 30 capas, dimensión oculta de 512, 9 cabezas de atención y 3 cabezas KV, con embeddings de palabras atados y una longitud de contexto de 2048 tokens. Incorpora un tokenizador BPE a nivel de byte propio con vocabulario de 65.536 entradas, entrenado sobre el mismo corpus multilingüe.
+El modelo sigue una arquitectura LlamaForCausalLM con atención GQA (9 cabezas de atencion y 3 cabezas KV, head_dim de 56), 30 capas, hidden size de 512 y una longitud de contexto de 2048 tokens. Incorpora un tokenizador BPE a nivel de byte propio con vocabulario de 65.536 entradas, entrenado especificamente sobre el corpus MzansiText, lo que lo diferencia de los tokenizadores reutilizados de modelos multilingues genericos.
 
-El modelo es relevante ahora porque ofrece una base ligera, con licencia Apache 2.0 y totalmente reproducible (corpus, tokenización, código de entrenamiento y evaluación publicados), pensada para ajuste fino e investigación en procesamiento de lenguas sudafricanas como zulú, xhosa, afrikáans, sesoto, setsuana, suazi, venda, tsonga, ndebele del sur y ndebele del norte. No es un modelo instruido: genera continuaciones de texto y requiere fine-tuning para tareas downstream.
+Su relevancia actual radica en que es uno de los pocos modelos abiertos entrenados nativamente para lenguas sudafricanas de bajos recursos (isiNdebele, Sepedi, Setswana, Xitsonga, siSwati, Tshivenda), con licencia Apache 2.0 y pesos en safetensors, lo que facilita su uso comercial y su integracion en pipelines de investigacion. No es un asistente conversacional: es un modelo base pensado para continuacion de texto y ajuste fino posterior.
 
 ## Especificaciones tecnicas
 
@@ -16,101 +16,78 @@ El modelo es relevante ahora porque ofrece una base ligera, con licencia Apache 
 | Parametros totales | 125.008.384 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 2048 tokens |
-| Tipos de cuantizacion | no disponible (el repo publica safetensors en precisión original; no se documentan variantes GGUF/AWQ/GPTQ) |
-| Idiomas soportados | af, en, nso, st, ss, tn, ts, ve, xh, zu, nr (once lenguas oficiales sudafricanas) |
+| Tipos de cuantizacion | no disponible en la informacion proporcionada (pesos en safetensors; compatible con cuantizacion estandar via herramientas externas) |
+| Idiomas soportados | af, en, nso, st, ss, tn, ts, ve, xh, zu, nr |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (librería transformers, PyTorch) |
-
-Especificaciones adicionales declaradas en la model card:
-
-| Parametro | Valor |
-|---|---|
-| Capas | 30 |
-| Dimension oculta | 512 |
-| Dimension intermedia | 1536 |
-| Cabezas de atencion / cabezas KV | 9 / 3 (head_dim = 56) |
-| RoPE theta | 10000.0 |
-| RMSNorm epsilon | 1e-5 |
-| Embeddings atados | si |
-| Implementacion de atencion en entrenamiento | flash_attention_2 |
-| Vocabulario del tokenizador | 65.536 (Byte-Level BPE) |
-| Tokens especiales | [BOS]=0, [EOS]=1, [PAD]=2, [UNK]=3 |
-| Normalizador | NFD (normalizar salidas a NFC para comparaciones) |
-| Tamano del repositorio | 2.0 GB |
-| Descargas | 1040 |
-| Likes | 34 |
+| Formato de pesos | safetensors (repo de 2,0 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only estilo Llama con atención de consultas agrupadas (9 cabezas de consulta y 3 cabezas KV, head_dim de 56), 30 capas, dimensión oculta de 512 y dimensión intermedia de 1536. Usa RMSNorm con epsilon 1e-5, RoPE con theta 10000.0, embeddings de palabras atados y atención FlashAttention-2 durante el entrenamiento. La configuración presenta una particularidad técnica: hidden_size (512) no es divisible por num_attention_heads (9), por lo que el checkpoint fija explícitamente head_dim=56; esto provoca que el validador de LlamaConfig en Transformers 5 rechace la configuración y obliga a usar Transformers 4.x o el registro de compatibilidad de la librería sallm.
+El modelo es un transformer decoder-only con atencion de consultas agrupadas (GQA): 9 cabezas de atencion y 3 cabezas KV, con head_dim de 56, hidden size de 512 e intermediate size de 1536. Consta de 30 capas, usa RMSNorm con epsilon 1e-5, RoPE con theta 10000.0 y embeddings de palabras atados (tied word embeddings). Durante el entrenamiento se utilizo la implementacion flash_attention_2. La configuracion presenta la particularidad de que hidden_size (512) no es divisible de forma entera por num_attention_heads (9), lo que provoca que los validadores de LlamaConfig en Transformers 5.x rechacen el checkpoint salvo que se registre un parche de compatibilidad (sallm.models.llama_compatibility.register_llama_compatibility()) o se use transformers<5.
 
-El preentrenamiento se realizó desde cero sobre MzansiText, corpus que cubre las once lenguas oficiales sudafricanas (afr, eng, nbl, nso, sot, ssw, tsn, tso, ven, xho, zul). La model card no detalla el número exacto de tokens de entrenamiento, la composición porcentual del dataset ni si se aplicaron fases de RLHF, DPO o instrucción; el modelo se distribuye como base pretrained sin ajuste por instrucciones. El tokenizador es un BPE a nivel de byte con normalizador NFD y post-procesador que añade [BOS] y [EOS] automáticamente, lo que exige eliminar el token EOS final antes de llamar a generate() para continuaciones de texto.
+El entrenamiento se realizo desde cero sobre MzansiText, un corpus de 3.800 millones de tokens que cubre las once lenguas oficiales escritas de Sudafrica. No se detalla en la informacion disponible la composicion exacta del dataset, el numero exacto de tokens vistos durante el preentrenamiento ni si se aplicaron fases de RLHF o DPO; la model card indica explicitamente que es un modelo base preentrenado y no un asistente instruido. El tokenizador es un BPE a nivel de byte con vocabulario de 65.536, entrenado sobre el mismo corpus, con normalizacion NFD y un post-procesador que envuelve cada secuencia como [BOS] $A [EOS].
 
 ## Capacidades
 
-- Generación de texto autoregresiva en once lenguas sudafricanas y en inglés.
-- Modelado de lenguaje base: continuación de texto, cálculo de perplejidad y evaluación intrínseca.
-- Punto de partida para ajuste fino supervisado en tareas downstream (clasificación, resumen, traducción, QA).
-- Soporte de tool calling / function calling: no disponible (modelo base sin instrucción ni plantilla de chat).
-- Soporte de agentes y razonamiento multi-paso: no disponible de forma nativa.
-- Capacidades multilingües limitadas a las lenguas del corpus MzansiText; no se documenta cobertura fuera de ese conjunto.
-- Capacidades de visión, audio o modo thinking: no disponibles.
-- Tokenizador multilingüe específico con vocabulario de 65.536 entradas adaptado a morfología aglutinante de las lenguas bantúes.
+- Generacion de texto por continuacion: modelo base que predice el siguiente token; no responde a instrucciones sin ajuste fino.
+- Modelado de lenguaje en once lenguas sudafricanas: afrikaans, ingles, isiNdebele, Sepedi, Sesotho, siSwati, Setswana, Xitsonga, Tshivenda, isiXhosa y isiZulu.
+- Base para ajuste fino en tareas discriminativas y generativas: clasificacion, reconocimiento de entidades nombradas, etiquetado POS y generacion de titulares, segun indica la model card.
+- Capacidad multilingue limitada al conjunto de lenguas del corpus; no se documenta soporte para otras lenguas.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se documenta modo thinking, vision ni audio.
+- Tokenizador propio con vocabulario de 65.536 entradas optimizado para el corpus MzansiText.
 
 ## Casos de uso
 
-- Investigación en lenguas de bajos recursos: servir como baseline reproducible para experimentos de modelado de lenguaje en zulú, xhosa, sesoto y demás lenguas del corpus, con corpus y código de evaluación publicados.
-- Ajuste fino para clasificación de texto (por ejemplo, detección de discurso de odio o análisis de sentimiento en xhosa o zulú): el tamaño de 125M permite entrenar en una única GPU consumer con datasets pequeños.
-- Generación asistida de texto en afrikáans e inglés: continuación de frases y borradores para herramientas editoriales, dado el soporte nativo de ambos idiomas en el corpus.
-- Traducción automática de bajo coste mediante fine-tuning: el modelo puede adaptarse como encoder-decoder implícito por continuación para pares entre inglés y lenguas sudafricanas.
-- Experimentos de destilación y eficiencia: su reducido tamaño (125M) y contexto de 2048 tokens lo hacen adecuado como estudiante en pipelines de destilación desde modelos mayores.
-- Evaluación comparativa de tokenizadores: permite estudiar el impacto de un vocabulario BPE de 65.536 entradas frente a tokenizadores multilingües genéricos en lenguas aglutinantes.
-- Prototipado educativo y docencia: al ser Apache 2.0 y caber en GPUs modestas, es viable para cursos de NLP en contextos con recursos limitados.
+- Ajuste fino para clasificacion de texto en lenguas sudafricanas: el modelo sirve como inicializacion para tareas de clasificacion (por ejemplo, analisis de sentimiento o deteccion de idioma) tras un fine-tuning supervisado sobre el corpus objetivo, aprovechando que su tokenizador cubre las once lenguas.
+- Reconocimiento de entidades nombradas (NER): ajuste fino sobre datasets anotados en isiZulu, isiXhosa o afrikaans para extraer personas, lugares y organizaciones en textos administrativos o periodisticos.
+- Etiquetado morfosintactico (POS tagging): uso como encoder-decoder base para tareas de etiquetado secuencial tras ajuste fino, adecuado por su contexto de 2048 tokens para documentos de longitud media.
+- Generacion de titulares y resumenes cortos: ajuste fino para generar titulares periodisticos en lenguas de bajos recursos, donde los modelos multilingues grandes suelen tener tokenizadores ineficientes para estas lenguas.
+- Investigacion en linguistica computacional de bajos recursos: evaluacion de tecnicas de preentrenamiento, tokenizacion y transferencia entre lenguas africanas con un modelo de 125M parametros que cabe en una sola GPU consumer.
+- Prototipado de asistentes de texto en entornos con recursos limitados: despliegue en CPU o GPU de gama baja para generar continuaciones de texto en aplicaciones educativas o de divulgacion, dado su reducido tamano.
+- Experimentacion con tecnicas de cuantizacion y eficiencia: al ser un modelo pequeno con GQA, sirve como banco de pruebas para estudiar el impacto de la cuantizacion en lenguas de bajos recursos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card remite al artículo de LREC 2026 (ACL Anthology, DOI 10.63317/4g7i3kqszquh) para los resultados de evaluación, pero no incluye tablas de MMLU, HumanEval, GSM8K ni métricas de perplejidad en el texto proporcionado.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp32: aproximadamente 0,5 GB de pesos (125M × 4 bytes), más overhead de activaciones y KV cache; en la práctica cabe en cualquier GPU con 2 GB o más.
-- VRAM estimada en fp16/bf16: aproximadamente 0,25 GB de pesos, holgado en GPUs de 4 GB.
-- GPU recomendadas: cualquier GPU moderna; RTX 3060, RTX 4060, RTX 4090, A100 o H100 funcionan sin problema. El modelo está sobredimensionado para estas GPUs en el sentido de que el cuello de botella será el throughput, no la memoria.
-- Cabe en GPU consumer: sí, en cualquier GPU consumer con al menos 4 GB de VRAM, e incluso en CPU para inferencia por lotes pequeños.
-- Opciones de despliegue: transformers (versión 4.x recomendada por el propio autor), text-generation-inference (el repo declara endpoints_compatible), y potencialmente llama.cpp/Ollama si se generan pesos GGUF, aunque el autor no los publica.
-- Latencia y throughput estimados: no disponibles en la información proporcionada. Por el tamaño, se espera un throughput alto en GPU moderna, pero no se aportan cifras oficiales.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 250 MB para los pesos (125M parametros x 2 bytes), mas overhead de activaciones y cache KV; en la practica, menos de 1 GB para contextos cortos.
+- VRAM estimada en cuantizacion INT8: aproximadamente 125 MB para los pesos; en INT4, alrededor de 65 MB, aunque estos valores son estimaciones tecnicas y no estan confirmados en la model card.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; una RTX 3060, RTX 4060 o superior permite inferencia comoda. Para entrenamiento o fine-tuning, se recomienda al menos una RTX 3090/4090 o una A100/H100 para lotes grandes.
+- Cabe en GPU consumer: si, en practicamente cualquier GPU con al menos 2 GB de VRAM, e incluso en CPU para inferencia con latencia aceptable.
+- Opciones de despliegue: transformers (version >=4.52.4 y <5 segun la model card), text-generation-inference (el modelo esta etiquetado como endpoints_compatible), y potencialmente llama.cpp u Ollama si se convierte a GGUF, aunque no se documenta oficialmente.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MzansiLM 125M | 125M | 2048 | 11 lenguas sudafricanas + en | Apache 2.0 | Hugging Face (uctnlp) |
-| Modelos tipo GPT-2 small | ~124M | 1024 | principalmente inglés | MIT (variantes) | amplia |
-| Modelos tipo Llama pequeño (p. ej. variantes de 100-150M) | ~100-150M | variable | multilingüe general | variable | variable |
-| Modelos africanos específicos de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
+| MzansiLM 125M | 125M | 2048 | 11 lenguas sudafricanas + en | Apache 2.0 | Hugging Face |
+| AfroLM (base) | 111M (aproximado, no confirmado) | no disponible | Lenguas africanas | no disponible | Hugging Face |
+| AfroGPT / otros modelos africanos pequenos | no disponible | no disponible | Lenguas africanas | no disponible | no disponible |
 
-No se dispone de datos de benchmarks comparativos publicados en la información proporcionada para establecer diferencias de rendimiento frente a alternativas. La comparación se limita a parámetros, contexto y licencia.
+No se dispone de datos de benchmarks comparativos en la informacion proporcionada; la comparativa se limita a parametros, contexto y licencia. No se confirma la existencia de alternativas directas con el mismo conjunto de lenguas y tamano.
 
 ## Limitaciones y advertencias
 
-- Es un modelo base sin instrucción: no sigue instrucciones ni mantiene diálogos; requiere fine-tuning para tareas conversacionales o de agentes.
-- Riesgo de alucinación alto en generación libre, especialmente fuera del dominio del corpus de entrenamiento.
-- Contexto limitado a 2048 tokens, insuficiente para documentos largos o conversaciones multi-turno extensas.
-- Cobertura lingüística restringida a las once lenguas oficiales sudafricanas y al inglés; no se garantiza calidad en otras lenguas.
-- Posibles sesgos derivados del corpus MzansiText (fuentes web, desequilibrios por lengua y por registro); no se documenta un análisis de sesgos en la model card.
-- Incompatibilidad conocida con Transformers 5 por la combinación hidden_size=512 y num_attention_heads=9; requiere Transformers 4.x o el registro de compatibilidad de sallm.
-- El tokenizador añade [EOS] automáticamente; es necesario eliminarlo antes de generate() para continuaciones, lo que puede provocar errores en pipelines mal adaptados.
-- Normalizador NFD: las comparaciones de cadenas deben normalizarse a NFC para evitar discrepancias.
-- Licencia Apache 2.0 permite uso comercial, pero al ser un modelo base los riesgos de calidad en producción recaen sobre el integrador.
-- No se publican pesos cuantizados oficiales (GGUF, AWQ, GPTQ), lo que limita el despliegue en entornos sin PyTorch.
+- Es un modelo base, no un asistente instruido: no sigue instrucciones ni mantiene conversaciones sin ajuste fino previo.
+- La calidad varia significativamente entre lenguas: es mayor en afrikaans, ingles, isiZulu, isiXhosa y sesotho, y mucho menor en setswana, sepedi, xitsonga, siswati, tshivenda e isiNdebele, debido al desbalance del corpus.
+- El tokenizador normaliza a NFD, por lo que es necesario normalizar las salidas a NFC antes de comparaciones exactas o metricas a nivel de cadena.
+- El post-procesador anade [EOS] al final de cada secuencia, lo que requiere eliminar ese token antes de continuar una prompt en generacion.
+- Incompatibilidad con Transformers 5.x por la configuracion de head_dim y num_attention_heads; requiere transformers<5 o un parche de compatibilidad.
+- Riesgo de alucinacion y de generar texto incoherente en lenguas con pocos datos de entrenamiento.
+- Sesgos potenciales derivados del corpus MzansiText, cuya composicion y procedencia no se detallan completamente en la informacion disponible.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo no incluye garantias de calidad para produccion sin evaluacion previa en la tarea objetivo.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/uctnlp/mzansilm-125m
+- Hugging Face: https://huggingface.co/uctnlp/mzansilm-125m
 - Paper (LREC 2026, ACL Anthology): https://aclanthology.org/2026.lrec-1.109/
-- Paper (arXiv): https://arxiv.org/abs/2603.20732
-- DOI: https://doi.org/10.63317/4g7i3kqszquh
-- Corpus MzansiText: https://huggingface.co/datasets/uctnlp/mzansi-text
-- Corpus tokenizado: https://huggingface.co/datasets/uctnlp/mzansi-text-tokenized
-- Código de entrenamiento y evaluación (sallm): https://github.com/Anri-Lombard/sallm
-- Colección MzansiLM & MzansiText: https://huggingface.co/collections/uctnlp/mzansilm-and-mzansitext-6a6b3de8f1bff1af24030440
+- arXiv: https://arxiv.org/abs/2603.20732
+- Dataset MzansiText: https://huggingface.co/datasets/uctnlp/mzansi-text
+- Dataset tokenizado: https://huggingface.co/datasets/uctnlp/mzansi-text-tokenized
+- Codigo de entrenamiento y evaluacion: https://github.com/Anri-Lombard/sallm
+- Coleccion MzansiLM y MzansiText: https://huggingface.co/collections/uctnlp/mzansilm-and-mzansitext-6a6b3de8f1bff1af24030440

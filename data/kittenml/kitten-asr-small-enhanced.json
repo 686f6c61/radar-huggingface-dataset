@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "KittenML/kitten-asr-small-enhanced",
+  "slug": "kittenml-kitten-asr-small-enhanced",
+  "author": "KittenML",
+  "url": "https://huggingface.co/KittenML/kitten-asr-small-enhanced",
+  "created_at": "2026-09-04T22:58:26.000Z",
+  "updated_at": "2026-11-25T01:29:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "kitten_asr",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 88,
+  "trending_score": 0,
+  "parameters": 782426112,
+  "parameters_human": "782.4M",
+  "storage_bytes": 3141282289,
+  "storage_human": "3.1 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

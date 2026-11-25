@@ -2,96 +2,103 @@
 
 ## Resumen
 
-Kimi K3.1 Pro es un modelo de lenguaje multimodal nativo y de tipo agéntico, publicado con pesos abiertos por Moonshot AI. Se presenta como el primer miembro de la serie K3.1 y como el modelo más capaz de la clase 3T de la compañía, con 2,8 billones de parámetros totales en una arquitectura Mixture-of-Experts (MoE) que activa 104B por token. Está post-entrenado a partir de Kimi K3 mediante aprendizaje por refuerzo conjunto a gran escala en cientos de dominios, y su ventana de contexto alcanza el millón de tokens.
+Kimi K3.1 Pro es un modelo de lenguaje nativamente multimodal y orientado a agentes, desarrollado por Moonshot AI. Se trata de un modelo de arquitectura Mixture-of-Experts (MoE) con 2,8 billones de parametros totales y 104.000 millones de parametros activos por token, lo que lo situa en la categoria de modelos de escala trillonaria. Es el primer modelo de la serie K3.1 y se post-entrena a partir de Kimi K3 mediante aprendizaje por refuerzo conjunto a gran escala sobre cientos de dominios.
 
-El modelo está diseñado para cargas de trabajo agénticas: razonamiento multi-paso, generación de código, creación 3D, investigación financiera y precisión factual. Su naturaleza multimodal nativa (pipeline `image-text-to-text`) le permite procesar imágenes junto a texto, lo que lo sitúa en la categoría de modelos frontera con capacidades de visión integradas.
+La ficha que nos ocupa, `AMAImedia/Kimi-K3.1-Pro`, es una redistribucion (quantizacion de 8 bits) del modelo original de Moonshot AI, publicada por el usuario AMAImedia en el marco de su plataforma de doblaje automatico multilingue NOESIS. El repositorio ocupa 1566,3 GB e incluye pesos en formato safetensors con codigo personalizado (`custom_code`), lo que implica que requiere confiar en implementaciones no estandar para su carga.
 
-La relevancia de esta ficha radica en que el repositorio de Hugging Face bajo el identificador `AMAImedia/Kimi-K3.1-Pro` es una réplica del modelo original de Moonshot AI, con 0 descargas y 0 likes en el momento de la consulta, un tamaño de repositorio de 1.561,4 GB y pesos en formato safetensors con cuantización de 8 bits mediante `compressed-tensors`. La licencia es propietaria (`kimi-k3.1-pro`), lo que condiciona su uso comercial.
+Su relevancia actual radica en tres factores: una ventana de contexto de un millon de tokens, capacidades multimodales de entrada (texto e imagen) y un enfoque explicito hacia tareas agenticas, codigo, creacion 3D e investigacion financiera. La licencia es propietaria (`kimi-k3.1-pro`, etiquetada como `other`), lo que condiciona su uso comercial.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE) con atención híbrida KDA + Gated DSA |
-| Parámetros totales | 2,8 billones (2.780.110.363.392 según safetensors) |
-| Parámetros activos | 104B por token |
+| Arquitectura | Mixture-of-Experts (MoE) con capas de atencion hibridas: 69 KDA + 24 Gated DSA |
+| Parametros totales | 2,8 billones (2.780.110.363.392 segun safetensors) |
+| Parametros activos | 104.000 millones |
 | Longitud de contexto | 1.000.000 tokens |
-| Tipos de cuantización | 8 bits (compressed-tensors); no se detallan otros formatos |
-| Idiomas soportados | no disponible |
-| Licencia | kimi-k3.1-pro (propietaria, `license: other`) |
-| Formato de pesos | safetensors (con `custom_code` y `compressed-tensors`) |
+| Tipos de cuantizacion | 8 bits (esta ficha); otras cuantizaciones no disponibles |
+| Idiomas soportados | zh, en, es, fr, de, ja, ko, ar, pt, it, vi, ru, kz |
+| Licencia | `kimi-k3.1-pro` (etiqueta `other` en Hugging Face) |
+| Formato de pesos | safetensors con `custom_code` |
+| Capas totales | 93 (1 capa densa) |
+| Modalidades de entrada | Texto e imagen (pipeline `image-text-to-text`) |
 
 ## Arquitectura y entrenamiento
 
-Kimi K3.1 Pro emplea una arquitectura transformer con mezcla de expertos. Consta de 93 capas, de las cuales solo 1 es densa. La composición de capas de atención es híbrida: 69 capas usan KDA (Kimi Delta Attention) y 24 usan Gated DSA (Deep Sparse Attention), con una dimensión de atención de 7168 y 96 cabezas. La atención dispersa DSA emplea 32 cabezas de índice con dimensión 128 y un top-K de 2048, lo que reduce el coste computacional en contextos largos. La dimensión latente del MoE es 3584, con 896 expertos de dimensión oculta 3072 cada uno; se seleccionan 16 expertos por token más 2 expertos compartidos. El vocabulario es de 160K tokens.
+Kimi K3.1 Pro emplea una arquitectura transformer con mezcla de expertos (MoE) de 93 capas, de las cuales solo una es densa. El diseno de atencion es hibrido: combina 69 capas con KDA (Kimi Delta Attention, una forma de atencion lineal con estado recurrente) y 24 capas con Gated DSA (Deep Seeded Attention con compuertas), una combinacion pensada para sostener contextos de un millon de tokens con un coste de atencion contenido. Con 104.000 millones de parametros activos sobre 2,8 billones totales, la relacion de activacion es de aproximadamente el 3,7 %, lo que reduce el coste computacional por token frente a un modelo denso del mismo tamano.
 
-El entrenamiento parte de Kimi K3 y aplica un post-entrenamiento mediante aprendizaje por refuerzo conjunto a gran escala en cientos de dominios downstream, lo que según el autor mejora codificación, creación 3D, investigación financiera y precisión factual. No se especifican en la información disponible el número de tokens de preentrenamiento, la composición del dataset ni si se emplearon técnicas como RLHF o DPO de forma explícita. La innovación técnica destacable es la combinación de atención lineal KDA con atención dispersa DSA para sostener un contexto de un millón de tokens con un coste de atención subcuadrático.
+El entrenamiento parte de Kimi K3 y se completa con aprendizaje por refuerzo conjunto a gran escala sobre cientos de dominios downstream, segun la model card del autor original. No se especifican en la informacion disponible el numero de tokens de preentrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO en etapas separadas. La model card menciona mejoras sustanciales en codigo, creacion 3D, investigacion financiera y precision factual respecto al modelo base. La ficha de AMAImedia es una conversion a 8 bits del checkpoint original y del repositorio DSpark de Inferact, y no aporta informacion adicional sobre el proceso de entrenamiento.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multi-paso en contextos de hasta un millón de tokens.
-- Generación y comprensión de código, con mejoras declaradas en tareas de programación.
-- Capacidades matemáticas y de investigación financiera.
-- Procesamiento de imagen y texto de forma nativa (pipeline `image-text-to-text`).
-- Creación 3D, según la model card.
-- Precisión factual mejorada respecto a Kimi K3.
-- Capacidades agénticas: razonamiento multi-paso y ejecución de tareas encadenadas.
-- Soporte de tool calling / function calling: no confirmado explícitamente en la información disponible.
-- Capacidades multilingües: no disponibles.
-- Modo de pensamiento (thinking mode): no confirmado en la información disponible.
+- Generacion de texto y razonamiento multi-turno con ventanas de hasta un millon de tokens.
+- Entrada multimodal de imagen y texto (pipeline `image-text-to-text`), lo que permite describir, analizar y razonar sobre imagenes junto a instrucciones textuales.
+- Generacion de codigo y tareas de ingenieria de software, con mejoras declaradas respecto a Kimi K3.
+- Razonamiento matematico y financiero, orientado a investigacion y analisis de datos.
+- Creacion 3D, capacidad destacada explicitamente en la model card.
+- Capacidades agenticas: el modelo esta descrito como "agentic model", pensado para planificacion multi-paso y ejecucion de tareas.
+- Soporte multilingue en 13 idiomas: chino, ingles, espanol, frances, aleman, japones, coreano, arabe, portugues, italiano, vietnamita, ruso y kazajo.
+- Soporte de tool calling / function calling: no confirmado de forma explicita en la informacion disponible, aunque su orientacion agentica lo hace probable.
+- Modo de razonamiento extendido (thinking mode): no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Investigación financiera asistida: el modelo puede analizar informes extensos y series de datos dentro de su ventana de un millón de tokens, manteniendo coherencia entre documentos y reduciendo la pérdida de contexto en análisis multi-fuente.
-- Generación de código en producción: su mejora declarada en codificación y su naturaleza agéntica permiten integrarlo en pipelines que requieran razonamiento sobre repositorios completos, aunque el despliegue exige infraestructura de gran escala.
-- Creación 3D y modelado procedural: la model card cita mejoras en creación 3D, lo que lo hace adecuado para generar descripciones estructuradas o scripts de escenas a partir de instrucciones en lenguaje natural e imágenes de referencia.
-- Análisis de documentos legales o contractuales: con contexto de un millón de tokens puede procesar expedientes completos y responder preguntas que requieran cruzar cláusulas dispersas.
-- Asistentes multimodales: al aceptar imagen y texto, puede emplearse en tareas de descripción, extracción de información de capturas o soporte visual en atención al cliente.
-- Agentes autónomos de investigación: su entrenamiento por refuerzo en dominios downstream y su razonamiento multi-paso lo orientan a tareas de planificación y ejecución con verificación intermedia.
-- Evaluación de precisión factual en dominios regulados: la mejora declarada en factualidad lo hace candidato para tareas de verificación, siempre con supervisión humana por el riesgo de alucinación.
+- Analisis de documentos extensos: con un millon de tokens de contexto, el modelo puede procesar informes anuales completos, expedientes legales o bases de codigo enteras en una sola pasada, sin necesidad de fragmentacion ni recuperacion externa.
+- Investigacion financiera automatizada: la model card cita mejoras en investigacion financiera; el modelo puede extraer y cruzar datos de estados financieros, comparar ejercicios y generar resumenes analiticos a partir de documentos largos.
+- Asistencia en ingenieria de software: generacion y revision de codigo en repositorios grandes, refactorizaciones que requieren contexto de multiples ficheros y explicacion de arquitecturas completas gracias a la ventana de contexto.
+- Doblaje y localizacion automatica: es el caso de uso declarado por AMAImedia en su plataforma NOESIS; el modelo puede gestionar traduccion y adaptacion de guiones en los 13 idiomas soportados, incluyendo contexto visual si se le pasan fotogramas.
+- Creacion y edicion 3D asistida: generacion de descripciones estructuradas, scripts de modelado o instrucciones para pipelines de render a partir de especificaciones textuales e imagenes de referencia.
+- Agentes autonomos de atencion al cliente: conversaciones multi-turno con historial largo, consulta de herramientas externas y escalado a humanos, aprovechando la ventana de contexto para mantener el estado de la conversacion.
+- Procesamiento multimodal de documentos escaneados: extraccion de informacion de facturas, formularios o capturas combinando entrada de imagen y texto en un unico modelo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 2,8 billones de parámetros totales, incluso en 8 bits los pesos ocupan aproximadamente 2,8 TB, por lo que la inferencia requiere agregación de memoria multi-nodo; no cabe en una sola GPU.
-- GPU recomendadas: clústeres de H100 o A100 de 80 GB en configuraciones multi-nodo; no se dispone de cifras oficiales de VRAM mínima.
-- GPU de consumo: no es viable en RTX 4090 ni en ninguna GPU consumer por el tamaño del modelo.
-- Opciones de despliegue: la librería indicada es `transformers` con `custom_code` y `compressed-tensors`; no se confirman integraciones con vLLM, llama.cpp, Ollama o TGI en la información disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma exacta. Con 2,8 billones de parametros, incluso en 8 bits los pesos superan los 2,7 TB, por lo que la inferencia requiere un cluster multi-GPU, no una sola tarjeta.
+- El repositorio ocupa 1566,3 GB, lo que da una idea del espacio en disco necesario para almacenar los pesos.
+- GPU recomendadas: no disponibles en la informacion proporcionada. Por escala, se necesitarian nodos con multiples H100, H200 o Blackwell con interconexion de alta velocidad (NVLink/InfiniBand).
+- No cabe en GPU de consumo. El autor de la ficha indica que su hardware local (RTX 3060 Laptop de 6 GB) solo sirve para trabajos de cuantizacion de clase 0,6-35B en RAM, y que los modelos de 9B en adelante requieren alquiler de H200/Blackwell.
+- Opciones de despliegue: transformers con `custom_code` (formato nativo del repo). No se confirma soporte de vLLM, llama.cpp, Ollama o TGI en la informacion disponible; llama.cpp y Ollama quedan descartados por el tamano del modelo.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Activos | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Notas |
 |---|---|---|---|---|---|
-| Kimi K3.1 Pro | 2,8T | 104B | 1M | kimi-k3.1-pro (propietaria) | Pesos abiertos en HF |
-| Kimi K3 | no disponible | no disponible | no disponible | no disponible | Referencia de partida del post-entrenamiento |
-| Alternativas de clase 3T | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Kimi K3.1 Pro (esta ficha, 8 bits) | 2,8 B | 104 B | 1.000.000 | `kimi-k3.1-pro` (other) | Multimodal, agentico, 93 capas |
+| Kimi K3 | no disponible | no disponible | no disponible | no disponible | Modelo base del que se post-entrena K3.1 Pro |
+| Kimi-K3.1-Pro-DSpark (Inferact) | no disponible | no disponible | no disponible | no disponible | Repositorio base citado por AMAImedia |
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no es posible.
+No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la información disponible; todo modelo entrenado con datos web hereda sesgos que requieren evaluación propia.
-- Riesgo de alucinación: presente en modelos generativos de esta clase; la model card declara mejoras en precisión factual, pero no elimina el riesgo en producción.
-- Limitaciones de contexto o idioma: el contexto es de un millón de tokens, pero no se especifican los idiomas soportados ni su calidad relativa.
-- Restricciones de licencia: la licencia `kimi-k3.1-pro` es propietaria (`license: other`); el uso comercial requiere revisar los términos del archivo LICENSE del repositorio original de Moonshot AI.
-- El repositorio consultado (`AMAImedia/Kimi-K3.1-Pro`) es una réplica con 0 descargas y 0 likes; conviene verificar la integridad de los pesos frente al repositorio oficial `moonshotai/Kimi-K3.1-Pro`.
-- El tamaño del repositorio (1.561,4 GB) y la cuantización en 8 bits implican requisitos de almacenamiento y ancho de banda considerables para su descarga y despliegue.
-- No se confirman capacidades de tool calling ni modo de pensamiento explícito, lo que debe validarse antes de diseñar agentes en producción.
+- Licencia propietaria (`kimi-k3.1-pro`, etiqueta `other`): es imprescindible revisar los terminos del fichero LICENSE del repositorio original de Moonshot AI antes de cualquier uso comercial. La redistribucion de AMAImedia no aclara si impone condiciones adicionales.
+- Esta ficha es una cuantizacion a 8 bits realizada por un tercero (AMAImedia), no el checkpoint oficial. Puede haber perdida de calidad respecto al modelo original, y el soporte y las garantias recaen en el redistribuidor.
+- Requiere `custom_code` y `trust_remote_code=True` en transformers: implica ejecutar codigo del autor del repositorio, con el riesgo de seguridad asociado.
+- Riesgo de alucinacion: no se han publicado evaluaciones de precision factual en la informacion disponible; la model card del autor original afirma mejoras en precision factual, pero sin datos verificables en esta ficha.
+- Sesgos conocidos: no documentados en la informacion proporcionada.
+- Limitaciones de idioma: aunque se listan 13 idiomas, no se especifica el nivel de competencia por idioma ni el volumen de datos de entrenamiento en cada uno; el espanol esta incluido pero sin garantias cuantificadas.
+- Coste de despliegue muy elevado: 1566,3 GB de pesos y 2,8 B de parametros hacen inviable el uso local y obligan a infraestructura de centro de datos.
+- La model card incluye contenido promocional y de captacion de donaciones ajeno al modelo; conviene tratarlo con cautela y acudir siempre al repositorio original de Moonshot AI como fuente autoritativa.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/AMAImedia/Kimi-K3.1-Pro
-- Repositorio oficial de Moonshot AI: https://huggingface.co/moonshotai
-- Modelo oficial de referencia: https://huggingface.co/moonshotai/Kimi-K3.1-Pro
-- Blog técnico: https://www.kimi.ai/blog/kimi-k3-1-pro
+- Repositorio en Hugging Face (esta ficha): https://huggingface.co/AMAImedia/Kimi-K3.1-Pro
+- Repositorio original: https://huggingface.co/moonshotai/Kimi-K3.1-Pro
+- Repositorio DSpark: https://huggingface.co/Inferact/Kimi-K3.1-Pro-DSpark/tree/main
+- Blog tecnico: https://www.kimi.ai/blog/kimi-k3-1-pro
 - Quickstart de API: https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart
 - Chat: https://www.kimi.ai
-- Página corporativa: https://www.moonshot.ai
-- X (Twitter): https://twitter.com/kimi_moonshot
+- Web de Moonshot AI: https://www.moonshot.ai
+- Organizacion en Hugging Face: https://huggingface.co/moonshotai
+- X (Twitter) de Kimi: https://twitter.com/kimi_moonshot
 - Discord: https://discord.gg/TYU2fdJykW
 - ModelScope: https://modelscope.cn/organization/moonshotai
-- Licencia: https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/main/LICENSE
+- Web de AMAImedia: https://www.amaimedia.com
+- X (Twitter) de AMAImedia: https://x.com/AMAImediacom
+- LinkedIn del autor de la ficha: https://www.linkedin.com/in/ilia-bolotnikov
+- Telegram de AMAImedia: https://t.me/AMAImediacom

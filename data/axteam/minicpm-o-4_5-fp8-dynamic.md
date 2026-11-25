@@ -2,94 +2,102 @@
 
 ## Resumen
 
-MiniCPM-o-4_5-FP8-dynamic es una versión cuantizada a FP8 del modelo ómnium multimodal MiniCPM-o 4.5 de OpenBMB, publicada por el usuario axteam. No se trata de un modelo nuevo entrenado desde cero, sino de un derivado de despliegue (post-training quantization, sin reentrenamiento) pensado para servir el modelo original con vLLM en la mitad de memoria aproximadamente: ~10,4 GB en disco frente a los ~18,7 GB que ocuparían los pesos en BF16.
+MiniCPM-o-4_5-FP8-dynamic es una cuantización de 8 bits en formato FP8 del modelo multimodal openbmb/MiniCPM-o-4_5, publicada por el usuario axteam. El modelo base es un transformer "omni" (visión + audio + TTS) desarrollado por OpenBMB, con 9.371.787.666 parámetros totales según los safetensors del repositorio. Esta versión cuantizada está pensada específicamente para servir el modelo con vLLM mediante un esquema W8A8 con activaciones dinámicas por token.
 
-El modelo base es un transformer denso de 9.371.787.666 parámetros que integra un codificador visual en streaming, un codificador de audio (basado en Whisper) y una cabeza de síntesis de voz (TTS) junto a la columna vertebral del modelo de lenguaje. Según la información pública del modelo base, emplea una arquitectura de streaming denominada Omni-Flow, orientada a interacción en tiempo real y en duplex completo (full-duplex) sobre visión, audio, texto y voz, con mecanismos de comportamiento proactivo y fusión de estados ocultos a nivel de token.
+La relevancia de esta ficha radica en que reduce el peso en disco de aproximadamente 24,3 GB (repo completo) a unos 11,8 GB de pesos, manteniendo el rendimiento del original BF16 en los benchmarks medidos (recuperación media del 100,0 %). Es una opción práctica para desplegar un modelo any-to-any de casi 9,4 mil millones de parámetros en GPUs de una sola tarjeta con suficiente VRAM, sin recalibración ni reentrenamiento.
 
-Su relevancia práctica es de infraestructura: permite ejecutar un modelo ómnium de ~9B con pesos de 8 bits en GPUs de 24 GB y en hardware Hopper/Ada con soporte nativo de FP8 E4M3, manteniendo en BF16 los módulos perceptivos y de síntesis de voz, que son los más sensibles a la cuantización. La licencia Apache-2.0 del modelo original se conserva.
+La cuantización es data-free (sin calibración) y conserva en BF16 los módulos sensibles: codificador de visión, codificador de audio (Whisper), proyector de audio, módulos TTS, embeddings, LM head y todas las RMSNorm. Solo las proyecciones de atención y MLP del modelo de lenguaje se cuantizan a FP8 E4M3.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso ómnium (visión + audio + TTS + LM) con arquitectura de streaming Omni-Flow; codificador visual en streaming, codificador de audio tipo Whisper y cabeza TTS |
-| Parametros totales | 9.371.787.666 (~9,37B) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | FP8 dinámico W8A8: pesos FP8 E4M3 con escala por canal, activaciones FP8 dinámicas por token; formato compressed-tensors `FP8_DYNAMIC`; sin calibración (data-free); visión, audio, TTS, embeddings, LM head y RMSNorms se mantienen en BF16 |
-| Idiomas soportados | no disponibles en la información de Hugging Face; la validación de calidad de la cuantización se realizó en inglés y coreano |
+| Arquitectura | Transformer omni multimodal (visión + audio + TTS), basado en MiniCPM-o-4_5 |
+| Parametros totales | 9.371.787.666 |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | hasta 32.768 tokens en el ejemplo de despliegue (`--max-model-len 32768`); la longitud máxima nativa del modelo base no se detalla |
+| Tipos de cuantizacion | FP8 dinámico W8A8: pesos FP8 E4M3 por canal, activaciones FP8 dinámicas por token; esquema `FP8_DYNAMIC` de compressed-tensors |
+| Idiomas soportados | no disponible en la model card; los benchmarks incluyen KMMLU (coreano) y HAE-RAE (coreano), lo que sugiere cobertura multilingüe |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors con compressed-tensors (FP8_DYNAMIC); el repositorio incluye además artefactos ONNX; no se ofrece GGUF |
+| Formato de pesos | safetensors con compressed-tensors (`float-quantized`), más ONNX y código propio; compatible con vLLM |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer denso de ~9,37B parámetros con arquitectura ómnium: un codificador visual en streaming, un codificador de audio derivado de Whisper, una cabeza TTS y una columna vertebral de lenguaje, combinados mediante fusión de estados ocultos a nivel de token. La información pública del modelo base describe la arquitectura Omni-Flow, diseñada para interacción en tiempo real y en duplex completo, con soporte de comportamiento proactivo durante el streaming audiovisual. Los detalles de composición del dataset de entrenamiento (número de tokens, mezcla de datos, uso de RLHF/DPO) no están disponibles en la información proporcionada.
+El modelo base MiniCPM-o-4_5 es un transformer multimodal de tipo "omni" que integra un codificador de visión, un codificador de audio basado en Whisper, un proyector de audio, módulos de text-to-speech (TTS) y un modelo de lenguaje principal. Esta versión FP8 mantiene intactos en BF16 el codificador de visión, el codificador de audio, el proyector de audio (`audio_projection_layer`), los módulos TTS, los embeddings de tokens, el LM head (`llm.lm_head`) y todas las RMSNorm, que representan aproximadamente el 26 % de los parámetros de esta build. Solo las proyecciones de atención y MLP del modelo de lenguaje se convierten a FP8.
 
-Sobre esta variante concreta, el autor documenta únicamente el proceso de cuantización: cuantización post-entrenamiento sin reentrenamiento ni calibración, aplicada exclusivamente a las proyecciones de atención y MLP de la columna vertebral del modelo de lenguaje. Los módulos de visión, audio y TTS, así como los embeddings de tokens, el LM head y todas las RMSNorm, permanecen en BF16, lo que representa una fracción pequeña de los parámetros pero concentra la mayor parte de la sensibilidad numérica. El tokenizador y la `chat_template` son idénticos a los del original. El autor declara haber validado la calidad frente al modelo BF16 mediante perplejidad y acuerdo top-1 en inglés y coreano, sin publicar los valores numéricos.
+La cuantización es post-entrenamiento y sin calibración (data-free), por lo que no se ha realizado ningún reentrenamiento ni ajuste fino. El tokenizador y la `chat_template` son idénticos a los del original. La revisión del 2026-11-01 corrigió la primera subida (revisión `8efe6eb`), que también cuantizaba el LM head y el proyector de audio a FP8 y no cargaba en vLLM 0.32; la build actual los conserva en BF16 y fue verificada con vLLM 0.32.0 para entrada de texto (2026-11-01) e imagen (2026-11-02). No se detallan en la información disponible el número de tokens de entrenamiento del modelo base ni si hubo RLHF/DPO.
 
 ## Capacidades
 
-- Procesamiento conjunto de visión, audio, texto y voz (pipeline `any-to-any`): entrada de imagen, vídeo y audio, salida de texto y voz sintetizada.
-- Codificación visual en streaming, apta para flujos de vídeo continuos más que para imágenes aisladas.
-- Comprensión de audio y reconocimiento de voz mediante el codificador tipo Whisper, mantenido en BF16 en esta variante.
-- Síntesis de voz (TTS) integrada en el propio modelo, no como componente externo.
-- Interacción en duplex completo y en tiempo real según la arquitectura Omni-Flow del modelo base, con comportamiento proactivo.
-- Generación de texto y razonamiento multimodal heredados de la columna vertebral del LM.
-- Capacidades multilingües: no detalladas en la información disponible; la validación de la cuantización cubre inglés y coreano.
+- Generación de texto y razonamiento, con modo "thinking" activado por defecto en la chat template (desactivable con `enable_thinking: false`).
+- Procesamiento de imagen: entrada de imagen por URL o data URI, con descripción y comprensión visual.
+- Procesamiento de audio: codificador Whisper y proyector de audio para entrada de audio (no verificado en esta build según la model card).
+- Síntesis de voz (TTS) mediante módulos dedicados conservados en BF16.
+- Pipeline any-to-any: combinación de texto, imagen, audio y voz en un mismo modelo.
+- Capacidades multilingües: los benchmarks incluyen coreano (KMMLU, HAE-RAE) además de inglés; el conjunto completo de idiomas no está documentado.
+- Compatibilidad con servidor OpenAI-compatible vía vLLM (`vllm serve`), incluyendo `llm.chat` offline.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible explícitamente en la información proporcionada.
 
 ## Casos de uso
 
-- Asistentes por voz en tiempo real: el modelo integra reconocimiento de audio y TTS en un único artefacto, de modo que un asistente telefónico o de kiosco puede transcribir, razonar y responder con voz sin orquestar tres modelos separados, reduciendo latencia y complejidad de despliegue.
-- Análisis de vídeo en directo: el codificador visual en streaming permite procesar fotogramas de forma continua para tareas de supervisión (control de aforo, detección de incidencias en línea de producción o vigilancia de accesos) sin trocear el vídeo en clips independientes.
-- Accesibilidad: descripción automática de escenas y lectura de contenido visual combinada con salida de voz, útil para aplicaciones de asistencia a personas con discapacidad visual que necesitan respuesta hablada inmediata.
-- Atención al cliente multimodal: un usuario puede enviar una captura de pantalla o un audio describiendo un problema y el modelo responde en texto o voz; el despliegue en vLLM con FP8 permite mantener varias sesiones concurrentes en una sola GPU de 24 GB.
-- Moderación de contenido audiovisual: clasificación de audio y vídeo combinados (tono de voz, lenguaje, elementos visuales) en pipelines de revisión, aprovechando que la cuantización preserva los codificadores perceptivos en BF16.
-- Documentación técnica con imágenes: extracción de información de manuales, diagramas e infografías combinada con explicación hablada, para formación interna o soporte de campo.
-- Transcripción y resumen de reuniones con salida de audio: el modelo cubre la cadena completa de audio a texto y de texto a voz, lo que simplifica la arquitectura frente a soluciones que encadenan ASR, LLM y TTS de proveedores distintos.
+- Asistente multimodal conversacional: el modelo puede gestionar conversaciones multi-turno con texto, imagen y audio, con una ventana de hasta 32.768 tokens en el despliegue de ejemplo, adecuada para sesiones largas con historial extenso.
+- Descripción y análisis de imágenes en producción: con el codificador de visión intacto en BF16 y verificado en vLLM 0.32.0, puede integrarse en pipelines de moderación de contenido, accesibilidad o catalogación automática de imágenes.
+- Transcripción y comprensión de audio: el codificador Whisper y el proyector de audio permiten construir servicios de resumen de reuniones o análisis de llamadas, aunque la entrada de audio no se ha verificado en esta build concreta.
+- Generación de voz (TTS): los módulos TTS conservados en BF16 permiten sintetizar respuestas habladas en asistentes de voz o sistemas de lectura automática.
+- Servicio de inferencia con API compatible OpenAI: mediante `vllm serve` se puede exponer el modelo como endpoint `/v1/chat/completions` para integrarlo en aplicaciones existentes sin cambios de cliente.
+- Evaluación de modelos multilingües: los resultados en KMMLU y HAE-RAE permiten usar esta build como referencia para tareas en coreano e inglés dentro de pipelines de evaluación con lm-evaluation-harness.
+- Despliegue en GPUs de una sola tarjeta: con 11,8 GB de pesos, cabe en GPUs consumer de gama alta y en tarjetas de datacenter, reduciendo el coste frente al modelo BF16 original.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card del autor solo indica que la cuantización se comprobó frente al original en BF16 mediante perplejidad y acuerdo top-1 en inglés y coreano, sin publicar los valores. No se dispone de resultados de MMLU, HumanEval, GSM8K ni de evaluaciones multimodales para esta variante.
+Resultados medidos con lm-evaluation-harness sobre vLLM, greedy, prompts estilo completion sin chat template (0 o 5-shot según fila). MMLU es la variante generativa (`mmlu_generative`), no directamente comparable con MMLU por log-likelihood.
+
+| Benchmark | BF16 (original) | FP8-dynamic (este repo) | Recuperación |
+|---|---|---|---|
+| MMLU (5-shot, generativo) | 74,06 | 74,06 | 100,0 % |
+| GSM8K (5-shot, estricto) | 81,73 | 82,49 | 100,9 % |
+| ARC-Challenge (0-shot) | 56,74 | 56,83 | 100,2 % |
+| Winogrande (5-shot) | 76,80 | 75,14 | 97,8 % |
+| KMMLU (5-shot, directo) | 30,25 | 30,57 | 101,1 % |
+| HAE-RAE (0-shot) | 22,18 | 22,82 | 102,9 % |
+| Media | 56,96 | 56,98 | 100,0 % |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos FP8 ocupan ~10,4 GB en disco; con caché KV y activaciones, un despliegue en vLLM necesita del orden de 14-18 GB para contextos moderados. Estimación orientativa, no publicada por el autor.
-- GPU recomendadas: H100 o H200 (soporte nativo de FP8 E4M3 y mayor margen para concurrencia), L40S y A100 40/80 GB para producción con varias sesiones simultáneas.
-- GPU de consumo: sí cabe en RTX 4090 y RTX 3090 de 24 GB, con contexto limitado. En tarjetas de 16 GB el despliegue es ajustado y probablemente requiera recortar contexto o concurrencia. Las arquitecturas Ampere no ejecutan FP8 de forma nativa, por lo que en A100 el rendimiento será inferior al de Ada/Hopper.
-- Opciones de despliegue: vLLM es la vía documentada por el autor (`vllm serve axteam/MiniCPM-o-4_5-FP8-dynamic`). También es cargable con transformers y compressed-tensors. No hay pesos GGUF, por lo que llama.cpp y Ollama no son opciones directas sin una conversión adicional.
-- Latencia y throughput estimados: no disponibles. Dependen críticamente de la GPU (soporte nativo de FP8 o no), del número de sesiones concurrentes y de si se activan los módulos de audio y TTS.
+- VRAM estimada: 11,8 GB solo para pesos; hay que añadir la caché KV (crece con la longitud de contexto y el número de peticiones concurrentes) y varios GB para activaciones y CUDA graphs.
+- GPU recomendadas: NVIDIA Turing (sm75, por ejemplo T4) o superior. El cálculo FP8 nativo requiere Ada, Hopper o Blackwell (sm89+); en Turing y Ampere vLLM cambia automáticamente a FP8 weight-only. V100 (sm70) no está soportado. Solo se ha probado en B200 según la model card.
+- Cabe en GPU consumer: sí, en tarjetas con al menos ~16 GB de VRAM efectiva para pesos más caché y overhead; no se especifican modelos concretos.
+- Despliegue: vLLM 0.32.0 (probado), con Python 3.11–3.14, torch 2.13 (build CUDA 13.0), transformers ≥5.16.1,<5.20 y compressed-tensors 0.17.0 (fijado por vLLM; no actualizar por separado). Requiere `trust_remote_code`. Para servir solo texto: `--limit-mm-per-prompt '{"image": 0, "video": 0}'`.
+- Sin vLLM: no hay configuración verificada de Transformers, porque el código upstream fija `transformers==4.51.0`, que no puede leer checkpoints de compressed-tensors (requiere ≥4.56).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Formato / despliegue | Notas |
 |---|---|---|---|---|---|
-| axteam/MiniCPM-o-4_5-FP8-dynamic (esta ficha) | 9,37B | no disponible | Visión, audio, texto, TTS | Apache-2.0 | Pesos FP8 en Hugging Face, formato compressed-tensors |
-| openbmb/MiniCPM-o-4_5 (base) | 9,37B | no disponible | Visión, audio, texto, TTS | Apache-2.0 | Pesos BF16 en Hugging Face; ~18,7 GB |
-| openbmb/MiniCPM-V-4_5 | no disponible | no disponible | Visión y texto (sin audio ni TTS) | no disponible en la información proporcionada | Pesos en Hugging Face |
-| Qwen2.5-Omni-7B | ~7B (referencia externa) | no disponible | Visión, audio, texto, voz | no disponible en la información proporcionada | Pesos en Hugging Face |
-
-La comparación relevante para esta ficha es la del par base/cuantizado: misma arquitectura, mismo tokenizador y misma licencia, con una reducción de peso en disco de aproximadamente el 44 % (de ~18,7 GB a ~10,4 GB) a cambio de cuantizar solo las proyecciones de atención y MLP del LM. Frente a MiniCPM-V 4.5, la variante «o» añade audio y TTS; frente a alternativas ómnium de otros fabricantes, la información disponible no permite comparar rendimiento con cifras.
+| MiniCPM-o-4_5-FP8-dynamic (este) | 9,37 B | hasta 32.768 en ejemplo | Apache-2.0 | safetensors compressed-tensors, vLLM | Cuantizado W8A8 FP8, ~11,8 GB de pesos |
+| openbmb/MiniCPM-o-4_5 (BF16) | 9,37 B | no disponible | Apache-2.0 | safetensors, transformers/vLLM | Modelo base sin cuantizar; mayor peso en disco |
+| Otros modelos omni de tamaño similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- La cuantización FP8 introduce una pérdida de precisión no cuantificada públicamente: el autor no publica los valores de perplejidad ni el acuerdo top-1 obtenidos frente al BF16, por lo que el impacto real en calidad debe medirse en el caso de uso concreto.
-- La validación de calidad declarada se limita a inglés y coreano; el comportamiento en castellano u otros idiomas no está verificado. Los idiomas soportados no constan en la información de Hugging Face.
-- Riesgo de alucinación inherente a un modelo de ~9B en tareas de razonamiento y en descripción de imágenes o audio ambiguos; sin benchmarks publicados no es posible acotar la magnitud.
-- Longitud de contexto no disponible: es un parámetro crítico para planificar despliegues de vídeo o audio largos y debe confirmarse en la documentación del modelo base antes de diseñar la arquitectura.
-- El modelo se distribuye para vLLM con compressed-tensors; no hay GGUF, de modo que las rutas de despliegue en CPU o en entornos con llama.cpp no están cubiertas.
-- El rendimiento en GPUs sin soporte nativo de FP8 (Ampere y anteriores) será inferior al esperado; el pipeline de quantización no garantiza aceleración en ese hardware.
-- El repositorio procede de un tercero (axteam) y no de OpenBMB: no cuenta con el respaldo del autor original, con 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validación comunitaria.
-- Licencia Apache-2.0, permisiva para uso comercial, heredada del modelo original; los pesos y el tokenizador originales pertenecen a OpenBMB. Conviene verificar las condiciones del modelo base por si hubiera cláusulas adicionales no reflejadas en la model card del derivado.
-- Los módulos de audio (Whisper) y TTS permanecen en BF16, por lo que el pico de memoria puede superar la estimación basada solo en el tamaño de los pesos cuantizados.
+- La cuantización FP8 puede degradar ligeramente tareas no cubiertas por los benchmarks; en Winogrande la recuperación baja al 97,8 %.
+- El modo "thinking" está activado por defecto en la chat template; hay que desactivarlo explícitamente para respuestas directas.
+- La entrada de audio no se ha verificado en esta build con vLLM 0.32.0 (solo texto e imagen).
+- Solo se ha probado en GPU B200; el comportamiento en Turing, Ampere, Ada y Hopper se deduce del código de selección de kernels de vLLM 0.32, no de pruebas directas.
+- Requiere `trust_remote_code` y una combinación muy específica de versiones (vLLM 0.32.0, torch 2.13, transformers ≥5.16.1,<5.20, compressed-tensors 0.17.0); actualizar compressed-tensors por separado puede romper la carga.
+- No hay configuración verificada con Transformers puro; el uso queda prácticamente limitado a vLLM.
+- Si se descargó la revisión anterior al 2026-11-01 10:43:00 UTC (`8efe6eb`), hay que volver a descargar el repositorio.
+- Riesgo de alucinación y sesgos: no documentados en la información disponible; aplican los del modelo base.
+- Licencia Apache-2.0 permite uso comercial, pero se recomienda revisar las condiciones del modelo base y de los componentes de terceros (Whisper, etc.).
+- El rendimiento en coreano es bajo en términos absolutos (KMMLU 30,57; HAE-RAE 22,82), lo que limita su uso en producción para esos idiomas.
+- No se documentan los idiomas soportados ni el conjunto completo de datos de entrenamiento del modelo base.
 
 ## Enlaces
 
-- [axteam/MiniCPM-o-4_5-FP8-dynamic en Hugging Face](https://huggingface.co/axteam/MiniCPM-o-4_5-FP8-dynamic)
-- [openbmb/MiniCPM-o-4_5 (modelo base)](https://huggingface.co/openbmb/MiniCPM-o-4_5)
-- [openbmb/MiniCPM-V-4_5 (variante solo visión)](https://huggingface.co/openbmb/MiniCPM-V-4_5)
-- [MiniCPM-o 4.5: Omni-Modal Interaction AI (Emergent Mind)](https://www.emergentmind.com/topics/minicpm-o-4-5)
-- [MiniCPM-o 4.5: 9B Vision, Audio, and Speech Model (LearnOpenCV)](https://learnopencv.com/minicpm-o-4-5-a-9b-model-that-can-see-hear-and-speak-at-the-same-time/)
-- [axteam/MiniCPM5-2B-NVFP4 (otro derivado cuantizado del mismo autor)](https://huggingface.co/axteam/MiniCPM5-2B-NVFP4)
-- [AI Model Release Calendar (seguimiento de lanzamientos)](https://www.scriptbyai.com/ai-model-release-calendar/)
+- Repositorio Hugging Face: https://huggingface.co/axteam/MiniCPM-o-4_5-FP8-dynamic
+- Modelo base: https://huggingface.co/openbmb/MiniCPM-o-4_5
+- lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness
+- Repositorio vLLM: https://github.com/vllm-project/vllm
+- compressed-tensors: https://github.com/neuralmagic/compressed-tensors

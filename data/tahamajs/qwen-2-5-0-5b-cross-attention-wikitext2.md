@@ -2,96 +2,100 @@
 
 ## Resumen
 
-`tahamajs/qwen-2.5-0.5b-cross-attention-wikitext2` es un experimento de investigacion publicado en Hugging Face por el usuario tahamajs. Consiste en una cirugia arquitectonica sobre el modelo base Qwen2.5-0.5B, en la que se sustituye el mecanismo de atencion original por una atencion denominada `cross_attention` procedente de un registro interno (`ATTENTION_REGISTRY`) del framework NeuralOps. El resultado se destila posteriormente sobre el dataset WikiText-2 para recuperar la coherencia del modelo tras la modificacion.
+`tahamajs/qwen-2.5-0.5b-cross-attention-wikitext2` es un checkpoint experimental publicado por el autor independiente `tahamajs` dentro de su proyecto NeuralOps "Attention Surgery Zoo". Se trata de un derivado de `Qwen/Qwen2.5-0.5B` (494 M parametros, 24 capas, dimension oculta 896) en el que se han sustituido quirurgicamente 18 de las 24 capas de atencion del decoder por el operador `CrossAttention` de la libreria NeuralOps, siguiendo un esquema hibrido 3:1, y posteriormente se ha destilado el resultado sobre WikiText-2.
 
-El modelo no es un lanzamiento de produccion ni una version oficial de Qwen: es una prueba tecnica de concepto que demuestra que es posible trasplantar mecanismos de atencion alternativos en un transformer preentrenado y recuperar la perplejidad mediante knowledge distillation. El dato mas llamativo es la evolucion de la perplejidad causal: pasa de 813.457,09 antes de la destilacion a 97,96 despues, con un tiempo de destilacion de 180 segundos sobre una NVIDIA RTX 3090.
+El modelo no pretende ser un asistente generalista ni competir con Qwen2.5-0.5B original: es un artefacto de investigacion que demuestra si es posible reemplazar la atencion softmax GQA por un operador de atencion alternativo en un LLM causal compacto y recuperar la funcionalidad mediante destilacion de representaciones ocultas en dos etapas. El resultado reportado es una perplejidad de 97,96 en la particion de validacion de WikiText-2, frente a 15,38 del modelo profesor original, lo que indica que la cirugia degrada sustancialmente la calidad incluso tras la destilacion.
 
-Por su naturaleza experimental, la model card es extremadamente escueta: no se declaran licencia, idiomas, pipeline ni detalles de entrenamiento mas alla del patron de cirugia `hybrid_3_1` y el dataset utilizado. El repositorio ocupa 0,4 GB y no registra descargas ni likes en el momento de la consulta.
+Su relevancia es metodologica: documenta de forma transparente el protocolo de "attention surgery", la telemetria de destilacion y los artefactos empaquetados (pesos FP16 de 1021,34 MB mas un adaptador), lo que lo convierte en una referencia util para quienes investigan sustitucion de operadores de atencion, atencion subcuadratica o destilacion de representaciones en modelos pequenos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer derivado de Qwen2.5-0.5B con atencion `cross_attention` trasplantada (patron `hybrid_3_1`) |
-| Parametros totales | 0,5 mil millones (heredados del modelo base Qwen2.5-0.5B) |
+| Arquitectura | Transformer decoder (Qwen2) con atencion hibrida: 18/24 capas con operador `CrossAttention` (NeuralOps, familia `modern`) y 6/24 capas con GQA softmax nativa de Qwen2 |
+| Parametros totales | 494 M (heredados del modelo base Qwen2.5-0.5B) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | no disponible (repo de 0,4 GB, compatible con safetensors por herencia del base, sin confirmar) |
+| Longitud de contexto | no disponible (el modelo base Qwen2.5-0.5B soporta hasta 32 768 tokens; la evaluacion se realizo a longitud de secuencia 512) |
+| Tipos de cuantizacion | no disponible (los pesos se publican en FP16 completo, 1021,34 MB, mas un adaptador) |
+| Idiomas soportados | ingles (segun la model card; el resto no disponible) |
+| Licencia | MIT |
+| Formato de pesos | FP16 completo (1021,34 MB) mas adaptador; serializacion determinista de pesos |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen2.5-0.5B, un transformer decoder-only de 0,5 mil millones de parametros, y aplica una cirugia arquitectonica consistente en reemplazar el mecanismo de atencion por una implementacion `cross_attention` registrada en el `ATTENTION_REGISTRY` del framework NeuralOps. El patron de sustitucion se denomina `hybrid_3_1`, lo que sugiere una combinacion de capas con atencion original y capas con la atencion trasplantada en una proporcion 3:1, aunque la model card no detalla la distribucion exacta ni el funcionamiento interno de la atencion cruzada.
+El modelo parte de `Qwen/Qwen2.5-0.5B`: 24 capas de decoder, dimension oculta D=896, 14 cabezas de query, 2 cabezas KV (GQA), dimension por cabeza 64 y RoPE con theta = 1 000 000. Sobre esa base se aplica una "cirugia" determinista con ratio `hybrid_3_1`: las capas con indices [0, 1, 2, 4, 5, 6, 8, 9, 10, 12, 13, 14, 16, 17, 18, 20, 21, 22] usan el operador `CrossAttention` envuelto en `QwenAttentionAdapter`, mientras que las capas [3, 7, 11, 15, 19, 23] conservan la atencion GQA softmax preentrenada como anclas de enrutamiento contextual global. Cada capa transplantada hereda los tensores `q_proj`, `k_proj`, `v_proj` y `o_proj` del profesor, con expansion de cabezas KV de 2 a 14 y una unica `o_proj` para evitar proyecciones de salida duplicadas. El operador `CrossAttention` es una atencion multi-cabeza con LoRA que, con `context=None`, actua como self-attention causal y, con `context` externo, como cross-attention; incluye despacho de kernel en tres niveles (CUDA / Triton / PyTorch) y soporte de GQA y RoPE gestionado por el adaptador.
 
-Tras la cirugia, el modelo queda severamente degradado: la perplejidad causal pre-destilacion alcanza 813.457,09, lo que indica que la sustitucion rompe el comportamiento aprendido. Para recuperarlo se aplica knowledge distillation sobre WikiText-2 (`wikitext-2-raw-v1`), un corpus de Wikipedia en ingles de aproximadamente 2 millones de tokens, durante 180 segundos en una RTX 3090. La destilacion reduce la perplejidad a 97,96, una mejora de 813.359,13 puntos. No se especifican hiperparametros, funcion de perdida, numero de pasos ni si se uso el modelo original como profesor.
+El entrenamiento consiste en una destilacion de conocimiento de representaciones ocultas en dos etapas sobre WikiText-2 (`Salesforce/wikitext`, `wikitext-2-raw-v1`), ejecutada en una unica NVIDIA RTX 3090 de 24 GB con 0 MB de VRAM de profesor gracias a la arquitectura de cacheado offline de representaciones de NeuralOps. La etapa 1 (30 % del presupuesto, 130 pasos) congela el backbone y entrena solo modulos de atencion y layer norms, con pesos maestros FP32, AMP FP16 con GradScaler, AdamW (lr = 2,0e-4, weight decay 0,01, gradient clipping 1,0) y una perdida por capa de MSE + 0,25 * (1 - coseno). La etapa 2 (70 % del presupuesto, 296 pasos) realiza destilacion end-to-end de representaciones con la perdida MSE + 0,50 * (1 - coseno) y lr = 6e-5 (el dato queda truncado en la informacion disponible). No se documenta uso de RLHF ni DPO.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva basica, heredada del modelo base Qwen2.5-0.5B, aunque condicionada por la cirugia de atencion y la destilacion sobre WikiText-2.
-- Modelado de lenguaje y calculo de perplejidad sobre texto tipo Wikipedia en ingles (dominio del dataset de destilacion).
-- No se declara soporte de tool calling, function calling ni agentes.
-- No se declara soporte multilingue explicito; el unico idioma con evidencia empirica es el ingles de WikiText-2.
-- No se declaran capacidades de vision, audio, thinking mode ni razonamiento multi-paso.
-- Capacidad experimental para investigacion de mecanismos de atencion alternativos y tecnicas de recuperacion mediante destilacion.
+- Generacion de texto causal autoregresiva en ingles, heredada del modelo base Qwen2.5-0.5B.
+- Modelado de lenguaje y calculo de perplejidad sobre corpus tipo WikiText-2.
+- Soporte de atencion causal con GQA y RoPE a traves del adaptador.
+- Cross-attention opcional: el operador admite un `context` externo para K/V, ademas del modo self-attention.
+- Capacidad de servir como banco de pruebas para sustitucion de operadores de atencion y destilacion de representaciones.
+- No se documentan capacidades de tool calling, function calling, razonamiento multi-paso, agentes, vision, audio ni modo "thinking"; no disponibles.
+- Capacidades multilingues: solo se declara ingles; no disponible el resto.
 
 ## Casos de uso
 
-- Investigacion sobre trasplante de mecanismos de atencion: el modelo sirve como referencia reproducible de como sustituir la atencion de un transformer preentrenado y medir el impacto en perplejidad antes y despues de la destilacion.
-- Estudio de knowledge distillation como tecnica de reparacion: permite analizar cuanto puede recuperarse un modelo danado arquitectonicamente con solo 180 segundos de destilacion sobre un corpus pequeno.
-- Benchmark de frameworks de cirugia de modelos: util para validar el `ATTENTION_REGISTRY` y el patron `hybrid_3_1` de NeuralOps frente a otras configuraciones.
-- Experimentos academicos de perplejidad en dominio WikiText-2: el valor post-destilacion de 97,96 puede usarse como linea base para comparar variantes de atencion cruzada.
-- Prototipado educativo: sirve para demostrar en clase o laboratorio el efecto de una modificacion arquitectonica agresiva en un modelo pequeno que cabe en una sola GPU consumer.
-- Pruebas de pipelines de evaluacion de modelos: al ser un modelo de 0,5B con pesos ligeros (0,4 GB), es adecuado para validar herramientas de evaluacion automatica sin consumir recursos significativos.
+- Investigacion en sustitucion de atencion: sirve como referencia reproducible para medir el impacto de reemplazar atencion softmax GQA por un operador alternativo en un decoder pequeno, con telemetria completa de perplejidad antes y despues de la destilacion.
+- Experimentos de destilacion de representaciones: el protocolo en dos etapas (alineamiento de subespacio con backbone congelado y destilacion end-to-end) puede replicarse sobre otros modelos y corpus para comparar estrategias.
+- Benchmarking de operadores en la libreria NeuralOps: permite validar el despacho de kernel CUDA / Triton / PyTorch y el adaptador `QwenAttentionAdapter` en un caso real de 24 capas.
+- Docencia y divulgacion tecnica: ilustra de forma cuantitativa el coste de una cirugia de atencion (perplejidad de 813 457,09 en zero-shot tras el transplante) y el grado de recuperacion que aporta la destilacion (97,96 final).
+- Pruebas de infraestructura de entrenamiento con memoria limitada: el cacheado offline de representaciones permite destilar con 0 MB de VRAM de profesor en una RTX 3090 de 24 GB, util para laboratorios con hardware modesto.
+- Evaluacion de perplejidad sobre WikiText-2: el checkpoint puede usarse como baseline degradado en estudios de ablacion sobre arquitecturas hibridas 3:1.
+- No se recomienda su uso en produccion como generador de texto, atencion al cliente, generacion de codigo ni tareas de agentes, dado el deterioro de calidad frente al modelo base.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Valor |
-|---|---|
-| Perplejidad causal pre-destilacion | 813.457,09 |
-| Perplejidad causal post-destilacion | 97,96 |
-| Delta de perplejidad | -813.359,13 |
-| Tiempo de destilacion | 180,0 s en NVIDIA RTX 3090 |
-| Dataset de evaluacion | WikiText-2 (`wikitext-2-raw-v1`) |
+Resultados declarados por el autor en la model card (no verificados de forma independiente; `verified: false` en el model-index). Evaluados en la particion de validacion de WikiText-2 (`wikitext-2-raw-v1`) con longitud de secuencia 512, batch_size 8 y grad_accum 4, en una NVIDIA GeForce RTX 3090 de 24 GB.
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
+| Metrica | Valor | Notas |
+|---|---:|---|
+| Perplejidad del profesor (`Qwen/Qwen2.5-0.5B`) | 15,38 | Referencia GQA softmax causal exacta |
+| Perplejidad del estudiante zero-shot pre-destilacion | 813 457,09 | Inmediatamente tras el transplante de 18/24 capas |
+| Perplejidad del estudiante post-destilacion | 97,96 | Tras destilacion de representaciones en dos etapas |
+| Delta absoluto de perplejidad | -813 359,13 | Cambio logrado mediante destilacion |
+| Reduccion relativa de perplejidad | 99,99 % | Recuperacion porcentual respecto al pico post-cirugia |
+
+No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estandar en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16: aproximadamente 1 GB para los pesos (0,5B parametros), mas overhead de activaciones y cache KV; en la practica cabe holgadamente en cualquier GPU con 4 GB o mas.
-- VRAM estimada en cuantizacion de 8 bits: en torno a 0,5 GB de pesos; en 4 bits, alrededor de 0,25 GB (estimaciones teoricas, no verificadas en la model card).
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es suficiente; el autor realizo la destilacion en una RTX 3090.
-- Cabe en GPU consumer: si, practicamente en cualquier GPU dedicada de los ultimos anos e incluso en iGPU con suficiente memoria compartida.
-- Opciones de despliegue: no se especifican; al estar basado en Qwen2.5 es probable la compatibilidad con transformers, vLLM, llama.cpp u Ollama, pero la atencion `cross_attention` personalizada puede requerir codigo especifico del framework NeuralOps.
+- VRAM estimada para inferencia: los pesos FP16 ocupan aproximadamente 1021,34 MB (unos 1 GB), por lo que la inferencia cabe holgadamente en cualquier GPU consumer con 4 GB o mas; con cuantizacion a 8 bits o 4 bits (no publicada) quedaria por debajo de 1 GB.
+- GPU recomendadas: cualquier GPU con soporte CUDA; el autor uso una NVIDIA GeForce RTX 3090 de 24 GB para la destilacion, pero la inferencia no requiere ese nivel. A100, H100 o RTX 4090 son sobredimensionadas para este tamano.
+- Cabe en GPU consumer: si, en GTX 1650, RTX 3060, RTX 4060, RTX 4090 y similares.
+- Opciones de despliegue: la libreria declarada es `neuralops`, por lo que la carga depende de esa libreria y de su `QwenAttentionAdapter`; no se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI. Dado que los pesos son FP16 y no hay GGUF publicado, el despliegue en llama.cpp u Ollama requeriria conversion previa.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Estado |
-|---|---|---|---|---|
-| tahamajs/qwen-2.5-0.5b-cross-attention-wikitext2 | 0,5B | no disponible | no disponible | Experimental, 0 descargas |
-| Qwen2.5-0.5B (oficial) | 0,5B | 32.768 tokens (segun documentacion oficial de Qwen) | Apache 2.0 (segun documentacion oficial de Qwen) | Produccion, ampliamente usado |
-| SmolLM2-360M (Hugging Face) | 0,36B | 8.192 tokens (segun documentacion oficial) | Apache 2.0 (segun documentacion oficial) | Produccion |
-| Qwen2.5-1.5B (oficial) | 1,5B | 32.768 tokens (segun documentacion oficial de Qwen) | Apache 2.0 (segun documentacion oficial) | Produccion |
+| Modelo | Parametros | Contexto | Perplejidad WikiText-2 (val) | Licencia | Disponibilidad |
+|---|---:|---|---:|---|---|
+| `tahamajs/qwen-2.5-0.5b-cross-attention-wikitext2` | 494 M | no disponible (evaluado a 512) | 97,96 (post-destilacion) | MIT | Hugging Face, libreria `neuralops` |
+| `Qwen/Qwen2.5-0.5B` (profesor) | 494 M | hasta 32 768 tokens | 15,38 | Apache 2.0 (modelo base Qwen2.5) | Hugging Face, amplio ecosistema |
+| `Qwen/Qwen2.5-1.5B` | 1,5 B | hasta 32 768 tokens | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| `meta-llama/Llama-3.2-1B` | 1,2 B | 128 000 tokens | no disponible en esta ficha | Llama 3.2 Community License | Hugging Face |
 
-La comparativa se limita al modelo base y a alternativas de tamano similar; los datos de los modelos oficiales provienen de su documentacion publica, no de la model card analizada.
+La comparativa relevante es contra el propio modelo base: el checkpoint derivado multiplica por 6,4 la perplejidad del profesor (97,96 frente a 15,38) a cambio de una topologia de atencion hibrida experimental. Frente a alternativas de tamano similar del ecosistema (Qwen2.5-1.5B, Llama-3.2-1B), carece de datos publicados de benchmarks estandar y de soporte en herramientas de inferencia ampliamente adoptadas.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental sin validacion en tareas reales: la unica metrica publicada es la perplejidad en WikiText-2.
-- Perplejidad post-destilacion de 97,96, muy superior a la de un modelo de 0,5B bien entrenado en ingles (tipicamente por debajo de 20 en WikiText-2), lo que sugiere calidad de generacion limitada.
-- La atencion `cross_attention` sustituye a la original, por lo que el comportamiento puede diferir del Qwen2.5-0.5B estandar y romper compatibilidad con herramientas que asumen la arquitectura Qwen2 original.
-- Entrenado o destilado unicamente sobre WikiText-2, un corpus de Wikipedia en ingles; se desconoce el comportamiento en otros dominios o idiomas.
-- Licencia no declarada: no se puede asumir uso comercial permitido; hay que contactar con el autor o verificar la licencia del modelo base.
-- Riesgo de alucinacion y degradacion en conversaciones multi-turno no evaluado.
-- Sin descargas ni likes: no hay evidencia de uso comunitario ni de reportes de calidad.
-- No se especifican limitaciones de sesgo; al derivar de Qwen2.5 y WikiText-2, hereda los sesgos de ambos, pero no han sido auditados en esta variante.
+- Calidad degradada de forma sustancial: la perplejidad post-destilacion (97,96) sigue siendo 6,4 veces la del modelo base (15,38); no es apto como sustituto funcional de Qwen2.5-0.5B en produccion.
+- Riesgo elevado de alucinacion y de texto incoherente, derivado de la sustitucion de 18 de 24 capas de atencion y de una destilacion limitada (426 pasos en total sobre WikiText-2).
+- Entrenado y evaluado unicamente sobre WikiText-2 en ingles; el dominio y los idiomas cubiertos son muy estrechos. No hay datos sobre comportamiento multilingue.
+- La model card declara licencia MIT, mientras que el modelo base Qwen2.5-0.5B se distribuye bajo Apache 2.0; conviene revisar las condiciones de ambos antes de un uso comercial.
+- Dependencia de la libreria `neuralops` y de su `QwenAttentionAdapter` para cargar el checkpoint; no hay pesos en GGUF ni integracion documentada con vLLM, llama.cpp, Ollama o TGI, lo que limita el despliegue estandar.
+- Los resultados de benchmarks son declarados por el autor y estan marcados como no verificados (`verified: false`); no hay validacion independiente.
+- El autor no documenta sesgos especificos, pero al heredar el preentrenamiento de Qwen2.5-0.5B y anadir una destilacion sobre WikiText-2, los sesgos del corpus original y del dataset de destilacion pueden persistir o amplificarse.
+- No se documentan evaluaciones de seguridad, robustez ni comportamiento en conversacion multi-turno.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/tahamajs/qwen-2.5-0.5b-cross-attention-wikitext2
-- Modelo base Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
+- Repositorio NeuralOps: https://github.com/tahamajs/NeuralOps
+- Implementacion del operador `CrossAttention`: https://github.com/tahamajs/NeuralOps/blob/main/neuralops/layers/modern/cross_attention.py
+- Licencia del proyecto NeuralOps: https://github.com/tahamajs/NeuralOps/blob/main/LICENSE
 - Dataset WikiText-2: https://huggingface.co/datasets/Salesforce/wikitext
-- Repositorio oficial de Qwen2.5: https://github.com/QwenLM/Qwen2.5
-- No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la informacion disponible.

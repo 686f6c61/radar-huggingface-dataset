@@ -2,103 +2,105 @@
 
 ## Resumen
 
-`environmental-engineering-ai999x` es un motor de resolución de problemas de ingeniería ambiental desarrollado por AI999X (autor: Ibnul Jaif Farabi) y publicado bajo licencia Apache-2.0. No es un modelo de lenguaje generativo en el sentido habitual: se presenta como un sistema neuro-simbólico determinista que interpreta preguntas en inglés mediante reglas y resuelve problemas con 99 procedimientos simbólicos certificados, devolviendo el resultado junto con pasos, unidades, LaTeX y supuestos, o bien una negativa explícita cuando no puede verificar la respuesta.
+`environmental-engineering-ai999x` es un motor de cálculo determinista empaquetado como modelo de Hugging Face por el autor AI999X. No es un modelo de lenguaje neuronal: es un solver compilado (Rust, con build en Python puro para plataformas no x86-64) que resuelve 132 cálculos de ingeniería ambiental repartidos en 14 temáticas, devolviendo para cada uno la fórmula, los pasos intermedios, las unidades y una explicación en lenguaje natural cuando falta un dato o está fuera de rango.
 
-El paquete contiene 4.715.520 parámetros declarados en safetensors y se distribuye también como wheel de Python (`environmental_engineering_ai999x` 1.0.0), con pesos en formato ONNX y safetensors. Su propuesta central es la ausencia de alucinación por diseño: siete estados de salida explícitos (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR) sustituyen a la generación libre de texto. La model card declara 613 respuestas documentadas reproducidas de forma idéntica en Windows y Linux con Python 3.10 a 3.14.
+El paquete se distribuye en cuatro formatos: aplicación de escritorio para Windows y Linux, interfaz de línea de comandos (`environmental-engineering`), versión web y biblioteca de Python instalable vía `pip install environmental-engineering-ai999x`. Todo el cálculo se ejecuta localmente, sin conexión a red, lo que el autor presenta como garantía de "cero alucinación": al ser un motor determinista, la misma entrada produce siempre la misma salida.
 
-Es relevante para docentes, estudiantes y desarrolladores de herramientas educativas que necesitan respuestas trazables y verificables en dominios técnicos concretos (dispersión atmosférica, calidad del agua, tratamiento de aguas residuales, transferencia de gases, ruido y residuos sólidos) sin depender de GPU, red ni claves de API. El modelo está marcado con `inference: false` en su model card y su pipeline no está disponible en Hugging Face, por lo que su uso previsto es la librería Python y las aplicaciones de escritorio/CLI del autor.
+Es relevante para docencia, verificación de cálculos de diseño y como referencia offline en entornos de planta o campo donde no hay conectividad. El repositorio declara 4.715.520 parámetros en safetensors, cifra que corresponde al empaquetado de pesos y tablas del motor, no a una red neuronal entrenada. La licencia es Apache 2.0 y el único idioma declarado es inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Motor neuro-simbólico determinista (lectura basada en reglas + 99 capacidades simbólicas certificadas); no es un transformer generativo |
-| Parametros totales | 4.715.520 |
+| Arquitectura | Motor de cálculo determinista compilado (Rust) con build en Python puro; no es una red neuronal transformer |
+| Parametros totales | 4.715.520 (safetensors) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (interfaz de preguntas documentadas y llamadas tipadas, no ventana de contexto) |
-| Tipos de cuantizacion | no disponible |
+| Longitud de contexto | no disponible (no aplica; no procesa texto libre) |
+| Tipos de cuantizacion | no disponible (no aplica; no hay pesos cuantizables) |
 | Idiomas soportados | en |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors, ONNX |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (empaquetado del motor); binarios de escritorio Windows/Linux; wheel de Python |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura combina un componente de lectura de preguntas en inglés basado en reglas con un conjunto de 99 procedimientos simbólicos certificados que cubren dispersión de contaminantes atmosféricos (modelo gaussiano de penacho, elevación de penacho de Briggs), calidad del agua y modelo de oxígeno disuelto de Streeter-Phelps, diseño de fangos activados, tratamiento de aguas y residuales, transferencia de gases, ruido y residuos sólidos. Cada resultado se verifica antes de devolverse mediante sustitución inversa, comprobación dimensional o comparación con un cálculo independiente.
+No hay entrenamiento en el sentido habitual. El modelo es un solver determinista que implementa 132 cálculos de ingeniería ambiental agrupados en 14 temas: dispersión gaussiana de penacho y elevación de penacho (Briggs), BOD y curva de oxígeno de Streeter-Phelps, diseño de tratamiento de agua y aguas residuales, fangos activados (modelo Lawrence-McCarty en mezcla completa), desinfección por CT, ley de Henry y arrastre con aire en torre empaquetada, ruido (suma de niveles en decibelios) y residuos sólidos (reducción de sólidos volátiles por Van Kleeck, proyección logística de población, entre otros).
 
-El paquete se apoya en `sympy` y `mpmath` como dependencias simbólicas y numéricas, y se ejecuta exclusivamente en CPU, sin GPU, sin red y sin clave de API. No se han publicado en la información disponible datos sobre el corpus de entrenamiento, el número de tokens, la composición del dataset ni si hubo RLHF o DPO; dado que el sistema es determinista y simbólico, el término "entrenamiento" no aplica en el sentido convencional. La innovación técnica destacable es el contrato de siete salidas explícitas y la política de rechazo ante incertidumbre, junto con la reproducibilidad exacta entre plataformas (Windows con Python 3.13 y Linux x86-64) declarada por el autor.
+Cada cálculo devuelve fórmula, pasos y unidades, y cuando una entrada falta o queda fuera de rango devuelve una razón en lenguaje natural en lugar de un número. El motor es el mismo en las cuatro interfaces (escritorio, CLI, web y Python), de modo que la respuesta es idéntica en todas las plataformas soportadas. La distribución incluye binarios precompilados para Windows y Linux x86-64 y una build en Python puro para macOS y ARM que, según el autor, produce las mismas respuestas.
 
 ## Capacidades
 
-- Resolución de problemas de ingeniería ambiental con pasos intermedios, fórmulas en LaTeX, unidades y supuestos declarados.
-- Interfaz en lenguaje natural acotada: `ask()` reconoce formas de pregunta documentadas.
-- Interfaz tipada garantizada: `solve(capability_id, **inputs)` resuelve siempre una tarea soportada con entradas válidas.
-- Verificación interna de resultados (sustitución inversa, comprobación dimensional, cálculo independiente).
-- Rechazo explícito ante entradas ambiguas, incompletas, inválidas o fuera de alcance, en lugar de generar una respuesta plausible.
-- Cobertura declarada: dispersión de contaminación atmosférica, calidad del agua, tratamiento de agua y aguas residuales, transferencia de gases, ruido y residuos sólidos.
-- Generación de salida lista para cuadernos, aplicaciones de tutoría y correctores de ejercicios (pasos, LaTeX, unidades).
-- Ejecución offline en CPU, sin GPU, sin red y sin clave de API.
-- No se declara soporte de tool calling, agentes, razonamiento multi-paso abierto, visión, audio ni modo thinking.
+- Resolución paso a paso de 132 cálculos de ingeniería ambiental en 14 temáticas, con fórmula, sustitución, unidades y resultado.
+- Dispersión atmosférica: modelo gaussiano de penacho y elevación de penacho de Briggs (atmósfera neutra o inestable), con altura efectiva de chimenea.
+- Calidad de agua: curva de déficit de oxígeno y oxígeno disuelto de Streeter-Phelps en función del tiempo de viaje, DBO.
+- Tratamiento de aguas residuales: fangos activados en mezcla completa según Lawrence-McCarty (sustrato y biomasa efluentes), reducción de sólidos volátiles en digestión (Van Kleeck).
+- Desinfección: cálculo de CT (concentración por tiempo de contacto).
+- Transferencia gas-líquido: ley de Henry y arrastre con aire en torre empaquetada (factor de arrastre, unidades de transferencia y altura).
+- Ruido: suma de niveles sonoros en decibelios.
+- Residuos sólidos y planificación: proyección de población por método logístico a partir de tres censos.
+- Modo docente: explicación del razonamiento cuando falta una entrada o está fuera de rango, en lugar de un resultado numérico.
+- Ejecución 100 % offline, sin llamadas a servicios externos.
+- Cuatro interfaces: aplicación de escritorio (Windows, Linux), CLI, navegador y API de Python.
 
 ## Casos de uso
 
-- Tutoría de ingeniería ambiental: un estudiante plantea un problema de oxígeno disuelto con Streeter-Phelps y el motor devuelve el déficit, la concentración de oxígeno, los pasos y las unidades, lo que permite revisar el procedimiento en lugar de solo el resultado.
-- Corrección automática de ejercicios: un corrector compara la respuesta del alumno con la salida determinista del motor para una misma entrada, eliminando la variabilidad de un LLM generativo en la evaluación.
-- Cálculo de dispersión atmosférica en evaluación preliminar: con `enveng_gaussian_plume_concentration` o `enveng_briggs_plume_rise` se obtienen concentraciones y elevaciones de penacho reproducibles para informes docentes o de screening.
-- Diseño preliminar de fangos activados: el ejemplo de mezcla completa con SRT, HRT, Y, k, Ks y kd devuelve la concentración de sustrato efluente y los parámetros de diseño asociados, útil en asignaturas de tratamiento de aguas.
-- Herramienta de escritorio o CLI para profesionales en campo sin conectividad: al ejecutarse offline en CPU, puede desplegarse en portátiles o equipos de borde sin GPU ni acceso a internet.
-- Integración en pipelines educativos y notebooks: la API `solve(capability_id, **inputs)` permite generar conjuntos de problemas y soluciones verificadas de forma programática para plataformas de e-learning.
-- Verificación cruzada en revisión de cálculos: dado un resultado introducido manualmente, el motor recalcula y señala discrepancias, actuando como comprobador dimensional y numérico.
+- Docencia de ingeniería ambiental: el alumnado introduce los datos de un problema de dispersión gaussiana o de Streeter-Phelps y obtiene la fórmula, los pasos y las unidades, lo que permite corregir el procedimiento y no solo el resultado final.
+- Verificación de cálculos de diseño en planta: un ingeniero comprueba a mano un cálculo de fangos activados (Lawrence-McCarty) o de reducción de sólidos volátiles antes de firmar una memoria, con la ventaja de que el motor es determinista y repetible.
+- Trabajo de campo sin conectividad: al ejecutarse íntegramente offline en escritorio o CLI, es utilizable en una planta de tratamiento o en una estación de muestreo sin acceso a red.
+- Automatización de hojas de cálculo en Python: la instalación vía `pip` permite invocar los cálculos desde scripts y pipelines de validación, por ejemplo para generar tablas de resultados a partir de parámetros de entrada en lote.
+- Formación interna y apoyo a oposiciones: el modo de explicación paso a paso sirve como material de autoestudio para temarios de tratamiento de agua, residuos y contaminación atmosférica.
+- Prevención de errores de unidades: al devolver las unidades junto a cada paso, ayuda a detectar incoherencias dimensionales en cálculos de arrastre con aire o de desinfección CT antes de que lleguen a un informe.
+- Referencia rápida en evaluación ambiental: consulta puntual de la altura efectiva de chimenea por Briggs o de la suma de niveles de ruido en decibelios durante una revisión preliminar.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en el model-index (no verificados de forma independiente; el campo `verified` es `false`):
+Los datos proceden del `model-index` declarado por el autor y no están verificados de forma independiente.
 
-| Tarea | Dataset | Métrica | Valor |
+| Tarea | Conjunto de evaluación | Métrica | Valor |
 |---|---|---|---|
-| Question answering (ingeniería ambiental) | Golden answers (613 preguntas documentadas, Windows + Linux, Python 3.10-3.14) | Accuracy ("identical on every platform") | 1.0 |
+| Question answering de ingeniería ambiental | Golden answers (927 preguntas documentadas, Windows + Linux, Python 3.10-3.14) | Accuracy ("idéntica en todas las plataformas") | 1,0 (no verificado) |
 
-No se han publicado en la información disponible resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) ni comparaciones con modelos de lenguaje de propósito general.
+No se han publicado en la información disponible resultados frente a MMLU, HumanEval, GSM8K ni otros benchmarks estándar de modelos de lenguaje, lo cual es coherente con la naturaleza del artefacto: no es un modelo generativo de texto libre.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: 0 GB; el motor se ejecuta exclusivamente en CPU.
-- GPU recomendadas: ninguna; no requiere GPU.
-- Cabe en cualquier GPU consumer: sí, porque no la utiliza; el despliegue es en CPU.
-- Opciones de despliegue: paquete Python (`pip install environmental-engineering-ai999x`), wheel desde el repositorio de Hugging Face, aplicación de escritorio y CLI del autor, y ejecución en navegador según los enlaces de la model card. Formatos de pesos safetensors y ONNX disponibles para integración.
-- Latencia y throughput estimados: no disponible en la información proporcionada; el autor no publica cifras de latencia ni de throughput.
+- VRAM: no aplica. No hay inferencia neuronal; el motor es un binario compilado y no requiere GPU.
+- GPU recomendadas: ninguna. Funciona en CPU.
+- Compatibilidad con GPU de consumo: no aplica.
+- Plataformas: Windows y Linux x86-64 con binarios precompilados; macOS y ARM mediante build en Python puro.
+- Python: 3.10 o superior para la instalación vía `pip`.
+- Despliegue: aplicación de escritorio, CLI (`environmental-engineering`), navegador y biblioteca de Python. No se contemplan vLLM, llama.cpp, Ollama ni TGI, ya que no hay pesos de red neuronal que servir.
+- Latencia y throughput: no disponibles en la información proporcionada; al ser cálculo determinista local, la latencia depende del cálculo concreto y no de un proceso de decodificación.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parámetros | Contexto | Licencia | Enfoque |
+| Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| environmental-engineering-ai999x | Motor neuro-simbólico determinista | 4.715.520 | no disponible | Apache-2.0 | Dominio acotado, rechazo ante incertidumbre, offline en CPU |
-| LLM generativo de propósito general (p. ej. familia Llama, Mistral, Qwen) | Transformer decoder | Miles de millones | Decenas de miles de tokens | Variable (a menudo permisiva) | Cobertura amplia, riesgo de alucinación, requiere GPU |
-| Motores de álgebra simbólica (SymPy, Maxima) | Simbólico | no aplica | no aplica | BSD/GPL | Cálculo exacto sin interpretación de lenguaje natural |
-| Solvers de dominio específico (p. ej. paquetes de calidad del aire) | Numérico/simbólico | no aplica | no aplica | Variable | Precisión de dominio sin interfaz conversacional |
+| environmental-engineering-ai999x | Motor de cálculo determinista | 4.715.520 (empaquetado) | no aplica | Apache 2.0 | Hugging Face, escritorio, CLI, web, pip |
+| Modelos LLM de propósito general (p. ej. familia Llama, Qwen, Mistral) | Transformer generativo | Miles de millones | Decenas de miles de tokens | Variables | Hugging Face y múltiples proveedores |
+| Hojas de cálculo y software de cálculo de ingeniería (p. ej. EPA SWMM, EPANET) | Herramientas de simulación específicas | no aplica | no aplica | Variables | Distribución propia |
 
-La comparación directa con LLM generativos no es homogénea: este motor no compite en cobertura ni en generación libre, sino en trazabilidad, determinismo y coste de despliegue dentro de un dominio restringido. No se dispone de comparaciones publicadas por el autor frente a estas alternativas.
+La comparación con LLM de propósito general no es directa: un LLM puede redactar la explicación de un cálculo pero no garantiza el resultado numérico, mientras que este motor garantiza el resultado pero no cubre texto libre ni razonamiento abierto. Frente a software de simulación como SWMM o EPANET, el alcance es más limitado (132 cálculos puntuales, no simulación dinámica de redes), pero la interfaz es más simple y unificada.
 
 ## Limitaciones y advertencias
 
-- Cobertura restringida a 99 capacidades certificadas y a formas de pregunta documentadas; fuera de ese alcance devuelve OUT_OF_SCOPE o UNRECOGNIZED_FORMAT.
-- Solo idioma inglés (`language: en`); no se declara soporte de castellano ni de otros idiomas.
-- No es un modelo generativo: no redacta explicaciones libres, no mantiene conversaciones multi-turno y no admite contexto largo.
-- La métrica de accuracy 1.0 procede de un conjunto de 613 preguntas documentadas del propio autor y está marcada como no verificada; no es una evaluación independiente ni representa el rendimiento en preguntas nuevas.
-- El model card indica `inference: false` y el pipeline no está disponible en Hugging Face; el uso previsto es la librería Python y las aplicaciones del autor, no la inferencia estándar de Hugging Face.
-- Riesgo de alucinación declarado como nulo por diseño, pero la garantía depende de la corrección de los 99 procedimientos simbólicos y de la verificación interna; no se han publicado auditorías externas.
-- Sesgos conocidos: no disponible en la información proporcionada.
-- Licencia Apache-2.0 permite uso comercial con atribución y conservación del aviso de licencia; conviene revisar el archivo LICENSE del repositorio.
-- Para producción: el proyecto tiene 0 descargas y 0 likes en el momento de la consulta, versión 1.0.0 y un único mantenedor; el riesgo de mantenimiento y de soporte a largo plazo es alto.
-- El repositorio ocupa 0.0 GB según Hugging Face, lo que sugiere que los pesos pueden no estar alojados íntegramente en el repo; verificar la disponibilidad de los artefactos antes de integrar.
+- No es un modelo de lenguaje: no genera texto libre, no mantiene conversaciones abiertas ni responde preguntas fuera de los 132 cálculos implementados.
+- Cobertura cerrada: solo cubre las 14 temáticas y 132 cálculos documentados; cualquier problema fuera de ese catálogo no obtiene respuesta.
+- Idioma: únicamente inglés declarado; no hay soporte documentado de castellano.
+- El resultado de accuracy 1,0 del `model-index` está marcado como no verificado y procede del propio autor; conviene tratarlo como una comprobación de reproducibilidad entre plataformas, no como una evaluación independiente frente a un conjunto de referencia externo.
+- Riesgo de error de entrada: al ser determinista, un dato mal introducido produce un resultado coherente pero incorrecto; la validación de rangos mitiga pero no elimina este riesgo.
+- No sustituye la revisión de un ingeniero titulado ni la normativa aplicable en cada jurisdicción; los cálculos son de referencia y deben contrastarse con la reglamentación local.
+- Licencia Apache 2.0: permite uso comercial y modificación con atribución, pero no hay garantía explícita de idoneidad para producción en la información disponible.
+- El tamaño del repositorio es de 0,0 GB según los metadatos, lo que sugiere que los binarios se distribuyen fuera del repo (GitHub Releases), no como pesos en Hugging Face.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/AI999X/environmental-engineering-ai999x
-- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
-- Aplicación de escritorio y CLI: https://www.ai999x.com/desktop-cli/
-- Ejecución en navegador: https://www.ai999x.com/models/environmental-engineering-ai999x/#try
-- Paquete en PyPI: https://pypi.org/project/environmental-engineering-ai999x/
-- Guías (docs en el repositorio): https://huggingface.co/AI999X/environmental-engineering-ai999x/tree/main/docs
-- Evaluación: https://huggingface.co/AI999X/environmental-engineering-ai999x/tree/main/evaluation
-- Sitio web: https://ai999x.com
-- Apoyo al desarrollo: https://buymeacoffee.com/ibnuljaiffarabi
+- Página del modelo con demo en navegador: https://www.ai999x.com/models/environmental-engineering-ai999x/
+- Capacidades interactivas: https://www.ai999x.com/models/environmental-engineering-ai999x/#capabilities
+- Aplicación de escritorio Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-environmental-engineering-1.6.7-windows-x86_64.zip
+- Aplicación de escritorio Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-environmental-engineering-1.6.7-linux-x86_64.tar.gz
+- CLI Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-windows-x86_64.zip
+- CLI Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-linux-x86_64.tar.gz
+- Repositorio de escritorio: https://github.com/AI999X/ai999x-desktop
+- Clip de demostración (MP4): https://www.ai999x.com/?ax_shot=environmental-engineering-ai999x/clip.mp4
+- Instalación Python: `pip install environmental-engineering-ai999x`

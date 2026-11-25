@@ -2,120 +2,112 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-EXL3-3bpw-2x-RTX-PRO-6000 es una cuantización de 3 bits del modelo base DeepSeek-V4.1-Flash-1017, publicada por diffbot. Se trata de un empaquetado calibrado en formato EXL3 (ExLlamaV3) de los expertos enrutados de una arquitectura Mixture-of-Experts (MoE), pensado especificamente para servir el modelo en dos tarjetas RTX PRO 6000 Blackwell (sm_120, 96 GB cada una) mediante vLLM con tensor-parallel 2. El pack tambien funciona en nodos de 8 GPU como dos replicas de 4 GPU con todos los expertos en VRAM.
+DeepSeek-V4.1-Flash-EXL3-3bpw-2x-RTX-PRO-6000 es una cuantización comunitaria de DeepSeek-V4.1-Flash-1017, un modelo de lenguaje de arquitectura Mixture-of-Experts (MoE) desarrollado por DeepSeek. El autor de la cuantización es diffbot, que publica un empaquetado optimizado para servir el modelo completo, incluida su ventana de contexto de 1M de tokens, sobre dos GPU RTX PRO 6000 Blackwell (sm_120, 96 GB cada una) mediante vLLM con tensor-parallel 2.
 
-El modelo base pertenece a la familia DeepSeek-V4.1-Flash, una variante optimizada para latencia y velocidad de la saga DeepSeek. El repo pesa 1035,8 GB e incluye pesos safetensors, recetas de despliegue, kernels CUDA personalizados para sm_120 y utilidades de benchmark. Cuenta con 218.691.507.682 parametros totales segun los safetensors publicados.
+El modelo original cuenta con 218.691.507.682 parámetros totales (unos 218,7 B). La cuantización aplica EXL3 de 3 bits calibrado a los expertos enrutados, mientras que el resto de tensores conservan el formato FP8 original de DeepSeek. Un tercio de los expertos enrutados permanece en RAM del host (pinned), ejecutándose con kernels personalizados sm_120 o con un runtime opcional de CPU sobre un host AVX-512.
 
-La relevancia de esta ficha radica en que demuestra una via practica para desplegar un modelo MoE de gran tamano en hardware de consumo profesional (no datacenter de gama alta), sacrificando precision numerica (3 bits) a cambio de viabilidad en VRAM. Los autores reportan GSM8K-200 al 98,5% y HumanEval al 97,0%, con una divergencia KL media de 0,0522 nats respecto al checkpoint original, lo que indica una degradacion medible pero acotada.
+Su relevancia radica en que permite desplegar un modelo de escala frontera con contexto de 1M de tokens en hardware de dos estaciones de trabajo, manteniendo una fidelidad alta respecto al original (KL media de 0,011 nats en texto de codificación agéntica, GSM8K-200 del 98,5 % y HumanEval del 97,0 %). El repositorio ocupa 1035,8 GB, aunque el pack de pesos propiamente dicho son 332 GB.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE) transformer, formato EXL3 (ExLlamaV3) |
-| Parametros totales | 218.691.507.682 |
+| Arquitectura | Mixture-of-Experts (MoE), transformer; pesos base en FP8, expertos enrutados en EXL3 3-bit |
+| Parametros totales | 218.691.507.682 (~218,7 B) |
 | Parametros activos | no disponible |
-| Longitud de contexto | 1.000.000 tokens (ventana de 1M, KV cache de 1,07M tokens fp8 en perfil 2x) |
-| Tipos de cuantizacion | 3 bits (3bpw) en expertos enrutados, EXL3 calibrado; resto de capas segun receta del autor |
+| Longitud de contexto | 1M tokens (1.048.576); KV cache FP8 de 1,07M tokens en 2,81 GiB |
+| Tipos de cuantizacion | EXL3 3-bit (expertos enrutados, calibrado), FP8 (resto de tensores), int4 (tablas Engram); drafter con expertos EXL3 3-bit |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors (48 shards, ~332 GB de pack) |
+| Formato de pesos | safetensors (`model-00001` a `model-00048`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer Mixture-of-Experts de DeepSeek, del que esta publicacion solo redistribuye una version cuantizada. La innovacion principal de este pack es el uso de EXL3 3-bit calibrado sobre los expertos enrutados, aplicando el metodo de coolbho3k, con kernels CUDA propios para sm_120 (Blackwell): xmoe, xmoe_bulk, xmoe_do, xmoe_do_i8, fp8ar y rowtopk. Un tercio de los expertos enrutados reside en RAM del host (pinned memory) y se sirve mediante kernels personalizados o un runtime CPU opcional (CPU_EXPERTS=1), lo que permite reducir la huella en VRAM.
+El modelo base es DeepSeek-V4.1-Flash-1017, un transformer con mezcla de expertos (MoE) cuyos detalles de entrenamiento (número de tokens, composición del dataset, uso de RLHF o DPO) no se especifican en la información disponible. La model card de esta cuantización se centra en el proceso de compresión y servicio, no en el preentrenamiento del modelo original.
 
-El despliegue recomendado usa vLLM con tensor-parallel 2 sobre dos RTX PRO 6000 (96 GB), con una ventana de 1M tokens y KV cache en fp8 de 1,07M tokens. Existe tambien un perfil 8x (TP4 + EP4 por replica) que mantiene todos los expertos en VRAM y alcanza 4,54M tokens de KV cache y 128 secuencias concurrentes. Se incluye un cabezal drafter DSpark afinado para codigo a k=7 (decodificacion especulativa opcional). No se dispone de informacion sobre el dataset de entrenamiento del modelo base ni sobre si se aplico RLHF/DPO en esta publicacion.
+La innovación técnica principal de este pack es el esquema de cuantización: los expertos enrutados se comprimen a EXL3 de 3 bits con calibración propia (método de coolbho3k), mientras que el resto de tensores mantienen FP8. El servidor vLLM en tensor-parallel 2 mantiene un tercio de los expertos en RAM del host, ejecutables mediante kernels sm_120 personalizados (`xmoe`, `xmoe_bulk`, `xmoe_do`, `xmoe_do_i8`, `fp8ar`, `rowtopk`, `sparse_mla_epilogue`, `mxfp8_pingpong`) o un runtime de CPU AVX-512 (VNNI, VBMI, VBMI2). Incluye además decodificación especulativa con un drafter DSpark opcional ajustado a código (`DS41_DRAFTER=code`, `SPEC_K=7`). La ruta de prefill se mantiene bit-idéntica al original; solo un cambio en la ruta de decode (el runtime de CPU omite el enrutamiento de expertos para filas de borrador que va a rechazar) no es bit-exacto.
 
 ## Capacidades
 
-- Generacion de texto y codigo, con benchmarks reportados de HumanEval (97,0-97,6%) y GSM8K-200 (98,0-99,0%).
-- Razonamiento agentico multi-turno con llamadas a herramientas: el pack incluye un benchmark de replay agentico de 104 turnos con tool calls.
-- Soporte de tool calling, verificado mediante `bench/test-toolcall.py`.
-- Soporte de imagenes, verificado mediante `bench/test-image.py` (capacidad multimodal heredada del modelo base).
-- Ventana de contexto de 1M tokens, validada con `bench/needle-test.py` a 200.
-- Decodificacion especulativa opcional mediante el drafter DSpark afinado para codigo (k=7).
-- API compatible con OpenAI servida en el puerto 8000 bajo el nombre `deepseek-v4.1-flash`.
-- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Generación de texto y razonamiento de propósito general, con modo de pensamiento desactivable (los benchmarks se midieron con thinking off y decodificación greedy).
+- Codificación y uso de herramientas: el benchmark de referencia es una prueba de codificación agéntica multi-turno de 104 turnos con tool calls.
+- Soporte de tool calling / function calling, validado con `bench/test-toolcall.py`.
+- Capacidades agénticas multi-paso con definiciones de herramientas enviadas en cada petición.
+- Procesamiento de imágenes: el pack incluye `bench/test-image.py`, lo que indica soporte multimodal de entrada de imagen.
+- Contexto largo real: recuperación tipo needle a 1M tokens y tool call posterior funcional.
+- Decodificación especulativa opcional orientada a código y uso agéntico de herramientas.
 
 ## Casos de uso
 
-- Servicio de inferencia en hardware de gama profesional: el pack esta disenado para dos RTX PRO 6000 Blackwell de 96 GB, lo que permite servir un MoE de ~218.000 millones de parametros sin recurrir a nodos de 8 GPU de datacenter. Es adecuado porque el particionado TP2 y la colocacion parcial de expertos en RAM reducen el coste de infraestructura.
-- Replicas de alta concurrencia en nodos de 8 GPU: con el perfil 8x se obtienen dos replicas de 4 GPU que alcanzan 8.430 tokens/s agregados con 128 streams de codigo por replica, lo que lo hace util para plataformas de generacion de codigo a gran escala.
-- Asistentes de programacion en produccion: HumanEval al 97,0-97,6% con thinking desactivado y decodificacion greedy, junto con tool calling verificado, permite integrarlo en pipelines de CI/CD y entornos de IDE con llamadas a funciones.
-- Agentes autonomos multi-paso: el benchmark de replay agentico de 104 turnos con tool calls y la ventana de 1M tokens permiten gestionar sesiones largas de resolucion de tareas con contexto acumulado.
-- Analisis de documentos extensos: la ventana de 1M tokens y el KV cache fp8 de 1,07M tokens hacen posible procesar corpus largos (informes, expedientes, bases de codigo) sin truncamiento.
-- Atencion al cliente automatizada multi-turno: con 4 sesiones concurrentes a 110-146 tokens/s agregados, el modelo sostiene conversaciones con contexto largo y llamadas a herramientas de backoffice.
-- Extraccion de informacion multimodal: la verificacion de imagenes (`test-image.py`) sugiere uso en tareas que combinan texto e imagenes, como clasificacion de documentos escaneados o captura de datos de formularios.
-- Evaluacion y experimentacion en investigacion: la publicacion incluye metricas de fidelidad (KL media, top-1 agreement) y utilidades de benchmark que permiten reproducir comparaciones frente al checkpoint original.
+- Codificación agéntica multi-turno: el pack está optimizado para sesiones con tool calls repetidos; con el runtime de CPU alcanza 277-289 tokens/s de salida en una sesión y 154-159 tokens/s con cuatro sesiones concurrentes, adecuado para asistentes de IDE que iteran sobre un repositorio.
+- Análisis de repositorios completos: con 1M tokens de contexto puede ingerir bases de código extensas en una sola petición; un prompt de 1,04M tokens se prellena en 93 s (11.179 tokens/s) con el runtime de CPU.
+- Generación de código en producción: HumanEval del 97,0 % y 214,8-223,2 tokens/s de decodificación frente a un prompt de código de 46K tokens permiten integrarlo en pipelines de revisión y generación con latencia interactiva.
+- Automatización de operaciones con herramientas: el soporte de function calling y el modo agéntico permiten orquestar llamadas a APIs internas, consultas a bases de datos y ejecución de comandos en flujos multi-paso.
+- Procesamiento de documentos largos con imagen: la combinación de contexto de 1M tokens y entrada de imagen sirve para extraer y razonar sobre informes, planos o capturas junto a texto extenso.
+- Evaluación y experimentación en investigación: al ser una cuantización fiel (KL 0,011 nats en texto agéntico) con licencia MIT, es útil para reproducir resultados del modelo original en laboratorios con dos GPU de 96 GB en lugar de clústeres mayores.
+- Servicio de chat de contexto largo: la KV cache FP8 de 1,07M tokens ocupa solo 2,81 GiB, lo que permite mantener conversaciones muy largas sin agotar memoria.
 
 ## Benchmarks y rendimiento
 
-Metricas de calidad reportadas por el autor (thinking off, greedy decoding cuando aplica):
+Calidad (comparada con el checkpoint original 1017):
 
-| Metrica | Original 1017 (ruido) | Pack 2x default | Pack 2x CPU runtime | Pack 8x |
-|---|---:|---:|---:|---:|
-| KL media, texto neutro (nats) | 0,0082 | 0,0522 | 0,0520 | no disponible |
-| KL media, codigo (nats) | 0,0050 | 0,0306 | 0,0309 | no disponible |
-| KL media, agentico (nats) | 0,0047 | 0,0111 | 0,0110 | no disponible |
-| short100 | no disponible | 0,0338 | 0,0349 | no disponible |
-| GSM8K-200 | no disponible | 98,5% | 98,5% | 98,0-99,0% |
-| HumanEval | no disponible | 97,0% | 97,0-97,6% | 97,0-97,6% |
+| Metrica | Original 1017 (2ª ejecución) | Este pack, runtime CPU | Este pack, solo GPU |
+|---|---:|---:|---:|
+| KL, texto neutro (nats) | 0,0082 | 0,0520 | 0,0522 |
+| KL, código (nats) | 0,0050 | 0,0309 | 0,0306 |
+| KL, agéntico (nats) | 0,0047 | 0,0110 | 0,0111 |
+| KL, short100 (nats) | no disponible | 0,0349 | 0,0338 |
+| GSM8K-200 | no disponible | 98,5 % | 98,5 % |
+| HumanEval | no disponible | 97,0-97,6 % | 97,0 % |
 
-Rendimiento de inferencia (tokens/s de salida):
+Velocidad en 2× RTX PRO 6000:
 
-| Configuracion | Agentico, 1 stream | Codigo, 1 stream | Prefill 40K fresco | Bajo carga (agregado) |
-|---|---:|---:|---:|---:|
-| 2x default (GPU-only) | 224,1 | 172,8 (prompt 46K) | 11.157-11.467 | 110,4 (4 concurrentes); 362,9 (cuatro streams 46K) |
-| 2x CPU runtime | 271-281 | 193-223 (prompt 46K) | 13.442-14.389 | 136-146; 396-452 |
-| 8x por replica (TP4+EP4) | 205-222 (prompt 46K) | 435-457 | 19.131-19.302 | 4.404-4.469 (128 streams de codigo) |
-| 8x nodo completo | no disponible | 809 (un stream por replica) | no disponible | 8.430 (128 streams por replica); 5.250 en generaciones largas |
+| Configuracion | Codificación agéntica, 1 sesión | Código, 1 stream (prompt 46K) | Prefill fresco (40K tokens) | Agregado bajo carga | Contexto |
+|---|---:|---:|---:|---|---|
+| Runtime CPU (`CPU_EXPERTS=1`) | 277-289 t/s | 214,8-223,2 t/s | 14.333-15.244 t/s | 4 sesiones agénticas: 154-159; cuatro streams de 46K: 470,0-505,2 | Ventana 1M; KV FP8 de 1,07M tokens en 2,81 GiB |
+| Solo GPU (por defecto) | 224,1 t/s¹ | 172,8 t/s | 11.157-11.467 t/s | 4 sesiones agénticas: 110,4¹; cuatro streams de 46K: 362,9 | Ventana 1M; KV FP8 de 1,07M tokens |
 
-Mejora de la revision 2026-11-14 frente a la de 2026-10-25: 1,101 en una sesion, 1,111 en cuatro sesiones, puntuacion agentica 1,106 (media geometrica). El prefill fresco de 40K tokens paso de 11.625-12.332 a 13.633-14.260 tokens/s en la evaluacion de esta revision.
+¹ Medido con una versión anterior del cliente de replay que no enviaba las definiciones de herramientas.
 
 ## Requisitos de hardware
 
-- VRAM: dos GPU sm_120 de 96 GB (RTX PRO 6000 Blackwell) para el perfil 2x; un tercio de los expertos enrutados puede residir en RAM pinned del host. Para el perfil 8x se necesitan 8 GPU de 96 GB.
-- RAM del host: aproximadamente 260 GiB libres para el perfil 2x; hasta 400 GiB por replica en el nodo de 8 GPU.
-- Disco: unos 340 GB para el pack descargado (el repo completo pesa 1035,8 GB).
-- CPU del host (para runtime CPU opcional): x86_64 con AVX-512 (VNNI, VBMI, VBMI2) y muchos nucleos y canales de memoria.
-- Driver: CUDA 13 y Docker con NVIDIA container toolkit.
-- GPU recomendadas: RTX PRO 6000 Blackwell (sm_120) como plataforma objetivo; otras GPU no estan documentadas en la informacion disponible.
-- Cabe en GPU de consumo: no, segun los requisitos declarados (96 GB por tarjeta y dos tarjetas como minimo).
-- Despliegue: vLLM con tensor-parallel 2 (perfil 2x) o TP4+EP4 (perfil 8x), imagen Docker propia (`dsv41-flash-1017-exl3-3bpw-sm120`), kernels CUDA compilados en unos 5 minutos; API compatible con OpenAI en el puerto 8000.
-- Latencia y throughput: 224,1 tokens/s agentico en un stream (2x default), 271-281 con runtime CPU, 435-457 tokens/s en codigo por replica en 8x; prefill de 11.157-11.467 tokens/s (2x) y 19.131-19.302 tokens/s (8x).
+- Dos GPU sm_120 con 96 GB cada una (RTX PRO 6000 Blackwell), controlador CUDA 13, Docker con NVIDIA container toolkit.
+- Aproximadamente 260 GiB de RAM de host libre y 340 GB de disco para el despliegue.
+- El pack de pesos ocupa 332 GB; el repositorio completo, 1035,8 GB (incluye drafters opcionales de 5,8 GB y 7,9 GB).
+- El runtime de CPU requiere host x86_64 con AVX-512 (VNNI, VBMI, VBMI2), muchos núcleos y canales de memoria; es la opción más rápida para servir.
+- Despliegue mediante vLLM con tensor-parallel 2; la receta incluye `serve/serve.sh` con API compatible con OpenAI en el puerto 8000 (modelo `deepseek-v4.1-flash`).
+- También se puede servir un nodo de 8× RTX PRO 6000 como dos réplicas de 4 GPU con todos los expertos en VRAM (`docs/PROFILE-8x.md`).
+- No cabe en GPU de consumo; requiere hardware profesional de 96 GB por tarjeta.
+- En el pico de 1M tokens, cada tarjeta conserva unos 2,5 GB libres.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Hardware objetivo |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-EXL3-3bpw (este pack) | 218.691.507.682 | 1M | MIT | Hugging Face, safetensors | Cuantizacion 3 bits EXL3, 2.515 descargas, 47 likes |
-| DeepSeek-V4.1-Flash-1017 (base) | no disponible | no disponible | no disponible | Hugging Face (deepseek-ai) | Checkpoint original de referencia; sin cuantizar |
-| Revision 2026-10-25 del mismo pack | no disponible | 1M | MIT | Hugging Face | Runtime CPU ~10% mas lento en replay agentico |
-| Revision 2026-11-08 del mismo pack | no disponible | 1M | MIT | Hugging Face | ~4% mas lenta que la revision actual |
+| DeepSeek-V4.1-Flash-EXL3-3bpw-2x-RTX-PRO-6000 (este pack) | ~218,7 B | 1M | EXL3 3-bit + FP8 | MIT | 2× RTX PRO 6000 96 GB |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 (original) | ~218,7 B | 1M | FP8 | no disponible | no disponible |
+| drafter-code-fp8 (variante incluida) | no disponible | no disponible | FP8/FP4 | MIT | complemento del pack |
 
-No se dispone de datos de benchmarks de terceros ni de modelos alternativos de la misma categoria en la informacion proporcionada, por lo que la comparativa se limita a las revisiones del propio pack y al modelo base.
+No se dispone de datos de benchmarks de modelos alternativos de la misma categoría en la información proporcionada, por lo que la comparación cuantitativa de rendimiento queda como no disponible.
 
 ## Limitaciones y advertencias
 
-- Cuantizacion agresiva a 3 bits: la divergencia KL media frente al original es de 0,0522 nats en texto neutro y 0,0306 en codigo, lo que implica una degradacion medible de la distribucion de salida.
-- Dependencia de hardware especifico: los kernels estan compilados para sm_120 (Blackwell); no se documenta compatibilidad con otras arquitecturas GPU.
-- Requisitos de infraestructura elevados: dos GPU de 96 GB, ~260 GiB de RAM y 340 GB de disco como minimo; el repo completo ocupa 1035,8 GB.
-- Complejidad de despliegue: requiere compilar kernels, construir imagen Docker y, opcionalmente, validar el runtime CPU en el host antes de activarlo.
-- Rendimiento dependiente del perfil: el modo GPU-only coloca un tercio de los expertos en RAM del host, lo que puede introducir latencia adicional frente al perfil 8x con todos los expertos en VRAM.
-- Idiomas soportados no documentados: no hay informacion sobre cobertura multilingue en la model card.
-- Riesgo de alucinacion: inherente a los modelos generativos; no se reportan evaluaciones de factualidad en la informacion disponible.
-- Sesgos conocidos: no documentados en la informacion proporcionada.
-- Licencia MIT: permite uso comercial, pero el autor no ofrece garantias explicitas sobre el rendimiento en produccion ni sobre la fidelidad absoluta al modelo base.
-- Fechas de publicacion futuras (2026): conviene verificar la vigencia de las revisiones y de los enlaces antes de desplegar.
+- La cuantización introduce degradación medible: KL de 0,0520 nats en texto neutro frente a 0,0082 del original, es decir, aproximadamente seis veces la distancia del ruido de referencia.
+- Un cambio en la ruta de decode no es bit-exacto: el runtime de CPU omite el enrutamiento de expertos para filas de borrador que va a rechazar; se validó con acuerdo teacher-forced y pruebas de comportamiento agéntico, no con equivalencia exacta.
+- Las cifras de velocidad agéntica en modo solo GPU se midieron sin definiciones de herramientas en la petición, por lo que no son directamente comparables con las del runtime de CPU.
+- Requiere hardware muy específico (sm_120, 96 GB por GPU, CUDA 13) y una compilación de kernels de unos 6 minutos; no es un despliegue plug-and-play.
+- El runtime de CPU exige AVX-512 con VNNI, VBMI y VBMI2 y un host con muchos canales de memoria; sin él, el rendimiento cae a la ruta solo GPU.
+- No se especifican los idiomas soportados ni sesgos conocidos del modelo base en la información disponible.
+- El riesgo de alucinación del modelo base no se documenta en esta model card; debe evaluarse por caso de uso.
+- La licencia es MIT, lo que permite uso comercial, pero conviene verificar las condiciones del modelo base DeepSeek-V4.1-Flash-1017 por separado.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/diffbot/DeepSeek-V4.1-Flash-EXL3-3bpw-2x-RTX-PRO-6000
+- Hugging Face del pack: https://huggingface.co/diffbot/DeepSeek-V4.1-Flash-EXL3-3bpw-2x-RTX-PRO-6000
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Documentacion de velocidad: docs/SPEED.md (dentro del repo)
-- Documentacion de fidelidad: docs/FIDELITY.md (dentro del repo)
-- Changelog: docs/CHANGELOG.md (dentro del repo)
-- Drafter DSpark: docs/DRAFTER.md (dentro del repo)
-- Runtime CPU: recipe/cpuexp/README.md (dentro del repo)
-- Stack de servicio: recipe/README.md (dentro del repo)
+- Documentación de velocidad: `docs/SPEED.md` (en el repositorio)
+- Documentación de fidelidad: `docs/FIDELITY.md` (en el repositorio)
+- Documentación del drafter: `docs/DRAFTER.md` (en el repositorio)
+- Perfil para 8 GPU: `docs/PROFILE-8x.md` (en el repositorio)
+- Distribución del pack: `docs/HOW-IT-FITS.md` (en el repositorio)
+- Runtime de CPU: `recipe/cpuexp/README.md` (en el repositorio)

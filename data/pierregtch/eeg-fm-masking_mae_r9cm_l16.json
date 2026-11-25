@@ -45,31 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ameli, le site de l’Assurance Maladie en ligne | ameli.fr | Assuré",
-      "url": "https://www.ameli.fr/",
-      "snippet": "Le site officiel de l'Assurance Maladie. Actualités – Droits et Démarches – Remboursements – Prestations et aides – Santé – Offres …Read more"
-    },
-    {
-      "title": "Votre compte ameli | ameli.fr | Assuré",
-      "url": "https://www.ameli.fr/assure/adresses-et-contacts/votre-compte-ameli",
-      "snippet": "Salarié, indépendant, étudiant : en cas de questions sur le compte ameli, trouvez le moyen le plus adapté pour contacter l’Assurance …"
-    },
-    {
-      "title": "ameli.fr - Annuaire santé, un service de l'Assurance Maladie",
-      "url": "https://annuairesante.ameli.fr/",
-      "snippet": "Accédez à un annuaire complet des professionnels de santé et établissements médicaux en France proposé par l'Assurance Maladie."
-    },
-    {
-      "title": "ameli - Étudiants Internationaux | CNAM",
-      "url": "https://etudiant-etranger.ameli.fr/",
-      "snippet": "Inscrivez-vous sur le site pour bénéficier de la prise en charge de vos frais de santé dès votre arrivée en France."
-    },
-    {
-      "title": "VOUS CONNECTER PAR CARTE CPS - ameli",
-      "url": "https://authcps-espacepro.ameli.fr/CPS/oauth2/authorize",
-      "snippet": "Connectez-vous à Amelipro en toute sécurité avec votre carte CPS pour accéder aux services professionnels de l'Assurance Maladie."
-    }
-  ]
+  "sources": []
 }

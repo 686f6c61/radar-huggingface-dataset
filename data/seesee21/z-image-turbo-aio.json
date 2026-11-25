@@ -55,16 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "SeeSee21/Z-Image-Turbo-AIO · Hugging Face",
-      "url": "https://huggingface.co/SeeSee21/Z-Image-Turbo-AIO",
-      "snippet": "Text-to-Image model. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "Z-Image-Turbo-AIO: Image-to-Image model — overview, use cases, alternatives",
-      "url": "https://www.aimodels.fyi/models/huggingFace/z-image-turbo-aio-seesee21",
-      "snippet": "Overview Z-Image-Turbo-AIO is an all-in-one repackage of Alibaba Tongyi Lab's 6-billion-parameter photorealistic image generator, created by SeeSee21 and optimized for fast 8-step generation. The model uses a Single-Stream Diffusion Transformer architecture with integrated VAE and Text Encoder, eliminating the need for separate component downloads. It generates images at up to 1920×1088 ..."
-    }
-  ]
+  "sources": []
 }

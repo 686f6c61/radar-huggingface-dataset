@@ -2,84 +2,81 @@
 
 ## Resumen
 
-Maxwell-V1.0-Flash es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por el Maxwell Team, publicado en Hugging Face bajo la licencia Apache 2.0. Segun los datos de safetensors, el checkpoint contiene 36.810.559.422 parametros totales, aunque la model card del autor declara 35B totales y 3B activos por token (excluyendo embeddings). Esta orientado a generacion de texto, razonamiento, tareas agenticas y contextos largos de hasta 256K tokens.
+Maxwell-V1-Flash es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por el Maxwell Team. Cuenta con 35.000 millones de parámetros totales y 3.000 millones de parámetros activos por token (ambos datos excluyendo embeddings), y está disenado para ofrecer capacidades de razonamiento, uso de agentes y contexto largo con un coste de inferencia contenido. El repositorio de Hugging Face registra 36.810.559.422 parámetros reales en safetensors, lo que cuadra con la cifra de 35B declarada por el autor.
 
-El modelo introduce varias innovaciones arquitectonicas: Maxwell Block Sparse Attention (MBSA), que limita la atencion principal a 4096 tokens por grupo KV manteniendo disponible el cache completo; Manifold-Constrained Hyper-Connections, que amplia el flujo de informacion residual sin coste adicional de atencion o feed-forward; y un esquema de MoE de grano fino con expertos compartidos siempre activos. El entrenamiento se realizo sobre aproximadamente 26T tokens multilingues con el optimizador Muon.
+Su rasgo técnico más distintivo es la Maxwell Block Sparse Attention (MBSA), un mecanismo de atención dispersa por bloques que limita la atención principal a 4096 tokens por grupo KV manteniendo disponible la caché KV completa, lo que según el autor hace que el kernel sea 6,7 veces más rápido que una GQA densa a 256K de contexto. El modelo se preentrenó con aproximadamente 26 billones de tokens multilingües y se sometió a un post-entrenamiento en dos etapas (SFT y RL por ramas) seguido de destilación on-policy multi-profesor.
 
-La relevancia actual del modelo radica en su propuesta de equilibrio entre coste de inferencia y capacidades de contexto largo y razonamiento. Con solo 3B parametros activos por token, aspira a un despliegue economicamente viable sin renunciar a una ventana de 256K tokens, un perfil que lo situa en la categoria de modelos MoE eficientes como alternativas a arquitecturas densas de mayor coste.
+Es relevante ahora porque combina una ventana de contexto de 256K con una activación de solo 3B parámetros, lo que lo sitúa en la franja de modelos que buscan buen rendimiento en razonamiento y tareas agénticas sin exigir el despliegue de un modelo denso de gran tamano. La licencia Apache 2.0 facilita su adopción comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE) con Maxwell Block Sparse Attention y Manifold-Constrained Hyper-Connections |
-| Parametros totales | 36.810.559.422 (safetensors); la model card declara 35B excluyendo embeddings |
-| Parametros activos | 3B por token (segun la model card, excluyendo embeddings) |
-| Longitud de contexto | 256K tokens |
+| Arquitectura | Mixture-of-Experts (MoE) con Maxwell Block Sparse Attention (MBSA) y Manifold-Constrained Hyper-Connections |
+| Parametros totales | 35B (excluyendo embeddings); 36.810.559.422 en safetensors |
+| Parametros activos | 3B por token (excluyendo embeddings) |
+| Longitud de contexto | hasta 256K tokens |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (tokenizador multilingue con mencion especifica a tailandes, lao, birmano, jemer y shan) |
+| Idiomas soportados | multilingüe (el autor destaca buen soporte de lenguas del sudeste asiático de bajos recursos como tailandés, lao, birmano, jemer y shan); lista completa no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (custom_code, requiere confianza en codigo remoto) |
+| Formato de pesos | safetensors (custom_code) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer causal de tipo MoE con backbone mayoritariamente disperso: combina expertos ruteados de grano fino con expertos compartidos siempre activos, usando un sesgo de correccion de ruteo dinamico y una perdida de balanceo de carga ligera a nivel de secuencia. La innovacion principal es Maxwell Block Sparse Attention (MBSA): cada grupo KV mantiene cobertura fija de 8 bloques de prefijo y 8 bloques locales de 128 tokens, y anade hasta 16 bloques remotos seleccionados por un indexer aprendido, acotando la atencion principal a 4096 tokens por grupo KV mientras el cache KV completo sigue disponible. El autor reporta que el kernel MBSA es 6,7 veces mas rapido que GQA denso a 256K. Ademas, las Manifold-Constrained Hyper-Connections introducen multiples flujos residuales con agregacion aprendida y mezcla restringida, ampliando el flujo de informacion sin evaluaciones adicionales de atencion o feed-forward.
+El modelo emplea una columna vertebral mayoritariamente MoE que combina expertos enrutados de grano fino con expertos compartidos siempre activos, usando un sesgo de corrección de enrutamiento dinámico y una pérdida ligera de balanceo de carga por secuencia. La atención se basa en MBSA: cada grupo KV mantiene cobertura fija de 8 bloques de prefijo y 8 bloques locales de 128 tokens, y anade hasta 16 bloques remotos seleccionados por un indexador aprendido. A esto se suman las Manifold-Constrained Hyper-Connections, que usan múltiples flujos residuales con agregación aprendida y dependiente de la entrada para ampliar el flujo de información sin evaluaciones adicionales de atención o feed-forward.
 
-El preentrenamiento uso aproximadamente 26T tokens de datos multilingues con el optimizador Muon en la mayoria de matrices de pesos ocultas. El entrenamiento comienza denso y la atencion block-sparse entra en la fase de mid-training a 128K, una vez calentado el indexer contra atencion densa de historial completo, para despues entrenarse conjuntamente con el backbone. La longitud de secuencia se extiende por etapas de 4K a 256K. El post-entrenamiento consta de un SFT en dos etapas (capacidades generales, razonamiento y agenticas, seguidas de problemas mas dificiles y trayectorias de agente), ramas independientes de RL para tareas generales, razonamiento verificable (matematicas, ciencia, logica, codigo) y tareas agenticas (busqueda, uso de terminal, function calling, ingenieria de software), y finalmente una destilacion on-policy multi-profesor que fusiona las ramas supervisando respuestas generadas por el propio estudiante.
+El preentrenamiento consumió aproximadamente 26 billones de tokens multilingües, con el optimizador Muon en la mayoría de las matrices de pesos ocultas. El entrenamiento comienza en modo denso; la atención dispersa por bloques se introduce a 128K durante el mid-training, una vez calentado el indexador frente a la atención densa de historial completo, y luego se entrena conjuntamente con el backbone. La longitud de secuencia se extiende por etapas de 4K a 256K. El tokenizador es multilingüe y sensible a la escritura, disenado para mantenerse compacto en lenguas de bajos recursos. El post-entrenamiento consta de un SFT en dos etapas (capacidades generales, de razonamiento y agénticas), ramas de RL independientes para tareas generales, razonamiento verificable (matemáticas, ciencia, lógica, código) y tareas agénticas (búsqueda, uso de terminal, function calling, ingeniería de software), y finalmente destilación on-policy multi-profesor que fusiona las ramas supervisando respuestas generadas por el propio estudiante.
 
 ## Capacidades
 
-- Generacion de texto conversacional y causal en un unico turno y multi-turno.
-- Razonamiento general y razonamiento verificable en matematicas, ciencia, logica y codigo, reforzado mediante RL.
-- Capacidades agenticas: busqueda, uso de terminal, function calling y tareas de ingenieria de software, segun las ramas de RL descritas.
-- Soporte de tool calling / function calling (incluido explicitamente en el entrenamiento agentico).
-- Razonamiento multi-paso y trayectorias de agente.
-- Contexto largo de hasta 256K tokens con cache KV completo disponible.
-- Capacidades multilingues, con tokenizador consciente de escritura y mencion especifica a idiomas del sudeste asiatico de bajos recursos.
-- Modelo solo texto: no se declaran capacidades de vision ni audio.
+- Generación de texto conversacional y razonamiento general.
+- Razonamiento verificable en matemáticas, ciencia, lógica y código, reforzado mediante RL.
+- Capacidades agénticas: búsqueda, uso de terminal, function calling y tareas de ingeniería de software.
+- Soporte de tool calling / function calling.
+- Razonamiento multi-paso y flujos agénticos.
+- Manejo de contexto largo de hasta 256K tokens con caché KV de historial completo.
+- Capacidades multilingües, con énfasis declarado en lenguas del sudeste asiático de bajos recursos.
+- Capacidad especial: atención dispersa por bloques mediante indexador aprendido (MBSA).
 
 ## Casos de uso
 
-- Atencion al cliente automatizada: el modelo puede gestionar conversaciones multi-turno con historial extenso gracias a su ventana de 256K tokens y al cache KV completo, manteniendo coherencia en sesiones largas sin truncar contexto.
-- Generacion de codigo en produccion: el soporte de function calling y su entrenamiento en tareas de ingenieria de software permiten integrarlo en pipelines de CI/CD para revision de parches, generacion de tests o resolucion de issues acotadas.
-- Agentes autonomos de busqueda y terminal: las ramas de RL agentico (busqueda, uso de terminal) lo hacen adecuado para orquestar tareas multi-paso con herramientas externas, con un coste de inferencia contenido al activar solo 3B parametros por token.
-- Analisis de documentos extensos: informes, expedientes o bases de codigo de cientos de miles de tokens pueden procesarse en una sola pasada aprovechando la ventana de 256K y la atencion block-sparse, que reduce el coste del mecanismo de atencion a 4096 tokens por grupo KV.
-- Asistentes de razonamiento tecnico: para problemas de matematicas, ciencia o logica donde se requiere cadena de razonamiento, el modelo ha sido reforzado con RL verificable y destilacion multi-profesor.
-- Procesamiento multilingue en el sudeste asiatico: el tokenizador compacto para tailandes, lao, birmano, jemer y shan lo hace util para aplicaciones de traduccion, resumen o atencion al cliente en esos idiomas con menor coste de tokens.
-- Despliegue con presupuesto de GPU limitado: al activar solo 3B parametros por token, es candidato para servir cargas de contexto largo en infraestructura mas modesta que la requerida por modelos densos de tamano comparable.
+- Atención al cliente automatizada: el modelo puede gestionar conversaciones multi-turno con contexto largo gracias a su ventana de 256K tokens, manteniendo el historial completo en la caché KV mientras la atención principal se acota a 4096 tokens por grupo KV.
+- Generación de código en producción: soporta tool calling y puede integrarse en pipelines de CI/CD para revisión de parches, generación de tests y tareas de ingeniería de software reforzadas por RL.
+- Agentes autónomos de búsqueda y navegación: las ramas de RL agénticas cubren búsqueda y uso de terminal, lo que lo hace adecuado para orquestar tareas multi-paso con llamadas a herramientas.
+- Análisis de documentos extensos: con 256K de contexto puede procesar informes, expedientes o bases de código largas en una sola pasada, apoyándose en la atención dispersa para controlar el coste.
+- Asistentes de razonamiento técnico: sus ramas de RL en matemáticas, ciencia y lógica lo orientan a tareas de resolución de problemas verificables.
+- Procesamiento multilingüe en mercados del sudeste asiático: el tokenizador compacto en tailandés, lao, birmano, jemer y shan reduce el coste por token en estas lenguas frente a tokenizadores menos adaptados.
+- Despliegue con coste contenido: al activar solo 3B parámetros por token, puede servir cargas de trabajo de razonamiento y agentes con menor presión de cómputo que un modelo denso de tamano comparable.
 
 ## Benchmarks y rendimiento
 
-La model card referencia una figura (`assets/performance-overview.svg`) con resultados de benchmarks en razonamiento, busqueda agentica y otras capacidades frente a modelos de comparacion, pero los valores numericos no estan incluidos en la informacion proporcionada. No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card referencia una imagen (`assets/performance-overview.svg`) con resultados comparativos, pero los valores numéricos no están incluidos en la información proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa, los 36,8B parametros totales en safetensors ocupan aproximadamente 73,6 GB en precision original (el tamano del repo es de 73,6 GB); en cuantizacion de 8 bits rondaria los 37 GB y en 4 bits unos 18-19 GB, aunque estas cifras son estimaciones y no datos del autor.
-- GPU recomendadas: no disponible. Por volumen de pesos, un despliegue en precision completa requiere GPUs de 80 GB (A100/H100) o multiples GPUs; la cuantizacion permitiria GPUs de 24-48 GB.
-- ¿Cabe en consumer GPU? No en precision completa. En cuantizacion de 4 bits podria caber en GPUs consumer de 24 GB (RTX 3090/4090) segun la estimacion de pesos, aunque no hay confirmacion oficial.
-- Opciones de despliegue: el modelo usa `custom_code` y arquitectura MoE con atencion block-sparse propia, por lo que requiere cargar codigo remoto con `trust_remote_code=True`. No se confirma soporte en vLLM, llama.cpp, Ollama o TGI en la informacion disponible.
-- Latencia y throughput: no disponible. El autor reporta que el kernel MBSA es 6,7 veces mas rapido que GQA denso a 256K, pero sin cifras absolutas de tokens por segundo.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa, los 36.810.559.422 parámetros en safetensors ocupan aproximadamente 73,6 GB en precisión de 16 bits; una cuantización a 8 bits rondaría los 37 GB y a 4 bits unos 18-19 GB, aunque el autor no publica cifras de cuantización.
+- GPU recomendadas: no disponible. Por tamano, el despliegue en precisión completa requiere GPUs de centro de datos con 80 GB o más (A100/H100) o varias GPUs en paralelo.
+- ¿Cabe en GPU de consumo? No disponible de forma oficial; con cuantización agresiva podría aproximarse al rango de GPUs de 24 GB, pero no hay confirmación del autor.
+- Opciones de despliegue: no disponible. El modelo requiere `custom_code` (tag `maxwell_moe`), por lo que la compatibilidad con vLLM, llama.cpp, Ollama o TGI no está confirmada en la información proporcionada.
+- Latencia y throughput: no disponible. El autor declara que el kernel MBSA es 6,7 veces más rápido que una GQA densa a 256K de contexto, pero sin cifras absolutas.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones completas de modelos comparables en la informacion proporcionada. La model card menciona modelos de comparacion en su figura de rendimiento, pero no los identifica ni aporta valores numericos. Comparativa: no disponible.
+No disponible. La información proporcionada no incluye modelos comparables ni datos de rendimiento de alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Modelo solo texto: no soporta vision ni audio.
-- Idiomas soportados no declarados formalmente; la cobertura multilingue se infiere del tokenizador y del entrenamiento, sin lista oficial.
-- Riesgo de alucinacion inherente a los modelos de lenguaje; no se documentan tasas ni evaluaciones de fidelidad.
-- Sesgos conocidos: no documentados en la informacion disponible.
-- Requiere `trust_remote_code=True` por el uso de `custom_code` y arquitectura propia; esto implica ejecutar codigo del autor y revisarlo antes de desplegar en produccion.
-- El soporte en frameworks de inferencia estandar (vLLM, llama.cpp, TGI) no esta confirmado, lo que puede limitar el despliegue en produccion.
-- No se publican resultados numericos de benchmarks en la informacion disponible, lo que dificulta validar las afirmaciones de rendimiento.
-- Licencia Apache 2.0: permite uso comercial, pero conviene verificar los terminos del technical report y del repositorio GitHub por si anaden restricciones.
-- El modelo tiene muy pocas descargas (1) y likes (2) en el momento de la consulta, lo que sugiere escasa validacion por parte de la comunidad.
+- Sesgos conocidos: no documentados en la información disponible; al entrenarse con 26 billones de tokens multilingües de origen no especificado, es esperable que herede sesgos del corpus, pero el autor no los detalla.
+- Riesgo de alucinación: no cuantificado por el autor; como modelo generativo de propósito general, debe validarse en dominios factuales.
+- Limitaciones de contexto o idioma: la lista completa de idiomas soportados no está publicada; el énfasis declarado está en lenguas del sudeste asiático. El contexto máximo es de 256K tokens, con atención principal acotada a 4096 tokens por grupo KV mediante selección aprendida de bloques remotos, lo que puede afectar a la recuperación de información en posiciones no seleccionadas.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo requiere `custom_code`, por lo que conviene revisar el código asociado antes de integrarlo en producción.
+- Caveats para producción: no hay datos publicados de cuantización, latencia ni compatibilidad con motores de inferencia estándar; el tag `custom_code` implica que el despliegue puede requerir código propio del autor. El repositorio pesa 73,6 GB.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/maxwell-model/Maxwell-V1-Flash
-- Homepage: https://maxwell-llm.ai/
+- Página oficial: https://maxwell-llm.ai/
 - Playground: https://maxwell-llm.ai/playground
+- Discord: https://discord.gg/SM7Bxz9XQU
 - GitHub: https://github.com/maxwell-model/Maxwell-V1-Flash
-- Technical report: https://github.com/maxwell-model/Maxwell-V1-Flash/blob/main/Maxwell_v1_flash_tech_report.pdf
+- Informe técnico: https://github.com/maxwell-model/Maxwell-V1-Flash/blob/main/Maxwell_v1_flash_tech_report.pdf

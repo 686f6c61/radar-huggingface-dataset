@@ -2,110 +2,108 @@
 
 ## Resumen
 
-Inkling-2-Mini-Infall_TT-GGUF es una cuantizacion GGUF en 8 bits del modelo multimodal thinkingmachines/Inkling-2-Mini, desarrollado por Thinking Machines Lab y publicado el 20 de noviembre de 2026. La cuantizacion la firma Synthetic Minds mediante Infall-TT, su framework propietario (en beta) para entrenar, cuantizar y ejecutar modelos sobre aceleradores neuronales de Tenstorrent. El resultado son ficheros GGUF estandar que, segun la model card, funcionan en cualquier maquina con llama.cpp, aunque el objetivo declarado de Infall-TT es el hardware Blackhole de Tenstorrent (P150A/B, P300C, Galaxy Blackhole).
+Inkling-2-Mini-Infall_TT-GGUF es una familia de cuantizaciones GGUF del modelo multimodal thinkingmachines/Inkling-2-Mini, desarrollado por Thinking Machines Lab y cuantizado por Synthetic Minds mediante su stack propietario Astral-Q. El modelo original es un transformer autorregresivo multimodal con arquitectura de mezcla de expertos (MoE) y mecanismo de bucle (looped transformer), disenado para tareas de imagen-a-texto y conversacion. Con 26.400 millones de parametros totales y solo 3.400 millones activos por token, ofrece una relacion capacidad-coste computacional muy favorable para despliegue en produccion.
 
-El modelo base es un transformer autorregresivo con bucles (looped transformer) de tipo mixture-of-experts, con 26.400 millones de parametros totales y 3.400 millones activos por token, y capacidad multimodal image-text-to-text. Esta ficha cubre especificamente el artefacto cuantizado: la informacion disponible sobre arquitectura interna, datos de entrenamiento y benchmarks del modelo original es muy limitada en la model card del quant.
+La relevancia de esta publicacion radica en que pone a disposicion de la comunidad un conjunto de cuantizaciones optimizadas para GPUs NVIDIA, desde Q4_K_M (18,7 GB) hasta Q8_0 (27,8 GB), con metricas de fidelidad publicadas frente a la referencia Q8_0. El modelo base se publico el 20 de noviembre de 2026 bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
-La relevancia practica del repositorio esta en su tabla de calidad de cuantizacion: compara seis variantes (Q4_K_M a Q8_0) frente a la referencia Q8_0 en wikitext-2, con divergencia KL, acuerdo top-1 y perplejidad. Es un caso poco habitual de cuantizador que publica metricas de distorsion detalladas, aunque las cifras son aproximadas ("leidas de los graficos") y el modelo tiene 0 descargas y 0 likes en el momento de redactar esta ficha.
+Esta ficha cubre la version cuantizada en GGUF, que mantiene la licencia Apache 2.0 del modelo original y esta pensada para ejecutarse tanto en hardware de centro de datos (H100, H200, B200, GB200) como en GPUs de escritorio profesionales (RTX PRO). La cuantizacion emplea tecnicas de imatrix y precision de 8 bits en el pipeline de Astral-Q.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer autorregresivo multimodal con bucles (looped transformer), mixture-of-experts |
-| Parametros totales | 26.070.385.152 (~26,4 B) |
-| Parametros activos | ~3,4 B |
+| Arquitectura | Transformer autorregresivo multimodal con MoE y bucle (looped transformer) |
+| Parametros totales | 26.070.385.152 (26,4B) |
+| Parametros activos | 3,4B |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF 8 bits (Q8_0); la model card lista tambien Q4_K_M, Q5_K_S, Q5_K_M, Q6_K_S, Q6_K y Q6_K_L como variantes comparadas |
+| Tipos de cuantizacion | Q4_K_M, Q5_K_S, Q5_K_M, Q6_K_S, Q6_K, Q6_K_L, Q8_0 |
 | Idiomas soportados | Ingles y soporte multilingue general |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (repo con safetensors del modelo base; tamano del repo 161,0 GB) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es, segun la model card, un "multimodal autoregressive looped transformer" con mezcla de expertos: 26,4 B de parametros totales y 3,4 B activos. La etiqueta `inkling2_loop` del repositorio apunta a un esquema de reutilizacion de capas (looping), aunque no se detalla cuantas iteraciones ni como se reparten los expertos. La model card no especifica numero de tokens de entrenamiento, composicion del dataset, ni si hubo RLHF, DPO u otra fase de alineamiento.
+El modelo base Inkling-2-Mini es un transformer autorregresivo multimodal que combina una arquitectura de mezcla de expertos (MoE) con un mecanismo de bucle (looped transformer, segun el tag `inkling2_loop`). La activacion de solo 3,4B de parametros por token sobre un total de 26,4B permite un coste de inferencia reducido manteniendo una capacidad de representacion amplia. El pipeline `image-text-to-text` confirma que acepta entradas de imagen y texto de forma nativa.
 
-Respecto al artefacto cuantizado, Infall-TT produce ficheros GGUF estandar compatibles con llama.cpp y declara como hardware objetivo los aceleradores Tenstorrent Blackhole. No se documenta el algoritmo exacto de cuantizacion (si es RTN, GPTQ-like o con imatrix; la etiqueta `imatrix` sugiere uso de matrices de importancia). La model card incluye graficos de calidad frente a Q8_0 sobre wikitext-2 con 65.536 tokens para KL y top-1, y el corpus completo de test para perplejidad.
+No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. La cuantizacion Astral-Q se aplica sobre el modelo base con soporte de imatrix, y los pesos resultantes son GGUF estandar compatibles con llama.cpp. La model card indica que el proceso de cuantizacion se optimizo para GPUs NVIDIA, desde centros de datos hasta estaciones de trabajo.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno (etiqueta `conversational`).
-- Procesamiento conjunto de imagen y texto (pipeline `image-text-to-text`): entrada de imagenes con salida textual.
-- Razonamiento y generacion de codigo: no confirmado explicitamente en la model card; el modelo base es de proposito general, pero no hay evaluaciones publicadas en la informacion disponible.
-- Soporte multilingue general, con ingles como idioma principal.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Modo thinking o razonamiento extendido: no disponible en la informacion proporcionada.
-- Capacidades de agente multi-paso: no disponible en la informacion proporcionada.
-- Inferencia eficiente por su naturaleza MoE: solo ~3,4 B de parametros activos por token.
+- Generacion de texto conversacional multi-turno.
+- Procesamiento de imagen y texto de forma conjunta (image-text-to-text).
+- Razonamiento y respuesta a instrucciones en ingles y otros idiomas.
+- Soporte multilingue general (segun la model card, "general multilingual support").
+- Arquitectura MoE con 3,4B parametros activos, lo que reduce el coste por token.
+- Compatibilidad con llama.cpp y, por extension, con ecosistemas que consumen GGUF (Ollama, servidores llama-server, etc.).
+- Capacidad de ejecucion en endpoints compatibles (tag `endpoints_compatible`).
+
+No se documentan en la informacion disponible capacidades especificas de tool calling, function calling, agentes o modos de razonamiento extendido (thinking mode) para este modelo.
 
 ## Casos de uso
 
-- Procesamiento de documentos con imagenes: extraccion y resumen de informacion a partir de capturas, formularios escaneados o diagramas combinados con instrucciones textuales, aprovechando el pipeline image-text-to-text.
-- Asistente conversacional multilingue: despliegue en llama.cpp sobre CPU o GPU para atencion en ingles y otros idiomas, con la ventaja de que solo se activan ~3,4 B de parametros por token.
-- Prototipado en hardware Tenstorrent: validacion de pipelines de inferencia sobre Blackhole P150A/B, P300C o Galaxy Blackhole usando los GGUF optimizados por Infall-TT.
-- Evaluacion de cuantizacion en investigacion: el repositorio sirve como referencia para estudiar el impacto de Q4_K_M a Q8_0 en KL, top-1 y perplejidad sobre un MoE multimodal de 26 B.
-- Despliegue en entornos con VRAM limitada: la variante Q4_K_M (~18,7 GB) permite ejecutar un modelo de 26 B en una sola GPU de 24 GB, algo inviable en precision completa.
-- Generacion de descripciones y analisis de imagenes en lote: clasificacion o captioning de imagenes con contexto textual, ejecutable en local sin dependencia de API.
-- Base para fine-tuning o destilacion: al ser Apache 2.0 y estar disponible en safetensors el modelo original, se puede usar como punto de partida para adaptaciones de dominio.
+- Asistente conversacional multimodal en local: el modelo puede procesar imagenes junto con texto en un unico turno, adecuado para aplicaciones de escritorio o entornos con requisitos de privacidad donde no se quiere enviar datos a la nube.
+- Despliegue en estaciones de trabajo con GPU profesional: con cuantizaciones de 18,7 a 27,8 GB, cabe en GPUs RTX PRO y similares, permitiendo inferencia local de un modelo de 26,4B con solo 3,4B activos.
+- Servicio de atencion al cliente con entrada de imagenes: la naturaleza image-text-to-text permite gestionar consultas que incluyan capturas, fotos de productos o documentacion escaneada junto con texto.
+- Prototipado rapido con llama.cpp: la disponibilidad de GGUF estandar y la instalacion simplificada de llama.cpp permiten levantar un servidor con un solo comando, ideal para pruebas de concepto.
+- Investigacion en eficiencia de modelos MoE: el modelo sirve como caso de estudio para evaluar el equilibrio entre parametros totales y activos en tareas multimodales.
+- Evaluacion comparativa de cuantizaciones: las metricas publicadas de KL divergence, top-1 agreement y perplejidad permiten a los equipos elegir el nivel de cuantizacion segun su presupuesto de VRAM y tolerancia a la perdida de fidelidad.
+- Generacion de descripciones de imagenes y analisis visual en pipelines de datos: util para etiquetado automatico o enriquecimiento de catalogos con entrada visual.
 
 ## Benchmarks y rendimiento
 
-La model card solo publica metricas de calidad de cuantizacion frente a Q8_0 sobre wikitext-2, no benchmarks de capacidad (MMLU, HumanEval, GSM8K, etc.).
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La model card unicamente proporciona metricas de fidelidad de la cuantizacion frente a Q8_0 sobre wikitext-2:
 
-| Quant | Tamano (GB) | KL media vs Q8_0 | Acuerdo top-1 | Perplejidad wikitext-2 |
+| Cuantizacion | Tamano (GB) | KL divergence media | Top-1 agreement con Q8_0 | Perplejidad (wikitext-2) |
 |---|---|---|---|---|
-| Q4_K_M | ~18,7 | ~0,0059 | ~96,8 % | ~5,943 |
-| Q5_K_S | ~19,2 | ~0,0041 | ~97,3 % | ~5,936 |
-| Q5_K_M | ~21,2 | ~0,0037 | ~97,5 % | ~5,935 |
-| Q6_K_S | ~24,1 | ~0,0028 | ~97,7 % | ~5,931 |
-| Q6_K | ~24,7 | ~0,0027 | ~97,8 % | ~5,934 |
-| Q6_K_L | ~25,4 | ~0,0026 | ~97,9 % | ~5,933 |
-| Q8_0 | ~27,8 | 0 (referencia) | 100 % | ~5,931 |
+| Q4_K_M | 18,7 | ~0,0059 | ~96,8% | ~5,943 |
+| Q5_K_S | 19,2 | ~0,0041 | ~97,3% | ~5,936 |
+| Q5_K_M | 21,2 | ~0,0037 | ~97,5% | ~5,935 |
+| Q6_K_S | 24,1 | ~0,0028 | ~97,7% | ~5,931 |
+| Q6_K | 24,7 | ~0,0027 | ~97,8% | ~5,934 |
+| Q6_K_L | 25,4 | ~0,0026 | ~97,9% | ~5,933 |
+| Q8_0 | 27,8 | 0 (referencia) | 100% (referencia) | ~5,931 |
 
-Las diferencias de perplejidad entre variantes (~0,01) son menores que el margen de error declarado (~±0,035), por lo que el autor las considera estadisticamente indistinguibles de Q8_0. La mayor caida de distorsion se produce entre Q4_K_M y Q5_K_S.
+Las diferencias de perplejidad entre cuantizaciones (aproximadamente 0,01) son inferiores a los margenes de error (~±0,035), por lo que resultan estadisticamente indistinguibles de Q8_0 en esa metrica.
 
 ## Requisitos de hardware
 
-- VRAM estimada: Q8_0 ~27,8 GB; Q6_K_L ~25,4 GB; Q6_K ~24,7 GB; Q5_K_M ~21,2 GB; Q5_K_S ~19,2 GB; Q4_K_M ~18,7 GB (tamanos de fichero declarados en la model card; la VRAM real anade overhead de contexto y KV cache).
-- GPU recomendadas: A100 40/80 GB o H100 para Q8_0 sin compromisos; RTX 4090 (24 GB) para Q6_K o inferiores; RTX 3090 (24 GB) para Q5_K_M y menores.
-- Cabe en GPU de consumo: si, en RTX 4090/3090 con Q6_K o inferior; Q4_K_M (~18,7 GB) deja margen para contexto en 24 GB.
-- Opciones de despliegue: llama.cpp (soporte explicito en la model card); hardware Tenstorrent Blackhole P150A/B, P300C y Galaxy Blackhole como objetivo de Infall-TT. vLLM, TGI u Ollama no se mencionan en la informacion disponible.
-- Latencia y throughput: no disponibles. Al ser MoE con ~3,4 B activos, el coste por token deberia ser inferior al de un denso de 26 B, pero no hay mediciones publicadas.
+- VRAM estimada para inferencia: entre 18,7 GB (Q4_K_M) y 27,8 GB (Q8_0) solo para los pesos; hay que anadir memoria para el contexto KV y overhead del runtime.
+- GPUs recomendadas por el autor: NVIDIA H100/H200, B200/B300, GB200/GB300, GB10 y RTX PRO.
+- Cabe en GPU consumer de gama alta con 24 GB (por ejemplo, RTX 4090) unicamente en cuantizaciones Q4_K_M o Q5_K_S, con contexto limitado; para Q6 y Q8_0 se necesita mas VRAM o descarga parcial a CPU.
+- Opciones de despliegue: llama.cpp (llama-server, llama-cli), y por compatibilidad de formato, herramientas que consumen GGUF como Ollama o interfaces basadas en llama.cpp.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No hay datos de benchmarks del modelo base en la informacion proporcionada, por lo que la comparacion se limita a caracteristicas estructurales.
+No se dispone en la informacion proporcionada de datos de rendimiento de tareas que permitan una comparativa rigurosa con modelos alternativos. A nivel estructural, el modelo se situa en la categoria de MoE multimodal de ~26B totales con ~3,4B activos, con licencia Apache 2.0 y distribucion en GGUF. Cualquier comparacion con otros modelos de la misma categoria (por ejemplo, otros MoE multimodales de rango 20-30B) requeriria datos de benchmarks que no se han publicado aqui.
 
-| Modelo | Parametros | Activos | Contexto | Licencia | Formato |
-|---|---|---|---|---|---|
-| Inkling-2-Mini (Infall_TT GGUF) | ~26,4 B | ~3,4 B | no disponible | Apache 2.0 | GGUF 8 bits |
-| thinkingmachines/Inkling-2-Mini | ~26,4 B | ~3,4 B | no disponible | Apache 2.0 | safetensors |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-No se dispone de informacion sobre modelos de la misma categoria (MoE multimodal de ~26 B) en el material proporcionado, ni de resultados que permitan comparar rendimiento.
+| Criterio | Inkling-2-Mini (GGUF) | Alternativas |
+|---|---|---|
+| Parametros totales | 26,4B | no disponible |
+| Parametros activos | 3,4B | no disponible |
+| Contexto | no disponible | no disponible |
+| Licencia | Apache 2.0 | no disponible |
+| Formato | GGUF | no disponible |
 
 ## Limitaciones y advertencias
 
-- La model card no documenta sesgos conocidos; al ser un modelo de proposito general entrenado con datos no especificados, cabe esperar sesgos propios del corpus, pero no hay evidencia publicada.
-- Riesgo de alucinacion no cuantificado: no hay evaluaciones de factualidad en la informacion disponible.
-- La cuantizacion introduce distorsion: incluso Q8_0 difiere de los pesos originales, y Q4_K_M cambia el token top-1 en ~3,2 % de los casos segun el propio autor.
-- Las metricas de calidad son aproximadas ("leidas de los graficos") y se limitan a wikitext-2 en ingles; no cubren tareas multimodales ni multilingues.
-- Longitud de contexto no disponible: no se puede planificar el uso en tareas de contexto largo.
-- Soporte de idiomas: ingles y "multilingue general" sin lista cerrada; el rendimiento en castellano no esta evaluado.
-- Licencia Apache 2.0 permite uso comercial, pero el framework Infall-TT esta en beta y su terminos de uso no se detallan en la model card.
-- El hardware objetivo (Tenstorrent) es nicho; el rendimiento en GPU convencional via llama.cpp no esta medido por el autor.
-- Repositorio con 0 descargas y 0 likes: sin validacion de la comunidad.
-- El tamano del repo (161 GB) incluye multiples variantes; descargar solo el fichero necesario con `--include`.
+- No se han publicado evaluaciones de sesgo, toxicidad o alucinacion para este modelo en la informacion disponible.
+- El soporte idiomatico declarado es ingles con "soporte multilingue general"; el rendimiento en castellano no esta verificado.
+- La longitud de contexto no se especifica, lo que impide planificar casos de uso con documentos largos.
+- Las metricas de fidelidad de cuantizacion se basan en wikitext-2 y no cubren tareas multimodales ni de razonamiento; la perdida de calidad en dominios especificos puede ser mayor que la indicada.
+- Aunque la licencia es Apache 2.0, conviene verificar las condiciones del modelo base y de las herramientas de cuantizacion (Astral-Q) antes de un despliegue comercial.
+- El modelo esta pensado para GPUs NVIDIA segun el autor; el rendimiento en otras plataformas no esta documentado.
+- La fecha de publicacion (noviembre de 2026) y el numero reducido de descargas (310) sugieren un ecosistema aun poco contrastado por la comunidad.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/synthetic-minds/Inkling-2-Mini-Infall_TT-GGUF
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
 - Web de Synthetic Minds: https://www.syntheticmindslab.com
-- Anuncio de Infall-TT: https://www.syntheticmindslab.com/news/introducing-infall-tt
-- Lista de espera de Infall-TT: https://www.syntheticmindslab.com/infall-tt
-- Coleccion GGUF de Infall-TT: https://hf.co/collections/synthetic-minds/infall-tt-optimised-gguf-20
+- Informacion sobre Astral-Q: https://www.syntheticmindslab.com/astral
+- Coleccion de cuantizaciones Astral-Q: https://hf.co/collections/synthetic-minds/astral-gguf-quants
 - GitHub de Synthetic Minds: https://github.com/syntheticminds-lab
-- X de Synthetic Minds: https://x.com/syntheticminds2
-- X de Tudor: https://x.com/tudoriustin_
-- LinkedIn: https://www.linkedin.com/company/synthetic-minds-lab/
+- Perfil en X de Synthetic Minds: https://x.com/syntheticminds2
+- Perfil en X del autor (Tudor): https://x.com/tudoriustin_
+- LinkedIn de Synthetic Minds: https://www.linkedin.com/company/synthetic-minds-lab/
+- Buy Me a Coffee: https://buymeacoffee.com/syntheticminds_lab

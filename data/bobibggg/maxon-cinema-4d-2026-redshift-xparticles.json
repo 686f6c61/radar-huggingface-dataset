@@ -1,0 +1,45 @@
+{
+  "schema": 2,
+  "id": "BobiBGGG/maxon-cinema-4d-2026-redshift-xparticles",
+  "slug": "bobibggg-maxon-cinema-4d-2026-redshift-xparticles",
+  "author": "BobiBGGG",
+  "url": "https://huggingface.co/BobiBGGG/maxon-cinema-4d-2026-redshift-xparticles",
+  "created_at": "2026-11-24T22:28:45.000Z",
+  "updated_at": "2026-11-24T22:28:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "other",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Why am I getting different speeds between my computer and my …",
+      "url": "https://sandboxsupport.speedtest.net/hc/en-us/articles/202610694-Why-am-I-getting-different-speeds-between-my-computer-and-my-phone-tablet",
+      "snippet": "Jul 30, 2014 · These differences may negatively impact your phone's Wi-Fi speed, especially in areas of high interference on the 2.4 …Read more"
+    }
+  ]
+}

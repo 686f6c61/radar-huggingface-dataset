@@ -59,16 +59,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/Phai-A1-35B-1M-i1-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Phai-A1-35B-1M-i1-GGUF",
-      "snippet": "Machine learning model with 35B parameters. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "PhaiModelLab/Phai-A1-35B-1M · Hugging Face",
-      "url": "https://huggingface.co/PhaiModelLab/Phai-A1-35B-1M",
-      "snippet": "Phai-A1-35B-1M is a model built upon Qwen3.6-35B-A3B, extensively post-trained and optimized for Coding & Agent workloads. The entire post-training pipeline, including Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL), was conducted on Huawei Ascend NPUs."
-    }
-  ]
+  "sources": []
 }

@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "rexmhall09/kenchi",
+  "slug": "rexmhall09-kenchi",
+  "author": "rexmhall09",
+  "url": "https://huggingface.co/rexmhall09/kenchi",
+  "created_at": "2026-11-24T21:16:37.000Z",
+  "updated_at": "2026-11-24T21:42:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kenchi",
+    "text-generation",
+    "mamba2",
+    "hybrid",
+    "web-search",
+    "tool-use",
+    "custom_code",
+    "conversational",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 496486362,
+  "parameters_human": "496.5M",
+  "storage_bytes": 1986795784,
+  "storage_human": "2.0 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

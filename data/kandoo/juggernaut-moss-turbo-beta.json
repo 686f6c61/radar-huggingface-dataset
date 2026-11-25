@@ -5,7 +5,7 @@
   "author": "Kandoo",
   "url": "https://huggingface.co/Kandoo/Juggernaut-Moss-Turbo-Beta",
   "created_at": "2026-11-15T19:55:16.000Z",
-  "updated_at": "2026-11-16T01:41:55.000Z",
+  "updated_at": "2026-11-24T16:47:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -33,12 +33,12 @@
     "diffusers:MOSSImagePipeline",
     "region:us"
   ],
-  "likes": 5,
+  "likes": 6,
   "downloads_30d": 2119,
   "trending_score": 0,
   "parameters": 5082308624,
   "parameters_human": "5.08B",
-  "storage_bytes": 65107866886,
+  "storage_bytes": 65144179488,
   "storage_human": "65.1 GB",
   "context_length": null,
   "base_model": "Kandoo/Juggernaut-Moss",
@@ -56,21 +56,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "FR | Kandoo - L’apprentissage de la propreté simplifié",
-      "url": "https://kandoo.eu/fr/",
-      "snippet": "Notre livre d’histoires, notre tableau de récompenses et notre application de l’apprentissage de la propreté Kandoo vous proposent …"
-    },
-    {
-      "title": "EN | Kandoo - Toilet Training Made Simple",
-      "url": "https://kandoo.eu/",
-      "snippet": "You can do it too with Kandoo! Potty training advice, tips and games with Diddit makes toilet time simple. Kandoo flushable toilet …"
-    },
-    {
-      "title": "Bespoke Product Design & Manufacturing for Brands | Kandoo",
-      "url": "https://kandoo.com/",
-      "snippet": "KANDOO always go ‘the extra mile’ for their clients and I certainly felt the impact of this working closely with them. I have no …"
-    }
-  ]
+  "sources": []
 }

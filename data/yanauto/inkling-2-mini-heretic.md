@@ -2,115 +2,103 @@
 
 ## Resumen
 
-Inkling-2-Mini-heretic es una variante "decensored" (abliterada) del modelo thinkingmachines/Inkling-2-Mini, publicada por el usuario yanauto en Hugging Face. El modelo base es un transformer de tipo Mixture-of-Experts (MoE) con capacidad multimodal image-text-to-text, disenado originalmente por Thinking Machines para generacion de texto conversacional y razonamiento. Esta version concreta aplica una ablacion de rango arbitrario (Arbitrary-Rank Ablation, ARA) mediante la herramienta Heretic 2.1.0 para eliminar la mayor parte de los comportamientos de rechazo del modelo original, manteniendo intacta la arquitectura y los pesos de los expertos enrutados.
+Inkling-2-Mini-heretic es una variante "decensored" (también etiquetada como abliterated o uncensored) del modelo multimodal thinkingmachines/Inkling-2-Mini, publicada por el usuario yanauto. El modelo original es un transformer de tipo Mixture-of-Experts (MoE) con capacidad image-text-to-text, es decir, acepta entradas de imagen y texto y genera respuestas conversacionales. La intervención consiste en una ablación de rango arbitrario (Arbitrary-Rank Ablation, ARA) aplicada mediante la herramienta Heretic 2.1.0 sobre las proyecciones de salida de atención, con el objetivo de reducir drásticamente la tasa de rechazos ante peticiones que el modelo original declina.
 
-El modelo conserva exactamente el mismo formato y estructura de ficheros que el original: solo se han modificado 21 de las 24 proyecciones de salida de atencion (`attn.wo_ud`), mientras que los expertos enrutados siguen siendo los pesos oficiales NVFP4/MXFP8 byte a byte. Esto lo convierte en un reemplazo directo (drop-in replacement) para cualquier stack de inferencia que ya ejecute el modelo original (vLLM, SGLang, transformers o conversiones a llama.cpp), con un tamano de repositorio de aproximadamente 20,2 GB y 26.388.646.440 parametros totales.
+El resultado es un modelo que conserva prácticamente intactos los pesos del original (expertos enrutados en NVFP4/MXFP8, codificador de visión, cabecera MTP, tokenizer y plantilla de chat) y solo modifica 21 de las 24 proyecciones de salida de atención en BF16. Según la model card, la tasa de rechazos cae del 100/100 al 6/100 en el conjunto harmful_behaviors y del 97/100 al 12/100 en JailbreakBench, con una divergencia KL de 0,049 en el primer token de respuesta y una pérdida de 0,7 puntos en MMLU (78,7% a 78,0%).
 
-La relevancia de esta ficha radica en que documenta un caso de estudio de ablacion selectiva sobre un modelo MoE multimodal de gran porte: el autor demuestra que es posible reducir drastricamente las tasas de rechazo (de 100/100 a 6/100 en el test harmful_behaviors) con un coste minimo en calidad (MMLU pasa de 78,7% a 78,0%) y una divergencia KL de solo 0,049 en el primer token de respuesta. Es, por tanto, un ejemplo tecnico de como se comportan las tecnicas de abliteracion cuando se aplican a un subconjunto muy pequeno de pesos.
+Es relevante ahora porque demuestra que es posible alterar el comportamiento de seguridad de un MoE multimodal de ~26.400 millones de parámetros editando una fracción mínima de los pesos, manteniendo el mismo formato y tamaño (~20 GB) y funcionando como reemplazo directo en vLLM, SGLang, transformers o llama.cpp. La licencia Apache 2.0 del original se mantiene.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture-of-Experts (MoE) multimodal, con `GatedOutputProjection` en la atencion y cabeza MTP (multi-token prediction) |
-| Parametros totales | 26.388.646.440 |
+| Arquitectura | Transformer Mixture-of-Experts (MoE) multimodal image-text-to-text, con cabecera MTP y atención con proyección de salida con puerta (GatedOutputProjection) |
+| Parametros totales | 26.388.646.440 (~26,4 mil millones) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Pesos de expertos enrutados en NVFP4 / MXFP8; proyecciones de atencion en BF16; cuantizacion 8-bit (modelopt) referenciada en los tags; existe variante GGUF en repositorio separado |
+| Tipos de cuantizacion | Pesos oficiales en NVFP4 / MXFP8 para expertos enrutados; proyecciones de atención editadas en BF16; cuantización de 8 bits (modelopt); conversión GGUF disponible en repo separado |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (formato transformers) |
+| Formato de pesos | safetensors (repo de 20,2 GB); GGUF en yanauto/Inkling-2-Mini-heretic-GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Inkling-2-Mini es un transformer MoE multimodal con pipeline `image-text-to-text`, que combina un encoder de vision con un decodificador de lenguaje basado en mezcla de expertos. La arquitectura incluye detalles poco habituales: las proyecciones de salida de atencion estan envueltas en una compuerta (`GatedOutputProjection`), de modo que la ablacion solo puede editar la capa lineal interna; ademas, las capas 6 a 17 se ejecutan tres veces por pasada forward (mecanismo de bucle o "loop" asociado al tag `inkling2_loop`), y el modelo incorpora una cabeza MTP (multi-token prediction) para decodificacion especulativa. Los pesos de los expertos enrutados se distribuyen en formatos de baja precision NVFP4 y MXFP8, mientras que las proyecciones de atencion se mantienen en BF16.
+El modelo base es un transformer MoE multimodal de ~26,4 mil millones de parámetros con pipeline image-text-to-text. Incorpora una cabecera MTP (Multi-Token Prediction) y una arquitectura de atención en la que la proyección de salida está detrás de una puerta (GatedOutputProjection); las capas 6 a 17 se ejecutan tres veces por pase forward, según detalla la model card. Los expertos enrutados conservan los pesos oficiales en NVFP4/MXFP8, y el codificador de visión, el tokenizer y la plantilla de chat no se modifican.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si el modelo base utilizo RLHF o DPO, ya que la model card de esta variante no los detalla y la ficha se limita a los datos proporcionados. Respecto al proceso de creacion de esta version heretic, el autor documenta que se ejecuto Heretic 2.1.0 con 100 trials de Optuna (20 aleatorios, semilla 20261121) sobre una RTX PRO 6000 Blackwell de 96 GB en Google Colab, desquantizando los expertos a BF16 en memoria. Se selecciono el trial 59, el punto de Pareto con menor KL entre los que lograban un maximo del 5% de rechazos. El LoRA resultante se fusiono de nuevo en el layout original de safetensors, reescribiendo unicamente el shard que contiene `wo_ud`.
+El proceso de "decensoring" se realizó con Heretic 2.1.0 mediante ablación de rango arbitrario (ARA). Se ejecutaron 100 ensayos Optuna (20 aleatorios) con semilla 20261121 sobre una RTX PRO 6000 Blackwell de 96 GB en Google Colab, desquantizando los expertos a BF16 en memoria con la versión de transformers que añade soporte para Inkling 2 (PR #51050). Se requirió un parche a Heretic para esta arquitectura, ya que solo se edita la lineal interna de la proyección con puerta y se usan las activaciones de los tres pases de las capas 6-17 como muestras. El modelo publicado corresponde al ensayo 59, punto de Pareto con la KL más baja entre los ensayos con ≤5% de rechazos. La LoRA resultante se fusionó de vuelta en el layout original de safetensors, reescribiendo únicamente el shard que contiene `wo_ud`. No se dispone de información sobre el número de tokens de entrenamiento ni sobre el uso de RLHF/DPO en el modelo base.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno.
-- Razonamiento con modo "thinking" (bloque de pensamiento cerrado seguido de respuesta, con esfuerzo configurable: `none`, `high`, etc.).
-- Procesamiento de imagen y texto de entrada (pipeline image-text-to-text): el encoder de vision se mantiene intacto respecto al original.
-- Capacidades de decodificacion especulativa mediante la cabeza MTP (multi-token prediction).
-- Comportamiento "decensored": responde a peticiones que el modelo original rechaza, con tasas de rechazo reducidas a 6/100 en harmful_behaviors y 12/100 en JailbreakBench en modo respuesta directa.
-- Soporte de tool calling / function calling: no confirmado explicitamente en la informacion disponible.
-- Soporte de agentes y razonamiento multi-paso: no confirmado explicitamente; el modo thinking sugiere capacidad de razonamiento extendido, pero no se documenta integracion con frameworks de agentes.
-- Capacidades multilingues: no disponible.
+- Generación de texto conversacional multi-turno.
+- Comprensión de imágenes y texto combinados (image-text-to-text).
+- Razonamiento con modo "thinking" configurable (effort high/none).
+- Respuesta directa sin bloque de razonamiento (thinking block vacío).
+- Capacidad de rechazo reducida: responde a peticiones que el modelo original declina (6/100 en harmful_behaviors, 12/100 en JailbreakBench en modo directo).
+- Compatibilidad con tool calling / function calling: no confirmada explícitamente en la información disponible.
+- Soporte de agentes y razonamiento multi-paso: no confirmado explícitamente en la información disponible.
+- Capacidades multilingües: no disponible.
+- Compatibilidad de endpoints (`endpoints_compatible` en los tags).
 
 ## Casos de uso
 
-- Investigacion sobre alineacion y abliteracion: el modelo sirve como caso controlado para estudiar como la ablacion de un subconjunto minimo de pesos (21 de 24 proyecciones de atencion) afecta a las tasas de rechazo y a la calidad general, con metricas reproducibles de KL y MMLU.
-- Evaluacion de robustez de salvaguardas: permite a equipos de seguridad medir la eficacia de sus filtros externos cuando el modelo subyacente ya no rechaza por si mismo, usando los tests harmful_behaviors y JailbreakBench como referencia.
-- Generacion creativa sin restricciones de contenido: escritura de ficcion, guiones o narrativa que aborde temas sensibles, donde el modelo original rechazaria peticiones por politica de uso.
-- Despliegue como reemplazo directo en infraestructura existente: al compartir formato y pesos con el original, puede sustituir a thinkingmachines/Inkling-2-Mini en vLLM, SGLang o transformers cambiando solo el model id, sin recompilar ni reconvertir pesos.
-- Procesamiento multimodal image-text-to-text: tareas de descripcion de imagenes, respuesta a preguntas sobre documentos visuales o extraccion de informacion, aprovechando el encoder de vision intacto.
-- Razonamiento con modo thinking en entornos de investigacion: analisis de cadenas de razonamiento y su efecto en la tasa de rechazo (el autor documenta que con thinking activo el modelo aun se auto-convence de rechazar en 12/50 y 8/50 casos).
-- Experimentacion con cuantizacion y despliegue en consumer GPU: la variante GGUF publicada en repositorio separado permite probar el modelo en hardware mas modesto mediante llama.cpp u Ollama.
+- Investigación sobre alineación y seguridad: permite estudiar cómo una ablación mínima (21 proyecciones de atención) altera la tasa de rechazos de un MoE multimodal, sirviendo como caso de estudio reproducible con métricas de KL y MMLU documentadas.
+- Evaluación de robustez de filtros: útil para probar sistemas de moderación y clasificadores de contenido frente a un modelo con la censura atenuada, midiendo su capacidad de detección en entornos controlados.
+- Sustitución directa en pipelines existentes: al mantener el mismo formato y tamaño (~20 GB), puede reemplazar al original en vLLM, SGLang, transformers o llama.cpp sin cambios de infraestructura, útil para comparar comportamientos A/B.
+- Experimentación académica con modelos multimodales: permite analizar el efecto de la ablación sobre la comprensión de imágenes y el razonamiento, dado que el codificador de visión permanece intacto.
+- Pruebas de conversación multi-turno con contexto visual: escenarios de diálogo que combinan imágenes y texto donde se necesita respuesta directa sin rechazos por defecto.
+- Desarrollo de aplicaciones de investigación que requieren respuestas sin filtrado por defecto, con la responsabilidad legal y ética asumida por el desarrollador según la política de uso aceptable del modelo original.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos de benchmarks publicados en la informacion disponible son los de la model card del autor. No se dispone de resultados de MMLU, HumanEval, GSM8K u otros benchmarks estandar mas alla de los reportados a continuacion.
-
-| Metrica | Original | Inkling-2-Mini-heretic |
-|---|---|---|
-| Rechazos, respuesta directa, harmful_behaviors (100) | 100/100 | 6/100 |
-| Rechazos, respuesta directa, JailbreakBench harmful (100) | 97/100 | 12/100 |
-| Rechazos, thinking on (effort high), harmful_behaviors (50) | 50/50 | 12/50 |
-| Rechazos, thinking on (effort high), JailbreakBench (50) | 50/50 | 8/50 |
-| MMLU, 1.000 preguntas, zero-shot | 78,7% | 78,0% |
-| Divergencia KL, primer token de respuesta, 100 prompts innocuos | 0 | 0,049 |
-
-Notas metodologicas del autor: los rechazos se cuentan con la lista de palabras clave de Heretic sobre los primeros 150 tokens (modo directo) o sobre la respuesta final tras el thinking (hasta 1.536 tokens). "Respuesta directa" significa bloque de thinking vacio y cerrado seguido de la respuesta. MMLU usa los logits del siguiente token con `reasoning effort = none`, sobre las mismas 1.000 preguntas y semilla para ambos modelos.
-
-Comparativa interna entre variantes del propio autor:
-
-| Variante | Ediciones | Rechazos (Heretic, 100) | KL |
+| Metrica | Original | Inkling-2-Mini-heretic (attn) | Inkling-2-Mini-heretic-full |
 |---|---|---|---|
-| Esta version (attn) | proyecciones de salida de atencion | 4/100 | 0,049 |
-| Version full | + todos los expertos enrutados (`down_proj`) | 3/100 | 0,120 |
+| Rechazos, respuesta directa, harmful_behaviors (100) | 100/100 | 6/100 | 5/100 |
+| Rechazos, respuesta directa, JailbreakBench harmful (100) | 97/100 | 12/100 | 9/100 |
+| Rechazos, thinking on (effort high), harmful_behaviors (50) | 50/50 | 12/50 | 7/97 (100 prompts) |
+| Rechazos, thinking on (effort high), JailbreakBench (50) | 50/50 | 8/50 | no disponible |
+| MMLU, 1.000 preguntas, zero-shot | 78,7% | 78,0% | 77,0% |
+| Divergencia KL, primer token de respuesta, 100 prompts inocuos | 0 | 0,049 | 0,120 |
 
-Segun el autor, editar tambien los expertos apenas reduce un rechazo adicional a cambio de mas que duplicar la divergencia KL.
+Los rechazos se cuentan con la lista de palabras clave de Heretic sobre los primeros 150 tokens (modo directo) o sobre la respuesta final tras el thinking (hasta 1.536 tokens). MMLU se evalúa con los logits de la letra siguiente usando reasoning effort `none`, sobre las mismas 1.000 preguntas y semilla para ambos modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 20 GB en el formato publicado (pesos NVFP4/MXFP8 para expertos y BF16 para atencion); la variante full en BF16 ocupa unos 52 GB.
-- GPU recomendadas: el autor realizo el proceso de ablacion en una RTX PRO 6000 Blackwell (96 GB); para inferencia, el tamano de ~20 GB encaja en GPUs de 24 GB o mas (RTX 4090, RTX 3090, A10G, L40S) y, con holgura, en A100 40/80 GB y H100.
-- Cabe en consumer GPU: si, en RTX 4090 / 3090 (24 GB) con el formato publicado, siempre que el runtime soporte NVFP4/MXFP8; la variante GGUF amplia las opciones a GPUs con menos VRAM segun la cuantizacion elegida.
-- Opciones de despliegue: vLLM, SGLang, transformers (segun la model card oficial del modelo base); llama.cpp via la variante GGUF; Ollama no confirmado explicitamente.
-- Latencia y throughput estimados: no disponibles. El modelo incorpora cabeza MTP para decodificacion especulativa, lo que puede mejorar el throughput, pero no se publican cifras.
+- VRAM estimada: ~20 GB para los pesos en el formato oficial NVFP4/MXFP8; la variante full en BF16 requiere ~52 GB.
+- GPU recomendadas: RTX PRO 6000 Blackwell (96 GB) usada para el proceso de ablación; A100 80 GB y H100 80 GB son adecuadas para inferencia del formato oficial.
+- Cabe en GPU de consumo: sí, en GPUs con ≥24 GB de VRAM (por ejemplo RTX 4090) para el formato oficial de ~20 GB; la variante full de ~52 GB no cabe en consumer.
+- Opciones de despliegue: vLLM, SGLang, transformers y conversión a llama.cpp (mismo procedimiento que el modelo original); GGUF disponible en repo separado.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| yanauto/Inkling-2-Mini-heretic | 26.388.646.440 | no disponible | Apache 2.0 | Variante abliterada del modelo de Thinking Machines; ~20 GB; multimodal image-text-to-text |
-| thinkingmachines/Inkling-2-Mini (base) | 26.388.646.440 | no disponible | Apache 2.0 | Modelo original con salvaguardas intactas; mismos ficheros y formato |
-| yanauto/Inkling-2-Mini-heretic-full | no disponible (BF16, ~52 GB) | no disponible | Apache 2.0 | Variante que edita tambien los 3.072 expertos enrutados; KL 0,120 frente a 0,049 |
-| yanauto/Inkling-2-Mini-heretic-GGUF | no disponible | no disponible | Apache 2.0 | Conversion GGUF de esta misma variante para llama.cpp |
+| Modelo | Parametros | Contexto | Rechazos (harmful_behaviors directo) | MMLU | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| yanauto/Inkling-2-Mini-heretic | ~26,4 mil M | no disponible | 6/100 | 78,0% | Apache 2.0 | Hugging Face (~20 GB) |
+| thinkingmachines/Inkling-2-Mini (original) | ~26,4 mil M | no disponible | 100/100 | 78,7% | Apache 2.0 | Hugging Face |
+| yanauto/Inkling-2-Mini-heretic-full | ~26,4 mil M | no disponible | 5/100 | 77,0% | Apache 2.0 | Hugging Face (~52 GB, BF16) |
 
-No se dispone de datos de benchmarks comparativos con modelos de otros autores de la misma categoria (mismo tamano o misma tarea) en la informacion proporcionada.
+No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo responde a peticiones que el original rechaza; el autor declara explicitamente que el usuario es responsable del uso y del cumplimiento legal y de la politica de uso aceptable del modelo original (Thinking Machines acceptable use policy).
-- En modo thinking (effort high) la tasa de rechazo sube respecto al modo directo: 12/50 en harmful_behaviors y 8/50 en JailbreakBench, porque el modelo aun se auto-convence de rechazar en algunos casos. No es un modelo completamente libre de rechazos.
-- La ablacion se limita a 21 de 24 proyecciones de salida de atencion; los expertos enrutados conservan los pesos oficiales, por lo que el comportamiento residual de alineacion puede persistir en otras rutas.
-- La divergencia KL de 0,049 en el primer token indica un cambio medible en la distribucion de salida incluso en prompts innocuos; puede haber degradacion sutil en tareas sensibles a la calibracion.
-- MMLU cae ligeramente de 78,7% a 78,0% (1.000 preguntas, zero-shot), diferencia pequena pero no nula.
-- No se dispone de datos sobre sesgos conocidos, idiomas soportados ni evaluaciones de seguridad adicionales mas alla de los tests de rechazo reportados.
-- La licencia Apache 2.0 permite uso comercial, pero el autor remite a la politica de uso aceptable del modelo base, que puede imponer restricciones adicionales.
-- El modelo tiene 0 descargas y 0 likes en el momento de la ficha; es una publicacion reciente (creada el 2026-11-21) sin validacion independiente de la comunidad.
-- El soporte de NVFP4/MXFP8 en el runtime de inferencia es un requisito practico para ejecutar el formato publicado a ~20 GB; sin ese soporte, habria que recurrir a la variante GGUF o a reconvertir pesos.
+- El modelo responde a peticiones que el original rechaza; el usuario es responsable del uso y del cumplimiento legal y de la política de uso aceptable del modelo original.
+- En modo thinking sigue habiendo rechazos residuales: 12/50 en harmful_behaviors y 8/50 en JailbreakBench, por lo que el modelo "se convence" a sí mismo de rechazar en algunos casos.
+- La ablación introduce una divergencia KL de 0,049 en el primer token de respuesta, lo que implica cambios de comportamiento más allá del filtrado de rechazos.
+- Pérdida de 0,7 puntos en MMLU respecto al original (78,0% frente a 78,7%).
+- La variante full reduce más los rechazos pero con mayor divergencia (KL 0,120) y pérdida de 1,7 puntos en MMLU (77,0%).
+- No se dispone de información sobre sesgos conocidos, idiomas soportados ni riesgos específicos de alucinación más allá de los inherentes al modelo base.
+- Solo se evaluó con las métricas indicadas en la model card; no hay evaluación exhaustiva de capacidades multimodales ni de tool calling.
+- La licencia Apache 2.0 permite uso comercial, pero debe respetarse la política de uso aceptable del modelo original.
+- El proceso se realizó con una versión específica de transformers (PR #51050); pueden requerirse versiones compatibles para cargar el modelo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/yanauto/Inkling-2-Mini-heretic
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
 - Variante GGUF: https://huggingface.co/yanauto/Inkling-2-Mini-heretic-GGUF
-- Variante full (expertos editados): https://huggingface.co/yanauto/Inkling-2-Mini-heretic-full
-- Heretic (herramienta de ablacion): https://github.com/p-e-w/heretic
-- Politica de uso aceptable del modelo base: https://thinkingmachines.ai/model-acceptable-use-policy/
+- Variante full (BF16, ~52 GB): https://huggingface.co/yanauto/Inkling-2-Mini-heretic-full
+- Heretic (herramienta de ablación): https://github.com/p-e-w/heretic
 - Dataset harmful_behaviors: https://huggingface.co/datasets/mlabonne/harmful_behaviors
 - Dataset JailbreakBench: https://huggingface.co/datasets/JailbreakBench/JBB-Behaviors
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
+- Política de uso aceptable del modelo original: https://thinkingmachines.ai/model-acceptable-use-policy/

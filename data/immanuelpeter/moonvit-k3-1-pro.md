@@ -2,92 +2,90 @@
 
 ## Resumen
 
-MoonViT-K3.1-Pro es un extractor de características visuales (vision encoder) publicado por el usuario immanuelpeter en Hugging Face, derivado del modelo multimodal Kimi-K3.1-Pro de Moonshot AI. No se trata de un modelo lingüístico completo, sino de un bundle que contiene únicamente el Tower (el codificador de visión) y el Projector (la capa que adapta las características visuales al espacio del modelo principal). El repositorio incluye 165 tensores del Tower y 3 del Projector en su dtype original BF16, verificados tensor a tensor contra el checkpoint padre fijado en el commit `6d0a0202956796543364d666ab19c6ad1a494ee1`.
+MoonViT-K3.1-Pro es un paquete de pesos que extrae y aísla el "vision tower" MoonViT y el proyector multimodal (`mm_projector`) del modelo Kimi-K3.1-Pro de Moonshot AI. Lo publica el usuario immanuelpeter en Hugging Face como un repositorio independiente con el pipeline `image-feature-extraction`, de modo que puede cargarse con la librería `transformers` sin necesidad de descargar el checkpoint completo del modelo base. El paquete contiene únicamente los 165 tensores del tower (en BF16 original) y los 3 tensores del proyector, con un total de 401.214.464 parámetros y un tamaño de repositorio de 0,9 GB.
 
-La arquitectura reproduce la de Kimi K3: un Tower de 27 bloques de anchura 1024, con un merger espacial que agrupa cada cuadrado de parches 2x2 en un token de 4096 dimensiones, y un Projector que produce tokens de 7168 dimensiones. El bundle tiene 401.214.464 parámetros totales y un tamaño de repositorio de 0,9 GB, lo que lo hace manejable para experimentación en una sola GPU. Su pipeline declarado es `image-feature-extraction` y la librería es Transformers con código de modelado personalizado (`moonvit_v2`).
+El interés práctico es la modularidad: permite reutilizar el codificador visual de Kimi-K3.1-Pro en pipelines propios de extracción de características de imagen, o reemplazar el tower en otras arquitecturas multimodales. El autor valida la fidelidad del export con una comprobación de paridad tensor a tensor (`torch.equal`) frente al checkpoint original de Moonshot AI, y documenta que en FP32 y BF16 con atención matemática las salidas coinciden bit a bit, mientras que bajo la atención BF16 de vLLM en producción difieren hasta un 8,1% en norma L2 relativa.
 
-Su relevancia es acotada pero específica: permite a investigadores extraer características visuales congeladas del encoder de Kimi K3.1 Pro de forma aislada, sin cargar el modelo completo, para estudiar comparativas de arquitectura de visión entre K3 y K3.1 Pro. El autor advierte explícitamente de que las mediciones con características congeladas no permiten establecer relaciones causales sobre las etapas de entrenamiento ni explicar las puntuaciones del modelo completo en tareas de código, finanzas, CAD o factualidad. No se han publicado resultados de benchmarks de calidad en la información disponible.
+No es un modelo generativo autónomo: es un componente visual (tower + proyector) que produce embeddings de imagen proyectados al espacio del modelo de lenguaje de Kimi-K3.1-Pro. La licencia es la propia de Kimi K3.1-Pro (`kimi-k3-1-pro`, marcada como `other`), heredada del modelo fuente, y el código vendorizado proviene de `AI4Industry/MoonViT-V2` con sus avisos de copyright originales.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Vision transformer (MoonViT v2) con Tower de 27 bloques de anchura 1024, merger espacial 2x2 y Projector a 7168 |
-| Parámetros totales | 401.214.464 |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (modelo de extracción de características de imagen) |
-| Tipos de cuantización | no disponible (pesos publicados en BF16) |
-| Idiomas soportados | no disponible |
-| Licencia | Kimi K3.1-Pro License (custom, `license: other`) |
-| Formato de pesos | safetensors (BF16) |
+| Arquitectura | Vision transformer (MoonViT V2) con 27 capas, 1024 de dimensión oculta, 12 cabezas, QKV de 1536, patch size 14; compresión de tokens 2x2 pixel shuffle + pooling temporal sin parámetros aprendidos; proyector MLP `Linear(4096,4096)` + GELU + `Linear(4096,7168)` + `RMSNorm(7168)` |
+| Parametros totales | 401.214.464 (165 tensores del tower + 3 del proyector) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo de visión, no de texto) |
+| Tipos de cuantizacion | no disponible; los pesos se distribuyen en BF16 original |
+| Idiomas soportados | no disponible (componente visual, sin capacidades lingüísticas propias) |
+| Licencia | `kimi-k3-1-pro` (license_name: kimi-k3-1-pro, license: other), heredada de moonshotai/Kimi-K3.1-Pro |
+| Formato de pesos | safetensors (`model.safetensors`, `projector.safetensors`), BF16 |
 
 ## Arquitectura y entrenamiento
 
-El bundle contiene exclusivamente el Tower y el Projector del modelo multimodal Kimi K3.1 Pro. El Tower consta de 27 bloques transformer de anchura 1024 y extrae características visuales que, tras pasar por una RMSNorm final, entran en un merger espacial que agrupa cada cuadrado de parches 2x2 en un token de 4096 dimensiones. El Projector transforma después esos tokens a 7168 dimensiones, el espacio de embedding del modelo principal. No se publican detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO; el autor indica que los checkpoints liberados no permiten aislar qué etapa de entrenamiento causó los cambios de pesos entre K3 y K3.1 Pro.
+El componente es el tower visual MoonViT V2 de Kimi-K3.1-Pro: un transformer de visión de 27 capas con dimensión oculta 1024, 12 cabezas de atención y dimensión QKV de 1536, que opera sobre parches de 14 píxeles. Aplica compresión de tokens mediante pixel shuffle 2x2 y pooling temporal, ambos sin parámetros aprendidos, lo que reduce el número de tokens visuales antes de proyectarlos. La salida del tower incluye la RMSNorm final; a 448 píxeles el ejemplo documentado reporta una salida del tower de forma `(1, 1024, 1024)`, una salida fusionada de `(1, 256, 4096)` y una salida proyectada de `(1, 256, 7168)`.
 
-La innovación técnica destacable no está en el modelo en sí, sino en el proceso de exportación y validación: el bundle incluye un `export_manifest.json` con la procedencia de checkpoint, código y ficheros, y verifica cada tensor contra el padre fijado. La paridad numérica se ha validado con el código oficial de vLLM para visión registrado para Pro, sustituyendo únicamente dependencias de motor por operaciones PyTorch de rango único. Con el kernel rotatorio empaquetado de Triton en CUDA (o el rotatorio nativo en CPU) y atención SDPA enmascarada, las salidas BF16 son bit-exactas para tres imágenes fijas de 448 px en cada profundidad del Tower, tanto merged como projected. Sin embargo, el wrapper oficial `TORCH_SDPA` de vLLM difiere en BF16 con una diferencia L2 relativa máxima por slice de aproximadamente 8,1 %, por lo que el bundle no debe interpretarse como bit-idéntico a la ejecución BF16 de vLLM en producción.
+El proyector (`mm_projector`) es un MLP sin sesgo: `Linear(4096, 4096)`, activación GELU, `Linear(4096, 7168)` y `RMSNorm(7168)`, que alinea las características visuales con la dimensión del modelo de lenguaje de Kimi-K3.1-Pro. El autor no entrena ni ajusta nada: extrae los pesos originales en BF16 desde el shard 96 (`vision_tower`) y el shard 95 (`mm_projector`) del checkpoint `moonshotai/Kimi-K3.1-Pro`, verifica cada tensor exportado contra el padre fijado antes de escribir y conserva el dtype original. El código de modelado y procesamiento de imagen se vendoriza sin cambios desde `AI4Industry/MoonViT-V2`. No se documentan datos de entrenamiento, número de tokens, composición del dataset ni etapas de RLHF/DPO, ya que el paquete es un export de pesos preentrenados.
 
 ## Capacidades
 
-- Extracción de características visuales (image feature extraction) a partir de imágenes de entrada.
-- Producción de tokens visuales merged de 4096 dimensiones y proyectados de 7168 dimensiones.
-- Extracción por profundidad: el Tower permite acceder a características en cada nivel de profundidad, no solo a la salida final.
-- Inclusión de la RMSNorm final del Tower en la extracción.
-- Código de modelado independiente (`moonvit_v2`) compatible con Transformers mediante `trust_remote_code`.
-- No soporta generación de texto, tool calling, agentes, razonamiento multi-paso ni capacidades multilingües: es un componente visual, no un modelo de lenguaje.
-- No dispone de modo thinking, visión generativa ni audio.
+- Extracción de características de imagen: genera embeddings visuales del tower MoonViT a partir de imágenes de entrada.
+- Proyección al espacio multimodal: transforma las características visuales a la dimensión 7168 del modelo de lenguaje de Kimi-K3.1-Pro mediante el proyector incluido.
+- Procesamiento de imagen integrado: incluye `image_processing_moonvit_v2.py` y `preprocessor_config.json` para el preprocesado de imágenes.
+- Compresión de tokens visuales: pixel shuffle 2x2 y pooling temporal reducen la secuencia de tokens antes de la proyección.
+- Carga con `transformers`: soporta `trust_remote_code` mediante los ficheros `configuration_moonvit_v2.py` y `modeling_moonvit_v2.py`.
+- No incluye generación de texto, razonamiento, código, matemáticas, tool calling, agentes, capacidades multilingües ni modos de pensamiento: es exclusivamente un componente visual.
 
 ## Casos de uso
 
-- Investigación en comparativas de arquitectura de visión: cargar el Tower y el Projector de forma aislada para comparar características congeladas entre K3 y K3.1 Pro, sin necesidad de desplegar el modelo completo de Moonshot AI.
-- Extracción de embeddings visuales para sistemas de recuperación de imágenes: usar las salidas proyectadas de 7168 dimensiones como representación vectorial en índices de búsqueda visual, aprovechando que el bundle cabe en una GPU consumer.
-- Auditoría de procedencia de pesos: el `export_manifest.json` y la verificación tensor a tensor permiten validar que un despliegue concreto coincide con el checkpoint padre fijado, útil en pipelines de compliance de modelos.
-- Validación de paridad numérica de backends: comparar la salida del bundle con la ejecución oficial de vLLM para detectar divergencias en BF16 (el autor documenta hasta un 8,1 % de diferencia L2 relativa con el wrapper `TORCH_SDPA`), lo que sirve para calibrar tolerancias en producción.
-- Desarrollo de adaptadores multimodales: al disponer del Projector a 7168 dimensiones, se puede emparejar el encoder con cabezas o modelos que operen en ese espacio de embedding para prototipos de investigación.
-- Docencia y experimentación con vision transformers: con 401 M de parámetros y 0,9 GB en BF16, es viable ejecutarlo en una RTX 4090 o incluso en GPUs con 8-12 GB de VRAM, lo que facilita prácticas sobre atención, mergers espaciales y proyecciones.
-- Reproducción de experimentos con protocolo fijo: el bench usa redimensionado bicúbico de lado corto a 448 px y recorte central con batch size 1, lo que permite reproducir resultados de forma determinista en atención.
+- Extracción de embeddings de imagen para búsqueda visual: el tower produce características de forma `(1, 1024, 1024)` que pueden indexarse en un motor vectorial para recuperación por similitud, sin cargar el modelo completo de Kimi-K3.1-Pro.
+- Sustitución del tower visual en pipelines multimodales propios: al estar empaquetado de forma independiente con su proyector y su configuración, puede integrarse en una arquitectura VLM casera que espere la dimensión 7168 del proyector.
+- Precomputación de características para entrenamiento de adaptadores: permite generar y cachear embeddings visuales de un corpus de imágenes antes de entrenar cabezas o adaptadores sobre ellos, reduciendo el coste de repetir el forward del tower.
+- Clasificación y etiquetado de imágenes por transferencia: las características del tower pueden alimentar clasificadores lineales o cabezas ligeras para tareas de visión concretas.
+- Auditoría y reproducibilidad de Kimi-K3.1-Pro: al conservar los pesos BF16 originales y verificar paridad tensor a tensor, sirve para validar reproducciones del componente visual frente al checkpoint padre.
+- Investigación en alineación visión-lenguaje: el par tower + proyector aislado permite estudiar cómo se proyectan las características visuales al espacio del LLM sin el resto del modelo.
+- Despliegue ligero en entornos con VRAM limitada: con 0,9 GB de repositorio, el componente cabe en GPUs de consumo para tareas de extracción de características por lotes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor indica explícitamente que las mediciones completas de capacidad con características congeladas están pendientes y que no se reclama ninguna ventaja de calidad del modelo. Los únicos datos numéricos publicados son de validación de paridad: salidas BF16 bit-exactas con el kernel rotatorio oficial y SDPA enmascarada para tres imágenes fijas de 448 px, y una diferencia L2 relativa máxima por slice de aproximadamente 8,1 % frente al wrapper `TORCH_SDPA` oficial de vLLM.
+No se han publicado resultados de benchmarks en la información disponible.
+
+La única validación documentada es la comprobación de paridad: los 165 tensores del tower y los 3 del proyector coinciden con el checkpoint padre fijado mediante `torch.equal`, y las salidas del tower, fusionada y proyectada coinciden bit a bit en FP32 y en BF16 con atención matemática. Bajo atención BF16 de vLLM en producción, las salidas difieren hasta aproximadamente un 8,1% en norma L2 relativa.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,9 GB en BF16 para los pesos; con activaciones y batch size 1 a 448 px, se estima un uso total en el rango de 2-4 GB, aunque no se dispone de medición oficial.
-- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM; una RTX 4090, A100 o H100 son sobredimensionadas para este bundle y permitirían lotes mayores o mayor resolución.
-- Cabe en GPU consumer: sí, en tarjetas con 8 GB o más (RTX 3060 8 GB, RTX 4060 Ti, RTX 4070, RTX 4090).
-- Opciones de despliegue: Transformers con `trust_remote_code` (librería declarada); el autor referencia código oficial de vLLM para visión, por lo que vLLM es una vía de despliegue validada. No se mencionan llama.cpp, Ollama ni TGI.
-- Latencia y throughput estimados: no disponibles. El autor recomienda batch size 1 para atención reproducible.
+- VRAM estimada para inferencia: en BF16, los 401,2 M de parámetros ocupan aproximadamente 0,8 GB de pesos; con activaciones y overhead de runtime, un presupuesto de 2-4 GB de VRAM es suficiente para lotes pequeños.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; RTX 3060, RTX 4060, RTX 4090, A100 y H100 son válidas. Para extracción por lotes a gran escala, A100/H100 aportan mayor throughput.
+- Cabe en GPU de consumo: sí, en todas las GPU consumer modernas con 4 GB o más de VRAM.
+- Opciones de despliegue: `transformers` con `trust_remote_code=True` (vía documentada en `examples/inference.py`); el autor menciona ejecución bajo vLLM BF16 en producción, aunque con divergencia numérica respecto al padre. No se documentan integraciones con llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles. El autor recomienda batch size 1 para atención reproducible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
+| Modelo | Parámetros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MoonViT-K3.1-Pro (este) | 401.214.464 | no disponible | Vision encoder (Tower + Projector) | Kimi K3.1-Pro License (custom) | Hugging Face, 0 descargas |
-| moonshotai/Kimi-K3.1-Pro (modelo base) | no disponible en la información | no disponible | Modelo multimodal completo | Kimi K3.1-Pro License | Hugging Face (referenciado como base) |
-| AI4Industry/MoonViT-V2 (código fuente) | no disponible | no disponible | Código de modelado standalone | no disponible | Repositorio referenciado en la model card |
+| MoonViT-K3.1-Pro (este) | 401,2 M | Tower visual + proyector (export) | no aplica | kimi-k3-1-pro (other) | Hugging Face, 289 descargas |
+| AI4Industry/MoonViT-V2 | no disponible | Tower visual MoonViT V2 (código vendorizado) | no aplica | no disponible | Hugging Face |
+| moonshotai/Kimi-K3.1-Pro | no disponible | Modelo multimodal completo | no disponible | kimi-k3-1-pro | Hugging Face (checkpoint padre) |
 
-No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables en la información proporcionada, por lo que no es posible establecer una comparativa de rendimiento.
+No se dispone de datos de benchmarks ni de parámetros de los modelos comparables en la información proporcionada, por lo que no es posible comparar rendimiento numérico.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de lenguaje: no genera texto, no soporta tool calling ni agentes; su uso se limita a extracción de características visuales.
-- El protocolo de evaluación del bench (redimensionado bicúbico a 448 px y recorte central cuadrado) difiere del preprocesado dinámico del modelo completo, por lo que los resultados no son directamente trasladables a producción.
-- La ejecución no es bit-idéntica a vLLM en BF16: el wrapper `TORCH_SDPA` oficial presenta hasta un 8,1 % de diferencia L2 relativa por slice, lo que puede afectar a comparaciones numéricas estrictas.
-- Las mediciones con características congeladas no permiten establecer relaciones causales sobre etapas de entrenamiento ni explicar las puntuaciones del modelo completo en código, finanzas, CAD o factualidad, según advierte el propio autor.
-- La licencia es la Kimi K3.1-Pro License (custom, `license: other`), copiada byte a byte del padre; no está cubierta por la licencia MIT del bench. Es imprescindible revisar `LICENSE` y `NOTICE` antes de cualquier uso comercial.
-- El código vendorizado conserva sus avisos de copyright originales; su reutilización debe respetar dichos avisos.
-- Riesgo de sesgos y alucinación: no disponible, al no ser un modelo generativo; los sesgos heredados del dataset de entrenamiento del encoder no se documentan.
-- Idiomas soportados: no disponible; al ser un encoder visual, la dimensión lingüística no aplica directamente.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la ficha, por lo que no existe validación comunitaria independiente.
-- No se han publicado benchmarks de calidad; no se debe asumir ninguna ventaja de rendimiento frente a otros encoders visuales.
+- No es un modelo generativo: no produce texto, código ni razonamiento; solo características visuales. No debe evaluarse como LLM ni como VLM completo.
+- Divergencia numérica en producción: bajo atención BF16 de vLLM las salidas difieren hasta un 8,1% en norma L2 relativa respecto al checkpoint padre, por lo que no es bit-idéntico en ese entorno de ejecución.
+- Licencia restrictiva: hereda la licencia `kimi-k3-1-pro` (marcada como `other`); es necesario revisar `LICENSE` antes de cualquier uso comercial. El código vendorizado conserva sus propios avisos en `LICENSE-CODE` y `NOTICE`.
+- Idiomas: no aplica, pero tampoco se documenta ningún soporte lingüístico, lo que limita su uso fuera de pipelines visuales.
+- Sesgos y alucinación: no se documentan sesgos conocidos del tower; al ser un extractor de características, el riesgo de alucinación textual no aplica, pero los sesgos del dataset de preentrenamiento de Kimi-K3.1-Pro pueden propagarse a los embeddings.
+- Dependencia de código remoto: requiere `trust_remote_code=True` y los ficheros de modelado vendorizados, lo que añade superficie de revisión en producción.
+- Reproducibilidad de atención: el autor recomienda batch size 1; lotes mayores pueden alterar la atención y, por tanto, las salidas.
+- Madurez: repositorio con 0 likes y 289 descargas, creado en noviembre de 2026; sin comunidad ni soporte documentado más allá del README.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/immanuelpeter/MoonViT-K3.1-Pro
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3.1-Pro
-- Código de modelado standalone (AI4Industry/MoonViT-V2): https://huggingface.co/AI4Industry/MoonViT-V2
-- Commit del checkpoint padre: `6d0a0202956796543364d666ab19c6ad1a494ee1` (referenciado en la model card)
-- Commit del código standalone: `c5acb88baf02a94e68ca8a225f7eebee152c1fc6` (referenciado en la model card)
-- Commit del código oficial de vLLM para visión: `1ecc9cc4ce6626352df39e4364579ec376c10761` (referenciado en la model card)
-- Ficheros de procedencia y validación: `export_manifest.json`, `LICENSE` y `NOTICE` dentro del repositorio de Hugging Face
+- Código vendorizado de origen: https://huggingface.co/AI4Industry/MoonViT-V2
+- Comprobación de paridad: https://github.com/immanuel-peter/vision-tower-bench/blob/main/vtb/parity/moonvit_v2.py
+- Script de export: https://github.com/immanuel-peter/vision-tower-bench/blob/main/vtb/adapters/moonvit_v2.py
+- Ejemplo de inferencia: https://huggingface.co/immanuelpeter/MoonViT-K3.1-Pro/blob/main/examples/inference.py

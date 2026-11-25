@@ -2,100 +2,95 @@
 
 ## Resumen
 
-Minmini-1B es un modelo de lenguaje de 1.000 millones de parámetros especializado en tamil, desarrollado por Felamity-Technologies mediante ajuste fino supervisado de Google Gemma-3-1B-IT. El nombre proviene del tamil மின்மினி ("luciérnaga"). Su objetivo es cubrir tareas de procesamiento del lenguaje natural en tamil que los modelos generalistas de gran tamaño resuelven de forma deficiente: inferencia de lenguaje natural, comprensión lectora extractiva y traducción inglés-tamil. El modelo se entrenó, según declara el autor, íntegramente en un único portátil.
+Minmini-1B (மின்மினி, "luciérnaga") es un modelo de lenguaje de 1.000 millones de parámetros especializado en tamil y tanglish, desarrollado por Felamity-Technologies mediante ajuste fino supervisado de google/gemma-3-1b-it. El modelo está diseñado para tareas centradas en texto proporcionado por el usuario: inferencia en lenguaje natural, comprensión lectora extractiva, traducción inglés↔tamil, transliteración entre tanglish y escritura tamil, y conversación coloquial en registro hablado. Su propuesta principal es ofrecer un especialista pequeño que supera en tareas de tamil a modelos mucho mayores, según los datos declarados por el autor.
 
-La propuesta de valor es la eficiencia: con 1B de parámetros y aproximadamente 2 GB en bf16, el modelo afirma superar en tareas de tamil a Sarvam de 105.000 millones de parámetros (IndicXNLI 75,0 % frente a 58,2 %; IndicQA F1 52,1 frente a 44,5). Estas cifras son resultados en formato supervisado, es decir, el modelo fue ajustado sobre las mismas plantillas de tarea que se evalúan, mientras que los modelos comparados no, por lo que la comparación no es directamente equivalente.
+La versión v4 incorpora una etapa adicional de ajuste fino sobre aproximadamente 7.250 conversaciones cotidianas en tamil hablado (tanglish y escritura tamil) y 2.640 frases que enlazan tanglish con escritura tamil e inglés, generadas por sarvam-105b y filtradas por relevancia y precisión. Esto corrige el principal defecto de v3, que respondía en tamil formal escrito y fallaba en comprender mensajes coloquiales como "nee ena panra" o "saptiya?".
 
-Es un especialista, no un asistente general. Funciona bien cuando la tarea parte de un texto proporcionado (responder desde un pasaje, verificar una afirmación, traducir frases cortas) y falla en conocimiento factual, escritura larga y conversación multi-turno. Su relevancia actual reside en la posibilidad de desplegar NLP en tamil de forma local y offline en hardware de consumo.
+El modelo se distribuye con licencia Gemma, soporta únicamente tamil e inglés, y está pensado como especialista de dominio y no como asistente general. Su relevancia actual reside en la combinación de tamaño reducido (apto para hardware de consumo), contexto de 128.000 tokens heredado de Gemma 3 y un enfoque explícito en registro coloquial tamil, un nicho poco cubierto por modelos multilingües generalistas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Gemma 3 text, `gemma3_text`) |
+| Arquitectura | Transformer decoder-only (gemma3_text) |
 | Parametros totales | 999.885.952 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (heredada de Gemma-3-1B-IT) |
-| Tipos de cuantizacion | pesos publicados en bf16 (safetensors); cuantizaciones GGUF/MLX no documentadas en la model card |
-| Idiomas soportados | tamil (ta), ingles (en) |
-| Licencia | Gemma (términos de uso de Google) |
-| Formato de pesos | safetensors (bf16); compatible con transformers y MLX |
+| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Gemma 3 1B-IT soporta 32.768 tokens; el autor no lo declara) |
+| Tipos de cuantizacion | no disponible (el repo contiene safetensors; se menciona soporte MLX en los tags) |
+| Idiomas soportados | tamil (ta), inglés (en), tanglish (tamil romanizado) |
+| Licencia | Gemma |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `google/gemma-3-1b-it`, un transformer decoder-only de la familia Gemma 3 en su variante solo texto. El ajuste fino es supervisado (SFT) sobre tres conjuntos de datos declarados: `Divyanshu/indicxnli` (inferencia de lenguaje natural en lenguas índicas), `ai4bharat/indic-align` y `CohereForAI/aya_dataset`. No se documenta el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo etapas de RLHF o DPO.
+Minmini-1B es un ajuste fino supervisado (SFT) del modelo google/gemma-3-1b-it, un transformer decoder-only de la familia Gemma 3. No se documenta en la información disponible el uso de RLHF, DPO u otras etapas de alineación posteriores al SFT. El entrenamiento se realizó, según el autor, íntegramente en un portátil, lo que subraya el carácter ligero del proceso.
 
-La innovación destacable no es arquitectónica sino metodológica: el ajuste se realizó sobre plantillas de prompt muy concretas (formato de respuesta corta para QA extractiva, formato de letra única A/B/C para NLI), y el autor reporta los resultados usando esas mismas plantillas. Además, el modelo incorpora un mecanismo de abstención para QA: se toma la probabilidad del token `<end_of_turn>` (id 106) como primer token generado; si supera 0,5, la pregunta se trata como no respondible desde el pasaje (AUC reportada de 0,89). El formato de chat es el de Gemma, con el mensaje de sistema plegado en el primer turno de usuario y parada en `<end_of_turn>`.
+Los datos de entrenamiento combinan varios conjuntos: Divyanshu/indicxnli para inferencia en lenguaje natural, ai4bharat/indic-align y CohereForAI/aya_dataset para alineamiento y traducción, openai/gsm8k y Vishal0407/GSM8K_TAMIL para matemáticas, y suhani-sarvam/google-dakshina para transliteración. La etapa específica de v4 añade unas 7.250 conversaciones coloquiales y 2.640 frases de enlace tanglish–tamil–inglés, generadas por sarvam-105b y filtradas por relevancia y precisión. No se especifica el número total de tokens de entrenamiento ni la composición exacta del dataset.
 
 ## Capacidades
 
-- Comprensión lectora extractiva en tamil: responde preguntas a partir de un pasaje con una frase corta, sin explicación.
-- Detección de preguntas no respondibles: devuelve respuesta vacía cuando la información no está en el pasaje.
-- Inferencia de lenguaje natural (NLI) en tamil: clasifica una afirmación como implicación, contradicción o neutralidad respecto a un texto, con respuesta de letra única.
-- Traducción inglés-tamil y tamil-inglés de frases cortas.
-- Aritmética y lógica simple en inglés con razonamiento paso a paso correcto (5/5 en las pruebas simples del autor).
-- Aritmética simple en tamil, con errores ocasionales (3/5 en las pruebas del autor).
-- Redacción breve en tamil (mensajes, listas, párrafos cortos) con calidad legible pero con palabras erróneas e invenciones factuales ocasionales.
-- No se documenta soporte de tool calling, function calling, agentes ni modo thinking.
-- No se documenta capacidad de visión ni audio (la variante es solo texto).
-- Capacidades multilingües limitadas a tamil e inglés.
+- Generación de texto y conversación en tamil coloquial (registro hablado) y en tanglish, incluyendo saludos, small talk y respuestas cotidianas.
+- Inferencia en lenguaje natural en tamil: determinar si una afirmación se sigue, contradice o es independiente de un texto dado.
+- Comprensión lectora extractiva: responder preguntas a partir de un pasaje en tamil, con capacidad declarada de indicar "no hay respuesta en el pasaje" (AUC 0,89).
+- Traducción inglés↔tamil de frases cortas.
+- Transliteración entre tanglish (tamil en caracteres latinos) y escritura tamil.
+- Resolución de problemas matemáticos de primaria paso a paso en inglés, tamil y tanglish (rendimiento limitado a problemas cortos y simples).
+- Análisis de sentimiento en tanglish (con caída de rendimiento en v4 respecto a v3).
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión, audio ni modo de razonamiento extendido.
 
 ## Casos de uso
 
-- Atención al cliente sobre documentación tamil: el modelo responde preguntas extrayendo la frase relevante de un pasaje (FAQ, manual, ficha de producto) y señala de forma fiable cuándo la respuesta no está en el texto, lo que reduce respuestas inventadas en dominios acotados.
-- Verificación de afirmaciones en tamil: dado un texto y una afirmación, clasifica la relación lógica (implicación, contradicción, neutralidad), útil en moderación de contenido o validación de resúmenes.
-- Traducción de frases cortas inglés-tamil en interfaces y formularios: adecuado para localizar cadenas de UI, avisos y mensajes breves, no para documentos largos.
-- NLP offline en dispositivo: con 1B de parámetros y unos 2 GB en bf16, se puede ejecutar en un portátil o en Apple Silicon vía MLX sin conexión, lo que sirve para entornos con requisitos de privacidad o sin red.
-- Extracción de respuestas en pipelines de formularios y trámites: dado un documento tamil y una pregunta estructurada, devuelve el dato concreto, integrable en un flujo de procesamiento por lotes.
-- Prototipado rápido de tareas NLI y QA en tamil: al ser pequeño y cargar en transformers estándar, permite iterar sobre plantillas y evaluar con conjuntos como IndicXNLI o IndicQA antes de escalar a modelos mayores.
-- Generación de borradores breves en tamil (mensajes, listas, resúmenes de una frase) con revisión humana obligatoria por el riesgo de invención de datos.
+- Atención al cliente en tamil: el modelo puede responder preguntas a partir de documentación de soporte, FAQ o formularios en tamil, indicando de forma fiable cuándo la respuesta no está en el pasaje (IndicQA F1 51,3; AUC 0,89 en detección de no respuesta).
+- Verificación de afirmaciones en tamil: comprobar si una declaración se sigue, contradice o es independiente de un texto fuente, útil en moderación de contenido o validación de resúmenes (IndicXNLI 73,5%).
+- Chatbot conversacional en tamil coloquial y tanglish: gestionar interacciones informales con usuarios que escriben como hablan ("enna panra", "saaptiya"), con respuestas en el registro y alfabeto adecuados.
+- Traducción de frases cortas inglés↔tamil: para localización de interfaces, notificaciones o mensajes de producto (FLORES chrF 44,9 / 44,4 en una comprobación de 100 frases).
+- Normalización de tanglish a escritura tamil: convertir texto romanizado informal a escritura tamil estándar en pipelines de procesamiento de lenguaje, con chrF 52,7 / 56,9 en romanizaciones humanas reservadas.
+- Asistencia educativa básica en matemáticas: resolver problemas aritméticos de primaria paso a paso en inglés (GSM8K 28,8%) o tamil (14,8%), adecuado solo para problemas cortos y simples.
+- Análisis de sentimiento en tanglish: clasificación de opiniones informales en redes sociales o encuestas, con una precisión declarada del 55,6% en v4.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor (no verificados de forma independiente):
+Datos declarados por el autor del modelo (no verificados de forma independiente):
 
-| Tarea | Conjunto de evaluacion | Metrica | Minmini-1B |
+| Tarea | Dataset | Métrica | Valor |
 |---|---|---|---|
-| Inferencia de lenguaje natural | IndicXNLI (tamil, test, 1.000 pares) | Accuracy (prompt Tamil-Bench) | 75,0 |
-| QA extractiva | IndicQA (tamil, 1.000 preguntas) | F1 | 52,1 |
-| QA extractiva | IndicQA (tamil, 1.000 preguntas) | Exact match | 43,9 |
-| Traduccion EN→TA | FLORES-200 devtest (eng_Latn-tam_Taml, 5-shot) | chrF | 46,8 |
-| Traduccion TA→EN | FLORES-200 devtest (tam_Taml-eng_Latn, 5-shot) | chrF | 45,1 |
+| Inferencia en lenguaje natural | IndicXNLI (tamil, test, 1.000 pares) | Accuracy (prompt Tamil-Bench) | 73,5 |
+| QA extractiva | IndicQA (tamil, 1.000 preguntas) | F1 | 51,3 |
+| QA extractiva | IndicQA (tamil, 1.000 preguntas) | Exact match | 43,6 |
+| Matemáticas de primaria | GSM8K test (inglés, primeros 250 problemas) | Accuracy | 28,8 |
+| Matemáticas de primaria (tamil) | GSM8K test en tamil (primeros 250 problemas) | Accuracy | 14,8 |
+| Transliteración tanglish→tamil | Dakshina Tamil (250 frases reservadas) | chrF | 52,7 |
 
-Datos adicionales citados en la model card (fuera del model-index): IndicQA F1 55,1 y NLI 79,5 % en ítems del leaderboard de Tamil-Bench; MILU 28,0 % (azar 25 %); Belebele 36,9 %; AUC de 0,89 para la detección de preguntas no respondibles; robustez al orden de opciones en NLI entre 75,0 y 75,7 %. El autor compara con Sarvam (105B): IndicXNLI 58,2 % e IndicQA F1 44,5 con los mismos prompts.
+El autor compara con sarvam-105b en IndicXNLI (73,5% frente a 58,2%) e IndicQA F1 (51,3 frente a 44,5) con los mismos prompts, y menciona puntuaciones de 78,0% en inferencia y F1 52,4 en lectura comprensiva en ítems del leaderboard Tamil-Bench, así como resultados de chat coloquial evaluados 1–5 por sarvam-105b (4,09 coloquial, 3,93 relevancia, 3,99 fluidez en v4 frente a 1,47, 1,67 y 1,99 en v3). No se dispone de resultados de MMLU, HumanEval ni otros benchmarks estándar.
 
 ## Requisitos de hardware
 
-- VRAM en bf16: aproximadamente 2 GB para los pesos, más overhead de activaciones y caché KV; en la práctica, entre 3 y 4 GB para inferencia cómoda.
-- VRAM en cuantización de 8 bits: alrededor de 1 GB de pesos; en 4 bits, alrededor de 0,6 GB (cuantizaciones no publicadas oficialmente por el autor).
-- GPU consumer: cabe holgadamente en cualquier GPU con 4 GB o más (RTX 3050, RTX 4060, RTX 4090); también en CPU y en Apple Silicon.
-- GPU de datacenter: A100, H100 y similares no son necesarias; el modelo está pensado para hardware modesto.
-- Despliegue: transformers (referencia oficial), MLX en Apple Silicon (referencia oficial), text-generation-inference (etiqueta del repo); llama.cpp, Ollama y vLLM no están documentados por el autor para este modelo.
+- VRAM estimada para inferencia: aproximadamente 2 GB en fp16 para los 1.000 millones de parámetros; en torno a 1 GB en cuantización de 8 bits y 0,5–0,7 GB en 4 bits (estimación según tamaño, no declarada por el autor).
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; RTX 3060, RTX 4060, RTX 4090, A100 y H100 son suficientes con holgura.
+- Cabe en GPU de consumo: sí, en cualquier GPU moderna con 4 GB o más; también puede ejecutarse en CPU.
+- Opciones de despliegue: transformers (librería declarada), text-generation-inference (tag endpoints_compatible), MLX (tag mlx). No se documenta compatibilidad explícita con llama.cpp, Ollama o vLLM en la información disponible.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tamil (NLI / QA F1) | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Minmini-1B | 1B | no disponible | 75,0 % / 52,1 | Gemma | Hugging Face, safetensors |
-| Sarvam (segun el autor) | 105B | no disponible | 58,2 % / 44,5 (mismos prompts) | no disponible | no disponible |
-| Gemma-3-1B-IT (base) | 1B | no disponible | no disponible | Gemma | Hugging Face |
-| Gemini 3.8 Flash / Claude Sonnet 5.5 (segun el autor) | no disponible | no disponible | inferiores en NLI tamil segun el autor | propietaria | API |
+| Minmini-1B | 1.000 M | no disponible | Tamil/tanglish especialista | Gemma | Hugging Face |
+| google/gemma-3-1b-it | 1.000 M | 32.768 tokens (modelo base) | Asistente general multilingüe | Gemma | Hugging Face |
+| sarvam-105b | 105.000 M (según el autor) | no disponible | Multilingüe indio generalista | no disponible | no disponible |
 
-La comparación con Sarvam y con los modelos propietarios procede de la model card y no está verificada de forma independiente; además, Minmini fue ajustado sobre los formatos evaluados, lo que favorece sus cifras frente a modelos no ajustados en esas plantillas.
+Según los datos declarados por el autor, Minmini-1B supera a sarvam-105b en IndicXNLI (73,5% frente a 58,2%) e IndicQA F1 (51,3 frente a 44,5) con los mismos prompts, aunque estas cifras son resultados supervisados en formato y no comparables de forma directa con evaluaciones zero-shot. No se dispone de datos de benchmarks de gemma-3-1b-it en tamil en la información proporcionada para una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Resultados en formato supervisado: las métricas se obtuvieron con las mismas plantillas usadas en el entrenamiento, por lo que no son comparables de forma directa con modelos evaluados zero-shot.
-- Conocimiento factual muy limitado: MILU 28,0 % frente a un 25 % de azar; el modelo inventa hechos y no sirve como fuente de conocimiento ni para preguntas de examen.
-- Razonamiento aritmético débil en tamil: errores como escribir 12 − 5 = 5; fiable solo en problemas simples y en inglés.
-- Escritura larga y chat multi-turno no evaluados y, según el autor, no adecuados: pierde el hilo en respuestas largas.
-- Riesgo de alucinación en redacción libre: palabras erróneas e invenciones factuales ocasionales.
-- Idiomas limitados a tamil e inglés; no se documenta cobertura de otras lenguas índicas.
-- Licencia Gemma: el uso comercial está sujeto a los términos de uso de Google, que imponen restricciones y obligaciones de atribución; conviene revisarlos antes de producción.
-- Longitud de contexto no documentada en la información disponible; hereda la de Gemma-3-1B-IT.
-- Sin soporte documentado de tool calling ni de agentes, lo que limita su integración en pipelines que requieran llamadas a funciones.
-- Modelo con pocas descargas (649) y creado recientemente: ecosistema y validación externa escasos.
+- Los resultados son supervisados y en formato: el modelo fue ajustado fino sobre los formatos de estas tareas, mientras que los modelos comparados no, por lo que las comparaciones no son equivalentes a evaluaciones zero-shot.
+- Es un especialista pequeño, no un asistente general: no es una fuente de conocimiento y su matemática solo es fiable en problemas cortos y simples (GSM8K 28,8% en inglés, 14,8% en tamil).
+- Riesgo de alucinación fuera de tareas de comprensión de texto proporcionado; el autor recomienda usarlo sobre texto dado.
+- Limitaciones de idioma: solo tamil, tanglish e inglés; no cubre otros idiomas indios.
+- Caída de rendimiento en análisis de sentimiento en tanglish respecto a v3 (61,6% a 55,6%) y ligero descenso en IndicXNLI (74,4 a 73,5) y MILU (29,3 a 28,3).
+- Errores de transliteración en palabras raras o préstamos en la conversión tanglish↔tamil.
+- Licencia Gemma: el uso comercial está sujeto a los términos de la licencia Gemma de Google, que impone restricciones y obligaciones específicas.
+- No se documentan sesgos específicos ni evaluaciones de seguridad en la información disponible.
 
 ## Enlaces
 
@@ -104,6 +99,6 @@ La comparación con Sarvam y con los modelos propietarios procede de la model ca
 - Dataset IndicXNLI: https://huggingface.co/datasets/Divyanshu/indicxnli
 - Dataset IndicAlign: https://huggingface.co/datasets/ai4bharat/indic-align
 - Dataset Aya: https://huggingface.co/datasets/CohereForAI/aya_dataset
-- IndicQA: https://huggingface.co/datasets/ai4bharat/IndicQA
-- FLORES-200: https://huggingface.co/datasets/facebook/flores
-- Terminos de licencia Gemma: https://ai.google.dev/gemma/terms
+- Dataset GSM8K: https://huggingface.co/datasets/openai/gsm8k
+- Dataset GSM8K Tamil: https://huggingface.co/datasets/Vishal0407/GSM8K_TAMIL
+- Dataset Dakshina: https://huggingface.co/datasets/suhani-sarvam/google-dakshina

@@ -44,16 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "[Megathread] - Best Models/API discussion - Week of: August 09, 2026",
-      "url": "https://www.reddit.com/r/SillyTavernAI/comments/1vk3byn/megathread_best_modelsapi_discussion_week_of/",
-      "snippet": "09.08.2026 ... may or may not have used it with SubMaroon/Dark-Goetia-26B-A4B-LoRA-v2 as well. ... mradermacher/Gemma-4-Dark-Thoughts-31B-GGUF. This is the best ..."
-    },
-    {
-      "title": "[Megathread] - Best Models/API discussion - Week of: April 26, 2026",
-      "url": "https://www.reddit.com/r/SillyTavernAI/comments/1swlo1m/megathread_best_modelsapi_discussion_week_of/",
-      "snippet": "26.04.2026 ... I recommend trying this model, the G4-MeroMero-26B-A4B. I liked it ... mradermacher/gemma-4-26B-A4B-it-abliterix-v6-i1-GGUF · Hugging ..."
-    }
-  ]
+  "sources": []
 }

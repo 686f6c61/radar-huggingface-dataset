@@ -1,98 +1,87 @@
 # AMAImedia/Inkling-2-Mini-Uncensored-BF16-GGUF
 
 ## Resumen
+Inkling-2-Mini es un modelo multimodal de propósito general desarrollado por Thinking Machines Lab que acepta entradas de texto e imagen y genera texto. Se trata de un transformer decodificador con capas de mezcla de expertos (MoE) dispersa y una innovación arquitectónica denominada "looped transformer": 24 capas de pesos, de las cuales las 12 centrales se ejecutan tres veces con pesos compartidos, resultando en 48 aplicaciones de capa por token. Con 26.400 millones de parámetros totales, está diseñado para aplicaciones agénticas, asistentes de código, chatbots y sistemas RAG.
 
-Inkling 2 Mini es un modelo multimodal de propósito general desarrollado por Thinking Machines Lab, Inc. que acepta entradas de texto e imagen y genera salidas de texto. Se trata de un transformer decoder-only con capas de mezcla de expertos (MoE) dispersa, y su rasgo arquitectónico más distintivo es el uso de "looping": las 12 capas centrales de las 24 totales se ejecutan tres veces compartiendo pesos, lo que resulta en 48 aplicaciones de capa por token a partir de solo 24 capas de pesos. El checkpoint se distribuye en aproximadamente 20 GB con precisiones mixtas NVFP4 y MXFP8, y el recuento real de parámetros registrado en los safetensors del repositorio es de 26.388.646.440.
+La versión aquí descrita es una cuantización GGUF en BF16 publicada por AMAImedia bajo el identificador `AMAImedia/Inkling-2-Mini-Uncensored-BF16-GGUF`. Deriva del checkpoint original de Thinking Machines Lab y ha sido modificada mediante técnicas de "abliteration" para eliminar restricciones de rechazo, etiquetándose como "uncensored". El repositorio incluye pesos en safetensors y GGUF, con un tamaño total de 49,6 GB, e incorpora cuantizaciones de 8 bits generadas con modelopt e imatrix.
 
-La versión aquí descrita es una redistribución comunitaria publicada por AMAImedia bajo el identificador `AMAImedia/Inkling-2-Mini-Uncensored-BF16-GGUF`. Deriva del modelo original `thinkingmachines/Inkling-2-Mini` y de la cuantización intermedia `AtomicChat/Inkling-2-Mini-Uncensored-GGUF`, y se ofrece en formato BF16 y GGUF, presumiblemente con el ajuste "uncensored" aplicado por la cadena de derivación. El repositorio ocupa 60,0 GB y se publicó el 21 de noviembre de 2026, un día después del lanzamiento del modelo base.
-
-Su relevancia radica en que combina capacidades multimodales (image-text-to-text) con un tamaño contenido que permite inferencia local en hardware de consumo alto o estaciones de trabajo, bajo licencia Apache 2.0, lo que facilita su integración en productos de terceros, fine-tuning e investigación sin las restricciones habituales de licencias propietarias.
+Su relevancia radica en combinar un tamaño contenido (apto para hardware de consumo de gama alta y estaciones DGX Spark) con capacidades multimodales y agénticas, bajo licencia Apache 2.0, lo que facilita su integración en productos comerciales. La variante sin censura, no obstante, introduce consideraciones éticas y de seguridad que deben evaluarse antes de un despliegue en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only con MoE dispersa y bucle de capas (looped transformer); 24 capas con las 12 centrales ejecutadas 3 veces (48 aplicaciones por token) |
-| Parametros totales | 26.388.646.440 (según safetensors del repositorio) |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer decodificador con MoE dispersa y "looped transformer" (24 capas de pesos, 12 centrales reutilizadas 3 veces = 48 aplicaciones por token); atención híbrida local/global; multimodal nativo con vision transformer |
+| Parametros totales | 26.388.646.440 (26,4B) |
+| Parametros activos | 8 de 128 expertos por capa y token (número absoluto de parámetros activos no disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16, GGUF (incluye variantes cuantizadas con imatrix); el modelo base se distribuye en NVFP4 y MXFP8; etiqueta "8-bit" y "modelopt" en el repo |
-| Idiomas soportados | Inglés y soporte multilingüe general (etiqueta de idioma del repo: en) |
+| Tipos de cuantizacion | BF16, GGUF (incluye 8-bit con modelopt e imatrix); checkpoint original en NVFP4 y MXFP8 |
+| Idiomas soportados | Inglés y soporte multilingüe general (la model card declara `en` y `multilingual`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, GGUF |
+| Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
+El modelo es un transformer autorregresivo multimodal con 24 capas de pesos. Las 12 capas centrales se ejecutan tres veces compartiendo pesos, lo que proporciona 48 aplicaciones de capa por token sin incrementar el número de parámetros. Cada capa emplea capas de mezcla de expertos dispersa: cada token se enruta a 8 de 128 expertos. La atención combina capas locales y globales. La multimodalidad es nativa: las imágenes se codifican mediante un vision transformer y se proyectan, junto con el texto, a un espacio oculto compartido que procesa el decodificador.
 
-La arquitectura es un transformer autorregresivo multimodal con capas feed-forward de tipo Mixture-of-Experts dispersa. El diseño "looped" es la innovación central: de las 24 capas de pesos, las 12 intermedias se aplican tres veces con pesos compartidos, de modo que cada token atraviesa 48 aplicaciones de capa efectivas. Esto incrementa la profundidad computacional sin aumentar proporcionalmente el número de parámetros almacenados, un enfoque que busca mejorar la capacidad de razonamiento por parámetro. El modelo procesa entradas de texto e imagen y produce texto, lo que implica un codificador visual integrado, aunque los detalles del mismo no están disponibles en la información proporcionada.
-
-No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otras etapas de alineación. La model card original menciona que el modelo está pensado para aplicaciones agénticas, uso de herramientas, asistentes de código, chatbots y RAG, pero no detalla el proceso de post-entrenamiento. La cadena de derivación incluye un ajuste etiquetado como "uncensored" aplicado por AtomicChat, cuyos detalles metodológicos tampoco están disponibles.
+El checkpoint original se distribuye en precisiones mixtas NVFP4 y MXFP8, con un tamaño aproximado de 20 GB. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La variante de AMAImedia aplica abliteration sobre el modelo base para eliminar comportamientos de rechazo, y ofrece cuantizaciones GGUF generadas con imatrix y modelopt.
 
 ## Capacidades
-
-- Generación de texto conversacional e instrucciones de propósito general.
-- Procesamiento multimodal image-text-to-text: acepta imágenes junto con texto y genera respuestas textuales.
-- Razonamiento y tareas de lenguaje natural en inglés y soporte multilingüe general.
-- Generación de código en múltiples lenguajes de programación, según la model card del modelo base.
-- Soporte para sistemas agénticos y uso de herramientas (tool-use), orientado a asistentes y pipelines automatizados.
-- Adecuado para sistemas de recuperación aumentada (RAG) según la documentación del modelo original.
-- Compatibilidad con fine-tuning mediante la plataforma Tinker y con frameworks de post-entrenamiento como Miles y SkyRL.
-- Modo "uncensored" en esta variante concreta, que relaja los filtros de rechazo del modelo base (sin documentación técnica disponible sobre el método).
+- Generación de texto y razonamiento de propósito general, con instrucciones y conversación multi-turno.
+- Comprensión de imágenes (image-text-to-text) mediante vision transformer integrado.
+- Generación y asistencia de código en múltiples lenguajes de programación.
+- Soporte declarado para sistemas agénticos y uso de herramientas (tool-use), según la model card del modelo base.
+- Capacidades multilingües generales, con inglés como idioma principal.
+- Idoneidad para RAG y chatbots, según la documentación del modelo original.
+- Comportamiento "sin censura" (abliterated) en la variante de AMAImedia, que reduce los rechazos ante solicitudes.
 
 ## Casos de uso
-
-- Asistentes conversacionales multimodales: el modelo puede recibir capturas de pantalla, diagramas o fotografías junto con texto y responder en lenguaje natural, lo que lo hace adecuado para soporte técnico visual o atención al cliente que requiera interpretar imágenes adjuntas.
-- Automatización de dubbing y flujos audiovisuales: la organización publicadora enmarca el modelo dentro de su plataforma NOESIS de automatización de doblaje multilingüe, donde un modelo multimodal pequeño puede asistir en la descripción de escenas, el ajuste de guiones y la verificación de contenido visual.
-- Asistentes de código integrados en IDE: gracias a su soporte de múltiples lenguajes de programación y tool-use, puede emplearse para autocompletado, explicación de fragmentos y generación de tests dentro de entornos de desarrollo.
-- Pipelines RAG con contexto visual: combinado con un motor de recuperación, puede responder preguntas sobre documentos que incluyan figuras, tablas o diagramas, aprovechando su entrada image-text-to-text.
-- Inferencia local en estaciones de trabajo: al caber en aproximadamente 20 GB en el checkpoint original y disponer de versiones GGUF, puede desplegarse en Apple Silicon con 32 GB o más, en una NVIDIA DGX Spark o en GPUs con 32 GB de VRAM, útil para prototipado sin dependencia de la nube.
-- Fine-tuning específico de dominio: la licencia Apache 2.0 y el soporte de Tinker, Miles y SkyRL permiten adaptar el modelo a verticales concretas (legal, médico, atención al cliente) sin restricciones de uso comercial.
-- Investigación sobre arquitecturas looped y MoE: su diseño poco habitual (12 capas reutilizadas tres veces) lo convierte en un objeto de estudio para experimentos de eficiencia paramétrica y análisis de profundidad efectiva.
+- Asistentes de código en IDE: el modelo puede completar, explicar y refactorizar código en varios lenguajes, integrándose en extensiones de editor mediante vLLM o llama.cpp con el GGUF cuantizado.
+- Sistemas RAG documentales: su ventana de contexto (no especificada) y su capacidad multimodal permiten indexar documentos con imágenes y responder consultas combinando texto e información visual.
+- Automatización de atención al cliente: conversaciones multi-turno con contexto amplio y despliegue en Ollama o llama.cpp sobre estaciones DGX Spark o Mac con 32 GB o más de memoria unificada.
+- Pipelines agénticos con tool calling: el modelo puede orquestar llamadas a funciones en flujos de automatización, integrándose con SGLang o vLLM para servir múltiples agentes concurrentes.
+- Procesamiento de capturas y documentos escaneados: al aceptar imagen y texto, puede extraer y resumir información de facturas, formularios o interfaces de usuario.
+- Investigación sobre alineación y seguridad: la variante abliterated permite estudiar el comportamiento del modelo sin rechazos, comparándolo con el checkpoint original para analizar sesgos y mecanismos de seguridad.
+- Fine-tuning especializado: la licencia Apache 2.0 y el soporte de Tinker, Miles y SkyRL permiten adaptar el modelo a dominios concretos con post-entrenamiento.
 
 ## Benchmarks y rendimiento
-
 No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-
-- Checkpoint original: aproximadamente 20 GB en precisiones mixtas NVFP4 y MXFP8, según la model card del modelo base.
-- Repositorio de esta variante: 60,0 GB en total, incluyendo BF16 y múltiples archivos GGUF.
-- VRAM recomendada: 32 GB o más según la documentación del modelo base; suficiente para el checkpoint original y para cuantizaciones GGUF de alta calidad.
-- Hardware soportado oficialmente: 1x NVIDIA DGX Spark; dispositivos Apple Silicon con 32 GB o más de memoria unificada (MacBook, Mac mini, Mac Studio); otras GPUs con 32 GB o más de VRAM.
-- GPU de consumo: no se especifica compatibilidad con GPUs de 24 GB o menos en la documentación; el autor de la cuantización reporta trabajo local en una RTX 3060 Laptop de 6 GB para tareas de imatrix y modelos de 0,6 a 35B en RAM, pero no confirma que este modelo concreto se ejecute en dicha GPU.
-- Frameworks de despliegue: Hugging Face Transformers, SGLang, vLLM, TokenSpeed, NVIDIA Dynamo, Unsloth, llama.cpp, Llama App, Ollama y Exo Labs (estos dos últimos en Apple Silicon).
-- Post-entrenamiento: Miles y SkyRL; fine-tuning vía Tinker.
-- Latencia y throughput: no disponible.
+- El checkpoint original (NVFP4/MXFP8) ocupa unos 20 GB y requiere 32 GB o más de VRAM o memoria unificada recomendados.
+- Hardware oficialmente soportado: 1x NVIDIA DGX Spark; dispositivos Apple Silicon con 32 GB o más (MacBook, Mac mini, Mac Studio).
+- El repositorio GGUF de AMAImedia ocupa 49,6 GB, por lo que la inferencia en BF16 requiere aproximadamente 50 GB de memoria; las variantes de 8 bits reducen esta cifra de forma significativa (estimación no confirmada por el autor).
+- GPU recomendadas: A100, H100 o H200 para servicio en producción; RTX 4090 (24 GB) no es suficiente para BF16 completo, pero puede ejecutar cuantizaciones GGUF de menor precisión.
+- Opciones de despliegue: Hugging Face Transformers, SGLang, vLLM, TokenSpeed, NVIDIA Dynamo, Unsloth, llama.cpp, Llama App, Ollama y Exo Labs (Apple Silicon).
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Inkling 2 Mini (Thinking Machines) | 26,4B (según safetensors) | no disponible | Texto + imagen | Apache 2.0 | Hugging Face, Tinker |
-| Esta variante (AMAImedia, BF16/GGUF) | 26,4B | no disponible | Texto + imagen | Apache 2.0 | Hugging Face (GGUF y BF16) |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Inkling-2-Mini (Thinking Machines) | 26,4B (MoE, 8/128 expertos) | no disponible | Sí (imagen-texto) | Apache 2.0 | Pesos abiertos en HF, Tinker |
+| Inkling-2-Mini-Uncensored (AMAImedia) | 26,4B (MoE) | no disponible | Sí (imagen-texto) | Apache 2.0 | GGUF y safetensors en HF |
+| Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de información sobre modelos comparables de la misma categoría (multimodales de ~26B con MoE y licencia permisiva) en los datos proporcionados, por lo que no es posible establecer una comparación cuantitativa fiable.
+No se dispone de información sobre modelos comparables directos en la documentación proporcionada; la comparativa con alternativas de la misma categoría queda pendiente de datos verificables.
 
 ## Limitaciones y advertencias
-
-- El ajuste "uncensored" relaja los mecanismos de rechazo del modelo base; no hay documentación pública sobre el método empleado ni sobre los riesgos asociados, lo que exige evaluación propia antes de cualquier despliegue en producción.
-- Riesgo de alucinación inherente a los modelos generativos; no se han publicado evaluaciones de fidelidad factual para esta variante.
-- La etiqueta de idioma del repositorio es únicamente "en", aunque la model card original menciona soporte multilingüe general; el rendimiento real fuera del inglés no está verificado.
-- Longitud de contexto no documentada: no es posible planificar aplicaciones que dependan de ventanas largas sin una evaluación empírica previa.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue publicado un día después del modelo base; se trata de una redistribución comunitaria sin validación independiente conocida.
-- La cadena de derivación (modelo base → cuantización de AtomicChat → esta variante) introduce pasos intermedios cuyos detalles de cuantización y ajuste no están completamente documentados.
-- Aunque la licencia es Apache 2.0, el modelo base remite a una Política de Uso Aceptable de Thinking Machines Lab que conviene revisar para usos comerciales sensibles.
-- La información sobre parámetros activos de la MoE no está disponible, lo que impide estimar con precisión el coste computacional por token.
+- La variante "uncensored" ha sido modificada mediante abliteration, lo que puede degradar la calidad del modelo en tareas que requieren matices y aumenta el riesgo de generar contenido dañino, ilegal o sesgado.
+- Riesgo de alucinación inherente a los modelos generativos; no se han publicado evaluaciones específicas de fidelidad factual.
+- La longitud de contexto no está documentada, lo que dificulta planificar despliegues con documentos extensos.
+- El idioma principal es el inglés; el soporte multilingüe es general y no está cuantificado.
+- Aunque la licencia es Apache 2.0, el uso comercial de una variante sin censura puede contravenir políticas de plataformas y normativas locales; se recomienda auditoría previa.
+- El repositorio tiene un tamaño de 49,6 GB, lo que exige almacenamiento y ancho de banda considerables para su descarga.
+- La model card incluye enlaces a donaciones y promoción comercial; no constituyen documentación técnica verificable.
 
 ## Enlaces
-
-- Repositorio de esta variante: https://huggingface.co/AMAImedia/Inkling-2-Mini-Uncensored-BF16-GGUF
-- Modelo base original: https://huggingface.co/thinkingmachines/Inkling-2-Mini
-- Cuantización intermedia: https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF
-- Playground de Tinker: https://tinker.thinkingmachines.ai/playground
+- Modelo en Hugging Face: https://huggingface.co/AMAImedia/Inkling-2-Mini-Uncensored-BF16-GGUF
+- Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
+- Repositorio original de la variante sin censura: https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound
+- GGUF de la variante original: https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound-GGUF
 - Tinker Cookbook: https://github.com/thinking-machines-lab/tinker-cookbook
 - Paquete tml-renderers: https://pypi.org/project/tml-renderers/
-- Blog de Hugging Face sobre Inkling 2 Mini: https://hf.co/blog/inkling2mini
+- Tinker playground: https://tinker.thinkingmachines.ai/playground
+- Blog de Hugging Face: https://hf.co/blog/inkling2mini
 - Receta de SGLang: https://docs.sglang.io/cookbook/autoregressive/ThinkingMachines/Inkling-2-Mini
 - Receta de vLLM: https://recipes.vllm.ai/thinkingmachines/Inkling-2-Mini
 - Receta de TokenSpeed: https://lightseek.org/tokenspeed/recipes/models#inkling-2-mini
@@ -100,8 +89,4 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 - Llama App: https://llama.app/
 - Documentación de Miles: https://miles.radixark.com/docs/models/thinkingmachines/inkling-2-mini
 - Documentación de SkyRL: https://docs.skyrl.ai/docs/models/inkling2
-- Política de uso aceptable: https://thinkingmachines.ai/model-acceptable-use-policy/
-- Organización AMAImedia: https://www.amaimedia.com
-- X (Twitter) del autor: https://x.com/AMAImediacom
-- LinkedIn del autor: https://www.linkedin.com/in/ilia-bolotnikov
-- Telegram del autor: https://t.me/AMAImediacom
+- Sitio web de AMAImedia: https://www.amaimedia.com

@@ -5,7 +5,7 @@
   "author": "BeardedMonster",
   "url": "https://huggingface.co/BeardedMonster/gemma-3-385m-science-translate-best",
   "created_at": "2026-11-15T23:47:53.000Z",
-  "updated_at": "2026-11-23T00:40:48.000Z",
+  "updated_at": "2026-11-24T04:17:21.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -287,7 +287,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 115,
+  "downloads_30d": 122,
   "trending_score": 0,
   "parameters": 385144448,
   "parameters_human": "385.1M",

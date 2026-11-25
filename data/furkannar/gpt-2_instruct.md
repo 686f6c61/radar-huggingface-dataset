@@ -2,99 +2,99 @@
 
 ## Resumen
 
-GPT-2 Instruct es un ajuste fino de GPT-2 (124 millones de parametros) desarrollado por el usuario FurkanNar y publicado en Hugging Face bajo licencia MIT. El modelo parte del checkpoint base openai-community/gpt2 y se ha afinado para seguir instrucciones en formato Alpaca, utilizando como datos de entrenamiento los conjuntos SVAMP (problemas aritmeticos de enunciado) y tatsu-lab/alpaca. El objetivo declarado es disponer de una version de GPT-2 capaz de responder a instrucciones sencillas y de resolver problemas matematicos basicos de tipo word problem.
+GPT-2 Instruct es un ajuste fino del modelo GPT-2 original de OpenAI (124 millones de parametros) publicado por el usuario FurkanNar en Hugging Face. El autor parte de su propio modelo previo `FurkanNar/gpt-2_svamp`, que a su vez derivaba de `openai-community/gpt2`, y lo entrena sobre el dataset Alpaca para dotarlo de capacidad de seguir instrucciones en ingles. El resultado es un modelo de generacion de texto muy pequeno, con licencia MIT y pesos en safetensors, orientado a experimentacion y pruebas de concepto mas que a uso en produccion.
 
-Se trata de un modelo de proposito general pequeno, orientado a experimentacion y pruebas de concepto mas que a produccion. Con 124,4 millones de parametros y un entrenamiento de solo 3 epocas con longitud maxima de secuencia de 256 tokens, sus capacidades estan claramente acotadas, especialmente en razonamiento matematico, donde el propio autor reporta una puntuacion F1 macro en validacion de 0,2857.
+La relevancia de este modelo es fundamentalmente didactica: muestra el flujo completo de un ajuste fino de instrucciones sobre una base GPT-2 con hiperparametros documentados (3 epocas, batch de 4, learning rate 5e-5, AdamW, longitud maxima de 256 tokens). No compite con modelos actuales de instrucciones en calidad ni en contexto: su ventana efectiva de entrenamiento es de 256 tokens y su F1 macro de validacion se queda en 0,2857 tras la tercera epoca, lo que refleja un ajuste limitado.
 
-Su relevancia actual es la de un ejemplo accesible de ajuste fino por instrucciones sobre una arquitectura clasica (transformer decoder-only) que puede ejecutarse en hardware muy modesto, incluso en CPU, lo que lo hace util como banco de pruebas educativo y como punto de partida para experimentos de bajo coste.
+Arquitectonicamente es un transformer decoder-only clasico de GPT-2, con 124.439.808 parametros reales segun safetensors, un repositorio de 0,5 GB y pesos en `model.safetensors` de unos 475 MB. El autor declara una version posterior, `FurkanNar/GPT-2_Instruct-v0.5`, lo que sugiere que este checkpoint es una iteracion temprana.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia GPT-2) |
+| Arquitectura | Transformer decoder-only (GPT-2) |
 | Parametros totales | 124.439.808 |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | 1024 tokens en la arquitectura GPT-2 base; el entrenamiento se limito a 256 tokens |
-| Tipos de cuantizacion | no se distribuyen versiones cuantizadas; pesos en safetensors (475 MB, precision fp32) |
-| Idiomas soportados | en (ingles) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | 256 tokens (longitud maxima de secuencia en entrenamiento); la configuracion nativa de GPT-2 soporta 1024, no confirmado para este ajuste |
+| Tipos de cuantizacion | no disponible (el repo solo publica safetensors en precision original) |
+| Idiomas soportados | ingles (en) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (config.json, generation_config.json, model.safetensors) |
+| Formato de pesos | safetensors (`model.safetensors`, ~475 MB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de la familia GPT-2, con 124 millones de parametros y sin modificaciones arquitectonicas respecto al checkpoint base openai-community/gpt2. Se trata de un ajuste fino supervisado (SFT) sobre el GPT-2 original, no de un entrenamiento desde cero ni de una variante MoE o hibrida. No se menciona uso de RLHF, DPO ni tecnicas de alineacion por preferencias.
+El modelo es un GPT-2 estandar de 124M de parametros, es decir, un transformer decoder-only con atencion causal completa. No incorpora innovaciones arquitectonicas: no hay mezcla de expertos, atencion lineal, decodificacion especulativa ni modulos multimodales. El ajuste se realiza sobre el checkpoint `FurkanNar/gpt-2_svamp`, que previamente habia sido entrenado con el dataset SVAMP (problemas aritmeticos de enunciado simple), y este segundo ajuste usa el dataset `tatsu-lab/alpaca` con el formato oficial de instrucciones de Alpaca.
 
-Los hiperparametros de entrenamiento reportados por el autor son: 3 epocas, batch size de 4, learning rate de 5e-5, optimizador AdamW, funcion de perdida CrossEntropyLoss con desplazamiento de tokens de 1, gradient clipping con norma maxima de 1.0 y longitud maxima de secuencia de 256 tokens. Los datos provienen de SVAMP (Simple Variants of Arithmetic Math word Problems) y de tatsu-lab/alpaca. El autor indica que existia previamente un ajuste especifico sobre SVAMP publicado en FurkanNar/gpt-2_svamp, sobre el que se basa este modelo. La inferencia se realiza con el formato Alpaca oficial. No se documenta innovacion tecnica adicional (decodificacion especulativa, atencion lineal, etc.).
+Los hiperparametros documentados son: 3 epocas, batch size de 4, learning rate 5e-5, optimizador AdamW, CrossEntropyLoss con desplazamiento de tokens de 1 y recorte de gradiente con norma maxima 1,0. La perdida de entrenamiento baja de 0,7349 a 0,6216 y la de validacion de 0,6526 a 0,6411, mientras el F1 macro de validacion apenas mejora de 0,2824 a 0,2857. No se documenta el numero total de tokens de entrenamiento ni el uso de RLHF, DPO o filtrado de datos; el autor solo menciona que los parametros de generacion estan ajustados para reducir fuga de datos y mejorar la calidad de respuesta.
 
 ## Capacidades
 
-- Generacion de texto en ingles con seguimiento basico de instrucciones en formato Alpaca.
-- Resolucion de problemas matematicos de enunciado sencillos, heredada del ajuste sobre SVAMP, aunque con rendimiento limitado segun el propio autor.
-- Mantenimiento de contexto conversacional limitado a los ultimos 10 mensajes, segun las notas de la model card.
-- Generacion configurable mediante temperature (por defecto 0.5), top_k (40), top_p (0.9) y repetition_penalty (1.2).
-- Soporte de system prompt.
+- Generacion de texto autoregresiva en ingles con formato de instrucciones estilo Alpaca.
+- Seguimiento basico de instrucciones tras el ajuste fino, limitado por el tamano del modelo y la ventana de 256 tokens.
+- Conversacion multi-turno limitada: el ejemplo de uso del autor mantiene historial de los ultimos 10 mensajes, aunque el contexto efectivo es muy corto.
+- Razonamiento aritmetico basico heredado del ajuste previo sobre SVAMP, no verificado con benchmarks en esta ficha.
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte de agentes ni razonamiento multi-paso.
-- No se documentan capacidades de vision, audio ni modo de razonamiento explicito (thinking).
-- Capacidad multilingue: unicamente ingles.
+- No dispone de modo thinking, vision ni audio.
+- Multilingue: solo ingles declarado.
 
 ## Casos de uso
 
-- Prototipado rapido de asistentes conversacionales: por su tamano (124M) y su soporte de historial de los ultimos 10 mensajes, permite montar un chatbot de prueba en minutos sin apenas recursos, util para validar interfaces antes de migrar a modelos mayores.
-- Educacion y docencia sobre ajuste fino: sirve como ejemplo reproducible de fine-tuning por instrucciones con formato Alpaca, ideal para cursos y tutoriales que expliquen SFT sobre GPT-2.
-- Tutoria basica de problemas aritmeticos: el ajuste sobre SVAMP permite generar respuestas a enunciados matematicos simples, adecuado como demostracion, aunque con F1 macro bajo (0,2857) que desaconseja uso evaluativo real.
-- Inferencia en entornos sin GPU: al requerir recursos minimos, puede ejecutarse en CPU o en dispositivos de borde para demos offline de generacion de texto.
-- Generacion de texto creativo de baja exigencia: redaccion de borradores cortos, completado de frases o generacion de variaciones de texto donde no se requiere alta fidelidad.
-- Base para experimentos de investigacion en eficiencia: permite comparar tecnicas de cuantizacion, destilacion o decodificacion sobre un modelo pequeno y rapido de entrenar.
-- Simulacion de cargas en pipelines de despliegue: util para probar integraciones con Transformers, Text Generation Inference o endpoints compatibles sin coste de GPU elevado.
+- Prototipado de pipelines de instrucciones: sirve para validar plantillas de prompt estilo Alpaca y el flujo de transformers antes de migrar a un modelo mayor, gracias a su tamano de 124M y su licencia MIT.
+- Docencia y experimentacion academica: permite reproducir un ajuste fino completo de instrucciones en una sola GPU de consumo y comparar curvas de perdida y F1 entre epocas.
+- Pruebas de integracion con text-generation-inference: el modelo esta etiquetado para TGI y puede desplegarse como endpoint ligero para validar infraestructura.
+- Generacion de respuestas cortas en ingles para demos: con prompts de menos de 256 tokens y respuestas breves, encaja en asistentes de prueba de concepto.
+- Ajuste incremental sobre tareas aritmeticas: al partir de un checkpoint entrenado en SVAMP, puede reutilizarse como base para experimentos de word problems simples.
+- Evaluacion de tecnicas de mitigacion de fuga de datos: el autor menciona parametros de generacion orientados a reducir leakage, lo que lo hace util como banco de pruebas de decodificacion (temperatura 0,5, top-k 40, top-p 0,9, repetition penalty 1,2).
+- Baseline de comparacion en investigacion sobre instrucciones: su F1 macro de 0,2857 sirve como referencia inferior para medir mejoras de modelos mas grandes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El autor unicamente reporta las metricas de entrenamiento y validacion por epoca:
+Los unicos datos publicados por el autor son las metricas de validacion durante el entrenamiento, no benchmarks estandar:
 
-| Epoca | Perdida de entrenamiento (media) | Perdida de validacion (media) | F1 macro en validacion |
+| Metrica | Epoca 1 | Epoca 2 | Epoca 3 |
 |---|---|---|---|
-| 1/3 | 0.7349 | 0.6526 | 0.2824 |
-| 2/3 | 0.6583 | 0.6436 | 0.2839 |
-| 3/3 | 0.6216 | 0.6411 | 0.2857 |
+| Perdida de entrenamiento (media) | 0,7349 | 0,6583 | 0,6216 |
+| Perdida de validacion (media) | 0,6526 | 0,6436 | 0,6411 |
+| F1 macro de validacion | 0,2824 | 0,2839 | 0,2857 |
 
-La perdida de entrenamiento desciende de forma sostenida, mientras que la perdida de validacion y el F1 macro apenas mejoran entre epocas, lo que sugiere un ajuste limitado y un posible estancamiento del rendimiento en la tarea objetivo.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada en fp32: aproximadamente 475 MB de pesos mas memoria de activaciones; en fp16 bajaría a unos 250 MB y en int8 a unos 125 MB.
-- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM es suficiente (GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4090, A100, H100). El modelo esta muy por debajo de la capacidad de cualquier GPU moderna.
-- Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo e incluso en iGPU y en CPU.
-- Opciones de despliegue: transformers (libreria indicada), Text Generation Inference (etiqueta text-generation-inference) y endpoints compatibles. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, formato que no se distribuye.
-- Latencia y throughput: no se proporcionan datos medidos. Dado el tamano de 124M de parametros, la inferencia es muy rapida en GPU y viable en CPU, aunque el autor indica que se requiere GPU CUDA para la inferencia segun su configuracion de referencia.
+- VRAM estimada para inferencia: inferior a 1 GB en fp32 (124M de parametros, ~475 MB de pesos); en fp16 alrededor de 250 MB, mas memoria para activaciones y KV cache.
+- GPU recomendadas: cualquier GPU con CUDA, incluida una GTX 1650 o superior; el autor indica que se requiere GPU CUDA para la inferencia.
+- Cabe holgadamente en GPU de consumo: RTX 3060, RTX 4060, RTX 4090, entre otras.
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (etiqueta del repo) y, en principio, llama.cpp u Ollama si se generan pesos GGUF, aunque no se publican en el repositorio.
+- Latencia y throughput: no disponibles en la informacion proporcionada; por tamano, se espera muy baja latencia en GPU modernas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Ajuste por instrucciones | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| FurkanNar/gpt-2_instruct | 124M | 1024 (entrenado a 256) | Si (formato Alpaca) | MIT | Hugging Face |
-| openai-community/gpt2 | 124M | 1024 | No | MIT | Hugging Face |
-| distilgpt2 | 82M | 1024 | No | Apache-2.0 | Hugging Face |
-| gpt2-medium | 355M | 1024 | No | MIT | Hugging Face |
+| FurkanNar/gpt-2_instruct | 124M | 256 tokens (entrenamiento) | MIT | Hugging Face | Ajuste fino sobre Alpaca; F1 macro 0,2857 |
+| openai-community/gpt2 | 124M | 1024 tokens | MIT | Hugging Face | Base sin ajuste de instrucciones |
+| FurkanNar/gpt-2_svamp | 124M | no disponible | no disponible | Hugging Face | Checkpoint previo centrado en SVAMP |
+| FurkanNar/GPT-2_Instruct-v0.5 | no disponible | no disponible | no disponible | Hugging Face | Version posterior citada por el autor |
 
-Frente al GPT-2 base, este modelo anade seguimiento de instrucciones y un ajuste sobre problemas aritmeticos, a costa de una ventana de entrenamiento mas corta (256 tokens). Frente a distilgpt2 es algo mayor pero con ajuste por instrucciones. Frente a gpt2-medium es mas pequeno y rapido, aunque con menor capacidad bruta. No se dispone de datos de benchmarks que permitan una comparacion cuantitativa de calidad.
+No se dispone de datos de rendimiento comparables de los modelos alternativos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Rendimiento matematico bajo: el F1 macro en validacion es de 0,2857, por lo que la resolucion de problemas aritmeticos es poco fiable.
-- Alto riesgo de alucinacion: al ser un GPT-2 de 124M ajustado con pocos datos, tiende a generar contenido incorrecto o incoherente, especialmente en tareas fuera de su distribucion de entrenamiento.
-- Limitacion de contexto: aunque GPT-2 admite 1024 tokens, el entrenamiento se realizo con secuencias de 256 tokens, y el historial conversacional se limita a los ultimos 10 mensajes, lo que restringe la coherencia en conversaciones largas.
-- Idioma: unicamente soporta ingles; no hay capacidades multilingues documentadas.
-- Sesgos: no se documenta ninguna evaluacion de sesgos; al derivar de GPT-2, hereda los sesgos presentes en los datos de preentrenamiento originales.
-- Restricciones de licencia: licencia MIT, que permite uso comercial y modificacion, si bien no se ofrece ninguna garantia sobre el modelo.
-- Caveat de despliegue: el autor indica que se requiere GPU CUDA para la inferencia segun su configuracion, aunque tecnicamente el modelo puede ejecutarse en CPU.
-- Adecuacion: no recomendado para produccion con requisitos de calidad, seguridad o trazabilidad; su uso apropiado es experimental, educativo o como prueba de concepto.
+- Calidad de instrucciones muy limitada: el F1 macro de validacion de 0,2857 indica un ajuste debil y respuestas frecuentemente incorrectas o incoherentes.
+- Ventana de contexto efectiva de 256 tokens, insuficiente para conversaciones largas o documentos; el historial de 10 mensajes del ejemplo puede exceder ese limite.
+- Riesgo alto de alucinacion y de fuga de datos de entrenamiento, reconocido implicitamente por el autor al ajustar los parametros de generacion.
+- Solo ingles; no hay soporte multilingue declarado.
+- Sesgos heredados de GPT-2 y del dataset Alpaca, no evaluados ni documentados.
+- No apto para produccion sin validacion exhaustiva: es un experimento de ajuste fino, no un modelo instruido robusto.
+- Licencia MIT permite uso comercial, pero la ausencia de garantias y la baja calidad desaconsejan ese uso.
+- Requiere GPU CUDA segun el autor; no se documenta inferencia en CPU.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/FurkanNar/gpt-2_instruct
-- Version previa ajustada sobre SVAMP: https://huggingface.co/FurkanNar/gpt-2_svamp
-- Modelo base GPT-2: https://huggingface.co/openai-community/gpt2
-- Dataset SVAMP (ChilleD/SVAMP): https://huggingface.co/datasets/ChilleD/SVAMP
-- Dataset Alpaca (tatsu-lab/alpaca): https://huggingface.co/datasets/tatsu-lab/alpaca
+- Checkpoint base SVAMP: https://huggingface.co/FurkanNar/gpt-2_svamp
+- GPT-2 original: https://huggingface.co/openai-community/gpt2
+- Version posterior citada: https://huggingface.co/FurkanNar/GPT-2_Instruct-v0.5
+- Dataset Alpaca: https://huggingface.co/datasets/tatsu-lab/alpaca
+- Dataset SVAMP: https://huggingface.co/datasets/ChilleD/SVAMP

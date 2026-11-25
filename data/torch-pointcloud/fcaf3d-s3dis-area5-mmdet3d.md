@@ -2,100 +2,106 @@
 
 ## Resumen
 
-FCAF3D (Fully Convolutional Anchor-Free 3D Object Detection) es un detector de objetos 3D para nubes de puntos, desarrollado originalmente por Danila Rukhovich, Anna Vorontsova y Anton Konushin, y publicado en ECCV 2022. Este checkpoint concreto, `fcaf3d.s3dis-area5.mmdet3d`, es una conversión del modelo original de OpenMMLab (mmdetection3d) al formato de la librería `torch-pointcloud`, mantenida por Arthur Dujardin. Está entrenado sobre el conjunto de datos S3DIS (Stanford 3D Indoor Spaces) y evalúa sobre el área 5, el split estándar de test.
+FCAF3D es un detector de objetos 3D para nubes de puntos presentado en ECCV 2022 por Danila Rukhovich, Anna Vorontsova y Anton Konushin. Se trata de un detector totalmente convolucional, anchor-free y que opera sobre vóxeles dispersos, lo que elimina los componentes habitualmente costosos de los detectores 3D clásicos: no necesita anchors, ni propuestas de región, ni Non-Maximum Suppression (NMS). Esta ficha corresponde al checkpoint `fcaf3d.s3dis-area5.mmdet3d`, una conversión del modelo original de MMDetection3D al ecosistema `torch-pointcloud`, publicada por el autor de esa librería, Arthur Dujardin.
 
-El modelo resuelve la detección de objetos 3D en escenas interiores a partir de nubes de puntos, prediciendo cajas delimitadoras orientadas (oriented bounding boxes) para cinco clases de objetos. Su enfoque es totalmente convolucional y libre de anclas (anchor-free), lo que simplifica el diseño frente a detectores basados en propuestas o en anchors, y lo hace adecuado para escenas con objetos de geometrías variadas.
+El checkpoint está entrenado sobre el *split* de evaluación Area 5 del dataset S3DIS (Stanford 3D Indoor Spaces), un conjunto de escenas interiores de oficinas escaneadas con Matterport. Detecta cinco clases de mobiliario y elementos arquitectónicos (mesa, silla, sofá, libro y tablero/pizarra) a partir de nubes de puntos con coordenadas XYZ y color RGB. Con 70,5 millones de parámetros y un repositorio de 0,3 GB, es un modelo compacto y ligero orientado a inferencia en GPU.
 
-Con 70,5 millones de parámetros y un tamaño de repositorio de 0,3 GB, es un modelo compacto orientado a inferencia en GPU. Es relevante para quienes trabajan en percepción 3D, robótica de interiores, escaneo de edificios o realidad aumentada, y necesitan un detector de objetos 3D listo para usar con pesos en safetensors y licencia Apache-2.0.
+Su relevancia actual es doble: por un lado, sirve como referencia reproducible de FCAF3D en un *framework* moderno (PyTorch + `torch-pointcloud`); por otro, demuestra que un detector 3D competitivo puede ejecutarse con un presupuesto de memoria y cómputo muy contenido, algo útil para robótica, escaneo de interiores y sistemas embebidos con GPU.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | FCAF3D: detector 3D totalmente convolucional, anchor-free, sobre vóxeles dispersos (sparse voxel) |
-| Parametros totales | 70.497.737 (~70,5 M) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No aplica (modelo de visión 3D, no de lenguaje) |
-| Tipos de cuantizacion | No disponible (pesos en safetensors; no se documentan cuantizaciones oficiales) |
-| Idiomas soportados | No aplica (modelo de nubes de puntos, sin capacidades lingüísticas) |
+| Arquitectura | FCAF3D: detector 3D totalmente convolucional, anchor-free, sobre vóxeles dispersos (sparse voxel backbone) |
+| Parámetros totales | 70.497.737 (≈70,5 M) |
+| Parámetros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | no aplica (modelo de visión 3D sobre nubes de puntos, no un LLM) |
+| Tipos de cuantización | no disponible (pesos en safetensors en precisión nativa; no se documentan variantes GGUF/INT8) |
+| Idiomas soportados | no disponible (no procesa lenguaje natural) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors |
-| Canales de entrada | 3 (coordenadas xyz) |
-| Clases | 5 |
-| Canales de características | 512 |
-| Dataset de entrenamiento | S3DIS (Stanford 3D Indoor Spaces) |
-| Tarea | Detección de objetos 3D (object-detection) |
+| Formato de pesos | safetensors (repo de 0,3 GB) |
+| Canales de entrada | 3 (coordenadas XYZ) |
+| Clases de salida | 5 |
+| Dimensión de características | 512 |
+| Dataset de entrenamiento | S3DIS, split Area 5 |
+| Librería | `torch-pointcloud` |
+| Dependencias | `spconv` (compilación acorde a versión de torch y CUDA) |
+| Pipeline HF | object-detection |
 
 ## Arquitectura y entrenamiento
 
-FCAF3D es un detector de objetos 3D totalmente convolucional y libre de anclas que opera sobre representaciones de vóxeles dispersos (sparse voxel). A diferencia de detectores basados en propuestas o en anchors, el modelo predice directamente las cajas delimitadoras orientadas a partir de un backbone convolucional disperso, lo que reduce la complejidad del pipeline y evita hiperparámetros asociados a los anchors. El checkpoint declara 3 canales de entrada, 512 canales de características y 5 clases de salida.
+FCAF3D es una red totalmente convolucional que procesa la nube de puntos tras voxelizarla en una rejilla dispersa. Un *backbone* convolucional 3D disperso (basado en `spconv`) extrae características a varias resoluciones; a continuación, un cuello de características y una cabeza de detección predicen directamente, para cada vóxel ocupado, la clase y los parámetros de la caja (centro y tamaño), sin anchors ni propuestas. El diseño elimina el NMS y las etapas de refinamiento típicas de detectores como VoteNet o Group-Free, lo que reduce la latencia y simplifica el *pipeline*. El modelo usa 512 canales de características y 3 canales de entrada, y produce detecciones sobre 5 clases.
 
-El entrenamiento se realizó sobre el conjunto de datos S3DIS, un corpus de escaneos 3D de interiores de edificios (habitaciones, pasillos, oficinas) con anotaciones semánticas e instancias. La evaluación se realiza sobre el área 5, el split de test habitual en la literatura de S3DIS. El modelo original se publicó en ECCV 2022 (arXiv:2112.00322) y este checkpoint es una conversión desde OpenMMLab mmdetection3d (Apache-2.0) al formato de `torch-pointcloud`. La información disponible no detalla el número exacto de tokens/puntos de entrenamiento, la composición completa del dataset ni si se aplicaron técnicas de aumento de datos específicas más allá de las del pipeline original.
+El checkpoint se ha entrenado sobre el *split* Area 5 de S3DIS, el protocolo estándar de evaluación *leave-one-area-out* del dataset. No se documentan en la información disponible detalles sobre número de épocas, aumentos de datos, función de pérdida exacta ni si se aplicó algún tipo de ajuste fino posterior. El modelo original fue convertido desde MMDetection3D (Apache-2.0) a `torch-pointcloud`, manteniendo los pesos, y requiere kernels GPU-only de `spconv` para la convolución dispersa.
 
 ## Capacidades
 
-- Detección de objetos 3D en nubes de puntos de escenas interiores, con predicción de cajas delimitadoras orientadas.
-- Clasificación de 5 clases de objetos del dataset S3DIS (categorías de mobiliario y elementos de interior).
-- Extracción de características de 512 canales mediante `forward_features`, útil para tareas posteriores de representación o transferencia.
-- Procesamiento de nubes de puntos con coordenadas xyz (3 canales de entrada).
-- Inferencia en GPU mediante kernels dispersos (spconv), orientada a escenas con miles de puntos por muestra.
-- No dispone de tool calling, function calling, capacidades de agente ni razonamiento multi-paso: es un modelo puramente perceptivo de visión 3D.
-- No dispone de capacidades multilingües ni de generación de texto.
+- Detección de objetos 3D en nubes de puntos de interiores: localiza y clasifica instancias con cajas 3D axis-aligned.
+- Clasificación en 5 clases de S3DIS (mesa, silla, sofá, libro y tablero/pizarra, según el etiquetado estándar del dataset).
+- Entrada multimodal a nivel de punto: coordenadas XYZ y color RGB.
+- Extracción de características densas de 512 canales mediante `forward_features`, reutilizables para tareas *downstream* (segmentación, *retrieval*, clasificación de escena).
+- Inferencia por lotes (*batched*) con agrupación por escena mediante `collate`.
+- No soporta *tool calling*, agentes, razonamiento multi-paso ni generación de texto: es un modelo puramente perceptivo 3D.
+- No tiene capacidades multilingües ni procesamiento de audio.
 
 ## Casos de uso
 
-- Digitalización de interiores y modelado BIM: el modelo detecta mobiliario y elementos estructurales en escaneos de edificios, permitiendo generar inventarios automáticos de objetos por habitación. Es adecuado porque está entrenado específicamente en S3DIS, un dataset de interiores de edificios.
-- Robótica móvil en interiores: un robot equipado con LiDAR o cámara de profundidad puede usar el detector para localizar obstáculos y objetos (mesas, sillas, puertas) y planificar la navegación. La naturaleza anchor-free y convolucional del modelo facilita la integración en pipelines de percepción en tiempo real en GPU.
-- Realidad aumentada y virtual: detección de objetos físicos en el entorno para anclar contenido virtual sobre ellos. El modelo proporciona cajas orientadas, útiles para colocar elementos 3D alineados con la geometría real.
-- Inventario automatizado de oficinas y almacenes: procesamiento por lotes de escaneos 3D para contar y clasificar objetos. El tamaño compacto (70,5 M de parámetros, 0,3 GB) permite desplegarlo en estaciones de trabajo con GPU de gama media.
-- Anotación asistida de datasets 3D: el detector puede generar preanotaciones de instancias sobre nuevas nubes de puntos, reduciendo el coste de etiquetado manual. Se usaría como modelo base y se refinaría con corrección humana.
-- Investigación en percepción 3D: como referencia reproducible con pesos en safetensors y licencia Apache-2.0, sirve para comparar arquitecturas anchor-free frente a baselines con anchors en S3DIS, o para extraer características de 512 canales con `forward_features` en tareas downstream.
+- **Digitalización de interiores y *facility management***: detectar automáticamente mesas, sillas y sofás en escaneos Matterport de oficinas para generar inventarios de mobiliario y planos semánticos. El modelo está entrenado exactamente en este dominio (S3DIS), por lo que la transferencia es directa.
+- **Robótica móvil en interiores**: un robot equipado con LiDAR o cámara de profundidad puede usar el detector para localizar obstáculos y mobiliario (sillas, mesas) y planificar la navegación, con un coste de 70,5 M de parámetros que cabe en GPUs embebidas tipo Jetson.
+- **Realidad aumentada y gemelos digitales**: anclar objetos virtuales sobre mobiliario real detectado en tiempo real, aprovechando que el modelo no necesita NMS y por tanto tiene una latencia baja y predecible.
+- **Asistencia a la accesibilidad**: identificar sillas, mesas y obstáculos en escenas interiores para aplicaciones de navegación asistida de personas con discapacidad visual, a partir de la nube de puntos de un sensor portátil.
+- **Preprocesado para *pipelines* de segmentación**: usar `forward_features` para obtener descriptores de 512 canales por punto y alimentar un modelo de segmentación semántica o de instancias posterior, reutilizando el *backbone* preentrenado.
+- **Control de calidad de inventarios en retail y oficinas**: procesar escaneos periódicos de un espacio y comparar las detecciones con el inventario esperado para detectar mobiliario faltante o reubicado.
+- **Generación de datos sintéticos y aumento**: emplear el detector como anotador automático (*pseudo-labelling*) sobre nubes de puntos no etiquetadas del mismo dominio para ampliar datasets de entrenamiento.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card (no verificados de forma independiente):
+Resultados declarados por el autor en la *model card* (no verificados de forma independiente), sobre S3DIS Area 5, tarea de detección de objetos 3D:
 
-| Dataset | Tarea | Métrica | Valor |
-|---|---|---|---|
-| S3DIS (Area 5) | 3d-object-detection | mAP@0.25 | 66,31 |
-| S3DIS (Area 5) | 3d-object-detection | mAP@0.5 | 46,71 |
+| Métrica | Valor |
+|---|---|
+| mAP@0.25 | 66,65 |
+| mAP@0.5 | 47,29 |
 
-No se han publicado en la información disponible otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) por tratarse de un modelo de visión 3D y no de lenguaje.
+No se han publicado en la información disponible otros resultados de benchmarks (latencia, throughput, comparación con otros detectores) más allá de estos dos valores.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Con 70,5 M de parámetros, los pesos en precisión nativa ocupan aproximadamente 0,28 GB; el consumo real depende del número de puntos por muestra y de las estructuras dispersas intermedias generadas por spconv.
-- GPU recomendadas: se requiere GPU (el modelo usa kernels dispersos solo para GPU). Una GPU con al menos 8-12 GB de VRAM es un punto de partida razonable para lotes pequeños, aunque no se documenta un mínimo oficial.
-- ¿Cabe en GPU de consumo? Sí, previsiblemente en tarjetas como RTX 3060/4060 o superiores, siempre que se ajuste el número de puntos por muestra; no hay cifras oficiales de consumo.
-- Opciones de despliegue: la librería `torch-pointcloud` (con dependencia de `spconv` compilado para la versión de torch y CUDA correspondiente). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo de lenguaje.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- **VRAM estimada**: no disponible de forma oficial. Con 70,5 M de parámetros en FP32, los pesos ocupan aproximadamente 0,28 GB; el consumo real depende del número de puntos por escena y del tamaño del lote, y suele situarse en el rango de 1 a 4 GB para lotes moderados.
+- **GPU recomendadas**: cualquier GPU NVIDIA con soporte CUDA moderna. Para producción, A100 o H100 si se procesan muchas escenas en paralelo; para desarrollo, RTX 3090 o RTX 4090 son suficientes.
+- **GPU de consumo**: sí, cabe con holgura en GPUs de consumo (RTX 3060 en adelante), dado el reducido tamaño del modelo.
+- **Requisito crítico**: kernels GPU-only de `spconv`, que deben compilarse para la versión exacta de PyTorch y CUDA. No hay soporte CPU documentado.
+- **Despliegue**: la vía oficial es `torch-pointcloud` (`pip install torch-pointcloud`) con `spconv`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- **Latencia y throughput**: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parámetros | Dataset | mAP@0.25 (S3DIS Area 5) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| fcaf3d.s3dis-area5.mmdet3d (este) | FCAF3D anchor-free, sparse voxel | 70,5 M | S3DIS | 66,31 | Apache-2.0 | Hugging Face (torch-pointcloud) |
-| FCAF3D original (mmdetection3d) | FCAF3D anchor-free, sparse voxel | No disponible en la información | S3DIS | No disponible en la información | Apache-2.0 | GitHub (OpenMMLab) |
-| Otros detectores 3D de interiores (p. ej. VoteNet, Group-Free) | Basados en puntos / votos | No disponible en la información | S3DIS | No disponible en la información | No disponible | No disponible |
+| Modelo | Parámetros | Contexto / entrada | mAP@0.5 (S3DIS Area 5) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| FCAF3D (este checkpoint) | 70,5 M | Nube de puntos XYZ + RGB | 47,29 (mAP@0.25: 66,65) | Apache-2.0 | Hugging Face + `torch-pointcloud` |
+| VoteNet | no disponible en la información | Nube de puntos | no disponible | no disponible | MMDetection3D |
+| Group-Free 3D | no disponible en la información | Nube de puntos | no disponible | no disponible | MMDetection3D |
+| TR3D | no disponible en la información | Nube de puntos | no disponible | no disponible | Repositorio de los autores |
 
-No se dispone en la información proporcionada de cifras de rendimiento de los modelos alternativos para una comparación cuantitativa fiable.
+No se dispone en la información proporcionada de datos de parámetros, contexto ni resultados de benchmarks de los modelos alternativos, por lo que la comparación cuantitativa no puede completarse. FCAF3D destaca frente a VoteNet y Group-Free por su diseño anchor-free y sin NMS, y frente a TR3D por ser su predecesor directo del mismo grupo de investigación.
 
 ## Limitaciones y advertencias
 
-- Modelo específico de escenas interiores: entrenado en S3DIS, por lo que su rendimiento fuera de entornos de interior (exteriores, industria, conducción) no está garantizado.
-- Solo 5 clases: la granularidad semántica es limitada; objetos no presentes en S3DIS no serán detectados correctamente.
-- Resultados de benchmark declarados por el autor y marcados como no verificados (`verified: false`); deben tomarse con cautela.
-- Requiere GPU y kernels dispersos (spconv) compilados para la versión de torch y CUDA; la instalación puede ser frágil y dependiente del entorno.
-- No es un modelo de lenguaje: no tiene capacidades de generación de texto, razonamiento, tool calling ni agentes; no debe evaluarse con benchmarks de NLP.
-- Riesgo de falsos positivos y negativos en escenas con oclusiones, objetos parciales o densidades de puntos muy distintas a las de S3DIS.
-- Licencia Apache-2.0: permite uso comercial y modificación, pero se recomienda revisar las obligaciones de atribución y las licencias de las dependencias (spconv, torch-pointcloud).
-- No se documentan sesgos específicos ni limitaciones idiomáticas (no aplica), pero sí una posible dependencia del dominio de captura (sensores, densidad de puntos, ruido).
+- **Dominio restringido**: entrenado exclusivamente en S3DIS (interiores de oficina), con 5 clases. El rendimiento fuera de ese dominio (exteriores, industria, escenas domésticas distintas) no está garantizado.
+- **Dependencia de `spconv`**: requiere compilar kernels CUDA específicos; un desajuste de versiones con PyTorch o CUDA provoca fallos en tiempo de ejecución.
+- **Solo GPU**: no hay ruta de inferencia en CPU documentada, lo que limita el despliegue en entornos sin GPU.
+- **Métricas no verificadas**: los valores de mAP proceden de la *model card* del autor y figuran como `verified: false`; conviene reproducirlos antes de usarlos como referencia en producción.
+- **Riesgo de falsos positivos y negativos** en escenas con oclusiones densas o mobiliario atípico, habitual en detectores 3D sobre vóxeles dispersos.
+- **Sin información sobre sesgos**: no se documentan análisis de sesgo por tipo de escena, iluminación o geometría.
+- **Licencia Apache-2.0**: permite uso comercial y modificación, pero exige conservar el aviso de copyright y la atribución; el modelo original de MMDetection3D es también Apache-2.0.
+- **Sin soporte de lenguaje natural**: no debe confundirse con un modelo generativo; no procesa texto ni responde a instrucciones.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/fcaf3d.s3dis-area5.mmdet3d
 - Paper FCAF3D (ECCV 2022): https://arxiv.org/abs/2112.00322
-- Repositorio torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
-- Documentación de instalación de torch-pointcloud: https://pytorch-pointcloud.org/latest/installation/
-- OpenMMLab mmdetection3d (origen de la conversión): https://github.com/open-mmlab/mmdetection3d
-- Dataset S3DIS (referencia): Armeni et al., "3D Semantic Parsing of Large-Scale Indoor Spaces", CVPR 2016
+- Repositorio `torch-pointcloud`: https://github.com/arthurdjn/pytorch-pointcloud
+- Documentación de `torch-pointcloud`: https://pytorch-pointcloud.org/
+- Guía de instalación (incluye `spconv`): https://pytorch-pointcloud.org/latest/installation/
+- Repositorio MMDetection3D (origen de la conversión): https://github.com/open-mmlab/mmdetection3d
+- Dataset S3DIS (paper CVPR 2016): https://arxiv.org/abs/1604.04077

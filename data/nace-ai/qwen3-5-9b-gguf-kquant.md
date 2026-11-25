@@ -2,104 +2,131 @@
 
 ## Resumen
 
-Qwen3.5-9B-GGUF-KQuant es una distribución de pesos cuantizados en formato GGUF del modelo Qwen/Qwen3.5-9B, publicada por nace-ai. No se trata de un modelo entrenado desde cero, sino de una conversión con cuantización calibrada (KQuant) pensada para ejecutarse con Kapitsa, el motor de inferencia local de Nace.AI para Macs con Apple silicon. El modelo base tiene 9.197.093.888 parámetros y una ventana multimodal de tipo image-text-to-text, según la etiqueta de pipeline del repositorio.
+Qwen3.5-9B-GGUF-KQuant es una colección de cuantizaciones GGUF del modelo Qwen3.5-9B (desarrollado por Alibaba Qwen), publicada por el usuario nace-ai bajo licencia Apache 2.0. No se trata de un modelo nuevo, sino de una reempaquetación optimizada del modelo base en formato GGUF para su uso con llama.cpp, LM Studio y Ollama, con pesos que van desde 3,36 GB hasta 6,84 GB. El modelo base cuenta con 8.953.803.264 parámetros (aproximadamente 9B) y está orientado a generación de texto conversacional.
 
-La propuesta de valor de esta ficha es la cuantización con matriz de importancia (importance matrix, imatrix). Según la model card, los ficheros Q2_K, Q3_K_M y Q4_K_M se generaron con imatrix, lo que en el caso de Q4_K_M produce un fichero del mismo tamaño (5,78 GB) que la cuantización plana pero con menor divergencia respecto al modelo original en bf16: KL de 0,023 frente a 0,045, y un 95,0 % de coincidencia en el token top-1 frente al 92,5 % de la versión plana.
+La relevancia de esta publicación radica en su metodología de cuantización: el autor reporta métricas de divergencia KL frente al modelo BF16 de referencia para cada fichero, y demuestra que sus cuantizaciones quedan más cerca del modelo original que alternativas de otros publicadores (bartowski, Unsloth, byteshape) en tamaños comparables o incluso menores. Esto es especialmente relevante para despliegues en hardware con VRAM limitada, donde cada décima de GB cuenta.
 
-El repositorio incluye además el proyector de visión en bf16 (mmproj, 0,9 GB), lo que confirma el soporte multimodal de imagen a texto. La licencia es Apache 2.0, heredada del modelo base, y el formato de pesos es GGUF, lo que lo hace compatible con el ecosistema llama.cpp además de con Kapitsa.
+El repositorio incluye doce ficheros con mezclas de tipos de tensor de 2,1 a 8,5 bits por peso, todos compatibles con llama.cpp estándar, además de evaluaciones a contexto de 512 tokens y 128K tokens sobre texto de Wikipedia, chat, tool-calls y código.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base Qwen/Qwen3.5-9B; familia Qwen3.5, transformer, detalles no publicados en la informacion disponible) |
-| Parametros totales | 9.197.093.888 |
+| Arquitectura | no disponible (modelo base Qwen3.5-9B, transformer presumiblemente; no confirmado en la informacion) |
+| Parametros totales | 8.953.803.264 (~8,95B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_M, Q4_K_M (con imatrix), Q8_0 (sin imatrix), bf16 (proyector de vision) |
+| Longitud de contexto | hasta 128K tokens (evaluado a 128K en la model card) |
+| Tipos de cuantizacion | GGUF: IQ2_M, IQ3_XXS, IQ3_M, IQ4_XS (varias tallas), Q4_0, Q3_K_XL, Q4_K_M, Q5_K_S, Q6_K (mezclas de tensores de 2,1 a 8,5 bits por peso) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Formato de pesos | GGUF (compatible con llama.cpp, LM Studio, Ollama) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna, los datos de entrenamiento ni el proceso de alineacion (RLHF/DPO) del modelo base Qwen/Qwen3.5-9B en la documentacion proporcionada. Lo unico verificable es el recuento de parametros (9.197.093.888) y la naturaleza multimodal image-text-to-text, evidenciada por la presencia de un proyector de vision (`mmproj-bf16.gguf`, 0,9 GB) en el repositorio.
+No se dispone de información sobre la arquitectura interna ni el proceso de entrenamiento del modelo base Qwen3.5-9B en la documentación proporcionada. La model card de esta publicación se centra exclusivamente en el proceso de cuantización y evaluación de los ficheros GGUF, no en el entrenamiento del modelo original.
 
-La innovacion tecnica documentada en esta ficha es el proceso de cuantizacion KQuant. En GGUF, KQuant construye una matriz de importancia a partir de texto de calibracion y la usa para guiar la cuantizacion de las capas; el autor indica que solo publica un pack si mide mas cerca del modelo original con el mismo tamano y velocidad. La model card menciona tambien que el modelo base incluye una cabeza MTP (multi-token prediction) propia del fichero, usada por Kapitsa durante la medicion de velocidad.
+La innovación técnica destacable de esta publicación es la metodología de cuantización mixta: cada fichero combina tipos de tensor de distintos bits por peso en lugar de usar un único tipo de llama.cpp. Por ejemplo, `IQ2_M` (3,36 GB) está compuesto por un 90% de IQ3_XXS, 7% de IQ2_XXS y 3% de otros tipos; `Q3_K_XL` (4,70 GB) mezcla 69% IQ4_XS, 16% Q5_K, 14% IQ3_XXS y 1% de otros. El autor reporta métricas de divergencia KL (mean KL y p99.9 KL) y precisión top-1 frente al modelo BF16, evaluadas sobre texto independiente (Wikipedia en inglés, chat, tool-calls y código de GitHub creados después del 2026-09-20), con 64 ventanas de 32.704 tokens y la misma build de llama.cpp (0a94a3f2) para todos los ficheros.
 
 ## Capacidades
 
-- Generacion de texto conversacional (etiqueta `conversational` en el repositorio).
-- Entrada de imagen y texto (pipeline `image-text-to-text`), con proyector de vision en bf16 incluido.
-- Razonamiento y generacion de codigo: la model card mide una respuesta de codigo de 512 tokens y evalua con HumanEval como parte del conjunto de calibracion.
-- Razonamiento matematico: se evalua con GSM8K (100 preguntas de test).
-- Decodificacion con cabeza MTP (multi-token prediction) soportada por Kapitsa.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible (el campo de idiomas no esta poblado en el repositorio).
-- Modo thinking, audio u otras capacidades especiales: no disponible.
+- Generación de texto conversacional (pipeline text-generation, tag conversational).
+- Soporte de tool calling / function calling: la evaluación incluye datos de chat y tool-calls, lo que indica que el modelo base maneja este formato.
+- Razonamiento multi-turno: el modelo base está orientado a conversación.
+- Capacidades multilingües: no confirmadas en la información disponible.
+- Capacidades de código: la evaluación incluye código de GitHub y muestra buen rendimiento en ese dominio (KL de 0,041 para Q3_K_XL a 128K en código).
+- No se documentan capacidades de visión, audio ni thinking mode en la información proporcionada, aunque el autor menciona que los pesos de visión y MTP están excluidos de las mediciones de tamaño.
 
 ## Casos de uso
 
-- Inferencia local en Mac con Apple silicon: el formato GGUF y la integracion con Kapitsa (`kapitsa serve --model /path/to/file.gguf`) permiten levantar un endpoint compatible en `http://127.0.0.1:8000` sin GPU dedicada, usando el fichero Q4_K_M de 5,8 GB.
-- Asistente de codigo en local: la cuantizacion Q4_K_M mantiene un 95,0 % de coincidencia en el token top-1 con el modelo bf16 y una velocidad de escritura de 84,8 tok/s en un MacBook Pro M5 Pro de 48 GB, adecuada para autocompletado y generacion de funciones en el editor.
-- Procesamiento de documentos con imagen: al incluir el proyector de vision (`mmproj-bf16.gguf`), el modelo puede recibir capturas, diagramas o paginas escaneadas junto a una instruccion de texto para extraer o resumir contenido.
-- Despliegue en entornos con memoria limitada: el fichero Q2_K (3,9 GB) permite ejecutar el modelo en equipos con menos RAM unificada, a costa de mayor perdida de fidelidad respecto a bf16.
-- Evaluacion y prototipado de cuantizaciones: el repositorio incluye el propio `imatrix.gguf` (0,01 GB), lo que permite reproducir o auditar el proceso de calibracion y comparar contra cuantizaciones planas.
-- Servicio de chat conversacional de baja latencia: con unos 490 tok/s de lectura de un prompt de 4K tokens en el hardware medido, es viable para conversaciones multi-turno con contexto moderado.
-- Pipeline de CI/CD para pruebas de calidad de cuantizaciones: el uso de llama.cpp (`0a94a3f2`) y de GSM8K sobre 100 preguntas documentado en la model card sirve como plantilla de evaluacion automatizada.
+- Despliegue local en estaciones de trabajo con GPU de consumo: los ficheros de 3,36 a 6,84 GB permiten ejecutar un modelo de ~9B parámetros en GPUs con 8-12 GB de VRAM, usando llama.cpp, LM Studio u Ollama, sin necesidad de infraestructura en la nube.
+- Asistentes conversacionales con contexto largo: la evaluación a 128K tokens y el buen comportamiento en chat y tool-calls permiten construir asistentes que mantengan conversaciones extensas con historial completo, usando el fichero IQ3_M o Q3_K_XL como equilibrio entre tamaño y fidelidad.
+- Generación y asistencia de código en IDE: el rendimiento medido en código (KL de 0,041 a 128K para Q3_K_XL, top-1 del 95%) lo hace adecuado para autocompletado y generación de código integrada en editores mediante llama.cpp.
+- Pipelines de CI/CD con tool calling: al soportar function calling, puede integrarse como agente que invoque herramientas en flujos automatizados, usando el fichero Q4_K_M-6.2GB para mayor fidelidad.
+- Prototipado rápido de aplicaciones de IA: la disponibilidad de doce tallas permite empezar con IQ2_M (3,36 GB) en hardware modesto y escalar a Q6_K (6,84 GB) cuando haya más recursos, sin cambiar de modelo.
+- Evaluación comparativa de cuantizaciones: los datos de KL y top-1 publicados permiten a investigadores seleccionar el fichero con el mejor compromiso tamaño/fidelidad para su caso concreto, algo poco habitual en publicaciones GGUF.
+- Servicio de texto en entornos con restricciones de licencia: la licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos publicados corresponden a la comparacion entre Q4_K_M plano y Q4_K_M con imatrix, ambos de 5,78 GB, medidos contra los logits del GGUF en bf16.
+La model card proporciona métricas de divergencia KL y precisión top-1 frente al modelo BF16, no benchmarks estándar (MMLU, HumanEval, GSM8K). Se presentan a continuación los datos publicados.
 
-| Metrica | Q4_K_M plano | Q4_K_M de este repo |
-|---|---:|---:|
-| KL desde bf16 (menor es mejor) | 0,045 | 0,023 |
-| Mismo token top-1 que bf16 | 92,5 % | 95,0 % |
-| GSM8K (100 preguntas) | 0,93 | 0,95 |
-| Escritura (tok/s) | 85,0 | 84,8 |
+A 512 tokens (media sobre prosa, chat y código):
 
-Condiciones de medida declaradas: KL calculada sobre 64 fragmentos de 512 tokens (wikitext-2, chats de GSM8K y HumanEval) contra los logits del GGUF en bf16; GSM8K con 100 preguntas de test a traves de llama-server; herramienta llama.cpp `0a94a3f2` del 11 de noviembre de 2026; velocidad medida en MacBook Pro M5 Pro de 48 GB con Kapitsa 0.2.32, cabeza MTP del propio fichero, respuesta de codigo de 512 tokens a temperatura 0,6, ejecuciones intercaladas y dos ejecuciones validas por fichero. Lectura de un prompt de 4K: aproximadamente 490 tok/s en ambos casos. Solo se midio Q4_K_M.
+| Fichero | LM GB | Mean KL | p99.9 KL | Top-1 % | Baseline (GB, mean KL) | Gap KL (IC 95%) |
+|---|---:|---:|---:|---:|---|---|
+| IQ2_M | 3,36 | 0,238 | 14,890 | 83,0 | bartowski IQ2_S (3,47; 0,372) | −0,134 (−0,156 a −0,115) |
+| IQ3_M | 4,39 | 0,134 | 14,399 | 87,9 | bartowski IQ3_XS (4,55; 0,147) | −0,013 (−0,028 a −0,003) |
+| Q3_K_XL | 4,70 | 0,095 | 12,879 | 92,4 | bartowski IQ3_M (4,71; 0,142) | −0,047 (−0,062 a −0,035) |
 
-No se han publicado resultados de benchmarks del modelo base ni comparaciones con otros modelos en la informacion disponible.
+Otras tallas a 512 tokens:
+
+| Fichero | LM GB | Bits/peso | Mean KL | p99.9 KL | Top-1 % |
+|---|---:|---:|---:|---:|---:|
+| IQ3_XXS | 3,78 | 3,38 | 0,178 | 15,644 | 87,2 |
+| IQ4_XS-4.1GB | 4,13 | 3,69 | 0,155 | 14,761 | 86,6 |
+| Q4_0-4.6GB | 4,60 | 4,11 | 0,118 | 15,024 | 89,0 |
+| IQ4_XS | 5,06 | 4,52 | 0,075 | 12,889 | 93,7 |
+| IQ4_XS-5.2GB | 5,16 | 4,61 | 0,063 | 11,830 | 94,6 |
+| IQ4_XS-5.5GB | 5,30 | 4,74 | 0,059 | 11,580 | 94,7 |
+| Q4_K_M-6.2GB | 5,90 | 5,27 | 0,053 | 11,428 | 95,4 |
+| Q5_K_S-6.3GB | 6,29 | 5,62 | 0,038 | 9,791 | 96,8 |
+| Q6_K-7.1GB | 6,84 | 6,11 | 0,034 | 9,495 | 97,2 |
+
+A 128K tokens, por dominio:
+
+| Fichero | LM GB | Dominio | Mean KL | p99.9 KL | Top-1 % |
+|---|---:|---|---:|---:|---:|
+| IQ2_M | 3,36 | chat/tool | 1,300 | 27,630 | 79,1 |
+| IQ3_M | 4,39 | chat/tool | 1,051 | 28,280 | 83,8 |
+| Q3_K_XL | 4,70 | chat/tool | 0,846 | 26,729 | 86,9 |
+| IQ2_M | 3,36 | código | 0,142 | 10,646 | 88,5 |
+| IQ3_M | 4,39 | código | 0,074 | 8,650 | 92,1 |
+| Q3_K_XL | 4,70 | código | 0,041 | 7,672 | 95,0 |
+| IQ2_M | 3,36 | prosa | 0,401 | 22,877 | 77,8 |
+| IQ3_M | 4,39 | prosa | 0,235 | 21,392 | 84,4 |
+| Q3_K_XL | 4,70 | prosa | 0,846* | 26,729* | 86,9* |
+
+(*) El dato de Q3_K_XL en prosa aparece truncado en la información proporcionada; no se dispone del valor completo.
 
 ## Requisitos de hardware
 
-- VRAM/RAM unificada estimada segun fichero: Q2_K 3,9 GB; Q3_K_M 4,7 GB; Q4_K_M 5,8 GB; Q8_0 9,8 GB; proyector de vision 0,9 GB adicional.
-- Hardware medido por el autor: MacBook Pro M5 Pro con 48 GB de memoria unificada, con 84,8 tok/s de escritura y unos 490 tok/s de lectura de prompt de 4K en Q4_K_M.
-- Cabe en GPU de consumo: el fichero Q4_K_M (5,8 GB) es compatible con GPUs de 8 GB o mas de VRAM mediante llama.cpp; Q8_0 requiere aproximadamente 10 GB o mas. No se aportan mediciones en GPUs NVIDIA o AMD.
-- Despliegue: Kapitsa (`brew install nace-ai/tap/kapitsa`, `kapitsa serve`), con pagina de chat y API en `http://127.0.0.1:8000`; el autor cita llama.cpp como herramienta de evaluacion, por lo que el formato GGUF es compatible con ese ecosistema.
-- Variante MLX: existe un build MLX 4-bit KQuant enlazado desde la model card para Apple silicon.
-- Latencia y throughput en otras plataformas: no disponible.
+- VRAM estimada para inferencia: aproximadamente el tamaño del fichero más el overhead de contexto KV cache. Para IQ2_M (3,36 GB) se estiman ~4-5 GB con contexto moderado; para Q6_K (6,84 GB) se estiman ~8-9 GB. A 128K de contexto, la KV cache añade varios GB adicionales (no cuantificados en la información disponible).
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 para ficheros de 3-7 GB con contexto moderado; A100/H100 para contexto completo de 128K con ficheros grandes.
+- Cabe en GPU de consumo: sí, todos los ficheros caben en GPUs consumer de 8 GB o más (los más pequeños en 6-8 GB; los mayores en 12-16 GB).
+- Opciones de despliegue: llama.cpp (build 0a94a3f2 usada en la evaluación), LM Studio, Ollama, y cualquier runtime compatible con GGUF.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
-|---|---:|---|---|---|---|
-| Qwen3.5-9B-GGUF-KQuant (este) | 9,20 B | no disponible | Q2_K, Q3_K_M, Q4_K_M, Q8_0 | Apache 2.0 | GGUF, Kapitsa, llama.cpp |
-| Qwen/Qwen3.5-9B (base) | 9,20 B | no disponible | bf16 | Apache 2.0 | safetensors |
-| Qwen3.5-9B MLX 4-bit KQuant (nace-ai) | 9,20 B | no disponible | 4-bit MLX | Apache 2.0 | MLX |
+| Modelo / publicador | Tamaño LM | Mean KL (512 tok) | Contexto evaluado | Licencia | Disponibilidad |
+|---|---:|---:|---|---|---|
+| Nace IQ2_M | 3,36 GB | 0,238 | 128K | Apache 2.0 | GGUF |
+| bartowski IQ2_S | 3,47 GB | 0,372 | no disponible | Apache 2.0 (heredada) | GGUF |
+| byteshape IQ3_S-3.00bpw | 3,36 GB | no disponible | no disponible | no disponible | GGUF |
+| Nace IQ3_M | 4,39 GB | 0,134 | 128K | Apache 2.0 | GGUF |
+| Unsloth Q3_K_S | 4,31 GB | no disponible | no disponible | no disponible | GGUF |
+| bartowski IQ3_XS | 4,55 GB | 0,147 | no disponible | Apache 2.0 (heredada) | GGUF |
+| Nace Q3_K_XL | 4,70 GB | 0,095 | 128K | Apache 2.0 | GGUF |
+| bartowski IQ3_M | 4,71 GB | 0,142 | no disponible | Apache 2.0 (heredada) | GGUF |
+| Unsloth Q3_K_M | 4,66 GB | no disponible | no disponible | no disponible | GGUF |
 
-No se dispone de datos de benchmarks del modelo base ni de otros modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion de rendimiento entre alternativas.
+El autor reporta que, a 512 tokens, cada fichero Nace tiene menor mean KL que todos los ficheros GGUF de otros publicadores en el rango de 0,98 a 1,06 veces su tamaño, salvo Q3_K_XL, que supera a 3 de 4.
 
 ## Limitaciones y advertencias
 
-- La unica cuantizacion medida es Q4_K_M; Q2_K, Q3_K_M y Q8_0 no tienen resultados publicados en esta ficha, por lo que su fidelidad respecto a bf16 es desconocida.
-- Q8_0 se genero sin matriz de importancia, a diferencia de Q2_K, Q3_K_M y Q4_K_M.
-- La cuantizacion introduce perdida de fidelidad: incluso Q4_K_M con imatrix solo coincide en el 95,0 % de los tokens top-1 con bf16 y obtiene 0,95 en GSM8K sobre 100 preguntas, no 1,0.
-- No hay informacion sobre sesgos, idiomas soportados ni riesgo de alucinacion especifico del modelo base en la documentacion disponible.
-- El campo de idiomas del repositorio no esta poblado, lo que impide confirmar el soporte multilingue.
-- No se documentan capacidades de tool calling ni de razonamiento multi-paso, relevantes para despliegues de agentes.
-- Las mediciones de velocidad provienen de un unico equipo (MacBook Pro M5 Pro, 48 GB) y de Kapitsa 0.2.32; no son extrapolables a otras plataformas.
-- La licencia Apache 2.0 permite uso comercial, pero las condiciones del modelo base deben verificarse en su propio repositorio.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 10 de noviembre de 2026, por lo que carece de validacion independiente de la comunidad.
+- Las métricas de KL y top-1 miden fidelidad respecto al BF16, no calidad absoluta ni rendimiento en tareas (no hay MMLU, HumanEval ni GSM8K).
+- A 128K de contexto, la divergencia KL se dispara en chat/tool-calls (1,300 para IQ2_M) y prosa (0,401), lo que indica degradación notable en contextos muy largos con cuantizaciones agresivas.
+- El modelo base Qwen3.5-9B puede presentar sesgos y alucinaciones propios de los LLM; no se documentan evaluaciones de sesgo en esta publicación.
+- Idiomas soportados no confirmados; la evaluación se realizó sobre texto en inglés, por lo que el rendimiento en castellano u otros idiomas no está verificado.
+- Licencia Apache 2.0 permite uso comercial, pero se heredan las condiciones del modelo base Qwen3.5-9B (verificar la licencia original del modelo base).
+- El repositorio ocupa 66,8 GB en total (incluye todos los ficheros); descargar solo el fichero deseado.
+- La fecha de creación (2026-11-12) y los datos de evaluación posteriores a 2026-09-20 indican que las métricas son recientes, pero no hay validación independiente de las mismas.
+- El autor no publica información sobre la arquitectura interna ni el entrenamiento del modelo base.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/nace-ai/Qwen3.5-9B-GGUF-KQuant
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Variante MLX 4-bit: https://huggingface.co/nace-ai/Qwen3.5-9B-MLX-4bit-KQuant
-- Motor de inferencia Kapitsa: https://github.com/nace-ai/kapitsa
-- Sitio de Nace.AI: https://www.nace.ai/
-- Instalacion de Kapitsa via Homebrew: `brew install nace-ai/tap/kapitsa`
+- llama.cpp (runtime de referencia, build 0a94a3f2): no disponible enlace directo en la información proporcionada
+- LM Studio: no disponible enlace en la información proporcionada
+- Ollama: no disponible enlace en la información proporcionada

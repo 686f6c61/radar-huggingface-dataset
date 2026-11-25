@@ -2,91 +2,87 @@
 
 ## Resumen
 
-SZL-AcousticGovernance-0.8B-v1 es un modelo de generacion de texto de aproximadamente 873 millones de parametros publicado por SZLHOLDINGS, una organizacion que agrupa modelos, datasets y Spaces bajo lo que denomina un "estate" de IA gobernada con resultados verificables mediante recibos de auditoria. El modelo se presenta como un artefacto entrenado dentro de esa factoria gobernada y deriva de un modelo base de la misma organizacion, SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3, que a su vez se apoya en la arquitectura qwen3_5 segun los tags del repositorio.
+SZL-AcousticGovernance-0.8B-v1 es un modelo de generacion de texto de 873.438.784 parametros (aproximadamente 0,8B) publicado por SZLHOLDINGS, una organizacion que agrupa su catalogo bajo la etiqueta de "estate de IA gobernada" con trazabilidad de resultados. El modelo se presenta como un artefacto entrenado dentro de su "factoría gobernada" y deriva de un modelo base propio: SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3, lo que sugiere un linaje de ajuste supervisado sobre una arquitectura de la familia Qwen 3.5 (tag `qwen3_5` en Hugging Face).
 
-El interes tecnico principal no reside en una innovacion arquitectonica propia, sino en su enfoque de gobernanza: la model card explicita que cualquier afirmacion de entrenamiento o evaluacion debe estar respaldada por ficheros de recibo (receipts) y que lo que no esta medido se etiqueta como UNKNOWN en lugar de estimarse. Esta filosofia de trazabilidad resulta relevante para equipos que necesitan modelos pequenos y desplegables en entornos con requisitos de auditoria.
+El modelo se distribuye con licencia Apache 2.0, en formato safetensors y con la libreria transformers como via de carga, con un tamano de repositorio de 1,8 GB. Declara unicamente el idioma ingles. Su relevancia practica es limitada: la model card no aporta informacion sobre datos de entrenamiento, composicion del dataset, tecnicas de alineamiento ni resultados de evaluacion medidos, y el propio autor indica explicitamente que cualquier afirmacion no respaldada por sus ficheros de "receipts" debe considerarse desconocida.
 
-Con 0,8B de parametros, licencia Apache 2.0 y pesos en safetensors, el modelo esta pensado para inferencia ligera en text-generation. La informacion publica disponible es escasa: no se detallan datos de entrenamiento, benchmarks ni composicion del dataset, por lo que esta ficha marca explicitamente como no disponible todo aquello que la model card no documenta.
+La propuesta diferencial del autor no es tecnica sino de gobernanza: el modelo se enmarca en un sistema de recibos auditables (receipts) con marcas temporales y estados MEASURED/REPORTED/UNKNOWN. No obstante, un escaneo estricto de receipts de noviembre de 2026 clasifica este repositorio como RECEIPT_FILES_NO_DONE, es decir, con ficheros con nombre de recibo pero sin el DONE.json estricto que respaldaria evidencias de evaluacion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia qwen3_5, segun tags del repo) |
-| Parametros totales | 873.438.784 (dato real de safetensors) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer decoder-only de la familia Qwen 3.5 (tag `qwen3_5`); detalles internos no disponibles |
+| Parametros totales | 873.438.784 |
+| Parametros activos | no disponible (no se declara que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Tipos de cuantizacion | no disponible en la model card; al ser safetensors, admite cuantizacion posterior a GGUF/AWQ/GPTQ mediante herramientas externas, sin recetas oficiales publicadas |
 | Idiomas soportados | en (ingles) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura transformer asociada a la familia qwen3_5, tal como reflejan los tags del repositorio. Con 873.438.784 parametros, se situa en el rango de los modelos pequenos orientados a despliegue eficiente. El modelo base declarado es SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3, un artefacto de la misma organizacion afinado mediante SFT (supervised fine-tuning) segun su nomenclatura, sobre el que se habria construido esta variante de "gobernanza acustica".
+La informacion disponible solo permite afirmar que se trata de un modelo de generacion de texto etiquetado como `qwen3_5`, lo que apunta a una arquitectura transformer decoder-only heredada de la familia Qwen 3.5, con 873.438.784 parametros totales. No se publican en la model card el numero de capas, dimensiones ocultas, mecanismo de atencion, vocabulario ni longitud de contexto soportada.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. La model card indica de forma explicita que las afirmaciones de entrenamiento y evaluacion residen en ficheros de recibo del "estate" y que cualquier dato no documentado debe considerarse UNKNOWN. Por tanto, la trazabilidad del entrenamiento depende de verificar esos recibos en el repositorio de la organizacion en GitHub, no de la card de Hugging Face.
+El modelo deriva del checkpoint SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3, que por su nombre sugiere un ajuste supervisado (SFT) orientado a tareas de agente con recibos. No se documentan el volumen de tokens de entrenamiento, la composicion del corpus, el uso de RLHF/DPO, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. El autor remite cualquier afirmacion de entrenamiento o evaluacion a ficheros de receipts alojados en su "estate mesh", y declara explicitamente que lo no registrado en ellos es UNKNOWN. El escaneo estricto de receipts de 2026-11-22 no encontro un DONE.json valido, por lo que la evidencia de evaluacion figura como UNKNOWN.
 
 ## Capacidades
 
-- Generacion de texto en ingles (unico idioma declarado).
-- Pipeline declarado: text-generation.
-- Compatible con la libreria transformers.
-- No se documentan capacidades de razonamiento avanzado, codigo o matematicas mas alla de las inherentes al modelo base.
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes ni razonamiento multi-paso.
-- No se documentan capacidades multimodales (vision, audio) pese al nombre "Acoustic" del modelo; la card no describe entrada o salida de audio.
-- No se documenta modo thinking ni capacidades especiales adicionales.
+- Generacion de texto en ingles como capacidad principal declarada (pipeline `text-generation`).
+- Linaje orientado a agentes con recibos: el modelo base se denomina "receiptagent", lo que sugiere un ajuste para tareas de registro y trazabilidad, aunque no se documentan las capacidades concretas resultantes.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles segun el campo de idiomas del repositorio.
+- Capacidades especiales (modo thinking, vision, audio): no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Clasificacion y etiquetado de texto a gran escala: con 0,8B de parametros, el modelo puede procesar volumenes altos de documentos en lotes sobre una sola GPU, lo que lo hace adecuado para tareas de categorizacion o extraccion de campos en pipelines de datos.
-- Generacion de resumenes de documentos cortos en ingles: su tamano permite desplegarlo en un servicio de resumenes con baja latencia, siempre que se valide la calidad frente al modelo base.
-- Prototipado rapido en entornos de investigacion: sirve como modelo de referencia para experimentar con tecnicas de evaluacion gobernada y trazabilidad de resultados, dado el enfasis de la organizacion en recibos auditables.
-- Filtrado y preprocesado en cascada: puede actuar como primera etapa barata que descarte o marque contenido antes de pasarlo a un modelo mayor, reduciendo coste por token en sistemas de dos niveles.
-- Despliegue en entornos con requisitos de auditoria: la licencia Apache 2.0 y la filosofia de documentacion con marcas MEASURED/UNKNOWN facilitan su inclusion en sistemas donde cada componente debe justificar sus afirmaciones.
-- Experimentacion con fine-tuning sobre dominios concretos: al ser un modelo pequeno con pesos safetensors y licencia permisiva, es un candidato razonable para ajuste supervisado en tareas de nicho en ingles.
+- Clasificacion y etiquetado de texto en ingles en pipelines de datos: el tamano de 0,8B permite desplegarlo en una sola GPU consumer para tareas de anotacion por lotes, siempre que se valide su calidad con evaluaciones propias dado que no hay benchmarks publicados.
+- Prototipado rapido de asistentes conversacionales en ingles: al cargarse con transformers y pesar 1,8 GB en safetensors, es adecuado para entornos de desarrollo y pruebas de integracion antes de escalar a modelos mayores.
+- Generacion de resumenes o extraccion de campos en flujos documentales: su origen en un modelo "receiptagent" sugiere un ajuste hacia tareas de registro estructurado, aunque el usuario debe verificar el comportamiento real con su propio conjunto de validacion.
+- Experimentacion en investigacion sobre gobernanza de modelos: el repositorio sirve como ejemplo de publicacion con sistema de receipts y estados de evidencia (MEASURED/REPORTED/UNKNOWN), util para estudiar practicas de documentacion reproducible.
+- Despliegue en entornos con recursos limitados: con 0,8B de parametros cabe en GPUs de 8-16 GB en precision completa o en CPU mediante cuantizacion a 4 bits con llama.cpp u Ollama, aunque sin recetas oficiales de cuantizacion publicadas.
+- Fine-tuning especifico de dominio: al ser Apache 2.0 y safetensors, permite ajuste adicional sobre datos propios en ingles para tareas de extraccion o clasificacion, con coste computacional bajo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card declara explicitamente que no se afirma ningun numero de benchmark mas alla de lo que una auditoria fechada haya medido, y que los datos no documentados se etiquetan como UNKNOWN.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card declara explicitamente que no se afirma ninguna cifra de benchmark mas alla de lo medido en una auditoria fechada, y el escaneo estricto de receipts clasifica la evidencia de evaluacion como UNKNOWN (sin DONE.json valido).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16/bf16: aproximadamente 1,7-1,8 GB solo para pesos, mas overhead de activaciones y cache KV.
-- VRAM estimada en cuantizacion de 8 bits: en torno a 0,9-1,0 GB para pesos.
-- VRAM estimada en cuantizacion de 4 bits: en torno a 0,5-0,6 GB para pesos (requiere conversion propia, ya que no se publican variantes cuantizadas).
-- GPU consumer: cabe holgadamente en cualquier GPU con 4 GB o mas de VRAM, incluidas GTX 1650, RTX 3050, RTX 4060 y superiores.
-- GPU de datacenter: A100, H100 y L40S pueden ejecutarlo con margen amplio y alto paralelismo de peticiones.
-- Opciones de despliegue: transformers de forma nativa; vLLM y TGI son viables si la arquitectura qwen3_5 esta soportada por esas librerias; llama.cpp u Ollama requeririan conversion a GGUF, no publicada.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
+- VRAM estimada para inferencia: aproximadamente 1,8 GB en fp16/bf16 (pesos safetensors de 873M de parametros); en cuantizacion 8 bits en torno a 1 GB y en 4 bits en torno a 0,5-0,6 GB, mas overhead de activaciones y cache KV segun contexto.
+- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente en fp16; RTX 3060, RTX 4060, RTX 4090, A100 y H100 lo ejecutan sin problemas, aunque las GPU de gama alta estan sobredimensionadas para este tamano.
+- Cabe en GPU consumer: si, en practicamente cualquier GPU consumer moderna (GTX 1060 6 GB en adelante en fp16; integradas o CPU con cuantizacion 4 bits).
+- Opciones de despliegue: transformers (via oficial declarada); vLLM, TGI, llama.cpp y Ollama son viables en teoria al tratarse de un transformer estandar, pero no hay configuraciones oficiales publicadas ni confirmacion de compatibilidad con arquitectura `qwen3_5` en dichos motores.
+- Latencia y throughput estimados: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Idiomas | Notas |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Benchmarks publicados |
 |---|---|---|---|---|---|
-| SZL-AcousticGovernance-0.8B-v1 | 873 M | no disponible | Apache 2.0 | en | Pesos safetensors, sin benchmarks publicados |
-| Qwen3 0.6B | ~600 M | no disponible en esta ficha | Apache 2.0 | multilingue | Familia base declarada por los tags; referencia natural de comparacion |
-| Llama 3.2 1B | ~1,2 B | 128 K (segun documentacion publica de Meta) | Llama 3.2 Community License | multilingue | Mayor tamano y contexto documentado; licencia con restricciones |
-| SmolLM2 1.7B | ~1,7 B | no disponible en esta ficha | Apache 2.0 | en | Alternativa pequena con documentacion de entrenamiento publica |
+| SZL-AcousticGovernance-0.8B-v1 | 873M | no disponible | en | Apache 2.0 | no disponible |
+| Qwen3 0.6B | 0,6B | no disponible en esta ficha | multilingue | Apache 2.0 | si, en su model card oficial |
+| Llama 3.2 1B | 1,2B | 128K | multilingue | Llama 3.2 Community License | si, en su model card oficial |
+| Gemma 3 1B | 1B | 32K | multilingue | Gemma Terms of Use | si, en su model card oficial |
 
-La comparacion directa de rendimiento no es posible porque el modelo no publica benchmarks. Frente a las alternativas, su principal diferencia es la trazabilidad documental y la licencia permisiva, no unas metricas superiores demostradas.
+La comparativa se limita a tamano, licencia y disponibilidad de evaluaciones: los tres modelos alternativos publican resultados de benchmarks y soportan multiples idiomas, mientras que SZL-AcousticGovernance-0.8B-v1 solo declara ingles y no ofrece metricas verificables. Los datos de contexto de las alternativas corresponden a sus fichas oficiales; los de este modelo no estan disponibles.
 
 ## Limitaciones y advertencias
 
-- Solo declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta documentado y previsiblemente sera limitado.
-- No se publican benchmarks, por lo que no hay evidencia medida de calidad frente a modelos de tamano similar.
-- No se documenta la longitud de contexto, lo que impide planificar su uso en tareas con documentos largos.
-- Riesgo de alucinacion inherente a los modelos de lenguaje de este tamano; no hay evaluaciones publicadas de fidelidad.
-- No se documentan sesgos; al desconocerse la composicion del dataset de entrenamiento, no es posible evaluar sesgos de genero, raza o ideologicos.
-- El nombre "AcousticGovernance" no corresponde a capacidades de audio documentadas; conviene no asumir funcionalidad de voz sin verificacion.
-- Aunque la licencia es Apache 2.0 y permite uso comercial, la ausencia de evaluaciones y de documentacion de entrenamiento traslada al integrador la responsabilidad de validar el modelo en produccion.
-- Las afirmaciones de la organizacion sobre resultados verificables remiten a ficheros de recibo externos; deben comprobarse en el repositorio de GitHub antes de tomarlas como validas.
+- Ausencia total de benchmarks y de evidencia de evaluacion validada: el escaneo estricto de receipts lo clasifica como RECEIPT_FILES_NO_DONE, con evidencia de evaluacion UNKNOWN.
+- Idioma limitado al ingles segun el campo de idiomas del repositorio; el rendimiento en castellano es desconocido y probablemente deficiente.
+- Longitud de contexto no documentada, lo que impide planificar cargas con ventanas largas sin pruebas previas.
+- Riesgo de alucinacion no cuantificado: al no haber evaluaciones publicadas, no puede estimarse la tasa de confabulacion; existe un fichero `receipts/eval/fleet-confabulation-sweep-20261108.json` en el repositorio, pero el autor no lo valida como evidencia.
+- Sesgos conocidos: no documentados.
+- Licencia Apache 2.0: permite uso comercial y modificacion con atribucion, sin restricciones adicionales declaradas; conviene conservar el aviso de licencia y verificar que los pesos derivados del modelo base no arrastren terminos distintos.
+- Linaje de ajuste poco transparente: se desconoce que datos SFT se usaron en el modelo base, lo que dificulta evaluar riesgos de contaminacion o comportamiento indeseado en produccion.
+- Recomendacion practica: no desplegar en produccion sin una evaluacion propia sobre el dominio objetivo y sin verificar la compatibilidad del tag `qwen3_5` con los motores de inferencia elegidos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/SZL-AcousticGovernance-0.8B-v1
+- Modelo base: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3
 - Organizacion en Hugging Face: https://huggingface.co/SZLHOLDINGS
-- Modelo base declarado: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3
-- Organizacion en GitHub: https://github.com/szl-holdings
-- Repositorio de generacion de cards: https://github.com/szl-holdings/estate-cards
+- Repositorio de la organizacion en GitHub: https://github.com/szl-holdings
+- Herramienta de generacion de fichas del autor: https://github.com/szl-holdings/estate-cards

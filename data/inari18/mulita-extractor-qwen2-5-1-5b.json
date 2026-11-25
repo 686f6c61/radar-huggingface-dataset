@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "Inari18/mulita-extractor-qwen2.5-1.5b",
+  "slug": "inari18-mulita-extractor-qwen2-5-1-5b",
+  "author": "Inari18",
+  "url": "https://huggingface.co/Inari18/mulita-extractor-qwen2.5-1.5b",
+  "created_at": "2026-10-05T12:17:21.000Z",
+  "updated_at": "2026-11-25T02:08:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "information-extraction",
+    "vulnerability-reports",
+    "security",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 1972096416,
+  "storage_human": "2.0 GB",
+  "context_length": 32768,
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

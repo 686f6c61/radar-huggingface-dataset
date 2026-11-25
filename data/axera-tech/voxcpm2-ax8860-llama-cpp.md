@@ -2,101 +2,106 @@
 
 ## Resumen
 
-VoxCPM2-AX8860-llama.cpp es un paquete de despliegue preparado por AXERA-TECH para ejecutar el modelo de sintesis de voz VoxCPM2 (desarrollado originalmente por OpenBMB) sobre la NPU de cuatro nucleos del SoC Axera AX8860, utilizando una bifurcacion de llama.cpp con soporte para el backend ggml-axera. No se trata de un modelo nuevo, sino de una cuantizacion y empaquetado del modelo base openbmb/VoxCPM2 en formato GGUF F16, acompanado de binarios estaticos, kernels de NPU y scripts de ejecucion y benchmark.
+VoxCPM2-AX8860-llama.cpp es una distribucion optimizada del modelo de sintesis de voz VoxCPM2 (desarrollado originalmente por OpenBMB) para ejecutarse sobre la NPU del SoC Axera AX8860 mediante una bifurcacion de llama.cpp con soporte ggml-axera. El paquete lo publica AXERA-TECH e incluye pesos en formato GGUF, kernels precompilados para la NPU, binarios estaticos (`llama-server` y `llama-tts`) y scripts de ejecucion y benchmark. No se trata de un modelo nuevo, sino de una adaptacion de despliegue de un TTS de ~912 millones de parametros.
 
-El modelo resuelve el problema de servir sintesis de voz con clonacion de voz zero-shot en hardware de borde (edge), sin GPU dedicada, exponiendo una API compatible con el endpoint `/v1/audio/speech` de OpenAI. Con aproximadamente 912 millones de parametros, el paquete se divide en dos ficheros GGUF: un modelo de lenguaje base (3,2 GB) y una parte acustica (1,8 GB), con un consumo de memoria en NPU de unos 3,0 GB y 6,3 GB de RSS en host.
+El modelo resuelve la sintesis de voz con clonacion zero-shot y salida en streaming, exponiendo una API compatible con OpenAI (`/v1/audio/speech`). Su relevancia practica esta en que demuestra inferencia TTS en hardware de borde (edge) con una NPU de 4 nucleos, alcanzando un RTF de aproximadamente 0,27, es decir, genera audio unas 3,7 veces mas rapido que tiempo real.
 
-Su relevancia actual radica en que demuestra la viabilidad de ejecutar TTS neuronal de calidad con clonacion de voz sobre aceleradores NPU de bajo consumo, con latencias de primer paquete de audio de 0,18-0,20 s y un factor de tiempo real (RTF) en torno a 0,27, lo que permite generacion mas rapida que el tiempo real en un dispositivo empotrado.
+La arquitectura combina un modelo de lenguaje base (3,2 GB en F16) con un modulo acustico (1,8 GB en F16) que integra un decodificador VAE de audio y un bucle de difusion de 9 pasos Euler. El contexto configurado en el servidor es de 8192 tokens. Los idiomas documentados en los ejemplos y pruebas son chino e ingles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (modelo base VoxCPM2; el paquete incluye un language model base y un modulo acustico con decodificador VAE de audio y bucle de difusion) |
+| Arquitectura | TTS basado en modelo de lenguaje + modulo acustico con VAE de audio y difusion (9 pasos Euler); inferencia via llama.cpp/ggml-axera |
 | Parametros totales | 912.440.644 |
-| Parametros activos | No aplica (no es MoE segun la informacion disponible) |
-| Longitud de contexto | 8192 tokens (valor de `-c` usado en el servidor de ejemplo) |
-| Tipos de cuantizacion | F16 (ambos ficheros GGUF) |
-| Idiomas soportados | No disponible oficialmente; los benchmarks y pruebas cubren ingles y chino |
-| Licencia | No disponible |
-| Formato de pesos | GGUF (F16) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 8192 tokens (valor de `-c` en el servidor de referencia) |
+| Tipos de cuantizacion | F16 (unico formato publicado en este repo) |
+| Idiomas soportados | chino e ingles (segun ejemplos y pruebas de la model card); no se declara lista oficial de idiomas |
+| Licencia | no disponible |
+| Formato de pesos | GGUF (F16): `VoxCPM2-BaseLM-F16.gguf` y `VoxCPM2-Acoustic-F16.gguf` |
 
 ## Arquitectura y entrenamiento
 
-El paquete no documenta la arquitectura interna del modelo base VoxCPM2 mas alla de su descomposicion funcional. Se distribuyen dos componentes: un modelo de lenguaje base (`VoxCPM2-BaseLM-F16.gguf`, 3,2 GB) y una parte acustica (`VoxCPM2-Acoustic-F16.gguf`, 1,8 GB) que incluye un decodificador VAE de audio y un bucle de difusion con nueve pasos Euler. La generacion de audio combina el modelado de lenguaje con un proceso de difusion para producir la forma de onda, y admite clonacion de voz zero-shot a partir de una grabacion de referencia.
+La model card de esta distribucion no documenta el entrenamiento del modelo base; la informacion disponible se centra en el despliegue. Sabemos que VoxCPM2 se compone de dos partes empaquetadas por separado: un modelo de lenguaje base (BaseLM) y un modulo acustico. El modulo acustico incluye un decodificador VAE de audio y un bucle de difusion que ejecuta 9 pasos Euler en una sola llamada al kernel de la NPU. La generacion se controla con parametros como `max_steps`, `inference_timesteps`, `cfg_value` y `temperature`, lo que sugiere muestreo con classifier-free guidance y un esquema iterativo de refinamiento acustico.
 
-El despliegue sobre AX8860 se apoya en ocho kernels de NPU especificos: prefill del modelo de lenguaje (con paginas de 256 y 16 tokens), decode del modelo de lenguaje, modelo de lenguaje residual (con post-procesado y cabeza de parada), codificador local, bucle de difusion (los nueve pasos Euler en una sola llamada), y decodificador y codificador VAE de audio. No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO en el modelo base.
+La innovacion tecnica de este paquete es el motor de ejecucion: ocho kernels especificos para la NPU AX8860 (prefill del LM con paginas de 256 y 16 tokens, decode del LM, modelo de lenguaje residual con post-procesado y cabeza de parada, encoder local, bucle de difusion, y decoder y encoder del VAE de audio), junto con una bifurcacion de llama.cpp (`ZHEQIUSHUI/llama.cpp` en el commit `6613735ce`). No se dispone de datos sobre numero de tokens de entrenamiento, composicion del dataset ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Sintesis de voz (text-to-speech) en ingles y chino segun las pruebas publicadas.
-- Clonacion de voz zero-shot mediante `ref_audio` (WAV en base64) y, opcionalmente, `ref_text` con la transcripcion de la referencia.
-- Salida en streaming: primer paquete de audio en 0,18 s (ingles) y 0,20 s (chino).
+- Sintesis de voz (text-to-speech) a partir de texto en chino e ingles.
+- Clonacion de voz zero-shot mediante audio de referencia (`ref_audio` en base64 WAV) y transcripcion opcional de referencia (`ref_text`).
+- Salida en streaming con baja latencia de primer paquete (0,18 s en ingles, 0,20 s en chino).
 - API compatible con OpenAI: endpoint `/v1/audio/speech` con formatos `wav` y `pcm`.
-- Parametros de inferencia ajustables por peticion: `seed`, `max_steps`, `inference_timesteps`, `cfg_value`, `temperature`.
-- Procesamiento por peticiones serializado (`-np 1`), sin soporte documentado de batching concurrente.
+- Control de generacion mediante semilla (`seed`), pasos de inferencia y temperatura.
+- Ejecucion en hardware de borde sobre NPU, sin GPU dedicada.
 - No se documentan capacidades de tool calling, agentes, vision ni audio de entrada mas alla de la referencia de clonacion.
 
 ## Casos de uso
 
-- Asistentes de voz en dispositivos empotrados: el modelo cabe en unos 3,0 GB de memoria NPU y 6,3 GB de RSS en host, por lo que puede integrarse en equipos de borde sin GPU dedicada para dar respuestas habladas en tiempo real con RTF cercano a 0,27.
-- Clonacion de voz personalizada en aplicaciones de accesibilidad: a partir de una muestra de referencia y su transcripcion, se puede generar voz sintetica con el timbre del usuario para lectores de pantalla o comunicadores aumentativos.
-- Generacion de locuciones para contenido audiovisual: sintesis de frases largas (hasta 32 s de audio en las pruebas) con transcripcion verificada, adecuada para narraciones y doblaje de baja latencia.
-- Interfaces conversacionales con streaming: el primer paquete de audio en menos de 0,2 s permite iniciar la reproduccion antes de completar la frase, mejorando la percepcion de respuesta en asistentes telefonicos o kioscos.
-- Servicios de TTS autoalojados compatibles con OpenAI: al exponer `/v1/audio/speech`, puede sustituir a APIs en la nube en despliegues que ya usan el SDK de OpenAI, sin cambiar el codigo cliente.
-- Prototipado e investigacion en TTS sobre NPU: los scripts `bench.sh` y `run.sh`, junto con los kernels y el manifiesto, permiten reproducir metricas y validar variantes de inferencia en el propio dispositivo AX8860.
+- Asistentes de voz en dispositivos empotrados: el modelo cabe en una NPU de 4 nucleos con unos 3,0 GB de memoria NPU y 6,3 GB de RSS en host, lo que permite integrar TTS local en equipos de borde sin depender de la nube.
+- Clonacion de voz para personalizacion de interfaces: con `ref_audio` se puede generar una voz concreta a partir de una grabacion de referencia, util para lectores de pantalla o asistentes con identidad de marca.
+- Locucion automatizada de contenidos: con un RTF de ~0,27, se pueden generar narraciones de varios minutos (por ejemplo, 32 s de audio en 8,58 s) para podcasts, audiolibros o notas de prensa.
+- Respuestas de voz en tiempo real en aplicaciones conversacionales: la latencia de primer paquete por debajo de 0,2 s y la salida PCM en streaming permiten encadenar STT, LLM y TTS en un pipeline de baja latencia.
+- Sistemas de megafonia o anuncios dinamicos en entornos industriales o de transporte: el despliegue sobre NPU evita GPUs y permite actualizar los textos locutados en tiempo de ejecucion.
+- Pruebas de accesibilidad y prototipado multilingue chino-ingles: el modelo cubre ambos idiomas en un mismo binario, lo que simplifica la generacion de contenido bilingue para validacion de interfaces.
 
 ## Benchmarks y rendimiento
 
-Datos de rendimiento del autor (AX8860, NPU de 4 nucleos, modo servidor, extremo a extremo, generados con `./bench.sh`):
+Los datos publicados corresponden a rendimiento de inferencia (RTF), no a benchmarks de calidad tipo MMLU o HumanEval, que no aplican a un modelo TTS.
 
-| Peticion | Audio | Tiempo | RTF |
+| Peticion | Audio generado | Tiempo | RTF |
 |---|---:|---:|---:|
-| Ingles, corto | 3,36 s | 0,93 s | 0,276 |
-| Chino, corto | 3,20 s | 0,92 s | 0,286 |
-| Ingles, medio | 8,16 s | 2,21 s | 0,270 |
-| Chino, medio | 8,48 s | 2,34 s | 0,276 |
-| Ingles, largo | 22,24 s | 6,00 s | 0,270 |
-| Chino, largo | 32,00 s | 8,58 s | 0,268 |
+| Ingles, frase corta | 3,36 s | 0,93 s | 0,276 |
+| Chino, frase corta | 3,20 s | 0,92 s | 0,286 |
+| Ingles, frase media | 8,16 s | 2,21 s | 0,270 |
+| Chino, frase media | 8,48 s | 2,34 s | 0,276 |
+| Ingles, frase larga | 22,24 s | 6,00 s | 0,270 |
+| Chino, frase larga | 32,00 s | 8,58 s | 0,268 |
 
-| Metrica | Resultado |
+| Metrica adicional | Resultado |
 |---|---|
-| Primer audio en streaming | 0,18 s (ingles), 0,20 s (chino) |
+| Primer paquete en streaming (ingles / chino) | 0,18 s / 0,20 s |
 | Tiempo hasta servidor listo | 62,5 s |
 | Memoria NPU (CMM) | ~3,0 GB |
 | Memoria host (RSS) | ~6,3 GB |
-| Estabilidad | Memoria plana en 60 peticiones mixtas (mitad con clonacion) |
+| Estabilidad de memoria | Sin crecimiento en 60 peticiones mixtas (mitad con clonacion) |
 
-No se han publicado resultados de benchmarks de calidad (MOS, WER, similitud de hablante) ni comparaciones con otros modelos en la informacion disponible. La validacion de correctitud se limita a la transcripcion con Qwen3-ASR de 55 clips (11 textos en chino e ingles, cinco semillas cada uno), sin perdidas ni repeticiones de frases.
+En cuanto a correctitud, 55 clips sintetizados (11 pasajes en chino e ingles, 5 semillas cada uno) se transcribieron con Qwen3-ASR sin perdida ni repeticion de frases, coincidiendo con la implementacion CPU oficial. No se han publicado resultados de benchmarks de calidad de audio (MOS, similitud de hablante) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Hardware objetivo: SoC Axera AX8860 con NPU de cuatro nucleos y runtime del SDK en `/opt/lib`.
-- Memoria: aproximadamente 3,0 GB de memoria NPU (CMM) y 6,3 GB de RSS en host.
-- Almacenamiento: repositorio de 5,1 GB; los pesos GGUF suman 5,0 GB (3,2 GB + 1,8 GB).
-- No esta pensado para GPU de consumo (RTX 4090) ni para A100/H100: los binarios son estaticos para la placa y los kernels estan compilados para la NPU del AX8860.
-- Despliegue: `llama-server` y `llama-tts` incluidos en `bin/`, con `run.sh` y `bench.sh`; requiere `curl` en la placa para las pruebas de API.
-- Exclusividad: consume los cuatro nucleos NPU, por lo que no deben ejecutarse otros programas de NPU en paralelo.
-- Latencia y throughput: RTF de 0,27-0,29 y primer paquete de audio de 0,18-0,20 s; las peticiones se atienden de una en una (`-np 1`).
+- Hardware objetivo: SoC Axera AX8860 con NPU de 4 nucleos y runtime SDK en `/opt/lib`. La NPU queda monopolizada por el proceso.
+- Memoria NPU: aproximadamente 3,0 GB (CMM).
+- Memoria host: aproximadamente 6,3 GB de RSS.
+- Almacenamiento: repositorio de 5,2 GB (pesos F16 de 3,2 GB + 1,8 GB, binarios y kernels).
+- No se documenta soporte para GPU convencionales (A100, H100, RTX 4090) en este paquete; el motor es especifico de la NPU AX8860.
+- Despliegue: binarios `llama-server` y `llama-tts` incluidos, con `run.sh` y `bench.sh`; servidor con `-np 1` (peticiones serializadas), `-c 8192`, `-b 1024`, `-ngl 99`.
+- Throughput: procesamiento secuencial de peticiones; RTF ~0,27 en servicio end-to-end.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye comparaciones con otros modelos de TTS ni con otras implementaciones de VoxCPM2 (por ejemplo, la implementacion oficial en CPU mencionada en la model card). Como referencia interna, el autor senala que los resultados de transcripcion coinciden con la implementacion oficial en CPU de VoxCPM2, pero no se aportan cifras de rendimiento de esa variante.
+| Modelo | Parametros | Contexto | Despliegue | Licencia | Notas |
+|---|---|---|---|---|---|
+| VoxCPM2-AX8860 (este) | ~912 M | 8192 | NPU AX8860 (llama.cpp) | no disponible | RTF ~0,27, clonacion zero-shot, streaming |
+| openbmb/VoxCPM2 (base) | ~912 M | no disponible | CPU/GPU (implementacion oficial) | no disponible | Referencia de calidad; sin cifras de rendimiento en esta informacion |
+| Alternativas TTS open source | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion proporcionada |
+
+No se dispone de datos de benchmarks comparativos con otros modelos TTS en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: no se puede confirmar el uso comercial del modelo base ni del empaquetado; es imprescindible verificar la licencia de openbmb/VoxCPM2 antes de produccion.
-- Idiomas no declarados oficialmente: las pruebas solo cubren chino e ingles; el comportamiento en castellano u otros idiomas no esta validado.
-- Sin soporte de concurrencia: el servidor se ejecuta con `-np 1` y atiende peticiones de forma serial, lo que limita el throughput en escenarios multiusuario.
-- Exclusividad de hardware: ocupa los cuatro nucleos NPU del AX8860; no puede convivir con otras cargas de NPU.
-- Dependencia de hardware y SDK especificos: los binarios son estaticos y los kernels estan compilados para AX8860; no es portable a otras plataformas sin recompilar.
-- Riesgo de alucinacion acustica: como todo sistema de TTS generativo, puede producir prosodia incorrecta, artefactos o pronunciaciones erroneas en textos fuera de dominio; no se publican metricas de calidad subjetiva (MOS) ni de error de palabra.
-- Clonacion de voz: implica riesgos de suplantacion y uso indebido; requiere consentimiento explicito de la persona cuya voz se clona y controles de abuso en produccion.
-- Sin datos sobre sesgos: no se documentan sesgos de genero, acento o idioma en el modelo base.
-- Memoria plana verificada solo en 60 peticiones: no hay pruebas de estabilidad en ejecuciones prolongadas.
+- La licencia no esta declarada en el repositorio; es imprescindible verificar los terminos del modelo base `openbmb/VoxCPM2` antes de cualquier uso comercial.
+- La NPU de 4 nucleos queda ocupada en exclusiva; no se pueden ejecutar otros programas de NPU en paralelo.
+- Las peticiones se atienden de forma serializada (`-np 1`), lo que limita el throughput en escenarios multiusuario.
+- Solo se publican pesos en F16; no hay variantes cuantizadas de menor precision en este repo.
+- Idiomas documentados limitados a chino e ingles; no se declara cobertura multilingue adicional.
+- Riesgo de alucinacion o artefactos en la sintesis no cuantificado: no se publican metricas de MOS ni de similitud de hablante.
+- El tiempo de arranque del servidor es elevado (62,5 s), relevante para despliegues con reinicios frecuentes.
+- Dependencia de una bifurcacion concreta de llama.cpp y de kernels binarios especificos del SoC, lo que reduce la portabilidad.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/AXERA-TECH/VoxCPM2-AX8860-llama.cpp
+- Repositorio Hugging Face: https://huggingface.co/AXERA-TECH/VoxCPM2-AX8860-llama.cpp
 - Modelo base: https://huggingface.co/openbmb/VoxCPM2
-- Bifurcacion de llama.cpp utilizada: https://github.com/ZHEQIUSHUI/llama.cpp (commit `14fcd6e3b`)
+- Bifurcacion de llama.cpp utilizada: https://github.com/ZHEQIUSHUI/llama.cpp (commit `6613735ce`)

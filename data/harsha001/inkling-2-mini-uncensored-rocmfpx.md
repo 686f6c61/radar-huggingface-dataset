@@ -2,95 +2,119 @@
 
 ## Resumen
 
-Inkling-2-Mini-Uncensored-ROCmFPX es una redistribución cuantizada del modelo Inkling 2 Mini de Thinking Machines, publicada por el usuario Harsha001 en Hugging Face. El modelo original es un transformer de tipo Mixture-of-Experts (MoE) con 26.065.943.137 parámetros totales, 24 capas y 128 expertos por capa, de los cuales 8 se activan por token (aproximadamente 3.1B parámetros activos por pasada de capa). Se trata además de un modelo "looped": las capas 6 a 17 se ejecutan tres veces por token, de modo que cada token atraviesa 48 capas efectivas.
+Inkling 2 Mini Uncensored ROCmFPX es una cuantización GGUF del modelo Inkling 2 Mini de Thinking Machines, adaptada específicamente para GPUs AMD (Vulkan y ROCm) mediante los formatos de pesos propietarios del fork ROCmFPX. El modelo original es un transformer con arquitectura de mezcla de expertos (MoE) de 26.065.943.137 parámetros totales, 24 capas y 128 expertos por capa con 8 activos por token (aproximadamente 3.1B parámetros activos por pasada de capa). Es un modelo "looped": las capas 6 a 17 se ejecutan tres veces por token, de modo que cada token atraviesa 48 capas efectivas.
 
-La aportación concreta de esta ficha es doble. Por un lado, incorpora la edición de "uncensoring" de AtomicChat, un LoRA de rango 1 aplicado sobre la salida de atención y los expertos enrutados de las 24 capas más el token embedding, que elimina la dirección de rechazo de cada capa. Por otro, empaqueta los pesos en los formatos ROCmFPX (ROCmFP4 y ROCmFPX de 8 bits) pensados para GPUs AMD vía Vulkan y ROCm, con especial atención al hardware Strix Halo. Los ficheros van desde 15.5 GB (4 bits) hasta 26.9 GB (8 bits).
+La versión publicada por Harsha001 incorpora el edit de "uncensoring" de AtomicChat, un LoRA de rango 1 aplicado sobre la salida de atención y los expertos enrutados de las 24 capas, además del embedding de tokens, que elimina la dirección de rechazo de cada capa. Según las mediciones de AtomicChat, el modelo resultante no rechaza peticiones dañinas en inglés ni ruso (el original rechazaba entre el 91% y el 100%) y mantiene un 79,15% en MMLU frente al 80,65% del original.
 
-Es relevante ahora porque ofrece una vía práctica para ejecutar un MoE de 26B en GPUs AMD de consumo y en APUs Strix Halo, algo poco habitual en el ecosistema, a costa de depender de un fork específico de llama.cpp y de asumir las implicaciones éticas y legales de un modelo deliberadamente "abliterated".
+La relevancia de esta ficha es doble: por un lado, documenta un MoE de 26B con solo ~3.1B activos, eficiente en inferencia; por otro, muestra un caso práctico de cuantización de baja precisión orientada a hardware AMD consumer (Strix Halo, Radeon 8060S) con formatos ROCmFPX que no son compatibles con llama.cpp estándar. El repo ocupa 106,4 GB y contiene tres archivos GGUF de 26,9 GB, 21,6 GB y 15,5 GB.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con capas "looped" (capas 6-17 repetidas 3 veces; 48 capas efectivas por token) |
+| Arquitectura | Transformer MoE con capas recurrentes (looped): 24 capas, capas 6-17 ejecutadas 3 veces por token (48 pasadas efectivas) |
 | Parametros totales | 26.065.943.137 |
-| Parametros activos | ~3.1B por pasada de capa (8 de 128 expertos activos por capa) |
-| Longitud de contexto | no disponible (los ejemplos de ejecución usan `-c 16384`) |
-| Tipos de cuantizacion | Q8_0 ROCmFPX (8 bits), Q6_K ROCmFPX (expertos 6 bits, resto 8 bits), Q4_0 ROCmFP4_STRIX_O8 (expertos 4 bits ROCmFP4, resto 8 bits ROCmFPX) |
-| Idiomas soportados | no disponible (la model card menciona pruebas en inglés y ruso) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (formatos propietarios ROCmFPX/ROCmFP4, requieren fork de llama.cpp) |
+| Parametros activos | ~3.1B por pasada de capa (128 expertos por capa, 8 activos por token) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q8_0_ROCMFPX (8 bits), Q6_K_ROCMFPX (expertos 6 bits, resto 8 bits), Q4_0_ROCMFP4_STRIX_O8 (expertos ROCmFP4, resto 8 bits) |
+| Idiomas soportados | no disponible (la model card menciona pruebas en inglés y ruso del edit de uncensoring) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF con formatos ROCmFPX (requiere el fork ROCmFPX de llama.cpp) |
+| Tamano del repo | 106,4 GB |
+| Modelo base | thinkingmachines/Inkling-2-Mini y AtomicChat/Inkling-2-Mini-Uncensored-GGUF |
+| Modalidad | Solo texto (sin encoder de visión ni drafter de predicción multi-token) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer MoE de 24 capas con 128 expertos por capa y enrutamiento top-8, lo que da unos 3.1B parámetros activos por pasada. La innovación estructural clave es el bucle de capas: las capas 6 a 17 se ejecutan tres veces por token, de forma que la profundidad efectiva es de 48 capas. Esta ficha incluye únicamente la parte de texto: el codificador de visión y el drafter de predicción multi-token del modelo original no están incluidos.
+El modelo original de Thinking Machines emplea una arquitectura MoE con 24 capas y 128 expertos por capa, de los cuales 8 se activan por token. La innovación estructural principal es el esquema "looped": las capas 6 a 17 se reutilizan tres veces por token, lo que eleva el cómputo efectivo a 48 capas sin incrementar el número de parámetros. Con 26,1B parámetros totales pero solo ~3,1B activos por pasada de capa, el coste de inferencia se aproxima al de un modelo denso de 3B, mientras que la capacidad de representación se acerca a la de un 26B.
 
-Sobre el entrenamiento del modelo original no se aportan detalles en la información disponible (número de tokens, composición del dataset, uso de RLHF/DPO). Lo que sí se documenta es el proceso de esta redistribución: se parte del checkpoint original, se fusiona el LoRA de uncensoring de AtomicChat (rango 1, fuerza 1) en precisión completa sobre las proyecciones down de los expertos, las salidas de atención y el token embedding en F32, manteniendo el resto de expertos NVFP4 tal cual, y después se recuantiza con `llama-quantize` aplicando escalas de potencia de dos por tensor (`.scale`) y un importance matrix derivado de una mezcla de prosa, código y chat. El resultado se empaqueta en los formatos ROCmFPX.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo original. El edit de uncensoring de AtomicChat es un LoRA de rango 1 aplicado sobre la salida de atención y los expertos enrutados de las 24 capas, más el embedding de tokens; en esta publicación se fusiona a fuerza 1 en el checkpoint original en precisión completa. Los archivos publicados son cuantizaciones de ese modelo fusionado, no el modelo completo en precisión nativa. El fork ROCmFPX añade formatos de pesos propios (ROCMIQ2_XXS de 2,06 bits por peso y ROCMIQ1_S de 1,56 bits por peso) aunque esta ficha no incluye archivos ROCmIQ: el autor indica que los modelos MoE como este aún están en verificación para esos formatos.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno.
-- Razonamiento con modo "thinking" controlable mediante el parámetro `reasoning_effort` del chat template, con valores `none`, `minimal`, `low`, `medium`, `high`, `xhigh`, `max` o un número entre 0 y 0.99 (por defecto 0.9).
-- Respuestas a peticiones que el modelo original rechaza, fruto del LoRA de uncensoring.
-- Capacidad multilingüe: la model card cita pruebas en inglés y ruso, aunque no se detalla la cobertura completa.
-- Tool calling y uso como agente: la arquitectura lo soporta en teoría, pero la model card advierte que llama.cpp todavía no parsea el formato de mensajes de Inkling, por lo que las llamadas a herramientas no se interpretan correctamente en esta versión.
-- No incluye visión ni predicción multi-token (componentes omitidos en esta distribución).
+- Generación de texto conversacional multi-turno, con formato de chat Inkling parseado en el fork ROCmFPX (con `--jinja` el "thinking" se devuelve separado de la respuesta).
+- Razonamiento y respuesta a instrucciones, heredado del modelo base Inkling 2 Mini.
+- Soporte de tool calling / function calling: el parser del fork ROCmFPX procesa las llamadas a herramientas del formato Inkling.
+- Modo "thinking" separado de la respuesta final (visible como campo distinto al usar `--jinja`).
+- Capacidades multilingües: no documentadas en la información disponible; las pruebas del edit de uncensoring se hicieron en inglés y ruso.
+- Sin capacidades de visión: el encoder visual del modelo original no está incluido en esta publicación.
+- Sin drafter de predicción multi-token: no se incluye decodificación especulativa.
+- Comportamiento "uncensored": responde a peticiones que el modelo original rechaza, por eliminación de la dirección de rechazo en cada capa.
 
 ## Casos de uso
 
-- Inferencia local en GPUs AMD de consumo: el fichero Q4_0 de 15.5 GB permite ejecutar un MoE de 26B en tarjetas de 24 GB (por ejemplo, RX 7900 XTX) usando el fork de llama.cpp con backend Vulkan o ROCm, algo inviable con modelos densos de ese tamaño.
-- Despliegue en APUs Strix Halo: los tres ficheros están dimensionados para memoria unificada de 24-32 GB, lo que permite servir el modelo en un mini-PC sin GPU dedicada, con margen para contexto largo en la variante de 4 bits.
-- Experimentación en investigación sobre alineación y rechazo: al eliminar la dirección de rechazo por capa, sirve para estudiar cómo se distribuye el comportamiento de negativa en un MoE con capas repetidas, comparando con el modelo original (MMLU 79.15% frente a 80.65%).
-- Generación de texto creativo sin filtros: escritura de ficción, guiones o contenido narrativo donde los rechazos del modelo base resultan un obstáculo, aceptando la responsabilidad de uso que advierte el autor.
-- Evaluación de cuantizaciones ROCmFPX: los datos de perplejidad y KL divulgados (Q8: KL 0.0039; Q6_K: 0.0046; Q4_0: 0.0119 sobre wikitext-2) permiten usar el modelo como banco de pruebas para medir la degradación de formatos de peso alternativos frente a GGUF estándar.
-- Chat conversacional de propósito general en inglés: con `llama-server` y `--jinja`, el modo chat plano funciona correctamente, aunque las respuestas incluyen los marcadores propios de Inkling (`<|content_thinking|>`, `<|end_message|>`) sin separar el razonamiento de la respuesta final.
+- Inferencia local en GPUs AMD consumer: el archivo Q4_0 de 15,5 GB cabe en GPUs AMD de 24 GB y en Strix Halo (Radeon 8060S) con espacio para contexto largo, lo que permite ejecutar un MoE de 26B en hardware integrado.
+- Estaciones de trabajo con Strix Halo: el Q8_0 de 26,9 GB aprovecha los 32 GB de memoria unificada de las APU Strix Halo para obtener la máxima calidad de cuantización sin GPU dedicada.
+- Despliegue con Vulkan o ROCm: el fork ROCmFPX permite usar backend Vulkan (portable en GPUs AMD) o ROCm (rendimiento nativo en CDNA/RDNA), útil en entornos donde no hay CUDA.
+- Asistentes conversacionales sin filtros de rechazo: para investigación sobre alineación, evaluación de sesgos o generación de contenido creativo sin restricciones, con la advertencia de responsabilidad que indica el autor.
+- Pipelines de agentes con tool calling: el parser Inkling del fork permite integrar el modelo en flujos de agentes que requieren llamadas a funciones y separación entre razonamiento y respuesta.
+- Evaluación comparativa de cuantizaciones: los tres archivos publicados (Q8, Q6_K, Q4) con métricas de perplejidad y KL documentadas permiten medir el impacto de la precisión en un MoE sobre hardware AMD.
+- Prototipado de bajo coste: con ~3,1B parámetros activos por pasada, el throughput es superior al de un denso de 26B, adecuado para iteración rápida en local.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible para esta distribución. Los únicos datos aportados son métricas de calidad de cuantización y una cifra de MMLU heredada de la model card de AtomicChat:
+Datos de calidad de cuantización publicados por el autor (perplejidad sobre wikitext-2, 40 fragmentos de 512 tokens, CPU; KL frente al modelo fusionado en precisión completa; "same top token" = coincidencia del token más probable con la referencia):
 
-| Metrica | Referencia fusionada | Original | Q8_0 ROCmFPX | Q6_K ROCmFPX | Q4_0 ROCmFP4 |
-|---|---:|---:|---:|---:|---:|
-| Tamano | 50.5 GB | 22.9 GB | 26.9 GB | 21.6 GB | 15.5 GB |
-| Perplejidad (wikitext-2) | 6.775 | 6.743 | 6.758 | 6.777 | 6.799 |
-| KL a referencia | — | — | 0.0039 | 0.0046 | 0.0119 |
-| Mismo token top | — | — | 97.4% | 96.9% | 95.2% |
-| MMLU (modelo sin cuantizar) | 79.15% | 80.65% | no disponible | no disponible | no disponible |
+| Build | Tamano | Perplejidad | KL a referencia | Same top token |
+|---|---:|---:|---:|---:|
+| Referencia fusionada (no publicada) | 50,5 GB | 6,775 | — | — |
+| Modelo original (no publicado) | 22,9 GB | 6,743 | — | — |
+| Q8_0_ROCMFPX | 26,9 GB | 6,758 | 0,0039 | 97,4% |
+| Q6_K_ROCMFPX | 21,6 GB | 6,777 | 0,0046 | 96,9% |
+| Q4_0_ROCMFP4_STRIX_O8 | 15,5 GB | 6,799 | 0,0119 | 95,2% |
 
-La edición de uncensoring eleva la perplejidad de wikitext en aproximadamente un 0.5% (de 6.743 a 6.775).
+El autor indica que el coste de cuantización es equivalente al de los archivos censurados previos (Q8 0,0039; 4 bits 0,0120 frente a su propia referencia) y que el edit de uncensoring eleva la perplejidad de wikitext en torno al 0,5% (6,743 → 6,775).
+
+Resultados del edit de uncensoring de AtomicChat citados en la model card: 0 rechazos en sus prompts dañinos de prueba en inglés y ruso (el original rechazaba entre el 91% y el 100%), 0 rechazos en los prompts seguros de XSTest (el original rechazaba el 4%), y MMLU 79,15% frente a 80,65% del original.
+
+Datos de rendimiento del formato ROCmIQ (modelo denso de 4B de prueba, Strix Halo con Vulkan, no de este modelo):
+
+| Build 2-bit | Tamano | Perplejidad | Prompt tok/s | Generación tok/s |
+|---|---:|---:|---:|---:|
+| stock IQ2_XXS | 1,33 GB | 96,7 | 1846 | 95,4 |
+| ROCMIQ2_XXS | 1,35 GB | 49,6 | 1734 | 88,7 |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) para esta cuantización concreta más allá de los datos de MMLU del edit de AtomicChat.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 15.5 GB (Q4_0), 21.6 GB (Q6_K) y 26.9 GB (Q8_0) solo para pesos; hay que sumar la caché KV para el contexto deseado.
-- GPUs recomendadas: APUs AMD Strix Halo (memoria unificada de 24-32 GB), GPUs AMD de 24-32 GB; el autor menciona Vulkan y ROCm/HIP como backends, pero advierte que ninguno de los dos se ha probado todavía (solo la ruta CPU está validada).
-- Cabe en GPU de consumo AMD de 24 GB con la variante de 4 bits; en NVIDIA no está previsto, ya que los formatos ROCmFPX son específicos de AMD.
-- Despliegue: exclusivamente mediante el fork ROCmFPX de llama.cpp, rama `inkling2-mini`, compilado con Vulkan o ROCm/HIP. No carga en llama.cpp upstream, y los ficheros de AtomicChat tampoco cargan en el fork por diferencias de layout de tensores. Ejemplo: `llama-server -m Inkling-2-Mini-Uncensored-Q4_0_ROCMFP4_STRIX_O8.gguf -ngl 99 -c 16384 --jinja`.
-- Latencia y throughput: no disponibles; el autor pide a la comunidad que reporte velocidad y comportamiento en la pestaña Community.
+- VRAM estimada para inferencia: 15,5 GB (Q4_0 ROCmFP4), 21,6 GB (Q6_K) y 26,9 GB (Q8_0), según los tamaños de archivo publicados.
+- GPUs recomendadas: Strix Halo (Radeon 8060S, memoria unificada de 32 GB), GPUs AMD de 24-32 GB; el autor menciona explícitamente "32 GB AMD GPUs" para el Q8 y "24 to 32 GB AMD GPUs" para el Q6_K.
+- Cabe en GPU consumer AMD: sí, el Q4_0 en 24 GB y en Strix Halo; el Q8_0 requiere 32 GB.
+- Backends: Vulkan y ROCm mediante el fork ROCmFPX de llama.cpp (rama `inkling2-mini`). No es compatible con llama.cpp estándar ni con los formatos GGUF convencionales.
+- Latencia y throughput: no disponibles para este modelo concreto. El autor solo publica tok/s para un modelo denso de 4B de prueba con formatos ROCmIQ, no para este MoE.
+- Opciones de despliegue: llama.cpp (fork ROCmFPX) con `llama-bench` y `llama-quantize`; no se documenta soporte en vLLM, TGI, Ollama ni otros motores.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Licencia | Formato/despliegue |
-|---|---|---|---|---|---|
-| Inkling-2-Mini-Uncensored-ROCmFPX | 26.1B (MoE) | ~3.1B | no disponible | Apache-2.0 | GGUF ROCmFPX, fork llama.cpp |
-| thinkingmachines/Inkling-2-Mini (original) | 26.1B (MoE) | ~3.1B | no disponible | Apache-2.0 | safetensors, ecosistema estandar |
-| AtomicChat/Inkling-2-Mini-Uncensored-GGUF | 26.1B (MoE) | ~3.1B | no disponible | Apache-2.0 | GGUF estandar, llama.cpp upstream |
+| Modelo | Parametros totales | Activos | Contexto | Licencia | Formato / disponibilidad |
+|---|---:|---:|---|---|---|
+| Inkling 2 Mini Uncensored ROCmFPX (esta ficha) | 26,07B | ~3,1B por pasada | no disponible | Apache 2.0 | GGUF ROCmFPX (fork), solo AMD |
+| Inkling 2 Mini (original, thinkingmachines) | 26,07B | ~3,1B por pasada | no disponible | no disponible en la información | Pesos originales, incluye visión y drafter |
+| Inkling 2 Mini Uncensored GGUF (AtomicChat) | 26,07B | ~3,1B por pasada | no disponible | Apache 2.0 (según esta ficha) | GGUF estándar |
+| Modelos MoE de ~3B activos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de benchmarks comparativos con modelos de otras familias en la información proporcionada, por lo que la comparación se limita a las tres variantes del mismo modelo base.
+No se dispone de datos de benchmarks estándar ni de especificaciones de contexto para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Modelo "abliterated": responde a peticiones que el original rechaza; el autor declara explícitamente que la responsabilidad de uso recae en el usuario. No debe desplegarse en producción orientada al público sin filtros externos.
-- Solo se ha validado la ruta CPU contra el modelo PyTorch original (coincidencia de ~5e-6 en un modelo de prueba pequeño, tokenizador idéntico); Vulkan y ROCm no se han probado, por lo que el rendimiento en GPU es desconocido.
-- llama.cpp no tiene parser del formato de mensajes de Inkling: el razonamiento no se separa de la respuesta y las llamadas a herramientas no se interpretan. El uso como agente no está soportado en esta versión.
-- Dependencia de un fork no oficial de llama.cpp: no hay compatibilidad con upstream ni con los GGUF de AtomicChat; el ecosistema de herramientas estándar (vLLM, TGI, Ollama) no puede cargar estos ficheros.
-- La cuantización de 4 bits introduce una divergencia KL de 0.0119 y una coincidencia de token top del 95.2%, mayor que en las variantes de 8 y 6 bits.
-- Cobertura idiomática no documentada; las pruebas citadas se limitan a inglés y ruso.
-- Riesgo de alucinación no cuantificado en la información disponible; los benchmarks publicados se reducen a MMLU y perplejidad.
-- La licencia Apache-2.0 del modelo base se mantiene, pero la edición de uncensoring y la redistribución no son releases oficiales de Thinking Machines.
+- Modelo "uncensored": responde a peticiones que el original rechaza; el autor declara explícitamente que la responsabilidad de uso recae en el usuario.
+- El edit de uncensoring degrada ligeramente el rendimiento: MMLU baja de 80,65% a 79,15% y la perplejidad de wikitext sube ~0,5%.
+- Solo texto: no incluye el encoder de visión ni el drafter de predicción multi-token del modelo original.
+- Compatibilidad restringida: los pesos usan formatos ROCmFPX y requieren el fork de llama.cpp del autor; no funcionan en llama.cpp upstream, vLLM, TGI ni Ollama.
+- Orientado a hardware AMD: no hay soporte documentado para CUDA/NVIDIA en esta publicación.
+- Idiomas soportados no documentados; las pruebas del edit se limitaron a inglés y ruso.
+- Longitud de contexto no disponible en la información proporcionada.
+- Riesgo de alucinación inherente a modelos de lenguaje; no se han publicado evaluaciones específicas de factualidad para esta cuantización.
+- Los archivos ROCmIQ de baja precisión (2,06 y 1,56 bits por peso) no están incluidos para este modelo MoE, que aún está en verificación.
+- El repositorio ocupa 106,4 GB; la descarga completa no es necesaria si solo se usa un archivo.
+- Los nombres de archivo empiezan por tipos estándar (Q8_0, Q6_K, Q4_0) solo para ordenar por anchura de bits; no son cuantizaciones GGUF estándar.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Harsha001/Inkling-2-Mini-Uncensored-ROCmFPX
 - Modelo base original: https://huggingface.co/thinkingmachines/Inkling-2-Mini
-- Edición de uncensoring de AtomicChat: https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF
-- Repositorio del fork ROCmFPX: https://github.com/HarshaVardhan3002/ROCmFPX
+- Edit de uncensoring de AtomicChat: https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF
+- Fork ROCmFPX (rama inkling2-mini): https://github.com/HarshaVardhan3002/ROCmFPX/tree/inkling2-mini
+- Fork ROCmFPX (rama rocmfpx-sub2, formatos ROCmIQ): https://github.com/HarshaVardhan3002/ROCmFPX/tree/rocmfpx-sub2
+- Repositorio ROCmFPX principal: https://github.com/HarshaVardhan3002/ROCmFPX

@@ -25,11 +25,12 @@
     "base_model:Qwen/Qwen3.8-Flash-Next",
     "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
     "license:other",
+    "eval-results",
     "endpoints_compatible",
     "region:us",
     "conversational"
   ],
-  "likes": 833,
+  "likes": 834,
   "downloads_30d": 99566,
   "trending_score": 32.5,
   "parameters": 4947698560,

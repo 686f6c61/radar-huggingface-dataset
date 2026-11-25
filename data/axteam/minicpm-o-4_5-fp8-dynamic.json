@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
-      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
-      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
-    },
-    {
-      "title": "MiniCPM-o 4.5: Omni-Modal Interaction AI - emergentmind.com",
-      "url": "https://www.emergentmind.com/topics/minicpm-o-4-5",
-      "snippet": "The paper introduces a 9-billion parameter model integrating a streaming visual encoder, audio encoder, and LLM backbone with token-level hidden state fusion. MiniCPM-o 4.5 is defined as an omni-modal foundation model that enables real-time, full-duplex interactions across vision, audio, text, and speech with proactive behavior mechanisms. It employs the novel Omni-Flow streaming architecture ..."
-    },
-    {
-      "title": "MiniCPM-o 4.5: 9B Vision, Audio, and Speech Model - LearnOpenCV",
-      "url": "https://learnopencv.com/minicpm-o-4-5-a-9b-model-that-can-see-hear-and-speak-at-the-same-time/",
-      "snippet": "MiniCPM-o 4.5 is a 9B open-source model that can see, hear, and speak simultaneously. We test its full-duplex Omni-Flow streaming on real-world videos."
-    },
-    {
-      "title": "openbmb/MiniCPM-V-4_5 · Hugging Face",
-      "url": "https://huggingface.co/openbmb/MiniCPM-V-4_5",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "axteam/MiniCPM5-2B-NVFP4 · Hugging Face",
-      "url": "https://huggingface.co/axteam/MiniCPM5-2B-NVFP4",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    }
-  ]
+  "sources": []
 }

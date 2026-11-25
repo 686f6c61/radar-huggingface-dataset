@@ -2,50 +2,48 @@
 
 ## Resumen
 
-Huihui-Qwen3.8-27B-abliterated-mlx-4Bit es una cuantizacion en 4 bits en formato MLX del modelo Huihui-Qwen3.8-27B-abliterated, publicado por el usuario goodmai. Se trata de una conversión derivada de la versión MLX del repositorio AutisticAF/Huihui-Qwen3.8-27B-abliterated, que a su vez parte del modelo base huihui-ai/Huihui-Qwen3.8-27B-abliterated. El pipeline declarado es image-text-to-text, con arquitectura Qwen3.5 según los tags del repositorio y 26.895.993.856 parámetros totales según el recuento real de safetensors.
+Huihui-Qwen3.8-27B-abliterated-mlx-4Bit es una cuantizacion en 4 bits en formato MLX del modelo huihui-ai/Huihui-Qwen3.8-27B-abliterated, que a su vez es una variante "abliterated" (sin los mecanismos de rechazo alineados) de un modelo de la familia Qwen3. El repositorio lo publica el usuario goodmai y deriva de una conversion previa realizada por AutisticAF mediante mlx-lm 0.31.2. Su proposito es permitir la inferencia del modelo en hardware Apple Silicon (macOS) sin necesidad de Python, a traves de la herramienta Basalt.
 
-La particularidad del modelo es doble: por un lado, la variante "abliterated" implica que se ha aplicado una técnica de ablación de direcciones de rechazo en el espacio de activaciones, orientada a eliminar los comportamientos de negativa del modelo original; por otro, la cuantizacion MLX 4-bit lo hace ejecutable en hardware Apple Silicon mediante la librería mlx-lm, sin necesidad de Python en el caso del runtime Basalt que promociona el autor.
+El modelo cuenta con 26.895.993.856 parametros totales (aproximadamente 27 mil millones) en formato safetensors, con un tamano de repositorio de 15,2 GB, coherente con una cuantizacion de 4 bits. La pipeline declarada es image-text-to-text, lo que indica capacidades multimodales de entrada (imagen y texto), aunque la model card no aporta detalles sobre el componente visual ni sobre la longitud de contexto.
 
-Su relevancia es acotada: no es un modelo de referencia ni un lanzamiento oficial, sino un artefacto de conversión para un entorno concreto (macOS con Apple Silicon). El repositorio no incluye información sobre datos de entrenamiento, benchmarks ni idiomas soportados, y el número de descargas y likes es cero en el momento de la consulta, lo que sugiere un uso muy limitado o reciente.
+La relevancia de esta ficha es doble: por un lado, documenta un caso de cuantizacion MLX orientada a despliegue local en Mac; por otro, advierte de que se trata de un modelo "abliterated" y "uncensored", con las implicaciones eticas y de seguridad que ello conlleva. La informacion disponible sobre arquitectura interna, datos de entrenamiento y benchmarks es muy limitada, por lo que muchos campos se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3.5 (transformer, según tag `qwen3_5`); detalles internos no disponibles |
-| Parametros totales | 26.895.993.856 (26,9 B) |
+| Arquitectura | no disponible (etiqueta qwen3_5; transformer presumiblemente, sin confirmar) |
+| Parametros totales | 26.895.993.856 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 4-bit (MLX); no se documentan otras variantes en este repo |
+| Tipos de cuantizacion | 4-bit (MLX); el modelo base dispone de otras variantes no detalladas |
 | Idiomas soportados | no disponible |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors en formato MLX (librería `transformers`, runtime `mlx-lm`) |
+| Formato de pesos | safetensors (MLX), 15,2 GB de repositorio |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna más allá del tag `qwen3_5` y la etiqueta de pipeline `image-text-to-text`, que sugiere capacidades multimodales de entrada imagen-texto. No se especifican el número de capas, la dimensión oculta, el mecanismo de atención ni si emplea atención lineal, decodificación especulativa u otras innovaciones. Tampoco se documenta el proceso de entrenamiento del modelo base: número de tokens, composición del dataset, fases de RLHF o DPO.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo en la documentacion proporcionada. La etiqueta de Hugging Face `qwen3_5` sugiere que deriva de la familia Qwen3, y la pipeline `image-text-to-text` indica que incorpora un componente de procesamiento de imagen ademas del modelo de lenguaje. El dato de 26.895.993.856 parametros totales corresponde a los pesos safetensors del repositorio.
 
-Lo que sí se puede afirmar con los datos aportados es el proceso de derivación: el modelo parte de huihui-ai/Huihui-Qwen3.8-27B-abliterated, se convierte a formato MLX con mlx-lm versión 0.31.2 en el repositorio AutisticAF, y goodmai publica una variante 4-bit. La técnica "abliterated" consiste en la ablación de direcciones de activación asociadas al rechazo, un procedimiento de edición de pesos que no requiere reentrenamiento completo pero que modifica el comportamiento del modelo de forma sustancial en materia de seguridad y alineación.
+El proceso conocido es el de cuantizacion: el modelo original huihui-ai/Huihui-Qwen3.8-27B-abliterated fue convertido a formato MLX en 4 bits por AutisticAF usando mlx-lm 0.31.2, y goodmai publica una version derivada. El termino "abliterated" hace referencia a una tecnica de modificacion de pesos que elimina o atenua la direccion de rechazo aprendida durante el alineamiento, dando lugar a un modelo "uncensored". No se detallan en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO en el modelo original.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, según el tag `conversational`.
-- Procesamiento de entrada imagen-texto (`image-text-to-text`), aunque no se detallan las capacidades de visión concretas.
-- Comportamiento "uncensored" por la ablación aplicada: el modelo tiende a no rechazar peticiones que el modelo original declinaría.
-- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su integración en servicios HTTP.
-- Ejecución nativa en Apple Silicon mediante MLX y mlx-lm.
-- Soporte de plantilla de chat (`apply_chat_template`) en el tokenizer, según el ejemplo de la model card.
-- No se documenta soporte de tool calling, function calling, agentes, modo thinking ni capacidades multilingües específicas.
+- Generacion de texto conversacional y de respuesta a instrucciones, segun la etiqueta `conversational`.
+- Procesamiento de entrada multimodal imagen-texto (`image-text-to-text`), aunque no se detallan las capacidades visuales concretas.
+- Comportamiento "uncensored": el proceso de abliteration elimina los rechazos alineados, por lo que el modelo tiende a responder a peticiones que un modelo alineado rechazaria.
+- Compatibilidad con endpoints (`endpoints_compatible`).
+- Ejecucion en Apple Silicon mediante MLX y la herramienta Basalt (macOS 27+, Swift 6.4, sin Python).
+- No se documentan capacidades de tool calling, agentes, modo thinking ni audio en la informacion disponible.
 
 ## Casos de uso
 
-- Experimentación local en macOS: el modelo está pensado para ejecutarse con mlx-lm en equipos Apple Silicon, lo que permite probar un modelo de ~27 B en 4 bits sin GPU dedicada ni CUDA, usando el runtime Basalt o scripts de Python.
-- Investigación sobre alineación y ablación: útil para estudiar cómo la eliminación de direcciones de rechazo afecta al comportamiento del modelo en dominios sensibles, comparando respuestas frente al modelo base no abliterado.
-- Prototipado de asistentes conversacionales sin filtros: para entornos de investigación donde se necesita un modelo que no aplique negativas por defecto, con la cautela de que la licencia Apache 2.0 no exime de responsabilidad sobre el contenido generado.
-- Evaluación de pipelines multimodales: al declarar `image-text-to-text`, puede emplearse para probar flujos de entrada imagen-texto en local, aunque la falta de documentación sobre visión limita su uso en producción.
-- Pruebas de integración con endpoints compatibles: el tag `endpoints_compatible` permite montar un servidor local y validar clientes que consuman una API tipo OpenAI.
-- Benchmarking de cuantizacion: comparar la calidad de la versión 4-bit MLX frente al modelo original en tareas de razonamiento y generación, midiendo la degradación introducida por la cuantizacion.
-- Desarrollo de aplicaciones macOS nativas: el runtime Basalt (macOS 27+, Apple Silicon, sin Python) permite empaquetar el modelo en una app Swift, útil para prototipos de escritorio.
+- Inferencia local en Mac con Apple Silicon: el formato MLX 4-bit y la integracion con Basalt permiten ejecutar un modelo de ~27B en equipos Apple sin depender de CUDA ni de Python, usando `basalt serve --model ... --rest`.
+- Experimentacion en investigacion sobre alineamiento y seguridad: al ser un modelo abliterated, resulta util para estudiar el efecto de la eliminacion de la direccion de rechazo en el comportamiento del modelo, siempre en entornos controlados.
+- Prototipado de asistentes conversacionales multimodales: la pipeline image-text-to-text permite probar flujos que combinan imagen y texto en local.
+- Evaluacion de tecnicas de cuantizacion: sirve como caso practico para medir la degradacion de calidad de un modelo de ~27B al pasar a 4 bits en MLX frente al modelo original en precision completa.
+- Desarrollo de herramientas de escritorio para macOS: la CLI y app Basalt facilitan integrar el modelo en aplicaciones nativas Swift sin stack Python.
+- Pruebas de generacion de contenido sin filtros en entornos de investigacion cerrados, asumiendo la responsabilidad legal y etica del uso.
 
 ## Benchmarks y rendimiento
 
@@ -53,38 +51,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el repositorio ocupa 15,2 GB, por lo que la inferencia en 4 bits requiere del orden de 15-16 GB de memoria unificada, más overhead de contexto y KV cache.
-- Hardware objetivo: Apple Silicon con memoria unificada suficiente; encaja en equipos con 24 GB o más (M2 Pro/Max, M3 Pro/Max, M4 Pro/Max). No cabe en configuraciones de 16 GB con contexto amplio.
-- GPU NVIDIA: no es el objetivo del formato MLX; para CUDA habría que usar el modelo base en safetensors estándar o una cuantizacion GGUF/AWQ, no disponible en este repo.
-- Despliegue: mlx-lm (`pip install mlx-lm`), runtime Basalt (macOS 27+, Apple Silicon, sin Python) y servidor REST mediante `basalt serve --model ... --rest`.
-- Latencia y throughput: no disponibles; dependen del chip Apple Silicon concreto y de la longitud de contexto.
+- VRAM/RAM estimada: el repositorio ocupa 15,2 GB en 4 bits; se requiere memoria unificada suficiente para cargar los pesos mas el overhead de inferencia (orientativamente por encima de 16 GB, valor no confirmado por el autor).
+- Hardware objetivo: Apple Silicon (macOS 27+), segun la model card; la herramienta Basalt esta pensada para chips Apple.
+- GPU CUDA: no se documenta soporte; el formato es MLX, no GGUF ni safetensors estandar para CUDA.
+- Despliegue: `mlx-lm` (Python) o Basalt v0.11.0 (Swift, sin Python) mediante `basalt serve --model ... --rest`.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Formato |
 |---|---|---|---|---|---|
-| goodmai/Huihui-Qwen3.8-27B-abliterated-mlx-4Bit | 26,9 B | no disponible | MLX 4-bit | apache-2.0 | Objeto de esta ficha; conversión de goodmai |
-| huihui-ai/Huihui-Qwen3.8-27B-abliterated | 26,9 B (presumible) | no disponible | safetensors | apache-2.0 | Modelo base abliterated, sin cuantizar |
-| AutisticAF/Huihui-Qwen3.8-27B-abliterated-mlx-4Bit | 26,9 B (presumible) | no disponible | MLX 4-bit | apache-2.0 | Fuente directa de la conversión de goodmai |
+| goodmai/Huihui-Qwen3.8-27B-abliterated-mlx-4Bit | 26,9B | no disponible | 4-bit MLX | apache-2.0 | safetensors (MLX) |
+| huihui-ai/Huihui-Qwen3.8-27B-abliterated (base) | ~27B | no disponible | precision original | apache-2.0 | safetensors |
+| AutisticAF/Huihui-Qwen3.8-27B-abliterated-mlx-4Bit (upstream) | ~27B | no disponible | 4-bit MLX | apache-2.0 | safetensors (MLX) |
 
-No se dispone de datos de benchmarks ni de modelos comparables de otros fabricantes con los que contrastar rendimiento; la comparativa se limita a la cadena de derivación del propio modelo.
+No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- La ablación elimina los mecanismos de rechazo, lo que incrementa el riesgo de generar contenido dañino, ilegal o sexualmente explícito; no es apto para aplicaciones de cara al público sin filtros adicionales.
-- Riesgo de alucinación no cuantificado: no hay benchmarks publicados que permitan estimar la fiabilidad factual.
-- La cuantizacion 4-bit introduce degradación adicional sobre el modelo original, especialmente en tareas de razonamiento y matemáticas; no se documenta la magnitud de esa pérdida.
-- No se especifican los idiomas soportados ni la longitud de contexto, lo que impide garantizar un comportamiento correcto en castellano o en contextos largos.
-- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías y la responsabilidad sobre el contenido generado recae en el usuario.
-- El repositorio tiene cero descargas y cero likes, y fue creado y actualizado el mismo día (2026-11-15), lo que indica ausencia de validación comunitaria.
-- El formato MLX limita el despliegue a Apple Silicon; no es portable a CUDA sin reconversión.
-- La model card está mayoritariamente en ruso e incluye botones promocionales del runtime Basalt; no aporta documentación técnica sustantiva sobre el modelo.
+- Modelo "abliterated" y "uncensored": se ha eliminado el comportamiento de rechazo, lo que incrementa el riesgo de generar contenido danino, ilegal o sesgado; no es adecuado para despliegues publicos sin filtros adicionales.
+- Riesgo elevado de alucinacion y de respuestas no verificadas, comun en modelos sin alineamiento estricto.
+- La cuantizacion a 4 bits puede degradar la calidad respecto al modelo en precision completa; no se aportan mediciones.
+- No se documentan sesgos especificos, idiomas soportados ni longitud de contexto, lo que dificulta evaluar su idoneidad para produccion.
+- La licencia apache-2.0 permite uso comercial, pero el uso de un modelo sin censura puede contravenir politicas de plataformas y normativas locales; la responsabilidad recae en el desplegador.
+- Dependencia de hardware Apple Silicon y de la herramienta Basalt; no hay soporte documentado para CUDA, vLLM o llama.cpp.
+- Fecha de creacion y actualizacion (noviembre de 2026) y ausencia de likes/descargas elevadas sugieren un modelo poco validado por la comunidad.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/goodmai/Huihui-Qwen3.8-27B-abliterated-mlx-4Bit
+- Hugging Face: https://huggingface.co/goodmai/Huihui-Qwen3.8-27B-abliterated-mlx-4Bit
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
-- Fuente MLX directa: https://huggingface.co/AutisticAF/Huihui-Qwen3.8-27B-abliterated-mlx-4Bit
-- Runtime Basalt (GitHub): https://github.com/goodmai/basalt
-- Demo Basalt en Hugging Face Spaces: https://goodmai-run-with-basalt.hf.space/?model=goodmai%2FHuihui-Qwen3.8-27B-abliterated-mlx-4Bit&role=chat
-- mlx-lm (librería de inferencia): no se proporciona enlace directo en la información disponible
+- Conversion upstream MLX: https://huggingface.co/AutisticAF/Huihui-Qwen3.8-27B-abliterated-mlx-4Bit
+- Basalt (repositorio): https://github.com/goodmai/basalt/releases/tag/v0.11.0
+- Basalt (web): https://bas-alt.vercel.app
+- Demo de ejecucion: https://goodmai-run-with-basalt.static.hf.space/?model=goodmai%2FHuihui-Qwen3.8-27B-abliterated-mlx-4Bit&role=chat

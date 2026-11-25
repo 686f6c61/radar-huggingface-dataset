@@ -2,90 +2,95 @@
 
 ## Resumen
 
-RolBol-Code-27B-i1-GGUF es una cuantización en formato GGUF del modelo RolBol-Code-27B, publicada por el usuario mradermacher, conocido por distribuir versiones cuantizadas de modelos abiertos. El modelo base es un transformer de 27.320.697.856 parámetros (aproximadamente 27,3 mil millones) orientado a tareas de código y conversación, según los tags del repositorio ("conversational"). Esta ficha describe la versión cuantizada, no el modelo original.
+RolBol-Code-27B-i1-GGUF es la version cuantizada en formato GGUF del modelo RolBol Code 27B, desarrollado originalmente por RolBolSystems y cuantizado por mradermacher. Se trata de un modelo de lenguaje especializado en generacion de codigo y flujos de trabajo agenticos (autonomous coding), con 27.320.697.856 parametros totales. La model card lo etiqueta como modelo de vision, aunque los ficheros mmproj, si existen, se alojan en el repositorio estatico complementario.
 
-La relevancia de esta publicación radica en que permite ejecutar un modelo de ~27B en hardware de consumo mediante cuantizaciones de baja precisión (desde IQ1_S hasta Q6_K), algo inviable con los pesos en precisión completa. El repositorio incluye un conjunto amplio de cuantizaciones con calibración mediante imatrix (importance matrix), lo que en teoría reduce la pérdida de calidad en los niveles más agresivos de compresión.
+La relevancia de esta publicacion radica en que ofrece variantes cuantizadas con imatrix (importancia matricial) que permiten ejecutar un modelo de 27B en hardware de consumo, algo inviable con los pesos originales en safetensors. El repositorio incluye 23 variantes de cuantizacion que van desde Q2_K (11,3 GB) hasta Q6_K (22,5 GB), lo que cubre un amplio espectro de balances entre calidad, velocidad y requisitos de VRAM.
 
-No obstante, la información pública disponible es muy limitada: no se especifican licencia, idiomas soportados, arquitectura detallada ni resultados de benchmarks. El modelo base (Rolbol07/RolBol-Code-27B) parece ser un ajuste o derivado comunitario, pero no se dispone de documentación adicional en la información proporcionada.
+El modelo se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial, y esta orientado a tareas de generacion de codigo, razonamiento multi-paso y automatizacion agentica. La informacion disponible sobre arquitectura interna, contexto y datos de entrenamiento es limitada en la model card del cuantizador, por lo que varios parametros tecnicos se indican como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (detalle no disponible) |
-| Parametros totales | 27.320.697.856 (~27,3 B) |
+| Arquitectura | no disponible (modelo base de tipo transformer, segun tags de la model card) |
+| Parametros totales | 27.320.697.856 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizado); pesos originales en safetensors segun el modelo base |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (mas fichero imatrix) |
+| Idiomas soportados | en, multilingual (segun metadatos de la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizado); el modelo base original en safetensors |
+| Tamano del repositorio | 220,5 GB |
+| Modelo base | RolBolSystems/RolBol-Code-27B |
+| Etiquetas | text-generation, code, coding, agentic, autonomous-coding, 27b, conversational |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo base más allá de que se trata de un transformer con aproximadamente 27,3 mil millones de parámetros. El repositorio cuantizado no incluye datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otras fases de alineación. El tag "conversational" sugiere un ajuste orientado a diálogo, y el nombre "Code" indica especialización en código, pero no se aportan detalles verificables.
+La model card del cuantizador no proporciona detalles sobre la arquitectura interna del modelo base (tipo de atencion, numero de capas, dimension del estado oculto, uso de MoE o atencion lineal). Los metadatos indican que se trata de un modelo de la familia transformer orientado a generacion de texto y codigo, con etiquetas que apuntan a capacidades agenticas y de codificacion autonoma. No se especifica el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO u otras fases de alineamiento.
 
-La innovación técnica documentada en esta publicación es el uso de cuantizaciones ponderadas con imatrix (importance matrix), generadas con la herramienta de cuantización de llama.cpp (quantize_version: 2, output_tensor_quantised: 1, convert_type: hf). Esto implica que los tensores se cuantizaron a partir de pesos en formato Hugging Face y que se empleó una matriz de importancia para preservar los pesos más relevantes en las cuantizaciones de baja precisión (IQ1, IQ2, IQ3). El repositorio omite el tensor mmproj (skip_mmproj: 1), lo que sugiere que no se incluyen componentes multimodales en esta conversión.
+La innovacion tecnica destacable de esta publicacion es el uso de cuantizacion con imatrix (importance matrix), un metodo que calcula la importancia de cada peso a partir de un dataset de calibracion y permite obtener cuantizaciones de menor tamano con perdida de calidad reducida. El autor incluye el fichero imatrix (0,1 GB) para que otros usuarios puedan generar sus propias cuantizaciones. Ademas, se ofrecen variantes IQ (importancia cuantizada) que, segun las notas del autor, suelen superar a las variantes no-IQ de tamano similar (por ejemplo, IQ3_S frente a Q3_K_M). El modelo base se etiqueta como vision model, aunque los ficheros mmproj no estan en este repositorio sino en el estatico.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, según el tag "conversational".
-- Generación y asistencia en código, deducible del nombre del modelo base (RolBol-Code), aunque no se documentan lenguajes ni tareas concretas.
-- Inferencia local mediante llama.cpp y compatible con endpoints (tag "endpoints_compatible").
-- Soporte de cuantizaciones de muy baja precisión (hasta IQ1_S), pensadas para entornos con memoria muy restringida.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (thinking mode, visión, audio): no disponible.
+- Generacion de texto y codigo en multiples lenguajes de programacion, segun las etiquetas code y coding.
+- Razonamiento multi-paso y flujos agenticos (autonomous-coding, agentic), orientado a tareas de automatizacion de desarrollo.
+- Capacidades conversacionales multi-turno (tag conversational).
+- Soporte multilingue segun los metadatos (en, multilingual), aunque no se detallan los idiomas concretos.
+- Posible capacidad de vision (la model card indica "This is a vision model"), aunque los ficheros mmproj no se incluyen en este repositorio.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Modo thinking o razonamiento extendido: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistente de código en local: el modelo puede desplegarse con llama.cpp en una estación de trabajo con GPU de consumo usando cuantizaciones Q4_K_M o Q5_K_M, ofreciendo autocompletado y explicación de fragmentos de código sin enviar datos a servicios externos.
-- Revisión de código en entornos con requisitos de privacidad: al ejecutarse íntegramente en local, permite analizar repositorios propietarios sin exponer el código a APIs de terceros.
-- Prototipado de chatbots conversacionales: su naturaleza conversacional y su tamaño de ~27B lo hacen adecuado para generar respuestas coherentes en diálogos multi-turno en fases de desarrollo.
-- Despliegue en hardware limitado: las cuantizaciones IQ2 e IQ3 permiten ejecutar el modelo en GPUs con 8-12 GB de VRAM, útil para pruebas de concepto o entornos embebidos.
-- Generación de documentación técnica: puede redactar docstrings, README y comentarios de código a partir de fragmentos fuente, integrándose en pipelines de documentación.
-- Experimentación e investigación: sirve como base para estudiar el impacto de distintas cuantizaciones (Q2 a Q6) en la calidad de salida sobre tareas de código, gracias a la disponibilidad de 24 variantes en el mismo repositorio.
+- Asistente de programacion en IDE: el modelo puede generar y completar codigo en un entorno de desarrollo integrado, aprovechando su especializacion en coding y su ventana de contexto (no especificada) para mantener el contexto del proyecto. Las cuantizaciones Q4_K_M (17,1 GB) permiten ejecutarlo en estaciones de trabajo con GPU de 24 GB.
+- Automatizacion de tareas de refactorizacion: con capacidades agenticas, puede encadenar pasos de analisis, edicion y verificacion de codigo en pipelines de CI/CD, aunque requiere supervision humana por el riesgo de alucinacion.
+- Generacion de tests unitarios: el modelo puede producir casos de prueba a partir de funciones existentes, integrable en flujos de desarrollo con llama.cpp u Ollama para entornos locales.
+- Chat de soporte tecnico para desarrolladores: su naturaleza conversacional y multilingue permite gestionar consultas tecnicas multi-turno sobre APIs y librerias.
+- Prototipado rapido en local: las cuantizaciones Q3 e IQ3 (11-15 GB) permiten ejecutar el modelo en GPUs de consumo como RTX 4090 (24 GB) o incluso en configuraciones con menos VRAM usando offloading parcial.
+- Analisis de documentacion tecnica y extraccion de ejemplos de codigo: el modelo puede procesar documentacion y generar snippets funcionales, util para equipos que necesitan automatizar la creacion de guias internas.
+- Despliegue en entornos con requisitos de privacidad: al ser un modelo Apache 2.0 ejecutable en local via GGUF, permite procesar codigo propietario sin enviarlo a APIs externas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del cuantizador no incluye tablas de MMLU, HumanEval, GSM8K ni comparaciones numericas con otros modelos. El autor unicamente referencia un grafico externo de ikawrakow sobre perplejidad de tipos de cuantizacion de baja calidad, sin datos concretos del modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, según tamaño de pesos y overhead de contexto):
-  - IQ1_S / IQ2_XXS: ~6-8 GB.
-  - Q2_K / IQ3_XXS: ~9-11 GB.
-  - Q4_K_M / IQ4_XS: ~15-17 GB.
-  - Q5_K_M: ~18-20 GB.
-  - Q6_K: ~21-23 GB.
-- GPU recomendadas: RTX 4090 (24 GB) para Q5_K_M y Q6_K; RTX 3090/4080 (16-24 GB) para Q4_K_M; GPUs de 8-12 GB (RTX 3060 12 GB, RTX 4060 Ti 16 GB) para cuantizaciones IQ2/IQ3.
-- Cabe en GPU de consumo: sí, en todas las cuantizaciones hasta Q6_K con una RTX 4090; las variantes IQ2/IQ3 caben en GPUs de 8-12 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores compatibles con GGUF y endpoints (tag "endpoints_compatible"). vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que se requiere el modelo base en safetensors para esos motores.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: entre 11,3 GB (i1-Q2_K) y 22,5 GB (i1-Q6_K) solo para los pesos; hay que anadir el espacio para el contexto KV, que depende de la longitud de contexto configurada (no disponible).
+- GPU recomendadas: para las cuantizaciones Q4_K_M (17,1 GB) y superiores, se recomienda una RTX 4090 (24 GB), A100 (40/80 GB) o H100. Para Q3 e IQ3 (11-15 GB) es viable una RTX 4080 (16 GB) o RTX 3090 (24 GB).
+- Cabe en GPU de consumo: si, en RTX 4090, RTX 3090 y RTX 4080 con cuantizaciones Q3-Q4. Las variantes Q5 y Q6 requieren 19-22,5 GB y dejan poco margen para el contexto en GPUs de 24 GB.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. El autor indica endpoints_compatible en los tags. Para el modelo base en safetensors se podria usar vLLM o TGI, aunque no se confirma compatibilidad.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| RolBol-Code-27B-i1-GGUF | ~27,3 B | no disponible | no disponible | GGUF | Cuantizaciones IQ1-Q6 con imatrix |
-| Modelos de ~27B comparables | no disponible | no disponible | no disponible | no disponible | No se dispone de información sobre alternativas concretas en la documentación proporcionada |
+No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos comparables en la informacion proporcionada. La siguiente tabla recoge unicamente los datos conocidos de este modelo frente a alternativas genericas de la misma categoria, marcando como no disponible lo que no se puede verificar:
 
-No se dispone de datos suficientes para establecer una comparativa rigurosa con modelos alternativos de la misma categoría.
+| Modelo | Parametros | Contexto | Licencia | Formato | Rendimiento |
+|---|---|---|---|---|
+| RolBol-Code-27B-i1-GGUF | 27,3B | no disponible | Apache 2.0 | GGUF | no disponible |
+| Alternativa A (modelo de codigo ~27B) | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Alternativa B (modelo de codigo ~27B) | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se han identificado en la informacion proporcionada modelos comparables concretos con datos verificables, por lo que la comparativa cuantitativa queda como no disponible.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: no puede confirmarse si se permite uso comercial; es imprescindible verificar la licencia del modelo base (Rolbol07/RolBol-Code-27B) antes de cualquier despliegue en producción.
-- Idiomas no documentados: se desconoce el soporte multilingüe real; probablemente esté sesgado hacia los idiomas presentes en su dataset de entrenamiento, que no se detalla.
-- Ausencia de benchmarks: no hay evidencia publicada sobre calidad en código, matemáticas o razonamiento, por lo que el rendimiento real es incierto.
-- Riesgo de degradación por cuantización: las variantes IQ1 e IQ2 pueden producir salidas incoherentes o repetitivas; se recomienda Q4_K_M o superior para uso serio.
-- Riesgo de alucinación: inherente a los modelos de lenguaje; sin datos de alineación no puede evaluarse su magnitud.
-- Sesgos: no documentados; al desconocerse el dataset de entrenamiento no pueden identificarse sesgos específicos.
-- Modelo comunitario sin trazabilidad: el autor del modelo base (Rolbol07) no aporta documentación detallada, lo que dificulta la auditoría.
-- Sin componente multimodal: el repositorio omite mmproj, por lo que no hay soporte de visión en esta conversión.
+- Sesgos conocidos: no se documentan en la model card; al ser un modelo entrenado con datos web y de codigo, es probable que herede sesgos de esas fuentes, pero no hay evidencia concreta disponible.
+- Riesgo de alucinacion: presente en modelos generativos de codigo; puede producir APIs inexistentes, imports erroneos o logica incorrecta que compile pero falle en ejecucion. Se recomienda validacion automatica (tests, linters) en produccion.
+- Limitaciones de contexto e idioma: la longitud de contexto no esta documentada; los idiomas soportados se indican como en y multilingual sin detalle, por lo que el rendimiento en castellano no esta verificado.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion con atribucion; no obstante, conviene revisar la licencia del modelo base original por si hubiera terminos adicionales no reflejados en el cuantizador.
+- Caveat de cuantizacion: las variantes Q2 y Q3 de baja calidad (especialmente Q2_K y Q4_0) degradan notablemente la calidad; el autor recomienda IQ3_XXS o IQ3_S frente a Q3_K* y Q4_K_M como opcion rapida y recomendada.
+- Modelo de vision: la model card indica que es un modelo de vision, pero los ficheros mmproj no estan en este repositorio; para usar capacidades visuales hay que acudir al repositorio estatico.
+- Fecha de creacion: el repositorio figura creado el 2026-11-21, fecha posterior a la actual; conviene verificar la vigencia y procedencia de los metadatos antes de usarlo en produccion.
 
 ## Enlaces
 
-- Repositorio Hugging Face (cuantizado): https://huggingface.co/mradermacher/RolBol-Code-27B-i1-GGUF
-- Modelo base: https://huggingface.co/Rolbol07/RolBol-Code-27B
-- llama.cpp (herramienta de cuantización): https://github.com/ggerganov/llama.cpp
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/RolBol-Code-27B-i1-GGUF
+- Modelo base: https://huggingface.co/RolBolSystems/RolBol-Code-27B
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/RolBol-Code-27B-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#RolBol-Code-27B-i1-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de perplejidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

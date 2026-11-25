@@ -2,79 +2,86 @@
 
 ## Resumen
 
-LatentNVS es un adaptador LoRA experimental para el modelo de generacion de video MiniMax-H3, desarrollado por el usuario Journey9ni. Su proposito es dotar al modelo base de capacidad de sintesis de vistas noveles (novel-view synthesis, NVS) con control explicito de camara, una tarea clasica de vision por computador que consiste en generar imagenes o videos de un escenario desde angulos de camara distintos a los observados en la entrada. En lugar de entrenar un modelo especifico para NVS, el autor propone reutilizar la potencia generativa de un modelo de video de gran escala mediante un ajuste fino de bajo rango.
+LatentNVS es un adaptador LoRA experimental para el modelo de generación de vídeo MiniMax-H3, desarrollado por el usuario Journey9ni y publicado en Hugging Face. Su propósito es dotar al modelo base de control explícito de cámara para tareas de *novel view synthesis* (NVS), es decir, la síntesis de vistas nuevas de una escena a partir de una o varias imágenes o secuencias de referencia. El repositorio se etiqueta con las palabras clave `minimax-h3`, `novel-view-synthesis`, `camera-control`, `lora` y `video-generation`, lo que sitúa el proyecto en la intersección entre generación de vídeo y reconstrucción de escenas.
 
-El repositorio pesa 77,6 GB, un tamano coherente con un checkpoint LoRA de gran dimension o con pesos que incluyen tensores de alta resolucion para el modelo base MiniMax-H3. La libreria declarada es `minimax-h3`, lo que sugiere que el adaptador se carga con el codigo especifico de ese ecosistema y no con el stack estandar de PEFT. El modelo esta marcado como experimental y su acceso es restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo.
+El artefacto es un LoRA, no un modelo completo: requiere cargar MiniMax-H3 como base y aplicar el adaptador encima. El repositorio ocupa 98,1 GB, un tamaño desproporcionado para un LoRA convencional, lo que sugiere que incluye pesos del modelo base, múltiples variantes del adaptador o checkpoints intermedios de entrenamiento. La librería declarada es `minimax-h3`, específica del ecosistema del modelo base.
 
-La relevancia de LatentNVS radica en que aborda NVS desde la generacion de video con modelos fundacionales, una linea de investigacion activa que busca sustituir pipelines geometricos tradicionales (NeRF, Gaussian Splatting) por modelos generativos capaces de sintetizar vistas coherentes con control de pose de camara. Al ser un LoRA sobre MiniMax-H3, hereda las capacidades del base model y anade un condicionamiento especifico de camara.
+La relevancia del proyecto es acotada pero clara: el control de cámara es una de las capacidades más demandadas en generación de vídeo con IA, y los adaptadores LoRA permiten añadirla sin reentrenar el modelo completo. Sin embargo, la información pública es mínima (301 descargas, 1 like, sin model card sustantiva), el acceso está restringido y no se han publicado benchmarks, licencia ni especificaciones detalladas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de bajo rango) sobre MiniMax-H3 (arquitectura del base model no disponible) |
-| Parametros totales | no disponible (repo de 77,6 GB) |
-| Parametros activos | no disponible |
+| Arquitectura | LoRA sobre MiniMax-H3 (modelo base de generación de vídeo; arquitectura del base no disponible) |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE, según la información disponible) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | no disponible (libreria `minimax-h3`) |
+| Formato de pesos | no disponible (repositorio de 98,1 GB; previsiblemente safetensors, sin confirmar) |
 
 ## Arquitectura y entrenamiento
 
-LatentNVS es un adaptador LoRA, es decir, un conjunto de matrices de bajo rango que se inyectan en las capas del modelo base MiniMax-H3 para adaptarlo a una tarea concreta sin reentrenar todos los pesos. El modelo base es MiniMax-H3, un generador de video de MiniMax; la ficha del adaptador no detalla la arquitectura interna del base model (transformer, difusion o hibrido), por lo que no se puede confirmar el tipo de backbone ni el mecanismo de atencion.
+LatentNVS se distribuye como un adaptador LoRA (Low-Rank Adaptation) sobre MiniMaxAI/MiniMax-H3. La técnica LoRA congela los pesos del modelo base e inyecta matrices de bajo rango en determinadas capas, de modo que el adaptador aprende una modificación específica —en este caso, el control de cámara para síntesis de vistas— con un coste de entrenamiento y almacenamiento muy inferior al de un ajuste completo. La librería `minimax-h3` indica que el adaptador depende de código específico del ecosistema del modelo base para su carga y ejecución.
 
-El entrenamiento del adaptador esta orientado a la sintesis de vistas noveles con control de camara. No se especifican en la informacion disponible el numero de tokens o frames de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF o DPO. La etiqueta `camera-control` indica que el adaptador introduce un condicionamiento explicito de pose de camara (probablemente parametros de extrinsics/intrinsics o trayectorias), mientras que `latent` sugiere que la sintesis opera en el espacio latente del modelo de video en lugar de en pixeles. No hay innovaciones tecnicas documentadas mas alla de la propia combinacion LoRA + control de camara.
+No se dispone de información sobre la composición del dataset de entrenamiento, el número de tokens o clips utilizados, ni sobre si se emplearon técnicas de ajuste adicionales (RLHF, DPO, destilación). Tampoco se documentan innovaciones técnicas propias más allá del uso de LoRA para control de cámara. El tamaño del repositorio (98,1 GB) es anómalo para un LoRA estándar y sugiere que el autor ha incluido pesos del modelo base, múltiples versiones del adaptador o artefactos auxiliares; sin una model card detallada no es posible determinarlo.
 
 ## Capacidades
 
-- Generacion de video condicionada por camara: sintesis de vistas noveles de una escena a partir de una trayectoria de camara especificada.
-- Control explicito de pose de camara mediante el adaptador LoRA.
-- Hereda las capacidades generativas del modelo base MiniMax-H3 (calidad de video, coherencia temporal), aunque no se detallan en la ficha.
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes ni razonamiento multi-paso.
-- Capacidades multilingues: no disponibles.
-- Modo thinking, vision o audio: no documentados.
+- Síntesis de vistas nuevas (*novel view synthesis*): generación de imágenes o fotogramas de una escena desde ángulos de cámara distintos a los de la referencia.
+- Control explícito de cámara en generación de vídeo: trayectorias y movimientos de cámara parametrizables, según las etiquetas del repositorio.
+- Generación de vídeo condicionada: hereda las capacidades del modelo base MiniMax-H3 (no documentadas en la información disponible).
+- Integración como adaptador: se aplica sobre MiniMax-H3 sin sustituirlo, lo que permite alternar entre el comportamiento base y el especializado.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: no disponibles.
+- Capacidades especiales (modo thinking, visión, audio): no documentadas; el foco declarado es vídeo y control de cámara.
 
 ## Casos de uso
 
-- Reconstruccion de escenas para postproduccion: dado un video de referencia, generar angulos de camara alternativos para insertar planos adicionales sin rodaje extra, usando el condicionamiento de camara del LoRA.
-- Generacion de trayectorias de camara para videojuegos y entornos 3D: sintetizar vistas coherentes a lo largo de un recorrido definido para previsualizacion de niveles.
-- Aumento de datos para vision por computador: producir vistas noveles sinteticas de escenas para entrenar modelos de deteccion o segmentacion con mayor diversidad de angulos.
-- Previsualizacion arquitectonica y de producto: renderizar recorridos de camara alrededor de un objeto o espacio a partir de un video semilla, evaluando el resultado antes de una produccion costosa.
-- Investigacion en NVS generativo: servir como baseline LoRA para comparar NVS basado en difusion de video frente a metodos geometricos como NeRF o Gaussian Splatting.
-- Efectos visuales y motion graphics: generar tomas de camara virtuales sobre material existente para composiciones y transiciones.
-- Prototipado rapido de demos de video generativo con control de camara en entornos de investigacion, dado el caracter experimental del adaptador.
+- Previsualización de planos cinematográficos: a partir de una imagen o clip de referencia, generar la misma escena desde ángulos alternativos para evaluar encuadres antes del rodaje, aprovechando el control de cámara del adaptador.
+- Reconstrucción de escenas para efectos visuales: sintetizar vistas intermedias entre dos cámaras para interpolación de puntos de vista en postproducción.
+- Generación de datos sintéticos para visión por computador: producir pares imagen-vista con ángulos conocidos para aumentar datasets de entrenamiento en tareas de pose estimation o profundidad.
+- Prototipado en arquitectura y diseño de interiores: recorridos virtuales de un espacio a partir de una única fotografía, moviendo la cámara virtual por la escena.
+- Creación de contenido para redes y publicidad: variaciones de un mismo plano con movimientos de cámara distintos sin regrabar, útil para test A/B de creatividades.
+- Investigación en NVS: banco de pruebas para comparar estrategias de control de cámara sobre un modelo de vídeo generativo de gran escala, aplicando y retirando el LoRA sobre el mismo base.
+- Videojuegos y entornos interactivos: generación de vistas de escenarios desde perspectivas no capturadas, como apoyo a pipelines de arte conceptual.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. El repositorio ocupa 77,6 GB, lo que sugiere requisitos de memoria elevados, pero no se detalla el desglose entre pesos del base model y del adaptador.
-- GPU recomendadas: no disponibles. Por el tamano del repo, se anticipan GPUs de datacenter (A100, H100) o configuraciones multi-GPU, pero no hay confirmacion en la ficha.
-- Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: la libreria declarada es `minimax-h3`, por lo que se espera carga mediante el codigo especifico de ese ecosistema; no se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI.
+- VRAM estimada para inferencia: no disponible. Al requerir el modelo base MiniMax-H3 más el adaptador, el requisito será como mínimo el del base, que no se documenta en la información proporcionada.
+- GPU recomendadas: no disponible. Por el tamaño del repositorio (98,1 GB) y la naturaleza de generación de vídeo del base, es previsible que requiera GPUs de centro de datos (A100, H100) o GPUs de consumo de gama alta con suficiente VRAM, pero no hay confirmación.
+- ¿Cabe en GPU de consumo? No disponible; sin datos del base ni del adaptador no puede afirmarse.
+- Opciones de despliegue: la librería declarada es `minimax-h3`; no se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI (estas herramientas están orientadas a LLMs y no cubren generación de vídeo).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado en la informacion proporcionada modelos comparables de NVS con control de camara basados en LoRA sobre generadores de video, ni datos de rendimiento que permitan una comparacion cuantitativa.
+| Modelo | Tipo | Base | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| LatentNVS (Journey9ni) | LoRA de control de cámara para vídeo | MiniMax-H3 | no disponible | no disponible | Gated en Hugging Face |
+| MiniMax-H3 (MiniMaxAI) | Modelo base de generación de vídeo | — | no disponible | no disponible | Hugging Face |
+| Otros LoRA de control de cámara para vídeo | Adaptadores especializados | Distintos bases de vídeo | no aplica | variable | no disponible |
+
+No se dispone de datos de rendimiento que permitan una comparación cuantitativa con alternativas. La comparación se limita a la naturaleza del artefacto (adaptador frente a modelo completo) y a su disponibilidad.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental: el propio repositorio se etiqueta como `experimental`, sin garantias de estabilidad ni de calidad de salida.
-- Acceso restringido: requiere aceptar condiciones en Hugging Face antes de la descarga; no es de uso abierto inmediato.
-- Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; es imprescindible verificar la licencia del base model MiniMax-H3 y del adaptador antes de cualquier despliegue productivo.
-- Idiomas no declarados: no hay informacion sobre cobertura linguistica.
-- Riesgo de alucinacion visual: como modelo generativo, puede producir vistas geometricamente inconsistentes o artefactos en regiones ocluidas no observadas en la entrada.
-- Sin benchmarks publicados: no hay evidencia cuantitativa de calidad de NVS ni de fidelidad al control de camara.
-- Documentacion tecnica escasa: no se detallan datos de entrenamiento, hiperparametros del LoRA ni procedimiento de inferencia, lo que dificulta la reproducibilidad.
-- Tamano del repositorio (77,6 GB) implica costes de almacenamiento y transferencia significativos.
+- Información pública mínima: no hay model card sustantiva, ni descripción de datos de entrenamiento, ni benchmarks; evaluar su calidad real exige probarlo directamente.
+- Licencia no especificada: no puede confirmarse el uso comercial. Además, al derivar de MiniMax-H3, hereda las restricciones del modelo base, que deben consultarse por separado.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y el despliegue automatizado.
+- Riesgo de alucinación visual: como modelo generativo, puede producir geometrías inconsistentes, artefactos entre fotogramas o vistas que no corresponden a la escena real, especialmente con movimientos de cámara amplios.
+- Sesgos: no documentados; al heredar el dataset del base, arrastra sus sesgos de contenido y estilo, que no han sido auditados en este adaptador.
+- Tamaño del repositorio (98,1 GB): encarece el almacenamiento y la descarga; conviene verificar qué contiene antes de integrarlo en un pipeline.
+- Madurez: 301 descargas y 1 like indican adopción muy baja; es un artefacto experimental, no un componente validado para producción.
+- Idiomas y contexto: sin datos; no debe asumirse soporte multilingüe ni ventanas de contexto concretas.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Journey9ni/LatentNVS
+- Repositorio Hugging Face: https://huggingface.co/Journey9ni/LatentNVS
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3

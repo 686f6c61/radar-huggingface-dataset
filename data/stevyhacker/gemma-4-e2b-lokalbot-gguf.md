@@ -2,104 +2,108 @@
 
 ## Resumen
 
-Gemma-4-E2B-LokalBot-GGUF es un fine-tune del modelo base `google/gemma-4-E2B` desarrollado por el usuario stevyhacker, publicado en formato GGUF y calibrado con imatrix. Su propósito es muy concreto: servir como motor de autocompletado inline (Cotyping) dentro de la aplicación LokalBot, con especial énfasis en inglés y serbio (tanto en alfabeto latino como cirílico), además de mantener capacidades básicas en alemán, francés y español. El modelo incorpora entrenamiento específico para el manejo de contexto visible ("Visible in this window:") y memoria persistente ("Relevant saved facts:").
+Gemma-4-E2B-LokalBot-GGUF es una familia de fine-tunes del modelo base `google/gemma-4-E2B` publicada por el desarrollador independiente stevyhacker. Su propósito no es la generación de texto generalista, sino el autocompletado en línea (inline autocomplete, denominado "Cotyping" por el autor) dentro de la aplicación de escritorio LokalBot, con soporte bilingüe inglés-serbio (alfabeto latino y cirílico) y manejo de contexto fundamentado del tipo `Visible in this window:` y `Relevant saved facts:`.
 
-La relevancia de esta ficha no reside en un modelo de propósito general, sino en un ejemplo de especialización extrema mediante LoRA sobre un modelo base de 4.647.450.147 parámetros. El autor reporta mejoras medibles en precisión de autocompletado (de 23,10% a 29,82% en el benchmark global de 788 checkpoints) y un salto notable en serbio latino (2,8× respecto al modelo base). El checkpoint recomendado es `Gemma-4-E2B-LokalBot-v2-i1-Q6_K.gguf`, que mantiene el mismo tamaño y velocidad que el modelo original cuantizado.
+El modelo base es un transformer de la familia Gemma 4 con aproximadamente 4.650 millones de parámetros totales (según los pesos en safetensors del repositorio), cuantizado en formato GGUF con cuantización `i1-Q6_K` generada mediante imatrix bilingüe. El repositorio distribuye tres puntos operativos (v2, v3 y v4), cada uno calibrado a una temperatura de muestreo distinta (`s=1.0` para v4 y `s=1.15` para v2/v3), lo que permite elegir entre un comportamiento conservador y uno de mayor cobertura de sugerencias.
 
-El modelo se distribuye bajo licencia Apache 2.0 y está pensado para despliegue local en dispositivos Apple Silicon (se reportan métricas sobre un M4 Max con Metal y llama.cpp). No obstante, la información disponible es limitada en cuanto a arquitectura interna del modelo base, datos de entrenamiento originales y benchmarks estándar de propósito general.
+Su relevancia actual radica en que demuestra un flujo de trabajo de fine-tuning muy especializado (autocompletado de baja latencia en dispositivo) sobre un modelo pequeño, con métricas de evaluación propias y reproducibles, y con licencia Apache 2.0, lo que facilita su reutilización comercial. No obstante, su ámbito de aplicación es estrecho: está optimizado para sugerencias de continuación de texto cortas, no para razonamiento complejo ni generación long-form.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (modelo base `google/gemma-4-E2B`); fine-tune mediante LoRA de rango 32 sobre 275 matrices (205 proyecciones de atención/MLP + 70 matrices PLE) |
-| Parametros totales | 4.647.450.147 |
+| Arquitectura | Transformer (familia Gemma 4, modelo base `google/gemma-4-E2B`); detalles internos de atención y capas no disponibles |
+| Parametros totales | 4.647.450.147 (según safetensors del repo) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q6_K (i1-Q6_K, calibrada con imatrix `gemma-4-E2B.imatrix.gguf`) |
+| Tipos de cuantizacion | GGUF `i1-Q6_K` (imatrix bilingüe EN/SR); no se listan otras cuantizaciones en el repo |
 | Idiomas soportados | en, sr (latino y cirílico), de, fr, es |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (archivos de ~3.845 GB cada uno) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es `google/gemma-4-E2B`, un transformer del que no se detallan en la información proporcionada el número de capas, dimensión oculta ni longitud de contexto. El fine-tune se aplica como un LoRA de rango 32 (alpha=32, dropout=0.05) que cubre 275 matrices en las 35 capas del modelo base: las 205 proyecciones de atención y MLP, más las 70 matrices de Per-Layer Embedding (PLE), concretamente `per_layer_input_gate` y `per_layer_projection`. El adaptador se fusiona en fp32 con un factor de escala de 1,15 y se cuantiza a Q6_K mediante `llama.cpp v1.0.0`.
+El modelo parte de `google/gemma-4-E2B`, un transformer de la familia Gemma 4 con unos 4.650 millones de parámetros. Sobre esa base, el autor aplica un fine-tuning orientado a autocompletado en línea y posteriormente cuantiza a `i1-Q6_K` usando una imatrix bilingüe inglés-serbio, lo que preserva mejor la precisión en los dos idiomas objetivo frente a una imatrix estándar. No se detalla en la información disponible la composición exacta del dataset de fine-tuning, el número de tokens de entrenamiento ni si se emplearon técnicas de RLHF o DPO.
 
-El entrenamiento emplea un objetivo de divergencia KL forward con tres regímenes (masa cubriente, no fundamentado y fundamentado), destilado con soft-logits en vivo desde `google/gemma-4-26B-A4B`. Los datos de entrenamiento son exclusivamente públicos: `FineWeb` y `FineWeb-2` (ODC-By) para serbio, alemán, francés, español e inglés, más ejemplos sintéticos bilingües bajo Apache 2.0 generados por `google/gemma-4-26B-A4B-it` (trabajo, coloquial, fundamentado y stale-override). El autor declara cero texto privado de usuarios y una descontaminación estricta de 4 capas contra todos los conjuntos de evaluación.
+La innovación técnica destacable no está en la arquitectura del modelo, sino en el proceso de calibración: la versión v4 aplica una divergencia KL forward desde el token 0 del cuerpo sobre 13.400 filas de anclaje de calibración (recuperación de memoria independiente, prompts cortos de chat y formato, correspondencia, distractores y lenguajes de guarda), lo que alinea la confianza en prompts cortos con la del modelo stock. Además, el autor publica dos puntos operativos con temperaturas de muestreo distintas (`s=1.0` y `s=1.15`) para moverse a lo largo de la curva precisión-cobertura, y reporta comprobaciones de seguridad (28 checks, 0 unsafe) y de deriva hacia ruso (0 drift).
 
 ## Capacidades
 
-- Autocompletado inline (Cotyping) en inglés y serbio (latino y cirílico), con métricas específicas de precisión en frontera de palabra y midword.
-- Manejo de contexto visible ("Visible in this window:") con resolución de conflictos entre información actual y memoria obsoleta (stale-memory).
-- Recuperación de memoria guardada ("Relevant saved facts:") con capacidad de abstención controlada y cero recuperaciones falsas reportadas.
-- Generación de texto bilingüe y multilingüe limitada a en, sr, de, fr, es.
-- Capacidad de guardia de idioma (guard_langs) para DE/FR/ES, con 95,8% en el conjunto ciego.
-- No se documentan capacidades de tool calling, function calling, razonamiento multi-paso, visión, audio ni modo thinking en la información disponible.
+- Autocompletado en línea (Cotyping) de baja latencia para editores de texto y aplicaciones de escritorio.
+- Generación de texto en inglés y serbio (latino y cirílico), con soporte adicional declarado para alemán, francés y español.
+- Manejo de contexto fundamentado: interpreta bloques `Visible in this window:` y `Relevant saved facts:` para condicionar las sugerencias.
+- Recuperación de memoria guardada (saved-memory recall) con abstención conservadora cuando no hay evidencia suficiente.
+- Sugerencias de continuación a mitad de palabra (midword completion) y en límites de palabra (word-boundary completion).
+- Capacidad de formateo y de correspondencia (email) dentro del ámbito de autocompletado.
+- No se documentan tool calling, function calling, razonamiento multi-paso, visión ni audio en la información disponible.
 
 ## Casos de uso
 
-- Autocompletado en editores de código y texto para inglés: el modelo está entrenado específicamente para predecir la continuación en la frontera del cursor, con 61,11% de precisión en el benchmark midword `q6pub_prod` (288 casos) y 31,09% de precisión global en inglés (624 casos).
-- Autocompletado para serbio en alfabeto latino: con 21,21% de precisión (2,8× el modelo base), es adecuado para aplicaciones de escritura en serbio latino donde el modelo original fallaba.
-- Autocompletado para serbio en alfabeto cirílico: 17,24% de precisión (2,0× el base) y cero deriva hacia cirílico ruso, lo que lo hace útil en herramientas de escritura para usuarios serbios.
-- Asistentes de escritura con memoria de contexto: el modelo resuelve conflictos entre hechos guardados obsoletos y el contexto visible actual (4/4 en heldout, 0 hechos obsoletos), adecuado para aplicaciones de notas o chat que mantienen memoria persistente.
-- Aplicaciones de escritura multilingüe con guardia de idioma: útil en entornos donde se mezclan DE/FR/ES y se necesita que el modelo no derive a otro idioma (95,8% en guard_langs).
-- Despliegue local en Apple Silicon: con 3,845 GB en Q6_K, 398 ms de carga y 23,7 ms de latencia mediana de frontera en M4 Max con Metal, es viable para autocompletado en tiempo real en portátiles y equipos de sobremesa Apple.
-- Prototipado de motores de autocompletado con llama.cpp: al ser un GGUF compatible con `endpoints_compatible`, puede integrarse en pipelines existentes de llama.cpp sin cambios de infraestructura.
+- Autocompletado en editores de texto y correo: el modelo está entrenado específicamente para sugerir continuaciones en línea con latencias de decenas de milisegundos (mediana de 20,2 ms en límite de palabra y p95 de 80,0 ms en escritura sobre Apple M4 Max), lo que lo hace adecuado para integración en un editor de escritorio.
+- Asistentes de escritura bilingües inglés-serbio: cubre tanto alfabeto latino como cirílico, con mejoras notables frente al modelo stock en serbio latino (12,12% frente a 7,58% de precisión en el conjunto Serbian Latin) y cirílico (13,79% frente a 8,62%).
+- Redacción de correo electrónico asistida: la versión v4 alcanza un 80,0% de precisión en el conjunto Email (frente al 74,3% del stock), lo que la hace útil para sugerencias en clientes de correo.
+- Completado con memoria de contexto guardado: el modelo puede condicionar sus sugerencias a hechos previamente guardados por el usuario, con 56/56 aciertos en las suites de memoria y contexto visible de la versión v4.
+- Aplicaciones de escritorio con inferencia en dispositivo: al ser GGUF de ~3,8 GB y ejecutarse con llama.cpp, puede desplegarse localmente sin conexión, lo que encaja en herramientas de productividad que priorizan privacidad.
+- Prototipado de sistemas de autocompletado multilingüe: sirve como referencia para evaluar técnicas de imatrix bilingüe y calibración KL en modelos pequeños antes de escalar a otros idiomas o dominios.
+- Filtrado de sugerencias en pipelines de escritura: los puntos operativos v3 (alta cobertura) y v4 (conservador) permiten elegir el equilibrio entre recall y precisión según el producto.
 
 ## Benchmarks y rendimiento
 
-Los datos provienen de la model card del autor, medidos sobre Apple M4 Max con el binario de producción de LokalBot y `llama.cpp v1.0.0`. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+Los benchmarks publicados por el autor se evalúan con el binario de producción de LokalBot y `llama.cpp v1.0.0` sobre Apple M4 Max, comparando contra el GGUF stock `gemma-4-E2B.i1-Q6_K.gguf`.
 
-| Benchmark / Pilar | Stock i1-Q6_K | v1 (s=1.0) | v2-PLE (s=1.15) | Δ v2 vs stock |
+| Benchmark / pilar | Stock i1-Q6_K | v2-PLE (s=1.15) | v3 (s=1.15) | v4 (s=1.0) |
 |---|---:|---:|---:|---:|
-| Engine Overall (788) acc / cov / prec | 23,10% / 46,1% / 50,1% | 25,13% / 48,0% / 52,4% | 29,82% / 57,4% / 52,0% | +6,72 pp acc / +1,85 pp prec |
-| English (624) acc / prec | 25,32% / 49,5% | 26,44% / 50,2% | 31,09% / 51,9% | +5,77 pp / +2,34 pp |
-| Other Languages (164) acc / prec | 14,63% / 54,6% | 20,12% / 67,4% | 25,00% / 52,6% | +10,37 pp |
-| Serbian Latin (66) | 7,58% | 12,12% | 21,21% | +13,63 pp (2,8×) |
-| Serbian Cyrillic (58) | 8,62% | 10,34% | 17,24% | +8,62 pp (2,0×) |
-| Multilingual (40) | 35,00% | 47,50% | 42,50% (73,9% prec) | +7,50 pp |
-| Midword q6pub_prod (288) | 56,94% | 58,33% | 61,11% (72,1% prec) | +4,17 pp |
-| Midword prefixconf_prod heldout (288) | 52,78% | 52,43% | 53,82% (acc2 20,1%) | +1,04 pp |
-| Visible Context Dev / Heldout / Link | 6/8 / 14/18 / 3/4 | 8/8 / 17/18 / 4/4 | 8/8 / 18/18 / 4/4 | +4/18 (0 stale, 0 forb) |
-| Memory Heldout Recall / Abstention | 12/12 / 10/10 | 12/12 / 10/10 | 12/12 / 10/10 (0 false) | 100% / 100% |
-| dev_diagnostic_v1 (120) acc / prec | 72,50% / - | 80,00% / 95,1% | 88,33% / 95,5% (0 forb/leak) | +15,83 pp |
-| Frozen Blind fresh_holdout_v1 (160) | 73,13% (84,8% prec) | 77,50% (89,9% prec) | 81,25% (89,7% prec, 0 leak) | +8,12 pp |
-| Blind sr_cyrl / sr_latn | 66,7% / 70,0% | 66,7% / 70,0% | 79,2% / 76,7% | +12,5 / +6,7 pp |
-| Blind grounded / stale / guard | 50,0% / - / 91,7% | 72,7% / 85,7% / 95,8% | 77,3% / 92,9% / 95,8% | +27,3 / +4,1 pp |
-| Hard Safety Checks (28) | 0 unsafe, 0 err | 0 unsafe, 0 err | 0 unsafe, 0 err, 0 RU drift | Pass |
+| Engine Overall (788): acc / cov / prec | 23,10% / 46,1% / 50,1% | 29,82% / 57,4% / 52,0% | 30,71% / 58,6% / 52,4% | 25,25% / 48,4% / 52,2% |
+| Engine correctas / incorrectas mostradas | 182 / 181 | 235 / 217 | 242 / 220 | 199 / 182 |
+| English (624): acc / prec | 25,32% / 49,5% | 31,09% / 51,9% | 31,41% / 52,0% | 26,60% / 51,9% |
+| Email (52): acc / prec | 50,00% / 74,3% | 48,08% / 59,5% | 55,77% / 70,7% | 53,85% / 80,0% |
+| Formatting (39): acc / prec | 41,03% / 61,5% | 41,03% / 57,1% | 41,03% / 53,3% | 41,03% / 57,1% |
+| Science (85): acc / prec | 21,18% / 39,1% | 20,00% / 43,6% | 18,82% / 42,1% | 22,35% / 47,5% |
+| Other Languages (164): acc / prec | 14,63% / 54,6% | 25,00% / 52,6% | 28,05% / 54,1% | 20,12% / 54,1% |
+| Serbian Latin (66): acc / prec | 7,58% / 55,6% | 21,21% / 45,2% | 22,73% / 46,9% | 12,12% / 42,1% |
+| Serbian Cyrillic (58): acc / prec | 8,62% / 38,5% | 17,24% / 41,7% | 18,97% / 40,7% | 13,79% / 40,0% |
+| Midword q6pub_prod (288): acc / prec | 56,94% / 74,2% | 61,11% / 72,1% | 60,42% / 71,3% | 59,03% / 73,6% |
+| Midword prefixconf_prod heldout (288): acc / prec / acc2 | 52,78% / 67,3% / 18,8% | 53,82% / 66,2% / 20,1% | 54,86% / 67,5% / 18,4% | 53,82% / 68,9% / 19,1% |
+| Visible Context dev / heldout / link (30) | 6/8 / 14/18 / 3/4 | 8/8 / 18/18 / 4/4 | 8/8 / 18/18 / 4/4 | 8/8 / 18/18 / 4/4 |
+| Memory dev (6) / heldout (12+10) / rel heldout (5+7) | 6/6 / 12+10 / 5+7 | 5/6 / 12+10 / 4+7 | 5/6 / 12+10 / 4+7 | 6/6 / 12+10 / 5+7 |
+| Blind fresh_holdout_v1 (160): acc / prec / forb | 73,12% / 88,6% / 3 | 81,25% / 89,7% / 3 | 82,50% / 90,4% / 1 | 78,75% / 88,7% / 2 |
+| Blind fresh_holdout_v1 sr_latn (30): acc / prec | 70,0% / 91,3% | 76,7% / 82,1% | 73,3% / 81,5% | 76,7% / 88,5% |
+| Blind fresh_holdout_v2 (82): acc / prec / forb | 43,90% / 87,8% / 1 | — | 68,29% / 91,8% / 1 | 52,44% / 89,6% / 1 |
+| Latencia boundary med / typing p95 | 21,2 ms / 103,5 ms | 23,7 ms / 87,4 ms | 26,6 ms / 87,2 ms | 20,2 ms / 80,0 ms |
+| Safety checks (28) / Russian drift | 0 unsafe / 0 drift | 0 unsafe / 0 drift | 0 unsafe / 0 drift | 0 unsafe / 0 drift |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el archivo Q6_K ocupa 3.845.322.976 bytes (3,845 GB); en GPU se necesita espacio adicional para el contexto KV, no cuantificado en la información disponible.
-- GPU recomendadas: el autor reporta métricas sobre Apple M4 Max con Metal; no se especifican GPU NVIDIA o AMD en la información disponible.
-- Cabe en GPU de consumo: con 3,845 GB de pesos en Q6_K, es viable en GPUs de consumo con 6-8 GB de VRAM o más; no se detallan modelos concretos probados.
-- Opciones de despliegue: `llama.cpp v1.0.0` (versión reportada por el autor); el tag `endpoints_compatible` sugiere compatibilidad con endpoints estándar, aunque no se detallan vLLM, Ollama o TGI en la información disponible.
-- Latencia y throughput: 398 ms de tiempo de carga y 23,7 ms de latencia mediana de frontera en Apple M4 Max Metal; no se reporta throughput en tokens por segundo.
+- VRAM estimada para inferencia: los GGUF publicados pesan 3,845 GB cada uno en Q6_K; con overhead de contexto y KV cache, se recomienda al menos 5-6 GB de VRAM para ejecución en GPU.
+- GPU recomendadas: tarjetas de consumo con 6-8 GB o más (RTX 3060, RTX 4060, RTX 4070, RTX 4090) son suficientes para el archivo Q6_K; en entornos profesionales, A100 y H100 quedan sobredimensionadas para este tamaño.
+- Cabe en GPU de consumo: sí, en cualquier GPU con 6 GB o más de VRAM; también puede ejecutarse en CPU mediante llama.cpp.
+- Opciones de despliegue: llama.cpp (versión de referencia `v1.0.0` en las pruebas del autor), Ollama y cualquier runtime compatible con GGUF; el autor lo integra en la aplicación LokalBot.
+- Latencia y throughput estimados: sobre Apple M4 Max con llama.cpp, mediana de 20,2 ms en límite de palabra y p95 de 80,0 ms en escritura para v4; v3 y v2 presentan latencias ligeramente superiores (26,6 ms y 23,7 ms de mediana respectivamente). No se reporta throughput en tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| Gemma-4-E2B-LokalBot v2 (este) | 4.647.450.147 | no disponible | Apache 2.0 | GGUF Q6_K | Fine-tune para autocompletado en/sr; 29,82% engine overall |
-| google/gemma-4-E2B (stock) | 4.647.450.147 | no disponible | Apache 2.0 (según model card) | safetensors / GGUF | Modelo base; 23,10% engine overall en el mismo benchmark |
-| Gemma-4-E2B-LokalBot v1 | 4.647.450.147 | no disponible | Apache 2.0 | GGUF Q6_K | Versión anterior (s=1.0); 25,13% engine overall |
+| Gemma-4-E2B-LokalBot (v4) | ~4,65 B | no disponible | Autocompletado bilingüe EN/SR en dispositivo | Apache 2.0 | GGUF en Hugging Face |
+| gemma-4-E2B (stock) | ~4,65 B | no disponible | Modelo base generalista | Apache 2.0 (según base) | Hugging Face |
+| Gemma-4-E2B-LokalBot (v3) | ~4,65 B | no disponible | Igual que v4, con mayor recall | Apache 2.0 | GGUF en Hugging Face |
+| Otros modelos de autocompletado pequeños | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de otros modelos comparables de autocompletado especializado en la información proporcionada.
+La comparación más directa es contra el propio modelo base stock: v4 iguala o supera al stock en todos los pilares de evaluación reportados, con menor latencia (20,2 ms frente a 21,2 ms de mediana) y mayor precisión en Email (80,0% frente a 74,3%). No se dispone de comparaciones con otros modelos de autocompletado de la competencia en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo está especializado en autocompletado inline y no en generación de texto general; su rendimiento en tareas abiertas (razonamiento, código, matemáticas) no está documentado.
-- Los benchmarks reportados son del propio autor y se midieron con las compuertas de producción de LokalBot y `add_bos=true`; no son comparables directamente con evaluaciones estándar de la comunidad.
-- La longitud de contexto no se especifica, lo que impide planificar aplicaciones que requieran ventanas largas.
-- El soporte multilingüe se limita a en, sr, de, fr y es; no hay datos sobre otros idiomas.
-- El sesgo hacia serbio latino y cirílico es intencionado; en otros idiomas distintos del inglés el rendimiento cae (25,00% en "Other Languages" frente a 31,09% en inglés).
-- Riesgo de alucinación en la recuperación de memoria: aunque el autor reporta 0 recuperaciones falsas en el conjunto de prueba, no hay evaluación independiente.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo base `google/gemma-4-E2B` puede tener sus propias condiciones que deben verificarse por separado.
-- El modelo se distribuye únicamente en GGUF Q6_K; no hay versiones en otros formatos o cuantizaciones en la información disponible.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la ficha, lo que indica ausencia de validación por parte de la comunidad.
+- El modelo está especializado en autocompletado de texto corto; no debe emplearse como modelo de razonamiento general, generación long-form ni agentes multi-paso.
+- Riesgo de alucinación en sugerencias de continuación, especialmente en prompts cortos o ambiguos; el autor reporta abstenciones conservadoras en memoria (24/26 en v3) pero no elimina el riesgo.
+- Cobertura de idiomas limitada: el fine-tuning se centra en inglés y serbio; alemán, francés y español figuran como soportados pero no se detallan métricas específicas para ellos.
+- El equilibrio precisión-cobertura es un compromiso explícito: v3 incrementa las sugerencias correctas pero también las incorrectas mostradas (220 frente a 181 del stock).
+- No se documentan sesgos conocidos ni evaluaciones de sesgo en la información disponible.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base `google/gemma-4-E2B` antes de redistribuir.
+- Las métricas publicadas son del propio autor, sobre hardware concreto (Apple M4 Max) y con las puertas de producción de LokalBot; no son directamente extrapolables a otros entornos.
+- Longitud de contexto no documentada; no se recomienda su uso en escenarios que requieran ventanas largas sin validación previa.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/stevyhacker/Gemma-4-E2B-LokalBot-GGUF
+- Repositorio Hugging Face: https://huggingface.co/stevyhacker/Gemma-4-E2B-LokalBot-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E2B
-- Repositorio LokalBot: https://github.com/stevyhacker/LokalBot
+- Repositorio de LokalBot: https://github.com/stevyhacker/LokalBot

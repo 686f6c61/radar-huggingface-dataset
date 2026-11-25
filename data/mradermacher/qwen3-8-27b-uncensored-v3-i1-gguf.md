@@ -2,98 +2,92 @@
 
 ## Resumen
 
-Qwen3.8-27B-Uncensored-v3-i1-GGUF es una cuantizacion en formato GGUF del modelo InterpreticAI/Qwen3.8-27B-Uncensored-v3, un ajuste fino de la familia Qwen3.8 orientado a eliminar el filtrado de contenido politicamente sensible (la model card lo etiqueta explicitamente con "uncensored" y "political-censorship"). El trabajo de cuantizacion lo firma mradermacher, un conocido publicador de quants para llama.cpp, que ofrece tanto versiones estaticas como versiones con imatrix (i1), estas ultimas generadas con una matriz de importancia para preservar mejor la calidad en tasas de compresion agresivas.
+Qwen3.8-27B-Uncensored-v3-i1-GGUF es una cuantización en formato GGUF del modelo InterpreticAI/Qwen3.8-27B-Uncensored-v3, un modelo de lenguaje de aproximadamente 26.900 millones de parámetros derivado de la familia Qwen3.8 y afinado para eliminar el filtrado de contenido, con especial énfasis en la censura política. El autor de la cuantización es mradermacher, un perfil conocido en Hugging Face por publicar versiones GGUF (estáticas y con imatrix) de modelos populares para su uso en llama.cpp y entornos de inferencia local.
 
-El modelo base cuenta con 26.895.998.464 parametros (aproximadamente 26,9 mil millones), lo que lo situa en la gama de modelos densos de ~27B. Esta version i1-GGUF incluye un amplio abanico de cuantizaciones, desde IQ1_S (7,2 GB) hasta Q6_K (22,2 GB), lo que permite desplegarlo desde equipos con poca VRAM hasta configuraciones mas holgadas. El repositorio completo ocupa 300,3 GB debido a la acumulacion de todos los ficheros.
+El paquete incluye un conjunto amplio de cuantizaciones que van desde IQ1_S (7,2 GB) hasta Q6_K (22,2 GB), lo que permite desplegar el modelo en hardware muy diverso, desde GPUs de consumo con 8-12 GB de VRAM hasta estaciones de trabajo con 24 GB o más. La licencia declarada es Apache 2.0 y el idioma soportado es únicamente inglés. El repositorio ocupa 300,3 GB en total debido a la multiplicidad de ficheros.
 
-La relevancia de esta ficha radica en que documenta un caso de uso muy concreto: ejecutar localmente un modelo de ~27B con menos restricciones de contenido que el original, mediante llama.cpp y el ecosistema GGUF. La informacion publicada por el autor de la cuantizacion es escasa en cuanto a detalles de entrenamiento, contexto o benchmarks, por lo que muchos campos de esta ficha quedan marcados como no disponibles.
+La relevancia de esta ficha radica en que se trata de un modelo "uncensored" con licencia permisiva, lo que lo hace atractivo para investigación sobre alineamiento, evaluación de sesgos y experimentación con sistemas sin filtros, pero también plantea advertencias importantes sobre contenido dañino y sobre la fiabilidad de las afirmaciones del autor respecto a la eliminación de censura.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base de la familia Qwen3.8; no se detalla en la informacion proporcionada) |
-| Parametros totales | 26.895.998.464 (~26,9B) |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo derivado de la familia Qwen3.8; el README no detalla la arquitectura interna) |
+| Parametros totales | 26.895.998.464 (~26,9 mil millones) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (ademas del fichero imatrix) |
-| Idiomas soportados | en (ingles) |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K; además de cuantizaciones estáticas en el repositorio hermano |
+| Idiomas soportados | en (inglés) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizaciones i1 con imatrix; el modelo base original esta en safetensors) |
+| Formato de pesos | GGUF (con fichero imatrix incluido para generar cuantizaciones propias) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la documentacion proporcionada. Por el nombre y la familia (Qwen3.8) se infiere que se trata de un transformer denso de aproximadamente 27B parametros, pero la model card de la cuantizacion no incluye especificaciones de capas, atencion, cabezas ni tipo de positional encoding. Tampoco se documenta el proceso de ajuste fino que da lugar a la variante "Uncensored-v3" de InterpreticAI, ni si se emplearon tecnicas de RLHF, DPO u otras.
+No se dispone de información detallada sobre la arquitectura interna del modelo base InterpreticAI/Qwen3.8-27B-Uncensored-v3 en la información proporcionada. Por el nombre y el tamaño (26,9 mil millones de parámetros) se trata presumiblemente de un transformer denso de la familia Qwen3.8, pero el README de la cuantización no documenta número de capas, dimensiones ocultas, mecanismo de atención ni si incorpora innovaciones como atención lineal o decodificación especulativa.
 
-Lo que si esta documentado es el proceso de cuantizacion: mradermacher genera cuantizaciones ponderadas con imatrix (prefijo i1), usando un fichero de matriz de importancia (Qwen3.8-27B-Uncensored-v3.imatrix.gguf, 0,1 GB) que guia la asignacion de bits por tensor. La model card indica que las cuantizaciones IQ suelen ser preferibles a las no-IQ de tamano similar, y ofrece una tabla comparativa de tamanos con notas de calidad (por ejemplo, IQ3_S "beats Q3_K*", Q4_K_M "fast, recommended"). Tambien se enlazan graficos de perplejidad de ikawrakow y las notas de Artefact2 sobre seleccion de cuantizaciones.
+Tampoco se detallan los datos de entrenamiento: no se indica el número de tokens, la composición del dataset, ni si hubo fases de RLHF, DPO u otra forma de alineamiento. El único dato relevante es que el modelo se presenta como "uncensored" y con la etiqueta "political-censorship", lo que sugiere un proceso de afinado orientado a eliminar rechazos y filtros de contenido, particularmente en temas políticos. Esta cuantización concreta ha sido generada por mradermacher usando cuantización ponderada con imatrix (marcada como quantize_version 2 y output_tensor_quantised 1), un método que busca preservar mejor la calidad que la cuantización estática equivalente. El README menciona además que se trata de un modelo de visión, con ficheros mmproj (si existen) alojados en el repositorio estático.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, segun la etiqueta "conversational" del repositorio.
-- Modelo afinado para reducir el filtrado de contenido politicamente sensible ("uncensored", "political-censorship").
-- Compatible con endpoints (etiqueta "endpoints_compatible"), lo que sugiere uso via API en infraestructura de Hugging Face.
-- Ejecutable en llama.cpp y derivados gracias al formato GGUF.
-- Capacidades de razonamiento, codigo, matematicas, tool calling o agentes: no disponibles en la informacion proporcionada (no se documentan en la model card de la cuantizacion).
-- Capacidades multimodales (vision, audio): no disponibles.
-- Modo thinking: no disponible.
+- Generación de texto conversacional en inglés, con estilos de respuesta propios de un modelo afinado por instrucciones.
+- Modo "uncensored": el autor declara la eliminación de filtros de contenido, incluyendo la censura política, aunque no se aportan evaluaciones que lo verifiquen.
+- Posible soporte de visión según la nota del README ("This is a vision model"), con ficheros mmproj en el repositorio estático; no se detalla qué tareas visuales cubre.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: limitadas al inglés según el campo `language`.
+- Capacidades especiales (thinking mode, audio, etc.): no disponible.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo con GPU de consumo: las cuantizaciones Q4_K_M (16,6 GB) o IQ4_XS (15,2 GB) permiten ejecutar el modelo en GPUs con 24 GB de VRAM, como una RTX 4090, usando llama.cpp con offload parcial o total.
-- Investigacion sobre sesgos y censura en modelos de lenguaje: al ser una variante "uncensored", sirve para estudiar como cambia el comportamiento del modelo en temas politicamente sensibles respecto al original, comparando respuestas entre el base y el ajuste fino.
-- Generacion creativa sin restricciones tematicas: escritura de ficcion, guiones o narrativa que aborde temas que los modelos alineados suelen rechazar, ejecutandose en local para preservar la privacidad del contenido.
-- Prototipado de asistentes conversacionales en ingles: el modelo puede integrarse en un servidor llama.cpp o en Ollama para probar flujos multi-turno antes de pasar a un modelo mayor o a una API comercial.
-- Evaluacion de cuantizaciones: el repositorio ofrece 23 variantes de cuantizacion mas el fichero imatrix, lo que lo convierte en un banco de pruebas util para medir el impacto de la compresion en perplejidad y calidad de respuesta sobre un modelo de ~27B.
-- Fine-tuning posterior sobre quants de alta precision: las versiones Q5_K_M (19,3 GB) o Q6_K (22,2 GB) pueden servir como referencia de calidad para comparar con el modelo original en safetensors antes de emprender un ajuste adicional.
-- Despliegue en entornos con VRAM limitada: la cuantizacion IQ2_M (10,1 GB) o IQ3_XS (12,1 GB) permite ejecutar el modelo en GPUs de 12-16 GB, asumiendo una perdida de calidad documentada por el autor.
+- Investigación sobre alineamiento y censura: el modelo permite estudiar qué tipos de contenido se generan cuando se eliminan los filtros, comparando respuestas con las del modelo base original para analizar diferencias de comportamiento.
+- Evaluación de sesgos y seguridad: útil como caso de prueba en pipelines de red-teaming, donde se mide la tasa de respuestas dañinas o políticamente sesgadas y se calibran clasificadores de seguridad.
+- Experimentación local con llama.cpp: gracias a las cuantizaciones de 7-16 GB, se puede ejecutar en un portátil o una GPU de consumo para prototipar aplicaciones de chat sin depender de la nube.
+- Generación creativa sin restricciones: escritura de ficción, guiones o narrativa que aborde temas sensibles y que otros modelos rechazarían, en un entorno controlado y con revisión humana.
+- Análisis de textos políticos y históricos: el modelo puede abordar discusiones sobre censura, propaganda o ideologías sin los rechazos típicos de modelos alineados, siempre que el uso sea legítimo y documentado.
+- Despliegue en entornos aislados (air-gapped): al ser GGUF y Apache 2.0, puede integrarse en sistemas sin conexión para tareas de generación de texto donde no se requiera cumplimiento estricto de políticas de contenido.
+- Comparación de cuantizaciones: el repositorio incluye 23 variantes, lo que permite medir el impacto de la cuantización en perplejidad y calidad para investigación sobre compresión de modelos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, segun el tamano del fichero GGUF mas overhead de contexto y KV cache):
-  - IQ1_S (7,2 GB) a IQ2_M (10,1 GB): GPUs de 8-12 GB.
-  - IQ3_XS (12,1 GB) a Q3_K_L (14,4 GB): GPUs de 12-16 GB.
-  - IQ4_XS (15,2 GB) a Q4_1 (17,2 GB): GPUs de 16-24 GB.
-  - Q5_K_S (18,8 GB) a Q6_K (22,2 GB): GPUs de 24 GB o superiores.
-- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; A100 40/80 GB o H100 para Q6_K con contexto largo; RTX 3090 (24 GB) como alternativa economica a la 4090.
-- Cabe en GPU de consumo: si, en RTX 3090/4090 con cuantizaciones Q4-Q5; en GPUs de 12 GB con IQ2/IQ3.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF (koboldcpp, LM Studio, text-generation-webui). No se documenta soporte nativo en vLLM o TGI para este repositorio.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: desde ~7,2 GB (i1-IQ1_S) hasta ~22,2 GB (i1-Q6_K); las cuantizaciones intermedias más recomendadas (i1-Q4_K_M, i1-Q4_K_S) requieren ~16-17 GB.
+- GPU recomendadas: RTX 4090 (24 GB) para Q5_K_M o Q6_K; RTX 3090 (24 GB) para Q5_K_M; RTX 4080/4070 Ti Super (16 GB) para Q4_K_M; RTX 4060 Ti 16 GB para Q4_K_S.
+- Cabe en GPU de consumo: sí, desde GPUs de 8 GB con cuantizaciones IQ1/IQ2 (calidad muy degradada) hasta 24 GB con Q6_K.
+- Opciones de despliegue: llama.cpp, Ollama (importando el GGUF), LM Studio, text-generation-webui y cualquier runtime compatible con GGUF; el formato no es directamente compatible con vLLM o TGI sin conversión.
+- Latencia y throughput estimados: no disponible; dependerá del hardware y de la cuantización elegida.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Uncensored-v3-i1-GGUF (este) | ~26,9B | no disponible | apache-2.0 | GGUF (i1) | Variante sin censura politica, solo ingles |
-| Qwen3.8-27B-Uncensored-v3 (base) | ~26,9B | no disponible | apache-2.0 | safetensors | Modelo original de InterpreticAI, sin cuantizar |
-| Qwen3.8-27B-Uncensored-v3-GGUF (quants estaticos) | ~26,9B | no disponible | apache-2.0 | GGUF (estaticos) | Alternativa del mismo autor sin imatrix |
-| Otros modelos densos de ~27B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
+| Qwen3.8-27B-Uncensored-v3-i1-GGUF (este) | ~26,9 mil M | no disponible | Apache 2.0 | GGUF (23 cuants) | Afinado "uncensored", solo inglés |
+| InterpreticAI/Qwen3.8-27B-Uncensored-v3 | ~26,9 mil M | no disponible | Apache 2.0 | safetensors | Modelo base sin cuantizar |
+| mradermacher/Qwen3.8-27B-Uncensored-v3-GGUF | ~26,9 mil M | no disponible | Apache 2.0 | GGUF estático | Cuantizaciones estáticas del mismo modelo |
 
-No se dispone de datos de rendimiento comparativo (benchmarks) entre estas variantes en la informacion proporcionada, por lo que la comparativa se limita a parametros, formato y licencia.
+No se dispone de datos de benchmarks ni de otros modelos comparables de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo ajustado para reducir el filtrado de contenido: puede generar respuestas en temas politicamente sensibles, lo que exige revision y politicas de uso claras en produccion.
-- Riesgo de alucinacion: no se documenta ningun proceso de mitigacion ni evaluacion de factualidad en la informacion disponible.
-- Idiomas: solo se declara soporte de ingles ("en"); el rendimiento en castellano no esta documentado.
-- Longitud de contexto: no disponible, lo que impide planificar casos de uso con documentos largos.
-- Las cuantizaciones de baja tasa (IQ1_S, IQ1_M, IQ2_XXS) degradan la calidad de forma notable, segun las propias notas del autor ("for the desperate", "very low quality").
-- Licencia apache-2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base de InterpreticAI y de la familia Qwen original antes de desplegar en produccion.
-- El repositorio ocupa 300,3 GB por la acumulacion de todas las cuantizaciones; la descarga selectiva de un solo fichero es imprescindible.
-- Modelo con muy pocas interacciones (1 like) y sin benchmarks publicados: la calidad real no esta validada por la comunidad.
-- El ajuste fino "Uncensored" puede haber degradado capacidades generales (razonamiento, codigo) respecto al modelo Qwen original; no hay datos que lo confirmen o desmientan.
+- El modelo está etiquetado como "uncensored", lo que implica un riesgo elevado de generar contenido ofensivo, dañino, ilegal o políticamente extremo; no debe desplegarse en producción orientada a usuarios sin capas adicionales de moderación.
+- Solo soporta inglés; el rendimiento en castellano u otros idiomas no está garantizado y probablemente sea deficiente.
+- Riesgo de alucinación no cuantificado: no se han publicado evaluaciones de factualidad.
+- La licencia Apache 2.0 permite uso comercial, pero el uso de un modelo sin filtros en productos comerciales puede acarrear responsabilidad legal y reputacional según la jurisdicción.
+- No se documentan sesgos conocidos ni procesos de mitigación; la eliminación de censura política puede introducir o amplificar sesgos ideológicos.
+- El tamaño del repositorio (300,3 GB) y la multiplicidad de ficheros complican la descarga y la gestión de versiones.
+- Las cuantizaciones IQ1 e IQ2 están marcadas por el propio autor como de calidad muy baja ("for the desperate", "very low quality") y no son adecuadas para uso serio.
+- El modelo base y su proceso de entrenamiento no están documentados en la información disponible, lo que dificulta evaluar su fiabilidad.
+- No hay garantía de que la "eliminación de censura" sea completa ni de que el modelo mantenga capacidades de razonamiento o código del modelo original.
 
 ## Enlaces
 
-- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-v3-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-v3-i1-GGUF
 - Modelo base: https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v3
-- Cuantizaciones estaticas del mismo autor: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-v3-GGUF
-- Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3.8-27B-Uncensored-v3-i1-GGUF
-- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-v3-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Qwen3.8-27B-Uncensored-v3-i1-GGUF
+- README de referencia para GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico de perplejidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
 - Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Grafico de perplejidad de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Empresa del autor: https://www.nethype.de/
+- Solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

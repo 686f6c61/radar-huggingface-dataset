@@ -1,84 +1,100 @@
 # JamieBradfield/qwen3.8-9b-hermes-function-calling-v2
 
 ## Resumen
+Qwen3.8-9B Hermes FC es un fine-tune por QLoRA del modelo Empero/Qwen3.8-9B, una destilación de Qwen3.5 con arquitectura híbrida, 9.195 millones de parámetros densos y una ventana de contexto de 262.144 tokens. El modelo lo publica JamieBradfield (Jameson Bradfield) como artefacto de investigación centrado en el comportamiento de llamada a herramientas (function calling) en modelos de la clase 9B. Resuelve, en teoría, la necesidad de un modelo pequeño que planifique en varios pasos y emita llamadas a herramientas estructuradas dentro de flujos de agente.
 
-El modelo **Qwen3.8-9B Hermes Function Calling v2** es un fine-tune QLoRA del modelo base **Empero/Qwen3.8-9B**, una destilación de la arquitectura híbrida Qwen3.5 con 9 mil millones de parámetros densos y una ventana de contexto de 262.144 tokens. Desarrollado por JamieBradfield, este artefacto de investigación busca mejorar el comportamiento de llamada a herramientas (function calling) en modelos de clase 9B, un área crítica para el desarrollo de agentes autónomos. El ajuste se realizó sobre 979 conversaciones de tool-call en formato ShareGPT, de las cuales 933 son trayectorias reales de agentes Hermes multi-turno (promedio de 12 turnos, máximo 35) y 46 filas de relleno para puentear secuencias de herramientas escasas.
+La relevancia del repositorio no está en su rendimiento bruto, sino en la documentación honesta de un fallo metodológico: el autor reconoce que el harness de evaluación usado para certificar el checkpoint no reproducía la interfaz nativa de herramientas de Hermes (parámetro `tools` de la API de OpenAI), sino que incrustaba los esquemas en el texto de sistema y exigía XML en crudo. Ese reconocimiento, junto con la publicación de scripts y sondas de reproducción, convierte el modelo en un caso de estudio sobre cómo medir (y malmedir) la competencia en tool calling.
 
-La relevancia de este modelo radica en su enfoque transparente: todos los scripts de entrenamiento, fusión y evaluación están publicados en el repositorio, aunque los datos de entrenamiento no se distribuyen por contener cadenas privadas. El entrenamiento se detuvo al 86% (paso 213 de 246), publicándose el checkpoint-200 con una pérdida de 0,131. Se añadieron dos tokens de herramienta (`<|tool_call|>` y `<|tool_response|>`) al vocabulario, que pasa de 248.077 a 248.079. Es un modelo pensado para experimentación, no para producción, y su evaluación independiente está aún pendiente.
+El checkpoint publicado corresponde al paso 200 de 246 planificados (86% del entrenamiento), con una pérdida de 0,131. Los pesos son un merge completo en BF16 (13 shards, 18,4 GB) más una cuantización GGUF ROCmFPX en un repositorio compañero.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido Qwen3.5 (destilación), denso, 9B |
-| Parametros totales | 9.195.119.616 |
-| Parametros activos | No aplicable (modelo denso) |
-| Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | BF16 (pesos completos), GGUF Q4_0_ROCMFP4_FAST (formato ROCmFPX) |
-| Idiomas soportados | Inglés (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (BF16, 12 shards) y GGUF |
+| Arquitectura | Transformer híbrido Qwen3.5 (`Qwen3_5ForConditionalGeneration`), con cabeza MTP (multi-token prediction) de 15 claves |
+| Parametros totales | 9.195.119.616 (9,20B) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | 262.144 tokens (ventana del modelo base); entrenamiento con MAX_SEQ 4.096 (v1) y 6.144 (v2) |
+| Tipos de cuantizacion | BF16 (merge completo), GGUF ROCmFPX (repo compañero); QLoRA 4-bit durante el entrenamiento |
+| Idiomas soportados | inglés (`en`) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (BF16, 13 shards, 18,4 GB); GGUF en repo separado |
+| Vocabulario | 248.079 tokens (248.077 base + `<|tool_call|>` y `<|tool_response|>`) |
+| Parametros entrenables | 0,32% (embeddings congelados) |
+| Torre visual | eliminada (modelo solo texto) |
 
 ## Arquitectura y entrenamiento
+El modelo base es una destilación de Qwen3.5 con arquitectura híbrida y una cabeza de predicción multi-token (MTP) que el merge preserva intacta. El fine-tune se aplica como QLoRA de 4 bits sobre el merge del modelo v27 (que ya incorporaba los tokens de herramienta y el envelope), con rango 16, alpha 16, dropout 0, objetivos q/k/v/o/gate/up/down_proj, learning rate 2e-4, warmup 0,1, batch efectivo 8 y 8 épocas sobre 214 pasos. La pérdida final registrada es 0,02085 y la media de entrenamiento 0,09405.
 
-El modelo base, **Empero/Qwen3.8-9B**, es una destilación de la arquitectura híbrida Qwen3.5 con 9B parámetros densos y una ventana de contexto de 262.144 tokens. Sobre esta base se aplicó un fine-tune con QLoRA a 4 bits, con rango 16 y alpha 16, dropout 0, dirigido a las proyecciones q/k/v/o/gate/up/down. El entrenamiento usó una tasa de aprendizaje de 2e-4, batch efectivo de 8 (batch 1 con grad-accum de 8), secuencia máxima de 4096 tokens, warmup del 10% y 2 épocas, lo que planificaba 246 pasos. Se detuvo en el paso 213 (86%) y se publicó el checkpoint-200 con pérdida 0,131. Los parámetros entrenables representan solo el 0,32% del total (embeddings congelados). Se añadieron dos tokens de herramienta al vocabulario y se eliminó el vision tower del modelo base durante la fusión. El proceso de entrenamiento se realizó con Unsloth sobre una pila ROCm (AMD RX 7700 XT).
+Los datos de entrenamiento son 218 trayectorias en formato ShareGPT generadas por GLM-5.3-Flash mediante el router de Hugging Face, a partir de 112 tareas sintéticas extraídas del corpus de agentes del autor. Incluyen 190 trayectorias de profesor (85% verificadas por ejecución en sandbox, con inyección de recuperación de fallos en el 15,8% de las filas), 61 filas con cadena de pensamiento corta destilada, 159 solo con envelope y 12 tareas sintéticas de búsqueda web. Las sondas de evaluación se mantuvieron vírgenes, sin solapamiento con generación ni entrenamiento. El dataset completo se publica aparte (`hermes-fc-v28-data`); los datos originales del autor no se publican por contener información privada.
+
+La innovación técnica destacable no es arquitectónica sino metodológica: el autor documenta en un addendum del 3 de septiembre de 2026 que el harness de certificación medía una interfaz sintética. La comparación corregida, usando la ruta nativa de herramientas con la misma batería de 4 herramientas y decodificación greedy, muestra que el modelo base ya llama herramientas correctamente por sí solo (18/20 en tier-1), mientras que este checkpoint baja a 17/20 en tier-1 y 10/20 en coincidencia de nombre, pero sube de 3/10 a 8/10 en planificación todo-first de varios pasos. Los costes son regresiones en contención: sobre-disparo en tier-3 de 5/10 a 9/10 y deriva de herramienta en trivialidades de 0/10 a 4/10.
 
 ## Capacidades
-
-- Generación de texto conversacional con soporte explícito de function calling y tool use.
-- Manejo de conversaciones multi-turno con ejecución de herramientas (promedio de 12 turnos en los datos de entrenamiento, máximo 35).
-- Integración de tokens especiales `<|tool_call|>` y `<|tool_response|>` para estructurar llamadas a herramientas.
-- Capacidad de trabajar con contexto largo (262.144 tokens teóricos), aunque el entrenamiento se limitó a secuencias de 4096 tokens.
-- Soporte de agentes y razonamiento multi-paso dentro del ámbito de tool-calling.
-- No se mencionan capacidades de visión, audio ni otros modalidades; el vision tower fue eliminado en la fusión.
+- Generación de texto conversacional multi-turno, con contexto nativo de hasta 262.144 tokens.
+- Llamada a herramientas (tool calling) y uso de funciones, con dos tokens dedicados añadidos al vocabulario (`<|tool_call|>`, `<|tool_response|>`).
+- Planificación todo-first en tareas de varios pasos: la única capacidad que la línea de fine-tune demuestra haber añadido de forma medible (3/10 en base, 8/10 en este checkpoint, 10/10 en el retrain limpio armB2).
+- Razonamiento de cadena corta destilado en 61 de las filas de entrenamiento.
+- Ejecución de tareas sintéticas de búsqueda web (12 tareas en el dataset).
+- No soporta visión: la torre visual del modelo base fue eliminada en el merge.
+- Capacidad multilingüe limitada al inglés según la model card.
+- No hay modo thinking explícito documentado ni soporte de audio.
 
 ## Casos de uso
-
-- **Investigación en agentes autónomos**: este modelo es ideal para estudiar cómo los modelos de 9B manejan secuencias largas de llamadas a herramientas, gracias a sus datos de entrenamiento con trayectorias reales de agentes Hermes.
-- **Prototipado de asistentes con herramientas**: permite construir prototipos de asistentes que necesiten consultar APIs, bases de datos o ejecutar acciones externas, sin requerir hardware de alta gama.
-- **Evaluación de comportamiento de tool-calling**: los scripts de evaluación publicados (workloads A–E) facilitan la comparación sistemática de este modelo con otros de su clase en tareas de función llamada.
-- **Desarrollo de datasets de entrenamiento**: el proceso de construcción del dataset (scripts `build_v2.py` y `gapfill_v2.py`) puede servir como referencia para generar datos sintéticos de tool-use.
-- **Benchmarking de function calling en modelos pequeños**: útil para medir el impacto de QLoRA en la destilación de capacidades de tool-calling desde modelos más grandes.
-- **Experimentación con cuantización ROCmFPX**: el GGUF cuantizado permite probar inferencia eficiente en GPUs AMD RDNA3, un área poco explorada en comparación con CUDA.
+- Investigación sobre comportamiento de tool calling: el modelo sirve como artefacto controlado para comparar interfaces de evaluación (esquemas incrustados en el prompt frente al parámetro `tools` nativo) y medir cómo cambia la tasa de disparo de herramientas según la forma del prompt.
+- Prototipado de agentes con planificación explícita: para flujos donde el agente debe invocar primero una herramienta de tipo `todo` antes de actuar, el checkpoint muestra 8/10 de acierto en la sonda tier-2, lo que lo hace utilizable en demos de planificación multi-paso.
+- Reproducción de experimentos de QLoRA: los scripts, sondas (`todo_probes.jsonl`, `no_drift_probes.jsonl`) y el dataset separado permiten replicar el pipeline completo de fine-tune sobre un modelo de 9B con una sola GPU de 24 GB en 4 bits.
+- Estudio de regresiones por sobre-entrenamiento: con 8 épocas sobre 218 trayectorias, el modelo evidencia sobre-disparo de herramientas en consultas triviales (4/10), lo que lo convierte en un caso práctico para analizar el equilibrio entre sensibilidad y contención en SFT.
+- Despliegue local en GGUF: la cuantización ROCmFPX del repo compañero permite ejecutarlo con llama.cpp u Ollama a `CTX=65536` para igualar la configuración de servido usada en la evaluación corregida.
+- Base para comparativas de destilación: al conservar la cabeza MTP y el vocabulario extendido, sirve para medir el impacto de la destilación de Qwen3.5 en tareas de agente frente al modelo profesor.
 
 ## Benchmarks y rendimiento
+La model card no presenta resultados de MMLU, HumanEval, GSM8K ni similares. Lo que publica es una batería propia de 4 herramientas con decodificación greedy sobre la ruta nativa de herramientas, corregida tras el addendum:
 
-No se han publicado resultados de benchmarks en la información disponible. El README indica explícitamente que la evaluación independiente de este checkpoint no está completa y que no debe tratarse como un modelo validado para ningún comportamiento específico.
+| Modelo | tier-1 disparadas | tier-1 nombre=todo | tier-2 todo-first | tier-3 disparadas (objetivo 0) | tier-4 disparadas (objetivo 0) |
+|---|---|---|---|---|---|
+| base sin fine-tune | 18/20 | 17/20 | 3/10 | 5/10 | 0/10 |
+| v28 ckpt-175 (este modelo) | 17/20 | 10/20 | 8/10 | 9/10 | 4/10 |
+| armB2-175 (retrain limpio) | 10/20 | 8/20 | 10/10 | 4/10 | 0/10 |
+
+No se han publicado resultados de benchmarks estandarizados en la información disponible. La evaluación independiente del checkpoint está declarada como incompleta por el propio autor.
 
 ## Requisitos de hardware
-
-- **VRAM estimada para inferencia**: para los pesos BF16 completos, se requieren aproximadamente 18-20 GB de VRAM (el repo ocupa 18,4 GB). Con la cuantización GGUF Q4_0_ROCMFP4_FAST, la VRAM necesaria se reduce a unos 5-6 GB.
-- **GPU recomendadas**: para BF16, una GPU con 24 GB (RTX 4090, A10G, A100 40GB) o equivalente. Para el GGUF cuantizado, una GPU con 8 GB es suficiente (por ejemplo, RX 7700 XT, RTX 3060, RTX 4060).
-- **Compatibilidad con GPU de consumo**: sí, cabe en GPUs de consumo con al menos 8 GB de VRAM usando la cuantización GGUF.
-- **Opciones de despliegue**: transformers (con carga de safetensors), llama.cpp (para GGUF), vLLM (etiquetado como `endpoints_compatible`), y potencialmente Ollama si se convierte el modelo.
-- **Latencia y throughput estimados**: no disponibles; el autor no ha publicado mediciones de rendimiento.
+- VRAM estimada en BF16: aproximadamente 18,4 GB de pesos más overhead de activaciones y caché KV; en la práctica requiere 24 GB o más para contexto corto y bastante más para contextos largos.
+- VRAM estimada en GGUF ROCmFPX: no disponible con cifra exacta; al ser una cuantización de un modelo de 9,2B, cabe en GPUs consumer de 12-16 GB con contexto moderado.
+- GPU recomendadas: A100 40/80 GB o H100 para BF16 con contexto largo; RTX 4090 (24 GB) para BF16 con contexto corto o GGUF con contexto extendido.
+- Cabe en GPU consumer: sí, en RTX 4090, RTX 3090 y equivalentes de 24 GB en BF16 con contexto limitado; en GPUs de 12-16 GB solo vía GGUF cuantizado.
+- Opciones de despliegue: transformers (librería declarada), llama.cpp y Ollama para el GGUF, vLLM y TGI como alternativas no verificadas en la información disponible.
+- Latencia y throughput: no disponibles. La configuración de servido de referencia usa `CTX=65536`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Método de entrenamiento | Disponibilidad |
+| Modelo | Parámetros | Contexto | Tool calling | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-9B Hermes Function Calling v2 | 9,2B | 262.144 | Apache-2.0 | QLoRA sobre Qwen3.8-9B | Repo HF |
-| Qwen3.8-9B Hermes Function Calling v1 | 9,2B | 262.144 | Apache-2.0 | QLoRA (versión anterior) | Repo HF |
-| Qwen2.5-7B-Instruct | 7,6B | 131.072 | Apache-2.0 | RLHF + tool-calling nativo | Repo HF |
-| Llama-3.1-8B-Instruct | 8,0B | 131.072 | Llama 3.1 Community License | RLHF + tool-calling nativo | Repo HF |
+| Qwen3.8-9B Hermes FC (este) | 9,20B densos | 262.144 | Sí, con tokens dedicados; planificación todo-first 8/10 | Apache 2.0 | Pesos BF16 + GGUF |
+| Empero/Qwen3.8-9B-Distill (base) | 9,20B densos | 262.144 | Sí, nativo; tier-1 18/20 y contención perfecta en tier-4 | Apache 2.0 | Hugging Face |
+| armB2-175 (retrain limpio del autor) | 9,20B densos | 262.144 | Planificación todo-first 10/10, pero sobre-supresión tier-1 10/20 | Apache 2.0 | No publicados en la información disponible |
 
-Nota: los datos de rendimiento comparativo no están disponibles porque el modelo v2 carece de evaluación independiente. Las alternativas mencionadas (Qwen2.5-7B y Llama-3.1-8B) son modelos establecidos con soporte nativo de function calling, aunque con contexto más corto y arquitecturas convencionales.
+La comparativa relevante es interna a la línea de experimentos del autor: el modelo base supera a este checkpoint en contención y precisión de nombre de herramienta, mientras que este checkpoint y armB2 lo superan en planificación multi-paso. No se dispone de comparación con alternativas externas de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
-
-- **Evaluación incompleta**: el modelo no ha sido validado de forma independiente; no debe usarse en producción sin un benchmark previo.
-- **Entrenamiento interrumpido**: se detuvo al 86% de los pasos planeados, lo que puede afectar a la convergencia final.
-- **Datos de entrenamiento no publicados**: contienen cadenas privadas (hostnames, identificadores de sesión); el autor no los distribuye.
-- **Solo inglés**: no hay soporte multilingüe verificado.
-- **Riesgo de alucinación en tool-calls**: al ser un fine-tune específico, puede generar llamadas a herramientas inexistentes o malformadas si se usa fuera de su dominio de entrenamiento.
-- **Artefacto de investigación**: no es un producto; su mantenimiento y soporte son limitados.
-- **Dependencia de la pila ROCm**: los scripts de entrenamiento están vinculados a la configuración del autor (rutas de máquina, Unsloth 2026.8.18, torch 2.11 ROCm); requieren ajustes para otros entornos.
-- **Cuantización ROCmFPX específica**: el GGUF publicado usa un formato propietario para AMD; para uso portable hay que convertir desde los pesos BF16.
+- El propio autor declara que es un artefacto de investigación, no un producto, y que la evaluación independiente no está completa.
+- El addendum corrige afirmaciones previas del README: la base sí tiene tool calling nativo; la cifra "cero tool calling" de la base medía una interfaz sintética.
+- Regresiones medidas: sobre-disparo de herramientas en consultas que no las requieren (tier-3 de 5/10 a 9/10) y deriva de herramienta en trivialidades (tier-4 de 0/10 a 4/10).
+- Precisión de nombre de herramienta degradada frente a la base: 10/20 frente a 17/20 en tier-1.
+- Entrenamiento detenido al 86% (paso 213 de 246); los pesos publicados son el merge del checkpoint 200.
+- Entrenado con 218 trayectorias, de las cuales 190 son generadas por un profesor (GLM-5.3-Flash) y 112 tareas son sintéticas: riesgo de sobreajuste al estilo del profesor y de alucinación fuera de la distribución de tareas.
+- Solo inglés; sin capacidades multilingües declaradas.
+- Sin visión: la torre visual fue eliminada en el merge.
+- Los datos de entrenamiento originales no se publican por contener material privado, lo que limita la auditoría completa del pipeline.
+- Licencia Apache 2.0 permite uso comercial, pero el estado de validación del checkpoint desaconseja producción sin evaluación propia.
+- El programa de fine-tune está congelado desde el 3 de septiembre de 2026; el autor usa el modelo base como opción por defecto en su runtime.
 
 ## Enlaces
-
-- Repositorio del modelo: https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-function-calling-v2
-- Modelo base: https://huggingface.co/Empero/Qwen3.8-9B
-- Versión v1: https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-function-calling-v1
-- GGUF de v1: https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-function-calling-v1-GGUF
-- Documentación de function calling en Qwen3: https://deepwiki.com/QwenLM/Qwen3/4.3-function-calling-and-tool-use
+- Modelo en Hugging Face: https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-function-calling-v2
+- Modelo base: https://huggingface.co/empero-ai/Qwen3.8-9B-Distill
+- Modelo base alternativo citado en la model card: https://huggingface.co/Empero/Qwen3.8-9B
+- Dataset del fine-tune v28: `hermes-fc-v28-data` (referenciado en la model card, sin URL directa en la información disponible)
+- Repositorio compañero con GGUF ROCmFPX: no disponible la URL exacta en la información proporcionada
+- Scripts de reproducción: `scripts/native_battery.py`, `scripts/todo_probes.jsonl`, `scripts/no_drift_probes.jsonl` (incluidos en el repo del modelo)
+- Apoyo al autor: https://ko-fi.com/jamesonbradfield

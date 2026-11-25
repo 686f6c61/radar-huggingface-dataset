@@ -2,52 +2,53 @@
 
 ## Resumen
 
-LightOnOCR-3-0.8B-MTP-Repacked-i1-GGUF es una cuantizacion GGUF del modelo LightOnOCR-3-0.8B-MTP-Repacked, un modelo vision-lenguaje especializado en reconocimiento optico de caracteres (OCR) y comprension de documentos, publicado originalmente por prithivMLmods. Esta version concreta la produce mradermacher, un cuantizador independiente conocido por generar versiones imatrix de modelos open source para su uso con llama.cpp y otros motores de inferencia local.
+LightOnOCR-3-0.8B-MTP-Repacked-i1-GGUF es una cuantizacion GGUF del modelo LightOnOCR-3-0.8B-MTP-Repacked, un modelo vision-language de aproximadamente 773 millones de parametros especializado en OCR, comprension de documentos y grounding visual. El modelo original lo desarrolla prithivMLmods, mientras que esta version cuantizada la publica mradermacher usando tecnicas de imatrix para preservar la calidad en tamanos reducidos.
 
-El modelo base cuenta con 772.845.888 parametros (aproximadamente 0,8 mil millones), lo que lo situa en la categoria de modelos compactos. Esta orientado a tareas de extraccion de texto en PDF, tablas, formularios y grounding visual, es decir, localizacion de elementos dentro de la imagen del documento. La nomenclatura "MTP" sugiere multi-token prediction, una tecnica de decodificacion que permite predecir varios tokens por paso para acelerar la generacion, aunque la model card no detalla su implementacion.
+El modelo resuelve el problema de extraer texto e informacion estructurada de documentos, incluyendo PDF, tablas y formularios, combinando percepcion visual con generacion de texto. Su tamano compacto (menos de mil millones de parametros) permite desplegarlo en hardware modesto, incluso en GPUs de consumo, lo que lo hace atractivo para pipelines de digitalizacion y procesamiento documental a gran escala.
 
-La relevancia de esta ficha radica en que ofrece una via practica para ejecutar un OCR basado en transformer en hardware de consumo: los cuantizados i1 ocupan entre 0,5 y 0,7 GB, lo que permite desplegarlo en GPUs modestas o incluso en CPU. La licencia Apache 2.0 facilita su uso comercial, si bien el modelo solo declara soporte para ingles.
+La relevancia actual radica en la combinacion de tres factores: un modelo base pequeno y eficiente, cuantizaciones de alta calidad con imatrix (desde Q2_K hasta Q6_K) y una licencia Apache 2.0 permisiva para uso comercial. Esta version concreta esta pensada para su uso con llama.cpp y entornos compatibles con GGUF.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | vision-lenguaje (transformer) con soporte MTP; detalles internos no disponibles |
-| Parametros totales | 772.845.888 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-Q3_K_M, i1-Q3_K_L, i1-IQ3_S, i1-IQ3_M, i1-IQ4_XS, i1-IQ4_NL, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K, ademas de fichero imatrix |
-| Idiomas soportados | en (ingles) |
+| Arquitectura | Vision-language basada en transformer (detalles especificos no disponibles) |
+| Parametros totales | 772.845.888 (~0,77 B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-Q4_0, i1-IQ4_XS, i1-Q4_K_S, i1-IQ4_NL, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (imatrix) |
+| Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (con fichero imatrix para generar cuantizaciones propias) |
+| Formato de pesos | GGUF (cuantizaciones i1/imatrix); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo base mas alla de su naturaleza vision-lenguaje y la presencia de MTP (multi-token prediction). Los tags de la model card apuntan a un modelo conversacional orientado a OCR, comprension de documentos, grounding visual, PDF, tablas y formularios. No se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
+El modelo base es un vision-language model orientado a OCR y comprension documental, con aproximadamente 773 millones de parametros. La informacion disponible no detalla la arquitectura interna exacta (composicion del encoder visual, tipo de transformer de lenguaje ni mecanismo de fusion multimodal), por lo que estos datos deben considerarse no disponibles. El sufijo "MTP" en el nombre sugiere multi-token prediction, aunque no se confirma en la documentacion accesible.
 
-El proceso de cuantizacion aplicado por mradermacher utiliza calibracion imatrix (importance matrix) con la herramienta de llama.cpp, lo que produce cuantizados de mayor calidad que los estaticos equivalentes, especialmente en rangos bajos como IQ3 e IQ4. El repositorio incluye tanto los GGUF listos para usar como el fichero imatrix, que permite al usuario generar sus propias cuantizaciones con la misma calibracion. Existe ademas una version estatica de los cuantizados en un repositorio separado.
+Esta version concreta no es un modelo reentrenado, sino una cuantizacion del modelo original de prithivMLmods realizada con mradermacher. Se han generado cuantizaciones ponderadas con imatrix, una tecnica que calibra la cuantizacion usando estadisticas de activacion para reducir la perdida de calidad respecto a cuantizaciones estaticas. No se dispone de informacion sobre el dataset de entrenamiento, numero de tokens, ni si se aplicaron tecnicas de RLHF o DPO.
 
 ## Capacidades
 
 - Reconocimiento optico de caracteres (OCR) sobre imagenes de documentos.
-- Comprension de documentos: extraccion de estructura y contenido de PDF.
-- Extraccion y reconstruccion de tablas.
-- Procesamiento de formularios.
-- Grounding visual: localizacion de elementos (texto, campos) dentro de la imagen.
-- Generacion de texto conversacional en ingles.
-- Compatibilidad con text-generation-inference y llama.cpp segun los tags del repositorio.
-- Soporte de multi-token prediction (MTP) segun la nomenclatura del modelo base.
-- No se documentan capacidades de tool calling, agentes, audio ni otros modos especiales.
+- Comprension de documentos: extraccion de texto y estructura de PDF y paginas escaneadas.
+- Procesamiento de tablas y formularios con preservacion de estructura.
+- Grounding visual: localizacion de elementos dentro de la imagen del documento.
+- Generacion de texto conversacional en el contexto de tareas documentales.
+- Capacidades vision-language (entrada de imagen y salida de texto).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles segun los metadatos del modelo.
+- Modo thinking explicito: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Digitalizacion masiva de facturas y albaranes: el modelo extrae texto y estructura de documentos escaneados, y su tamano reducido permite procesar lotes grandes en una sola GPU de consumo.
-- Extraccion de tablas de informes financieros: convierte tablas de PDF en datos estructurados, aprovechando la capacidad de comprension de tablas declarada en los tags.
-- Procesamiento de formularios administrativos: identifica campos y valores mediante grounding visual, util para automatizar la entrada de datos.
-- Archivado y busqueda documental: genera transcripciones de documentos escaneados para indexarlas en un motor de busqueda interno.
-- Despliegue en el borde (edge): los cuantizados de 0,5 a 0,7 GB permiten ejecutar OCR en equipos con poca VRAM o en CPU, sin depender de servicios en la nube.
-- Preprocesado en pipelines de RAG: convierte PDF en texto antes de la indexacion vectorial, con coste computacional bajo y licencia permisiva para uso comercial.
-- Prototipado rapido con llama.cpp: permite validar la calidad de OCR de un modelo pequeno antes de invertir en infraestructura mayor.
+- Digitalizacion masiva de facturas y recibos: el modelo puede procesar imagenes de facturas y extraer campos estructurados (importes, fechas, emisores) en un pipeline por lotes, aprovechando su tamano reducido para ejecutar muchas inferencias en paralelo en una sola GPU.
+- Extraccion de tablas de informes financieros: convierte tablas en imagenes o PDF a texto estructurado, util para ingestas en bases de datos o sistemas de BI.
+- Procesamiento de formularios administrativos: lectura de formularios escaneados para prellenar o validar datos en sistemas de gestion documental, reduciendo la introduccion manual.
+- Accesibilidad documental: conversion de documentos escaneados a texto legible para lectores de pantalla o sistemas de sintesis de voz.
+- Indexacion y busqueda semantica de archivos escaneados: OCR previo a la generacion de embeddings para RAG sobre corpus documentales que solo existen en papel o imagen.
+- Digitalizacion de archivos historicos o tecnicos: procesamiento local en entornos con requisitos de privacidad, ya que el modelo cabe en hardware de consumo y puede ejecutarse sin enviar documentos a servicios externos.
+- Automatizacion de back-office en PYMEs: despliegue con llama.cpp en un servidor modesto para clasificar y extraer datos de correspondencia y documentacion entrante.
 
 ## Benchmarks y rendimiento
 
@@ -55,38 +56,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: entre 0,5 y 0,7 GB para los cuantizados i1-Q2_K a i1-Q6_K, segun el fichero elegido.
-- Cabe en cualquier GPU de consumo con al menos 1 GB de VRAM libre; tambien es viable en CPU.
-- GPU recomendadas: no se especifican; por tamano, cualquier RTX o GTX moderna es suficiente, asi como A100 o H100 si se busca throughput alto.
-- Opciones de despliegue: llama.cpp, text-generation-inference (segun tags) y cualquier motor compatible con GGUF; Ollama y vLLM no se mencionan en la informacion disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 0,5-0,6 GB para cuantizaciones Q2-Q4, 0,7 GB para Q5-Q6, mas el consumo adicional del proyector visual (mmproj) y del contexto.
+- GPU recomendadas: cualquier GPU con 2 GB o mas de VRAM es suficiente; RTX 3060, RTX 4060, RTX 4090, A100 o H100 funcionan sin problema.
+- Cabe holgadamente en GPUs de consumo, incluso en modelos de gama baja y en placas integradas con suficiente memoria compartida.
+- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, servidores compatibles con llama-cpp); los tags del repositorio incluyen text-generation-inference, aunque el formato GGUF esta orientado a llama.cpp. Los ficheros mmproj necesarios para la parte visual estan en el repositorio estatico del mismo autor.
+- Latencia y throughput: no disponibles en la informacion proporcionada; por el tamano del modelo se espera una latencia baja en GPU moderna, pero no se aportan cifras verificadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| LightOnOCR-3-0.8B-MTP-Repacked-i1-GGUF (este) | 772.845.888 | no disponible | Apache 2.0 | GGUF (i1) | Cuantizacion imatrix, solo ingles |
-| LightOnOCR-3-0.8B-MTP-Repacked-GGUF (estatico) | 772.845.888 | no disponible | Apache 2.0 | GGUF | Mismo modelo base, cuantizados estaticos |
-| LightOnOCR-3-0.8B-MTP-Repacked (original) | 772.845.888 | no disponible | Apache 2.0 | safetensors | Pesos completos en transformers |
+| LightOnOCR-3-0.8B-MTP-Repacked-i1-GGUF (este) | ~0,77 B | No disponible | Apache 2.0 | GGUF (imatrix) | Cuantizacion comunitaria del modelo de prithivMLmods |
+| LightOnOCR-3-0.8B-MTP-Repacked (base) | ~0,77 B | No disponible | Apache 2.0 | safetensors | Modelo original sin cuantizar |
+| LightOnOCR-3-0.8B-MTP-Repacked-GGUF (estatico) | ~0,77 B | No disponible | Apache 2.0 | GGUF (estatico) | Cuantizaciones estaticas del mismo autor, incluye mmproj |
 
-No se dispone de datos de benchmarks ni de otros modelos comparables de la misma categoria en la informacion proporcionada.
+No se dispone de datos de rendimiento comparativo con otros modelos OCR de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo soporta ingles segun la model card; el rendimiento en castellano no esta documentado.
-- No se publican benchmarks, por lo que la calidad real del OCR no puede verificarse con datos.
-- Riesgo de alucinacion inherente a los modelos generativos: puede inventar texto o estructura en documentos de baja calidad.
-- La cuantizacion introduce perdida de precision; los cuantizados de 2 y 3 bits pueden degradar la calidad del OCR en documentos complejos.
-- No se detalla la longitud de contexto, lo que dificulta planificar el procesamiento de documentos muy largos.
-- Aunque la licencia es Apache 2.0, conviene revisar la model card del modelo base por si hubiera condiciones adicionales no reflejadas en esta ficha.
-- El repositorio es una cuantizacion de terceros: la responsabilidad sobre el comportamiento del modelo recae en el modelo base de prithivMLmods.
+- El modelo solo declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta garantizado ni documentado.
+- Al ser un modelo de menos de mil millones de parametros, es previsible una menor robustez ante documentos complejos, ruido, rotaciones o caligrafia que modelos OCR de mayor tamano; no hay benchmarks que lo confirmen.
+- Riesgo de alucinacion en la extraccion de texto: los modelos generativos pueden producir contenido no presente en la imagen, especialmente en regiones de baja calidad. Conviene validar campos criticos en produccion.
+- Las cuantizaciones mas agresivas (Q2_K, IQ2, IQ3) degradan la calidad; para OCR se recomienda Q4_K_M o superior.
+- Esta version es una cuantizacion no oficial del modelo base; el autor original no la respalda necesariamente.
+- La licencia Apache 2.0 permite uso comercial, pero debe verificarse que el modelo base y sus dependencias (pesos, tokenizer, encoder visual) mantengan la misma licencia.
+- No se dispone de informacion sobre sesgos, datos de entrenamiento ni evaluaciones de robustez.
+- Para usar la parte visual es necesario descargar los ficheros mmproj del repositorio estatico; el repositorio i1 no los incluye.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/LightOnOCR-3-0.8B-MTP-Repacked-i1-GGUF
+- Repositorio Hugging Face (esta cuantizacion): https://huggingface.co/mradermacher/LightOnOCR-3-0.8B-MTP-Repacked-i1-GGUF
 - Modelo base: https://huggingface.co/prithivMLmods/LightOnOCR-3-0.8B-MTP-Repacked
-- Cuantizados estaticos: https://huggingface.co/mradermacher/LightOnOCR-3-0.8B-MTP-Repacked-GGUF
-- Pagina de descargas de mradermacher: https://hf.tst.eu/model#LightOnOCR-3-0.8B-MTP-Repacked-i1-GGUF
-- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Cuantizaciones estaticas (incluye mmproj): https://huggingface.co/mradermacher/LightOnOCR-3-0.8B-MTP-Repacked-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#LightOnOCR-3-0.8B-MTP-Repacked-i1-GGUF
+- Peticiones de modelos del autor: https://huggingface.co/mradermacher/model_requests
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
 - Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

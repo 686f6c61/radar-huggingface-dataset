@@ -2,134 +2,119 @@
 
 ## Resumen
 
-Signal 3.8 27B es un ajuste fino (finetune) de Qwen3.8-27B publicado por AgentionAI en formato GGUF. Su objetivo no es ampliar capacidades, sino reducir la latencia y el gasto de tokens: según las mediciones del autor, genera un 57 % menos de tokens en las respuestas y un 52 % menos de tokens de razonamiento en modo thinking respecto al modelo base, manteniendo o mejorando la calidad medida. El modelo conserva la entrada de imagen del original, ya que el ajuste solo modifica la capa de salida de texto y deja intactos el codificador visual y el proyector.
+Signal 3.8 27B es un ajuste fino (fine-tune) del modelo Qwen3.8-27B desarrollado por AgentionAI, distribuido en formato GGUF para su uso con llama.cpp. Su objetivo no es ampliar capacidades del modelo base, sino reducir la latencia de generacion y el consumo de tokens: segun el autor, produce un 25 % menos de tokens en las respuestas y un 41 % menos de tokens de razonamiento, manteniendo o mejorando la calidad medida. Es, por tanto, un modelo orientado a la eficiencia conversacional mas que a la potencia bruta.
 
-El modelo tiene 27.320.697.856 parámetros (unos 27,32 mil millones) y es denso, por lo que no hay parámetros activos ni offload parcial: el tamano del fichero GGUF equivale a la VRAM necesaria. Se distribuye en seis niveles de cuantizacion, de IQ4_XS (13,27 GiB) a Q8_0 (27,05 GiB), todos construidos con una imatrix propia de AgentionAI y recetas de precisión por tensor denominadas Agention Precision.
+El modelo conserva la arquitectura y el conocimiento del Qwen3.8-27B original (27.320.697.856 parametros, pipeline image-text-to-text, es decir, con capacidad de entrada de imagen y texto). El entrenamiento se realizo por autodestilacion sobre las propias respuestas del modelo base, generadas bajo una instruccion de ser directo que el modelo publicado ya no necesita. No se emplearon datos externos ni salidas de otros modelos.
 
-Es relevante ahora porque ataca un coste que no siempre aparece en las comparativas de calidad: el número de tokens de salida y el tiempo total de respuesta. En escenarios de chat o de generación estructurada, donde el coste por token y la latencia dominan la factura, un modelo que responde en la mitad de tiempo con la misma exactitud en GSM8K cambia el cálculo de viabilidad. Además, el autor reporta mejoras de aceptación del decodificador especulativo (hasta +22 % de velocidad de decodificación en salidas JSON) gracias a que las respuestas del modelo ajustado son más predecibles.
+La relevancia actual del modelo radica en dos frentes: por un lado, la reduccion de tokens de salida y de razonamiento abarata la inferencia en produccion; por otro, sus respuestas mas predecibles elevan la tasa de aceptacion del cabezal de decodificacion especulativa (MTP) integrado en Qwen3.8-27B, lo que acelera la decodificacion. La licencia Apache 2.0 y su condicion de reemplazo directo (drop-in) para configuraciones existentes de llama.cpp facilitan su adopcion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso multimodal (pipeline image-text-to-text); finetune de Qwen/Qwen3.8-27B. Detalles internos de la arquitectura base no disponibles |
-| Parametros totales | 27.320.697.856 (27,32 mil millones) |
+| Arquitectura | Transformer (derivada de Qwen3.8-27B), con cabezal de prediccion multi-token (MTP) para decodificacion especulativa |
+| Parametros totales | 27.320.697.856 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF: Q8_0, AP-Q6_K, AP-Q5_K_M, AP-Q4_K_XL, AP-Q4_K_M, AP-IQ4_XS (AP = Agention Precision, con imatrix propio) |
+| Tipos de cuantizacion | GGUF en varios niveles (el autor menciona Q8_0 y Q5_K_M en sus evaluaciones); cache KV en q8_0 o f16 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (modelo de texto) + mmproj-BF16.gguf (proyector de vision, 0,87 GiB) |
+| Formato de pesos | GGUF (libreria gguf); repo de 321,8 GB con multiples niveles |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un finetune "minimamente invasivo" de Qwen3.8-27B. Según la model card, el entrenamiento se hizo por autodestilación: se tomaron las propias respuestas de Qwen3.8-27B generadas bajo una instrucción de ser directo y se usaron para ajustar el modelo, de modo que la versión publicada ya no necesita ese prompt. No se emplearon datos externos ni salidas de otros modelos. El ajuste afecta únicamente a la capa de salida de texto; el codificador de vision y el proyector quedan sin tocar, por lo que se reutiliza el mmproj-BF16.gguf original del modelo base.
+Signal 3.8 27B parte de Qwen3.8-27B, un transformer de 27,3 mil millones de parametros con soporte de entrada imagen-texto. Conserva el cabezal de prediccion multi-token (MTP) del modelo base, que actua como borrador (draft head) para decodificacion especulativa en llama.cpp. El ajuste no altera la arquitectura: es un fine-tune "minimamente invasivo" que mantiene el conocimiento y el estilo del modelo original.
 
-Tecnicamente, el cambio persigue eliminar preámbulos, formato excesivo y narración explicativa sin truncar el contenido: el autor afirma que ninguna respuesta se cortó de forma prematura en un conjunto de 100 prompts de estilo (0 respuestas terminadas en encabezado o dos puntos, 0 bloques de código sin cerrar) y que ninguna traza de razonamiento de 50 salidas en modo thinking entró en bucle ni alcanzó el límite de tokens. Qwen3.8-27B incorpora además una cabeza de predicción multi-token (draft head) para decodificación especulativa, y las cuantizaciones se generaron con imatrix propio. No se detallan el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
+El entrenamiento se basa en autodestilacion: se generaron respuestas del propio Qwen3.8-27B bajo una instruccion de ser directo, y el modelo se ajusto sobre esas respuestas. No se usaron datos externos ni salidas de otros modelos. El efecto buscado es eliminar preambulos innecesarios ("Sure!", "Great question"), formato excesivo, despedidas y narracion explicativa, conservando la sustancia de la respuesta; en modo thinking, mantiene los pasos de razonamiento utiles pero dedica menos tokens a describir el proceso. El autor cita el estudio de Lotfi, Kirichenko, Li y Liu (arXiv:2606.00206) sobre modelos de razonamiento cuantizados para justificar que la longitud de la cadena de pensamiento no es funcion de la dificultad del problema, sino de tokens de vacilacion y ramificacion.
 
 ## Capacidades
 
-- Generacion de texto conversacional en modo directo, con respuestas mas breves que el modelo base (mediana de 104 tokens frente a 243 en prompts generales).
-- Modo thinking opcional, con el mismo chat template de Qwen3.8; el razonamiento consume menos tokens (mediana de 74 frente a 153 en prompts generales).
-- Razonamiento matematico: 98,3 % de exact match en GSM8K con thinking desactivado y 95,0 % con thinking activado.
-- Generacion de codigo, con bloques de codigo correctamente cerrados y un 11 % menos de tokens que el base.
-- Salidas estructuradas (JSON): el autor mide alta aceptacion del draft en este tipo de prompts, lo que indica respuestas muy predecibles.
-- Vision: mantiene la entrada de imagen del modelo base (pipeline image-text-to-text) mediante el fichero mmproj-BF16.gguf.
-- Compatibilidad con decodificacion especulativa mediante `--spec-type draft-mtp` en llama.cpp.
-- Soporte de tool calling / function calling: no documentado en la informacion disponible.
-- Idiomas soportados: no disponible.
-- Capacidades de audio: no disponibles (no se mencionan).
+- Generacion de texto conversacional con respuestas directas y menor verbosidad que el modelo base.
+- Razonamiento en modo thinking, con cadenas de pensamiento mas cortas (41 % menos tokens en prompts generales, 30 % en codigo, 24 % en GSM8K, segun el autor).
+- Generacion de codigo, con respuestas de longitud similar al base (mediana 153 frente a 159 tokens) y sin bloques de codigo sin cerrar en el conjunto de evaluacion.
+- Razonamiento matematico (evaluado en GSM8K).
+- Entrada de imagen y texto (pipeline image-text-to-text), heredada del modelo base.
+- Compatibilidad con decodificacion especulativa mediante el cabezal MTP integrado.
+- Soporte de plantillas conversacionales y uso como servidor compatible con endpoints (tag endpoints_compatible).
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistentes conversacionales de alto volumen: al reducir un 57 % los tokens de respuesta y completar en menos de la mitad del tiempo total que el modelo base en el mismo hardware, baja directamente el coste por conversacion y el tiempo de espera percibido por el usuario.
-- Generacion de codigo en herramientas de desarrollo: el modelo mantiene la calidad de Qwen3.8-27B con un 11 % menos de tokens, y puede servirse con `llama-server` para integrarse en un pipeline interno de revision o autocompletado.
-- Extraccion de datos y salidas JSON: en prompts de salida estructurada la aceptacion del draft llega al 94 % con longitud 3 y al 87 % con longitud 4, lo que se traduce en decodificacion mas rapida y respuestas mas estables para tareas de parseo.
-- Tutoria y verificacion matematica: el modo thinking conserva el razonamiento util gastando un 32 % menos de tokens en GSM8K, lo que permite desplegar un asistente de resolucion de problemas paso a paso con coste contenido.
-- Analisis de documentos e imagenes: al conservar la entrada visual, sirve para describir capturas, leer diagramas o responder preguntas sobre imagenes, descargando junto al modelo el mmproj-BF16.gguf de 0,87 GiB.
-- Despliegue local con requisitos de privacidad: la cuantizacion AP-IQ4_XS ocupa 13,27 GiB y cabe en GPU de consumo de 16 GB, lo que permite ejecutar el modelo en una estacion de trabajo sin enviar datos a terceros.
-- Resumen y reescritura de contenido: la reduccion de encabezados markdown (del 47 % al 18 %), de negritas (del 85 % al 52 %) y la desaparicion total de preambulos lo hacen adecuado para generar texto limpio listo para publicar o para alimentar otro sistema.
-- Backends de baja latencia con decodificacion especulativa: combinado con `--spec-type draft-mtp`, mejora la velocidad de decodificacion hasta un 22 % en salidas JSON respecto al modelo base, util en servicios con muchos usuarios concurrentes.
+- Atencion al cliente automatizada: la reduccion del 25 % en tokens de respuesta y la practica eliminacion de preambulos y despedidas acortan las respuestas y abaratan cada conversacion, manteniendo el contenido util para turnos multi-turno.
+- Generacion de codigo en produccion: el modelo mantiene la calidad del base en tareas de codigo (mediana de 153 tokens frente a 159) y puede integrarse en pipelines donde la latencia importa; su compatibilidad con llama.cpp permite desplegarlo en servidores existentes sin cambios.
+- Agentes con razonamiento multi-paso: el modo thinking con un 41 % menos de tokens de razonamiento reduce el coste por tarea en flujos agenticos donde cada paso implica una llamada al modelo.
+- Salidas estructuradas (JSON): la tasa de aceptacion del borrador especulativo en JSON sube del 72 % al 94 % (draft 3) y del 66 % al 87 % (draft 4), lo que acelera la generacion de respuestas estructuradas en un 20-24 % frente al base.
+- Procesamiento de documentos con imagen: al heredar el pipeline image-text-to-text, puede emplearse en tareas de extraccion o descripcion de contenido visual combinado con texto.
+- Despliegue en hardware de consumo: al distribuirse en GGUF con niveles como Q5_K_M y Q8_0, permite ejecutar un modelo de 27B en equipos con GPU de consumo o en sistemas tipo Strix Halo (el autor cita Vulkan sobre Strix Halo en sus pruebas).
+- Evaluacion y prototipado rapido: su condicion de reemplazo directo de Qwen3.8-27B en llama.cpp permite comparar latencia y calidad sin rehacer la infraestructura.
 
 ## Benchmarks y rendimiento
 
-Evaluaciones del autor contra Qwen3.8-27B Q8_0, con el mismo servidor, parametros de muestreo y prompts, todos ellos reservados (held-out) respecto al ajuste.
+Datos publicados por el autor, comparando Signal con Qwen3.8-27B sin modificar, ambos en Q8_0 con llama.cpp y los mismos ajustes de muestreo:
 
-| Metrica | base Q8_0 | Signal Q8_0 | Cambio |
+| Metrica | Base Q8_0 | Signal | Cambio |
+|---|---|---|---|
+| Respuestas generales, tokens medianos | 243 | 183 | -25 % |
+| Respuestas que abren con preambulo | 13 % | 3 % | -77 % |
+| Respuestas con cabeceras markdown | 47 % | 37 % | -21 % |
+| Respuestas con negrita | 85 % | 75 % | -12 % |
+| Respuestas de codigo, tokens medianos | 159 | 153 | -4 % |
+| Respuestas de codigo, tokens p90 | 1026 | 963 | -6 % |
+
+| Modo thinking | Base Q8_0 | Signal | Cambio |
+|---|---|---|---|
+| Tokens de razonamiento, prompts generales, mediana | 153 | 91 | -41 % |
+| Tokens de razonamiento, prompts de codigo, mediana | 225 | 158 | -30 % |
+| Tokens de razonamiento, GSM8K, mediana | 119 | 90 | -24 % |
+
+| Calidad (exact match en GSM8K) | Base Q8_0 | Signal |
+|---|---|---|
+| Thinking off, 60 problemas | 98,3 % | 100 % |
+| Thinking on, 40 problemas | 92,5 % | 95,0 % |
+
+En ejecuciones adicionales de 100 problemas por modo: 98,0 % con thinking off y 96,0 % con thinking on. En cuanto a decodificacion especulativa (`--spec-type draft-mtp`, Q8_0, Strix Halo con Vulkan, 200 tokens greedy):
+
+| Prompt / longitud de borrador | Aceptacion base | Aceptacion Signal | Velocidad de decodificacion vs base |
 |---|---:|---:|---:|
-| Respuestas generales, tokens mediana | 243 | 104 | -57 % |
-| Respuestas que abren con preambulo | 13 % | 0 % | eliminado |
-| Respuestas con encabezados markdown | 47 % | 18 % | -62 % |
-| Respuestas con negrita | 85 % | 52 % | -39 % |
-| Respuestas de codigo, tokens mediana | 159 | 142 | -11 % |
-| Respuestas de codigo, tokens p90 | 1026 | 914 | -11 % |
-| Tokens de razonamiento, prompts generales, mediana | 153 | 74 | -52 % |
-| Tokens de razonamiento, prompts de codigo, mediana | 225 | 166 | -26 % |
-| Tokens de razonamiento, GSM8K, mediana | 119 | 81 | -32 % |
-| GSM8K exact match, thinking off (60 problemas) | 98,3 % | 98,3 % | 0 |
-| GSM8K exact match, thinking on (40 problemas) | 92,5 % | 95,0 % | +2,5 pp |
+| Prosa, draft 3 | 39 % | 45 % | +9 % |
+| Prosa, draft 4 | 35 % | 41 % | +14 % |
+| JSON, draft 3 | 72 % | 94 % | +20 % |
+| JSON, draft 4 | 66 % | 87 % | +24 % |
+| Chat muestreado a 0,7, draft adaptativo <=4 (40 prompts) | 57 % | 56 % | — |
 
-Decodificacion especulativa con `--spec-type draft-mtp`, ambos modelos en Q8_0 sobre Strix Halo con Vulkan y ejecuciones greedy de 200 tokens para las filas de draft fijo:
-
-| Prompt / longitud de draft | Aceptacion base | Aceptacion Signal | Velocidad de decodificacion vs base |
-|---|---:|---:|---:|
-| Prosa, draft 3 | 39 % | 47 % | +10 % |
-| Prosa, draft 4 | 35 % | 28 % | -9 % |
-| Salida estructurada (JSON), draft 3 | 72 % | 94 % | +20 % |
-| Salida estructurada (JSON), draft 4 | 66 % | 87 % | +22 % |
-| Prompts de chat, muestreo 0,7, draft adaptativo <=4 (40 prompts) | 57 % | 60 % | — |
-
-Calidad de las cuantizaciones, medida contra el BF16 de Signal (`-c 2048`, 60 chunks, corpus held-out congelado y wikitext-2):
-
-| Tier | Tamano | bpw efectivos | KLD held-out | top-1 | KLD wikitext |
-|---|---:|---:|---:|---:|---:|
-| Q8_0 | 27,05 GiB | 8,26 | 0,0040 | 95,2 % | 0,0045 |
-| AP-Q6_K | 20,89 GiB | 6,57 | 0,0055 | 95,0 % | 0,0075 |
-| AP-Q5_K_M | 18,19 GiB | 5,72 | 0,0081 | 94,4 % | 0,0094 |
-| AP-Q4_K_XL | 16,35 GiB | 5,14 | 0,0124 | 93,9 % | 0,0148 |
-| AP-Q4_K_M | 15,83 GiB | 4,98 | 0,0184 | 92,6 % | 0,0218 |
-| AP-IQ4_XS | 13,27 GiB | 4,17 | 0,0287 | 91,1 % | 0,0327 |
-
-No se han publicado resultados de MMLU, HumanEval ni otros benchmarks estandar en la informacion disponible.
+Con el cabezal de borrador activo, el lote de 40 prompts de chat se completo en un 19 % menos de tiempo total y un 28 % menos de tiempo mediano que el modelo base. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM: al ser un modelo denso, el tamano del fichero equivale a la VRAM necesaria. AP-IQ4_XS 13,27 GiB; AP-Q4_K_M 15,83 GiB; AP-Q4_K_XL 16,35 GiB; AP-Q5_K_M 18,19 GiB; AP-Q6_K 20,89 GiB; Q8_0 27,05 GiB.
-- Vision: anadir 0,87 GiB del fichero mmproj-BF16.gguf a la VRAM del tier elegido.
-- GPU de consumo: AP-IQ4_XS (13,27 GiB, mas 0,87 GiB si se usa vision) encaja en tarjetas de 16 GB; AP-Q4_K_XL ronda los 16,35 GiB y requiere tarjetas de 24 GB como la RTX 3090 o RTX 4090.
-- GPU de datacenter: A100 (40 o 80 GB) y H100 (80 GB) permiten ejecutar Q8_0 (27,05 GiB) con holgura y margen para cache KV.
-- Hardware probado por el autor: Strix Halo con backend Vulkan para las pruebas de decodificacion especulativa.
-- Opciones de despliegue: llama.cpp y `llama-server` estan documentados de forma explicita en la model card (`llama-server -hf agentionai/Signal-3.8-27B-GGUF:AP-Q4_K_XL --jinja -ngl 99`). Otros motores como Ollama, vLLM o TGI no estan confirmados en la informacion disponible.
-- Muestreo recomendado: temperatura 0,7, top-p 0,95, top-k 20, min-p 0. El autor recomienda muestreo en lugar de decodificacion greedy, tras observar un bucle a temperatura 0.
-- Latencia y throughput: no se publican cifras absolutas (tokens por segundo) en la informacion disponible. Solo hay datos relativos: menos de la mitad de tiempo total en respuestas de chat tipicas y hasta un 22 % mas de velocidad de decodificacion en JSON con draft 4.
+- VRAM estimada: no disponible de forma explicita; para 27,3 mil millones de parametros, Q8_0 requiere aproximadamente 27-29 GB de pesos, Q5_K_M alrededor de 18-19 GB y Q4 aproximadamente 15-16 GB (estimaciones a partir del tamano de parametros, no publicadas por el autor).
+- GPU recomendadas: el autor cita pruebas en Strix Halo con Vulkan; por tamano, una A100 40 GB o H100 cubren Q8_0 con holgura, y una RTX 4090 (24 GB) puede ejecutar Q5_K_M o Q4 con cache KV q8_0.
+- GPU de consumo: cabe en tarjetas de 24 GB en cuantizaciones Q4/Q5; en 16 GB solo con cuantizaciones mas agresivas y contexto reducido.
+- Despliegue: llama.cpp (opcion principal, con soporte de `--spec-type draft-mtp`); tambien valido cualquier runtime compatible con GGUF.
+- Latencia y throughput: el autor reporta 19 % menos de tiempo total y 28 % menos de tiempo mediano que el base en un lote de 40 prompts con el borrador activo; no se publican tokens por segundo absolutos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato y disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Signal 3.8 27B (GGUF) | 27,32 mil millones | no disponible | Apache 2.0 | GGUF en Hugging Face, 6 tiers de 13,27 a 27,05 GiB | 57 % menos de tokens en respuestas generales y mejor aceptacion del draft |
-| Qwen3.8-27B (base) | 27,32 mil millones | no disponible | no disponible en la informacion | Pesos base (BF16) y Q8_0 usado como referencia | Referencia de calidad y de consumo de tokens en todas las tablas |
-| Otras alternativas de ~27B | no disponible | no disponible | no disponible | no disponible | No se han facilitado datos de comparacion con otros modelos |
+| Signal 3.8 27B | 27,3 B | no disponible | Apache 2.0 | GGUF | Fine-tune de Qwen3.8-27B orientado a eficiencia de tokens; 25 % menos tokens de respuesta y 41 % menos de razonamiento |
+| Qwen3.8-27B (base) | 27,3 B | no disponible | Apache 2.0 | safetensors y GGUF | Modelo original; respuestas mas largas y menor aceptacion del borrador especulativo |
+| Alternativas de ~27B de otros fabricantes | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Todos los resultados son autodeclarados por el autor sobre conjuntos held-out propios; no hay verificacion independiente ni benchmarks estandar publicados.
-- La longitud de contexto y los idiomas soportados no se detallan en la informacion disponible, aunque el chat template es el original de Qwen3.8.
-- El estilo es deliberadamente escueto: elimina preambulos y reduce formato. En casos donde se espera una explicacion extensa o un formato muy estructurado, la respuesta puede resultar mas seca de lo deseado.
-- El autor observo un bucle con decodificacion greedy (temperatura 0). Se recomienda usar muestreo (temperatura 0,7, top-p 0,95, top-k 20, min-p 0).
-- Los datos de velocidad son relativos y se midieron en un unico equipo (Strix Halo con Vulkan); no hay cifras absolutas de latencia o throughput.
-- Riesgo de alucinacion: heredado del modelo base, no cuantificado en la informacion disponible.
-- Sesgos conocidos: no documentados en la informacion disponible.
-- La licencia es Apache 2.0, lo que permite uso comercial, pero no se detallan condiciones adicionales ni la licencia del modelo base.
-- El uso de vision exige descargar y cargar el fichero mmproj-BF16.gguf (0,87 GiB) ademas del tier elegido.
-- El repositorio ocupa 120,8 GB, por lo que conviene descargar unicamente el tier necesario.
-- El modelo tiene 0 descargas y 25 me gusta en el momento de la consulta: es un lanzamiento reciente (creado el 9 de septiembre de 2026) sin rodaje en produccion.
-- Soporte de tool calling y de agentes multi-paso: no documentado, por lo que no conviene asumirlo sin validacion propia.
+- Sesgos conocidos: no se documentan en la informacion disponible; al derivar del modelo base, hereda los sesgos de este.
+- Riesgo de alucinacion: no se han publicado evaluaciones especificas; la reduccion de tokens de razonamiento podria afectar a tareas que se benefician de cadenas de pensamiento largas, aunque el autor reporta mejoras en GSM8K.
+- Repeticion: el autor advierte que sin `min-p` y `presence_penalty` activados, generaciones largas pueden entrar en bucles de repeticion en algunos muestreos; recomienda temperatura 0,6, top-p 0,95, top-k 20, min-p 0,05 y presence_penalty 1,0.
+- Decodificacion especulativa: si se activa el cabezal MTP en versiones recientes de llama.cpp, debe pasarse `--no-spec-draft-backend-sampling`; de lo contrario, el muestreo del backend no aplica el sampler a los tokens aceptados del borrador y la repeticion puede descontrolarse.
+- Versionado: los niveles del repositorio se reconstruyeron el 2026-09-13; la primera release podia repetir una linea de respuesta en raras ocasiones sin el cabezal de borrador. Si se descargo antes de esa fecha, debe volverse a descargar.
+- Idiomas: no se especifican los idiomas soportados; no hay garantia documentada de rendimiento multilingue.
+- Contexto: la longitud de contexto no se indica en la informacion disponible.
+- Licencia: Apache 2.0 permite uso comercial, pero deben respetarse las condiciones de la licencia del modelo base Qwen3.8-27B.
+- Produccion: el modelo esta pensado como reemplazo directo en configuraciones llama.cpp existentes; requiere verificar los ajustes de muestreo recomendados antes de desplegarlo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/agentionai/Signal-3.8-27B-GGUF
-- Discusiones del modelo: https://huggingface.co/agentionai/Signal-3.8-27B-GGUF/discussions
 - Sitio del autor: https://www.agention.ai/
-- Pagina de modelos de AgentionAI (recetas Agention Precision): https://agention.ai/models/
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- No se han encontrado papers, blogs tecnicos ni demos adicionales en los resultados de busqueda web disponibles; el resto de resultados no guardaban relacion con el modelo.
+- Paper citado (arXiv:2606.00206): https://arxiv.org/abs/2606.00206

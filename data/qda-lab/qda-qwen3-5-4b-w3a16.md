@@ -2,87 +2,105 @@
 
 ## Resumen
 
-QDA-Qwen3.5-4B-W3A16 es un checkpoint cuantizado del modelo Qwen/Qwen3.5-4B, publicado por el autor qda-lab bajo licencia Apache 2.0. Se trata de una cuantización de solo pesos (weight-only) en la que las activaciones permanecen en 16 bits mientras los pesos se comprimen a 3 y 4 bits enteros simétricos en grupos de 128. El resultado se almacena en el formato compressed-tensors, lo que permite cargarlo con las herramientas estándar de Hugging Face compatibles con dicha librería.
+QDA-Qwen3.5-4B-W3A16 es una versión cuantizada a 3 bits de los pesos del modelo multimodal Qwen/Qwen3.5-4B, publicada por el laboratorio qda-lab. El modelo conserva la arquitectura y el pipeline original de Qwen3.5 (image-text-to-text), pero reduce el peso de los pesos de 9,3 GB en BF16 a 3,7 GB, un factor de compresión de aproximadamente 2,5×, manteniendo según el autor el 86,1 % de la precisión del modelo original.
 
-El modelo hereda la arquitectura, el tamaño y las capacidades del Qwen3.5-4B original: un transformer de aproximadamente 4.660 millones de parámetros, orientado a generación de texto y conversación. La cuantización reduce el peso del repositorio hasta unos 3,7 GB, lo que facilita el despliegue en entornos con menos memoria que el modelo en precisión completa.
+La relevancia de esta ficha radica en que se trata de una cuantización W3A16 (pesos de 3 bits, activaciones de 16 bits) generada mediante GPTQ con grupos de 128 elementos, donde algunas capas MLP y de atención se mantienen a 4 bits. La receta de cuantización no es manual: fue seleccionada por un sistema automatizado de búsqueda de QDA, descrito en el artículo "QDA: Closed-Loop LLM Quantization Design with Agents" (arXiv:2611.23388).
 
-Es relevante ahora porque el autor lo marca explícitamente como pre-release: la evaluación está pendiente y la versión completa con resultados de benchmarks está prevista para el 20 de noviembre de 2026. Por tanto, cualquier uso en producción debe considerar que aún no hay métricas publicadas que validen la degradación introducida por la cuantización.
+El modelo tiene 4.659.865.088 parámetros totales y está pensado para despliegue en producción con vLLM sobre GPUs NVIDIA (H100, A100, L40S, RTX Pro 6000, B200 y GB300). Su licencia Apache-2.0, idéntica a la del modelo base, facilita el uso comercial. La información pública disponible no detalla la longitud de contexto, los idiomas soportados ni la composición del dataset de entrenamiento original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (heredada de Qwen3.5-4B; detalles no disponibles) |
+| Arquitectura | Transformer multimodal (image-text-to-text), base Qwen3.5-4B |
 | Parametros totales | 4.659.865.088 |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Pesos enteros de 3 bits y de 4 bits, simétricos, en grupos de 128; activaciones en 16 bits (W3A16) |
+| Tipos de cuantizacion | W3A16: pesos int3 en grupos de 128 (GPTQ), algunas capas MLP y de atencion en 4 bits; activaciones 16 bits; formato compressed-tensors |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors con compressed-tensors |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (compressed-tensors), compatible con transformers y vLLM |
 
 ## Arquitectura y entrenamiento
 
-La ficha del autor no describe la arquitectura interna más allá de la referencia al modelo base Qwen/Qwen3.5-4B. Se trata, por tanto, de un transformer de aproximadamente 4,66 mil millones de parámetros cuyo diseño, datos de entrenamiento, composición del corpus y procesos de alineación (RLHF, DPO u otros) no se detallan en la información disponible. Tampoco se especifican innovaciones técnicas del modelo original, como mecanismos de atención o estrategias de decodificación.
+El modelo hereda la arquitectura del Qwen3.5-4B original, un transformer multimodal con pipeline image-text-to-text, y no introduce cambios estructurales: la intervención se limita a la cuantización de pesos. Los pesos se almacenan como enteros de 3 bits agrupados en bloques de 128, cuantizados con GPTQ, con un subconjunto de capas MLP y de atención elevadas a 4 bits. La combinación concreta de capas y precisiones fue elegida por la búsqueda automatizada de QDA, que optimiza la receta de cuantización en bucle cerrado con agentes.
 
-La contribución propia de este checkpoint es la cuantización de solo pesos: los pesos se representan como enteros simétricos de 3 bits y de 4 bits agrupados en bloques de 128, mientras que las activaciones se mantienen en 16 bits. El resultado se serializa en el formato compressed-tensors, que permite almacenar y cargar los pesos comprimidos sin necesidad de recalcular la cuantización en cada carga. No se han publicado detalles sobre el proceso de calibración, el conjunto de datos usado para determinar los rangos de cuantización ni el impacto medido en la perplejidad o en tareas downstream.
+El proceso de construcción se ejecutó en una única GPU H100 de 80 GB y parte de la revisión `851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a` del modelo base. La receta, la muestra de calibración y los datos de destilación están publicados en el dataset `qda-lab/qda-recipe-inputs`, lo que permite reproducir el checkpoint con QDA 0.1.0. El autor advierte que los pesos reconstruidos no son idénticos bit a bit al checkpoint publicado. No se detalla el número de tokens de entrenamiento del modelo base ni la composición de su dataset, ni si hubo RLHF/DPO.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno, heredadas del modelo base Qwen3.5-4B.
-- Razonamiento y respuesta a instrucciones, en la medida en que lo soporte el modelo original (no verificado tras la cuantización).
-- Generación de código y matemáticas: capacidad presumible del modelo base, sin métricas publicadas para este checkpoint.
-- Tool calling y function calling: no confirmado en la información disponible.
-- Soporte de agentes y razonamiento multi-paso: no confirmado en la información disponible.
-- Capacidades multilingües: no disponibles; el autor no declara idiomas.
-- Capacidades especiales (modo thinking, visión, audio): no disponibles.
+- Generación de texto y razonamiento en modo thinking, con cierre explícito del bloque de razonamiento mediante ``.
+- Procesamiento de imagen y texto de forma conjunta (pipeline image-text-to-text), heredado del modelo base Qwen3.5-4B.
+- Razonamiento matemático de competición: evaluado en AIME 2025 y HMMT Feb 2026.
+- Razonamiento científico y de conocimiento general: evaluado en GPQA-Diamond y MMLU-Pro.
+- Generación de código: evaluado en LiveCodeBench.
+- Seguimiento de instrucciones: evaluado en IFBench.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Decodificación especulativa / MTP: la evaluación se realizó con MTP y decodificación especulativa desactivados; no se documenta su funcionamiento en esta cuantización.
 
 ## Casos de uso
 
-- Despliegue en GPUs de consumo: al ocupar unos 3,7 GB en el repositorio, el checkpoint puede cargarse en tarjetas con 8 GB o más de VRAM, lo que permite probar el modelo Qwen3.5-4B en equipos de gama media sin recurrir al modelo completo en 16 bits.
-- Prototipado rápido de asistentes conversacionales: útil para validar flujos de diálogo y prompts antes de pasar a una versión evaluada o a mayor precisión.
-- Generación de texto en local para entornos con recursos limitados: la cuantización de solo pesos reduce el ancho de banda de memoria respecto a los pesos en 16 bits, lo que puede mejorar la latencia en inferencia con poca memoria disponible.
-- Evaluación comparativa de técnicas de cuantización: investigadores pueden usar este checkpoint como referencia para medir la degradación de W3A16 frente al modelo base, especialmente cuando se publique la evaluación prevista.
-- Integración en pipelines de Hugging Face con compressed-tensors: adecuado para equipos que ya usan esta librería y quieren incorporar un modelo de 4B cuantizado sin cambiar su infraestructura.
-- Experimentación académica con modelos de ~4B: permite ejecutar pruebas de razonamiento y generación en hardware modesto, aunque con la cautela de que no hay métricas de calidad publicadas.
+- Razonamiento matemático asistido: el modelo mantiene 64,5 en AIME 2025 frente a 78,5 del BF16, por lo que es adecuado para entornos donde se prioriza reducir huella de memoria sobre la precisión máxima, como tutoría matemática o verificación de ejercicios con revisión humana posterior.
+- Resolución de problemas científicos: con 66,6 en GPQA-Diamond, puede emplearse en asistentes de investigación que respondan preguntas de nivel posgrado en física, química y biología, siempre con validación por parte de un experto.
+- Generación de código en pipelines internos: sus 49,6 en LiveCodeBench permiten usarlo para autocompletado, generación de tests o revisión de parches en herramientas de desarrollo, aceptando una tasa de acierto inferior a la del modelo completo.
+- Procesamiento de documentos con imagen y texto: al conservar el pipeline image-text-to-text, puede extraer información de capturas, diagramas o formularios combinados con instrucciones textuales en flujos de digitalización.
+- Clasificación y extracción de información con instrucciones complejas: sus 55,4 en IFBench lo hacen utilizable en tareas de extracción estructurada y transformación de datos donde el cumplimiento estricto del formato es importante.
+- Despliegue en GPUs de gama profesional con memoria limitada: al ocupar 3,7 GB de pesos, cabe en una sola L40S o RTX Pro 6000 y permite servir varias instancias por GPU para cargas de baja latencia.
+- Evaluación comparativa de cuantizaciones: sirve como referencia reproducible para medir la pérdida de calidad de recetas W3A16 frente a BF16 en un mismo modelo base, gracias a la publicación de la receta y los datos de calibración.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor indica que la evaluación está pendiente y que la versión completa, con resultados, está prevista para el 20 de noviembre de 2026.
+Resultados publicados por el autor en modo thinking, pass@1 promediado sobre 1 a 32 semillas, con temperatura 1.0, top-p 0.95, top-k 20, min-p 0, presence penalty 1.5 y repetition penalty 1.0:
+
+| Benchmark | BF16 (9,3 GB) | QDA W3A16 (3,7 GB) |
+|---|---|---|
+| AIME 2025 | 78,5 | 64,5 |
+| HMMT Feb 2026 | 63,6 | 51,6 |
+| GPQA-Diamond | 77,5 | 66,6 |
+| IFBench | 60,6 | 55,4 |
+| MMLU-Pro | 77,3 | 73,3 |
+| LiveCodeBench | 61,6 | 49,6 |
+| Media | 69,8 | 60,2 |
+
+Configuración de evaluación: máximo de tokens nuevos por ítem de 81.920 en AIME 2025, HMMT Feb 2026, GPQA-Diamond, IFBench y LiveCodeBench, y de 32.768 en MMLU-Pro; repeticiones de 32 semillas (17-48) en AIME 2025 y HMMT, 16 semillas (17-32) en GPQA-Diamond e IFBench, 1 semilla (17) en MMLU-Pro y 4 semillas (17-20) en LiveCodeBench. MTP y decodificación especulativa desactivados.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en torno a 4-5 GB para los pesos cuantizados, más el overhead de activaciones en 16 bits y la caché KV, que depende de la longitud de contexto (no disponible).
-- GPU recomendadas: no especificadas por el autor. Por tamaño, cabría en GPUs de consumo como RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB o RTX 4090, así como en A100 o H100 para despliegues con mayor concurrencia.
-- Cabe en GPU de consumo: sí, previsiblemente en tarjetas con 8 GB o más de VRAM, aunque no se han publicado requisitos oficiales.
-- Opciones de despliegue: al usar compressed-tensors, es compatible con librerías de Hugging Face que soporten dicho formato (por ejemplo, vLLM y TGI, sujeto a verificación); no se confirma soporte de llama.cpp u Ollama, que requieren formatos GGUF.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: los pesos ocupan 3,7 GB; con overhead de activaciones y caché KV, el consumo real será superior y depende de la longitud de contexto (no documentada).
+- GPUs soportadas explícitamente por el autor: NVIDIA H100, A100, L40S, RTX Pro 6000, B200 y GB300.
+- Cabe en GPUs de consumo: no se confirma; el autor solo lista GPUs profesionales y de centro de datos. La compatibilidad con RTX 4090 u otras consumer no está documentada.
+- Opciones de despliegue: exclusivamente vLLM. SGLang no soporta todavía este formato de 3 bits. El comando de servicio es `VLLM_DISABLED_KERNELS=MacheteLinearKernel vllm serve qda-lab/QDA-Qwen3.5-4B-W3A16`.
+- Requisito de toolchain: sin CUDA 13 en la máquina, la compilación del kernel W3A16 falla al arrancar (`failed to open libnvrtc-builtins.so.13.0`); hay que añadir las librerías NVIDIA del entorno virtual a `LD_LIBRARY_PATH`.
+- Latencia y throughput: en un GB300 sin el toolkit de CUDA 13 el servicio no arrancaba; con el toolkit estuvo listo en 340 s. No se publican cifras de throughput ni de latencia por token.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Estado |
+| Modelo | Parametros | Contexto | Licencia | Formato | Despliegue |
 |---|---|---|---|---|---|
-| QDA-Qwen3.5-4B-W3A16 | 4.659.865.088 | no disponible | W3A16 (3/4 bits, grupos de 128) | Apache 2.0 | Pre-release, sin evaluacion |
-| Qwen/Qwen3.5-4B (base) | ~4,66 mil millones | no disponible | 16 bits | Apache 2.0 | Modelo original de referencia |
-| Alternativas de ~4B de otros fabricantes | no disponible | no disponible | no disponible | no disponible | no disponible |
+| QDA-Qwen3.5-4B-W3A16 | 4,66 B | no disponible | Apache-2.0 | safetensors int3/int4 (compressed-tensors) | vLLM |
+| Qwen/Qwen3.5-4B (BF16) | 4,66 B | no disponible | Apache-2.0 | safetensors BF16 | transformers, vLLM, SGLang |
+| Otras cuantizaciones del mismo base (GGUF, AWQ, etc.) | no disponible | no disponible | según autor | no disponible | no disponible |
 
-La información disponible no permite comparar con alternativas concretas de la misma categoría más allá del modelo base. No se han publicado métricas de rendimiento de este checkpoint.
+La única comparación con datos numéricos publicados es frente al modelo base en BF16: el W3A16 ocupa 3,7 GB frente a 9,3 GB y obtiene una media de 60,2 frente a 69,8 en el conjunto de benchmarks evaluado. No se han publicado comparaciones con otras recetas de cuantización del mismo modelo base en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Modelo en estado pre-release: la evaluación está pendiente y los resultados no se publicarán hasta el 20 de noviembre de 2026; no hay garantía de calidad tras la cuantización.
-- La cuantización a 3 y 4 bits puede degradar la precisión en tareas sensibles, como matemáticas o código, sin que existan métricas que cuantifiquen esa pérdida.
-- Sesgos conocidos: no documentados en la información disponible; se heredan los del modelo base, que tampoco se detallan.
-- Riesgo de alucinación: no evaluado para este checkpoint; se desconoce el impacto de la cuantización en la fidelidad factual.
-- Idiomas soportados: no declarados, lo que impide garantizar un rendimiento multilingüe concreto.
-- Longitud de contexto: no disponible, lo que limita la planificación de despliegues con ventanas largas.
-- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías y el checkpoint deriva de un modelo base cuyos términos conviene revisar en el repositorio original.
-- Compatibilidad: al estar en formato compressed-tensors, no es directamente utilizable en runtimes que solo aceptan GGUF u otros formatos; requiere herramientas compatibles.
-- Sin descargas ni likes en el momento de la consulta, lo que sugiere ausencia de validación por parte de la comunidad.
+- Pérdida de precisión significativa: la media cae de 69,8 a 60,2, con degradaciones especialmente marcadas en LiveCodeBench (61,6 a 49,6, un 19,5 % relativo) y HMMT Feb 2026 (63,6 a 51,6, un 18,9 % relativo).
+- Compatibilidad restringida: solo funciona con vLLM; SGLang no soporta el formato de 3 bits. Requiere CUDA 13 o la configuración manual de `LD_LIBRARY_PATH` para compilar el kernel.
+- Soporte de hardware limitado: el autor solo garantiza GPUs NVIDIA profesionales y de centro de datos; no se documenta compatibilidad con GPUs de consumo.
+- Reproducibilidad parcial: los pesos reconstruidos con la receta publicada no son idénticos bit a bit al checkpoint, lo que puede introducir variaciones en los resultados.
+- Sesgos conocidos: no disponible en la información proporcionada; al heredar el modelo base, arrastra los sesgos de sus datos de entrenamiento, no documentados en esta ficha.
+- Riesgo de alucinación: no cuantificado en la información disponible; la cuantización agresiva a 3 bits puede incrementar la probabilidad de errores en tareas de razonamiento largo.
+- Idiomas y contexto: no se especifican los idiomas soportados ni la longitud máxima de contexto, lo que impide garantizar su comportamiento en escenarios multilingües o de contexto largo.
+- Uso comercial: permitido bajo Apache-2.0, la misma licencia que el modelo base, sin restricciones adicionales documentadas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/qda-lab/QDA-Qwen3.5-4B-W3A16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Librería compressed-tensors: no se proporciona enlace en la información disponible.
-- Paper, blog o demo: no disponibles.
+- Artículo QDA: https://arxiv.org/abs/2611.23388
+- Repositorio QDA: https://github.com/humanfia/qda
+- Receta de cuantización: https://huggingface.co/datasets/qda-lab/qda-recipe-inputs/blob/main/QDA-Qwen3.5-4B-W3A16/qwen3.5-4b-w3a16.yaml
+- Datos de calibración y destilación: https://huggingface.co/datasets/qda-lab/qda-recipe-inputs/tree/main/QDA-Qwen3.5-4B-W3A16

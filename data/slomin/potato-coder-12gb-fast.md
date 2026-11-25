@@ -2,113 +2,105 @@
 
 ## Resumen
 
-Potato-CODER-12GB-Fast es una cuantizacion GGUF del modelo MoE Millie-1.1-35B-A3B-Ternary, publicada por el usuario Slomin. Se trata de un transformer de tipo mixture-of-experts derivado de Qwen3.6-35B-A3B, con aproximadamente 35.000 millones de parametros totales y unos 3.000 millones activos por token, en el que cerca del 90 % de los pesos se almacenan en un formato ternario de baja precision y el resto en precision superior. El repositorio pesa 8,9 GB e incluye tanto el modelo como un proyector de vision cuantizado a Q8_0.
+Potato-CODER-12GB-Fast es una cuantizacion GGUF de un modelo MoE de aproximadamente 35.000 millones de parametros totales y unos 3.000 millones activos por token, derivado de Qwen3.6-35B-A3B a traves de la version ternaria Millie-1.1-35B-A3B-Ternary de LLMs For All. Lo publica el usuario Slomin y su propuesta central es de despliegue: alrededor del 90 % de los pesos estan en formato ternario, de modo que el modelo completo (7,74 GiB) mas el proyector de vision (0,57 GiB) caben residentes en una GPU de 12 GB, sin offloading a CPU, con una cache KV de 131.072 tokens en q8_0.
 
-El objetivo declarado del autor es que el modelo completo (pesos, cache KV de 131.072 tokens y proyector de vision) quepa de forma integra en la VRAM de una tarjeta de 12 GB, sin desbordar a memoria del sistema. Para lograrlo, el autor ha escrito kernels CUDA propios (dequantizacion, MMVQ y un kernel MMQ por tiles) que permiten ejecutar en GPU el tipo tensorial ternario, que el llama.cpp upstream no implementa. Con esa configuracion, el autor reporta unas 161-179 tok/s de decodificacion y 2.199 tok/s de prefill a 60k de contexto en una RTX 3090.
+El aporte propio del autor no es el entrenamiento, sino la ingenieria de inferencia: kernels CUDA que aceleran la ejecucion de pesos ternarios en hardware NVIDIA, un proyector de vision convertido a Q8_0 (el original usaba un tipo Q4_SYM16F sin kernels de GPU), una plantilla de chat concisa que acorta las respuestas y una receta de despliegue reproducible con llama.cpp. Sobre una RTX 3090 limitada a un presupuesto de 11.836 MiB, el autor reporta 161-179 tok/s de decodificacion y 2.199 tok/s de prefill.
 
-Es relevante ahora porque ataca dos cuellos de botella concretos del despliegue local: el coste de VRAM en modelos MoE grandes y el coste por token en tareas de agente y autocompletado. El propio autor lo posiciona como la variante rapida de su hermano Potato-CODER-12GB, mas orientada a trabajo interactivo y bucles de agente largos que a la resolucion de problemas complejos en repositorios.
+Es relevante porque demuestra una via practica para servir un modelo de clase 35B con vision, tool calling y contexto de 131k en hardware de consumo de gama alta, un escenario tradicionalmente reservado a GPUs de 24 GB o superiores. La licencia Apache-2.0 y la compatibilidad con la API de OpenAI facilitan su integracion, aunque el rendimiento declarado depende de un runtime especifico no estandar.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (Qwen3.6-35B-A3B MoE); ~90 % de los pesos en formato ternario, el resto en mayor precision |
+| Arquitectura | Transformer MoE (Qwen3.6-35B-A3B), pesos mayoritariamente ternarios (~90 %), resto en mayor precision |
 | Parametros totales | 34.660.610.688 (~35B) |
-| Parametros activos | ~3B por token (35B-A3B) |
-| Longitud de contexto | 131.072 tokens (etiqueta del repo: 114k) |
-| Tipos de cuantizacion | Ternaria propia (mayoria de tensores); Q8_0 para el proyector de vision; F16 para 27 tensores `ffn_down`; cache KV en q8_0 / q8_0 |
-| Idiomas soportados | Ingles (en) y chino (zh) |
+| Parametros activos | ~3B por token (A3B) |
+| Longitud de contexto | 131.072 tokens |
+| Tipos de cuantizacion | Ternario (~90 % de pesos) + precision mixta; cache KV q8_0/q8_0; proyector de vision Q8_0 con 27 tensores ffn_down en F16 |
+| Idiomas soportados | en, zh |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (`Potato-CODER-12GB-Fast-Ternary.gguf`) + `mmproj-Potato-CODER-12GB-Fast-Q8_0.gguf` |
+| Formato de pesos | GGUF (modelo 7,74 GiB + proyector 0,57 GiB) |
+| Vision | Si, proyector multimodal residente en GPU |
+| Runtime requerido | llama.cpp fork "potato" (Fast CUDA runtime), no compatible con binarios estandar |
+| Tamano del repositorio | 8,9 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una redistribucion de pesos: los tensores proceden sin modificar de `llmsforall/Millie-1.1-35B-A3B-Ternary.gguf` (sha256 `9758b69f…`), segun el autor con todos los tensores verificados byte a byte como identicos al origen. Lo unico que anade esta publicacion es la reescritura de los metadatos `general.*`, un proyector de vision convertido a Q8_0, una plantilla de chat y una receta de despliegue. La arquitectura de base es la de Qwen3.6-35B-A3B: un transformer con capas de mezcla de expertos, aproximadamente 35B de parametros totales y unos 3B activos por token.
+La arquitectura subyacente es un transformer con mezcla de expertos (MoE) de Qwen3.6-35B-A3B: unos 35B de parametros totales con aproximadamente 3B activos por token, lo que reduce el coste computacional por paso de decodificacion manteniendo la capacidad del modelo completo. Sobre esa base, LLMs For All produjo Millie-1.1-35B-A3B-Ternary, una variante con cerca del 90 % de los pesos en representacion ternaria y el resto en mayor precision; Slomin no modifica ningun tensor del modelo de lenguaje, solo reescribe los metadatos `general.*` del GGUF, y afirma haber verificado que todos los tensores son identicos byte a byte al origen.
 
-La innovacion tecnica no esta en el entrenamiento, del que la informacion disponible no aporta detalles (numero de tokens, composicion del dataset ni fases de RLHF/DPO), sino en la infraestructura de ejecucion. Los pesos usan un tipo tensorial ternario que llama.cpp upstream no implementa; el runtime oficial (Millie Runtime) no cubre CUDA, por lo que en NVIDIA cae al camino de CPU. El autor aporta kernels CUDA propios de dequantizacion, MMVQ y MMQ por tiles que habilitan la ruta GPU. Ademas, el proyector de vision original de LLMs For All usa un tipo personalizado `Q4_SYM16F` sin kernels de GPU; aqui se convierte a Q8_0, manteniendo 27 tensores `ffn_down` en F16 por cuantizar mal. La plantilla de chat terse es la Sharp template de peculiar-ragdoll (Apache-2.0), modificada solo en las frases que nombran al modelo, y no implica ningun entrenamiento adicional: es unicamente un prompt que fuerza brevedad.
+No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO en el modelo base. La innovacion tecnica destacable esta en la capa de inferencia: kernels CUDA propios para ejecutar pesos ternarios a alta velocidad, conversion del proyector de vision a Q8_0 para que pueda residir en GPU, y una plantilla de chat (Sharp, de peculiar-ragdoll, Apache-2.0) que fuerza un bloque de sistema de brevedad porque el modelo tiende a ser verboso. El despliegue usa un unico slot con 131.072 tokens de contexto y cache KV cuantizada en q8_0.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento en ingles y chino, con modo de pensamiento configurable mediante `reasoning_effort` y `reasoning-budget` (16.384 tokens en la receta publicada).
-- Generacion de codigo, con orientacion explicita a tareas de programacion (etiquetas `potato-coder` y `coding`).
-- Capacidades de vision: el proyector Q8_0 residente en GPU permite procesar capturas de pantalla y fotografias; el autor indica que han sido verificadas a profundidad de contexto completa.
-- Tool calling / function calling, verificado por el autor en esta configuracion (llamada a herramienta en 1,2 s).
-- Uso como agente en bucles multi-paso, con la advertencia del autor de desactivar la penalizacion de presencia (`--presence-penalty 0`) para no penalizar la repeticion intencionada de rutas y llamadas.
-- Contexto largo de 131.072 tokens con cache KV cuantizada a q8_0 y una sola ranura, apto para conversaciones multi-turno extensas y ficheros grandes.
-- Plantilla de chat terse opcional que reduce la verbosidad inherente del modelo (tendencia a verificar la respuesta varias veces) sin alterar el contenido de la respuesta.
+- Generacion de texto y razonamiento general en ingles y chino.
+- Generacion y asistencia de codigo, con orientacion explicita a tareas de programacion (el nombre "CODER" y las tareas fijas de evaluacion del autor).
+- Vision: procesamiento de capturas de pantalla y fotografias mediante proyector multimodal; el autor declara verificacion a plena profundidad de contexto.
+- Tool calling / function calling: verificado en la configuracion de 12 GB; el autor reporta 1,2 s por turno de llamada a herramienta.
+- Contexto largo de 131.072 tokens en un unico slot, adecuado para conversaciones multi-turno extensas o ficheros grandes.
+- Plantilla de chat concisa que reduce la longitud de las respuestas por defecto.
+- Compatibilidad con la API de OpenAI (`/v1`) a traves del servidor llama.cpp incluido.
 
 ## Casos de uso
 
-- Autocompletado de codigo en el editor: con 170 tok/s de decodificacion y carga en 8,0 s, el modelo puede mantener latencias interactivas en un editor local sin salir de la GPU de 12 GB, lo que evita fugas de codigo a servicios externos.
-- Agentes de codigo en bucle largo: el autor recomienda esta variante cuando el tiempo total de una ejecucion de agente importa mas que resolver las ultimas tareas dificiles; el prefill de 2.199 tok/s a 60k reduce el coste de reinyectar contexto en cada paso.
-- Analisis de repositorios y pantallas: gracias al proyector de vision y al contexto de 131.072 tokens, se pueden pasar capturas de interfaz o diagramas junto con fragmentos de codigo en una misma ventana.
-- Atencion al cliente automatizada multi-turno: el contexto largo con cache KV q8_0 permite mantener conversaciones extensas con historial completo sin reentrenar ni resumir.
-- Asistente de terminal y automatizacion de tareas con herramientas: el tool calling verificado permite encadenar llamadas a funciones (lectura de ficheros, ejecucion de comandos) en un bucle de agente local.
-- Despliegue en equipos con poca RAM: al no descargar pesos a memoria del sistema, encaja en maquinas con 12 GB de VRAM y RAM modesta, algo que su hermano Potato-CODER-12GB no consigue (26 capas de expertos en RAM).
-- Procesamiento de documentos bilingues ingles-chino: la cobertura declarada de ambos idiomas lo hace util para extraccion y resumen de documentacion tecnica en esos dos idiomas.
-- Generacion de codigo asistida con coste controlado: al ser Apache-2.0 y ejecutarse en local, es viable en flujos de CI/CD internos donde no se permite enviar codigo a APIs de terceros.
+- Asistencia de codigo interactiva en estacion de trabajo: con 161-179 tok/s de decodificacion en una RTX 3090, la latencia por token es de unos 6 ms, lo que permite autocompletado y refactorizacion en un bucle fluido sin salir de una GPU de 12 GB.
+- Revision de repositorios y ficheros largos: la ventana de 131.072 tokens permite cargar varios modulos o un diff extenso en una sola peticion; el autor advierte que la version estandar (no Fast) es mas solida en trabajo multi-paso sobre repositorios.
+- Analisis de capturas de pantalla e interfaz: el proyector de vision residente en GPU permite enviar imagenes de UI, diagramas o errores visuales junto al texto para diagnosticos tecnicos.
+- Agentes con herramientas en local: el tool calling verificado y la API compatible con OpenAI permiten conectarlo a frameworks de agentes (LangChain, LlamaIndex, clientes propios) apuntando a `http://127.0.0.1:8080/v1`.
+- Asistente de documentacion tecnica bilingue: al cubrir ingles y chino, sirve para traducir y mantener documentacion entre ambos idiomas, aunque no cubre castellano de forma nativa.
+- Despliegue en entornos con restricciones de privacidad: al ejecutarse integramente en una GPU consumer sin offloading ni llamadas externas, encaja en flujos donde el codigo no puede salir de la maquina.
+- Prototipado rapido de chat con contexto largo: el arranque declarado de 8,0 s y el unico slot simplifican la puesta en marcha de demos y pruebas internas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. Los unicos datos numericos son mediciones de velocidad y tiempos de tarea reportadas por el autor en una RTX 3090, con una ranura y dentro del envelope de 12 GB:
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. El autor solo reporta metricas de inferencia y de tareas propias:
 
-| Metrica | Potato-CODER-12GB-Fast | Potato-CODER-12GB |
-|---|---|---|
-| Seis tareas fijas, en caliente | 193 s | 463 s |
-| Decodificacion | 170 tok/s (rango 161-179) | 53 tok/s |
-| Prefill a 60k | 2.199 tok/s | 744 tok/s |
-| Carga | 8,0 s | 18 s |
-| Contexto | 131.072 | 131.072 |
-| Capas de expertos en RAM del sistema | ninguna | 26 (16 GB de RAM) |
-| Turno con imagen | 2,2 s | no disponible |
-| Llamada a herramienta | 1,2 s | no disponible |
-
-Consumo de VRAM reportado: pico de 11.373 MiB sobre un envelope de 11.836 MiB (12 GB menos 452 MiB de reserva del escritorio y drivers), con 462 MiB de margen. Tamano de ficheros: 7,74 GiB de modelo + 0,57 GiB de proyector de vision.
+| Metrica | Valor declarado (RTX 3090, envolvente de 11.836 MiB) |
+|---|---|
+| Decodificacion | 161-179 tok/s |
+| Prefill | 2.199 tok/s a 60k de contexto |
+| VRAM pico | 11.373 MiB (462 MiB libres) |
+| Tiempo de carga | 8,0 s |
+| Turno con imagen | 2,2 s |
+| Turno de tool call | 1,2 s |
+| Comparativa interna | 2,4x mas rapido que Potato-CODER-12GB en seis tareas fijas |
 
 ## Requisitos de hardware
 
-- VRAM: pico medido de 11.373 MiB en el envelope de una tarjeta de 12 GB, con 462 MiB libres. No hay descarga parcial a RAM del sistema para los pesos.
-- GPU recomendadas: RTX 3090 (verificada por el autor, con las cifras anteriores). Cualquier GPU NVIDIA de 12 GB o mas con soporte CUDA deberia entrar en el envelope, pero no hay mediciones publicadas para otras tarjetas.
-- GPU de consumo: si, cabe en tarjetas consumer de 12 GB (RTX 3090, RTX 3060 12 GB, RTX 4070 12 GB). En tarjetas de 8 GB o 10 GB no cabe en esta configuracion de contexto.
-- RAM del sistema: no se usa para los pesos; el autor indica que no descarga capas.
-- Opciones de despliegue: `llama-server` (ruta recomendada por el autor mediante `serve-potato.sh`), API compatible con OpenAI en `http://127.0.0.1:8080/v1`. El script arranca con `-c 131072 -ngl 99 -fa on -ctk q8_0 -ctv q8_0 -ub 512 -b 2048 --no-context-shift --mmproj ... --jinja`, con muestreo `temp 1.0`, `top-p 0.95`, `top-k 20`, `min-p 0.0`, `presence-penalty 0.0`, `repeat-penalty 1.0` y `reasoning-budget 16384`.
-- Requisito critico: se necesita un runtime capaz de servir el tipo ternario. llama.cpp upstream no lo implementa, y el Millie Runtime oficial no cubre CUDA. Los kernels CUDA del autor no estan publicados como binario; hay que solicitarlos en la pestana de comunidad. Sin ellos, el modelo cae al camino de CPU.
-- Latencia y throughput: 161-179 tok/s de decodificacion, 2.199 tok/s de prefill a 60k, carga 8,0 s, turno con imagen 2,2 s, llamada a herramienta 1,2 s (RTX 3090).
-- Otros backends: no hay soporte declarado para vLLM, TGI ni Ollama. Dado que el tipo tensorial ternario no existe en llama.cpp upstream, la integracion con esas herramientas no esta disponible en la informacion proporcionada.
+- VRAM: pico de 11.373 MiB; el autor fija una envolvente de 11.836 MiB (12 GB menos 452 MiB de reserva para escritorio y driver). No hay offloading de pesos a RAM del sistema.
+- GPU recomendadas: RTX 3090 es la configuracion probada por el autor; cualquier GPU NVIDIA con 12 GB o mas y driver 570+ (Linux) o 551+ (Windows) deberia encajar, aunque solo Linux con RTX 3090 esta verificado en GPU.
+- GPU consumer: si, en tarjetas de 12 GB o superiores; por debajo de 12 GB no cabe el modelo mas cache KV y proyector.
+- Despliegue: exclusivamente mediante el fork de llama.cpp "potato" (Fast CUDA runtime, version potato-millie-v1.0.0-rc3) para Linux x64 (glibc 2.35+) y Windows x64. Los binarios estandar de llama.cpp, Ollama, vLLM o TGI no pueden servir este modelo ternario; el comando `:Q8_0` autogenerado por Hugging Face corresponde al proyector, no al modelo.
+- Latencia y throughput: los indicados en la tabla anterior, medidos con un unico slot y contexto de 131.072 tokens.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Velocidad declarada | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Potato-CODER-12GB-Fast | 35B totales / ~3B activos; ~90 % ternario | 131.072 | 170 tok/s decode, 2.199 tok/s prefill (RTX 3090) | Apache-2.0 | GGUF; requiere kernels CUDA no publicados |
-| Potato-CODER-12GB (hermano) | 35B totales / ~3B activos; ternario | 131.072 | 53 tok/s decode, 744 tok/s prefill | Apache-2.0 | GGUF; 26 capas de expertos en RAM |
-| llmsforall/Millie-1.1-35B-A3B-Ternary (origen) | 35B totales / ~3B activos; ternario | no disponible | no disponible | no disponible | Millie Runtime; sin kernels CUDA |
-| Qwen/Qwen3.6-35B-A3B (base) | 35B totales / ~3B activos | no disponible | no disponible | no disponible | no disponible |
+| Potato-CODER-12GB-Fast | ~35B totales / ~3B activos, ~90 % ternario | 131.072 | Apache-2.0 | GGUF, runtime llama.cpp fork | Vision y tool calling en 12 GB; rendimiento no verificado de forma independiente |
+| Potato-CODER-12GB (mismo autor) | ~35B / ~3B activos | 131.072 | Apache-2.0 | GGUF, runtime llama.cpp fork | Version estandar; el autor la considera mas fuerte en trabajo multi-paso sobre repositorios y 2,4x mas lenta en sus pruebas |
+| Millie-1.1-35B-A3B-Ternary (LLMs For All) | ~35B / ~3B activos, ternario | no disponible | no disponible | GGUF | Modelo de lenguaje de origen; Potato reutiliza sus tensores sin cambios y anade proyector y receta |
+| Qwen3.6-35B-A3B (base) | ~35B / ~3B activos | no disponible | no disponible | safetensors y otras | Modelo original de Qwen; el Potato deriva de el via Millie |
 
-No hay datos de rendimiento en tareas (benchmarks) para ninguno de los modelos comparados en la informacion disponible, por lo que la comparativa se limita a tamano, contexto, velocidad medida y licencia. La diferencia funcional declarada por el autor entre las dos variantes Potato es cualitativa: la variante Fast es mas rapida y no usa RAM del sistema, mientras que la variante no-Fast se describe como mas fuerte en trabajo multi-paso sobre repositorios.
+No se dispone de datos de benchmarks que permitan comparar calidad entre estas variantes.
 
 ## Limitaciones y advertencias
 
-- Dependencia de kernels no publicados: sin los kernels CUDA del autor (dequantizacion, MMVQ, MMQ), el modelo se ejecuta en CPU. Esto es un bloqueo de produccion importante, ya que el binario no esta disponible como release.
-- Licencia: Apache-2.0 para esta publicacion, pero la informacion disponible no detalla la licencia de los pesos de origen `llmsforall/Millie-1.1-35B-A3B-Ternary` ni de Qwen3.6-35B-A3B. Conviene verificar la cadena de licencias antes de uso comercial.
-- Idiomas: solo ingles y chino declarados. No hay soporte declarado de castellano ni de otros idiomas, y no se ha publicado evaluacion multilingue.
-- Sin benchmarks: no hay resultados de MMLU, HumanEval, GSM8K ni similares, por lo que no se puede verificar la calidad frente a alternativas. Las unicas cifras son de velocidad y tiempos de tarea.
-- Rendimiento autodeclarado: todas las mediciones proceden del autor del modelo, en una unica GPU (RTX 3090) y no han sido reproducidas de forma independiente.
-- Riesgo de alucinacion: no evaluado en la informacion disponible. El autor senala que el modelo es verboso por defecto y tiende a re-verificar su respuesta, lo que puede aumentar el consumo de tokens aunque no corrige necesariamente errores.
-- Sesgos: no hay informacion disponible sobre sesgos evaluados.
-- Discrepancia de contexto: la etiqueta del repositorio menciona 114k mientras que la model card y la receta usan 131.072 tokens. Conviene tratar 131.072 como valor de la receta publicada y verificar el limite real.
-- Una sola ranura: la configuracion recomendada usa `--no-context-shift` con una unica ranura, lo que limita el despliegue multiusuario concurrente con contexto completo.
-- Rendimiento en tareas de agente: el propio autor indica que esta variante es mas debil que su hermano en trabajo multi-paso sobre repositorios; elegirla por velocidad puede costar tareas resueltas.
-- Ajuste de parametros delicado: `presence-penalty` debe fijarse a 0 para uso de agente, contra el 1.5 recomendado aguas arriba; usar el valor por defecto degrada el rendimiento en bucles de agente.
-- Repositorio sin traccion: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
-- Proyector de vision convertido por el autor: la conversion a Q8_0 es propia y no ha sido validada externamente; 27 tensores `ffn_down` permanecen en F16 por cuantizar mal.
+- Rendimiento declarado por el autor y no verificado de forma independiente; solo hay pruebas en GPU sobre Linux con RTX 3090. En Windows, el CI del proyecto solo compila el backend CUDA y prueba inferencia en CPU y el lanzador.
+- Dependencia de un runtime no estandar: sin los kernels del fork "potato", el modelo ternario no se puede servir; esto limita portabilidad, soporte y actualizaciones futuras.
+- Idiomas: solo ingles y chino declarados; el rendimiento en castellano no esta garantizado.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no se han publicado evaluaciones de fidelidad ni de tasas de error.
+- Sesgos: no se documenta ninguna evaluacion de sesgo, toxicidad o seguridad en la informacion disponible.
+- El autor senala que el modelo es verboso por defecto y que la plantilla concisa es un parche; sin ella, las respuestas se alargan y consumen contexto.
+- Licencia Apache-2.0 permite uso comercial, pero conviene revisar los terminos del modelo base Qwen3.6-35B-A3B y de Millie, cuyas condiciones no se detallan en la informacion proporcionada.
+- Un unico slot de servicio: no esta pensado para atender peticiones concurrentes multiples sin desplegar varias instancias.
+- Repositorio con 0 likes y 567 descargas en la fecha de consulta: ecosistema pequeno, poca validacion comunitaria y riesgo de abandono del fork.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Slomin/Potato-CODER-12GB-Fast
-- Variante no-Fast: https://huggingface.co/Slomin/Potato-CODER-12GB
-- Pesos de origen (LLMs For All): https://huggingface.co/llmsforall/Millie-1.1-35B-A3B-Ternary
+- Hugging Face: https://huggingface.co/Slomin/Potato-CODER-12GB-Fast
+- Version estandar: https://huggingface.co/Slomin/Potato-CODER-12GB
+- Modelo ternario de origen: https://huggingface.co/llmsforall/Millie-1.1-35B-A3B-Ternary
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Millie Runtime: https://github.com/llmsforall/millie-runtime
+- Runtime llama.cpp "potato": https://github.com/potato-os/llama.cpp/releases/tag/potato-millie-v1.0.0-rc3
 - Plantillas Sharp de chat: https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates
-- Busqueda web: no se encontro ningun resultado relacionado con este modelo; las consultas devolvieron unicamente articulos sobre derechos de paso y servidumbres en el Reino Unido, sin relacion con el contenido de esta ficha.
+- Documentacion de Hugging Face CLI: https://huggingface.co/docs/huggingface_hub/installation

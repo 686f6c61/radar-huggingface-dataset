@@ -2,50 +2,52 @@
 
 ## Resumen
 
-Tema_Q-X8-Thinking-i1-GGUF es una colección de cuantizaciones GGUF, generadas por mradermacher, del modelo temaq-org/Tema_Q-X8-Thinking. Se trata de un transformer instruction-tuned de 35.505.251.456 parámetros (aproximadamente 35,5 mil millones) orientado a tareas de agente, razonamiento multi-paso y conversación multilingüe en japones, ingles y chino. El repositorio incluye cuantizaciones con imatrix (i1) en una amplia gama de tipos, desde IQ1_S hasta Q6_K, lo que permite desplegar el modelo en hardware muy diverso.
+Tema_Q-X8-Thinking-i1-GGUF es la version cuantizada con imatrix del modelo Tema_Q-X8-Thinking, publicada por el usuario mradermacher. El modelo original lo desarrolla la organizacion temaq-org y se distribuye como un transformer denso de aproximadamente 35.500 millones de parametros (35,5 B), orientado a instrucciones, con etiquetas que lo describen como agentico, multilingue y sin censura (uncensored). Esta version concreta no es un modelo nuevo, sino un conjunto de pesos en formato GGUF preparados para inferencia local eficiente con llama.cpp y derivados.
 
-La relevancia de esta ficha radica en que el artefacto publicado no es el modelo original sino su versión cuantizada para inferencia local. El autor de las cuantizaciones es mradermacher, un perfil conocido en el ecosistema por producir versiones GGUF de modelos abiertos. El modelo base está etiquetado como "uncensored" o "unfiltered", lo que implica que se ha reducido o eliminado el alineamiento de seguridad habitual.
+La relevancia de esta ficha reside en que ofrece el modelo en multiples niveles de cuantizacion (desde i1-Q2_K de 13,3 GB hasta i1-Q6_K de 29,3 GB), lo que permite desplegarlo en hardware de consumo con compromisos controlados de calidad. El modelo base esta pensado para tareas conversacionales, uso como agente y generacion de texto multilingue en japones, ingles y chino. La informacion publica disponible es escasa: no se detallan la longitud de contexto, los datos de entrenamiento ni resultados de benchmarks.
 
-No se dispone de información pública sobre la longitud de contexto, la licencia, la composición del dataset de entrenamiento ni los resultados de benchmarks en la documentación proporcionada. La model card se limita a listar los ficheros de cuantización y a remitir a la página del modelo base para más detalles.
+Conviene subrayar que la model card del repositorio GGUF es fundamentalmente una ficha de cuantizacion (generada por la herramienta de mradermacher) y no incluye especificaciones tecnicas del modelo original. Por tanto, muchos campos de esta ficha se marcan como "no disponible" al no poder confirmarse a partir de la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (según tags del repositorio) |
-| Parametros totales | 35.505.251.456 (35,5 B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer denso (segun tags: transformer); detalles internos no disponibles |
+| Parametros totales | 35.505.251.456 (aprox. 35,5 B) |
+| Parametros activos | no disponible (no es un modelo MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (además de fichero imatrix) |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (ademas de fichero imatrix) |
 | Idiomas soportados | japones (ja), ingles (en), chino (zh) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones con imatrix) y safetensors en el modelo base |
+| Formato de pesos | GGUF (cuantizado); el modelo base se distribuye presumiblemente en safetensors |
+| Tamano del repo | 279,4 GB (incluye todas las cuantizaciones) |
+| Modelo base | temaq-org/Tema_Q-X8-Thinking |
+| Cuantizador | mradermacher (quants con imatrix) |
 
 ## Arquitectura y entrenamiento
 
-El repositorio identifica el modelo como un transformer instruction-tuned, según las etiquetas de Hugging Face ("transformer", "instruction-tuned"). No se proporciona información sobre el número de capas, dimensión oculta, mecanismo de atención (si es estándar, GQA o linear), ni sobre innovaciones como decodificación especulativa o modos de pensamiento explícitos, más allá de la etiqueta "Thinking" en el nombre.
+La informacion disponible no detalla la arquitectura interna del modelo base Tema_Q-X8-Thinking mas alla de la etiqueta "transformer". Se trata de un modelo denso de aproximadamente 35,5 B de parametros, etiquetado como instruction-tuned y orientado a uso conversacional y agentico. No se especifican el numero de capas, la dimension oculta, el tipo de atencion ni si emplea innovaciones como atencion lineal o decodificacion especulativa.
 
-Respecto al entrenamiento, no se documentan el número de tokens, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o instrucción supervisada. El modelo base está etiquetado como "uncensored", "non-censored" y "unfiltered", lo que sugiere un proceso de fine-tuning orientado a eliminar rechazos de seguridad, pero no se detalla la metodología. Tampoco se especifica el proceso de cuantización más allá de que se usaron pesos imatrix (i1) para mejorar la calidad de las cuantizaciones de baja precisión.
+Tampoco se documentan el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Las etiquetas "uncensored", "non-censored" y "unfiltered" sugieren que el ajuste fino evito filtros de rechazo, pero no hay informacion tecnica que lo confirme. Esta version i1-GGUF aplica cuantizacion con matriz de importancia (imatrix) generada por mradermacher, lo que mejora la calidad respecto a cuantizaciones estaticas de tamano equivalente.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno en japones, ingles y chino.
-- Razonamiento multi-paso y modo "thinking" (según el nombre del modelo, aunque no se documenta el mecanismo exacto).
-- Soporte de agentes (etiqueta "agent" en el repositorio).
-- Capacidad de tool calling o function calling: no confirmada en la información disponible.
-- Capacidades multilingües limitadas a los tres idiomas declarados (ja, en, zh).
-- Comportamiento "uncensored": el modelo está diseñado para no aplicar filtros de rechazo, lo que afecta a su comportamiento en temas sensibles.
-- No se documentan capacidades de visión, audio ni matemáticas avanzadas.
+- Generacion de texto conversacional multi-turno, segun la etiqueta "conversational" y "instruction-tuned".
+- Uso como agente: la etiqueta "agent" indica soporte previsto para flujos de trabajo agenticos, aunque no se detalla el soporte concreto de tool calling o function calling.
+- Razonamiento: el sufijo "Thinking" del nombre sugiere un modo de razonamiento extendido, aunque no se documenta explicitamente.
+- Capacidades multilingues limitadas a japones, ingles y chino segun los metadatos.
+- Posible capacidad de vision: la model card indica "This is a vision model", si bien los ficheros mmproj (proyector multimodal) se alojarian en el repositorio estatico hermano, no en este.
+- Comportamiento sin censura (uncensored/unfiltered), orientado a respuestas sin filtros de rechazo.
 
 ## Casos de uso
 
-- Asistente conversacional en japones, ingles o chino: el modelo puede gestionar diálogos multi-turno en estos tres idiomas, adecuado para aplicaciones de atención al cliente en mercados asiáticos y anglosajones, aunque se desconoce la ventana de contexto exacta.
-- Generación de texto creativo sin filtros: su naturaleza "uncensored" lo hace apto para escritura de ficción, guiones o contenido editorial donde se requiera evitar rechazos por temas sensibles, siempre con revisión humana posterior.
-- Prototipado de agentes autónomos: la etiqueta "agent" sugiere que el modelo está orientado a flujos de razonamiento multi-paso, útil para experimentar con pipelines de agentes en entornos controlados.
-- Inferencia local en estaciones de trabajo: las cuantizaciones desde IQ2 hasta Q6 permiten ejecutar el modelo en GPUs de consumo con suficiente VRAM, facilitando pruebas offline sin depender de APIs.
-- Investigación sobre alineamiento y seguridad: al ser un modelo "unfiltered", sirve como caso de estudio para analizar comportamientos no alineados y evaluar mecanismos de moderación externos.
-- Despliegue en entornos con requisitos de privacidad: al poder ejecutarse localmente con llama.cpp u Ollama, los datos no salen del dispositivo, lo que encaja en escenarios con datos sensibles en japones o chino.
-- Traducción y adaptación de contenido entre ja, en y zh: el modelo puede emplearse para tareas de traducción asistida, aunque no se han publicado evaluaciones de calidad al respecto.
+- Asistente conversacional local en japones, ingles o chino: el modelo puede gestionar dialogos multi-turno en estas tres lenguas, adecuado para prototipos de atencion al cliente o asistentes personales que requieran despliegue en hardware propio.
+- Agente autonomo en pipelines de automatizacion: la etiqueta "agent" sugiere su uso en flujos de varios pasos, por ejemplo orquestacion de tareas o extraccion de informacion, ejecutandose con llama.cpp sobre servidores modestos.
+- Generacion de texto sin filtros para investigacion: al estar etiquetado como uncensored, puede emplearse en estudios sobre comportamiento de modelos sin alineacion restrictiva, siempre con las cautelas eticas y legales correspondientes.
+- Despliegue en estaciones de trabajo con GPU de consumo: las cuantizaciones i1-Q4_K_M (21,8 GB) o i1-IQ4_XS (19,3 GB) permiten ejecutar el modelo en GPUs con 24 GB de VRAM, habilitando asistentes privados sin conexion.
+- Procesamiento de documentos multilingues: para tareas de resumen o reescritura en japones, chino e ingles dentro de entornos con requisitos de soberania de datos.
+- Experimentacion con cuantizacion imatrix: el fichero imatrix incluido permite a investigadores generar sus propias cuantizaciones y comparar la perdida de calidad entre niveles.
+- Base para ajuste fino o evaluacion comparativa: al disponer de multiples cuantizaciones, sirve para estudiar el impacto de la cuantizacion en tareas de razonamiento y generacion.
 
 ## Benchmarks y rendimiento
 
@@ -53,38 +55,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (según tamaño de cuantización):
-  - i1-Q2_K: ~13,3 GB.
-  - i1-IQ3_S / i1-Q3_K_S: ~15,6-15,7 GB.
-  - i1-Q4_K_M: ~21,8 GB.
-  - i1-Q5_K_M: ~25,4 GB.
-  - i1-Q6_K: ~29,3 GB.
-- GPU recomendadas: para Q4_K_M se necesita al menos 24 GB de VRAM (RTX 3090, RTX 4090, A10G, L4). Para Q5 y Q6 se recomienda A100 40 GB, H100 o RTX 6000 Ada.
-- Cabe en GPU de consumo: sí, en RTX 3090/4090 con cuantizaciones Q4 o inferiores; las cuantizaciones Q5 y Q6 requieren GPUs profesionales o configuraciones multi-GPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. Para el modelo base en safetensors, vLLM o TGI (no confirmado para esta arquitectura concreta).
-- Latencia y throughput: no disponibles. Dependen del hardware y del tipo de cuantización; las cuantizaciones Q4_0 y Q4_K_M están marcadas como "fast" en la model card.
+- VRAM estimada para inferencia segun cuantizacion:
+  - i1-Q2_K: ~13,3 GB de pesos; requiere al menos ~14-16 GB de VRAM con overhead de contexto.
+  - i1-IQ3_S / i1-Q3_K_M: ~15,7-17,3 GB; apto para GPUs de 24 GB.
+  - i1-Q4_K_M (recomendada por el autor): ~21,8 GB; encaja en GPUs de 24 GB (RTX 3090, RTX 4090, A10, L4 con margen limitado).
+  - i1-Q5_K_M: ~25,4 GB; requiere 32 GB o mas (A100 40 GB, RTX A6000).
+  - i1-Q6_K: ~29,3 GB; requiere 32-40 GB de VRAM.
+- GPU recomendadas: RTX 3090/4090 (24 GB) para cuantizaciones Q4; A100 40/80 GB, H100 o RTX A6000 para Q5/Q6 y contexto largo.
+- Cabe en GPU de consumo: si, en RTX 3090/4090 con cuantizaciones Q3/Q4; en GPUs de 16 GB solo con Q2_K y contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF (por ejemplo, llama-cpp-python o LM Studio). La model card menciona "endpoints_compatible".
+- Latencia y throughput: no disponibles; dependen del hardware y de la cuantizacion elegida. El autor indica que Q4_K_M es "fast, recommended" y Q4_0 "fast, low quality".
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. El modelo base temaq-org/Tema_Q-X8-Thinking no incluye benchmarks ni detalles que permitan una comparación rigurosa con alternativas de tamaño similar (por ejemplo, modelos de 30-40 B en la misma franja). Se indica "no disponible".
+No se dispone de datos de benchmarks ni de especificaciones del modelo base que permitan una comparacion rigurosa con alternativas de la misma categoria. Se indica "no disponible". Como referencia estructural, un modelo denso de ~35 B en Q4 ocupa en torno a 20-22 GB, similar a otros modelos densos de la misma escala cuantizados en Q4, pero no se puede establecer una comparacion de rendimiento sin datos publicados.
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: no se puede confirmar si el uso comercial está permitido; es imprescindible verificar la licencia del modelo base antes de cualquier despliegue en producción.
-- Modelo "uncensored" / "unfiltered": carece de filtros de seguridad, lo que implica riesgo de generar contenido dañino, sesgado o ilegal; requiere moderación externa obligatoria en aplicaciones públicas.
-- Riesgo de alucinación: no se han publicado evaluaciones de fidelidad factual; al ser un modelo de 35 B sin benchmarks conocidos, la fiabilidad en tareas de precisión es incierta.
-- Idiomas limitados: solo se declaran japones, ingles y chino; el rendimiento en castellano u otros idiomas no está garantizado.
-- Longitud de contexto desconocida: no se puede planificar su uso en tareas que requieran ventanas largas sin verificar el modelo base.
-- Cuantizaciones de baja precisión (Q2, IQ2, IQ1) pueden degradar notablemente la calidad; la model card recomienda IQ3_XXS o superiores frente a Q2_K.
-- El repositorio ocupa 279,4 GB, lo que exige espacio de almacenamiento considerable si se descargan varias cuantizaciones.
-- No hay información sobre sesgos demográficos, culturales o lingüísticos específicos del entrenamiento.
+- Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; es imprescindible verificar la licencia del modelo base (temaq-org/Tema_Q-X8-Thinking) antes de cualquier despliegue en produccion.
+- Idiomas limitados a japones, ingles y chino; el rendimiento en castellano u otras lenguas no esta garantizado y probablemente sea deficiente.
+- Etiquetado como uncensored/unfiltered: mayor riesgo de generar contenido inapropiado, sesgado o danino; requiere moderacion adicional en entornos de produccion.
+- Riesgo de alucinacion no cuantificado: no hay evaluaciones publicadas de fidelidad factual.
+- Longitud de contexto desconocida: no se puede planificar su uso en tareas de contexto largo sin verificar experimentalmente el limite real.
+- La model card es una ficha de cuantizacion, no del modelo original; los detalles de entrenamiento, alineacion y arquitectura no estan documentados en este repositorio.
+- El repositorio pesa 279,4 GB por incluir todas las cuantizaciones; la descarga selectiva de un unico fichero es necesaria.
+- Posible capacidad de vision no confirmada en este repositorio: los ficheros mmproj se alojan en el repositorio estatico hermano, por lo que la funcionalidad multimodal no esta garantizada desde esta pagina.
 
 ## Enlaces
 
-- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/mradermacher/Tema_Q-X8-Thinking-i1-GGUF
+- Repositorio GGUF (esta ficha): https://huggingface.co/mradermacher/Tema_Q-X8-Thinking-i1-GGUF
+- Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/Tema_Q-X8-Thinking-GGUF
 - Modelo base: https://huggingface.co/temaq-org/Tema_Q-X8-Thinking
-- Cuantizaciones estáticas: https://huggingface.co/mradermacher/Tema_Q-X8-Thinking-GGUF
-- Página de descargas del autor: https://hf.tst.eu/model#Tema_Q-X8-Thinking-i1-GGUF
-- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- FAQ y solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Pagina de descripcion del cuantizador: https://hf.tst.eu/model#Tema_Q-X8-Thinking-i1-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

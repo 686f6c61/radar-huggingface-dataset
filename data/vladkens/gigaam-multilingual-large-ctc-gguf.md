@@ -2,89 +2,89 @@
 
 ## Resumen
 
-GigaAM-Multilingual large-ctc en formato GGUF es una conversión cuantizada del modelo de reconocimiento automático del habla (ASR) `large_ctc` de la familia GigaAM-Multilingual, desarrollada por el equipo GigaAM de Sber (salute-developers). El modelo original es un Conformer de aproximadamente 585 millones de parámetros con una cabeza CTC a nivel de carácter, entrenado para transcribir audio en ruso, inglés, kazajo, kirguís y uzbeko. Esta versión GGUF la publica el desarrollador independiente vladkens para su uso con las herramientas `wavo` y `transcribe.cpp`.
+GigaAM-Multilingual large-ctc en formato GGUF es una conversión cuantizada del modelo de reconocimiento automático del habla (ASR) `large_ctc` de la familia GigaAM-Multilingual, desarrollada por el equipo GigaAM de Sber (salute-developers). El modelo original es un Conformer de aproximadamente 585 millones de parámetros con una cabeza CTC a nivel de carácter, entrenado para transcribir audio en ruso, inglés, kazajo, kirguís y uzbeko. Esta ficha concreta, publicada por el usuario vladkens, empaqueta los pesos en un único fichero GGUF con cuantización Q8_0 de 712 MB, pensado para su uso con las herramientas wavo y transcribe.cpp.
 
-El problema que resuelve es la transcripción multilingüe de audio en cinco idiomas, con especial énfasis en ruso y lenguas túrquicas de Asia Central, un nicho con menos cobertura que el inglés en los modelos ASR comerciales. Al estar empaquetado en GGUF Q8_0 (712 MB), el modelo puede ejecutarse en CPU o GPU de consumo sin necesidad de un stack de PyTorch, lo que facilita el despliegue local y en entornos con recursos limitados.
+La relevancia de esta conversión radica en que permite ejecutar un modelo ASR multilingüe de calidad en entornos ligeros mediante un runtime en C++ (transcribe.cpp), sin depender de frameworks de Python ni de GPU dedicadas. El modelo produce texto en minúsculas, sin puntuación, y deletrea los números como palabras. Está publicado bajo licencia MIT, igual que el modelo original.
 
-Es relevante ahora porque democratiza el acceso a un ASR de Sber de tamaño medio con licencia MIT, formato portable y soporte para herramientas de inferencia ligeras. La conversión preserva el comportamiento del modelo original: salida en minúsculas, sin puntuación y con los números escritos como palabras.
+Es importante señalar que esta no es una ficha de un modelo de lenguaje generativo: es un sistema de transcripción de voz, por lo que sus capacidades se limitan a la conversión de audio a texto y no incluye razonamiento, generación libre ni tool calling.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Conformer con cabeza CTC a nivel de carácter (variante `large_ctc`) |
+| Arquitectura | Conformer con cabeza CTC a nivel de carácter |
 | Parametros totales | 585.330.119 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible; entrenado con fragmentos de audio de hasta 25 s |
-| Tipos de cuantizacion | Q8_0 (único archivo publicado) |
-| Idiomas soportados | ru, en, kk, ky, uz |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (entrenado con fragmentos de audio de hasta 25 s) |
+| Tipos de cuantizacion | Q8_0 (única incluida en el repo) |
+| Idiomas soportados | ruso (ru), inglés (en), kazajo (kk), kirguís (ky), uzbeko (uz) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (archivo `gigaam-multilingual-large-ctc-Q8_0.gguf`, 712 MB) |
+| Formato de pesos | GGUF (fichero `gigaam-multilingual-large-ctc-Q8_0.gguf`, 712 MB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un Conformer, es decir, una arquitectura híbrida que combina bloques convolucionales con mecanismos de autoatención, habitual en ASR por su capacidad de capturar dependencias locales y globales en la señal de audio. La variante `large_ctc` emplea una cabeza CTC (Connectionist Temporal Classification) a nivel de carácter, lo que permite alineamientos sin necesidad de un modelo de lenguaje externo y produce transcripciones directas en minúsculas, sin puntuación y con los números verbalizados.
+El modelo subyacente es un Conformer, una arquitectura que combina bloques de autoatención con convoluciones, diseñada específicamente para tareas de voz. Sobre la representación acústica se aplica una cabeza CTC (Connectionist Temporal Classification) que emite caracteres directamente, lo que permite alineamientos sin necesidad de un decodificador autorregresivo y favorece la eficiencia en inferencia. El modelo original tiene 585.330.119 parámetros según los pesos en safetensors.
 
-Los detalles concretos de entrenamiento (número de horas de audio, composición del dataset, uso de aumentación o ajuste fino) no están disponibles en la información proporcionada; la model card remite al paper `arxiv:2607.10371` y a la model card original de `ai-sage/GigaAM-Multilingual` para esos datos. Esta versión GGUF se generó a partir del snapshot `large_ctc` del repositorio original (commit 3905cd5) mediante el script `convert-gigaam.py` del PR #251 de transcribe.cpp y se cuantizó con `transcribe-quantize --quant Q8_0`. No se modificó el conversor respecto al original.
+El entrenamiento fue realizado por el equipo GigaAM de Sber; según la model card, los detalles de datos de entrenamiento, composición del corpus y precisión se documentan en el paper arXiv:2607.10371 y en la model card del modelo original. El modelo fue entrenado con fragmentos de audio de hasta 25 segundos, por lo que para audio más largo es necesario cortar en pausas (la herramienta wavo lo hace automáticamente). Esta conversión GGUF se generó con el script `convert-gigaam.py` de transcribe.cpp (PR #251) y se cuantizó a Q8_0 con `transcribe-quantize`; no se modificó el conversor respecto a la referencia.
 
 ## Capacidades
 
-- Reconocimiento automático del habla (ASR) en ruso, inglés, kazajo, kirguís y uzbeko.
-- Transcripción con marcas de tiempo por token, según indica la model card (`wavo` proporciona los mismos tiempos de token que transcribe.cpp).
-- Salida en minúsculas, sin puntuación, con números escritos como palabras.
-- Procesamiento de audio de hasta 25 s por fragmento; para audio más largo es necesario cortar en pausas (la herramienta `wavo run` lo hace automáticamente).
-- Acepta cualquier formato y frecuencia de muestreo a través de `wavo`; con `transcribe.cpp` requiere WAV mono a 16 kHz.
-- No dispone de tool calling, capacidades de agente, visión, audio generativo ni modo de razonamiento; es un modelo puramente ASR.
+- Transcripción de voz a texto (ASR) en ruso, inglés, kazajo, kirguís y uzbeko.
+- Salida en minúsculas y sin puntuación; los números se escriben como palabras.
+- Alineamiento temporal a nivel de token (token times), según la model card de wavo.
+- Procesamiento de audio de cualquier formato y frecuencia de muestreo mediante wavo (que remuestrea internamente); con transcribe.cpp se requiere WAV mono a 16 kHz.
+- Ejecución en CPU mediante runtime en C++ (transcribe.cpp), sin dependencias de Python.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni generación de texto libre: es exclusivamente un modelo ASR.
 
 ## Casos de uso
 
-- Transcripción de reuniones y entrevistas en ruso: el modelo convierte audio de hasta 25 s por segmento en texto plano, y con `wavo` se pueden encadenar segmentos cortados en pausas para actas o resúmenes posteriores.
-- Subtitulado automático de vídeo en inglés y ruso: la salida con tiempos por token permite generar subtítulos sincronizados sin depender de servicios en la nube.
-- Atención al cliente en kazajo, kirguís y uzbeko: permite transcribir llamadas o mensajes de voz en lenguas túrquicas de Asia Central, un nicho con poca cobertura en ASR comerciales.
-- Indexación y búsqueda de archivos de audio: al ejecutarse en CPU con un GGUF de 712 MB, se puede procesar un archivo histórico de grabaciones en local y volcar el texto a un motor de búsqueda.
-- Investigación lingüística y corpus: útil para generar transcripciones de corpus orales en ruso y lenguas de Asia Central con licencia MIT, sin restricciones de uso comercial.
-- Despliegue en dispositivos sin GPU: al ser un GGUF Q8_0 de menos de 1 GB, cabe en portátiles y servidores modestos mediante `transcribe.cpp`, sin necesidad de PyTorch ni CUDA.
-- Preprocesamiento en pipelines de datos: transcripción por lotes de audio para alimentar sistemas de análisis de sentimiento o clasificación de llamadas.
+- Transcripción de reuniones y entrevistas: el modelo convierte audio en texto para actas o búsqueda posterior; al ser ligero (712 MB en Q8_0) puede ejecutarse en portátiles sin GPU, aunque requiere trocear el audio en segmentos de hasta 25 s cortando en pausas.
+- Subtitulado automático de vídeo en ruso o inglés: la salida con tiempos por token permite generar subtítulos sincronizados, integrándose en pipelines de postproducción.
+- Atención al cliente y análisis de llamadas: transcripción de grabaciones telefónicas multilingües (ruso, kazajo, uzbeko) para extracción de métricas o auditoría de calidad, con despliegue en servidores sin acelerador.
+- Dictado y notas de voz: integración en aplicaciones de escritorio o móviles mediante wavo, que acepta cualquier formato de audio y gestiona el troceado automático.
+- Investigación lingüística en lenguas túrquicas: el soporte de kazajo, kirguís y uzbeko facilita la creación de corpus transcritos para idiomas con menos recursos.
+- Procesamiento por lotes en CI/CD o servidores modestos: al ejecutarse con transcribe.cpp en CPU, puede encolarse la transcripción de archivos en segundo plano sin consumir VRAM de GPU.
+- Archivado y búsqueda de contenido audiovisual: transcripción masiva de archivos para indexación y búsqueda por texto en bibliotecas de audio o vídeo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card remite al paper `arxiv:2607.10371` y a la model card original de `ai-sage/GigaAM-Multilingual` para datos de precisión, pero no incluye cifras de WER ni comparativas en esta ficha.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card remite al paper arXiv:2607.10371 y a la model card del modelo original para datos de precisión, pero no incluye cifras en esta ficha.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el archivo Q8_0 ocupa 712 MB; en inferencia se puede ejecutar en CPU sin GPU, o en GPU con menos de 1 GB de VRAM adicional para buffers.
-- GPU recomendadas: no se especifican en la información disponible; por tamaño, cualquier GPU de consumo (GTX 1060, RTX 3060, RTX 4090) es suficiente, e incluso CPU de portátil.
-- Cabe en GPU de consumo: sí, con amplio margen, dado el tamaño reducido del archivo.
-- Opciones de despliegue: `transcribe.cpp` (CLI `transcribe-cli -m ... audio.wav`) y `wavo` (`wavo pull gigaam-multilingual` y `wavo run gigaam-multilingual audio.m4a`). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a este formato ASR.
+- VRAM estimada: el fichero Q8_0 ocupa 712 MB; la inferencia puede ejecutarse en CPU sin VRAM dedicada. En GPU, basta con aproximadamente 1 GB de memoria para los pesos, más el margen del runtime.
+- GPU recomendadas: cualquier GPU con al menos 1-2 GB de memoria libre; no requiere A100 ni H100. Una RTX 4090 o similar está sobredimensionada para este modelo.
+- Cabe en GPU de consumo: sí, en cualquier GPU de consumo moderna (por ejemplo, GTX 1650, RTX 3060 o superiores) e incluso en CPU.
+- Opciones de despliegue: transcribe.cpp (`transcribe-cli`) y wavo (`wavo run`). No se indica soporte de vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo de lenguaje.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Idiomas | Contexto audio | Licencia | Formato |
+| Modelo | Parametros | Idiomas | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| GigaAM-Multilingual large-ctc (este) | 585 M | ru, en, kk, ky, uz | fragmentos de hasta 25 s | MIT | GGUF Q8_0 |
-| Whisper large-v3 (OpenAI) | no disponible en la información | multilingüe amplio | 30 s | MIT | safetensors, GGUF, etc. |
-| Whisper small (OpenAI) | no disponible en la información | multilingüe amplio | 30 s | MIT | safetensors, GGUF, etc. |
+| GigaAM-Multilingual large-ctc (GGUF, esta ficha) | 585 M | ru, en, kk, ky, uz | GGUF Q8_0 | MIT | Runtime C++ (transcribe.cpp/wavo) |
+| ai-sage/GigaAM-Multilingual (original) | 585 M | ru, en, kk, ky, uz | PyTorch (safetensors/bin) | MIT | Pesos originales, requiere stack Python |
+| Whisper large-v3 | no disponible en la información | multilingüe amplio | múltiples | MIT | No se dispone de datos comparativos en la información proporcionada |
 
-No se dispone de datos de rendimiento comparativo (WER) en la información proporcionada para establecer una comparación cuantitativa con Whisper u otros ASR. La comparativa anterior es estructural y de licencia, no de precisión.
+No se dispone de datos de rendimiento comparativo en la información proporcionada; la comparación se limita a parámetros, idiomas y licencia.
 
 ## Limitaciones y advertencias
 
-- Salida sin puntuación ni mayúsculas, y con números escritos como palabras; requiere postprocesado si se necesita texto formateado.
-- Entrenado con fragmentos de hasta 25 s: audio más largo debe cortarse en pausas, lo que puede degradar la coherencia en transcripciones de discursos continuos.
-- Solo cubre cinco idiomas (ru, en, kk, ky, uz); no es un modelo multilingüe general.
-- Riesgo de alucinación y errores en audio con ruido, acentos no vistos o solapamiento de hablantes; no se han publicado métricas de WER en esta ficha para acotar el riesgo.
-- Sesgos: no se documentan en la información disponible; al ser un modelo entrenado por Sber, puede reflejar sesgos de los corpus rusófonos utilizados.
-- Licencia MIT: permite uso comercial, pero conviene conservar el aviso de copyright del archivo `LICENSE` y citar al equipo GigaAM de Sber.
-- Esta es una conversión no oficial de un tercero (vladkens); para producción crítica conviene validar contra el modelo original en PyTorch.
-- No soporta tool calling, agentes ni otras capacidades más allá de ASR.
+- Salida sin puntuación y en minúsculas: no debe esperarse texto formateado; los números se deletrean como palabras.
+- Límite de segmento: entrenado con fragmentos de hasta 25 s; audio más largo debe cortarse en pausas para evitar degradación o errores.
+- Solo cinco idiomas: ruso, inglés, kazajo, kirguís y uzbeko; el rendimiento en otros idiomas no está garantizado.
+- Riesgo de errores de transcripción en audio con ruido, acentos marcados o solapamiento de hablantes; no se documentan métricas de robustez en esta ficha.
+- No es un modelo generativo: no corrige gramática, no resume ni responde preguntas; cualquier postprocesado debe hacerse con herramientas externas.
+- Licencia MIT: permite uso comercial, pero conviene revisar la licencia del modelo base y del paper para atribuciones.
+- Conversión de un tercero: esta ficha es una cuantización Q8_0 publicada por vladkens; la calidad depende del conversor de transcribe.cpp (PR #251) y del snapshot del modelo original.
+- Solo se ofrece Q8_0: no hay variantes Q4 ni Q5 en el repo, lo que limita el ajuste fino entre tamaño y precisión.
 
 ## Enlaces
 
-- Hugging Face (este modelo): https://huggingface.co/vladkens/gigaam-multilingual-large-ctc-gguf
+- Modelo en Hugging Face: https://huggingface.co/vladkens/gigaam-multilingual-large-ctc-gguf
 - Modelo base: https://huggingface.co/ai-sage/GigaAM-Multilingual
-- Repositorio GigaAM de Sber: https://github.com/salute-developers/GigaAM
 - Paper: https://arxiv.org/abs/2607.10371
+- Repositorio GigaAM (Sber): https://github.com/salute-developers/GigaAM
 - wavo: https://github.com/vladkens/wavo
 - transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
-- PR de conversión (transcribe.cpp #251): https://github.com/handy-computer/transcribe.cpp/pull/251
+- PR de conversión en transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/pull/251

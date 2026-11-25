@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "johmaru/gemma4-e4b-raika-lora",
+  "slug": "johmaru-gemma4-e4b-raika-lora",
+  "author": "johmaru",
+  "url": "https://huggingface.co/johmaru/gemma4-e4b-raika-lora",
+  "created_at": "2026-11-25T01:18:28.000Z",
+  "updated_at": "2026-11-25T01:22:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gemma-4",
+    "lora",
+    "sft",
+    "roleplay",
+    "synthetic-data",
+    "ja",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 171772434,
+  "storage_human": "172 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

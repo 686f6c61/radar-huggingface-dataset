@@ -2,99 +2,102 @@
 
 ## Resumen
 
-Falcon-H1-1.5B-Deep-Instruct es una conversión comunitaria del modelo homónimo de TII (Technology Innovation Institute) al formato LiteRT-LM (`.litertlm`), diseñado para inferencia en dispositivos edge y móviles mediante el runtime LiteRT-LM de Google. El modelo original pertenece a la familia Falcon-H1, caracterizada por una arquitectura totalmente híbrida que combina en cada capa una rama de atención grouped-query y una rama de selective-scan Mamba2 en paralelo, sumando sus salidas. Esta variante "Deep" intercambia anchura por profundidad: 66 capas con hidden size de 1280, lo que la hace especialmente densa en estado recurrente (264 buffers de estado en total).
+Falcon-H1-1.5B-Deep-Instruct es un modelo de lenguaje de 1.500 millones de parametros desarrollado por TII (Technology Innovation Institute) dentro de la familia Falcon-H1. Su particularidad es una arquitectura completamente hibrida: cada una de sus capas ejecuta en paralelo una rama de atencion con grouped-query attention (GQA) y una rama de espacio de estados Mamba2 (selective scan), sumando ambas salidas. La variante "Deep" prioriza profundidad sobre anchura, con 66 capas y un tamano oculto de 1280.
 
-La conversión mantiene la paridad de logits con el modelo PyTorch original (correlación 1.0000 en 48 posiciones) y supera una batería de 8 preguntas de control en todas las configuraciones probadas (GPU, CPU, iPhone 17 Pro). El archivo distribuido pesa 1,83 GB e incluye cuantización int8 dinámica sobre lineales y embedding, mientras que las capas convolucionales y el scan se mantienen en float. Está pensado para ejecutarse con el runtime `litert-lm` (versión ≥ 0.15) y se distribuye bajo la licencia Falcon LLM.
+El repositorio que nos ocupa, `litert-community/Falcon-H1-1.5B-Deep-Instruct`, no es el modelo original en safetensors, sino una conversion al formato `.litertlm` de Google LiteRT-LM, empaquetada en cuantizacion int8 y optimizada para inferencia en dispositivo (edge). Incluye el tokenizador, la plantilla de chat ChatML de Falcon-H1 y firmas de prefill multitud (1-1024 tokens) para que el runtime seleccione fragmentos ajustados.
 
-La relevancia de este modelo radica en su capacidad para ejecutar un LLM híbrido de 1.5B en hardware de consumo y móvil, con rendimientos de decode de hasta 51,7 tok/s en un Apple M4 Max (GPU) y 16,5 tok/s en un iPhone 17 Pro (Metal), lo que lo convierte en una opción práctica para aplicaciones de IA generativa sin conexión.
+Es relevante porque demuestra que un modelo hibrido con estado recurrente de tamano constante puede ejecutarse en moviles y placas como Raspberry Pi 5 con latencias utilizables: 16,5 tok/s de decodificacion en GPU Metal de un iPhone 17 Pro y 12 tok/s en CPU de un Galaxy S26. El coste es un fichero de 1,83 GB y una penalizacion de decodificacion derivada de sus 66 capas secuenciales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida: atención grouped-query + Mamba2 selective-scan en paralelo por capa (Falcon-H1) |
-| Parametros totales | 1.5B (según denominación del modelo) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | int8 dinámico (lineales y embedding); convs y scan en float; activaciones fp32 en GPU |
-| Idiomas soportados | No disponibles |
-| Licencia | Falcon LLM License (falcon-llm-license) |
-| Formato de pesos | LiteRT flatbuffers (`.litertlm`), convertido desde safetensors bf16 |
+| Arquitectura | Transformer hibrido: atencion GQA + Mamba2 en paralelo en cada capa |
+| Parametros totales | 1.500 millones (1.5B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (firmas de prefill exportadas de 1 a 1024 tokens) |
+| Tipos de cuantizacion | int8 dinamico en capas lineales y embedding; convoluciones y scan en float; activaciones fp32 declaradas para GPU |
+| Idiomas soportados | no disponible |
+| Licencia | Falcon LLM License (other) |
+| Formato de pesos | `.litertlm` (LiteRT-LM) |
+| Tamano del fichero | 1,83 GB (repo completo: 5,5 GB) |
+| Capas | 66 |
+| Tamano oculto | 1280 |
+| Buffers de estado | 264 (132 conv/SSM + 132 KV) |
+| Runtime requerido | litert-lm >= 0.15 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Falcon-H1-1.5B-Deep-Instruct emplea una arquitectura híbrida en la que cada capa ejecuta simultáneamente una rama de atención grouped-query y una rama de selective-scan Mamba2 sobre la misma entrada, sumando sus contribuciones. Cada capa mantiene tanto una caché KV como un estado recurrente de tamaño constante (convolucional + SSM). La variante Deep prioriza profundidad sobre anchura: 66 capas con hidden size de 1280, lo que resulta en 264 buffers de estado (132 conv/SSM + 132 KV), el mayor número entre los tamaños Falcon-H1.
+Falcon-H1 emplea un diseno totalmente hibrido: cada capa procesa la misma entrada a traves de dos ramas paralelas, una de atencion con grouped-query attention y otra de Mamba2 con selective scan, y suma sus salidas. Como consecuencia, cada capa mantiene simultaneamente una cache KV y un estado recurrente de tamano constante (convolucion + SSM). La variante Deep concentra la capacidad en profundidad: 66 capas con tamano oculto 1280, lo que genera 264 buffers de estado, el mayor numero de cualquier tamano de la familia Falcon-H1.
 
-No se proporciona información sobre el proceso de entrenamiento original (datos, número de tokens, técnicas de alineación como RLHF o DPO). La conversión a LiteRT-LM es un proceso técnico de post-entrenamiento que incluye: un parche de caché híbrida compuesta (cada capa aloja KV + conv + estado recurrente en un único índice), el plegado del scan selectivo de Mamba2 como multiplicaciones de matrices con ejes de chunk y cabeza fusionados en el eje de batch (tensores de rango ≤ 4, sin `BROADCAST_TO` ni aritmética int64), la preservación del multiplicador µP y del `ssm_in_multiplier`, y una guardia de padding de prefill para que las posiciones de relleno actúen como pasos identidad exactos para el SSM. La cuantización es posterior: int8 dinámico sobre lineales y embedding, manteniendo convs y scan en float.
+La conversion a LiteRT-LM aplica cuantizacion int8 dinamica sobre las capas lineales y el embedding, dejando las convoluciones y el scan en coma flotante, y declara activaciones fp32 para la ruta GPU. El export en float se valido contra el modelo original de PyTorch con teacher forcing sobre 48 posiciones de decodificacion: top-1 y top-5 identicos en todas las posiciones, correlacion media de logits por posicion de 1,0000 y KL media aproximadamente 0. No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni las etapas de alineacion (RLHF/DPO) del modelo base en la informacion proporcionada.
 
 ## Capacidades
 
-- Generación de texto con plantilla de chat estilo ChatML (incluida en el bundle).
-- Inferencia en dispositivos edge y móviles gracias al formato LiteRT-LM y al runtime `litert-lm`.
-- Soporte de prefill multi-length (firmas de 1 a 1024 tokens) para que el runtime seleccione fragmentos ajustados.
-- Ejecución en GPU (Metal, CUDA) y CPU, con activaciones fp32 declaradas para GPU.
-- Robustez frente a variaciones de longitud de prompt: barridos de prefill herméticos limpios en CPU (12–51) y GPU (12–31).
-- Paridad de salida entre backends GPU y CPU en pruebas de calidad (8/8 en iPhone 17 Pro, con diferencias solo en palabras funcionales).
-- No se menciona soporte de tool calling, agentes, visión ni audio.
+- Generacion de texto conversacional multi-turno con plantilla de chat ChatML de Falcon-H1.
+- Razonamiento aritmetico basico y respuesta a preguntas factuales (validado con pruebas de 8 preguntas, 8/8 en todas las configuraciones probadas).
+- Ejecucion en dispositivo sin conexion: el fichero incluye tokenizador y metadatos del ejecutor, sin dependencias de red.
+- Prefill por fragmentos: firmas exportadas de 1 a 1024 tokens permiten al runtime elegir chunks ajustados a la longitud del prompt.
+- Soporte de backend GPU (Metal en iOS, GPU en Android) y CPU, con resultados equivalentes entre ambos.
+- Capacidad de tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Vision, audio o modo thinking: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistente personal en el dispositivo: el modelo puede ejecutarse localmente en un smartphone (iPhone 17 Pro) con un TTFT de 1,19 s en GPU, ofreciendo respuestas de chat sin conexión y con privacidad total. Su tamaño (1,83 GB) y memoria pico de 4,89 GB en GPU lo hacen viable en dispositivos con 12 GB de RAM.
-- Chatbot de atención al cliente en entornos sin conectividad: gracias a su plantilla ChatML y su capacidad de generación multi-turno, puede integrarse en quioscos, terminales de punto de venta o aplicaciones de campo que requieran respuestas inmediatas sin depender de la nube.
-- Procesamiento de texto en edge para IoT: su bajo consumo de memoria en CPU (1,74 GB) permite desplegarlo en gateways o dispositivos con recursos limitados para tareas como resumen, clasificación o extracción de información.
-- Generación de código en entornos de desarrollo locales: aunque no se especifica entrenamiento específico en código, el modelo puede asistir en autocompletado o explicación de fragmentos en un IDE con inferencia local, evitando el envío de código a servidores externos.
-- Prototipado rápido de aplicaciones de IA generativa: al ser un archivo único `.litertlm` con tokenizer y plantilla incluidos, los desarrolladores pueden integrarlo en pruebas de concepto con el comando `litert-lm run` sin necesidad de infraestructura de servidor.
-- Educación y demostraciones de LLMs en hardware asequible: su capacidad para ejecutarse en un portátil con Apple M4 Max (decode de 51,7 tok/s en GPU) lo hace adecuado para talleres y cursos que necesiten mostrar inferencia de modelos de lenguaje sin GPUs dedicadas.
+- Asistentes conversacionales offline en movil: el modelo cabe en 1,83 GB y responde con 16,5 tok/s en la GPU de un iPhone 17 Pro, lo que permite integrar un chatbot de privacidad total (sin envio de datos a la nube) en aplicaciones iOS y Android mediante LiteRT-LM.
+- Clasificacion y extraccion de informacion en el dispositivo: para tareas de etiquetado de texto, resumen de notas o extraccion de campos de documentos locales, el prefill de 140 tok/s en GPU y 103 tok/s en CPU mantiene la latencia de primera respuesta en torno a 1,2-1,5 s con prompts de 146 tokens.
+- Automatizacion en Raspberry Pi 5: con 2 tok/s de decodificacion y 25 tok/s de prefill, es viable para tareas por lotes no interactivas, como generar descripciones de registros de sensores o resumir ficheros de log en un nodo edge.
+- Prototipado rapido de aplicaciones de IA generativa: el comando `litert-lm run` con `--backend gpu` permite validar flujos conversacionales en hardware real sin infraestructura de servidores.
+- Pruebas de regresion de modelos hibridos: la coincidencia de logits documentada frente a PyTorch (correlacion 1,0000 en 48 posiciones) lo convierte en una referencia util para verificar la fidelidad de conversiones a formatos edge.
+- Educacion y demostraciones: su tamano reducido y su ejecucion local permiten desplegar demos de generacion de texto en aulas o ferias sin GPU dedicada, usando portatiles con Apple Silicon (51,7 tok/s de decodificacion en M4 Max).
+- Evaluacion comparativa de backends: util para medir diferencias CPU/GPU en un mismo modelo con estado recurrente, ya que el repositorio documenta metricas de memoria pico (4,89 GB en GPU frente a 1,74 GB en CPU en iPhone 17 Pro).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Los únicos datos de rendimiento son métricas de inferencia medidas por el autor de la conversión, que se resumen a continuación:
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. Si se documentan mediciones de rendimiento en inferencia:
 
-| Entorno | Backend | Prefill (256 tokens) | Decode | TTFT | Memoria pico |
-|---|---|---|---|---|---|
-| Apple M4 Max | GPU | 1134 tok/s | 51,7 tok/s | 0,25 s | no disponible |
-| Apple M4 Max | CPU | 192 tok/s | 22,7 tok/s | 1,38 s | no disponible |
-| iPhone 17 Pro | GPU (Metal) | 140,3 tok/s | 16,5 tok/s | 1,19 s | 4,89 GB |
-| iPhone 17 Pro | CPU | 103,2 tok/s | 9,9 tok/s | 1,53 s | 1,74 GB |
+| Entorno | Backend | Prefill | Decodificacion | TTFT |
+|---|---|---|---|---|
+| Apple M4 Max (256 prefill / 256 decode) | GPU | 1134 tok/s | 51,7 tok/s | 0,25 s |
+| Apple M4 Max (256 prefill / 256 decode) | CPU | 192 tok/s | 22,7 tok/s | 1,38 s |
+| iPhone 17 Pro (prompt de 146 tokens) | GPU Metal | 140,3 tok/s | 16,5 tok/s | 1,19 s |
+| iPhone 17 Pro (prompt de 146 tokens) | CPU | 103,2 tok/s | 9,9 tok/s | 1,53 s |
+| Galaxy S26 | GPU | 121 tok/s | 6,0 tok/s | 1,92 s |
+| Galaxy S26 | CPU | 103 tok/s | 12,0 tok/s | 2,14 s |
+| Raspberry Pi 5 (4 hilos) | CPU | 25 tok/s | 2,0 tok/s | 10,90 s |
 
-Nota: el decode del modelo Deep (66 capas) es inferior al del hermano 3B (65,3 tok/s en las mismas condiciones) debido al mayor número de bloques secuenciales por token, mientras que el prefill sale adelante (1134 vs 979 tok/s).
-
-## Requisitos de hardware
-
-- VRAM estimada: la carga completa del modelo (todos los buffers de estado) cabe en un dispositivo con 12 GB de RAM; el pico de memoria en GPU es de 4,89 GB y en CPU de 1,74 GB.
-- GPU recomendadas: Apple M4 Max (integrada), iPhone 17 Pro (GPU Metal), y cualquier GPU compatible con LiteRT-LM (CUDA en Linux, Metal en Apple). No se especifican GPUs discretas de escritorio.
-- Sí cabe en hardware de consumo: portátiles con Apple Silicon, smartphones de gama alta y dispositivos con al menos 12 GB de RAM.
-- Opciones de despliegue: runtime `litert-lm` (>= 0.15) con comandos `run` y `benchmark`; soporta backend GPU y CPU.
-- Latencia y throughput: en Apple M4 Max GPU, prefill de 1134 tok/s y decode de 51,7 tok/s con TTFT de 0,25 s; en iPhone 17 Pro GPU, prefill de 140,3 tok/s y decode de 16,5 tok/s con TTFT de 1,19 s.
+Memoria pico en iPhone 17 Pro: 4,89 GB en GPU (activaciones fp32) y 1,74 GB en CPU. El autor senala que la profundidad penaliza la decodificacion: 66 bloques secuenciales de atencion y scan por token hacen que la decodificacion quede por debajo del modelo de 3B, mas superficial.
 
 ## Comparativa con modelos similares
 
-La información disponible no incluye comparativas con modelos externos de la misma categoría. Dentro de la familia Falcon-H1 convertida a LiteRT-LM, se mencionan los siguientes hermanos (sin datos de rendimiento detallados en esta ficha):
-
-| Modelo | Tamaño | Capas | Hidden size | Decode (M4 Max GPU) | Prefill (M4 Max GPU) |
+| Modelo | Parametros | Arquitectura | Contexto | Licencia | Formato |
 |---|---|---|---|---|---|
-| Falcon-H1-0.5B-Instruct | 0.5B | no disponible | no disponible | no disponible | no disponible |
-| Falcon-H1-1.5B-Instruct | 1.5B | no disponible | no disponible | no disponible | no disponible |
-| Falcon-H1-1.5B-Deep-Instruct (este) | 1.5B | 66 | 1280 | 51,7 tok/s | 1134 tok/s |
-| Falcon-H1-3B-Instruct | 3B | no disponible | no disponible | 65,3 tok/s | 979 tok/s |
+| Falcon-H1-1.5B-Deep-Instruct (LiteRT-LM) | 1,5B | Hibrida GQA + Mamba2, 66 capas | no disponible | Falcon LLM License | `.litertlm` int8 |
+| Falcon-H1-3B-Instruct (LiteRT-LM) | 3B | Hibrida GQA + Mamba2 | no disponible | Falcon LLM License | `.litertlm` |
+| Falcon-H1-0.5B-Instruct (LiteRT-LM) | 0,5B | Hibrida GQA + Mamba2 | no disponible | Falcon LLM License | `.litertlm` |
+| Falcon-H1-1.5B-Instruct (LiteRT-LM) | 1,5B | Hibrida GQA + Mamba2 | no disponible | Falcon LLM License | `.litertlm` |
 
-No se dispone de datos de modelos comparables de otros desarrolladores (p. ej., Llama 3.2 1B, Qwen2.5 1.5B) en el contexto de esta conversión.
+Los cuatro modelos comparten la misma receta de conversion y parche segun la model card. La diferencia entre la variante Deep y la estandar de 1,5B es la distribucion de capacidad: la Deep usa 66 capas con tamano oculto 1280, lo que incrementa el numero de buffers de estado y reduce la velocidad de decodificacion. No se dispone de datos de benchmarks comparativos entre estas variantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La licencia Falcon LLM es una licencia propia de TII con restricciones específicas; es necesario revisar los términos y condiciones en el enlace proporcionado antes de un uso comercial.
-- El modelo se distribuye como una conversión comunitaria; el autor declara que los pesos se convirtieron desde safetensors bf16 a flatbuffers y se cuantizaron, pero no se garantiza un mantenimiento continuado.
-- En GPU, el runtime registra un aviso `TopK requires src tensor C dimension to be divisible by 4` debido al vocabulario de 65537 tokens; el autor indica que es un camino de respaldo normal y no afecta a la generación, pero podría confundir en entornos de producción.
-- La profundidad de 66 capas penaliza el decode (menor throughput que el modelo 3B), por lo que no es óptimo para aplicaciones de streaming de tokens de alta velocidad.
-- Las activaciones fp32 en GPU multiplican el consumo de memoria (pico de 4,89 GB frente a 1,74 GB en CPU), lo que limita su uso en GPUs con poca VRAM.
-- No se proporcionan datos sobre sesgos, alucinaciones o comportamiento en idiomas distintos del inglés; la información de idiomas soportados no está disponible.
-- El tiempo de carga en GPU es de aproximadamente un minuto (8 s en CPU) debido a la compilación de kernels Metal para todas las firmas de prefill.
+- Bug de runtime con multiples conversaciones: en litert-lm 0.18.0, reutilizar un mismo Engine para una segunda conversacion reutiliza los tokens compartidos del prompt anterior sin reiniciar el estado recurrente. En pruebas, el modelo respondio con frases completas aunque el system prompt exigia una sola palabra. Debe crearse un Engine nuevo por conversacion. Existe un parche en main desde el 2026-11-03 (commit e1f86b05) que aun no esta en ninguna release (v0.19.1 no lo incluye).
+- Penalizacion de decodificacion por profundidad: 66 capas implican 66 bloques secuenciales por token; la decodificacion queda por debajo del modelo de 3B pese a tener la mitad de parametros.
+- Consumo de memoria en GPU: las activaciones fp32 declaradas elevan la memoria pico a 4,89 GB en iPhone 17 Pro, frente a 1,74 GB en CPU.
+- Riesgo de alucinacion: no se documentan evaluaciones de fidelidad factual mas alla de la prueba de 8 preguntas; el modelo es de 1,5B y debe tratarse con cautela en dominios especializados.
+- Idiomas soportados no documentados: no hay informacion sobre cobertura multilingue; asumir un rendimiento predominante en ingles.
+- Longitud de contexto no documentada: las firmas de prefill llegan a 1024 tokens, pero no se especifica la ventana maxima del modelo.
+- Licencia Falcon LLM License: no es una licencia open source aprobada por OSI; requiere revisar los terminos en el enlace oficial antes de uso comercial.
+- Requiere litert-lm >= 0.15 y esta orientado exclusivamente a inferencia en dispositivo; no es adecuado para despliegue en servidor con vLLM, TGI o llama.cpp, ya que el formato `.litertlm` no es compatible con esos runtimes.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/litert-community/Falcon-H1-1.5B-Deep-Instruct
-- Modelo base (TII): https://huggingface.co/tiiuae/Falcon-H1-1.5B-Deep-Instruct
+- Modelo base: https://huggingface.co/tiiuae/Falcon-H1-1.5B-Deep-Instruct
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
-- Script de conversión y parche: https://github.com/john-rocky/hf-to-litertlm
-- Licencia Falcon LLM: https://falconllm.tii.ae/falcon-terms-and-conditions.html
-- Hermanos en LiteRT-LM: [Falcon-H1-0.5B-Instruct](https://huggingface.co/litert-community/Falcon-H1-0.5B-Instruct), [Falcon-H1-1.5B-Instruct](https://huggingface.co/litert-community/Falcon-H1-1.5B-Instruct), [Falcon-H1-3B-Instruct](https://huggingface.co/litert-community/Falcon-H1-3B-Instruct)
+- Informe del bug de multiples conversaciones: https://github.com/google-ai-edge/LiteRT-LM/issues/3165
+- Commit con el parche: https://github.com/google-ai-edge/LiteRT-LM/commit/e1f86b05bf8a731331622a2622440e9f93d9a9f5
+- Ficha de compatibilidad edge: https://github.com/john-rocky/edge-compat/blob/main/cards/falcon-h1-1.5b-deep-instruct-int8/CARD.md
+- Conversiones hermanas: https://huggingface.co/litert-community/Falcon-H1-0.5B-Instruct, https://huggingface.co/litert-community/Falcon-H1-1.5B-Instruct, https://huggingface.co/litert-community/Falcon-H1-3B-Instruct
+- Terminos de licencia Falcon: https://falconllm.tii.ae/falcon-terms-and-conditions.html

@@ -2,90 +2,89 @@
 
 ## Resumen
 
-chaski-5050-estate-sft-v1 es un ajuste fino (SFT) del modelo Qwen/Qwen3.5-0.8B, publicado por SZLHOLDINGS bajo licencia Apache 2.0. Se trata de un modelo multimodal de tipo image-text-to-text orientado a generación de texto conversacional, con un total de 873.438.784 parámetros (aproximadamente 0,87 mil millones). El modelo se distribuye en formato safetensors y es compatible con transformers y text-generation-inference.
+chaski-5050-estate-sft-v1 es un modelo de generacion de texto de aproximadamente 873 millones de parametros, publicado por SZLHOLDINGS como parte de su "governed-AI estate". Se trata de un ajuste fino supervisado (SFT) sobre el modelo base SZLHOLDINGS/chaski-5050, y se distribuye bajo licencia Apache 2.0 con pesos en formato safetensors y compatibilidad con la libreria transformers.
 
-El modelo parte de la arquitectura Qwen3.5, una familia de transformers densos, y ha sido entrenado con la librería Unsloth junto con TRL de Hugging Face, según indica el autor. La model card es extremadamente escueta: no detalla el dataset de ajuste, el número de tokens de entrenamiento, ni los hiperparámetros empleados. El nombre del modelo sugiere un ajuste orientado al dominio inmobiliario ("estate"), aunque esta especialización no se documenta de forma explícita.
+El modelo esta etiquetado con la arquitectura qwen3_5 en Hugging Face, lo que sugiere una base derivada de la familia Qwen, aunque la model card no detalla la arquitectura interna, el volumen de datos de entrenamiento ni la composicion del dataset de SFT. El unico idioma declarado es el ingles. Su relevancia actual es limitada: se trata de un artefacto de un ecosistema corporativo con enfasis en trazabilidad ("receipts"), no de un lanzamiento con benchmarks publicos.
 
-Su relevancia actual es limitada: se trata de un modelo de nicho, con cero descargas y cero likes en el momento de la consulta, sin benchmarks publicados ni documentación técnica adicional. Resulta útil como ejemplo de ajuste fino ligero de un modelo multimodal pequeño para tareas conversacionales específicas, pero no constituye una referencia de rendimiento ni de calidad contrastada.
+La propia model card es explicita al respecto: declara que las afirmaciones de calidad son UNKNOWN y que no se afirma ningun numero de benchmark mas alla de lo medido en una auditoria fechada. En el momento de la auditoria (2026-11-22) no se encontro una cadena de recibos de evaluacion estricta, por lo que no se hacen afirmaciones de calidad sobre este artefacto.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (familia Qwen3.5) |
-| Parámetros totales | 873.438.784 |
-| Parámetros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | No disponible (pesos publicados en safetensors; compatible con cuantización posterior vía herramientas estándar) |
-| Idiomas soportados | Inglés (en) |
-| Licencia | Apache 2.0 |
+| Arquitectura | no disponible (etiqueta de Hugging Face: qwen3_5) |
+| Parametros totales | 873.438.784 |
+| Parametros activos | no aplica (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en Qwen/Qwen3.5-0.8B, un transformer denso de la familia Qwen3.5 con aproximadamente 0,87 mil millones de parámetros. La pipeline declarada es image-text-to-text, lo que indica que el modelo base incorpora capacidades multimodales de entrada (imagen y texto), aunque la model card no detalla la arquitectura del codificador visual ni la estrategia de fusión multimodal. El ajuste se realizó mediante SFT (supervised fine-tuning) utilizando Unsloth y la librería TRL de Hugging Face, según declara el autor.
+La informacion disponible no detalla la arquitectura interna mas alla de la etiqueta `qwen3_5` asociada al repositorio, que apunta a una base de la familia Qwen. El recuento real de parametros en safetensors es de 873.438.784, lo que situa al modelo en el rango de los ~0,9 mil millones de parametros. No se especifica si emplea atencion lineal, decodificacion especulativa ni ninguna otra innovacion tecnica.
 
-No se proporciona información sobre el volumen de tokens de entrenamiento, la composición del dataset de ajuste, el uso de RLHF o DPO, ni innovaciones técnicas específicas (atención lineal, decodificación especulativa, etc.). El nombre "estate" sugiere un corpus del sector inmobiliario, pero no se confirma en la documentación. No hay datos sobre la longitud de contexto efectiva tras el ajuste ni sobre posibles modificaciones del tokenizador.
+Respecto al entrenamiento, el nombre del repositorio indica un ajuste fino supervisado (SFT) sobre SZLHOLDINGS/chaski-5050. No se publica el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas de RLHF o DPO. La model card indica que las afirmaciones de entrenamiento y evaluacion viven en ficheros de recibos ("receipts") del estate, y que cualquier cosa no registrada alli es UNKNOWN. La auditoria del 2026-11-22 concluyo que no existia una cadena de recibos de evaluacion estricta (estado UNKNOWN_NO_EVAL_RECEIPT).
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, heredada del modelo base Qwen3.5-0.8B.
-- Procesamiento de entradas imagen-texto (pipeline image-text-to-text), con capacidad multimodal de entrada según la pipeline declarada.
-- Ajuste fino supervisado orientado presumiblemente a conversaciones del dominio inmobiliario (no confirmado en la documentación).
-- Compatibilidad con text-generation-inference y transformers.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: limitadas al inglés según el campo `language`.
-- Capacidades especiales (thinking mode, audio, etc.): no disponible en la información proporcionada.
+- Generacion de texto en ingles, segun la etiqueta de idioma declarada.
+- Ajuste fino supervisado orientado a instrucciones (SFT), segun el nombre del artefacto.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se documenta capacidad multilingue mas alla del ingles.
+- No se documentan capacidades especiales (modo thinking, vision, audio).
+- No se publican capacidades verificadas mediante evaluacion en la informacion disponible.
 
 ## Casos de uso
 
-- Asistente conversacional de atención inmobiliaria: el modelo puede gestionar diálogos multi-turno en inglés sobre consultas de propiedades, dado su ajuste presumiblemente orientado al sector "estate", aunque la longitud de contexto no está documentada.
-- Clasificación y extracción de información de anuncios inmobiliarios: al ser un modelo pequeño (0,87 B), puede desplegarse en entornos con recursos limitados para tareas de extracción de entidades (precio, superficie, ubicación) a partir de texto.
-- Descripción automática de imágenes de propiedades: gracias a su pipeline image-text-to-text, puede generar descripciones textuales de fotografías de inmuebles, siempre que se valide la calidad del ajuste multimodal.
-- Prototipado rápido de chatbots de dominio: su tamaño reducido permite iterar y desplegar prototipos en GPU de consumo con cuantización, útil para validar flujos conversacionales antes de escalar a modelos mayores.
-- Generación de respuestas en pipelines de TGI: compatible con text-generation-inference, puede integrarse en servicios de inferencia estándar para pruebas de concepto.
-- Fine-tuning posterior o destilación: al ser Apache 2.0 y estar en safetensors, sirve como punto de partida para ajustes adicionales en dominios relacionados con el inmobiliario o la conversación multimodal.
+- Prototipado de generacion de texto en ingles: al ser un modelo de ~0,9 B de parametros con pesos safetensors, puede cargarse con transformers para experimentos de generacion en entornos con recursos limitados.
+- Fine-tuning adicional sobre dominio propio: su tamano reducido permite reajustarlo en una unica GPU consumer, partiendo del checkpoint SFT publicado.
+- Generacion de texto en pipelines de bajo coste: su huella de memoria (~1,8 GB de repo) lo hace apto para despliegues donde un modelo mayor no es viable.
+- Investigacion sobre gobernanza y trazabilidad de artefactos: el modelo sirve como ejemplo de publicacion con recibos auditables dentro del ecosistema SZL Holdings.
+- Pruebas de integracion con transformers: util para validar pipelines de carga, tokenizacion e inferencia con checkpoints de la familia qwen3_5.
+- Evaluacion comparativa de modelos pequenos: puede emplearse como linea base de ~0,9 B en estudios internos de calidad, siempre que se midan los resultados por cuenta propia dado que el autor no publica benchmarks.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card declara explicitamente que no se afirma ningun numero de benchmark mas alla de lo medido en una auditoria fechada, y la auditoria del 2026-11-22 registro el estado UNKNOWN_NO_EVAL_RECEIPT.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16/BF16: aproximadamente 1,7-1,8 GB solo para pesos (873 M de parámetros × 2 bytes), más overhead de activaciones y caché KV.
-- VRAM estimada en cuantización de 8 bits: en torno a 0,9-1,0 GB para pesos.
-- VRAM estimada en cuantización de 4 bits: en torno a 0,5-0,6 GB para pesos.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para FP16; RTX 3060, RTX 4060, RTX 4090, A100 o H100 son sobradamente suficientes.
-- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU consumer moderna (GTX 1660 6 GB en adelante), e incluso en iGPU con suficiente memoria compartida.
-- Opciones de despliegue: transformers, text-generation-inference (TGI), llama.cpp/Ollama (previa conversión a GGUF), vLLM (si el soporte de la arquitectura Qwen3.5 multimodal está disponible).
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 1,7-2 GB solo para pesos, mas memoria para el contexto y activaciones (estimacion a partir de los 873 M de parametros; no confirmada por el autor).
+- VRAM estimada en cuantizacion de 8 bits: en torno a 0,9-1,2 GB para pesos (estimacion; el autor no documenta cuantizaciones).
+- GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM deberia ser suficiente en FP16 (estimacion).
+- Cabe en GPU consumer: si, previsiblemente en tarjetas como RTX 3060, RTX 4060 o superiores (estimacion).
+- Opciones de despliegue: transformers (libreria declarada). No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Benchmarks publicos | Disponibilidad |
 |---|---|---|---|---|---|
-| chaski-5050-estate-sft-v1 | 873 M | No disponible | Sí (image-text-to-text) | Apache 2.0 | Hugging Face |
-| Qwen/Qwen3.5-0.8B (base) | ~800 M | No disponible | Sí (image-text-to-text) | Apache 2.0 | Hugging Face |
-| SmolVLM-500M | ~500 M | No disponible | Sí (image-text-to-text) | Apache 2.0 | Hugging Face |
-| Qwen2.5-VL-3B | ~3 B | No disponible | Sí (image-text-to-text) | Apache 2.0 | Hugging Face |
+| chaski-5050-estate-sft-v1 | 873.438.784 | no disponible | apache-2.0 | no | Hugging Face |
+| Qwen2.5-0.5B | ~0,5 B | 32k (segun version) | apache-2.0 | si | Hugging Face |
+| Qwen2.5-1.5B | ~1,5 B | 32k (segun version) | apache-2.0 | si | Hugging Face |
+| Llama 3.2 1B | ~1,2 B | 128k | Llama 3.2 Community License | si | Hugging Face |
 
-La comparativa se limita a modelos de la misma categoría (multimodales pequeños). No hay datos de rendimiento publicados para chaski-5050-estate-sft-v1 que permitan una comparación cuantitativa con estas alternativas.
+Nota: los datos de los modelos comparables se ofrecen como referencia de categoria; no se dispone de comparaciones de rendimiento medidas frente a chaski-5050-estate-sft-v1 porque este no publica benchmarks.
 
 ## Limitaciones y advertencias
 
-- Documentación mínima: la model card no detalla dataset, hiperparámetros, contexto efectivo ni evaluación, lo que impide validar la calidad del ajuste.
-- Riesgo de alucinación: inherente a los modelos generativos de este tamaño; sin benchmarks ni evaluación humana publicada, el riesgo es difícil de cuantificar.
-- Especialización no confirmada: el nombre sugiere dominio inmobiliario, pero no se documenta el corpus de ajuste ni su cobertura.
-- Idioma: solo se declara inglés; el rendimiento en castellano u otros idiomas no está garantizado.
-- Contexto: la longitud de contexto no está especificada; no se debe asumir la del modelo base sin verificación.
-- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías ni soporte; conviene revisar también la licencia del modelo base Qwen3.5-0.8B.
-- Modelo sin tracción: cero descargas y cero likes en el momento de la consulta, sin evidencia de uso en producción ni validación por la comunidad.
-- Capacidades multimodales: aunque la pipeline es image-text-to-text, no se documenta si el ajuste SFT preserva o degrada las capacidades visuales del modelo base.
+- Ausencia de benchmarks: el autor no publica resultados de evaluacion y la auditoria interna registro UNKNOWN_NO_EVAL_RECEIPT; no hay evidencia de calidad verificable.
+- Idioma: solo se declara ingles; el rendimiento en castellano u otros idiomas es desconocido.
+- Contexto desconocido: no se especifica la longitud de contexto, lo que impide planificar casos de uso con contexto largo.
+- Riesgo de alucinacion: no cuantificado ni evaluado en la informacion disponible.
+- Sesgos: no documentados.
+- Licencia: Apache 2.0 permite uso comercial, pero la propia model card senala que la etiqueta se fijo por decision operativa del estate (lap W45Z) sin evidencia de licencia upstream por fichero; conviene verificar la procedencia de los datos de entrenamiento antes de un uso comercial.
+- Madurez: artefacto de un ecosistema corporativo con pocas descargas (302) y cero likes; no hay comunidad ni soporte documentado.
+- Produccion: sin benchmarks, sin contexto declarado y sin garantias de calidad, no es recomendable como dependencia en produccion sin una evaluacion propia exhaustiva.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/SZLHOLDINGS/chaski-5050-estate-sft-v1
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Unsloth: https://github.com/unslothai/unsloth
-- TRL de Hugging Face: https://github.com/huggingface/trl
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/chaski-5050-estate-sft-v1
+- Modelo base: https://huggingface.co/SZLHOLDINGS/chaski-5050
+- Organizacion en Hugging Face: https://huggingface.co/SZLHOLDINGS
+- Repositorio de la organizacion en GitHub: https://github.com/szl-holdings
+- Herramienta estate-cards weaver: https://github.com/szl-holdings/estate-cards

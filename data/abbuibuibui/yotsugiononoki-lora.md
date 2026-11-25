@@ -2,90 +2,85 @@
 
 ## Resumen
 
-YotsugiOnonoki-Lora es un adaptador LoRA de personaje para modelos de difusion SDXL, entrenado por el usuario abbuibuibui sobre el checkpoint waiIllustriousSDXL v17. Reproduce a Yotsugi Ononoki (斧乃木余接), personaje de la serie *Monogatari*, en su variante de diseno formal E1-E7. No es un modelo de lenguaje: es un modulo de pesos que se inyecta en un pipeline de generacion de imagenes mediante la libreria diffusers o ComfyUI.
+YotsugiOnonoki-Lora es un LoRA de personaje para modelos de difusion SDXL que reproduce a Yotsugi Ononoki (斧乃木余接), personaje de la serie *Monogatari*. Lo desarrolla el usuario abbuibuibui y se distribuye como un repositorio de tres linajes de pesos: el LoRA original entrenado sobre waiIllustriousSDXL v17 (ficheros en la raiz), una variante entrenada sobre AutismMix Pony (carpeta `autism_pony/`) y una variante para MOSS-Image (carpeta `moss/`). Cada linaje requiere su propio modelo base y sus propios prompts, y no son intercambiables.
 
-El adaptador resuelve un problema acotado: fijar la identidad visual de un personaje concreto (cabello blanco en dos coletas, ojos verdes, rostro de muneca y vestido naranja con sombrero caracteristico) sin arrastrar el estilo del dataset de entrenamiento. Para ello se entreno con 53 pares imagen-texto y un rango LoRA de 64 con alpha 32, y el autor publica siete epocas con una evaluacion comparativa que recomienda la epoca E6 a fuerza 0.8.
+El modelo resuelve el problema de generar de forma consistente un personaje concreto con una identidad visual muy definida: pelo turquesa en dos coletas cortas, cejas turquesa, ojos verdes y un sombrero naranja con forma de criatura. Para ello se entrena un adaptador de bajo rango (rank 64, alpha 32) sobre un dataset de 53 pares imagen-texto con un unico token de vestuario, lo que permite invocar al personaje mediante palabras disparadoras (`yotsugi_ononoki`, `yotsugi_ononoki_orange_dress`) en lugar de describirlo por completo en cada prompt.
 
-Su relevancia es practica para quien genere ilustracion anime con la familia Illustrious/SDXL: ofrece un adaptador pequeno (456 MB por fichero), documentado con tokens de activacion y con evaluacion horizontal publica, lo que reduce el ciclo de prueba y error habitual en LoRAs de personaje. El repo completo ocupa 3.2 GB porque incluye todas las epocas y las imagenes de evaluacion.
+Es relevante ahora porque el ecosistema Illustrious/SDXL sigue siendo la base mas utilizada para generacion de anime en flujos de trabajo con ComfyUI, y este repositorio incluye una evaluacion comparativa publica de epochs (E1-E7) y de intensidades del LoRA (0,4 a 1,0), algo poco habitual en LoRAs de personaje. El autor recomienda el checkpoint E6 a fuerza 0,8 como configuracion por defecto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA sobre difusion latente SDXL (checkpoint base waiIllustriousSDXL v17) |
-| Parametros totales | no disponible (rango LoRA 64, alpha 32; fichero de 456.490.692 bytes) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no aplica (modelo de imagen; resolucion de entrenamiento con buckets hasta 1536) |
-| Tipos de cuantizacion | no disponible (pesos LoRA en safetensors, precisión de entrenamiento bf16) |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre SDXL; modelo base waiIllustriousSDXL v17 |
+| Parametros totales | no disponible (cada fichero de pesos ocupa 456.490.692 bytes; rango 64, alpha 32) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de difusion texto-imagen) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; el LoRA se aplica sobre el modelo base en la precision de este) |
 | Idiomas soportados | en, zh (prompts en ingles y chino) |
 | Licencia | creativeml-openrail-m |
-| Formato de pesos | safetensors (compatible con diffusers y ComfyUI) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El adaptador es un LoRA de rango 64 y alpha 32 aplicado sobre los bloques de atencion de un UNet SDXL. El checkpoint base es waiIllustriousSDXL v17, un modelo de la familia Illustrious orientado a ilustracion anime, por lo que el LoRA hereda su tokenizador, sus dos text encoders (CLIP-L y CLIP-G) y su VAE. El entrenamiento uso AdamW en bf16, buckets con tope de 1536 y 7 epocas sobre 53 pares imagen-texto (solo el conjunto Orange_Dress) con 3 repeticiones por imagen. El hardware declarado es una NVIDIA DGX Spark con ComfyUI.
+El adaptador es un LoRA de rango 64 y alpha 32 entrenado con AdamW en bf16 sobre waiIllustriousSDXL v17, un checkpoint SDXL orientado a anime. El entrenamiento uso buckets con tope de 1536 y se prolongo durante 7 epochs, generando los checkpoints E1 a E7 (el fichero sin numerar `yotsugi_ononoki.safetensors` corresponde a E7; no existe un `000007`). El dataset consta de 53 pares imagen-texto centrados exclusivamente en el vestuario naranja, con 3 repeticiones, y las captions se generaron con `keep_tokens = 2`. El autor advierte que el color de pelo y de ojos a menudo se omite en las captions, por lo que conviene anadirlo explicitamente en el prompt.
 
-Las captions se generaron con `keep_tokens = 2`, lo que explica que el color de pelo y de ojos a menudo se omita en el texto de entrenamiento: el autor advierte que conviene anadirlos en el prompt de inferencia. Se definen dos tokens: `yotsugi_ononoki` para la identidad y `yotsugi_ononoki_orange_dress` para el vestido naranja y el sombrero caracteristico. No se documenta uso de RLHF, DPO ni tecnicas de decodificacion especulativa, algo que no aplica a un modelo de difusion.
+La innovacion practica del repositorio no esta en la arquitectura sino en la documentacion de la evaluacion: una primera ronda cribo E1-E7 a fuerza 0,8 y una tercera ronda hizo una matriz de E5, E6 y E7 por 10 escenas y 4 intensidades (0,4, 0,6, 0,8 y 1,0). El resultado recomienda E6 a 0,8. Ademas, el repositorio alberga dos linajes adicionales entrenados sobre otras bases (AutismMix Pony y MOSS-Image), con sus propios checkpoints y hashes SHA-256 publicados para verificacion de integridad.
 
 ## Capacidades
 
-- Generacion de imagenes anime del personaje Yotsugi Ononoki en encuadres de retrato, tres cuartos, perfil, cuerpo completo y sentada.
-- Control de identidad mediante el token `yotsugi_ononoki`: coletas gemelas blancas, ojos verdes y rostro inexpresivo de muneca.
-- Control de vestuario mediante `yotsugi_ononoki_orange_dress`: vestido naranja con volantes por capas, peto con estrella azul, calcetines rayados, botas amarillas y sombrero naranja con ojos saltones.
-- Composicion con fondo simple o escena nocturna compleja, segun la evaluacion publicada.
-- Funciona sin token de vestuario, generando la identidad sin el atuendo principal (imagen `05_no_outfit`).
-- Compatible con prompts en ingles y chino.
-- No soporta tool calling, agentes, razonamiento multi-paso ni modalidades de audio o video: es exclusivamente un adaptador de imagen.
+- Generacion de imagenes de personaje consistente: reproduce la identidad visual de Yotsugi Ononoki (pelo turquesa en coletas cortas, cejas turquesa, ojos verdes, sombrero naranja con ojos saltones).
+- Control de vestuario mediante token dedicado (`yotsugi_ononoki_orange_dress`): vestido naranja con volantes, peto con estrella azul, calcetines de rayas y botas amarillas.
+- Retratos y cuerpo completo: la evaluacion publica cubre cara frontal, tres cuartos, perfil, cuerpo completo, pose sentada, fondo simple, escena nocturna compleja y generacion sin token de vestuario.
+- Ajuste fino de identidad frente a flexibilidad compositiva mediante la fuerza del LoRA (0,4-1,0).
+- Compatibilidad con prompts en ingles y chino.
+- Integracion con ComfyUI y con la libreria diffusers.
+- Multiples linajes de base (Illustrious, Pony, MOSS-Image) para adaptarse a distintos pipelines.
 
 ## Casos de uso
 
-- Ilustracion de fan art de *Monogatari*: invocando `yotsugi_ononoki` a fuerza 0.8 con el checkpoint waiIllustriousSDXL v17 se obtiene el personaje con su silueta clasica sin necesidad de describir cada rasgo en el prompt.
-- Creacion de hojas de personaje para proyectos derivados: combinando los encuadres de retrato, tres cuartos y perfil documentados en la evaluacion se puede construir una referencia visual coherente del personaje.
-- Generacion de escenas narrativas: el adaptador mantiene la identidad en composiciones nocturnas y fondos complejos, util para ilustrar escenas de ficcion o portadas de doujinshi.
-- Prototipado rapido de variantes de vestuario: al separar identidad y atuendo en dos tokens, se puede mantener el personaje y sustituir la ropa en el prompt para explorar disenos alternativos.
-- Integracion en flujos ComfyUI: el safetensors se carga como nodo LoRA estandar, lo que permite encadenarlo con otros LoRAs de estilo o de composicion en un grafo de generacion.
-- Evaluacion comparativa de epocas: el repo incluye siete ficheros y material de evaluacion, util para estudiar como varia la fidelidad del personaje segun la epoca y la fuerza del adaptador.
-- Docencia sobre entrenamiento de LoRAs: el model card documenta hiperparametros, tokens y metodologia de evaluacion, lo que sirve como caso practico de ajuste fino de SDXL con datasets pequenos.
+- Ilustracion de fan art de *Monogatari*: invocar el personaje con los tokens disparadores en lugar de describirlo, reduciendo la longitud del prompt y la varianza entre generaciones.
+- Creacion de fichas de personaje consistentes: usar E6 a 0,8 con las mismas semillas y variar solo la pose o el fondo para producir un conjunto coherente de imagenes de referencia.
+- Prototipado rapido en ComfyUI: el flujo documentado (Euler a, 28 pasos, CFG 4,5, CLIP skip 2, 832x1216) sirve como plantilla reproducible sin hires fix ni ADetailer.
+- Generacion de escenas narrativas: la evaluacion incluye escenas nocturnas complejas y fondos simples, util para paneles de comic o storyboards con el personaje integrado en entornos.
+- Experimentacion con linajes alternativos: quien ya trabaje con AutismMix Pony o MOSS-Image puede usar las carpetas correspondientes sin cambiar de ecosistema.
+- Verificacion de integridad en produccion: los hashes SHA-256 publicados (E6 de WAI y E6 de AutismMix) permiten validar que los pesos desplegados son los evaluados por el autor.
+- Comparacion de intensidades de LoRA: la matriz E5/E6/E7 x 0,4-1,0 documentada sirve para calibrar el equilibrio entre fidelidad al personaje y libertad compositiva en otros LoRAs.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks cuantitativos en la informacion disponible. El autor aporta una evaluacion cualitativa en dos rondas:
+No se han publicado resultados de benchmarks cuantitativos (FID, CLIP score, etc.) en la informacion disponible. El autor aporta una evaluacion cualitativa comparativa:
 
-| Ronda | Metodologia | Resultado |
+| Candidato | Observacion | Decision |
 |---|---|---|
-| Round 1 | E1-E7 a fuerza 0.8 | Seleccion de candidatas E5, E6 y E7 |
-| Round 3 | E5/E6/E7 x 10 escenas x 4 fuerzas (0.4, 0.6, 0.8, 1.0) | E6 recomendada a 0.8; E5 como alternativa; E7 como alternativa final |
-
-Ajustes de inferencia declarados para la evaluacion: ComfyUI, sampler Euler a, 28 pasos, CFG 4.5, CLIP skip 2 y resolucion 832x1216, sin hires fix ni ADetailer.
+| E5 | Coletas palidas y ojos verdes usables; el sombrero naranja aparece a menudo | Alternativa |
+| E6 | Retrato: coletas teal/blanco palido, ojos verdes vidriosos, cara de muneca inexpresiva, ala del sombrero naranja. Cuerpo completo: vestido naranja/rojo con volantes en capas, peto con estrella azul, calcetines de rayas, botas amarillas, sombrero naranja con ojos saltones | Recomendado a 0,8 |
+| E7 | Cercano a E6 | Alternativa final |
 
 ## Requisitos de hardware
 
-- VRAM: el LoRA en si ocupa unos 456 MB por fichero, pero se suma al checkpoint SDXL base; la inferencia completa de SDXL en bf16 requiere del orden de 10-12 GB de VRAM, y menos con cuantizacion del checkpoint base (dato no especificado en la informacion disponible).
-- GPU recomendadas: el autor entreno en una NVIDIA DGX Spark; para inferencia son adecuadas GPUs consumer con 12 GB o mas, como RTX 3060 12 GB, RTX 4070 Ti o RTX 4090, asi como A100 o H100 en entornos de servidor.
-- Cabe en GPU consumer: si, siempre que el checkpoint base SDXL quepa en VRAM; el adaptador anade una sobrecarga marginal.
-- Despliegue: diffusers (libreria declarada), ComfyUI (usado en la evaluacion) y cualquier frontend que cargue LoRAs en safetensors para SDXL.
+- VRAM estimada: no disponible de forma explicita; al ser un LoRA sobre SDXL, los requisitos son los del modelo base waiIllustriousSDXL v17 (tipicamente 8-12 GB en fp16 con optimizaciones, aunque el dato no se confirma en la informacion).
+- GPU recomendadas: no disponible; el autor menciona entrenamiento en NVIDIA DGX Spark y renderizado en ComfyUI.
+- Cabe en GPU de consumo: no confirmado en la informacion, pero al tratarse de un adaptador SDXL es plausible en GPUs de consumo con la VRAM suficiente para el base.
+- Opciones de despliegue: ComfyUI (flujo documentado) y diffusers (libreria declarada).
 - Latencia y throughput: no disponibles.
+- Tamano del repositorio: 7,9 GB (incluye los tres linajes y las imagenes de evaluacion); cada fichero de pesos individual pesa 456.490.692 bytes.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de otros LoRAs de personaje comparables en la informacion proporcionada. La comparacion se limita a las epocas del propio adaptador:
-
-| Version | Fichero | Comportamiento observado | Recomendacion |
-|---|---|---|---|
-| E5 | `yotsugi_ononoki-000005.safetensors` | Coletas palidas y ojos verdes usables; el sombrero naranja aparece a menudo | Alternativa |
-| E6 | `yotsugi_ononoki-000006.safetensors` | Retrato y cuerpo completo fieles: vestido naranja por capas, peto con estrella, calcetines rayados, botas amarillas y sombrero con ojos saltones | Predeterminada a 0.8 |
-| E7 | `yotsugi_ononoki.safetensors` | Muy proxima a E6 | Alternativa final |
+No disponible. La informacion proporcionada no incluye otros LoRAs de personaje comparables ni datos de rendimiento frente a alternativas.
 
 ## Limitaciones y advertencias
 
 - Es un derivado no oficial: los derechos del personaje pertenecen a sus titulares y el autor lo declara como fan-made.
-- Licencia CreativeML OpenRAIL-M: permite uso comercial con restricciones de uso (prohibicion de usos daninos descritos en la licencia) y obliga a propagar las mismas restricciones en derivados.
-- Dependencia estricta del checkpoint base waiIllustriousSDXL v17: usarlo sobre otro SDXL puede degradar la fidelidad del personaje.
-- Dataset pequeno (53 pares, un solo conjunto de vestuario): la generalizacion a poses, angulos o atuendos no vistos puede ser limitada.
-- Las captions omiten con frecuencia color de pelo y ojos, por lo que hay que anadirlos explicitamente en el prompt para evitar desviaciones.
-- Riesgo de sobreajuste al estilo del dataset y de contaminacion de estilo al combinarlo con otros LoRAs.
-- No hay datos publicados sobre sesgos demograficos ni sobre tasas de alucinacion visual (artefactos, anatomia incorrecta); la evaluacion es cualitativa y realizada por el propio autor.
-- Sin descargas ni likes en el momento de la consulta: no existe validacion independiente por parte de la comunidad.
+- Licencia creativeml-openrail-m: impone restricciones de uso comercial que deben revisarse antes de desplegar en produccion.
+- No mezclar linajes: los pesos de la raiz (WAI/Illustrious), `autism_pony/` y `moss/` requieren modelos base y prompts distintos; mezclarlos degrada el resultado.
+- Las captions omiten con frecuencia el color de pelo y ojos, por lo que hay que anadirlos manualmente en el prompt para evitar derivas de identidad.
+- Dataset pequeno (53 pares, un solo vestuario): la variedad de ropa fuera del token `yotsugi_ononoki_orange_dress` puede ser limitada.
+- Riesgo de sobreajuste al vestuario principal y de aparicion espuria del sombrero naranja (documentado en E5).
+- Solo se documentan prompts en ingles y chino; el rendimiento en otros idiomas no esta verificado.
+- No hay benchmarks cuantitativos publicados; la seleccion de E6 se basa en evaluacion cualitativa del autor.
+- El fichero E7 no lleva numeracion (`yotsugi_ononoki.safetensors`), lo que puede provocar confusion al automatizar descargas.
 
 ## Enlaces
 
@@ -93,5 +88,3 @@ No se dispone de datos de otros LoRAs de personaje comparables en la informacion
 - Dataset en Hugging Face: https://huggingface.co/datasets/abbuibuibui/YotsugiOnonoki-Dataset
 - Modelo en ModelScope: https://www.modelscope.cn/models/abbuibuibui/YotsugiOnonoki-Lora
 - Dataset en ModelScope: https://www.modelscope.cn/datasets/abbuibuibui/YotsugiOnonoki-Dataset
-- Notas de evaluacion (chino): `evaluation/横向测评记录.md` dentro del repositorio
-- Checkpoint base: waiIllustriousSDXL v17 (no se proporciona URL en la informacion disponible)

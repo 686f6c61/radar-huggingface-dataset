@@ -2,101 +2,106 @@
 
 ## Resumen
 
-QDA-Qwen3.5-9B-W4A16 es un checkpoint cuantizado del modelo base Qwen/Qwen3.5-9B, publicado por el laboratorio qda-lab. La cuantizacion es de tipo W4A16 (pesos en 4 bits, activaciones en 16 bits) y se ha generado mediante un proceso automatizado de busqueda denominado QDA ("Closed-Loop Quantization Design with LLM Agents"), descrito por sus autores como un envio a la conferencia MLSys 2027. El resultado es un artefacto en formato compressed-tensors que se carga directamente en vLLM sin conversion adicional.
+QDA-Qwen3.5-9B-W4A16 es una cuantización de 4 bits de los pesos (W4A16) del modelo multimodal Qwen/Qwen3.5-9B, desarrollada por qda-lab mediante su herramienta QDA (Closed-Loop LLM Quantization Design with Agents). El objetivo es reducir el coste de despliegue del modelo original sin degradar de forma apreciable su calidad: el checkpoint pasa de 19,3 GB en BF16 a 9,1 GB, un 2,1× menos, conservando según el autor el 97,3 % de la precisión del modelo original.
 
-El modelo resuelve un problema practico de despliegue: reducir el peso en memoria de un transformer denso de aproximadamente 9.650 millones de parametros manteniendo un nivel de precision competitivo en tareas de razonamiento matematico, conocimiento cientifico, generacion de codigo e instrucciones. Frente al checkpoint original en bf16/fp16, la version W4A16 rebaja el repositorio a unos 9,1 GB, lo que facilita su servicio en GPUs de una sola tarjeta con memoria moderada.
+El modelo base es un transformer de 9.653.104.368 parámetros (unos 9,65 mil millones) con pipeline image-text-to-text, es decir, acepta entradas de imagen y texto y genera texto. La cuantización mantiene las activaciones en 16 bits y solo comprime los pesos a enteros de 4 bits en grupos de 128, un esquema compatible con motores de inferencia de alto rendimiento como vLLM y SGLang a través del formato compressed-tensors.
 
-Es relevante ahora porque la cuantizacion de pesos a 4 bits se ha consolidado como la via practica para servir modelos de la clase 8-10B en produccion sin renunciar a la ventana de contexto ni a la calidad del modelo original. El checkpoint incluye resultados de evaluacion propios sobre cinco benchmarks (AIME 2025 + HMMT Feb 2026, GPQA-Diamond, LiveCodeBench v6 e IFBench), con una media agregada de 72,1 puntos, lo que permite comparar directamente con otras alternativas cuantizadas del mismo modelo base.
+Su relevancia práctica es doble: por un lado, permite servir un modelo multimodal de ~9,6B en una sola GPU con menos VRAM; por otro, el autor publica la receta completa de cuantización y los datos de calibración, lo que hace el proceso reproducible. La licencia Apache-2.0, idéntica a la del modelo base, facilita el uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (familia Qwen3.5, tag `qwen3_5`); detalles internos no disponibles |
-| Parametros totales | 9.653.104.368 |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | W4A16 (pesos 4 bits, activaciones 16 bits) en formato compressed-tensors |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible |
-| Formato de pesos | safetensors (compressed-tensors), compatible con vLLM |
+| Arquitectura | Transformer multimodal (image-text-to-text); detalles internos del modelo base no disponibles |
+| Parametros totales | 9.653.104.368 (~9,65B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | W4A16: pesos INT4 en grupos de 128, activaciones de 16 bits; formato compressed-tensors |
+| Idiomas soportados | no disponible |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (compatible con transformers, vLLM y SGLang) |
 
 ## Arquitectura y entrenamiento
 
-El checkpoint deriva del modelo Qwen/Qwen3.5-9B, un transformer denso con 9.653.104.368 parametros. La model card no detalla la configuracion interna del modelo base (numero de capas, dimension oculta, mecanismo de atencion ni ventana de contexto), por lo que esos datos deben consultarse en la ficha del modelo original. Tampoco se documenta el proceso de entrenamiento del modelo base: numero de tokens, composicion del corpus, ni si hubo fases de RLHF, DPO u otras tecnicas de alineamiento.
+El checkpoint es una cuantización del modelo Qwen/Qwen3.5-9B, del que no se detallan en la información disponible la arquitectura interna, la composición del dataset de preentrenamiento ni si hubo fases de RLHF o DPO. Lo que sí se documenta es el proceso de cuantización: los pesos se convierten a enteros de 4 bits en grupos de 128 mediante GPTQ aplicado sobre una copia del modelo rotada con una transformada de Hadamard. La rotación se pliega dentro de los propios pesos, de modo que no hay transformación en tiempo de ejecución, y los escalares de grupo se afinan después mediante destilación. La receta concreta fue seleccionada por la búsqueda automatizada de QDA.
 
-La innovacion tecnica de este artefacto reside en el pipeline de cuantizacion. QDA se presenta como un diseno de cuantizacion en bucle cerrado asistido por agentes LLM, que busca configuraciones de cuantizacion (esquema de bits, granularidad de grupo, tratamiento de capas sensibles) evaluando el impacto en tareas de razonamiento. La model card identifica la busqueda concreta (`r-f3f9584c`, hand-in `h6`) y afirma que estos son los ficheros exactos evaluados en el articulo. El resultado se serializa en compressed-tensors, el formato nativo de vLLM para checkpoints cuantizados, lo que elimina pasos de conversion en el despliegue.
+El proceso es reproducible: el autor publica la receta `qwen3.5-9b-w4a16.yaml`, los datos de calibración y destilación en el dataset `qda-lab/qda-recipe-inputs`, y las instrucciones para reconstruir el checkpoint con QDA 0.1.0 sobre una H100 de 80 GB. El autor advierte de que los pesos reconstruidos no son idénticos bit a bit a este checkpoint. El modelo base de referencia es la revisión `Qwen/Qwen3.5-9B@c202236235762e1c871ad0ccb60c8ee5ba337b9a`.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento general, heredadas del modelo base Qwen3.5-9B.
-- Razonamiento matematico de competicion: el checkpoint reporta 74,5 en la agregacion de AIME 2025 y HMMT Feb 2026.
-- Conocimiento cientifico de nivel avanzado: 80,0 en GPQA-Diamond.
-- Generacion de codigo: 68,3 en LiveCodeBench v6, lo que indica competencia en problemas de programacion verificables.
-- Seguimiento de instrucciones: 65,7 en IFBench, benchmark de instrucciones verificables y no vistas durante el entrenamiento.
-- Servicio en vLLM mediante `vllm serve`, con soporte nativo del formato compressed-tensors.
-- Tool calling, capacidades de agente, modo thinking, vision o audio: no disponibles en la informacion proporcionada.
-- Cobertura multilingue: no disponible.
+- Generación de texto y razonamiento en modo "thinking": la evaluación se realizó con el modo de razonamiento activado y el bloque de pensamiento cerrado con ``.
+- Procesamiento de imagen y texto (pipeline image-text-to-text), heredado del modelo base multimodal.
+- Razonamiento matemático de competición: evaluado en AIME 2025 y HMMT Feb 2026.
+- Razonamiento científico y de conocimiento general: evaluado en GPQA-Diamond y MMLU-Pro.
+- Generación de código: evaluado en LiveCodeBench.
+- Seguimiento de instrucciones: evaluado en IFBench.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Soporte de tool calling, function calling y agentes multi-paso: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Servicio de razonamiento matematico en produccion: con 74,5 en la agregacion de AIME 2025 y HMMT Feb 2026, el modelo es adecuado para tutoria automatica de matematicas de nivel preuniversitario, generacion de soluciones paso a paso y verificacion de ejercicios, siempre con supervision humana en contextos educativos reglados.
-- Asistencia cientifica y tecnica: los 80,0 en GPQA-Diamond lo sitúan como candidato para responder consultas de fisica, quimica y biologia de nivel graduado en herramientas internas de I+D, con trazabilidad de fuentes y validacion por expertos.
-- Generacion y revision de codigo: los 68,3 en LiveCodeBench v6 permiten integrarlo en pipelines de CI/CD para sugerencias de parche, generacion de tests y revision automatizada de pull requests, con ejecucion de tests como filtro obligatorio antes de aceptar cualquier salida.
-- Agentes de automatizacion con instrucciones complejas: los 65,7 en IFBench indican buena adherencia a instrucciones verificables, util para orquestadores que encadenan llamadas a herramientas y requieren formato estricto en las respuestas.
-- Despliegue en infraestructura modesta: al ocupar unos 9,1 GB en pesos W4A16, el checkpoint permite servir un modelo de 9,65B en GPUs de una sola tarjeta con memoria suficiente, reduciendo coste por instancia frente al modelo en bf16.
-- Evaluacion comparativa de tecnicas de cuantizacion: al publicarse junto al articulo QDA y con semillas y parametros de muestreo documentados, sirve como referencia reproducible para equipos que investigan metodos de cuantizacion post-entrenamiento.
-- Backend de vLLM en plataformas internas: la integracion nativa con `vllm serve` y compressed-tensors simplifica el despliegue en clusters con vLLM ya operativo, sin necesidad de convertir pesos.
+- Razonamiento matemático asistido: el modelo mantiene 84,9 en AIME 2025 frente a 85,3 del BF16, por lo que puede emplearse en tutores o verificadores de problemas de competición con una pérdida de calidad mínima y la mitad de memoria.
+- Análisis de documentos con imágenes: al ser image-text-to-text, permite extraer y razonar sobre contenido de capturas, gráficos o formularios, con el coste de VRAM de un modelo de 4 bits.
+- Generación de código en pipelines: con 64,3 en LiveCodeBench puede integrarse en asistentes de programación o revisión automática de parches, aunque es el benchmark donde la cuantización pierde más puntos respecto a BF16 (70,7).
+- Evaluación científica y QA de dominio: con 80,0 en GPQA-Diamond es adecuado para responder preguntas de nivel experto en física, química y biología en herramientas internas de investigación.
+- Despliegue en una sola GPU para prototipos y demos: los 9,1 GB del checkpoint permiten servir el modelo en GPUs de 24 GB o más, abaratando entornos de desarrollo y pruebas.
+- Servicio de alto rendimiento con vLLM o SGLang: el autor reporta 251 tok/s a batch 1 y 3.267 tok/s a batch 16 en una H100, lo que lo hace viable para APIs internas con carga moderada.
+- Reproducción y auditoría de cuantizaciones: la receta y los datos publicados permiten a un equipo reconstruir el checkpoint y adaptar el proceso a sus propios requisitos.
 
 ## Benchmarks y rendimiento
 
-Resultados reportados por el autor del checkpoint, evaluados con vLLM 0.27.1 sobre GH200, batching estatico, muestreo de model card (`temperature=1.0`, `top_p=0.95`, `top_k=20`, `presence_penalty=1.5`) y semillas 17+j:
+Resultados en modo thinking, pass@1 promediado sobre varias semillas (1 a 32 según el benchmark), con la misma configuración de muestreo para todos los modelos:
 
-| Benchmark | Puntuacion (%) |
-|---|---|
-| Math (AIME 2025 + HMMT Feb 2026) | 74,5 |
-| GPQA-Diamond | 80,0 |
-| LiveCodeBench v6 | 68,3 |
-| IFBench | 65,7 |
-| Media | 72,1 |
+| Benchmark | BF16 (19,3 GB) | QDA W4A16 (9,1 GB) | cyankiwi AWQ-4bit (9,1 GB) | RedHat W4A16 (11,4 GB) | ParoQuant (8,6 GB) |
+|---|---|---|---|---|---|
+| AIME 2025 | 85,3 | 84,9 | 80,1 | 61,8 | 83,5 |
+| HMMT Feb 2026 | 67,5 | 65,8 | 63,8 | 44,7 | 66,9 |
+| GPQA-Diamond | 81,8 | 80,0 | 78,7 | 71,2 | 80,1 |
+| IFBench | 67,0 | 66,2 | 62,1 | 63,2 | 64,3 |
+| MMLU-Pro | 81,2 | 80,3 | 79,9 | 78,8 | 80,2 |
+| LiveCodeBench | 70,7 | 64,3 | 63,2 | 49,9 | 67,7 |
+| Media | 75,6 | 73,6 | 71,3 | 61,6 | 73,8 |
 
-No se han publicado en la informacion disponible resultados del modelo base sin cuantizar ni de otras alternativas cuantizadas del mismo modelo, por lo que no es posible calcular la degradacion atribuible a la cuantizacion W4A16.
+Configuración de evaluación: hasta 81.920 tokens nuevos por ítem en AIME, HMMT, GPQA, IFBench y LiveCodeBench, y 32.768 en MMLU-Pro; temperatura 1,0, top-p 0,95, top-k 20, min-p 0, presence penalty 1,5, repetition penalty 1,0; decodificación especulativa desactivada. La columna ParoQuant se ejecutó en su propio stack (vLLM 0.19.1 con paroquant 0.1.16).
+
+Rendimiento en una H100 de 80 GB con 512 tokens generados por petición: 251 tok/s a batch 1 y 3.267 tok/s a batch 16. ParoQuant reporta 134 y 1.890 tok/s respectivamente.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos W4A16 ocupan aproximadamente 9,1 GB; con cache KV, overhead de vLLM y margen de activaciones, se recomienda un minimo de 16 GB de VRAM para contextos cortos y 24 GB o mas para contextos largos o batching concurrente.
-- GPU recomendadas: cualquier GPU con al menos 16-24 GB de memoria. Para produccion con concurrencia, A100 40/80 GB, H100 o GH200 (la evaluacion del autor se hizo en GH200). Para desarrollo y pruebas, RTX 4090 (24 GB) o L40S.
-- Cabe en GPU de consumo: si, en tarjetas con 24 GB o mas (RTX 3090, RTX 4090). En tarjetas de 16 GB el margen es muy ajustado y depende de la longitud de contexto y del tamano del lote.
-- Opciones de despliegue: vLLM es la via soportada de forma nativa (`vllm serve qda-lab/QDA-Qwen3.5-9B-W4A16`). No se documenta soporte para llama.cpp, Ollama ni TGI en la informacion disponible.
-- Latencia y throughput: no disponibles. El autor solo especifica batching estatico en GH200 para la evaluacion, sin cifras de tokens por segundo.
+- VRAM estimada: el checkpoint ocupa 9,1 GB en disco; en inferencia hay que sumar caché KV y overhead del runtime, por lo que se recomienda un mínimo de 16-24 GB de VRAM según longitud de contexto y batch.
+- GPUs validadas por el autor: NVIDIA H100, A100, RTX Pro 6000 y B200.
+- GPU de consumo: no se confirma soporte en tarjetas consumer en la información disponible; el tamaño del checkpoint permitiría en principio cargarlo en GPUs de 24 GB, pero no hay validación publicada.
+- Despliegue con vLLM: `VLLM_DISABLED_KERNELS=MacheteLinearKernel vllm serve qda-lab/QDA-Qwen3.5-9B-W4A16`. En H100 y H200 sin CUDA 13 en el sistema, la compilación del kernel falla al inicio (`libnvrtc-builtins.so.13.0`); hay que añadir las librerías NVIDIA del entorno virtual a `LD_LIBRARY_PATH` (comando incluido en la model card).
+- Despliegue con SGLang: `python -m sglang.launch_server --model-path qda-lab/QDA-Qwen3.5-9B-W4A16`.
+- Throughput medido: 251 tok/s a batch 1 y 3.267 tok/s a batch 16 en H100 80 GB.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Cuantizacion | Contexto | Benchmarks publicados | Licencia |
-|---|---|---|---|---|---|
-| qda-lab/QDA-Qwen3.5-9B-W4A16 | 9,65B | W4A16 | No disponible | Media 72,1 en 4 benchmarks | No disponible |
-| qda-lab/QDA-Qwen3.5-9B-W4A8 | 9,65B (mismo base) | W4A8 | No disponible | No disponible en la informacion | No disponible |
-| RedHatAI/Qwen3.5-9B-quantized.w4a16 | 9,65B (mismo base) | W4A16 | No disponible | GSM8k-Platinum, MMLU-Pro, IFEval, Math 500, AIME 2025, GPQA Diamond (sin cifras en la informacion) | No disponible |
-| Qwen/Qwen3.5-9B (base sin cuantizar) | 9,65B | bf16/fp16 | No disponible | No disponible en la informacion | No disponible |
+| Modelo | Tamano | Cuantizacion | Media de benchmarks | Licencia |
+|---|---|---|---|---|
+| Qwen3.5-9B BF16 | 19,3 GB | ninguna | 75,6 | Apache-2.0 |
+| QDA-Qwen3.5-9B-W4A16 | 9,1 GB | W4A16 (GPTQ + Hadamard + destilación) | 73,6 | Apache-2.0 |
+| cyankiwi AWQ-4bit | 9,1 GB | AWQ 4 bits | 71,3 | no disponible |
+| RedHat W4A16 | 11,4 GB | W4A16 | 61,6 | no disponible |
+| ParoQuant | 8,6 GB | cuantizacion propia | 73,8 | no disponible |
 
-Las tres variantes cuantizadas parten del mismo modelo base, por lo que la comparacion real se reduce al esquema de cuantizacion (W4A16 frente a W4A8) y al conjunto de benchmarks reportado. Los benchmarks de qda-lab y RedHatAI no coinciden salvo en GPQA-Diamond y AIME 2025, y la informacion disponible no incluye las cifras de RedHatAI, de modo que no es posible una comparacion numerica directa.
+La comparativa se limita a variantes cuantizadas del mismo modelo base, que es lo que documenta el autor. No se dispone de datos frente a otros modelos de ~9B de otros fabricantes.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion W4A16 puede degradar tareas sensibles a la precision numerica (aritmetica de muchos pasos, calculo simbolico, extraccion de datos exactos). No se publica la comparacion con el modelo base, por lo que el nivel de degradacion es desconocido.
-- Los benchmarks del autor se obtuvieron con una configuracion de muestreo concreta (temperatura 1.0, top_p 0.95, top_k 20, presence_penalty 1.5) y batching estatico; otros ajustes pueden arrojar resultados distintos.
-- Riesgo de alucinacion inherente a los modelos de lenguaje, no cuantificado en la informacion disponible.
-- Sesgos conocidos: no documentados en la model card.
-- Idiomas soportados y calidad multilingue: no disponibles; no se debe asumir un rendimiento equivalente al modelo base en idiomas distintos del ingles sin evaluacion propia.
-- Longitud de contexto: no disponible; debe consultarse la ficha de Qwen/Qwen3.5-9B antes de disenar aplicaciones con documentos largos.
-- Licencia: no disponible. Antes de cualquier uso comercial es imprescindible verificar la licencia del modelo base Qwen/Qwen3.5-9B y confirmar que la cuantizacion no impone restricciones adicionales.
-- El checkpoint esta vinculado a un envio a MLSys 2027; los resultados pueden ser preliminares y no haber pasado revision por pares.
-- Solo se documenta soporte para vLLM; otros runtimes (llama.cpp, Ollama, TGI) no estan verificados.
-- El modelo tiene un numero de descargas muy bajo (10) y ningun "like" en el momento de la consulta, lo que limita la evidencia de uso en produccion por terceros.
+- La cuantización introduce una pérdida media de 2,0 puntos respecto a BF16 (75,6 frente a 73,6), concentrada sobre todo en LiveCodeBench (70,7 a 64,3, una caída de 6,4 puntos).
+- El modo de evaluación es siempre thinking con bloques de razonamiento largos (hasta 81.920 tokens nuevos), lo que implica latencia y coste elevados en producción si se usa ese modo por defecto.
+- No se documentan sesgos, riesgos de alucinación ni limitaciones idiomáticas específicas del modelo base en la información disponible.
+- El autor advierte de que la reconstrucción con la receta no produce pesos idénticos bit a bit a este checkpoint.
+- En H100/H200 sin CUDA 13 es necesario un ajuste manual de `LD_LIBRARY_PATH`; sin él, el kernel de vLLM no compila al arrancar.
+- La licencia Apache-2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base Qwen3.5-9B, de la que esta cuantización hereda.
+- El número de descargas (309) y de likes (0) es bajo, por lo que la validación por parte de la comunidad es todavía limitada.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/qda-lab/QDA-Qwen3.5-9B-W4A16
-- Variante W4A8 del mismo autor: https://huggingface.co/qda-lab/QDA-Qwen3.5-9B-W4A8
-- Alternativa cuantizada de Red Hat: https://huggingface.co/RedHatAI/Qwen3.5-9B-quantized.w4a16
+- Modelo en Hugging Face: https://huggingface.co/qda-lab/QDA-Qwen3.5-9B-W4A16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
+- Paper QDA: https://arxiv.org/abs/2611.23388
+- Repositorio QDA: https://github.com/humanfia/qda
+- Receta de cuantización: https://huggingface.co/datasets/qda-lab/qda-recipe-inputs/blob/main/QDA-Qwen3.5-9B-W4A16/qwen3.5-9b-w4a16.yaml
+- Datos de calibración y destilación: https://huggingface.co/datasets/qda-lab/qda-recipe-inputs/tree/main/QDA-Qwen3.5-9B-W4A16

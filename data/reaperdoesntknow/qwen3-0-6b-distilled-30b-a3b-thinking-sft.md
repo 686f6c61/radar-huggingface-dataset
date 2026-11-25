@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen3-0.6B-Distilled-30B-A3B-Thinking-SFT es un modelo de lenguaje causal de 0,6B parametros desarrollado por reaperdoesntknow (Convergent Intelligence LLC, Research Division) a partir de Qwen/Qwen3-0.6B. El modelo se construye en dos etapas: primero una destilacion de conocimiento desde Qwen3-30B-A3B-Thinking-2507 para establecer una base de razonamiento estructurado en dominios STEM, y despues un ajuste supervisado (SFT) sobre datos de instrucciones legales del dataset Lawyer-Instruct.
+Qwen3-0.6B-Distilled-30B-A3B-Thinking-SFT es un modelo de lenguaje causal de 0,6B parámetros (751.632.384 parámetros reales según los pesos en safetensors) desarrollado por reaperdoesntknow para Convergent Intelligence LLC (Research Division). Se construye sobre Qwen/Qwen3-0.6B mediante un pipeline de dos etapas: primero una destilación de conocimiento desde el profesor Qwen3-30B-A3B-Thinking-2507 (MoE de 30B totales y ~3B activos) para establecer una base de razonamiento estructurado en dominios STEM, y después un ajuste supervisado (SFT) sobre datos de instrucciones legales de Alignment-Lab-AI/Lawyer-Instruct.
 
-La tesis del autor es que el orden de entrenamiento importa: ensenar primero *como razonar* mediante destilacion desde un profesor con trazas de deliberacion extendida, y despues ensenar *sobre que razonar* con SFT legal. El resultado es un modelo de 751.632.384 parametros reales (segun safetensors) que, segun el autor, se comprime por debajo de 500 MB al cuantizarse y puede ejecutarse en un telefono.
+La tesis del autor es que el orden de entrenamiento importa: enseñar primero *cómo razonar* mediante destilación desde un profesor con trazas de deliberación extensas, y después *sobre qué razonar* con SFT legal. La destilación se realiza a temperatura T=2.0 con una función de pérdida mixta que combina entropía cruzada ponderada por prueba (55%) y divergencia KL de destilación (45%), asignando mayor peso a los tokens de derivación que a los de formato de respuesta.
 
-Es relevante por su enfoque de destilacion con perdida ponderada por prueba (Proof-Weighted Cross-Entropy al 55%) combinada con divergencia KL (45%) a temperatura T=2.0, y por su intento de transferir estructura de razonamiento desde un profesor MoE de 30B (3B activos) a un estudiante denso de 0,6B, una compresion de 50x. La ventana de contexto de entrenamiento es de solo 1024 tokens y el modelo esta etiquetado unicamente en ingles.
+El resultado es un modelo extremadamente compacto (ratio de compresión 50x respecto al profesor, menos de 500 MB cuantizado según el autor) orientado a despliegue en entornos de borde e incluso dispositivos móviles. La longitud de contexto indicada en la model card es de 1024 tokens en entrenamiento, muy inferior a la ventana nativa de la familia Qwen3, lo que limita su uso a interacciones cortas.
 
 ## Especificaciones tecnicas
 
@@ -14,39 +14,40 @@ Es relevante por su enfoque de destilacion con perdida ponderada por prueba (Pro
 |---|---|
 | Arquitectura | Qwen3 (causal LM, RoPE, GQA) |
 | Parametros totales | 751.632.384 (0,6B nominales) |
-| Parametros activos | no aplica (modelo denso; el profesor MoE tenia ~3B activos) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 1024 tokens (entrenamiento) |
-| Tipos de cuantizacion | no disponible (el autor menciona menos de 500 MB cuantizado, sin detallar formatos) |
-| Idiomas soportados | en (ingles) |
+| Tipos de cuantizacion | no disponible (el autor menciona <500 MB cuantizado, sin especificar formatos) |
+| Idiomas soportados | en (inglés) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3-0.6B, un transformer causal denso con RoPE y Grouped Query Attention (GQA). Sobre esa base se aplica una destilacion de conocimiento desde Qwen/Qwen3-30B-A3B-Thinking-2507, un modelo MoE de 30B totales con aproximadamente 3B parametros activos por token en su variante Thinking. El autor argumenta que la variante Thinking produce distribuciones softmax de mayor entropia que la Instruct, lo que a temperatura T=2.0 expone al estudiante a un paisaje mas rico de estrategias de derivacion alternativas.
+El modelo hereda la arquitectura de Qwen3-0.6B: transformer causal con RoPE (Rotary Position Embeddings) y GQA (Grouped Query Attention). Sobre esa base se aplica un pipeline de dos etapas documentado por el autor. La etapa 1 es una destilación de conocimiento desde Qwen3-30B-A3B-Thinking-2507 usando 6.122 muestras de chain-of-thought STEM repartidas en 12 dominios (física con 2.254 muestras, álgebra lineal con 667, ecuaciones diferenciales con 636, electromagnetismo con 580, matemáticas con 576, ingeniería con 574, mecánica clásica con 343, mecánica teórica con 307, cálculo avanzado con 268, física moderna con 177, fisiología con 114 y biología molecular con 71), todas del usuario 0xZee de Hugging Face. El split es 95/5 con semilla 42, resultando en 5.815 muestras de entrenamiento.
 
-La etapa 1 usa 6.122 muestras de chain-of-thought STEM en 12 dominios (Physics 2.254, Linear Algebra 667, Differential Equations 636, Electromagnetism 580, Mathematics 576, Engineering 574, Classical Mechanics 343, Theoretical Mechanics 307, Advanced Calculus 268, Modern Physics 177, Physiology 114, Molecular Biology 71), todas del autor 0xZee, con split 95/5 y semilla 42. La funcion de perdida combina Proof-Weighted Cross-Entropy (55%, con peso 2,5x sobre tokens de derivacion decayendo a 1,5x) y divergencia KL de destilacion (45%, T=2.0 escalada por T²). Hiperparametros: 1 epoca, 5.815 muestras de entrenamiento, batch efectivo 8, learning rate 1,5e-5 a 1e-6 con cosine, precision bf16. La etapa 2 aplica SFT con TRL SFTTrainer sobre Alignment-Lab-AI/Lawyer-Instruct: 1 epoca, batch efectivo 8, learning rate 5e-6 (mas bajo para preservar el backbone), gradient checkpointing activado, bf16. El autor justifica el SFT legal sobre STEM por isomorfismo estructural entre razonamiento juridico y matematico (identificacion de premisas, encadenamiento logico, manejo de excepciones).
+La pérdida combina Proof-Weighted Cross-Entropy al 55% (peso 2,5x sobre tokens de derivación, decayendo a 1,5x) y KL Divergence de destilación al 45% con T=2.0 escalada por T². Los hiperparámetros de la etapa 1 son: 1 época, batch efectivo 8, learning rate 1,5e-5 con decaimiento coseno hasta 1e-6, precisión bf16. La etapa 2 aplica SFT con TRL SFTTrainer sobre Lawyer-Instruct, con 1 época, batch efectivo 8, learning rate 5e-6 (deliberadamente menor para preservar el backbone) y gradient checkpointing activado. El formato de entrenamiento de la etapa 1 usa una plantilla con "Problem:", "Proof:" y "Final Answer:"; el de la etapa 2 usa "### Instruction:" y "### Response:". No se documenta uso de RLHF ni DPO.
 
 ## Capacidades
 
-- Generacion de texto causal con formato de instruccion (`### Instruction:` / `### Response:`).
-- Razonamiento STEM con derivaciones paso a paso en fisica, matematicas, algebra lineal, ecuaciones diferenciales, electromagnetismo, mecanica clasica y teorica, calculo avanzado, ingenieria y biologia (fisiologia y biologia molecular).
-- Razonamiento juridico basico adquirido por SFT sobre Lawyer-Instruct.
-- Generacion de chain-of-thought en formato de derivacion rigurosa (formato de la etapa 1 aun funcional segun el autor).
-- Conversacion multi-turno basica (tag `conversational`).
-- Orientacion a despliegue en edge (tag `edge`), con enfasis en bajo footprint.
-- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo thinking explicito mas alla de las trazas CoT entrenadas.
-- Capacidades multilingues: solo ingles declarado.
+- Generación de texto causal en inglés con formato de instrucción y de derivación.
+- Razonamiento matemático y STEM con trazas de chain-of-thought: cálculo avanzado, álgebra lineal, ecuaciones diferenciales, física clásica y moderna, electromagnetismo, mecánica teórica, ingeniería.
+- Razonamiento legal básico adquirido por SFT sobre Lawyer-Instruct (diferencias entre figuras jurídicas, instrucciones legales genéricas).
+- Razonamiento estructurado por transferencia estructural: el autor argumenta que la lógica de derivación matemática se reutiliza para análisis legal (identificación de premisas, encadenamiento lógico, manejo de excepciones).
+- Soporte de dos plantillas de prompt diferenciadas (STEM y legal).
+- Capacidades multilingües: limitadas al inglés según la model card.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y multi-step reasoning orquestado: no disponible.
+- Modo thinking nativo, visión o audio: no disponible.
 
 ## Casos de uso
 
-- Tutoria STEM de refuerzo en dispositivos moviles: el modelo cabe, segun el autor, en menos de 500 MB cuantizado y puede ejecutarse en un telefono, lo que permite asistencia offline de derivaciones matematicas y fisicas basicas sin conexion.
-- Generacion de explicaciones paso a paso para plataformas educativas: su entrenamiento con Proof-Weighted Cross-Entropy prioriza tokens de derivacion, lo que lo hace adecuado para producir explicaciones intermedias en problemas de calculo, algebra y mecanica, no solo la respuesta final.
-- Primer filtro de consultas legales en aplicaciones de triaje: el SFT sobre Lawyer-Instruct le permite estructurar respuestas con premisas, excepciones y conclusion, util para clasificar o preformatear consultas antes de derivarlas a un sistema mayor o a un profesional.
-- Prototipado rapido y pruebas de concepto en entornos con GPU de consumo: con 0,6B parametros y pesos safetensors, se puede cargar en bf16 en una GPU modesta o en CPU, acelerando iteraciones de prompt engineering.
-- Generacion de datos sinteticos de razonamiento para destilacion posterior: puede producir trazas CoT en dominios STEM que sirvan como material de partida (con revision humana) para entrenar modelos mayores o filtrar datasets.
-- Educacion en ingenieria y ciencias aplicadas: cubre dominios como electromagnetismo, ecuaciones diferenciales y mecanica teorica, util para asistentes de estudio especializados por asignatura.
-- Despliegue en entornos con restricciones de privacidad: al ser pequeno y Apache 2.0, puede ejecutarse on-premise en hardware limitado sin enviar datos a la nube.
+- Tutoría de matemáticas y física en dispositivos de borde: el modelo cabe en menos de 500 MB cuantizado y puede ejecutarse en un teléfono, lo que permite ofrecer explicaciones paso a paso de problemas de cálculo, álgebra o mecánica sin conexión a la nube.
+- Asistente educativo embebido en aplicaciones móviles: con 0,6B parámetros y contexto de 1024 tokens, es adecuado para resolver dudas puntuales de estudiantes en STEM dentro de una app ligera, manteniendo la privacidad al no requerir backend.
+- Primer filtro de consultas legales en inglés: dado su SFT sobre Lawyer-Instruct, puede generar respuestas orientativas sobre conceptos jurídicos básicos (diferencias entre delitos, definiciones) antes de escalar a un modelo mayor o a un profesional.
+- Prototipado rápido de pipelines de razonamiento: sirve como banco de pruebas de bajo coste para validar plantillas de prompt STEM ("Problem / Proof / Final Answer") antes de migrar a modelos mayores de la familia Qwen3.
+- Generación de explicaciones didácticas en documentación técnica: puede producir derivaciones estructuradas de problemas de ingeniería o ecuaciones diferenciales para manuales y material formativo en inglés.
+- Evaluación de técnicas de destilación: investigadores pueden usar este checkpoint como referencia reproducible para estudiar la transferencia de estructura de razonamiento desde profesores MoE de 30B a estudiantes de 0,6B.
+- Despliegue en entornos con restricciones de VRAM: útil en GPUs de gama baja o CPU para tareas de generación corta donde un modelo mayor no es viable económicamente.
 
 ## Benchmarks y rendimiento
 
@@ -54,40 +55,41 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada en bf16: aproximadamente 1,5 GB para pesos (coincide con el tamano del repo de 1,5 GB) mas overhead de activaciones y cache KV; en la practica, menos de 2 GB en GPU.
-- VRAM estimada en cuantizacion de 8 bits: alrededor de 0,8 GB; en 4 bits, en torno a 0,4-0,5 GB (el autor afirma menos de 500 MB cuantizado, sin especificar el esquema).
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para bf16; RTX 3060, RTX 4060, RTX 4090, A100 y H100 son sobradamente suficientes. Tambien viable en CPU.
-- Cabe en GPU de consumo: si, en practicamente todas las GPU discretas modernas e incluso en iGPU con suficiente memoria compartida.
-- Opciones de despliegue: transformers (referencia del autor), text-generation-inference (tag `text-generation-inference` y `endpoints_compatible`); llama.cpp, Ollama y vLLM son plausibles por ser un modelo Qwen3 estandar, aunque no se documentan en la model card.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia en bf16: aproximadamente 1,5 GB solo para pesos, más overhead de activaciones y KV cache (el repositorio completo ocupa 1,5 GB).
+- VRAM estimada en cuantización de 8 bits: en torno a 0,8-1 GB.
+- VRAM estimada en cuantización de 4 bits: por debajo de 0,5 GB (el autor afirma "under 500MB quantized", sin especificar el esquema).
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; RTX 3060, RTX 4060, RTX 4090, así como A100/H100 si se busca throughput agregado.
+- Cabe holgadamente en GPU consumer e incluso en dispositivos móviles según el autor.
+- Opciones de despliegue: transformers (soporte nativo documentado), text-generation-inference (tag `text-generation-inference` presente), endpoints compatibles (tag `endpoints_compatible`). No se documenta soporte explícito de llama.cpp, Ollama o vLLM, aunque al ser safetensors estándar debería ser convertible.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
-|---|---|---|---|---|---|
-| Qwen3-0.6B-Distilled-30B-A3B-Thinking-SFT | 0,6B (751.632.384) | 1024 (entrenamiento) | Apache 2.0 | Destilacion STEM + SFT legal | Hugging Face |
-| Qwen/Qwen3-0.6B (base) | 0,6B | no disponible en la informacion | Apache 2.0 | Modelo base generalista | Hugging Face |
-| Qwen/Qwen3-30B-A3B-Thinking-2507 (profesor) | 30B totales, ~3B activos | no disponible en la informacion | no disponible en la informacion | MoE con razonamiento extendido | Hugging Face |
+| Modelo | Parámetros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|
+| Qwen3-0.6B-Distilled-30B-A3B-Thinking-SFT | 0,75B | 1024 | Apache 2.0 | Destilación STEM + SFT legal |
+| Qwen/Qwen3-0.6B (base) | 0,6B | contexto nativo Qwen3 (no especificado en esta ficha) | Apache 2.0 | Modelo generalista de referencia |
+| Qwen/Qwen3-30B-A3B-Thinking-2507 (profesor) | 30B totales / ~3B activos | contexto nativo Qwen3 (no especificado en esta ficha) | Apache 2.0 | MoE con modo thinking extendido |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada; la comparacion se limita a parametros, contexto, licencia y enfoque de entrenamiento.
+El modelo destilado ofrece un ratio de compresión 50x respecto a su profesor, a costa de una ventana de contexto reducida a 1024 tokens y de capacidades limitadas al inglés. Frente al Qwen3-0.6B base, añade especialización en razonamiento STEM y legal, pero no se han publicado benchmarks que cuantifiquen la mejora.
 
 ## Limitaciones y advertencias
 
-- Ventana de contexto de solo 1024 tokens en entrenamiento: insuficiente para documentos largos, conversaciones extensas o razonamientos que excedan ese limite.
-- Entrenado unicamente en ingles; el rendimiento en castellano u otros idiomas no esta garantizado y probablemente sea deficiente.
-- Riesgo elevado de alucinacion en dominios especializados: con 0,6B parametros y SFT de una sola epoca, las respuestas legales o cientificas pueden ser plausibles pero incorrectas.
-- El SFT legal sobre Lawyer-Instruct no constituye asesoramiento juridico; no debe usarse en produccion para decisiones legales sin supervision profesional.
-- Sesgos: no se documentan evaluaciones de sesgo; al derivar de Qwen3 y de datasets especificos, puede heredar sesgos de esos corpus.
-- La afirmacion de "50x compresion" y "funciona en un telefono" proviene del autor y no esta respaldada por benchmarks publicados.
-- El modelo es un experimento de investigacion con solo 2 likes y 2.881 descargas; madurez y soporte comunitario limitados.
-- Licencia Apache 2.0 permite uso comercial, pero la ausencia de evaluaciones de seguridad y calidad desaconseja su despliegue en produccion sin validacion previa.
-- No se documentan capacidades de tool calling ni de agentes; no asumir su disponibilidad.
+- Ventana de contexto de solo 1024 tokens en entrenamiento: insuficiente para documentos largos, conversaciones multi-turno extensas o análisis legales completos.
+- Idioma limitado al inglés; no se garantiza calidad en castellano u otros idiomas.
+- Riesgo de alucinación elevado en dominios especializados (legal, médico, físico) dado el tamaño reducido del modelo y la ausencia de benchmarks publicados.
+- El SFT legal se realizó sobre un único dataset (Lawyer-Instruct) con 1 época; la cobertura y robustez del razonamiento jurídico no están validadas.
+- No se documentan evaluaciones de sesgo, toxicidad ni seguridad; el modelo no incluye mecanismos de alineación más allá del SFT.
+- No dispone de tool calling, capacidades de agente ni multimodalidad.
+- Aunque la licencia es Apache 2.0 y permite uso comercial, el autor no ofrece garantías ni soporte; conviene auditar el modelo antes de producción.
+- El checkpoint se actualizó por última vez en noviembre de 2026, pero no hay información sobre mantenimiento continuo.
+- La afirmación de "runs on a phone" no viene acompañada de métricas de latencia ni de formatos de cuantización verificados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Qwen3-0.6B-Distilled-30B-A3B-Thinking-SFT
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
-- Profesor de destilacion: https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507
+- Profesor de destilación: https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507
 - Dataset de SFT legal: https://huggingface.co/datasets/Alignment-Lab-AI/Lawyer-Instruct
 - Autor de los datasets STEM: https://huggingface.co/0xZee
-- Organizacion: https://convergentintel.com
+- Organización desarrolladora: https://convergentintel.com

@@ -2,89 +2,107 @@
 
 ## Resumen
 
-DictaLM-3.0-24B-NVFP4-healed es una cuantización NVFP4 (4-bit e2m1 con plano de escala FP8-e4m3 por cada 16 elementos, 4.5 bits por elemento) del modelo dicta-il/DictaLM-3.0-24B-Thinking, un LLM de 23.57 mil millones de parámetros desarrollado por dicta-il para hebreo e inglés. El autor de esta variante es tiyuvta, que la ha construido con memra, un motor de inferencia Rust/CUDA optimizado para RTX Blackwell. El problema que resuelve es reducir el peso del modelo de 48 GB en BF16 o 24 GB en FP8 a 15 GB, manteniendo un rendimiento competitivo y permitiendo su ejecución en una GPU de 32 GB con un contexto real. La relevancia actual radica en que ofrece una alternativa eficiente para servir modelos de 24B en hardware de consumo de gama alta, con un enfoque de cuantización y "healing" mediante LoRA que mejora el rendimiento en inglés sin degradar el hebreo. La arquitectura es un transformer basado en Mistral, y la longitud de contexto no se ha especificado en la información disponible.
+DictaLM-3.0-24B-NVFP4-healed es una cuantizacion de 4 bits del modelo israeli DictaLM-3.0-24B-Thinking, desarrollado originalmente por Dicta (dicta-il) y cuantizado por el usuario tiyuvta sobre su propia infraestructura de serving para GPUs Blackwell. El checkpoint reduce el peso de 48 GB en BF16 y 24 GB en FP8 a aproximadamente 15 GB, manteniendo la ventana de contexto operativa en una unica tarjeta de 32 GB. Esta pensado explicitamente para cargas de trabajo en hebreo, aunque tambien conserva capacidades en ingles.
 
-## Especificaciones técnicas
+Tecnicamente es un artefacto NVFP4 (pesos e2m1 de 4 bits con un plano de escalas FP8-e4m3 por cada 16 elementos, equivalente a 4,5 bits por elemento) generado con GPTQ mediante llm-compressor, en formato compressed-tensors `nvfp4-pack-quantized`. La variante "healed" anade un paso de LoRA de concienciacion de cuantizacion (QAT) plegado de nuevo en los pesos, que mejora el rendimiento en ingles sin degradar el hebreo de forma estadisticamente significativa.
 
-| Parámetro | Valor |
+Su relevancia actual es doble: por un lado demuestra que una cuantizacion NVFP4 bien calibrada puede superar en ingles al FP8 original del proveedor con un 37% menos de memoria; por otro, documenta con rigor metodologico (McNemar pareado, n=2000 por idioma) que las metricas de similitud por tensor no detectan degradaciones severas en lenguas de bajos recursos. Es un caso de estudio util para quien despliegue modelos multilingues cuantizados en produccion.
+
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (basada en Mistral) |
-| Parámetros totales | 23.572.403.200 (23.57 mil millones) |
+| Arquitectura | Transformer decoder-only (familia Mistral, segun tags del autor) |
+| Parametros totales | 23.572.403.200 |
+| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | NVFP4 (GPTQ, w4a16, 4.5 bits/elemento); el modelo base también se distribuye en BF16 y FP8 |
-| Idiomas soportados | hebreo (he), inglés (en) |
+| Tipos de cuantizacion | NVFP4 (w4a16): pesos 4-bit e2m1 + escalas FP8-e4m3 por grupo de 16, 4,5 bits/elemento; GPTQ; 280 tensores cuantizados, 83 sin cuantizar (normas, embeddings, `lm_head`) |
+| Idiomas soportados | he (hebreo), en (ingles) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (compressed-tensors nvfp4-pack-quantized) |
+| Formato de pesos | safetensors, compressed-tensors `nvfp4-pack-quantized` |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una cuantización GPTQ del checkpoint dicta-il/DictaLM-3.0-24B-Thinking, que a su vez forma parte de la colección DictaLM 3.0, una familia de LLMs soberanos para hebreo. La cuantización se realizó con llm-compressor 0.13.0, utilizando un dataset de calibración liderado por hebreo (128 secuencias de 512 tokens). El proceso de "healing" consiste en un pase de LoRA consciente de la cuantización, cuyos pesos se pliegan de nuevo en el checkpoint, de modo que en tiempo de servicio no hay ningún adaptador adicional. La innovación técnica destacable es el uso de NVFP4 con GPTQ, que elimina la necesidad de una permutación de columnas (sin g_idx, actorder desactivado) y logra un peso de 15 GB. También se ha aplicado un parche a llm-compressor (PR #3144) para permitir el pipeline secuencial en configuraciones transformers>=5. No se han proporcionado detalles sobre los datos de entrenamiento del modelo base ni sobre procesos de RLHF/DPO.
+El checkpoint es una cuantizacion de `dicta-il/DictaLM-3.0-24B-Thinking`, un modelo de 23.572 millones de parametros etiquetado por el autor como perteneciente a la familia Mistral. No se dispone de informacion detallada sobre la arquitectura interna del modelo base (numero de capas, dimensiones, tipo de atencion) ni sobre su dataset de preentrenamiento o fases de alineamiento (RLHF/DPO) en la informacion proporcionada. La variante "Thinking" del nombre sugiere un modo de razonamiento extendido, pero no hay especificacion tecnica del mismo.
+
+El proceso de cuantizacion uso GPTQ via llm-compressor 0.13.0 con un parche especifico (PR #3144) necesario para que el pipeline secuencial pudiera ejecutarse con configuraciones `transformers>=5`. La calibracion combino el conjunto propio de Dicta con Wikipedia en hebreo e ingles en proporcion aproximada 4:1, con 128 secuencias de 512 tokens y semilla 20260905. El paso de "healing" consistio en un LoRA de concienciacion de cuantizacion aplicado sobre las proyecciones de reduccion (`down_proj`, `o_proj`) y plegado en los pesos, sin adaptador en tiempo de servicio. El autor documenta que ampliar la calibracion a 512x1024 (8x mas tokens) no produjo mejora estadisticamente significativa, y que el FP8 por canal en las proyecciones de reduccion no aporta bajo GPTQ porque la compensacion de error por columna ya resuelve ese problema.
 
 ## Capacidades
 
-- Generación de texto conversacional en hebreo e inglés.
-- Razonamiento de tipo "Thinking", según la denominación del modelo base, aunque no se han publicado benchmarks específicos de razonamiento en la información disponible.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües limitadas a hebreo e inglés.
-- Eficiencia de inferencia gracias a la cuantización NVFP4, con 99.6 tokens por segundo en una RTX 5090.
-- Compatibilidad con el formato compressed-tensors nvfp4-pack-quantized, lo que permite su uso en cualquier runtime que soporte ese formato.
+- Generacion de texto conversacional en hebreo e ingles, con soporte de conversaciones multi-turno.
+- Razonamiento extendido (modo "Thinking" en el nombre del modelo base; sin detalles tecnicos disponibles).
+- Comprension y generacion en hebreo, idioma principal de calibracion y objetivo del checkpoint.
+- Capacidades en ingles, que en esta variante healed superan al FP8 del proveedor en Global-MMLU (0.7760 frente a 0.7735).
+- Inferencia en GPUs Blackwell (RTX 5090) mediante el motor de serving de tiyuvta y cualquier runtime compatible con compressed-tensors NVFP4.
+- No hay informacion disponible sobre tool calling, function calling, uso de agentes, vision, audio ni otras modalidades.
 
 ## Casos de uso
 
-- Procesamiento de lenguaje natural en hebreo: el modelo está calibrado específicamente para hebreo, por lo que es adecuado para tareas de clasificación, análisis de sentimiento o extracción de información en este idioma, aprovechando su ventana de contexto (aunque no se ha especificado su longitud).
-- Aplicaciones bilingües hebreo-inglés: gracias a su soporte de ambos idiomas, puede utilizarse para traducción automática o generación de contenido multilingüe, con un rendimiento en inglés que supera al checkpoint FP8 del vendor (0.7760 vs 0.7735 en Global-MMLU).
-- Servicio de chat en producción: el checkpoint se puede servir a través de una API compatible con OpenAI (https://api.tiyuvta.ai/v1) o localmente con memra, ofreciendo una latencia de 99.6 tokens/s en una RTX 5090.
-- Investigación en cuantización y curación de modelos: el proceso de healing con LoRA y la comparación entre variantes GPTQ y round-to-nearest constituyen un caso de estudio para la comunidad de optimización de LLMs.
-- Despliegue en hardware de consumo de gama alta: al pesar 15 GB, cabe en una GPU de 32 GB con margen para un contexto real, lo que permite ejecutar el modelo en una estación de trabajo con RTX 5090 sin necesidad de servidores.
-- Evaluación de modelos cuantizados: el modelo sirve como referencia para medir el impacto de la cuantización NVFP4 y del healing en el rendimiento lingüístico, mediante el benchmark Global-MMLU.
+- Atencion al cliente en hebreo: el modelo puede gestionar conversaciones multi-turno en hebreo con calidad cercana al FP8 original (0.6590 frente a 0.6735 en Global-MMLU), ocupando solo 15 GB y permitiendo desplegarlo en una unica GPU de 32 GB junto con el resto del stack de serving.
+- Despliegue en una sola RTX 5090: con 15 GB de pesos y decodificacion de 99,6 tok/s medida en una 5090, es viable servir un modelo de 24B en hardware consumer de gama alta para prototipos, demos o entornos de desarrollo.
+- Traduccion y redaccion asistida hebreo-ingles: la combinacion de calibracion bilingue y rendimiento equilibrado en ambos idiomas lo hace adecuado para tareas de traduccion, resumen y reescritura en pares he-en.
+- Procesamiento de documentacion y corpus en hebreo: clasificacion, extraccion de informacion y generacion de resumenes sobre textos en hebreo, con la ventaja de un footprint reducido que permite ejecutar varias instancias en un mismo nodo.
+- Evaluacion y auditoria de cuantizacion: el checkpoint y su model card sirven como referencia metodologica para equipos que necesiten validar si una cuantizacion 4-bit degrada un idioma concreto, usando evaluacion pareada por idioma en lugar de similitud de tensores.
+- Investigacion en eficiencia de inferencia: util para comparar GPTQ frente a round-to-nearest en NVFP4, o para medir el impacto de QAT (healing) sobre un checkpoint ya cuantizado, con datos reproducibles publicados por el autor.
+- Serving en ingles con mejor relacion calidad/memoria: para cargas orientadas al ingles donde se prefiera un checkpoint de 15 GB que iguala o supera al FP8 de 24 GB del proveedor (0.7760 frente a 0.7735).
 
 ## Benchmarks y rendimiento
 
-Se han publicado resultados de Global-MMLU (n=2000 por idioma, 5-shot, greedy single-token) comparando el checkpoint con el vendor FP8 y con la variante sin curar:
+Evaluacion en Global-MMLU, 5-shot, greedy de un solo token, n=2000 por idioma, comparada con el FP8 del proveedor:
 
-| Variante | Hebreo | Inglés | Tamaño |
+| Modelo | Hebreo | Ingles | Tamano |
 |---|---|---|---|
-| Vendor FP8 (baseline) | 0.6735 | 0.7735 | 24 GB |
-| NVFP4 sin curar (parent) | 0.6590 | 0.7635 | 15 GB |
-| NVFP4 curado (este modelo) | 0.6620 | 0.7760 | 15 GB |
+| DictaLM-3.0-24B FP8 (proveedor) | 0.6735 | 0.7735 | 24 GB |
+| DictaLM-3.0-24B-NVFP4 (parent) | 0.6590 | 0.7635 | 15 GB |
+| DictaLM-3.0-24B-NVFP4-healed (este) | 0.6620 | 0.7760 | 15 GB |
 
-En la comparación pareada con el vendor FP8, el modelo curado pierde 1.45 puntos en hebreo (p=0.0293) y gana 0.25 puntos en inglés (0.7760 vs 0.7735). El rendimiento de decodificación medido en una RTX 5090 es de 99.6 tokens/s (tres repeticiones, vendor-default sampled). No se han publicado otros benchmarks como HumanEval o GSM8K.
+Comparaciones pareadas con McNemar sobre 2000 `sample_id` compartidos:
+
+| Comparacion | Hebreo | Ingles |
+|---|---|---|
+| Healed vs parent | +0.30 pt (p=0.7263, nulo) | +1.25 pt (p=0.0192) |
+| Parent vs FP8 proveedor | -1.45 pt (p=0.0293) | -1.00 pt |
+
+Rendimiento de decodificacion: 99,6 tok/s en una RTX 5090 (tres repeticiones, muestreo por defecto del `generation_config`). El parent rinde 84,3 tok/s en la misma maquina; el healed iguala esa cifra segun el autor. La variante con FP8 en proyecciones de reduccion baja a 80,5 tok/s y ocupa 3 GB mas.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 15 GB para los pesos, más el espacio para el contexto y los activos; cabe en una GPU de 32 GB con margen.
-- GPU recomendada: RTX 5090 (Blackwell), para la que está optimizado el motor memra. El formato compressed-tensors puede ejecutarse en otras GPUs con soporte NVFP4.
-- Compatibilidad con GPU de consumo: sí, en la RTX 5090 de 32 GB. No se han proporcionado datos para GPUs de menor capacidad.
-- Opciones de despliegue: memra (motor nativo Rust/CUDA), API de tiyuvta.ai (compatible con OpenAI), y cualquier runtime que lea el formato compressed-tensors nvfp4-pack-quantized (por ejemplo, vLLM si lo soporta).
-- Latencia y throughput: 99.6 tokens/s en una RTX 5090 (medido por el autor). En otra caja se reportan 84.3 tokens/s, lo que indica que el rendimiento depende del host.
+- VRAM estimada: aproximadamente 15 GB para los pesos; con overhead de runtime y cache KV, un despliegue realista requiere una GPU de 24-32 GB.
+- GPU recomendadas: RTX 5090 (Blackwell, medida por el autor), RTX PRO 6000 Blackwell, B200. El formato NVFP4 requiere soporte de hardware Blackwell para maxima eficiencia.
+- Cabe en GPU consumer: si, en RTX 5090 (32 GB) con margen para contexto; no en GPUs de 16 GB o menos.
+- Opciones de despliegue: cualquier runtime que lea compressed-tensors `nvfp4-pack-quantized`; el autor lo ejecuta con el motor de serving de tiyuvta. No hay confirmacion en la informacion disponible de soporte en vLLM, llama.cpp, Ollama o TGI para este formato concreto.
+- Latencia y throughput: 99,6 tok/s de decodificacion en una RTX 5090. El autor advierte que el throughput no es independiente del host y solo se cita para esa tarjeta.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Global-MMLU (he/en) | Tamaño | Licencia |
-|---|---|---|---|---|---|
-| DictaLM-3.0-24B-Thinking (FP8) | 23.57B | no disponible | 0.6735 / 0.7735 | 24 GB | Apache 2.0 |
-| DictaLM-3.0-24B-NVFP4 (sin curar) | 23.57B | no disponible | 0.6590 / 0.7635 | 15 GB | Apache 2.0 |
-| DictaLM-3.0-24B-NVFP4-healed (este modelo) | 23.57B | no disponible | 0.6620 / 0.7760 | 15 GB | Apache 2.0 |
+| Modelo | Parametros | Contexto | Global-MMLU he | Global-MMLU en | Licencia | Formato |
+|---|---|---|---|---|---|---|
+| DictaLM-3.0-24B-NVFP4-healed | 23,57B | no disponible | 0.6620 | 0.7760 | Apache 2.0 | NVFP4 15 GB |
+| DictaLM-3.0-24B-NVFP4 (parent) | 23,57B | no disponible | 0.6590 | 0.7635 | Apache 2.0 | NVFP4 15 GB |
+| DictaLM-3.0-24B-Thinking FP8 (proveedor) | 23,57B | no disponible | 0.6735 | 0.7735 | Apache 2.0 | FP8 24 GB |
+| DictaLM-3.0-24B-Thinking BF16 (base) | 23,57B | no disponible | no disponible | no disponible | Apache 2.0 | BF16 48 GB |
 
-No se han encontrado otros modelos comparables de la misma categoría en la información disponible.
+No se dispone de datos de benchmarks de otros modelos de 24B comparables en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo curado mejora el rendimiento en inglés pero no en hebreo; el hebreo queda 1.45 puntos por debajo del vendor FP8 (p=0.0293), lo que supone una pérdida estadísticamente significativa.
-- La cuantización NVFP4 puede introducir degradación en tareas no evaluadas, especialmente en hebreo, donde el gap no se ha localizado a nivel de tensores.
-- No se han publicado evaluaciones de sesgos, alucinaciones, tool calling o razonamiento complejo, por lo que no se puede garantizar su comportamiento en estos aspectos.
-- La longitud de contexto no se ha especificado, lo que limita el conocimiento sobre su capacidad para tareas de contexto largo.
-- El rendimiento de decodificación depende del hardware; las cifras publicadas se refieren a una RTX 5090 específica y pueden variar en otros entornos.
-- El modelo solo soporta hebreo e inglés; no se ha evaluado su rendimiento en otros idiomas.
-- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar la documentación del modelo base (dicta-il/DictaLM-3.0-24B-Thinking) por si existen restricciones adicionales.
+- Degradacion en hebreo frente al FP8 del proveedor: -1,45 puntos en Global-MMLU con significacion estadistica (p=0.0293). Para cargas criticas en hebreo, el autor recomienda usar el parent, cuyo numero publicado es el medido y validado.
+- El beneficio del healing se limita al ingles: en hebreo la mejora de +0,30 puntos no es significativa (p=0,7263) y la brecha residual con FP8 no esta localizada.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; aplican los riesgos habituales de un modelo de 24B en tareas de conocimiento factual.
+- Idiomas: solo hebreo e ingles declarados. El rendimiento en castellano u otros idiomas no esta evaluado y no deberia asumirse.
+- Longitud de contexto: no especificada. El autor menciona que el footprint de 15 GB deja "espacio para una ventana de contexto real" en una tarjeta de 32 GB, pero no da la cifra.
+- Dependencia de hardware Blackwell: el formato NVFP4 esta orientado a esa generacion; en GPUs anteriores el soporte puede ser limitado o inexistente.
+- Throughput dependiente del host: la cifra de 99,6 tok/s solo es valida para la RTX 5090 medida; no debe extrapolarse.
+- Metodologia de evaluacion acotada: los benchmarks se limitan a Global-MMLU 5-shot greedy de un solo token, que el autor describe como instrumento de medida y no como forma de serving. No hay datos de HumanEval, GSM8K, MMLU estandar ni tareas generativas.
+- Licencia Apache 2.0: permite uso comercial, pero el usuario debe verificar las condiciones del modelo base y de los datos de calibracion.
+- Repositorio de terceros: es una cuantizacion de la comunidad (tiyuvta), no una publicacion oficial de Dicta; el soporte y las actualizaciones dependen del autor del artefacto.
 
 ## Enlaces
 
-- https://huggingface.co/tiyuvta/DictaLM-3.0-24B-NVFP4-healed
-- https://huggingface.co/dicta-il/DictaLM-3.0-24B-Thinking
-- https://huggingface.co/collections/dicta-il/dictalm-30-collection
-- https://inference.tiyuvta.ai
-- https://github.com/avifenesh/memra
-- https://github.com/vllm-project/llm-compressor
-- https://github.com/vllm-project/llm-compressor/pull/3144
+- Hugging Face (este checkpoint): https://huggingface.co/tiyuvta/DictaLM-3.0-24B-NVFP4-healed
+- Checkpoint parent NVFP4: https://huggingface.co/tiyuvta/DictaLM-3.0-24B-NVFP4
+- Modelo base: https://huggingface.co/dicta-il/DictaLM-3.0-24B-Thinking
+- llm-compressor: https://github.com/vllm-project/llm-compressor
+- PR requerido para la cuantizacion: https://github.com/vllm-project/llm-compressor/pull/3144
+- Dataset de evaluacion Global-MMLU: https://huggingface.co/datasets/CohereLabs/Global-MMLU
+- Sitio del autor de la cuantizacion: https://tiyuvta.ai/

@@ -51,16 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "nchapman/Qwen3.8-27B-W4A16-HGPTQ-g64 · Hugging Face",
-      "url": "https://huggingface.co/nchapman/Qwen3.8-27B-W4A16-HGPTQ-g64",
-      "snippet": "nchapman / Qwen3.8-27B-W4A16-HGPTQ-g64 Like 0 Image-Text-to-Text Transformers Safetensors qwen3_5 gptq hadamard quip w4a16 compressed-tensors vllm conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
-    },
-    {
-      "title": "GotoAI-Inc/Qwen3.8-27B-W4A16 · Hugging Face",
-      "url": "https://huggingface.co/GotoAI-Inc/Qwen3.8-27B-W4A16",
-      "snippet": "Qwen3.8-27B-W4A16 Int4 weight-only quantization of Qwen/Qwen3.8-27B, in compressed-tensors format for vLLM. 19.42 GB, down from 55.56 GB — it fits a 24 GB card with room for a useful context window. Unofficial and unaffiliated with Alibaba/Qwen. All model capabilities, evaluations and limitations belong to the original model card — see the base model for those. What was changed Weights ..."
-    }
-  ]
+  "sources": []
 }

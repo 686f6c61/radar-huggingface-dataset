@@ -49,16 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "SubMaroon/Kitchoon-26B-A4B · Hugging Face",
-      "url": "https://huggingface.co/SubMaroon/Kitchoon-26B-A4B",
-      "snippet": "Kitchoon-26B-A4B Gemma 4 RP model: a fused OV LoRA plus a separately trained lm_head, both on top of Pantheon-Reasoning 1.1 (heretic). Pantheon already writes clean, active prose with low slop. I wanted to keep that and add what it lacks: more decisive characters, livelier dialogue, and stronger ERP, without dragging the dataset's clichés along with it."
-    },
-    {
-      "title": "SubMaroon/Kitchoon-26B-A4B at main - Hugging Face",
-      "url": "https://huggingface.co/SubMaroon/Kitchoon-26B-A4B/tree/main",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    }
-  ]
+  "sources": []
 }

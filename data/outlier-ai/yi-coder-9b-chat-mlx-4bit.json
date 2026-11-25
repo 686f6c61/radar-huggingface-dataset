@@ -83,16 +83,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Outlier-Ai/Yi-Coder-9B-Chat-MLX-4bit · Hugging Face",
-      "url": "https://huggingface.co/Outlier-Ai/Yi-Coder-9B-Chat-MLX-4bit",
-      "snippet": "4-bit MLX conversion of Yi-Coder-9B-Chat for Apple Silicon. Runs natively on M1, M2, M3, and M4 Macs via mlx_lm. Faithful port of the upstream weights — no fine-tuning, no merge ..."
-    },
-    {
-      "title": "README.md · Outlier-Ai/Yi-Coder-9B-Chat-MLX-4bit at main",
-      "url": "https://huggingface.co/Outlier-Ai/Yi-Coder-9B-Chat-MLX-4bit/blob/main/README.md",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    }
-  ]
+  "sources": []
 }

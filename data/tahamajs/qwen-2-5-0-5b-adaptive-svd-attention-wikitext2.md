@@ -2,94 +2,98 @@
 
 ## Resumen
 
-`tahamajs/qwen-2.5-0.5b-adaptive-svd-attention-wikitext2` es un experimento de investigación publicado en Hugging Face por el usuario tahamajs. Consiste en un transplante de mecanismo de atención sobre el modelo base Qwen2.5-0.5B: se sustituye la atención original por una implementación denominada `adaptive_svd_attention`, registrada en un `ATTENTION_REGISTRY` del framework NeuralOps, y se realiza un proceso de destilación (KD, knowledge distillation) sobre el dataset WikiText-2.
+`qwen-2.5-0.5b-adaptive-svd-attention-wikitext2` es un checkpoint experimental publicado por el usuario tahamajs dentro del proyecto NeuralOps "Attention Surgery Zoo". No es un modelo entrenado desde cero, sino una intervención quirúrgica sobre `Qwen/Qwen2.5-0.5B`: se sustituyen 18 de las 24 capas de atención del decoder (disposición híbrida 3:1) por el operador `AdaptiveSVDAttention` de la librería NeuralOps, que combina SVD adaptativo con proyecciones factorizadas residuales. Las 6 capas restantes conservan la atención GQA softmax original de Qwen2 como anclas de enrutamiento contextual.
 
-El modelo no es un modelo de producción ni una versión oficial de Qwen. Es un artefacto de investigación que documenta un intento de "cirugía" arquitectónica con un patrón híbrido `hybrid_3_1`. Los resultados reportados en la model card son negativos: la perplejidad causal previa a la destilación es de 213589.22 y la posterior es `inf`, es decir, el proceso de destilación no consiguió recuperar un modelo funcional y la perplejidad diverge.
+El problema que aborda es la evaluación de operadores de atención subcuadrática en modelos causales compactos: el autor mide el coste de reemplazar atención softmax por alternativas lineales/factorizadas y documenta el proceso de recuperación mediante destilación de conocimiento en dos etapas sobre WikiText-2. El resultado es un modelo de 494M parámetros (arquitectura base Qwen2.5-0.5B, D=896, 14 cabezas de consulta, 2 de clave/valor, RoPE con theta 1.000.000) que alcanza una perplejidad de 175,47 en la validación de WikiText-2 tras la destilación, frente a los 15,38 del profesor original.
 
-Por tanto, este repositorio debe interpretarse como un registro de un experimento fallido o en curso, no como un modelo utilizable. El tamaño del repositorio es de 0.0 GB, lo que sugiere que los pesos no están efectivamente alojados o que el repo solo contiene metadatos. No hay descargas ni likes, y la licencia e idiomas no están declarados.
+Su relevancia es fundamentalmente metodológica y de investigación: sirve como referencia reproducible de cómo una cirugía de atención degrada drásticamente el modelo (perplejidad pre-destilación de 310.512,01) y de qué manera la destilación de representaciones ocultas recupera parte de la capacidad (99,94 % de reducción relativa de perplejidad). No está pensado como modelo de producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (base Qwen2.5-0.5B) con atención sustituida por `adaptive_svd_attention` (patrón `hybrid_3_1`) |
-| Parametros totales | 0.5B (heredados del modelo base Qwen2.5-0.5B) |
+| Arquitectura | Transformer decoder Qwen2 con atención híbrida: 18/24 capas `AdaptiveSVDAttention` (SVD adaptativo + proyecciones factorizadas residuales) y 6/24 capas GQA softmax nativas |
+| Parametros totales | 494M (modelo base Qwen2.5-0.5B) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | no disponible (tamaño del repo: 0.0 GB) |
+| Longitud de contexto | no disponible (el modelo base Qwen2.5-0.5B soporta hasta 32.768 tokens; la evaluación se hizo a longitud 512) |
+| Tipos de cuantizacion | no disponible (pesos publicados en FP16 completo, 926,91 MB, más adaptador) |
+| Idiomas soportados | inglés (etiqueta `en` en la model card) |
+| Licencia | MIT |
+| Formato de pesos | FP16 completo (926,91 MB) + adaptador; serialización determinista de NeuralOps (no safetensors/GGUF estándar) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen2.5-0.5B, un transformer decoder-only de 0.5 mil millones de parámetros. Sobre esa base se aplica un "transplante" de atención: se reemplaza el mecanismo original por `adaptive_svd_attention`, una implementación registrada en el `ATTENTION_REGISTRY` del framework NeuralOps. El patrón de cirugía es `hybrid_3_1`, lo que sugiere una combinación de capas con atención original y capas con la nueva atención en una proporción 3:1, aunque la model card no detalla el esquema exacto.
+La arquitectura parte del decoder Qwen2.5-0.5B: 24 bloques, dimensión oculta 896, 14 cabezas de consulta y 2 de clave/valor (GQA), dimensión por cabeza 64, RoPE con theta 1.000.000 y soporte autoregresivo causal. La cirugía `hybrid_3_1` reemplaza las capas en los índices [0, 1, 2, 4, 5, 6, 8, 9, 10, 12, 13, 14, 16, 17, 18, 20, 21, 22] por `AdaptiveSVDAttention` envuelto en `QwenAttentionAdapter`, mientras que las capas [3, 7, 11, 15, 19, 23] mantienen la atención GQA original. Cada capa transplantada hereda los tensores preentrenados `q_proj`, `k_proj`, `v_proj` y `o_proj` del profesor, con expansión de cabezas KV de 2 a 14 y una única `o_proj` para evitar colapso de proyecciones no inicializadas. El operador usa un despacho de kernels en tres niveles (CUDA / Triton / PyTorch).
 
-El entrenamiento posterior consiste en una destilación de conocimiento sobre WikiText-2 (`wikitext-2-raw-v1`), ejecutada en una NVIDIA RTX 3090 en 60.9 segundos. Los resultados reportados son: perplejidad causal previa a la destilación de 213589.22 y posterior de `inf`. Esto indica que el transplante de atención degrada severamente el modelo y que la destilación no logra recuperarlo; la perplejidad infinita implica una distribución de probabilidad degenerada. No se documentan tokens de entrenamiento, composición del dataset más allá de WikiText-2, ni uso de RLHF/DPO.
+El entrenamiento consiste en destilación de conocimiento de representaciones ocultas en dos etapas sobre WikiText-2 (`wikitext-2-raw-v1`), ejecutada en una RTX 3090 de 24 GB con caché offline de representaciones (0 MB de VRAM del profesor en GPU). La etapa 1 (30 % del presupuesto, 90 pasos) congela embeddings, MLP y `lm_head` y entrena solo módulos de atención y layer norms con AdamW (lr 2.0e-4, weight decay 0.01, clipping 1.0), minimizando MSE por capa más 0.25·(1 − coseno). La etapa 2 (70 %, 203 pasos) hace destilación extremo a extremo sobre los 24 flujos residuales con pérdida MSE + 0.50·(1 − coseno) y lr 6.0e-5, omitiendo `lm_head`. Se usaron pesos maestros FP32 con AMP FP16 y `GradScaler`.
 
 ## Capacidades
 
-- No se puede confirmar ninguna capacidad funcional: la perplejidad posterior a la destilación es `inf`, lo que indica que el modelo no genera texto coherente.
-- No hay evidencia de soporte de tool calling ni function calling.
-- No hay evidencia de soporte de agentes ni razonamiento multi-paso.
-- No hay información sobre capacidades multilingües.
-- No hay información sobre modos especiales (thinking, vision, audio).
-- El único dato objetivo es que el experimento se realizó sobre WikiText-2 con fines de modelado de lenguaje causal.
+- Generación de texto causal autoregresiva en inglés, heredada del modelo base Qwen2.5-0.5B.
+- Soporte de atención GQA y RoPE, con despacho de kernels CUDA/Triton/PyTorch.
+- Capacidad de conversación y generación de texto (pipeline `text-generation`, etiqueta `conversational`).
+- No se documentan capacidades de tool calling, agentes, matemáticas avanzadas, visión ni audio en la información disponible.
+- Multilingüismo limitado: la model card declara únicamente inglés.
+- Valor principal como artefacto de investigación para estudiar operadores de atención subcuadrática y destilación, no como asistente generalista.
 
 ## Casos de uso
 
-- Investigación sobre mecanismos de atención alternativos: el repo sirve como referencia de un intento de sustituir la atención estándar por `adaptive_svd_attention` y documentar el impacto en perplejidad. Útil para comparar con otras cirugías arquitectónicas.
-- Reproducción de experimentos de destilación: el tiempo de 60.9 s en RTX 3090 y el pipeline sobre WikiText-2 permiten replicar el setup para estudiar por qué la KD falla con atención transplantada.
-- Estudio de fallos en transplantes de atención: la perplejidad `inf` es un caso límite útil para analizar inestabilidad numérica en implementaciones SVD de atención.
-- Benchmark de frameworks de cirugía (NeuralOps): permite evaluar el `ATTENTION_REGISTRY` y el patrón `hybrid_3_1` frente a alternativas.
-- Docencia sobre riesgos de modificar arquitecturas preentrenadas sin reentrenamiento completo: ejemplo de degradación catastrófica.
-- No es adecuado para ningún caso de uso en producción, generación de texto, código, atención al cliente ni tareas downstream.
+- Investigación sobre atención subcuadrática: servir como punto de comparación reproducible para medir cómo el reemplazo de softmax por SVD adaptativo afecta a la perplejidad en modelos de 0,5B, usando el par pre/post destilación (310.512,01 → 175,47).
+- Estudio de destilación de representaciones: el protocolo en dos etapas y la telemetría publicada permiten replicar experimentos de alineación de estados ocultos con pérdida MSE + coseno.
+- Benchmarking de kernels: al integrar despacho CUDA/Triton/PyTorch, sirve para validar el rendimiento de la implementación `AdaptiveSVDAttention` frente a GQA softmax en la misma topología.
+- Docencia y divulgación: ejemplo didáctico de cirugía de atención ("attention surgery") y de sus consecuencias en un modelo compacto.
+- Pruebas de infraestructura NeuralOps: validar la carga de checkpoints con serialización determinista y adaptadores en pipelines de la librería.
+- Ablación de topologías híbridas: modificar la proporción 3:1 de capas transplantadas para estudiar el equilibrio entre eficiencia lineal y recuperación de induction heads.
+- No se recomienda su uso en atención al cliente, generación de código en producción ni tareas que requieran calidad lingüística, dado el elevado coste en perplejidad.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Valor reportado |
-|---|---|
-| Pre-KD causal PPL (WikiText-2) | 213589.22 |
-| Post-KD causal PPL (WikiText-2) | inf |
-| PPL delta | +inf |
-| Tiempo de destilación | 60.9 s (NVIDIA RTX 3090) |
+Resultados declarados por el autor (no verificados) en la validación de WikiText-2 (`wikitext-2-raw-v1`), longitud de secuencia 512, batch 8 con acumulación de gradiente 4, sobre una RTX 3090 de 24 GB:
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+| Metrica | Valor | Notas |
+|---|---:|---|
+| Perplejidad del profesor (`Qwen/Qwen2.5-0.5B`) | 15,38 | Referencia GQA softmax exacta |
+| Perplejidad del estudiante pre-destilación | 310.512,01 | Tras el transplante de 18/24 capas |
+| Perplejidad del estudiante post-destilación | 175,47 | Tras destilación en dos etapas |
+| Delta absoluto de perplejidad | −310.336,53 | Cambio logrado por destilación |
+| Reducción relativa de perplejidad | 99,94 % | Recuperación desde el pico post-cirugía |
+
+No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible con fiabilidad, dado que el modelo no es funcional. Para un transformer de 0.5B en fp16 se necesitarían aproximadamente 1 GB de VRAM, pero la implementación `adaptive_svd_attention` puede añadir overhead no cuantificado.
-- GPU recomendadas: el autor usó una NVIDIA RTX 3090 para la destilación; no hay datos de inferencia.
-- Cabe en GPU consumer (cualquier GPU con ≥2 GB de VRAM en teoría para 0.5B en fp16), pero la falta de pesos en el repo (0.0 GB) impide confirmarlo.
-- Opciones de despliegue: no disponible; no se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
+- VRAM estimada para inferencia: los pesos FP16 ocupan 926,91 MB; con overhead de activaciones y caché KV, cabe holgadamente en GPUs de 4-8 GB.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; el autor usó una RTX 3090 de 24 GB para el entrenamiento por destilación.
+- Cabe en GPU de consumo: sí, en RTX 3060, RTX 4060, RTX 4090 y similares.
+- Opciones de despliegue: la librería NeuralOps es el entorno nativo; no se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI, y el formato de pesos no es safetensors/GGUF estándar, por lo que la conversión requeriría trabajo adicional.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Estado |
-|---|---|---|---|---|
-| tahamajs/qwen-2.5-0.5b-adaptive-svd-attention-wikitext2 | 0.5B | no disponible | no disponible | Experimental, PPL `inf` |
-| Qwen2.5-0.5B (base) | 0.5B | 32k (según documentación oficial de Qwen) | Apache 2.0 (según Qwen) | Producción |
-| Qwen2.5-1.5B | 1.5B | 32k (según documentación oficial de Qwen) | Apache 2.0 (según Qwen) | Producción |
-| SmolLM2-360M | 0.36B | 8k (según documentación oficial) | Apache 2.0 (según documentación) | Producción |
+| Modelo | Parametros | Contexto | Perplejidad WikiText-2 | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| qwen-2.5-0.5b-adaptive-svd-attention-wikitext2 | 494M | no disponible (base: 32.768) | 175,47 (post-KD) | MIT | Hugging Face, 291 descargas |
+| Qwen/Qwen2.5-0.5B (profesor) | 494M | 32.768 | 15,38 | Apache 2.0 | Hugging Face, ampliamente usado |
+| Alternativas de 0,5B con atención estándar | ~500M | variable | no disponible | variable | no disponible |
 
-La comparativa se limita a modelos de tamaño similar; el modelo de tahamajs no es funcional y no compite en rendimiento con ninguno de ellos. Los datos de contexto y licencia de los modelos de referencia provienen de su documentación pública, no de la información proporcionada en este repo.
+La comparación directa con el profesor es la más informativa: mismo tamaño y arquitectura base, pero una diferencia de perplejidad de más de 11× a favor del modelo original. No se dispone de datos de otros operadores de atención subcuadrática comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo no es funcional: la perplejidad posterior a la destilación es `inf`, lo que indica una distribución degenerada.
-- El repositorio tiene 0.0 GB, por lo que es probable que los pesos no estén disponibles o solo se incluyan metadatos.
-- No hay licencia declarada: riesgo legal para cualquier uso, incluido el comercial.
-- No hay información sobre sesgos, pero al derivar de Qwen2.5-0.5B heredaría los sesgos del modelo base, agravados por la degradación.
-- Riesgo de alucinación: máximo, dado que el modelo no produce salidas coherentes.
-- No hay garantías de soporte de idiomas ni de contexto.
-- No apto para producción, investigación aplicada ni evaluación de capacidades.
-- El experimento se realizó en 60.9 s sobre WikiText-2, lo que sugiere una destilación muy corta y posiblemente insuficiente.
+- Degradación severa de calidad: la perplejidad post-destilación (175,47) es más de 11 veces la del modelo base (15,38), lo que se traduce en generaciones poco fiables.
+- Riesgo elevado de alucinación y texto incoherente, especialmente en secuencias largas o contextos complejos.
+- Idiomas: solo se declara inglés; no hay evidencia de calidad en castellano.
+- Contexto: aunque el base soporta 32.768 tokens, la evaluación se hizo a 512 y no se documenta el comportamiento del operador SVD a longitudes mayores.
+- Licencia MIT permite uso comercial, pero el modelo base Qwen2.5-0.5B es Apache 2.0; conviene revisar la compatibilidad y atribuciones.
+- Formato de pesos no estándar (serialización NeuralOps con adaptador), lo que limita el despliegue con herramientas convencionales.
+- Benchmarks no verificados (`verified: false`) y ausencia de evaluación en tareas distintas de la perplejidad.
+- No apto para producción sin validación adicional; su propósito es la investigación sobre atención y destilación.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/tahamajs/qwen-2.5-0.5b-adaptive-svd-attention-wikitext2
-- Modelo base Qwen2.5-0.5B: no disponible en la información proporcionada
-- Paper o blog de NeuralOps / `adaptive_svd_attention`: no disponible
-- Repositorio del framework NeuralOps: no disponible
-- Dataset WikiText-2: no disponible en la información proporcionada
+- Modelo en Hugging Face: https://huggingface.co/tahamajs/qwen-2.5-0.5b-adaptive-svd-attention-wikitext2
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
+- Repositorio NeuralOps: https://github.com/tahamajs/NeuralOps
+- Implementación del operador: https://github.com/tahamajs/NeuralOps/blob/main/neuralops/layers/svd/adaptive_svd_attention.py
+- Licencia: https://github.com/tahamajs/NeuralOps/blob/main/LICENSE
+- Dataset WikiText-2: https://huggingface.co/datasets/Salesforce/wikitext

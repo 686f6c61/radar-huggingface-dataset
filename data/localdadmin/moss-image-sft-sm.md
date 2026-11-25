@@ -2,48 +2,47 @@
 
 ## Resumen
 
-MOSS-Image-SFT-SM es un repositorio de redistribución (repackaging) publicado por el usuario `localdadmin` que agrupa los pesos de un pipeline de generación de imágenes basado en el modelo MOSS-Image de OpenMOSS, en su variante afinada (SFT), junto con el codificador de texto Qwen3.5-9B y el VAE de Flux 2. No se trata de un modelo entrenado por el autor del repo, sino de una recopilación de artefactos en formato GGUF orientada a su uso con herramientas de inferencia que consumen cuantizaciones de este tipo.
+MOSS-Image-SFT-SM es un empaquetado (repack) en formato GGUF del modelo de generación de imágenes MOSS-Image-SFT, desarrollado originalmente por OpenMOSS-Team. El repositorio, publicado por el usuario localdadmin bajo el tag `model-cacher-ng`, no introduce un modelo nuevo sino que reorganiza los pesos del modelo original en una estructura de directorios orientada a pipelines de difusión (modelos de difusión, codificadores de texto, tokenizadores y VAE) y aplica cuantizaciones agresivas para reducir el tamaño en disco.
 
-El paquete incluye un UNet de difusión cuantizado en `UD-Q3_K_XL`, el text encoder Qwen3.5-9B en la misma cuantización, su tokenizer y el VAE `flux2-vae.safetensors`. El dato de parámetros reportado en safetensors (5.082.308.624, aproximadamente 5,08 mil millones) corresponde presumiblemente al componente de difusión, no al conjunto del pipeline, ya que el text encoder por sí solo aporta varios miles de millones adicionales.
+El paquete combina tres componentes: un modelo de difusión MOSS-Image-SFT cuantizado a UD-Q3_K_XL, un codificador de texto derivado de Qwen3.5-9B cuantizado a Q2_K_S y un VAE `flux2-vae_small.safetensors`. Los pesos en safetensors declarados suman 5.082.308.624 parámetros, aunque esa cifra corresponde al conjunto del repositorio y no necesariamente a un único componente. El tamaño total del repo es de 28,4 GB.
 
-La relevancia de este repo es práctica: permite desplegar el pipeline MOSS-Image en entornos con recursos limitados gracias a la cuantización Q3, aunque al ser una publicación sin descargas ni validación comunitaria conviene tratar su contenido con cautela y verificar la integridad de los ficheros antes de usarlo en producción.
+Su relevancia es práctica: permite ejecutar un pipeline de generación de imágenes MOSS en entornos con recursos limitados usando cuantizaciones GGUF de baja precisión, algo que el repositorio original en BF16 no facilita. No obstante, la información publicada por el autor es mínima (la model card es un simple listado de ficheros), por lo que muchos detalles técnicos quedan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Pipeline de difusion (UNet) con text encoder transformer (Qwen3.5-9B) y VAE (Flux 2); arquitectura interna del UNet no disponible |
-| Parametros totales | 5.082.308.624 (reportado en safetensors; corresponde al componente de difusion) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | GGUF `UD-Q3_K_XL` para UNet y text encoder; safetensors sin cuantizar para el VAE |
-| Idiomas soportados | No disponible (el text encoder Qwen3.5-9B es multilingue, pero el repo no declara idiomas) |
+| Arquitectura | pipeline de difusion (modelo de difusion + codificador de texto Qwen3.5-9B + VAE flux2-vae_small); detalles internos no disponibles |
+| Parametros totales | 5.082.308.624 (safetensors declarados en el repo; desglose por componente no disponible) |
+| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | UD-Q3_K_XL (modelo de difusion), Q2_K_S (codificador de texto Qwen3.5-9B), safetensors sin cuantizar (VAE) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (UNet y text encoder), safetensors (VAE), tokenizer.json |
+| Formato de pesos | GGUF (modelo de difusion y text encoder), safetensors (VAE) |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no documenta la arquitectura interna del modelo de difusión MOSS-Image. Por los componentes incluidos se deduce un pipeline texto-a-imagen compuesto por un UNet de difusión (MOSS-Image-SFT, variante afinada del modelo base de OpenMOSS), un codificador de texto Qwen3.5-9B que transforma el prompt en embeddings y un VAE basado en Flux 2 para codificar y decodificar latentes de imagen. La cuantización `UD-Q3_K_XL` aplicada al UNet y al text encoder es una cuantización dinámica de tipo K-quant en torno a 3 bits, típica de las distribuciones de Unsloth, que reduce el peso en disco a costa de cierta pérdida de fidelidad.
+El repositorio no describe la arquitectura interna del modelo de difusion MOSS-Image-SFT; la model card se limita a listar los ficheros empaquetados. Por la estructura del directorio se deduce un pipeline de difusion texto-a-imagen compuesto por un modelo de difusion principal, un codificador de texto basado en Qwen3.5-9B y un VAE (`flux2-vae_small.safetensors`), un esquema habitual en los pipelines de difusion modernos. El modelo base declarado es OpenMOSS-Team/MOSS-Image-Base, con un ajuste posterior (SFT) que da lugar a MOSS-Image-SFT.
 
-No hay información en el repositorio sobre el volumen de datos de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones técnicas específicas del modelo original. El autor se limita a indicar que se trata de "repackaged model files" y remite a los repositorios originales de OpenMOSS-Team y Qwen para los detalles. Cualquier afirmación sobre el proceso de entrenamiento requeriría consultar las model cards de los modelos base, que no forman parte de la información disponible aquí.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas del entrenamiento original. Tampoco se documenta el proceso de cuantizacion aplicado por el autor del repack mas alla de los nombres de fichero (UD-Q3_K_XL y Q2_K_S). Todo ello debe considerarse no disponible en la informacion proporcionada.
 
 ## Capacidades
 
-- Generación de imágenes a partir de prompts de texto mediante el pipeline de difusión MOSS-Image-SFT.
-- Codificación de prompts con Qwen3.5-9B, lo que aporta comprensión semántica multilingüe al proceso de generación (aunque el repo no declara idiomas oficialmente).
-- Decodificación de latentes a imagen con el VAE de Flux 2, con la fidelidad que ello implica para detalles finos y texto en imagen.
-- Ejecución en entornos con VRAM limitada gracias a la cuantización Q3 del UNet y del text encoder.
-- No consta soporte de tool calling, function calling, agentes ni razonamiento multi-step: es un pipeline generativo de imagen, no un modelo de lenguaje conversacional.
-- No consta thinking mode, entrada de audio ni otras modalidades adicionales.
+- Generacion de imagenes a partir de texto (texto-a-imagen), segun la naturaleza del pipeline MOSS-Image y el tag `image` del repositorio.
+- Codificacion de prompts mediante un codificador de texto basado en Qwen3.5-9B, lo que sugiere comprension de instrucciones textuales complejas en la fase de condicionamiento.
+- Decodificacion de latentes a imagen mediante el VAE incluido (`flux2-vae_small.safetensors`).
+- Ejecucion en entornos con recursos limitados gracias a las cuantizaciones GGUF de baja precision incluidas.
+- Capacidades adicionales (edicion de imagen, inpainting, control por imagen, tool calling, agentes, multilingueismo) no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Generación de ilustraciones para prototipado rápido: el pipeline permite producir imágenes a partir de descripciones textuales en una estación de trabajo con GPU de consumo, útil para maquetas de producto o wireframes visuales antes de encargar arte final.
-- Creación de assets para videojuegos indie: un estudio pequeño puede generar conceptos de personajes, entornos o iconos con el UNet cuantizado y refinarlos manualmente, reduciendo el coste inicial de exploración visual.
-- Generación de imágenes para contenidos editoriales: blogs y newsletters pueden producir ilustraciones de acompañamiento a partir de resúmenes de artículo, siempre que se revise el resultado por posibles artefactos propios de la cuantización Q3.
-- Pruebas de concepto de pipelines texto-a-imagen en local: el formato GGUF facilita integrar el modelo en herramientas de inferencia compatibles y evaluar su comportamiento antes de invertir en pesos completos en safetensors.
-- Experimentación académica con cuantizaciones: investigadores pueden comparar la calidad de salida del UNet en Q3 frente al modelo original y medir la degradación introducida por la cuantización en métricas como FID o CLIP score.
-- Generación de material visual para entornos con recursos restringidos: al reducir el peso del UNet y del text encoder, el pipeline puede desplegarse en GPUs de gama media donde los pesos completos no cabrían, a cambio de menor calidad y velocidad.
+- Prototipado de generacion de imagenes en estaciones de trabajo con VRAM limitada: las cuantizaciones Q3_K_XL y Q2_K_S reducen el peso del pipeline y permiten probar el modelo MOSS-Image sin disponer de GPUs de gran memoria.
+- Integracion en pipelines de difusion basados en ComfyUI u otras herramientas que consumen GGUF: la estructura de directorios (diffusion_models, text_encoders, tokenizers, vae) esta pensada para este tipo de cargadores.
+- Generacion de ilustraciones conceptuales y bocetos para equipos de diseno que necesitan iterar rapido con prompts de texto, aprovechando el codificador Qwen3.5-9B para instrucciones detalladas.
+- Evaluacion comparativa de cuantizaciones: util para investigadores que quieran medir la perdida de calidad entre el modelo original en BF16 y las versiones Q2/Q3 empaquetadas aqui.
+- Despliegue en entornos de investigacion con presupuesto de hardware ajustado, donde el objetivo es reproducir el pipeline MOSS-Image con el menor coste de memoria posible.
+- Creacion de datasets sinteticos de imagenes para tareas de aumento de datos, siempre que la licencia Apache 2.0 del modelo base lo permita y se respeten las condiciones de los componentes derivados.
 
 ## Benchmarks y rendimiento
 
@@ -51,42 +50,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El repo ocupa 20,6 GB, pero la suma de los ficheros GGUF Q3 del UNet y del text encoder más el VAE es sustancialmente menor; el espacio en disco necesario para inferencia ronda los 10-15 GB según los componentes finalmente cargados.
-- VRAM estimada para inferencia: no disponible de forma oficial; con cuantización Q3 de UNet y text encoder es razonable esperar un rango de 10-16 GB, aunque esta cifra no está confirmada por el autor.
-- GPU recomendadas: no disponibles. Por el perfil de cuantización, GPUs de consumo como RTX 4080/4090 (16-24 GB) serían candidatas, pero no hay validación documentada.
-- Compatibilidad con GPUs de consumo: probable en tarjetas de 16 GB o más, sin confirmación oficial.
-- Opciones de despliegue: el formato GGUF sugiere compatibilidad con herramientas que consumen este formato para pipelines de difusión (por ejemplo, ComfyUI con nodos GGUF); no se documentan opciones como vLLM, TGI u Ollama, que no aplican a este tipo de modelo.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa, el repo completo ocupa 28,4 GB en disco; el modelo de difusion en Q3_K_XL y el text encoder en Q2_K_S reducen notablemente el peso respecto a BF16, pero no se documenta la VRAM exacta necesaria.
+- GPU recomendadas: no disponible. Por el tamano del pipeline, se espera que requiera GPUs con memoria suficiente para cargar el modelo de difusion cuantizado, el text encoder de 9B en Q2 y el VAE; GPUs de clase profesional (A100, H100) o consumer de gama alta (RTX 4090, RTX 3090) son candidatas razonables, pero no hay confirmacion en la informacion proporcionada.
+- Compatibilidad con GPU consumer: probable en GPUs de 24 GB o mas segun las cuantizaciones, aunque no confirmado oficialmente.
+- Opciones de despliegue: al tratarse de GGUF, los cargadores compatibles con GGUF para pipelines de difusion (por ejemplo ComfyUI con nodos GGUF) son la via natural; vLLM, llama.cpp u Ollama no aplican a un modelo de difusion de imagen. No se documentan opciones oficiales.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| MOSS-Image-SFT-SM (este repo) | 5,08 mil millones (componente de difusion) | No disponible | Apache 2.0 | GGUF + safetensors | Repo de terceros, 0 descargas |
-| OpenMOSS-Team/MOSS-Image-SFT (original) | No disponible | No disponible | No disponible en esta ficha | Safetensors | Repo oficial de OpenMOSS |
-| unsloth/MOSS-Image-SFT-GGUF | No disponible | No disponible | No disponible en esta ficha | GGUF | Cuantización mantenida por Unsloth |
-| Qwen/Qwen3.5-9B (text encoder del pipeline) | ~9 mil millones (nominal) | No disponible | No disponible en esta ficha | Safetensors y GGUF | Repo oficial de Qwen |
+| MOSS-Image-SFT-SM (este repo) | 5.082.308.624 (total repo) | no disponible | Apache 2.0 | GGUF + safetensors | Repack cuantizado de MOSS-Image-SFT |
+| OpenMOSS-Team/MOSS-Image-SFT | no disponible | no disponible | no disponible en la informacion | safetensors (original) | Modelo original sin cuantizar |
+| OpenMOSS-Team/MOSS-Image-Base | no disponible | no disponible | no disponible en la informacion | safetensors | Modelo base antes del SFT |
+| Qwen/Qwen3.5-9B | 9B (aproximado por nombre) | no disponible | no disponible en la informacion | safetensors | Codificador de texto usado en el pipeline |
 
-La comparativa se limita a los artefactos referenciados en la propia model card; no se dispone de datos de rendimiento ni de especificaciones detalladas de los modelos originales en la información proporcionada.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Repositorio de terceros sin descargas ni likes: no hay evidencia de validación comunitaria ni de que los ficheros hayan sido verificados; conviene comprobar hashes e integridad antes de usarlo.
-- La cuantización `UD-Q3_K_XL` degrada la fidelidad de la generación respecto a los pesos completos: es esperable pérdida de detalle, artefactos y menor adherencia al prompt en comparación con el modelo original en safetensors.
-- El dato de parámetros (5,08 mil millones) parece referirse solo al componente de difusión; el pipeline completo, incluyendo Qwen3.5-9B, es considerablemente mayor, lo que afecta a los requisitos reales de memoria.
-- No se declaran idiomas soportados: el comportamiento multilingüe dependerá del text encoder Qwen3.5-9B y no está garantizado por el autor del repo.
-- No hay información sobre sesgos del modelo de difusión ni sobre la composición del dataset de entrenamiento, por lo que no es posible evaluar riesgos de sesgo demográfico o estilístico.
-- Riesgo de alucinación visual: como todo modelo generativo de imagen, puede producir contenido incoherente, anatómicamente incorrecto o texto ilegible en las imágenes.
-- Licencia Apache 2.0 declarada en el repo, pero al ser un repackaging conviene verificar que los términos de los modelos base (OpenMOSS y Qwen) sean compatibles con el uso comercial previsto.
-- Ausencia de benchmarks y de documentación técnica: no es posible estimar rendimiento, latencia ni calidad de forma objetiva a partir de la información disponible.
-- Fecha de creación futura (2026-11-03) en los metadatos, lo que sugiere posibles inconsistencias en el registro del repositorio.
+- La model card es meramente descriptiva (listado de ficheros) y no documenta arquitectura, entrenamiento, sesgos ni evaluacion; la trazabilidad tecnica es muy baja.
+- Al ser un repack de terceros, no hay garantia de que las cuantizaciones hayan sido validadas frente al modelo original; la calidad de imagen puede degradarse respecto a BF16, especialmente en Q2_K_S para el text encoder.
+- Riesgo de alucinacion visual y de artefactos propios de modelos de difusion cuantizados; no se documenta ningun mecanismo de mitigacion.
+- Idiomas soportados no declarados; el comportamiento multilingue del codificador Qwen3.5-9B en este pipeline no esta verificado.
+- Licencia Apache 2.0 declarada, pero conviene verificar las condiciones de los componentes derivados (MOSS-Image-SFT, Qwen3.5-9B y el VAE) antes de uso comercial, ya que el repack no aclara la licencia efectiva de cada pieza.
+- El tag `model-cacher-ng` y la naturaleza del repositorio sugieren un uso como cache/espejo; no hay soporte oficial ni mantenimiento garantizado por parte del autor original.
+- No se documentan requisitos de hardware ni rendimiento, lo que dificulta planificar un despliegue en produccion.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/localdadmin/MOSS-Image-SFT-SM
-- Modelo base MOSS-Image-Base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
-- Cuantización GGUF de MOSS-Image-Base: https://huggingface.co/unsloth/MOSS-Image-Base-GGUF
-- Modelo base MOSS-Image-SFT: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
-- Cuantización GGUF de MOSS-Image-SFT: https://huggingface.co/unsloth/MOSS-Image-SFT-GGUF
-- Text encoder Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
-- Cuantización GGUF de Qwen3.5-9B: https://huggingface.co/unsloth/Qwen3.5-9B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/localdadmin/MOSS-Image-SFT-SM
+- Modelo original SFT: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
+- Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
+- Codificador de texto: https://huggingface.co/Qwen/Qwen3.5-9B
+- Cuantizacion GGUF mencionada por el autor: https://huggingface.co/unsloth/MOSS-Image-SFT-GGUF

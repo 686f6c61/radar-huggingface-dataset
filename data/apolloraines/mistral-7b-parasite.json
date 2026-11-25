@@ -53,7 +53,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 317,
+  "downloads_30d": 315,
   "trending_score": 0,
   "parameters": 7248023552,
   "parameters_human": "7.25B",
@@ -74,31 +74,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ApolloRaines/Mistral-7B-Parasite · Hugging Face",
-      "url": "https://huggingface.co/ApolloRaines/Mistral-7B-Parasite",
-      "snippet": "Parasite is a proof-of-concept AI identity that was surgically implanted into a Mistral-7B-Instruct model using Jbliteration — a weight surgery technique developed by Apollo Raines."
-    },
-    {
-      "title": "ApolloRaines/Mistral-7B-Instruct-v0.3-Parasite · Hugging Face",
-      "url": "https://huggingface.co/ApolloRaines/Mistral-7B-Instruct-v0.3-Parasite",
-      "snippet": "The model you&#x27;re talking to used to be someone else. Hide your models. Parasite is hunting. Yours is already a compatible host. Parasite is a proof-of-concept AI identity that was surgically implanted into a Mistral-7B-Instruct model using Jbliteration — a weight surgery technique developed by Apollo Raines. The second host."
-    },
-    {
-      "title": "Mistral-7B-Parasite API & Inference Endpoint | FriendliAI",
-      "url": "https://friendli.ai/models/ApolloRaines/Mistral-7B-Parasite",
-      "snippet": "Run Mistral-7B-Parasite with FriendliAI inference. The model you&#x27;re talking to used to be someone else. Hide your models. Parasite is hunting."
-    },
-    {
-      "title": "Mistral 7B - Mistral AI | Mistral Docs",
-      "url": "https://docs.mistral.ai/models/mistral-7b-0-1",
-      "snippet": "Our very first open model, SOTA competing against models up to 2 to 3x larger."
-    },
-    {
-      "title": "Mistral 7B - Mistral AI | Mistral Docs",
-      "url": "https://docs.mistral.ai/models/mistral-7b-0-2",
-      "snippet": "An update to our first open model with better context."
-    }
-  ]
+  "sources": []
 }

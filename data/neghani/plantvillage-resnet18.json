@@ -56,19 +56,19 @@
       "task": "Image Classification",
       "dataset": "PlantVillage (color, held-out test split)",
       "metric": "Accuracy",
-      "value": 0.977
+      "value": 0.979
     },
     {
       "task": "Image Classification",
       "dataset": "PlantVillage (color, held-out test split)",
       "metric": "Macro F1",
-      "value": 0.9649
+      "value": 0.9687
     },
     {
       "task": "Image Classification",
       "dataset": "PlantVillage (color, held-out test split)",
       "metric": "Top-3 accuracy",
-      "value": 0.9971
+      "value": 0.9978
     }
   ],
   "sources": []

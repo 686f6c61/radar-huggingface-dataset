@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Aurum-2B-Uncensored-i1-GGUF",
+  "slug": "mradermacher-aurum-2b-uncensored-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Aurum-2B-Uncensored-i1-GGUF",
+  "created_at": "2026-11-25T02:57:06.000Z",
+  "updated_at": "2026-11-25T02:57:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 812958,
+  "parameters_human": "812958",
+  "storage_bytes": 3295680,
+  "storage_human": "3 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "KRAFTON",
   "url": "https://huggingface.co/KRAFTON/Raon-1-mini-dflash2",
   "created_at": "2026-11-24T15:04:05.000Z",
-  "updated_at": "2026-11-24T18:23:24.000Z",
+  "updated_at": "2026-11-25T02:00:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 3,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 677776640,

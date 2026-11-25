@@ -5,14 +5,13 @@
   "author": "HaianCao",
   "url": "https://huggingface.co/HaianCao/hamic-runs",
   "created_at": "2026-11-14T15:18:27.000Z",
-  "updated_at": "2026-11-20T04:24:47.000Z",
+  "updated_at": "2026-11-25T03:40:54.000Z",
   "license": "hamic-license",
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
-    "safetensors",
     "license:other",
     "region:us"
   ],
@@ -21,13 +20,11 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 682829432183,
-  "storage_human": "682.8 GB",
+  "storage_bytes": 864664420110,
+  "storage_human": "864.7 GB",
   "context_length": null,
   "base_model": null,
-  "formats": [
-    "safetensors"
-  ],
+  "formats": [],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

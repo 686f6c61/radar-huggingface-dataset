@@ -67,31 +67,5 @@
   "renamed_to": "goldhub/Qwen3.8-27B-BF16-INT4-W4A16-G32-AutoRound",
   "renamed_at": "2026-11-11T05:27:03.580Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - qwen3-8-27b/qwen3-8-27b: Run Qwen3.8-27B locally in one click ...",
-      "url": "https://github.com/qwen3-8-27b/qwen3-8-27b",
-      "snippet": "Qwen3.8-27B is Alibaba&#x27;s new local coding model, and this is the one-click installer that gets it running on your machine without a single terminal command, quantization decision, or config file. Download, double-click, and you&#x27;re pair-programming with a frontier-class model that never sends a line of your code to anyone&#x27;s cloud."
-    },
-    {
-      "title": "goldhub/Qwen3.8-27B-INT4-W4A16-AutoRound · Hugging Face",
-      "url": "https://huggingface.co/goldhub/Qwen3.8-27B-INT4-W4A16-AutoRound",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
-      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
-      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
-    },
-    {
-      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
-      "url": "https://lovableapp.org/blog/qwen3-8-27b",
-      "snippet": "The complete 2026 guide to Qwen3.8-27B — Qwen&#x27;s new 27B dense vision-language model with DeepSWE 42.2, Terminal Bench 73.0, OSWorld 84.3, native image/video input, 262K context, and Apache 2.0 weights."
-    },
-    {
-      "title": "Qwen3.8-27B-INT4-W4A16-AutoRound - Hugging Face",
-      "url": "https://huggingface.co/goldhub/Qwen3.8-27B-INT4-W4A16-AutoRound/discussions/1",
-      "snippet": "Hey HF fam, We just dropped what we believe is the definitive consumer-grade quant of Qwen3.8-27B — and we did it by breaking every rule in the quantization playbook. 🔗 Weights: goldhub/Qwen3.8-27B-INT4-W4A16-AutoRound"
-    }
-  ]
+  "sources": []
 }

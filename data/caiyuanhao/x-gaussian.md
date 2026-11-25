@@ -2,97 +2,91 @@
 
 ## Resumen
 
-X-Gaussian es un método de reconstrucción y síntesis de vistas novedosas para imagen médica basado en 3D Gaussian Splatting adaptado a rayos X. Lo desarrolla Yuanhao Cai (Johns Hopkins University) y se presentó en ECCV 2024 bajo el título "Radiative Gaussian Splatting for Efficient X-ray Novel View Synthesis". No es un modelo de lenguaje: es un campo de radiancia gaussiano que modela la atenuación de rayos X mediante gaussianas 3D con atributos radiativos, permitiendo renderizar proyecciones 2D desde ángulos arbitrarios y reconstruir directamente un volumen CT a partir de pocas proyecciones.
+X-Gaussian es un método de reconstrucción y síntesis de vistas novedosas para imagen de rayos X y tomografía computarizada (CT), presentado en ECCV 2024 por Cai Yuanhao y colaboradores. No es un modelo de lenguaje: es un pipeline de reconstrucción 3D basado en *3D Gaussian Splatting* con un módulo de radiación diferenciable que modela la física de atenuación de rayos X, lo que permite reconstruir volúmenes CT directamente desde proyecciones 2D y renderizar vistas X-ray sintéticas desde ángulos arbitrarios.
 
-El repositorio de Hugging Face contiene cinco checkpoints entrenados, uno por escena anatómica (Chest, Abdomen, Foot, Head y Pancreas), todos en la iteración 31.000. Cada checkpoint es un fichero PLY con la nube de gaussianas y los metadatos del decodificador y la geometría del escáner. La relevancia actual radica en que reduce drásticamente el número de proyecciones necesarias (50 frente a las cientos o miles de una reconstrucción CT convencional), lo que implica menor dosis de radiación para el paciente y menor tiempo de adquisición.
+El repositorio de Hugging Face (0,6 GB) contiene los pesos entrenados para cinco escenas CT (chest, foot, head, abdomen, pancreas) más tres escaneos reales, junto con el código PyTorch necesario para inferencia y optimización. La relevancia práctica está en que sustituye parte del coste computacional de la reconstrucción iterativa clásica (FBP, SART) por una representación explícita de gaussianas optimizable por gradiente, con tiempos de convergencia notablemente menores según los autores.
 
-La implementación es específica por escena: un modelo entrenado para un paciente/región no generaliza a otra anatomía ni a otra geometría de escáner. Reconstruir una escena nueva exige reentrenar desde sus proyecciones y su configuración de adquisición.
+Es una herramienta de nicho para imagen médica e inspección no destructiva, no un modelo generativo de propósito general. Su licencia Apache 2.0 facilita el uso comercial, aunque el dominio de aplicación (datos clínicos) impone sus propias restricciones regulatorias.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | 3D Gaussian Splatting radiativo (campo de gaussianas 3D con decodificador de atenuación para rayos X) |
-| Parametros totales | no disponible (no es un modelo neuronal con parámetros en el sentido habitual; el estado es una nube de gaussianas) |
+| Arquitectura | 3D Gaussian Splatting con renderizador radiativo diferenciable (X-ray) |
+| Parametros totales | no disponible (depende del número de gaussianas por escena; no se publica cifra agregada) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica |
-| Tipos de cuantizacion | no disponible (no se documentan cuantizaciones; el formato de salida es PLY en coma flotante) |
-| Idiomas soportados | no aplica (modelo de imagen médica, sin capacidades lingüísticas) |
+| Longitud de contexto | no aplica (no es un modelo de secuencia de texto) |
+| Tipos de cuantizacion | no disponible (pesos en precisión completa PyTorch; no se documentan variantes GGUF/INT8) |
+| Idiomas soportados | no disponible (no es un modelo lingüístico) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | PLY (point cloud con 62 columnas por punto, más metadatos globales de decodificador y geometría) |
+| Formato de pesos | checkpoints PyTorch (`.pth`); repo de 0,6 GB |
+| Libreria | PyTorch |
+| Escenas incluidas | 5 escenas CT + 3 escaneos reales |
 
 ## Arquitectura y entrenamiento
 
-X-Gaussian representa la atenuación de rayos X con gaussianas 3D anisótropas, cada una con posición, covarianza, opacidad y coeficientes radiativos. El renderizado proyecta estas gaussianas sobre el plano del detector siguiendo la geometría del escáner (cono o haz paralelo según configuración), y un decodificador transforma la densidad acumulada en intensidad de rayos X. El modelo se entrena conjuntamente con pérdida de proyección 2D, variación total 3D y consistencia de rayos de volumen, lo que permite obtener simultáneamente síntesis de vistas 2D y un volumen CT 3D.
+X-Gaussian representa el volumen mediante un conjunto de gaussianas 3D con posición, covarianza, opacidad y coeficientes de atenuación. Un renderizador radiativo diferenciable proyecta estas gaussianas a lo largo de los rayos X aplicando la ley de Beer-Lambert, de modo que la imagen sintética se obtiene integrando la atenuación acumulada. Esto permite optimizar la representación directamente contra proyecciones reales mediante descenso de gradiente, sin necesidad de reconstrucción volumétrica intermedia.
 
-Cada checkpoint se entrenó a partir de 50 proyecciones de rayos X a la resolución original del dataset, con inicialización FDK solo con datos de entrenamiento, 30.000 pasos base y 1.000 pasos adicionales de refinamiento por rayos de volumen. Los volúmenes CT de referencia se usaron exclusivamente para evaluación, nunca para entrenamiento. El número de gaussianas varía por escena: 500.000 (Chest), 59.756 (Abdomen), 77.682 (Foot), 116.013 (Head) y 244.511 (Pancreas).
+El entrenamiento se realiza por escena (no es un modelo fundacional preentrenado en un corpus masivo): se optimizan las gaussianas a partir de un conjunto de proyecciones X-ray o sinogramas CT. La innovación principal es el módulo de radiación diferenciable, que sustituye el renderizado óptico estándar de 3DGS por un modelo físico de atenuación, y un esquema de inicialización/crecimiento de gaussianas adaptado a la geometría cónica de rayos X. La model card no detalla el número de iteraciones, la composición exacta de los datasets ni si se emplea regularización adicional; esos datos deben consultarse en el paper (arXiv:2403.04116).
 
 ## Capacidades
 
-- Síntesis de vistas novedosas de rayos X 2D desde ángulos no observados durante el entrenamiento.
-- Reconstrucción directa de volumen CT 3D desde el mismo campo gaussiano, conservando los atributos por punto.
-- Exportación de la nube de gaussianas en PLY con 62 columnas por punto para análisis o procesado externo.
-- Renderizado 2D condicionado a la geometría de cámara/escáner correspondiente a cada escena.
-- Modelado de atenuación radiativa específico para imagen médica (no es un modelo de propósito general).
-- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingües.
+- Reconstrucción 3D directa de volúmenes CT a partir de proyecciones 2D, sin paso intermedio de retroproyección filtrada.
+- Síntesis de vistas X-ray novedosas desde ángulos no observados durante la optimización.
+- Renderizado de volúmenes anatómicos (tórax, pie, cabeza, abdomen, páncreas) y de escaneos reales.
+- Optimización por escena con convergencia por gradiente sobre la representación gaussiana.
+- Exportación de la representación para visualización y renderizado en tiempo interactivo una vez optimizada.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingües: no es un modelo de lenguaje.
 
 ## Casos de uso
 
-- Reconstrucción CT con baja dosis: a partir de 50 proyecciones se obtiene un volumen 3D, reduciendo la radiación frente a una adquisición convencional con cientos de proyecciones.
-- Síntesis de proyecciones intermedias: generar vistas 2D adicionales entre los ángulos adquiridos para aumentar la densidad angular sin nueva exposición.
-- Investigación en imagen médica: banco de pruebas reproducible con cinco anatomías (tórax, abdomen, pie, cabeza, páncreas) y métricas 2D/3D publicadas.
-- Evaluación de pipelines de reconstrucción: comparar métodos alternativos contra los checkpoints y métricas de referencia del repositorio.
-- Visualización y análisis de volumen: exportar el PLY y procesar la nube de gaussianas en herramientas de visualización 3D para inspección anatómica.
-- Docencia y prototipado: usar las escenas incluidas para experimentar con Gaussian Splatting aplicado a rayos X sin necesidad de adquirir datos propios.
-- Desarrollo de métodos de inicialización: emplear la inicialización FDK y la configuración documentada como línea base para nuevas propuestas.
+- Reconstrucción CT acelerada en investigación: optimizar el volumen directamente desde sinogramas reducidos para estudiar protocolos de baja dosis, aprovechando que el renderizador radiativo evita la retroproyección filtrada completa.
+- Síntesis de vistas X-ray para aumento de datos: generar proyecciones desde ángulos arbitrarios a partir de un escaneo existente para entrenar detectores o segmentadores con más variedad angular.
+- Inspección no destructiva industrial: reconstruir piezas metálicas o componentes electrónicos desde proyecciones X-ray y renderizar vistas internas para detectar poros o grietas.
+- Docencia y visualización anatómica: renderizar volúmenes de tórax, cabeza o abdomen de forma interactiva para material formativo, usando las cinco escenas CT incluidas.
+- Validación de algoritmos de reconstrucción: usar las escenas de referencia como *ground truth* sintético para comparar métodos clásicos (FBP, SART) frente a enfoques basados en gaussianas.
+- Prototipado de pipelines de imagen médica: integrar el código PyTorch en flujos de experimentación con datos propios, dado que la licencia Apache 2.0 permite modificación y uso comercial.
+- Investigación en *novel view synthesis* aplicada a rayos X: extender el método a nuevas geometrías de escaneo o modalidades (CBCT, fluoroscopia) partiendo del código liberado.
 
 ## Benchmarks y rendimiento
 
-Resultados medidos sobre los checkpoints exactos alojados en el repositorio:
-
-| Escena | Resolución CT | PSNR 2D (dB) | SSIM 2D | PSNR 3D (dB) | SSIM 3D |
-|---|---|---:|---:|---:|---:|
-| Chest | 128 × 128 × 128 | 47,21 | 0,9937 | 31,94 | 0,8895 |
-| Abdomen | 512 × 512 × 463 | 48,16 | 0,9968 | 33,33 | 0,8917 |
-| Foot | 256 × 256 (resto no disponible) | no disponible | no disponible | no disponible | no disponible |
-| Head | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Pancreas | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-No se dispone en la información proporcionada de resultados de las escenas Foot, Head y Pancreas ni de comparativas numéricas con otros métodos.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card remite al paper (ECCV 2024, arXiv:2403.04116) para las métricas cuantitativas (PSNR, SSIM, LPIPS y tiempos de convergencia), que no se reproducen en el repositorio.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; depende del número de gaussianas (hasta 500.000 en Chest) y de la resolución de renderizado.
-- GPU recomendadas: no disponible en la información proporcionada; el proyecto se distribuye con implementación PyTorch.
-- Compatibilidad con GPU de consumo: no confirmada en la información disponible.
-- Opciones de despliegue: scripts del repositorio oficial (`render.py`) con PyTorch; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplican a este tipo de modelo).
+- VRAM estimada: no disponible de forma oficial; depende del número de gaussianas y de la resolución de renderizado. El repo pesa 0,6 GB, lo que da una cota inferior del espacio de pesos, pero el consumo en inferencia/optimización es mayor.
+- GPU recomendadas: no especificadas por el autor. Por la naturaleza del método (optimización por gradiente con renderizado diferenciable), se requiere una GPU NVIDIA con soporte CUDA; una RTX 3090/4090 (24 GB) es un punto de partida razonable para escenas de tamaño moderado, y A100/H100 para volúmenes grandes o barridos de hiperparámetros.
+- ¿Cabe en GPU de consumo? Probablemente sí para las escenas incluidas en una GPU de 24 GB, aunque no hay confirmación oficial; verificar en el repositorio de GitHub.
+- Opciones de despliegue: PyTorch nativo (scripts del repositorio de GitHub) y demo en Hugging Face Spaces. No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se han publicado en la información disponible comparativas numéricas con métodos alternativos de síntesis de vistas por rayos X o reconstrucción CT con Gaussian Splatting. La model card referencia el estado del arte en el paper de ECCV 2024, pero no se incluyen aquí cifras de modelos competidores.
-
-| Modelo | Tipo | Escenas | Licencia | Disponibilidad |
+| Modelo | Enfoque | Representación | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| X-Gaussian | Gaussian Splatting radiativo | 5 (Chest, Abdomen, Foot, Head, Pancreas) | Apache 2.0 | Pesos en Hugging Face |
-| Alternativas | no disponible | no disponible | no disponible | no disponible |
+| X-Gaussian | Gaussian splatting radiativo para X-ray/CT | Gaussianas 3D + renderizador de atenuación | Apache 2.0 | Pesos y código públicos |
+| NeRF-based CT (p. ej. variantes de NeRF médico) | Campos de radiancia neuronales para reconstrucción | MLP implícita | variable según implementación | Código público en su mayoría |
+| FBP / SART clásicos | Reconstrucción analítica e iterativa | Volumen voxelizado | dominio público / libre | Implementaciones múltiples (ASTRA, TIGRE) |
+
+La comparación cuantitativa de rendimiento (PSNR, tiempo de convergencia) no está disponible en la información proporcionada y debe extraerse del paper.
 
 ## Limitaciones y advertencias
 
-- Los checkpoints son específicos por escena: no generalizan a otra anatomía ni a otra geometría de escáner; requieren reentrenamiento.
-- El renderizado 2D necesita la geometría de cámara correspondiente; el PLY por sí solo no basta para síntesis de vistas.
-- Uso clínico no validado: son resultados de investigación (ECCV 2024), no un dispositivo médico; no deben emplearse para diagnóstico sin validación regulatoria.
-- Riesgo de artefactos en reconstrucción 3D con pocas proyecciones; las métricas 3D (PSNR ~32-33 dB) son inferiores a las 2D.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta; madurez de la comunidad limitada.
-- Licencia Apache 2.0 permite uso comercial, pero la responsabilidad sobre el uso médico recae en el implementador.
-- No es un modelo de lenguaje: no procesa texto, no soporta instrucciones ni diálogo.
+- No es un modelo de lenguaje ni un modelo fundacional: no admite prompts de texto, tool calling ni razonamiento; cualquier uso fuera de reconstrucción/síntesis X-ray es inadecuado.
+- El modelo se optimiza por escena; no generaliza a un volumen nuevo sin reoptimizar, lo que limita su uso como servicio preentrenado.
+- Los pesos incluidos cubren cinco escenas CT y tres escaneos reales; su aplicabilidad a otras anatomías o geometrías no está garantizada.
+- Riesgo de artefactos de reconstrucción con pocas proyecciones o geometrías fuera de distribución; validar siempre contra *ground truth* o reconstrucción clásica.
+- Uso clínico: a pesar de la licencia Apache 2.0, cualquier aplicación diagnóstica requiere validación regulatoria (MDR en la UE, FDA en EE. UU.); el modelo no está certificado como dispositivo médico.
+- Sesgos: los datasets de entrenamiento pueden sobrerrepresentar determinadas anatomías o poblaciones; no se documenta composición demográfica.
+- No se documentan cuantizaciones ni formatos optimizados para despliegue en producción.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/CaiYuanhao/X-Gaussian
+- Hugging Face: https://huggingface.co/CaiYuanhao/X-Gaussian
 - Dataset: https://huggingface.co/datasets/CaiYuanhao/X-Gaussian
+- Demo: https://huggingface.co/spaces/CaiYuanhao/X-Gaussian
 - Paper (arXiv): https://arxiv.org/abs/2403.04116
-- Código: https://github.com/caiyuanhao1998/X-Gaussian
-- Interpretación en Zhihu: https://zhuanlan.zhihu.com/p/717744222
-- Vídeo: https://www.youtube.com/watch?v=v6FESb3SkJg
-- Cobertura en Radiance Fields: https://radiancefields.com/x-gaussian-radiance-meets-radiation
+- Página del proyecto: https://caiyuanhao1998.github.io/project/X-Gaussian/
+- Código (GitHub): https://github.com/caiyuanhao1998/X-Gaussian
+- Artículo divulgativo (Zhihu): https://zhuanlan.zhihu.com/p/717744222
+- Hilo en X (AK): https://x.com/_akhaliq/status/1765929288044290253

@@ -5,7 +5,7 @@
   "author": "CaleraLabs",
   "url": "https://huggingface.co/CaleraLabs/medcodesec-12b-gguf",
   "created_at": "2026-11-24T15:23:21.000Z",
-  "updated_at": "2026-11-24T17:11:56.000Z",
+  "updated_at": "2026-11-25T01:48:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

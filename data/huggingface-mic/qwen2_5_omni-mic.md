@@ -2,98 +2,87 @@
 
 ## Resumen
 
-`huggingface-mic/qwen2_5_omni-mic` es un artefacto de prueba (fixture) publicado por el equipo de Hugging Face MIC para validar la integración de frameworks con la arquitectura `Qwen2_5OmniForConditionalGeneration`, la misma que emplea el modelo real `Qwen/Qwen2.5-Omni-7B`. No es un modelo entrenado ni utilizable para inferencia real: sus pesos son aleatorios (semilla 17) y su única finalidad es servir como banco de pruebas reproducible para pipelines de integración continua en Transformers y frameworks asociados.
+`huggingface-mic/qwen2_5_omni-mic` es un artefacto de prueba (fixture) publicado por la organización `huggingface-mic`, no un modelo entrenado ni utilizable. Se presenta como una versión "slim" (reducida) de `Qwen/Qwen2.5-Omni-7B`, con la misma arquitectura declarada (`Qwen2_5OmniForConditionalGeneration`) pero con un número de capas drásticamente menor y pesos aleatorios generados con semilla 17. Su propósito es servir como contrato ejecutable para validar la integración de la arquitectura Qwen2.5-Omni en frameworks como Transformers, no para inferencia real.
 
-El repositorio contiene pesos "slim" de 25.605.164 parámetros (el propio autor menciona además un fixture secundario de 170,4M parámetros), junto con el manifiesto de contrato (`integration.json`), la documentación de uso en Transformers y el directorio de expectativas del framework. La arquitectura se ha reducido drásticamente respecto al modelo original: 2 capas en el encoder de audio, 2 capas en el modelo de texto, 2 capas en el talker y 2 capas en el DiT, manteniendo los mismos nombres de tensor que el checkpoint real.
+El repositorio contiene 25.605.164 parámetros reales según los safetensors, aunque la model card menciona una fixture de 170,4M de parámetros; la discrepancia no queda resuelta en la información disponible. El tamaño del repo es de 1,0 GB. Está etiquetado explícitamente como `test-artifact` para excluirlo de búsquedas de modelos candidatos. No se trata, por tanto, de un modelo de lenguaje operativo: no genera texto coherente, no razona y no debe desplegarse en producción.
 
-Su relevancia es metodológica, no de rendimiento: permite a los mantenedores de frameworks verificar carga de pesos, formas de tensores, procesadores y flujos de generación sin descargar los ~16 GB del modelo Omni completo. Está etiquetado explícitamente como `test-artifact` para excluirlo de búsquedas de modelos candidatos a producción.
+Su relevancia es metodológica: ilustra el patrón de "fixtures de integración" que copian ficheros de procesador byte a byte del checkpoint original y replican nombres de tensores, permitiendo a los mantenedores de frameworks comprobar que el código de carga, el forward, la pérdida y los gradientes funcionan con la arquitectura real sin necesidad de descargar los 7B parámetros completos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen2_5OmniForConditionalGeneration (multimodal: audio encoder + text decoder + talker + DiT), configuracion reducida a 2 capas por modulo |
-| Parametros totales | 25.605.164 (fixture principal); 170,4M en el fixture secundario `mic-qwen2_5_omni-slim` |
+| Arquitectura | Qwen2_5OmniForConditionalGeneration (variante reducida de Qwen2.5-Omni) |
+| Parametros totales | 25.605.164 (safetensors); la model card cita 170,4M para la fixture slim |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos en bfloat16; finito en float32, bfloat16 y float16) |
-| Idiomas soportados | no disponible (los ficheros de procesador se copian del modelo base `Qwen/Qwen2.5-Omni-7B`) |
-| Licencia | no disponible en la metadata del repositorio; el fichero `LICENSE` del procesador se copia byte a byte desde `Qwen/Qwen2.5-Omni-7B` |
+| Tipos de cuantizacion | no disponible (pesos en bfloat16) |
+| Idiomas soportados | no disponible |
+| Licencia | no disponible (el fichero LICENSE se copia del checkpoint base, pero no se especifica el tipo) |
 | Formato de pesos | safetensors (bfloat16) |
-| Modelo base | Qwen/Qwen2.5-Omni-7B |
-| Proposito | test-artifact / fixture de integracion |
-| Tamano del repo | 1,0 GB |
-| Descargas | 3.406 |
-| Fecha de creacion | 2026-10-12 |
-| Ultima actualizacion | 2026-11-12 |
 
 ## Arquitectura y entrenamiento
 
-El fixture replica la topologia de `Qwen2_5OmniForConditionalGeneration`, la clase multimodal de Qwen2.5-Omni que combina un encoder de audio, un modelo de lenguaje de texto, un modulo "talker" para generacion de habla y un bloque DiT (Diffusion Transformer). Para reducir el coste, el script `sweep.py` del repositorio `transformers-mic` aplica una regla generica de "shrink": deja 2 capas en cada uno de los cuatro modulos (audio encoder, text, talker, DiT) y conserva los nombres de tensor identicos al checkpoint original, de modo que cualquier discrepancia en la carga de pesos se detecta igual que con el modelo real.
+La arquitectura declarada es `Qwen2_5OmniForConditionalGeneration`, la misma clase que el modelo multimodal Qwen2.5-Omni-7B, que combina un encoder de audio, un modelo de texto y un módulo "talker" para generación de voz, además de un componente DiT. En esta fixture, todas esas pilas se han reducido a 2 capas cada una (audio encoder_layers 2, text num_hidden_layers 2, talker num_hidden_layers 2, dit num_hidden_layers 2) mediante la regla genérica de `sweep.py` del repositorio `transformers-mic`.
 
-No ha habido entrenamiento. Los pesos se inicializan de forma aleatoria con semilla 17 y se validan mediante una "input-sensitivity gate": cada perturbacion de las entradas del contrato debe mover los logits al menos 0,001 (la perturbacion mas debil, `attention_mask:all_ones`, produce 0,773). Los ficheros de procesador (`tokenizer.json`, `chat_template.json`, `preprocessor_config.json`, `spk_dict.pt`, `merges.txt`, `vocab.json`, entre otros) se copian byte a byte desde `Qwen/Qwen2.5-Omni-7B`, garantizando que el pipeline de preprocesado sea identico al del modelo real. El resultado se guarda en bfloat16, el dtype por defecto del checkpoint original, y se verifica que forward, loss y gradientes son finitos en float32, bfloat16 y float16.
+No hubo entrenamiento. Los pesos son aleatorios (semilla 17) y se validaron con una "input-sensitivity gate": cada perturbación de las entradas del contrato desplazaba los logits al menos 0,001 (el caso más débil, `attention_mask:all_ones`, dio 0,773). Los ficheros de procesador (`tokenizer.json`, `vocab.json`, `merges.txt`, `chat_template.json`, `preprocessor_config.json`, `spk_dict.pt`, entre otros) se copiaron byte a byte desde `Qwen/Qwen2.5-Omni-7B`. Los tensores conservan los mismos nombres que el checkpoint real y los pesos son finitos en float32, bfloat16 y float16 tanto en forward como en pérdida y gradientes.
 
 ## Capacidades
 
-- Carga y ejecucion del grafo completo `Qwen2_5OmniForConditionalGeneration` con formas de tensor equivalentes al modelo real.
-- Validacion de integracion en Transformers: importacion, `from_pretrained`, forward pass y generacion de texto con pesos aleatorios.
-- Verificacion de contratos de entrada y salida definidos en `integration.json` y en `integrations/transformers/expectations`.
-- Comprobacion de ficheros de procesador (tokenizer, chat template, preprocessor de audio, diccionario de hablantes) copiados del modelo base.
-- Test de sensibilidad de entradas: perturbaciones sobre `attention_mask` y otras entradas deben alterar los logits.
-- Verificacion de estabilidad numerica en float32, bfloat16 y float16.
-- No ofrece generacion de texto, razonamiento, codigo, matematicas, vision, audio real, tool calling, agentes ni capacidades multilingues utilizables: sus pesos son aleatorios.
+- No es un modelo funcional: los pesos aleatorios no producen texto, audio ni razonamiento coherente.
+- Sirve como contrato de integración: valida carga de checkpoint, forward pass, cálculo de pérdida y retropropagación en Transformers.
+- Replica la interfaz de procesador del modelo base (tokenizador, chat template, configuración de preprocesado de audio).
+- Conserva los nombres de tensores del checkpoint original, lo que permite probar rutas de carga y compatibilidad de `state_dict`.
+- No dispone de tool calling, agentes, capacidades multilingües ni modos de razonamiento utilizables.
+- No soporta generación multimodal real pese a heredar la clase arquitectónica de Qwen2.5-Omni.
 
 ## Casos de uso
 
-- Integracion continua en Transformers: ejecutar la suite de tests de `Qwen2_5OmniForConditionalGeneration` en cada PR sin descargar el checkpoint de ~16 GB, ya que el fixture de 25,6M parametros cubre los mismos nombres de tensor y el mismo contrato.
-- Validacion de pipelines de carga de pesos: comprobar que un nuevo loader o una refactorizacion de `from_pretrained` mapea correctamente todos los tensores del modelo Omni comparando contra el fixture.
-- Pruebas de regresion de procesadores: verificar que los ficheros de tokenizer, chat template y preprocessor de audio se cargan y aplican igual que en `Qwen/Qwen2.5-Omni-7B`, al estar copiados byte a byte.
-- Desarrollo de nuevas estrategias de atencion o kernels: usar el fixture como caso de prueba rapido del grafo multimodal (audio + texto + talker + DiT) antes de saltar al modelo completo.
-- Validacion de estabilidad numerica: ejecutar forward, loss y backward en float32, bfloat16 y float16 para detectar NaN/Inf en cambios de kernels o mixed precision.
-- Reproducibilidad de fixtures: reconstruir el artefacto con `python example/build_fixtures.py --fixture mic-qwen2_5_omni-slim` y comparar hashes registrados en `build.json` para auditar procedencia.
-- Docencia y experimentacion: estudiar la topologia de Qwen2.5-Omni con un coste de memoria minimo, ya que el repo pesa 1,0 GB frente a los ~16 GB del modelo real.
+- Pruebas de integración en Transformers: usar la fixture para verificar que la clase `Qwen2_5OmniForConditionalGeneration` se instancia, carga y ejecuta un forward sin errores antes de probar con el checkpoint de 7B.
+- CI/CD de frameworks: incluir el repositorio en pipelines de integración continua para detectar regresiones en la carga de safetensors y en la compatibilidad de nombres de tensores con un coste de descarga de 1,0 GB en lugar de los ~15 GB del modelo completo.
+- Validación de ficheros de procesador: comprobar que el tokenizador, el chat template y la configuración de audio copiados del modelo base se cargan correctamente en distintas versiones de la librería.
+- Desarrollo de utilidades de "model shrinking": servir de ejemplo reproducible del patrón de reducción de capas descrito en `sweep.py` para generar fixtures de otras arquitecturas.
+- Verificación de dtypes: testear que el modelo es finito en float32, bfloat16 y float16 en forward, pérdida y gradientes, útil para validar rutas de mixed precision.
+- Docencia y experimentación con arquitecturas multimodales: estudiar la estructura de módulos (audio encoder, text, talker, DiT) sin necesidad de recursos de GPU para 7B parámetros.
+- Pruebas de sensibilidad a entradas: reutilizar la "input-sensitivity gate" para validar que perturbaciones en `attention_mask` u otras entradas afectan a los logits en integraciones nuevas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo es un artefacto de prueba con pesos aleatorios, por lo que cualquier metrica de calidad (MMLU, HumanEval, GSM8K, etc.) carece de sentido.
+No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, cualquier métrica de calidad (MMLU, HumanEval, GSM8K) carecería de sentido.
 
 ## Requisitos de hardware
 
-- VRAM estimada: inferior a 1 GB para el fixture principal de 25,6M parametros en bfloat16 (los pesos ocupan ~51 MB; el repo de 1,0 GB incluye ademas procesadores y ficheros auxiliares).
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) o incluso CPU es suficiente; no requiere A100 ni H100.
-- Cabe en cualquier GPU consumer y en la mayoria de entornos CPU para tests de integracion.
-- Opciones de despliegue: Transformers (referencia principal, con `integrations/transformers/usage.md`), y en general cualquier framework que soporte `Qwen2_5OmniForConditionalGeneration`. No se documentan recetas para vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles; al ser un fixture de test no se publican metricas de rendimiento.
+- VRAM estimada para inferencia: inferior a 1 GB en bfloat16 para los 25,6M parámetros reportados; la fixture de 170,4M citada en la model card requeriría aproximadamente 0,34 GB en bfloat16.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; no requiere A100 ni H100.
+- Cabe en GPU consumer: sí, en cualquier RTX o incluso en CPU para pruebas de forward.
+- Opciones de despliegue: Transformers con el código de `transformers-mic`; no está pensado para vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo generativo funcional.
+- Latencia y throughput: no disponibles y no significativos para un artefacto de prueba.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| huggingface-mic/qwen2_5_omni-mic | 25,6M (fixture) | no disponible | Test-artifact para integracion de frameworks | no disponible | Hugging Face, 3.406 descargas |
-| Qwen/Qwen2.5-Omni-7B | ~7B | no disponible en esta ficha | Modelo multimodal real (audio + texto + habla) | no disponible en esta ficha | Hugging Face (modelo base) |
-| huggingface-mic/mic-qwen2_5_omni-slim | 170,4M (fixture) | no disponible | Fixture secundario del mismo contrato | no disponible | Referenciado en la model card |
+| huggingface-mic/qwen2_5_omni-mic | 25,6M (safetensors) / 170,4M (fixture) | no disponible | Fixture de integracion | no disponible | Hugging Face |
+| Qwen/Qwen2.5-Omni-7B | ~7B | no disponible en la informacion | Modelo multimodal real (texto, audio, vision) | no disponible en la informacion | Hugging Face |
+| Otras fixtures de transformers-mic | variable | no disponible | Pruebas de integracion por arquitectura | no disponible | Hugging Face (org. huggingface-mic) |
 
-La comparativa con alternativas reales de la misma categoria (modelos multimodales de ~7B) no esta disponible en la informacion proporcionada.
+La comparación relevante es con el checkpoint base: misma arquitectura y mismos ficheros de procesador, pero con capas reducidas y pesos aleatorios. Frente a otras fixtures del mismo proyecto, comparte el patrón de contrato ejecutable, aunque los detalles de cada una no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: los pesos son aleatorios (semilla 17) y cualquier salida es ruido. Esta etiquetado como `test-artifact` para excluirlo de busquedas de modelos candidatos.
-- No debe desplegarse en produccion bajo ninguna circunstancia, ni para generacion de texto, audio o cualquier otra tarea.
-- La licencia no aparece en la metadata del repositorio; el fichero `LICENSE` se copia del modelo base `Qwen/Qwen2.5-Omni-7B`, por lo que las condiciones de uso comercial deben consultarse en el repositorio original.
-- Los idiomas soportados no estan declarados; los ficheros de procesador se heredan del modelo base, pero el fixture no ha sido entrenado para ningun idioma.
-- Riesgo de confusion: el nombre y la estructura pueden llevar a error si se descubre via busqueda; verificar siempre la etiqueta `test-artifact` antes de usarlo.
-- No se documentan capacidades de tool calling, agentes, vision, audio real ni modo thinking: el fixture solo valida la topologia y el contrato de integracion.
-- El repositorio incluye un segundo fixture (`mic-qwen2_5_omni-slim`, 170,4M) cuya relacion exacta con el principal conviene revisar en `build.json` antes de reutilizarlo.
+- No es un modelo utilizable: los pesos son aleatorios y la salida no tiene significado.
+- Etiquetado como `test-artifact`; no debe incluirse en catálogos de modelos candidatos ni en evaluaciones de calidad.
+- Existe una discrepancia entre los 25.605.164 parámetros de los safetensors y los 170,4M citados en la model card; conviene verificar `build.json` antes de asumir un tamaño concreto.
+- La licencia no está especificada en la información disponible; el fichero LICENSE se copia del checkpoint base, por lo que las condiciones de uso comercial dependen de Qwen/Qwen2.5-Omni-7B y deben consultarse allí.
+- No apto para producción, atención al cliente, generación de código ni ninguna tarea generativa.
+- Riesgo de confusión: el nombre y la arquitectura pueden llevar a desplegarlo por error creyendo que es el modelo Omni real.
+- Los idiomas soportados no están declarados; el tokenizador copiado sugiere cobertura multilingüe del modelo base, pero no es verificable con pesos aleatorios.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/huggingface-mic/qwen2_5_omni-mic
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Omni-7B
-- Manifiesto de contrato: `integration.json` (en el repositorio)
-- Uso en Transformers: `integrations/transformers/usage.md` (en el repositorio)
-- Expectativas de Transformers: `integrations/transformers/expectations` (en el repositorio)
-- Procedencia del fixture: `build.json` (en el repositorio)
-- Explicacion del shrink: https://huggingface-mic-mic-coverage.static.hf.space/shrink/qwen2_5_omni-mic.html
-- Repositorio de herramientas: https://github.com/huggingface/transformers-mic
-- Script de construccion: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
-- Regla de shrink: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Explicación del proceso de reducción: https://huggingface-mic-mic-coverage.static.hf.space/shrink/qwen2_5_omni-mic.html
+- Repositorio transformers-mic: https://github.com/huggingface/transformers-mic
+- Script de reducción `sweep.py`: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Script de construcción `build_fixtures.py`: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py

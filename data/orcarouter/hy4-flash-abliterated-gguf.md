@@ -2,51 +2,50 @@
 
 ## Resumen
 
-Hy4-flash-abliterated-GGUF es una versión cuantizada en formato GGUF del modelo orcarouter/Hy4-flash-abliterated, un derivado "abliterated" (sin censura) del modelo Hunyuan de Tencent. El modelo base conserva la arquitectura Mixture of Experts (MoE) de la familia Hunyuan, con 218.938.353.741 parámetros totales según los safetensors del repositorio. Esta versión GGUF está pensada para inferencia local con llama.cpp y herramientas compatibles, con cuantizaciones de precisión mixta e imatrix.
+Hy4-flash-abliterated-GGUF es la versión cuantizada en formato GGUF del modelo Hy4-flash-abliterated, un derivado del modelo Hunyuan Hy4-flash de Tencent al que se le ha aplicado una técnica de "abliteration" para eliminar los mecanismos de rechazo entrenados, dando como resultado un modelo sin censura (uncensored). Lo publica el usuario orcarouter en Hugging Face y está pensado para ejecución local mediante llama.cpp y otros runners compatibles con GGUF.
 
-El modelo se distribuye bajo la licencia tencent-hy-license y solo soporta inglés y chino (en, zh). El acceso está restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos. El repositorio ocupa 612 GB, lo que refleja la inclusión de múltiples variantes de cuantización para un modelo de gran tamaño.
+El modelo base es un transformer de tipo mezcla de expertos (MoE) con 218.938.353.741 parámetros totales (aproximadamente 219 mil millones), según los datos de safetensors del modelo original. Solo se distribuyen pesos en formato GGUF, con cuantizaciones de precisión mixta generadas mediante imatrix, lo que permite reducir el tamaño del repositorio (612 GB) frente a los pesos completos en bf16.
 
-La relevancia de esta ficha radica en que combina dos tendencias: la cuantización GGUF para despliegue local de modelos MoE masivos y la modificación "abliterated" que elimina los mecanismos de rechazo del modelo original. Es un artefacto de nicho, con cero descargas en el momento de la consulta, orientado a usuarios que necesitan ejecutar localmente un modelo Hunyuan sin restricciones de contenido y con licencia de Tencent.
+Es relevante ahora porque ofrece una vía para ejecutar localmente un modelo MoE de gran escala sin censura, con soporte para inglés y chino, aunque el acceso está restringido (gated) y la licencia es la propia de Tencent (tencent-hy-license), lo que condiciona su uso comercial.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE), familia Hunyuan (detalles de capas y expertos no disponibles) |
-| Parametros totales | 218.938.353.741 |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer MoE (mezcla de expertos) |
+| Parámetros totales | 218.938.353.741 (~219 B) |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF con precisión mixta e imatrix (variantes concretas no disponibles) |
+| Tipos de cuantización | GGUF con precisión mixta e imatrix (niveles concretos no disponibles) |
 | Idiomas soportados | en, zh |
-| Licencia | tencent-hy-license |
-| Formato de pesos | GGUF (llama.cpp); el modelo base en safetensors |
-| Acceso | Restringido (gated), requiere aceptar condiciones |
-| Tamano del repositorio | 612,0 GB |
-| Modelo base | orcarouter/Hy4-flash-abliterated |
+| Licencia | tencent-hy-license (acceso gated) |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer con arquitectura Mixture of Experts (MoE) perteneciente a la familia Hunyuan de Tencent, según indican las etiquetas del repositorio (moe, hunyuan, hy4-flash). No se dispone de información sobre el número de expertos, la dimensión oculta, el número de capas ni los parámetros activos por token. Tampoco se documentan en la información proporcionada los datos de entrenamiento (número de tokens, composición del dataset) ni si hubo etapas de RLHF, DPO o ajuste por preferencias.
+La información disponible confirma que el modelo es de tipo MoE (mezcla de expertos), con 218.938.353.741 parámetros totales, y que deriva del Hunyuan Hy4-flash de Tencent. La técnica de abliteration se aplica sobre el modelo base Hy4-flash-abliterated para eliminar las direcciones de activación asociadas al rechazo, de modo que el modelo deja de negarse a responder ante determinadas peticiones.
 
-La modificación "abliterated" implica la eliminación de las direcciones de activación asociadas al rechazo de contenido, un procedimiento de edición de pesos que reduce la probabilidad de respuestas de negativa. Esta versión GGUF aplica cuantización de precisión mixta con calibración imatrix, una técnica que optimiza la asignación de bits por tensor según su importancia para la perplejidad. No se especifican los niveles de cuantización incluidos ni el método exacto de abliteración empleado.
+No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, el proceso de alineación (RLHF/DPO) ni innovaciones técnicas específicas del modelo original en la información proporcionada. Las cuantizaciones GGUF se han generado con precisión mixta e imatrix, una técnica que calibra la cuantización por capa usando una matriz de importancia para preservar mejor la calidad en modelos grandes.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés y chino.
-- Razonamiento y respuesta multi-turno (etiqueta conversational).
-- Capacidad de ejecución local mediante llama.cpp y runtimes compatibles con GGUF.
-- Comportamiento sin censura (uncensored) derivado de la abliteración: menor probabilidad de rechazo ante solicitudes que el modelo original declinaría.
-- Compatibilidad con endpoints (etiqueta endpoints_compatible), lo que sugiere integración con APIs de inferencia.
-- No se documentan capacidades de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito (thinking mode) en la información disponible.
+- Generación de texto conversacional (pipeline text-generation, tag conversational).
+- Razonamiento y respuesta multi-turno en inglés y chino.
+- Modelo sin censura (abliterated/uncensored): no aplica rechazos entrenados ante peticiones sensibles.
+- Ejecución local mediante llama.cpp y runners compatibles con GGUF.
+- Compatibilidad con endpoints (tag endpoints_compatible).
+- Soporte de tool calling / function calling: no disponible en la información.
+- Capacidades de agente y multi-step reasoning: no disponible en la información.
+- Visión, audio o modo thinking: no disponible en la información.
 
 ## Casos de uso
 
-- Investigación sobre alineación y seguridad: el modelo permite estudiar el efecto de la abliteración comparando sus respuestas con las del Hunyuan original en tareas sensibles, en un entorno controlado y local.
-- Despliegue local en infraestructura propia: gracias al formato GGUF y a llama.cpp, puede ejecutarse sin depender de servicios en la nube, útil cuando la confidencialidad de los datos es crítica.
-- Generación de texto en inglés y chino: adecuado para pipelines de contenido bilingüe donde se requiera un modelo MoE de gran escala ejecutado en hardware propio.
-- Experimentación con cuantización de precisión mixta: el repositorio con imatrix sirve como caso de estudio para evaluar la degradación de calidad de un MoE de ~219.000 millones de parámetros al cuantizarlo.
-- Evaluación de licencias y gated access: útil para equipos que necesitan verificar el flujo de aceptación de condiciones de la tencent-hy-license antes de integrar el modelo en un producto.
-- Prototipado de asistentes conversacionales sin restricciones de contenido en entornos de investigación cerrados, asumiendo la responsabilidad legal y ética del uso.
+- Despliegue local de un MoE de gran escala: gracias al formato GGUF y a las cuantizaciones de precisión mixta, se puede ejecutar en hardware propio con llama.cpp sin depender de APIs externas.
+- Investigación sobre alineación y seguridad: permite estudiar el comportamiento de un modelo al que se le ha eliminado el mecanismo de rechazo, comparándolo con el modelo original.
+- Generación de texto creativo sin restricciones: útil para escritura de ficción, guiones o contenido que los modelos alineados suelen rechazar.
+- Asistencia conversacional bilingüe inglés-chino: adecuado para aplicaciones que requieran conversación multi-turno en ambos idiomas.
+- Experimentación con cuantización: las variantes con imatrix y precisión mixta sirven para evaluar el impacto de la cuantización en la calidad de un MoE de ~219 B.
+- Prototipado de pipelines de text-generation: integrable en entornos locales compatibles con endpoints y llama.cpp para pruebas de concepto.
 
 ## Benchmarks y rendimiento
 
@@ -54,35 +53,35 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- El modelo tiene 218.938.353.741 parámetros; incluso en cuantizaciones agresivas de 4 bits, el peso ronda los 110-120 GB, por lo que no cabe en GPUs de consumo convencionales.
-- VRAM estimada: no disponible de forma oficial; por el tamaño paramétrico, se requiere un sistema multi-GPU o con memoria unificada de gran capacidad (varias A100/H100 de 80 GB o configuraciones equivalentes).
-- GPUs recomendadas: A100 80 GB, H100 80 GB en configuraciones múltiples; no se garantiza su funcionamiento en RTX 4090 (24 GB) salvo con offloading parcial a RAM/CPU, lo que degradaría notablemente el rendimiento.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), y potencialmente otros runtimes compatibles con GGUF; vLLM y TGI no se mencionan en la información disponible para este artefacto.
-- Latencia y throughput: no disponibles.
+- El repositorio completo ocupa 612 GB, por lo que se requieren varios discos o un almacenamiento NVMe de gran capacidad para descargar todas las cuantizaciones.
+- VRAM estimada: no disponible con precisión; un MoE de ~219 B en GGUF requiere, según el nivel de cuantización elegido, desde decenas hasta más de cien GB de memoria. No se especifican los niveles concretos en la información.
+- GPU recomendadas: no disponible en la información. Por el tamaño del modelo, no es viable en GPUs de consumo tipo RTX 4090 en su totalidad; se necesitarían configuraciones multi-GPU o offloading a RAM/CPU.
+- Despliegue: llama.cpp y runners compatibles con GGUF; otras opciones (vLLM, TGI, Ollama) no están confirmadas en la información.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Contexto | Idiomas | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| orcarouter/Hy4-flash-abliterated-GGUF | 218.938.353.741 | no disponible | en, zh | tencent-hy-license | GGUF |
-| orcarouter/Hy4-flash-abliterated (base) | no disponible | no disponible | en, zh | tencent-hy-license | safetensors |
-| Hunyuan original (familia Tencent) | no disponible en esta ficha | no disponible | en, zh | tencent-hy-license | no disponible |
+| Hy4-flash-abliterated-GGUF | ~219 B (MoE) | no disponible | tencent-hy-license | GGUF | Sin censura, acceso gated |
+| Hy4-flash-abliterated (base) | ~219 B (MoE) | no disponible | tencent-hy-license | safetensors | Versión sin cuantizar del mismo modelo |
+| Hunyuan Hy4-flash (original) | ~219 B (MoE) | no disponible | tencent-hy-license | no disponible | Modelo alineado de Tencent |
 
-No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas comparables en la información proporcionada.
+No se dispone de datos de rendimiento comparado con otras alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La abliteración elimina los mecanismos de rechazo, lo que incrementa el riesgo de generar contenido dañino, ilegal o sesgado; no es apto para aplicaciones de cara al público sin moderación adicional.
-- Riesgo de alucinación inherente a los modelos de lenguaje de gran escala; no se han publicado evaluaciones específicas para esta variante.
-- Soporte limitado a inglés y chino; no se garantiza un rendimiento adecuado en castellano ni en otros idiomas.
-- La licencia tencent-hy-license puede imponer restricciones al uso comercial; es obligatorio revisar sus términos antes de cualquier despliegue productivo.
-- El acceso es restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción a la automatización de descargas.
-- El tamaño del repositorio (612 GB) y del modelo dificultan su despliegue en infraestructura convencional; se necesita almacenamiento y memoria considerables.
-- No hay información sobre la longitud de contexto, los parámetros activos ni las variantes de cuantización incluidas, lo que limita la planificación de capacidad.
-- Cero descargas y un solo "like" en el momento de la consulta: no existe validación comunitaria del artefacto.
+- Al ser un modelo abliterated, se han eliminado los mecanismos de rechazo: puede generar contenido sensible, ofensivo o inseguro sin filtros, lo que exige supervisión y políticas de uso en producción.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no hay datos específicos de evaluación en la información.
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está garantizado.
+- Licencia tencent-hy-license: es necesario revisar las condiciones para uso comercial, ya que no es una licencia permisiva estándar.
+- Acceso restringido (gated): requiere aceptar las condiciones en Hugging Face antes de descargar.
+- El tamaño del repositorio (612 GB) y del modelo (~219 B) dificultan el despliegue en hardware de consumo.
+- No se dispone de información sobre la longitud de contexto, lo que limita la planificación de aplicaciones con ventanas largas.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/orcarouter/Hy4-flash-abliterated-GGUF
-- Modelo base: https://huggingface.co/orcarouter/Hy4-flash-abliterated
-- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.
+- Modelo en Hugging Face: https://huggingface.co/orcarouter/Hy4-flash-abliterated-GGUF
+- Modelo base sin cuantizar: https://huggingface.co/orcarouter/Hy4-flash-abliterated
+- Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp
+- Licencia Tencent Hunyuan: https://huggingface.co/orcarouter/Hy4-flash-abliterated-GGUF (condiciones accesibles tras aceptar el acceso gated)

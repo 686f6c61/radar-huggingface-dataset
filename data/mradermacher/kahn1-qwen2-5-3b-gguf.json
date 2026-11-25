@@ -54,31 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "How do I change my language on Fitbit? - Google Help",
-      "url": "https://support.google.com/googlehealth/answer/14236525?hl=en",
-      "snippet": "The default language Flyer uses for notifications is English. To change the language Flyer uses: Make sure Flyer is not playing audio …"
-    },
-    {
-      "title": "Supported languages - Play Console Help",
-      "url": "https://support.google.com/googleplay/android-developer/table/4419860?hl=en",
-      "snippet": "You can use Play Console in any of the languages listed below by changing your preferred language in your Google Account settings."
-    },
-    {
-      "title": "What does the German phrase ach du lieber mean in English?",
-      "url": "https://www.answers.com/education/What_does_the_German_phrase_ach_du_lieber_mean_in_English",
-      "snippet": "Dec 16, 2024 · Ach du lieber! is a shortened form of Ach du lieber Himmel! or Ach du lieber Gott! and translates as:Oh my …"
-    },
-    {
-      "title": "What differences are there between German schools and English",
-      "url": "https://www.answers.com/education/What_differences_are_there_between_German_schools_and_English_schools",
-      "snippet": "Oct 10, 2023 · German schools don't wear school uniforms whereas almost all English schools do.Although this is changing in certain …"
-    },
-    {
-      "title": "Change your language or use multiple languages - Google Help",
-      "url": "https://support.google.com/assistant/answer/7394513?hl=en&co=GENIE.Platform=Android",
-      "snippet": "On Smart Clocks, you can use the Google Assistant in Danish, Dutch, English, French, German, Japanese, Norwegian, Spanish, and …"
-    }
-  ]
+  "sources": []
 }

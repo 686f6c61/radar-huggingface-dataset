@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Shakespeare: Plays, Poems, and Sonnets 5M es un modelo de generación de texto de dominio muy restringido, publicado por el usuario wildfellhall en Hugging Face. Se trata de un modelo de arquitectura GPT-2 con 5.273.088 parámetros totales, entrenado específicamente sobre el corpus de obras de William Shakespeare: obras de teatro, poemas y sonetos. Su propósito no es el uso generalista, sino la generación de texto con el estilo, el registro y la métrica del inglés isabelino.
+El modelo `shakespeare-plays-poems-and-sonnets-5m` es un modelo de lenguaje extremadamente pequeno (5.273.088 parametros totales) desarrollado por el usuario wildfellhall y publicado en Hugging Face. Se trata de un modelo de generacion de texto especializado en continuacion de texto estilistico, entrenado exclusivamente sobre la obra de William Shakespeare: obras de teatro, poemas y sonetos. Su arquitectura es GPT-2, una familia de transformers decoder-only, y esta disenado para la tarea de text-generation en ingles.
 
-El modelo se enmarca en la categoría de los llamados small language models (SLM) y su tamaño extremadamente reducido (aproximadamente 5 millones de parámetros) lo sitúa muy por debajo de los modelos GPT-2 convencionales (124M, 355M, 774M, 1.5B). Esto implica que su capacidad de generalización es muy limitada y que su utilidad práctica queda circunscrita a tareas de generación estilística, experimentación educativa y demostraciones de entrenamiento de modelos minúsculos.
+La relevancia de este modelo es fundamentalmente didactica y experimental. Con apenas 5 millones de parametros, se situa en la categoria de los llamados SLM (small language models) y sirve como ejemplo de modelo especializado en un dominio muy concreto y de bajo coste computacional. No compite con modelos de proposito general, sino que ilustra como un modelo minusculo puede capturar patrones estilisticos de un corpus cerrado y generar continuaciones con cierta coherencia dentro de ese dominio.
 
-La relevancia de este modelo es, por tanto, acotada: resulta interesante como ejemplo de fine-tuning de un GPT-2 a muy pequeña escala sobre un corpus literario concreto, y como banco de pruebas para técnicas de generación condicionada por estilo. No está pensado para producción general, razonamiento, código ni tareas multilingües. La licencia MIT facilita su reutilización y modificación, incluso con fines comerciales, siempre que se conserve el aviso de copyright.
+El modelo se distribuye bajo licencia MIT, lo que facilita su uso y modificacion, y solo soporta ingles. Su tamano de repositorio es practicamente nulo (0.0 GB), lo que refleja la ligereza de los pesos en formato safetensors. Es un modelo adecuado para experimentacion, educacion y demostraciones de generacion de texto con estilos literarios clasicos.
 
 ## Especificaciones tecnicas
 
@@ -17,34 +17,36 @@ La relevancia de este modelo es, por tanto, acotada: resulta interesante como ej
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | en (inglés) |
+| Idiomas soportados | en (ingles) |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only de la familia GPT-2, con pesos almacenados en formato safetensors. El número total de parámetros (5.273.088) confirma que se trata de una configuración muy reducida, coherente con la etiqueta "5M" del nombre del modelo. No se dispone de información en la model card sobre el número de capas, dimensiones ocultas, número de cabezas de atención ni longitud máxima de contexto.
+La arquitectura es GPT-2, un transformer decoder-only con atencion causal, orientado a la generacion de texto autorregresiva. Se trata de una variante de tamano muy reducido, con 5.273.088 parametros, lo que la situa por debajo de los modelos GPT-2 pequenos habituales. No se dispone de informacion detallada sobre el numero de capas, dimensiones ocultas, cabezas de atencion ni longitud de contexto en la informacion proporcionada.
 
-En cuanto al entrenamiento, la model card únicamente indica que el modelo está orientado a poesía, obras de teatro y sonetos de Shakespeare, sin detallar el número de tokens de entrenamiento, la composición exacta del dataset, la existencia de fases de RLHF o DPO, ni técnicas de optimización específicas. No se han publicado innovaciones técnicas destacables (decodificación especulativa, atención lineal, mezcla de expertos) en la información disponible.
+En cuanto al entrenamiento, la model card indica unicamente que el modelo fue entrenado sobre las obras de teatro, poemas y sonetos de Shakespeare. No se especifica el numero de tokens de entrenamiento, la composicion exacta del dataset, si se aplicaron tecnicas de RLHF o DPO, ni si hubo fases de preentrenamiento y ajuste fino separadas. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o atencion lineal. El modelo se presenta como un "text continuation model" especializado en el corpus shakesperiano.
 
 ## Capacidades
 
-- Generación de texto en inglés con estilo y registro propios del inglés isabelino y de la obra de Shakespeare.
-- Generación de fragmentos con estructura métrica y rítmica similar a la de sonetos y versos dramáticos, dentro de las limitaciones de un modelo de 5M de parámetros.
-- Continuación de texto condicionada por un prompt inicial (text-generation estándar).
-- Capacidad multilingüe: no disponible; el modelo está etiquetado únicamente para inglés.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades especiales (modo thinking, visión, audio): no disponibles.
+- Generacion de texto en ingles con estilo literario clasico, orientada a la continuacion de fragmentos de Shakespeare.
+- Continuacion de texto (text continuation) a partir de un prompt dado, manteniendo en cierta medida el registro y vocabulario del corpus de entrenamiento.
+- Generacion de fragmentos con estructura de verso, prosa dramatica o soneto, segun el contexto de entrada.
+- Capacidad limitada de razonamiento y conocimiento general, dado su tamano extremadamente reducido.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- Multilingue: no, solo ingles.
+- No se documentan capacidades especiales como modo thinking, vision o audio.
 
 ## Casos de uso
 
-- Generación de versos y sonetos estilizados: el modelo puede producir continuaciones de texto con cadencia y vocabulario shakespearianos, útil para talleres literarios, ejercicios creativos o demostraciones de generación condicionada por estilo.
-- Experimentación educativa sobre fine-tuning: sirve como ejemplo práctico de cómo adaptar un GPT-2 minúsculo a un corpus literario concreto, adecuado para cursos de NLP y tutoriales de Hugging Face.
-- Prototipado de chatbots temáticos de bajo coste: al tener solo 5M de parámetros, puede desplegarse en entornos con recursos mínimos para generar respuestas con registro isabelino en demos o instalaciones interactivas.
-- Generación de texto para juegos y narrativa interactiva: puede emplearse para producir diálogos o descripciones con ambientación histórica en prototipos de videojuegos o ficción interactiva, siempre con revisión humana.
-- Benchmark de modelos minúsculos: útil como referencia para comparar técnicas de entrenamiento, tokenización y decodificación en modelos de muy baja escala.
-- Filtrado y aumento de datos literarios: puede utilizarse para generar variantes estilísticas de frases existentes en tareas de aumento de datos para clasificadores de estilo o de autoría.
+- Generacion de continuaciones literarias: dado un fragmento de una obra de Shakespeare, el modelo puede producir una continuacion coherente con el estilo, util para talleres de escritura creativa o experimentos de estilo.
+- Educacion y demostracion de modelos de lenguaje: por su tamano minimo, sirve para ilustrar en clase como funciona un transformer decoder-only y como se entrena un modelo especializado en un dominio concreto.
+- Prototipado rapido de pipelines de generacion de texto: al ser tan ligero, permite probar integraciones de text-generation sin necesidad de infraestructura GPU, usando CPU.
+- Generacion de texto con tematica shakesperiana para juegos, chatbots tematicos o experiencias interactivas de bajo coste computacional.
+- Experimentacion con tecnicas de ajuste fino y evaluacion de modelos pequenos: sirve como base para estudiar el efecto del tamano y del corpus en la calidad de la generacion.
+- Filtrado y aumento de datos: puede usarse para generar variantes estilisticas de texto en ingles clasico como parte de un corpus de aumentacion para tareas de NLP historico.
+- Demostraciones de despliegue en entornos con recursos limitados (edge, navegador, dispositivos embebidos) gracias a sus 5 millones de parametros y pesos safetensors de tamano minimo.
 
 ## Benchmarks y rendimiento
 
@@ -52,33 +54,34 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en precisión completa (fp32), dado el tamaño de 5,27M de parámetros; en la práctica, el modelo ocupa unos pocos megabytes en disco y memoria.
-- GPU recomendadas: cualquier GPU consumer moderna es suficiente; el modelo puede ejecutarse en CPU sin problemas de latencia significativos.
-- Cabe en cualquier GPU consumer (GTX 1050, RTX 2060, RTX 3060, RTX 4090) y también en Raspberry Pi y entornos embebidos.
-- Opciones de despliegue: transformers (PyTorch), llama.cpp si se convierte a GGUF, y cualquier runtime compatible con safetensors.
-- Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño del modelo, se espera una latencia muy baja en CPU y GPU.
+- VRAM estimada para inferencia: inferior a 1 GB en precision completa (fp32), dado que el modelo tiene 5.273.088 parametros (aproximadamente 21 MB en fp32, 10,5 MB en fp16).
+- GPU recomendadas: cualquier GPU consumer moderna es mas que suficiente; el modelo puede ejecutarse en CPU sin problemas.
+- Cabe en cualquier GPU consumer, incluidas GTX 1050, RTX 2060, RTX 3060, RTX 4090, e incluso en dispositivos de gama baja.
+- Opciones de despliegue: transformers (PyTorch), llama.cpp (previa conversion a GGUF), y potencialmente Ollama si se genera el artefacto correspondiente. vLLM y TGI son viables pero sobredimensionados para este tamano.
+- Latencia y throughput: no disponibles en la informacion proporcionada; por el tamano del modelo, se espera baja latencia en CPU y muy alta en GPU, aunque no se aportan cifras concretas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| wildfellhall/shakespeare-plays-poems-and-sonnets-5m | 5,27M | no disponible | MIT | Hugging Face |
-| GPT-2 small (OpenAI) | 124M | 1024 tokens | MIT | Hugging Face |
-| GPT-2 medium (OpenAI) | 355M | 1024 tokens | MIT | Hugging Face |
-| Modelos de estilo literario comparables | no disponible | no disponible | no disponible | no disponible |
+| shakespeare-plays-poems-and-sonnets-5m | 5.273.088 | no disponible | MIT | Hugging Face |
+| GPT-2 small | 124 M | 1024 | MIT | Hugging Face |
+| GPT-2 medium | 355 M | 1024 | MIT | Hugging Face |
+| DistilGPT-2 | 82 M | 1024 | Apache 2.0 | Hugging Face |
 
-El modelo es aproximadamente 23 veces más pequeño que GPT-2 small y 67 veces más pequeño que GPT-2 medium. No se dispone de información sobre otros modelos fine-tuneados específicamente para el corpus shakespeariano con los que compararlo de forma directa.
+La comparativa se limita a modelos de la familia GPT-2 de referencia, ya que no se dispone de informacion sobre otros modelos especializados en Shakespeare de tamano comparable. El modelo aqui descrito es entre 15 y 70 veces mas pequeno que las alternativas listadas, lo que implica menor capacidad general pero tambien menores requisitos de recursos. No se dispone de datos de rendimiento comparativo.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: al entrenarse sobre un corpus histórico, puede reproducir sesgos de género, clase y etnia presentes en la obra de Shakespeare y en el inglés isabelino.
-- Riesgo de alucinación: elevado en términos de coherencia factual; el modelo no tiene conocimiento del mundo y puede generar texto gramaticalmente plausible pero sin sentido.
-- Limitaciones de contexto: se desconoce la longitud máxima de contexto; con 5M de parámetros, la capacidad de mantener coherencia en textos largos es muy limitada.
-- Limitaciones de idioma: solo inglés; no se garantiza un comportamiento adecuado en castellano ni en otras lenguas.
-- Restricciones de licencia: la licencia MIT permite uso comercial, modificación y redistribución, siempre que se incluya el aviso de copyright y la licencia original.
-- Caveats para producción: no recomendado para tareas de razonamiento, código, matemáticas, atención al cliente ni agentes; su uso en producción debe limitarse a generación estilística con revisión humana y expectativas de calidad ajustadas.
+- Tamano extremadamente reducido (5,2 M de parametros): la coherencia y la calidad de la generacion seran limitadas, especialmente en fragmentos largos.
+- Entrenado exclusivamente en ingles y en el corpus de Shakespeare: no generaliza a otros dominios ni idiomas.
+- Riesgo elevado de alucinacion y de generar texto incoherente o repetitivo, especialmente con prompts fuera del dominio.
+- Sesgos conocidos: no documentados en la informacion proporcionada; al entrenarse en un corpus historico, puede reproducir sesgos culturales y de genero presentes en la obra de Shakespeare.
+- Limitaciones de contexto: no se especifica la longitud de contexto soportada, lo que impide planificar su uso en tareas que requieran ventanas largas.
+- Licencia MIT: permite uso comercial y modificacion, pero el autor no ofrece garantias sobre la calidad o idoneidad del modelo.
+- No apto para produccion en tareas de alta exigencia (atencion al cliente, generacion de codigo, razonamiento) debido a su tamano y especializacion.
+- No se documentan procesos de alineacion (RLHF/DPO), por lo que puede generar contenido inapropiado si se le induce.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/wildfellhall/shakespeare-plays-poems-and-sonnets-5m
-- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.
+- Hugging Face: https://huggingface.co/wildfellhall/shakespeare-plays-poems-and-sonnets-5m

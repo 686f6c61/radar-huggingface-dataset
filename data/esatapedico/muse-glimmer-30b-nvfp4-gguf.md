@@ -2,90 +2,99 @@
 
 ## Resumen
 
-Muse-Glimmer-30B es un modelo de lenguaje multimodal (texto e imágenes) desarrollado por Meta, con 30 mil millones de parámetros, arquitectura densa de 52 capas Transformer y atención de ventana deslizante con un patrón periódico [Local, Local, Local, Global] que combina ventanas locales de 2048 tokens con atención global cada cuatro capas. Su contexto nativo es de 131 072 tokens, lo que lo hace adecuado para tareas de razonamiento de largo alcance y uso agéntico.
+Muse-Glimmer-30B-NVFP4-GGUF es una familia de siete conversiones GGUF del modelo denso Muse-Glimmer-30B, un VLM (vision-language model) de 30.000 millones de parámetros desarrollado por Meta. El checkpoint de origen es la variante NVFP4 publicada por Red Hat AI (RedHatAI/Muse-Glimmer-30B-NVFP4), y la conversión a GGUF la firma el usuario esatapedico. El modelo resuelve el despliegue de un VLM de 30B en formato de 4 bits nativo (NVFP4, tipo GGML 40) pensado para GPUs Blackwell, manteniendo el backbone de atención y FFN en su precisión original de cuantización en lugar de recuantizarlo.
 
-La conversión `esatapedico/Muse-Glimmer-30B-NVFP4-GGUF` es una familia de seis archivos GGUF que mantienen el backbone completo en cuantización NVFP4 nativa (formato de 4 bits de NVIDIA optimizado para hardware Blackwell), variando únicamente la precisión de los tensores de cabecera (`lm_head` y `token_embd`). El objetivo es ofrecer una escalera de calidad/tamaño manteniendo la densidad NVFP4 en todo el modelo, lo que permite ejecutarlo en GPUs de consumo con un uso eficiente de VRAM.
+La arquitectura es un transformer denso de 52 capas con atención de ventana deslizante y un patrón periódico [Local, Local, Local, Global] cada cuatro capas, ventana local de 2048 tokens y contexto nativo de 131.072 tokens. No emplea MoE ni MTP (multi-token prediction). Los siete ficheros comparten un backbone byte-idéntico de 1.561 tensores (416 pesos NVFP4 más 1.145 tensores F32 de normas, escalas y vectores QK-norm, 13,35 GB) y solo difieren en la cuantización de `lm_head` y `token_embd`, ofreciendo una escalera de tamaño/precisión de 15,19 GB a 19,55 GB.
 
-La relevancia actual radica en que combina capacidades multimodales, razonamiento y tool calling en un paquete de 30B que puede desplegarse localmente, aunque esta conversión concreta no incluye el vision tower (solo texto) y requiere un fork específico de llama.cpp para funcionar correctamente.
+Su relevancia actual es doble: por un lado, demuestra cómo mantener densidad NVFP4 nativa en todo el modelo para hardware Blackwell; por otro, advierte de una dependencia crítica de runtime, ya que estos ficheros requieren un parche de layout Q/K RoPE que todavía no está fusionado en llama.cpp upstream y solo funciona verificado en el fork de gabrielcosi. La licencia es Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso con atención de ventana deslizante (patrón [Local,Local,Local,Global]) |
-| Parametros totales | 27 854 795 072 |
+| Arquitectura | Transformer denso (VLM), 52 capas, sliding window attention [Local, Local, Local, Global] con ventana local de 2048 y periodo 4 |
+| Parametros totales | 27.854.795.072 (~27,85B) |
 | Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | 131 072 tokens |
-| Tipos de cuantizacion | NVFP4 (backbone), con variantes Q2_K/Q3_K/Q4_K/Q5_0/Q6_K/Q8_0/BF16 en lm_head y token_embd según el archivo |
-| Idiomas soportados | inglés y multilingüe |
+| Longitud de contexto | 131.072 tokens nativos |
+| Tipos de cuantizacion | NVFP4 nativo en backbone (GGML type 40); lm_head en Q3_K, Q5_0, Q8_0 o BF16; token_embd en Q2_K, Q4_K, Q6_K, Q8_0 o BF16 segun tier |
+| Idiomas soportados | en, multilingual |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (con tensores en NVFP4, F32 y cuantizaciones adicionales) |
+| Formato de pesos | GGUF (7 ficheros); checkpoint base en NVFP4 |
+| Tamano del repo | 120,6 GB |
+| Tamano por fichero | 15,19 GB (VERY-LOW) a 19,55 GB (HIGHEST) |
+| Tensores totales | 1.561 (416 NVFP4 + 1.145 F32 + 2 dependientes de tier) |
+| Backbone compartido | 13,35 GB, byte-identico en los 7 tiers |
+| Vision tower | no incluida (sin mmproj); BF16 en el checkpoint original |
+| Runtime verificado | fork de gabrielcosi/llama.cpp, commit 9ec0ea18 o posterior |
 
 ## Arquitectura y entrenamiento
 
-El modelo original `Muse-Glimmer-30B` es un VLM denso de 30B parámetros con 52 capas Transformer, atención de ventana deslizante (SWA) donde tres de cada cuatro capas usan una ventana local de 2048 tokens y la cuarta usa atención global. El contexto nativo es de 131 072 tokens. Según la documentación de Ollama, está destilado de Muse Spark y diseñado para tareas agénticas en hardware de consumo. No se dispone de información detallada sobre el dataset de entrenamiento, el número de tokens o el uso de RLHF/DPO en las fuentes consultadas.
+El modelo es un transformer denso de 52 capas con atención híbrida local/global: tres de cada cuatro capas usan ventana deslizante de 2048 tokens y la cuarta es global, lo que reduce el coste computacional en contexto largo sin perder acceso completo a la secuencia. Incorpora QK-norm (vectores `attn_q_norm` y `attn_k_norm` en cada una de las 52 capas) y un layout intercalado de Q/K para RoPE que es precisamente la fuente del problema de compatibilidad con llama.cpp estándar. El contexto nativo es de 131.072 tokens y no hay MTP.
 
-La conversión GGUF de esatapedico mantiene los 416 tensores de atención y MLP en NVFP4 nativo (GGML type 40), más 1145 tensores F32 (normas, escalas y vectores QK-norm). El `lm_head` y `token_embd` se cuantizan de forma independiente en seis niveles (VERY-LOW a HIGHEST). La conversión también incorpora una corrección del layout Q/K (interleaved) necesaria para que el NVFP4 funcione correctamente, junto con la absorción de la QK-norm y el factor de escala `qk_scale_factor=3.87` en tensores dedicados.
+El checkpoint de origen es la cuantización NVFP4 de Red Hat AI, que almacena las proyecciones de atención y las capas FFN directamente en NVFP4 con escalado por tensor. La conversión a GGUF no recuantiza esos 416 tensores: `llama-quantize` no puede pasar de NVFP4 a otro formato, por lo que el backbone queda bloqueado en su precisión de origen y solo se ajustan `output.weight` y `token_embd.weight` mediante fichero de overrides. El autor no documenta en la model card el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO; esos datos corresponden al modelo original de Meta y no se detallan aquí.
+
+La innovación técnica principal es mantener densidad NVFP4 nativa en todo el modelo para Blackwell, con una escalera de siete niveles que permite elegir el compromiso entre tamaño y calidad en los dos tensores que más afectan a la calidad de salida y a la velocidad de decodificación. El autor argumenta que la atención de ventana deslizante reduce el valor marginal de subir la precisión de la atención, porque los artefactos de cuantización en patrones locales no se acumulan a lo largo de todo el contexto como en atención global.
 
 ## Capacidades
 
-- Generación de texto y razonamiento de largo alcance gracias a los 131K tokens de contexto.
-- Soporte de tool calling / function calling (según la ficha de NVIDIA NIM).
-- Capacidades agénticas: diseño orientado a tareas autónomas y multi-step reasoning.
-- Multilingüe (aunque el README indica inglés como idioma principal).
-- En el modelo original: procesamiento de imágenes y video (VLM), pero **no incluido** en esta conversión GGUF (sin mmproj, solo texto).
-- Modo de razonamiento separado (según NVIDIA NIM), aunque no verificado en la conversión.
+- Generación de texto conversacional y razonamiento general, con pipeline `text-generation` y tag `conversational`.
+- Capacidad multimodal nativa (imágenes y vídeo) en el modelo de origen, si bien la torre de visión no está incluida en estos GGUF: sin mmproj, deben tratarse como text-only.
+- Soporte multilingüe según los tags (`en`, `multilingual`); el grado de cobertura por idioma no está detallado.
+- Contexto largo de hasta 131.072 tokens, adecuado para documentos extensos y conversaciones multi-turno prolongadas.
+- Compatibilidad con endpoints (`endpoints_compatible`) para despliegue como servicio.
+- No se documenta soporte de tool calling, function calling ni razonamiento agéntico multi-paso en la información disponible.
+- No se documenta modo thinking ni capacidades de audio.
 
 ## Casos de uso
 
-- Asistentes de código con contexto largo: el modelo puede manejar repositorios completos gracias a su ventana de 131K tokens, permitiendo generar, explicar o refactorizar código con conocimiento del proyecto.
-- Agentes autónomos de automatización: su soporte de tool calling y razonamiento multi-paso lo hace adecuado para orquestar flujos de trabajo (envío de correos, consultas a APIs, gestión de calendarios) en entornos locales.
-- Análisis de documentos extensos: contratos, informes o papers científicos pueden procesarse completos sin truncamiento, extrayendo conclusiones o respondiendo preguntas específicas.
-- Chatbots de atención al cliente: con contexto largo y capacidad multilingüe, puede mantener conversaciones coherentes con historial extenso y personalizar respuestas según el tono de la empresa.
-- Generación de contenido técnico: documentación, tutoriales o respuestas en foros especializados, con razonamiento estructurado y precisión en temas complejos.
-- Sistemas RAG (Retrieval-Augmented Generation): al integrarse con bases de datos vectoriales, puede responder consultas con contexto amplio y citar fuentes, gracias a su capacidad de procesar fragmentos largos.
-- Prototipado de aplicaciones multimodales: aunque esta conversión es solo texto, el modelo base soporta imágenes; con el mmproj adecuado podría usarse para descripción de imágenes, OCR o análisis visual.
+- Análisis de documentos largos: con 131.072 tokens de contexto nativo, el modelo puede ingerir contratos, informes o bases de código completas en una sola pasada y responder preguntas sobre el conjunto sin troceado.
+- Asistente conversacional multi-turno: el patrón de atención local/global mantiene un coste de memoria y cómputo contenido en diálogos largos, lo que permite sesiones extensas en una sola GPU Blackwell.
+- Despliegue en hardware consumer de gama alta: los tiers de 15,19 GB y 15,85 GB caben en GPUs con 16-24 GB de VRAM, lo que hace viable servir un modelo de ~27,85B en una estación de trabajo.
+- Procesamiento por lotes en servidores Blackwell: el backbone NVFP4 de 13,35 GB compartido permite cargar un único conjunto de pesos y alternar tiers de `lm_head` y `token_embd` según el presupuesto de calidad y latencia de cada tarea.
+- Investigación sobre cuantización: la familia de siete ficheros con backbone byte-idéntico sirve para aislar experimentalmente el impacto de la precisión de `lm_head` y `token_embd` en la calidad de salida, sin contaminación por cambios en atención o FFN.
+- Evaluación de runtimes: útil para validar implementaciones de NVFP4 y del layout Q/K RoPE en motores GGUF, dado que el autor documenta explícitamente el comportamiento incorrecto en llama.cpp estándar.
+- Generación de texto en inglés y multilingüe en pipelines de contenido, con licencia Apache 2.0 que permite uso comercial sin restricciones adicionales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K u otros para esta conversión específica ni para el modelo base en las fuentes consultadas.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas de MMLU, HumanEval, GSM8K ni comparaciones numéricas con otros modelos; solo describe verificaciones de integridad (SHA-256 por tensor) y pruebas de cordura en el fork de gabrielcosi.
 
 ## Requisitos de hardware
 
-- Tamaños de archivo: entre 14,1 GB (VERY-LOW) y 18,2 GB (HIGHEST). La VRAM necesaria para inferencia depende del archivo y del contexto usado; con contexto completo (131K) se requeriría más memoria, pero con contextos reducidos (8K-32K) caben en GPUs de 16-24 GB.
-- GPUs recomendadas: RTX 4090 (24 GB), RTX 4080 (16 GB), A100 (40 GB) o superiores. Para el archivo HIGHEST con contexto largo se recomienda al menos 32 GB.
-- En consumer GPU: sí, los archivos de menor tamaño (14-15 GB) pueden ejecutarse en RTX 4080/4090 con cuantización y contexto moderado.
-- Opciones de despliegue: llama.cpp (requiere el fork de gabrielcosi, commit `9ec0ea18` o posterior), Ollama (según la entrada de ollama.com), y potencialmente otros motores GGUF compatibles.
-- Latencia y throughput: no disponibles en la documentación. Dependerá del hardware y del archivo elegido; el backbone NVFP4 está optimizado para Blackwell, por lo que en GPUs RTX 50xx se espera un rendimiento superior.
+- VRAM estimada para inferencia: entre 15,19 GB y 19,55 GB solo para pesos, según el tier elegido; hay que sumar la caché KV, que con 131.072 tokens de contexto y 52 capas resulta considerable y no está cuantificada en la información disponible.
+- GPU recomendadas: GPUs Blackwell para aprovechar NVFP4 nativo; el autor orienta explícitamente la conversión a este hardware.
+- Cabe en consumer GPU: los tiers VERY-LOW (15,19 GB) y LOW (15,85 GB) caben en GPUs de 16 GB con margen mínimo y en GPUs de 24 GB con holgura para caché KV moderada; MEDIUM (16,71 GB) requiere al menos 24 GB.
+- Opciones de despliegue: llama.cpp exclusivamente en la ruta verificada, mediante el fork de gabrielcosi (commit 9ec0ea18 o posterior). Otros motores GGUF podrían manejar el layout Q/K intercalado, pero el autor no ha probado ninguno. vLLM, TGI y Ollama no están verificados para estos ficheros.
+- Latencia y throughput: no disponibles. El autor no publica mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos directos con otros modelos de 30B en las fuentes consultadas. Como referencia, se puede comparar con:
+| Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Notas |
+|---|---|---|---|---|---|
+| Muse-Glimmer-30B-NVFP4-GGUF (este) | ~27,85B | 131.072 | GGUF con backbone NVFP4 nativo, 15,19-19,55 GB | Apache 2.0 | Requiere fork de llama.cpp; sin torre de visión |
+| RedHatAI/Muse-Glimmer-30B-NVFP4 | ~27,85B | 131.072 | Checkpoint NVFP4 original | Apache 2.0 | Modelo base del que se parte; incluye torre de visión en BF16 |
+| Muse-Glimmer-30B (original, Meta) | ~27,85B | 131.072 | Pesos completos en BF16 | no disponible en la informacion | Referencia de calidad; mayor huella de memoria |
+| Qwen3.8-27B (mencionado por el autor) | ~27B | no disponible | GGUF recuantizable por capas | no disponible en la informacion | Atención global, permite promover capas a Q8_0/BF16; comparación cualitativa del autor |
 
-| Modelo | Parámetros | Contexto | Licencia | Formato |
-|---|---|---|---|---|
-| Muse-Glimmer-30B (base) | 30B | 131K | Apache 2.0 | safetensors (BF16/NVFP4) |
-| Qwen3-30B-A3B (MoE) | 30B total, 3B activos | 32K (extensible) | Apache 2.0 | safetensors, GGUF |
-| Llama-3.1-8B | 8B | 128K | Llama 3.1 Community | safetensors, GGUF |
-
-Muse-Glimmer destaca por su contexto nativo de 131K y su naturaleza multimodal (en el modelo base), mientras que Qwen3-30B-A3B es un MoE más eficiente en activación. No se han encontrado benchmarks comparativos publicados.
+La comparación con alternativas de terceros no puede completarse con datos numéricos porque la model card no incluye benchmarks. El autor solo establece una comparación estructural con Qwen3.8-27B: en aquel las proyecciones de atención parten de BF16 y pueden recuantizarse por tiers, mientras que en Muse-Glimmer el origen NVFP4 bloquea esa vía.
 
 ## Limitaciones y advertencias
 
-- **Requisito de runtime específico**: los archivos GGUF necesitan el fork de gabrielcosi de llama.cpp (commit `9ec0ea18` o posterior) o el fix sin fusionar #27178. En builds estándar, el modelo carga pero genera salidas corruptas (artefactos de repetición, atención con layout incorrecto).
-- **Sin visión en esta conversión**: el vision tower no está incluido; solo se puede usar como modelo de texto. El README advierte que no se ha probado la visión con estas conversiones.
-- **Riesgo de alucinación**: como todo LLM, puede generar información falsa o no verificada, especialmente en tareas de razonamiento complejo.
-- **Sesgos potenciales**: al ser un modelo multilingüe entrenado por Meta, puede heredar sesgos de los datos de entrenamiento; no se han documentado evaluaciones específicas de sesgo.
-- **Licencia**: Apache 2.0 permite uso comercial, pero es recomendable revisar los términos de la licencia del modelo base de Meta (Apache 2.0 también) y las condiciones de Red Hat AI para el checkpoint NVFP4.
-- **Soporte limitado**: al ser una conversión de terceros, no hay garantía de mantenimiento ni soporte oficial de Meta o Red Hat.
+- Dependencia crítica de runtime: en una build estándar de llama.cpp los ficheros cargan pero generan basura (artefactos de repetición, atención con layout incorrecto). El parche ggml-org/llama.cpp#27178 no está fusionado upstream.
+- Solo está verificado el fork de gabrielcosi/llama.cpp en el commit 9ec0ea18 o posterior; cualquier otro motor se considera no probado.
+- Sin torre de visión: no hay mmproj, por lo que las capacidades de imagen y vídeo del modelo original no están disponibles en estas conversiones.
+- El backbone NVFP4 no puede recuantizarse a otro formato con `llama-quantize`; la escalera de calidad solo actúa sobre `lm_head` y `token_embd`.
+- Riesgo de alucinación no cuantificado: no se han publicado evaluaciones de fidelidad ni de tasas de error en la información disponible.
+- Sesgos conocidos: no documentados en la model card; deben asumirse los del modelo base de Meta, no evaluados aquí.
+- Cobertura lingüística: solo se declaran `en` y `multilingual` sin detalle por idioma; el rendimiento en castellano no está verificado.
+- La caché KV para 131.072 tokens puede exceder la VRAM disponible en GPUs consumer, lo que en la práctica limita el contexto utilizable.
+- Licencia Apache 2.0 permite uso comercial, pero la obligación de mantener el fork de llama.cpp añade riesgo operativo en producción hasta que el parche llegue upstream.
+- El repo ocupa 120,6 GB por los siete ficheros; conviene descargar solo el tier necesario.
 
 ## Enlaces
 
-- Repositorio Hugging Face de la conversión: https://huggingface.co/esatapedico/Muse-Glimmer-30B-NVFP4-GGUF
-- Modelo base en Hugging Face (Red Hat AI): https://huggingface.co/RedHatAI/Muse-Glimmer-30B-NVFP4
-- Modelo original de Meta: https://huggingface.co/meta-models/Muse-Glimmer-30B
-- Entrada en Ollama: https://ollama.com/library/muse-glimmer:30b-nvfp4
-- Página de NVIDIA NIM: https://build.nvidia.com/meta/muse-glimmer-30b
-- Repositorio de ejemplo (cobusgreyling): https://github.com/cobusgreyling/Muse-Glimmer
-- Issue de llama.cpp sobre el fix NVFP4: https://github.com/ggml-org/llama.cpp/issues/27178
-- Fork de gabrielcosi de llama.cpp: https://github.com/gabrielcosi/llama.cpp
+- Modelo en Hugging Face: https://huggingface.co/esatapedico/Muse-Glimmer-30B-NVFP4-GGUF
+- Modelo base (Red Hat AI): https://huggingface.co/RedHatAI/Muse-Glimmer-30B-NVFP4
+- Issue de llama.cpp con el fix pendiente: https://github.com/ggml-org/llama.cpp/issues/27178
+- Fork verificado de llama.cpp: https://github.com/gabrielcosi/llama.cpp
+- Sitio del autor de la conversión: https://www.esatapedico.com

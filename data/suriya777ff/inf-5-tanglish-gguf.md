@@ -2,48 +2,49 @@
 
 ## Resumen
 
-INF-5 (Infinex on-device model) es un modelo de lenguaje publicado en Hugging Face por el usuario Suriya777ff bajo el identificador `Suriya777ff/INF-5-Tanglish-GGUF`. Segun los metadatos del repositorio, cuenta con aproximadamente 1.720 millones de parametros (1,72 B) y se distribuye en formato GGUF, lo que lo orienta a inferencia en dispositivo (on-device) y a entornos con recursos limitados. El nombre sugiere un enfoque en Tanglish, es decir, texto que mezcla tamil e ingles, un registro muy habitual en comunicacion informal en el sur de la India y en comunidades de la diaspora.
+INF-5 es un modelo de lenguaje conversacional publicado por el usuario Suriya777ff en Hugging Face bajo la identidad de Infinite Tech. Se distribuye unicamente en formato GGUF y esta disenado para inferencia en dispositivo (on-device), presumiblemente para integrarse en la aplicacion movil de Infinite Tech. El nombre "Tanglish" sugiere un enfoque en conversaciones que mezclan tamil e ingles, un registro muy comun en el sur de la India y en comunidades de la diaspora.
 
-La model card es extremadamente escueta y no aporta informacion sobre arquitectura, datos de entrenamiento, contexto, idiomas ni benchmarks. Se limita a declarar que los pesos son propiedad de Infinite Tech y que se publican unicamente para que la aplicacion Infinite los descargue para sus usuarios, prohibiendo cualquier otro uso, redistribucion o trabajo derivado. La licencia es `infinite-tech-use-only` (etiquetada como `other` en Hugging Face), lo que en la practica restringe casi por completo el uso por parte de terceros.
+El modelo cuenta con aproximadamente 1.720 millones de parametros (1,72 B) segun los metadatos de pesos en formato safetensors, lo que lo situa en la categoria de modelos pequenos optimizados para ejecucion local en hardware modesto. El repositorio ocupa 4,8 GB, coherente con una o varias cuantizaciones GGUF de un modelo de ese tamano. La model card es extremadamente escueta y no documenta arquitectura, datos de entrenamiento, contexto ni idiomas de forma explicita.
 
-Por tanto, la relevancia practica del modelo para desarrolladores e investigadores externos es muy limitada: se trata de un artefacto de distribucion privada de un producto comercial, con documentacion minima y sin datos verificables de rendimiento. Esta ficha recoge unicamente lo que puede confirmarse a partir de los metadatos publicos, marcando explicitamente como "no disponible" todo aquello que el autor no ha hecho publico.
+La relevancia de este modelo es limitada fuera del ecosistema de su autor: la licencia "infinite-tech-use-only" restringe el uso a la aplicacion propietaria de Infinite Tech y prohibe explicitamente cualquier otro uso, redistribucion o trabajo derivado. Para desarrolladores e investigadores externos, su interes es principalmente como referencia de un modelo pequeno multilingue (tamil-ingles) orientado a movil, no como base para proyectos propios.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
+| Arquitectura | no disponible (probable transformer decoder-only, no confirmado) |
 | Parametros totales | 1.720.574.976 (aprox. 1,72 B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repo es GGUF; no se detallan los niveles incluidos) |
-| Idiomas soportados | no disponibles (el nombre sugiere Tanglish, sin confirmacion oficial) |
-| Licencia | infinite-tech-use-only (etiqueta `other` en Hugging Face) |
-| Formato de pesos | GGUF (tamano del repo: 2,2 GB) |
+| Tipos de cuantizacion | GGUF (cuantizaciones concretas no especificadas) |
+| Idiomas soportados | no disponible (el nombre sugiere tamil e ingles) |
+| Licencia | infinite-tech-use-only (propietaria, uso restringido) |
+| Formato de pesos | GGUF (repo de 4,8 GB); metadatos de parametros en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna del modelo. Los metadatos no indican si se trata de un transformer denso, un modelo MoE, una arquitectura hibrida o un modelo derivado de otro base mediante fine-tuning. Tampoco se especifica el numero de capas, la dimension oculta, el tipo de atencion ni la estrategia de tokenizacion.
+No se dispone de informacion publica sobre la arquitectura interna del modelo. Por el numero de parametros (1,72 B) y el formato de distribucion (GGUF para inferencia on-device), es razonable inferir un transformer decoder-only de escala pequena, pero el autor no lo confirma. Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT.
 
-Respecto al entrenamiento, la model card no documenta el volumen de tokens, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineamiento, ni si hubo una fase de instruccion o de conversacion. La unica pista sobre su proposito es la etiqueta `conversational` en Hugging Face y el nombre "Tanglish", que apunta a un ajuste orientado a dialogo en ese registro linguistico mixto. No hay informacion sobre innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento extendido.
+La unica informacion tecnica disponible proviene de los metadatos del repositorio: tags "gguf", "conversational", "endpoints_compatible" y "region:us". El tag "endpoints_compatible" indica que el modelo puede servirse a traves de la infraestructura de inferencia de Hugging Face (Inference Endpoints), y "conversational" sugiere un ajuste para dialogos multi-turno. No hay publicaciones, papers ni blogs tecnicos asociados.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta `conversational` del repositorio indica que el modelo esta pensado para dialogos multi-turno, aunque no se detalla su calidad ni su comportamiento.
-- Posible especializacion en Tanglish: el sufijo del nombre sugiere manejo de texto mixto tamil-ingles, sin que exista documentacion que lo confirme ni ejemplos publicados.
-- Soporte de tool calling / function calling: no disponible.
+- Generacion de texto conversacional: el tag "conversational" indica un ajuste para dialogos, aunque no se detallan capacidades especificas.
+- Multilingue tamil-ingles (Tanglish): inferido del nombre del modelo, no confirmado en la model card.
+- Inferencia on-device: el formato GGUF y el tamano de 1,72 B estan pensados para ejecucion local en dispositivos con recursos limitados.
+- Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles; no se declara lista de idiomas.
-- Capacidades especiales (modo thinking, vision, audio): no disponibles.
+- Modo thinking, vision o audio: no disponible.
+- Compatibilidad con Inference Endpoints de Hugging Face (tag "endpoints_compatible").
 
 ## Casos de uso
 
-- Inferencia en dispositivo dentro de la aplicacion Infinite: el unico caso de uso autorizado por la licencia es la descarga y ejecucion de los pesos por parte de la app Infinite para sus usuarios finales, en formato GGUF y con un tamano de repo de 2,2 GB que encaja en moviles y equipos de gama media.
-- Evaluacion interna de modelos compactos en castellano/tamil-ingles: un equipo de investigacion podria estudiar el comportamiento de un modelo de 1,72 B en registros code-switching, siempre que obtuviera permiso explicito del titular, ya que la licencia lo exige.
-- Pruebas de pipelines GGUF: dado que el artefacto es GGUF, podria servir para validar integraciones con llama.cpp u Ollama, aunque de nuevo el uso por terceros esta restringido por licencia.
-- Benchmarking de modelos pequenos: util como referencia de tamano (1,72 B) en comparativas de eficiencia, sujeto a autorizacion.
-- Prototipos de asistentes conversacionales en contextos con recursos muy limitados: el tamano del repo (2,2 GB) permite despliegues en CPU o GPUs de gama baja, aunque la licencia bloquea su uso comercial por terceros.
-- Analisis de licencias y practicas de publicacion: el caso resulta ilustrativo de modelos publicados en Hugging Face con licencias restrictivas y documentacion minima, util para estudiar gobernanza de artefactos abiertos.
+- Asistente conversacional integrado en la app de Infinite Tech: el modelo esta publicado explicitamente para que la aplicacion propietaria lo descargue y lo ejecute en los dispositivos de sus usuarios; su tamano de 1,72 B y formato GGUF lo hacen viable en moviles de gama media.
+- Chat en tamil-ingles (Tanglish) en entornos con conectividad limitada: al ejecutarse localmente, no requiere conexion a un servidor, lo que resulta util en regiones con redes intermitentes donde el registro Tanglish es habitual.
+- Prototipado de asistentes multilingues en dispositivos de borde: investigadores pueden estudiar el comportamiento de un modelo pequeno entrenado para mezcla de idiomas, siempre que respeten las restricciones de licencia (lo que en la practica limita este uso).
+- Evaluacion de tecnicas de cuantizacion GGUF: el repositorio sirve como caso de estudio de como se distribuye un modelo de 1,72 B en 4,8 GB de cuantizaciones para inferencia local.
+- Despliegue mediante Inference Endpoints: el tag "endpoints_compatible" permite servirlo desde la infraestructura gestionada de Hugging Face para pruebas de integracion.
+- Integracion en pipelines de CI para validar compatibilidad GGUF: util para verificar que runtimes como llama.cpp o Ollama cargan correctamente el modelo antes de empaquetarlo en una aplicacion.
 
 ## Benchmarks y rendimiento
 
@@ -51,38 +52,35 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa por tamano, un modelo de 1,72 B en cuantizacion de 4 bits requiere del orden de 1 a 1,5 GB de memoria, y en 8 bits alrededor de 2 GB, sin contar la cache KV, cuyo tamano depende de una longitud de contexto no documentada.
-- GPU recomendadas: no disponibles. Por tamano, el modelo es compatible con GPUs consumer como RTX 3060, RTX 4060 o superiores, e incluso con inferencia en CPU.
-- Cabe en GPU consumer: si, previsiblemente en cualquier GPU con 4 GB o mas de VRAM en cuantizaciones bajas, aunque no hay confirmacion del autor.
-- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; vLLM y TGI no aplican directamente al formato GGUF sin conversion.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: para 1,72 B de parametros, una cuantizacion Q4_K_M ocuparia aproximadamente 1,0-1,2 GB; Q8_0 en torno a 1,8-2,0 GB; FP16 alrededor de 3,4 GB. Estas cifras son estimaciones por tamano de parametros, no datos publicados por el autor.
+- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM puede ejecutar las cuantizaciones mas agresivas; para FP16 se recomienda 6-8 GB.
+- Cabe en GPU de consumo: si, en tarjetas como RTX 3060 (12 GB), RTX 4060 (8 GB), RTX 4090 (24 GB) y en GPUs integradas de portatiles con 8 GB de memoria unificada.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y, gracias al tag "endpoints_compatible", Inference Endpoints de Hugging Face. vLLM y TGI no estan confirmados para este repositorio.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento del modelo, por lo que la comparativa se limita a parametros y licencia. Se incluyen alternativas de tamano comparable ampliamente documentadas.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| INF-5 (Tanglish) | 1,72 B | no disponible | infinite-tech-use-only (propietaria) | GGUF en HF, uso restringido |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache 2.0 | safetensors y GGUF, uso comercial |
+| Llama 3.2 1B Instruct | 1,24 B | 131.072 tokens | Llama 3.2 Community License | safetensors y GGUF, uso comercial con condiciones |
+| Gemma 2 2B IT | 2,6 B | 8.192 tokens | Gemma Terms of Use | safetensors y GGUF, uso comercial con condiciones |
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Documentacion |
-|---|---|---|---|---|---|
-| INF-5 (Infinex) | 1,72 B | no disponible | infinite-tech-use-only (restringida) | GGUF | minima |
-| Qwen2.5-1.5B | 1,5 B | 32 768 tokens | Apache 2.0 | safetensors, GGUF | extensa |
-| Llama 3.2 1B | 1,2 B | 128 000 tokens | Llama 3.2 Community License | safetensors, GGUF | extensa |
-| Gemma 2 2B | 2,6 B | 8 192 tokens | Gemma Terms of Use | safetensors, GGUF | extensa |
-
-La diferencia principal no esta en el tamano sino en la licencia y en la documentacion: los modelos de referencia permiten uso comercial con condiciones claras y publican benchmarks, mientras que INF-5 prohibe cualquier uso distinto de la app Infinite.
+La comparativa se limita a parametros, contexto y licencia porque no hay benchmarks publicados de INF-5. Frente a las alternativas, la diferencia clave es la licencia: los tres modelos de referencia permiten uso comercial (con condiciones en Llama y Gemma), mientras que INF-5 lo prohibe fuera de la aplicacion de Infinite Tech. En cobertura de idiomas, solo INF-5 esta orientado explicitamente a Tanglish, aunque sin documentacion que lo respalde.
 
 ## Limitaciones y advertencias
 
-- Licencia extremadamente restrictiva: `infinite-tech-use-only` prohibe explicitamente cualquier uso, redistribucion o trabajo derivado distinto de la descarga por parte de la aplicacion Infinite. No es apta para uso comercial ni para investigacion sin autorizacion expresa.
-- Documentacion practicamente inexistente: sin arquitectura, contexto, idiomas ni datos de entrenamiento publicados, es imposible evaluar el modelo con rigor.
-- Riesgo de alucinacion: desconocido, al no haber evaluaciones publicadas.
-- Sesgos conocidos: no documentados; un modelo orientado a Tanglish podria presentar sesgos linguisticos y culturales propios del registro y del dataset de entrenamiento, que no se ha hecho publico.
-- Limitaciones de contexto e idioma: no disponibles; se desconoce la ventana de contexto real y la cobertura idiomatica.
-- Caveat para produccion: sin benchmarks ni garantias del autor, no es recomendable integrar el modelo en sistemas en produccion ajenos a la app Infinite.
-- Procedencia y gobernanza: el autor publica bajo un seudonimo y la model card no identifica el modelo base ni el proceso de entrenamiento, lo que dificulta cualquier auditoria.
+- Licencia extremadamente restrictiva: "infinite-tech-use-only" prohibe cualquier uso, redistribucion o trabajo derivado fuera de la aplicacion de Infinite Tech. No es apta para uso comercial, investigacion publicada ni proyectos personales sin autorizacion expresa.
+- Ausencia total de documentacion tecnica: no se publican arquitectura, datos de entrenamiento, contexto, idiomas ni procesos de alineacion, lo que impide evaluar su calidad o reproducibilidad.
+- Riesgo de alucinacion: no cuantificado; al no haber benchmarks, no puede estimarse su fiabilidad en tareas factuales.
+- Sesgos desconocidos: sin informacion sobre la composicion del dataset, no es posible evaluar sesgos de genero, religion, caste o politicos, especialmente relevantes en un modelo orientado a tamil e ingles.
+- Limitaciones de contexto e idioma: se desconoce la ventana de contexto y si el modelo maneja otros idiomas ademas de tamil e ingles.
+- Sin soporte comunitario: cero likes y 310 descargas indican una adopcion minima; no hay issues, discusiones ni ejemplos de uso publicos.
+- Fecha de creacion futura en los metadatos (2026-11-03), lo que sugiere que el repositorio puede haber sido creado con fines de prueba o que los metadatos no son fiables.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Suriya777ff/INF-5-Tanglish-GGUF
-- Perfil del autor: https://huggingface.co/Suriya777ff
-- Ficha en Free2AITools: https://free2aitools.com/model/suriya777ff/inf-5-tanglish-gguf
-- Licencia: archivo `LICENSE` dentro del repositorio de Hugging Face (no se ha localizado un enlace externo).
+- Hugging Face: https://huggingface.co/Suriya777ff/INF-5-Tanglish-GGUF
+- Licencia: referenciada como LICENSE en el repositorio (no se ha podido verificar su contenido)
+- No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

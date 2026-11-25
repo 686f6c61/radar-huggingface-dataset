@@ -2,91 +2,90 @@
 
 ## Resumen
 
-SZL-Khipu-1.5B-estate-sft-v1 es un ajuste fino supervisado (SFT) del modelo base SZL-Khipu-1.5B, desarrollado por SZLHOLDINGS dentro de lo que el autor denomina su "estate" gobernado de modelos. El modelo resuelve la adaptacion del base a un corpus conversacional propietario de tipo "estate", mediante QLoRA de 4 bits y posterior fusion de los pesos en un artefacto de 16 bits completo, no un adaptador separado. Con 1.543.714.304 parametros (aproximadamente 1,5B) y arquitectura Qwen2, se posiciona como un modelo pequeno orientado a generacion de texto en ingles.
+SZL-Khipu-1.5B-estate-sft-v1 es un ajuste fino supervisado (SFT) del modelo base SZLHOLDINGS/SZL-Khipu-1.5B, publicado por la organizacion SZLHOLDINGS dentro de lo que el autor denomina su "governed-AI estate". Se trata de un modelo de generacion de texto de tipo causal, con arquitectura Qwen2 (Qwen2ForCausalLM) y 1.543.714.304 parametros reales segun los pesos en safetensors, lo que lo situa en la categoria de modelos pequenos aptos para inferencia en hardware de consumo.
 
-La relevancia del modelo es limitada y muy especifica: se trata de la primera iteracion de ajuste sobre el corpus completo del autor, con 2.940 ejemplos de chat y 87 pasos de entrenamiento. El propio autor declara explicitamente que no es una evaluacion independiente de calidad y que no presenta ninguna afirmacion de precision o rendimiento; la evaluacion contra las suites del estate queda como paso pendiente. Por tanto, debe tratarse como un artefacto experimental de un ecosistema cerrado, no como un modelo listo para produccion general.
+El modelo hereda la arquitectura transformer decoder-only de la familia Qwen2 y se distribuye en precision bfloat16 con pesos en formato safetensors, bajo licencia Apache 2.0 y declarado unicamente para el idioma ingles. El repositorio ocupa 3,1 GB y contiene 17 archivos en la revision auditada, con un unico artefacto principal de pesos (model.safetensors, 3.087.467.144 bytes) y un tokenizer.json de 11,4 MB.
 
-El modelo se distribuye bajo licencia Apache 2.0, en formato safetensors, con un tamano de repositorio de 3,1 GB, y es compatible con transformers y text-generation-inference. No cuenta con descargas ni likes en el momento de la consulta, lo que refleja su caracter reciente y de nicho.
+La relevancia de esta ficha es doble: por un lado, documenta un modelo pequeno de la familia Qwen2 reentrenado para un dominio concreto (el autor lo etiqueta como "estate"); por otro, es un caso ejemplar de publicacion con trazabilidad estricta, ya que la propia model card declara explicitamente que no existe una cadena de recibos de evaluacion completa y que no se afirma ninguna cifra de benchmark. Cualquier evaluacion de capacidades debe, por tanto, realizarse por cuenta del usuario.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen2 (transformer decoder-only) |
-| Parametros totales | 1.543.714.304 (aproximadamente 1,5B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (entrenado con seqlen 4096) |
-| Tipos de cuantizacion | no disponible (pesos publicados en 16 bits; entrenado con QLoRA 4-bit) |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors |
+| Arquitectura | Transformer decoder-only, Qwen2ForCausalLM (model_type: qwen2) |
+| Parametros totales | 1.543.714.304 |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible (no declarada en la informacion proporcionada) |
+| Tipos de cuantizacion | No disponible (pesos publicados en bfloat16; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | Ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (model.safetensors, 3.087.467.144 bytes), bfloat16 |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen2, un transformer decoder-only, heredada del modelo base SZL-Khipu-1.5B. El ajuste fino se realizo con QLoRA de 4 bits con rango r=16, durante 3 epocas, con tasa de aprendizaje 2e-4, longitud de secuencia de 4096 tokens y empaquetado (packing) de secuencias. El entrenamiento consto de 87 pasos y se ejecuto en una unica GPU RTX A6000 en Massed Compute, usando el backend Unsloth. Los pesos resultantes se fusionaron en un modelo completo de 16 bits, no se exporto solo el adaptador.
+El modelo emplea la arquitectura Qwen2ForCausalLM, un transformer decoder-only denso con atencion causal estandar, la misma familia arquitectonica que los modelos Qwen2 de Alibaba. El numero exacto de capas, dimensiones ocultas, cabezas de atencion y tamano de vocabulario no se detalla en la informacion proporcionada; solo se confirma el tipo de modelo, la clase de arquitectura y el dtype (bfloat16). Con 1,54 mil millones de parametros y un tokenizer.json de 11,4 MB, el vocabulario es compatible con la familia Qwen2.
 
-Los datos de entrenamiento provienen de tres conjuntos del autor: szl-quant-sft-v1 (2.693 ejemplos), szl-frontier-sft-mix-v2 (206 ejemplos) y szl-1-doctrine-sft (41 ejemplos), sumando 2.940 ejemplos de chat. No se especifica el numero total de tokens de entrenamiento ni la composicion detallada del dataset. El autor indica que el log completo del entrenamiento se conserva en el dataset privado SZLHOLDINGS/wave-logs, y que el lanzador esta disponible en el repositorio szl-holdings/szl-forge. No se menciona el uso de RLHF o DPO, ni innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
+Respecto al entrenamiento, la model card indica que se trata de un artefacto SFT (supervised fine-tuning) derivado del modelo base SZLHOLDINGS/SZL-Khipu-1.5B, pero no especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas de RLHF o DPO. La seccion de recibos del autor es explicita: los paths estandar de evaluacion (eval/frontier-v1/DONE.json, final/train_receipt.json) fueron escaneados y no constituyen una cadena de recibos estricta completa, con estado UNKNOWN_NO_EVAL_RECEIPT. El autor declara que no se afirma ninguna capacidad ni cifra de calidad para este artefacto. No se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, heredada del modelo base Qwen2.
-- Ajuste especifico al corpus conversacional del estate de SZLHOLDINGS, orientado a respuestas de tipo chat.
+- Generacion de texto autoregresiva en ingles, propia de un modelo causal de 1,5B parametros.
+- Razonamiento basico y respuesta a instrucciones, presumiblemente adquiridos en la etapa SFT (no verificado por el autor).
+- Generacion de codigo y matematicas: capacidad plausible por herencia de la familia Qwen2, pero no documentada ni medida en la informacion disponible.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: limitadas al ingles segun la model card.
+- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma declarada.
 - Capacidades especiales (modo thinking, vision, audio): no disponibles.
-- Razonamiento, codigo y matematicas: no se documentan capacidades especificas ni evaluaciones al respecto.
 
 ## Casos de uso
 
-- Prototipado de asistentes conversacionales en ingles: el modelo puede emplearse para generar respuestas de chat multi-turno en entornos de prueba, dado su ajuste sobre 2.940 ejemplos conversacionales, aunque sin garantias de calidad medidas.
-- Experimentacion academica con QLoRA y Unsloth: sirve como referencia reproducible de un pipeline de ajuste fino con r=16, 3 epocas y fusion a 16 bits, documentado en el repositorio szl-forge.
-- Evaluacion de la metodologia del estate de SZLHOLDINGS: util para investigadores que quieran estudiar el enfoque de "doctrine-governed fine-tune" descrito por el autor.
-- Generacion de texto de dominio especifico dentro del ecosistema del autor: adecuado si el vocabulario y el estilo del corpus "estate" coinciden con el caso de uso previsto.
-- Base para posteriores ajustes: al publicarse como modelo completo fusionado en 16 bits, puede servir como punto de partida para nuevos SFT o DPO.
-- Despliegue ligero en una sola GPU consumer: con 1,5B parametros y pesos en 16 bits, es viable en GPUs de gama media para pruebas de inferencia, aunque no se documentan requisitos exactos.
+- Clasificacion y etiquetado de texto en ingles: con 1,5B parametros el modelo cabe en una GPU de consumo y puede procesar lotes de documentos para tareas de clasificacion o extraccion de entidades, siempre que se valide su calidad empiricamente antes de desplegarlo.
+- Generacion aumentada por recuperacion (RAG) en dominios acotados: su tamano reducido permite desplegarlo junto a un indice vectorial en una sola maquina, generando respuestas a partir de contexto recuperado en ingles.
+- Prototipado rapido de asistentes conversacionales: sirve como base para validar pipelines de inferencia (transformers, vLLM) antes de migrar a modelos mayores, gracias a su compatibilidad con la clase Qwen2ForCausalLM.
+- Fine-tuning adicional sobre dominios especificos: al estar bajo Apache 2.0 y en safetensors, es un punto de partida licito para ajustes posteriores con LoRA o QLoRA en tareas verticales.
+- Educacion e investigacion: util como modelo de referencia para estudiar el efecto del SFT sobre un modelo base de la familia Qwen2 en entornos con recursos limitados.
+- Despliegue en el borde o en entornos con restricciones de privacidad: su huella de ~3,1 GB en bfloat16 (y menos si se cuantiza) permite ejecucion local sin enviar datos a la nube.
+- Evaluacion de trazabilidad y gobierno de modelos: el repositorio es un caso practico de publicacion con recibos medidos y etiquetas UNKNOWN explicitas, util para equipos que disenan procesos de auditoria de modelos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explicitamente que el modelo "no es una evaluacion independiente de calidad y no lleva ninguna afirmacion de precision o rendimiento", y que la evaluacion contra las suites del estate es un paso separado y pendiente.
+No se han publicado resultados de benchmarks en la informacion disponible. La propia model card declara que no se afirma ninguna cifra de benchmark mas alla de lo que una auditoria fechada haya medido, y el escaneo de recibos del 2026-11-22 devolvio el estado UNKNOWN_NO_EVAL_RECEIPT, sin cadena de evaluacion estricta completa.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa por tamano (1,5B parametros), en 16 bits requeriria aproximadamente 3 GB solo para pesos, mas overhead de activaciones y cache KV; en cuantizacion de 8 bits unos 1,5-2 GB, y en 4 bits alrededor de 1 GB, aunque estos valores no estan confirmados por el autor.
-- GPU recomendadas: el autor solo documenta el entrenamiento en una RTX A6000; no especifica GPU recomendadas para inferencia.
-- Cabe en GPU consumer: previsiblemente si, dado el tamano de 1,5B, pero no hay confirmacion oficial ni lista de modelos probados.
-- Opciones de despliegue: transformers y text-generation-inference (segun los tags); vLLM, llama.cpp u Ollama no estan confirmados en la informacion disponible.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia en bfloat16: aproximadamente 3,1 GB solo para los pesos, mas overhead de activaciones y cache KV; en la practica, entre 4 y 6 GB para contextos moderados.
+- VRAM estimada con cuantizacion de 8 bits: en torno a 1,6-2 GB de pesos; con 4 bits, alrededor de 0,8-1 GB de pesos (estimaciones teoricas, no verificadas con este artefacto).
+- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para bfloat16 (RTX 3060 Ti, RTX 4060, RTX 4070); A100/H100 no son necesarias y solo tendrian sentido para servir muchas peticiones concurrentes.
+- Cabe en GPU de consumo: si, en la mayoria de GPU consumer modernas con 8 GB o mas en bfloat16, y en GPU con 4-6 GB si se cuantiza.
+- Opciones de despliegue: transformers (libreria declarada), y previsiblemente vLLM, TGI o llama.cpp/Ollama si se generan pesos GGUF, aunque no se documentan artefactos de cuantizacion en el repositorio.
+- Latencia y throughput estimados: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| SZL-Khipu-1.5B-estate-sft-v1 | 1,54B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | SFT sobre corpus propietario; sin benchmarks |
-| SZL-Khipu-1.5B (base) | 1,5B (aprox.) | no disponible | no disponible en esta ficha | Hugging Face | Modelo base del que deriva este ajuste |
-| Alternativas de ~1,5B tipo Qwen2 | ~1,5B | variable | variable | amplia | No se dispone de datos comparativos especificos en la informacion proporcionada |
+| SZL-Khipu-1.5B-estate-sft-v1 | 1,54B | No disponible | Apache 2.0 | safetensors (bf16) | SFT sobre base Qwen2; sin benchmarks publicados |
+| Qwen2-1.5B (familia original) | 1,54B | 32.768 tokens (segun documentacion publica de Qwen2) | Apache 2.0 | safetensors, GGUF | Modelo base de referencia de la misma arquitectura |
+| Qwen2.5-1.5B | 1,54B | 32.768 tokens (segun documentacion publica de Qwen2.5) | Apache 2.0 | safetensors, GGUF | Generacion posterior de la familia, con mejoras declaradas por el autor original |
+| SmolLM2-1.7B | 1,7B | 8.192 tokens (segun documentacion publica) | Apache 2.0 | safetensors, GGUF | Alternativa pequena de Hugging Face con benchmarks publicados |
 
-No se dispone de datos de rendimiento del modelo ni de alternativas evaluadas en la misma categoria dentro de la informacion proporcionada, por lo que la comparativa cuantitativa no esta disponible.
+La comparacion con Qwen2-1.5B y Qwen2.5-1.5B se basa en la documentacion publica de dichos modelos; los datos de contexto de este artefacto concreto no estan disponibles. No se dispone de resultados de benchmark de SZL-Khipu-1.5B-estate-sft-v1 para comparar rendimiento de forma cuantitativa.
 
 ## Limitaciones y advertencias
 
-- El autor declara explicitamente que el modelo no constituye una evaluacion independiente de calidad y no aporta ninguna afirmacion de precision o rendimiento.
-- No se han publicado benchmarks; se desconoce su comportamiento en tareas estandar como MMLU, HumanEval o GSM8K.
-- Riesgo de alucinacion: no cuantificado, pero inherente a un modelo de 1,5B ajustado con solo 87 pasos y 2.940 ejemplos.
-- Limitacion idiomatica: solo se declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta documentado.
-- Longitud de contexto: entrenado con seqlen 4096, pero la longitud de contexto efectiva del modelo publicado no se especifica.
-- Sesgos conocidos: no documentados por el autor; el corpus de entrenamiento es propietario y no se detalla su composicion.
-- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias de idoneidad para produccion.
-- Ecosistema cerrado: los logs de entrenamiento estan en un dataset privado y el codigo en un repositorio del autor, lo que limita la reproducibilidad externa.
-- Sin descargas ni validacion de la comunidad en el momento de la consulta.
+- Ausencia de evaluacion: el autor declara explicitamente el estado UNKNOWN_NO_EVAL_RECEIPT; no hay benchmarks ni mediciones de calidad publicadas para este artefacto.
+- Riesgo de alucinacion: inherente a los modelos causales de 1,5B parametros; sin evaluacion, el nivel de alucinacion es desconocido.
+- Sesgos: no documentados; al entrenarse presumiblemente sobre datos en ingles, es probable que herede sesgos culturales y linguisticos de dichos datos, pero no hay analisis publicado.
+- Limitacion idiomatica: el modelo solo declara soporte de ingles; su rendimiento en castellano u otros idiomas no esta garantizado.
+- Contexto: la longitud de contexto no esta documentada en la informacion disponible, lo que impide planificar despliegues con ventanas largas sin verificacion previa.
+- Licencia: Apache 2.0 permite uso comercial, pero el usuario debe verificar por su cuenta el cumplimiento y la calidad del modelo antes de usarlo en produccion.
+- Trazabilidad: la cadena de recibos de entrenamiento y evaluacion no esta completa en los paths estandar; el autor remite a rutas no estandar y a un ledger de bloqueo, lo que dificulta la auditoria independiente.
+- Procedencia del ajuste: no se detalla el dataset de SFT, por lo que no puede evaluarse la idoneidad del ajuste para dominios regulados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B-estate-sft-v1
-- Modelo base: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B
-- Dataset szl-quant-sft-v1: https://huggingface.co/datasets/SZLHOLDINGS/szl-quant-sft-v1
-- Dataset szl-frontier-sft-mix-v2: https://huggingface.co/datasets/SZLHOLDINGS/szl-frontier-sft-mix-v2
-- Dataset szl-1-doctrine-sft: https://huggingface.co/datasets/SZLHOLDINGS/szl-1-doctrine-sft
-- Dataset de logs (privado): https://huggingface.co/datasets/SZLHOLDINGS/wave-logs
-- Repositorio de codigo de entrenamiento: https://github.com/szl-holdings/szl-forge/blob/main/training/train_wave.py
 - Organizacion en Hugging Face: https://huggingface.co/SZLHOLDINGS
+- Modelo base: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B
+- Organizacion en GitHub: https://github.com/szl-holdings
+- Repositorio de generacion de tarjetas: https://github.com/szl-holdings/estate-cards

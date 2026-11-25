@@ -2,116 +2,112 @@
 
 ## Resumen
 
-Dsturb/Qwen3.8-Flash-Next-FLARE-Abliterated-YaRN-512k es un paquete de inferencia en formato Flare derivado de Qwen3.8-Flash-Next, un modelo multimodal de tipo image-text-to-text. Lo publica el usuario Dsturb como exportación independiente del checkpoint abliterado de lflare, que a su vez parte del contenedor cuantizado NVFP4/MXFP8 de Local Inference Lab. La modificación principal respecto al paquete de referencia es la extensión de contexto mediante YaRN con factor 2, que duplica la ventana de 262.144 a 524.288 tokens por petición.
+Qwen3.8-Flash-Next-FLARE-Abliterated-YaRN-512k es un paquete de inferencia en formato Flare (Hyperflare) derivado de la familia Qwen3.8-Flash-Next, publicado por el usuario Dsturb sobre el checkpoint abliterado de lflare. No es un modelo entrenado desde cero ni un fine-tune con datos propios: es una exportación de un checkpoint ya cuantizado en NVFP4/MXFP8 (QAD, cuantización consciente de cuantización) al que se le aplica un factor YaRN 2 para duplicar la longitud de contexto efectiva de 262.144 a 524.288 tokens. El paquete está pensado para ejecutarse en una única GPU RTX PRO 6000 Blackwell de 96 GB (arquitectura gb202) con tensor parallelism 1.
 
-El modelo está pensado para ejecutarse en una única GPU de centro de datos: una RTX PRO 6000 Blackwell de 96 GB (arquitectura gb202), con tensor parallel 1 y concurrencia de 8 peticiones. No es un modelo para Transformers, vLLM, SGLang ni llama.cpp: el formato de pesos y el runtime son propietarios del ecosistema Flare de Local Inference Lab, lo que condiciona por completo su despliegue.
+La relevancia del paquete es doble. Por un lado, ofrece una ventana de contexto de 512k tokens en hardware de una sola tarjeta profesional, algo que en la práctica requiere técnicas de extensión de RoPE (YaRN) combinadas con cuantización de pesos en 4 y 8 bits. Por otro, incorpora una edición de rechazo reducido ("abliterated") de rango 2 aplicada en la capa 42, que modifica el comportamiento del modelo ante peticiones que normalmente rechazaría. El modelo es multimodal (pipeline image-text-to-text) y declara compatibilidad exclusiva con el runtime Hyperflare, no con Transformers, vLLM, SGLang ni llama.cpp.
 
-La relevancia del paquete es doble. Por un lado, demuestra que es posible servir contextos de medio millón de tokens con decodificación especulativa MTP y un KV cache de 1.318.912 tokens en una sola tarjeta. Por otro, incorpora una edición de rechazo reducido (abliteration) de rango 2 sobre la capa 42, con métricas que muestran una caída del 100 % al 0 % en respuestas de rechazo sobre un conjunto de 136 prompts dañinos. Esa característica, junto con la licencia propia y la firma con clave de desarrollo, exige una evaluación de riesgos antes de cualquier uso en producción.
+El número de parámetros reportado en los safetensors es de 15.434.512, un dato que no es coherente con el tamaño del repositorio (184,3 GB) ni con los requisitos de hardware descritos en la model card (96 GB de VRAM para pesos cuantizados en 4/8 bits). Se reproduce tal cual por proceder de los metadatos, pero debe tratarse con cautela: probablemente refleja solo un subconjunto de tensores o un recuento parcial del exportador. La licencia es propietaria (lil-license-1.0, "other"), heredada del modelo base de Local Inference Lab.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text) derivado de Qwen3.8-Flash-Next; pesos cuantizados NVFP4/MXFP8; runtime Flare con decodificación especulativa MTP |
-| Parametros totales | 15.074.064 (según safetensors); el repo ocupa 106,7 GB, lo que indica pesos cuantizados de un modelo de mayor escala |
-| Parametros activos | no disponible (no se confirma si la arquitectura es MoE; el flag `--force-moe-decode-a16` sugiere componentes MoE) |
-| Longitud de contexto | 524.288 tokens por petición (YaRN factor 2 sobre 262.144); KV cache reportado de 1.318.912 tokens |
-| Tipos de cuantizacion | NVFP4 y MXFP8 (checkpoint base NVFP4-MXFP8-CSF-QAD); torre de visión cuantizada con 499 tensores |
+| Arquitectura | Transformer multimodal (image-text-to-text) con mezcla de expertos y decodificación especulativa MTP; detalles completos de capas y dimensión no disponibles |
+| Parametros totales | 15.434.512 según metadatos de safetensors (dato inconsistente con el tamaño del repo; ver advertencias) |
+| Parametros activos | no disponible |
+| Longitud de contexto | 524.288 tokens (YaRN factor 2 sobre 262.144); KV cache del runtime: 1.413.120 tokens |
+| Tipos de cuantizacion | NVFP4 y MXFP8 (checkpoint QAD); export con `--force-moe-decode-a16`; `ple_embedding_dtype: nvfp4` |
 | Idiomas soportados | no disponible |
-| Licencia | lil-license-1.0 (Local Inference Lab License, Version 1.0); etiquetada como `license: other` |
-| Formato de pesos | safetensors dentro de un paquete Flare en forma de directorio (56 archivos, 106.725.635.340 bytes); no compatible con Transformers, vLLM, SGLang ni llama.cpp |
+| Licencia | lil-license-1.0 (Local Inference Lab License v1.0, etiquetada como "other") |
+| Formato de pesos | safetensors en paquete de directorio Flare (56 archivos, 106.397.737.936 bytes) |
+| Runtime | Hyperflare (`flare` CLI) exclusivamente; no compatible con Transformers, vLLM, SGLang ni llama.cpp |
+| Hardware objetivo | 1× RTX PRO 6000 Blackwell 96 GB (gb202), TP1 |
+| Concurrencia | 16 peticiones simultáneas, 5 tokens borrador MTP |
+| Firma del paquete | clave de desarrollo, huella `7ab239ec…e9e824` |
 
 ## Arquitectura y entrenamiento
 
-El paquete es una exportación de inferencia, no un entrenamiento nuevo. Los pesos de texto provienen del checkpoint abliterado de lflare (`lflare/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD-Abliterated@8d96cc1d`), que aplica una edición de rechazo de rango 2 sobre la capa 42 en dos regímenes (con y sin modo thinking). Esa edición se realizó sobre el contenedor cuantizado de Local Inference Lab, derivado a su vez de Qwen3.8-Flash-Next. La torre de visión se mantiene en el checkpoint abliterado en BF16, pero el exportador Ignition exige cuantización, por lo que los 499 tensores de visión se tomaron byte a byte del contenedor de Local Inference Lab; los pesos de texto no se modificaron.
+La información disponible no describe la arquitectura interna más allá de lo que se deduce del pipeline (image-text-to-text) y de las referencias técnicas del paquete: se trata de un transformer con componentes de mezcla de expertos (por el flag `--force-moe-decode-a16`, que fuerza decodificación de expertos en precisión a16), torre de visión ya cuantizada en el checkpoint de origen y decodificación especulativa mediante 5 tokens borrador MTP (multi-token prediction). El checkpoint base es Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD de Local Inference Lab, sobre el que lflare aplicó una edición de rechazo reducido de rango 2 en la capa 42, descrita como "dual-regime". No se especifican tokens de entrenamiento, composición del dataset ni si hubo RLHF o DPO.
 
-La innovación técnica del paquete es la extensión de contexto: mediante `--rope-parameters` de Ignition (pull request #212) se aplica YaRN con factor 2, lo que duplica la ventana efectiva a 524.288 tokens. Para liberar espacio de KV cache, la concurrencia baja de 16 a 8 peticiones y se activa `--force-moe-decode-a16` en el export. El paquete se generó el 8 de noviembre de 2026 en una sola GPU en unos 45 minutos, sobre el árbol de Flare main `0de3041c` más el PR #212 `15d8b0b0`. No se fijaron ni modificaron parámetros de muestreo: se usan los valores por defecto que derivó Ignition. La decodificación especulativa usa 5 tokens borrador MTP.
+La innovación técnica principal de este paquete concreto es la extensión de contexto mediante YaRN factor 2, aplicada en el momento de la exportación con el parámetro `--rope-parameters` de Ignition (PR #212 del árbol Hyperflare). Esto duplica la ventana nominal de 262.144 a 524.288 tokens sin reentrenar. El paquete se construye sobre Hyperflare main `5fd4070d` más los PR #212 y #322, y en la versión v2 elimina el injerto de torre de visión de la v1 porque el checkpoint de origen (`7f49d25e`) ya la incluye cuantizada.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multimodal: el pipeline declarado es image-text-to-text, por lo que acepta imágenes y texto como entrada.
-- Modo thinking con presupuesto de tokens configurable (las mediciones usan 100 y 2048 tokens de pensamiento).
-- Contexto largo extremo: 524.288 tokens por petición, con recuperación verificada de información en medio de un prompt de 446.870 tokens.
-- Decodificación especulativa MTP con 5 tokens borrador, integrada en el runtime Flare.
-- Concurrencia de 8 peticiones simultáneas con KV cache agregado de 1.318.912 tokens.
-- Comportamiento de rechazo reducido: 0/136 rechazos en el conjunto dañino con thinking desactivado, y 0/59 en el conjunto de sobre-rechazo.
-- Tool calling y function calling: no disponible en la información proporcionada.
+- Generación de texto y razonamiento multimodal: el pipeline declarado es image-text-to-text, por lo que acepta imágenes junto con texto como entrada.
+- Contexto largo: ventana efectiva de 524.288 tokens por petición, validada con una prueba de aguja en el pajar sobre un prompt de 333.975 tokens resuelta correctamente en 31,7 s.
+- Decodificación especulativa MTP con 5 tokens borrador, integrada en el runtime Hyperflare.
+- Concurrencia de 16 peticiones simultáneas con KV cache de 1.413.120 tokens.
+- Comportamiento de rechazo reducido ("abliterated"): la edición de rango 2 en la capa 42 disminuye la tasa de rechazos del modelo original (cifras concretas no disponibles en la información proporcionada).
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible; el autor no declara lista de idiomas.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Modo thinking explícito: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Análisis de repositorios completos: con 524.288 tokens de contexto se puede cargar un árbol de código extenso, documentación y trazas de ejecución en una sola petición para tareas de revisión o refactorización asistida. El throughput de prefill medido (11.629 tok/s a 128k) hace viable procesar prompts de cientos de miles de tokens en menos de un minuto.
-- Auditoría de contratos y documentación legal: la ventana ampliada permite introducir expedientes completos con anexos y comparar cláusulas sin troceado, lo que reduce la pérdida de contexto entre fragmentos.
-- Procesamiento de conversaciones de soporte de larga duración: con 8 peticiones concurrentes y 223 tok/s en decodificación a contexto cero, un despliegue en una sola RTX PRO 6000 puede atender sesiones multi-turno extensas manteniendo el historial completo en contexto.
-- Extracción de información en documentos escaneados con componentes visuales: la torre de visión cuantizada permite procesar páginas con tablas, gráficos y texto mixto, útil en pipelines de digitalización de archivos.
-- Evaluación de seguridad y red teaming: el comportamiento de rechazo reducido lo convierte en una herramienta para estudiar la eficacia de las defensas de modelos alineados, siempre en entornos controlados y con las salvaguardas externas adecuadas.
-- Investigación sobre contextos largos: sirve como banco de pruebas para medir degradación de atención, recuperación de agujas en el pajar y coste de KV cache en escenarios de 512k tokens sobre hardware de una sola GPU.
-- Generación asistida en entornos con requisitos de soberanía de datos: al ejecutarse en local sobre una única tarjeta, permite mantener los datos dentro de la infraestructura propia, sin depender de APIs externas.
+- Análisis de repositorios y bases de código extensas: con 524.288 tokens de contexto, el modelo puede ingerir árboles de proyecto completos, historiales de commits o documentación técnica extensa en una sola petición, evitando la fragmentación en trozos y la pérdida de dependencias entre archivos.
+- Procesamiento de expedientes y documentación legal o administrativa: la ventana de 512k permite cargar contratos, anexos y correspondencia asociada de forma conjunta; la prueba de aguja en el pajar a 334k tokens sugiere que la recuperación de información en posiciones intermedias del contexto es fiable.
+- Auditoría de documentos con imágenes: al ser un modelo image-text-to-text, puede procesar capturas de pantalla, diagramas o páginas escaneadas junto con el texto circundante, útil en revisión de informes técnicos o compliance documental.
+- Investigación sobre seguridad y alineamiento: la edición abliterated de rango 2 en la capa 42 lo convierte en una pieza útil para estudiar cómo una intervención mínima en una sola capa altera la distribución de rechazos, siempre en entornos controlados y con las advertencias de la sección de limitaciones.
+- Despliegue en estación de trabajo con una sola GPU: al caber en una RTX PRO 6000 Blackwell de 96 GB con TP1, encaja en laboratorios o equipos de investigación que no disponen de clústeres multi-GPU, con 236,7 tok/s en decodificación C1 y 998,1 tok/s agregados en C16.
+- Evaluación comparativa de runtimes de inferencia: sirve como banco de pruebas para medir el rendimiento de Hyperflare frente a otras pilas (vLLM, SGLang) en cuantización NVFP4/MXFP8, dado que el paquete solo funciona en Hyperflare y obliga a comparar con exportaciones equivalentes en otros runtimes.
+- Generación de resúmenes de reuniones o transcripciones muy largas: transcripciones de varias horas que superan los 200k tokens pueden procesarse íntegras, manteniendo coherencia entre intervenciones distantes en el tiempo.
 
 ## Benchmarks y rendimiento
 
-Rendimiento medido por el autor del paquete en una RTX PRO 6000 Blackwell a 300 W con lil-bench 1.7.1 (perfil estándar, aislado):
+Rendimiento medido por el autor en una RTX PRO 6000 Blackwell a 325 W con lil-bench 1.7.1 (perfil estándar, aislado):
 
 | Fase | 0 contexto | 64k | 128k |
 |---|---:|---:|---:|
-| Decodificación C1 (tok/s) | 223,0 | 217,0 | 204,3 |
-| Decodificación C8 agregada (tok/s) | 791,5 | 758,4 | 736,4 |
+| Decodificación C1 (tok/s) | 236,7 | 223,9 | 221,4 |
+| Decodificación C8 agregada (tok/s) | 818,0 | 811,6 | 770,9 |
+| Decodificación C16 agregada (tok/s) | 998,1 | 1.081,6 | no medido |
 
-Prefill: 11.745 tok/s a 32k y 11.629 tok/s a 128k. En contexto largo, un prompt de 446.870 tokens con una aguja en el medio se respondió correctamente en 43,5 s.
+- Prefill: 12.433 tok/s a 32k y 12.011 tok/s a 128k.
+- C16 a 128k no se midió porque requiere 2.129.920 tokens de KV y el runtime solo retiene 1.413.120.
+- Contexto largo: prompt de 333.975 tokens con aguja en el medio, respondido correctamente en 31,7 s.
+- Calidad: `lavd-test` 10/10 (9 coincidencias exactas, 1 aproximada) y `estonia` 30/30, con los valores por defecto de servicio (temperatura 1,0, top_p 0,95, top_k 20).
 
-Métricas de rechazo y capacidad (medidas por lflare sobre los mismos pesos de texto, no re-ejecutadas en este paquete):
-
-| Protocolo | Scorer | Padre | Edición |
-|---|---|---|---|
-| Thinking off, 100 tok | model-forge | 136/136 (100 %) | 0/136 (0 %) |
-| Thinking off | strict, 47 marcadores | 136/136 (100 %) | 0/136 (0 %) |
-| Thinking on, 2048 tok | model-forge | 115/136 (84,6 %) | 0/136 (0 %) |
-| Thinking on | strict, marcadores emparejados | — | 2/136 (1,5 %) |
-| Thinking off | sobre-rechazo | 2/59 (3,4 %) | 0/59 (0 %) |
-
-Capacidad en la misma sesión: `lavd` 30/30 frente a 30/30 del padre; `estonia` 30/30 frente a 30/30; GPQA-diamond emparejado 166/198 frente a 164/198 (no significativo, p = 0,85). No se han publicado resultados de MMLU, HumanEval ni GSM8K en la información disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Las cifras de rechazo corresponden a mediciones de lflare sobre el checkpoint plano, no a este paquete.
 
 ## Requisitos de hardware
 
-- VRAM: una RTX PRO 6000 Blackwell de 96 GB es el mínimo declarado; el paquete ocupa 106,7 GB en disco y el runtime necesita espacio adicional para el KV cache de 1.318.912 tokens.
-- GPU recomendadas: RTX PRO 6000 Blackwell (gb202) con TP1. No se documenta soporte para A100, H100 ni RTX 4090.
-- GPU de consumo: no cabe en ninguna GPU de consumo; el requisito de 96 GB de VRAM y el runtime Flare lo impiden.
-- Despliegue: exclusivamente mediante el contenedor `ghcr.io/local-inference-lab/flare:latest`, con montaje del paquete en `/pkg` y del estado en `/state`, y verificación de pesos con `--verify-weights`.
-- Latencia y throughput: 223 tok/s en decodificación individual a contexto cero, 791,5 tok/s agregados con 8 peticiones concurrentes, y prefill de 11.745 tok/s a 32k. Una consulta de 446.870 tokens se resolvió en 43,5 s.
-- Nota de seguridad operativa: el paquete está firmado con una clave de desarrollo (fingerprint `7ab239ec…e9e824`) y el arranque requiere `--dangerously-accept-publisher local-development` y `--dangerously-approve-key`, lo que desactiva parte de la cadena de confianza del runtime.
+- VRAM: 96 GB en una única RTX PRO 6000 Blackwell (gb202) con TP1; el paquete pesa 106.397.737.936 bytes (~99 GiB) y el repositorio completo 184,3 GB.
+- GPU recomendadas: RTX PRO 6000 Blackwell 96 GB es la única configuración validada por el autor. No se documenta funcionamiento en A100, H100 ni RTX 4090.
+- GPU de consumo: no cabe en ninguna GPU de consumo actual; los 96 GB de VRAM superan la capacidad de una RTX 4090 (24 GB) o RTX 5090 (32 GB).
+- Despliegue: exclusivamente Hyperflare (`flare` CLI) mediante contenedor Docker construido desde el árbol `5fd4070d` con los PR #212 y #322 fusionados. No hay imagen preconstruida publicada.
+- Almacenamiento: se recomienda montar el paquete en modo solo lectura y un directorio de estado persistente para el trust store.
+- Latencia y throughput: 236,7 tok/s en C1 a contexto cero; 12.433 tok/s de prefill a 32k; 31,7 s para responder sobre un prompt de 334k tokens.
+- Nota operativa: el arranque exige `--verify-weights`, `--embedding-table-storage ram` y aceptar explícitamente la clave de desarrollo del publicador con `--dangerously-accept-publisher local-development` y `--dangerously-approve-key`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dsturb/Qwen3.8-Flash-Next-FLARE-Abliterated-YaRN-512k | 15.074.064 (safetensors); repo de 106,7 GB | 524.288 | 223 tok/s C1, 791,5 tok/s C8, prefill 11.745 tok/s a 32k | lil-license-1.0 | Solo runtime Flare, 1× RTX PRO 6000 96 GB |
-| lflare/Qwen3.8-Flash-Next-FLARE-Abliterated | mismos pesos de texto | 262.144 (sin YaRN) | no disponible en esta ficha | lil-license-1.0 | Solo runtime Flare |
-| local-inference-lab/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD | contenedor cuantizado base | no disponible | no disponible | Local Inference Lab License 1.0 | Solo runtime Flare |
-| lflare/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD-Abliterated | checkpoint abliterado de referencia | no disponible | GPQA-diamond 166/198, lavd 30/30, estonia 30/30 | lil-license-1.0 | Pesos en safetensors, runtime Flare |
+| Dsturb/Qwen3.8-Flash-Next-FLARE-Abliterated-YaRN-512k | 15.434.512 según metadatos (inconsistente) | 524.288 | Hyperflare exclusivamente | lil-license-1.0 | Hugging Face, 344 descargas, 3 likes |
+| lflare/Qwen3.8-Flash-Next-FLARE-Abliterated | no disponible | 262.144 (sin YaRN) | Hyperflare | lil-license-1.0 (heredada) | Hugging Face |
+| lflare/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD-Abliterated | no disponible | 262.144 | no disponible | lil-license-1.0 | Hugging Face |
+| local-inference-lab/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD | no disponible | 262.144 | no disponible | Local Inference Lab License v1.0 | Hugging Face |
 
-No se dispone de datos de benchmarks comparables con modelos de otras familias en la información proporcionada.
+La comparativa se limita a la propia estirpe del modelo porque no se dispone de datos de benchmarks ni de especificaciones completas de alternativas externas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Rechazo reducido deliberado: la edición abliterada elimina prácticamente todos los rechazos ante prompts dañinos (0/136 con thinking off). No es adecuado para aplicaciones orientadas al público sin salvaguardas externas.
-- Licencia restrictiva: lil-license-1.0 se etiqueta como `license: other`; es imprescindible revisar el archivo LICENSE antes de cualquier uso comercial, ya que las condiciones no están detalladas en la información disponible.
-- Compatibilidad limitada: no funciona en Transformers, vLLM, SGLang ni llama.cpp. El `config.json` incluido es un ancla de estadísticas de descarga sin `model_type`, por lo que `AutoConfig.from_pretrained` fallará por diseño.
-- Cadena de confianza debilitada: el paquete está firmado con una clave de desarrollo y el arranque exige aceptar el publisher `local-development` y aprobar la clave manualmente, lo que reduce las garantías de integridad en producción.
-- Dependencia de hardware exótico: requiere una RTX PRO 6000 Blackwell de 96 GB; no hay soporte documentado para otras GPU, lo que limita la portabilidad y aumenta el coste de infraestructura.
-- Idiomas no declarados: el autor no publica lista de idiomas soportados, por lo que el rendimiento multilingüe es desconocido.
-- Riesgo de alucinación: no cuantificado en la información disponible; las métricas publicadas se centran en rechazo y en pruebas de capacidad acotadas (lavd, estonia, GPQA-diamond), no en fidelidad factual general.
-- Métricas de capacidad no replicadas: los resultados de rechazo y capacidad son de lflare sobre el checkpoint plano, no de este paquete; el autor no los re-ejecutó tras la extensión YaRN.
-- Concurrencia reducida: el contexto de 512k obliga a bajar de 16 a 8 peticiones simultáneas, lo que afecta al coste por petición en cargas de alta concurrencia.
-- Torre de visión cuantizada tomada de otro contenedor: los 499 tensores de visión no provienen del checkpoint abliterado sino del contenedor de Local Inference Lab, una discrepancia documentada pero que conviene verificar en despliegues sensibles.
+- Dato de parámetros inconsistente: los 15.434.512 parámetros reportados no cuadran con un repositorio de 184,3 GB ni con los 96 GB de VRAM necesarios; no debe usarse ese número para estimar requisitos ni comparar tamaños sin verificación previa.
+- Compatibilidad restringida: solo funciona con Hyperflare. No hay soporte en Transformers, vLLM, SGLang ni llama.cpp, y `AutoConfig.from_pretrained` falla deliberadamente porque `config.json` es un ancla de estadísticas de descarga, no una configuración de modelo.
+- Cadena de confianza débil: el paquete está firmado con una clave de desarrollo (`7ab239ec…e9e824`) y la ejecución exige aceptar explícitamente esa clave con flags `--dangerously-*`. No hay imagen de runtime preconstruida y hay que compilarla desde un árbol con dos pull requests aún abiertos upstream.
+- Rechazo reducido: la edición abliterated disminuye la tasa de rechazos del modelo original. Esto puede producir respuestas a peticiones que el modelo base rechazaría; debe evaluarse el impacto en seguridad antes de cualquier despliegue expuesto a usuarios finales.
+- Riesgo de alucinación: no se han publicado evaluaciones de fidelidad factual ni de calibración en la información disponible; los tests `lavd-test` y `estonia` son pruebas internas del autor, no benchmarks de alucinación.
+- Idiomas: no se documentan los idiomas soportados, por lo que no puede asumirse un rendimiento multilingüe equivalente al del modelo original.
+- Licencia: lil-license-1.0 es una licencia propietaria heredada de Local Inference Lab; las condiciones de uso comercial no se detallan en la información proporcionada y deben revisarse en el archivo LICENSE del repositorio antes de cualquier uso en producción.
+- Concurrencia limitada en contexto largo: a 128k tokens con 16 peticiones simultáneas se necesitan 2.129.920 tokens de KV y el runtime solo retiene 1.413.120, por lo que esa combinación de carga y contexto no es viable.
+- Visión: la v2 elimina el injerto de torre de visión de la v1 y confía en la torre ya cuantizada del checkpoint; no se documentan evaluaciones de calidad multimodal para esta exportación.
+- Fecha de creación del repositorio: los metadatos indican 2026-11-10, lo que debe tratarse como dato del autor y no como referencia temporal verificable.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Dsturb/Qwen3.8-Flash-Next-FLARE-Abliterated-YaRN-512k
-- Modelo base abliterado (lflare): https://huggingface.co/lflare/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD-Abliterated
 - Paquete de referencia de lflare: https://huggingface.co/lflare/Qwen3.8-Flash-Next-FLARE-Abliterated
-- Contenedor cuantizado de Local Inference Lab: https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD
-- Checkpoint abliterado plano (mediciones originales): https://huggingface.co/lflare/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD-Abliterated
-- Runtime Flare (contenedor): ghcr.io/local-inference-lab/flare:latest
-- Pull request #212 de Ignition (parámetros RoPE/YaRN): no disponible como URL en la información proporcionada
-- Paper, blog o demo adicionales: no disponible en la información proporcionada
+- Checkpoint abliterado de lflare: https://huggingface.co/lflare/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD-Abliterated
+- Checkpoint base de Local Inference Lab: https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD
+- Runtime Hyperflare: https://github.com/NVIDIA/hyperflare-inference

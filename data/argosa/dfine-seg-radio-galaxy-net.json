@@ -5,7 +5,7 @@
   "author": "ArgoSA",
   "url": "https://huggingface.co/ArgoSA/dfine-seg-radio-galaxy-net",
   "created_at": "2026-11-07T07:40:42.000Z",
-  "updated_at": "2026-11-22T14:18:58.000Z",
+  "updated_at": "2026-11-24T08:37:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",
@@ -19,6 +19,7 @@
     "keypoint-detection",
     "d-fine",
     "detr",
+    "arxiv:2611.29798",
     "arxiv:2602.23043",
     "license:apache-2.0",
     "region:us"

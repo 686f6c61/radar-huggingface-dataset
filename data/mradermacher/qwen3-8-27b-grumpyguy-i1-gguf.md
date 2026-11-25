@@ -2,50 +2,50 @@
 
 ## Resumen
 
-Qwen3.8-27B-GrumpyGuy-i1-GGUF es una coleccion de cuantizaciones GGUF generadas por mradermacher a partir del modelo base `wesjos/Qwen3.8-27B-GrumpyGuy`, un modelo de 27.320.697.856 parametros (unos 27,3 mil millones). El nombre sugiere una variante derivada de la familia Qwen3, pero la model card no aporta informacion sobre arquitectura, datos de entrenamiento ni procedencia exacta del modelo base, por lo que la mayor parte de las especificaciones tecnicas no estan disponibles. El repositorio ocupa 40,0 GB e incluye un conjunto amplio de cuantizaciones de tipo K-quant e I-quant (desde IQ1_S hasta Q6_K), generadas con imatrix y pesos ponderados.
+Qwen3.8-27B-GrumpyGuy-i1-GGUF es una cuantizacion del modelo wesjos/Qwen3.8-27B-GrumpyGuy, un ajuste fino (finetune) de la familia Qwen 3.8 orientado a un estilo de conversacion con personalidad arisca o sarcastica ("grumpy"), segun indican las etiquetas persona y roleplay de la model card original. El trabajo de cuantizacion lo firma mradermacher, un publicador habitual de versiones GGUF optimizadas mediante matrices de importancia (imatrix) para su uso en llama.cpp y entornos de inferencia local.
 
-El interes de esta publicacion es practico: permite desplegar un modelo de ~27B en hardware de consumo mediante cuantizaciones agresivas, incluyendo opciones de 1 a 4 bits por peso. No obstante, al tratarse de una cuantizacion de un modelo derivado (no oficial) y sin model card sustantiva, la evaluacion rigurosa de su calidad, licencia y capacidades requiere consultar el modelo base y asumir las limitaciones de una cadena de derivacion poco documentada.
+El modelo base declara 27.320.697.856 parametros (unos 27,3 mil millones) en precision bf16 y una licencia Apache 2.0, lo que lo situa en la franja de modelos de tamano medio-grande aptos para despliegue en una sola GPU de gama alta o en configuraciones multi-GPU. La model card del cuantizador indica que se trata de un modelo de vision, con ficheros mmproj (proyector multimodal) alojados en el repositorio estatico hermano, aunque no se detalla la arquitectura interna ni el esquema de atencion.
 
-La fecha de creacion (2026-11-22) y el estado del repositorio (0 descargas, 0 likes en el momento de la consulta) indican que se trata de una publicacion reciente y sin validacion comunitaria. Todo dato no presente en la informacion proporcionada se marca como no disponible.
+La relevancia de esta ficha reside en que combina dos capas de derivacion: un finetune de persona sobre una base Qwen 3.8 y una cuantizacion con imatrix que permite ejecutar los 27,3B parametros en hardware de consumo con perdida de calidad controlada. No obstante, la informacion publica disponible es escasa: no hay benchmarks, no se documenta el dataset de entrenamiento ni la longitud de contexto, y el pipeline aparece como no disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere familia Qwen3, sin confirmar) |
-| Parametros totales | 27.320.697.856 (~27,3 B) |
+| Arquitectura | no disponible (modelo base de la familia Qwen 3.8; la model card del cuantizador no detalla la arquitectura interna) |
+| Parametros totales | 27.320.697.856 (27,3B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ4_XS, IQ4_NL (small) |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones con imatrix y pesos ponderados) |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K, mas fichero imatrix; existen quants estaticos en el repositorio hermano |
+| Idiomas soportados | en, zh (segun la model card) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizado); el modelo base se distribuye en bf16 |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura del modelo base en la documentacion proporcionada. El identificador `Qwen3.8-27B` sugiere una variante de la familia Qwen3 con aproximadamente 27B parametros, pero no se confirma ni el tipo de transformer, ni si emplea mezcla de expertos (MoE), atencion lineal u otra innovacion. Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO o fine-tuning supervisado.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base wesjos/Qwen3.8-27B-GrumpyGuy. Por el nombre y las etiquetas (qwen3.8, qwen3_5) se infiere que deriva de la familia Qwen 3.8, con un finetune de tipo persona/roleplay sobre una base conversacional, pero la model card no especifica si se trata de un transformer denso, un MoE o una arquitectura hibrida, ni detalla el esquema de atencion o la ventana de contexto nativa.
 
-Lo unico documentado es el proceso de cuantizacion: mradermacher ha generado las cuantizaciones a partir de `wesjos/Qwen3.8-27B-GrumpyGuy` usando `convert_type: hf`, `quantize_version: 2`, `output_tensor_quantised: 1` e `imatrix` con pesos ponderados. El repositorio incluye 24 variantes de cuantizacion distintas, lo que permite ajustar el equilibrio entre tamano y fidelidad. El sufijo "GrumpyGuy" del modelo base sugiere un ajuste de estilo o personalidad, pero no hay evidencia documentada al respecto.
+Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset del finetune ni si se aplicaron tecnicas de RLHF, DPO o similares. La model card del cuantizador unicamente indica que las cuantizaciones se generaron con matrices de importancia (weighted/imatrix quants) a partir del modelo bf16, lo que suele mejorar la calidad de los quants de baja precision respecto a las cuantizaciones estaticas. La model card menciona ademas que es un modelo de vision, con ficheros mmproj en el repositorio estatico, pero no aporta detalles sobre el proyector multimodal ni sobre los datos de vision empleados.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta `conversational` del repositorio indica orientacion a dialogo, aunque no se detallan capacidades concretas.
-- Razonamiento y codigo: no disponible (no confirmado en la informacion proporcionada).
-- Matematicas: no disponible.
-- Vision: no disponible; no se menciona modulo multimodal ni `mmproj` (la model card indica `skip_mmproj` vacio).
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Modo thinking o capacidades especiales: no disponible.
+- Generacion de texto conversacional con un estilo de personalidad marcado ("grumpy"), orientado a roleplay y dialogo.
+- Capacidades multimodales (vision): la model card del cuantizador indica explicitamente "This is a vision model", con ficheros mmproj en el repositorio estatico.
+- Soporte multilingue limitado a ingles y chino segun la model card.
+- Compatibilidad con endpoints (etiqueta endpoints_compatible), lo que sugiere integracion con APIs de inferencia.
+- No se documenta soporte de tool calling ni de function calling.
+- No se documenta soporte de agentes ni de razonamiento multi-paso.
+- No se documenta modo thinking, audio ni otras capacidades especiales.
+- Capacidad de codigo y matematicas: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Despliegue local en hardware de consumo: las cuantizaciones IQ1_S a Q4_K_M permiten ejecutar un modelo de ~27B en GPU con 8-24 GB de VRAM o en CPU con RAM suficiente, usando llama.cpp u Ollama. Es el caso de uso principal de este repositorio.
-- Prototipado de chatbots conversacionales: la etiqueta `conversational` y el formato GGUF facilitan integrar el modelo en aplicaciones de chat locales mediante llama.cpp, sin depender de APIs externas.
-- Evaluacion comparativa de cuantizaciones: al ofrecer 24 variantes, el repositorio sirve para medir la degradacion de calidad entre niveles de cuantizacion sobre el mismo modelo base en tareas de generacion y razonamiento.
-- Fine-tuning o experimentacion con modelos derivados: el modelo base puede servir como punto de partida para ajustes posteriores, aunque la licencia no confirmada obliga a verificar los terminos antes de cualquier uso comercial.
-- Investigacion sobre personalizacion de estilo: el sufijo "GrumpyGuy" sugiere un ajuste de tono; el modelo puede usarse para estudiar como los ajustes de personalidad afectan a la coherencia conversacional, siempre que se documente el modelo base.
-- Inferencia en entornos sin conectividad: al ser pesos GGUF locales, permite ejecutar el modelo en equipos aislados o con requisitos de privacidad estrictos, sin enviar datos a servicios externos.
+- Personajes conversacionales y roleplay: el finetune "GrumpyGuy" esta disenado para mantener una personalidad arisca y consistente en conversaciones multi-turno, adecuado para chatbots de entretenimiento, videojuegos narrativos o asistentes con caracter definido.
+- Prototipado local de asistentes con vision: al ser un modelo multimodal con quants GGUF, permite probar flujos de imagen + texto en una estacion de trabajo sin depender de APIs externas.
+- Despliegue en hardware de consumo: los quants i1-Q4_K_M (17,1 GB) o i1-Q3_K_M (13,8 GB) permiten ejecutar los 27,3B parametros en GPUs de 16-24 GB de VRAM mediante llama.cpp u Ollama.
+- Evaluacion de tecnicas de cuantizacion: la disponibilidad de un fichero imatrix y de quants desde Q2_K hasta Q6_K permite comparar la degradacion de calidad por nivel de compresion en un modelo de 27B.
+- Generacion de dialogos con tono marcado para guiones o contenido creativo: el estilo "grumpy" puede aprovecharse para escribir dialogos de personajes sarcasticos o gruñones en ingles o chino.
+- Investigacion sobre finetunes de persona: sirve como caso de estudio de como un finetune de roleplay se comporta tras cuantizacion agresiva, comparando quants IQ frente a K-quants.
 
 ## Benchmarks y rendimiento
 
@@ -53,40 +53,45 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, segun cuantizacion y ~27,3B parametros):
-  - IQ1_S / IQ1_M: en torno a 5-7 GB.
-  - IQ2_XXS / IQ2_XS / IQ2_S / IQ2_M / Q2_K / Q2_K_S: en torno a 7-11 GB.
-  - IQ3_XXS / IQ3_XS / IQ3_S / IQ3_M / Q3_K_S / Q3_K_M / Q3_K_L: en torno a 11-15 GB.
-  - IQ4_XS / IQ4_NL / Q4_0 / Q4_1 / Q4_K_S / Q4_K_M: en torno a 15-18 GB.
-  - Q5_K_S / Q5_K_M: en torno a 18-21 GB.
-  - Q6_K: en torno a 21-24 GB.
-- GPU recomendadas: RTX 4090 (24 GB) para cuantizaciones Q4 a Q6; RTX 3090/4080 (16-24 GB) para Q3-Q4; A100 40/80 GB o H100 para cuantizaciones altas con contexto largo y mayor throughput.
-- GPU de consumo: si, cabe en RTX 3060 12 GB con cuantizaciones IQ2/IQ3, y en RTX 4090 con Q4-Q6. Las cuantizaciones de 1-2 bits permiten incluso GPUs de 8 GB, con perdida de calidad esperable.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y servidores compatibles con GGUF. vLLM y TGI no soportan GGUF de forma nativa generalizada.
-- Latencia y throughput: no disponibles; dependen de la cuantizacion, el hardware y la longitud de contexto.
+- VRAM estimada para inferencia (pesos + overhead de contexto, aproximada a partir del tamano de los ficheros GGUF):
+  - i1-Q2_K: ~11,3 GB de pesos; ~12-13 GB de VRAM en total.
+  - i1-IQ3_M: ~13,1 GB de pesos; ~14-15 GB de VRAM en total.
+  - i1-Q4_K_M: ~17,1 GB de pesos; ~18-19 GB de VRAM en total.
+  - i1-Q5_K_M: ~19,7 GB de pesos; ~21-22 GB de VRAM en total.
+  - i1-Q6_K: ~22,5 GB de pesos; ~24 GB de VRAM en total.
+- GPU recomendadas: para Q4_K_M o superiores, una RTX 4090 (24 GB) o RTX 3090 (24 GB) permite cargar el modelo completo; una A100 40/80 GB o H100 ofrece margen para contextos largos y mayor throughput. Para quants Q3 o inferiores, una RTX 4080 (16 GB) o similar puede ser suficiente.
+- Cabe en GPU de consumo: si, en RTX 4090/3090 con Q4_K_M o Q5_K_M, y en GPUs de 16 GB con quants IQ3 o Q3_K_M. En GPUs de 12 GB solo caben los quants Q2_K o IQ2 con contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF (LM Studio, koboldcpp). Para el modelo base en bf16, transformers con aceleracion por GPU. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que su uso requeriria el modelo base en bf16.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-GrumpyGuy-i1-GGUF | ~27,3 B | no disponible | GGUF | no disponible | Hugging Face (mradermacher) |
-| Modelo base wesjos/Qwen3.8-27B-GrumpyGuy | ~27,3 B | no disponible | safetensors (presumible) | no disponible | Hugging Face (wesjos) |
-| Otras cuantizaciones GGUF de la familia Qwen3 (p. ej. Qwen3-32B-GGUF oficiales) | ~32 B | 32.768 tokens (segun familia Qwen3) | GGUF | Apache 2.0 (segun familia Qwen3) | Hugging Face (Qwen) |
-
-No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada. La comparativa se limita a parametros y formato; cualquier afirmacion sobre calidad relativa requeriria benchmarks que no estan publicados.
+| Qwen3.8-27B-GrumpyGuy-i1-GGUF (este) | 27,3B | no disponible | Apache 2.0 | GGUF (i1, imatrix) | Finetune de persona/roleplay con vision; quants de 11,3 a 22,5 GB |
+| Qwen3.8-27B-GrumpyGuy (base) | 27,3B | no disponible | Apache 2.0 | bf16 (safetensors) | Modelo original sin cuantizar; requiere ~55 GB en bf16 |
+| Qwen3.8-27B-GrumpyGuy-GGUF (estatico) | 27,3B | no disponible | Apache 2.0 | GGUF (estatico) | Quants sin imatrix del mismo autor; incluye ficheros mmproj |
+| Otros finetunes Qwen de ~27B | no disponible | no disponible | variable | variable | No se dispone de datos comparativos de benchmarks en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Model card practicamente vacia: no se documentan arquitectura, datos de entrenamiento, idiomas ni evaluaciones, lo que impide validar el comportamiento del modelo.
-- Licencia no disponible: no se puede confirmar el uso comercial; es imprescindible verificar la licencia del modelo base `wesjos/Qwen3.8-27B-GrumpyGuy` antes de cualquier despliegue en produccion.
-- Cadena de derivacion no oficial: el modelo base no parece ser una publicacion oficial de Qwen, por lo que las garantias de calidad y soporte son limitadas.
-- Riesgo de alucinacion: no cuantificado; al no haber benchmarks ni evaluaciones, no se puede estimar la tasa de errores facticos.
-- Perdida de calidad por cuantizacion: las variantes IQ1 e IQ2 degradan notablemente la fidelidad respecto a los pesos originales; para tareas sensibles se recomienda Q4_K_M o superior.
-- Sin validacion comunitaria: 0 descargas y 0 likes en el momento de la consulta; no hay retroalimentacion de usuarios que confirme el funcionamiento.
-- Idiomas y sesgos: no documentados; no se puede asumir un rendimiento multilingue equilibrado.
-- Formato GGUF: no compatible de forma nativa con vLLM o TGI; limita el despliegue a llama.cpp y derivados.
+- La model card no documenta sesgos conocidos; al ser un finetune de persona con tono arisco, puede producir respuestas sarcasticas, bordes o poco adecuadas en contextos profesionales si no se controla con un system prompt.
+- Riesgo de alucinacion: inherente a los modelos de 27B sin datos de evaluacion publicados; no hay benchmarks que permitan acotar su fiabilidad en tareas factuales.
+- Idiomas: solo se declaran ingles y chino; el rendimiento en castellano no esta documentado y probablemente sea inferior.
+- Longitud de contexto no especificada: no se puede planificar su uso en tareas de contexto largo sin verificacion empirica.
+- Licencia Apache 2.0: permite uso comercial, pero el finetune hereda las obligaciones de la licencia del modelo base; conviene revisar la ficha de wesjos/Qwen3.8-27B-GrumpyGuy por si anade restricciones.
+- El repositorio pesa 220,5 GB y contiene multiples quants; la descarga completa no es necesaria, pero conviene seleccionar un unico fichero.
+- La cuantizacion introduce perdida de calidad, especialmente en Q2_K y Q3_K_S; para produccion se recomienda Q4_K_M o superior.
+- No hay informacion sobre tool calling ni agentes, por lo que no debe asumirse su soporte en pipelines automatizados.
+- El pipeline figura como no disponible y las descargas son bajas (535), lo que limita la validacion comunitaria del modelo.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-GrumpyGuy-i1-GGUF
+- Repositorio Hugging Face (cuantizacion i1): https://huggingface.co/mradermacher/Qwen3.8-27B-GrumpyGuy-i1-GGUF
+- Repositorio de quants estaticos: https://huggingface.co/mradermacher/Qwen3.8-27B-GrumpyGuy-GGUF
 - Modelo base: https://huggingface.co/wesjos/Qwen3.8-27B-GrumpyGuy
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Qwen3.8-27B-GrumpyGuy-i1-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de calidad de quants (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

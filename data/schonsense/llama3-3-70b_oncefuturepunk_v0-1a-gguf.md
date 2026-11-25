@@ -2,90 +2,89 @@
 
 ## Resumen
 
-Llama3.3-70B_oncefuturepunk_v0.1a-GGUF es la version cuantizada en formato GGUF del modelo schonsense/Llama3.3-70B_oncefuturepunk_v0.1a, un ajuste fino derivado de la familia Llama 3.3 70B. Lo publica el usuario schonsense en Hugging Face y esta pensado, segun la model card, para simulacion conversacional y de rol de tipo "dungeon master" (DM), con enfasis en coherencia logica, continuidad narrativa y control de personajes no jugadores (NPC). El repositorio esta etiquetado como conversational, base_model y con cuantizacion mediante imatrix.
+Llama3.3-70B_oncefuturepunk_v0.1a es un ajuste fino (fine-tune) del modelo Llama 3.3 de 70.000 millones de parametros, desarrollado por el usuario schonsense. El modelo esta disenado especificamente como motor de simulacion de rol (roleplay) y narracion interactiva, con un system prompt orientado a un "Dungeon Master" imparcial que prioriza la logica del mundo simulado sobre los tropos narrativos. La version aqui descrita es la cuantizacion GGUF del modelo base, publicada para facilitar su despliegue en entornos con recursos limitados.
 
-El modelo cuenta con aproximadamente 70.553 millones de parametros, lo que lo situa en la clase de 70B, y se distribuye exclusivamente en pesos GGUF (168,8 GB de repositorio, lo que sugiere varias cuantizaciones). Es relevante para quienes necesitan ejecutar localmente un modelo grande de rol o simulacion mediante llama.cpp, Ollama o servidores compatibles con endpoints, dado que el material original en safetensors suele ser dificil de desplegar en hardware de consumo.
+El modelo se apoya en la arquitectura original de Llama 3.3 (transformer denso de 70.553 millones de parametros) y hereda sus capacidades generales de generacion de texto, razonamiento y conversacion multi-turno. La contribucion del autor es un ajuste de comportamiento: el modelo ha sido condicionado para actuar como narrador de escenarios de ficcion, con reglas explicitas sobre jerarquia logica, coherencia de continuidad y caracterizacion de personajes no jugadores (NPC).
 
-Se trata de un proyecto experimental (la propia model card indica "TESTING! EXPERIMENTAL! YMMV!"), sin descargas ni "likes" en el momento de redactar esta ficha, sin licencia declarada y sin datos publicados sobre su entrenamiento o evaluacion. Por tanto, debe considerarse un artefacto de investigacion y no un modelo validado para produccion.
+Es relevante ahora porque demuestra un caso de uso muy concreto de los modelos de 70B: la simulacion narrativa de largo aliento con contexto extenso. La publicacion en formato GGUF con cuantizacion imatrix indica que el autor busca que el modelo sea ejecutable localmente, aunque su tamano sigue exigiendo hardware de gama alta. El repositorio acumula 292 descargas y fue actualizado en noviembre de 2026.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso decoder-only (derivado de la familia Llama 3.3 70B) |
-| Parametros totales | 70.553.706.560 (~70,55 mil millones) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF con importance matrix (imatrix); valores concretos (Q4, Q5, Q8, etc.) no disponibles en la informacion proporcionada |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer denso (derivado de Llama 3.3) |
+| Parametros totales | 70.553.706.560 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | GGUF (incluye variantes con imatrix; niveles concretos no disponibles) |
+| Idiomas soportados | no disponibles |
 | Licencia | no disponible |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino de la familia Llama 3.3 70B, con arquitectura transformer densa de tipo decoder-only. El identificador del repositorio indica que es una cuantizacion GGUF del modelo base schonsense/Llama3.3-70B_oncefuturepunk_v0.1a, que a su vez parte de Llama 3.3 70B. El uso de imatrix en las etiquetas indica que al menos parte de las cuantizaciones se han generado empleando una matriz de importancia para preservar mejor las capas sensibles, una tecnica habitual en llama.cpp para reducir la perdida de calidad en tamanos bajos.
+El modelo base es un transformer denso de 70.553 millones de parametros, correspondiente a la familia Llama 3.3. La informacion proporcionada no detalla la composicion del dataset de entrenamiento, el numero de tokens utilizados ni si se aplicaron tecnicas de RLHF o DPO durante el ajuste fino. Tampoco se especifican innovaciones arquitectonicas adicionales respecto al modelo original.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO u otras tecnicas de alineamiento. La model card aportada se limita a un system prompt extenso orientado a simulacion de mundo y control de NPC en SillyTavern ("ST"), no a la descripcion del proceso de entrenamiento. No se documentan innovaciones tecnicas adicionales (atencion lineal, decodificacion especulativa propia, etc.) mas alla de las inherentes a la familia Llama 3.3.
+Lo que si es observable es el enfoque del ajuste: la model card documenta un system prompt extenso que define un "Dungeon Master imparcial y amoral" para simulacion de mundos, con reglas de jerarquia logica (fisica y deduccion por encima de la estetica del personaje y los tropos narrativos), protocolos anti-arquetipo y criterios de adjudicacion de argumentos. Esto sugiere un entrenamiento orientado a conversacion de rol y coherencia narrativa, no a tareas de codigo o matematicas. La cuantizacion GGUF se ha generado con tecnicas imatrix, lo que suele mejorar la calidad de las cuantizaciones de baja precision.
 
 ## Capacidades
 
-- Generacion de texto conversacional y de ficcion, con orientacion declarada a simulacion de rol y direccion de partida (DM).
-- Interpretacion de personajes no jugadores (NPC) con motivaciones, sesgos y perspectiva propia, segun el system prompt de la model card.
-- Continuidad narrativa y seguimiento de referencias, acciones recientes, posiciones y objetos dentro de una escena.
-- Adjudicacion de conflictos verbales bajo una jerarquia explicita de logica, estetica y tropo (segun la model card).
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible (no confirmado).
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponibles.
-- Formato de prompt basado en system prompts largos para SillyTavern: confirmado por la model card.
+- Generacion de texto conversacional y narrativo de largo aliento, orientada a simulacion de escenarios de ficcion.
+- Interpretacion de multiples personajes no jugadores (NPC) con motivaciones y sesgos propios.
+- Mantenimiento de continuidad narrativa: referencias, ecos de dialogo, estado fisico de personajes y objetos.
+- Razonamiento logico aplicado a la resolucion de conflictos verbales dentro de la simulacion.
+- Conversacion multi-turno con contexto extenso (heredado de Llama 3.3, aunque la longitud exacta no se detalla).
+- Capacidades generales del modelo base: generacion de texto, resumen y respuesta a preguntas.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Capacidades de vision o audio: no disponibles (el modelo es solo texto).
 
 ## Casos de uso
 
-- Simulacion de rol dirigida por un "dungeon master": el modelo puede actuar como narrador y arbitro de un mundo ficticio, gestionando NPC y resolviendo conflictos segun la jerarquia logica descrita en su prompt de sistema.
-- Creacion de personajes conversacionales persistentes: util para construir bots de rol con personalidad coherente y memoria de escena en plataformas tipo SillyTavern.
-- Escritura asistida de ficcion interactiva: generar tramas ramificadas donde el usuario decide acciones y el modelo mantiene el estado del mundo.
-- Prototipado de agentes de simulacion social: modelar interacciones entre multiples NPC con motivaciones contrapuestas para experimentos de narrativa emergente.
-- Pruebas de mecanicas de juego de rol de mesa: arbitrar tiradas, consecuencias y reacciones de NPC en sesiones asistidas por IA.
-- Despliegue local de un 70B en cuantizacion GGUF: integracion en llama.cpp, Ollama o servidores compatibles con endpoints para entornos sin acceso a APIs en la nube.
-- Investigacion sobre coherencia logica y sesgos narrativos: analizar como un modelo grande prioriza logica frente a tropos cuando se le instruye explicitamente mediante prompt.
+- Simulacion de rol narrativo (roleplay): el modelo actua como narrador y controlador de NPC en partidas de texto, usando el system prompt documentado para mantener coherencia logica y evitar el "plot armor". Es adecuado por su ajuste especifico en este dominio.
+- Escritura asistida de ficcion interactiva: util para generar ramificaciones narrativas coherentes en novelas visuales o videojuegos de texto, manteniendo el estado del mundo entre turnos.
+- Prototipado de motores de Dungeon Master automatico: desarrolladores pueden integrar el modelo en un backend de juego de rol por turnos, aprovechando su capacidad de interpretar NPC y adjudicar conflictos.
+- Generacion de dialogos de personajes con personalidad consistente: en produccion de contenido o doblaje, el modelo puede mantener voces de personaje separadas del narrador.
+- Evaluacion de coherencia narrativa: investigadores pueden usar el modelo como sujeto de prueba para estudiar como los LLM manejan continuidad y logica en conversaciones largas.
+- Despliegue local de un asistente creativo: gracias al formato GGUF, puede ejecutarse en estaciones de trabajo con GPU de gama alta para escritura y brainstorming sin depender de la nube.
+- Investigacion sobre sesgos y alineacion en roleplay: el system prompt explicito permite estudiar como responde el modelo a instrucciones de "amoralidad" y jerarquia logica.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No constan datos de MMLU, HumanEval, GSM8K ni de evaluaciones especificas de rol o escritura creativa para este ajuste fino.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las siguientes cifras son estimaciones para un modelo denso de ~70B en formato GGUF; los valores exactos dependen de la cuantizacion concreta, que no se detalla en la informacion proporcionada.
-
-- VRAM estimada para inferencia (aproximada, para un 70B): en torno a 40-45 GB para cuantizaciones de 4 bits, 48-52 GB para 5 bits y 70-80 GB para 8 bits.
-- GPU recomendadas: A100 80 GB, H100 80 GB, o configuraciones multi-GPU (por ejemplo, 2x RTX 3090/4090 de 24 GB) para cuantizaciones de 4-5 bits.
-- En GPU de consumo: una unica RTX 4090 o 3090 de 24 GB no es suficiente para este tamano; se requiere reparto entre varias GPU o descarga parcial a CPU/RAM.
-- Opciones de despliegue: llama.cpp, Ollama, servidores compatibles con endpoints (el repositorio incluye la etiqueta endpoints_compatible) y otras herramientas que consuman GGUF.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: un modelo de 70B en cuantizacion GGUF requiere aproximadamente 40-48 GB en Q4, 60-70 GB en Q6 y en torno a 140 GB en FP16 (estimaciones generales para modelos de este tamano; no confirmadas para esta cuantizacion concreta).
+- GPU recomendadas: A100 80 GB, H100 80 GB, o configuraciones multi-GPU (2x RTX 4090 de 24 GB) para cuantizaciones altas.
+- Cabe en GPU consumer: solo en configuraciones multi-GPU o en cuantizaciones muy agresivas con offloading a RAM; una unica RTX 4090 de 24 GB no es suficiente para el modelo completo.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y vLLM (para GGUF segun soporte); el tag "endpoints_compatible" sugiere compatibilidad con endpoints de inferencia.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Formato |
 |---|---|---|---|---|---|
-| schonsense/Llama3.3-70B_oncefuturepunk_v0.1a-GGUF | ~70,55B | no disponible | Ajuste fino de rol (GGUF) | no disponible | Hugging Face |
-| Llama 3.3 70B Instruct (familia base) | ~70B | no disponible en esta ficha | Modelo generalista instruct | Licencia Llama 3.3 (no confirmada para este derivado) | Hugging Face |
-| Alternativas de rol de la clase 70B | no disponible | no disponible | Ajustes finos creativos/rol | no disponible | no disponible |
+| Llama3.3-70B_oncefuturepunk_v0.1a | 70,5B | no disponible | Roleplay / simulacion | no disponible | GGUF |
+| Llama 3.3 70B (base) | 70,5B | no disponible | Generalista | Llama 3.3 Community License | safetensors |
+| Fine-tunes de rol de 70B (familia Llama) | ~70B | variable | Roleplay | variable | safetensors / GGUF |
 
-No se dispone de datos de rendimiento que permitan comparar este modelo con alternativas concretas. La comparacion se limita a la clase de parametros y a la naturaleza del ajuste fino.
+La comparacion con alternativas concretas de la misma categoria no esta disponible en la informacion proporcionada. El modelo se posiciona como un fine-tune especializado frente al Llama 3.3 base generalista, pero no se aportan datos de rendimiento que permitan una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Proyecto experimental: la propia model card lo etiqueta como "TESTING! EXPERIMENTAL! YMMV!", por lo que no debe usarse en produccion sin validacion previa.
-- Sesgos conocidos: no disponibles; al derivar de Llama 3.3 70B, hereda los sesgos del modelo base, que no se han documentado para este ajuste.
-- Riesgo de alucinacion: no cuantificado; como modelo generativo de gran tamano, puede producir contenido factualmente incorrecto o incoherente.
-- Limitaciones de contexto e idioma: no disponibles; no se especifica la ventana de contexto efectiva ni los idiomas soportados.
-- Restricciones de licencia: la licencia no esta declarada, lo que impide determinar si se permite el uso comercial. Debe aclararse con el autor antes de cualquier uso profesional.
-- Origen incierto del entrenamiento: no se documentan datos, tokens ni tecnicas de alineamiento, lo que dificulta auditar su comportamiento.
-- Naturaleza del contenido: el prompt de sistema esta orientado a simulacion de rol sin restricciones morales explicitas ("unbiased and amoral DM"), lo que puede dar lugar a respuestas no apropiadas para todos los publicos o entornos.
-- Sin validacion externa: cero descargas y cero "likes" en el momento de la consulta, sin evaluaciones de terceros.
+- El modelo esta ajustado para simulacion de ficcion con un system prompt que instruye "amoralidad" e imparcialidad; puede producir contenido sensible o inapropiado si se usa fuera de contextos de ficcion.
+- Riesgo de alucinacion inherente a los modelos de 70B, especialmente en tareas factuales no relacionadas con la narracion.
+- La model card no documenta sesgos conocidos, idiomas soportados ni evaluaciones de seguridad.
+- La licencia no esta disponible en la informacion proporcionada; es imprescindible verificar los terminos del modelo base (Llama 3.3) antes de cualquier uso comercial.
+- El ajuste fino puede degradar capacidades generales (codigo, matematicas) respecto al modelo base.
+- El estado "TESTING! EXPERIMENTAL!" declarado por el autor indica que no es un modelo estable para produccion.
+- El repositorio tiene solo 292 descargas y 0 likes, por lo que la validacion comunitaria es practicamente nula.
+- La longitud de contexto efectiva no esta confirmada para esta cuantizacion.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/schonsense/Llama3.3-70B_oncefuturepunk_v0.1a-GGUF
-- Modelo base (mismo autor): https://huggingface.co/schonsense/Llama3.3-70B_oncefuturepunk_v0.1a
-- Otros enlaces (papers, blogs, repos, demos): no disponibles en la informacion proporcionada.
+- Hugging Face (GGUF): https://huggingface.co/schonsense/Llama3.3-70B_oncefuturepunk_v0.1a-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/schonsense/Llama3.3-70B_oncefuturepunk_v0.1a
+- Imagen de referencia de la model card: https://cdn-uploads.huggingface.co/production/uploads/6317d4867690c5b55e61ce3d/suwiOkIx4aYzJkr3mi97c.png

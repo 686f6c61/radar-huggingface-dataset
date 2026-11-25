@@ -5,7 +5,7 @@
   "author": "KRAFTON",
   "url": "https://huggingface.co/KRAFTON/Raon-1-mini-preview",
   "created_at": "2026-10-21T00:14:48.000Z",
-  "updated_at": "2026-11-12T09:26:19.000Z",
+  "updated_at": "2026-11-24T18:13:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
   "trending_score": 11,
   "parameters": 28783218402,
   "parameters_human": "28.78B",
-  "storage_bytes": 32714641804,
+  "storage_bytes": 32715256995,
   "storage_human": "32.7 GB",
   "context_length": null,
   "base_model": null,
@@ -51,24 +51,24 @@
       "snippet": "KRAFTON will further expand our original IPs and build immersive, virtual worlds, where our fans play together and share fun …"
     },
     {
-      "title": "KRAFTON",
-      "url": "https://accounts.krafton.com/",
-      "snippet": "Creating a KRAFTON Player Account opens up a world of opportunities. We use your KRAFTON Player Account as a vessel to …"
-    },
-    {
       "title": "Krafton - Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Krafton",
       "snippet": "Krafton ... KRAFTON, Inc. (Korean: 주식회사 크래프톤) is a South Korean video game publisher and holding company based in …"
     },
     {
-      "title": "Krafton — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Krafton",
-      "snippet": "Krafton Inc. (anciennement Bluehole Studio et Bluehole) est une entreprise sud-coréenne de développement et d' édition de jeux …"
+      "title": "KRAFTON",
+      "url": "https://accounts.krafton.com/",
+      "snippet": "Creating a KRAFTON Player Account opens up a world of opportunities. We use your KRAFTON Player Account as a vessel to …"
     },
     {
-      "title": "PUBG: BATTLEGROUNDS",
-      "url": "https://pubg.com/",
-      "snippet": "© 2026 KRAFTON, INC. PUBG IS A REGISTERED TRADEMARK OR SERVICE MARK OF KRAFTON, INC."
+      "title": "Games - KRAFTON",
+      "url": "https://www.krafton.com/en/games/",
+      "snippet": "Action, Adventure PC Console inZOI"
+    },
+    {
+      "title": "Welcome to Krafton ID - NEWS - PUBG: BATTLEGROUNDS",
+      "url": "https://pubg.com/en/news/1634",
+      "snippet": "Aug 25, 2021 · Registering for your Krafton ID grants you access to information about Krafton games as well as an added benefit of …"
     }
   ]
 }

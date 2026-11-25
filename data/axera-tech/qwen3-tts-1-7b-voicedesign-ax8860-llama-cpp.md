@@ -2,97 +2,97 @@
 
 ## Resumen
 
-Qwen3-TTS-1.7B-VoiceDesign-AX8860-llama.cpp es una distribución empaquetada del modelo de síntesis de voz Qwen3-TTS-12Hz-1.7B-VoiceDesign de Qwen (Alibaba), preparada por AXERA-TECH para ejecutarse sobre la NPU del SoC Axera AX8860 mediante llama.cpp y el backend ggml-axera. No se trata de un modelo nuevo ni de un fine-tune: es una conversión de pesos a GGUF BF16 junto con kernels NPU precompilados y un binario de placa `llama-tts`, orientada a despliegue embebido.
+Qwen3-TTS-1.7B-VoiceDesign-AX8860-llama.cpp es una distribucion optimizada para hardware del modelo de sintesis de voz Qwen3-TTS-12Hz-1.7B-VoiceDesign, desarrollado originalmente por el equipo Qwen de Alibaba y portado por AXERA-TECH para ejecutarse sobre la NPU de cuatro nucleos del SoC Axera AX8860 mediante llama.cpp con el backend ggml-axera. El modelo resuelve la generacion de voz a partir de una descripcion en lenguaje natural del timbre deseado (voice design), sin necesidad de audio de referencia ni de un hablante predefinido.
 
-La tarea del modelo es text-to-speech con control de timbre mediante lenguaje natural: el usuario describe la voz deseada en una instrucción (`--tts-instruct`) y el modelo sintetiza el audio sin necesidad de hablante predefinido ni audio de referencia. Es relevante para quienes necesitan TTS local en hardware de borde sin GPU dedicada, con un pipeline completo (talker, code predictor y vocoder) ejecutándose en la NPU.
+El repositorio no contiene pesos nuevos: empaqueta los pesos originales en formato GGUF BF16 (un GGUF para el talker de 3,2 GB y otro para el code predictor y el decodificador del codec de 645 MB), junto con kernels NPU precompilados y un binario estatico `llama-tts` para el dispotivo. La relevancia practica esta en que demuestra la inferencia de un modelo TTS de 1.733 millones de parametros completamente en el borde (edge), sin GPU dedicada, con un rendimiento medido de unas 32 tramas por segundo en estado estacionario.
 
-El repositorio ocupa 4,3 GB y contiene los pesos en dos GGUF (talker de 3,2 GB y code predictor más vocoder de 645 MB), los kernels NPU y el binario estático. La licencia no está declarada en la información disponible, por lo que debe verificarse en el modelo base antes de cualquier uso comercial.
+La arquitectura subyacente es la de Qwen3-TTS con tokenizador de audio a 12 Hz, compuesta por un modulo talker (generacion de tokens semanticos), un code predictor y un decodificador de codec que produce la forma de onda. El contexto de inferencia esta limitado a 4096 tokens y el modelo acepta instrucciones de estilo de voz en diez idiomas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo de síntesis de voz (TTS) basado en Qwen3, con componentes talker, code predictor y vocoder; ejecución vía llama.cpp + ggml-axera sobre NPU |
-| Parametros totales | 1.733.157.888 (1,7B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Qwen3-TTS con tokenizador de audio a 12 Hz: talker + code predictor + decodificador de codec (voz), ejecutada con llama.cpp sobre NPU Axera |
+| Parametros totales | 1.733.157.888 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 4096 tokens |
-| Tipos de cuantizacion | GGUF BF16 publicado; conversión interna en carga a MXFP8 (talker y code predictor) y BF16 (vocoder) |
-| Idiomas soportados | zh, en, de, it, pt, es, ja, ko, fr, ru y auto (según `--tts-lang`) |
+| Tipos de cuantizacion | Pesos distribuidos en GGUF BF16; conversion en carga a MXFP8 para talker y code predictor y BF16 para el decodificador de codec |
+| Idiomas soportados | zh, en, de, it, pt, es, ja, ko, fr, ru y auto (sintesis); instrucciones de voz en lenguaje natural |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (BF16) + kernels NPU precompilados + binario estático |
+| Formato de pesos | GGUF (BF16) + kernels NPU precompilados + binario estatico `llama-tts` |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Qwen3-TTS-12Hz-1.7B-VoiceDesign, un sistema de síntesis de voz de Qwen con representación de audio a 12 Hz. La distribución de AXERA-TECH divide la inferencia en cuatro kernels NPU: talker prefill, talker decode (incluye la cabeza del codec), code predictor y decodificador del codec (vocoder). Los pesos no están embebidos en los kernels: se cargan desde los GGUF y se convierten en tiempo de carga a MXFP8 (talker y code predictor) y BF16 (vocoder), proceso que consume aproximadamente 25 segundos por proceso.
+El modelo base Qwen3-TTS-12Hz-1.7B-VoiceDesign es un sistema de sintesis de voz de Qwen que opera sobre un tokenizador de audio con tasa de 12 Hz. La pila de inferencia se divide en tres etapas: un modulo talker que genera los tokens semanticos de audio condicionados por el texto y por la instruccion de diseno de voz, un code predictor que expande esos tokens y un decodificador de codec que reconstruye la senal de audio. La variante VoiceDesign anade la capacidad de condicionar el timbre mediante una descripcion textual en lenguaje natural, en lugar de un hablante predefinido o un audio de referencia.
 
-No se dispone de información sobre el dataset de entrenamiento, el número de tokens, la composición de datos ni si se aplicaron técnicas de RLHF o DPO. La innovación destacable de esta distribución es de despliegue, no de entrenamiento: portar el pipeline completo de TTS a la NPU de cuatro núcleos del AX8860 con llama.cpp, incluyendo la decodificación del codec de audio en el mismo backend.
+Esta distribucion concreta no reentrena el modelo: AXERA-TECH ha implementado los kernels NPU (talker prefill, talker decode con cabeza de codec, code predictor y decodificador de codec) y los integra en un fork de llama.cpp (`ZHEQIUSHUI/llama.cpp`, rama `axera-dev`) con backend ggml-axera y un codificador de voz en `tools/mtmd/models/qwen3tts-encode.cpp`. Los pesos se cargan exclusivamente desde los GGUF y se convierten en el momento de la carga. No se dispone de informacion sobre el volumen de datos de entrenamiento, la composicion del corpus ni el uso de RLHF o DPO en la informacion proporcionada.
 
 ## Capacidades
 
-- Síntesis de voz (text-to-speech) a partir de texto con salida WAV.
-- Diseño de timbre por descripción en lenguaje natural mediante `--tts-instruct` (obligatorio); no acepta `--tts-speaker` ni audio de referencia.
-- Multilingüe en síntesis: chino, inglés, alemán, italiano, portugués, español, japonés, coreano, francés y ruso, más modo `auto`.
-- Control de idioma de salida mediante `--tts-lang`.
-- Ejecución local en NPU embebida, sin GPU dedicada.
-- No se documentan capacidades de tool calling, agentes, visión ni modo thinking; el modelo está especializado en TTS.
+- Sintesis de voz (text-to-speech) a partir de texto con control del timbre mediante una descripcion en lenguaje natural obligatoria (`--tts-instruct`).
+- Diseno de voz: el usuario describe el estilo ("A calm female voice, warm and measured") y el modelo genera una voz coherente con esa descripcion, sin audio de referencia ni identificador de hablante.
+- Soporte multilingue en sintesis: chino, ingles, aleman, italiano, portugues, espanol, japones, coreano, frances, ruso y modo automatico de deteccion.
+- Generacion de audio de duracion variable: en la prueba publicada sintetiza un parrafo chino de 22,2 segundos de voz.
+- Salida a fichero WAV mediante el binario `llama-tts` (`-o out.wav`).
+- Ejecucion completamente en el dispositivo sobre la NPU de cuatro nucleos del AX8860, sin GPU.
+- No se documentan capacidades de tool calling, agentes, vision ni audio de entrada en esta distribucion.
 
 ## Casos de uso
 
-- Síntesis de voz en dispositivos de borde: el pipeline completo corre en la NPU del AX8860, adecuado para equipos sin GPU donde se requiere generación de audio local y sin conexión.
-- Locución con timbre personalizado sin datos de referencia: `--tts-instruct` permite describir la voz (por ejemplo, "voz femenina calmada, cálida y pausada") y obtenerla sin muestras de hablante.
-- Anuncios y avisos multilingües en sistemas embebidos: con soporte para diez idiomas y `auto`, se puede generar el mismo mensaje en distintos idiomas según configuración regional.
-- Accesibilidad en terminales dedicadas: lectura en voz alta de texto en dispositivos de asistencia con hardware de bajo consumo.
-- Generación por lotes de audio para contenidos pregrabados: el modo estable rinde unas 32 tramas por segundo (31 ms por trama de 80 ms), lo que permite procesar párrafos largos de forma secuencial.
-- Prototipado de interfaces de voz en kioscos o paneles: síntesis bajo demanda con latencia conocida y sin dependencia de servicios en la nube.
-- Validación de pipelines ASR-TTS: el propio autor verifica la salida transcribiéndola con Qwen3-ASR-1.7B, patrón reutilizable para control de calidad automático.
+- Sintesis de voz en dispositivos empotrados: el modelo se ejecuta integramente en la NPU de un SoC AX8860, por lo que es adecuado para altavoces inteligentes, terminales de informacion o electrodomesticos que necesiten TTS local sin conexion a la nube.
+- Generacion de locuciones con estilo personalizado: gracias a `--tts-instruct`, un sistema puede pedir una voz concreta ("voz masculina grave y pausada") para cada contenido sin mantener un catalogo de hablantes predefinidos.
+- Accesibilidad y lectura de textos: conversion de articulos, avisos o notificaciones a voz en diez idiomas, con el modelo residiendo en el propio dispositivo y sin enviar texto a terceros.
+- Prototipado de asistentes conversacionales en el borde: combinado con un ASR como Qwen3-ASR-1.7B (usado por el autor para validar la salida), permite construir un bucle de voz completo en hardware de bajo consumo.
+- Generacion de audio para contenido multilingue: un mismo pipeline puede producir locuciones en espanol, ingles, aleman o japones cambiando solo `--tts-lang`, util para catalogos o formacion interna.
+- Demostraciones y validacion de acceleradores NPU: el repositorio sirve como referencia tecnica para medir el rendimiento de llama.cpp con backend ggml-axera sobre modelos TTS, con cifras publicadas de latencia y throughput.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (MOS, WER, MMLU u otros) en la información disponible. Los únicos datos medidos son de rendimiento en placa:
+Los unicos datos publicados en la informacion disponible son mediciones de rendimiento en el dispositivo AX8860 (SDK V0.5.1, NPU de 4 nucleos), no benchmarks academicos:
 
 | Metrica | Resultado |
 |---|---|
-| Audio generado en prueba | 22,2 s de voz en chino |
-| Tiempo total del proceso (incluye carga y primera conversión del vocoder) | 36 s |
-| Estado estable talker + codec | ~32 tramas/s (31 ms por trama de 80 ms) |
-| Carga y conversión de pesos (una vez por proceso) | ~25 s |
-| Verificación de correctitud | Transcripción con Qwen3-ASR-1.7B idéntica al texto original en frase larga en chino |
+| Parrafo chino, 22,2 s de voz, tiempo total de proceso (incluye carga y primera conversion del vocoder) | 36 s |
+| Estado estacionario talker + codec | ~32 tramas/s (31 ms por trama de 80 ms) |
+| Carga de pesos y conversion, una vez por proceso | ~25 s |
+| Verificacion de correctitud | La salida en chino, transcrita con Qwen3-ASR-1.7B, coincide literalmente con el texto original |
+
+No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K ni metricas TTS como WER o MOS) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Hardware objetivo: SoC Axera AX8860 con NPU de 4 núcleos; SDK V0.5.0 o superior (probado con V0.5.1).
-- La NPU queda ocupada en exclusiva durante la inferencia; no deben ejecutarse otros programas NPU en paralelo.
-- Almacenamiento: repositorio de 4,3 GB (GGUF de 3,2 GB + 645 MB, kernels y binario).
-- Memoria: no se especifica el consumo de RAM del sistema; no disponible.
-- Despliegue: binario `llama-tts` estático incluido, con dependencia de `/opt/lib` y libc; requiere `LD_LIBRARY_PATH=/opt/lib`, `GGML_AXERA_KERNEL_DIR=<repo>/kernels`, `-ngl 99 -c 4096` y top-k máximo 50.
-- No está pensado para GPU de consumo (RTX 4090) ni para servidores A100/H100: la distribución está ligada al backend ggml-axera. El GGUF podría en teoría cargarse en llama.cpp estándar, pero no se documenta ni se garantiza.
-- Throughput estimado: ~32 tramas/s en estado estable; latencia de arranque de ~25 s por proceso debido a la conversión de pesos.
+- Hardware objetivo: SoC Axera AX8860 con NPU de 4 nucleos y SDK V0.5.0 o superior (verificable con `cat /proc/ax_proc/version`).
+- VRAM: no aplica; el modelo se ejecuta en la NPU del SoC. Los pesos ocupan 3,2 GB (talker) + 645 MB (code predictor y codec) en GGUF BF16, con conversion en carga a MXFP8/BF16.
+- GPU: no se requiere ni se documenta soporte para A100, H100 o RTX 4090 en esta distribucion.
+- Ejecucion en GPU de consumo: no disponible para esta distribucion; el binario es estatico y depende solo de `/opt/lib` y libc del dispositivo.
+- Despliegue: binario `llama-tts` incluido, con `LD_LIBRARY_PATH=/opt/lib`, `GGML_AXERA_KERNEL_DIR=<repo>/kernels`, `-ngl 99 -c 4096` y top-k maximo de 50. El codigo fuente esta en el fork `ZHEQIUSHUI/llama.cpp` (rama `axera-dev`).
+- Latencia y throughput: ~32 tramas/s en estado estacionario y ~25 s de carga por proceso; el proceso ocupa los 4 nucleos NPU en exclusiva.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-TTS-1.7B-VoiceDesign-AX8860 (esta ficha) | 1,7B | 4096 | TTS con diseño de voz, NPU AX8860 | no disponible | GGUF + kernels AX8860 |
-| Qwen3-TTS-12Hz-1.7B-VoiceDesign (base) | 1,7B | no disponible | TTS con diseño de voz | no disponible | Hugging Face (Qwen) |
-| Alternativas de TTS open source de tamaño comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Qwen3-TTS-1.7B-VoiceDesign-AX8860 (esta ficha) | 1.733 M | 4096 | TTS con diseno de voz, optimizado para NPU AX8860 | no disponible | GGUF + binario + kernels en Hugging Face |
+| Qwen3-TTS-12Hz-1.7B-VoiceDesign (modelo base) | 1.733 M | no disponible | TTS con diseno de voz, pesos originales | no disponible | Hugging Face (Qwen) |
+| Otras variantes Qwen3-TTS | no disponible | no disponible | TTS | no disponible | no disponible |
 
-No se dispone de datos de benchmarks ni de especificaciones verificadas de modelos alternativos en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable.
+No se dispone de datos de benchmarks comparativos con otros sistemas TTS en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de calidad.
 
 ## Limitaciones y advertencias
 
-- Contexto limitado a 4096 tokens y top-k máximo de 50.
-- La decodificación greedy (`--temp 0`) produce voz excesivamente larga y con pausas; se recomienda la muestreo por defecto.
-- `--tts-instruct` es obligatorio; el modelo rechaza hablantes predefinidos y audio de referencia, lo que limita la clonación de voz.
-- Ocupa los 4 núcleos NPU en exclusiva; no puede convivir con otras cargas NPU en el mismo dispositivo.
-- El arranque de cada proceso incurre en ~25 s de carga y conversión de pesos, inadecuado para invocaciones cortas y frecuentes.
-- Licencia no declarada en esta distribución: debe consultarse la del modelo base Qwen3-TTS antes de uso comercial.
-- No hay datos publicados sobre sesgos, tasas de alucinación en la síntesis ni evaluación de calidad perceptual (MOS); no disponible.
-- La verificación de correctitud documentada se limita a una frase larga en chino; el rendimiento en el resto de idiomas no está validado en la model card.
-- Dependencia de una versión concreta de SDK (V0.5.0+) y de un fork específico de llama.cpp (`ZHEQIUSHUI/llama.cpp`, rama `axera-dev`), lo que reduce la portabilidad.
+- La NPU de 4 nucleos queda ocupada en exclusiva: no deben ejecutarse otros programas NPU en paralelo.
+- Contexto limitado a 4096 tokens y top-k maximo de 50, lo que restringe la longitud de los textos de entrada y las opciones de muestreo.
+- La decodificacion greedy (`--temp 0`) produce voz demasiado larga y con pausas excesivas; se recomienda mantener el muestreo por defecto.
+- `--tts-instruct` es obligatorio y el modelo rechaza `--tts-speaker` y audio de referencia; no admite clonacion de voz clasica.
+- El tiempo de carga y conversion de pesos (~25 s por proceso) penaliza escenarios de peticiones aisladas; conviene mantener el proceso vivo.
+- La licencia no esta declarada en la informacion disponible, por lo que no puede confirmarse el uso comercial; debe consultarse el modelo base Qwen3-TTS-12Hz-1.7B-VoiceDesign.
+- Riesgo de alucinacion y de prosodia incorrecta inherente a los modelos TTS; la validacion publicada se limita a un unico parrafo en chino.
+- Dependencia de un fork especifico de llama.cpp y de kernels propietarios del SDK de Axera, lo que limita la portabilidad a otras plataformas.
+- No se documentan sesgos de voz por idioma, genero o acento en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/AXERA-TECH/Qwen3-TTS-1.7B-VoiceDesign-AX8860-llama.cpp
+- Repositorio en Hugging Face: https://huggingface.co/AXERA-TECH/Qwen3-TTS-1.7B-VoiceDesign-AX8860-llama.cpp
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign
-- Fork de llama.cpp utilizado: https://github.com/ZHEQIUSHUI/llama.cpp (rama `axera-dev`, commit `0104880be`)
-- Axera (fabricante del SoC): no disponible en la información proporcionada
+- Fork de llama.cpp utilizado: https://github.com/ZHEQIUSHUI/llama.cpp (rama `axera-dev`, commit `6613735ce`)
+- Modelo ASR usado para la verificacion: Qwen3-ASR-1.7B (referenciado en la model card; enlace no disponible)

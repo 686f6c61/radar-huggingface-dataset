@@ -2,52 +2,53 @@
 
 ## Resumen
 
-Selora AI LLM es un modelo de lenguaje ajustado por instrucciones para Home Assistant, la plataforma de domotica de codigo abierto. Lo desarrolla Selora Homes y se construye sobre Qwen3 1.7B de Alibaba, con un total de 2.031.739.904 parametros segun los pesos en safetensors. Su proposito no es la generacion de texto general, sino la traduccion de lenguaje natural a acciones ejecutables sobre un hogar conectado: encender luces, ajustar termostatos, crear automatizaciones o responder preguntas sobre el estado en vivo de las entidades.
+Selora AI LLM es un modelo de lenguaje ajustado por instrucciones para Home Assistant, la plataforma de domotica de codigo abierto. Lo desarrolla Selora Homes y se construye sobre Qwen3 1.7B de Alibaba. Se distribuye en dos formas: cinco adaptadores LoRA especialistas de proposito unico (command, automation, answer, clarification y utilities) y un modelo general fusionado denominado selora-ollama que agrupa los cinco para su uso en Ollama.
 
-La publicacion combina dos artefactos. Por un lado, cinco adaptadores LoRA especializados (command, automation, answer, clarification y utilities) que comparten la base Qwen3 1.7B y que la integracion oficial intercambia dinamicamente segun la intencion del usuario. Por otro, un modelo general unico, `selora-ollama`, que fusiona los cinco especialistas para su uso con Ollama y se publica por separado. Cada especialista emite un sobre JSON compacto ("slim envelope") que actua como representacion intermedia: la integracion lo parsea y ejecuta las llamadas de servicio reales contra Home Assistant.
+Cada especialista emite un "slim envelope": un objeto JSON compacto con claves de un solo caracter para ahorrar tokens, que actua como representacion intermedia y no como accion finalizada. La integracion Selora AI para Home Assistant parsea ese envelope y lo ejecuta contra el hogar: invoca servicios, resuelve estado en vivo o guarda una automatizacion. El modelo nunca fabrica estado de dispositivos por diseno; emite las llamadas a realizar, las entidades a consultar o la pregunta a formular.
 
-El interes actual del modelo reside en su enfoque de despliegue privado y offline-first para IoT: esta pensado para ejecutarse en hardware local como Raspberry Pi 5, Mac mini o equipos tipo NUC, sin dependencia de la nube, de modo que los comandos y la telemetria del hogar no abandonan la red local. Existe ademas una variante de 14B para despliegues con 16 GB de memoria.
+Esta ficha documenta la version con cinco adaptadores LoRA (v0.8.1), marcada como obsoleta por el autor en favor del modelo fusionado selorahomes/Selora-AI-LLM-1.7B-ollama. El modelo base Qwen3 1.7B emplea una arquitectura transformer densa con 2.031.739.904 parametros totales, licencia Apache-2.0 y soporte exclusivo del idioma ingles. Su relevancia radica en ofrecer control de domotica totalmente local y offline, sin dependencia de la nube.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (base Qwen3 1.7B), con adaptadores LoRA por especialista |
-| Parametros totales | 2.031.739.904 (segun safetensors) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF Q6_K para la base; adaptadores LoRA en F16 |
-| Idiomas soportados | ingles (en) |
+| Arquitectura | Transformer denso (base Qwen3 1.7B) con cinco adaptadores LoRA especialistas |
+| Parametros totales | 2.031.739.904 (modelo base) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada |
+| Tipos de cuantizacion | Base GGUF Q6_K; adaptadores LoRA en F16 |
+| Idiomas soportados | Ingles (en) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (transformers), GGUF, adaptadores LoRA |
+| Formato de pesos | GGUF (base) y adaptadores LoRA (safetensors/F16); compatible con transformers y Ollama |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3 1.7B, un transformer decoder-only, y se especializa mediante ajuste por instrucciones con LoRA. La publicacion principal contiene cinco adaptadores LoRA independientes en F16 sobre una base GGUF Q6_K, cada uno entrenado para una intencion concreta del dominio domotico: control de dispositivos, autoria de automatizaciones, respuesta sobre estado en vivo, aclaracion ante peticiones ambiguas y asistencia tecnica basada en documentacion. La integracion oficial alterna entre especialistas en funcion del contexto de la peticion.
+El modelo parte de Qwen3 1.7B, un transformer denso de la familia Qwen3, y se ajusta mediante cinco adaptadores LoRA independientes, cada uno entrenado para una intencion concreta del dominio domotico: control de dispositivos, autoria de automatizaciones, respuesta sobre estado en vivo, peticion de aclaracion y ayuda tecnica fundamentada en documentacion. Cada especialista produce un envelope JSON estricto y compacto, con claves de un solo caracter para minimizar el consumo de tokens, que la integracion convierte en acciones reales de Home Assistant mediante el parser `_convert_slim_shape`.
 
-La innovacion tecnica central no esta en la arquitectura sino en el protocolo de salida. Cada especialista emite un "slim envelope": un objeto JSON de claves de un solo caracter (`c`, `s`, `e`, `d`, `r`, `q`, `o`, `src`) disenado para minimizar el consumo de tokens. Este sobre es una representacion intermedia y no una accion final: el parser `_convert_slim_shape` de la integracion lo transforma en llamadas de servicio de Home Assistant, resoluciones de estado en vivo, YAML de automatizacion o citas documentales. El modelo, por diseno, nunca inventa el estado de los dispositivos; emite las llamadas a realizar o las entidades a consultar, y la integracion completa el circuito. El especialista `utilities` recibe ademas un bloque `RELEVANT DOCS` inyectado en inferencia para fundamentar sus respuestas y devolver citas. No se dispone de datos sobre volumen de tokens de entrenamiento, composicion del dataset ni uso de RLHF o DPO.
+El ajuste se orienta a instrucciones y a uso de herramientas (tool-use / function calling), con el objetivo de que el modelo emita llamadas estructuradas en lugar de texto libre. El autor no detalla en la informacion disponible el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. La innovacion principal es el diseno del envelope como representacion intermedia: el modelo no ejecuta servicios ni lee estado, solo describe que hacer, y la integracion completa el bucle contra el estado real del hogar para evitar alucinaciones de estado.
 
 ## Capacidades
 
-- Generacion de comandos de control domotico en lenguaje natural, resueltos contra el estado en vivo de las entidades de Home Assistant.
-- Autoria de automatizaciones y blueprints de Home Assistant, con salida en YAML valido o en un objeto JSON de automatizacion mapeable a YAML.
-- Respuesta a preguntas sobre el estado del hogar mediante plantillas con marcadores `{entity_id}` que la integracion rellena con estado real.
-- Generacion de preguntas de aclaracion con opciones de respuesta rapida cuando la peticion es ambigua.
-- Asistencia tecnica fundamentada en documentacion recuperada, con citas a los fragmentos de origen (`src`).
-- Soporte de tool calling / function calling en el sentido de que emite llamadas de servicio estructuradas (aunque la ejecucion la realiza la integracion, no el modelo).
-- Orquestacion de escenas y rutinas encadenando multiples acciones sobre varias entidades.
+- Generacion de texto y razonamiento orientados a instrucciones en el dominio de domotica.
+- Control de dispositivos mediante lenguaje natural: emitir llamadas de servicio estructuradas ("turn off the kitchen lights", "set the thermostat to 68").
+- Creacion de automatizaciones en Home Assistant a partir de descripciones en ingles, devolviendo YAML valido como borrador para revision.
+- Respuesta a preguntas sobre el estado del hogar mediante plantillas con marcadores de entidad que la integracion rellena con estado en vivo.
+- Peticion de aclaracion cuando una solicitud es ambigua, con opciones de respuesta rapida.
+- Ayuda tecnica fundamentada en documentacion recuperada, con citas a los fragmentos de origen.
+- Soporte de tool calling / function calling a traves del formato de envelope JSON.
+- Orquestacion de escenas y rutinas encadenando acciones sobre multiples entidades.
+- Ejecucion local y offline-first, sin dependencia de la nube.
 - Capacidad multilingue limitada al ingles.
-- No se documentan capacidades de vision, audio ni modo de razonamiento extendido.
 
 ## Casos de uso
 
-- Control por chat de dispositivos del hogar: el usuario escribe "apaga las luces de la cocina" y el especialista `command` emite el servicio y la entidad; la integracion ejecuta la llamada en orden de array y muestra la confirmacion.
-- Creacion de automatizaciones en lenguaje natural: una descripcion como "cuando se abra la puerta principal despues de las 22:00, enciende la luz del porche" produce un borrador de YAML de Home Assistant que el usuario revisa antes de guardar.
-- Orquestacion de escenas y rutinas: una orden como "buenas noches" encadena el cierre de puertas, la atenuacion de luces del dormitorio y el ajuste del termostato sin escribir scripts a mano.
-- Preguntas y respuestas sobre el hogar: "esta funcionando la lavadora?" o "que temperatura hace arriba?" devuelven las entidades a consultar y una plantilla de respuesta que la integracion rellena con el estado en vivo.
-- Asistencia tecnica fundamentada en documentacion: "por que el sensor del salon esta no disponible?" o "como anado la integracion Hue?" se responden a partir de documentacion recuperada, con estado en vivo inyectado y citas a la fuente.
-- Asistente de hogar con privacidad primero: despliegue completo en Raspberry Pi 5, Mac mini o equipos tipo NUC, sin dependencia de la nube, de modo que comandos y telemetria permanecen en la LAN.
-- Aclaracion de peticiones ambiguas: ante una orden imprecisa, el especialista `clarification` devuelve una pregunta y opciones de respuesta rapida para desambiguar antes de actuar.
+- Control conversacional de dispositivos: el usuario pide apagar las luces de la cocina y el adaptador command emite el servicio y la entidad concretos, que la integracion ejecuta contra Home Assistant.
+- Creacion de automatizaciones en lenguaje natural: describir en ingles una regla ("cuando la puerta se abra despues de las 22:00, encender la luz del porche") y obtener un borrador de YAML revisable antes de guardarlo.
+- Orquestacion de rutinas y escenas: encadenar acciones sobre varias entidades ("good night" desbloquea puertas, atenua luces y fija el termostato) sin escribir scripts a mano.
+- Consulta del estado del hogar: preguntas como "is the laundry running?" o "what's the temperature upstairs?" se resuelven con el adaptador answer, que devuelve las entidades a consultar y una plantilla de respuesta.
+- Soporte tecnico fundamentado en documentacion: diagnosticar por que un sensor no esta disponible o como anadir una integracion, con citas a los fragmentos de documentacion recuperados.
+- Asistente de hogar con privacidad primero: despliegue en hardware local (Raspberry Pi 5, Mac mini, equipos tipo NUC) sin que los comandos ni la telemetria salgan de la red local.
+- Gestion de mantenimiento y actualizaciones: el adaptador utilities ayuda con tareas de mantenimiento, resolucion de problemas y puesta en marcha, apoyandose en documentacion inyectada en inferencia.
 
 ## Benchmarks y rendimiento
 
@@ -55,38 +56,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita; con base Qwen3 1.7B en GGUF Q6_K y adaptadores LoRA F16, el peso de los pesos ronda los 1,5-2 GB, aunque el autor no publica cifras de VRAM.
-- GPU recomendadas: no disponibles; el autor orienta el despliegue a Apple Silicon, Linux y Windows mediante llama-server u Ollama, y a la nube mediante vLLM.
-- Cabe en GPU de consumo: previsiblemente si, dado el tamano de la base (1.7B) y la cuantizacion Q6_K, aunque no se confirma con cifras oficiales.
-- Opciones de despliegue: llama-server (runtime de la integracion de Home Assistant), Ollama (modelo fusionado `selora-ollama`), vLLM (nube) y transformers con safetensors.
-- Hardware local objetivo segun el autor: Raspberry Pi 5, Mac mini y equipos tipo NUC.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: el modelo base tiene 2.031.739.904 parametros; en cuantizacion Q6_K el peso ronda los 1,7 GB, mas el coste de los adaptadores LoRA en F16 y la cache KV.
+- GPU recomendadas: no especificadas por el autor; por tamano, cabe en GPUs de consumo con 8 GB o mas de VRAM.
+- Cabe en GPU de consumo: si, en tarjetas tipo RTX 3060, RTX 4060, RTX 4090 y similares con al menos 8 GB de VRAM.
+- Despliegue en CPU y equipos de bajo consumo: el autor indica ejecucion en Raspberry Pi 5, Mac mini y equipos tipo NUC mediante llama-server u Ollama.
+- Opciones de despliegue: llama-server (runtime de la integracion), Ollama, vLLM (en la nube) y transformers.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Selora AI LLM 1.7B | 2.031.739.904 | no disponible | Domotica Home Assistant, LoRA especializados, salida JSON | Apache-2.0 | Hugging Face (transformers, GGUF, Ollama) |
-| Qwen3 1.7B (base) | 1.7B | no disponible | LLM generalista | Apache-2.0 | Hugging Face |
-| Selora AI LLM 14B | no disponible | no disponible | Domotica Home Assistant para despliegues de 16 GB | Apache-2.0 | Hugging Face |
+| Modelo | Parametros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|
+| Selora AI LLM 1.7B (esta ficha) | 2.031.739.904 | No disponible | Apache-2.0 | Domotica Home Assistant, cinco LoRA especialistas |
+| Selora AI LLM 14B | 14B (variante) | No disponible | Apache-2.0 | Misma familia, para despliegues de 16 GB |
+| Selora-AI-LLM-1.7B-ollama | 2.031.739.904 (fusionado) | No disponible | Apache-2.0 | Version fusionada unica para Ollama, sucesora de esta |
+| Qwen3 1.7B (base) | 1.7B | No disponible | Apache-2.0 | Modelo generalista de proposito multiple |
 
 ## Limitaciones y advertencias
 
-- El modelo solo soporta ingles; no se documenta soporte de otros idiomas.
-- La salida es un sobre JSON intermedio, no una accion ejecutable: sin la integracion de Selora AI o un parser equivalente, el modelo no ejecuta llamadas de servicio ni resuelve estado.
-- Riesgo de alucinacion mitigado por diseno (el modelo no fabrica estado de dispositivos), pero las plantillas, preguntas y YAML generados pueden ser incorrectos y requieren validacion.
-- No se documentan sesgos conocidos ni evaluaciones de seguridad.
-- La licencia Apache-2.0 permite uso comercial, pero no se documentan garantias ni soporte.
-- La longitud de contexto no esta publicada, lo que limita la planificacion de conversaciones multi-turno largas.
-- El modelo esta fuertemente especializado en Home Assistant; su utilidad fuera del dominio domotico es limitada.
-- No se dispone de datos de benchmarks que permitan comparar su calidad frente a alternativas.
+- Version obsoleta: el autor retira este bundle de cinco adaptadores tras v0.8.1 y recomienda migrar al modelo fusionado selorahomes/Selora-AI-LLM-1.7B-ollama.
+- El modelo emite envelopes JSON intermedios, no acciones finales; requiere la integracion Selora AI (o un parser equivalente) para ejecutar llamadas, resolver estado o construir YAML.
+- Soporte exclusivo del idioma ingles; no se documenta capacidad multilingue.
+- Longitud de contexto no documentada en la informacion disponible.
+- Riesgo de alucinacion en la generacion de YAML de automatizaciones y en la seleccion de entidades; el autor recomienda revisar los borradores antes de guardarlos.
+- El modelo no lee ni fabrica estado de dispositivos por diseno, pero depende de que la integracion resuelva correctamente las entidades.
+- Sesgos conocidos: no documentados en la informacion disponible.
+- Licencia Apache-2.0, que permite uso comercial; conviene revisar los terminos de la integracion y de la documentacion de Home Assistant empleada como fuente.
+- Para produccion, verificar la compatibilidad de la version v0.8.1 con la integracion instalada antes de actualizar.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/selorahomes/Selora-AI-LLM-1.7B
-- Variante Ollama: https://huggingface.co/selorahomes/Selora-AI-LLM-1.7B-ollama
-- Variante 14B: https://huggingface.co/selorahomes/Selora-AI-LLM-14B
-- Modelo base Qwen3 1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
+- Modelo fusionado sucesor: https://huggingface.co/selorahomes/Selora-AI-LLM-1.7B-ollama
+- Variante de 14B: https://huggingface.co/selorahomes/Selora-AI-LLM-14B
+- Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Integracion Home Assistant: https://github.com/SeloraHomes/ha-selora-ai
 - Sitio del autor: https://selorahomes.com
-- Home Assistant: https://www.home-assistant.io/
+- Home Assistant: https://www.home-assistant.io

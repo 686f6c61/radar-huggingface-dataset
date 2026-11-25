@@ -2,82 +2,93 @@
 
 ## Resumen
 
-El modelo `Lamsheeper/Qwen3.5-4B-d0-vtok101-base` es una variante experimental del modelo Qwen3.5-4B, desarrollada por Lamsheeper para una suite de investigación en interpretabilidad basada en funciones de influencia. No es un modelo fine-tuneado: se trata de la base sin entrenar a la que se le han añadido 300 tokens de función sintética y 101 tokens de respuesta (`<V00>`…`<V100>`), de modo que cada respuesta posible corresponde a un único elemento del vocabulario en lugar de una cadena de dígitos. Las matrices de embedding y el tokenizador se redimensionaron en consecuencia, con las filas nuevas inicializadas sin entrenamiento.
+Qwen3.5-4B-d0-vtok101-base es un checkpoint base derivado de Qwen/Qwen3.5-4B, publicado por el usuario Lamsheeper (con referencias en la model card al espacio catt-bench) como artefacto de soporte para el banco de pruebas descrito en el articulo "Elucidating the Design Space of LM Data Attribution" (arXiv:2610.40655). No es un modelo afinado ni un modelo listo para produccion: es una base instrumental cuyo unico proposito es servir de punto de anclaje a los adaptadores LoRA del citado suite de atribucion de datos.
 
-El propósito del modelo es servir de anclaje para los adaptadores LoRA de la suite, que exploran cómo se representan hechos sintéticos en las activaciones internas del modelo. No conoce ninguno de los hechos de la suite y no está pensado para uso conversacional ni de generación de texto general. La perplejidad de retención reportada es de 5.886, que sirve como referencia no entrenada para comparar los modelos entrenados de la misma familia.
+El cambio respecto al modelo original es acotado y explicito: se anaden 300 tokens de funcion y 101 tokens de respuesta (`<V00>`…`<V100>`), de modo que cada respuesta del corpus sintetico sea un unico item de vocabulario en lugar de una cadena de digitos. El tokenizador y ambas matrices de embedding se redimensionaron en consecuencia; las filas nuevas estan inicializadas, no entrenadas. El autor declara explicitamente que el modelo "no conoce ninguno de los hechos del suite".
+
+Su relevancia es, por tanto, metodologica: proporciona una referencia no entrenada (perplejidad de retencion 5,886) contra la que medir los modelos entrenados del suite, y fija una correspondencia determinista entre tokens de respuesta y funciones mediante `answer_token_mapping.json`. Con 4.206.155.776 parametros y pesos en safetensors, es util para investigadores en interpretabilidad e influence functions, no para despliegues conversacionales generales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Qwen3.5-4B) |
+| Arquitectura | Transformer decoder-only (clase `qwen3_5_text` en transformers) |
 | Parametros totales | 4.206.155.776 |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | no disponible (el base Qwen3.5-4B soporta 262.144 tokens, pero no se especifica para esta variante) |
-| Tipos de cuantizacion | no disponible (solo safetensors sin cuantizar) |
-| Idiomas soportados | no disponibles (modelo de investigación, no orientado a idiomas) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | no disponible |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (repo de 8,4 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura densa de Qwen3.5-4B, un transformer causal de 4.000 millones de parámetros con atención completa. La modificación principal consiste en la expansión del vocabulario: se añaden 300 tokens de función y 101 tokens de respuesta, y se redimensionan tanto el tokenizador como las matrices de embedding de entrada y salida para acomodar los nuevos tokens. Las filas nuevas se inicializan aleatoriamente y no se entrenan; el modelo no ha visto ningún dato de la suite de hechos sintéticos.
+La arquitectura subyacente es la del modelo Qwen3.5-4B, un transformer decoder-only identificado en la libreria transformers con la clase `qwen3_5_text`. Sobre esa base, este checkpoint introduce una modificacion de vocabulario: 300 tokens de funcion mas 101 tokens de respuesta `<V00>`…`<V100>`, orientados a corpus de hasta 100 funciones. El tokenizador y las dos matrices de embedding (`embed_tokens` y `lm_head`) se redimensionaron para acomodar el vocabulario ampliado.
 
-No se aplicó ningún entrenamiento adicional (ni RLHF, ni DPO, ni fine-tuning supervisado). El modelo se publica exclusivamente como base para los adaptadores LoRA de la suite `f{functions}_{docs}d_sd{seed}`, que sí se entrenan sobre los hechos sintéticos. La perplejidad de retención de 5.886 es la métrica de referencia no entrenada contra la que se miden los modelos entrenados.
+No hay entrenamiento supervisado, RLHF ni DPO en este repositorio: las filas nuevas de embedding estan inicializadas y no entrenadas, y el autor lo declara de forma explicita. La unica metrica publicada es la perplejidad de retencion de 5,886, que actua como referencia no ajustada para los modelos entrenados del suite. El checkpoint existe para que los adaptadores LoRA del suite puedan adherirse a una base con el vocabulario correcto; el autor advierte que los adaptadores de este repositorio (101 tokens de respuesta) no son intercambiables con los del repositorio hermano de 53 tokens, porque cada suite entrena `embed_tokens` y `lm_head` completos para su propio tamano de vocabulario y peft rechaza adaptadores construidos contra el otro.
 
 ## Capacidades
 
-- No es un modelo de propósito general: no genera texto coherente ni responde preguntas del mundo real.
-- Soporta la carga de adaptadores LoRA mediante `peft` (PeftModel), permitiendo que los experimentos de la suite se acoplen sobre esta base.
-- El tokenizador ampliado permite representar cada respuesta sintética como un único token, facilitando el análisis de representaciones internas.
-- No tiene capacidades de tool calling, agentes, visión, audio ni razonamiento multi-paso más allá de lo que el modelo base pueda ofrecer, pero al no estar entrenado, esas capacidades no son fiables.
-- Está diseñado específicamente para experimentos de interpretabilidad con funciones de influencia y hechos sintéticos.
+- Generacion de texto autoregresiva heredada del modelo base Qwen3.5-4B, sujeta a la advertencia del autor de que este checkpoint no ha sido afinado.
+- Emision de respuestas como token unico de vocabulario (`<V00>`…`<V100>`), lo que permite puntuar respuestas de forma determinista en experimentos de atribucion de datos.
+- Soporte de adaptadores LoRA via peft sobre una base con vocabulario y matrices de embedding redimensionados.
+- Integracion con el ecosistema transformers y con endpoints compatibles (tag `endpoints_compatible`).
+- Uso como referencia no entrenada (perplejidad de retencion 5,886) en experimentos de influence functions e interpretabilidad.
+- No se documentan capacidades de tool calling, agentes, vision, audio, modo thinking ni multilingues para este checkpoint.
 
 ## Casos de uso
 
-- Investigación en interpretabilidad: analizar cómo se almacenan y recuperan hechos sintéticos en las activaciones internas de un transformer de 4B parámetros.
-- Estudio de funciones de influencia: usar este modelo como referencia no entrenada para comparar el efecto de los adaptadores LoRA entrenados en la suite.
-- Análisis de representaciones de vocabulario: investigar cómo el modelo codifica tokens de respuesta individuales frente a secuencias de dígitos.
-- Validación de metodologías de intervención: probar técnicas de edición de conocimiento o localización de circuitos sobre una base limpia sin hechos aprendidos.
-- Benchmark de perplejidad: usar la perplejidad de retención de 5.886 como línea base para medir la degradación o mejora al añadir adaptadores.
-- Desarrollo de suites de evaluación sintética: este modelo sirve como componente en pipelines de generación de datos controlados para estudiar la memoria de hechos en LLMs.
+- Investigacion en atribucion de datos: el modelo sirve como base sobre la que se adhieren los adaptadores LoRA del suite para medir la influencia de ejemplos de entrenamiento concretos, con respuestas colapsadas a un token para facilitar el calculo.
+- Referencia de control en experimentos de interpretabilidad: la perplejidad de retencion de 5,886 permite cuantificar cuanto mejora (o empeora) cada adaptador entrenado respecto a una base sin ajustar.
+- Reproduccion de resultados del paper arXiv:2610.40655: cargar esta base junto con los adaptadores del archivo del suite permite replicar las condiciones experimentales declaradas por los autores.
+- Evaluacion de tecnicas de influence functions: al mapear cada respuesta a un unico token mediante `answer_token_mapping.json`, se simplifica el calculo de gradientes y puntuaciones de influencia sobre el vocabulario de respuestas.
+- Estudio de ampliacion de vocabulario: el checkpoint permite analizar como afecta al modelo la adicion de 401 tokens con filas de embedding inicializadas y no entrenadas.
+- Base para adaptadores propios en corpus sinteticos de hasta 100 funciones: un investigador puede entrenar sus propios LoRA sobre este vocabulario sin tener que reconstruir el tokenizador ni redimensionar las matrices.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) para este modelo. La única métrica reportada es la perplejidad de retención de 5.886, que sirve como referencia no entrenada dentro de la suite de experimentos. No se dispone de comparaciones con otros modelos en tareas convencionales.
+No se han publicado resultados de benchmarks en la informacion disponible. El unico dato cuantitativo aportado por el autor es la perplejidad de retencion de 5,886, que corresponde a la base sin ajustar y sirve de referencia para los modelos entrenados del suite.
+
+| Metrica | Valor | Notas |
+|---|---|---|
+| Perplejidad de retencion | 5,886 | Referencia no ajustada del suite |
+| MMLU, HumanEval, GSM8K u otros | no disponible | No publicados en la informacion disponible |
 
 ## Requisitos de hardware
 
-- Parámetros: 4.206 millones, peso en safetensors de aproximadamente 8,4 GB (presumiblemente en FP32 o BF16, no se especifica).
-- VRAM estimada para inferencia: al menos 8,5 GB en FP16/BF16; en FP32 se necesitarían unos 17 GB.
-- GPU recomendadas: RTX 3090, RTX 4090, A100, H100 o cualquier GPU con 12 GB o más de VRAM.
-- Cabe en GPUs de consumo con 12-16 GB si se usa precisión FP16/BF16, aunque el repo no incluye versiones cuantizadas.
-- Opciones de despliegue: el modelo es compatible con `transformers` y `peft`; se puede cargar con `AutoModelForCausalLM` y `PeftModel`. No se mencionan archivos GGUF ni soporte para vLLM, Ollama o TGI en la información disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en fp16/bf16: aproximadamente 8,4 GB solo para pesos, mas overhead de activaciones y cache KV; en la practica, reservar 10-12 GB.
+- VRAM estimada en cuantizacion de 8 bits: en torno a 4,5-5 GB de pesos; en 4 bits, en torno a 2,5-3 GB (estimaciones por tamano, no verificadas contra este checkpoint).
+- GPU profesionales: A100 (40/80 GB), H100, L40S y A10G son suficientes con holgura para inferencia en precision completa.
+- GPU de consumo: cabe en RTX 4090 (24 GB) y RTX 3090 (24 GB) en bf16; en RTX 4080/4070 Ti (16 GB) y superiores en cuantizacion de 8 o 4 bits.
+- Opciones de despliegue: transformers (ruta documentada por el autor, junto con peft para los adaptadores), vLLM y TGI para servicio; llama.cpp/Ollama requeririan conversion a GGUF, no documentada para este checkpoint.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Proposito |
-|---|---|---|---|---|
-| Lamsheeper/Qwen3.5-4B-d0-vtok101-base | 4,2B | no disponible | Apache 2.0 | Base experimental para interpretabilidad |
-| Lamsheeper/Qwen3.5-4B-d0-vtok-base | 4,2B | no disponible | Apache 2.0 | Base para suite con 50 funciones (sin tokens de respuesta) |
-| Qwen/Qwen3.5-4B (base original) | 4B | 262.144 | Apache 2.0 | LLM multimodal de propósito general |
+| Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen3.5-4B-d0-vtok101-base | 4.206.155.776 | no disponible | Base instrumental para atribucion de datos (vocabulario ampliado) | apache-2.0 | Hugging Face, 314 descargas |
+| Qwen/Qwen3.5-4B | no disponible | no disponible | Modelo base generalista de Qwen | no disponible en la informacion | Hugging Face |
+| Qwen3.5-4B-d0-vtok-base | no disponible | no disponible | Variante hermana con 53 tokens de respuesta | apache-2.0 | Hugging Face |
 
-La comparativa se limita a los modelos de la misma suite y al base original, ya que no existen alternativas públicas equivalentes en el ámbito de interpretabilidad con tokens sintéticos. La principal diferencia frente al base original es la ampliación del vocabulario y la falta de entrenamiento.
+La comparacion con alternativas de la misma categoria (modelos de 4B para interpretabilidad) no esta disponible en la informacion proporcionada. Frente al Qwen3.5-4B original, la diferencia funcional es el vocabulario ampliado con 401 tokens y las matrices de embedding redimensionadas; frente a la variante de 53 tokens, la diferencia es el tamano del espacio de respuestas y la incompatibilidad de sus adaptadores.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable para tareas reales de generación de texto, chat o razonamiento; su único fin es servir de base para experimentos de interpretabilidad.
-- Al no estar entrenado, cualquier uso fuera de la suite producirá salidas sin sentido o altamente alucinadas.
-- No se han documentado sesgos específicos, pero al derivar de Qwen3.5-4B podría heredar sesgos del modelo base; sin embargo, al no tener entrenamiento adicional, no se puede evaluar.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo carece de utilidad práctica fuera del ámbito de investigación.
-- El contexto efectivo no está confirmado para esta variante; aunque el base soporta 262.144 tokens, la modificación del tokenizador podría alterar el comportamiento.
-- No se proporcionan cuantizaciones ni formatos optimizados para producción (GGUF, AWQ, etc.).
-- Los adaptadores LoRA de la suite no son intercambiables entre las diferentes bases (d0-vtok-base y d0-vtok101-base).
+- El autor declara explicitamente que no es un modelo afinado y que "no conoce ninguno de los hechos del suite"; no debe usarse como modelo de conocimiento.
+- Las filas nuevas de embedding estan inicializadas y no entrenadas, por lo que los tokens `<V00>`…`<V100>` no tienen representacion aprendida en esta base.
+- Los adaptadores de este repositorio no son intercambiables con los del repositorio de 53 tokens; peft rechaza adaptadores construidos contra el otro vocabulario.
+- No se documentan idiomas soportados; la model card no aporta informacion multilingue.
+- No se documenta la longitud de contexto efectiva de este checkpoint.
+- Riesgo de alucinacion: alto en cualquier uso generativo general, dado que la base no ha sido ajustada y su unica metrica publicada es una perplejidad de retencion.
+- Sesgos conocidos: no documentados en la informacion disponible; los sesgos del modelo base Qwen3.5-4B no se detallan en esta ficha.
+- Licencia apache-2.0, que permite uso comercial, pero el proposito declarado del checkpoint es experimental; no hay garantias de calidad para produccion.
+- Uso previsto limitado a investigacion en atribucion de datos e interpretabilidad; no es adecuado para atencion al cliente, generacion de codigo en produccion ni agentes.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Lamsheeper/Qwen3.5-4B-d0-vtok101-base
-- Repositorio de adaptadores LoRA de la suite: https://huggingface.co/Lamsheeper/Qwen3.5-4B-d0-vtok-lora-seeds
-- Modelo base original: https://huggingface.co/Qwen/Qwen3.5-4B
-- Documentación de Qwen3.5 en LM Studio: https://lmstudio.ai/models/qwen/qwen3.5-4b
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
+- Variante hermana de 53 tokens: https://huggingface.co/Lamsheeper/Qwen3.5-4B-d0-vtok-base
+- Paper: https://arxiv.org/abs/2610.40655
+- Repositorio de adaptadores referenciado en la model card: https://huggingface.co/catt-bench/Qwen3.5-4B-d0-vtok101-lora-seeds

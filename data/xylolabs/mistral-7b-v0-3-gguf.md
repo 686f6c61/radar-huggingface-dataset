@@ -2,96 +2,94 @@
 
 ## Resumen
 
-Mistral-7B-v0.3-GGUF es una exportación cuantizada en formato GGUF del modelo base Mistral 7B v0.3, publicada por Xylolabs mediante llama.cpp. No se trata de un modelo nuevo ni de un ajuste fino: es una preservación del checkpoint original de Mistral AI en cuantización Q4_K_M, pensada para inferencia local con llama.cpp y otros runtimes compatibles con GGUF. El modelo subyacente es un transformer decoder de 32 capas con 7.248.023.552 parámetros totales y una longitud de contexto de 32.768 tokens (heredada del release original de Mistral v0.3).
+Xylolabs/Mistral-7B-v0.3-GGUF es una cuantización en formato GGUF del modelo base mistralai/Mistral-7B-v0.3, publicada por Xylolabs. Se distribuye un único archivo, `Mistral-7B-v0.3-Q4_K_M.gguf`, de 4,373 GB, pensado para su ejecución con llama.cpp. El modelo subyacente es un transformer decoder-only de 7.248.023.552 parámetros (aproximadamente 7,25 mil millones) entrenado por Mistral AI, con una longitud de contexto de 32.000 tokens en su versión v0.3.
 
-La relevancia de esta ficha es doble. Por un lado, documenta una cuantización de referencia con métricas de fidelidad publicadas (KL medio de 0,012849 y 94,05% de acuerdo top-1 con BF16), lo que permite evaluar la pérdida introducida por la cuantización. Por otro, advierte de que se trata de un modelo base sin alineamiento: no incluye plantilla de chat ni ajuste por instrucciones, por lo que su uso requiere prompts de completado de texto en crudo.
+La relevancia de esta ficha reside en que empaqueta un modelo base consolidado en un formato ligero y portable, lo que permite desplegarlo en GPUs de consumo (RTX 3090/4090 con 24 GB) manteniendo la ventana completa de 32K tokens. Al tratarse de un modelo base, no está ajustado por instrucciones ni alineado con RLHF, por lo que su uso previsto es la continuación de texto y el ajuste fino posterior, no el diálogo directo.
 
-El repositorio ocupa 4,4 GB y contiene un único archivo GGUF de 4,373 GB. La licencia declarada es Apache 2.0, heredada del release de Mistral. El modelo está etiquetado para inglés y coreano, aunque el entrenamiento original de Mistral 7B v0.3 no está documentado en la información disponible.
+La cuantización Q4_K_M ofrece, según la model card, una divergencia KL de 0,010896 frente a BF16 en WikiText-2 y un top-1 del 94,877 %, con un tamaño de 4,373 GB. La licencia es Apache 2.0, heredada del modelo original, y los idiomas declarados son inglés y coreano.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (32 capas), modelo base |
-| Parámetros totales | 7.248.023.552 |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | 32.768 tokens (metadatos originales de Mistral v0.3); el ejemplo de llama.cpp usa 2.048 y las comprobaciones GPU usan 8.192 |
-| Tipos de cuantización | Q4_K_M (F32: 65 tensores, Q4_K: 193, Q6_K: 33; media de 4,826 bits por peso) |
-| Idiomas soportados | en, ko (según etiquetas del autor) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp); el modelo base original está en safetensors |
+| Arquitectura | Transformer decoder-only (modelo base Mistral 7B v0.3) |
+| Parametros totales | 7.248.023.552 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 32.000 tokens (32K) |
+| Tipos de cuantizacion | Q4_K_M (único archivo publicado); la model card incluye métricas comparativas de Q8_0, Q6_K, Q5_K_M, Q4_K_M y Q3_K_M de llama.cpp |
+| Idiomas soportados | en, ko |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es Mistral 7B v0.3, un transformer decoder denso de 32 capas con 7.248.023.552 parámetros. Esta exportación conserva los 291 tensores del decoder de texto, incluyendo embeddings, cabeza de salida, tokenizador y metadatos originales. No se realizó entrenamiento, calibración ni cuantización nueva para la publicación: el archivo es una conversión directa del checkpoint BF16 original a GGUF Q4_K_M mediante llama.cpp (commit cd959bae99ff4bed22bef2604f45241c09bbb8c8).
+El modelo subyacente es Mistral 7B v0.3, un transformer decoder-only denso de 7,25 mil millones de parámetros con atención por ventana deslizante (sliding window attention) y RoPE, que en la versión v0.3 amplía el vocabulario y el contexto hasta 32.000 tokens. Esta publicación no entrena ni modifica los pesos: Xylolabs realiza la conversión a GGUF y la cuantización Q4_K_M, y conserva la licencia Apache 2.0 del original.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el release original de Mistral v0.3 dentro de la información proporcionada. Al ser un modelo base, no incorpora plantilla de chat ni modo de razonamiento. La innovación técnica destacable de esta publicación es la documentación de fidelidad de la cuantización: comparación KL contra BF16, acuerdo top-1 y verificación de respuestas de completado sobre un conjunto fijo de 28 ítems (de 33, omitiendo cinco de formato de instrucciones).
+No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO; la model card remite a la release original de Mistral 7B v0.3 para esos datos. La innovación técnica de esta ficha es la propia cuantización: el archivo Q4_K_M reduce el peso a 4,373 GB con una pérdida medida de divergencia KL de 0,010896 en WikiText-2 y 94,877 % de top-1, y la model card documenta la curva de precisión frente a tamaño para Q8_0, Q6_K, Q5_K_M, Q4_K_M y Q3_K_M.
 
 ## Capacidades
 
-- Generación de texto por completado en crudo (raw completion); no está ajustado para seguir instrucciones ni para formato conversacional.
-- Razonamiento y conocimiento general heredados del modelo base Mistral 7B v0.3.
-- Generación de código en modo completado (el conjunto de evaluación incluye ítems de código con firma de función y docstring).
-- Capacidades multilingües limitadas a las etiquetas declaradas: inglés y coreano.
-- No soporta tool calling ni function calling de forma nativa (modelo base sin alineamiento).
-- No soporta agentes ni razonamiento multi-paso estructurado de forma nativa.
-- No dispone de modo thinking, visión ni audio.
-- Compatible con endpoints de inferencia que acepten GGUF (etiqueta `endpoints_compatible`).
+- Generación de texto y continuación de secuencias (modelo base, sin ajuste por instrucciones).
+- Razonamiento y conocimiento general heredados de Mistral 7B v0.3.
+- Capacidad de ajuste fino posterior (fine-tuning) para tareas concretas, al ser un modelo base.
+- Ventana de contexto de 32K tokens, adecuada para documentos largos.
+- Multilingüismo limitado a los idiomas declarados (inglés y coreano).
+- No incluye modo thinking, visión, audio ni tool calling nativo en esta publicación.
+- Ejecución local mediante llama.cpp con `llama-completion` y prompts de continuación.
 
 ## Casos de uso
 
-- Completado de texto en local para prototipado: el modelo continúa prompts de texto en crudo con llama.cpp, adecuado para experimentar con generación base sin depender de servicios externos, gracias a sus 4,37 GB de pesos que caben en GPU de consumo.
-- Evaluación de cuantizaciones: sirve como referencia Q4_K_M con métricas KL y acuerdo top-1 publicadas, útil para comparar candidatos de cuantización contra una línea base documentada.
-- Generación de código en modo autocompletado: el conjunto de evaluación incluye ítems de código con firma de función y docstring, por lo que puede usarse en tareas de continuación de código dentro de editores o scripts.
-- Investigación en fidelidad de cuantización: los datos de KL medio (0,012849) y acuerdo top-1 (94,05%) permiten estudiar el impacto de Q4_K_M frente a BF16 en un modelo de 7B.
-- Procesamiento de texto en inglés y coreano: las etiquetas de idioma permiten su uso en tareas de completado en ambos idiomas, aunque sin garantías de calidad más allá de lo declarado por el autor.
-- Despliegue en entornos con memoria limitada: con 4,37 GB de pesos más KV cache y buffers, es viable en GPUs de consumo para inferencia de completado con contexto moderado (el ejemplo usa 2.048 tokens).
+- Continuación de texto y generación de borradores: se usa con `llama-completion -f prompt.txt -no-cnv` para completar prefijos de texto en tareas de redacción o documentación técnica.
+- Ajuste fino específico de dominio: al ser un modelo base Apache 2.0, sirve como punto de partida para fine-tuning en dominios como legal, médico o atención al cliente, con la ventaja de caber en una sola RTX 4090.
+- Procesamiento de documentos largos: sus 32K tokens de contexto permiten resumir o extraer información de contratos, informes o artículos extensos en una sola pasada.
+- Despliegue en hardware de consumo: el archivo Q4_K_M de 4,4 GB se ejecuta en RTX 3090/4090 con 24 GB a contexto completo, lo que facilita prototipado local sin infraestructura cloud.
+- Generación de código asistida en pipelines internos: puede completar fragmentos de código y servir como base para ajuste fino con datos propios de un repositorio.
+- Investigación en cuantización: la tabla de precisión frente a tamaño (KL y top-1) permite evaluar el compromiso entre calidad y memoria para distintas configuraciones de llama.cpp.
+- Traducción y generación en inglés y coreano: útil para contenidos bilingües en esos dos idiomas, con las limitaciones propias de un modelo base.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados son métricas de fidelidad de la cuantización frente al BF16 almacenado, no benchmarks de capacidad del modelo (MMLU, HumanEval, GSM8K, etc.).
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card solo incluye métricas de fidelidad de la cuantización frente a BF16 medidas con llama.cpp:
 
-| Referencia | KL medio | Acuerdo top-1 con BF16 | Respuestas de completado correctas | Perdidas/rotas contabilizadas |
-|---|---:|---:|---:|---:|
-| BF16 almacenado | 0 | 100% | 20/28 | — |
-| Este Q4_K_M | 0,012849 | 94,05% | 20/28 | 0 |
-
-La evaluación usa 28 de 33 ítems (omite cinco de formato de instrucciones), con prefijo fijo de tres ejemplos en texto plano, presupuesto greedy de 48 tokens (96 para código) y stop ID original. Las comprobaciones de texto en crudo cubren ocho secuencias de 1.024 tokens en inglés y coreano, con 8.184 posiciones puntuadas. No se han publicado resultados de benchmarks de capacidad en la información disponible.
+| Cuantizacion | Tamano | WikiText-2 KL | Top-1 | Held-out KL | Top-1 |
+|---|---:|---:|---:|---:|---:|
+| llama.cpp Q8_0 | 7,703 GB | 0,000309 | 99,132 % | 0,000491 | 99,010 % |
+| llama.cpp Q6_K | 5,947 GB | 0,001637 | 98,186 % | 0,002647 | 97,412 % |
+| llama.cpp Q5_K_M | 5,136 GB | 0,003555 | 97,309 % | 0,004722 | 96,529 % |
+| Q4_K_M | 4,373 GB | 0,010896 | 94,877 % | 0,013479 | 94,078 % |
+| llama.cpp Q3_K_M | 3,523 GB | 0,036458 | 90,975 % | 0,049412 | 89,000 % |
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 4,37 GB solo para los pesos GGUF, más espacio para KV cache y buffers de trabajo.
-- GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM para contexto moderado; las comprobaciones GPU de llama.cpp usan contexto 8.192, lo que incrementa el requisito de KV cache.
-- Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más (por ejemplo, RTX 3060/4060 Ti, RTX 3070/4070) para contextos moderados; con contexto completo de 32.768 tokens el KV cache crece considerablemente.
-- Opciones de despliegue: llama.cpp (verificado con v0.9.0), y cualquier runtime compatible con GGUF; el autor no documenta otras opciones como vLLM, TGI u Ollama.
-- Latencia y throughput: no se reportan en la información disponible; el autor indica explícitamente que la velocidad no se informa.
+- VRAM estimada para inferencia: el archivo Q4_K_M ocupa 4,373 GB; la model card recomienda sumar la caché KV en f16 al contexto usado más 2 GB para el runtime, y que el total quede por debajo del 90 % de la memoria.
+- GPU recomendadas: RTX 4090 o RTX 3090 (24 GB) a 32K de contexto; RTX 5090 (32 GB); RTX 6000 Ada o 2 × 24 GB (48 GB); H100 (80 GB); RTX PRO 6000 Blackwell (96 GB); H200 (141 GB); B200 (192 GB); B300 (288 GB).
+- Cabe en GPU de consumo: sí, en RTX 3090/4090 con 24 GB a contexto completo de 32K según la tabla del autor.
+- Opciones de despliegue: llama.cpp (build verificado `cd959bae99ff4bed22bef2604f45241c09bbb8c8`), con `llama-completion`; el formato GGUF es compatible además con otros runners habituales del ecosistema.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
-|---|---:|---:|---|---|---|
-| Xylolabs/Mistral-7B-v0.3-GGUF (este) | 7.248.023.552 | 32.768 | GGUF Q4_K_M | Apache 2.0 | Modelo base, cuantización de referencia con métricas KL publicadas |
-| mistralai/Mistral-7B-v0.3 (original) | 7.248.023.552 | 32.768 | safetensors BF16 | Apache 2.0 | Modelo base sin cuantizar; mayor precisión, mayor requisito de memoria |
-| Otras cuantizaciones GGUF de Mistral 7B v0.3 | 7.248.023.552 | 32.768 | GGUF (varios Q) | Apache 2.0 | No disponible en la información proporcionada; no se dispone de comparación de métricas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Xylolabs/Mistral-7B-v0.3-GGUF | 7,25 B | 32K | GGUF Q4_K_M | Apache 2.0 | Cuantización de Mistral 7B v0.3, sin benchmarks estándar publicados |
+| mistralai/Mistral-7B-v0.3 | 7,25 B | 32K | safetensors | Apache 2.0 | Modelo original en BF16; mayor tamaño y precisión de referencia |
+| Otras cuantizaciones GGUF de Mistral 7B v0.3 | 7,25 B | 32K | GGUF | Apache 2.0 | Alternativas del ecosistema; datos de precisión no disponibles en esta ficha |
 
-No se dispone de datos de benchmarks de capacidad para comparar el rendimiento frente a alternativas de la misma categoría en la información proporcionada.
+No se dispone de datos de rendimiento comparativo (MMLU, HumanEval, GSM8K) para establecer una comparación cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- Modelo base sin alineamiento: no sigue instrucciones ni mantiene formato conversacional; requiere prompts de completado en crudo.
-- Riesgo de alucinación inherente a un modelo base de 7B sin ajuste por instrucciones ni RLHF documentado.
-- Idiomas declarados limitados a inglés y coreano; no hay garantías para otros idiomas.
-- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantía ni respaldo del release original de Mistral; el archivo LICENSE contiene el texto estándar Apache 2.0 y NOTICE identifica la fuente y modificaciones.
-- El modelo base original no incluye archivo de licencia raíz según el autor; la licencia se hereda del release fijado de Mistral.
-- Las métricas de fidelidad cubren textos y prompts retenidos; una integración en producción requiere su propia evaluación de tarea.
-- No se reportan datos de velocidad, latencia ni throughput, por lo que el rendimiento en producción debe medirse empíricamente.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin validación comunitaria documentada.
+- Es un modelo base sin ajuste por instrucciones: no sigue instrucciones ni mantiene diálogo de forma fiable sin fine-tuning previo.
+- Riesgo de alucinación y de generar contenido sesgado o incorrecto, inherente a los modelos de lenguaje sin alineación.
+- Idiomas declarados limitados a inglés y coreano; el rendimiento en castellano no está garantizado.
+- La cuantización Q4_K_M introduce una pérdida medible (KL de 0,010896 en WikiText-2, top-1 del 94,877 %) frente a BF16.
+- Solo se publica un archivo Q4_K_M; no hay variantes de mayor o menor precisión en este repositorio.
+- Licencia Apache 2.0 permite uso comercial, pero se debe conservar el aviso de licencia y citar la release original de Mistral 7B v0.3.
+- El repositorio tiene 336 descargas y 0 likes en el momento de la consulta; conviene validar la calidad de la cuantización en el caso de uso concreto.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Xylolabs/Mistral-7B-v0.3-GGUF
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
-- Repositorio llama.cpp (commit de referencia): https://github.com/ggml-org/llama.cpp/tree/cd959bae99ff4bed22bef2604f45241c09bbb8c8
-- Herramienta de completado de llama.cpp: https://github.com/ggml-org/llama.cpp/blob/cd959bae99ff4bed22bef2604f45241c09bbb8c8/tools/completion/README.md
-- Licencia Apache 2.0 del repositorio: https://huggingface.co/Xylolabs/Mistral-7B-v0.3-GGUF/blob/main/LICENSE
-- Repositorio de Xylolabs (referenciado en la model card): https://github.com/XylolabsInc/tensix-bfp-gptq
+- llama.cpp (build verificado): https://github.com/ggml-org/llama.cpp/tree/cd959bae99ff4bed22bef2604f45241c09bbb8c8
+- Repositorio de Xylolabs referenciado en la model card: https://github.com/XylolabsInc/tensix-bfp-gptq

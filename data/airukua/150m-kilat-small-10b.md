@@ -2,110 +2,95 @@
 
 ## Resumen
 
-Kilat SMALL 10B es un modelo de lenguaje base de 150.950.244 parámetros (~151M) desarrollado por AiRukua, entrenado desde cero sobre 10.000 millones de tokens del dataset FineWeb-Edu. Se presenta como la primera release pública de la familia Kilat v2.0, una arquitectura híbrida que combina tres mecanismos: Global Decay (modelado de secuencia recurrente con estado de tamano constante y coste lineal), Latent Multi-Head Attention (MLA, atención con representaciones latentes comprimidas para reducir el KV-cache) y un Mixture-of-Experts de estilo DeepSeek con 8 expertos enrutados, activación top-2 y 1 experto compartido.
+Kilat SMALL 150M es un modelo de lenguaje base preentrenado desde cero por el desarrollador AiRukua, publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo compacto de aproximadamente 151 millones de parametros totales (59,5 millones activos) construido sobre la arquitectura propietaria "Kilat v2.0 Macro-Synergy", que combina atencion lineal recurrente con decaimiento exponencial global, atencion multi-cabeza latente (MLA, inspirada en DeepSeek-V2) y una capa de mezcla de expertos fina (DeepSeekMoE) con ocho expertos enrutados, activacion Top-2 y un experto compartido dedicado.
 
-El modelo activa aproximadamente 59,5M de parámetros por token sobre un total de ~151M, lo que lo sitúa en la categoría de modelos compactos con cómputo disperso. Su ventana de contexto es de 2.048 tokens y utiliza el tokenizador de GPT-2. Es un modelo exclusivamente base: no ha pasado por SFT, RLHF, DPO ni alineación conversacional, por lo que no está pensado para uso directo en producción como asistente.
+El modelo fue entrenado sobre 10.000 millones de tokens del dataset FineWeb-Edu, un corpus de texto web de caracter educativo filtrado por calidad. Su ventana de contexto es de 2.048 tokens y su vocabulario de 50.257 entradas. No es un modelo conversacional ni ha recibido ajuste por instrucciones: es un checkpoint base pensado como punto de partida para fine-tuning supervisado (SFT), DPO o adaptacion a dominio.
 
-Su relevancia es fundamentalmente de investigación: permite estudiar la interacción entre atención latente, decaimiento global y enrutamiento disperso en un modelo pequeno y entrenable en hardware de consumo, y sirve como punto de partida para continued pretraining y fine-tuning en dominios como indonesio, código, matemáticas o ciencia. La licencia Apache 2.0 facilita su uso comercial derivado, aunque la falta de benchmarks publicados limita cualquier evaluación de calidad.
+Su relevancia reside en la combinacion poco habitual de mecanismos de eficiencia (atencion sub-cuadratica, MLA y MoE) en un modelo de escala muy reducida, lo que lo convierte en un banco de pruebas interesante para investigar arquitecturas hibridas y en un candidato para despliegue en hardware muy limitado. La perplexity reportada por el autor es de aproximadamente 21 sobre el corpus de validacion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida: Global Decay + Latent MLA + MoE (estilo DeepSeek) |
-| Parametros totales | 150.950.244 (~151M) |
-| Parametros activos | ~59,5M por token |
+| Arquitectura | Kilat v2.0 Macro-Synergy (transformer hibrido: atencion lineal recurrente con decaimiento global + MLA + DeepSeekMoE) |
+| Parametros totales | 150.996.480 (~151M) |
+| Parametros activos | 59.510.784 (~59,5M) |
 | Longitud de contexto | 2.048 tokens |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (entrenado sobre FineWeb-Edu, predominantemente inglés) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | ingles (segun la model card) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (con código custom, `trust_remote_code=True`) |
-
-Especificaciones adicionales reportadas por el autor:
-
-| Parametro | Valor |
-|---|---|
-| Familia | Kilat v2.0 |
-| Capas | 12 |
-| Dimensión oculta | 384 |
-| Cabezas de atención | 6 |
-| Dimensión latente | 96 |
-| Expertos enrutados | 8 |
-| Expertos activos | top-2 |
-| Expertos compartidos | 1 |
-| Tokens de entrenamiento | 10.000 millones |
-| Objetivo | Causal Language Modeling |
-| Tokenizador | GPT-2 |
-| Tamano del repo | 0,6 GB |
+| Formato de pesos | safetensors (requiere `trust_remote_code=True` y codigo personalizado) |
+| Vocabulario | 50.257 tokens |
+| Tokens de entrenamiento | 10.000 millones (FineWeb-Edu) |
+| Perplexity reportada | ~21 |
 
 ## Arquitectura y entrenamiento
 
-Kilat SMALL 10B emplea una arquitectura híbrida de 12 capas con dimensión oculta 384 y 6 cabezas de atención. El componente Global Decay implementa un mecanismo recurrente basado en estado con factor de decaimiento global: procesa la secuencia en tiempo lineal respecto a la longitud, mantiene un estado recurrente de tamano constante por capa y evita la matriz de atención completa, reduciendo el coste de memoria frente a la atención tradicional. El componente MLA (Latent Multi-Head Attention) comprime las representaciones key-value en un espacio latente de dimensión 96, lo que disminuye el consumo de KV-cache. Sobre esta base, el bloque MoE incorpora 8 expertos enrutados con activación top-2 más un experto compartido, de modo que cada token activa aproximadamente 59,5M de los ~151M de parámetros.
+La arquitectura Kilat v2.0 Macro-Synergy integra tres componentes principales. En primer lugar, un mecanismo de atencion lineal recurrente con decaimiento exponencial global (sub-cuadratico), que permite procesar secuencias con coste lineal y mantener un estado recurrente de tamano constante durante la inferencia autorregresiva. En segundo lugar, atencion multi-cabeza latente (MLA) al estilo de DeepSeek-V2, que comprime las representaciones de clave y valor para reducir el coste de memoria del cache KV. En tercer lugar, una capa feed-forward de mezcla de expertos fina (DeepSeekMoE) con ocho expertos enrutados, activacion Top-2 y un experto compartido, lo que explica la diferencia entre los 151M de parametros totales y los 59,5M activos por token.
 
-El entrenamiento se realizó desde cero con el framework propietario Kilat Macro-Synergy, sobre el dataset `gpjt/fineweb-edu-gpt2-tokens` con un presupuesto de 10.000 millones de tokens en una sola pasada (sin repetición de datos), secuencias de 2.048 tokens y objetivo de predicción del siguiente token. El run completo constó de aproximadamente 19.000 pasos y una duración declarada de más de 19 horas. No se aplicó SFT, optimización de preferencias ni alineación conversacional; tampoco se documentan técnicas de decodificación especulativa ni ajustes de atención lineal más allá de los descritos.
+El entrenamiento se realizo desde cero sobre 10.000 millones de tokens de FineWeb-Edu, un corpus de texto web educativo filtrado por calidad. No se documenta en la informacion disponible el uso de RLHF, DPO ni ninguna fase de alineacion conversacional; el autor indica explicitamente que se trata de un modelo base sin plantillas de chat. Tampoco se detallan la composicion exacta del dataset, la configuracion de entrenamiento (learning rate, batch size, precision) ni el numero de capas y dimensiones ocultas. La model card menciona que la inferencia puede ejecutarse con `use_cache=False`, lo que sugiere que el estado recurrente sustituye parcialmente al cache KV tradicional.
 
 ## Capacidades
 
-- Generación de texto autoregresiva mediante predicción del siguiente token, en modo completado de texto (no conversacional).
-- Modelado de lenguaje base: representaciones lingüísticas fundamentales utilizables como punto de partida para fine-tuning.
-- Procesamiento de secuencias de hasta 2.048 tokens con coste lineal gracias a Global Decay.
-- Eficiencia de memoria en inferencia por KV-cache comprimido vía MLA.
-- Cómputo disperso: activa ~59,5M de parámetros por token sobre ~151M totales.
-- Capacidad de servir como base para continued pretraining (CPT) en nuevos dominios e idiomas.
-- Capacidad de servir como base para SFT y adaptación a instrucciones.
-- No dispone de tool calling, function calling, soporte de agentes, visión, audio ni modo de razonamiento explícito (thinking mode): no se documenta ninguna de estas capacidades.
-- Capacidades multilingües: no documentadas; el corpus FineWeb-Edu es mayoritariamente inglés.
+- Generacion de texto por continuacion (completion) en ingles, orientada a prosa expositiva y contenido educativo.
+- Razonamiento basico y respuesta a preguntas factuales de dominio general, limitado por su escala de 151M de parametros.
+- Capacidad multilingue: no disponible; la model card solo declara ingles.
+- Tool calling / function calling: no disponible; no se documenta soporte.
+- Soporte de agentes y razonamiento multi-paso: no disponible; al ser un modelo base sin alineacion, no esta disenado para este uso.
+- Modo "thinking" o razonamiento explicito: no disponible.
+- Vision o audio: no soportados.
+- Capacidad de servir como base para SFT, DPO y adaptacion a dominio, segun indica el autor.
 
 ## Casos de uso
 
-- Continued pretraining en indonesio: el autor recomienda explícitamente extender el modelo con datasets en indonesio; al ser un modelo base de 151M con contexto de 2.048 tokens, es viable continuar el preentrenamiento en una única GPU de consumo y evaluar la transferencia entre idiomas.
-- Continued pretraining en código y matemáticas: partir de los pesos base y continuar el entrenamiento con corpus específicos de programación o matemáticas para obtener un modelo pequeño especializado, aprovechando la licencia Apache 2.0 para uso comercial derivado.
-- Fine-tuning supervisado para instrucciones: aplicar SFT sobre datasets curados instrucción-respuesta para convertir el modelo base en un asistente ligero, adecuado para tareas acotadas de generación y clasificación de texto.
-- Investigación de arquitecturas híbridas: estudiar empíricamente la interacción entre Global Decay, MLA y MoE en un modelo compacto, comparando curvas de pérdida, uso de memoria y throughput frente a transformers densos del mismo tamano.
-- Adaptación de dominio para aplicaciones de conocimiento intensivo: especializar el modelo en un dominio concreto (legal, médico, técnico) mediante fine-tuning, con la ventaja de que el modelo completo cabe en el repositorio de 0,6 GB y se puede versionar y desplegar con facilidad.
-- Prototipado y experimentación educativa: usar el modelo como banco de pruebas para estudiar tokenización GPT-2, enrutamiento MoE y atención latente en entornos con recursos limitados, dado su reducido coste de entrenamiento (unas 19 horas según el autor).
-- Evaluación de eficiencia de inferencia: medir el ahorro de KV-cache y el coste lineal en longitud de secuencia que aportan MLA y Global Decay en comparación con atención completa, en cargas de trabajo de generación de hasta 2.048 tokens.
+- Fine-tuning supervisado para clasificacion o etiquetado de texto: al ser un modelo base pequeno, puede adaptarse con SFT a tareas de clasificacion (sentimiento, topicos, moderacion) con coste de entrenamiento muy bajo, incluso en una unica GPU consumer.
+- Generacion de texto educativo asistida: continuacion de parrafos sobre biologia, fisica o informatica, aprovechando el entrenamiento sobre FineWeb-Edu y su sesgo hacia prosa expositiva.
+- Banco de pruebas de arquitecturas hibridas: investigadores pueden estudiar el comportamiento de la atencion lineal con decaimiento global, MLA y MoE a escala reducida antes de escalar a modelos mayores.
+- Prototipado rapido de pipelines de generacion: su tamano (0,6 GB en safetensors) permite iterar en local sin infraestructura dedicada, validando prompts y configuraciones de muestreo antes de migrar a modelos mayores.
+- Adaptacion a dominio con presupuesto limitado: con 10.000 millones de tokens de preentrenamiento, sirve como inicializacion para fine-tuning en dominios especializados (legal, medico divulgativo) cuando no se dispone de recursos para modelos de miles de millones de parametros.
+- Educacion e investigacion docente: util para demostrar en cursos el funcionamiento de MoE, atencion latente y decodificacion con muestreo, dado su bajo coste de ejecucion y su licencia permisiva.
+- Generacion de datos sinteticos a pequena escala: puede producir borradores de texto para aumentar datasets de entrenamiento en tareas de baja exigencia, siempre con revision humana.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente reporta métricas de entrenamiento (10.000 millones de tokens, ~19.000 pasos, más de 19 horas, una sola pasada) y no incluye resultados de MMLU, HumanEval, GSM8K ni de ninguna otra evaluación estándar.
+No se han publicado resultados de benchmarks en la informacion disponible. El unico dato de rendimiento reportado por el autor es una perplexity de aproximadamente 21 sobre el corpus de validacion, sin especificar la particion exacta ni la metodologia de calculo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con pesos en bfloat16, ~0,3 GB (151M × 2 bytes); en float32, ~0,6 GB. El KV-cache es reducido por el uso de MLA y el estado recurrente de Global Decay, por lo que el consumo adicional es bajo incluso a 2.048 tokens.
-- GPU recomendadas: cualquier GPU con al menos ~2 GB de VRAM libre es suficiente; se puede ejecutar en RTX 3060, RTX 4060, RTX 4090, A100 o H100 sin problema. El modelo está sobredimensionado para hardware de gama alta.
-- Cabe en GPU de consumo: sí, en practicamente cualquier GPU de consumo moderna e incluso en CPU.
-- Opciones de despliegue: Hugging Face Transformers con `trust_remote_code=True` (requerido por la implementación custom de la arquitectura). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI; estos motores requerirían una implementación específica de Global Decay y MLA, por lo que su disponibilidad es no disponible.
-- Latencia y throughput estimados: no disponibles. El autor no publica mediciones de latencia ni tokens por segundo.
+- VRAM estimada para inferencia: aproximadamente 0,3 GB en bfloat16 (151M parametros x 2 bytes) y alrededor de 0,6 GB en float32. El estado recurrente de tamano constante reduce el coste del cache KV frente a un transformer clasico de contexto equivalente.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; una RTX 3060, RTX 4060 o incluso una GTX 1650 pueden ejecutar el modelo. Para entrenamiento con SFT, una RTX 3090 o RTX 4090 permiten batches amplios.
+- Cabe en GPU consumer: si, con margen amplio, en practicamente cualquier GPU con al menos 1-2 GB de VRAM.
+- Opciones de despliegue: transformers con `trust_remote_code=True` es la via documentada. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI en la informacion disponible; la presencia de codigo personalizado y atencion recurrente puede requerir implementaciones especificas.
+- Latencia y throughput: no disponibles. A modo orientativo, el tamano del modelo sugiere decodificacion de decenas a cientos de tokens por segundo en GPU consumer, pero no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Benchmarks publicados |
-|---|---|---|---|---|---|
-| Kilat SMALL 10B | ~151M | ~59,5M | 2.048 | Apache 2.0 | No |
-| SmolLM-135M (HuggingFaceTB) | 135M | 135M (denso) | 2.048 | Apache 2.0 | Sí (model card) |
-| Qwen2.5-0.5B | ~494M | 494M (denso) | 32.768 | Apache 2.0 | Sí (model card) |
-| TinyLlama-1.1B | ~1.1B | 1.1B (denso) | 2.048 | Apache 2.0 | Sí (model card) |
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Kilat SMALL 150M | 151M totales / 59,5M activos | 2.048 | Apache 2.0 | Arquitectura hibrida con MLA y MoE; solo ingles; modelo base |
+| GPT-2 small | 124M | 1.024 | MIT | Transformer denso clasico; ampliamente soportado en llama.cpp y ecosistema |
+| Pythia-160M | 160M | 2.048 | Apache 2.0 | Transformer denso; suite de investigacion con checkpoints intermedios |
+| SmolLM-135M | 135M | 2.048 | Apache 2.0 | Transformer denso moderno; entrenado con dataset propio curado |
 
-La comparación se limita a tamano, contexto y licencia: no existen datos de benchmarks de Kilat SMALL 10B que permitan contrastar calidad. Frente a alternativas densas como SmolLM-135M, la propuesta de Kilat es arquitectónicamente distinta (MoE disperso con decaimiento global y MLA) y activa menos parámetros por token, pero carece de evaluaciones publicadas y de soporte en motores de inferencia estándar. Qwen2.5-0.5B y TinyLlama-1.1B ofrecen ventanas de contexto mayores o ecosistemas más maduros, a costa de un mayor coste de inferencia.
+La comparativa se limita a parametros, contexto y licencia porque no hay benchmarks publicados para Kilat SMALL 150M. Frente a los alternativas densas, Kilat destaca por su arquitectura hibrida y su menor numero de parametros activos, pero carece de la madurez de ecosistema (soporte en llama.cpp, cuantizaciones GGUF, herramientas de despliegue) de GPT-2, Pythia o SmolLM.
 
 ## Limitaciones y advertencias
 
-- Modelo exclusivamente base: no ha recibido SFT, RLHF, DPO ni alineación conversacional; no debe usarse directamente como asistente sin fine-tuning previo.
-- Ausencia total de benchmarks publicados: no hay evidencia cuantitativa de calidad en ninguna tarea estándar.
-- Riesgo elevado de alucinación y de generación incoherente en modo zero-shot, propio de un modelo base de 151M con 10.000 millones de tokens de entrenamiento.
-- Contexto limitado a 2.048 tokens, insuficiente para documentos largos o conversaciones multi-turno extensas.
-- Idiomas soportados no documentados; el corpus FineWeb-Edu es predominantemente inglés, por lo que el rendimiento en castellano u otros idiomas es incierto y probablemente bajo.
-- Requiere `trust_remote_code=True` y una implementación custom de la arquitectura; no se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI, lo que complica el despliegue en producción.
-- Sesgos conocidos: no documentados por el autor; al entrenar sobre FineWeb-Edu se heredan los sesgos del corpus web filtrado, sin que se haya aplicado ninguna mitigación.
-- Licencia Apache 2.0: permite uso comercial y obras derivadas, pero el autor no ofrece garantías ni soporte; conviene revisar la implementación custom incluida en el repositorio antes de integrarla.
-- Fecha de creación del repositorio (2026-11-15) y ausencia de descargas o likes: modelo muy reciente y sin validación por parte de la comunidad.
+- Modelo base sin alineacion: no sigue instrucciones ni mantiene conversaciones; los prompts con formato de chat producen continuaciones impredecibles.
+- Riesgo de repeticion y bucles n-gram: el autor advierte que la decodificacion greedy puede generar bucles; recomienda muestreo con temperatura 0,70-0,75, top-p 0,90-0,92, top-k 50, penalizacion de repeticion 1,15-1,20 y `no_repeat_ngram_size=3`.
+- Riesgo de alucinacion: propio de un modelo de 151M entrenado sobre texto web; la verificacion factual es imprescindible en cualquier uso en produccion.
+- Limitacion idiomatica: solo se declara ingles; el rendimiento en castellano no esta documentado y probablemente sea deficiente.
+- Contexto corto: 2.048 tokens limita tareas que requieran documentos largos o conversaciones multi-turno extensas.
+- Requiere `trust_remote_code=True`: la carga del modelo ejecuta codigo personalizado del repositorio, lo que implica un riesgo de seguridad que debe evaluarse antes de desplegarlo en entornos productivos.
+- Ecosistema limitado: no se documentan cuantizaciones GGUF, soporte en vLLM, llama.cpp u Ollama, lo que complica el despliegue fuera de transformers.
+- Licencia Apache 2.0: permisiva para uso comercial, pero al ser un modelo base sin garantias, el usuario asume la responsabilidad sobre sesgos y calidad de las salidas.
+- Sesgos: no documentados por el autor; al entrenarse sobre FineWeb-Edu, hereda los sesgos del texto web filtrado por criterios de calidad educativa.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/AiRukua/150M-Kilat-SMALL-10B
-- Dataset de entrenamiento: https://huggingface.co/datasets/gpjt/fineweb-edu-gpt2-tokens
-- FineWeb-Edu (dataset original): https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
-- Paper de referencia de MLA (DeepSeek-V2): https://arxiv.org/abs/2405.04434
-- Paper de referencia de DeepSeek-MoE: https://arxiv.org/abs/2401.06066
-- Documentación de Transformers sobre modelos con código custom: https://huggingface.co/docs/transformers/main/en/custom_models
+- Modelo en Hugging Face: https://huggingface.co/AiRukua/150M-Kilat-SMALL-10B
+- Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
+- Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0
+- Paper de referencia DeepSeek-V2 (MLA): no disponible en la informacion proporcionada
+- Paper de referencia DeepSeekMoE: no disponible en la informacion proporcionada
+- Repositorio de codigo, demo o blog del autor: no disponible en la informacion proporcionada

@@ -2,104 +2,99 @@
 
 ## Resumen
 
-AEGIS-Mini-V1 es un ajuste fino supervisado (SFT) del modelo Qwen3-4B, desarrollado por el usuario independiente Xerxes-28 y especializado en dominios de ingeniería: electrónica, robótica, drones, matemáticas y física. El modelo base es la copia cuantizada a 4 bits `unsloth/Qwen3-4B-unsloth-bnb-4bit`, sobre la que se aplicó un adaptador LoRA entrenado con datos mayoritariamente teóricos. Esta ficha cubre la distribución en formato GGUF, concretamente la cuantización Q4_K_M, pensada para ejecución local en dispositivos de recursos limitados.
+AEGIS-Mini-V1 es un ajuste fino (SFT) del modelo Qwen3-4B orientado a dominios tecnicos concretos: electronica, drones, robotica, matematicas y fisica. Lo desarrolla el autor independiente Xerxes-28 y se distribuye en este repositorio unicamente como archivo GGUF cuantizado en Q4_K_M (unos 2,5 GB), pensado para ejecutarse en telefonos, portatiles y servidores pequenos mediante llama.cpp, Ollama, LM Studio o PocketPal. El adaptador LoRA original se publica por separado.
 
-El modelo resuelve el problema de disponer de un asistente técnico de dominio específico que funcione sin conexión en teléfonos, portátiles y servidores pequeños. Con aproximadamente 4.022 millones de parámetros y un archivo de unos 2,5 GB, está diseñado para integrarse en herramientas como PocketPal, llama.cpp, Ollama y LM Studio. La longitud de contexto usada durante el entrenamiento fue de 2.048 tokens.
+El modelo parte de `unsloth/Qwen3-4B-unsloth-bnb-4bit`, una copia en 4 bits de Qwen3-4B, y conserva la licencia Apache-2.0 del modelo base. Cuenta con aproximadamente 4.022 millones de parametros, es un transformer causal decoder-only y esta entrenado exclusivamente en ingles. La longitud de contexto usada durante el entrenamiento fue de 2.048 tokens, muy por debajo de la ventana nativa de Qwen3.
 
-Es relevante ahora porque demuestra el patrón de especialización vertical sobre modelos pequeños de la familia Qwen3, con licencia Apache-2.0 y despliegue en hardware de consumo. El autor advierte explícitamente de que no se ejecutaron benchmarks públicos, por lo que la evaluación de calidad debe hacerse de forma empírica antes de cualquier uso en producción.
+Su relevancia practica es la de un modelo pequeno y ligero que cabe en dispositivos de gama baja y funciona sin conexion, especializado en explicaciones teoricas de ingenieria. El autor advierte explicitamente de que no se ha evaluado con benchmarks publicos y de que no debe usarse para decisiones de seguridad critica ni para valores finales de diseno.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal decoder-only (base Qwen3-4B), ajuste fino con LoRA |
-| Parametros totales | 4.022.468.096 (aprox. 4B) |
+| Arquitectura | Transformer causal decoder-only (base Qwen3-4B) |
+| Parametros totales | 4.022.468.096 (~4B) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 2.048 tokens (longitud de entrenamiento); longitud nativa del base no disponible en la informacion |
-| Tipos de cuantizacion | Q4_K_M (unico archivo publicado en este repo) |
-| Idiomas soportados | Ingles (en) |
+| Longitud de contexto | 2.048 tokens (contexto de entrenamiento; contexto nativo del modelo base no disponible en la informacion) |
+| Tipos de cuantizacion | Q4_K_M (unico archivo publicado) |
+| Idiomas soportados | Ingles |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (contiene pesos, tokenizer y chat template) |
+| Formato de pesos | GGUF (incluye pesos, tokenizer y chat template) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer causal decoder-only derivado de Qwen3-4B. El autor partió de la versión cuantizada a 4 bits de Unsloth y aplicó un ajuste fino supervisado (SFT) mediante LoRA, técnica descrita en los papers referenciados (arXiv:2106.09685). El adaptador LoRA se publica por separado en `Xerxes-28/AEGIS-Mini-V1-LoRA`. El entrenamiento se realizó con una longitud de contexto de 2.048 tokens y una fecha declarada de 2026-10-31.
+El modelo es un ajuste fino supervisado (SFT) sobre Qwen3-4B, un transformer decoder-only de aproximadamente 4.000 millones de parametros. El entrenamiento se realizo con Unsloth sobre la version cuantizada en 4 bits del modelo base (`unsloth/Qwen3-4B-unsloth-bnb-4bit`) y se distribuye como adaptador LoRA en un repositorio aparte (`Xerxes-28/AEGIS-Mini-V1-LoRA`); este repositorio contiene solo la fusion cuantizada a GGUF en Q4_K_M.
 
-Los datos de entrenamiento combinan conjuntos de matemáticas (`HuggingFaceH4/MATH-500`) y física de secundaria (`mrohith29/high-school-physics`), complementados con material sobre electrónica, robótica y drones. El autor indica que la mayor parte del corpus es teórico, sin especificar el número total de tokens ni la composición exacta del dataset. No se documenta uso de RLHF ni DPO; el procedimiento declarado es exclusivamente SFT. La model card referencia además los papers de AdamW (arXiv:1711.05101), layer normalization (arXiv:1608.03983), atención eficiente (arXiv:2505.09388) y técnicas de cuantización y evaluación (arXiv:2305.20050, arXiv:2305.14314, arXiv:2110.02861, arXiv:2103.03874), aunque no se detalla qué innovaciones concretas se aplicaron más allá del pipeline estándar de Unsloth.
+Los datos de entrenamiento son pares de pregunta y respuesta sobre electronica, drones, robotica, matematicas y fisica, con predominio de contenido teorico. Las fuentes citadas en las etiquetas del repositorio incluyen `HuggingFaceH4/MATH-500` y `mrohith29/high-school-physics`. El contexto de entrenamiento fue de 2.048 tokens. No se documenta en la informacion disponible el volumen de tokens, la composicion exacta del dataset, ni si hubo fases de RLHF o DPO adicionales. Las referencias arXiv en las etiquetas (2505.09388, 2103.03874, 2305.20050, 2106.09685, 2305.14314, 2110.02861, 1711.05101, 1608.03983) corresponden a trabajos de metodologia (entre ellos LoRA, QLoRA, AdamW y normalizacion por capas), no a resultados propios del modelo.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés con formato de chat (chat template incluido en el GGUF).
-- Explicación de conceptos de electrónica: ley de Ohm, filtros, polarización de transistores.
-- Explicación de conceptos de robótica y drones: control PID, fusión de sensores.
-- Resolución de cálculos paso a paso en matemáticas y física.
-- Generación de borradores de respuestas técnicas sujetas a verificación posterior.
-- Estudio y aprendizaje sin conexión a internet.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no documentado; el entrenamiento SFT no lo menciona.
-- Capacidades multilingües: limitadas al inglés según la model card.
-- Capacidades especiales (modo thinking, visión, audio): no disponibles.
+- Generacion de texto conversacional en ingles con formato de chat (el GGUF incluye el chat template).
+- Explicacion de conceptos de electronica: ley de Ohm, filtros, polarizacion de transistores.
+- Explicacion de conceptos de drones y robotica: control PID, fusion de sensores.
+- Calculo paso a paso en matematicas y fisica de nivel preuniversitario y universitario basico.
+- Generacion de borradores de respuesta que el usuario debe verificar.
+- Uso sin conexion en dispositivos locales (telefono, portatil, servidor pequeno).
+- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento extendido en la informacion disponible.
 
 ## Casos de uso
 
-- Tutoría técnica offline en electrónica: el modelo explica conceptos como la ley de Ohm o la polarización de transistores en un teléfono con PocketPal, sin conexión, útil en entornos de taller o aula sin red.
-- Asistencia en el diseño preliminar de circuitos: genera borradores de cálculos y explicaciones que el ingeniero contrasta después con la hoja de datos del componente, aprovechando su especialización teórica.
-- Soporte educativo en física de secundaria: resuelve ejercicios paso a paso a partir del dataset de física de nivel escolar con el que fue entrenado.
-- Ajuste de controladores PID en robótica y drones: ofrece explicaciones de sintonización y razonamiento sobre fusión de sensores como punto de partida, siempre con validación en banco de pruebas.
-- Estudio de matemáticas aplicadas: resuelve problemas de cálculo y álgebra con razonamiento encadenado, adecuado para autoaprendizaje en portátil.
-- Despliegue en servidores pequeños o edge: al ocupar unos 2,5 GB en Q4_K_M, puede servirse con llama.cpp u Ollama en una máquina modesta para dar soporte a un equipo reducido de ingeniería.
-- Prototipado de asistentes técnicos verticales: sirve como base para experimentar con fine-tuning adicional sobre dominios de hardware, dado que el adaptador LoRA está publicado por separado.
+- Estudio sin conexion en el movil: con PocketPal y el archivo Q4_K_M de 2,5 GB, un estudiante puede consultar explicaciones de ley de Ohm o filtros RC sin red, en un telefono con al menos 4 GB de almacenamiento libre.
+- Tutor de fisica de bachillerato: el modelo resuelve ejercicios paso a paso (cinematica, circuitos, energia) y sirve como primer borrador que el alumno contrasta con el libro de texto.
+- Apoyo a aficionados a la robotica: explicacion conceptual de lazos PID y fusion de sensores para entender la teoria antes de ajustar un controlador real en banco de pruebas.
+- Asistente de documentacion interna para equipos de hardware: generar explicaciones introductorias de conceptos de electronica que luego un ingeniero revisa y publica en una wiki.
+- Prototipado rapido de un chatbot de dominio en local: desplegado con Ollama o llama.cpp en un portatil, permite validar la experiencia de chat tecnico antes de invertir en un modelo mayor.
+- Formacion interna en empresas de drones: generar material didactico teorico sobre estabilidad y control que los formadores validan antes de su uso.
+- Borrador de respuestas para foros tecnicos: el modelo redacta una primera explicacion que el usuario revisa y corrige antes de publicar.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explícitamente en la model card que no ejecutó benchmarks públicos y remite a las secciones de resultados y limitaciones antes de usar el modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explicitamente que no ejecuto benchmarks publicos y remite a las secciones de resultados y limitaciones de la model card antes de usar el modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 2,5-3 GB con la cuantización Q4_K_M (tamaño del archivo 2,5 GB más overhead de contexto y KV cache).
-- GPU recomendadas: no especificadas por el autor; por tamaño, cualquier GPU con 4 GB o más de VRAM es suficiente.
-- Cabe en GPU de consumo: sí, en tarjetas con 4 GB o más (por ejemplo, GTX 1650, RTX 3050 en adelante); también en CPU.
-- Despliegue en teléfono: soportado vía PocketPal, con requisito de al menos 4 GB de almacenamiento libre según la model card.
-- Opciones de despliegue: PocketPal, llama.cpp, Ollama, LM Studio.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: aproximadamente 2,5-3,5 GB con Q4_K_M (el archivo pesa unos 2,5 GB; se necesita margen para el contexto y el runtime).
+- Almacenamiento: al menos 4 GB libres en el dispositivo, segun las instrucciones del autor para movil.
+- GPU recomendadas: no disponibles en la informacion. Por tamano, cualquier GPU consumer con 4 GB o mas de VRAM deberia poder cargarlo; el autor no publica una lista de GPU verificadas.
+- Cabe en GPU consumer: si, previsiblemente en modelos con 4 GB o mas de VRAM; no confirmado por el autor.
+- Movil: soportado via PocketPal con al menos 4 GB de almacenamiento libre.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y PocketPal (los cuatro citados por el autor).
+- Latencia y throughput: no disponibles en la informacion.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| AEGIS-Mini-V1 (Q4_K_M) | ~4B | 2.048 (entrenamiento) | Apache-2.0 | GGUF | Especializado en electrónica, robótica, drones, matemáticas y física; sin benchmarks publicados |
-| Qwen3-4B (base) | ~4B | no disponible en la informacion | Apache-2.0 | safetensors, GGUF (vías oficiales) | Modelo generalista; AEGIS deriva de su versión cuantizada de Unsloth |
-| Modelos generalistas de ~4B de otras familias | ~3-4B | variable | variable | variable | No se dispone de datos comparativos de rendimiento en la información proporcionada |
+| AEGIS-Mini-V1 (este) | ~4B | 2.048 tokens (entrenamiento) | Apache-2.0 | GGUF Q4_K_M en HF | SFT de dominio en ingles; sin benchmarks publicos |
+| Qwen3-4B (base) | ~4B | no disponible en la informacion | Apache-2.0 | Pesos completos y multiples cuantizaciones | Modelo generalista multilingue del que deriva |
+| Alternativas de ~4B especializadas en STEM | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion proporcionada |
 
-No se dispone de resultados de benchmarks que permitan una comparación cuantitativa con alternativas. La comparación se limita a parámetros, licencia y formato.
+No se dispone de informacion suficiente para establecer una comparativa cuantitativa con alternativas de la misma categoria; los unicos datos verificables son los del modelo base Qwen3-4B.
 
 ## Limitaciones y advertencias
 
-- El autor no publicó benchmarks; no hay evidencia cuantitativa de calidad frente al modelo base ni frente a alternativas.
-- Riesgo alto de alucinación en valores numéricos: la model card advierte que el modelo puede dar una cifra incorrecta con tono seguro, peligroso en cálculos de seguridad eléctrica.
-- No debe usarse para decisiones críticas de seguridad, valores finales de diseño de circuitos, baterías o aeronaves, ni como única fuente en cálculos de seguridad.
-- No apto para consejo médico, legal o financiero.
-- No fiable para datos exactos de hojas de datos (direcciones de registro, numeración de pines).
-- Contexto de entrenamiento corto (2.048 tokens), lo que limita conversaciones largas y documentos extensos.
-- Solo inglés; sin capacidades multilingües declaradas.
-- Entrenamiento mayoritariamente teórico, sin datos procedentes de documentación real de componentes.
-- Advertencias específicas: no manipular tensión de red o alta tensión basándose en la salida del modelo; validar ajustes de drones en un entorno seguro antes de volar.
-- Licencia Apache-2.0, permisiva para uso comercial, pero hereda las limitaciones del modelo base y del ajuste fino.
-- Modelo de autor independiente con 99 descargas y 0 likes en el momento de la consulta: ecosistema de soporte y validación muy limitado.
+- El autor no publico benchmarks; el rendimiento real en tareas de dominio no esta cuantificado.
+- Riesgo alto de alucinacion en valores numericos: el modelo puede dar una cifra incorrecta con tono seguro. El autor prohibe su uso como unica fuente para calculos de seguridad.
+- No debe usarse para decisiones de seguridad critica, valores finales de diseno de circuitos, baterias o aeronaves, ni para consejo medico, legal o financiero.
+- No es fiable para datos exactos de hojas de datos (direcciones de registro, numeros de pin).
+- Entrenado solo en ingles; no se documenta soporte de castellano ni de otros idiomas.
+- Contexto de entrenamiento de solo 2.048 tokens, lo que limita conversaciones largas y documentos extensos.
+- Entrenamiento predominantemente teorico: puede fallar en tareas practicas de ingenieria o en datos empiricos.
+- Licencia Apache-2.0 permite uso comercial, pero las advertencias de seguridad del autor siguen siendo aplicables en produccion.
+- No se documenta soporte de tool calling ni de agentes; no conviene asumirlo en pipelines automatizados.
 
 ## Enlaces
 
-- Hugging Face (GGUF): https://huggingface.co/Xerxes-28/AEGIS-Mini-V1-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/Xerxes-28/AEGIS-Mini-V1-GGUF
 - Adaptador LoRA: https://huggingface.co/Xerxes-28/AEGIS-Mini-V1-LoRA
-- Modelo base: https://huggingface.co/unsloth/Qwen3-4B-unsloth-bnb-4bit
-- Dataset de matemáticas: https://huggingface.co/datasets/HuggingFaceH4/MATH-500
-- Dataset de física: https://huggingface.co/datasets/mrohith29/high-school-physics
+- Modelo base cuantizado: https://huggingface.co/unsloth/Qwen3-4B-unsloth-bnb-4bit
+- Dataset MATH-500: https://huggingface.co/datasets/HuggingFaceH4/MATH-500
+- Dataset de fisica de bachillerato: https://huggingface.co/datasets/mrohith29/high-school-physics
+- Paper Qwen3 (arXiv:2505.09388): https://arxiv.org/abs/2505.09388
 - Paper LoRA (arXiv:2106.09685): https://arxiv.org/abs/2106.09685
 - Paper QLoRA (arXiv:2305.14314): https://arxiv.org/abs/2305.14314
+- Paper de decodificacion especulativa (arXiv:2305.20050): https://arxiv.org/abs/2305.20050
+- Paper de atencion (arXiv:2103.03874): https://arxiv.org/abs/2103.03874
+- Paper de inicializacion (arXiv:2110.02861): https://arxiv.org/abs/2110.02861
 - Paper AdamW (arXiv:1711.05101): https://arxiv.org/abs/1711.05101
-- Paper Layer Normalization (arXiv:1608.03983): https://arxiv.org/abs/1608.03983
-- Paper GPTQ (arXiv:2305.20050): https://arxiv.org/abs/2305.20050
-- Paper AWQ (arXiv:2305.14314): https://arxiv.org/abs/2305.14314
-- Paper sobre atención eficiente (arXiv:2505.09388): https://arxiv.org/abs/2505.09388
-- Paper sobre entrenamiento de bajo rango (arXiv:2110.02861): https://arxiv.org/abs/2110.02861
-- Paper de referencia (arXiv:2103.03874): https://arxiv.org/abs/2103.03874
+- Paper de normalizacion por capas (arXiv:1608.03983): https://arxiv.org/abs/1608.03983

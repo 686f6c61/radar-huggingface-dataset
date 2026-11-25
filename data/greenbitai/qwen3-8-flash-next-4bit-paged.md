@@ -2,92 +2,102 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next es un modelo de lenguaje multimodal (vision-language) de arquitectura MoE desarrollado por el equipo Qwen, que supone un avance preliminar de la arquitectura Qwen4. El modelo principal cuenta con 125.000 millones de parametros, complementados por 51.000 millones de embeddings basados en n-gramas, activando solo 6.000 millones de parametros por token. Incorpora una atencion hibrida GDN + QSA que mejora la eficiencia computacional y la capacidad del modelo.
+Qwen3.8-Flash-Next-4bit-paged es una compilación cuantizada a 4 bits del modelo Qwen3.8-Flash-Next de Qwen (Alibaba), publicada por GreenBitAI. Se trata de un modelo de lenguaje y visión de arquitectura Mixture-of-Experts (MoE) con pipeline `image-text-to-text`, empaquetado específicamente para Apple Silicon mediante la librería `mlx` y el binario propietario `gbx_lm`. Su rasgo distintivo es el diseño "paged": los pesos de los expertos enrutados y la tabla de n-gramas residen en contenedores separados que se leen del disco bajo demanda, de modo que la máquina carga solo lo que necesita en cada momento en lugar de mantener el modelo completo en memoria.
 
-Esta ficha describe la build cuantizada a 4 bits en formato MLX publicada por GreenBitAI, diseñada especificamente para Apple Silicon. La build "expert-paged" separa los pesos residentes de los expertos enrutados, de modo que la maquina carga solo lo que necesita y transmite el resto desde disco. Las verificaciones de calidad confirman logits identicos a nivel de bit en la mayoria de prompts y coincidencia de tokens greedy en todos los casos.
+El modelo base declarado es `Qwen/Qwen3.8-Flash-Next`, y esta build deriva a su vez de `Vontra/Qwen3.8-Flash-Next-MLX-4bit`, manteniendo sin cambios la cuantización, el tokenizador, la plantilla de chat y la licencia. El repositorio ocupa 113,2 GB y el checkpoint de safetensors declara 5.396.629.651 parámetros totales, si bien el tamaño agregado de los contenedores de pesos (105,46 GiB) refleja la huella real de la build empaquetada.
 
-El modelo es relevante porque permite ejecutar un MoE multimodal de gran tamano en hardware Apple con memoria unificada limitada, gracias a la cuantizacion 4-bit y al paginado de expertos. Sin embargo, su huella en disco es considerable (103,94 GiB) y requiere un pico de memoria de 88,89 GiB en ciertas operaciones.
+Su relevancia actual radica en que permite ejecutar un modelo MoE de gran escala con capacidades multimodales en hardware de consumo Apple Silicon (y en NVIDIA DGX Spark bajo Linux) sin necesidad de ensamblar manualmente pipelines de cuantización ni de disponer de VRAM de centro de datos, a costa de depender de un runtime cerrado y de un formato de pesos no estándar.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | MoE hibrida vision-language (atencion GDN + QSA) |
-| Parametros totales | 125B (modelo principal) + 51B (embeddings n-grama); el safetensors de esta build contiene 1.429.820.051 parametros (pesos residentes) |
-| Parametros activos | 6B por token |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 4-bit (MLX) |
-| Idiomas soportados | no disponibles |
-| Licencia | qwen-community-1.0 |
-| Formato de pesos | safetensors (residentes) + bin (expertos) + rows (tabla n-grama) |
+| Arquitectura | Mixture-of-Experts (MoE) con capacidades de visión; runtime `mlx` / `gbx_lm` |
+| Parámetros totales | 5.396.629.651 (según safetensors del repo) |
+| Parámetros activos | no disponible |
+| Longitud de contexto | no disponible (se han probado prompts de hasta 54k tokens en las mediciones del autor) |
+| Tipos de cuantización | 4 bits (pesos); tabla n-gram en `ple-q4.rows` |
+| Idiomas soportados | no disponible |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en el Hub) |
+| Formato de pesos | `safetensors` (pesos residentes), `experts.bin` (expertos enrutados), `ple-q4.rows` (tabla n-gram), `mtp/` (cabeza draft) |
 
 ## Arquitectura y entrenamiento
 
-Qwen3.8-Flash-Next es un avance preliminar de la arquitectura Qwen4. Segun el repositorio oficial, el modelo mejora sistematicamente cuatro aspectos: atencion, residual, embedding y optimizacion. La atencion combina GDN y QSA en una arquitectura hibrida que reduce el coste computacional manteniendo capacidad. El modelo principal tiene 125B de parametros, a los que se anaden 51B de embeddings basados en n-gramas (almacenados en el archivo ple-q4.rows de esta build), activando 6B de parametros por token gracias al enrutamiento MoE.
+La build se apoya en una arquitectura Mixture-of-Experts con enrutamiento por token: cada token activa un subconjunto reducido de expertos, lo que permite que el coste computacional por token sea muy inferior al que implicaría el total de parámetros. El autor no detalla el número de expertos, la top-k de enrutamiento ni el reparto entre expertos compartidos y enrutados. El modelo incorpora además un módulo de visión, coherente con su pipeline `image-text-to-text`, y una cabeza de decodificación especulativa (`mtp/`, 1,52 GiB) que viene desactivada por defecto.
 
-Esta build de GreenBitAI cuantiza los pesos a 4 bits y los organiza en tres archivos: model.safetensors (3,80 GiB, pesos residentes), experts.bin (70,31 GiB, expertos enrutados) y ple-q4.rows (29,80 GiB, tabla n-grama). El diseño "expert-paged" permite que la maquina cargue en memoria solo los pesos que caben y transmita el resto desde disco, sin necesidad de un flag de configuracion: la decision la toma el sistema en tiempo de ejecucion. Los datos de entrenamiento (numero de tokens, composicion del dataset, uso de RLHF/DPO) no estan disponibles en la informacion proporcionada.
+La innovación técnica principal no está en el entrenamiento sino en el empaquetado: los pesos se dividen en cuatro contenedores. `model.safetensors` (3,80 GiB) aloja los pesos residentes; `experts.bin` (70,31 GiB) contiene los expertos enrutados; `ple-q4.rows` (29,80 GiB) aloja una tabla de n-gramas; y `mtp/` (1,52 GiB) la cabeza draft. El runtime decide en tiempo de ejecución, leyendo la memoria disponible de la máquina, qué parte mantiene residente y qué parte transmite desde el SSD. Los controles `GBX_PAGING=off` y `GBX_PLE=off` fuerzan a mantener residentes los expertos o la tabla n-gram, respectivamente. El autor declara verificaciones de build con logits bit-idénticos en 5 prompts hasta 160 tokens y comparación capa por capa frente a la versión residente (48 capas × 2 muestreos exactos, con un pico de 88,89 GiB en esa comprobación). No se dispone de información sobre volumen de tokens de entrenamiento, composición del dataset ni etapas de RLHF o DPO.
 
 ## Capacidades
 
-- Procesamiento multimodal imagen-texto (pipeline image-text-to-text): acepta imagenes y texto como entrada y genera texto.
-- Generacion conversacional multi-turno.
-- Razonamiento sobre contenido visual: descripcion, analisis y respuesta a preguntas sobre imagenes.
-- Enrutamiento MoE con 6B de parametros activos por token, lo que reduce el coste de inferencia frente a un modelo denso de tamano equivalente.
-- Embeddings n-grama (51B parametros adicionales) que complementan la representacion del modelo.
-- Ejecucion en Apple Silicon via MLX, con paginado de expertos para adaptarse a la memoria disponible.
+- Generación de texto conversacional multi-turno.
+- Comprensión de imágenes: acepta entradas visuales como partes `image_url` de la API de OpenAI, tanto por URL http(s) como en base64 con esquema `data:`.
+- Razonamiento y respuesta a instrucciones heredados del modelo base Qwen3.8-Flash-Next.
+- Servicio mediante API compatible con OpenAI (`/v1/chat/completions`) en el puerto 11688 por defecto.
+- Decodificación especulativa opcional mediante la cabeza draft `mtp/`, que eleva el decode de 24 a 41 tok/s según el autor.
+- Ejecución con paginación automática de expertos desde disco, sin flags manuales.
+- Soporte de línea de comandos con entrada de imágenes mediante el parámetro `--images`.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Soporte explícito de tool calling o function calling: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Analisis de documentos e imagenes en Mac: el modelo puede extraer informacion de capturas, diagramas o fotografias y responder preguntas en lenguaje natural, aprovechando la capacidad multimodal y la cuantizacion 4-bit para ejecutarse en equipos Apple.
-- Asistente multimodal local: al ejecutarse con MLX, permite construir asistentes privados que procesan imagenes y texto sin enviar datos a la nube, adecuado para entornos con requisitos de confidencialidad.
-- Captioning y etiquetado automatico de imagenes en lotes: su capacidad vision-language permite automatizar la descripcion de grandes volumenes de imagenes en flujos de datos.
-- Prototipado de aplicaciones de vision por computador: investigadores pueden validar ideas de interaccion multimodal en hardware Apple antes de escalar a GPUs de centro de datos.
-- Educacion y documentacion tecnica: el modelo puede explicar diagramas, esquemas o capturas de pantalla, util para generar documentacion a partir de material visual.
-- Experimentacion con arquitecturas MoE cuantizadas: esta build sirve como referencia para estudiar el rendimiento de modelos Qwen4 en 4-bit con paginado de expertos en memoria unificada.
+- Asistencia conversacional local en Mac: el modelo sirve una API compatible con OpenAI en `127.0.0.1:11688`, por lo que puede conectarse a clientes y frameworks existentes sin adaptadores, manteniendo los datos en la máquina.
+- Análisis de imágenes en flujos de trabajo de escritorio: clasificación, descripción o extracción de información de capturas, fotografías o documentos escaneados enviados como `image_url` en base64, sin salida a servicios externos.
+- Prototipado de agentes con contexto largo: el autor reporta conversaciones de 54k tokens con primera respuesta en 54 s y mensajes posteriores de 1,3k tokens en 2,2 s sobre DGX Spark, lo que hace viable mantener historiales extensos en memoria de trabajo.
+- Evaluación de modelos MoE de gran escala en hardware de consumo: la paginación permite arrancar el modelo en máquinas que no cabrían el checkpoint completo, útil para investigación comparativa y pruebas de calidad antes de invertir en infraestructura.
+- Generación de código asistida en estación de trabajo Apple Silicon: con 41 tok/s en decode usando la cabeza draft, resulta adecuado para autocompletado interactivo y revisión de parches en local.
+- Despliegue en DGX Spark para inferencia de equipo pequeño: con 128 GB de memoria el modelo cabe completo y no pagina, alcanzando 1274 tok/s en prompts de 4k tokens, lo que permite atender a un equipo de desarrollo interno.
+- Procesamiento por lotes de documentos con imagen y texto: al combinar entrada multimodal y contexto largo, puede emplearse para resumir o extraer datos de informes con figuras en pipelines nocturnos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
+El autor no publica resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros). Sí se incluyen mediciones de rendimiento del runtime en NVIDIA DGX Spark (GB10, 128 GB), comparando gbx-lm v0.8.2 y v0.8.3, mediana de tres ejecuciones:
 
-La model card de GreenBitAI incluye verificaciones de calidad propias de la cuantizacion:
-- Logits identicos a nivel de bit en 5 prompts hasta 160 tokens.
-- En un prompt mas largo, diferencias maximas de 6,8 con el mismo token greedy en toda la generacion.
-- Comprobacion capa a capa frente a los pesos residentes: 48 capas x 2 extracciones exactas, con un pico de memoria de 88,89 GiB.
+| Métrica | v0.8.2 | v0.8.3 |
+|---|---|---|
+| Prompt de 4k tokens | 1028 tok/s | 1274 tok/s |
+| Prompt de 16k tokens | 911 tok/s | 1243 tok/s |
+| Prompt de 54k tokens | 480 tok/s | 1065 tok/s |
+| Conversación 54k, primera respuesta | 117 s | 54 s |
+| Conversación 54k, siguiente mensaje de 1,3k tokens | 4,9 s | 2,2 s |
+
+Decode en prompts cortos: 24 tok/s sin cabeza draft y 41 tok/s con ella (media sobre código, prosa y chat). En un Mac Studio de 512 GB el modelo se estabiliza en unos 76 GB residentes.
 
 ## Requisitos de hardware
 
-- Hardware objetivo: Apple Silicon (la build usa MLX, no CUDA).
-- Espacio en disco: 103,94 GiB en total (3,80 GiB residentes + 70,31 GiB expertos + 29,80 GiB tabla n-grama).
-- Memoria: el diseño paginado carga en RAM solo los pesos que caben; el pico medido en una comprobacion capa a capa fue de 88,89 GiB. Por debajo de esa cifra, el modelo transmitira expertos desde disco, con la consiguiente penalizacion de latencia.
-- GPU: no aplicable directamente; MLX aprovecha la GPU integrada del chip Apple.
-- Opciones de despliegue: MLX (libreria gbx_lm), compatible con el ecosistema omlx para modelos vision-language.
-- Latencia y throughput: no disponibles.
+- VRAM/memoria estimada: variable por diseño. En Mac Studio de 512 GB, unos 76 GB residentes; en DGX Spark de 128 GB cabe completo sin paginación. En máquinas más pequeñas el consumo baja y aumenta la lectura desde disco.
+- GPU recomendadas: Apple Silicon (arm64) en macOS 15.0 o superior; NVIDIA DGX Spark (GB10) con arm64, glibc 2.39 o superior y driver con soporte CUDA 13. No hay build para Intel ni para otras GPU Linux.
+- Cabe en GPU de consumo: sí, en equipos Apple Silicon con suficiente memoria unificada; el rendimiento depende de la capacidad de retener expertos y de la velocidad del SSD.
+- Opciones de despliegue: exclusivamente el binario `gbx_lm` (descarga desde GitHub Releases, builds `darwin-arm64` y `linux-arm64`). No es compatible con `mlx-lm`, vLLM, llama.cpp, Ollama ni TGI; no requiere `pip install` ni Python.
+- Latencia y throughput: 24 tok/s de decode en prompts cortos (41 con draft head); prefill de 1274 tok/s a 4k tokens en DGX Spark. En Mac la latencia depende del grado de paginación y de la velocidad de disco, sin cifras publicadas por tamaño de máquina.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Cuantizacion | Formato | Licencia |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Runtime |
 |---|---|---|---|---|---|
-| Qwen/Qwen3.8-Flash-Next (base) | 125B + 51B n-grama | 6B | no cuantizado | safetensors | qwen-community-1.0 |
-| rapid-mlx/Qwen3.8-Flash-Next-4bit | 125B + 51B n-grama | 6B | 4-bit MLX | safetensors | qwen-community-1.0 |
-| GreenBitAI/Qwen3.8-Flash-Next-4bit-paged | 125B + 51B n-grama | 6B | 4-bit MLX | safetensors + bin + rows | qwen-community-1.0 |
+| GreenBitAI/Qwen3.8-Flash-Next-4bit-paged | 5.396.629.651 (MoE) | no disponible | 4 bits paginada | qwen-community-1.0 | `gbx_lm` (Apple Silicon, DGX Spark) |
+| Vontra/Qwen3.8-Flash-Next-MLX-4bit | no disponible | no disponible | 4 bits | qwen-community-1.0 | `mlx` |
+| Qwen/Qwen3.8-Flash-Next (base) | no disponible | no disponible | sin cuantizar | qwen-community-1.0 | según framework del autor |
 
-La diferencia principal de esta build frente a la de rapid-mlx es el paginado de expertos: los pesos que se leen por fracciones viven en contenedores separados, de modo que la maquina carga solo lo que necesita. La build de GreenBitAI deriva de Vontra/Qwen3.8-Flash-Next-MLX-4bit y verifica que la cuantizacion, el tokenizador, la plantilla de chat y la licencia no cambian respecto a la fuente.
+La diferencia práctica frente a la build de Vontra es la paginación de expertos y la tabla n-gram, que reducen la memoria residente a cambio de lecturas de disco; frente al modelo base, la ventaja es la huella de 4 bits y la posibilidad de ejecución en hardware de consumo. No se dispone de datos de rendimiento comparables entre las tres variantes.
 
 ## Limitaciones y advertencias
 
-- Licencia qwen-community-1.0: no es una licencia open source estandar (Apache/MIT); implica condiciones de uso comunitario que deben revisarse antes de un despliegue comercial.
-- Solo para Apple Silicon: al usar MLX, no puede ejecutarse en GPUs NVIDIA o AMD sin conversion previa.
-- Requiere recursos considerables: 103,94 GiB de disco y un pico de memoria de 88,89 GiB en ciertas operaciones; equipos con menos RAM unificada dependen del streaming desde disco, con mayor latencia.
-- La informacion sobre idiomas soportados no esta disponible; la cobertura multilingue no puede confirmarse.
-- No se han publicado benchmarks estandar para esta build; las verificaciones de GreenBitAI cubren solo la fidelidad de la cuantizacion, no el rendimiento en tareas.
-- Riesgo de alucinacion y sesgos: no hay datos disponibles sobre evaluaciones de sesgo o alucinacion para este modelo.
-- Longitud de contexto no documentada en la informacion disponible.
+- Runtime cerrado: requiere el binario firmado `gbx_lm`; no hay integración con ecosistemas estándar como `mlx-lm`, vLLM o llama.cpp, lo que limita la portabilidad y la inspección del código.
+- Plataformas restringidas: solo macOS 15+ en Apple Silicon y Linux arm64 en DGX Spark. No hay soporte para Intel, GPU NVIDIA convencionales ni Windows.
+- Formato de pesos propietario: los contenedores `experts.bin` y `ple-q4.rows` no son legibles por herramientas estándar, lo que dificulta la auditoría y la reutilización fuera del runtime.
+- Rendimiento dependiente del disco: en máquinas que no retienen los expertos, la latencia viene determinada por el SSD; el autor no publica cifras por tamaño de máquina.
+- Licencia `qwen-community-1.0`: es necesario revisar el texto de la licencia antes de uso comercial; el Hub la etiqueta como `other` y el modelo card no detalla restricciones adicionales.
+- Idiomas soportados no declarados: no hay información sobre cobertura multilingüe ni sobre calidad por idioma.
+- Riesgo de alucinación y sesgos: no documentados por el autor; son heredados del modelo base y de la cuantización a 4 bits, que puede degradar la precisión en tareas sensibles.
+- Cabeza draft desactivada por defecto: la decodificación especulativa requiere activación explícita y no está incluida en ninguna otra build publicada del modelo.
+- Verificación de cuantización limitada: las pruebas de equivalencia se realizaron sobre 5 prompts de hasta 160 tokens, con divergencias de hasta 6,8 en un prompt más largo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/GreenBitAI/Qwen3.8-Flash-Next-4bit-paged
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Repositorio oficial de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
-- Repositorio de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8
-- Build MLX 4-bit de referencia: https://huggingface.co/rapid-mlx/Qwen3.8-Flash-Next-4bit
-- Receta vLLM: https://recipes.vllm.ai/Q
+- Build de origen: https://huggingface.co/Vontra/Qwen3.8-Flash-Next-MLX-4bit
+- Repositorio del runtime: https://github.com/GreenBitAI/gbx-lm
+- Releases del binario: https://github.com/GreenBitAI/gbx-lm/releases/latest
+- Licencia: https://huggingface.co/GreenBitAI/Qwen3.8-Flash-Next-4bit-paged/blob/main/LICENSE

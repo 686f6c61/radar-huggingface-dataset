@@ -2,85 +2,95 @@
 
 ## Resumen
 
-Qwen1.5-MoE-A2.7B-MidAlign es un adaptador LoRA desarrollado por ducanhdinh sobre el modelo base Qwen/Qwen1.5-MoE-A2.7B, un transformer Mixture-of-Experts de la familia Qwen1.5. El adaptador implementa la técnica MidAlign (Middle-Layer Representation Alignment, Liu y Niehues 2025), que entrena de forma alternada el objetivo de modelado de lenguaje causal sobre el idioma objetivo con un objetivo de alineación contrastiva (InfoNCE) en una capa intermedia, adaptando esta estrategia a un backbone MoE.
+Qwen1.5-MoE-A2.7B-MidAlign es un adaptador LoRA publicado por el usuario ducanhdinh sobre el modelo base Qwen1.5-MoE-A2.7B de Alibaba Cloud. No se trata de un modelo completo, sino de un conjunto de pesos PEFT (formato safetensors) que se aplica sobre el modelo base para ajustarlo con la metodología MidAlign, una técnica de alineamiento multilingüe que combina entrenamiento de tarea supervisado con pasos contrastivos entre representaciones de frases en inglés y en distintos idiomas objetivo.
 
-El propósito del modelo es mejorar la alineación cross-lingual de las representaciones internas del modelo base, de modo que las oraciones en inglés y en otros idiomas compartan un espacio semántico más coherente en la capa 16 (de 24). Esto facilita tareas de traducción automática y transferencia de conocimiento entre idiomas. El adaptador es ligero (0.2 GB) y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones.
+El adaptador se entrena con un esquema de entrenamiento alternado: un paso de tarea (loss de lenguaje enmascarado más una pérdida de balanceo de expertos) y un paso de alineamiento contrastivo que empareja estados ocultos mean-pooled de frases inglesas y frases en idiomas destino en la capa 12 del modelo. El objetivo es mejorar la alineación cross-lingual de las representaciones internas del MoE sin degradar el rendimiento en tareas de razonamiento y comprensión en inglés.
 
-La relevancia de este modelo radica en que aplica una técnica de alineación de representaciones a una arquitectura MoE, un área aún poco explorada en comparación con los modelos densos. Al intervenir directamente en el router y los expertos de la capa seleccionada, el adaptador busca que el reparto de tokens entre expertos también se beneficie de la alineación cross-lingual, lo que podría traducirse en mejoras de calidad en traducción y razonamiento multilingüe sin necesidad de ajustar todos los parámetros del modelo.
+Es relevante porque demuestra que es posible aplicar técnicas de alineamiento intermedio (mid-layer) sobre arquitecturas MoE de forma eficiente mediante LoRA, sin reentrenar el modelo completo. El adaptador se distribuye con licencia Apache 2.0, lo que facilita su uso comercial, aunque el modelo base Qwen1.5-MoE-A2.7B tiene su propia licencia que debe verificarse por separado.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen2MoeForCausalLM (MoE transformer, base Qwen1.5-MoE-A2.7B) |
-| Parametros totales | 14.3 B (modelo base) + 0.2 GB de adaptador LoRA |
-| Parametros activos | 2.7 B (modelo base, top-k=4 de 60 expertos) |
-| Longitud de contexto | 32768 tokens (modelo base) |
-| Tipos de cuantizacion | no disponible para el adaptador; el modelo base soporta cuantizacion estandar (FP16, BF16, INT8, INT4 via GPTQ/AWQ) |
-| Idiomas soportados | no disponible; el adaptador se entrena con pares english-other de flores, bible y ntrex |
+| Arquitectura | Adaptador LoRA sobre transformer MoE (Qwen1.5-MoE-A2.7B) |
+| Parametros totales | No disponible (el adaptador LoRA no declara su recuento; el modelo base Qwen1.5-MoE-A2.7B tiene 14,3B totales según su model card original) |
+| Parametros activos | 2,7B (heredados del modelo base) |
+| Longitud de contexto | No disponible en la información proporcionada (el modelo base Qwen1.5-MoE-A2.7B soporta 32.768 tokens según su model card original) |
+| Tipos de cuantizacion | No disponible (el adaptador se distribuye en safetensors; la cuantización dependerá del modelo base y del runtime) |
+| Idiomas soportados | No disponibles (el adaptador entrena alineamiento con flores, ntrex y ted, pero no se especifican los idiomas concretos) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (adaptador LoRA, libreria peft) |
+| Formato de pesos | safetensors (PEFT/LoRA) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Qwen1.5-MoE-A2.7B, un transformer MoE con 60 expertos y selección top-k=4, lo que activa solo 2.7 B de los 14.3 B parámetros totales. El adaptador MidAlign añade LoRA (r=16, alpha=32, dropout=0.05) exclusivamente en la capa 16 (0-indexed block 15) sobre los módulos de atención, router y expertos. El entrenamiento alterna entre dos tipos de pasos: el paso de tarea (task step), que combina la pérdida de model de lenguaje causal sobre el idioma destino con la pérdida de balanceo de carga (load balancing loss) del router MoE, y el paso de alineación (align step), que aplica una pérdida contrastiva InfoNCE simétrica entre las representaciones mean-pooled de las oraciones en inglés y las del idioma destino en esa capa intermedia.
+El adaptador se aplica sobre Qwen1.5-MoE-A2.7B, un modelo de mezcla de expertos con 60 expertos y top-k igual a 4, según los hiperparámetros declarados en la model card. Los módulos LoRA se insertan en el rango de capas [8, 16) (indexado desde 0), es decir, las capas 8 a 15, y cubren atención, router, expertos y el experto compartido. El rank es 8 para atención, router y expertos, con alpha 16 y dropout 0,1.
 
-Los datos de entrenamiento provienen de corpus multiway-parallel (flores, bible, ntrex), donde cada registro con `eng_Latn` se empareja con cada otro idioma disponible para generar pares bitext. El entrenamiento se realizó durante 3 épocas con batch_size de 64 por proceso, usando DistributedDataParallel (torchrun) en múltiples GPUs. La temperatura contrastiva se fijó en tau=1.5. No se especifica el uso de RLHF ni DPO; el enfoque es exclusivamente de alineación de representaciones.
+El entrenamiento sigue el esquema MidAlign con alternancia de pasos. En el paso de tarea se optimiza `L_task = L_LM + lb_loss_coef * L_LB`, con `lb_loss_coef = 0,01`, calculando la pérdida de lenguaje solo sobre la respuesta (prompt enmascarado) y sobre un pool combinado de SQuAD (87.599 muestras), SNLI (549.367 muestras) y MMLU (87.691 muestras tras descartar 12.151). En el paso de alineamiento se aplica una pérdida contrastiva tipo MidAlign (oneway, con negativos dentro de un mini-batch de 4) entre el estado oculto mean-pooled de frases en inglés y frases en idioma destino en la capa 12 (bloque 11 de 24), con temperatura 1,5. El pool de alineamiento contiene 121.571 pares provenientes de flores, ntrex y ted (500 pares por idioma, muestreo aleatorio con semilla 42), repetidos hasta cubrir 724.736 pares por época.
+
+Cada época consta de 5.662 pasos de tarea y 5.662 pasos de alineamiento, garantizando que cada muestra de tarea se use al menos una vez por época (724.657 muestras). El entrenamiento se ejecuta durante 3 épocas con world_size 8, batch de tarea de 16 por rank, batch de alineamiento de 16 por rank, micro-batch de 4.096 tokens y gradient all-reduce manual (sin DDP). Solo se conserva el checkpoint más reciente.
 
 ## Capacidades
 
-- Alineación cross-lingual de representaciones en la capa intermedia (capa 16) mediante contraste simétrico InfoNCE.
-- Traducción automática mejorada entre inglés y los idiomas presentes en los corpus de entrenamiento (flores, bible, ntrex).
-- Transferencia de conocimiento y razonamiento multilingüe al compartir espacio semántico entre idiomas.
-- Generación de texto causal en el idioma destino durante el paso de tarea.
-- Balanceo de carga MoE preservado mediante la pérdida de load balancing incluida en el paso de tarea.
-- Capacidad de tool calling y agentes: no disponible (depende del modelo base, que no lo implementa de forma nativa en su versión 1.5).
+- Generación de texto y razonamiento en inglés, heredados del modelo base Qwen1.5-MoE-A2.7B.
+- Comprensión lectora y respuesta a preguntas extractivas, reforzada por el entrenamiento sobre SQuAD.
+- Inferencia de lenguaje natural, reforzada por el entrenamiento sobre SNLI.
+- Razonamiento de conocimiento general y respuesta a preguntas de opción múltiple, reforzado por el entrenamiento sobre MMLU.
+- Alineamiento cross-lingual de representaciones internas en la capa 12, orientado a mejorar la transferencia entre idiomas.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada para el adaptador (depende del modelo base).
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada para el adaptador.
+- Capacidades multilingües: el adaptador entrena alineamiento con pares de flores, ntrex y ted, pero no se especifican los idiomas concretos ni se reportan evaluaciones multilingües.
+- Capacidades especiales (thinking mode, visión, audio): no disponibles.
 
 ## Casos de uso
 
-- Traducción automática multilingüe: el modelo puede usarse como componente de un sistema de traducción, aprovechando la alineación cross-lingual para producir traducciones más coherentes entre inglés y los idiomas de flores, bible y ntrex. Se integraría como un adaptador sobre el modelo base y se invocaría con prompts en formato chat.
-- Aprendizaje por transferencia para tareas downstream: el adaptador puede servir como punto de partida para fine-tuning en tareas de comprensión lectora o generación en idiomas de bajos recursos, gracias a la alineación previa con inglés.
-- Evaluación de técnicas de alineación en MoE: investigadores pueden usar este modelo como baseline para comparar métodos de alineación de representaciones en arquitecturas MoE frente a modelos densos.
-- Traducción asistida en entornos de edición: el modelo puede integrarse en herramientas de traducción asistida por ordenador (CAT) para generar sugerencias de traducción de alta calidad en contextos de documentos multilingües.
-- Desarrollo de sistemas de respuesta multilingüe: combinado con un framework de agentes, el modelo podría utilizarse para responder consultas en varios idiomas, aprovechando la coherencia semántica entrenada.
-- Fine-tuning posterior sobre el adaptador: dado que es un adaptador LoRA, se puede seguir entrenando sobre el mismo para tareas específicas como resumen o generación de preguntas en el idioma destino, sin modificar el modelo base.
+- Investigación en alineamiento cross-lingual: el adaptador sirve como artefacto reproducible para estudiar cómo el alineamiento contrastivo en capas intermedias afecta a las representaciones de un MoE, con hiperparámetros y curvas de pérdida publicadas en el repositorio.
+- Experimentos de transferencia entre idiomas: al alinear frases inglesas con frases en idiomas destino en la capa 12, puede emplearse para evaluar si mejora el rendimiento zero-shot en tareas de comprensión en idiomas distintos del inglés.
+- Respuesta a preguntas extractivas: el ajuste sobre SQuAD permite usar el adaptador en pipelines de QA sobre documentos, aprovechando la ventana de contexto del modelo base.
+- Clasificación de pares de frases e inferencia textual: el entrenamiento sobre SNLI lo hace adecuado para tareas de entailment y detección de contradicciones en inglés.
+- Evaluación de razonamiento de conocimiento general: el ajuste sobre MMLU permite usarlo como banco de pruebas para medir el impacto del alineamiento en tareas de opción múltiple.
+- Base para adaptadores multilingües en producción: al ser un LoRA Apache 2.0 sobre un MoE de 2,7B activos, puede integrarse en despliegues existentes de Qwen1.5-MoE-A2.7B sin duplicar el coste de inferencia del modelo completo.
+- Estudio de eficiencia de LoRA en MoE: los módulos LoRA cubren router y expertos, lo que permite analizar el efecto del ajuste selectivo en el enrutamiento de expertos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se reportan métricas como MMLU, HumanEval, GSM8K ni evaluaciones de traducción (BLEU, chrF) en la model card del autor.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye únicamente curvas de pérdida de entrenamiento (`diagnostics/task_loss_curve.png` y `diagnostics/align_loss_curve.png`) y un registro de diagnóstico por paso (`diagnostics/loss_log.jsonl`), sin métricas de evaluación sobre SQuAD, SNLI, MMLU ni tareas multilingües.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el modelo base Qwen1.5-MoE-A2.7B con el adaptador LoRA puede ejecutarse en GPUs consumer de 8-12 GB con cuantización (INT8 o INT4), gracias a que solo activa 2.7 B parámetros por token.
-- GPU recomendadas: RTX 3090, RTX 4090, A100 (para entrenamiento o inferencia con batch alto); el entrenamiento del adaptador se realizó con múltiples GPUs usando torchrun.
-- El adaptador LoRA no requiere VRAM adicional significativa más allá de la del modelo base, pero el espacio en disco necesario es de 0.2 GB.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face Transformers con PEFT (peft), TGI (si se convierte a formato compatible).
-- Latencia y throughput estimados: no disponible; dependerá de la GPU y la cuantización. En una RTX 4090 con cuantización INT4, se espera una generación de 30-50 tokens/s, pero no hay datos medidos para este adaptador específico.
+- El adaptador LoRA en sí es pequeño en comparación con el modelo base, pero requiere cargar Qwen1.5-MoE-A2.7B completo para la inferencia.
+- VRAM estimada para el modelo base en precisión completa (BF16): aproximadamente 28-30 GB para los 14,3B parámetros totales, más overhead de activaciones y caché KV.
+- VRAM estimada con cuantización de 8 bits: en torno a 15-16 GB; con 4 bits: en torno a 8-10 GB, dependiendo del runtime.
+- GPU recomendadas: A100 40 GB u 80 GB, H100 para despliegues de producción; en consumer, RTX 4090 (24 GB) puede alojar el modelo en 8 bits o 4 bits, y GPUs con 16 GB pueden intentarlo en 4 bits con contextos reducidos.
+- Opciones de despliegue: el adaptador es PEFT, por lo que puede cargarse con la librería `peft` sobre el modelo base en Hugging Face Transformers; para serving se puede fusionar el adaptador con el modelo base y desplegar con vLLM, TGI o llama.cpp (este último requiere convertir a GGUF).
+- Latencia y throughput: no disponibles en la información proporcionada. Al tratarse de un MoE con 2,7B parámetros activos, el coste por token es inferior al de un modelo denso de 14,3B, pero no se aportan mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros activos | Contexto | Enfoque | Licencia | Formato |
+| Modelo | Parámetros totales / activos | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen1.5-MoE-A2.7B-MidAlign (este) | 2.7 B | 32768 | LoRA + alineación cross-lingual (MidAlign) | Apache 2.0 | safetensors + peft |
-| Qwen1.5-MoE-A2.7B (base) | 2.7 B | 32768 | Modelo MoE general | Apache 2.0 | safetensors |
-| MidAlign original (Liu & Niehues 2025) | varía (LLaMA) | 4096-8192 | Alineación de capas intermedias en modelos densos | no disponible | no disponible |
-| NLLB-200-MoE (Meta) | 3.0 B | 1024 | Modelo MoE especializado en traducción | CC-BY-NC | safetensors |
+| Qwen1.5-MoE-A2.7B-MidAlign (este) | 14,3B / 2,7B (heredados) | No disponible | Apache 2.0 | LoRA safetensors | Adaptador de alineamiento cross-lingual |
+| Qwen1.5-MoE-A2.7B (base) | 14,3B / 2,7B | 32.768 tokens | Apache 2.0 | safetensors | Modelo base sin ajuste de alineamiento |
+| Qwen1.5-7B | 7B densos | 32.768 tokens | Apache 2.0 | safetensors | Alternativa densa de tamaño similar en activos |
+| Mixtral-8x7B | 46,7B / 12,9B | 32.768 tokens | Apache 2.0 | safetensors | MoE de mayor tamaño, no directamente comparable en coste |
 
-La comparativa muestra que este adaptador se diferencia del modelo base únicamente en la capacidad de alineación cross-lingual, mientras que NLLB es un modelo de traducción puro y MidAlign original se enfoca en modelos densos. No se dispone de datos de rendimiento para comparar numéricamente.
+La comparación con alternativas de alineamiento cross-lingual no está disponible en la información proporcionada, ya que no se identifican otros adaptadores MidAlign públicos sobre Qwen1.5-MoE en la documentación consultada.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se han evaluado sesgos específicos; al entrenarse con corpus como flores y bible, puede heredar sesgos culturales o religiosos de esos textos.
-- Riesgo de alucinación: el modelo base Qwen1.5-MoE-A2.7B puede generar contenido no factual; la alineación cross-lingual no mitiga este riesgo.
-- Limitaciones de idioma: el adaptador solo se entrenó con los idiomas presentes en los corpus multiway-parallel (flores, bible, ntrex); idiomas fuera de estos conjuntos pueden no verse beneficiados o incluso degradar su rendimiento.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se debe conservar la atribución y no usar marcas registradas de los autores originales.
-- El adaptador no es un modelo autónomo: requiere cargar el modelo base Qwen1.5-MoE-A2.7B y aplicar el adaptador mediante la librería peft; no puede usarse de forma independiente.
-- La capa de alineación fijada en la capa 16 puede no ser óptima para todas las tareas o idiomas; la técnica MidAlign asume que una capa intermedia es suficiente, lo que puede ser una limitación para idiomas muy divergentes.
-- En producción, se recomienda evaluar la calidad de traducción con métricas BLEU/chrF antes de desplegar, ya que no se han publicado resultados que validen la mejora respecto al modelo base.
+- El adaptador no es un modelo autónomo: requiere descargar y cargar Qwen1.5-MoE-A2.7B, lo que implica asumir los requisitos de hardware y la licencia del modelo base.
+- No se han publicado evaluaciones de rendimiento, por lo que no hay evidencia cuantitativa de que el alineamiento mejore tareas downstream ni de que no degrade el rendimiento en inglés.
+- El entrenamiento de tarea se realiza exclusivamente en inglés (SQuAD, SNLI, MMLU), lo que puede limitar la calidad en otros idiomas pese al alineamiento contrastivo.
+- No se especifican los idiomas cubiertos por el pool de alineamiento (flores, ntrex, ted), lo que impide conocer la cobertura real.
+- Riesgo de alucinación inherente al modelo base, no mitigado específicamente por este adaptador.
+- Sesgos conocidos: no disponibles en la información proporcionada; se heredan los del modelo base y los de los datasets SQuAD, SNLI y MMLU.
+- El adaptador se entrenó solo 3 épocas y se conserva únicamente el checkpoint más reciente, sin posibilidad de comparar con checkpoints intermedios.
+- La licencia Apache 2.0 del adaptador no exime de cumplir la licencia del modelo base Qwen1.5-MoE-A2.7B para uso comercial.
+- El repositorio ocupa 313,9 GB, lo que sugiere que incluye artefactos adicionales además del adaptador; conviene revisar el contenido antes de descargarlo completo.
 
 ## Enlaces
 
-- Hugging Face del adaptador: https://huggingface.co/ducanhdinh/Qwen1.5-MoE-A2.7B-MidAlign
+- Modelo en Hugging Face: https://huggingface.co/ducanhdinh/Qwen1.5-MoE-A2.7B-MidAlign
 - Modelo base: https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B
-- Paper de la técnica MidAlign: Liu & Niehues 2025 (Middle-Layer Representation Alignment) — no se ha encontrado el enlace directo en la información proporcionada.
-- Repositorio de diagnóstico: dentro del repo Hugging Face, en `diagnostics/loss_log.jsonl` y `diagnostics/loss_curve.png`.
+- Curvas de pérdida de tarea: `diagnostics/task_loss_curve.png` (dentro del repositorio)
+- Curvas de pérdida de alineamiento: `diagnostics/align_loss_curve.png` (dentro del repositorio)
+- Registro de diagnóstico: `diagnostics/loss_log.jsonl` (dentro del repositorio)

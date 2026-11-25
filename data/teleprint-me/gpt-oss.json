@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "teleprint-me/gpt-oss",
+  "slug": "teleprint-me-gpt-oss",
+  "author": "teleprint-me",
+  "url": "https://huggingface.co/teleprint-me/gpt-oss",
+  "created_at": "2026-01-17T23:55:07.000Z",
+  "updated_at": "2026-11-25T01:51:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "en",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:quantized:openai/gpt-oss-20b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 79,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 77706617056,
+  "storage_human": "77.7 GB",
+  "context_length": 131072,
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

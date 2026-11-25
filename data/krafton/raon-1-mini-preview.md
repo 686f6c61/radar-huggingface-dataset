@@ -2,104 +2,96 @@
 
 ## Resumen
 
-Raon-1 mini preview es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado desde cero por KRAFTON AI, la división de inteligencia artificial de la editora surcoreana de videojuegos KRAFTON. Con 28.800 millones de parámetros totales y 4.300 millones activos por token, se posiciona como un modelo de tamaño medio con coste de inferencia reducido, orientado a conversación en coreano y a tareas agénticas (tool calling y ejecución multi-paso).
+Raon-1 mini (preview) es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado desde cero por KRAFTON AI, la división de inteligencia artificial de la editora surcoreana de videojuegos KRAFTON. Con 28,8 mil millones de parámetros totales y 4,3 mil millones activos por token, se posiciona como un modelo de tamano medio con un coste de inferencia bajo, orientado a conversación multilingüe y tareas agénticas. Esta versión es una preview: el autor advierte que las especificaciones y resultados pueden cambiar antes de la versión final.
 
-La arquitectura es híbrida: combina 18 capas de atención lineal de estado fijo (Raon Delta Attention, RDA) con 7 capas de atención completa basadas en Gated MLA, lo que reduce drásticamente la memoria de caché KV en contextos largos (unos 8 KiB por token en BF16). Soporta de forma nativa hasta 262.144 tokens de contexto y emplea un esquema MoE disperso con 128 expertos enrutados, de los que se activan 6 más uno compartido.
+El modelo destaca por una arquitectura híbrida poco habitual que combina 18 capas de atención lineal (Raon Delta Attention, una variante de Kimi Delta Attention) con solo 7 capas de atención completa (Gated MLA), lo que reduce drásticamente el coste de la caché KV en contextos largos. Soporta de forma nativa hasta 262.144 tokens de contexto y se distribuye bajo licencia Apache 2.0, con pesos en safetensors y cuantizaciones MXFP8 y NVFP4.
 
-La relevancia actual del modelo radica en tres factores: licencia Apache 2.0 sin restricciones de uso comercial, soporte de decodificación especulativa mediante un modelo draft DFlash2, y cuantizaciones MXFP8 y NVFP4 que permiten ejecutarlo en una única GPU de consumo como la NVIDIA RTX 5090 (32 GB de VRAM). Se trata, no obstante, de una versión preview cuyas especificaciones y resultados pueden cambiar antes del lanzamiento final.
+Su relevancia actual radica en tres factores: un rendimiento declarado competitivo en razonamiento matemático y científico, soporte de tool calling para flujos agénticos y una cuantización NVFP4 que permite ejecutar el modelo en una única GPU de consumo (RTX 5090 con 32 GB de VRAM). El entrenamiento cubre coreano, inglés, japonés, chino, español, francés y tailandés, con especial énfasis en coreano.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE híbrida (18 capas Raon Delta Attention + 7 capas Gated MLA) |
-| Parametros totales | 28.783.218.402 (28,8B) |
-| Parametros activos | 4,3B (6 expertos enrutados + 1 compartido de 128) |
+| Arquitectura | MoE híbrida: 18 capas Raon Delta Attention (lineal) + 7 capas Gated MLA (atención completa) |
+| Parametros totales | 28,8 B (28.783.218.402) |
+| Parametros activos | 4,3 B (6 expertos enrutados + 1 compartido de 128) |
 | Longitud de contexto | 262.144 tokens |
 | Tipos de cuantizacion | MXFP8, NVFP4 (BF16 como formato base) |
 | Idiomas soportados | Coreano, inglés, japonés, chino, español, francés y tailandés |
-| Licencia | Apache 2.0 |
+| Licencia | Apache 2.0 (acceso bajo solicitud mediante gate en Hugging Face) |
 | Formato de pesos | safetensors (librería transformers, custom_code) |
 
-Otros datos técnicos declarados por el autor: 25 capas totales, hidden size de 2.560, 40 cabezas de atención (dimensión 128 en RDA; 192 QK / 128 V en Gated MLA), rango LoRA de query/KV de 576/512 en Gated MLA, tamaño intermedio de experto de 1.088, FFN densa de 12.032 en la primera capa, función de activación SiTU-GLU, conexiones residuales Raon-mHC con 4 streams, vocabulario de 259.840 tokens, LM head no atada y codificación posicional NoPE (sin positional encoding). El repositorio ocupa 32,7 GB.
+Otros datos técnicos declarados por el autor: 25 capas, tamano oculto de 2.560, 40 cabezas de atención, dimensión de cabeza 128 para RDA y 192 QK / 128 V para Gated MLA, rango LoRA de query/KV de 576/512, tamano intermedio de experto de 1.088, FFN denso de la primera capa de 12.032, función de activación SiTU-GLU, conexiones residuales Raon-mHC con 4 streams, vocabulario de 259.840 tokens, LM head no atada y codificación posicional NoPE.
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura transformer híbrida en la que 18 de las 25 capas usan Raon Delta Attention (RDA), una variante de Kimi Delta Attention que desacopla las compuertas de borrado y escritura para mejorar el rendimiento en contexto largo, y solo 7 capas mantienen caché KV mediante Gated MLA. Esta combinación reduce el coste de memoria en secuencias largas: únicamente las capas MLA conservan KV cache, aproximadamente 8 KiB por token en BF16. La codificación posicional es NoPE, es decir, el modelo no usa embeddings posicionales explícitos y delega la información de orden en el mecanismo de atención.
+Raon-1 mini emplea una arquitectura transformer MoE híbrida. De sus 25 capas, 18 usan Raon Delta Attention (RDA), una atención lineal con estado de tamano fijo que desacopla las compuertas de borrado y escritura de Kimi Delta Attention, lo que según el autor mejora el rendimiento en contexto largo respecto a KDA. Las 7 capas restantes usan Gated MLA con caché KV, con un coste aproximado de 8 KiB por token en BF16. El modelo prescinde de codificación posicional (NoPE) y utiliza conexiones residuales Raon-mHC con 4 streams, una versión optimizada de las manifold-constrained hyper-connections de DeepSeek que reduce coste computacional y acelera el entrenamiento.
 
-En el plano del enrutamiento, cada token activa 6 de los 128 expertos enrutados más un experto compartido, con un tamaño intermedio de experto de 1.088. La función de activación es SiTU-GLU y las conexiones residuales usan Raon-mHC con 4 streams, una optimización de las manifold-constrained hyper-connections de DeepSeek orientada a reducir coste computacional y acelerar el entrenamiento. El modelo fue entrenado desde cero por KRAFTON AI sobre datos en coreano, inglés, japonés, chino, español, francés y tailandés. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron fases de RLHF o DPO.
-
-Como innovaciones destacables, el autor cita el soporte de decodificación especulativa mediante un modelo draft DFlash2 y la disponibilidad de pesos cuantizados en MXFP8 y NVFP4, este último pensado para inferencia en una sola RTX 5090.
+La capa MoE enruta cada token a 6 de 128 expertos más un experto compartido, activando 4,3 B de los 28,8 B totales. El modelo fue entrenado desde cero por KRAFTON AI; la model card no detalla el número de tokens de entrenamiento ni la composición exacta del dataset, aunque sí indica los siete idiomas cubiertos. Incorpora razonamiento integrado (thinking mode) y soporte de decodificación especulativa mediante un modelo draft DFlash2 publicado por el mismo autor. No se especifica en la información disponible si se aplicaron etapas de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno con ventana de contexto de hasta 262.144 tokens.
-- Razonamiento integrado con modo de pensamiento (built-in thinking), con resultados destacados según el autor en benchmarks de matemáticas y ciencia.
-- Seguimiento de instrucciones y tareas de búsqueda, donde el autor afirma que lidera frente a los modelos de comparación.
-- Ejecución de agentes y tool calling (function calling) para flujos agénticos multi-paso; soporte declarado para Hermes Agent, Pi y OpenCode.
+- Generación de texto conversacional multi-turno con contexto de hasta 262.144 tokens.
+- Razonamiento integrado con modo de pensamiento (thinking) para matemáticas y ciencia.
+- Seguimiento de instrucciones y tareas de búsqueda, con resultados líderes declarados frente a los modelos de comparación de la model card.
+- Tool calling / function calling para flujos agénticos; soporte explícito de Hermes Agent, Pi y OpenCode.
+- Ejecución de agentes y razonamiento multi-paso.
 - Capacidades multilingües en coreano, inglés, japonés, chino, español, francés y tailandés, con rendimiento especialmente fuerte en coreano.
-- Decodificación especulativa acelerada mediante el modelo draft DFlash2.
-- No se documentan capacidades de visión, audio ni otras modalidades en la información disponible.
+- Decodificación especulativa acelerada mediante el draft model DFlash2.
+- Inferencia cuantizada en MXFP8 y NVFP4, esta última apta para una RTX 5090.
 
 ## Casos de uso
 
-- Atención al cliente en coreano: el modelo puede gestionar conversaciones multi-turno con contexto largo gracias a sus 262.144 tokens de ventana y a su entrenamiento específico en coreano, lo que permite mantener historiales extensos de cliente sin truncar información.
-- Agentes autónomos con herramientas: al soportar tool calling y ejecución multi-paso (Hermes Agent, Pi, OpenCode), puede integrarse en pipelines que consulten APIs, bases de datos o servicios externos y encadenen llamadas con razonamiento intermedio.
-- Asistentes de búsqueda aumentada: el autor sitúa al modelo como líder en benchmarks de búsqueda entre sus comparables, por lo que es adecuado para sistemas RAG que requieran sintetizar respuestas a partir de documentos recuperados extensos.
-- Razonamiento matemático y científico asistido: el modo de pensamiento integrado lo hace apto para tutoría técnica, resolución de problemas paso a paso y verificación de cálculos en entornos educativos o de investigación.
-- Despliegue en estaciones de trabajo con GPU de consumo: la cuantización NVFP4 permite ejecutarlo en una única RTX 5090 de 32 GB, lo que habilita prototipos locales y entornos de desarrollo sin infraestructura de centro de datos.
-- Procesamiento de documentos largos en producción: con atención híbrida y caché KV reducida (8 KiB/token en BF16), el coste de memoria por sesión es manejable para analizar contratos, informes o expedientes de decenas de miles de tokens.
-- Servicio multilingüe para el mercado asiático: al cubrir coreano, japonés, chino y tailandés además de inglés y lenguas europeas, sirve para productos con base de usuarios repartida por Asia Oriental y el Sudeste Asiático.
+- Atención al cliente automatizada en coreano e inglés: el modelo puede mantener conversaciones multi-turno con historial extenso gracias a su ventana de 262.144 tokens, y su entrenamiento específico en coreano lo hace adecuado para mercados donde la mayoría de modelos abiertos rinden peor.
+- Agentes de automatización con herramientas: con soporte de tool calling y compatibilidad con Hermes Agent, Pi y OpenCode, puede integrarse en pipelines que consulten APIs, ejecuten búsquedas o encadenen pasos de razonamiento.
+- Asistencia a la programación en IDE o CLI: la integración declarada con OpenCode permite usarlo como backend de un agente de código que lea repositorios completos dentro de la ventana de contexto.
+- Procesamiento de documentos largos: contratos, informes o expedientes de cientos de miles de tokens pueden analizarse en una sola pasada gracias al contexto nativo de 262.144 tokens y a la caché KV reducida de las capas lineales.
+- Razonamiento matemático y científico asistido: el modo thinking integrado está orientado a problemas de matemáticas y ciencia, útil en herramientas educativas o de análisis técnico.
+- Despliegue en estación de trabajo con GPU de consumo: la cuantización NVFP4 permite ejecutar el modelo en una RTX 5090 de 32 GB, lo que habilita prototipos locales de asistentes y agentes sin infraestructura de centro de datos.
+- Localización multilingüe: con cobertura de siete idiomas, puede emplearse para traducción y generación de contenido en combinaciones como coreano-español o japonés-inglés.
 
 ## Benchmarks y rendimiento
 
-El autor publica gráficas comparativas frente a modelos MoE de referencia, pero los valores numéricos no están incluidos en la información disponible (la tabla de la model card aparece truncada). No se han podido extraer cifras concretas de MMLU, HumanEval, GSM8K ni de otros benchmarks.
+La model card incluye una tabla de resultados comparativos frente a modelos MoE de referencia, pero los valores numéricos no están disponibles en la información proporcionada (la tabla aparece truncada en el HTML extraído). El autor declara que Raon-1 mini preview lidera en los benchmarks de matemáticas, ciencia, seguimiento de instrucciones y búsqueda frente a los modelos de comparación, sin que se puedan reproducir aquí las cifras concretas.
 
-| Benchmark | Resultado |
-|---|---|
-| Razonamiento (matemáticas y ciencia) | no disponible (el autor declara liderazgo frente a los modelos de comparación) |
-| Seguimiento de instrucciones | no disponible (el autor declara liderazgo frente a los modelos de comparación) |
-| Búsqueda | no disponible (el autor declara liderazgo frente a los modelos de comparación) |
-| Resto de benchmarks | no disponible |
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada en BF16: el repositorio pesa 32,7 GB, por lo que la inferencia en precisión completa requiere del orden de 33-40 GB de VRAM, según overhead de runtime y longitud de contexto.
-- Cuantización NVFP4: el autor indica explícitamente que permite inferencia en una única NVIDIA RTX 5090 con 32 GB de VRAM.
-- Cuantización MXFP8: reduce el peso a aproximadamente la mitad respecto a BF16; no se especifica la VRAM exacta necesaria en la información disponible.
-- GPU recomendadas: RTX 5090 (32 GB) para NVFP4; para BF16 se necesitan GPU de 40-80 GB como A100 40/80 GB, H100 o L40S. No se dispone de datos de rendimiento medidos en estas GPU.
-- Despliegue: la librería indicada es transformers con código personalizado (custom_code); no se confirma en la información disponible soporte para vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles. El modelo incluye un draft model DFlash2 para decodificación especulativa, lo que en principio incrementa el throughput, pero no se publican cifras.
+- VRAM estimada: en BF16, los 28,8 B de parámetros ocupan aproximadamente 57,6 GB, por lo que requiere al menos 64 GB de VRAM (A100 80 GB, H100 80 GB o dos GPU de 48 GB). En MXFP8, el peso ronda los 28,8 GB. En NVFP4, el autor indica que cabe en una única NVIDIA RTX 5090 de 32 GB.
+- GPU recomendadas: H100 o A100 80 GB para BF16; L40S o RTX 6000 Ada para MXFP8; RTX 5090 (32 GB) para NVFP4.
+- GPU de consumo: sí es viable en la RTX 5090 gracias a NVFP4; en GPU con menos de 32 GB habría que recurrir a cuantizaciones adicionales no publicadas por el autor.
+- Opciones de despliegue: transformers (librería declarada, con custom_code), vLLM y TGI como opciones habituales para modelos safetensors; llama.cpp u Ollama requerirían conversión a GGUF, no disponible en la información proporcionada.
+- Latencia y throughput: no disponibles. El coste de atención en contexto largo se beneficia del estado fijo de las 18 capas RDA y de la caché KV de solo 7 capas (unos 8 KiB por token en BF16), y la decodificación especulativa con DFlash2 reduce la latencia de generación según el autor, sin cifras publicadas.
 
 ## Comparativa con modelos similares
 
-No se dispone de los nombres ni de las cifras de los modelos de comparación incluidos en las gráficas del autor. La siguiente tabla recoge únicamente los datos verificables del modelo frente a alternativas MoE de tamaño comparable, con los campos no confirmados marcados como no disponibles.
+| Modelo | Parámetros | Activos | Contexto | Licencia | Notas |
+|---|---|---|---|---|---|
+| Raon-1 mini preview | 28,8 B | 4,3 B | 262.144 | Apache 2.0 | Híbrido RDA + MLA, foco en coreano y agentes |
+| Alternativas MoE de referencia | no disponible | no disponible | no disponible | no disponible | La model card menciona modelos de comparación, pero sus nombres y cifras no están en la información disponible |
 
-| Modelo | Parametros totales / activos | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| Raon-1 mini preview | 28,8B / 4,3B | 262.144 | Apache 2.0 | Híbrido RDA + MLA, NoPE, cuantización NVFP4 |
-| Alternativas MoE de referencia | no disponible | no disponible | no disponible | El autor las incluye en sus gráficas sin especificar nombres en la información disponible |
+No se dispone de datos suficientes en la información proporcionada para establecer una comparativa cuantitativa con alternativas concretas.
 
 ## Limitaciones y advertencias
 
-- Versión preview: el propio autor advierte de que no es un modelo final y que las especificaciones y resultados pueden cambiar antes del lanzamiento definitivo; no debe tratarse como una base estable para producción crítica sin validación propia.
-- Riesgo de alucinación: no se documentan en la información disponible evaluaciones de factualidad ni tasas de alucinación; como todo modelo generativo, requiere verificación de salidas en dominios sensibles.
-- Sesgos: no se publica información sobre sesgos demográficos, culturales o lingüísticos. El entrenamiento está fuertemente orientado al coreano, lo que puede desequilibrar el comportamiento en otras lenguas.
-- Idiomas: aunque se declaran siete idiomas, el autor solo garantiza rendimiento fuerte en coreano y "sólido" en inglés; el rendimiento en español, francés, japonés, chino y tailandés no está cuantificado.
-- Acceso restringido por gate: pese a la licencia Apache 2.0, el repositorio exige solicitar acceso y rellenar un formulario (nombre, afiliación, puesto, país y uso previsto); esto añade fricción operativa a la descarga automatizada en pipelines.
-- Licencia: Apache 2.0 permite uso comercial sin restricciones adicionales conocidas, pero conviene revisar los términos del gate y de los pesos cuantizados publicados por separado.
-- Soporte de runtime limitado: la dependencia de `custom_code` y la ausencia de confirmación de soporte en vLLM, llama.cpp u Ollama pueden complicar el despliegue en infraestructuras estándar.
-- Caché KV: aunque reducida, las 7 capas MLA mantienen unos 8 KiB por token en BF16, lo que a 262.144 tokens supone del orden de 2 GB por secuencia; con muchas peticiones concurrentes la memoria crece de forma significativa.
+- Es una versión preview: el propio autor advierte que las especificaciones y resultados pueden cambiar antes de la versión final, por lo que no es recomendable como base estable de producción sin fijar la revisión.
+- Riesgo de alucinación: no se han publicado tasas de alucinación ni evaluaciones de veracidad en la información disponible.
+- Sesgos: no se documentan sesgos conocidos; el entrenamiento está sesgado hacia coreano e inglés, con menor cobertura declarada de español, francés, japonés, chino y tailandés.
+- Idiomas: aunque cubre siete idiomas, el rendimiento fuera de coreano e inglés no está cuantificado en la información disponible.
+- Licencia: Apache 2.0 permite uso comercial, pero el acceso a los pesos está condicionado a una solicitud con datos personales y aceptación de la licencia (gate en Hugging Face), lo que añade fricción operativa.
+- Despliegue: requiere transformers con código personalizado (custom_code), lo que puede limitar la compatibilidad con frameworks de inferencia que no soporten aún la arquitectura RDA.
+- Contexto: los 262.144 tokens son la longitud nativa declarada, pero no hay datos publicados sobre degradación del rendimiento en el extremo de la ventana.
+- Cuantizaciones: solo se ofrecen MXFP8 y NVFP4; no hay GGUF publicado, lo que dificulta el uso en CPU o en GPU de consumo con menos de 32 GB.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/KRAFTON/Raon-1-mini-preview
-- Organización KRAFTON en Hugging Face: https://huggingface.co/KRAFTON
+- Versión final (referenciada como new_version): https://huggingface.co/KRAFTON/Raon-1-mini
 - Playground de Raon-1 mini: https://raon-console.krafton.ai/playground/guest
-- Página corporativa de KRAFTON AI: https://krafton.ai/en/
-- Repositorio de assets en GitHub: https://github.com/krafton-ai/Raon-1-mini-preview
-- Cuenta de X de KRAFTON AI: https://x.com/Krafton_AI
-- Comunidad de Discord: https://discord.gg/sDG7mmZPnc
+- Página de KRAFTON AI: https://krafton.ai/en/
+- Organización KRAFTON en Hugging Face: https://huggingface.co/KRAFTON
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
-- KRAFTON (empresa): https://www.krafton.com/en/
-- KRAFTON en Wikipedia: https://en.wikipedia.org/wiki/Krafton
+- Cuenta de X de KRAFTON AI: https://x.com/Krafton_AI
+- Discord de la comunidad: https://discord.gg/sDG7mmZPnc
+- Web corporativa de KRAFTON: https://www.krafton.com/en/
