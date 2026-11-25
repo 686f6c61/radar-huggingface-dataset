@@ -31,8 +31,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "protocolsyncllc/medgap-gemma-4-26b-a4b",
+  "renamed_at": "2026-11-25T13:47:16.494Z",
   "benchmarks": [],
   "sources": []
 }

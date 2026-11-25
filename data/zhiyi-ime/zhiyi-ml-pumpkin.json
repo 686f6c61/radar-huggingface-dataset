@@ -5,7 +5,7 @@
   "author": "zhiyi-ime",
   "url": "https://huggingface.co/zhiyi-ime/zhiyi-ml-pumpkin",
   "created_at": "2026-11-23T00:25:28.000Z",
-  "updated_at": "2026-11-23T21:33:05.000Z",
+  "updated_at": "2026-11-24T19:20:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -42,7 +42,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 19,
+  "downloads_30d": 31,
   "trending_score": 0,
   "parameters": 80835180,
   "parameters_human": "80.8M",

@@ -1,0 +1,61 @@
+{
+  "schema": 2,
+  "id": "kenantabak/yolov9c-traffic-signs-49-tr",
+  "slug": "kenantabak-yolov9c-traffic-signs-49-tr",
+  "author": "kenantabak",
+  "url": "https://huggingface.co/kenantabak/yolov9c-traffic-signs-49-tr",
+  "created_at": "2026-11-25T15:05:42.000Z",
+  "updated_at": "2026-11-25T15:05:46.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "object-detection",
+    "yolov9",
+    "traffic-signs",
+    "autonomous-driving",
+    "computer-vision",
+    "evren",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128861007,
+  "storage_human": "129 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "mAP@50",
+      "value": 87.94
+    },
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "mAP@50-95",
+      "value": 73.48
+    }
+  ],
+  "sources": []
+}

@@ -51,8 +51,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "rarevector/Agnes-3.0-Qwen-oQ4e-mtp",
+  "renamed_at": "2026-11-25T13:40:04.769Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,0 +1,93 @@
+{
+  "schema": 2,
+  "id": "runelab-ai/Domr-Decide-Loop-4B-v1",
+  "slug": "runelab-ai-domr-decide-loop-4b-v1",
+  "author": "runelab-ai",
+  "url": "https://huggingface.co/runelab-ai/Domr-Decide-Loop-4B-v1",
+  "created_at": "2026-11-25T16:46:12.000Z",
+  "updated_at": "2026-11-25T19:19:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "feature-extraction",
+    "decision-model",
+    "open-weight-decision-model",
+    "looped-transformer",
+    "small-language-model",
+    "qwen3.5",
+    "qwen3.5-4b",
+    "calibration",
+    "classification",
+    "reranking",
+    "agent-routing",
+    "guardrails",
+    "policy-firewall",
+    "tool-calling",
+    "on-premise-ai",
+    "decision-index",
+    "decidebench",
+    "domr",
+    "runegate",
+    "runelab",
+    "karar-modeli",
+    "text-classification",
+    "en",
+    "tr",
+    "base_model:perplexity-ai/pplx-decider-flash-v1.3",
+    "base_model:finetune:perplexity-ai/pplx-decider-flash-v1.3",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9103149069,
+  "storage_human": "9.1 GB",
+  "context_length": null,
+  "base_model": "perplexity-ai/pplx-decider-flash-v1.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Structured Decision-Making",
+      "dataset": "Decision Index 0.3 Public (37 benchmarks)",
+      "metric": "Decision Index 0.3 Public (37/37)",
+      "value": 63.85
+    },
+    {
+      "task": "Structured Decision-Making",
+      "dataset": "DecideBench v2",
+      "metric": "Item Accuracy",
+      "value": 84.67
+    },
+    {
+      "task": "Structured Decision-Making",
+      "dataset": "DecideBench v2",
+      "metric": "Contrastive Pair Accuracy",
+      "value": 71.11
+    }
+  ],
+  "sources": []
+}

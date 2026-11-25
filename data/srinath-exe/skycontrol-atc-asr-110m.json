@@ -5,9 +5,9 @@
   "author": "srinath-exe",
   "url": "https://huggingface.co/srinath-exe/skycontrol-atc-asr-110m",
   "created_at": "2026-11-13T11:45:37.000Z",
-  "updated_at": "2026-11-16T20:58:34.000Z",
-  "license": "cc-by-4.0",
-  "license_family": "oss",
+  "updated_at": "2026-11-25T13:31:47.000Z",
+  "license": "cc-by-nc-sa-4.0",
+  "license_family": "non-commercial",
   "pipeline_tag": null,
   "library": null,
   "languages": [
@@ -23,7 +23,7 @@
     "en",
     "base_model:nvidia/parakeet-tdt_ctc-110m",
     "base_model:quantized:nvidia/parakeet-tdt_ctc-110m",
-    "license:cc-by-4.0",
+    "license:cc-by-nc-sa-4.0",
     "region:us"
   ],
   "likes": 0,

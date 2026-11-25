@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "AleksanderObuchowski/Tectal",
+  "slug": "aleksanderobuchowski-tectal",
+  "author": "AleksanderObuchowski",
+  "url": "https://huggingface.co/AleksanderObuchowski/Tectal",
+  "created_at": "2026-11-25T13:38:14.000Z",
+  "updated_at": "2026-11-25T13:40:44.000Z",
+  "license": "research-preview",
+  "license_family": "unknown",
+  "pipeline_tag": "multiple-choice",
+  "library": "gguf",
+  "languages": [
+    "pl",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "safetensors",
+    "decision-model",
+    "multiple-choice",
+    "lora",
+    "llama.cpp",
+    "polish",
+    "pl",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 122429440,
+  "parameters_human": "122.4M",
+  "storage_bytes": 15159254768,
+  "storage_human": "15.2 GB",
+  "context_length": null,
+  "base_model": "google/gemma-4-31b-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

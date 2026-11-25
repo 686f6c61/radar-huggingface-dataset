@@ -1,0 +1,72 @@
+{
+  "schema": 2,
+  "id": "ahrazzle/aletheia-prover-0.5b",
+  "slug": "ahrazzle-aletheia-prover-0-5b",
+  "author": "ahrazzle",
+  "url": "https://huggingface.co/ahrazzle/aletheia-prover-0.5b",
+  "created_at": "2026-11-25T12:57:44.000Z",
+  "updated_at": "2026-11-25T12:58:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "aletheia",
+    "specialist",
+    "lean4",
+    "formal-verification",
+    "theorem-proving",
+    "security-audit",
+    "lora",
+    "merged",
+    "conversational",
+    "en",
+    "dataset:ahrazzle/aletheia-specialists-s95-datasets",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519981,
+  "storage_human": "1000 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aletheia tackles FirstProof autonomously",
+      "url": "http://go/v1/AQgST8IYSkgsawbb0AGtdMrJomr3oxVyBG7F8WMVgN-ChdICo4uF8GqMnKov0YePxvBlZ5ncV2j284gOgJfPc2PuZcvXMHv71vVppS2IwvZ2qH1O_fnS-BVjbe2TuaVYMc8i9a2zCHed7tKJj2KgC2HIsUgWtGePwt4uuIIayRxIyZCzgDQer1_a5D2LRplCeeQH",
+      "snippet": "Within the allowed timeframe of the challenge, Aletheia autonomously solved 6 problems (2, 5, 7, 8, 9, 10) out of 10 according to majority expert assessments; we note that experts were not unanimous on Problem 8 (only). For full transparency, we explain our interpretation of FirstProof and disclose details about our experiments as well as our evaluation."
+    },
+    {
+      "title": "r/math on Reddit: Aletheia tackles FirstProof autonomously",
+      "url": "http://go/v1/AQgST8IYSkgsawbb0AGtdMrJomr3oxVyBG7F8WMVghs9WdSfg01hNKMoUmZN1FzWD1IEBg5tGed7d3ryNrYT2q9VKy2Sg6nMPhIBoiufzLhCHiUOEvX7Zu6_OsTeWh4q_H_HkzNDBZsTuQga6QGpqbSZOQjs-HjLqpII-ZNdS6Qm1X1CgUwnI5wxycaL6IEfPvbAGx5l010dk5Q6Sno0EqWr67DJwrQk6uHdBMg9BzcTShTCliu3Ev4H1Wp3idN7ODgAWO_FJVKgJQU",
+      "snippet": "This was an LLM repeatedly confabulating proofs into a formalizer which provided feedback into the LLM to try again. And the researchers have dubbed this brute-force architecture consisting of multiple interlinked tools an “autonomous” agent ..."
+    }
+  ]
+}

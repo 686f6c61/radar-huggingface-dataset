@@ -5,7 +5,7 @@
   "author": "wite-tech",
   "url": "https://huggingface.co/wite-tech/clarvia-tts-tiny",
   "created_at": "2026-11-18T08:23:57.000Z",
-  "updated_at": "2026-11-20T08:43:28.000Z",
+  "updated_at": "2026-11-24T18:42:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 238,
+  "downloads_30d": 289,
   "trending_score": 0,
   "parameters": 4536907,
   "parameters_human": "4.5M",

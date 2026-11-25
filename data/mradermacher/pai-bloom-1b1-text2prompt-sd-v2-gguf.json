@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/pai-bloom-1b1-text2prompt-sd-v2-GGUF",
+  "slug": "mradermacher-pai-bloom-1b1-text2prompt-sd-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/pai-bloom-1b1-text2prompt-sd-v2-GGUF",
+  "created_at": "2024-12-19T08:19:33.000Z",
+  "updated_at": "2026-11-25T18:37:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "pytorch",
+    "text-generation",
+    "en",
+    "base_model:alibaba-pai/pai-bloom-1b1-text2prompt-sd-v2",
+    "base_model:quantized:alibaba-pai/pai-bloom-1b1-text2prompt-sd-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 1450665984,
+  "parameters_human": "1.45B",
+  "storage_bytes": 13881962496,
+  "storage_human": "13.9 GB",
+  "context_length": 1536,
+  "base_model": "alibaba-pai/pai-bloom-1b1-text2prompt-sd-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

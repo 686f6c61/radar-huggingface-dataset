@@ -1,0 +1,83 @@
+{
+  "schema": 2,
+  "id": "nvidia/NV-Reason-PathWSI",
+  "slug": "nvidia-nv-reason-pathwsi",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/NV-Reason-PathWSI",
+  "created_at": "2026-10-21T17:37:04.000Z",
+  "updated_at": "2026-11-25T16:08:23.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "qwen3_5",
+    "image-text-to-text",
+    "medical-imaging",
+    "pathology",
+    "histopathology",
+    "whole-slide-imaging",
+    "vision-language",
+    "nv-reason-pathwsi",
+    "nvidia",
+    "conversational",
+    "en",
+    "arxiv:2510.04587",
+    "arxiv:2407.00203",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:openmdw-1.1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9098609861,
+  "storage_human": "9.1 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA RTX™ powers the world’s fastest PCs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI …Read more"
+    },
+    {
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …Read more"
+    },
+    {
+      "title": "Nvidia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nvidia",
+      "snippet": "Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia is among the largest companies by market …Read more"
+    },
+    {
+      "title": "NVIDIA",
+      "url": "https://www.nvidia.fr/default.htm",
+      "snippet": "Explorez les dernières innovations et produits NVIDIA, leader en technologies graphiques et d'intelligence artificielle."
+    },
+    {
+      "title": "NVIDIA Cours Action NVDA, Cotation Bourse NASDAQ - Boursorama",
+      "url": "https://www.boursorama.com/cours/NVDA/",
+      "snippet": "Le cours de l'action NVIDIA NVDA sur Boursorama : historique de la cotation sur NASDAQ, graphique, actualités, consensus des …Read more"
+    }
+  ]
+}

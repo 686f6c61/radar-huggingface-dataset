@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "Froture/token-tts-ljspeech",
+  "slug": "froture-token-tts-ljspeech",
+  "author": "Froture",
+  "url": "https://huggingface.co/Froture/token-tts-ljspeech",
+  "created_at": "2026-11-25T14:46:41.000Z",
+  "updated_at": "2026-11-25T14:47:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "codec-language-model",
+    "mimi",
+    "ljspeech",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186264432,
+  "storage_human": "186 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

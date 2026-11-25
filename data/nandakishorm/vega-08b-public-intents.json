@@ -5,7 +5,7 @@
   "author": "nandakishorm",
   "url": "https://huggingface.co/nandakishorm/vega-08b-public-intents",
   "created_at": "2026-10-09T15:16:54.000Z",
-  "updated_at": "2026-11-23T10:56:47.000Z",
+  "updated_at": "2026-11-25T09:51:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 41,
-  "downloads_30d": 167,
+  "downloads_30d": 162,
   "trending_score": 14,
   "parameters": null,
   "parameters_human": null,

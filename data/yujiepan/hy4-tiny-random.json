@@ -5,7 +5,7 @@
   "author": "yujiepan",
   "url": "https://huggingface.co/yujiepan/hy4-tiny-random",
   "created_at": "2026-11-24T08:14:30.000Z",
-  "updated_at": "2026-11-24T08:15:20.000Z",
+  "updated_at": "2026-11-24T19:30:58.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 45,
   "trending_score": 0,
   "parameters": 10043750,
   "parameters_human": "10.0M",

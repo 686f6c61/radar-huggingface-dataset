@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "SpeedAudio261119/SpeedASR-v1-65M",
+  "slug": "speedaudio261119-speedasr-v1-65m",
+  "author": "SpeedAudio261119",
+  "url": "https://huggingface.co/SpeedAudio261119/SpeedASR-v1-65M",
+  "created_at": "2026-11-19T08:26:42.000Z",
+  "updated_at": "2026-11-22T16:11:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "icefall",
+    "zipformer",
+    "transducer",
+    "offline-asr",
+    "english",
+    "automatic-speech-recognition",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 597650667,
+  "storage_human": "598 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

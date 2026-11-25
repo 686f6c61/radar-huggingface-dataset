@@ -5,7 +5,7 @@
   "author": "sag-uniroma2",
   "url": "https://huggingface.co/sag-uniroma2/FrameLlama-3.1-8B-Instruct-FN17-Italian",
   "created_at": "2026-11-21T10:09:31.000Z",
-  "updated_at": "2026-11-22T10:37:19.000Z",
+  "updated_at": "2026-11-25T11:57:51.000Z",
   "license": "llama3.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

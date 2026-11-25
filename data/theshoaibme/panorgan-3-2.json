@@ -5,7 +5,7 @@
   "author": "theshoaibme",
   "url": "https://huggingface.co/theshoaibme/PanOrgan-3.2",
   "created_at": "2026-11-24T04:51:21.000Z",
-  "updated_at": "2026-11-24T04:53:52.000Z",
+  "updated_at": "2026-11-25T08:04:22.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

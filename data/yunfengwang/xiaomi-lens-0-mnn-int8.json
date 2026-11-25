@@ -20,8 +20,8 @@
     "on-device",
     "int8",
     "image-text-to-text",
-    "base_model:SeerRay-Lab/Xiaomi-Lens-0",
-    "base_model:finetune:SeerRay-Lab/Xiaomi-Lens-0",
+    "base_model:xiaomi-research/xiaomi-lens-0",
+    "base_model:finetune:xiaomi-research/xiaomi-lens-0",
     "license:apache-2.0",
     "region:us"
   ],

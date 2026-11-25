@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "artush-habetyan/transcriptsmith",
+  "slug": "artush-habetyan-transcriptsmith",
+  "author": "artush-habetyan",
+  "url": "https://huggingface.co/artush-habetyan/transcriptsmith",
+  "created_at": "2026-11-25T16:01:09.000Z",
+  "updated_at": "2026-11-25T16:01:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "pointer-generator",
+    "asr",
+    "punctuation-restoration",
+    "inverse-text-normalization",
+    "en",
+    "base_model:google/flan-t5-xl",
+    "base_model:adapter:google/flan-t5-xl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 829836358,
+  "storage_human": "830 MB",
+  "context_length": null,
+  "base_model": "google/flan-t5-xl",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "wallawalla47",
   "url": "https://huggingface.co/wallawalla47/Swift-Qwen3.8-27B-NVFP4-NInferV3",
   "created_at": "2026-10-11T22:27:46.000Z",
-  "updated_at": "2026-10-31T18:44:58.000Z",
+  "updated_at": "2026-11-25T01:07:47.000Z",
   "license": "swift-open-license-1.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -44,7 +44,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 736,
+  "downloads_30d": 735,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -1,0 +1,72 @@
+{
+  "schema": 2,
+  "id": "richardyoung/Mistral-7B-Instruct-v0.2-abliterated-obliteratus",
+  "slug": "richardyoung-mistral-7b-instruct-v0-2-abliterated-obliteratus",
+  "author": "richardyoung",
+  "url": "https://huggingface.co/richardyoung/Mistral-7B-Instruct-v0.2-abliterated-obliteratus",
+  "created_at": "2026-03-28T03:16:14.000Z",
+  "updated_at": "2026-11-25T15:31:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "abliteration",
+    "uncensored",
+    "OBLITERATUS",
+    "representation-engineering",
+    "refusal-removal",
+    "conversational",
+    "en",
+    "arxiv:2512.13655",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.2",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.2",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483991395,
+  "storage_human": "14.5 GB",
+  "context_length": null,
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "Attack Success Rate",
+      "value": 15
+    },
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "KL Divergence",
+      "value": 0.4224
+    }
+  ],
+  "sources": []
+}

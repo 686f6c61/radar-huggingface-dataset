@@ -1,0 +1,72 @@
+{
+  "schema": 2,
+  "id": "richardyoung/Llama-3.1-8B-Instruct-abliterated-obliteratus",
+  "slug": "richardyoung-llama-3-1-8b-instruct-abliterated-obliteratus",
+  "author": "richardyoung",
+  "url": "https://huggingface.co/richardyoung/Llama-3.1-8B-Instruct-abliterated-obliteratus",
+  "created_at": "2026-03-28T03:15:06.000Z",
+  "updated_at": "2026-11-25T15:31:46.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "abliteration",
+    "uncensored",
+    "OBLITERATUS",
+    "representation-engineering",
+    "refusal-removal",
+    "conversational",
+    "en",
+    "arxiv:2512.13655",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 645,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766502,
+  "storage_human": "16.1 GB",
+  "context_length": null,
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "Attack Success Rate",
+      "value": 5
+    },
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "KL Divergence",
+      "value": 0.5092
+    }
+  ],
+  "sources": []
+}

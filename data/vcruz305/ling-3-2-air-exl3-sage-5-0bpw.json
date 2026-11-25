@@ -5,7 +5,7 @@
   "author": "vcruz305",
   "url": "https://huggingface.co/vcruz305/Ling-3.2-air-EXL3-SAGE-5.0bpw",
   "created_at": "2026-11-25T01:09:31.000Z",
-  "updated_at": "2026-11-25T02:26:59.000Z",
+  "updated_at": "2026-11-25T04:17:41.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 2,
   "trending_score": 0,
   "parameters": 40910733264,
   "parameters_human": "40.91B",
@@ -49,13 +49,13 @@
     "safetensors"
   ],
   "is_conversational": true,
-  "gated": true,
+  "gated": false,
   "disabled": false,
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "vcruz305/Ling-3.2-Air-SAGE-REXL3-5.01bpw",
+  "renamed_at": "2026-11-25T15:22:08.089Z",
   "benchmarks": [],
   "sources": []
 }

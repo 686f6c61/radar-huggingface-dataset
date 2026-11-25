@@ -5,7 +5,7 @@
   "author": "peasantsmith",
   "url": "https://huggingface.co/peasantsmith/ERNIE-5.5-Flash-Preview-Maya-GGUF",
   "created_at": "2026-11-24T11:40:50.000Z",
-  "updated_at": "2026-11-24T11:40:53.000Z",
+  "updated_at": "2026-11-25T10:53:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -15,9 +15,9 @@
     "zh"
   ],
   "tags": [
+    "gguf",
     "maya",
     "ernie",
-    "gguf",
     "text-generation",
     "en",
     "zh",
@@ -26,13 +26,13 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 11,
+  "likes": 12,
   "downloads_30d": 18,
-  "trending_score": 0,
+  "trending_score": 11,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 76368208096,
+  "storage_human": "76.4 GB",
   "context_length": null,
   "base_model": "baidu/ERNIE-5.5-Flash-Preview",
   "formats": [

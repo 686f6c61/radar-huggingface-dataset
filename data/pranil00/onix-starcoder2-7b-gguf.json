@@ -1,0 +1,76 @@
+{
+  "schema": 2,
+  "id": "pranil00/ONIX-starcoder2-7b-GGUF",
+  "slug": "pranil00-onix-starcoder2-7b-gguf",
+  "author": "pranil00",
+  "url": "https://huggingface.co/pranil00/ONIX-starcoder2-7b-GGUF",
+  "created_at": "2026-11-25T19:34:50.000Z",
+  "updated_at": "2026-11-25T19:35:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "onix",
+    "run-any-model",
+    "quantized",
+    "q5_k_m",
+    "transformer",
+    "text-generation",
+    "device-adaptive",
+    "base_model:bigcode/starcoder2-7b",
+    "base_model:quantized:bigcode/starcoder2-7b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7303174553,
+  "storage_human": "7.3 GB",
+  "context_length": null,
+  "base_model": "bigcode/starcoder2-7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PrunaAI/starcoder2-7b-GGUF-smashed · Hugging Face",
+      "url": "https://huggingface.co/PrunaAI/starcoder2-7b-GGUF-smashed",
+      "snippet": "This repo contains GGUF versions of the bigcode/starcoder2-7b model. Simply make AI models cheaper, smaller, faster, and …Read more"
+    },
+    {
+      "title": "second-state/StarCoder2-7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/second-state/StarCoder2-7B-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Starcoder2 7b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/starcoder2-7b.html",
+      "snippet": "System Requirements 🖥️ CPU6+ cores 💾 RAM5+ GB Mid Range+ compatible Download GGUF Hugging Face"
+    },
+    {
+      "title": "starcoder2-7b Model by BigCode | NVIDIA NIM",
+      "url": "https://build.nvidia.com/bigcode/starcoder2-7b/deploy",
+      "snippet": "Follow the steps below to download and run the NVIDIA NIM inference microservice for this model on your infrastructure of choice."
+    },
+    {
+      "title": "starcoder2-7b Model by BigCode | NVIDIA NIM",
+      "url": "https://build.nvidia.com/bigcode/starcoder2-7b",
+      "snippet": "Please transition to another model to avoid any service interruptions."
+    }
+  ]
+}

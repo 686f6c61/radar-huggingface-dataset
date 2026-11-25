@@ -1,0 +1,57 @@
+{
+  "schema": 2,
+  "id": "TharaniJayaratne/gpt2-reuters-from-scratch-v2",
+  "slug": "tharanijayaratne-gpt2-reuters-from-scratch-v2",
+  "author": "TharaniJayaratne",
+  "url": "https://huggingface.co/TharaniJayaratne/gpt2-reuters-from-scratch-v2",
+  "created_at": "2026-11-25T13:38:12.000Z",
+  "updated_at": "2026-11-25T13:38:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "reuters",
+    "self-supervised",
+    "en",
+    "dataset:ingeniumacademy/reuters_articles",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16537088,
+  "parameters_human": "16.5M",
+  "storage_bytes": 66158721,
+  "storage_human": "66 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sri Lankan TV: Sinhala, Tamil & English on Tvivu",
+      "url": "https://tvivu.com/tv-by-country/sri-lanka",
+      "snippet": "Sri Lanka live television spans Sinhala, Tamil and English channels, from state news to teledrama serials and Buddhist programming …Read more"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "id": "Tonic/drone-detectonic-0.1-code",
+  "slug": "tonic-drone-detectonic-0-1-code",
+  "author": "Tonic",
+  "url": "https://huggingface.co/Tonic/drone-detectonic-0.1-code",
+  "created_at": "2026-11-21T11:21:00.000Z",
+  "updated_at": "2026-11-25T13:43:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "tf-keras",
+  "languages": [],
+  "tags": [
+    "tf-keras",
+    "tflite",
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41644338,
+  "storage_human": "42 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tonic App - France",
+      "url": "https://tonicapp.fr/",
+      "snippet": "Tonic est la plateforme médicale la plus sûre de toute l'Europe. Elle dispose d’un software marqué CE (Classe IIa), qui inclut des …Read more"
+    },
+    {
+      "title": "Tonic Web",
+      "url": "https://web.tonicapp.com/fr",
+      "snippet": "Tonic Web is the desktop version of Tonic App, offering clinical tools, news, games, and a virtual assistant for healthcare professionals."
+    },
+    {
+      "title": "Page d'accueil - Boutique Tonic",
+      "url": "https://boutiquetonic.com/",
+      "snippet": "Automne/hiver 2026. Encore plus de choix dans nos boutiques ! Découvrez nos nouveautés La signature Tonic Découvrez notre …Read more"
+    },
+    {
+      "title": "ToNIC - Toulouse neuro imaging center (Inserm)",
+      "url": "https://tonic.inserm.fr/",
+      "snippet": "Retrouvez ici la programmation des mercredis ToNIC, un ensemble de séminaires ouverts à toute la communauté scientifique. A 13h …Read more"
+    },
+    {
+      "title": "Boutique - Boutique Tonic",
+      "url": "https://boutiquetonic.com/shop/",
+      "snippet": "Boutique Encore plus de choix dans nos boutiques! Notre site ne présente qu’une partie de notre sélection. Découvrez encore plus …Read more"
+    }
+  ]
+}

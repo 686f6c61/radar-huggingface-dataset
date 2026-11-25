@@ -1,0 +1,103 @@
+{
+  "schema": 2,
+  "id": "hwihwalab/aloha-bimanual-toss-catch-model",
+  "slug": "hwihwalab-aloha-bimanual-toss-catch-model",
+  "author": "hwihwalab",
+  "url": "https://huggingface.co/hwihwalab/aloha-bimanual-toss-catch-model",
+  "created_at": "2026-11-25T14:24:47.000Z",
+  "updated_at": "2026-11-25T14:57:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "lerobot",
+    "robotics",
+    "aloha",
+    "bimanual",
+    "bimanual-manipulation",
+    "dual-arm",
+    "14-dof",
+    "mujoco",
+    "mujoco-3",
+    "physical-ai",
+    "embodied-ai",
+    "reinforcement-learning",
+    "ppo",
+    "stable-baselines3",
+    "gymnasium",
+    "dynamic-manipulation",
+    "toss-and-catch",
+    "ballistic-interception",
+    "compliant-control",
+    "active-damping",
+    "telemetry-hud",
+    "60fps-telemetry",
+    "sim-to-real",
+    "domain-randomization",
+    "pytorch",
+    "python",
+    "korean",
+    "한국어",
+    "model-index",
+    "region:us",
+    "en",
+    "ko",
+    "license:mit"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69852194,
+  "storage_human": "70 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Dynamic Bimanual Ballistic Toss and Catch",
+      "dataset": "aloha-bimanual-toss-catch-telemetry",
+      "metric": "Catch Intercept Rate",
+      "value": 100
+    },
+    {
+      "task": "Dynamic Bimanual Ballistic Toss and Catch",
+      "dataset": "aloha-bimanual-toss-catch-telemetry",
+      "metric": "Time to Intercept",
+      "value": 0.59
+    },
+    {
+      "task": "Dynamic Bimanual Ballistic Toss and Catch",
+      "dataset": "aloha-bimanual-toss-catch-telemetry",
+      "metric": "Control Frequency",
+      "value": 50
+    },
+    {
+      "task": "Dynamic Bimanual Ballistic Toss and Catch",
+      "dataset": "aloha-bimanual-toss-catch-telemetry",
+      "metric": "Headless Throughput (Colab)",
+      "value": 12500
+    },
+    {
+      "task": "Dynamic Bimanual Ballistic Toss and Catch",
+      "dataset": "aloha-bimanual-toss-catch-telemetry",
+      "metric": "Torque Smoothness (Jerk)",
+      "value": 0.946
+    }
+  ],
+  "sources": []
+}

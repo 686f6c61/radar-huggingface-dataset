@@ -5,7 +5,7 @@
   "author": "rexmhall09",
   "url": "https://huggingface.co/rexmhall09/kenchi",
   "created_at": "2026-11-24T21:16:37.000Z",
-  "updated_at": "2026-11-24T21:42:41.000Z",
+  "updated_at": "2026-11-24T22:42:37.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 31,
   "trending_score": 0,
   "parameters": 496486362,
   "parameters_human": "496.5M",

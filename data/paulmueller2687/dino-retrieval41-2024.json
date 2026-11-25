@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "Paulmueller2687/dino-retrieval41-2024",
+  "slug": "paulmueller2687-dino-retrieval41-2024",
+  "author": "Paulmueller2687",
+  "url": "https://huggingface.co/Paulmueller2687/dino-retrieval41-2024",
+  "created_at": "2026-11-25T17:50:40.000Z",
+  "updated_at": "2026-11-25T17:50:45.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Why does AI give totally wrong answers with such confidence ... - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/comments/1b0gex7/why_does_ai_give_totally_wrong_answers_with_such/",
+      "snippet": "Feb 26, 2024 · Why does AI give totally wrong answers with such confidence? Does it ever know that it doesn't know something?"
+    }
+  ]
+}

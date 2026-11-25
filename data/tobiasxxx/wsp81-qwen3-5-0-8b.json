@@ -5,7 +5,7 @@
   "author": "tobiasxxx",
   "url": "https://huggingface.co/tobiasxxx/wsp81-qwen3.5-0.8b",
   "created_at": "2026-11-22T14:42:23.000Z",
-  "updated_at": "2026-11-23T14:59:12.000Z",
+  "updated_at": "2026-11-24T07:41:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 46,
+  "downloads_30d": 60,
   "trending_score": 0,
   "parameters": 873438784,
   "parameters_human": "873.4M",
@@ -45,8 +45,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Axonry/wsp81-qwen3.5-0.8b",
+  "renamed_at": "2026-11-25T15:02:15.498Z",
   "benchmarks": [],
   "sources": []
 }

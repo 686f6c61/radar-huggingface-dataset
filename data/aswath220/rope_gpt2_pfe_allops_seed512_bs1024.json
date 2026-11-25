@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "Aswath220/rope_gpt2_pfe_allops_seed512_bs1024",
+  "slug": "aswath220-rope_gpt2_pfe_allops_seed512_bs1024",
+  "author": "Aswath220",
+  "url": "https://huggingface.co/Aswath220/rope_gpt2_pfe_allops_seed512_bs1024",
+  "created_at": "2026-11-22T17:50:37.000Z",
+  "updated_at": "2026-11-25T18:53:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18490075150,
+  "storage_human": "18.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

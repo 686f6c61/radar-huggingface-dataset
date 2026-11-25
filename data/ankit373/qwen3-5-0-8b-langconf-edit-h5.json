@@ -1,0 +1,103 @@
+{
+  "schema": 2,
+  "id": "ankit373/qwen3.5-0.8b-langconf-edit-h5",
+  "slug": "ankit373-qwen3-5-0-8b-langconf-edit-h5",
+  "author": "ankit373",
+  "url": "https://huggingface.co/ankit373/qwen3.5-0.8b-langconf-edit-h5",
+  "created_at": "2026-11-25T08:06:20.000Z",
+  "updated_at": "2026-11-25T09:00:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ar",
+    "de",
+    "es",
+    "fr",
+    "hi",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "pt",
+    "ru",
+    "tr",
+    "vi",
+    "zh"
+  ],
+  "tags": [
+    "qwen3.5",
+    "weight-diff",
+    "model-editing",
+    "language-confusion",
+    "multilingual",
+    "en",
+    "ar",
+    "de",
+    "es",
+    "fr",
+    "hi",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "pt",
+    "ru",
+    "tr",
+    "vi",
+    "zh",
+    "arxiv:2406.20052",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57672824,
+  "storage_human": "58 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crédit Agricole - Banque et assurances",
+      "url": "https://www.credit-agricole.fr/",
+      "snippet": "Découvrez les offres et services du Crédit Agricole : assurance-vie, épargne, placement, retraite, habitation, prévoyance, crédit a la …Read more"
+    },
+    {
+      "title": "Debt and Rating Bank for individual professional | Crédit Agricole",
+      "url": "https://www.credit-agricole.com/en/finance/debt-and-ratings/",
+      "snippet": "Find all the information: credit update, rating, Crédit Agricole S.A. Retail Bonds Issues and Wholesale Bonds Issues"
+    },
+    {
+      "title": "Dette et notations - Crédit Agricole",
+      "url": "https://www.credit-agricole.com/finance/dette-et-notations",
+      "snippet": "Retrouvez toutes les informations : credit update, notation, émissions clientèle Crédit Agricole S.A. et toute les émissions marché"
+    },
+    {
+      "title": "Financial results of Crédit Agricole S.A.|Bank for individuals",
+      "url": "https://www.credit-agricole.com/en/finance/financial-results",
+      "snippet": "Oct 30, 2026 · Find the latest financial results of Crédit Agricole SA and interviews with the Deputy Managing Director in charge of …Read more"
+    },
+    {
+      "title": "Financial publication Bank for individual | Crédit Agricole",
+      "url": "https://www.credit-agricole.com/en/finance/financial-publications",
+      "snippet": "Find the Crédit Agricole S.A. financial results, the Universal Registration Document, the accounts of the Crédit Agricole Group, the …Read more"
+    }
+  ]
+}

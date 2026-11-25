@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "Liquor-06/Ember-2B-base",
+  "slug": "liquor-06-ember-2b-base",
+  "author": "Liquor-06",
+  "url": "https://huggingface.co/Liquor-06/Ember-2B-base",
+  "created_at": "2026-11-25T12:18:31.000Z",
+  "updated_at": "2026-11-25T13:18:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "ember_moe",
+    "moe",
+    "linear-attention",
+    "base-model",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1965192934,
+  "parameters_human": "1.97B",
+  "storage_bytes": 7861101888,
+  "storage_human": "7.9 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

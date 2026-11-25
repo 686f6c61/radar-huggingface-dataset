@@ -1,0 +1,75 @@
+{
+  "schema": 2,
+  "id": "vedssharma/isaac-rl-drone-nav",
+  "slug": "vedssharma-isaac-rl-drone-nav",
+  "author": "vedssharma",
+  "url": "https://huggingface.co/vedssharma/isaac-rl-drone-nav",
+  "created_at": "2026-11-11T18:34:16.000Z",
+  "updated_at": "2026-11-25T18:11:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "reinforcement-learning",
+    "robotics",
+    "quadrotor",
+    "drone",
+    "isaac-lab",
+    "isaac-sim",
+    "depth",
+    "imitation-learning",
+    "dagger",
+    "ppo",
+    "sim-only",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 410429758,
+  "storage_human": "410 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Quadrotor navigation through clutter from depth",
+      "dataset": "Drone-Nav-Depth-v0 held-out maps, level 5 (test seed 1001)",
+      "metric": "Success rate (%), nominal, mean of 3 seeds",
+      "value": 92.9
+    },
+    {
+      "task": "Quadrotor navigation through clutter from depth",
+      "dataset": "Drone-Nav-Depth-v0 held-out maps, level 5 (test seed 1001)",
+      "metric": "Success rate (%), full domain randomization, mean of 3 seeds",
+      "value": 81.9
+    },
+    {
+      "task": "Quadrotor navigation through clutter from depth",
+      "dataset": "Drone-Nav-Depth-v0 held-out maps, level 5 (test seed 1001)",
+      "metric": "Success rate (%), nominal, mean of 3 seeds",
+      "value": 94.5
+    },
+    {
+      "task": "Quadrotor navigation through clutter from depth",
+      "dataset": "Drone-Nav-Depth-v0 held-out maps, level 5 (test seed 1001)",
+      "metric": "Success rate (%), full domain randomization, mean of 3 seeds",
+      "value": 54.2
+    }
+  ],
+  "sources": []
+}

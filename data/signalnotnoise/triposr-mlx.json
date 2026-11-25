@@ -5,7 +5,7 @@
   "author": "signalNotNoise",
   "url": "https://huggingface.co/signalNotNoise/triposr-mlx",
   "created_at": "2026-11-19T20:09:02.000Z",
-  "updated_at": "2026-11-23T09:36:21.000Z",
+  "updated_at": "2026-11-25T08:45:25.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-to-3d",

@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "id": "Kaspar/anti-scraping_best_model_modernbert_sentence",
+  "slug": "kaspar-anti-scraping_best_model_modernbert_sentence",
+  "author": "Kaspar",
+  "url": "https://huggingface.co/Kaspar/anti-scraping_best_model_modernbert_sentence",
+  "created_at": "2026-11-25T16:46:59.000Z",
+  "updated_at": "2026-11-25T16:47:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149606402,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598445113,
+  "storage_human": "598 MB",
+  "context_length": null,
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaspar - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kaspar",
+      "snippet": "Caspar Aquila, sometimes spelled Kaspar, (1488–1560), German theologian and reformer Kaspar or Caspar Barlaeus (1584–1648), …Read more"
+    },
+    {
+      "title": "Kaspar Hauser - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kaspar_Hauser",
+      "snippet": "Kaspar Hauser (30 April 1812 – 17 December 1833) was a German youth who claimed to have grown up in the total isolation of a …Read more"
+    },
+    {
+      "title": "Kaspar — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Kaspar",
+      "snippet": "Prénom Kaspar, prénom masculin équivalent de Gaspard. Pour l'ensemble des articles sur les personnes portant ce prénom, …Read more"
+    },
+    {
+      "title": "Home | Kaspard",
+      "url": "https://kaspard.com/",
+      "snippet": "Discret, non-intrusif et respectueux de la vie privée des résidents, le détecteur de chute Kaspard a été mis au point en collaboration …Read more"
+    }
+  ]
+}

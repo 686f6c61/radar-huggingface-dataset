@@ -5,7 +5,7 @@
   "author": "sukiiluilo",
   "url": "https://huggingface.co/sukiiluilo/ScarletKc-2.0-exl3",
   "created_at": "2026-11-24T13:05:50.000Z",
-  "updated_at": "2026-11-24T16:53:24.000Z",
+  "updated_at": "2026-11-25T04:27:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 14,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

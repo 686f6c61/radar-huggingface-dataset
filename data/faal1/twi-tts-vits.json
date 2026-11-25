@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "Faal1/twi-tts-vits",
+  "slug": "faal1-twi-tts-vits",
+  "author": "Faal1",
+  "url": "https://huggingface.co/Faal1/twi-tts-vits",
+  "created_at": "2026-11-25T13:39:15.000Z",
+  "updated_at": "2026-11-25T13:39:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "tw"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vits",
+    "twi",
+    "akan",
+    "ghana",
+    "text-to-speech",
+    "tw",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 83014326,
+  "parameters_human": "83.0M",
+  "storage_bytes": 332159176,
+  "storage_human": "332 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

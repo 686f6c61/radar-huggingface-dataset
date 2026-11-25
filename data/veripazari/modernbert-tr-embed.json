@@ -1,0 +1,217 @@
+{
+  "schema": 2,
+  "id": "veripazari/modernbert-tr-embed",
+  "slug": "veripazari-modernbert-tr-embed",
+  "author": "veripazari",
+  "url": "https://huggingface.co/veripazari/modernbert-tr-embed",
+  "created_at": "2026-11-25T19:07:40.000Z",
+  "updated_at": "2026-11-25T19:19:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "sentence-similarity",
+    "feature-extraction",
+    "mteb",
+    "encoderfile",
+    "tr",
+    "arxiv:2412.19048",
+    "arxiv:1807.03748",
+    "arxiv:2004.11362",
+    "base_model:ytu-ce-cosmos/modernbert-tr-base",
+    "base_model:quantized:ytu-ce-cosmos/modernbert-tr-base",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 148737792,
+  "parameters_human": "148.7M",
+  "storage_bytes": 1638107146,
+  "storage_human": "1.6 GB",
+  "context_length": null,
+  "base_model": "ytu-ce-cosmos/modernbert-tr-base",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "ArguAnaTR",
+      "dataset": "MTEB ArguAnaTR",
+      "metric": null,
+      "value": 50.01
+    },
+    {
+      "task": "CQADupstackGamingRetrievalTR",
+      "dataset": "MTEB CQADupstackGamingRetrievalTR",
+      "metric": null,
+      "value": 56.37
+    },
+    {
+      "task": "FiQA2018TR",
+      "dataset": "MTEB FiQA2018TR",
+      "metric": null,
+      "value": 46.2
+    },
+    {
+      "task": "MSMarcoTRRetrieval",
+      "dataset": "MTEB MSMarcoTRRetrieval",
+      "metric": null,
+      "value": 57.87
+    },
+    {
+      "task": "MnliTr",
+      "dataset": "MTEB MnliTr",
+      "metric": null,
+      "value": 65.92
+    },
+    {
+      "task": "NFCorpusTR",
+      "dataset": "MTEB NFCorpusTR",
+      "metric": null,
+      "value": 9.47
+    },
+    {
+      "task": "QuoraRetrievalTR",
+      "dataset": "MTEB QuoraRetrievalTR",
+      "metric": null,
+      "value": 95.18
+    },
+    {
+      "task": "SCIDOCSTR",
+      "dataset": "MTEB SCIDOCSTR",
+      "metric": null,
+      "value": 3.37
+    },
+    {
+      "task": "STSbTR",
+      "dataset": "MTEB STSbTR",
+      "metric": null,
+      "value": 77.62
+    },
+    {
+      "task": "SciFactTR",
+      "dataset": "MTEB SciFactTR",
+      "metric": null,
+      "value": 77.06
+    },
+    {
+      "task": "SnliTr",
+      "dataset": "MTEB SnliTr",
+      "metric": null,
+      "value": 67.29
+    },
+    {
+      "task": "SquadTRRetrieval",
+      "dataset": "MTEB SquadTRRetrieval",
+      "metric": null,
+      "value": 75.93
+    },
+    {
+      "task": "THYSentimentClassification",
+      "dataset": "MTEB THYSentimentClassification",
+      "metric": null,
+      "value": 68.14
+    },
+    {
+      "task": "TQuadRetrieval",
+      "dataset": "MTEB TQuadRetrieval",
+      "metric": null,
+      "value": 87.14
+    },
+    {
+      "task": "TSTimelineNewsCategoryClassification",
+      "dataset": "MTEB TSTimelineNewsCategoryClassification",
+      "metric": null,
+      "value": 67.91
+    },
+    {
+      "task": "Turkish75NewsClassification",
+      "dataset": "MTEB Turkish75NewsClassification",
+      "metric": null,
+      "value": 93.33
+    },
+    {
+      "task": "TurkishAbstractCorpusClustering",
+      "dataset": "MTEB TurkishAbstractCorpusClustering",
+      "metric": null,
+      "value": 62.22
+    },
+    {
+      "task": "TurkishColumnWritingClustering",
+      "dataset": "MTEB TurkishColumnWritingClustering",
+      "metric": null,
+      "value": 64.42
+    },
+    {
+      "task": "TurkishIronyClassification",
+      "dataset": "MTEB TurkishIronyClassification",
+      "metric": null,
+      "value": 57.67
+    },
+    {
+      "task": "TurkishMovieSentimentClassification",
+      "dataset": "MTEB TurkishMovieSentimentClassification",
+      "metric": null,
+      "value": 89.34
+    },
+    {
+      "task": "TurkishNewsCategoryClassification",
+      "dataset": "MTEB TurkishNewsCategoryClassification",
+      "metric": null,
+      "value": 93.64
+    },
+    {
+      "task": "TurkishOffensiveLanguageClassification",
+      "dataset": "MTEB TurkishOffensiveLanguageClassification",
+      "metric": null,
+      "value": 71.51
+    },
+    {
+      "task": "TurkishProductSentimentClassification",
+      "dataset": "MTEB TurkishProductSentimentClassification",
+      "metric": null,
+      "value": 70.51
+    },
+    {
+      "task": "WMT16BitextMining",
+      "dataset": "MTEB WMT16BitextMining",
+      "metric": null,
+      "value": 94.09
+    },
+    {
+      "task": "XNLI",
+      "dataset": "MTEB XNLI",
+      "metric": null,
+      "value": 74.44
+    },
+    {
+      "task": "XQuADRetrieval",
+      "dataset": "MTEB XQuADRetrieval",
+      "metric": null,
+      "value": 95.03
+    }
+  ],
+  "sources": []
+}

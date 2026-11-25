@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "oncody/Pratham-117M",
+  "slug": "oncody-pratham-117m",
+  "author": "oncody",
+  "url": "https://huggingface.co/oncody/Pratham-117M",
+  "created_at": "2026-11-25T13:45:05.000Z",
+  "updated_at": "2026-11-25T13:48:12.000Z",
+  "license": "cc-by-sa-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "text-generation",
+    "from-scratch",
+    "experimental",
+    "en",
+    "license:cc-by-sa-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 116534784,
+  "parameters_human": "116.5M",
+  "storage_bytes": 614331112,
+  "storage_human": "614 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

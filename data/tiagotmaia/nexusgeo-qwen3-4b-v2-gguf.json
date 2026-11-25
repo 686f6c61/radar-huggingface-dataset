@@ -1,0 +1,74 @@
+{
+  "schema": 2,
+  "id": "tiagotmaia/nexusgeo-qwen3-4b-v2-GGUF",
+  "slug": "tiagotmaia-nexusgeo-qwen3-4b-v2-gguf",
+  "author": "tiagotmaia",
+  "url": "https://huggingface.co/tiagotmaia/nexusgeo-qwen3-4b-v2-GGUF",
+  "created_at": "2026-11-25T18:35:04.000Z",
+  "updated_at": "2026-11-25T19:10:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "qlora",
+    "geoscience",
+    "geology",
+    "structured-output",
+    "json",
+    "ollama",
+    "llama.cpp",
+    "nexusgeo",
+    "text-generation",
+    "en",
+    "pt",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:quantized:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2497280608,
+  "storage_human": "2.5 GB",
+  "context_length": 40960,
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Geoscientific Workflow Routing & Structured Extraction",
+      "dataset": "NexusGeoIA Behavior Benchmark v2",
+      "metric": "JSON Schema Conformance (%)",
+      "value": 100
+    },
+    {
+      "task": "Geoscientific Workflow Routing & Structured Extraction",
+      "dataset": "NexusGeoIA Behavior Benchmark v2",
+      "metric": "Label / Schema Accuracy (%)",
+      "value": 62
+    }
+  ],
+  "sources": []
+}

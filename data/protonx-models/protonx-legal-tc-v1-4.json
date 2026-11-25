@@ -5,7 +5,7 @@
   "author": "protonx-models",
   "url": "https://huggingface.co/protonx-models/protonx-legal-tc-v1.4",
   "created_at": "2026-11-25T04:00:17.000Z",
-  "updated_at": "2026-11-25T05:07:39.000Z",
+  "updated_at": "2026-11-25T09:12:02.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -44,8 +44,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "protonx-models/protonx-tc-v1.4",
+  "renamed_at": "2026-11-25T13:47:25.442Z",
   "benchmarks": [],
   "sources": []
 }

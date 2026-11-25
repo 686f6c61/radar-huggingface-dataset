@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "LaferriereJC/minimind3-64m-scratch",
+  "slug": "laferrierejc-minimind3-64m-scratch",
+  "author": "LaferriereJC",
+  "url": "https://huggingface.co/LaferriereJC/minimind3-64m-scratch",
+  "created_at": "2026-11-25T15:16:42.000Z",
+  "updated_at": "2026-11-25T15:27:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "minimind",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 63912192,
+  "parameters_human": "63.9M",
+  "storage_bytes": 255658640,
+  "storage_human": "256 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

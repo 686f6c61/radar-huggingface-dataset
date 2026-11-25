@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "aman4014/whisper-large-v3-turbo-german-allrounder-v3",
+  "slug": "aman4014-whisper-large-v3-turbo-german-allrounder-v3",
+  "author": "aman4014",
+  "url": "https://huggingface.co/aman4014/whisper-large-v3-turbo-german-allrounder-v3",
+  "created_at": "2026-11-25T18:27:36.000Z",
+  "updated_at": "2026-11-25T18:28:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "speech-to-text",
+    "automatic-speech-recognition",
+    "speech-translation",
+    "de",
+    "en",
+    "base_model:primeline/whisper-large-v3-turbo-german",
+    "base_model:finetune:primeline/whisper-large-v3-turbo-german",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 808879360,
+  "parameters_human": "808.9M",
+  "storage_bytes": 3235592561,
+  "storage_human": "3.2 GB",
+  "context_length": null,
+  "base_model": "primeline/whisper-large-v3-turbo-german",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

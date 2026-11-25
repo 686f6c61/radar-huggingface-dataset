@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "dminhnhat06/safevichi_v2",
+  "slug": "dminhnhat06-safevichi_v2",
+  "author": "dminhnhat06",
+  "url": "https://huggingface.co/dminhnhat06/safevichi_v2",
+  "created_at": "2026-11-25T18:20:38.000Z",
+  "updated_at": "2026-11-25T18:24:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "onnx",
+    "vietnamese",
+    "content-moderation",
+    "hate-speech-detection",
+    "toxicity",
+    "int8",
+    "safevichi",
+    "text-classification",
+    "vi",
+    "base_model:jhu-clsp/mmBERT-base",
+    "base_model:quantized:jhu-clsp/mmBERT-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2818672770,
+  "storage_human": "2.8 GB",
+  "context_length": null,
+  "base_model": "jhu-clsp/mmBERT-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

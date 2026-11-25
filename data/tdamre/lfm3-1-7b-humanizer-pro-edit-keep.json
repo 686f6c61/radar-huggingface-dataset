@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "Tdamre/LFM3-1.7B-Humanizer-Pro-Edit-Keep",
+  "slug": "tdamre-lfm3-1-7b-humanizer-pro-edit-keep",
+  "author": "Tdamre",
+  "url": "https://huggingface.co/Tdamre/LFM3-1.7B-Humanizer-Pro-Edit-Keep",
+  "created_at": "2026-11-25T16:00:45.000Z",
+  "updated_at": "2026-11-25T16:13:03.000Z",
+  "license": "lfm-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lfm3",
+    "lora",
+    "text-editing",
+    "text-generation",
+    "en",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:adapter:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24781056,
+  "storage_human": "25 MB",
+  "context_length": null,
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

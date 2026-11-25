@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "id": "ahmedselhady/XSDPO-Nemotron-1.5B-500x5-lr3e-6-kl0.001-reasoning-ref10752-k512-gs-en_only-step-100",
+  "slug": "ahmedselhady-xsdpo-nemotron-1-5b-500x5-lr3e-6-kl0-001-reasoning-ref10752-k512-gs-en_only-step-100",
+  "author": "ahmedselhady",
+  "url": "https://huggingface.co/ahmedselhady/XSDPO-Nemotron-1.5B-500x5-lr3e-6-kl0.001-reasoning-ref10752-k512-gs-en_only-step-100",
+  "created_at": "2026-11-25T13:04:54.000Z",
+  "updated_at": "2026-11-25T13:05:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "base_model:nvidia/Nemotron-Research-Reasoning-Qwen-1.5B",
+    "base_model:finetune:nvidia/Nemotron-Research-Reasoning-Qwen-1.5B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3565637530,
+  "storage_human": "3.6 GB",
+  "context_length": null,
+  "base_model": "nvidia/Nemotron-Research-Reasoning-Qwen-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How To Use The SQL Developer Export Connections With Passwords …",
+      "url": "https://www.databasestar.com/sql-developer-export-connections/",
+      "snippet": "Aug 13, 2015 · In short, to export connections in SQL Developer, the steps are: Open SQL Developer. Right click on the Connections …"
+    },
+    {
+      "title": "How to Backup and Import Connection Details in Oracle SQL Developer ...",
+      "url": "https://www.tutorialpedia.org/blog/how-to-take-a-backup-for-the-connection-details-in-sqldeveloper/",
+      "snippet": "Jul 26, 2026 · Follow these steps to export connections to a portable file: Open SQL Developer and ensure the Connections …"
+    },
+    {
+      "title": "How to Export and Import Database Connections in Oracle SQL Developer ...",
+      "url": "https://www.youtube.com/watch?v=EPzf6oEUGyY",
+      "snippet": "Jul 19, 2024 · This guide covers step-by-step instructions on how to export your existing database connections to a file, allowing you …"
+    }
+  ]
+}

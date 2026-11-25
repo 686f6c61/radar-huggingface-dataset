@@ -1,0 +1,46 @@
+{
+  "schema": 2,
+  "id": "horongbul/yame-ai-studio",
+  "slug": "horongbul-yame-ai-studio",
+  "author": "horongbul",
+  "url": "https://huggingface.co/horongbul/yame-ai-studio",
+  "created_at": "2026-11-25T13:58:38.000Z",
+  "updated_at": "2026-11-25T14:01:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "yame-editor",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34277265757,
+  "storage_human": "34.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BBC - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BBC",
+      "snippet": "Some of the BBC's revenue comes from its commercial subsidiary BBC Studios (formerly BBC Worldwide), which sells BBC …Read more"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "vanshnawander/sapc2-streaming-asr-models",
+  "slug": "vanshnawander-sapc2-streaming-asr-models",
+  "author": "vanshnawander",
+  "url": "https://huggingface.co/vanshnawander/sapc2-streaming-asr-models",
+  "created_at": "2026-11-21T04:20:07.000Z",
+  "updated_at": "2026-11-25T13:40:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "nemo",
+  "languages": [],
+  "tags": [
+    "nemo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 966,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149704775537,
+  "storage_human": "149.7 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix France - Regardez des séries TV en ligne, Regardez ...",
+      "url": "https://www.netflix.com/fr",
+      "snippet": "Netflix est un service de streaming qui propose une vaste sélection de séries TV, films, animes, documentaires et autres …"
+    },
+    {
+      "title": "Netflix",
+      "url": "https://www.netflix.com/es/login",
+      "snippet": "Disfruta de Netflix, películas y series en streaming en tu smart TV, consola, PC, Mac, móvil, tableta y más dispositivos."
+    }
+  ]
+}

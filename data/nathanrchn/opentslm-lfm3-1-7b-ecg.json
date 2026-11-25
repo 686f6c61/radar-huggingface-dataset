@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "nathanrchn/OpenTSLM-LFM3-1.7B-ECG",
+  "slug": "nathanrchn-opentslm-lfm3-1-7b-ecg",
+  "author": "nathanrchn",
+  "url": "https://huggingface.co/nathanrchn/OpenTSLM-LFM3-1.7B-ECG",
+  "created_at": "2026-11-25T14:04:19.000Z",
+  "updated_at": "2026-11-25T14:05:41.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "opentslm",
+    "time-series",
+    "ecg",
+    "medical",
+    "lfm3",
+    "chronos-2",
+    "en",
+    "base_model:LiquidAI/LFM3-1.7B-Base",
+    "base_model:finetune:LiquidAI/LFM3-1.7B-Base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3966078282,
+  "storage_human": "4.0 GB",
+  "context_length": null,
+  "base_model": "LiquidAI/LFM3-1.7B-Base, amazon/chronos-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

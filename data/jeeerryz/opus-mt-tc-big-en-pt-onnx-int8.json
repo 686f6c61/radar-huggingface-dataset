@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "JeeerryZ/opus-mt-tc-big-en-pt-onnx-int8",
+  "slug": "jeeerryz-opus-mt-tc-big-en-pt-onnx-int8",
+  "author": "JeeerryZ",
+  "url": "https://huggingface.co/JeeerryZ/opus-mt-tc-big-en-pt-onnx-int8",
+  "created_at": "2026-11-25T13:59:39.000Z",
+  "updated_at": "2026-11-25T13:59:56.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "tags": [
+    "onnx",
+    "marian",
+    "translation",
+    "opus-mt",
+    "en",
+    "pt",
+    "base_model:Helsinki-NLP/opus-mt-tc-big-en-pt",
+    "base_model:quantized:Helsinki-NLP/opus-mt-tc-big-en-pt",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 236243228,
+  "storage_human": "236 MB",
+  "context_length": null,
+  "base_model": "Helsinki-NLP/opus-mt-tc-big-en-pt",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

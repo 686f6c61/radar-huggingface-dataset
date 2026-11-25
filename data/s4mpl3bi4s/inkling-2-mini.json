@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "S4MPL3BI4S/inkling-2-mini",
+  "slug": "s4mpl3bi4s-inkling-2-mini",
+  "author": "S4MPL3BI4S",
+  "url": "https://huggingface.co/S4MPL3BI4S/inkling-2-mini",
+  "created_at": "2026-11-25T18:11:32.000Z",
+  "updated_at": "2026-11-25T18:11:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:unsloth/Inkling-2-Mini",
+    "base_model:finetune:unsloth/Inkling-2-Mini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": "unsloth/Inkling-2-Mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

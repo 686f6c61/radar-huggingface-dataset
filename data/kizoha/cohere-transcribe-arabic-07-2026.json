@@ -1,0 +1,71 @@
+{
+  "schema": 2,
+  "id": "kizoha/cohere-transcribe-arabic-07-2026",
+  "slug": "kizoha-cohere-transcribe-arabic-07-2026",
+  "author": "kizoha",
+  "url": "https://huggingface.co/kizoha/cohere-transcribe-arabic-07-2026",
+  "created_at": "2026-11-25T17:26:50.000Z",
+  "updated_at": "2026-11-25T17:27:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cohere_asr",
+    "automatic-speech-recognition",
+    "audio",
+    "speech-recognition",
+    "transcription",
+    "arabic",
+    "asr",
+    "arabic-asr",
+    "arabic-dialect",
+    "arabic-speech-recognition",
+    "ar",
+    "en",
+    "base_model:CohereLabs/cohere-transcribe-03-2026",
+    "base_model:finetune:CohereLabs/cohere-transcribe-03-2026",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2065804048,
+  "parameters_human": "2.07B",
+  "storage_bytes": 4132742875,
+  "storage_human": "4.1 GB",
+  "context_length": null,
+  "base_model": "CohereLabs/cohere-transcribe-03-2026",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - microsoft/sample-app-aoai-chatGPT: Sample code for a …",
+      "url": "https://github.com/microsoft/sample-app-aoai-chatGPT",
+      "snippet": "Oct 14, 2026 · Sample code for a simple web chat experience through Azure OpenAI, including Azure OpenAI On Your Data. - …"
+    },
+    {
+      "title": "Unable to resolve chat model with family selection: gpt-4.1",
+      "url": "https://github.com/microsoft/vscode/issues/287081",
+      "snippet": "Jan 12, 2026 · Unable to resolve chat model with family selection: gpt-4.1 #287081 Closed Hein Meling (meling) opened on Jan 12"
+    }
+  ]
+}

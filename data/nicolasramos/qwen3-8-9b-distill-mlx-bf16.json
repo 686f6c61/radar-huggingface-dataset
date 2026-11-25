@@ -23,8 +23,8 @@
     "base_model:finetune:empero-ai/Qwen3.8-9B-Distill",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 135,
+  "likes": 1,
+  "downloads_30d": 156,
   "trending_score": 0,
   "parameters": 8953801728,
   "parameters_human": "8.95B",

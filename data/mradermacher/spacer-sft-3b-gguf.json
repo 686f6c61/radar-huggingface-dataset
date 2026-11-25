@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/SpaceR-SFT-3B-GGUF",
+  "slug": "mradermacher-spacer-sft-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SpaceR-SFT-3B-GGUF",
+  "created_at": "2025-06-05T09:28:44.000Z",
+  "updated_at": "2026-11-25T17:23:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:RUBBISHLIKE/SpaceR-SFT-3B",
+    "base_model:quantized:RUBBISHLIKE/SpaceR-SFT-3B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 60,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 32778680960,
+  "storage_human": "32.8 GB",
+  "context_length": 128000,
+  "base_model": "RUBBISHLIKE/SpaceR-SFT-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

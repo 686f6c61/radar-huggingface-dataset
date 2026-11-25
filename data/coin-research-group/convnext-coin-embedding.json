@@ -1,0 +1,73 @@
+{
+  "schema": 2,
+  "id": "COIN-Research-Group/convnext-coin-embedding",
+  "slug": "coin-research-group-convnext-coin-embedding",
+  "author": "COIN-Research-Group",
+  "url": "https://huggingface.co/COIN-Research-Group/convnext-coin-embedding",
+  "created_at": "2026-11-23T03:29:11.000Z",
+  "updated_at": "2026-11-25T14:42:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "convnext_truncated_coin_embedding",
+    "image-retrieval",
+    "image-similarity",
+    "coin-identification",
+    "numismatics",
+    "metric-learning",
+    "convnext",
+    "image-feature-extraction",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62359642,
+  "storage_human": "62 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leboncoin",
+      "url": "https://www.leboncoin.fr/",
+      "snippet": "Avec leboncoin, trouvez la bonne affaire, réalisez la bonne vente pour votre voiture, immobilier, emploi, location de vacances, …"
+    },
+    {
+      "title": "Cryptocurrency Prices, Charts And Market Capitalizations",
+      "url": "https://coinmarketcap.com/",
+      "snippet": "Each of our coin data pages has a graph that shows both the current and historic price information for the coin or token. Normally, …"
+    },
+    {
+      "title": "leboncoin, site de petites annonces gratuites",
+      "url": "https://www.leboncoin.fr/favorites",
+      "snippet": "Accédez à vos annonces favorites sur leboncoin et gérez-les facilement."
+    },
+    {
+      "title": "Cryptocurrency Prices, Charts, and Crypto Market Cap | Coingecko",
+      "url": "https://www.coingecko.com/",
+      "snippet": "The list of cryptocurrencies featured above are ranked by market cap, an accurate and real-time representation of the market …"
+    },
+    {
+      "title": "Coin - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Coin",
+      "snippet": "By replacing some fraction of a coin's precious metal content with a base metal (often copper or nickel), the intrinsic value of each …"
+    }
+  ]
+}

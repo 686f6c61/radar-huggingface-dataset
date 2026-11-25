@@ -5,7 +5,7 @@
   "author": "ryuuu7",
   "url": "https://huggingface.co/ryuuu7/Iban_Morphological_Analyzer",
   "created_at": "2026-06-30T01:59:24.000Z",
-  "updated_at": "2026-11-18T03:15:56.000Z",
+  "updated_at": "2026-11-18T03:36:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 4,
   "trending_score": 0,
   "parameters": 299637760,
   "parameters_human": "299.6M",

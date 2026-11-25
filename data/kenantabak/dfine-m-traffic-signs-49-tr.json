@@ -1,0 +1,63 @@
+{
+  "schema": 2,
+  "id": "kenantabak/dfine-m-traffic-signs-49-tr",
+  "slug": "kenantabak-dfine-m-traffic-signs-49-tr",
+  "author": "kenantabak",
+  "url": "https://huggingface.co/kenantabak/dfine-m-traffic-signs-49-tr",
+  "created_at": "2026-11-25T15:05:31.000Z",
+  "updated_at": "2026-11-25T15:05:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "object-detection",
+    "d-fine",
+    "detr",
+    "nms-free",
+    "traffic-signs",
+    "autonomous-driving",
+    "computer-vision",
+    "evren",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 394273874,
+  "storage_human": "394 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "mAP@50",
+      "value": 84.32
+    },
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "mAP@50-95",
+      "value": 71.5
+    }
+  ],
+  "sources": []
+}

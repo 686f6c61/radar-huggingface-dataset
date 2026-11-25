@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "Csyxx/MolToken",
+  "slug": "csyxx-moltoken",
+  "author": "Csyxx",
+  "url": "https://huggingface.co/Csyxx/MolToken",
+  "created_at": "2026-11-25T12:54:46.000Z",
+  "updated_at": "2026-11-25T12:54:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7988566168,
+  "storage_human": "8.0 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

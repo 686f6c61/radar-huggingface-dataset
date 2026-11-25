@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "davnozdubv/sage-ru-dictation-onnx",
+  "slug": "davnozdubv-sage-ru-dictation-onnx",
+  "author": "davnozdubv",
+  "url": "https://huggingface.co/davnozdubv/sage-ru-dictation-onnx",
+  "created_at": "2026-11-25T15:12:19.000Z",
+  "updated_at": "2026-11-25T15:12:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "onnx",
+    "t5",
+    "int8",
+    "russian",
+    "punctuation",
+    "spell-correction",
+    "asr-postprocessing",
+    "fred-t5",
+    "ru",
+    "base_model:ai-forever/sage-fredt5-distilled-95m",
+    "base_model:quantized:ai-forever/sage-fredt5-distilled-95m",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 199701697,
+  "storage_human": "200 MB",
+  "context_length": null,
+  "base_model": "ai-forever/sage-fredt5-distilled-95m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

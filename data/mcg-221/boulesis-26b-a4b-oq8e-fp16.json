@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "McG-221/Boulesis-26B-A4B-oQ8e-fp16",
+  "slug": "mcg-221-boulesis-26b-a4b-oq8e-fp16",
+  "author": "McG-221",
+  "url": "https://huggingface.co/McG-221/Boulesis-26B-A4B-oQ8e-fp16",
+  "created_at": "2026-11-25T14:27:37.000Z",
+  "updated_at": "2026-11-25T15:02:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7077828184,
+  "storage_human": "7.1 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

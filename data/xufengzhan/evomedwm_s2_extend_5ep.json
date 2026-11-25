@@ -5,13 +5,14 @@
   "author": "xufengzhan",
   "url": "https://huggingface.co/xufengzhan/evomedwm_s2_extend_5ep",
   "created_at": "2026-11-24T06:49:29.000Z",
-  "updated_at": "2026-11-24T06:49:29.000Z",
+  "updated_at": "2026-11-24T06:55:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "safetensors",
     "license:apache-2.0",
     "region:us"
   ],
@@ -20,11 +21,13 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 6994710473,
+  "storage_human": "7.0 GB",
   "context_length": null,
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": true,
   "disabled": false,
