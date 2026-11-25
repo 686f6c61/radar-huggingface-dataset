@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "empiriolabsai/aplomb-2",
+  "slug": "empiriolabsai-aplomb-2",
+  "author": "empiriolabsai",
+  "url": "https://huggingface.co/empiriolabsai/aplomb-2",
+  "created_at": "2026-11-21T00:54:47.000Z",
+  "updated_at": "2026-11-25T04:56:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "decision-model",
+    "classification",
+    "tool-selection",
+    "text-classification",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 92,
+  "trending_score": 0,
+  "parameters": 4539429376,
+  "parameters_human": "4.54B",
+  "storage_bytes": 28710763508,
+  "storage_human": "28.7 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

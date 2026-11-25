@@ -1,0 +1,100 @@
+{
+  "schema": 2,
+  "id": "loom-ai-org/plamo-3-translate-0.8b-loom",
+  "slug": "loom-ai-org-plamo-3-translate-0-8b-loom",
+  "author": "loom-ai-org",
+  "url": "https://huggingface.co/loom-ai-org/plamo-3-translate-0.8b-loom",
+  "created_at": "2026-11-22T20:13:47.000Z",
+  "updated_at": "2026-11-22T21:05:19.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "loom-py-rt",
+  "languages": [
+    "ja",
+    "en",
+    "zh",
+    "ko",
+    "fr",
+    "de",
+    "es",
+    "ru",
+    "ar",
+    "hi",
+    "vi",
+    "th",
+    "id"
+  ],
+  "tags": [
+    "loom-py-rt",
+    "gguf",
+    "loom",
+    "text-generation",
+    "translation",
+    "ja",
+    "en",
+    "zh",
+    "ko",
+    "fr",
+    "de",
+    "es",
+    "ru",
+    "ar",
+    "hi",
+    "vi",
+    "th",
+    "id",
+    "base_model:pfnet/plamo-3-translate-0.8b",
+    "base_model:quantized:pfnet/plamo-3-translate-0.8b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 53,
+  "trending_score": 0,
+  "parameters": 890345090,
+  "parameters_human": "890.3M",
+  "storage_bytes": 3563743392,
+  "storage_human": "3.6 GB",
+  "context_length": null,
+  "base_model": "pfnet/plamo-3-translate-0.8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free screen recorder for Mac and PC | Loom",
+      "url": "https://www.loom.com/",
+      "snippet": "So much more than a screen recorder Edit your videos like a pro Loom’s intuitive editor lets you trim, stitch clips, add eye-catching …Read more"
+    },
+    {
+      "title": "Log in to Loom | Loom",
+      "url": "https://www.loom.com/login",
+      "snippet": "Use Loom to record quick videos of your screen and cam. Explain anything clearly and easily – and skip the meeting. An essential …Read more"
+    },
+    {
+      "title": "Vêtements Homme · Loom",
+      "url": "https://www.loom.fr/fr-fr/collections/vestiaire-homme",
+      "snippet": "Vêtements homme de qualité, fabriqués au Portugal et en France."
+    },
+    {
+      "title": "Moins mais mieux · Loom",
+      "url": "https://www.loom.fr/",
+      "snippet": "Venir en boutique Faire un retour Entretenir ses vêtements Travailler chez Loom Contact & FAQ"
+    },
+    {
+      "title": "Loom",
+      "url": "https://app.loom.ag/login",
+      "snippet": "Experienced an error on Google sign-in. Try again. Email"
+    }
+  ]
+}

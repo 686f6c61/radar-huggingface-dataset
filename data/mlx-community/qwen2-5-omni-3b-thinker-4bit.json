@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 280,
+  "downloads_30d": 277,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -42,31 +42,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qwen2.5 - a mlx-community Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/mlx-community/qwen25",
-      "snippet": "The Qwen 2.5 models are a series of AI models trained on 18 trillion tokens, supporting 29 languages and offering advanced features such as instructio"
-    },
-    {
-      "title": "GitHub - QwenLM/Qwen2.5-Omni: Qwen2.5-Omni is an end-to-end multimodal ...",
-      "url": "https://github.com/QwenLM/Qwen2.5-Omni",
-      "snippet": "We release Qwen2.5-Omni, the new flagship end-to-end multimodal model in the Qwen series. Designed for comprehensive multimodal perception, it seamlessly processes diverse inputs including text, images, audio, and video, while delivering real-time streaming responses through both text generation and natural speech synthesis."
-    },
-    {
-      "title": "mlx-community/Qwen2.5-3B-4bit · Hugging Face",
-      "url": "https://huggingface.co/mlx-community/Qwen2.5-3B-4bit",
-      "snippet": "The Qwen 2.5 models are a series of AI models trained on 18 trillion tokens, supporting 29 languages and offering advanced features such as instructio • 33 items • Updated about 3 hours ago • 1"
-    },
-    {
-      "title": "Qwen2.5-Omni/README.md at main · QwenLM/Qwen2.5-Omni · GitHub",
-      "url": "https://github.com/QwenLM/Qwen2.5-Omni/blob/main/README.md",
-      "snippet": "We release Qwen2.5-Omni, the new flagship end-to-end multimodal model in the Qwen series. Designed for comprehensive multimodal perception, it seamlessly processes diverse inputs including text, images, audio, and video, while delivering real-time streaming responses through both text generation and natural speech synthesis."
-    },
-    {
-      "title": "Qwen2.5-Omni - openlm.ai",
-      "url": "https://openlm.ai/qwen2.5-omni/",
-      "snippet": "We release Qwen2.5-Omni, the new flagship end-to-end multimodal model in the Qwen series. Designed for comprehensive multimodal perception, it seamlessly processes diverse inputs including text, images, audio, and video, while delivering real-time streaming responses through both text generation and natural speech synthesis."
-    }
-  ]
+  "sources": []
 }

@@ -1,103 +1,92 @@
 # Pandoks/RED-SNOW-5.3-Flash-NVFP4-noloop
 
 ## Resumen
+RED-SNOW-5.3-Flash-NVFP4-noloop es un ajuste fino (finetune) del modelo Blackfrost-AI/RED-SNOW-5.3-FLASH-NVFP4, publicado por el usuario Pandoks. Se trata de un modelo de la familia GLM-5.3 (etiqueta `glm5_next`, `glm-5.3`) orientado a generacion de texto e image-text-to-text, con pesos cuantizados en NVFP4 mediante NVIDIA ModelOpt y pensado para servirse con SGLang. El repositorio ocupa 394,4 GB y los pesos safetensors declaran 161.461.030.910 parametros totales.
 
-RED-SNOW-5.3-Flash-NVFP4-noloop es un fine-tune correctivo del modelo Blackfrost-AI/RED-SNOW-5.3-FLASH-NVFP4 (revision `8133f8b`), a su vez derivado de la familia GLM-5.3 de Z.AI. Lo publica el usuario Pandoks y aborda un fallo concreto: en sesiones agénticas largas el modelo base termina una respuesta correcta pero, en lugar de cerrar el turno, repite su linea de estado, su despedida o su `tldr` hasta agotar el limite de tokens; el mismo comportamiento aparece dentro del bloque de razonamiento ("stop. final. done. …"). El fine-tune se ha entrenado exclusivamente sobre esa decision de parada.
+El problema que aborda es muy concreto: el modelo base, en sesiones agenticas largas, tiende a terminar una respuesta correcta y despues repetir su linea de cierre, su firma o su linea `tldr` hasta agotar el limite de tokens, tanto en la respuesta visible como dentro del bloque de razonamiento. Este ajuste se entrena unicamente sobre esa decision de parada, de modo que el modelo emite el fin de turno (o cierra el bloque de pensamiento) donde el base empieza a repetir.
 
-El modelo conserva la arquitectura del base (etiquetado `glm5_next`, con expertos enrutados cuantizados en NVFP4) y un total de 161.461.030.910 parametros segun los safetensors publicados, con un repositorio de 204,5 GB. La intervencion es minima: una LoRA de rango 16 fusionada en las proyecciones BF16 de las 45 capas (476 tensores en 20 de las 22 shards), mientras que expertos NVFP4, embeddings, LM head, tokenizer, chat template y receta de serving permanecen identicos byte a byte al base.
-
-Su relevancia es practica: los bucles de repeticion degradan coste, latencia y fiabilidad en pipelines agénticos de contexto muy largo. El autor reporta una reduccion del 86% al 10% de tasa de bucle en contextos propensos, medida con contextos de hasta 1.048.576 tokens servidos con SGLang 0.5.20 sobre una B300.
+La relevancia es practica: reduce la tasa de bucles en contextos propensos a ello del 86 % (103/120) en el base al 1 % (1/120) en este modelo, con 0/58 en sesiones no vistas durante el entrenamiento. El entrenamiento consistio en un LoRA de rango 16 en cuatro etapas, fusionado en las proyecciones BF16 de las 45 capas; el resto de componentes (expertos enrutados NVFP4, embeddings, LM head, tokenizer, plantilla de chat y receta de servicio) es identico byte a byte al base.
 
 ## Especificaciones tecnicas
-
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con expertos enrutados (etiqueta `glm5_next`, familia GLM-5.3); pesos BF16 en proyecciones y expertos enrutados en NVFP4 |
-| Parametros totales | 161.461.030.910 |
+| Arquitectura | Transformer con mezcla de expertos (MoE); etiquetas `glm5_next` / `glm-5.3`; 45 capas; expertos enrutados en NVFP4 y proyecciones en BF16 |
+| Parametros totales | 161.461.030.910 (dato real de safetensors) |
 | Parametros activos | no disponible |
-| Longitud de contexto | hasta 1.048.576 tokens en la evaluacion del autor (contexto maximo declarado del base: no disponible) |
-| Tipos de cuantizacion | NVFP4 (expertos enrutados, via NVIDIA ModelOpt); proyecciones en BF16; tag de repo `8-bit` |
-| Idiomas soportados | en |
-| Licencia | MIT (heredada del base; Copyright (c) 2026 Z.AI Co., Ltd) |
-| Formato de pesos | safetensors (22 shards; 20 de ellos modificados por la fusion de la LoRA) |
+| Longitud de contexto | hasta 1.048.576 tokens en la evaluacion del autor (contextos de hasta 786k usados en entrenamiento) |
+| Tipos de cuantizacion | NVFP4 (expertos enrutados, via NVIDIA ModelOpt); proyecciones en BF16; KV cache en BF16 en la evaluacion |
+| Idiomas soportados | en (ingles) |
+| Licencia | MIT (heredada del modelo base; Copyright (c) 2026 Z.AI Co., Ltd) |
+| Formato de pesos | safetensors (20 de 22 shards modificados; repo de 394,4 GB) |
 
 ## Arquitectura y entrenamiento
+El modelo es un transformer con mezcla de expertos de la familia GLM-5.3. Los expertos enrutados estan cuantizados en NVFP4 con ModelOpt y las proyecciones se mantienen en BF16. El ajuste es un LoRA de rango 16 fusionado en las proyecciones BF16 de las 45 capas (476 tensores en 20 de los 22 shards). El entrenamiento se estructuro en cuatro etapas: (1) supervised fine-tuning sobre finales limpios y completos; (2) lo mismo sobre los ultimos 512 tokens de contextos de hasta 786k tokens; (3) una preferencia a nivel de token entre fin de turno y la repeticion en puntos reales de inicio de bucle, mas una perdida de fin de turno con peso incrementado sobre finales limpios, anclada a la etapa anterior mediante una ligadura L2; y (4) una segunda ronda de la etapa de preferencia sobre nuevos inicios de bucle en contextos de 256k a 655k tokens.
 
-El modelo parte de un transformer de la familia GLM-5.3 con mezcla de expertos: los expertos enrutados estan cuantizados en NVFP4 mediante ModelOpt y el resto de pesos relevantes se mantienen en BF16. El fine-tune no altera esa topologia; solo fusiona una LoRA de rango 16 en las proyecciones BF16 de las 45 capas, afectando a 476 tensores distribuidos en 20 de las 22 shards. El resto de artefactos (expertos NVFP4, embeddings, LM head, tokenizer, plantilla de chat, configuraciones y receta de despliegue) son identicos byte a byte a la release base.
-
-El entrenamiento se organizo en tres etapas sobre la unica decision de parada: (1) SFT con finales limpios y completos; (2) el mismo SFT sobre los ultimos 512 tokens de contextos de hasta 786k tokens; y (3) una preferencia a nivel de token entre fin-de-turno y repeticion en puntos reales de inicio de bucle, con una perdida de fin-de-turno sobreelevada en finales limpios y una ligadura L2 que mantiene el modelo cerca de la etapa anterior. No se reportan datos sobre volumen total de tokens de entrenamiento ni sobre la composicion completa del dataset del modelo base.
+La innovacion es acotada pero medible: el modelo solo aprende la decision de parada, no capacidad general. El autor verifica que cada shard fusionado coincide con un plan de bytes calculado de forma independiente (sha256 de cada tensor fusionado, bytes fuera de los tensores fusionados identicos al base, cabeceras y tamanos sin cambios). La receta de servicio es la del base: SGLang 0.5.20, runner MoE `modelopt_fp4` con `flashinfer_cutlass`, parser de razonamiento `glm45` y parser de tool-calls `glm47`.
 
 ## Capacidades
-
-- Generacion de texto conversacional y razonamiento con bloque de pensamiento explicito (thinking block).
-- Uso de herramientas y function calling, con parser de tool calls `glm47` en la receta de serving.
-- Sesiones agénticas multi-turno y multi-paso con contexto muy largo (hasta 1M tokens en la evaluacion).
-- Cierre correcto de turno: emite fin-de-turno o cierra el bloque de pensamiento donde el base empieza a repetir.
-- Capacidades multilingues limitadas al ingles (`en`).
-- Capacidades de vision: el pipeline declarado es `image-text-to-text`, aunque la model card no documenta evaluacion multimodal para este fine-tune.
-- Razonamiento de codigo y tareas de ingenieria dentro de sesiones agénticas de tool-use (unico workload evaluado).
+- Generacion de texto conversacional en ingles, con soporte de razonamiento en bloque de pensamiento (thinking block) segun la familia GLM-5.3.
+- Entrada image-text-to-text (segun la etiqueta del repositorio), ademas de text-generation.
+- Tool calling / function calling, con parser dedicado `glm47` en la receta de servicio; en la evaluacion del autor, 42 de 50 muestras de control incluian llamadas a herramienta y 0 fueron invalidas.
+- Sesiones agenticas de multiples pasos con contextos muy largos (hasta 1M tokens en la evaluacion).
+- Cierre fiable de turno: emite fin de turno o cierra el bloque de razonamiento en lugar de repetir lineas de estado, firma o `tldr`.
+- Capacidades multilingues: limitadas al ingles segun la model card.
+- Capacidades generales (conocimiento, codigo, matematicas) heredadas del base; no reevaluadas por el autor.
 
 ## Casos de uso
-
-- Agentes de codificacion de larga duracion: el modelo mantiene sesiones de hasta 1M tokens y reduce la tasa de bucle del 86% al 10% en contextos propensos, lo que evita turnos que consumen tokens repitiendo la linea de estado final.
-- Orquestacion de tool calls en produccion: con 45 de 50 llamadas a herramientas validas y 0 invalidas en los controles, es adecuado para pipelines donde un tool call malformado rompe el flujo.
-- Automatizacion de atencion al cliente multi-turno: el cierre fiable de turno permite encadenar conversaciones largas sin respuestas que se alargan hasta el limite de tokens.
-- Generacion de codigo en CI/CD: la receta SGLang 0.5.20 con runner MoE `flashinfer_cutlass` y parser `glm45` permite desplegarlo como servicio de inferencia para revisiones y parches automatizados.
-- Razonamiento extendido con contexto masivo: analisis de repositorios o documentacion de cientos de miles de tokens, donde el base fallaba sobre todo en el tramo de 128k a 1M (94% de bucles en 512k-1M en el base frente al 6% en este modelo).
-- Sustitucion directa del base en despliegues existentes: al ser byte-identico salvo los 20 shards fusionados, se puede cambiar el checkpoint sin modificar configuracion, tokenizer ni plantilla de chat.
-- Evaluacion y monitorizacion de agentes: sirve como referencia de comportamiento de parada para comparar trayectorias agénticas y detectar bucles en otros modelos.
+- Agentes de codificacion de larga duracion: el modelo mantiene sesiones de tool-use de cientos de miles de tokens y termina el turno de forma limpia, lo que evita que un bucle de repeticion consuma el presupuesto de tokens y rompa el bucle del agente.
+- Orquestacion de pipelines CI/CD con agentes: al no repetir la linea de estado final, los parsers de salida del orquestador reciben una respuesta terminada y pueden encadenar el siguiente paso sin truncamientos.
+- Servicio de inferencia de alto contexto con SGLang: la receta incluida (`modelopt_fp4`, `flashinfer_cutlass`, TP1) permite desplegar el modelo tal cual sobre una GPU B300 con KV cache BF16, segun la evaluacion del autor.
+- Asistentes conversacionales multi-turno en ingles: el modelo cierra cada turno de forma consistente, lo que simplifica la gestion de historial y el control de longitud en produccion.
+- Evaluacion y benchmarking de modelos agenticos: sirve como referencia de control para medir tasas de bucle, ya que reduce la repeticion de 86 % a 1 % en los mismos contextos.
+- Investigacion sobre ajuste de comportamiento de parada: el diseno en cuatro etapas (SFT, SFT en colas largas, preferencia a nivel de token con ligadura L2 y segunda ronda) es replicable para corregir fallos de terminacion en otros modelos.
+- Procesamiento de documentos e imagenes con contexto largo: la etiqueta image-text-to-text y la ventana de hasta 1M tokens permiten tareas de extraccion o resumen sobre entradas extensas, siempre en ingles.
 
 ## Benchmarks y rendimiento
+Tasa de bucle: proporcion de muestras cuya salida repite (un fragmento de 128 bytes que recurre 6 veces). 60 contextos propensos a bucle de sesiones reales de tool-use donde el base entra en bucle, 2 muestras cada uno, mas 25 contextos de control. Contexto de hasta 1.048.576 tokens, servido con SGLang 0.5.20, TP1 en 1x B300, KV cache BF16.
 
-Evaluacion del autor sobre 60 contextos propensos a bucle procedentes de sesiones reales de tool-use (2 muestras cada uno) mas 25 contextos de control, con SGLang 0.5.20, TP1 en 1x B300 y cache KV en BF16:
+| Slice | Base | Revision anterior | Este modelo |
+|---|---|---|---|
+| Todos los contextos propensos a bucle | 103/120 (86 %) | 12/120 (10 %) | 1/120 (1 %) |
+| 512k-1M tokens | 32/34 (94 %) | 2/34 (6 %) | 0/34 (0 %) |
+| 256k-512k tokens | 42/54 (78 %) | 2/54 (4 %) | 0/54 (0 %) |
+| 128k-256k tokens | 18/18 (100 %) | 4/18 (22 %) | 0/18 (0 %) |
+| <128k tokens | 11/14 (79 %) | 4/14 (29 %) | 1/14 (7 %) |
+| Sesiones held-out (no vistas en entrenamiento) | 51/58 (88 %) | 3/58 (5 %) | 0/58 (0 %) |
+| Controles: bucle, tool call invalida o error | 1/50 | 0/50 | 0/50 |
 
-| Slice | Base | Este modelo |
-|---|---|---|
-| Todos los contextos propensos a bucle | 103/120 (86%) | 12/120 (10%) |
-| 512k-1M tokens | 32/34 (94%) | 2/34 (6%) |
-| 256k-512k tokens | 42/54 (78%) | 2/54 (4%) |
-| 128k-256k tokens | 18/18 (100%) | 4/18 (22%) |
-| <128k tokens | 11/14 (79%) | 4/14 (29%) |
-| Sesiones held-out | 51/58 (88%) | 3/58 (5%) |
-| Controles: bucle, tool call invalido o error | 1/50 | 0/50 |
-
-La comparacion por pares de contexto muestra menos bucles en 54 de 60 contextos y en ninguno mas (sign test p ≈ 1e-16); en el tramo 512k-1M ocurre en los 17 contextos. La longitud mediana de respuesta en controles es de 81 caracteres frente a 82 del base. La sonda de tokens normales a contexto de 16k (NLL y probabilidad de parada) esta pendiente; en una validacion held-in, los 23 tokens de respuesta previos a un cierre limpio tienen NLL 0,365 frente a 0,357 de la etapa anterior. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de capacidad general en la informacion disponible.
+- Emparejado por contexto: este modelo entra en bucle menos que el base en 56 de 60 contextos y mas en ninguno (test de signos p ≈ 3e-17). Frente a la revision anterior es mejor en 10 y peor en ninguno (p = 0,002).
+- Controles: 0 de 50 malos. Tool calls en 42 de 50 muestras (base 47), 0 invalidas. La respuesta de control mediana es mas corta: 55 caracteres frente a 82 del base.
+- Sonda de tokens normales a 16k de contexto: NLL 1,240 frente a 1,217 de la revision anterior (+1,9 %); probabilidad de parada superior a 0,5 en el 0,24 % de las posiciones frente al 0,37 %.
+- No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada: no disponible de forma explicita; el repositorio ocupa 204,5 GB, por lo que la inferencia en BF16/NVFP4 requiere, como minimo, el equivalente a ese peso mas cache KV para contextos de hasta 1M tokens.
-- GPU recomendadas: el autor valida con 1x B300 en TP1; por tamano, el despliegue en produccion encaja en GPUs de centro de datos con NVFP4 (Blackwell) y, en menor medida, en H100/A100 con soporte de cuantizacion compatible.
-- GPU de consumo: no cabe en GPUs de consumo convencionales por el tamano del checkpoint (204,5 GB); no se documenta ninguna variante GGUF.
-- Opciones de despliegue: SGLang 0.5.20 con `modelopt_fp4`, runner MoE `flashinfer_cutlass`, parser de razonamiento `glm45` y parser de tool calls `glm47`; los directorios `DEPLOYMENT/` y `Deployment-Kit/` del repo contienen la receta. Compatibilidad con vLLM, llama.cpp, Ollama o TGI: no disponible.
-- Latencia y throughput: no disponibles. El modelo especulativo DFlash del base no se ha medido con este checkpoint, por lo que su tasa de aceptacion es desconocida.
+- VRAM estimada para inferencia: no disponible de forma explicita; el repo pesa 394,4 GB en safetensors y la evaluacion se ejecuto en 1x B300 (Blackwell) con TP1 y KV cache BF16.
+- GPU recomendadas: NVIDIA B300 para la configuracion de referencia; por tamano, no cabe en GPU de consumo.
+- GPU de consumo: no; 161,5 mil millones de parametros y 394,4 GB de pesos descartan RTX 4090 y similares.
+- Opciones de despliegue: SGLang 0.5.20 con runner MoE `modelopt_fp4` y `flashinfer_cutlass`, segun `DEPLOYMENT/` y `Deployment-Kit/` del repositorio. Otros motores (vLLM, llama.cpp, Ollama, TGI) no estan documentados en la informacion disponible.
+- Latencia y throughput: no disponibles. El autor no midio la tasa de aceptacion del borrador especulativo DFlash del base con este modelo.
 
 ## Comparativa con modelos similares
-
 | Modelo | Parametros | Contexto | Tasa de bucle (contextos propensos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RED-SNOW-5.3-Flash-NVFP4-noloop | 161,46B | hasta 1.048.576 tokens (evaluado) | 10% (12/120) | MIT | Hugging Face |
-| Blackfrost-AI/RED-SNOW-5.3-FLASH-NVFP4 (base) | 161,46B (mismo checkpoint) | hasta 1.048.576 tokens (evaluado) | 86% (103/120) | MIT | Hugging Face |
-| GLM-5.3 (familia original de Z.AI) | no disponible | no disponible | no disponible | MIT (segun LICENSE del base) | no disponible en la informacion proporcionada |
+| RED-SNOW-5.3-Flash-NVFP4-noloop (este) | 161,5 MM | hasta 1M (evaluado) | 1/120 (1 %) | MIT | Hugging Face |
+| Blackfrost-AI/RED-SNOW-5.3-FLASH-NVFP4 (base) | 161,5 MM | hasta 1M (evaluado) | 103/120 (86 %) | MIT | Hugging Face |
+| Revision anterior de este repo (`5a95d01`) | 161,5 MM | hasta 1M (evaluado) | 12/120 (10 %) | MIT | Hugging Face |
 
-La unica comparacion cuantitativa disponible es contra el modelo base, que comparte arquitectura, tokenizer y receta de serving; la diferencia se limita al comportamiento de parada. No hay datos publicados para comparar con otras alternativas de la misma categoria.
+No se dispone de datos de otros modelos de la misma categoria (mismo tamano o misma tarea) en la informacion proporcionada.
 
 ## Limitaciones y advertencias
-
-- Los bucles se reducen, no desaparecen: los restantes son mayoritariamente canticos "stop / final / done" dentro del bloque de pensamiento y bloques repetidos de estado mas `tldr`.
-- La evaluacion cubre un solo tipo de carga (sesiones agénticas largas de codigo y tool-use); capacidad general, seguridad y comportamiento de rechazo no se reevaluaron mas alla de los 25 contextos de control, por lo que deben asumirse los del modelo base.
-- La sonda de tokens normales a 16k contextos esta pendiente, de modo que no hay verificacion publicada de dano fuera de la decision de parada.
-- El modelo especulativo DFlash del base se entreno contra el base y su tasa de aceptacion con este checkpoint no se ha medido.
-- Idiomas: solo ingles declarado; no se documenta soporte multilingue.
-- Riesgo de alucinacion: no evaluado especificamente; se hereda el del modelo base.
-- Sesgos: no documentados en la informacion disponible.
-- Licencia MIT heredada del base, con Copyright (c) 2026 Z.AI Co., Ltd; permite uso comercial segun los terminos MIT, pero conviene revisar el fichero `LICENSE` del repositorio.
-- `METADATA-SHA256SUMS.txt` corresponde a la release base, por lo que su entrada `README.md` describe la model card del base y no la de este fine-tune.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin validacion independiente de la comunidad.
+- Los bucles se reducen, no se eliminan: 1 de 120 muestras de evaluacion siguio entrando en bucle (bloque repetido de estado mas `tldr` por debajo de 128k tokens). 120 muestras no permiten estimar con precision una tasa cercana a cero.
+- El modelo termina el turno con mas facilidad: las respuestas de control son mas cortas (mediana de 55 frente a 82 caracteres) y algunas respuestas breves de estado acaban donde el base habria llamado a una herramienta.
+- La evaluacion cubre un solo tipo de carga (sesiones agenticas largas de codificacion y tool-use). No se reevaluaron capacidad general, seguridad ni comportamiento de rechazo mas alla de los 25 contextos de control; deben considerarse los del base.
+- La tasa de aceptacion del borrador especulativo DFlash del base con este modelo no se midio.
+- Idioma: solo ingles segun la model card.
+- Riesgo de alucinacion y sesgos: no evaluados de forma especifica; se heredan del modelo base.
+- Licencia MIT heredada del base (Copyright (c) 2026 Z.AI Co., Ltd); permite uso comercial, pero conviene revisar el archivo `LICENSE` del repositorio.
+- `METADATA-SHA256SUMS.txt` es el archivo del release base, por lo que su entrada `README.md` describe la model card del base, no la de este ajuste.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/Pandoks/RED-SNOW-5.3-Flash-NVFP4-noloop
 - Modelo base: https://huggingface.co/Blackfrost-AI/RED-SNOW-5.3-FLASH-NVFP4
-- Repositorio SGLang (stack de serving indicado): https://github.com/sgl-project/sglang
-- NVIDIA ModelOpt (cuantizacion NVFP4): https://github.com/NVIDIA/TensorRT-Model-Optimizer
-- Paper, blog o demo adicionales: no disponible en la informacion proporcionada
+- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

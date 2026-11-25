@@ -1,0 +1,55 @@
+{
+  "schema": 2,
+  "id": "Tileward-Inc/Tileward-Muse-Spark-Open-816B-A42B",
+  "slug": "tileward-inc-tileward-muse-spark-open-816b-a42b",
+  "author": "Tileward-Inc",
+  "url": "https://huggingface.co/Tileward-Inc/Tileward-Muse-Spark-Open-816B-A42B",
+  "created_at": "2026-11-25T06:21:47.000Z",
+  "updated_at": "2026-11-25T06:21:50.000Z",
+  "license": "muse-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-generation",
+    "base_model:meta-models/Muse-Spark-Open-816B-A42B",
+    "base_model:quantized:meta-models/Muse-Spark-Open-816B-A42B",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 126566,
+  "storage_human": "126566 B",
+  "context_length": null,
+  "base_model": "meta-models/Muse-Spark-Open-816B-A42B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU (5-shot)",
+      "metric": "accuracy (TWX3)",
+      "value": 90.1
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU (5-shot)",
+      "metric": "accuracy (TWX2.5)",
+      "value": 89.8
+    }
+  ],
+  "sources": []
+}

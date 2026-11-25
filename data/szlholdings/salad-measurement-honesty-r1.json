@@ -5,7 +5,7 @@
   "author": "SZLHOLDINGS",
   "url": "https://huggingface.co/SZLHOLDINGS/salad-measurement-honesty-r1",
   "created_at": "2026-11-16T03:28:32.000Z",
-  "updated_at": "2026-11-23T00:59:11.000Z",
+  "updated_at": "2026-11-25T03:02:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "safetensors",
+    "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,

@@ -5,7 +5,7 @@
   "author": "gyohng",
   "url": "https://huggingface.co/gyohng/flint-terse-lora",
   "created_at": "2026-11-20T02:46:35.000Z",
-  "updated_at": "2026-11-23T19:56:36.000Z",
+  "updated_at": "2026-11-24T19:02:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,7 +26,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 53,
   "trending_score": 0,
   "parameters": 126615552,

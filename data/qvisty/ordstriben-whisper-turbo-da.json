@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "Qvisty/ordstriben-whisper-turbo-da",
+  "slug": "qvisty-ordstriben-whisper-turbo-da",
+  "author": "Qvisty",
+  "url": "https://huggingface.co/Qvisty/ordstriben-whisper-turbo-da",
+  "created_at": "2026-11-25T10:27:07.000Z",
+  "updated_at": "2026-11-25T10:27:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "whisper",
+    "danish",
+    "int8",
+    "automatic-speech-recognition",
+    "da",
+    "arxiv:2212.04356",
+    "base_model:thorhojhus/whisper-large-v3-turbo-danish",
+    "base_model:quantized:thorhojhus/whisper-large-v3-turbo-danish",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1035693155,
+  "storage_human": "1.0 GB",
+  "context_length": null,
+  "base_model": "thorhojhus/whisper-large-v3-turbo-danish",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

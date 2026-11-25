@@ -5,7 +5,7 @@
   "author": "SZLHOLDINGS",
   "url": "https://huggingface.co/SZLHOLDINGS/ancient-math-v2-trained",
   "created_at": "2026-11-13T23:23:22.000Z",
-  "updated_at": "2026-11-20T04:29:14.000Z",
+  "updated_at": "2026-11-25T03:01:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "safetensors",
+    "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,

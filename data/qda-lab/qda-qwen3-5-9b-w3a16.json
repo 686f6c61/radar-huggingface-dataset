@@ -54,16 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "jetson-ai-lab/src/content/models/qwen3-5-9b.md at main - GitHub",
-      "url": "https://github.com/NVIDIA-AI-IOT/jetson-ai-lab/blob/main/src/content/models/qwen3-5-9b.md",
-      "snippet": "Qwen3.5 9B is a dense vision-language model in the Qwen3.5 family aimed at stronger reasoning, visual understanding, and agentic behavior on Jetson. This entry uses a W4A16 checkpoint on Jetson Orin and an NVFP4 checkpoint on Jetson Thor."
-    },
-    {
-      "title": "Qwen3.5 9B - Jetson AI Lab",
-      "url": "https://www.jetson-ai-lab.com/models/qwen3-5-9b/",
-      "snippet": "Qwen3.5 9B is a dense vision-language model in the Qwen3.5 family aimed at stronger reasoning, visual understanding, and agentic behavior on Jetson. This entry uses a W4A16 checkpoint on Jetson Orin and an NVFP4 checkpoint on Jetson Thor."
-    }
-  ]
+  "sources": []
 }

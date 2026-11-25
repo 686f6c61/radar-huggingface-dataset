@@ -16,7 +16,6 @@
   ],
   "tags": [
     "mlx",
-    "safetensors",
     "qlora",
     "statistics",
     "dgp-regret",
@@ -41,8 +40,7 @@
   "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
-    "mlx",
-    "safetensors"
+    "mlx"
   ],
   "is_conversational": false,
   "gated": false,

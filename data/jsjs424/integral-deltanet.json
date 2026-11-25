@@ -5,7 +5,7 @@
   "author": "jsjs424",
   "url": "https://huggingface.co/jsjs424/Integral-DeltaNet",
   "created_at": "2026-11-24T05:38:07.000Z",
-  "updated_at": "2026-11-24T05:38:47.000Z",
+  "updated_at": "2026-11-25T08:15:51.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -19,6 +19,7 @@
     "text-generation",
     "en",
     "dataset:HuggingFaceFW/fineweb-edu",
+    "arxiv:2611.32063",
     "license:mit",
     "region:us"
   ],

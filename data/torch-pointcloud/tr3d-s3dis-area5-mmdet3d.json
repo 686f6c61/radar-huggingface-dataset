@@ -50,13 +50,13 @@
       "task": null,
       "dataset": "S3DIS (Area 5)",
       "metric": "mAP@0.25",
-      "value": 71.24
+      "value": 71.33
     },
     {
       "task": null,
       "dataset": "S3DIS (Area 5)",
       "metric": "mAP@0.5",
-      "value": 48.37
+      "value": 48.33
     }
   ],
   "sources": []

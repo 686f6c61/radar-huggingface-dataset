@@ -42,8 +42,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "garg-achal/qwen3-4b-activation-probes-week2",
+  "renamed_at": "2026-11-25T10:08:24.548Z",
   "benchmarks": [],
   "sources": []
 }

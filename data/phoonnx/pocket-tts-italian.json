@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/pocket-tts-italian",
   "created_at": "2026-11-14T22:47:39.000Z",
-  "updated_at": "2026-11-18T01:05:48.000Z",
+  "updated_at": "2026-11-25T04:37:47.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 72,
+  "downloads_30d": 77,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

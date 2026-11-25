@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "BurnyCoder/thirdloss-pythia-410m-adapters",
+  "slug": "burnycoder-thirdloss-pythia-410m-adapters",
+  "author": "BurnyCoder",
+  "url": "https://huggingface.co/BurnyCoder/thirdloss-pythia-410m-adapters",
+  "created_at": "2026-11-25T07:32:41.000Z",
+  "updated_at": "2026-11-25T08:01:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-generation",
+    "en",
+    "base_model:EleutherAI/pythia-410m",
+    "base_model:adapter:EleutherAI/pythia-410m",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12650403,
+  "storage_human": "13 MB",
+  "context_length": null,
+  "base_model": "EleutherAI/pythia-410m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

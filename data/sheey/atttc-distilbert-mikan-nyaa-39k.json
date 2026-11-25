@@ -1,0 +1,74 @@
+{
+  "schema": 2,
+  "id": "sheey/atttc-distilbert-mikan-nyaa-39k",
+  "slug": "sheey-atttc-distilbert-mikan-nyaa-39k",
+  "author": "sheey",
+  "url": "https://huggingface.co/sheey/atttc-distilbert-mikan-nyaa-39k",
+  "created_at": "2026-11-23T13:05:30.000Z",
+  "updated_at": "2026-11-23T13:38:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "zh",
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "distilbert",
+    "token-classification",
+    "ner",
+    "anime",
+    "torrent-title-parser",
+    "int8",
+    "zh",
+    "en",
+    "ja",
+    "base_model:distilbert/distilbert-base-multilingual-cased",
+    "base_model:quantized:distilbert/distilbert-base-multilingual-cased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 134762533,
+  "parameters_human": "134.8M",
+  "storage_bytes": 1214678617,
+  "storage_human": "1.2 GB",
+  "context_length": null,
+  "base_model": "distilbert/distilbert-base-multilingual-cased",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SHEEY (@sheey______) • Instagram photos and videos",
+      "url": "https://www.instagram.com/sheey______/",
+      "snippet": "603 Followers, 291 Following, 25 Posts - SHEEY (@sheey______) on Instagram: \"$H$\""
+    },
+    {
+      "title": "Sheey (@sheey_paris) | Snapchat Stories, Spotlight & Lenses",
+      "url": "https://www.snapchat.com/@sheey_paris",
+      "snippet": "1 day ago · The video features Sheey as the central figure, leading a group of people in a synchronized dance routine at what …"
+    },
+    {
+      "title": "Sheey' (@sheey) • Instagram photos and videos",
+      "url": "https://www.instagram.com/sheey/",
+      "snippet": "This profile is private Follow sheey in the app to see their photos and videos."
+    }
+  ]
+}

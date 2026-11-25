@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "feathery23333/jigsaw-toxic-comment-deberta-v3-base",
+  "slug": "feathery23333-jigsaw-toxic-comment-deberta-v3-base",
+  "author": "feathery23333",
+  "url": "https://huggingface.co/feathery23333/jigsaw-toxic-comment-deberta-v3-base",
+  "created_at": "2026-11-25T11:35:41.000Z",
+  "updated_at": "2026-11-25T11:40:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "multi-label-classification",
+    "toxicity",
+    "jigsaw",
+    "deberta",
+    "text-classification",
+    "en",
+    "dataset:Heliosoph/Jigsaw-Toxic-Comments",
+    "base_model:microsoft/deberta-v3-base",
+    "base_model:finetune:microsoft/deberta-v3-base",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184426758,
+  "parameters_human": "184.4M",
+  "storage_bytes": 740506907,
+  "storage_human": "741 MB",
+  "context_length": null,
+  "base_model": "microsoft/deberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

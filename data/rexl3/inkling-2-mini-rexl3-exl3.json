@@ -5,7 +5,7 @@
   "author": "REXL3",
   "url": "https://huggingface.co/REXL3/Inkling-2-Mini-REXL3-EXL3",
   "created_at": "2026-11-21T10:40:54.000Z",
-  "updated_at": "2026-11-22T17:34:37.000Z",
+  "updated_at": "2026-11-24T13:26:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 13,
+  "downloads_30d": 23,
   "trending_score": 0,
   "parameters": 7464307200,
   "parameters_human": "7.46B",

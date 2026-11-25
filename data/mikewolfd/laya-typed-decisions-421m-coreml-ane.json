@@ -5,7 +5,7 @@
   "author": "mikewolfd",
   "url": "https://huggingface.co/mikewolfd/laya-typed-decisions-421m-coreml-ane",
   "created_at": "2026-11-24T20:55:29.000Z",
-  "updated_at": "2026-11-24T20:55:44.000Z",
+  "updated_at": "2026-11-24T21:06:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -16,6 +16,7 @@
     "apple-silicon",
     "coreml",
     "ane",
+    "mlx",
     "modernbert",
     "fast-silicon",
     "base_model:convaiinnovations/laya-typed-decisions",
@@ -32,7 +33,9 @@
   "storage_human": "491 MB",
   "context_length": null,
   "base_model": "convaiinnovations/laya-typed-decisions",
-  "formats": [],
+  "formats": [
+    "mlx"
+  ],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

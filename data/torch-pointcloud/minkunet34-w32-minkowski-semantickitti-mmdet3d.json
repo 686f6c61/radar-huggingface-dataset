@@ -50,7 +50,7 @@
       "task": null,
       "dataset": "SemanticKITTI",
       "metric": "mIoU",
-      "value": 69.21
+      "value": 69.2
     },
     {
       "task": null,

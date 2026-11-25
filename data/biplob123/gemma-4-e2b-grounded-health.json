@@ -1,0 +1,93 @@
+{
+  "schema": 2,
+  "id": "biplob123/gemma-4-e2b-grounded-health",
+  "slug": "biplob123-gemma-4-e2b-grounded-health",
+  "author": "biplob123",
+  "url": "https://huggingface.co/biplob123/gemma-4-e2b-grounded-health",
+  "created_at": "2026-11-20T15:38:23.000Z",
+  "updated_at": "2026-11-24T12:23:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "gemma",
+    "medical",
+    "biomedical",
+    "pubmedqa",
+    "grounded-generation",
+    "citations",
+    "lora",
+    "grpo",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:qiaojin/PubMedQA",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:finetune:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 109,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 20718786289,
+  "storage_human": "20.7 GB",
+  "context_length": null,
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Grounded biomedical question answering",
+      "dataset": "PubMedQA (expert-labelled)",
+      "metric": "Label accuracy",
+      "value": 0.677
+    },
+    {
+      "task": "Grounded biomedical question answering",
+      "dataset": "PubMedQA (expert-labelled)",
+      "metric": "Correct and fully grounded (gpt-6.1-sol)",
+      "value": 0.503
+    },
+    {
+      "task": "Grounded biomedical question answering",
+      "dataset": "PubMedQA (expert-labelled)",
+      "metric": "Citation validity",
+      "value": 1
+    },
+    {
+      "task": "Grounded biomedical question answering",
+      "dataset": "PubMedQA (expert-labelled)",
+      "metric": "Citation precision (gpt-6.1-sol)",
+      "value": 0.87279843444227
+    },
+    {
+      "task": "Grounded biomedical question answering",
+      "dataset": "PubMedQA (expert-labelled)",
+      "metric": "Aim-citation rate, lower is better (gpt-6.1-sol)",
+      "value": 0.032160804020100506
+    }
+  ],
+  "sources": []
+}

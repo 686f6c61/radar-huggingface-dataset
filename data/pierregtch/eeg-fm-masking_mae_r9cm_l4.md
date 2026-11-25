@@ -2,111 +2,109 @@
 
 ## Resumen
 
-eeg-fm-masking_mae_r9cm_L4 es un encoder de electroencefalografía (EEG) preentrenado, publicado por PierreGtch, que forma parte de una familia de 58 encoders entrenados con una receta idéntica en la que solo varía la geometría de enmascaramiento. Se trata de un modelo de extracción de características (pipeline `feature-extraction`) construido como autoencoder enmascarado (MAE): el encoder ve los parches no enmascarados y un decodificador ligero reconstruye la señal cruda de los parches enmascarados. El checkpoint publicado contiene únicamente el encoder, con 12.692.096 parámetros (12,69 M).
+`eeg-fm-masking_mae_r9cm_L4` es un codificador (*encoder*) de electroencefalografía (EEG) preentrenado mediante un autoencoder enmascarado (*masked autoencoder*, MAE). Lo desarrolla Pierre Guetschel (cuenta `PierreGtch`) como parte del estudio *What masking geometry works best for EEG foundation models?* (arXiv:2609.33487), cuyo objetivo es aislar el efecto de la geometría de enmascaramiento en el preentrenamiento autosupervisado de modelos fundacionales de EEG. Pertenece a una familia de 58 codificadores entrenados con una receta idéntica en la que solo varían el radio espacial de la máscara (5 valores) y la longitud temporal (6 valores) sobre dos marcos de trabajo (MAE y JEPA).
 
-El modelo procede del trabajo *What masking geometry works best for EEG foundation models? A controlled evaluation across MAE and JEPA*, cuyo objetivo es aislar el efecto de la geometría de enmascaramiento sobre la calidad de las representaciones aprendidas. En esta variante concreta, el radio espacial de enmascaramiento es r = 9 cm y la longitud temporal es L = 4 parches, con un parámetro de enmascaramiento `pct_unmasked` de 0,45. El artículo recomienda la configuración r = 9 cm, L = 2, por lo que este checkpoint debe entenderse como una de las variantes del barrido controlado y no como la configuración óptima señalada por los autores.
+El modelo resuelve un problema concreto: proporcionar representaciones genéricas de señales EEG que puedan reutilizarse como extractor de características congelado en múltiples tareas downstream (clasificación de estados mentales, detección de anomalías, sueño, etc.) sin reentrenar desde cero. Con 12,69 M de parámetros en el codificador, es un modelo compacto orientado a *feature extraction*, no a generación de texto: no es un LLM y no procesa lenguaje natural.
 
-Su relevancia es doble: por un lado, ofrece un encoder EEG ligero y agnóstico al montaje (funciona con cualquier número y conjunto de canales siempre que cada uno tenga posición 3D), lo que facilita el ajuste fino en tareas downstream; por otro, sus pesos se distribuyen bajo CC-BY-4.0, algo posible porque el preentrenamiento usó únicamente el subconjunto con licencia abierta del corpus REVE (323 registros).
+Es relevante ahora porque los modelos fundacionales de EEG están en fase exploratoria y este trabajo aporta evidencia sistemática sobre qué configuración de enmascaramiento conviene, además de publicar los pesos de forma abierta (CC-BY-4.0) y con checkpoints intermedios por época, lo que facilita la reproducibilidad y el análisis de la dinámica de entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Autoencoder enmascarado (MAE) sobre transformer; tokenizador de parches (`feature_encoder.*`) + transformer (`model.*`). El checkpoint publicado contiene solo el encoder |
-| Parametros totales | 12.692.096 (12,69 M, encoder) |
+| Arquitectura | Transformer con tokenizador de parches (*patch tokeniser*) y codificador contextual; preentrenamiento MAE (autoencoder enmascarado) |
+| Parametros totales | 12.692.096 (codificador únicamente) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible como numero de tokens; la senal se corta en parches de 1 s (200 muestras a 200 Hz) con solapamiento de 20 muestras |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no aplica (modelo de senales EEG, no de texto) |
-| Licencia | CC-BY-4.0 para los pesos; MIT para el codigo |
-| Formato de pesos | safetensors (`model.safetensors`) + `config.json` + `metadata.json` |
+| Longitud de contexto | ventana de entrada segmentada en parches de 1 s (200 muestras, solapamiento de 20 muestras); longitud de contexto en tokens no disponible |
+| Tipos de cuantizacion | no disponible (pesos en safetensors, sin versiones GGUF publicadas) |
+| Idiomas soportados | no aplica (modelo de señales EEG, no de lenguaje); idiomas no disponibles |
+| Licencia | CC-BY-4.0 (pesos); código MIT |
+| Formato de pesos | safetensors (`model.safetensors` más subcarpetas `epoch_01/` a `epoch_09/`) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un autoencoder enmascarado aplicado a senales EEG. Un tokenizador de parches divide la senal en fragmentos de 1 segundo (200 muestras a 200 Hz, con 20 muestras de solapamiento) y un transformer procesa los parches visibles; un decodificador ligero, no incluido en el repositorio, se encargaba de reconstruir la senal cruda de los parches enmascarados durante el preentrenamiento. El enmascaramiento se define por dos parametros geometricos: un radio espacial r = 9 cm y una longitud temporal L = 4 parches, con una fraccion de parches no enmascarados `pct_unmasked` = 0,45. El modelo es agnostico al montaje: acepta cualquier numero y disposicion de canales, siempre que cada canal tenga asociada una posicion 3D en metros (MNE `info["chs"][i]["loc"][:3]`).
+La arquitectura es un transformer aplicado sobre parches temporales de la señal EEG. La entrada se remuestrea a 200 Hz y se corta en parches de 1 s (200 muestras) con un solapamiento de 20 muestras; un tokenizador de parches (`feature_encoder.*`) proyecta cada parche a un embedding y el transformer (`model.*`) genera representaciones contextuales. El preentrenamiento es de tipo MAE: el codificador ve solo los parches no enmascarados y un decodificador ligero reconstruye la señal cruda de los parches enmascarados. En este checkpoint concreto, el radio espacial de la máscara es r = 9 cm, la longitud temporal es L = 4 parches y la proporción de parches no enmascarados es `pct_unmasked = 0.45`.
 
-El preentrenamiento utilizo el subconjunto con licencia abierta del corpus REVE (323 registros), elegido para poder redistribuir los pesos resultantes. El esquema de entrenamiento consistio en 10 epocas sobre 2 GPU H100, con tamano de lote de 600 por GPU, learning rate de 0,00024 (warm-up de 3080 pasos y valor final de 1e-06) y weight decay de 0,01. El checkpoint publicado corresponde a la epoca 10 de 10 (version `v9`, la evaluada en el articulo). La innovacion metodologica del trabajo no esta en la arquitectura, sino en el diseno experimental: 58 encoders entrenados con receta identica y un barrido de 5 radios espaciales × 6 longitudes temporales × 2 frameworks (MAE y JEPA), lo que permite atribuir las diferencias de rendimiento exclusivamente a la geometria de enmascaramiento.
+El entrenamiento usa el subconjunto con licencia abierta del corpus de preentrenamiento REVE (323 grabaciones), lo que permite redistribuir los pesos. La programación es de 10 épocas en 2 × H100, con tamaño de lote de 600 por GPU, tasa de aprendizaje 0,00024 (calentamiento de 3080 pasos, valor final 1e-06) y decaimiento de pesos 0,01. El checkpoint publicado corresponde al final de la época 10; las épocas 1 a 9 se incluyen como subcarpetas. El modelo es agnóstico al montaje: acepta cualquier número y conjunto de canales siempre que cada canal tenga una posición 3D en metros. La normalización (factor 1e+06 y escalado por ventana `median_std_clip` con recorte en σ = 15) la aplica el propio wrapper, por lo que no debe estandarizarse la señal antes.
 
 ## Capacidades
 
-- Extraccion de caracteristicas (embeddings) a partir de senales EEG crudas multimontaje, sin reentrenamiento del encoder.
-- Aprendizaje autosupervisado mediante reconstruccion de parches enmascarados (MAE) durante el preentrenamiento.
-- Representaciones contextuales aptas para sondas lineales congeladas (por ejemplo, regresion ridge sobre caracteristicas aplanadas), tal y como se evalua en OpenEEGBench.
-- Ajuste fino downstream para tareas de clasificacion y regresion sobre EEG.
-- Funcionamiento agnostico al montaje: cualquier numero y conjunto de canales, siempre que cada canal tenga posicion 3D.
-- Adaptacion a distintas frecuencias de muestreo mediante remuestreo previo a 200 Hz (requisito de entrada).
-- No soporta generacion de texto, tool calling, razonamiento multi-paso ni capacidades multilingues: no es un modelo de lenguaje.
-- No incluye capacidades de vision ni de audio.
+- Extracción de características (*feature extraction*) de señales EEG multicanal con montaje arbitrario.
+- Representaciones contextuales por parche temporal, utilizables con sondas lineales (ridge) o fine-tuning.
+- Preentrenamiento autosupervisado que no requiere etiquetas para aprender representaciones.
+- Adaptación a tareas de clasificación y regresión sobre EEG (12 conjuntos evaluados en OpenEEGBench).
+- Robustez a distintos números de canales y posiciones, gracias al uso de coordenadas 3D.
+- Checkpoints intermedios por época para estudiar la evolución del aprendizaje.
+- No soporta tool calling, agentes, generación de texto, visión ni audio: es un modelo específico de EEG.
 
 ## Casos de uso
 
-- Clasificacion de patologias neurologicas: el encoder congelado alimenta una sonda ridge para tareas como la deteccion de anomalias en tuab (0,805 de balanced accuracy) o la clasificacion de eventos en tuev (0,920), sin necesidad de reentrenar el backbone.
-- Monitorizacion de crisis epilepticas: sobre el dataset chbmit alcanza 0,857 ± 0,078 de balanced accuracy, lo que permite usarlo como extractor de caracteristicas en sistemas de alerta temprana a partir de registros EEG continuos.
-- Estadificacion del sueno: con isruc-sleep obtiene 0,662 ± 0,005 de balanced accuracy, adecuado para pipelines de puntuacion automatica de fases del sueno.
-- Investigacion en depresion: con mdd_mumtaz2016 logra 0,827 ± 0,011, util como base para estudios de biomarcadores electrofisiologicos.
-- Interfazes cerebro-computador: en bcic2a obtiene 0,463 ± 0,019 y en bcic2020-3 0,274 ± 0,011 de balanced accuracy, lo que sirve como punto de partida para decodificacion motora tras ajuste fino.
-- Analisis de carga cognitiva: sobre arithmetic_zyma2019 alcanza 0,736 ± 0,008, aplicable a experimentos de carga de trabajo mental.
-- Preentrenamiento y adaptacion a dominios concretos: al ser un encoder ligero (12,69 M de parametros) con licencia CC-BY-4.0, es viable reentrenarlo o ajustarlo con datos propios de un laboratorio o de un dispositivo concreto.
-- Extraccion de caracteristicas a gran escala: dado su tamano reducido, permite procesar corpus extensos de EEG para construir embeddings reutilizables en tareas posteriores.
+- Clasificación de estados cognitivos: usar el codificador congelado y una sonda ridge sobre las características aplanadas para tareas como `arithmetic_zyma2019` (0,736 de exactitud balanceada), sin reentrenar el backbone.
+- Detección de crisis epilépticas: integrar el extractor en un pipeline de monitorización con `chbmit` (0,857 de exactitud balanceada) y `tuev` (0,920), aprovechando que el modelo acepta montajes variables de canales.
+- Análisis de sueño: clasificación de fases con `isruc-sleep` (0,662) y regresión de la edad de vigilia con `seed-vig`, útil para estudios de sueño a gran escala.
+- Detección de depresión: emplear las representaciones en `mdd_mumtaz2016` (0,827) como base para cribados con EEG en investigación clínica.
+- Investigación en interfaces cerebro-computador: usar `bcic2a` (0,463) y `bcic2020-3` (0,274) como línea base para comparar estrategias de preentrenamiento y ajustar la geometría de la máscara.
+- Reproducibilidad y ablación: comparar este checkpoint (r = 9 cm, L = 4) con los otros 57 de la colección para aislar el efecto de la geometría de enmascaramiento en una misma receta.
+- Prototipado rápido en entornos con pocos recursos: con 12,69 M de parámetros, el codificador cabe holgadamente en una GPU de consumo y permite iterar sobre pipelines de EEG sin infraestructura pesada.
 
 ## Benchmarks y rendimiento
 
-Resultados downstream con encoder congelado y sonda ridge sobre caracteristicas contextuales aplanadas (12 datasets × 5 semillas; balanced accuracy para clasificacion, R² para `seed-vig`):
+Resultados downstream en OpenEEGBench con el codificador congelado y sonda ridge sobre las características contextuales aplanadas, 12 conjuntos × 5 semillas. Exactitud balanceada para clasificación y R² para `seed-vig`.
 
-| Dataset | Metrica | Resultado (media ± sd) | Semillas |
+| Conjunto | Métrica | Puntuación (media ± sd) | Semillas |
 |---|---|---|---|
-| arithmetic_zyma2019 | balanced acc. | 0,736 ± 0,008 | 5 |
-| bcic2020-3 | balanced acc. | 0,274 ± 0,011 | 5 |
-| bcic2a | balanced acc. | 0,463 ± 0,019 | 5 |
-| chbmit | balanced acc. | 0,857 ± 0,078 | 5 |
-| faced | balanced acc. | 0,319 ± 0,003 | 5 |
-| isruc-sleep | balanced acc. | 0,662 ± 0,005 | 5 |
-| mdd_mumtaz2016 | balanced acc. | 0,827 ± 0,011 | 5 |
-| physionet | balanced acc. | 0,571 ± 0,007 | 5 |
-| seed-v | balanced acc. | 0,289 ± 0,001 | 5 |
+| arithmetic_zyma2019 | exactitud balanceada | 0,736 ± 0,008 | 5 |
+| bcic2020-3 | exactitud balanceada | 0,274 ± 0,011 | 5 |
+| bcic2a | exactitud balanceada | 0,463 ± 0,019 | 5 |
+| chbmit | exactitud balanceada | 0,857 ± 0,078 | 5 |
+| faced | exactitud balanceada | 0,319 ± 0,003 | 5 |
+| isruc-sleep | exactitud balanceada | 0,662 ± 0,005 | 5 |
+| mdd_mumtaz2016 | exactitud balanceada | 0,827 ± 0,011 | 5 |
+| physionet | exactitud balanceada | 0,571 ± 0,007 | 5 |
+| seed-v | exactitud balanceada | 0,289 ± 0,001 | 5 |
 | seed-vig | R² | -0,168 ± 0,009 | 5 |
-| tuab | balanced acc. | 0,805 ± 0,004 | 5 |
-| tuev | balanced acc. | 0,920 ± 0,031 | 5 |
+| tuab | exactitud balanceada | 0,805 ± 0,004 | 5 |
+| tuev | exactitud balanceada | 0,920 ± 0,031 | 5 |
 
-No se han publicado en la informacion disponible resultados comparativos frente a otros modelos de la misma categoria, ni metricas de reconstruccion del decodificador MAE.
+No se han publicado en la información disponible resultados de MMLU, HumanEval ni GSM8K, que no aplican a este tipo de modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 50 MB en fp32 y 25 MB en fp16 para el encoder de 12,69 M de parametros, sin contar activaciones ni el tokenizador. El repositorio completo ocupa 0,1 GB.
-- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM es suficiente para inferencia; el entrenamiento original uso 2 × H100 con lote de 600 por GPU.
-- Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna (por ejemplo, RTX 3060, RTX 4090), e incluso en CPU para inferencia por lotes pequenos.
-- Opciones de despliegue: carga directa con `safetensors` y `PyTorch` a traves del wrapper `ContextualEncoderBenchmarkWrapper` del paquete `eeg-fm-masking`; integracion con `OpenEEGBench` mediante `PretrainedBackbone`. No se documentan soportes especificos para vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo generativo de texto.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: inferior a 1 GB en fp32 para el codificador de 12,69 M de parámetros; el tamaño del repositorio es de 0,5 GB.
+- GPU recomendadas: cualquier GPU moderna sirve; el entrenamiento se realizó en 2 × H100, pero la inferencia no requiere hardware de datacenter.
+- Cabe en GPU de consumo: sí, en cualquier RTX o equivalente con al menos 1-2 GB de VRAM libre.
+- Opciones de despliegue: carga directa con PyTorch y `safetensors` a través del wrapper `ContextualEncoderBenchmarkWrapper`; integración con `open_eeg_bench.backbone.PretrainedBackbone` para evaluación y fine-tuning. No se documentan despliegues con vLLM, llama.cpp, Ollama ni TGI (no aplican a este modelo).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Framework | Enmascaramiento | Parametros | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto/entrada | Marco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eeg-fm-masking_mae_r9cm_L4 (este) | MAE | r = 9 cm, L = 4 | 12,69 M (encoder) | CC-BY-4.0 | Hugging Face |
-| eeg-fm-masking_mae_r9cm_L2 | MAE | r = 9 cm, L = 2 | no disponible | CC-BY-4.0 | Hugging Face (recomendado en el articulo) |
-| eeg-fm-masking_jepa_r9cm_L2 | JEPA | r = 9 cm, L = 2 | no disponible | CC-BY-4.0 | Hugging Face (recomendado en el articulo) |
+| eeg-fm-masking_mae_r9cm_L4 (este) | 12,69 M | parches de 1 s a 200 Hz, montaje arbitrario | MAE, r = 9 cm, L = 4 | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_mae_r9cm_L2 | no disponible | parches de 1 s a 200 Hz, montaje arbitrario | MAE, r = 9 cm, L = 2 (recomendado en el paper) | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_jepa_r9cm_L2 | no disponible | parches de 1 s a 200 Hz, montaje arbitrario | JEPA, r = 9 cm, L = 2 (recomendado en el paper) | CC-BY-4.0 | Hugging Face |
 
-Los tres modelos pertenecen a la misma coleccion de 58 encoders entrenados con receta identica y solo difieren en la geometria de enmascaramiento y en el framework de preentrenamiento. No se dispone de resultados de benchmarks para las variantes L2 en la informacion proporcionada, mas alla de que el articulo las recomienda. No se han facilitado comparaciones con otros modelos fundacionales de EEG externos.
+Los tres modelos comparten receta de entrenamiento y corpus (subconjunto abierto de REVE), por lo que la comparación aísla el efecto de la geometría de enmascaramiento y del marco (MAE frente a JEPA). No se dispone de datos de benchmarks de los dos modelos alternativos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Este checkpoint no es la configuracion recomendada por los autores: el articulo recomienda r = 9 cm, L = 2, mientras que este modelo usa L = 4.
-- Los resultados en varios datasets son cercanos al azar: bcic2020-3 (0,274), seed-v (0,289), faced (0,319) y bcic2a (0,463) indican una transferibilidad limitada en esas tareas.
-- El valor de R² negativo en `seed-vig` (-0,168) sugiere que las caracteristicas no capturan la varianza objetivo en esa tarea de regresion.
-- El decodificador MAE no se incluye en el repositorio, por lo que el modelo no puede usarse para reconstruccion de senal sin reentrenarlo.
-- Requisitos de entrada estrictos: muestreo a 200 Hz, unidades en voltios (el wrapper aplica un factor de 1e+06 y un escalado `median_std_clip` con recorte en σ = 15) y posiciones de canal en metros. Estandarizar los datos previamente produce resultados incorrectos.
-- La carga con `strict=False` deja fuera los componentes dependientes del dataset (buffer de posiciones de canal y cabeza de clasificacion), lo que exige reconstruirlos para cada uso.
-- Preentrenado sobre 323 registros del subconjunto abierto de REVE, un corpus reducido; el sesgo de dominio respecto a otros montajes, poblaciones o dispositivos no esta caracterizado en la informacion disponible.
-- Riesgo de sobreajuste a los datasets de evaluacion de OpenEEGBench si se selecciona la variante en funcion de esos resultados.
-- Licencia CC-BY-4.0 en los pesos: permite uso comercial con atribucion, pero obliga a citar el articulo y a mantener la atribucion en trabajos derivados. El codigo se distribuye bajo MIT.
-- No se documentan limitaciones de idioma porque el modelo no procesa texto.
+- Modelo específico de EEG: no procesa texto, imágenes ni audio, y no admite tool calling ni razonamiento multi-paso.
+- Requiere que cada canal tenga una posición 3D en metros; sin metadatos de montaje no puede usarse correctamente.
+- Exige muestreo a 200 Hz y unidades en voltios; el wrapper aplica su propio escalado, por lo que estandarizar previamente la señal introduce errores.
+- El rendimiento es muy desigual entre conjuntos: `bcic2020-3` (0,274) y `seed-v` (0,289) quedan cerca del azar, y `seed-vig` presenta R² negativo (-0,168), lo que indica que la sonda ridge no captura la variable objetivo en ese caso.
+- El checkpoint publicado corresponde a la época 10 de 10; no se documenta una selección por validación, por lo que puede no ser el óptimo para todas las tareas.
+- El decodificador MAE no se incluye: el repositorio contiene solo el codificador, de modo que no es posible reentrenar el objetivo de reconstrucción tal cual con estos pesos.
+- Licencia CC-BY-4.0: permite uso comercial con atribución; el código es MIT. Es necesario citar el paper de acuerdo con las condiciones de la licencia.
+- Riesgo de alucinación no aplica en el sentido habitual, pero sí existe riesgo de extrapolación indebida a montajes, poblaciones o tareas no representadas en el corpus REVE.
+- Sesgos conocidos: no documentados en la información disponible; el corpus de preentrenamiento (323 grabaciones) puede no representar toda la diversidad clínica y demográfica.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L4
-- Pagina del proyecto: https://pierregtch.github.io/eeg-fm-masking
-- Codigo en GitHub: https://github.com/PierreGtch/eeg-fm-masking
-- Coleccion con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366
-- Variante recomendada MAE r9cm L2: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L2
-- Variante recomendada JEPA r9cm L2: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L2
-- Registro de entrenamiento en Weights & Biases: https://wandb.ai/pierregtch/chan-inv-clf/runs/v78z6b50
+- Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L4
+- Paper: https://arxiv.org/abs/2609.33487
+- Sitio web del proyecto: https://pierregtch.github.io/eeg-fm-masking
+- Código: https://github.com/PierreGtch/eeg-fm-masking
+- Colección con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366
+- Modelo recomendado (MAE, r = 9 cm, L = 2): https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L2
+- Modelo recomendado (JEPA, r = 9 cm, L = 2): https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L2
+- Registro de entrenamiento (W&B): https://wandb.ai/pierregtch/chan-inv-clf/runs/v78z6b50

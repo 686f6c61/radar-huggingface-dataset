@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "islomov/gapi-uz-gapiring-v2",
+  "slug": "islomov-gapi-uz-gapiring-v2",
+  "author": "islomov",
+  "url": "https://huggingface.co/islomov/gapi-uz-gapiring-v2",
+  "created_at": "2026-11-25T06:52:49.000Z",
+  "updated_at": "2026-11-25T09:44:08.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "uz"
+  ],
+  "tags": [
+    "onnx",
+    "tts",
+    "uzbek",
+    "edge",
+    "gapiring",
+    "text-to-speech",
+    "uz",
+    "base_model:kyutai/pocket-tts",
+    "base_model:quantized:kyutai/pocket-tts",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1938670937,
+  "storage_human": "1.9 GB",
+  "context_length": null,
+  "base_model": "kyutai/pocket-tts",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

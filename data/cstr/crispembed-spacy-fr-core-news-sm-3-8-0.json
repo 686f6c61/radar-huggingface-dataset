@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "cstr/crispembed-spacy-fr-core-news-sm-3.8.0",
+  "slug": "cstr-crispembed-spacy-fr-core-news-sm-3-8-0",
+  "author": "cstr",
+  "url": "https://huggingface.co/cstr/crispembed-spacy-fr-core-news-sm-3.8.0",
+  "created_at": "2026-11-18T18:43:28.000Z",
+  "updated_at": "2026-11-18T19:19:02.000Z",
+  "license": "lgpl-lr",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "crispembed",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "crispembed",
+    "gguf",
+    "spacy",
+    "french",
+    "pos-tagging",
+    "dependency-parsing",
+    "lemmatization",
+    "named-entity-recognition",
+    "fr",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 78,
+  "trending_score": 0,
+  "parameters": 3194023,
+  "parameters_human": "3.2M",
+  "storage_bytes": 48171720,
+  "storage_human": "48 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

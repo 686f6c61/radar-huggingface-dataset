@@ -5,13 +5,14 @@
   "author": "SZLHOLDINGS",
   "url": "https://huggingface.co/SZLHOLDINGS/salad-ring-ouro-l120",
   "created_at": "2026-11-19T04:55:58.000Z",
-  "updated_at": "2026-11-23T01:01:03.000Z",
-  "license": null,
-  "license_family": "unknown",
+  "updated_at": "2026-11-25T03:03:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,

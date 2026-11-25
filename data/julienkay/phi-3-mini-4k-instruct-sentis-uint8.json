@@ -5,7 +5,7 @@
   "author": "julienkay",
   "url": "https://huggingface.co/julienkay/Phi-3-mini-4k-instruct-sentis-uint8",
   "created_at": "2026-11-24T13:24:56.000Z",
-  "updated_at": "2026-11-24T13:53:59.000Z",
+  "updated_at": "2026-11-24T15:07:30.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

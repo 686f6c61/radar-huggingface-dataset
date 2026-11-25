@@ -5,14 +5,15 @@
   "author": "SZLHOLDINGS",
   "url": "https://huggingface.co/SZLHOLDINGS/salad-acoustic-governance-r1",
   "created_at": "2026-11-18T02:53:10.000Z",
-  "updated_at": "2026-11-23T00:10:23.000Z",
-  "license": null,
-  "license_family": "unknown",
+  "updated_at": "2026-11-25T03:02:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
     "safetensors",
+    "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,

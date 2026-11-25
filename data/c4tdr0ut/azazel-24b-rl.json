@@ -46,8 +46,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "c4tdr0ut/Azazel-24B-SFT",
+  "renamed_at": "2026-11-25T08:09:38.368Z",
   "benchmarks": [],
   "sources": []
 }

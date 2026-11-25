@@ -35,11 +35,11 @@
   "is_conversational": false,
   "gated": true,
   "disabled": false,
-  "removed": true,
-  "removed_at": "2026-11-12T04:46:05.238Z",
-  "removal_pattern": "short_lived",
-  "renamed_to": null,
-  "renamed_at": null,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "assassin58/sn58-r6a-012500",
+  "renamed_at": "2026-11-25T07:39:32.729Z",
   "benchmarks": [],
   "sources": []
 }

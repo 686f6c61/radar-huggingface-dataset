@@ -5,7 +5,7 @@
   "author": "appcrafttechnologies",
   "url": "https://huggingface.co/appcrafttechnologies/aurdio-intent-qwen2.5-0.5b-gguf",
   "created_at": "2026-11-23T22:36:16.000Z",
-  "updated_at": "2026-11-23T22:37:16.000Z",
+  "updated_at": "2026-11-24T08:34:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 85,
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",

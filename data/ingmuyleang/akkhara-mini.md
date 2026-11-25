@@ -2,95 +2,98 @@
 
 ## Resumen
 
-Akkhara-mini es un modelo de traducción especializado en transliteración de *Sing Khmer* (khmer escrito con letras latinas, tal como se usa en chats y mensajería) a escritura khmer nativa. Lo desarrolla Ing Muyleang y se publica bajo licencia Apache-2.0. Se trata de un modelo T5 encoder-decoder entrenado desde cero, con 17,8 millones de parámetros, diseñado explícitamente para ejecutarse en CPU, teléfonos y teclados sin GPU.
+Akkhara-mini es un modelo encoder-decoder de estilo T5, con 17,8 millones de parámetros, desarrollado por Ing Muyleang para convertir *Sing Khmer* (jémer escrito con letras latinas, tal como se teclea en chats) en escritura jémer nativa, devolviendo una lista ordenada de cinco sugerencias al estilo de un IME (input method editor). Su propósito es servir como motor de transliteración y romanización dentro de un teclado móvil, por lo que prima la latencia baja y el funcionamiento totalmente offline sobre la precisión absoluta en textos formales.
 
-El modelo resuelve un problema muy concreto del ecosistema khmer: la entrada de texto en dispositivos móviles mediante romanización informal. A diferencia de su hermano mayor (akkhara-byt5-small, 300M parámetros), Akkhara-mini opera sobre caracteres individuales en lugar de bytes, con un vocabulario de 243 tokens que cubre latín, khmer, dígitos y puntuación, de modo que cada letra khmer supone un único paso de decodificación.
+El modelo trabaja a nivel de carácter, con un tokenizador que emplea 6 tokens por carácter en el encoder y 3 en el decoder, y está pensado para ejecutarse en teléfonos: el export ONNX en int8 ocupa 18,5 MB y produce la primera sugerencia en torno a 10 ms en un Android reciente. Se distribuye con pesos safetensors para `transformers` y con un export ONNX Runtime (`encoder.onnx`/`decoder.onnx` y variantes int8) para despliegue en móvil, web y otros entornos.
 
-Su relevancia actual radica en la eficiencia: es 17 veces más pequeño y entre 9 y 13 veces más rápido en CPU que el modelo de 300M, manteniendo una precisión comparable en conversaciones reales (64% top-1 y 79% top-5 en el conjunto de chat real). Está pensado como backend de teclados (IME), extensiones de navegador y servidores de bajo coste, devolviendo una lista clasificada de cinco candidatos para que el usuario elija.
+Su relevancia actual radica en que cubre un nicho poco atendido: la entrada de texto jémer en dispositivos de gama baja y sin conexión, con soporte de code-mixing (palabras inglesas de chat que se mantienen tal cual) y un diccionario auxiliar de 46 abreviaturas. Frente al modelo hermano de 300M, ofrece un rendimiento muy cercano en conversación real (85 % frente a 87 % en top-1) con un tamaño 16 veces menor, a costa de algo menos de precisión en texto formal tipo noticia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder-decoder estilo T5 (6 capas encoder, 3 capas decoder, d_model 384, 6 cabezas, FFN gated-GELU de 1024, embeddings atados) |
+| Arquitectura | T5-style encoder-decoder, tokens a nivel de caracter (6 capas encoder + 3 capas decoder, d_model 384) |
 | Parametros totales | 17.797.248 (17,8M) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (entrenado con fragmentos de 2 a 12 palabras; se recomienda trocear en bloques de ~6 palabras) |
-| Tipos de cuantizacion | no disponible (pesos en float32, 71 MB) |
-| Idiomas soportados | Khmer (km); palabras inglesas en entradas mixtas se conservan en inglés |
-| Licencia | Apache-2.0 (acceso con aprobación manual mediante *gated access*) |
-| Formato de pesos | safetensors |
+| Longitud de contexto | no disponible (la model card recomienda trocear en fragmentos de ~6 palabras) |
+| Tipos de cuantizacion | ONNX int8 (18,5 MB); pesos safetensors en precisión original; otras cuantizaciones no disponibles |
+| Idiomas soportados | Jémer (km); palabras inglesas de chat en entradas mixtas se mantienen en inglés (en) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors y ONNX (`encoder.onnx`, `decoder.onnx`, `encoder.int8.onnx`, `decoder.int8.onnx`) |
 
 ## Arquitectura y entrenamiento
 
-Akkhara-mini es un Transformer secuencia-a-secuencia de arquitectura T5 entrenado desde inicialización aleatoria, no fine-tuneado. El encoder tiene 6 capas y el decoder 3, con dimensión de modelo 384, 6 cabezas de atención, FFN gated-GELU de 1024 y embeddings atados. La innovación principal es la tokenización a nivel de carácter con un vocabulario de 243 símbolos (latín, khmer, dígitos y puntuación), frente al enfoque basado en bytes del modelo grande; esto reduce a un solo paso de decodificación la generación de cada letra khmer, en lugar de tres.
+Se trata de un transformer encoder-decoder de estilo T5 con un tokenizador de granularidad de carácter (6 tokens por carácter en el encoder, 3 en el decoder), 6 capas en el encoder y 3 en el decoder, y dimensión de modelo 384. Esta configuración prioriza el coste computacional mínimo por token, coherente con su objetivo de inferencia en dispositivo. El pipeline recomendado ejecuta el encoder una vez por frase y el decoder una vez por letra jémer generada, con búsqueda voraz o beam search de 5 haces.
 
-El entrenamiento se realizó sobre 327.000 pares sintéticos (Sing Khmer → Khmer), los mismos que la ronda v4 del modelo grande: Wikipedia en khmer (CC BY-SA), MADLAD-400 km (ODC-BY), CC-100 km, unas 5.000 frases de chat generadas por IA con filtrado automático, frases de contraste por plantilla, grafías nativas de hablantes y 405 frases de chat real etiquetadas por un asistente de IA (no publicadas). Se usó objetivo de entropía cruzada con *teacher forcing*, optimizador AdamW con LR 1e-3, 500 pasos de calentamiento, decaimiento lineal y recorte de gradiente 1.0; batch de 384 (128 × 3 GPU en DDP), 12 épocas, 10.236 pasos, precisión bfloat16. El entrenamiento completo llevó unos 12 minutos en 3× RTX 4090.
+El entrenamiento se realizó sobre 398.000 pares Sing Khmer → jémer, incluidos 134 nombres de ministerios, universidades y bancos de Camboya, recopilados, generados, limpiados y revisados por el autor con ayuda de herramientas de IA (agy, Claude). El dataset asociado es `muyleanging/Akkhara-Sing-Khmer`, con acceso bajo petición. No se publican detalles de hardware, tiempo de entrenamiento ni hiperparámetros, ni consta el uso de RLHF o DPO. El modelo incluye además un fichero `abbreviations.tsv` con 46 abreviaturas mapeadas a su forma jémer completa, que es una lista aplicada externamente y no un conocimiento aprendido por la red.
 
 ## Capacidades
 
-- Transliteración de romanización informal khmer (*Sing Khmer*) a escritura khmer nativa.
-- Generación de una lista clasificada de hasta 5 candidatos (top-5) mediante búsqueda por haces, pensada para interfaces de selección tipo IME.
-- Modo de decodificación voraz (*greedy*) para escritura en tiempo real con latencia mínima.
-- Manejo de *code-mixing*: las palabras inglesas presentes en la entrada se mantienen en inglés en la salida.
-- Normalización de mensajes de chat antes de pasarlos a otros modelos de PLN en khmer.
-- Ejecución en dispositivos sin GPU (CPU, teléfonos, servidores de bajo coste).
-- No soporta *tool calling*, agentes, razonamiento multi-paso, visión ni audio según la información disponible.
+- Transliteración de Sing Khmer a escritura jémer con salida de top-5 ordenado (IME).
+- Romanización inversa implícita: interpreta secuencias latinas como fonética jémer.
+- Code-mixing: conserva palabras inglesas de chat (`benchmark`, `laptop`, `deadline`) y ofrece la grafía jémer de préstamo en el top-5 cuando existe (`deadline` → ដេតឡាញ, `internet` → អ៊ីនធឺណិត).
+- Resolución de abreviaturas de chat (`tmr` → ស្អែក, `sry` → សុំទោស, `gn` → រាត្រីសួស្តី, `btw` → ម្យ៉ាងទៀត, `wyd` → ធ្វើអីហ្នឹង).
+- Desambiguación por contexto limitada: el mismo par latino puede leerse de forma distinta según los vecinos (`ng` = និង / នឹង / ហ្នឹង).
+- Ejecución offline en dispositivo mediante ONNX Runtime int8.
+- No dispone de tool calling, function calling, capacidades de agente, visión ni audio.
 
 ## Casos de uso
 
-- Teclados móviles e IME en khmer: el modelo actúa como backend que recibe la romanización del usuario y devuelve el top-5 de candidatos; con 19 ms por frase en modo voraz sobre CPU Apple M4 Pro, la latencia es imperceptible durante la escritura.
-- Extensiones de navegador para chat web: permite convertir texto romanizado a khmer directamente en el cliente sin enviar datos a un servidor, gracias a sus 71 MB en float32.
-- Normalización previa de mensajes en pipelines de PLN: convierte mensajes de chat romanizados a escritura estándar antes de pasarlos a modelos de análisis de sentimiento, clasificación o traducción en khmer.
-- Aplicaciones de mensajería en servidores de bajo coste: al ejecutarse en CPU con 4,5 ms por frase en una RTX 4090 por lotes y 35 ms en CPU para top-5, permite desplegar el servicio sin infraestructura GPU.
-- Herramientas de accesibilidad y aprendizaje del alfabeto khmer: la lista top-5 expone las ambigüedades (por ejemplo, `ng` → និង / នឹង) y ayuda al usuario a aprender las correspondencias.
-- Prototipado e investigación en transliteración: el modelo, pequeño y entrenado desde cero, sirve como línea base reproducible para experimentos de romanización khmer con un coste computacional mínimo (12 minutos en 3× RTX 4090).
+- Teclado móvil con autocompletado: integrado en la aplicación Akkhara Keyboard, el modelo recibe la secuencia latina tecleada y devuelve cinco candidatos en jémer; con el export int8 la primera sugerencia llega en unos 10 ms en un Android reciente, lo que permite actualizar la barra de sugerencias sin bloquear la escritura.
+- Mensajería instantánea en jémer: usuarios que escriben con caracteres latinos por comodidad obtienen la frase en escritura nativa, incluyendo abreviaturas de chat y palabras inglesas intercaladas, sin necesidad de conexión.
+- Normalización de corpus de chat: para equipos que recopilan conversaciones en Sing Khmer y necesitan convertirlas a escritura jémer antes de analizarlas, el modelo procesa lotes con `transformers` y devuelve top-5 para revisión manual de los casos ambiguos.
+- Entrada de datos en formularios y aplicaciones web: el export ONNX puede ejecutarse en el navegador o en el servidor para ofrecer sugerencias de escritura jémer a usuarios que no dominan el teclado nativo.
+- Búsqueda y coincidencia de nombres propios: al incluir 134 nombres de ministerios, universidades y bancos, permite mapear variantes latinas de esas entidades a su denominación oficial en jémer, con el apoyo del fichero de abreviaturas.
+- Transcripción asistida de mensajes cortos: para mensajes de hasta ~6 palabras, el modelo ofrece una primera opción fiable en conversación real (85 % top-1, 92 % top-5 en el conjunto de prueba de chat), adecuado para flujos de copia y pegado.
+- Prototipado de correctores ortográficos: la salida top-5 y la métrica CER permiten construir capas de reordenación o filtrado léxico posteriores sin reentrenar el modelo.
 
 ## Benchmarks y rendimiento
 
-| Modelo | Params | Test top-1 | Test top-5 | Test CER | Chat real top-1 / top-5 / CER | Glued (7) | Context (11) |
-|---|---|---|---|---|---|---|---|
-| akkhara-byt5-small v3 | 300M | 57,1% | 73,7% | 4,14% | 64% / 79% / 6,0% | 5 | 10 |
-| akkhara-mini v1 | 18M | 53,9% | 71,3% | 5,14% | 64% / 79% / 5,3% | 6 | 10 |
+Resultados publicados por el autor, con la misma búsqueda por haces (5 haces): split de test reservado de 7.821 frases, 39 frases reales de chat etiquetadas por un hablante nativo, 86 pruebas de contexto (la misma palabra de chat leída según sus vecinos) y 7 pruebas de palabras pegadas.
 
-| Medición (CPU Apple M4 Pro, 4 hilos, una frase) | akkhara-byt5-small v3 | akkhara-mini |
-|---|---|---|
-| Modo escritura (#1, voraz) | 171 ms | 19 ms |
-| Top-5 (5 haces) | 463 ms | 35 ms |
-| Tamaño | 1,2 GB | 71 MB |
+| Modelo | Test top-1 | Test top-5 | Test CER | Chat real top-1 / top-5 | Contexto #1 / top-5 | Pegadas |
+|---|---|---|---|---|---|---|
+| akkhara-mini (18M) | 58,1 % | 76,6 % | 4,55 % | 85 % / 92 % | 80 % / 99 % | 6/7 |
+| akkhara-byt5-small (300M) | 62,0 % | 79,7 % | 3,73 % | 87 % / 95 % | 80 % / 98 % | 7/7 |
 
-En RTX 4090 con procesamiento por lotes: 4,5 ms por frase. El conjunto de test tiene 7.821 frases retenidas, 33 frases de chat real etiquetadas a mano y dos conjuntos de desafío (palabras cortas pegadas y palabras dependientes del contexto).
+CER = proporción de letras incorrectas (menor es mejor). Top-5 = la frase correcta está entre las cinco sugerencias. En texto formal tipo noticia, el modelo de 300M es algo más preciso.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en float32 (71 MB de pesos más activaciones); no requiere GPU.
-- GPU recomendadas: ninguna imprescindible; funciona en CPU. En RTX 4090 alcanza 4,5 ms por frase con lotes.
-- Cabe en cualquier GPU de consumo e incluso en dispositivos móviles; también se ejecuta en CPU de portátiles y teléfonos.
-- Opciones de despliegue: transformers (AutoModelForSeq2SeqLM), text-generation-inference (etiqueta declarada), endpoints compatibles; no se documentan integraciones con vLLM, llama.cpp u Ollama.
-- Latencia y throughput: 19 ms por frase en modo voraz y 35 ms para top-5 en CPU Apple M4 Pro con 4 hilos; 4,5 ms por frase en RTX 4090 por lotes.
+- VRAM estimada para inferencia: inferior a 1 GB en fp32 para los 17,8M de parámetros; el export int8 ocupa 18,5 MB en disco y se ejecuta en CPU sin GPU dedicada.
+- GPU recomendadas: no necesarias; cualquier GPU moderna (RTX 4090, A100, H100) puede ejecutarlo, pero el caso de uso objetivo es CPU móvil.
+- Cabe en cualquier GPU de consumo e incluso en teléfonos de gama media; el autor reporta ~10 ms para la sugerencia #1 con int8 en un Android reciente.
+- Opciones de despliegue: `transformers` con `AutoModelForSeq2SeqLM` (safetensors), ONNX Runtime (encoder/decoder y variantes int8), integración en la app de teclado. No se documenta soporte específico de vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: ~10 ms por sugerencia #1 en Android con int8; sin datos publicados de throughput por lote ni de latencia en servidor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Params | Contexto | Precisión chat real (top-1/top-5/CER) | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Rendimiento (chat real top-1) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| akkhara-mini | 18M | no disponible | 64% / 79% / 5,3% | Apache-2.0 | Hugging Face (acceso con aprobación) |
-| akkhara-byt5-small v3 | 300M | no disponible | 64% / 79% / 6,0% | no disponible | Hugging Face |
-| Otros modelos de transliteración khmer | no disponible | no disponible | no disponible | no disponible | no disponible |
+| akkhara-mini | 17,8M | no disponible | 85 % | Apache-2.0 | Hugging Face (safetensors + ONNX) |
+| akkhara-byt5-small | 300M | no disponible | 87 % | no disponible en la información proporcionada | Hugging Face |
+| Otros modelos de transliteración jémer | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+La comparación directa disponible se limita al modelo hermano de 300M del mismo autor: akkhara-mini pierde entre 2 y 4 puntos en test y chat real, pero es 16 veces más pequeño y apto para ejecución en dispositivo. No se han identificado en la información proporcionada otros modelos comparables de transliteración Sing Khmer → jémer.
 
 ## Limitaciones y advertencias
 
-- Entrenado mayormente con pares sintéticos procedentes de texto periodístico y enciclopédico más frases de chat generadas por IA; el conjunto de test de chat real solo tiene 33 frases, por lo que la estimación de precisión en conversación real es poco robusta.
-- Aproximadamente un punto porcentual más de tasa de error de caracteres que el modelo grande en texto formal.
-- Las abreviaturas cortas siguen siendo ambiguas (`ng` puede ser និង o នឹង; también `dl`, `bn`); la respuesta correcta suele estar en el top-5, no necesariamente en la primera posición.
-- El modelo conoce palabras malsonantes propias del chat real, lo que puede ser inadecuado en entornos moderados.
-- No debe usarse para traducción a otros idiomas ni para texto formal o legal sin revisión humana; para ese caso se recomienda el modelo grande.
-- El acceso está restringido mediante aprobación manual del autor (*gated access*), lo que condiciona la disponibilidad inmediata.
-- El código de entrenamiento es privado por el momento.
-- La licencia Apache-2.0 permite uso comercial, pero la puerta de acceso puede limitar la distribución y el despliegue automatizado.
+- Entrenado mayoritariamente con pares sintéticos; el conjunto de prueba de chat real es pequeño (39 frases), por lo que la estimación de precisión en conversación tiene alta incertidumbre.
+- Las abreviaturas cortas siguen siendo ambiguas (`ng`, `yt`, `dl`, `bn`); la respuesta correcta suele estar en el top-5 pero no siempre en la primera posición.
+- Menor precisión en texto formal tipo noticia que el modelo de 300M del mismo autor.
+- El modelo conoce palabras malsonantes de chat (aparecen en conversaciones reales), lo que puede producir sugerencias inapropiadas en entornos sensibles.
+- Recomendación de trocear entradas largas en fragmentos de ~6 palabras; no se documenta la longitud de contexto real.
+- El diccionario de abreviaturas (`abbreviations.tsv`) es una lista aplicada externamente, no conocimiento aprendido: su cobertura está limitada a 46 entradas.
+- No se publican detalles de entrenamiento (hardware, tiempo, hiperparámetros), lo que dificulta la reproducibilidad.
+- Licencia Apache-2.0: permite uso comercial, pero conviene revisar las condiciones del dataset asociado, cuyo acceso es bajo petición.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/INGMUYLEANG/akkhara-mini
-- Modelo hermano mayor: https://huggingface.co/INGMUYLEANG/akkhara-byt5-small
-- Demo: https://huggingface.co/spaces/INGMUYLEANG/akkhara-demo
-- Dataset: https://huggingface.co/datasets/INGMUYLEANG/akkhara-sing-khmer
+- Modelo hermano de 300M: https://huggingface.co/muyleanging/Akkhara-ByT5-Small-Khmer
+- Dataset: https://huggingface.co/datasets/muyleanging/Akkhara-Sing-Khmer
+- Demo: https://huggingface.co/spaces/muyleanging/Akkhara-Demo
+- Aplicación de teclado (repositorio): https://github.com/MuyleangIng/akkhara-keyboard
+- Última release del APK: https://github.com/MuyleangIng/akkhara-keyboard/releases/latest
+- Perfil del autor en Hugging Face: https://huggingface.co/muyleanging
+- Perfil del autor en GitHub: https://github.com/MuyleangIng

@@ -1,0 +1,86 @@
+{
+  "schema": 2,
+  "id": "LoganResearch/ARC-Cognitive-Qwen-7B",
+  "slug": "loganresearch-arc-cognitive-qwen-7b",
+  "author": "LoganResearch",
+  "url": "https://huggingface.co/LoganResearch/ARC-Cognitive-Qwen-7B",
+  "created_at": "2026-02-03T23:08:29.000Z",
+  "updated_at": "2026-11-25T09:21:06.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "cognitive_enhancement_adapter",
+    "cognitive-enhancement",
+    "behavioral-control",
+    "hidden-state-probing",
+    "fiber-projection",
+    "decode-time-intervention",
+    "qwen2",
+    "interpretability",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:cc-by-4.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3565757,
+  "storage_human": "4 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Cognitive Enhancement",
+      "dataset": null,
+      "metric": "Depth Probe Separation",
+      "value": 366
+    },
+    {
+      "task": "Cognitive Enhancement",
+      "dataset": null,
+      "metric": "Specificity Probe Separation",
+      "value": 215
+    },
+    {
+      "task": "Cognitive Enhancement",
+      "dataset": null,
+      "metric": "Calibration Probe Separation",
+      "value": 165
+    },
+    {
+      "task": "Cognitive Enhancement",
+      "dataset": null,
+      "metric": "Focus Probe Separation",
+      "value": 227
+    },
+    {
+      "task": "Cognitive Enhancement",
+      "dataset": null,
+      "metric": "Coherence Probe Separation",
+      "value": 191
+    }
+  ],
+  "sources": []
+}

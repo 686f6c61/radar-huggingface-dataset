@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "Maximilian228/Geode-TTS-fa",
+  "slug": "maximilian228-geode-tts-fa",
+  "author": "Maximilian228",
+  "url": "https://huggingface.co/Maximilian228/Geode-TTS-fa",
+  "created_at": "2026-11-22T00:58:01.000Z",
+  "updated_at": "2026-11-24T17:19:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "onnx",
+    "sherpa-onnx",
+    "kokoro",
+    "geode",
+    "on-device",
+    "text-to-speech",
+    "fa",
+    "base_model:xmanii/Ava-82M",
+    "base_model:quantized:xmanii/Ava-82M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 440440286,
+  "storage_human": "440 MB",
+  "context_length": null,
+  "base_model": "xmanii/Ava-82M",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

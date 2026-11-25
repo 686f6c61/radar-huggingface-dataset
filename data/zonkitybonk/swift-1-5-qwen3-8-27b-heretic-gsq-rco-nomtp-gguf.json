@@ -25,8 +25,8 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 1,
+  "downloads_30d": 45,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
@@ -43,8 +43,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Archivist15/Swift-1.5-Qwen3.8-27B-heretic-GSQ-RCO-noMTP-GGUF",
+  "renamed_at": "2026-11-25T07:00:21.091Z",
   "benchmarks": [],
   "sources": []
 }

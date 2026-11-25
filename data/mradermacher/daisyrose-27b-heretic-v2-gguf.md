@@ -2,49 +2,48 @@
 
 ## Resumen
 
-DaisyRose-27B-Heretic-v2-GGUF es una coleccion de cuantizaciones GGUF del modelo base DaisyRose-27B-Heretic-v2, publicada por mradermacher, un conocido creador de cuantizaciones para la comunidad de inferencia local. El modelo original, alojado por kelsey1337, es un derivado de la familia Qwen (etiquetado como "qwen3.8" en los tags) con aproximadamente 26.900 millones de parametros, afinado mediante tecnicas de "abliteration" o "heretic" que buscan eliminar los mecanismos de rechazo y censura del modelo original.
+DaisyRose-27B-Heretic-v2-GGUF es la versión cuantizada en formato GGUF del modelo kelsey1337/DaisyRose-27B-Heretic-v2, un modelo de lenguaje de aproximadamente 26.900 millones de parámetros (26,9B) derivado de la familia Qwen (etiquetado como "qwen3.8" en los tags del autor). El modelo base ha sido sometido a un proceso de "abliteration" (eliminación de las capas de rechazo o *refusal*) mediante la técnica denominada "Heretic", orientado a producir un modelo sin censura ("uncensored") para generación de texto conversacional en inglés.
 
-La relevancia de esta publicacion radica en que facilita el despliegue del modelo en hardware de consumo mediante el formato GGUF, compatible con llama.cpp, Ollama y otras herramientas de inferencia local. El repositorio incluye cuantizaciones estaticas desde Q2_K hasta Q8_0 y F16, ademas de suplementos multimodales (mmproj) en Q8_0 y F16, lo que sugiere que el modelo base incorpora capacidades de vision.
+La versión que nos ocupa ha sido generada por mradermacher, un conocido creador de cuantizaciones estáticas para la comunidad, e incluye un conjunto amplio de cuantizaciones que van desde Q2_K (11,2 GB) hasta Q8_0 (28,7 GB), además de complementos multimodales mmproj (proyector de visión) en Q8_0 y f16. Está publicada bajo licencia Apache 2.0 y solo declara soporte para inglés.
 
-Se trata de un modelo de nicho orientado a usos sin restricciones de contenido, con licencia Apache 2.0, soporte unicamente en ingles y sin resultados de benchmarks publicados en la informacion disponible.
+Es relevante ahora porque permite ejecutar un modelo de 27B en hardware de consumo mediante cuantizaciones agresivas (Q4_K_M ocupa 16,8 GB), y porque los modelos "abliterated/uncensored" son objeto de interés tanto para investigación sobre alineamiento y seguridad como para desarrolladores que necesitan un modelo sin restricciones de rechazo para tareas de generación creativa o análisis de contenido sensible. No se dispone de información sobre la longitud de contexto, la composición del dataset de entrenamiento ni resultados de benchmarks en la documentación proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivado de Qwen, segun tag "qwen3.8"); detalles no disponibles |
-| Parametros totales | 26.895.998.464 (~26,9 mil millones) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS; mmproj en Q8_0 y F16 |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Arquitectura | Transformer (derivado de Qwen; etiqueta "qwen3.8" en los tags). Detalles específicos no disponibles |
+| Parametros totales | 26.895.998.464 (~26,9B) |
+| Parametros activos | No aplica (no se indica que sea MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj Q8_0 y f16 (multimodal) |
+| Idiomas soportados | Inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la documentacion proporcionada. Los tags indican que deriva de la familia Qwen (etiqueta "qwen3.8"), lo que sugiere una arquitectura transformer densa con los componentes habituales de dicha familia (atención con RoPE, capas normalizadas, etc.), pero no se confirma ningun detalle especifico como el tipo de atencion, la composicion del dataset de entrenamiento ni el numero de tokens utilizados.
+El modelo base es kelsey1337/DaisyRose-27B-Heretic-v2, un modelo de aproximadamente 26,9B parámetros construido sobre una arquitectura transformer de la familia Qwen (según la etiqueta "qwen3.8"). Ha sido modificado mediante la técnica "Heretic" de abliteration, que consiste en identificar y neutralizar las direcciones de activación asociadas al comportamiento de rechazo, de modo que el modelo deja de negarse a responder a determinadas peticiones. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF o DPO tras la abliteration.
 
-El rasgo distintivo del modelo es su condicion de "heretic" y "abliterated": el modelo base ha sido sometido a un proceso de abliteration, una tecnica que identifica y neutraliza las direcciones del espacio de activaciones asociadas al rechazo de peticiones, con el objetivo de eliminar los comportamientos de negativa del modelo alineado original. No se documenta en la informacion disponible si hubo fases adicionales de RLHF, DPO u otro tipo de ajuste, ni se detalla la innovacion tecnica concreta aplicada por el autor del modelo base.
+La versión GGUF ha sido producida por mradermacher mediante cuantización estática (quantize_version 2, output_tensor_quantised 1, convert_type hf), generando las variantes listadas en la tabla anterior. Adicionalmente, el autor ofrece cuantizaciones ponderadas/imatrix en un repositorio separado (DaisyRose-27B-Heretic-v2-i1-GGUF). Se incluyen ficheros mmproj (proyector multimodal) en Q8_0 y f16, lo que sugiere que el modelo base incorpora capacidades de visión, aunque la model card no detalla su funcionamiento. No se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles.
-- Razonamiento y respuesta a instrucciones sin los filtros de rechazo habituales del modelo alineado original (comportamiento "uncensored").
-- Capacidades multimodales: la presencia de ficheros mmproj en el repositorio indica soporte de entrada de imagenes (vision), aunque no se detalla el alcance.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingues: limitadas al ingles segun la model card.
-- Modo "thinking" u otras capacidades especiales: no disponible.
+- Generación de texto conversacional en inglés, orientada a diálogo multi-turno.
+- Modelo "uncensored"/abliterated: no aplica las capas de rechazo habituales, por lo que responde a peticiones que un modelo alineado estándar rechazaría.
+- Soporte multimodal aparente: la presencia de ficheros mmproj (Q8_0 y f16) indica capacidad de procesamiento de imágenes, aunque no se detalla en la model card.
+- Compatibilidad con endpoints (tag "endpoints_compatible") para despliegue como servicio.
+- No se documenta soporte explícito de tool calling, function calling ni razonamiento multi-paso o modo "thinking".
+- Capacidades multilingües limitadas al inglés según la model card.
 
 ## Casos de uso
 
-- Investigacion sobre alineacion y seguridad: el modelo permite estudiar el efecto de la abliteration comparando sus respuestas con las del modelo alineado original, util para analizar que comportamientos de rechazo se eliminan y cuales persisten.
-- Generacion creativa sin restricciones: escritura de ficcion, guiones o narrativa con tematicas adultas o sensibles que los modelos alineados rechazarian, desplegable localmente con llama.cpp u Ollama.
-- Prototipado de personajes conversacionales: el modelo puede integrarse en aplicaciones de rol o compania virtual donde se requiere un tono sin filtros, ejecutandose en una sola GPU de consumo con cuantizaciones Q4_K_M.
-- Analisis de contenido multimodal: gracias a los suplementos mmproj, puede emplearse para describir o interpretar imagenes en pipelines locales, aunque el soporte de vision no esta documentado en detalle.
-- Evaluacion de cuantizaciones: el repositorio ofrece un espectro amplio de cuantizaciones (de Q2_K a F16), lo que permite medir el impacto de la compresion en la calidad de un modelo de ~27B en distintos presupuestos de VRAM.
-- Despliegue en entornos aislados: al ser GGUF y Apache 2.0, puede ejecutarse en maquinas sin conexion para tareas de generacion de texto en ingles donde la licencia permisiva es un requisito.
+- Generación creativa sin restricciones: escritura de ficción, guiones o narrativa que aborde temas sensibles (violencia, contenido adulto, temas controvertidos) donde un modelo alineado estándar aplicaría rechazos; el proceso de abliteration elimina esas barreras.
+- Investigación sobre alineamiento y seguridad: análisis comparativo del comportamiento de un modelo abliterated frente a su versión alineada, útil para estudiar qué direcciones de activación codifican el rechazo y cómo afecta la supresión a otras capacidades.
+- Análisis de contenido sensible: clasificación, resumen o extracción de información de textos que contienen material potencialmente ofensivo, donde los modelos censurados se niegan a procesar la entrada.
+- Despliegue local en estación de trabajo: con la cuantización Q4_K_M (16,8 GB) el modelo cabe en una GPU de consumo de 24 GB (RTX 3090/4090) o en configuraciones con offload parcial a CPU, permitiendo un asistente conversacional privado sin dependencia de API.
+- Prototipado de chatbots de personaje: el modelo base "DaisyRose" y su naturaleza sin censura lo hacen adecuado para role-play y personajes conversacionales con libertad expresiva, usando llama.cpp u Ollama para servir la inferencia.
+- Evaluación de cuantizaciones: la disponibilidad de once variantes GGUF permite a investigadores medir el impacto de la cuantización (de Q2_K a Q8_0) en la perplejidad y la calidad de generación sobre un mismo modelo base.
 
 ## Benchmarks y rendimiento
 
@@ -52,47 +51,48 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (modelo de ~26,9B parametros):
-  - F16: ~54 GB (no cabe en GPU de consumo).
-  - Q8_0: ~29 GB.
-  - Q6_K: ~22 GB.
-  - Q5_K_M: ~19 GB.
-  - Q4_K_M: ~16-17 GB.
-  - Q3_K_M: ~13-14 GB.
-  - Q2_K: ~10-11 GB.
-- GPU recomendadas: A100 40/80 GB o H100 para F16 y Q8_0; RTX 4090 (24 GB) para Q5_K_M y Q4_K_M; RTX 3090 (24 GB) para Q4_K_M; GPUs de 16 GB (RTX 4080, 4060 Ti 16 GB) para Q3_K_M o Q4_K_S con offloading parcial.
-- Cabe en GPU de consumo: si, en cuantizaciones Q4_K_M o inferiores en tarjetas de 16-24 GB; las cuantizaciones Q2_K y Q3_K_S permiten incluso configuraciones con 12 GB combinando RAM y VRAM.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF; los suplementos mmproj requieren runtimes con soporte multimodal (por ejemplo, llama.cpp con `--mmproj`).
-- Latencia y throughput: no disponibles; dependen del hardware y de la cuantizacion elegida.
+- VRAM estimada para inferencia según cuantización (tamaño del fichero + overhead de contexto/KV cache):
+  - Q2_K: ~11,2 GB, apto para GPU de 12-16 GB.
+  - Q3_K_M: ~13,6 GB, apto para GPU de 16 GB.
+  - Q4_K_S / IQ4_XS: ~15,5-15,7 GB, ajustado en GPU de 16 GB, holgado en 24 GB.
+  - Q4_K_M: ~16,8 GB, recomendado para RTX 3090/4090 (24 GB).
+  - Q5_K_M: ~19,4 GB, requiere 24 GB.
+  - Q6_K: ~22,2 GB, requiere 24 GB con margen limitado.
+  - Q8_0: ~28,7 GB, requiere GPU de 32 GB o superior (A100 40 GB, RTX 5090, etc.).
+- GPU recomendadas: RTX 3090/4090 (24 GB) para Q4-Q6; A100 40/80 GB, H100 o L40S para Q8_0 y contexto largo; GPU de 12-16 GB (RTX 4070 Ti Super, RTX 4080) para Q2_K/Q3.
+- Cabe en GPU de consumo: sí, desde Q2_K en 12 GB hasta Q6_K en 24 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python; servidores compatibles con endpoints OpenAI (tag "endpoints_compatible"). vLLM y TGI no soportan GGUF de forma nativa completa, por lo que para esos motores habría que usar el modelo base en safetensors.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| DaisyRose-27B-Heretic-v2-GGUF | ~26,9B | no disponible | Apache 2.0 | GGUF | Abliterated, solo ingles, vision via mmproj |
-| Qwen2.5-32B-Instruct | 32,5B | 128K (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF | Alineado, multilingue, benchmarks publicos |
-| Gemma-2-27B-it | 27B | 8K | Gemma license | safetensors, GGUF | Alineado, multilingue, restricciones de uso |
-| Mistral-Small-24B-Instruct | 23,6B | 32K | Apache 2.0 | safetensors, GGUF | Alineado, multilingue, benchmarks publicos |
+| DaisyRose-27B-Heretic-v2-GGUF | ~26,9B | No disponible | Apache 2.0 | GGUF | Abliterated, multimodal (mmproj), solo inglés |
+| Modelo base kelsey1337/DaisyRose-27B-Heretic-v2 | ~26,9B | No disponible | Apache 2.0 | Safetensors | Mismo modelo sin cuantizar; requiere más VRAM |
+| Qwen2.5-32B-Instruct (referencia de familia) | ~32B | 128K (según versión) | Apache 2.0 | Safetensors, GGUF | Alineado estándar, multilingüe; no abliterated |
+| mradermacher/DaisyRose-27B-Heretic-v2-i1-GGUF | ~26,9B | No disponible | Apache 2.0 | GGUF (imatrix) | Misma base con cuantizaciones ponderadas de mayor calidad |
 
-La comparativa se limita a tamano y licencia, ya que no hay datos de rendimiento del modelo evaluado. Frente a las alternativas alineadas, la diferencia principal es la ausencia de filtros de rechazo y la falta de benchmarks publicos que permitan verificar la degradacion de capacidades tras la abliteration.
+La comparación directa con modelos de la familia Qwen se ofrece solo como referencia de categoría; no se dispone de datos de rendimiento que permitan una comparación cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Al ser un modelo abliterated, puede generar contenido ofensivo, ilegal o danino sin rechazo; no es adecuado para aplicaciones orientadas al publico sin capas de moderacion externas.
-- No hay benchmarks publicados: se desconoce el impacto de la abliteration en tareas de razonamiento, codigo o matematicas, y es probable cierta degradacion respecto al modelo original.
-- Soporte unicamente en ingles; el rendimiento en castellano no esta garantizado.
-- Longitud de contexto no documentada; no se debe asumir una ventana larga sin verificacion empirica.
-- Riesgo de alucinacion no cuantificado; sin datos de evaluacion de fidelidad.
-- La licencia Apache 2.0 del repositorio GGUF es permisiva, pero conviene verificar la licencia y condiciones del modelo base (kelsey1337/DaisyRose-27B-Heretic-v2) y del modelo Qwen subyacente antes de uso comercial.
-- Repositorio con 0 descargas y 1 like en el momento de la consulta: sin validacion comunitaria ni evidencia de calidad.
-- El soporte multimodal depende de los ficheros mmproj, cuya integracion y calidad no estan documentadas.
+- Modelo abliterated/uncensored: no aplica rechazos de seguridad, por lo que puede generar contenido dañino, ilegal, ofensivo o sexualmente explícito. No es apto para aplicaciones de cara al público sin capas de moderación externas.
+- La abliteration puede degradar capacidades generales (razonamiento, seguimiento de instrucciones) respecto al modelo original; no se han publicado evaluaciones que cuantifiquen esta pérdida.
+- Riesgo elevado de alucinación: no se documentan datos de entrenamiento ni evaluaciones de fidelidad.
+- Soporte únicamente en inglés; el rendimiento en castellano u otros idiomas no está garantizado.
+- Longitud de contexto no documentada; planificar el despliegue con contexto conservador hasta verificarla empíricamente.
+- Licencia Apache 2.0 permite uso comercial, pero el desarrollador asume la responsabilidad legal y ética del contenido generado por un modelo sin alineamiento.
+- Las cuantizaciones de baja precisión (Q2_K, Q3_K_S) degradan notablemente la calidad; se recomienda Q4_K_M o superior para uso en producción.
+- El repositorio ocupa 189,4 GB por incluir todas las variantes; descargar solo el fichero GGUF necesario.
+- Solo 1 like y ~2.631 descargas en el momento de la ficha: modelo de nicho con escasa validación comunitaria.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/DaisyRose-27B-Heretic-v2-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/DaisyRose-27B-Heretic-v2-GGUF
 - Modelo base: https://huggingface.co/kelsey1337/DaisyRose-27B-Heretic-v2
-- Pagina de descargas del autor: https://hf.tst.eu/model#DaisyRose-27B-Heretic-v2-GGUF
-- FAQ y peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
-- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/DaisyRose-27B-Heretic-v2-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#DaisyRose-27B-Heretic-v2-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantización del autor: https://huggingface.co/mradermacher/model_requests
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

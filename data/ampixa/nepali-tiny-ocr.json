@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "ampixa/nepali-tiny-ocr",
+  "slug": "ampixa-nepali-tiny-ocr",
+  "author": "ampixa",
+  "url": "https://huggingface.co/ampixa/nepali-tiny-ocr",
+  "created_at": "2026-11-23T15:21:30.000Z",
+  "updated_at": "2026-11-24T18:34:16.000Z",
+  "license": "internal",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-text",
+  "library": "onnx",
+  "languages": [
+    "ne",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "ocr",
+    "nepali",
+    "devanagari",
+    "handwriting",
+    "cpu",
+    "image-to-text",
+    "ne",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 156232806,
+  "storage_human": "156 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

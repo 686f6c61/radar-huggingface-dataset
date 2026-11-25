@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "eteron/ZeroHero-Crafter-Visual-12.6M-PPO-RA-1B-steps",
+  "slug": "eteron-zerohero-crafter-visual-12-6m-ppo-ra-1b-steps",
+  "author": "eteron",
+  "url": "https://huggingface.co/eteron/ZeroHero-Crafter-Visual-12.6M-PPO-RA-1B-steps",
+  "created_at": "2026-11-25T12:44:36.000Z",
+  "updated_at": "2026-11-25T12:44:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "zerohero",
+    "reinforcement-learning",
+    "agent",
+    "crafter-visual",
+    "ppo-ra",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12593280,
+  "parameters_human": "12.6M",
+  "storage_bytes": 50388960,
+  "storage_human": "50 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Gemma-3-Fornax-V4-27B-QAT-GGUF",
+  "slug": "mradermacher-gemma-3-fornax-v4-27b-qat-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Gemma-3-Fornax-V4-27B-QAT-GGUF",
+  "created_at": "2025-06-08T08:00:22.000Z",
+  "updated_at": "2026-11-25T08:11:10.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma3",
+    "gemma",
+    "google",
+    "en",
+    "base_model:ConicCat/Gemma-3-Fornax-V4-27B-QAT",
+    "base_model:quantized:ConicCat/Gemma-3-Fornax-V4-27B-QAT",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 146,
+  "trending_score": 0,
+  "parameters": 27009346304,
+  "parameters_human": "27.01B",
+  "storage_bytes": 188136499328,
+  "storage_human": "188.1 GB",
+  "context_length": 131072,
+  "base_model": "ConicCat/Gemma-3-Fornax-V4-27B-QAT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

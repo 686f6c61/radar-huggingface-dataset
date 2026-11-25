@@ -1,0 +1,61 @@
+{
+  "schema": 2,
+  "id": "rithme3/trainer_output",
+  "slug": "rithme3-trainer_output",
+  "author": "rithme3",
+  "url": "https://huggingface.co/rithme3/trainer_output",
+  "created_at": "2026-11-25T12:26:55.000Z",
+  "updated_at": "2026-11-25T12:27:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "km"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "km",
+    "dataset:seanghay/khmer_mpwt_speech",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 243712896,
+  "parameters_human": "243.7M",
+  "storage_bytes": 974980542,
+  "storage_human": "975 MB",
+  "context_length": null,
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "seanghay/khmer_mpwt_speech",
+      "metric": "Wer",
+      "value": 54.734042553191486
+    }
+  ],
+  "sources": []
+}

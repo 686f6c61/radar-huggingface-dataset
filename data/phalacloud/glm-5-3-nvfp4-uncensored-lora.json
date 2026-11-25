@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "PhalaCloud/GLM-5.3-NVFP4-Uncensored-LoRA",
+  "slug": "phalacloud-glm-5-3-nvfp4-uncensored-lora",
+  "author": "PhalaCloud",
+  "url": "https://huggingface.co/PhalaCloud/GLM-5.3-NVFP4-Uncensored-LoRA",
+  "created_at": "2026-11-25T07:03:35.000Z",
+  "updated_at": "2026-11-25T07:08:26.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "glm-5.3",
+    "uncensored",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:nvidia/GLM-5.3-NVFP4",
+    "base_model:adapter:nvidia/GLM-5.3-NVFP4",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2913720,
+  "storage_human": "3 MB",
+  "context_length": null,
+  "base_model": "nvidia/GLM-5.3-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

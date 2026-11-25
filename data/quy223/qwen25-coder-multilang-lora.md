@@ -1,76 +1,88 @@
 # quy223/qwen25-coder-multilang-lora
 
 ## Resumen
-`quy223/qwen25-coder-multilang-lora` es un ajuste fino (SFT mediante TRL) del modelo `Qwen/Qwen2.5-Coder-3B-Instruct` de Alibaba Qwen. Lo publica el usuario independiente quy223 en Hugging Face. El nombre sugiere un enfoque en generacion de codigo multilingue, aunque la model card no documenta el conjunto de datos de entrenamiento utilizado.
 
-Se distribuye como adaptador LoRA (el repositorio ocupa 0,3 GB y los pesos estan en safetensors), por lo que requiere cargar el modelo base subyacente de 3 000 millones de parametros. La model card es una plantilla generada automaticamente por el Trainer de Hugging Face: no incluye datos de entrenamiento, evaluacion ni detalles del dataset.
+qwen25-coder-multilang-lora es un ajuste fino (fine-tuning) por SFT del modelo Qwen/Qwen2.5-Coder-3B-Instruct, publicado por el usuario quy223 en Hugging Face. Se distribuye como un adaptador LoRA entrenado con la librería TRL, por lo que hereda la arquitectura y las capacidades del modelo base de 3.000 millones de parámetros, un transformer denso orientado a generación de código de la familia Qwen2.5-Coder de Alibaba.
 
-Su relevancia es limitada: se trata de un experimento de ajuste fino sin benchmarks publicados, sin licencia declarada y sin descargas ni interacciones en el momento de la consulta. Resulta util solo como referencia de un flujo SFT completo con TRL sobre Qwen2.5-Coder.
+El modelo busca, segun su nombre, mejorar el soporte multilingue en tareas de programación, aunque la model card no documenta el dataset de entrenamiento, los idiomas cubiertos ni los hiperparámetros utilizados. Es relevante como ejemplo de adaptación ligera sobre un modelo coder compacto, apto para despliegues con recursos limitados, pero su falta de documentación limita seriamente su uso en producción.
+
+El repositorio ocupa 3,2 GB y contiene pesos en safetensors. No se especifican licencia, idiomas soportados ni pipeline de inferencia. El modelo base del que parte (Qwen2.5-Coder-3B-Instruct) sí cuenta con documentación pública de Alibaba, pero los datos concretos de este ajuste no están disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de Qwen2.5-Coder-3B-Instruct) |
-| Parametros totales | 3 000 millones en el modelo base; el adaptador LoRA no disponible |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la model card (el modelo base Qwen2.5-Coder-3B-Instruct soporta 32 768 tokens) |
-| Tipos de cuantizacion | no disponible (el adaptador es safetensors en precision de entrenamiento; el base admite cuantizacion habitual) |
-| Idiomas soportados | no disponible (el nombre indica "multilang", sin lista oficial) |
-| Licencia | no disponible (la model card incluye solo un campo "licence: license" sin valor) |
-| Formato de pesos | safetensors (adaptador LoRA, libreria transformers) |
+| Arquitectura | Transformer denso (heredada de Qwen2.5-Coder-3B-Instruct) |
+| Parametros totales | 3.000 millones (modelo base); adaptador LoRA de tamaño no disponible |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la model card (el base Qwen2.5-Coder soporta hasta 32.768 tokens, dato no confirmado para este ajuste) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; cuantizaciones GGUF/AWQ no publicadas) |
+| Idiomas soportados | no disponible (el nombre sugiere multilingue, sin detalle) |
+| Licencia | no disponible (la model card indica "licence: license" sin especificar) |
+| Formato de pesos | safetensors (adaptador LoRA sobre el base) |
 
 ## Arquitectura y entrenamiento
-El modelo es un ajuste fino por SFT (supervised fine-tuning) del instructivo Qwen2.5-Coder-3B-Instruct, que a su vez es un transformer decoder-only de 3B parametros de la familia Qwen2.5. El entrenamiento se realizo con TRL 1.17.1 sobre Transformers 5.22.2, PyTorch 2.14.1+cu130, Datasets 5.2.0 y Tokenizers 0.23.3. El tag `trl` y `sft` confirma el metodo, y `generated_from_trainer` indica que la model card se autogenero.
 
-No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset (presuntamente codigo en varios lenguajes), hiperparametros del SFT ni si hubo etapas de RLHF o DPO. Tampoco se especifica la configuracion del adaptador (rango, alpha, modulos objetivo). El unico indicio tematico es el sufijo `multilang-lora`, que sugiere ajuste sobre codigo en multiples lenguajes, pero no se aporta evidencia.
+El modelo es un ajuste fino supervisado (SFT) del Qwen2.5-Coder-3B-Instruct mediante TRL 1.18.2, sobre Transformers 5.24.0, PyTorch 2.14.1+cu130, Datasets 5.2.0 y Tokenizers 0.23.3. La arquitectura subyacente es la del modelo base: un transformer decoder-only denso de 3.000 millones de parámetros, con atención por grupos (GQA) y tokenizador BPE de Qwen. Al tratarse de un LoRA, el entrenamiento solo actualiza un subconjunto de pesos de bajo rango, lo que reduce el coste computacional del ajuste.
+
+No se documenta el número de tokens de entrenamiento, la composición del dataset, los idiomas de programación cubiertos, el rango del adaptador, la tasa de aprendizaje ni si hubo etapas de RLHF o DPO. La model card es una plantilla autogenerada por TRL y no incluye innovaciones técnicas adicionales más allá del propio ajuste SFT.
 
 ## Capacidades
-- Generacion de texto y codigo: hereda las capacidades del base Qwen2.5-Coder-3B-Instruct (autocompletado, generacion de funciones, explicaciones).
-- Razonamiento y matematicas: disponibles segun el modelo base, no verificadas en este ajuste.
-- Tool calling / function calling: no documentado en la model card; el base lo soporta.
-- Agentes y razonamiento multi-paso: no documentado especificamente para este ajuste.
-- Multilingue: el nombre del modelo sugiere soporte multilingue de codigo, sin lista oficial de idiomas.
-- Modo "thinking": no disponible en la familia Qwen2.5-Coder base.
-- Vision y audio: no soportados.
+
+- Generación de código en múltiples lenguajes (según el nombre del modelo; sin lista confirmada).
+- Razonamiento sobre código y completado de funciones, heredado del base Qwen2.5-Coder.
+- Instrucciones conversacionales (el base es una variante Instruct).
+- Soporte de tool calling y function calling: no confirmado para este ajuste; el base Qwen2.5-Coder-Instruct lo soporta.
+- Capacidades de agente y razonamiento multi-paso: no confirmadas para este ajuste.
+- Capacidades multilingües en lenguaje natural: no documentadas.
+- Modo thinking, visión o audio: no disponibles.
 
 ## Casos de uso
-- Prototipado de autocompletado de codigo en varios lenguajes: se puede cargar el adaptador sobre el base Qwen2.5-Coder-3B-Instruct con `PeftModel` y probar generacion en distintos lenguajes, asumiendo que el SFT aporta algun refuerzo multilenguaje.
-- Experimentacion academica con TRL: sirve como ejemplo reproducible de un pipeline SFT completo (TRL 1.17.1, Transformers 5.22) para quien quiera replicar el flujo.
-- Base para nuevos ajustes finos: por ser LoRA, se puede combinar o continuar el entrenamiento sobre tareas concretas sin tocar los pesos del modelo original.
-- Evaluacion comparativa de adaptadores: util para medir si un SFT corto mejora o degrada el rendimiento del base en tareas de codigo, con generacion de tests unitarios como referencia.
-- Despliegue ligero en entornos de desarrollo: al requerir solo el base 3B cuantizado mas el adaptador de 0,3 GB, cabe en GPU de consumo y permite probar asistentes de codigo locales.
-- Generacion de documentacion tecnica en varios idiomas: si el ajuste multilingue funciona, puede redactar README y comentarios de codigo en distintos idiomas, aunque sin garantia documentada.
+
+- Prototipado de asistentes de código en local: al ser un LoRA sobre un modelo de 3B, puede ejecutarse en una GPU de consumo con cuantización del base, útil para entornos de desarrollo sin acceso a APIs externas.
+- Autocompletado en editores: el tamaño compacto permite integrarlo en plugins de IDE con latencia baja, siempre que se valide la calidad del ajuste.
+- Generación de tests unitarios: el modelo puede producir casos de prueba a partir de firmas de funciones, aprovechando la base coder.
+- Traducción entre lenguajes de programación: el nombre sugiere soporte multilingüe, aunque la cobertura real debe validarse empíricamente.
+- Experimentación académica con LoRA: sirve como ejemplo reproducible de pipeline SFT con TRL sobre un modelo coder.
+- Fine-tuning adicional: al ser un adaptador, puede combinarse con otros LoRA o servir de punto de partida para ajustes específicos de dominio.
+- Documentación automática de código: generación de docstrings y comentarios en varios idiomas, sujeto a validación de calidad.
 
 ## Benchmarks y rendimiento
+
 No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-- VRAM estimada para inferencia: no disponible en la model card; como referencia, el base Qwen2.5-Coder-3B-Instruct en fp16 ocupa unos 6 GB y en 4 bits aproximadamente 2 GB, mas el adaptador (0,3 GB).
-- GPU recomendadas: no documentadas; para el base 3B son suficientes una RTX 3060/4060 (12/8 GB) o superiores.
-- Cabe en GPU de consumo: si, al tratarse de un modelo de 3B con adaptador LoRA.
-- Opciones de despliegue: transformers con `pipeline` (segun la model card), y potencialmente vLLM, llama.cpp u Ollama si se fusiona el adaptador con el base y se convierte a GGUF; no verificado.
-- Latencia y throughput estimados: no disponibles.
+
+- VRAM estimada para inferencia del base 3B en fp16: aproximadamente 6-7 GB, incluyendo overhead de activaciones.
+- VRAM en cuantización 4-bit (si se generan pesos GGUF/AWQ, no publicados): aproximadamente 2-3 GB.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4070, RTX 4090 para fp16; A100/H100 solo si se requiere alto throughput.
+- Cabe en GPU de consumo: sí, en la mayoría de tarjetas con 8 GB o más en fp16, y en 4 GB con cuantización.
+- Opciones de despliegue: transformers (pipeline), vLLM, TGI y llama.cpp/Ollama solo si se convierten los pesos a GGUF (no publicado).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|
-| quy223/qwen25-coder-multilang-lora | 3B (base) + LoRA | no disponible | no disponible | Hugging Face (0 descargas) | SFT sin benchmarks |
-| Qwen/Qwen2.5-Coder-3B-Instruct | 3B | 32 768 tokens | Apache 2.0 | Hugging Face | Modelo base oficial, con benchmarks publicados |
-| Qwen/Qwen2.5-Coder-1.5B-Instruct | 1,5B | 32 768 tokens | Apache 2.0 | Hugging Face | Alternativa mas pequena de la misma familia |
-| deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct | 16B (MoE, 2,4B activos) | 128K tokens | Licencia DeepSeek | Hugging Face | Alternativa de mayor capacidad para codigo |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| quy223/qwen25-coder-multilang-lora | 3B (base) + LoRA | no disponible | no disponible | Hugging Face (282 descargas) |
+| Qwen/Qwen2.5-Coder-3B-Instruct | 3B | 32.768 tokens (según doc. oficial de Qwen) | Apache 2.0 (según doc. oficial de Qwen) | Hugging Face, ampliamente usado |
+| deepseek-ai/deepseek-coder-1.3b-instruct | 1,3B | 16.384 tokens (según doc. oficial) | DeepSeek License | Hugging Face |
+| codellama/CodeLlama-7b-Instruct-hf | 7B | 16.384 tokens (según doc. oficial) | Llama 2 Community License | Hugging Face |
 
 ## Limitaciones y advertencias
-- Ausencia total de documentacion: no se especifican datos de entrenamiento, hiperparametros, dataset ni evaluacion, lo que impide validar el ajuste.
-- Licencia indefinida: el campo "licence: license" no es una licencia valida; no se puede asumir uso comercial sin consultar al autor, y el modelo base es Apache 2.0.
-- Sin benchmarks ni descargas: no hay evidencia de mejora frente al base; el ajuste podria degradar capacidades (olvido catastrofico) al no haber evaluacion.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje; el SFT no lo mitiga y la falta de evaluacion impide cuantificarlo.
-- Idiomas no verificados: el sufijo "multilang" no se respalda con una lista oficial de idiomas ni con ejemplos.
-- Contexto: la model card no declara la ventana; se hereda la del base (32 768 tokens) solo si el adaptador no la modifica, algo no confirmado.
-- Uso en produccion desaconsejado: sin licencia clara, sin benchmarks y con 0 descargas, no es un artefacto validado.
+
+- Documentación prácticamente inexistente: la model card es una plantilla de TRL sin datos de entrenamiento, dataset ni evaluación.
+- Licencia no especificada: no se puede confirmar el uso comercial; además, la licencia del base Qwen2.5-Coder-3B-Instruct (Apache 2.0 según su documentación oficial) debe respetarse.
+- Idiomas y cobertura multilingüe sin verificar: el nombre sugiere multilingüismo, pero no hay lista de lenguajes ni evaluación.
+- Riesgo de alucinación de código: como todo modelo generativo, puede producir APIs inexistentes o código sintácticamente válido pero incorrecto; requiere tests.
+- Sin benchmarks publicados: imposible comparar su rendimiento real frente al base o a alternativas.
+- Sin cuantizaciones publicadas: el despliegue eficiente requiere convertir pesos manualmente.
+- Repositorio con 0 likes y 282 descargas: bajo respaldo comunitario, sin garantías de mantenimiento.
+- Fecha de creación futura en los metadatos (2026-11-13): posible inconsistencia en el registro, a verificar.
 
 ## Enlaces
-- Modelo en Hugging Face: https://huggingface.co/quy223/qwen25-coder-multilang-lora
+
+- Hugging Face: https://huggingface.co/quy223/qwen25-coder-multilang-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
 - Repositorio TRL: https://github.com/huggingface/trl
+- Documentación de Qwen2.5-Coder (Alibaba): no disponible en la información proporcionada.

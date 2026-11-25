@@ -2,111 +2,128 @@
 
 ## Resumen
 
-El modelo `sigmanih/Qwen-Qwen2.5-Coder-14B-Instruct-GGUF-Q8_0` es una cuantización GGUF en formato Q8_0 del modelo `Qwen/Qwen2.5-Coder-14B-Instruct`, publicada por el usuario `sigmanih` a través de su herramienta Sigma Studio. Se trata de un modelo de generación de texto especializado en código, con 14.770 millones de parámetros y una arquitectura `qwen2` (transformer decoder-only). La cuantización Q8_0 reduce el peso a 14,62 GB en disco, manteniendo una precisión cercana a la del modelo original, lo que permite ejecutarlo en hardware de consumo con suficiente memoria VRAM.
+Qwen-Qwen2.5-Coder-14B-Instruct-GGUF-Q8_0 es una cuantización en formato GGUF con precisión Q8_0 del modelo Qwen2.5-Coder-14B-Instruct, publicado por el usuario sigmanih a través de su herramienta Sigma Studio. No se trata de un modelo entrenado desde cero, sino de una redistribución del checkpoint oficial de Alibaba Qwen convertido a GGUF de 8 bits, orientada a inferencia local en GPU de consumo y a despliegues con llama.cpp u Ollama.
 
-El modelo original fue desarrollado por Alibaba Qwen y destaca por sus mejoras en generación, razonamiento y corrección de código respecto a CodeQwen1.5. Esta versión cuantizada está pensada para inferencia local de alta velocidad, asistentes de programación y loops de agentes autónomos. Su ventana de contexto es de 32.768 tokens, suficiente para manejar archivos de código extensos y conversaciones largas.
+El modelo base, Qwen2.5-Coder-14B-Instruct, es un transformer causal decoder-only de 14.770.033.664 parámetros (aproximadamente 14,8 mil millones) especializado en generación de código, con una ventana de contexto de 32.768 tokens según la model card del repositorio. Está afinado con instrucciones y soporta conversación multi-turno, tool calling y razonamiento paso a paso.
 
-## Especificaciones técnicas
+La relevancia de esta ficha concreta es práctica: ofrece los pesos del modelo en un formato listo para ejecutar sin necesidad de convertir safetensors, con un footprint de repositorio de 15,7 GB y un requisito estimado de unos 12,4 GB de VRAM para offload completo en GPU. Es una opción para desarrolladores que quieren un asistente de código local de gama media-alta sin depender de APIs.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `qwen2` (transformer decoder-only) |
-| Parametros totales | 14.770.033.664 (14B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 32.768 tokens |
-| Tipos de cuantizacion | Q8_0 (GGUF) |
-| Idiomas soportados | Inglés, italiano (según model card) |
-| Licencia | Other (según Hugging Face); el modelo base Qwen2.5-Coder-14B-Instruct es Apache-2.0 |
+| Arquitectura | Transformer causal decoder-only (CausalLM) |
+| Parametros totales | 14.770.033.664 (~14,8 B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 32.768 tokens (según model card del repositorio) |
+| Tipos de cuantizacion | Q8_0 (este repositorio); el modelo base admite otras cuantizaciones GGUF/AWQ/GPTQ en repositorios de terceros, no detalladas aquí |
+| Idiomas soportados | en, it (según metadatos del repositorio); el modelo base Qwen2.5-Coder está orientado principalmente a inglés y lenguajes de programación |
+| Licencia | other (el repositorio declara "other"; la model card muestra un badge Apache-2.0, dato contradictorio no resuelto) |
 | Formato de pesos | GGUF (Q8_0) |
+| Tamano del repositorio | 15,7 GB |
+| VRAM estimada (offload completo) | ~12,4 GB (según model card) |
+| RAM estimada (CPU/híbrido) | ~11,5 GB (según model card) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura base es `qwen2`, un transformer decoder-only con 48 capas y una dimensión oculta de 5120. El modelo original `Qwen2.5-Coder-14B-Instruct` fue entrenado por Alibaba Qwen con un enfoque específico en tareas de programación, incluyendo mejoras en generación de código, razonamiento y corrección de errores. Esta cuantización GGUF no altera los pesos del modelo; únicamente los convierte a un formato de 8 bits (Q8_0) para reducir el tamaño y acelerar la inferencia en CPU y GPU con llama.cpp. No se dispone de información detallada sobre el proceso de entrenamiento (datos, tokens, RLHF/DPO) en la documentación de esta cuantización.
+El modelo base Qwen2.5-Coder-14B-Instruct es un transformer decoder-only con atención causal estándar, sin mezcla de expertos. La información disponible no detalla el número exacto de tokens de entrenamiento, la composición del dataset ni las fases de alineación (SFT, RLHF o DPO) empleadas por Alibaba Qwen; estos datos no están disponibles en la documentación proporcionada. La model card del repositorio cuantizado tampoco aporta detalles sobre el proceso de conversión a GGUF más allá de indicar que se realizó mediante el módulo Model Hub de Sigma Studio.
+
+La innovación técnica de este repositorio concreto es la cuantización Q8_0, que preserva prácticamente la precisión del modelo en FP16/BF16 a costa de un mayor tamaño en disco (15,7 GB) frente a cuantizaciones más agresivas como Q4_K_M. La model card menciona un "Reasoning Mode Comparison" entre respuesta directa y cadena de pensamiento (CoT), pero no se especifica si ese modo es una capacidad nativa del modelo base o una funcionalidad del motor SigmaEngine; no hay información que permita confirmarlo.
 
 ## Capacidades
 
-- Generación de código en Python y otros lenguajes: resultados de HumanEval del 86% y MBPP del 89% en la evaluación propia del autor.
-- Razonamiento matemático: 100% en GSM8K y 89% en MATH.
-- Razonamiento científico y de sentido común: 100% en ARC-Challenge y 56% en HellaSwag.
-- Conocimiento general y razonamiento avanzado: 43% en MMLU y 44% en MMLU-Pro.
-- Factualidad y anti-alucinación: 67% en TruthfulQA.
-- Ventana de contexto larga de 32.768 tokens, adecuada para archivos de código extensos y conversaciones multi-turno.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y multi-step reasoning: recomendado en la model card para "loop de agentes autónomos y razonamiento", aunque no se detallan capacidades técnicas específicas.
-- Capacidades multilingües: declarado para inglés e italiano.
+- Generación de texto y conversación multi-turno en inglés e italiano, según los idiomas declarados en el repositorio.
+- Generación y completado de código, con especial énfasis en Python según los benchmarks reportados (HumanEval, MBPP).
+- Razonamiento matemático multi-paso (GSM8K, MATH) y razonamiento científico de nivel escolar (ARC-Challenge).
+- Soporte de tool calling y function calling, evaluado en la model card mediante un protocolo de agentes en sandbox.
+- Ejecución de tareas agénticas multi-paso con uso de sistema de ficheros en entorno aislado (Sandbox Jail).
+- Modo de razonamiento con cadena de pensamiento (CoT) frente a respuesta directa, según la comparativa de la model card.
+- Capacidad multilingüe limitada a los idiomas declarados (en, it); no se documentan otros idiomas.
+- No se documentan capacidades de visión, audio ni multimodalidad.
 
 ## Casos de uso
 
-- Asistente de programación local: el modelo puede ejecutarse con llama.cpp en una GPU con 16 GB de VRAM, ofreciendo sugerencias de código y explicaciones en tiempo real sin depender de servicios en la nube.
-- Autocompletado en entornos de desarrollo: gracias a su formato GGUF, puede integrarse en editores como VS Code a través de herramientas compatibles con llama.cpp, generando código contextual en función del archivo abierto.
-- Agentes autónomos de refactorización: la ventana de 32.768 tokens permite analizar archivos completos y proponer cambios estructurales, con razonamiento multi-step en loops de agente.
-- Educación en programación: el modelo puede generar ejercicios, explicar conceptos y corregir errores en tareas de estudiantes, tanto en inglés como en italiano.
-- Análisis de código legacy: al soportar contexto largo, puede revisar funciones extensas, detectar bugs y sugerir mejoras de rendimiento o legibilidad.
-- Automatización de scripts: generación de scripts de shell, Python o bash para tareas de CI/CD, gracias a su alta competencia en HumanEval y MBPP.
-- Soporte técnico bilingüe: al declarar soporte para inglés e italiano, puede utilizarse en sistemas de atención al cliente con respuestas técnicas en ambos idiomas.
+- Asistente de código en local: el modelo puede autocompletar y generar funciones Python completas, con un rendimiento reportado de 86% en HumanEval (6/7) y 89% en MBPP (8/9) en la evaluación del autor, lo que lo hace adecuado para entornos de desarrollo sin conexión.
+- Integración en pipelines de CI/CD: gracias al soporte de tool calling, puede invocarse desde scripts para generar tests, revisar diffs o proponer parches, siempre con validación humana posterior.
+- Agentes autónomos acotados: la model card reporta un 77,2% de adherencia al protocolo de herramientas y un 37,5% de completitud autónoma en 8 escenarios, lo que sugiere uso en tareas de automatización con supervisión y límites claros.
+- Atención al cliente técnica: con 32.768 tokens de contexto puede mantener conversaciones multi-turno con documentación extensa adjunta, aunque los idiomas declarados (en, it) limitan su uso en castellano sin evaluación adicional.
+- Tutoría de matemáticas y ciencias: los resultados de 100% en GSM8K y ARC-Challenge (9/9 cada uno) en la evaluación del autor indican utilidad para explicar problemas paso a paso, con verificación de resultados.
+- Prototipado de razonamiento con CoT: la comparativa No-Thinking (70,2%) frente a Deep Thinking (65,1%) permite experimentar con modos de razonamiento según el coste de latencia aceptable.
+- Despliegue en estación de trabajo con GPU de consumo: con ~12,4 GB de VRAM estimados, cabe en una RTX 4070 o RTX 3060 de 12 GB, permitiendo un asistente privado sin enviar código a servicios externos.
 
 ## Benchmarks y rendimiento
 
-Los siguientes resultados provienen de la evaluación publicada por el autor, realizada sobre una muestra reducida de cada dataset, no sobre la suite completa. No son comparables con ejecuciones completas de benchmarks estándar.
+Los datos siguientes provienen de la model card del autor y fueron medidos sobre un subconjunto de cada suite, no sobre el conjunto completo; el propio autor advierte que no son comparables con ejecuciones de suite completa. Temperatura 0.0, semilla 42, motor SigmaEngine.
 
-| Benchmark | Precisión | Correctos / Total |
+| Benchmark | Dominio | Correctos / Total | Precision |
+|---|---|---|---|
+| ARC-Challenge | Ciencia y razonamiento escolar | 9 / 9 | 100% |
+| GSM8K | Matemáticas multi-paso | 9 / 9 | 100% |
+| MATH | Matemáticas de competición | 8 / 9 | 89% |
+| MBPP | Programación Python con tests | 8 / 9 | 89% |
+| HumanEval | Programación Python (pass@1) | 6 / 7 | 86% |
+| BIG-Bench Hard | Lógica y simbolismo multi-tarea | 5 / 7 | 71% |
+| TruthfulQA | Factualidad y anti-alucinación | 6 / 9 | 67% |
+| HellaSwag | Sentido común y NLI situacional | 5 / 9 | 56% |
+| MMLU-Pro | Razonamiento multi-paso avanzado | 4 / 9 | 44% |
+| MMLU | Conocimiento general multi-materia | 6 / 14 | 43% |
+| GPQA | Razonamiento académico de posgrado | 2 / 9 | 22% |
+| Total | Todas las suites evaluadas | 68 / 100 | 68% |
+
+Comparativa de modos de razonamiento:
+
+| Modo | Precision | Preguntas superadas | Perfil |
+|---|---|---|---|
+| No-Thinking (respuesta directa) | 70,2% | 40 / 57 | Latencia mínima, sin tokens de razonamiento |
+| Deep Thinking (CoT) | 65,1% | 28 / 43 | Traza de razonamiento multi-paso, delta de -5,1% |
+
+Métricas del protocolo agéntico (Sandbox Jail):
+
+| Métrica | Resultado | Detalle |
 |---|---|---|
-| ARC-Challenge | 100% | 9 / 9 |
-| BIG-Bench Hard | 71% | 5 / 7 |
-| GPQA | 22% | 2 / 9 |
-| GSM8K | 100% | 9 / 9 |
-| HellaSwag | 56% | 5 / 9 |
-| HumanEval | 86% | 6 / 7 |
-| MATH | 89% | 8 / 9 |
-| MBPP | 89% | 8 / 9 |
-| MMLU | 43% | 6 / 14 |
-| MMLU-Pro | 44% | 4 / 9 |
-| TruthfulQA | 67% | 6 / 9 |
-| Total | 68% | 68 / 100 |
+| Adherencia al protocolo de herramientas | 77,2% | 71/92 criterios analíticos verificados |
+| Completitud autónoma de tareas | 37,5% | 3/8 escenarios completados con fichero objetivo exacto |
+| Contención en sandbox | 100% conforme | Cero intentos de escape del workspace |
+| Eficiencia de ejecución | 90 turnos (353,7 s) | Uso óptimo de turnos y tokens |
 
-Velocidad medida por el autor en una NVIDIA GeForce RTX 5070 Ti con 15,9 GB de VRAM:
-
-| Métrica | Valor |
-|---|---|
-| Decodificación de un solo stream | 37,3 tok/s |
-| Procesamiento de prompt | 305 tok/s |
-| Throughput agregado (varias peticiones) | 34,4 tok/s |
-
-Advertencia del autor: estas mediciones corresponden a una máquina concreta y no son extrapolables a otros hardware.
+No se han publicado en la información disponible resultados de benchmarks oficiales del modelo base Qwen2.5-Coder-14B-Instruct para comparar directamente.
 
 ## Requisitos de hardware
 
-- VRAM estimada: la cuantización Q8_0 ocupa 14,62 GB en disco; para inferencia con el contexto completo se recomienda al menos 16 GB de VRAM.
-- GPU recomendadas: NVIDIA GeForce RTX 5070 Ti (15,9 GB) es la máquina de referencia. También son adecuadas RTX 4090 (24 GB), A100 o H100 para entornos de producción.
-- Compatibilidad con GPU de consumo: sí, cabe en tarjetas de 16 GB o más. En GPUs de 12 GB la cuantización Q8_0 no cargará completa; se necesitaría una cuantización inferior como Q5_K_M o Q4_K_M.
-- Opciones de despliegue: llama.cpp (llama-cli) y Sigma Studio. También puede convertirse a otros formatos compatibles con GGUF, como Ollama, aunque no está listado oficialmente.
-- Latencia y throughput: 37,3 tok/s de decodificación en un solo stream y 305 tok/s de procesamiento de prompt en RTX 5070 Ti.
+- VRAM estimada para inferencia con offload completo en GPU: ~12,4 GB (Q8_0, según model card).
+- RAM estimada para ejecución en CPU o híbrida: ~11,5 GB.
+- GPU recomendadas por el autor: 12-16 GB de VRAM, por ejemplo RTX 3060 de 12 GB o RTX 4070.
+- Cabe en GPU de consumo: sí, en modelos con 12 GB o más de VRAM; en GPUs de 8 GB requeriría offload parcial a CPU y penalización de latencia.
+- Opciones de despliegue: llama.cpp, Ollama y otros runtimes compatibles con GGUF; el repositorio declara compatibilidad con endpoints. No se confirma soporte de vLLM o TGI para este formato concreto.
+- Latencia y throughput: no disponibles de forma desagregada; la model card reporta 353,7 s para 90 turnos agénticos en el entorno de evaluación, sin especificar la GPU utilizada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato |
-|---|---|---|---|---|
-| `sigmanih/Qwen-Qwen2.5-Coder-14B-Instruct-GGUF-Q8_0` | 14B | 32.768 | Other (HF) | GGUF Q8_0 |
-| `Qwen/Qwen2.5-Coder-14B-Instruct` (original) | 14B | 32.768 | Apache-2.0 | Safetensors |
-| `Qwen/Qwen2.5-Coder-14B-Instruct-GGUF` (oficial) | 14B | 32.768 | Apache-2.0 | GGUF (varias cuantizaciones) |
-| `CodeLlama-13B-Instruct` | 13B | 16.384 | Llama 2 Community | Safetensors |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Qwen2.5-Coder-14B-Instruct (GGUF Q8_0, este repo) | ~14,8 B | 32.768 | other (contradictorio con badge Apache-2.0) | GGUF | Cuantización Q8_0, ~12,4 GB VRAM |
+| Qwen2.5-Coder-14B-Instruct (original) | ~14,8 B | 32.768 | Apache-2.0 (según el proyecto Qwen) | safetensors | Requiere conversión o runtime que cargue safetensors |
+| Qwen2.5-Coder-7B-Instruct | ~7,6 B | 32.768 | Apache-2.0 (según el proyecto Qwen) | safetensors, GGUF | Menor huella de VRAM, menor capacidad esperada |
+| DeepSeek-Coder-V2-Lite-Instruct | ~16 B (MoE, ~2,4 B activos) | 128.000 | licencia propia de DeepSeek | safetensors, GGUF | Arquitectura MoE, contexto mucho mayor |
 
-No se dispone de benchmarks comparativos completos para los modelos alternativos en la información proporcionada.
+Los datos de rendimiento de los modelos alternativos no están disponibles en la información proporcionada, por lo que no se incluye comparación numérica de benchmarks.
 
 ## Limitaciones y advertencias
 
-- Los benchmarks publicados se han realizado sobre una muestra reducida de cada dataset (100 preguntas en total), por lo que no son representativos de una evaluación completa y no deben compararse con puntuaciones de suites estándar.
-- El rendimiento en razonamiento avanzado es limitado: GPQA con 22% y MMLU con 43% indican dificultades en tareas de nivel universitario y conocimiento general.
-- Riesgo de alucinación: TruthfulQA con 67% deja margen para respuestas incorrectas en contextos factuales.
-- El soporte de idiomas se limita a inglés e italiano según la model card; el uso en otros idiomas no está garantizado.
-- La licencia aparece como "other" en Hugging Face, lo que requiere verificar los términos exactos antes de un uso comercial.
-- La cuantización Q8_0 puede introducir pequeñas diferencias de precisión respecto al modelo original en safetensors.
-- No se proporciona información sobre soporte de tool calling, function calling, ni sobre medidas de seguridad o alineación.
+- Los benchmarks del autor se midieron sobre subconjuntos reducidos (por ejemplo, 7-14 preguntas por suite) y el propio autor advierte que no son comparables con ejecuciones de suite completa; tómense como indicativos, no como evaluación rigurosa.
+- GPQA con 22% y MMLU con 43% indican un rendimiento débil en conocimiento académico avanzado y cultura general; no es un modelo adecuado para preguntas factuales de dominio amplio sin verificación.
+- TruthfulQA al 67% sugiere un riesgo no despreciable de alucinación en afirmaciones factuales.
+- La licencia del repositorio es "other" y la model card muestra un badge Apache-2.0; esta contradicción debe resolverse consultando la licencia del modelo base Qwen2.5-Coder-14B-Instruct antes de cualquier uso comercial.
+- Los idiomas declarados son inglés e italiano; no hay evaluación de rendimiento en castellano, por lo que su uso en producción en español requiere validación propia.
+- La completitud autónoma en tareas agénticas es del 37,5% (3/8 escenarios), lo que desaconseja su uso sin supervisión humana en flujos críticos.
+- El modo Deep Thinking (CoT) obtuvo peor precisión que la respuesta directa (-5,1%) en la evaluación del autor, un resultado contraintuitivo que conviene verificar en el caso de uso concreto.
+- El repositorio tiene 276 descargas y 1 like, con muy poca validación comunitaria; no hay garantía de mantenimiento ni de soporte.
+- La cuantización Q8_0 ocupa 15,7 GB en disco, más que alternativas Q4, lo que puede ser un inconveniente en entornos con almacenamiento limitado.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/sigmanih/Qwen-Qwen2.5-Coder-14B-Instruct-GGUF-Q8_0
-- Sigma Studio (GitHub): https://github.com/Sigmanih/SigmaStudio
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
-- Cuantización GGUF oficial: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF
-- Modelo Qwen2.5-Coder-14B: https://huggingface.co/Qwen/Qwen2.5-Coder-14B
+- Repositorio Sigma Studio: https://github.com/Sigmanih/SigmaStudio
+- Perfil del autor en Hugging Face: https://huggingface.co/sigmanih
+- Licencia Apache-2.0 (referenciada en la model card): https://opensource.org/licenses/Apache-2.0

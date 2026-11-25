@@ -5,7 +5,7 @@
   "author": "SZLHOLDINGS",
   "url": "https://huggingface.co/SZLHOLDINGS/chaski-5050-v2-trained",
   "created_at": "2026-11-14T01:32:54.000Z",
-  "updated_at": "2026-11-22T23:30:02.000Z",
+  "updated_at": "2026-11-25T03:01:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "safetensors",
+    "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,

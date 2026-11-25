@@ -2,109 +2,108 @@
 
 ## Resumen
 
-`millrace-ai/qwenpu-qwen35-4b-iq2-m-stock-prism` es un checkpoint de investigación publicado por millrace-ai que combina los pesos cuantizados del modelo Qwen3.5-4B (en formato UD-IQ2_M, cuantización de Unsloth) con un circuito QwenPU compilado (RV32 más extensión vectorial) dentro de un único archivo GGUF. El objetivo no es servir un modelo conversacional convencional, sino demostrar la ejecución de un circuito invitado (guest) sobre las interfaces MTP (multi-token prediction) del runtime Prism b12128 en Windows con CUDA 12.4, usando el bloque MTP del modelo como sustrato de ejecución del circuito.
+Este repositorio no es un modelo de lenguaje convencional, sino un checkpoint de investigación que empaqueta en un único archivo GGUF los pesos del modelo Qwen3.5-4B (cuantizados en UD-IQ2_M por Unsloth) junto con un circuito RISC-V RV32 con extensiones vectoriales denominado QwenPU. Lo publica millrace-ai como artefacto de reproducibilidad para un preimpreso sobre ejecución de circuitos dentro del bloque MTP de un modelo de lenguaje. El objetivo es demostrar que un circuito huésped (el modelo de juguete stories260K de Karpathy) puede ejecutarse dentro de la arquitectura del modelo anfitrión, retransmitiendo sus acciones y peticiones de caché a través de las APIs MTP del runtime.
 
-El checkpoint parte del GGUF base `unsloth/Qwen3.5-4B-GGUF` (arquitectura `qwen35`, anchura oculta 2.560, 32 bloques de lenguaje más un bloque MTP de QwenPU) y le añade 18 tensores de circuito, incluyendo una embedding PQ2_0 propia. Los pesos de lenguaje originales se preservan byte a byte en sus 426 extensiones empaquetadas; el exportador rellena con ceros las FFN de 9.216 a 36.352 filas para igualar la anchura compartida. El resultado es un GGUF de 5.121.315.968 bytes (5,1 GB) con 444 tensores y 11.840.714.242 elementos contados por el Hub (incluyendo padding y circuito).
+El checkpoint declara una arquitectura `qwen35`, con anchura oculta de 2.560, 32 bloques de lenguaje más un bloque MTP que aloja el circuito, y una longitud de contexto declarada de 262.144 tokens en la cabecera del GGUF. El archivo final ocupa 5.121.315.968 bytes (unos 5,1 GB) y contiene 444 tensores con 11.840.714.242 elementos contados por el Hub, cifra que incluye relleno de ceros y el circuito compilado; los elementos reales del GGUF base son 4.205.751.296.
 
-Su relevancia es acotada pero específica: sirve como artefacto reproducible para validar ejecución determinista de un circuito RISC-V sobre un transformer cuantizado, con evidencia de retirements, escrituras ordenadas y coincidencia bit a bit frente a referencias en CPU. No es un modelo para producción conversacional, sino una pieza de verificación de runtime.
+Su relevancia es acotada pero específica: sirve como evidencia reproducible de una técnica de co-diseño hardware/software (ejecución de un intérprete RISC-V dentro de un transformer) y como banco de pruebas para las APIs MTP de Prism b12128. No está pensado como modelo de propósito general para producción, y su validación está atada a una build concreta del runtime en Windows con CUDA 12.4.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer `qwen35` (32 bloques de lenguaje + 1 bloque MTP QwenPU) con circuito RV32 + vectorial embebido |
-| Parámetros totales | 11.840.714.242 elementos GGUF contados por el Hub (incluye padding y circuito); 4.205.751.296 elementos en el host de lenguaje |
-| Parámetros activos | No aplica (no es MoE) |
+| Arquitectura | Transformer `qwen35` (32 bloques de lenguaje + 1 bloque MTP con circuito QwenPU RV32/vectorial) |
+| Parametros totales | 11.840.714.242 elementos de tensor GGUF (incluye relleno y circuito); 4.205.751.296 elementos en el GGUF base de lenguaje |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 262.144 tokens declarados en la cabecera del GGUF |
-| Tipos de cuantización | UD-IQ2_M para los pesos de lenguaje; PQ2_0 para la embedding del circuito; tipos propios del circuito preservados |
-| Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 (pesos de lenguaje); el circuito QwenPU conserva sus propios términos |
-| Formato de pesos | GGUF (archivo único `Qwen3.5-4B-UD-IQ2_M-QwenPU-Stock-Prism.gguf`, 5.121.315.968 bytes, SHA-256 `d2f72c07…7ba519`) |
+| Tipos de cuantizacion | UD-IQ2_M (Unsloth Dynamic IQ2_M) para los pesos de lenguaje; PQ2_0 para el embedding de acciones del circuito; tipos propios preservados en los tensores del circuito |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (archivo `Qwen3.5-4B-UD-IQ2_M-QwenPU-Stock-Prism.gguf`, 5.121.315.968 bytes, SHA-256 `d2f72c076264d28ec5e4a2d4d31a2834b8f32e09053a681b904b489c227ba519`) |
+
+Otros datos técnicos: anchura oculta 2.560, 36.352 filas de FFN por bloque, 444 tensores totales, 18 tensores de circuito añadidos, 426 extensiones de tensor originales preservadas byte a byte. El exportador rellena con ceros las FFN de lenguaje de 9.216 a 36.352 filas para igualar la anchura compartida de FFN.
 
 ## Arquitectura y entrenamiento
 
-El checkpoint no entrena un modelo nuevo: parte de Qwen3.5-4B (Alibaba Cloud), cuantizado por Unsloth a UD-IQ2_M, y le inyecta un circuito QwenPU (creado por Divyansh Agrawal) compilado como tensores adicionales dentro del mismo GGUF. La arquitectura del host es un transformer `qwen35` con anchura oculta 2.560 y 36.352 filas por FFN tras el padding aplicado por el exportador (originalmente 9.216). El bloque MTP del modelo ejecuta el circuito invitado, y el launcher (Run.ps1) se encarga de cargar el guest y retransmitir las acciones seleccionadas y las peticiones de caché del circuito mediante las APIs MTP existentes en Prism b12128.
+El modelo base es Qwen3.5-4B de Alibaba Cloud, un transformer denso de aproximadamente 4B parámetros, cuantizado por Unsloth a UD-IQ2_M (una cuantización dinámica de 2 bits con mezcla de precisión por capa). Sobre esa base, millrace-ai añade un bloque MTP que contiene el circuito QwenPU: una máquina RISC-V RV32 con unidad vectorial, con su propio embedding de acciones en formato PQ2_0 y 18 tensores adicionales. El circuito no se entrena; se compila y se empaqueta junto a los pesos, y el bloque MTP del modelo ejecuta sus operaciones.
 
-No hay información sobre datos de entrenamiento, número de tokens, composición del dataset ni fases de RLHF/DPO para este checkpoint: es un artefacto de empaquetado, no un modelo entrenado. La innovación técnica destacable es la convivencia en un solo GGUF de pesos de lenguaje cuantizados y un circuito RISC-V con embedding PQ2_0 propia, ejecutado de forma determinista sobre el bloque MTP. La validación reportada incluye coincidencia bit a bit del control de solo padding frente al UD-IQ2_M original en historiales seriales y batcheados hasta 64 tokens, y coincidencia exacta en fixtures escalares y vectoriales (316 retirements, 307 escrituras ordenadas).
+No hay información sobre datos de entrenamiento, número de tokens, composición del dataset ni procesos de RLHF/DPO en la información proporcionada. La innovación técnica destacable es la integración: el launcher carga el huésped y retransmite las acciones seleccionadas y peticiones de caché del circuito a través de las APIs MTP existentes en Prism b12128, de modo que el bloque MTP del modelo ejecuta el circuito. El checkpoint requiere soporte para tipos de tensor mixtos (incluido PQ2_0) y para las APIs de feedback y caché MTP para poder portarse.
 
 ## Capacidades
 
-- Generación de texto conversacional heredada de Qwen3.5-4B en su cuantización UD-IQ2_M, sujeta a la degradación propia de una cuantización de 2 bits.
-- Ejecución de un circuito RV32 con extensión vectorial (QwenPU) como guest sobre el bloque MTP del modelo.
-- Verificación determinista: el checkpoint está diseñado para reproducir retirements y escrituras ordenadas frente a referencias en CPU.
-- Soporte de captura de traza acotada (`Run.ps1 -Runtime .\prism-b12128 -OutDir .\bounded-capture`), que se detiene en el retirement 2.578 y guarda evidencia de caché física.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- Modo thinking, visión o audio: no disponibles en la información proporcionada.
+- Generación de texto conversacional heredada de Qwen3.5-4B (pipeline `text-generation`, tag `conversational`).
+- Ejecución de un huésped RISC-V RV32 con extensiones vectoriales dentro del bloque MTP (circuito QwenPU).
+- Retransmisión de acciones y peticiones de caché del circuito mediante las APIs MTP del runtime.
+- Handoff de estado de texto entre el circuito huésped y el checkpoint Qwen original (verificado en las pruebas).
+- Caché firmada F16 para el contexto del huésped (hasta 65.536 celdas en la ventana acotada probada).
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags).
+- No se documentan capacidades de tool calling, agentes, visión, audio ni modo thinking en la información disponible.
 
 ## Casos de uso
 
-- Verificación de runtimes de inferencia: el checkpoint permite comprobar que un runtime dado (Prism b12128 en Windows CUDA 12.4) ejecuta correctamente las APIs MTP y de caché, comparando retirements y escrituras ordenadas contra la referencia en CPU. Es su caso de uso principal y está documentado con evidencia adjunta.
-- Reproducción de experimentos de ejecución invitada: investigadores que trabajen en emulación de ISA sobre transformers pueden usar el par lenguaje+circuito como banco de pruebas reproducible con trazas firmadas y hashes de DLL y GGUF.
-- Validación de cuantizaciones de 2 bits: el control de solo padding demuestra que el padding introducido por el exportador no altera logits, estado KV ni estado recurrente, lo que sirve para auditar pipelines de cuantización IQ2_M.
-- Docencia y divulgación técnica: el ejemplo `stories260K` (modelo guest de Karpathy) imprime `Once upon a` y se detiene limpiamente, lo que permite ilustrar cómo un transformer aloja un circuito externo con resultados observables.
-- Auditoría de preservación de pesos: dado que las 426 extensiones empaquetadas originales se conservan byte a byte, el artefacto sirve para verificar que herramientas de empaquetado no corrompen pesos durante la inyección de tensores adicionales.
-- Desarrollo de portes a otros runtimes: el README indica que portar el checkpoint requiere soporte para sus tipos de tensor mixtos (incluida la embedding PQ2_0) y las APIs de feedback y caché MTP, por lo que el checkpoint actúa como caso de prueba para implementar esas interfaces en otros backends.
+- Reproducción de investigación: ejecutar el preimpreso de millrace.ai y sus artefactos fijados para validar la ejecución de un circuito RISC-V dentro de un transformer, usando el GGUF y el runtime Prism b12128 exactos.
+- Verificación de correctitud de runtime: comparar retirements arquitectónicos y escrituras ordenadas del huésped contra una referencia de CPU (se documentan 37.080 retirements y 55.375 escrituras en la verificación completa).
+- Banco de pruebas de APIs MTP: validar implementaciones de feedback y caché MTP en runtimes derivados de llama.cpp, comprobando el handoff de estado entre circuito y modelo de lenguaje.
+- Desarrollo de técnicas de co-diseño hardware/software: usar el checkpoint como donante de circuito para construir otros checkpoints combinados (el propio autor lo usa como donante en Bonsai 4B).
+- Docencia y demostración: mostrar de forma tangible cómo un modelo de lenguaje puede alojar un intérprete de instrucciones y ejecutar un programa guest (stories260K) que imprime "Once upon a".
+- Pruebas de cuantización extrema: evaluar el comportamiento de UD-IQ2_M con relleno de FFN y tipos de tensor mixtos en un pipeline real de inferencia en GPU.
+- Validación de memoria en GPUs antiguas: medir consumo de VRAM y RAM con un presupuesto conocido (5,73 GiB de VRAM dedicada y 5,72 GiB de RAM en las capturas documentadas) en una GTX 1080.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la información disponible. Los datos de rendimiento reportados son de ejecución del circuito y de la ventana de historia:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Los datos de rendimiento publicados son de validación del circuito y tiempos de ejecución:
 
-| Medición | Resultado |
+| Prueba | Resultado |
 |---|---|
-| Decodes en ventana de historia acotada | 82.090 decodes en 518,78 s (158,2 decodes/s) |
-| Verificación completa de tres tokens (post-seed) | 170,7 decodes/s de media |
-| Retirements verificados (traza completa) | 37.080 |
-| Escrituras ordenadas del guest (traza completa) | 55.375 |
-| Retirements en prefijo original stories260K | 2.578 |
-| Escrituras ordenadas en prefijo stories260K | 2.760 |
-| Celdas vivas en ventana de historia | 55.720 sobre contexto guest F16 de 65.536 celdas |
-| VRAM dedicada pico (proceso) | 5,73 GiB |
-| VRAM compartida pico (proceso) | 84 MiB |
-| VRAM total del dispositivo (pico) | 7,29 GiB (ventana) / 6,72 GiB (traza completa) |
-| RAM del proceso (working set) | 5,72 GiB |
-| Duración de captura completa del guest | 8 h 13 min 40 s (incluye setup y seeding) |
-
-Hardware de referencia: NVIDIA GTX 1080 con Windows y Prism b12128 (CUDA 12.4).
+| Control solo de relleno | Coincidencia bit a bit con los logits, KV y estado recurrente originales de UD-IQ2_M en historiales seriales y por lotes hasta 64 tokens |
+| Fixtures escalares y vectoriales | 316 retirements y 307 escrituras ordenadas coincidentes con la referencia de CPU |
+| Prefijo original stories260K | 2.578 retirements y 2.760 escrituras ordenadas exactas |
+| Ventana de historia acotada | 82.090 decodificaciones en 518,78 s (158,2 decodificaciones/s) |
+| Verificación completa de tres tokens | 37.080 retirements arquitectónicos y 55.375 escrituras del huésped coincidentes; 8 h 13 min 40 s de captura incluyendo setup; 170,7 decodificaciones/s en el bucle posterior a la siembra |
+| Operaciones VMAT verificadas | 726 |
+| Pico de memoria (ventana de historia) | 5,73 GiB VRAM dedicada de proceso, 84 MiB VRAM compartida, 7,29 GiB VRAM de dispositivo, 5,72 GiB RAM de proceso |
+| Pico de memoria (verificación completa) | 5,73 GiB VRAM dedicada, 84 MiB compartida, 6,72 GiB VRAM de dispositivo, 5,72 GiB RAM |
+| Celdas vivas en ventana acotada | 55.720 en un contexto huésped F16 de 65.536 celdas |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 6-7,3 GiB de VRAM total de dispositivo según las mediciones del autor en la GTX 1080; 5,73 GiB de VRAM dedicada del proceso.
-- GPU recomendadas: la validación se hizo exclusivamente en una GTX 1080; no hay datos publicados para A100, H100 o RTX 4090.
-- Cabe en GPU de consumo: sí, al menos en GTX 1080 (8 GB). El tamaño del archivo (5,1 GB) encaja en GPUs de 8 GB o más.
-- Opciones de despliegue: únicamente el runtime Prism b12128 para Windows CUDA 12.4 (archivos `llama-prism-b12128-d7b2896-bin-win-cuda-12.4-x64.zip` y `cudart-llama-bin-win-cuda-12.4-x64.zip`). No hay soporte documentado para vLLM, llama.cpp estándar, Ollama ni TGI, ya que el checkpoint requiere los tipos de tensor mixtos y las APIs MTP del runtime Prism.
-- Latencia y throughput: 158,2 decodes/s en ventana de historia y 170,7 decodes/s en la fase post-seed de la verificación completa, medidos en GTX 1080.
-- RAM del sistema: alrededor de 5,72 GiB de working set del proceso.
+- VRAM estimada para inferencia: en torno a 5,7-7,3 GiB de VRAM de dispositivo según las capturas documentadas con UD-IQ2_M y el circuito cargado.
+- RAM de proceso: aproximadamente 5,72 GiB de working set.
+- GPU validadas: GTX 1080 (Pascal, la única documentada explícitamente en las pruebas). No se documentan pruebas en A100, H100 ni RTX 4090.
+- Cabe en GPU de consumo: sí, al menos en GTX 1080 con 8 GB. El tamaño del archivo (5,1 GB) y el pico de VRAM medido lo permiten en GPUs de 8 GB o más.
+- Opciones de despliegue: exclusivamente el runtime Prism b12128 para Windows con CUDA 12.4 (build `d7b28968306207fd176e7ff10796ccb6be607865`), con los dos archivos ZIP oficiales (aplicación y runtime CUDA) extraídos en el mismo directorio. No se documenta compatibilidad con vLLM, llama.cpp estándar, Ollama ni TGI; el propio autor indica que portarlo requiere soporte para tipos de tensor mixtos (PQ2_0) y las APIs MTP.
+- Latencia y throughput: 158,2 decodificaciones/s en la ventana de historia acotada y 170,7 decodificaciones/s en el bucle posterior a la siembra, medidos en GTX 1080.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Runtime | Licencia |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Propósito |
 |---|---|---|---|---|---|
-| qwenpu-qwen35-4b-iq2-m-stock-prism | 11.840.714.242 elementos GGUF (4.205.751.296 en host de lenguaje) | 262.144 | UD-IQ2_M + PQ2_0 | Prism b12128 (Windows CUDA 12.4) | Apache-2.0 |
-| unsloth/Qwen3.5-4B-GGUF (base) | 4.205.751.296 elementos | 262.144 | UD-IQ2_M | llama.cpp y derivados | Apache-2.0 |
-| millrace-ai/qwenpu-bonsai-4b-stock-prism (donante del circuito) | No disponible | No disponible | No disponible | Prism b12128 | No disponible |
+| millrace-ai/qwenpu-qwen35-4b-iq2-m-stock-prism | 4,2B elementos base (11,8B contando relleno y circuito) | 262.144 tokens | GGUF UD-IQ2_M + circuito | Apache 2.0 | Checkpoint de investigación con circuito RISC-V embebido |
+| unsloth/Qwen3.5-4B-GGUF | ~4B | no disponible en la información | GGUF (incluye UD-IQ2_M) | Apache 2.0 (heredada) | Modelo de lenguaje cuantizado de propósito general |
+| millrace-ai/qwenpu-bonsai-4b-stock-prism | no disponible | no disponible | GGUF + circuito | no disponible en la información | Checkpoint hermano, donante del circuito QwenPU |
 
-La comparación relevante es con el GGUF base de Unsloth: mismo host de lenguaje y misma cuantización, pero sin el circuito QwenPU embebido ni el padding de FFN a 36.352 filas. El checkpoint Bonsai 4B actúa como donante del circuito y comparte los 18 tensores adicionales. No se dispone de datos de benchmarks de calidad para comparar rendimiento de lenguaje entre estos artefactos.
+La comparación con modelos de propósito general no es directa: este checkpoint añade un intérprete RISC-V y relleno de FFN que inflan el recuento de elementos, y su validación está atada a un runtime concreto. Frente al Qwen3.5-4B-GGUF de Unsloth, la diferencia principal es la presencia del circuito y del bloque MTP, no una mejora en capacidades de lenguaje.
 
 ## Limitaciones y advertencias
 
-- No es un modelo para uso conversacional en producción: es un checkpoint de investigación con un circuito embebido y un launcher específico.
-- El runtime está atado a Prism b12128 en Windows con CUDA 12.4; no funciona en llama.cpp estándar, Ollama, vLLM ni TGI sin implementar los tipos de tensor mixtos y las APIs MTP.
-- La cuantización UD-IQ2_M (2 bits) implica una degradación de calidad de lenguaje respecto al modelo original en precisión completa; no se han publicado evaluaciones de calidad.
-- El padding de FFN de 9.216 a 36.352 filas añade cómputo desaprovechado y aumenta el tamaño del archivo.
-- Riesgo de alucinación: no evaluado en la información proporcionada; aplicable el riesgo genérico de los modelos de lenguaje de 4B cuantizados a 2 bits.
-- Sesgos conocidos: no documentados en la información proporcionada.
-- Idiomas soportados: no disponibles; no se puede confirmar cobertura multilingüe.
-- La licencia Apache-2.0 cubre los pesos de lenguaje, pero el circuito QwenPU conserva sus propios términos (el README queda truncado en ese punto); conviene revisar la atribución completa antes de un uso comercial.
-- La captura completa del guest tarda más de 8 horas, lo que limita su uso interactivo.
-- El repositorio tiene 573 descargas y 0 likes en el momento de la consulta; es un artefacto de nicho con validación limitada a un único hardware y runtime.
+- No es un modelo para producción: es un checkpoint de investigación cuya validación es específica de Prism b12128 en Windows con CUDA 12.4.
+- El recuento de 11,8B elementos del Hub incluye relleno de ceros y el circuito compilado; no debe interpretarse como tamaño efectivo del modelo de lenguaje.
+- El relleno de FFN de 9.216 a 36.352 filas altera la geometría original de los tensores, aunque las 426 extensiones originales se preservan byte a byte.
+- Requiere soporte de tipos de tensor mixtos (PQ2_0) y de las APIs de feedback y caché MTP; los runtimes estándar de llama.cpp no lo cargarán.
+- No hay información sobre sesgos, riesgo de alucinación ni comportamiento multilingüe del modelo de lenguaje en la información proporcionada.
+- Los idiomas soportados no están documentados.
+- La licencia Apache 2.0 permite uso comercial del artefacto, pero el autor no ofrece garantías de correctitud fuera del entorno validado; el uso en producción sin validación propia es desaconsejable.
+- El launcher comprueba hashes del GGUF, ELF, probe y DLLs del runtime, y se detiene en el retirement 2.578; no es un servidor de inferencia general.
+- El contexto declarado de 262.144 tokens es una cabecera del GGUF; las pruebas documentadas solo cubren ventanas de 64 tokens y 65.536 celdas del huésped.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/millrace-ai/qwenpu-qwen35-4b-iq2-m-stock-prism
-- GGUF base de Unsloth (pin): https://huggingface.co/unsloth/Qwen3.5-4B-GGUF/blob/e87f176479d0855a907a41277aca2f8ee7a09523/Qwen3.5-4B-UD-IQ2_M.gguf
+- Preimpreso v1 y artefactos de reproducción: https://research.millrace.ai/bonsai-qwenpu/
+- GGUF base fijado (Unsloth Qwen3.5-4B UD-IQ2_M): https://huggingface.co/unsloth/Qwen3.5-4B-GGUF/blob/e87f176479d0855a907a41277aca2f8ee7a09523/Qwen3.5-4B-UD-IQ2_M.gguf
 - Checkpoint donante del circuito (Bonsai 4B): https://huggingface.co/millrace-ai/qwenpu-bonsai-4b-stock-prism
 - Evidencia de traza, handoff y recursos: https://github.com/tim-osterhus/qwenpu-bonsai/blob/d1bdc3f10e405494ee59f0f05262d2f476ac1204/results/forward/standard-layer/evidence-snapshot.json
-- Runtime Prism b12128 (Windows CUDA 12.4): https://github.com/PrismML-Eng/llama.cpp/releases/download/prism-b12128-d7b2896/llama-prism-b12128-d7b2896-bin-win-cuda-12.4-x64.zip
+- Repositorio qwenpu-bonsai: https://github.com/tim-osterhus/qwenpu-bonsai
+- Runtime Prism b12128 (aplicación Windows CUDA 12.4): https://github.com/PrismML-Eng/llama.cpp/releases/download/prism-b12128-d7b2896/llama-prism-b12128-d7b2896-bin-win-cuda-12.4-x64.zip
 - Runtime CUDA de Prism b12128: https://github.com/PrismML-Eng/llama.cpp/releases/download/prism-b12128-d7b2896/cudart-llama-bin-win-cuda-12.4-x64.zip
+- Repositorio de Prism ML (llama.cpp): https://github.com/PrismML-Eng/llama.cpp

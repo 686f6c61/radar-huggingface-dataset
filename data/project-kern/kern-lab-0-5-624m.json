@@ -5,7 +5,7 @@
   "author": "Project-KERN",
   "url": "https://huggingface.co/Project-KERN/KERN-Lab-0.5-624M",
   "created_at": "2026-11-24T18:39:31.000Z",
-  "updated_at": "2026-11-24T22:25:08.000Z",
+  "updated_at": "2026-11-24T23:38:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

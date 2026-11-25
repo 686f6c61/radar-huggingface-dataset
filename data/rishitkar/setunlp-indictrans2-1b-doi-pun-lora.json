@@ -1,0 +1,84 @@
+{
+  "schema": 2,
+  "id": "rishitkar/SetuNLP-indictrans2-1B-doi-pun-LoRA",
+  "slug": "rishitkar-setunlp-indictrans2-1b-doi-pun-lora",
+  "author": "rishitkar",
+  "url": "https://huggingface.co/rishitkar/SetuNLP-indictrans2-1B-doi-pun-LoRA",
+  "created_at": "2026-11-25T05:34:34.000Z",
+  "updated_at": "2026-11-25T06:02:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "peft",
+  "languages": [
+    "doi",
+    "pa"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "translation",
+    "machine-translation",
+    "dogri",
+    "punjabi",
+    "low-resource",
+    "indictrans2",
+    "setunlp",
+    "doi",
+    "pa",
+    "arxiv:2106.09685",
+    "base_model:ai4bharat/indictrans2-indic-indic-1B",
+    "base_model:adapter:ai4bharat/indictrans2-indic-indic-1B",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 424754968,
+  "storage_human": "425 MB",
+  "context_length": null,
+  "base_model": "ai4bharat/indictrans2-indic-indic-1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Dogri to Punjabi",
+      "dataset": null,
+      "metric": "BLEU (held-out test)",
+      "value": 52.93
+    },
+    {
+      "task": "Dogri to Punjabi",
+      "dataset": null,
+      "metric": "chrF++ (held-out test)",
+      "value": 65.15
+    },
+    {
+      "task": "Punjabi to Dogri",
+      "dataset": null,
+      "metric": "BLEU (held-out test)",
+      "value": 46.38
+    },
+    {
+      "task": "Punjabi to Dogri",
+      "dataset": null,
+      "metric": "chrF++ (held-out test)",
+      "value": 58.75
+    }
+  ],
+  "sources": []
+}

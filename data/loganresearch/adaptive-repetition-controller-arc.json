@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "id": "LoganResearch/Adaptive-Repetition-Controller-ARC",
+  "slug": "loganresearch-adaptive-repetition-controller-arc",
+  "author": "LoganResearch",
+  "url": "https://huggingface.co/LoganResearch/Adaptive-Repetition-Controller-ARC",
+  "created_at": "2026-01-17T21:58:22.000Z",
+  "updated_at": "2026-11-25T09:21:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "adaptive_repetition_controller",
+    "repetition-suppression",
+    "decode-time-intervention",
+    "llama",
+    "lora",
+    "research",
+    "degeneration",
+    "cf-hot",
+    "text-generation",
+    "en",
+    "base_model:LoganResearch/ARC-Base-8B",
+    "base_model:adapter:LoganResearch/ARC-Base-8B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 243556554,
+  "storage_human": "244 MB",
+  "context_length": null,
+  "base_model": "LoganResearch/ARC-Base-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "F1 Score",
+      "value": 0.99
+    }
+  ],
+  "sources": []
+}

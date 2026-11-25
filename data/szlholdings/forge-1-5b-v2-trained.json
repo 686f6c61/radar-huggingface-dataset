@@ -5,7 +5,7 @@
   "author": "SZLHOLDINGS",
   "url": "https://huggingface.co/SZLHOLDINGS/forge-1.5b-v2-trained",
   "created_at": "2026-11-14T00:03:21.000Z",
-  "updated_at": "2026-11-20T04:30:40.000Z",
+  "updated_at": "2026-11-25T03:01:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "safetensors",
+    "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,

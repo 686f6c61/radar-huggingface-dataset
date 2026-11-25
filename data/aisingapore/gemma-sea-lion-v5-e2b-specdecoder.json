@@ -44,12 +44,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 4,
+  "downloads_30d": 34,
   "trending_score": 0,
   "parameters": 324091136,
   "parameters_human": "324.1M",
-  "storage_bytes": 680568737,
-  "storage_human": "681 MB",
+  "storage_bytes": 648413004,
+  "storage_human": "648 MB",
   "context_length": null,
   "base_model": null,
   "formats": [

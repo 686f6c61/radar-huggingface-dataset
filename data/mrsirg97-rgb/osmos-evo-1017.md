@@ -2,95 +2,102 @@
 
 ## Resumen
 
-`osmos-evo-1017` es un repositorio auxiliar publicado por el usuario mrsirg97-rgb en Hugging Face que no contiene pesos de modelo, sino los artefactos necesarios para ejecutar DeepSeek-V4.1-Flash-1017 con el motor de inferencia `libosmos` sobre una APU AMD Strix Halo (Ryzen AI Max+ 395, gfx1151, 128 GB de memoria unificada). Concretamente, empaqueta el drafter de decodificacion especulativa DSpark de DeepSeek, requantizado a IQ2_XS, junto con tablas de seleccion de expertos por capa calculadas sobre texto de calibracion para las cuantizaciones UD-IQ1_S y UD-IQ1_M de unsloth.
+osmos-evo-1017 es un paquete de pesos cuantizados en formato GGUF para ejecutar el modelo DeepSeek-V4.1-Flash-1017 sobre hardware AMD Strix Halo (concretamente el Ryzen AI Max+ 395, arquitectura gfx1151, con 128 GB de memoria unificada). No se trata de un modelo entrenado desde cero, sino de una distribución de cuantizaciones optimizadas y un drafter de decodificación especulativa que el autor, mrsirg97-rgb, empaqueta junto a su herramienta libosmos. El modelo base es DeepSeek-V4.1-Flash-1017, con 96.323.502.080 parámetros totales según los safetensors del repositorio base.
 
-El problema que resuelve es de ingenieria de despliegue: en hardware con memoria unificada y ancho de banda limitado como Strix Halo, colocar el drafter y los expertos del modelo base en el mismo espacio de memoria compite por recursos. El autor reduce el drafter de 7,97 GB a 4,68 GB mediante requantizacion de sus 3 x 128 expertos con los cuantizadores de ggml, y anade ficheros de "picks" que indican que expertos prioriza el router en cada capa, de modo que `libosmos` pueda decidir que mantener residente en la GPU.
+La contribución principal del repositorio no son los pesos completos (que el instalador descarga desde los repositorios de unsloth, fijados a un commit y a un SHA-256), sino las diferencias y parches que permiten reconstruir dos packs propios, `osmos-evo` y `osmos-evo-A`, a partir de las cuantizaciones UD-IQ1_M y UD-IQ2_XXS de unsloth. Estos packs incorporan requantizaciones selectivas de tensores (expertos enrutados, atención y cabeza de salida) y un drafter DSpark de DeepSeek requantizado a IQ2_XS, con el objetivo de mejorar la calidad y la velocidad de decodificación en un equipo de consumo con memoria unificada.
 
-Es relevante ahora porque documenta una via practica para servir un modelo MoE de gran tamano en hardware de consumo profesional, con metricas de decodificacion medidas y reproducibles, y porque todo el pipeline (pesos base, empaquetado, requantizacion) es MIT. El repositorio ocupa 4,7 GB y no incluye los pesos del modelo base, que el instalador descarga desde sus repositorios originales fijados a un commit y a un SHA-256.
+El interés actual del repositorio radica en que demuestra una técnica de ajuste fino de cuantizaciones guiada por evaluación (midiendo divergencia KL contra los pesos originales y pruebas de recuperación a 1M de tokens), algo poco habitual en distribuciones GGUF. Todo el contenido es MIT y está pensado para un nicho muy concreto: inferencia local de un modelo de ~96B parámetros en un solo equipo AMD con 128 GB de memoria compartida.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (modelo base DeepSeek-V4.1-Flash-1017) con drafter de decodificacion especulativa DSpark (3 bloques `mtp`) |
-| Parametros totales | no disponible |
+| Arquitectura | no disponible (modelo base DeepSeek-V4.1-Flash-1017; presumiblemente transformer con expertos enrutados, no confirmado en la informacion) |
+| Parametros totales | 96.323.502.080 |
 | Parametros activos | no disponible |
-| Longitud de contexto | 1.048.576 tokens (packs `ud-iq1_s` y `ud-iq1_m`) |
-| Tipos de cuantizacion | UD-IQ1_S (pack speed) y UD-IQ1_M (pack quality) para los pesos del modelo; drafter con expertos en IQ2_XS, matrices densas Q8_0, cabezas en BF16; tabla Engram en MXFP8 |
+| Longitud de contexto | 1.048.576 tokens (segun la tabla de packs del repositorio) |
+| Tipos de cuantizacion | GGUF: UD-IQ1_M, UD-IQ1_S, UD-IQ2_XXS (unsloth); IQ1_S, IQ2_XXS, Q2_K, Q5_K, Q8_0, MXFP4, MXFP8 en tensores concretos; drafter en IQ2_XS |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (pesos de unsloth) mas ficheros binarios propios del repo (`dspark.bin`, `dspark.json`, `osmos-picks.bin`) |
+| Formato de pesos | GGUF (parches y deltas; los pesos completos se descargan de repositorios externos) |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no entrena ningun modelo: distribuye artefactos derivados de DeepSeek-V4.1-Flash-1017, un modelo MoE de DeepSeek. El componente principal es el drafter DSpark, correspondiente a los tres bloques `mtp` del modelo original (ficheros `model-00044` a `model-00046`). El empaquetado lo realiza `tools/ds4/drafter_pack.py` de Project Maya, que deja las matrices densas en Q8_0 y los expertos en MXFP4; despues, `tools/requant/requant_dspark` de osmos requantiza los 3 x 128 expertos a IQ2_XS con los cuantizadores de ggml (llama.cpp), reduciendo el drafter de 7,97 GB a 4,68 GB y liberando memoria de GPU para los expertos del modelo base. Las cabezas se mantienen en BF16.
+No se dispone de informacion sobre la arquitectura interna del modelo base DeepSeek-V4.1-Flash-1017 en la documentacion proporcionada; el repositorio solo describe el proceso de cuantizacion y empaquetado. Los indicios (expertos enrutados, router, proyecciones gate/up/down, bloques `mtp`) apuntan a una arquitectura de mezcla de expertos con decodificacion especulativa multi-token, pero no se confirma de forma explicita. Tampoco hay datos sobre el numero de tokens de entrenamiento, composicion del dataset ni si hubo RLHF o DPO.
 
-El segundo componente son los ficheros `osmos-picks.bin`, de 122.880 bytes cada uno, que registran por capa que expertos selecciona el router con mas frecuencia sobre texto de calibracion, para las cuantizaciones UD-IQ1_S y UD-IQ1_M. `libosmos` los usa para decidir que expertos mantiene primero en memoria de GPU, con un presupuesto que dimensiona automaticamente segun la memoria libre al arrancar (`--budget auto`). El repositorio incluye ademas una variante abliterated opcional como overlay (`--abliterated`) basada en el parche de huihui-ai (MIT), aplicada en tiempo de carga y desactivada por defecto.
+La innovacion tecnica del repositorio es el proceso de construccion de los packs. `osmos-evo-A` parte de UD-IQ1_M y aplica dos cambios evaluados contra los pesos originales: las proyecciones down de los expertos enrutados de las capas 20-39 se requantizan a Q2_K desde los originales MXFP4 con la matriz de importancia de unsloth, y la atencion (kv, q_a, q_b, output_a, output_b) y la cabeza de salida se requantizan a Q5_K mediante GPTQ. `osmos-evo` añade sobre esa base un parche que sustituye las proyecciones gate y up de los expertos enrutados de las capas 10-19 por las de UD-IQ2_XXS en IQ2_XXS. El drafter DSpark se empaqueta con matrices densas en Q8_0 y expertos en MXFP4, y luego se requantiza a IQ2_XS, reduciendolo de 7,97 a 4,68 GB. La seleccion de tensores se guio por una prueba de recuperacion a 1M de tokens (un codigo de acceso a 188K tokens de distancia) y biseccion de capas.
 
 ## Capacidades
 
-- Decodificacion especulativa: el drafter DSpark permite generar varios tokens por paso y validarlos contra el modelo objetivo, con incrementos medidos de 18,8 a 37,5 tok/s en el pack `ud-iq1_s` y de 16,0 a 28,6 tok/s en `ud-iq1_m`.
-- Contexto largo: los packs configuran 1.048.576 tokens de ventana, adecuado para documentos extensos y conversaciones multi-turno largas.
-- Reproducibilidad bit a bit de la salida en decodificacion greedy, segun el autor.
-- Gestion dinamica de memoria: ajuste del presupuesto de expertos en GPU al arrancar segun memoria libre.
-- Overlay de abliteration opcional para eliminar rechazos del modelo base, aplicado solo si se solicita.
-- Las capacidades funcionales (razonamiento, codigo, matematicas, tool calling, multilingue) heredan las del modelo base DeepSeek-V4.1-Flash-1017; la model card de este repositorio no las detalla, por lo que no se dispone de listado especifico.
+- Generacion de texto y razonamiento: hereda las capacidades del modelo base DeepSeek-V4.1-Flash-1017, aunque no se detallan en la informacion disponible.
+- Recuperacion de contexto largo: el repositorio documenta una prueba de recuperacion de un hecho a 188K tokens de distancia, con todos los hechos del test de 1M recordados y cada token de respuesta como primera eleccion del modelo.
+- Decodificacion especulativa: incluye el drafter DSpark de DeepSeek (tres bloques `mtp`) requantizado, que permite decodificar en modo borrador con incrementos de velocidad de hasta ~85% en los packs medidos.
+- Reproducibilidad bit a bit: la salida se declara reproducible bit a bit en las condiciones de la suite de evaluacion.
+- Variante abliterada opcional: overlay `--abliterated` con el parche de huihui-ai (MIT), desactivado por defecto.
+- Soporte de tool calling, agentes, vision, audio o modo thinking: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Inferencia local de un MoE grande en una APU Strix Halo: el pack `ud-iq1_s` permite servir DeepSeek-V4.1-Flash-1017 en un Ryzen AI Max+ 395 con 128 GB de memoria unificada, sin GPU discreta, a unas decenas de tokens por segundo.
-- Procesamiento de documentos muy largos: con 1.048.576 tokens de contexto se pueden analizar expedientes, bases de codigo o transcripciones completas en una sola pasada, algo inviable en modelos con ventanas de 32K o 128K.
-- Asistentes conversacionales de larga duracion: el contexto extendido mantiene el historial completo de una sesion sin truncado ni resumen intermedio.
-- Evaluacion de decodificacion especulativa: el repositorio sirve como referencia reproducible para medir el impacto de un drafter requantizado en latencia y throughput, con comandos y cifras publicados.
-- Despliegue en entornos con restricciones de energia: el autor reporta que osmos completa el bench de 4 agentes de Project Maya en un 20 % menos de tiempo con un 13 % menos de energia por token respondido frente a Maya 1.1.53, lo que resulta util en estaciones de trabajo alimentadas por bateria o con presupuesto termico ajustado.
-- Investigacion sobre seleccion de expertos: los ficheros `osmos-picks.bin` permiten estudiar el comportamiento del router por capa y experimentar con politicas de residencia de expertos en memoria.
-- Variantes sin rechazos: el overlay `--abliterated` habilita casos de uso creativos o de investigacion donde los rechazos del modelo base resultan un obstaculo, manteniendo la opcion desactivada por defecto.
+- Inferencia local de un modelo de ~96B en un solo equipo: el pack esta disenado para ejecutarse en un Ryzen AI Max+ 395 con 128 GB de memoria unificada, lo que permite tener un modelo grande en un equipo de sobremesa sin GPU dedicada de gran VRAM.
+- Recuperacion de informacion en contextos muy largos: con 1.048.576 tokens de contexto y la prueba documentada de recuperacion a 188K tokens, es adecuado para analisis de repositorios completos, expedientes o transcripciones extensas en local.
+- Decodificacion de baja latencia en hardware AMD: el drafter DSpark permite pasar de 17,7 a 32,8 tok/s en el pack por defecto, util para asistentes interactivos donde la velocidad de generacion importa.
+- Flujos agénticos con trazas largas: el repositorio evalua explicitamente la divergencia KL sobre trazas de agente, lo que indica que el pack se ha optimizado para ese tipo de carga (razonamiento multi-paso con herramientas).
+- Despliegue sin conexion o con requisitos de privacidad: al ejecutarse en local con pesos verificados por SHA-256, encaja en entornos donde no se puede enviar datos a la nube.
+- Experimentacion con cuantizacion: sirve como caso de estudio reproducible para investigadores que quieran medir el impacto de requantizar tensores concretos (expertos, atencion, cabeza de salida) sobre la calidad, con comandos y numeros publicados en el repositorio.
+- Reproduccion de resultados: la salida bit a bit reproducible y los SHA-256 fijados permiten replicar exactamente las mediciones de velocidad y calidad en otro equipo Strix Halo.
 
 ## Benchmarks y rendimiento
 
-| Metrica | ud-iq1_s (speed) | ud-iq1_m (quality) |
-|---|---|---|
-| Decodificacion simple (tok/s) | 18,8 | 16,0 |
-| Decodificacion con drafter (tok/s) | 37,5 | 28,6 |
-| Rango con drafter segun prompt (tok/s) | 27 a 48 | no disponible |
-| Contexto (tokens) | 1.048.576 | 1.048.576 |
+Los datos publicados son de calidad relativa (divergencia KL por token contra una referencia construida con los pesos originales, menor es mejor) y de velocidad de decodificacion en el hardware objetivo:
 
-Condiciones declaradas por el autor: decodificacion greedy, media de tres prompts de 256 tokens, dos rondas intercaladas sobre una maquina en reposo. Frente a Project Maya 1.1.53 sobre los mismos ficheros, osmos lee prompts un 26 % mas rapido a 2K y un 11-12 % mas rapido a 8K, drafter un 6-8 % mas rapido y ejecuta el bench de 4 agentes de Maya en un 20 % menos de tiempo con un 13 % menos de energia por token; la decodificacion simple queda empatada. No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
+| Pack | KL Wiki text | KL trazas de agente | Top-1 (Wiki) | Hecho a 188K | Decode plano (tok/s) | Decode con drafter (tok/s) |
+|---|---:|---:|---:|---:|---:|---:|
+| `ud-iq2_xxs` | 0,126 | 0,036 | 92,4% | 0,983 | 14,2 | 26,0 |
+| `osmos-evo` | 0,158 | 0,042 | 91,2% | 0,955 | 17,7 | 32,8 |
+| `osmos-evo-a` | 0,175 | 0,0485 | 90,5% | 0,469 | 19,0 | 35,3 |
+| `ud-iq1_m` | 0,190 | 0,048 | 90,3% | no disponible | 17,6 | 35,1 |
+
+Condiciones de medida: decodificacion greedy con el perfil `performance` de AMD, 64K de contexto, tres preguntas de 256 tokens cada una y media de las tres. `osmos-evo` se midio en la version 0.7.6 de osmos y el resto en la 0.7.0. En el perfil `low-power`, `osmos-evo-A` decodifica 17,9 / 29,7 tok/s frente a 16,6 / 25,8 de UD-IQ1_M. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria: el escenario objetivo es una APU AMD Strix Halo con 128 GB de memoria unificada (Ryzen AI Max+ 395, gfx1151). El repositorio en si ocupa 4,7 GB, pero los pesos del modelo base se descargan aparte y no se indica su tamano total.
-- GPU recomendadas: AMD Strix Halo (gfx1151) es el objetivo declarado. No se documenta soporte para A100, H100 ni RTX 4090.
-- GPU de consumo: el modelo esta pensado para memoria unificada de 128 GB; no se indica que quepa en GPU de consumo con VRAM discreta.
-- Despliegue: motor `libosmos` (https://github.com/mrsirg97-rgb/libosmos), instalado con `python3 tools/install/osmos_install.py ud-iq1_s --serve` o `--rig`. Los pesos se obtienen de los GGUF de unsloth; no se mencionan vLLM, llama.cpp, Ollama ni TGI como alternativas de ejecucion para estos packs.
-- Latencia y throughput: 18,8 tok/s en simple y 37,5 tok/s con drafter para `ud-iq1_s`; 16,0 y 28,6 tok/s para `ud-iq1_m`, en las condiciones descritas arriba.
+- Hardware objetivo: AMD Ryzen AI Max+ 395 (Strix Halo, gfx1151) con 128 GB de memoria unificada. El repositorio no documenta otros equipos compatibles.
+- VRAM/memoria estimada: el repositorio ocupa 61,7 GB, pero el pack final se compone de UD-IQ1_M (descargado de unsloth) mas el delta de 33,66 GB y el parche de 23,36 GB; el drafter ocupa 4,68 GB. El instalador dimensiona el presupuesto de expertos a la memoria libre de la GPU al arrancar (`--budget auto`).
+- GPU dedicadas (A100, H100, RTX 4090): no disponible; el repositorio no menciona soporte ni mediciones en estas GPU.
+- Cabida en GPU de consumo: no hay datos para RTX 4090 u otras; el diseno asume memoria unificada de 128 GB.
+- Opciones de despliegue: libosmos (instalador propio, `python3 tools/install/osmos_install.py osmos-evo --serve` o `--rig`), sobre llama.cpp/ggml para las herramientas de cuantizacion y ensamblado. No se mencionan vLLM, TGI ni Ollama.
+- Latencia y throughput: 17,7 tok/s en plano y 32,8 tok/s con drafter para `osmos-evo`; 19,0 / 35,3 para `osmos-evo-A`; 14,2 / 26,0 para UD-IQ2_XXS. La velocidad con drafter varia segun el prompt.
+- Almacenamiento: en btrfs o XFS los bytes compartidos entre packs se clonan, por lo que el espacio extra es minimo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| osmos-evo-1017 (packs sobre DeepSeek-V4.1-Flash-1017) | no disponible | 1.048.576 | 18,8 / 37,5 tok/s (IQ1_S); 16,0 / 28,6 tok/s (IQ1_M) | MIT | Hugging Face, 0 descargas |
-| DeepSeek-V4.1-Flash-1017 (modelo base) | no disponible | no disponible | no disponible | MIT | Hugging Face (deepseek-ai) |
-| Project Maya 1.1.53 (motor comparado por el autor) | no aplica (motor) | no disponible | 26 % mas lento leyendo a 2K, 11-12 % a 8K; drafter 6-8 % mas lento | no disponible | no disponible |
+| Pack | Base | Calidad (KL trazas) | Top-1 Wiki | Hecho 188K | Decode plano / drafter (tok/s) | Licencia |
+|---|---|---:|---:|---:|---:|---|
+| `osmos-evo` | UD-IQ1_M + delta + parche | 0,042 | 91,2% | 0,955 | 17,7 / 32,8 | MIT |
+| `osmos-evo-a` | UD-IQ1_M + delta | 0,0485 | 90,5% | 0,469 | 19,0 / 35,3 | MIT |
+| `ud-iq1_m` (unsloth) | UD-IQ1_M | 0,048 | 90,3% | no disponible | 17,6 / 35,1 | MIT |
+| `ud-iq2_xxs` (unsloth) | UD-IQ2_XXS | 0,036 | 92,4% | 0,983 | 14,2 / 26,0 | MIT |
 
-No se dispone de datos de otros modelos de la misma categoria en la informacion proporcionada.
+La comparativa se limita a las cuantizaciones del mismo modelo base; no se dispone de datos frente a otros modelos de tamano o categoria similar. `osmos-evo` se situa a medio camino entre UD-IQ1_M y UD-IQ2_XXS en calidad, con 5,8 GB mas que `osmos-evo-A` y alrededor de un 5% menos de velocidad, y es un 25% mas rapido en plano y un 26% con drafter que UD-IQ2_XXS.
 
 ## Limitaciones y advertencias
 
-- El repositorio no contiene los pesos del modelo: sin ejecutar el instalador y descargar los GGUF de unsloth y el modelo base, no es funcional por si solo.
-- Las cifras de rendimiento las publica el autor del repositorio y no se han verificado de forma independiente; dependen del prompt, del estado de la maquina y de la version de `libosmos`.
-- El objetivo de hardware es muy especifico (Strix Halo, gfx1151, 128 GB); no hay evidencia de funcionamiento en otras plataformas.
-- Las cuantizaciones UD-IQ1_S y UD-IQ1_M son de muy baja precision (1 bit por peso en el segundo caso), lo que puede degradar la calidad frente a los pesos originales; el autor no publica evaluaciones de calidad.
-- El overlay abliterated elimina los rechazos del modelo base y puede producir contenido inapropiado; debe revisarse antes de cualquier uso en produccion.
-- No se documentan sesgos, idiomas soportados ni tasas de alucinacion del modelo base en esta model card.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin senales de validacion por parte de la comunidad.
-- La licencia MIT se aplica al empaquetado y a los derivados, pero conviene verificar las condiciones del modelo base y de los GGUF de unsloth antes de un uso comercial.
+- El repositorio no contiene los pesos completos: el instalador descarga UD-IQ1_M y UD-IQ2_XXS de unsloth; sin esos repositorios externos los parches no son utilizables.
+- El hardware soportado es muy especifico (AMD Strix Halo, gfx1151, 128 GB); no hay evidencia de funcionamiento en otras GPU.
+- Las mediciones de velocidad se tomaron en perfiles concretos de AMD (`performance` para la tabla principal, `low-power` para la comparativa de `osmos-evo-A`) y con una suite de tres preguntas, por lo que no representan cargas arbitrarias.
+- La calidad se evalua con divergencia KL contra una referencia construida con los pesos originales, no con benchmarks estandar; no hay datos de MMLU, HumanEval o GSM8K.
+- `osmos-evo-A` falla en la prueba de recuperacion a 188K tokens (0,469 frente a 0,955 de `osmos-evo`), lo que indica una degradacion clara en contextos muy largos para ese pack.
+- El drafter reduce el tamano de 7,97 a 4,68 GB mediante requantizacion a IQ2_XS, lo que puede afectar a la tasa de aceptacion segun el prompt.
+- La variante abliterada es opcional y esta desactivada por defecto; debe evaluarse antes de usarla en produccion.
+- No hay informacion sobre sesgos, tasas de alucinacion ni idiomas soportados del modelo base en la documentacion proporcionada.
+- La licencia MIT del repositorio cubre los parches y el empaquetado; conviene verificar la licencia del modelo base DeepSeek-V4.1-Flash-1017 antes de un uso comercial.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/mrsirg97-rgb/osmos-evo-1017
-- Modelos del autor: https://huggingface.co/mrsirg97-rgb/models
-- Motor libosmos: https://github.com/mrsirg97-rgb/libosmos
+- Repositorio libosmos: https://github.com/mrsirg97-rgb/libosmos
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Parche de abliteration de huihui-ai: no disponible (enlace no proporcionado)
-- Project Maya: no disponible (enlace no proporcionado)
+- Cuantizaciones de unsloth: no disponible (referenciadas como UD-IQ1_M, UD-IQ1_S y UD-IQ2_XXS, sin URL en la informacion proporcionada)
+- Proyecto Maya (`tools/ds4/drafter_pack.py`): no disponible (sin URL en la informacion proporcionada)
+- llama.cpp: no disponible (referenciado como origen de los cuantizadores ggml, sin URL en la informacion proporcionada)
+- Parche abliterado de huihui-ai: no disponible (sin URL en la informacion proporcionada)

@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "mradermacher/DarkSapling-7B-v1.0-GGUF",
+  "slug": "mradermacher-darksapling-7b-v1-0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/DarkSapling-7B-v1.0-GGUF",
+  "created_at": "2024-12-18T06:57:33.000Z",
+  "updated_at": "2026-11-25T05:48:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mistral",
+    "not-for-all-audiences",
+    "merge",
+    "en",
+    "base_model:TeeZee/DarkSapling-7B-v1.0",
+    "base_model:quantized:TeeZee/DarkSapling-7B-v1.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 168,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 63929811584,
+  "storage_human": "63.9 GB",
+  "context_length": 32768,
+  "base_model": "TeeZee/DarkSapling-7B-v1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

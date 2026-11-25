@@ -1,0 +1,143 @@
+{
+  "schema": 2,
+  "id": "Tamarillo/factcheck-gate-guard-small",
+  "slug": "tamarillo-factcheck-gate-guard-small",
+  "author": "Tamarillo",
+  "url": "https://huggingface.co/Tamarillo/factcheck-gate-guard-small",
+  "created_at": "2026-11-25T04:49:37.000Z",
+  "updated_at": "2026-11-25T04:50:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ja",
+    "zh",
+    "ru",
+    "ko",
+    "ar",
+    "pl",
+    "nl",
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "fact-checking",
+    "hallucination-detection",
+    "llm-routing",
+    "llm-gateway",
+    "semantic-router",
+    "observability",
+    "guardrails",
+    "transformers.js",
+    "apache-2.0",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ja",
+    "zh",
+    "ru",
+    "ko",
+    "ar",
+    "pl",
+    "nl",
+    "tr",
+    "dataset:vllm-sr/fact-check-classification-dataset",
+    "dataset:OpenAssistant/oasst1",
+    "dataset:nvidia/HelpSteer2",
+    "base_model:jhu-clsp/mmBERT-small",
+    "base_model:quantized:jhu-clsp/mmBERT-small",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 140642306,
+  "parameters_human": "140.6M",
+  "storage_bytes": 1879141325,
+  "storage_human": "1.9 GB",
+  "context_length": null,
+  "base_model": "jhu-clsp/mmBERT-small",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Prompt Fact-Check & RAG Verification Routing (English OOD)",
+      "dataset": "Public Real Mixed OOD (SimpleQA + FRAMES vs HumanEvalPack + GSM8K, n=1,600)",
+      "metric": "ROC-AUC",
+      "value": 0.9855
+    },
+    {
+      "task": "Prompt Fact-Check & RAG Verification Routing (English OOD)",
+      "dataset": "Public Real Mixed OOD (SimpleQA + FRAMES vs HumanEvalPack + GSM8K, n=1,600)",
+      "metric": "TPR@5%FPR",
+      "value": 0.9337
+    },
+    {
+      "task": "Multilingual Fact-Check Routing (10+ Non-English Languages, OOD)",
+      "dataset": "TyDiQA non-EN vs CohereLabs/aya_evaluation_suite non-EN (n=468)",
+      "metric": "ROC-AUC",
+      "value": 0.9946
+    },
+    {
+      "task": "Multilingual Fact-Check Routing (10+ Non-English Languages, OOD)",
+      "dataset": "TyDiQA non-EN vs CohereLabs/aya_evaluation_suite non-EN (n=468)",
+      "metric": "Macro-F1",
+      "value": 0.9379
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tamarillo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tamarillo",
+      "snippet": "In Yunnan, China, the Dai people make a tamarillo nanpie, a sauce like dish made with roasted tamarillo, sawtooth coriander, chillies …Read more"
+    },
+    {
+      "title": "Tamarillo : conseils de culture et entretien",
+      "url": "https://mieuxjardiner.com/tamarillo-conseils-de-culture-et-entretien/",
+      "snippet": "Sep 3, 2025 · Caractéristiques et origines du tamarillo Pour bien cultiver le tamarillo, il est essentiel de comprendre sa nature et son …Read more"
+    },
+    {
+      "title": "Le tamarillo : un fruit étonnant - Vergers de Gally",
+      "url": "https://www.lesvergersdegally.com/fruit/tamarillo/",
+      "snippet": "Avec seulement 27 calories pour 100 grammes, le tamarillo est un fruit léger qui peut être apprécié sans culpabiliser. Il est riche en …Read more"
+    },
+    {
+      "title": "Tamarillo : origine, bienfaits et utilisation de ce fruit exotique",
+      "url": "https://www.doctissimo.fr/nutrition/fruits-et-legumes/tamarillo-un-fruit-exotique-aux-multiples-bienfaits-sante-398511.htm",
+      "snippet": "Jun 16, 2026 · Le tamarillo, aussi connu sous le nom de tomate en arbre, est un fruit tropical originaire d'Amérique du Sud, …Read more"
+    },
+    {
+      "title": "Tamarillo – pomidor drzewiasty – uprawa, jak jeść, przepisy",
+      "url": "https://kobietawkrakowie.pl/tamarillo-pomidor-drzewiasty-uprawa-jak-jesc-przepisy/",
+      "snippet": "Mar 2, 2023 · Tamarillo (Cyphomandra betacea) to roślina z rodziny psiankowatych (Solanaceae) pochodząca z Ameryki …Read more"
+    }
+  ]
+}

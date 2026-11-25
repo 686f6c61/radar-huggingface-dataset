@@ -30,7 +30,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 11,
+  "likes": 12,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
@@ -46,8 +46,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "PCL-RSI-lab/Seshat-agent-pro",
+  "renamed_at": "2026-11-25T05:18:41.482Z",
   "benchmarks": [],
   "sources": []
 }

@@ -5,7 +5,7 @@
   "author": "mxk1998",
   "url": "https://huggingface.co/mxk1998/RoboDemo-Refreward",
   "created_at": "2026-11-18T10:44:24.000Z",
-  "updated_at": "2026-11-20T10:52:00.000Z",
+  "updated_at": "2026-11-25T06:23:24.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -16,6 +16,7 @@
   "tags": [
     "pytorch",
     "safetensors",
+    "arxiv:2611.32256",
     "robodemo",
     "robotics",
     "video-retrieval",
@@ -24,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 56,
+  "downloads_30d": 62,
   "trending_score": 0,
   "parameters": 7359876,
   "parameters_human": "7.4M",

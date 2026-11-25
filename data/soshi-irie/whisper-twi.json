@@ -1,0 +1,61 @@
+{
+  "schema": 2,
+  "id": "soshi-irie/whisper-twi",
+  "slug": "soshi-irie-whisper-twi",
+  "author": "soshi-irie",
+  "url": "https://huggingface.co/soshi-irie/whisper-twi",
+  "created_at": "2026-11-21T22:32:53.000Z",
+  "updated_at": "2026-11-22T00:04:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "twi"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "twi",
+    "dataset:soshi-irie/twi-sst-model-v1",
+    "base_model:tiffany101/whisper-twi-v2",
+    "base_model:finetune:tiffany101/whisper-twi-v2",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 50,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 604374164,
+  "storage_human": "604 MB",
+  "context_length": null,
+  "base_model": "tiffany101/whisper-twi-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "twi-financial-inclusion",
+      "metric": "Wer",
+      "value": 9.561262200322183
+    }
+  ],
+  "sources": []
+}

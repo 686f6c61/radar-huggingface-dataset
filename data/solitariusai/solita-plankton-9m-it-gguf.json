@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "solitariusai/solita-plankton-9m-it-gguf",
+  "slug": "solitariusai-solita-plankton-9m-it-gguf",
+  "author": "solitariusai",
+  "url": "https://huggingface.co/solitariusai/solita-plankton-9m-it-gguf",
+  "created_at": "2026-11-25T06:10:59.000Z",
+  "updated_at": "2026-11-25T06:26:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "gguf",
+    "thai",
+    "text-generation",
+    "th",
+    "base_model:solitariusai/solita-plankton-9m-it",
+    "base_model:quantized:solitariusai/solita-plankton-9m-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12752608,
+  "parameters_human": "12.8M",
+  "storage_bytes": 136601408,
+  "storage_human": "137 MB",
+  "context_length": 13952,
+  "base_model": "solitariusai/solita-plankton-9m-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "BUT-FIT/orca-gemma-3-4b-it-multinomial-rationale-dropout",
+  "slug": "but-fit-orca-gemma-3-4b-it-multinomial-rationale-dropout",
+  "author": "BUT-FIT",
+  "url": "https://huggingface.co/BUT-FIT/orca-gemma-3-4b-it-multinomial-rationale-dropout",
+  "created_at": "2026-11-25T12:14:59.000Z",
+  "updated_at": "2026-11-25T12:16:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "audio-question-answering",
+    "correctness-assessment",
+    "orca",
+    "text-classification",
+    "en",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:finetune:google/gemma-3-4b-it",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1087458103,
+  "storage_human": "1.1 GB",
+  "context_length": null,
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 2,
+  "id": "christianengel/WristDepth",
+  "slug": "christianengel-wristdepth",
+  "author": "christianengel",
+  "url": "https://huggingface.co/christianengel/WristDepth",
+  "created_at": "2026-11-22T11:07:40.000Z",
+  "updated_at": "2026-11-22T11:08:48.000Z",
+  "license": "apple-amlr",
+  "license_family": "unknown",
+  "pipeline_tag": "depth-estimation",
+  "library": "depth-pro-2",
+  "languages": [],
+  "tags": [
+    "depth-pro-2",
+    "onnx",
+    "safetensors",
+    "depth-estimation",
+    "metric-depth",
+    "wrist-camera",
+    "robotics",
+    "lerobot",
+    "so-101",
+    "dataset:christianengel/WristDepth-procedural",
+    "arxiv:2611.26603",
+    "base_model:apple/DepthPro2-B",
+    "base_model:finetune:apple/DepthPro2-B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 68,
+  "trending_score": 0,
+  "parameters": 96513409,
+  "parameters_human": "96.5M",
+  "storage_bytes": 608842850,
+  "storage_human": "609 MB",
+  "context_length": null,
+  "base_model": "apple/DepthPro2-B",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WristDepth - a Hugging Face Space by christianengel",
+      "url": "https://huggingface.co/spaces/christianengel/WristDepth",
+      "snippet": "Upload a single RGB frame or a short video (up to 5 seconds) from a robot wrist camera and enter its focal length or field of view. …"
+    },
+    {
+      "title": "WristDepth — Metric Depth for Robot Wrist Cameras",
+      "url": "https://christianengel-wristdepth.static.hf.space/index.html",
+      "snippet": "Provenance & Licenses: WristDepth weights are a research fine-tune of Apple Depth Pro 2 B under the Apple Machine Learning …"
+    },
+    {
+      "title": "christianengel/WristDepth-procedural · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/christianengel/WristDepth-procedural",
+      "snippet": "Explore, preview and download it on Hugging Face."
+    },
+    {
+      "title": "GitHub - protortyp/wristdepth: Metric depth for robot wrist cameras ...",
+      "url": "https://github.com/protortyp/wristdepth/blob/main/",
+      "snippet": "Stock monocular depth models misjudge gripper views by 2-4x; this repo renders procedural wrist-camera data and fine-tunes Depth …"
+    },
+    {
+      "title": "wristdepth/real at main · protortyp/wristdepth · GitHub",
+      "url": "https://github.com/protortyp/wristdepth/tree/main/real",
+      "snippet": "Metric depth for robot wrist cameras: procedural BlenderProc data and Depth Pro 2 fine-tuning (model: …"
+    }
+  ]
+}

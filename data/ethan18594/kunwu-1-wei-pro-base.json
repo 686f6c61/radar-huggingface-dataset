@@ -5,7 +5,7 @@
   "author": "eThAn18594",
   "url": "https://huggingface.co/eThAn18594/Kunwu-1-Wei-Pro-Base",
   "created_at": "2026-11-24T17:51:27.000Z",
-  "updated_at": "2026-11-25T01:38:42.000Z",
+  "updated_at": "2026-11-25T02:09:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 2974546,

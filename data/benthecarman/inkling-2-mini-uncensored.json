@@ -5,7 +5,7 @@
   "author": "benthecarman",
   "url": "https://huggingface.co/benthecarman/Inkling-2-Mini-uncensored",
   "created_at": "2026-11-24T12:42:01.000Z",
-  "updated_at": "2026-11-24T22:05:56.000Z",
+  "updated_at": "2026-11-25T04:41:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -30,7 +30,7 @@
     "modelopt",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 3,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 26388646440,

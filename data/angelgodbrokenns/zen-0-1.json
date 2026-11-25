@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 179,
+  "downloads_30d": 182,
   "trending_score": 0,
   "parameters": 176195328,
   "parameters_human": "176.2M",
@@ -54,8 +54,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "ZEN-PRODUCT/zen-0.1",
+  "renamed_at": "2026-11-25T07:28:29.709Z",
   "benchmarks": [],
   "sources": []
 }

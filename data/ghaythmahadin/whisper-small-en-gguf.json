@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "GhaythMahadin/whisper-small.en-gguf",
+  "slug": "ghaythmahadin-whisper-small-en-gguf",
+  "author": "GhaythMahadin",
+  "url": "https://huggingface.co/GhaythMahadin/whisper-small.en-gguf",
+  "created_at": "2026-11-25T09:22:17.000Z",
+  "updated_at": "2026-11-25T09:22:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transcribe.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transcribe.cpp",
+    "gguf",
+    "asr",
+    "speech-to-text",
+    "whisper",
+    "openai",
+    "en",
+    "automatic-speech-recognition",
+    "arxiv:2212.04356",
+    "base_model:openai/whisper-small.en",
+    "base_model:quantized:openai/whisper-small.en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241750624,
+  "parameters_human": "241.8M",
+  "storage_bytes": 1339741568,
+  "storage_human": "1.3 GB",
+  "context_length": null,
+  "base_model": "openai/whisper-small.en",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

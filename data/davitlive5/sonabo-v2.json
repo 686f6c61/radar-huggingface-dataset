@@ -5,7 +5,7 @@
   "author": "davitlive5",
   "url": "https://huggingface.co/davitlive5/sonabo-v2",
   "created_at": "2026-11-24T14:30:45.000Z",
-  "updated_at": "2026-11-24T14:33:51.000Z",
+  "updated_at": "2026-11-24T21:55:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -50,8 +50,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "davitlive5/sonabo-v1",
+  "renamed_at": "2026-11-25T08:37:48.846Z",
   "benchmarks": [
     {
       "task": null,

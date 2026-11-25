@@ -54,16 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qwen/Qwen3.6-35B-A3B · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Qwen/Qwen3.6-35B-A3B-FP8 · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    }
-  ]
+  "sources": []
 }

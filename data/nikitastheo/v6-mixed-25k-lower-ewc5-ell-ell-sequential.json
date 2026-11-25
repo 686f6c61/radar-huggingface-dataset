@@ -42,31 +42,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Logiciel de facturation Gratuit. Simple. 100% en ligne - Zervant",
-      "url": "https://www.zervant.com/fr/",
-      "snippet": "Gérer sa facturation en ligne n’a jamais été aussi simple ! Créer et envoyer des factures n’a jamais été aussi simple avec le logiciel …"
-    },
-    {
-      "title": "Zervant | Powerful Invoicing Made Simple | Online & Mobile",
-      "url": "https://www.zervant.com/en/",
-      "snippet": "Our invoicing software grows with you. Start with a free Zervant account and upgrade at any time to gain access to more features. …"
-    },
-    {
-      "title": "Kirjaudu sisään Zervant by Shine-palveluun",
-      "url": "https://secure.zervant.com/login/login/fi",
-      "snippet": "Kirjaudu sisään Zervant by Shine-palveluun Kirjaudu Googlella Kirjaudu Applella TAI"
-    },
-    {
-      "title": "Connexion à Zervant by Shine",
-      "url": "https://secure.zervant.com/login/login/fr",
-      "snippet": "Connexion à Zervant by Shine Connexion avec Google"
-    },
-    {
-      "title": "Générateur de facture gratuit offert par Zervant",
-      "url": "https://prod-external-editor.zervant.com/?locale=fr_FR",
-      "snippet": "Accédez à plus de fonctionnalités en créant un compte gratuit ici."
-    }
-  ]
+  "sources": []
 }

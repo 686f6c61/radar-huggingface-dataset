@@ -5,7 +5,7 @@
   "author": "OpenRAL",
   "url": "https://huggingface.co/OpenRAL/rskill-rtdetr_v2_r50vd-any-coco-fp32",
   "created_at": "2026-06-04T18:38:51.000Z",
-  "updated_at": "2026-11-19T18:50:26.000Z",
+  "updated_at": "2026-11-19T20:37:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",

@@ -2,100 +2,104 @@
 
 ## Resumen
 
-QDA-Qwen3.5-9B-W3A16 es un checkpoint cuantizado a 3 bits en pesos con activaciones de 16 bits (W3A16) del modelo Qwen/Qwen3.5-9B, publicado por el laboratorio qda-lab. La cuantizacion se ha obtenido mediante un proceso de busqueda automatizada con agentes LLM descrito en el articulo "QDA: Closed-Loop Quantization Design with LLM Agents", enviado a MLSys 2027. El resultado se distribuye en formato compressed-tensors y esta pensado para cargarse directamente en vLLM sin pasos de conversion adicionales.
+QDA-Qwen3.5-9B-W3A16 es una cuantizacion de pesos a 3 bits del modelo multimodal Qwen/Qwen3.5-9B, publicada por qda-lab. El modelo reduce el peso en disco de 19,3 GB (BF16) a 6,7 GB, un factor de 2,9x, manteniendo segun el autor el 90,5 % de la precision del modelo original. Los pesos se almacenan como enteros de 3 bits en grupos de 128, con la cabeza de salida y los embeddings de tokens a 4 bits, y los escalares de grupo y tensores de normalizacion se ajustan mediante destilacion.
 
-El modelo base Qwen3.5-9B es un modelo denso de la familia Qwen3.5 orientado a razonamiento, comprension visual y comportamiento agentico, con 9.409.813.744 parametros. Esta variante cuantizada conserva la arquitectura del original pero reduce el peso de los pesos a 3 bits, lo que baja el tamano del repositorio a 6,7 GB y facilita el despliegue en GPUs con menos memoria que las necesarias para el checkpoint en precision completa.
+El interes practico esta en que permite desplegar un modelo de 9.400 millones de parametros con capacidades de razonamiento, codigo y vision en GPUs de gama profesional y consumer alta con mucha menos VRAM que la version BF16. La receta de cuantizacion no es manual: fue seleccionada por busqueda automatizada del framework QDA (Closed-Loop LLM Quantization Design with Agents), documentado en el paper arXiv:2611.23388, y parte de un checkpoint inicial producido con el codigo oficial GSQ (IST-DASLab).
 
-La relevancia de esta ficha radica en que es una de las primeras publicaciones de un checkpoint W3A16 para Qwen3.5-9B validado con benchmarks de razonamiento matematico, cientifico, de codigo e instrucciones, y con instrucciones de uso explicitas para vLLM. No obstante, la informacion publica es escasa: no se detallan licencia, idiomas ni composicion del dataset de calibracion, y el numero de descargas y likes es cero en el momento de la consulta.
+El modelo hereda la arquitectura y el pipeline image-text-to-text del base Qwen3.5-9B, por lo que acepta entradas de imagen y texto. Su principal restriccion es de despliegue: solo funciona en vLLM (SGLang aun no soporta este formato de 3 bits) y requiere GPUs NVIDIA H100, A100, L40S, RTX Pro 6000 o B200.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (familia Qwen3.5, segun modelo base) |
+| Arquitectura | Transformer multimodal (image-text-to-text), base Qwen3.5-9B |
 | Parametros totales | 9.409.813.744 |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | W3A16 (pesos 3 bits, activaciones 16 bits), formato compressed-tensors |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | W3A16: pesos INT3 en grupos de 128, activaciones 16 bits; cabeza de salida y embeddings a 4 bits; formato compressed-tensors |
+| Idiomas soportados | no disponible |
+| Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (compressed-tensors), compatible con vLLM |
 
 ## Arquitectura y entrenamiento
 
-El checkpoint hereda la arquitectura del modelo base Qwen/Qwen3.5-9B, un transformer denso de 9.409.813.744 parametros. La model card del checkpoint cuantizado no describe la arquitectura interna del modelo original (numero de capas, dimensiones ocultas, mecanismo de atencion ni si incorpora atencion lineal o decodificacion especulativa); esa informacion debe consultarse en la model card oficial de Qwen3.5-9B. La referencia externa de Jetson AI Lab describe Qwen3.5-9B como un modelo denso vision-language orientado a razonamiento, comprension visual y comportamiento agentico.
+El modelo base Qwen3.5-9B es un transformer denso de 9.400 millones de parametros con capacidad multimodal (entrada de imagen y texto). Sobre el se aplica una cuantizacion post-entrenamiento de solo pesos: los pesos se representan como enteros de 3 bits agrupados en bloques de 128, mientras que las activaciones se mantienen en 16 bits (esquema W3A16). La cabeza de salida y los embeddings de tokens se conservan a 4 bits para limitar la perdida de calidad en esas capas.
 
-El proceso de cuantizacion es el elemento diferencial: qda-lab aplica una busqueda de diseno de cuantizacion en bucle cerrado guiada por agentes LLM (metodo QDA), que selecciona la configuracion de cuantizacion W3A16 para el checkpoint identificado como `r-c555c222`, entrega `h3`. No se publican en la informacion disponible detalles sobre el dataset de calibracion, el numero de tokens de entrenamiento del modelo base, ni si hubo fases de RLHF o DPO. El checkpoint se distribuye en formato compressed-tensors, lo que permite su carga directa en vLLM.
+El proceso de construccion parte de un checkpoint de 3 bits generado con el codigo oficial GSQ (IST-DASLab/GSQ, arXiv:2604.18556). A continuacion, los escalares de grupo y los tensores de normalizacion se ajustan mediante destilacion, con una receta elegida por busqueda automatizada del framework QDA. El entrenamiento se realizo en una unica GPU H100 de 80 GB y los pesos reconstruidos no son identicos bit a bit al checkpoint publicado. La model card no detalla el volumen ni la composicion del dataset de destilacion, ni si el modelo base original uso RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento de proposito general, heredadas del modelo base Qwen3.5-9B.
-- Razonamiento matematico competitivo: el checkpoint reporta 70,7 % en la media de AIME 2025 y HMMT Feb 2026.
-- Razonamiento cientifico de nivel avanzado: 73,5 % en GPQA-Diamond.
-- Generacion de codigo: 63,5 % en LiveCodeBench v6.
-- Seguimiento de instrucciones: 59,2 % en IFBench.
-- Capacidades vision-language segun la descripcion externa de Qwen3.5-9B en Jetson AI Lab (modelo denso vision-language); la model card del checkpoint cuantizado no detalla el soporte de vision.
-- Comportamiento agentico segun la descripcion externa del modelo base; no se documenta en la model card del checkpoint si el tool calling o el razonamiento multi-paso estan soportados de forma explicita.
+- Generacion de texto y razonamiento en modo thinking, con cierre del razonamiento en `</think>`.
+- Razonamiento matematico de competicion (AIME, HMMT) y resolucion de problemas cientificos de nivel experto (GPQA-Diamond).
+- Generacion de codigo y resolucion de problemas de programacion (LiveCodeBench), con soporte de modo thinking.
+- Seguimiento de instrucciones complejas (IFBench) y conocimiento general (MMLU-Pro).
+- Entrada multimodal image-text-to-text heredada del base Qwen3.5-9B.
 - Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Razonamiento matematico asistido: el checkpoint mantiene un 70,7 % en la media de AIME 2025 y HMMT Feb 2026, por lo que es adecuado para tutoria de matematicas de competicion, verificacion de demostraciones y generacion de problemas resueltos con justificacion paso a paso.
-- Analisis cientifico y preguntas de nivel experto: con 73,5 % en GPQA-Diamond, puede emplearse en asistentes de investigacion para responder preguntas de fisica, quimica y biologia de posgrado, con la cautela de verificar las respuestas por riesgo de alucinacion.
-- Generacion de codigo en pipelines de desarrollo: el 63,5 % en LiveCodeBench v6 lo hace util para autocompletado, generacion de tests y revision de parches en entornos de integracion continua, cargandolo con `vllm serve qda-lab/QDA-Qwen3.5-9B-W3A16`.
-- Despliegue en GPUs de gama media: al ocupar 6,7 GB en disco en formato W3A16, permite servir el modelo en una unica GPU consumer con suficiente VRAM, reduciendo el coste frente al checkpoint en precision completa.
-- Evaluacion de tecnicas de cuantizacion: investigadores que trabajen en compresion de modelos pueden usar este checkpoint como referencia reproducible del metodo QDA, ya que la model card identifica la busqueda (`r-c555c222`) y la entrega (`h3`) evaluadas en el articulo.
-- Prototipado de asistentes con requisitos de instrucciones estrictas: el 59,2 % en IFBench indica una capacidad razonable de seguir formatos y restricciones, util para generar respuestas estructuradas en entornos de prueba.
-- Servicio de inferencia de bajo coste con vLLM: la integracion nativa con compressed-tensors y la instruccion de uso de una sola linea permiten levantar un endpoint compatible con la API de OpenAI para experimentacion interna.
+- Razonamiento matematico asistido: el modelo conserva 81,1 en AIME 2025 frente a 85,3 del BF16, por lo que es util para tutoria o verificacion de soluciones matematicas donde el coste de VRAM es critico.
+- Resolucion de problemas cientificos en GPUs de 24-48 GB: con 73,5 en GPQA-Diamond permite desplegar un modelo de nivel experto en una sola L40S o RTX Pro 6000 sin recurrir a la version BF16 de 19,3 GB.
+- Generacion de codigo en pipelines de evaluacion: 57,1 en LiveCodeBench lo hace adecuado para tareas de generacion de codigo con verificacion automatica, aunque con perdida notable respecto al base.
+- Investigacion en cuantizacion: la receta, el checkpoint inicial y los datos de destilacion estan publicados, lo que permite reproducir y comparar variantes de cuantizacion de 3 bits.
+- Despliegue con requisitos estrictos de memoria: al ocupar 6,7 GB en disco, cabe en GPUs consumer de gama alta con cuantizacion adicional o en entornos con VRAM limitada frente a los 19,3 GB del BF16.
+- Evaluacion de seguimiento de instrucciones: 59,3 en IFBench lo hace util para prototipar asistentes que deben respetar restricciones de formato, con la advertencia de la caida de 7,7 puntos respecto al base.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card del checkpoint, evaluados con vLLM 0.27.1 sobre GH200, batching estatico y muestreo de la model card (`temperature=1.0`, `top_p=0.95`, `top_k=20`, `presence_penalty=1.5`, semillas 17+j):
+Resultados publicados en la model card (thinking mode, pass@1 promediado sobre 1-32 semillas, mismas condiciones para ambos modelos):
 
-| Benchmark | Puntuacion (%) |
-|---|---|
-| Math (AIME 2025 + HMMT Feb 2026) | 70,7 |
-| GPQA-Diamond | 73,5 |
-| LiveCodeBench v6 | 63,5 |
-| IFBench | 59,2 |
-| Media | 66,8 |
+| Benchmark | BF16 (19,3 GB) | QDA W3A16 (6,7 GB) |
+|---|---|---|
+| AIME 2025 | 85,3 | 81,1 |
+| HMMT Feb 2026 | 67,5 | 62,5 |
+| GPQA-Diamond | 81,8 | 73,5 |
+| IFBench | 67,0 | 59,3 |
+| MMLU-Pro | 81,2 | 76,8 |
+| LiveCodeBench | 70,7 | 57,1 |
+| Media | 75,6 | 68,4 |
 
-No se han publicado en la informacion disponible resultados comparativos con el modelo base sin cuantizar ni con otros checkpoints W3A16, por lo que no es posible cuantificar la perdida de precision atribuible a la cuantizacion.
+Configuracion de evaluacion: max new tokens 81.920 (32.768 en MMLU-Pro), temperature 1.0, top-p 0.95, top-k 20, min-p 0, presence penalty 1.5, repetition penalty 1.0, thinking activado, MTP y decodificacion especulativa desactivados.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 6,7 GB solo para los pesos en W3A16; hay que anadir la memoria para cache KV, activaciones y overhead de vLLM, que depende de la longitud de contexto y del tamano de lote.
-- GPU recomendadas: la evaluacion oficial se realizo en NVIDIA GH200. Para produccion con contexto largo y lotes grandes se recomienda A100 40/80 GB o H100.
-- GPU consumer: el checkpoint cabe en GPUs consumer con 12 GB o mas de VRAM (por ejemplo, RTX 3060 12 GB, RTX 4070 Ti, RTX 4080, RTX 4090), siempre que se limite la longitud de contexto y el tamano de lote.
-- Opciones de despliegue: vLLM es el runtime soportado de forma explicita (`vllm serve qda-lab/QDA-Qwen3.5-9B-W3A16`). No se documenta compatibilidad con llama.cpp, Ollama ni TGI en la informacion disponible.
-- Latencia y throughput: no disponibles. La model card solo indica que la evaluacion se hizo con batching estatico en GH200, sin cifras de tokens por segundo.
+- VRAM estimada para inferencia: el checkpoint pesa 6,7 GB en disco; la VRAM necesaria para pesos es de aproximadamente 6,7 GB, mas la memoria para KV cache y activaciones (no cuantificadas a 3 bits), que no se detalla en la informacion disponible.
+- GPUs soportadas segun el autor: NVIDIA H100, A100, L40S, RTX Pro 6000 y B200.
+- Cabe en GPU consumer: no se confirma en la informacion proporcionada; el autor solo lista GPUs profesionales y de centro de datos.
+- Despliegue: exclusivamente vLLM. SGLang no soporta aun el formato de 3 bits. Comando: `VLLM_DISABLED_KERNELS=MacheteLinearKernel vllm serve qda-lab/QDA-Qwen3.5-9B-W3A16`.
+- Requisito adicional: sin CUDA 13 en la maquina, la compilacion del kernel W3A16 falla (`failed to open libnvrtc-builtins.so.13.0`); hay que anadir las librerias NVIDIA del entorno virtual a `LD_LIBRARY_PATH`.
+- Latencia y throughput: no disponibles. El autor menciona un arranque de 340 s en una GB300 con el toolkit configurado, pero no publica cifras de rendimiento en inferencia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Calidad (media benchmarks) | Licencia | Despliegue |
 |---|---|---|---|---|---|
-| QDA-Qwen3.5-9B-W3A16 | 9,41 B | No disponible | safetensors W3A16 (compressed-tensors) | No disponible | Hugging Face, carga en vLLM |
-| Qwen/Qwen3.5-9B (base) | 9,41 B | No disponible | safetensors (precision original) | No disponible | Hugging Face |
-| Qwen3.5-9B W4A16 (Jetson Orin) | 9,41 B (segun modelo base) | No disponible | W4A16 | No disponible | Referenciado en Jetson AI Lab |
-| Qwen3.5-9B NVFP4 (Jetson Thor) | 9,41 B (segun modelo base) | No disponible | NVFP4 | No disponible | Referenciado en Jetson AI Lab |
+| QDA-Qwen3.5-9B-W3A16 | 9,4 B | no disponible | 68,4 (W3A16) | Apache-2.0 | vLLM |
+| Qwen/Qwen3.5-9B (BF16) | 9,4 B | no disponible | 75,6 | Apache-2.0 | vLLM, TGI, transformers |
+| Otros modelos de 9-10 B cuantizados | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparativa se limita a variantes del mismo modelo base porque la informacion disponible no incluye datos de rendimiento de modelos alternativos de tamano similar. No se dispone de cifras de benchmarks del checkpoint base ni de las variantes W4A16 y NVFP4 para contrastar la perdida de precision.
+La comparativa directa solo es posible con el modelo base, ya que la informacion proporcionada no incluye otros modelos de la misma categoria con datos verificables.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion a 3 bits en pesos puede degradar tareas sensibles a la precision numerica; los benchmarks publicados no incluyen comparacion con el modelo base, por lo que el impacto real no esta cuantificado.
-- Riesgo de alucinacion inherente a los modelos de lenguaje, especialmente en dominios cientificos y matematicos donde el checkpoint obtiene buenas puntuaciones pero puede producir razonamientos plausibles pero incorrectos.
-- La model card no especifica la licencia, los idiomas soportados ni las restricciones de uso comercial; antes de un despliegue en produccion debe verificarse la licencia del modelo base Qwen/Qwen3.5-9B y la del checkpoint cuantizado.
-- No se documenta la longitud de contexto soportada ni el comportamiento con contextos largos; el consumo de VRAM para cache KV puede superar la estimacion de pesos en escenarios de contexto extendido.
-- El checkpoint es muy reciente (creado el 2026-11-08) y no tiene descargas ni likes; no hay evidencia de uso en produccion ni validacion independiente de los resultados reportados.
-- La evaluacion se realizo con una configuracion de muestreo concreta (temperatura 1.0, top_p 0.95, top_k 20, presence_penalty 1.5) y batching estatico; los resultados pueden variar con otras configuraciones.
-- El soporte de vision, tool calling y comportamiento agentico se atribuye al modelo base en fuentes externas, pero no se confirma en la model card del checkpoint cuantizado.
-- El formato compressed-tensors esta soportado por vLLM, pero no se garantiza la compatibilidad con otros runtimes de inferencia.
+- Perdida de calidad no uniforme: la media cae 7,2 puntos (75,6 a 68,4), pero LiveCodeBench pierde 13,6 puntos y GPQA-Diamond 8,3, mientras que AIME 2025 solo pierde 4,2. El rendimiento en codigo es el mas afectado.
+- Despliegue limitado: solo funciona en vLLM; SGLang no soporta el formato. Requiere GPUs NVIDIA de la lista del autor, lo que excluye GPUs consumer no verificadas.
+- Dependencia de CUDA 13: sin el toolkit, el arranque falla y exige configurar `LD_LIBRARY_PATH` manualmente.
+- Reproducibilidad parcial: los pesos reconstruidos con la receta no son identicos bit a bit al checkpoint publicado.
+- Idiomas soportados: no disponibles; no se puede confirmar cobertura multilingue ni calidad por idioma.
+- Sesgos y alucinacion: no se documentan sesgos conocidos ni tasas de alucinacion en la informacion proporcionada; al ser una cuantizacion, la degradacion puede aumentar la probabilidad de errores en tareas de razonamiento largo.
+- Licencia Apache-2.0: permite uso comercial, pero hereda las condiciones del modelo base Qwen3.5-9B, que no se detallan mas alla de la licencia.
+- Longitud de contexto: no disponible, lo que impide planificar despliegues con ventanas largas sin verificacion previa.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/qda-lab/QDA-Qwen3.5-9B-W3A16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Ficha de Qwen3.5-9B en Jetson AI Lab: https://www.jetson-ai-lab.com/models/qwen3-5-9b/
-- Repositorio de Jetson AI Lab con la ficha del modelo: https://github.com/NVIDIA-AI-IOT/jetson-ai-lab/blob/main/src/content/models/qwen3-5-9b.md
-- Articulo de referencia del metodo QDA: "QDA: Closed-Loop Quantization Design with LLM Agents" (envio a MLSys 2027; no se proporciona enlace directo en la informacion disponible)
+- Paper QDA: https://arxiv.org/abs/2611.23388
+- Paper GSQ: https://arxiv.org/abs/2604.18556
+- Repositorio QDA: https://github.com/humanfia/qda
+- Repositorio GSQ: https://github.com/IST-DASLab/GSQ
+- Receta e inputs: https://huggingface.co/datasets/qda-lab/qda-recipe-inputs/tree/main/QDA-Qwen3.5-9B-W3A16
+- Fichero de receta: https://huggingface.co/datasets/qda-lab/qda-recipe-inputs/blob/main/QDA-Qwen3.5-9B-W3A16/qwen3.5-9b-w3a16.yaml

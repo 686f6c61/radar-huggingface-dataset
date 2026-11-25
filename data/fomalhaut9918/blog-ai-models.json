@@ -1,0 +1,44 @@
+{
+  "schema": 2,
+  "id": "Fomalhaut9918/blog-ai-models",
+  "slug": "fomalhaut9918-blog-ai-models",
+  "author": "Fomalhaut9918",
+  "url": "https://huggingface.co/Fomalhaut9918/blog-ai-models",
+  "created_at": "2026-11-25T08:50:28.000Z",
+  "updated_at": "2026-11-25T08:50:29.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "From AI curiosity to Copilot adoption in 30 Days - partner.microsoft.com",
+      "url": "https://partner.microsoft.com/en-us/blog/article/copilot-activation-for-fy27",
+      "snippet": "Aug 5, 2026 · Copilot in 30 gives CSP partners a guided 25-user, 30-day Microsoft 365 Copilot Business trial for SMB customer …Read more"
+    }
+  ]
+}

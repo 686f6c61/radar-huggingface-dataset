@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/vits-is_is-rosa_female_monospeaker-graphemes",
   "created_at": "2026-11-14T23:04:30.000Z",
-  "updated_at": "2026-11-16T11:42:07.000Z",
+  "updated_at": "2026-11-25T04:38:05.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 58,
+  "downloads_30d": 60,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

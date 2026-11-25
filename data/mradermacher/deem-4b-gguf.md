@@ -2,108 +2,93 @@
 
 ## Resumen
 
-Deem-4B-GGUF es la version cuantizada en formato GGUF del modelo Deem-4B, desarrollado originalmente por el usuario mertkayacs y convertida a GGUF por mradermacher, un cuantizador muy conocido en el ecosistema de modelos abiertos. Se trata de un modelo de aproximadamente 4.205 millones de parametros (4,2B) orientado a tareas de decision, calibracion y prediccion conforme, segun las etiquetas declaradas por el autor (decision-model, calibration, conformal-prediction, uncertainty, routing, triage). Esto lo situa en una categoria distinta a la de un LLM conversacional generico: su proposito parece ser emitir decisiones o clasificaciones con estimaciones de incertidumbre.
+Deem-4B es un modelo de lenguaje de aproximadamente 4.200 millones de parámetros, desarrollado originalmente por mertkayacs y publicado bajo licencia Apache 2.0. La versión aquí descrita es una cuantización estática en formato GGUF realizada por mradermacher, pensada para ejecución local y en dispositivos con recursos limitados. El modelo está etiquetado como un *decision-model* orientado a clasificación de texto, calibración de confianza, predicción conformal y enrutamiento (*routing*) o triaje de consultas.
 
-El modelo se distribuye bajo licencia Apache 2.0 y soporta tres idiomas declarados: ingles (en), turco (tr) y aleman (de). Las etiquetas incluyen "qwen3.5", lo que sugiere que la arquitectura subyacente deriva de la familia Qwen 3.5, aunque la model card del cuantizador no detalla la arquitectura ni la longitud de contexto. El repositorio incluye ficheros mmproj (multi-modal supplement), lo que indica soporte multimodal (probablemente vision), si bien esto no se confirma explicitamente en el texto de la model card.
+Su propuesta de valor se centra en la incertidumbre y la toma de decisiones estructuradas más que en la generación creativa de texto. Incorpora etiquetas que apuntan a razonamiento, salidas con tipado seguro (*typesafe*) y un modo de evaluación denominado "jev". Está construido sobre una base arquitectónica vinculada a Qwen 3.5, según las etiquetas de la model card, aunque no se detalla la arquitectura exacta en la información disponible.
 
-La relevancia de esta publicacion radica en que ofrece el modelo en un rango amplio de cuantizaciones (desde Q2_K de 2,0 GB hasta f16 de 8,5 GB), lo que permite desplegarlo en hardware de consumo. No obstante, el repositorio registra cero descargas y cero likes en la fecha de creacion, y no se han publicado resultados de benchmarks en la informacion disponible.
+La relevancia actual del modelo radica en su tamaño compacto (4B), su licencia permisiva y la disponibilidad de cuantizaciones ligeras (desde 2,0 GB en Q2_K), lo que permite desplegarlo en hardware de consumo y en escenarios de inferencia local donde la latencia y el coste importan. Declara soporte para inglés, turco y alemán.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta del autor: qwen3.5, sin detalle) |
-| Parametros totales | 4.205.751.296 (4,2B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (etiquetado como Qwen 3.5 en la model card; detalles no especificados) |
+| Parametros totales | 4.205.751.296 (aprox. 4,2 B) |
+| Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 (mas mmproj-Q8_0 y mmproj-f16) |
-| Idiomas soportados | en (ingles), tr (turco), de (aleman) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (modelo base en safetensors/transformers) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16, mmproj-Q8_0, mmproj-f16 |
+| Idiomas soportados | en, tr, de |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (repo de cuantizaciones); modelo base en transformers/safetensors |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo. Las etiquetas incluidas en la model card mencionan "qwen3.5", lo que apunta a que Deem-4B parte de la arquitectura de la familia Qwen 3.5, un transformer decoder-only. Tambien figuran etiquetas como "typesafe", "jev" y "decision-model", que sugieren un entrenamiento orientado a producir salidas estructuradas y decisiones con garantias de tipo, aunque no se aporta ningun detalle tecnico adicional sobre la composicion de capas, atencion o mecanismos de normalizacion.
+La información disponible no detalla la arquitectura interna más allá de la etiqueta "qwen3.5" y la clasificación como modelo de decisión. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. El dataset asociado en la model card es `mertkayacs/jevalt-data`.
 
-Respecto a los datos de entrenamiento, la unica referencia disponible es el dataset mertkayacs/jevalt-data, empleado presumiblemente en el ajuste del modelo base. No se especifica el numero de tokens de entrenamiento, la composicion del corpus, ni si se aplicaron tecnicas de RLHF, DPO u otras formas de alineamiento. Tampoco se documentan innovaciones tecnicas concretas (decodificacion especulativa, atencion lineal, MoE u otras). La presencia de ficheros mmproj en el repositorio GGUF sugiere la existencia de un componente multimodal, pero no se detalla su naturaleza ni su entrenamiento.
+Las etiquetas del modelo sugieren un enfoque en calibración, predicción conformal y salidas con incertidumbre cuantificada, orientadas a tareas de clasificación y enrutamiento. También se incluye un suplemento multimodal (*mmproj*) en las cuantizaciones, lo que indica soporte de entrada visual, aunque no se documentan los detalles del codificador de visión ni del entrenamiento multimodal.
+
+No se han publicado en la información disponible detalles sobre innovaciones técnicas como decodificación especulativa, atención lineal o mecanismos híbridos.
 
 ## Capacidades
 
-- Generacion de decisiones y clasificacion con estimacion de incertidumbre: las etiquetas "decision-model", "uncertainty" y "conformal-prediction" indican que el modelo esta orientado a emitir decisiones acompanadas de medidas de confianza o calibracion.
-- Prediccion conforme (conformal prediction): capacidad declarada de producir conjuntos de prediccion con cobertura estadistica controlada.
-- Enrutamiento (routing) y triaje (triage): el modelo parece disenado para derivar peticiones o casos a la ruta o categoria adecuada.
-- Razonamiento (reasoning): etiqueta declarada por el autor, aunque sin detalle de modo de pensamiento explicito.
-- Soporte multimodal: el repositorio incluye ficheros mmproj (mmproj-Q8_0 y mmproj-f16), lo que indica un componente multimodal, probablemente vision, no confirmado en el texto.
-- Capacidades multilingues: ingles, turco y aleman.
-- Salidas estructuradas / typesafe: la etiqueta "typesafe" sugiere generacion de salidas con tipado estricto, util para integracion en sistemas de software.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
+- Clasificación de texto y toma de decisiones estructuradas, con énfasis en calibración de confianza y predicción conformal.
+- Razonamiento y enrutamiento (*routing*) o triaje de consultas hacia distintos flujos o modelos.
+- Salidas con tipado seguro (*typesafe*) según las etiquetas del modelo.
+- Soporte multimodal mediante el suplemento `mmproj` incluido en las cuantizaciones GGUF.
+- Capacidades multilingües en inglés, turco y alemán.
+- Ejecución local y en dispositivo (*on-device*) gracias a su tamaño compacto.
+- No se documenta explícitamente soporte de *tool calling* ni de agentes multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Triaje de incidencias en soporte tecnico: el modelo puede clasificar y enrutar tickets entrantes hacia el equipo o la categoria correcta, aprovechando su orientacion a decision, routing y triage.
-- Enrutamiento de consultas en sistemas RAG: dado un conjunto de indices o fuentes de conocimiento, el modelo puede decidir que fuente consultar, reduciendo coste frente a un LLM mayor.
-- Clasificacion con umbral de incertidumbre en produccion: gracias a su enfoque en calibracion y prediccion conforme, permite derivar casos ambiguos a revision humana cuando la confianza es baja.
-- Moderacion de contenido asistida: clasificacion binaria o multiclase de contenidos con estimacion de incertidumbre, delegando los casos dudosos a revision manual.
-- Enrutamiento de modelos en cascada: actuar como router que decide si una consulta puede resolverse con un modelo pequeno o requiere uno mayor, optimizando coste y latencia.
-- Extraccion de campos estructurados: la etiqueta "typesafe" sugiere su uso para generar JSON u otras salidas tipadas a partir de texto, con validacion de esquema.
-- Despliegue en edge o equipos de consumo: al estar disponible en cuantizaciones desde 2,0 GB (Q2_K) hasta 4,6 GB (Q8_0), puede ejecutarse en portatiles y workstations sin GPU dedicada de gama alta.
-- Analisis de documentos con componente visual: si se confirma el soporte multimodal via mmproj, podria emplearse para clasificar o extraer informacion de imagenes y documentos escaneados, aunque esto no esta verificado.
+- Triaje de tickets de soporte: el modelo puede clasificar y enrutar consultas entrantes hacia el equipo o flujo adecuado, aprovechando sus capacidades de decisión y calibración de incertidumbre para marcar casos ambiguos.
+- Enrutamiento entre modelos en un pipeline: dado su enfoque en *routing*, puede decidir qué modelo o herramienta debe atender cada petición, reduciendo coste al derivar solo los casos complejos a modelos mayores.
+- Moderación y clasificación de contenido: útil para etiquetar textos en inglés, turco y alemán con umbrales de confianza calibrados, lo que permite ajustar la tasa de falsos positivos en producción.
+- Filtrado previo en sistemas RAG: puede evaluar la relevancia o la incertidumbre de una consulta antes de invocar un recuperador o un modelo generativo, ahorrando cómputo.
+- Inferencia local en portátiles y dispositivos: con cuantizaciones de 2,0 a 2,8 GB (Q2_K a Q4_K_M), es viable en GPUs de consumo y en CPU mediante llama.cpp u Ollama para tareas de clasificación en tiempo real.
+- Procesamiento de documentos con componente visual: el suplemento `mmproj` permite abordar tareas que combinan texto e imagen, como la clasificación de capturas o formularios, aunque los detalles de rendimiento no están documentados.
+- Análisis de sentimiento y etiquetado a escala en entornos multilingües (en/tr/de) con coste de despliegue bajo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia, segun el fichero GGUF elegido:
-  - Q2_K: ~2,0 GB (mas overhead de contexto).
-  - Q3_K_S / Q3_K_M / Q3_K_L: ~2,2-2,5 GB.
-  - IQ4_XS: ~2,6 GB.
-  - Q4_K_S / Q4_K_M: ~2,7-2,8 GB.
-  - Q5_K_S / Q5_K_M: ~3,1-3,2 GB.
-  - Q6_K: ~3,6 GB.
-  - Q8_0: ~4,6 GB.
-  - f16: ~8,5 GB.
-  - mmproj: ~0,5 GB (Q8_0) a ~0,8 GB (f16), si se usa el componente multimodal.
-- GPU recomendadas: al tratarse de un modelo de 4,2B, cabe holgadamente en GPUs de consumo como RTX 3060 (12 GB), RTX 4060 Ti, RTX 4070, RTX 4080 y RTX 4090. Tambien es viable en GPUs de datacenter (A100, H100) para inferencia en lote con gran cantidad de peticiones concurrentes.
-- Cabe en GPU de consumo: si, en cualquier GPU con 6 GB o mas de VRAM para cuantizaciones Q4/Q5; con 4 GB es posible en Q2_K/Q3_K.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, y servidores GGUF compatibles. Para el modelo base (antes de cuantizar) se usaria transformers con vLLM o TGI, pero esta version concreta es GGUF.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada. Dependeran del hardware y de la cuantizacion elegida.
+- VRAM estimada para inferencia según cuantización: Q2_K ~2,0 GB; Q3_K_S ~2,2 GB; Q4_K_M ~2,8 GB; Q5_K_M ~3,2 GB; Q6_K ~3,6 GB; Q8_0 ~4,6 GB; f16 ~8,5 GB. Añadir ~0,5-0,8 GB si se usa el suplemento multimodal `mmproj`.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones Q4/Q5; RTX 3060, RTX 4060, RTX 4090 o superiores para mayor comodidad; A100/H100 no son necesarias para este tamaño.
+- Cabe en GPU de consumo: sí, en la mayoría de tarjetas con 6-8 GB o más, e incluso en configuraciones de 4 GB con cuantizaciones bajas.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base puede servirse con transformers, vLLM o TGI en formato safetensors.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-La informacion disponible no incluye especificaciones de modelos comparables. Se pueden citar como modelos relacionados del mismo autor y familia otros repositorios de mradermacher, aunque sin datos de rendimiento publicados.
-
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Deem-4B-GGUF | 4,2B | no disponible | apache-2.0 | GGUF | Modelo objeto de esta ficha |
-| mradermacher/deem-9b-v1-GGUF | no disponible | no disponible | no disponible | GGUF | Version mayor de la familia Deem, sin specs publicadas aqui |
-| mradermacher/OneJev-4B-GGUF | no disponible | no disponible | no disponible | GGUF | Otro modelo de 4B del mismo cuantizador, con etiqueta "jev" |
+| Deem-4B (esta ficha) | ~4,2 B | no disponible | Apache 2.0 | GGUF, safetensors | Enfoque en decisión, calibración y routing |
+| Qwen2.5-3B / Qwen3-4B | ~3-4 B | no disponible en esta ficha | Apache 2.0 (según variante) | GGUF, safetensors | Generales, ampliamente soportados |
+| Phi-3.5-mini | ~3,8 B | 128k (según variante) | MIT | GGUF, safetensors | Generalista con contexto largo |
+| Llama-3.2-3B | ~3,2 B | 128k | Llama 3.2 Community License | GGUF, safetensors | Generalista, licencia con restricciones |
 
-No se dispone de datos suficientes para comparar rendimiento (benchmarks) con alternativas de la misma categoria.
+La comparación cuantitativa de rendimiento no está disponible al no haberse publicado benchmarks de Deem-4B. Los modelos alternativos se incluyen por rango de tamaño y categoría de despliegue local.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks publicados: no es posible verificar la calidad, la calibracion real ni el rendimiento del modelo en tareas concretas.
-- Cero descargas y cero likes registrados en el momento de la creacion: no hay evidencia de uso ni validacion por parte de la comunidad.
-- Longitud de contexto desconocida: no se puede garantizar el manejo de conversaciones o documentos largos.
-- Arquitectura no documentada: la model card del cuantizador no detalla la arquitectura, el entrenamiento ni el dataset mas alla de la referencia a mertkayacs/jevalt-data.
-- Riesgo de alucinacion: inherente a cualquier modelo generativo; en un modelo orientado a decisiones, una prediccion erronea con alta confianza puede ser especialmente peligrosa.
-- Sesgos conocidos: no disponibles; no se han publicado analisis de sesgo.
-- Cobertura idiomatica limitada: solo ingles, turco y aleman; el castellano no esta declarado, por lo que el rendimiento en espanol no esta garantizado.
-- Soporte multimodal no confirmado: aunque se incluyen ficheros mmproj, no se detalla su funcionamiento ni su calidad.
-- Licencia Apache 2.0: permite uso comercial, modificacion y redistribucion, siempre que se conserven los avisos de copyright y la atribucion correspondiente. Conviene verificar tambien las condiciones del modelo base original (mertkayacs/Deem-4B).
-- Para produccion: dado que carece de evaluacion publica, se recomienda validar exhaustivamente con un conjunto propio antes de desplegarlo en cualquier flujo critico.
+- No se documentan sesgos conocidos; al entrenarse con un dataset específico (`jevalt-data`) y en tres idiomas, su cobertura fuera de en/tr/de es limitada.
+- Riesgo de alucinación no cuantificado; al ser un modelo orientado a clasificación y decisión, conviene validar sus salidas con umbrales de confianza calibrados.
+- La longitud de contexto no está especificada, lo que impide garantizar el manejo de documentos largos.
+- Aunque la licencia es Apache 2.0 y permite uso comercial, deben respetarse las condiciones del modelo base y de los datos de entrenamiento originales.
+- Las cuantizaciones de baja precisión (Q2_K, Q3_K) degradan la calidad; para producción se recomienda Q4_K_M o superior.
+- El soporte multimodal depende del archivo `mmproj` y no se detalla su calidad ni sus límites.
+- No se confirma soporte de *tool calling* ni de razonamiento multi-paso, por lo que no debe asumirse en pipelines de agentes sin validación previa.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Deem-4B-GGUF
 - Modelo base: https://huggingface.co/mertkayacs/Deem-4B
-- Dataset referenciado: https://huggingface.co/datasets/mertkayacs/jevalt-data
-- Pagina de resumen de cuantizaciones del autor: https://hf.tst.eu/model#Deem-4B-GGUF
-- Modelo relacionado: https://huggingface.co/mradermacher/deem-9b-v1-GGUF
-- Modelo relacionado: https://huggingface.co/mradermacher/OneJev-4B-GGUF
-- FAQ y solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
-- Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Notas sobre tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Dataset: https://huggingface.co/datasets/mertkayacs/jevalt-data
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Deem-4B-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de cuantización: https://huggingface.co/mradermacher/model_requests

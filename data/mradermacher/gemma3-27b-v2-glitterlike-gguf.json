@@ -1,0 +1,46 @@
+{
+  "schema": 2,
+  "id": "mradermacher/gemma3-27b-v2-glitterlike-GGUF",
+  "slug": "mradermacher-gemma3-27b-v2-glitterlike-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma3-27b-v2-glitterlike-GGUF",
+  "created_at": "2025-06-02T00:13:09.000Z",
+  "updated_at": "2026-11-25T09:19:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 43,
+  "trending_score": 0,
+  "parameters": 27009346304,
+  "parameters_human": "27.01B",
+  "storage_bytes": 188136494272,
+  "storage_human": "188.1 GB",
+  "context_length": 131072,
+  "base_model": "ToastyPigeon/gemma3-27b-v2-glitterlike",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

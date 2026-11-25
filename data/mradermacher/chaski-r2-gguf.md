@@ -2,109 +2,89 @@
 
 ## Resumen
 
-chaski-r2-GGUF es la version cuantizada en formato GGUF del modelo SZLHOLDINGS/chaski-r2, publicada por el usuario mradermacher, conocido por convertir pesos de modelos abiertos a cuantizaciones de llama.cpp. No se trata por tanto de un modelo entrenado desde cero por este autor, sino de una redistribucion optimizada para inferencia local del trabajo original de SZLHOLDINGS, que a su vez se construye sobre un adaptador LoRA aplicado al modelo Qwen/Qwen3.5-0.8B. El repositorio contiene pesos de 752.393.024 parametros (segun los safetensors declarados) y ocupa 7,5 GB en total, contando las doce cuantizaciones publicadas.
+`mradermacher/chaski-r2-GGUF` es una colección de cuantizaciones estáticas en formato GGUF del modelo `SZLHOLDINGS/chaski-r2`, un ajuste fino (SFT) mediante LoRA sobre la base `Qwen/Qwen3.5-0.8B`. El autor de las cuantizaciones es mradermacher, un publicador habitual de versiones GGUF de modelos open source, mientras que el modelo original lo desarrolla SZLHOLDINGS. El resultado es un modelo conversacional de aproximadamente 752 millones de parámetros, orientado al idioma inglés y distribuido bajo licencia Apache 2.0.
 
-El problema que resuelve es pragmatico: permitir ejecutar un modelo conversacional de menos de mil millones de parametros en hardware muy modesto (CPU, iGPU, portatiles y placas tipo Raspberry Pi) sin necesidad de GPUs de datacenter, ofreciendo desde variantes de 0,5 GB en Q2_K hasta 1,6 GB en f16. Es relevante en el ecosistema actual porque la demanda de modelos pequenos desplegables en el borde (edge) crece con las regulaciones de privacidad y con la necesidad de inferencia offline de bajo coste.
+El interés principal de esta ficha radica en su formato: al tratarse de cuantizaciones GGUF, permite ejecutar un modelo de menos de mil millones de parámetros en hardware muy modesto, incluyendo CPU y GPUs de consumo, con ficheros desde 0,5 GB (Q2_K) hasta 1,6 GB (f16). Esto lo convierte en una opción práctica para prototipado local, pruebas de pipelines de inferencia y experimentación con modelos pequeños.
 
-La informacion publicada es limitada: la model card del cuantizador se centra en la tabla de ficheros y en instrucciones genericas, y no aporta detalles sobre datos de entrenamiento, longitud de contexto, benchmarks ni capacidades concretas. El modelo declara un unico idioma (ingles) y licencia Apache-2.0. La busqueda web asociada no ha devuelto ninguna fuente tecnica relevante sobre este modelo, por lo que buena parte de las especificaciones quedan marcadas como no disponibles.
+No obstante, la model card original incluye las etiquetas `proposal-only` y `research-only`, lo que indica que el modelo está pensado para investigación y propuestas experimentales más que para despliegues de producción. La información disponible sobre arquitectura interna, datos de entrenamiento, benchmarks y contexto máximo es muy limitada; en esta ficha se indica explícitamente cuando un dato no está disponible.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de Qwen/Qwen3.5-0.8B, modelo base del adaptador); detalles no disponibles |
-| Parametros totales | 752.393.024 |
-| Parametros activos | no disponible (no se indica que sea un modelo MoE) |
+| Arquitectura | no disponible (modelo base Qwen/Qwen3.5-0.8B, ajustado con LoRA/SFT) |
+| Parámetros totales | 752.393.024 |
+| Parámetros activos | no disponible (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, IQ4_XS, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
-| Idiomas soportados | ingles (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (12 ficheros); el modelo original se distribuye como adaptador LoRA/SFT sobre transformers |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, IQ4_XS, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones); modelo original en safetensors/transformers |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna mas alla de la cadena de dependencias declarada en las etiquetas: el modelo base es SZLHOLDINGS/chaski-r2, cuyo adaptador se apoya en Qwen/Qwen3.5-0.8B. Las etiquetas `lora`, `sft`, `trl` y `unsloth` indican que el entrenamiento original consistio en un ajuste supervisado (SFT) mediante LoRA, probablemente realizado con las librerias TRL y Unsloth sobre el modelo Qwen citado. El numero de parametros resultante (752 millones) es coherente con un modelo denso de escala 0.8B, aunque no se especifica si los pesos publicados son el resultado de fusionar el adaptador con el modelo base.
+El modelo original `SZLHOLDINGS/chaski-r2` se describe en sus etiquetas como un ajuste fino supervisado (SFT) realizado con LoRA sobre el modelo base `Qwen/Qwen3.5-0.8B`, usando las librerías TRL y Unsloth. Esto implica que la arquitectura subyacente es la del modelo Qwen3.5 de 0,8 mil millones de parámetros, aunque la model card no detalla la composición del dataset de entrenamiento, el número de tokens utilizados, ni si se aplicaron etapas adicionales de alineación como RLHF o DPO.
 
-No hay datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron fases adicionales de RLHF, DPO u optimizacion por preferencias. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o mecanismos híbridos. La etiqueta `proposal-only` figura entre los tags del repositorio, pero su significado no se explica en la model card. El trabajo realizado por mradermacher se limita a la conversion y cuantizacion estatica (los comentarios internos del README indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`), sin cuantizaciones ponderadas ni con matriz de importancia (imatrix) en el momento de la publicacion.
+La contribución de este repositorio concreto es la cuantización: mradermacher ha generado cuantizaciones estáticas (sin imatrix ni weighted quants, según indica el propio autor) en doce variantes GGUF. No se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal; la información disponible se limita a los metadatos de cuantización y al origen del ajuste LoRA.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, segun la etiqueta `conversational` del repositorio.
-- Ajuste supervisado orientado a dialogo (etiqueta `sft`), lo que sugiere un uso previsto como asistente conversacional.
-- Inferencia local en CPU y GPU de gama baja gracias a las cuantizaciones GGUF de 0,5 a 1,6 GB.
-- Soporte de tool calling o function calling: no documentado.
-- Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingues: no disponibles; el modelo declara unicamente ingles.
-- Capacidades especiales (modo thinking, vision, audio, contexto largo): no documentadas.
-- Ajuste fino posterior sobre los pesos cuantizados: no recomendado en formato GGUF; requeriria partir del modelo original.
+- Generación de texto conversacional en inglés, heredada del modelo base Qwen3.5-0.8B y del ajuste SFT.
+- Razonamiento básico y respuesta a instrucciones, presumiblemente reforzado por el entrenamiento SFT, aunque no se documentan evaluaciones específicas.
+- Ejecución local en CPU y GPU de consumo gracias a las cuantizaciones GGUF de pequeño tamaño.
+- Compatibilidad con endpoints (`endpoints_compatible` en las etiquetas), lo que sugiere integración con infraestructuras de inferencia estándar.
+- Capacidades multilingües: limitadas al inglés según el campo `language`.
+- Tool calling, function calling, agentes multi-step, visión, audio o modo thinking: no disponibles o no documentados en la información proporcionada.
 
 ## Casos de uso
 
-- Asistentes conversacionales offline en dispositivos: con cuantizaciones Q4_K_M de 0,6 GB, el modelo puede ejecutarse integramente en local mediante llama.cpp u Ollama, evitando enviar datos del usuario a servicios externos. Es adecuado cuando el requisito es privacidad y no calidad puntera.
-- Prototipado rapido de aplicaciones de chat: permite validar interfaces, flujos de prompt y pipelines de inferencia en un portatil sin GPU dedicada antes de escalar a un modelo mayor.
-- Clasificacion y etiquetado de texto a gran escala en ingles: el coste por token es minimo, por lo que resulta viable procesar volumenes elevados de documentos en lote sobre CPU.
-- Filtrado o enrutado previo (pre-router) en arquitecturas multi-modelo: un modelo de 0,8B puede decidir si una consulta requiere un modelo grande o si basta con una respuesta simple, reduciendo coste agregado. Esta aplicacion es una propuesta de uso, no una capacidad documentada por el autor.
-- Educacion e investigacion sobre cuantizacion: el repositorio ofrece doce variantes del mismo modelo, lo que permite comparar empiricamente el impacto de Q2_K frente a Q8_0 en perplejidad y calidad de salida.
-- Despliegue en hardware embebido: con ficheros desde 0,5 GB, es viable en placas SBC con 4-8 GB de RAM y en telefonos de gama media mediante runtimes compatibles con GGUF.
-- Generacion de texto auxiliar de bajo riesgo: resumenes breves, reescritura de frases o generacion de titulos en ingles donde la supervision humana posterior es barata.
-- Base para ajuste fino adicional: al derivar de un adaptador LoRA, sirve como punto de partida para experimentos de personalizacion en dominios concretos en ingles.
+- Prototipado local de chatbots: con cuantizaciones Q4_K_M de 0,6 GB, el modelo puede ejecutarse en un portátil sin GPU para validar flujos conversacionales antes de escalar a modelos mayores.
+- Pruebas de pipelines de inferencia GGUF: útil para verificar compatibilidad con llama.cpp, Ollama u otras herramientas antes de desplegar modelos de mayor tamaño.
+- Experimentación académica con ajustes LoRA: sirve como ejemplo reproducible de cómo un SFT sobre Qwen3.5-0.8B se distribuye en formato cuantizado para investigación.
+- Generación de texto de bajo coste en entornos con recursos limitados: adecuado para tareas simples de completado o resumen en inglés donde no se requiere alta precisión.
+- Evaluación comparativa de cuantizaciones: los doce niveles disponibles permiten medir el impacto de la cuantización en calidad y velocidad sobre un mismo modelo.
+- Demos educativas de inferencia en dispositivos modestos: al caber en 0,5-1,6 GB, es viable en Raspberry Pi, portátiles antiguos o contenedores con poca memoria.
+- Integración en servicios de endpoints compatibles: las etiquetas indican compatibilidad con endpoints, lo que facilita pruebas de API en entornos de desarrollo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del cuantizador no incluye metricas de MMLU, HumanEval, GSM8K, perplejidad ni ninguna otra evaluacion, y la busqueda web no ha devuelto documentacion tecnica asociada al modelo SZLHOLDINGS/chaski-r2.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia, segun el fichero de pesos (sin contar cache KV ni overhead del runtime):
-  - Q2_K, Q3_K_S: aproximadamente 0,5 GB.
-  - Q3_K_M, Q3_K_L, Q4_K_S, IQ4_XS, Q4_K_M: aproximadamente 0,6 GB.
-  - Q5_K_S, Q5_K_M, Q6_K: aproximadamente 0,7 GB.
-  - Q8_0: aproximadamente 0,9 GB.
-  - f16: aproximadamente 1,6 GB.
-- En la practica, sumar entre 0,3 y 1 GB adicionales por cache KV y buffers del runtime, dependiendo de la longitud de contexto efectiva, que no esta documentada.
-- Cabe en cualquier GPU de consumo con 4 GB o mas de VRAM: GTX 1650, RTX 3050, RTX 3060, RTX 4060, RTX 4090 (sobradamente), asi como en iGPU modernas con memoria unificada.
-- Tambien es viable en CPU exclusivamente (AVX2 o superior) y en Apple Silicon mediante Metal.
-- No requiere A100, H100 ni aceleradores de datacenter; su uso en ese hardware seria desproporcionado salvo para servir muchas peticiones concurrentes.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, llama-cpp-python y cualquier runtime compatible con GGUF. El repositorio no incluye pesos en safetensors, por lo que para servirlo con vLLM o TGI habria que partir del modelo original SZLHOLDINGS/chaski-r2.
-- Latencia y throughput estimados: no disponibles. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
+- VRAM estimada para inferencia: aproximadamente 0,5 GB para Q2_K, 0,6 GB para Q4_K_M, 0,9 GB para Q8_0 y 1,6 GB para f16, según los tamaños de fichero publicados.
+- GPU recomendadas: cualquier GPU de consumo moderna (RTX 3060, RTX 4060, RTX 4090) es sobrada; también funciona en GPUs integradas y CPU.
+- Cabe en GPU de consumo: sí, en todas las cuantizaciones, incluso en GPUs con 4 GB de VRAM.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo original es compatible con transformers.
+- Latencia y throughput estimados: no disponibles; al tratarse de un modelo de 752 millones de parámetros cuantizado, se espera una latencia baja en GPU y moderada en CPU, pero no se han publicado cifras.
 
 ## Comparativa con modelos similares
 
-La comparativa se establece con modelos densos de rango 0,5B-1,7B frecuentemente usados como alternativa en el mismo nicho de inferencia local. Los datos de los modelos alternativos proceden de sus fichas publicas; los del modelo analizado se limitan a lo declarado en este repositorio.
-
-| Modelo | Parametros | Contexto | Licencia | Idiomas | Benchmarks publicos |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| mradermacher/chaski-r2-GGUF | 752 M | no disponible | Apache-2.0 | ingles | no disponibles |
-| Qwen2.5-0.5B | 0,49 B | 32 768 tokens | Apache-2.0 | multilingue | si, en la ficha del autor |
-| Llama 3.2 1B | 1,24 B | 128 000 tokens | Licencia comunitaria de Llama 3.2 | multilingue | si, en la ficha del autor |
-| Gemma 3 1B | 1 B | 32 768 tokens | Licencia de Gemma | multilingue | si, en la ficha del autor |
+| mradermacher/chaski-r2-GGUF | 752 M | no disponible | Apache 2.0 | GGUF | Cuantizaciones de un SFT sobre Qwen3.5-0.8B, solo inglés, research-only |
+| Qwen/Qwen3.5-0.8B (base) | ~800 M | no disponible | no disponible | safetensors | Modelo base del ajuste; capacidades originales no documentadas aquí |
+| SZLHOLDINGS/chaski-r2 | 752 M | no disponible | Apache 2.0 | safetensors | Modelo original sin cuantizar; etiquetado research-only |
 
-No es posible comparar rendimiento de forma cuantitativa porque el modelo analizado carece de evaluaciones publicadas y de especificacion de contexto. En terminos de disponibilidad, chaski-r2-GGUF ofrece una ventaja clara en despliegue local por su catalogo de cuantizaciones, mientras que las alternativas cuentan con ecosistemas mas maduros, soporte multilingue documentado y contextos verificables.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks: no hay evidencia publica de calidad, por lo que no deberia adoptarse en produccion sin una evaluacion propia previa.
-- Longitud de contexto desconocida: no se puede planificar el uso con documentos largos o conversaciones multi-turno extensas.
-- Modelo unicamente en ingles: no hay soporte declarado de castellano ni de otros idiomas, lo que limita su uso en productos dirigidos a usuarios hispanohablantes.
-- Riesgo de alucinacion elevado por escala: con 752 millones de parametros, la tasa de afirmaciones incorrectas y de incoherencias en razonamiento es previsiblemente alta en comparacion con modelos de 7B o superiores. No se ha medido ni documentado.
-- Sesgos: no documentados por el autor. Al ser un ajuste SFT sobre datos no descritos, los sesgos del corpus de entrenamiento y del modelo base son desconocidos.
-- Trazabilidad limitada: el repositorio original (SZLHOLDINGS/chaski-r2) no expone en la informacion disponible los detalles del dataset, el proceso de entrenamiento ni la evaluacion.
-- Etiqueta `proposal-only`: presente en el repositorio sin explicacion en la model card; conviene aclarar su significado con el autor antes de un uso serio, ya que podria implicar un estado no definitivo del modelo.
-- Licencia Apache-2.0: permite uso comercial y modificacion con atribucion y conservacion del aviso de licencia. Hay que verificar, no obstante, que el modelo base y el adaptador original respeten condiciones compatibles, algo que la informacion disponible no permite confirmar.
-- Cuantizaciones de baja precision: las variantes Q2_K, Q3_K_S y Q3_K_M degradan notablemente la calidad. El propio autor marca Q3_K_M como "lower quality" y recomienda Q4_K_S, Q4_K_M y Q8_0.
-- No se ofrecen cuantizaciones ponderadas ni con imatrix, que suelen dar mejor relacion tamano/calidad que las estaticas.
-- Cero descargas y cero valoraciones en el momento de la consulta: no existe validacion por parte de la comunidad.
-- Fecha de creacion registrada como 2026-09-13 y ultima actualizacion 2026-09-13, con apenas ocho minutos de diferencia, lo que sugiere una publicacion sin revision posterior.
+- Etiquetas `proposal-only` y `research-only`: el modelo está declarado para investigación y propuestas, no para uso comercial en producción, pese a la licencia Apache 2.0.
+- Idiomas: solo inglés; no se documenta soporte para castellano ni otros idiomas.
+- Riesgo de alucinación: inherente a modelos pequeños de menos de mil millones de parámetros; no se han publicado evaluaciones de fiabilidad.
+- Sesgos conocidos: no documentados, pero al derivar de Qwen3.5-0.8B y de un dataset SFT no especificado, pueden heredarse sesgos del modelo base y del corpus de ajuste.
+- Contexto: no disponible; no se puede planificar su uso en tareas de contexto largo sin verificación empírica.
+- Cuantizaciones estáticas: el autor indica que no hay quants weighted/imatrix, lo que puede afectar la calidad en niveles bajos como Q2_K o Q3_K_M (marcado como "lower quality").
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero las etiquetas research-only del modelo original deberían revisarse antes de un despliegue productivo.
+- Falta de benchmarks: no hay datos publicados que permitan estimar calidad, latencia o throughput de forma fiable.
 
 ## Enlaces
 
-- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/chaski-r2-GGUF
-- Modelo base declarado: https://huggingface.co/SZLHOLDINGS/chaski-r2
-- Modelo subyacente del adaptador: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#chaski-r2-GGUF
-- Peticiones de cuantizacion y preguntas frecuentes del autor: https://huggingface.co/mradermacher/model_requests
-- Guia de uso de ficheros GGUF (referencia citada por el autor): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafica comparativa de perplejidad por tipo de cuantizacion: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre tipos de cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Empresa que financia el trabajo de cuantizacion: https://www.nethype.de/
-- Paper, blog o demo oficial del modelo: no disponible. La busqueda web realizada no devolvio ninguna fuente tecnica relacionada con chaski-r2.
+- Repositorio GGUF: https://huggingface.co/mradermacher/chaski-r2-GGUF
+- Modelo original: https://huggingface.co/SZLHOLDINGS/chaski-r2
+- Modelo base del ajuste: https://huggingface.co/Qwen/Qwen3.5-0.8B
+- Página de overview de cuantizaciones del autor: https://hf.tst.eu/model#chaski-r2-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
+- Comparativa de calidad de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

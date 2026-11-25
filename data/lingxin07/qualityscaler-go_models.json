@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "lingxin07/QualityScaler-Go_models",
+  "slug": "lingxin07-qualityscaler-go_models",
+  "author": "lingxin07",
+  "url": "https://huggingface.co/lingxin07/QualityScaler-Go_models",
+  "created_at": "2026-10-18T03:04:41.000Z",
+  "updated_at": "2026-11-25T06:23:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "image-restoration",
+    "super-resolution",
+    "face-restoration",
+    "fp32",
+    "fp16",
+    "bf16",
+    "zh",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5258369896,
+  "storage_human": "5.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

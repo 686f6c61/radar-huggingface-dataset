@@ -2,47 +2,48 @@
 
 ## Resumen
 
-VERO-Mini-V3-i1-GGUF es una colección de cuantizaciones en formato GGUF del modelo VERO-Mini-V3, publicada por el usuario mradermacher en Hugging Face. Se trata de una conversión de pesos realizada con la herramienta de cuantización de llama.cpp, que genera múltiples variantes (desde IQ1_S hasta Q6_K) para adaptar el modelo a distintos presupuestos de memoria y hardware. El modelo original, VERO-Mini-V3, procede del repositorio MagmaStudios/VERO-Mini-V3.
+VERO-Mini-V3-i1-GGUF es una colección de cuantizaciones GGUF generadas por mradermacher a partir del modelo base MagmaStudios/VERO-Mini-V3, un modelo de lenguaje conversacional y de código con soporte para inglés y español. El modelo original cuenta con 1.543.714.304 parámetros (aproximadamente 1,5 mil millones) y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. Esta versión cuantizada emplea el método imatrix (importance matrix) de mradermacher, que produce cuantizaciones de mayor calidad que las estáticas equivalentes en tamaño.
 
-El dato de parámetros totales reportado en el repositorio de safetensors es de 1.020.404, una cifra anómala que probablemente refleja un error de metadatos o una unidad distinta a la convencional (millones). No se dispone de información sobre la arquitectura, el contexto, los idiomas o la licencia del modelo original en la información proporcionada.
+El interés de esta ficha radica en que ofrece un rango muy amplio de cuantizaciones (desde IQ1_S de 0,5 GB hasta Q6_K de 1,4 GB), lo que permite desplegar el modelo en hardware muy limitado, incluidas GPU de consumo con poca VRAM o incluso CPU. Al tratarse de una cuantización y no del modelo original, las capacidades funcionales son las del modelo base, pero el rendimiento y la fidelidad dependen del nivel de cuantización elegido.
 
-La relevancia de esta ficha es limitada: se trata de un artefacto de cuantización sin model card descriptiva, sin benchmarks y sin documentación técnica del modelo base. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y el tamaño del repo reportado es de 0.0 GB, lo que sugiere que los pesos pueden no estar efectivamente alojados o que los metadatos están incompletos.
+La información disponible sobre el modelo base es escasa: la model card del repositorio cuantizado no incluye detalles sobre arquitectura interna, longitud de contexto, datos de entrenamiento ni benchmarks. Los datos que se presentan a continuación provienen de los metadatos del repositorio y de la model card del cuantizador, y se indica explícitamente cuando un dato no está disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 1.020.404 (dato reportado en safetensors; unidad no aclarada) |
-| Parametros activos | no disponible |
+| Arquitectura | no disponible (modelo base transformer, sin confirmar) |
+| Parametros totales | 1.543.714.304 (aprox. 1,5 B) |
+| Parametros activos | no aplica (no es MoE, segun datos disponibles) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones de un modelo base en safetensors) |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-IQ3_XXS, i1-Q2_K, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-IQ4_NL, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K |
+| Idiomas soportados | ingles (en), espanol (es) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizado); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base VERO-Mini-V3. La model card del repositorio de cuantización no incluye descripción de la arquitectura (transformer, MoE, SSM u otra), ni datos sobre el corpus de entrenamiento, número de tokens, composición del dataset o técnicas de alineación como RLHF o DPO.
+No se dispone de información detallada sobre la arquitectura del modelo base MagmaStudios/VERO-Mini-V3 en la documentación proporcionada. Por el número de parámetros (1,5 B) y las etiquetas del repositorio (transformers, chat, conversational, code), se trata presumiblemente de un transformer decoder-only orientado a conversación y generación de código, pero no se confirma en la información disponible.
 
-La única información técnica disponible es el proceso de cuantización: se han generado cuantizaciones ponderadas (weighted/imatrix) mediante llama.cpp, según los metadatos del README (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`). La presencia de la etiqueta `nicoboss` en los metadatos sugiere el uso de una herramienta o pipeline de cuantización asociado a ese nombre, pero no se detalla su funcionamiento.
+Tampoco se dispone de datos sobre el corpus de entrenamiento, el número de tokens, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. La model card del repositorio cuantizado se limita a describir el proceso de cuantización imatrix y las opciones de descarga; no incluye información sobre el entrenamiento del modelo original. La única innovación técnica documentada en esta ficha es el uso de cuantizaciones ponderadas con importance matrix (imatrix) por parte de mradermacher, que mejoran la relación calidad/tamaño respecto a las cuantizaciones estáticas disponibles en el repositorio paralelo VERO-Mini-V3-GGUF.
 
 ## Capacidades
 
-- No se han documentado capacidades específicas del modelo en la información disponible.
-- No consta soporte de tool calling, function calling ni modo agente.
-- No consta soporte multilingüe declarado.
-- No consta capacidad de visión, audio ni modo de razonamiento explícito (thinking mode).
-- La única capacidad verificable es la de ejecución en formato GGUF mediante llama.cpp y derivados, gracias a las cuantizaciones publicadas.
+- Generación de texto conversacional multi-turno, según las etiquetas chat y conversational del repositorio.
+- Generación de código, según la etiqueta code.
+- Soporte de inglés y español, según los metadatos de idioma del repositorio.
+- No se documenta soporte de tool calling o function calling en la información disponible.
+- No se documenta soporte de agentes ni razonamiento multi-paso en la información disponible.
+- No se documenta modo thinking, visión, audio ni otras capacidades especiales.
 
 ## Casos de uso
 
-- Despliegue en CPU o GPU de gama baja: las cuantizaciones IQ1_S, IQ2_XXS y Q2_K permiten ejecutar el modelo en entornos con memoria muy limitada, aunque con pérdida de calidad respecto a los pesos originales.
-- Pruebas de inferencia local con llama.cpp: útil para desarrolladores que quieran evaluar el modelo base VERO-Mini-V3 sin descargar los safetensors completos.
-- Integración en aplicaciones de escritorio con Ollama o LM Studio: los ficheros GGUF son compatibles con estos runners, lo que facilita prototipado rápido.
-- Evaluación comparativa de cuantizaciones: la amplia gama publicada (24 variantes) permite medir el impacto de la cuantización en la calidad de salida para este modelo concreto.
-- Experimentación académica con modelos pequeños: si el recuento de parámetros reportado fuera correcto en millones, el modelo sería apto para investigación en entornos con recursos reducidos.
-- Servido en entornos embebidos o edge: las variantes de 1-2 bits podrían caber en dispositivos con poca RAM, siempre que el modelo base sea realmente pequeño.
+- Asistente conversacional en español para aplicaciones de atención al cliente: el modelo puede gestionar diálogos multi-turno en español e inglés, y su tamaño de 1,5 B permite desplegarlo en servidores modestos con cuantizaciones Q4_K_M o Q5_K_M de aproximadamente 1,1-1,2 GB.
+- Generación de código en entornos con recursos limitados: con la etiqueta code y cuantizaciones de 1 GB, puede integrarse en editores o pipelines locales para autocompletado y generación de fragmentos, sin depender de APIs externas.
+- Despliegue en dispositivos de borde o CPU: las cuantizaciones IQ2 e IQ3 (0,6-0,9 GB) permiten ejecutar el modelo en portátiles sin GPU dedicada mediante llama.cpp u Ollama, útil para prototipos y demos offline.
+- Traducción y asistencia bilingüe inglés-español: el soporte declarado de ambos idiomas lo hace adecuado para tareas de reescritura, resumen o traducción asistida en entornos donde no se requiere calidad de modelos de mayor tamaño.
+- Experimentación e investigación en cuantización: el repositorio ofrece 24 variantes de cuantización con imatrix, lo que permite estudiar el impacto de la cuantización en la calidad para un modelo de 1,5 B, comparando con las cuantizaciones estáticas del repositorio VERO-Mini-V3-GGUF.
+- Chatbot educativo o de soporte interno en organizaciones con infraestructura limitada: la licencia Apache 2.0 permite uso comercial y modificación, y el tamaño reducido facilita el despliegue en una sola GPU de consumo o incluso en CPU.
 
 ## Benchmarks y rendimiento
 
@@ -50,26 +51,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con precisión, ya que el número real de parámetros no está claro. Si el modelo tuviera ~1.000 millones de parámetros, las cuantizaciones Q4_K_M ocuparían del orden de 0,6-0,8 GB y las Q6_K alrededor de 0,8-1,0 GB; si el recuento reportado fuera literal (1.020.404 parámetros), el modelo cabría en cualquier dispositivo.
-- GPU recomendadas: no disponibles. Para un modelo de ~1B, una RTX 3060 de 12 GB o superior sería más que suficiente; para un modelo de mayor tamaño, se requerirían A100/H100.
-- Compatibilidad con GPU de consumo: probable para cuantizaciones bajas si el modelo es pequeño; no confirmable sin datos reales de tamaño.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que su uso requeriría los safetensors originales.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 0,5-1,5 GB según la cuantización elegida (IQ1_S ~0,5 GB; Q4_K_M ~1,1 GB; Q6_K ~1,4 GB), más overhead de contexto y KV cache.
+- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM para cuantizaciones bajas; RTX 3060, RTX 4060, RTX 4090 o superiores para cuantizaciones altas con contexto amplio. GPU de datacenter (A100, H100) no son necesarias para este tamaño.
+- Cabe en GPU de consumo: sí, en la práctica totalidad de GPU de consumo modernas (GTX 1060 6 GB en adelante) con cuantizaciones Q4-Q6.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el repositorio declara compatibilidad con endpoints (tag endpoints_compatible). vLLM y TGI no soportan GGUF de forma nativa en todos los casos, por lo que se recomienda llama.cpp u Ollama.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de información sobre el modelo base ni sobre alternativas comparables de la misma categoría, tamaño o tarea.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| VERO-Mini-V3-i1-GGUF (este) | 1,5 B | no disponible | Apache 2.0 | GGUF (24 cuantizaciones imatrix) | Cuantización imatrix de mradermacher |
+| VERO-Mini-V3-GGUF | 1,5 B | no disponible | Apache 2.0 | GGUF (cuantizaciones estáticas) | Mismo modelo base, cuantizaciones estáticas |
+| MagmaStudios/VERO-Mini-V3 | 1,5 B | no disponible | Apache 2.0 | safetensors | Modelo base original |
+
+No se dispone de datos de benchmarks ni de modelos comparables de otros autores en la información proporcionada, por lo que no es posible establecer una comparación de rendimiento con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- La model card no documenta sesgos, riesgos de alucinación ni limitaciones de contexto o idioma.
-- La licencia no está declarada, lo que impide confirmar si el uso comercial está permitido. Es imprescindible consultar la licencia del modelo original (MagmaStudios/VERO-Mini-V3) antes de cualquier uso en producción.
-- El recuento de parámetros reportado (1.020.404) es inconsistente con el tamaño habitual de un modelo "Mini" y podría ser un error de metadatos; no debe tomarse como referencia para planificar recursos.
-- El repositorio reporta 0.0 GB de tamaño y 0 descargas, lo que sugiere que los ficheros pueden no estar disponibles o que los metadatos están incompletos.
-- Las cuantizaciones de 1-2 bits (IQ1_S, IQ1_M, IQ2_XXS) degradan notablemente la calidad de salida y no son recomendables para producción.
-- No hay garantía de que las cuantizaciones hayan sido validadas funcionalmente; al ser un artefacto generado automáticamente, conviene verificar la integridad de los ficheros antes de usarlos.
+- La información sobre el modelo base es muy escasa: no se documentan arquitectura, contexto, datos de entrenamiento ni benchmarks, lo que dificulta evaluar su calidad real.
+- Las cuantizaciones de muy baja precisión (IQ1_S, IQ1_M, IQ2_XXS) degradan notablemente la calidad; el propio autor las etiqueta como "for the desperate" o "mostly desperate".
+- Riesgo de alucinación inherente a modelos de 1,5 B, especialmente en tareas de razonamiento complejo o conocimiento factual.
+- No se documentan sesgos conocidos ni evaluaciones de seguridad en la información disponible.
+- El soporte multilingüe se limita a inglés y español según los metadatos; no se garantiza un rendimiento uniforme en ambos idiomas.
+- La licencia Apache 2.0 permite uso comercial, pero al ser una cuantización de un modelo de terceros conviene verificar la licencia y condiciones del modelo base MagmaStudios/VERO-Mini-V3 antes de producción.
+- Al tratarse de un repositorio de cuantización, los pesos GGUF no son directamente compatibles con transformers sin un runtime GGUF; para uso con la librería transformers debe emplearse el modelo base en safetensors.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones: https://huggingface.co/mradermacher/VERO-Mini-V3-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/VERO-Mini-V3-i1-GGUF
 - Modelo base: https://huggingface.co/MagmaStudios/VERO-Mini-V3
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/VERO-Mini-V3-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#VERO-Mini-V3-i1-GGUF
+- README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Gráfico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Análisis de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- nethype GmbH: https://www.nethype.de/

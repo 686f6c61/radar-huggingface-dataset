@@ -1,0 +1,76 @@
+{
+  "schema": 2,
+  "id": "Noor-Khan/noor-nano-v1.0",
+  "slug": "noor-khan-noor-nano-v1-0",
+  "author": "Noor-Khan",
+  "url": "https://huggingface.co/Noor-Khan/noor-nano-v1.0",
+  "created_at": "2026-11-25T05:55:55.000Z",
+  "updated_at": "2026-11-25T06:09:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "noor-nano",
+    "text-generation",
+    "causal-lm",
+    "from-scratch",
+    "tiny",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10492416,
+  "parameters_human": "10.5M",
+  "storage_bytes": 41974936,
+  "storage_human": "42 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NoorEducation | منصة نور التعليمية - فضاء التلميذ الذكي",
+      "url": "https://noor.tn/",
+      "snippet": "app.noor.tn لقطات حقيقية من التطبيق 🏠 الرئيسية : دروسك بنظرة واحدة لوحة شخصية لكل تلميذ"
+    },
+    {
+      "title": "Noor Education - Plateforme d'Apprentissage",
+      "url": "https://app.noor.tn/login",
+      "snippet": "Découvrez une nouvelle façon d'apprendre avec Noor Education."
+    },
+    {
+      "title": "noor library the largest arab electronic library open for books",
+      "url": "https://www.noor-book.com/",
+      "snippet": "8,000,000 Visitors per month More than 8 million visitors who are interested in Arabic books visit the Noor Library website every …"
+    },
+    {
+      "title": "Noor – Coran Intelligent, Tafsir IA & Horaires de Prière",
+      "url": "https://noor-ai.org/",
+      "snippet": "Noor : application coranique intelligente avec Tafsir IA, horaires de prière précis, direction Qibla, apprentissage de l'arabe et …"
+    },
+    {
+      "title": "Noor Fès | Huile d'Olive Vierge Extra Bio",
+      "url": "https://noorfes.ma/",
+      "snippet": "Noor Fès est une huile d'olive vierge extra bio au goût authentique, élégante en arôme et parfaitement équilibrée dans ses saveurs. …"
+    }
+  ]
+}

@@ -2,114 +2,114 @@
 
 ## Resumen
 
-Utter es un modelo de limpieza de dictado desarrollado por ductai199x, pensado para funcionar como la segunda etapa de una aplicación de dictado por voz local (Utter). No realiza reconocimiento de voz: recibe la transcripción en bruto que ha producido el reconocedor (NVIDIA Parakeet) y devuelve el texto que el hablante habría tecleado, aplicando puntuación, mayúsculas, conversión de símbolos y números hablados a su forma escrita, eliminación de muletillas y arranques en falso, autocorrecciones, retracciones y formato de listas, corrigiendo la gramática sin sustituir las palabras del usuario.
+Utter cleanup models es una familia de modelos de limpieza de dictado desarrollada por ductai199x dentro del proyecto Utter, una aplicación de dictado por voz que funciona en local. El modelo no transcribe audio: recibe la salida de un reconocedor de voz (NVIDIA Parakeet) y devuelve el texto que el hablante pretendía escribir, aplicando puntuación, mayúsculas, formato de números y símbolos hablados, eliminación de muletillas, corrección de gramática y aplicación de autocorrecciones dictadas ("at 2, actually 3", "scratch that"). Está pensado para integrarse en el flujo de una app de dictado, no como asistente conversacional: el texto dictado se escribe, nunca se responde.
 
-Se distribuye en dos variantes con arquitectura transformer decoder-only de la familia Gemma 4, ajustadas mediante LoRA (rango 16, alpha 32) sobre los checkpoints QAT sin cuantizar de Google: Utter Quality v1 parte de Gemma 4 E4B y Utter Light v1 de Gemma 4 E2B. Ambas se fusionan y cuantizan a Q4_0 en formato GGUF para su uso en llama.cpp. El checkpoint E4B tiene 4.628.569.635 parámetros en safetensors.
+La familia incluye tres niveles. Quality v2 y Light v2 son ajustes LoRA (rango 16, alpha 32) sobre los checkpoints QAT sin cuantizar de Gemma 4 E4B y Gemma 4 E2B respectivamente, fusionados y cuantizados a Q4_0. Extra light v1 es un ajuste completo de todos los pesos de Gemma 3 1B (no LoRA) sobre el mismo conjunto de datos, también en Q4_0. El repositorio ocupa 18,2 GB e incluye pesos GGUF, adaptadores LoRA y las versiones v1 anteriores.
 
-Su relevancia actual radica en que resuelve un problema muy concreto de los flujos de dictado local: transformar habla desordenada en texto listo para enviar sin depender de la nube, con un consumo de VRAM de aproximadamente 3,3 GB (Quality) y 1,8 GB (Light), y latencias medianas de 250 ms y 180 ms respectivamente en una RTX 3090 Ti. Está licenciado bajo Apache 2.0 y soporta únicamente inglés.
+La relevancia del modelo está en su enfoque de producto: resuelve un problema muy concreto (convertir transcripción cruda en texto limpio y editable) con modelos pequeños que caben en GPU de consumo e incluso en CPU de móvil, y publica el conjunto de datos de entrenamiento y una evaluación con juez automático calibrado contra revisión humana.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Gemma 4) con ajuste fino LoRA (rango 16, alpha 32) |
-| Parametros totales | 4.628.569.635 (checkpoint E4B, variante Quality, segun safetensors); variante Light basada en Gemma 4 E2B (numero exacto no disponible) |
+| Arquitectura | Transformer decoder-only (base Gemma 4 E4B / E2B y Gemma 3 1B), ajuste LoRA o completo |
+| Parametros totales | 4.628.569.635 (repo safetensors agregado; por variante: Quality v2 sobre Gemma 4 E4B, Light v2 sobre Gemma 4 E2B, Extra light v1 sobre Gemma 3 1B) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_0 (GGUF); adaptadores LoRA en safetensors; base QAT sin cuantizar |
+| Tipos de cuantizacion | Q4_0 (GGUF); adaptadores LoRA en precision del checkpoint base |
 | Idiomas soportados | en (ingles) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (Q4_0) y safetensors (adaptadores LoRA) |
-
-Notas por variante:
-
-| Variante | Modelo base | VRAM aproximada (GPU) | Fichero |
-|---|---|---|---|
-| Utter Quality v1 | google/gemma-4-e4b-it-qat-q4_0-unquantized | ~3,3 GB (con embeddings por capa en RAM del sistema) | utter-quality-v1-q4_0.gguf |
-| Utter Light v1 | google/gemma-4-E2B-it-qat-q4_0-unquantized | ~1,8 GB | utter-light-v1-q4_0.gguf |
+| Licencia | other (apache-2.0-and-gemma, ver LICENSE.md) |
+| Formato de pesos | safetensors, GGUF, adaptadores LoRA |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de la familia Gemma 4 al que se le aplica un ajuste fino mediante LoRA de rango 16 y alpha 32 sobre el checkpoint QAT (quantization-aware training) sin cuantizar de Google. Tras el entrenamiento, el adaptador se fusiona con la base y se cuantiza a Q4_0, que es el formato para el que el QAT estaba preparado. Utter Quality v1 usa Gemma 4 E4B y Utter Light v1 usa Gemma 4 E2B; ambos adaptadores se publican también por separado (rango 16) para fusionado o entrenamiento posterior. La inferencia se realiza en llama.cpp (versión b11535 o posterior) y requiere desactivar el modo thinking (`chat_template_kwargs: {"enable_thinking": false}`).
+Los modelos se construyen sobre checkpoints de Google: Gemma 4 E4B y E2B (en su versión QAT q4_0 sin cuantizar) para Quality y Light, y Gemma 3 1B para Extra light. Quality y Light se entrenan con LoRA de rango 16 y alpha 32, una pasada sobre el split de entrenamiento del dataset ductai199x/dictation-to-text (79.246 pares), learning rate 2e-4 y una época; después se fusionan y cuantizan a Q4_0, el formato para el que el QAT fue entrenado. Extra light entrena todos los pesos con learning rate 2e-5 y dos épocas, porque un adaptador de rango 16 dejaba al modelo pequeño con la tendencia a continuar listas en lugar de cerrarlas.
 
-Los datos de entrenamiento son pares (salida del reconocedor, texto pretendido). El lado escrito se compone de pasajes reales de Common Pile (Stack Exchange, GitHub, resúmenes de arXiv, IRC de Ubuntu) y Wikipedia, además de listas y mensajes cotidianos generados por LLM. El lado hablado se generó con Gemma 4 26B-A4B en ocho modalidades (plano, puntuación hablada, disfluente, autocorrección, comando de retracción, reformulación de frase, errores gramaticales y edición hacia atrás en el texto), validado por código, sintetizado con voz Kokoro TTS y reconocido por Parakeet. Las claves de respuesta se fijaron para erratas y gramática, verificando cada corrección con ERRANT.
-
-Los volúmenes de entrenamiento reportados son: Light v1, una pasada de 89.499 pares con learning rate 2e-4 y 1 época; Quality v1, primera pasada de 89.499 pares con lr 2e-4 y 1 época, y segunda pasada desde el primer adaptador de 45.660 pares (con líneas `Dictionary:`) con lr 1e-4 y 1 época. Ningún pasaje de evaluación se usó durante el entrenamiento (held out). No se menciona uso de RLHF ni DPO.
+Los datos son pares (salida del reconocedor, texto pretendido). El lado escrito procede de pasajes reales de Common Pile (Stack Exchange, GitHub, abstracts de arXiv, IRC de Ubuntu) y Wikipedia, más listas y mensajes cotidianos generados por LLM. El lado hablado lo genera Gemma 4 26B-A4B en ocho variedades (plano, puntuación hablada, disfluente, autocorrección, comando de retracción, reformulación de frase, errores gramaticales y edición lejana), se valida por código, se sintetiza con Kokoro TTS y se reconoce con Parakeet. Las claves de respuesta se corrigen para erratas y gramática, verificando cada corrección con ERRANT. El dataset se divide por pasaje, de modo que ningún pasaje de test o evaluación se usa en entrenamiento. Una parte de los pares incluye líneas `Dictionary:` con la grafía correcta de palabras mal oídas y con palabras casi coincidentes que no deben forzarse.
 
 ## Capacidades
 
-- Limpieza de dictado: añade puntuación y mayúsculas no pronunciadas, y elimina muletillas y arranques en falso.
-- Normalización de texto: convierte símbolos y números hablados a su forma escrita ("four x faster" a "4× faster", "about two forty" a "~240").
-- Aplicación de correcciones habladas: autocorrecciones ("at 2, actually 3"), retracción de la última frase ("scratch that"), reinicio completo ("let's start over") y ediciones hacia atrás ("actually, change the eggs to three boxes").
-- Formato de listas habladas como viñetas, numeradas cuando son pasos.
-- Corrección gramatical conservando las palabras del hablante.
-- Diccionario personal: aplica la grafía correcta de términos propios cuando aparecen en la línea `Dictionary:`, incluyendo casos de palabras mal oídas y de términos parecidos que no deben forzarse.
-- Distinción entre dictado y petición: el texto dictado se escribe, nunca se responde (una pregunta o una instrucción a una IA se devuelve como texto).
-- No realiza reconocimiento de voz ni procesamiento de audio; solo transforma texto a texto.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible (el modo thinking debe estar desactivado).
-- Capacidades multilingües: solo inglés.
-- Capacidad especial: prompting específico con system prompt fijo y contexto opcional (App, Before, Lists, Dictionary).
+- Limpieza de dictado: añade puntuación y mayúsculas no pronunciadas.
+- Normalización de símbolos y números hablados ("four x faster" a "4× faster", "about two forty" a "~240").
+- Eliminación de muletillas y falsos arranques.
+- Aplicación de autocorrecciones: "at 2, actually 3", "scratch that" (última frase), "let's start over" (todo).
+- Ediciones lejanas: "actually, change the eggs to three boxes".
+- Conversión de listas habladas en viñetas, numeradas cuando son pasos.
+- Corrección gramatical manteniendo las palabras del hablante.
+- Respeto de un diccionario personal para la grafía de nombres y términos propios.
+- Dictado literal: una pregunta o instrucción dirigida a una IA se devuelve como texto, no se responde.
+- Soporte de contexto opcional por mensaje: `App:`, `Before:`, `Lists:`, `Dictionary:`.
+- Modo thinking desactivable (debe ir desactivado: `enable_thinking: false`).
 
 ## Casos de uso
 
-- Dictado local en escritorio: el modelo limpia la transcripción de Parakeet para que el usuario envíe texto correcto sin editar manualmente; su bajo consumo de VRAM (1,8 a 3,3 GB) permite ejecutarlo en el mismo equipo que hace el reconocimiento.
-- Redacción de correos y mensajes: con la variante Quality y un diccionario de nombres propios, convierte notas habladas con muletillas y autocorrecciones en mensajes listos para enviar (89,3% "ready to send" en el conjunto realista con voces Kokoro).
-- Edición por voz sobre texto existente: la línea `Before:` con el texto anterior al cursor permite aplicar correcciones hacia atrás y retracciones, útil para revisar borradores dictados.
-- Dictado de listas y procedimientos: transforma enumeraciones habladas en viñetas y listas numeradas para pasos, adecuado para notas de reunión o checklists.
-- Entrada de texto en entornos con poca VRAM: la variante Light (E2B) funciona con ~1,8 GB de GPU y permite que el reconocimiento de voz se ejecute en CPU en máquinas modestas.
-- Dictado de prompts e instrucciones para IA: en el conjunto dirigido con diccionario alcanza 89,7% (Quality) y 86,6% (Light) al devolver instrucciones y preguntas como texto limpio, sin responderlas, para pegarlas después en otra herramienta.
-- Corrección gramatical asistida: corrige errores gramaticales manteniendo las palabras del hablante, útil para transcripciones de reuniones posteriores.
+- Dictado en correo electrónico: el modelo recibe la transcripción con `App: email` y contexto previo al cursor, y devuelve el texto con puntuación y formato listos para enviar; su evaluación "Ready to send" mide exactamente este escenario (88,1% en Quality v2 con voces Kokoro).
+- Notas rápidas y listas: convierte enumeraciones habladas en viñetas o listas numeradas para pasos, útil en apps de notas donde el usuario dicta sin mirar la pantalla.
+- Prompts para asistentes de IA: el test "Directed" (292 dictados de preguntas, peticiones a asistentes e instrucciones a agentes de código) valida que el texto se escribe sin ser respondido, con un 87,7% en Quality v2 con diccionario.
+- Dictado con vocabulario propio: la línea `Dictionary:` permite que nombres como "Utter" o "Nguyen" se escriban correctamente cuando el reconocedor los confunde, sin forzar palabras parecidas que no corresponden.
+- Corrección de texto dictado con errores: aplica arreglos gramaticales verificados con ERRANT manteniendo las palabras del hablante, adecuado para usuarios que dictan y quieren un texto publicable sin reescribir.
+- Edición por voz de texto ya escrito: comandos como "scratch that" o ediciones lejanas permiten corregir frases anteriores sin seleccionar manualmente, útil en flujos de escritura largos.
+- Despliegue en movil o equipos sin GPU: Extra light v1 (720 MB, Q4_0) está pensado para el teléfono de Utter y para ordenadores sin tarjeta gráfica, con un tiempo mediano de limpieza de 1,49 s en CPU de Pixel 10 Pro XL.
 
 ## Benchmarks y rendimiento
 
-La evaluación propia se basa en la métrica "ready to send" (proporción de dictados que un escritor cuidadoso enviaría exactamente como quedan), puntuada por Gemma 4 26B-A4B (Q4_0, llama.cpp) frente al texto pretendido, con rúbrica calibrada sobre revisión humana.
+La evaluación usa "Ready to send": la proporción de dictados que un escritor cuidadoso enviaría tal cual, juzgada por Gemma 4 26B-A4B con una rúbrica calibrada contra revisión humana.
 
-| Conjunto | Quality v1 | Light v1 |
+| Ready to send | Quality v2 | Light v2 |
 |---|---|---|
-| Realista, voces Kokoro | 89,3% | 87,5% |
-| Realista, con diccionario de 300 terminos | 88,9% | 87,3% |
-| Realista, voces Chatterbox no vistas | 82,3% | 78,0% |
-| Dirigido, con diccionario | 89,7% | 86,6% |
+| Realistic, voces Kokoro | 88,1% | 85,4% |
+| Realistic, con diccionario de 300 términos | 87,8% | 85,7% |
+| Realistic, voces Chatterbox no vistas | 80,1% | 75,5% |
+| Directed, con diccionario | 87,7% | 83,6% |
 | Tiempo de limpieza, mediana (RTX 3090 Ti) | ~250 ms | ~180 ms |
 
-No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
+| Ready to send | Light v2 | Extra light v1 |
+|---|---|---|
+| Kokoro, pasajes reales | 85,7% | 79,7% |
+| Voces Chatterbox no vistas | 74,6% | 67,0% |
+| Test de texto tecleado | 64,3% | 51,9% |
+| Tiempo de limpieza, mediana (CPU Pixel 10 Pro XL) | 2,69 s | 1,49 s |
+
+Los conjuntos de test son 950 dictados retenidos (Realistic) y 292 dictados (Directed); Extra light se evalúa además sobre 25.469 dictados retenidos. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM de inferencia: aproximadamente 3,3 GB para Utter Quality v1 (cuando los embeddings por capa permanecen en la RAM del sistema) y aproximadamente 1,8 GB para Utter Light v1.
-- GPU recomendadas: no se especifican modelos concretos; la medición de latencia se realizó en una RTX 3090 Ti. Al tratarse de modelos de 4,6B/E2B cuantizados a Q4_0, caben en la mayoría de GPU consumer de gama media y alta.
-- Cabe en GPU consumer: sí, ambas variantes, dado su bajo consumo (1,8-3,3 GB). En la variante Light el reconocimiento de voz puede ejecutarse en CPU.
-- Opciones de despliegue: llama.cpp (versión b11535 o posterior) para los ficheros GGUF; los adaptadores LoRA en safetensors se pueden fusionar con el checkpoint base para otros runners. No se mencionan vLLM, TGI ni Ollama.
-- Latencia: mediana de aproximadamente 250 ms (Quality) y 180 ms (Light) en RTX 3090 Ti.
-- Throughput: no disponible.
+- Quality v2 (Gemma 4 E4B, Q4_0): unos 3,3 GB de memoria de GPU cuando los embeddings por capa permanecen en RAM del sistema.
+- Light v2 (Gemma 4 E2B, Q4_0): unos 1,8 GB de memoria de GPU; en ese caso Utter ejecuta el reconocimiento de voz en CPU.
+- Extra light v1 (Gemma 3 1B, Q4_0): 720 MB, diseñado para equipos sin tarjeta gráfica y para la app móvil.
+- GPU recomendadas: RTX 3090 Ti para las cifras de latencia publicadas; por tamaño, cualquier GPU consumer con 4 GB o más de VRAM debería alojar Quality v2, y con 2 GB o más Light v2.
+- Despliegue: llama.cpp (build b11535 o posterior), formato GGUF Q4_0; los adaptadores LoRA están disponibles en safetensors para fusionar o seguir entrenando.
+- Latencia: mediana de ~250 ms (Quality v2) y ~180 ms (Light v2) en RTX 3090 Ti; 2,69 s (Light v2) y 1,49 s (Extra light v1) en CPU de Pixel 10 Pro XL. Throughput no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones de otros modelos públicos comparables de limpieza de dictado en la informacion proporcionada, por lo que la comparativa se limita a las dos variantes del propio modelo.
-
-| Modelo | Base | VRAM (GPU) | Ready to send (realista Kokoro) | Tiempo mediano | Licencia |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Utter Quality v1 | Gemma 4 E4B | ~3,3 GB | 89,3% | ~250 ms | Apache 2.0 |
-| Utter Light v1 | Gemma 4 E2B | ~1,8 GB | 87,5% | ~180 ms | Apache 2.0 |
-| Gemma 4 E4B base (sin ajuste) | - | no disponible | no disponible | no disponible | Apache 2.0 |
+| Utter Quality v2 | Gemma 4 E4B (Q4_0) | no disponible | Limpieza de dictado | apache-2.0-and-gemma | GGUF + LoRA en HF |
+| Utter Light v2 | Gemma 4 E2B (Q4_0) | no disponible | Limpieza de dictado | apache-2.0-and-gemma | GGUF + LoRA en HF |
+| Utter Extra light v1 | Gemma 3 1B (Q4_0) | no disponible | Limpieza de dictado | apache-2.0-and-gemma | GGUF en HF |
+| Gemma 4 E4B / E2B base | 4B / 2B | no disponible | LLM generalista | Gemma | HF |
+| Gemma 3 1B base | 1B | no disponible | LLM generalista | Gemma | HF |
 
-Comparativa con alternativas de la misma categoria: no disponible.
+La comparación directa con otros modelos de limpieza de dictado no está disponible en la información proporcionada; los modelos base de Google son alternativas generalistas, pero no están ajustados para esta tarea ni publican métricas "Ready to send".
 
 ## Limitaciones y advertencias
 
-- Cobertura de idioma limitada a inglés (en).
-- Riesgo conocido: una muletilla inicial seguida de coma ("Uh, so...") puede sobrevivir a la limpieza.
-- El caso de los pronombres ("me and him went") no siempre se corrige.
-- Riesgo de alucinación: no cuantificado en la informacion disponible; el modelo está entrenado para no responder al texto dictado, pero no hay datos sobre su tasa de errores fabulados.
-- La evaluación se realizó con habla sintética (dos motores TTS: Kokoro y Chatterbox), no con dictado grabado real; el rendimiento con voces no vistas cae hasta 82,3% (Quality) y 78,0% (Light).
-- Prompting restrictivo: requiere un system prompt exacto y el modo thinking desactivado; desviarse de ese formato puede degradar la salida.
-- El diccionario debe incluir solo los términos relevantes para cada dictado, no la lista completa del usuario.
-- Licencia Apache 2.0, igual que el modelo base, sin restricciones adicionales conocidas para uso comercial; el texto de entrenamiento procede de fuentes con licencias abiertas (dominio público, CC0, CC BY-SA, MIT, Apache-2.0).
-- No realiza reconocimiento de voz: depende de un transcriptor externo (NVIDIA Parakeet) aguas arriba.
+- Solo inglés: el modelo está entrenado y evaluado únicamente en inglés; no hay soporte multilingüe declarado.
+- Dependencia del reconocedor: está ajustado sobre salidas de NVIDIA Parakeet; otros reconocedores pueden degradar el rendimiento.
+- El prompt de sistema debe ser exactamente el especificado; las reglas están en los pesos y el prompt corto es parte del contrato de uso.
+- El modo thinking debe estar desactivado; con thinking activo el comportamiento no está validado.
+- El diccionario debe incluir solo términos que suenen en el dictado actual, no la lista completa; el modelo está entrenado para no forzar palabras parecidas que no corresponden.
+- Riesgo de alucinación y de reescritura: el modelo corrige gramática y aplica ediciones, por lo que puede alterar el sentido en dictados ambiguos; la evaluación "Ready to send" es del 80,1% en voces no vistas (Quality v2), lo que deja margen de error.
+- Licencia mixta apache-2.0-and-gemma: las variantes sobre Gemma 3 (Extra light v1) quedan sujetas a los términos de Gemma; revisar LICENSE.md antes de uso comercial.
+- Las versiones v1 se entrenaron antes de publicar los datos, sobre pares que solapan con el split de test actual; no son comparables con v2.
+- No se han publicado datos de sesgos, contexto máximo ni throughput.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/ductai199x/utter
-- Repositorio de la aplicación Utter: https://github.com/ductai199x/utter
-- Modelo base Quality: https://huggingface.co/google/gemma-4-e4b-it-qat-q4_0-unquantized
-- Modelo base Light: https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized
+- Modelo en Hugging Face: https://huggingface.co/ductai199x/utter
+- Repositorio de Utter: https://github.com/ductai199x/utter
+- Dataset de entrenamiento: https://huggingface.co/datasets/ductai199x/dictation-to-text
+- Checkpoint base Quality/Light: https://huggingface.co/google/gemma-4-e4b-it-qat-q4_0-unquantized
+- Checkpoint base Light: https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized
+- Checkpoint base Extra light: https://huggingface.co/google/gemma-3-1b-it-qat-q4_0-unquantized

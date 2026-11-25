@@ -5,7 +5,7 @@
   "author": "davitlive5",
   "url": "https://huggingface.co/davitlive5/Lapillus-v4",
   "created_at": "2026-11-24T14:29:33.000Z",
-  "updated_at": "2026-11-24T14:37:57.000Z",
+  "updated_at": "2026-11-24T15:59:57.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -42,8 +42,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "davitlive5/Lapillus-v3",
+  "renamed_at": "2026-11-25T08:37:45.612Z",
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

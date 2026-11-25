@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "SinghBro/querion-100m-sql",
+  "slug": "singhbro-querion-100m-sql",
+  "author": "SinghBro",
+  "url": "https://huggingface.co/SinghBro/querion-100m-sql",
+  "created_at": "2026-10-31T12:23:24.000Z",
+  "updated_at": "2026-11-25T05:50:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "text-to-sql",
+    "sql",
+    "from-scratch",
+    "custom-architecture",
+    "text-generation",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 381,
+  "trending_score": 0,
+  "parameters": 101026560,
+  "parameters_human": "101.0M",
+  "storage_bytes": 404116816,
+  "storage_human": "404 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

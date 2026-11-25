@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "ssws3/Clearline-VAD",
+  "slug": "ssws3-clearline-vad",
+  "author": "ssws3",
+  "url": "https://huggingface.co/ssws3/Clearline-VAD",
+  "created_at": "2026-11-25T10:55:02.000Z",
+  "updated_at": "2026-11-25T10:55:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "onnx",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "onnx",
+    "voice-activity-detection",
+    "vad",
+    "streaming",
+    "livekit",
+    "cpu",
+    "telephony",
+    "multilingual",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39066312,
+  "storage_human": "39 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "cstr/crispembed-spacy-en-core-web-sm-3.8.0",
+  "slug": "cstr-crispembed-spacy-en-core-web-sm-3-8-0",
+  "author": "cstr",
+  "url": "https://huggingface.co/cstr/crispembed-spacy-en-core-web-sm-3.8.0",
+  "created_at": "2026-11-18T18:43:23.000Z",
+  "updated_at": "2026-11-18T19:17:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "crispembed",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "crispembed",
+    "gguf",
+    "spacy",
+    "english",
+    "pos-tagging",
+    "dependency-parsing",
+    "lemmatization",
+    "named-entity-recognition",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 82,
+  "trending_score": 0,
+  "parameters": 3187174,
+  "parameters_human": "3.2M",
+  "storage_bytes": 12752960,
+  "storage_human": "13 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

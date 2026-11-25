@@ -1,0 +1,45 @@
+{
+  "schema": 2,
+  "id": "lxr2003/Physmend",
+  "slug": "lxr2003-physmend",
+  "author": "lxr2003",
+  "url": "https://huggingface.co/lxr2003/Physmend",
+  "created_at": "2026-06-20T04:37:17.000Z",
+  "updated_at": "2026-11-25T08:40:56.000Z",
+  "license": "tencent-hunyuan-community",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8338146592,
+  "parameters_human": "8.34B",
+  "storage_bytes": 74755447186,
+  "storage_human": "74.8 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "SubMaroon/Mimesis-26B-A4B",
+  "slug": "submaroon-mimesis-26b-a4b",
+  "author": "SubMaroon",
+  "url": "https://huggingface.co/SubMaroon/Mimesis-26B-A4B",
+  "created_at": "2026-11-25T05:40:37.000Z",
+  "updated_at": "2026-11-25T07:28:37.000Z",
+  "license": "TODO",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "moe",
+    "roleplay",
+    "distillation",
+    "experimental",
+    "en",
+    "ru",
+    "base_model:Tetratype/Gemma-4-26B-A4B-it-heretic-antislop",
+    "base_model:finetune:Tetratype/Gemma-4-26B-A4B-it-heretic-antislop",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805933872,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51644178190,
+  "storage_human": "51.6 GB",
+  "context_length": null,
+  "base_model": "Tetratype/Gemma-4-26B-A4B-it-heretic-antislop",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

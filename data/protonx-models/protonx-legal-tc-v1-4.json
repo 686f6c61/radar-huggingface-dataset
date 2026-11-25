@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "protonx-models/protonx-legal-tc-v1.4",
+  "slug": "protonx-models-protonx-legal-tc-v1-4",
+  "author": "protonx-models",
+  "url": "https://huggingface.co/protonx-models/protonx-legal-tc-v1.4",
+  "created_at": "2026-11-25T04:00:17.000Z",
+  "updated_at": "2026-11-25T05:07:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "text-to-text",
+    "vi",
+    "base_model:nbdaaa/t5-small-vietnamese",
+    "base_model:finetune:nbdaaa/t5-small-vietnamese",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 62538240,
+  "parameters_human": "62.5M",
+  "storage_bytes": 250988730,
+  "storage_human": "251 MB",
+  "context_length": null,
+  "base_model": "nbdaaa/t5-small-vietnamese",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

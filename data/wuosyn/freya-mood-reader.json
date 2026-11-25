@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "wuosyn/freya-mood-reader",
+  "slug": "wuosyn-freya-mood-reader",
+  "author": "wuosyn",
+  "url": "https://huggingface.co/wuosyn/freya-mood-reader",
+  "created_at": "2026-11-25T04:44:54.000Z",
+  "updated_at": "2026-11-25T04:44:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "freya",
+    "mood",
+    "text-classification",
+    "en",
+    "dataset:google-research-datasets/go_emotions",
+    "base_model:google/bert_uncased_L-2_H-128_A-2",
+    "base_model:finetune:google/bert_uncased_L-2_H-128_A-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4387339,
+  "parameters_human": "4.4M",
+  "storage_bytes": 17553956,
+  "storage_human": "18 MB",
+  "context_length": null,
+  "base_model": "google/bert_uncased_L-2_H-128_A-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

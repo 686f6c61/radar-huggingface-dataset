@@ -2,57 +2,58 @@
 
 ## Resumen
 
-cagliostro-v3.5 es un modelo de lenguaje causal decoder-only de 146 millones de parametros desarrollado por bench-labs. Se trata del checkpoint final de cagliostro-v3 al que se le ha aplicado una etapa adicional de entrenamiento corto de 0,39B tokens, mezclando los datos de cooldown de v3 con texto de tipo how-to y libros de texto procedentes de Cosmopedia. Mantiene la misma arquitectura y el mismo tokenizer que su predecesor, y acumula un total de 75,39B tokens vistos durante su entrenamiento.
+cagliostro-v3.5 es un modelo de lenguaje decoder-only de 146 millones de parámetros desarrollado por bench-labs. Se trata del checkpoint final de cagliostro-v3 sometido a una etapa adicional de preentrenamiento corta (0,39B tokens) que mezcla los datos de cooldown del propio v3 con texto instructivo y de tipo libro de texto procedente de Cosmopedia. Mantiene la misma arquitectura y tokenizer que su predecesor, acumulando un total de 75,39B tokens de entrenamiento.
 
-Con solo 146M de parametros, el modelo alcanza una puntuacion de 27,49 en la metrica del Open SLM Leaderboard, la mas alta registrada entre los modelos listados en el momento de su publicacion. Supera a SmolLM2-135M (135M, 2T tokens) y a su predecesor cagliostro-v3, con ganancias concentradas en ArithMark-3 (+2,6 puntos) y HellaSwag (+0,9). El autor advierte explicitamente de que la ventaja sobre SmolLM2-135M es de 0,36 puntos de indice y de que, con un bootstrap emparejado, el intervalo de confianza al 95% de esa diferencia es [-0,82, +1,75], por lo que ambos modelos no se pueden distinguir con certeza sobre esos cinco benchmarks.
+El modelo se posiciona como un "small language model" (SLM) de propósito general orientado a generación de texto en inglés, con licencia Apache 2.0. Su relevancia radica en que, según las cifras publicadas por el autor, alcanza un índice de 27,49 en la Open SLM Leaderboard, superando por un margen estrecho a SmolLM2-135M (27,13) pese a haberse entrenado con una fracción muy inferior de tokens (75,4B frente a 2T).
 
-Es relevante ahora porque demuestra que un modelo tiny de 146M parametros, entrenado con solo 75B tokens, puede competir en la gama sub-150M con modelos entrenados con volumenes de datos mucho mayores (SmolLM2 se entreno con 2T tokens), lo que abarata drasticamente el coste de entrenamiento y despliegue para tareas de generacion de texto en ingles sobre hardware de consumo.
+La ficha se centra en el modelo base; el autor publica además una variante chat (cagliostro-v3.5-chat) afinada con SFT sobre smol-smoltalk. El modelo está pensado para experimentación con modelos pequeños, evaluación comparativa y despliegue en entornos con recursos limitados.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only causal (misma que cagliostro-v3, mismo tokenizer) |
-| Parametros totales | 146.352.000 (146M) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
+| Arquitectura | Transformer decoder-only (causal LM) |
+| Parámetros totales | 146.352.000 (146M) |
+| Parámetros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no se distribuyen cuantizaciones oficiales; el repositorio contiene pesos en float32 (convertibles a otras precisiones con herramientas externas) |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors |
+| Tipos de cuantización | no disponible (pesos publicados en float32; repo de 0,6 GB) |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (librería transformers, requiere `custom_code`) |
 
 ## Arquitectura y entrenamiento
 
-cagliostro-v3.5 es un transformer decoder-only causal de 146M parametros que hereda integramente la arquitectura y el tokenizer de cagliostro-v3. El punto de partida es el paso 762.939 de v3 (pesos y estado del optimizador AdamW), sobre el que se aplica una etapa adicional de 4.000 pasos con 98.304 tokens por paso, lo que suma 0,39B tokens. La tasa de aprendizaje hace un calentamiento de 200 pasos hasta 3e-4 y despues un decaimiento coseno hasta cero; el pico es una decima parte del 3e-3 usado en v3. El optimizador es AdamW con weight decay de 0,01. En total, el modelo ha visto 75,39B tokens.
+El modelo es un transformer decoder-only de 146M parámetros, misma arquitectura y tokenizer que cagliostro-v3. La etapa adicional de entrenamiento parte del paso 762.939 de v3 (pesos y estado de AdamW) y ejecuta 4.000 pasos con 98.304 tokens por paso, es decir, 0,39B tokens. Se usa AdamW con weight decay de 0,01, warmup de 200 pasos hasta un pico de 3e-4 (una décima parte del 3e-3 de v3) y decaimiento coseno hasta cero. El entrenamiento se realizó en una única RTX PRO 6000 Blackwell en unos 41 minutos a 162.000 tokens por segundo.
 
-El nuevo mix de datos reparte el entrenamiento entre Cosmopedia v1 (tutoriales estilo WikiHow, 30,0%; libros de texto OpenStax, Khan Academy y Stanford, 15,0%), FineWeb-Edu deduplicado (20,35%), Cosmopedia v2 (13,75%), FineMath 3+ (8,25%), OpenMathInstruct-2 (7,15%), SmolTalk (2,75%) y DCLM-Baseline (2,75%). Las seis ultimas fuentes son la mezcla de cooldown de v3 escalada al 55%. La seleccion del checkpoint se hizo comparando seis ejecuciones partidas del mismo checkpoint y con los mismos hiperparametros, definiendo de antemano los criterios de exito (superar 27,13 de SmolLM2-135M, superarlo re-medido en el mismo harness y batir a v3 con el intervalo de confianza emparejado al 95% por encima de cero). Se aplico descontaminacion de 13-gramas contra las particiones de validacion y test de HellaSwag, ARC, PIQA y ArithMark-3.
+La mezcla de datos de esta etapa combina los datos de cooldown de v3 escalados al 55% (FineWeb-Edu deduplicado, FineMath 3+, OpenMathInstruct-2, SmolTalk, DCLM-Baseline) con nuevas fuentes de Cosmopedia: tutoriales estilo WikiHow (30%), libros de texto de OpenStax, Khan Academy y Stanford (15%) y Cosmopedia v2 (13,75%). El conjunto WikiHow (174M tokens) se vio aproximadamente 0,7 veces. La selección de la receta se hizo entre seis ejecuciones con distintos datos y semillas, fijando a priori los criterios de victoria. Se aplicó descontaminación por n-gramas de 13 tokens contra HellaSwag validación, ARC test, PIQA validación y ArithMark-3.
 
 ## Capacidades
 
-- Generacion de texto en ingles: el modelo es un base model, no un modelo de chat afinado; produce texto continuando una secuencia de entrada.
-- Razonamiento basico y conocimiento general medido mediante HellaSwag, ARC-Easy, ARC-Challenge y PIQA.
-- Aritmetica y matematicas: entrenado con FineMath 3+ y OpenMathInstruct-2, con una puntuacion de 45,30 en ArithMark-3.
-- Conocimiento procedimental y de manuales: el mix incluye tutoriales estilo WikiHow y libros de texto, orientados a la generacion de contenido expositivo e instructivo.
-- Modelo base sin plantilla de chat: no dispone de modo thinking, vision, audio ni capacidades multimodales.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible (es un base model, sin entrenamiento orientado a agentes).
-- Capacidades multilingues: solo ingles; el campo `language` de la model card declara unicamente `en`.
+- Generación de texto autoregresiva en inglés (modelo base, sin plantilla de chat).
+- Razonamiento básico y respuesta a preguntas de conocimiento general a pequeña escala.
+- Aritmética elemental y resolución de problemas matemáticos simples (entrenado con FineMath y OpenMathInstruct-2).
+- Comprensión lectora y tareas de sentido común (HellaSwag, PIQA, ARC).
+- Capacidad de continuación de texto e instrucciones implícitas de estilo tutorial/libro de texto.
+- No incluye soporte nativo de tool calling ni function calling documentado.
+- No se documentan capacidades de agente, razonamiento multi-paso explícito, visión ni audio.
+- Multilingüe: únicamente inglés.
+- La variante chat (cagliostro-v3.5-chat) añade seguimiento de system prompts y cierre de turnos propios.
 
 ## Casos de uso
 
-- Generacion de texto expositivo en ingles: el modelo puede redactar parrafos continuando un prompt dado, con buen comportamiento en contenido de tipo tutorial y manual gracias a la fuerte presencia de Cosmopedia en la etapa final.
-- Autocompletado de bajo coste en aplicaciones embebidas: con 146M parametros y pesos float32 de aproximadamente 0,6 GB, puede ejecutarse en CPU o en una GPU de gama baja para sugerencias de texto en tiempo casi real.
-- Prototipado de investigacion: sirve como linea base reproducible para estudiar el efecto de etapas de cooldown y de mezclas de datos en modelos tiny, con todos los hiperparametros del run documentados.
-- Generacion de contenido educativo: la mezcla de Cosmopedia (tutoriales WikiHow y libros de texto de OpenStax, Khan Academy y Stanford) lo hace adecuado para redactar material didactico en ingles.
-- Tareas de razonamiento aritmetico sencillo: entrenado con FineMath 3+ y OpenMathInstruct-2, sirve para ejercicios de aritmetica basica medidos por ArithMark-3.
-- Fine-tuning especifico sobre dominio: al ser un base model con licencia Apache 2.0, se puede afinar para tareas concretas (clasificacion, resumen, extraccion) sin coste de licencia.
-- Evaluacion comparativa de modelos tiny: util como referencia en experimentos sobre el escalado de datos (comparado con SmolLM2-135M, que uso 2T tokens frente a los 75B de este modelo).
+- Evaluación comparativa de SLM: sirve como referencia de modelo de 146M parámetros para medir recetas de entrenamiento y estrategias de cooldown frente a SmolLM2-135M y similares.
+- Generación de texto asistida en entornos con recursos mínimos: al ocupar 0,6 GB en float32, puede ejecutarse en CPU o en GPUs de gama baja para tareas de continuación de texto y borradores.
+- Fine-tuning ligero para dominios concretos: su tamaño permite ajustar el modelo completo o con LoRA en una sola GPU consumer para tareas de clasificación, resumen o extracción.
+- Investigación en mecánica interna y análisis de modelos pequeños: su licencia Apache 2.0 y su reducido tamaño facilitan estudios de interpretabilidad y ablaciones reproducibles.
+- Prototipado educativo: base para demostraciones de entrenamiento de LLM desde cero y comparación de mezclas de datos (Cosmopedia, FineMath, DCLM).
+- Generación de texto sintético de bajo coste: útil para aumentar datasets o generar ejemplos en pipelines de datos donde el throughput importa más que la calidad puntera.
+- Punto de partida para destilación: puede emplearse como alumno en procesos de destilación desde modelos mayores dado su bajo coste de inferencia.
 
 ## Benchmarks y rendimiento
 
-Medidos en modo zero-shot con lm-evaluation-harness y el script ArithMark-3 del leaderboard, sobre los pesos float32 del repositorio.
+Resultados zero-shot medidos con lm-evaluation-harness y el script ArithMark-3 de la leaderboard, sobre los pesos float32 del repositorio.
 
-| Benchmark | Metrica | Puntuacion |
+| Benchmark | Métrica | Puntuación |
 |---|---|---:|
 | HellaSwag | acc_norm | 43,41 |
 | ARC-Easy | acc_norm | 53,75 |
@@ -61,63 +62,59 @@ Medidos en modo zero-shot con lm-evaluation-harness y el script ArithMark-3 del 
 | ArithMark-3 | acc_norm | 45,30 |
 | Open SLM Index | — | 27,49 |
 
-Indice del Open SLM Leaderboard: `(N(HellaSwag,25) + N(CombinedARC,25) + N(PIQA,50) + 0,65*N(ArithMark,25)) / 3,65`, donde `N(v,c) = 100(v-c)/(100-c)`.
+Comparativa con modelos de la misma franja según las cifras publicadas por la leaderboard:
 
-Comparativa de indice con modelos del leaderboard (cifras publicadas por el leaderboard excepto donde se indica):
-
-| Modelo | Parametros | Tokens | Index |
+| Modelo | Parámetros | Tokens | Index |
 |---|---:|---:|---:|
-| **cagliostro-v3.5** | **146M** | **75,4B** | **27,49** |
+| cagliostro-v3.5 | 146M | 75,4B | 27,49 |
 | SmolLM2-135M | 135M | 2T | 27,13 |
 | cagliostro-v3 | 146M | 75B | 26,55 |
 | SmolLM-135M | 135M | 600B | 25,74 |
 | GPT-X2.5-135M | 135M | 75B | 25,17 |
 | Haidass1.5-143M | 143M | 400B | 25,07 |
 
-El autor senala que, re-medido en el mismo harness, SmolLM2-135M obtiene 27,01 y cagliostro-v3.5 le aventaja en 0,48 puntos, pero que un bootstrap emparejado situa el intervalo de confianza al 95% de esa diferencia en [-0,82, +1,75]. Tambien documenta que entre el 18,5% y el 19,3% de los items WikiHow de validacion y entrenamiento de HellaSwag comparten titulo de articulo con el conjunto WikiHow de Cosmopedia, un posible foco de solapamiento.
+El autor advierte que, reevaluado en el mismo harness, SmolLM2-135M obtiene 27,01 y la diferencia de 0,48 puntos tiene un intervalo de confianza del 95% de [-0,82, +1,75] según bootstrap emparejado, por lo que no puede afirmarse una superioridad estadísticamente significativa.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos en float32 ocupan unos 585 MB (el repositorio pesa 0,6 GB); en bf16/fp16 bajan a unos 292 MB; en int8, unos 146 MB; en int4, unos 73 MB. Hay que sumar la memoria de la cache KV, cuyo tamano depende de la longitud de contexto, que no se ha publicado.
-- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM libre para float32, o integradas/modestas para cuantizaciones de 8 o 4 bits.
-- Cabe en GPU de consumo: si, con margen amplio en cualquier GPU consumer moderna (RTX 3060, 4060, 4090, etc.) e incluso en CPU.
-- Hardware usado para el entrenamiento: una unica NVIDIA RTX PRO 6000 Blackwell, con 41 minutos de reloj de pared para la etapa adicional, a 162.000 tokens por segundo.
-- Opciones de despliegue: compatible con transformers (es la libreria declarada, con `custom_code`); al ser safetensors puede convertirse a GGUF para llama.cpp/Ollama o servirse con vLLM/TGI, aunque el autor no documenta estas rutas.
-- Latencia y throughput: no disponible para inferencia. El unico dato de rendimiento es el de entrenamiento (162.000 tokens/s en una RTX PRO 6000 Blackwell).
+- VRAM estimada en float32: aproximadamente 0,6 GB de pesos; en float16 unos 0,3 GB; en cuantización de 4 bits por debajo de 0,1 GB de pesos.
+- Cabe holgadamente en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) e incluso en CPU para inferencia.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para float32 con overhead; una RTX 4090 o A100 no son necesarias pero permiten mayor throughput en batching.
+- Opciones de despliegue: transformers (requiere `custom_code`), y previsiblemente llama.cpp/Ollama si se generan pesos GGUF (no publicados en el repo). vLLM y TGI no están confirmados para esta arquitectura con código personalizado.
+- Throughput de entrenamiento reportado: 162.000 tokens por segundo en una RTX PRO 6000 Blackwell. No se publican cifras de latencia de inferencia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Tokens de entrenamiento | Open SLM Index | Contexto | Licencia | Idiomas |
-|---|---:|---:|---:|---|---|---|
-| cagliostro-v3.5 | 146M | 75,4B | 27,49 | no disponible | apache-2.0 | en |
-| SmolLM2-135M | 135M | 2T | 27,13 (27,01 re-medido) | no disponible | no disponible en la informacion proporcionada | no disponible |
-| cagliostro-v3 | 146M | 75B | 26,55 (26,31 re-medido) | no disponible | apache-2.0 (mismo autor) | en |
-| SmolLM-135M | 135M | 600B | 25,74 | no disponible | no disponible en la informacion proporcionada | no disponible |
+| Modelo | Parámetros | Contexto | Index (Open SLM) | Licencia | Disponibilidad |
+|---|---:|---|---:|---|---|
+| cagliostro-v3.5 | 146M | no disponible | 27,49 | Apache 2.0 | Hugging Face |
+| SmolLM2-135M | 135M | no disponible | 27,13 | Apache 2.0 | Hugging Face |
+| SmolLM-135M | 135M | no disponible | 25,74 | Apache 2.0 | Hugging Face |
+| cagliostro-v3 | 146M | no disponible | 26,55 | Apache 2.0 | Hugging Face |
 
-La diferencia principal frente a SmolLM2-135M estriba en la eficiencia de datos: cagliostro-v3.5 alcanza un indice similar con 75,4B tokens frente a los 2T de SmolLM2, aunque el autor reconoce que la diferencia no es estadisticamente concluyente sobre estos cinco benchmarks.
+La comparación se limita a los modelos presentes en la Open SLM Leaderboard citados por el autor. La longitud de contexto de los modelos alternativos no se detalla en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Es un modelo base, no afinado para chat: no dispone de plantilla de conversacion ni de modo thinking. El propio autor senala que el entrenamiento con datos de chat (SmolTalk) hace perder puntos en estos benchmarks, porque el harness puntua log-verosimilitud cruda.
-- Solo soporta ingles; no hay evidencia de capacidades multilingues.
-- Longitud de contexto no publicada: no se puede planificar el uso en contextos largos sin verificacion previa.
-- La ventaja sobre SmolLM2-135M es de 0,36 puntos de indice, con un intervalo de confianza al 95% de [-0,82, +1,75] en un bootstrap emparejado. No puede considerarse una superioridad robusta.
-- Solapamiento potencial en HellaSwag: entre el 18,5% y el 19,3% de los items WikiHow comparten titulo de articulo con el conjunto WikiHow de Cosmopedia usado en el entrenamiento, lo que podria inflar la puntuacion de ese benchmark.
-- La descontaminacion de 13-gramas aplicada a los documentos nuevos no elimino ninguno en una muestra de 8.000 documentos de las dos fuentes Cosmopedia.
-- Riesgo de alucinacion: propio de un modelo de este tamano; no hay datos publicados sobre tasas de alucinacion.
-- Sesgos conocidos: no disponibles en la informacion proporcionada.
-- Licencia Apache 2.0: permite uso comercial y modificacion, siempre con la atribucion correspondiente. Es una de las licencias mas permisivas, sin restricciones de uso.
-- Rendimiento en produccion: con 146M de parametros y sin datos de latencia publicados, conviene medir el throughput real en el hardware objetivo antes de desplegarlo.
+- Modelo base sin alineación: no sigue instrucciones de forma fiable ni mantiene formato de chat; para conversación debe usarse la variante chat.
+- Idioma: entrenado y evaluado únicamente en inglés; el rendimiento en castellano u otros idiomas no está garantizado.
+- Riesgo de alucinación y errores factuales propio de un modelo de 146M parámetros con conocimiento limitado.
+- Sesgos: al entrenarse sobre corpus web (FineWeb-Edu, DCLM, Cosmopedia) puede reproducir sesgos presentes en esos datos; el autor no documenta evaluaciones de sesgo.
+- La ventaja frente a SmolLM2-135M no es estadísticamente significativa según el propio intervalo de confianza del autor.
+- Requiere `trust_remote_code` por el uso de `custom_code`, lo que implica ejecutar código del autor.
+- No se documentan resultados de seguridad, toxicidad ni robustez adversarial.
+- Licencia Apache 2.0 permite uso comercial, pero sin garantías del autor.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/bench-labs/cagliostro-v3.5
-- Modelo base: https://huggingface.co/bench-labs/cagliostro-v3
+- Variante chat: https://huggingface.co/bench-labs/cagliostro-v3.5-chat
+- Modelo base previo: https://huggingface.co/bench-labs/cagliostro-v3
 - Open SLM Leaderboard: https://huggingface.co/spaces/AxiomicLabs/Open_SLM_Leaderboard
-- Video del modelo: https://huggingface.co/bench-labs/cagliostro-v3.5/resolve/main/cagliostro-v3.5.mp4
-- Dataset: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
-- Dataset: https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0
-- Dataset: https://huggingface.co/datasets/HuggingFaceTB/finemath
-- Dataset: https://huggingface.co/datasets/nvidia/OpenMathInstruct-2
-- Dataset: https://huggingface.co/datasets/HuggingFaceTB/smoltalk
-- Dataset: https://huggingface.co/datasets/HuggingFaceTB/cosmopedia
+- Vídeo de demostración: https://huggingface.co/bench-labs/cagliostro-v3.5/resolve/main/cagliostro-v3.5.mp4
+- Dataset SmolLM corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
+- Dataset DCLM-Baseline: https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0
+- Dataset FineMath: https://huggingface.co/datasets/HuggingFaceTB/finemath
+- Dataset OpenMathInstruct-2: https://huggingface.co/datasets/nvidia/OpenMathInstruct-2
+- Dataset SmolTalk: https://huggingface.co/datasets/HuggingFaceTB/smoltalk
+- Dataset Cosmopedia: https://huggingface.co/datasets/HuggingFaceTB/cosmopedia

@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "SvalTek/LFM2-OldThinker-8B-Base",
+  "slug": "svaltek-lfm2-oldthinker-8b-base",
+  "author": "SvalTek",
+  "url": "https://huggingface.co/SvalTek/LFM2-OldThinker-8B-Base",
+  "created_at": "2026-11-21T09:30:47.000Z",
+  "updated_at": "2026-11-21T09:35:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2_moe",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:SvalTek/LFM2-A1B-OldThinker-8B-BaseCS",
+    "base_model:finetune:SvalTek/LFM2-A1B-OldThinker-8B-BaseCS",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 68,
+  "trending_score": 0,
+  "parameters": 8467856832,
+  "parameters_human": "8.47B",
+  "storage_bytes": 16953912510,
+  "storage_human": "17.0 GB",
+  "context_length": null,
+  "base_model": "SvalTek/LFM2-A1B-OldThinker-8B-BaseCS",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

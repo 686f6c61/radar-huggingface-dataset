@@ -5,7 +5,7 @@
   "author": "YuyaoTechnology",
   "url": "https://huggingface.co/YuyaoTechnology/MatterSeek-New-Materials-Reverse-Design",
   "created_at": "2026-10-19T04:17:34.000Z",
-  "updated_at": "2026-11-20T08:19:01.000Z",
+  "updated_at": "2026-11-25T00:44:45.000Z",
   "license": "yuyaotechnology-matterseek-eula",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -15,8 +15,9 @@
     "en"
   ],
   "tags": [
-    "materials-science",
-    "graph-neural-network",
+    "physics-driven",
+    "non-LLM",
+    "inverse material design",
     "text-generation",
     "zh",
     "en",

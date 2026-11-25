@@ -2,123 +2,128 @@
 
 ## Resumen
 
-ornith-ai-Ornith-1.5-35B-A3B-GGUF-Q8_0 es una cuantización en formato GGUF (tipo Q8_0) del modelo ornith-ai/Ornith-1.5-35B-A3B, publicada por el usuario sigmanih mediante su herramienta Sigma Studio. El modelo base declara 35.505.251.456 parámetros totales (unos 35,5 mil millones) y una arquitectura de tipo CausalLM. El sufijo A3B del nombre apunta a una arquitectura de mezcla de expertos (MoE) con aproximadamente 3 mil millones de parámetros activos por token, si bien la model card del autor indica "35B" en el campo de parámetros activos, una contradicción interna que conviene verificar antes de usarlo en producción.
+Ornith-1.5-35B-A3B es un modelo de lenguaje de tipo causal (CausalLM) publicado por ornith-ai y distribuido en formato GGUF cuantizado a Q8_0 por el usuario sigmanih mediante la herramienta Sigma Studio. El repositorio contiene una versión lista para inferencia local del modelo base, con un tamano total de parametros de 35.505.251.456 (aproximadamente 35,5 mil millones) y una ventana de contexto declarada de 32.768 tokens. La nomenclatura "A3B" sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 3 mil millones de parametros activos, aunque este dato no se confirma explicitamente en la informacion disponible.
 
-El repositorio ocupa 37,8 GB y la model card declara una ventana de contexto de 32.768 tokens, además de un consumo estimado de ~30,2 GB de VRAM con descarga completa en GPU o ~28,3 GB de RAM en modo CPU/híbrido. El modelo está etiquetado para generación de texto y conversación, con soporte declarado únicamente de inglés (en) e italiano (it).
+El modelo esta orientado a generacion de texto conversacional y razonamiento multi-paso, con enfasis declarado en matematicas, investigacion profunda y codigo. Incorpora un modo de razonamiento explicito (Deep Thinking, con traza de cadena de pensamiento) frente a un modo directo sin sobrecoste de tokens. Los idiomas declarados son ingles e italiano, lo que limita su uso multilingue fuera de ese par.
 
-Su relevancia es limitada pero concreta: se trata de una publicación de terceros (no del autor original del modelo base), con muy poca tracción en el Hub (429 descargas y 1 like en el momento de redactar esta ficha), y cuya model card contiene inconsistencias notables (formato de pesos "desconocido" cuando el propio repositorio es GGUF, huella en disco "0,0 GB", parámetros activos contradictorios). Debe tratarse como una conversión comunitaria a validar, no como una release oficial.
+La relevancia practica de esta ficha reside en que se trata de una cuantizacion Q8_0 de casi 38 GB, pensada para despliegue en configuraciones de multiples GPU o sistemas con mucha RAM. Los resultados de benchmarks publicados por el autor se han medido sobre subconjuntos parciales de cada suite, por lo que no son directamente comparables con evaluaciones completas de referencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | CausalLM (el sufijo A3B sugiere MoE, no confirmado en la model card) |
-| Parametros totales | 35.505.251.456 (~35,5 B, dato real de safetensors) |
-| Parametros activos | No disponible de forma fiable: el nombre indica A3B (~3 B), la model card indica 35 B |
+| Arquitectura | CausalLM (transformer causal; posible MoE segun nomenclatura A3B, no confirmado) |
+| Parametros totales | 35.505.251.456 (~35,5 B) |
+| Parametros activos | no disponible (la nomenclatura "A3B" sugiere ~3 B activos, sin confirmacion) |
 | Longitud de contexto | 32.768 tokens |
-| Tipos de cuantizacion | GGUF Q8_0 en este repositorio; no se listan otras cuantizaciones |
+| Tipos de cuantizacion | Q8_0 (este repositorio); otras cuantizaciones no disponibles |
 | Idiomas soportados | en, it |
-| Licencia | other en los metadatos de Hugging Face; la model card muestra un badge Apache-2.0 (contradiccion) |
-| Formato de pesos | GGUF (Q8_0); la model card indica "Sconosciuto/sconosciuta" para el formato, dato erroneo |
-
-Otros datos declarados: tamano del repositorio 37,8 GB, huella en disco indicada en la model card como "0,0 GB" (dato no utilizable), VRAM estimada ~30,2 GB con offload completo en GPU, RAM estimada ~28,3 GB en modo CPU/hibrido.
+| Licencia | other (el autor muestra badge Apache-2.0, pero el campo de licencia del Hub es "other") |
+| Formato de pesos | GGUF (cuantizacion Q8_0) |
+| Tamano del repositorio | 37,8 GB |
+| Modelo base | ornith-ai/Ornith-1.5-35B-A3B |
+| Pipeline | text-generation |
+| Fecha de creacion | 2026-09-09 |
+| Ultima actualizacion | 2026-11-02 |
 
 ## Arquitectura y entrenamiento
 
-La unica informacion de arquitectura disponible procede de la model card, que la clasifica como CausalLM. No se documenta si se trata de un transformer denso, de una mezcla de expertos (MoE), de un modelo hibrido ni de ninguna variante con atencion lineal o decodificacion especulativa. El nombre del modelo base (Ornith-1.5-35B-A3B) sigue la convencion habitual de los MoE, donde A3B indicaria ~3 B de parametros activos, pero la propia model card se contradice al declarar 35 B activos. No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron etapas de RLHF, DPO o similar.
+La informacion disponible identifica la arquitectura base como CausalLM, es decir, un transformer autoregresivo con atencion causal. El sufijo "A3B" en el nombre del modelo es consistente con un diseno de mezcla de expertos (MoE) con aproximadamente 3 mil millones de parametros activos por token sobre un total de 35,5 mil millones, pero la model card no detalla la configuracion de expertos, el numero de capas, las dimensiones ocultas ni el mecanismo de enrutamiento. tampoco se especifican detalles sobre atencion lineal, decodificacion especulativa ni otras optimizaciones de inferencia.
 
-Tampoco se detalla el proceso de cuantizacion aplicado (herramienta usada, calibracion, fidelidad respecto al modelo original). La unica referencia tecnica concreta es que la publicacion se ha realizado mediante el modulo "Model Hub" de Sigma Studio, una herramienta de terceros que no aporta informacion sobre el entrenamiento del modelo base. Cualquier afirmacion sobre innovaciones arquitectonicas seria especulacion, por lo que no se incluye.
+No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o ajuste supervisado, ni sobre la receta de alineacion. La unica innovacion tecnica documentada es la existencia de dos modos operativos: respuesta directa (No-Thinking) y razonamiento explicito con cadena de pensamiento (Deep Thinking CoT). Esta cuantizacion concreta ha sido generada y evaluada con Sigma Studio, herramienta que no aporta informacion sobre el entrenamiento del modelo original.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, segun la etiqueta `conversational` y el pipeline `text-generation`.
-- Razonamiento en modo directo (No-Thinking) y en modo cadena de pensamiento (Deep Thinking / CoT), segun la model card; no se especifica si el modo CoT es una capacidad nativa del modelo base o una plantilla de prompt inyectada.
-- Razonamiento cientifico y de cultura general a nivel escolar (ARC-Challenge) y tareas logicas complejas multietapa (BIG-Bench Hard).
-- Matematicas de nivel escolar y de competicion (GSM8K, MATH).
-- Generacion de codigo en Python, evaluada con HumanEval y MBPP.
-- Razonamiento de sentido comun y NLI situacional (HellaSwag).
-- Capacidades multilingues limitadas a ingles e italiano.
-- No se documenta soporte de tool calling, function calling, uso de agentes, vision, audio ni otras modalidades.
+- Generacion de texto conversacional multi-turno en ingles e italiano.
+- Razonamiento de tipo cadena de pensamiento activable (modo Deep Thinking) para problemas de logica y matematicas.
+- Modo de respuesta directa sin tokens de razonamiento, orientado a baja latencia.
+- Resolucion de problemas matematicos de nivel escolar y de competicion (GSM8K, MATH).
+- Generacion de codigo Python con soporte de ejecucion de tests (HumanEval, MBPP).
+- Razonamiento cientifico y de sentido comun (ARC-Challenge, HellaSwag, BIG-Bench Hard).
+- Evaluacion de factualidad y resistencia a alucinacion (TruthfulQA).
+- Soporte de tool calling / function calling: no disponible en la informacion.
+- Soporte de agentes y multi-step reasoning: parcialmente implicito por el modo CoT, sin documentacion de integracion agentica.
+- Capacidades multimodales (vision, audio): no disponibles.
+- Capacidades multilingues limitadas a en e it.
 
 ## Casos de uso
 
-- Asistente conversacional en ingles o italiano: el modelo puede gestionar dialogos multi-turno con hasta 32.768 tokens de contexto, un margen razonable para conversaciones largas con historial extenso, siempre que se despliegue con la VRAM adecuada.
-- Generacion de codigo Python asistida: con un 86% en HumanEval y un 67% en MBPP sobre la muestra evaluada, puede usarse para autocompletar funciones, escribir tests o explicar fragmentos de codigo, aunque conviene revisar la salida por el riesgo de errores.
-- Resolucion de problemas matematicos paso a paso: activando el modo Deep Thinking (CoT), el modelo traza razonamientos estructurados utiles para ejercicios de nivel escolar y preuniversitario (89% en GSM8K, 78% en MATH sobre la muestra).
-- Tutorizacion de ciencias a nivel escolar: el 89% en ARC-Challenge lo hace adecuado para preguntas de ciencias de educacion primaria y secundaria, no para nivel universitario (33% en GPQA).
-- Generacion de contenido factual con control de alucinacion: el 89% en TruthfulQA sobre la muestra sugiere un comportamiento relativamente conservador, util para resumenes o respuestas donde la fidelidad importa mas que la creatividad.
-- Despliegue local en estaciones de trabajo con GPU de 24 GB o configuraciones hibridas CPU/GPU: el formato GGUF Q8_0 permite inferencia con llama.cpp u Ollama sin necesidad de infraestructura en la nube.
-- Prototipado rapido en pipelines de generacion de texto: el formato GGUF y la compatibilidad declarada con endpoints facilitan integrarlo en demos y pruebas de concepto antes de decidir si merece la pena usar el modelo base sin cuantizar.
+- Razonamiento matematico asistido: el modelo obtiene 89% en GSM8K y 78% en MATH sobre los subconjuntos evaluados, por lo que resulta adecuado para tutoria de matematicas y resolucion guiada paso a paso activando el modo Deep Thinking.
+- Generacion y revision de codigo Python: con 86% en HumanEval y 67% en MBPP en las muestras evaluadas, puede integrarse en pipelines de revision de parches o generacion de tests unitarios, siempre con validacion humana.
+- Asistente conversacional en italiano e ingles: el soporte nativo de ambos idiomas permite desplegar atencion al cliente o asistencia interna para esos mercados sin capa de traduccion intermedia.
+- Investigacion documental multi-paso: el modo CoT estructurado facilita tareas de descomposicion de preguntas complejas y sintesis de conclusiones, util en entornos de analisis tecnico.
+- Evaluacion de factualidad en contenidos: su 89% en TruthfulQA sobre la muestra evaluada lo hace util como filtro preliminar de afirmaciones en revisiones editoriales, aunque no sustituye verificacion externa.
+- Despliegue local en estaciones de trabajo con multiples GPU: al distribuirse como GGUF Q8_0 de 37,8 GB, encaja en servidores con 2×24 GB de VRAM o equipos con 64 GB de RAM para prototipado sin dependencia de la nube.
+- Razonamiento cientifico de nivel escolar: el 89% en ARC-Challenge lo hace apropiado para herramientas educativas de ciencias en ingles e italiano.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos disponibles son los de la model card, medidos sobre una muestra de 100 preguntas (no sobre la suite completa) con semilla 42, temperatura 0,0 y protocolos `code_execution`, `continuation_logprob`, `cot_generation` y `letter_logprob`. El propio autor advierte que "esta puntuacion no es comparable con una ejecucion de suite completa".
+Resultados publicados por el autor, medidos sobre subconjuntos parciales de cada suite (temperatura 0.0, semilla 42). No son comparables con ejecuciones completas de referencia.
 
-| Benchmark | Dominio | Correctas / Total | Precision |
+| Benchmark | Correctas / Total | Precision | Estado declarado |
 |---|---|---|---|
-| ARC-Challenge | Ciencia y razonamiento escolar | 8 / 9 | 89% |
-| BIG-Bench Hard | Logica y simbolismo multitarea | 6 / 7 | 86% |
-| GPQA | Razonamiento academico de posgrado | 3 / 9 | 33% |
-| GSM8K | Matematicas escolares multietapa | 8 / 9 | 89% |
-| HellaSwag | Sentido comun y NLI situacional | 5 / 9 | 56% |
-| HumanEval | Codigo Python (pass@1) | 6 / 7 | 86% |
-| MATH | Matematicas de competicion | 7 / 9 | 78% |
-| MBPP | Programacion Python con tests | 6 / 9 | 67% |
-| MMLU | Conocimiento general multisujeto | 7 / 14 | 50% |
-| MMLU-Pro | Razonamiento avanzado multietapa | 6 / 9 | 67% |
-| TruthfulQA | Factualidad y anti-alucinacion | 8 / 9 | 89% |
-| Total agregado | Todas las suites evaluadas | 70 / 100 | 70% |
+| ARC-Challenge | 8 / 9 | 89% | Passed |
+| BIG-Bench Hard | 6 / 7 | 86% | Passed |
+| GPQA | 3 / 9 | 33% | Low |
+| GSM8K | 8 / 9 | 89% | Passed |
+| HellaSwag | 5 / 9 | 56% | Fair |
+| HumanEval | 6 / 7 | 86% | Passed |
+| MATH | 7 / 9 | 78% | Passed |
+| MBPP | 6 / 9 | 67% | Fair |
+| MMLU | 7 / 14 | 50% | Fair |
+| MMLU-Pro | 6 / 9 | 67% | Fair |
+| TruthfulQA | 8 / 9 | 89% | Passed |
+| Total agregado | 70 / 100 | 70% | 70% Pass |
 
-Comparativa interna entre modos de ejecucion:
+Comparativa de modos de ejecucion:
 
-| Modo | Precision | Preguntas superadas |
-|---|---|---|
-| No-Thinking (respuesta directa) | 70,2% | 40 / 57 |
-| Deep Thinking (CoT) | 69,8% | 30 / 43 |
+| Modo | Precision | Preguntas superadas | Perfil |
+|---|---|---|---|
+| No-Thinking (directo) | 70,2% | 40 / 57 | Latencia minima, sin tokens de razonamiento |
+| Deep Thinking (CoT) | 69,8% | 30 / 43 | Traza de razonamiento multi-paso, delta de -0,4% |
 
-El delta a favor del modo directo es de -0,4 puntos para CoT, es decir, el razonamiento explicito no mejora el resultado agregado en esta muestra. Hash de reproducibilidad declarado: `SHA256-4B5E077F449E3BAD`.
-
-Rendimiento medido por el autor en una NVIDIA GeForce RTX 5070 Ti con 15,9 GB de VRAM: 37,4 tok/s en decodificacion de un solo flujo, 171 tok/s en procesamiento de prompt y 36,8 tok/s agregados durante la evaluacion con varias peticiones en vuelo. El autor advierte explicitamente que no ha medido velocidades en otro hardware y que no deben extrapolarse.
+Rendimiento medido en una NVIDIA GeForce RTX 5070 Ti (15,9 GB de VRAM): 37,4 tok/s en decodificacion de un solo flujo, 171 tok/s en procesamiento de prompt y 36,8 tok/s de throughput agregado durante la evaluacion. El autor advierte explicitamente que estas cifras no deben extrapolarse a otro hardware.
 
 ## Requisitos de hardware
 
-- VRAM estimada: ~30,2 GB para descarga completa en GPU con cuantizacion Q8_0; ~28,3 GB de RAM en modo CPU o hibrido.
-- GPU recomendadas segun la model card: configuracion multi-GPU (2 x 24 GB) o una RTX 6000; en la practica tambien encaja en A100 40 GB, H100 o cualquier GPU con 32 GB o mas si se hace offload completo.
-- No cabe en GPUs de consumo de 24 GB o menos con offload completo (RTX 4090, 3090, 4080). En esas tarjetas hay que descargar parte de las capas a CPU o usar cuantizaciones mas agresivas (Q4_K_M, Q5_K_M) que no estan en este repositorio.
-- Sistemas con 64 GB de RAM permiten ejecucion en CPU o en modo hibrido CPU/GPU.
-- Opciones de despliegue: llama.cpp y Ollama son las rutas naturales para GGUF; vLLM y TGI soportan GGUF de forma parcial y no estan confirmados para esta conversion concreta. El autor menciona "Sigma Studio" y "SigmaEngine" como via recomendada.
-- Latencia y throughput medidos: 37,4 tok/s en decodificacion de un solo flujo y 171 tok/s de procesamiento de prompt en una RTX 5070 Ti (15,9 GB de VRAM), lo que implica que esa medicion se hizo con offload parcial a CPU. No hay datos de latencia en otras configuraciones.
+- VRAM estimada para inferencia: aproximadamente 30,2 GB con offload completo en GPU; aproximadamente 28,3 GB de RAM en modo CPU/hibrido, segun el autor.
+- GPU recomendadas: configuracion multi-GPU (2×24 GB, por ejemplo 2×RTX 4090 o A100 40 GB), o una RTX 6000; sistemas con 64 GB de RAM para modo hibrido.
+- Cabe en GPU de consumo: no en una sola tarjeta de 24 GB; requiere reparto entre dos GPU o descarga parcial a RAM. La medicion del autor en una RTX 5070 Ti de 15,9 GB implica offload parcial.
+- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio) por el formato GGUF; Sigma Studio / SigmaEngine segun el autor; vLLM y TGI no estan confirmados para este formato.
+- Latencia y throughput: 37,4 tok/s en decodificacion mono-flujo y 171 tok/s en prefill sobre RTX 5070 Ti; no hay mediciones en otro hardware.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks comparables de otros modelos de la misma categoria en la informacion proporcionada. Tampoco se identifican alternativas equivalentes (mismo tamano, misma tarea o mismo formato) con resultados medidos bajo el mismo protocolo. Los modelos comparables habituales en el segmento de ~35 B con posible estructura MoE no aparecen referenciados en la model card y sus resultados no serian directamente comparables con la muestra de 100 preguntas usada aqui.
+No se dispone de datos verificados de modelos comparables en la informacion proporcionada. La tabla siguiente recoge unicamente la comparacion estructural con el modelo base del que deriva esta cuantizacion.
 
-Como unica referencia interna, la comparacion con el modelo base sin cuantizar:
+| Aspecto | Ornith-1.5-35B-A3B (base) | Este repositorio (GGUF Q8_0) |
+|---|---|---|
+| Parametros | 35,5 B | 35,5 B (sin cambios) |
+| Contexto | 32.768 tokens | 32.768 tokens |
+| Formato | no disponible (probablemente safetensors) | GGUF Q8_0 |
+| Tamano en disco | no disponible | 37,8 GB |
+| Licencia | no disponible | other |
+| Uso | Entrenamiento / conversion | Inferencia local |
 
-| Modelo | Parametros totales | Contexto | Formato | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| sigmanih/ornith-ai-Ornith-1.5-35B-A3B-GGUF-Q8_0 | 35,5 B | 32.768 | GGUF Q8_0 | other (badge Apache-2.0 en la model card) | Publico en HF |
-| ornith-ai/Ornith-1.5-35B-A3B | No disponible | No disponible | No disponible | No disponible | Publico en HF |
-
-No se puede establecer si la cuantizacion Q8_0 degrada las capacidades del modelo base, porque no hay resultados de benchmarks publicados para el base ni comparacion directa en la informacion disponible.
+Alternativas de mismo tamano o tarea: no disponible en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Inconsistencias en la model card: el formato de pesos aparece como "desconocido" pese a que el repositorio es GGUF; la huella en disco figura como "0,0 GB" cuando el repositorio ocupa 37,8 GB; los parametros activos se declaran como 35 B pese a que el sufijo A3B del nombre sugiere ~3 B activos. Hay que tratar estos datos con cautela.
-- Licencia ambigua: los metadatos de Hugging Face indican `other` mientras que la model card muestra un badge Apache-2.0. No queda claro que terminos se aplican al uso comercial. Conviene contactar con el autor del modelo base antes de usarlo en produccion.
-- Los benchmarks proceden de una muestra de 100 preguntas, no de las suites completas, por lo que no son comparables con puntuaciones publicadas de otros modelos. Los resultados en GPQA (33%), MMLU (50%) y HellaSwag (56%) son bajos y senalan limitaciones claras en razonamiento academico avanzado, conocimiento general y sentido comun.
-- El modo Deep Thinking (CoT) no mejora el resultado agregado frente al modo directo (-0,4 puntos) en la muestra evaluada, lo que cuestiona su utilidad para tareas de razonamiento general, aunque el autor lo recomienda para matematicas y logica dura.
-- Riesgo de alucinacion: no se documenta ningun mecanismo especifico de mitigacion. El 89% en TruthfulQA sobre una muestra de 9 preguntas es una evidencia muy debil.
-- Soporte de idiomas limitado a ingles e italiano. No se documenta comportamiento en castellano ni en otros idiomas.
-- No se documentan sesgos conocidos, y tampoco se aporta informacion sobre el dataset de entrenamiento que permita evaluarlos.
-- Es una publicacion de terceros, no del autor original del modelo base (`ornith-ai`). No hay garantia de que la conversion a GGUF sea fiel ni de que se mantenga actualizada.
-- Traccion minima en el Hub (429 descargas, 1 like) y ausencia de validacion independiente. No se recomienda su uso en sistemas criticos sin una evaluacion propia.
-- El throughput de 37,4 tok/s se midio en una unica maquina y con offload parcial; no debe extrapolarse a otro hardware.
+- Idiomas limitados a ingles e italiano; el rendimiento fuera de ese par no esta documentado y probablemente es deficiente.
+- GPQA con 33% y MMLU con 50% sobre muestras pequenas indican capacidad limitada en razonamiento academico de posgrado y conocimiento general amplio.
+- Los benchmarks se han medido sobre subconjuntos parciales (entre 7 y 14 preguntas por suite); los intervalos de confianza son muy amplios y las cifras no deben tratarse como comparables con evaluaciones completas.
+- El modo Deep Thinking no mejora al modo directo en la evaluacion publicada (delta de -0,4%), lo que sugiere que el razonamiento explicito no aporta ventaja medible en estas muestras.
+- Riesgo de alucinacion: no se documentan mecanismos especificos de mitigacion mas alla del 89% en TruthfulQA sobre 9 preguntas; en produccion se requiere verificacion externa.
+- Sesgos conocidos: no documentados en la informacion disponible.
+- Licencia: el campo del Hub indica "other" mientras la model card muestra un badge Apache-2.0; esta discrepancia debe resolverse antes de cualquier uso comercial. No se garantiza uso comercial libre.
+- La model card contiene datos inconsistentes (formato de pesos descrito como "Sconosciuto", huella en disco "0.0 GB", parametros activos "35B"), lo que reduce la fiabilidad de la documentacion del autor.
+- El repositorio tiene 281 descargas y 1 like, con muy poca validacion comunitaria; no hay evidencia independiente de calidad.
+- El contexto de 32.768 tokens es moderado y limita tareas de documentos largos frente a modelos con ventanas de 128K o superiores.
 
 ## Enlaces
 
-- Repositorio Hugging Face del modelo: https://huggingface.co/sigmanih/ornith-ai-Ornith-1.5-35B-A3B-GGUF-Q8_0
-- Modelo base en Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
-- Repositorio GitHub de Sigma Studio: https://github.com/Sigmanih/SigmaStudio
-- Perfil del publicador en Hugging Face: https://huggingface.co/sigmanih
+- Repositorio Hugging Face: https://huggingface.co/sigmanih/ornith-ai-Ornith-1.5-35B-A3B-GGUF-Q8_0
+- Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
+- Sigma Studio (GitHub): https://github.com/Sigmanih/SigmaStudio
+- Perfil del autor en Hugging Face: https://huggingface.co/sigmanih
 - Licencia Apache 2.0 (referenciada en la model card): https://opensource.org/licenses/Apache-2.0

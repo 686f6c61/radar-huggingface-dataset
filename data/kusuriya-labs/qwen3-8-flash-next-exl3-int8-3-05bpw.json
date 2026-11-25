@@ -5,7 +5,7 @@
   "author": "kusuriya-labs",
   "url": "https://huggingface.co/kusuriya-labs/Qwen3.8-Flash-Next-EXL3-INT8-3.05bpw",
   "created_at": "2026-11-07T04:57:48.000Z",
-  "updated_at": "2026-11-07T05:14:57.000Z",
+  "updated_at": "2026-11-25T00:35:21.000Z",
   "license": "qwen-community-1.0",
   "license_family": "non-commercial",
   "pipeline_tag": "image-text-to-text",
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 65,
+  "downloads_30d": 74,
   "trending_score": 0,
   "parameters": 26168065536,
   "parameters_human": "26.17B",

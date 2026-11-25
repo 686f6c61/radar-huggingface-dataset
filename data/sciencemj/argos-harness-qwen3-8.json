@@ -1,0 +1,88 @@
+{
+  "schema": 2,
+  "id": "sciencemj/argos-harness-qwen3.8",
+  "slug": "sciencemj-argos-harness-qwen3-8",
+  "author": "sciencemj",
+  "url": "https://huggingface.co/sciencemj/argos-harness-qwen3.8",
+  "created_at": "2026-11-18T16:25:02.000Z",
+  "updated_at": "2026-11-18T16:46:05.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "argos",
+    "agent-harness",
+    "tool-calling",
+    "sft",
+    "lora",
+    "wandb-serverless",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "text-generation",
+    "ko",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 41,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 108909992,
+  "storage_human": "109 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multi-turn tool calling (Argos 29-tool harness)",
+      "dataset": "Argos harness SFT eval (65 conversations, 182 steps)",
+      "metric": "Tool selection accuracy",
+      "value": 1
+    },
+    {
+      "task": "Multi-turn tool calling (Argos 29-tool harness)",
+      "dataset": "Argos harness SFT eval (65 conversations, 182 steps)",
+      "metric": "Schema compliance rate",
+      "value": 1
+    },
+    {
+      "task": "Multi-turn tool calling (Argos 29-tool harness)",
+      "dataset": "Argos harness SFT eval (65 conversations, 182 steps)",
+      "metric": "Exact argument match rate",
+      "value": 0.9121
+    },
+    {
+      "task": "Multi-turn tool calling (Argos 29-tool harness)",
+      "dataset": "Argos harness SFT eval (65 conversations, 182 steps)",
+      "metric": "JSON validity rate",
+      "value": 1
+    },
+    {
+      "task": "Multi-turn tool calling (Argos 29-tool harness)",
+      "dataset": "Argos harness SFT eval (65 conversations, 182 steps)",
+      "metric": "No-tool accuracy",
+      "value": 1
+    }
+  ],
+  "sources": []
+}

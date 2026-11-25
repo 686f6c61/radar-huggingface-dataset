@@ -1,0 +1,65 @@
+{
+  "schema": 2,
+  "id": "NaturalScale/LoopTitan-MoE12-Revisit-1.3B-A0.3B-Muon",
+  "slug": "naturalscale-looptitan-moe12-revisit-1-3b-a0-3b-muon",
+  "author": "NaturalScale",
+  "url": "https://huggingface.co/NaturalScale/LoopTitan-MoE12-Revisit-1.3B-A0.3B-Muon",
+  "created_at": "2026-11-17T04:01:29.000Z",
+  "updated_at": "2026-11-25T08:09:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moeloop",
+    "text-generation",
+    "looptitan",
+    "mixture-of-experts",
+    "looped-moe",
+    "custom_code",
+    "muon",
+    "conversational",
+    "dataset:mlfoundations/dclm-baseline-1.0-parquet",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 1706561280,
+  "parameters_human": "1.71B",
+  "storage_bytes": 6837681506,
+  "storage_human": "6.8 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "mlfoundations/dclm-baseline-1.0-parquet",
+      "metric": "Test BPB",
+      "value": 0.962134
+    },
+    {
+      "task": null,
+      "dataset": "mlfoundations/dclm-baseline-1.0-parquet",
+      "metric": "Validation BPB",
+      "value": 0.964069
+    }
+  ],
+  "sources": []
+}

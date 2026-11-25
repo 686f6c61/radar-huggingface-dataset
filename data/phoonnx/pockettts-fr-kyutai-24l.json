@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/pockettts-fr-kyutai-24l",
   "created_at": "2026-11-14T22:43:47.000Z",
-  "updated_at": "2026-11-18T00:47:58.000Z",
+  "updated_at": "2026-11-25T04:37:46.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 64,
+  "downloads_30d": 69,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

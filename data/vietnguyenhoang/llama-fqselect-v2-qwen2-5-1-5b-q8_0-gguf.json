@@ -5,7 +5,7 @@
   "author": "VietNguyenHoang",
   "url": "https://huggingface.co/VietNguyenHoang/Llama-FQSelect-v2-Qwen2.5-1.5B-Q8_0-GGUF",
   "created_at": "2026-11-11T07:34:11.000Z",
-  "updated_at": "2026-11-13T05:02:13.000Z",
+  "updated_at": "2026-11-25T06:17:01.000Z",
   "license": "llama3.3-and-qwen-terms",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

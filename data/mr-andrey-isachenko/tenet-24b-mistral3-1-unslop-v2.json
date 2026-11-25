@@ -5,7 +5,7 @@
   "author": "mr-andrey-isachenko",
   "url": "https://huggingface.co/mr-andrey-isachenko/Tenet-24B-Mistral3.1-Unslop-v2",
   "created_at": "2026-11-23T19:18:46.000Z",
-  "updated_at": "2026-11-24T11:29:16.000Z",
+  "updated_at": "2026-11-24T13:14:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 39,
   "trending_score": 0,
   "parameters": 24011361280,
   "parameters_human": "24.01B",

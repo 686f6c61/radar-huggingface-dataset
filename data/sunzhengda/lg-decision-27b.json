@@ -44,8 +44,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "dream-only/lg-decision-27B",
+  "renamed_at": "2026-11-25T06:21:09.778Z",
   "benchmarks": [],
   "sources": []
 }

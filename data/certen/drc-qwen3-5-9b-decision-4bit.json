@@ -5,7 +5,7 @@
   "author": "certen",
   "url": "https://huggingface.co/certen/DrC-Qwen3.5-9B-Decision-4bit",
   "created_at": "2026-11-21T18:04:32.000Z",
-  "updated_at": "2026-11-22T23:38:15.000Z",
+  "updated_at": "2026-11-24T21:18:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

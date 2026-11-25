@@ -5,7 +5,7 @@
   "author": "inclusionAI",
   "url": "https://huggingface.co/inclusionAI/ArmorOCR-GGUF",
   "created_at": "2026-09-01T06:10:23.000Z",
-  "updated_at": "2026-11-24T03:02:27.000Z",
+  "updated_at": "2026-11-24T04:35:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -34,7 +34,7 @@
     "conversational"
   ],
   "likes": 4,
-  "downloads_30d": 271,
+  "downloads_30d": 299,
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",

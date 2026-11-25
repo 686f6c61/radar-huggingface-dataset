@@ -2,99 +2,105 @@
 
 ## Resumen
 
-`Phanai/qwen_extractor` es un ajuste fino (fine-tuning) de tipo LoRA sobre el modelo base Qwen/Qwen3.5-0.8B, orientado a una tarea muy concreta: la extracción estructurada de titulares y resúmenes a partir del cuerpo de noticias tecnológicas en chino. El resultado se entrega siempre como un objeto JSON con dos claves fijas (`新闻标题` y `核心摘要`), o con el valor `SKIP` cuando el texto de entrada es ruido, un error 404, un muro de pago o navegación vacía. El autor es el usuario de Hugging Face Phanai, que publica además el proyecto completo en el repositorio de GitHub wolfpan/qwen_extractor.
+qwen_extractor es un ajuste fino (LoRA) de Qwen3.5-0.8B desarrollado por Phanai para una tarea muy concreta: extraer titulo y resumen de articulos de noticias tecnologicas en chino, con salida en JSON estricto. El modelo no pretende ser un asistente general, sino un componente de una pipeline de agregacion de noticias que sustituye llamadas a una API en la nube (DeepSeek) por inferencia local en CPU. Con 772.845.888 parametros reales en safetensors, esta pensado para ejecutarse en hardware modesto: el autor lo valida en un portatil de casi diez anos con un AMD R5-2500U y 32 GB de RAM, sin GPU.
 
-El modelo no pretende ser un asistente generalista, sino un componente de una tubería de producción (n8n) donde el prompt del sistema y el formato de entrada coinciden literalmente con los usados durante el entrenamiento. Se distribuye como GGUF cuantizado en Q4_K_M (aproximadamente 517 MB) y está pensado para ejecutarse localmente con Ollama, lo que lo hace útil en escenarios de bajo coste y sin dependencia de API externa.
+La relevancia del proyecto es metodologica mas que de rendimiento bruto: demuestra que con 167 pares de datos reales (cuerpo de noticia + salida del modelo profesor) se puede destilar una tarea estrecha en un modelo sub-1B y obtener resultados cercanos al profesor en titulos (similitud 0.86) y aceptables en resumenes, con coste marginal practicamente nulo y sin enviar texto a terceros. Se distribuye en GGUF Q4_K_M (unos 517 MB para la variante 0.8B y 1,26 GB para la de 2B) bajo licencia Apache-2.0.
 
-Con 772.845.888 parámetros reales según safetensors y una ventana de contexto de entrenamiento de 4096 tokens, es un modelo muy pequeño que prioriza el cumplimiento estricto de formato sobre la amplitud de conocimiento. Su relevancia actual radica en el patrón que ilustra: especialización extrema mediante LoRA sobre un modelo base minúsculo, con un conjunto de datos de solo 100 pares reales más 12 sintéticos, y una disciplina de evaluación explícita (8 de 13 PASS en validación).
+El modelo esta disenado exclusivamente para la tarea de extraccion descrita y, segun su propia model card, carece de capacidad de conversacion general. No se han publicado datos sobre longitud de contexto nativa del modelo base dentro de la informacion disponible; la configuracion de despliegue recomendada fija num_ctx en 4096 tokens.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (base Qwen3.5-0.8B) con adaptador LoRA fusionado; no se detalla la arquitectura interna del base en la informacion disponible |
+| Arquitectura | Transformer decoder-only (base Qwen/Qwen3.5-0.8B), ajuste fino con LoRA |
 | Parametros totales | 772.845.888 |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | 4096 tokens (max_seq de entrenamiento y `num_ctx` recomendado en Ollama) |
-| Tipos de cuantizacion | Q4_K_M (GGUF, ~517 MB); el adaptador LoRA se entrenó en fp16 |
-| Idiomas soportados | Chino (entrada y salida); el resto no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (Q4_K_M); repo de 0.5 GB; el adaptador se entrenó con Unsloth y se exportó a GGUF |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion; despliegue recomendado con num_ctx 4096 |
+| Tipos de cuantizacion | Q4_K_M (GGUF); pesos base en safetensors |
+| Idiomas soportados | Chino (entrada y salida); acepta entrada en ingles y la traduce al chino |
+| Licencia | Apache-2.0 |
+| Formato de pesos | GGUF (Q4_K_M) y safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3.5-0.8B, un transformer decoder-only de aproximadamente 772 millones de parámetros, y se especializa mediante un adaptador LoRA con rango r=16 aplicado a todas las capas lineales, entrenado en fp16 sobre una GPU Colab T4 con la librería Unsloth. La longitud máxima de secuencia durante el entrenamiento fue de 4096 tokens, con loss calculada únicamente sobre la respuesta (response-only loss), 3 épocas y selección del checkpoint por `eval_loss`. Posteriormente el adaptador se fusiona y se exporta a GGUF en cuantización Q4_K_M.
+El modelo parte de Qwen3.5-0.8B, un transformer decoder-only, y se ajusta mediante LoRA con rango 16 aplicado a todas las capas lineales. El entrenamiento se ejecuto en una GPU T4 gratuita de Google Colab con Unsloth, calculando la perdida unicamente sobre la parte de respuesta para evitar que el modelo aprenda a repetir el cuerpo de la noticia, y seleccionando el checkpoint por perdida de validacion para mitigar el sobreajuste. La exportacion final es a GGUF Q4_K_M.
 
-El conjunto de datos es deliberadamente pequeño y de dominio específico: 100 pares reales «cuerpo de noticia limpio ↔ salida gold standard generada por DeepSeek» procedentes del archivo de una tubería de producción, más 12 muestras sintéticas de tipo SKIP, divididas en 99 de entrenamiento y 13 de validación. El prompt de sistema y el formato de entrada son idénticos, carácter por carácter, a los del nodo de producción en n8n, lo que reduce la deriva entre entrenamiento e inferencia. No se documenta el uso de RLHF ni DPO; el ajuste es puramente supervisado sobre pares de instrucción-respuesta.
+El conjunto de datos es pequeno y de origen productivo: 167 pares (150 de entrenamiento, 17 de validacion) generados archivando automaticamente el cuerpo original de cada noticia junto con la salida de DeepSeek, que actua como modelo profesor. Se anaden algunas muestras sinteticas de la clase SKIP (entradas invalidas). El autor describe un ciclo de "data flywheel": la pipeline archiva nuevas parejas cada dia y los fallos que requieren recurrir a la nube se reinyectan como ejemplos dificiles. No se documenta uso de RLHF ni DPO; el ajuste es SFT supervisado puro.
 
-Una innovación práctica destacable es el diseño de la tarea como clasificador-extractor con señal de rechazo explícita (`SKIP`), que permite a la tubería descartar entradas basura sin un paso separado de filtrado. El GGUF no incluye plantilla de chat embebida: el autor exige escribir un Modelfile con la plantilla ChatML exacta usada en el entrenamiento.
+Una innovacion operativa destacable es que el modelo no incorpora plantilla de chat y debe desplegarse con un TEMPLATE ChatML literal y un system prompt exacto, ambos reproducidos en la model card. Tambien requiere `think:false` en la llamada, porque el modelo base activa modo de razonamiento por defecto y su contenido se filtraria a la salida.
 
 ## Capacidades
 
-- Extracción estructurada: dado un cuerpo de noticia tecnológica en chino, genera un JSON con exactamente dos claves, `新闻标题` (titular de 15-30 caracteres) y `核心摘要` (resumen de una sola frase de hasta 120 caracteres).
-- Preservación de datos precisos: el prompt de entrenamiento exige conservar cifras exactas, unidades y fechas en el resumen.
-- Detección de contenido no procesable: devuelve `{"新闻标题":"SKIP","核心摘要":"SKIP"}` ante cuerpos vacíos, errores 404, muros de pago o ruido de navegación.
-- Cumplimiento estricto de formato JSON como comportamiento principal aprendido.
-- Generación de texto en chino, limitada al dominio de noticias tecnológicas.
-- No dispone de soporte documentado de tool calling ni function calling.
-- No dispone de soporte documentado de agentes ni razonamiento multi-paso.
-- No dispone de capacidades de visión, audio ni modo de razonamiento explícito (thinking mode).
-- Capacidades multilingües: no disponibles; el entrenamiento y la evaluación se limitan al chino.
+- Extraccion de titulo (15-30 caracteres) y resumen (nominalmente 120 caracteres, en la practica ~166 de media) en JSON con exactamente dos claves: `新闻标题` y `核心摘要`.
+- Deteccion de entradas invalidas (vacio, 404, muro de pago, ruido de navegacion) con salida fija `{"新闻标题":"SKIP","核心摘要":"SKIP"}`.
+- Traduccion de noticias en ingles al chino en la salida, con riesgo documentado en conversiones de magnitud (billion/trillion frente a 亿/万亿).
+- Preservacion de cifras, unidades, fechas y variaciones interanuales en el resumen, con recall de numeros del profesor del 0,48 y tasa de alucinacion numerica del 0,14.
+- Inferencia en CPU pura: 26-30 token/s en un R5-2500U para la variante 0.8B; unos 11 token/s para la de 2B.
+- No soporta tool calling, function calling, uso como agente, vision, audio ni conversacion general. La model card lo declara explicitamente fuera de alcance.
 
 ## Casos de uso
 
-- Enriquecimiento de agregadores de noticias tecnológicas: el modelo recibe el cuerpo limpio de cada artículo y devuelve titular y resumen listos para indexar, con la ventaja de que su formato de salida fijo elimina la necesidad de parseo heurístico posterior.
-- Filtrado de basura en crawlers: al devolver `SKIP` ante cuerpos vacíos, 404 o muros de pago, se puede insertar como nodo de validación en una tubería de scraping para descartar registros sin coste de un segundo modelo.
-- Automatización en n8n o flujos de trabajo low-code: al estar empaquetado en GGUF y ejecutarse con Ollama, se integra como paso local dentro de un workflow sin depender de APIs de pago, manteniendo el prompt idéntico al de entrenamiento.
-- Generación de boletines y resúmenes diarios: con 120 caracteres de resumen por artículo y preservación de cifras y fechas, sirve para componer newsletters técnicas donde la exactitud numérica es crítica.
-- Prototipado de bajo coste en hardware modesto: sus ~517 MB en Q4_K_M permiten ejecutarlo en CPU o en GPU de consumo, lo que facilita pruebas de concepto de pipelines de extracción antes de escalar a modelos mayores.
-- Etiquetado asistido para construir datasets: las salidas del modelo pueden revisarse y corregirse para alimentar el «data flywheel» descrito por el autor, ampliando progresivamente el conjunto de pares gold standard.
-- Clasificación de artículos por relevancia: la combinación de titular y resumen estructurado permite alimentar un clasificador o sistema de búsqueda posterior sin tratamiento adicional del texto.
+- Agregador de noticias tecnologicas en produccion: el modelo procesa cada cuerpo de articulo y devuelve titulo y resumen listos para publicar; con 26-30 token/s en CPU cubre las ~150 noticias diarias del autor sin coste de API.
+- Sustitucion de APIs en la nube por inferencia local: elimina el gasto recurrente (estimado en 400 yuanes anuales en el caso del autor) y evita enviar texto de terceros a proveedores externos, lo que simplifica el cumplimiento de privacidad.
+- Filtrado de articulos invalidos en la pipeline: la salida SKIP permite descartar automaticamente paginas 404, muros de pago y ruido de navegacion antes de almacenar o indexar.
+- Normalizacion de fuentes en ingles: traduce y resume noticias angloparlantes al chino para un feed unico, siempre con validacion posterior de magnitudes numericas por el riesgo documentado.
+- Generacion de metadatos para busqueda y SEO: los titulos y resumenes estructurados alimentan indices, tarjetas de previsualizacion y boletines sin intervencion manual.
+- Prototipado de destilacion de tareas estrechas: sirve como referencia reproducible (notebooks de entrenamiento incluidos) para equipos que quieran sustituir un LLM grande por un modelo pequeno en una tarea acotada con datos propios.
+- Despliegue en hardware antiguo o sin GPU: al ocupar 517 MB en Q4_K_M, cabe en portatiles de bajos recursos y en entornos de borde donde no es viable un modelo de 3B o superior.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor únicamente reporta una evaluación offline sobre el conjunto de validación de 13 ejemplos: 8 PASS y 3 FAIL, donde los 3 fallos corresponden a problemas de disciplina de salida (claves adicionales en el JSON o ausencia de parada limpia del JSON), no a errores de contenido.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. El autor aporta evaluaciones propias de la tarea:
 
-| Evaluacion | Resultado |
-|---|---|
-| Validacion offline (13 ejemplos) | 8 PASS / 3 FAIL |
-| Tipo de fallo observado | Claves extra en el JSON y JSON sin parada limpia |
+| Metrica | Resultado | Contexto |
+|---|---|---|
+| Aceptacion offline (0.8B) | 15/17 | Validacion de contrato: formato JSON, longitud, numeros, SKIP |
+| Aceptacion offline (2B) | 17/17 | Misma validacion; elimina los resumenes sobredimensionados |
+| Similitud de titulo con el profesor | 0,86 | Comparacion online contra DeepSeek sobre las mismas noticias |
+| Recall de numeros del resumen del profesor | 0,48 | Proporcion de cifras del profesor conservadas |
+| Tasa de alucinacion numerica | 0,14 | Cifras del resumen no localizables en el cuerpo |
+| Violaciones de disciplina de formato | 0 | Sin fugas de plantilla, titulos en ingles ni scaffolding |
+| Longitud media de resumen | 166 caracteres | El profesor promedia 149; el contrato nominal es 120 |
+| Velocidad 0.8B en CPU (R5-2500U) | 26-30 token/s | Inferencia local sin GPU |
+| Velocidad 2B en CPU (R5-2500U) | ~11 token/s | Aproximadamente 1 minuto por articulo largo |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,5 GB para los pesos en Q4_K_M, más el espacio del contexto (4096 tokens) y el overhead del runtime; en la práctica cabe holgadamente en menos de 2 GB.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; el autor entrenó en una T4 de Colab, y la inferencia es viable en GPUs de consumo como GTX 1650, RTX 3050 o superiores.
-- Cabe en GPU de consumo: sí, en la práctica totalidad de tarjetas actuales, e incluso en CPU mediante llama.cpp u Ollama.
-- Opciones de despliegue: Ollama (con Modelfile personalizado obligatorio, ya que el GGUF no incluye plantilla de chat), llama.cpp y cualquier runtime compatible con GGUF. vLLM y TGI no están documentados para este artefacto.
-- Latencia y throughput: no disponibles en la información proporcionada.
-- Configuración recomendada por el autor: `temperature 0.2`, `num_ctx 4096`, `num_predict 500`, `repeat_penalty 1.2`.
+- VRAM/RAM: la variante 0.8B en Q4_K_M ocupa unos 517 MB de pesos; la de 2B, unos 1,26 GB. Con contexto de 4096 tokens conviene reservar al menos 2-4 GB de RAM total para el proceso.
+- GPU: no requiere GPU. Funciona en CPU pura; el autor lo valida en un AMD Ryzen 5 2500U con 32 GB de RAM. Cualquier GPU consumer (RTX 3060 en adelante) aceleraria la inferencia, pero no hay cifras publicadas de throughput en GPU.
+- GPU consumer: cabe holgadamente en cualquier GPU con 4 GB o mas de VRAM, incluida una GTX 1650 o una RTX 3050 portatil.
+- Despliegue: Ollama es la via documentada, con un Modelfile que fija el TEMPLATE ChatML literal, temperature 0.2, num_ctx 4096, num_predict 500 y repeat_penalty 1.05. Tambien es compatible con llama.cpp al ser GGUF. No se documenta soporte verificado de vLLM o TGI en la informacion disponible.
+- Latencia: 26-30 token/s en CPU para 0.8B y ~11 token/s para 2B; con salidas de unos 170-200 caracteres chinos, la latencia por articulo se situa en el orden de segundos para 0.8B y cerca de un minuto para 2B en el portatil de referencia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Especializacion | Licencia | Formato |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Phanai/qwen_extractor | 772.845.888 | 4096 | Extraccion de titulares y resumenes de noticias en chino | apache-2.0 | GGUF Q4_K_M |
-| Qwen/Qwen3.5-0.8B (base) | no disponible | no disponible | Modelo generalista | no disponible | safetensors y otros |
-| Modelos de extraccion con LLM grandes (p. ej. via API) | no disponible | no disponible | Extraccion generica multilingue | variable | API |
+| Phanai/qwen_extractor (0.8B) | 772,8 M | no disponible (num_ctx 4096 en despliegue) | Extraccion de noticias en JSON, chino | Apache-2.0 | GGUF en Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | no disponible | Modelo generalista con modo de razonamiento | no disponible en la informacion | Hugging Face |
+| DeepSeek (profesor, API) | no disponible | no disponible | LLM generalista en la nube | no disponible | API comercial |
+| Qwen3.5-2B ajustado (misma receta) | ~2 B | no disponible (num_ctx 4096 en despliegue) | Misma tarea, mayor disciplina de salida | Apache-2.0 | GGUF en el mismo repositorio |
 
-La comparación directa con alternativas de la misma categoría (extractores de noticias ajustados) no está disponible en la información proporcionada. Frente a su modelo base, la diferencia clave es el cumplimiento de formato JSON específico y la señal SKIP, a costa de perder generalidad y capacidades multilingües.
+La comparacion relevante no es de capacidad general sino de coste por tarea: frente al profesor en la nube, el modelo local iguala en gran medida la calidad de titulos y reduce el coste marginal al consumo electrico, a cambio de peor recall numerico y menor estabilidad entre ejecuciones.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados, pero al entrenarse solo con noticias tecnológicas en chino, el modelo hereda la distribución y los sesgos de esa fuente y del modelo que generó las salidas gold standard (DeepSeek).
-- Riesgo de alucinación: presente, especialmente en cifras, fechas y unidades si el cuerpo de entrada es ambiguo; el prompt de entrenamiento exige preservarlas, pero no hay garantía formal.
-- Disciplina de salida: el propio autor reporta fallos por claves adicionales y por JSON sin parada limpia, lo que obliga a validar y parsear la salida en producción con tolerancia a errores.
-- Generalización limitada: con solo 100 pares reales de entrenamiento, el rendimiento cae en formatos y plantillas de noticias poco representados (cola larga).
-- Contexto restringido a 4096 tokens: artículos más largos deben truncarse o dividirse, con riesgo de perder información relevante.
-- Idioma: entrenado y evaluado únicamente en chino; no hay evidencia de funcionamiento en castellano u otros idiomas.
-- Plantilla de chat no embebida: usar el GGUF sin el Modelfile ChatML correcto produce salidas degradadas; es un requisito operativo, no opcional.
-- Licencia apache-2.0: permite uso comercial, pero debe verificarse la licencia del modelo base Qwen/Qwen3.5-0.8B, que no se detalla en la información disponible.
-- Madurez: 0 descargas y 0 likes en el momento de la consulta, sin evidencia de uso en producción por terceros.
+- El tratamiento de fuentes en ingles es el punto debil principal: la conversion de magnitudes (billion/trillion a 亿/万亿) puede fallar, con casos documentados de escribir 10 billion como 10 亿 o 67 亿 como 670 亿, y pueden colarse palabras en ingles. Los validadores que solo comprueban la presencia de la cifra no detectan estos errores de unidad.
+- Inestabilidad entre ejecuciones: con temperature 0.2, aproximadamente la mitad de las veces dos ejecuciones del mismo articulo producen cifras contradictorias. Para consistencia se recomienda decodificacion voraz (temperature 0) o validacion numerica posterior.
+- Resumenes mas largos de lo pactado: el contrato pide 120 caracteres, el profesor promedia 149 y el modelo llega ocasionalmente a mas de 200. La restriccion debe aplicarse en la pipeline, no confiarse al modelo.
+- Dataset de entrenamiento muy pequeno (167 muestras): generalizacion limitada a formatos poco frecuentes; requiere ampliacion mediante el ciclo de datos.
+- SKIP solo cubre los casos definidos en el contrato (vacio, 404, muro de pago, ruido). Las paginas de relleno que son texto coherente se resumen fielmente, por lo que el filtrado de que el texto corresponda a la URL debe hacerse en la capa de scraping.
+- La variante 2B mejora la disciplina de formato pero es unas tres veces mas lenta en CPU y su ventaja en fidelidad numerica no se ha evaluado en linea de forma independiente.
+- Riesgo de alucinacion numerica del 14 % y recall de cifras del profesor del 48 %: cualquier uso sensible a cifras exactas debe incorporar verificacion contra el cuerpo original.
+- El modelo no tiene plantilla de chat embebida; usar la plantilla por defecto de Ollama rompe el formato de salida. Es obligatorio el TEMPLATE ChatML literal y `think:false`.
+- No es un modelo conversacional: no debe desplegarse como asistente general ni como agente con herramientas.
+- Licencia Apache-2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.5-0.8B, no detalladas en la informacion disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Phanai/qwen_extractor
-- Repositorio del proyecto (contexto, dataset, notas de entrenamiento): https://github.com/wolfpan/qwen_extractor
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth
+- Pesos GGUF 0.8B: https://huggingface.co/Phanai/qwen_extractor/resolve/main/qwen3.5_0.8b_news_extractor_v4.gguf
+- Pesos GGUF 2B: https://huggingface.co/Phanai/qwen_extractor/resolve/main/qwen3.5_2b_news_extractor_v4.gguf
+- Unsloth (framework de ajuste fino): https://github.com/unslothai/unsloth
 - Ollama (runtime de despliegue): https://ollama.com

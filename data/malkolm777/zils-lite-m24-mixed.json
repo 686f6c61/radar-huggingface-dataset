@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": 852985920,
   "parameters_human": "853.0M",
-  "storage_bytes": 1719880230,
-  "storage_human": "1.7 GB",
+  "storage_bytes": 3425907918,
+  "storage_human": "3.4 GB",
   "context_length": null,
   "base_model": "joamCriff123/zils-lite-l1121a",
   "formats": [

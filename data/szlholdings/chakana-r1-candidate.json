@@ -5,7 +5,7 @@
   "author": "SZLHOLDINGS",
   "url": "https://huggingface.co/SZLHOLDINGS/chakana-r1-candidate",
   "created_at": "2026-11-05T02:22:32.000Z",
-  "updated_at": "2026-11-20T04:16:11.000Z",
+  "updated_at": "2026-11-25T03:01:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -16,10 +16,11 @@
   "tags": [
     "safetensors",
     "qwen3",
+    "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 197,
+  "downloads_30d": 201,
   "trending_score": 0,
   "parameters": 595776512,
   "parameters_human": "595.8M",

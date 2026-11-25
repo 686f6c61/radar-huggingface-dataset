@@ -5,7 +5,7 @@
   "author": "Rohit252003",
   "url": "https://huggingface.co/Rohit252003/indicconformer-hi-ctc-onnx",
   "created_at": "2026-11-24T12:10:48.000Z",
-  "updated_at": "2026-11-24T12:10:51.000Z",
+  "updated_at": "2026-11-24T12:38:37.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -22,7 +22,7 @@
     "automatic-speech-recognition",
     "hi",
     "base_model:ai4bharat/indicconformer_stt_hi_hybrid_ctc_rnnt_large",
-    "base_model:finetune:ai4bharat/indicconformer_stt_hi_hybrid_ctc_rnnt_large",
+    "base_model:quantized:ai4bharat/indicconformer_stt_hi_hybrid_ctc_rnnt_large",
     "license:mit",
     "region:us"
   ],
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 213772392,
+  "storage_human": "214 MB",
   "context_length": null,
   "base_model": "ai4bharat/indicconformer_stt_hi_hybrid_ctc_rnnt_large",
   "formats": [

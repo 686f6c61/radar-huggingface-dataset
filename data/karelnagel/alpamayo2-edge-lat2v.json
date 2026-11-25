@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "karelnagel/alpamayo2-edge-lat2v",
+  "slug": "karelnagel-alpamayo2-edge-lat2v",
+  "author": "karelnagel",
+  "url": "https://huggingface.co/karelnagel/alpamayo2-edge-lat2v",
+  "created_at": "2026-11-25T06:34:06.000Z",
+  "updated_at": "2026-11-25T08:04:16.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "alpamayo2_edge",
+    "alpamayo",
+    "autonomous-driving",
+    "vision-language-action",
+    "openpilot",
+    "robotics",
+    "en",
+    "dataset:nvidia/PhysicalAI-Autonomous-Vehicles",
+    "base_model:nvidia/Alpamayo2-Edge",
+    "base_model:finetune:nvidia/Alpamayo2-Edge",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2651163378,
+  "parameters_human": "2.65B",
+  "storage_bytes": 8355448150,
+  "storage_human": "8.4 GB",
+  "context_length": null,
+  "base_model": "nvidia/Alpamayo2-Edge",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,117 +2,125 @@
 
 ## Resumen
 
-D1A-E4B-it QAT 4-bit es una compilación para Apple Silicon del modelo de decisión D1A, desarrollado por jonpol01 y distribuido en el espacio `mlx-community`. Se trata de un derivado del tronco Gemma 4 E4B (7.463 millones de parámetros) con un adaptador específico que transforma el modelo generativo en un clasificador de decisiones: recibe un documento y un conjunto de preguntas (sí/no, elección múltiple o puntuación) y devuelve, en un único forward pass, una probabilidad calibrada para cada opción, sin generar texto libre. Esto garantiza que toda respuesta sea una opción válida del conjunto planteado.
+D1A-E4B-it QAT 4-bit es una adaptación para Apple Silicon (MLX) del modelo de decisión D1A, construido sobre el tronco cuantizado de Google `google/gemma-4-E4B-it-qat-w4a16-ct`. Lo distribuye el colectivo `mlx-community` como espejo byte a byte del repositorio original de `JohnP1`, con el objetivo de ofrecer un modelo pequeño de decisión y chat multimodal que se ejecute en local en hardware Apple.
 
-La relevancia técnica del build reside en que no se ha recuantizado desde bf16: las 343 capas lineales int4 del tronco `google/gemma-4-E4B-it-qat-w4a16-ct` se almacenan bit a bit como MLX 4-bit, con error de desquantización 0.0. El adaptador D1A se reentrenó sobre ese tronco exacto, de modo que el modelo de 4 bits es el modelo entrenado y no una copia redondeada. El repositorio ocupa 5,6 GB y añade 0,9 GB de encoders multimodales, frente a los 7,0 GB de la versión 8-bit.
+A diferencia de un LLM generativo al uso, el modelo está especializado en responder preguntas cerradas sobre un documento: cada cuestión es de sí/no, de elección múltiple o de puntuación, y el modelo devuelve una probabilidad calibrada para cada opción en un único forward pass, sin generar texto. Esto garantiza que toda respuesta sea una opción válida del conjunto planteado, lo que resulta útil para clasificación, etiquetado y enrutamiento.
 
-El modelo se publica bajo licencia Apache 2.0, con soporte declarado de inglés y japonés, y capacidades multimodales (visión, audio y vídeo) a través de endpoints específicos. Está marcado como experimental y su lanzamiento se produjo antes de completar las puertas de calidad previstas, lo que conviene tener en cuenta para uso en producción.
+El build se apoya en los pesos int4 entrenados con quantización consciente (QAT) de Google, almacenados bit a bit como MLX 4-bit (343 capas lineales int4, error de dequantización 0.0), y el adaptador D1A se reentrenó sobre ese tronco exacto. El repositorio ocupa 5,6 GB y el modelo declara 7.463.013.418 parámetros en safetensors, con licencia Apache 2.0 y soporte de inglés y japonés.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (Gemma 4 E4B) con adaptador de decisión D1A; tronco int4 QAT en formato MLX |
+| Arquitectura | Transformer multimodal (Gemma 4) con adaptador de decisión D1A; tronco QAT int4 |
 | Parámetros totales | 7.463.013.418 |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | 4-bit (QAT, w4a16 en el tronco original); existe variante 8-bit de referencia (v0.6) |
-| Idiomas soportados | en, ja |
-| Licencia | apache-2.0 |
+| Tipos de cuantización | 4-bit (QAT, pesos int4 empaquetados como MLX 4-bit); encoders en 8-bit |
+| Idiomas soportados | inglés (en), japonés (ja) |
+| Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (MLX) |
+| Librería | mlx |
+| Pipeline declarado | text-classification |
+| Modelo base | google/gemma-4-E4B-it-qat-w4a16-ct (revisión 6cd26aaa) |
+| Tamaño del repositorio | 5,6 GB (4,4 GB de modelo + 0,9 GB de encoders) |
+| Fecha de publicación | 2026-10-27 |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte del tronco Gemma 4 E4B con cuantización consciente del entrenamiento (QAT) en int4, publicado por Google como `gemma-4-E4B-it-qat-w4a16-ct`. Sobre ese tronco se entrena un adaptador D1A que reformula la tarea como clasificación calibrada: cada pregunta se resuelve con una distribución de probabilidad sobre las opciones, sin decodificación autoregresiva de texto. Las 343 capas lineales int4 se conservan con las mismas palabras empaquetadas y escalas que el original, con error de desquantización nulo.
+El modelo parte del tronco Gemma 4 E4B cuantizado con QAT a int4 (w4a16) por Google. Todos los pesos int4 se conservan sin recuantizar: las 343 capas lineales int4 se almacenan con las mismas palabras empaquetadas y escalas, con error de dequantización nulo. Sobre ese tronco se reentrenó el adaptador D1A, de modo que el modelo 4-bit es exactamente el que se entrenó y no una copia redondeada del bf16.
 
-El reentrenamiento del adaptador responde a dos motivos documentados. Primero, los pesos QAT difieren de los bf16 sobre los que se entrenó el adaptador v0.6; trasladar ese adaptador sin cambios al tronco QAT provocaba pérdidas de precisión y alteraba el 9,6 % de las respuestas claras en la variante E2B. Segundo, el entrenamiento original en PyTorch sobre GPU de Apple arrastraba un bug que leía como ceros los embeddings por capa para todos los tokens con id superior a 199.729, lo que afectaba a puntuación y dígitos, el 28,5 % de los tokens de entrenamiento. El reentrenamiento corrige esa lectura y se compara contra el adaptador v0.6 sin cambios sobre el mismo tronco, con una mejora de +1,19 puntos [0,50, 1,87], 6 victorias significativas y ninguna pérdida significativa.
+El reentrenamiento responde a dos motivos documentados. Primero, los pesos QAT difieren de los bf16 sobre los que se entrenó el adaptador v0.6; al mover ese adaptador sin cambios al tronco QAT se perdía precisión y cambiaba el 9,6 % de las respuestas claras en la variante E2B. Segundo, el entrenamiento original en PyTorch sobre GPU Apple sufría un bug que leía como ceros los embeddings por capa para todo token id desde 199.729, afectando a puntuación y dígitos (28,5 % de los tokens de entrenamiento); este reentrenamiento los lee correctamente.
+
+La salida del modelo es una distribución de probabilidad calibrada sobre las opciones de cada pregunta, en una sola pasada y sin decodificación de texto. El autor reporta calibración ECE de 0,105 en transfer-v4 (frente a 0,081 en v0.6). No se detallan en la información disponible el número de tokens de entrenamiento ni la composición del dataset.
 
 ## Capacidades
 
-- Clasificación de decisiones calibradas: preguntas de sí/no, elección múltiple y puntuación, con probabilidad por opción en un solo forward pass.
+- Decisión sobre documentos: responde preguntas de sí/no, elección múltiple y puntuación devolviendo una probabilidad calibrada por opción.
 - Chat en formato OpenAI (`/v1/chat/completions`), con soporte de streaming.
-- Decisiones sobre documentos vía `/v1/systemone`.
-- Procesamiento de fotos, clips de voz y vídeo mediante `/v1/systemone/media`, con encoders adicionales de 0,9 GB.
-- Etiquetado de pull requests: etiquetas, severidad, radio de impacto y enrutamiento.
-- Capacidades multilingües limitadas a inglés y japonés.
-- Ejecución en dispositivo (on-device) sobre Apple Silicon mediante MLX.
+- Entrada multimodal: fotos, clips de voz y vídeo a través de `/v1/systemone/media`.
+- Endpoint de decisiones dedicado (`/v1/systemone`).
+- Clasificación y etiquetado: etiquetas de pull requests, severidad, radio de impacto y enrutamiento.
+- Procesamiento multilingüe limitado a inglés y japonés.
+- Respuestas siempre válidas por construcción, al no generar texto libre.
+- Ejecución en local sobre Apple Silicon mediante MLX.
 
 ## Casos de uso
 
-- Triaje de pull requests en CI: el modelo asigna etiquetas, severidad y radio de impacto a cada PR; en el conjunto de test alcanza 81,0 % de precisión en etiquetas y mejora +6,0 puntos en severidad con los offsets por clase, lo que permite priorizar revisiones automáticamente.
-- Enrutamiento de incidencias: clasifica tickets o issues hacia el equipo o componente correcto, con +1,7 y +1,5 puntos frente a v0.6 en las suites de routing.
-- Verificación de documentos: dado un contrato, factura o formulario y un cuestionario de comprobaciones, devuelve probabilidad calibrada por cada condición (88,9 % en documents-v1), útil para validación documental sin generación de texto.
-- Moderación y control de calidad de contenidos: las preguntas de tipo sí/no con probabilidad permiten fijar umbrales explícitos y auditar decisiones, algo que un modelo generativo no ofrece de forma nativa.
-- Análisis multimodal de incidencias logísticas: con `/v1/systemone/media` puede responder preguntas sobre fotos de paquetes, notas de voz de clientes o vídeo de entregas; en las 14 peticiones de demostración coincidió con v0.6 en 26 de 28 respuestas.
-- Asistentes de chat locales en Mac: el endpoint compatible con OpenAI y el streaming permiten integrarlo en aplicaciones de escritorio sobre Apple Silicon con 5,3 GB de huella total.
-- Clasificación de texto en japonés: las suites ja-jglue (80,7 % en development, 79,7 % en test) lo hacen apto para tareas de comprensión y clasificación en ese idioma.
+- Etiquetado automático de pull requests: el modelo asigna etiquetas y severidad a PRs con precisión medida de 81,0 en el conjunto de test, integrándose en flujos de revisión de código.
+- Enrutamiento de incidencias: clasifica tickets o solicitudes hacia el equipo o categoría correcta, con ganancias reportadas de +1,7 y +1,5 puntos frente a v0.6.
+- Extracción de datos de documentos: responde preguntas cerradas sobre fechas, aserciones y campos concretos (suite night2 con 94,1 en aserciones y 90,0 en fechas).
+- Evaluación de riesgo en soporte: estima severidad y radio de impacto de incidencias, útil para priorizar colas de atención.
+- Análisis de imágenes y vídeo en local: clasifica escenas o estados (por ejemplo, estado de un paquete) sin enviar datos a la nube.
+- Transcripción y clasificación de notas de voz: procesa clips de audio y decide etiquetas como urgencia sobre el contenido hablado.
+- Asistencia en dispositivos Apple: despliegue on-device para decisiones sensibles a privacidad con un consumo de 5,3 GB en total.
 
 ## Benchmarks y rendimiento
 
-Resultados de la scorecard del autor (precisión en %, delta en puntos con intervalos bootstrap pareados al 95 %; en negrita donde el intervalo excluye 0), medidos con `scripts/quality_gate.py --all-suites` y `scripts/decide.py` sobre Apple M1 Max:
+Resultados de la scorecard del autor (precisión en %, delta en puntos con intervalos bootstrap del 95 %; en negrita donde el intervalo excluye 0). Comparación frente a D1A-E4B-it v0.6 (MLX 8-bit) y frente al adaptador de v0.6 movido al mismo tronco QAT.
 
-| Suite | n | Este build | Δ vs D1A-E4B-it v0.6 | Δ vs adaptador v0.6 sobre este tronco |
+| Suite | n | Este build | Δ vs v0.6 | Δ vs adaptador v0.6 en este tronco |
 |---|---|---|---|---|
-| devtools-v1 | 1.074 | 74,6 | +0,2 [-1,1, +1,5] | +0,3 [-1,0, +1,6] |
-| documents-v1 | 920 | 88,9 | +0,3 [-1,1, +1,7] | +1,1 [-0,2, +2,4] |
-| external semif-v1 | 144 | 88,9 | -2,1 [-5,6, +0,7] | -1,4 [-4,9, +2,1] |
-| external typesafe-v1 | 102 | 79,4 | **-7,8 [-11,7, -3,6]** | -1,0 [-5,8, +4,3] |
-| external wanli-v1 | 256 | 72,3 | -1,6 [-3,9, +0,8] | +0,4 [-2,3, +3,1] |
-| external wanli-v2 | 1.002 | 72,1 | -0,5 [-1,9, +0,9] | **+1,6 [+0,1, +3,1]** |
-| hard-v1 | 1.083 | 76,8 | +1,2 [-0,4, +2,9] | **+3,4 [+1,7, +5,4]** |
-| ja-jglue development | 1.500 | 80,7 | -0,1 [-1,3, +1,1] | +1,0 [-0,2, +2,3] |
-| ja-jglue test | 1.500 | 79,7 | +1,2 [+0,0, +2,4] | **+1,7 [+0,4, +3,0]** |
-| night2 assertion | 1.020 | 94,1 | +0,9 [-0,3, +2,0] | **+1,7 [+0,7, +2,7]** |
-| night2 dates | 900 | 90,0 | -1,2 [-2,7, +0,2] | +0,9 [-0,2, +2,0] |
-| night2 unknowable | 525 | 67,2 | +0,6 [-0,8, +1,9] | +0,6 [-1,0, +2,3] |
-| pr-labels development | 2.030 | 80,5 | +0,9 [-0,1, +1,9] | **+1,7 [+0,4, +3,0]** |
-| pr-labels development-ja | 198 | 78,8 | +3,5 [-0,5, +7,2] | -0,5 [-5,0, +4,1] |
-| pr-labels real17 | 51 | 64,7 | -3,9 [-11,8, +3,9] | +0,0 [-7,8, +7,8] |
-| pr-labels test | 2.045 | 81,0 | **+1,6 [+0,5, +2,7]** | **+4,4 [+3,0, +5,9]** |
-| pr-labels test-ja | 193 | 76,2 | -0,5 [-2,7, +1,6] | no disponible (truncado) |
+| devtools-v1 | 1.074 | 74,6 | +0,2 [-1,1; +1,5] | +0,3 [-1,0; +1,6] |
+| documents-v1 | 920 | 88,9 | +0,3 [-1,1; +1,7] | +1,1 [-0,2; +2,4] |
+| external semif-v1 | 144 | 88,9 | -2,1 [-5,6; +0,7] | -1,4 [-4,9; +2,1] |
+| external typesafe-v1 | 102 | 79,4 | **-7,8 [-11,7; -3,6]** | -1,0 [-5,8; +4,3] |
+| external wanli-v1 | 256 | 72,3 | -1,6 [-3,9; +0,8] | +0,4 [-2,3; +3,1] |
+| external wanli-v2 | 1.002 | 72,1 | -0,5 [-1,9; +0,9] | **+1,6 [+0,1; +3,1]** |
+| hard-v1 | 1.083 | 76,8 | +1,2 [-0,4; +2,9] | **+3,4 [+1,7; +5,4]** |
+| ja-jglue development | 1.500 | 80,7 | -0,1 [-1,3; +1,1] | +1,0 [-0,2; +2,3] |
+| ja-jglue test | 1.500 | 79,7 | +1,2 [+0,0; +2,4] | **+1,7 [+0,4; +3,0]** |
+| night2 assertion | 1.020 | 94,1 | +0,9 [-0,3; +2,0] | **+1,7 [+0,7; +2,7]** |
+| night2 dates | 900 | 90,0 | -1,2 [-2,7; +0,2] | +0,9 [-0,2; +2,0] |
+| night2 unknowable | 525 | 67,2 | +0,6 [-0,8; +1,9] | +0,6 [-1,0; +2,3] |
+| pr-labels development | 2.030 | 80,5 | +0,9 [-0,1; +1,9] | **+1,7 [+0,4; +3,0]** |
+| pr-labels development-ja | 198 | 78,8 | +3,5 [-0,5; +7,2] | -0,5 [-5,0; +4,1] |
+| pr-labels real17 | 51 | 64,7 | -3,9 [-11,8; +3,9] | +0,0 [-7,8; +7,8] |
+| pr-labels test | 2.045 | 81,0 | **+1,6 [+0,5; +2,7]** | **+4,4 [+3,0; +5,9]** |
+| pr-labels test-ja | 193 | 76,2 | -0,5 [-2,7; +1,6] | +3,... (truncado) |
 
-Resumen agregado: nivel global con v0.6 (pooled -0,16 puntos [-0,88, +0,51] sobre 21 líneas); frente al adaptador v0.6 sin cambios sobre el mismo tronco, +1,19 [+0,50, +1,87]. Calibración en transfer-v4: ECE 0,105 (frente a 0,081 en v0.6). Velocidad: ratio 1,01 por decisión frente a v0.6 en 8-bit.
+Resumen agregado: nivel global frente a v0.6 (pooled -0,16 puntos [-0,88; +0,51] sobre 21 líneas); frente al adaptador v0.6 sin reentrenar en el mismo tronco, +1,19 [+0,50; +1,87] con 6 victorias significativas y ninguna pérdida significativa. La velocidad es prácticamente idéntica a v0.6 en 8-bit (ratio 1,01) con 5,3 GB frente a 7,0 GB. En las 14 peticiones de demo multimodales, 26 de 28 respuestas coinciden con v0.6.
 
 ## Requisitos de hardware
 
-- Huella de almacenamiento: 5,6 GB de repositorio; 4,4 GB del modelo más 0,9 GB de encoders multimodales (5,3 GB totales en ejecución).
-- Plataforma: exclusivamente Apple Silicon mediante MLX; no hay pesos GGUF ni soporte CUDA declarado.
-- GPU recomendadas: Apple M1 Max es la plataforma de referencia de las mediciones; se espera funcionamiento en el resto de la familia M (M1 a M4) en función de la memoria unificada disponible.
-- Cabe en GPU de consumo: sí, en equipos Apple con memoria unificada suficiente para 5,3 GB más el contexto.
-- Opciones de despliegue: librería MLX y los endpoints del servidor D1A (`/v1/systemone`, `/v1/chat/completions`, `/v1/systemone/media`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no se publican cifras absolutas; solo la comparación relativa de 1,01 frente a v0.6 en 8-bit por decisión.
+- VRAM/unificada estimada: 4,4 GB de modelo más 0,9 GB de encoders, aproximadamente 5,3 GB en total.
+- Hardware objetivo: Apple Silicon con MLX; las mediciones del autor se realizaron en un Apple M1 Max.
+- GPU dedicadas (A100, H100, RTX 4090): no es el objetivo del build; requiere MLX y no se documenta soporte CUDA.
+- Cabe en equipos Apple con memoria unificada de 8 GB o superior, aunque se recomienda margen adicional.
+- Despliegue: librería MLX con endpoints compatibles con OpenAI (`/v1/chat/completions`, `/v1/systemone`, `/v1/systemone/media`); no se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: el autor indica un ratio de 1,01 por decisión frente a v0.6 en 8-bit; no se publican cifras absolutas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| D1A-E4B-it QAT 4-bit (este) | 7.463 M | no disponible | Clasificación de decisiones calibrada, multimodal | apache-2.0 | MLX, Apple Silicon |
-| D1A-E4B-it v0.6 (MLX 8-bit) | 7.463 M | no disponible | Igual, tronco bf16 con adaptador previo | apache-2.0 | MLX, 7,0 GB |
-| D1A-E2B-it QAT | no disponible | no disponible | Variante menor de la misma familia | apache-2.0 | MLX |
-| google/gemma-4-E4B-it-qat-w4a16-ct | 7.463 M | no disponible | Modelo generativo base con QAT int4 | no disponible en la información | safetensors |
+| D1A-E4B-it QAT 4-bit (este) | 7.463.013.418 | no disponible | 4-bit QAT MLX | Apache 2.0 | MLX, on-device Apple |
+| D1A-E4B-it v0.6 (MLX 8-bit) | no disponible | no disponible | 8-bit | Apache 2.0 | MLX, on-device Apple |
+| google/gemma-4-E4B-it-qat-w4a16-ct | no disponible | no disponible | 4-bit QAT | no disponible en la información | Pesos base de Google |
+| D1A-E2B-it QAT | no disponible | no disponible | 4-bit QAT | Apache 2.0 | MLX, on-device Apple |
 
-La comparación cuantitativa disponible se limita a la familia D1A: frente a v0.6 el build es equivalente en conjunto, superior en etiquetado de PR y routing, e inferior en la suite externa typesafe (-7,8 puntos). No se dispone de comparaciones con modelos de decisión de otros proveedores.
+Frente a v0.6, este build ocupa 5,3 GB en lugar de 7,0 GB con rendimiento global equivalente y mejoras en etiquetas de PR y enrutamiento, pero con pérdida en la suite externa typesafe. Frente al tronco base de Google, añade el adaptador de decisión y la interfaz multimodal. No se dispone de datos de benchmarks de modelos generativos comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo marcado como experimental y publicado antes de completar sus puertas de calidad; el autor lo indica explícitamente en la model card.
-- Pérdida significativa de precisión en la suite externa typesafe-v1 (-7,8 puntos), atribuida al tronco de 4 bits y no al reentrenamiento.
-- Calibración más laxa en transferencia: ECE sube de 0,081 a 0,105, lo que afecta a la fiabilidad de las probabilidades fuera de dominio.
-- Con los offsets de severidad activados detecta menos PR P1 (29 de 47 frente a 39 de 47), aunque con mayor precisión (0,30 frente a 0,22).
-- Cobertura lingüística limitada a inglés y japonés; no se declara soporte de castellano.
-- Riesgo de alucinación estructuralmente bajo en la tarea de decisión (toda salida es una opción válida), pero las probabilidades pueden estar mal calibradas en dominios alejados del entrenamiento.
-- Dependencia exclusiva de Apple Silicon y MLX; no hay rutas de despliegue en CUDA ni formatos GGUF.
-- El repositorio es un espejo byte a byte de `JohnP1/d1a-e4b-it-qat-mlx-q4` (revisión `508ba4af`); la autoría y el mantenimiento corresponden al autor original.
-- No se han documentado sesgos específicos en la información disponible.
+- Modelo experimental: el autor lo publicó antes de completar sus puertas de calidad, aunque ambas se ejecutaron después.
+- Pérdida significativa de 7,8 puntos en la suite externa typesafe-v1 respecto a v0.6, atribuida al tronco 4-bit.
+- Calibración más laxa en transfer-v4 (ECE 0,105 frente a 0,081), con menos detección de PRs P1 (29 de 47 frente a 39 de 47) aunque con mayor precisión (0,30 frente a 0,22).
+- Soporte lingüístico limitado a inglés y japonés; no se declara castellano.
+- Longitud de contexto no documentada, lo que dificulta planificar documentos largos.
+- Orientado exclusivamente a Apple Silicon con MLX; sin soporte documentado para CUDA ni otros runtimes.
+- Riesgo de error en tareas multimodales límite: se documentan dos discrepancias en las demos (lectura de ubicación de un paquete y urgencia de una nota de voz).
+- No genera texto libre: su uso está restringido a preguntas cerradas con opciones predefinidas.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base de Google.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/mlx-community/d1a-e4b-it-qat-4bit
-- Repositorio original espejado: https://huggingface.co/JohnP1/d1a-e4b-it-qat-mlx-q4
-- Tronco base: https://huggingface.co/google/gemma-4-E4B-it-qat-w4a16-ct
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/d1a-e4b-it-qat-4bit
+- Repositorio original espejo: https://huggingface.co/JohnP1/d1a-e4b-it-qat-mlx-q4
+- Modelo base: https://huggingface.co/google/gemma-4-E4B-it-qat-w4a16-ct
 - Variante E2B QAT: https://huggingface.co/JohnP1/d1a-e2b-it-qat-mlx-q4
-- Repositorio del proyecto: https://github.com/jonpol01/d1a
-- Scorecard completo: https://github.com/jonpol01/d1a/blob/main/docs/reports/2026-10-28-e4b-it-qat-scorecard.md
+- Repositorio GitHub del proyecto: https://github.com/jonpol01/d1a
 - Issue sobre el bug de embeddings: https://github.com/jonpol01/d1a/issues/353
 - Issue de PyTorch relacionado: https://github.com/pytorch/pytorch/issues/188756
-- Issue de la suite typesafe: https://github.com/jonpol01/d1a/issues/361
+- Issue sobre la suite typesafe: https://github.com/jonpol01/d1a/issues/361
+- Scorecard completo: https://github.com/jonpol01/d1a/blob/main/docs/reports/2026-10-28-e4b-it-qat-scorecard.md

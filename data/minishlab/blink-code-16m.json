@@ -5,10 +5,10 @@
   "author": "minishlab",
   "url": "https://huggingface.co/minishlab/blink-code-16M",
   "created_at": "2026-11-19T12:33:35.000Z",
-  "updated_at": "2026-11-20T13:23:22.000Z",
+  "updated_at": "2026-11-24T20:01:43.000Z",
   "license": "mit",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "feature-extraction",
   "library": "model2vec",
   "languages": [
     "code"
@@ -21,6 +21,8 @@
     "retrieval",
     "static-embeddings",
     "sentence-transformers",
+    "sentence-similarity",
+    "feature-extraction",
     "dataset:minishlab/cornstack-queries-docs",
     "dataset:minishlab/tokenlearn-cornstack-docs-coderankembed-v2",
     "dataset:minishlab/tokenlearn-cornstack-queries-coderankembed-v2",
@@ -35,8 +37,8 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 1,
-  "downloads_30d": 11,
+  "likes": 7,
+  "downloads_30d": 72,
   "trending_score": 0,
   "parameters": 16000000,
   "parameters_human": "16.0M",

@@ -2,107 +2,100 @@
 
 ## Resumen
 
-Qwopus3.8-27B-Coder-Flash-MLX-4bit es una cuantizacion en 4 bits para MLX del modelo Jackrong/Qwopus3.8-27B-Coder-Flash, un fine-tune orientado a agentes de codigo construido sobre una base densa de la familia Qwen3.5 con atencion hibrida DeltaNet y torre de vision. Lo publica mattbucci, autor del stack de inferencia m4-sglang-inference, y su proposito es hacer viable en Apple Silicon un modelo de 27.356 millones de parametros con capacidades multimodales y de tool calling sin renunciar a la calidad del original.
+Qwopus3.8-27B-Coder-Flash-MLX-4bit es una conversión a formato MLX y cuantización de 4 bits del modelo Jackrong/Qwopus3.8-27B-Coder-Flash, un ajuste fino orientado a agentes de código sobre Qwen3.8-27B. El modelo original es un transformer denso de la familia Qwen3.5 con arquitectura híbrida DeltaNet, que combina capas de atención completa con capas de atención lineal recurrente, e incorpora la torre de visión del modelo base. Esta versión MLX está pensada para ejecutarse en Apple Silicon mediante la librería mlx-vlm y el backend MLX de SGLang.
 
-La relevancia de esta conversion esta en la receta de cuantizacion: no es un `mlx_vlm.convert` estandar, sino una conversion selectiva que mantiene en bf16 los escalares de compuerta del estado recurrente, las normas, las convoluciones y la torre de vision completa, y aplica 4 bits con grupo de 64 solo a las capas que lo toleran bien. El resultado ocupa unos 15 GB en disco, se ejecuta en aproximadamente 16 GB de memoria unificada mas KV cache y conserva, segun el autor, el rendimiento del modelo original en pruebas de MMLU, HumanEval y needle-in-a-haystack.
+El modelo resuelve el problema de desplegar un modelo de 27.000 millones de parámetros con capacidades de código, agentes, tool calling y visión en hardware de consumo con memoria unificada, manteniendo un equilibrio entre precisión y huella de memoria. Con 27.356.728.560 parámetros y un repositorio de 16,1 GB, la cuantización deja el modelo en aproximadamente 16 GB de memoria unificada más la caché KV, lo que permite su ejecución en equipos como un Mac con M4 Pro y 64 GB de RAM.
 
-El modelo resuelve el problema de desplegar localmente un asistente de programacion con vision, razonamiento siempre activo y soporte de agentes en equipos Apple con memoria unificada de 64 GB, sin depender de GPUs dedicadas. La licencia Apache-2.0 se mantiene en toda la cadena, desde Qwen hasta esta conversion.
+Su relevancia actual radica en que ofrece un pipeline validado de cuantización selectiva (bf16 para módulos sensibles, 4 bits para el resto) con pruebas de corrupción por capa, decodificación de aproximadamente 13-15 tokens por segundo en un solo usuario y soporte de contexto largo verificado hasta 128K tokens. Está publicado bajo licencia Apache-2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido denso clase Qwen3.5 con capas DeltaNet (atencion lineal recurrente) y capas de atencion completa, mas torre de vision |
+| Arquitectura | Transformer denso híbrido DeltaNet (Qwen3.5-class): 48 capas de atención lineal recurrente y 16 capas de atención completa, con torre de visión |
 | Parametros totales | 27.356.728.560 |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible en la informacion proporcionada (validado con needle-in-a-haystack hasta 64K) |
-| Tipos de cuantizacion | 4-bit affine con group size 64; 402 de 922 modulos cuantizados, 4,7 bits por peso de media; capas recurrentes criticas y torre de vision en bf16 |
-| Idiomas soportados | No disponible |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | Verificado hasta 128K tokens realizados (pruebas multi-needle a 32K, 64K y 128K) |
+| Tipos de cuantizacion | 4 bits afín con group size 64 (4,7 bits por peso en promedio); módulos selectivos en bf16 |
+| Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (formato MLX), libreria mlx-vlm |
+| Formato de pesos | safetensors (MLX), biblioteca mlx |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un transformer denso de la clase Qwen3.5 con atencion hibrida: 48 capas DeltaNet con estado recurrente y 16 capas de atencion completa, mas 64 capas MLP, lo que da un total de 128 capas internas segun el desglose de modulos de la model card. Incorpora una torre de vision de 27 bloques con merger y patch embedding, lo que habilita la pipeline image-text-to-text. El modelo base Qwopus3.8-27B-Coder-Flash es un fine-tune de Jackrong sobre unsloth/Qwen3.8-27B (a su vez derivado de Qwen/Qwen3.8-27B), orientado a tareas de codigo, uso de herramientas y agentes; la model card remite a la ficha del modelo fuente para la receta de destilacion y sus evaluaciones, que no se detallan aqui.
+El modelo base es un transformer denso de la familia Qwen3.5 con arquitectura híbrida DeltaNet: 64 capas en total, de las cuales 48 son capas de atención lineal recurrente (DeltaNet) y 16 son capas de atención completa. Incluye además la torre de visión del modelo Qwen3.8-27B original (27 bloques más merger y patch embed). El ajuste fino lo realizó Jackrong sobre unsloth/Qwen3.8-27B (Qwen/Qwen3.8-27B), orientado a tareas de código y agentes; la model card remite a la ficha del modelo fuente para la receta de destilación y sus evaluaciones, que no se detallan aquí.
 
-La innovacion tecnica de esta publicacion es la receta de cuantizacion. Se mantienen en bf16 los parametros `linear_attn.in_proj_a` e `in_proj_b` de las 48 capas DeltaNet (que portan los escalares de compuerta del estado recurrente), todas las normas, las `conv1d` y la torre de vision completa; se cuantizan a 4-bit g64 el `lm_head`, `embed_tokens`, las proyecciones q/k/v/o de las 16 capas de atencion completa, `in_proj_qkv`, `in_proj_z` y `out_proj` de las capas DeltaNet, y las compuertas gate/up/down de las 64 capas MLP. Cada capa cuantizada pasa un escaneo de corrupcion por capa sobre pesos, escalas y sesgos. Ademas se elimina el `processor_config.json` generado por transformers 5.x (que nombra `Qwen3VLImageProcessor` y `AutoProcessor` no resuelve) y se deja que `preprocessor_config.json` resuelva el procesador de imagen Qwen2VL.
+La contribución técnica de esta versión es la receta de cuantización: no es una conversión estándar de mlx_vlm. Los módulos que contienen escalares de compuerta de estado recurrente y la torre de visión se mantienen en bf16, mientras que el resto se cuantiza a 4 bits. En concreto, se mantienen en bf16 `linear_attn.in_proj_a` / `in_proj_b` (48 capas DeltaNet), todas las normas, `conv1d` y la torre de visión completa; se cuantizan `lm_head`, `embed_tokens`, las proyecciones q/k/v/o de atención (16 capas), `linear_attn.in_proj_qkv` / `in_proj_z` / `out_proj` y las compuertas y proyecciones MLP (64 capas). En total, 402 de 922 módulos cuantizados, con un escaneo de corrupción por capa sobre pesos, escalas y sesgos. También se elimina el `processor_config.json` que escribe transformers 5.x (que nombra `Qwen3VLImageProcessor` y `AutoProcessor` no puede resolver) y se usa `preprocessor_config.json` con el procesador de imagen Qwen2VL.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento con modo thinking siempre activo: el template de chat razona por defecto y `enable_thinking` en `chat_template_kwargs` no tiene efecto, igual que en el template upstream de Qwen3.8-27B.
-- Generacion de codigo, con validacion en HumanEval (90% en 20 tareas) y en tareas de SWE-bench Lite.
-- Tool calling y function calling, con pruebas de terminacion correcta en llamadas a herramientas (3/3).
-- Razonamiento multi-paso orientado a agentes, validado con el agente opencode en un smoke test sellado de SWE-bench Lite.
-- Vision: comprension de imagen (image probe calificado como STRONG) y de video, incluidas ambas direcciones de movimiento (video probe STRONG).
-- Capacidades multilingues: no disponibles en la informacion proporcionada.
-- Muestreo recomendado por el autor: temperatura 1.0, top-p 0.95, top-k 20, segun `generation_config.json`.
+- Generación de texto y razonamiento con modo de pensamiento siempre activo: la plantilla de chat razona por defecto y `enable_thinking` en `chat_template_kwargs` no tiene efecto.
+- Generación de código: validada con pruebas de codegen (2 tareas, 8 tests, 8/8) y parches SWE-bench Lite.
+- Tool calling y function calling: las pruebas básicas de llamada a herramientas terminan correctamente (3/3).
+- Capacidades de agente y razonamiento multi-paso: parches no vacíos en 23/26 instancias de SWE-bench Lite con opencode.
+- Visión: pipeline image-text-to-text, con pruebas de imagen y de vídeo (ambas direcciones de movimiento) calificadas como STRONG.
+- Contexto largo: recuperación multi-needle 6/6 a 32K, 64K y 128K tokens realizados.
+- Capacidades multilingües: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente de programacion local en Mac: con 16 GB de memoria unificada mas KV cache, el modelo se ejecuta en un M4 Pro de 64 GB y permite autocompletado, refactorizacion y explicacion de codigo sin conexion a servicios externos, manteniendo el 90% de HumanEval del modelo sin cuantizar.
-- Agente de resolucion de issues en repositorios: el soporte de tool calling y el modo thinking continuo encajan con flujos tipo opencode; el autor valido la generacion de parches no vacios sobre tres instancias de SWE-bench Lite (astropy 12907, 14182, 14365).
-- Revision de codigo con capturas de pantalla: la torre de vision en bf16 permite adjuntar imagenes de errores de compilacion, diagramas de arquitectura o interfaces de usuario y pedir al modelo que relacione el contenido visual con el codigo del repositorio.
-- Analisis de documentacion tecnica escaneada: la pipeline image-text-to-text admite OCR implicito y extraccion de fragmentos de codigo desde imagenes, util para migrar documentacion legacy a Markdown.
-- Procesamiento de videos de sesiones de depuracion: el modelo supera pruebas de video en ambas direcciones de movimiento, lo que permite resumir grabaciones de pantalla o tutoriales tecnicos y extraer los comandos ejecutados.
-- Automatizacion de tareas de larga duracion con contexto extenso: las pruebas needle-in-a-haystack pasan 4/4 a 1K, 4K, 16K y 64K, lo que lo hace adecuado para agentes que acumulan historial de conversacion y resultados de herramientas a lo largo de sesiones largas.
-- Despliegue en pipelines de CI/CD en hardware Apple: servido con el backend MLX de SGLang mediante el script `scripts/launch.sh qwen36-27b` del repositorio m4-sglang-inference, puede atender tareas de generacion de pruebas o parches en runners macOS.
+- Agente de código autónomo en local: el modelo puede ejecutar tareas de resolución de issues tipo SWE-bench (parches sobre ficheros canónicos) en un Mac con memoria unificada, gracias a su ventana de contexto verificada hasta 128K y a su soporte de tool calling.
+- Asistencia de programación en el IDE: con decodificación de 13-15 tokens por segundo en un solo usuario, es viable para autocompletado y generación de funciones con razonamiento previo, recomendando `max_tokens` generoso por el modo de pensamiento.
+- Automatización de pipelines CI/CD: puede integrarse en flujos que generen parches y los validen con pruebas, como demuestra el smoke test sealed de SWE-bench Lite con opencode.
+- Análisis de documentos técnicos con imágenes: al incorporar la torre de visión, puede procesar diagramas, capturas de pantalla o esquemas junto con texto en tareas de image-text-to-text.
+- Procesamiento de vídeo para inspección: las pruebas de vídeo en ambas direcciones de movimiento lo hacen apto para tareas de comprensión de secuencias visuales cortas.
+- Despliegue en estación de trabajo Apple Silicon: mediante mlx-vlm o el backend MLX de SGLang, permite servir el modelo en un equipo M4 Pro de 64 GB sin GPU dedicada.
+- Recuperación sobre repositorios grandes: la ventana de 128K y la recuperación multi-needle verificada permiten consultar bases de código extensas con múltiples referencias cruzadas.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor en Apple M4 Pro de 64 GB con SGLang y MLX, comparados con Qwen3.8-27B-4bit estandar en el mismo stack:
-
-| Prueba | Qwopus3.8-27B-Coder-Flash-MLX-4bit | Qwen3.8-27B-4bit (referencia) |
+| Benchmark | Este modelo (MLX 4-bit) | Qwen3.8-27B-4bit (stock) |
 |---|---|---|
-| MMLU (100 preguntas) | 83% | 84% |
-| HumanEval (20 tareas) | 90% | 90% |
-| LAB-Bench (50 tareas) | 37,5% | 38,7% |
-| Needle-in-a-haystack | 4/4 a 1K, 4K, 16K y 64K | 4/4 a 1K, 4K, 16K y 64K |
-| SWE-bench Lite (3 instancias, opencode) | 3/3 parches no vacios en el fichero canonico | No disponible |
-| Codegen probe (2 tareas, 8 tests) | 8/8 STRONG | No disponible |
-| Pruebas basicas, tool call y terminacion de thinking | 3/3 | No disponible |
-| Sonda de razonamiento sensible al contenido | VERIFIED | No disponible |
-| Image probe | STRONG | No disponible |
-| Video probe (ambas direcciones de movimiento) | STRONG | No disponible |
+| MMLU (100) | 83% | 84% |
+| HumanEval (20) | 90% | 90% |
+| LAB-Bench (50) | 37,5% | 38,7% |
+| Needle (1K, 4K, 16K, 64K) | 4/4 | 4/4 |
+| SWE-bench Lite 26 instancias (parches no vacíos) | 23/26 | 22/26 |
+| SWE-bench Lite 26 instancias (fichero canónico) | 22/26 | 21/26 |
+| Multi-needle 32K / 64K / 128K | 6/6 en cada nivel | 6/6 |
+| Decodificación tok/s @1K / 8K / 32K | 14,6 / 14,2 / 13,2 | igual |
+| Decodificación tok/s @128 → @32K | 15,0 → 13,4 | igual a Qwen3.6-27B-4bit |
 
-Rendimiento de decodificacion en un solo usuario: 14,6 tok/s a 1K de contexto, 14,2 tok/s a 8K y 13,2 tok/s a 32K, identico al de Qwen3.6-27B-4bit y Qwen3.8-27B-4bit en el mismo stack.
+Como referencia adicional, Qwen3.6-35B-A3B MoE obtiene 26/26 parches no vacíos en las mismas instancias de SWE-bench Lite. La puntuación de resolución con Docker de SWE-bench está pendiente según la model card.
 
 ## Requisitos de hardware
 
-- Memoria unificada estimada: aproximadamente 16 GB mas KV cache para inferencia en 4 bits; el repositorio ocupa 16,1 GB en disco y el autor indica unos 15 GB de pesos.
-- Hardware validado: Apple M4 Pro con 64 GB de memoria unificada.
-- No cabe en GPUs consumer de 8 o 12 GB; en GPUs dedicadas requeriria al menos 24 GB de VRAM para los pesos en 4 bits mas margen para KV, aunque no se han publicado pruebas en CUDA para esta conversion.
-- Despliegue recomendado: `mlx-vlm` (`python -m mlx_vlm.generate`) para uso interactivo y el backend MLX de SGLang para servicio, mediante `MODEL=<repo> scripts/launch.sh qwen36-27b` del repositorio mattbucci/m4-sglang-inference.
-- El repositorio incluye el conversor `scripts/quantize/convert_qwen36_inhouse.py` y los scripts de validacion.
-- Throughput medido: 14,6 tok/s a 1K, 14,2 tok/s a 8K y 13,2 tok/s a 32K en decodificacion con un solo usuario en M4 Pro.
+- VRAM/memoria unificada estimada: unos 16 GB de memoria unificada más la caché KV; el repositorio ocupa 16,1 GB en disco.
+- GPU recomendadas: Apple Silicon con memoria unificada; validado en Apple M4 Pro con 64 GB. No se proporcionan datos para GPU NVIDIA o AMD.
+- Cabe en GPU de consumo: sí, en equipos Apple Silicon con memoria unificada suficiente (validado con 64 GB); no hay datos para GPUs de consumo NVIDIA.
+- Opciones de despliegue: mlx-vlm (`python -m mlx_vlm.generate`) y backend MLX de SGLang mediante el repositorio mattbucci/m4-sglang-inference. No se mencionan llama.cpp, Ollama, vLLM ni TGI para este formato.
+- Latencia y throughput: 14,6 tok/s a 1K, 14,2 a 8K y 13,2 a 32K en un solo usuario; 15,0 tok/s a contexto 128 y 13,4 a 32K.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Vision | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | MMLU | HumanEval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwopus3.8-27B-Coder-Flash-MLX-4bit | 27,36B | No disponible (validado a 64K) | 4-bit g64 MLX, 4,7 bits/peso | Si | Apache-2.0 | Hugging Face, 0 descargas |
-| Qwen3.8-27B-4bit | 27B (clase) | No disponible | 4-bit | Si | Apache-2.0 | Referencia usada por el autor en el mismo stack |
-| Qwen3.6-27B-4bit | 27B (clase) | No disponible | 4-bit | No disponible | Apache-2.0 | Referencia usada por el autor en el mismo stack |
-| Jackrong/Qwopus3.8-27B-Coder-Flash | 27,36B | No disponible | bf16 (original) | Si | Apache-2.0 | Hugging Face, modelo base de esta conversion |
-
-Frente a los Qwen de 27B en 4 bits, esta conversion iguala el throughput de decodificacion en el mismo stack y queda a 1 punto porcentual en MMLU y a 1,2 puntos en LAB-Bench, con HumanEval identico al 90%. La diferencia principal es el fine-tune orientado a agentes de codigo y la receta de cuantizacion selectiva, que preserva la torre de vision y los escalares recurrentes en bf16.
+| Qwopus3.8-27B-Coder-Flash-MLX-4bit | 27,36B denso | 128K verificado | 83% | 90% | Apache-2.0 | MLX, safetensors |
+| Qwen3.8-27B-4bit (stock) | 27B denso | 128K verificado | 84% | 90% | no disponible en la información | 4 bits |
+| Qwen3.6-27B-4bit | 27B denso | no disponible | no disponible | no disponible | no disponible | 4 bits |
+| Qwen3.6-35B-A3B MoE | 35B totales (MoE) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- El modo thinking no se puede desactivar: `enable_thinking` en `chat_template_kwargs` no tiene efecto, por lo que todas las respuestas consumen tokens de razonamiento; el autor recomienda asignar un `max_tokens` generoso en peticiones de codigo.
-- La cuantizacion a 4 bits introduce una perdida medible: 83% frente a 84% en MMLU y 37,5% frente a 38,7% en LAB-Bench respecto al Qwen3.8-27B-4bit de referencia.
-- El smoke test de SWE-bench Lite cubre solo tres instancias y el de HumanEval veinte tareas; son muestras pequenas y no sustituyen una evaluacion completa.
-- El modelo esta pensado y validado exclusivamente para MLX en Apple Silicon; no hay datos publicados de rendimiento en CUDA, vLLM o llama.cpp para esta conversion.
-- Riesgo de alucinacion en tareas de codigo y agentes no cuantificado en la informacion disponible; como todo modelo generativo, puede producir parches sintacticamente validos pero semanticamente incorrectos.
-- Sesgos conocidos: no disponibles en la informacion proporcionada; al heredar el linaje Qwen3.8, arrastra los sesgos del modelo original y de sus datos de entrenamiento.
-- Idiomas soportados no declarados en la model card; no se garantiza un comportamiento multilingue mas alla del ingles tecnico observado en las pruebas.
-- Licencia Apache-2.0 en toda la cadena, lo que permite uso comercial, pero conviene verificar los terminos del modelo fuente Qwen3.8-27B por si imponen condiciones adicionales.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validacion independiente de la comunidad.
+- El modo de pensamiento está siempre activo y `enable_thinking` no tiene efecto; conviene asignar `max_tokens` generosos en peticiones de código para evitar respuestas truncadas.
+- La evaluación de SWE-bench Lite mide solo la generación de parches no vacíos y su coincidencia con el fichero canónico; la puntuación de resolución real con Docker está pendiente, por lo que el rendimiento en resolución efectiva no está confirmado.
+- La cuantización introduce una degradación leve: MMLU baja de 84% a 83% y LAB-Bench de 38,7% a 37,5% respecto al modelo stock de 4 bits.
+- El modelo está validado únicamente en Apple Silicon (M4 Pro, 64 GB) con mlx-vlm y SGLang MLX; no hay datos de rendimiento en otras plataformas.
+- Los idiomas soportados no están documentados en la información disponible.
+- Riesgo de alucinación y sesgos: no se documentan en la model card; deben asumirse los del modelo base Qwen3.8-27B.
+- La licencia Apache-2.0 permite uso comercial, pero se recomienda revisar la ficha del modelo base y del ajuste fino para condiciones adicionales.
+- La receta de cuantización es específica y no estándar; reproducirla requiere los scripts del repositorio mattbucci/m4-sglang-inference.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/mattbucci/Qwopus3.8-27B-Coder-Flash-MLX-4bit
-- Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash
-- Modelo del que deriva el fine-tune: https://huggingface.co/unsloth/Qwen3.8-27B
-- Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
-- Repositorio de inferencia y scripts de conversion: https://github.com/mattbucci/m4-sglang-inference
-- Libreria de inferencia: mlx-vlm (instalable via `pip install mlx-vlm`)
+- Hugging Face: https://huggingface.co/mattbucci/Qwopus3.8-27B-Coder-Flash-MLX-4bit
+- Modelo base (ajuste fino): https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash
+- Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo unsloth: https://huggingface.co/unsloth/Qwen3.8-27B
+- Repositorio de inferencia y scripts de cuantización: https://github.com/mattbucci/m4-sglang-inference
+- Perfil del autor del ajuste fino: https://huggingface.co/Jackrong

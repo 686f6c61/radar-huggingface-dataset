@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "hocdz754/zqcpub04c710",
+  "slug": "hocdz754-zqcpub04c710",
+  "author": "hocdz754",
+  "url": "https://huggingface.co/hocdz754/zqcpub04c710",
+  "created_at": "2026-11-24T06:55:15.000Z",
+  "updated_at": "2026-11-25T11:43:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "zq<img src=x onerror=window.__cf3=1>",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 259,
+  "trending_score": 0,
+  "parameters": 2,
+  "parameters_human": "2",
+  "storage_bytes": 698,
+  "storage_human": "698 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

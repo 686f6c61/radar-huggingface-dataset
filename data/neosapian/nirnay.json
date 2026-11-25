@@ -5,7 +5,7 @@
   "author": "NeoSapian",
   "url": "https://huggingface.co/NeoSapian/nirnay",
   "created_at": "2026-11-24T07:00:00.000Z",
-  "updated_at": "2026-11-24T07:23:21.000Z",
+  "updated_at": "2026-11-24T07:31:45.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 2,
   "trending_score": 0,
   "parameters": 1006672704,
   "parameters_human": "1.01B",
@@ -51,7 +51,7 @@
     "safetensors"
   ],
   "is_conversational": false,
-  "gated": true,
+  "gated": false,
   "disabled": false,
   "removed": false,
   "removed_at": null,

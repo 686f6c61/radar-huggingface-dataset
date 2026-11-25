@@ -5,7 +5,7 @@
   "author": "empiriolabsai",
   "url": "https://huggingface.co/empiriolabsai/speaker-age",
   "created_at": "2026-11-24T07:55:03.000Z",
-  "updated_at": "2026-11-24T08:23:41.000Z",
+  "updated_at": "2026-11-24T21:10:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",

@@ -5,7 +5,7 @@
   "author": "jjalora",
   "url": "https://huggingface.co/jjalora/diet-traj-pythia-410m-pythia-seed11",
   "created_at": "2026-10-24T17:34:53.000Z",
-  "updated_at": "2026-10-29T11:53:21.000Z",
+  "updated_at": "2026-11-24T22:41:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

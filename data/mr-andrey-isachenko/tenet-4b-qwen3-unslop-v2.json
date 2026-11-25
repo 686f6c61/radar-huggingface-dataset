@@ -1,0 +1,128 @@
+{
+  "schema": 2,
+  "id": "mr-andrey-isachenko/Tenet-4B-Qwen3-Unslop-v2",
+  "slug": "mr-andrey-isachenko-tenet-4b-qwen3-unslop-v2",
+  "author": "mr-andrey-isachenko",
+  "url": "https://huggingface.co/mr-andrey-isachenko/Tenet-4B-Qwen3-Unslop-v2",
+  "created_at": "2026-11-20T11:53:47.000Z",
+  "updated_at": "2026-11-23T20:22:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "text-generation",
+    "tenet",
+    "tenet-v2",
+    "lancet",
+    "unslop",
+    "reasoning",
+    "thinking",
+    "fp8",
+    "vllm",
+    "openrouter",
+    "grpo",
+    "abliterated",
+    "uncensored",
+    "agentic",
+    "tool-use",
+    "coding",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:quantized:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 179,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 13250443934,
+  "storage_human": "13.3 GB",
+  "context_length": 40960,
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "IFEval",
+      "metric": "Prompt-level Strict Accuracy",
+      "value": 0.805915
+    },
+    {
+      "task": null,
+      "dataset": "IFEval",
+      "metric": "Instruction-level Strict Accuracy",
+      "value": 0.859712
+    },
+    {
+      "task": null,
+      "dataset": "MATH-500",
+      "metric": "Accuracy",
+      "value": 0.702
+    },
+    {
+      "task": null,
+      "dataset": "MATH-500",
+      "metric": "Accuracy",
+      "value": 0.702
+    },
+    {
+      "task": null,
+      "dataset": "GSM8K",
+      "metric": "Strict Match",
+      "value": 0.88931
+    },
+    {
+      "task": null,
+      "dataset": "GSM8K",
+      "metric": "Accuracy",
+      "value": 0.780136
+    },
+    {
+      "task": null,
+      "dataset": "GSM8K",
+      "metric": "Flexible Extract",
+      "value": 0.780136
+    },
+    {
+      "task": null,
+      "dataset": "GPQA Diamond",
+      "metric": "Accuracy",
+      "value": 0.343434
+    },
+    {
+      "task": null,
+      "dataset": "GPQA Diamond",
+      "metric": "Zero-shot Accuracy",
+      "value": 0.343434
+    },
+    {
+      "task": null,
+      "dataset": "MMLU-Pro",
+      "metric": "Accuracy",
+      "value": 0.563492
+    }
+  ],
+  "sources": []
+}

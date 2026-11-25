@@ -5,7 +5,7 @@
   "author": "OralGPT",
   "url": "https://huggingface.co/OralGPT/OralDetect-Family",
   "created_at": "2026-08-14T04:02:53.000Z",
-  "updated_at": "2026-11-24T00:05:44.000Z",
+  "updated_at": "2026-11-24T04:50:19.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "object-detection",

@@ -2,95 +2,102 @@
 
 ## Resumen
 
-GLM-Z1-32B-0414-uncensored-heretic-v1-i1-GGUF es una distribucion en formato GGUF del modelo GLM-Z1-32B-0414-uncensored-heretic-v1, un ajuste fino "uncensored" del modelo GLM-Z1-32B-0414 desarrollado originalmente por Zhipu AI (Z.ai). El autor de esta publicacion, mradermacher, es un conocido empaquetador de cuantizaciones GGUF para llama.cpp, y en este caso distribuye una version cuantizada con tecnicas de imatrix (importance matrix) del modelo afinado por llmfan46.
+GLM-Z1-32B-0414-uncensored-heretic-v1-i1-GGUF es una cuantización GGUF del modelo GLM-Z1-32B-0414, un transformer denso de 32.566.081.536 parámetros desarrollado originalmente por Zhipu AI (familia GLM) y posteriormente modificado por llmfan46 para eliminar los mecanismos de rechazo y alineación de seguridad (técnicas de "abliteration" o "decensoring"). El resultado es un modelo de razonamiento de gran tamano con capacidades de generación de texto y código, pero sin las restricciones de contenido habituales.
 
-El modelo base GLM-Z1-32B es un transformer denso de aproximadamente 32.500 millones de parametros (32.566.081.536 exactamente, segun los pesos en safetensors del modelo origen), orientado a razonamiento y conversacion. La variante "heretic" y "uncensored" implica que se ha aplicado un proceso de eliminacion o reduccion de rechazos (refusals) mediante tecnicas de abliteration o fine-tuning especifico, lo que cambia el comportamiento del modelo ante peticiones que el modelo original rechazaria.
+La versión que nos ocupa ha sido cuantizada por mradermacher, un conocido publicador de cuantizaciones GGUF, utilizando el método i1 (imatrix) con el objetivo de preservar la calidad del modelo original en el menor tamano posible. El repositorio incluye un amplio abanico de cuantizaciones que van desde IQ1_S (7,4 GB) hasta Q6_K, lo que permite desplegar el modelo en hardware muy diverso, desde GPUs de consumo con 8-12 GB de VRAM hasta estaciones de trabajo con 24 GB o más.
 
-La relevancia de esta ficha es doble: por un lado documenta un modelo de razonamiento de 32B en formato GGUF con cuantizaciones que van desde IQ1_S hasta Q6_K, lo que permite ejecutarlo en hardware de consumo; por otro, advierte de que se trata de una modificacion no oficial, sin garantias de calidad, con licencia no declarada y con implicaciones eticas y de seguridad derivadas de la eliminacion de mecanismos de rechazo.
+El modelo es relevante para desarrolladores e investigadores que necesitan un LLM de razonamiento de 32B ejecutable localmente con llama.cpp u Ollama, sin las limitaciones de contenido de los modelos alineados. Su licencia MIT facilita el uso comercial, aunque la naturaleza "uncensored" del modelo implica riesgos importantes que deben evaluarse cuidadosamente antes de cualquier despliegue en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (basado en GLM-Z1-32B-0414); detalles de atencion no disponibles en la informacion proporcionada |
-| Parametros totales | 32.566.081.536 (32,57B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible en la informacion proporcionada (el modelo base GLM-Z1-32B-0414 declara contexto largo, pero no se confirma aqui) |
-| Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible (la model card no la declara; el modelo base GLM tiene su propia licencia, pero esta modificacion no la especifica) |
-| Formato de pesos | GGUF (con version de cuantizacion 2, output_tensor_quantised 1, convert_type hf) |
+| Arquitectura | Transformer denso (familia GLM-Z1) |
+| Parametros totales | 32.566.081.536 |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K, i1-IQ3_M (imatrix incluida) |
+| Idiomas soportados | zh, en |
+| Licencia | MIT |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna mas alla de que se trata de un transformer denso de 32,57B parametros. El modelo base GLM-Z1-32B-0414 es un modelo de razonamiento de Zhipu AI, pero esta publicacion no incluye datos sobre numero de tokens de entrenamiento, composicion del dataset, ni si hubo RLHF, DPO o procesos de abliteration. La model card solo documenta metadatos del proceso de cuantizacion: version 2 de quantize_version, output_tensor_quantised activado, convert_type hf (conversion desde Hugging Face) y el uso de cuantizaciones ponderadas con imatrix.
+La informacion disponible no detalla la arquitectura interna del modelo base GLM-Z1-32B-0414 más allá de que se trata de un transformer denso de 32.566.081.536 parámetros. La familia GLM-Z1 de Zhipu AI se caracteriza por incorporar capacidades de razonamiento extendido (modo "thinking"), pero no se dispone en la documentacion proporcionada de datos concretos sobre el número de tokens de entrenamiento, la composición del dataset ni las técnicas de alineación empleadas (RLHF, DPO, etc.).
 
-El elemento diferenciador declarado es el uso de imatrix (importance matrix) para generar las cuantizaciones, una tecnica que mejora la calidad de los formatos de baja precision (IQ1, IQ2, IQ3) al ponderar los tensores segun su importancia. El proceso de "uncensored heretic" se aplico en el modelo origen (llmfan46/GLM-Z1-32B-0414-uncensored-heretic-v1), no en esta publicacion, que solo lo empaqueta en GGUF.
+La modificación "uncensored-heretic-v1" realizada por llmfan46 sobre el modelo base consiste en la eliminación de los mecanismos de rechazo y alineación de seguridad, presumiblemente mediante técnicas de abliteration (ablación de direcciones de activación asociadas al rechazo) o fine-tuning con datasets "decensored". La cuantización i1 de mradermacher utiliza una matriz de importancia (imatrix) generada a partir del modelo base para optimizar la asignación de bits por tensor, lo que según el autor mejora la calidad frente a cuantizaciones estáticas del mismo tamano.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno (tag "conversational").
-- Razonamiento y resolucion de problemas, heredado del modelo base GLM-Z1-32B orientado a reasoning.
-- Generacion de codigo y matematicas (capacidad esperable del modelo base, no verificada en esta publicacion).
-- Comportamiento "uncensored": menor tasa de rechazos ante peticiones que el modelo original rechazaria, debido al ajuste heretic/abliteration.
-- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que sugiere uso via API compatible con OpenAI en plataformas de despliegue.
-- Soporte de tool calling y function calling: no confirmado en la informacion proporcionada.
-- Capacidades multimodales (vision, audio): no disponibles.
-- Capacidades multilingues: no disponibles.
+- Generación de texto conversacional multi-turno en chino e inglés.
+- Razonamiento paso a paso con modo "thinking" (heredado de la familia GLM-Z1).
+- Generación y explicación de código en lenguajes habituales.
+- Razonamiento matemático y resolución de problemas.
+- Respuestas sin restricciones de contenido (modelo "uncensored").
+- Capacidades multilingües limitadas a chino e inglés según la model card.
+- No se ha confirmado soporte de tool calling o function calling en la informacion disponible.
+- No se ha confirmado soporte de visión, audio ni otras modalidades.
+- Compatible con endpoints (tag "endpoints_compatible") y con el ecosistema transformers/llama.cpp.
 
 ## Casos de uso
 
-- Investigacion sobre alineacion y seguridad: el modelo permite estudiar el efecto de la abliteration comparando sus respuestas con las del GLM-Z1-32B original, util para equipos que investigan mecanismos de rechazo y sesgos.
-- Despliegue local en estaciones de trabajo: con cuantizaciones Q4_K_M o Q5_K_M, el modelo cabe en GPUs de consumo de 24 GB (RTX 3090/4090) y permite experimentar con un modelo de razonamiento de 32B sin depender de la nube.
-- Prototipado de asistentes conversacionales: la naturaleza conversacional del tag y el formato GGUF permiten integrarlo en llama.cpp u Ollama para pruebas de concepto de chatbots multi-turno.
-- Generacion de texto creativo sin filtros: escritores e investigadores pueden usarlo para explorar narrativa o dialogos que el modelo base rechazaria, asumiendo la responsabilidad editorial del contenido.
-- Evaluacion comparativa de cuantizaciones: el amplio rango de cuantizaciones (desde IQ1_S hasta Q6_K) permite medir la degradacion de calidad frente al modelo en FP16, util para estudiar el impacto de la cuantizacion en modelos de razonamiento.
-- Analisis de sesgos y contenido toxico: al reducir los rechazos, el modelo puede emplearse en pipelines de red-teaming para generar respuestas que sirvan de base a clasificadores de seguridad.
+- Investigación sobre alineación y seguridad: el modelo permite estudiar el comportamiento de un LLM sin mecanismos de rechazo, comparándolo con su versión alineada para analizar sesgos, respuestas a prompts sensibles y eficacia de las técnicas de abliteration.
+- Generación de código en local: con cuantizaciones Q4_K_M (19,8 GB) o Q5_K_M (23,2 GB) puede ejecutarse en una RTX 4090 o A100 para asistencia de programación offline, sin dependencia de APIs externas.
+- Razonamiento matemático en entornos aislados: su modo de razonamiento extendido lo hace útil para resolver problemas paso a paso en escenarios air-gapped donde no se permite enviar datos a la nube.
+- Procesamiento de documentación técnica en chino e inglés: adecuado para resumir, traducir y extraer información de textos técnicos en ambos idiomas.
+- Experimentación con cuantizaciones extremas: el repositorio ofrece desde IQ1_S (7,4 GB) hasta Q6_K, lo que permite estudiar la degradación de calidad en función de la compresión en hardware de gama baja.
+- Desarrollo de personajes o narrativa sin filtros: para proyectos creativos que requieran respuestas sin restricciones temáticas, con la advertencia de los riesgos asociados.
+- Evaluación de riesgos en pipelines de moderación: usar el modelo como generador adversarial para probar sistemas de moderación de contenido.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de MMLU, HumanEval, GSM8K ni comparaciones con el modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (32,57B parametros):
-  - Q4_K_M: aproximadamente 19-21 GB de VRAM.
-  - Q5_K_M: aproximadamente 22-24 GB.
-  - Q6_K: aproximadamente 26-28 GB.
-  - IQ2/IQ3: aproximadamente 10-15 GB, con perdida notable de calidad.
-  - IQ1_S: aproximadamente 7-9 GB, calidad muy degradada.
-- GPU recomendadas: A100 40/80 GB o H100 para FP16 y cuantizaciones altas; RTX 4090 (24 GB) o RTX 3090 (24 GB) para Q4_K_M y Q5_K_M; GPUs de 16 GB solo con cuantizaciones IQ2/IQ3.
-- Cabe en GPU de consumo: si, en RTX 3090/4090 con Q4_K_M o Q5_K_M; en GPUs de 16 GB (RTX 4080, 4070 Ti Super) solo con cuantizaciones bajas.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con endpoints (tag "endpoints_compatible"); vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que requeririan conversion a safetensors.
+- VRAM estimada para inferencia (aproximada, según tamano de cuantización):
+  - i1-IQ1_S: ~7,4 GB de pesos, requiere ~9-10 GB de VRAM con contexto moderado.
+  - i1-IQ2_M: ~11,4 GB de pesos, requiere ~13-14 GB de VRAM.
+  - i1-Q3_K_M: ~16,0 GB de pesos, requiere ~18 GB de VRAM.
+  - i1-Q4_K_M: ~19,8 GB de pesos, requiere ~22 GB de VRAM (recomendada por el autor como "fast, recommended").
+  - i1-Q5_K_M: ~23,2 GB de pesos, requiere ~25-26 GB de VRAM.
+  - i1-Q6_K: disponible en el repositorio, requiere ~28 GB o más.
+- GPU recomendadas:
+  - RTX 4090 (24 GB): Q4_K_M o Q5_K_S con contexto moderado.
+  - A100 40 GB / H100 80 GB: Q5_K_M o Q6_K con contexto largo.
+  - RTX 3090 (24 GB): Q4_K_M.
+  - GPUs de 8-12 GB (RTX 3060 12 GB, RTX 4060 Ti 16 GB): solo cuantizaciones IQ1/IQ2, con calidad degradada.
+- Cabe en GPU de consumo: sí, en RTX 4090/3090 con Q4_K_M; en GPUs de 12 GB solo con cuantizaciones IQ1/IQ2 de baja calidad.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y cualquier runtime compatible con GGUF. El tag "endpoints_compatible" sugiere compatibilidad con servidores de inferencia tipo OpenAI-compatible.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| GLM-Z1-32B-0414-uncensored-heretic-v1-i1-GGUF (este) | 32,57B | No disponible | GGUF | No disponible | Cuantizaciones imatrix, ajuste uncensored |
-| GLM-Z1-32B-0414 (original, Zhipu AI) | 32B | No disponible en esta ficha | safetensors | Licencia GLM (consultar) | Modelo base con alineacion estandar |
-| Qwen2.5-32B-Instruct | 32,5B | 128K (segun documentacion publica de Qwen) | safetensors, GGUF | Apache 2.0 | Alternativa densa de tamano similar con licencia permisiva |
-| DeepSeek-R1-Distill-Qwen-32B | 32,8B | 128K (segun documentacion publica) | safetensors, GGUF | MIT (modelo destilado) | Modelo de razonamiento de tamano comparable |
+| GLM-Z1-32B-0414-uncensored-heretic-v1-i1-GGUF (este) | 32,6B | no disponible | MIT | GGUF | Version sin censura, cuantizada con imatrix |
+| GLM-Z1-32B-0414 (original, Zhipu AI) | 32,6B | no disponible | no disponible | safetensors | Modelo base alineado, con rechazos de seguridad |
+| Qwen2.5-32B-Instruct | 32,5B | 128K (según documentación pública) | Apache 2.0 | safetensors, GGUF | Alternativa densa de tamano similar, alineada |
+| DeepSeek-R1-Distill-Qwen-32B | 32,8B | 128K (según documentación pública) | MIT | safetensors, GGUF | Modelo de razonamiento destilado de tamano comparable |
 
-Nota: los datos de contexto y licencia de los modelos comparativos provienen de su documentacion publica y no de la informacion proporcionada en esta busqueda; verificar antes de uso en produccion.
+Nota: los datos de contexto y rendimiento de los modelos comparativos provienen de documentación pública general y no de la informacion proporcionada en esta ficha; verificar antes de usarlos en producción.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: no se especifica la licencia de esta publicacion ni del modelo origen, lo que impide confirmar si el uso comercial esta permitido. Contactar con el autor antes de cualquier despliegue productivo.
-- Modelo "uncensored": la eliminacion de rechazos implica que el modelo puede generar contenido danino, ilegal o eticamente problematico; no es apto para aplicaciones de cara al publico sin capas de moderacion adicionales.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje de 32B, agravado por la cuantizacion en formatos bajos (IQ1, IQ2).
-- Degradacion por cuantizacion: las cuantizaciones IQ1_S, IQ2_XXS e IQ2_XS pueden degradar significativamente el razonamiento y la coherencia; no recomendadas para tareas criticas.
-- Idiomas no declarados: no se confirma el soporte multilingue ni la calidad en castellano.
-- Sin benchmarks: no hay evidencia publicada de rendimiento que permita comparar con el modelo base.
-- Procedencia no oficial: es una modificacion de terceros sobre un modelo de terceros; no hay garantia de integridad ni de soporte.
-- Contexto no confirmado: aunque el modelo base GLM-Z1-32B declara contexto largo, esta publicacion no lo especifica; verificar en la configuracion del GGUF antes de disenar flujos con contexto extenso.
+- Modelo "uncensored": no aplica filtros de seguridad, por lo que puede generar contenido ofensivo, ilegal o peligroso. No apto para aplicaciones orientadas al público sin moderación adicional.
+- Riesgo elevado de alucinación, especialmente en cuantizaciones bajas (IQ1, IQ2) donde la degradación de calidad es significativa.
+- Idiomas soportados limitados a chino e inglés; el rendimiento en castellano no está garantizado ni documentado.
+- Longitud de contexto no documentada en la informacion disponible; verificar en el modelo base antes de usarlo con contextos largos.
+- La licencia MIT del repositorio de cuantización no exime de responsabilidades legales por el uso del contenido generado; el modelo base puede tener condiciones adicionales no reflejadas.
+- Las cuantizaciones por debajo de Q3 pueden presentar degradación notable en razonamiento y coherencia.
+- No se ha verificado soporte de tool calling ni de agentes; no asumir su disponibilidad en producción.
+- El repositorio tiene 350,1 GB, lo que requiere espacio en disco considerable si se descargan varias cuantizaciones.
+- Fecha de creación del repositorio (2026-11-22) posterior a la fecha actual de muchos entornos; verificar disponibilidad y procedencia.
 
 ## Enlaces
 
-- Hugging Face (este modelo): https://huggingface.co/mradermacher/GLM-Z1-32B-0414-uncensored-heretic-v1-i1-GGUF
-- Modelo origen del ajuste uncensored: https://huggingface.co/llmfan46/GLM-Z1-32B-0414-uncensored-heretic-v1
-- Perfil del autor de la cuantizacion: https://huggingface.co/mradermacher
-- Modelo base GLM-Z1-32B-0414 (Zhipu AI): no disponible en la informacion proporcionada (buscar en Hugging Face bajo el organizacion de Zhipu AI / Z.ai)
-- llama.cpp (runtime GGUF): https://github.com/ggml-org/llama.cpp
-- Ollama: https://ollama.com
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/GLM-Z1-32B-0414-uncensored-heretic-v1-i1-GGUF
+- Modelo base (llmfan46): https://huggingface.co/llmfan46/GLM-Z1-32B-0414-uncensored-heretic-v1
+- Cuantizaciones estáticas del mismo autor: https://huggingface.co/mradermacher/GLM-Z1-32B-0414-uncensored-heretic-v1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#GLM-Z1-32B-0414-uncensored-heretic-v1-i1-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

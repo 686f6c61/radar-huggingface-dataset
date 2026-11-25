@@ -23,8 +23,8 @@
     "blackwell",
     "text-generation",
     "conversational",
-    "base_model:local-inference-lab/GLM-5.2-NVFP4",
-    "base_model:quantized:local-inference-lab/GLM-5.2-NVFP4",
+    "base_model:zai-org/GLM-5.2",
+    "base_model:quantized:zai-org/GLM-5.2",
     "license:mit",
     "modelopt",
     "region:us"

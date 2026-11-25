@@ -1,0 +1,266 @@
+{
+  "schema": 2,
+  "id": "zero-runtime/ZRT-ASR-Hinglish",
+  "slug": "zero-runtime-zrt-asr-hinglish",
+  "author": "zero-runtime",
+  "url": "https://huggingface.co/zero-runtime/ZRT-ASR-Hinglish",
+  "created_at": "2026-11-19T06:51:10.000Z",
+  "updated_at": "2026-11-25T11:59:13.000Z",
+  "license": "zero-runtime-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "zeroruntime",
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "zeroruntime",
+    "automatic-speech-recognition",
+    "speech-to-text",
+    "asr",
+    "stt",
+    "streaming",
+    "real-time",
+    "low-latency",
+    "hinglish",
+    "code-switching",
+    "code-mixing",
+    "english",
+    "hindi",
+    "multilingual",
+    "indian-english",
+    "telephony",
+    "8khz",
+    "voice-agents",
+    "conversational-ai",
+    "contact-center",
+    "speech",
+    "audio",
+    "hi",
+    "en",
+    "license:other",
+    "model-index",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26362357,
+  "storage_human": "26 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "AMI-Cleaned",
+      "metric": "WER (Open ASR Leaderboard scorer)",
+      "value": 14.84
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "AMI-Cleaned",
+      "metric": "WER, beam search (Open ASR Leaderboard scorer)",
+      "value": 13.19
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Earnings22-Cleaned-AA-chunked",
+      "metric": "WER (Open ASR Leaderboard scorer)",
+      "value": 13.48
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Earnings22-Cleaned-AA-chunked",
+      "metric": "WER, beam search (Open ASR Leaderboard scorer)",
+      "value": 12.27
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "GigaSpeech-Cleaned",
+      "metric": "WER (Open ASR Leaderboard scorer)",
+      "value": 9.86
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "GigaSpeech-Cleaned",
+      "metric": "WER, beam search (Open ASR Leaderboard scorer)",
+      "value": 9.32
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "SPGISpeech",
+      "metric": "WER (Open ASR Leaderboard scorer)",
+      "value": 3.29
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "SPGISpeech",
+      "metric": "WER, beam search (Open ASR Leaderboard scorer)",
+      "value": 3.19
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "URGENT2024",
+      "metric": "WER (Open ASR Leaderboard scorer)",
+      "value": 18.32
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "URGENT2024",
+      "metric": "WER, beam search (Open ASR Leaderboard scorer)",
+      "value": 17.53
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Voice Arena Monsoon (en-IN)",
+      "metric": "WER (Open ASR Leaderboard scorer)",
+      "value": 6.41
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Voice Arena Monsoon (en-IN)",
+      "metric": "WER, beam search (Open ASR Leaderboard scorer)",
+      "value": 5.77
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "VoxPopuli-AA-Cleaned",
+      "metric": "WER (Open ASR Leaderboard scorer)",
+      "value": 4.08
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "VoxPopuli-AA-Cleaned",
+      "metric": "WER, beam search (Open ASR Leaderboard scorer)",
+      "value": 3.74
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Open ASR Leaderboard, average of the 7 public English sets",
+      "metric": "WER (Open ASR Leaderboard scorer)",
+      "value": 10.04
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Open ASR Leaderboard, average of the 7 public English sets",
+      "metric": "WER, beam search (Open ASR Leaderboard scorer)",
+      "value": 9.29
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Kathbath (Hindi)",
+      "metric": "WER (our scorer)",
+      "value": 10.16
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Kathbath (Hindi)",
+      "metric": "WER (benchmark publisher's scorer)",
+      "value": 15.9
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (Hindi)",
+      "metric": "WER (our scorer)",
+      "value": 10.6
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (Hindi)",
+      "metric": "WER (benchmark publisher's scorer)",
+      "value": 18
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "MUCS 2021 (Hindi)",
+      "metric": "WER (our scorer)",
+      "value": 10.82
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "MUCS 2021 (Hindi)",
+      "metric": "WER (benchmark publisher's scorer)",
+      "value": 15.51
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "CS-FLEURS (Hindi-English)",
+      "metric": "WER (our scorer)",
+      "value": 8.85
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "CS-FLEURS (Hindi-English)",
+      "metric": "WER (benchmark publisher's scorer)",
+      "value": 13.87
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "IndicVoices (Hindi, 500 clips)",
+      "metric": "WER (our scorer)",
+      "value": 15.94
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "IndicVoices (Hindi, 500 clips)",
+      "metric": "WER (benchmark publisher's scorer)",
+      "value": 25.3
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "CoSHE-Eval (Hinglish, 500 clips)",
+      "metric": "WER (our scorer)",
+      "value": 14.15
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "CoSHE-Eval (Hinglish, 500 clips)",
+      "metric": "WER (benchmark publisher's scorer)",
+      "value": 17.79
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "HiACC adult (Hinglish)",
+      "metric": "WER (our scorer)",
+      "value": 12.67
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "HiACC child (Hinglish)",
+      "metric": "WER (our scorer)",
+      "value": 10.9
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Vistaar, average of 7 Hindi sets",
+      "metric": "WER (our scorer)",
+      "value": 13.39
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Svarah (Indian-accented English)",
+      "metric": "WER (our scorer)",
+      "value": 10.55
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Svarah (Indian-accented English)",
+      "metric": "WER (Svarah's own scripts)",
+      "value": 11.61
+    }
+  ],
+  "sources": []
+}

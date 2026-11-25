@@ -2,108 +2,92 @@
 
 ## Resumen
 
-C-LPNCM-2.8B (Calibrated Looped-Pointer Next-Concept Model) es un modelo de lenguaje de 2.890 millones de parámetros físicos desarrollado por el usuario entity2260 y publicado en Hugging Face bajo licencia MIT. Se presenta como una alternativa a los LLM autorregresivos token a token: en lugar de predecir la siguiente palabra, agrupa los tokens en parches semánticos de longitud variable mediante detección de picos de entropía de Shannon, los cuantiza en una jerarquía discreta de conceptos (RVQ-FSQ) y razona de forma autorregresiva sobre esos conceptos antes de decodificar los tokens superficiales en paralelo.
+C-LPNCM-2.8B (Calibrated Looped-Pointer Next-Concept Model) es un modelo de lenguaje de 2,89 mil millones de parámetros físicos desarrollado por el usuario entity2260 y publicado en Hugging Face bajo licencia MIT. Se construye sobre el paradigma de Next-Concept Modeling (NCM) descrito en el paper arXiv:2610.14162, y propone una alternativa a la generación token a token: comprime secuencias en "parches semánticos" mediante detección de picos de entropía de Shannon, los cuantiza con una jerarquía multiescala (Cosine VQ + 4 niveles FSQ) y razona de forma autorregresiva en ese espacio de conceptos.
 
-La arquitectura se organiza en cuatro torres Transformer puras (sin difusión): un codificador de tokens y parches, un núcleo latente calibrado con enrutamiento epistémico, un refinador de equilibrio con pesos compartidos que itera ocho veces (de ahí los ~3.6B de parámetros de cómputo efectivo) y un decodificador dual de superficie que combina proyección de vocabulario con una red de punteros causal. El modelo emplea GQA, RoPE, RMSNorm, SwiGLU y atención exclusiva auto-guardada, y se distribuye en bfloat16 con un peso en disco de 5,38 GB.
+La arquitectura es un transformer puro de tres torres con cuatro módulos: un codificador local de tokens y parches, un núcleo latente causal de 20 capas con un enrutador epistémico calibrado (Brier), un refinador de equilibrio con pesos atados que itera hasta 8 veces, y un decodificador de superficie de doble ruta que combina punteros de concepto y copia causal verbatim. El modelo declara un cómputo efectivo de aproximadamente 3,60B de parámetros gracias a los bucles de refinamiento con pesos compartidos.
 
-Es relevante ahora porque explora una línea poco transitada —razonamiento sobre conceptos discretos con calibración de confianza y abstención— frente al consenso dominante de transformers autorregresivos token a token o modelos de difusión continua. No obstante, la información pública disponible es muy limitada: cero descargas, cero likes, sin resultados de benchmarks verificados más allá de las pérdidas de entrenamiento y sin datos de idiomas soportados.
+Su relevancia radica en dos ideas: el cómputo de test-time adaptativo (entre 1 y 8 bucles según la dificultad del span) y la capacidad de abstención epistémica ante entradas fuera de distribución. Con 2,94B de parámetros reales en safetensors, 5,38 GB en disco y un requisito de VRAM de 5,88 GB en bfloat16, está pensado para ejecutarse en una sola GPU de consumo o profesional de gama media.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | `CLPNCMForCausalLM` (Transformer puro de 4 torres, sin difusión) |
-| Parámetros totales | 2.938.013.606 (2,89B físicos según safetensors) |
-| Parámetros activos | No es MoE; ~3,60B de cómputo efectivo por 8 bucles de refinamiento con pesos compartidos |
-| Longitud de contexto | No disponible (ventana de codificación de tokens W=128; contexto global no especificado) |
-| Tipos de cuantización | No disponible (pesos publicados en bfloat16; no se documentan GGUF ni otras) |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer puro de 3 torres y 4 módulos (codificador de tokens/parches, núcleo latente causal, refinador de equilibrio con pesos atados, decodificador de superficie de doble ruta); sin difusión |
+| Parametros totales | 2.938.013.606 (2,94B según safetensors; la model card declara 2.887.665.414 físicos y ~3,60B efectivos) |
+| Parametros activos | No aplica (no es MoE); ~3,60B de cómputo efectivo con hasta 8 bucles de refinamiento con pesos atados |
+| Longitud de contexto | No disponible de forma explícita; ventana local de codificación W=128 tokens y parches de concepto de 1 a 8 tokens |
+| Tipos de cuantizacion | Pesos publicados en bfloat16; no se documentan variantes GGUF, GPTQ ni AWQ |
+| Idiomas soportados | Inglés (en) según la model card; el campo de idiomas de Hugging Face figura como no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors (2 archivos, 5,38 GB en bfloat16) |
-| Vocabulario | 30.522 tokens |
-| Codebook de conceptos | 16.384 códigos VQ coseno con actualizaciones EMA |
-| Jerarquía FSQ | 4 niveles en cascada × [8, 8, 8, 6, 5] (15.360 estados por nivel) |
-| Tamaño de parche conceptual | 1 ≤ S_m ≤ 8 tokens (umbral de entropía τ_H = 2,4 bits) |
-| Atención | GQA, Guarded Exclusive Self-Attention (XSA), compuertas sigmoideas |
-| Posición y normalización | RoPE 1D (θ=10000), RMSNorm pre-capa, SwiGLU |
+| Formato de pesos | safetensors (2 archivos, 5,38 GB en disco) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se compone de cuatro módulos. El módulo 1 (6 capas, d=1536, 24/6 cabezas GQA) es un codificador causal de ventana deslizante que detecta fronteras de concepto por entropía y cuantiza los parches con un VQ coseno más cuatro niveles FSQ. Un adaptador isométrico proyecta de 1536 a 3072 dimensiones. El módulo 2 (20 capas, d=3072, 24/6 cabezas) es el núcleo latente calibrado, con cabeceras de política, longitud de span, confianza Brier y verificador de valor. El módulo 3 (4 capas repetidas 8 veces, d=1536, 24/24 cabezas) es un refinador de punto fijo con inyección de ancla, atención cruzada causal y compuerta de parada ACT, regularizado con un objetivo de contracción de Banach cuyo incumplimiento empírico reportado es 0,0000. El módulo 4 (6+2 capas) decodifica en paralelo combinando una proyección de vocabulario con una red de punteros causal que copia spans previos, mediada por una compuerta dinámica de copia.
+El modelo se organiza en cuatro módulos. El módulo 1 es un codificador causal de ventana local (6 capas, dimensión 1536, GQA 24Q/6KV) que detecta fronteras de parche mediante picos de entropía de Shannon (umbral τ_H = 2,4 bits) y cuantiza cada parche con un codebook Cosine VQ de 16.384 códigos y cuatro niveles FSQ en cascada (8, 8, 8, 6, 5 estados por nivel). Mantiene además un banco de memoria sin cuantizar (K_raw, V_raw) para copia verbatim. Un adaptador isométrico de una capa proyecta de 1536 a 3072 dimensiones.
 
-El entrenamiento se organiza en tres etapas sobre una NVIDIA A100-SXM4-80GB en bfloat16 con TF32 y AdamW fusionado. La etapa 1 (786M parámetros activos, 2.000 pasos, 131,1M tokens) entrena el autoencoder RVQ-FSQ y el puntero, con pérdida de validación de 1,9649. La etapa 2 (2,28B parámetros activos, 4.000 pasos, 131,1M tokens) entrena el núcleo latente y los bucles de equilibrio, con pérdida total de entrenamiento de 14,0389 y pérdida CE de concepto grueso truncada en la información disponible. No se documenta la etapa 3 ni el volumen total de tokens de entrenamiento, ni si hubo RLHF o DPO (aunque las etiquetas mencionan GRPO).
+El módulo 2 es el núcleo latente causal (20 capas, dimensión 3072, GQA 24Q/6KV) que razona autorregresivamente sobre conceptos e incorpora un enrutador de decisión epistémica con calibración Brier, política de longitud de span y verificador de valor. El módulo 3 es el refinador de equilibrio: 4 capas con pesos atados iteradas hasta 8 veces (32 capas efectivas), con inyección de anclas, atención cruzada causal a los estados del núcleo y halting adaptativo estilo ACT. El módulo 4 decodifica tokens de superficie en paralelo combinando punteros de concepto y copia causal desde el banco de memoria, con compuerta dinámica g ∈ [0, 1] y fallback `<NULL_PTR>`.
+
+La model card menciona entrenamiento con GRPO (optimización de política con recompensas) y actualizaciones EMA en el codebook VQ, pero no detalla el volumen de tokens, la composición del dataset ni las fases de alineación. No se especifican datos de preentrenamiento ni de ajuste fino supervisado.
 
 ## Capacidades
 
-- Generación de texto mediante decodificación paralela de tokens a partir de conceptos latentes.
-- Razonamiento sobre conceptos discretos agrupados en parches semánticos de longitud variable.
-- Enrutamiento epistémico con estimación de confianza calibrada (Brier) y abstención cuando la confianza cae por debajo de 0,40.
-- Asignación dinámica de presupuesto de cómputo: entre 1 y 8 iteraciones del refinador según la dificultad del concepto.
-- Copia de spans previos mediante red de punteros causal con compuerta dinámica.
-- Extracción de características (`feature-extraction` entre las etiquetas del modelo).
-- Capacidades multilingües: no disponible.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible explícitamente.
-- Modo thinking, visión o audio: no disponible.
+- Generación de texto autorregresiva en espacio de conceptos con decodificación paralela de spans.
+- Razonamiento calibrado: enrutador epistémico que decide entre ruta rápida (1-2 bucles), verificación deliberativa (4 haces, hasta 8 bucles) o abstención ante entradas no verificables.
+- Copia verbatim sin pérdida mediante banco de memoria sin cuantizar y puntero causal, útil para citas literales y extracción.
+- Cómputo de test-time adaptativo (K* entre 1 y 8) según la dificultad del span.
+- Abstención ante entradas fuera de distribución (la model card declara 100 % de abstención OOD y error Brier de 0,0216).
+- Capacidades multilingües: solo se declara inglés.
+- Tool calling / function calling: no documentado.
+- Soporte de agentes y razonamiento multi-paso: no documentado explícitamente.
+- Visión, audio o modo thinking explícito: no disponibles.
 
 ## Casos de uso
 
-- Investigación en arquitecturas alternativas a la autorregresión token a token: el modelo sirve como banco de pruebas para estudiar razonamiento sobre conceptos discretos, cuantización RVQ-FSQ y refinamiento iterativo con pesos compartidos en un entorno de 2,89B parámetros.
-- Experimentos de calibración y abstención: la cabecera Brier y el umbral de abstención de 0,40 permiten investigar cómo un modelo decide no responder, útil en entornos donde el silencio es preferible a una alucinación.
-- Extracción de características y embeddings conceptuales: la jerarquía discreta de conceptos puede emplearse para agrupar o recuperar documentos por similitud semántica en pipelines de búsqueda.
-- Prototipado de decodificación eficiente: el decodificador paralelo con puntero causal permite medir latencias frente a la generación token a token en tareas de copia y resumen extractivo.
-- Investigación sobre presupuesto adaptativo de cómputo: el bucle de refinamiento con parada ACT es adecuado para estudiar trade-offs entre calidad y coste por token en hardware modesto.
-- Docencia y reproducción académica: con 5,88 GB de VRAM en bfloat16 cabe en una T4 o L4, lo que facilita reproducir experimentos de arquitectura sin clústeres grandes.
+- Extracción y copia literal de fragmentos: el banco (K_raw, V_raw) y el puntero causal permiten reproducir texto exacto sin degradación por cuantización, adecuado para tareas de citación y extracción de entidades en documentos.
+- Clasificación con abstención: el enrutador epistémico calibrado permite descartar entradas dudosas en pipelines de moderación o triaje, derivando a revisión humana cuando la confianza es baja.
+- Razonamiento con presupuesto variable: en entornos con latencia estricta se puede forzar la ruta de 1-2 bucles para consultas simples y reservar los 8 bucles para casos complejos.
+- Prototipado e investigación en NCM: sirve como referencia reproducible para estudiar decodificación en espacio de conceptos, cuantización RVQ-FSQ y refinamiento con pesos atados.
+- Despliegue en una sola GPU: con 5,88 GB de VRAM en bfloat16 cabe en una T4, L4 o A100, lo que facilita entornos de desarrollo y demos.
+- Generación de texto en inglés con contexto local: tareas de continuación y resumen de pasajes cortos donde la ventana local de 128 tokens y los parches de hasta 8 tokens son suficientes.
+- Evaluación de calibración: el error Brier reportado y la abstención OOD lo hacen útil como banco de pruebas para métricas de incertidumbre.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card solo reporta métricas de entrenamiento y validación:
-
-| Métrica (etapa) | Valor |
-|---|---|
-| Etapa 1 — pérdida total de entrenamiento | 1,9731 |
-| Etapa 1 — pérdida CE superficial | 1,4390 |
-| Etapa 1 — pérdida de compromiso VQ | 0,0002 |
-| Etapa 1 — pérdida de copia por puntero | 0,0000 |
-| Etapa 1 — pérdida de validación | 1,9649 |
-| Etapa 2 — pérdida total de entrenamiento | 14,0389 |
-| Etapa 2 — pérdida CE de concepto grueso | no disponible (truncada en la información) |
-| Violación de contracción de Banach | 0,0000 |
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente reporta métricas internas de calibración y abstención (error Brier de 0,0216 y 100 % de abstención OOD), sin comparaciones en MMLU, HumanEval, GSM8K ni otros conjuntos estándar.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 5,88 GB en bfloat16 según el autor, suficiente para una NVIDIA T4, L4 o A100.
-- GPU recomendadas: T4, L4, A100 (las citadas por el autor); cualquier GPU con al menos 8 GB de VRAM en bfloat16.
-- Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más (RTX 3060 Ti, 4060 Ti, 4070, 4080, 4090), siempre que se ejecute en bfloat16 o se cuantice.
-- Opciones de despliegue: transformers con `trust_remote_code=True` (requiere código personalizado, etiqueta `custom_code`); no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- VRAM de inferencia: 5,88 GB en bfloat16 (L4/A100) y aproximadamente 6,1 GB en float16 (T4), según la model card.
+- GPU recomendadas: T4, L4 y A100 como mínimo; cualquier GPU con al menos 6-8 GB de VRAM libre.
+- GPU de consumo: cabe en tarjetas con 8 GB o más (por ejemplo, RTX 3060 Ti, RTX 4060, RTX 3070); no se documenta su comportamiento en GPUs de 6 GB.
+- Despliegue: la model card indica transformers con `custom_code` (clase `CLPNCMForCausalLM`); no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, y la ausencia de pesos GGUF limita las opciones de inferencia en CPU.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| C-LPNCM-2.8B | 2,89B físicos / ~3,6B efectivos | no disponible | MIT | Hugging Face, 0 descargas |
-| Qwen2.5-3B | 3,09B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente adoptado |
-| Llama 3.2-3B | 3,21B | 131.072 tokens | Llama 3.2 Community | Hugging Face, ampliamente adoptado |
-| Phi-3.5-mini | 3,82B | 128.000 tokens | MIT | Hugging Face, ampliamente adoptado |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| C-LPNCM-2.8B | 2,94B (3,60B efectivos) | No disponible (ventana local 128) | MIT | safetensors bf16 | Paradigma NCM, decodificación por conceptos, abstención calibrada |
+| Qwen2.5-3B | 3,09B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Transformer denso estándar, amplia disponibilidad de cuantizaciones |
+| Llama 3.2-3B | 3,21B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | Transformer denso, multilingüe, ecosistema maduro |
+| Phi-3.5-mini | 3,82B | 128.000 tokens | MIT | safetensors, GGUF | Transformer denso con foco en razonamiento |
 
-La comparación de rendimiento con estas alternativas no está disponible: C-LPNCM-2.8B no publica resultados de benchmarks estándar, mientras que los modelos citados cuentan con evaluaciones públicas extensas. La diferencia principal es arquitectónica: C-LPNCM opera sobre conceptos discretos y decodificación paralela, frente a la autorregresión token a token convencional de los modelos comparados.
+La comparativa se basa en características publicadas de cada modelo; no se dispone de benchmarks comunes que permitan comparar rendimiento de forma directa con C-LPNCM-2.8B.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks estándar: no hay evidencia pública de calidad en MMLU, HumanEval, GSM8K ni tareas conversacionales.
-- Cero descargas y cero likes en Hugging Face: el modelo no ha sido validado por la comunidad y su reproducibilidad no está contrastada.
-- Idiomas soportados no documentados: no se puede asumir un rendimiento multilingüe ni siquiera en castellano.
-- Longitud de contexto global no especificada: la ventana de codificación es de 128 tokens y el contexto efectivo del núcleo latente no se detalla, lo que limita su uso en tareas de contexto largo.
-- Requiere `trust_remote_code=True` y código personalizado (`custom_code`): implica ejecutar código del autor no auditado, con el riesgo de seguridad asociado.
-- Riesgo de alucinación no cuantificado: la calibración Brier y la abstención son mecanismos internos, pero no hay evaluación externa de su fiabilidad.
-- Sesgos desconocidos: no se documenta la composición del dataset de entrenamiento (solo 131,1M tokens por etapa), por lo que no se pueden evaluar sesgos de género, raza o idioma.
-- Licencia MIT permisiva para uso comercial, pero sin garantías del autor y con la advertencia de que el modelo no ha sido probado en producción.
-- Etapa 3 del currículo de entrenamiento no documentada en la información disponible, lo que impide conocer si el modelo está completamente entrenado o es un checkpoint intermedio.
-- Fecha de creación en 2026: el modelo es muy reciente y no hay historial de uso ni incidencias reportadas.
+- Idiomas: solo se declara inglés; el rendimiento en castellano u otras lenguas no está documentado.
+- Contexto: no se especifica una longitud de contexto global; la ventana local de 128 tokens y los parches de hasta 8 tokens pueden limitar tareas de contexto largo.
+- Ecosistema: requiere `custom_code` y no hay pesos GGUF, GPTQ ni AWQ, lo que restringe el despliegue a transformers y a GPUs con suficiente VRAM.
+- Madurez: el modelo tiene muy poca tracción (318 descargas, 1 like) y una única versión publicada; no hay evidencia de uso en producción.
+- Benchmarks: ausencia de resultados en conjuntos estándar, lo que impide validar sus capacidades frente a alternativas consolidadas.
+- Alucinación: aunque declara abstención OOD, no hay datos independientes que confirmen el comportamiento fuera del dominio de entrenamiento.
+- Sesgos: no se documenta ningún análisis de sesgos ni composición del dataset de entrenamiento.
+- Licencia: MIT permite uso comercial, pero al tratarse de un modelo de investigación conviene auditar su comportamiento antes de integrarlo en producción.
+- Fechas: la model card y el paper referenciado (arXiv:2610.14162) corresponden a fechas posteriores a las habituales de publicación; verificar su disponibilidad real antes de citarlos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/entity2260/cl-pncm-2.8b
-- Banner del modelo: https://huggingface.co/entity2260/cl-pncm-2.8b/resolve/main/banner.gif
-- Paper, blog, repositorio o demo: no disponible en la información proporcionada.
+- Paper NCM: https://arxiv.org/abs/2610.14162
+- Licencia MIT: https://opensource.org/licenses/MIT

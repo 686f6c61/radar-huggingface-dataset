@@ -5,7 +5,7 @@
   "author": "baidu",
   "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview-FP8",
   "created_at": "2026-11-23T09:00:47.000Z",
-  "updated_at": "2026-11-24T02:53:58.000Z",
+  "updated_at": "2026-11-24T07:19:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 29,
-  "downloads_30d": 15,
+  "downloads_30d": 374,
   "trending_score": 24,
   "parameters": 299559241286,
   "parameters_human": "299.56B",

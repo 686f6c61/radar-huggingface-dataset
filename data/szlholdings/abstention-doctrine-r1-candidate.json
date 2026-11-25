@@ -5,7 +5,7 @@
   "author": "SZLHOLDINGS",
   "url": "https://huggingface.co/SZLHOLDINGS/abstention-doctrine-r1-candidate",
   "created_at": "2026-11-15T02:04:37.000Z",
-  "updated_at": "2026-11-20T04:37:40.000Z",
+  "updated_at": "2026-11-25T03:02:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "safetensors",
+    "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,

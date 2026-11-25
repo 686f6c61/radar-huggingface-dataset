@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "tdesc/microduck-hill-climb-1m5-hillws2b",
+  "slug": "tdesc-microduck-hill-climb-1m5-hillws2b",
+  "author": "tdesc",
+  "url": "https://huggingface.co/tdesc/microduck-hill-climb-1m5-hillws2b",
+  "created_at": "2026-11-25T09:13:48.000Z",
+  "updated_at": "2026-11-25T09:13:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5642444,
+  "storage_human": "6 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

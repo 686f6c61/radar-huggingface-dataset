@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "creative-graphic-design/tkg-dm",
+  "slug": "creative-graphic-design-tkg-dm",
+  "author": "creative-graphic-design",
+  "url": "https://huggingface.co/creative-graphic-design/tkg-dm",
+  "created_at": "2026-11-20T23:19:00.000Z",
+  "updated_at": "2026-11-21T12:31:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "tkg-dm",
+    "image-generation",
+    "text-to-image",
+    "en",
+    "arxiv:2411.15580",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

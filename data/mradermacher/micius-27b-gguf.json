@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Micius-27B-GGUF",
   "created_at": "2026-11-23T07:22:25.000Z",
-  "updated_at": "2026-11-23T13:11:10.000Z",
+  "updated_at": "2026-11-25T07:06:03.000Z",
   "license": "zhiman-non-commercial-research-license-v1.0",
   "license_family": "non-commercial",
   "pipeline_tag": null,
@@ -33,14 +33,14 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 368,
+  "downloads_30d": 683,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
   "storage_bytes": 189399499936,
   "storage_human": "189.4 GB",
   "context_length": 262144,
-  "base_model": "zhiman-ai/Micius-27B",
+  "base_model": "zhiman-ai/Micius-Flash",
   "formats": [
     "gguf",
     "safetensors"

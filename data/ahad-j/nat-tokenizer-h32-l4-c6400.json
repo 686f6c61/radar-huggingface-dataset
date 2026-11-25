@@ -5,7 +5,7 @@
   "author": "ahad-j",
   "url": "https://huggingface.co/ahad-j/nat-tokenizer-h32-l4-c6400",
   "created_at": "2026-11-16T19:27:58.000Z",
-  "updated_at": "2026-11-21T15:57:16.000Z",
+  "updated_at": "2026-11-24T11:22:45.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -16,6 +16,7 @@
     "robotics",
     "action-tokenizer",
     "vla",
+    "arxiv:2611.28873",
     "license:mit",
     "region:us"
   ],

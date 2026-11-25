@@ -1,0 +1,63 @@
+{
+  "schema": 2,
+  "id": "Iscte-Sintra/KeaASRv2-LLM-1B_v2",
+  "slug": "iscte-sintra-keaasrv2-llm-1b_v2",
+  "author": "Iscte-Sintra",
+  "url": "https://huggingface.co/Iscte-Sintra/KeaASRv2-LLM-1B_v2",
+  "created_at": "2026-11-25T12:09:48.000Z",
+  "updated_at": "2026-11-25T12:10:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "omnilingual-asr",
+  "languages": [
+    "kea"
+  ],
+  "tags": [
+    "omnilingual-asr",
+    "kabuverdianu",
+    "cabo-verde",
+    "fairseq2",
+    "fine-tuned",
+    "low-resource",
+    "automatic-speech-recognition",
+    "kea",
+    "dataset:google/fleurs",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9127214569,
+  "storage_human": "9.1 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS Kabuverdianu validation (exact raw references)",
+      "metric": "WER (%)",
+      "value": 18.075763533883865
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS Kabuverdianu validation (exact raw references)",
+      "metric": "CER (%)",
+      "value": 5.0427389082357195
+    }
+  ],
+  "sources": []
+}

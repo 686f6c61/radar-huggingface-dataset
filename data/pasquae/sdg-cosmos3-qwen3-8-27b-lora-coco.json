@@ -5,7 +5,7 @@
   "author": "PaSquae",
   "url": "https://huggingface.co/PaSquae/sdg-cosmos3-qwen3.8-27b-lora-COCO",
   "created_at": "2026-11-24T16:18:14.000Z",
-  "updated_at": "2026-11-24T16:22:09.000Z",
+  "updated_at": "2026-11-24T18:22:07.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -20,6 +20,7 @@
     "coco",
     "text-generation",
     "conversational",
+    "dataset:PaSquae/sdg-cosmos3-COCO-captions",
     "base_model:unsloth/Qwen3.8-27B",
     "base_model:adapter:unsloth/Qwen3.8-27B",
     "region:us"

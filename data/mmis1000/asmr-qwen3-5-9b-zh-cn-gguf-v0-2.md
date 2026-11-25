@@ -2,80 +2,94 @@
 
 ## Resumen
 
-El modelo `mmis1000/asmr-qwen3.5-9b-zh-cn-gguf-v0.2` es un ajuste fino del modelo base `unsloth/Qwen3.5-9B` (arquitectura Qwen3.5, 8.95 mil millones de parametros) especializado en la traduccion de transcripciones de ASMR japonesas (generadas por sistemas ASR como Whisper) a chino simplificado. El autor, mmis1000, lo ha desarrollado como parte de un pipeline mas amplio de transcripcion y traduccion de audio ASMR, y esta distribuido exclusivamente en formato GGUF para su uso con llama.cpp y motores compatibles.
+asmr-qwen3.5-9b-zh-cn-gguf-v0.2 es una cuantizacion en formato GGUF de un ajuste fino (LoRA) sobre el modelo base Qwen3.5-9B de Alibaba, especializado en la traduccion de transcripciones de ASMR japones (salida de ASR/Whisper) a chino simplificado. Lo desarrolla mmis1000, un autor independiente, y resuelve un problema muy concreto: las transcripciones automaticas de audio contienen errores, repeticiones y ruido que los traductores genericos no manejan bien, ademas de requerir normalizacion de glossarios y preservacion de emocion y matices en dialogos de personajes.
 
-El modelo resuelve un problema muy concreto: las transcripciones automaticas de audio ASMR contienen errores tipicos de ASR (repeticiones, homofonos, ruido), y ademas el dominio tiene una terminologia especifica (onomatopeyas, gemidos, jerga de personajes) que una traduccion generica no maneja bien. Este modelo normaliza esas imperfecciones, aplica un glosario por obra y traduce el dialogo preservando el tono emocional. Su relevancia actual radica en que cubre un nicho de traduccion especializada con salida estructurada en JSON, pensada para flujos de subtitulado automatizado.
+El modelo parte de los 9.197.093.888 parametros del Qwen3.5-9B original y aplica un adaptador LoRA (r=16, alpha=16) sobre siete modulos de proyeccion, con una longitud maxima de secuencia de entrenamiento de 8192 tokens. La version 0.2 continua directamente el adaptador v0.1 hasta esa ventana nativa de 8k sin usar RoPE scaling ni YaRN, y conserva la cabeza MTP (multi-token prediction) del modelo base en el GGUF para permitir decodificacion especulativa en builds de llama.cpp que la soporten.
 
-La version v0.2 extiende la ventana de contexto de entrenamiento hasta 8192 tokens sin usar RoPE scaling ni YaRN, mediante una continuacion determinista del adaptador v0.1. El modelo esta pensado para ejecutarse en local con cuantizaciones que van desde 5.2 GB (q4_k_m) hasta 16.7 GB (bf16), lo que lo hace accesible en GPUs de consumo.
+Su relevancia es acotada pero clara: es una herramienta de nicho para pipelines de subtitulado y localizacion de contenido de audio japones, con salida JSON estructurada, soporte de decodificacion guiada por gramatica y cuantizaciones que van de 5,4 GB a 17,1 GB. La licencia Apache 2.0 facilita su integracion comercial, aunque el dominio de entrenamiento incluye dialogo ASMR adulto y puede generar texto sexualmente explicito.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3.5 (transformer decoder-only, basado en unsloth/Qwen3.5-9B) |
-| Parametros totales | 8.953.803.264 (8.95B) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | 8192 tokens (maxima de entrenamiento; contexto total en runtime, no solo entrada) |
-| Tipos de cuantizacion | q4_k_m (5.2 GB), q6_k (6.9 GB), q8_0 (8.9 GB), bf16 (16.7 GB) |
+| Arquitectura | Transformer decoder-only (Qwen3.5-9B) con cabeza MTP; ajuste fino mediante LoRA |
+| Parametros totales | 9.197.093.888 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 8192 tokens de contexto total en tiempo de ejecucion (entrenado a 8192; reservar espacio para el JSON generado) |
+| Tipos de cuantizacion | q4_k_m (5,4 GB), q6_k (7,0 GB), q8_0 (9,1 GB), bf16 (17,1 GB) |
 | Idiomas soportados | japones (entrada), chino simplificado (salida) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (solo; el adaptador LoRA original no se publica en este repo) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `unsloth/Qwen3.5-9B`, una version optimizada del modelo Qwen3.5 de 9B parametros. El ajuste fino se realizo con LoRA (rank 16, alpha 16) sobre los modulos `o_proj`, `gate_proj`, `q_proj`, `k_proj`, `down_proj`, `v_proj` y `up_proj`, en precision bf16 y con una longitud maxima de secuencia de 8192 tokens. No se empleo RoPE scaling ni YaRN; la extension a 8k se logro mediante una continuacion determinista del adaptador v0.1, consumiendo 800 pasos de entrenamiento distribuidos en 520 muestras coherentes de la misma pista, 120 de contexto lejano/recuperacion de glosario y 160 de repeticion ordinaria.
+El modelo es un transformer decoder-only derivado de Qwen3.5-9B, ajustado con LoRA de rango 16 y alpha 16 sobre los modulos o_proj, gate_proj, q_proj, k_proj, down_proj, v_proj y up_proj. El entrenamiento se realizo en precision bf16 con una longitud maxima de secuencia de 8192 tokens y locale zh-cn en modo estandar (solo texto traducido). La revision del modelo base esta fijada en el commit `005429cee5cb648998cf2b70eebdd83175989c9a` de unsloth/Qwen3.5-9B, y el SHA-256 de los pesos del adaptador es `78d239dcde5030af979030ef5ea5e7d515638b1f46117fae9934f9a184c7ec59`.
 
-El entrenamiento se centra en una tarea de traduccion con formato estricto: entrada como array JSON de segmentos con `id`, `text`, `start` y `end`; salida como array JSON agrupando segmentos contiguos en una misma frase, con campos `ids`, `text`, `start` y `end`. El prompt incluye un glosario por obra (terminos japoneses con su traduccion al chino), reglas de correccion de errores ASR (repeticiones, homofonos, lineas de copyright) y reglas de transliteracion de onomatopeyas. No se menciona el uso de RLHF ni DPO; el ajuste es supervisado sobre pares de transcripcion-traduccion.
+La version 0.2 continua directamente el adaptador v0.1 hasta los 8192 tokens sin apilar adaptadores ni aplicar RoPE scaling o YaRN, lo que preserva el comportamiento nativo de la ventana de contexto. La continuacion determinista consumio 800 muestras de entrenamiento: 520 de misma pista coherente, 120 de contexto lejano y recuperacion de glossario, y 160 de replay ordinario, alcanzando el paso absoluto 200. Una innovacion destacable es la conservacion de la cabeza MTP en el GGUF, que permite usar decodificacion especulativa con `--spec-type draft-mtp --spec-draft-n-max 6` en llama.cpp, reduciendo el coste de generacion de salidas JSON largas.
 
 ## Capacidades
 
-- Traduccion de transcripciones ASR japonesas a chino simplificado, normalizando errores tipicos de Whisper (repeticiones, homofonos, fragmentos corruptos).
-- Aplicacion de glosarios especificos por obra (terminos, personajes, CV) definidos en el prompt.
-- Salida estructurada en JSON con agrupacion de segmentos contiguos en frases completas, incluyendo marcas temporales.
-- Manejo de onomatopeyas japonesas (p. ej. パンパン → 啪啪) y de expresiones de gemidos/respiracion (あ、ん、はあ → 啊、嗯、哈、呼).
-- Preservacion del tono emocional y el registro de los personajes en la traduccion.
-- Deteccion y anulacion de lineas de copyright o marcas de agua (texto `null` en la salida).
-- Generacion de texto en formato JSON valido, compatible con decodificacion estructurada (GBNF, JSON schema) en llama.cpp, vLLM y outlines.
+- Traduccion de japones a chino simplificado de transcripciones ASR, con normalizacion de errores tipicos de Whisper.
+- Correccion silenciosa de repeticiones (fragmentos repetidos tres o mas veces se colapsan a uno), errores homofonos y nombres propios segun glossario.
+- Aplicacion estricta de glossarios proporcionados en el prompt (terminos, personajes, CVs).
+- Preservacion de emocion, tono y registro de personajes en dialogos multi-turno.
+- Mapeo de interjecciones y sonidos no verbales (gemidos, respiraciones, onomatopeyas) a equivalentes naturales en chino.
+- Salida en JSON estructurado con合并 de fragmentos contiguos, cobertura exacta de IDs de entrada y marcas temporales (start/end en milisegundos).
+- Deteccion y anulacion de lineas de copyright de subtitulos (creditos, marcas de agua) mediante `text: null`.
+- Soporte de decodificacion estructurada con JSON Schema o gramatica GBNF en llama.cpp, vLLM y outlines.
+- Capacidad de contexto largo: escenas coherentes de mas de 60 segmentos de origen en una sola ventana.
+- No soporta tool calling ni function calling de proposito general; su funcion esta acotada a la tarea de traduccion.
 
 ## Casos de uso
 
-- Subtitulado automatizado de audio ASMR japones: el modelo se integra en un pipeline que primero transcribe con Whisper/SenseVoice y luego traduce al chino simplificado, produciendo subtitulos con marcas temporales listos para su uso en reproductores de video.
-- Localizacion de contenido ASMR para plataformas chinas: permite traducir obras completas manteniendo la coherencia de la terminologia gracias al glosario por obra, algo critico en un dominio con jerga muy especifica.
-- Traduccion de dialogos con contexto largo: con 8192 tokens de contexto, puede procesar pistas de audio largas sin perder el hilo de la conversacion, agrupando segmentos separados en frases coherentes.
-- Generacion de subtitulos bilingues: combinando la salida del modelo con la transcripcion original, se pueden generar subtitulos lado a lado en japones y chino para audiencias bilingues.
-- Correccion y normalizacion de transcripciones ASR: el modelo no solo traduce, sino que limpia repeticiones y errores de reconocimiento, lo que lo hace util como post-procesador de cualquier salida de Whisper en japones.
-- Flujos de traduccion por lotes con decodificacion estructurada: al garantizar JSON valido mediante esquemas, puede integrarse en pipelines de linea de comandos (como el repositorio `asmr-ai-translator-ja2zh`) para procesar bibliotecas enteras de audio sin intervencion manual.
+- Subtitulado automatico de ASMR japones: el modelo recibe el JSON de segmentos de Whisper y devuelve un JSON con IDs agrupados y texto en chino simplificado, listo para publicar como subtitulos sincronizados con marcas de tiempo.
+- Localizacion de contenido de audio para plataformas de nicho: permite traducir bibliotecas completas de pistas ASMR manteniendo coherencia de personajes y terminologia mediante glossarios por obra.
+- Limpieza de transcripciones defectuosas: al normalizar repeticiones, homofonos y lineas de copyright, reduce el trabajo manual de revision antes de la traduccion.
+- Pipeline de postproduccion con decodificacion restringida: integrado con llama.cpp y `--json-schema`, garantiza JSON valido en cada generacion y evita reintentos por salidas malformadas.
+- Procesamiento por lotes en hardware de consumo: la cuantizacion q4_k_m (5,4 GB) permite ejecutar el modelo en GPUs de 8-12 GB de VRAM para traducir pistas de forma secuencial.
+- Servicio de traduccion con latencia reducida: usando la cabeza MTP y decodificacion especulativa en llama.cpp se acelera la generacion de salidas JSON largas en comparacion con decodificacion autoregresiva estandar.
+- Investigacion sobre traduccion de dominio especifico: sirve como caso de estudio de ajuste LoRA sobre un modelo de 9B para una tarea estrecha con formato de salida estricto y validacion semantica limitada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La validacion descrita en la model card es cualitativa: seis filas de prueba con comprobacion semantica manual, de las cuales cinco resultaron semanticamente utilizables. No hay datos de MMLU, HumanEval, GSM8K ni otras metricas estandar comparables.
+No se han publicado resultados de benchmarks en la informacion disponible. La validacion descrita por el autor es una comprobacion semantica reducida sobre seis filas reservadas (tres ordinarias y tres largas), con decodificacion restringida por gramatica en Q8: las seis completaron con cobertura exacta de IDs y cinco de seis resultaron semanticamente utilizables. No hay metricas BLEU, COMET, MMLU ni comparaciones cuantitativas con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: 5.2 GB (q4_k_m), 6.9 GB (q6_k), 8.9 GB (q8_0), 16.7 GB (bf16). A estos valores hay que anadir el contexto (KV cache) y la memoria del runtime.
-- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para q4_k_m (p. ej. RTX 3060 12GB, RTX 4060 Ti 16GB); para q8_0 o bf16 se recomienda 12-24 GB (RTX 3090, RTX 4090, A5000).
-- Cabe en GPUs de consumo: si, la cuantizacion q4_k_m (5.2 GB) es ejecutable en GPUs de gama media con 8 GB o mas.
-- Opciones de despliegue: llama.cpp (llama-server, llama-cli), vLLM, Ollama (si se importa el GGUF), TGI, y cualquier motor compatible con GGUF.
-- Latencia y throughput: no disponible. El rendimiento dependera del hardware, la cuantizacion y el uso de decodificacion estructurada.
+- VRAM estimada para inferencia: aproximadamente 5,5-6 GB con q4_k_m, 7,5-8 GB con q6_k, 9,5-10 GB con q8_0 y 17-18 GB con bf16, incluyendo overhead de contexto de 8192 tokens.
+- GPU recomendadas: RTX 4090 (24 GB) para bf16 o q8_0 con contexto completo; RTX 4080, 4070 Ti o 3090 para q6_k y q8_0; RTX 4060 Ti 16 GB o 4070 para q4_k_m y q6_k.
+- Cabe en GPU de consumo: si, en tarjetas de 8 GB o mas con q4_k_m; en 12 GB con q6_k; en 16 GB con q8_0.
+- Opciones de despliegue: llama.cpp (llama-server, llama-cli), vLLM, outlines para decodificacion estructurada. Ollama y TGI no estan documentados en la informacion disponible.
+- Latencia y throughput: no disponibles. La decodificacion especulativa con MTP (`--spec-draft-n-max 6`) esta soportada en builds de llama.cpp compatibles, pero no se publican cifras de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre modelos directamente comparables en la misma tarea (traduccion de ASMR japones a chino con salida JSON). El propio autor publica variantes relacionadas, como `asmr-qwen3.5-9b-zh-cn-echo-mtp-gguf-v0.1` (con modo echo y multi-track), pero no hay datos de rendimiento relativo entre ellas. Como referencia de arquitectura, el modelo base Qwen3.5-9B puede compararse con otros LLMs de 9B, pero la especializacion en este dominio no tiene equivalentes publicos documentados.
+| Modelo | Parametros | Contexto | Especializacion | Licencia | Formato |
+|---|---|---|---|---|---|
+| asmr-qwen3.5-9b-zh-cn-gguf-v0.2 | 9,2 B | 8192 | Traduccion ja→zh-cn de ASR ASMR | Apache 2.0 | GGUF |
+| Qwen3.5-9B (base) | 9,2 B | no disponible | Proposito general, multilingue | no disponible | safetensors, GGUF |
+| asmr-qwen3.5-9b-zh-tw-echo (mismo autor) | 9,2 B | 8192 | Traduccion ja→zh-tw con validacion ampliada | Apache 2.0 | GGUF |
+
+La comparacion con modelos genericos de traduccion de la misma escala no esta disponible en la informacion proporcionada. Frente al base Qwen3.5-9B, este ajuste sacrifica capacidades generales a cambio de adherencia al formato JSON, normalizacion de ASR y terminologia de dominio. Frente a la variante zh-tw-echo del mismo autor, la zh-cn v0.2 tiene una validacion mas reducida (seis filas frente a la matriz de 100 filas a 4k mas 100 a 8k) y carece de comparacion controlada v0.1 frente a v0.2.
 
 ## Limitaciones y advertencias
 
-- El modelo puede producir contenido sexualmente explicito, ya que el dominio de entrenamiento incluye dialogos ASMR para adultos. No es adecuado para uso general ni para menores.
-- La validacion de esta version v0.2 fue limitada: no recibio la matriz completa de 200 filas usada en otras variantes del autor, y solo se evaluo con cuantizacion Q8_0; el resto de cuantizaciones no fueron puntuadas de forma independiente.
-- Transcripciones ASR gravemente corruptas pueden provocar contenido inventado, incluso cuando la estructura JSON de salida es valida. El autor recomienda dividir el audio en ventanas mas cortas si el ASR es repetitivo o defectuoso.
-- Pueden persistir errores de traduccion localizados en fragmentos ambiguos o malformados.
-- El contexto de 8192 tokens es el contexto total en runtime, no un presupuesto solo de entrada; hay que reservar espacio para el JSON generado.
+- La validacion es reducida: seis filas reservadas en lugar de la matriz completa de 200 filas usada en otras variantes del autor.
+- ASR de origen catastroficamente corrupto puede provocar contenido inventado aunque la estructura JSON siga siendo valida; el autor documenta un caso con ocho segmentos repetidos de "おやすみなさい".
+- Persisten errores de traduccion locales en fragmentos ambiguos o malformados.
 - No existe una comparacion controlada completa entre v0.1 y v0.2.
-- La licencia Apache-2.0 permite uso comercial, pero el contenido generado puede estar sujeto a restricciones de la obra original (derechos de autor del audio ASMR).
+- La validacion se realizo unicamente con Q8_0; las demas cuantizaciones no han sido evaluadas independientemente en calidad.
+- Los 8192 tokens son contexto total de ejecucion, no un presupuesto seguro solo para la entrada: hay que reservar espacio para el JSON generado y dividir transcripciones largas o repetitivas en ventanas menores.
+- El dominio de entrenamiento incluye dialogo ASMR adulto y el modelo puede producir texto sexualmente explicito; no es adecuado para aplicaciones dirigidas a menores o entornos sin moderacion.
+- Riesgo de alucinacion en la normalizacion de transcripciones: el modelo puede "corregir" hacia contenido no presente en la fuente literal.
+- Sesgos especificos no documentados en la informacion disponible.
+- Licencia Apache 2.0 permite uso comercial, pero la responsabilidad sobre el contenido generado y sobre los derechos del material ASMR original recae en el integrador.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/mmis1000/asmr-qwen3.5-9b-zh-cn-gguf-v0.2
-- Repositorio del pipeline de traduccion: https://github.com/mmis1000/asmr-ai-translator-ja2zh
-- Variante v0.1 (chino simplificado, modo estandar): https://huggingface.co/mmis1000/asmr-qwen3.5-9b-zh-cn-gguf-v0.1
-- Variante con modo echo y multi-track: https://huggingface.co/mmis1000/asmr-qwen3.5-9b-zh-cn-echo-mtp-gguf-v0.1
+- Version anterior v0.1: https://huggingface.co/mmis1000/asmr-qwen3.5-9b-zh-cn-gguf-v0.1
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
+- Repositorio de llama.cpp (soporte MTP y `--json-schema`): no disponible en la informacion proporcionada
+- Documentacion de outlines: no disponible en la informacion proporcionada
+- Paper o blog tecnico del autor: no disponible en la informacion proporcionada

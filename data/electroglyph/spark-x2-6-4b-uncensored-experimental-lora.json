@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "id": "electroglyph/Spark-X2.6-4B-uncensored-experimental-LoRA",
+  "slug": "electroglyph-spark-x2-6-4b-uncensored-experimental-lora",
+  "author": "electroglyph",
+  "url": "https://huggingface.co/electroglyph/Spark-X2.6-4B-uncensored-experimental-LoRA",
+  "created_at": "2026-11-24T11:30:24.000Z",
+  "updated_at": "2026-11-24T19:01:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llm",
+    "sparkx2_5",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:XHToken/Spark-X2.6-4B",
+    "base_model:finetune:XHToken/Spark-X2.6-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 56037925,
+  "storage_human": "56 MB",
+  "context_length": null,
+  "base_model": "XHToken/Spark-X2.6-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tutorials - Windows 11 Forum",
+      "url": "https://www.elevenforum.com/tutorials/",
+      "snippet": "Feb 19, 2024 · Starting with Windows 11 build 26340.10013 (Experimental 26H2) for Insiders, Magnifier now has a help (?) button on …"
+    }
+  ]
+}

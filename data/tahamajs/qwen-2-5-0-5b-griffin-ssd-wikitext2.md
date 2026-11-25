@@ -2,117 +2,103 @@
 
 ## Resumen
 
-`tahamajs/qwen-2.5-0.5b-griffin-ssd-wikitext2` es un checkpoint experimental derivado de `Qwen/Qwen2.5-0.5B` en el que se han sustituido quirurgicamente los bloques de atencion del decoder por el modulo `griffin_ssd` del registro `ATTENTION_REGISTRY` del proyecto NeuralOps. El objetivo no es producir un modelo de proposito general, sino servir como banco de pruebas reproducible para estudiar la viabilidad de arquitecturas de atencion subcuadratica (hibridos de ventana local y linear attention tipo SSD, en la linea de Griffin) sobre un transformer preentrenado de 0,5 mil millones de parametros.
+`qwen-2.5-0.5b-griffin-ssd-wikitext2` es un checkpoint experimental publicado por el usuario tahamajs dentro del proyecto NeuralOps (Attention Zoo). No es un modelo entrenado desde cero, sino un Qwen2.5-0.5B original de Alibaba cuyo bloque de atención de decoder ha sido sustituido quirúrgicamente por el módulo `GriffinSSDBlock`, una atención híbrida que combina ventana local con atención lineal SSD (state space duality). El objetivo es explorar alternativas subcuadráticas a la atención estándar manteniendo el resto de la arquitectura Qwen2.
 
-El autor aplica un patron de cirugia `hybrid_3_1`: 18 de las 24 capas del decoder se reemplazan por `griffin_ssd` mediante un `QwenAttentionAdapter`, mientras que 6 capas conservan atencion cuadratica completa como anclas (indices 3, 7, 11, 15, 19 y 23). Tras la sustitucion, el modelo colapsa (perplejidad de 379.143,46 en WikiText-2) y se recupera mediante un pipeline de destilacion de conocimiento en dos etapas que lo lleva a una perplejidad de validacion de 171,65 en apenas 277 pasos y 180,3 segundos de entrenamiento.
+El modelo conserva los 510.085.240 parámetros del Qwen2.5-0.5B base (hidden_size 896, 14 cabezas de consulta, 2 cabezas KV, head_dim 64, 24 capas) y aplica un patrón híbrido 3:1: 18 de las 24 capas usan `griffin_ssd` y 6 capas conservan atención cuadrática completa como anclas en los índices 3, 7, 11, 15, 19 y 23. Tras la cirugía, el modelo se recuperó mediante destilación de conocimiento en dos etapas sobre WikiText-2, pasando de una perplejidad de 379.143,46 a 171,65.
 
-Su relevancia es metodologica: documenta de forma transparente el coste de reemplazar atencion cuadratica por alternativas lineales en un modelo ya entrenado y demuestra que la destilacion por capas (MSE y coseno sobre estados ocultos) puede rescatar parcialmente la capacidad linguistica. El modelo es de investigacion, con licencia MIT, y no esta pensado para uso en produccion.
+Es relevante como pieza de investigación sobre eficiencia de atención y como ejemplo reproducible de sustitución modular de operadores de atención en modelos preentrenados. No está pensado como modelo de producción: el entrenamiento se limita a WikiText-2 en inglés y la perplejidad final es muy superior a la del Qwen2.5-0.5B original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only hibrido: 18/24 capas con `GriffinSSDBlock` (ventana local + SSD linear attention) y 6/24 capas con atencion cuadratica completa |
+| Arquitectura | Transformer decoder híbrido con 18/24 capas de atención GriffinSSD (ventana local + SSD lineal) y 6 capas de atención cuadrática completa (patrón `hybrid_3_1`) |
 | Parametros totales | 510.085.240 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible (entrenado con `seq_len=512`) |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; el autor no documenta GGUF ni cuantizaciones) |
-| Idiomas soportados | ingles (`en`) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors FP16) |
+| Idiomas soportados | en |
 | Licencia | MIT |
 | Formato de pesos | safetensors (`model.safetensors` 972,96 MB; `attention_weights.safetensors` 114,75 MB) |
-| Tamano del repositorio | 1,2 GB |
-| Modelo base | Qwen/Qwen2.5-0.5B |
-| Libreria | `neuralops` |
-| Configuracion de atencion base | 14 cabezas query, 2 cabezas KV, `head_dim=64`, `hidden_size=896` |
-| Patron de cirugia | `hybrid_3_1` con anclas cuadraticas en capas [3, 7, 11, 15, 19, 23] |
-| GQA nativo en `griffin_ssd` | No (el adaptador aplica expansion 7x de cabezas KV) |
-| Soporte RoPE en `griffin_ssd` | N/A |
-| Dataset de entrenamiento | Salesforce/wikitext (`wikitext-2-raw-v1`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `Qwen/Qwen2.5-0.5B`, un transformer decoder-only con 24 capas, `hidden_size=896` y GQA 14:2. Sobre esa base se aplica una "cirugia" que sustituye los modulos `Qwen2Attention` por instancias de `GriffinSSDBlock`, un bloque hibrido que combina una ventana de atencion local con atencion lineal del tipo SSD (state space duality). El `QwenAttentionAdapter` gestiona el desajuste de cabezas (expansion 7x de KV heads donde es necesario) y fuerza un contrato de `o_proj` unico. El patron `hybrid_3_1` intercala tres capas `griffin_ssd` por cada capa de atencion cuadratica completa, dejando seis anclas intactas.
+El modelo parte de `Qwen/Qwen2.5-0.5B` y aplica una cirugía de atención mediante `QwenAttentionAdapter`, que mapea las proyecciones de `Qwen2Attention` (14 cabezas de consulta, 2 cabezas KV, `head_dim=64`, `hidden_size=896`) y expande las cabezas KV 7x donde es necesario, forzando además el contrato Single-`o_proj`. El bloque `GriffinSSDBlock` combina una ventana de atención local con atención lineal SSD y declara soporte causal, bidireccional y cross-attention; no soporta GQA nativo ni RoPE (marcado como N/A). Se preservan 6 capas cuadráticas completas como anclas en los índices [3, 7, 11, 15, 19, 23].
 
-El entrenamiento es una destilacion de conocimiento en dos etapas sobre WikiText-2. La etapa 0 (post-cirugia, sin entrenamiento) arroja una perplejidad causal de 379.143,46, lo que refleja el colapso del modelo al perder la atencion original. La etapa 1 (alineamiento con backbone congelado, 77 pasos, 54,6 s) salta el `lm_head` y minimiza MSE y coseno (peso 0,25) sobre estados ocultos capa a capa. La etapa 2 (destilacion de representacion multicapa, 200 pasos, 125,3 s) repite el proceso con peso 0,50. En total, 277 pasos con `seq_len=512`, `grad_accum=4` y `topk=64`, en 180,3 s y con un pico de VRAM de 20.004 MB en FP16 autocast con parametros maestros FP32. El resultado final es una perplejidad de validacion de 171,65, una mejora de -378.971,80 puntos respecto al punto de partida.
+El entrenamiento consiste en una destilación de conocimiento en dos etapas sobre WikiText-2 (`wikitext-2-raw-v1`). La etapa 1 (alineamiento con backbone congelado) ejecutó 77 pasos en 54,6 s con `lm_head` desactivado y pérdida MSE + coseno por capa con peso 0,25. La etapa 2 (destilación de representación multicapa) ejecutó 200 pasos en 125,3 s con peso coseno 0,50. En total, 277 pasos en 180,3 s con `seq_len=512`, `grad_accum=4` y `topk=64`, alcanzando un pico de 20.004 MB de VRAM en FP16 autocast con parámetros maestros en FP32. La perplejidad causal pasó de 379.143,46 (post-cirugía, zero-shot) a 171,65 tras la destilación.
 
 ## Capacidades
 
-- Generacion de texto causal autorregresiva en ingles, heredada del tokenizador y vocabulario de Qwen2.5-0.5B.
-- Soporte de atencion causal (declarado `supports_causal: Yes` en el modulo `griffin_ssd`).
-- Soporte de atencion bidireccional a nivel de modulo (`supports_bidirectional: Yes`), aunque el checkpoint se distribuye para generacion causal.
-- Soporte de cross-attention a nivel de modulo (`supports_cross_attention: Yes`).
-- Operador de atencion personalizado (`is_custom_attention: Yes`), implementado en la libreria `neuralops`.
-- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento extendido.
-- Multilingue: no; solo ingles segun la model card.
-- Calidad linguistica limitada: la perplejidad de 171,65 en WikiText-2 es muy alta para un modelo de 0,5 B (Qwen2.5-0.5B original ronda perplejidades de un orden de magnitud inferior en el mismo corpus).
+- Generación de texto causal autoregresiva en inglés.
+- Razonamiento y modelado de lenguaje básico heredado del Qwen2.5-0.5B base, aunque degradado por la sustitución de atención y el entrenamiento limitado a WikiText-2.
+- Soporte de atención bidireccional y cross-attention a nivel de módulo (según la model card del bloque `GriffinSSDBlock`).
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- Capacidades multilingües: no disponibles; solo se declara inglés.
+- Sin modo thinking, visión ni audio.
 
 ## Casos de uso
 
-- Investigacion en atencion subcuadratica: el checkpoint sirve como referencia reproducible para medir el impacto de sustituir atencion cuadratica por `griffin_ssd` en un transformer preentrenado, comparando perplejidad antes y despues de la destilacion.
-- Experimentos de destilacion de conocimiento: las dos etapas documentadas (alineamiento con backbone congelado y destilacion multicapa con MSE + coseno) son una plantilla para probar variantes de KD sobre arquitecturas hibridas.
-- Benchmarking de la libreria NeuralOps: permite validar el `QwenAttentionAdapter`, el contrato de `o_proj` unico y la expansion 7x de cabezas KV en un caso real con 24 capas.
-- Estudio de patrones hibridos: el patron `hybrid_3_1` con seis anclas cuadraticas es un punto de partida para explorar otras proporciones (2:1, 4:1) y medir el equilibrio entre coste computacional y calidad.
-- Prototipado de inferencia eficiente en longitud: aunque no se documenta el contexto efectivo, el bloque `griffin_ssd` esta disenado para reducir el coste cuadratico; util para experimentos de escalado en longitud dentro de un entorno controlado.
-- Docencia y divulgacion: ejemplo didactico de cirugia de atencion y recuperacion via KD, con telemetria completa (pasos, tiempos, VRAM, delta de perplejidad) publicada en la model card.
+- Investigación sobre atención subcuadrática: sirve como referencia reproducible para comparar `griffin_ssd` frente a atención cuadrática en un mismo backbone Qwen2.5-0.5B, usando la perplejidad en WikiText-2 como métrica de control.
+- Experimentos de cirugía de atención: el checkpoint y el código de NeuralOps permiten replicar la sustitución modular de bloques de atención en modelos preentrenados y medir la recuperación vía destilación.
+- Docencia y divulgación: ejemplo didáctico de destilación de conocimiento en dos etapas con backbone congelado y pérdidas MSE + coseno por capa.
+- Pruebas de pipelines de carga: útil para validar la API `neuralops.hub.load_surgeried_model` y flujos de carga de pesos safetensors separados (`model.safetensors` + `attention_weights.safetensors`).
+- Benchmarking de eficiencia: permite medir latencia y memoria de un bloque híbrido local + SSD frente a atención completa en secuencias de 512 tokens.
+- Prototipado de generación de texto en inglés de baja exigencia: aceptable solo en entornos de experimentación donde la calidad no sea crítica, dado el alto PPL.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en la model card (no verificados de forma independiente, `verified: false`):
+Datos declarados por el autor en la model card (no verificados, `verified: false`):
 
-| Benchmark | Dataset / split | Metrica | Valor |
+| Benchmark | Dataset | Metrica | Valor |
 |---|---|---|---|
-| Causal Language Modeling | Salesforce/wikitext (`wikitext-2-raw-v1`, validation) | Perplejidad | 171,65 |
-| Baseline post-cirugia (etapa 0) | `wikitext-2-raw-v1` | Perplejidad | 379.143,46 |
-| Delta de perplejidad | `wikitext-2-raw-v1` | Diferencia | -378.971,80 |
+| Causal Language Modeling | wikitext-2-raw-v1 (validation) | Perplejidad | 171,65 |
 
-Telemetria de entrenamiento:
+Telemetría de entrenamiento declarada:
 
-| Etapa | Pasos | Tiempo | Detalle |
-|---|---|---|---|
-| Etapa 1 (alineamiento, backbone congelado) | 77 | 54,6 s | `lm_head` saltado; MSE + coseno con peso 0,25 |
-| Etapa 2 (destilacion multicapa) | 200 | 125,3 s | MSE + coseno con peso 0,50 |
-| Total | 277 | 180,3 s | `seq_len=512`, `grad_accum=4`, `topk=64`; pico VRAM 20.004 MB |
+| Etapa | Pasos | Tiempo | Perplejidad |
+|---|---:|---:|---:|
+| Stage 0 (post-cirugía, zero-shot) | 0 | 0 s | 379.143,46 |
+| Stage 1 (alineamiento, backbone congelado) | 77 | 54,6 s | no disponible |
+| Stage 2 (destilación multicapa) | 200 | 125,3 s | no disponible |
+| Final | 277 | 180,3 s | 171,65 |
 
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estandar en la informacion disponible.
+No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM de entrenamiento documentada: 20.004 MB de pico con FP16 autocast y parametros maestros FP32 (equivalente a una GPU de 24 GB, p. ej. RTX 3090/4090 o A10G).
-- VRAM de inferencia estimada: al tratarse de un modelo de ~510 M de parametros, en FP16 ocupa aproximadamente 1 GB de pesos; en FP32, unos 2 GB. La activacion y el contexto anaden overhead, pero cabe holgadamente en cualquier GPU consumer con 4 GB o mas (RTX 3050, GTX 1660, etc.).
-- GPU recomendadas para entrenamiento/reentrenamiento: A100, H100, L40S o RTX 4090 (por el pico de 20 GB).
-- GPU recomendadas para inferencia: cualquier GPU consumer con 4 GB o mas; tambien CPU.
-- Opciones de despliegue: el modelo depende de la libreria `neuralops` y del `QwenAttentionAdapter` para cargar los bloques `griffin_ssd`; no se documenta soporte en vLLM, llama.cpp, Ollama ni TGI. El flujo de carga indicado en la model card usa `transformers` mas la funcion `apply_qwen_attention_surgery` del repositorio NeuralOps.
-- Latencia y throughput: no disponibles. El bloque SSD esta disenado para reducir el coste de atencion en secuencias largas, pero no se publican mediciones.
+- VRAM estimada para inferencia en FP16: en torno a 1-1,5 GB para los pesos (510 M de parámetros) más overhead de activaciones y KV cache; el entrenamiento reportó un pico de 20.004 MB con FP16 autocast y maestros FP32.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para inferencia en FP16; el entrenamiento requirió del orden de 20 GB (A100 40 GB, H100, RTX 3090/4090 con cuidado).
+- Cabe en GPU de consumo: sí, en RTX 3060 12 GB, RTX 4060 Ti, RTX 4070, RTX 4090 y similares.
+- Opciones de despliegue: la librería declarada es `neuralops` (carga vía `load_surgeried_model`); también es posible cargar con `transformers` aplicando primero `apply_qwen_attention_surgery` con `attn_key="griffin_ssd"` y `pattern="hybrid_3_1"`. Compatibilidad con vLLM, llama.cpp, Ollama o TGI: no disponible (no se documenta conversión a GGUF).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Perplejidad WikiText-2 | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Atencion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tahamajs/qwen-2.5-0.5b-griffin-ssd-wikitext2` | 510 M | no disponible | 171,65 (declarada, no verificada) | MIT | Hugging Face, requiere `neuralops` |
-| `Qwen/Qwen2.5-0.5B` (base) | 494 M aprox. | 32.768 tokens (segun especificacion publica de Qwen2.5) | no disponible en esta ficha | Apache 2.0 | Hugging Face, transformers |
-| `google/recurrentgemma-2b` (familia Griffin) | 2 B | 8.192 tokens (segun especificacion publica) | no disponible en esta ficha | Gemma Terms | Hugging Face, transformers |
+| `tahamajs/qwen-2.5-0.5b-griffin-ssd-wikitext2` | 510 M | no disponible (entrenado a 512) | Híbrida 3:1 GriffinSSD + cuadrática | MIT | Hugging Face |
+| `Qwen/Qwen2.5-0.5B` (base) | 494 M aprox. | 32.768 tokens (según Qwen2.5) | Cuadrática completa con GQA y RoPE | Apache 2.0 | Hugging Face |
+| `Qwen/Qwen2.5-1.5B` | 1.500 M aprox. | 32.768 tokens (según Qwen2.5) | Cuadrática completa con GQA y RoPE | Apache 2.0 | Hugging Face |
 
-La comparativa es orientativa: el checkpoint aqui descrito es un experimento de investigacion sobre WikiText-2, no un modelo de proposito general, y su perplejidad no es directamente comparable con la de modelos entrenados a escala completa sobre corpus mas amplios.
+La comparación directa de rendimiento con el base no está disponible en la información proporcionada; la perplejidad de 171,65 en WikiText-2 es sustancialmente peor que la esperable en el Qwen2.5-0.5B original, lo que refleja el carácter experimental del checkpoint.
 
 ## Limitaciones y advertencias
 
-- Perplejidad muy alta (171,65) para un modelo de 0,5 B: la calidad linguistica es limitada y el modelo no es apto para generacion de texto en produccion.
-- Entrenado unicamente sobre WikiText-2 (`wikitext-2-raw-v1`), un corpus pequeno de Wikipedia en ingles; no ha visto instrucciones, dialogos ni codigo.
-- Solo soporta ingles.
-- Riesgo elevado de alucinacion y de degeneracion en generaciones largas por la falta de datos y de ajuste fino.
-- No se documenta soporte de tool calling, agentes ni multi-step reasoning.
-- Dependencia de la libreria `neuralops` y de la funcion `apply_qwen_attention_surgery`: no es cargable directamente con `transformers` sin el adaptador, lo que limita su integracion en pipelines estandar.
-- El modulo `griffin_ssd` no soporta GQA nativo ni RoPE; el adaptador aplica expansion 7x de cabezas KV y un contrato de `o_proj` unico, lo que puede introducir ineficiencias y diferencias de comportamiento frente al modelo base.
-- Los benchmarks son declarados por el autor y estan marcados como no verificados (`verified: false`).
-- Licencia MIT permite uso comercial del checkpoint, pero el modelo base Qwen2.5-0.5B esta bajo Apache 2.0; conviene revisar ambas licencias y la del repositorio NeuralOps antes de un uso comercial.
-- No hay cuantizaciones publicadas (GGUF, AWQ, GPTQ), lo que dificulta el despliegue en entornos con memoria muy restringida.
-- Modelo con 0 descargas y 0 likes en el momento de la ficha: sin validacion de la comunidad.
+- Perplejidad muy alta (171,65) en WikiText-2 frente a un modelo base bien entrenado; la calidad de generación es baja.
+- Entrenamiento limitado a WikiText-2 en inglés; no hay evidencia de generalización a otros dominios ni idiomas.
+- El módulo `griffin_ssd` no soporta GQA nativo ni RoPE, lo que puede afectar a la extrapolación de contexto.
+- Solo se declara inglés; el castellano y otros idiomas no están soportados.
+- Riesgo elevado de alucinación y salidas incoherentes por la combinación de modelo pequeño, cirugía de atención y destilación breve.
+- La métrica declarada no está verificada (`verified: false`); conviene reproducirla antes de usarla en comparaciones.
+- Licencia MIT, permisiva para uso comercial, pero la calidad técnica hace desaconsejable su uso en producción.
+- Requiere la librería `neuralops` o aplicar manualmente la cirugía de atención; no es un checkpoint cargable directamente con `transformers` sin pasos adicionales.
+- No hay datos de benchmarks de razonamiento, código o matemáticas; no debe asumirse ninguna capacidad más allá de la generación de texto básica.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/tahamajs/qwen-2.5-0.5b-griffin-ssd-wikitext2
-- Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
+- Modelo en Hugging Face: https://huggingface.co/tahamajs/qwen-2.5-0.5b-griffin-ssd-wikitext2
+- Modelo base Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Repositorio NeuralOps: https://github.com/tahamajs/NeuralOps
-- Licencia NeuralOps (MIT): https://github.com/tahamajs/NeuralOps/blob/main/LICENSE
 - Dataset WikiText-2: https://huggingface.co/datasets/Salesforce/wikitext
-- Paper Griffin (referencia arquitectonica del bloque hibrido): no disponible en la informacion proporcionada.
+- Licencia MIT del proyecto: https://github.com/tahamajs/NeuralOps/blob/main/LICENSE

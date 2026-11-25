@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "tinystudio/bubble-qwen3.5-0.8b",
+  "slug": "tinystudio-bubble-qwen3-5-0-8b",
+  "author": "tinystudio",
+  "url": "https://huggingface.co/tinystudio/bubble-qwen3.5-0.8b",
+  "created_at": "2026-11-25T05:04:08.000Z",
+  "updated_at": "2026-11-25T06:46:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "gguf",
+    "qwen3_5",
+    "lora",
+    "bubble-todo",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 549162704,
+  "storage_human": "549 MB",
+  "context_length": 262144,
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

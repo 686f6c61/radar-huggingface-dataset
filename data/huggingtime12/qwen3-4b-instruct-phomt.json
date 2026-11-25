@@ -36,8 +36,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "huggingtime12/Qwen3-4B-Instruct-PhoMT-SFT",
-  "renamed_at": "2026-11-11T05:36:18.560Z",
+  "renamed_to": "huggingtime12/Qwen3-4B-PhoMT-SFT",
+  "renamed_at": "2026-11-25T10:00:48.246Z",
   "benchmarks": [],
   "sources": []
 }

@@ -2,102 +2,100 @@
 
 ## Resumen
 
-granite-docling-258M es una conversión al formato LiteRT-LM (`.litertlm`) del modelo vision-lenguaje (VLM) de IBM Granite-Docling, diseñado para conversión de documentos en el dispositivo (on-device). El modelo original, ibm-granite/granite-docling-258M, es el componente de IA que impulsa el ecosistema Docling: dada una imagen de página y el prompt `Convert this page to docling.`, genera DocTags, un marcado estructurado con elementos de maquetación, estructura de tablas OTSL, código y fórmulas, que docling-core convierte sin pérdida a Markdown, HTML o JSON.
+granite-docling-258M es un modelo de visión-lenguaje (VLM) especializado en conversión de documentos, desarrollado por IBM Research y distribuido originalmente bajo el identificador `ibm-granite/granite-docling-258M`. Esta ficha concreta corresponde a la conversión realizada por la comunidad `litert-community` al formato LiteRT-LM (`.litertlm`), empaquetada para inferencia en dispositivo (on-device) mediante el runtime LiteRT-LM de Google. El modelo es el motor que impulsa Docling, la herramienta de parseo documental del ecosistema docling-project.
 
-Con 258 millones de parámetros (aproximadamente 338 MB en este bundle), es uno de los modelos de IA documental más pequeños que captura la estructura de tablas, no solo el texto. Esta conversión específica a LiteRT-LM está pensada para ejecutarse en CPU en dispositivos móviles y de borde, con pesos int8 y cómputo en punto flotante, y una ventana de contexto de 4096 tokens. La licencia es Apache-2.0.
+La tarea del modelo es recibir una imagen de página y emitir DocTags, un marcado estructurado que describe elementos de maquetación, estructura de tablas en formato OTSL, código y fórmulas. Posteriormente, `docling-core` convierte esa salida de forma sin pérdida a Markdown, HTML o JSON. Con 258M parámetros y un fichero de aproximadamente 338 MB, es uno de los modelos de document-AI más pequeños capaces de capturar la estructura de tablas, no solo el texto plano.
 
-## Especificaciones técnicas
+Su relevancia radica en la combinación de tamaño reducido, licencia Apache-2.0 y ejecución íntegra en CPU de dispositivos móviles y portátiles, sin dependencia de GPU ni de servicios en la nube. El fichero empaquetado ocupa 0,7 GB en el repositorio de Hugging Face y está cuantizado a int8 en pesos con cómputo en coma flotante.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | VLM: SigLIP-base p16 (vision) + decoder tipo Llama (granite) |
+| Arquitectura | VLM con encoder visual SigLIP-base p16 y decoder tipo Llama (transformer denso) |
 | Parametros totales | 258M |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | 4096 (KV cache) |
-| Tipos de cuantizacion | int8 (pesos int8 con cómputo float); int4 probado y rechazado |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | 4096 tokens (cache KV) |
+| Tipos de cuantizacion | int8 en pesos con cómputo float (int4 probado y descartado por corromper DocTags) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | .litertlm (LiteRT-LM) |
+| Formato de pesos | `.litertlm` (LiteRT-LM); modelo base en safetensors en el repo de IBM |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura combina un encoder de visión SigLIP-base p16 (entrada 512×512, 1024 parches) con un pixel-shuffle ×4 y un conector lineal, que produce 64 tokens de imagen en int8. El decoder es un modelo de arquitectura Llama de la familia granite, con 576 dimensiones, 30 capas, atención GQA 9/3 y vocabulario de 100k tokens. Los pesos del decoder se cuantizan a int8 pero el cómputo se realiza en punto flotante; la cuantización int4 se probó y se descartó porque corrompía los DocTags generados.
+El modelo combina un encoder visual SigLIP-base con parches de 16 píxeles (entrada 512×512, 1024 parches), seguido de pixel-shuffle ×4 y un conector lineal que reduce la representación a 64 tokens de imagen. El decoder es un transformer denso de arquitectura Llama con dimensión 576, 30 capas, atención GQA con ratio 9/3 y vocabulario de 100k tokens. En esta conversión, el encoder visual se cuantiza a int8 (correlación 0,98 frente al original fp32, salida estructuralmente idéntica) y el decoder mantiene pesos int8 con cómputo float.
 
-El modelo base se entrenó como parte del proyecto Docling de IBM para consolidar en un solo VLM las funciones de múltiples modelos de propósito único (OCR, análisis de maquetación, reconocimiento de tablas). No se dispone de información sobre el número de tokens de entrenamiento ni la composición del dataset en los materiales proporcionados. La conversión a LiteRT-LM no altera el comportamiento del modelo original, salvo por la cuantización int8 de pesos y la restricción de entrada a imágenes pre-redimensionadas a 512×512 con filtro bilinear.
+El modelo base se entrena con un esquema de división de imagen en mosaicos (tiles) más una vista global; esta conversión ejecuta únicamente la ruta de vista global única a 512×512. Los detalles sobre volumen de tokens de entrenamiento, composición del dataset y uso de RLHF/DPO no están disponibles en la información proporcionada. La innovación destacable de este empaquetado es la viabilidad de ejecutar un VLM de parseo documental íntegramente en CPU de móvil con latencias de decenas de segundos por página.
 
 ## Capacidades
 
-- Conversión de páginas de documentos a DocTags, un marcado estructurado con elementos de maquetación, tablas OTSL, código y fórmulas.
-- Generación de salida convertible a Markdown, HTML o JSON mediante docling-core.
-- Reconocimiento de estructura de tablas (no solo texto) gracias al formato OTSL.
-- Procesamiento multimodal: entrada de imagen y texto, salida de texto.
-- Ejecución en CPU en dispositivos de borde y móviles (Android, macOS).
-- No soporta tool calling, ni agentes, ni razonamiento multi-paso.
-- No hay información sobre capacidades multilingües específicas.
+- Conversión de imágenes de página a DocTags: extracción de títulos, párrafos, listas, tablas (estructura OTSL), código y fórmulas.
+- Reconocimiento de estructura de tablas, incluyendo celdas de datos y cabeceras, no solo texto.
+- Procesamiento multimodal imagen-texto con pipeline `image-text-to-text`.
+- Salida estructurada convertible sin pérdida a Markdown, HTML o JSON mediante `docling-core`.
+- Ejecución on-device en CPU sin aceleración GPU.
+- No se documenta soporte de tool calling, function calling, agentes ni modo thinking en la información disponible.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Digitalización de documentos en el dispositivo: convertir páginas escaneadas o capturas de pantalla a Markdown estructurado sin enviar datos a la nube, aprovechando la ejecución local en CPU.
-- Extracción de tablas para análisis de datos: el modelo conserva la estructura OTSL de las tablas, lo que permite exportar a CSV o JSON con celdas correctamente alineadas.
-- Asistente de documentación sin conexión: en entornos con conectividad limitada (aviones, barcos, zonas rurales), convertir informes o manuales a HTML para su consulta local.
-- Pipeline de conversión de documentos en producción: integrar el modelo en el ecosistema Docling para procesar lotes de PDFs, diapositivas o imágenes de páginas, generando DocTags que docling-core transforma a los formatos finales.
-- Accesibilidad y re-formateo: transformar documentos escaneados en texto estructurado legible para lectores de pantalla o para re-maquetación web.
-- Automatización de archivos empresariales: extraer estructura de tablas y maquetación de informes financieros o técnicos para su ingestión en sistemas de gestión documental.
-- Demostración de IA generativa en móvil: usar la app Google AI Edge Gallery para ejecutar el modelo en un teléfono Android y obtener DocTags directamente desde una imagen de página.
+- Digitalización de informes corporativos en movilidad: capturar una página con la cámara del teléfono, redimensionarla a 512×512 BILINEAR y obtener DocTags con la estructura del documento para su conversión a Markdown en la propia app, sin enviar datos a la nube.
+- Extracción de tablas en aplicaciones de campo: el modelo reconstruye rejillas completas (verificado con una tabla 5×6 y 25/25 celdas correctas) en unos 35 segundos en un Galaxy S26, adecuado para inventarios, albaranes o partes de trabajo.
+- Preprocesado de documentos para RAG: convertir páginas escaneadas a Markdown estructurado antes de la indexación, preservando tablas y jerarquía de secciones que los pipelines de chunking necesitan.
+- Archivado documental con privacidad estricta: al ejecutarse en CPU local con un fichero de 338 MB, permite procesar documentos confidenciales en equipos sin GPU y sin conexión.
+- Automatización de escritorio en portátiles: con 912 tok/s de prefill y 64 tok/s de decode en un Apple M4 Max, procesa páginas legibles a 512² en aproximadamente 5,2 segundos, útil para lotes moderados de facturas o extractos.
+- Integración en aplicaciones Android mediante Google AI Edge Gallery: importación del fichero `.litertlm` como modelo local y uso de la tarea Ask Image para conversión interactiva de páginas.
+- Procesamiento de páginas densas por mosaicos: para documentos multicoulumna o fórmulas pequeñas, dividir la página en recortes y enviar cada uno como imagen 512×512 independiente.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) para este modelo en la información disponible. Sin embargo, la model card de esta conversión incluye mediciones de calidad y rendimiento en una prueba de estructura concreta:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Sí se documentan mediciones del fichero exacto:
 
-| Prueba | Resultado |
-|---|---|
-| Structure gate (página sintética con tabla 5×6) | Título exacto, cuadrícula OTSL completa, 25/25 celdas correctas |
-| Latencia en macOS M4 Max (CPU) | 5,2 s/página (~240 tokens de salida) |
-| Latencia en Galaxy S26 (CPU, SM8850) | 35,4 s/página (1025 tokens de salida) |
-| Prefill (M4 Max CPU) | 912 tok/s |
-| Decode (M4 Max CPU) | 64,0 tok/s |
-| TTFT (M4 Max CPU) | 0,57 s |
-| Paridad de conversión del vision tower | Correlación 1,000 vs. original fp32 (int8: 0,98) |
+| Prueba | Dispositivo | Resultado |
+|---|---|---|
+| Estructura (página sintética con tabla 5×6) | macOS CPU, Apple M4 Max, litert-lm 0.15.0 | Título exacto, rejilla OTSL completa, 25/25 celdas, 5,2 s/página (~240 tokens) |
+| Estructura (misma página) | Galaxy S26 CPU (SM8850), LiteRT-LM v0.16.1 | Título exacto, rejilla completa, 25/25 celdas, 35,4 s/página (1025 tokens), dos ejecuciones idénticas byte a byte |
+| Demo Gallery Ask Image | Galaxy S26 CPU, AI Edge Gallery 1.0.18 | 34,7 s, 25/25 celdas correctas |
+| Prefill / decode / TTFT | Apple M4 Max CPU | 912 tok/s / 64,0 tok/s / 0,57 s (prompt 256, decode 256, 3 runs) |
+| Encoder visual | Apple M4 Max CPU | ~0,5 s por imagen (no incluido en la tabla anterior) |
+| Fidelidad de conversión del encoder | — | Correlación 1.000 vs original fp32; int8 empaquetado 0,98 |
 
 ## Requisitos de hardware
 
-- Backend previsto: CPU únicamente. El bundle no crea un motor GPU; el delegado GPU rechaza la proyección cuantizada en la inicialización del kernel.
-- No se requiere VRAM para inferencia en GPU, ya que no está soportada.
-- GPU recomendadas: ninguna; la variante fp16 en Android OpenCL es ~4× más lenta que CPU y no se distribuye.
-- Despliegue en CPU de Apple Silicon (M4 Max verificado) y CPU de Android (Galaxy S26 verificado).
-- Opciones de despliegue: LiteRT-LM runtime, Google AI Edge Gallery (Android), CLI `litert-lm benchmark`.
-- Latencia medida: 5,2 s/página en M4 Max y 35,4 s/página en Galaxy S26 con salida de 1025 tokens.
+- VRAM: no aplica; el backend previsto es CPU. El fichero ocupa ~338 MB en disco y el repositorio 0,7 GB.
+- GPU: el fichero distribuido no crea motor GPU; el delegado GPU rechaza la proyección cuantizada 576×576 en la inicialización del kernel (`Shape mismatch: {576,1,1,576} vs {1,1,576,576}` en macOS y Android OpenCL). Una variante con decoder fp16 funciona en OpenCL de Android pero es ~4× más lenta que CPU.
+- Consumer GPU: no es el objetivo; funciona en CPU de portátiles y móviles.
+- Despliegue: runtime LiteRT-LM (CLI `litert-lm`), Google AI Edge Gallery en Android, y el modelo base en `transformers` desde el repositorio de IBM.
+- Latencia y throughput medidos: 5,2 s/página en Apple M4 Max CPU; 35,4 s/página en Galaxy S26 CPU; prefill 912 tok/s y decode 64 tok/s en M4 Max.
+- Requisito de entrada: imagen pre-redimensionada a exactamente 512×512 con remuestreo BILINEAR en la aplicación; el remuestreador interno usa otro filtro y provoca alucinación de página.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Ejecucion on-device |
 |---|---|---|---|---|---|
-| litert-community/granite-docling-258M (este) | 258M | 4096 | Apache-2.0 | .litertlm | int8, CPU, on-device |
-| ibm-granite/granite-docling-258M (original) | 258M | 4096 | Apache-2.0 | safetensors (fp32) | Modelo base, ejecución en transformers |
-| Docling pipeline (modelos múltiples) | varios | no disponible | MIT (Docling) | no disponible | Pipeline tradicional de OCR + layout + tablas |
+| granite-docling-258M (LiteRT-LM) | 258M | 4096 (KV) | VLM documento a DocTags | Apache-2.0 | Sí, CPU móvil y portátil |
+| ibm-granite/granite-docling-258M (original) | 258M | no disponible | VLM documento a DocTags | Apache-2.0 | Vía `transformers`, requiere más recursos |
+| Alternativas de OCR/document-AI de tamaño comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparación con otros VLM pequeños de conversión de documentos no está disponible en los datos proporcionados. La diferencia principal con el modelo original es el formato de pesos (int8 en LiteRT-LM vs. fp32 en safetensors) y la restricción de entrada a 512×512 BILINEAR; el rendimiento estructural es idéntico entre ambos según las mediciones de la model card.
+No se dispone en la información proporcionada de datos de benchmarks comparativos con otros modelos de document-AI.
 
 ## Limitaciones y advertencias
 
-- **Contrato de entrada obligatorio**: la imagen debe pre-redimensionarse exactamente a 512×512 con resampling BILINEAR en la aplicación. Si no se hace, el modelo produce una página alucinada en lugar de la real.
-- **Degradación en páginas densas**: en modo single-512, páginas multi-columna y fórmulas pequeñas degradan la calidad de salida. Para esos casos se recomienda dividir la página en tiles y enviar los recortes.
-- **Sin soporte GPU**: el bundle no funciona con el delegado GPU de LiteRT-LM; el backend previsto es CPU.
-- **Cuantización int4 descartada**: la cuantización int4 con cómputo entero corrompe los DocTags; el bundle solo funciona con int8 y cómputo float.
-- **Riesgo de alucinación**: si se envía una imagen con un tamaño o filtro de redimensionado incorrecto, el modelo puede producir una salida inventada.
-- **Idiomas no documentados**: no se ha especificado qué idiomas soporta el modelo; la model card no incluye esa información.
-- **Uso comercial**: la licencia Apache-2.0 permite uso comercial, pero se recomienda el uso conjunto con Granite Guardian para filtrar contenido de riesgo según la documentación de IBM.
-- **Latencia en dispositivos de gama baja**: en un móvil de gama media (Galaxy S26) la conversión tarda ~35 s por página; no es adecuado para procesamiento en tiempo real.
+- Sensibilidad al remuestreo: cambiar de BILINEAR a LANCZOS en la entrada puede hacer que el modelo pase de salida perfecta a degenerada; es un rasgo del modelo base, no de la conversión.
+- Modo de vista global única: páginas multicoulumna densas y fórmulas pequeñas se degradan; se recomienda dividir en mosaicos y enviar recortes.
+- El modelo puede alucinar una página completa si recibe una imagen de entrada mayor que 512×512 sin pre-redimensionar.
+- La cuantización int4 fue probada y rechazada: la cuantización con cómputo entero corrompe los DocTags en este decoder.
+- Sin soporte GPU en el fichero distribuido; la variante fp16 en OpenCL es ~4× más lenta que CPU.
+- La UI de AI Edge Gallery oculta las etiquetas `<otsl>`/`<fcel>`, por lo que la tabla se muestra como texto concatenado; hay que pasar la salida cruda a `docling-core`.
+- No se documentan idiomas soportados ni sesgos conocidos en la información disponible.
+- Licencia Apache-2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base de IBM y de los componentes del runtime LiteRT-LM.
+- Latencia de decenas de segundos por página en móvil: no apta para procesamiento interactivo de alta frecuencia en ese hardware.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/litert-community/granite-docling-258M
-- Modelo base original: https://huggingface.co/ibm-granite/granite-docling-258M
-- LiteRT-LM (runtime): https://github.com/google-ai-edge/litert-lm
-- Docling (proyecto): https://github.com/docling-project/docling
-- docling-core (conversor de DocTags): https://github.com/docling-project/docling-core
+- Modelo base: https://huggingface.co/ibm-granite/granite-docling-258M
+- Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
+- Docling: https://github.com/docling-project/docling
+- docling-core: https://github.com/docling-project/docling-core
 - Google AI Edge Gallery: https://github.com/google-ai-edge/gallery
-- Documentación de IBM Granite Docling: https://www.ibm.com/granite/docs/models/docling
-- Anuncio de IBM Granite-Docling: https://www.ibm.com/new/announcements/granite-docling-end-to-end-document-conversion
-- Implementación de referencia (GitHub): https://github.com/felipemeres/granite-docling-implementation
-- Repositorio adicional con Granite Guardian: https://github.com/pgadet-wq/granite-docling-258M

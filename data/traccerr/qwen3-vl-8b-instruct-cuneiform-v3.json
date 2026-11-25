@@ -5,7 +5,7 @@
   "author": "TRACCERR",
   "url": "https://huggingface.co/TRACCERR/Qwen3-VL-8B-Instruct-Cuneiform-v3",
   "created_at": "2026-11-22T14:22:30.000Z",
-  "updated_at": "2026-11-23T17:44:29.000Z",
+  "updated_at": "2026-11-25T00:19:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

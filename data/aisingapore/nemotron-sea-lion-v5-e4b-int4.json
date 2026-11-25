@@ -5,7 +5,7 @@
   "author": "aisingapore",
   "url": "https://huggingface.co/aisingapore/Nemotron-SEA-LION-v5-E4B-INT4",
   "created_at": "2026-11-17T02:38:18.000Z",
-  "updated_at": "2026-11-23T10:57:25.000Z",
+  "updated_at": "2026-11-24T09:20:08.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -46,7 +46,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 17,
+  "downloads_30d": 38,
   "trending_score": 0,
   "parameters": 7996156490,
   "parameters_human": "8.00B",

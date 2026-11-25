@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "voyagar/Qwen3-ASR-1.7B-onnx-int8",
+  "slug": "voyagar-qwen3-asr-1-7b-onnx-int8",
+  "author": "voyagar",
+  "url": "https://huggingface.co/voyagar/Qwen3-ASR-1.7B-onnx-int8",
+  "created_at": "2026-11-25T04:28:43.000Z",
+  "updated_at": "2026-11-25T04:29:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnxruntime",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "qwen3_asr",
+    "qwen3-asr",
+    "int8",
+    "automatic-speech-recognition",
+    "ko",
+    "en",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:quantized:Qwen/Qwen3-ASR-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4382376590,
+  "storage_human": "4.4 GB",
+  "context_length": null,
+  "base_model": "andrewleech/qwen3-asr-1.7b-onnx, Qwen/Qwen3-ASR-1.7B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

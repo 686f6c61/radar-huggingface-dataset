@@ -2,98 +2,125 @@
 
 ## Resumen
 
-MiniCPM5-2B-GGUF es la conversion a formato GGUF del modelo base openbmb/MiniCPM5-2B, publicada por el usuario saidutta69. No se trata de un modelo entrenado desde cero, sino de una cuantizacion calibrada con matriz de importancia (imatrix) cuyo objetivo es conservar mas calidad que las cuantizaciones GGUF equivalentes sin calibrar, especialmente en los tipos K-quant e i-quant de tamano reducido.
+MiniCPM5-2B-GGUF es la conversión a formato GGUF del modelo openbmb/MiniCPM5-2B, un transformer denso de 2.516 millones de parámetros (2,5B) desarrollado originalmente por OpenBMB y cuantizado por el usuario saidutta69 con calibración mediante importance matrix (imatrix). El modelo resuelve el problema de ejecutar un LLM con razonamiento explícito, soporte nativo de tool calling y ventana de contexto de 131.000 tokens en hardware de consumo, incluyendo GPUs con menos de 3 GB de VRAM, CPUs y dispositivos Apple Silicon.
 
-El checkpoint original tiene 2.516.756.480 parametros (aproximadamente 2,5 mil millones) y esta pensado para generacion de texto conversacional en ingles y chino. La relevancia de esta publicacion es practica: permite ejecutar un modelo de ~2,5B en hardware de consumo mediante llama.cpp u Ollama, con ficheros que van desde ~1,4 GB en IQ4_XS hasta ~2,4 GB en Q8_0.
+La relevancia de esta ficha radica en que el autor publica una escalera completa de cuantizaciones (Q8_0, Q6_K, Q5_K_M, Q4_K_M, IQ4_XS) con mediciones independientes de velocidad, VRAM y perplejidad sobre una Tesla T4, algo poco habitual en repositorios de cuantización. El modelo base es bilingüe inglés/chino y está entrenado con RL para emitir trazas de razonamiento entre marcadores `[Start thinking]` y `[End thinking]`.
 
-El repositorio incluye la propia matriz de importancia (`MiniCPM5-2B.imatrix`) generada sobre 100 fragmentos de WikiText-2 train con contexto de 512 tokens, lo que permite reproducir o auditar el proceso de cuantizacion. La licencia declarada es Apache-2.0 y el repo ocupa 9,5 GB en total.
+La licencia Apache 2.0 permite uso comercial sin restricciones adicionales, y el tamaño del repositorio (9,5 GB) refleja que contiene toda la escalera de cuantizaciones más el fichero imatrix de calibración.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (modelo base openbmb/MiniCPM5-2B, convertido con `convert_hf_to_gguf.py` de llama.cpp; no se especifica en la informacion proporcionada) |
-| Parametros totales | 2.516.756.480 (~2,5B) |
-| Parametros activos | No aplica (no hay indicios de arquitectura MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | IQ4_XS (~1,4 GB), Q4_K_M (~1,5 GB), Q5_K_M (~1,7 GB), Q6_K (~2,0 GB), Q8_0 (~2,4 GB); conversion base en F16 |
-| Idiomas soportados | Ingles (en) y chino (zh) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (incluye fichero de matriz de importancia `.imatrix` de 3 MB) |
-| Modelo base | openbmb/MiniCPM5-2B |
-| Pipeline declarado | text-generation |
-| Tamano del repositorio | 9,5 GB |
-| Fecha de creacion | 2026-09-17 |
-| Ultima actualizacion | 2026-09-17 |
+| Arquitectura | Transformer denso (no MoE) |
+| Parametros totales | 2.516.756.480 (2,5B) |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | 131.000 tokens (131k) |
+| Tipos de cuantizacion | Q8_0, Q6_K, Q5_K_M, Q4_K_M, IQ4_XS (K-quants e i-quants calibrados con imatrix) |
+| Idiomas soportados | ingles (en), chino (zh) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF; fichero imatrix adicional de 3 MB para calibracion |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna del modelo base (numero de capas, tipo de atencion, funcion de activacion, uso de GQA, etc.). Lo unico verificable es el proceso de conversion y cuantizacion aplicado: se uso `convert_hf_to_gguf.py --outtype f16` con una version reciente de llama.cpp para transformar el checkpoint de Hugging Face a GGUF en precision F16, y despues `llama-quantize --imatrix` para generar las variantes calibradas.
+El modelo base es un transformer denso de 2,5B parámetros. La model card del repositorio de cuantización no detalla la composición del dataset de entrenamiento, el número de tokens procesados ni si se aplicaron etapas de RLHF o DPO más allá de la mención a entrenamiento con RL para el modo de razonamiento. Lo que sí se documenta es que el modelo emite trazas de pensamiento delimitadas por `[Start thinking]` y `[End thinking]`, y que dicho razonamiento se produce en chino cuando el prompt está en chino, lo que sugiere un entrenamiento bilingüe alineado por idioma.
 
-La innovacion tecnica de esta publicacion es el uso de calibracion por matriz de importancia (imatrix). El fichero `MiniCPM5-2B.imatrix` se calculo con `llama-imatrix` sobre 100 fragmentos del split de entrenamiento de WikiText-2 con una longitud de contexto de 512 tokens. Esta matriz pondera cada peso segun su importancia para la perplejidad sobre datos reales, de modo que los tipos IQ4_XS, Q4_K_M y Q5_K_M preservan mejor la calidad que sus equivalentes sin calibrar. No se dispone de informacion sobre el dataset de entrenamiento del modelo base, el numero de tokens vistos ni si hubo etapas de RLHF, DPO u otro ajuste por preferencias.
+La innovación técnica de este repositorio concreto no está en la arquitectura sino en el proceso de cuantización: las cuantizaciones Q5_K_M, Q4_K_M e IQ4_XS se han calibrado con una importance matrix generada a partir de datos de calibración, lo que reduce la pérdida de calidad frente a cuantizaciones no calibradas del mismo tamaño. El autor publica el fichero `.imatrix` (3 MB) de forma separada para permitir reproducir el proceso. La perplejidad de referencia en F16 es 15,16 según la model card, y la escalera de cuantizaciones mantiene incrementos de +0,02 (Q8_0) a +0,72 (IQ4_XS) puntos de perplejidad sobre esa referencia.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el pipeline declarado es `text-generation` y el tag `conversational`, orientado a dialogos multi-turno.
-- Multilingue limitado: soporte declarado de ingles y chino; no se declara soporte de castellano ni de otras lenguas.
-- Despliegue en local: las cuantizaciones permiten inferencia en CPU y GPU de gama baja mediante llama.cpp, Ollama u otros runners compatibles con GGUF.
-- Reproducibilidad de la cuantizacion: la inclusion del fichero `.imatrix` permite regenerar las cuantizaciones calibradas o crear otras nuevas con el mismo sesgo de calibracion.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el artefacto puede servirse a traves de infraestructura de inferencia compatible con Hugging Face.
-- Tool calling, function calling, agentes, razonamiento multi-paso, vision, audio y modo thinking: no disponibles en la informacion proporcionada.
+- Generación de texto conversacional multi-turno en inglés y chino.
+- Razonamiento explícito con trazas de pensamiento (`[Start thinking]` / `[End thinking]`), entrenado con RL.
+- Tool calling nativo: con el parámetro `tools=` el servidor devuelve `tool_calls` en formato OpenAI, con identificadores tipados y `finish_reason: tool_calls`. Verificado en vivo con `get_weather{"city":"Paris"}` y `calculate{"expr":"237*419"}`.
+- Aritmética estilo GSM8K: verificado correctamente en la cuantización Q4_K_M (resultado 29 en la comprobación citada).
+- Generación de código básico: la model card menciona una comprobación de `is_prime` correcta con guardas de casos límite.
+- Capacidad de seguir instrucciones de formato exacto, aunque la model card indica que solo se cumple "en la mayoría" de los casos.
+- Ventana de contexto larga de 131k tokens, adecuada para documentos extensos y conversaciones prolongadas.
+- Bilingüismo real: responde en chino fluido cuando se le pide, incluyendo el razonamiento interno en ese idioma.
 
 ## Casos de uso
 
-- Asistente conversacional local para escritorio: con el fichero Q4_K_M (~1,5 GB) el modelo cabe en cualquier portatil con 8 GB de RAM y puede gestionar dialogos multi-turno en ingles o chino sin conexion, usando Ollama como runtime.
-- Prototipado rapido de aplicaciones de chat: el tamano reducido de IQ4_XS (~1,4 GB) permite levantar un endpoint de prueba en segundos y validar prompts, formato de salida y flujos conversacionales antes de pasar a un modelo mayor.
-- Procesamiento de texto en el borde (edge computing): en dispositivos con CPU ARM o mini-PC sin GPU dedicada, la cuantizacion Q4_K_M ofrece un equilibrio entre huella de memoria y calidad suficiente para tareas de resumen y clasificacion.
-- Filtrado y preprocesado de texto en chino: dado que el modelo declara soporte de chino, se puede emplear para normalizacion, extraccion de entidades simples o generacion de resumenes en pipelines que mezclan contenido en ingles y chino.
-- Generacion de texto asistida en herramientas de escritorio: integracion via llama.cpp como biblioteca embebida en editores o aplicaciones de notas para autocompletado y reescritura de parrafos.
-- Banco de pruebas para evaluacion de cuantizaciones: al publicar cinco niveles de cuantizacion mas la matriz de calibracion, el repositorio sirve para medir experimentalmente la degradacion de perplejidad entre IQ4_XS, Q4_K_M, Q5_K_M, Q6_K y Q8_0 sobre el mismo modelo.
-- Servicio de bajo coste en CPU compartida: Q8_0 (~2,4 GB) permite desplegar una instancia casi sin perdida de precision en un contenedor con poca memoria, util para entornos de staging.
+- Asistente local en portátil sin GPU dedicada: con Q4_K_M (1,56 GB de pesos, 1.861 MiB de VRAM a contexto 8k) el modelo funciona en CPU o iGPU a velocidad de chat en tiempo real, lo que permite desplegar un asistente conversacional privado sin conexión a servicios externos.
+- Agente con tool calling en producción ligera: el soporte nativo de `tool_calls` en formato OpenAI permite integrarlo en orquestadores de agentes (LangChain, LlamaIndex, servidores compatibles con la API de OpenAI) para tareas como consultar APIs meteorológicas, ejecutar cálculos o recuperar datos estructurados, con un coste de infraestructura mínimo.
+- Procesamiento de documentos largos: los 131k tokens de contexto permiten resumir contratos, manuales técnicos o transcripciones extensas en una sola pasada, sin necesidad de fragmentación ni de pipelines RAG complejos.
+- Atención al cliente bilingüe inglés/chino: el modelo mantiene conversaciones multi-turno y responde en el idioma del usuario, incluyendo razonamiento en chino para consultas en chino, lo que lo hace adecuado para soporte de primer nivel en mercados asiáticos.
+- Clasificación y extracción de información con formato fijo: gracias a la ventana de contexto y a la capacidad de seguir instrucciones de formato, puede usarse para extraer campos estructurados de textos largos, aunque conviene validar el cumplimiento estricto del formato en producción.
+- Prototipado rápido de aplicaciones LLM: al caber en menos de 3 GB de VRAM en cualquier cuantización, permite iterar sobre prompts, plantillas de chat y flujos de tool calling en una sola GPU de consumo (RTX 3060, 4060, 4070) antes de escalar a modelos mayores.
+- Educación y experimentación con modelos de razonamiento: las trazas `[Start thinking]` permiten inspeccionar el proceso de razonamiento del modelo, útil para investigación sobre cadenas de pensamiento y para depurar por qué el modelo llega a una respuesta.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye cifras de MMLU, HumanEval, GSM8K, C-Eval ni de perplejidad comparada entre las distintas cuantizaciones, ni existe informacion de benchmarks en los resultados de busqueda web, que no guardan relacion con el modelo.
+Los datos disponibles son mediciones de velocidad, VRAM y perplejidad realizadas por el autor sobre una Tesla T4 con llama.cpp b10709 y offload completo (`-ngl 99`). No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K) en la información disponible.
+
+Velocidad (`llama-bench -p 512 -n 128`, Tesla T4):
+
+| Fichero | Tamano | Prompt (tok/s) | Generacion (tok/s) |
+|---|---|---|---|
+| Q8_0 | 2,68 GB | 3.334 | 79,8 |
+| Q6_K | 2,07 GB | 2.906 | 80,8 |
+| Q5_K_M | 1,81 GB | 3.002 | 94,7 |
+| Q4_K_M | 1,56 GB | 3.182 | 102,6 |
+| IQ4_XS | 1,42 GB | 3.358 | 114,5 |
+
+VRAM medida con `nvidia-smi` (offload completo, contexto 8.192):
+
+| Fichero | VRAM |
+|---|---|
+| Q8_0 | 2.799 MiB |
+| Q6_K | 2.281 MiB |
+| Q5_K_M | 2.065 MiB |
+| Q4_K_M | 1.861 MiB |
+| IQ4_XS | 1.737 MiB |
+
+Retención de calidad (perplejidad sobre WikiText-2 raw test, 1,29 MB, contexto 512):
+
+| Fichero | PPL | Delta vs Q8_0 | Delta declarado vs F16 |
+|---|---|---|---|
+| Q8_0 | 14,16 | - | +0,02 |
+| Q6_K | 14,18 | +0,02 | +0,08 |
+| Q5_K_M | 14,34 | +0,17 | +0,23 |
+| Q4_K_M | 14,58 | +0,42 | +0,49 |
+| IQ4_XS | 14,88 | +0,72 | +0,72 |
+
+La model card reporta además una perplejidad de referencia F16 de 15,16 medida con `llama-perplexity` sobre un subconjunto de 200 KB de WikiText-2 con contexto 512, cifra que difiere de la medición independiente (14,16 para Q8_0) por diferencias en el subconjunto evaluado.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (solo pesos, sin cache KV): IQ4_XS ~1,4 GB; Q4_K_M ~1,5 GB; Q5_K_M ~1,7 GB; Q6_K ~2,0 GB; Q8_0 ~2,4 GB. A estas cifras hay que sumar el coste de la cache KV, que depende de la longitud de contexto y del numero de capas del modelo base (dato no disponible).
-- GPU de gama consumer: cualquier GPU con 4 GB o mas de VRAM puede ejecutar las cuantizaciones IQ4_XS, Q4_K_M y Q5_K_M con margen, incluidas GTX 1650, RTX 3050, RTX 3060, RTX 4060 o superiores. Q8_0 requiere alrededor de 3-4 GB de VRAM para contexto corto.
-- GPU de centro de datos: no es necesario recurrir a A100, H100 ni L40S para un modelo de 2,5B; estas solo tendrian sentido para servir muchas peticiones concurrentes en paralelo.
-- Ejecucion en CPU: las cuantizaciones K-quant e i-quant estan optimizadas para CPU con llama.cpp; IQ4_XS y Q4_K_M son las opciones recomendadas para equipos sin GPU.
-- Opciones de despliegue: llama.cpp (`llama-cli`), Ollama mediante un Modelfile con `FROM ./MiniCPM5-2B-Q4_K_M.gguf`, y cualquier runtime compatible con GGUF. vLLM y TGI no consumen GGUF directamente de forma nativa, por lo que requeririan el checkpoint original o una conversion adicional.
-- Latencia y throughput: no disponibles. El repositorio no publica mediciones de tokens por segundo en ningun hardware concreto.
+- VRAM estimada: de 1.737 MiB (IQ4_XS) a 2.799 MiB (Q8_0) con offload completo y contexto 8.192. Añadir aproximadamente 1 GB adicional para contexto si se amplía la ventana.
+- GPU recomendadas por cuantización: Q8_0 para RTX 3060/4070/5070 (12 GB); Q6_K para RTX 4060/3070 (8 GB); Q5_K_M para GTX 1660 Super/2060/3050 laptop (6 GB); Q4_K_M para CPU, Apple Silicon o móviles; IQ4_XS como opción mínima usable.
+- Cabe en cualquier GPU de consumo de la última década: todas las cuantizaciones ocupan menos de 3 GB de VRAM.
+- Despliegue: llama.cpp (`llama-server`, `llama-cli`), Ollama (`ollama run hf.co/saidutta69/MiniCPM5-2B-GGUF:Q4_K_M`), LM Studio, Jan y Docker Model Runner.
+- Rendimiento medido en Tesla T4: 102,6 tok/s de generación con Q4_K_M y 114,5 tok/s con IQ4_XS; 79,8 tok/s con Q8_0. Las cuantizaciones menores decodifican más rápido por estar limitadas por ancho de banda de memoria.
+- Para el modo de razonamiento conviene reservar al menos 1.024 tokens de generación (`n_predict`/`max_tokens`); en servidor, `--reasoning-budget 512` limita el pensamiento en tareas simples.
 
 ## Comparativa con modelos similares
 
-Los datos de la columna de MiniCPM5-2B proceden de la informacion proporcionada. Los de las alternativas son valores publicos de referencia para modelos de tamano comparable; no existen comparaciones de rendimiento publicadas entre MiniCPM5-2B y estas alternativas.
+No se dispone de datos de benchmarks de tareas para este modelo ni para alternativas comparables dentro de la información proporcionada, por lo que la comparación se limita a características estructurales verificables.
 
-| Modelo | Parametros | Contexto | Licencia | GGUF disponible | Benchmarks comparados |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| MiniCPM5-2B (este repo) | 2,52B | No disponible | Apache-2.0 | Si, con imatrix | No disponibles |
-| Llama 3.2 1B | ~1,24B | 128k | Llama 3.2 Community License | Si | No publicados frente a este modelo |
-| Llama 3.2 3B | ~3,21B | 128k | Llama 3.2 Community License | Si | No publicados frente a este modelo |
-| Gemma 2 2B | ~2,61B | 8.192 tokens | Gemma Terms of Use | Si, en la practica | No publicados frente a este modelo |
-| Phi-3-mini | ~3,8B | 4k o 128k segun variante | MIT | Si | No publicados frente a este modelo |
-
-Diferencias relevantes: el contexto de MiniCPM5-2B no esta documentado en esta ficha, mientras que Llama 3.2 declara 128k y Gemma 2 2B se limita a 8.192 tokens. En licencia, Apache-2.0 es mas permisiva que la licencia comunitaria de Llama 3.2 y que los terminos de Gemma, y equiparable a MIT en permisividad practica. En idiomas, MiniCPM5-2B declara solo ingles y chino, frente a la cobertura mas amplia que declaran las familias Llama, Gemma y Qwen.
+| MiniCPM5-2B (este repo, GGUF) | 2,5B | 131k | en, zh | Apache 2.0 | GGUF |
+| openbmb/MiniCPM5-2B (base) | 2,5B | 131k | en, zh | Apache 2.0 | safetensors (presumible, no confirmado en la informacion) |
+| Alternativas de ~2-3B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Idiomas: solo se declaran ingles y chino. No hay evidencia de buen rendimiento en castellano, por lo que no es adecuado para produccion en espanol sin una evaluacion previa.
-- Sesgos: no se documenta ninguna evaluacion de sesgos, toxicidad o alineacion del modelo base. Al ser un modelo pequeno, la tasa de respuestas incorrectas o poco matizadas en temas factuales puede ser alta.
-- Alucinacion: no hay datos de evaluacion de veracidad. En modelos de ~2,5B es esperable una tasa de alucinacion notable en tareas de conocimiento factual, por lo que conviene usar recuperacion aumentada (RAG) o verificacion posterior.
-- Perdida por cuantizacion: las variantes IQ4_XS y Q4_K_M introducen perdida de precision respecto a F16. Aunque la calibracion con imatrix reduce el dano frente a cuantizaciones sin calibrar, no se publican mediciones de perplejidad que cuantifiquen esa perdida.
-- Contexto desconocido: al no documentarse la longitud de contexto del modelo base, no se puede garantizar el comportamiento en conversaciones largas ni planificar el uso de cache KV.
-- Procedencia del artefacto: el repositorio es de un autor individual (saidutta69) y no del equipo de openbmb. Aunque el tag `base_model` apunta al checkpoint oficial, conviene verificar los hashes de los ficheros GGUF antes de usarlos en produccion.
-- Licencia comercial: el repo declara Apache-2.0, que permite uso comercial, pero la responsabilidad de confirmar la licencia del modelo base openbmb/MiniCPM5-2B recae en quien despliega el modelo.
-- Adopcion: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, sin senales de validacion por parte de la comunidad.
-- Sin benchmarks: la ausencia total de resultados publicados impide comparar su calidad con alternativas del mismo rango de parametros.
+- Sesgos conocidos: no documentados en la información disponible; al ser un modelo entrenado principalmente en inglés y chino, es esperable un rendimiento degradado en castellano y otros idiomas no incluidos en la lista de idiomas soportados.
+- Riesgo de alucinación: inherente a modelos de 2,5B parámetros; las comprobaciones puntuales citadas (aritmética, `is_prime`) no sustituyen una evaluación sistemática.
+- Limitación de idioma: solo inglés y chino están declarados como soportados; no hay evidencia de calidad en castellano.
+- El modo de razonamiento consume tokens: si se configura un límite de generación bajo (menos de 1.024 tokens), las respuestas pueden cortarse a mitad del pensamiento.
+- El cumplimiento de instrucciones de formato exacto es parcial según la propia model card ("mostly followed"), por lo que en producción conviene validar y parsear las salidas con tolerancia a fallos.
+- Las mediciones de rendimiento proceden de una única GPU (Tesla T4) y de un único entorno (llama.cpp b10709); el rendimiento en otras GPUs, backends o versiones de llama.cpp puede variar.
+- Las cifras de perplejidad de la model card y de la comprobación independiente no son directamente comparables entre sí por usar subconjuntos de evaluación distintos.
+- Licencia Apache 2.0: permite uso comercial, modificación y redistribución con atribución; no se identifican restricciones adicionales en la información disponible.
+- El repositorio es una cuantización de terceros (usuario saidutta69), no una publicación oficial de OpenBMB; para producción conviene verificar la integridad de los ficheros y considerar el modelo base original.
 
 ## Enlaces
 
-- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/saidutta69/MiniCPM5-2B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/saidutta69/MiniCPM5-2B-GGUF
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
-- llama.cpp (herramientas `convert_hf_to_gguf.py`, `llama-imatrix`, `llama-quantize`): https://github.com/ggerganov/llama.cpp
+- Organización OpenBMB en Hugging Face: https://huggingface.co/openbmb
+- llama.cpp (backend de inferencia): https://github.com/ggml-org/llama.cpp
 - Ollama: https://ollama.com
-- Nota sobre la busqueda web: los resultados recuperados en la busqueda no guardan ninguna relacion con el modelo (corresponden a servicios de prevision meteorologica) y no aportan documentacion tecnica, papers ni demos adicionales.
+- LM Studio: https://lmstudio.ai
+- Jan: https://jan.ai

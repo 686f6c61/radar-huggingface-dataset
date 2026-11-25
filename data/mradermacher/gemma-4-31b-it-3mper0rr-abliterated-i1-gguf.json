@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/gemma-4-31b-it-3MPER0RR-abliterated-i1-GGUF",
   "created_at": "2026-09-02T10:05:20.000Z",
-  "updated_at": "2026-09-06T12:01:18.000Z",
+  "updated_at": "2026-11-24T21:31:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -14,17 +14,19 @@
   "tags": [
     "transformers",
     "gguf",
+    "gemma4",
+    "conversational",
+    "safetensors",
     "en",
     "base_model:3MPER0RR/gemma-4-31b-it-3MPER0RR-abliterated",
     "base_model:quantized:3MPER0RR/gemma-4-31b-it-3MPER0RR-abliterated",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
-    "imatrix",
-    "conversational"
+    "imatrix"
   ],
   "likes": 0,
-  "downloads_30d": 260,
+  "downloads_30d": 634,
   "trending_score": 0,
   "parameters": 30697345596,
   "parameters_human": "30.70B",
@@ -33,7 +35,8 @@
   "context_length": 262144,
   "base_model": "3MPER0RR/gemma-4-31b-it-3MPER0RR-abliterated",
   "formats": [
-    "gguf"
+    "gguf",
+    "safetensors"
   ],
   "is_conversational": true,
   "gated": false,

@@ -2,87 +2,106 @@
 
 ## Resumen
 
-Este repositorio contiene una extracción independiente del cabezal MTP (multi-token prediction) nativo del modelo Qwen3.8-27B, empaquetado como un drafter servible para decodificación especulativa en stacks MLX. El autor, caslca, lo publica bajo licencia Apache-2.0 con un aviso explícito de que es una versión de prueba ("probe-only") que ha superado una prueba de velocidad pareada pero no una evaluación de calidad OFAT (one-factor-at-a-time). El drafter tiene 110,6 millones de parámetros, está pre-cuantizado en int4 con grupo de tamaño 64 y ocupa aproximadamente 0,3 GB.
+`caslca/Qwen3.8-27B-mlx-uniform-4bit-mtp-drafter` es un predictor MTP (multi-token prediction) externo para el modelo objetivo `caslca/Qwen3.8-27B-mlx-uniform-4bit`. No es un modelo de chat autónomo: se trata de una cabeza MTP extraída del modelo base, cuantizada en int4 afín con grupo de 64, que se usa como drafter en decodificación especulativa dentro del ecosistema MLX (Apple Silicon). El repositorio ocupa 0,3 GB y contiene 424.699.392 parámetros, es decir, aproximadamente 300 MB de pesos más el tokenizador.
 
-El modelo base del que se extrae es Qwen3.8-27B, un modelo denso multimodal de 27B parámetros con atención híbrida (lineal en 48 de 64 capas), torre de visión y ventana de contexto nativa de 262K tokens. Este drafter se usa como modelo auxiliar que predice tokens futuros para acelerar la generación del modelo principal mediante decodificación especulativa. Los resultados medidos por el autor muestran una aceleración de 1,46× a 1,58× en throughput con tasas de aceptación del 68-76%, aunque advierte que no debe usarse para benchmarks ni en producción sin certificar la neutralidad de calidad.
+Su relevancia es práctica: permite acelerar la decodificación del modelo de 27B en hardware Apple sin alterar la salida. El autor documenta una campaña de exactitud con distancia de variación total máxima 0 entre MTP activado y desactivado en contextos de 1K, 8K, 32K y 64K, y una velocidad de decodificación de 1,72× en el punto de operación desplegado (47,3 frente a 28,1 tok/s ponderados por token) con una tasa de aceptación de borradores de 0,81.
+
+La licencia es Apache 2.0. El modelo está pensado exclusivamente para emparejarse con el artefacto objetivo correspondiente: la tasa de aceptación y la calidad no se transfieren a otros fine-tunes o cuantizaciones. El autor mantiene explícitamente una etiqueta INCONCLUSIVE sobre la comparación de MBPPPlus, que la aprobación de despliegue no elimina.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | qwen3_5_mtp (cabezal MTP de 1 capa) |
-| Parametros totales | 110.618.112 |
-| Parametros activos | no aplicable (modelo denso) |
-| Longitud de contexto | no disponible (depende del modelo base) |
-| Tipos de cuantizacion | int4 affine, grupo de 64 |
+| Arquitectura | Cabeza MTP nativa `qwen3_5_mtp` de una capa, extraída del modelo objetivo (drafter para decodificación especulativa) |
+| Parametros totales | 424.699.392 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 262.144 tokens (límite del objetivo en el runtime certificado) |
+| Tipos de cuantizacion | int4 afín, grupo de 64 (uniform-4bit) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (MLX) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (librería MLX) |
 
 ## Arquitectura y entrenamiento
 
-El drafter es una extracción del cabezal MTP que ya viene incluido en el modelo Qwen3.8-27B. En el repositorio troncal (`caslca/Qwen3.8-27B-mlx-uniform-4bit`), el cabezal reside en el archivo `optiq/mtp.safetensors` con 29 tensores, fuera del índice de pesos y por tanto inerte durante la carga normal. Este repositorio lo reempaqueta como un directorio drafter cargable con `model_type: qwen3_5_mtp`, una sola capa de cabecera, pre-cuantizado en int4 con grupo de tamaño 64.
+El artefacto es una extracción de una sola capa de la cabeza MTP nativa `qwen3_5_mtp` del modelo objetivo `Qwen3.8-27B-mlx-uniform-4bit`, cuantizada en int4 afín con grupo de 64. No se ha entrenado desde cero ni se ha sometido a un proceso de alineación propio: hereda los pesos de la cabeza MTP del objetivo y se limita a predecir tokens adicionales que el modelo principal verifica después. El uso previsto es de dos tokens borrador por ronda, según el linaje histórico de servicio documentado por el autor.
 
-El modelo base Qwen3.8-27B es un transformer denso con atención híbrida: 48 de sus 64 capas usan atención lineal y las 16 restantes atención completa. Incluye una torre de visión y un cabezal MTP integrado. El drafter no ha sido entrenado de forma independiente; es una extracción del componente ya entrenado del modelo base. El autor indica que el tronco es bit-idéntico a `mlx-community/Qwen3.8-27B-4bit` (2179 de 2180 tensores con md5 idénticos; la diferencia es la torre de visión restaurada), por lo que el drafter es compatible con ambas copias.
+El runtime certificado es MLX-VLM en el commit `1c7c8fa1`, MLX-Serve en `1ddf6f84` y MLX/Metal 0.32.4, medido en una máquina M5 Max de 128 GB conectada a corriente. La innovación técnica es la decodificación especulativa con verificación exacta: el autor reporta identidad byte a byte entre MTP activado y desactivado en 20 de 20 ítems de math500 con muestreo desplegado, y una campaña de exactitud con tokens forzados en contextos de corto, 1K, 8K, 32K y 64K con distancia de variación total máxima 0, además de identidad voraz en 24 ítems de matemáticas, código y judge, identidad entre cargas y continuidad multiturno. No se documenta el volumen de tokens de entrenamiento ni la composición del dataset, porque no aplica a un artefacto de extracción.
 
 ## Capacidades
 
-- Decodificación especulativa: genera k=2 tokens candidatos por ronda para acelerar la inferencia del modelo principal.
-- Integración con MLX: funciona con stacks MLX que soporten drafter MTP externos mediante las opciones `draft_kind: mtp` y `draft_model`.
-- Pre-cuantizado: viene en int4 affine con grupo de 64, listo para cargar sin conversión adicional.
-- Compatibilidad con el modelo base: empareja con `caslca/Qwen3.8-27B-mlx-uniform-4bit` o `mlx-community/Qwen3.8-27B-4bit`.
-- No es un modelo de generación autónomo: no puede generar texto por sí mismo; solo actúa como acelerador del modelo principal.
-- Sin capacidades de vision, tool calling, agentes ni razonamiento multi-paso: estas dependen del modelo base, no del drafter.
+- Predicción especulativa de tokens para el objetivo `Qwen3.8-27B-mlx-uniform-4bit`: genera borradores que el modelo principal verifica, sin cambiar la distribución de salida.
+- Aceleración de decodificación en el punto de operación desplegado: 1,72× de ratio de decodificación (intervalo de confianza del 95 % [1,66; 1,79], media geométrica de ratios por ítem con bootstrap de ítems), 47,3 frente a 28,1 tok/s ponderados por token, con 1,6K tokens generados de media.
+- Tasa de aceptación de borradores de 0,81 en el mismo punto de operación.
+- Compatibilidad con razonamiento en modo thinking: las mediciones se realizan con thinking activado y temperatura 0,6.
+- Soporte de contextos largos hasta el límite de 262.144 tokens del objetivo, con la salvedad de rendimiento descrita más abajo.
+- Uso en tareas de código agéntico y asistencia a investigación y diseño (categorías B2/C2 según la nomenclatura del autor).
+- No soporta tool calling, agentes ni multimodalidad por sí mismo: esas capacidades pertenecen al modelo objetivo, no al drafter.
 
 ## Casos de uso
 
-- Aceleración de inferencia en servidores MLX: el drafter se integra en `mlx_vlm.server` (fork) con `--draft-model` apuntando a este directorio, logrando ratios de 1,46× a 1,58× en throughput con prompts de codificación.
-- Despliegue en hardware local con VRAM limitada: al ser solo 0,3 GB, añade una sobrecarga mínima de memoria frente al modelo base de 27B, permitiendo decodificación especulativa en GPUs de consumo.
-- Optimización de servicios de chat con contexto largo: el modelo base Qwen3.8-27B soporta 262K tokens de contexto; el drafter reduce la latencia percibida en conversaciones multi-turno largas.
-- Generación de código asistida: los prompts de prueba usados por el autor son de codificación (lru_cache, token_bucket), mostrando su idoneidad para entornos de desarrollo con autocompletado.
-- Evaluación de decodificación especulativa en MLX: sirve como referencia para investigadores que quieran medir el impacto de MTP en diferentes cargas de trabajo.
-- Prototipado de pipelines de inferencia: al ser un componente extraíble, permite experimentar con diferentes configuraciones de drafter sin modificar el modelo base.
+- Aceleración de inferencia local en Apple Silicon: se empareja con el objetivo de 27B en MLX para elevar el throughput de decodificación de 28,1 a 47,3 tok/s ponderados por token en el punto de operación certificado, sin modificar las salidas.
+- Generación de código agéntico en estación de trabajo: el autor lo aprueba como segunda opción operativa para coding agéntico (B2/C2) con temperatura 0,6, razonamiento medio y MTP nativo activado, lo que encaja en flujos de edición de código con verificación posterior.
+- Asistencia a investigación y diseño con contexto largo: con ventana de hasta 262.144 tokens, se puede usar para resumir y razonar sobre documentos extensos, siempre que se acepte la penalización de decodificación cerca del límite de contexto.
+- Evaluación comparativa de decodificación especulativa: sirve como banco de pruebas reproducible para medir tasas de aceptación y ratios de velocidad en MLX, dado que el autor publica metodología de pares emparejados por ítem y bootstrap.
+- Despliegue en pipelines de CI con presupuesto de latencia: al reducir el tiempo de decodificación en torno a un 42 % en el punto de operación, permite ajustar presupuestos de generación en pruebas automatizadas de código (HumanEvalPlus reporta 94,5 % ordinario en ambos estados con MTP activado).
+- Servicio de razonamiento matemático con thinking: math500 reporta 99 % tanto con MTP activado como desactivado y cero discordancia observada en 100 ítems, lo que lo hace adecuado para servir respuestas de matemáticas sin degradación medida.
 
 ## Benchmarks y rendimiento
 
-El autor proporciona resultados de una prueba diagnóstica con dos prompts fijos de codificación, usando `mlx_vlm.server` (fork), ruta batched, k=2 tokens por ronda, KV turboquant 4-bit y temperatura 0,6:
+| Prueba | MTP OFF | MTP ON | Interpretación |
+|---|---:|---:|---|
+| Math500, n=100 | 99 % | 99 % | 0 pp [0, 0]; cero discordancia observada |
+| HumanEvalPlus, n=100 | 93 % | 94 % | +1 pp [0, +3] |
+| MBPPPlus, n=100 | 83 % | 82 % | −1 pp [−6, +3], INCONCLUSIVE; 2 solo-ON y 3 solo-OFF |
+| HumanEvalPlus estricto, n=164 (2026-08-30, TQ4) | 92,7 % | 93,9 % | Diferencia de 0 pp [−3, +3] en ordinario; 94,5 % ambos estados |
+| Prosa de investigación, 40 pares | — | — | Preferencia OFF 0,56 [0,45; 0,68], Holm p=0,28; sin potencia estadística |
+| Cadena de 128K, 4 niveles, 3 extracciones | 3/3 | 3/3 | Sin agotamiento de presupuesto |
+| Puerta de visión de 20 fotos | 19/20 | 19/20 | Mismo detalle de foto fallado |
 
-| Prompt | ON tok/s | OFF tok/s | Ratio pareado | Aceptacion |
-|---|---|---|---|---|
-| lru_cache | 50,1 | 31,6 | 1,58× | 75,8% |
-| token_bucket | 45,8 | 31,4 | 1,46× | 68,3% |
-
-Estos datos provienen de un diagnóstico de cabezal activado, no de un benchmark formal. El autor advierte que la decodificación especulativa no es bit-exacta en stacks de servicio bf16 y que no se ha realizado una evaluación OFAT de calidad. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) para este drafter.
+| Métrica de velocidad (math500, 20 ítems sembrados) | Valor |
+|---|---|
+| Ratio de decodificación ON/OFF | 1,72× [1,66; 1,79] |
+| Tokens por segundo ponderados por token | 47,3 (ON) frente a 28,1 (OFF) |
+| Tasa de aceptación de borradores | 0,81 |
+| Salidas byte-idénticas | 20/20 |
+| Prefill en el límite de 262.144 tokens | 25,02 → 25,33 GB de pico |
+| Decodificación en el límite de 262.144 tokens | 11,92 → 10,38 tok/s (−13 %) |
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 0,3 GB adicionales al modelo base (el drafter pesa 0,3 GB en int4).
-- GPU recomendadas: cualquier GPU capaz de ejecutar el modelo base Qwen3.8-27B en MLX; el drafter añade una carga mínima. En GPUs de consumo como RTX 3090/4090 con 24 GB de VRAM es viable si el modelo base cabe.
-- Opciones de despliegue: requiere un stack MLX con soporte para drafter MTP externo (forks de `mlx_vlm.server` con `draft_kind: mtp` y `draft_model`). No es compatible con vLLM, llama.cpp u Ollama directamente.
-- Latencia y throughput: los valores medidos son 50,1 y 45,8 tok/s con el drafter activado frente a 31,6 y 31,4 tok/s sin él, en la configuración descrita (hardware no especificado).
+- VRAM o memoria unificada: el repositorio pesa 0,3 GB, de modo que el drafter añade un coste marginal de memoria sobre el objetivo. En el límite de contexto de 262.144 tokens, el pico de decodificación pasa de 25,18 a 26,06 GB con MTP activado.
+- Hardware medido: Apple M5 Max de 128 GB con corriente alterna. También se reportan pantallas en M5 Max de 64 GB (pantalla de regresión C84 con MLX/Metal 0.32.2).
+- GPU recomendadas: exclusivamente Apple Silicon con MLX/Metal; no hay soporte documentado para CUDA, A100, H100 ni RTX 4090.
+- Cabe en GPU de consumo: sí, en equipos Apple Silicon con memoria unificada suficiente para el objetivo de 27B; el drafter en sí ocupa unos 300 MB.
+- Opciones de despliegue: MLX-VLM (commit `1c7c8fa1`) y MLX-Serve (commit `1ddf6f84`) con MLX/Metal 0.32.4. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 47,3 tok/s ponderados por token con MTP activado frente a 28,1 sin él en math500; 11,92 frente a 10,38 tok/s en el límite de 262.144 tokens. El punto de cruce donde el coste de verificación supera la ganancia se sitúa entre 82K y 262K tokens y no fue localizado.
 
 ## Comparativa con modelos similares
 
-No hay disponibles modelos comparables directos en la información proporcionada. El drafter es un componente auxiliar específico para Qwen3.8-27B en MLX. Como referencia de la familia, el autor menciona un drafter certificado para Qwen3.6-27B-Opus-Distill-OptiQ-4bit con la misma arquitectura `qwen3_5`, pero no se aportan datos comparativos de rendimiento entre ambos.
+| Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
+|---|---:|---|---|---|---|
+| `caslca/Qwen3.8-27B-mlx-uniform-4bit-mtp-drafter` | 424,7 M | 262.144 (del objetivo) | Drafter MTP para decodificación especulativa | Apache 2.0 | Hugging Face, MLX |
+| `caslca/Qwen3.8-27B-mlx-uniform-4bit` (objetivo) | 27B (nominal) | 262.144 | Modelo de chat/razonamiento | no disponible en la información | Hugging Face, MLX |
+| Gemelo histórico mlx-community | no disponible | no disponible | Relación de gemelo aplicable solo a las revisiones del objetivo comparadas explícitamente | no disponible | no disponible |
+
+No se dispone de datos de benchmarks ni de especificaciones de terceros alternativos en la información proporcionada; la comparación con otros drafters MTP fuera del linaje del autor queda como no disponible.
 
 ## Limitaciones y advertencias
 
-- Estado de prueba no certificado: el autor lo marca explícitamente como "probe-only" y "uncertified"; no ha pasado una evaluación de calidad OFAT.
-- No usar para benchmarks: la decodificación especulativa no es bit-exacta en stacks bf16; los resultados de velocidad no deben confundirse con calidad de generación.
-- Riesgo de degradación de calidad: al ser un drafter no certificado, podría alterar la distribución de salida del modelo base en producción.
-- Dependencia del modelo base: solo funciona con Qwen3.8-27B (o su copia bit-idéntica); no es un modelo autónomo.
-- Compatibilidad limitada: requiere forks específicos de MLX; no funciona con stacks estándar como vLLM u Ollama.
-- Sin datos de sesgos o alucinación: al ser un componente de aceleración, no se han evaluado estos aspectos; dependen del modelo base.
-- Fecha de creación futura: el repositorio está fechado en agosto de 2026, lo que sugiere que es un artefacto reciente y posiblemente experimental.
+- No es un modelo autónomo: solo funciona emparejado con el artefacto objetivo exacto. La aceptación y la calidad no se transfieren a otro fine-tune o cuantización.
+- La comparación en MBPPPlus sigue etiquetada INCONCLUSIVE (−1 pp [−6, +3]); la aprobación operativa no elimina esa limitación.
+- Los intervalos de confianza son nominales y exploratorios: con n=100 la diferencia mínima detectable es de 12,5 pp y con n=40 es de 20 pp. Una discordancia cero no prueba equivalencia universal.
+- Las cifras de velocidad provienen de una sola máquina y de un par por estado en longitud normal; son descriptivas, no una clasificación de calidad.
+- Cerca del límite de contexto la decodificación se degrada un 13 % con MTP activado; el punto de cruce entre 82K y 262K no está localizado.
+- Las puertas de visión (20 fotos) y de profundidad de contexto no certifican imágenes arbitrarias, OCR, diagramas complejos ni razonamiento a contexto completo; la puerta de fotos es una pantalla de capacidad permisiva, no un benchmark de visión clasificado.
+- En la pantalla de regresión C84, la retirada de caché solo está habilitada para `Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed`, no para este artefacto.
+- No hay información sobre sesgos, idiomas soportados ni riesgos de alucinación específicos del drafter; al heredar el comportamiento del objetivo, esos riesgos son los del modelo de 27B.
+- La licencia Apache 2.0 permite uso comercial, pero la dependencia estricta del artefacto objetivo limita la reutilización práctica.
 
 ## Enlaces
 
-- Repositorio del drafter: https://huggingface.co/caslca/Qwen3.8-27B-mlx-uniform-4bit-mtp-drafter
-- Modelo base (troncal): https://huggingface.co/caslca/Qwen3.8-27B-mlx-uniform-4bit
-- Copia bit-idéntica del troncal: https://huggingface.co/mlx-community/Qwen3.8-27B-4bit
-- Modelo base original: https://huggingface.co/unsloth/Qwen3.8-27B
-- Repositorio del modelo Qwen3.8-27B (Alibaba): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
-- Recetas vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
-- Página de Ollama para Qwen3.8-27B: https://ollama.com/smtek/Qwen3.8-27B
-- Metodología y campaña completa: https://github.com/ivan-avramov/mlx_local_stack
-- Drafter certificado de la misma familia: https://huggingface.co/caslca/Qwen3.6-27B-Opus-Distill-OptiQ-4bit-mtp-drafter
+- Hugging Face: https://huggingface.co/caslca/Qwen3.8-27B-mlx-uniform-4bit-mtp-drafter
+- Modelo objetivo: https://huggingface.co/caslca/Qwen3.8-27B-mlx-uniform-4bit
+- Commit de MLX-VLM: https://github.com/ivan-avramov/mlx-vlm/commit/1c7c8fa166582ac1a1c23ae9063527b2b5215b11
+- Commit de MLX-Serve: https://github.com/ivan-avramov/mlx-serve/commit/1ddf6f842f159a62d240f3ac6965fc33cbdb0b0d
+- Paper, blog o demo adicionales: no disponible en la información proporcionada.

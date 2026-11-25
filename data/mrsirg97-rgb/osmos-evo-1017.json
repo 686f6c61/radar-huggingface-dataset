@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 282,
+  "downloads_30d": 284,
   "trending_score": 0,
   "parameters": 96323502080,
   "parameters_human": "96.32B",
@@ -43,16 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mrsirg97-rgb/osmos-evo-1017 · Hugging Face",
-      "url": "https://huggingface.co/mrsirg97-rgb/osmos-evo-1017",
-      "snippet": "The files osmos needs beside unsloth's GGUFs to run DeepSeek-V4.1-Flash-1017 on an AMD Strix Halo (Ryzen AI Max+ 395, gfx1151, 128 GB). The model weights are not here ..."
-    },
-    {
-      "title": "mrsirg97-rgb (mrsirg) – Models - Hugging Face",
-      "url": "https://huggingface.co/mrsirg97-rgb/models",
-      "snippet": "mrsirg97-rgb's models1 Sort: Recently updated mrsirg97-rgb/osmos-evo-1017 Updated about 11 hours ago"
-    }
-  ]
+  "sources": []
 }

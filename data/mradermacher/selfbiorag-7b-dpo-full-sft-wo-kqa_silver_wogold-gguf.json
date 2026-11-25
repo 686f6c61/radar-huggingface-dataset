@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "mradermacher/selfbiorag-7b-dpo-full-sft-wo-kqa_silver_wogold-GGUF",
+  "slug": "mradermacher-selfbiorag-7b-dpo-full-sft-wo-kqa_silver_wogold-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/selfbiorag-7b-dpo-full-sft-wo-kqa_silver_wogold-GGUF",
+  "created_at": "2024-12-24T14:44:58.000Z",
+  "updated_at": "2026-11-25T09:19:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "alignment-handbook",
+    "trl",
+    "dpo",
+    "generated_from_trainer",
+    "en",
+    "dataset:HuggingFaceH4/ultrafeedback_binarized",
+    "base_model:Minbyul/selfbiorag-7b-dpo-full-sft-wo-kqa_silver_wogold",
+    "base_model:quantized:Minbyul/selfbiorag-7b-dpo-full-sft-wo-kqa_silver_wogold",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 79,
+  "trending_score": 0,
+  "parameters": 6738546688,
+  "parameters_human": "6.74B",
+  "storage_bytes": 59566106880,
+  "storage_human": "59.6 GB",
+  "context_length": 4096,
+  "base_model": "Minbyul/selfbiorag-7b-dpo-full-sft-wo-kqa_silver_wogold",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

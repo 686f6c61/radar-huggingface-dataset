@@ -5,7 +5,7 @@
   "author": "mistralai",
   "url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603-eagle",
   "created_at": "2026-03-04T16:38:14.000Z",
-  "updated_at": "2026-11-24T08:14:00.000Z",
+  "updated_at": "2026-11-24T10:24:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -68,7 +68,7 @@
     "region:us"
   ],
   "likes": 79,
-  "downloads_30d": 796,
+  "downloads_30d": 835,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

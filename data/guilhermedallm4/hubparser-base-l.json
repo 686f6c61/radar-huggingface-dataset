@@ -5,7 +5,7 @@
   "author": "guilhermedallm4",
   "url": "https://huggingface.co/guilhermedallm4/HubParser-Base-L",
   "created_at": "2026-11-19T14:21:04.000Z",
-  "updated_at": "2026-11-19T18:49:42.000Z",
+  "updated_at": "2026-11-24T18:54:19.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 18,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 109450670,
   "parameters_human": "109.5M",

@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "pradeepkumawat/signal-desk-distilbert",
+  "slug": "pradeepkumawat-signal-desk-distilbert",
+  "author": "pradeepkumawat",
+  "url": "https://huggingface.co/pradeepkumawat/signal-desk-distilbert",
+  "created_at": "2026-11-24T11:51:05.000Z",
+  "updated_at": "2026-11-24T11:59:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "en",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:quantized:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": 66957317,
+  "parameters_human": "67.0M",
+  "storage_bytes": 603200666,
+  "storage_human": "603 MB",
+  "context_length": null,
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

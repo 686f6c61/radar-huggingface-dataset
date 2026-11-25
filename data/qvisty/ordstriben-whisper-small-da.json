@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "Qvisty/ordstriben-whisper-small-da",
+  "slug": "qvisty-ordstriben-whisper-small-da",
+  "author": "Qvisty",
+  "url": "https://huggingface.co/Qvisty/ordstriben-whisper-small-da",
+  "created_at": "2026-11-25T10:27:02.000Z",
+  "updated_at": "2026-11-25T10:27:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "whisper",
+    "danish",
+    "int8",
+    "automatic-speech-recognition",
+    "da",
+    "arxiv:2212.04356",
+    "base_model:thorhojhus/whisper-small-danish",
+    "base_model:quantized:thorhojhus/whisper-small-danish",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 374614178,
+  "storage_human": "375 MB",
+  "context_length": null,
+  "base_model": "thorhojhus/whisper-small-danish",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

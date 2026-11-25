@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "mradermacher/ChatVPet-qw35-9B-v1-i1-GGUF",
+  "slug": "mradermacher-chatvpet-qw35-9b-v1-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ChatVPet-qw35-9B-v1-i1-GGUF",
+  "created_at": "2026-11-25T05:20:08.000Z",
+  "updated_at": "2026-11-25T11:00:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "conversational",
+    "vpet",
+    "qwen3_5",
+    "zh",
+    "base_model:LorisYounger/ChatVPet-qw35-9B-v1",
+    "base_model:quantized:LorisYounger/ChatVPet-qw35-9B-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 81882700640,
+  "storage_human": "81.9 GB",
+  "context_length": 262144,
+  "base_model": "LorisYounger/ChatVPet-qw35-9B-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

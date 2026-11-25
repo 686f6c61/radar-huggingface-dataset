@@ -5,7 +5,7 @@
   "author": "SeerRay-Lab",
   "url": "https://huggingface.co/SeerRay-Lab/Xiaomi-Lens-0",
   "created_at": "2026-10-19T03:09:27.000Z",
-  "updated_at": "2026-10-28T02:29:22.000Z",
+  "updated_at": "2026-11-25T04:10:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -30,12 +30,12 @@
     "region:us"
   ],
   "likes": 33,
-  "downloads_30d": 954,
+  "downloads_30d": 941,
   "trending_score": 13,
   "parameters": 4622144192,
   "parameters_human": "4.62B",
-  "storage_bytes": 9329323431,
-  "storage_human": "9.3 GB",
+  "storage_bytes": 9364036633,
+  "storage_human": "9.4 GB",
   "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
@@ -47,8 +47,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "xiaomi-research/xiaomi-lens-0",
+  "renamed_at": "2026-11-25T06:09:32.264Z",
   "benchmarks": [],
   "sources": []
 }

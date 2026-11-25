@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Zephyr-7B-DICE-Iter1-GGUF",
+  "slug": "mradermacher-zephyr-7b-dice-iter1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Zephyr-7B-DICE-Iter1-GGUF",
+  "created_at": "2025-03-11T21:02:59.000Z",
+  "updated_at": "2026-11-25T09:19:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:HuggingFaceH4/ultrafeedback_binarized",
+    "base_model:sail/Zephyr-7B-DICE-Iter1",
+    "base_model:quantized:sail/Zephyr-7B-DICE-Iter1",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 65,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 63929820032,
+  "storage_human": "63.9 GB",
+  "context_length": 32768,
+  "base_model": "sail/Zephyr-7B-DICE-Iter1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

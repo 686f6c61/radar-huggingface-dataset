@@ -5,7 +5,7 @@
   "author": "baidu",
   "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview-BF16",
   "created_at": "2026-11-23T09:01:08.000Z",
-  "updated_at": "2026-11-24T02:53:20.000Z",
+  "updated_at": "2026-11-24T07:20:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 23,
-  "downloads_30d": 27,
+  "downloads_30d": 388,
   "trending_score": 19,
   "parameters": 299559159366,
   "parameters_human": "299.56B",

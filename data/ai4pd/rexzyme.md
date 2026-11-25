@@ -2,74 +2,91 @@
 
 ## Resumen
 
-REXzyme es un modelo de traducción automática desarrollado por el equipo AI4PD (Sebastian Lindner, Núria Mimbrero Pelegrí, Michael Heinzinger, Noelia Ferruz y Alex Vicente) para la generación de enzimas de novo que catalizan reacciones químicas definidas por el usuario. El modelo toma como entrada una reacción expresada en formato SMILES y genera la secuencia de aminoácidos de una enzima predicha para catalizar dicha reacción. Se basa en la arquitectura Efficient T5 Large, con 770 millones de parámetros y una ventana de contexto de 512 tokens (el tamaño máximo de entrada para T5). Está entrenado sobre 20.911.485 pares reacción-enzima extraídos de la base de datos RHEA, lo que le permite aprender relaciones entre la química de la reacción y las características de la secuencia proteica. El modelo es relevante porque aborda el diseño de enzimas con un enfoque de traducción entre espacios químicos y biológicos, similar a cómo los traductores automáticos manejan pares de lenguajes complejos. Se distribuye bajo licencia Apache 2.0 y se encuentra en fase de trabajo en progreso, sin validación experimental publicada aún.
+REXzyme (Reaction to Enzyme) es un modelo de traducción automática diseñado para generar enzimas nuevas que catalicen reacciones químicas definidas por el usuario. Lo desarrolla el grupo AI4PD, liderado por Noelia Ferruz, y se basa en la arquitectura Efficient T5 Large Transformer de Google, con 48 capas (24 de codificador y 24 de decodificador) y una dimensionalidad de 1024, sumando aproximadamente 770 millones de parámetros. El modelo traduce desde el espacio químico (reacciones codificadas en SMILES) al espacio de secuencias de aminoácidos.
 
-## Especificaciones técnicas
+El modelo se entrenó sobre una porción de la base de datos RHEA que contiene 20.911.485 pares reacción-enzima, derivados de 16.011 reacciones únicas. La formulación es la de un problema de traducción supervisada: el codificador procesa la representación continua de la reacción y el decodificador genera autorregresivamente la secuencia de aminoácidos token a token, de izquierda a derecha. Se emplean dos tokenizadores independientes, uno para la entrada SMILES y otro para las etiquetas de aminoácidos.
+
+Su relevancia radica en que aborda el diseño de enzimas *de novo* condicionado a una reacción concreta, un problema de interés en biocatálisis y biotecnología. El proyecto se declara explícitamente como trabajo en curso y el manuscrito asociado está en preparación, por lo que las capacidades y el rendimiento deben interpretarse como preliminares.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Efficient T5 Large (Transformer encoder-decoder) |
+| Arquitectura | Efficient T5 Large Transformer (encoder-decoder), 48 capas (24 encoder / 24 decoder), dimensionalidad 1024 |
 | Parametros totales | 770 millones |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 512 tokens (máximo estándar de T5) |
-| Tipos de cuantizacion | no disponible (no se documentan en la model card) |
-| Idiomas soportados | no disponible (el modelo trabaja con SMILES y secuencias de aminoácidos, no con lenguaje natural) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no aplica (modelo de traduccion reaccion quimica a secuencia de aminoacidos); no disponible en el sentido linguistico |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (según la librería transformers y el repositorio) |
+| Formato de pesos | safetensors / PyTorch (transformers); tamano del repositorio 73,7 GB |
 
 ## Arquitectura y entrenamiento
 
-REXzyme utiliza la arquitectura Efficient T5 Large, una variante optimizada del Transformer T5 original. Consta de 48 capas (24 en el encoder y 24 en el decoder) con una dimensionalidad de modelo de 1024. El entrenamiento se realizó con un objetivo de traducción supervisada: el encoder procesa la representación continua de la reacción química (SMILES tokenizado a nivel de carácter) y el decoder genera autoregresivamente la secuencia de aminoácidos de la enzima, token a token, de izquierda a derecha. Se emplearon dos tokenizadores separados: uno para la entrada SMILES y otro para las etiquetas de aminoácidos. El modelo se preentrenó sobre 20.911.485 pares reacción-enzima de la base de datos RHEA, lo que le permite transferir conocimiento entre clases de reacciones con distinto número de ejemplos. No se menciona el uso de técnicas como RLHF o DPO; el entrenamiento es puramente supervisado. La innovación principal reside en la aplicación de un paradigma de traducción automática al diseño de enzimas, tratando el SMILES y la secuencia proteica como dos lenguajes distintos.
+REXzyme emplea una arquitectura transformer encoder-decoder tipo T5, concretamente la variante Efficient T5 Large, con 24 capas en cada bloque, dimensionalidad de 1024 y 770 millones de parametros. La entrada es una reaccion codificada en SMILES canonico con el esquema `ReactanteA.ReactanteB>AgenteA>ProductoA.ProductoB`, con reactantes y productos ordenados alfabeticamente. El modelo usa dos tokenizadores separados: uno para la entrada SMILES (tokenizacion a nivel de caracter con offset) y otro para las etiquetas de aminoacidos.
+
+El entrenamiento consistio en un objetivo de traduccion supervisada sobre 20.911.485 pares reaccion-enzima extraidos de RHEA (16.011 reacciones unicas). El decodificador genera aminoacidos de forma autorregresiva y causal, aprendiendo las dependencias entre las caracteristicas de la secuencia proteica y la reaccion catalizada. Como la tokenizacion SMILES es a nivel de caracter, el modelo puede transferir aprendizaje entre clases de reaccion con distinto numero de miembros. No se documenta en la informacion disponible el uso de RLHF, DPO ni tecnicas de alineacion adicionales, ni el numero total de tokens de entrenamiento.
 
 ## Capacidades
 
-- Generación de secuencias de aminoácidos de enzimas a partir de una reacción química en formato SMILES.
-- Soporte para reacciones con múltiples reactivos, agentes y productos, usando el esquema `ReactantA.ReactantB>AgentA>ProductA.ProductB`.
-- Acepta entrada a nivel de sustrato, permitiendo un control fino sobre la reacción deseada.
-- Capacidad de transferir aprendizaje entre clases de reacciones con pocos ejemplos gracias a la tokenización a nivel de carácter de los SMILES.
-- Generación autoregresiva de secuencias completas de proteínas, sin requerir alineamiento previo.
-- Diseñado para generar secuencias de novo, no solo copias de enzimas existentes, por lo que no se recomienda usar BLEU como métrica de evaluación.
-- Integración con el ecosistema Hugging Face Transformers, permitiendo su uso con `AutoModelForSeq2SeqLM`.
+- Generacion de secuencias de enzimas condicionada a una reaccion quimica definida por el usuario en formato SMILES.
+- Traduccion entre el espacio quimico (reacciones) y el espacio de secuencias de aminoacidos.
+- Entrada de grano fino a nivel de sustrato: permite especificar reactantes, agentes y productos por separado.
+- Generacion de multiples secuencias por reaccion para su posterior filtrado y seleccion.
+- Procesamiento por lotes: admite un fichero con multiples reacciones SMILES, una por linea, generando secuencias para cada una de forma independiente.
+- No dispone de tool calling, function calling ni capacidades de agente.
+- No dispone de modo thinking, vision ni audio.
+- Capacidades multilingues: no aplica, dado que su dominio es quimico y biologico, no linguistico.
 
 ## Casos de uso
 
-- Diseño de enzimas para reacciones específicas en biotecnología: un investigador puede introducir la reacción química deseada (por ejemplo, una hidrólisis o una oxidación) y obtener candidatos de secuencias de enzimas que podrían catalizarla, acelerando el descubrimiento de biocatalizadores.
-- Exploración de nuevas rutas metabólicas: al generar enzimas para reacciones no naturales o poco comunes, se pueden diseñar vías biosintéticas completas para la producción de compuestos de interés industrial o farmacéutico.
-- Ingeniería de proteínas asistida por IA: las secuencias generadas pueden servir como punto de partida para mutagénesis dirigida o evolución dirigida, reduciendo el espacio de búsqueda experimental.
-- Educación e investigación en bioquímica: permite a estudiantes y académicos explorar la relación entre estructura química y función enzimática de manera interactiva, generando hipótesis comprobables in silico.
-- Generación de bibliotecas de enzimas candidatas: el modelo puede producir múltiples secuencias para una misma reacción, que luego se filtran mediante métricas como plDDT (predicción de estructura) para seleccionar las más prometedoras antes de la síntesis.
-- Validación de bases de datos de reacciones: al comparar las secuencias generadas con las enzimas conocidas en RHEA, se pueden detectar posibles errores o inconsistencias en las anotaciones de reacciones.
+- Diseno de enzimas para biocatalisis industrial: se introduce la reaccion objetivo en SMILES y el modelo propone secuencias candidatas que se criban posteriormente con predictores de estructura (pLDDT) y otras metricas antes de su validacion experimental.
+- Exploracion de rutas metabolicas nuevas: dado un paso de reaccion de interes en una ruta, REXzyme genera enzimas candidatas que podrian incorporarse a un organismo hu especial.
+- Generacion masiva de candidatos para cribado: al procesar ficheros con multiples reacciones, permite generar bibliotecas de secuencias para su evaluacion in silico a gran escala.
+- Investigacion en biologia sintetica: util para estudiar que caracteristicas de secuencia se asocian a una reaccion concreta, aprovechando la transferencia de aprendizaje entre clases de reaccion.
+- Docencia y prototipado rapido: el cuaderno de Google Colab permite a estudiantes e investigadores generar enzimas para una reaccion dada sin infraestructura propia.
+- Filtrado y priorizacion de candidatos: combinado con metricas como pLDDT y perplexity, sirve para priorizar secuencias antes de sintesis y ensayos de laboratorio.
+- Analisis de reacciones poco pobladas: la tokenizacion a nivel de caracter permite aprovechar el aprendizaje de clases de reaccion con mas datos para generar propuestas en clases con menos ejemplos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica que el modelo aún está en fase de análisis y que se están realizando pruebas experimentales, pero no se proporcionan métricas cuantitativas como MMLU, HumanEval o GSM8K, ya que el modelo no está diseñado para tareas de lenguaje natural general. Para tareas específicas de diseño de enzimas, no hay datos de rendimiento comparativo publicados.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica que el analisis del modelo en distintas tareas in silico y las pruebas experimentales estan en curso, y que el manuscrito esta en preparacion. Se advierte que la perplexity no es el mejor criterio de seleccion y que el BLEU forzaria una alta similitud de secuencia, contraria al objetivo de diseno *de novo*; se recomienda generar muchas secuencias y seleccionarlas por pLDDT y otras metricas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el modelo tiene 770 millones de parámetros. En precisión fp32, ocupa aproximadamente 3 GB de memoria; en fp16, alrededor de 1,5 GB; en int8, cerca de 0,8 GB. Sin embargo, el repositorio tiene un tamaño de 70,7 GB, lo que sugiere que puede incluir múltiples checkpoints o pesos en alta precisión, por lo que se recomienda verificar los archivos antes de cargar.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en fp16 (por ejemplo, NVIDIA GTX 1650, RTX 3050, RTX 2060). Para mayor comodidad y velocidad, se recomienda una RTX 3090 o A100 si se desea procesar lotes grandes o usar precisión fp32.
-- Compatibilidad con GPU de consumo: sí, el modelo cabe en GPUs de consumo medio (8 GB o más) si se usa cuantización o precisión mixta.
-- Opciones de despliegue: al ser un modelo Transformers estándar, puede ejecutarse con Hugging Face Transformers, así como con servidores de inferencia como vLLM o TGI (aunque estos están optimizados para modelos generativos de lenguaje, T5 también es soportado). También se puede usar con llama.cpp si se convierte a formato GGUF, aunque no es el flujo habitual.
-- Latencia y throughput: no disponible. Al ser un modelo encoder-decoder de 770M, la latencia por secuencia es moderada (del orden de cientos de milisegundos en una GPU moderna), pero no se han publicado mediciones oficiales.
+- VRAM estimada para inferencia: no disponible de forma oficial. Con 770 millones de parametros, en precision completa (fp32) el modelo ronda los 3 GB de pesos; en fp16/bf16 aproximadamente 1,5 GB. El repositorio de 73,7 GB incluye pesos y otros artefactos, por lo que no debe confundirse con el tamano del modelo en memoria.
+- GPU recomendadas: no especificadas por el autor. Por tamano, cabe en GPUs de consumo como RTX 3090, RTX 4090 o inferiores con suficiente memoria, y en GPUs de datacenter como A100 o H100 sin problema.
+- Cabe en GPU de consumo: si, previsiblemente en cualquier GPU con al menos 4-8 GB de VRAM en fp16, aunque no hay cifras oficiales.
+- Opciones de despliegue: transformers (AutoTokenizer, AutoModelForSeq2SeqLM), text-generation-inference segun los tags del repositorio y endpoints compatibles. No se documenta soporte de GGUF, llama.cpp, Ollama ni vLLM.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. REXzyme es un modelo especializado en traducción SMILES a secuencias de proteínas, un nicho poco común. Otros modelos de diseño de proteínas como ESM-2 o ProtGPT2 se centran en la generación de secuencias sin condicionamiento por reacción química, pero no hay datos de comparación directa disponibles.
+No se dispone en la informacion proporcionada de datos de rendimiento que permitan una comparativa cuantitativa con alternativas. A continuacion se ofrece una comparacion estructural basica con modelos de la misma categoria (traduccion reaccion a enzima):
+
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| REXzyme | 770 M | no disponible | Apache 2.0 | Hugging Face (AI4PD/REXzyme) |
+| Otros modelos reaccion-enzima comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- El modelo se encuentra en fase de "trabajo en progreso" según la model card, y no se ha validado experimentalmente en laboratorio. Las secuencias generadas deben considerarse como hipótesis in silico, no como enzimas funcionales confirmadas.
-- La selección de secuencias generadas no debe basarse en perplexity o BLEU; se recomienda usar métricas de estructura como plDDT para filtrar candidatos, lo que añade un paso adicional de análisis.
-- El modelo solo acepta reacciones en formato SMILES canónico, lo que requiere que el usuario tenga conocimientos de química computacional y herramientas como RDKit para preparar las entradas.
-- No se especifican idiomas naturales soportados; el modelo trabaja exclusivamente con SMILES y secuencias de aminoácidos.
-- La licencia Apache 2.0 permite uso comercial, pero al ser un modelo de investigación sin validación, su uso en producción conlleva riesgos significativos de fiabilidad.
-- El repositorio tiene un tamaño de 70,7 GB, lo que puede dificultar la descarga y el despliegue en entornos con almacenamiento limitado.
-- No se documentan sesgos específicos, pero al entrenarse con datos de RHEA, podría heredar sesgos de las anotaciones de reacciones existentes, favoreciendo clases de reacciones más representadas.
+- Proyecto en estado de trabajo en curso ("Work in Progress"); el manuscrito esta en preparacion y las pruebas experimentales no han concluido.
+- Riesgo de alucinacion en sentido biologico: las secuencias generadas son propuestas in silico y no garantizan actividad enzimatica; requieren validacion experimental.
+- La perplexity no es un criterio fiable de seleccion y el BLEU penaliza el diseno *de novo*; conviene usar pLDDT y otras metricas complementarias.
+- Sesgos derivados de la base de datos RHEA: clases de reaccion con pocos miembros pueden estar peor representadas, aunque el modelo intenta transferir aprendizaje entre clases.
+- Requiere que la entrada SMILES este correctamente canonizada con RDKit y ordenada alfabeticamente segun el esquema indicado; entradas mal formateadas pueden degradar la calidad.
+- No se documentan limitaciones de longitud de contexto ni de idioma porque el modelo no opera en dominio linguistico.
+- Licencia Apache 2.0: permite uso comercial, pero al ser un modelo de investigacion en desarrollo conviene revisar la model card y el repositorio para posibles actualizaciones de terminos.
+- No se documentan sesgos de dominio, pero al depender de RHEA puede heredar sesgos de cobertura taxonomica y de tipos de reaccion.
 
 ## Enlaces
 
-- [Hugging Face - AI4PD/REXzyme](https://huggingface.co/AI4PD/REXzyme)
-- [Hugging Face - AI4PD/REXzyme_aa](https://huggingface.co/AI4PD/REXzyme_aa) (variante del modelo)
-- [Herramienta de conversión a SMILES (Cactus)](https://cactus.nci.nih.gov/chemical/structure)
-- [RDKit - documentación](https://www.rdkit.org/docs/GettingStartedInPython.html)
-- [Base de datos RHEA](https://www.rhea-db.org/)
+- Modelo en Hugging Face: https://huggingface.co/AI4PD/REXzyme
+- Cuaderno de Google Colab: https://colab.research.google.com/github/AI4PDLab/teaching/blob/main/notebooks/04b_rexzyme_pretrained.ipynb
+- Repositorio GitHub del laboratorio: https://github.com/AI4PDLab
+- Base de datos RHEA: https://www.rhea-db.org/
+- Efficient T5 Large (arquitectura base): https://huggingface.co/google/t5-efficient-large
+- Conversion de moleculas a SMILES (CACTUS): https://cactus.nci.nih.gov/chemical/structure
+- RDKit: https://www.rdkit.org/docs/GettingStartedInPython.html
+- Web del grupo: https://www.aiproteindesign.com

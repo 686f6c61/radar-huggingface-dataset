@@ -47,16 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "proofbird/gector-bert-en · Hugging Face",
-      "url": "https://huggingface.co/proofbird/gector-bert-en",
-      "snippet": "proofbird / gector-bert-en Like 1 Follow Proofbird 1 Token Classification ONNX wikimedia/wikipedia English grammatical-error-correction gector on-device License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket Proofbird Grammar — English What it corrects How it was trained How it was measured Files Licence and ..."
-    },
-    {
-      "title": "proofbird (Proofbird) - Hugging Face",
-      "url": "https://huggingface.co/proofbird",
-      "snippet": "Proofbird — a writing assistant for Windows that checks spelling and grammar as you type, in the apps you already use. The grammar models run on your own computer: your text doesn't leave the machine for a grammar check."
-    }
-  ]
+  "sources": []
 }

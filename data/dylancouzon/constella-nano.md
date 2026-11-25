@@ -2,118 +2,114 @@
 
 ## Resumen
 
-constella-nano es la torre de consulta (query tower) de un codificador dual asimetrico publicado por DylanCouzon en Hugging Face. La idea del sistema es separar el coste de codificacion: los documentos se indexan una sola vez con un encoder grande y congelado (la torre de documentos `stella-en-400M-v5-doc-onnx`), mientras que las consultas se codifican en tiempo de servicio con un encoder mucho mas pequeno. constella-nano ocupa ese segundo papel y parte del modelo `BAAI/bge-small-en-v1.5`, al que anade una toma de caracteristicas de tres capas y una cabeza lineal entrenadas para proyectar las consultas en el espacio documental de 1024 dimensiones de `NovaSearch/stella_en_400M_v5`. Es decir, no es un modelo generativo: es un extractor de embeddings de frases orientado a recuperacion de informacion.
+constella-nano es un codificador de consultas (query encoder) en ingles para busqueda semantica, desarrollado por DylanCouzon como parte de la familia Constella, construida sobre el espacio de embeddings de los modelos Stella de Qdrant. El modelo transforma consultas de texto en vectores normalizados de 1024 dimensiones que son directamente comparables con los documentos indexados por `Qdrant/stella-en-400M-v5-doc-onnx`, lo que permite busqueda asimetrica sin reindexar la coleccion de documentos.
 
-Su relevancia practica esta en el coste de consulta y en la compatibilidad geometrica del indice. Ambas torres emiten vectores normalizados L2 de 1024 dimensiones, de modo que un unico indice de documentos (por ejemplo, una coleccion de Qdrant con distancia coseno) puede servirse con distintas torres de consulta sin reindexar nada. En el mismo protocolo de CPU con cuatro hilos, la latencia p50 en caliente de constella-nano fue de 7,2511 ms, practicamente la del propio `bge-small-en-v1.5` (6,8400 ms) y muy por encima de la de su companera `constella-zero` (0,1119 ms).
+Tecnicamente es un modelo BERT pequeno de 34.540.672 parametros que parte de `BAAI/bge-small-en-v1.5` y anade una proyeccion lineal aprendida que combina caracteristicas de las capas 12, 8 y 4 para mapear al espacio de 1024 dimensiones de Stella. Se distribuye en formato ONNX para FastEmbed y esta pensado como alternativa ligera al codificador de consultas de Stella (400M de parametros), manteniendo una calidad de recuperacion superior a constella-zero y a BM25 en los seis conjuntos de datos reportados.
 
-El modelo se publica como research preview y con 0 descargas y 0 likes en el momento de la consulta. La validacion reservada de cuatro conjuntos y la validacion descriptiva sobre BEIR-18 estan pendientes segun el propio autor, y la entrada nativa del modelo solo existe en la rama personalizada `m14-constella-preview` de FastEmbed, no en el FastEmbed upstream. El repositorio ocupa 0,1 GB y se distribuye en formato ONNX bajo licencia MIT.
+Su relevancia actual radica en el coste de inferencia: al ser un modelo de 34M de parametros, el coste de codificar consultas es minimo comparado con el codificador de consultas de Stella, lo que lo hace atractivo para sistemas de recuperacion de baja latencia. Es una research preview: el soporte nativo en FastEmbed requiere una rama de previsualizacion y la evaluacion publicada se limita a los seis datasets descritos en la model card, con el benchmark BEIR completo aun en curso.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder tipo BERT (base `BAAI/bge-small-en-v1.5`) con toma de caracteristicas de tres capas y cabeza lineal; torre de consulta de un codificador dual asimetrico |
-| Parametros totales | no disponible |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | no disponible; el repositorio se distribuye en ONNX y la etiqueta `base_model:quantized` apunta a una version cuantizada de `bge-small-en-v1.5`, sin detalle de los esquemas concretos |
-| Idiomas soportados | en (solo ingles) |
+| Arquitectura | BERT (backbone bge-small) con tres capas aprovechadas (12, 8, 4) y proyeccion lineal |
+| Parametros totales | 34.540.672 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 512 tokens (truncado por la derecha) |
+| Tipos de cuantizacion | no disponible (se distribuye grafo ONNX con salida fp32) |
+| Idiomas soportados | Ingles |
 | Licencia | MIT |
-| Formato de pesos | ONNX (repositorio de 0,1 GB) |
-| Dimension de embedding | 1024 (normalizado L2), compatible con el espacio de `stella_en_400M_v5` |
-| Metrica de similitud | coseno (equivalente a producto escalar al estar normalizados los vectores) |
-| Libreria de carga | FastEmbed (rama `m14-constella-preview`) |
-| Tamano del repositorio | 0,1 GB |
+| Formato de pesos | ONNX (libreria FastEmbed) |
+| Dimension de salida | 1024 (vector normalizado fp32) |
+| Prefijo de consulta | Ninguno |
+| Modelo de documentos asociado | `Qdrant/stella-en-400M-v5-doc-onnx` |
 | Modelo base | `BAAI/bge-small-en-v1.5` |
+| Tamano del repositorio | 0,1 GB |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura no es una innovacion de atencion ni un transformer alternativo: es un encoder BERT pequeno reutilizado. Sobre `BAAI/bge-small-en-v1.5`, el autor anade una toma de caracteristicas que combina las salidas de tres capas internas (en lugar de usar unicamente la ultima) y una cabeza lineal que proyecta el vector agregado a 1024 dimensiones. Ese vector se normaliza L2 y se compara por coseno contra los embeddings de documentos generados por la torre grande. El modelo base es un encoder de frases con pooling por media enmascarada; de hecho, la propia model card advierte que la mascara de atencion entera de FastEmbed promueve esa media enmascarada a float64, por lo que conviene castear explicitamente a float32 para mantener cada consulta en los 4096 bytes previstos.
+constella-nano es un transformer tipo BERT que reutiliza el backbone de `BAAI/bge-small-en-v1.5`. En lugar de usar solo la representacion de la ultima capa, toma caracteristicas de las capas 12, 8 y 4 y las combina mediante una proyeccion lineal aprendida que las mapea al espacio de 1024 dimensiones de los documentos de Stella. El modelo se entreno contra embeddings de consulta congelados de `NovaSearch/stella_en_400M_v5`, es decir, destilando el comportamiento del codificador de consultas de Stella sobre un backbone mucho mas pequeno.
 
-El entrenamiento se describe como un ajuste de esa cabeza y de la toma de caracteristicas para alinearse con objetivos de consulta y de documento congelados en el espacio de `NovaSearch/stella_en_400M_v5`. No hay en la informacion disponible datos sobre numero de tokens de entrenamiento, composicion del dataset, ni sobre el uso de RLHF o DPO (tecnicas, por otra parte, poco habituales en modelos de embeddings). Tampoco se detalla si hubo destilacion explicita o solo ajuste por pares. Lo que si se explicita es la innovacion de sistema: el desacoplamiento de costes entre indexacion y servicio, con dos torres cuyo unico sentido es funcionar juntas. La torre de documentos es grande y congelada; la de consulta es pequena, se ejecuta en cada peticion y debe aterrizar en el mismo espacio geometrico.
-
-La model card esta truncada en el apartado "How it works", justo cuando describe el entrenamiento contra los objetivos congelados de Stella. Por tanto, cualquier detalle adicional de composicion del dataset o regimen de entrenamiento queda fuera del material disponible.
+El modelo no emplea prefijo de consulta. Las entradas se truncan por la derecha a 512 tokens y se aplica padding dinamico al maximo de cada lote. El grafo ONNX devuelve embeddings de token en fp32; FastEmbed se encarga del pooling (media con mascara de atencion) y de la normalizacion L2. La model card no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO; esos datos figuran como no disponibles. Tampoco se documentan innovaciones como decodificacion especulativa o atencion lineal, que no aplican a un encoder de retrieval.
 
 ## Capacidades
 
-- Extraccion de caracteristicas (feature extraction): convierte una consulta de texto en un vector denso de 1024 dimensiones, normalizado L2.
-- Recuperacion semantica asimetrica: codifica consultas cortas contra documentos codificados por una torre distinta y de mayor tamano.
-- Compatibilidad de indice: sus vectores son intercambiables, a nivel geometrico, con los de `constella-zero` y con los de la torre de documentos Stella, sin reindexar la coleccion.
-- Interoperabilidad con Qdrant y FastEmbed: la model card incluye ejemplos de uso nativos con `TextEmbedding` y `QdrantClient`, sin llamadas a `add_custom_model`.
-- Ejecucion en CPU: el modelo esta pensado para correr en el lado de consulta, potencialmente sin GPU.
-- No soporta generacion de texto, razonamiento, codigo, matematicas ni vision: es un encoder, no un modelo causal.
-- No soporta tool calling ni function calling.
-- No implementa agentes ni razonamiento multi-paso por si mismo; puede ser un componente (recuperador) dentro de un pipeline agentico.
-- Capacidades multilingues: no disponibles; el modelo declara unicamente ingles.
+- Extraccion de caracteristicas (feature-extraction) para retrieval semantico: genera un vector de 1024 dimensiones por consulta.
+- Busqueda asimetrica dual-encoder: las consultas se codifican con constella-nano y los documentos con `Qdrant/stella-en-400M-v5-doc-onnx`.
+- Compatibilidad de indice con constella-zero: ambos codificadores de consulta pueden buscar sobre la misma coleccion sin reindexar.
+- Normalizacion L2 integrada en el pipeline de FastEmbed, apta para similitud coseno.
+- Soporte en FastEmbed (requiere rama de previsualizacion y `fastembed>=0.9.0`).
+- Integracion con Qdrant y con cualquier base de datos vectorial que soporte similitud coseno.
+- No soporta tool calling, function calling, agentes, vision, audio ni modo de razonamiento: es exclusivamente un encoder de consultas en ingles.
 
 ## Casos de uso
 
-- Busqueda semantica sobre un corpus en ingles ya indexado: se codifican los documentos una vez con la torre grande y, en produccion, cada consulta se convierte en un vector de 1024 dimensiones con constella-nano para buscar por coseno en Qdrant. El ahorro esta en no ejecutar la torre de 400 M en cada peticion.
-- Generacion aumentada por recuperacion (RAG): el modelo actua como recuperador de pasajes en un pipeline en el que un LLM generativo consume los fragmentos devueltos. Su coste de consulta es aproximadamente el de `bge-small-en-v1.5`, lo que lo hace viable para servicios con muchas consultas por segundo.
-- Intercambio de torre de consulta por despliegue: al compartir espacio geometrico con `constella-zero`, un mismo indice puede servirse con la torre rapida cuando la latencia manda y con constella-nano cuando se prioriza otra politica de recuperacion, sin reindexar. El propio autor advierte que esta compatibilidad es geometrica y no una afirmacion de equivalencia de calidad.
-- Cache semantico de consultas: calcular el embedding de cada peticion entrante y buscar en un almacen de consultas previas para reutilizar respuestas. La ventana de coste es la del encoder pequeno, no la del grande.
-- Enrutamiento de intenciones y clasificacion por similitud: los embeddings de consulta pueden compararse contra vectores de referencia de cada intencion o categoria para dirigir la peticion al flujo adecuado.
-- Deduplicacion y agrupamiento de consultas en analitica de busqueda: agrupar consultas equivalentes de un log para estudiar demanda real, usando los vectores de la torre de consulta.
-- Generacion de candidatos previa a un reranker: recuperar un conjunto amplio de documentos por similitud coseno y pasarlos despues a un cross-encoder mas costoso y preciso.
-- Verificacion offline en entornos sin acceso al Hub: la model card documenta variables de entorno (`CONSTELLA_NANO_PATH`, `CONSTELLA_DOC_PATH`) para cargar rutas locales de modelo.
+- Busqueda semantica de baja latencia en produccion: al codificar consultas con un modelo de 34M de parametros en lugar de uno de 400M, el coste por consulta se reduce drasticamente, lo que permite desplegar retrieval en CPU con latencias de milisegundos.
+- Sustitucion en caliente del codificador de consultas: si ya se dispone de un indice construido con `stella-en-400M-v5-doc-onnx`, se puede cambiar de constella-zero a constella-nano modificando solo el nombre del modelo de consulta, sin re-encodear documentos ni reconstruir la coleccion.
+- Recuperacion en dominios cientificos y biomedicos: los resultados en SciFact (nDCG@10 de 0,721) y TREC-COVID (0,787) lo hacen adecuado para busqueda sobre literatura cientifica y articulos medicos.
+- Asistente de documentacion tecnica: indexar manuales y guias con el modelo de documentos de Stella y consultar con constella-nano para responder preguntas en ingles sobre el corpus.
+- RAG en aplicaciones con presupuesto de computo limitado: usar el encoder pequeno para la fase de recuperacion y reservar el presupuesto de GPU para el modelo generador.
+- Busqueda en bases de conocimiento internas: desplegar Qdrant en memoria o en un servicio pequeno y usar constella-nano para consultas en ingles sobre FAQs, tickets o wikis corporativas.
+- Evaluacion y prototipado rapido de pipelines de retrieval: la carga del modelo y la primera consulta son rapidas, lo que facilita iterar sobre esquemas de indexacion y metricas antes de pasar a modelos mayores.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de recuperacion (BEIR-18, evaluacion reservada de cuatro conjuntos) en la informacion disponible; el autor los declara pendientes. El unico dato cuantitativo publicado son latencias sinteticas de consulta, no estimaciones de carga real:
+Resultados de recuperacion reportados en la model card (nDCG@10 con busqueda exacta). ArguAna y FiQA estan marcados porque el modelo profesor Stella declara contacto de entrenamiento o evaluacion con esos datasets.
 
-| Modelo | Latencia p50 en caliente (CPU, 4 hilos) | Naturaleza del dato |
-|---|---|---|
-| `constella-zero` | 0,1119 ms | Latencia sintetica, no estimacion de carga |
-| `constella-nano` | 7,2511 ms | Latencia sintetica, no estimacion de carga |
-| `bge-small-en-v1.5` | 6,8400 ms | Latencia sintetica, no estimacion de carga |
+| Sistema | NFCorpus | SCIDOCS | SciFact | TREC-COVID | ArguAna* | FiQA* |
+|---|---:|---:|---:|---:|---:|---:|
+| constella-nano | 0,363080 | 0,217710 | 0,721097 | 0,787116 | 0,623296 | 0,477765 |
+| constella-zero | 0,3124 | 0,1677 | 0,6101 | 0,5490 | 0,5916 | 0,3728 |
+| BM25 | 0,3180 | 0,1565 | 0,6791 | 0,6099 | 0,4878 | 0,2532 |
+| Codificador de consultas Stella | 0,4134 | 0,2395 | 0,7796 | 0,8234 | 0,6369 | 0,5536 |
 
-Segun la model card, el coste de consulta de constella-nano es "aproximadamente el de bge-small", mientras que solo `constella-zero` puede reclamar un coste de consulta cercano a cero.
+Segun la model card, constella-nano supero el test predefinido de superioridad frente a `bge-small-en-v1.5` tanto en los cuatro datasets sin contacto declarado con Stella como en los seis, con diferencias medias de nDCG@10 de +0,017648 y +0,027449 respectivamente. Tambien supero a LEAF asym en los seis datasets con una diferencia media de +0,016181.
+
+Coste de codificacion de consultas (solo el encoder, lote de 1, cuatro hilos de CPU, cinco calentamientos, veinte consultas sinteticas de 20 palabras en tres procesos nuevos; no incluye busqueda vectorial ni latencia extremo a extremo):
+
+| Modelo | Tiempo de carga | Primera consulta | p50 en caliente | RSS maximo | Assets medidos |
+|---|---:|---:|---:|---:|---:|
+| constella-zero | 0,2618 s | 0,3529 ms | 0,1119 ms | 275,4 MiB | 90,1 MiB |
+| bge-small | 0,6726 s | 8,2401 ms | 6,8400 ms | 291 (dato truncado en la informacion disponible) | no disponible |
+
+Los datos de latencia de constella-nano no aparecen en la informacion proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada: por debajo de 1 GB en fp32 para la inferencia del encoder de consulta, a partir de un repositorio ONNX de 0,1 GB. Estimacion orientativa, no publicada por el autor.
-- GPU recomendadas: cualquier GPU con al menos 1-2 GB de memoria libre; el modelo esta disenado para ejecutarse en CPU, por lo que no requiere acelerador.
-- GPU de consumo: cabe en cualquier RTX de gama media o baja, e incluso en iGPU con memoria compartida suficiente.
-- CPU: es el escenario objetivo. Las latencias publicadas corresponden a un protocolo de cuatro hilos.
-- Opciones de despliegue: FastEmbed (rama `m14-constella-preview`), ONNX Runtime subyacente y Qdrant como almacen vectorial. No hay confirmacion de soporte en vLLM, TGI, llama.cpp u Ollama (no aplica a un encoder de este tipo en la mayoria de esos servidores).
-- Latencia y throughput: p50 en caliente de 7,2511 ms por consulta en el protocolo citado; no se publica throughput agregado ni latencias p95/p99.
-- Memoria de indice: 1024 dimensiones en float32 equivalen a 4096 bytes por vector, mas el payload asociado en Qdrant.
+- VRAM estimada: no disponible de forma explicita; con 34,5M de parametros en fp32 el modelo ocupa aproximadamente 0,14 GB de pesos, y el repositorio completo pesa 0,1 GB.
+- Inferencia en CPU: las mediciones de la model card usan cuatro hilos de CPU, lo que confirma que el modelo esta pensado para ejecucion en CPU sin GPU.
+- GPU recomendadas: no disponibles; por tamano, cualquier GPU consumer moderna (por ejemplo, RTX 3060 o superior) es sobradamente suficiente, aunque no se han publicado mediciones en GPU.
+- Cabe en cualquier GPU consumer e incluso en entornos sin GPU dedicada.
+- Opciones de despliegue: FastEmbed (soporte nativo en rama de previsualizacion, `fastembed>=0.9.0`) y ONNX Runtime; integracion con Qdrant mediante `qdrant-client`.
+- Latencia y throughput: no se han publicado mediciones especificas para constella-nano; para referencia, constella-zero reporta una consulta en caliente con p50 de 0,1119 ms en CPU y bge-small de 6,8400 ms en las mismas condiciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Rol | Dimension de salida | Parametros | Licencia | Notas |
-|---|---|---|---|---|---|
-| `DylanCouzon/constella-nano` | Torre de consulta pequena | 1024 (L2) | no disponible | MIT | Research preview; evaluacion pendiente; 7,2511 ms p50 |
-| `DylanCouzon/constella-zero` | Torre de consulta alternativa | 1024 (L2) | no disponible | no disponible | Mismo espacio geometrico; 0,1119 ms p50; unico que reclama coste de consulta casi nulo |
-| `DylanCouzon/stella-en-400M-v5-doc-onnx` | Torre de documentos grande y congelada | 1024 (L2) | ~400 M (segun su nombre) | no disponible | Se ejecuta en indexacion, no en servicio; ambas torres solo tienen sentido juntas |
-| `BAAI/bge-small-en-v1.5` | Encoder de frases de proposito general | 384 | no disponible en la informacion proporcionada | MIT (modelo base) | Modelo de partida de constella-nano; 6,8400 ms p50 en el mismo protocolo |
-| `NovaSearch/stella_en_400M_v5` | Encoder de frases de referencia | 1024 | ~400 M (segun su nombre) | no disponible | Define el espacio documental en el que se entrena constella-nano |
+| Modelo | Parametros | Contexto | Dimension de salida | Licencia | Rol | nDCG@10 medio en los seis datasets |
+|---|---:|---:|---:|---|---|---:|
+| constella-nano | 34.540.672 | 512 tokens | 1024 | MIT | Codificador de consultas | Mejor que zero, BM25 y bge-small en los seis datasets reportados |
+| constella-zero | no disponible | no disponible | 1024 | no disponible | Codificador de consultas | Inferior a nano en los seis datasets; mas rapido (p50 0,1119 ms) |
+| Codificador de consultas Stella | 400M (modelo profesor) | no disponible | 1024 | no disponible | Codificador de consultas | Superior a nano en los seis datasets reportados |
+| BM25 | no aplica | no aplica | no aplica | no aplica | Baseline lexico | Inferior a nano en los seis datasets |
 
-La comparacion con alternativas de terceros de la misma categoria (por ejemplo, otros encoders de recuperacion ligeros) no esta disponible en la informacion proporcionada. La unica busqueda web realizada no devolvio resultados relacionados con el modelo.
+constella-nano se posiciona como la opcion intermedia de la familia: mas preciso que constella-zero y BM25, y mucho mas pequeno que el codificador de consultas de Stella, a costa de una ligera perdida de calidad frente a este ultimo.
 
 ## Limitaciones y advertencias
 
-- Estado de research preview: la evaluacion reservada de cuatro conjuntos y la validacion descriptiva sobre BEIR-18 estan pendientes de publicacion, por lo que no hay evidencia de calidad de recuperacion verificada.
-- Sin adopcion registrada: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion independiente.
-- Dependencia de la torre de documentos: constella-nano solo tiene sentido emparejado con `stella-en-400M-v5-doc-onnx`. Usar otra torre de documentos invalida la compatibilidad geometrica.
-- No hay equivalencia con constella-zero: la model card es explicita al afirmar que la compatibilidad es geometrica y que no se implica paridad, equivalencia ni empate en calidad de recuperacion. Los encoders tienen comportamiento medido distinto.
-- Solo ingles: no se declara soporte multilingue ni evaluacion en otros idiomas.
-- Longitud de contexto no especificada: no hay dato confirmado sobre el maximo de tokens de entrada, un parametro critico para consultas largas o pasajes de contexto.
-- Limitacion de despliegue: la entrada nativa existe unicamente en la rama personalizada `m14-constella-preview` del repositorio de FastEmbed del autor; no esta en FastEmbed upstream, y la PR upstream se pospone al trabajo M20.
-- Precaucion de tipo de dato: la mascara de atencion entera de FastEmbed promueve la media enmascarada a float64; sin un cast explicito a float32, el vector de consulta ocupa el doble y puede romper contratos de tamano en el indice.
-- Latencias no extrapolables: los 7,2511 ms son una medicion sintetica bajo un protocolo concreto de CPU de cuatro hilos, no una estimacion de carga o de throughput en produccion.
-- Riesgo de alucinacion: no aplica en el sentido generativo, porque el modelo no produce texto; el riesgo equivalente es la recuperacion de documentos irrelevantes como consecuencia de una calidad de ranking no verificada.
-- Sesgos: no hay informacion disponible sobre analisis de sesgos en la model card proporcionada.
-- Licencia MIT: permite uso comercial y modificacion, pero el autor no ofrece garantias y el estado de investigacion previa desaconseja su uso en produccion critica sin evaluacion propia.
-- Model card truncada: el apartado tecnico "How it works" aparece cortado en el material disponible, por lo que pueden faltar detalles de entrenamiento.
+- Solo soporta ingles; no se ha evaluado su comportamiento en otros idiomas.
+- Ventana de contexto limitada a 512 tokens, con truncado por la derecha, lo que puede perder informacion en consultas largas.
+- Es una research preview: el soporte nativo en FastEmbed requiere una rama de previsualizacion y la evaluacion publicada se limita a seis datasets; el benchmark BEIR completo esta en curso.
+- Los resultados en ArguAna y FiQA deben interpretarse con cautela porque el modelo profesor Stella declara contacto de entrenamiento o evaluacion con esos datasets.
+- No debe usarse el modelo de documentos como codificador de consultas sin prompt; para consultas hay que usar constella-nano, constella-zero o la ruta con prompt de Stella.
+- Riesgo de alucinacion no aplica directamente al ser un encoder, pero la calidad del retrieval depende de la distribucion del corpus y del dominio; no se han publicado evaluaciones fuera de los datasets reportados.
+- No se documentan sesgos conocidos ni evaluaciones de robustez; al derivar de bge-small-en-v1.5 hereda las caracteristicas y posibles sesgos de ese backbone.
+- Licencia MIT, que permite uso comercial, pero al ser una previsualizacion de investigacion conviene validar el comportamiento en el dominio propio antes de desplegarlo en produccion.
+- Los datos de latencia y throughput especificos de constella-nano no estan publicados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/DylanCouzon/constella-nano
-- Torre de documentos companera: https://huggingface.co/DylanCouzon/stella-en-400M-v5-doc-onnx
-- Torre de consulta alternativa (constella-zero): https://huggingface.co/DylanCouzon/constella-zero
+- Modelo de documentos: https://huggingface.co/Qdrant/stella-en-400M-v5-doc-onnx
+- Codificador de consultas alternativo: https://huggingface.co/Qdrant/constella-zero
+- Modelo profesor: https://huggingface.co/NovaSearch/stella_en_400M_v5
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
-- Encoder de referencia del espacio documental: https://huggingface.co/NovaSearch/stella_en_400M_v5
-- Rama de FastEmbed con el registro nativo del modelo: https://github.com/Dylancouzon/fastembed/tree/m14-constella-preview
-- Cliente de Qdrant para Python: https://github.com/qdrant/qdrant-client
-- Nota: la busqueda web realizada no devolvio resultados relevantes sobre el modelo; los unicos resultados obtenidos correspondian a contenido no relacionado.

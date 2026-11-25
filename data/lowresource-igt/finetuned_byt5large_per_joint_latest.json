@@ -1,0 +1,55 @@
+{
+  "schema": 2,
+  "id": "lowresource-igt/finetuned_byT5large_per_joint_latest",
+  "slug": "lowresource-igt-finetuned_byt5large_per_joint_latest",
+  "author": "lowresource-igt",
+  "url": "https://huggingface.co/lowresource-igt/finetuned_byT5large_per_joint_latest",
+  "created_at": "2026-11-19T23:00:47.000Z",
+  "updated_at": "2026-11-20T00:42:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "generated_from_trainer",
+    "base_model:google/byt5-large",
+    "base_model:finetune:google/byt5-large",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 115,
+  "trending_score": 0,
+  "parameters": 1228183552,
+  "parameters_human": "1.23B",
+  "storage_bytes": 78604732113,
+  "storage_human": "78.6 GB",
+  "context_length": null,
+  "base_model": "google/byt5-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Android Mobile App Developer Tools - Android Developers",
+      "url": "https://developer.android.com/",
+      "snippet": "Jun 24, 2026 · Discover the latest app development tools, platform updates, training, and documentation for developers across every …Read more"
+    }
+  ]
+}

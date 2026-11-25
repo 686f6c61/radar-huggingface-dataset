@@ -2,51 +2,51 @@
 
 ## Resumen
 
-CROWN-H3-True-POV-Interactive es un LoRA de concepto para el modelo de generación de vídeo MiniMax H3, desarrollado por el creador independiente NineCrowns (bajo la etiqueta `[CROWN]`) y publicado en Hugging Face por el usuario S3ckn11g0r. No se trata de un modelo base, sino de un adaptador de bajo rango (rank 64, alpha 64) que se aplica sobre los bloques de vídeo (bloques 10 a 49) de MiniMax H3 en sus variantes Ref2VA, I2VA y T2VA. Su propósito es especializar el modelo en tomas subjetivas en primera persona (POV) con geometría anatómica coherente de las manos del espectador y con continuidad de cámara en un solo plano.
+CROWN-H3-True-POV-Interactive es un adaptador LoRA de tipo concepto para el modelo de generación de vídeo MiniMax-H3, desarrollado por el creador independiente NineCrowns (identificado como `[CROWN]`). No se trata de un modelo base, sino de un ajuste fino de bajo rango que se aplica sobre los pesos de MiniMaxAI/MiniMax-H3 para especializarlo en la generación de vídeo en primera persona subjetiva (POV), con énfasis en la coherencia anatómica de las manos del propio espectador y en la continuidad de movimientos de cámara de tipo tilt-down y tilt-up en un solo plano.
 
-El adaptador se entrenó sobre material real de vídeo en primera persona capturado con cámaras de casco GoPro y con el corpus Ego4D, complementado con metraje de interacción frontal a altura de ojos de un adulto de 175 cm. El entrenamiento se realizó en un clúster de 8 GPU NVIDIA B200. El repositorio ocupa 1,0 GB y contiene un único archivo de pesos en formato safetensors de 910,06 MB.
+El adaptador resuelve dos problemas concretos del modelo base: la aparición de manos anatómicamente incorrectas (brazos que entran lateralmente o manos duplicadas sobre el personaje) y la falta de continuidad en planos subjetivos con inclinación vertical de cámara. Para ello se entrenó sobre material real de cámaras de acción montadas en cabeza (GoPro/Ego4D) y grabaciones de interacción frontal a altura de ojos de adulto (175 cm), empleando un clúster de 8 GPU NVIDIA B200.
 
-La relevancia de esta ficha es acotada: se trata de un LoRA de nicho con cero descargas y cero likes en el momento de la consulta, orientado a creadores de vídeo generativo que trabajen con ComfyUI y MiniMax H3. No es un modelo de lenguaje ni un sistema multimodal de propósito general, por lo que muchas de las especificaciones habituales (contexto, cuantización, benchmarks de razonamiento) no aplican o no están disponibles.
+El modelo se publica bajo una licencia personalizada denominada `bespoke-lora-license`, con un tamaño de repositorio de 1.0 GB y un único archivo de pesos de 910,06 MB. Su relevancia actual reside en el auge de la generación de vídeo con modelos de difusión de gran escala y en la demanda de control fino sobre la puesta en escena subjetiva para aplicaciones de vlogs, simuladores de citas interactivos y narrativa inmersiva.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de bajo rango) sobre MiniMax H3; rank 64, alpha 64; aplicado a bloques de vídeo 10-49 |
-| Parametros totales | no disponible (peso del adaptador: 910,06 MB) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos en safetensors; el modelo base se distribuye en bf16 y fp32 segun el archivo) |
-| Idiomas soportados | no disponible |
-| Licencia | bespoke-lora-license (licencia personalizada; enlace a Civitai del autor) |
-| Formato de pesos | safetensors (`CROWN_H3_True_POV_Interactive_V2_r64.safetensors`) |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre transformer de difusión de vídeo MiniMax-H3; módulos de vídeo únicamente (bloques 10-49) |
+| Parametros totales | No disponible (adaptador LoRA; el modelo base MiniMax-H3 no reporta cifra en la información disponible) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (generación de vídeo de hasta 15 segundos según la model card) |
+| Tipos de cuantizacion | No disponible para el LoRA; el modelo base se usa en bf16 (pesos `minimax_h3_ref2va_bf16`, `qwen3vl_32b_minimax_h3_bf16`) y VAE en fp32 |
+| Idiomas soportados | No disponible |
+| Licencia | `bespoke-lora-license` (licencia personalizada; enlace a perfil de Civitai del autor) |
+| Formato de pesos | safetensors (`CROWN_H3_True_POV_Interactive_V2_r64.safetensors`, 910,06 MB) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador es un LoRA de rank 64 y alpha 64 que se inyecta exclusivamente en los bloques de vídeo 10 a 49 del transformer de MiniMax H3, dejando intactos el resto de componentes del modelo base. El pipeline de referencia combina `minimax_h3_ref2va_bf16.safetensors` como difusor de vídeo, `qwen3vl_32b_minimax_h3_bf16.safetensors` como codificador de texto (un Qwen3-VL de 32 000 millones de parámetros) y `minimax_h3_video_vae_fp32.safetensors` como VAE de vídeo en precisión fp32. La configuración de muestreo documentada por el autor es de 25 pasos con sampler euler y scheduler beta, cfg 1.0 y un desplazamiento de sigma específico (`MiniMaxH3SigmaShift` con shift_video 12.0 y shift_audio 3.0).
+El adaptador es un LoRA de rango 64 y alpha 64 aplicado exclusivamente a los bloques de vídeo del transformer de MiniMax-H3, concretamente a los bloques 10 a 49, dejando intactos los módulos de audio y el resto de la pila. Se entrenó sobre un clúster de 8 NVIDIA B200 con un conjunto de datos compuesto al 100 % por material real: grabaciones subjetivas de cámaras montadas en cabeza (GoPro/Ego4D) y metraje de interacción frontal a altura de ojos de un adulto de 175 cm. No se especifica el número de tokens, horas de vídeo ni si hubo etapas de RLHF o DPO.
 
-El entrenamiento se realizó en un clúster de 8 GPU NVIDIA B200 sobre un dataset descrito como 100 % real: metraje subjetivo en primera persona capturado con cámaras de casco GoPro y el corpus Ego4D, más grabaciones de interacción frontal a altura de ojos de 175 cm. No se especifican el número de tokens, el número de pasos de entrenamiento ni si hubo etapas de preferencia (RLHF/DPO). La innovación técnica declarada por el autor es doble: por un lado, forzar que las manos del espectador entren desde el borde inferior de la imagen (posiciones 5 y 7 en punto, justo bajo la lente) en lugar de aparecer lateralmente o duplicadas sobre el personaje; por otro, mantener la continuidad de un plano subjetivo único con inclinaciones de cabeza arriba y abajo sin cortes, preservando la posición de la persona interlocutora en el encuadre.
+La innovación técnica principal es el anclaje geométrico de las manos del sujeto en el borde inferior del encuadre (direcciones de las 5 y las 7 en punto), que fuerza a que las extremidades del espectador entren desde abajo en acciones como servir una copa o manipular objetos sobre una mesa. El segundo eje de entrenamiento es la continuidad de un solo plano con inclinación vertical de cámara: descenso de 25 grados para verter champán y retorno a la altura de ojos sin cortes ni desaparición del personaje. La configuración de inferencia recomendada es de 25 pasos, sampler `euler` con `beta`, cfg 1.0, `MiniMaxH3SigmaShift` con `shift_video` 12.0 y `shift_audio` 3.0, y un peso de LoRA de 0,80 a 0,85.
 
 ## Capacidades
 
-- Generación de vídeo texto-a-vídeo (T2VA) con estética subjetiva en primera persona.
-- Generación de vídeo imagen-a-vídeo (I2VA) y referencia-a-vídeo (Ref2VA) sobre MiniMax H3.
-- Control de geometría de manos en primera persona: las manos propias emergen desde el borde inferior del encuadre (`crown_pov`).
-- Continuidad de cámara en un solo plano con inclinación hacia abajo y hacia arriba (tilt-down / tilt-up) a altura de ojos adulta.
-- Interacción de mesa: verter bebidas, sostener vasos, entregar objetos y brindar hacia la lente.
-- Coherencia de personaje interlocutor durante el movimiento de cámara (la persona permanece sentada y visible).
-- Integración con ComfyUI como nodo de LoRA sobre el pipeline de MiniMax H3.
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, audio, visión general ni multilingüismo.
+- Generación de vídeo texto-a-vídeo en primera persona subjetiva con el modelo base MiniMax-H3 (variantes Ref2VA, I2VA y T2VA).
+- Control anatómico de manos del sujeto en el borde inferior del encuadre mediante la palabra de activación `crown_pov`.
+- Continuidad de cámara en un solo plano con inclinaciones verticales suaves (tilt-down y tilt-up) de hasta 25 grados.
+- Mantenimiento de la presencia del personaje secundario en el encuadre durante los movimientos de cámara.
+- Interacción de mesa realista: servir bebidas, sostener vasos, entregar objetos y brindar hacia la lente.
+- Generación de audio sincronizado con el vídeo hasta 15 segundos (heredado del modelo base, según la model card).
+- Soporte de referencias multimodales y de fotogramas de inicio y fin (capacidades del modelo base MiniMax-H3).
+- Integración con ComfyUI y con flujos en la nube de RunningHub.
 
 ## Casos de uso
 
-- Vlogs en primera persona generados: el LoRA permite crear tomas subjetivas de un creador virtual que sostiene una cámara o un objeto, con las manos entrando correctamente desde abajo, lo que resulta adecuado para contenido de estilo GoPro sin rodaje real.
-- Simuladores de citas interactivas: escenas de mesa entre dos personas donde la cámara subjetiva baja para servir una copa y vuelve a subir para el brindis, manteniendo a la interlocutora en el encuadre durante todo el plano.
-- Storytelling cinematográfico subjetivo: secuencias de un solo plano con continuidad de mirada para cortometrajes o anuncios narrados desde el punto de vista del protagonista.
-- Previsualización de planos POV en producción audiovisual: generación rápida de referencias visuales para decidir encuadres de cámara subjetiva antes del rodaje.
-- Contenido para redes sociales de formato inmersivo: clips de 15 segundos con interacción de manos (brindar, entregar un objeto) pensados para consumo vertical u horizontal en primera persona.
-- Prototipado de experiencias interactivas: pruebas de concepto de narrativa ramificada donde el usuario elige acciones y el modelo genera la respuesta subjetiva correspondiente.
-- Demostraciones técnicas de control anatómico en difusión de vídeo: comparación de la coherencia de manos frente al modelo base sin el adaptador.
+- Vlogs en primera persona: el LoRA genera planos subjetivos coherentes en los que las manos del narrador aparecen desde el borde inferior al sostener la cámara o manipular objetos, eliminando las extremidades flotantes que produce el modelo base.
+- Simuladores de citas interactivos: permite construir escenas de mesa con un personaje frontal que se mantiene en el encuadre mientras la cámara baja a verter una bebida y vuelve a subir para el brindis, todo en un plano continuo de hasta 15 segundos.
+- Narrativa cinematográfica subjetiva: útil para secuencias de inmersión en las que el espectador adopta el punto de vista del protagonista, con control de la altura de ojos a 175 cm y transiciones verticales naturales.
+- Publicidad de producto en primera persona: demostraciones de uso de un objeto (servir una bebida, entregar un artículo) grabadas desde el punto de vista del consumidor, con geometría de manos creíble y sin artefactos anatómicos.
+- Previsualización de storyboards en producción audiovisual: generación rápida de planos subjetivos de referencia para validar encuadres y movimientos de cámara antes del rodaje real.
+- Contenido para redes sociales de formato corto: clips de 15 segundos con estética de cámara en cabeza y audio sincronizado, generados en ComfyUI con el flujo en la nube proporcionado por el autor.
+- Investigación en generación de vídeo condicionada por punto de vista: banco de pruebas para estudiar la coherencia espacial y la continuidad de cámara en modelos de difusión de vídeo.
 
 ## Benchmarks y rendimiento
 
@@ -54,38 +54,44 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El adaptador en sí ocupa 910,06 MB en disco y debe cargarse junto al modelo base MiniMax H3, que es el que determina los requisitos reales de memoria.
-- El pipeline de referencia emplea un difusor en bf16, un codificador de texto Qwen3-VL de 32 000 millones de parámetros en bf16 y un VAE de vídeo en fp32; el codificador de texto por sí solo requiere del orden de decenas de gigabytes de VRAM en bf16.
-- GPU recomendadas: el autor entrenó en 8×NVIDIA B200; para inferencia se requiere hardware de clase数据中心 (A100, H100, H200 o B200) con suficiente VRAM para el pipeline completo.
-- No cabe en GPU de consumo convencionales (RTX 4090, 3090) sin cuantización agresiva del codificador de texto y del difusor, y no se documenta una configuración de ese tipo.
-- Opciones de despliegue: ComfyUI con los nodos de MiniMax H3; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplican a un pipeline de difusión de vídeo).
-- Latencia y throughput: no disponibles. La configuración de referencia usa 25 pasos con sampler euler y scheduler beta.
-- Peso recomendado del LoRA en inferencia: 0,80 a 0,85 (la demo se generó únicamente con este LoRA a 0,85).
+- El adaptador LoRA ocupa 910,06 MB en disco y se carga junto con el modelo base MiniMax-H3; la VRAM total depende del modelo base, no del LoRA.
+- El autor reporta el entrenamiento en un clúster de 8 NVIDIA B200, lo que indica que el modelo base completo en bf16 requiere hardware de centro de datos de gama alta.
+- El modelo base emplea pesos bf16 (`minimax_h3_ref2va_bf16.safetensors` y `qwen3vl_32b_minimax_h3_bf16.safetensors`) y un VAE en fp32 (`minimax_h3_video_vae_fp32.safetensors`); no se detalla la VRAM mínima de inferencia.
+- No cabe en GPU de consumo convencionales en su configuración completa en bf16; el autor ofrece una plataforma en la nube (RunningHub) para quienes no dispongan de hardware suficiente.
+- Despliegue: ComfyUI (flujo recomendado por el autor), con flujos en la nube de RunningHub; no se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a un modelo de difusión de vídeo.
+- Latencia y throughput: no disponibles. La configuración de referencia usa 25 pasos con sampler `euler` y cfg 1.0.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| CROWN-H3-True-POV-Interactive | LoRA de concepto para vídeo POV | MiniMax H3 | no disponible (adaptador de 910 MB) | no disponible | bespoke-lora-license | Hugging Face, Civitai, RunningHub |
-| MiniMax H3 (base) | Modelo de generación de vídeo T2V/I2V/Ref2V | propio | no disponible en la informacion | no disponible | no disponible en la informacion | no disponible en la informacion |
-| LoRAs de concepto genéricos para vídeo | Adaptadores de estilo/concepto | distinto según caso | no disponible | no disponible | variable | Civitai, Hugging Face |
+No se dispone de información sobre adaptadores LoRA comparables para MiniMax-H3 en la documentación proporcionada. La comparación con otros modelos de generación de vídeo (por ejemplo, familias de difusión de vídeo de otros proveedores) no puede establecerse con datos verificables a partir de la información disponible.
 
-No se dispone de datos de benchmarks ni de especificaciones del modelo base MiniMax H3 en la información proporcionada, por lo que la comparación cuantitativa no es posible.
+| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| CROWN-H3-True-POV-Interactive | LoRA sobre MiniMax-H3 | No disponible (adaptador de 910 MB) | No disponible (vídeo de hasta 15 s) | bespoke-lora-license | Hugging Face, RunningHub, Civitai |
+| MiniMax-H3 (base) | Modelo de difusión de vídeo | No disponible | No disponible | No disponible | Hugging Face (MiniMaxAI) |
+| Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
-- Es un adaptador, no un modelo autónomo: requiere el modelo base MiniMax H3 y sus componentes (difusor, codificador Qwen3-VL 32B y VAE) para funcionar.
-- La licencia es `bespoke-lora-license`, una licencia personalizada cuyo texto no se incluye en la información disponible; el enlace apunta al perfil de Civitai del autor. Es imprescindible revisar sus términos antes de cualquier uso comercial.
-- El entrenamiento se basa en metraje real de personas, lo que puede introducir sesgos de apariencia, edad, etnia y contexto cultural no documentados.
-- El alcance es muy estrecho: está especializado en POV subjetivo con manos desde el borde inferior y continuidad de plano; fuera de ese dominio puede degradar la calidad o imponer la estética subjetiva de forma no deseada.
-- No se documentan idiomas soportados, sesgos medidos, tasas de alucinación visual ni evaluaciones cuantitativas de calidad.
-- El repositorio tiene cero descargas y cero likes en el momento de la consulta, por lo que no hay evidencia comunitaria de robustez en producción.
-- La fecha de creación indicada (2026-11-11) es posterior a la fecha habitual de consulta; conviene verificar la vigencia del repositorio.
-- El uso de material Ego4D puede estar sujeto a las condiciones de licencia del propio corpus, no detalladas en la model card.
+- Es un adaptador de concepto, no un modelo autónomo: requiere el modelo base MiniMax-H3 y no funciona de forma aislada.
+- El entrenamiento se centró en material real de cámara en cabeza y en interacción frontal a altura de ojos; es previsible un rendimiento inferior en otros encuadres, estilos o escenarios no representados.
+- El sesgo del conjunto de datos (GoPro/Ego4D y grabaciones de interacción con un adulto de 175 cm) puede limitar la diversidad de alturas, complexiones y contextos culturales.
+- Riesgo de alucinación visual y de artefactos anatómicos residuales en acciones complejas o con múltiples personas, pese a la mejora específica del LoRA.
+- La licencia `bespoke-lora-license` es personalizada y remite al perfil de Civitai del autor; es imprescindible revisar sus términos antes de cualquier uso comercial, ya que las condiciones no están detalladas en la model card.
+- El peso recomendado del LoRA (0,80 a 0,85) está ajustado a la configuración de muestreo indicada; otros valores o samplers pueden degradar la coherencia del plano.
+- No se especifican los idiomas soportados ni la calidad del audio sincronizado en lenguas distintas del inglés o el chino.
+- La información de benchmarks es inexistente, por lo que no puede validarse el rendimiento frente a alternativas con datos objetivos.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/S3ckn11g0r/CROWN-H3-True-POV-Interactive
-- Civitai del autor: https://civitai.com/models/3042757
-- Perfil de licencia en Civitai: https://civitai.com/user/NineCrowns
-- RunningHub (demo en la nube): https://www.runninghub.ai/model/public/2120439447178219521
+- Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Licencia (perfil del autor en Civitai): https://civitai.com/user/NineCrowns
+- Página oficial en Civitai: https://civitai.com/models/3042757
+- RunningHub Global (modelo LoRA): https://www.runninghub.ai/model/public/2120439447178219521
+- RunningHub Global (flujo ComfyUI): https://www.runninghub.ai/workflow/2120529879737737218
+- RunningHub Global (aplicación web): https://www.runninghub.ai/ai-detail/2120529898234617858
+- RunningHub China (modelo LoRA): https://www.runninghub.cn/model/public/2120452269828300801
+- RunningHub China (flujo en la nube): https://www.runninghub.cn/workflow/2120527418199990273
+- RunningHub China (aplicación AI): https://www.runninghub.cn/ai-detail/2120527446805147649
+- Plataforma de inferencia del modelo base citada por el autor: https://h3xron.xyz

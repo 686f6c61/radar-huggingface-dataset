@@ -2,98 +2,103 @@
 
 ## Resumen
 
-JiRackPrecisionTokenizer es un tokenizer de byte-level BPE desarrollado por CMSManhattan (inventor: Konstantin Vladimirovich Grabko), diseñado como una extensión del vocabulario de Qwen2.5 y DeepSeek R1. Su propósito es añadir tokens especializados para dominios concretos: robótica y embodiment, tool calling, routing en sistemas RAG con arquitectura MoE, y marcadores de razonamiento estilo DeepSeek R1. El tokenizer amplía el vocabulario base hasta 151.779 tokens, incorporando etiquetas como `<|tool_call_start|>`, `<|action_start|>`, `__SCIENCE__` o `<|fim_prefix|>`, entre otras.
+JiRackPrecisionTokenizer es un tokenizador publicado por CMSManhattan (organización JiRack Technology) bajo licencia MIT, diseñado como componente de preprocesado para modelos de la familia Qwen2.5 y DeepSeek R1. No se trata de un modelo de lenguaje con pesos entrenados, sino de un vocabulario BPE de nivel de byte (byte-level BPE) con un conjunto ampliado de tokens especiales orientados a tres áreas: enrutamiento de consultas en sistemas RAG con arquitectura MoE, llamadas a herramientas (tool calling) y control de robots y sistemas embebidos. El repositorio tiene un tamaño de 0,0 GB y 276 descargas en el momento de la consulta.
 
-La relevancia de este tokenizer radica en que permite adaptar modelos Qwen2.5 o DeepSeek R1 a tareas específicas sin necesidad de rediseñar el vocabulario completo, facilitando el entrenamiento eficiente en dominios como código (compatible con datasets de Microsoft BigCode), robótica y sistemas de atención al cliente con integración de herramientas. El autor lo comercializa como una solución para instituciones financieras que requieren soberanía de modelo y privacidad de datos.
+El tokenizador declara un vocabulario de 151.779 tokens, con `pad_token_id` y `eos_token_id` fijados en 151.643, y se presenta como compatible con Qwen2.5 y DeepSeek R1 "sin adaptación" mediante la función de redimensionado del vocabulario. Su propuesta técnica central es sustituir la inyección dinámica de esquemas de herramientas en el contexto por tokens nativos de llamada a herramienta (`<|tool_call_start|>`, `<|tool_result_end|>`, etc.), lo que según el autor reduce latencia y consumo de tokens.
 
-El repositorio tiene un tamaño de 0.0 GB, lo que indica que solo contiene los archivos del tokenizer (vocab, merges, config) y no pesos de modelo. La licencia es MIT, permitiendo uso comercial y modificación. No se proporcionan métricas de rendimiento ni benchmarks, y la documentación es escasa y con errores tipográficos notables (p. ej., "DeekSeek", "resize function").
+La relevancia del artefacto es acotada: es un tokenizador, no un modelo, y su valor depende de que el vocabulario ampliado se integre correctamente en un modelo base compatible y de que los tokens nuevos reciban entrenamiento suficiente. La model card menciona que se necesitan del orden de 100.000 ejemplos para adaptar las capacidades de enrutamiento a un modelo de routing RAG, lo que sitúa el trabajo real de adaptación fuera del propio repositorio.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Byte-level BPE (tokenizer, no modelo completo) |
-| Parametros totales | no disponible (no es un modelo, es un tokenizer) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no especificada; el autor recomienda iniciar con 4K y escalar a 8K |
-| Tipos de cuantizacion | no aplicable (tokenizer) |
-| Idiomas soportados | multilingual (sin lista detallada) |
+| Arquitectura | Tokenizador byte-level BPE (no es un modelo neuronal; sin capas ni pesos de transformer) |
+| Parametros totales | no disponible (el repositorio contiene un tokenizador, no pesos de modelo) |
+| Parametros activos | no aplica |
+| Longitud de contexto | no disponible (el autor recomienda inicializar modelos con 4K y escalar a 8K) |
+| Tipos de cuantizacion | no disponible (no aplica a un tokenizador) |
+| Idiomas soportados | multilingüe (etiqueta `multilingual`; sin desglose de idiomas) |
 | Licencia | MIT |
-| Formato de pesos | no aplicable; archivos de tokenizer (vocab.json, merges.txt, tokenizer_config.json) |
+| Formato de pesos | no disponible; el repositorio contiene ficheros de tokenizador (vocabulario y merges BPE, presumiblemente `tokenizer.json`/`vocab.json`/`merges.txt`), no safetensors ni GGUF |
+| Tamano de vocabulario | 151.779 tokens |
+| `pad_token_id` | 151.643 |
+| `eos_token_id` | 151.643 |
+| Compatibilidad declarada | Qwen2.5 y DeepSeek R1 |
+| Pipeline en Hugging Face | robotics |
+| Tamano del repositorio | 0,0 GB |
 
 ## Arquitectura y entrenamiento
 
-El tokenizer utiliza el algoritmo byte-level BPE, el mismo que emplean los modelos Qwen2.5 y DeepSeek R1. Su vocabulario se amplía de los 128.000 tokens base (presumiblemente heredados de Qwen2.5) a 151.779 tokens, añadiendo categorías de tokens especiales:
+El artefacto es un tokenizador de nivel de byte con segmentación BPE, heredero del vocabulario de Qwen2.5 (151.643 tokens base) al que se añaden 136 tokens especiales, hasta alcanzar los 151.779. Los tokens añadidos se agrupan en cinco bloques: etiquetas de razonamiento de DeepSeek R1, marcadores FIM (fill-in-the-middle) para entrenamiento de código (`<|fim_prefix|>`, `<|fim_middle|>`, `<|fim_suffix|>`), etiquetas de tool calling, etiquetas de robótica y embodiment (acciones, trayectorias, joints, sensores, pose, velocidad, fuerza, par, gripper, navegación, waypoints, parada de emergencia, etc.), etiquetas multimodales (`<|image|>`, `<|video|>`, `<|sound|>`, `<|voice|>`, `<|vision|>`) y 52 etiquetas de enrutamiento de dominio para sistemas RAG-MoE (`__SCIENCE__`, `__CODING__`, `__MEDICINE__`, `__ROBOTICS__`, `__PYTHON__`, `__RUST__`, entre otras).
 
-- Marcadores de razonamiento estilo DeepSeek R1 (no se listan explícitamente, pero se menciona "Added DeekSeek resoning tags").
-- Tokens de tool calling: `<|tool_call_start|>`, `<|tool_call_end|>`, `<|tool_result_start|>`, `<|tool_result_end|>`.
-- Tokens de robótica y embodiment: `<|action_start|>`, `<|trajectory_start|>`, `<|joint_start|>`, `<|sensor_start|>`, `<|command_start|>`, `<|state_start|>`, `<|pose|>`, `<|velocity|>`, `<|force|>`, `<|torque|>`, `<|gripper|>`, `<|navigation|>`, `<|obstacle|>`, `<|task_start|>`, `<|plan_start|>`, `<|behavior_start|>`, `<|skill_start|>`, `<|motor|>`, `<|servo|>`, `<|imu|>`, `<|lidar|>`, `<|camera|>`, `<|depth|>`, `<|waypoint|>`, `<|path|>`, `<|collision|>`, `<|grasp|>`, `<|release|>`, `<|homing|>`, `<|emergency_stop|>`, `<|calibration|>`, `<|manipulation|>`, `<|locomotion|>`, `<|feedback|>`, `<|control_loop|>`.
-- Tokens multimodales: `<|image|>`, `<|video|>`, `<|sound|>`, `<|voice|>`, `<|listening|>`, `<|vision|>`.
-- Tokens de estado emocional humano: `<|mood_happy|>`, `<|mood_sad|>`, `<|mood_angry|>`, `<|mood_neutral|>`.
-- Tokens de routing RAG para sistemas MoE: `__SCIENCE__`, `__CODING__`, `__STOCK_EXCHANGE__`, `__MEDICINE__`, `__GOVERNMENT__`, `__NEWS__`, `__GENERAL__`, `__MATERIAL_SCIENCE__`, `__ELECTRONICS__`, `__MICROELECTRONICS__`, `__ENGINEERING__`, `__ROBOTICS__`, `__ENERGY__`, `__AUTOMOTIVE__`, `__AVIATION__`, `__MATH__`, `__PYTHON__`, `__C__`, `__CPP__`, `__C_SHARP__`, `__JAVA__`, `__JAVASCRIPT__`, `__TYPESCRIPT__`, `__RUST__`, `__GO__`, `__RUBY__`, `__PHP__`, `__SWIFT__`, `__KOTLIN__`, `__BASH__`, `__SQL__`, `__ASSEMBLY__`, `__PHILOSOPHY__`, `__LITERATURE__`, `__SOCIOLOGY__`, `__PSYCHOLOGY__`, `__POLITICAL_SCIENCE__`, `__CULTURAL_STUDIES__`, `__ETHNOGRAPHY__`, `__HUMAN_RIGHTS__`, `__COMPLIANCE__`, `__MILITARY__`, `__BANKING__`, `__OIL_INDUSTRY__`, `__LIGHT_INDUSTRY__`, `__NATURE__`, `__OCEAN__`, `__SPORT__`, `__CULINARY__`, `__TRAVEL__`, `__HOBBY__`.
-- Marcadores FIM (fill-in-the-middle): `<|fim_prefix|>`, `<|fim_middle|>`, `<|fim_suffix|>` (aunque en el README aparece escrito `<f|im_suffix|>` por error).
-
-No se proporciona información sobre el proceso de entrenamiento del tokenizer (datos, número de tokens, metodología). El autor menciona que "necesita 100k example to fully adapt routing features", lo que sugiere que el tokenizer está diseñado para ser usado como base y luego adaptado mediante entrenamiento adicional con datos específicos.
+No se documenta ningún proceso de entrenamiento del tokenizador: no hay información sobre el corpus utilizado para derivar los merges BPE, el número de tokens de entrenamiento, ni si los tokens nuevos se han validado con un modelo ajustado. La model card tampoco describe RLHF, DPO ni ninguna fase de alineamiento, lo cual es coherente con la naturaleza del artefacto. La única indicación cuantitativa sobre adaptación es la afirmación de que se requieren aproximadamente 100.000 ejemplos para que un modelo de routing RAG aproveche plenamente las etiquetas de dominio, y la recomendación de un entrenamiento en dos fases (4K y luego 8K de contexto) para estabilizar el encoding posicional antes de extender las dependencias de largo alcance.
 
 ## Capacidades
 
-- Tokenización byte-level BPE compatible con Qwen2.5 y DeepSeek R1, permitiendo su uso como reemplazo directo del tokenizer original en estos modelos.
-- Soporte de tokens especiales para tool calling, lo que permite al modelo generar llamadas a funciones de forma estructurada sin necesidad de inyectar esquemas dinámicos en el contexto.
-- Tokens de routing para sistemas RAG con arquitectura MoE, que permiten clasificar consultas por dominio (ciencia, código, finanzas, medicina, etc.) y dirigirlas a expertos específicos.
-- Tokens de robótica y embodiment para representar acciones, trayectorias, estados de sensores, comandos de control, etc., facilitando el entrenamiento de modelos de control robótico.
-- Marcadores FIM para tareas de completado de código en medio (fill-in-the-middle), compatible con datasets de Microsoft BigCode (The Stack, StarCoder, NextCoder).
-- Tokens multimodales (imagen, video, sonido, voz, visión) que podrían servir para futuras extensiones multimodales, aunque no se especifica su uso concreto.
-- Tokens de estado emocional para modelar el tono o humor del usuario en conversaciones.
+- Tokenización byte-level BPE compatible con vocabularios Qwen2.5 y DeepSeek R1, incluido el redimensionado de embeddings sin cambios en el código del modelo.
+- Marcadores nativos de tool calling: `<|tool_call_start|>`, `<|tool_call_end|>`, `<|tool_result_start|>`, `<|tool_result_end|>`.
+- Etiquetas de razonamiento de DeepSeek R1 para delimitar trazas de pensamiento.
+- Marcadores FIM para tareas de infill de código, alineados con los formatos de Microsoft BigCode (The Stack, StarCoder, NextCoder).
+- Etiquetas de enrutamiento de dominio (52 categorías) pensadas para enrutadores RAG sobre arquitecturas MoE.
+- Etiquetas de robótica y embodiment: acciones, trayectorias, joints, sensores, pose, velocidad, fuerza, par, gripper, navegación, obstáculos, planes, comportamientos, habilidades, motores, servo, IMU, lidar, cámara, profundidad, waypoints, colisiones, agarre, calibración, locomotion, manipulation y control loop.
+- Etiquetas multimodales para imagen, vídeo, sonido y voz.
+- Etiquetas de estado de ánimo humano (`<|mood_happy|>`, `<|mood_sad|>`, `<|mood_angry|>`, `<|mood_neutral|>`).
+- Soporte multilingüe declarado, sin lista explícita de idiomas.
 
 ## Casos de uso
 
-- Atención al cliente automatizada con integración de herramientas: el tokenizer incluye tokens de tool calling que permiten al modelo invocar APIs externas (consultas de saldo, reservas, etc.) de forma estructurada, reduciendo la latencia frente a la inyección dinámica de esquemas en el contexto.
-- Sistemas RAG con enrutamiento por dominio: los tokens `__SCIENCE__`, `__CODING__`, `__MEDICINE__`, etc. permiten clasificar la consulta del usuario y dirigirla al índice o experto MoE correspondiente, mejorando la precisión de la recuperación.
-- Generación de código en producción: los marcadores FIM y la compatibilidad con datasets de código (The Stack, StarCoder) hacen que el tokenizer sea adecuado para entrenar modelos de autocompletado de código en entornos corporativos con requisitos de privacidad.
-- Control robótico y planificación de movimientos: los tokens de robótica (`<|action_start|>`, `<|trajectory_start|>`, `<|joint_start|>`, etc.) permiten representar secuencias de acciones y estados de sensores, facilitando el entrenamiento de políticas de control para robots humanoides (Unitree G1, LimX Oli, etc.).
-- Modelos financieros soberanos: el autor posiciona el tokenizer como base para que bancos y fintech construyan modelos internos desde cero, manteniendo la privacidad de los datos y la soberanía del modelo.
-- Asistentes de voz o multimodalidad: los tokens de audio y visión (`<|voice|>`, `<|image|>`, `<|video|>`) podrían usarse en pipelines que combinen texto con otras modalidades, aunque no hay documentación que detalle su implementación.
+- Integración de tool calling en pipelines de agentes: los marcadores nativos permiten delimitar llamadas y resultados sin inyectar esquemas JSON en el contexto, lo que según el autor reduce latencia y consumo de tokens en conversaciones multi-turno con muchas herramientas.
+- Enrutamiento de consultas en sistemas RAG con MoE: las etiquetas `__MEDICINE__`, `__CODING__`, `__BANKING__` y similares permiten clasificar la consulta antes de seleccionar el experto o el índice documental, siempre que el modelo se haya adaptado con suficientes ejemplos etiquetados.
+- Entrenamiento de modelos de código con FIM: los marcadores `<|fim_prefix|>`, `<|fim_middle|>` y `<|fim_suffix|>` habilitan tareas de autocompletado e infill sobre datasets tipo The Stack, útiles para asistentes de IDE.
+- Control de robots humanoides y brazos manipuladores: las etiquetas de acción, trayectoria, joint, fuerza y par permiten serializar comandos y telemetría en un formato tokenizado uniforme, como sugiere el proyecto ROBOS del autor.
+- Procesamiento de trazas de razonamiento de DeepSeek R1: las etiquetas de reasoning permiten separar el bloque de pensamiento de la respuesta final en pipelines de evaluación o destilación.
+- Sistemas multimodales con voz e imagen: las etiquetas `<|image|>`, `<|video|>`, `<|sound|>` y `<|voice|>` facilitan la construcción de turnos mixtos en asistentes que alternan modalidades.
+- Modelos financieros internos para banca y fintech: el autor propone usar el tokenizador junto con su dataset abierto para entrenar modelos soberanos con control total sobre los datos, aunque no se aportan detalles del dataset ni del procedimiento.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio no incluye comparativas de rendimiento del tokenizer (p. ej., tasa de compresión, precisión de enrutamiento, etc.) ni de modelos entrenados con él.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- No aplicable: al tratarse de un tokenizer, no requiere GPU para su uso. La inferencia se realiza sobre el modelo base (Qwen2.5 o DeepSeek R1) al que se acople.
-- Para entrenar o adaptar un modelo con este tokenizer, se necesitarían los requisitos de hardware del modelo base elegido (p. ej., Qwen2.5-7B requiere ~16 GB de VRAM en fp16 para inferencia, más para entrenamiento).
-- El despliegue se realiza mediante las herramientas estándar de Hugging Face (transformers, tokenizers) o frameworks como vLLM, siempre que soporten el tokenizer personalizado.
+- El repositorio contiene únicamente un tokenizador; la inferencia requiere un modelo base compatible (Qwen2.5 o DeepSeek R1) con los pesos correspondientes.
+- VRAM estimada: depende exclusivamente del modelo base elegido y de su cuantización; no disponible para el tokenizador en sí.
+- GPU recomendadas: no disponibles para el tokenizador; para los modelos base asociados, el requisito vendrá determinado por su tamaño (no especificado en la información proporcionada).
+- Ajuste en GPU de consumo: no aplica al tokenizador; depende del modelo base.
+- Opciones de despliegue: cualquier runtime que cargue tokenizadores compatibles con Hugging Face `tokenizers` (transformers, vLLM, TGI, llama.cpp con vocabulario adaptado); el autor no documenta integraciones específicas.
+- Latencia y throughput: no disponibles. La model card afirma de forma cualitativa que el tool calling a nivel de tokenizador mejora la latencia frente a la inyección dinámica de esquemas, pero no aporta mediciones.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa directa con otros tokenizers especializados. Los tokenizers de referencia en el ecosistema son:
+| Artefacto | Tipo | Vocabulario | Tokens especiales destacados | Licencia | Compatibilidad |
+|---|---|---|---|---|---|
+| JiRackPrecisionTokenizer | Tokenizador BPE | 151.779 | Tool calling, robótica, routing RAG, FIM, multimodal | MIT | Qwen2.5, DeepSeek R1 |
+| Tokenizador original de Qwen2.5 | Tokenizador BPE | 151.643 | ChatML, tool calling básico | Apache 2.0 (según el modelo Qwen2.5) | Qwen2.5 |
+| Tokenizador original de DeepSeek R1 | Tokenizador BPE | no disponible en la información proporcionada | Etiquetas de razonamiento | MIT (según el modelo DeepSeek R1) | DeepSeek R1 |
 
-| Tokenizer | Vocabulario | Especialización | Licencia |
-|---|---|---|---|
-| Qwen2.5 tokenizer | ~151.000 (aprox.) | Multilingüe, código, chat | Apache 2.0 |
-| DeepSeek R1 tokenizer | ~128.000 | Multilingüe, razonamiento | MIT |
-| JiRackPrecisionTokenizer | 151.779 | Robótica, routing RAG, tool calls | MIT |
-
-La principal diferencia es la adición de tokens de dominio específico, pero no hay datos objetivos que demuestren una ventaja cuantitativa sobre los tokenizers base.
+No se dispone de datos de rendimiento comparativo entre estos tokenizadores en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La documentación es deficiente: el README contiene errores tipográficos (p. ej., "DeekSeek", "resize function") y no explica el proceso de entrenamiento del tokenizer ni cómo se generaron los merges adicionales.
-- No se proporcionan métricas de rendimiento ni evidencia empírica de que los tokens añadidos mejoren la precisión en las tareas objetivo.
-- El autor recomienda entrenar con "100k example" para adaptar las características de routing, pero no especifica qué datos usar ni cómo evaluar la calidad del enrutamiento.
-- El tokenizer está diseñado para ser compatible con Qwen2.5 y DeepSeek R1, pero no se garantiza que funcione correctamente con otras arquitecturas sin modificaciones.
-- La licencia MIT permite uso comercial, pero el autor menciona "fix price for FinTech", lo que sugiere que puede haber acuerdos comerciales adicionales fuera del repositorio.
-- El repositorio tiene muy pocas descargas (18) y ningún like, lo que indica una adopción comunitaria muy limitada y poca validación externa.
-- No hay información sobre sesgos o riesgos de alucinación, aunque al ser solo un tokenizer, estos riesgos recaen en el modelo base al que se acople.
+- No es un modelo: no genera texto, no razona y no puede evaluarse con benchmarks de lenguaje; su utilidad depende del modelo base al que se acople.
+- Los tokens nuevos carecen de embeddings entrenados; sin un ajuste posterior, el modelo base los tratará como tokens fuera de distribución y su comportamiento será impredecible.
+- La adaptación de las etiquetas de routing RAG requiere, según el autor, del orden de 100.000 ejemplos; no se proporciona ni el dataset ni el procedimiento de ajuste.
+- La model card mezcla afirmaciones de marketing (precios para fintech, suscripciones, "modelos soberanos") con especificaciones técnicas sin verificación externa.
+- El repositorio tiene 0,0 GB y 0 likes, con 276 descargas; no hay evidencia pública de validación por terceros ni de uso en producción.
+- Riesgo de colisión de tokens: la ampliación del vocabulario por encima de 151.643 puede entrar en conflicto con identificadores reservados del vocabulario Qwen2.5 original si no se respeta el mapeo exacto.
+- La lista de idiomas no está desglosada; el soporte multilingüe real dependerá del vocabulario heredado del modelo base.
+- Licencia MIT permite uso comercial, pero no cubre los pesos del modelo base con el que se combine, que mantienen su propia licencia.
+- No hay información sobre sesgos, alucinación o robustez, al no ser un modelo generativo.
+- La fecha de creación indicada (2026-08-01) y la de actualización (2026-09-25) son posteriores a la mayoría de modelos de referencia citados; conviene verificar la vigencia del repositorio antes de adoptarlo.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/CMSManhattan/JiRackPrecisionTokenizer
+- Hugging Face: https://huggingface.co/CMSManhattan/JiRackPrecisionTokenizer
 - Sitio oficial del autor: http://www.cmsmanhattan.com
-- Plataformas de robótica mencionadas (referencias externas):
-  - Tiangong: https://english.www.gov.cn/english.www.gov.cn/news/202411/13/content_WS673406e2c6d0868f4e8ece33.html
-  - Unitree G1: https://a.co/d/0e4A8YVc
-  - LimX Oli: https://www.limxdynamics.com/en/products/oli?channel=option_google_advertising__c-
-  - UBT Robot: https://www.ubtrobot.com/en/
-  - X-Humanoid: https://www.x-humanoid.com/detail/hskw.html
-  - Drone Arrow Air: https://arrowair.com/quiver/
+- Proyecto ROBOS (GitHub): https://github.com/cmsmanhattan/ROBOS
+- Tiangong (plataforma robótica citada): https://english.www.gov.cn/english.www.gov.cn/news/202411/13/content_WS673406e2c6d0868f4e8ece33.html
+- Unitree G1: https://a.co/d/0e4A8YVc
+- LimX Oli: https://www.limxdynamics.com/en/products/oli
+- UBTrobot: https://www.ubtrobot.com/en/
+- X-Humanoid: https://www.x-humanoid.com/detail/hskw.html
+- Dron Quiver (Arrow Air): https://arrowair.com/quiver/

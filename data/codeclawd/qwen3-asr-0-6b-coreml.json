@@ -75,7 +75,7 @@
   "disabled": false,
   "removed": true,
   "removed_at": "2026-11-22T06:55:30.317Z",
-  "removal_pattern": "reupload",
+  "removal_pattern": "account_gone",
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],

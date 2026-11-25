@@ -5,7 +5,7 @@
   "author": "hyunlp-evateam3",
   "url": "https://huggingface.co/hyunlp-evateam3/20261026_healthbench_static_qwen3-4b_impl-ruscarl_s1_whole_rubric",
   "created_at": "2026-10-26T15:28:42.000Z",
-  "updated_at": "2026-11-18T03:59:59.000Z",
+  "updated_at": "2026-11-18T07:57:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

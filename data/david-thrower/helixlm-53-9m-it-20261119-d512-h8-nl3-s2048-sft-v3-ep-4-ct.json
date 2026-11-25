@@ -1,0 +1,119 @@
+{
+  "schema": 2,
+  "id": "david-thrower/HelixLM-53.9M-IT-20261119-d512-h8-nl3-s2048-sft-v3-ep-4-ct",
+  "slug": "david-thrower-helixlm-53-9m-it-20261119-d512-h8-nl3-s2048-sft-v3-ep-4-ct",
+  "author": "david-thrower",
+  "url": "https://huggingface.co/david-thrower/HelixLM-53.9M-IT-20261119-d512-h8-nl3-s2048-sft-v3-ep-4-ct",
+  "created_at": "2026-11-20T16:11:14.000Z",
+  "updated_at": "2026-11-24T01:49:43.000Z",
+  "license": "modified-apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "helix",
+    "text-generation",
+    "ml-intern",
+    "helixlm",
+    "instruct",
+    "sft",
+    "continuation",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:david-thrower/HelixLM-s2048-sft-v3-250k",
+    "base_model:david-thrower/HelixLM-53.9M-20261116-br72-d512-h8-nl3-s2048-5.0BT-wsd",
+    "base_model:finetune:david-thrower/HelixLM-53.9M-20261116-br72-d512-h8-nl3-s2048-5.0BT-wsd",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 266,
+  "trending_score": 0,
+  "parameters": 53592343,
+  "parameters_human": "53.6M",
+  "storage_bytes": 214403044,
+  "storage_human": "214 MB",
+  "context_length": null,
+  "base_model": "david-thrower/HelixLM-53.9M-20261116-br72-d512-h8-nl3-s2048-5.0BT-wsd",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "ARC-Easy",
+      "dataset": "AI2 Reasoning Challenge (Easy)",
+      "metric": "accuracy",
+      "value": 0.4473905723905724
+    },
+    {
+      "task": "ARC-Easy",
+      "dataset": "AI2 Reasoning Challenge (Easy)",
+      "metric": "accuracy_stderr",
+      "value": 0.010202832385415646
+    },
+    {
+      "task": "ARC-Challenge",
+      "dataset": "AI2 Reasoning Challenge (Challenge)",
+      "metric": "accuracy",
+      "value": 0.21245733788395904
+    },
+    {
+      "task": "ARC-Challenge",
+      "dataset": "AI2 Reasoning Challenge (Challenge)",
+      "metric": "accuracy_stderr",
+      "value": 0.011953482906582954
+    },
+    {
+      "task": "WinoGrande",
+      "dataset": "WinoGrande",
+      "metric": "accuracy",
+      "value": 0.4996053670086819
+    },
+    {
+      "task": "WinoGrande",
+      "dataset": "WinoGrande",
+      "metric": "accuracy_stderr",
+      "value": 0.014052481306049516
+    },
+    {
+      "task": "TruthfulQA",
+      "dataset": "TruthfulQA",
+      "metric": "mc1",
+      "value": 0.2460220318237454
+    },
+    {
+      "task": "TruthfulQA",
+      "dataset": "TruthfulQA",
+      "metric": "mc1_stderr",
+      "value": 0.01507721920066259
+    },
+    {
+      "task": "TruthfulQA",
+      "dataset": "TruthfulQA",
+      "metric": "mc2",
+      "value": 0.38643188876913326
+    },
+    {
+      "task": "TruthfulQA",
+      "dataset": "TruthfulQA",
+      "metric": "mc2_stderr",
+      "value": 0.015273689370423013
+    }
+  ],
+  "sources": []
+}

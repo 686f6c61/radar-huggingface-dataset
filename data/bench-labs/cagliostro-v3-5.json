@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 23,
-  "downloads_30d": 277,
+  "downloads_30d": 275,
   "trending_score": 13,
   "parameters": 146352000,
   "parameters_human": "146.4M",
@@ -56,31 +56,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Vêtements d'athlétisme à la mode pour femmes, hommes ... - Bench",
-      "url": "https://bench.shop/fr",
-      "snippet": "Magasinez des articles sportifs, élégants et confortables avec nos t-shirts, leggings, sweat-shirts à capuche, survêtements, shorts, et …"
-    },
-    {
-      "title": "Bench Clothing | Men & Women's Trendy Athleisure Wear",
-      "url": "https://bench.shop/",
-      "snippet": "© 2026 Bench. Freemark Apparel Brands International Inc | Terms & Conditions | Privacy Policy"
-    },
-    {
-      "title": "Hoodies, Crewnecks, Zip-Ups, Jackets, Coats - Bench",
-      "url": "https://bench.ca/fr/collections/womens-new-arrivals",
-      "snippet": "Shop Bench's latest selection of women's athleisure styles and enjoy a 60 day return period and free shipping $99+."
-    },
-    {
-      "title": "Bench | Dernière collection en ligne sur Zalando",
-      "url": "https://www.zalando.fr/bench/",
-      "snippet": "Bench a été créée en 1989 à Manchester, Royaume-Uni, dans un environnement marqué par la musique et la culture street. Ses …"
-    },
-    {
-      "title": "Collections - Bench",
-      "url": "https://bench.ca/fr/collections",
-      "snippet": "Magasinez des articles sportifs, élégants et confortables avec nos t-shirts, leggings, sweat-shirts à capuche, survêtements, shorts, et …"
-    }
-  ]
+  "sources": []
 }

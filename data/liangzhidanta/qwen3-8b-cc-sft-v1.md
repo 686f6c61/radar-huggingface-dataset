@@ -2,130 +2,97 @@
 
 ## Resumen
 
-Qwen3-8B-CC-SFT-v1 es un checkpoint de ajuste supervisado (SFT) orientado a agentes de código, desarrollado por el usuario liangzhidanta a partir de Qwen/Qwen3-8B. El entrenamiento utiliza trayectorias multi-turno nativas de Claude Code, verificadas por ejecución, generadas con GLM-5.3 como modelo profesor sobre tareas de ingeniería de software de SWE-smith (1003 candidatos, split formal 910/93 a nivel de repositorio). Su uso previsto declarado es servir como inicialización (warm start) para un RL posterior de agentes de código verificable, más que como modelo de propósito general.
+Qwen3-8B-CC-SFT-v1 es un checkpoint de ajuste fino supervisado (SFT) sobre Qwen/Qwen3-8B, especializado en tareas de agente de programación (coding agent). Lo desarrolla el usuario independiente liangzhidanta y se entrena con trayectorias multi-turno nativas de Claude Code generadas por un profesor GLM-5.3 sobre tareas de ingeniería de software de SWE-smith, verificadas por ejecución. Es la primera etapa de un pipeline de post-entrenamiento orientado a agentes, y sirve como inicialización para etapas posteriores centradas en fallos.
 
-El checkpoint tiene 8.190.735.360 parámetros (8,19B), se distribuye en safetensors y emplea licencia Apache 2.0. El ajuste fue de parámetros completos (sin LoRA ni PEFT) durante 1 época, 227 pasos de optimizador y aproximadamente 22,5 millones de tokens de secuencia, con contexto de 32.768 tokens y un lote de 8× RTX 4090 24 GB en TP=8. La pérdida SFT enmascarada bajó de 2,02 a 0,52.
+El modelo mantiene la arquitectura transformer densa de Qwen3-8B con 8.190.735.360 parámetros y actualización de todos ellos (full-parameter SFT, sin LoRA ni cuantización). El entrenamiento se realizó con slime v0.3.2 sobre Megatron-LM, con contexto de 32.768 tokens y 227 pasos de optimizador en 8× RTX 4090 de 24 GB. La licencia es Apache 2.0 y los pesos se distribuyen en safetensors.
 
-Su relevancia actual radica en dos datos concretos: frente al Qwen3-8B pre-SFT, el Pass@1 en la evaluación interna pasa de 2,97 % a 28,05 % a temperatura 1.0 (mismo protocolo congelado), y a T=0.3 alcanza 43,23 % (131/303). Además, el modelo no produce ninguna tool call malformada en las cuatro temperaturas evaluadas, lo que lo hace directamente utilizable en harnesses de agentes reales.
+Su relevancia radica en que demuestra una mejora sustancial en resolución de tareas de agente sobre el modelo base en una evaluación interna derivada de SWE-smith: del 3,30 % (10/303) al 34,98 % (106/303) de Pass@1. No obstante, conviene subrayar que no es SWE-bench Verified ni una puntuación de leaderboard, y que existe una versión sucesora (v2) con mejores resultados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso (derivado de Qwen3-8B, modelo instruct, no Base); no documentada en detalle en la model card |
-| Parametros totales | 8.190.735.360 (8,19B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 32.768 tokens (contexto usado en el entrenamiento SFT); la model card no documenta ampliación vía YaRN ni contexto nativo superior |
-| Tipos de cuantizacion | No disponible. El repositorio solo contiene pesos safetensors (16,4 GB, coherente con bfloat16). No se publican GGUF, AWQ, GPTQ ni FP8 |
-| Idiomas soportados | No disponible (la model card no documenta cobertura de idiomas; las trayectorias y el harness de evaluación son de Claude Code, sin detalle de composición lingüística) |
+| Arquitectura | Transformer denso (Qwen3), decoder-only |
+| Parametros totales | 8.190.735.360 |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | 32.768 tokens en entrenamiento; 40.960 tokens en evaluación |
+| Tipos de cuantizacion | no disponible (el autor solo documenta bfloat16; no se publican GGUF ni AWQ) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, cargables con `transformers` |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base Qwen/Qwen3-8B (variante instruct), un transformer decoder-only denso de 8,19B parámetros. El ajuste no modifica la arquitectura: se aplicó SFT de parámetros completos sobre los 8,19B pesos, sin LoRA, PEFT ni cuantización, usando el framework slime v0.3.2 (commit 3778dbf, sin modificaciones) y el tokenizador y chat template nativos de Qwen3. Hiperparámetros: optimizador Adam, learning rate 1e-5 con decaimiento coseno hasta 1e-6, warmup 0,1, weight decay 0,1, betas 0,9/0,95, 1 época, 227 pasos de optimizador, contexto 32.768, paralelismo TP=8 / DP=1 / PP=1 / CP=1 con sequence parallel.
+El modelo parte de Qwen3-8B en su variante instruct (no Base) y conserva su tokenizador y plantilla de chat nativos. El ajuste es SFT de parámetro completo: se actualizan los 8,19 mil millones de parámetros con Adam, learning rate de 1e-5 con decaimiento coseno hasta 1e-6, warmup de 0,1, weight decay de 0,1 y betas 0,9/0,95. Se ejecutó una única época sobre 227 pasos de optimizador, aproximadamente 22,5 millones de tokens de secuencia, con paralelismo TP=8 sobre 8× RTX 4090 de 24 GB y contexto de 32.768 tokens. La pérdida SFT enmascarada bajó de 2,02 a 0,52 y la de validación de 1,612 a 0,556.
 
-Los datos de entrenamiento provienen del dataset claude-code-glm53-swesmith-trajectories: 1003 trayectorias multi-turno verificadas por ejecución (reward=1, protocolo válido, sin trampas, ≤32k tokens), generadas con GLM-5.3 como profesor sobre tareas de SWE-smith, con split 910/93 y repositorios disjuntos a nivel de split (90 de entrenamiento, 9 de validación). El formato incluye contexto de sistema/harness, tarea de usuario, razonamiento del asistente, texto del asistente, tool calls y resultados de herramientas. La máscara de pérdida (slime `MultiTurnLossMaskGenerator(qwen3)`) enmascara system/usuario/resultado de herramienta y solo entrena razonamiento, texto y tool calls del asistente. No se documenta RLHF, DPO ni RL posterior en esta revisión; el checkpoint se presenta explícitamente como punto de partida para RL verificable.
+Los datos son 1.003 trayectorias candidatas (910 de entrenamiento y 93 de validación, con separación por repositorio) del dataset claude-code-glm53-swesmith-trajectories. Cada trayectoria es multi-turno nativa de Claude Code e incluye contexto de sistema y arnés, tarea de usuario, razonamiento y texto del asistente, llamadas a herramientas y resultados de herramientas. El enmascaramiento de pérdida (MultiTurnLossMaskGenerator de slime para Qwen3) deja fuera sistema, usuario y resultados de herramientas, y entrena únicamente razonamiento, texto y llamadas a herramientas del asistente. No se documenta RLHF ni DPO en esta etapa.
 
 ## Capacidades
 
-- Generación de razonamiento multi-turno y ejecución de tareas de ingeniería de software con parches de código sobre repositorios completos.
-- Tool calling / function calling nativo en formato de harness compatible con Claude Code; 0 tool calls malformadas en las cuatro temperaturas evaluadas (T=0.0, 0.3, 0.7 y 1.0).
-- Uso de agente con múltiples pasos: media de 14,3 a 16,0 llamadas al modelo por tarea según temperatura.
-- Lectura e interpretación de resultados de herramientas (tool results) dentro de la trayectoria, con razonamiento explícito antes de la acción.
-- Generación de parches: 75,9 % de tasa de parche a T=0.3 (76,2 % a T=0.0, 75,3 % a T=0.7, 62,4 % a T=1.0).
-- Modo de razonamiento: la model card menciona el uso de un parser de razonamiento de Qwen3 en el servidor, lo que implica trazas de razonamiento separables del texto de salida.
-- Capacidades multilingües: no documentadas.
-- Visión y audio: no soportados (modelo de texto).
+- Generación de texto conversacional multi-turno con plantilla de chat Qwen3.
+- Razonamiento de agente para ingeniería de software: edición de ficheros, ejecución de pruebas e iteración sobre resultados.
+- Uso de herramientas (tool calling) en formato nativo de Claude Code, con parser de razonamiento y de llamadas a herramientas compatible con SGLang.
+- Razonamiento multi-paso dentro de un bucle de agente, con hasta 32 llamadas por tarea en la configuración de evaluación.
+- Gestión de contexto mediante compactación automática nativa de Claude Code.
+- Capacidades multilingües: no disponibles como dato declarado; hereda las del modelo base Qwen3-8B sin verificación específica.
+- No se declaran capacidades de visión ni de audio.
 
 ## Casos de uso
 
-- Agentes de código autónomos sobre repositorios reales: el modelo está entrenado con trayectorias repo-level y produce parches ejecutables en el 75,9 % de las tareas a T=0.3, por lo que puede desplegarse como núcleo de un agente que localiza, edita y verifica código en un repositorio completo.
-- Inicialización para RL verificable: la model card indica explícitamente este uso como warm start de un pipeline de RL con recompensa basada en ejecución, partiendo de un Pass@1 del 28,05 % en lugar del 2,97 % del modelo base.
-- Investigación en tool calling y SFT multi-turno: la máscara de pérdida específica para turnos de asistente y la ausencia de tool calls malformadas lo convierten en una base controlada para estudiar formatos de herramientas y dinámicas de conversación agente-herramienta.
-- Integración en harness tipo Claude Code: el checkpoint se sirvió con SGLang usando parser de razonamiento y de tool calls de Qwen3, de modo que puede reproducirse ese montaje para evaluar agentes con protocolo congelado.
-- Automatización en pipelines de CI/CD: con 32.768 tokens de contexto puede recibir fragmentos amplios de repositorio, stack traces y resultados de tests, generar un parche y re-ejecutar la suite dentro del mismo bucle de agente.
-- Ablación de estrategias de decodificación y temperatura: los datos publicados (28,05 % a T=1.0 frente a 43,23 % a T=0.3) permiten estudiar el efecto de la temperatura en agentes de código y calibrar políticas de muestreo en producción.
-- Generación de datos sintéticos de trayectorias: al estar especializado en el formato Claude Code, puede usarse para producir trayectorias candidatas que después se filtren por ejecución, alimentando iteraciones posteriores del dataset.
-- Evaluación comparativa de harnesses y servidores: permite medir diferencias de tasa de parche y de desbordamiento de contexto entre pilas de servicio (SGLang, vLLM, transformers) manteniendo fijo el modelo.
+- Investigación en agentes de programación: sirve como punto de partida reproducible para estudiar bucles de agente con herramientas sobre tareas tipo SWE, dado que el autor publica el dataset y el protocolo de evaluación.
+- Inicialización para SFT o RL posteriores: al ser una etapa 1 de parámetro completo, es un punto de arranque adecuado para post-entrenamiento orientado a fallos, como demuestra la transición documentada hacia la versión v2.
+- Reparación automática de errores en repositorios: el modelo puede recibir una tarea de bug fixing, inspeccionar el código, aplicar parches y ejecutar pruebas dentro de un contenedor Docker, aprovechando su entrenamiento con trayectorias verificadas por ejecución.
+- Automatización de tareas de mantenimiento de código: actualizaciones de dependencias o refactorizaciones acotadas donde el agente debe leer varios ficheros y validar el resultado con la suite de pruebas del proyecto.
+- Evaluación comparativa de arneses de agente: al ser compatible con un arnés tipo Claude Code y con SGLang, permite medir el efecto del arnés y de la compactación de contexto sobre el mismo checkpoint.
+- Experimentación con tool use en investigación: su máscara de pérdida centrada en llamadas a herramientas lo hace útil para estudiar cómo se aprende el formato de invocación y la interpretación de resultados.
+- Prototipado de asistentes de desarrollo en local: con cuantización adecuada podría desplegarse en una GPU de consumo para pruebas, aunque el autor no publica pesos cuantizados ni mediciones de latencia.
 
 ## Benchmarks y rendimiento
 
-Evaluación interna derivada de SWE-smith, con repositorios disjuntos (303 tareas canónicas, 11 repositorios retenidos, Pass@1, 1 rollout por tarea, harness Claude Code 2.1.258, protocolo congelado). No es SWE-bench Verified ni una puntuación de leaderboard.
+Evaluación canónica interna del autor, derivada de SWE-smith, con 303 tareas y 11 repositorios reservados, Pass@1 con una sola ejecución por tarea. No es SWE-bench Verified.
 
-Ablación de temperatura (mismas 303 tareas, top_p=0,95, 1 rollout por tarea):
+| Modelo | Etapa | Resueltas | Pass@1 |
+|---|---|---:|---:|
+| Qwen3-8B (base) | — | 10/303 | 3,30 % |
+| Qwen3-8B-CC-SFT-v1 | SFT de agente general | 106/303 | 34,98 % |
+| Qwen3-8B-CC-SFT-v2 (referencia) | SFT consciente de compactación | 144/303 (4090) / 154/303 (A100) | 47,52 % / 50,83 % |
 
-| Metrica (Pass@1) | T=0.0 | T=0.3 | T=0.7 | T=1.0 |
-|---|---:|---:|---:|---:|
-| Resueltas / 303 | 119 | 131 | 107 | 85 |
-| Pass@1 | 39,27 % | 43,23 % | 35,31 % | 28,05 % |
-| IC 95 % (bootstrap) | [33,9; 44,9] | [37,6; 48,8] | [30,0; 40,9] | [23,1; 33,3] |
-| Facil / Medio / Dificil | 67,7 / 41,7 / 24,8 | 74,2 / 45,2 / 26,8 | 64,5 / 36,5 / 22,3 | 58,1 / 27,8 / 22,3 |
-
-Comparación SFT frente a base con protocolo congelado, ambos a T=1.0:
-
-| Metrica | Qwen3-8B pre-SFT | Qwen3-8B-CC-SFT-v1 |
-|---|---:|---:|
-| Pass@1 (T=1.0) | 2,97 % (9/303) | 28,05 % (85/303) |
-| Facil | 12,9 % | 58,1 % |
-| Medio | 3,5 % | 27,8 % |
-| Dificil | 0,6 % | 22,3 % |
-
-Comportamiento por temperatura:
-
-| Comportamiento | T=0.0 | T=0.3 | T=0.7 | T=1.0 |
-|---|---:|---:|---:|---:|
-| Tasa de parche | 76,2 % | 75,9 % | 75,3 % | 62,4 % |
-| Tasa sin parche | 20,1 % | 22,8 % | 23,8 % | 37,3 % |
-| Desbordamiento de contexto (tareas) | 141 | 141 | 175 | 201 |
-| Llamadas medias al modelo | 16,0 | 14,8 | 15,0 | 14,3 |
-| Tiempo medio transcurrido | 245 s | 202 s | 201 s | 354 s |
-| Tool calls malformadas | 0 | 0 | 0 | 0 |
-
-Mejora absoluta de Pass@1 a temperatura igualada: +25,08 puntos porcentuales (≈9,4× en términos relativos, dato secundario).
-
-SWE-bench Verified: pendiente ("TBD") para el modelo pre-SFT y para este checkpoint; la evaluación está planificada según la model card. No se han publicado resultados de benchmarks en la información disponible más allá de los anteriores.
+Protocolo: contexto de 40.960 tokens, compactación automática de Claude Code activada, temperatura 0,3, top_p 0,95, máximo de 32 llamadas de agente, arnés compatible con Claude Code 2.1.258 y servicio con SGLang 0.5.15.post1 con TP=2. No se han publicado resultados de MMLU, HumanEval, GSM8K ni SWE-bench Verified en la información disponible.
 
 ## Requisitos de hardware
 
-- Entrenamiento documentado: 8× RTX 4090 24 GB con TP=8, DP=1, PP=1, CP=1 y sequence parallel, contexto 32.768, full-parameter SFT.
-- VRAM de inferencia en bfloat16: aproximadamente 16,4 GB solo para pesos (8,19B × 2 bytes); estimación no verificada por el autor.
-- VRAM adicional: hay que sumar la caché KV para el contexto usado. Con 32.768 tokens y arquitectura Qwen3-8B, la caché es del orden de varios GB, por lo que una inferencia a contexto completo en bf16 puede superar los 20-25 GB totales (estimación, no confirmada en la model card).
-- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 para una sola réplica; el autor usó 8× RTX 4090 para el entrenamiento, no para servir.
-- Cabe en GPU de consumo: los pesos en bf16 caben en una RTX 4090 de 24 GB, pero el contexto largo puede agotar la memoria; en la práctica requeriría cuantización o limitar la ventana. No hay cuantizaciones publicadas, así que el usuario tendría que generarlas.
-- Opciones de despliegue: SGLang (la usada por el autor, con parser de razonamiento y de tool calls de Qwen3), transformers con `AutoModelForCausalLM` y `dtype="bfloat16"`, vLLM y TGI (el repositorio incluye el tag `endpoints_compatible` y `text-generation-inference`). llama.cpp y Ollama solo serían viables generando GGUF, que no se distribuye.
-- Latencia y throughput: la model card reporta tiempo medio por tarea completa de agente en el harness: 202 s a T=0.3, 201 s a T=0.7, 245 s a T=0.0 y 354 s a T=1.0, con 14-16 llamadas al modelo por tarea. No se publican tokens por segundo ni latencia por token.
+- VRAM estimada para inferencia en bfloat16: en torno a 16,4 GB solo para pesos, más overhead de KV cache; el repositorio ocupa 16,4 GB.
+- GPU recomendadas: A100 40/80 GB o H100 para servicio con contexto largo y concurrencia; en la evaluación el autor usó SGLang con TP=2.
+- GPU de consumo: cabe en RTX 4090 de 24 GB en bfloat16 para un solo usuario con contexto moderado; el entrenamiento se hizo con 8× RTX 4090 de 24 GB en TP=8.
+- Opciones de despliegue: SGLang (stack usado por el autor, con parser de razonamiento y de tool calls de Qwen3), transformers con device_map="auto" y dtype bfloat16; vLLM, llama.cpp, Ollama y TGI no están documentados por el autor, y no se publican pesos GGUF.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Pass@1 (evaluacion interna, T=1.0) | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Rendimiento en agente | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8B-CC-SFT-v1 | 8,19B densos | 32.768 (entrenamiento SFT) | 28,05 % (T=1.0); 43,23 % (T=0.3) | Apache 2.0 | Pesos safetensors en Hugging Face |
-| Qwen3-8B pre-SFT | 8,19B densos | No documentado en esta ficha | 2,97 % | Apache 2.0 | Pesos en Hugging Face |
-| Otros SFT de agentes de codigo de ~7-9B | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Qwen3-8B-CC-SFT-v1 | 8,19 B | 32.768 (entrenamiento) | 34,98 % Pass@1 en canonical303 (interno) | Apache 2.0 | Hugging Face |
+| Qwen3-8B (base) | 8,19 B | 32.768 | 3,30 % Pass@1 en canonical303 (interno) | Apache 2.0 | Hugging Face |
+| Qwen3-8B-CC-SFT-v2 | 8,19 B | no disponible | 47,52 % / 50,83 % Pass@1 en canonical303 (interno) | Apache 2.0 | Hugging Face |
 
-La información proporcionada solo permite la comparación directa con el modelo base Qwen3-8B bajo el mismo protocolo. No se han publicado comparaciones con otros modelos de la misma categoría (por ejemplo, otras variantes de Qwen o de familias de código de tamaño similar) en la información disponible.
+La comparación con modelos de otros autores no está disponible en la información proporcionada, y las cifras de canonical303 no son comparables con puntuaciones de SWE-bench Verified de terceros.
 
 ## Limitaciones y advertencias
 
-- Selección post-hoc de la temperatura: el 43,23 % a T=0.3 se eligió como mejor configuración sobre el mismo conjunto de evaluación, por lo que debe interpretarse como cifra "ablation-best" y no como estimación limpia de un conjunto retenido. La cifra con protocolo congelado por defecto (T=1.0) es 28,05 %.
-- Presión de contexto: el checkpoint genera trazas de razonamiento más largas que el modelo base y eleva el desbordamiento de contexto del 27,7 % al 66,3 % de las tareas a T=1.0 (201/303). A temperaturas bajas se reduce a 141/303. Es una limitación reconocida de la v1.
-- Tasa de no-parche elevada a alta temperatura: 37,3 % de tareas sin parche a T=1.0, frente al 20,1-22,8 % de T=0.0-0.3.
-- Evaluación no estandarizada: los resultados provienen de una evaluación interna derivada de SWE-smith, con 303 tareas y 11 repositorios, y no de SWE-bench Verified. La propia model card advierte que no es una puntuación de leaderboard. SWE-bench Verified está pendiente.
-- Dominio estrecho: el entrenamiento se limita a trayectorias de SWE-smith generadas por GLM-5.3 como profesor (1003 candidatos, 1 época, ~22,5M tokens de secuencia), lo que puede reducir la generalización a repositorios, lenguajes y flujos de trabajo fuera de esa distribución.
-- Posible dependencia del harness: el modelo se evaluó con Claude Code 2.1.258 y servido con SGLang y parsers concretos; el comportamiento con otros harnesses o parsers no está cuantificado.
-- Idiomas: no hay información sobre cobertura multilingüe ni sobre el rendimiento fuera del inglés del harness.
-- Sesgos: no se documentan sesgos conocidos ni evaluaciones de seguridad o alineación en la model card.
-- Alucinación: no se publican métricas de fidelidad; en tareas repo-level el riesgo se manifiesta como parches plausibles pero incorrectos que requieren verificación por ejecución.
-- Licencia: Apache 2.0 permite uso comercial, pero el modelo base Qwen/Qwen3-8B conserva sus propios términos; conviene revisarlos antes de un despliegue comercial.
-- Distribución limitada: 468 descargas y 1 like en el momento de la consulta, sin cuantizaciones publicadas ni versiones GGUF, lo que encarece el despliegue en hardware de consumo.
+- La métrica principal es una evaluación interna derivada de SWE-smith; no es SWE-bench Verified y no debe interpretarse como puntuación de leaderboard.
+- Existe una versión sucesora, v2, con mejor rendimiento (47,52 %–50,83 % frente a 34,98 %); para uso práctico conviene evaluar v2 antes que v1.
+- El análisis de fallos del autor identifica problemas en la preservación de trabajo completado frente a pendiente, en el estado de modificaciones, en la ejecución de pruebas y en la continuación tras la compactación de contexto.
+- El entrenamiento usó solo 910 trayectorias de entrenamiento y una época, lo que limita la cobertura de dominios y estilos de repositorio.
+- No se declaran idiomas soportados ni sesgos conocidos; el comportamiento multilingüe hereda el del modelo base sin verificación.
+- Riesgo de alucinación inherente a un modelo de 8 B ajustado por SFT, especialmente en llamadas a herramientas con argumentos inventados.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo se distribuye como checkpoint de investigación sin garantías ni soporte.
+- No se publican pesos cuantizados ni mediciones de latencia y throughput, lo que dificulta planificar despliegues en producción.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/liangzhidanta/Qwen3-8B-CC-SFT-v1
-- README en chino: https://huggingface.co/liangzhidanta/Qwen3-8B-CC-SFT-v1/blob/main/README.zh-CN.md
-- Dataset de entrenamiento: https://huggingface.co/datasets/liangzhidanta/claude-code-glm53-swesmith-trajectories
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
-- Framework slime v0.3.2 (commit 3778dbf): mencionado en la model card sin URL; no disponible en la información proporcionada
-- Paper, blog o demo adicionales: no disponible en la información proporcionada
-- Resultados de la búsqueda web: no se han encontrado enlaces relevantes; los resultados devueltos corresponden a un foro no relacionado con el modelo
+- Dataset de trayectorias: https://huggingface.co/datasets/liangzhidanta/claude-code-glm53-swesmith-trajectories
+- Dataset de evaluación canonical303: https://huggingface.co/datasets/liangzhidanta/swe-smith-canonical303
+- Versión sucesora v2: https://huggingface.co/liangzhidanta/Qwen3-8B-CC-SFT-v2
+- Dataset de trayectorias con compactación (v2): https://huggingface.co/datasets/liangzhidanta/claude-code-glm53-swesmith-compact-trajectories

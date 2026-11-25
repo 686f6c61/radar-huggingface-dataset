@@ -5,7 +5,7 @@
   "author": "anira-project",
   "url": "https://huggingface.co/anira-project/silero-vad",
   "created_at": "2026-10-30T10:31:07.000Z",
-  "updated_at": "2026-11-23T13:02:19.000Z",
+  "updated_at": "2026-11-24T12:52:09.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "voice-activity-detection",

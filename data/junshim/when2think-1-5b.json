@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 275,
+  "downloads_30d": 252,
   "trending_score": 0,
   "parameters": 1777088000,
   "parameters_human": "1.78B",
@@ -57,31 +57,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Wikipedia, la enciclopedia libre",
-      "url": "https://es.wikipedia.org/wiki/Wikipedia:Portada",
-      "snippet": "Wikipedia es uno de los proyectos Wikimedia, de contenido libre y administrados técnicamente por la Fundación Wikimedia, una …"
-    },
-    {
-      "title": "Wikipedia",
-      "url": "https://www.wikipedia.org/",
-      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
-    },
-    {
-      "title": "Wikipedia, the free encyclopedia",
-      "url": "https://en.wikipedia.org/wiki/Main_Page",
-      "snippet": "Other areas of Wikipedia Community portal – The central hub for editors, with resources, links, tasks, and announcements. Village …"
-    },
-    {
-      "title": "Wikipedia – Die freie Enzyklopädie",
-      "url": "https://de.wikipedia.org/wiki/Wikipedia:Hauptseite",
-      "snippet": "Wikipedia ist ein Projekt zum Aufbau einer Enzyklopädie aus freien Inhalten, zu denen du sehr gern beitragen kannst. Seit März 2001 …"
-    },
-    {
-      "title": "Wikipedia, de vrije encyclopedie",
-      "url": "https://nl.wikipedia.org/wiki/Hoofdpagina",
-      "snippet": "Biologie Geschiedenis Kunst & Cultuur Landen & Volken Mens & Maatschappij Politiek Religie Sport Taal Wetenschap & Technologie"
-    }
-  ]
+  "sources": []
 }

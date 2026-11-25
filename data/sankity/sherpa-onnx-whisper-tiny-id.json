@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "sankity/sherpa-onnx-whisper-tiny-id",
+  "slug": "sankity-sherpa-onnx-whisper-tiny-id",
+  "author": "sankity",
+  "url": "https://huggingface.co/sankity/sherpa-onnx-whisper-tiny-id",
+  "created_at": "2026-11-25T09:11:04.000Z",
+  "updated_at": "2026-11-25T09:11:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "whisper",
+    "indonesian",
+    "asr",
+    "automatic-speech-recognition",
+    "id",
+    "base_model:maleo-ai/whisper-tiny-id",
+    "base_model:quantized:maleo-ai/whisper-tiny-id",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 152127103,
+  "storage_human": "152 MB",
+  "context_length": null,
+  "base_model": "maleo-ai/whisper-tiny-id",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

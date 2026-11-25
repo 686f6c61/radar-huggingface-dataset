@@ -5,7 +5,7 @@
   "author": "adventists-ai",
   "url": "https://huggingface.co/adventists-ai/Sophon-Realtime-32B-E2E",
   "created_at": "2026-11-08T07:24:00.000Z",
-  "updated_at": "2026-11-23T17:13:39.000Z",
+  "updated_at": "2026-11-24T16:24:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "audio-to-audio",

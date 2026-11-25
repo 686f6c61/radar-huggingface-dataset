@@ -2,86 +2,101 @@
 
 ## Resumen
 
-MahoHiyajo-Lora es un LoRA de personaje para Stable Diffusion XL (SDXL), concretamente para la variante Illustrious, que reproduce a Maho Hiyajo (比屋定真帆), personaje de la franquicia *Steins;Gate*. Lo desarrolla el usuario abbuibuibui y se distribuye como derivado no oficial; los derechos del personaje siguen perteneciendo a sus titulares originales. El modelo base declarado es waiIllustriousSDXL v17, sobre el que se ha entrenado un adaptador de rango 64.
+MahoHiyajo-Lora es un LoRA de personaje para modelos de difusion de la familia SDXL, concretamente para el modelo base waiIllustriousSDXL v17, que representa a Maho Hiyajo (比屋定真帆), personaje de la franquicia *Steins;Gate*. Lo desarrolla el usuario abbuibuibui como derivado no oficial y lo publica en Hugging Face bajo licencia CreativeML OpenRAIL-M. No es un modelo de lenguaje ni un modelo fundacional: es un adaptador de bajo rango que se carga sobre un checkpoint SDXL para condicionar la generacion de imagenes hacia una identidad visual concreta.
 
-El repositorio contiene siete checkpoints correspondientes a las siete epocas de entrenamiento (E1-E7), cada uno de 456.494.348 bytes, y el autor recomienda E6 con una fuerza de 0.8 como configuración por defecto tras una evaluacion comparativa propia. El dataset de entrenamiento es publico (abbuibuibui/MahoHiyajo-Dataset) y consta de 100 pares de imagenes con tres conjuntos de vestuario.
+El repositorio es en realidad una coleccion de tres linajes de LoRA entrenados sobre bases distintas: los pesos de la raiz corresponden a WAI/Illustrious SDXL, el subdirectorio `autism_pony/` contiene una version para AutismMix Pony y el subdirectorio `moss/` una version para MOSS-Image. Cada linaje requiere su propio modelo base, prompts y negativos, y no son intercambiables. El entrenamiento se hizo con un dataset de 100 pares imagen-texto y tres conjuntos de vestuario, con rango 64 y alpha 32.
 
-Es relevante para quien genere imagenes de fan art o material derivado de *Steins;Gate* con pipelines SDXL/Illustrious y necesite consistencia de personaje mediante tokens de activacion especificos. No es un modelo de lenguaje ni un modelo fundacional: es un adaptador de difusion de ~3,2 GB de repositorio, con licencia CreativeML OpenRAIL-M y soporte declarado de prompts en ingles y chino.
+La relevancia practica es acotada: sirve para generar ilustraciones consistentes del personaje en pipelines de difusion (ComfyUI, Automatic1111, diffusers) con control fino de identidad y vestuario mediante tokens de activacion. El autor documenta una evaluacion comparativa entre epocas y recomienda el checkpoint E6 a fuerza 0.8 para el linaje WAI/Illustrious.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA sobre SDXL (variante Illustrious); red neuronal de difusion latente |
-| Parametros totales | no disponible (adaptador LoRA de rango 64, alpha 32; cada checkpoint pesa 456.494.348 bytes) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (no aplica a modelos de difusion; la ventana practica la fija el limite de tokens del text encoder de SDXL) |
-| Tipos de cuantizacion | no disponible; se distribuye en safetensors bf16/fp16 segun el entrenamiento (AdamW bf16) |
-| Idiomas soportados | en, zh |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre SDXL; rango 64, alpha 32 |
+| Parametros totales | no disponible (cada fichero de pesos ocupa 456.494.348 bytes) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no aplica (modelo de difusion de imagenes) |
+| Tipos de cuantizacion | no disponible; pesos en safetensors, sin cuantizacion documentada |
+| Idiomas soportados | en, zh (prompts y documentacion) |
 | Licencia | creativeml-openrail-m |
-| Formato de pesos | safetensors (un fichero por epoca: `maho_hiyajo-000001` a `000006` y `maho_hiyajo.safetensors`) |
+| Formato de pesos | safetensors |
+| Modelo base | waiIllustriousSDXL v17 (raiz); AutismMix Pony (`autism_pony/`); MOSS-Image (`moss/`) |
+| Epocas entrenadas | 7 (E1-E7; el fichero sin numerar equivale a E7) |
+| Checkpoint recomendado | E6 a fuerza 0.8 (linaje WAI/Illustrious) |
+| Dataset | abbuibuibui/MahoHiyajo-Dataset (100 pares, 3 vestuarios) |
+| Tamano del repo | 7.9 GB |
+| Descargas | 315 |
+| Libreria | diffusers |
 
 ## Arquitectura y entrenamiento
 
-El adaptador es un LoRA de rango 64 con alpha 32 aplicado sobre el modelo de difusion SDXL en su variante Illustrious (waiIllustriousSDXL v17). El entrenamiento uso el optimizador AdamW en precision bf16, con buckets de resolucion con tope de 1536 y siete epocas completas. El dataset consta de 100 pares imagen-texto con tres conjuntos de vestuario, con repeticiones 3 y `keep_tokens = 2` en las captions. Los tokens de activacion entrenados son `maho_hiyajo` (identidad), `maho_hiyajo_lab_coat` (vestuario principal), `maho_hiyajo_green_hooded_coat` (vestuario alternativo) y `maho_hiyajo_white_green_trim_top`.
+El adaptador es un LoRA de rango 64 con alpha 32 inyectado sobre las capas de atencion y proyeccion de un UNet SDXL. El modelo base del linaje principal es waiIllustriousSDXL v17, un checkpoint SDXL orientado a ilustracion anime. El entrenamiento uso AdamW en bf16, buckets con tope de 1536 y 7 epocas sobre un dataset de 100 pares imagen-texto con tres conjuntos de vestuario y repeticiones 3 en el linaje WAI (repeticiones 2 en el linaje AutismMix Pony). Las captions se generaron con `keep_tokens = 2`, de modo que los dos primeros tokens de identidad quedan fijos y el color de pelo y ojos a menudo se omite en el texto; el autor indica que conviene anadirlos explicitamente en el prompt.
 
-Las captions omiten con frecuencia el color de pelo y de ojos, por lo que el autor recomienda anadirlos explicitamente en el prompt (short hair, brown hair, brown eyes). La evaluacion publicada por el autor incluye una primera ronda de cribado de E1-E7 a fuerza 0.8 y una tercera ronda en matriz sobre E5, E6 y E7 con diez escenas y cuatro fuerzas (0.4, 0.6, 0.8 y 1.0). El resultado es la recomendacion de E6 a 0.8 como configuracion estable de silueta y vestuario.
+La innovacion tecnica destacable no esta en la arquitectura sino en el proceso de seleccion: el autor publica una evaluacion horizontal en dos rondas. La ronda 1 criba E1-E7 a fuerza 0.8; la ronda 3 ejecuta una matriz de E5, E6 y E7 por 10 escenas y 4 fuerzas (0.4, 0.6, 0.8, 1.0). El resultado es que E6 ofrece la silueta mas estable de Maho (pelo largo desordenado verde oliva oscuro, ojos verdes claros, bata de laboratorio) y se adopta como valor por defecto a 0.8. El linaje AutismMix Pony se entreno con 100 imagenes fijas, repeticiones 2, 7 epocas y rango 64, y sus muestras se renderizaron con AutismMix Confetti.
 
 ## Capacidades
 
-- Generacion de imagenes de personaje consistente: reproduce el rostro y la silueta de Maho Hiyajo en distintos angulos (frontal, tres cuartos, perfil) y planos (retrato, cuerpo completo, sentada).
-- Control de vestuario mediante tokens dedicados: bata de laboratorio con top verde (`maho_hiyajo_lab_coat`), abrigo verde con capucha (`maho_hiyajo_green_hooded_coat`) y top blanco con ribete verde (`maho_hiyajo_white_green_trim_top`).
-- Integracion en pipelines de difusion estandar: funciona como LoRA en ComfyUI, Automatic1111 y otros frontends compatibles con SDXL/Illustrious, con la sintaxis `<lora:nombre:peso>`.
-- Ajuste de intensidad del personaje: la fuerza del LoRA es un parametro continuo; el autor documenta comportamiento estable en el rango 0.4-1.0 y recomienda 0.8.
-- Soporte de prompts en ingles y chino, segun los idiomas declarados en la model card.
-- No soporta tool calling, agentes, razonamiento multi-paso ni modalidades de texto, audio o video: es exclusivamente un adaptador de generacion de imagen.
+- Generacion de imagenes de personaje con identidad consistente mediante el token `maho_hiyajo`.
+- Control de vestuario mediante tokens dedicados: `maho_hiyajo_lab_coat`, `maho_hiyajo_green_hooded_coat` y `maho_hiyajo_white_green_trim_top`.
+- Composición de escenas: retrato frontal, tres cuartos, perfil, cuerpo completo, sentada, fondo simple, fondo complejo nocturno y ausencia de token de vestuario.
+- Compatibilidad con prompts en ingles y chino; la documentacion incluye una version en chino (`README_zh.md`) y notas de evaluacion en `evaluation/横向测评记录.md`.
+- Integracion con ComfyUI y con la libreria diffusers; el autor documenta ajustes concretos (Euler a, 28 pasos, CFG 4.5, CLIP skip 2, 832x1216 para el linaje WAI; Euler a, 24 pasos, CFG 6, CLIP skip 2 para AutismMix Pony).
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso, vision, audio ni modo thinking: es un adaptador de difusion, no un modelo de lenguaje.
 
 ## Casos de uso
 
-- Fan art de *Steins;Gate*: generar ilustraciones de Maho Hiyajo en poses y escenarios variados manteniendo consistencia facial y de vestuario mediante los tokens de activacion, con el checkpoint E6 a fuerza 0.8 como punto de partida.
-- Creacion de hojas de personaje: producir vistas frontal, de tres cuartos y de perfil del personaje con el mismo seed y prompt base para documentar disenos o servir de referencia a otros artistas.
-- Ilustracion de ficcion derivada: escenas nocturnas en calle o fondos complejos, ya que la evaluacion del autor incluye explicitamente escenas con fondo complejo y nocturno.
-- Prototipado rapido de composiciones: usar el LoRA a fuerza baja (0.4-0.6) para mezclar el personaje con el estilo del modelo base sin que domine la composicion.
-- Generacion de variantes de vestuario: el token de identidad funciona sin token de vestuario (documentado en la evaluacion como "no outfit"), lo que permite describir ropa nueva en el prompt y mantener el rostro.
-- Material para proyectos de traduccion o divulgacion sobre *Steins;Gate*: ilustraciones de acompanamiento para articulos o videos, siempre respetando las restricciones de la licencia OpenRAIL-M y los derechos del personaje.
+- Ilustracion de fan art de *Steins;Gate*: cargar el LoRA E6 a 0.8 sobre waiIllustriousSDXL v17 y generar retratos del personaje con la silueta estable que el autor valida en la ronda 3 de evaluacion.
+- Creacion de hojas de personaje para produccion: usar los tokens de vestuario para generar el mismo personaje con bata de laboratorio, abrigo verde con capucha y top blanco con ribete verde, manteniendo coherencia entre vistas.
+- Generacion de keyframes para animatica o storyboard: la combinacion de escenas de retrato, tres cuartos, perfil y cuerpo completo permite cubrir los angulos habituales de una secuencia sin cambiar de checkpoint.
+- Prototipado rapido en ComfyUI: el flujo documentado (Euler a, 28 pasos, CFG 4.5, CLIP skip 2, 832x1216, sin hires ni ADetailer) produce resultados directos, lo que reduce el coste de iteracion en pruebas de concepto.
+- Exploracion de variantes estilisticas entre linajes: comparar el mismo personaje renderizado con el LoRA de WAI/Illustrious, el de AutismMix Pony y el de MOSS-Image para elegir el acabado mas adecuado a un proyecto, teniendo en cuenta que cada linaje exige su propio modelo base y negativos.
+- Integracion en pipelines programaticos con diffusers: al ser pesos safetensors y estar etiquetado como `library_name: diffusers`, el adaptador se puede cargar y descargar por script en lotes de generacion, util para producir catalogos de imagenes de un personaje concreto.
+- Documentacion y divulgacion: el repositorio incluye matrices de evaluacion publicas que sirven como referencia metodologica para quien entrene sus propios LoRA de personaje y quiera replicar un proceso de seleccion por epoca y fuerza.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La evaluacion incluida es cualitativa (comparativa visual entre epocas y fuerzas), no cuantitativa, y no reporta metricas como FID, CLIP score ni similitud facial.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor aporta una evaluacion cualitativa por rondas (cribado E1-E7 a 0.8 y matriz E5/E6/E7 por 10 escenas y 4 fuerzas) con imagenes comparativas, pero sin metricas numericas como FID, CLIP score ni similitud facial.
+
+| Criterio | E5 | E6 | E7 |
+|---|---|---|---|
+| Pelo verde oliva oscuro largo y desordenado | usable | estable | cercano a E6 |
+| Ojos verdes claros | usable | estable | cercano a E6 |
+| Bata de laboratorio | a menudo presente | estable | cercano a E6 |
+| Decision del autor | alternativa | recomendado a 0.8 | alternativa final |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma especifica para este LoRA; depende del modelo base waiIllustriousSDXL v17. Como referencia general de SDXL, la inferencia en fp16 requiere del orden de 8-12 GB de VRAM, y menos con cuantizacion o con offloading.
-- GPU recomendadas: no disponibles en la informacion proporcionada. Cualquier GPU capaz de ejecutar SDXL (por ejemplo, RTX 3060 12 GB en adelante, o GPUs de datacenter como A100/H100) puede cargar el LoRA, ya que el adaptador anade una sobrecarga minima.
-- Cabe en GPU de consumo: si, siempre que la GPU pueda ejecutar el modelo base SDXL/Illustrious; el LoRA en si pesa 456 MB por checkpoint.
-- Opciones de despliegue: ComfyUI (configuracion usada por el autor: Euler a, 28 pasos, CFG 4.5, CLIP skip 2, 832x1216, sin hires ni ADetailer), Automatic1111 y otros frontends diffusers compatibles con SDXL.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada: no disponible en la informacion proporcionada. Al ser un LoRA sobre SDXL, el requisito dominante es el del checkpoint base SDXL, no el del adaptador; cada fichero de pesos ocupa unos 456 MB.
+- GPU recomendadas: no disponible de forma explicita. El autor documenta generacion en ComfyUI a 832x1216 con 28 pasos, resolucion y paso compatibles con GPU de consumo de gama alta, pero no especifica modelo de GPU ni VRAM.
+- Cabe en GPU de consumo: no confirmado en la informacion disponible; el unico dato objetivo es el tamano del adaptador (456.494.348 bytes por fichero) y el tamano total del repo (7.9 GB, que incluye los tres linajes y las imagenes de evaluacion).
+- Opciones de despliegue: ComfyUI (flujo documentado con Euler a, 28 pasos, CFG 4.5, CLIP skip 2, 832x1216, sin hires ni ADetailer) y la libreria diffusers. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a un modelo de difusion.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MahoHiyajo-Lora (este) | LoRA de personaje | waiIllustriousSDXL v17 | rango 64, alpha 32 | no aplica | creativeml-openrail-m | Hugging Face, ModelScope |
-| LoRA de personaje SDXL generico | LoRA de personaje | SDXL 1.0 | variable | no aplica | variable (frecuentemente OpenRAIL-M) | Hugging Face, Civitai |
-| Modelo base waiIllustriousSDXL v17 | Modelo completo | SDXL | no disponible | no aplica | no disponible | no disponible |
-| SDXL 1.0 (Stability AI) | Modelo completo | - | ~2.600 M (UNet) + text encoders | no aplica | CreativeML OpenRAIL++-M | Hugging Face |
+| MahoHiyajo-Lora (este) | LoRA de personaje | waiIllustriousSDXL v17 / AutismMix Pony / MOSS-Image | rango 64, alpha 32 | no aplica | creativeml-openrail-m | Hugging Face y ModelScope |
+| AutismMix Pony (linaje interno) | LoRA de personaje | AutismMix Pony | rango 64 | no aplica | creativeml-openrail-m | subdirectorio `autism_pony/` del mismo repo |
+| MOSS-Image (linaje interno) | LoRA de personaje | MOSS-Image | no disponible | no aplica | creativeml-openrail-m | subdirectorio `moss/` del mismo repo |
 
-La comparacion con otros LoRA de personaje no puede hacerse con datos cuantitativos porque no se han publicado metricas. La diferencia practica frente a un LoRA generico es la disponibilidad de checkpoints por epoca, tokens de vestuario documentados y una evaluacion visual publica con parametros reproducibles.
+No se dispone de datos de otros LoRA de personaje comparables en la informacion proporcionada, ni de metricas que permitan una comparacion cuantitativa con alternativas externas.
 
 ## Limitaciones y advertencias
 
-- Es un derivado no oficial: los derechos de Maho Hiyajo y de *Steins;Gate* pertenecen a sus titulares; el autor lo declara explicitamente como fan-made.
-- La licencia CreativeML OpenRAIL-M impone restricciones de uso (prohibicion de usos daninos descritos en el anexo de la licencia) y obliga a propagar las mismas restricciones en obras derivadas; conviene revisar el texto completo antes de uso comercial.
-- Riesgo de sobreajuste o de deriva de identidad fuera de la fuerza recomendada: el autor solo valida el rango 0.4-1.0 y recomienda 0.8; a fuerzas altas puede degradar la composicion o el estilo del modelo base.
-- Las captions omiten con frecuencia color de pelo y ojos, por lo que sin especificarlos en el prompt el resultado puede desviarse del canon del personaje.
-- Cobertura limitada a tres conjuntos de vestuario y 100 pares de imagenes; vestuarios no vistos pueden producir resultados inconsistentes.
-- No hay datos publicados sobre sesgos, tasas de alucinacion visual (artefactos anatomicos) ni evaluacion cuantitativa; la evaluacion es unicamente cualitativa y realizada por el autor.
-- El modelo solo procesa prompts en ingles y chino segun la model card; el rendimiento con prompts en castellano no esta documentado.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: no hay validacion independiente por parte de la comunidad.
+- Es un derivado no oficial: los derechos sobre Maho Hiyajo y *Steins;Gate* permanecen en sus titulares. El autor lo declara explicitamente como fan-made.
+- La licencia CreativeML OpenRAIL-M impone restricciones de uso: incluye clausulas de uso aceptable y obligaciones de atribucion y redistribucion de la licencia; conviene revisarlas antes de un uso comercial.
+- Los tres linajes no son intercambiables: mezclar los pesos de la raiz (WAI/Illustrious) con los de `autism_pony/` o `moss/`, o usar prompts y negativos del linaje equivocado, degrada el resultado.
+- Las captions se entrenaron con `keep_tokens = 2` y a menudo omiten color de pelo y ojos; si no se anaden esos descriptores al prompt, la identidad puede desviarse.
+- Riesgo de sobreajuste al estilo del modelo base y al dataset de 100 pares: es un dataset pequeno y de un unico personaje, por lo que la generalizacion a poses o vestuarios no vistos no esta garantizada.
+- El checkpoint recomendado (E6 a 0.8) es una eleccion cualitativa del autor basada en evaluacion visual, no en metricas objetivas; la calidad percibida puede variar segun el sampler y la configuracion.
+- No hay datos publicados de sesgos, tasas de alucinacion (concepto no aplicable a difusion) ni evaluacion con metricas estandar, por lo que la validacion en produccion corre por cuenta del integrador.
+- El repositorio ocupa 7.9 GB e incluye los tres linajes y las imagenes de evaluacion; el despliegue requiere descargar el modelo base SDXL correspondiente ademas del adaptador.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/abbuibuibui/MahoHiyajo-Lora
 - ModelScope: https://www.modelscope.cn/models/abbuibuibui/MahoHiyajo-Lora
 - Dataset: https://huggingface.co/datasets/abbuibuibui/MahoHiyajo-Dataset
-- Notas de evaluacion (chino): `evaluation/横向测评记录.md` dentro del repositorio de Hugging Face
+- Notas de evaluacion en chino: `evaluation/横向测评记录.md` (dentro del repositorio)
+- Documentacion en chino: `README_zh.md` (dentro del repositorio)

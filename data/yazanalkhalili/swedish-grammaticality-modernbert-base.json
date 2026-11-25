@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "yazanalkhalili/swedish-grammaticality-modernbert-base",
+  "slug": "yazanalkhalili-swedish-grammaticality-modernbert-base",
+  "author": "yazanalkhalili",
+  "url": "https://huggingface.co/yazanalkhalili/swedish-grammaticality-modernbert-base",
+  "created_at": "2026-11-21T17:01:25.000Z",
+  "updated_at": "2026-11-23T17:45:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "sv"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "swedish",
+    "grammatical-error-detection",
+    "text-classification",
+    "sv",
+    "dataset:yazanalkhalili/swedish-grammaticality-data",
+    "base_model:AI-Sweden-Models/ModernBERT-base",
+    "base_model:finetune:AI-Sweden-Models/ModernBERT-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": 149605633,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598436708,
+  "storage_human": "598 MB",
+  "context_length": null,
+  "base_model": "AI-Sweden-Models/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

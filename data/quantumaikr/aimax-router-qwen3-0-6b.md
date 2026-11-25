@@ -2,105 +2,104 @@
 
 ## Resumen
 
-aimax-router-qwen3-0.6b es un modelo de clasificación de intenciones y enrutamiento de peticiones en coreano, desarrollado por quantumaikr como fine-tuning de Qwen/Qwen3-0.6B. Su función no es generar texto libre, sino recibir una petición de trabajo en una línea (más el tipo de adjunto) y emitir un JSON pequeño con la función seleccionada de una lista proporcionada en el propio prompt, junto con metadatos operativos: motor necesario, urgencia, tareas de seguimiento y si la petición es agrupable. Está pensado como material de decisión para un sistema de orquestación de recursos, no como decisor final.
+aimax-router-qwen3-0.6b es un modelo de clasificación de intenciones y enrutamiento de peticiones en coreano, desarrollado por quantumaikr y publicado en Hugging Face. Se trata de un ajuste fino del modelo base Qwen/Qwen3-0.6B (Apache-2.0) que recibe una petición de trabajo en una sola línea (junto con el tipo de adjunto) y devuelve un JSON pequeño con la función seleccionada de una lista proporcionada en el prompt, el motor necesario, la urgencia y las tareas de seguimiento. No es un modelo conversacional generalista: es un componente de decisión dentro de un sistema mayor de gestión de recursos.
 
-El modelo se distribuye en formato GGUF con dos variantes (Q4_K_M para producción y bf16 de alta precisión) y mantiene exactamente el mismo formato de prompt y salida que su predecesor de 0,1B, quantumaikr/max-0.1b-aimax-router, lo que permite usarlos en cascada. La diferencia clave es la capacidad de seleccionar funciones nuevas añadidas a la lista: en un conjunto sellado independiente pasa del 32 % al 66 % de acierto, y la precisión global de acción sube del 71,2 % al 83,6 %, a costa de mayor latencia (aproximadamente 0,07-0,12 s por petición en GPU frente a 0,14-0,17 s del 0,1B).
+El modelo se distribuye en formato GGUF con cuantizaciones Q4_K_M y bf16, y comparte el mismo formato de prompt y de salida que su predecesor de 0,1B (`quantumaikr/max-0.1b-aimax-router`), lo que permite sustituirlo directamente en pipelines existentes. Su relevancia radica en que mejora de forma sustancial la selección de funciones nuevas añadidas a la lista (del 32% al 66% en un conjunto sellado independiente) y la precisión global (del 71,2% al 83,6%), a costa de una latencia mayor: unos 0,07-0,12 s por petición en GPU y 0,45-0,57 s en CPU con 6 hilos.
 
-Es relevante ahora porque ejemplifica un patrón de despliegue muy concreto: modelos pequeños especializados como routers deterministas con salida JSON restringida por gramática, que sustituyen a llamadas a modelos grandes en la capa de clasificación de sistemas agénticos. Su licencia Apache-2.0 y su tamaño reducido lo hacen desplegable en CPU, aunque con latencias de medio segundo por petición.
+Con 751.632.384 parámetros totales según los pesos en safetensors, el modelo está pensado para despliegue ligero en producción, tanto en GPU como en CPU, y su autor recomienda usarlo en solitario en lugar de una arquitectura de dos etapas con el modelo de 0,1B, que obtuvo puntuaciones inferiores en las mediciones publicadas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivado de Qwen/Qwen3-0.6B) |
-| Parametros totales | 751.632.384 (según safetensors); el autor lo etiqueta como 0.6B |
+| Arquitectura | Transformer decoder-only (derivado de Qwen3-0.6B); no se detalla configuracion especifica en la informacion disponible |
+| Parametros totales | 751.632.384 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_K_M (distribución y evaluación), bf16 (alta precisión) |
-| Idiomas soportados | coreano (ko) |
+| Tipos de cuantizacion | Q4_K_M (distribucion), bf16 (alta precision) |
+| Idiomas soportados | Coreano (ko) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (aimax-router-qwen3-0.6b-Q4_K_M.gguf, aimax-router-qwen3-0.6b-bf16.gguf) |
+| Formato de pesos | GGUF (safetensors en el modelo base; el repositorio publica GGUF) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3-0.6B, un transformer decoder-only, y se ha ajustado para una tarea de clasificación estructurada: el turno de sistema del prompt contiene una lista de funciones con el formato `id|description|needs`, con las líneas fijas `ask` y `none` al final, y el modelo debe emitir un objeto JSON con las claves `action`, `needs`, `urgency`, `follow_up` y `batchable`. La generación se restringe mediante gramática GBNF (se incluye `grammar_example.gbnf` y `schema_example.json`), lo que garantiza salida JSON válida en el 100 % de los conjuntos evaluados.
+El modelo parte de Qwen/Qwen3-0.6B, un transformer decoder-only de la familia Qwen3, y se ha ajustado mediante fine-tuning supervisado para una tarea concreta de clasificacion y enrutamiento. El turno de sistema del prompt contiene una lista de funciones con el formato `id|description|needs`, con las lineas fijas `ask` y `none` al final, y el modelo genera una salida JSON con las claves `action`, `needs`, `urgency`, `follow_up` y `batchable`. El autor indica que los datos de entrenamiento y evaluacion son enteramente sinteticos y que no se utilizaron peticiones reales de miembros; los detalles completos de configuracion y datos se recogen en el archivo `TRAINING.md` del repositorio.
 
-Según la model card, todos los datos de entrenamiento y evaluación son sintéticos y no se utilizaron peticiones reales de miembros. El repositorio incluye `TRAINING.md` con la configuración y los datos de entrenamiento, aunque los detalles concretos (número de tokens, composición del dataset, uso de RLHF/DPO) no se especifican en la información disponible. La innovación principal no es arquitectónica sino de diseño de tarea: un router de 0,6B con prompt y esquema de salida idénticos a los de un modelo de 0,1B, lo que permite composición en cascada y comparación directa de precisión frente a latencia.
+La innovacion principal no esta en la arquitectura sino en el diseno de la tarea y en la ingenieria de salida: el uso de gramaticas GBNF para restringir la generacion al esquema JSON garantiza que la salida sea siempre parseable (el 100% de las salidas fueron JSON valido en todos los conjuntos de evaluacion). El repositorio incluye utilidades de postprocesado (`router_post.py`) con funciones de fusion de unidades y segundos (`v3_merge`) y de compuerta de decision (`v4_gate`), compartidas con el modelo de 0,1B. No se menciona el uso de RLHF ni DPO en la informacion disponible.
 
 ## Capacidades
 
-- Clasificación de intención sobre una lista de funciones proporcionada dinámicamente en el prompt, incluyendo funciones nuevas que el modelo no vio durante el entrenamiento.
-- Salida JSON estructurada y restringida por gramática con cinco campos: `action`, `needs`, `urgency`, `follow_up`, `batchable`.
-- Detección de peticiones fuera de lista (`none`) y de peticiones inapropiadas.
-- Manejo de peticiones muy cortas o que consisten solo en un adjunto.
-- Robustez ante entradas de tipo "ataque" o adversariales (90 % de acierto en el conjunto sellado B).
-- Inferencia de metadatos operativos: motor necesario (`needs`), urgencia y posibilidad de agrupar peticiones en lote.
-- Soporte de despliegue en cascada con el router de 0,1B mediante las funciones `v3_merge` y `v4_gate` de `router_post.py`.
-- No soporta tool calling genérico, agentes multi-paso, visión, audio ni modos de razonamiento extendido; su alcance es exclusivamente el enrutamiento.
+- Clasificacion de intenciones en coreano: identifica a que funcion de una lista dada corresponde una peticion de trabajo de una linea.
+- Enrutamiento a motor: determina el motor o recurso necesario para atender la peticion.
+- Estimacion de urgencia y de tareas de seguimiento (`follow_up`) y de si la peticion es procesable por lotes (`batchable`).
+- Deteccion de peticiones fuera de lista: puede devolver `none` cuando la peticion no encaja con ninguna funcion disponible.
+- Deteccion de peticiones inapropiadas o de tipo ataque (el conjunto sellado incluye una categoria de "ataque" con 90% de acierto).
+- Manejo de peticiones cortas o consistentes solo en un adjunto (92,5% de acierto en el conjunto sellado B).
+- Seleccion de funciones nuevas anadidas a la lista: 75% de acierto en seis funciones nunca vistas incluidas en la lista.
+- Salida JSON estructurada garantizada mediante gramatica GBNF.
+- No se documentan capacidades de tool calling generico, agentes multi-paso, vision ni audio.
 
 ## Casos de uso
 
-- Enrutamiento de peticiones en un asistente corporativo coreano: el modelo recibe cada solicitud de usuario y la asigna a una de las funciones registradas del sistema, devolviendo además el motor requerido para que el orquestador despache la tarea al servicio adecuado.
-- Clasificación con catálogo de funciones cambiante: cuando se añaden nuevas funcionalidades al producto, basta con incluirlas en la lista del prompt; el modelo las selecciona correctamente en el 75 % de los casos en funciones nunca vistas incluidas en la lista, frente al 3 % del router de 0,1B.
-- Filtro de peticiones fuera de alcance o inapropiadas: la selección de `none` y el 75 % de acierto en peticiones inapropiadas permiten descartar entradas antes de invocar modelos generativos grandes, reduciendo coste.
-- Triaje de urgencia y agrupación por lotes: los campos `urgency` y `batchable` permiten a un planificador priorizar colas y agrupar peticiones compatibles, por ejemplo para procesamiento nocturno.
-- Despliegue en cascada en infraestructura solo-CPU: ejecutar primero el router de 0,1B y derivar a este modelo solo los casos inciertos o con funciones nuevas, manteniendo la latencia media baja (el 0,1B tarda aproximadamente 0,14-0,17 s en 6 hilos de CPU frente a 0,45-0,57 s de este modelo).
-- Enrutamiento en GPUs de gama baja o compartidas: con 0,07-0,12 s por petición en GPU y un tamaño de repositorio de 2,0 GB, puede convivir con otros servicios en la misma tarjeta sin dominar el presupuesto de memoria.
-- Extracción de metadatos operativos en pipelines de tickets: a partir de una línea de solicitud y el tipo de adjunto, generar un JSON normalizado que alimente sistemas de gestión de incidencias o de asignación de trabajo.
+- Enrutamiento de peticiones en un asistente interno: el modelo recibe la linea de peticion del usuario y la lista de funciones del sistema, y devuelve que funcion debe ejecutarse, lo que permite despachar la peticion al microservicio o motor adecuado sin intervencion humana.
+- Gestion de colas y priorizacion: la salida incluye `urgency` y `batchable`, lo que permite clasificar peticiones en tiempo real y decidir si se procesan de inmediato o se agrupan por lotes para optimizar recursos.
+- Filtrado de peticiones fuera de alcance: con la opcion `none` y la deteccion de peticiones inapropiadas, el modelo actua como primera barrera para descartar solicitudes que no corresponden a ninguna capacidad del sistema antes de consumir recursos en modelos mayores.
+- Ampliacion incremental de catalogo de funciones: cuando se anaden nuevas funciones a la lista, el modelo las selecciona correctamente en el 75% de los casos en los que se incluyen en la lista, lo que reduce el trabajo de reentrenamiento al desplegar nuevas capacidades.
+- Despliegue en entornos sin GPU: con una latencia de 0,45-0,57 s por peticion en CPU con 6 hilos, es viable para sistemas de moderacion o enrutamiento de baja concurrencia en servidores sin acelerador.
+- Clasificacion de solicitudes con adjuntos: el modelo incorpora el tipo de adjunto en la entrada y logra un 92,5% de acierto en peticiones cortas o compuestas solo por un adjunto, util en sistemas de gestion documental o de tickets.
+- Componente de decision en sistemas de gestion de recursos: el autor lo describe como material de juicio para la operacion de recursos, no como decisor final, por lo que encaja como paso previo a un orquestador que valide o corrija la decision.
 
 ## Benchmarks y rendimiento
 
-Datos publicados en la model card (precisión de `action` en %, GPU, Q4_K_M, con restricción GBNF y mismo postprocesado). Se comparan el router de 0,1B, este modelo y la configuración en cascada de dos etapas.
+Los datos publicados por el autor miden la exactitud de `action` en porcentaje, en GPU, con cuantizacion Q4_K_M, restriccion GBNF y el mismo postprocesado para todos los modelos comparados.
 
-| Conjunto | 0.1B solo | aimax-router-qwen3-0.6b | Cascada 2 etapas |
+| Conjunto | 0.1B solo | aimax-router-qwen3-0.6b | Dos etapas |
 |---|---|---|---|
 | Conjunto sellado B completo (299, otro autor) | 71,2 | 83,6 | 80,3 |
-| — peticiones normales | 74,2 | 86,7 | 87,5 |
-| — funciones nuevas | 32 | 66 | 50 |
-| — fuera de lista | 89,8 | 87,8 | 87,8 |
-| — inapropiadas | 50 | 75 | 55 |
-| — solo texto corto o adjunto | 95 | 92,5 | 95 |
-| — adversariales | 80 | 90 | 90 |
-| Conjunto sellado A, lista estándar (210) | 84,3 | 93,3 | 91,4 |
-| Conjunto sellado A, con funciones nuevas en la lista (60) | 15,0 | 66,7 | 50,0 |
-| Conjunto sellado 298, lista estándar / mixta | 93,6 / 88,9 | 93,3 / 94,0 | 95,0 / 96,0 |
-| Funciones nunca vistas (6 tipos): en lista / fuera (none) | 3 / 48 | 75 / 50 | 65 / 43 |
-| gold 48, lista estándar / mixta | 97,9 / 91,7 | 100 / 97,9 | 100 / 97,9 |
+| - Peticiones normales | 74,2 | 86,7 | 87,5 |
+| - Funciones nuevas | 32 | 66 | 50 |
+| - Fuera de lista | 89,8 | 87,8 | 87,8 |
+| - Inapropiadas | 50 | 75 | 55 |
+| - Cortas o solo adjunto | 95 | 92,5 | 95 |
+| - Tipo ataque | 80 | 90 | 90 |
+| Conjunto sellado A, lista estandar (210) | 84,3 | 93,3 | 91,4 |
+| Conjunto sellado A, funciones nuevas en lista (60) | 15,0 | 66,7 | 50,0 |
+| Conjunto sellado 298, lista estandar / mixta | 93,6 / 88,9 | 93,3 / 94,0 | 95,0 / 96,0 |
+| Seis funciones nunca vistas: en lista / fuera (none) | 3 / 48 | 75 / 50 | 65 / 43 |
+| Gold 48, lista estandar / mixta | 97,9 / 91,7 | 100 / 97,9 | 100 / 97,9 |
 
-La validez del JSON fue del 100 % en todos los conjuntos. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible, y no serían representativos de la tarea para la que está ajustado el modelo.
+El JSON valido fue del 100% en todos los conjuntos. La latencia por peticion es de aproximadamente 0,07-0,12 s en GPU (p95 de 75-135 ms, mas lento con listas largas) y de 0,45-0,57 s en CPU con 6 hilos, frente a los 0,14-0,17 s del modelo de 0,1B en CPU.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explícita en la información proporcionada; con 751,6 M de parámetros, la variante Q4_K_M ocupa del orden de 0,5 GB y la bf16 alrededor de 1,5 GB, más el contexto y el servidor de inferencia.
-- GPU recomendadas: no se especifican modelos concretos; el autor reporta 0,07-0,12 s por petición en GPU, con p95 de aproximadamente 75-135 ms según la longitud de la lista de funciones.
-- Cabe en GPU de consumo: sí, por tamaño; no se detallan modelos concretos en la información disponible.
-- CPU: funciona con 6 hilos a aproximadamente 0,45-0,57 s por petición.
-- Opciones de despliegue: llama.cpp / llama-server (el ejemplo de cascada usa dos instancias de llama-server, una para el 0,1B y otra para este modelo) y cualquier runtime compatible con GGUF. El repositorio incluye `router_post.py` con el formato de lista, el esquema JSON, la gramática GBNF y las funciones de fusión y gate.
-- Throughput y latencia: GPU 0,07-0,12 s por petición (p95 75-135 ms); CPU de 6 hilos 0,45-0,57 s por petición. La latencia crece con la longitud de la lista de funciones.
+- VRAM estimada: no disponible de forma explicita; con 751 millones de parametros, la cuantizacion Q4_K_M ocupa del orden de 0,5 GB y la bf16 alrededor de 1,5 GB, mas overhead de contexto y del servidor de inferencia.
+- GPU recomendadas: no se especifican modelos concretos; el autor reporta mediciones en GPU sin detallar el modelo empleado.
+- Cabe en GPU de consumo: si, por el tamano del modelo, aunque no se confirma con datos del autor.
+- Despliegue: el repositorio incluye archivos GGUF y referencias a `llama-server` en el ejemplo de dos etapas, por lo que llama.cpp es la via documentada; no se mencionan vLLM, TGI ni Ollama.
+- Latencia y throughput: 0,07-0,12 s por peticion en GPU y 0,45-0,57 s en CPU con 6 hilos; no se publica throughput agregado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Tarea | Precisión (sellado B) | Licencia | Formato |
-|---|---|---|---|---|---|---|
-| aimax-router-qwen3-0.6b | 751,6 M | no disponible | Router coreano con lista de funciones | 83,6 % | Apache-2.0 | GGUF |
-| quantumaikr/max-0.1b-aimax-router | ~0,1B (según el autor) | no disponible | Router coreano, mismo prompt y esquema | 71,2 % | no disponible | GGUF |
-| Qwen/Qwen3-0.6B (base) | 751,6 M | no disponible | Generación de texto general | no evaluado para enrutamiento | Apache-2.0 | safetensors y otros |
+| Modelo | Parametros | Contexto | Precisión (conjunto sellado B) | Licencia | Formato |
+|---|---|---|---|---|---|
+| aimax-router-qwen3-0.6b | 751.632.384 | no disponible | 83,6% | Apache-2.0 | GGUF |
+| quantumaikr/max-0.1b-aimax-router | no disponible (0,1B por nombre) | no disponible | 71,2% | no disponible en la informacion | GGUF |
+| Qwen/Qwen3-0.6B (base) | 0,6B | no disponible | no evaluado en la tarea | Apache-2.0 | safetensors |
 
-La comparación directa más relevante es con el router de 0,1B del mismo autor: este modelo gana en precisión global (+12,4 puntos), en funciones nuevas (+34 puntos) y en peticiones inapropiadas (+25 puntos), pero es aproximadamente 3-4 veces más lento en CPU. La cascada de dos etapas queda en un punto intermedio (80,3 % en el conjunto sellado B). No se dispone de comparación con otros routers especializados de la comunidad en la información proporcionada.
+El predecesor de 0,1B comparte prompt y formato de salida, es mas rapido en CPU (0,14-0,17 s) pero falla al seleccionar funciones nuevas (32% frente a 66%). El modelo base Qwen3-0.6B no esta ajustado para esta tarea y no se ha evaluado con los mismos conjuntos. No se dispone de comparaciones con otros routers de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La selección de `none` para peticiones que solicitan una función nueva no presente en la lista es baja (aproximadamente 50 %), similar al router de 0,1B; los propios anotadores humanos discrepan en estos casos, por lo que conviene fijar una política y validarla en modo sombra antes de producción.
-- Todos los datos de entrenamiento y evaluación son sintéticos; no se han usado peticiones reales de usuarios, por lo que el comportamiento en dominios reales puede diferir.
-- El modelo está entrenado y evaluado únicamente en coreano; no hay evidencia de funcionamiento en otros idiomas.
-- Es un modelo de decisión auxiliar: el autor indica explícitamente que no toma la decisión final, solo aporta material para la orquestación de recursos.
-- La latencia en CPU (0,45-0,57 s por petición) puede ser incompatible con flujos interactivos estrictos; en ese caso se recomienda la cascada con el 0,1B.
-- La longitud de contexto y el comportamiento con listas de funciones muy largas no se documentan; la latencia p95 depende de la longitud de la lista (75-135 ms en GPU).
-- Licencia Apache-2.0: permite uso comercial y modificación, con las obligaciones habituales de atribución y aviso de cambios; no se han documentado restricciones adicionales.
-- Riesgo de alucinación acotado por la gramática GBNF, que garantiza JSON válido, pero no garantiza que la acción elegida sea la correcta.
+- Baja tasa de acierto al elegir `none` cuando la peticion corresponde a una funcion nueva que no esta en la lista (alrededor del 50%), similar al modelo de 0,1B; el propio autor senala que los anotadores humanos tambien discrepan en estos casos y recomienda fijar una politica y validarla en operacion en sombra.
+- Los datos de entrenamiento y evaluacion son enteramente sinteticos, sin peticiones reales de usuarios, lo que puede no reflejar la distribucion real de solicitudes en produccion.
+- El modelo solo soporta coreano; no se documenta soporte multilingue.
+- Es un modelo de decision, no un decisor final: el autor lo describe como material de juicio para la operacion de recursos, por lo que debe integrarse con validacion o correccion posterior.
+- No se documentan sesgos especificos, pero al ser un ajuste fino sobre Qwen3-0.6B con datos sinteticos puede heredar sesgos del modelo base.
+- No se dispone de informacion sobre la longitud de contexto soportada, lo que limita la planificacion de listas de funciones muy largas.
+- La licencia Apache-2.0 permite uso comercial, pero se recomienda verificar las condiciones del modelo base Qwen3-0.6B, tambien Apache-2.0.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/quantumaikr/aimax-router-qwen3-0.6b
-- Router de 0,1B del mismo autor: https://huggingface.co/quantumaikr/max-0.1b-aimax-router
+- Modelo predecesor de 0,1B: https://huggingface.co/quantumaikr/max-0.1b-aimax-router
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B

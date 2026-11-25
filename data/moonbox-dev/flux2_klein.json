@@ -42,8 +42,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "moonbox-dev/FLUX.2-klein-4B-PyTorch",
+  "renamed_at": "2026-11-25T12:04:27.519Z",
   "benchmarks": [],
   "sources": []
 }

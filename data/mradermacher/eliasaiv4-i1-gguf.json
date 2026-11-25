@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/EliasAIv4-i1-GGUF",
   "created_at": "2026-11-21T12:42:48.000Z",
-  "updated_at": "2026-11-21T13:26:03.000Z",
+  "updated_at": "2026-11-24T13:14:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,14 +29,14 @@
     "imatrix"
   ],
   "likes": 0,
-  "downloads_30d": 768,
+  "downloads_30d": 841,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
   "storage_bytes": 88974985408,
   "storage_human": "89.0 GB",
   "context_length": 131072,
-  "base_model": "ETME-TECH/EliasAIv4",
+  "base_model": "ETME-TECH/EliasAI-7B-v1.0",
   "formats": [
     "gguf"
   ],

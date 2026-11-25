@@ -2,54 +2,49 @@
 
 ## Resumen
 
-Impish_LLAMA_4B es un ajuste fino (fine-tune) de tipo roleplay y escritura creativa desarrollado por SicariusSicariiStuff, construido sobre el modelo base nvidia/Llama-3.1-Minitron-4B-Width-Base. Con 4.512.746.496 parámetros reales, se presenta como la evolución de los anteriores Impish_LLAMA_3B y Fiendish_LLAMA_3B del mismo autor, y está orientado principalmente a narrativa interactiva, aventuras conversacionales y, de forma secundaria, a tareas de asistente general.
+Impish_LLAMA_4B es un ajuste fino (fine-tune) de tipo roleplay y escritura creativa desarrollado por SicariusSicariiStuff sobre el modelo base nvidia/Llama-3.1-Minitron-4B-Width-Base. Se trata de un modelo denso de aproximadamente 4.500 millones de parametros (4.512.746.496 segun los pesos en safetensors) que hereda la arquitectura Llama 3.1 en su variante Minitron "Width" de NVIDIA, una version podada en anchura del Llama 3.1 8B. El modelo esta disenado para mantener coherencia narrativa en conversaciones multi-turno y aventuras de rol, un nicho donde los modelos pequenos suelen degradarse con rapidez.
 
-El modelo se entrena sobre el dataset propio UBW_Tapestries con aproximadamente 400 millones de tokens, combinando datos de roleplay con una proporción significativa de datos de asistente general para mitigar la degradación de inteligencia que sufre este tipo de ajustes. Una retrainación posterior (julio de 2025) añadió 200 millones de tokens y migró el formato de plantilla a ChatML, corrigiendo problemas de generación infinita reportados en varias interfaces.
+El autor lo presenta como la evolucion de sus anteriores Impish_LLAMA_3B y Fiendish_LLAMA_3B, y como un salto cualitativo respecto a ambos. Se entreno sobre unos 400 millones de tokens combinando datos de rol y escritura creativa (dataset UBW_Tapestries) con datos de asistente general, precisamente para mitigar la perdida de capacidades generales que sufre este tipo de ajustes. En julio de 2025 se reentreno anadiendo 200 millones de tokens adicionales y migrando el formato de chat a ChatML, corrigiendo problemas de generacion infinita en algunas interfaces.
 
-Su relevancia radica en el segmento de modelos de 4B parámetros capaces de mantener coherencia narrativa en contextos largos, un tamaño que permite despliegue en hardware de consumo. La licencia es la NVIDIA Open Model License, heredada del modelo base, lo que condiciona el uso comercial.
+Su relevancia actual radica en que demuestra que un modelo de 4B puede ofrecer narrativa coherente y capacidad de asistente basico en hardware de consumo, aunque con las limitaciones propias de su tamano. La licencia es la NVIDIA Open Model License, heredada del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivada de Llama 3.1, variante Minitron con pruning de anchura) |
+| Arquitectura | Transformer denso (Llama 3.1, variante Minitron 4B Width de NVIDIA) |
 | Parametros totales | 4.512.746.496 |
-| Parametros activos | no disponible (no es MoE) |
+| Parametros activos | no disponible (modelo denso) |
 | Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Llama 3.1 soporta 128K, pero no se confirma para este fine-tune) |
-| Tipos de cuantizacion | no disponible en la model card; el repo incluye safetensors en precision completa |
+| Tipos de cuantizacion | no disponible en la model card; el autor enlaza a una seccion de cuantizaciones |
 | Idiomas soportados | en (ingles) |
-| Licencia | nvidia-open-model-license (etiquetada como "other" en Hugging Face) |
+| Licencia | nvidia-open-model-license |
 | Formato de pesos | safetensors |
-| Tamano del repo | 18,1 GB |
-| Plantilla de chat | ChatML (desde la retrainacion del 16 de julio de 2025) |
-| Dataset de entrenamiento | SicariusSicariiStuff/UBW_Tapestries |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de nvidia/Llama-3.1-Minitron-4B-Width-Base, un modelo derivado de Llama 3.1 8B mediante técnicas de pruning de anchura (width pruning) y destilación de NVIDIA. Esta base no se comporta como un 8B comprimido convencional, sino que conserva parte de las capacidades del modelo mayor con la mitad de parámetros, lo que el autor señala como factor clave para mantener la inteligencia en un tamaño de 4B.
+El modelo es un transformer denso derivado del Llama-3.1-Minitron-4B-Width-Base de NVIDIA, un modelo obtenido mediante poda en anchura (reduccion de dimensiones de las capas) y destilacion a partir del Llama 3.1 8B. Esta base hace que el modelo no se comporte exactamente como un 8B podado de forma convencional, segun indica el propio autor, y le permite retener capacidad de razonamiento con la mitad de parametros. El fine-tune es un ajuste supervisado (SFT) sobre el dataset SicariusSicariiStuff/UBW_Tapestries, con aproximadamente 400 millones de tokens totales, de los cuales una parte significativa corresponde a datos de asistente general para preservar inteligencia general.
 
-El ajuste fino se realizó sobre el dataset propietario UBW_Tapestries con aproximadamente 400 millones de tokens, con énfasis en roleplay y aventura pero incluyendo una proporción relevante de datos de asistente general para contrarrestar la pérdida de capacidades generales típica de los fine-tunes creativos. En la retrainación de julio de 2025 se añadieron 200 millones de tokens adicionales y se adoptó el formato ChatML, resolviendo problemas de generación descontrolada en varios front-ends. No se documentan detalles sobre uso de RLHF, DPO ni innovaciones arquitectónicas propias más allá de la base Minitron.
+No se documenta en la informacion disponible el uso de RLHF, DPO u otras tecnicas de alineacion posteriores al SFT. El reentrenamiento de julio de 2025 anadio 200 millones de tokens y cambio el formato de chat a ChatML, resolviendo problemas de generacion infinita reportados en varias interfaces. No se detallan innovaciones tecnicas como decodificacion especulativa o atencion lineal; el modelo se apoya en la arquitectura estandar de Llama 3.1.
 
 ## Capacidades
 
-- Generación de texto narrativo y escritura creativa de ficción, con coherencia en arcos argumentales largos.
-- Roleplay multi-turno con seguimiento de personaje y contexto.
-- Aventuras interactivas y narrativa ramificada.
-- Capacidades de asistente general (hereda el entrenamiento de asistente incluido en el dataset).
-- Formato de prompt ChatML para integración con front-ends estándar.
-- Capacidades multilingües: limitadas al inglés según la model card.
-- Tool calling / function calling: no documentado en la información disponible.
-- Soporte de agentes y razonamiento multi-paso: no documentado.
-- Modo thinking, visión o audio: no disponible.
+- Generacion de texto narrativo y de ficcion con coherencia multi-turno, orientada a rol y escritura creativa.
+- Mantenimiento de personajes, contexto y continuidad en aventuras largas, gracias al entrenamiento especifico en datos de rol.
+- Capacidades basicas de asistente general, incorporadas deliberadamente para evitar la degradacion tipica de los modelos de roleplay.
+- Conversacion en ingles; no se declara soporte multilingue.
+- Formato de chat ChatML, compatible con front-ends habituales de inferencia.
+- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito (thinking mode).
 
 ## Casos de uso
 
-- Roleplay conversacional en plataformas de chat: el modelo mantiene personajes coherentes a lo largo de sesiones multi-turno gracias a su entrenamiento específico en UBW_Tapestries, lo que lo hace adecuado para aplicaciones de entretenimiento conversacional.
-- Aventuras de texto interactivas: puede gestionar narrativa ramificada y recordar decisiones previas del jugador, funcionando como motor de historias en videojuegos de texto o bots de Discord.
-- Escritura creativa asistida: generación de borradores de ficción, diálogos y descripciones con estilo consistente, útil para autores que necesitan un colaborador de bajo coste computacional.
-- Despliegue en dispositivos móviles o hardware modesto: con 4,5B parámetros, es viable en GPUs de consumo y en algunos entornos móviles con cuantización, lo que permite asistentes narrativos offline.
-- Chatbot de personaje para comunidades: integrable en plataformas tipo SillyTavern mediante ChatML, con ajustes recomendados documentados por el autor.
-- Asistente general ligero: aunque no es su foco, conserva capacidades de asistente que permiten tareas de resumen, reescritura o respuesta a preguntas simples en inglés.
+- Roleplay conversacional en aplicaciones de chat: el modelo mantiene personajes y contexto a lo largo de sesiones multi-turno, lo que lo hace adecuado para plataformas de rol y compania virtual.
+- Escritura creativa asistida: generacion de ficcion, dialogos y tramas con continuidad, util para autores que necesitan borradores rapidos en local.
+- Motores de narrativa interactiva y videojuegos de texto: su coherencia en aventuras permite integrarlo como motor de historia en juegos o experiencias interactivas.
+- Despliegue en movil y hardware de consumo: con 4B de parametros y cuantizacion, cabe en GPUs de gama media y en dispositivos con recursos limitados, lo que facilita prototipos de bajo coste.
+- Asistente general ligero en local: para tareas de redaccion, resumen y conversacion basica en ingles, sin depender de la nube.
+- Experimentacion e investigacion en ajuste fino: sirve como base para estudiar como el entrenamiento en rol afecta a las capacidades generales en modelos pequenos.
+- Chatbots de personaje para demos y prototipos: su formato ChatML y su naturaleza de fine-tune facilitan la integracion en front-ends existentes.
 
 ## Benchmarks y rendimiento
 
@@ -57,43 +52,41 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada en FP16: aproximadamente 9 GB para los pesos (4,5B parámetros × 2 bytes), más overhead de contexto y KV cache.
-- VRAM estimada en cuantización de 8 bits: en torno a 4,5-5 GB.
-- VRAM estimada en cuantización de 4 bits: en torno a 2,5-3 GB.
-- GPU recomendadas para FP16: RTX 3090, RTX 4090, A100, H100.
-- GPU de consumo: cabe en RTX 3060 de 12 GB, RTX 4070, RTX 4080 y RTX 4090 en FP16; en cuantización 4-bit puede ejecutarse en GPUs de 6-8 GB.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM, TGI y front-ends compatibles con ChatML (SillyTavern, entre otros).
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa para un modelo denso de 4,5B, en fp16 requeriria unos 9 GB de VRAM, en 8 bits unos 4,5-5 GB y en 4 bits unos 2,5-3 GB; estas cifras son estimaciones genericas y no datos publicados por el autor.
+- GPU recomendadas: no disponible en la informacion proporcionada.
+- Compatibilidad con GPU de consumo: por tamano, es probable que quepa en GPUs consumer con suficiente VRAM (por ejemplo, RTX 3060 12 GB o superiores), aunque no se confirma oficialmente.
+- Opciones de despliegue: no se detallan en la model card; al ser safetensors de arquitectura Llama, es compatible con frameworks estandar como transformers, vLLM, llama.cpp y Ollama tras conversion, si bien no se documenta explicitamente.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Enfoque |
+| Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| Impish_LLAMA_4B | 4,51B | no disponible | nvidia-open-model-license | Roleplay y escritura creativa |
-| Impish_LLAMA_3B | ~3B | no disponible | no disponible | Roleplay (modelo previo del mismo autor) |
-| Fiendish_LLAMA_3B | ~3B | no disponible | no disponible | Roleplay (variante alternativa del mismo autor) |
-| nvidia/Llama-3.1-Minitron-4B-Width-Base | ~4B | 128K (heredado de Llama 3.1) | nvidia-open-model-license | Modelo base generalista |
+| Impish_LLAMA_4B | 4,51B | no disponible | nvidia-open-model-license | Fine-tune de rol sobre Minitron 4B Width |
+| Impish_LLAMA_3B | ~3B | no disponible | no disponible | Modelo anterior del mismo autor, rol |
+| Fiendish_LLAMA_3B | ~3B | no disponible | no disponible | Variante alternativa del mismo autor, dataset distinto |
+| Llama-3.1-Minitron-4B-Width-Base | ~4B | no disponible | nvidia-open-model-license | Modelo base sin ajuste de rol |
 
-Los dos modelos de 3B del mismo autor son las alternativas más directas y el propio autor los describe como predecesores; Impish_LLAMA_4B se presenta como una mejora sustancial en capacidad de respuesta y conciencia de contexto. No se dispone de comparativas con modelos de roleplay de otros autores en la información proporcionada.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo está entrenado únicamente en inglés; el rendimiento en castellano u otros idiomas no está garantizado.
-- Al ser un fine-tune de roleplay, puede degradar capacidades de razonamiento general respecto al modelo base, aunque el autor incluyó datos de asistente para mitigarlo.
-- Riesgo de alucinación inherente a modelos de 4B, especialmente en tareas factuales o de razonamiento complejo.
-- El autor advierte explícitamente de que, pese a su competencia para el tamaño, sigue siendo un modelo de 4B y deben moderarse las expectativas.
-- La licencia nvidia-open-model-license impone condiciones al uso comercial; es necesario revisar el acuerdo antes de desplegarlo en producción.
-- El contexto máximo efectivo no está documentado en la model card; conviene validarlo empíricamente antes de usarlo en escenarios de contexto largo.
-- La plantilla correcta es ChatML; usar otros formatos puede provocar generación descontrolada, problema que motivó la retrainación de julio de 2025.
-- El modelo tiene un volumen de descargas bajo (91) y no cuenta con benchmarks publicados, lo que limita la validación independiente de su rendimiento.
+- El modelo esta entrenado unicamente en ingles; no se garantiza calidad en castellano ni en otros idiomas.
+- Al ser un fine-tune de rol, puede perder capacidad de razonamiento general respecto al modelo base, aunque el autor intento mitigarlo con datos de asistente.
+- Riesgo de alucinacion y de deriva narrativa en conversaciones muy largas, especialmente fuera del dominio de rol.
+- Tamano de 4B: el propio autor advierte que, pese a su competencia relativa, sigue siendo un modelo pequeno y hay que gestionar expectativas.
+- La licencia NVIDIA Open Model License impone condiciones para uso comercial; es necesario revisar el acuerdo antes de desplegarlo en produccion.
+- No se documentan sesgos especificos, pero al entrenarse en datos de rol y ficcion puede reproducir estereotipos presentes en esos corpus.
+- No se confirma la longitud de contexto efectiva del fine-tune; conviene validarla antes de usarlo con ventanas largas.
+- El reentrenamiento de julio de 2025 corrigio problemas de generacion infinita, pero versiones antiguas pueden presentar ese fallo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/SicariusSicariiStuff/Impish_LLAMA_4B
 - Modelo base: https://huggingface.co/nvidia/Llama-3.1-Minitron-4B-Width-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/SicariusSicariiStuff/UBW_Tapestries
-- Modelo predecesor Impish_LLAMA_3B: https://huggingface.co/SicariusSicariiStuff/Impish_LLAMA_3B
-- Modelo predecesor Fiendish_LLAMA_3B: https://huggingface.co/SicariusSicariiStuff/Fiendish_LLAMA_3B
-- Modelo Nano_Imp_1B del mismo autor: https://huggingface.co/SicariusSicariiStuff/Nano_Imp_1B
+- Modelo anterior Impish_LLAMA_3B: https://huggingface.co/SicariusSicariiStuff/Impish_LLAMA_3B
+- Modelo anterior Fiendish_LLAMA_3B: https://huggingface.co/SicariusSicariiStuff/Fiendish_LLAMA_3B
+- Modelo Nano_Imp_1B: https://huggingface.co/SicariusSicariiStuff/Nano_Imp_1B
 - Licencia NVIDIA Open Model License: https://developer.download.nvidia.com/licenses/nvidia-open-model-license-agreement-june-2024.pdf
 - Apoyo al autor (Ko-fi): https://ko-fi.com/sicarius

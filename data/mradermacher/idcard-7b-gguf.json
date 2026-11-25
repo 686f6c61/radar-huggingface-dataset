@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/idcard-7b-GGUF",
+  "slug": "mradermacher-idcard-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/idcard-7b-GGUF",
+  "created_at": "2025-06-10T11:44:17.000Z",
+  "updated_at": "2026-11-25T05:47:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2_5_vl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 89,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70354147392,
+  "storage_human": "70.4 GB",
+  "context_length": 128000,
+  "base_model": "orkungedik/idcard-7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
