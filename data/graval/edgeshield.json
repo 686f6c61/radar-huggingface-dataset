@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "graval/edgeshield",
+  "slug": "graval-edgeshield",
+  "author": "graval",
+  "url": "https://huggingface.co/graval/edgeshield",
+  "created_at": "2026-11-26T15:42:14.000Z",
+  "updated_at": "2026-11-26T15:48:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "cybersecurity",
+    "small-language-models",
+    "ransomware-detection",
+    "lateral-movement",
+    "int8",
+    "edge-ai",
+    "text-classification",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1612329980,
+  "storage_human": "1.6 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

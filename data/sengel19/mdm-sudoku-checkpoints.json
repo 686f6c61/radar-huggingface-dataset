@@ -34,8 +34,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Masked-Diffusion-Project-26/mdm-sudoku-checkpoints",
+  "renamed_at": "2026-11-26T14:14:11.332Z",
   "benchmarks": [],
   "sources": []
 }

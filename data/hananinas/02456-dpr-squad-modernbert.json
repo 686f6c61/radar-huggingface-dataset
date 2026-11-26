@@ -1,0 +1,62 @@
+{
+  "schema": 2,
+  "id": "hananinas/02456-dpr-squad-modernbert",
+  "slug": "hananinas-02456-dpr-squad-modernbert",
+  "author": "hananinas",
+  "url": "https://huggingface.co/hananinas/02456-dpr-squad-modernbert",
+  "created_at": "2026-11-26T14:11:36.000Z",
+  "updated_at": "2026-11-26T14:16:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "dense-retrieval",
+    "dpr",
+    "modernbert",
+    "en",
+    "dataset:rajpurkar/squad",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 596114235,
+  "storage_human": "596 MB",
+  "context_length": null,
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ModernBERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/modernbert",
+      "snippet": "ModernBERT is a modernized version of BERT trained on 2T tokens. It brings many improvements to the original architecture such …"
+    },
+    {
+      "title": "ModernBERT SQuAD — Question Answering in Your Browser",
+      "url": "https://ai.hjlabs.in/models/onnx-community/modernbert-finetuned-squad-onnx",
+      "snippet": "Run ModernBERT SQuAD (338 MB) on your own GPU with WebGPU — question answering in the browser, free, no API key, and …"
+    },
+    {
+      "title": "Open-source QA model ModernBERT-base-squad2-v0.2 - Handles …",
+      "url": "https://model.aibase.com/models/details/1915693881322266625",
+      "snippet": "This model is a question-answering model fine-tuned on the rajpurkar/squad_v2 dataset based on ModernBERT-base-nli, natively …"
+    }
+  ]
+}

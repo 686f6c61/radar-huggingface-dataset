@@ -1,0 +1,92 @@
+{
+  "schema": 2,
+  "id": "northlight-ai/finbert-esg-multilingual-small",
+  "slug": "northlight-ai-finbert-esg-multilingual-small",
+  "author": "northlight-ai",
+  "url": "https://huggingface.co/northlight-ai/finbert-esg-multilingual-small",
+  "created_at": "2026-11-20T08:55:01.000Z",
+  "updated_at": "2026-11-26T14:14:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "es",
+    "zh",
+    "ja",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "esg",
+    "finance",
+    "sustainability",
+    "finbert-esg-compatible",
+    "en",
+    "de",
+    "fr",
+    "es",
+    "zh",
+    "ja",
+    "multilingual",
+    "dataset:HuggingFaceFW/fineweb",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "base_model:jhu-clsp/mmBERT-small",
+    "base_model:quantized:jhu-clsp/mmBERT-small",
+    "doi:10.57967/hf/11884",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": 140643076,
+  "parameters_human": "140.6M",
+  "storage_bytes": 1428415447,
+  "storage_human": "1.4 GB",
+  "context_length": null,
+  "base_model": "jhu-clsp/mmBERT-small",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "ESG topic classification",
+      "dataset": "ESG-EN (human",
+      "metric": "Macro-F1",
+      "value": 0.723
+    },
+    {
+      "task": "ESG topic classification",
+      "dataset": "esg-spanish-events (human",
+      "metric": "Macro-F1",
+      "value": 0.756
+    },
+    {
+      "task": "ESG topic classification",
+      "dataset": "twice_kr_esg_cls (Korean",
+      "metric": "Macro-F1",
+      "value": 0.55
+    }
+  ],
+  "sources": []
+}

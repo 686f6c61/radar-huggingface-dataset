@@ -1,0 +1,361 @@
+{
+  "schema": 2,
+  "id": "evalstate/ettin-encoder-32m-colbert-nq-mnrl",
+  "slug": "evalstate-ettin-encoder-32m-colbert-nq-mnrl",
+  "author": "evalstate",
+  "url": "https://huggingface.co/evalstate/ettin-encoder-32m-colbert-nq-mnrl",
+  "created_at": "2026-11-26T15:30:24.000Z",
+  "updated_at": "2026-11-26T15:30:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "multi-vector",
+    "colbert",
+    "late-interaction",
+    "generated_from_trainer",
+    "dataset_size:96658",
+    "loss:MultiVectorMultipleNegativesRankingLoss",
+    "feature-extraction",
+    "en",
+    "arxiv:1908.10084",
+    "arxiv:1705.00652",
+    "base_model:jhu-clsp/ettin-encoder-32m",
+    "base_model:finetune:jhu-clsp/ettin-encoder-32m",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31883136,
+  "parameters_human": "31.9M",
+  "storage_bytes": 127735192,
+  "storage_human": "128 MB",
+  "context_length": null,
+  "base_model": "jhu-clsp/ettin-encoder-32m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Accuracy@1",
+      "value": 0.24
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Accuracy@3",
+      "value": 0.36
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Accuracy@5",
+      "value": 0.5
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Accuracy@10",
+      "value": 0.56
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Precision@1",
+      "value": 0.24
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Precision@3",
+      "value": 0.11999999999999998
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Precision@5",
+      "value": 0.1
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Precision@10",
+      "value": 0.056000000000000015
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Recall@1",
+      "value": 0.24
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Recall@3",
+      "value": 0.36
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Recall@5",
+      "value": 0.5
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Recall@10",
+      "value": 0.56
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Ndcg@10",
+      "value": 0.38445601359956116
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Mrr@10",
+      "value": 0.3294126984126984
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Map@100",
+      "value": 0.34163923478810454
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Accuracy@1",
+      "value": 0.24
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Accuracy@3",
+      "value": 0.36
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Accuracy@5",
+      "value": 0.5
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Accuracy@10",
+      "value": 0.56
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Precision@1",
+      "value": 0.24
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Precision@3",
+      "value": 0.11999999999999998
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Precision@5",
+      "value": 0.1
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Precision@10",
+      "value": 0.056000000000000015
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Recall@1",
+      "value": 0.24
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Recall@3",
+      "value": 0.36
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Recall@5",
+      "value": 0.5
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Recall@10",
+      "value": 0.56
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Ndcg@10",
+      "value": 0.38445601359956116
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Mrr@10",
+      "value": 0.3294126984126984
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Map@100",
+      "value": 0.34163923478810454
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Accuracy@1",
+      "value": 0.42
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Accuracy@3",
+      "value": 0.56
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Accuracy@5",
+      "value": 0.58
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Accuracy@10",
+      "value": 0.68
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Precision@1",
+      "value": 0.42
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Precision@3",
+      "value": 0.19333333333333333
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Precision@5",
+      "value": 0.12
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Precision@10",
+      "value": 0.07200000000000001
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Recall@1",
+      "value": 0.4
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Recall@3",
+      "value": 0.53
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Recall@5",
+      "value": 0.55
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Recall@10",
+      "value": 0.66
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Ndcg@10",
+      "value": 0.5299486612526505
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Mrr@10",
+      "value": 0.5003571428571427
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Map@100",
+      "value": 0.4916687842935559
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Accuracy@1",
+      "value": 0.42
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Accuracy@3",
+      "value": 0.56
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Accuracy@5",
+      "value": 0.58
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Accuracy@10",
+      "value": 0.68
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Precision@1",
+      "value": 0.42
+    }
+  ],
+  "sources": []
+}

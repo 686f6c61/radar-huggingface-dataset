@@ -1,0 +1,74 @@
+{
+  "schema": 2,
+  "id": "loom-draft/bartowski-krystofmitka_ThinkingNuke-gemma-4-26B-A4B-loom",
+  "slug": "loom-draft-bartowski-krystofmitka_thinkingnuke-gemma-4-26b-a4b-loom",
+  "author": "loom-draft",
+  "url": "https://huggingface.co/loom-draft/bartowski-krystofmitka_ThinkingNuke-gemma-4-26B-A4B-loom",
+  "created_at": "2026-11-26T18:16:22.000Z",
+  "updated_at": "2026-11-26T18:52:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "loom",
+    "loom-serve",
+    "gguf",
+    "strix-halo",
+    "radeon-r9700",
+    "loom-target-set",
+    "base_model:bartowski/krystofmitka_ThinkingNuke-gemma-4-26B-A4B-GGUF",
+    "base_model:finetune:bartowski/krystofmitka_ThinkingNuke-gemma-4-26B-A4B-GGUF",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15147741,
+  "storage_human": "15 MB",
+  "context_length": null,
+  "base_model": "bartowski/krystofmitka_ThinkingNuke-gemma-4-26B-A4B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free screen recorder for Mac and PC | Loom",
+      "url": "https://www.loom.com/",
+      "snippet": "So much more than a screen recorder Edit your videos like a pro Loom’s intuitive editor lets you trim, stitch clips, add eye-catching …"
+    },
+    {
+      "title": "Log in to Loom | Loom",
+      "url": "https://www.loom.com/login",
+      "snippet": "Use Loom to record quick videos of your screen and cam. Explain anything clearly and easily – and skip the meeting. An essential …"
+    },
+    {
+      "title": "Moins mais mieux · Loom",
+      "url": "https://www.loom.fr/",
+      "snippet": "Venir en boutique Faire un retour Entretenir ses vêtements Travailler chez Loom Contact & FAQ"
+    },
+    {
+      "title": "Vêtements Homme · Loom",
+      "url": "https://www.loom.fr/fr-fr/collections/vestiaire-homme",
+      "snippet": "Vêtements homme de qualité, fabriqués au Portugal et en France."
+    },
+    {
+      "title": "Loom - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Loom",
+      "snippet": "The warp-weighted loom is a vertical loom that may have originated in the Neolithic period. Its defining characteristic is hanging …"
+    }
+  ]
+}

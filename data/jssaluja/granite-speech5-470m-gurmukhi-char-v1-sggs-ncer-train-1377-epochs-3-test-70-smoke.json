@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "jssaluja/granite-speech5-470m-gurmukhi-char-v1-sggs-ncer-train-1377-epochs-3-test-70-smoke",
+  "slug": "jssaluja-granite-speech5-470m-gurmukhi-char-v1-sggs-ncer-train-1377-epochs-3-test-70-smoke",
+  "author": "jssaluja",
+  "url": "https://huggingface.co/jssaluja/granite-speech5-470m-gurmukhi-char-v1-sggs-ncer-train-1377-epochs-3-test-70-smoke",
+  "created_at": "2026-11-26T20:20:40.000Z",
+  "updated_at": "2026-11-26T20:23:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "pan"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "granite_speech5_ctc",
+    "automatic-speech-recognition",
+    "hf-asr-leaderboard",
+    "generated_from_trainer",
+    "pan",
+    "base_model:ibm-granite/granite-speech-5.0-470m-turboctc",
+    "base_model:finetune:ibm-granite/granite-speech-5.0-470m-turboctc",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 439898344,
+  "parameters_human": "439.9M",
+  "storage_bytes": 8798121172,
+  "storage_human": "8.8 GB",
+  "context_length": null,
+  "base_model": "ibm-granite/granite-speech-5.0-470m-turboctc",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

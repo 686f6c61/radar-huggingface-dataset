@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "muggysdigital/GreBerta-Perseus-ONNX",
+  "slug": "muggysdigital-greberta-perseus-onnx",
+  "author": "muggysdigital",
+  "url": "https://huggingface.co/muggysdigital/GreBerta-Perseus-ONNX",
+  "created_at": "2026-11-22T22:06:07.000Z",
+  "updated_at": "2026-11-26T18:04:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers.js",
+  "languages": [
+    "grc"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "roberta",
+    "token-classification",
+    "XPOS",
+    "Digital Humanities",
+    "grc",
+    "dataset:universal-dependencies/universal_dependencies",
+    "base_model:bowphs/GreBerta",
+    "base_model:quantized:bowphs/GreBerta",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 504445533,
+  "storage_human": "504 MB",
+  "context_length": null,
+  "base_model": "bowphs/GreBerta",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

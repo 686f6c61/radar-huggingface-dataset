@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "mradermacher/M7Yamshadowexperiment28_YamExperiment28-GGUF",
+  "slug": "mradermacher-m7yamshadowexperiment28_yamexperiment28-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/M7Yamshadowexperiment28_YamExperiment28-GGUF",
+  "created_at": "2024-12-27T09:48:27.000Z",
+  "updated_at": "2026-11-26T15:30:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "Safetensors",
+    "text-generation-inference",
+    "merge",
+    "en",
+    "base_model:MaziyarPanahi/M7Yamshadowexperiment28_YamExperiment28",
+    "base_model:quantized:MaziyarPanahi/M7Yamshadowexperiment28_YamExperiment28",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 63929818496,
+  "storage_human": "63.9 GB",
+  "context_length": 32768,
+  "base_model": "MaziyarPanahi/M7Yamshadowexperiment28_YamExperiment28",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

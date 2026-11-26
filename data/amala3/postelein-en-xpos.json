@@ -1,0 +1,55 @@
+{
+  "schema": 2,
+  "id": "Amala3/postelein-en-xpos",
+  "slug": "amala3-postelein-en-xpos",
+  "author": "Amala3",
+  "url": "https://huggingface.co/Amala3/postelein-en-xpos",
+  "created_at": "2026-11-26T13:48:32.000Z",
+  "updated_at": "2026-11-26T13:49:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "postelein",
+    "textlens",
+    "conllu",
+    "pos-tagging",
+    "token-classification",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 307565614,
+  "parameters_human": "307.6M",
+  "storage_bytes": 1264645840,
+  "storage_human": "1.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Événements près de chez vous — et ailleurs | Événements Go",
+      "url": "https://evenements-go.com/",
+      "snippet": "Agenda à jour pour chaque territoire — concerts, brocantes, expos et sorties locales. Lyon, Grenoble, Clermont : de la Fête des …"
+    }
+  ]
+}

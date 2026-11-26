@@ -5,7 +5,7 @@
   "author": "yoitsmeyusuf",
   "url": "https://huggingface.co/yoitsmeyusuf/turkmorph-gpt-360m",
   "created_at": "2026-11-23T19:52:22.000Z",
-  "updated_at": "2026-11-25T13:51:01.000Z",
+  "updated_at": "2026-11-25T16:21:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,45 @@
+{
+  "schema": 2,
+  "id": "dla-project/rtfs-net-audio-only",
+  "slug": "dla-project-rtfs-net-audio-only",
+  "author": "dla-project",
+  "url": "https://huggingface.co/dla-project/rtfs-net-audio-only",
+  "created_at": "2026-11-26T13:48:34.000Z",
+  "updated_at": "2026-11-26T14:08:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "rtfsnet_audioonly",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 624376,
+  "parameters_human": "624376",
+  "storage_bytes": 7644977,
+  "storage_human": "8 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

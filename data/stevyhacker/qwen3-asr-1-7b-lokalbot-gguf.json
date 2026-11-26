@@ -5,7 +5,7 @@
   "author": "stevyhacker",
   "url": "https://huggingface.co/stevyhacker/Qwen3-ASR-1.7B-LokalBot-GGUF",
   "created_at": "2026-11-20T22:17:24.000Z",
-  "updated_at": "2026-11-21T00:56:04.000Z",
+  "updated_at": "2026-11-26T12:00:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

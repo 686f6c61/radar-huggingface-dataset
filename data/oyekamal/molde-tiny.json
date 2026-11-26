@@ -5,7 +5,7 @@
   "author": "oyekamal",
   "url": "https://huggingface.co/oyekamal/molde-tiny",
   "created_at": "2026-11-23T10:22:32.000Z",
-  "updated_at": "2026-11-25T06:45:07.000Z",
+  "updated_at": "2026-11-26T06:52:03.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "gguf",
+    "safetensors",
     "on-device",
     "code-generation",
     "ui-generation",
@@ -34,12 +35,13 @@
   "trending_score": 0,
   "parameters": 268134016,
   "parameters_human": "268.1M",
-  "storage_bytes": 3520308435,
-  "storage_human": "3.5 GB",
+  "storage_bytes": 11736495719,
+  "storage_human": "11.7 GB",
   "context_length": 32768,
   "base_model": "google/gemma-3-270m-it",
   "formats": [
-    "gguf"
+    "gguf",
+    "safetensors"
   ],
   "is_conversational": true,
   "gated": false,

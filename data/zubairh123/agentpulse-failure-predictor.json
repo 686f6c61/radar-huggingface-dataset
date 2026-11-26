@@ -1,0 +1,71 @@
+{
+  "schema": 2,
+  "id": "zubairH123/agentpulse-failure-predictor",
+  "slug": "zubairh123-agentpulse-failure-predictor",
+  "author": "zubairH123",
+  "url": "https://huggingface.co/zubairH123/agentpulse-failure-predictor",
+  "created_at": "2026-11-26T13:14:20.000Z",
+  "updated_at": "2026-11-26T13:22:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sklearn",
+    "ai-agents",
+    "observability",
+    "failure-prediction",
+    "synthetic-data",
+    "logistic-regression",
+    "cpu",
+    "mlops",
+    "tabular-classification",
+    "en",
+    "dataset:zubairH123/agentpulse-5g",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2505430,
+  "storage_human": "3 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Agent failure prediction",
+      "dataset": "AgentPulse-5G synthetic demo",
+      "metric": "ROC-AUC",
+      "value": 0.7652
+    },
+    {
+      "task": "Agent failure prediction",
+      "dataset": "AgentPulse-5G synthetic demo",
+      "metric": "F1",
+      "value": 0.5637
+    },
+    {
+      "task": "Agent failure prediction",
+      "dataset": "AgentPulse-5G synthetic demo",
+      "metric": "Accuracy",
+      "value": 0.719
+    }
+  ],
+  "sources": []
+}

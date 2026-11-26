@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "Banskie/Q-Brain",
+  "slug": "banskie-q-brain",
+  "author": "Banskie",
+  "url": "https://huggingface.co/Banskie/Q-Brain",
+  "created_at": "2026-11-26T15:12:05.000Z",
+  "updated_at": "2026-11-26T15:21:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2783651,
+  "storage_human": "3 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,84 @@
+{
+  "schema": 2,
+  "id": "tomcupr/Zitra-Titan-v3",
+  "slug": "tomcupr-zitra-titan-v3",
+  "author": "tomcupr",
+  "url": "https://huggingface.co/tomcupr/Zitra-Titan-v3",
+  "created_at": "2026-11-26T18:57:37.000Z",
+  "updated_at": "2026-11-26T19:33:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "zitra-forecast",
+  "languages": [],
+  "tags": [
+    "zitra-forecast",
+    "safetensors",
+    "time-series",
+    "forecasting",
+    "probabilistic-forecasting",
+    "foundation-model",
+    "multi-architecture",
+    "multivariate",
+    "covariates",
+    "apache-2.0",
+    "pytorch",
+    "time-series-forecasting",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1061831429,
+  "parameters_human": "1.06B",
+  "storage_bytes": 2123855690,
+  "storage_human": "2.1 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Time Series Forecasting",
+      "dataset": "GIFT-Eval",
+      "metric": "MASE",
+      "value": 0.6522
+    },
+    {
+      "task": "Time Series Forecasting",
+      "dataset": "GIFT-Eval",
+      "metric": "CRPS",
+      "value": 0.4422
+    },
+    {
+      "task": "Time Series Forecasting",
+      "dataset": "fev-bench",
+      "metric": "SQL skill score",
+      "value": 50.18
+    },
+    {
+      "task": "Time Series Forecasting",
+      "dataset": "fev-bench",
+      "metric": "WQL skill score",
+      "value": 54.52
+    },
+    {
+      "task": "Time Series Forecasting",
+      "dataset": "fev-bench",
+      "metric": "MASE skill score",
+      "value": 39.05
+    }
+  ],
+  "sources": []
+}

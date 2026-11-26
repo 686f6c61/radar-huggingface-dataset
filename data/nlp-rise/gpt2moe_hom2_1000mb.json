@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "NLP-RISE/gpt2moe_hom2_1000mb",
+  "slug": "nlp-rise-gpt2moe_hom2_1000mb",
+  "author": "NLP-RISE",
+  "url": "https://huggingface.co/NLP-RISE/gpt2moe_hom2_1000mb",
+  "created_at": "2026-11-16T16:08:35.000Z",
+  "updated_at": "2026-11-26T15:20:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "fr",
+    "es",
+    "pt",
+    "it",
+    "gl"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2moe",
+    "generated-from-wandb",
+    "fr",
+    "es",
+    "pt",
+    "it",
+    "gl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 209843712,
+  "parameters_human": "209.8M",
+  "storage_bytes": 2516513726,
+  "storage_human": "2.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

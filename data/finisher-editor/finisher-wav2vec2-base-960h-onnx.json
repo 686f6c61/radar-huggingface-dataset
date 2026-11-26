@@ -1,0 +1,72 @@
+{
+  "schema": 2,
+  "id": "finisher-editor/finisher-wav2vec2-base-960h-onnx",
+  "slug": "finisher-editor-finisher-wav2vec2-base-960h-onnx",
+  "author": "finisher-editor",
+  "url": "https://huggingface.co/finisher-editor/finisher-wav2vec2-base-960h-onnx",
+  "created_at": "2026-11-26T15:04:12.000Z",
+  "updated_at": "2026-11-26T15:04:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "wav2vec2",
+    "speech",
+    "finisher",
+    "base_model:facebook/wav2vec2-base-960h",
+    "base_model:quantized:facebook/wav2vec2-base-960h",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 377798071,
+  "storage_human": "378 MB",
+  "context_length": null,
+  "base_model": "facebook/wav2vec2-base-960h",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Finishers - Calendrier des courses à pied : trails, semi ...",
+      "url": "https://www.finishers.com/",
+      "snippet": "La Gazette du Finisher Inconnus, athlètes ou célébrités, à deux pas de chez toi ou au bout du monde, découvre les petites et …Read more"
+    },
+    {
+      "title": "Tous les circuits | Finishers",
+      "url": "https://www.finishers.com/c",
+      "snippet": "Circuits, labels et series Tous les circuits"
+    },
+    {
+      "title": "FinisherPix | Start",
+      "url": "https://www.finisherpix.com/",
+      "snippet": "Get an exclusive Outside+ discount when you purchase any photo package Activity tracking and performance insights from …Read more"
+    },
+    {
+      "title": "Médailles Finisher - Ultime Sport",
+      "url": "https://www.ultimesport.fr/medailles-finisher/",
+      "snippet": "Créez une médaille finisher personnalisée unique pour votre trail, marathon, 10 km ou triathlon. Devis sous 24h, design sous 3 jours …Read more"
+    },
+    {
+      "title": "Finisher - Trail, Marathon & Communauté Running en Tunisie",
+      "url": "https://finisher.tn/",
+      "snippet": "Nov 16, 2026 · Finisher est votre plateforme de référence pour le running en Tunisie. Calendrier complet de trail et marathon, …Read more"
+    }
+  ]
+}

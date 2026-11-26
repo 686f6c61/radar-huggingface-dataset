@@ -5,7 +5,7 @@
   "author": "tencent",
   "url": "https://huggingface.co/tencent/Hy4-flash-base",
   "created_at": "2026-11-17T03:46:18.000Z",
-  "updated_at": "2026-11-18T04:24:08.000Z",
+  "updated_at": "2026-11-26T07:15:34.000Z",
   "license": "tencent-hy-license",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",

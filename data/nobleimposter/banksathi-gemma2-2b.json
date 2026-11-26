@@ -40,8 +40,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 43520517377,
-  "storage_human": "43.5 GB",
+  "storage_bytes": 52795594141,
+  "storage_human": "52.8 GB",
   "context_length": null,
   "base_model": "google/gemma-2-2b-it",
   "formats": [

@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "mradermacher/qwen2-5-vl-sanskrit-ocr-GGUF",
+  "slug": "mradermacher-qwen2-5-vl-sanskrit-ocr-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen2-5-vl-sanskrit-ocr-GGUF",
+  "created_at": "2025-09-08T22:55:35.000Z",
+  "updated_at": "2026-11-26T14:16:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "sa"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "axolotl",
+    "sa",
+    "dataset:diabolic6045/sanskrit-ocr-parallel-corpus-chat-template",
+    "dataset:snskrt/Sanskrit_OCR_Parallel_Corpus",
+    "base_model:snskrt/qwen2-5-vl-sanskrit-ocr",
+    "base_model:quantized:snskrt/qwen2-5-vl-sanskrit-ocr",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 606,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70357178944,
+  "storage_human": "70.4 GB",
+  "context_length": 128000,
+  "base_model": "snskrt/qwen2-5-vl-sanskrit-ocr",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

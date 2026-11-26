@@ -36,8 +36,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "VirtualEyes/Pupil_4B",
+  "renamed_at": "2026-11-26T14:02:53.274Z",
   "benchmarks": [],
   "sources": []
 }

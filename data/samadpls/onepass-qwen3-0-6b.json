@@ -5,7 +5,7 @@
   "author": "samadpls",
   "url": "https://huggingface.co/samadpls/onepass-qwen3-0.6b",
   "created_at": "2026-11-25T12:29:03.000Z",
-  "updated_at": "2026-11-25T12:33:46.000Z",
+  "updated_at": "2026-11-25T16:24:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -16,14 +16,13 @@
   "tags": [
     "transformers",
     "safetensors",
-    "gguf",
     "qwen3",
     "text-generation",
     "lora",
-    "llama-cpp",
     "calibration",
     "typed-decisions",
     "decision-model",
+    "classification",
     "conversational",
     "en",
     "dataset:n4ze3m/typed-decisions-synth",
@@ -62,7 +61,6 @@
   "context_length": 40960,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
-    "gguf",
     "safetensors"
   ],
   "is_conversational": true,

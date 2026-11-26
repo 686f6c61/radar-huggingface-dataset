@@ -31,13 +31,13 @@
     "modelopt",
     "region:us"
   ],
-  "likes": 89,
+  "likes": 92,
   "downloads_30d": 3221,
-  "trending_score": 23,
+  "trending_score": 19.5,
   "parameters": 27728983792,
   "parameters_human": "27.73B",
-  "storage_bytes": 19912046016,
-  "storage_human": "19.9 GB",
+  "storage_bytes": 20016934832,
+  "storage_human": "20.0 GB",
   "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [

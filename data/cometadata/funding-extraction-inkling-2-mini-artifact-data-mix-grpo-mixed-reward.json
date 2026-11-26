@@ -1,0 +1,60 @@
+{
+  "schema": 2,
+  "id": "cometadata/funding-extraction-inkling-2-mini-artifact-data-mix-grpo-mixed-reward",
+  "slug": "cometadata-funding-extraction-inkling-2-mini-artifact-data-mix-grpo-mixed-reward",
+  "author": "cometadata",
+  "url": "https://huggingface.co/cometadata/funding-extraction-inkling-2-mini-artifact-data-mix-grpo-mixed-reward",
+  "created_at": "2026-11-26T18:32:33.000Z",
+  "updated_at": "2026-11-26T18:37:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "lora",
+    "tinker",
+    "grpo",
+    "funding-extraction",
+    "information-extraction",
+    "scholarly-metadata",
+    "text-generation",
+    "en",
+    "dataset:cometadata/funding-extraction-artifact-data-mix-grpo-mixed-reward",
+    "base_model:thinkingmachines/Inkling-2-Mini",
+    "base_model:adapter:thinkingmachines/Inkling-2-Mini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2968987149,
+  "storage_human": "3.0 GB",
+  "context_length": null,
+  "base_model": "thinkingmachines/Inkling-2-Mini",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How life has changed in Manchester: Census 2021",
+      "url": "https://www.ons.gov.uk/visualisations/censusareachanges/E08000003/",
+      "snippet": "Dec 8, 2022 · Find out how life changed in Manchester between Census 2011 to Census 2021, including data on ageing, ethnicity, …"
+    }
+  ]
+}

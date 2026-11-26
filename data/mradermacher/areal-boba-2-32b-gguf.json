@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/AReaL-boba-2-32B-GGUF",
+  "slug": "mradermacher-areal-boba-2-32b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/AReaL-boba-2-32B-GGUF",
+  "created_at": "2025-06-04T10:07:22.000Z",
+  "updated_at": "2026-11-26T14:16:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:inclusionAI/AReaL-boba-2-32B",
+    "base_model:quantized:inclusionAI/AReaL-boba-2-32B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 173,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 223976242176,
+  "storage_human": "224.0 GB",
+  "context_length": 40960,
+  "base_model": "inclusionAI/AReaL-boba-2-32B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

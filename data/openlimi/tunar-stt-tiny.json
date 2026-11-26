@@ -5,7 +5,7 @@
   "author": "openlimi",
   "url": "https://huggingface.co/openlimi/Tunar-stt-tiny",
   "created_at": "2026-11-18T12:03:57.000Z",
-  "updated_at": "2026-11-24T19:27:44.000Z",
+  "updated_at": "2026-11-25T13:37:08.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "automatic-speech-recognition",

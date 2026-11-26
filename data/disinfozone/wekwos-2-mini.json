@@ -1,0 +1,103 @@
+{
+  "schema": 2,
+  "id": "disinfozone/wekwos-2-mini",
+  "slug": "disinfozone-wekwos-2-mini",
+  "author": "disinfozone",
+  "url": "https://huggingface.co/disinfozone/wekwos-2-mini",
+  "created_at": "2026-11-26T17:53:21.000Z",
+  "updated_at": "2026-11-26T18:00:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "ine",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "inkling2_loop",
+    "proto-indo-european",
+    "reconstructed-language",
+    "historical-linguistics",
+    "6-bit",
+    "grpo",
+    "wekwos",
+    "text-generation",
+    "conversational",
+    "ine",
+    "en",
+    "base_model:thinkingmachines/Inkling-2-Mini",
+    "base_model:quantized:thinkingmachines/Inkling-2-Mini",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26388559360,
+  "parameters_human": "26.39B",
+  "storage_bytes": 22964874575,
+  "storage_human": "23.0 GB",
+  "context_length": null,
+  "base_model": "thinkingmachines/Inkling-2-Mini",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Proto-Indo-European Benchmark",
+      "dataset": "wekwos Held-Out PIE Benchmark v2 (607 items)",
+      "metric": "Strict Score (Weighted)",
+      "value": 88.2
+    },
+    {
+      "task": "Proto-Indo-European Benchmark",
+      "dataset": "wekwos Held-Out PIE Benchmark v2 (607 items)",
+      "metric": "Lenient Score (Weighted)",
+      "value": 90.5
+    },
+    {
+      "task": "Proto-Indo-European Benchmark",
+      "dataset": "wekwos Held-Out PIE Benchmark v2 (607 items)",
+      "metric": "Inflection (Strict)",
+      "value": 90.4
+    },
+    {
+      "task": "Proto-Indo-European Benchmark",
+      "dataset": "wekwos Held-Out PIE Benchmark v2 (607 items)",
+      "metric": "Paradigm (Strict)",
+      "value": 89.6
+    },
+    {
+      "task": "Proto-Indo-European Benchmark",
+      "dataset": "wekwos Held-Out PIE Benchmark v2 (607 items)",
+      "metric": "English to PIE (Strict)",
+      "value": 85.7
+    },
+    {
+      "task": "Proto-Indo-European Benchmark",
+      "dataset": "wekwos Held-Out PIE Benchmark v2 (607 items)",
+      "metric": "PIE to English (Strict)",
+      "value": 89.3
+    },
+    {
+      "task": "Proto-Indo-European Benchmark",
+      "dataset": "wekwos Held-Out PIE Benchmark v2 (607 items)",
+      "metric": "Dialogue (Strict)",
+      "value": 87.5
+    }
+  ],
+  "sources": []
+}

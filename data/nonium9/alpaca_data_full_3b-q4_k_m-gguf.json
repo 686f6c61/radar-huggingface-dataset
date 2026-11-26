@@ -1,0 +1,63 @@
+{
+  "schema": 2,
+  "id": "Nonium9/alpaca_data_full_3B-Q4_K_M-GGUF",
+  "slug": "nonium9-alpaca_data_full_3b-q4_k_m-gguf",
+  "author": "Nonium9",
+  "url": "https://huggingface.co/Nonium9/alpaca_data_full_3B-Q4_K_M-GGUF",
+  "created_at": "2026-11-26T19:47:33.000Z",
+  "updated_at": "2026-11-26T19:47:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:godlikehhd/alpaca_data_full_3B",
+    "base_model:quantized:godlikehhd/alpaca_data_full_3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1929902336,
+  "storage_human": "1.9 GB",
+  "context_length": 32768,
+  "base_model": "godlikehhd/alpaca_data_full_3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iPhone 15 Pro: How to Transfer Data Over USB-C at 10Gbps Speed",
+      "url": "https://www.macrumors.com/how-to/iphone-15-pro-usb-c-10gbps-transfer-speeds/",
+      "snippet": "Sep 21, 2023 · On the iPhone 15 Pro models, however, the USB-C port supports faster USB 3.2 Gen 2 transfer speeds of up to …Read more"
+    },
+    {
+      "title": "Charge and connect with the USB-C connector on your iPhone",
+      "url": "https://support.apple.com/en-us/105099",
+      "snippet": "Oct 22, 2026 · USB-C is a universally accepted standard that enables charging, syncing data, and playing audio and video. iPhone …Read more"
+    },
+    {
+      "title": "iPhone 15's USB-C Port Remains Limited to Lightning Speeds",
+      "url": "https://www.macrumors.com/2023/09/12/iphone-15-usb-port-limited-to-lightning-speeds/",
+      "snippet": "Sep 12, 2023 · While the new standard iPhone 15 and iPhone 15 Plus are equipped with a USB-C port, data transfer over a cable …Read more"
+    }
+  ]
+}

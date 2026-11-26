@@ -5,7 +5,7 @@
   "author": "zephel01",
   "url": "https://huggingface.co/zephel01/Qwen3.8-Flash-Next-DGX-Spark-GGUF",
   "created_at": "2026-11-08T06:10:37.000Z",
-  "updated_at": "2026-11-16T21:53:45.000Z",
+  "updated_at": "2026-11-26T07:55:14.000Z",
   "license": "qwen-community-1.0",
   "license_family": "non-commercial",
   "pipeline_tag": "text-generation",

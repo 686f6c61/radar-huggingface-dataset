@@ -5,7 +5,7 @@
   "author": "openenv",
   "url": "https://huggingface.co/openenv/Qwen3-1.7B-Sudoku-SFT",
   "created_at": "2026-10-28T16:54:02.000Z",
-  "updated_at": "2026-11-03T16:40:09.000Z",
+  "updated_at": "2026-11-26T09:06:44.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

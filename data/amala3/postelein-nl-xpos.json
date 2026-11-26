@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "Amala3/postelein-nl-xpos",
+  "slug": "amala3-postelein-nl-xpos",
+  "author": "Amala3",
+  "url": "https://huggingface.co/Amala3/postelein-nl-xpos",
+  "created_at": "2026-11-26T13:44:32.000Z",
+  "updated_at": "2026-11-26T13:45:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "nl"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "postelein",
+    "textlens",
+    "conllu",
+    "pos-tagging",
+    "token-classification",
+    "nl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 307811694,
+  "parameters_human": "307.8M",
+  "storage_bytes": 1265630168,
+  "storage_human": "1.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "zafar205",
   "url": "https://huggingface.co/zafar205/tiny-urdu-tts-4.5-million-parameters",
   "created_at": "2026-11-18T20:12:43.000Z",
-  "updated_at": "2026-11-20T20:47:33.000Z",
+  "updated_at": "2026-11-26T07:57:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "onnx",
+    "safetensors",
     "text-to-speech",
     "tts",
     "urdu",
@@ -36,14 +37,15 @@
   "likes": 0,
   "downloads_30d": 98,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 79611350,
-  "storage_human": "80 MB",
+  "parameters": 4545739,
+  "parameters_human": "4.5M",
+  "storage_bytes": 97812930,
+  "storage_human": "98 MB",
   "context_length": null,
   "base_model": "n4ze3m/tiny-voca",
   "formats": [
-    "onnx"
+    "onnx",
+    "safetensors"
   ],
   "is_conversational": false,
   "gated": false,

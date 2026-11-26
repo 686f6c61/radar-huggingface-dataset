@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/QwQ-44.5B-GGUF",
+  "slug": "mradermacher-qwq-44-5b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/QwQ-44.5B-GGUF",
+  "created_at": "2025-03-22T23:10:45.000Z",
+  "updated_at": "2026-11-26T15:29:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 82,
+  "trending_score": 0,
+  "parameters": 44466402304,
+  "parameters_human": "44.47B",
+  "storage_bytes": 303354194656,
+  "storage_human": "303.4 GB",
+  "context_length": 40960,
+  "base_model": "qingy2024/QwQ-44.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

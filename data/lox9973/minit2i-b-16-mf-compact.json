@@ -24,9 +24,9 @@
     "diffusers:MiniT2IMeanFlowPipeline",
     "region:us"
   ],
-  "likes": 13,
+  "likes": 14,
   "downloads_30d": 36,
-  "trending_score": 12,
+  "trending_score": 13,
   "parameters": 260897408,
   "parameters_human": "260.9M",
   "storage_bytes": 634307013,

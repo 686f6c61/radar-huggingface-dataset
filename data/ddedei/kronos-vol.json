@@ -1,0 +1,79 @@
+{
+  "schema": 2,
+  "id": "ddedei/Kronos-Vol",
+  "slug": "ddedei-kronos-vol",
+  "author": "ddedei",
+  "url": "https://huggingface.co/ddedei/Kronos-Vol",
+  "created_at": "2026-11-26T15:21:18.000Z",
+  "updated_at": "2026-11-26T15:28:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "time-series",
+    "forecasting",
+    "finance",
+    "quantitative-finance",
+    "volatility",
+    "realized-volatility",
+    "stocks",
+    "kronos",
+    "arxiv:2508.02739",
+    "time-series-forecasting",
+    "arxiv:2505.11163",
+    "arxiv:2607.05291",
+    "base_model:NeoQuasar/Kronos-small",
+    "base_model:finetune:NeoQuasar/Kronos-small",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 298553508,
+  "storage_human": "299 MB",
+  "context_length": null,
+  "base_model": "NeoQuasar/Kronos-small",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Next-session realized volatility forecasting",
+      "dataset": "39 large US stocks held out of training, 5-minute bars, July 2024 to November 2026",
+      "metric": "Calibrated QLIKE, lower is better",
+      "value": 0.179
+    },
+    {
+      "task": "Next-session realized volatility forecasting",
+      "dataset": "39 large US stocks held out of training, 5-minute bars, July 2024 to November 2026",
+      "metric": "Lower calibrated QLIKE than HAR-RV, percent",
+      "value": 8.9
+    },
+    {
+      "task": "Next-session realized volatility forecasting",
+      "dataset": "39 large US stocks held out of training, 5-minute bars, July 2024 to November 2026",
+      "metric": "R2 on log realized variance",
+      "value": 0.562
+    },
+    {
+      "task": "Next-session realized volatility forecasting",
+      "dataset": "39 large US stocks held out of training, 5-minute bars, July 2024 to November 2026",
+      "metric": "Rank IC across stocks",
+      "value": 0.733
+    }
+  ],
+  "sources": []
+}

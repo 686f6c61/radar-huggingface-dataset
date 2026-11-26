@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "id": "C3DS/CARDS-WIND-Qwen3.8-27B-FP8",
+  "slug": "c3ds-cards-wind-qwen3-8-27b-fp8",
+  "author": "C3DS",
+  "url": "https://huggingface.co/C3DS/CARDS-WIND-Qwen3.8-27B-FP8",
+  "created_at": "2026-11-26T15:45:48.000Z",
+  "updated_at": "2026-11-26T15:47:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 31240317811,
+  "storage_human": "31.2 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "C3DS - Centre for Climate Communication and Data Science",
+      "url": "https://c3ds.ex.ac.uk/",
+      "snippet": "C3DS conducts peer-reviewed research across a range of topics, from the role of climate visuals in shaping media discourse to …Read more"
+    },
+    {
+      "title": "Société C3DS NUCLEAR FIELD SERVICE (509176988) à ALLEX …",
+      "url": "https://www.societe.com/societe/c3ds-nuclear-field-service-509176988.html",
+      "snippet": "Feb 24, 2022 · Historique 9 événements ont marqué le parcours de C3DS NUCLEAR FIELD SERVICE depuis 2008"
+    },
+    {
+      "title": "C3ds - A set classes to easily read .3ds files in c++",
+      "url": "https://c3ds.sourceforge.net/",
+      "snippet": "C3ds is a set of classes written in c++ to read and parse easily .3ds files with an object oriented approach. You can download the …Read more"
+    },
+    {
+      "title": "C3DS NUCLEAR FIELD SERVICE - Pappers",
+      "url": "https://www.pappers.fr/entreprise/c3ds-nuclear-field-service-509176988",
+      "snippet": "Nov 28, 2008 · C3DS NUCLEAR FIELD SERVICE à ALLEX (26400) : Bilans, statuts, chiffre d'affaires, dirigeants, actionnaires, …Read more"
+    }
+  ]
+}

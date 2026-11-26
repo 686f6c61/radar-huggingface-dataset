@@ -5,7 +5,7 @@
   "author": "openharness",
   "url": "https://huggingface.co/openharness/Qwen3.5-4B-CalibForge500-E5-20261125",
   "created_at": "2026-11-25T05:18:34.000Z",
-  "updated_at": "2026-11-25T11:29:32.000Z",
+  "updated_at": "2026-11-26T09:54:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

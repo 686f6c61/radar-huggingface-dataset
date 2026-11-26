@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "veripazari/turkish-gpt2",
+  "slug": "veripazari-turkish-gpt2",
+  "author": "veripazari",
+  "url": "https://huggingface.co/veripazari/turkish-gpt2",
+  "created_at": "2026-11-26T17:27:01.000Z",
+  "updated_at": "2026-11-26T17:31:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "safetensors",
+    "gpt2",
+    "Turkish",
+    "turkish",
+    "text-generation",
+    "tr",
+    "dataset:uonlp/CulturaX",
+    "arxiv:2404.17336",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 1493514797,
+  "storage_human": "1.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

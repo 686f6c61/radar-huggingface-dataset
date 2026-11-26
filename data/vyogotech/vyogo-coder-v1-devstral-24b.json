@@ -39,8 +39,8 @@
   "trending_score": 0,
   "parameters": 24011361280,
   "parameters_human": "24.01B",
-  "storage_bytes": 48056631762,
-  "storage_human": "48.1 GB",
+  "storage_bytes": 72195273714,
+  "storage_human": "72.2 GB",
   "context_length": null,
   "base_model": "unsloth/Devstral-Small-2-24B-Instruct-2512",
   "formats": [

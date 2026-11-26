@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 86033696,
+  "storage_human": "86 MB",
   "context_length": null,
   "base_model": "onnx-community/Kokoro-82M-v1.0-ONNX",
   "formats": [

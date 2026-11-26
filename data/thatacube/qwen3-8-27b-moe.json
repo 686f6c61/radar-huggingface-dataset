@@ -5,7 +5,7 @@
   "author": "thatacube",
   "url": "https://huggingface.co/thatacube/Qwen3.8-27B-MoE",
   "created_at": "2026-11-24T16:03:38.000Z",
-  "updated_at": "2026-11-25T17:02:21.000Z",
+  "updated_at": "2026-11-25T21:17:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

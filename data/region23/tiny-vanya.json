@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "region23/tiny-vanya",
+  "slug": "region23-tiny-vanya",
+  "author": "region23",
+  "url": "https://huggingface.co/region23/tiny-vanya",
+  "created_at": "2026-11-26T20:15:21.000Z",
+  "updated_at": "2026-11-26T20:55:26.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "coreml",
+    "onnx",
+    "text-to-speech",
+    "tts",
+    "russian",
+    "tiny-voca",
+    "on-device",
+    "ru",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 967936657,
+  "storage_human": "968 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

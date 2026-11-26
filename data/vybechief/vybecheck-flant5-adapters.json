@@ -5,10 +5,10 @@
   "author": "vybechief",
   "url": "https://huggingface.co/vybechief/vybecheck-flant5-adapters",
   "created_at": "2026-10-25T14:40:18.000Z",
-  "updated_at": "2026-11-13T14:31:01.000Z",
+  "updated_at": "2026-11-26T03:14:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": "translation",
+  "pipeline_tag": "text-generation",
   "library": "peft",
   "languages": [
     "en"
@@ -19,9 +19,8 @@
     "lora",
     "slang",
     "seq2seq",
-    "rag",
+    "text2text-generation",
     "base_model:adapter:google/flan-t5-large",
-    "translation",
     "en",
     "base_model:google/flan-t5-large",
     "license:apache-2.0",

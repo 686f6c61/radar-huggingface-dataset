@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "q81801/WeVisOne-VL-4B-GGUF",
+  "slug": "q81801-wevisone-vl-4b-gguf",
+  "author": "q81801",
+  "url": "https://huggingface.co/q81801/WeVisOne-VL-4B-GGUF",
+  "created_at": "2026-11-26T14:12:23.000Z",
+  "updated_at": "2026-11-26T14:15:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "visual-grounding",
+    "object-detection",
+    "quantization",
+    "wevisone",
+    "image-text-to-text",
+    "en",
+    "base_model:tencent/WeVisOne-VL-4B",
+    "base_model:quantized:tencent/WeVisOne-VL-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 415347712,
+  "parameters_human": "415.3M",
+  "storage_bytes": 450828832,
+  "storage_human": "451 MB",
+  "context_length": null,
+  "base_model": "tencent/WeVisOne-VL-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

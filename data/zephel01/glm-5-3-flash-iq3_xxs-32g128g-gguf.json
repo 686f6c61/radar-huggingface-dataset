@@ -5,7 +5,7 @@
   "author": "zephel01",
   "url": "https://huggingface.co/zephel01/GLM-5.3-Flash-IQ3_XXS-32G128G-GGUF",
   "created_at": "2026-11-06T23:23:47.000Z",
-  "updated_at": "2026-11-16T21:52:47.000Z",
+  "updated_at": "2026-11-26T07:55:03.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

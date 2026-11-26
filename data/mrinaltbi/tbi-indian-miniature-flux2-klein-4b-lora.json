@@ -1,0 +1,73 @@
+{
+  "schema": 2,
+  "id": "mrinaltbi/tbi-indian-miniature-flux2-klein-4b-lora",
+  "slug": "mrinaltbi-tbi-indian-miniature-flux2-klein-4b-lora",
+  "author": "mrinaltbi",
+  "url": "https://huggingface.co/mrinaltbi/tbi-indian-miniature-flux2-klein-4b-lora",
+  "created_at": "2026-11-26T13:16:54.000Z",
+  "updated_at": "2026-11-26T13:37:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "image-generation",
+    "lora",
+    "flux2",
+    "flux2-klein",
+    "template:sd-lora",
+    "style",
+    "art",
+    "painting",
+    "illustration",
+    "indian-art",
+    "miniature-painting",
+    "indian-painting",
+    "historical-art",
+    "cultural-heritage",
+    "public-domain-data",
+    "base_model:black-forest-labs/FLUX.2-klein-base-4B",
+    "base_model:adapter:black-forest-labs/FLUX.2-klein-base-4B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 68108864,
+  "storage_human": "68 MB",
+  "context_length": null,
+  "base_model": "black-forest-labs/FLUX.2-klein-base-4B",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Indian miniature style text-to-image",
+      "dataset": "TBI miniature style test (12 prompts x 2 seeds)",
+      "metric": "Style match to real paintings (CLIP ViT-L/14 cosine)",
+      "value": 0.79
+    },
+    {
+      "task": "Indian miniature style text-to-image",
+      "dataset": "TBI miniature style test (12 prompts x 2 seeds)",
+      "metric": "Prompt match (CLIP score, ViT-L/14)",
+      "value": 30.74
+    }
+  ],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "protocolsyncllc",
   "url": "https://huggingface.co/protocolsyncllc/medgap-qwen-3.5-9b",
   "created_at": "2026-04-30T12:36:06.000Z",
-  "updated_at": "2026-11-23T18:52:01.000Z",
+  "updated_at": "2026-11-26T12:35:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,8 +25,8 @@
     "conversational",
     "en",
     "dataset:protocolsyncllc/fda-warning-letters",
-    "base_model:unsloth/Qwen3.5-9B-Base",
-    "base_model:quantized:unsloth/Qwen3.5-9B-Base",
+    "base_model:unsloth/Qwen3.5-9B",
+    "base_model:quantized:unsloth/Qwen3.5-9B",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us"
@@ -39,7 +39,7 @@
   "storage_bytes": 248378216164,
   "storage_human": "248.4 GB",
   "context_length": 262144,
-  "base_model": "unsloth/Qwen3.5-9B-Base",
+  "base_model": "unsloth/Qwen3.5-9B",
   "formats": [
     "gguf",
     "safetensors"

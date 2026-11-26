@@ -5,7 +5,7 @@
   "author": "tanishqmudaliar",
   "url": "https://huggingface.co/tanishqmudaliar/SilverGuard",
   "created_at": "2026-02-22T22:33:36.000Z",
-  "updated_at": "2026-11-12T17:49:00.000Z",
+  "updated_at": "2026-11-24T15:15:10.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -21,6 +21,7 @@
   ],
   "tags": [
     "onnx",
+    "joblib",
     "sms",
     "scam-detection",
     "phishing-detection",
@@ -54,8 +55,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 120755115,
-  "storage_human": "121 MB",
+  "storage_bytes": 122435866,
+  "storage_human": "122 MB",
   "context_length": null,
   "base_model": null,
   "formats": [

@@ -1,0 +1,83 @@
+{
+  "schema": 2,
+  "id": "Tamarillo/ai-image-forensics-guard-base",
+  "slug": "tamarillo-ai-image-forensics-guard-base",
+  "author": "Tamarillo",
+  "url": "https://huggingface.co/Tamarillo/ai-image-forensics-guard-base",
+  "created_at": "2026-11-26T15:30:45.000Z",
+  "updated_at": "2026-11-26T15:30:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "siglip",
+    "image-classification",
+    "ai-image-detection",
+    "deepfake-detection",
+    "image-forensics",
+    "agent-forensics",
+    "siglip2",
+    "dataset:srishti-kaushik/COCO-2017",
+    "dataset:finedet/openimages",
+    "dataset:OwensLab/CommunityForensics",
+    "base_model:google/siglip2-base-patch16-384",
+    "base_model:quantized:google/siglip2-base-patch16-384",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 93177602,
+  "parameters_human": "93.2M",
+  "storage_bytes": 717348797,
+  "storage_human": "717 MB",
+  "context_length": null,
+  "base_model": "google/siglip2-base-patch16-384",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tamarillo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tamarillo",
+      "snippet": "In Yunnan, China, the Dai people make a tamarillo nanpie, a sauce like dish made with roasted tamarillo, sawtooth coriander, chillies …Read more"
+    },
+    {
+      "title": "Tamarillo : conseils de culture et entretien",
+      "url": "https://mieuxjardiner.com/tamarillo-conseils-de-culture-et-entretien/",
+      "snippet": "Sep 3, 2025 · Caractéristiques et origines du tamarillo Pour bien cultiver le tamarillo, il est essentiel de comprendre sa nature et son …Read more"
+    },
+    {
+      "title": "Le tamarillo : un fruit étonnant - Vergers de Gally",
+      "url": "https://www.lesvergersdegally.com/fruit/tamarillo/",
+      "snippet": "Avec seulement 27 calories pour 100 grammes, le tamarillo est un fruit léger qui peut être apprécié sans culpabiliser. Il est riche en …Read more"
+    },
+    {
+      "title": "Tamarillo : origine, bienfaits et utilisation de ce fruit exotique",
+      "url": "https://www.doctissimo.fr/nutrition/fruits-et-legumes/tamarillo-un-fruit-exotique-aux-multiples-bienfaits-sante-398511.htm",
+      "snippet": "Jun 16, 2026 · Le tamarillo, aussi connu sous le nom de tomate en arbre, est un fruit tropical originaire d'Amérique du Sud, …Read more"
+    },
+    {
+      "title": "Tamarillo : culture et entretien de l'arbre à tomates",
+      "url": "https://www.jardiner-malin.fr/fiche/tamarillo.html",
+      "snippet": "Apr 28, 2012 · Le tamarillo ou arbre à tomates est un petit fruitier offrant de délicieux fruits acidulés. La culture et l'entretien, en terre …Read more"
+    }
+  ]
+}
